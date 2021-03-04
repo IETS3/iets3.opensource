@@ -119,6 +119,10 @@
         <child id="2396718651941969300" name="expr" index="12NKtY" />
         <child id="3281846772293355657" name="expectedType" index="1KhrV9" />
       </concept>
+      <concept id="5955298286257997823" name="org.iets3.core.expr.base.structure.ColonCast" flags="ng" index="1LgZZ2">
+        <child id="5955298286257997833" name="type" index="1LgZ0O" />
+        <child id="5955298286257997830" name="expr" index="1LgZ0V" />
+      </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
@@ -4235,13 +4239,16 @@
       <node concept="3iBYfx" id="6KhzXd8xA3o" role="2zPyp_">
         <node concept="ygwf7" id="6KhzXd8xA3p" role="ygBzB">
           <node concept="Uns6S" id="6KhzXd8xA3q" role="ygwf4">
-            <node concept="30bdrU" id="6KhzXd8xA3r" role="Uns6T" />
+            <node concept="30bdrU" id="2Y$0swB6Mt1" role="Uns6T" />
           </node>
         </node>
         <node concept="30bdrP" id="6KhzXd8xAdq" role="3iBYfI">
           <property role="30bdrQ" value="S1" />
         </node>
-        <node concept="UmHTt" id="6KhzXd8xAgt" role="3iBYfI" />
+        <node concept="1LgZZ2" id="2Y$0swB6OdG" role="3iBYfI">
+          <node concept="30bdrU" id="2Y$0swB6Oha" role="1LgZ0O" />
+          <node concept="UmHTt" id="6KhzXd8xAgt" role="1LgZ0V" />
+        </node>
         <node concept="30bdrP" id="6KhzXd8xAh6" role="3iBYfI">
           <property role="30bdrQ" value="S2" />
         </node>
