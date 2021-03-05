@@ -17,7 +17,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4304,20 +4303,6 @@
               <ref role="3cqZAo" node="2p7vY1Z3vML" resolve="targetIsNumber" />
             </node>
             <node concept="3clFbS" id="2p7vY1Z3v3t" role="3eOfB_">
-              <node concept="3clFbF" id="26cjRAC_H_O" role="3cqZAp">
-                <node concept="2OqwBi" id="26cjRAC_H_L" role="3clFbG">
-                  <node concept="10M0yZ" id="26cjRAC_H_M" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                  </node>
-                  <node concept="liA8E" id="26cjRAC_H_N" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                    <node concept="37vLTw" id="26cjRAC_IsM" role="37wK5m">
-                      <ref role="3cqZAo" node="26cjRAC_IsE" resolve="msg" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="YS8fn" id="2p7vY1Z4af3" role="3cqZAp">
                 <node concept="2ShNRf" id="2p7vY1Z4ah3" role="YScLw">
                   <node concept="1pGfFk" id="26cjRAC_JKd" role="2ShVmc">

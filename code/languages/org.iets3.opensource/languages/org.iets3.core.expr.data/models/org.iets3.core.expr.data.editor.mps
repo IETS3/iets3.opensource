@@ -935,7 +935,7 @@
             </node>
           </node>
           <node concept="VechU" id="6_rxy3GUPdE" role="3F10Kt">
-            <property role="Vb096" value="fLJRk5A/lightGray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
       </node>

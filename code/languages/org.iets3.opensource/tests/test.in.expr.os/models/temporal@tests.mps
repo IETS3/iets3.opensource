@@ -45,6 +45,9 @@
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
+      </concept>
       <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
         <child id="5115872837157187954" name="expr" index="30bsDf" />
       </concept>
@@ -184,6 +187,17 @@
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
+      <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
+        <child id="8811147530085329323" name="memberValues" index="2S399l" />
+      </concept>
+      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
+        <child id="602952467877562565" name="members" index="S5Trm" />
+      </concept>
+      <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
+        <reference id="8811147530084018371" name="record" index="2Ss9cX" />
+      </concept>
+      <concept id="8811147530084018361" name="org.iets3.core.expr.toplevel.structure.RecordMember" flags="ng" index="2Ss9d7" />
+      <concept id="8811147530084018358" name="org.iets3.core.expr.toplevel.structure.RecordDeclaration" flags="ng" index="2Ss9d8" />
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
     </language>
@@ -2233,6 +2247,101 @@
             <node concept="30bXRB" id="7aRvJQErcdK" role="FfN7O">
               <property role="30bXRw" value="40.20" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Ss9d8" id="6N7p0lWtq35" role="_iOnB">
+      <property role="TrG5h" value="Point" />
+      <node concept="2Ss9d7" id="6N7p0lWtsGx" role="S5Trm">
+        <property role="TrG5h" value="x" />
+        <node concept="2vmvy5" id="6N7p0lWtsGB" role="2S399n" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="6N7p0lWtycn" role="_iOnB" />
+    <node concept="2zPypq" id="6N7p0lWtErk" role="_iOnB">
+      <property role="TrG5h" value="point1" />
+      <node concept="2S399m" id="6N7p0lWtH6B" role="2zPyp_">
+        <node concept="2Ss9cW" id="6N7p0lWtH6H" role="2S399n">
+          <ref role="2Ss9cX" node="6N7p0lWtq35" resolve="Point" />
+        </node>
+        <node concept="2vmpnb" id="6N7p0lWuu0I" role="2S399l" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="6N7p0lWuM1Z" role="_iOnB">
+      <property role="TrG5h" value="tempPoint" />
+      <node concept="FfN7I" id="6N7p0lWuOMw" role="2zPyp_">
+        <node concept="FfN7L" id="6N7p0lWuOMA" role="FfN64">
+          <node concept="_emDc" id="6N7p0lWuON5" role="FfN7M">
+            <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+          </node>
+          <node concept="_emDc" id="6N7p0lWuONs" role="FfN7O">
+            <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_fkuM" id="6N7p0lWtvsn" role="_iOnB">
+      <property role="TrG5h" value="t" />
+      <node concept="_fkuZ" id="6N7p0lWtyc1" role="_fkp5">
+        <node concept="_fku$" id="6N7p0lWtyc2" role="_fkur" />
+        <node concept="30cPrO" id="6N7p0lWtH7g" role="_fkuY">
+          <node concept="_emDc" id="6N7p0lWtH7F" role="30dEs_">
+            <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+          </node>
+          <node concept="_emDc" id="6N7p0lWtH6Z" role="30dEsF">
+            <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="6N7p0lWuVCO" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="6N7p0lWuQvX" role="_fkp5">
+        <node concept="_fku$" id="6N7p0lWuQvY" role="_fkur" />
+        <node concept="30cPrO" id="6N7p0lWuQwJ" role="_fkuY">
+          <node concept="_emDc" id="6N7p0lWuT4I" role="30dEs_">
+            <ref role="_emDf" node="6N7p0lWuM1Z" resolve="tempPoint" />
+          </node>
+          <node concept="_emDc" id="6N7p0lWuQwt" role="30dEsF">
+            <ref role="_emDf" node="6N7p0lWuM1Z" resolve="tempPoint" />
+          </node>
+        </node>
+        <node concept="FfN7I" id="6N7p0lWuXR$" role="_fkuS">
+          <node concept="FfN7L" id="6N7p0lWuXRK" role="FfN64">
+            <node concept="_emDc" id="6N7p0lWuXSd" role="FfN7M">
+              <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+            </node>
+            <node concept="2vmpnb" id="6N7p0lWuXS$" role="FfN7O" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6N7p0lWwvAB" role="_fkp5">
+        <node concept="_fku$" id="6N7p0lWwvAC" role="_fkur" />
+        <node concept="30cPrR" id="6N7p0lWwvBv" role="_fkuY">
+          <node concept="_emDc" id="6N7p0lWwycw" role="30dEs_">
+            <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+          </node>
+          <node concept="_emDc" id="6N7p0lWwvBe" role="30dEsF">
+            <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+          </node>
+        </node>
+        <node concept="2vmpn$" id="6N7p0lWw$F0" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="6N7p0lWw$Fv" role="_fkp5">
+        <node concept="_fku$" id="6N7p0lWwDPM" role="_fkur" />
+        <node concept="30cPrR" id="6N7p0lWw$Gw" role="_fkuY">
+          <node concept="_emDc" id="6N7p0lWwBgY" role="30dEs_">
+            <ref role="_emDf" node="6N7p0lWuM1Z" resolve="tempPoint" />
+          </node>
+          <node concept="_emDc" id="6N7p0lWw$Gb" role="30dEsF">
+            <ref role="_emDf" node="6N7p0lWuM1Z" resolve="tempPoint" />
+          </node>
+        </node>
+        <node concept="FfN7I" id="7SUi0dnTfjr" role="_fkuS">
+          <node concept="FfN7L" id="7SUi0dnTfjv" role="FfN64">
+            <node concept="_emDc" id="7SUi0dnTfjW" role="FfN7M">
+              <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+            </node>
+            <node concept="2vmpn$" id="7SUi0dnTfkl" role="FfN7O" />
           </node>
         </node>
       </node>
