@@ -160,9 +160,9 @@
       <concept id="6891143932407155983" name="org.iets3.core.expr.datetime.structure.MonthValue" flags="ng" index="k_sZE" />
       <concept id="6891143932407162183" name="org.iets3.core.expr.datetime.structure.DayValue" flags="ng" index="k_uuy" />
       <concept id="8435714728543075342" name="org.iets3.core.expr.datetime.structure.MakeDate" flags="ng" index="2ohD7n">
-        <child id="8435714728543075345" name="monthExpr" index="2ohD78" />
-        <child id="8435714728543075348" name="dayExpr" index="2ohD7d" />
-        <child id="8435714728543075343" name="yearExpr" index="2ohD7m" />
+        <child id="8435714728543075345" name="month" index="2ohD78" />
+        <child id="8435714728543075348" name="day" index="2ohD7d" />
+        <child id="8435714728543075343" name="year" index="2ohD7m" />
       </concept>
       <concept id="8435714728547225444" name="org.iets3.core.expr.datetime.structure.UntilOp" flags="ng" index="2oxMaX">
         <child id="8435714728547225445" name="endDate" index="2oxMaW" />
