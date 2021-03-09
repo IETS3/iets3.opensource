@@ -167,8 +167,23 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="6911370362349121511" name="jetbrains.mps.lang.smodel.structure.ConceptId" flags="nn" index="2x4n5u">
+        <property id="6911370362349122519" name="conceptName" index="2x4mPI" />
+        <property id="6911370362349121516" name="conceptId" index="2x4n5l" />
+        <child id="6911370362349121514" name="languageIdentity" index="2x4n5j" />
+      </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="8415841354032330476" name="jetbrains.mps.lang.smodel.structure.ReferenceLinkId" flags="ng" index="HUanN">
+        <property id="8415841354032330479" name="referenceName" index="HUanK" />
+        <property id="8415841354032330478" name="referenceId" index="HUanL" />
+        <child id="8415841354032330477" name="conceptIdentity" index="HUanM" />
+      </concept>
+      <concept id="8415841354032330471" name="jetbrains.mps.lang.smodel.structure.ContainmentLinkId" flags="ng" index="HUanS">
+        <property id="8415841354032330474" name="linkName" index="HUanP" />
+        <property id="8415841354032330473" name="linkId" index="HUanQ" />
+        <child id="8415841354032330472" name="conceptIdentity" index="HUanR" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -178,6 +193,10 @@
       <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
+      </concept>
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
@@ -203,6 +222,14 @@
       </concept>
     </language>
     <language id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration">
+      <concept id="3116305438947623354" name="jetbrains.mps.lang.migration.structure.MoveContainmentLink" flags="ng" index="7a1rN">
+        <child id="8415841354033040054" name="targetId" index="HTpAD" />
+        <child id="8415841354033040053" name="sourceId" index="HTpAE" />
+      </concept>
+      <concept id="3116305438947623351" name="jetbrains.mps.lang.migration.structure.MoveReferenceLink" flags="ng" index="7a1rY">
+        <child id="8415841354033040062" name="targetId" index="HTpAx" />
+        <child id="8415841354033040061" name="sourceId" index="HTpAy" />
+      </concept>
       <concept id="3116305438947553624" name="jetbrains.mps.lang.migration.structure.RefactoringPart" flags="ng" index="7amoh">
         <property id="3628660716136424362" name="participant" index="hSBgo" />
         <child id="3628660716136424366" name="finalState" index="hSBgs" />
@@ -217,6 +244,16 @@
         <property id="2015900981881695633" name="fromVersion" index="W$Cri" />
         <child id="2015900981881695634" name="part" index="W$Crh" />
         <child id="3597905718825595708" name="options" index="1w76sc" />
+      </concept>
+      <concept id="7431903976166007326" name="jetbrains.mps.lang.migration.structure.MoveNodeMigrationPart" flags="ng" index="Z4OXk">
+        <child id="3116305438947564633" name="specialization" index="7agGg" />
+        <child id="7431903976166276375" name="toNode" index="Z5P1t" />
+        <child id="7431903976166276373" name="fromNode" index="Z5P1v" />
+      </concept>
+      <concept id="7431903976166443707" name="jetbrains.mps.lang.migration.structure.PureMigrationScript" flags="ng" index="Z5qvL">
+        <property id="7431903976166443708" name="fromVersion" index="Z5qvQ" />
+        <property id="2151301691306162408" name="description" index="1AQGQl" />
+        <child id="7431903976166447091" name="part" index="Z5rET" />
       </concept>
       <concept id="3597905718825595712" name="jetbrains.mps.lang.migration.structure.RefactoringOptions" flags="ng" index="1w76tK">
         <child id="3597905718825595718" name="options" index="1w76tQ" />
@@ -2177,7 +2214,7 @@
               <node concept="3cpWsn" id="1KUmgSFpOE5" role="3cpWs9">
                 <property role="TrG5h" value="allUnits" />
                 <node concept="2I9FWS" id="1KUmgSFpODT" role="1tU5fm">
-                  <ref role="2I9WkF" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+                  <ref role="2I9WkF" to="b0gq:7eOyx9r3jsZ" resolve="FreeFloatingUnit" />
                 </node>
                 <node concept="2OqwBi" id="3slXa_gMjfn" role="33vP2m">
                   <node concept="2OqwBi" id="3slXa_gM8ca" role="2Oq$k0">
@@ -2187,7 +2224,7 @@
                       </node>
                       <node concept="2SmgA7" id="1KUmgSFpOE8" role="2OqNvi">
                         <node concept="chp4Y" id="1KUmgSFpOE9" role="1dBWTz">
-                          <ref role="cht4Q" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+                          <ref role="cht4Q" to="b0gq:7eOyx9r3jsZ" resolve="FreeFloatingUnit" />
                         </node>
                       </node>
                     </node>
@@ -2204,7 +2241,7 @@
                               </node>
                               <node concept="3O6GUB" id="3slXa_gMgzd" role="2OqNvi">
                                 <node concept="chp4Y" id="3slXa_gMish" role="3QVz_e">
-                                  <ref role="cht4Q" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+                                  <ref role="cht4Q" to="b0gq:7eOyx9r3jsZ" resolve="FreeFloatingUnit" />
                                 </node>
                               </node>
                             </node>
@@ -2233,7 +2270,7 @@
                   </node>
                   <node concept="_YKpA" id="1KUmgSFqn_g" role="3rvSg0">
                     <node concept="3Tqbb2" id="1KUmgSFqn_h" role="_ZDj9">
-                      <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+                      <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="FreeFloatingUnit" />
                     </node>
                   </node>
                 </node>
@@ -2247,7 +2284,7 @@
                     </node>
                     <node concept="_YKpA" id="1KUmgSFqnmQ" role="3rHtpV">
                       <node concept="3Tqbb2" id="1KUmgSFqnmR" role="_ZDj9">
-                        <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+                        <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="FreeFloatingUnit" />
                       </node>
                     </node>
                   </node>
@@ -2271,7 +2308,7 @@
                                   <ref role="3cqZAo" node="6Z6cUqSMLbc" resolve="it" />
                                 </node>
                                 <node concept="3TrEf2" id="6Z6cUqSMRlx" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="b0gq:1KUmgSFpwWq" resolve="dimension" />
+                                  <ref role="3Tt5mk" to="b0gq:1KUmgSFpwWq" resolve="quantitiy" />
                                 </node>
                               </node>
                               <node concept="3w_OXm" id="6Z6cUqSPU2o" role="2OqNvi" />
@@ -2332,7 +2369,7 @@
                               <node concept="2ShNRf" id="1KUmgSFqrle" role="37vLTx">
                                 <node concept="Tc6Ow" id="1KUmgSFqrkZ" role="2ShVmc">
                                   <node concept="3Tqbb2" id="1KUmgSFqrl0" role="HW$YZ">
-                                    <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+                                    <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="FreeFloatingUnit" />
                                   </node>
                                 </node>
                               </node>
@@ -2401,7 +2438,7 @@
                             <node concept="17QB3L" id="1KUmgSFqEfd" role="3rvQeY" />
                             <node concept="_YKpA" id="1KUmgSFqEfe" role="3rvSg0">
                               <node concept="3Tqbb2" id="1KUmgSFqEff" role="_ZDj9">
-                                <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+                                <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="FreeFloatingUnit" />
                               </node>
                             </node>
                           </node>
@@ -2410,7 +2447,7 @@
                               <node concept="17QB3L" id="1KUmgSFqEgm" role="3rHrn6" />
                               <node concept="_YKpA" id="1KUmgSFqEgn" role="3rHtpV">
                                 <node concept="3Tqbb2" id="1KUmgSFqEgo" role="_ZDj9">
-                                  <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+                                  <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="FreeFloatingUnit" />
                                 </node>
                               </node>
                             </node>
@@ -2435,7 +2472,7 @@
                                         <node concept="2ShNRf" id="1KUmgSFr4qw" role="37vLTx">
                                           <node concept="Tc6Ow" id="1KUmgSFr4qh" role="2ShVmc">
                                             <node concept="3Tqbb2" id="1KUmgSFr4qi" role="HW$YZ">
-                                              <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+                                              <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="FreeFloatingUnit" />
                                             </node>
                                           </node>
                                         </node>
@@ -2556,7 +2593,7 @@
                                                   <ref role="3cqZAo" node="1KUmgSFrxmZ" resolve="it" />
                                                 </node>
                                                 <node concept="3TrEf2" id="1KUmgSFrzIL" role="2OqNvi">
-                                                  <ref role="3Tt5mk" to="b0gq:1KUmgSFpwWq" resolve="dimension" />
+                                                  <ref role="3Tt5mk" to="b0gq:1KUmgSFpwWq" resolve="quantitiy" />
                                                 </node>
                                               </node>
                                             </node>
@@ -2727,6 +2764,255 @@
     </node>
     <node concept="3uibUv" id="1KUmgSFpHJ6" role="1zkMxy">
       <ref role="3uigEE" to="slm6:5TUCQr2ybBO" resolve="HasMigrationScriptReference" />
+    </node>
+  </node>
+  <node concept="Z5qvL" id="3o9nEYmJRnW">
+    <property role="Z5qvQ" value="3" />
+    <property role="TrG5h" value="Migrate_MoveLinkUp_3" />
+    <property role="1AQGQl" value="Move link `unit` to concept `AbstractUnitReference`" />
+    <node concept="Z4OXk" id="3o9nEYmJRo7" role="Z5rET">
+      <node concept="2pBcaW" id="3o9nEYmJRo5" role="Z5P1v">
+        <property role="2pBcoG" value="8337440621611297532" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="unit_old" />
+      </node>
+      <node concept="2pBcaW" id="3o9nEYmJRo6" role="Z5P1t">
+        <property role="2pBcoG" value="3893747461079922162" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="unit" />
+      </node>
+      <node concept="7a1rY" id="3o9nEYmJRo4" role="7agGg">
+        <node concept="HUanN" id="3o9nEYmJRnY" role="HTpAy">
+          <property role="HUanK" value="unit_old" />
+          <property role="HUanL" value="1rcds1di1pwqk" />
+          <node concept="2x4n5u" id="3o9nEYmJRnZ" role="HUanM">
+            <property role="2x4mPI" value="UnitReference" />
+            <property role="2x4n5l" value="1rcds1di1pebp" />
+            <node concept="2V$Bhx" id="3o9nEYmJRo0" role="2x4n5j">
+              <property role="2V$B1T" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.typetags.units" />
+            </node>
+          </node>
+        </node>
+        <node concept="HUanN" id="3o9nEYmJRo1" role="HTpAx">
+          <property role="HUanK" value="unit" />
+          <property role="HUanL" value="tkzea1gqr3si" />
+          <node concept="2x4n5u" id="3o9nEYmJRo2" role="HUanM">
+            <property role="2x4mPI" value="AbstractUnitReference" />
+            <property role="2x4n5l" value="tkzea1gqr3m0" />
+            <node concept="2V$Bhx" id="3o9nEYmJRo3" role="2x4n5j">
+              <property role="2V$B1T" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.typetags.units" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="3o9nEYmJRkJ">
+    <property role="Z5qvQ" value="2" />
+    <property role="TrG5h" value="Migrate_MoveLinkUp_2" />
+    <property role="1AQGQl" value="Move link `exponent` to concept `AbstractUnitReference`" />
+    <node concept="Z4OXk" id="3o9nEYmJRkU" role="Z5rET">
+      <node concept="2pBcaW" id="3o9nEYmJRkS" role="Z5P1v">
+        <property role="2pBcoG" value="8337440621611297534" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="exponent_old" />
+      </node>
+      <node concept="2pBcaW" id="3o9nEYmJRkT" role="Z5P1t">
+        <property role="2pBcoG" value="3893747461079921957" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="exponent" />
+      </node>
+      <node concept="7a1rN" id="3o9nEYmJRkR" role="7agGg">
+        <node concept="HUanS" id="3o9nEYmJRkL" role="HTpAE">
+          <property role="HUanP" value="exponent_old" />
+          <property role="HUanQ" value="1rcds1di1pwqm" />
+          <node concept="2x4n5u" id="3o9nEYmJRkM" role="HUanR">
+            <property role="2x4mPI" value="UnitReference" />
+            <property role="2x4n5l" value="1rcds1di1pebp" />
+            <node concept="2V$Bhx" id="3o9nEYmJRkN" role="2x4n5j">
+              <property role="2V$B1T" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.typetags.units" />
+            </node>
+          </node>
+        </node>
+        <node concept="HUanS" id="3o9nEYmJRkO" role="HTpAD">
+          <property role="HUanP" value="exponent" />
+          <property role="HUanQ" value="tkzea1gqr3mt" />
+          <node concept="2x4n5u" id="3o9nEYmJRkP" role="HUanR">
+            <property role="2x4mPI" value="AbstractUnitReference" />
+            <property role="2x4n5l" value="tkzea1gqr3m0" />
+            <node concept="2V$Bhx" id="3o9nEYmJRkQ" role="2x4n5j">
+              <property role="2V$B1T" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.typetags.units" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="5LBNo1VdVAR">
+    <property role="Z5qvQ" value="1" />
+    <property role="TrG5h" value="Migrate_MoveLinkUp_1" />
+    <property role="1AQGQl" value="Move link `speficication` to concept `AbstractUnit`" />
+    <node concept="Z4OXk" id="5LBNo1VdVB2" role="Z5rET">
+      <node concept="2pBcaW" id="5LBNo1VdVB0" role="Z5P1v">
+        <property role="2pBcoG" value="8337440621611270427" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="speficication_old" />
+      </node>
+      <node concept="2pBcaW" id="5LBNo1VdVB1" role="Z5P1t">
+        <property role="2pBcoG" value="6658516525797325229" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="speficication" />
+      </node>
+      <node concept="7a1rN" id="5LBNo1VdVAZ" role="7agGg">
+        <node concept="HUanS" id="5LBNo1VdVAT" role="HTpAE">
+          <property role="HUanP" value="speficication_old" />
+          <property role="HUanQ" value="1rcds1di1pbtn" />
+          <node concept="2x4n5u" id="5LBNo1VdVAU" role="HUanR">
+            <property role="2x4mPI" value="FreeFloatingUnit" />
+            <property role="2x4n5l" value="1rcds1di1p9vj" />
+            <node concept="2V$Bhx" id="5LBNo1VdVAV" role="2x4n5j">
+              <property role="2V$B1T" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.typetags.units" />
+            </node>
+          </node>
+        </node>
+        <node concept="HUanS" id="5LBNo1VdVAW" role="HTpAD">
+          <property role="HUanP" value="speficication" />
+          <property role="HUanQ" value="1el6f47mhn6i5" />
+          <node concept="2x4n5u" id="5LBNo1VdVAX" role="HUanR">
+            <property role="2x4mPI" value="AbstractUnit" />
+            <property role="2x4n5l" value="1el6f47mhn6h6" />
+            <node concept="2V$Bhx" id="5LBNo1VdVAY" role="2x4n5j">
+              <property role="2V$B1T" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.typetags.units" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="W$Crc" id="3o9nEYmJRnN">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="3" />
+    <property role="TrG5h" value="Update References: unit-&gt;unit" />
+    <node concept="1w76tK" id="3o9nEYmJRnO" role="1w76sc">
+      <node concept="1w76tN" id="3o9nEYmJRnP" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="3o9nEYmJRnQ" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="3o9nEYmJRnR" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="3o9nEYmJRnS" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="3o9nEYmJRnT" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o9nEYmJRnV" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o9nEYmJRnK" role="hSBgu">
+        <property role="2pBcoG" value="8337440621611297532" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="unit" />
+      </node>
+      <node concept="2pBcaW" id="3o9nEYmJRnU" role="hSBgs">
+        <property role="2pBcoG" value="3893747461079922162" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="unit" />
+      </node>
+    </node>
+  </node>
+  <node concept="W$Crc" id="5LBNo1VdVAI">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="1" />
+    <property role="TrG5h" value="Update References: speficication-&gt;speficication" />
+    <node concept="1w76tK" id="5LBNo1VdVAJ" role="1w76sc">
+      <node concept="1w76tN" id="5LBNo1VdVAK" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="5LBNo1VdVAL" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="5LBNo1VdVAM" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="5LBNo1VdVAN" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="5LBNo1VdVAO" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="5LBNo1VdVAQ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="5LBNo1VdVAF" role="hSBgu">
+        <property role="2pBcoG" value="8337440621611270427" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="speficication" />
+      </node>
+      <node concept="2pBcaW" id="5LBNo1VdVAP" role="hSBgs">
+        <property role="2pBcoG" value="6658516525797325229" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="speficication" />
+      </node>
+    </node>
+  </node>
+  <node concept="W$Crc" id="3o9nEYmJRkA">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="2" />
+    <property role="TrG5h" value="Update References: exponent-&gt;exponent" />
+    <node concept="1w76tK" id="3o9nEYmJRkB" role="1w76sc">
+      <node concept="1w76tN" id="3o9nEYmJRkC" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="3o9nEYmJRkD" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="3o9nEYmJRkE" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="3o9nEYmJRkF" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="3o9nEYmJRkG" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o9nEYmJRkI" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o9nEYmJRkz" role="hSBgu">
+        <property role="2pBcoG" value="8337440621611297534" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="exponent" />
+      </node>
+      <node concept="2pBcaW" id="3o9nEYmJRkH" role="hSBgs">
+        <property role="2pBcoG" value="3893747461079921957" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="exponent" />
+      </node>
     </node>
   </node>
 </model>

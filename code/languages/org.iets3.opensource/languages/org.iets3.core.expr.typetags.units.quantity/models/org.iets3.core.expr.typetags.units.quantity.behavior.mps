@@ -241,7 +241,7 @@
           <node concept="3cpWsn" id="3pxcf5Vlgb3" role="3cpWs9">
             <property role="TrG5h" value="unit" />
             <node concept="3Tqbb2" id="3pxcf5VlfGx" role="1tU5fm">
-              <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+              <ref role="ehGHo" to="b0gq:7eOyx9r3jsZ" resolve="FreeFloatingUnit" />
             </node>
             <node concept="2OqwBi" id="3pxcf5Vlgb4" role="33vP2m">
               <node concept="2OqwBi" id="3pxcf5Vlgb5" role="2Oq$k0">
@@ -262,7 +262,7 @@
                 <node concept="1uHKPH" id="3pxcf5Vlgbb" role="2OqNvi" />
               </node>
               <node concept="3TrEf2" id="3pxcf5Vlgbc" role="2OqNvi">
-                <ref role="3Tt5mk" to="b0gq:7eOyx9r3qFW" resolve="unit" />
+                <ref role="3Tt5mk" to="b0gq:3o9nEYmJRnM" resolve="unit" />
               </node>
             </node>
           </node>
@@ -273,8 +273,8 @@
               <node concept="37vLTw" id="3pxcf5Vlgbd" role="2Oq$k0">
                 <ref role="3cqZAo" node="3pxcf5Vlgb3" resolve="unit" />
               </node>
-              <node concept="3TrEf2" id="3pxcf5VjzXv" role="2OqNvi">
-                <ref role="3Tt5mk" to="b0gq:1KUmgSFpwWq" resolve="dimension" />
+              <node concept="2qgKlT" id="6LWEDKcw4DS" role="2OqNvi">
+                <ref role="37wK5l" to="dntf:5LBNo1VdVKx" resolve="quantity" />
               </node>
             </node>
             <node concept="37vLTw" id="3pxcf5Vlg0l" role="3uHU7B">
@@ -335,7 +335,7 @@
         <node concept="3cpWs6" id="76ZhK6XVuJy" role="3cqZAp">
           <node concept="2OqwBi" id="76ZhK6XVyJd" role="3cqZAk">
             <node concept="2YIFZM" id="1Ovl2ivuE3q" role="2Oq$k0">
-              <ref role="37wK5l" to="dntf:1KUmgSFw1bh" resolve="getVisibleDimensionFrom" />
+              <ref role="37wK5l" to="dntf:1KUmgSFw1bh" resolve="getVisibleQuantitiesFrom" />
               <ref role="1Pybhc" to="dntf:6FK1Pb8y_co" resolve="ScopingHelper" />
               <node concept="37vLTw" id="1Ovl2ivuE3r" role="37wK5m">
                 <ref role="3cqZAo" node="1Ovl2ivuDRX" resolve="context" />

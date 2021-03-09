@@ -63,6 +63,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
       <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
         <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
@@ -678,6 +679,16 @@
           <node concept="11LMrY" id="76ZhK6XSUHB" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6LWEDKcwwiI" role="3EZMnx">
+        <property role="3F0ifm" value="|" />
+        <ref role="1ERwB7" node="4jkbLB5Qpq5" resolve="TaggedExpression_RemoveTags" />
+        <node concept="11L4FC" id="6LWEDKcwUkV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VPM3Z" id="6LWEDKcxkXY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="l2Vlx" id="7eOyx9r3D2u" role="2iSdaV" />
