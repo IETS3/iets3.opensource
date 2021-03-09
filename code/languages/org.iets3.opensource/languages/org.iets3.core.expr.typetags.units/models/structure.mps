@@ -129,7 +129,7 @@
       <property role="20kJfa" value="components" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <property role="IQ2ns" value="8337440621611297539" />
-      <ref role="20lvS9" node="7eOyx9r3kR5" resolve="UnitReference" />
+      <ref role="20lvS9" node="3o9nEYmJRk8" resolve="AbstractUnitReference" />
     </node>
     <node concept="PrWs8" id="1KUmgSF_7Tb" role="PzmwI">
       <ref role="PrY4T" node="1KUmgSF_6Qv" resolve="ISpecification" />
@@ -386,13 +386,6 @@
     <property role="3GE5qa" value="definition" />
     <property role="TrG5h" value="ISpecification" />
   </node>
-  <node concept="1TIwiD" id="pILkiUtHTJ">
-    <property role="EcuMT" value="463524710642540143" />
-    <property role="3GE5qa" value="definition" />
-    <property role="TrG5h" value="MegaUnitRef" />
-    <property role="34LRSv" value="M" />
-    <ref role="1TJDcQ" node="7eOyx9r3kR5" resolve="UnitReference" />
-  </node>
   <node concept="1TIwiD" id="5LBNo1VczdD">
     <property role="EcuMT" value="6658516525796963177" />
     <property role="3GE5qa" value="definition" />
@@ -555,7 +548,7 @@
     <property role="3GE5qa" value="definition.references" />
     <property role="TrG5h" value="MetricPrefixReference" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="7eOyx9r3kR5" resolve="UnitReference" />
+    <ref role="1TJDcQ" node="3o9nEYmJRk8" resolve="AbstractUnitReference" />
   </node>
   <node concept="1TIwiD" id="3o9nEYmDATn">
     <property role="EcuMT" value="3893747461078281815" />
