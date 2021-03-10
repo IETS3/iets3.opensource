@@ -267,6 +267,9 @@
     <node concept="PrWs8" id="6vTsh3ZZp5j" role="PzmwI">
       <ref role="PrY4T" node="59WscmUTdO4" resolve="ITestItemContainer" />
     </node>
+    <node concept="PrWs8" id="1hbr9aMK1sE" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
+    </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/testsuite.png" />
     </node>
