@@ -189,10 +189,12 @@ if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
 def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
         project.files("$ext.jdk_home/lib/tools.jar")
 
+def javaExecutable = new File(jdk_home, 'bin/java')
+
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
 ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
-ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = javaExecutable
 
 task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs]) {
     script "$buildDir/scripts/build-allScripts.xml"
@@ -250,6 +252,7 @@ task packageDistroWithDependencies(type: Zip, dependsOn: buildDistroWithDependen
 modelcheck {
     projectLocation = file('code/languages/org.iets3.opensource')
     mpsConfig = configurations.mps
+    javaExec = javaExecutable
     macros = [new Macro("iets3.github.opensource.home", rootDir.path.replace('\\', '/'))]
     modules = ["test.in.expr.os"]
     junitFile = file("$buildDir/TESTS-modelcheck-results.xml")
