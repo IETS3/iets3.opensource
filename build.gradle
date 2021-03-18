@@ -11,7 +11,7 @@ buildscript {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.175.cc60dc8'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.4.259.ea181a8'
     }
 }
 
@@ -19,6 +19,7 @@ plugins {
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
+    id 'modelcheck' version '1.4.259.ea181a8'
 }
 
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
@@ -246,6 +247,16 @@ task packageDistroWithDependencies(type: Zip, dependsOn: buildDistroWithDependen
     include 'org.iets3.opensource.distro/**'
 }
 
+modelcheck {
+    projectLocation = file('code/languages/org.iets3.opensource')
+    mpsConfig = configurations.mps
+    macros = [new Macro("iets3.github.opensource.home", rootDir.path.replace('\\', '/'))]
+    modules = ["test.in.expr.os"]
+    junitFile = file("$buildDir/TESTS-modelcheck-results.xml")
+    errorNoFail = true
+}
+
+check.dependsOn 'checkmodels'
 assemble.dependsOn packageAllScripts, packageLanguages, packageTests
 
 publishing {
