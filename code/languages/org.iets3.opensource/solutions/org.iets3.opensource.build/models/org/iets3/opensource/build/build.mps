@@ -2590,6 +2590,11 @@
             <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
           </node>
         </node>
+        <node concept="1SiIV0" id="616oath7Wnd" role="3bR37C">
+          <node concept="3bR9La" id="616oath7Wne" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:763TrXRFx3C" resolve="de.q60.mps.shadowmodels.modelcheck.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4C_RnzfEE1P" role="2G$12L">
         <property role="BnDLt" value="true" />
