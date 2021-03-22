@@ -24,6 +24,7 @@
     <import index="boxz" ref="r:89e950b9-8c66-4fca-a5c0-614e0548d83a(org.iets3.core.expr.math.behavior)" />
     <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="r15o" ref="r:1371cea9-c863-4685-846a-8eea74c1745a(org.iets3.core.expr.infinity)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -5786,9 +5787,9 @@
                       </node>
                       <node concept="liA8E" id="4pvRh1N9Ekb" role="2OqNvi">
                         <ref role="37wK5l" to="xlxw:~BigDecimal.setScale(int,java.math.RoundingMode)" resolve="setScale" />
-                        <node concept="10M0yZ" id="4pvRh1N9QDF" role="37wK5m">
-                          <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                          <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                        <node concept="10M0yZ" id="4C8CrwW7C2c" role="37wK5m">
+                          <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
+                          <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                         </node>
                         <node concept="Rm8GO" id="4pvRh1Nacwv" role="37wK5m">
                           <ref role="Rm8GQ" to="xlxw:~RoundingMode.FLOOR" resolve="FLOOR" />
@@ -7735,9 +7736,9 @@
           </node>
         </node>
         <node concept="3clFbF" id="6Ywz62j4IBJ" role="3cqZAp">
-          <node concept="10M0yZ" id="6Ywz62j4IQo" role="3clFbG">
-            <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
-            <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+          <node concept="10M0yZ" id="4C8CrwW7C2d" role="3clFbG">
+            <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
+            <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
           </node>
         </node>
       </node>
@@ -11681,13 +11682,13 @@
               <node concept="37vLTw" id="1LePwmdxbRE" role="37wK5m">
                 <ref role="3cqZAo" node="1LePwmdxa1g" resolve="den" />
               </node>
-              <node concept="10M0yZ" id="1LePwmdxbTL" role="37wK5m">
-                <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
-                <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="10M0yZ" id="4C8CrwW7C2e" role="37wK5m">
+                <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
+                <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
               </node>
-              <node concept="10M0yZ" id="1LePwmdxbTN" role="37wK5m">
-                <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+              <node concept="10M0yZ" id="4C8CrwW7C2q" role="37wK5m">
+                <ref role="3cqZAo" to="r15o:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+                <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
               </node>
             </node>
           </node>
@@ -12121,13 +12122,13 @@
                   </node>
                 </node>
               </node>
-              <node concept="10M0yZ" id="1LePwmdxMnA" role="37wK5m">
-                <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
-                <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="10M0yZ" id="4C8CrwW7C2f" role="37wK5m">
+                <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
+                <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
               </node>
-              <node concept="10M0yZ" id="1LePwmdxMnC" role="37wK5m">
-                <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+              <node concept="10M0yZ" id="4C8CrwW7C2r" role="37wK5m">
+                <ref role="3cqZAo" to="r15o:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+                <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
               </node>
             </node>
           </node>
@@ -12415,13 +12416,13 @@
               <node concept="Xjq3P" id="6zU$Zuz5UC1" role="2Oq$k0" />
               <node concept="liA8E" id="6zU$Zuz5UC2" role="2OqNvi">
                 <ref role="37wK5l" node="5mz5Tt_gb5C" resolve="decimalValue" />
-                <node concept="10M0yZ" id="6zU$Zuz6aQN" role="37wK5m">
-                  <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
-                  <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                <node concept="10M0yZ" id="4C8CrwW7C2g" role="37wK5m">
+                  <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
+                  <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                 </node>
-                <node concept="10M0yZ" id="6zU$Zuz6WLS" role="37wK5m">
-                  <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
-                  <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                <node concept="10M0yZ" id="4C8CrwW7C2s" role="37wK5m">
+                  <ref role="3cqZAo" to="r15o:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+                  <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                 </node>
               </node>
             </node>
