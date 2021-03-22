@@ -2725,6 +2725,47 @@
     <property role="TrG5h" value="check_BlockExpression" />
     <property role="3GE5qa" value="block" />
     <node concept="3clFbS" id="18$bUx588ed" role="18ibNy">
+      <node concept="3cpWs8" id="5Skjv8PZQ9x" role="3cqZAp">
+        <node concept="3cpWsn" id="5Skjv8PZQ9y" role="3cpWs9">
+          <property role="TrG5h" value="lastExpr" />
+          <node concept="3Tqbb2" id="5Skjv8PZOoS" role="1tU5fm">
+            <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+          </node>
+          <node concept="2OqwBi" id="5Skjv8PZQ9z" role="33vP2m">
+            <node concept="2OqwBi" id="5Skjv8PZQ9$" role="2Oq$k0">
+              <node concept="1YBJjd" id="5Skjv8PZQ9_" role="2Oq$k0">
+                <ref role="1YBMHb" node="18$bUx588ef" resolve="be" />
+              </node>
+              <node concept="3Tsc0h" id="5Skjv8PZQ9A" role="2OqNvi">
+                <ref role="3TtcxE" to="zzzn:49WTic8ig5E" resolve="expressions" />
+              </node>
+            </node>
+            <node concept="1yVyf7" id="5Skjv8PZQ9B" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5Skjv8PZE0W" role="3cqZAp">
+        <node concept="3clFbS" id="5Skjv8PZE0Y" role="3clFbx">
+          <node concept="2MkqsV" id="5Skjv8PZKN$" role="3cqZAp">
+            <node concept="Xl_RD" id="5Skjv8PZKNN" role="2MkJ7o">
+              <property role="Xl_RC" value="using a val as the last expression in a block is not allowed (and useless)" />
+            </node>
+            <node concept="37vLTw" id="5Skjv8PZQ9D" role="1urrMF">
+              <ref role="3cqZAo" node="5Skjv8PZQ9y" resolve="lastExpr" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="5Skjv8PZK9L" role="3clFbw">
+          <node concept="37vLTw" id="5Skjv8PZQ9C" role="2Oq$k0">
+            <ref role="3cqZAo" node="5Skjv8PZQ9y" resolve="lastExpr" />
+          </node>
+          <node concept="1mIQ4w" id="5Skjv8PZKFZ" role="2OqNvi">
+            <node concept="chp4Y" id="5Skjv8PZKIw" role="cj9EA">
+              <ref role="cht4Q" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="3hsdwqFIvha" role="3cqZAp">
         <node concept="3clFbS" id="3hsdwqFIvhb" role="3clFbx">
           <node concept="3cpWs8" id="1sm6PG6sURE" role="3cqZAp">
