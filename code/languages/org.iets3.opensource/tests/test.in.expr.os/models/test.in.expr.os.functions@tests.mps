@@ -32,7 +32,6 @@
       <concept id="1019070541450015930" name="org.iets3.core.expr.base.structure.TupleType" flags="ng" index="m5gfS">
         <child id="1019070541450015931" name="elementTypes" index="m5gfT" />
       </concept>
-      <concept id="7089558164908491660" name="org.iets3.core.expr.base.structure.EmptyExpression" flags="ng" index="2zH6wq" />
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -61,6 +60,9 @@
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="8219602584783477663" name="org.iets3.core.expr.tests.structure.ConstraintFailedTestItem" flags="ng" index="mXNUv">
+        <child id="8219602584783494093" name="actual" index="mXJVd" />
+      </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -117,9 +119,6 @@
       <concept id="867786408880429238" name="org.iets3.core.expr.lambda.structure.FunResExpr" flags="ng" index="Ic2ui" />
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
-      </concept>
-      <concept id="4790956042241053102" name="org.iets3.core.expr.lambda.structure.ValExpression" flags="ng" index="1adJid">
-        <child id="4790956042241053105" name="expr" index="1adJij" />
       </concept>
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
@@ -349,16 +348,12 @@
           <property role="30bXRw" value="9" />
         </node>
       </node>
-      <node concept="_fkuZ" id="1EIbarJFyCn" role="_fkp5">
-        <node concept="_fku$" id="1EIbarJFyCo" role="_fkur" />
-        <node concept="1af_rf" id="1EIbarJFIsG" role="_fkuY">
+      <node concept="mXNUv" id="5Skjv8Q0Qe9" role="_fkp5">
+        <node concept="1af_rf" id="1EIbarJFIsG" role="mXJVd">
           <ref role="1afhQb" node="1EIbarJF80L" resolve="getConstantNumber3" />
           <node concept="30bXRB" id="1EIbarJFUfV" role="1afhQ5">
             <property role="30bXRw" value="1" />
           </node>
-        </node>
-        <node concept="30bXRB" id="1EIbarJFXeT" role="_fkuS">
-          <property role="30bXRw" value="9" />
         </node>
       </node>
       <node concept="_fkuZ" id="1EIbarJGF3J" role="_fkp5">
@@ -465,14 +460,8 @@
           </node>
         </node>
       </node>
-      <node concept="1aduha" id="1EIbarJQbZq" role="1ahQXP">
-        <node concept="1adJid" id="1EIbarJQbZE" role="1aduh9">
-          <property role="TrG5h" value="dummy" />
-          <node concept="30bXRB" id="1EIbarJQc1m" role="1adJij">
-            <property role="30bXRw" value="0" />
-          </node>
-        </node>
-        <node concept="2zH6wq" id="1EIbarJQA_h" role="1aduh9" />
+      <node concept="30bXRB" id="5Skjv8Q09De" role="1ahQXP">
+        <property role="30bXRw" value="0" />
       </node>
     </node>
     <node concept="1aga60" id="1EIbarJQMrV" role="_iOnB">
@@ -487,13 +476,8 @@
           </node>
         </node>
       </node>
-      <node concept="1aduha" id="1EIbarJRd1q" role="1ahQXP">
-        <node concept="1adJid" id="1EIbarJRd1E" role="1aduh9">
-          <property role="TrG5h" value="dummy" />
-          <node concept="30bXRB" id="1EIbarJRd24" role="1adJij">
-            <property role="30bXRw" value="0" />
-          </node>
-        </node>
+      <node concept="30bXRB" id="5Skjv8Q09_R" role="1ahQXP">
+        <property role="30bXRw" value="0" />
       </node>
     </node>
     <node concept="1aga60" id="1EIbarJRrPj" role="_iOnB">
@@ -508,14 +492,8 @@
           </node>
         </node>
       </node>
-      <node concept="1aduha" id="1EIbarJRQqI" role="1ahQXP">
-        <node concept="2zH6wq" id="1EIbarJRQqO" role="1aduh9" />
-        <node concept="1adJid" id="1EIbarJRQro" role="1aduh9">
-          <property role="TrG5h" value="dummy" />
-          <node concept="30bXRB" id="1EIbarJRQrP" role="1adJij">
-            <property role="30bXRw" value="0" />
-          </node>
-        </node>
+      <node concept="30bXRB" id="5Skjv8Q09zQ" role="1ahQXP">
+        <property role="30bXRw" value="0" />
       </node>
     </node>
     <node concept="_ixoA" id="1EIbarK8G0z" role="_iOnB" />
@@ -856,11 +834,11 @@
           </node>
         </node>
       </node>
-      <node concept="_emDc" id="1EIbarJFvDZ" role="1ahQXP">
-        <ref role="_emDf" node="1EIbarJ$BYs" resolve="constantNumber" />
+      <node concept="1afdae" id="5Skjv8Q0w8$" role="1ahQXP">
+        <ref role="1afue_" node="1EIbarJFvDj" resolve="constNr" />
       </node>
       <node concept="1ahQXy" id="1EIbarJFvDj" role="1ahQWs">
-        <property role="TrG5h" value="constantNumber" />
+        <property role="TrG5h" value="constNr" />
         <node concept="mLuIC" id="1EIbarJFvDO" role="3ix9CU" />
       </node>
     </node>
