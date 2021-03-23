@@ -8,9 +8,9 @@
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="vsv5" ref="r:7df3c033-0c27-4a50-97c3-f940e7dd27c2(org.iets3.core.expr.genjava.base.rt.rt)" />
     <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="r15o" ref="r:1371cea9-c863-4685-846a-8eea74c1745a(org.iets3.core.expr.infinity)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -2001,13 +2001,13 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="10M0yZ" id="1VqmZU7mt_E" role="37wK5m">
-                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
-                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="10M0yZ" id="4C8CrwW7C27" role="37wK5m">
+                    <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
-                  <node concept="10M0yZ" id="1VqmZU7mvQt" role="37wK5m">
-                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
-                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="10M0yZ" id="4C8CrwW7C2m" role="37wK5m">
+                    <ref role="3cqZAo" to="r15o:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
                 </node>
                 <node concept="1eOMI4" id="5azVK7Pl8BO" role="2Oq$k0">
@@ -2061,13 +2061,13 @@
                       <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
                     </node>
                   </node>
-                  <node concept="10M0yZ" id="1VqmZU7mu5c" role="37wK5m">
-                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                  <node concept="10M0yZ" id="4C8CrwW7C28" role="37wK5m">
+                    <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
-                  <node concept="10M0yZ" id="1VqmZU7mwck" role="37wK5m">
-                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
-                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="10M0yZ" id="4C8CrwW7C2n" role="37wK5m">
+                    <ref role="3cqZAo" to="r15o:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
                 </node>
                 <node concept="2ShNRf" id="6IxV2nShTpx" role="2Oq$k0">
@@ -2126,13 +2126,13 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="10M0yZ" id="1VqmZU7mum4" role="37wK5m">
-                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
-                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="10M0yZ" id="4C8CrwW7C29" role="37wK5m">
+                    <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
-                  <node concept="10M0yZ" id="1VqmZU7mwuz" role="37wK5m">
-                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
-                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="10M0yZ" id="4C8CrwW7C2o" role="37wK5m">
+                    <ref role="3cqZAo" to="r15o:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
                 </node>
                 <node concept="1eOMI4" id="6IxV2nShTpS" role="2Oq$k0">
@@ -2181,13 +2181,13 @@
                       <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
                     </node>
                   </node>
-                  <node concept="10M0yZ" id="1VqmZU7muAW" role="37wK5m">
-                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                  <node concept="10M0yZ" id="4C8CrwW7C2a" role="37wK5m">
+                    <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
-                  <node concept="10M0yZ" id="1VqmZU7mwKM" role="37wK5m">
-                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
-                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="10M0yZ" id="4C8CrwW7C2p" role="37wK5m">
+                    <ref role="3cqZAo" to="r15o:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
                 </node>
                 <node concept="1eOMI4" id="6IxV2nShTqb" role="2Oq$k0">
