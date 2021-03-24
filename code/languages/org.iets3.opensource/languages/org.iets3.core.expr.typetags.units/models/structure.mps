@@ -380,6 +380,9 @@
     <node concept="PrWs8" id="2NfH98zDL3h" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="7xdEAvKWlNq" role="PzmwI">
+      <ref role="PrY4T" node="7eOyx9r3k3e" resolve="IUnit" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1KUmgSF_6Qv">
     <property role="EcuMT" value="2034036099106762143" />
@@ -714,18 +717,34 @@
     <property role="3GE5qa" value="definition.references" />
     <property role="TrG5h" value="AbstractUnitReference" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="7xdEAvKVEyo" resolve="IUnitReference" />
     <node concept="1TJgyj" id="3o9nEYmJRk_" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="exponent" />
+      <property role="20kJfa" value="exponent_old" />
       <property role="IQ2ns" value="3893747461079921957" />
       <ref role="20lvS9" node="3j3yk3guAAl" resolve="Exponent" />
+      <node concept="asaX9" id="7xdEAvKVEz2" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.typetags.units.structure.IUnitReference&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="3o9nEYmJRnM" role="1TKVEi">
       <property role="20kJfa" value="unit" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="3893747461079922162" />
       <ref role="20lvS9" node="5LBNo1VdVAa" resolve="AbstractUnit" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7xdEAvKVEyo">
+    <property role="EcuMT" value="8668772221158598808" />
+    <property role="3GE5qa" value="definition" />
+    <property role="TrG5h" value="IUnitReference" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7xdEAvKVEyR" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exponent" />
+      <property role="IQ2ns" value="8668772221158598839" />
+      <ref role="20lvS9" node="3j3yk3guAAl" resolve="Exponent" />
     </node>
   </node>
 </model>

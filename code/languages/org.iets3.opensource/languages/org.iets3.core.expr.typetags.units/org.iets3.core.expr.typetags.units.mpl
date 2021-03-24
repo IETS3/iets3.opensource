@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.iets3.core.expr.typetags.units" uuid="cb91a38e-738a-4811-a96d-448d08f526fa" languageVersion="4" moduleVersion="4">
+<language namespace="org.iets3.core.expr.typetags.units" uuid="cb91a38e-738a-4811-a96d-448d08f526fa" languageVersion="5" moduleVersion="5">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -144,7 +144,7 @@
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
     <module reference="5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)" version="0" />
-    <module reference="cb91a38e-738a-4811-a96d-448d08f526fa(org.iets3.core.expr.typetags.units)" version="4" />
+    <module reference="cb91a38e-738a-4811-a96d-448d08f526fa(org.iets3.core.expr.typetags.units)" version="5" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)</extendedLanguage>

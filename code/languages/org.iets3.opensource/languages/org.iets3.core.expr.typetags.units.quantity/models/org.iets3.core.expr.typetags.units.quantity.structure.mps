@@ -9,7 +9,6 @@
   <imports>
     <import index="w1hl" ref="r:04b74a30-84ff-4d44-89e3-8084278f9c79(org.iets3.core.expr.typetags.structure)" />
     <import index="b0gq" ref="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -17,11 +16,15 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
         <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -51,22 +54,19 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1KUmgSFxyCa" resolve="QuantityReference" />
     </node>
+    <node concept="PrWs8" id="7xdEAvKXgTi" role="PzmwI">
+      <ref role="PrY4T" to="b0gq:1KUmgSF_6Qv" resolve="ISpecification" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1KUmgSFxyCa">
     <property role="EcuMT" value="2034036099105827338" />
     <property role="TrG5h" value="QuantityReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="b0gq:7xdEAvKVEyo" resolve="IUnitReference" />
     <node concept="1TJgyj" id="71Zj$i0ct2e" role="1TKVEi">
       <property role="IQ2ns" value="8106283910405673102" />
       <property role="20kJfa" value="quantity" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="b0gq:1KUmgSFpwWn" resolve="Quantity" />
-    </node>
-    <node concept="1TJgyj" id="1KUmgSFxyCb" role="1TKVEi">
-      <property role="IQ2ns" value="2034036099105827339" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="exponent" />
-      <ref role="20lvS9" to="b0gq:3j3yk3guAAl" resolve="Exponent" />
     </node>
     <node concept="RPilO" id="71Zj$i0eCn0" role="lGtFl">
       <ref role="RPilL" node="71Zj$i0ct2e" resolve="quantity" />

@@ -3015,5 +3015,88 @@
       </node>
     </node>
   </node>
+  <node concept="W$Crc" id="7xdEAvKVEyS">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="4" />
+    <property role="TrG5h" value="Update References: exponent-&gt;exponent" />
+    <node concept="1w76tK" id="7xdEAvKVEyT" role="1w76sc">
+      <node concept="1w76tN" id="7xdEAvKVEyU" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="7xdEAvKVEyV" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="7xdEAvKVEyW" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="7xdEAvKVEyX" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="7xdEAvKVEyY" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="7xdEAvKVEz0" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="7xdEAvKVEyP" role="hSBgu">
+        <property role="2pBcoG" value="3893747461079921957" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="exponent" />
+      </node>
+      <node concept="2pBcaW" id="7xdEAvKVEyZ" role="hSBgs">
+        <property role="2pBcoG" value="8668772221158598839" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="exponent" />
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="7xdEAvKVEz1">
+    <property role="Z5qvQ" value="4" />
+    <property role="TrG5h" value="Migrate_MoveLinkUp_4" />
+    <property role="1AQGQl" value="Move link `exponent` to concept `IUnitReference`" />
+    <node concept="Z4OXk" id="7xdEAvKVEzc" role="Z5rET">
+      <node concept="2pBcaW" id="7xdEAvKVEza" role="Z5P1v">
+        <property role="2pBcoG" value="3893747461079921957" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="exponent_old" />
+      </node>
+      <node concept="2pBcaW" id="7xdEAvKVEzb" role="Z5P1t">
+        <property role="2pBcoG" value="8668772221158598839" />
+        <property role="2pBcow" value="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
+        <property role="2pBc3U" value="exponent" />
+      </node>
+      <node concept="7a1rN" id="7xdEAvKVEz9" role="7agGg">
+        <node concept="HUanS" id="7xdEAvKVEz3" role="HTpAE">
+          <property role="HUanP" value="exponent_old" />
+          <property role="HUanQ" value="tkzea1gqr3mt" />
+          <node concept="2x4n5u" id="7xdEAvKVEz4" role="HUanR">
+            <property role="2x4mPI" value="AbstractUnitReference" />
+            <property role="2x4n5l" value="tkzea1gqr3m0" />
+            <node concept="2V$Bhx" id="7xdEAvKVEz5" role="2x4n5j">
+              <property role="2V$B1T" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.typetags.units" />
+            </node>
+          </node>
+        </node>
+        <node concept="HUanS" id="7xdEAvKVEz6" role="HTpAD">
+          <property role="HUanP" value="exponent" />
+          <property role="HUanQ" value="1tv07ad0zskaf" />
+          <node concept="2x4n5u" id="7xdEAvKVEz7" role="HUanR">
+            <property role="2x4mPI" value="IUnitReference" />
+            <property role="2x4n5l" value="1tv07ad0zsk9k" />
+            <node concept="2V$Bhx" id="7xdEAvKVEz8" role="2x4n5j">
+              <property role="2V$B1T" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.typetags.units" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

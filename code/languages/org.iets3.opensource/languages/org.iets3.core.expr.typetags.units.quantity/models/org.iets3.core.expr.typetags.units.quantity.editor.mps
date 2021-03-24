@@ -13,8 +13,8 @@
     <import index="a0oj" ref="r:7add344e-59b0-49a5-a0a7-0e0dc1798815(org.iets3.core.expr.typetags.units.quantity.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="u5dy" ref="r:5d3c1e26-8102-4cf4-aae4-75b28fa3d3a6(org.iets3.core.expr.typetags.units.editor)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="b0gq" ref="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -457,7 +457,7 @@
             <node concept="3F1sOY" id="76ZhK6Y0Pn3" role="3EZMnx">
               <property role="2ru_X1" value="true" />
               <ref role="1k5W1q" to="u5dy:4M31vJayoGp" resolve="UnitTag" />
-              <ref role="1NtTu8" to="a0oj:1KUmgSFxyCb" resolve="exponent" />
+              <ref role="1NtTu8" to="b0gq:7xdEAvKVEyR" resolve="exponent" />
               <node concept="3EZMnI" id="76ZhK6Y0Pn4" role="2ruayu">
                 <node concept="VPM3Z" id="76ZhK6Y0Pn5" role="3F10Kt">
                   <property role="VOm3f" value="false" />
@@ -531,7 +531,7 @@
           <node concept="3F1sOY" id="3j3yk3guLEv" role="3EZMnx">
             <property role="2ru_X1" value="true" />
             <ref role="1k5W1q" to="u5dy:4M31vJayoGp" resolve="UnitTag" />
-            <ref role="1NtTu8" to="a0oj:1KUmgSFxyCb" resolve="exponent" />
+            <ref role="1NtTu8" to="b0gq:7xdEAvKVEyR" resolve="exponent" />
             <node concept="3EZMnI" id="4Tiud0Te7qC" role="2ruayu">
               <node concept="VPM3Z" id="4Tiud0Te7qD" role="3F10Kt">
                 <property role="VOm3f" value="false" />
@@ -671,7 +671,7 @@
                         <node concept="2OqwBi" id="cEt5uj8N1n" role="3uHU7B">
                           <node concept="7Obwk" id="cEt5uj8N1u" role="2Oq$k0" />
                           <node concept="3TrEf2" id="cEt5uj8N1p" role="2OqNvi">
-                            <ref role="3Tt5mk" to="a0oj:1KUmgSFxyCb" resolve="exponent" />
+                            <ref role="3Tt5mk" to="b0gq:7xdEAvKVEyR" resolve="exponent" />
                           </node>
                         </node>
                         <node concept="10Nm6u" id="cEt5uj8N1q" role="3uHU7w" />
@@ -712,7 +712,7 @@
                     <node concept="2OqwBi" id="cEt5uj8N1H" role="37vLTJ">
                       <node concept="7Obwk" id="cEt5uj8N1M" role="2Oq$k0" />
                       <node concept="3TrEf2" id="cEt5uj8N1J" role="2OqNvi">
-                        <ref role="3Tt5mk" to="a0oj:1KUmgSFxyCb" resolve="exponent" />
+                        <ref role="3Tt5mk" to="b0gq:7xdEAvKVEyR" resolve="exponent" />
                       </node>
                     </node>
                     <node concept="2pJPEk" id="cEt5uj8N1K" role="37vLTx">
