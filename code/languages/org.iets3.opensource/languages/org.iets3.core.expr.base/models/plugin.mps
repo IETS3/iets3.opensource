@@ -42,6 +42,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="ppzb" ref="r:5db517a0-f62d-4841-a421-11bb7269799d(org.iets3.core.expr.base.shared.runtime)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -3080,8 +3081,9 @@
       <property role="TrG5h" value="INF_PREC" />
       <node concept="3Tm1VV" id="7kyIuXqewWi" role="1B3o_S" />
       <node concept="10Oyi0" id="7Wa2sv3XRPN" role="1tU5fm" />
-      <node concept="3cmrfG" id="7Wa2sv3XRPO" role="33vP2m">
-        <property role="3cmrfH" value="16" />
+      <node concept="10M0yZ" id="3qKzW8Qyh_E" role="33vP2m">
+        <ref role="3cqZAo" to="ppzb:7Wa2sv3XRPP" resolve="INF_PREC" />
+        <ref role="1PxDUh" to="ppzb:3qKzW8QxL7h" resolve="SharedInfHelper" />
       </node>
       <node concept="z59LJ" id="1VqmZU7jL_C" role="lGtFl">
         <node concept="TZ5HA" id="1VqmZU7jL_D" role="TZ5H$">
@@ -3098,9 +3100,9 @@
       <node concept="3uibUv" id="7Wa2sv3XSnp" role="1tU5fm">
         <ref role="3uigEE" to="xlxw:~RoundingMode" resolve="RoundingMode" />
       </node>
-      <node concept="Rm8GO" id="7Wa2sv3XSnq" role="33vP2m">
-        <ref role="Rm8GQ" to="xlxw:~RoundingMode.HALF_UP" resolve="HALF_UP" />
-        <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
+      <node concept="10M0yZ" id="3qKzW8QEegO" role="33vP2m">
+        <ref role="3cqZAo" to="ppzb:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+        <ref role="1PxDUh" to="ppzb:3qKzW8QxL7h" resolve="SharedInfHelper" />
       </node>
       <node concept="z59LJ" id="6zU$Zuz6NV7" role="lGtFl">
         <node concept="TZ5HA" id="6zU$Zuz6NV8" role="TZ5H$">
