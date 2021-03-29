@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
@@ -144,6 +143,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
+      </concept>
+      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
+        <child id="1144230900587" name="variable" index="1Duv9x" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -165,16 +170,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
-        <child id="1153944400369" name="variable" index="2Gsz3X" />
-        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
-      </concept>
-      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
-      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
-        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
     </language>
   </registry>
@@ -2879,13 +2874,7 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="6I2TeLIlqQh" role="3clF47">
-        <node concept="2Gpval" id="6I2TeLIlrsp" role="3cqZAp">
-          <node concept="2GrKxI" id="6I2TeLIlrsq" role="2Gsz3X">
-            <property role="TrG5h" value="v" />
-          </node>
-          <node concept="37vLTw" id="6I2TeLIlrtq" role="2GsD0m">
-            <ref role="3cqZAo" node="6I2TeLIlroe" resolve="values" />
-          </node>
+        <node concept="1DcWWT" id="3qKzW8QLe5N" role="3cqZAp">
           <node concept="3clFbS" id="6I2TeLIlrss" role="2LFqv$">
             <node concept="3clFbJ" id="6I2TeLIlruH" role="3cqZAp">
               <node concept="1rXfSq" id="6I2TeLIls6$" role="3clFbw">
@@ -2893,8 +2882,8 @@
                 <node concept="37vLTw" id="6I2TeLIls8p" role="37wK5m">
                   <ref role="3cqZAo" node="6I2TeLIlrm5" resolve="expr" />
                 </node>
-                <node concept="2GrUjf" id="6I2TeLIlsaD" role="37wK5m">
-                  <ref role="2Gs0qQ" node="6I2TeLIlrsq" resolve="v" />
+                <node concept="37vLTw" id="3qKzW8QLe6a" role="37wK5m">
+                  <ref role="3cqZAo" node="3qKzW8QLe66" resolve="v" />
                 </node>
               </node>
               <node concept="3clFbS" id="6I2TeLIlruJ" role="3clFbx">
@@ -2904,6 +2893,15 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="6I2TeLIlrtq" role="1DdaDG">
+            <ref role="3cqZAo" node="6I2TeLIlroe" resolve="values" />
+          </node>
+          <node concept="3cpWsn" id="3qKzW8QLe66" role="1Duv9x">
+            <property role="TrG5h" value="v" />
+            <node concept="3uibUv" id="3qKzW8QLe5M" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
             </node>
           </node>
         </node>
