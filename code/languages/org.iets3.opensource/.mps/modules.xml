@@ -94,7 +94,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.temporal.rt/org.iets3.core.expr.genjava.temporal.rt.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.tests.rt/org.iets3.core.expr.genjava.tests.rt.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.toplevel.rt/org.iets3.core.expr.genjava.toplevel.rt.msd" folder="expr.genjava" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.infinity/org.iets3.core.expr.infinity.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.interpreter/org.iets3.core.expr.lambda.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr.plugins" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lookup.interpreter/org.iets3.core.expr.lookup.interpreter.msd" folder="expr.lang-advanced" />

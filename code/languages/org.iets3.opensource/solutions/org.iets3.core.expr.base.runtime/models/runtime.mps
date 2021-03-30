@@ -17,7 +17,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
-    <import index="r15o" ref="r:1371cea9-c863-4685-846a-8eea74c1745a(org.iets3.core.expr.infinity)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -572,9 +571,9 @@
               <node concept="Xl_RD" id="4bUWUHVlTh" role="37wK5m">
                 <property role="Xl_RC" value="0" />
               </node>
-              <node concept="10M0yZ" id="4C8CrwW7C1M" role="37wK5m">
-                <ref role="3cqZAo" to="r15o:2NHHcg2FYHt" resolve="POSINF" />
-                <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="10M0yZ" id="4bUWUHVkSR" role="37wK5m">
+                <ref role="3cqZAo" to="oq0c:2NHHcg2FYHt" resolve="POSINF" />
+                <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
               </node>
             </node>
           </node>

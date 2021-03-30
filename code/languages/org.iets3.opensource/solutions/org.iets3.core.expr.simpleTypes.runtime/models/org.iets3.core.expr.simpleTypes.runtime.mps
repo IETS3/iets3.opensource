@@ -4,6 +4,7 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports>
@@ -11,7 +12,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
-    <import index="r15o" ref="r:1371cea9-c863-4685-846a-8eea74c1745a(org.iets3.core.expr.infinity)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -145,12 +145,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
-        <child id="1144226360166" name="iterable" index="1DdaDG" />
-      </concept>
-      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
-        <child id="1144230900587" name="variable" index="1Duv9x" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -173,6 +167,16 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
     </language>
   </registry>
@@ -1697,9 +1701,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="10M0yZ" id="4C8CrwW7C2h" role="37wK5m">
-                    <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
-                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="10M0yZ" id="2oQlmR7HfeW" role="37wK5m">
+                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
                   <node concept="Rm8GO" id="5azVK7Pl8BN" role="37wK5m">
                     <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
@@ -1757,9 +1761,9 @@
                       <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
                     </node>
                   </node>
-                  <node concept="10M0yZ" id="4C8CrwW7C2i" role="37wK5m">
-                    <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
-                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="10M0yZ" id="2oQlmR7HfId" role="37wK5m">
+                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
                   </node>
                   <node concept="Rm8GO" id="1uB4LRlVPCe" role="37wK5m">
                     <ref role="Rm8GQ" to="xlxw:~RoundingMode.HALF_UP" resolve="HALF_UP" />
@@ -1822,9 +1826,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="10M0yZ" id="4C8CrwW7C2j" role="37wK5m">
-                    <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
-                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="10M0yZ" id="2oQlmR7HfY7" role="37wK5m">
+                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
                   <node concept="Rm8GO" id="1uB4LRlVQo_" role="37wK5m">
                     <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
@@ -1877,9 +1881,9 @@
                       <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
                     </node>
                   </node>
-                  <node concept="10M0yZ" id="4C8CrwW7C2k" role="37wK5m">
-                    <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
-                    <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="10M0yZ" id="2oQlmR7HgtZ" role="37wK5m">
+                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
                   <node concept="Rm8GO" id="1uB4LRlVR7Z" role="37wK5m">
                     <ref role="Rm8GQ" to="xlxw:~RoundingMode.HALF_UP" resolve="HALF_UP" />
@@ -2837,7 +2841,13 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="6I2TeLIlqQh" role="3clF47">
-        <node concept="1DcWWT" id="4C8CrwW7koj" role="3cqZAp">
+        <node concept="2Gpval" id="6I2TeLIlrsp" role="3cqZAp">
+          <node concept="2GrKxI" id="6I2TeLIlrsq" role="2Gsz3X">
+            <property role="TrG5h" value="v" />
+          </node>
+          <node concept="37vLTw" id="6I2TeLIlrtq" role="2GsD0m">
+            <ref role="3cqZAo" node="6I2TeLIlroe" resolve="values" />
+          </node>
           <node concept="3clFbS" id="6I2TeLIlrss" role="2LFqv$">
             <node concept="3clFbJ" id="6I2TeLIlruH" role="3cqZAp">
               <node concept="1rXfSq" id="6I2TeLIls6$" role="3clFbw">
@@ -2845,8 +2855,8 @@
                 <node concept="37vLTw" id="6I2TeLIls8p" role="37wK5m">
                   <ref role="3cqZAo" node="6I2TeLIlrm5" resolve="expr" />
                 </node>
-                <node concept="37vLTw" id="4C8CrwW7koE" role="37wK5m">
-                  <ref role="3cqZAo" node="4C8CrwW7koA" resolve="v" />
+                <node concept="2GrUjf" id="6I2TeLIlsaD" role="37wK5m">
+                  <ref role="2Gs0qQ" node="6I2TeLIlrsq" resolve="v" />
                 </node>
               </node>
               <node concept="3clFbS" id="6I2TeLIlruJ" role="3clFbx">
@@ -2856,15 +2866,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="37vLTw" id="6I2TeLIlrtq" role="1DdaDG">
-            <ref role="3cqZAo" node="6I2TeLIlroe" resolve="values" />
-          </node>
-          <node concept="3cpWsn" id="4C8CrwW7koA" role="1Duv9x">
-            <property role="TrG5h" value="v" />
-            <node concept="3uibUv" id="4C8CrwW7koi" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
             </node>
           </node>
         </node>

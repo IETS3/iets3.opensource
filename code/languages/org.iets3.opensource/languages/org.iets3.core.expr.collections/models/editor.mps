@@ -12,7 +12,6 @@
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
-    <import index="r15o" ref="r:1371cea9-c863-4685-846a-8eea74c1745a(org.iets3.core.expr.infinity)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
@@ -1003,9 +1002,9 @@
               <node concept="3clFbS" id="3tudP___7RG" role="2VODD2">
                 <node concept="3clFbF" id="3tudP___7RH" role="3cqZAp">
                   <node concept="37vLTI" id="3tudP___7RI" role="3clFbG">
-                    <node concept="10M0yZ" id="4C8CrwW7C1$" role="37vLTx">
-                      <ref role="3cqZAo" to="r15o:2NHHcg2FVhN" resolve="NEGINF" />
-                      <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
+                    <node concept="10M0yZ" id="3tudP___7RJ" role="37vLTx">
+                      <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                      <ref role="3cqZAo" to="oq0c:2NHHcg2FVhN" resolve="NEGINF" />
                     </node>
                     <node concept="2OqwBi" id="3tudP___7RK" role="37vLTJ">
                       <node concept="3GMtW1" id="3tudP___7RL" role="2Oq$k0" />
@@ -1038,9 +1037,9 @@
               <node concept="3clFbS" id="3tudP___6Te" role="2VODD2">
                 <node concept="3clFbF" id="3tudP___6Tr" role="3cqZAp">
                   <node concept="37vLTI" id="3tudP___7zo" role="3clFbG">
-                    <node concept="10M0yZ" id="4C8CrwW7C1T" role="37vLTx">
-                      <ref role="3cqZAo" to="r15o:2NHHcg2FYHt" resolve="POSINF" />
-                      <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
+                    <node concept="10M0yZ" id="3tudP___7G8" role="37vLTx">
+                      <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                      <ref role="3cqZAo" to="oq0c:2NHHcg2FYHt" resolve="POSINF" />
                     </node>
                     <node concept="2OqwBi" id="3tudP___6YJ" role="37vLTJ">
                       <node concept="3GMtW1" id="3tudP___6Tq" role="2Oq$k0" />
