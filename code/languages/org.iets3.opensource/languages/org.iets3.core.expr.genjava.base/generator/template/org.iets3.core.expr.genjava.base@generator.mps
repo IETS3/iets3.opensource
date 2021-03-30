@@ -31,6 +31,7 @@
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
+    <import index="ppzb" ref="r:5db517a0-f62d-4841-a421-11bb7269799d(org.iets3.core.expr.base.shared.runtime)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" implicit="true" />
@@ -15327,8 +15328,8 @@
       <ref role="30HIoZ" to="hm2y:1RwPUjzgIEq" resolve="MinExpression" />
       <node concept="gft3U" id="5wDe8wERizE" role="1lVwrX">
         <node concept="2YIFZM" id="5wDe8wERiG5" role="gfFT$">
-          <ref role="37wK5l" to="xfg9:1RwPUjzjkk_" resolve="min" />
-          <ref role="1Pybhc" to="xfg9:1RwPUjziune" resolve="MinMaxHelper" />
+          <ref role="1Pybhc" to="ppzb:1RwPUjziune" resolve="SharedMinMaxHelper" />
+          <ref role="37wK5l" to="ppzb:1RwPUjzjkk_" resolve="min" />
           <node concept="2OqwBi" id="5wDe8wERYDF" role="37wK5m">
             <node concept="1bVj0M" id="5wDe8wERkh0" role="2Oq$k0">
               <node concept="3clFbS" id="5wDe8wERkh2" role="1bW5cS">
@@ -15417,8 +15418,8 @@
       <ref role="30HIoZ" to="hm2y:1RwPUjzgIEq" resolve="MinExpression" />
       <node concept="gft3U" id="5wDe8wESNoU" role="1lVwrX">
         <node concept="2YIFZM" id="5wDe8wESNoV" role="gfFT$">
-          <ref role="37wK5l" to="xfg9:1RwPUjzjkk_" resolve="min" />
-          <ref role="1Pybhc" to="xfg9:1RwPUjziune" resolve="MinMaxHelper" />
+          <ref role="1Pybhc" to="ppzb:1RwPUjziune" resolve="SharedMinMaxHelper" />
+          <ref role="37wK5l" to="ppzb:1RwPUjzjkk_" resolve="min" />
           <node concept="2OqwBi" id="5wDe8wESNoW" role="37wK5m">
             <node concept="1bVj0M" id="5wDe8wESNoX" role="2Oq$k0">
               <node concept="3clFbS" id="5wDe8wESNoY" role="1bW5cS">
@@ -15515,8 +15516,8 @@
       <ref role="30HIoZ" to="hm2y:1RwPUjzgIEp" resolve="MaxExpression" />
       <node concept="gft3U" id="5wDe8wEV1vn" role="1lVwrX">
         <node concept="2YIFZM" id="5wDe8wEWqt2" role="gfFT$">
-          <ref role="37wK5l" to="xfg9:1RwPUjziwEu" resolve="max" />
-          <ref role="1Pybhc" to="xfg9:1RwPUjziune" resolve="MinMaxHelper" />
+          <ref role="1Pybhc" to="ppzb:1RwPUjziune" resolve="SharedMinMaxHelper" />
+          <ref role="37wK5l" to="ppzb:1RwPUjziwEu" resolve="max" />
           <node concept="2OqwBi" id="5wDe8wEWqt3" role="37wK5m">
             <node concept="1bVj0M" id="5wDe8wEWqt4" role="2Oq$k0">
               <node concept="3clFbS" id="5wDe8wEWqt5" role="1bW5cS">
@@ -15611,8 +15612,8 @@
       <ref role="30HIoZ" to="hm2y:1RwPUjzgIEp" resolve="MaxExpression" />
       <node concept="gft3U" id="5wDe8wEV1w0" role="1lVwrX">
         <node concept="2YIFZM" id="5wDe8wEWqMm" role="gfFT$">
-          <ref role="37wK5l" to="xfg9:1RwPUjziwEu" resolve="max" />
-          <ref role="1Pybhc" to="xfg9:1RwPUjziune" resolve="MinMaxHelper" />
+          <ref role="1Pybhc" to="ppzb:1RwPUjziune" resolve="SharedMinMaxHelper" />
+          <ref role="37wK5l" to="ppzb:1RwPUjziwEu" resolve="max" />
           <node concept="2OqwBi" id="5wDe8wEWqMn" role="37wK5m">
             <node concept="1bVj0M" id="5wDe8wEWqMo" role="2Oq$k0">
               <node concept="3clFbS" id="5wDe8wEWqMp" role="1bW5cS">
