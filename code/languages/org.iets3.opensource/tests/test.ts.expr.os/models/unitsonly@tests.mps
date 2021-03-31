@@ -186,6 +186,12 @@
         <child id="8337440621611297539" name="components" index="CIi4h" />
       </concept>
       <concept id="2034036099103723287" name="org.iets3.core.expr.typetags.units.structure.Quantity" flags="ng" index="Rn5op" />
+      <concept id="2034036099105827322" name="org.iets3.core.expr.typetags.units.structure.QuantitySpecification" flags="ng" index="RJ73O">
+        <child id="8106283910405673100" name="components" index="3KjDV8" />
+      </concept>
+      <concept id="2034036099105827338" name="org.iets3.core.expr.typetags.units.structure.QuantityReference" flags="ng" index="RJ7c4">
+        <reference id="8106283910405673102" name="quantity" index="3KjDVa" />
+      </concept>
       <concept id="1069230850837260491" name="org.iets3.core.expr.typetags.units.structure.ConversionRule" flags="ng" index="TRoc0">
         <property id="1741902046312150368" name="isEager" index="27Q$Ze" />
         <reference id="1741902046312150360" name="sourceUnit" index="27Q$ZQ" />
@@ -202,14 +208,6 @@
       <concept id="4121031889271022213" name="org.iets3.core.expr.typetags.units.structure.ConvertExpression" flags="ng" index="1PfFCI">
         <reference id="624957442818227315" name="conversionSpecifier" index="2yhJs8" />
         <reference id="4121031889271053292" name="targetUnit" index="1Pfwd7" />
-      </concept>
-    </language>
-    <language id="be679007-4312-4db1-9ac0-ab7dfbe66a74" name="org.iets3.core.expr.typetags.units.quantity">
-      <concept id="2034036099105827322" name="org.iets3.core.expr.typetags.units.quantity.structure.QuantitySpecification" flags="ng" index="RJ73O">
-        <child id="8106283910405673100" name="components" index="3KjDV8" />
-      </concept>
-      <concept id="2034036099105827338" name="org.iets3.core.expr.typetags.units.quantity.structure.QuantityReference" flags="ng" index="RJ7c4">
-        <reference id="8106283910405673102" name="quantity" index="3KjDVa" />
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">

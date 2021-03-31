@@ -145,6 +145,7 @@
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
     <module reference="5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)" version="0" />
     <module reference="cb91a38e-738a-4811-a96d-448d08f526fa(org.iets3.core.expr.typetags.units)" version="5" />
+    <module reference="be679007-4312-4db1-9ac0-ab7dfbe66a74(org.iets3.core.expr.typetags.units.quantity)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)</extendedLanguage>

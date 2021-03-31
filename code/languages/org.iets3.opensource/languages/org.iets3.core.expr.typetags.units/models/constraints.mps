@@ -748,5 +748,26 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="F22uvV4iSD">
+    <ref role="1M2myG" to="b0gq:1KUmgSFxyCa" resolve="QuantityReference" />
+    <node concept="1N5Pfh" id="F22uvV4iSE" role="1Mr941">
+      <ref role="1N5Vy1" to="b0gq:71Zj$i0ct2e" resolve="quantity" />
+      <node concept="3dgokm" id="F22uvV4iUA" role="1N6uqs">
+        <node concept="3clFbS" id="F22uvV4iUC" role="2VODD2">
+          <node concept="3clFbF" id="F22uvV4jjt" role="3cqZAp">
+            <node concept="2YIFZM" id="F22uvV4joS" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2YIFZM" id="F22uvV4j4e" role="37wK5m">
+                <ref role="37wK5l" to="dntf:1KUmgSFw1bh" resolve="getVisibleQuantitiesFrom" />
+                <ref role="1Pybhc" to="dntf:6FK1Pb8y_co" resolve="ScopingHelper" />
+                <node concept="2rP1CM" id="F22uvV4j7B" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
