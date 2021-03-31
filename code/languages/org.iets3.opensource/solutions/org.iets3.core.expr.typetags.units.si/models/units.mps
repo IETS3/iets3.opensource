@@ -5,7 +5,6 @@
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
     <use id="cb91a38e-738a-4811-a96d-448d08f526fa" name="org.iets3.core.expr.typetags.units" version="1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
-    <use id="be679007-4312-4db1-9ac0-ab7dfbe66a74" name="org.iets3.core.expr.typetags.units.quantity" version="0" />
   </languages>
   <imports />
   <registry>
@@ -51,6 +50,13 @@
       <concept id="2034036099103723287" name="org.iets3.core.expr.typetags.units.structure.Quantity" flags="ng" index="Rn5op">
         <reference id="3228997997604311240" name="defaultUnit" index="fqahq" />
         <child id="463524710642510319" name="contents" index="2W6aMF" />
+        <child id="9112776526239826328" name="specification" index="1Ev1hw" />
+      </concept>
+      <concept id="2034036099105827322" name="org.iets3.core.expr.typetags.units.structure.QuantitySpecification" flags="ng" index="RJ73O">
+        <child id="8106283910405673100" name="components" index="3KjDV8" />
+      </concept>
+      <concept id="2034036099105827338" name="org.iets3.core.expr.typetags.units.structure.QuantityReference" flags="ng" index="RJ7c4">
+        <reference id="8106283910405673102" name="quantity" index="3KjDVa" />
       </concept>
       <concept id="1069230850837260491" name="org.iets3.core.expr.typetags.units.structure.ConversionRule" flags="ng" index="TRoc0">
         <reference id="1741902046312150360" name="sourceUnit" index="27Q$ZQ" />
@@ -60,14 +66,6 @@
       <concept id="7817310640408719470" name="org.iets3.core.expr.typetags.units.structure.ValExpression" flags="ng" index="1w3tFM" />
       <concept id="7817310640406916055" name="org.iets3.core.expr.typetags.units.structure.Conversion" flags="ng" index="1wak5b">
         <child id="7817310640406916056" name="expression" index="1wak54" />
-      </concept>
-    </language>
-    <language id="be679007-4312-4db1-9ac0-ab7dfbe66a74" name="org.iets3.core.expr.typetags.units.quantity">
-      <concept id="2034036099105827322" name="org.iets3.core.expr.typetags.units.quantity.structure.QuantitySpecification" flags="ng" index="RJ73O">
-        <child id="8106283910405673100" name="components" index="3KjDV8" />
-      </concept>
-      <concept id="2034036099105827338" name="org.iets3.core.expr.typetags.units.quantity.structure.QuantityReference" flags="ng" index="RJ7c4">
-        <reference id="8106283910405673102" name="quantity" index="3KjDVa" />
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
@@ -1236,6 +1234,17 @@
           </node>
         </node>
       </node>
+      <node concept="RJ73O" id="7TR5vwk4TAw" role="1Ev1hw">
+        <node concept="RJ7c4" id="7TR5vwk4TAz" role="3KjDV8">
+          <ref role="3KjDVa" node="2NfH98zH34$" resolve="metre" />
+        </node>
+        <node concept="RJ7c4" id="7TR5vwk4TAC" role="3KjDV8">
+          <ref role="3KjDVa" node="6LWEDKcznpR" resolve="time" />
+          <node concept="CIsvk" id="7TR5vwk4TAK" role="28CKbg">
+            <property role="CIsvl" value="-1" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="_ixoA" id="1BnQk0aqGM8" role="_iOnB" />
     <node concept="_ixoA" id="1BnQk0aqGNL" role="_iOnB" />
@@ -1252,7 +1261,7 @@
     <node concept="_ixoA" id="1BnQk0aqOth" role="_iOnB" />
     <node concept="_ixoA" id="1BnQk0aqOvn" role="_iOnB" />
     <node concept="1Ws0TD" id="1BnQk0aqH8j" role="_iOnB">
-      <property role="1WsWdv" value="Usage" />
+      <property role="1WsWdv" value="Usage " />
     </node>
     <node concept="2zPypq" id="6LWEDKcw2rK" role="_iOnB">
       <property role="TrG5h" value="x" />
@@ -1450,15 +1459,64 @@
         </node>
       </node>
     </node>
+    <node concept="1aga60" id="7TR5vwjYmUb" role="_iOnB">
+      <property role="TrG5h" value="calcKmh" />
+      <node concept="1ahQXy" id="7TR5vwjYmXL" role="1ahQWs">
+        <property role="TrG5h" value="time" />
+        <node concept="2c7tTJ" id="7TR5vwjYmYe" role="3ix9CU">
+          <node concept="CIsGf" id="7TR5vwjYmYE" role="2c7tTI">
+            <node concept="CIsvn" id="7TR5vwjYmYC" role="CIi4h">
+              <ref role="2wHyHt" node="6LWEDKcznzU" resolve="h" />
+            </node>
+          </node>
+          <node concept="mLuIC" id="7TR5vwjYmY4" role="2c7tTw" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="7TR5vwjYmZy" role="1ahQWs">
+        <property role="TrG5h" value="distance" />
+        <node concept="2c7tTJ" id="7TR5vwjYn0z" role="3ix9CU">
+          <node concept="CIsGf" id="7TR5vwjYn0Z" role="2c7tTI">
+            <node concept="2wFXti" id="7TR5vwjYn0X" role="CIi4h">
+              <ref role="2wHyHt" node="2NfH98zH34B" resolve="m" />
+            </node>
+          </node>
+          <node concept="mLuIC" id="7TR5vwjYn0p" role="2c7tTw" />
+        </node>
+      </node>
+      <node concept="30dvO6" id="7TR5vwjYn1W" role="1ahQXP">
+        <node concept="1afdae" id="7TR5vwjYn1X" role="30dEs_">
+          <ref role="1afue_" node="7TR5vwjYmXL" resolve="time" />
+        </node>
+        <node concept="1afdae" id="7TR5vwjYn1Y" role="30dEsF">
+          <ref role="1afue_" node="7TR5vwjYmZy" resolve="distance" />
+        </node>
+      </node>
+    </node>
     <node concept="2zPypq" id="1BnQk0aqFRc" role="_iOnB">
       <property role="TrG5h" value="s" />
-      <node concept="1af_rf" id="1BnQk0aqFT1" role="2zPyp_">
-        <ref role="1afhQb" node="6LWEDKcznnH" resolve="calcSpeed" />
-        <node concept="_emDc" id="1BnQk0aqFUL" role="1afhQ5">
+      <node concept="1af_rf" id="7TR5vwjYndy" role="2zPyp_">
+        <ref role="1afhQb" node="7TR5vwjYmUb" resolve="calcKmh" />
+        <node concept="_emDc" id="7TR5vwjYnnv" role="1afhQ5">
           <ref role="_emDf" node="1BnQk0aqFG3" resolve="t" />
         </node>
-        <node concept="_emDc" id="1BnQk0aqGEb" role="1afhQ5">
+        <node concept="_emDc" id="7TR5vwjYokf" role="1afhQ5">
           <ref role="_emDf" node="1BnQk0aqF_i" resolve="d" />
+        </node>
+      </node>
+      <node concept="2c7tTJ" id="3fNKVGdl319" role="2zM23F">
+        <node concept="mLuIC" id="3fNKVGdl31C" role="2c7tTw">
+          <node concept="2gteSW" id="3fNKVGdl31D" role="2gteSx">
+            <property role="2gteSQ" value="-∞" />
+            <property role="2gteSD" value="∞" />
+          </node>
+          <node concept="2gteS_" id="3fNKVGdl31E" role="2gteVg">
+            <property role="2gteVv" value="inf" />
+          </node>
+        </node>
+        <node concept="RJ73O" id="3fNKVGdl31$" role="2c7tTI">
+          <node concept="RJ7c4" id="7TR5vwk4TMf" role="3KjDV8">
+            <ref role="3KjDVa" node="3o9nEYmx78z" resolve="speed" />
+          </node>
         </node>
       </node>
     </node>

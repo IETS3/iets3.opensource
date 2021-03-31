@@ -377,6 +377,12 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3o9nEYmxm$f" resolve="IQuantityContent" />
     </node>
+    <node concept="1TJgyj" id="7TR5vwk2K6o" role="1TKVEi">
+      <property role="IQ2ns" value="9112776526239826328" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="specification" />
+      <ref role="20lvS9" node="1KUmgSFxyBU" resolve="QuantitySpecification" />
+    </node>
     <node concept="PrWs8" id="1KUmgSFpIfY" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
