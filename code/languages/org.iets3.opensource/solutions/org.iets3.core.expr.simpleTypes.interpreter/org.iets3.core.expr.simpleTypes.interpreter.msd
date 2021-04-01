@@ -19,7 +19,7 @@
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
     <dependency reexport="false">52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)</dependency>
     <dependency reexport="false">dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)</dependency>
-    <dependency reexport="false">37620b5b-e2dd-4af6-bb5f-1d9df599566e(org.iets3.core.expr.infinity)</dependency>
+    <dependency reexport="false">00ca1323-762b-4f39-ab5a-6a6bd602dc4b(org.iets3.core.expr.base.shared.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
@@ -86,7 +86,7 @@
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="3" />
     <module reference="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" version="0" />
-    <module reference="37620b5b-e2dd-4af6-bb5f-1d9df599566e(org.iets3.core.expr.infinity)" version="0" />
+    <module reference="00ca1323-762b-4f39-ab5a-6a6bd602dc4b(org.iets3.core.expr.base.shared.runtime)" version="0" />
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
     <module reference="197e2a32-ff26-4358-af5c-731ae2b35f83(org.iets3.core.expr.simpleTypes.interpreter)" version="0" />
     <module reference="52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)" version="0" />

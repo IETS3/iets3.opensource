@@ -30,7 +30,6 @@
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
     <dependency reexport="false">b25b8ad1-4d3d-4e45-8c78-72091b39fdda(org.iets3.core.expr.data)</dependency>
-    <dependency reexport="false">37620b5b-e2dd-4af6-bb5f-1d9df599566e(org.iets3.core.expr.infinity)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
@@ -132,7 +131,6 @@
     <module reference="07f696b4-29e7-4878-aefb-39cac5e8c6cc(org.iets3.core.expr.collections.interpreter)" version="0" />
     <module reference="b25b8ad1-4d3d-4e45-8c78-72091b39fdda(org.iets3.core.expr.data)" version="0" />
     <module reference="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998(org.iets3.core.expr.datetime)" version="1" />
-    <module reference="37620b5b-e2dd-4af6-bb5f-1d9df599566e(org.iets3.core.expr.infinity)" version="0" />
     <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="0" />
     <module reference="8ba65567-1c8a-4983-beb8-0482324d7e44(org.iets3.core.expr.lambda.interpreter)" version="0" />
     <module reference="0495221f-9fd1-41d6-bf26-b3b8aeb7eb7b(org.iets3.core.expr.lambda.plugin)" version="0" />

@@ -21,7 +21,6 @@
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="ukm0" ref="r:db43e6ca-9bf0-4a94-b4b5-10d2e7071c54(org.iets3.core.expr.collections.intentions)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="r15o" ref="r:1371cea9-c863-4685-846a-8eea74c1745a(org.iets3.core.expr.infinity)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
     <import index="1jcu" ref="r:729fa0c7-b4e4-42b1-acfe-71017c020a49(org.iets3.analysis.base.behavior)" implicit="true" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" implicit="true" />
@@ -4359,9 +4358,9 @@
           </node>
         </node>
         <node concept="3fqX7Q" id="$lfQMoehCc" role="3clFbw">
-          <node concept="2YIFZM" id="4C8CrwW7C2P" role="3fr31v">
-            <ref role="37wK5l" to="r15o:2NHHcg2F9Vw" resolve="greaterOrEqual" />
-            <ref role="1Pybhc" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
+          <node concept="2YIFZM" id="$lfQMoehAV" role="3fr31v">
+            <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+            <ref role="37wK5l" to="oq0c:2NHHcg2F9Vw" resolve="greaterOrEqual" />
             <node concept="2OqwBi" id="$lfQMoeigS" role="37wK5m">
               <node concept="1YBJjd" id="$lfQMoehYH" role="2Oq$k0">
                 <ref role="1YBMHb" node="$lfQMoeh5L" resolve="csc" />

@@ -101,6 +101,7 @@
         <module reference="272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.genjava.simpleTypes.rt)" version="0" />
         <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="0" />
         <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
+        <module reference="52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -174,6 +175,7 @@
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.genjava.simpleTypes.rt)</dependency>
+    <dependency reexport="false">52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)</dependency>
   </runtime>
   <extendedLanguages />
 </language>

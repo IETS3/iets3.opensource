@@ -22,6 +22,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
+    <import index="ppzb" ref="r:5db517a0-f62d-4841-a421-11bb7269799d(org.iets3.core.expr.base.shared.runtime)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -375,7 +376,7 @@
               </node>
               <node concept="2ZW3vV" id="3nVyItrZwgD" role="3clFbw">
                 <node concept="3uibUv" id="3nVyItrZwh$" role="2ZW6by">
-                  <ref role="3uigEE" to="xfg9:3nVyItrYNyp" resolve="INixValue" />
+                  <ref role="3uigEE" to="ppzb:3nVyItrYNyp" resolve="INixValue" />
                 </node>
                 <node concept="37vLTw" id="3nVyItrZwdx" role="2ZW6bz">
                   <ref role="3cqZAo" node="3nVyItrZv_N" resolve="val" />
@@ -761,8 +762,8 @@
               <node concept="3clFbS" id="1RwPUjzndP$" role="3clFbx">
                 <node concept="3cpWs6" id="1RwPUjzndP_" role="3cqZAp">
                   <node concept="2YIFZM" id="5wDe8wDIecM" role="3cqZAk">
-                    <ref role="37wK5l" to="xfg9:1RwPUjzjkk_" resolve="min" />
-                    <ref role="1Pybhc" to="xfg9:1RwPUjziune" resolve="MinMaxHelper" />
+                    <ref role="1Pybhc" to="ppzb:1RwPUjziune" resolve="SharedMinMaxHelper" />
+                    <ref role="37wK5l" to="ppzb:1RwPUjzjkk_" resolve="min" />
                     <node concept="rqRoa" id="1RwPUjzne3T" role="37wK5m">
                       <ref role="rqRob" to="hm2y:1RwPUjzgk0z" resolve="values" />
                     </node>
@@ -786,8 +787,8 @@
               <node concept="3clFbS" id="1RwPUjzndPq" role="3clFbx">
                 <node concept="3cpWs6" id="1RwPUjzndPr" role="3cqZAp">
                   <node concept="2YIFZM" id="5wDe8wDIecL" role="3cqZAk">
-                    <ref role="37wK5l" to="xfg9:1RwPUjzjkk_" resolve="min" />
-                    <ref role="1Pybhc" to="xfg9:1RwPUjziune" resolve="MinMaxHelper" />
+                    <ref role="1Pybhc" to="ppzb:1RwPUjziune" resolve="SharedMinMaxHelper" />
+                    <ref role="37wK5l" to="ppzb:1RwPUjzjkk_" resolve="min" />
                     <node concept="rqRoa" id="1RwPUjzndYK" role="37wK5m">
                       <ref role="rqRob" to="hm2y:1RwPUjzgk0z" resolve="values" />
                     </node>
@@ -824,8 +825,8 @@
               <node concept="3clFbS" id="6HHp2WnvqWu" role="3clFbx">
                 <node concept="3cpWs6" id="1RwPUjzjzYw" role="3cqZAp">
                   <node concept="2YIFZM" id="5wDe8wDIecI" role="3cqZAk">
-                    <ref role="37wK5l" to="xfg9:1RwPUjziwEu" resolve="max" />
-                    <ref role="1Pybhc" to="xfg9:1RwPUjziune" resolve="MinMaxHelper" />
+                    <ref role="1Pybhc" to="ppzb:1RwPUjziune" resolve="SharedMinMaxHelper" />
+                    <ref role="37wK5l" to="ppzb:1RwPUjziwEu" resolve="max" />
                     <node concept="rqRoa" id="1RwPUjzncJq" role="37wK5m">
                       <ref role="rqRob" to="hm2y:1RwPUjzgk0z" resolve="values" />
                     </node>
@@ -849,8 +850,8 @@
               <node concept="3clFbS" id="1RwPUjznbP$" role="3clFbx">
                 <node concept="3cpWs6" id="1RwPUjznbP_" role="3cqZAp">
                   <node concept="2YIFZM" id="5wDe8wDIecH" role="3cqZAk">
-                    <ref role="37wK5l" to="xfg9:1RwPUjziwEu" resolve="max" />
-                    <ref role="1Pybhc" to="xfg9:1RwPUjziune" resolve="MinMaxHelper" />
+                    <ref role="1Pybhc" to="ppzb:1RwPUjziune" resolve="SharedMinMaxHelper" />
+                    <ref role="37wK5l" to="ppzb:1RwPUjziwEu" resolve="max" />
                     <node concept="rqRoa" id="1RwPUjzncOy" role="37wK5m">
                       <ref role="rqRob" to="hm2y:1RwPUjzgk0z" resolve="values" />
                     </node>

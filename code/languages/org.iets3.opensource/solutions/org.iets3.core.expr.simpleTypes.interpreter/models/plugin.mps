@@ -23,7 +23,7 @@
     <import index="9mim" ref="r:5bf19129-2710-45a6-906e-9ee2d0977853(org.iets3.core.expr.simpleTypes.plugin)" />
     <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="r15o" ref="r:1371cea9-c863-4685-846a-8eea74c1745a(org.iets3.core.expr.infinity)" />
+    <import index="ppzb" ref="r:5db517a0-f62d-4841-a421-11bb7269799d(org.iets3.core.expr.base.shared.runtime)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -2452,7 +2452,7 @@
               </node>
               <node concept="2ZW3vV" id="4EEJFuvbYy4" role="3clFbw">
                 <node concept="3uibUv" id="4EEJFuvbYy5" role="2ZW6by">
-                  <ref role="3uigEE" to="xfg9:3nVyItrYNyp" resolve="INixValue" />
+                  <ref role="3uigEE" to="ppzb:3nVyItrYNyp" resolve="INixValue" />
                 </node>
                 <node concept="37vLTw" id="4EEJFuvbYy6" role="2ZW6bz">
                   <ref role="3cqZAo" node="4EEJFuvbYxy" resolve="leftNixEvaluated" />
@@ -2685,7 +2685,7 @@
               </node>
               <node concept="2ZW3vV" id="4EEJFuvlB4h" role="3clFbw">
                 <node concept="3uibUv" id="4EEJFuvlB5n" role="2ZW6by">
-                  <ref role="3uigEE" to="xfg9:3nVyItrYNyp" resolve="INixValue" />
+                  <ref role="3uigEE" to="ppzb:3nVyItrYNyp" resolve="INixValue" />
                 </node>
                 <node concept="37vLTw" id="4EEJFuvlB0y" role="2ZW6bz">
                   <ref role="3cqZAo" node="4EEJFuvcs$P" resolve="leftNixEvaluated" />
@@ -3149,8 +3149,8 @@
                             </node>
                             <node concept="3cpWs6" id="26cjRACIbgn" role="3cqZAp">
                               <node concept="2YIFZM" id="26cjRACIbgo" role="3cqZAk">
-                                <ref role="1Pybhc" to="dj6k:6IxV2nShzcy" resolve="AH2" />
                                 <ref role="37wK5l" to="dj6k:4399ITSEEUS" resolve="equalsWithTolerance" />
+                                <ref role="1Pybhc" to="dj6k:6IxV2nShzcy" resolve="AH" />
                                 <node concept="37vLTw" id="26cjRACIbgp" role="37wK5m">
                                   <ref role="3cqZAo" node="26cjRACIbfS" resolve="left" />
                                 </node>
@@ -3389,8 +3389,8 @@
                             <node concept="3cpWs6" id="26cjRACI81R" role="3cqZAp">
                               <node concept="3fqX7Q" id="26cjRACI81S" role="3cqZAk">
                                 <node concept="2YIFZM" id="26cjRACI81T" role="3fr31v">
-                                  <ref role="1Pybhc" to="dj6k:6IxV2nShzcy" resolve="AH2" />
                                   <ref role="37wK5l" to="dj6k:4399ITSEEUS" resolve="equalsWithTolerance" />
+                                  <ref role="1Pybhc" to="dj6k:6IxV2nShzcy" resolve="AH" />
                                   <node concept="37vLTw" id="26cjRACI81U" role="37wK5m">
                                     <ref role="3cqZAo" node="26cjRACI81o" resolve="left" />
                                   </node>
@@ -4449,13 +4449,13 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="10M0yZ" id="4C8CrwW7C26" role="37wK5m">
-                                  <ref role="3cqZAo" to="r15o:7Wa2sv3XRPP" resolve="INF_PREC" />
-                                  <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
+                                <node concept="10M0yZ" id="5RpnrCi009$" role="37wK5m">
+                                  <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                                  <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
                                 </node>
-                                <node concept="10M0yZ" id="4C8CrwW7C2l" role="37wK5m">
-                                  <ref role="3cqZAo" to="r15o:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
-                                  <ref role="1PxDUh" to="r15o:2NHHcg2EXna" resolve="InfHelper" />
+                                <node concept="10M0yZ" id="5RpnrCi009_" role="37wK5m">
+                                  <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+                                  <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
                                 </node>
                               </node>
                             </node>
