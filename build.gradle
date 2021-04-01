@@ -235,6 +235,30 @@ task packageTests(type: Zip, dependsOn: buildAndRunTests) {
     include 'org.iets3.opensource.tests/**'
 }
 
+def KERNELF_RUNTIME_SOLUTIONS = [
+        'org.iets3.core.expr.base.shared.runtime',
+        'org.iets3.core.expr.simpleTypes.runtime',
+        'org.iets3.core.expr.datetime.runtime',
+        'org.iets3.core.expr.temporal.runtime'
+]
+
+task packageKernelfRuntime(type: Jar) {
+    dependsOn buildLanguages
+    archiveBaseName = 'org.iets3.opensource.kernelf-runtime'
+    File dir = new File(artifactsDir, 'org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os')
+
+    from KERNELF_RUNTIME_SOLUTIONS.collect { zipTree(new File(dir, it + '.jar')) }
+}
+
+task packageKernelfRuntimeSources(type: Jar) {
+    dependsOn buildLanguages
+    archiveBaseName = 'org.iets3.opensource.kernelf-runtime'
+    archiveClassifier = 'sources'
+    File dir = new File(artifactsDir, 'org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os')
+
+    from KERNELF_RUNTIME_SOLUTIONS.collect { zipTree(new File(dir, it + '-src.jar')) }
+}
+
 task buildDistroWithDependencies(type: RunAntScript, dependsOn: buildLanguages) {
     script "$buildDir/scripts/build-distro.xml"
     targets 'clean', 'assemble'
@@ -303,6 +327,12 @@ publishing {
                     dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                 }
             }
+        }
+        runtimes(MavenPublication) {
+            groupId 'org.iets3.opensource'
+            artifactId 'kernelf-runtime'
+            artifact packageKernelfRuntime
+            artifact packageKernelfRuntimeSources
         }
     }
 }
