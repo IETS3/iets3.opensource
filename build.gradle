@@ -330,6 +330,86 @@ publishing {
                 }
             }
         }
+
+        def runtimesDir = new File(artifactsDir, 'org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os')
+
+        'org.iets3.core.expr.base.shared.runtime'(MavenPublication) {
+            groupId 'org.iets3.core.expr.base.shared'
+            artifactId 'shared-runtime'
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.base.shared.runtime.jar')) {
+                builtBy buildLanguages
+            }
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.base.shared.runtime-src.jar')) {
+                builtBy buildLanguages
+                classifier 'sources'
+            }
+        }
+
+        'org.iets3.core.expr.simpleTypes.runtime'(MavenPublication) {
+            // GitHub Packages refuse uppercase artifactId (not sure about groupId) so use lower case here
+            groupId 'org.iets3.core.expr.simpletypes'
+            artifactId 'simpletypes-runtime'
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.simpleTypes.runtime.jar')) {
+                builtBy buildLanguages
+            }
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.simpleTypes.runtime-src.jar')) {
+                builtBy buildLanguages
+                classifier 'sources'
+            }
+
+            pom.withXml {
+                def deps = asNode().appendNode('dependencies')
+
+                // depends on shared
+                def dep = deps.appendNode('dependency')
+                dep.appendNode('groupId', 'org.iets3.core.expr.base.shared')
+                dep.appendNode('artifactId', 'shared-runtime')
+                dep.appendNode('version', project.version)
+            }
+        }
+
+        'org.iets3.core.expr.datetime.runtime'(MavenPublication) {
+            groupId 'org.iets3.core.expr.datetime'
+            artifactId 'datetime-runtime'
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.datetime.runtime.jar')) {
+                builtBy buildLanguages
+            }
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.datetime.runtime-src.jar')) {
+                builtBy buildLanguages
+                classifier 'sources'
+            }
+
+            pom.withXml {
+                def deps = asNode().appendNode('dependencies')
+
+                // depends on shared
+                def dep = deps.appendNode('dependency')
+                dep.appendNode('groupId', 'org.iets3.core.expr.base.shared')
+                dep.appendNode('artifactId', 'shared-runtime')
+                dep.appendNode('version', project.version)
+            }
+        }
+
+        'org.iets3.core.expr.temporal.runtime'(MavenPublication) {
+            groupId 'org.iets3.core.expr.temporal'
+            artifactId 'temporal-runtime'
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.temporal.runtime.jar')) {
+                builtBy buildLanguages
+            }
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.temporal.runtime-src.jar')) {
+                builtBy buildLanguages
+                classifier 'sources'
+            }
+            pom.withXml {
+                def deps = asNode().appendNode('dependencies')
+
+                // depends on datetime
+                def dep = deps.appendNode('dependency')
+                dep.appendNode('groupId', 'org.iets3.core.expr.datetime')
+                dep.appendNode('artifactId', 'datetime-runtime')
+                dep.appendNode('version', project.version)
+            }
+        }
     }
 }
 
