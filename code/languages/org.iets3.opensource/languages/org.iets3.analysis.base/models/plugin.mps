@@ -84,12 +84,14 @@
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
-      <concept id="2756621024541675105" name="jetbrains.mps.lang.resources.structure.Rect" flags="ng" index="1irR9m" />
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n">
         <property id="2756621024541681857" name="r" index="1irPjQ" />
       </concept>
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
       <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
         <child id="8974276187400029893" name="icon" index="1QGGTw" />
@@ -131,9 +133,14 @@
       </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+        <child id="1188214630783" name="value" index="2B76xF" />
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="1188214545140" name="jetbrains.mps.baseLanguage.structure.AnnotationInstanceValue" flags="ng" index="2B6LJw">
+        <reference id="1188214555875" name="key" index="2B6OnR" />
+        <child id="1188214607812" name="value" index="2B70Vg" />
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
@@ -496,6 +503,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -5471,6 +5485,7 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4WxhqMkeGTR" role="jymVt" />
+    <node concept="2tJIrI" id="2fgSOgkhIoJ" role="jymVt" />
     <node concept="312cEg" id="7hIrQB9J1nT" role="jymVt">
       <property role="TrG5h" value="myIcon" />
       <property role="3TUv4t" value="true" />
@@ -5478,24 +5493,14 @@
       <node concept="3uibUv" id="2S0X1v6PujV" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
       </node>
-      <node concept="1QGGTA" id="121_t0FPrN0" role="33vP2m">
-        <node concept="1irR5M" id="121_t0FPtnI" role="1QGGTw">
-          <property role="2$rrk2" value="40" />
-          <node concept="1irR9m" id="121_t0FPuVE" role="1irR9h">
-            <node concept="3PKj8D" id="121_t0FPuVJ" role="3PKjn_">
-              <property role="3PKj8l" value="a1561a" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="z59LJ" id="4WxhqMkeLmR" role="lGtFl">
-        <node concept="TZ5HA" id="4WxhqMkeLmS" role="TZ5H$">
-          <node concept="1dT_AC" id="4WxhqMkeLmT" role="1dT_Ay">
-            <property role="1dT_AB" value="ToDO this icon is not shown...find even a better one" />
-          </node>
+      <node concept="1QGGTA" id="2fgSOgkh3eZ" role="33vP2m">
+        <node concept="1QGGSu" id="2fgSOgkh6JD" role="1QGGTw">
+          <property role="1iqoE4" value="${module}/icons/running-stick-figure.svg" />
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2fgSOgkhcId" role="jymVt" />
+    <node concept="2tJIrI" id="2fgSOgkh9RN" role="jymVt" />
     <node concept="312cEg" id="2S0X1v6Ns8l" role="jymVt">
       <property role="TrG5h" value="component" />
       <node concept="3Tm6S6" id="2S0X1v6NqBi" role="1B3o_S" />
@@ -5730,6 +5735,26 @@
     <node concept="3clFb_" id="2S0X1v6MnLP" role="jymVt">
       <property role="TrG5h" value="update" />
       <node concept="3clFbS" id="2S0X1v6MnLS" role="3clF47">
+        <node concept="3clFbJ" id="2fgSOgkeOgx" role="3cqZAp">
+          <node concept="3clFbS" id="2fgSOgkeOgz" role="3clFbx">
+            <node concept="3clFbF" id="2fgSOgkeS6T" role="3cqZAp">
+              <node concept="2OqwBi" id="2fgSOgkeToe" role="3clFbG">
+                <node concept="37vLTw" id="2fgSOgkeS6R" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2S0X1v6Ns8l" resolve="component" />
+                </node>
+                <node concept="liA8E" id="2fgSOgkeVU$" role="2OqNvi">
+                  <ref role="37wK5l" node="5J8_5nlyCPf" resolve="update" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2fgSOgkeQsX" role="3clFbw">
+            <node concept="10Nm6u" id="2fgSOgkeQNP" role="3uHU7w" />
+            <node concept="37vLTw" id="2fgSOgkeP1j" role="3uHU7B">
+              <ref role="3cqZAo" node="2S0X1v6Ns8l" resolve="component" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2hEKckkLhQi" role="3cqZAp">
           <node concept="2OqwBi" id="2hEKckkLhQj" role="3clFbG">
             <node concept="37vLTw" id="2S0X1v6MrUZ" role="2Oq$k0">
@@ -5913,8 +5938,8 @@
       <node concept="10OMs4" id="2S0X1v6MAGc" role="3clF45" />
       <node concept="3clFbS" id="2S0X1v6MAGg" role="3clF47">
         <node concept="3clFbF" id="4hZPELmBFEN" role="3cqZAp">
-          <node concept="10M0yZ" id="121_t0F7G2U" role="3clFbG">
-            <ref role="3cqZAo" to="z60i:~Component.LEFT_ALIGNMENT" resolve="LEFT_ALIGNMENT" />
+          <node concept="10M0yZ" id="2fgSOgkg12j" role="3clFbG">
+            <ref role="3cqZAo" to="z60i:~Component.RIGHT_ALIGNMENT" resolve="RIGHT_ALIGNMENT" />
             <ref role="1PxDUh" to="dxuu:~JComponent" resolve="JComponent" />
           </node>
         </node>
@@ -5966,6 +5991,38 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2S0X1v6MAGH" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2fgSOgkgxBz" role="jymVt">
+      <property role="TrG5h" value="getMaxPossibleText" />
+      <node concept="3Tm1VV" id="2fgSOgkgxB_" role="1B3o_S" />
+      <node concept="2AHcQZ" id="2fgSOgkgxBB" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+      <node concept="2AHcQZ" id="2fgSOgkgxBC" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="2AHcQZ" id="2fgSOgkgxBD" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~ApiStatus$ScheduledForRemoval" resolve="ApiStatus.ScheduledForRemoval" />
+        <node concept="2B6LJw" id="2fgSOgkgxBE" role="2B76xF">
+          <ref role="2B6OnR" to="mhfm:~ApiStatus$ScheduledForRemoval.inVersion()" resolve="inVersion" />
+          <node concept="Xl_RD" id="2fgSOgkgxBF" role="2B70Vg">
+            <property role="Xl_RC" value="2020.2" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2fgSOgkgxBJ" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="3clFbS" id="2fgSOgkgxBN" role="3clF47">
+        <node concept="3clFbF" id="2fgSOgkgCy3" role="3cqZAp">
+          <node concept="Xl_RD" id="2fgSOgkgCy2" role="3clFbG">
+            <property role="Xl_RC" value="ISolvables" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2fgSOgkgxBO" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
@@ -6414,25 +6471,29 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="hP8D6fqe88" role="3cqZAp">
-          <node concept="2OqwBi" id="hP8D6fqe89" role="3clFbG">
-            <node concept="liA8E" id="hP8D6fqe8b" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~LookAndFeel.getDisabledIcon(javax.swing.JComponent,javax.swing.Icon)" resolve="getDisabledIcon" />
-              <node concept="2OqwBi" id="hP8D6fqe8c" role="37wK5m">
-                <node concept="liA8E" id="hP8D6fqe8e" role="2OqNvi">
-                  <ref role="37wK5l" to="jkny:~StatusBar.getComponent()" resolve="getComponent" />
+        <node concept="1X3_iC" id="2fgSOgkevFI" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="hP8D6fqe88" role="8Wnug">
+            <node concept="2OqwBi" id="hP8D6fqe89" role="3clFbG">
+              <node concept="liA8E" id="hP8D6fqe8b" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~LookAndFeel.getDisabledIcon(javax.swing.JComponent,javax.swing.Icon)" resolve="getDisabledIcon" />
+                <node concept="2OqwBi" id="hP8D6fqe8c" role="37wK5m">
+                  <node concept="liA8E" id="hP8D6fqe8e" role="2OqNvi">
+                    <ref role="37wK5l" to="jkny:~StatusBar.getComponent()" resolve="getComponent" />
+                  </node>
+                  <node concept="37vLTw" id="2BHiRxeukng" role="2Oq$k0">
+                    <ref role="3cqZAo" node="hP8D6fqe6q" resolve="myStatusBar" />
+                  </node>
                 </node>
-                <node concept="37vLTw" id="2BHiRxeukng" role="2Oq$k0">
-                  <ref role="3cqZAo" node="hP8D6fqe6q" resolve="myStatusBar" />
+                <node concept="37vLTw" id="4WxhqMk5Ykg" role="37wK5m">
+                  <ref role="3cqZAo" node="7hIrQB9J1nT" resolve="myIcon" />
                 </node>
               </node>
-              <node concept="37vLTw" id="4WxhqMk5Ykg" role="37wK5m">
-                <ref role="3cqZAo" node="7hIrQB9J1nT" resolve="myIcon" />
+              <node concept="2YIFZM" id="hP8D6fqe8a" role="2Oq$k0">
+                <ref role="1Pybhc" to="dxuu:~UIManager" resolve="UIManager" />
+                <ref role="37wK5l" to="dxuu:~UIManager.getLookAndFeel()" resolve="getLookAndFeel" />
               </node>
-            </node>
-            <node concept="2YIFZM" id="hP8D6fqe8a" role="2Oq$k0">
-              <ref role="1Pybhc" to="dxuu:~UIManager" resolve="UIManager" />
-              <ref role="37wK5l" to="dxuu:~UIManager.getLookAndFeel()" resolve="getLookAndFeel" />
             </node>
           </node>
         </node>
@@ -6453,6 +6514,26 @@
       </node>
       <node concept="3Tm1VV" id="2S0X1v6MKqI" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="2fgSOgkeYIO" role="jymVt" />
+    <node concept="3clFb_" id="2fgSOgkfegs" role="jymVt">
+      <property role="TrG5h" value="getPresentation" />
+      <node concept="3Tm1VV" id="2fgSOgkfegu" role="1B3o_S" />
+      <node concept="2AHcQZ" id="2fgSOgkfegw" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3uibUv" id="2fgSOgkfegx" role="3clF45">
+        <ref role="3uigEE" to="jkny:~StatusBarWidget$WidgetPresentation" resolve="StatusBarWidget.WidgetPresentation" />
+      </node>
+      <node concept="3clFbS" id="2fgSOgkfegy" role="3clF47">
+        <node concept="3clFbF" id="2fgSOgkfk6Q" role="3cqZAp">
+          <node concept="Xjq3P" id="2fgSOgkfk6N" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2fgSOgkfegz" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2fgSOgkf0a8" role="jymVt" />
   </node>
   <node concept="312cEu" id="2S0X1v6MOlW">
     <property role="TrG5h" value="ISolvablePanel" />
