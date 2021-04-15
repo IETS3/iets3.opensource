@@ -8078,6 +8078,22 @@
     <node concept="13hLZK" id="7cphKbL$4Ns" role="13h7CW">
       <node concept="3clFbS" id="7cphKbL$4Nt" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="1WTzGglLELu" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <node concept="3Tm1VV" id="1WTzGglLELv" role="1B3o_S" />
+      <node concept="3clFbS" id="1WTzGglLEL$" role="3clF47">
+        <node concept="3clFbF" id="1WTzGglLF93" role="3cqZAp">
+          <node concept="2YIFZM" id="1WTzGglLFaL" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="1WTzGglLFba" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1WTzGglLEL_" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="5YygIlbmK_u" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
