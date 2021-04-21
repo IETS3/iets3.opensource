@@ -1134,10 +1134,15 @@
                 <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
                 <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
                 <node concept="3cpWs3" id="2g6f$bb2ABa" role="37wK5m">
-                  <node concept="2OqwBi" id="2g6f$bb2AEP" role="3uHU7w">
-                    <node concept="2WthIp" id="2g6f$bb2AES" role="2Oq$k0" />
-                    <node concept="3gHZIF" id="2g6f$bb2AEU" role="2OqNvi">
-                      <ref role="2WH_rO" node="5ipapt3lxen" resolve="someNode" />
+                  <node concept="2OqwBi" id="1br4Vy9o_n" role="3uHU7w">
+                    <node concept="2OqwBi" id="1br4Vy9o_o" role="2Oq$k0">
+                      <node concept="2WthIp" id="1br4Vy9o_p" role="2Oq$k0" />
+                      <node concept="3gHZIF" id="1br4Vy9o_q" role="2OqNvi">
+                        <ref role="2WH_rO" node="5ipapt3lxen" resolve="someNode" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="1br4Vy9o_r" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="2g6f$bb2AfU" role="3uHU7B">

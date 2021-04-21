@@ -17,6 +17,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -1969,12 +1970,17 @@
         <node concept="3clFbS" id="3C0hCYbUea4" role="3clFbx">
           <node concept="2MkqsV" id="3C0hCYbRU40" role="3cqZAp">
             <node concept="3cpWs3" id="3C0hCYbRUvd" role="2MkJ7o">
-              <node concept="2OqwBi" id="3C0hCYbRUIo" role="3uHU7w">
-                <node concept="37vLTw" id="3C0hCYbRUvx" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3C0hCYbRTGm" resolve="malformedBaseInMathVarExpression" />
+              <node concept="2OqwBi" id="1br4Vy9o_2" role="3uHU7w">
+                <node concept="2OqwBi" id="1br4Vy9o_3" role="2Oq$k0">
+                  <node concept="37vLTw" id="1br4Vy9o_4" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3C0hCYbRTGm" resolve="malformedBaseInMathVarExpression" />
+                  </node>
+                  <node concept="3TrEf2" id="1br4Vy9o_5" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1qv1:4iu6t1eBdVy" resolve="expr" />
+                  </node>
                 </node>
-                <node concept="3TrEf2" id="3C0hCYbRUX6" role="2OqNvi">
-                  <ref role="3Tt5mk" to="1qv1:4iu6t1eBdVy" resolve="expr" />
+                <node concept="2qgKlT" id="1br4Vy9o_6" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                 </node>
               </node>
               <node concept="Xl_RD" id="3C0hCYbRU7y" role="3uHU7B">
