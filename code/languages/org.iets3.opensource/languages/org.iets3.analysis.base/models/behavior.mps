@@ -674,8 +674,8 @@
       <node concept="3clFbS" id="7QODtLvTFnA" role="3clF47">
         <node concept="3clFbF" id="7QODtLvTGsE" role="3cqZAp">
           <node concept="2YIFZM" id="7QODtLvTGNW" role="3clFbG">
-            <ref role="37wK5l" to="hnhi:2BYqfe8vtxE" resolve="submitISolvable" />
             <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
+            <ref role="37wK5l" to="hnhi:3hn7H_$lmns" resolve="submitISolvable" />
             <node concept="13iPFW" id="7QODtLvTGNX" role="37wK5m" />
           </node>
         </node>
@@ -1364,8 +1364,8 @@
       <node concept="3clFbS" id="3NwcubmnBQ8" role="3clF47">
         <node concept="3clFbF" id="3NwcubmnCHl" role="3cqZAp">
           <node concept="2YIFZM" id="3NwcubmnCYw" role="3clFbG">
-            <ref role="37wK5l" to="hnhi:2BYqfe8vtxE" resolve="submitISolvable" />
             <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
+            <ref role="37wK5l" to="hnhi:3hn7H_$lmns" resolve="submitISolvable" />
             <node concept="13iPFW" id="3NwcubmnCYx" role="37wK5m" />
           </node>
         </node>
