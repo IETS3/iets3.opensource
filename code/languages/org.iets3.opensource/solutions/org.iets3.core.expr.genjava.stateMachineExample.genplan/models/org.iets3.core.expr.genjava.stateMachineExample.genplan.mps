@@ -42,6 +42,10 @@
         <property role="2V$B1T" value="83888646-71ce-4f1c-9c53-c54016f6ad4f" />
         <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.collections" />
       </node>
+      <node concept="2V$Bhx" id="13L4QXvOSrD" role="1t_9vn">
+        <property role="2V$B1T" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage" />
+      </node>
       <node concept="2V$Bhx" id="4NM7IHyHqGM" role="1t_9vn">
         <property role="2V$B1T" value="5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.simpleTypes" />
