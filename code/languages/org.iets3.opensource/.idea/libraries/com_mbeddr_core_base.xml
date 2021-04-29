@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="com.mbeddr.core.base">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base-generator.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution-src.jar!/" />
+    </SOURCES>
+  </library>
+</component>

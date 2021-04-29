@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="com.mbeddr.mpsutil.interpreter">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter-generator.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.migration.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.plugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.test-generator.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.test.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.traceExplorer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.migration-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.plugin-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.rt-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.test-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.traceExplorer-src.jar!/" />
+    </SOURCES>
+  </library>
+</component>
