@@ -42,6 +42,7 @@
       <concept id="5115872837156687891" name="org.iets3.core.expr.base.structure.LessEqualsExpression" flags="ng" index="30d6GI" />
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
+      <concept id="5115872837156724025" name="org.iets3.core.expr.base.structure.LogicalAndExpression" flags="ng" index="30deo4" />
       <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
       <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
       <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
@@ -547,6 +548,37 @@
           <node concept="_emDc" id="26CArgU5vGQ" role="30dEsF">
             <ref role="_emDf" node="26CArgU3lPZ" resolve="feb_1_2017" />
           </node>
+        </node>
+      </node>
+      <node concept="3dYjL0" id="BP$6ShU8Ud" role="_fkp5" />
+      <node concept="_fkuZ" id="BP$6ShRGwB" role="_fkp5">
+        <node concept="_fku$" id="BP$6ShRGwC" role="_fkur" />
+        <node concept="2vmpn$" id="BP$6ShU9uA" role="_fkuS" />
+        <node concept="30deo4" id="BP$6ShU8YI" role="_fkuY">
+          <node concept="30d6GI" id="BP$6ShU8YJ" role="30dEs_">
+            <node concept="_emDc" id="BP$6ShRGwF" role="30dEsF">
+              <ref role="_emDf" node="26CArgU3lS6" resolve="jan_1_2017" />
+            </node>
+            <node concept="_emDc" id="BP$6ShV4eI" role="30dEs_">
+              <ref role="_emDf" node="26CArgU3lS6" resolve="jan_1_2017" />
+            </node>
+          </node>
+          <node concept="2vmpn$" id="BP$6ShU9kk" role="30dEsF" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="BP$6ShXMM_" role="_fkp5">
+        <node concept="_fku$" id="BP$6ShXMMA" role="_fkur" />
+        <node concept="2vmpn$" id="BP$6ShXMMB" role="_fkuS" />
+        <node concept="30deo4" id="BP$6ShXMMC" role="_fkuY">
+          <node concept="30d6GG" id="BP$6ShXMUF" role="30dEs_">
+            <node concept="_emDc" id="BP$6ShXMME" role="30dEsF">
+              <ref role="_emDf" node="26CArgU3lS6" resolve="jan_1_2017" />
+            </node>
+            <node concept="_emDc" id="BP$6ShXMMF" role="30dEs_">
+              <ref role="_emDf" node="26CArgU3lS6" resolve="jan_1_2017" />
+            </node>
+          </node>
+          <node concept="2vmpn$" id="BP$6ShXMMG" role="30dEsF" />
         </node>
       </node>
     </node>
@@ -1323,6 +1355,37 @@
         </node>
         <node concept="2vmpn$" id="6fXpv6P_AR6" role="_fkuS" />
       </node>
+      <node concept="3dYjL0" id="BP$6ShWXOZ" role="_fkp5" />
+      <node concept="_fkuZ" id="BP$6ShWY1d" role="_fkp5">
+        <node concept="_fku$" id="BP$6ShWY1e" role="_fkur" />
+        <node concept="2vmpn$" id="BP$6ShWYF9" role="_fkuS" />
+        <node concept="30deo4" id="BP$6ShWYgC" role="_fkuY">
+          <node concept="30d6GI" id="BP$6ShWYnw" role="30dEs_">
+            <node concept="_emDc" id="BP$6ShWYvF" role="30dEs_">
+              <ref role="_emDf" node="26CArgU3mpM" resolve="jan2017" />
+            </node>
+            <node concept="_emDc" id="BP$6ShWYjV" role="30dEsF">
+              <ref role="_emDf" node="26CArgU3mpM" resolve="jan2017" />
+            </node>
+          </node>
+          <node concept="2vmpn$" id="BP$6ShWYgq" role="30dEsF" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="BP$6ShXMvz" role="_fkp5">
+        <node concept="_fku$" id="BP$6ShXMv$" role="_fkur" />
+        <node concept="2vmpn$" id="BP$6ShXMv_" role="_fkuS" />
+        <node concept="30deo4" id="BP$6ShXMvA" role="_fkuY">
+          <node concept="30d6GG" id="BP$6ShXMBa" role="30dEs_">
+            <node concept="_emDc" id="BP$6ShXMvD" role="30dEsF">
+              <ref role="_emDf" node="26CArgU3mpM" resolve="jan2017" />
+            </node>
+            <node concept="_emDc" id="BP$6ShXMvC" role="30dEs_">
+              <ref role="_emDf" node="26CArgU3mpM" resolve="jan2017" />
+            </node>
+          </node>
+          <node concept="2vmpn$" id="BP$6ShXMvE" role="30dEsF" />
+        </node>
+      </node>
     </node>
     <node concept="_ixoA" id="7aRvJQE5bqF" role="_iOnB" />
     <node concept="_fkuM" id="7aRvJQE5b7A" role="_iOnB">
@@ -1410,6 +1473,37 @@
           </node>
         </node>
         <node concept="2vmpnb" id="7aRvJQE7Pnm" role="_fkuS" />
+      </node>
+      <node concept="3dYjL0" id="BP$6ShYMUp" role="_fkp5" />
+      <node concept="_fkuZ" id="BP$6ShYMVO" role="_fkp5">
+        <node concept="_fku$" id="BP$6ShYMVP" role="_fkur" />
+        <node concept="30deo4" id="BP$6ShYN03" role="_fkuY">
+          <node concept="30d6GI" id="BP$6ShYNqw" role="30dEs_">
+            <node concept="_emDc" id="BP$6ShYNwW" role="30dEs_">
+              <ref role="_emDf" node="7aRvJQE4TLW" resolve="y2017" />
+            </node>
+            <node concept="_emDc" id="BP$6ShYNmV" role="30dEsF">
+              <ref role="_emDf" node="7aRvJQE4TLW" resolve="y2017" />
+            </node>
+          </node>
+          <node concept="2vmpn$" id="BP$6ShYMZP" role="30dEsF" />
+        </node>
+        <node concept="2vmpn$" id="BP$6ShYNB6" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="BP$6ShYNBd" role="_fkp5">
+        <node concept="_fku$" id="BP$6ShYNBe" role="_fkur" />
+        <node concept="30deo4" id="BP$6ShYNBf" role="_fkuY">
+          <node concept="30d6GG" id="BP$6ShYNSG" role="30dEs_">
+            <node concept="_emDc" id="BP$6ShYNBi" role="30dEsF">
+              <ref role="_emDf" node="7aRvJQE4TLW" resolve="y2017" />
+            </node>
+            <node concept="_emDc" id="BP$6ShYNBh" role="30dEs_">
+              <ref role="_emDf" node="7aRvJQE4TLW" resolve="y2017" />
+            </node>
+          </node>
+          <node concept="2vmpn$" id="BP$6ShYNBj" role="30dEsF" />
+        </node>
+        <node concept="2vmpn$" id="BP$6ShYNBk" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="7aRvJQE4Rcy" role="_iOnB" />
