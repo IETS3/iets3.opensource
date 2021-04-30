@@ -10585,47 +10585,6 @@
           <ref role="3LEDTV" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
         </node>
       </node>
-      <node concept="3LEwk6" id="26tZ$Z4sNNn" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="org.iets3.core.expr.genjava.stateMachineExample.devkit" />
-        <property role="3LESm3" value="1c135998-5440-4972-9921-4d69b80567f1" />
-        <node concept="3LEz8M" id="74GOZd5kreX" role="3LEz9a">
-          <ref role="3LEz8N" node="2zpAVpC$OJa" resolve="org.iets3.core.expr.genjava.advanced.devkit" />
-        </node>
-        <node concept="398BVA" id="26tZ$Z4sPb1" role="3LF7KH">
-          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-          <node concept="2Ry0Ak" id="26tZ$Z4sRar" role="iGT6I">
-            <property role="2Ry0Am" value="devkits" />
-            <node concept="2Ry0Ak" id="26tZ$Z4sSOA" role="2Ry0An">
-              <property role="2Ry0Am" value="org.iets3.core.expr.genjava.stateMachineExample.devkit" />
-              <node concept="2Ry0Ak" id="26tZ$Z4sTv7" role="2Ry0An">
-                <property role="2Ry0Am" value="org.iets3.core.expr.genjava.stateMachineExample.devkit.devkit" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3LEDTy" id="26tZ$Z4t0sK" role="3LEDUa">
-          <ref role="3LEDTV" node="26tZ$Z4qXja" resolve="org.iets3.core.expr.genjava.stateMachineExample" />
-        </node>
-        <node concept="3LEDTy" id="26tZ$Z4t0sL" role="3LEDUa">
-          <ref role="3LEDTV" node="6JPXQMQs0pX" resolve="org.iets3.core.expr.collections" />
-        </node>
-        <node concept="3LEDTM" id="26tZ$Z4t0sN" role="3LEDUa">
-          <ref role="3LEDTN" node="26tZ$Z4rsyt" resolve="org.iets3.core.expr.genjava.stateMachineExample.genplan" />
-        </node>
-        <node concept="3LEDTy" id="3vxfdxbuHow" role="3LEDUa">
-          <ref role="3LEDTV" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
-        </node>
-        <node concept="3LEDTy" id="121_t0FdgAJ" role="3LEDUa">
-          <ref role="3LEDTV" node="26tZ$Z4qVBy" resolve="org.iets3.core.expr.genjava.simpleTypes" />
-        </node>
-        <node concept="3LEDTy" id="121_t0FdgAK" role="3LEDUa">
-          <ref role="3LEDTV" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
-        </node>
-        <node concept="3LEDTy" id="121_t0FdgAL" role="3LEDUa">
-          <ref role="3LEDTV" node="26tZ$Z4qSzW" resolve="org.iets3.core.expr.genjava.base" />
-        </node>
-      </node>
     </node>
     <node concept="2G$12M" id="7$nPgK7yqIF" role="3989C9">
       <property role="TrG5h" value="iets3.comp.os" />
