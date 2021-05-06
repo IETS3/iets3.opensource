@@ -30,6 +30,7 @@
     <import index="63ih" ref="r:8b224ec5-7a3e-45b9-8341-eb73ff942246(org.iets3.core.expr.math.typesystem)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -491,6 +492,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -2318,8 +2320,13 @@
                 <node concept="Xl_RD" id="1JTgXSYNnv7" role="3uHU7B">
                   <property role="Xl_RC" value="Tag size of type " />
                 </node>
-                <node concept="37vLTw" id="1JTgXSYNnHw" role="3uHU7w">
-                  <ref role="3cqZAo" node="1JTgXSYMSaY" resolve="actualType" />
+                <node concept="2OqwBi" id="1br4Vy9oMi" role="3uHU7w">
+                  <node concept="37vLTw" id="1br4Vy9oMj" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1JTgXSYMSaY" resolve="actualType" />
+                  </node>
+                  <node concept="2qgKlT" id="1br4Vy9oMk" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2950,11 +2957,16 @@
           </node>
           <node concept="3_1$Yv" id="1JTgXSYQGy_" role="3_9lra">
             <node concept="3cpWs3" id="1JTgXSYQGLy" role="3_1BAH">
-              <node concept="2OqwBi" id="1JTgXSYQH2r" role="3uHU7w">
-                <node concept="3xONca" id="1JTgXSYQGLO" role="2Oq$k0">
-                  <ref role="3xOPvv" node="1JTgXSYQEe5" resolve="sumWithoutUnit" />
+              <node concept="2OqwBi" id="1br4Vy9oMA" role="3uHU7w">
+                <node concept="2OqwBi" id="1br4Vy9oMB" role="2Oq$k0">
+                  <node concept="3xONca" id="1br4Vy9oMC" role="2Oq$k0">
+                    <ref role="3xOPvv" node="1JTgXSYQEe5" resolve="sumWithoutUnit" />
+                  </node>
+                  <node concept="3JvlWi" id="1br4Vy9oMD" role="2OqNvi" />
                 </node>
-                <node concept="3JvlWi" id="1JTgXSYQH_3" role="2OqNvi" />
+                <node concept="2qgKlT" id="1br4Vy9oME" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                </node>
               </node>
               <node concept="Xl_RD" id="1JTgXSYQGyD" role="3uHU7B">
                 <property role="Xl_RC" value="The type of the sum needs to be a number type, but was " />
@@ -3027,19 +3039,29 @@
                   <node concept="Xl_RD" id="6q$NxWeD2bi" role="3uHU7B">
                     <property role="Xl_RC" value="The type of " />
                   </node>
-                  <node concept="3xONca" id="6q$NxWeD2pv" role="3uHU7w">
-                    <ref role="3xOPvv" node="1JTgXSYTGiL" resolve="fracWithoutUnit" />
+                  <node concept="2OqwBi" id="1br4Vy9oNx" role="3uHU7w">
+                    <node concept="3xONca" id="1br4Vy9oNy" role="2Oq$k0">
+                      <ref role="3xOPvv" node="1JTgXSYTGiL" resolve="fracWithoutUnit" />
+                    </node>
+                    <node concept="2qgKlT" id="1br4Vy9oNz" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    </node>
                   </node>
                 </node>
                 <node concept="Xl_RD" id="6q$NxWeD2C$" role="3uHU7w">
                   <property role="Xl_RC" value=" was expected to be a rational type, but was " />
                 </node>
               </node>
-              <node concept="2OqwBi" id="6q$NxWeD3vW" role="3uHU7w">
-                <node concept="3xONca" id="6q$NxWeD3cD" role="2Oq$k0">
-                  <ref role="3xOPvv" node="1JTgXSYTGiL" resolve="fracWithoutUnit" />
+              <node concept="2OqwBi" id="1br4Vy9oMW" role="3uHU7w">
+                <node concept="2OqwBi" id="1br4Vy9oMX" role="2Oq$k0">
+                  <node concept="3xONca" id="1br4Vy9oMY" role="2Oq$k0">
+                    <ref role="3xOPvv" node="1JTgXSYTGiL" resolve="fracWithoutUnit" />
+                  </node>
+                  <node concept="3JvlWi" id="1br4Vy9oMZ" role="2OqNvi" />
                 </node>
-                <node concept="3JvlWi" id="6q$NxWeD3VA" role="2OqNvi" />
+                <node concept="2qgKlT" id="1br4Vy9oN0" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                </node>
               </node>
             </node>
           </node>

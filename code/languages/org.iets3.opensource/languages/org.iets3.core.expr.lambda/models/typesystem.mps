@@ -17,6 +17,7 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3175,16 +3176,26 @@
               <node concept="3clFbS" id="5Win3SAclEY" role="3clFbx">
                 <node concept="2MkqsV" id="5Win3SAcGML" role="3cqZAp">
                   <node concept="3cpWs3" id="5Win3SAcJGe" role="2MkJ7o">
-                    <node concept="37vLTw" id="5Win3SAcKob" role="3uHU7w">
-                      <ref role="3cqZAo" node="5Win3SAcJMb" resolve="leftInput" />
+                    <node concept="2OqwBi" id="1br4Vy9ouB" role="3uHU7w">
+                      <node concept="37vLTw" id="1br4Vy9ouC" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5Win3SAcJMb" resolve="leftInput" />
+                      </node>
+                      <node concept="2qgKlT" id="1br4Vy9ouD" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                      </node>
                     </node>
                     <node concept="3cpWs3" id="5Win3SAcIEq" role="3uHU7B">
                       <node concept="3cpWs3" id="5Win3SAcItD" role="3uHU7B">
                         <node concept="Xl_RD" id="5Win3SAcGN0" role="3uHU7B">
                           <property role="Xl_RC" value="return type of right function " />
                         </node>
-                        <node concept="37vLTw" id="5Win3SAcItV" role="3uHU7w">
-                          <ref role="3cqZAo" node="5Win3SAcH5Q" resolve="rightReturn" />
+                        <node concept="2OqwBi" id="1br4Vy9ova" role="3uHU7w">
+                          <node concept="37vLTw" id="1br4Vy9ovb" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5Win3SAcH5Q" resolve="rightReturn" />
+                          </node>
+                          <node concept="2qgKlT" id="1br4Vy9ovc" role="2OqNvi">
+                            <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                          </node>
                         </node>
                       </node>
                       <node concept="Xl_RD" id="5Win3SAcIEt" role="3uHU7w">

@@ -22,6 +22,7 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
   </imports>
@@ -1751,8 +1752,13 @@
                       <node concept="Xl_RD" id="4YhD5cZpDGE" role="3uHU7B">
                         <property role="Xl_RC" value="expression " />
                       </node>
-                      <node concept="37vLTw" id="4YhD5cZpEob" role="3uHU7w">
-                        <ref role="3cqZAo" node="4YhD5cZpEhf" resolve="e" />
+                      <node concept="2OqwBi" id="1br4Vy9oAs" role="3uHU7w">
+                        <node concept="37vLTw" id="1br4Vy9oAt" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4YhD5cZpEhf" resolve="e" />
+                        </node>
+                        <node concept="2qgKlT" id="1br4Vy9oAu" role="2OqNvi">
+                          <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                        </node>
                       </node>
                     </node>
                     <node concept="Xl_RD" id="4YhD5cZpEyF" role="3uHU7w">

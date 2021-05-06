@@ -9,6 +9,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="gx5r" ref="r:a9ed28db-11a2-453b-b8cd-4dbf2ae73280(org.iets3.core.expr.dataflow.structure)" />
     <import index="b4m9" ref="r:f73fffcc-e6a1-406e-b40b-65eaaa19bd69(org.iets3.core.expr.dataflow.behavior)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -315,8 +316,13 @@
                     <node concept="Xl_RD" id="5Q9FzcI57xl" role="3uHU7B">
                       <property role="Xl_RC" value="port " />
                     </node>
-                    <node concept="2GrUjf" id="5Q9FzcI59nd" role="3uHU7w">
-                      <ref role="2Gs0qQ" node="5Q9FzcI51Vf" resolve="op" />
+                    <node concept="2OqwBi" id="1br4Vy9osc" role="3uHU7w">
+                      <node concept="2GrUjf" id="1br4Vy9osd" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="5Q9FzcI51Vf" resolve="op" />
+                      </node>
+                      <node concept="2qgKlT" id="1br4Vy9ose" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                      </node>
                     </node>
                   </node>
                   <node concept="Xl_RD" id="5Q9FzcI5aor" role="3uHU7w">
@@ -460,8 +466,13 @@
         <node concept="3clFbS" id="2vkvJYSSd64" role="2LFqv$">
           <node concept="2MkqsV" id="2vkvJYSSdI0" role="3cqZAp">
             <node concept="3cpWs3" id="2vkvJYSSdZI" role="2MkJ7o">
-              <node concept="2GrUjf" id="2vkvJYSSe00" role="3uHU7w">
-                <ref role="2Gs0qQ" node="2vkvJYSSd60" resolve="p" />
+              <node concept="2OqwBi" id="1br4Vy9osW" role="3uHU7w">
+                <node concept="2GrUjf" id="1br4Vy9osX" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="2vkvJYSSd60" resolve="p" />
+                </node>
+                <node concept="2qgKlT" id="1br4Vy9osY" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                </node>
               </node>
               <node concept="Xl_RD" id="2vkvJYSSdIc" role="3uHU7B">
                 <property role="Xl_RC" value="missing parameter value for " />
