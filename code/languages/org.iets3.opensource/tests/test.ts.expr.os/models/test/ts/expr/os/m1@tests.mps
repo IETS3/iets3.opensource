@@ -281,6 +281,7 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
+      <concept id="5968954128070680494" name="org.iets3.core.expr.base.structure.LogicalXorExpression" flags="ng" index="36_ee9" />
       <concept id="9142018459473556821" name="org.iets3.core.expr.base.structure.JoinType" flags="ng" index="188GKf">
         <child id="9142018459473556822" name="types" index="188GKc" />
       </concept>
@@ -3161,6 +3162,13 @@
             </node>
           </node>
           <node concept="2vmvy5" id="7k$Bvd3eP1G" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5blZ2ukNOnx" role="_iOnC">
+          <property role="TrG5h" value="m" />
+          <node concept="36_ee9" id="5blZ2ukPW19" role="2zPyp_">
+            <node concept="2vmpnb" id="5blZ2ukPW2F" role="30dEsF" />
+            <node concept="2vmpn$" id="5blZ2ukPVWM" role="30dEs_" />
+          </node>
         </node>
         <node concept="_ixoA" id="2xACJhqYZrz" role="_iOnC" />
         <node concept="2zPypq" id="2xACJhqYZyc" role="_iOnC">

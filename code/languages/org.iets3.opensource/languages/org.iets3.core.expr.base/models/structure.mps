@@ -2169,5 +2169,16 @@
     <property role="EcuMT" value="7520958096812440715" />
     <property role="TrG5h" value="IComplexTypeSupportsEquals" />
   </node>
+  <node concept="1TIwiD" id="5blZ2ukghYI">
+    <property role="TrG5h" value="LogicalXorExpression" />
+    <property role="3GE5qa" value="binary" />
+    <property role="EcuMT" value="5968954128070680494" />
+    <property role="R4oN_" value="logical xor" />
+    <property role="34LRSv" value="^" />
+    <ref role="1TJDcQ" node="4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
+    <node concept="PrWs8" id="5blZ2ukghYJ" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
+  </node>
 </model>
 
