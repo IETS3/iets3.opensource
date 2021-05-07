@@ -811,8 +811,11 @@
           <node concept="1Wc70l" id="3Q7NrjuPzAF" role="3clFbG">
             <node concept="2OqwBi" id="3Q7NrjuP$Jz" role="3uHU7w">
               <node concept="2OqwBi" id="3Q7NrjuPzWe" role="2Oq$k0">
-                <node concept="37vLTw" id="3Q7NrjuPzLg" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7TU$2foe_kx" resolve="checkable" />
+                <node concept="2OqwBi" id="24pyPlRt0nj" role="2Oq$k0">
+                  <node concept="2WthIp" id="24pyPlRt06F" role="2Oq$k0" />
+                  <node concept="3gHZIF" id="24pyPlRt0RS" role="2OqNvi">
+                    <ref role="2WH_rO" node="31wEG_giQ1F" resolve="selected" />
+                  </node>
                 </node>
                 <node concept="1mfA1w" id="3Q7NrjuP$uM" role="2OqNvi" />
               </node>
