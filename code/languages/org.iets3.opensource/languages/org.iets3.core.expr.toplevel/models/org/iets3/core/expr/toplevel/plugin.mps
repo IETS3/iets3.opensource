@@ -21,6 +21,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
@@ -419,8 +420,13 @@
             </node>
             <node concept="3cpWs3" id="7D7uZV2wu9l" role="3uHU7B">
               <node concept="3cpWs3" id="7$ajNzj$0Yi" role="3uHU7B">
-                <node concept="37vLTw" id="7$ajNzj$19H" role="3uHU7w">
-                  <ref role="3cqZAo" node="7$ajNzjzZzN" resolve="recordDeclaration" />
+                <node concept="2OqwBi" id="1br4Vy9oJl" role="3uHU7w">
+                  <node concept="37vLTw" id="1br4Vy9oJm" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7$ajNzjzZzN" resolve="recordDeclaration" />
+                  </node>
+                  <node concept="2qgKlT" id="1br4Vy9oJn" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                  </node>
                 </node>
                 <node concept="Xl_RD" id="7D7uZV2wch4" role="3uHU7B">
                   <property role="Xl_RC" value="#" />
