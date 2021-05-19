@@ -4389,7 +4389,6 @@
   <node concept="2S6QgY" id="7RxIimvtOIO">
     <property role="3GE5qa" value="dectree" />
     <property role="TrG5h" value="addChildren" />
-    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:22hm_0$b7cw" resolve="DecTreeNode" />
     <node concept="2S6ZIM" id="7RxIimvtOIP" role="2ZfVej">
       <node concept="3clFbS" id="7RxIimvtOIQ" role="2VODD2">
@@ -4417,30 +4416,6 @@
     </node>
     <node concept="1SWQZ3" id="7RxIimvtPhP" role="lGtFl">
       <property role="1SWRpm" value="TREE" />
-    </node>
-    <node concept="2SaL7w" id="7RxIimvtPhT" role="2ZfVeh">
-      <node concept="3clFbS" id="7RxIimvtPhU" role="2VODD2">
-        <node concept="3clFbF" id="7RxIimvtQBf" role="3cqZAp">
-          <node concept="2YIFZM" id="7RxIimvtQOh" role="3clFbG">
-            <ref role="37wK5l" to="xfg9:2Qbt$1tTWDY" resolve="isBooleanType" />
-            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-            <node concept="1PxgMI" id="7RxIimvtRpR" role="37wK5m">
-              <node concept="chp4Y" id="7RxIimvtRxm" role="3oSUPX">
-                <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
-              </node>
-              <node concept="2OqwBi" id="7RxIimvtPVz" role="1m5AlR">
-                <node concept="2OqwBi" id="7RxIimvtPw_" role="2Oq$k0">
-                  <node concept="2Sf5sV" id="7RxIimvtPii" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="7RxIimvtPJj" role="2OqNvi">
-                    <ref role="3Tt5mk" to="kfo3:22hm_0$b7cx" resolve="expression" />
-                  </node>
-                </node>
-                <node concept="3JvlWi" id="7RxIimvtQc$" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
 </model>
