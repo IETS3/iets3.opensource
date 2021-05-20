@@ -16,11 +16,10 @@
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
-    <import index="ich0" ref="r:2c56c15d-9645-459e-8807-414df4bb772a(org.iets3.analysis.base.typesystem)" />
-    <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -68,6 +67,10 @@
       </concept>
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -674,9 +677,18 @@
       <node concept="3clFbS" id="7QODtLvTFnA" role="3clF47">
         <node concept="3clFbF" id="7QODtLvTGsE" role="3cqZAp">
           <node concept="2YIFZM" id="7QODtLvTGNW" role="3clFbG">
-            <ref role="37wK5l" to="hnhi:2BYqfe8vtxE" resolve="submitISolvable" />
             <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
+            <ref role="37wK5l" to="hnhi:3hn7H_$lmns" resolve="submitISolvable" />
             <node concept="13iPFW" id="7QODtLvTGNX" role="37wK5m" />
+            <node concept="2OqwBi" id="5BRQP3RmK2b" role="37wK5m">
+              <node concept="Rm8GO" id="5BRQP3RmJB5" role="2Oq$k0">
+                <ref role="Rm8GQ" to="dzyv:~ChronoUnit.FOREVER" resolve="FOREVER" />
+                <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+              </node>
+              <node concept="liA8E" id="5BRQP3RmKNp" role="2OqNvi">
+                <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration()" resolve="getDuration" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1364,9 +1376,18 @@
       <node concept="3clFbS" id="3NwcubmnBQ8" role="3clF47">
         <node concept="3clFbF" id="3NwcubmnCHl" role="3cqZAp">
           <node concept="2YIFZM" id="3NwcubmnCYw" role="3clFbG">
-            <ref role="37wK5l" to="hnhi:2BYqfe8vtxE" resolve="submitISolvable" />
             <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
+            <ref role="37wK5l" to="hnhi:3hn7H_$lmns" resolve="submitISolvable" />
             <node concept="13iPFW" id="3NwcubmnCYx" role="37wK5m" />
+            <node concept="2OqwBi" id="5BRQP3RmKWY" role="37wK5m">
+              <node concept="Rm8GO" id="5BRQP3RmKWZ" role="2Oq$k0">
+                <ref role="Rm8GQ" to="dzyv:~ChronoUnit.FOREVER" resolve="FOREVER" />
+                <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+              </node>
+              <node concept="liA8E" id="5BRQP3RmKX0" role="2OqNvi">
+                <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration()" resolve="getDuration" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
