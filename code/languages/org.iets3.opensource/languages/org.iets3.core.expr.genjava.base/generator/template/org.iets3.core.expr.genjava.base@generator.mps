@@ -5244,9 +5244,6 @@
                         <property role="TrG5h" value="it" />
                         <node concept="3uibUv" id="1e59C2QBeWD" role="1tU5fm">
                           <ref role="3uigEE" to="33ny:~Iterator" resolve="Iterator" />
-                          <node concept="3uibUv" id="1e59C2QBeWG" role="11_B2D">
-                            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                          </node>
                         </node>
                         <node concept="2OqwBi" id="1e59C2QBhwE" role="33vP2m">
                           <node concept="37vLTw" id="1e59C2QNqcG" role="2Oq$k0">
