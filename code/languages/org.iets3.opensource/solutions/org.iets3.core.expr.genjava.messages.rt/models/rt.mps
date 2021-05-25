@@ -2,11 +2,12 @@
 <model ref="r:bc28ef12-2b45-4cb1-adef-885617bf3e39(org.iets3.core.expr.genjava.messages.rt.rt)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports>
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -17,7 +18,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -107,7 +108,9 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
+        <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
+      </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
@@ -172,6 +175,9 @@
       <node concept="3Tm1VV" id="4ZjVa_SLHjo" role="1B3o_S" />
       <node concept="3uibUv" id="4ZjVa_SLHrY" role="EKbjA">
         <ref role="3uigEE" node="55imU6w9RYW" resolve="MessageKind" />
+      </node>
+      <node concept="3uibUv" id="44k86jEVdax" role="EKbjA">
+        <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
       </node>
     </node>
     <node concept="2tJIrI" id="55imU6w9Xkk" role="jymVt" />
@@ -274,6 +280,9 @@
       <node concept="3uibUv" id="55imU6w9SWq" role="EKbjA">
         <ref role="3uigEE" node="55imU6w9RYW" resolve="MessageKind" />
       </node>
+      <node concept="3uibUv" id="44k86jEVdyw" role="EKbjA">
+        <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
+      </node>
     </node>
     <node concept="2tJIrI" id="55imU6wacrY" role="jymVt" />
     <node concept="312cEu" id="55imU6wacHt" role="jymVt">
@@ -371,6 +380,9 @@
       <node concept="3Tm1VV" id="55imU6wacA8" role="1B3o_S" />
       <node concept="3uibUv" id="55imU6wacPC" role="EKbjA">
         <ref role="3uigEE" node="55imU6w9RYW" resolve="MessageKind" />
+      </node>
+      <node concept="3uibUv" id="44k86jEVdV_" role="EKbjA">
+        <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
       </node>
     </node>
     <node concept="2tJIrI" id="4ZjVa_SLHSt" role="jymVt" />
@@ -1040,6 +1052,9 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="3uibUv" id="22CzepxrUiM" role="EKbjA">
+      <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
+    </node>
   </node>
   <node concept="3HP615" id="55imU6w9RYW">
     <property role="2bfB8j" value="true" />
@@ -1055,6 +1070,9 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="55imU6w9RLp" role="1B3o_S" />
+    <node concept="3uibUv" id="1pEigwJ6D4o" role="3HQHJm">
+      <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
+    </node>
   </node>
   <node concept="312cEu" id="65vXeyMqhK2">
     <property role="TrG5h" value="ProgramLocation" />
@@ -1164,6 +1182,9 @@
       <node concept="2AHcQZ" id="65vXeyMqsio" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+    <node concept="3uibUv" id="44k86jEV8UF" role="EKbjA">
+      <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
     </node>
   </node>
 </model>

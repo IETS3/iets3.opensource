@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
@@ -88,7 +88,7 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -175,13 +175,10 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
@@ -335,10 +332,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -430,21 +427,13 @@
         </node>
         <node concept="geMak" id="3wHxcnxBQe5" role="3_Xtdj">
           <node concept="2OqwBi" id="6b_jefnVxCN" role="geM8N">
-            <node concept="2OqwBi" id="6b_jefnVxCO" role="2Oq$k0">
-              <node concept="2YIFZM" id="6b_jefnVxCP" role="2Oq$k0">
-                <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-                <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-              </node>
-              <node concept="liA8E" id="6b_jefnVxCQ" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-                <node concept="3VsKOn" id="6b_jefnVxCR" role="37wK5m">
-                  <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-                </node>
-              </node>
-            </node>
             <node concept="liA8E" id="6b_jefnVxCS" role="2OqNvi">
               <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
               <node concept="geSxg" id="6b_jefnVxCT" role="37wK5m" />
+            </node>
+            <node concept="2YIFZM" id="7qOtjYQNOzs" role="2Oq$k0">
+              <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+              <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
             </node>
           </node>
           <node concept="geMe5" id="3wHxcnxBQe6" role="geMea">
@@ -563,21 +552,13 @@
           </node>
           <node concept="geMak" id="5Zn2KFQQzNw" role="3_Xtdj">
             <node concept="2OqwBi" id="6b_jefnVuY0" role="geM8N">
-              <node concept="2OqwBi" id="6b_jefnVuhy" role="2Oq$k0">
-                <node concept="2YIFZM" id="6b_jefnVutA" role="2Oq$k0">
-                  <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-                  <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-                </node>
-                <node concept="liA8E" id="6b_jefnVuHk" role="2OqNvi">
-                  <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-                  <node concept="3VsKOn" id="6b_jefnVuJs" role="37wK5m">
-                    <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-                  </node>
-                </node>
-              </node>
               <node concept="liA8E" id="6b_jefnVvpI" role="2OqNvi">
                 <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
                 <node concept="geSxg" id="6b_jefnVxyD" role="37wK5m" />
+              </node>
+              <node concept="2YIFZM" id="7qOtjYQNTOI" role="2Oq$k0">
+                <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+                <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
               </node>
             </node>
             <node concept="geMe5" id="5Zn2KFQQzN$" role="geMea">
@@ -651,7 +632,7 @@
             <node concept="geMe5" id="5Zn2KFQRMcS" role="geMea">
               <node concept="3clFbS" id="5Zn2KFQRMcT" role="2VODD2">
                 <node concept="3SKdUt" id="5Zn2KFQRMcU" role="3cqZAp">
-                  <node concept="1PaTwC" id="17Nm8oCo8JX" role="3ndbpf">
+                  <node concept="1PaTwC" id="17Nm8oCo8JX" role="1aUNEU">
                     <node concept="3oM_SD" id="17Nm8oCo8JY" role="1PaTwD">
                       <property role="3oM_SC" value="wrap" />
                     </node>
@@ -729,7 +710,7 @@
                   </node>
                 </node>
                 <node concept="3SKdUt" id="5Zn2KFQRMdC" role="3cqZAp">
-                  <node concept="1PaTwC" id="17Nm8oCo8K9" role="3ndbpf">
+                  <node concept="1PaTwC" id="17Nm8oCo8K9" role="1aUNEU">
                     <node concept="3oM_SD" id="17Nm8oCo8Ka" role="1PaTwD">
                       <property role="3oM_SC" value="otherwise" />
                     </node>
@@ -874,7 +855,12 @@
       </node>
       <node concept="geMak" id="7Ip2X68Oj8t" role="3_Xtdj">
         <node concept="3cpWs3" id="7Ip2X68Ok85" role="geMbG">
-          <node concept="geSxg" id="7Ip2X68Ok9k" role="3uHU7w" />
+          <node concept="2OqwBi" id="1br4Vy9oLZ" role="3uHU7w">
+            <node concept="geSxg" id="1br4Vy9oM0" role="2Oq$k0" />
+            <node concept="2qgKlT" id="1br4Vy9oM1" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+            </node>
+          </node>
           <node concept="Xl_RD" id="7Ip2X68Ok40" role="3uHU7B">
             <property role="Xl_RC" value="Move to State " />
           </node>

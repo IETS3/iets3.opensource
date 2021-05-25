@@ -2,7 +2,7 @@
 <model ref="r:4227d408-7161-4955-b7a5-192aa7acfafc(org.iets3.core.expr.typetags.units.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
@@ -84,7 +84,7 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -161,10 +161,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -435,7 +435,7 @@
       <node concept="QB0g5" id="4SwD0JTm9Yu" role="QCWH9">
         <node concept="3clFbS" id="4SwD0JTm9Yv" role="2VODD2">
           <node concept="3SKdUt" id="4SwD0JTohel" role="3cqZAp">
-            <node concept="1PaTwC" id="17Nm8oCo8Hs" role="3ndbpf">
+            <node concept="1PaTwC" id="17Nm8oCo8Hs" role="1aUNEU">
               <node concept="3oM_SD" id="17Nm8oCo8Ht" role="1PaTwD">
                 <property role="3oM_SC" value="white" />
               </node>
@@ -583,6 +583,40 @@
         </node>
         <node concept="3cpWs6" id="5ksbktFEs5f" role="3cqZAp">
           <node concept="3clFbT" id="5ksbktFEs6b" role="3cqZAk" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1KUmgSFvSuo">
+    <property role="3GE5qa" value="definition" />
+    <ref role="1M2myG" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+    <node concept="1N5Pfh" id="1KUmgSFvSup" role="1Mr941">
+      <ref role="1N5Vy1" to="b0gq:1KUmgSFpwWq" resolve="dimension" />
+      <node concept="3dgokm" id="1KUmgSFvSut" role="1N6uqs">
+        <node concept="3clFbS" id="1KUmgSFvSuv" role="2VODD2">
+          <node concept="3clFbF" id="1Ovl2ivuHjR" role="3cqZAp">
+            <node concept="2YIFZM" id="1Ovl2ivuHol" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2YIFZM" id="1KUmgSFw73M" role="37wK5m">
+                <ref role="37wK5l" to="dntf:1KUmgSFw1bh" resolve="getVisibleDimensionFrom" />
+                <ref role="1Pybhc" to="dntf:6FK1Pb8y_co" resolve="ScopingHelper" />
+                <node concept="1eOMI4" id="1KUmgSFw73N" role="37wK5m">
+                  <node concept="3K4zz7" id="1KUmgSFw73O" role="1eOMHV">
+                    <node concept="2rP1CM" id="1KUmgSFw73P" role="3K4E3e" />
+                    <node concept="2OqwBi" id="1KUmgSFw73Q" role="3K4Cdx">
+                      <node concept="3kakTB" id="1KUmgSFw73R" role="2Oq$k0" />
+                      <node concept="3w_OXm" id="1KUmgSFw73S" role="2OqNvi" />
+                    </node>
+                    <node concept="2OqwBi" id="1KUmgSFw73T" role="3K4GZi">
+                      <node concept="3kakTB" id="1KUmgSFw73U" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="1KUmgSFw73V" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

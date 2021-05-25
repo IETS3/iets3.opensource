@@ -2,10 +2,10 @@
 <model ref="r:fcb91210-c6db-4de0-81c0-ca99e48fd25a(test.in.expr.os.records@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <devkit ref="ec967770-4707-442f-baaf-a8b7bb554717(org.iets3.core.expr.genall.core.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
@@ -93,6 +93,7 @@
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
+      <concept id="5115872837156761034" name="org.iets3.core.expr.base.structure.NotEqualsExpression" flags="ng" index="30cPrR" />
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
@@ -234,6 +235,14 @@
       </concept>
       <concept id="1249392911699110107" name="org.iets3.core.expr.toplevel.structure.RecordChangeTarget" flags="ng" index="3vStjw">
         <child id="1249392911699129399" name="setters" index="3vSgwc" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1135,7 +1144,125 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="5YygIlbp005" role="_iOnB" />
+    <node concept="_ixoA" id="7Oc88rLI91G" role="_iOnB" />
+    <node concept="2zPypq" id="7Oc88rLI9BF" role="_iOnB">
+      <property role="TrG5h" value="p21" />
+      <node concept="2S399m" id="7Oc88rLIa6W" role="2zPyp_">
+        <node concept="2Ss9cW" id="7Oc88rLIa74" role="2S399n">
+          <ref role="2Ss9cX" node="5CUQ8HxPEi" resolve="Point2" />
+        </node>
+        <node concept="30bXRB" id="7Oc88rLIa7k" role="2S399l">
+          <property role="30bXRw" value="1" />
+        </node>
+        <node concept="30bXRB" id="7Oc88rLIa7N" role="2S399l">
+          <property role="30bXRw" value="2" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="7Oc88rLIayp" role="_iOnB">
+      <property role="TrG5h" value="p22" />
+      <node concept="2S399m" id="7Oc88rLIaWd" role="2zPyp_">
+        <node concept="2Ss9cW" id="7Oc88rLIaWj" role="2S399n">
+          <ref role="2Ss9cX" node="5CUQ8HxPEi" resolve="Point2" />
+        </node>
+        <node concept="30bXRB" id="7Oc88rLIaWz" role="2S399l">
+          <property role="30bXRw" value="1" />
+        </node>
+        <node concept="30bXRB" id="6Mu2VWv$$YU" role="2S399l">
+          <property role="30bXRw" value="2" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="6Mu2VWv$$sF" role="_iOnB">
+      <property role="TrG5h" value="p23" />
+      <node concept="2S399m" id="6Mu2VWv$$Ss" role="2zPyp_">
+        <node concept="2Ss9cW" id="6Mu2VWv$$Sy" role="2S399n">
+          <ref role="2Ss9cX" node="5CUQ8HxPEi" resolve="Point2" />
+        </node>
+        <node concept="30bXRB" id="6Mu2VWv$$SM" role="2S399l">
+          <property role="30bXRw" value="1" />
+        </node>
+        <node concept="30bXRB" id="6Mu2VWv$$T_" role="2S399l">
+          <property role="30bXRw" value="3" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="7Oc88rLIaYt" role="_iOnB" />
+    <node concept="_fkuM" id="7Oc88rLIbO2" role="_iOnB">
+      <property role="TrG5h" value="RecordEquals" />
+      <node concept="_fkuZ" id="7Oc88rLIceQ" role="_fkp5">
+        <node concept="_fku$" id="7Oc88rLIceR" role="_fkur" />
+        <node concept="30cPrO" id="7Oc88rLIcfg" role="_fkuY">
+          <node concept="_emDc" id="7Oc88rLIcf6" role="30dEsF">
+            <ref role="_emDf" node="7Oc88rLI9BF" resolve="p21" />
+          </node>
+          <node concept="_emDc" id="uZYoDOPs5z" role="30dEs_">
+            <ref role="_emDf" node="7Oc88rLI9BF" resolve="p21" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="uZYoDOPbfH" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="7Oc88rLIckK" role="_fkp5">
+        <node concept="_fku$" id="7Oc88rLIckL" role="_fkur" />
+        <node concept="30cPrO" id="7Oc88rLIclj" role="_fkuY">
+          <node concept="_emDc" id="6Mu2VWv_MqY" role="30dEs_">
+            <ref role="_emDf" node="7Oc88rLIayp" resolve="p22" />
+          </node>
+          <node concept="_emDc" id="7Oc88rLIcl9" role="30dEsF">
+            <ref role="_emDf" node="7Oc88rLI9BF" resolve="p21" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="6Mu2VWvCka$" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="uZYoDQ7Pi1" role="_fkp5">
+        <node concept="_fku$" id="uZYoDQ7Pi2" role="_fkur" />
+        <node concept="30cPrR" id="uZYoDQbCKL" role="_fkuY">
+          <node concept="_emDc" id="uZYoDQ7Pix" role="30dEsF">
+            <ref role="_emDf" node="7Oc88rLI9BF" resolve="p21" />
+          </node>
+          <node concept="_emDc" id="6Mu2VWv_MuJ" role="30dEs_">
+            <ref role="_emDf" node="6Mu2VWv$$sF" resolve="p23" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="uZYoDQ7Pod" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="5FFsEXIcXUc" role="_fkp5">
+        <node concept="_fku$" id="5FFsEXIcXUd" role="_fkur" />
+        <node concept="30cPrO" id="5FFsEXIcXUV" role="_fkuY">
+          <node concept="_emDc" id="5FFsEXIcXUL" role="30dEsF">
+            <ref role="_emDf" node="7Oc88rLI9BF" resolve="p21" />
+          </node>
+          <node concept="_emDc" id="5FFsEXIcY6M" role="30dEs_">
+            <ref role="_emDf" node="6Mu2VWv$$sF" resolve="p23" />
+          </node>
+        </node>
+        <node concept="2vmpn$" id="5FFsEXIcYaP" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="5FFsEXIcYbn" role="_fkp5">
+        <node concept="_fku$" id="5FFsEXIcYkn" role="_fkur" />
+        <node concept="30cPrR" id="5FFsEXIcYcb" role="_fkuY">
+          <node concept="_emDc" id="5FFsEXIcYgj" role="30dEs_">
+            <ref role="_emDf" node="7Oc88rLI9BF" resolve="p21" />
+          </node>
+          <node concept="_emDc" id="5FFsEXIcYc2" role="30dEsF">
+            <ref role="_emDf" node="7Oc88rLI9BF" resolve="p21" />
+          </node>
+        </node>
+        <node concept="2vmpn$" id="5FFsEXIcYk_" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="5FFsEXIcYld" role="_fkp5">
+        <node concept="_fku$" id="5FFsEXIcYle" role="_fkur" />
+        <node concept="30cPrR" id="5FFsEXIcYm7" role="_fkuY">
+          <node concept="_emDc" id="5FFsEXIcYqq" role="30dEs_">
+            <ref role="_emDf" node="7Oc88rLIayp" resolve="p22" />
+          </node>
+          <node concept="_emDc" id="5FFsEXIcYlY" role="30dEsF">
+            <ref role="_emDf" node="7Oc88rLI9BF" resolve="p21" />
+          </node>
+        </node>
+        <node concept="2vmpn$" id="5FFsEXIcYuN" role="_fkuS" />
+      </node>
+    </node>
     <node concept="_ixoA" id="4ptnK4jeq01" role="_iOnB" />
   </node>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
@@ -2826,36 +2953,6 @@
         </node>
       </node>
     </node>
-    <node concept="1X3_iC" id="1ucEILUeBLA" role="lGtFl">
-      <property role="3V$3am" value="contents" />
-      <property role="3V$3ak" value="d441fba0-f46b-43cd-b723-dad7b65da615/543569365052711055/543569365052711058" />
-      <node concept="2zPypq" id="7$ajNzjKxIv" role="8Wnug">
-        <property role="TrG5h" value="d2Path" />
-        <node concept="1QScDb" id="7$ajNzjKxTA" role="2zPyp_">
-          <node concept="3o_JK" id="7$ajNzjKxTB" role="1QScD9">
-            <ref role="3o_JH" node="1$1rueer6V9" resolve="d" />
-          </node>
-          <node concept="1QScDb" id="7$ajNzjKxTC" role="30czhm">
-            <node concept="3o_JK" id="7$ajNzjKxTD" role="1QScD9">
-              <ref role="3o_JH" node="1$1rueeqxSD" resolve="c" />
-            </node>
-            <node concept="1QScDb" id="7$ajNzjKxTE" role="30czhm">
-              <node concept="3o_JK" id="7$ajNzjKxTF" role="1QScD9">
-                <ref role="3o_JH" node="1$1rueeqxSb" resolve="b" />
-              </node>
-              <node concept="_emDc" id="7$ajNzjKxTG" role="30czhm">
-                <ref role="_emDf" node="1$1rueer0yB" resolve="d2" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="Uns6S" id="7$ajNzjKyt3" role="2zM23F">
-          <node concept="2Ss9cW" id="7$ajNzjKyt4" role="Uns6T">
-            <ref role="2Ss9cX" node="1$1rueer6gn" resolve="D" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="_ixoA" id="7$ajNzjKtaO" role="_iOnB" />
     <node concept="_fkuM" id="1$1rueeqET$" role="_iOnB">
       <property role="TrG5h" value="PathsWithOptions" />
@@ -3117,31 +3214,6 @@
         </node>
       </node>
     </node>
-    <node concept="1X3_iC" id="1ucEILUhuYR" role="lGtFl">
-      <property role="3V$3am" value="contents" />
-      <property role="3V$3ak" value="d441fba0-f46b-43cd-b723-dad7b65da615/543569365052711055/543569365052711058" />
-      <node concept="2zPypq" id="7$ajNzjKFXG" role="8Wnug">
-        <property role="TrG5h" value="f2bpath" />
-        <node concept="1QScDb" id="1$1rueeBTmk" role="2zPyp_">
-          <node concept="3o_JK" id="1$1rueeBTml" role="1QScD9">
-            <ref role="3o_JH" node="1$1rueeBiIP" resolve="r" />
-          </node>
-          <node concept="1QScDb" id="1$1rueeBTmm" role="30czhm">
-            <node concept="3o_JK" id="1$1rueeBTmn" role="1QScD9">
-              <ref role="3o_JH" node="1$1rueeBiHX" resolve="q" />
-            </node>
-            <node concept="_emDc" id="1$1rueeBTmo" role="30czhm">
-              <ref role="_emDf" node="1$1rueeB$hx" resolve="f2" />
-            </node>
-          </node>
-        </node>
-        <node concept="3iBYCm" id="7$ajNzjKGKt" role="2zM23F">
-          <node concept="2Ss9cW" id="7$ajNzjKGKu" role="3iBWmK">
-            <ref role="2Ss9cX" node="1$1rueeBi27" resolve="R" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="_ixoA" id="7$ajNzjKDFg" role="_iOnB" />
     <node concept="_fkuM" id="1$1rueeBl0c" role="_iOnB">
       <property role="TrG5h" value="MorePathCollections" />
@@ -3183,6 +3255,79 @@
     </node>
     <node concept="_ixoA" id="1$1rueeCBvx" role="_iOnB" />
     <node concept="_ixoA" id="6HHp2WmWQsw" role="_iOnB" />
+    <node concept="1X3_iC" id="2OBJGfQmE3U" role="lGtFl">
+      <property role="3V$3am" value="contents" />
+      <property role="3V$3ak" value="d441fba0-f46b-43cd-b723-dad7b65da615/543569365052711055/543569365052711058" />
+      <node concept="2zPypq" id="7$ajNzjKxIv" role="8Wnug">
+        <property role="TrG5h" value="d2Path" />
+        <node concept="1QScDb" id="7$ajNzjKxTA" role="2zPyp_">
+          <node concept="3o_JK" id="7$ajNzjKxTB" role="1QScD9">
+            <ref role="3o_JH" node="1$1rueer6V9" resolve="d" />
+          </node>
+          <node concept="1QScDb" id="7$ajNzjKxTC" role="30czhm">
+            <node concept="3o_JK" id="7$ajNzjKxTD" role="1QScD9">
+              <ref role="3o_JH" node="1$1rueeqxSD" resolve="c" />
+            </node>
+            <node concept="1QScDb" id="7$ajNzjKxTE" role="30czhm">
+              <node concept="3o_JK" id="7$ajNzjKxTF" role="1QScD9">
+                <ref role="3o_JH" node="1$1rueeqxSb" resolve="b" />
+              </node>
+              <node concept="_emDc" id="7$ajNzjKxTG" role="30czhm">
+                <ref role="_emDf" node="1$1rueer0yB" resolve="d2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Uns6S" id="7$ajNzjKyt3" role="2zM23F">
+          <node concept="2Ss9cW" id="7$ajNzjKyt4" role="Uns6T">
+            <ref role="2Ss9cX" node="1$1rueer6gn" resolve="D" />
+          </node>
+        </node>
+        <node concept="1z9TsT" id="2OBJGfQmDxO" role="lGtFl">
+          <node concept="OjmMv" id="2OBJGfQmDxP" role="1w35rA">
+            <node concept="19SGf9" id="2OBJGfQmDxQ" role="OjmMu">
+              <node concept="19SUe$" id="2OBJGfQmDxR" role="19SJt6">
+                <property role="19SUeA" value="commented out as it causes all generated java tests from this TestSuite not being executed/reported,&#10;see https://github.com/IETS3/iets3.opensource/pull/430#issuecomment-777495124 for details" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1X3_iC" id="2OBJGfQmHB_" role="lGtFl">
+      <property role="3V$3am" value="contents" />
+      <property role="3V$3ak" value="d441fba0-f46b-43cd-b723-dad7b65da615/543569365052711055/543569365052711058" />
+      <node concept="2zPypq" id="7$ajNzjKFXG" role="8Wnug">
+        <property role="TrG5h" value="f2bpath" />
+        <node concept="1QScDb" id="1$1rueeBTmk" role="2zPyp_">
+          <node concept="3o_JK" id="1$1rueeBTml" role="1QScD9">
+            <ref role="3o_JH" node="1$1rueeBiIP" resolve="r" />
+          </node>
+          <node concept="1QScDb" id="1$1rueeBTmm" role="30czhm">
+            <node concept="3o_JK" id="1$1rueeBTmn" role="1QScD9">
+              <ref role="3o_JH" node="1$1rueeBiHX" resolve="q" />
+            </node>
+            <node concept="_emDc" id="1$1rueeBTmo" role="30czhm">
+              <ref role="_emDf" node="1$1rueeB$hx" resolve="f2" />
+            </node>
+          </node>
+        </node>
+        <node concept="3iBYCm" id="7$ajNzjKGKt" role="2zM23F">
+          <node concept="2Ss9cW" id="7$ajNzjKGKu" role="3iBWmK">
+            <ref role="2Ss9cX" node="1$1rueeBi27" resolve="R" />
+          </node>
+        </node>
+        <node concept="1z9TsT" id="2OBJGfQmFEY" role="lGtFl">
+          <node concept="OjmMv" id="2OBJGfQmFEZ" role="1w35rA">
+            <node concept="19SGf9" id="2OBJGfQmFF0" role="OjmMu">
+              <node concept="19SUe$" id="2OBJGfQmFF1" role="19SJt6">
+                <property role="19SUeA" value="commented out as it causes all generated java tests from this TestSuite not being executed/reported,&#10;see https://github.com/IETS3/iets3.opensource/pull/430#issuecomment-777495124 for details " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="_iOnU" id="7cphKbKqVBQ">
     <property role="TrG5h" value="grouping" />

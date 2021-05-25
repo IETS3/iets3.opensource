@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
-    <use id="cb91a38e-738a-4811-a96d-448d08f526fa" name="org.iets3.core.expr.typetags.units" version="0" />
+    <use id="cb91a38e-738a-4811-a96d-448d08f526fa" name="org.iets3.core.expr.typetags.units" version="1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
   </languages>
   <imports />
@@ -14,7 +14,7 @@
       </concept>
       <concept id="5185104661801317038" name="org.iets3.core.expr.typetags.units.structure.ValExpression" flags="ng" index="2m5Cep" />
       <concept id="8337440621611267903" name="org.iets3.core.expr.typetags.units.structure.Unit" flags="ng" index="CIrOH">
-        <property id="8337440621611269512" name="description" index="CIruq" />
+        <reference id="2034036099103723290" name="dimension" index="Rn5ok" />
         <child id="8337440621611270427" name="specification" index="CIsG9" />
       </concept>
       <concept id="8337440621611273670" name="org.iets3.core.expr.typetags.units.structure.IntegerExponent" flags="ng" index="CIsvk">
@@ -27,6 +27,7 @@
       <concept id="8337440621611270429" name="org.iets3.core.expr.typetags.units.structure.UnitSpecification" flags="ng" index="CIsGf">
         <child id="8337440621611297539" name="components" index="CIi4h" />
       </concept>
+      <concept id="2034036099103723287" name="org.iets3.core.expr.typetags.units.structure.Quantity" flags="ng" index="Rn5op" />
       <concept id="1069230850837260491" name="org.iets3.core.expr.typetags.units.structure.ConversionRule" flags="ng" index="TRoc0">
         <reference id="1741902046312150360" name="sourceUnit" index="27Q$ZQ" />
         <reference id="1741902046312150361" name="targetUnit" index="27Q$ZR" />
@@ -40,6 +41,14 @@
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
@@ -58,12 +67,21 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -71,37 +89,65 @@
   </registry>
   <node concept="_iOnU" id="5XaocLWHGMs">
     <property role="TrG5h" value="SIUnits" />
+    <node concept="Rn5op" id="1KUmgSFvJUk" role="_iOnB">
+      <property role="TrG5h" value="current" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUl" role="_iOnB">
+      <property role="TrG5h" value="undefined unit (helper)" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUm" role="_iOnB">
+      <property role="TrG5h" value="metre" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUn" role="_iOnB">
+      <property role="TrG5h" value="amount of chemical substance" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUo" role="_iOnB">
+      <property role="TrG5h" value="luminous intensity" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUp" role="_iOnB">
+      <property role="TrG5h" value="temperature" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUq" role="_iOnB">
+      <property role="TrG5h" value="weight" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUr" role="_iOnB">
+      <property role="TrG5h" value="time" />
+    </node>
+    <node concept="_ixoA" id="_I$tx9G_Hy" role="_iOnB" />
+    <node concept="1Ws0TD" id="_I$tx9G_GS" role="_iOnB">
+      <property role="1WsWdv" value="SI Units" />
+    </node>
     <node concept="CIrOH" id="5XaocLWHSS4" role="_iOnB">
       <property role="TrG5h" value="m" />
-      <property role="CIruq" value="distance" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSS5" role="_iOnB">
       <property role="TrG5h" value="s" />
-      <property role="CIruq" value="time" />
+      <ref role="Rn5ok" node="1KUmgSFvJUr" resolve="time" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSS6" role="_iOnB">
       <property role="TrG5h" value="kg" />
-      <property role="CIruq" value="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSS7" role="_iOnB">
       <property role="TrG5h" value="mol" />
-      <property role="CIruq" value="amount of chemical substance" />
+      <ref role="Rn5ok" node="1KUmgSFvJUn" resolve="amount of chemical substance" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSS8" role="_iOnB">
       <property role="TrG5h" value="K" />
-      <property role="CIruq" value="temperature" />
+      <ref role="Rn5ok" node="1KUmgSFvJUp" resolve="temperature" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSS9" role="_iOnB">
       <property role="TrG5h" value="A" />
-      <property role="CIruq" value="current" />
+      <ref role="Rn5ok" node="1KUmgSFvJUk" resolve="current" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSSa" role="_iOnB">
       <property role="TrG5h" value="cd" />
-      <property role="CIruq" value="luminous intensity" />
+      <ref role="Rn5ok" node="1KUmgSFvJUo" resolve="luminous intensity" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSSb" role="_iOnB">
       <property role="TrG5h" value="nounit" />
-      <property role="CIruq" value="undefined unit (helper)" />
+      <ref role="Rn5ok" node="1KUmgSFvJUl" resolve="undefined unit (helper)" />
       <node concept="CIsGf" id="5XaocLWHSSc" role="CIsG9">
         <node concept="CIsvn" id="5XaocLWHSSd" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSS4" resolve="m" />
@@ -121,12 +167,76 @@
       <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="5XaocLWHGMs" resolve="SIUnits" />
     </node>
+    <node concept="1Ws0TD" id="_I$tx9G_qd" role="_iOnB">
+      <property role="1WsWdv" value="Dimension" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUs" role="_iOnB">
+      <property role="TrG5h" value="magnetic flux" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUu" role="_iOnB">
+      <property role="TrG5h" value="electrical conductance" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUv" role="_iOnB">
+      <property role="TrG5h" value="absorbed dose" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUw" role="_iOnB">
+      <property role="TrG5h" value="capacitance" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUx" role="_iOnB">
+      <property role="TrG5h" value="inductance" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUy" role="_iOnB">
+      <property role="TrG5h" value="magnetic induction" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUz" role="_iOnB">
+      <property role="TrG5h" value="equivalent dose" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJU$" role="_iOnB">
+      <property role="TrG5h" value="electrical resistance" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUA" role="_iOnB">
+      <property role="TrG5h" value="pressure" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUB" role="_iOnB">
+      <property role="TrG5h" value="frequency" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUC" role="_iOnB">
+      <property role="TrG5h" value="voltage" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUD" role="_iOnB">
+      <property role="TrG5h" value="luminous flux" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUE" role="_iOnB">
+      <property role="TrG5h" value="illuminance" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUF" role="_iOnB">
+      <property role="TrG5h" value="catalytic activity" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUG" role="_iOnB">
+      <property role="TrG5h" value="electric charge" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUI" role="_iOnB">
+      <property role="TrG5h" value="angle" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUJ" role="_iOnB">
+      <property role="TrG5h" value="force" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUK" role="_iOnB">
+      <property role="TrG5h" value="power" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUM" role="_iOnB">
+      <property role="TrG5h" value="energy" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJUN" role="_iOnB">
+      <property role="TrG5h" value="radioactivity" />
+    </node>
+    <node concept="_ixoA" id="_I$tx9G_uR" role="_iOnB" />
     <node concept="1Ws0TD" id="69HsIy5FzWy" role="_iOnB">
       <property role="1WsWdv" value="Derived units with special names" />
     </node>
     <node concept="CIrOH" id="69HsIy5F$rs" role="_iOnB">
       <property role="TrG5h" value="Hz" />
-      <property role="CIruq" value="frequency" />
+      <ref role="Rn5ok" node="1KUmgSFvJUB" resolve="frequency" />
       <node concept="CIsGf" id="69HsIy5F$vp" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5F$vq" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSS5" resolve="s" />
@@ -138,7 +248,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5F$DR" role="_iOnB">
       <property role="TrG5h" value="rad" />
-      <property role="CIruq" value="angle" />
+      <ref role="Rn5ok" node="1KUmgSFvJUI" resolve="angle" />
       <node concept="CIsGf" id="69HsIy5F$FX" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5F$FY" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSS4" resolve="m" />
@@ -153,7 +263,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5F$Io" role="_iOnB">
       <property role="TrG5h" value="sr" />
-      <property role="CIruq" value="angle" />
+      <ref role="Rn5ok" node="1KUmgSFvJUI" resolve="angle" />
       <node concept="CIsGf" id="69HsIy5F$K$" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5F$KI" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSS4" resolve="m" />
@@ -171,7 +281,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5F$TY" role="_iOnB">
       <property role="TrG5h" value="N" />
-      <property role="CIruq" value="force" />
+      <ref role="Rn5ok" node="1KUmgSFvJUJ" resolve="force" />
       <node concept="CIsGf" id="69HsIy5F$Wh" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5F$Wi" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSS6" resolve="kg" />
@@ -189,7 +299,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5F_3N" role="_iOnB">
       <property role="TrG5h" value="Pa" />
-      <property role="CIruq" value="pressure" />
+      <ref role="Rn5ok" node="1KUmgSFvJUA" resolve="pressure" />
       <node concept="CIsGf" id="69HsIy5F_6e" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5F_6d" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5F$TY" resolve="N" />
@@ -204,7 +314,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5F_gq" role="_iOnB">
       <property role="TrG5h" value="J" />
-      <property role="CIruq" value="energy" />
+      <ref role="Rn5ok" node="1KUmgSFvJUM" resolve="energy" />
       <node concept="CIsGf" id="69HsIy5F_iW" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5F_iV" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSS4" resolve="m" />
@@ -216,7 +326,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5F_JE" role="_iOnB">
       <property role="TrG5h" value="W" />
-      <property role="CIruq" value="power" />
+      <ref role="Rn5ok" node="1KUmgSFvJUK" resolve="power" />
       <node concept="CIsGf" id="69HsIy5F_Mq" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5F_Mp" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5F_gq" resolve="J" />
@@ -231,7 +341,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5F_XK" role="_iOnB">
       <property role="TrG5h" value="C" />
-      <property role="CIruq" value="electric charge" />
+      <ref role="Rn5ok" node="1KUmgSFvJUG" resolve="electric charge" />
       <node concept="CIsGf" id="69HsIy5FA0A" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FA0_" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSS5" resolve="s" />
@@ -243,7 +353,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FANF" role="_iOnB">
       <property role="TrG5h" value="V" />
-      <property role="CIruq" value="voltage" />
+      <ref role="Rn5ok" node="1KUmgSFvJUC" resolve="voltage" />
       <node concept="CIsGf" id="69HsIy5FAQG" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FAQF" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5F_JE" resolve="W" />
@@ -258,7 +368,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FDQP" role="_iOnB">
       <property role="TrG5h" value="F" />
-      <property role="CIruq" value="capacitance" />
+      <ref role="Rn5ok" node="1KUmgSFvJUw" resolve="capacitance" />
       <node concept="CIsGf" id="69HsIy5FDU3" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FDU2" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5F_XK" resolve="C" />
@@ -273,7 +383,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FE7r" role="_iOnB">
       <property role="TrG5h" value="ohm" />
-      <property role="CIruq" value="electrical resistance" />
+      <ref role="Rn5ok" node="1KUmgSFvJU$" resolve="electrical resistance" />
       <node concept="CIsGf" id="69HsIy5FEuO" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FEuN" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5FANF" resolve="V" />
@@ -288,7 +398,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FErr" role="_iOnB">
       <property role="TrG5h" value="S" />
-      <property role="CIruq" value="electrical conductance" />
+      <ref role="Rn5ok" node="1KUmgSFvJUu" resolve="electrical conductance" />
       <node concept="CIsGf" id="69HsIy5FEvr" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FEvs" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSS9" resolve="A" />
@@ -303,7 +413,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FEE9" role="_iOnB">
       <property role="TrG5h" value="Wb" />
-      <property role="CIruq" value="magnetic flux" />
+      <ref role="Rn5ok" node="1KUmgSFvJUs" resolve="magnetic flux" />
       <node concept="CIsGf" id="69HsIy5FEHG" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FEHF" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5F_gq" resolve="J" />
@@ -318,7 +428,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FF00" role="_iOnB">
       <property role="TrG5h" value="T" />
-      <property role="CIruq" value="magnetic induction" />
+      <ref role="Rn5ok" node="1KUmgSFvJUy" resolve="magnetic induction" />
       <node concept="CIsGf" id="69HsIy5FF3F" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FF3E" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5FANF" resolve="V" />
@@ -336,7 +446,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FFfg" role="_iOnB">
       <property role="TrG5h" value="H" />
-      <property role="CIruq" value="inductance" />
+      <ref role="Rn5ok" node="1KUmgSFvJUx" resolve="inductance" />
       <node concept="CIsGf" id="69HsIy5FFj2" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FFj1" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5FANF" resolve="V" />
@@ -354,7 +464,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FFAH" role="_iOnB">
       <property role="TrG5h" value="lm" />
-      <property role="CIruq" value="luminous flux" />
+      <ref role="Rn5ok" node="1KUmgSFvJUD" resolve="luminous flux" />
       <node concept="CIsGf" id="69HsIy5FFEC" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FFEB" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSSa" resolve="cd" />
@@ -366,7 +476,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FFQF" role="_iOnB">
       <property role="TrG5h" value="lx" />
-      <property role="CIruq" value="illuminance" />
+      <ref role="Rn5ok" node="1KUmgSFvJUE" resolve="illuminance" />
       <node concept="CIsGf" id="69HsIy5FFUF" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FFUE" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5FFAH" resolve="lm" />
@@ -381,7 +491,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FGfl" role="_iOnB">
       <property role="TrG5h" value="Bq" />
-      <property role="CIruq" value="radioactivity" />
+      <ref role="Rn5ok" node="1KUmgSFvJUN" resolve="radioactivity" />
       <node concept="CIsGf" id="69HsIy5FGjt" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FGjs" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSS5" resolve="s" />
@@ -393,7 +503,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FGw8" role="_iOnB">
       <property role="TrG5h" value="Gy" />
-      <property role="CIruq" value="absorbed dose" />
+      <ref role="Rn5ok" node="1KUmgSFvJUv" resolve="absorbed dose" />
       <node concept="CIsGf" id="69HsIy5FG$l" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FG$k" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5F_gq" resolve="J" />
@@ -408,7 +518,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FGPD" role="_iOnB">
       <property role="TrG5h" value="Sv" />
-      <property role="CIruq" value="equivalent dose" />
+      <ref role="Rn5ok" node="1KUmgSFvJUz" resolve="equivalent dose" />
       <node concept="CIsGf" id="69HsIy5FGTX" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FGTW" role="CIi4h">
           <ref role="CIi3I" node="69HsIy5F_gq" resolve="J" />
@@ -422,8 +532,8 @@
       </node>
     </node>
     <node concept="CIrOH" id="69HsIy5FH2V" role="_iOnB">
-      <property role="CIruq" value="catalytic activity" />
       <property role="TrG5h" value="kat" />
+      <ref role="Rn5ok" node="1KUmgSFvJUF" resolve="catalytic activity" />
       <node concept="CIsGf" id="69HsIy5FHg8" role="CIsG9">
         <node concept="CIsvn" id="69HsIy5FHg7" role="CIi4h">
           <ref role="CIi3I" node="5XaocLWHSS7" resolve="mol" />
@@ -442,7 +552,7 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FyRU" role="_iOnB">
       <property role="TrG5h" value="degC" />
-      <property role="CIruq" value="temperature" />
+      <ref role="Rn5ok" node="1KUmgSFvJUp" resolve="temperature" />
     </node>
     <node concept="TRoc0" id="69HsIy5FyVs" role="_iOnB">
       <ref role="27Q$ZQ" node="5XaocLWHSS8" resolve="K" />
@@ -461,24 +571,33 @@
       <property role="1WsWdv" value="metre scaled" />
     </node>
     <node concept="CIrOH" id="69HsIy5FvYH" role="_iOnB">
-      <property role="CIruq" value="metre" />
       <property role="TrG5h" value="nm" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
+      <node concept="1z9TsT" id="_I$tx9N8BM" role="lGtFl">
+        <node concept="OjmMv" id="_I$tx9N8BN" role="1w35rA">
+          <node concept="19SGf9" id="_I$tx9N8BO" role="OjmMu">
+            <node concept="19SUe$" id="_I$tx9N8BP" role="19SJt6">
+              <property role="19SUeA" value="nope the name isn't a typo: https://en.wikipedia.org/wiki/Metre" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="CIrOH" id="69HsIy5FvXj" role="_iOnB">
-      <property role="CIruq" value="metre" />
       <property role="TrG5h" value="µm" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
     </node>
     <node concept="CIrOH" id="69HsIy5FvWm" role="_iOnB">
-      <property role="CIruq" value="metre" />
       <property role="TrG5h" value="mm" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
     </node>
     <node concept="CIrOH" id="69HsIy5FvZe" role="_iOnB">
-      <property role="CIruq" value="metre" />
       <property role="TrG5h" value="cm" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
     </node>
     <node concept="CIrOH" id="69HsIy5FvYB" role="_iOnB">
-      <property role="CIruq" value="metre" />
       <property role="TrG5h" value="km" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
     </node>
     <node concept="TRoc0" id="69HsIy5Fw0n" role="_iOnB">
       <ref role="27Q$ZQ" node="5XaocLWHSS4" resolve="m" />
@@ -546,27 +665,27 @@
     </node>
     <node concept="CIrOH" id="69HsIy5Fwrk" role="_iOnB">
       <property role="TrG5h" value="ns" />
-      <property role="CIruq" value="time" />
+      <ref role="Rn5ok" node="1KUmgSFvJUr" resolve="time" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fwvr" role="_iOnB">
       <property role="TrG5h" value="µs" />
-      <property role="CIruq" value="time" />
+      <ref role="Rn5ok" node="1KUmgSFvJUr" resolve="time" />
     </node>
     <node concept="CIrOH" id="69HsIy5FwuN" role="_iOnB">
       <property role="TrG5h" value="ms" />
-      <property role="CIruq" value="time" />
+      <ref role="Rn5ok" node="1KUmgSFvJUr" resolve="time" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fwuc" role="_iOnB">
       <property role="TrG5h" value="min" />
-      <property role="CIruq" value="time" />
+      <ref role="Rn5ok" node="1KUmgSFvJUr" resolve="time" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fwt1" role="_iOnB">
       <property role="TrG5h" value="h" />
-      <property role="CIruq" value="time" />
+      <ref role="Rn5ok" node="1KUmgSFvJUr" resolve="time" />
     </node>
     <node concept="CIrOH" id="69HsIy5FwtA" role="_iOnB">
       <property role="TrG5h" value="day" />
-      <property role="CIruq" value="time" />
+      <ref role="Rn5ok" node="1KUmgSFvJUr" resolve="time" />
     </node>
     <node concept="TRoc0" id="69HsIy5FwwI" role="_iOnB">
       <ref role="27Q$ZQ" node="5XaocLWHSS5" resolve="s" />
@@ -772,23 +891,23 @@
     </node>
     <node concept="CIrOH" id="69HsIy5Fy7C" role="_iOnB">
       <property role="TrG5h" value="ngramm" />
-      <property role="CIruq" value="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fye0" role="_iOnB">
       <property role="TrG5h" value="µgramm" />
-      <property role="CIruq" value="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fy6n" role="_iOnB">
       <property role="TrG5h" value="mgramm" />
-      <property role="CIruq" value="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
     </node>
     <node concept="CIrOH" id="69HsIy5FxTe" role="_iOnB">
       <property role="TrG5h" value="gramm" />
-      <property role="CIruq" value="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
     </node>
     <node concept="CIrOH" id="69HsIy5FyhU" role="_iOnB">
       <property role="TrG5h" value="ton" />
-      <property role="CIruq" value="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
     </node>
     <node concept="TRoc0" id="69HsIy5Fyjf" role="_iOnB">
       <ref role="27Q$ZQ" node="5XaocLWHSS6" resolve="kg" />

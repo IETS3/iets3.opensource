@@ -61,7 +61,7 @@
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -243,6 +243,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
@@ -1170,8 +1173,10 @@
                       <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                       <node concept="2pJxcG" id="u9itSZOYj2" role="2pJxcM">
                         <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                        <node concept="Xl_RD" id="u9itSZOYsN" role="28ntcv">
-                          <property role="Xl_RC" value="" />
+                        <node concept="WxPPo" id="uuJ7IpZtvo" role="28ntcv">
+                          <node concept="Xl_RD" id="u9itSZOYsN" role="WxPPp">
+                            <property role="Xl_RC" value="" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1190,8 +1195,10 @@
                       <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                       <node concept="2pJxcG" id="u9itSZOYtt" role="2pJxcM">
                         <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                        <node concept="Xl_RD" id="u9itSZOYtu" role="28ntcv">
-                          <property role="Xl_RC" value="a" />
+                        <node concept="WxPPo" id="uuJ7IpZtvp" role="28ntcv">
+                          <node concept="Xl_RD" id="u9itSZOYtu" role="WxPPp">
+                            <property role="Xl_RC" value="a" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1210,8 +1217,10 @@
                       <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                       <node concept="2pJxcG" id="u9itSZOYD_" role="2pJxcM">
                         <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                        <node concept="Xl_RD" id="u9itSZOYDA" role="28ntcv">
-                          <property role="Xl_RC" value="aaaaaaa aaaaaaaaa" />
+                        <node concept="WxPPo" id="uuJ7IpZtvq" role="28ntcv">
+                          <node concept="Xl_RD" id="u9itSZOYDA" role="WxPPp">
+                            <property role="Xl_RC" value="aaaaaaa aaaaaaaaa" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1230,8 +1239,10 @@
                       <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                       <node concept="2pJxcG" id="u9itSZOZpL" role="2pJxcM">
                         <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                        <node concept="Xl_RD" id="u9itSZOZpM" role="28ntcv">
-                          <property role="Xl_RC" value="aaaaaaa\t aaaaaaaaa" />
+                        <node concept="WxPPo" id="uuJ7IpZtvr" role="28ntcv">
+                          <node concept="Xl_RD" id="u9itSZOZpM" role="WxPPp">
+                            <property role="Xl_RC" value="aaaaaaa\t aaaaaaaaa" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1250,8 +1261,10 @@
                       <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                       <node concept="2pJxcG" id="u9itSZOZCn" role="2pJxcM">
                         <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                        <node concept="Xl_RD" id="u9itSZOZCo" role="28ntcv">
-                          <property role="Xl_RC" value="aaaaaaa\n aaaaaaaaa" />
+                        <node concept="WxPPo" id="uuJ7IpZtvs" role="28ntcv">
+                          <node concept="Xl_RD" id="u9itSZOZCo" role="WxPPp">
+                            <property role="Xl_RC" value="aaaaaaa\n aaaaaaaaa" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1270,8 +1283,10 @@
                       <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                       <node concept="2pJxcG" id="u9itSZOYPV" role="2pJxcM">
                         <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                        <node concept="Xl_RD" id="u9itSZOYPW" role="28ntcv">
-                          <property role="Xl_RC" value="aaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaa" />
+                        <node concept="WxPPo" id="uuJ7IpZtvt" role="28ntcv">
+                          <node concept="Xl_RD" id="u9itSZOYPW" role="WxPPp">
+                            <property role="Xl_RC" value="aaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaa" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1290,8 +1305,10 @@
                       <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                       <node concept="2pJxcG" id="u9itSZOZP5" role="2pJxcM">
                         <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                        <node concept="Xl_RD" id="u9itSZOZP6" role="28ntcv">
-                          <property role="Xl_RC" value="1%987ydflyk!!lllkj::---" />
+                        <node concept="WxPPo" id="uuJ7IpZtvu" role="28ntcv">
+                          <node concept="Xl_RD" id="u9itSZOZP6" role="WxPPp">
+                            <property role="Xl_RC" value="1%987ydflyk!!lllkj::---" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -5674,12 +5691,14 @@
               <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
               <node concept="2pJxcG" id="4o7_AWgGgnS" role="2pJxcM">
                 <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                <node concept="2OqwBi" id="4o7_AWgGgnT" role="28ntcv">
-                  <node concept="37vLTw" id="4o7_AWgGgnU" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4o7_AWgGgnm" resolve="bf" />
-                  </node>
-                  <node concept="liA8E" id="4o7_AWgGgnV" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
+                <node concept="WxPPo" id="uuJ7IpZtvW" role="28ntcv">
+                  <node concept="2OqwBi" id="4o7_AWgGgnT" role="WxPPp">
+                    <node concept="37vLTw" id="4o7_AWgGgnU" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4o7_AWgGgnm" resolve="bf" />
+                    </node>
+                    <node concept="liA8E" id="4o7_AWgGgnV" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -6499,8 +6518,10 @@
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                   <node concept="2pJxcG" id="4o7_AWgFd2a" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                    <node concept="Xl_RD" id="4o7_AWgFd2b" role="28ntcv">
-                      <property role="Xl_RC" value="" />
+                    <node concept="WxPPo" id="uuJ7IpZtwc" role="28ntcv">
+                      <node concept="Xl_RD" id="4o7_AWgFd2b" role="WxPPp">
+                        <property role="Xl_RC" value="" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6519,8 +6540,10 @@
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                   <node concept="2pJxcG" id="4o7_AWgFd2i" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                    <node concept="Xl_RD" id="4o7_AWgFd2j" role="28ntcv">
-                      <property role="Xl_RC" value="a" />
+                    <node concept="WxPPo" id="uuJ7IpZtwd" role="28ntcv">
+                      <node concept="Xl_RD" id="4o7_AWgFd2j" role="WxPPp">
+                        <property role="Xl_RC" value="a" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6539,8 +6562,10 @@
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                   <node concept="2pJxcG" id="4o7_AWgFd2q" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                    <node concept="Xl_RD" id="4o7_AWgFd2r" role="28ntcv">
-                      <property role="Xl_RC" value="aaaaaaa aaaaaaaaa" />
+                    <node concept="WxPPo" id="uuJ7IpZtwe" role="28ntcv">
+                      <node concept="Xl_RD" id="4o7_AWgFd2r" role="WxPPp">
+                        <property role="Xl_RC" value="aaaaaaa aaaaaaaaa" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6559,8 +6584,10 @@
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                   <node concept="2pJxcG" id="4o7_AWgFd2y" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                    <node concept="Xl_RD" id="4o7_AWgFd2z" role="28ntcv">
-                      <property role="Xl_RC" value="aaaaaaa\t aaaaaaaaa" />
+                    <node concept="WxPPo" id="uuJ7IpZtwf" role="28ntcv">
+                      <node concept="Xl_RD" id="4o7_AWgFd2z" role="WxPPp">
+                        <property role="Xl_RC" value="aaaaaaa\t aaaaaaaaa" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6579,8 +6606,10 @@
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                   <node concept="2pJxcG" id="4o7_AWgFd2E" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                    <node concept="Xl_RD" id="4o7_AWgFd2F" role="28ntcv">
-                      <property role="Xl_RC" value="aaaaaaa\n aaaaaaaaa" />
+                    <node concept="WxPPo" id="uuJ7IpZtwg" role="28ntcv">
+                      <node concept="Xl_RD" id="4o7_AWgFd2F" role="WxPPp">
+                        <property role="Xl_RC" value="aaaaaaa\n aaaaaaaaa" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6599,8 +6628,10 @@
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                   <node concept="2pJxcG" id="4o7_AWgSdEr" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                    <node concept="Xl_RD" id="4o7_AWgSdEs" role="28ntcv">
-                      <property role="Xl_RC" value="  aa  " />
+                    <node concept="WxPPo" id="uuJ7IpZtwh" role="28ntcv">
+                      <node concept="Xl_RD" id="4o7_AWgSdEs" role="WxPPp">
+                        <property role="Xl_RC" value="  aa  " />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6619,8 +6650,10 @@
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                   <node concept="2pJxcG" id="4o7_AWgSdRq" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                    <node concept="Xl_RD" id="4o7_AWgSdRr" role="28ntcv">
-                      <property role="Xl_RC" value="  aa" />
+                    <node concept="WxPPo" id="uuJ7IpZtwi" role="28ntcv">
+                      <node concept="Xl_RD" id="4o7_AWgSdRr" role="WxPPp">
+                        <property role="Xl_RC" value="  aa" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6639,8 +6672,10 @@
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                   <node concept="2pJxcG" id="4o7_AWgSe6f" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                    <node concept="Xl_RD" id="4o7_AWgSe6g" role="28ntcv">
-                      <property role="Xl_RC" value="aa  " />
+                    <node concept="WxPPo" id="uuJ7IpZtwj" role="28ntcv">
+                      <node concept="Xl_RD" id="4o7_AWgSe6g" role="WxPPp">
+                        <property role="Xl_RC" value="aa  " />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6659,8 +6694,10 @@
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                   <node concept="2pJxcG" id="4o7_AWgFd2M" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                    <node concept="Xl_RD" id="4o7_AWgFd2N" role="28ntcv">
-                      <property role="Xl_RC" value="aaaaaaa aaaaaaaaa aaaaaaaa    aaaaaaaaaaaa aaaa" />
+                    <node concept="WxPPo" id="uuJ7IpZtwk" role="28ntcv">
+                      <node concept="Xl_RD" id="4o7_AWgFd2N" role="WxPPp">
+                        <property role="Xl_RC" value="aaaaaaa aaaaaaaaa aaaaaaaa    aaaaaaaaaaaa aaaa" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6679,8 +6716,10 @@
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
                   <node concept="2pJxcG" id="4o7_AWgFd2U" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-                    <node concept="Xl_RD" id="4o7_AWgFd2V" role="28ntcv">
-                      <property role="Xl_RC" value="1%987ydflyk!!lllkj::---" />
+                    <node concept="WxPPo" id="uuJ7IpZtwl" role="28ntcv">
+                      <node concept="Xl_RD" id="4o7_AWgFd2V" role="WxPPp">
+                        <property role="Xl_RC" value="1%987ydflyk!!lllkj::---" />
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -2,14 +2,14 @@
 <model ref="r:1ee7d695-67a0-4310-b6a9-28ed5f54bc88(org.iets3.core.attributes.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -19,11 +19,16 @@
     <import index="soq7" ref="r:4d48d56b-d670-4e5b-a763-2232bb0c4f2d(org.iets3.core.attributes.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
+    <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
+    <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1164052439493" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_MatchingText" flags="in" index="6VE3a" />
@@ -77,6 +82,7 @@
       </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1182191800432" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeListFilter" flags="in" index="107P5z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
@@ -98,7 +104,6 @@
       <concept id="7597241200646296617" name="jetbrains.mps.lang.editor.structure.NavigatableNodeStyleClassItem" flags="ln" index="3k4GqR">
         <child id="7597241200646296618" name="functionNode" index="3k4GqO" />
       </concept>
-      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -185,13 +190,7 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
-      </concept>
-    </language>
-    <language id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips">
-      <concept id="9185659875393567715" name="de.itemis.mps.tooltips.structure.CellModel_Tooltip" flags="ng" index="1j7BWu">
-        <child id="9185659875393569181" name="anchor" index="1j7Clw" />
-        <child id="9185659875393569179" name="tooltip" index="1j7ClA" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -259,10 +258,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -275,6 +274,13 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
+    </language>
+    <language id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips">
+      <concept id="1285659875393567816" name="jetbrains.mps.lang.editor.tooltips.structure.CellModel_Tooltip" flags="ng" index="1v6uyg">
+        <property id="4804083432920625643" name="lazy" index="2oejA6" />
+        <child id="3877544518697818164" name="tooltipCell" index="wsdo6" />
+        <child id="9185659875393569181" name="visibleCell" index="1j7Clw" />
+      </concept>
     </language>
   </registry>
   <node concept="PKFIW" id="3NBP8_OgMYe">
@@ -397,8 +403,9 @@
           </node>
         </node>
         <node concept="1yz3lS" id="4A8SzOVasxs" role="1yzFaX">
-          <node concept="1j7BWu" id="4A8SzOVbWxH" role="2wV5jI">
-            <node concept="s8t4o" id="4A8SzOVbWzI" role="1j7ClA">
+          <node concept="1v6uyg" id="uuJ7IpZty8" role="2wV5jI">
+            <property role="2oejA6" value="true" />
+            <node concept="s8t4o" id="4A8SzOVbWzI" role="wsdo6">
               <property role="28Zw97" value="true" />
               <ref role="28F8cf" to="138:3NBP8_OgMyV" resolve="IAttribute" />
               <node concept="xShMh" id="4A8SzOVbWzK" role="3F10Kt">
@@ -709,7 +716,7 @@
         <node concept="107P5z" id="34r75env5WV" role="12AuX0">
           <node concept="3clFbS" id="34r75env5WW" role="2VODD2">
             <node concept="3SKdUt" id="4QBqyIb4L4" role="3cqZAp">
-              <node concept="1PaTwC" id="17Nm8oCo8uh" role="3ndbpf">
+              <node concept="1PaTwC" id="17Nm8oCo8uh" role="1aUNEU">
                 <node concept="3oM_SD" id="17Nm8oCo8ui" role="1PaTwD">
                   <property role="3oM_SC" value="needed" />
                 </node>
@@ -798,10 +805,10 @@
             </node>
             <node concept="1f$696" id="5mFzepP5cq7" role="1fxSsZ">
               <node concept="3clFbS" id="5mFzepP5cq8" role="2VODD2">
-                <node concept="3clFbF" id="5mFzepP5cVx" role="3cqZAp">
-                  <node concept="2OqwBi" id="5mFzepP5d9w" role="3clFbG">
-                    <node concept="3GLrbK" id="5mFzepP5cVw" role="2Oq$k0" />
-                    <node concept="q_SaT" id="5mFzepP5dKD" role="2OqNvi" />
+                <node concept="3clFbF" id="1zkN3SNSeaI" role="3cqZAp">
+                  <node concept="2OqwBi" id="1zkN3SNSequ" role="3clFbG">
+                    <node concept="3GLrbK" id="4el_kGVLFfr" role="2Oq$k0" />
+                    <node concept="q_SaT" id="1zkN3SNSeNk" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -952,14 +959,6 @@
       </node>
     </node>
   </node>
-  <node concept="3p36aQ" id="GKE0N8YTeq">
-    <property role="3GE5qa" value="attributes" />
-    <ref role="aqKnT" to="138:4fgA7QrDo$u" resolve="AttributeContainerWithContext" />
-  </node>
-  <node concept="3p36aQ" id="GKE0N8ZcEd">
-    <property role="3GE5qa" value="attributes" />
-    <ref role="aqKnT" to="138:4fgA7QrG5LS" resolve="EmptyAttribute" />
-  </node>
   <node concept="24kQdi" id="4fgA7QrDo_6">
     <property role="3GE5qa" value="attributes" />
     <ref role="1XX52x" to="138:4fgA7QrDo$u" resolve="AttributeContainerWithContext" />
@@ -1008,6 +1007,21 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="22mcaB" id="GKE0N8YTeq">
+    <ref role="aqKnT" to="138:4fgA7QrDo$u" resolve="AttributeContainerWithContext" />
+    <node concept="22hDWj" id="uuJ7IpZtsY" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="GKE0N8ZcEd">
+    <ref role="aqKnT" to="138:4fgA7QrG5LS" resolve="EmptyAttribute" />
+    <node concept="22hDWj" id="uuJ7IpZtsZ" role="22hAXT" />
+  </node>
+  <node concept="PKFIW" id="6dXnuBU76jm">
+    <property role="TrG5h" value="DummyForGrammarCells" />
+    <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="3F0ifn" id="6dXnuBU76jn" role="2wV5jI">
+      <property role="3F0ifm" value="Workaround to fix contributions to BaseConcept generated by grammarCells." />
     </node>
   </node>
 </model>

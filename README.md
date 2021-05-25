@@ -1,10 +1,6 @@
 # iets3.opensource
 
 ## Build instructions
-### Using Ant
-1. Go to `code/languages`
-2. Copy `build.properties.examples` to `build.properties` and adapt
-3. Run `ant` from `code/languages`
 
 ### Using Gradle
 If you just want to build the project, no prerequisites are required. Just run `./gradlew build` from the checkout
@@ -16,3 +12,17 @@ To publish this project's artifacts to the Maven local repository run `./gradlew
 
 If you want to use a custom version of `mbeddr` with Gradle, publish its artifacts to the local Maven repository
 (consult mbeddr documentation).
+
+## Supported MPS versions
+
+In general, we support the latest MPS version on master plus the three previous versions on maintenance branches. 
+
+### What does support mean in this case?
+We take care of porting changes done in older supported MPS versions to the newer ones. 
+For details see [wiki](https://github.com/IETS3/iets3.opensource/wiki/Supported-MPS-Versions).
+
+### What MPS versions are currently supported? 
+- MPS 2020.3 (branch: [master](https://github.com/IETS3/iets3.opensource/tree/master)) 
+- MPS 2020.2 (branch: [maintenance/mps20202](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20202)) 
+- MPS 2020.1 (branch: [maintenance/mps20201](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20201)) 
+- MPS 2019.3 (branch: [maintenance/mps20193](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20193))  

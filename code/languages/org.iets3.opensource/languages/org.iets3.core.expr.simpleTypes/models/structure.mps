@@ -466,5 +466,20 @@
     <property role="R4oN_" value="mathematical rounding mode" />
     <ref role="1TJDcQ" node="7DTWJ$8kg8g" resolve="RoundingMode" />
   </node>
+  <node concept="1TIwiD" id="5bvGQanjMKN">
+    <property role="EcuMT" value="5971688866943282227" />
+    <property role="TrG5h" value="StringEndsWithTarget" />
+    <property role="34LRSv" value="endsWith" />
+    <property role="3GE5qa" value="string" />
+    <property role="R4oN_" value="ends with" />
+    <ref role="1TJDcQ" node="5cK3QOdYQ7D" resolve="AbstractStringDotTarget" />
+    <node concept="1TJgyj" id="5bvGQanjMKP" role="1TKVEi">
+      <property role="IQ2ns" value="5971688866943282229" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

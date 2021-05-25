@@ -2,7 +2,7 @@
 <model ref="r:8241cf16-ed00-4446-90c3-ffa2d75ad75a(org.iets3.core.expr.tests.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -22,7 +22,7 @@
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="grbm" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.text(org.apache.commons/)" />
-    <import index="gyfg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.base(MPS.Core/)" />
+    <import index="gyfg" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.base(de.q60.mps.libs/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
   </imports>
@@ -44,7 +44,7 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -359,15 +359,15 @@
               <node concept="17QB3L" id="3CttMBgzrOx" role="11_B2D" />
             </node>
             <node concept="2OqwBi" id="3CttMBgzr4n" role="33vP2m">
-              <node concept="Rm8GO" id="3CttMBgzr4o" role="2Oq$k0">
-                <ref role="1Px2BO" to="gyfg:~CaseFormat" resolve="CaseFormat" />
+              <node concept="Rm8GO" id="24LQtH$aAYB" role="2Oq$k0">
                 <ref role="Rm8GQ" to="gyfg:~CaseFormat.UPPER_CAMEL" resolve="UPPER_CAMEL" />
+                <ref role="1Px2BO" to="gyfg:~CaseFormat" resolve="CaseFormat" />
               </node>
               <node concept="liA8E" id="3CttMBgzr4p" role="2OqNvi">
                 <ref role="37wK5l" to="gyfg:~CaseFormat.converterTo(com.google.common.base.CaseFormat)" resolve="converterTo" />
                 <node concept="Rm8GO" id="3CttMBgzr4q" role="37wK5m">
-                  <ref role="Rm8GQ" to="gyfg:~CaseFormat.LOWER_HYPHEN" resolve="LOWER_HYPHEN" />
                   <ref role="1Px2BO" to="gyfg:~CaseFormat" resolve="CaseFormat" />
+                  <ref role="Rm8GQ" to="gyfg:~CaseFormat.LOWER_HYPHEN" resolve="LOWER_HYPHEN" />
                 </node>
               </node>
             </node>
