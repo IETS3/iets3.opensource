@@ -1209,5 +1209,16 @@
       <ref role="2wpffI" node="Lrty7CKd0e" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1e59C2QAniP">
+    <property role="3GE5qa" value="ordered" />
+    <property role="TrG5h" value="IndexOfOp" />
+    <property role="34LRSv" value="indexOf" />
+    <property role="EcuMT" value="1406572792884327605" />
+    <property role="R4oN_" value="returns first N elements" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="1e59C2QAniR" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
+  </node>
 </model>
 
