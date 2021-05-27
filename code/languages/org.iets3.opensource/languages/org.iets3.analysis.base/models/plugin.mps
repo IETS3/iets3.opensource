@@ -290,6 +290,7 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -6674,6 +6675,32 @@
                                               </node>
                                             </node>
                                           </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3SKdUt" id="6zqIeMVafqy" role="3cqZAp">
+                                      <node concept="1PaTwC" id="6zqIeMVafqz" role="1aUNEU">
+                                        <node concept="3oM_SD" id="6zqIeMVafq$" role="1PaTwD">
+                                          <property role="3oM_SC" value="Empty" />
+                                        </node>
+                                        <node concept="3oM_SD" id="6zqIeMVafFN" role="1PaTwD">
+                                          <property role="3oM_SC" value="List" />
+                                        </node>
+                                        <node concept="3oM_SD" id="6zqIeMVafGe" role="1PaTwD">
+                                          <property role="3oM_SC" value="Check" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbJ" id="6zqIeMVa7SD" role="3cqZAp">
+                                      <node concept="3clFbS" id="6zqIeMVa7SF" role="3clFbx">
+                                        <node concept="3cpWs6" id="6zqIeMVae1p" role="3cqZAp" />
+                                      </node>
+                                      <node concept="3eOVzh" id="6zqIeMVabVg" role="3clFbw">
+                                        <node concept="3cmrfG" id="6zqIeMVacMi" role="3uHU7w">
+                                          <property role="3cmrfH" value="0" />
+                                        </node>
+                                        <node concept="37vLTw" id="6zqIeMVa9RA" role="3uHU7B">
+                                          <ref role="3cqZAo" node="2E$J0Godb$2" resolve="clickIndex" />
                                         </node>
                                       </node>
                                     </node>
