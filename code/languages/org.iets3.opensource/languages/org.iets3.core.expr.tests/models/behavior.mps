@@ -48,7 +48,6 @@
     <import index="tpe5" ref="r:00000000-0000-4000-0000-011c895902d1(jetbrains.mps.baseLanguage.unitTest.behavior)" />
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" />
     <import index="tp6m" ref="r:00000000-0000-4000-0000-011c895903a2(jetbrains.mps.lang.test.runtime)" />
-    <import index="4k19" ref="1fd846c3-c5f9-4b9e-9ecc-e716f7149f86/java:org.hamcrest(Hamcrest/)" />
     <import index="6yn5" ref="r:2bfc35a4-8334-4342-8e2a-a54b7cda4a4c(org.iets3.core.expr.testExecution.structure)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="w474" ref="r:06b241ed-1779-4f34-8d6f-e61e9dd94387(org.iets3.core.expr.testExecution.plugin)" />
@@ -58,6 +57,7 @@
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="pq1l" ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)" />
     <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <import index="4k19" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.hamcrest(JUnit/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -14838,9 +14838,6 @@
                     <node concept="3fqX7Q" id="6vw$0gDxj0X" role="3uHU7w">
                       <node concept="1eOMI4" id="6vw$0gDxj0Z" role="3fr31v">
                         <node concept="2ZW3vV" id="6vw$0gDxkOP" role="1eOMHV">
-                          <node concept="3uibUv" id="5Pgo_AS6YuH" role="2ZW6by">
-                            <ref role="3uigEE" to="4k19:~Matcher" resolve="Matcher" />
-                          </node>
                           <node concept="2OqwBi" id="6vw$0gDxjKG" role="2ZW6bz">
                             <node concept="37vLTw" id="6vw$0gDxj_i" role="2Oq$k0">
                               <ref role="3cqZAo" node="6vw$0gDuVWW" resolve="matcherVat" />
@@ -14848,6 +14845,9 @@
                             <node concept="2OwXpG" id="6vw$0gDxjX_" role="2OqNvi">
                               <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
                             </node>
+                          </node>
+                          <node concept="3uibUv" id="PaMsOE3r8x" role="2ZW6by">
+                            <ref role="3uigEE" to="4k19:~Matcher" resolve="Matcher" />
                           </node>
                         </node>
                       </node>
@@ -15314,7 +15314,7 @@
               <ref role="3uigEE" to="4k19:~Description" resolve="Description" />
             </node>
             <node concept="2ShNRf" id="5Pgo_AS7p2i" role="33vP2m">
-              <node concept="1pGfFk" id="5Pgo_AS7p2k" role="2ShVmc">
+              <node concept="1pGfFk" id="PaMsOE3u1u" role="2ShVmc">
                 <ref role="37wK5l" to="4k19:~StringDescription.&lt;init&gt;()" resolve="StringDescription" />
               </node>
             </node>
@@ -15965,14 +15965,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="1e59C2Q$DFB" role="3clFbw">
-                <node concept="2GrUjf" id="1e59C2Q$DgA" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="1IW19eYFaq2" resolve="item" />
-                </node>
-                <node concept="2qgKlT" id="1e59C2Q$Ezh" role="2OqNvi">
-                  <ref role="37wK5l" to="gdgh:3R3AIvumwpO" resolve="hasExistingResult" />
-                </node>
-              </node>
               <node concept="9aQIb" id="1e59C2Q$FnC" role="9aQIa">
                 <node concept="3clFbS" id="1e59C2Q$FnD" role="9aQI4">
                   <node concept="3clFbF" id="1e59C2Q$F$1" role="3cqZAp">
@@ -15985,6 +15977,14 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1e59C2Q$DFB" role="3clFbw">
+                <node concept="2GrUjf" id="1e59C2Q$DgA" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="1IW19eYFaq2" resolve="item" />
+                </node>
+                <node concept="2qgKlT" id="1e59C2Q$Ezh" role="2OqNvi">
+                  <ref role="37wK5l" to="gdgh:3R3AIvumwpO" resolve="hasExistingResult" />
                 </node>
               </node>
             </node>
