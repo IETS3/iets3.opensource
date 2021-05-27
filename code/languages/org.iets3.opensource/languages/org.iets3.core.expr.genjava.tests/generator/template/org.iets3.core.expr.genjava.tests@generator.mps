@@ -20,9 +20,9 @@
     <import index="rjhg" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit(JUnit/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
-    <import index="4k19" ref="1fd846c3-c5f9-4b9e-9ecc-e716f7149f86/java:org.hamcrest(Hamcrest/)" />
     <import index="baa3" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.matchers(JUnit/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="4k19" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.hamcrest(JUnit/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpe5" ref="r:00000000-0000-4000-0000-011c895902d1(jetbrains.mps.baseLanguage.unitTest.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -603,8 +603,8 @@
       <ref role="30HIoZ" to="av4b:5Pgo_ASrZfv" resolve="ContainsString" />
       <node concept="gft3U" id="1LYmOIWMpXH" role="1lVwrX">
         <node concept="2YIFZM" id="1LYmOIWMqp1" role="gfFT$">
-          <ref role="37wK5l" to="4k19:~CoreMatchers.containsString(java.lang.String)" resolve="containsString" />
           <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+          <ref role="37wK5l" to="4k19:~CoreMatchers.containsString(java.lang.String)" resolve="containsString" />
           <node concept="Xl_RD" id="1LYmOIWMqpB" role="37wK5m">
             <property role="Xl_RC" value="xyz" />
             <node concept="29HgVG" id="1LYmOIWMqr7" role="lGtFl">
@@ -629,11 +629,11 @@
       <ref role="30HIoZ" to="av4b:1ESmOTbCHcU" resolve="AndMatcher" />
       <node concept="gft3U" id="1vVFmkXGS1s" role="1lVwrX">
         <node concept="2YIFZM" id="1vVFmkXGWmK" role="gfFT$">
-          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher,org.hamcrest.Matcher):org.hamcrest.Matcher" resolve="allOf" />
           <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher,org.hamcrest.Matcher)" resolve="allOf" />
           <node concept="2YIFZM" id="1vVFmkXGYF4" role="37wK5m">
-            <ref role="37wK5l" to="4k19:~CoreMatchers.anything():org.hamcrest.Matcher" resolve="anything" />
             <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+            <ref role="37wK5l" to="4k19:~CoreMatchers.anything()" resolve="anything" />
             <node concept="29HgVG" id="1vVFmkXGZ0d" role="lGtFl">
               <node concept="3NFfHV" id="1vVFmkXGZ0e" role="3NFExx">
                 <node concept="3clFbS" id="1vVFmkXGZ0f" role="2VODD2">
@@ -650,8 +650,8 @@
             </node>
           </node>
           <node concept="2YIFZM" id="1vVFmkXGYVD" role="37wK5m">
-            <ref role="37wK5l" to="4k19:~CoreMatchers.anything():org.hamcrest.Matcher" resolve="anything" />
             <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+            <ref role="37wK5l" to="4k19:~CoreMatchers.anything()" resolve="anything" />
             <node concept="29HgVG" id="1vVFmkXGZaU" role="lGtFl">
               <node concept="3NFfHV" id="1vVFmkXGZaV" role="3NFExx">
                 <node concept="3clFbS" id="1vVFmkXGZaW" role="2VODD2">
@@ -674,8 +674,8 @@
       <ref role="30HIoZ" to="av4b:5Pgo_ASae6g" resolve="IsValidRecord" />
       <node concept="gft3U" id="6imM90AmT$M" role="1lVwrX">
         <node concept="2YIFZM" id="6imM90AmUmh" role="gfFT$">
-          <ref role="37wK5l" to="4k19:~CoreMatchers.notNullValue()" resolve="notNullValue" />
           <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+          <ref role="37wK5l" to="4k19:~CoreMatchers.notNullValue()" resolve="notNullValue" />
         </node>
       </node>
     </node>
@@ -1485,8 +1485,8 @@
                         </node>
                       </node>
                       <node concept="2YIFZM" id="1LYmOIWLSWK" role="37wK5m">
-                        <ref role="37wK5l" to="4k19:~CoreMatchers.equalTo(java.lang.Object)" resolve="equalTo" />
                         <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+                        <ref role="37wK5l" to="4k19:~CoreMatchers.equalTo(java.lang.Object)" resolve="equalTo" />
                         <node concept="Xl_RD" id="1LYmOIWLT4O" role="37wK5m">
                           <property role="Xl_RC" value="xyz" />
                         </node>
