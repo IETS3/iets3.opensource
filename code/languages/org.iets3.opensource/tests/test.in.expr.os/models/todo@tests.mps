@@ -14,6 +14,7 @@
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="-1" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="-1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
+    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
   </languages>
   <imports />
   <registry>
@@ -21,6 +22,18 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+    </language>
+    <language id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util">
+      <concept id="2346756181087515423" name="org.iets3.core.expr.util.structure.DecTree" flags="ng" index="4Ji_f">
+        <child id="2346756181087516195" name="root" index="4JiLN" />
+      </concept>
+      <concept id="2346756181087515424" name="org.iets3.core.expr.util.structure.DecTreeNode" flags="ng" index="4Ji_K">
+        <child id="2346756181087515425" name="expression" index="4Ji_L" />
+      </concept>
+      <concept id="593359455454520824" name="org.iets3.core.expr.util.structure.AbstractDecTreeNode" flags="ng" index="3Ag6MZ">
+        <child id="2346756181087516277" name="children" index="4JiK_" />
+      </concept>
+      <concept id="593359455454548610" name="org.iets3.core.expr.util.structure.RootTreeNode" flags="ng" index="3AgdJ5" />
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="527291771330968213" name="org.iets3.core.expr.collections.structure.ISetOneArgOp" flags="ng" index="24uAI7">
@@ -3825,6 +3838,88 @@
   </node>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
     <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
+  </node>
+  <node concept="_iOnU" id="1URbfFFNt7E">
+    <property role="TrG5h" value="dectre" />
+    <property role="2SXJ1i" value="true" />
+    <property role="1XBH2A" value="true" />
+    <ref role="2HwdWd" node="1VmWkC0I5UE" resolve="varLib" />
+    <node concept="_ixoA" id="1URbfFFNt7F" role="_iOnB" />
+    <node concept="2zPypq" id="1URbfFFNteJ" role="_iOnB">
+      <property role="TrG5h" value="one" />
+      <node concept="30bXRB" id="1URbfFFNtf3" role="2zPyp_">
+        <property role="30bXRw" value="1" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="1URbfFFNtfE" role="_iOnB">
+      <property role="TrG5h" value="two" />
+      <node concept="30bXRB" id="1URbfFFNtg0" role="2zPyp_">
+        <property role="30bXRw" value="2" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="1URbfFFNteB" role="_iOnB" />
+    <node concept="1aga60" id="1URbfFFNtgQ" role="_iOnB">
+      <property role="TrG5h" value="decide" />
+      <node concept="4Ji_f" id="1URbfFFNtig" role="1ahQXP">
+        <node concept="3AgdJ5" id="1URbfFFNtih" role="4JiLN">
+          <node concept="4Ji_K" id="1URbfFFNtii" role="4JiK_">
+            <node concept="30d7iD" id="1URbfFFNtjr" role="4Ji_L">
+              <node concept="30bXRB" id="1URbfFFNtjy" role="30dEs_">
+                <property role="30bXRw" value="0" />
+              </node>
+              <node concept="_emDc" id="1URbfFFNtj4" role="30dEsF">
+                <ref role="_emDf" node="1URbfFFNteJ" resolve="one" />
+              </node>
+            </node>
+            <node concept="4Ji_K" id="1URbfFFNtqP" role="4JiK_">
+              <node concept="30d7iD" id="1URbfFFNtue" role="4Ji_L">
+                <node concept="30bXRB" id="1URbfFFNtul" role="30dEs_">
+                  <property role="30bXRw" value="1" />
+                </node>
+                <node concept="_emDc" id="1URbfFFNttm" role="30dEsF">
+                  <ref role="_emDf" node="1URbfFFNtfE" resolve="two" />
+                </node>
+              </node>
+              <node concept="4Ji_K" id="1URbfFFQl$n" role="4JiK_">
+                <node concept="30bXRB" id="1URbfFFQlCb" role="4Ji_L">
+                  <property role="30bXRw" value="10" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="4Ji_K" id="1URbfFFNtij" role="4JiK_">
+            <node concept="30d6GJ" id="1URbfFFNtoq" role="4Ji_L">
+              <node concept="30bXRB" id="1URbfFFNtox" role="30dEs_">
+                <property role="30bXRw" value="0" />
+              </node>
+              <node concept="_emDc" id="1URbfFFNtlj" role="30dEsF">
+                <ref role="_emDf" node="1URbfFFNteJ" resolve="one" />
+              </node>
+            </node>
+            <node concept="4Ji_K" id="1URbfFFQlIl" role="4JiK_">
+              <node concept="30bXRB" id="1URbfFFQlMG" role="4Ji_L">
+                <property role="30bXRw" value="22" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="1URbfFFNtgD" role="_iOnB" />
+    <node concept="_fkuM" id="1URbfFFNt7G" role="_iOnB">
+      <property role="TrG5h" value="testLocalVar_i" />
+      <node concept="_fkuZ" id="1URbfFFQlNr" role="_fkp5">
+        <node concept="_fku$" id="1URbfFFQlNs" role="_fkur" />
+        <node concept="1af_rf" id="1URbfFFQlNC" role="_fkuY">
+          <ref role="1afhQb" node="1URbfFFNtgQ" resolve="decide" />
+        </node>
+        <node concept="30bXRB" id="1URbfFFQlNS" role="_fkuS">
+          <property role="30bXRw" value="10" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="1URbfFFNt7V" role="_iOnB" />
+    <node concept="_ixoA" id="1URbfFFNt7W" role="_iOnB" />
   </node>
 </model>
 
