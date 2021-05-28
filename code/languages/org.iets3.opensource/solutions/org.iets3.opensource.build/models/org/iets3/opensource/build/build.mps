@@ -863,6 +863,11 @@
             <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3xnKElD$FeU" role="3bR37C">
+          <node concept="3bR9La" id="3xnKElD$FeV" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:5WYUu8HaT_t" resolve="com.mbeddr.mpsutil.framecell" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4lBotkP9WfS" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -10372,6 +10377,15 @@
         </node>
         <node concept="3LEDTM" id="3qKzW8QJ_Qf" role="3LEDUa">
           <ref role="3LEDTN" node="3qKzW8QxJyw" resolve="org.iets3.core.expr.base.shared.runtime" />
+        </node>
+        <node concept="3LEDTy" id="3xnKElD$Fzs" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
+        </node>
+        <node concept="3LEDTy" id="3xnKElD$Fzt" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+        </node>
+        <node concept="3LEDTy" id="3xnKElD$Fzu" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KZG" resolve="jetbrains.mps.baseLanguage.closures" />
         </node>
       </node>
       <node concept="3LEwk6" id="2zpAVpC$OJa" role="2G$12L">
