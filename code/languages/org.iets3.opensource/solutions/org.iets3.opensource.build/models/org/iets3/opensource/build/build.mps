@@ -2611,19 +2611,9 @@
             <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
           </node>
         </node>
-        <node concept="1SiIV0" id="616oath7Wnd" role="3bR37C">
-          <node concept="3bR9La" id="616oath7Wne" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:763TrXRFx3C" resolve="de.q60.mps.shadowmodels.modelcheck.runtime" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7Rre3VrvFNX" role="3bR37C">
           <node concept="3bR9La" id="7Rre3VrvFNY" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7Rre3VrvFNZ" role="3bR37C">
-          <node concept="3bR9La" id="7Rre3VrvFO0" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:71aLKqdKvPp" resolve="jetbrains.mps.ide.make" />
           </node>
         </node>
         <node concept="1SiIV0" id="7Rre3VrvFO1" role="3bR37C">
