@@ -8585,9 +8585,10 @@
             <node concept="3uibUv" id="7p_bE3JctXY" role="1tU5fm">
               <ref role="3uigEE" node="4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
             </node>
-            <node concept="2YIFZM" id="58jTitRAHFC" role="33vP2m">
-              <ref role="37wK5l" node="7ezRWqumL6r" resolve="getInstance" />
-              <ref role="1Pybhc" node="4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+            <node concept="2ShNRf" id="5zuMBsCJxu8" role="33vP2m">
+              <node concept="1pGfFk" id="5zuMBsCJxrk" role="2ShVmc">
+                <ref role="37wK5l" node="7ezRWquAAWk" resolve="DefaultCoverageAnalyzer" />
+              </node>
             </node>
           </node>
         </node>
@@ -20081,6 +20082,22 @@
                 <ref role="3cqZAo" node="RaqQlV4uB6" resolve="interpretedNode" />
               </node>
               <node concept="2yIwOk" id="5DEy7AG60AX" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5zuMBsCJoYd" role="3cqZAp">
+          <node concept="2OqwBi" id="5zuMBsCJp$a" role="3clFbG">
+            <node concept="1rXfSq" id="5zuMBsCJoYb" role="2Oq$k0">
+              <ref role="37wK5l" node="7ezRWqumL6r" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="5zuMBsCJs1U" role="2OqNvi">
+              <ref role="37wK5l" node="6SpoPQg9cKk" resolve="visitedConcept" />
+              <node concept="2OqwBi" id="5zuMBsCJu8Z" role="37wK5m">
+                <node concept="37vLTw" id="5zuMBsCJu90" role="2Oq$k0">
+                  <ref role="3cqZAo" node="RaqQlV4uB6" resolve="interpretedNode" />
+                </node>
+                <node concept="2yIwOk" id="5zuMBsCJu91" role="2OqNvi" />
+              </node>
             </node>
           </node>
         </node>
