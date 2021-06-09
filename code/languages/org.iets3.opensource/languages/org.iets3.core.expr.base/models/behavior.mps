@@ -8585,10 +8585,9 @@
             <node concept="3uibUv" id="7p_bE3JctXY" role="1tU5fm">
               <ref role="3uigEE" node="4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
             </node>
-            <node concept="2ShNRf" id="7p_bE3JctXZ" role="33vP2m">
-              <node concept="1pGfFk" id="2ns1RQRNMXL" role="2ShVmc">
-                <ref role="37wK5l" node="7ezRWquAAWk" resolve="DefaultCoverageAnalyzer" />
-              </node>
+            <node concept="2YIFZM" id="58jTitRAHFC" role="33vP2m">
+              <ref role="37wK5l" node="7ezRWqumL6r" resolve="getInstance" />
+              <ref role="1Pybhc" node="4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
             </node>
           </node>
         </node>
