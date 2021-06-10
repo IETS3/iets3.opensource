@@ -1,2 +1,9 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        gradlePluginPortal()
+    }
+}
+
 rootProject.name = 'iets3.opensource'
 

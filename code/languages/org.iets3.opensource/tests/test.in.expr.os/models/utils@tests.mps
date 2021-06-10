@@ -143,6 +143,10 @@
         <child id="2245119349904068815" name="max" index="1eiLjC" />
         <child id="2245119349904068814" name="min" index="1eiLjD" />
       </concept>
+      <concept id="5955298286257997823" name="org.iets3.core.expr.base.structure.ColonCast" flags="ng" index="1LgZZ2">
+        <child id="5955298286257997833" name="type" index="1LgZ0O" />
+        <child id="5955298286257997830" name="expr" index="1LgZ0V" />
+      </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
@@ -2974,51 +2978,183 @@
       <property role="0Rz4W" value="467264629" />
       <node concept="UJIhK" id="5crSXLPslp" role="1ahQXP">
         <node concept="UJIhL" id="5crSXLPsl$" role="UJIgT">
-          <node concept="30bXRB" id="5crSXLPsly" role="UJIhC">
-            <property role="30bXRw" value="1" />
+          <node concept="1LgZZ2" id="2Y$0swBeqO3" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPsly" role="1LgZ0V">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBer1F" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBer1G" role="2gteSx">
+                <property role="2gteSQ" value="1" />
+                <property role="2gteSD" value="2" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBer1H" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
-          <node concept="30bXRB" id="5crSXLPslz" role="UJIhC">
-            <property role="30bXRw" value="2" />
+          <node concept="1LgZZ2" id="2Y$0swBerey" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPslz" role="1LgZ0V">
+              <property role="30bXRw" value="2" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBerrN" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBerrO" role="2gteSx">
+                <property role="2gteSQ" value="1" />
+                <property role="2gteSD" value="2" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBerrP" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="UJIhL" id="5crSXLPslB" role="UJIgT">
-          <node concept="30bXRB" id="5crSXLPsl_" role="UJIhC">
-            <property role="30bXRw" value="3" />
+          <node concept="1LgZZ2" id="2Y$0swBerD$" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPsl_" role="1LgZ0V">
+              <property role="30bXRw" value="3" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBerR3" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBerR4" role="2gteSx">
+                <property role="2gteSQ" value="3" />
+                <property role="2gteSD" value="4" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBerR5" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
-          <node concept="30bXRB" id="5crSXLPslA" role="UJIhC">
-            <property role="30bXRw" value="4" />
+          <node concept="1LgZZ2" id="2Y$0swBes4u" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPslA" role="1LgZ0V">
+              <property role="30bXRw" value="4" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBesiV" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBesiW" role="2gteSx">
+                <property role="2gteSQ" value="3" />
+                <property role="2gteSD" value="4" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBesiX" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="UJIhL" id="5crSXLPslE" role="UJIgT">
-          <node concept="30bXRB" id="5crSXLPslC" role="UJIhC">
-            <property role="30bXRw" value="5" />
+          <node concept="1LgZZ2" id="2Y$0swBeswC" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPslC" role="1LgZ0V">
+              <property role="30bXRw" value="5" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBetbO" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBetbP" role="2gteSx">
+                <property role="2gteSQ" value="5" />
+                <property role="2gteSD" value="6" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBetbQ" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
-          <node concept="30bXRB" id="5crSXLPslD" role="UJIhC">
-            <property role="30bXRw" value="6" />
+          <node concept="1LgZZ2" id="2Y$0swBetpN" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPslD" role="1LgZ0V">
+              <property role="30bXRw" value="6" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBetCO" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBetCP" role="2gteSx">
+                <property role="2gteSQ" value="5" />
+                <property role="2gteSD" value="6" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBetCQ" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="UJIhM" id="5crSXLPslH" role="UJIgW">
-          <node concept="30bXRB" id="5crSXLPslF" role="UJIhC">
-            <property role="30bXRw" value="1" />
+          <node concept="1LgZZ2" id="2Y$0swBen6b" role="UJIhC">
+            <node concept="mLuIC" id="2Y$0swBenhS" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBensY" role="2gteSx">
+                <property role="2gteSQ" value="1" />
+                <property role="2gteSD" value="2" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBenN3" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
+            <node concept="30bXRB" id="5crSXLPslF" role="1LgZ0V">
+              <property role="30bXRw" value="1" />
+            </node>
           </node>
-          <node concept="30bXRB" id="5crSXLPslG" role="UJIhC">
-            <property role="30bXRw" value="2" />
+          <node concept="1LgZZ2" id="2Y$0swBeo9P" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPslG" role="1LgZ0V">
+              <property role="30bXRw" value="2" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBeolv" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBeolw" role="2gteSx">
+                <property role="2gteSQ" value="1" />
+                <property role="2gteSD" value="2" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBeolx" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="UJIhM" id="5crSXLPslK" role="UJIgW">
-          <node concept="30bXRB" id="5crSXLPslI" role="UJIhC">
-            <property role="30bXRw" value="3" />
+          <node concept="1LgZZ2" id="2Y$0swBeoxq" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPslI" role="1LgZ0V">
+              <property role="30bXRw" value="3" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBeoHd" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBeoHe" role="2gteSx">
+                <property role="2gteSQ" value="3" />
+                <property role="2gteSD" value="4" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBeoHf" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
-          <node concept="30bXRB" id="5crSXLPslJ" role="UJIhC">
-            <property role="30bXRw" value="4" />
+          <node concept="1LgZZ2" id="2Y$0swBepgy" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPslJ" role="1LgZ0V">
+              <property role="30bXRw" value="4" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBepte" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBeptf" role="2gteSx">
+                <property role="2gteSQ" value="3" />
+                <property role="2gteSD" value="4" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBeptg" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="UJIhM" id="5crSXLPslN" role="UJIgW">
-          <node concept="30bXRB" id="5crSXLPslL" role="UJIhC">
-            <property role="30bXRw" value="5" />
+          <node concept="1LgZZ2" id="2Y$0swBepDf" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPslL" role="1LgZ0V">
+              <property role="30bXRw" value="5" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBepPA" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBepPB" role="2gteSx">
+                <property role="2gteSQ" value="5" />
+                <property role="2gteSD" value="6" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBepPC" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
-          <node concept="30bXRB" id="5crSXLPslM" role="UJIhC">
-            <property role="30bXRw" value="6" />
+          <node concept="1LgZZ2" id="2Y$0swBeqqG" role="UJIhC">
+            <node concept="30bXRB" id="5crSXLPslM" role="1LgZ0V">
+              <property role="30bXRw" value="6" />
+            </node>
+            <node concept="mLuIC" id="2Y$0swBeqBu" role="1LgZ0O">
+              <node concept="2gteSW" id="2Y$0swBeqBv" role="2gteSx">
+                <property role="2gteSQ" value="5" />
+                <property role="2gteSD" value="6" />
+              </node>
+              <node concept="2gteS_" id="2Y$0swBeqBw" role="2gteVg">
+                <property role="2gteVv" value="0" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="UJIhQ" id="5crSXLPslP" role="UJIgL">
