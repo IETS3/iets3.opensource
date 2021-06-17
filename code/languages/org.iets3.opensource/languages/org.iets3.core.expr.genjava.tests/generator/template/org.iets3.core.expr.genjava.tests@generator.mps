@@ -349,7 +349,7 @@
         <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
       </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -2157,7 +2157,9 @@
             <node concept="2OqwBi" id="27xhIwhpAg0" role="33vP2m">
               <node concept="1Q6Npb" id="27xhIwhpAg1" role="2Oq$k0" />
               <node concept="1j9C0f" id="27xhIwhpAg2" role="2OqNvi">
-                <ref role="1j9C0d" to="av4b:6HHp2WmRVXt" resolve="NamedAssertRef" />
+                <node concept="chp4Y" id="1XlpEugp_B" role="3MHPCF">
+                  <ref role="cht4Q" to="av4b:6HHp2WmRVXt" resolve="NamedAssertRef" />
+                </node>
               </node>
             </node>
           </node>
@@ -2210,7 +2212,9 @@
                     <node concept="2OqwBi" id="27xhIwhfrDd" role="2Oq$k0">
                       <node concept="1Q6Npb" id="27xhIwhfrx4" role="2Oq$k0" />
                       <node concept="1j9C0f" id="27xhIwhfrM1" role="2OqNvi">
-                        <ref role="1j9C0d" to="av4b:6HHp2WmRVXt" resolve="NamedAssertRef" />
+                        <node concept="chp4Y" id="1XlpEugp_C" role="3MHPCF">
+                          <ref role="cht4Q" to="av4b:6HHp2WmRVXt" resolve="NamedAssertRef" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3zZkjj" id="27xhIwhfvzS" role="2OqNvi">
