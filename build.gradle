@@ -71,6 +71,7 @@ def mbeddrVersion = "2020.3+"
 // the name is enough no trailing "." is required, also the plain name from git can
 // be used here. No need to convert "/" the script will take care of that.
 def mbeddrBranch = ""
+def currentBranch = ""
 
 
 if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
@@ -85,10 +86,10 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     version = project.iets3OpenSourceVersion
 } else {
     if (ciBuild) {
-        String branch = GitBasedVersioning.gitBranch
+        currentBranch = GitBasedVersioning.gitBranch
 
         def buildNumber = System.env.BUILD_NUMBER.toInteger()
-        if (branch.startsWith("maintenance") || branch.startsWith("mps")) {
+        if (currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
             version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
         } else {
             version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)
@@ -260,6 +261,21 @@ publishing {
             }
         }
     }
+    repositories {
+        if(currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
+                maven {
+                    name = "GitHubPackages"
+                    url = uri("https://maven.pkg.github.com/mbeddr/iets3.opensource")
+                    if(project.hasProperty("gpr.token")) {
+                        credentials {
+                            username = project.findProperty("gpr.user")
+                            password = project.findProperty("gpr.token")
+                        }
+                    }
+                }
+            }
+        }
+        
     publications {
         allScripts(MavenPublication) {
             groupId 'org.iets3.opensource'
@@ -306,6 +322,7 @@ publishing {
         }
     }
 }
+
 
 task generateLibrariesXml(type: GenerateLibrariesXml) {
     dependsOn resolveLanguageLibs
