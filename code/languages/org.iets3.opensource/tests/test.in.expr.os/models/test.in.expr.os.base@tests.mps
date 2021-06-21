@@ -2,10 +2,10 @@
 <model ref="r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <devkit ref="ec967770-4707-442f-baaf-a8b7bb554717(org.iets3.core.expr.genall.core.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
@@ -154,6 +154,13 @@
       <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
+      </concept>
+      <concept id="8825352096210458329" name="org.iets3.core.expr.simpleTypes.structure.RoundUpRoundingMode" flags="ng" index="1M9Agw" />
+      <concept id="8825352096210456368" name="org.iets3.core.expr.simpleTypes.structure.RoundDownRoundingMode" flags="ng" index="1M9BR9" />
+      <concept id="8825352096209502465" name="org.iets3.core.expr.simpleTypes.structure.ConvertPrecisionNumberExpression" flags="ng" index="1MaffS">
+        <property id="8825352096209722453" name="targetPrecision" index="1MbqUG" />
+        <child id="8825352096209502752" name="rounding" index="1Maf3p" />
+        <child id="8825352096209502545" name="expr" index="1MafeC" />
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
@@ -2102,6 +2109,42 @@
         </node>
         <node concept="30bXRB" id="620LAS5PSCe" role="_fkuS">
           <property role="30bXRw" value="3" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6xqpdoQvk1a" role="_fkp5">
+        <node concept="_fku$" id="6xqpdoQvk1b" role="_fkur" />
+        <node concept="30bXRB" id="6xqpdoQvk7E" role="_fkuS">
+          <property role="30bXRw" value="0" />
+        </node>
+        <node concept="3Ed6Qv" id="6xqpdoQvk1X" role="_fkuY">
+          <node concept="1MaffS" id="6xqpdoQvk1Z" role="30dEsF">
+            <property role="1MbqUG" value="0" />
+            <node concept="1M9BR9" id="6xqpdoQvk20" role="1Maf3p" />
+            <node concept="30bXRB" id="6xqpdoQvk3w" role="1MafeC">
+              <property role="30bXRw" value="2.2" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="6xqpdoQKA$T" role="30dEs_">
+            <property role="30bXRw" value="2" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6xqpdoQvk7T" role="_fkp5">
+        <node concept="_fku$" id="6xqpdoQvk7U" role="_fkur" />
+        <node concept="3Ed6Qv" id="6xqpdoQvk7W" role="_fkuY">
+          <node concept="30bXRB" id="6xqpdoQKABp" role="30dEsF">
+            <property role="30bXRw" value="3" />
+          </node>
+          <node concept="1MaffS" id="6xqpdoQJNQM" role="30dEs_">
+            <property role="1MbqUG" value="0" />
+            <node concept="1M9Agw" id="6xqpdoQJNSV" role="1Maf3p" />
+            <node concept="30bXRB" id="6xqpdoQJNXE" role="1MafeC">
+              <property role="30bXRw" value="1.8" />
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="6xqpdoQvkgs" role="_fkuS">
+          <property role="30bXRw" value="1" />
         </node>
       </node>
     </node>
