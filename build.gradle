@@ -279,14 +279,6 @@ publishing {
                     dependencyNode.appendNode('version', it.moduleVersion)
                     dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                 }
-                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                    dependencyNode.appendNode('scope', 'provided')
-                }
             }
         }
         tests(MavenPublication) {
@@ -295,13 +287,11 @@ publishing {
             artifact packageTests
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                }
+                def dependencyNode = dependenciesNode.appendNode('dependency')
+                dependencyNode.appendNode('groupId', 'org.iets3')
+                dependencyNode.appendNode('artifactId', 'opensource')
+                dependencyNode.appendNode('version', version)
+                dependencyNode.appendNode('type', 'zip')
             }
         }
     }
