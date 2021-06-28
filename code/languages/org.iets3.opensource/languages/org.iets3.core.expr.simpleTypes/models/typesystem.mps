@@ -2265,24 +2265,13 @@
               </node>
             </node>
           </node>
-          <node concept="3cpWs6" id="3f3yNhCUv30" role="3cqZAp">
-            <node concept="2YIFZM" id="5wDe8wA6zsJ" role="3cqZAk">
-              <ref role="37wK5l" to="xfg9:3f3yNhCT_qZ" resolve="computeSupertype" />
-              <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-              <node concept="3cjfiJ" id="3f3yNhCUv32" role="37wK5m" />
-              <node concept="3cjoZ5" id="3f3yNhCUv33" role="37wK5m" />
-              <node concept="3clFbT" id="3f3yNhCUv34" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
-              <node concept="2OqwBi" id="3f3yNhCUv35" role="37wK5m">
-                <node concept="2QUAEa" id="3f3yNhCUv36" role="2Oq$k0" />
-                <node concept="liA8E" id="3f3yNhCUv37" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
-                </node>
+          <node concept="3clFbF" id="17MOwOjN0rd" role="3cqZAp">
+            <node concept="2pJPEk" id="17MOwOjN0r9" role="3clFbG">
+              <node concept="2pJPED" id="17MOwOjN0R9" role="2pJPEn">
+                <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="3f3yNhCUv38" role="3cqZAp" />
         </node>
       </node>
       <node concept="2pJPEk" id="3f3yNhCUv39" role="3ciSkW">
