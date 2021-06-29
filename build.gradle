@@ -265,7 +265,7 @@ publishing {
         if(currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
                 maven {
                     name = "GitHubPackages"
-                    url = uri("https://maven.pkg.github.com/mbeddr/iets3.opensource")
+                    url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")
                     if(project.hasProperty("gpr.token")) {
                         credentials {
                             username = project.findProperty("gpr.user")
