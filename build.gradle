@@ -279,7 +279,7 @@ publishing {
     publications {
         allScripts(MavenPublication) {
             groupId 'org.iets3.opensource'
-            artifactId 'allScripts'
+            artifactId 'allscripts'
             artifact packageAllScripts
         }
         openSource(MavenPublication) {
