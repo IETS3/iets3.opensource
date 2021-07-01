@@ -22,6 +22,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="1qv1" ref="r:c53b8bbc-6142-4787-a6e4-66310b772b37(org.iets3.core.expr.math.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
@@ -1002,9 +1003,9 @@
                     <node concept="7Obwk" id="5mz5Tt_ldSG" role="2Oq$k0" />
                     <node concept="3JvlWi" id="5mz5Tt_leSt" role="2OqNvi" />
                   </node>
-                  <node concept="2YIFZM" id="7BZzIqklOVc" role="37wK5m">
-                    <ref role="37wK5l" to="xfg9:2Qbt$1tTQdc" resolve="createRealType" />
-                    <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                  <node concept="2YIFZM" id="79$_UYzY2SS" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:2Qbt$1tTQdc" resolve="createRealType" />
+                    <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
                     <node concept="10Nm6u" id="7BZzIqklP56" role="37wK5m" />
                   </node>
                 </node>

@@ -2386,9 +2386,9 @@
       <node concept="3Tm1VV" id="6fmG8CYXVwF" role="1B3o_S" />
       <node concept="3clFbS" id="6fmG8CYXVwK" role="3clF47">
         <node concept="3clFbF" id="6fmG8CYY1T8" role="3cqZAp">
-          <node concept="2YIFZM" id="6fmG8CYY1TQ" role="3clFbG">
-            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
-            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+          <node concept="2YIFZM" id="79$_UYzY2vB" role="3clFbG">
+            <ref role="37wK5l" to="oq0c:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
+            <ref role="1Pybhc" to="oq0c:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
             <node concept="1fM9EW" id="6fmG8CYY1U0" role="37wK5m" />
           </node>
         </node>

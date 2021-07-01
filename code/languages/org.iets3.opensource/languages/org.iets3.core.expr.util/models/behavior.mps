@@ -1369,9 +1369,9 @@
         <node concept="3clFbH" id="6KzF0hSEj9a" role="3cqZAp" />
         <node concept="1Z5TYs" id="6KzF0hSIjnv" role="3cqZAp">
           <node concept="mw_s8" id="6KzF0hSIjum" role="1ZfhKB">
-            <node concept="2YIFZM" id="6KzF0hSIjBE" role="mwGJk">
-              <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
-              <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="2YIFZM" id="79$_UYzY2S0" role="mwGJk">
+              <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+              <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
             </node>
           </node>
           <node concept="mw_s8" id="6KzF0hSIjny" role="1ZfhK$">
@@ -5882,9 +5882,9 @@
       <node concept="3Tm1VV" id="4jTzL4SDZc3" role="1B3o_S" />
       <node concept="3clFbS" id="4jTzL4SDZc8" role="3clF47">
         <node concept="3clFbF" id="3NUSEp5yeOu" role="3cqZAp">
-          <node concept="2YIFZM" id="6fmG8CYTZvU" role="3clFbG">
-            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
-            <ref role="37wK5l" to="xfg9:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
+          <node concept="2YIFZM" id="79$_UYzY2vw" role="3clFbG">
+            <ref role="37wK5l" to="oq0c:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
+            <ref role="1Pybhc" to="oq0c:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
             <node concept="1fM9EW" id="6fmG8CYU6Dk" role="37wK5m" />
           </node>
         </node>
@@ -5898,9 +5898,9 @@
       <node concept="3Tm1VV" id="4jTzL4SDZcf" role="1B3o_S" />
       <node concept="3clFbS" id="4jTzL4SDZck" role="3clF47">
         <node concept="3clFbF" id="3NUSEp5yeUI" role="3cqZAp">
-          <node concept="2YIFZM" id="6fmG8CYU00G" role="3clFbG">
-            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
-            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+          <node concept="2YIFZM" id="79$_UYzY2vF" role="3clFbG">
+            <ref role="37wK5l" to="oq0c:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
+            <ref role="1Pybhc" to="oq0c:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
             <node concept="1fM9EW" id="6fmG8CYU6Ea" role="37wK5m" />
           </node>
         </node>

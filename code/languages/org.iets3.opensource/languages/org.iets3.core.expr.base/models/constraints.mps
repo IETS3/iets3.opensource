@@ -13,7 +13,6 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
-    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -478,16 +477,16 @@
         </node>
         <node concept="3clFbF" id="6b_jefnKxDu" role="3cqZAp">
           <node concept="22lmx$" id="6b_jefnKxDv" role="3clFbG">
-            <node concept="2YIFZM" id="5wDe8wA6zsk" role="3uHU7w">
-              <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-              <ref role="37wK5l" to="xfg9:2PhSkOglBKz" resolve="isRealType" />
+            <node concept="2YIFZM" id="79$_UYzY2TF" role="3uHU7w">
+              <ref role="37wK5l" to="oq0c:2PhSkOglBKz" resolve="isRealType" />
+              <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
               <node concept="37vLTw" id="6b_jefnKxDx" role="37wK5m">
                 <ref role="3cqZAo" node="6b_jefnKxDl" resolve="tt" />
               </node>
             </node>
-            <node concept="2YIFZM" id="5wDe8wA6zsb" role="3uHU7B">
-              <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-              <ref role="37wK5l" to="xfg9:2Qbt$1tU33e" resolve="isIntegerType" />
+            <node concept="2YIFZM" id="79$_UYzY2Tx" role="3uHU7B">
+              <ref role="37wK5l" to="oq0c:2Qbt$1tU33e" resolve="isIntegerType" />
+              <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
               <node concept="37vLTw" id="6b_jefnKxDz" role="37wK5m">
                 <ref role="3cqZAo" node="6b_jefnKxDl" resolve="tt" />
               </node>

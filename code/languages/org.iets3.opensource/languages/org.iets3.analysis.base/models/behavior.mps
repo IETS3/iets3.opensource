@@ -16,7 +16,6 @@
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
@@ -1994,9 +1993,7 @@
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getBaseType" />
       <node concept="3Tm1VV" id="1ScogIcAG8q" role="1B3o_S" />
-      <node concept="3Tqbb2" id="1ScogIcAG8H" role="3clF45">
-        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
-      </node>
+      <node concept="3Tqbb2" id="1ScogIcAG8H" role="3clF45" />
       <node concept="3clFbS" id="1ScogIcAG8s" role="3clF47" />
     </node>
     <node concept="13hLZK" id="1ScogIcAG8f" role="13h7CW">

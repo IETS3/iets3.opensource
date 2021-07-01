@@ -888,9 +888,9 @@
                     <node concept="3cpWsn" id="2NHHcg2MxT6" role="3cpWs9">
                       <property role="TrG5h" value="elementSupertype" />
                       <node concept="3Tqbb2" id="2NHHcg2MxT1" role="1tU5fm" />
-                      <node concept="2YIFZM" id="5wDe8wA6zsA" role="33vP2m">
-                        <ref role="37wK5l" to="xfg9:2NHHcg2KyAX" resolve="computeSupertype" />
-                        <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                      <node concept="2YIFZM" id="79$_UYzY2U8" role="33vP2m">
+                        <ref role="37wK5l" to="oq0c:2NHHcg2KyAX" resolve="computeSupertype" />
+                        <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
                         <node concept="37vLTw" id="2NHHcg2MxT8" role="37wK5m">
                           <ref role="3cqZAo" node="5aHkq2w3YD$" resolve="types" />
                         </node>
@@ -1231,9 +1231,9 @@
     <node concept="3clFbS" id="3_Nra3DTf__" role="18ibNy">
       <node concept="1Z5TYs" id="3_Nra3DTg43" role="3cqZAp">
         <node concept="mw_s8" id="3_Nra3DTg4o" role="1ZfhKB">
-          <node concept="2YIFZM" id="5wDe8wA6zqv" role="mwGJk">
-            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
-            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          <node concept="2YIFZM" id="79$_UYzY2RJ" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
           </node>
         </node>
         <node concept="mw_s8" id="3_Nra3DTg46" role="1ZfhK$">
@@ -1503,9 +1503,9 @@
     <node concept="3clFbS" id="7HzLUeHoJVa" role="18ibNy">
       <node concept="1Z5TYs" id="7HzLUeHoK9M" role="3cqZAp">
         <node concept="mw_s8" id="7HzLUeHoKa3" role="1ZfhKB">
-          <node concept="2YIFZM" id="5wDe8wA6zrC" role="mwGJk">
-            <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
-            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          <node concept="2YIFZM" id="79$_UYzY2T7" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQdA" resolve="createStringType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
           </node>
         </node>
         <node concept="mw_s8" id="7HzLUeHoK9P" role="1ZfhK$">

@@ -13,6 +13,7 @@
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
     <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -574,7 +575,7 @@
                 <node concept="3cpWs6" id="stdmzxodlE" role="3cqZAp">
                   <node concept="2ShNRf" id="2KRUNf1roOK" role="3cqZAk">
                     <node concept="HV5vD" id="2KRUNf1rwGu" role="2ShVmc">
-                      <ref role="HV5vE" to="xfg9:3nVyItrYWd7" resolve="DefaultNix" />
+                      <ref role="HV5vE" to="oq0c:3nVyItrYWd7" resolve="DefaultNix" />
                     </node>
                   </node>
                 </node>

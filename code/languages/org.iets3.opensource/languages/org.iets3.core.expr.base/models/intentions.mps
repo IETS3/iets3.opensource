@@ -24,7 +24,6 @@
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
-    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
   </imports>
   <registry>
@@ -2693,9 +2692,9 @@
           </node>
         </node>
         <node concept="3clFbF" id="5LjCoy7Tngv" role="3cqZAp">
-          <node concept="2YIFZM" id="5LjCoy7TVr2" role="3clFbG">
-            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-            <ref role="37wK5l" to="xfg9:2Qbt$1tTWDY" resolve="isBooleanType" />
+          <node concept="2YIFZM" id="79$_UYzY2Tm" role="3clFbG">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTWDY" resolve="isBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
             <node concept="1PxgMI" id="o83N5rjnPB" role="37wK5m">
               <property role="1BlNFB" value="true" />
               <node concept="chp4Y" id="o83N5rjnVx" role="3oSUPX">
@@ -2783,9 +2782,9 @@
     <node concept="2SaL7w" id="5LjCoy7TqNA" role="2ZfVeh">
       <node concept="3clFbS" id="5LjCoy7TqNB" role="2VODD2">
         <node concept="3clFbF" id="5LjCoy7TU0S" role="3cqZAp">
-          <node concept="2YIFZM" id="5LjCoy7TUdH" role="3clFbG">
-            <ref role="37wK5l" to="xfg9:2Qbt$1tTWDY" resolve="isBooleanType" />
-            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          <node concept="2YIFZM" id="79$_UYzY2Tn" role="3clFbG">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTWDY" resolve="isBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
             <node concept="1PxgMI" id="o83N5rjp3x" role="37wK5m">
               <property role="1BlNFB" value="true" />
               <node concept="chp4Y" id="o83N5rjp5x" role="3oSUPX">
