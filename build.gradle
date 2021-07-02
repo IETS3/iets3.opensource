@@ -264,6 +264,27 @@ task packageDistroWithDependencies(type: Zip, dependsOn: buildDistroWithDependen
 
 assemble.dependsOn packageLanguages, packageTests
 
+static def addDependency(Object pom, Object groupId, Object artifactId, Object version, Object type = null) {
+    pom.withXml { XmlProvider prov ->
+        Node root = prov.asNode()
+        Node deps = root.dependencies[0] ?: root.appendNode("dependencies")
+        def dep = deps.appendNode("dependency")
+        dep.appendNode("groupId", groupId)
+        dep.appendNode("artifactId", artifactId)
+        dep.appendNode("version", version)
+        if (type != null) {
+            dep.appendNode("type", type)
+        }
+    }
+}
+
+static def addDependency(Object pom, Configuration config) {
+    config.resolvedConfiguration.firstLevelModuleDependencies.each {
+        addDependency(pom, it.moduleGroup, it.moduleName, it.moduleVersion, it.moduleArtifacts[0].type)
+    }
+
+}
+
 publishing {
     repositories {
         maven {
@@ -296,39 +317,16 @@ publishing {
             groupId 'org.iets3'
             artifactId 'opensource'
             artifact packageLanguages
-            pom.withXml {
-                def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each{
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                }
-                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                    dependencyNode.appendNode('scope', 'provided')
-                }
-            }
+
+            addDependency(pom, configurations.languageLibs)
         }
+
         tests(MavenPublication) {
             groupId 'org.iets3.opensource'
             artifactId 'tests'
             artifact packageTests
-            pom.withXml {
-                def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                }
-            }
+
+            addDependency(pom, 'org.iets3', 'opensource', project.version, 'zip')
         }
 
         def runtimesDir = new File(artifactsDir, 'org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os')
@@ -357,15 +355,7 @@ publishing {
                 classifier 'sources'
             }
 
-            pom.withXml {
-                def deps = asNode().appendNode('dependencies')
-
-                // depends on shared
-                def dep = deps.appendNode('dependency')
-                dep.appendNode('groupId', 'org.iets3.core.expr.base.shared')
-                dep.appendNode('artifactId', 'shared-runtime')
-                dep.appendNode('version', project.version)
-            }
+            addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
         }
 
         'org.iets3.core.expr.datetime.runtime'(MavenPublication) {
@@ -379,15 +369,7 @@ publishing {
                 classifier 'sources'
             }
 
-            pom.withXml {
-                def deps = asNode().appendNode('dependencies')
-
-                // depends on shared
-                def dep = deps.appendNode('dependency')
-                dep.appendNode('groupId', 'org.iets3.core.expr.base.shared')
-                dep.appendNode('artifactId', 'shared-runtime')
-                dep.appendNode('version', project.version)
-            }
+            addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
         }
 
         'org.iets3.core.expr.temporal.runtime'(MavenPublication) {
@@ -400,15 +382,8 @@ publishing {
                 builtBy buildLanguages
                 classifier 'sources'
             }
-            pom.withXml {
-                def deps = asNode().appendNode('dependencies')
 
-                // depends on datetime
-                def dep = deps.appendNode('dependency')
-                dep.appendNode('groupId', 'org.iets3.core.expr.datetime')
-                dep.appendNode('artifactId', 'datetime-runtime')
-                dep.appendNode('version', project.version)
-            }
+            addDependency(pom, 'org.iets3.core.expr.datetime', 'datetime-runtime', project.version)
         }
     }
 }
