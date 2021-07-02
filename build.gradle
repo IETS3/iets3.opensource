@@ -159,7 +159,7 @@ repositories {
     mavenCentral()
 }
 
-task resolveMps(type: Copy) {
+task resolveMps(type: Sync) {
     dependsOn configurations.mps
     from {
         configurations.mps.resolve().collect { zipTree(it) }
@@ -167,7 +167,7 @@ task resolveMps(type: Copy) {
     into "$buildDir/mps"
 }
 
-task resolveLanguageLibs(type: Copy) {
+task resolveLanguageLibs(type: Sync) {
     from {
         configurations.languageLibs.resolve().collect { zipTree(it) }
     }
