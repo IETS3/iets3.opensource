@@ -180,6 +180,7 @@ task resolvePcollections(type: Sync) {
     from configurations.pcollections
     into file('code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.base.collections.stubs/lib')
 
+    // Strip version numbers from file names
     rename { filename ->
         def ra = configurations.pcollections.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
         String finalName
