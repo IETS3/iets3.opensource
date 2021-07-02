@@ -2,7 +2,7 @@
 <solution name="org.iets3.core.expr.base.collections.stubs" uuid="b76a0f63-5959-456b-993a-c796cc0d0c13" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="pcollections/pcollections-28apr2016.jar" />
+      <sourceRoot location="pcollections.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -11,7 +11,7 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/pcollections/pcollections-28apr2016.jar" />
+    <stubModelEntry path="${module}/lib/pcollections.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
