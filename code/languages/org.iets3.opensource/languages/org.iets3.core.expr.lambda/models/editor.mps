@@ -1001,49 +1001,6 @@
         </node>
       </node>
     </node>
-    <node concept="1hA7zw" id="3kzwyUO7JtB" role="1h_SK8">
-      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
-      <node concept="1hAIg9" id="3kzwyUO7JtC" role="1hA7z_">
-        <node concept="3clFbS" id="3kzwyUO7JtD" role="2VODD2">
-          <node concept="3clFbF" id="3kzwyUO7JtE" role="3cqZAp">
-            <node concept="2OqwBi" id="3kzwyUO7JtF" role="3clFbG">
-              <node concept="0IXxy" id="3kzwyUO7JtG" role="2Oq$k0" />
-              <node concept="1P9Npp" id="3kzwyUO7JtH" role="2OqNvi">
-                <node concept="2OqwBi" id="3kzwyUO7JtI" role="1P9ThW">
-                  <node concept="2OqwBi" id="3kzwyUO7JtJ" role="2Oq$k0">
-                    <node concept="0IXxy" id="3kzwyUO7JtK" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="3kzwyUO7JtL" role="2OqNvi">
-                      <ref role="3TtcxE" to="zzzn:49WTic8ig5E" resolve="expressions" />
-                    </node>
-                  </node>
-                  <node concept="1uHKPH" id="3kzwyUO7JtM" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="jK8Ss" id="3kzwyUO7JtN" role="jK8aL">
-        <node concept="3clFbS" id="3kzwyUO7JtO" role="2VODD2">
-          <node concept="3clFbF" id="3kzwyUO7JtP" role="3cqZAp">
-            <node concept="3clFbC" id="3kzwyUO7JtQ" role="3clFbG">
-              <node concept="3cmrfG" id="3kzwyUO7JtR" role="3uHU7w">
-                <property role="3cmrfH" value="1" />
-              </node>
-              <node concept="2OqwBi" id="3kzwyUO7JtS" role="3uHU7B">
-                <node concept="2OqwBi" id="3kzwyUO7JtT" role="2Oq$k0">
-                  <node concept="0IXxy" id="3kzwyUO7JtU" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="3kzwyUO7JtV" role="2OqNvi">
-                    <ref role="3TtcxE" to="zzzn:49WTic8ig5E" resolve="expressions" />
-                  </node>
-                </node>
-                <node concept="34oBXx" id="3kzwyUO7JtW" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="24kQdi" id="6KxoTHgSIrx">
     <property role="3GE5qa" value="effectTag" />

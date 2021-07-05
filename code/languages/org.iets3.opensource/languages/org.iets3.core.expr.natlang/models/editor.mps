@@ -1511,19 +1511,6 @@
   <node concept="1h_SRR" id="7fOaqhi0grK">
     <property role="TrG5h" value="syntax" />
     <ref role="1h_SK9" to="1xa4:1u1U5lETVgp" resolve="NatLangCallSyntax" />
-    <node concept="1hA7zw" id="7fOaqhi0grL" role="1h_SK8">
-      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
-      <node concept="1hAIg9" id="7fOaqhi0grM" role="1hA7z_">
-        <node concept="3clFbS" id="7fOaqhi0grN" role="2VODD2">
-          <node concept="3clFbF" id="7fOaqhi0grS" role="3cqZAp">
-            <node concept="2OqwBi" id="7fOaqhi0gtN" role="3clFbG">
-              <node concept="0IXxy" id="7fOaqhi0grR" role="2Oq$k0" />
-              <node concept="3YRAZt" id="7fOaqhi0gyU" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1hA7zw" id="7fOaqhi0gza" role="1h_SK8">
       <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="7fOaqhi0gzb" role="1hA7z_">
