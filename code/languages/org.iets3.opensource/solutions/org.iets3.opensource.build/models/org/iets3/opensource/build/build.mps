@@ -11954,6 +11954,9 @@
         <node concept="L2wRC" id="4ToqgmJmVsD" role="39821P">
           <ref role="L2wRA" node="6xvglc6Du8w" resolve="test.ex.core.expr.genjava" />
         </node>
+        <node concept="L2wRC" id="1ZNBV$i_wRG" role="39821P">
+          <ref role="L2wRA" node="1ZNBV$i_wJr" resolve="org.iets3.opensource.general.tests" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />
@@ -12492,6 +12495,46 @@
         </node>
       </node>
     </node>
+    <node concept="1E1JtA" id="1ZNBV$i_wJr" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="org.iets3.opensource.general.tests" />
+      <property role="3LESm3" value="b7b999ec-00cb-4f85-ac38-b2e7e7edc130" />
+      <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+      <node concept="398BVA" id="1ZNBV$i_wMr" role="3LF7KH">
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+        <node concept="2Ry0Ak" id="1ZNBV$i_wMx" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="1ZNBV$i_wMA" role="2Ry0An">
+            <property role="2Ry0Am" value="org.iets3.opensource.general.tests" />
+            <node concept="2Ry0Ak" id="1ZNBV$i_wMF" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.opensource.general.tests.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1BupzO" id="1ZNBV$i_wOF" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="1ZNBV$i_wOG" role="1HemKq">
+          <node concept="398BVA" id="1ZNBV$i_wOp" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="1ZNBV$i_wOq" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="1ZNBV$i_wOr" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.opensource.general.tests" />
+                <node concept="2Ry0Ak" id="1ZNBV$i_wOs" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="1ZNBV$i_wOH" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2sgV4H" id="OJuIQp_qh1" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="OJuIQp_qrx" role="2JcizS">
@@ -12544,6 +12587,9 @@
       </node>
       <node concept="22LTRM" id="4ToqgmJmYtN" role="22LTRK">
         <ref role="22LTRN" node="6xvglc6Du8w" resolve="test.ex.core.expr.genjava" />
+      </node>
+      <node concept="22LTRM" id="1ZNBV$i_wRW" role="22LTRK">
+        <ref role="22LTRN" node="1ZNBV$i_wJr" resolve="org.iets3.opensource.general.tests" />
       </node>
     </node>
     <node concept="2vP9LM" id="3ZBI8Awdbww" role="1hWBAP">
