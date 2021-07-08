@@ -219,7 +219,12 @@ task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveDepend
     script "$buildDir/scripts/build-allScripts.xml"
 }
 
-task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
+task prebuild(type: BuildLanguages, dependsOn: buildAllScripts) {
+    script "$buildDir/scripts/prebuild.xml"
+    targets "clean", "generate"
+}
+
+task buildLanguages(type: BuildLanguages, dependsOn: prebuild) {
     script "$buildDir/scripts/build-languages.xml"
 }
 
