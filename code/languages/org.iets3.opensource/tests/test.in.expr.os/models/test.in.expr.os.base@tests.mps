@@ -2028,7 +2028,7 @@
       <node concept="_fkuZ" id="17MOwOjMDJk" role="_fkp5">
         <node concept="_fku$" id="17MOwOjMDJl" role="_fkur" />
         <node concept="30bXRB" id="17MOwOjMDJN" role="_fkuS">
-          <property role="30bXRw" value="0" />
+          <property role="30bXRw" value="0.5" />
         </node>
         <node concept="30dvO6" id="17MOwOjMDJt" role="_fkuY">
           <node concept="_emDc" id="17MOwOjMDJu" role="30dEs_">
