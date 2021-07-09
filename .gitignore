@@ -50,7 +50,7 @@ code/languages/*/*.iws
 code/languages/*/build.properties
 code/languages/*/TEST*.xml
 code/languages/org.iets3.core/build/tmp
-code/languages/org.iets3.opensource/.mps/libraries.xml
+.mps-caches
 
 # -----------------------------------------------------------
 # GRADLE
