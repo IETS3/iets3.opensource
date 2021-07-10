@@ -2,7 +2,7 @@
 <model ref="r:8fa7df4d-2999-429b-9bd7-19fe0b216224(org.iets3.core.expr.tests.interpreter.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
@@ -14,9 +14,9 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
-    <import index="4k19" ref="1fd846c3-c5f9-4b9e-9ecc-e716f7149f86/java:org.hamcrest(Hamcrest/)" />
     <import index="pq1l" ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)" />
     <import index="vzlu" ref="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)" />
+    <import index="4k19" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.hamcrest(JUnit/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -498,8 +498,8 @@
       <ref role="qq9wM" to="av4b:5Pgo_ASrZfv" resolve="ContainsString" />
       <node concept="3vetai" id="5Pgo_AStUSX" role="3vQZUl">
         <node concept="2YIFZM" id="5Pgo_AStUTO" role="3vdyny">
-          <ref role="37wK5l" to="4k19:~CoreMatchers.containsString(java.lang.String)" resolve="containsString" />
           <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+          <ref role="37wK5l" to="4k19:~CoreMatchers.containsString(java.lang.String)" resolve="containsString" />
           <node concept="10QFUN" id="5Pgo_ASu0gj" role="37wK5m">
             <node concept="17QB3L" id="5Pgo_ASu0ka" role="10QFUM" />
             <node concept="rqRoa" id="5Pgo_AStUWv" role="10QFUP">
@@ -515,9 +515,9 @@
       <node concept="3vetai" id="62DU45CA$YH" role="3vQZUl">
         <node concept="2YIFZM" id="62DU45CA_iq" role="3vdyny">
           <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
-          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher...)" resolve="allOf" />
+          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher,org.hamcrest.Matcher)" resolve="allOf" />
           <node concept="10QFUN" id="62DU45CAAk1" role="37wK5m">
-            <node concept="3uibUv" id="62DU45CAAqr" role="10QFUM">
+            <node concept="3uibUv" id="7SjyARDYLT8" role="10QFUM">
               <ref role="3uigEE" to="4k19:~Matcher" resolve="Matcher" />
             </node>
             <node concept="rqRoa" id="62DU45CA_o2" role="10QFUP">
@@ -525,7 +525,7 @@
             </node>
           </node>
           <node concept="10QFUN" id="62DU45CAAuq" role="37wK5m">
-            <node concept="3uibUv" id="62DU45CAA_9" role="10QFUM">
+            <node concept="3uibUv" id="7SjyARDYLSU" role="10QFUM">
               <ref role="3uigEE" to="4k19:~Matcher" resolve="Matcher" />
             </node>
             <node concept="rqRoa" id="62DU45CAAfd" role="10QFUP">
