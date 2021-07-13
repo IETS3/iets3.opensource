@@ -218,12 +218,6 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
 
 check.dependsOn buildAndRunTests
 
-task packageAllScripts(type: Zip, dependsOn: buildAllScripts) {
-    archiveBaseName = 'org.iets3.opensource.allScripts'
-    from artifactsDir
-    include 'org.iets3.opensource.allScripts.build/**'
-}
-
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     archiveBaseName = 'org.iets3.opensource'
     from artifactsDir
@@ -247,7 +241,7 @@ task packageDistroWithDependencies(type: Zip, dependsOn: buildDistroWithDependen
     include 'org.iets3.opensource.distro/**'
 }
 
-assemble.dependsOn packageAllScripts, packageLanguages, packageTests
+assemble.dependsOn packageLanguages, packageTests
 
 publishing {
     repositories {
@@ -263,11 +257,6 @@ publishing {
     }
         
     publications {
-        allScripts(MavenPublication) {
-            groupId 'org.iets3.opensource'
-            artifactId 'allScripts'
-            artifact packageAllScripts
-        }
         openSource(MavenPublication) {
             groupId 'org.iets3'
             artifactId 'opensource'
