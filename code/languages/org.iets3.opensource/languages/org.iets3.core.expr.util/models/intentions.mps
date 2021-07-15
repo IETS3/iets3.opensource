@@ -18,6 +18,7 @@
     <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="wthy" ref="r:a4614e23-a6b5-4dbe-9bc5-9ff1ecfd0a3a(org.iets3.core.expr.util.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
@@ -259,6 +260,7 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
@@ -419,6 +421,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="7RxIimvw1Yu" role="lGtFl">
+      <property role="1SWRpm" value="TREE" />
     </node>
   </node>
   <node concept="2S6QgY" id="3HmE5WaZXXK">
@@ -4379,6 +4384,38 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7RxIimvtOIO">
+    <property role="3GE5qa" value="dectree" />
+    <property role="TrG5h" value="addChildren" />
+    <ref role="2ZfgGC" to="kfo3:22hm_0$b7cw" resolve="DecTreeNode" />
+    <node concept="2S6ZIM" id="7RxIimvtOIP" role="2ZfVej">
+      <node concept="3clFbS" id="7RxIimvtOIQ" role="2VODD2">
+        <node concept="3clFbF" id="7RxIimvtOZ_" role="3cqZAp">
+          <node concept="Xl_RD" id="7RxIimvtOZ$" role="3clFbG">
+            <property role="Xl_RC" value="Add Child" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7RxIimvtOIR" role="2ZfgGD">
+      <node concept="3clFbS" id="7RxIimvtOIS" role="2VODD2">
+        <node concept="3clFbF" id="7RxIimvtRyU" role="3cqZAp">
+          <node concept="2OqwBi" id="7RxIimvtT_Q" role="3clFbG">
+            <node concept="2OqwBi" id="7RxIimvtRES" role="2Oq$k0">
+              <node concept="2Sf5sV" id="7RxIimvtRyT" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7RxIimvtRPX" role="2OqNvi">
+                <ref role="3TtcxE" to="kfo3:22hm_0$b7pP" resolve="children" />
+              </node>
+            </node>
+            <node concept="WFELt" id="7RxIimvtV7R" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="7RxIimvtPhP" role="lGtFl">
+      <property role="1SWRpm" value="TREE" />
     </node>
   </node>
 </model>

@@ -63,7 +63,7 @@ def major = "2020"
 def minor = "3"
 
 // Dependency versions
-ext.mpsVersion = '2020.3.1'
+ext.mpsVersion = '2020.3.4'
 
 def mbeddrVersion = "2020.3+"
 
@@ -71,6 +71,7 @@ def mbeddrVersion = "2020.3+"
 // the name is enough no trailing "." is required, also the plain name from git can
 // be used here. No need to convert "/" the script will take care of that.
 def mbeddrBranch = ""
+def currentBranch = ""
 
 
 if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
@@ -85,10 +86,10 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     version = project.iets3OpenSourceVersion
 } else {
     if (ciBuild) {
-        String branch = GitBasedVersioning.gitBranch
+        currentBranch = GitBasedVersioning.gitBranch
 
         def buildNumber = System.env.BUILD_NUMBER.toInteger()
-        if (branch.startsWith("maintenance") || branch.startsWith("mps")) {
+        if (currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
             version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
         } else {
             version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)
@@ -134,12 +135,14 @@ configurations {
     mps
     languageLibs
     junitAnt
+    pcollections // Synced to org.iets3.core.expr.base.collections.stubs/lib
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
+    pcollections 'org.pcollections:pcollections:3.1.4'
 }
 
 repositories {
@@ -158,7 +161,7 @@ repositories {
     mavenCentral()
 }
 
-task resolveMps(type: Copy) {
+task resolveMps(type: Sync) {
     dependsOn configurations.mps
     from {
         configurations.mps.resolve().collect { zipTree(it) }
@@ -166,12 +169,31 @@ task resolveMps(type: Copy) {
     into "$buildDir/mps"
 }
 
-task resolveLanguageLibs(type: Copy) {
+task resolveLanguageLibs(type: Sync) {
     from {
         configurations.languageLibs.resolve().collect { zipTree(it) }
     }
     into "$buildDir/dependencies"
 }
+
+task resolvePcollections(type: Sync) {
+    from configurations.pcollections
+    into file('code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.base.collections.stubs/lib')
+
+    // Strip version numbers from file names
+    rename { filename ->
+        def ra = configurations.pcollections.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+        String finalName
+        if (ra.classifier != null) {
+            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
+        } else {
+            finalName = "${ra.name}.${ra.extension}"
+        }
+        return finalName
+    }
+}
+
+task resolveDependencies(dependsOn: [resolveLanguageLibs, resolvePcollections])
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
@@ -193,7 +215,7 @@ ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
 ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
-task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs]) {
+task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveDependencies]) {
     script "$buildDir/scripts/build-allScripts.xml"
 }
 
@@ -216,12 +238,6 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
 }
 
 check.dependsOn buildAndRunTests
-
-task packageAllScripts(type: Zip, dependsOn: buildAllScripts) {
-    archiveBaseName = 'org.iets3.opensource.allScripts'
-    from artifactsDir
-    include 'org.iets3.opensource.allScripts.build/**'
-}
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     archiveBaseName = 'org.iets3.opensource'
@@ -246,7 +262,28 @@ task packageDistroWithDependencies(type: Zip, dependsOn: buildDistroWithDependen
     include 'org.iets3.opensource.distro/**'
 }
 
-assemble.dependsOn packageAllScripts, packageLanguages, packageTests
+assemble.dependsOn packageLanguages, packageTests
+
+static def addDependency(Object pom, Object groupId, Object artifactId, Object version, Object type = null) {
+    pom.withXml { XmlProvider prov ->
+        Node root = prov.asNode()
+        Node deps = root.dependencies[0] ?: root.appendNode("dependencies")
+        def dep = deps.appendNode("dependency")
+        dep.appendNode("groupId", groupId)
+        dep.appendNode("artifactId", artifactId)
+        dep.appendNode("version", version)
+        if (type != null) {
+            dep.appendNode("type", type)
+        }
+    }
+}
+
+static def addDependency(Object pom, Configuration config) {
+    config.resolvedConfiguration.firstLevelModuleDependencies.each {
+        addDependency(pom, it.moduleGroup, it.moduleName, it.moduleVersion, it.moduleArtifacts[0].type)
+    }
+
+}
 
 publishing {
     repositories {
@@ -260,55 +297,100 @@ publishing {
             }
         }
     }
-    publications {
-        allScripts(MavenPublication) {
-            groupId 'org.iets3.opensource'
-            artifactId 'allScripts'
-            artifact packageAllScripts
+    repositories {
+        if(currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
+                maven {
+                    name = "GitHubPackages"
+                    url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")
+                    if(project.hasProperty("gpr.token")) {
+                        credentials {
+                            username = project.findProperty("gpr.user")
+                            password = project.findProperty("gpr.token")
+                        }
+                    }
+                }
+            }
         }
+        
+    publications {
         openSource(MavenPublication) {
             groupId 'org.iets3'
             artifactId 'opensource'
             artifact packageLanguages
-            pom.withXml {
-                def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each{
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                }
-                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                    dependencyNode.appendNode('scope', 'provided')
-                }
-            }
+
+            addDependency(pom, configurations.languageLibs)
         }
+
         tests(MavenPublication) {
             groupId 'org.iets3.opensource'
             artifactId 'tests'
             artifact packageTests
-            pom.withXml {
-                def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                }
+
+            addDependency(pom, 'org.iets3', 'opensource', project.version, 'zip')
+        }
+
+        def runtimesDir = new File(artifactsDir, 'org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os')
+
+        'org.iets3.core.expr.base.shared.runtime'(MavenPublication) {
+            groupId 'org.iets3.core.expr.base.shared'
+            artifactId 'shared-runtime'
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.base.shared.runtime.jar')) {
+                builtBy buildLanguages
             }
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.base.shared.runtime-src.jar')) {
+                builtBy buildLanguages
+                classifier 'sources'
+            }
+        }
+
+        'org.iets3.core.expr.simpleTypes.runtime'(MavenPublication) {
+            // GitHub Packages refuse uppercase artifactId (not sure about groupId) so use lower case here
+            groupId 'org.iets3.core.expr.simpletypes'
+            artifactId 'simpletypes-runtime'
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.simpleTypes.runtime.jar')) {
+                builtBy buildLanguages
+            }
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.simpleTypes.runtime-src.jar')) {
+                builtBy buildLanguages
+                classifier 'sources'
+            }
+
+            addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
+        }
+
+        'org.iets3.core.expr.datetime.runtime'(MavenPublication) {
+            groupId 'org.iets3.core.expr.datetime'
+            artifactId 'datetime-runtime'
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.datetime.runtime.jar')) {
+                builtBy buildLanguages
+            }
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.datetime.runtime-src.jar')) {
+                builtBy buildLanguages
+                classifier 'sources'
+            }
+
+            addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
+        }
+
+        'org.iets3.core.expr.temporal.runtime'(MavenPublication) {
+            groupId 'org.iets3.core.expr.temporal'
+            artifactId 'temporal-runtime'
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.temporal.runtime.jar')) {
+                builtBy buildLanguages
+            }
+            artifact(new File(runtimesDir, 'org.iets3.core.expr.temporal.runtime-src.jar')) {
+                builtBy buildLanguages
+                classifier 'sources'
+            }
+
+            addDependency(pom, 'org.iets3.core.expr.datetime', 'datetime-runtime', project.version)
         }
     }
 }
 
+
 task generateLibrariesXml(type: GenerateLibrariesXml) {
-    dependsOn resolveLanguageLibs
+    dependsOn resolveDependencies
     description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
     defaults rootProject.file('projectlibraries.properties')
     overrides rootProject.file('projectlibraries.overrides.properties')
@@ -317,7 +399,7 @@ task generateLibrariesXml(type: GenerateLibrariesXml) {
 
 task setup {
     dependsOn generateLibrariesXml
-    dependsOn resolveLanguageLibs
+    dependsOn resolveDependencies
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 

@@ -155,6 +155,13 @@
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
+      <concept id="8825352096210458329" name="org.iets3.core.expr.simpleTypes.structure.RoundUpRoundingMode" flags="ng" index="1M9Agw" />
+      <concept id="8825352096210456368" name="org.iets3.core.expr.simpleTypes.structure.RoundDownRoundingMode" flags="ng" index="1M9BR9" />
+      <concept id="8825352096209502465" name="org.iets3.core.expr.simpleTypes.structure.ConvertPrecisionNumberExpression" flags="ng" index="1MaffS">
+        <property id="8825352096209722453" name="targetPrecision" index="1MbqUG" />
+        <child id="8825352096209502752" name="rounding" index="1Maf3p" />
+        <child id="8825352096209502545" name="expr" index="1MafeC" />
+      </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
@@ -2229,7 +2236,7 @@
       <node concept="_fkuZ" id="17MOwOjMDJk" role="_fkp5">
         <node concept="_fku$" id="17MOwOjMDJl" role="_fkur" />
         <node concept="30bXRB" id="17MOwOjMDJN" role="_fkuS">
-          <property role="30bXRw" value="0" />
+          <property role="30bXRw" value="0.5" />
         </node>
         <node concept="30dvO6" id="17MOwOjMDJt" role="_fkuY">
           <node concept="_emDc" id="17MOwOjMDJu" role="30dEs_">
@@ -2303,6 +2310,42 @@
         </node>
         <node concept="30bXRB" id="620LAS5PSCe" role="_fkuS">
           <property role="30bXRw" value="3" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6xqpdoQvk1a" role="_fkp5">
+        <node concept="_fku$" id="6xqpdoQvk1b" role="_fkur" />
+        <node concept="30bXRB" id="6xqpdoQvk7E" role="_fkuS">
+          <property role="30bXRw" value="0" />
+        </node>
+        <node concept="3Ed6Qv" id="6xqpdoQvk1X" role="_fkuY">
+          <node concept="1MaffS" id="6xqpdoQvk1Z" role="30dEsF">
+            <property role="1MbqUG" value="0" />
+            <node concept="1M9BR9" id="6xqpdoQvk20" role="1Maf3p" />
+            <node concept="30bXRB" id="6xqpdoQvk3w" role="1MafeC">
+              <property role="30bXRw" value="2.2" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="6xqpdoQKA$T" role="30dEs_">
+            <property role="30bXRw" value="2" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6xqpdoQvk7T" role="_fkp5">
+        <node concept="_fku$" id="6xqpdoQvk7U" role="_fkur" />
+        <node concept="3Ed6Qv" id="6xqpdoQvk7W" role="_fkuY">
+          <node concept="30bXRB" id="6xqpdoQKABp" role="30dEsF">
+            <property role="30bXRw" value="3" />
+          </node>
+          <node concept="1MaffS" id="6xqpdoQJNQM" role="30dEs_">
+            <property role="1MbqUG" value="0" />
+            <node concept="1M9Agw" id="6xqpdoQJNSV" role="1Maf3p" />
+            <node concept="30bXRB" id="6xqpdoQJNXE" role="1MafeC">
+              <property role="30bXRw" value="1.8" />
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="6xqpdoQvkgs" role="_fkuS">
+          <property role="30bXRw" value="1" />
         </node>
       </node>
     </node>

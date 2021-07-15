@@ -62,6 +62,7 @@
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156724025" name="org.iets3.core.expr.base.structure.LogicalAndExpression" flags="ng" index="30deo4" />
+      <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
@@ -132,6 +133,12 @@
       <concept id="867786408880429238" name="org.iets3.core.expr.lambda.structure.FunResExpr" flags="ng" index="Ic2ui" />
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
+      </concept>
+      <concept id="4790956042241105569" name="org.iets3.core.expr.lambda.structure.ValRef" flags="ng" index="1adzI2">
+        <reference id="4790956042241106533" name="val" index="1adwt6" />
+      </concept>
+      <concept id="4790956042241053102" name="org.iets3.core.expr.lambda.structure.ValExpression" flags="ng" index="1adJid">
+        <child id="4790956042241053105" name="expr" index="1adJij" />
       </concept>
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
@@ -631,6 +638,92 @@
             <property role="30bdrQ" value="two" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="4dTV265D_6E" role="_iOnB" />
+    <node concept="_fkuM" id="4dTV265D_fT" role="_iOnB">
+      <property role="TrG5h" value="alt_withBlockExpression" />
+      <node concept="_fkuZ" id="70U3EDJbGzf" role="_fkp5">
+        <node concept="_fku$" id="70U3EDJbGzg" role="_fkur" />
+        <node concept="2fGnzi" id="70U3EDJbGFb" role="_fkuY">
+          <node concept="2fGnzd" id="70U3EDJbGFc" role="2fGnxs">
+            <node concept="30cPrO" id="70U3EDJbGM8" role="2fGnzS">
+              <node concept="30bXRB" id="70U3EDJbGIE" role="30dEsF">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="4dTV265D_x5" role="30dEs_">
+                <property role="30bXRw" value="1" />
+              </node>
+            </node>
+            <node concept="1aduha" id="4dTV265CMcz" role="2fGnzA">
+              <node concept="1adJid" id="4dTV265CMgS" role="1aduh9">
+                <property role="TrG5h" value="v1" />
+                <node concept="30dDTi" id="4dTV265D$iQ" role="1adJij">
+                  <node concept="30bXRB" id="4dTV265D$l1" role="30dEs_">
+                    <property role="30bXRw" value="2" />
+                  </node>
+                  <node concept="30bXRB" id="4dTV265CMn5" role="30dEsF">
+                    <property role="30bXRw" value="5" />
+                  </node>
+                </node>
+              </node>
+              <node concept="30cPrO" id="4dTV265CMIR" role="1aduh9">
+                <node concept="1adzI2" id="4dTV265D$x3" role="30dEsF">
+                  <ref role="1adwt6" node="4dTV265CMgS" resolve="v1" />
+                </node>
+                <node concept="30bXRB" id="4dTV265CMR5" role="30dEs_">
+                  <property role="30bXRw" value="10" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2fGnzd" id="70U3EDJbGFd" role="2fGnxs">
+            <node concept="2fHqz8" id="70U3EDJbGYF" role="2fGnzS" />
+            <node concept="2vmpn$" id="4dTV265DA0Q" role="2fGnzA" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4dTV265DNxB" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4dTV265D_ps" role="_fkp5">
+        <node concept="_fku$" id="4dTV265D_pt" role="_fkur" />
+        <node concept="2fGnzi" id="4dTV265D_pu" role="_fkuY">
+          <node concept="2fGnzd" id="4dTV265D_pv" role="2fGnxs">
+            <node concept="30cPrO" id="4dTV265D_pw" role="2fGnzS">
+              <node concept="30bXRB" id="4dTV265D_px" role="30dEs_">
+                <property role="30bXRw" value="2" />
+              </node>
+              <node concept="30bXRB" id="4dTV265D_py" role="30dEsF">
+                <property role="30bXRw" value="1" />
+              </node>
+            </node>
+            <node concept="2vmpnb" id="4dTV265D_pz" role="2fGnzA" />
+          </node>
+          <node concept="2fGnzd" id="4dTV265D_p$" role="2fGnxs">
+            <node concept="2fHqz8" id="4dTV265D_p_" role="2fGnzS" />
+            <node concept="1aduha" id="4dTV265D_pA" role="2fGnzA">
+              <node concept="1adJid" id="4dTV265D_pB" role="1aduh9">
+                <property role="TrG5h" value="v1" />
+                <node concept="30dDTi" id="4dTV265D_pC" role="1adJij">
+                  <node concept="30bXRB" id="4dTV265D_pD" role="30dEs_">
+                    <property role="30bXRw" value="2" />
+                  </node>
+                  <node concept="30bXRB" id="4dTV265D_pE" role="30dEsF">
+                    <property role="30bXRw" value="5" />
+                  </node>
+                </node>
+              </node>
+              <node concept="30cPrO" id="4dTV265D_pF" role="1aduh9">
+                <node concept="1adzI2" id="4dTV265D_pG" role="30dEsF">
+                  <ref role="1adwt6" node="4dTV265D_pB" resolve="v1" />
+                </node>
+                <node concept="30bXRB" id="4dTV265D_pH" role="30dEs_">
+                  <property role="30bXRw" value="11" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpn$" id="4dTV265D_pI" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="38v7GtLshx2" role="_iOnB" />
