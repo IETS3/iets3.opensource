@@ -6507,9 +6507,10 @@
     <node concept="3clFbS" id="1e59C2QAnjk" role="18ibNy">
       <node concept="1Z5TYs" id="1e59C2QAnqP" role="3cqZAp">
         <node concept="mw_s8" id="1e59C2QAnr6" role="1ZfhKB">
-          <node concept="2YIFZM" id="1e59C2QAnvw" role="mwGJk">
-            <ref role="37wK5l" to="xfg9:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+          <node concept="2YIFZM" id="1ipJiAd97w8" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQcM" resolve="createIntegerType" />
             <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="10Nm6u" id="1ipJiAd97wQ" role="37wK5m" />
           </node>
         </node>
         <node concept="mw_s8" id="1e59C2QAnqS" role="1ZfhK$">
