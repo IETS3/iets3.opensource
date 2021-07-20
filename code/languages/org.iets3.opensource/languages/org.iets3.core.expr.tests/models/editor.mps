@@ -6850,7 +6850,7 @@
     <property role="TrG5h" value="deleteIgnored" />
     <ref role="1h_SK9" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1hA7zw" id="48NC6VzTcmA" role="1h_SK8">
-      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="48NC6VzTcmB" role="1hA7z_">
         <node concept="3clFbS" id="48NC6VzTcmC" role="2VODD2">
           <node concept="3clFbF" id="48NC6VzTcpH" role="3cqZAp">
