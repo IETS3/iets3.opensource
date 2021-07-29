@@ -15,7 +15,6 @@
   </languages>
   <imports>
     <import index="rwy4" ref="r:dc36b815-cc5f-47dd-b809-d31b38ba045f(org.iets3.opensource.general.tests.input_genallAdvanced)" />
-    <import index="2s2o" ref="r:8306fa45-311f-4fca-b74d-7650d321387f(org.iets3.opensource.general.tests.input_genallCore)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -106,7 +105,7 @@
     <node concept="2zPypq" id="1JLBAby$zvn" role="_iOnC">
       <property role="TrG5h" value="x0_imported" />
       <node concept="_emDc" id="1JLBAby$zvs" role="2zPyp_">
-        <ref role="_emDf" to="2s2o:1ZNBV$i_1cU" resolve="x0" />
+        <ref role="_emDf" to="rwy4:1JLBAby$zv4" resolve="x0" />
       </node>
     </node>
     <node concept="2zPypq" id="1JLBAby$zvo" role="_iOnC">
