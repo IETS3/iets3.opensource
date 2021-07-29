@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8306fa45-311f-4fca-b74d-7650d321387f(org.iets3.opensource.general.tests.input)">
+<model ref="r:8306fa45-311f-4fca-b74d-7650d321387f(org.iets3.opensource.general.tests.input_genallCore)">
   <persistence version="9" />
   <languages>
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
