@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -1080,7 +1081,7 @@
         </node>
         <node concept="1SiIV0" id="1xAVBiVNUY8" role="3bR37C">
           <node concept="3bR9La" id="1xAVBiVNUY9" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
         <node concept="1yeLz9" id="2dsVKXl6w7h" role="1TViLv">
@@ -1989,7 +1990,7 @@
         </node>
         <node concept="1SiIV0" id="1xAVBiVO9lu" role="3bR37C">
           <node concept="3bR9La" id="1xAVBiVO9lv" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
         <node concept="1SiIV0" id="_I$tx9JuJx" role="3bR37C">
@@ -2608,7 +2609,7 @@
         </node>
         <node concept="1SiIV0" id="6jwb0AdbdAb" role="3bR37C">
           <node concept="3bR9La" id="6jwb0AdbdAc" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
         <node concept="1SiIV0" id="7Rre3VrvFNX" role="3bR37C">
@@ -2647,23 +2648,6 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="3qKzW8QxKo4" role="1HemKq">
-            <node concept="398BVA" id="3qKzW8QxKnS" role="3LXTmr">
-              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="3qKzW8QxKnT" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3qKzW8QxKnU" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.core.expr.base.gen.runtime" />
-                  <node concept="2Ry0Ak" id="3qKzW8QxKnV" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="3qKzW8QxKo5" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
           <node concept="3LXTmp" id="3qKzW8QyS5E" role="1HemKq">
             <node concept="398BVA" id="3qKzW8QyS5v" role="3LXTmr">
               <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
@@ -2991,22 +2975,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="3rtmxn" id="7759dYaYs1_" role="3bR31x">
-          <node concept="3LXTmp" id="7759dYaYs1A" role="3rtmxm">
-            <node concept="3qWCbU" id="7759dYaYs1B" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="398BVA" id="7759dYaYs1C" role="3LXTmr">
-              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="7759dYaYs1D" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7759dYaYs1E" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.core.expr.base.collections.stubs" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="2GW3_x5pdwZ" role="3bR37C">
           <node concept="1BurEX" id="2GW3_x5pdx0" role="1SiIV1">
             <node concept="398BVA" id="2GW3_x5pdwM" role="1BurEY">
@@ -3021,6 +2989,22 @@
                       <property role="2Ry0Am" value="pcollections.jar" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="7759dYaYs1_" role="3bR31x">
+          <node concept="3LXTmp" id="7759dYaYs1A" role="3rtmxm">
+            <node concept="3qWCbU" id="7759dYaYs1B" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7759dYaYs1C" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="7759dYaYs1D" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7759dYaYs1E" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.base.collections.stubs" />
                 </node>
               </node>
             </node>
@@ -4921,7 +4905,7 @@
         </node>
         <node concept="1SiIV0" id="24LQtH$aC5M" role="3bR37C">
           <node concept="3bR9La" id="24LQtH$aC5N" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
         <node concept="1SiIV0" id="41Htm9hEJu2" role="3bR37C">
@@ -4987,9 +4971,9 @@
             <ref role="3bR37D" node="ub9nkyRnyj" resolve="org.iets3.core.expr.tests" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5Pgo_AS_Qef" role="3bR37C">
-          <node concept="3bR9La" id="5Pgo_AS_Qeg" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1xb0AuwMYDt" resolve="Hamcrest" />
+        <node concept="1SiIV0" id="7SjyARDYWey" role="3bR37C">
+          <node concept="3bR9La" id="7SjyARDYWez" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
           </node>
         </node>
         <node concept="1BupzO" id="1RMC8GHEwHZ" role="3bR31x">
@@ -12517,6 +12501,549 @@
         <ref role="3ygNvj" node="5wLtKNeSRRM" />
       </node>
     </node>
+  </node>
+  <node concept="1l3spW" id="1YwzPHwBxn0">
+    <property role="2DA0ip" value="../../../../../build/scripts" />
+    <property role="TrG5h" value="iets3.os.prebuild" />
+    <property role="turDy" value="prebuild.xml" />
+    <node concept="2igEWh" id="sIFyDYHT4z" role="1hWBAP">
+      <property role="3UIfUI" value="10000" />
+      <property role="1YnnvL" value="1024" />
+    </node>
+    <node concept="1E1JtD" id="1YwzPHwBxpc" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="org.iets3.analysis.base" />
+      <property role="3LESm3" value="db8bd035-3f51-41d8-8fed-954c202d18be" />
+      <node concept="3rtmxn" id="1YwzPHwBxpd" role="3bR31x">
+        <node concept="3LXTmp" id="1YwzPHwBxpe" role="3rtmxm">
+          <node concept="3qWCbU" id="1YwzPHwBxpf" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="1YwzPHwBxpg" role="3LXTmr">
+            <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="1YwzPHwBxph" role="iGT6I">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="1YwzPHwBxpi" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.analysis.base" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="398BVA" id="1YwzPHwBxpj" role="3LF7KH">
+        <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+        <node concept="2Ry0Ak" id="1YwzPHwBxpk" role="iGT6I">
+          <property role="2Ry0Am" value="languages" />
+          <node concept="2Ry0Ak" id="1YwzPHwBxpl" role="2Ry0An">
+            <property role="2Ry0Am" value="org.iets3.analysis.base" />
+            <node concept="2Ry0Ak" id="1YwzPHwBxpm" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.analysis.base.mpl" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxpn" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxpo" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxpp" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxpq" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxpr" role="3bR37C">
+        <node concept="1Busua" id="1YwzPHwBxps" role="1SiIV1">
+          <ref role="1Busuk" node="1YwzPHwBxrz" resolve="org.iets3.core.base" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxpt" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxpu" role="1SiIV1">
+          <ref role="3bR37D" node="1YwzPHwBxrz" resolve="org.iets3.core.base" />
+        </node>
+      </node>
+      <node concept="1BupzO" id="1YwzPHwBxpv" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="1YwzPHwBxpw" role="1HemKq">
+          <node concept="398BVA" id="1YwzPHwBxpx" role="3LXTmr">
+            <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="1YwzPHwBxpy" role="iGT6I">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="1YwzPHwBxpz" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.analysis.base" />
+                <node concept="2Ry0Ak" id="1YwzPHwBxp$" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="1YwzPHwBxp_" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxpA" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxpB" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxpC" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxpD" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxpE" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxpF" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxpG" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxpH" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxpI" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxpJ" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="7HhDSr27$0" role="3bR37C">
+        <node concept="3bR9La" id="7HhDSr27$1" role="1SiIV1">
+          <ref role="3bR37D" node="sIFyDYEAVO" resolve="org.iets3.core.expr.base" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E1JtD" id="1YwzPHwBxrz" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="org.iets3.core.base" />
+      <property role="3LESm3" value="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" />
+      <node concept="3rtmxn" id="1YwzPHwBxr$" role="3bR31x">
+        <node concept="3LXTmp" id="1YwzPHwBxr_" role="3rtmxm">
+          <node concept="3qWCbU" id="1YwzPHwBxrA" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="1YwzPHwBxrB" role="3LXTmr">
+            <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="1YwzPHwBxrC" role="iGT6I">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="1YwzPHwBxrD" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.base" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="398BVA" id="1YwzPHwBxrE" role="3LF7KH">
+        <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+        <node concept="2Ry0Ak" id="1YwzPHwBxrF" role="iGT6I">
+          <property role="2Ry0Am" value="languages" />
+          <node concept="2Ry0Ak" id="1YwzPHwBxrG" role="2Ry0An">
+            <property role="2Ry0Am" value="org.iets3.core.base" />
+            <node concept="2Ry0Ak" id="1YwzPHwBxrH" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.base.mpl" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxrI" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxrJ" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxrK" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxrL" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxrM" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxrN" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxrO" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxrP" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxrQ" role="3bR37C">
+        <node concept="1Busua" id="1YwzPHwBxrR" role="1SiIV1">
+          <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1YwzPHwBxrS" role="3bR37C">
+        <node concept="3bR9La" id="1YwzPHwBxrT" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
+        </node>
+      </node>
+      <node concept="1BupzO" id="1YwzPHwBxrU" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="1YwzPHwBxrV" role="1HemKq">
+          <node concept="398BVA" id="1YwzPHwBxrW" role="3LXTmr">
+            <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="1YwzPHwBxrX" role="iGT6I">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="1YwzPHwBxrY" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.base" />
+                <node concept="2Ry0Ak" id="1YwzPHwBxrZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="1YwzPHwBxs0" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1E1JtA" id="sIFyDYEApj" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="org.iets3.core.expr.base.runtime" />
+      <property role="3LESm3" value="dbe08fb5-334d-4b64-86a0-622406fa0e87" />
+      <node concept="398BVA" id="sIFyDYEApk" role="3LF7KH">
+        <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+        <node concept="2Ry0Ak" id="sIFyDYEApl" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="sIFyDYEApm" role="2Ry0An">
+            <property role="2Ry0Am" value="org.iets3.core.expr.base.runtime" />
+            <node concept="2Ry0Ak" id="sIFyDYEApn" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.base.runtime.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEApo" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEApp" role="1SiIV1">
+          <ref role="3bR37D" node="sIFyDYEAVO" resolve="org.iets3.core.expr.base" />
+        </node>
+      </node>
+      <node concept="1BupzO" id="sIFyDYEApq" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="sIFyDYEApr" role="1HemKq">
+          <node concept="398BVA" id="sIFyDYEAps" role="3LXTmr">
+            <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="sIFyDYEApt" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="sIFyDYEApu" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.base.runtime" />
+                <node concept="2Ry0Ak" id="sIFyDYEApv" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="sIFyDYEApw" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="3rtmxn" id="sIFyDYEApx" role="3bR31x">
+        <node concept="3LXTmp" id="sIFyDYEApy" role="3rtmxm">
+          <node concept="3qWCbU" id="sIFyDYEApz" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="sIFyDYEAp$" role="3LXTmr">
+            <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="sIFyDYEAp_" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="sIFyDYEApA" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.base.runtime" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEApB" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEApC" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEApD" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEApE" role="1SiIV1">
+          <ref role="3bR37D" node="sIFyDYEAtA" resolve="org.iets3.core.expr.base.shared.runtime" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E1JtA" id="sIFyDYEAtA" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="org.iets3.core.expr.base.shared.runtime" />
+      <property role="3LESm3" value="00ca1323-762b-4f39-ab5a-6a6bd602dc4b" />
+      <node concept="398BVA" id="sIFyDYEAtB" role="3LF7KH">
+        <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+        <node concept="2Ry0Ak" id="sIFyDYEAtC" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="sIFyDYEAtD" role="2Ry0An">
+            <property role="2Ry0Am" value="org.iets3.core.expr.base.shared.runtime" />
+            <node concept="2Ry0Ak" id="sIFyDYEAtE" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.base.shared.runtime.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1BupzO" id="sIFyDYEAtF" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="sIFyDYEAtG" role="1HemKq">
+          <node concept="398BVA" id="sIFyDYEAtH" role="3LXTmr">
+            <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="sIFyDYEAtI" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="sIFyDYEAtJ" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.base.shared.runtime" />
+                <node concept="2Ry0Ak" id="sIFyDYEAtK" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="sIFyDYEAtL" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAtM" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAtN" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E1JtD" id="sIFyDYEAVO" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="org.iets3.core.expr.base" />
+      <property role="3LESm3" value="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" />
+      <node concept="3rtmxn" id="sIFyDYEAVP" role="3bR31x">
+        <node concept="3LXTmp" id="sIFyDYEAVQ" role="3rtmxm">
+          <node concept="3qWCbU" id="sIFyDYEAVR" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="sIFyDYEAVS" role="3LXTmr">
+            <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="sIFyDYEAVT" role="iGT6I">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="sIFyDYEAVU" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.base" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="398BVA" id="sIFyDYEAVV" role="3LF7KH">
+        <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+        <node concept="2Ry0Ak" id="sIFyDYEAVW" role="iGT6I">
+          <property role="2Ry0Am" value="languages" />
+          <node concept="2Ry0Ak" id="sIFyDYEAVX" role="2Ry0An">
+            <property role="2Ry0Am" value="org.iets3.core.expr.base" />
+            <node concept="2Ry0Ak" id="sIFyDYEAVY" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.base.mpl" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAVZ" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAW0" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAW1" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAW2" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAW3" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAW4" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAW5" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAW6" role="1SiIV1">
+          <property role="3bR36h" value="true" />
+          <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAW7" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAW8" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAW9" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAWa" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWb" role="3bR37C">
+        <node concept="1Busua" id="sIFyDYEAWc" role="1SiIV1">
+          <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWd" role="3bR37C">
+        <node concept="1Busua" id="sIFyDYEAWe" role="1SiIV1">
+          <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWf" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAWg" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWh" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAWi" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWj" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAWk" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWl" role="3bR37C">
+        <node concept="1Busua" id="sIFyDYEAWm" role="1SiIV1">
+          <ref role="1Busuk" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWn" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAWo" role="1SiIV1">
+          <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.mpsutil.traceExplorer" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWp" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAWq" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWr" role="3bR37C">
+        <node concept="1Busua" id="sIFyDYEAWs" role="1SiIV1">
+          <ref role="1Busuk" node="1YwzPHwBxrz" resolve="org.iets3.core.base" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWt" role="3bR37C">
+        <node concept="1Busua" id="sIFyDYEAWu" role="1SiIV1">
+          <ref role="1Busuk" node="1YwzPHwBxpc" resolve="org.iets3.analysis.base" />
+        </node>
+      </node>
+      <node concept="1E0d5M" id="sIFyDYEAWv" role="1E1XAP">
+        <ref role="1E0d5P" node="sIFyDYEApj" resolve="org.iets3.core.expr.base.runtime" />
+      </node>
+      <node concept="1BupzO" id="sIFyDYEAWw" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="sIFyDYEAWx" role="1HemKq">
+          <node concept="398BVA" id="sIFyDYEAWy" role="3LXTmr">
+            <ref role="398BVh" node="1YwzPHwBxnf" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="sIFyDYEAWz" role="iGT6I">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="sIFyDYEAW$" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.base" />
+                <node concept="2Ry0Ak" id="sIFyDYEAW_" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="sIFyDYEAWA" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="sIFyDYEAWB" role="3bR37C">
+        <node concept="3bR9La" id="sIFyDYEAWC" role="1SiIV1">
+          <ref role="3bR37D" node="sIFyDYEAtA" resolve="org.iets3.core.expr.base.shared.runtime" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="7HhDSr27$I" role="3bR37C">
+        <node concept="3bR9La" id="7HhDSr27$J" role="1SiIV1">
+          <ref role="3bR37D" node="sIFyDYEApj" resolve="org.iets3.core.expr.base.runtime" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="1YwzPHwBxon" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
+      <node concept="398BVA" id="1YwzPHwBxoo" role="2JcizS">
+        <ref role="398BVh" node="1YwzPHwBxnb" resolve="mps.home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="1YwzPHwBxop" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="1YwzPHwBxoq" role="2JcizS">
+        <ref role="398BVh" node="1YwzPHwBxno" resolve="dependencies.mbeddr.platform" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="1YwzPHwBxor" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:7pdFgzxlDme" resolve="mpsBuild" />
+      <node concept="398BVA" id="1YwzPHwBxos" role="2JcizS">
+        <ref role="398BVh" node="1YwzPHwBxnb" resolve="mps.home" />
+      </node>
+    </node>
+    <node concept="398rNT" id="1YwzPHwBxn7" role="1l3spd">
+      <property role="TrG5h" value="iets3.github.opensource.home" />
+      <node concept="55IIr" id="1YwzPHwBxn8" role="398pKh">
+        <node concept="2Ry0Ak" id="1YwzPHwBxn9" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="1YwzPHwBxna" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1YwzPHwBxnb" role="1l3spd">
+      <property role="TrG5h" value="mps.home" />
+      <node concept="398BVA" id="1YwzPHwBxnc" role="398pKh">
+        <ref role="398BVh" node="1YwzPHwBxn7" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="1YwzPHwBxnd" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="1YwzPHwBxne" role="2Ry0An">
+            <property role="2Ry0Am" value="mps" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1YwzPHwBxnf" role="1l3spd">
+      <property role="TrG5h" value="iets3.lang.opensource" />
+      <node concept="398BVA" id="1YwzPHwBxng" role="398pKh">
+        <ref role="398BVh" node="1YwzPHwBxn7" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="1YwzPHwBxnh" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="1YwzPHwBxni" role="2Ry0An">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="1YwzPHwBxnj" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.opensource" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1YwzPHwBxnk" role="1l3spd">
+      <property role="TrG5h" value="dependencies.root" />
+      <node concept="398BVA" id="1YwzPHwBxnl" role="398pKh">
+        <ref role="398BVh" node="1YwzPHwBxn7" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="1YwzPHwBxnm" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="1YwzPHwBxnn" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1YwzPHwBxno" role="1l3spd">
+      <property role="TrG5h" value="dependencies.mbeddr.platform" />
+      <node concept="398BVA" id="1YwzPHwBxnp" role="398pKh">
+        <ref role="398BVh" node="1YwzPHwBxnk" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="1YwzPHwBxnq" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
+    <node concept="10PD9b" id="1YwzPHwBxn3" role="10PD9s" />
+    <node concept="3b7kt6" id="1YwzPHwBxn4" role="10PD9s" />
+    <node concept="55IIr" id="1YwzPHwBxn1" role="auvoZ" />
+    <node concept="1l3spV" id="1YwzPHwBxn2" role="1l3spN" />
   </node>
 </model>
 
