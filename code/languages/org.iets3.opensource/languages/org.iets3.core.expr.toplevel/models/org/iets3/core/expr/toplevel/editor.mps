@@ -1562,38 +1562,6 @@
     <property role="3GE5qa" value="function" />
     <property role="TrG5h" value="deleteFunParens" />
     <ref role="1h_SK9" to="yv47:49WTic8f4iz" resolve="Function" />
-    <node concept="1hA7zw" id="2KGel$SrnV1" role="1h_SK8">
-      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
-      <node concept="1hAIg9" id="2KGel$SrnV2" role="1hA7z_">
-        <node concept="3clFbS" id="2KGel$SrnV3" role="2VODD2">
-          <node concept="3clFbF" id="2KGel$Srwcj" role="3cqZAp">
-            <node concept="2OqwBi" id="2KGel$Srwhq" role="3clFbG">
-              <node concept="0IXxy" id="2KGel$Srwci" role="2Oq$k0" />
-              <node concept="1P9Npp" id="2KGel$SrwvT" role="2OqNvi">
-                <node concept="2OqwBi" id="2KGel$Srw_$" role="1P9ThW">
-                  <node concept="0IXxy" id="2KGel$Srwwc" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="2KGel$SrwOt" role="2OqNvi">
-                    <ref role="37wK5l" to="nu60:2KGel$SrpZz" resolve="transformToConstant" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="jK8Ss" id="2KGel$SrvKR" role="jK8aL">
-        <node concept="3clFbS" id="2KGel$SrvKS" role="2VODD2">
-          <node concept="3clFbF" id="2KGel$SrvM0" role="3cqZAp">
-            <node concept="2OqwBi" id="2KGel$SrvSV" role="3clFbG">
-              <node concept="0IXxy" id="2KGel$SrvLZ" role="2Oq$k0" />
-              <node concept="2qgKlT" id="2KGel$Srw8x" role="2OqNvi">
-                <ref role="37wK5l" to="nu60:2KGel$SrrHp" resolve="canBeTransformedIntoConstant" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1hA7zw" id="2KGel$SrwRj" role="1h_SK8">
       <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="2KGel$SrwRk" role="1hA7z_">
@@ -3076,49 +3044,6 @@
     <property role="3GE5qa" value="function" />
     <property role="TrG5h" value="unwrap" />
     <ref role="1h_SK9" to="yv47:49WTic8gFfG" resolve="FunctionCall" />
-    <node concept="1hA7zw" id="5sTgzMChPd6" role="1h_SK8">
-      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
-      <node concept="1hAIg9" id="5sTgzMChPd7" role="1hA7z_">
-        <node concept="3clFbS" id="5sTgzMChPd8" role="2VODD2">
-          <node concept="3clFbF" id="5sTgzMChPd9" role="3cqZAp">
-            <node concept="2OqwBi" id="5sTgzMChPda" role="3clFbG">
-              <node concept="0IXxy" id="5sTgzMChPdb" role="2Oq$k0" />
-              <node concept="1P9Npp" id="5sTgzMChPdc" role="2OqNvi">
-                <node concept="2OqwBi" id="91pmpwa4_K" role="1P9ThW">
-                  <node concept="2OqwBi" id="5sTgzMChPdd" role="2Oq$k0">
-                    <node concept="0IXxy" id="5sTgzMChPde" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="91pmpwa2cR" role="2OqNvi">
-                      <ref role="3TtcxE" to="zzzn:49WTic8gvyA" resolve="args" />
-                    </node>
-                  </node>
-                  <node concept="1uHKPH" id="91pmpwa8n1" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="jK8Ss" id="5sTgzMChPdg" role="jK8aL">
-        <node concept="3clFbS" id="5sTgzMChPdh" role="2VODD2">
-          <node concept="3clFbF" id="5sTgzMChPdi" role="3cqZAp">
-            <node concept="3clFbC" id="91pmpw9UMC" role="3clFbG">
-              <node concept="3cmrfG" id="91pmpwa101" role="3uHU7w">
-                <property role="3cmrfH" value="1" />
-              </node>
-              <node concept="2OqwBi" id="5sTgzMChTDG" role="3uHU7B">
-                <node concept="2OqwBi" id="5sTgzMChQL$" role="2Oq$k0">
-                  <node concept="0IXxy" id="5sTgzMChQuT" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="5sTgzMChRdh" role="2OqNvi">
-                    <ref role="3TtcxE" to="zzzn:49WTic8gvyA" resolve="args" />
-                  </node>
-                </node>
-                <node concept="34oBXx" id="91pmpw9RZc" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1hA7zw" id="5sTgzMChPdm" role="1h_SK8">
       <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="5sTgzMChPdn" role="1hA7z_">

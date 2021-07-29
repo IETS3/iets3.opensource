@@ -711,19 +711,6 @@
   <node concept="1h_SRR" id="NE1gl52AW1">
     <property role="TrG5h" value="DeleteDDD" />
     <ref role="1h_SK9" to="34lm:NE1gl52$xw" resolve="DotDotDot" />
-    <node concept="1hA7zw" id="NE1gl52AW2" role="1h_SK8">
-      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
-      <node concept="1hAIg9" id="NE1gl52AW3" role="1hA7z_">
-        <node concept="3clFbS" id="NE1gl52AW4" role="2VODD2">
-          <node concept="3clFbF" id="NE1gl52AWh" role="3cqZAp">
-            <node concept="2OqwBi" id="NE1gl52B4x" role="3clFbG">
-              <node concept="0IXxy" id="NE1gl52AWg" role="2Oq$k0" />
-              <node concept="3YRAZt" id="NE1gl52BKr" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1hA7zw" id="NE1gl52BMK" role="1h_SK8">
       <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="NE1gl52BML" role="1hA7z_">
@@ -808,19 +795,6 @@
             <node concept="2OqwBi" id="4vZ65iKq6ET" role="3clFbG">
               <node concept="0IXxy" id="4vZ65iKq6xY" role="2Oq$k0" />
               <node concept="3YRAZt" id="4vZ65iKq6V_" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1hA7zw" id="4vZ65iKq6Xw" role="1h_SK8">
-      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
-      <node concept="1hAIg9" id="4vZ65iKq6Xx" role="1hA7z_">
-        <node concept="3clFbS" id="4vZ65iKq6Xy" role="2VODD2">
-          <node concept="3clFbF" id="4vZ65iKq6Xz" role="3cqZAp">
-            <node concept="2OqwBi" id="4vZ65iKq6X$" role="3clFbG">
-              <node concept="0IXxy" id="4vZ65iKq6X_" role="2Oq$k0" />
-              <node concept="3YRAZt" id="4vZ65iKq6XA" role="2OqNvi" />
             </node>
           </node>
         </node>

@@ -6501,5 +6501,31 @@
       <ref role="1YaFvo" to="700h:twWOnQMGuT" resolve="ListPickOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="1e59C2QAnjj">
+    <property role="TrG5h" value="typeof_IndexOfOp" />
+    <property role="3GE5qa" value="ordered" />
+    <node concept="3clFbS" id="1e59C2QAnjk" role="18ibNy">
+      <node concept="1Z5TYs" id="1e59C2QAnqP" role="3cqZAp">
+        <node concept="mw_s8" id="1e59C2QAnr6" role="1ZfhKB">
+          <node concept="2YIFZM" id="1ipJiAd97w8" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQcM" resolve="createIntegerType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="10Nm6u" id="1ipJiAd97wQ" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="1e59C2QAnqS" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1e59C2QAnjq" role="mwGJk">
+            <node concept="1YBJjd" id="1e59C2QAnjE" role="1Z2MuG">
+              <ref role="1YBMHb" node="1e59C2QAnjm" resolve="indexOfOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1e59C2QAnjm" role="1YuTPh">
+      <property role="TrG5h" value="indexOfOp" />
+      <ref role="1YaFvo" to="700h:1e59C2QAniP" resolve="IndexOfOp" />
+    </node>
+  </node>
 </model>
 

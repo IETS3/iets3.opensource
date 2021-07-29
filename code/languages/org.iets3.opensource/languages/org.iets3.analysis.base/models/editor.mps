@@ -210,19 +210,6 @@
     <property role="TrG5h" value="deleteSolverControl" />
     <property role="3GE5qa" value="control" />
     <ref role="1h_SK9" to="l80j:3DYDRw0WRrP" resolve="SolveControl" />
-    <node concept="1hA7zw" id="3DYDRw0XrFJ" role="1h_SK8">
-      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
-      <node concept="1hAIg9" id="3DYDRw0XrFK" role="1hA7z_">
-        <node concept="3clFbS" id="3DYDRw0XrFL" role="2VODD2">
-          <node concept="3clFbF" id="3DYDRw0XrFT" role="3cqZAp">
-            <node concept="2OqwBi" id="3DYDRw0XrHO" role="3clFbG">
-              <node concept="0IXxy" id="3DYDRw0XrFS" role="2Oq$k0" />
-              <node concept="3YRAZt" id="3DYDRw0XrN4" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1hA7zw" id="3DYDRw0XrNg" role="1h_SK8">
       <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="3DYDRw0XrNh" role="1hA7z_">
