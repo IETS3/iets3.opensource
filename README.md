@@ -33,6 +33,10 @@ For details see [wiki](https://github.com/IETS3/iets3.opensource/wiki/Supported-
 ### Slack
 Ask your questions about KernelF and talk to other users and authors of the IETS3 language library on the public [Slack channel](https://jetbrains-mps.slack.com/archives/CBM449YG5)
 
+## Opening the project in MPS
+
+Open the folder [ROOT]/code/languages/org.iets3.opensource in MPS where ROOT is the root folder of this project.
+
 ## Project Structure
 
 The project is separated into the following virtual packages:
