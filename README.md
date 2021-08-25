@@ -29,6 +29,10 @@ https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20203))
 - MPS 2020.1 (branch: [maintenance/mps20201](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20201)) 
 - MPS 2019.3 (branch: [maintenance/mps20193](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20193)) 
 
+## Opening the project in MPS
+
+Open the folder [ROOT]/code/languages/org.iets3.opensource in MPS where ROOT is the root folder of this project.
+
 ## Project Structure
 
 The project is separated into the following virtual packages:
