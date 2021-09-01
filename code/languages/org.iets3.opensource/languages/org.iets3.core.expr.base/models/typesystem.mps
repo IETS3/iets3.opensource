@@ -9978,5 +9978,30 @@
       <ref role="1YaFvo" to="hm2y:3tcv7J0pmjC" resolve="EmptyType" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3JN4mhXDQum">
+    <property role="TrG5h" value="typeof_OrTag" />
+    <property role="3GE5qa" value="group" />
+    <node concept="3clFbS" id="3JN4mhXDQun" role="18ibNy">
+      <node concept="1Z5TYs" id="3JN4mhXDQut" role="3cqZAp">
+        <node concept="mw_s8" id="3JN4mhXDQuu" role="1ZfhKB">
+          <node concept="2YIFZM" id="3JN4mhXDQuv" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3JN4mhXDQuw" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3JN4mhXDQux" role="mwGJk">
+            <node concept="1YBJjd" id="3JN4mhXDR3H" role="1Z2MuG">
+              <ref role="1YBMHb" node="3JN4mhXDQup" resolve="orTag" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3JN4mhXDQup" role="1YuTPh">
+      <property role="TrG5h" value="orTag" />
+      <ref role="1YaFvo" to="hm2y:6WstIz8Gccd" resolve="OrTag" />
+    </node>
+  </node>
 </model>
 
