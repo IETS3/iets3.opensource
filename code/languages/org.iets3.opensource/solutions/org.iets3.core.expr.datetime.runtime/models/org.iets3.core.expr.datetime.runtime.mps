@@ -58,6 +58,7 @@
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -2828,8 +2829,8 @@
           <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
         </node>
       </node>
-      <node concept="3uibUv" id="7fmv$FC7mf0" role="3clF45">
-        <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+      <node concept="3uibUv" id="71iF5NcAUe9" role="3clF45">
+        <ref role="3uigEE" node="7khFtBHHXIi" resolve="ArbitraryDateRangeValue" />
       </node>
       <node concept="3Tm1VV" id="7fmv$FC7j0l" role="1B3o_S" />
       <node concept="3clFbS" id="7fmv$FC7j0m" role="3clF47">
@@ -2848,8 +2849,8 @@
           <node concept="3clFbS" id="7fmv$FC7jR4" role="3clFbx">
             <node concept="3cpWs6" id="7fmv$FC7kt5" role="3cqZAp">
               <node concept="2ShNRf" id="7fmv$FC7kw6" role="3cqZAk">
-                <node concept="HV5vD" id="7fmv$FC7kP3" role="2ShVmc">
-                  <ref role="HV5vE" node="4O9rw8aCYPg" resolve="EmptyDateRangeValue" />
+                <node concept="1pGfFk" id="71iF5NcAU6o" role="2ShVmc">
+                  <ref role="37wK5l" node="71iF5NcALUq" resolve="EmptyDateRangeValue" />
                 </node>
               </node>
             </node>
@@ -4240,11 +4241,22 @@
   <node concept="312cEu" id="4O9rw8aCYPg">
     <property role="TrG5h" value="EmptyDateRangeValue" />
     <node concept="2tJIrI" id="4O9rw8aF3DE" role="jymVt" />
-    <node concept="2tJIrI" id="4O9rw8aF3JI" role="jymVt" />
     <node concept="3Tm1VV" id="4O9rw8aCYPh" role="1B3o_S" />
-    <node concept="3uibUv" id="4O9rw8aCZ39" role="1zkMxy">
-      <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+    <node concept="3uibUv" id="71iF5NcAJ9l" role="1zkMxy">
+      <ref role="3uigEE" node="7khFtBHHXIi" resolve="ArbitraryDateRangeValue" />
     </node>
+    <node concept="3clFbW" id="71iF5NcALUq" role="jymVt">
+      <node concept="3cqZAl" id="71iF5NcALUr" role="3clF45" />
+      <node concept="3Tm1VV" id="71iF5NcALUs" role="1B3o_S" />
+      <node concept="3clFbS" id="71iF5NcALUI" role="3clF47">
+        <node concept="XkiVB" id="71iF5NcALUJ" role="3cqZAp">
+          <ref role="37wK5l" node="7khFtBHHXIt" resolve="ArbitraryDateRangeValue" />
+          <node concept="10Nm6u" id="71iF5NcANRB" role="37wK5m" />
+          <node concept="10Nm6u" id="71iF5NcAPtq" role="37wK5m" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="71iF5NcAMCw" role="jymVt" />
     <node concept="3clFb_" id="4O9rw8aCZ67" role="jymVt">
       <property role="TrG5h" value="begin" />
       <node concept="3uibUv" id="4O9rw8aCZ68" role="3clF45">
