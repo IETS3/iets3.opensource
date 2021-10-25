@@ -441,7 +441,8 @@
   <node concept="1TIwiD" id="4399ITS_dMM">
     <property role="EcuMT" value="4668305294413323442" />
     <property role="TrG5h" value="ToleranceExpr" />
-    <property role="34LRSv" value="tolerance" />
+    <property role="34LRSv" value="±" />
+    <property role="R4oN_" value="tolerance" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4399ITS_ea3" role="1TKVEi">
       <property role="IQ2ns" value="4668305294413324931" />
