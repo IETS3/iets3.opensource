@@ -637,5 +637,206 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3HiHZey87Wz">
+    <property role="EcuMT" value="4274681253352996643" />
+    <property role="TrG5h" value="TimeType" />
+    <property role="34LRSv" value="time" />
+    <property role="3GE5qa" value="time" />
+    <property role="R4oN_" value="hours and minutes" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZey9lU5">
+    <property role="EcuMT" value="4274681253353315973" />
+    <property role="3GE5qa" value="time" />
+    <property role="TrG5h" value="MakeTime" />
+    <property role="34LRSv" value="makeTime" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3HiHZey9lU6" role="1TKVEi">
+      <property role="IQ2ns" value="4274681253353315974" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="hourExpr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3HiHZey9lU7" role="1TKVEi">
+      <property role="IQ2ns" value="4274681253353315975" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="minutesExpr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3HiHZeybRMz" role="1TKVEi">
+      <property role="IQ2ns" value="4274681253353979043" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="secondsExpr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3HiHZey9lUa">
+    <property role="EcuMT" value="4274681253353315978" />
+    <property role="3GE5qa" value="time" />
+    <property role="TrG5h" value="TimeLiteral" />
+    <property role="34LRSv" value="\" />
+    <property role="R4oN_" value="time literal" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyi" id="3HiHZey9lUb" role="1TKVEl">
+      <property role="IQ2nx" value="4274681253353315979" />
+      <property role="TrG5h" value="hh" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3HiHZey9lUd" role="1TKVEl">
+      <property role="IQ2nx" value="4274681253353315981" />
+      <property role="TrG5h" value="mm" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3HiHZeyb5uA" role="1TKVEl">
+      <property role="IQ2nx" value="4274681253353772966" />
+      <property role="TrG5h" value="ss" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3HiHZeyb5tJ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyb5sw">
+    <property role="EcuMT" value="4274681253353772832" />
+    <property role="3GE5qa" value="time" />
+    <property role="TrG5h" value="HourRangeLiteral" />
+    <property role="34LRSv" value="hour" />
+    <property role="R4oN_" value="a period of an hour" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyi" id="3HiHZeyb5tL" role="1TKVEl">
+      <property role="IQ2nx" value="4274681253353772913" />
+      <property role="TrG5h" value="hh" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3HiHZeyb5sx" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3HiHZeycpLJ">
+    <property role="EcuMT" value="4274681253354118255" />
+    <property role="3GE5qa" value="time.op" />
+    <property role="TrG5h" value="MinuteValue" />
+    <property role="34LRSv" value="minute" />
+    <property role="R4oN_" value="returns the minute component of a time" />
+    <ref role="1TJDcQ" node="3HiHZeycpLK" resolve="TimeOp" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeycpLK">
+    <property role="EcuMT" value="4274681253354118256" />
+    <property role="3GE5qa" value="time.op" />
+    <property role="TrG5h" value="TimeOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="--" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3HiHZeycpLL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3HiHZeycqWK">
+    <property role="EcuMT" value="4274681253354123056" />
+    <property role="3GE5qa" value="time.op" />
+    <property role="TrG5h" value="HourValue" />
+    <property role="34LRSv" value="hour" />
+    <property role="R4oN_" value="returns the hour component of a time" />
+    <ref role="1TJDcQ" node="3HiHZeycpLK" resolve="TimeOp" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeycqYu">
+    <property role="EcuMT" value="4274681253354123166" />
+    <property role="3GE5qa" value="time.op" />
+    <property role="TrG5h" value="SecondValue" />
+    <property role="34LRSv" value="second" />
+    <property role="R4oN_" value="returns the second component of a time" />
+    <ref role="1TJDcQ" node="3HiHZeycpLK" resolve="TimeOp" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyhTnY">
+    <property role="EcuMT" value="4274681253355558398" />
+    <property role="3GE5qa" value="time.delta" />
+    <property role="TrG5h" value="TimeDeltaLiteral" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3HiHZeyhTo1" role="1TKVEi">
+      <property role="IQ2ns" value="4274681253355558401" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="3HiHZeyhTnZ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyhWvB">
+    <property role="EcuMT" value="4274681253355571175" />
+    <property role="3GE5qa" value="time.delta" />
+    <property role="TrG5h" value="HoursDeltaLiteral" />
+    <property role="34LRSv" value="hours" />
+    <ref role="1TJDcQ" node="3HiHZeyhTnY" resolve="TimeDeltaLiteral" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyhWvC">
+    <property role="EcuMT" value="4274681253355571176" />
+    <property role="3GE5qa" value="time.delta" />
+    <property role="TrG5h" value="MinutesDeltaLiteral" />
+    <property role="34LRSv" value="minutes" />
+    <ref role="1TJDcQ" node="3HiHZeyhTnY" resolve="TimeDeltaLiteral" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyhWvD">
+    <property role="EcuMT" value="4274681253355571177" />
+    <property role="3GE5qa" value="time.delta" />
+    <property role="TrG5h" value="SecondsDeltaLiteral" />
+    <property role="34LRSv" value="seconds" />
+    <ref role="1TJDcQ" node="3HiHZeyhTnY" resolve="TimeDeltaLiteral" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyiDmj">
+    <property role="EcuMT" value="4274681253355754899" />
+    <property role="3GE5qa" value="time.delta" />
+    <property role="TrG5h" value="HoursDeltaType" />
+    <property role="34LRSv" value="hours" />
+    <property role="R4oN_" value="a period of hours" />
+    <ref role="1TJDcQ" node="3HiHZeyiDmk" resolve="TimeDeltaType" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyiDmk">
+    <property role="EcuMT" value="4274681253355754900" />
+    <property role="3GE5qa" value="time.delta" />
+    <property role="TrG5h" value="TimeDeltaType" />
+    <property role="34LRSv" value="timedelta" />
+    <property role="R4oN_" value="--" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyiDml">
+    <property role="EcuMT" value="4274681253355754901" />
+    <property role="3GE5qa" value="time.delta" />
+    <property role="TrG5h" value="MinutesDeltaType" />
+    <property role="R4oN_" value="a period of minutes" />
+    <property role="34LRSv" value="minutes" />
+    <ref role="1TJDcQ" node="3HiHZeyiDmk" resolve="TimeDeltaType" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyiDmm">
+    <property role="EcuMT" value="4274681253355754902" />
+    <property role="3GE5qa" value="time.delta" />
+    <property role="TrG5h" value="SecondsDeltaType" />
+    <property role="R4oN_" value="a period of seconds" />
+    <property role="34LRSv" value="seconds" />
+    <ref role="1TJDcQ" node="3HiHZeyiDmk" resolve="TimeDeltaType" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyqRqC">
+    <property role="EcuMT" value="4274681253357909672" />
+    <property role="3GE5qa" value="time.op" />
+    <property role="TrG5h" value="TimeToStringOp" />
+    <property role="34LRSv" value="toString" />
+    <property role="R4oN_" value="a string representation of a time" />
+    <ref role="1TJDcQ" node="3HiHZeycpLK" resolve="TimeOp" />
+  </node>
+  <node concept="1TIwiD" id="3HiHZeyrT$S">
+    <property role="EcuMT" value="4274681253358180664" />
+    <property role="3GE5qa" value="time.delta" />
+    <property role="TrG5h" value="TimeDeltaToNumberOp" />
+    <property role="34LRSv" value="toNumber" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3HiHZeyrT$T" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
 </model>
 
