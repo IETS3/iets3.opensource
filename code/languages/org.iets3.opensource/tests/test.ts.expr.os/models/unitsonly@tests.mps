@@ -341,6 +341,12 @@
       </concept>
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
+      <concept id="7740953487936183912" name="org.iets3.core.expr.toplevel.structure.Typedef" flags="ng" index="1WbbD7">
+        <child id="7740953487936183915" name="originalType" index="1WbbD4" />
+      </concept>
+      <concept id="7740953487936184022" name="org.iets3.core.expr.toplevel.structure.TypedefType" flags="ng" index="1WbbFT">
+        <reference id="7740953487936184023" name="typedef" index="1WbbFS" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -2225,6 +2231,37 @@
               </node>
               <node concept="2gteS_" id="77FPJvcLcpb" role="2gteVg">
                 <property role="2gteVv" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1WbbD7" id="3vbD2Cjzqz1" role="_iOnC">
+          <property role="TrG5h" value="numInM" />
+          <node concept="2c7tTJ" id="3vbD2Cjzq_i" role="1WbbD4">
+            <node concept="CIsGf" id="3vbD2Cjzq_A" role="2c7tTI">
+              <node concept="CIsvn" id="3vbD2Cjzq_$" role="CIi4h">
+                <ref role="CIi3I" to="ku0a:5XaocLWHSS4" resolve="m" />
+              </node>
+            </node>
+            <node concept="mLuIC" id="3vbD2Cjzq_a" role="2c7tTw" />
+          </node>
+        </node>
+        <node concept="1WbbD7" id="3vbD2Cj$PEP" role="_iOnC">
+          <property role="TrG5h" value="doubleUnit" />
+          <node concept="2c7tTJ" id="3vbD2Cj$PHm" role="1WbbD4">
+            <node concept="CIsGf" id="3vbD2Cj$PI2" role="2c7tTI">
+              <node concept="CIsvn" id="3vbD2Cj$PI0" role="CIi4h">
+                <ref role="CIi3I" to="ku0a:5XaocLWHSS4" resolve="m" />
+              </node>
+            </node>
+            <node concept="1WbbFT" id="3vbD2Cj$PH3" role="2c7tTw">
+              <ref role="1WbbFS" node="3vbD2Cjzqz1" resolve="numInM" />
+            </node>
+            <node concept="7CXmI" id="3vbD2Cj_d1N" role="lGtFl">
+              <node concept="1TM$A" id="3vbD2Cj_d1O" role="7EUXB">
+                <node concept="2PYRI3" id="3vbD2Cj_nNm" role="3lydEf">
+                  <ref role="39XzEq" to="xqtf:3vbD2Cjzjw1" />
+                </node>
               </node>
             </node>
           </node>
