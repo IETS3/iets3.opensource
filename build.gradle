@@ -11,7 +11,7 @@ buildscript {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.175.cc60dc8'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.6.281.3790039'
     }
 }
 
@@ -21,28 +21,15 @@ plugins {
     id 'co.riiid.gradle' version '0.4.2'
 }
 
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-def jdk_home
+apply plugin: 'download-jbr'
 
-if (ext.has('java11_home')) {
-    jdk_home = ext.get('java11_home')
-} else if (System.getenv('JB_JAVA11_HOME') != null) {
-    jdk_home = System.getenv('JB_JAVA11_HOME')
-} else {
-    def expected = JavaVersion.VERSION_11
-    if (JavaVersion.current() != expected) {
-        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
-                + "  * Use project property java11_home to point to the Java 11 JDK.\n"
-                + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
-                + "  * Run Gradle using Java 11")
-    }
-    jdk_home = System.getProperty('java.home')
+// configure jbr download
+downloadJbr {
+    // jbrVersion = '11_0_6-b520.66'
+    // jbrVersion = '11_0_9_1-b1145.77'
+    jbrVersion = '11_0_10-b1145.96'
 }
-
-// Check JDK location
-if (!new File(jdk_home, "lib").exists()) {
-    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
-}
+def jdk_home = "./build/jbrDownload/jbr"
 
 logger.info 'Using JDK at {}', jdk_home
 
@@ -161,6 +148,7 @@ repositories {
     mavenCentral()
 }
 
+
 task resolveMps(type: Sync) {
     dependsOn configurations.mps
     from {
@@ -193,7 +181,7 @@ task resolvePcollections(type: Sync) {
     }
 }
 
-task resolveDependencies(dependsOn: [resolveLanguageLibs, resolvePcollections])
+task resolveDependencies(dependsOn: ['downloadJbr', resolveLanguageLibs, resolvePcollections])
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
