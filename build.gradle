@@ -31,22 +31,6 @@ downloadJbr {
     jbrVersion = '11_0_10-b1145.96'
 }
 
-def jbrDir = "./build/jbrDownload"
-def jdk_home
-
-if(Os.isFamily(Os.FAMILY_MAC)) {
-    //weird layout for mac
-    jdk_home = new File(jbrDir, "jbr/Contents/Home")
-} else if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-    jdk_home = new File(jbrDir, "jbr")
-} else if (Os.isFamily(Os.FAMILY_UNIX)) {
-    jdk_home = new File(jbrDir, "jbr")
-}
-
-logger.info 'Using JDK at {}', jdk_home
-
-ext.jdk_home = jdk_home
-
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
@@ -206,15 +190,22 @@ if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
     defaultScriptArgs.put('mps.ant.log', gradle.startParameter.logLevel.toString().toLowerCase())
 }
 
-def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
-        project.files("$ext.jdk_home/lib/tools.jar")
-
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
 ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
-ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
-ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = project.configurations.junitAnt.fileCollection { true }
 
-task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveDependencies]) {
+task setup {
+    doFirst{
+        project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
+    }
+    dependsOn resolveDependencies
+    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
+}
+
+task buildAllScripts(type: BuildLanguages, dependsOn: [setup, resolveMps, resolveDependencies]) {
+    doFirst{
+        logger.info 'lalalal {}', project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"]
+    }
     script "$buildDir/scripts/build-allScripts.xml"
 }
 
@@ -390,21 +381,6 @@ publishing {
             addDependency(pom, 'org.iets3.core.expr.datetime', 'datetime-runtime', project.version)
         }
     }
-}
-
-
-task generateLibrariesXml(type: GenerateLibrariesXml) {
-    dependsOn resolveDependencies
-    description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
-    defaults rootProject.file('projectlibraries.properties')
-    overrides rootProject.file('projectlibraries.overrides.properties')
-    destination file('code/languages/org.iets3.opensource/.mps/libraries.xml')
-}
-
-task setup {
-    dependsOn generateLibrariesXml
-    dependsOn resolveDependencies
-    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
 defaultTasks 'buildLanguages'
