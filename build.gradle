@@ -22,6 +22,27 @@ plugins {
     id 'co.riiid.gradle' version '0.4.2'
 }
 
+ext.dependencyRepositories = [
+    'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+    'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+]
+
+repositories {
+    mavenLocal()
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+    }
+    mavenCentral()
+}
+
 apply plugin: 'download-jbr'
 
 // configure jbr download
@@ -98,10 +119,6 @@ ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/m
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
 
-ext.dependencyRepositories = [
-    'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-    'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
-]
 
 // 'artifacts' is used in the generated ant scripts as build output directory
 ext.artifactsDir = new File(buildDir, 'artifacts')
@@ -125,22 +142,6 @@ dependencies {
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
     pcollections 'org.pcollections:pcollections:3.1.4'
-}
-
-repositories {
-    mavenLocal()
-    for (repoUrl in project.dependencyRepositories) {
-        maven {
-            url repoUrl
-            if (project.hasProperty('nexusUsername')) {
-                credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
-                }
-            }
-        }
-    }
-    mavenCentral()
 }
 
 
