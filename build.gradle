@@ -4,6 +4,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
+import org.apache.tools.ant.taskdefs.condition.Os
 
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
@@ -29,7 +30,18 @@ downloadJbr {
     // jbrVersion = '11_0_9_1-b1145.77'
     jbrVersion = '11_0_10-b1145.96'
 }
-def jdk_home = "./build/jbrDownload/jbr"
+
+def jbrDir = "./build/jbrDownload"
+def jdk_home
+
+if(Os.isFamily(Os.FAMILY_MAC)) {
+    //weird layout for mac
+    jdk_home = new File(jbrDir, "jbr/Contents/Home")
+} else if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+    jdk_home = new File(jbrDir, "jbr")
+} else if (Os.isFamily(Os.FAMILY_UNIX)) {
+    jdk_home = new File(jbrDir, "jbr")
+}
 
 logger.info 'Using JDK at {}', jdk_home
 
@@ -42,7 +54,6 @@ if (project.hasProperty("forceCI")) {
     //on teamcity we are in a CI build
     ext.ciBuild = project.hasProperty("teamcity")
 }
-
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
