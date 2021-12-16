@@ -34,6 +34,7 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="784421273959492578" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_IncludeMenu" flags="ng" index="mvV$s">
         <child id="784421273959492606" name="nodeFunction" index="mvV$0" />
       </concept>
@@ -769,6 +770,11 @@
         <node concept="3F0ifn" id="7kYh9Wszg3w" role="2czzBI">
           <property role="3F0ifm" value="" />
           <node concept="VPxyj" id="7kYh9Wszg4m" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="tppnM" id="1IYzzr$ldBF" role="sWeuL">
+          <node concept="ljvvj" id="1IYzzr$ldBH" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
