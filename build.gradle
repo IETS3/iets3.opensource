@@ -192,9 +192,6 @@ ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = project.configurations.junitAnt.fileCollection { true }
 
 task setup {
-    doFirst{
-        project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
-    }
     dependsOn resolveDependencies
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
