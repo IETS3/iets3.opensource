@@ -200,9 +200,6 @@ task setup {
 }
 
 task buildAllScripts(type: BuildLanguages, dependsOn: [setup, resolveMps, resolveDependencies]) {
-    doFirst{
-        logger.info 'lalalal {}', project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"]
-    }
     script "$buildDir/scripts/build-allScripts.xml"
 }
 
