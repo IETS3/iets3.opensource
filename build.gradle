@@ -45,8 +45,6 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    // jbrVersion = '11_0_6-b520.66'
-    // jbrVersion = '11_0_9_1-b1145.77'
     jbrVersion = '11_0_10-b1145.96'
 }
 
