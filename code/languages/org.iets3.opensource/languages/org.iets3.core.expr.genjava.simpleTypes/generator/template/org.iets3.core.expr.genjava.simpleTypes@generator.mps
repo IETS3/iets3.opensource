@@ -6,7 +6,6 @@
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="hxvb" ref="r:ebd1eee1-ef85-4edc-907f-bc08f2f6b482(org.iets3.core.expr.genjava.simpleTypes.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
@@ -5013,7 +5012,7 @@
       <ref role="30HIoZ" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
       <node concept="gft3U" id="4lRNjFWThxS" role="1lVwrX">
         <node concept="2YIFZM" id="4lRNjFWTnjw" role="gfFT$">
-          <ref role="37wK5l" to="wfax:4lRNjFWSwEt" resolve="sum" />
+          <ref role="37wK5l" to="wfax:4lRNjFWSwEt" resolve="sumAsBigDecimal" />
           <ref role="1Pybhc" to="wfax:4lRNjFWGzDc" resolve="CollectionHelper" />
           <node concept="2YIFZM" id="4lRNjFWTnjx" role="37wK5m">
             <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
@@ -5044,20 +5043,124 @@
       </node>
       <node concept="30G5F_" id="4lRNjFWThy5" role="30HLyM">
         <node concept="3clFbS" id="4lRNjFWThy6" role="2VODD2">
-          <node concept="3clFbF" id="4lRNjFWThy7" role="3cqZAp">
-            <node concept="2OqwBi" id="4lRNjFWThy8" role="3clFbG">
-              <node concept="2OqwBi" id="4lRNjFWThy9" role="2Oq$k0">
-                <node concept="30H73N" id="4lRNjFWThya" role="2Oq$k0" />
-                <node concept="3TrEf2" id="4lRNjFWThyb" role="2OqNvi">
-                  <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
-                </node>
-              </node>
-              <node concept="1mIQ4w" id="4lRNjFWThyc" role="2OqNvi">
-                <node concept="chp4Y" id="4lRNjFWTmtx" role="cj9EA">
-                  <ref role="cht4Q" to="700h:4Q4DxjD$qtz" resolve="SumOp" />
+          <node concept="3clFbJ" id="7nYU6yJ3DIW" role="3cqZAp">
+            <node concept="3clFbS" id="7nYU6yJ3DIY" role="3clFbx">
+              <node concept="3cpWs6" id="7nYU6yJuhu6" role="3cqZAp">
+                <node concept="3clFbT" id="7nYU6yJuhDc" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
                 </node>
               </node>
             </node>
+            <node concept="1Wc70l" id="7nYU6yJubP9" role="3clFbw">
+              <node concept="2YIFZM" id="7nYU6yJues5" role="3uHU7w">
+                <ref role="37wK5l" to="wfax:7nYU6yJucGT" resolve="isEligibleForBigDecimal" />
+                <ref role="1Pybhc" to="wfax:4lRNjFWGzDc" resolve="CollectionHelper" />
+                <node concept="2OqwBi" id="7nYU6yJug78" role="37wK5m">
+                  <node concept="2OqwBi" id="7nYU6yJuf9_" role="2Oq$k0">
+                    <node concept="30H73N" id="7nYU6yJueMc" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7nYU6yJufCO" role="2OqNvi">
+                      <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                    </node>
+                  </node>
+                  <node concept="3JvlWi" id="7nYU6yJugBA" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4lRNjFWThy8" role="3uHU7B">
+                <node concept="2OqwBi" id="4lRNjFWThy9" role="2Oq$k0">
+                  <node concept="30H73N" id="4lRNjFWThya" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="4lRNjFWThyb" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="4lRNjFWThyc" role="2OqNvi">
+                  <node concept="chp4Y" id="4lRNjFWTmtx" role="cj9EA">
+                    <ref role="cht4Q" to="700h:4Q4DxjD$qtz" resolve="SumOp" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="7nYU6yJ3Ezz" role="3cqZAp">
+            <node concept="3clFbT" id="7nYU6yJ3ESG" role="3cqZAk" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="7nYU6yJ3FiX" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+      <node concept="gft3U" id="7nYU6yJ3FiY" role="1lVwrX">
+        <node concept="2YIFZM" id="7nYU6yJ3P4W" role="gfFT$">
+          <ref role="37wK5l" to="wfax:7nYU6yJ0$7s" resolve="sumAsBigInteger" />
+          <ref role="1Pybhc" to="wfax:4lRNjFWGzDc" resolve="CollectionHelper" />
+          <node concept="2YIFZM" id="7nYU6yJ3P4X" role="37wK5m">
+            <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+            <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
+            <node concept="2ShNRf" id="7nYU6yJ3P4Y" role="37wK5m">
+              <node concept="Tc6Ow" id="7nYU6yJ3P4Z" role="2ShVmc">
+                <node concept="3uibUv" id="7nYU6yJ3P50" role="HW$YZ">
+                  <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
+                </node>
+              </node>
+            </node>
+            <node concept="29HgVG" id="7nYU6yJ3P51" role="lGtFl">
+              <node concept="3NFfHV" id="7nYU6yJ3P52" role="3NFExx">
+                <node concept="3clFbS" id="7nYU6yJ3P53" role="2VODD2">
+                  <node concept="3clFbF" id="7nYU6yJ3P54" role="3cqZAp">
+                    <node concept="2OqwBi" id="7nYU6yJ3P55" role="3clFbG">
+                      <node concept="3TrEf2" id="7nYU6yJ3P56" role="2OqNvi">
+                        <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                      </node>
+                      <node concept="30H73N" id="7nYU6yJ3P57" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="7nYU6yJ3Fjb" role="30HLyM">
+        <node concept="3clFbS" id="7nYU6yJ3Fjc" role="2VODD2">
+          <node concept="3clFbJ" id="7nYU6yJ3Fjd" role="3cqZAp">
+            <node concept="3clFbS" id="7nYU6yJ3Fje" role="3clFbx">
+              <node concept="3cpWs6" id="7nYU6yJAhox" role="3cqZAp">
+                <node concept="3clFbT" id="7nYU6yJAhES" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="7nYU6yJAeG0" role="3clFbw">
+              <node concept="2YIFZM" id="7nYU6yJAfg7" role="3uHU7w">
+                <ref role="37wK5l" to="wfax:7nYU6yJtgp2" resolve="isEligibleForBigInteger" />
+                <ref role="1Pybhc" to="wfax:4lRNjFWGzDc" resolve="CollectionHelper" />
+                <node concept="2OqwBi" id="7nYU6yJAgKS" role="37wK5m">
+                  <node concept="2OqwBi" id="7nYU6yJAfR4" role="2Oq$k0">
+                    <node concept="30H73N" id="7nYU6yJAfy1" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7nYU6yJAgwX" role="2OqNvi">
+                      <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                    </node>
+                  </node>
+                  <node concept="3JvlWi" id="7nYU6yJAheS" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7nYU6yJ3Fj$" role="3uHU7B">
+                <node concept="2OqwBi" id="7nYU6yJ3Fj_" role="2Oq$k0">
+                  <node concept="30H73N" id="7nYU6yJ3FjA" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7nYU6yJ3FjB" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="7nYU6yJ3FjC" role="2OqNvi">
+                  <node concept="chp4Y" id="7nYU6yJ3FjD" role="cj9EA">
+                    <ref role="cht4Q" to="700h:4Q4DxjD$qtz" resolve="SumOp" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="7nYU6yJ3FjE" role="3cqZAp">
+            <node concept="3clFbT" id="7nYU6yJ3FjF" role="3cqZAk" />
           </node>
         </node>
       </node>
