@@ -425,9 +425,6 @@
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
-      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
-      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -7399,8 +7396,10 @@
               <node concept="2OqwBi" id="oj24_oawVk" role="2Oq$k0">
                 <node concept="2OqwBi" id="oj24_oau8l" role="2Oq$k0">
                   <node concept="1Q6Npb" id="oj24_oau0e" role="2Oq$k0" />
-                  <node concept="1j9C0f" id="oj24_oaucY" role="2OqNvi">
-                    <ref role="1j9C0d" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
+                  <node concept="2SmgA7" id="4q5eF0YRWvk" role="2OqNvi">
+                    <node concept="chp4Y" id="4q5eF0YRWNN" role="1dBWTz">
+                      <ref role="cht4Q" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="oj24_oa$fk" role="2OqNvi">
@@ -7661,8 +7660,10 @@
               <node concept="2OqwBi" id="oj24_oclfv" role="2Oq$k0">
                 <node concept="2OqwBi" id="oj24_oclfw" role="2Oq$k0">
                   <node concept="1Q6Npb" id="oj24_oclfx" role="2Oq$k0" />
-                  <node concept="1j9C0f" id="oj24_oclfy" role="2OqNvi">
-                    <ref role="1j9C0d" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
+                  <node concept="2SmgA7" id="4q5eF0YRXhf" role="2OqNvi">
+                    <node concept="chp4Y" id="4q5eF0YRXUU" role="1dBWTz">
+                      <ref role="cht4Q" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="oj24_oclfz" role="2OqNvi">
