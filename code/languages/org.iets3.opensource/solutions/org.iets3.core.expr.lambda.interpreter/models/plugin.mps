@@ -1351,21 +1351,67 @@
     <node concept="qq9P1" id="$yb$20fCiT" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
-      <node concept="3vetai" id="$yb$20fCjs" role="3vQZUl">
-        <node concept="2ShNRf" id="$yb$20fEoZ" role="3vdyny">
-          <node concept="1pGfFk" id="$yb$20fEwf" role="2ShVmc">
-            <ref role="37wK5l" to="sxpq:$yb$20fE3_" resolve="LambdaValue" />
-            <node concept="2OqwBi" id="$yb$20fEyA" role="37wK5m">
-              <node concept="oxGPV" id="$yb$20fEwv" role="2Oq$k0" />
-              <node concept="2qgKlT" id="$yb$20fEBz" role="2OqNvi">
-                <ref role="37wK5l" to="5s8v:$yb$20fCkw" resolve="makeExplicitLambda" />
-                <node concept="oxNuS" id="6ovbtsiW1rd" role="37wK5m" />
+      <node concept="3dA_Gj" id="$o50RKwSys" role="3vQZUl">
+        <node concept="9aQIb" id="$o50RKwSyu" role="3vcmbn">
+          <node concept="3clFbS" id="$o50RKwSyw" role="9aQI4">
+            <node concept="3clFbF" id="$o50RK_X7G" role="3cqZAp">
+              <node concept="2OqwBi" id="$o50RK_Zrr" role="3clFbG">
+                <node concept="2OqwBi" id="$o50RK_XiF" role="2Oq$k0">
+                  <node concept="oxGPV" id="$o50RK_X7E" role="2Oq$k0" />
+                  <node concept="2Rf3mk" id="$o50RK_XMe" role="2OqNvi">
+                    <node concept="1xIGOp" id="$o50RK_ZcS" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="2es0OD" id="$o50RKA0AI" role="2OqNvi">
+                  <node concept="1bVj0M" id="$o50RKA0AK" role="23t8la">
+                    <node concept="3clFbS" id="$o50RKA0AL" role="1bW5cS">
+                      <node concept="3clFbF" id="$o50RKA0Mo" role="3cqZAp">
+                        <node concept="2YIFZM" id="$o50RK$hVX" role="3clFbG">
+                          <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                          <ref role="37wK5l" to="pbu6:2udM7u90M1w" resolve="visitNode" />
+                          <node concept="37vLTw" id="$o50RKA0Xj" role="37wK5m">
+                            <ref role="3cqZAo" node="$o50RKA0AM" resolve="it" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="$o50RKA0AM" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="$o50RKA0AN" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="oxNuS" id="22hm_0zJz3I" role="37wK5m" />
-            <node concept="3fckFw" id="4_qY3E6GDzf" role="37wK5m" />
-            <node concept="3clFbT" id="5ya_dKpuVVq" role="37wK5m">
-              <property role="3clFbU" value="false" />
+            <node concept="3cpWs8" id="$o50RKyA3A" role="3cqZAp">
+              <node concept="3cpWsn" id="$o50RKyA3D" role="3cpWs9">
+                <property role="TrG5h" value="explicitLambda" />
+                <node concept="3Tqbb2" id="$o50RKyA3$" role="1tU5fm">
+                  <ref role="ehGHo" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
+                </node>
+                <node concept="2OqwBi" id="$yb$20fEyA" role="33vP2m">
+                  <node concept="oxGPV" id="$yb$20fEwv" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="$yb$20fEBz" role="2OqNvi">
+                    <ref role="37wK5l" to="5s8v:$yb$20fCkw" resolve="makeExplicitLambda" />
+                    <node concept="oxNuS" id="6ovbtsiW1rd" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="$o50RKwSIW" role="3cqZAp">
+              <node concept="2ShNRf" id="$yb$20fEoZ" role="3cqZAk">
+                <node concept="1pGfFk" id="$yb$20fEwf" role="2ShVmc">
+                  <ref role="37wK5l" to="sxpq:$yb$20fE3_" resolve="LambdaValue" />
+                  <node concept="37vLTw" id="$o50RKyACe" role="37wK5m">
+                    <ref role="3cqZAo" node="$o50RKyA3D" resolve="explicitLambda" />
+                  </node>
+                  <node concept="oxNuS" id="22hm_0zJz3I" role="37wK5m" />
+                  <node concept="3fckFw" id="4_qY3E6GDzf" role="37wK5m" />
+                  <node concept="3clFbT" id="5ya_dKpuVVq" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
