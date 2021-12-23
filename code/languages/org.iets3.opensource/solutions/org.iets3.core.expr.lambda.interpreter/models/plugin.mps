@@ -1312,6 +1312,18 @@
       <node concept="3dA_Gj" id="3oV0py9ehE_" role="3vQZUl">
         <node concept="9aQIb" id="3oV0py9ehEB" role="3vcmbn">
           <node concept="3clFbS" id="3oV0py9ehED" role="9aQI4">
+            <node concept="3clFbF" id="$o50RKtT0N" role="3cqZAp">
+              <node concept="2YIFZM" id="$o50RKtTwg" role="3clFbG">
+                <ref role="37wK5l" to="pbu6:2udM7u90M1w" resolve="visitNode" />
+                <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                <node concept="2OqwBi" id="$o50RKtU3b" role="37wK5m">
+                  <node concept="oxGPV" id="$o50RKtTCl" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="$o50RKtUzv" role="2OqNvi">
+                    <ref role="3Tt5mk" to="zzzn:6zmBjqUkwH3" resolve="expression" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="2YRU1H" id="3oV0py9ehQF" role="3cqZAp">
               <property role="TrG5h" value="arguements" />
               <node concept="2OqwBi" id="3oV0py9ehYR" role="2YRUci">
