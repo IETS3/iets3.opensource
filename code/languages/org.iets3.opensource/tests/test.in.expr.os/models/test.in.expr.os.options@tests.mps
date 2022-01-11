@@ -21,6 +21,10 @@
         <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
       </concept>
       <concept id="8872269265520080263" name="org.iets3.core.expr.collections.structure.SetType" flags="ng" index="2TO1h$" />
+      <concept id="8872269265518788050" name="org.iets3.core.expr.collections.structure.AllOp" flags="ng" index="2TZ5KL" />
+      <concept id="7554398283340020764" name="org.iets3.core.expr.collections.structure.OneArgCollectionOp" flags="ng" index="3iAY4E">
+        <child id="7554398283340020765" name="arg" index="3iAY4F" />
+      </concept>
       <concept id="7554398283339796915" name="org.iets3.core.expr.collections.structure.SizeOp" flags="ng" index="3iB8M5" />
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
@@ -115,6 +119,7 @@
       </concept>
       <concept id="1514143479005139333" name="org.iets3.core.expr.base.structure.LogicalImpliesExpression" flags="ng" index="3o403X" />
       <concept id="8448265401162061756" name="org.iets3.core.expr.base.structure.LogicalIffExpression" flags="ng" index="1DgDcz" />
+      <concept id="3889855429449957987" name="org.iets3.core.expr.base.structure.HasValueOp" flags="ng" index="1I1Gy4" />
       <concept id="3281846772293355652" name="org.iets3.core.expr.base.structure.CastExpression" flags="ng" index="1KhrV4">
         <child id="2396718651941969300" name="expr" index="12NKtY" />
         <child id="3281846772293355657" name="expectedType" index="1KhrV9" />
@@ -293,6 +298,10 @@
       <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
+      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60">
+        <child id="7554398283340741815" name="expression" index="3izI61" />
+      </concept>
+      <concept id="7554398283340826520" name="org.iets3.core.expr.lambda.structure.ShortLambdaItExpression" flags="ng" index="3izPEI" />
     </language>
   </registry>
   <node concept="_iOnU" id="7u9eNXf5ZVJ">
@@ -1324,8 +1333,53 @@
         </node>
         <node concept="1lsf3H" id="7u9eNXgpmwZ" role="1lsf3C">
           <ref role="1lsf3R" node="7u9eNXgpmwF" resolve="name" />
-          <node concept="30bdrP" id="7u9eNXgpmx0" role="1lsf3T">
-            <property role="30bdrQ" value="Voelter" />
+          <node concept="1QScDb" id="oYGkCofCXF" role="1lsf3T">
+            <node concept="1I1Gy4" id="oYGkCofDod" role="1QScD9" />
+            <node concept="1QScDb" id="oYGkCofCaF" role="30czhm">
+              <node concept="1I1Gy4" id="oYGkCofC$Z" role="1QScD9" />
+              <node concept="1QScDb" id="oYGkCoftlk" role="30czhm">
+                <node concept="1I1Gy4" id="oYGkCoftKS" role="1QScD9" />
+                <node concept="1QScDb" id="oYGkCofswA" role="30czhm">
+                  <node concept="1I1Gy4" id="oYGkCofsVW" role="1QScD9" />
+                  <node concept="1QScDb" id="oYGkCofrGe" role="30czhm">
+                    <node concept="1I1Gy4" id="oYGkCofs7m" role="1QScD9" />
+                    <node concept="1QScDb" id="oYGkCoeKb0" role="30czhm">
+                      <node concept="2TZ5KL" id="oYGkCoeKAZ" role="1QScD9">
+                        <node concept="3izI60" id="oYGkCoeKB0" role="3iAY4F">
+                          <node concept="3izPEI" id="oYGkCoeKB2" role="3izI61" />
+                        </node>
+                      </node>
+                      <node concept="1QScDb" id="oYGkCoeHGM" role="30czhm">
+                        <node concept="3MhG1o" id="oYGkCoeI6i" role="1QScD9" />
+                        <node concept="1QScDb" id="oYGkCoeGVw" role="30czhm">
+                          <node concept="2TZ5KL" id="oYGkCoeHkd" role="1QScD9">
+                            <node concept="3izI60" id="oYGkCoeHke" role="3iAY4F">
+                              <node concept="3izPEI" id="oYGkCoeHkg" role="3izI61" />
+                            </node>
+                          </node>
+                          <node concept="1QScDb" id="7OKkDcwmRcb" role="30czhm">
+                            <node concept="3MhG1o" id="7OKkDcwmRxX" role="1QScD9" />
+                            <node concept="1QScDb" id="oYGkCoeFtC" role="30czhm">
+                              <node concept="2TZ5KL" id="oYGkCoeFOG" role="1QScD9">
+                                <node concept="3izI60" id="oYGkCoeFOH" role="3iAY4F">
+                                  <node concept="3izPEI" id="oYGkCoeFOJ" role="3izI61" />
+                                </node>
+                              </node>
+                              <node concept="1QScDb" id="oYGkCoeEnw" role="30czhm">
+                                <node concept="3MhG1o" id="oYGkCoeF7k" role="1QScD9" />
+                                <node concept="30bdrP" id="7u9eNXgpmx0" role="30czhm">
+                                  <property role="30bdrQ" value="Voelter" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1lsf3H" id="7u9eNXgpmx1" role="1lsf3C">
@@ -1334,54 +1388,12 @@
             <property role="30bdrQ" value="Markus" />
           </node>
         </node>
-        <node concept="1lsf3H" id="7u9eNXgpmx3" role="1lsf3C">
-          <ref role="1lsf3R" node="7u9eNXgpmwJ" resolve="middleInitial" />
-          <node concept="30bdrP" id="7u9eNXgpmx4" role="1lsf3T">
-            <property role="30bdrQ" value="M" />
-          </node>
-        </node>
-        <node concept="1lsf3H" id="7u9eNXgpmx5" role="1lsf3C">
-          <ref role="1lsf3R" node="7u9eNXgpmwM" resolve="addresses" />
-          <node concept="2nD44o" id="7u9eNXgpsDb" role="1lsf3T">
-            <node concept="3iBYfx" id="7u9eNXgpmx6" role="2nD44t">
-              <node concept="1lsf3i" id="7u9eNXgpmx7" role="3iBYfI">
-                <node concept="1lseON" id="7u9eNXgpmx8" role="1lsf3s">
-                  <node concept="2Ss9cW" id="7u9eNXgpmx9" role="1lseOX">
-                    <ref role="2Ss9cX" node="7u9eNXgpmwP" resolve="Address" />
-                  </node>
-                </node>
-                <node concept="1lsf3H" id="7u9eNXgpmxa" role="1lsf3C">
-                  <ref role="1lsf3R" node="7u9eNXgpmwQ" resolve="zip" />
-                  <node concept="30bdrP" id="7u9eNXgpmxb" role="1lsf3T">
-                    <property role="30bdrQ" value="70565" />
-                  </node>
-                </node>
-                <node concept="1lsf3H" id="7u9eNXgpmxc" role="1lsf3C">
-                  <ref role="1lsf3R" node="7u9eNXgpmwS" resolve="city" />
-                  <node concept="30bdrP" id="7u9eNXgpmxd" role="1lsf3T">
-                    <property role="30bdrQ" value="Stuttgart" />
-                  </node>
-                </node>
-              </node>
-              <node concept="1lsf3i" id="7u9eNXgpmxe" role="3iBYfI">
-                <node concept="1lseON" id="7u9eNXgpmxf" role="1lsf3s">
-                  <node concept="2Ss9cW" id="7u9eNXgpmxg" role="1lseOX">
-                    <ref role="2Ss9cX" node="7u9eNXgpmwP" resolve="Address" />
-                  </node>
-                </node>
-                <node concept="1lsf3H" id="7u9eNXgpmxh" role="1lsf3C">
-                  <ref role="1lsf3R" node="7u9eNXgpmwQ" resolve="zip" />
-                  <node concept="30bdrP" id="7u9eNXgpmxi" role="1lsf3T">
-                    <property role="30bdrQ" value="70327" />
-                  </node>
-                </node>
-                <node concept="1lsf3H" id="7u9eNXgpmxj" role="1lsf3C">
-                  <ref role="1lsf3R" node="7u9eNXgpmwS" resolve="city" />
-                  <node concept="30bdrP" id="7u9eNXgpmxk" role="1lsf3T">
-                    <property role="30bdrQ" value="Stuttgart" />
-                  </node>
-                </node>
-              </node>
+      </node>
+      <node concept="1z9TsT" id="7OKkDcwnq57" role="lGtFl">
+        <node concept="OjmMv" id="7OKkDcwnq58" role="1w35rA">
+          <node concept="19SGf9" id="7OKkDcwnq59" role="OjmMu">
+            <node concept="19SUe$" id="7OKkDcwnq5a" role="19SJt6">
+              <property role="19SUeA" value="appending another hasValue to the builder expression triggers bad layout when editor width = 90" />
             </node>
           </node>
         </node>
