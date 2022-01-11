@@ -76,6 +76,14 @@
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
       <concept id="1360296727240295837" name="org.iets3.core.expr.tests.structure.OutputValue" flags="ng" index="22E7GR">
         <reference id="1360296727242142914" name="out" index="22x4DC" />
@@ -117,10 +125,18 @@
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
+      <concept id="5285810042889815162" name="org.iets3.core.expr.tests.structure.EmptyTestItem" flags="ng" index="3dYjL0" />
       <concept id="4173623957598806325" name="org.iets3.core.expr.tests.structure.TestItemVectorCollection" flags="ng" index="1jlL7l" />
       <concept id="4173623957598806298" name="org.iets3.core.expr.tests.structure.VectorTestItem" flags="ng" index="1jlL7U">
         <child id="4173623957599346846" name="subject" index="1jbP1Y" />
         <child id="4173623957598806380" name="vectors" index="1jlL6c" />
+      </concept>
+      <concept id="6723982381150106591" name="org.iets3.core.expr.tests.structure.ContainsString" flags="ng" index="3_fT66">
+        <child id="6723982381150106625" name="text" index="3_fTpo" />
+      </concept>
+      <concept id="6723982381143750170" name="org.iets3.core.expr.tests.structure.AssertThatTestItem" flags="ng" index="3_nDh3">
+        <child id="6723982381143776833" name="matcher" index="3_nNKo" />
+        <child id="6723982381143776835" name="value" index="3_nNKq" />
       </concept>
       <concept id="4134712908315838151" name="org.iets3.core.expr.tests.structure.MutationEngine" flags="ng" index="3X0zmW">
         <property id="4134712908325215882" name="numberOfMutations" index="3X$MRL" />
@@ -180,6 +196,14 @@
       <concept id="1360296727230407275" name="org.iets3.core.expr.simpleTypes.tests.structure.RandomVectorProducer" flags="ng" index="2tklN1">
         <property id="1360296727230433969" name="count" index="2tkJgr" />
         <property id="5046167311257675124" name="onlyInteresing" index="1mH3cr" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1716,6 +1740,40 @@
   </node>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
     <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
+  </node>
+  <node concept="_iOnV" id="1JpvOpqZ0or">
+    <property role="TrG5h" value="Bug" />
+    <node concept="_fkuM" id="1JpvOpqZ0ot" role="_iOnC">
+      <property role="TrG5h" value="T" />
+      <node concept="3_nDh3" id="1JpvOpqZ0pj" role="_fkp5">
+        <node concept="30bdrP" id="1JpvOpqZ0Ba" role="3_nNKq">
+          <property role="30bdrQ" value="Hellllllllllllllllllllllllllllllllo" />
+        </node>
+        <node concept="3_fT66" id="1JpvOpqZ0xe" role="3_nNKo">
+          <node concept="30dDZf" id="5cNNe$WLx_" role="3_fTpo">
+            <node concept="30bdrP" id="5cNNe$WLyh" role="30dEs_">
+              <property role="30bdrQ" value="Test" />
+            </node>
+            <node concept="30bdrP" id="1JpvOpqZ0zs" role="30dEsF">
+              <property role="30bdrQ" value="hellllllllllllo" />
+            </node>
+          </node>
+        </node>
+        <node concept="1z9TsT" id="5cNNe$VeLF" role="lGtFl">
+          <node concept="OjmMv" id="5cNNe$VeLG" role="1w35rA">
+            <node concept="19SGf9" id="5cNNe$VeLH" role="OjmMu">
+              <node concept="19SUe$" id="5cNNe$VeLI" role="19SJt6">
+                <property role="19SUeA" value="Hallo" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3dYjL0" id="1JpvOpqZ0IM" role="_fkp5" />
+    </node>
+    <node concept="_ixoA" id="6jztS1eWZtT" role="_iOnC" />
+    <node concept="_ixoA" id="1JpvOpqZ0ow" role="_iOnC" />
+    <node concept="_ixoA" id="1JpvOpqZ0o$" role="_iOnC" />
   </node>
 </model>
 
