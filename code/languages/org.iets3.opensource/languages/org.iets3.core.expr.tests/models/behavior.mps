@@ -3516,13 +3516,8 @@
                           <ref role="3cqZAo" node="2t9qILVQo4P" resolve="result" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="2t9qILVQr9j" role="37wK5m">
-                        <node concept="37vLTw" id="2t9qILVQqYD" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2t9qILVQo4P" resolve="result" />
-                        </node>
-                        <node concept="liA8E" id="2t9qILVQroL" role="2OqNvi">
-                          <ref role="37wK5l" node="7p_bE3JnL8R" resolve="toString" />
-                        </node>
+                      <node concept="Xl_RD" id="5CdIU0lU_SC" role="37wK5m">
+                        <property role="Xl_RC" value="Test item failed" />
                       </node>
                       <node concept="37vLTw" id="2t9qILVQupv" role="37wK5m">
                         <ref role="3cqZAo" node="2t9qILVQtP8" resolve="highlightManager" />
