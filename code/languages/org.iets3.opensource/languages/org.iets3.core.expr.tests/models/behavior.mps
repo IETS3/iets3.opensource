@@ -59,6 +59,8 @@
     <import index="pq1l" ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)" />
     <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="kpve" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.message(MPS.Editor/)" />
+    <import index="2gg1" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors(MPS.Core/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -3501,31 +3503,46 @@
             <node concept="3clFbH" id="2t9qILVSLvc" role="3cqZAp" />
             <node concept="3clFbJ" id="2t9qILVSHz2" role="3cqZAp">
               <node concept="3clFbS" id="2t9qILVSHz4" role="3clFbx">
+                <node concept="3cpWs8" id="3me1J1PAgqL" role="3cqZAp">
+                  <node concept="3cpWsn" id="3me1J1PAgqM" role="3cpWs9">
+                    <property role="TrG5h" value="message" />
+                    <node concept="3uibUv" id="3me1J1PAmgb" role="1tU5fm">
+                      <ref role="3uigEE" to="exr9:~DefaultEditorMessage" resolve="DefaultEditorMessage" />
+                    </node>
+                    <node concept="2ShNRf" id="3me1J1PAgtC" role="33vP2m">
+                      <node concept="1pGfFk" id="3me1J1PAmM3" role="2ShVmc">
+                        <ref role="37wK5l" to="exr9:~DefaultEditorMessage.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.errors.MessageStatus,java.awt.Color,java.lang.String,jetbrains.mps.openapi.editor.message.EditorMessageOwner)" resolve="DefaultEditorMessage" />
+                        <node concept="13iPFW" id="3me1J1PAng$" role="37wK5m" />
+                        <node concept="Rm8GO" id="3me1J1PArJC" role="37wK5m">
+                          <ref role="Rm8GQ" to="2gg1:~MessageStatus.ERROR" resolve="ERROR" />
+                          <ref role="1Px2BO" to="2gg1:~MessageStatus" resolve="MessageStatus" />
+                        </node>
+                        <node concept="2YIFZM" id="2t9qILVQqFp" role="37wK5m">
+                          <ref role="37wK5l" to="rie3:4_qY3E51Kpe" resolve="colorForItem" />
+                          <ref role="1Pybhc" to="rie3:ub9nkyNtXz" resolve="TestColors" />
+                          <node concept="37vLTw" id="2t9qILVQqNO" role="37wK5m">
+                            <ref role="3cqZAo" node="2t9qILVQo4P" resolve="result" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="5CdIU0lU_SC" role="37wK5m">
+                          <property role="Xl_RC" value="Test item failed" />
+                        </node>
+                        <node concept="37vLTw" id="3me1J1PAsCk" role="37wK5m">
+                          <ref role="3cqZAo" node="2t9qILVQtP8" resolve="highlightManager" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="2t9qILVQ0PV" role="3cqZAp">
                   <node concept="2OqwBi" id="2t9qILVQ7gk" role="3clFbG">
                     <node concept="37vLTw" id="2t9qILVQu3k" role="2Oq$k0">
                       <ref role="3cqZAo" node="2t9qILVQtP8" resolve="highlightManager" />
                     </node>
                     <node concept="liA8E" id="2t9qILVQ7w1" role="2OqNvi">
-                      <ref role="37wK5l" to="exr9:~NodeHighlightManager.mark(org.jetbrains.mps.openapi.model.SNode,java.awt.Color,java.lang.String,jetbrains.mps.openapi.editor.message.EditorMessageOwner)" resolve="mark" />
-                      <node concept="13iPFW" id="2t9qILVQpN1" role="37wK5m" />
-                      <node concept="2YIFZM" id="2t9qILVQqFp" role="37wK5m">
-                        <ref role="37wK5l" to="rie3:4_qY3E51Kpe" resolve="colorForItem" />
-                        <ref role="1Pybhc" to="rie3:ub9nkyNtXz" resolve="TestColors" />
-                        <node concept="37vLTw" id="2t9qILVQqNO" role="37wK5m">
-                          <ref role="3cqZAo" node="2t9qILVQo4P" resolve="result" />
-                        </node>
-                      </node>
-                      <node concept="2OqwBi" id="2t9qILVQr9j" role="37wK5m">
-                        <node concept="37vLTw" id="2t9qILVQqYD" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2t9qILVQo4P" resolve="result" />
-                        </node>
-                        <node concept="liA8E" id="2t9qILVQroL" role="2OqNvi">
-                          <ref role="37wK5l" node="7p_bE3JnL8R" resolve="toString" />
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="2t9qILVQupv" role="37wK5m">
-                        <ref role="3cqZAo" node="2t9qILVQtP8" resolve="highlightManager" />
+                      <ref role="37wK5l" to="exr9:~NodeHighlightManager.mark(jetbrains.mps.openapi.editor.message.SimpleEditorMessage)" resolve="mark" />
+                      <node concept="37vLTw" id="3me1J1PAui7" role="37wK5m">
+                        <ref role="3cqZAo" node="3me1J1PAgqM" resolve="message" />
                       </node>
                     </node>
                   </node>
