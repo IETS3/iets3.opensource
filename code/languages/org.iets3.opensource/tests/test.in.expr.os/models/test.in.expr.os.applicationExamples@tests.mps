@@ -16,6 +16,11 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
     </language>
+    <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
+        <property id="7831630342157089649" name="__hash" index="0Rz4W" />
+      </concept>
+    </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="7971844778466793051" name="org.iets3.core.expr.base.structure.AltOption" flags="ng" index="2fGnzd">
         <child id="7971844778466793072" name="then" index="2fGnzA" />
@@ -220,6 +225,7 @@
     <node concept="_ixoA" id="5ElkanPNlMW" role="_iOnB" />
     <node concept="1WbbD7" id="5ElkanPNlMX" role="_iOnB">
       <property role="TrG5h" value="tempInF" />
+      <property role="0Rz4W" value="-184580581" />
       <node concept="mLuIC" id="5ElkanPNlMY" role="1WbbD4">
         <node concept="2gteSW" id="5ElkanPNlMZ" role="2gteSx">
           <property role="2gteSQ" value="93.0" />
@@ -239,6 +245,7 @@
     <node concept="_ixoA" id="5ElkanPNozx" role="_iOnB" />
     <node concept="1aga60" id="5ElkanPNlN5" role="_iOnB">
       <property role="TrG5h" value="FtoC" />
+      <property role="0Rz4W" value="1715211225" />
       <node concept="I61D5" id="78zh7PnstBq" role="I61D6">
         <node concept="I61F8" id="78zh7Pnsu7M" role="I61D1">
           <node concept="30cPrO" id="78zh7PnsuUz" role="I61DU">
@@ -379,6 +386,7 @@
     <node concept="1aga60" id="5ElkanPNlNy" role="_iOnB">
       <property role="1HeIcW" value="true" />
       <property role="TrG5h" value="toC" />
+      <property role="0Rz4W" value="747984078" />
       <node concept="1ahQXy" id="5ElkanPNlNz" role="1ahQWs">
         <property role="TrG5h" value="this" />
         <node concept="2Ss9cW" id="5ElkanPNlN$" role="3ix9CU">
@@ -389,6 +397,7 @@
         <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
       </node>
       <node concept="2fGnzi" id="5ElkanPNlNA" role="1ahQXP">
+        <property role="0Rz4W" value="-1480224137" />
         <node concept="2fGnzd" id="5ElkanPNlNB" role="2fGnxs">
           <node concept="1QScDb" id="5ElkanPSzBx" role="2fGnzS">
             <node concept="1QScDb" id="5ElkanPNlNE" role="30czhm">
@@ -404,6 +413,7 @@
             </node>
           </node>
           <node concept="1KhrV4" id="5ElkanPNlNH" role="2fGnzA">
+            <property role="0Rz4W" value="1289235158" />
             <node concept="1QScDb" id="5ElkanPNlNI" role="12NKtY">
               <node concept="3o_JK" id="5ElkanPNlNJ" role="1QScD9">
                 <ref role="3o_JH" node="5ElkanPNlNr" resolve="value" />
@@ -420,8 +430,10 @@
         <node concept="2fGnzd" id="5ElkanPNlNM" role="2fGnxs">
           <node concept="2fHqz8" id="5ElkanPNlNN" role="2fGnzS" />
           <node concept="1af_rf" id="5ElkanPNlNO" role="2fGnzA">
+            <property role="0Rz4W" value="-1148797845" />
             <ref role="1afhQb" node="5ElkanPNlN5" resolve="FtoC" />
             <node concept="1LgZZ2" id="620LAS5PFW_" role="1afhQ5">
+              <property role="0Rz4W" value="125358131" />
               <node concept="1WbbFT" id="620LAS5PGc6" role="1LgZ0O">
                 <ref role="1WbbFS" node="5ElkanPNlMX" resolve="tempInF" />
               </node>
@@ -468,6 +480,7 @@
     <node concept="_ixoA" id="5ElkanPOfQ$" role="_iOnB" />
     <node concept="1WbbD7" id="5ElkanPNlNY" role="_iOnB">
       <property role="TrG5h" value="tempInC" />
+      <property role="0Rz4W" value="-1545786508" />
       <node concept="mLuIC" id="5ElkanPNlNZ" role="1WbbD4">
         <node concept="2gteSW" id="5ElkanPNlO0" role="2gteSx">
           <property role="2gteSQ" value="34.0" />
@@ -487,6 +500,7 @@
     <node concept="_ixoA" id="5ElkanPNlO1" role="_iOnB" />
     <node concept="2zPypq" id="5ElkanPNlO2" role="_iOnB">
       <property role="TrG5h" value="someDataFromUI" />
+      <property role="0Rz4W" value="1718660050" />
       <node concept="2S399m" id="5ElkanPNlO3" role="2zPyp_">
         <node concept="30bXRB" id="5ElkanPNlO4" role="2S399l">
           <property role="30bXRw" value="100.0" />
@@ -511,8 +525,10 @@
     <node concept="_ixoA" id="5ElkanPNlO7" role="_iOnB" />
     <node concept="2zPypq" id="5ElkanPNlO8" role="_iOnB">
       <property role="TrG5h" value="anTempValueInTheStatemachine" />
+      <property role="0Rz4W" value="-940662763" />
       <node concept="1QScDb" id="5ElkanPNlO9" role="2zPyp_">
         <node concept="1He9k6" id="5ElkanPNlOa" role="1QScD9">
+          <property role="0Rz4W" value="-257898016" />
           <ref role="1He9kT" node="5ElkanPNlNy" resolve="toC" />
         </node>
         <node concept="_emDc" id="5ElkanPNlOb" role="30czhm">
@@ -541,6 +557,7 @@
     <node concept="_ixoA" id="5ElkanPNlOg" role="_iOnB" />
     <node concept="2zPypq" id="5ElkanPNoot" role="_iOnB">
       <property role="TrG5h" value="validTempInF" />
+      <property role="0Rz4W" value="1737509570" />
       <node concept="30bXRB" id="5ElkanPNos4" role="2zPyp_">
         <property role="30bXRw" value="100.0" />
       </node>
@@ -553,6 +570,7 @@
       <node concept="_fkuZ" id="5ElkanPNr9C" role="_fkp5">
         <node concept="_fku$" id="5ElkanPNr9D" role="_fkur" />
         <node concept="1af_rf" id="5ElkanPNra4" role="_fkuY">
+          <property role="0Rz4W" value="-1306438267" />
           <ref role="1afhQb" node="5ElkanPNlN5" resolve="FtoC" />
           <node concept="30bXRB" id="5ElkanPNrai" role="1afhQ5">
             <property role="30bXRw" value="100.0" />
@@ -570,6 +588,7 @@
             <ref role="_emDf" node="5ElkanPNlO2" resolve="someDataFromUI" />
           </node>
           <node concept="1He9k6" id="5ElkanPP68V" role="1QScD9">
+            <property role="0Rz4W" value="-347891482" />
             <ref role="1He9kT" node="5ElkanPNlNy" resolve="toC" />
           </node>
         </node>
