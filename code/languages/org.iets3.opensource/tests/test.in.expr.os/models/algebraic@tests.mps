@@ -1168,7 +1168,7 @@
         </node>
         <node concept="1Kh3CC" id="5a_u3OzPFlg" role="1Kh3EZ">
           <node concept="30bXRB" id="5a_u3OzQdpm" role="1Kh3Cz">
-            <property role="30bXRw" value="11" />
+            <property role="30bXRw" value="10" />
           </node>
           <node concept="1KrJjp" id="5a_u3OzQW8L" role="1Kh3Cx">
             <node concept="1KrMWC" id="5a_u3OzQW8J" role="1KrJmF">
