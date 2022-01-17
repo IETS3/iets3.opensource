@@ -1285,11 +1285,14 @@
         <node concept="Uns6S" id="7u9eNXgppNb" role="2S399n">
           <node concept="30bdrU" id="7u9eNXgppXM" role="Uns6T" />
         </node>
-      </node>
-      <node concept="2Ss9d7" id="7u9eNXgpmwH" role="S5Trm">
-        <property role="TrG5h" value="firstName" />
-        <node concept="Uns6S" id="7u9eNXgpq8l" role="2S399n">
-          <node concept="30bdrU" id="7u9eNXgpqjh" role="Uns6T" />
+        <node concept="1z9TsT" id="4oByQ2xAUbg" role="lGtFl">
+          <node concept="OjmMv" id="4oByQ2xAUbh" role="1w35rA">
+            <node concept="19SGf9" id="4oByQ2xAUbi" role="OjmMu">
+              <node concept="19SUe$" id="4oByQ2xAUbj" role="19SJt6">
+                <property role="19SUeA" value="richtig" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2Ss9d7" id="7u9eNXgpmwJ" role="S5Trm">
@@ -1309,6 +1312,43 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="4oByQ2xAUCI" role="_iOnB" />
+    <node concept="2Ss9d8" id="4oByQ2xAUls" role="_iOnB">
+      <property role="TrG5h" value="Person2" />
+      <node concept="2Ss9d7" id="4oByQ2xAUlt" role="S5Trm">
+        <property role="TrG5h" value="name" />
+        <node concept="Uns6S" id="4oByQ2xAUlu" role="2S399n">
+          <node concept="30bdrU" id="4oByQ2xAUlv" role="Uns6T" />
+        </node>
+        <node concept="1z9TsT" id="4oByQ2xAUlw" role="lGtFl">
+          <node concept="OjmMv" id="4oByQ2xAUlx" role="1w35rA">
+            <node concept="19SGf9" id="4oByQ2xAUly" role="OjmMu">
+              <node concept="19SUe$" id="4oByQ2xAUlz" role="19SJt6">
+                <property role="19SUeA" value="falsch" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="I61D5" id="4oByQ2xAUVM" role="I61D6" />
+      </node>
+      <node concept="2Ss9d7" id="4oByQ2xAUl$" role="S5Trm">
+        <property role="TrG5h" value="middleInitial" />
+        <node concept="Uns6S" id="4oByQ2xAUl_" role="2S399n">
+          <node concept="30bdrU" id="4oByQ2xAUlA" role="Uns6T" />
+        </node>
+      </node>
+      <node concept="2Ss9d7" id="4oByQ2xAUlB" role="S5Trm">
+        <property role="TrG5h" value="addresses" />
+        <node concept="Uns6S" id="4oByQ2xAUlC" role="2S399n">
+          <node concept="3iBYCm" id="4oByQ2xAUlD" role="Uns6T">
+            <node concept="2Ss9cW" id="4oByQ2xAUlE" role="3iBWmK">
+              <ref role="2Ss9cX" node="7u9eNXgpmwP" resolve="Address" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="4oByQ2x$tOO" role="_iOnB" />
     <node concept="2Ss9d8" id="7u9eNXgpmwP" role="_iOnB">
       <property role="TrG5h" value="Address" />
       <node concept="2Ss9d7" id="7u9eNXgpmwQ" role="S5Trm">
