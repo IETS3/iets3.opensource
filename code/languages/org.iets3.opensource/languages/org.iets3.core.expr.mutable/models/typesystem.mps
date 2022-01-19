@@ -124,6 +124,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1766949807893567867" name="jetbrains.mps.lang.typesystem.structure.OverridesConceptFunction" flags="ig" index="bXqS6" />
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
@@ -154,6 +157,10 @@
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
+      <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
+        <child id="1176543945045" name="subtypeExpression" index="3JuY14" />
+        <child id="1176543950311" name="supertypeExpression" index="3JuZjQ" />
       </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
@@ -401,6 +408,53 @@
                       </node>
                       <node concept="3TrEf2" id="3GdqffBR63g" role="2OqNvi">
                         <ref role="3Tt5mk" to="8lgj:3GdqffBQYFA" resolve="value" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="69ODpXSSzdg" role="3cqZAp">
+                <node concept="3clFbS" id="69ODpXSSzdi" role="3clFbx">
+                  <node concept="a7r0C" id="69ODpXSSoqa" role="3cqZAp">
+                    <node concept="Xl_RD" id="69ODpXSSoqT" role="a7wSD">
+                      <property role="Xl_RC" value="The expression is using an invalid subtype. Add an explicit type to the box declaration to fix it." />
+                    </node>
+                    <node concept="2OqwBi" id="69ODpXSSHu_" role="1urrMF">
+                      <node concept="1YBJjd" id="69ODpXSSoqx" role="2Oq$k0">
+                        <ref role="1YBMHb" node="3GdqffBQYQb" resolve="ut" />
+                      </node>
+                      <node concept="3TrEf2" id="69ODpXSSI36" role="2OqNvi">
+                        <ref role="3Tt5mk" to="8lgj:3GdqffBQYFA" resolve="value" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="69ODpXSSzdh" role="3cqZAp" />
+                </node>
+                <node concept="3fqX7Q" id="69ODpXSSDkQ" role="3clFbw">
+                  <node concept="3JuTUA" id="69ODpXSSDkS" role="3fr31v">
+                    <node concept="1Z2H0r" id="69ODpXSSDkT" role="3JuY14">
+                      <node concept="2OqwBi" id="69ODpXSSDkU" role="1Z2MuG">
+                        <node concept="1YBJjd" id="69ODpXSSDkV" role="2Oq$k0">
+                          <ref role="1YBMHb" node="3GdqffBQYQb" resolve="ut" />
+                        </node>
+                        <node concept="3TrEf2" id="69ODpXSSDkW" role="2OqNvi">
+                          <ref role="3Tt5mk" to="8lgj:3GdqffBQYFA" resolve="value" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1Z2H0r" id="69ODpXSSDkX" role="3JuZjQ">
+                      <node concept="2OqwBi" id="69ODpXSSDkY" role="1Z2MuG">
+                        <node concept="1PxgMI" id="69ODpXSSDkZ" role="2Oq$k0">
+                          <node concept="chp4Y" id="69ODpXSSDl0" role="3oSUPX">
+                            <ref role="cht4Q" to="8lgj:3GdqffBKoAm" resolve="BoxType" />
+                          </node>
+                          <node concept="2X3wrD" id="69ODpXSSDl1" role="1m5AlR">
+                            <ref role="2X3Bk0" node="3GdqffBR78c" resolve="contextType" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="69ODpXSSDl2" role="2OqNvi">
+                          <ref role="3Tt5mk" to="8lgj:3GdqffBKoAn" resolve="baseType" />
+                        </node>
                       </node>
                     </node>
                   </node>
