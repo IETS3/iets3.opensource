@@ -1142,10 +1142,10 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2YIFZM" id="dsAFRk1d3D" role="3clFbw">
-                      <ref role="37wK5l" to="pbu6:1WlYLwX1YJg" resolve="hasNodeCoverage" />
+                    <node concept="2YIFZM" id="230vOq3ig5I" role="3clFbw">
+                      <ref role="37wK5l" to="pbu6:1WlYLwX3McV" resolve="isNodeCovered" />
                       <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-                      <node concept="37vLTw" id="dsAFRk1dj0" role="37wK5m">
+                      <node concept="37vLTw" id="230vOq3ig5J" role="37wK5m">
                         <ref role="3cqZAo" node="dsAFRk19br" resolve="it" />
                       </node>
                     </node>
