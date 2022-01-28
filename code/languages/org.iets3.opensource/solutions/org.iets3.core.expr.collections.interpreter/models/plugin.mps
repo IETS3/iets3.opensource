@@ -8963,8 +8963,12 @@
                               </node>
                               <node concept="liA8E" id="3tudP_AP9_O" role="2OqNvi">
                                 <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
-                                <node concept="37vLTw" id="3tudP_AP9G3" role="37wK5m">
-                                  <ref role="3cqZAo" node="3tudP_AP64I" resolve="i" />
+                                <node concept="2YIFZM" id="1IYzzr$ntj8" role="37wK5m">
+                                  <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
+                                  <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
+                                  <node concept="37vLTw" id="1IYzzr$ntx3" role="37wK5m">
+                                    <ref role="3cqZAo" node="3tudP_AP64I" resolve="i" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -9016,8 +9020,12 @@
                                 </node>
                                 <node concept="liA8E" id="3tudP_AZaM4" role="2OqNvi">
                                   <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
-                                  <node concept="37vLTw" id="3tudP_AZaM5" role="37wK5m">
-                                    <ref role="3cqZAo" node="3tudP_AZaM7" resolve="i" />
+                                  <node concept="2YIFZM" id="1IYzzr$nuzM" role="37wK5m">
+                                    <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
+                                    <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
+                                    <node concept="37vLTw" id="1IYzzr$nuIe" role="37wK5m">
+                                      <ref role="3cqZAo" node="3tudP_AZaM7" resolve="i" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -9067,8 +9075,12 @@
                           </node>
                           <node concept="liA8E" id="3tudP_B2jIg" role="2OqNvi">
                             <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
-                            <node concept="37vLTw" id="3tudP_B2jMj" role="37wK5m">
-                              <ref role="3cqZAo" node="3tudP_AZ2Tw" resolve="lower" />
+                            <node concept="2YIFZM" id="1IYzzr$nuXv" role="37wK5m">
+                              <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
+                              <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
+                              <node concept="37vLTw" id="1IYzzr$nv7L" role="37wK5m">
+                                <ref role="3cqZAo" node="3tudP_AZ2Tw" resolve="lower" />
+                              </node>
                             </node>
                           </node>
                         </node>

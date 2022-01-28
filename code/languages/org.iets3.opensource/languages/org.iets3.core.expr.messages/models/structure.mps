@@ -129,6 +129,12 @@
     <node concept="PrWs8" id="3vxfdxbcBqs" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9v" resolve="IMessageNamespaceContent" />
     </node>
+    <node concept="PrWs8" id="1IYzzr$T8Xd" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="1IYzzr$T8Xl" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
     <node concept="1TJgyj" id="3vxfdxbksau" role="1TKVEi">
       <property role="IQ2ns" value="4026566441520186014" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
