@@ -28,6 +28,7 @@
     <import index="523r" ref="r:9c5c2614-fd32-4054-b6ea-f1ceb6bdd369(org.iets3.core.expr.util.typesystem)" />
     <import index="byea" ref="r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)" />
     <import index="rpit" ref="r:e29c70b2-feb7-465e-9534-7fdb395635c2(org.iets3.core.expr.data.typesystem)" />
+    <import index="2e51" ref="r:e3651d26-951a-4ffc-9443-e8b8de452a77(org.iets3.core.expr.simpleTypes.constraints)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
@@ -49,6 +50,7 @@
         <child id="5476670926298698900" name="outputNodes" index="2lJPY$" />
         <child id="6626913010124294914" name="migration" index="3ea0P7" />
       </concept>
+      <concept id="7691029917083831655" name="jetbrains.mps.lang.test.structure.UnknownRuleReference" flags="ng" index="2u4KIi" />
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
@@ -56,6 +58,9 @@
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
+      <concept id="8333855927540283103" name="jetbrains.mps.lang.test.structure.NodeConstraintsErrorCheckOperation" flags="ng" index="39XrGg">
+        <child id="8333855927548182241" name="errorRef" index="39rjcI" />
       </concept>
       <concept id="6626913010124185481" name="jetbrains.mps.lang.test.structure.MigrationReference" flags="ng" index="3ea_Bc">
         <reference id="6626913010124185482" name="migration" index="3ea_Bf" />
@@ -6477,6 +6482,31 @@
           </node>
         </node>
         <node concept="_ixoA" id="63mrHUnQhdt" role="_iOnC" />
+        <node concept="2zPypq" id="3z1zSuyK0Pd" role="_iOnC">
+          <property role="TrG5h" value="negativePrecision" />
+          <node concept="mLuIC" id="3z1zSuyK0Zt" role="2zM23F">
+            <node concept="2gteS_" id="3z1zSuyK0ZD" role="2gteVg">
+              <property role="2gteVv" value="-2" />
+              <node concept="7CXmI" id="3z1zSuyKeqh" role="lGtFl">
+                <node concept="39XrGg" id="3z1zSuyKfkg" role="7EUXB">
+                  <node concept="2u4KIi" id="3z1zSuyKfkh" role="39rjcI">
+                    <ref role="39XzEq" to="2e51:7Wa2sv3FgRI" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1I1voI" id="3z1zSuyK15L" role="2zPyp_" />
+          <node concept="1z9TsT" id="3z1zSuyKlPg" role="lGtFl">
+            <node concept="OjmMv" id="3z1zSuyKlPh" role="1w35rA">
+              <node concept="19SGf9" id="3z1zSuyKlPi" role="OjmMu">
+                <node concept="19SUe$" id="3z1zSuyKlPj" role="19SJt6">
+                  <property role="19SUeA" value="negative precision is not allowed" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="_ixoA" id="63mrHUnQhdP" role="_iOnC" />
         <node concept="7CXmI" id="63mrHUnQHi1" role="lGtFl">
           <node concept="7OXhh" id="63mrHUnQHj6" role="7EUXB" />

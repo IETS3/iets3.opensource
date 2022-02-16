@@ -21,6 +21,9 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="1019070541450015930" name="org.iets3.core.expr.base.structure.TupleType" flags="ng" index="m5gfS">
+        <child id="1019070541450015931" name="elementTypes" index="m5gfT" />
+      </concept>
       <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
         <child id="606861080870797310" name="expr" index="pf3We" />
       </concept>
@@ -42,6 +45,10 @@
         <child id="606861080870797304" name="elseSection" index="pf3W8" />
         <child id="7849560302565679723" name="condition" index="39w5ZE" />
         <child id="7849560302565679725" name="thenPart" index="39w5ZG" />
+      </concept>
+      <concept id="2527679671886479690" name="org.iets3.core.expr.base.structure.TupleAccessExpr" flags="ng" index="3nOhSe">
+        <property id="2527679671886575030" name="index" index="3nOAFM" />
+        <child id="2527679671886479717" name="tuple" index="3nOhSx" />
       </concept>
       <concept id="3889855429450038473" name="org.iets3.core.expr.base.structure.EmptyValue" flags="ng" index="1I1voI">
         <child id="3889855429450038474" name="type" index="1I1voH" />
@@ -71,6 +78,7 @@
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
       <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
+      <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
       <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
@@ -84,6 +92,9 @@
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
+      <concept id="7740953487933794886" name="org.iets3.core.expr.toplevel.structure.SectionMarker" flags="ng" index="1Ws0TD">
+        <property id="7740953487933876080" name="label" index="1WsWdv" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -324,6 +335,40 @@
           </node>
         </node>
         <node concept="1I1voI" id="skNXYt4ume" role="_fkuS" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="58wi_gLzyXE" role="_iOnB" />
+    <node concept="1Ws0TD" id="58wi_gL$AXA" role="_iOnB">
+      <property role="1WsWdv" value="TODO: this should be moved to tuples suite as soon as we support java generation for empty" />
+    </node>
+    <node concept="2zPypq" id="58wi_gLzyZJ" role="_iOnB">
+      <property role="TrG5h" value="emptyTuple" />
+      <node concept="1I1voI" id="58wi_gLzz1V" role="2zPyp_" />
+      <node concept="m5gfS" id="58wi_gLzAzf" role="2zM23F">
+        <node concept="30bXR$" id="58wi_gLzAzP" role="m5gfT" />
+        <node concept="30bdrU" id="58wi_gLzA_a" role="m5gfT" />
+        <node concept="2vmvy5" id="58wi_gLzAAZ" role="m5gfT" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="58wi_gLzz2b" role="_iOnB" />
+    <node concept="_fkuM" id="58wi_gLzz4m" role="_iOnB">
+      <property role="TrG5h" value="tupleEmpty" />
+      <node concept="_fkuZ" id="58wi_gLzz5t" role="_fkp5">
+        <node concept="_fku$" id="58wi_gLzz5u" role="_fkur" />
+        <node concept="_emDc" id="58wi_gLzz5E" role="_fkuY">
+          <ref role="_emDf" node="58wi_gLzyZJ" resolve="emptyTuple" />
+        </node>
+        <node concept="1I1voI" id="58wi_gLzz6N" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="58wi_gLzAyD" role="_fkp5">
+        <node concept="_fku$" id="58wi_gLzAyE" role="_fkur" />
+        <node concept="3nOhSe" id="58wi_gLzAC5" role="_fkuY">
+          <property role="3nOAFM" value="1" />
+          <node concept="_emDc" id="58wi_gLzAyF" role="3nOhSx">
+            <ref role="_emDf" node="58wi_gLzyZJ" resolve="emptyTuple" />
+          </node>
+        </node>
+        <node concept="1I1voI" id="58wi_gLzAyG" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="skNXYt4ukf" role="_iOnB" />
