@@ -32,6 +32,7 @@
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="sxpq" ref="r:51edfe99-0380-475c-a3e9-1d4425eac12f(org.iets3.core.expr.lambda.plugin)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1198,6 +1199,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6ITtBskX_T6" role="3cqZAp">
+          <node concept="37vLTI" id="6ITtBskXCFm" role="3clFbG">
+            <node concept="37vLTw" id="6ITtBskXD1g" role="37vLTx">
+              <ref role="3cqZAo" node="49WTic8ey5D" resolve="le" />
+            </node>
+            <node concept="3EllGN" id="6ITtBskXCft" role="37vLTJ">
+              <node concept="13iPFW" id="6ITtBskXCwr" role="3ElVtu" />
+              <node concept="37vLTw" id="6ITtBskX_T4" role="3ElQJh">
+                <ref role="3cqZAo" node="dsAFRk6ftq" resolve="mapping" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="dsAFRk6g3s" role="3cqZAp">
           <node concept="37vLTI" id="dsAFRk6hBt" role="3clFbG">
             <node concept="1PxgMI" id="dsAFRk6jEb" role="37vLTx">
@@ -1506,23 +1520,20 @@
                         <node concept="3w_OXm" id="7cphKbKZT6H" role="2OqNvi" />
                       </node>
                       <node concept="3clFbC" id="7cphKbKZDbs" role="3uHU7B">
-                        <node concept="2OqwBi" id="7cphKbKZyNA" role="3uHU7B">
-                          <node concept="2OqwBi" id="7cphKbKZsxf" role="2Oq$k0">
-                            <node concept="37vLTw" id="7cphKbKZslz" role="2Oq$k0">
-                              <ref role="3cqZAo" node="49WTic8eCwS" resolve="it" />
-                            </node>
-                            <node concept="z$bX8" id="7cphKbKZt4m" role="2OqNvi">
-                              <node concept="1xMEDy" id="7cphKbKZvOA" role="1xVPHs">
-                                <node concept="chp4Y" id="7cphKbKZvRC" role="ri$Ld">
-                                  <ref role="cht4Q" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
-                                </node>
+                        <node concept="37vLTw" id="7cphKbKZDbJ" role="3uHU7w">
+                          <ref role="3cqZAo" node="49WTic8ey5D" resolve="le" />
+                        </node>
+                        <node concept="2OqwBi" id="6ITtBskTCMh" role="3uHU7B">
+                          <node concept="37vLTw" id="6ITtBskTCAp" role="2Oq$k0">
+                            <ref role="3cqZAo" node="49WTic8eCwS" resolve="it" />
+                          </node>
+                          <node concept="2Xjw5R" id="6ITtBskTDpX" role="2OqNvi">
+                            <node concept="1xMEDy" id="6ITtBskTDpZ" role="1xVPHs">
+                              <node concept="chp4Y" id="6ITtBskTDMY" role="ri$Ld">
+                                <ref role="cht4Q" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
                               </node>
                             </node>
                           </node>
-                          <node concept="1uHKPH" id="7cphKbKZATZ" role="2OqNvi" />
-                        </node>
-                        <node concept="37vLTw" id="7cphKbKZDbJ" role="3uHU7w">
-                          <ref role="3cqZAo" node="49WTic8ey5D" resolve="le" />
                         </node>
                       </node>
                     </node>
@@ -1545,8 +1556,9 @@
             </node>
             <node concept="liA8E" id="dsAFRk4vCP" role="2OqNvi">
               <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
-              <node concept="Xl_RD" id="dsAFRk4vDs" role="37wK5m">
-                <property role="Xl_RC" value="shortLambdaMapping" />
+              <node concept="10M0yZ" id="6ITtBskT5VX" role="37wK5m">
+                <ref role="3cqZAo" to="sxpq:6ITtBskT0za" resolve="USER_OBJECT_KEY" />
+                <ref role="1PxDUh" to="sxpq:$yb$20f$a5" resolve="LambdaValue" />
               </node>
               <node concept="37vLTw" id="dsAFRk6mvt" role="37wK5m">
                 <ref role="3cqZAo" node="dsAFRk6ftq" resolve="mapping" />
