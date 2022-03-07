@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="f2abf2a6-552e-4906-ab58-930f9a79aff4" name="org.iets3.core.expr.genjava.contracts" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
@@ -424,9 +424,6 @@
       </concept>
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
-      </concept>
-      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -7396,8 +7393,8 @@
               <node concept="2OqwBi" id="oj24_oawVk" role="2Oq$k0">
                 <node concept="2OqwBi" id="oj24_oau8l" role="2Oq$k0">
                   <node concept="1Q6Npb" id="oj24_oau0e" role="2Oq$k0" />
-                  <node concept="1j9C0f" id="oj24_oaucY" role="2OqNvi">
-                    <node concept="chp4Y" id="aofgSPMowv" role="3MHPCF">
+                  <node concept="2SmgA7" id="4q5eF0YRWvk" role="2OqNvi">
+                    <node concept="chp4Y" id="4q5eF0YRWNN" role="1dBWTz">
                       <ref role="cht4Q" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
                     </node>
                   </node>
@@ -7660,8 +7657,8 @@
               <node concept="2OqwBi" id="oj24_oclfv" role="2Oq$k0">
                 <node concept="2OqwBi" id="oj24_oclfw" role="2Oq$k0">
                   <node concept="1Q6Npb" id="oj24_oclfx" role="2Oq$k0" />
-                  <node concept="1j9C0f" id="oj24_oclfy" role="2OqNvi">
-                    <node concept="chp4Y" id="aofgSPMoww" role="3MHPCF">
+                  <node concept="2SmgA7" id="4q5eF0YRXhf" role="2OqNvi">
+                    <node concept="chp4Y" id="4q5eF0YRXUU" role="1dBWTz">
                       <ref role="cht4Q" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
                     </node>
                   </node>

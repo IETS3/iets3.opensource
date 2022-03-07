@@ -9,7 +9,7 @@
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -22,6 +22,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
@@ -43,6 +44,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -68,6 +70,9 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -269,16 +274,25 @@
               </node>
             </node>
             <node concept="3clFbS" id="7Wa2sv3FlYV" role="1zxBo7">
-              <node concept="3clFbF" id="7Wa2sv3Fm85" role="3cqZAp">
-                <node concept="2YIFZM" id="7Wa2sv3Fl7p" role="3clFbG">
-                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                  <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
-                  <node concept="1Wqviy" id="7Wa2sv3FlpM" role="37wK5m" />
+              <node concept="3cpWs8" id="4Oomam7raEP" role="3cqZAp">
+                <node concept="3cpWsn" id="4Oomam7raEQ" role="3cpWs9">
+                  <property role="TrG5h" value="prec" />
+                  <node concept="10Oyi0" id="4Oomam7raEJ" role="1tU5fm" />
+                  <node concept="2YIFZM" id="4Oomam7raER" role="33vP2m">
+                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
+                    <node concept="1Wqviy" id="4Oomam7raES" role="37wK5m" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="7Wa2sv3Fmih" role="3cqZAp">
-                <node concept="3clFbT" id="7Wa2sv3Fmix" role="3cqZAk">
-                  <property role="3clFbU" value="true" />
+                <node concept="2d3UOw" id="3z1zSuyK3m5" role="3cqZAk">
+                  <node concept="3cmrfG" id="3z1zSuyK3nU" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="37vLTw" id="3z1zSuyK1yd" role="3uHU7B">
+                    <ref role="3cqZAo" node="4Oomam7raEQ" resolve="prec" />
+                  </node>
                 </node>
               </node>
             </node>

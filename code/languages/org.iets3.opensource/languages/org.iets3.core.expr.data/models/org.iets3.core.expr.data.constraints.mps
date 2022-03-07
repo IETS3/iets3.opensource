@@ -95,7 +95,9 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -229,8 +231,9 @@
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
               <node concept="2OqwBi" id="cPLa7Ft7QW" role="37wK5m">
                 <node concept="2OqwBi" id="cPLa7Ft7dN" role="2Oq$k0">
-                  <node concept="1PxgMI" id="cPLa7Ft6Qz" role="2Oq$k0">
-                    <node concept="chp4Y" id="cPLa7Ft6Rf" role="3oSUPX">
+                  <node concept="1PxgMI" id="2sAD19zYCNb" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
+                    <node concept="chp4Y" id="2sAD19zYCT9" role="3oSUPX">
                       <ref role="cht4Q" to="e9k1:cPLa7Fs1v4" resolve="DataTableType" />
                     </node>
                     <node concept="2OqwBi" id="cPLa7Ft6g1" role="1m5AlR">
