@@ -109,8 +109,8 @@ configure<org.modelix.gradle.mpsbuild.MPSBuildSettings> {
     macro("iets3.github.opensource.home", "..")
 
     mps("2020.3.6")
-    externalModules("io.github.jetbrains.mps-extensions:all:2020.3+")
-    externalModules("io.github.mbeddr.core:all:2020.3+")
+    externalModules("io.github.jetbrains.mps-extensions:all:2020.3.6-202203160858")
+    externalModules("io.github.mbeddr.core:all:2020.3.6-202203161243")
 
     search("../code/languages")
 
