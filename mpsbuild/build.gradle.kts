@@ -81,13 +81,23 @@ repositories {
 
 publishing {
     repositories {
+//        maven {
+//            name = "GitHubPackages"
+//            url = uri("https://maven.pkg.github.com/mbeddr/mbeddr.core")
+//            if (githubCredentials != null) {
+//                credentials {
+//                    username = githubCredentials.first
+//                    password = githubCredentials.second
+//                }
+//            }
+//        }
         maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/mbeddr/mbeddr.core")
-            if (githubCredentials != null) {
+            name = "itemisNexus"
+            url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr")
+            if (project.hasProperty("nexusUsername")) {
                 credentials {
-                    username = githubCredentials.first
-                    password = githubCredentials.second
+                    username = ""+project.properties["nexusUsername"]
+                    password = ""+project.properties["nexusPassword"]
                 }
             }
         }
