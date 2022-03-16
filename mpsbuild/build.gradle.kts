@@ -23,7 +23,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.modelix:gradle-mpsbuild-plugin:2020.3.5-202203160954-SNAPSHOT")
+        classpath("org.modelix:gradle-mpsbuild-plugin:2020.3.5-202203161636-SNAPSHOT")
     }
 }
 
