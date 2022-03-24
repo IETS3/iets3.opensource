@@ -63,14 +63,10 @@
     <import index="6yn5" ref="r:2bfc35a4-8334-4342-8e2a-a54b7cda4a4c(org.iets3.core.expr.testExecution.structure)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
-    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
-    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
-    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="461n" ref="r:3b46a963-6deb-4d82-bdc0-36b5d9297fcf(de.slisson.mps.conditionalEditor.hints.editor)" />
-    <import index="agn9" ref="e78f91af-08a8-4a7a-bed6-b22739ed069a/r:f9e42dff-7cc2-48de-b7f5-594a5da757ae(com.mbeddr.mpsutil.spreferences.runtime/com.mbeddr.mpsutil.spreferences.runtime)" />
-    <import index="tmud" ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:8d0fa52a-32d1-4359-892e-669a9b66600c(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.structure)" />
     <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
+    <import index="jmi8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.util(MPS.IDEA/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
@@ -182,6 +178,10 @@
       </concept>
       <concept id="1224500790866" name="jetbrains.mps.baseLanguage.structure.BitwiseOrExpression" flags="nn" index="pVOtf" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
+      <concept id="1224575136086" name="jetbrains.mps.baseLanguage.structure.EnumValueOfExpression" flags="nn" index="unr1b">
+        <reference id="1224575174120" name="enumClass" index="un$jP" />
+        <child id="1224575157853" name="value" index="unwt0" />
+      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -200,6 +200,14 @@
       </concept>
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
+      <concept id="1083245097125" name="jetbrains.mps.baseLanguage.structure.EnumClass" flags="ig" index="Qs71p">
+        <child id="1083245396908" name="enumConstant" index="Qtgdg" />
+      </concept>
+      <concept id="1083245299891" name="jetbrains.mps.baseLanguage.structure.EnumConstantDeclaration" flags="ig" index="QsSxf" />
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -259,6 +267,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -7851,6 +7860,33 @@
             </node>
           </node>
         </node>
+        <node concept="fuyK3" id="5rUl2R7LmtW" role="3cqZAp">
+          <node concept="2YIFZM" id="5rUl2R7LmtX" role="fuByb">
+            <ref role="37wK5l" to="qkt:~Separator.getInstance()" resolve="getInstance" />
+            <ref role="1Pybhc" to="qkt:~Separator" resolve="Separator" />
+          </node>
+        </node>
+        <node concept="fuyK3" id="5rUl2R7KMvl" role="3cqZAp">
+          <node concept="2ShNRf" id="5rUl2R7KMvm" role="fuByb">
+            <node concept="1pGfFk" id="5rUl2R7KMvn" role="2ShVmc">
+              <ref role="37wK5l" node="5rUl2R7JDDN" resolve="GeneratorWorkspace" />
+            </node>
+          </node>
+        </node>
+        <node concept="fuyK3" id="5rUl2R7KMw_" role="3cqZAp">
+          <node concept="2ShNRf" id="5rUl2R7KMwA" role="fuByb">
+            <node concept="1pGfFk" id="5rUl2R7KMwB" role="2ShVmc">
+              <ref role="37wK5l" node="5rUl2R7KIeu" resolve="InterpreterWorkspace" />
+            </node>
+          </node>
+        </node>
+        <node concept="fuyK3" id="5rUl2R7NOsi" role="3cqZAp">
+          <node concept="2ShNRf" id="5rUl2R7NOsj" role="fuByb">
+            <node concept="1pGfFk" id="5rUl2R7NOsk" role="2ShVmc">
+              <ref role="37wK5l" node="5rUl2R7NKQu" resolve="NoPreferenceWorkspace" />
+            </node>
+          </node>
+        </node>
         <node concept="fuyK3" id="C3ikp6Zlrs" role="3cqZAp">
           <node concept="2YIFZM" id="C3ikp6Zlrt" role="fuByb">
             <ref role="37wK5l" to="qkt:~Separator.getInstance()" resolve="getInstance" />
@@ -8817,6 +8853,530 @@
     <node concept="1QGGSu" id="2JfTTG8itUG" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/traceShowOne.png" />
     </node>
+  </node>
+  <node concept="312cEu" id="5rUl2R7JDDM">
+    <property role="3GE5qa" value="testExecution" />
+    <property role="TrG5h" value="GeneratorWorkspace" />
+    <node concept="3clFbW" id="5rUl2R7JDDN" role="jymVt">
+      <node concept="3cqZAl" id="5rUl2R7JDDO" role="3clF45" />
+      <node concept="3Tm1VV" id="5rUl2R7JDDP" role="1B3o_S" />
+      <node concept="3clFbS" id="5rUl2R7JDDQ" role="3clF47">
+        <node concept="XkiVB" id="5rUl2R7JDDR" role="3cqZAp">
+          <ref role="37wK5l" to="qkt:~ToggleAction.&lt;init&gt;(java.lang.String)" resolve="ToggleAction" />
+          <node concept="Xl_RD" id="5rUl2R7JDDS" role="37wK5m">
+            <property role="Xl_RC" value="KernelF Tests: Generator (workspace)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="5rUl2R7JDDT" role="1B3o_S" />
+    <node concept="3uibUv" id="5rUl2R7JDDU" role="1zkMxy">
+      <ref role="3uigEE" to="qkt:~ToggleAction" resolve="ToggleAction" />
+    </node>
+    <node concept="3clFb_" id="5rUl2R7JDDV" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isSelected" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5rUl2R7JDDW" role="1B3o_S" />
+      <node concept="10P_77" id="5rUl2R7JDDX" role="3clF45" />
+      <node concept="37vLTG" id="5rUl2R7JDDY" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="5rUl2R7JDDZ" role="1tU5fm">
+          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5rUl2R7JDE0" role="3clF47">
+        <node concept="3cpWs8" id="5rUl2R7KnQD" role="3cqZAp">
+          <node concept="3cpWsn" id="5rUl2R7KnQE" role="3cpWs9">
+            <property role="TrG5h" value="mode" />
+            <node concept="3uibUv" id="5rUl2R7KGhX" role="1tU5fm">
+              <ref role="3uigEE" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            </node>
+            <node concept="2YIFZM" id="5rUl2R7KrpJ" role="33vP2m">
+              <ref role="37wK5l" node="5rUl2R7Ka3V" resolve="getExecutionMode" />
+              <ref role="1Pybhc" node="5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5rUl2R7KtJ4" role="3cqZAp">
+          <node concept="17R0WA" id="5rUl2R7KwIK" role="3clFbG">
+            <node concept="Rm8GO" id="5rUl2R7KGB2" role="3uHU7w">
+              <ref role="Rm8GQ" node="5rUl2R7KE3p" resolve="GENERATOR" />
+              <ref role="1Px2BO" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            </node>
+            <node concept="37vLTw" id="5rUl2R7KtJ2" role="3uHU7B">
+              <ref role="3cqZAo" node="5rUl2R7KnQE" resolve="mode" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5rUl2R7JDEK" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5rUl2R7JDEL" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setSelected" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5rUl2R7JDEM" role="1B3o_S" />
+      <node concept="3cqZAl" id="5rUl2R7JDEN" role="3clF45" />
+      <node concept="37vLTG" id="5rUl2R7JDEO" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="5rUl2R7JDEP" role="1tU5fm">
+          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5rUl2R7JDEQ" role="3clF46">
+        <property role="TrG5h" value="b" />
+        <node concept="10P_77" id="5rUl2R7JDER" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5rUl2R7JDES" role="3clF47">
+        <node concept="3clFbF" id="5rUl2R7KHfz" role="3cqZAp">
+          <node concept="2YIFZM" id="5rUl2R7KCfH" role="3clFbG">
+            <ref role="37wK5l" node="5rUl2R7KxIX" resolve="setExecutionMode" />
+            <ref role="1Pybhc" node="5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+            <node concept="Rm8GO" id="5rUl2R7KHbk" role="37wK5m">
+              <ref role="Rm8GQ" node="5rUl2R7KE3p" resolve="GENERATOR" />
+              <ref role="1Px2BO" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5rUl2R7JDFv" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="5rUl2R7JYML">
+    <property role="3GE5qa" value="testExecution" />
+    <property role="TrG5h" value="TestExecutionWorkspaceSetting" />
+    <node concept="Wx3nA" id="5rUl2R7KcOJ" role="jymVt">
+      <property role="TrG5h" value="KEY" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="5rUl2R7Kctg" role="1B3o_S" />
+      <node concept="17QB3L" id="5rUl2R7KcLR" role="1tU5fm" />
+      <node concept="Xl_RD" id="5rUl2R7KcYW" role="33vP2m">
+        <property role="Xl_RC" value="org.iets3.core.expr.testExecution" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5rUl2R7KcM3" role="jymVt" />
+    <node concept="2tJIrI" id="5rUl2R7K8MW" role="jymVt" />
+    <node concept="2YIFZL" id="5rUl2R7Ka3V" role="jymVt">
+      <property role="TrG5h" value="getExecutionMode" />
+      <node concept="3clFbS" id="5rUl2R7Ka3Y" role="3clF47">
+        <node concept="3cpWs8" id="5rUl2R7KeqZ" role="3cqZAp">
+          <node concept="3cpWsn" id="5rUl2R7Ker0" role="3cpWs9">
+            <property role="TrG5h" value="value" />
+            <node concept="17QB3L" id="5rUl2R7KiPQ" role="1tU5fm" />
+            <node concept="2OqwBi" id="5rUl2R7Ker1" role="33vP2m">
+              <node concept="2YIFZM" id="5rUl2R7Ker2" role="2Oq$k0">
+                <ref role="1Pybhc" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
+                <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance()" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="5rUl2R7Ker4" role="2OqNvi">
+                <ref role="37wK5l" to="jmi8:~PropertiesComponent.getValue(java.lang.String)" resolve="getValue" />
+                <node concept="37vLTw" id="5rUl2R7Ker5" role="37wK5m">
+                  <ref role="3cqZAo" node="5rUl2R7KcOJ" resolve="KEY" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5rUl2R7Kf2D" role="3cqZAp">
+          <node concept="3clFbS" id="5rUl2R7Kf2F" role="3clFbx">
+            <node concept="3cpWs6" id="5rUl2R7Kg8j" role="3cqZAp">
+              <node concept="Rm8GO" id="5rUl2R7KF0m" role="3cqZAk">
+                <ref role="Rm8GQ" node="5rUl2R7KE90" resolve="NO_PREFERENCE" />
+                <ref role="1Px2BO" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="5rUl2R7KfG5" role="3clFbw">
+            <node concept="10Nm6u" id="5rUl2R7KfX3" role="3uHU7w" />
+            <node concept="37vLTw" id="5rUl2R7Kfhp" role="3uHU7B">
+              <ref role="3cqZAo" node="5rUl2R7Ker0" resolve="value" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5rUl2R7KgDa" role="3cqZAp" />
+        <node concept="3clFbF" id="5rUl2R7Khco" role="3cqZAp">
+          <node concept="unr1b" id="5rUl2R7KhRh" role="3clFbG">
+            <ref role="un$jP" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            <node concept="37vLTw" id="5rUl2R7KixT" role="unwt0">
+              <ref role="3cqZAo" node="5rUl2R7Ker0" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5rUl2R7K9oN" role="1B3o_S" />
+      <node concept="3uibUv" id="5rUl2R7KEEl" role="3clF45">
+        <ref role="3uigEE" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5rUl2R7KxkE" role="jymVt" />
+    <node concept="2YIFZL" id="5rUl2R7KxIX" role="jymVt">
+      <property role="TrG5h" value="setExecutionMode" />
+      <node concept="37vLTG" id="5rUl2R7KyQy" role="3clF46">
+        <property role="TrG5h" value="mode" />
+        <node concept="3uibUv" id="5rUl2R7KFws" role="1tU5fm">
+          <ref role="3uigEE" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5rUl2R7KxJ0" role="3clF47">
+        <node concept="3clFbF" id="5rUl2R7K$Xy" role="3cqZAp">
+          <node concept="2OqwBi" id="5rUl2R7Ky40" role="3clFbG">
+            <node concept="2YIFZM" id="5rUl2R7Ky41" role="2Oq$k0">
+              <ref role="1Pybhc" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance()" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="5rUl2R7Ky43" role="2OqNvi">
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.setValue(java.lang.String,java.lang.String)" resolve="setValue" />
+              <node concept="37vLTw" id="5rUl2R7K$XA" role="37wK5m">
+                <ref role="3cqZAo" node="5rUl2R7KcOJ" resolve="KEY" />
+              </node>
+              <node concept="2OqwBi" id="5rUl2R7K$49" role="37wK5m">
+                <node concept="37vLTw" id="5rUl2R7KzuD" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5rUl2R7KyQy" resolve="mode" />
+                </node>
+                <node concept="liA8E" id="5rUl2R7K$KH" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Enum.name()" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5rUl2R7Kxva" role="1B3o_S" />
+      <node concept="3cqZAl" id="5rUl2R7KxIF" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="5rUl2R7K_nM" role="jymVt" />
+    <node concept="2YIFZL" id="5rUl2R7K_Rs" role="jymVt">
+      <property role="TrG5h" value="clearExecutionMode" />
+      <node concept="3clFbS" id="5rUl2R7K_Rv" role="3clF47">
+        <node concept="3clFbF" id="5rUl2R7KA0l" role="3cqZAp">
+          <node concept="2OqwBi" id="5rUl2R7KA0m" role="3clFbG">
+            <node concept="2YIFZM" id="5rUl2R7KA0n" role="2Oq$k0">
+              <ref role="1Pybhc" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance()" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="5rUl2R7KA0p" role="2OqNvi">
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.setValue(java.lang.String,java.lang.String)" resolve="setValue" />
+              <node concept="37vLTw" id="5rUl2R7KA0v" role="37wK5m">
+                <ref role="3cqZAo" node="5rUl2R7KcOJ" resolve="KEY" />
+              </node>
+              <node concept="10Nm6u" id="5rUl2R7KArb" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5rUl2R7K__4" role="1B3o_S" />
+      <node concept="3cqZAl" id="5rUl2R7K_R6" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="5rUl2R7JYMM" role="1B3o_S" />
+  </node>
+  <node concept="Qs71p" id="5rUl2R7KDH5">
+    <property role="3GE5qa" value="testExecution" />
+    <property role="TrG5h" value="ExecutionModePreference" />
+    <node concept="QsSxf" id="5rUl2R7KDTl" role="Qtgdg">
+      <property role="TrG5h" value="INTERPRETER" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="5rUl2R7KE3p" role="Qtgdg">
+      <property role="TrG5h" value="GENERATOR" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="5rUl2R7KE90" role="Qtgdg">
+      <property role="TrG5h" value="NO_PREFERENCE" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="3Tm1VV" id="5rUl2R7KDH6" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="5rUl2R7KIet">
+    <property role="3GE5qa" value="testExecution" />
+    <property role="TrG5h" value="InterpreterWorkspace" />
+    <node concept="3clFbW" id="5rUl2R7KIeu" role="jymVt">
+      <node concept="3cqZAl" id="5rUl2R7KIev" role="3clF45" />
+      <node concept="3Tm1VV" id="5rUl2R7KIew" role="1B3o_S" />
+      <node concept="3clFbS" id="5rUl2R7KIex" role="3clF47">
+        <node concept="XkiVB" id="5rUl2R7KIey" role="3cqZAp">
+          <ref role="37wK5l" to="qkt:~ToggleAction.&lt;init&gt;(java.lang.String)" resolve="ToggleAction" />
+          <node concept="Xl_RD" id="5rUl2R7KIez" role="37wK5m">
+            <property role="Xl_RC" value="KernelF Tests: Interpreter (workspace)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="5rUl2R7KIe$" role="1B3o_S" />
+    <node concept="3uibUv" id="5rUl2R7KIe_" role="1zkMxy">
+      <ref role="3uigEE" to="qkt:~ToggleAction" resolve="ToggleAction" />
+    </node>
+    <node concept="3clFb_" id="5rUl2R7KIeA" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isSelected" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5rUl2R7KIeB" role="1B3o_S" />
+      <node concept="10P_77" id="5rUl2R7KIeC" role="3clF45" />
+      <node concept="37vLTG" id="5rUl2R7KIeD" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="5rUl2R7KIeE" role="1tU5fm">
+          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5rUl2R7KIeF" role="3clF47">
+        <node concept="3cpWs8" id="5rUl2R7KIeG" role="3cqZAp">
+          <node concept="3cpWsn" id="5rUl2R7KIeH" role="3cpWs9">
+            <property role="TrG5h" value="mode" />
+            <node concept="3uibUv" id="5rUl2R7KIeI" role="1tU5fm">
+              <ref role="3uigEE" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            </node>
+            <node concept="2YIFZM" id="5rUl2R7KIeJ" role="33vP2m">
+              <ref role="1Pybhc" node="5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+              <ref role="37wK5l" node="5rUl2R7Ka3V" resolve="getExecutionMode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5rUl2R7KIeN" role="3cqZAp">
+          <node concept="17R0WA" id="5rUl2R7KIeO" role="3clFbG">
+            <node concept="Rm8GO" id="5rUl2R7KJm4" role="3uHU7w">
+              <ref role="Rm8GQ" node="5rUl2R7KDTl" resolve="INTERPRETER" />
+              <ref role="1Px2BO" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            </node>
+            <node concept="37vLTw" id="5rUl2R7KIeQ" role="3uHU7B">
+              <ref role="3cqZAo" node="5rUl2R7KIeH" resolve="mode" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5rUl2R7KIeR" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5rUl2R7KIeS" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setSelected" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5rUl2R7KIeT" role="1B3o_S" />
+      <node concept="3cqZAl" id="5rUl2R7KIeU" role="3clF45" />
+      <node concept="37vLTG" id="5rUl2R7KIeV" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="5rUl2R7KIeW" role="1tU5fm">
+          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5rUl2R7KIeX" role="3clF46">
+        <property role="TrG5h" value="b" />
+        <node concept="10P_77" id="5rUl2R7KIeY" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5rUl2R7KIeZ" role="3clF47">
+        <node concept="3clFbF" id="5rUl2R7KIf0" role="3cqZAp">
+          <node concept="2YIFZM" id="5rUl2R7KIf1" role="3clFbG">
+            <ref role="1Pybhc" node="5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+            <ref role="37wK5l" node="5rUl2R7KxIX" resolve="setExecutionMode" />
+            <node concept="Rm8GO" id="5rUl2R7KLM2" role="37wK5m">
+              <ref role="Rm8GQ" node="5rUl2R7KDTl" resolve="INTERPRETER" />
+              <ref role="1Px2BO" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5rUl2R7KIf6" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="5rUl2R7NKQt">
+    <property role="3GE5qa" value="testExecution" />
+    <property role="TrG5h" value="NoPreferenceWorkspace" />
+    <node concept="3clFbW" id="5rUl2R7NKQu" role="jymVt">
+      <node concept="3cqZAl" id="5rUl2R7NKQv" role="3clF45" />
+      <node concept="3Tm1VV" id="5rUl2R7NKQw" role="1B3o_S" />
+      <node concept="3clFbS" id="5rUl2R7NKQx" role="3clF47">
+        <node concept="XkiVB" id="5rUl2R7NKQy" role="3cqZAp">
+          <ref role="37wK5l" to="qkt:~ToggleAction.&lt;init&gt;(java.lang.String)" resolve="ToggleAction" />
+          <node concept="Xl_RD" id="5rUl2R7NKQz" role="37wK5m">
+            <property role="Xl_RC" value="KernelF Tests: No preference (workspace overrides above settings)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="5rUl2R7NKQ$" role="1B3o_S" />
+    <node concept="3uibUv" id="5rUl2R7NKQ_" role="1zkMxy">
+      <ref role="3uigEE" to="qkt:~ToggleAction" resolve="ToggleAction" />
+    </node>
+    <node concept="3clFb_" id="5rUl2R7NKQA" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isSelected" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5rUl2R7NKQB" role="1B3o_S" />
+      <node concept="10P_77" id="5rUl2R7NKQC" role="3clF45" />
+      <node concept="37vLTG" id="5rUl2R7NKQD" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="5rUl2R7NKQE" role="1tU5fm">
+          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5rUl2R7NKQF" role="3clF47">
+        <node concept="3cpWs8" id="5rUl2R7NKQG" role="3cqZAp">
+          <node concept="3cpWsn" id="5rUl2R7NKQH" role="3cpWs9">
+            <property role="TrG5h" value="mode" />
+            <node concept="3uibUv" id="5rUl2R7NKQI" role="1tU5fm">
+              <ref role="3uigEE" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            </node>
+            <node concept="2YIFZM" id="5rUl2R7NKQJ" role="33vP2m">
+              <ref role="1Pybhc" node="5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+              <ref role="37wK5l" node="5rUl2R7Ka3V" resolve="getExecutionMode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5rUl2R7NKQN" role="3cqZAp">
+          <node concept="17R0WA" id="5rUl2R7NKQO" role="3clFbG">
+            <node concept="Rm8GO" id="5rUl2R7NMki" role="3uHU7w">
+              <ref role="Rm8GQ" node="5rUl2R7KE90" resolve="NO_PREFERENCE" />
+              <ref role="1Px2BO" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            </node>
+            <node concept="37vLTw" id="5rUl2R7NKQQ" role="3uHU7B">
+              <ref role="3cqZAo" node="5rUl2R7NKQH" resolve="mode" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5rUl2R7NKQR" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5rUl2R7NKQS" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setSelected" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5rUl2R7NKQT" role="1B3o_S" />
+      <node concept="3cqZAl" id="5rUl2R7NKQU" role="3clF45" />
+      <node concept="37vLTG" id="5rUl2R7NKQV" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="5rUl2R7NKQW" role="1tU5fm">
+          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5rUl2R7NKQX" role="3clF46">
+        <property role="TrG5h" value="b" />
+        <node concept="10P_77" id="5rUl2R7NKQY" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5rUl2R7NKQZ" role="3clF47">
+        <node concept="3clFbF" id="5rUl2R7NKR0" role="3cqZAp">
+          <node concept="2YIFZM" id="5rUl2R7NMZH" role="3clFbG">
+            <ref role="37wK5l" node="5rUl2R7K_Rs" resolve="clearExecutionMode" />
+            <ref role="1Pybhc" node="5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5rUl2R7NKR6" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="5rUl2R7OncF">
+    <property role="3GE5qa" value="testExecution" />
+    <property role="TrG5h" value="TestExecutionSettings" />
+    <node concept="2YIFZL" id="5rUl2R7POK$" role="jymVt">
+      <property role="TrG5h" value="getExecutionModePreference" />
+      <node concept="3clFbS" id="5rUl2R7POKA" role="3clF47">
+        <node concept="3cpWs8" id="5rUl2R7POKB" role="3cqZAp">
+          <node concept="3cpWsn" id="5rUl2R7POKC" role="3cpWs9">
+            <property role="TrG5h" value="tec" />
+            <node concept="3Tqbb2" id="5rUl2R7POKD" role="1tU5fm">
+              <ref role="ehGHo" to="6yn5:3SkjTN1LMyJ" resolve="TestExecutionConfig" />
+            </node>
+            <node concept="9H$SH" id="5rUl2R7POKE" role="33vP2m">
+              <ref role="9Hxhg" to="w474:3SkjTN1M1kS" resolve="TestExecutionPreferences" />
+              <node concept="37vLTw" id="5rUl2R7POKF" role="9HWM5">
+                <ref role="3cqZAo" node="5rUl2R7POL7" resolve="module" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5rUl2R7POKG" role="3cqZAp">
+          <node concept="3cpWsn" id="5rUl2R7POKH" role="3cpWs9">
+            <property role="TrG5h" value="userPreference" />
+            <node concept="3uibUv" id="5rUl2R7POKI" role="1tU5fm">
+              <ref role="3uigEE" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            </node>
+            <node concept="2YIFZM" id="5rUl2R7POKJ" role="33vP2m">
+              <ref role="37wK5l" node="5rUl2R7Ka3V" resolve="getExecutionMode" />
+              <ref role="1Pybhc" node="5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5rUl2R7POKK" role="3cqZAp">
+          <node concept="3clFbS" id="5rUl2R7POKL" role="3clFbx">
+            <node concept="3cpWs6" id="5rUl2R7POKM" role="3cqZAp">
+              <node concept="37vLTw" id="5rUl2R7POKN" role="3cqZAk">
+                <ref role="3cqZAo" node="5rUl2R7POKH" resolve="userPreference" />
+              </node>
+            </node>
+          </node>
+          <node concept="17QLQc" id="5rUl2R7POKO" role="3clFbw">
+            <node concept="Rm8GO" id="5rUl2R7POKP" role="3uHU7w">
+              <ref role="Rm8GQ" node="5rUl2R7KE90" resolve="NO_PREFERENCE" />
+              <ref role="1Px2BO" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+            </node>
+            <node concept="37vLTw" id="5rUl2R7POKQ" role="3uHU7B">
+              <ref role="3cqZAo" node="5rUl2R7POKH" resolve="userPreference" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5rUl2R7POKR" role="3cqZAp">
+          <node concept="3clFbS" id="5rUl2R7POKS" role="3clFbx">
+            <node concept="3cpWs6" id="5rUl2R7POKT" role="3cqZAp">
+              <node concept="Rm8GO" id="5rUl2R7POKU" role="3cqZAk">
+                <ref role="Rm8GQ" node="5rUl2R7KE3p" resolve="GENERATOR" />
+                <ref role="1Px2BO" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5rUl2R7POKV" role="3clFbw">
+            <node concept="2OqwBi" id="5rUl2R7POKW" role="2Oq$k0">
+              <node concept="37vLTw" id="5rUl2R7POKX" role="2Oq$k0">
+                <ref role="3cqZAo" node="5rUl2R7POKC" resolve="tec" />
+              </node>
+              <node concept="3TrEf2" id="5rUl2R7POKY" role="2OqNvi">
+                <ref role="3Tt5mk" to="6yn5:3SkjTN1LTtQ" resolve="executionMode" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="5rUl2R7POKZ" role="2OqNvi">
+              <node concept="chp4Y" id="5rUl2R7POL0" role="cj9EA">
+                <ref role="cht4Q" to="6yn5:3SkjTN1LTuE" resolve="GeneratorExecutionMode" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="5rUl2R7POL1" role="9aQIa">
+            <node concept="3clFbS" id="5rUl2R7POL2" role="9aQI4">
+              <node concept="3cpWs6" id="5rUl2R7POL3" role="3cqZAp">
+                <node concept="Rm8GO" id="5rUl2R7POL4" role="3cqZAk">
+                  <ref role="Rm8GQ" node="5rUl2R7KDTl" resolve="INTERPRETER" />
+                  <ref role="1Px2BO" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="5rUl2R7POL6" role="3clF45">
+        <ref role="3uigEE" node="5rUl2R7KDH5" resolve="ExecutionModePreference" />
+      </node>
+      <node concept="37vLTG" id="5rUl2R7POL7" role="3clF46">
+        <property role="TrG5h" value="module" />
+        <node concept="3uibUv" id="5rUl2R7POL8" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5rUl2R7POL5" role="1B3o_S" />
+    </node>
+    <node concept="3Tm1VV" id="5rUl2R7OncG" role="1B3o_S" />
   </node>
 </model>
 
