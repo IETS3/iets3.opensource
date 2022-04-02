@@ -24808,7 +24808,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2ufoZQIKHLk">
-    <ref role="13h7C2" to="hm2y:2ufoZQIKHqp" resolve="SimpleExpressionValueInspector" />
+    <ref role="13h7C2" to="hm2y:2ufoZQIKHqp" resolve="SimpleValueInspector" />
     <node concept="13hLZK" id="2ufoZQIKHLl" role="13h7CW">
       <node concept="3clFbS" id="2ufoZQIKHLm" role="2VODD2" />
     </node>

@@ -7546,7 +7546,7 @@
   </node>
   <node concept="sE7Ow" id="2ufoZQISyNm">
     <property role="TrG5h" value="deleteValuesInspectors" />
-    <property role="2uzpH1" value="Clear Inspectors" />
+    <property role="2uzpH1" value="Remove all Inspectors" />
     <property role="3GE5qa" value="inspect" />
     <node concept="tnohg" id="2ufoZQISyNn" role="tncku">
       <node concept="3clFbS" id="2ufoZQISyNo" role="2VODD2">
@@ -7672,7 +7672,7 @@
               </node>
             </node>
             <node concept="zfrQC" id="2ufoZQISl8a" role="2OqNvi">
-              <ref role="1A9B2P" to="hm2y:2ufoZQIKHqp" resolve="SimpleExpressionValueInspector" />
+              <ref role="1A9B2P" to="hm2y:2ufoZQIKHqp" resolve="SimpleValueInspector" />
             </node>
           </node>
         </node>
@@ -7685,9 +7685,7 @@
       <property role="TrG5h" value="node" />
       <node concept="3Tm6S6" id="2ufoZQISkkX" role="1B3o_S" />
       <node concept="1oajcY" id="2ufoZQISkkY" role="1oa70y" />
-      <node concept="3Tqbb2" id="2ufoZQIRP6b" role="1tU5fm">
-        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
-      </node>
+      <node concept="3Tqbb2" id="2ufoZQIRP6b" role="1tU5fm" />
     </node>
     <node concept="2ScWuX" id="2ufoZQISlhf" role="tmbBb">
       <node concept="3clFbS" id="2ufoZQISlhg" role="2VODD2">
