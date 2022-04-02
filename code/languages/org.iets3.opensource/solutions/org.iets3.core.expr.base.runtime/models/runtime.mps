@@ -196,6 +196,7 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
@@ -1626,6 +1627,7 @@
       <node concept="3Tm1VV" id="3NUSEp5yd90" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6fmG8CYTYFr" role="jymVt" />
+    <node concept="3Tm1VV" id="6fmG8CYTWg2" role="1B3o_S" />
     <node concept="2YIFZL" id="2TlZyI4PJU1" role="jymVt">
       <property role="TrG5h" value="reset" />
       <node concept="3clFbS" id="2TlZyI4PJU4" role="3clF47">
@@ -1668,7 +1670,6 @@
         </node>
       </node>
     </node>
-    <node concept="3Tm1VV" id="6fmG8CYTWg2" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3nVyItrYWd7">
     <property role="3GE5qa" value="nix" />
@@ -3408,6 +3409,18 @@
     </node>
     <node concept="2tJIrI" id="26cjRACVUI9" role="jymVt" />
     <node concept="3Tm1VV" id="26cjRACVUN4" role="1B3o_S" />
+  </node>
+  <node concept="3HP615" id="3ToB$MLORO4">
+    <property role="TrG5h" value="ICustomStringForValueInspector" />
+    <node concept="2tJIrI" id="3ToB$MLORP6" role="jymVt" />
+    <node concept="3clFb_" id="3ToB$MLORPt" role="jymVt">
+      <property role="TrG5h" value="valueInspectorString" />
+      <node concept="17QB3L" id="3ToB$MLORR7" role="3clF45" />
+      <node concept="3Tm1VV" id="3ToB$MLORPw" role="1B3o_S" />
+      <node concept="3clFbS" id="3ToB$MLORPx" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="3ToB$MLORPe" role="jymVt" />
+    <node concept="3Tm1VV" id="3ToB$MLORO5" role="1B3o_S" />
   </node>
 </model>
 
