@@ -1,3 +1,5 @@
+**[THIS IS TEMPLATE - ADJUST THIS TEXT ACCORDING TO YOUR PULL REQUEST]**
+
 Each pull request should contain a brief summary of the proposed changes  
 that can be easily read by the consumers of project releases.
 
