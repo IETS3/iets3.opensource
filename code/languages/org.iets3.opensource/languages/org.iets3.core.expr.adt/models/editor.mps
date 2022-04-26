@@ -239,7 +239,7 @@
         <child id="5587067268292695525" name="insertFunction" index="1VhhnL" />
       </concept>
       <concept id="8877288515759654453" name="com.mbeddr.mpsutil.treenotation.structure.DeleteHandler" flags="ig" index="1XG33E" />
-      <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.InserHandler" flags="ig" index="1XI84t" />
+      <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.SimpleInsertFunction" flags="ig" index="1XI84t" />
       <concept id="8877288515760224565" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_index" flags="ng" index="1XI8ZE" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">

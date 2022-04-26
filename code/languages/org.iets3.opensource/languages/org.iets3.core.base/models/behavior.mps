@@ -505,6 +505,58 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5yiuuzNYbce" role="13h7CS">
+      <property role="TrG5h" value="deleteLastResult" />
+      <node concept="3Tm1VV" id="5yiuuzNYbcf" role="1B3o_S" />
+      <node concept="3uibUv" id="5yiuuzNYczd" role="3clF45">
+        <ref role="3uigEE" node="5zG5$Lyex1G" resolve="IResult" />
+      </node>
+      <node concept="3clFbS" id="5yiuuzNYbch" role="3clF47">
+        <node concept="3cpWs8" id="5yiuuzNYcjN" role="3cqZAp">
+          <node concept="3cpWsn" id="5yiuuzNYcjO" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="5yiuuzNYcjP" role="1tU5fm">
+              <ref role="3uigEE" node="5zG5$Lyex1G" resolve="IResult" />
+            </node>
+            <node concept="10QFUN" id="5yiuuzNYcjQ" role="33vP2m">
+              <node concept="2OqwBi" id="5yiuuzNYcjR" role="10QFUP">
+                <node concept="2JrnkZ" id="5yiuuzNYcjS" role="2Oq$k0">
+                  <node concept="13iPFW" id="5yiuuzNYcjT" role="2JrQYb" />
+                </node>
+                <node concept="liA8E" id="5yiuuzNYcjU" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                  <node concept="BsUDl" id="5yiuuzNYcjV" role="37wK5m">
+                    <ref role="37wK5l" node="3R3AIvum$_6" resolve="userObjectKey" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3uibUv" id="5yiuuzNYcjW" role="10QFUM">
+                <ref role="3uigEE" node="5zG5$Lyex1G" resolve="IResult" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5yiuuzNYbsS" role="3cqZAp">
+          <node concept="2OqwBi" id="5yiuuzNYbsT" role="3clFbG">
+            <node concept="2JrnkZ" id="5yiuuzNYbsU" role="2Oq$k0">
+              <node concept="13iPFW" id="5yiuuzNYbsV" role="2JrQYb" />
+            </node>
+            <node concept="liA8E" id="5yiuuzNYbsW" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
+              <node concept="BsUDl" id="5yiuuzNYbsX" role="37wK5m">
+                <ref role="37wK5l" node="3R3AIvum$_6" resolve="userObjectKey" />
+              </node>
+              <node concept="10Nm6u" id="5yiuuzNYbyu" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5yiuuzNYcvr" role="3cqZAp">
+          <node concept="37vLTw" id="5yiuuzNYcxP" role="3cqZAk">
+            <ref role="3cqZAo" node="5yiuuzNYcjO" resolve="result" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="3R3AIvumwpO" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
