@@ -127,11 +127,15 @@
       <concept id="1164833692343" name="jetbrains.mps.lang.editor.structure.CellMenuPart_PropertyValues" flags="ng" index="PvTIS">
         <child id="1164833692344" name="valuesFunction" index="PvTIR" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styles" index="V601i" />
       </concept>
@@ -2659,8 +2663,8 @@
     <ref role="1XX52x" to="hm2y:2U5Q01UkDMQ" resolve="OneOfTarget" />
     <node concept="3EZMnI" id="2U5Q01UkDNw" role="2wV5jI">
       <node concept="2iRfu4" id="2U5Q01UkDNx" role="2iSdaV" />
-      <node concept="3F0ifn" id="2U5Q01UkDNs" role="3EZMnx">
-        <property role="3F0ifm" value="oneOf" />
+      <node concept="PMmxH" id="12bsjhgd0e2" role="3EZMnx">
+        <ref role="PMmxG" node="12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="2U5Q01UkDNJ" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -6574,6 +6578,18 @@
     <ref role="1XX52x" to="hm2y:3tcv7J0pmjC" resolve="EmptyType" />
     <node concept="PMmxH" id="3tcv7J0v6Vw" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="12bsjhgd0dR">
+    <property role="TrG5h" value="OpAlias" />
+    <ref role="1XX52x" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    <node concept="PMmxH" id="12bsjhgd0dT" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="OXEIz" id="12bsjhgd0dW" role="P5bDN">
+        <node concept="UkePV" id="12bsjhgd0dZ" role="OY2wv">
+          <ref role="Ul1FP" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
