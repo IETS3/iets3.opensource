@@ -10,6 +10,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="l462" ref="r:d6904536-4de8-40ba-b54e-09fcdfe1b62a(org.iets3.core.expr.temporal.structure)" implicit="true" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
@@ -32,15 +33,9 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
-      <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
-        <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
-      </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
-      </concept>
-      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
-        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -66,7 +61,6 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
-        <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -279,7 +273,7 @@
     <node concept="3EZMnI" id="50smQ1VexWp" role="2wV5jI">
       <node concept="2iRfu4" id="50smQ1VexWq" role="2iSdaV" />
       <node concept="PMmxH" id="12bsjhgbOoz" role="3EZMnx">
-        <ref role="PMmxG" node="12bsjhgbNQu" resolve="OpAlias" />
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="50smQ1VexWy" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -351,7 +345,7 @@
     <ref role="1XX52x" to="l462:3nGzaxUtzZN" resolve="SpreadValuesOp" />
     <node concept="3EZMnI" id="3nGzaxUt$0K" role="2wV5jI">
       <node concept="PMmxH" id="12bsjhgcAoh" role="3EZMnx">
-        <ref role="PMmxG" node="12bsjhgbNQu" resolve="OpAlias" />
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="12bsjhgc_VQ" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -480,7 +474,7 @@
     <node concept="3EZMnI" id="12bsjhg8w8f" role="2wV5jI">
       <node concept="2iRfu4" id="12bsjhg8w8g" role="2iSdaV" />
       <node concept="PMmxH" id="12bsjhgc$I8" role="3EZMnx">
-        <ref role="PMmxG" node="12bsjhgbNQu" resolve="OpAlias" />
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="12bsjhg8w8i" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -554,7 +548,7 @@
     <node concept="3EZMnI" id="12bsjhg8wq8" role="2wV5jI">
       <node concept="2iRfu4" id="12bsjhg8wq9" role="2iSdaV" />
       <node concept="PMmxH" id="12bsjhgc$X7" role="3EZMnx">
-        <ref role="PMmxG" node="12bsjhgbNQu" resolve="OpAlias" />
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="12bsjhg8wqb" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -628,7 +622,7 @@
     <node concept="3EZMnI" id="3nGzaxUzMEr" role="2wV5jI">
       <node concept="2iRfu4" id="3nGzaxUzMEs" role="2iSdaV" />
       <node concept="PMmxH" id="12bsjhgc_43" role="3EZMnx">
-        <ref role="PMmxG" node="12bsjhgbNQu" resolve="OpAlias" />
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="3nGzaxUzMEu" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -741,7 +735,7 @@
     <ref role="1XX52x" to="l462:1Mp62pP0G8O" resolve="ReduceOp" />
     <node concept="3EZMnI" id="1Mp62pP0GaA" role="2wV5jI">
       <node concept="PMmxH" id="12bsjhgc$Ch" role="3EZMnx">
-        <ref role="PMmxG" node="12bsjhgbNQu" resolve="OpAlias" />
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="12bsjhgc$rr" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -939,7 +933,7 @@
     <ref role="1XX52x" to="l462:6C2wkq7f3JQ" resolve="MaskOp" />
     <node concept="3EZMnI" id="6C2wkq7f3Ky" role="2wV5jI">
       <node concept="PMmxH" id="12bsjhgc_aM" role="3EZMnx">
-        <ref role="PMmxG" node="12bsjhgbNQu" resolve="OpAlias" />
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="12bsjhgc_aq" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -973,7 +967,7 @@
     <node concept="3EZMnI" id="6C2wkq7iPtA" role="2wV5jI">
       <node concept="2iRfu4" id="6C2wkq7iPtB" role="2iSdaV" />
       <node concept="PMmxH" id="12bsjhgcAys" role="3EZMnx">
-        <ref role="PMmxG" node="12bsjhgbNQu" resolve="OpAlias" />
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="6C2wkq7iPtD" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -999,7 +993,7 @@
     <ref role="1XX52x" to="l462:6C2wkq7lrza" resolve="MapSlicesOp" />
     <node concept="3EZMnI" id="6zmBjqUjnOV" role="2wV5jI">
       <node concept="PMmxH" id="12bsjhgcZGu" role="3EZMnx">
-        <ref role="PMmxG" node="12bsjhgbNQu" resolve="OpAlias" />
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="6zmBjqUjnOX" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1034,18 +1028,6 @@
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="3F0ifn" id="6dXnuBU76jR" role="2wV5jI">
       <property role="3F0ifm" value="Workaround to fix contributions to BaseConcept generated by grammarCells." />
-    </node>
-  </node>
-  <node concept="PKFIW" id="12bsjhgbNQu">
-    <property role="TrG5h" value="OpAlias" />
-    <ref role="1XX52x" to="l462:50smQ1Vcw3K" resolve="AbstractTemporalOp" />
-    <node concept="PMmxH" id="12bsjhgbO9S" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <node concept="OXEIz" id="12bsjhgbrPp" role="P5bDN">
-        <node concept="UkePV" id="12bsjhgbrPs" role="OY2wv">
-          <ref role="Ul1FP" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
-        </node>
-      </node>
     </node>
   </node>
 </model>
