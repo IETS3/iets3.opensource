@@ -13,6 +13,7 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -423,11 +424,8 @@
     <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="700h:6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="3EZMnI" id="6zmBjqUjnOV" role="2wV5jI">
-      <node concept="PMmxH" id="6zmBjqUjnOW" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <node concept="11LMrY" id="49WTic8ec1k" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+      <node concept="PMmxH" id="4l_LUjie3jr" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="6zmBjqUjnOX" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -817,8 +815,8 @@
     <ref role="1XX52x" to="700h:6IBT1wT$hPp" resolve="IMapOneArgOp" />
     <node concept="3EZMnI" id="7kYh9Ws$z$o" role="2wV5jI">
       <node concept="2iRfu4" id="7kYh9Ws$z$p" role="2iSdaV" />
-      <node concept="PMmxH" id="7kYh9Ws$z$m" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="4l_LUjie3iJ" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="7kYh9Ws$z$x" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -887,8 +885,8 @@
     <ref role="1XX52x" to="700h:4_KMC82H1yT" resolve="IListOneArgOp" />
     <node concept="3EZMnI" id="1RHynufnBTp" role="2wV5jI">
       <node concept="l2Vlx" id="NE1gl4Nw13" role="2iSdaV" />
-      <node concept="PMmxH" id="1RHynufnBTr" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="4l_LUjie3hU" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="1RHynufnBTs" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1065,9 +1063,15 @@
   <node concept="24kQdi" id="3tudP_AOMNH">
     <ref role="1XX52x" to="700h:3tudP_AOMNf" resolve="UpToTarget" />
     <node concept="3EZMnI" id="3tudP_AOMNJ" role="2wV5jI">
-      <node concept="3F0ifn" id="3tudP_AOMNQ" role="3EZMnx">
-        <property role="3F0ifm" value="upto(" />
-        <node concept="11LMrY" id="3tudP_AOMSn" role="3F10Kt">
+      <node concept="PMmxH" id="4l_LUjie3jL" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
+      </node>
+      <node concept="3F0ifn" id="4l_LUjib1e6" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="4l_LUjib1ee" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="4l_LUjib1ej" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -1101,8 +1105,8 @@
     <ref role="1XX52x" to="700h:4hLehKTZXcg" resolve="FoldOp" />
     <node concept="3EZMnI" id="4hLehKU05ea" role="2wV5jI">
       <node concept="l2Vlx" id="6vzDuv94evh" role="2iSdaV" />
-      <node concept="PMmxH" id="4hLehKU05e7" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="4l_LUjie49l" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="4hLehKU05ep" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1152,8 +1156,8 @@
     <ref role="1XX52x" to="700h:thkha3aNEl" resolve="ISetOneArgOp" />
     <node concept="3EZMnI" id="thkha3aNE$" role="2wV5jI">
       <node concept="2iRfu4" id="thkha3aNE_" role="2iSdaV" />
-      <node concept="PMmxH" id="thkha3aNEA" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="4l_LUjie3j5" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="thkha3aNEB" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1187,8 +1191,8 @@
     <ref role="1XX52x" to="700h:LrvgQhjFyf" resolve="ListInsertOp" />
     <node concept="3EZMnI" id="LrvgQhkLIP" role="2wV5jI">
       <node concept="2iRfu4" id="LrvgQhkLIQ" role="2iSdaV" />
-      <node concept="PMmxH" id="LrvgQhkLIR" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="4l_LUjie3im" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="LrvgQhkLIS" role="3EZMnx">
         <property role="3F0ifm" value="(" />
