@@ -7394,6 +7394,19 @@
       </node>
       <node concept="17QB3L" id="ORfz$ECZf7" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="1fqZlb37kQB" role="13h7CS">
+      <property role="TrG5h" value="isImplementationArtifact" />
+      <ref role="13i0hy" to="hwgx:7Vd878ENIh6" resolve="isImplementationArtifact" />
+      <node concept="3Tm1VV" id="1fqZlb37kQC" role="1B3o_S" />
+      <node concept="3clFbS" id="1fqZlb37kQH" role="3clF47">
+        <node concept="3clFbF" id="1fqZlb37lxt" role="3cqZAp">
+          <node concept="3clFbT" id="1fqZlb37lxs" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1fqZlb37kQI" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5L2mTKm_NI7">
     <property role="3GE5qa" value="enum" />
