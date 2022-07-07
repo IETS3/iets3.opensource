@@ -162,6 +162,7 @@
     <dependency reexport="false">ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)</dependency>
     <dependency reexport="false">9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)</dependency>
     <dependency reexport="false">f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)</dependency>
+    <dependency reexport="false">cbb71b24-470d-4374-b77c-ebd0d3b3bb27(org.iets3.core.expr.plugin)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3b3dc28-fee3-49e1-a46e-685e96389094:com.mbeddr.mpsutil.bldoc" version="0" />

@@ -43,14 +43,6 @@
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
     </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
-      </concept>
-    </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
@@ -67,21 +59,12 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
-        <child id="8375407818529178007" name="text" index="OjmMu" />
-      </concept>
-      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
-        <child id="4052432714772608243" name="text" index="1w35rA" />
-      </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -96,7 +79,7 @@
       <property role="TrG5h" value="undefined unit (helper)" />
     </node>
     <node concept="Rn5op" id="1KUmgSFvJUm" role="_iOnB">
-      <property role="TrG5h" value="metre" />
+      <property role="TrG5h" value="length" />
     </node>
     <node concept="Rn5op" id="1KUmgSFvJUn" role="_iOnB">
       <property role="TrG5h" value="amount of chemical substance" />
@@ -119,7 +102,7 @@
     </node>
     <node concept="CIrOH" id="5XaocLWHSS4" role="_iOnB">
       <property role="TrG5h" value="m" />
-      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="length" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSS5" role="_iOnB">
       <property role="TrG5h" value="s" />
@@ -572,32 +555,23 @@
     </node>
     <node concept="CIrOH" id="69HsIy5FvYH" role="_iOnB">
       <property role="TrG5h" value="nm" />
-      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
-      <node concept="1z9TsT" id="_I$tx9N8BM" role="lGtFl">
-        <node concept="OjmMv" id="_I$tx9N8BN" role="1w35rA">
-          <node concept="19SGf9" id="_I$tx9N8BO" role="OjmMu">
-            <node concept="19SUe$" id="_I$tx9N8BP" role="19SJt6">
-              <property role="19SUeA" value="nope the name isn't a typo: https://en.wikipedia.org/wiki/Metre" />
-            </node>
-          </node>
-        </node>
-      </node>
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="length" />
     </node>
     <node concept="CIrOH" id="69HsIy5FvXj" role="_iOnB">
       <property role="TrG5h" value="µm" />
-      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="length" />
     </node>
     <node concept="CIrOH" id="69HsIy5FvWm" role="_iOnB">
       <property role="TrG5h" value="mm" />
-      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="length" />
     </node>
     <node concept="CIrOH" id="69HsIy5FvZe" role="_iOnB">
       <property role="TrG5h" value="cm" />
-      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="length" />
     </node>
     <node concept="CIrOH" id="69HsIy5FvYB" role="_iOnB">
       <property role="TrG5h" value="km" />
-      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="metre" />
+      <ref role="Rn5ok" node="1KUmgSFvJUm" resolve="length" />
     </node>
     <node concept="TRoc0" id="69HsIy5Fw0n" role="_iOnB">
       <ref role="27Q$ZQ" node="5XaocLWHSS4" resolve="m" />
