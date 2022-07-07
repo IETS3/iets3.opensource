@@ -216,13 +216,12 @@
     <property role="R4oN_" value="a message argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbdUeE" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="1TJgyj" id="3vxfdxbdUeH" role="1TKVEi">
       <property role="IQ2ns" value="4026566441518474157" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
   </node>
