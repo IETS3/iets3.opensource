@@ -2872,7 +2872,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4ptnK4jbr0k">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="1XX52x" to="yv47:4ptnK4jbqZG" resolve="FieldSetter" />
     <node concept="3EZMnI" id="4ptnK4jbr0v" role="2wV5jI">
       <node concept="1iCGBv" id="4ptnK4jbr0D" role="3EZMnx">
@@ -2900,7 +2900,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4ptnK4jbr1n">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="1XX52x" to="yv47:4ptnK4jbqZj" resolve="BuilderExpression" />
     <node concept="3uPbVW" id="4ptnK4jbr87" role="2wV5jI">
       <property role="3vr1H$" value="true" />
@@ -3020,7 +3020,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4ptnK4jbr9n">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="1XX52x" to="yv47:4ptnK4jbr8M" resolve="RecordTypeAdapter" />
     <node concept="1kIj98" id="4ptnK4jbr9y" role="2wV5jI">
       <node concept="3F1sOY" id="4ptnK4jbr9C" role="1kIj9b">

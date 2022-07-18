@@ -8178,7 +8178,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4ptnK4jbra4">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="13h7C2" to="yv47:4ptnK4jbr8C" resolve="BuilderAdapter" />
     <node concept="13i0hz" id="4ptnK4jbrao" role="13h7CS">
       <property role="TrG5h" value="getMandatoryFields" />
@@ -8337,7 +8337,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4ptnK4jbrco">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="13h7C2" to="yv47:4ptnK4jbr8M" resolve="RecordTypeAdapter" />
     <node concept="13hLZK" id="4ptnK4jbrcp" role="13h7CW">
       <node concept="3clFbS" id="4ptnK4jbrcq" role="2VODD2" />
@@ -8491,7 +8491,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4ptnK4jexAL">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="13h7C2" to="yv47:4ptnK4jbqZj" resolve="BuilderExpression" />
     <node concept="13hLZK" id="4ptnK4jexAM" role="13h7CW">
       <node concept="3clFbS" id="4ptnK4jexAN" role="2VODD2" />
@@ -8667,7 +8667,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7S4tmubD2lr">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="13h7C2" to="yv47:4ptnK4jbqZv" resolve="BuilderElement" />
     <node concept="13i0hz" id="7S4tmubD2lA" role="13h7CS">
       <property role="TrG5h" value="renderReadable" />
@@ -8704,7 +8704,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7S4tmubD5Wb">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="13h7C2" to="yv47:4ptnK4jbqZG" resolve="FieldSetter" />
     <node concept="13hLZK" id="7S4tmubD5Wc" role="13h7CW">
       <node concept="3clFbS" id="7S4tmubD5Wd" role="2VODD2" />
