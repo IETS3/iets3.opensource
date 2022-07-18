@@ -52,6 +52,7 @@
   <node concept="1TIwiD" id="1xEzHAktP2Q">
     <property role="TrG5h" value="TaggedType" />
     <property role="EcuMT" value="1759375669591494838" />
+    <property role="R4oN_" value="a tagged type" />
     <ref role="1TJDcQ" node="4HxogODTnzM" resolve="AbstractTaggedType" />
     <node concept="1TJgyj" id="1xEzHAktP2T" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -91,6 +92,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="5431729334750902514" />
+    <property role="R4oN_" value="a base type for tagged types" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="1RcasK0SmZc">
@@ -98,6 +100,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="2147137078513725388" />
+    <property role="R4oN_" value="a base tag for unary tags" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1RcasK0SmZd" role="PzmwI">
       <ref role="PrY4T" node="4HxogODR$_x" resolve="ITag" />
@@ -122,6 +125,7 @@
     <property role="TrG5h" value="NAryTag" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base tag for n-ary tags" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1WJTL5jv9KO" role="PzmwI">
       <ref role="PrY4T" node="4HxogODR$_x" resolve="ITag" />
@@ -143,6 +147,7 @@
     <property role="EcuMT" value="5805388625439269019" />
     <property role="3GE5qa" value="modifier" />
     <property role="TrG5h" value="AtLeastTag" />
+    <property role="R4oN_" value="at least" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="52gSz9ipE2F" role="PzmwI">
       <ref role="PrY4T" node="4HxogODR$_x" resolve="ITag" />
@@ -155,6 +160,7 @@
     <property role="EcuMT" value="5805388625439269020" />
     <property role="3GE5qa" value="modifier" />
     <property role="TrG5h" value="AtMostTag" />
+    <property role="R4oN_" value="at most" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="52gSz9ipE2t" role="PzmwI">
       <ref role="PrY4T" node="4HxogODR$_x" resolve="ITag" />
@@ -166,6 +172,7 @@
   <node concept="1TIwiD" id="2Ux6GHgZDQF">
     <property role="EcuMT" value="3359996257534647723" />
     <property role="TrG5h" value="TaggedExpression" />
+    <property role="R4oN_" value="a tagged expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="2Ux6GHgZDQG" role="1TKVEi">
       <property role="IQ2ns" value="3359996257534647724" />

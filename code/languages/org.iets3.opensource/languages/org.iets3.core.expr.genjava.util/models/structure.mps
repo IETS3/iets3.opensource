@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -41,6 +42,7 @@
     <property role="TrG5h" value="KFMultiConditional" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="abstract expression for KF multi conditionals" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5Jw72wdniYD" role="1TKVEi">
       <property role="IQ2ns" value="6620322410583109545" />
@@ -54,12 +56,14 @@
     <property role="EcuMT" value="6620322410583109646" />
     <property role="TrG5h" value="KFMultiOr" />
     <property role="34LRSv" value="or" />
+    <property role="R4oN_" value="or" />
     <ref role="1TJDcQ" node="5Jw72wdhdVW" resolve="KFMultiConditional" />
   </node>
   <node concept="1TIwiD" id="5Jw72wdnj0f">
     <property role="EcuMT" value="6620322410583109647" />
     <property role="TrG5h" value="KFMultiAnd" />
     <property role="34LRSv" value="and" />
+    <property role="R4oN_" value="and" />
     <ref role="1TJDcQ" node="5Jw72wdhdVW" resolve="KFMultiConditional" />
   </node>
 </model>

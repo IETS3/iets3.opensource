@@ -67,6 +67,7 @@
     <property role="TrG5h" value="RequirementsChunk" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="5151426049053136028" />
+    <property role="R4oN_" value="a requirements declaration" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="PrWs8" id="4tXyFaWxW_o" role="PzmwI">
       <ref role="PrY4T" node="4tXyFaWxW_f" resolve="IReqContainer" />
@@ -89,6 +90,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="5151426049053136302" />
+    <property role="R4oN_" value="a base concept for requirements" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4tXyFaWylGu" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -147,6 +149,7 @@
   <node concept="1TIwiD" id="4tXyFaWwpmT">
     <property role="TrG5h" value="DefaultRequirement" />
     <property role="EcuMT" value="5151426049053136313" />
+    <property role="R4oN_" value="a default requirement" />
     <ref role="1TJDcQ" node="4tXyFaWwpmI" resolve="AbstractRequirement" />
   </node>
   <node concept="PlHQZ" id="4tXyFaWxW_f">
@@ -166,6 +169,7 @@
   <node concept="1TIwiD" id="4tXyFaWy3Jz">
     <property role="TrG5h" value="RequirementsDocSection" />
     <property role="EcuMT" value="5151426049053572067" />
+    <property role="R4oN_" value="a requirements section for the doc language" />
     <ref role="1TJDcQ" to="2c95:2TZO3Dbv6Ju" resolve="AbstractSection" />
     <node concept="PrWs8" id="7Dcax7AgRv3" role="PzmwI">
       <ref role="PrY4T" node="7Dcax7AgAPg" resolve="IReqDocContent" />
@@ -177,6 +181,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="tag" />
     <property role="EcuMT" value="5151426049053645596" />
+    <property role="R4oN_" value="a base concept for tags" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4tXyFaWylGt">
@@ -185,6 +190,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="kind" />
     <property role="EcuMT" value="5151426049053645597" />
+    <property role="R4oN_" value="a base concept for kinds" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4tXyFaWylOt">
@@ -192,6 +198,7 @@
     <property role="34LRSv" value="functional" />
     <property role="3GE5qa" value="kind" />
     <property role="EcuMT" value="5151426049053646109" />
+    <property role="R4oN_" value="a functional kind" />
     <ref role="1TJDcQ" node="4tXyFaWylGt" resolve="Kind" />
   </node>
   <node concept="1TIwiD" id="l6fPaF3tF7">
@@ -200,6 +207,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="state" />
     <property role="EcuMT" value="380060842849065671" />
+    <property role="R4oN_" value="a base concept fo states" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="l6fPaF3tFb">
@@ -207,13 +215,14 @@
     <property role="34LRSv" value="new" />
     <property role="3GE5qa" value="state" />
     <property role="EcuMT" value="380060842849065675" />
+    <property role="R4oN_" value="state: new" />
     <ref role="1TJDcQ" node="l6fPaF3tF7" resolve="State" />
   </node>
   <node concept="1TIwiD" id="7Ip2X68Nu6t">
     <property role="3GE5qa" value="tag" />
     <property role="TrG5h" value="PriorityTag" />
     <property role="34LRSv" value="priority" />
-    <property role="R4oN_" value="the priority of the requirement" />
+    <property role="R4oN_" value="a priority of a requirement" />
     <property role="EcuMT" value="8906162732673130909" />
     <ref role="1TJDcQ" node="4tXyFaWylGs" resolve="Tag" />
     <node concept="1TJgyi" id="7Ip2X68Nu6H" role="1TKVEl">
@@ -227,6 +236,7 @@
     <property role="TrG5h" value="StateAccepted" />
     <property role="34LRSv" value="accepted" />
     <property role="EcuMT" value="8906162732673281580" />
+    <property role="R4oN_" value="state: accepted" />
     <ref role="1TJDcQ" node="l6fPaF3tF7" resolve="State" />
   </node>
   <node concept="1TIwiD" id="7Ip2X68Ocu3">
@@ -234,6 +244,7 @@
     <property role="TrG5h" value="StateDone" />
     <property role="34LRSv" value="done" />
     <property role="EcuMT" value="8906162732673320835" />
+    <property role="R4oN_" value="state: done" />
     <ref role="1TJDcQ" node="l6fPaF3tF7" resolve="State" />
   </node>
   <node concept="1TIwiD" id="7Dcax7A9LmB">
@@ -241,6 +252,7 @@
     <property role="34LRSv" value="@req" />
     <property role="3GE5qa" value="words" />
     <property role="EcuMT" value="8812464827221349799" />
+    <property role="R4oN_" value="reference to a requirement" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5Zn2KFQSS_B" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -286,6 +298,7 @@
     <property role="3GE5qa" value="rel" />
     <property role="TrG5h" value="ReqRef" />
     <property role="EcuMT" value="6906000695315626008" />
+    <property role="R4oN_" value="a reference to a requirement" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5Zn2KFQSRwp" role="1TKVEi">
       <property role="20kJfa" value="req" />
@@ -300,6 +313,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="6906000695315637396" />
+    <property role="R4oN_" value="a base concept for relation kinds" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5Zn2KFQSUiX">
@@ -307,6 +321,7 @@
     <property role="TrG5h" value="RelKindConflicts" />
     <property role="34LRSv" value="conflicts with" />
     <property role="EcuMT" value="6906000695315637437" />
+    <property role="R4oN_" value="conflicts with relation kind" />
     <ref role="1TJDcQ" node="5Zn2KFQSUik" resolve="RelationKind" />
   </node>
   <node concept="1TIwiD" id="5Zn2KFQSUqC">
@@ -314,6 +329,7 @@
     <property role="TrG5h" value="ReqRelWord" />
     <property role="34LRSv" value="@rel" />
     <property role="EcuMT" value="6906000695315637928" />
+    <property role="R4oN_" value="reference to a requirement's relation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5Zn2KFQSUqD" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
@@ -342,6 +358,7 @@
     <property role="TrG5h" value="CCTag" />
     <property role="34LRSv" value="CC" />
     <property role="EcuMT" value="8479184967782930103" />
+    <property role="R4oN_" value="carbon copy" />
     <ref role="1TJDcQ" node="4tXyFaWylGs" resolve="Tag" />
     <node concept="1TJgyj" id="7mG7sQPy9qS" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -355,6 +372,7 @@
     <property role="3GE5qa" value="words" />
     <property role="TrG5h" value="NonMergeableWord" />
     <property role="EcuMT" value="8913201067422874021" />
+    <property role="R4oN_" value="non mergeable" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7IM3imbodiI" role="1TKVEl">
       <property role="TrG5h" value="escapedValue" />

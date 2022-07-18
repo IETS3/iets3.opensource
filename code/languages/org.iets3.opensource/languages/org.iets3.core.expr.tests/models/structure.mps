@@ -124,7 +124,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="543569365052056272" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for test operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="ub9nkyHAbh">
@@ -176,7 +176,7 @@
     <property role="TrG5h" value="AssertTestItem" />
     <property role="34LRSv" value="assert" />
     <property role="EcuMT" value="543569365052056266" />
-    <property role="R4oN_" value="simple assertion with configurable comparison operator" />
+    <property role="R4oN_" value="a assert with configurable comparison operator" />
     <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1TJgyi" id="75Hf8iHwLVy" role="1TKVEl">
       <property role="IQ2nx" value="8173255439291719394" />
@@ -282,7 +282,7 @@
   <node concept="1TIwiD" id="6HHp2WmRVXt">
     <property role="TrG5h" value="NamedAssertRef" />
     <property role="EcuMT" value="7740953487929753437" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a reference to a assert test item" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6HHp2WmRVXx" role="1TKVEi">
       <property role="20kJfa" value="item" />
@@ -296,7 +296,7 @@
     <property role="TrG5h" value="AbstractTestItem" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base item for test items" />
     <ref role="1TJDcQ" to="tp5g:hG7unSw" resolve="NodeCheckOperation" />
     <node concept="PrWs8" id="78hTg1$THIx" role="PzmwI">
       <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
@@ -352,7 +352,7 @@
     <property role="TrG5h" value="RealEqualsTestOp" />
     <property role="34LRSv" value="real-equals" />
     <property role="EcuMT" value="4988624180052598016" />
-    <property role="R4oN_" value="compare reals for equality, up to a given precision" />
+    <property role="R4oN_" value="compare reals for equality up to a given precision" />
     <ref role="1TJDcQ" node="ub9nkyHAbg" resolve="TestOp" />
     <node concept="1TJgyi" id="4kV9Ob9YBYR" role="1TKVEl">
       <property role="IQ2nx" value="4988624180052918199" />
@@ -363,7 +363,7 @@
   <node concept="1TIwiD" id="4_qY3E4CWhU">
     <property role="EcuMT" value="5285810042889815162" />
     <property role="TrG5h" value="EmptyTestItem" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="an empty test item" />
     <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="PrWs8" id="4_qY3E4CWiy" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
@@ -374,14 +374,14 @@
     <property role="TrG5h" value="InterpreterCoverageAssQuery" />
     <property role="34LRSv" value="interpreter coverage" />
     <property role="3GE5qa" value="assessment.interpreter" />
-    <property role="R4oN_" value="reports coverage of interpreter implementation" />
+    <property role="R4oN_" value="report coverage of an interpreter implementation" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
   </node>
   <node concept="1TIwiD" id="3_DFadMGHQh">
     <property role="EcuMT" value="4137027550720482705" />
     <property role="3GE5qa" value="assessment.interpreter" />
     <property role="TrG5h" value="InterpreterCoverageAssResult" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="an interpreter coverage result" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="3_DFadMGHWm" role="1TKVEi">
       <property role="IQ2ns" value="4137027550720483094" />
@@ -403,7 +403,7 @@
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="LanguageRef" />
     <property role="34LRSv" value="language" />
-    <property role="R4oN_" value="refers to a particular language (by ID)" />
+    <property role="R4oN_" value="refer to a particular language by identifier" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_DFadN83bK" role="1TKVEi">
       <property role="IQ2ns" value="4137027550727647984" />
@@ -418,7 +418,7 @@
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="IgnoredConcept" />
     <property role="34LRSv" value="concept" />
-    <property role="R4oN_" value="do not consider this concept in structural coverage" />
+    <property role="R4oN_" value="exclude concept from structural coverage" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_DFadNcBZA" role="1TKVEi">
       <property role="IQ2ns" value="4137027550728847334" />
@@ -434,7 +434,7 @@
     <property role="EcuMT" value="1307222191605829984" />
     <property role="3GE5qa" value="assessment.interpreter" />
     <property role="TrG5h" value="InterpreterCoverageAssSummary" />
-    <property role="R4oN_" value="??" />
+    <property role="R4oN_" value="an interpreter coverage summary" />
     <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
     <node concept="1TJgyi" id="18$bUx5b57P" role="1TKVEl">
       <property role="IQ2nx" value="1307222191605830133" />
@@ -448,7 +448,7 @@
     <property role="TrG5h" value="AbstractCoverageQuery" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base assessement query for coverage queries" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="3_DFadN86Ip" role="1TKVEi">
       <property role="IQ2ns" value="4137027550727662489" />
@@ -482,7 +482,7 @@
     <property role="TrG5h" value="StructuralCoverageAssQuery" />
     <property role="34LRSv" value="structural coverage" />
     <property role="3GE5qa" value="assessment.structural" />
-    <property role="R4oN_" value="reports coverage of the concept's structure" />
+    <property role="R4oN_" value="report coverage of the concept's structure" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
     <node concept="1TJgyj" id="CrzyxmE7Fc" role="1TKVEi">
       <property role="IQ2ns" value="728332068654185164" />
@@ -530,7 +530,7 @@
     <property role="EcuMT" value="4372229961985642578" />
     <property role="3GE5qa" value="assessment.structural" />
     <property role="TrG5h" value="StructuralCoverageAssResult" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a structural coverage result" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="3MHhZL0ul1j" role="1TKVEi">
       <property role="IQ2ns" value="4372229961985642579" />
@@ -568,7 +568,7 @@
     <property role="EcuMT" value="993724751390561555" />
     <property role="3GE5qa" value="assessment.interpreter" />
     <property role="TrG5h" value="InterpreterValueSummary" />
-    <property role="R4oN_" value="??" />
+    <property role="R4oN_" value="an interpreter value summary" />
     <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
     <node concept="1TJgyj" id="RaqQlV9tlI" role="1TKVEi">
       <property role="IQ2ns" value="993724751390561646" />
@@ -582,7 +582,7 @@
     <property role="EcuMT" value="993724751390561556" />
     <property role="3GE5qa" value="assessment.interpreter" />
     <property role="TrG5h" value="InterpreterValueStat" />
-    <property role="R4oN_" value="??" />
+    <property role="R4oN_" value="an interpreter value statistic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="RaqQlV9tkl" role="1TKVEl">
       <property role="IQ2nx" value="993724751390561557" />
@@ -599,7 +599,7 @@
     <property role="EcuMT" value="3989687176984501316" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="StackTraceElement" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a stacktrace element" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3tudP__5TL5" role="1TKVEi">
       <property role="IQ2ns" value="3989687176984501317" />
@@ -612,7 +612,7 @@
     <property role="EcuMT" value="6606989268199297429" />
     <property role="3GE5qa" value="assessment.models" />
     <property role="TrG5h" value="ModelsCoverageAssResult" />
-    <property role="R4oN_" value="reports test code coverage" />
+    <property role="R4oN_" value="report test code coverage" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="hJB5MUc" role="1TKVEi">
       <property role="20kJfa" value="coveredNode" />
@@ -631,7 +631,7 @@
     <property role="3GE5qa" value="assessment.models" />
     <property role="TrG5h" value="TestCoverageAssQuery" />
     <property role="34LRSv" value="test coverage" />
-    <property role="R4oN_" value="assesses coverage of the test code" />
+    <property role="R4oN_" value="assess coverage of the test code" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
     <node concept="1TJgyj" id="1vo80oMkNK" role="1TKVEi">
       <property role="IQ2ns" value="26846226075438320" />
@@ -666,14 +666,14 @@
     <property role="TrG5h" value="StructuralCoverageNodesFilter" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for structural coverage nodes fitlers" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7fsCTt5Wdqg">
     <property role="EcuMT" value="8348727679346857616" />
     <property role="3GE5qa" value="assessment.models" />
     <property role="TrG5h" value="ModelsCoverageAssSummary" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a models coverage summary" />
     <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
     <node concept="1TJgyi" id="7fsCTt5Wdqh" role="1TKVEl">
       <property role="IQ2nx" value="8348727679346857617" />
@@ -686,7 +686,7 @@
     <property role="TrG5h" value="OptExpression" />
     <property role="34LRSv" value="some&lt;..&gt;" />
     <property role="3GE5qa" value="opt" />
-    <property role="R4oN_" value="wraps a value in an option" />
+    <property role="R4oN_" value="wrap a value in an option container" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="1$1rueeDiNY" role="1TKVEi">
       <property role="IQ2ns" value="1801842150043102462" />
@@ -745,7 +745,7 @@
     <property role="EcuMT" value="1360296727216854047" />
     <property role="TrG5h" value="TestVector" />
     <property role="3GE5qa" value="vector" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a test vector" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1bwJEEeSLgw" role="1TKVEi">
       <property role="IQ2ns" value="1360296727216854048" />
@@ -778,7 +778,7 @@
     <property role="TrG5h" value="AbstractVectorCollection" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for vecto collections" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1bwJEEeSLgz" role="1TKVEi">
       <property role="IQ2ns" value="1360296727216854051" />
@@ -799,7 +799,7 @@
     <property role="EcuMT" value="1360296727219460885" />
     <property role="3GE5qa" value="vector" />
     <property role="TrG5h" value="InputValue" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="an input value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1bwJEEf2HGO" role="1TKVEi">
       <property role="IQ2ns" value="1360296727219460916" />
@@ -821,7 +821,7 @@
     <property role="TrG5h" value="TestDataProducer" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for test data producers" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1bwJEEfE52K">
@@ -829,7 +829,7 @@
     <property role="3GE5qa" value="vector.producer" />
     <property role="TrG5h" value="EmptyProducer" />
     <property role="34LRSv" value="empty" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="produce nothing" />
     <ref role="1TJDcQ" node="1bwJEEfE00B" resolve="TestDataProducer" />
   </node>
   <node concept="1TIwiD" id="1bwJEEfL7ob">
@@ -838,7 +838,7 @@
     <property role="TrG5h" value="Outcome" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for outcomes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1bwJEEfL7oo">
@@ -863,7 +863,7 @@
     <property role="TrG5h" value="TestSubjectAdapter" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base adapter for test subjects" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_xsRJ4WDa$" role="1TKVEi">
       <property role="IQ2ns" value="4134712908325229220" />
@@ -900,7 +900,7 @@
     <property role="EcuMT" value="1360296727240295837" />
     <property role="3GE5qa" value="vector" />
     <property role="TrG5h" value="OutputValue" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="an output value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1bwJEEgicnC" role="1TKVEi">
       <property role="IQ2ns" value="1360296727240295912" />
@@ -942,14 +942,14 @@
     <property role="EcuMT" value="4173623957598806325" />
     <property role="3GE5qa" value="vector.testItem" />
     <property role="TrG5h" value="TestItemVectorCollection" />
-    <property role="R4oN_" value="??" />
+    <property role="R4oN_" value="a collection of test vectors" />
     <ref role="1TJDcQ" node="1bwJEEeSLgy" resolve="AbstractVectorCollection" />
   </node>
   <node concept="1TIwiD" id="3_xsRJ4oOr7">
     <property role="EcuMT" value="4134712908315838151" />
     <property role="TrG5h" value="MutationEngine" />
     <property role="3GE5qa" value="mutator" />
-    <property role="R4oN_" value="randlomly mutate test code and test subjects" />
+    <property role="R4oN_" value="mutate test code and test subjects randomly" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3_xsRJ4W_Ua" role="1TKVEl">
       <property role="IQ2nx" value="4134712908325215882" />
@@ -973,7 +973,7 @@
     <property role="EcuMT" value="1626696085383418901" />
     <property role="3GE5qa" value="mutator" />
     <property role="TrG5h" value="MutationLog" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="reference to the new node after the mutation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1qjbRymSXmZ" role="1TKVEi">
       <property role="IQ2ns" value="1626696085384975807" />
@@ -989,7 +989,7 @@
     <property role="EcuMT" value="1626696085384423453" />
     <property role="3GE5qa" value="mutator" />
     <property role="TrG5h" value="OldNodeAnnotation" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="reference to the old node after the mutation" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="1qjbRymQQwB" role="lGtFl">
       <property role="Hh88m" value="old" />
@@ -1032,7 +1032,7 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="expressions everywhere" />
-    <property role="R4oN_" value="in the coverage measurement allow expressions everywhere" />
+    <property role="R4oN_" value="allow expressions everywhere in the coverage measurement" />
     <ref role="1TJDcQ" node="CrzyxmE7bQ" resolve="StructuralCoverageNodesFilter" />
   </node>
   <node concept="1TIwiD" id="1EZBwZ4mn8x">
@@ -1047,7 +1047,7 @@
     <property role="EcuMT" value="6137388456558201473" />
     <property role="TrG5h" value="ForceCastExpr" />
     <property role="34LRSv" value="forceCast" />
-    <property role="R4oN_" value="forces a type cast, does not check subtype relationship" />
+    <property role="R4oN_" value="force a type cast; doesn't check the subtype relationship" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5kGo$yLJ0Eb" role="1TKVEi">
       <property role="IQ2ns" value="6137388456558201483" />
@@ -1069,7 +1069,7 @@
     <property role="TrG5h" value="ReportTestItem" />
     <property role="34LRSv" value="report" />
     <property role="EcuMT" value="8255774724000586868" />
-    <property role="R4oN_" value="just output the value, no checking" />
+    <property role="R4oN_" value="output the value, without checking" />
     <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1TJgyj" id="7aipPVpH1LP" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1083,7 +1083,7 @@
     <property role="EcuMT" value="6723982381143750170" />
     <property role="TrG5h" value="AssertThatTestItem" />
     <property role="34LRSv" value="assert-that" />
-    <property role="R4oN_" value="assertion with matcher" />
+    <property role="R4oN_" value="an assert with matcher" />
     <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1TJgyj" id="5Pgo_AS3PT3" role="1TKVEi">
       <property role="IQ2ns" value="6723982381143776835" />
@@ -1106,7 +1106,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="matcher" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for value matchers" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5Pgo_ASae6g">
@@ -1122,7 +1122,7 @@
     <property role="3GE5qa" value="matcher" />
     <property role="TrG5h" value="IsInvalid" />
     <property role="34LRSv" value="invalid" />
-    <property role="R4oN_" value="matches a constraint violation" />
+    <property role="R4oN_" value="match a constraint violation" />
     <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
     <node concept="1TJgyj" id="5Pgo_ASvSWM" role="1TKVEi">
       <property role="IQ2ns" value="6723982381151129394" />
@@ -1177,14 +1177,14 @@
     <property role="3GE5qa" value="matcher.type" />
     <property role="TrG5h" value="MatcherForAnyRecordType" />
     <property role="34LRSv" value="matcher-for-any-record-type" />
-    <property role="R4oN_" value="matches records" />
+    <property role="R4oN_" value="matche records" />
     <ref role="1TJDcQ" node="5Pgo_ASE531" resolve="AbstractMatcherType" />
   </node>
   <node concept="1TIwiD" id="5Pgo_ASE531">
     <property role="EcuMT" value="6723982381153800385" />
     <property role="3GE5qa" value="matcher.type" />
     <property role="TrG5h" value="AbstractMatcherType" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for matcher types" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1202,7 +1202,7 @@
     <property role="3GE5qa" value="matcher" />
     <property role="TrG5h" value="AndMatcher" />
     <property role="34LRSv" value="and" />
-    <property role="R4oN_" value="joins two matchers by and" />
+    <property role="R4oN_" value="join two matchers by and" />
     <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
     <node concept="1TJgyj" id="1ESmOTbCHdR" role="1TKVEi">
       <property role="IQ2ns" value="1925389232535425911" />
@@ -1226,14 +1226,14 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="nodes everywhere" />
-    <property role="R4oN_" value="in the coverage measurement allow nodes everywhere" />
+    <property role="R4oN_" value="allow nodes everywhere in the coverage measurement " />
     <ref role="1TJDcQ" node="CrzyxmE7bQ" resolve="StructuralCoverageNodesFilter" />
   </node>
   <node concept="1TIwiD" id="5DEy7AGc9um">
     <property role="EcuMT" value="6515169867106129814" />
     <property role="3GE5qa" value="assessment.structural" />
     <property role="TrG5h" value="StructuralCoverageAssSummary" />
-    <property role="R4oN_" value="??" />
+    <property role="R4oN_" value="a structural coverage summary" />
     <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
     <node concept="1TJgyi" id="5DEy7AGc9un" role="1TKVEl">
       <property role="IQ2nx" value="6515169867106129815" />
@@ -1245,6 +1245,7 @@
     <property role="EcuMT" value="26846226075438262" />
     <property role="3GE5qa" value="assessment.models" />
     <property role="TrG5h" value="MeasureCoverageFor" />
+    <property role="R4oN_" value="measure coverage for" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1vo80oMkMR" role="1TKVEi">
       <property role="IQ2ns" value="26846226075438263" />
@@ -1262,6 +1263,7 @@
     <property role="EcuMT" value="8435714728545531793" />
     <property role="TrG5h" value="EvalAnythingExpr" />
     <property role="34LRSv" value="evalAnything" />
+    <property role="R4oN_" value="evaluate anything (even non-expressions)" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7khFtBHvbui" role="1TKVEi">
       <property role="IQ2ns" value="8435714728545531794" />

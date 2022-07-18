@@ -48,6 +48,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -99,6 +100,7 @@
     <property role="TrG5h" value="AbstractSolverTask" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base task for creating solver tasks" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7rOSrvnG0Gn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -108,6 +110,7 @@
     <property role="TrG5h" value="SolveControl" />
     <property role="3GE5qa" value="control" />
     <property role="EcuMT" value="4214990435119232757" />
+    <property role="R4oN_" value="a attribute containing additional settings for the solver" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3DYDRw0WRrQ" role="lGtFl">
       <property role="Hh88m" value="solveControl" />
@@ -141,6 +144,7 @@
     <property role="EcuMT" value="1103723565300550875" />
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="ErrorMessage" />
+    <property role="R4oN_" value="a message describing an error state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="XhdFKvXSNs" role="1TKVEl">
       <property role="IQ2nx" value="1103723565300550876" />
@@ -152,6 +156,7 @@
     <property role="EcuMT" value="1103723565300541528" />
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="ErrorSolverTask" />
+    <property role="R4oN_" value="a failed solver task" />
     <ref role="1TJDcQ" node="7rOSrvnFUQX" resolve="AbstractSolverTask" />
     <node concept="1TJgyj" id="XhdFKvXSNY" role="1TKVEi">
       <property role="IQ2ns" value="1103723565300550910" />

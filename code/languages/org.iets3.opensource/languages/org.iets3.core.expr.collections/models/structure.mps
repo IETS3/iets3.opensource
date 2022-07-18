@@ -167,7 +167,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="" />
     <property role="EcuMT" value="7554398283339795488" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base collection operation for operations without arguments" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6zmBjqUiwKE" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
@@ -178,7 +178,7 @@
     <property role="34LRSv" value="size" />
     <property role="3GE5qa" value="collection" />
     <property role="EcuMT" value="7554398283339796915" />
-    <property role="R4oN_" value="returns size of collection" />
+    <property role="R4oN_" value="get the size of collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="6zmBjqUiFJs">
@@ -186,7 +186,7 @@
     <property role="34LRSv" value="isEmpty" />
     <property role="3GE5qa" value="collection" />
     <property role="EcuMT" value="7554398283339840476" />
-    <property role="R4oN_" value="returns whether collection is empty" />
+    <property role="R4oN_" value="check whether the collection is empty" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="PlHQZ" id="6zmBjqUiHH7">
@@ -210,7 +210,7 @@
     <property role="34LRSv" value="first" />
     <property role="3GE5qa" value="ordered" />
     <property role="EcuMT" value="7554398283339850572" />
-    <property role="R4oN_" value="returns the first element" />
+    <property role="R4oN_" value="get the first element" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUiIZG" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -245,7 +245,7 @@
     <property role="TrG5h" value="AtOp" />
     <property role="34LRSv" value="at" />
     <property role="EcuMT" value="7554398283340004826" />
-    <property role="R4oN_" value="returns the element at a particular index" />
+    <property role="R4oN_" value="get the element at a particular index" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUjjRN" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -263,7 +263,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="7554398283340020764" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base collection operation for operations with one argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6zmBjqUjnKt" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -339,7 +339,7 @@
     <property role="TrG5h" value="AsImmutableListOp" />
     <property role="34LRSv" value="toList" />
     <property role="EcuMT" value="8872269265513219132" />
-    <property role="R4oN_" value="creates a list from the collection" />
+    <property role="R4oN_" value="create a list from the collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="7GwCuf2AdVY">
@@ -356,7 +356,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265514351708" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base collection operation for operations with one argument" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="4qVjx3k_vab" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
@@ -368,7 +368,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265515327232" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base collection operation for operations with one predicate argument" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="7SZA7UeV1IM" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
@@ -385,7 +385,7 @@
     <property role="TrG5h" value="AnyOp" />
     <property role="34LRSv" value="any" />
     <property role="EcuMT" value="8872269265515619803" />
-    <property role="R4oN_" value="existiential quantifier (true if at least one is true)" />
+    <property role="R4oN_" value="an existential quantifier (true if at least one is true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
   </node>
   <node concept="1TIwiD" id="7GwCuf2RfRi">
@@ -436,14 +436,14 @@
     <property role="TrG5h" value="AsImmutableSetOp" />
     <property role="34LRSv" value="toSet" />
     <property role="EcuMT" value="8872269265522211270" />
-    <property role="R4oN_" value="creates a set from collection or value (removes dups)" />
+    <property role="R4oN_" value="create a set from collection or value (removes dups)" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="54HsVvNUXea">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="BracketOp" />
     <property role="EcuMT" value="5849458724932670346" />
-    <property role="R4oN_" value="returns the element at the specified index" />
+    <property role="R4oN_" value="get the element at the specified index" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="54HsVvNUXeb" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -562,7 +562,7 @@
     <property role="TrG5h" value="MaxOp" />
     <property role="34LRSv" value="max" />
     <property role="EcuMT" value="5585772046587930249" />
-    <property role="R4oN_" value="returns biggest element in collection" />
+    <property role="R4oN_" value="get the biggest element in the collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjDbyr0" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -576,7 +576,7 @@
     <property role="TrG5h" value="SumOp" />
     <property role="34LRSv" value="sum" />
     <property role="EcuMT" value="5585772046594451299" />
-    <property role="R4oN_" value="returns sum of (numeric) collection" />
+    <property role="R4oN_" value="get the sum of a (numeric) collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjD$qt$" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -587,7 +587,7 @@
     <property role="TrG5h" value="FirstNOp" />
     <property role="34LRSv" value="firstN" />
     <property role="EcuMT" value="5585772046596642164" />
-    <property role="R4oN_" value="returns first N elements" />
+    <property role="R4oN_" value="get the first N elements" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjDXktS" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -638,7 +638,7 @@
     <property role="TrG5h" value="MinOp" />
     <property role="34LRSv" value="min" />
     <property role="EcuMT" value="7740953487940081584" />
-    <property role="R4oN_" value="returns smallest element in collection" />
+    <property role="R4oN_" value="get the smallest element in the collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="6HHp2WnvluL" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -723,7 +723,7 @@
     <property role="EcuMT" value="3989687177013570767" />
     <property role="TrG5h" value="UpToTarget" />
     <property role="34LRSv" value="upto" />
-    <property role="R4oN_" value="creates list of numbers up to the given maximum" />
+    <property role="R4oN_" value="create a list of numbers up to the given maximum" />
     <node concept="1TJgyj" id="3tudP_AOMNg" role="1TKVEi">
       <property role="IQ2ns" value="3989687177013570768" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -754,7 +754,7 @@
     <property role="3GE5qa" value="collection.rnd" />
     <property role="TrG5h" value="IndexExpr" />
     <property role="34LRSv" value="index" />
-    <property role="R4oN_" value="returns the index of the element being processed" />
+    <property role="R4oN_" value="get the index of the element being processed" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="7SZA7Udl6Fm">
@@ -790,14 +790,14 @@
     <property role="EcuMT" value="2554784455264825928" />
     <property role="TrG5h" value="FlattenOp" />
     <property role="34LRSv" value="flatten" />
-    <property role="R4oN_" value="flattens a list of lists into a list" />
+    <property role="R4oN_" value="flatten a list of lists into a list" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="5$4k7YFgD0B">
     <property role="EcuMT" value="6414340278546763815" />
     <property role="TrG5h" value="AsSingletonList" />
     <property role="34LRSv" value="toList" />
-    <property role="R4oN_" value="creates a list from the single value" />
+    <property role="R4oN_" value="create a list from the single value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5$4k7YFgD0I" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -809,7 +809,7 @@
     <property role="TrG5h" value="AbstractStringListJoiner" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for string list joiners" />
     <ref role="1TJDcQ" node="7GwCuf2AkLs" resolve="OneCollBaseTypedArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="4ptnK4ii9fS">
@@ -817,7 +817,7 @@
     <property role="TrG5h" value="StringJoinOp" />
     <property role="34LRSv" value="join" />
     <property role="EcuMT" value="5070313213695398904" />
-    <property role="R4oN_" value="creates a single string from list of strings" />
+    <property role="R4oN_" value="create a single string from a list of strings" />
     <ref role="1TJDcQ" node="4ptnK4iu3mt" resolve="AbstractStringListJoiner" />
   </node>
   <node concept="1TIwiD" id="4ptnK4irG30">
@@ -825,7 +825,7 @@
     <property role="TrG5h" value="StringTerminateOp" />
     <property role="34LRSv" value="terminate" />
     <property role="EcuMT" value="5070313213697900736" />
-    <property role="R4oN_" value="??" />
+    <property role="R4oN_" value="create a single string from a list of strings (a separator is added even if the fully created string is empty)" />
     <ref role="1TJDcQ" node="4ptnK4iu3mt" resolve="AbstractStringListJoiner" />
   </node>
   <node concept="1TIwiD" id="3kEBq3lv4rL">
@@ -844,7 +844,7 @@
     <property role="34LRSv" value="isNotEmpty" />
     <property role="3GE5qa" value="collection" />
     <property role="EcuMT" value="6095949300270588116" />
-    <property role="R4oN_" value="returns whether collection is not empty" />
+    <property role="R4oN_" value="check whether collection is not empty" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="4hLehKTZXcf">
@@ -864,7 +864,7 @@
     <property role="TrG5h" value="FoldOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base collection operation for fold operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4hLehKU05cE" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
@@ -892,7 +892,7 @@
     <property role="TrG5h" value="AsMapOp" />
     <property role="34LRSv" value="toMap" />
     <property role="EcuMT" value="24388123213992448" />
-    <property role="R4oN_" value="creates a set from a collection of 2-tuples" />
+    <property role="R4oN_" value="create a set from a collection of 2-tuples" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="1mDdTH0lqM">
@@ -911,7 +911,7 @@
     <property role="TrG5h" value="FindFirstOp" />
     <property role="34LRSv" value="findFirst" />
     <property role="EcuMT" value="24388123216554083" />
-    <property role="R4oN_" value="returns the first element for which condition holds" />
+    <property role="R4oN_" value="get the first element for which condition holds" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
     <node concept="PrWs8" id="1mDdTH3UxA" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -941,7 +941,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="mapLike" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base type for map like types" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="asaX9" id="2uo6UInIEJi" role="lGtFl" />
     <node concept="1TJgyj" id="4_KMC82DZMl" role="1TKVEi">
@@ -964,7 +964,7 @@
     <property role="3GE5qa" value="list" />
     <property role="TrG5h" value="ListInsertOp" />
     <property role="34LRSv" value="insert" />
-    <property role="R4oN_" value="return new list with new element inserted at specified index" />
+    <property role="R4oN_" value="create a new list with new element inserted at specified index" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1rPkY5wVdS6" role="1TKVEi">
       <property role="IQ2ns" value="1654320665587408390" />
@@ -989,7 +989,7 @@
     <property role="3GE5qa" value="map" />
     <property role="TrG5h" value="MapKeysOp" />
     <property role="34LRSv" value="keys" />
-    <property role="R4oN_" value="returns collection of keys" />
+    <property role="R4oN_" value="get a collection of the keys" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6IBT1wUeIoE" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -1000,7 +1000,7 @@
     <property role="3GE5qa" value="map" />
     <property role="TrG5h" value="MapValuesOp" />
     <property role="34LRSv" value="values" />
-    <property role="R4oN_" value="returns collection of values in map" />
+    <property role="R4oN_" value="get a collection of the values in the map" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6IBT1wUeESZ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -1096,7 +1096,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="444732437356045611" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base collection operation for operations with two predicate arguments" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="3SMYSUUHlJJ">
@@ -1104,7 +1104,7 @@
     <property role="TrG5h" value="AnyWithIndexOp" />
     <property role="34LRSv" value="any_with_index" />
     <property role="EcuMT" value="4481921169623440367" />
-    <property role="R4oN_" value="existiential quantifier (true if at least one is true) that passes the element's index into the closure as well." />
+    <property role="R4oN_" value="an existential quantifier (true if at least one is true) that passes the element's index into the closure as well." />
     <ref role="1TJDcQ" node="oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
   </node>
   <node concept="1TIwiD" id="lR2RIFOEit">
@@ -1112,7 +1112,7 @@
     <property role="3GE5qa" value="ordered" />
     <property role="TrG5h" value="TailOp" />
     <property role="34LRSv" value="tail" />
-    <property role="R4oN_" value="returns all but the first element of a list" />
+    <property role="R4oN_" value="get all but the first element of a list" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="lR2RIFOEjs" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -1126,7 +1126,7 @@
     <property role="3GE5qa" value="ordered" />
     <property role="TrG5h" value="ReverseOp" />
     <property role="34LRSv" value="reverse" />
-    <property role="R4oN_" value="returns the collection's elements in reverse order" />
+    <property role="R4oN_" value="get the collection's elements in reverse order" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="4F_NhVzcaCM" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -1162,6 +1162,7 @@
     <property role="3GE5qa" value="list" />
     <property role="TrG5h" value="ListPickOp" />
     <property role="34LRSv" value="pick" />
+    <property role="R4oN_" value="select a list of elements based on a list of indices" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="twWOnQMH4e" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />

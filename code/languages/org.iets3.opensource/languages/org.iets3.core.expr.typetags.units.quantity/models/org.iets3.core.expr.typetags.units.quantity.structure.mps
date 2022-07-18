@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
@@ -42,6 +43,7 @@
   <node concept="1TIwiD" id="1KUmgSFxyBU">
     <property role="EcuMT" value="2034036099105827322" />
     <property role="TrG5h" value="QuantitySpecification" />
+    <property role="R4oN_" value="a specification of quantities" />
     <ref role="1TJDcQ" to="w1hl:1RcasK0SmZc" resolve="UnaryTag" />
     <node concept="1TJgyj" id="71Zj$i0ct2c" role="1TKVEi">
       <property role="IQ2ns" value="8106283910405673100" />
@@ -54,6 +56,7 @@
   <node concept="1TIwiD" id="1KUmgSFxyCa">
     <property role="EcuMT" value="2034036099105827338" />
     <property role="TrG5h" value="QuantityReference" />
+    <property role="R4oN_" value="a reference to a quantity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="71Zj$i0ct2e" role="1TKVEi">
       <property role="IQ2ns" value="8106283910405673102" />

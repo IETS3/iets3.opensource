@@ -65,7 +65,7 @@
     <property role="EcuMT" value="4026566441518088783" />
     <property role="TrG5h" value="MessageContainer" />
     <property role="19KtqR" value="true" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a container for declaring messages" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="PrWs8" id="3vxfdxbcs9n" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9j" resolve="IMessageNamespace" />
@@ -102,7 +102,7 @@
     <property role="EcuMT" value="4026566441518088795" />
     <property role="TrG5h" value="Group" />
     <property role="34LRSv" value="messagegroup" />
-    <property role="R4oN_" value="named group of messages (namespace)" />
+    <property role="R4oN_" value="a named group of messages (namespace)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbcs9s" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9j" resolve="IMessageNamespace" />
@@ -124,7 +124,7 @@
   <node concept="1TIwiD" id="3vxfdxbcBqr">
     <property role="EcuMT" value="4026566441518134939" />
     <property role="TrG5h" value="MessageDefinition" />
-    <property role="R4oN_" value="a message definition, with args and a value" />
+    <property role="R4oN_" value="a message definition with arguments and a value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbcBqs" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9v" resolve="IMessageNamespaceContent" />
@@ -159,7 +159,7 @@
   <node concept="1TIwiD" id="3vxfdxbcS_H">
     <property role="EcuMT" value="4026566441518205293" />
     <property role="TrG5h" value="EmptyMessageContent" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="an empty message content" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbcS_I" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9v" resolve="IMessageNamespaceContent" />
@@ -171,7 +171,7 @@
   <node concept="1TIwiD" id="3vxfdxbdack">
     <property role="EcuMT" value="4026566441518277396" />
     <property role="TrG5h" value="MessageNamespaceRef" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a reference to a message namespace" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3vxfdxbdacB" role="1TKVEi">
       <property role="IQ2ns" value="4026566441518277415" />
@@ -183,7 +183,7 @@
   <node concept="1TIwiD" id="3vxfdxbdbUS">
     <property role="EcuMT" value="4026566441518284472" />
     <property role="TrG5h" value="MessageTarget" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a target of a message" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3vxfdxbjb$U" role="1TKVEi">
       <property role="IQ2ns" value="4026566441519855930" />
@@ -228,7 +228,7 @@
   <node concept="1TIwiD" id="3vxfdxbeBeR">
     <property role="EcuMT" value="4026566441518658487" />
     <property role="TrG5h" value="MessageArgRef" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a reference to a message argument" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3vxfdxbeBeS" role="1TKVEi">
       <property role="IQ2ns" value="4026566441518658488" />
@@ -240,7 +240,7 @@
   <node concept="1TIwiD" id="3vxfdxbi6AO">
     <property role="EcuMT" value="4026566441519573428" />
     <property role="TrG5h" value="NamespaceType" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a namespace type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="3vxfdxbi77u" role="1TKVEi">
       <property role="IQ2ns" value="4026566441519575518" />
@@ -252,7 +252,7 @@
   <node concept="1TIwiD" id="3vxfdxbiEXG">
     <property role="EcuMT" value="4026566441519722348" />
     <property role="TrG5h" value="GroupTarget" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a reference to a group" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbiEXH" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -270,7 +270,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="kind" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for message kinds" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3vxfdxbkQiy">
@@ -332,6 +332,7 @@
     <property role="TrG5h" value="MessageValueOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base operation for operations on MessageValues" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4AahbtULQ_w" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -341,18 +342,21 @@
     <property role="EcuMT" value="5299123466384402815" />
     <property role="TrG5h" value="MessageValueTextOp" />
     <property role="34LRSv" value="text" />
+    <property role="R4oN_" value="get the text of the message value" />
     <ref role="1TJDcQ" node="4AahbtULQ_v" resolve="MessageValueOp" />
   </node>
   <node concept="1TIwiD" id="4AahbtURbB3">
     <property role="EcuMT" value="5299123466385799619" />
     <property role="TrG5h" value="MessageValueLocationOp" />
     <property role="34LRSv" value="loc" />
+    <property role="R4oN_" value="get the location of the message value" />
     <ref role="1TJDcQ" node="4AahbtULQ_v" resolve="MessageValueOp" />
   </node>
   <node concept="1TIwiD" id="4AahbtV32GF">
     <property role="EcuMT" value="5299123466388908843" />
     <property role="TrG5h" value="MessageValueDataOp" />
     <property role="34LRSv" value="data" />
+    <property role="R4oN_" value="get the data of a message" />
     <ref role="1TJDcQ" node="4AahbtULQ_v" resolve="MessageValueOp" />
   </node>
 </model>

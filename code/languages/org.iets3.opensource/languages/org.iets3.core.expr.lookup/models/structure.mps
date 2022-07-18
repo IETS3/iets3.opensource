@@ -15,6 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -43,6 +44,7 @@
     <property role="EcuMT" value="5860825012162728630" />
     <property role="TrG5h" value="LookupTable" />
     <property role="34LRSv" value="lookup" />
+    <property role="R4oN_" value="a lookup table" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="55lPkJGFLTi" role="1TKVEi">
       <property role="IQ2ns" value="5860825012162731602" />
@@ -92,6 +94,7 @@
   <node concept="1TIwiD" id="55lPkJGIN9r">
     <property role="EcuMT" value="5860825012163523163" />
     <property role="TrG5h" value="LookupTableCell" />
+    <property role="R4oN_" value="a value in a lookup table" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="55lPkJGINbj" role="1TKVEi">
       <property role="IQ2ns" value="5860825012163523283" />
@@ -116,6 +119,7 @@
   <node concept="1TIwiD" id="55lPkJGLB68">
     <property role="EcuMT" value="5860825012164260232" />
     <property role="TrG5h" value="LookupTableHeader" />
+    <property role="R4oN_" value="a lookup table header expression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="55lPkJGLB8d" role="1TKVEi">
       <property role="IQ2ns" value="5860825012164260365" />
@@ -129,6 +133,7 @@
     <property role="EcuMT" value="5860825012167904587" />
     <property role="TrG5h" value="LookupTableType" />
     <property role="34LRSv" value="lookup" />
+    <property role="R4oN_" value="a lookup table" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="55lPkJGZxnb" role="1TKVEi">
       <property role="IQ2ns" value="5860825012167906763" />
@@ -156,6 +161,7 @@
     <property role="EcuMT" value="5860825012168429198" />
     <property role="TrG5h" value="LookupTarget" />
     <property role="34LRSv" value="lookup" />
+    <property role="R4oN_" value="lookup a value by row and colum" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="55lPkJH1xg0" role="1TKVEi">
       <property role="IQ2ns" value="5860825012168430592" />
@@ -178,6 +184,7 @@
   <node concept="1TIwiD" id="55lPkJH2urb">
     <property role="EcuMT" value="5860825012168681163" />
     <property role="TrG5h" value="LookupTableRef" />
+    <property role="R4oN_" value="a reference to a lookup table" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="55lPkJH2uuj" role="1TKVEi">
       <property role="IQ2ns" value="5860825012168681363" />

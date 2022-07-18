@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -45,6 +46,7 @@
     <property role="EcuMT" value="4473287864570292399" />
     <property role="TrG5h" value="TestExecutionConfig" />
     <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="configuration for the test execution" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3SkjTN1LTtQ" role="1TKVEi">
       <property role="IQ2ns" value="4473287864570320758" />
@@ -62,18 +64,21 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="AbstractTestExecutionMode" />
+    <property role="R4oN_" value="a base concept for test execution modes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3SkjTN1LTuE">
     <property role="EcuMT" value="4473287864570320810" />
     <property role="TrG5h" value="GeneratorExecutionMode" />
-    <property role="34LRSv" value="Generator" />
+    <property role="34LRSv" value="generator" />
+    <property role="R4oN_" value="excute tests by the generator" />
     <ref role="1TJDcQ" node="3SkjTN1LTtP" resolve="AbstractTestExecutionMode" />
   </node>
   <node concept="1TIwiD" id="3SkjTN1LTv8">
     <property role="EcuMT" value="4473287864570320840" />
     <property role="TrG5h" value="InterpreterExecutionMode" />
-    <property role="34LRSv" value="Interpreter" />
+    <property role="34LRSv" value="interpreter" />
+    <property role="R4oN_" value="execute tests by the interpreter" />
     <ref role="1TJDcQ" node="3SkjTN1LTtP" resolve="AbstractTestExecutionMode" />
   </node>
 </model>

@@ -67,7 +67,7 @@
     <property role="3GE5qa" value="dectab" />
     <property role="TrG5h" value="DecTabColHeader" />
     <property role="EcuMT" value="4214990435115877130" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a column header of a binary decision table" />
     <ref role="1TJDcQ" node="3DYDRw0K4cf" resolve="DecTabExpression" />
     <node concept="PrWs8" id="5crSXLq6k_" role="PzmwI">
       <ref role="PrY4T" node="5crSXLq2_c" resolve="ICanHaveRangeValueExpr" />
@@ -77,7 +77,7 @@
     <property role="3GE5qa" value="dectab" />
     <property role="TrG5h" value="DecTabContent" />
     <property role="EcuMT" value="4214990435115877134" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a content of a binary decision table cell" />
     <ref role="1TJDcQ" node="3DYDRw0K4cf" resolve="DecTabExpression" />
     <node concept="1TJgyj" id="3DYDRw0K4cT" role="1TKVEi">
       <property role="20kJfa" value="row" />
@@ -163,7 +163,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="4214990435115877135" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for decision table expressions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3DYDRw0K4cg" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -177,7 +177,7 @@
     <property role="3GE5qa" value="dectab" />
     <property role="TrG5h" value="DecTabRowHeader" />
     <property role="EcuMT" value="4214990435115877129" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a row header of a binary decision table" />
     <ref role="1TJDcQ" node="3DYDRw0K4cf" resolve="DecTabExpression" />
     <node concept="PrWs8" id="5crSXLq6kB" role="PzmwI">
       <ref role="PrY4T" node="5crSXLq2_c" resolve="ICanHaveRangeValueExpr" />
@@ -189,7 +189,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="range" />
     <property role="EcuMT" value="1690305638830946777" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for range specifier" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1tPb0nsnb7f">
@@ -278,7 +278,7 @@
     <property role="3GE5qa" value="range" />
     <property role="TrG5h" value="SplitValue" />
     <property role="EcuMT" value="2346756181071899790" />
-    <property role="R4oN_" value="the value to be split" />
+    <property role="R4oN_" value="a value to be split" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="22hm_0zfyMf" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -306,7 +306,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="2346756181072973168" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base range specifier for single values" />
     <ref role="1TJDcQ" node="1tPb0nsmVBp" resolve="RangeSpecifier" />
     <node concept="1TJgyj" id="22hm_0zjCPL" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -320,7 +320,7 @@
     <property role="3GE5qa" value="dectree" />
     <property role="TrG5h" value="RootTreeNode" />
     <property role="EcuMT" value="593359455454548610" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a root tree node" />
     <ref role="1TJDcQ" node="wW2kvIv6nS" resolve="AbstractDecTreeNode" />
     <node concept="1TJgyj" id="1NRU0vciZVm" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -336,7 +336,7 @@
     <property role="3GE5qa" value="dectree" />
     <property role="TrG5h" value="DecTreeNode" />
     <property role="EcuMT" value="2346756181087515424" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a decision tree node" />
     <ref role="1TJDcQ" node="wW2kvIv6nS" resolve="AbstractDecTreeNode" />
     <node concept="1TJgyj" id="22hm_0$b7cx" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -381,7 +381,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="593359455454520824" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base node for decision tree nodes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="22hm_0$b7pP" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -395,7 +395,7 @@
     <property role="EcuMT" value="1564406563501543237" />
     <property role="3GE5qa" value="dectree" />
     <property role="TrG5h" value="TreeGroup" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a tree group" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1mPSRGtN8X6" role="1TKVEl">
       <property role="IQ2nx" value="1564406563501543238" />
@@ -453,7 +453,7 @@
     <property role="EcuMT" value="161551962036658016" />
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="QueryColDef" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a query column definition" />
     <ref role="1TJDcQ" node="8XWEtdYdD1" resolve="ColDef" />
     <node concept="1TJgyj" id="8XWEtdX_Yh" role="1TKVEi">
       <property role="IQ2ns" value="161551962036658065" />
@@ -486,14 +486,14 @@
     <property role="TrG5h" value="ColDef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for column definitions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="8XWEtdYkhC">
     <property role="EcuMT" value="161551962036847720" />
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="Content" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="content of a multi-criteria decision table column" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="8XWEtdYkjo" role="1TKVEi">
       <property role="IQ2ns" value="161551962036847832" />
@@ -516,7 +516,7 @@
     <property role="EcuMT" value="161551962036813055" />
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="DataRow" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a data row" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="8XWEtdYkjq" role="1TKVEi">
       <property role="IQ2ns" value="161551962036847834" />
@@ -536,7 +536,7 @@
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="EmptyExpression" />
     <property role="34LRSv" value="empty" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="an empty expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="5GPhrsV2jf2">
@@ -569,7 +569,7 @@
     <property role="EcuMT" value="6572235884488901320" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="TopLevelColDef" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a top level column definition" />
     <ref role="1TJDcQ" node="8XWEtdYdD1" resolve="ColDef" />
     <node concept="PrWs8" id="5GPhrsV2kbc" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
@@ -632,7 +632,7 @@
     <property role="EcuMT" value="8853770331926288886" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="TopLevelTableValueSpec" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a value for a top level column definition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7FuUjk_mXBR" role="1TKVEi">
       <property role="IQ2ns" value="8853770331926288887" />
@@ -657,7 +657,7 @@
     <property role="EcuMT" value="8853770331932193109" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="TopLevelDecTabRef" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a reference to a multi-criteria decision table" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7FuUjk_Hv5m" role="1TKVEi">
       <property role="IQ2ns" value="8853770331932193110" />
@@ -670,7 +670,7 @@
     <property role="EcuMT" value="8840800177405405525" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="DecTableType" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a multi-criteria decision table" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="7EKPeIStq_m" role="1TKVEi">
       <property role="IQ2ns" value="8840800177405405526" />
@@ -735,7 +735,7 @@
     <property role="EcuMT" value="8840800177408330898" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="BoundColRef" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a reference to a bound column" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7EKPeISC$Mj" role="1TKVEi">
       <property role="IQ2ns" value="8840800177408330899" />
@@ -750,6 +750,7 @@
     <property role="TrG5h" value="AbstractResultColDef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base column definition for results" />
     <ref role="1TJDcQ" node="8XWEtdYdD1" resolve="ColDef" />
   </node>
   <node concept="1TIwiD" id="6OunYCeYf_9">
@@ -757,7 +758,7 @@
     <property role="3GE5qa" value="multidectab.expr.result" />
     <property role="TrG5h" value="LocalVarAssignColDef" />
     <property role="34LRSv" value="-&gt;" />
-    <property role="R4oN_" value="assign result to local variable" />
+    <property role="R4oN_" value="assign a result to a local variable" />
     <ref role="1TJDcQ" node="6OunYCeYf_a" resolve="AssigningResultColDef" />
     <node concept="1TJgyj" id="6OunYCeYfBN" role="1TKVEi">
       <property role="IQ2ns" value="7862827458313648627" />
@@ -773,12 +774,14 @@
     <property role="TrG5h" value="AssigningResultColDef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base result column definition for assigning results" />
     <ref role="1TJDcQ" node="6OunYCeYf_8" resolve="AbstractResultColDef" />
   </node>
   <node concept="1TIwiD" id="6OunYCfi$ob">
     <property role="EcuMT" value="7862827458318976523" />
     <property role="3GE5qa" value="multidectab" />
     <property role="TrG5h" value="RangeValueExpr" />
+    <property role="R4oN_" value="a range of values" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6OunYCfi$oc" role="1TKVEi">
       <property role="IQ2ns" value="7862827458318976524" />
@@ -801,6 +804,7 @@
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="SameExpression" />
     <property role="34LRSv" value="^" />
+    <property role="R4oN_" value="same value as the cell in the same column and previous row" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="5crSXLq2_c">

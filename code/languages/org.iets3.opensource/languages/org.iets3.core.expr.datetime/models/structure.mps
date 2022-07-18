@@ -63,7 +63,7 @@
     <property role="TrG5h" value="DateLiteral" />
     <property role="34LRSv" value="/" />
     <property role="3GE5qa" value="date" />
-    <property role="R4oN_" value="date literal" />
+    <property role="R4oN_" value="a date literal" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="3nGzaxURa4i" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
@@ -90,7 +90,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="date" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base type for dates" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="3nGzaxUXsfN">
@@ -124,7 +124,7 @@
     <property role="3GE5qa" value="range.literals" />
     <property role="TrG5h" value="YearRangeType" />
     <property role="34LRSv" value="year" />
-    <property role="R4oN_" value="a period of a year" />
+    <property role="R4oN_" value="a period of years" />
     <ref role="1TJDcQ" node="3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
   </node>
   <node concept="1TIwiD" id="3nGzaxUXUVE">
@@ -133,7 +133,7 @@
     <property role="TrG5h" value="DiscreteDateRangeOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base operation for discrete date range operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3nGzaxUXUVF" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -202,7 +202,7 @@
     <property role="TrG5h" value="DateDeltaLiteral" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base date for delta literals" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="7aRvJQE2nOy" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
@@ -228,8 +228,8 @@
     <property role="3GE5qa" value="delta" />
     <property role="TrG5h" value="DateDeltaType" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
     <property role="34LRSv" value="datedelta" />
+    <property role="R4oN_" value="a date delta type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="7aRvJQE305g">
@@ -245,7 +245,7 @@
     <property role="3GE5qa" value="range.iterate" />
     <property role="TrG5h" value="NextOp" />
     <property role="34LRSv" value="next" />
-    <property role="R4oN_" value="returns the next (similarly sized) period" />
+    <property role="R4oN_" value="get the next (similarly sized) period" />
     <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="DiscreteDateRangeOp" />
   </node>
   <node concept="1TIwiD" id="7aRvJQE7edC">
@@ -253,7 +253,7 @@
     <property role="3GE5qa" value="range.iterate" />
     <property role="TrG5h" value="PrevOp" />
     <property role="34LRSv" value="prev" />
-    <property role="R4oN_" value="returns the previous (similarly sized) period" />
+    <property role="R4oN_" value="get the previous (similarly sized) period" />
     <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="DiscreteDateRangeOp" />
   </node>
   <node concept="1TIwiD" id="7aRvJQEbcNz">
@@ -310,7 +310,7 @@
     <property role="TrG5h" value="DateOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base operation for operations on dates" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7aRvJQEfB5u" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -321,7 +321,7 @@
     <property role="3GE5qa" value="date.op" />
     <property role="TrG5h" value="YearOfDateOp" />
     <property role="34LRSv" value="yearRange" />
-    <property role="R4oN_" value="returns the date range correponding to a date's year" />
+    <property role="R4oN_" value="get the date range correponding to a date's year" />
     <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
   </node>
   <node concept="1TIwiD" id="7aRvJQEfEpU">
@@ -329,7 +329,7 @@
     <property role="3GE5qa" value="date.op" />
     <property role="TrG5h" value="MonthOfDateOp" />
     <property role="34LRSv" value="monthRange" />
-    <property role="R4oN_" value="returns the date range correponding to a date's month" />
+    <property role="R4oN_" value="get the date range correponding to a date's month" />
     <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
   </node>
   <node concept="1TIwiD" id="7aRvJQEgTEX">
@@ -337,7 +337,7 @@
     <property role="3GE5qa" value="range" />
     <property role="TrG5h" value="MonthRangeYearOp" />
     <property role="34LRSv" value="yearRange" />
-    <property role="R4oN_" value="returns the year component of a date" />
+    <property role="R4oN_" value="get the year component of a date" />
     <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="DiscreteDateRangeOp" />
   </node>
   <node concept="1TIwiD" id="7aRvJQF3FvQ">
@@ -345,7 +345,7 @@
     <property role="3GE5qa" value="date" />
     <property role="TrG5h" value="BeginningOfTIME" />
     <property role="34LRSv" value="BoT" />
-    <property role="R4oN_" value="beginning of time" />
+    <property role="R4oN_" value="the beginning of time" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="5YygIlbdS$f">
@@ -353,7 +353,7 @@
     <property role="3GE5qa" value="date.op" />
     <property role="TrG5h" value="YearValue" />
     <property role="34LRSv" value="yearValue" />
-    <property role="R4oN_" value="returns the year component of a date" />
+    <property role="R4oN_" value="get the year component of a date" />
     <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
   </node>
   <node concept="1TIwiD" id="5YygIlbdSOf">
@@ -361,7 +361,7 @@
     <property role="3GE5qa" value="date.op" />
     <property role="TrG5h" value="MonthValue" />
     <property role="34LRSv" value="monthValue" />
-    <property role="R4oN_" value="returns the month component of a date" />
+    <property role="R4oN_" value="get the month component of a date" />
     <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
   </node>
   <node concept="1TIwiD" id="5YygIlbdUl7">
@@ -369,7 +369,7 @@
     <property role="3GE5qa" value="date.op" />
     <property role="TrG5h" value="DayValue" />
     <property role="34LRSv" value="dayValue" />
-    <property role="R4oN_" value="the day component of a date" />
+    <property role="R4oN_" value="get the day component of a date" />
     <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
   </node>
   <node concept="1TIwiD" id="7baKnR5m9jI">
@@ -377,7 +377,7 @@
     <property role="3GE5qa" value="date.op" />
     <property role="TrG5h" value="ToStringOp" />
     <property role="34LRSv" value="toString" />
-    <property role="R4oN_" value="a string representation of a date" />
+    <property role="R4oN_" value="convert to a string representation of a date" />
     <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBHlNKe">
@@ -385,6 +385,7 @@
     <property role="3GE5qa" value="date" />
     <property role="TrG5h" value="MakeDate" />
     <property role="34LRSv" value="makeDate" />
+    <property role="R4oN_" value="create a new date from day, month and year" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7khFtBHlNKf" role="1TKVEi">
       <property role="IQ2ns" value="8435714728543075343" />
@@ -413,6 +414,7 @@
     <property role="TrG5h" value="AbstractRangeRelOp" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="range.rel" />
+    <property role="R4oN_" value="a base range operation on periods" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
     <node concept="1TJgyj" id="7khFtBHyEjN" role="1TKVEi">
       <property role="IQ2ns" value="8435714728546444531" />
@@ -427,6 +429,7 @@
     <property role="3GE5qa" value="range.rel" />
     <property role="TrG5h" value="OverlapsRangeRelOp" />
     <property role="34LRSv" value="overlaps" />
+    <property role="R4oN_" value="check if the date range overlaps another date range" />
     <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBHyG$y">
@@ -434,6 +437,7 @@
     <property role="3GE5qa" value="range.rel" />
     <property role="TrG5h" value="ContainsRangeRelOp" />
     <property role="34LRSv" value="contains" />
+    <property role="R4oN_" value="check that the date range contains another date range" />
     <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBHyG$z">
@@ -441,6 +445,7 @@
     <property role="3GE5qa" value="range.rel" />
     <property role="TrG5h" value="FitsInRangeRelOp" />
     <property role="34LRSv" value="fitsIn" />
+    <property role="R4oN_" value="check that the date range fits into another date range" />
     <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBH_CX$">
@@ -448,6 +453,7 @@
     <property role="3GE5qa" value="date.op" />
     <property role="TrG5h" value="UntilOp" />
     <property role="34LRSv" value="until" />
+    <property role="R4oN_" value="get a new date range ending on an end date" />
     <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
     <node concept="1TJgyj" id="7khFtBH_CX_" role="1TKVEi">
       <property role="IQ2ns" value="8435714728547225445" />
@@ -462,6 +468,7 @@
     <property role="3GE5qa" value="range.count" />
     <property role="TrG5h" value="AbstractCountOp" />
     <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="a base operation for count operations that return a positive integer" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
     <node concept="PrWs8" id="1M88FTOWhlj" role="PzmwI">
       <ref role="PrY4T" to="hm2y:26cjRADipGQ" resolve="ITargetThatCanDealWithNix" />
@@ -472,6 +479,7 @@
     <property role="3GE5qa" value="range.count" />
     <property role="TrG5h" value="DaysCountOp" />
     <property role="34LRSv" value="days" />
+    <property role="R4oN_" value="get the number of days" />
     <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBHCPjq">
@@ -479,6 +487,7 @@
     <property role="3GE5qa" value="range.count" />
     <property role="TrG5h" value="FullMonthsCountOp" />
     <property role="34LRSv" value="fullMonths" />
+    <property role="R4oN_" value="get the number of full months" />
     <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBHCPjr">
@@ -486,6 +495,7 @@
     <property role="3GE5qa" value="range.count" />
     <property role="TrG5h" value="StartedMonthsCountOp" />
     <property role="34LRSv" value="startedMonths" />
+    <property role="R4oN_" value="get the number of started months" />
     <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBHCPjs">
@@ -493,6 +503,7 @@
     <property role="3GE5qa" value="range.count" />
     <property role="TrG5h" value="StartedYearsCountOp" />
     <property role="34LRSv" value="startedYears" />
+    <property role="R4oN_" value="get the number of started years" />
     <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBHCPjt">
@@ -500,6 +511,7 @@
     <property role="3GE5qa" value="range.count" />
     <property role="TrG5h" value="FullYearsCountOp" />
     <property role="34LRSv" value="fullYears" />
+    <property role="R4oN_" value="get the number of full years" />
     <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBHJqPm">
@@ -515,6 +527,7 @@
     <property role="3GE5qa" value="range" />
     <property role="TrG5h" value="PeriodType" />
     <property role="34LRSv" value="period" />
+    <property role="R4oN_" value="period type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="7zAZa_vg5yL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
@@ -526,7 +539,7 @@
     <property role="TrG5h" value="PeriodRangeOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base operation for period range operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7khFtBHJt9u" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -537,6 +550,7 @@
     <property role="3GE5qa" value="range.rel" />
     <property role="TrG5h" value="IntersectRangeOp" />
     <property role="34LRSv" value="intersection" />
+    <property role="R4oN_" value="get the intersection with another period range" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
     <node concept="1TJgyj" id="4O9rw8aD8PU" role="1TKVEi">
       <property role="IQ2ns" value="5551088970758393210" />
@@ -551,6 +565,7 @@
     <property role="3GE5qa" value="range.rel" />
     <property role="TrG5h" value="IsEmptyRangeOp" />
     <property role="34LRSv" value="isEmpty" />
+    <property role="R4oN_" value="check if the period range is empty" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
     <node concept="PrWs8" id="4ct6YAjKVBQ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:26cjRADipGQ" resolve="ITargetThatCanDealWithNix" />
@@ -561,6 +576,7 @@
     <property role="3GE5qa" value="delta" />
     <property role="TrG5h" value="DateDeltaToNumberOp" />
     <property role="34LRSv" value="toNumber" />
+    <property role="R4oN_" value="convert to a number" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4V0FBnKILiA" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -571,7 +587,7 @@
     <property role="3GE5qa" value="date.earlylate" />
     <property role="TrG5h" value="LatestExpression" />
     <property role="34LRSv" value="latest" />
-    <property role="R4oN_" value="the latest of a set of dates" />
+    <property role="R4oN_" value="get the latest of a set of dates" />
     <ref role="1TJDcQ" node="1RwPUjzgk0y" resolve="AbstractEarliestLastestExpression" />
   </node>
   <node concept="1TIwiD" id="1RwPUjzgIEp">
@@ -579,7 +595,7 @@
     <property role="3GE5qa" value="date.earlylate" />
     <property role="TrG5h" value="EarliestExpression" />
     <property role="34LRSv" value="earliest" />
-    <property role="R4oN_" value="the earliest of a set of dates" />
+    <property role="R4oN_" value="get the earliest of a set of dates" />
     <ref role="1TJDcQ" node="1RwPUjzgk0y" resolve="AbstractEarliestLastestExpression" />
   </node>
   <node concept="1TIwiD" id="1RwPUjzgk0y">
@@ -588,7 +604,7 @@
     <property role="TrG5h" value="AbstractEarliestLastestExpression" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base expression for earliest and latest expressions" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="1RwPUjzgk0z" role="1TKVEi">
       <property role="IQ2ns" value="2152957725070409763" />
@@ -603,6 +619,7 @@
     <property role="3GE5qa" value="range.cut" />
     <property role="TrG5h" value="FromOp" />
     <property role="34LRSv" value="from" />
+    <property role="R4oN_" value="create a new period from a start date" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
     <node concept="1TJgyj" id="5LVdhDvvxT8" role="1TKVEi">
       <property role="IQ2ns" value="6663978461012303432" />
@@ -628,6 +645,7 @@
     <property role="3GE5qa" value="range.cut" />
     <property role="TrG5h" value="UpToOp" />
     <property role="34LRSv" value="upto" />
+    <property role="R4oN_" value="create a new period up to an end date" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
     <node concept="1TJgyj" id="5LVdhDvvyES" role="1TKVEi">
       <property role="IQ2ns" value="6663978461012303432" />
@@ -650,6 +668,7 @@
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="MakeTime" />
     <property role="34LRSv" value="makeTime" />
+    <property role="R4oN_" value="make a time value from an seconds, minutes and hours" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3HiHZey9lU6" role="1TKVEi">
       <property role="IQ2ns" value="4274681253353315974" />
@@ -678,7 +697,7 @@
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="TimeLiteral" />
     <property role="34LRSv" value="\" />
-    <property role="R4oN_" value="time literal" />
+    <property role="R4oN_" value="a time literal (hh:mm:ss)" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyi" id="3HiHZey9lUb" role="1TKVEl">
       <property role="IQ2nx" value="4274681253353315979" />
@@ -720,7 +739,7 @@
     <property role="3GE5qa" value="time.op" />
     <property role="TrG5h" value="MinuteValue" />
     <property role="34LRSv" value="minute" />
-    <property role="R4oN_" value="returns the minute component of a time" />
+    <property role="R4oN_" value="get the minute component of a time" />
     <ref role="1TJDcQ" node="3HiHZeycpLK" resolve="TimeOp" />
   </node>
   <node concept="1TIwiD" id="3HiHZeycpLK">
@@ -728,7 +747,7 @@
     <property role="3GE5qa" value="time.op" />
     <property role="TrG5h" value="TimeOp" />
     <property role="R5$K7" value="true" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base operation for time operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3HiHZeycpLL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -739,7 +758,7 @@
     <property role="3GE5qa" value="time.op" />
     <property role="TrG5h" value="HourValue" />
     <property role="34LRSv" value="hour" />
-    <property role="R4oN_" value="returns the hour component of a time" />
+    <property role="R4oN_" value="get the hour component of a time" />
     <ref role="1TJDcQ" node="3HiHZeycpLK" resolve="TimeOp" />
   </node>
   <node concept="1TIwiD" id="3HiHZeycqYu">
@@ -747,7 +766,7 @@
     <property role="3GE5qa" value="time.op" />
     <property role="TrG5h" value="SecondValue" />
     <property role="34LRSv" value="second" />
-    <property role="R4oN_" value="returns the second component of a time" />
+    <property role="R4oN_" value="get the second component of a time" />
     <ref role="1TJDcQ" node="3HiHZeycpLK" resolve="TimeOp" />
   </node>
   <node concept="1TIwiD" id="3HiHZeyhTnY">
@@ -755,6 +774,7 @@
     <property role="3GE5qa" value="time.delta" />
     <property role="TrG5h" value="TimeDeltaLiteral" />
     <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="a base concept for time delta literals" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3HiHZeyhTo1" role="1TKVEi">
       <property role="IQ2ns" value="4274681253355558401" />
@@ -772,6 +792,7 @@
     <property role="3GE5qa" value="time.delta" />
     <property role="TrG5h" value="HoursDeltaLiteral" />
     <property role="34LRSv" value="hours" />
+    <property role="R4oN_" value="a period of hours" />
     <ref role="1TJDcQ" node="3HiHZeyhTnY" resolve="TimeDeltaLiteral" />
   </node>
   <node concept="1TIwiD" id="3HiHZeyhWvC">
@@ -779,6 +800,7 @@
     <property role="3GE5qa" value="time.delta" />
     <property role="TrG5h" value="MinutesDeltaLiteral" />
     <property role="34LRSv" value="minutes" />
+    <property role="R4oN_" value="a period of minutes" />
     <ref role="1TJDcQ" node="3HiHZeyhTnY" resolve="TimeDeltaLiteral" />
   </node>
   <node concept="1TIwiD" id="3HiHZeyhWvD">
@@ -786,6 +808,7 @@
     <property role="3GE5qa" value="time.delta" />
     <property role="TrG5h" value="SecondsDeltaLiteral" />
     <property role="34LRSv" value="seconds" />
+    <property role="R4oN_" value="a period of seconds" />
     <ref role="1TJDcQ" node="3HiHZeyhTnY" resolve="TimeDeltaLiteral" />
   </node>
   <node concept="1TIwiD" id="3HiHZeyiDmj">
@@ -801,7 +824,7 @@
     <property role="3GE5qa" value="time.delta" />
     <property role="TrG5h" value="TimeDeltaType" />
     <property role="34LRSv" value="timedelta" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="timedelta type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="3HiHZeyiDml">
@@ -825,7 +848,7 @@
     <property role="3GE5qa" value="time.op" />
     <property role="TrG5h" value="TimeToStringOp" />
     <property role="34LRSv" value="toString" />
-    <property role="R4oN_" value="a string representation of a time" />
+    <property role="R4oN_" value="convert to a string representation of time" />
     <ref role="1TJDcQ" node="3HiHZeycpLK" resolve="TimeOp" />
   </node>
   <node concept="1TIwiD" id="3HiHZeyrT$S">
@@ -833,6 +856,7 @@
     <property role="3GE5qa" value="time.delta" />
     <property role="TrG5h" value="TimeDeltaToNumberOp" />
     <property role="34LRSv" value="toNumber" />
+    <property role="R4oN_" value="convert to a number" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3HiHZeyrT$T" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />

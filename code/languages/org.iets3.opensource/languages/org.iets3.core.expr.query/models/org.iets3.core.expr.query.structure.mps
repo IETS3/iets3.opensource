@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -43,6 +44,7 @@
     <property role="EcuMT" value="6749162445851401059" />
     <property role="TrG5h" value="QueryExpr" />
     <property role="34LRSv" value="query" />
+    <property role="R4oN_" value="query from a source expression with optional filtering, transforming and grouping" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5QDPRL$oi4v" role="1TKVEi">
       <property role="IQ2ns" value="6749162445851402527" />
@@ -74,12 +76,14 @@
     <property role="EcuMT" value="6749162445851567924" />
     <property role="TrG5h" value="QueryFilter" />
     <property role="34LRSv" value="filter" />
+    <property role="R4oN_" value="a query filter" />
     <ref role="1TJDcQ" node="5QDPRL$oYTs" resolve="AbstractQueryComponent" />
   </node>
   <node concept="1TIwiD" id="5QDPRL$oYTs">
     <property role="EcuMT" value="6749162445851586140" />
     <property role="TrG5h" value="AbstractQueryComponent" />
     <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="a base concept for components of queries" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5QDPRL$oZ8V" role="PzmwI">
       <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
@@ -88,6 +92,7 @@
   <node concept="1TIwiD" id="5QDPRL$pwTW">
     <property role="EcuMT" value="6749162445851725436" />
     <property role="TrG5h" value="QuerySource" />
+    <property role="R4oN_" value="source expression of a query" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5QDPRL$px4h" role="1TKVEi">
       <property role="IQ2ns" value="6749162445851726097" />
@@ -101,11 +106,13 @@
     <property role="EcuMT" value="6749162445851924465" />
     <property role="TrG5h" value="QueryTransform" />
     <property role="34LRSv" value="transform" />
+    <property role="R4oN_" value="transform the queried content" />
     <ref role="1TJDcQ" node="5QDPRL$oYTs" resolve="AbstractQueryComponent" />
   </node>
   <node concept="1TIwiD" id="5QDPRL$x2oZ">
     <property role="EcuMT" value="6749162445853697599" />
     <property role="TrG5h" value="QueryGroup" />
+    <property role="R4oN_" value="a query group" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5QDPRL$x3ZY" role="1TKVEi">
       <property role="IQ2ns" value="6749162445853704190" />
@@ -125,11 +132,13 @@
   <node concept="1TIwiD" id="5QDPRL$x3FP">
     <property role="EcuMT" value="6749162445853702901" />
     <property role="TrG5h" value="QueryGroupBy" />
+    <property role="R4oN_" value="group by" />
     <ref role="1TJDcQ" node="5QDPRL$oYTs" resolve="AbstractQueryComponent" />
   </node>
   <node concept="1TIwiD" id="5QDPRL$xy5s">
     <property role="EcuMT" value="6749162445853827420" />
     <property role="TrG5h" value="QueryGroupBuild" />
+    <property role="R4oN_" value="a query group build" />
     <ref role="1TJDcQ" node="5QDPRL$oYTs" resolve="AbstractQueryComponent" />
   </node>
 </model>

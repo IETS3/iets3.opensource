@@ -20,6 +20,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -61,6 +62,7 @@
     <property role="TrG5h" value="BoxType" />
     <property role="34LRSv" value="box" />
     <property role="3GE5qa" value="box" />
+    <property role="R4oN_" value="a box type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="60Qa1k_sqJu" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
@@ -78,6 +80,7 @@
     <property role="TrG5h" value="BoxExpression" />
     <property role="34LRSv" value="box" />
     <property role="3GE5qa" value="box" />
+    <property role="R4oN_" value="create a box (mutable data)" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3GdqffBOVwy" role="1TKVEi">
       <property role="IQ2ns" value="4255172619710740514" />
@@ -96,6 +99,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="box" />
+    <property role="R4oN_" value="a base operation for box operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3GdqffBPhJH" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -106,6 +110,7 @@
     <property role="TrG5h" value="BoxValueTarget" />
     <property role="34LRSv" value="val" />
     <property role="3GE5qa" value="box" />
+    <property role="R4oN_" value="get the containing value" />
     <ref role="1TJDcQ" node="3GdqffBPhJG" resolve="BoxDotTarget" />
     <node concept="PrWs8" id="6GySMNjkgWT" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -116,6 +121,7 @@
     <property role="TrG5h" value="BoxUpdateTarget" />
     <property role="34LRSv" value="update" />
     <property role="3GE5qa" value="box" />
+    <property role="R4oN_" value="update the containing value" />
     <ref role="1TJDcQ" node="3GdqffBPhJG" resolve="BoxDotTarget" />
     <node concept="1TJgyj" id="3GdqffBQYFA" role="1TKVEi">
       <property role="IQ2ns" value="4255172619711277798" />
@@ -142,12 +148,14 @@
     <property role="TrG5h" value="UpdateItExpression" />
     <property role="34LRSv" value="it" />
     <property role="3GE5qa" value="box" />
+    <property role="R4oN_" value="reference to the value in the box" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="3GdqffC8H$g">
     <property role="EcuMT" value="4255172619715926288" />
     <property role="TrG5h" value="NewTxBlock" />
     <property role="34LRSv" value="newtx" />
+    <property role="R4oN_" value="create a new transaction block" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3GdqffC8H$h" role="1TKVEi">
       <property role="IQ2ns" value="4255172619715926289" />
@@ -163,6 +171,7 @@
   <node concept="1TIwiD" id="aPhVmWYxIJ">
     <property role="EcuMT" value="195141004745644975" />
     <property role="TrG5h" value="AssignmentExpr_old" />
+    <property role="R4oN_" value="an assignment expression" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
     <node concept="PrWs8" id="aPhVmWZ1$P" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -178,6 +187,7 @@
     <property role="EcuMT" value="2153658728442734125" />
     <property role="TrG5h" value="InTxBlock" />
     <property role="34LRSv" value="intx" />
+    <property role="R4oN_" value="excute a block if it is called from inside a transaction" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="1RzljfOfUoI" role="1TKVEi">
       <property role="IQ2ns" value="4255172619715926289" />
@@ -195,6 +205,7 @@
     <property role="3GE5qa" value="interactor.interact" />
     <property role="TrG5h" value="LiveExpression" />
     <property role="34LRSv" value="live" />
+    <property role="R4oN_" value="live" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7bd8pkl7uF6" role="1TKVEi">
       <property role="IQ2ns" value="8272305014737595078" />
@@ -210,6 +221,7 @@
     <property role="TrG5h" value="InteractorTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base operation for interactor operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IV0h47hCX1" role="1TKVEi">
       <property role="IQ2ns" value="5456956546137624385" />
@@ -227,6 +239,7 @@
     <property role="3GE5qa" value="interactor.interact" />
     <property role="TrG5h" value="LiveType" />
     <property role="34LRSv" value="live" />
+    <property role="R4oN_" value="live type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="7bd8pkl7uYv" role="1TKVEi">
       <property role="IQ2ns" value="8272305014737596319" />
@@ -253,6 +266,7 @@
     <property role="EcuMT" value="1136100386040134757" />
     <property role="3GE5qa" value="interactor" />
     <property role="TrG5h" value="InteractorValueTarget" />
+    <property role="R4oN_" value="an interactor value target" />
     <ref role="1TJDcQ" node="7WFhXJlSwpm" resolve="InteractorTarget" />
     <node concept="1TJgyi" id="Z4fkwz6NLA" role="1TKVEl">
       <property role="IQ2nx" value="9163496876327186602" />
@@ -267,6 +281,7 @@
     <property role="EcuMT" value="9163496876327186020" />
     <property role="3GE5qa" value="interactor" />
     <property role="TrG5h" value="InteractorCommandTarget" />
+    <property role="R4oN_" value="an interactor command target" />
     <ref role="1TJDcQ" node="7WFhXJlSwpm" resolve="InteractorTarget" />
     <node concept="1TJgyj" id="Z4fkwzaHUu" role="1TKVEi">
       <property role="IQ2ns" value="1136100386041159326" />
@@ -301,6 +316,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="ArtificialClockExpr" />
     <property role="34LRSv" value="artificialclock" />
+    <property role="R4oN_" value="artificial clock (mutable)" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="4voDClGJOIX" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -317,6 +333,7 @@
     <property role="EcuMT" value="5456956546144585756" />
     <property role="3GE5qa" value="interactor.intercept" />
     <property role="TrG5h" value="ContextArgExpr" />
+    <property role="R4oN_" value="a context argument" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4IV0h47Gcwt" role="1TKVEi">
       <property role="IQ2ns" value="5456956546144585757" />
@@ -330,6 +347,7 @@
     <property role="EcuMT" value="5456956546137624418" />
     <property role="3GE5qa" value="interactor.intercept" />
     <property role="TrG5h" value="ContextArgValue" />
+    <property role="R4oN_" value="a context argument value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IV0h47hCXz" role="1TKVEi">
       <property role="IQ2ns" value="5456956546137624419" />
@@ -351,6 +369,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="GlobalClockPragma" />
     <property role="34LRSv" value="§global-clock" />
+    <property role="R4oN_" value="register a clock as a global clock" />
     <ref role="1TJDcQ" to="hm2y:4Pi6J8BU$OM" resolve="PragmaExpression" />
     <node concept="1TJgyj" id="3iESbJsDA_B" role="1TKVEi">
       <property role="IQ2ns" value="3795092733478463847" />
@@ -370,6 +389,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="CurrentTimeTarget" />
     <property role="34LRSv" value="time" />
+    <property role="R4oN_" value="get the time in milliseconds" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3iESbJsCqX$" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -385,6 +405,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="clock type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="4IV0h47QL2E">
@@ -392,6 +413,7 @@
     <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <property role="TrG5h" value="RateLimitInterceptor" />
     <property role="34LRSv" value="rate" />
+    <property role="R4oN_" value="set an interceptor with a rate limit on how many interceptions are allowed within a specific time frame" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IV0h47QL36" role="1TKVEi">
       <property role="IQ2ns" value="5456956546147356870" />
@@ -421,6 +443,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="TickTarget" />
     <property role="34LRSv" value="tick" />
+    <property role="R4oN_" value="increment the clock's time by one" />
     <ref role="1TJDcQ" node="3iESbJsEY$0" resolve="ArtificialClockTarget" />
   </node>
   <node concept="1TIwiD" id="3iESbJsCtFh">
@@ -428,6 +451,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="SystemClockExpr" />
     <property role="34LRSv" value="systemclock" />
+    <property role="R4oN_" value="reference to the system clock" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="3iESbJsHMt0">
@@ -435,6 +459,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="NowExpression" />
     <property role="34LRSv" value="now" />
+    <property role="R4oN_" value="get the current time in milliseconds from the global clock" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="3iESbJsJrJJ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -445,6 +470,7 @@
     <property role="3GE5qa" value="interactor.intercept" />
     <property role="TrG5h" value="WithContextExpression" />
     <property role="34LRSv" value="with context" />
+    <property role="R4oN_" value="evaluate with a context" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4IV0h47Jb3L" role="1TKVEi">
       <property role="IQ2ns" value="5456956546145366257" />
@@ -466,6 +492,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="ArtificialClockType" />
     <property role="34LRSv" value="artificialclock" />
+    <property role="R4oN_" value="an artificial clock (mutable)" />
     <ref role="1TJDcQ" node="3iESbJsCqWF" resolve="ClockType" />
   </node>
   <node concept="1TIwiD" id="4IV0h47fqjY">
@@ -473,6 +500,7 @@
     <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <property role="TrG5h" value="ThrowInterceptor" />
     <property role="34LRSv" value="throw" />
+    <property role="R4oN_" value="set an interceptor that throws an exception" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4IV0h47fqjZ" role="PzmwI">
       <ref role="PrY4T" node="4IV0h47deUA" resolve="IInterceptor" />
@@ -483,6 +511,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="AdvanceByTarget" />
     <property role="34LRSv" value="advance" />
+    <property role="R4oN_" value="increment the clock by n" />
     <ref role="1TJDcQ" node="3iESbJsEY$0" resolve="ArtificialClockTarget" />
     <node concept="1TJgyj" id="3iESbJsIl$s" role="1TKVEi">
       <property role="IQ2ns" value="3795092733479704860" />
@@ -498,6 +527,7 @@
     <property role="TrG5h" value="AbstractContextArgument" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base concept for context arguments" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="PlHQZ" id="4IV0h47deUA">
@@ -511,6 +541,7 @@
     <property role="TrG5h" value="ArtificialClockTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base operation for artificial clocks" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3iESbJsEY$1" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -524,6 +555,7 @@
     <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <property role="TrG5h" value="DefaultInterceptor" />
     <property role="34LRSv" value="default" />
+    <property role="R4oN_" value="set the default interceptor" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4IV0h47dgR_" role="PzmwI">
       <ref role="PrY4T" node="4IV0h47deUA" resolve="IInterceptor" />
@@ -533,6 +565,7 @@
     <property role="EcuMT" value="2059132866927678831" />
     <property role="TrG5h" value="MutableMetaFunction" />
     <property role="3GE5qa" value="function" />
+    <property role="R4oN_" value="a mutable meta function" />
     <ref role="1TJDcQ" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
     <node concept="PrWs8" id="1MjwAV6z_lK" role="PzmwI">
       <ref role="PrY4T" to="hm2y:79jc6Yz3CVE" resolve="IVoidContext" />
@@ -542,6 +575,7 @@
     <property role="EcuMT" value="3487973603071598058" />
     <property role="3GE5qa" value="box" />
     <property role="TrG5h" value="UpdateCurrencyCheck" />
+    <property role="R4oN_" value="update the currency" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="31BLocd1pRF" role="1TKVEi">
       <property role="IQ2ns" value="3487973603071598059" />
