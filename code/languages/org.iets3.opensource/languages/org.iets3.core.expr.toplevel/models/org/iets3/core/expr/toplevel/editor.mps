@@ -419,11 +419,16 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="8224407690718723337" name="doNotGenerateNodeSubstituteAction" index="ZpkCL" />
         <child id="621193272061064649" name="sideTransformCondition" index="1m$hSO" />
@@ -592,6 +597,15 @@
         <node concept="1kHk_G" id="2uR5X5azvkk" role="3EZMnx">
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
           <ref role="1NtTu8" to="zzzn:2uR5X5azvjH" resolve="ext" />
+          <node concept="uPpia" id="1ZlHRbf$$OS" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbf$$OT" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbf$$Pi" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbf$$Ph" role="3clFbG">
+                  <property role="Xl_RC" value="extension function" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="49WTic8f4or" role="3EZMnx">
           <property role="3F0ifm" value="fun" />
@@ -1715,6 +1729,18 @@
           <node concept="1kHk_G" id="3WWvqarUHzU" role="3EZMnx">
             <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
             <ref role="1NtTu8" to="yv47:67Y8mp$M9cx" resolve="qualified" />
+            <node concept="uPpia" id="1ZlHRbgha55" role="1djCvC">
+              <node concept="3clFbS" id="1ZlHRbgha56" role="2VODD2">
+                <node concept="3clFbF" id="1ZlHRbgha5v" role="3cqZAp">
+                  <node concept="2OqwBi" id="1ZlHRbghas5" role="3clFbG">
+                    <node concept="313q4" id="1ZlHRbgha5u" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="1ZlHRbghb2C" role="2OqNvi">
+                      <ref role="37wK5l" to="nu60:1ZlHRbgh8C7" resolve="getQualifiedFlagHelp" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3F0ifn" id="3WWvqarUHzV" role="3EZMnx">
             <property role="3F0ifm" value="enum" />
@@ -1841,6 +1867,18 @@
                 </node>
               </node>
             </node>
+            <node concept="uPpia" id="1ZlHRbghbch" role="1djCvC">
+              <node concept="3clFbS" id="1ZlHRbghbci" role="2VODD2">
+                <node concept="3clFbF" id="1ZlHRbghbcm" role="3cqZAp">
+                  <node concept="2OqwBi" id="1ZlHRbghbco" role="3clFbG">
+                    <node concept="313q4" id="1ZlHRbghbcp" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="1ZlHRbghbcq" role="2OqNvi">
+                      <ref role="37wK5l" to="nu60:1ZlHRbgh8C7" resolve="getQualifiedFlagHelp" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3F0ifn" id="3YhAT14YvN7" role="3EZMnx">
             <property role="3F0ifm" value="enum" />
@@ -1924,10 +1962,15 @@
           <property role="ZpkCL" value="true" />
           <ref role="1NtTu8" to="yv47:67Y8mp$M9cx" resolve="qualified" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
-          <node concept="1m$hWp" id="6lyH5OSTcbn" role="1m$hSO">
-            <node concept="3clFbS" id="6lyH5OSTcbo" role="2VODD2">
-              <node concept="3clFbF" id="6lyH5OSTcbv" role="3cqZAp">
-                <node concept="3clFbT" id="6lyH5OSTcbu" role="3clFbG" />
+          <node concept="uPpia" id="1ZlHRbghbpm" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbghbpn" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbghbpH" role="3cqZAp">
+                <node concept="2OqwBi" id="1ZlHRbghbpJ" role="3clFbG">
+                  <node concept="313q4" id="1ZlHRbghbpK" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1ZlHRbghbpL" role="2OqNvi">
+                    <ref role="37wK5l" to="nu60:1ZlHRbgh8C7" resolve="getQualifiedFlagHelp" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2149,6 +2192,18 @@
               <node concept="3clFbS" id="6lyH5OSQBw2" role="2VODD2">
                 <node concept="3clFbF" id="6lyH5OSQI0T" role="3cqZAp">
                   <node concept="3clFbT" id="6lyH5OSQI0S" role="3clFbG" />
+                </node>
+              </node>
+            </node>
+            <node concept="uPpia" id="1ZlHRbghbqS" role="1djCvC">
+              <node concept="3clFbS" id="1ZlHRbghbqT" role="2VODD2">
+                <node concept="3clFbF" id="1ZlHRbghbqX" role="3cqZAp">
+                  <node concept="2OqwBi" id="1ZlHRbghbqZ" role="3clFbG">
+                    <node concept="313q4" id="1ZlHRbghbr0" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="1ZlHRbghbr1" role="2OqNvi">
+                      <ref role="37wK5l" to="nu60:1ZlHRbgh8C7" resolve="getQualifiedFlagHelp" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

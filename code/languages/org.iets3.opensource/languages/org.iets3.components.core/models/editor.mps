@@ -448,6 +448,7 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
         <child id="5083944728300220903" name="wrapped" index="yw3OG" />
       </concept>
@@ -456,6 +457,9 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -769,6 +773,15 @@
         <node concept="1kHk_G" id="5kXA14mWgcV" role="3EZMnx">
           <ref role="1NtTu8" to="w9y2:5kXA14mWc_G" resolve="public" />
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
+          <node concept="uPpia" id="1ZlHRbfy_Zd" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbfy_Ze" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbf$x2E" role="3cqZAp">
+                <node concept="Xl_RD" id="7PVnOXzk8V0" role="3clFbG">
+                  <property role="Xl_RC" value="a public component" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1kIj98" id="6LfBX8Yj9uo" role="3EZMnx">
           <node concept="3F1sOY" id="6LfBX8Yj9uT" role="1kIj9b">
@@ -783,6 +796,15 @@
         <node concept="1kHk_G" id="6LfBX8Yi4oL" role="3EZMnx">
           <ref role="1NtTu8" to="w9y2:6LfBX8Yi4o4" resolve="fragment" />
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
+          <node concept="uPpia" id="1ZlHRbfyA41" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbfyA42" role="2VODD2">
+              <node concept="3clFbF" id="7PVnOXzn$sQ" role="3cqZAp">
+                <node concept="Xl_RD" id="7PVnOXzn$sP" role="3clFbG">
+                  <property role="Xl_RC" value="a component fragment" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="PMmxH" id="4A8SzOVbtex" role="3EZMnx">
           <ref role="PMmxG" to="ir4w:4A8SzOVasuR" resolve="summary" />
@@ -13344,6 +13366,15 @@
         <node concept="1kHk_G" id="77HYM7Hoq7g" role="3EZMnx">
           <ref role="1NtTu8" to="w9y2:5kXA14mWc_G" resolve="public" />
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
+          <node concept="uPpia" id="1ZlHRbf$xHv" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbf$xHw" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbf$xM3" role="3cqZAp">
+                <node concept="Xl_RD" id="7PVnOXzn_2P" role="3clFbG">
+                  <property role="Xl_RC" value="a public component" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1kIj98" id="77HYM7Hoq7h" role="3EZMnx">
           <node concept="3F1sOY" id="77HYM7Hoq7i" role="1kIj9b">

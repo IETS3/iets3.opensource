@@ -464,6 +464,7 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
       <concept id="1716599163375643733" name="com.mbeddr.mpsutil.grammarcells.structure.BracketsCell" flags="ng" index="drBAd">
         <child id="1716599163375643743" name="left" index="drBA7" />
         <child id="1716599163375643746" name="inner" index="drBAU" />
@@ -472,6 +473,7 @@
       <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
       <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
       <concept id="1984422498404534858" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_TransformationText" flags="ig" index="2ee1ZP" />
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
         <child id="5083944728300220903" name="wrapped" index="yw3OG" />
       </concept>
@@ -485,6 +487,9 @@
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
       </concept>
@@ -495,6 +500,7 @@
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
+      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
       <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ig" index="1Lj6DC" />
       <concept id="2862331529394479405" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQueryCell" flags="ng" index="1Lj6DL">
         <child id="2862331529394487726" name="query" index="1Lj8FM" />
@@ -2180,6 +2186,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="1oAbb0" id="4owkxKWiGHL" role="1djCvC">
+          <node concept="3clFbS" id="4owkxKWiGHM" role="2VODD2">
+            <node concept="3clFbF" id="4owkxKWiGMo" role="3cqZAp">
+              <node concept="Xl_RD" id="4owkxKWiGMn" role="3clFbG">
+                <property role="Xl_RC" value="add an error literal" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="1Ez$z58Hu8h" role="2iSdaV" />
     </node>
@@ -2263,6 +2278,15 @@
         <node concept="1kHk_G" id="5aHkq2w0ZZT" role="3EZMnx">
           <ref role="1NtTu8" to="hm2y:5aHkq2w0Y$e" resolve="complete" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          <node concept="uPpia" id="1ZlHRbfJB_L" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbfJB_M" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbfJB_R" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbfJB_Q" role="3clFbG">
+                  <property role="Xl_RC" value="check that all error clauses are present" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F1sOY" id="5BNZGjBvVhT" role="3EZMnx">
           <ref role="1NtTu8" to="hm2y:5BNZGjBvVh4" resolve="expr" />
@@ -2536,6 +2560,24 @@
       <node concept="1kHk_G" id="3xthw2gJskd" role="3EZMnx">
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         <ref role="1NtTu8" to="hm2y:3xthw2gJs74" resolve="warning" />
+        <node concept="uPpia" id="1ZlHRbfy$te" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbfy$tf" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbfy$tr" role="3cqZAp">
+              <node concept="2OqwBi" id="1ZlHRbfy$M8" role="3clFbG">
+                <node concept="1PxgMI" id="1ZlHRbfy$_I" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="chp4Y" id="1ZlHRbfy$AE" role="3oSUPX">
+                    <ref role="cht4Q" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
+                  </node>
+                  <node concept="313q4" id="1ZlHRbfy$tq" role="1m5AlR" />
+                </node>
+                <node concept="2qgKlT" id="1ZlHRbfy_25" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:7PVnOXzpuLt" resolve="getWarningFlagHelp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="KaZMgy8$HW" role="3EZMnx">
         <ref role="1NtTu8" to="hm2y:KaZMgy4Ilu" resolve="expr" />
@@ -2565,6 +2607,24 @@
       <node concept="1kHk_G" id="3xthw2gJskJ" role="3EZMnx">
         <ref role="1NtTu8" to="hm2y:3xthw2gJs74" resolve="warning" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="uPpia" id="1ZlHRbfyyt_" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbfyytA" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbfyyQc" role="3cqZAp">
+              <node concept="2OqwBi" id="1ZlHRbfyzcY" role="3clFbG">
+                <node concept="1PxgMI" id="1ZlHRbfyz0u" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="chp4Y" id="1ZlHRbfyz1o" role="3oSUPX">
+                    <ref role="cht4Q" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
+                  </node>
+                  <node concept="313q4" id="1ZlHRbfyyQb" role="1m5AlR" />
+                </node>
+                <node concept="2qgKlT" id="1ZlHRbfyzup" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:7PVnOXzpuLt" resolve="getWarningFlagHelp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="KaZMgy8$IE" role="3EZMnx">
         <ref role="1NtTu8" to="hm2y:KaZMgy4Ilu" resolve="expr" />
@@ -2594,6 +2654,24 @@
       <node concept="1kHk_G" id="3xthw2gJslh" role="3EZMnx">
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         <ref role="1NtTu8" to="hm2y:3xthw2gJs74" resolve="warning" />
+        <node concept="uPpia" id="7PVnOXzKBnj" role="1djCvC">
+          <node concept="3clFbS" id="7PVnOXzKBnk" role="2VODD2">
+            <node concept="3clFbF" id="7PVnOXzKBoe" role="3cqZAp">
+              <node concept="2OqwBi" id="7PVnOXzpzb8" role="3clFbG">
+                <node concept="1PxgMI" id="7PVnOXzpzb9" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="chp4Y" id="7PVnOXzpzba" role="3oSUPX">
+                    <ref role="cht4Q" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
+                  </node>
+                  <node concept="313q4" id="7PVnOXzKB$r" role="1m5AlR" />
+                </node>
+                <node concept="2qgKlT" id="7PVnOXzpzbc" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:7PVnOXzpuLt" resolve="getWarningFlagHelp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="KaZMgy8$Jp" role="3EZMnx">
         <ref role="1NtTu8" to="hm2y:KaZMgy4Ilu" resolve="expr" />
@@ -2623,6 +2701,24 @@
       <node concept="1kHk_G" id="6H01xAnegKX" role="3EZMnx">
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         <ref role="1NtTu8" to="hm2y:3xthw2gJs74" resolve="warning" />
+        <node concept="uPpia" id="1ZlHRbfyzCy" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbfyzCz" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbfyzCJ" role="3cqZAp">
+              <node concept="2OqwBi" id="1ZlHRbfyzYZ" role="3clFbG">
+                <node concept="1PxgMI" id="1ZlHRbfyzMX" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="chp4Y" id="1ZlHRbfyzNT" role="3oSUPX">
+                    <ref role="cht4Q" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
+                  </node>
+                  <node concept="313q4" id="1ZlHRbfyzCI" role="1m5AlR" />
+                </node>
+                <node concept="2qgKlT" id="1ZlHRbfy$j5" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:7PVnOXzpuLt" resolve="getWarningFlagHelp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="3xthw2gJs7n" role="2iSdaV" />
       <node concept="1kIj98" id="KaZMgylLmV" role="3EZMnx">
@@ -3142,6 +3238,15 @@
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         <node concept="11L4FC" id="5OzSgxe348X" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="uPpia" id="1ZlHRbf$yKQ" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbf$yKR" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbf$yKW" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbf$zVM" role="3clFbG">
+                <property role="Xl_RC" value="fail if the constraint is invalid" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="78hTg1$_Ekp" role="3EZMnx">
