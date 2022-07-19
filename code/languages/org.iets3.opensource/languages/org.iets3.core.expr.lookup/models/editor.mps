@@ -69,6 +69,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -121,8 +124,12 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -266,6 +273,15 @@
           <node concept="2iRfu4" id="55lPkJGQ48$" role="2iSdaV" />
           <node concept="VPM3Z" id="55lPkJGQ48_" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqFgb" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqFgc" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqFgz" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqFgy" role="3clFbG">
+                <property role="Xl_RC" value="a result type for the lookup table" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

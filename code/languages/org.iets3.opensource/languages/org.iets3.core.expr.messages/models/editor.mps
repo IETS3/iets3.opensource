@@ -508,6 +508,15 @@
         <node concept="3F1sOY" id="3vxfdxbksdJ" role="_tjki">
           <ref role="1NtTu8" to="kelk:3vxfdxbksau" resolve="kind" />
         </node>
+        <node concept="uPpia" id="1ZlHRbgqFIm" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqFIn" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqFIs" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqFIr" role="3clFbG">
+                <property role="Xl_RC" value="a kind for the message definition" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="3vxfdxbdUnG" role="3EZMnx">
         <node concept="3EZMnI" id="3vxfdxbdUmb" role="_tjki">
@@ -556,6 +565,15 @@
             </node>
           </node>
           <node concept="2iRfu4" id="3vxfdxbdUmg" role="2iSdaV" />
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqG5q" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqG5r" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqGgL" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqGgK" role="3clFbG">
+                <property role="Xl_RC" value="arguments for the message definition" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="3vxfdxbdM8z" role="3EZMnx">
@@ -843,6 +861,15 @@
           </node>
           <node concept="11L4FC" id="5WJNTMTzYOB" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqFnJ" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqFnK" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqFsk" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqFsj" role="3clFbG">
+                <property role="Xl_RC" value="a type for the message argument" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

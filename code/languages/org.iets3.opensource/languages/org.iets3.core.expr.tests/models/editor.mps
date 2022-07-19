@@ -674,6 +674,15 @@
               <ref role="1NtTu8" to="av4b:1cd9HYWxxA0" resolve="setup" />
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqU80" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqU81" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqU87" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqU86" role="3clFbG">
+                  <property role="Xl_RC" value="a setup block for the test case" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="ub9nkyHAdw" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -787,6 +796,15 @@
               <node concept="3clFbF" id="6HHp2WmRFwH" role="3cqZAp">
                 <node concept="Xl_RD" id="6HHp2WmRFwG" role="3clFbG">
                   <property role="Xl_RC" value="=" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uPpia" id="1ZlHRbgqQZ4" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqQZ5" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqQZb" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqQZa" role="3clFbG">
+                  <property role="Xl_RC" value="an optional name for the assert test item" />
                 </node>
               </node>
             </node>
@@ -1609,6 +1627,15 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqRwB" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqRwC" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqRwY" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqRx0" role="3clFbG">
+                  <property role="Xl_RC" value="an optional name for the assert test item" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="6HHp2WmZdRO" role="2iSdaV" />
         <node concept="3tD6jV" id="6HHp2Wn5dNr" role="3F10Kt">
@@ -1822,6 +1849,15 @@
             <node concept="3clFbF" id="5bElvpN2tIy" role="3cqZAp">
               <node concept="Xl_RD" id="5bElvpN2tIx" role="3clFbG">
                 <property role="Xl_RC" value="with" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqSKW" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqSKX" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqSL3" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqSL2" role="3clFbG">
+                <property role="Xl_RC" value="an error message for the constraint failed test item" />
               </node>
             </node>
           </node>
@@ -2713,6 +2749,15 @@
             <node concept="3clFbF" id="4e_7uAt7pbV" role="3cqZAp">
               <node concept="Xl_RD" id="4e_7uAt7pbW" role="3clFbG">
                 <property role="Xl_RC" value="with" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqTvK" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqTvL" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqTvR" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqTvQ" role="3clFbG">
+                <property role="Xl_RC" value="an error message for the invalid value test item" />
               </node>
             </node>
           </node>
@@ -5124,6 +5169,15 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqS4f" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqS4g" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqS9p" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqS9r" role="3clFbG">
+                  <property role="Xl_RC" value="an optional name for the assert test item" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="5Pgo_ASpfTg" role="2iSdaV" />
         <node concept="PMmxH" id="5Pgo_ASpfTh" role="3EZMnx">
@@ -5314,6 +5368,15 @@
           </node>
           <node concept="3F1sOY" id="5Pgo_ASvSXh" role="3EZMnx">
             <ref role="1NtTu8" to="av4b:5Pgo_ASvSWM" resolve="messageMatcher" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqTIG" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqTIH" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqTIN" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqTIM" role="3clFbG">
+                <property role="Xl_RC" value="a value matcher for the is invalid matcher" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

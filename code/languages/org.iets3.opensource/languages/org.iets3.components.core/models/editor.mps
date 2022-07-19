@@ -896,6 +896,15 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbghpua" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbghpub" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbghpuy" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbghpux" role="3clFbG">
+                  <property role="Xl_RC" value="an enriches clause" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="6LfBX8Yi4p8" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -1028,6 +1037,15 @@
               <node concept="3clFbF" id="siw10FrZ_J" role="3cqZAp">
                 <node concept="Xl_RD" id="siw10FrZ_K" role="3clFbG">
                   <property role="Xl_RC" value="enriches" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uPpia" id="1ZlHRbghpPs" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbghpPt" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbghpPx" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbghpPz" role="3clFbG">
+                  <property role="Xl_RC" value="an enriches clause" />
                 </node>
               </node>
             </node>
@@ -1541,6 +1559,15 @@
             <ref role="1NtTu8" to="4kwy:cJpacq40jC" resolve="optionalName" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbghoGT" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbghoGU" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbghoLu" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbghoLt" role="3clFbG">
+                <property role="Xl_RC" value="a name for the instance" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="PMmxH" id="3Gt6h9T5l8j" role="3EZMnx">
         <ref role="PMmxG" to="ir4w:4um6WxnZYeG" resolve="mainAttributes" />
@@ -1745,6 +1772,15 @@
           <node concept="l2Vlx" id="cJpacq6wvT" role="2iSdaV" />
           <node concept="VPM3Z" id="cJpacq6wvU" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbghpUm" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbghpUn" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbghpUI" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbghpUH" role="3clFbG">
+                <property role="Xl_RC" value="a default value for the parameter" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -8748,6 +8784,15 @@
             </node>
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgkZzQ" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgkZzR" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgkZ_o" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgkZ_n" role="3clFbG">
+                <property role="Xl_RC" value="a name for the port" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="PMmxH" id="5wMh12D_qbe" role="3EZMnx">
         <ref role="PMmxG" to="ir4w:4um6WxnZYeG" resolve="mainAttributes" />
@@ -10776,6 +10821,15 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgkZNn" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgkZNo" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgkZSf" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgkZSe" role="3clFbG">
+                <property role="Xl_RC" value="an initializer expression for the variable" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="7kdj6EM27eC" role="2iSdaV" />
     </node>
@@ -11698,6 +11752,15 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgkZFA" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgkZFB" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgkZFG" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgkZFF" role="3clFbG">
+                <property role="Xl_RC" value="a port type for the target" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -11791,6 +11854,15 @@
           </node>
           <node concept="VPM3Z" id="1WAg9Tzu5Te" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbghnev" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbghnew" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbghne_" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbghne$" role="3clFbG">
+                <property role="Xl_RC" value="a port type for the target" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

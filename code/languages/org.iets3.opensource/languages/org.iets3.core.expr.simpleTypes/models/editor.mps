@@ -203,6 +203,7 @@
       <concept id="3921456275302774825" name="com.mbeddr.mpsutil.grammarcells.structure.SplittableCell" flags="sg" stub="3921456275302774831" index="2lNzut">
         <child id="3921456275305506525" name="tokenizer" index="2lD6_D" />
       </concept>
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
@@ -212,6 +213,9 @@
       </concept>
       <concept id="2283544813052478257" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarCellsTransformationMenuPart" flags="ng" index="2X7gjp" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="1954385921685817946" name="postprocessNodeSubstitute" index="31dnY" />
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
@@ -440,6 +444,15 @@
             </node>
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqLjf" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqLjg" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqLqF" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqLqE" role="3clFbG">
+                <property role="Xl_RC" value="a range for the number type" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="19PglA25VTf" role="3EZMnx">
         <node concept="3F1sOY" id="19PglA25VTL" role="_tjki">
@@ -456,6 +469,15 @@
             <node concept="3clFbF" id="19PglA25VUD" role="3cqZAp">
               <node concept="Xl_RD" id="19PglA25VUC" role="3clFbG">
                 <property role="Xl_RC" value="{" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqLto" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqLtp" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqLtv" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqLtu" role="3clFbG">
+                <property role="Xl_RC" value="a precision for the number type" />
               </node>
             </node>
           </node>

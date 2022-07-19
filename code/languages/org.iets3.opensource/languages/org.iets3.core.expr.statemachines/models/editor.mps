@@ -413,6 +413,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqM9M" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqM9N" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqM9T" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqM9S" role="3clFbG">
+                <property role="Xl_RC" value="parameters for the state machine" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="7$TgoCYa5Pi" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -1008,6 +1017,15 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqOkW" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqOkX" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqOl3" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqOl2" role="3clFbG">
+                  <property role="Xl_RC" value="a guard for the triggered transition" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="_tjkj" id="7Z_fDCweech" role="3EZMnx">
           <node concept="3EZMnI" id="7Z_fDCweed9" role="_tjki">
@@ -1020,6 +1038,15 @@
             <node concept="l2Vlx" id="7Z_fDCweedc" role="2iSdaV" />
             <node concept="VPM3Z" id="7Z_fDCweedd" role="3F10Kt">
               <property role="VOm3f" value="false" />
+            </node>
+          </node>
+          <node concept="uPpia" id="1ZlHRbgqOm6" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqOm7" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqOmd" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqOmc" role="3clFbG">
+                  <property role="Xl_RC" value="a target for the triggered transition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1038,6 +1065,15 @@
               <node concept="3clFbF" id="7$TgoCYig0u" role="3cqZAp">
                 <node concept="Xl_RD" id="7$TgoCYig0t" role="3clFbG">
                   <property role="Xl_RC" value=":" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uPpia" id="1ZlHRbgqOsZ" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqOt0" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqOto" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqOtn" role="3clFbG">
+                  <property role="Xl_RC" value="an action for the triggered transition" />
                 </node>
               </node>
             </node>
@@ -1093,6 +1129,15 @@
           <node concept="l2Vlx" id="aPhVmWQX2w" role="2iSdaV" />
           <node concept="VPM3Z" id="aPhVmWQX2x" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqLZy" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqLZz" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqLZV" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqLZU" role="3clFbG">
+                <property role="Xl_RC" value="arguments for the event" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1395,6 +1440,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqLXq" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqLXr" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqLXx" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqLXw" role="3clFbG">
+                <property role="Xl_RC" value="a type for the event argument" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -1450,6 +1504,15 @@
           </node>
           <node concept="11L4FC" id="aPhVmWWeTE" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqMfS" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqMfT" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqMgh" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqMgg" role="3clFbG">
+                <property role="Xl_RC" value="a type for the state machine variable" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1591,6 +1654,15 @@
             </node>
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqL_O" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqL_P" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqL_V" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqL_U" role="3clFbG">
+                <property role="Xl_RC" value="a guard for the automatic transition" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="7Z_fDCweej1" role="3EZMnx">
         <node concept="3EZMnI" id="7Z_fDCweej2" role="_tjki">
@@ -1603,6 +1675,15 @@
           <node concept="l2Vlx" id="7Z_fDCweej7" role="2iSdaV" />
           <node concept="VPM3Z" id="7Z_fDCweej8" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqLHA" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqLHB" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqLHZ" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqLHY" role="3clFbG">
+                <property role="Xl_RC" value="a target for the automatic transition" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1621,6 +1702,15 @@
             <node concept="3clFbF" id="7Z_fDCw6W8z" role="3cqZAp">
               <node concept="Xl_RD" id="7Z_fDCw6W8$" role="3clFbG">
                 <property role="Xl_RC" value=":" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqLRN" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqLRO" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqLRU" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqLRT" role="3clFbG">
+                <property role="Xl_RC" value="an action for the automatic transition" />
               </node>
             </node>
           </node>

@@ -242,11 +242,15 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -585,6 +589,15 @@
             <node concept="3clFbF" id="6zaFu4oQfvL" role="3cqZAp">
               <node concept="Xl_RD" id="6zaFu4oQfvK" role="3clFbG">
                 <property role="Xl_RC" value="|" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqZbZ" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqZc0" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqZcn" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqZcm" role="3clFbG">
+                <property role="Xl_RC" value="an alternate text for the term reference" />
               </node>
             </node>
           </node>

@@ -749,6 +749,15 @@
                   <property role="VOm3f" value="true" />
                 </node>
               </node>
+              <node concept="uPpia" id="1ZlHRbgqLax" role="1djCvC">
+                <node concept="3clFbS" id="1ZlHRbgqLay" role="2VODD2">
+                  <node concept="3clFbF" id="1ZlHRbgqLf7" role="3cqZAp">
+                    <node concept="Xl_RD" id="1ZlHRbgqLf6" role="3clFbG">
+                      <property role="Xl_RC" value="an optional name for the default entry" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="1HlG4h" id="4nY0kF8k76b" role="3EZMnx">
               <node concept="1HfYo3" id="4nY0kF8k76c" role="1HlULh">
@@ -5035,6 +5044,15 @@
             </node>
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqJid" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqJie" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqJiD" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqJiC" role="3clFbG">
+                <property role="Xl_RC" value="a finder for the coordinate cell reference" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0A7n" id="5avmkTFcXRb" role="3EZMnx">
         <ref role="1NtTu8" to="wtll:5avmkTFcWo6" resolve="cell" />
@@ -5242,6 +5260,15 @@
           </node>
           <node concept="VPM3Z" id="5xEoEMrzSnK" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqIMM" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqIMN" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqIMT" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqIMS" role="3clFbG">
+                <property role="Xl_RC" value="a type for the cell argument" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

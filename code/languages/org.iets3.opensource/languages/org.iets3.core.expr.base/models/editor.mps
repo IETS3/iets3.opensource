@@ -500,7 +500,6 @@
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
-      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
       <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ig" index="1Lj6DC" />
       <concept id="2862331529394479405" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQueryCell" flags="ng" index="1Lj6DL">
         <child id="2862331529394487726" name="query" index="1Lj8FM" />
@@ -1578,6 +1577,15 @@
             </node>
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgl1nZ" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgl1o0" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgl1r5" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgl1r4" role="3clFbG">
+                <property role="Xl_RC" value="an else section" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -1831,6 +1839,15 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgmO61" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgmO62" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgmO6p" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgmO6o" role="3clFbG">
+                <property role="Xl_RC" value="an optional name for the isSome expression" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="rXSEDnMdCx" role="2iSdaV" />
     </node>
@@ -1867,6 +1884,15 @@
           </node>
           <node concept="11L4FC" id="7fOaqhhWP5O" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqkbz" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqkb$" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqkbV" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqkbU" role="3clFbG">
+                <property role="Xl_RC" value="a base type for the none literal" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -2141,6 +2167,15 @@
             <node concept="2iRfu4" id="12WRc28Xzs7" role="2czzBx" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgl0sU" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgl0sV" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgl0t0" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgl0sZ" role="3clFbG">
+                <property role="Xl_RC" value="error literals for the attempt type" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="1Ez$z58E1iu" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
@@ -2186,11 +2221,11 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="1oAbb0" id="4owkxKWiGHL" role="1djCvC">
-          <node concept="3clFbS" id="4owkxKWiGHM" role="2VODD2">
+        <node concept="uPpia" id="1ZlHRbgl0Dq" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgl0Dr" role="2VODD2">
             <node concept="3clFbF" id="4owkxKWiGMo" role="3cqZAp">
               <node concept="Xl_RD" id="4owkxKWiGMn" role="3clFbG">
-                <property role="Xl_RC" value="add an error literal" />
+                <property role="Xl_RC" value="a message for the error expression" />
               </node>
             </node>
           </node>
@@ -2302,6 +2337,15 @@
               <ref role="1NtTu8" to="4kwy:cJpacq40jC" resolve="optionalName" />
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqokZ" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqol0" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqop$" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqopz" role="3clFbG">
+                  <property role="Xl_RC" value="a name for the try expression" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F1sOY" id="5BNZGjBxorV" role="3EZMnx">
           <ref role="1NtTu8" to="hm2y:5BNZGjBxo8e" resolve="successClause" />
@@ -2392,6 +2436,15 @@
           </node>
           <node concept="11L4FC" id="7fOaqhhY_w_" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqo4m" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqo4n" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqo4s" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqo4r" role="3clFbG">
+                <property role="Xl_RC" value="an error message" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -2592,6 +2645,15 @@
             <ref role="1NtTu8" to="hm2y:5F8uib8hsjE" resolve="err" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgmNW9" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgmNWa" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgmO0I" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgmO0H" role="3clFbG">
+                <property role="Xl_RC" value="an error expression for the invariant" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="37V13JRkqaW" role="2iSdaV" />
     </node>
@@ -2639,6 +2701,18 @@
             <ref role="1NtTu8" to="hm2y:5F8uib8hsjE" resolve="err" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqkK5" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqkK6" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqkKJ" role="3cqZAp">
+              <node concept="2OqwBi" id="1ZlHRbgqnSP" role="3clFbG">
+                <node concept="313q4" id="1ZlHRbgqnSQ" role="2Oq$k0" />
+                <node concept="2qgKlT" id="1ZlHRbgqnSR" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:1ZlHRbgqmri" resolve="getErrorExpressionHelp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="37V13JRkqaS" role="2iSdaV" />
     </node>
@@ -2684,6 +2758,18 @@
           </node>
           <node concept="3F1sOY" id="68JOYCcXUak" role="3EZMnx">
             <ref role="1NtTu8" to="hm2y:5F8uib8hsjE" resolve="err" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgql1U" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgql1V" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgql6L" role="3cqZAp">
+              <node concept="2OqwBi" id="1ZlHRbgqnYA" role="3clFbG">
+                <node concept="313q4" id="1ZlHRbgqnYB" role="2Oq$k0" />
+                <node concept="2qgKlT" id="1ZlHRbgqnYC" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:1ZlHRbgqmri" resolve="getErrorExpressionHelp" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -2734,6 +2820,18 @@
           </node>
           <node concept="3F1sOY" id="68JOYCcXU9h" role="3EZMnx">
             <ref role="1NtTu8" to="hm2y:5F8uib8hsjE" resolve="err" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqkoY" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqkoZ" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqn94" role="3cqZAp">
+              <node concept="2OqwBi" id="1ZlHRbgqnmW" role="3clFbG">
+                <node concept="313q4" id="1ZlHRbgqn93" role="2Oq$k0" />
+                <node concept="2qgKlT" id="1ZlHRbgqnEB" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:1ZlHRbgqmri" resolve="getErrorExpressionHelp" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -4706,6 +4804,15 @@
           </node>
           <node concept="2iRfu4" id="6jT4GDw7eSP" role="2iSdaV" />
         </node>
+        <node concept="uPpia" id="1ZlHRbgl0YL" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgl0YM" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgl0YR" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgl0YQ" role="3clFbG">
+                <property role="Xl_RC" value="a type for the fail expression" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="mQGcCvPufH" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -4733,6 +4840,15 @@
           <node concept="2iRfu4" id="4CksDrlwXpy" role="2iSdaV" />
           <node concept="VPM3Z" id="4CksDrlwXpz" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgl147" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgl148" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgl14d" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgl14c" role="3clFbG">
+                <property role="Xl_RC" value="a context expression for the fail expression" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -6649,6 +6765,15 @@
             </node>
           </node>
           <node concept="2iRfu4" id="3tcv7J0yv9D" role="2iSdaV" />
+        </node>
+        <node concept="uPpia" id="1ZlHRbgl0yg" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgl0yh" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgl0ym" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgl0yl" role="3clFbG">
+                <property role="Xl_RC" value="a type for the empty value" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

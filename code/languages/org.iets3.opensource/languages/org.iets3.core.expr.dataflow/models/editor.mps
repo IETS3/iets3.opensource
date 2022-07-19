@@ -137,6 +137,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -228,8 +231,12 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
@@ -469,6 +476,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqAX4" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqAX5" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqAXs" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqAXr" role="3clFbG">
+                <property role="Xl_RC" value="parameters for the expression block" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0A7n" id="2vkvJYSN66f" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -513,6 +529,15 @@
             </node>
             <node concept="VechU" id="2DnmbxUBFyC" role="3F10Kt">
               <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqB3E" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqB3F" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqB42" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqB41" role="3clFbG">
+                <property role="Xl_RC" value="a symbol for the expression block" />
+              </node>
             </node>
           </node>
         </node>
@@ -642,6 +667,15 @@
               <property role="VOm3f" value="true" />
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqsKJ" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqsKK" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqsL7" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqsL6" role="3clFbG">
+                  <property role="Xl_RC" value="parameters for the composite block" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0A7n" id="3_milxHI$D4" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -723,6 +757,15 @@
             </node>
             <node concept="VPM3Z" id="2vkvJYSN65D" role="3F10Kt">
               <property role="VOm3f" value="false" />
+            </node>
+          </node>
+          <node concept="uPpia" id="1ZlHRbgqsMa" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqsMb" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqsMg" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqsMf" role="3clFbG">
+                  <property role="Xl_RC" value="a symbol for the composite block" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -3425,6 +3468,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqB55" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqB56" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqB9E" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqB9D" role="3clFbG">
+                <property role="Xl_RC" value="a type for the incoming point" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -3464,6 +3516,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqBca" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqBcb" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqBcg" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqBcf" role="3clFbG">
+                <property role="Xl_RC" value="a type for the outgoing port" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="2vkvJYT217F" role="3EZMnx">
         <node concept="3EZMnI" id="2vkvJYT217W" role="_tjki">
@@ -3476,6 +3537,15 @@
           <node concept="2iRfu4" id="2vkvJYT217Z" role="2iSdaV" />
           <node concept="VPM3Z" id="2vkvJYT2180" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqBiv" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqBiw" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqBiR" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqBiQ" role="3clFbG">
+                <property role="Xl_RC" value="a value for the outgoing port" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -3511,6 +3581,15 @@
           </node>
           <node concept="11L4FC" id="5WJNTMTzYOB" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqrrN" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqrrO" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqrwo" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqrwn" role="3clFbG">
+                <property role="Xl_RC" value="a type for the block parameer" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
