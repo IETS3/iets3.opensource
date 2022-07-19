@@ -116,6 +116,10 @@
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="1838685759388685703" name="jetbrains.mps.lang.editor.structure.TransformationFeature_DescriptionText" flags="ng" index="3cqGtN">
+        <child id="1838685759388685704" name="query" index="3cqGtW" />
+      </concept>
+      <concept id="1838685759388690401" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_DescriptionText" flags="ig" index="3cqJkl" />
       <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
@@ -133,6 +137,9 @@
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="7291101478617127464" name="jetbrains.mps.lang.editor.structure.IExtensibleTransformationMenuPart" flags="ng" index="1joUw2">
+        <child id="8954657570916349207" name="features" index="2jZA2a" />
       </concept>
       <concept id="7597241200646296619" name="jetbrains.mps.lang.editor.structure.QueryFunction_SNode" flags="in" index="3k4GqP" />
       <concept id="7597241200646296617" name="jetbrains.mps.lang.editor.structure.NavigatableNodeStyleClassItem" flags="ln" index="3k4GqR">
@@ -1267,6 +1274,17 @@
             </node>
           </node>
         </node>
+        <node concept="3cqGtN" id="1ZlHRbgXF$w" role="2jZA2a">
+          <node concept="3cqJkl" id="1ZlHRbgXF$x" role="3cqGtW">
+            <node concept="3clFbS" id="1ZlHRbgXF$y" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgXFIe" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgXFId" role="3clFbG">
+                  <property role="Xl_RC" value="wrap with a block" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1Qtc8_" id="3wXkdMVsKfa" role="IW6Ez">
@@ -1324,6 +1342,17 @@
                 </node>
                 <node concept="TSZUe" id="3wXkdMVsKf$" role="2OqNvi">
                   <node concept="7Obwk" id="3wXkdMVsKf_" role="25WWJ7" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cqGtN" id="1ZlHRbgXFSd" role="2jZA2a">
+          <node concept="3cqJkl" id="1ZlHRbgXFSe" role="3cqGtW">
+            <node concept="3clFbS" id="1ZlHRbgXFSf" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgXG8D" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgXG8F" role="3clFbG">
+                  <property role="Xl_RC" value="wrap with a block" />
                 </node>
               </node>
             </node>
@@ -1666,6 +1695,17 @@
                   <node concept="chp4Y" id="3WWvqarSh3N" role="cj9EA">
                     <ref role="cht4Q" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cqGtN" id="1ZlHRbgXE5T" role="2jZA2a">
+          <node concept="3cqJkl" id="1ZlHRbgXE5X" role="3cqGtW">
+            <node concept="3clFbS" id="1ZlHRbgXE61" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgXEqx" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgXEqw" role="3clFbG">
+                  <property role="Xl_RC" value="create a local, constant value" />
                 </node>
               </node>
             </node>

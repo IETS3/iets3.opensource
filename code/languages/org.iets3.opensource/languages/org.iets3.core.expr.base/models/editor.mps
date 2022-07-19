@@ -188,6 +188,10 @@
       <concept id="1220974635399" name="jetbrains.mps.lang.editor.structure.QueryFunction_FontStyle" flags="in" index="17KAyr" />
       <concept id="2115302367868116903" name="jetbrains.mps.lang.editor.structure.GeneratedSubstituteMenuAttribute" flags="ng" index="382kZG" />
       <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
+      <concept id="1838685759388685703" name="jetbrains.mps.lang.editor.structure.TransformationFeature_DescriptionText" flags="ng" index="3cqGtN">
+        <child id="1838685759388685704" name="query" index="3cqGtW" />
+      </concept>
+      <concept id="1838685759388690401" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_DescriptionText" flags="ig" index="3cqJkl" />
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
@@ -207,6 +211,9 @@
       </concept>
       <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
         <property id="1225456424731" name="value" index="1iTho6" />
+      </concept>
+      <concept id="7291101478617127464" name="jetbrains.mps.lang.editor.structure.IExtensibleTransformationMenuPart" flags="ng" index="1joUw2">
+        <child id="8954657570916349207" name="features" index="2jZA2a" />
       </concept>
       <concept id="7597241200646296619" name="jetbrains.mps.lang.editor.structure.QueryFunction_SNode" flags="in" index="3k4GqP" />
       <concept id="7597241200646296617" name="jetbrains.mps.lang.editor.structure.NavigatableNodeStyleClassItem" flags="ln" index="3k4GqR">
@@ -6541,6 +6548,17 @@
                   <node concept="2qgKlT" id="4nmY9n8ImCx" role="2OqNvi">
                     <ref role="37wK5l" to="pbu6:4nmY9n8I3O7" resolve="allowsInsertDotOnLeft" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cqGtN" id="1ZlHRbgUAga" role="2jZA2a">
+          <node concept="3cqJkl" id="1ZlHRbgUAgb" role="3cqGtW">
+            <node concept="3clFbS" id="1ZlHRbgUAgc" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgUAxx" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgUAxw" role="3clFbG">
+                  <property role="Xl_RC" value="dot expression" />
                 </node>
               </node>
             </node>
