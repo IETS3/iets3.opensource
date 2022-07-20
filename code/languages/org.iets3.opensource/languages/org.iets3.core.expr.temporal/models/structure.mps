@@ -109,6 +109,12 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="50smQ1V8QEh" resolve="Slice" />
     </node>
+    <node concept="1TJgyj" id="7SY$c$i5rRe" role="1TKVEi">
+      <property role="IQ2ns" value="9096867490601221582" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="typeConstraint" />
+      <ref role="20lvS9" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="50smQ1V8QEh">
     <property role="EcuMT" value="5772589292323039889" />
