@@ -241,7 +241,9 @@
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
       </concept>
+      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -3446,6 +3448,15 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <node concept="VPRnO" id="2vkvJYSMVlt" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="1oAbb0" id="2Zbcfw$$2fG" role="1oA3V3">
+          <node concept="3clFbS" id="2Zbcfw$$2fH" role="2VODD2">
+            <node concept="3clFbF" id="2Zbcfw$$2g4" role="3cqZAp">
+              <node concept="Xl_RD" id="2Zbcfw$$2g3" role="3clFbG">
+                <property role="Xl_RC" value="" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

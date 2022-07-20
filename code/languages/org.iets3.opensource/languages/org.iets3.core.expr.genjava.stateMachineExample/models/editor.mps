@@ -78,7 +78,9 @@
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
       </concept>
+      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -233,6 +235,15 @@
       <node concept="1kIj98" id="4NM7IHyCReH" role="3EZMnx">
         <node concept="3F1sOY" id="4NM7IHyCReS" role="1kIj9b">
           <ref role="1NtTu8" to="44fz:4NM7IHyCGh1" resolve="type" />
+        </node>
+        <node concept="1oAbb0" id="2Zbcfw$$2xW" role="1oA3V3">
+          <node concept="3clFbS" id="2Zbcfw$$2xX" role="2VODD2">
+            <node concept="3clFbF" id="2Zbcfw$$2Ax" role="3cqZAp">
+              <node concept="Xl_RD" id="2Zbcfw$$2Aw" role="3clFbG">
+                <property role="Xl_RC" value="a type of an event argument" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2iRfu4" id="4NM7IHyCRcn" role="2iSdaV" />

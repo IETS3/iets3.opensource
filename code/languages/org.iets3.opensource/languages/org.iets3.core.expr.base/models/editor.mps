@@ -506,7 +506,9 @@
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
       </concept>
+      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
       <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ig" index="1Lj6DC" />
       <concept id="2862331529394479405" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQueryCell" flags="ng" index="1Lj6DL">
         <child id="2862331529394487726" name="query" index="1Lj8FM" />
@@ -6043,6 +6045,15 @@
                       <ref role="cht4Q" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1oAbb0" id="2Zbcfw$x9ZZ" role="1oA3V3">
+            <node concept="3clFbS" id="2Zbcfw$xa00" role="2VODD2">
+              <node concept="3clFbF" id="2Zbcfw$zT34" role="3cqZAp">
+                <node concept="Xl_RD" id="2Zbcfw$zT33" role="3clFbG">
+                  <property role="Xl_RC" value="force away" />
                 </node>
               </node>
             </node>

@@ -186,7 +186,9 @@
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
       </concept>
+      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
@@ -750,6 +752,15 @@
       <node concept="1kIj98" id="7kYh9WszdIg" role="3EZMnx">
         <node concept="3F1sOY" id="7kYh9WszdIm" role="1kIj9b">
           <ref role="1NtTu8" to="700h:7kYh9WszdHE" resolve="key" />
+        </node>
+        <node concept="1oAbb0" id="2Zbcfw$$20m" role="1oA3V3">
+          <node concept="3clFbS" id="2Zbcfw$$20n" role="2VODD2">
+            <node concept="3clFbF" id="2Zbcfw$$20t" role="3cqZAp">
+              <node concept="Xl_RD" id="2Zbcfw$$20s" role="3clFbG">
+                <property role="Xl_RC" value="a key of a key-value pair" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="7kYh9WszdIt" role="3EZMnx">

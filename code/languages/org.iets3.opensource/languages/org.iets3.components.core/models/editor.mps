@@ -463,7 +463,9 @@
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
       </concept>
+      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell">
       <concept id="1161622981231" name="de.slisson.mps.richtext.customcell.structure.ConceptFunctionParameter_cell" flags="nn" index="1Q80Hy" />
@@ -783,10 +785,18 @@
             </node>
           </node>
         </node>
-        <node concept="1kIj98" id="6LfBX8Yj9uo" role="3EZMnx">
-          <node concept="3F1sOY" id="6LfBX8Yj9uT" role="1kIj9b">
-            <property role="1$x2rV" value="&lt;kind&gt;" />
+        <node concept="1kIj98" id="1ZlHRbhCPyo" role="3EZMnx">
+          <node concept="3F1sOY" id="1ZlHRbhCPAp" role="1kIj9b">
             <ref role="1NtTu8" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
+          </node>
+          <node concept="1oAbb0" id="1ZlHRbhCPAs" role="1oA3V3">
+            <node concept="3clFbS" id="1ZlHRbhCPAt" role="2VODD2">
+              <node concept="3clFbF" id="2Zbcfw$hxm3" role="3cqZAp">
+                <node concept="Xl_RD" id="2Zbcfw$hxm2" role="3clFbG">
+                  <property role="Xl_RC" value="a component with kind" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3F0ifn" id="6LfBX8Yi4oF" role="3EZMnx">
@@ -8680,6 +8690,15 @@
         <node concept="3F1sOY" id="mIQkxfpv8Y" role="1kIj9b">
           <ref role="1NtTu8" to="w9y2:mIQkxfpv7_" resolve="category" />
         </node>
+        <node concept="1oAbb0" id="2Zbcfw$hu3u" role="1oA3V3">
+          <node concept="3clFbS" id="2Zbcfw$hu3v" role="2VODD2">
+            <node concept="3clFbF" id="2Zbcfw$v2Ud" role="3cqZAp">
+              <node concept="Xl_RD" id="2Zbcfw$v2Uc" role="3clFbG">
+                <property role="Xl_RC" value="a port with category" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="PMmxH" id="mIQkxfpv8t" role="3EZMnx">
         <ref role="PMmxG" to="ir4w:4A8SzOVasuR" resolve="summary" />
@@ -10558,6 +10577,15 @@
         <node concept="1kIj98" id="2Q7cX_iyKtY" role="3EZMnx">
           <node concept="3F1sOY" id="2Q7cX_iyKtQ" role="1kIj9b">
             <ref role="1NtTu8" to="w9y2:2Q7cX_iyKtq" resolve="trigger" />
+          </node>
+          <node concept="1oAbb0" id="2Zbcfw$hv$b" role="1oA3V3">
+            <node concept="3clFbS" id="2Zbcfw$hv$c" role="2VODD2">
+              <node concept="3clFbF" id="2Zbcfw$hv$h" role="3cqZAp">
+                <node concept="Xl_RD" id="2Zbcfw$hv$g" role="3clFbG">
+                  <property role="Xl_RC" value="a simple behavior with trigger" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3F0ifn" id="2Q7cX_iyKq1" role="3EZMnx">
@@ -13452,6 +13480,15 @@
           <node concept="3F1sOY" id="77HYM7Hoq7i" role="1kIj9b">
             <property role="1$x2rV" value="&lt;kind&gt;" />
             <ref role="1NtTu8" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
+          </node>
+          <node concept="1oAbb0" id="2Zbcfw$hsWN" role="1oA3V3">
+            <node concept="3clFbS" id="2Zbcfw$hsWO" role="2VODD2">
+              <node concept="3clFbF" id="2Zbcfw$v1Jn" role="3cqZAp">
+                <node concept="Xl_RD" id="2Zbcfw$v1Jm" role="3clFbG">
+                  <property role="Xl_RC" value="a component with kind" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="PMmxH" id="77HYM7Hoq7l" role="3EZMnx">

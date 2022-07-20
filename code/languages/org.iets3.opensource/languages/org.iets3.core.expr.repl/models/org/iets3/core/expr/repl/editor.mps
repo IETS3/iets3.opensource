@@ -404,7 +404,9 @@
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
       </concept>
+      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell">
       <concept id="8760592470373336790" name="com.mbeddr.mpsutil.framecell.structure.CellModel_FrameCell" flags="ng" index="3j0QqT">
@@ -5523,6 +5525,15 @@
         <node concept="1kIj98" id="7HzLUeHDJw2" role="3EZMnx">
           <node concept="3F1sOY" id="3_Nra3DTaTW" role="1kIj9b">
             <ref role="1NtTu8" to="wtll:3_Nra3DTaT0" resolve="type" />
+          </node>
+          <node concept="1oAbb0" id="2Zbcfw$$3gA" role="1oA3V3">
+            <node concept="3clFbS" id="2Zbcfw$$3gB" role="2VODD2">
+              <node concept="3clFbF" id="2Zbcfw$$3gZ" role="3cqZAp">
+                <node concept="Xl_RD" id="2Zbcfw$$3gY" role="3clFbG">
+                  <property role="Xl_RC" value="a cell constraint with a type" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
