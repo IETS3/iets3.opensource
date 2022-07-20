@@ -419,7 +419,6 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
-      <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
@@ -1821,12 +1820,9 @@
             <ref role="1NtTu8" to="yv47:67Y8mp$M9cx" resolve="qualified" />
             <node concept="uPpia" id="1ZlHRbgha55" role="1djCvC">
               <node concept="3clFbS" id="1ZlHRbgha56" role="2VODD2">
-                <node concept="3clFbF" id="1ZlHRbgha5v" role="3cqZAp">
-                  <node concept="2OqwBi" id="1ZlHRbghas5" role="3clFbG">
-                    <node concept="313q4" id="1ZlHRbgha5u" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="1ZlHRbghb2C" role="2OqNvi">
-                      <ref role="37wK5l" to="nu60:1ZlHRbgh8C7" resolve="getQualifiedFlagHelp" />
-                    </node>
+                <node concept="3clFbF" id="2Zbcfw_ff0G" role="3cqZAp">
+                  <node concept="Xl_RD" id="2Zbcfw_ff0F" role="3clFbG">
+                    <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
                   </node>
                 </node>
               </node>
@@ -1969,11 +1965,8 @@
             <node concept="uPpia" id="1ZlHRbghbch" role="1djCvC">
               <node concept="3clFbS" id="1ZlHRbghbci" role="2VODD2">
                 <node concept="3clFbF" id="1ZlHRbghbcm" role="3cqZAp">
-                  <node concept="2OqwBi" id="1ZlHRbghbco" role="3clFbG">
-                    <node concept="313q4" id="1ZlHRbghbcp" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="1ZlHRbghbcq" role="2OqNvi">
-                      <ref role="37wK5l" to="nu60:1ZlHRbgh8C7" resolve="getQualifiedFlagHelp" />
-                    </node>
+                  <node concept="Xl_RD" id="2Zbcfw_ffbS" role="3clFbG">
+                    <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
                   </node>
                 </node>
               </node>
@@ -2073,11 +2066,8 @@
           <node concept="uPpia" id="1ZlHRbghbpm" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbghbpn" role="2VODD2">
               <node concept="3clFbF" id="1ZlHRbghbpH" role="3cqZAp">
-                <node concept="2OqwBi" id="1ZlHRbghbpJ" role="3clFbG">
-                  <node concept="313q4" id="1ZlHRbghbpK" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="1ZlHRbghbpL" role="2OqNvi">
-                    <ref role="37wK5l" to="nu60:1ZlHRbgh8C7" resolve="getQualifiedFlagHelp" />
-                  </node>
+                <node concept="Xl_RD" id="2Zbcfw_ffkj" role="3clFbG">
+                  <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
                 </node>
               </node>
             </node>
@@ -2315,11 +2305,8 @@
             <node concept="uPpia" id="1ZlHRbghbqS" role="1djCvC">
               <node concept="3clFbS" id="1ZlHRbghbqT" role="2VODD2">
                 <node concept="3clFbF" id="1ZlHRbghbqX" role="3cqZAp">
-                  <node concept="2OqwBi" id="1ZlHRbghbqZ" role="3clFbG">
-                    <node concept="313q4" id="1ZlHRbghbr0" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="1ZlHRbghbr1" role="2OqNvi">
-                      <ref role="37wK5l" to="nu60:1ZlHRbgh8C7" resolve="getQualifiedFlagHelp" />
-                    </node>
+                  <node concept="Xl_RD" id="2Zbcfw_ffui" role="3clFbG">
+                    <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
                   </node>
                 </node>
               </node>

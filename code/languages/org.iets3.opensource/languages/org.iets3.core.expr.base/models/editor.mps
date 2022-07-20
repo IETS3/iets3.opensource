@@ -471,7 +471,6 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
-      <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
       <concept id="1716599163375643733" name="com.mbeddr.mpsutil.grammarcells.structure.BracketsCell" flags="ng" index="drBAd">
         <child id="1716599163375643743" name="left" index="drBA7" />
         <child id="1716599163375643746" name="inner" index="drBAU" />
@@ -2625,17 +2624,8 @@
         <node concept="uPpia" id="1ZlHRbfy$te" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbfy$tf" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbfy$tr" role="3cqZAp">
-              <node concept="2OqwBi" id="1ZlHRbfy$M8" role="3clFbG">
-                <node concept="1PxgMI" id="1ZlHRbfy$_I" role="2Oq$k0">
-                  <property role="1BlNFB" value="true" />
-                  <node concept="chp4Y" id="1ZlHRbfy$AE" role="3oSUPX">
-                    <ref role="cht4Q" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
-                  </node>
-                  <node concept="313q4" id="1ZlHRbfy$tq" role="1m5AlR" />
-                </node>
-                <node concept="2qgKlT" id="1ZlHRbfy_25" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:7PVnOXzpuLt" resolve="getWarningFlagHelp" />
-                </node>
+              <node concept="Xl_RD" id="2Zbcfw_fcOY" role="3clFbG">
+                <property role="Xl_RC" value="show a warning instead of an error" />
               </node>
             </node>
           </node>
@@ -2680,18 +2670,9 @@
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         <node concept="uPpia" id="1ZlHRbfyyt_" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbfyytA" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbfyyQc" role="3cqZAp">
-              <node concept="2OqwBi" id="1ZlHRbfyzcY" role="3clFbG">
-                <node concept="1PxgMI" id="1ZlHRbfyz0u" role="2Oq$k0">
-                  <property role="1BlNFB" value="true" />
-                  <node concept="chp4Y" id="1ZlHRbfyz1o" role="3oSUPX">
-                    <ref role="cht4Q" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
-                  </node>
-                  <node concept="313q4" id="1ZlHRbfyyQb" role="1m5AlR" />
-                </node>
-                <node concept="2qgKlT" id="1ZlHRbfyzup" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:7PVnOXzpuLt" resolve="getWarningFlagHelp" />
-                </node>
+            <node concept="3clFbF" id="2Zbcfw_fdnc" role="3cqZAp">
+              <node concept="Xl_RD" id="2Zbcfw_fdnb" role="3clFbG">
+                <property role="Xl_RC" value="show a warning instead of an error" />
               </node>
             </node>
           </node>
@@ -2713,11 +2694,8 @@
         <node concept="uPpia" id="1ZlHRbgqkK5" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqkK6" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgqkKJ" role="3cqZAp">
-              <node concept="2OqwBi" id="1ZlHRbgqnSP" role="3clFbG">
-                <node concept="313q4" id="1ZlHRbgqnSQ" role="2Oq$k0" />
-                <node concept="2qgKlT" id="1ZlHRbgqnSR" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:1ZlHRbgqmri" resolve="getErrorExpressionHelp" />
-                </node>
+              <node concept="Xl_RD" id="2Zbcfw_fh$4" role="3clFbG">
+                <property role="Xl_RC" value="an error expression for the constraint" />
               </node>
             </node>
           </node>
@@ -2740,17 +2718,8 @@
         <node concept="uPpia" id="7PVnOXzKBnj" role="1djCvC">
           <node concept="3clFbS" id="7PVnOXzKBnk" role="2VODD2">
             <node concept="3clFbF" id="7PVnOXzKBoe" role="3cqZAp">
-              <node concept="2OqwBi" id="7PVnOXzpzb8" role="3clFbG">
-                <node concept="1PxgMI" id="7PVnOXzpzb9" role="2Oq$k0">
-                  <property role="1BlNFB" value="true" />
-                  <node concept="chp4Y" id="7PVnOXzpzba" role="3oSUPX">
-                    <ref role="cht4Q" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
-                  </node>
-                  <node concept="313q4" id="7PVnOXzKB$r" role="1m5AlR" />
-                </node>
-                <node concept="2qgKlT" id="7PVnOXzpzbc" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:7PVnOXzpuLt" resolve="getWarningFlagHelp" />
-                </node>
+              <node concept="Xl_RD" id="2Zbcfw_fg5u" role="3clFbG">
+                <property role="Xl_RC" value="show a warning instead of an error" />
               </node>
             </node>
           </node>
@@ -2772,11 +2741,8 @@
         <node concept="uPpia" id="1ZlHRbgql1U" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgql1V" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgql6L" role="3cqZAp">
-              <node concept="2OqwBi" id="1ZlHRbgqnYA" role="3clFbG">
-                <node concept="313q4" id="1ZlHRbgqnYB" role="2Oq$k0" />
-                <node concept="2qgKlT" id="1ZlHRbgqnYC" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:1ZlHRbgqmri" resolve="getErrorExpressionHelp" />
-                </node>
+              <node concept="Xl_RD" id="2Zbcfw_fhFG" role="3clFbG">
+                <property role="Xl_RC" value="an error expression for the constraint" />
               </node>
             </node>
           </node>
@@ -2799,17 +2765,8 @@
         <node concept="uPpia" id="1ZlHRbfyzCy" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbfyzCz" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbfyzCJ" role="3cqZAp">
-              <node concept="2OqwBi" id="1ZlHRbfyzYZ" role="3clFbG">
-                <node concept="1PxgMI" id="1ZlHRbfyzMX" role="2Oq$k0">
-                  <property role="1BlNFB" value="true" />
-                  <node concept="chp4Y" id="1ZlHRbfyzNT" role="3oSUPX">
-                    <ref role="cht4Q" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
-                  </node>
-                  <node concept="313q4" id="1ZlHRbfyzCI" role="1m5AlR" />
-                </node>
-                <node concept="2qgKlT" id="1ZlHRbfy$j5" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:7PVnOXzpuLt" resolve="getWarningFlagHelp" />
-                </node>
+              <node concept="Xl_RD" id="2Zbcfw_dsX0" role="3clFbG">
+                <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
               </node>
             </node>
           </node>
@@ -2833,12 +2790,9 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqkoY" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqkoZ" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqn94" role="3cqZAp">
-              <node concept="2OqwBi" id="1ZlHRbgqnmW" role="3clFbG">
-                <node concept="313q4" id="1ZlHRbgqn93" role="2Oq$k0" />
-                <node concept="2qgKlT" id="1ZlHRbgqnEB" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:1ZlHRbgqmri" resolve="getErrorExpressionHelp" />
-                </node>
+            <node concept="3clFbF" id="2Zbcfw_fhpp" role="3cqZAp">
+              <node concept="Xl_RD" id="2Zbcfw_fhpo" role="3clFbG">
+                <property role="Xl_RC" value="an error expression for the constraint" />
               </node>
             </node>
           </node>
