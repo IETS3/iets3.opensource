@@ -747,7 +747,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="409503520741916198" />
-    <property role="R4oN_" value="base connector for all port to port connections" />
+    <property role="R4oN_" value="a base connector for all port to port connections" />
     <ref role="1TJDcQ" node="3E8pWtexQKZ" resolve="AbstractConnectorBase" />
     <node concept="1TJgyj" id="4KDeVD8s9U_" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

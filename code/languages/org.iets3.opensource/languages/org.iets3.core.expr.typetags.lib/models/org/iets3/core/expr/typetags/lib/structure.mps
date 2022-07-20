@@ -48,7 +48,7 @@
     <property role="TrG5h" value="ReadDataFromURLExpression" />
     <property role="34LRSv" value="read-from-url" />
     <property role="EcuMT" value="1759375669591499846" />
-    <property role="R4oN_" value="read from url" />
+    <property role="R4oN_" value="read from an url" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="PrWs8" id="6KxoTHgLvAT" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -89,7 +89,7 @@
     <property role="TrG5h" value="StorePatientData" />
     <property role="34LRSv" value="db-store" />
     <property role="EcuMT" value="508719611259447856" />
-    <property role="R4oN_" value="store patient data" />
+    <property role="R4oN_" value="store the patient data" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="sflsE7peCL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -140,7 +140,7 @@
     <property role="EcuMT" value="1043318945008686664" />
     <property role="TrG5h" value="EncryptedTag" />
     <property role="34LRSv" value="encrypted" />
-    <property role="R4oN_" value="encryped" />
+    <property role="R4oN_" value="an encryped tag" />
     <ref role="1TJDcQ" to="w1hl:1RcasK0SmZc" resolve="UnaryTag" />
   </node>
   <node concept="1TIwiD" id="TUBgQ0G6Ye">
@@ -157,7 +157,7 @@
     <property role="TrG5h" value="SecretClassLevel" />
     <property role="34LRSv" value="secret" />
     <property role="3GE5qa" value="classification" />
-    <property role="R4oN_" value="classification level: secret" />
+    <property role="R4oN_" value="secret classification level" />
     <ref role="1TJDcQ" node="TUBgQ0G6Ye" resolve="ClassificationLevel" />
   </node>
   <node concept="1TIwiD" id="TUBgQ0G6Yg">
@@ -165,7 +165,7 @@
     <property role="TrG5h" value="TopSecretClassLevel" />
     <property role="34LRSv" value="topsecret" />
     <property role="3GE5qa" value="classification" />
-    <property role="R4oN_" value="classification level: top secret" />
+    <property role="R4oN_" value="top secret classification level" />
     <ref role="1TJDcQ" node="TUBgQ0G6Ye" resolve="ClassificationLevel" />
   </node>
   <node concept="1TIwiD" id="TUBgQ0G6Yh">
@@ -173,7 +173,7 @@
     <property role="TrG5h" value="ConfidentialClassLevel" />
     <property role="34LRSv" value="confidential" />
     <property role="3GE5qa" value="classification" />
-    <property role="R4oN_" value="classification level: confidential" />
+    <property role="R4oN_" value="a confidential classification level" />
     <ref role="1TJDcQ" node="TUBgQ0G6Ye" resolve="ClassificationLevel" />
   </node>
 </model>

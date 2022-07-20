@@ -493,7 +493,7 @@
     <property role="EcuMT" value="161551962036847720" />
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="Content" />
-    <property role="R4oN_" value="content of a multi-criteria decision table column" />
+    <property role="R4oN_" value="a content of a multi-criteria decision table column" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="8XWEtdYkjo" role="1TKVEi">
       <property role="IQ2ns" value="161551962036847832" />
@@ -544,7 +544,7 @@
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="TopLevelMultiDecTab" />
     <property role="34LRSv" value="decision table" />
-    <property role="R4oN_" value="multi-criteria decision table" />
+    <property role="R4oN_" value="a multi-criteria decision table" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5GPhrsV2jl4" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
@@ -804,7 +804,7 @@
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="SameExpression" />
     <property role="34LRSv" value="^" />
-    <property role="R4oN_" value="same value as the cell in the same column and previous row" />
+    <property role="R4oN_" value="the same value as the cell in the same column and previous row" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="5crSXLq2_c">

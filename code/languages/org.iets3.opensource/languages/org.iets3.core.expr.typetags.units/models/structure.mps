@@ -92,7 +92,7 @@
     <property role="TrG5h" value="Unit" />
     <property role="3GE5qa" value="definition" />
     <property role="34LRSv" value="unit" />
-    <property role="R4oN_" value="Unit Definition" />
+    <property role="R4oN_" value="a unit definition" />
     <property role="EcuMT" value="8337440621611267903" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1KUmgSFpwWq" role="1TKVEi">

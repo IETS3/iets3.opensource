@@ -75,7 +75,7 @@
   <node concept="1TIwiD" id="4HxogODS05M">
     <property role="TrG5h" value="ErrorTag" />
     <property role="34LRSv" value="error" />
-    <property role="R4oN_" value="error flavor value" />
+    <property role="R4oN_" value="an error flavor value" />
     <property role="EcuMT" value="5431729334750544242" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5XaocLWF257" role="1TKVEl">
@@ -109,7 +109,7 @@
   <node concept="1TIwiD" id="1RcasK0U_W1">
     <property role="TrG5h" value="TagNegation" />
     <property role="34LRSv" value="!" />
-    <property role="R4oN_" value="negate tag" />
+    <property role="R4oN_" value="a negate tag" />
     <property role="EcuMT" value="2147137078514310913" />
     <property role="3GE5qa" value="modifier" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

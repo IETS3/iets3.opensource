@@ -144,7 +144,7 @@
     <property role="3GE5qa" value="range.toDate" />
     <property role="TrG5h" value="BeginOp" />
     <property role="34LRSv" value="begin" />
-    <property role="R4oN_" value="begin date of a period" />
+    <property role="R4oN_" value="a begin date of a period" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
   </node>
   <node concept="1TIwiD" id="3nGzaxUXXmc">
@@ -152,7 +152,7 @@
     <property role="3GE5qa" value="range.toDate" />
     <property role="TrG5h" value="EndOp" />
     <property role="34LRSv" value="end" />
-    <property role="R4oN_" value="end date of a period" />
+    <property role="R4oN_" value="an end date of a period" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
   </node>
   <node concept="1TIwiD" id="1Mp62pP0lGq">
@@ -527,7 +527,7 @@
     <property role="3GE5qa" value="range" />
     <property role="TrG5h" value="PeriodType" />
     <property role="34LRSv" value="period" />
-    <property role="R4oN_" value="period type" />
+    <property role="R4oN_" value="a period type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="7zAZa_vg5yL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
@@ -824,7 +824,7 @@
     <property role="3GE5qa" value="time.delta" />
     <property role="TrG5h" value="TimeDeltaType" />
     <property role="34LRSv" value="timedelta" />
-    <property role="R4oN_" value="timedelta type" />
+    <property role="R4oN_" value="a time delta type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="3HiHZeyiDml">

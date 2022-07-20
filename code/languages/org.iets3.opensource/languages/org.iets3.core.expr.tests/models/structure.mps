@@ -209,7 +209,7 @@
     <property role="TrG5h" value="TestSuite" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="543569365052711055" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a test suite" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7D7uZV2GoIG" role="1TKVEl">
       <property role="TrG5h" value="executeAutomatically" />
@@ -482,7 +482,7 @@
     <property role="TrG5h" value="StructuralCoverageAssQuery" />
     <property role="34LRSv" value="structural coverage" />
     <property role="3GE5qa" value="assessment.structural" />
-    <property role="R4oN_" value="report coverage of the concept's structure" />
+    <property role="R4oN_" value="a report coverage of the concept's structure" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
     <node concept="1TJgyj" id="CrzyxmE7Fc" role="1TKVEi">
       <property role="IQ2ns" value="728332068654185164" />
@@ -612,7 +612,7 @@
     <property role="EcuMT" value="6606989268199297429" />
     <property role="3GE5qa" value="assessment.models" />
     <property role="TrG5h" value="ModelsCoverageAssResult" />
-    <property role="R4oN_" value="report test code coverage" />
+    <property role="R4oN_" value="a report test code coverage" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="hJB5MUc" role="1TKVEi">
       <property role="20kJfa" value="coveredNode" />
@@ -973,7 +973,7 @@
     <property role="EcuMT" value="1626696085383418901" />
     <property role="3GE5qa" value="mutator" />
     <property role="TrG5h" value="MutationLog" />
-    <property role="R4oN_" value="reference to the new node after the mutation" />
+    <property role="R4oN_" value="a reference to the new node after the mutation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1qjbRymSXmZ" role="1TKVEi">
       <property role="IQ2ns" value="1626696085384975807" />
@@ -989,7 +989,7 @@
     <property role="EcuMT" value="1626696085384423453" />
     <property role="3GE5qa" value="mutator" />
     <property role="TrG5h" value="OldNodeAnnotation" />
-    <property role="R4oN_" value="reference to the old node after the mutation" />
+    <property role="R4oN_" value="a reference to the old node after the mutation" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="1qjbRymQQwB" role="lGtFl">
       <property role="Hh88m" value="old" />
@@ -1047,7 +1047,7 @@
     <property role="EcuMT" value="6137388456558201473" />
     <property role="TrG5h" value="ForceCastExpr" />
     <property role="34LRSv" value="forceCast" />
-    <property role="R4oN_" value="force a type cast; doesn't check the subtype relationship" />
+    <property role="R4oN_" value="force a type cast; it doesn't check the subtype relationship" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5kGo$yLJ0Eb" role="1TKVEi">
       <property role="IQ2ns" value="6137388456558201483" />
@@ -1151,7 +1151,7 @@
     <property role="3GE5qa" value="matcher.type" />
     <property role="TrG5h" value="MatcherType" />
     <property role="34LRSv" value="matcher" />
-    <property role="R4oN_" value="matcher type" />
+    <property role="R4oN_" value="a matcher type" />
     <ref role="1TJDcQ" node="5Pgo_ASE531" resolve="AbstractMatcherType" />
     <node concept="1TJgyj" id="5Pgo_ASAjDE" role="1TKVEi">
       <property role="IQ2ns" value="6723982381152811626" />
@@ -1177,7 +1177,7 @@
     <property role="3GE5qa" value="matcher.type" />
     <property role="TrG5h" value="MatcherForAnyRecordType" />
     <property role="34LRSv" value="matcher-for-any-record-type" />
-    <property role="R4oN_" value="matche records" />
+    <property role="R4oN_" value="match records" />
     <ref role="1TJDcQ" node="5Pgo_ASE531" resolve="AbstractMatcherType" />
   </node>
   <node concept="1TIwiD" id="5Pgo_ASE531">

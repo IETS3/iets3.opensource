@@ -71,7 +71,7 @@
   <node concept="1TIwiD" id="1u1U5lEW8iD">
     <property role="TrG5h" value="NatLangFunctionArgRef" />
     <property role="EcuMT" value="1693890388432028841" />
-    <property role="R4oN_" value="reference to a function argument" />
+    <property role="R4oN_" value="a reference to a function argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1u1U5lEW8iV" role="1TKVEi">
       <property role="20kJfa" value="param" />

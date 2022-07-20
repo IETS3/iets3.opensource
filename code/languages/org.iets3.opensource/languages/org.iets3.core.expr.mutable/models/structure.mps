@@ -148,7 +148,7 @@
     <property role="TrG5h" value="UpdateItExpression" />
     <property role="34LRSv" value="it" />
     <property role="3GE5qa" value="box" />
-    <property role="R4oN_" value="reference to the value in the box" />
+    <property role="R4oN_" value="a reference to the value in the box" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="3GdqffC8H$g">
@@ -405,7 +405,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="clock type" />
+    <property role="R4oN_" value="a clock type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="4IV0h47QL2E">
@@ -451,7 +451,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="SystemClockExpr" />
     <property role="34LRSv" value="systemclock" />
-    <property role="R4oN_" value="reference to the system clock" />
+    <property role="R4oN_" value="a reference to the system clock" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="3iESbJsHMt0">

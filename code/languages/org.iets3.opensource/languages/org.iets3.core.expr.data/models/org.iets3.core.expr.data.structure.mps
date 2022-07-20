@@ -258,7 +258,7 @@
     <property role="TrG5h" value="DataIsInTarget" />
     <property role="34LRSv" value="is" />
     <property role="3GE5qa" value="expr" />
-    <property role="R4oN_" value="check data element against one or several rows" />
+    <property role="R4oN_" value="check the data element against one or several rows" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3y6PJwOpPmS" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />

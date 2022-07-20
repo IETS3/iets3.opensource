@@ -156,7 +156,7 @@
   <node concept="1TIwiD" id="2HpFPvT9Hfx">
     <property role="EcuMT" value="3123720608935236577" />
     <property role="TrG5h" value="ReplEntryRef" />
-    <property role="R4oN_" value="reference to a REPL entry" />
+    <property role="R4oN_" value="a reference to a REPL entry" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="2HpFPvT9Hfy" role="1TKVEi">
       <property role="IQ2ns" value="3123720608935236578" />

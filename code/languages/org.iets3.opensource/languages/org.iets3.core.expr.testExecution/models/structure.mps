@@ -46,7 +46,7 @@
     <property role="EcuMT" value="4473287864570292399" />
     <property role="TrG5h" value="TestExecutionConfig" />
     <property role="19KtqR" value="true" />
-    <property role="R4oN_" value="configuration for the test execution" />
+    <property role="R4oN_" value="a configuration for a test execution" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3SkjTN1LTtQ" role="1TKVEi">
       <property role="IQ2ns" value="4473287864570320758" />

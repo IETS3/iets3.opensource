@@ -1820,9 +1820,9 @@
             <ref role="1NtTu8" to="yv47:67Y8mp$M9cx" resolve="qualified" />
             <node concept="uPpia" id="1ZlHRbgha55" role="1djCvC">
               <node concept="3clFbS" id="1ZlHRbgha56" role="2VODD2">
-                <node concept="3clFbF" id="2Zbcfw_ff0G" role="3cqZAp">
-                  <node concept="Xl_RD" id="2Zbcfw_ff0F" role="3clFbG">
-                    <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
+                <node concept="3clFbF" id="1sNMMH7wOvW" role="3cqZAp">
+                  <node concept="Xl_RD" id="1sNMMH7wOvV" role="3clFbG">
+                    <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
                   </node>
                 </node>
               </node>
@@ -1965,8 +1965,8 @@
             <node concept="uPpia" id="1ZlHRbghbch" role="1djCvC">
               <node concept="3clFbS" id="1ZlHRbghbci" role="2VODD2">
                 <node concept="3clFbF" id="1ZlHRbghbcm" role="3cqZAp">
-                  <node concept="Xl_RD" id="2Zbcfw_ffbS" role="3clFbG">
-                    <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
+                  <node concept="Xl_RD" id="1sNMMH7wORy" role="3clFbG">
+                    <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
                   </node>
                 </node>
               </node>
@@ -2066,8 +2066,8 @@
           <node concept="uPpia" id="1ZlHRbghbpm" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbghbpn" role="2VODD2">
               <node concept="3clFbF" id="1ZlHRbghbpH" role="3cqZAp">
-                <node concept="Xl_RD" id="2Zbcfw_ffkj" role="3clFbG">
-                  <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
+                <node concept="Xl_RD" id="1sNMMH7wOS5" role="3clFbG">
+                  <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
                 </node>
               </node>
             </node>
@@ -2305,8 +2305,8 @@
             <node concept="uPpia" id="1ZlHRbghbqS" role="1djCvC">
               <node concept="3clFbS" id="1ZlHRbghbqT" role="2VODD2">
                 <node concept="3clFbF" id="1ZlHRbghbqX" role="3cqZAp">
-                  <node concept="Xl_RD" id="2Zbcfw_ffui" role="3clFbG">
-                    <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
+                  <node concept="Xl_RD" id="1sNMMH7wOSD" role="3clFbG">
+                    <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
                   </node>
                 </node>
               </node>

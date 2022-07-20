@@ -254,7 +254,7 @@
     <property role="EcuMT" value="6990314453967156784" />
     <property role="TrG5h" value="PiExpression" />
     <property role="34LRSv" value="pi" />
-    <property role="R4oN_" value="number denoting the ratio of a circle's circumference to its diameter" />
+    <property role="R4oN_" value="a number denoting the ratio of a circle's circumference to its diameter" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1QGGSu" id="1yW0h04FUIO" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/pi.png" />
@@ -430,7 +430,7 @@
     <property role="EcuMT" value="4179418036532649528" />
     <property role="TrG5h" value="PolynomialExpression" />
     <property role="34LRSv" value="polynom" />
-    <property role="R4oN_" value="polynomial" />
+    <property role="R4oN_" value="a polynomial" />
     <ref role="1TJDcQ" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
   </node>
   <node concept="1TIwiD" id="3iWt5efOhM1">

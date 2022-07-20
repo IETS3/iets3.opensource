@@ -36,7 +36,7 @@
     <property role="EcuMT" value="1977415354602970500" />
     <property role="TrG5h" value="RealizesKind" />
     <property role="34LRSv" value="realizes" />
-    <property role="R4oN_" value="realizes kind" />
+    <property role="R4oN_" value="a realizes kind" />
     <ref role="1TJDcQ" to="ci3w:1PzuxQOT$Zx" resolve="TraceKind" />
   </node>
 </model>
