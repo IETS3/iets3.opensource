@@ -88,6 +88,7 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -274,14 +275,25 @@
         <node concept="pkWqt" id="7SY$c$i5rRh" role="pqm2j">
           <node concept="3clFbS" id="7SY$c$i5rRi" role="2VODD2">
             <node concept="3clFbF" id="7SY$c$i5rRn" role="3cqZAp">
-              <node concept="2OqwBi" id="7SY$c$i5uKt" role="3clFbG">
-                <node concept="2OqwBi" id="7SY$c$i5s9D" role="2Oq$k0">
-                  <node concept="pncrf" id="7SY$c$i5rRm" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="7SY$c$i5t60" role="2OqNvi">
-                    <ref role="3TtcxE" to="l462:50smQ1V8QF$" resolve="slices" />
+              <node concept="22lmx$" id="2LepRDoQfT$" role="3clFbG">
+                <node concept="2OqwBi" id="2LepRDoQgWn" role="3uHU7w">
+                  <node concept="2OqwBi" id="2LepRDoQgjT" role="2Oq$k0">
+                    <node concept="pncrf" id="2LepRDoQg1l" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2LepRDoQgLN" role="2OqNvi">
+                      <ref role="3Tt5mk" to="l462:7SY$c$i5rRe" resolve="typeConstraint" />
+                    </node>
                   </node>
+                  <node concept="3x8VRR" id="2LepRDoQhh7" role="2OqNvi" />
                 </node>
-                <node concept="1v1jN8" id="7SY$c$i5x75" role="2OqNvi" />
+                <node concept="2OqwBi" id="7SY$c$i5uKt" role="3uHU7B">
+                  <node concept="2OqwBi" id="7SY$c$i5s9D" role="2Oq$k0">
+                    <node concept="pncrf" id="7SY$c$i5rRm" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="7SY$c$i5t60" role="2OqNvi">
+                      <ref role="3TtcxE" to="l462:50smQ1V8QF$" resolve="slices" />
+                    </node>
+                  </node>
+                  <node concept="1v1jN8" id="7SY$c$i5x75" role="2OqNvi" />
+                </node>
               </node>
             </node>
           </node>
