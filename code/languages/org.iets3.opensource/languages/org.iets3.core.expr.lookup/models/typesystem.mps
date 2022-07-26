@@ -635,5 +635,35 @@
       <ref role="1YaFvo" to="8qwc:55lPkJH1wUe" resolve="LookupTarget" />
     </node>
   </node>
+  <node concept="1YbPZF" id="1tbxNVtFwVL">
+    <property role="TrG5h" value="typeof_LookupTableRef" />
+    <node concept="3clFbS" id="1tbxNVtFwVM" role="18ibNy">
+      <node concept="1Z5TYs" id="1tbxNVtFx7m" role="3cqZAp">
+        <node concept="mw_s8" id="1tbxNVtFx7E" role="1ZfhKB">
+          <node concept="1Z2H0r" id="1tbxNVtFx7A" role="mwGJk">
+            <node concept="2OqwBi" id="1tbxNVtFxiC" role="1Z2MuG">
+              <node concept="1YBJjd" id="1tbxNVtFx7V" role="2Oq$k0">
+                <ref role="1YBMHb" node="1tbxNVtFwVO" resolve="lookupTableRef" />
+              </node>
+              <node concept="3TrEf2" id="1tbxNVtFxxu" role="2OqNvi">
+                <ref role="3Tt5mk" to="8qwc:55lPkJH2uuj" resolve="table" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="1tbxNVtFx7p" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1tbxNVtFwVS" role="mwGJk">
+            <node concept="1YBJjd" id="1tbxNVtFwXK" role="1Z2MuG">
+              <ref role="1YBMHb" node="1tbxNVtFwVO" resolve="lookupTableRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1tbxNVtFwVO" role="1YuTPh">
+      <property role="TrG5h" value="lookupTableRef" />
+      <ref role="1YaFvo" to="8qwc:55lPkJH2urb" resolve="LookupTableRef" />
+    </node>
+  </node>
 </model>
 
