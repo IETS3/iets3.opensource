@@ -120,6 +120,9 @@
     <node concept="PrWs8" id="5XaocLWHGMu" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
+    <node concept="PrWs8" id="3WnwFDbcwDv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3k4t">
     <property role="TrG5h" value="UnitSpecification" />
