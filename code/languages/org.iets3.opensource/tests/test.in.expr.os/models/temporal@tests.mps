@@ -22,6 +22,9 @@
       </concept>
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
+      <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
+        <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
+      </concept>
       <concept id="5585772046594451299" name="org.iets3.core.expr.collections.structure.SumOp" flags="ng" index="2$5g5R" />
       <concept id="8872269265518788050" name="org.iets3.core.expr.collections.structure.AllOp" flags="ng" index="2TZ5KL" />
       <concept id="7554398283340715406" name="org.iets3.core.expr.collections.structure.WhereOp" flags="ng" index="3izCyS" />
@@ -29,9 +32,14 @@
         <child id="7554398283340020765" name="arg" index="3iAY4F" />
       </concept>
       <concept id="7554398283339796915" name="org.iets3.core.expr.collections.structure.SizeOp" flags="ng" index="3iB8M5" />
+      <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
+        <child id="7554398283339749510" name="baseType" index="3iBWmK" />
+      </concept>
       <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ListLiteral" flags="ng" index="3iBYfx">
+        <child id="8694548031077041593" name="typeConstraint" index="ygBzB" />
         <child id="7554398283339759320" name="elements" index="3iBYfI" />
       </concept>
+      <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ListType" flags="ng" index="3iBYCm" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
       <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
@@ -170,6 +178,7 @@
         <property id="5115872837157252555" name="value" index="30bdrQ" />
       </concept>
       <concept id="5115872837157054284" name="org.iets3.core.expr.simpleTypes.structure.RealType" flags="ng" index="30bXLL" />
+      <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
@@ -215,6 +224,7 @@
       </concept>
       <concept id="5772589292323039886" name="org.iets3.core.expr.temporal.structure.TemporalLiteral" flags="ng" index="FfN7I">
         <child id="5772589292323039972" name="slices" index="FfN64" />
+        <child id="9096867490601221582" name="typeConstraint" index="1GaMO7" />
       </concept>
       <concept id="5772589292323039889" name="org.iets3.core.expr.temporal.structure.Slice" flags="ng" index="FfN7L">
         <child id="5772589292323039890" name="pointInTime" index="FfN7M" />
@@ -3881,6 +3891,100 @@
         </node>
       </node>
       <node concept="3dYjL0" id="46fmv66pL1O" role="_fkp5" />
+    </node>
+    <node concept="_ixoA" id="7SY$c$iii7R" role="_iOnB" />
+    <node concept="2zPypq" id="7SY$c$iikdt" role="_iOnB">
+      <property role="TrG5h" value="toReduceWithoutSlices1" />
+      <property role="0Rz4W" value="1419291713" />
+      <node concept="FfN7I" id="7SY$c$iikdu" role="2zPyp_">
+        <node concept="30bXR$" id="7SY$c$iikXj" role="1GaMO7" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="7SY$c$iikZU" role="_iOnB">
+      <property role="TrG5h" value="toReduceWithoutSlices2" />
+      <property role="0Rz4W" value="1419291713" />
+      <node concept="FfN7I" id="7SY$c$iikZV" role="2zPyp_">
+        <node concept="3iBYCm" id="7SY$c$iilky" role="1GaMO7">
+          <node concept="2vmvy5" id="7SY$c$iilln" role="3iBWmK" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="7SY$c$iikdO" role="_iOnB" />
+    <node concept="2zPypq" id="7SY$c$iikdQ" role="_iOnB">
+      <property role="TrG5h" value="reduceFirstYearWithoutSlices1" />
+      <property role="0Rz4W" value="-1740576778" />
+      <node concept="1QScDb" id="7SY$c$iikdR" role="2zPyp_">
+        <node concept="1DAXCi" id="7SY$c$iikdS" role="1QScD9">
+          <node concept="1DAXD4" id="7SY$c$iikdT" role="1DAXD6" />
+          <node concept="1f6kyV" id="7SY$c$iikdU" role="1DAXD0">
+            <node concept="30bXRB" id="7SY$c$iikdV" role="1f6kyW">
+              <property role="30bXRw" value="2000" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="7SY$c$iikdW" role="30czhm">
+          <ref role="_emDf" node="7SY$c$iikdt" resolve="toReduceWithoutSlices1" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="7SY$c$iilq1" role="_iOnB">
+      <property role="TrG5h" value="reduceFirstYearWithoutSlices2" />
+      <property role="0Rz4W" value="-1740576778" />
+      <node concept="1QScDb" id="7SY$c$iilq2" role="2zPyp_">
+        <node concept="1DAXCi" id="7SY$c$iilq3" role="1QScD9">
+          <node concept="1DAXD4" id="7SY$c$iilq4" role="1DAXD6" />
+          <node concept="1f6kyV" id="7SY$c$iilq5" role="1DAXD0">
+            <node concept="30bXRB" id="7SY$c$iilq6" role="1f6kyW">
+              <property role="30bXRw" value="2000" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="7SY$c$iilq7" role="30czhm">
+          <ref role="_emDf" node="7SY$c$iikZU" resolve="toReduceWithoutSlices2" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="2Zbcfw$dM65" role="_iOnB">
+      <property role="TrG5h" value="reduceFirstYearWithoutSlices3" />
+      <property role="0Rz4W" value="-1740576778" />
+      <node concept="1QScDb" id="2Zbcfw$dM66" role="2zPyp_">
+        <node concept="1DAXCi" id="2Zbcfw$dM67" role="1QScD9">
+          <node concept="1DAXD4" id="2Zbcfw$dM68" role="1DAXD6" />
+          <node concept="1f6kyV" id="2Zbcfw$dM69" role="1DAXD0">
+            <node concept="30bXRB" id="2Zbcfw$dM6a" role="1f6kyW">
+              <property role="30bXRw" value="2000" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="2Zbcfw$dM6b" role="30czhm">
+          <ref role="_emDf" node="7SY$c$iikZU" resolve="toReduceWithoutSlices2" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="7SY$c$iij_W" role="_iOnB" />
+    <node concept="_ixoA" id="7SY$c$iijTG" role="_iOnB" />
+    <node concept="_fkuM" id="7SY$c$iiiJa" role="_iOnB">
+      <property role="TrG5h" value="reduceWithoutSlices" />
+      <node concept="_fkuZ" id="7SY$c$iiiJb" role="_fkp5">
+        <node concept="_fku$" id="7SY$c$iiiJc" role="_fkur" />
+        <node concept="_emDc" id="7SY$c$iiiJd" role="_fkuY">
+          <ref role="_emDf" node="7SY$c$iikdQ" resolve="reduceFirstYearWithoutSlices1" />
+        </node>
+        <node concept="30bXRB" id="7SY$c$iiiJe" role="_fkuS">
+          <property role="30bXRw" value="0" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="7SY$c$iinPE" role="_fkp5">
+        <node concept="_fku$" id="7SY$c$iinPF" role="_fkur" />
+        <node concept="_emDc" id="7SY$c$iinPG" role="_fkuY">
+          <ref role="_emDf" node="7SY$c$iilq1" resolve="reduceFirstYearWithoutSlices2" />
+        </node>
+        <node concept="3iBYfx" id="7SY$c$iiozZ" role="_fkuS">
+          <node concept="ygwf7" id="7SY$c$ii_qm" role="ygBzB">
+            <node concept="2vmvy5" id="7SY$c$ii_qA" role="ygwf4" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="_ixoA" id="7X4dwX1dxh4" role="_iOnB" />
     <node concept="2zPypq" id="7X4dwX1bvgg" role="_iOnB">
