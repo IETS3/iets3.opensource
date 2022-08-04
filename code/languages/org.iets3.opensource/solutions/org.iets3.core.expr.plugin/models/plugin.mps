@@ -15,6 +15,7 @@
     <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="-1" />
     <use id="2022a471-10ba-4431-ba5d-622df898f3c6" name="org.iets3.core.expr.testExecution" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)" />
@@ -7974,7 +7975,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6pNCASbI_MJ" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable)" resolve="executeCommand" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
               <node concept="1bVj0M" id="6pNCASbIAtp" role="37wK5m">
                 <node concept="3clFbS" id="6pNCASbIAtq" role="1bW5cS">
                   <node concept="3cpWs8" id="57VdFqPmOku" role="3cqZAp">
@@ -8257,7 +8258,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6pNCASbIIiq" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable)" resolve="executeCommand" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
               <node concept="1bVj0M" id="6pNCASbIIir" role="37wK5m">
                 <node concept="3clFbS" id="6pNCASbIIis" role="1bW5cS">
                   <node concept="3cpWs8" id="5MbB62qyTgi" role="3cqZAp">
