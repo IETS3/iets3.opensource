@@ -2,6 +2,7 @@
 
 ## Build instructions
 
+
 ### Using Gradle
 If you just want to build the project, no prerequisites are required. Just run `./gradlew build` from the checkout
 directory. This will download a pre-built version the mbeddr platform from the itemis Nexus repository. Run 
