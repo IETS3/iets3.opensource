@@ -176,7 +176,7 @@
     <property role="TrG5h" value="AssertTestItem" />
     <property role="34LRSv" value="assert" />
     <property role="EcuMT" value="543569365052056266" />
-    <property role="R4oN_" value="a assert with configurable comparison operator" />
+    <property role="R4oN_" value="an assert item" />
     <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1TJgyi" id="75Hf8iHwLVy" role="1TKVEl">
       <property role="IQ2nx" value="8173255439291719394" />
