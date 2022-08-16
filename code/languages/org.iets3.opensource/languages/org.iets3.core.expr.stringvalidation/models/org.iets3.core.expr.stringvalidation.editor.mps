@@ -254,5 +254,32 @@
       <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
     </node>
   </node>
+  <node concept="24kQdi" id="6KviS2JcqJo">
+    <property role="3GE5qa" value="matches" />
+    <ref role="1XX52x" to="3r88:6KviS2Jcgz$" resolve="NotLetterOrDigitMatch" />
+    <node concept="PMmxH" id="6KviS2JcqJq" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KviS2JcAaE">
+    <property role="3GE5qa" value="check" />
+    <ref role="1XX52x" to="3r88:6KviS2JcA9O" resolve="CannotRepeatCheck" />
+    <node concept="3EZMnI" id="6KviS2JcUFI" role="2wV5jI">
+      <node concept="2iRfu4" id="6KviS2JcUFJ" role="2iSdaV" />
+      <node concept="3F1sOY" id="6KviS2JcUFR" role="3EZMnx">
+        <ref role="1NtTu8" to="3r88:4lCUG7OtrZL" resolve="kind" />
+      </node>
+      <node concept="3F0ifn" id="6KviS2JcAaG" role="3EZMnx">
+        <property role="3F0ifm" value="not repeat" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KviS2JdW9Y">
+    <property role="3GE5qa" value="check" />
+    <ref role="1XX52x" to="3r88:6KviS2JdW9y" resolve="FailCheck" />
+    <node concept="3F0ifn" id="6KviS2JdWa0" role="2wV5jI">
+      <property role="3F0ifm" value="fail" />
+    </node>
+  </node>
 </model>
 

@@ -174,7 +174,7 @@
     <property role="EcuMT" value="5001505504945880987" />
     <property role="3GE5qa" value="check" />
     <property role="TrG5h" value="AtPositionCheck" />
-    <property role="34LRSv" value="at position" />
+    <property role="34LRSv" value="be at position" />
     <ref role="1TJDcQ" node="4lCUG7OtrY4" resolve="AbstractCheck" />
     <node concept="1TJgyi" id="4lCUG7OtrZN" role="1TKVEl">
       <property role="IQ2nx" value="5001505504945881075" />
@@ -193,15 +193,36 @@
     <property role="EcuMT" value="5001505504945881033" />
     <property role="3GE5qa" value="check" />
     <property role="TrG5h" value="MustBeCheckKind" />
-    <property role="34LRSv" value="must be" />
+    <property role="34LRSv" value="must" />
     <ref role="1TJDcQ" node="4lCUG7OtrZ8" resolve="CheckKind" />
   </node>
   <node concept="1TIwiD" id="4lCUG7OtrZC">
     <property role="EcuMT" value="5001505504945881064" />
     <property role="3GE5qa" value="check" />
     <property role="TrG5h" value="CannotBeCheckKind" />
-    <property role="34LRSv" value="cannot be" />
+    <property role="34LRSv" value="cannot" />
     <ref role="1TJDcQ" node="4lCUG7OtrZ8" resolve="CheckKind" />
+  </node>
+  <node concept="1TIwiD" id="6KviS2Jcgz$">
+    <property role="EcuMT" value="7791028896441370852" />
+    <property role="3GE5qa" value="matches" />
+    <property role="TrG5h" value="NotLetterOrDigitMatch" />
+    <property role="34LRSv" value="notLetterOrDigit" />
+    <ref role="1TJDcQ" node="4lCUG7OszVD" resolve="AbstractElementaryMatch" />
+  </node>
+  <node concept="1TIwiD" id="6KviS2JcA9O">
+    <property role="EcuMT" value="7791028896441459316" />
+    <property role="3GE5qa" value="check" />
+    <property role="TrG5h" value="CannotRepeatCheck" />
+    <property role="34LRSv" value="not repeat" />
+    <ref role="1TJDcQ" node="4lCUG7OtrY4" resolve="AbstractCheck" />
+  </node>
+  <node concept="1TIwiD" id="6KviS2JdW9y">
+    <property role="EcuMT" value="7791028896441811554" />
+    <property role="3GE5qa" value="check" />
+    <property role="TrG5h" value="FailCheck" />
+    <property role="34LRSv" value="fail" />
+    <ref role="1TJDcQ" node="4lCUG7OtrY4" resolve="AbstractCheck" />
   </node>
 </model>
 
