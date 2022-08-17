@@ -416,8 +416,10 @@
     <node concept="_ixoA" id="2LaXqmXoJXv" role="_iOnB" />
     <node concept="1aga60" id="2LaXqmXwVHr" role="_iOnB">
       <property role="TrG5h" value="rule12" />
+      <property role="0Rz4W" value="-569948509" />
       <node concept="1aduha" id="2LaXqmXwVRn" role="1ahQXP">
         <node concept="2fGnzi" id="2LaXqmXwVR$" role="1aduh9">
+          <property role="0Rz4W" value="619144957" />
           <node concept="2fGnzd" id="2LaXqmXwVR_" role="2fGnxs">
             <node concept="30deo4" id="2LaXqmXwVZd" role="2fGnzS">
               <node concept="30d7iD" id="2LaXqmXwW3$" role="30dEs_">
@@ -464,6 +466,7 @@
           <node concept="2fGnzd" id="2LaXqmXwVRA" role="2fGnxs">
             <node concept="2fHqz8" id="2LaXqmXwWnB" role="2fGnzS" />
             <node concept="1af_rf" id="2LaXqmXwWDn" role="2fGnzA">
+              <property role="0Rz4W" value="267159332" />
               <ref role="1afhQb" node="2LaXqmXsaxs" resolve="rule3b" />
               <node concept="1afdae" id="2LaXqmXwWLr" role="1afhQ5">
                 <ref role="1afue_" node="2LaXqmXwVQZ" resolve="s" />
@@ -492,6 +495,7 @@
       <node concept="_fkuZ" id="2LaXqmXwX2X" role="_fkp5">
         <node concept="_fku$" id="2LaXqmXwX2Y" role="_fkur" />
         <node concept="1af_rf" id="2LaXqmXwX3n" role="_fkuY">
+          <property role="0Rz4W" value="-1095801175" />
           <ref role="1afhQb" node="2LaXqmXwVHr" resolve="rule12" />
           <node concept="30bdrP" id="2LaXqmXwX3C" role="1afhQ5">
             <property role="30bdrQ" value="Hauptstrasse" />
@@ -504,6 +508,7 @@
       <node concept="_fkuZ" id="2LaXqmXwXlO" role="_fkp5">
         <node concept="_fku$" id="2LaXqmXwXlP" role="_fkur" />
         <node concept="1af_rf" id="2LaXqmXwXlQ" role="_fkuY">
+          <property role="0Rz4W" value="-1635830080" />
           <ref role="1afhQb" node="2LaXqmXwVHr" resolve="rule12" />
           <node concept="30bdrP" id="2LaXqmXwXlR" role="1afhQ5">
             <property role="30bdrQ" value="III. Strasse" />
@@ -516,6 +521,7 @@
       <node concept="_fkuZ" id="2LaXqmXwXVx" role="_fkp5">
         <node concept="_fku$" id="2LaXqmXwXVy" role="_fkur" />
         <node concept="1af_rf" id="2LaXqmXwXVz" role="_fkuY">
+          <property role="0Rz4W" value="1171349278" />
           <ref role="1afhQb" node="2LaXqmXwVHr" resolve="rule12" />
           <node concept="30bdrP" id="2LaXqmXwXV$" role="1afhQ5">
             <property role="30bdrQ" value="MMM-Str 12" />
@@ -528,6 +534,7 @@
       <node concept="_fkuZ" id="2LaXqmXwYFW" role="_fkp5">
         <node concept="3uTIKI" id="2LaXqmXwZa_" role="_fkur" />
         <node concept="1af_rf" id="2LaXqmXwYFY" role="_fkuY">
+          <property role="0Rz4W" value="-1353199011" />
           <ref role="1afhQb" node="2LaXqmXwVHr" resolve="rule12" />
           <node concept="30bdrP" id="2LaXqmXwYFZ" role="1afhQ5">
             <property role="30bdrQ" value="HHHauptstrasse" />
