@@ -77,7 +77,7 @@
   <node concept="1TIwiD" id="4lCUG7OsQvq">
     <property role="EcuMT" value="5001505504945727450" />
     <property role="TrG5h" value="SpecificSequenceElementaryMatch" />
-    <property role="34LRSv" value="seq" />
+    <property role="34LRSv" value="str" />
     <property role="3GE5qa" value="matches" />
     <ref role="1TJDcQ" node="4lCUG7OszVD" resolve="AbstractMatch" />
     <node concept="1TJgyi" id="4lCUG7OsQvr" role="1TKVEl">
@@ -330,6 +330,25 @@
       <property role="20kJfa" value="matches" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="4lCUG7OszVD" resolve="AbstractMatch" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6KviS2KA7ya">
+    <property role="EcuMT" value="7791028896464926858" />
+    <property role="3GE5qa" value="matches" />
+    <property role="TrG5h" value="RepeatMatcher" />
+    <property role="34LRSv" value="repeat" />
+    <ref role="1TJDcQ" node="4lCUG7OszVD" resolve="AbstractMatch" />
+    <node concept="1TJgyj" id="6KviS2KA7yb" role="1TKVEi">
+      <property role="IQ2ns" value="7791028896464231110" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="match" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4lCUG7OszVD" resolve="AbstractMatch" />
+    </node>
+    <node concept="1TJgyi" id="6KviS2KA7yc" role="1TKVEl">
+      <property role="IQ2nx" value="7791028896464926860" />
+      <property role="TrG5h" value="howOften" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>
