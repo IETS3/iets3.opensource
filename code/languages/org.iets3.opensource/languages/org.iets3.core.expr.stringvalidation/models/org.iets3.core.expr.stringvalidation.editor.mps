@@ -15,8 +15,11 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -38,6 +41,10 @@
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
@@ -195,8 +202,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="4lCUG7Ot7Qi">
-    <property role="3GE5qa" value="clauses" />
-    <ref role="1XX52x" to="3r88:4lCUG7OsY7m" resolve="ValidationClause" />
+    <property role="3GE5qa" value="clauses.occurencebased" />
+    <ref role="1XX52x" to="3r88:4lCUG7OsY7m" resolve="OccurenceBasedValidationClause" />
     <node concept="3EZMnI" id="4lCUG7Ot7Qk" role="2wV5jI">
       <node concept="1kIj98" id="4lCUG7Othpo" role="3EZMnx">
         <node concept="3F1sOY" id="4lCUG7Othpz" role="1kIj9b">
@@ -217,10 +224,11 @@
     </node>
   </node>
   <node concept="24kQdi" id="4lCUG7OtenI">
-    <property role="3GE5qa" value="clauses" />
+    <property role="3GE5qa" value="clauses.occurencebased" />
     <ref role="1XX52x" to="3r88:4lCUG7Ot7PJ" resolve="AbstractOccurrenceConstraint" />
     <node concept="PMmxH" id="4lCUG7OtenK" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
     </node>
   </node>
   <node concept="PKFIW" id="4lCUG7OthpD">
@@ -231,23 +239,23 @@
     </node>
   </node>
   <node concept="24kQdi" id="4lCUG7OtrYX">
-    <property role="3GE5qa" value="check" />
+    <property role="3GE5qa" value="check.occurence" />
     <ref role="1XX52x" to="3r88:4lCUG7OtrYr" resolve="AtPositionCheck" />
     <node concept="3EZMnI" id="4lCUG7OtrZ2" role="2wV5jI">
       <node concept="2iRfu4" id="4lCUG7OtrZ3" role="2iSdaV" />
       <node concept="3F1sOY" id="4lCUG7OtrZZ" role="3EZMnx">
         <ref role="1NtTu8" to="3r88:4lCUG7OtrZL" resolve="kind" />
       </node>
-      <node concept="PMmxH" id="4lCUG7Ots08" role="3EZMnx">
+      <node concept="PMmxH" id="6KviS2KvUYv" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
-      <node concept="3F0A7n" id="4lCUG7Ots0f" role="3EZMnx">
-        <ref role="1NtTu8" to="3r88:4lCUG7OtrZN" resolve="pos" />
+      <node concept="3F1sOY" id="6KviS2Kv9sl" role="3EZMnx">
+        <ref role="1NtTu8" to="3r88:6KviS2Ku$hC" resolve="pos" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="4lCUG7OtrZ$">
-    <property role="3GE5qa" value="check" />
+    <property role="3GE5qa" value="check.kind" />
     <ref role="1XX52x" to="3r88:4lCUG7OtrZ8" resolve="CheckKind" />
     <node concept="PMmxH" id="4lCUG7OtrZA" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -262,7 +270,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6KviS2JcAaE">
-    <property role="3GE5qa" value="check" />
+    <property role="3GE5qa" value="check.occurence" />
     <ref role="1XX52x" to="3r88:6KviS2JcA9O" resolve="CannotRepeatCheck" />
     <node concept="3EZMnI" id="6KviS2JcUFI" role="2wV5jI">
       <node concept="2iRfu4" id="6KviS2JcUFJ" role="2iSdaV" />
@@ -279,6 +287,93 @@
     <ref role="1XX52x" to="3r88:6KviS2JdW9y" resolve="FailCheck" />
     <node concept="3F0ifn" id="6KviS2JdWa0" role="2wV5jI">
       <property role="3F0ifm" value="fail" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KviS2Ku$ar">
+    <property role="3GE5qa" value="check.pos" />
+    <ref role="1XX52x" to="3r88:6KviS2Ku$9Y" resolve="PositionIndicatorIndex" />
+    <node concept="3EZMnI" id="6KviS2Ku$aw" role="2wV5jI">
+      <node concept="2iRfu4" id="6KviS2Ku$ax" role="2iSdaV" />
+      <node concept="3F0ifn" id="6KviS2Ku$at" role="3EZMnx">
+        <property role="3F0ifm" value="index" />
+      </node>
+      <node concept="3F0A7n" id="6KviS2Ku$aD" role="3EZMnx">
+        <ref role="1NtTu8" to="3r88:6KviS2Ku$9Z" resolve="value" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KviS2KvaIH">
+    <property role="3GE5qa" value="check.pos" />
+    <ref role="1XX52x" to="3r88:6KviS2KvaIh" resolve="PositionIndicatorFirst" />
+    <node concept="3F0ifn" id="6KviS2KvaIJ" role="2wV5jI">
+      <property role="3F0ifm" value="first" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KviS2Kvb35">
+    <property role="3GE5qa" value="check.pos" />
+    <ref role="1XX52x" to="3r88:6KviS2Kvb2D" resolve="PositionIndicatorLast" />
+    <node concept="3F0ifn" id="6KviS2Kvb37" role="2wV5jI">
+      <property role="3F0ifm" value="last" />
+    </node>
+  </node>
+  <node concept="22mcaB" id="6KviS2Kw8lP">
+    <property role="3GE5qa" value="clauses.occurencebased" />
+    <ref role="aqKnT" to="3r88:4lCUG7OsY7m" resolve="OccurenceBasedValidationClause" />
+    <node concept="22hDWj" id="6KviS2Kw8lQ" role="22hAXT" />
+  </node>
+  <node concept="24kQdi" id="6KviS2KxRPw">
+    <property role="3GE5qa" value="clauses.positionbased" />
+    <ref role="1XX52x" to="3r88:6KviS2KxsKA" resolve="PositionBasedValidationClause" />
+    <node concept="3EZMnI" id="6KviS2KxRPI" role="2wV5jI">
+      <node concept="2iRfu4" id="6KviS2KxRPJ" role="2iSdaV" />
+      <node concept="3F0ifn" id="6KviS2KyoXc" role="3EZMnx">
+        <property role="3F0ifm" value="at position" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F1sOY" id="6KviS2KxRPF" role="3EZMnx">
+        <ref role="1NtTu8" to="3r88:6KviS2KxsKE" resolve="pos" />
+      </node>
+      <node concept="3F1sOY" id="6KviS2KyOjB" role="3EZMnx">
+        <ref role="1NtTu8" to="3r88:6KviS2KyOjs" resolve="kind" />
+      </node>
+      <node concept="3F0ifn" id="6KviS2KzgrI" role="3EZMnx">
+        <property role="3F0ifm" value="be" />
+      </node>
+      <node concept="3F1sOY" id="6KviS2KyOjL" role="3EZMnx">
+        <ref role="1NtTu8" to="3r88:6KviS2KyOjv" resolve="match" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KviS2Kz2Qd">
+    <property role="3GE5qa" value="matches" />
+    <ref role="1XX52x" to="3r88:6KviS2Kz1XR" resolve="LetterMatch" />
+    <node concept="PMmxH" id="6KviS2Kz2Qf" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KviS2Kz2QF">
+    <property role="3GE5qa" value="matches" />
+    <ref role="1XX52x" to="3r88:6KviS2Kz1XS" resolve="DigitMatch" />
+    <node concept="PMmxH" id="6KviS2Kz2QK" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KviS2KztFy">
+    <property role="3GE5qa" value="matches" />
+    <ref role="1XX52x" to="3r88:6KviS2KztF5" resolve="OneOfMatch" />
+    <node concept="3EZMnI" id="6KviS2KztFB" role="2wV5jI">
+      <node concept="2iRfu4" id="6KviS2KztFC" role="2iSdaV" />
+      <node concept="3F0ifn" id="6KviS2KztF$" role="3EZMnx">
+        <property role="3F0ifm" value="one of" />
+      </node>
+      <node concept="3F2HdR" id="6KviS2KztFS" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="3r88:6KviS2KztF6" resolve="matches" />
+        <node concept="2iRfu4" id="6KviS2KzI6G" role="2czzBx" />
+        <node concept="3vyZuw" id="6KviS2KztG1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
