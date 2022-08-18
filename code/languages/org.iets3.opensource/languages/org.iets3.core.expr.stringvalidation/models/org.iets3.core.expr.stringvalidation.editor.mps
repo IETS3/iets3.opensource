@@ -534,5 +534,34 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2LaXqmX$cks">
+    <property role="3GE5qa" value="clauses.positionbased" />
+    <ref role="1XX52x" to="3r88:2LaXqmX$cjT" resolve="RangeBasedValidationClause" />
+    <node concept="3EZMnI" id="2LaXqmX$cku" role="2wV5jI">
+      <node concept="2iRfu4" id="2LaXqmX$ckv" role="2iSdaV" />
+      <node concept="3F0ifn" id="2LaXqmX$ckw" role="3EZMnx">
+        <property role="3F0ifm" value="range" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F1sOY" id="2LaXqmX$ckx" role="3EZMnx">
+        <ref role="1NtTu8" to="3r88:2LaXqmX$cjU" resolve="posStart" />
+      </node>
+      <node concept="3F0ifn" id="2LaXqmX$ckN" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="2LaXqmX$cl3" role="3EZMnx">
+        <ref role="1NtTu8" to="3r88:2LaXqmX$cjX" resolve="posEnd" />
+      </node>
+      <node concept="3F1sOY" id="2LaXqmX$cky" role="3EZMnx">
+        <ref role="1NtTu8" to="3r88:2LaXqmX$cjV" resolve="kind" />
+      </node>
+      <node concept="3F0ifn" id="2LaXqmX$ckz" role="3EZMnx">
+        <property role="3F0ifm" value="be" />
+      </node>
+      <node concept="3F1sOY" id="2LaXqmX$ck$" role="3EZMnx">
+        <ref role="1NtTu8" to="3r88:2LaXqmX$cjW" resolve="match" />
+      </node>
+    </node>
+  </node>
 </model>
 

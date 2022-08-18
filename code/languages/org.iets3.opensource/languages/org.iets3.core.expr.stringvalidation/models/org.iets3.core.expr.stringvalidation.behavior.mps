@@ -380,5 +380,26 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="2LaXqmX$gsf">
+    <property role="3GE5qa" value="clauses.positionbased" />
+    <ref role="13h7C2" to="3r88:2LaXqmX$cjT" resolve="RangeBasedValidationClause" />
+    <node concept="13hLZK" id="2LaXqmX$gsg" role="13h7CW">
+      <node concept="3clFbS" id="2LaXqmX$gsh" role="2VODD2">
+        <node concept="3clFbF" id="2LaXqmX$gsq" role="3cqZAp">
+          <node concept="2OqwBi" id="2LaXqmX$gss" role="3clFbG">
+            <node concept="2OqwBi" id="2LaXqmX$gst" role="2Oq$k0">
+              <node concept="13iPFW" id="2LaXqmX$gsu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2LaXqmX$gsv" role="2OqNvi">
+                <ref role="3Tt5mk" to="3r88:2LaXqmX$cjV" resolve="kind" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="2LaXqmX$gsw" role="2OqNvi">
+              <ref role="1A9B2P" to="3r88:4lCUG7OtrZ9" resolve="MustBeCheckKind" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

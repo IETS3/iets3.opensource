@@ -365,5 +365,40 @@
       <ref role="20lvS9" node="4lCUG7OszVD" resolve="AbstractMatch" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2LaXqmX$cjT">
+    <property role="EcuMT" value="3191633378144208121" />
+    <property role="TrG5h" value="RangeBasedValidationClause" />
+    <property role="3GE5qa" value="clauses.positionbased" />
+    <property role="34LRSv" value="range" />
+    <ref role="1TJDcQ" node="6KviS2KwOnF" resolve="AbstractValidationClause" />
+    <node concept="1TJgyj" id="2LaXqmX$cjU" role="1TKVEi">
+      <property role="IQ2ns" value="7791028896463703082" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="posStart" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6KviS2Ku$9X" resolve="AbstractPositionIndicator" />
+    </node>
+    <node concept="1TJgyj" id="2LaXqmX$cjX" role="1TKVEi">
+      <property role="IQ2ns" value="3191633378144208125" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="posEnd" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6KviS2Ku$9X" resolve="AbstractPositionIndicator" />
+    </node>
+    <node concept="1TJgyj" id="2LaXqmX$cjV" role="1TKVEi">
+      <property role="IQ2ns" value="7791028896464061660" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="kind" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4lCUG7OtrZ8" resolve="CheckKind" />
+    </node>
+    <node concept="1TJgyj" id="2LaXqmX$cjW" role="1TKVEi">
+      <property role="IQ2ns" value="7791028896464061663" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="match" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4lCUG7OszVD" resolve="AbstractMatch" />
+    </node>
+  </node>
 </model>
 
