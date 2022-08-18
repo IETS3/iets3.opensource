@@ -343,7 +343,7 @@
             </node>
             <node concept="3cpWs3" id="6KviS2K_JRk" role="3uHU7B">
               <node concept="Xl_RD" id="6KviS2K_J_2" role="3uHU7B">
-                <property role="Xl_RC" value="seq[" />
+                <property role="Xl_RC" value="str[" />
               </node>
               <node concept="2OqwBi" id="6KviS2K_K4U" role="3uHU7w">
                 <node concept="13iPFW" id="6KviS2K_JRS" role="2Oq$k0" />
