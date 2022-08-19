@@ -18,6 +18,8 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
     <import index="lxua" ref="r:3f5611d4-07cb-45af-ab07-b8a2cc5e364b(org.iets3.core.expr.stringvalidation.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -3123,6 +3125,48 @@
                 <ref role="3cqZAo" node="4lCUG7Ouef1" resolve="errors" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="3dTPcTTj0Qq" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="3r88:3dTPcTThCWF" resolve="StringResultMessagesOp" />
+      <node concept="3vetai" id="3dTPcTTj3FI" role="3vQZUl">
+        <node concept="3EllGN" id="3dTPcTTj3FW" role="3vdyny">
+          <node concept="2OqwBi" id="3dTPcTTj3FX" role="3ElVtu">
+            <node concept="oxGPV" id="3dTPcTTj3FY" role="2Oq$k0" />
+            <node concept="2qgKlT" id="3dTPcTTj3FZ" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+            </node>
+          </node>
+          <node concept="TvHiN" id="3dTPcTTj3G0" role="3ElQJh" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="3dTPcTTiSTh" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="3r88:3dTPcTThmny" resolve="StringResultOkOp" />
+      <node concept="3vetai" id="3dTPcTTiVuM" role="3vQZUl">
+        <node concept="2OqwBi" id="3dTPcTTiWYo" role="3vdyny">
+          <node concept="1eOMI4" id="3dTPcTTiWyo" role="2Oq$k0">
+            <node concept="10QFUN" id="3dTPcTTiWyn" role="1eOMHV">
+              <node concept="3EllGN" id="3dTPcTTiWyi" role="10QFUP">
+                <node concept="2OqwBi" id="3dTPcTTiWyj" role="3ElVtu">
+                  <node concept="oxGPV" id="3dTPcTTiWyk" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="3dTPcTTiWyl" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                  </node>
+                </node>
+                <node concept="TvHiN" id="3dTPcTTiWym" role="3ElQJh" />
+              </node>
+              <node concept="3uibUv" id="3dTPcTTiWzW" role="10QFUM">
+                <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
+              </node>
+            </node>
+          </node>
+          <node concept="liA8E" id="3dTPcTTiXEd" role="2OqNvi">
+            <ref role="37wK5l" to="33ny:~Collection.isEmpty()" resolve="isEmpty" />
           </node>
         </node>
       </node>

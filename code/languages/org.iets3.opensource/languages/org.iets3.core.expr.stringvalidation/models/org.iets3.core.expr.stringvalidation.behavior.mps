@@ -7,6 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="3r88" ref="r:0561db97-8a79-45b6-97f8-a5fd9b986b44(org.iets3.core.expr.stringvalidation.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
@@ -399,6 +400,44 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3dTPcTThAXF">
+    <ref role="13h7C2" to="3r88:3dTPcTThmny" resolve="StringResultOkOp" />
+    <node concept="13hLZK" id="3dTPcTThAXG" role="13h7CW">
+      <node concept="3clFbS" id="3dTPcTThAXH" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3dTPcTThAXQ" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="pbu6:6kR0qIbI2yi" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="3dTPcTThAXR" role="1B3o_S" />
+      <node concept="3clFbS" id="3dTPcTThAXU" role="3clF47">
+        <node concept="3clFbF" id="3dTPcTThAXX" role="3cqZAp">
+          <node concept="Xl_RD" id="3dTPcTThAXW" role="3clFbG">
+            <property role="Xl_RC" value="ok" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3dTPcTThAXV" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3dTPcTThDeU">
+    <ref role="13h7C2" to="3r88:3dTPcTThCWF" resolve="StringResultMessagesOp" />
+    <node concept="13hLZK" id="3dTPcTThDeV" role="13h7CW">
+      <node concept="3clFbS" id="3dTPcTThDeW" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3dTPcTThDf5" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="pbu6:6kR0qIbI2yi" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="3dTPcTThDf6" role="1B3o_S" />
+      <node concept="3clFbS" id="3dTPcTThDf9" role="3clF47">
+        <node concept="3clFbF" id="3dTPcTThDfc" role="3cqZAp">
+          <node concept="Xl_RD" id="3dTPcTThDfb" role="3clFbG">
+            <property role="Xl_RC" value="messages" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3dTPcTThDfa" role="3clF45" />
     </node>
   </node>
 </model>

@@ -433,5 +433,28 @@
     <property role="34LRSv" value="number" />
     <ref role="1TJDcQ" node="4lCUG7OszVD" resolve="AbstractMatch" />
   </node>
+  <node concept="1TIwiD" id="3dTPcTTh7Np">
+    <property role="EcuMT" value="3709229751379197145" />
+    <property role="TrG5h" value="ValidateStringResultType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3dTPcTThmny">
+    <property role="EcuMT" value="4982093843543755776" />
+    <property role="TrG5h" value="StringResultOkOp" />
+    <property role="34LRSv" value="ok" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3dTPcTThmnz" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3dTPcTThCWF">
+    <property role="EcuMT" value="3709229751379256802" />
+    <property role="TrG5h" value="StringResultMessagesOp" />
+    <property role="34LRSv" value="errors" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3dTPcTThCWG" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
 </model>
 

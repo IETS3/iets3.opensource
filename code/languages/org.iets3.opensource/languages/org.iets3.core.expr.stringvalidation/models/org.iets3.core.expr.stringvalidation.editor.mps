@@ -176,6 +176,12 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="3dTPcTThWRr" role="3EZMnx">
+        <property role="3F0ifm" value="|" />
+        <node concept="11L4FC" id="3dTPcTTiuK9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="4lCUG7OsQvR">
@@ -609,6 +615,25 @@
     <ref role="1XX52x" to="3r88:3dTPcTTfIg4" resolve="NumberMatch" />
     <node concept="PMmxH" id="3dTPcTTfMOr" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3dTPcTTh7NO">
+    <ref role="1XX52x" to="3r88:3dTPcTTh7Np" resolve="ValidateStringResultType" />
+    <node concept="3F0ifn" id="3dTPcTTh7NQ" role="2wV5jI">
+      <property role="3F0ifm" value="stringvalidationresult" />
+      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3dTPcTThmnZ">
+    <ref role="1XX52x" to="3r88:3dTPcTThmny" resolve="StringResultOkOp" />
+    <node concept="3F0ifn" id="3dTPcTThmo1" role="2wV5jI">
+      <property role="3F0ifm" value="ok" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3dTPcTThCX7">
+    <ref role="1XX52x" to="3r88:3dTPcTThCWF" resolve="StringResultMessagesOp" />
+    <node concept="3F0ifn" id="3dTPcTThCX9" role="2wV5jI">
+      <property role="3F0ifm" value="errors" />
     </node>
   </node>
 </model>

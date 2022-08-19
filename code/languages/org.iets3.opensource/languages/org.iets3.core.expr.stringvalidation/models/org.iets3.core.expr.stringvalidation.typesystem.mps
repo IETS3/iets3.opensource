@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
     <import index="3r88" ref="r:0561db97-8a79-45b6-97f8-a5fd9b986b44(org.iets3.core.expr.stringvalidation.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -111,16 +111,7 @@
         <node concept="mw_s8" id="3dTPcTRND7v" role="1ZfhKB">
           <node concept="2pJPEk" id="3dTPcTRND7p" role="mwGJk">
             <node concept="2pJPED" id="3dTPcTRND7s" role="2pJPEn">
-              <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
-              <node concept="2pIpSj" id="3dTPcTRND7V" role="2pJxcM">
-                <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
-                <node concept="36biLy" id="3dTPcTRND88" role="28nt2d">
-                  <node concept="2YIFZM" id="3dTPcTRNDaE" role="36biLW">
-                    <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
-                    <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-                  </node>
-                </node>
-              </node>
+              <ref role="2pJxaS" to="3r88:3dTPcTTh7Np" resolve="ValidateStringResultType" />
             </node>
           </node>
         </node>
@@ -192,6 +183,64 @@
     <node concept="1YaCAy" id="6KviS2JpKoH" role="1YuTPh">
       <property role="TrG5h" value="ssem" />
       <ref role="1YaFvo" to="3r88:4lCUG7OsQvq" resolve="SpecificSequenceElementaryMatch" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3dTPcTThmou">
+    <property role="TrG5h" value="typeof_StringResultOkOp" />
+    <node concept="3clFbS" id="3dTPcTThmov" role="18ibNy">
+      <node concept="1Z5TYs" id="3dTPcTThmxD" role="3cqZAp">
+        <node concept="mw_s8" id="3dTPcTThmxU" role="1ZfhKB">
+          <node concept="2YIFZM" id="3dTPcTThm$n" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3dTPcTThmxG" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3dTPcTThmo_" role="mwGJk">
+            <node concept="1YBJjd" id="3dTPcTThmqt" role="1Z2MuG">
+              <ref role="1YBMHb" node="3dTPcTThmox" resolve="stringResultOkOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3dTPcTThmox" role="1YuTPh">
+      <property role="TrG5h" value="stringResultOkOp" />
+      <ref role="1YaFvo" to="3r88:3dTPcTThmny" resolve="StringResultOkOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3dTPcTThCXA">
+    <property role="TrG5h" value="typeof_StringResultMessagesOp" />
+    <node concept="3clFbS" id="3dTPcTThCXB" role="18ibNy">
+      <node concept="1Z5TYs" id="3dTPcTThD8p" role="3cqZAp">
+        <node concept="mw_s8" id="3dTPcTThD8H" role="1ZfhKB">
+          <node concept="2pJPEk" id="3dTPcTThD8D" role="mwGJk">
+            <node concept="2pJPED" id="3dTPcTThD8F" role="2pJPEn">
+              <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
+              <node concept="2pIpSj" id="3dTPcTThD9a" role="2pJxcM">
+                <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
+                <node concept="36biLy" id="3dTPcTThD9n" role="28nt2d">
+                  <node concept="2YIFZM" id="3dTPcTThDdV" role="36biLW">
+                    <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
+                    <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3dTPcTThD8s" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3dTPcTThCXH" role="mwGJk">
+            <node concept="1YBJjd" id="3dTPcTThCZ_" role="1Z2MuG">
+              <ref role="1YBMHb" node="3dTPcTThCXD" resolve="stringResultMessagesOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3dTPcTThCXD" role="1YuTPh">
+      <property role="TrG5h" value="stringResultMessagesOp" />
+      <ref role="1YaFvo" to="3r88:3dTPcTThCWF" resolve="StringResultMessagesOp" />
     </node>
   </node>
 </model>
