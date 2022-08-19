@@ -39,11 +39,16 @@
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
       </concept>
+      <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
+        <child id="5115872837157187954" name="expr" index="30bsDf" />
+      </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156802410" name="org.iets3.core.expr.base.structure.LogicalNotExpression" flags="ng" index="30czhn" />
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156724025" name="org.iets3.core.expr.base.structure.LogicalAndExpression" flags="ng" index="30deo4" />
+      <concept id="5115872837156723899" name="org.iets3.core.expr.base.structure.LogicalOrExpression" flags="ng" index="30deu6" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
@@ -89,6 +94,9 @@
       <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
+      </concept>
+      <concept id="842813880843519728" name="org.iets3.core.expr.simpleTypes.structure.StringContainsTarget" flags="ng" index="1gK00M">
+        <child id="842813880843519732" name="value" index="1gK00R" />
       </concept>
       <concept id="5994308065090560488" name="org.iets3.core.expr.simpleTypes.structure.StringLengthTarget" flags="ng" index="1uMQU5" />
     </language>
@@ -235,11 +243,11 @@
         <property role="2L6SOq" value="-" />
       </node>
     </node>
-    <node concept="_ixoA" id="6KviS2JbJpP" role="_iOnB" />
+    <node concept="_ixoA" id="3dTPcTRNmML" role="_iOnB" />
     <node concept="_ixoA" id="4lCUG7OszdU" role="_iOnB" />
     <node concept="1aga60" id="2LaXqmVNiub" role="_iOnB">
       <property role="TrG5h" value="rule6a" />
-      <property role="0Rz4W" value="-627654667" />
+      <property role="0Rz4W" value="1375742196" />
       <node concept="1ahQXy" id="2LaXqmVNi_Z" role="1ahQWs">
         <property role="TrG5h" value="s" />
         <node concept="30bdrU" id="2LaXqmVNiAe" role="3ix9CU" />
@@ -251,7 +259,7 @@
         <node concept="2L6KGn" id="2LaXqmVNiAU" role="2L6KGm">
           <node concept="2L79uL" id="2LaXqmVNiAV" role="2L79uM" />
           <node concept="3sxNca" id="2LaXqmVNiAW" role="2L79uO">
-            <property role="3sxNcc" value="3" />
+            <property role="3sxNcc" value="2" />
             <node concept="3s$PjS" id="2LaXqmVNiBq" role="3s$D56" />
           </node>
           <node concept="33a8By" id="2LaXqmVNiBx" role="2L7ll4">
@@ -271,7 +279,7 @@
     </node>
     <node concept="1aga60" id="2LaXqmVNk2o" role="_iOnB">
       <property role="TrG5h" value="rule6b" />
-      <property role="0Rz4W" value="-546930974" />
+      <property role="0Rz4W" value="-1163035180" />
       <node concept="1ahQXy" id="2LaXqmVNk2p" role="1ahQWs">
         <property role="TrG5h" value="s" />
         <node concept="30bdrU" id="2LaXqmVNk2q" role="3ix9CU" />
@@ -280,7 +288,7 @@
         <node concept="OjmMv" id="2LaXqmVNk2$" role="1w35rA">
           <node concept="19SGf9" id="2LaXqmVNk2_" role="OjmMu">
             <node concept="19SUe$" id="2LaXqmVNk2A" role="19SJt6">
-              <property role="19SUeA" value="Der Familienname enthält 2 Ziffern, die nicht unmittelbar hintereinander stehen  -&gt; Das verstehe ich noch nicht so ganz" />
+              <property role="19SUeA" value="Der Familienname enthält 2 Ziffern, die nicht unmittelbar hintereinander stehen  -&gt; Das verstehe ich noch nicht so ganz&#10;Mit Zahl = mehrereZiffernAmStück, die Anzahl der ZAHLEN in String ist &lt;= 1" />
             </node>
           </node>
         </node>
@@ -317,7 +325,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="2LaXqmVNjmT" role="_fkp5">
-        <node concept="_fku$" id="2LaXqmVNjmU" role="_fkur" />
+        <node concept="3uTIKI" id="3dTPcTRNlRW" role="_fkur" />
         <node concept="1af_rf" id="2LaXqmVNjmV" role="_fkuY">
           <property role="0Rz4W" value="1517847504" />
           <ref role="1afhQb" node="2LaXqmVNiub" resolve="rule6a" />
@@ -1434,6 +1442,61 @@
           <node concept="19SGf9" id="6KviS2JdW8h" role="OjmMu">
             <node concept="19SUe$" id="6KviS2JdW8i" role="19SJt6">
               <property role="19SUeA" value="Vor und nach Bindestrichen sind keine Leerzeichen erlaubt." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1aga60" id="3dTPcTRNkkL" role="_iOnB">
+      <property role="TrG5h" value="rule4b" />
+      <property role="0Rz4W" value="859708138" />
+      <node concept="1ahQXy" id="3dTPcTRNkkM" role="1ahQWs">
+        <property role="TrG5h" value="s" />
+        <node concept="30bdrU" id="3dTPcTRNkkN" role="3ix9CU" />
+      </node>
+      <node concept="1z9TsT" id="3dTPcTRNkl5" role="lGtFl">
+        <node concept="OjmMv" id="3dTPcTRNkl6" role="1w35rA">
+          <node concept="19SGf9" id="3dTPcTRNkl7" role="OjmMu">
+            <node concept="19SUe$" id="3dTPcTRNkl8" role="19SJt6">
+              <property role="19SUeA" value="Vor und nach Bindestrichen sind keine Leerzeichen erlaubt." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30czhn" id="3dTPcTRNkE2" role="1ahQXP">
+        <node concept="30bsCy" id="3dTPcTRNkEh" role="30czhm">
+          <node concept="30deu6" id="3dTPcTRNk_v" role="30bsDf">
+            <node concept="30deu6" id="3dTPcTRNk_w" role="30dEsF">
+              <node concept="1QScDb" id="3dTPcTRNk_x" role="30dEsF">
+                <node concept="1afdae" id="3dTPcTRNkx_" role="30czhm">
+                  <ref role="1afue_" node="3dTPcTRNkkM" resolve="s" />
+                </node>
+                <node concept="1gK00M" id="3dTPcTRNkyx" role="1QScD9">
+                  <node concept="30bdrP" id="3dTPcTRNkz1" role="1gK00R">
+                    <property role="30bdrQ" value=" -" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1QScDb" id="3dTPcTRNk_y" role="30dEs_">
+                <node concept="1afdae" id="3dTPcTRNk$z" role="30czhm">
+                  <ref role="1afue_" node="3dTPcTRNkkM" resolve="s" />
+                </node>
+                <node concept="1gK00M" id="3dTPcTRNk$x" role="1QScD9">
+                  <node concept="30bdrP" id="3dTPcTRNk$y" role="1gK00R">
+                    <property role="30bdrQ" value="- " />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1QScDb" id="3dTPcTRNky3" role="30dEs_">
+              <node concept="1gK00M" id="3dTPcTRNkAu" role="1QScD9">
+                <node concept="30bdrP" id="3dTPcTRNkAv" role="1gK00R">
+                  <property role="30bdrQ" value=" - " />
+                </node>
+              </node>
+              <node concept="1afdae" id="3dTPcTRNkAw" role="30czhm">
+                <ref role="1afue_" node="3dTPcTRNkkM" resolve="s" />
+              </node>
             </node>
           </node>
         </node>

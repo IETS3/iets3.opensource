@@ -153,7 +153,7 @@
     <property role="EcuMT" value="5001505504945798512" />
     <property role="3GE5qa" value="clauses.occurencebased" />
     <property role="TrG5h" value="IfExistsOccurenceConstraint" />
-    <property role="34LRSv" value="if exists" />
+    <property role="34LRSv" value="each" />
     <ref role="1TJDcQ" node="4lCUG7Ot7PJ" resolve="AbstractOccurrenceConstraint" />
   </node>
   <node concept="1TIwiD" id="4lCUG7OtrY4">
@@ -223,7 +223,7 @@
     <property role="EcuMT" value="7791028896441811554" />
     <property role="3GE5qa" value="check" />
     <property role="TrG5h" value="FailCheck" />
-    <property role="34LRSv" value="fail" />
+    <property role="34LRSv" value="not allowed" />
     <ref role="1TJDcQ" node="4lCUG7OtrY4" resolve="AbstractOccurenceBasedCheck" />
   </node>
   <node concept="1TIwiD" id="6KviS2Ku$9X">

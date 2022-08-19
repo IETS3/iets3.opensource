@@ -369,8 +369,8 @@
   <node concept="24kQdi" id="6KviS2JdW9Y">
     <property role="3GE5qa" value="check" />
     <ref role="1XX52x" to="3r88:6KviS2JdW9y" resolve="FailCheck" />
-    <node concept="3F0ifn" id="6KviS2JdWa0" role="2wV5jI">
-      <property role="3F0ifm" value="fail" />
+    <node concept="PMmxH" id="3dTPcTRNnnU" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="6KviS2Ku$ar">
