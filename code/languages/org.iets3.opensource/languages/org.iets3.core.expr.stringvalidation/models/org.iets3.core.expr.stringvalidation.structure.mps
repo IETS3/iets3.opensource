@@ -414,5 +414,24 @@
       <ref role="20lvS9" node="4lCUG7OszVD" resolve="AbstractMatch" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3dTPcTTdvOa">
+    <property role="EcuMT" value="3709229751378246922" />
+    <property role="3GE5qa" value="check.occurence" />
+    <property role="TrG5h" value="MaxCountCheck" />
+    <property role="34LRSv" value="max count" />
+    <ref role="1TJDcQ" node="4lCUG7OtrY4" resolve="AbstractOccurenceBasedCheck" />
+    <node concept="1TJgyi" id="3dTPcTTdvOb" role="1TKVEl">
+      <property role="IQ2nx" value="3709229751378246923" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3dTPcTTfIg4">
+    <property role="EcuMT" value="3709229751378830340" />
+    <property role="3GE5qa" value="matches" />
+    <property role="TrG5h" value="NumberMatch" />
+    <property role="34LRSv" value="number" />
+    <ref role="1TJDcQ" node="4lCUG7OszVD" resolve="AbstractMatch" />
+  </node>
 </model>
 
