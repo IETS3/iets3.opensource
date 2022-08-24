@@ -30,6 +30,7 @@
     <import index="byea" ref="r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)" />
     <import index="rpit" ref="r:e29c70b2-feb7-465e-9534-7fdb395635c2(org.iets3.core.expr.data.typesystem)" />
     <import index="2e51" ref="r:e3651d26-951a-4ffc-9443-e8b8de452a77(org.iets3.core.expr.simpleTypes.constraints)" />
+    <import index="yjde" ref="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
@@ -7005,6 +7006,7 @@
             <property role="TrG5h" value="monster" />
           </node>
         </node>
+        <node concept="_ixoA" id="6U$JvfrGdqj" role="_iOnC" />
         <node concept="_ixoA" id="3gKGtj9bXyc" role="_iOnC" />
         <node concept="2zPypq" id="3gKGtj9bXyd" role="_iOnC">
           <property role="TrG5h" value="ocean" />
@@ -7085,6 +7087,98 @@
           <property role="1WsWdv" value="Valued Enums" />
         </node>
         <node concept="_ixoA" id="3gKGtj9bXyP" role="_iOnC" />
+        <node concept="5mgZ8" id="6U$JvfrGh7j" role="_iOnC">
+          <property role="TrG5h" value="withDuplicatedNumberValues" />
+          <node concept="mLuIC" id="6U$JvfrGhck" role="3c3ckp" />
+          <node concept="5mgYR" id="6U$JvfrGhcx" role="5mgYi">
+            <property role="TrG5h" value="one" />
+            <node concept="30bXRB" id="6U$JvfrGhcF" role="Y$80S">
+              <property role="30bXRw" value="1" />
+            </node>
+          </node>
+          <node concept="5mgYR" id="6U$JvfrGhd1" role="5mgYi">
+            <property role="TrG5h" value="two" />
+            <node concept="30bXRB" id="6U$JvfrGhdy" role="Y$80S">
+              <property role="30bXRw" value="1" />
+              <node concept="7CXmI" id="6U$JvfrGhe0" role="lGtFl">
+                <node concept="1TM$A" id="6U$JvfrGhor" role="7EUXB">
+                  <node concept="2PYRI3" id="6U$JvfrGhos" role="3lydEf">
+                    <ref role="39XzEq" to="yjde:bAwKVX3LP6" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="5mgZ8" id="6U$JvfrGhtG" role="_iOnC">
+          <property role="TrG5h" value="withDuplicatedStringValues" />
+          <node concept="5mgYR" id="6U$JvfrGhy_" role="5mgYi">
+            <property role="TrG5h" value="one" />
+            <node concept="30bdrP" id="6U$JvfrGhyH" role="Y$80S">
+              <property role="30bdrQ" value="I am one" />
+            </node>
+          </node>
+          <node concept="5mgYR" id="6U$JvfrGhzo" role="5mgYi">
+            <property role="TrG5h" value="two" />
+            <node concept="30bdrP" id="6U$JvfrGhzD" role="Y$80S">
+              <property role="30bdrQ" value="I am one" />
+              <node concept="7CXmI" id="6U$JvfrGhzZ" role="lGtFl">
+                <node concept="1TM$A" id="6U$JvfrGhIs" role="7EUXB">
+                  <node concept="2PYRI3" id="6U$JvfrGhIt" role="3lydEf">
+                    <ref role="39XzEq" to="yjde:bAwKVX3LP6" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="30bdrU" id="6U$JvfrGhys" role="3c3ckp" />
+        </node>
+        <node concept="5mgZ8" id="6U$JvfrGhNq" role="_iOnC">
+          <property role="TrG5h" value="withDuplicatedBooleans" />
+          <node concept="2vmvy5" id="6U$JvfrGhSy" role="3c3ckp" />
+          <node concept="5mgYR" id="6U$JvfrGhSJ" role="5mgYi">
+            <property role="TrG5h" value="on" />
+            <node concept="2vmpnb" id="6U$JvfrGhT5" role="Y$80S" />
+          </node>
+          <node concept="5mgYR" id="6U$JvfrGhSP" role="5mgYi">
+            <property role="TrG5h" value="off" />
+            <node concept="2vmpnb" id="6U$JvfrGhTm" role="Y$80S">
+              <node concept="7CXmI" id="6U$JvfrGhTy" role="lGtFl">
+                <node concept="1TM$A" id="6U$JvfrGi4t" role="7EUXB">
+                  <node concept="2PYRI3" id="6U$JvfrGi4u" role="3lydEf">
+                    <ref role="39XzEq" to="yjde:bAwKVX3LP6" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="6U$JvfrGgUz" role="_iOnC" />
+        <node concept="5mgZ8" id="6U$JvfrGiEs" role="_iOnC">
+          <property role="TrG5h" value="withEnumRefs" />
+          <node concept="5mgYR" id="6U$JvfrGiJG" role="5mgYi">
+            <property role="TrG5h" value="one" />
+            <node concept="5mhuz" id="6U$JvfrGiME" role="Y$80S">
+              <ref role="5mhpJ" node="3gKGtj9bXy5" resolve="red" />
+            </node>
+          </node>
+          <node concept="5mgYR" id="6U$JvfrGiOR" role="5mgYi">
+            <property role="TrG5h" value="two" />
+            <node concept="5mhuz" id="6U$JvfrGiRg" role="Y$80S">
+              <ref role="5mhpJ" node="3gKGtj9bXy5" resolve="red" />
+              <node concept="7CXmI" id="6U$JvfrGiRr" role="lGtFl">
+                <node concept="1TM$A" id="6U$JvfrGj4Q" role="7EUXB">
+                  <node concept="2PYRI3" id="6U$JvfrGj4R" role="3lydEf">
+                    <ref role="39XzEq" to="yjde:bAwKVX78Ks" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="5mh7t" id="6U$JvfrGiJz" role="3c3ckp">
+            <ref role="5mh6l" node="3gKGtj9bXy4" resolve="Color" />
+          </node>
+        </node>
         <node concept="5mgZ8" id="3gKGtj9bXyQ" role="_iOnC">
           <property role="TrG5h" value="StarbuckSizes" />
           <node concept="mLuIC" id="3gKGtj9bXyR" role="3c3ckp" />
