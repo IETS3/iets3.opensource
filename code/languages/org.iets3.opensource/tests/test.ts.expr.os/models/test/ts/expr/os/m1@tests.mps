@@ -7139,17 +7139,17 @@
           <node concept="30bdrU" id="6U$JvfrGhys" role="3c3ckp" />
         </node>
         <node concept="5mgZ8" id="Y$AzCx9EGd" role="_iOnC">
-          <property role="TrG5h" value="withDuplicatedIntValues" />
+          <property role="TrG5h" value="withDuplicatedRealValues" />
           <node concept="5mgYR" id="Y$AzCx9EGe" role="5mgYi">
             <property role="TrG5h" value="one" />
             <node concept="30bXRB" id="Y$AzCx9EM$" role="Y$80S">
-              <property role="30bXRw" value="123" />
+              <property role="30bXRw" value="123.0" />
             </node>
           </node>
           <node concept="5mgYR" id="Y$AzCx9EGg" role="5mgYi">
             <property role="TrG5h" value="two" />
             <node concept="30bXRB" id="Y$AzCx9ENP" role="Y$80S">
-              <property role="30bXRw" value="123" />
+              <property role="30bXRw" value="123.0" />
               <node concept="7CXmI" id="Y$AzCx9EOC" role="lGtFl">
                 <node concept="1TM$A" id="Y$AzCx9EOD" role="7EUXB">
                   <node concept="2PYRI3" id="Y$AzCx9EPm" role="3lydEf">
@@ -7159,7 +7159,7 @@
               </node>
             </node>
           </node>
-          <node concept="mLuIC" id="Y$AzCx9EM5" role="3c3ckp" />
+          <node concept="30bXLL" id="5ExxF8qbKlE" role="3c3ckp" />
         </node>
         <node concept="_ixoA" id="Y$AzCx9ERp" role="_iOnC" />
         <node concept="5mgZ8" id="Y$AzCx9EyL" role="_iOnC">
