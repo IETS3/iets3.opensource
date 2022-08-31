@@ -9,9 +9,10 @@ import java.time.format.FormatStyle
 buildscript {
     repositories {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.175.cc60dc8'
+        classpath 'de.itemis.mps:mps-gradle-plugin:mps20203.1.6.296.fdc8a9f'
     }
 }
 
@@ -112,14 +113,16 @@ if (!project.hasProperty("mbeddrVersion")) {
 }
 
 
-ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+ext.releaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
+ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots'
 ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
 
 ext.dependencyRepositories = [
     'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-    'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+    'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
+    'https://artifacts.itemis.cloud/repository/maven-mps/'
 ]
+    
 
 // 'artifacts' is used in the generated ant scripts as build output directory
 ext.artifactsDir = new File(buildDir, 'artifacts')
@@ -288,19 +291,8 @@ static def addDependency(Object pom, Configuration config) {
 publishing {
     repositories {
         maven {
-            url project.publishingRepository
-            if (project.hasProperty('nexusUsername')) {
-                credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
-                }
-            }
-        }
-        maven {
                 name = "itemisCloud"
-                url = version.toString().endsWith("-SNAPSHOT")
-                        ? uri("https://artifacts.itemis.cloud/repository/maven-mps-snapshots/")
-                        : uri("https://artifacts.itemis.cloud/repository/maven-mps-releases/")
+                url = project.publishingRepository
                 if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
                     credentials {
                         username = project.findProperty("artifacts.itemis.cloud.user")
