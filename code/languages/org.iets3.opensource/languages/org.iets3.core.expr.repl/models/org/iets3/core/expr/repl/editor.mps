@@ -398,13 +398,13 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
+        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
       <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
@@ -5243,6 +5243,15 @@
       <node concept="1kIj98" id="5xEoEMrzSmZ" role="3EZMnx">
         <node concept="3F0A7n" id="5xEoEMrzSn7" role="1kIj9b">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="1oAbb0" id="1ioR3UcmDtS" role="1oA3V3">
+          <node concept="3clFbS" id="1ioR3UcmDtT" role="2VODD2">
+            <node concept="3clFbF" id="1ioR3UcmFvP" role="3cqZAp">
+              <node concept="Xl_RD" id="1ioR3UcmFvO" role="3clFbG">
+                <property role="Xl_RC" value="a name for the cell argument" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="_tjkj" id="5xEoEMrzSnw" role="3EZMnx">

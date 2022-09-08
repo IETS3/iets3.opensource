@@ -199,7 +199,7 @@
     <property role="TrG5h" value="EmptyComponentContent" />
     <property role="3GE5qa" value="components" />
     <property role="EcuMT" value="7804632404593231760" />
-    <property role="R4oN_" value="an empty component content" />
+    <property role="R4oN_" value="an empty line in a components content" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6LfBX8Yi4uh" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
@@ -213,7 +213,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="chunk" />
     <property role="EcuMT" value="7804632404593341326" />
-    <property role="R4oN_" value="a components declaration" />
+    <property role="R4oN_" value="a chunk to declare components" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="6LfBX8Yivpm" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -265,7 +265,7 @@
     <property role="TrG5h" value="EmptyComponentsChunkContent" />
     <property role="3GE5qa" value="chunk" />
     <property role="EcuMT" value="7804632404593342574" />
-    <property role="R4oN_" value="an empty components chunk content" />
+    <property role="R4oN_" value="an empty line in a components chunk" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6LfBX8YivxJ" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
@@ -642,7 +642,7 @@
     <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="EmptySubstructureContent" />
     <property role="EcuMT" value="509610514780564823" />
-    <property role="R4oN_" value="an empty substructure content" />
+    <property role="R4oN_" value="an empty line in a components substructure" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="siw10FjaPo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
@@ -747,7 +747,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="409503520741916198" />
-    <property role="R4oN_" value="a base connector for all port to port connections" />
+    <property role="R4oN_" value="a base connector for port to port connectors" />
     <ref role="1TJDcQ" node="3E8pWtexQKZ" resolve="AbstractConnectorBase" />
     <node concept="1TJgyj" id="4KDeVD8s9U_" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -768,10 +768,10 @@
     <property role="TrG5h" value="SimpleBehavior" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <property role="34LRSv" value="if" />
     <property role="3GE5qa" value="behavior.simple" />
     <property role="EcuMT" value="3280647862048458233" />
     <property role="R4oN_" value="a simple behavior" />
+    <property role="34LRSv" value="behavior" />
     <ref role="1TJDcQ" node="3RyTuhdwoZO" resolve="AbstractBehavior" />
     <node concept="1TJgyj" id="2Q7cX_iyKtq" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -920,7 +920,7 @@
     <property role="TrG5h" value="ComponentRefExpr" />
     <property role="3GE5qa" value="expr.nav" />
     <property role="EcuMT" value="173673244721583680" />
-    <property role="R4oN_" value="a expression referencing a component" />
+    <property role="R4oN_" value="an expression referencing a component" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="9D0IlqBDp1" role="1TKVEi">
       <property role="20kJfa" value="component" />
@@ -949,7 +949,7 @@
     <property role="3GE5qa" value="expr.nav" />
     <property role="TrG5h" value="InstanceRefExpr" />
     <property role="EcuMT" value="3829509942130107027" />
-    <property role="R4oN_" value="an instance reference expression" />
+    <property role="R4oN_" value="an expression referencing an instance" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="4fgA7QrKujW" role="PzmwI">
       <ref role="PrY4T" to="lmd:4fgA7QrEde7" resolve="IPathPart" />
@@ -1028,7 +1028,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="2244552513309645990" />
-    <property role="R4oN_" value="a base operation for operations on instances" />
+    <property role="R4oN_" value="a base target for instances targets" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1WAg9Tzy1Nk" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -1094,7 +1094,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="3432899422388046302" />
-    <property role="R4oN_" value="a base component instance for instances with component references" />
+    <property role="R4oN_" value="a base component instance for instances referencing another component" />
     <ref role="1TJDcQ" node="77HYM7HomhL" resolve="AbstractComponentInstanceBase" />
     <node concept="PrWs8" id="cJpacq4269" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
@@ -1136,7 +1136,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="2244552513305159861" />
-    <property role="R4oN_" value="a base concept for ports targets" />
+    <property role="R4oN_" value="a base concept for port targets" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1WAg9TzryC5" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1152,7 +1152,7 @@
     <property role="3GE5qa" value="expr.portselection" />
     <property role="TrG5h" value="PortTypeSpecificPortType" />
     <property role="EcuMT" value="2244552513307947405" />
-    <property role="R4oN_" value="a port type for a specific port type" />
+    <property role="R4oN_" value="a port type of a specific port type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="1WAg9Tzrz6g" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1185,7 +1185,7 @@
     <property role="3GE5qa" value="expr.nav" />
     <property role="TrG5h" value="PortTypeForExpr" />
     <property role="EcuMT" value="2244552513301810908" />
-    <property role="R4oN_" value="a type for a port type reference" />
+    <property role="R4oN_" value="a type of a specified port" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="3QX5db_Hlyz" role="PzmwI">
       <ref role="PrY4T" to="4kwy:3QX5db_zRnt" resolve="ITypeWithTarget" />
@@ -1235,7 +1235,7 @@
     <property role="EcuMT" value="596856272727148586" />
     <property role="3GE5qa" value="components.iface.ports" />
     <property role="TrG5h" value="EmptyComponentInterfaceContent" />
-    <property role="R4oN_" value="an empty component interface content" />
+    <property role="R4oN_" value="an empty line in a components interface" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="x8tpS_RowF" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
@@ -1341,7 +1341,7 @@
     <property role="TrG5h" value="AbstractConnectorBase" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="a base connector for all kinds of connections that at least have source port" />
+    <property role="R4oN_" value="a base connector for all kinds of connections with a source port" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3E8pWtexQLM" role="PzmwI">
       <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
@@ -1387,7 +1387,7 @@
     <property role="EcuMT" value="3294196384196703819" />
     <property role="3GE5qa" value="expr.nav" />
     <property role="TrG5h" value="InlineInstanceRefTarget" />
-    <property role="R4oN_" value="a reference to inline component instance" />
+    <property role="R4oN_" value="a reference to an inline component instance" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2QRlyxOqVpc" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />

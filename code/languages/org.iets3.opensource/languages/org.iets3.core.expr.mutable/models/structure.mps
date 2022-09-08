@@ -80,7 +80,7 @@
     <property role="TrG5h" value="BoxExpression" />
     <property role="34LRSv" value="box" />
     <property role="3GE5qa" value="box" />
-    <property role="R4oN_" value="create a box (mutable data)" />
+    <property role="R4oN_" value="a box to represent mutable data" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3GdqffBOVwy" role="1TKVEi">
       <property role="IQ2ns" value="4255172619710740514" />
@@ -187,7 +187,7 @@
     <property role="EcuMT" value="2153658728442734125" />
     <property role="TrG5h" value="InTxBlock" />
     <property role="34LRSv" value="intx" />
-    <property role="R4oN_" value="excute a block if it is called from inside a transaction" />
+    <property role="R4oN_" value="execute a block if it is called from inside a transaction" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="1RzljfOfUoI" role="1TKVEi">
       <property role="IQ2ns" value="4255172619715926289" />
@@ -316,7 +316,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="ArtificialClockExpr" />
     <property role="34LRSv" value="artificialclock" />
-    <property role="R4oN_" value="artificial clock (mutable)" />
+    <property role="R4oN_" value="an artificial clock (mutable)" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="4voDClGJOIX" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -413,7 +413,7 @@
     <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <property role="TrG5h" value="RateLimitInterceptor" />
     <property role="34LRSv" value="rate" />
-    <property role="R4oN_" value="set an interceptor with a rate limit on how many interceptions are allowed within a specific time frame" />
+    <property role="R4oN_" value="an interceptor with a rate limit on how many interceptions are allowed within a specific time frame" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IV0h47QL36" role="1TKVEi">
       <property role="IQ2ns" value="5456956546147356870" />
@@ -492,7 +492,7 @@
     <property role="3GE5qa" value="clock" />
     <property role="TrG5h" value="ArtificialClockType" />
     <property role="34LRSv" value="artificialclock" />
-    <property role="R4oN_" value="an artificial clock (mutable)" />
+    <property role="R4oN_" value="an artificial clock type" />
     <ref role="1TJDcQ" node="3iESbJsCqWF" resolve="ClockType" />
   </node>
   <node concept="1TIwiD" id="4IV0h47fqjY">
@@ -500,7 +500,7 @@
     <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <property role="TrG5h" value="ThrowInterceptor" />
     <property role="34LRSv" value="throw" />
-    <property role="R4oN_" value="set an interceptor that throws an exception" />
+    <property role="R4oN_" value="an interceptor throwing an exception" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4IV0h47fqjZ" role="PzmwI">
       <ref role="PrY4T" node="4IV0h47deUA" resolve="IInterceptor" />
@@ -541,7 +541,7 @@
     <property role="TrG5h" value="ArtificialClockTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="a base operation for artificial clocks" />
+    <property role="R4oN_" value="a base operation for artificial clock operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3iESbJsEY$1" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -555,7 +555,7 @@
     <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <property role="TrG5h" value="DefaultInterceptor" />
     <property role="34LRSv" value="default" />
-    <property role="R4oN_" value="set the default interceptor" />
+    <property role="R4oN_" value="a default interceptor" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4IV0h47dgR_" role="PzmwI">
       <ref role="PrY4T" node="4IV0h47deUA" resolve="IInterceptor" />

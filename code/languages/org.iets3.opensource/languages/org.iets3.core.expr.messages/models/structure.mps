@@ -183,7 +183,7 @@
   <node concept="1TIwiD" id="3vxfdxbdbUS">
     <property role="EcuMT" value="4026566441518284472" />
     <property role="TrG5h" value="MessageTarget" />
-    <property role="R4oN_" value="a target of a message" />
+    <property role="R4oN_" value="a reference to a message" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3vxfdxbjb$U" role="1TKVEi">
       <property role="IQ2ns" value="4026566441519855930" />
@@ -332,7 +332,7 @@
     <property role="TrG5h" value="MessageValueOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="a base operation for operations on MessageValues" />
+    <property role="R4oN_" value="a base operation for operations on message values" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4AahbtULQ_w" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -356,7 +356,7 @@
     <property role="EcuMT" value="5299123466388908843" />
     <property role="TrG5h" value="MessageValueDataOp" />
     <property role="34LRSv" value="data" />
-    <property role="R4oN_" value="get the data of a message" />
+    <property role="R4oN_" value="get the data of the message value" />
     <ref role="1TJDcQ" node="4AahbtULQ_v" resolve="MessageValueOp" />
   </node>
 </model>

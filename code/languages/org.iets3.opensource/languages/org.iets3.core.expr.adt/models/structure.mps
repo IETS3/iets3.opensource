@@ -67,7 +67,7 @@
     <property role="EcuMT" value="5955298286239339288" />
     <property role="TrG5h" value="AlgebraicDeclaration" />
     <property role="34LRSv" value="algebraic" />
-    <property role="R4oN_" value="an algebraic type declaration" />
+    <property role="R4oN_" value="an algebraic data type declaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5a_u3OyMttX" role="1TKVEi">
       <property role="IQ2ns" value="5955298286239340413" />
@@ -130,7 +130,7 @@
   <node concept="1TIwiD" id="5a_u3OyMvaf">
     <property role="EcuMT" value="5955298286239347343" />
     <property role="TrG5h" value="AlgebraicType" />
-    <property role="R4oN_" value="an algebraic term" />
+    <property role="R4oN_" value="an algebraic type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="5a_u3OyMvag" role="1TKVEi">
       <property role="IQ2ns" value="5955298286239347344" />
@@ -188,7 +188,7 @@
     <property role="EcuMT" value="5955298286240874960" />
     <property role="TrG5h" value="MatchExpr" />
     <property role="34LRSv" value="match" />
-    <property role="R4oN_" value="match a expression through cases" />
+    <property role="R4oN_" value="match an expression through cases" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5a_u3OySk7n" role="1TKVEi">
       <property role="IQ2ns" value="5955298286240874967" />
@@ -215,7 +215,7 @@
     <property role="EcuMT" value="5955298286240875029" />
     <property role="TrG5h" value="MatchCase" />
     <property role="34LRSv" value="case" />
-    <property role="R4oN_" value="a case for matching algebraic expression" />
+    <property role="R4oN_" value="a case for matching an algebraic expression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5a_u3OySk8s" role="1TKVEi">
       <property role="IQ2ns" value="5955298286240875036" />
@@ -411,7 +411,7 @@
     <property role="TrG5h" value="LocDotTarget" />
     <property role="34LRSv" value="loc" />
     <property role="3GE5qa" value="dot" />
-    <property role="R4oN_" value="get the path of the algebraic type" />
+    <property role="R4oN_" value="get the path of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
   </node>
   <node concept="1TIwiD" id="7aipPVpLOlr">
@@ -431,7 +431,7 @@
     <property role="TrG5h" value="SrcDotTarget" />
     <property role="34LRSv" value="src" />
     <property role="3GE5qa" value="dot" />
-    <property role="R4oN_" value="get the source of the algebraic type" />
+    <property role="R4oN_" value="get the source of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
   </node>
   <node concept="1TIwiD" id="28$LOSAcnmu">
@@ -483,7 +483,7 @@
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="ReplaceWith" />
     <property role="34LRSv" value="replaceWith" />
-    <property role="R4oN_" value="replace with a new algebraic type" />
+    <property role="R4oN_" value="replace with a new algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
     <node concept="1TJgyj" id="28$LOSAJ7F9" role="1TKVEi">
       <property role="IQ2ns" value="2460310434922396361" />
@@ -498,7 +498,7 @@
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="Copy" />
     <property role="34LRSv" value="copy" />
-    <property role="R4oN_" value="make a copy of the algebraic type" />
+    <property role="R4oN_" value="make a copy of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
     <node concept="PrWs8" id="6z5WYdPcNAn" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6z5WYdPcLnz" resolve="IContextTypedOp" />
@@ -509,7 +509,7 @@
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="Size" />
     <property role="34LRSv" value="size" />
-    <property role="R4oN_" value="get the size of the algebraic type" />
+    <property role="R4oN_" value="get the size of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
   </node>
   <node concept="1TIwiD" id="28$LOSBq9bH">
@@ -517,7 +517,7 @@
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="Parent" />
     <property role="34LRSv" value="parent" />
-    <property role="R4oN_" value="get the parent of the algebraic type" />
+    <property role="R4oN_" value="get the parent of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
   </node>
   <node concept="1TIwiD" id="28$LOSBqa1k">
@@ -525,7 +525,7 @@
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="Ancestor" />
     <property role="34LRSv" value="ancestor" />
-    <property role="R4oN_" value="get the ancestor of the algebraic type" />
+    <property role="R4oN_" value="get the ancestor of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
     <node concept="1TJgyj" id="28$LOSBqa1l" role="1TKVEi">
       <property role="IQ2ns" value="2460310434922396361" />

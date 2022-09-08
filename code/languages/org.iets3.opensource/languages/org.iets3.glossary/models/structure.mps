@@ -62,7 +62,7 @@
     <property role="TrG5h" value="GlossaryChunk" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="7551038907536067158" />
-    <property role="R4oN_" value="a glossary with terms" />
+    <property role="R4oN_" value="a glossary of terms" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="6zaFu4oPODo" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

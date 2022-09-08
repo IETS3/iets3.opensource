@@ -249,7 +249,7 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
@@ -1472,6 +1472,15 @@
       <node concept="1kHk_G" id="33mFrum_2Km" role="3EZMnx">
         <ref role="1NtTu8" to="19m5:33mFrum_2JP" resolve="observable" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="uPpia" id="1ioR3Uco8g$" role="1djCvC">
+          <node concept="3clFbS" id="1ioR3Uco8g_" role="2VODD2">
+            <node concept="3clFbF" id="1ioR3Uco8la" role="3cqZAp">
+              <node concept="Xl_RD" id="1ioR3Uco8l9" role="3clFbG">
+                <property role="Xl_RC" value="make the variable observable" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="aPhVmWWekH" role="3EZMnx">
         <property role="3F0ifm" value="var" />

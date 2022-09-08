@@ -632,7 +632,7 @@
     <property role="EcuMT" value="8853770331926288886" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="TopLevelTableValueSpec" />
-    <property role="R4oN_" value="a value for a top level column definition" />
+    <property role="R4oN_" value="a value for a top level table specification" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7FuUjk_mXBR" role="1TKVEi">
       <property role="IQ2ns" value="8853770331926288887" />
@@ -670,7 +670,7 @@
     <property role="EcuMT" value="8840800177405405525" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="DecTableType" />
-    <property role="R4oN_" value="a multi-criteria decision table" />
+    <property role="R4oN_" value="a multi-criteria decision table type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="7EKPeIStq_m" role="1TKVEi">
       <property role="IQ2ns" value="8840800177405405526" />
@@ -758,7 +758,7 @@
     <property role="3GE5qa" value="multidectab.expr.result" />
     <property role="TrG5h" value="LocalVarAssignColDef" />
     <property role="34LRSv" value="-&gt;" />
-    <property role="R4oN_" value="assign a result to a local variable" />
+    <property role="R4oN_" value="a column definition to assign a result to a local variable" />
     <ref role="1TJDcQ" node="6OunYCeYf_a" resolve="AssigningResultColDef" />
     <node concept="1TJgyj" id="6OunYCeYfBN" role="1TKVEi">
       <property role="IQ2ns" value="7862827458313648627" />

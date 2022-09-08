@@ -180,13 +180,13 @@
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
+        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
       <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
@@ -648,6 +648,15 @@
               </node>
             </node>
           </node>
+          <node concept="1oAbb0" id="1DYBh1phHC7" role="1oA3V3">
+            <node concept="3clFbS" id="1DYBh1phHC8" role="2VODD2">
+              <node concept="3clFbF" id="1DYBh1phHRf" role="3cqZAp">
+                <node concept="Xl_RD" id="1DYBh1phHRe" role="3clFbG">
+                  <property role="Xl_RC" value="a collection on which to specify the index" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="54HsVvNUXeV" role="3EZMnx">
           <property role="3F0ifm" value="[" />
@@ -776,6 +785,15 @@
         <node concept="3F1sOY" id="7kYh9WszdIK" role="1kIj9b">
           <ref role="1NtTu8" to="700h:7kYh9WszdHG" resolve="val" />
         </node>
+        <node concept="1oAbb0" id="6052IH7Vtt$" role="1oA3V3">
+          <node concept="3clFbS" id="6052IH7Vtt_" role="2VODD2">
+            <node concept="3clFbF" id="6052IH7VtNk" role="3cqZAp">
+              <node concept="Xl_RD" id="6052IH7VtNj" role="3clFbG">
+                <property role="Xl_RC" value="a value of a key-value pair" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="7kYh9WszdIc" role="2iSdaV" />
     </node>
@@ -805,7 +823,7 @@
           <node concept="3clFbS" id="1ZlHRbgqp94" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgqp9a" role="3cqZAp">
               <node concept="Xl_RD" id="1ZlHRbgqp99" role="3clFbG">
-                <property role="Xl_RC" value="a type constraint" />
+                <property role="Xl_RC" value="a type constraint for the map literal" />
               </node>
             </node>
           </node>

@@ -217,7 +217,7 @@
       </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
@@ -225,7 +225,7 @@
         <child id="7408935449007570592" name="substituteCondition" index="7deOD" />
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
+        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
       <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
@@ -1553,6 +1553,15 @@
       <node concept="1kIj98" id="28$LOSBCuhk" role="3EZMnx">
         <node concept="3F1sOY" id="28$LOSBCuhq" role="1kIj9b">
           <ref role="1NtTu8" to="v0r8:28$LOSBCugO" resolve="type" />
+        </node>
+        <node concept="1oAbb0" id="6052IH7TAwJ" role="1oA3V3">
+          <node concept="3clFbS" id="6052IH7TAwK" role="2VODD2">
+            <node concept="3clFbF" id="6052IH7TA_j" role="3cqZAp">
+              <node concept="Xl_RD" id="6052IH7TA_i" role="3clFbG">
+                <property role="Xl_RC" value="an argument of type" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="_tjkj" id="28$LOSBF$V5" role="3EZMnx">

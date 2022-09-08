@@ -173,7 +173,7 @@
     <property role="TrG5h" value="ConfidentialClassLevel" />
     <property role="34LRSv" value="confidential" />
     <property role="3GE5qa" value="classification" />
-    <property role="R4oN_" value="a confidential classification level" />
+    <property role="R4oN_" value="confidential classification level" />
     <ref role="1TJDcQ" node="TUBgQ0G6Ye" resolve="ClassificationLevel" />
   </node>
 </model>

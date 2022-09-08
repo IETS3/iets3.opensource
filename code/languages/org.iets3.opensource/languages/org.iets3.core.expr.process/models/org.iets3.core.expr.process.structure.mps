@@ -229,7 +229,7 @@
     <property role="3GE5qa" value="procedure" />
     <property role="TrG5h" value="CustomDecProc" />
     <property role="34LRSv" value="custom" />
-    <property role="R4oN_" value="a custom procedure" />
+    <property role="R4oN_" value="a custom decision procedure" />
     <ref role="1TJDcQ" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
     <node concept="PrWs8" id="3iESbJshtqw" role="PzmwI">
       <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
@@ -257,7 +257,7 @@
     <property role="TrG5h" value="SenderPartyInterceptor" />
     <property role="34LRSv" value="senderIs" />
     <property role="3GE5qa" value="interceptor" />
-    <property role="R4oN_" value="check that the sender is a specific party or a collection of parties" />
+    <property role="R4oN_" value="an interceptor checking that the sender is a specific party or a collection of parties" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IV0h47EaiE" role="1TKVEi">
       <property role="IQ2ns" value="5456956546144052394" />
@@ -294,7 +294,7 @@
     <property role="3GE5qa" value="interceptor" />
     <property role="TrG5h" value="TakeTurnsInterceptor" />
     <property role="34LRSv" value="takeTurns" />
-    <property role="R4oN_" value="take turns" />
+    <property role="R4oN_" value="an interceptor taking turns" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4IV0h48lf9e" role="1TKVEl">
       <property role="IQ2nx" value="5456956546155344462" />

@@ -124,7 +124,7 @@
     <property role="EcuMT" value="5733544478072990301" />
     <property role="TrG5h" value="CompositeBlock" />
     <property role="34LRSv" value="composite block" />
-    <property role="R4oN_" value="a combined block" />
+    <property role="R4oN_" value="a block composing other blocks" />
     <ref role="1TJDcQ" node="4YhD5cZsmDq" resolve="Block" />
     <node concept="1TJgyj" id="4YhD5cZsmDu" role="1TKVEi">
       <property role="IQ2ns" value="5733544478072990302" />
@@ -332,7 +332,7 @@
   <node concept="1TIwiD" id="2vkvJYT6dDU">
     <property role="EcuMT" value="2870058499329022586" />
     <property role="TrG5h" value="BlockCallExpr" />
-    <property role="R4oN_" value="invoke a block as if it were a function" />
+    <property role="R4oN_" value="invoke a block as if it was a function" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="2vkvJYT6dHx" role="1TKVEi">
       <property role="IQ2ns" value="2870058499329022817" />

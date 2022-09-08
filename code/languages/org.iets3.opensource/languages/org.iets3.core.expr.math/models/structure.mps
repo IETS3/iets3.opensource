@@ -273,7 +273,7 @@
     <property role="TrG5h" value="AbstractRatTarget" />
     <property role="3GE5qa" value="rat" />
     <property role="R5$K7" value="true" />
-    <property role="R4oN_" value="a base operation for operation on rational targets" />
+    <property role="R4oN_" value="a base operation for operations on rational targets" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mz5Tt_jNyL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -312,7 +312,7 @@
     <property role="TrG5h" value="RationalType" />
     <property role="34LRSv" value="rat" />
     <property role="3GE5qa" value="rat" />
-    <property role="R4oN_" value="rational" />
+    <property role="R4oN_" value="a rational type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="4SHkH$fnm2H">

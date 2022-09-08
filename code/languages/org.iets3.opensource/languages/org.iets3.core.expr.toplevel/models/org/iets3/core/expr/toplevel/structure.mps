@@ -300,7 +300,7 @@
   <node concept="1TIwiD" id="ub9nkyKjdj">
     <property role="TrG5h" value="EmptyToplevelContent" />
     <property role="EcuMT" value="543569365052765011" />
-    <property role="R4oN_" value="an empty top level content" />
+    <property role="R4oN_" value="an empty line in top level contents" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="ub9nkyKjdk" role="PzmwI">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
@@ -436,7 +436,7 @@
     <property role="3GE5qa" value="typedef" />
     <property role="34LRSv" value="type" />
     <property role="EcuMT" value="7740953487936183912" />
-    <property role="R4oN_" value=" a derived (constrained) type based on existing type" />
+    <property role="R4oN_" value="a derived (constrained) type based on an existing type" />
     <ref role="1TJDcQ" node="7zXSNv$jGoK" resolve="AbstractTypeDeclaration" />
     <node concept="1QGGSu" id="1iu4bMrBNiQ" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/type.png" />
@@ -535,7 +535,7 @@
     <property role="3GE5qa" value="record.change" />
     <property role="TrG5h" value="NewValueSetter" />
     <property role="EcuMT" value="1249392911699110134" />
-    <property role="R4oN_" value="optionally set the value of a member" />
+    <property role="R4oN_" value="set the value of a member" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4qVjx3k_yKe" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -559,7 +559,7 @@
     <property role="TrG5h" value="OldValueExpr" />
     <property role="34LRSv" value="old" />
     <property role="EcuMT" value="820361861852634100" />
-    <property role="R4oN_" value="a value before the update" />
+    <property role="R4oN_" value="the value before the update" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="HywGhj4ZhL">
@@ -655,7 +655,7 @@
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumLiteralRef" />
     <property role="EcuMT" value="7061117989422577349" />
-    <property role="R4oN_" value="a reference to a enumeration literal" />
+    <property role="R4oN_" value="a reference to an enumeration literal" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="67Y8mp$DNs9" role="1TKVEi">
       <property role="20kJfa" value="literal" />
@@ -762,7 +762,7 @@
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumIsTarget" />
     <property role="34LRSv" value="is" />
-    <property role="R4oN_" value="check the enumeration against a literal" />
+    <property role="R4oN_" value="check the enumeration literal against another literal" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5ElkanPQwmu" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -892,7 +892,7 @@
     <property role="3GE5qa" value="record.project" />
     <property role="TrG5h" value="InlineRecordType" />
     <property role="EcuMT" value="8293738266741050575" />
-    <property role="R4oN_" value="a record type" />
+    <property role="R4oN_" value="an inline record type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="4ptnK4iZ$op" role="1TKVEi">
       <property role="IQ2ns" value="5070313213707306521" />
@@ -949,7 +949,7 @@
     <property role="EcuMT" value="8293738266746101180" />
     <property role="3GE5qa" value="record.project" />
     <property role="TrG5h" value="InlineRecordMemberAccess" />
-    <property role="R4oN_" value="an access of a record member" />
+    <property role="R4oN_" value="reference an inline record member" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7cphKbLtLR6" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -1164,7 +1164,7 @@
     <property role="3GE5qa" value="enum.oneof" />
     <property role="TrG5h" value="EnumIsInTarget" />
     <property role="34LRSv" value="isIn" />
-    <property role="R4oN_" value="check the enumeration against several literals" />
+    <property role="R4oN_" value="check the enumeration literal against several literals" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6WstIz8MK68" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -1181,7 +1181,7 @@
     <property role="EcuMT" value="8006404979731140557" />
     <property role="3GE5qa" value="enum.oneof" />
     <property role="TrG5h" value="EnumIsInSelector" />
-    <property role="R4oN_" value="a reference to a enumeration literal" />
+    <property role="R4oN_" value="a reference to an enumeration literal" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6WstIz8MKZe" role="1TKVEi">
       <property role="IQ2ns" value="8006404979731140558" />
@@ -1198,7 +1198,7 @@
     <property role="EcuMT" value="5250171600077389559" />
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="QualifierRef" />
-    <property role="R4oN_" value="a qualified reference to a enumeration literal" />
+    <property role="R4oN_" value="a qualified reference to an enumeration literal" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4zsmO3KtfVS" role="1TKVEi">
       <property role="IQ2ns" value="5250171600077389560" />

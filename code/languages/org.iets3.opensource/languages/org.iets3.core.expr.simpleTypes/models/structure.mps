@@ -56,7 +56,7 @@
     <property role="34LRSv" value="boolean" />
     <property role="3GE5qa" value="bool" />
     <property role="EcuMT" value="7425695345928349207" />
-    <property role="R4oN_" value="the truth values of logic and Boolean algebra" />
+    <property role="R4oN_" value="a type for truth values of logic and Boolean algebra" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
     <node concept="PrWs8" id="35CkgbLkSIs" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
@@ -144,7 +144,7 @@
     <property role="34LRSv" value="string" />
     <property role="3GE5qa" value="string" />
     <property role="EcuMT" value="5115872837157252551" />
-    <property role="R4oN_" value="a sequence of characters" />
+    <property role="R4oN_" value="a sequence of characters type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
     <node concept="PrWs8" id="60Qa1k_vswP" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
@@ -193,7 +193,7 @@
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="NumberType" />
     <property role="34LRSv" value="number" />
-    <property role="R4oN_" value="a number with an optional precision and range" />
+    <property role="R4oN_" value="a number type with an optional precision and range" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
     <node concept="PrWs8" id="60Qa1k_nI4f" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />

@@ -72,7 +72,7 @@
     <property role="EcuMT" value="5994308065068956525" />
     <property role="3GE5qa" value="function" />
     <property role="TrG5h" value="MetaFunArgRef" />
-    <property role="R4oN_" value="a reference to a meta function" />
+    <property role="R4oN_" value="a reference to a meta function argument" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5cK3QOcGrHI" role="1TKVEi">
       <property role="IQ2ns" value="5994308065068956526" />

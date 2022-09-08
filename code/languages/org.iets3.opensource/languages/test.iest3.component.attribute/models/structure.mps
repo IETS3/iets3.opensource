@@ -45,7 +45,7 @@
     <property role="EcuMT" value="4448734902940615074" />
     <property role="TrG5h" value="TestPortCategoryAccepts" />
     <property role="34LRSv" value="testAcc" />
-    <property role="R4oN_" value="a test port category" />
+    <property role="R4oN_" value="a test port category (accepts)" />
     <ref role="1TJDcQ" to="w9y2:siw10H0or2" resolve="PortCategory" />
   </node>
   <node concept="1TIwiD" id="3QX5db_E9QV">
@@ -62,7 +62,7 @@
     <property role="EcuMT" value="4448734902941668085" />
     <property role="TrG5h" value="TestPortCategoryOffers" />
     <property role="34LRSv" value="testOff" />
-    <property role="R4oN_" value="a test port category" />
+    <property role="R4oN_" value="a test port category (offers)" />
     <ref role="1TJDcQ" to="w9y2:siw10H0or2" resolve="PortCategory" />
   </node>
   <node concept="1TIwiD" id="48ZWgAGwh6D">
@@ -78,21 +78,21 @@
     <property role="EcuMT" value="8956532715637138334" />
     <property role="TrG5h" value="TestKindB" />
     <property role="34LRSv" value="testKindB" />
-    <property role="R4oN_" value="a test kind" />
+    <property role="R4oN_" value="a test kind for components" />
     <ref role="1TJDcQ" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
   </node>
   <node concept="1TIwiD" id="3QX5db_HNz8">
     <property role="EcuMT" value="4448734902941595848" />
     <property role="TrG5h" value="TestKindA" />
     <property role="34LRSv" value="testKindA" />
-    <property role="R4oN_" value="a test kind" />
+    <property role="R4oN_" value="a test kind for components" />
     <ref role="1TJDcQ" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
   </node>
   <node concept="1TIwiD" id="7LbZKOmT25i">
     <property role="EcuMT" value="8956532715640070482" />
     <property role="TrG5h" value="TestKindC" />
     <property role="34LRSv" value="testKindC" />
-    <property role="R4oN_" value="a test kind" />
+    <property role="R4oN_" value="a test kind for components" />
     <ref role="1TJDcQ" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
   </node>
 </model>

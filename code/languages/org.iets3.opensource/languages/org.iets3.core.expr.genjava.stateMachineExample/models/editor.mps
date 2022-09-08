@@ -73,12 +73,12 @@
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
+        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
       <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
@@ -288,7 +288,7 @@
           <node concept="3clFbS" id="1ZlHRbgqByC" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgqByZ" role="3cqZAp">
               <node concept="Xl_RD" id="1ZlHRbgqByY" role="3clFbG">
-                <property role="Xl_RC" value="contraints for the event reference" />
+                <property role="Xl_RC" value="constraints for the event reference" />
               </node>
             </node>
           </node>

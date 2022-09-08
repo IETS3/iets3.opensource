@@ -67,7 +67,7 @@
     <property role="TrG5h" value="RequirementsChunk" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="5151426049053136028" />
-    <property role="R4oN_" value="a requirements declaration" />
+    <property role="R4oN_" value="a requirements chunk declaration" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="PrWs8" id="4tXyFaWxW_o" role="PzmwI">
       <ref role="PrY4T" node="4tXyFaWxW_f" resolve="IReqContainer" />
@@ -207,7 +207,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="state" />
     <property role="EcuMT" value="380060842849065671" />
-    <property role="R4oN_" value="a base concept fo states" />
+    <property role="R4oN_" value="a base concept for states" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="l6fPaF3tFb">
@@ -329,7 +329,7 @@
     <property role="TrG5h" value="ReqRelWord" />
     <property role="34LRSv" value="@rel" />
     <property role="EcuMT" value="6906000695315637928" />
-    <property role="R4oN_" value="a reference to a requirement's relation" />
+    <property role="R4oN_" value="a relation to another requirement" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5Zn2KFQSUqD" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />

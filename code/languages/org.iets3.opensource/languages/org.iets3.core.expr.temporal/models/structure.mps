@@ -119,7 +119,7 @@
   <node concept="1TIwiD" id="50smQ1V8QEh">
     <property role="EcuMT" value="5772589292323039889" />
     <property role="TrG5h" value="Slice" />
-    <property role="R4oN_" value="a slice" />
+    <property role="R4oN_" value="a temporal value slice" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="50smQ1V8QEi" role="1TKVEi">
       <property role="IQ2ns" value="5772589292323039890" />
@@ -158,7 +158,7 @@
     <property role="EcuMT" value="5772589292324300959" />
     <property role="TrG5h" value="IntervalsOp" />
     <property role="34LRSv" value="intervals" />
-    <property role="R4oN_" value="get a list of the time values of each slice" />
+    <property role="R4oN_" value="get a list containing the time values of all slices" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
   </node>
   <node concept="1TIwiD" id="50smQ1VexVM">
@@ -337,7 +337,7 @@
     <property role="3GE5qa" value="reduce" />
     <property role="TrG5h" value="ReduceStrategyWeighted" />
     <property role="34LRSv" value="WEIGHTED" />
-    <property role="R4oN_" value="reduce to the average of all values in the slice, weighted by slice duration" />
+    <property role="R4oN_" value="reduce to the average of values of all slices, weighted by slice duration" />
     <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
   </node>
   <node concept="1TIwiD" id="W7GwMM7AyP">
@@ -345,7 +345,7 @@
     <property role="3GE5qa" value="reduce" />
     <property role="TrG5h" value="ReduceStrategySum" />
     <property role="34LRSv" value="SUM" />
-    <property role="R4oN_" value="reduce to the sum of all values in the slice" />
+    <property role="R4oN_" value="reduce to the sum of values of all slices" />
     <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
   </node>
   <node concept="PlHQZ" id="2qmD4SWBg0S">

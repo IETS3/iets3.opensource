@@ -261,7 +261,7 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="SheetTestItem" />
     <property role="34LRSv" value="sheet" />
-    <property role="R4oN_" value="a spreadsheet" />
+    <property role="R4oN_" value="a spreadsheet for tests" />
     <ref role="1TJDcQ" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1TJgyi" id="5avmkTFIjNS" role="1TKVEl">
       <property role="IQ2nx" value="5953575425756708088" />
@@ -292,7 +292,7 @@
     <property role="EcuMT" value="5733544478070852422" />
     <property role="3GE5qa" value="sheet.range" />
     <property role="TrG5h" value="AbstractRangeExpr" />
-    <property role="R4oN_" value="abstract range expression" />
+    <property role="R4oN_" value="an abstract range expression" />
     <ref role="1TJDcQ" node="5avmkTFl_wR" resolve="AbstractSheetExpr" />
     <node concept="1TJgyj" id="4YhD5cZkcH7" role="1TKVEi">
       <property role="IQ2ns" value="5733544478070852423" />
@@ -402,7 +402,7 @@
     <property role="EcuMT" value="6371013116349131336" />
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="Cell" />
-    <property role="R4oN_" value="a cell repesentating an optional value" />
+    <property role="R4oN_" value="a cell representing an optional value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_Nra3DTfmI" role="1TKVEi">
       <property role="IQ2ns" value="4139771920858281390" />
@@ -462,7 +462,7 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="SheetType" />
     <property role="34LRSv" value="sheet" />
-    <property role="R4oN_" value="a spreadsheet" />
+    <property role="R4oN_" value="a spreadsheet type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="3_Nra3E2xkj" role="1TKVEi">
       <property role="IQ2ns" value="4139771920860714259" />
@@ -558,7 +558,7 @@
     <property role="EcuMT" value="3922243018845679935" />
     <property role="3GE5qa" value="sheet.finders" />
     <property role="TrG5h" value="NamedSheetFinder" />
-    <property role="R4oN_" value="a reference to a sheet" />
+    <property role="R4oN_" value="a named sheet finder" />
     <ref role="1TJDcQ" node="3pIANU$T$67" resolve="AbstractSheetFinder" />
     <node concept="1TJgyj" id="3pIANU_3n5s" role="1TKVEi">
       <property role="IQ2ns" value="3922243018845679964" />
@@ -599,7 +599,7 @@
     <property role="EcuMT" value="5953575425750226999" />
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="AbstractSheetExpr" />
-    <property role="R4oN_" value="abstract sheet expression" />
+    <property role="R4oN_" value="an abstract sheet expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="5xEoEMrvqJa">
@@ -659,7 +659,7 @@
     <property role="3GE5qa" value="sheet.finders" />
     <property role="TrG5h" value="UpwardsSheetFinder" />
     <property role="34LRSv" value=".." />
-    <property role="R4oN_" value="a reference to a ancestor sheet" />
+    <property role="R4oN_" value="a finder looking for the next ancestor sheet" />
     <ref role="1TJDcQ" node="3pIANU$T$67" resolve="AbstractSheetFinder" />
   </node>
   <node concept="1TIwiD" id="4YhD5cZo8Ks">

@@ -43,7 +43,7 @@
     <property role="EcuMT" value="6913547888673466377" />
     <property role="TrG5h" value="TraceTargetRef" />
     <property role="3GE5qa" value="result" />
-    <property role="R4oN_" value="a reference that refers to a trace target" />
+    <property role="R4oN_" value="a reference to a trace target" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ZLQMNq2awa" role="1TKVEi">
       <property role="IQ2ns" value="6913547888673466378" />

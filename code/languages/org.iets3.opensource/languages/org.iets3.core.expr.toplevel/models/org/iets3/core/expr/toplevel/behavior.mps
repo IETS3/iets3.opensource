@@ -6642,18 +6642,6 @@
       </node>
       <node concept="10P_77" id="3NUSEp5yf$o" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="1ZlHRbgh8C7" role="13h7CS">
-      <property role="TrG5h" value="getQualifiedFlagHelp" />
-      <node concept="3Tm1VV" id="1ZlHRbgh8C8" role="1B3o_S" />
-      <node concept="17QB3L" id="1ZlHRbgh8IE" role="3clF45" />
-      <node concept="3clFbS" id="1ZlHRbgh8Ca" role="3clF47">
-        <node concept="3clFbF" id="1ZlHRbgh9ge" role="3cqZAp">
-          <node concept="Xl_RD" id="1ZlHRbgh9gd" role="3clFbG">
-            <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="13h7C7" id="3Y6fbK1lTzW">
     <property role="3GE5qa" value="enum" />

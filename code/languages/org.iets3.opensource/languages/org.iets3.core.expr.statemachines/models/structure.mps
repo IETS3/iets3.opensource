@@ -285,7 +285,7 @@
     <property role="EcuMT" value="8735085014268723497" />
     <property role="3GE5qa" value="machine" />
     <property role="TrG5h" value="EmptySMC" />
-    <property role="R4oN_" value="an empty state machine content" />
+    <property role="R4oN_" value="an empty line in state machine contents" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7$TgoCYkO4K" role="PzmwI">
       <ref role="PrY4T" node="7$TgoCYjSrY" resolve="ISMContent" />
@@ -474,7 +474,7 @@
     <property role="3GE5qa" value="operations" />
     <property role="TrG5h" value="IsInStateTarget" />
     <property role="34LRSv" value="isInState" />
-    <property role="R4oN_" value="check that the state machine is a specific state" />
+    <property role="R4oN_" value="check that the state machine is in a specific state" />
     <ref role="1TJDcQ" node="7$TgoCYaDig" resolve="SMTarget" />
     <node concept="1TJgyj" id="33mFrumBT5l" role="1TKVEi">
       <property role="IQ2ns" value="3519191162854281557" />
@@ -563,7 +563,7 @@
     <property role="EcuMT" value="411710798109084890" />
     <property role="3GE5qa" value="machine" />
     <property role="TrG5h" value="EmptyStateContent" />
-    <property role="R4oN_" value="an empty state content" />
+    <property role="R4oN_" value="an empty line in state contents" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="mQGcCvv0Nr" role="PzmwI">
       <ref role="PrY4T" node="7$TgoCYlrCy" resolve="IStateContent" />

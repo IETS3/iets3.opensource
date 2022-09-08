@@ -133,7 +133,7 @@
     <property role="EcuMT" value="5860825012167904587" />
     <property role="TrG5h" value="LookupTableType" />
     <property role="34LRSv" value="lookup" />
-    <property role="R4oN_" value="a lookup table" />
+    <property role="R4oN_" value="a lookup table type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="55lPkJGZxnb" role="1TKVEi">
       <property role="IQ2ns" value="5860825012167906763" />

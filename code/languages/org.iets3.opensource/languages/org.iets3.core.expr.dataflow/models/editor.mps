@@ -235,13 +235,13 @@
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
+        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
       <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
@@ -3454,7 +3454,7 @@
           <node concept="3clFbS" id="2Zbcfw$$2fH" role="2VODD2">
             <node concept="3clFbF" id="2Zbcfw$$2g4" role="3cqZAp">
               <node concept="Xl_RD" id="2Zbcfw$$2g3" role="3clFbG">
-                <property role="Xl_RC" value="" />
+                <property role="Xl_RC" value="the name of the incoming port" />
               </node>
             </node>
           </node>
@@ -3483,7 +3483,7 @@
           <node concept="3clFbS" id="1ZlHRbgqB56" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgqB9E" role="3cqZAp">
               <node concept="Xl_RD" id="1ZlHRbgqB9D" role="3clFbG">
-                <property role="Xl_RC" value="a type for the incoming point" />
+                <property role="Xl_RC" value="a type for the incoming port" />
               </node>
             </node>
           </node>
@@ -3505,6 +3505,15 @@
           </node>
           <node concept="Vb9p2" id="2DnmbxU_t1k" role="3F10Kt">
             <property role="Vbekb" value="g1_k_vY/BOLD" />
+          </node>
+        </node>
+        <node concept="1oAbb0" id="1DYBh1pkfGj" role="1oA3V3">
+          <node concept="3clFbS" id="1DYBh1pkfGk" role="2VODD2">
+            <node concept="3clFbF" id="1DYBh1pkfKR" role="3cqZAp">
+              <node concept="Xl_RD" id="1DYBh1pkfKQ" role="3clFbG">
+                <property role="Xl_RC" value="the name of the outgoing port" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -3574,6 +3583,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="1oAbb0" id="1DYBh1pkg2r" role="1oA3V3">
+          <node concept="3clFbS" id="1DYBh1pkg2s" role="2VODD2">
+            <node concept="3clFbF" id="1DYBh1pkg2M" role="3cqZAp">
+              <node concept="Xl_RD" id="1DYBh1pkg2L" role="3clFbG">
+                <property role="Xl_RC" value="the name of the block parameter" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="5WJNTMTyRaU" role="3EZMnx">
         <node concept="3EZMnI" id="5WJNTMTyRb5" role="_tjki">
@@ -3598,7 +3616,7 @@
           <node concept="3clFbS" id="1ZlHRbgqrrO" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgqrwo" role="3cqZAp">
               <node concept="Xl_RD" id="1ZlHRbgqrwn" role="3clFbG">
-                <property role="Xl_RC" value="a type for the block parameer" />
+                <property role="Xl_RC" value="a type for the block parameter" />
               </node>
             </node>
           </node>

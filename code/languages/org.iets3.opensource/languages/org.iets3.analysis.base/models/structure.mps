@@ -110,7 +110,7 @@
     <property role="TrG5h" value="SolveControl" />
     <property role="3GE5qa" value="control" />
     <property role="EcuMT" value="4214990435119232757" />
-    <property role="R4oN_" value="a attribute containing additional settings for the solver" />
+    <property role="R4oN_" value="an attribute containing additional settings for the solver" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3DYDRw0WRrQ" role="lGtFl">
       <property role="Hh88m" value="solveControl" />

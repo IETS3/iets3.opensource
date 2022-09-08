@@ -309,7 +309,7 @@
       </concept>
       <concept id="2283544813052478257" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarCellsTransformationMenuPart" flags="ng" index="2X7gjp" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
@@ -492,7 +492,7 @@
           <node concept="3clFbS" id="1ZlHRbgqGGc" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgqGYf" role="3cqZAp">
               <node concept="Xl_RD" id="1ZlHRbgqGYe" role="3clFbG">
-                <property role="Xl_RC" value="an update expression for the currency" />
+                <property role="Xl_RC" value="a currency for the contained value update" />
               </node>
             </node>
           </node>

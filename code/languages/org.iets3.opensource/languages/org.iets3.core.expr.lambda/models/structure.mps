@@ -186,7 +186,7 @@
     <property role="34LRSv" value="exec" />
     <property role="3GE5qa" value="function" />
     <property role="EcuMT" value="7554398283340542342" />
-    <property role="R4oN_" value="execute a function value" />
+    <property role="R4oN_" value="execute a function, optionally with arguments" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6zmBjqUltlq" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -570,7 +570,7 @@
     <property role="3GE5qa" value="function" />
     <property role="TrG5h" value="FunctionStyleExecOp" />
     <property role="34LRSv" value="(" />
-    <property role="R4oN_" value="invoke a function value" />
+    <property role="R4oN_" value="execute a function, optionally with arguments" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5iD_kvlIV1w" role="1TKVEi">
       <property role="IQ2ns" value="6100571306011111520" />

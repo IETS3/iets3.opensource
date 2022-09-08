@@ -281,14 +281,16 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
+      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -406,6 +408,15 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <node concept="VPRnO" id="5WJNTMT$En4" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="1oAbb0" id="1ioR3Ucmgww" role="1oA3V3">
+          <node concept="3clFbS" id="1ioR3Ucmgwx" role="2VODD2">
+            <node concept="3clFbF" id="1ioR3UcmgwS" role="3cqZAp">
+              <node concept="Xl_RD" id="1ioR3UcmgwR" role="3clFbG">
+                <property role="Xl_RC" value="a name for the lambda argument" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -676,6 +687,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="1oAbb0" id="1ioR3Ucmc1K" role="1oA3V3">
+          <node concept="3clFbS" id="1ioR3Ucmc1L" role="2VODD2">
+            <node concept="3clFbF" id="1ioR3UcmgiE" role="3cqZAp">
+              <node concept="Xl_RD" id="1ioR3UcmgiD" role="3clFbG">
+                <property role="Xl_RC" value="a name for the function argument" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="5WJNTMTyRaU" role="3EZMnx">
         <node concept="3EZMnI" id="5WJNTMTyRb5" role="_tjki">
@@ -876,7 +896,7 @@
           <node concept="3clFbS" id="1ZlHRbgqCxS" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgqCxY" role="3cqZAp">
               <node concept="Xl_RD" id="1ZlHRbgqCxX" role="3clFbG">
-                <property role="Xl_RC" value="a type for the constant variable" />
+                <property role="Xl_RC" value="a type for the constant value" />
               </node>
             </node>
           </node>
@@ -899,7 +919,7 @@
           <node concept="3clFbS" id="1ZlHRbgqCX_" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgqCXF" role="3cqZAp">
               <node concept="Xl_RD" id="1ZlHRbgqCXE" role="3clFbG">
-                <property role="Xl_RC" value="a contract for the const variable" />
+                <property role="Xl_RC" value="a contract for the constant value" />
               </node>
             </node>
           </node>

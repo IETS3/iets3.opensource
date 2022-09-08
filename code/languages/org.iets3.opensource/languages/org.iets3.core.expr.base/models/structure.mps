@@ -270,7 +270,7 @@
     <property role="34LRSv" value="||" />
     <property role="3GE5qa" value="binary.p0600" />
     <property role="EcuMT" value="5115872837156723899" />
-    <property role="R4oN_" value="logical or" />
+    <property role="R4oN_" value="a logical or of two values" />
     <ref role="1TJDcQ" node="4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
     <node concept="PrWs8" id="4OgAv3N5RKc" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
@@ -443,7 +443,7 @@
     <property role="TrG5h" value="IfExpression" />
     <property role="34LRSv" value="if" />
     <property role="EcuMT" value="7849560302565679722" />
-    <property role="R4oN_" value="a conditional value (if-then-else)" />
+    <property role="R4oN_" value="a conditional statement expression (if-then-else)" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6NJfo6_rQ9F" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -680,7 +680,7 @@
     <property role="TrG5h" value="SuccessType" />
     <property role="34LRSv" value="success" />
     <property role="EcuMT" value="1919538606561852052" />
-    <property role="R4oN_" value="a successful case in an attempt" />
+    <property role="R4oN_" value="a successful attempt type" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="1Ez$z58L7El" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -698,7 +698,7 @@
     <property role="TrG5h" value="GenericErrorType" />
     <property role="34LRSv" value="error" />
     <property role="EcuMT" value="1919538606561852365" />
-    <property role="R4oN_" value="a generic error" />
+    <property role="R4oN_" value="a generic error types" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="1Ez$z58LP6p" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
@@ -737,7 +737,7 @@
     <property role="3GE5qa" value="error.types" />
     <property role="34LRSv" value="attempt" />
     <property role="EcuMT" value="6481804410366698223" />
-    <property role="R4oN_" value="a type that can represent errors" />
+    <property role="R4oN_" value="an attempt type" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="5BNZGjBtUbM" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
@@ -840,7 +840,7 @@
   <node concept="1TIwiD" id="69zaTr1POec">
     <property role="TrG5h" value="EmptyExpression" />
     <property role="EcuMT" value="7089558164908491660" />
-    <property role="R4oN_" value="an empty expression" />
+    <property role="R4oN_" value="an empty line in an expression block" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="6Y6Jk48g3sL" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
@@ -877,7 +877,7 @@
     <property role="3GE5qa" value="error" />
     <property role="TrG5h" value="SuccessValueExpr" />
     <property role="EcuMT" value="7089558164910719190" />
-    <property role="R4oN_" value="an actual return value (inside an attempt type)" />
+    <property role="R4oN_" value="the return value in a successful try (inside a try expression)" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="69zaTr1Yk3n" role="1TKVEi">
       <property role="20kJfa" value="try" />
@@ -1105,7 +1105,7 @@
     <property role="3GE5qa" value="tuples" />
     <property role="34LRSv" value="[" />
     <property role="EcuMT" value="1019070541450015930" />
-    <property role="R4oN_" value="a n-ary tuple" />
+    <property role="R4oN_" value="an n-ary tuple type" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="S$tO8ocniV" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1140,7 +1140,7 @@
     <property role="3GE5qa" value="tuples" />
     <property role="TrG5h" value="TupleAccessExpr" />
     <property role="EcuMT" value="2527679671886479690" />
-    <property role="R4oN_" value="index-based access of a tuple" />
+    <property role="R4oN_" value="an index-based access of a tuple" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="2ck7OjOLg5_" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1338,7 +1338,7 @@
     <property role="3GE5qa" value="validity" />
     <property role="TrG5h" value="OkTarget" />
     <property role="34LRSv" value="ok" />
-    <property role="R4oN_" value="check that the validity value is valid" />
+    <property role="R4oN_" value="the ok-case in a validity-check" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="78hTg1zpkGA" role="PzmwI">
       <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
@@ -1349,7 +1349,7 @@
     <property role="3GE5qa" value="validity" />
     <property role="TrG5h" value="ErrorTarget" />
     <property role="34LRSv" value="err" />
-    <property role="R4oN_" value="an error literal stored in the validity" />
+    <property role="R4oN_" value="the error-case in a validity-check" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="78hTg1zqzou" role="PzmwI">
       <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
@@ -1657,7 +1657,7 @@
     <property role="EcuMT" value="6932772747669876272" />
     <property role="TrG5h" value="DefaultValueExpression" />
     <property role="34LRSv" value="default" />
-    <property role="R4oN_" value="get the default/neutral value for a type" />
+    <property role="R4oN_" value="get the default/neutral value of a type" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="60Qa1k_nMSL" role="1TKVEi">
       <property role="IQ2ns" value="6932772747669876273" />
@@ -1679,7 +1679,7 @@
     <property role="EcuMT" value="411710798114972602" />
     <property role="TrG5h" value="FailExpr" />
     <property role="34LRSv" value="fail" />
-    <property role="R4oN_" value="terminate the computation with a fatal failure" />
+    <property role="R4oN_" value="a specification of a failure-case" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="mQGcCvPueY" role="1TKVEi">
       <property role="IQ2ns" value="411710798114972606" />
@@ -1934,7 +1934,7 @@
     <property role="3GE5qa" value="loc" />
     <property role="TrG5h" value="ProgramLocationUrlOp" />
     <property role="34LRSv" value="url" />
-    <property role="R4oN_" value="an url of programm location" />
+    <property role="R4oN_" value="an url of a programm location" />
     <ref role="1TJDcQ" node="4AahbtURx$c" resolve="ProgramLocationOp" />
   </node>
   <node concept="1TIwiD" id="4AahbtULQzU">
@@ -2120,7 +2120,7 @@
     <property role="EcuMT" value="9078496479923905756" />
     <property role="TrG5h" value="RevealerThis" />
     <property role="34LRSv" value="revealed" />
-    <property role="R4oN_" value="revealed" />
+    <property role="R4oN_" value="a reference to the revealed concept" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="4nmY9n8OEkH">

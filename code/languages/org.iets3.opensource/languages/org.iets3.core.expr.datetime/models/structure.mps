@@ -337,7 +337,7 @@
     <property role="3GE5qa" value="range" />
     <property role="TrG5h" value="MonthRangeYearOp" />
     <property role="34LRSv" value="yearRange" />
-    <property role="R4oN_" value="get the year component of a date" />
+    <property role="R4oN_" value="get the year range of a month range" />
     <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="DiscreteDateRangeOp" />
   </node>
   <node concept="1TIwiD" id="7aRvJQF3FvQ">
@@ -414,7 +414,7 @@
     <property role="TrG5h" value="AbstractRangeRelOp" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="range.rel" />
-    <property role="R4oN_" value="a base range operation on periods" />
+    <property role="R4oN_" value="a base range operation relating to another period" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
     <node concept="1TJgyj" id="7khFtBHyEjN" role="1TKVEi">
       <property role="IQ2ns" value="8435714728546444531" />
@@ -668,7 +668,7 @@
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="MakeTime" />
     <property role="34LRSv" value="makeTime" />
-    <property role="R4oN_" value="make a time value from an seconds, minutes and hours" />
+    <property role="R4oN_" value="make a time value from hour-, minute- and second-values" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3HiHZey9lU6" role="1TKVEi">
       <property role="IQ2ns" value="4274681253353315974" />

@@ -397,7 +397,7 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
@@ -5173,7 +5173,7 @@
             <node concept="3clFbS" id="1ZlHRbgqS4g" role="2VODD2">
               <node concept="3clFbF" id="1ZlHRbgqS9p" role="3cqZAp">
                 <node concept="Xl_RD" id="1ZlHRbgqS9r" role="3clFbG">
-                  <property role="Xl_RC" value="an optional name for the assert test item" />
+                  <property role="Xl_RC" value="an optional name for the assert that test item" />
                 </node>
               </node>
             </node>

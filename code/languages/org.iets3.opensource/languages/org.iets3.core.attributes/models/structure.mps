@@ -113,7 +113,7 @@
     <property role="EcuMT" value="4886573260947348600" />
     <property role="3GE5qa" value="attributes" />
     <property role="TrG5h" value="EmptyAttribute" />
-    <property role="R4oN_" value="an empty attribute" />
+    <property role="R4oN_" value="an empty line for attribute containers" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4fgA7QrG5M2" role="PzmwI">
       <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />

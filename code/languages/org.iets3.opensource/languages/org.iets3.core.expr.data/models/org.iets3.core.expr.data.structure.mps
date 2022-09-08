@@ -148,7 +148,7 @@
   <node concept="1TIwiD" id="cPLa7Fs1v4">
     <property role="EcuMT" value="231307155598219204" />
     <property role="TrG5h" value="DataTableType" />
-    <property role="R4oN_" value="a data table" />
+    <property role="R4oN_" value="a data table type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="cPLa7Fs1QU" role="1TKVEi">
       <property role="IQ2ns" value="231307155598220730" />
@@ -172,7 +172,7 @@
   <node concept="1TIwiD" id="cPLa7Ft09N">
     <property role="EcuMT" value="231307155598475891" />
     <property role="TrG5h" value="DataColOp" />
-    <property role="R4oN_" value="an operation on a data column definition" />
+    <property role="R4oN_" value="a data column definition target" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="cPLa7Ft0lw" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />

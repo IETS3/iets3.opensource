@@ -184,7 +184,7 @@
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
@@ -378,6 +378,15 @@
           <property role="ZjSer" value="allows lookup" />
           <ref role="1NtTu8" to="e9k1:2SzGbCMIroO" resolve="allowLookup" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          <node concept="uPpia" id="1DYBh1pi0B3" role="1djCvC">
+            <node concept="3clFbS" id="1DYBh1pi0B4" role="2VODD2">
+              <node concept="3clFbF" id="1DYBh1pi0FC" role="3cqZAp">
+                <node concept="Xl_RD" id="1DYBh1pi0FB" role="3clFbG">
+                  <property role="Xl_RC" value="Enable look ups on the data table" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="_tjkj" id="7F9023_OOa9" role="3EZMnx">
           <node concept="3EZMnI" id="7F9023_LY$o" role="_tjki">

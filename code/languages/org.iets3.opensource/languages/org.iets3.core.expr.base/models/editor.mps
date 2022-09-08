@@ -493,7 +493,7 @@
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
@@ -505,7 +505,7 @@
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
+        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
       <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
       <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ig" index="1Lj6DC" />
@@ -1589,7 +1589,7 @@
           <node concept="3clFbS" id="1ZlHRbgl1o0" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgl1r5" role="3cqZAp">
               <node concept="Xl_RD" id="1ZlHRbgl1r4" role="3clFbG">
-                <property role="Xl_RC" value="an else section" />
+                <property role="Xl_RC" value="an else clause" />
               </node>
             </node>
           </node>
@@ -2695,7 +2695,7 @@
           <node concept="3clFbS" id="1ZlHRbgqkK6" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgqkKJ" role="3cqZAp">
               <node concept="Xl_RD" id="2Zbcfw_fh$4" role="3clFbG">
-                <property role="Xl_RC" value="an error expression for the constraint" />
+                <property role="Xl_RC" value="an error expression for the postcondition" />
               </node>
             </node>
           </node>
@@ -2742,7 +2742,7 @@
           <node concept="3clFbS" id="1ZlHRbgql1V" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbgql6L" role="3cqZAp">
               <node concept="Xl_RD" id="2Zbcfw_fhFG" role="3clFbG">
-                <property role="Xl_RC" value="an error expression for the constraint" />
+                <property role="Xl_RC" value="an error expression for the precondition" />
               </node>
             </node>
           </node>
@@ -2766,7 +2766,7 @@
           <node concept="3clFbS" id="1ZlHRbfyzCz" role="2VODD2">
             <node concept="3clFbF" id="1ZlHRbfyzCJ" role="3cqZAp">
               <node concept="Xl_RD" id="2Zbcfw_dsX0" role="3clFbG">
-                <property role="Xl_RC" value="require that the enum literals are referenced by enum name.literal name" />
+                <property role="Xl_RC" value="show a warning instead of an error" />
               </node>
             </node>
           </node>
@@ -2776,6 +2776,15 @@
       <node concept="1kIj98" id="KaZMgylLmV" role="3EZMnx">
         <node concept="3F1sOY" id="KaZMgylLn3" role="1kIj9b">
           <ref role="1NtTu8" to="hm2y:KaZMgy4Ilu" resolve="expr" />
+        </node>
+        <node concept="1oAbb0" id="6052IH7NWpq" role="1oA3V3">
+          <node concept="3clFbS" id="6052IH7NWpr" role="2VODD2">
+            <node concept="3clFbF" id="6052IH7NWTI" role="3cqZAp">
+              <node concept="Xl_RD" id="6052IH7NWTH" role="3clFbG">
+                <property role="Xl_RC" value="a plain constraint with expression" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="_tjkj" id="68JOYCcXU8W" role="3EZMnx">
