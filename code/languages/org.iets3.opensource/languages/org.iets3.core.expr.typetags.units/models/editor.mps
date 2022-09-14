@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:5d3c1e26-8102-4cf4-aae4-75b28fa3d3a6(org.iets3.core.expr.typetags.units.editor)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations" version="0" />
@@ -1486,6 +1487,14 @@
                     <node concept="2pJPEk" id="cEt5uj8N1K" role="37vLTx">
                       <node concept="2pJPED" id="cEt5uj8N1L" role="2pJPEn">
                         <ref role="2pJxaS" to="b0gq:7eOyx9r3kR6" resolve="IntegerExponent" />
+                        <node concept="2pJxcG" id="2gyYG2XQJaS" role="2pJxcM">
+                          <ref role="2pJxcJ" to="b0gq:7eOyx9r3kR7" resolve="value" />
+                          <node concept="WxPPo" id="2gyYG2XQJga" role="28ntcv">
+                            <node concept="3cmrfG" id="2gyYG2XQJg9" role="WxPPp">
+                              <property role="3cmrfH" value="1" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>

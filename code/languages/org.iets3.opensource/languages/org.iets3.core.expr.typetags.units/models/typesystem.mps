@@ -375,7 +375,9 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -4830,6 +4832,116 @@
     <node concept="1YaCAy" id="3vbD2CjyZQG" role="1YuTPh">
       <property role="TrG5h" value="ur" />
       <ref role="1YaFvo" to="b0gq:7eOyx9r3kR5" resolve="UnitReference" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5j7ytyLZMbX">
+    <property role="TrG5h" value="check_FractionalExponent" />
+    <property role="3GE5qa" value="definition.exponent" />
+    <node concept="3clFbS" id="5j7ytyLZMbY" role="18ibNy">
+      <node concept="3cpWs8" id="5j7ytyLZNMU" role="3cqZAp">
+        <node concept="3cpWsn" id="5j7ytyLZNMV" role="3cpWs9">
+          <property role="TrG5h" value="numerator" />
+          <node concept="3Tqbb2" id="5j7ytyLZNMM" role="1tU5fm">
+            <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+          </node>
+          <node concept="2OqwBi" id="5j7ytyLZNMW" role="33vP2m">
+            <node concept="2OqwBi" id="5j7ytyLZNMX" role="2Oq$k0">
+              <node concept="1YBJjd" id="5j7ytyLZNMY" role="2Oq$k0">
+                <ref role="1YBMHb" node="5j7ytyLZMc0" resolve="fractionalExponent" />
+              </node>
+              <node concept="3TrEf2" id="5j7ytyLZNMZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="b0gq:3j3yk3gAnBu" resolve="fraction" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="5j7ytyLZNN0" role="2OqNvi">
+              <ref role="3Tt5mk" to="1qv1:4iu6t1eAWP7" resolve="numerator" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5j7ytyLZMdk" role="3cqZAp">
+        <node concept="3fqX7Q" id="5j7ytyLZOZs" role="3clFbw">
+          <node concept="2OqwBi" id="5j7ytyLZOZu" role="3fr31v">
+            <node concept="1PxgMI" id="5j7ytyLZOZv" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="5j7ytyLZOZw" role="3oSUPX">
+                <ref role="cht4Q" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
+              </node>
+              <node concept="37vLTw" id="5j7ytyLZOZx" role="1m5AlR">
+                <ref role="3cqZAo" node="5j7ytyLZNMV" resolve="numerator" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5j7ytyLZOZy" role="2OqNvi">
+              <ref role="37wK5l" to="b1h1:uGVYUijgRw" resolve="canBeInt" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5j7ytyLZMdm" role="3clFbx">
+          <node concept="2MkqsV" id="5j7ytyLZPfz" role="3cqZAp">
+            <node concept="Xl_RD" id="5j7ytyLZPgZ" role="2MkJ7o">
+              <property role="Xl_RC" value="The numerator must be an integer (assuming value 0 instead)" />
+            </node>
+            <node concept="37vLTw" id="5j7ytyLZPiP" role="1urrMF">
+              <ref role="3cqZAo" node="5j7ytyLZNMV" resolve="numerator" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="5j7ytyM02$T" role="3cqZAp" />
+      <node concept="3cpWs8" id="5j7ytyM02Gn" role="3cqZAp">
+        <node concept="3cpWsn" id="5j7ytyM02Go" role="3cpWs9">
+          <property role="TrG5h" value="denominator" />
+          <node concept="3Tqbb2" id="5j7ytyM02Gp" role="1tU5fm">
+            <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+          </node>
+          <node concept="2OqwBi" id="5j7ytyM02Gq" role="33vP2m">
+            <node concept="2OqwBi" id="5j7ytyM02Gr" role="2Oq$k0">
+              <node concept="1YBJjd" id="5j7ytyM02Gs" role="2Oq$k0">
+                <ref role="1YBMHb" node="5j7ytyLZMc0" resolve="fractionalExponent" />
+              </node>
+              <node concept="3TrEf2" id="5j7ytyM02Gt" role="2OqNvi">
+                <ref role="3Tt5mk" to="b0gq:3j3yk3gAnBu" resolve="fraction" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="5j7ytyM02Gu" role="2OqNvi">
+              <ref role="3Tt5mk" to="1qv1:4iu6t1eAWPa" resolve="denominator" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5j7ytyM03gA" role="3cqZAp">
+        <node concept="3fqX7Q" id="5j7ytyM03gB" role="3clFbw">
+          <node concept="2OqwBi" id="5j7ytyM03gC" role="3fr31v">
+            <node concept="1PxgMI" id="5j7ytyM03gD" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="5j7ytyM03gE" role="3oSUPX">
+                <ref role="cht4Q" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
+              </node>
+              <node concept="37vLTw" id="5j7ytyM03gF" role="1m5AlR">
+                <ref role="3cqZAo" node="5j7ytyM02Go" resolve="denominator" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5j7ytyM03gG" role="2OqNvi">
+              <ref role="37wK5l" to="b1h1:uGVYUijgRw" resolve="canBeInt" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5j7ytyM03gH" role="3clFbx">
+          <node concept="2MkqsV" id="5j7ytyM03gI" role="3cqZAp">
+            <node concept="Xl_RD" id="5j7ytyM03gJ" role="2MkJ7o">
+              <property role="Xl_RC" value="The denominator must be an integer (assuming value 1 instead)" />
+            </node>
+            <node concept="37vLTw" id="5j7ytyM03gK" role="1urrMF">
+              <ref role="3cqZAo" node="5j7ytyM02Go" resolve="denominator" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="5j7ytyM02FI" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="5j7ytyLZMc0" role="1YuTPh">
+      <property role="TrG5h" value="fractionalExponent" />
+      <ref role="1YaFvo" to="b0gq:3j3yk3gAgiT" resolve="FractionalExponent" />
     </node>
   </node>
 </model>
