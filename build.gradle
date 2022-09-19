@@ -167,7 +167,7 @@ task resolvePcollections(type: Sync) {
     }
 }
 
-task resolveDependencies(dependsOn: ['downloadJbr', resolveLanguageLibs, resolvePcollections])
+task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs, resolvePcollections])
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
@@ -184,16 +184,11 @@ if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
 ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = project.configurations.junitAnt.fileCollection { true }
-
-task setup {
-    doFirst{
-        project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
-    }
-    dependsOn resolveDependencies
-    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
+afterEvaluate {
+    project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
 }
 
-task buildAllScripts(type: BuildLanguages, dependsOn: [setup, resolveMps, resolveDependencies]) {
+task buildAllScripts(type: BuildLanguages, dependsOn: resolveDependencies) {
     script "$buildDir/scripts/build-allScripts.xml"
 }
 
@@ -271,29 +266,27 @@ static def addDependency(Object pom, Configuration config) {
 publishing {
     repositories {
         maven {
-                url = project.publishingRepository
-                if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
-                    credentials {
-                        username = project.findProperty("artifacts.itemis.cloud.user")
-                        password = project.findProperty("artifacts.itemis.cloud.pw")
-                    }
+            url = project.publishingRepository
+            if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
+                credentials {
+                    username = project.findProperty("artifacts.itemis.cloud.user")
+                    password = project.findProperty("artifacts.itemis.cloud.pw")
                 }
+            }
         }
-    }
-    repositories {
-        if(currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
-                maven {
-                    name = "GitHubPackages"
-                    url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")
-                    if(project.hasProperty("gpr.token")) {
-                        credentials {
-                            username = project.findProperty("gpr.user")
-                            password = project.findProperty("gpr.token")
-                        }
+        if (currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")
+                if (project.hasProperty("gpr.token")) {
+                    credentials {
+                        username = project.findProperty("gpr.user")
+                        password = project.findProperty("gpr.token")
                     }
                 }
             }
         }
+    }
 
     publications {
         openSource(MavenPublication) {
