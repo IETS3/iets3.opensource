@@ -10,7 +10,7 @@ buildscript {
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.6.281.3790039'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.7.288.4ea765f'
     }
 }
 
@@ -39,7 +39,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '11_0_10-b1145.96'
+    jbrVersion = '11_0_11-b1341.60'
 }
 
 // detect if we are in a CI build
