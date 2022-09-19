@@ -8,10 +8,10 @@ import java.time.format.FormatStyle
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.175.cc60dc8'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.177.46341c0'
     }
 }
 
@@ -111,14 +111,14 @@ if (!project.hasProperty("mbeddrVersion")) {
 }
 
 
-ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+ext.releaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
+ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots'
 ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
 
 ext.dependencyRepositories = [
-    'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-    'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+    'https://artifacts.itemis.cloud/repository/maven-mps/'
 ]
+    
 
 // 'artifacts' is used in the generated ant scripts as build output directory
 ext.artifactsDir = new File(buildDir, 'artifacts')
@@ -143,16 +143,11 @@ dependencies {
 }
 
 repositories {
-    mavenLocal()
+    // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
+    // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
     for (repoUrl in project.dependencyRepositories) {
         maven {
             url repoUrl
-            if (project.hasProperty('nexusUsername')) {
-                credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
-                }
-            }
         }
     }
     mavenCentral()
@@ -252,13 +247,13 @@ assemble.dependsOn packageAllScripts, packageLanguages, packageTests
 publishing {
     repositories {
         maven {
-            url project.publishingRepository
-            if (project.hasProperty('nexusUsername')) {
-                credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
+                url = project.publishingRepository
+                if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
+                    credentials {
+                        username = project.findProperty("artifacts.itemis.cloud.user")
+                        password = project.findProperty("artifacts.itemis.cloud.pw")
+                    }
                 }
-            }
         }
         maven {
                 name = "itemisCloud"
