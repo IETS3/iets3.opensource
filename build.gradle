@@ -7,10 +7,10 @@ import java.time.format.FormatStyle
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.6.281.3790039'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.7.288.4ea765f'
     }
 }
 
@@ -21,20 +21,15 @@ plugins {
 }
 
 ext.dependencyRepositories = [
-    'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-    'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+    'https://artifacts.itemis.cloud/repository/maven-mps/'
 ]
 
 repositories {
+    // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
+    // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
     for (repoUrl in project.dependencyRepositories) {
         maven {
             url repoUrl
-            if (project.hasProperty('nexusUsername')) {
-                credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
-                }
-            }
         }
     }
     mavenCentral()
@@ -44,7 +39,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '11_0_10-b1145.96'
+    jbrVersion = '11_0_11-b1341.60'
 }
 
 // detect if we are in a CI build
@@ -110,8 +105,8 @@ if (!project.hasProperty("mbeddrVersion")) {
 }
 
 
-ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+ext.releaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
+ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots'
 ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
 
 
@@ -172,7 +167,7 @@ task resolvePcollections(type: Sync) {
     }
 }
 
-task resolveDependencies(dependsOn: ['downloadJbr', resolveLanguageLibs, resolvePcollections])
+task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs, resolvePcollections])
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
@@ -189,16 +184,11 @@ if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
 ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = project.configurations.junitAnt.fileCollection { true }
-
-task setup {
-    doFirst{
-        project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
-    }
-    dependsOn resolveDependencies
-    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
+afterEvaluate {
+    project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
 }
 
-task buildAllScripts(type: BuildLanguages, dependsOn: [setup, resolveMps, resolveDependencies]) {
+task buildAllScripts(type: BuildLanguages, dependsOn: resolveDependencies) {
     script "$buildDir/scripts/build-allScripts.xml"
 }
 
@@ -276,41 +266,27 @@ static def addDependency(Object pom, Configuration config) {
 publishing {
     repositories {
         maven {
-            url project.publishingRepository
-            if (project.hasProperty('nexusUsername')) {
+            url = project.publishingRepository
+            if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
                 credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
+                    username = project.findProperty("artifacts.itemis.cloud.user")
+                    password = project.findProperty("artifacts.itemis.cloud.pw")
                 }
             }
         }
-        maven {
-                name = "itemisCloud"
-                url = version.toString().endsWith("-SNAPSHOT")
-                        ? uri("https://artifacts.itemis.cloud/repository/maven-mps-snapshots/")
-                        : uri("https://artifacts.itemis.cloud/repository/maven-mps-releases/")
-                if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
+        if (currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")
+                if (project.hasProperty("gpr.token")) {
                     credentials {
-                        username = project.findProperty("artifacts.itemis.cloud.user")
-                        password = project.findProperty("artifacts.itemis.cloud.pw")
+                        username = project.findProperty("gpr.user")
+                        password = project.findProperty("gpr.token")
                     }
                 }
+            }
         }
     }
-    repositories {
-        if(currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
-                maven {
-                    name = "GitHubPackages"
-                    url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")
-                    if(project.hasProperty("gpr.token")) {
-                        credentials {
-                            username = project.findProperty("gpr.user")
-                            password = project.findProperty("gpr.token")
-                        }
-                    }
-                }
-            }
-        }
 
     publications {
         openSource(MavenPublication) {
