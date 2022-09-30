@@ -263,8 +263,12 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
       <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
@@ -1843,6 +1847,15 @@
             <node concept="2iRfu4" id="1NRU0vcj02f" role="2iSdaV" />
             <node concept="VPM3Z" id="1NRU0vcj02g" role="3F10Kt">
               <property role="VOm3f" value="false" />
+            </node>
+          </node>
+          <node concept="uPpia" id="1ZlHRbgqZ1L" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqZ1M" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqZ29" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqZ28" role="3clFbG">
+                  <property role="Xl_RC" value="a default value for the root tree node" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

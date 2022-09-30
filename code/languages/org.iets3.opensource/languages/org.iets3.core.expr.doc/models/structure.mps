@@ -28,6 +28,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -66,6 +67,7 @@
     <property role="EcuMT" value="1665826838185500574" />
     <property role="TrG5h" value="Frame" />
     <property role="34LRSv" value="frame" />
+    <property role="R4oN_" value="a frame used for taking screenshots or as a bookmark target" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4vZ65iJZUo6" role="1TKVEl">
       <property role="IQ2nx" value="5187892047763187206" />
@@ -103,6 +105,7 @@
   <node concept="1TIwiD" id="1sudaVNqpiG">
     <property role="EcuMT" value="1665826838186398892" />
     <property role="TrG5h" value="FrameContent" />
+    <property role="R4oN_" value="the content of a frame" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1sudaVNqpje" role="1TKVEi">
       <property role="IQ2ns" value="1665826838186398926" />
@@ -116,6 +119,7 @@
     <property role="EcuMT" value="1665826838186423585" />
     <property role="TrG5h" value="ScreenshotPathSpec" />
     <property role="34LRSv" value="screenshot-path" />
+    <property role="R4oN_" value="a path for saving screenshots" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1sudaVNqDEu" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
@@ -132,6 +136,7 @@
     <property role="EcuMT" value="2522748330424834484" />
     <property role="TrG5h" value="Parallel" />
     <property role="34LRSv" value="par" />
+    <property role="R4oN_" value="two parallel frames" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2c2AzQcFDE9" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
@@ -158,6 +163,7 @@
     <property role="EcuMT" value="930561793196705888" />
     <property role="TrG5h" value="DotDotDot" />
     <property role="34LRSv" value="..." />
+    <property role="R4oN_" value="dot dot dot" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="NE1gl52$KT" role="1TKVEi">
       <property role="IQ2ns" value="930561793196706873" />
@@ -188,6 +194,7 @@
     <property role="EcuMT" value="5187892047765113241" />
     <property role="TrG5h" value="Bookmark" />
     <property role="34LRSv" value="bookmark" />
+    <property role="R4oN_" value="a bookmark item that can be displayed in the 'Bookmarks' view" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4vZ65iKhY_V" role="1TKVEi">
       <property role="IQ2ns" value="5187892047767923067" />
@@ -210,6 +217,7 @@
   <node concept="1TIwiD" id="4vZ65iKhY_T">
     <property role="EcuMT" value="5187892047767923065" />
     <property role="TrG5h" value="BookmarkRedirect" />
+    <property role="R4oN_" value="a bookmark redirect to another node" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4vZ65iK7gAz" role="1TKVEi">
       <property role="IQ2ns" value="5187892047765113251" />
@@ -221,6 +229,7 @@
   <node concept="1TIwiD" id="4vZ65iKiy7Y">
     <property role="EcuMT" value="5187892047768068606" />
     <property role="TrG5h" value="BookmarkAnnotation" />
+    <property role="R4oN_" value="a bookmark annotation for top level KernelF content" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="4vZ65iKiy7Z" role="lGtFl">
       <property role="Hh88m" value="bookmark" />
@@ -241,6 +250,7 @@
     <property role="EcuMT" value="6711455295499418158" />
     <property role="TrG5h" value="ExampleSolution" />
     <property role="34LRSv" value="example-solution" />
+    <property role="R4oN_" value="an example solution" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5OzSgxea3CJ" role="PzmwI">
       <ref role="PrY4T" to="yv47:1sudaVNn5LK" resolve="ITopLevelContainer" />

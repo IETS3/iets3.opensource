@@ -3535,7 +3535,7 @@
   </node>
   <node concept="18kY7G" id="4ptnK4jb$lt">
     <property role="TrG5h" value="check_BuilderAdapter" />
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <node concept="3clFbS" id="4ptnK4jb$lu" role="18ibNy">
       <node concept="2Gpval" id="4ptnK4jbQAG" role="3cqZAp">
         <node concept="2GrKxI" id="4ptnK4jbQAI" role="2Gsz3X">
@@ -3578,7 +3578,7 @@
   </node>
   <node concept="1YbPZF" id="4ptnK4jc3mZ">
     <property role="TrG5h" value="typeof_BuilderExpression" />
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <node concept="3clFbS" id="4ptnK4jc3n0" role="18ibNy">
       <node concept="1Z5TYs" id="4ptnK4jc3$b" role="3cqZAp">
         <node concept="mw_s8" id="4ptnK4jc3$v" role="1ZfhKB">
@@ -3609,7 +3609,7 @@
   </node>
   <node concept="1YbPZF" id="4ptnK4jc3Pf">
     <property role="TrG5h" value="typeof_RecordTypeAdapter" />
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <node concept="3clFbS" id="4ptnK4jc3Pg" role="18ibNy">
       <node concept="1Z5TYs" id="4ptnK4jc43S" role="3cqZAp">
         <node concept="mw_s8" id="4ptnK4jc44a" role="1ZfhKB">
@@ -3641,7 +3641,7 @@
   </node>
   <node concept="1YbPZF" id="4ptnK4jiabR">
     <property role="TrG5h" value="typeof_FieldSetter" />
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <node concept="3clFbS" id="4ptnK4jiabS" role="18ibNy">
       <node concept="nvevp" id="3N0gPb2kZ3u" role="3cqZAp">
         <node concept="3clFbS" id="3N0gPb2kZ3w" role="nvhr_">

@@ -54,9 +54,27 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+    </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -167,6 +185,15 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqBDG" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqBDH" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqBDM" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqBDL" role="3clFbG">
+                <property role="Xl_RC" value="arguments for the event" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="4NM7IHyCGnI" role="2iSdaV" />
     </node>
@@ -207,6 +234,15 @@
         <node concept="3F1sOY" id="4NM7IHyCReS" role="1kIj9b">
           <ref role="1NtTu8" to="44fz:4NM7IHyCGh1" resolve="type" />
         </node>
+        <node concept="uPpia" id="2zRMcT4P_hy" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_hz" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_h$" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_h_" role="3clFbG">
+                <property role="Xl_RC" value="an event argument with type" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="4NM7IHyCRcn" role="2iSdaV" />
     </node>
@@ -244,6 +280,15 @@
           <node concept="2EHx9g" id="4NM7IHyCReu" role="2czzBx" />
           <node concept="3vyZuw" id="4NM7IHyCRew" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqByB" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqByC" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqByZ" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqByY" role="3clFbG">
+                <property role="Xl_RC" value="constraints for the event reference" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

@@ -22,6 +22,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -51,6 +52,7 @@
   <node concept="1TIwiD" id="1u1U5lETVgp">
     <property role="TrG5h" value="NatLangCallSyntax" />
     <property role="EcuMT" value="1693890388431451161" />
+    <property role="R4oN_" value="invoke a natural language expression" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="1u1U5lETVju" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -69,6 +71,7 @@
   <node concept="1TIwiD" id="1u1U5lEW8iD">
     <property role="TrG5h" value="NatLangFunctionArgRef" />
     <property role="EcuMT" value="1693890388432028841" />
+    <property role="R4oN_" value="a reference to a function argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1u1U5lEW8iV" role="1TKVEi">
       <property role="20kJfa" value="param" />
@@ -83,6 +86,7 @@
   <node concept="1TIwiD" id="1u1U5lEW_jG">
     <property role="TrG5h" value="NatLangFunctionCall" />
     <property role="EcuMT" value="1693890388432147692" />
+    <property role="R4oN_" value="invoke a natural language function" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2uR5X5azSbC" role="1TKVEi">
       <property role="20kJfa" value="extFun" />
@@ -104,6 +108,7 @@
   <node concept="1TIwiD" id="1u1U5lEZLA4">
     <property role="TrG5h" value="NatLangArgument" />
     <property role="EcuMT" value="1693890388432984452" />
+    <property role="R4oN_" value="a natural language argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1u1U5lEZLAk" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

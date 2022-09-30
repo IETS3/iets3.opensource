@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -34,6 +35,7 @@
     <property role="EcuMT" value="1360296727230407275" />
     <property role="TrG5h" value="RandomVectorProducer" />
     <property role="34LRSv" value="random" />
+    <property role="R4oN_" value="produce n random vectors" />
     <ref role="1TJDcQ" to="av4b:1bwJEEfE00B" resolve="TestDataProducer" />
     <node concept="1TJgyi" id="1bwJEEfG$EL" role="1TKVEl">
       <property role="IQ2nx" value="1360296727230433969" />
@@ -50,6 +52,7 @@
     <property role="EcuMT" value="543046448977223537" />
     <property role="TrG5h" value="EqClassProducer" />
     <property role="34LRSv" value="eqclass" />
+    <property role="R4oN_" value="produce an equation class" />
     <ref role="1TJDcQ" to="av4b:1bwJEEfE00B" resolve="TestDataProducer" />
   </node>
 </model>

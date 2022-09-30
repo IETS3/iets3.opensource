@@ -40,7 +40,6 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="epcs" ref="b33d119e-196d-4497-977c-5c167b21fe33/r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.editor)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
-    <import index="vzlu" ref="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
@@ -392,11 +391,15 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -671,6 +674,15 @@
               <ref role="1NtTu8" to="av4b:1cd9HYWxxA0" resolve="setup" />
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqU80" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqU81" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqU87" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqU86" role="3clFbG">
+                  <property role="Xl_RC" value="a setup block for the test case" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="ub9nkyHAdw" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -788,6 +800,15 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqQZ4" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqQZ5" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqQZb" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqQZa" role="3clFbG">
+                  <property role="Xl_RC" value="an optional name for the assert test item" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="7aipPVpIgBX" role="2iSdaV" />
         <node concept="PMmxH" id="7aipPVpIgBY" role="3EZMnx">
@@ -813,6 +834,15 @@
       <node concept="1kHk_G" id="75Hf8iHwRHH" role="3EZMnx">
         <ref role="1NtTu8" to="av4b:75Hf8iHwLVy" resolve="strict" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="uPpia" id="1ZlHRbgaXQ0" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgaXQ1" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgaXQ7" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgaXQ6" role="3clFbG">
+                <property role="Xl_RC" value="check that the actual expression is a weak subtype of the expected expression" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="ub9nkyHAcw" role="3EZMnx">
         <ref role="1NtTu8" to="av4b:ub9nkyHAbI" resolve="op" />
@@ -1597,6 +1627,15 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqRwB" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqRwC" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqRwY" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqRx0" role="3clFbG">
+                  <property role="Xl_RC" value="an optional name for the assert test item" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="6HHp2WmZdRO" role="2iSdaV" />
         <node concept="3tD6jV" id="6HHp2Wn5dNr" role="3F10Kt">
@@ -1810,6 +1849,15 @@
             <node concept="3clFbF" id="5bElvpN2tIy" role="3cqZAp">
               <node concept="Xl_RD" id="5bElvpN2tIx" role="3clFbG">
                 <property role="Xl_RC" value="with" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqSKW" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqSKX" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqSL3" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqSL2" role="3clFbG">
+                <property role="Xl_RC" value="an error message for the constraint failed test item" />
               </node>
             </node>
           </node>
@@ -2701,6 +2749,15 @@
             <node concept="3clFbF" id="4e_7uAt7pbV" role="3cqZAp">
               <node concept="Xl_RD" id="4e_7uAt7pbW" role="3clFbG">
                 <property role="Xl_RC" value="with" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqTvK" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqTvL" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqTvR" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqTvQ" role="3clFbG">
+                <property role="Xl_RC" value="an error message for the invalid value test item" />
               </node>
             </node>
           </node>
@@ -5106,6 +5163,15 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqS4f" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqS4g" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqS9p" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqS9r" role="3clFbG">
+                  <property role="Xl_RC" value="an optional name for the assert that test item" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="5Pgo_ASpfTg" role="2iSdaV" />
         <node concept="PMmxH" id="5Pgo_ASpfTh" role="3EZMnx">
@@ -5296,6 +5362,15 @@
           </node>
           <node concept="3F1sOY" id="5Pgo_ASvSXh" role="3EZMnx">
             <ref role="1NtTu8" to="av4b:5Pgo_ASvSWM" resolve="messageMatcher" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqTIG" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqTIH" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqTIN" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqTIM" role="3clFbG">
+                <property role="Xl_RC" value="a value matcher for the is invalid matcher" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

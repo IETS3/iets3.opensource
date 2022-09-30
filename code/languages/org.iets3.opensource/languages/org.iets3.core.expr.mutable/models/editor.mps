@@ -302,12 +302,16 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="2283544813052478257" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarCellsTransformationMenuPart" flags="ng" index="2X7gjp" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -480,6 +484,15 @@
             <node concept="3clFbF" id="31BLocd1pTH" role="3cqZAp">
               <node concept="Xl_RD" id="31BLocd1pTG" role="3clFbG">
                 <property role="Xl_RC" value="from" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqGGb" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqGGc" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqGYf" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqGYe" role="3clFbG">
+                <property role="Xl_RC" value="a currency for the contained value update" />
               </node>
             </node>
           </node>
@@ -805,6 +818,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqHp$" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqHp_" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqHpF" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqHpE" role="3clFbG">
+                <property role="Xl_RC" value="context arguments for the command target" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="Z4fkwzaHUY" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1123,6 +1145,15 @@
           </node>
           <node concept="11LMrY" id="4IV0h47K7fV" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqIFd" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqIFe" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqIJN" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqIJM" role="3clFbG">
+                <property role="Xl_RC" value="context arguments for the value target" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

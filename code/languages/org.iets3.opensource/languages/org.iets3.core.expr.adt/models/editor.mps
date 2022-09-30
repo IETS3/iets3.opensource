@@ -210,12 +210,16 @@
       <concept id="7408935449007503509" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition" flags="ig" index="7duGs" />
       <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
       <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7408935449007570592" name="substituteCondition" index="7deOD" />
@@ -337,6 +341,15 @@
         </node>
         <node concept="1kHk_G" id="5a_u3OzNmH_" role="3EZMnx">
           <ref role="1NtTu8" to="v0r8:5a_u3OzNkkU" resolve="abstract" />
+          <node concept="uPpia" id="1ZlHRbf$yfo" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbf$yfp" role="2VODD2">
+              <node concept="3clFbF" id="7PVnOXzn_Dr" role="3cqZAp">
+                <node concept="Xl_RD" id="7PVnOXzn_Dq" role="3clFbG">
+                  <property role="Xl_RC" value="make the constructor abstract" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0A7n" id="5a_u3OyMtwB" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -490,6 +503,15 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="2zRMcT4P_fE" role="1djCvC">
+            <node concept="3clFbS" id="2zRMcT4P_fF" role="2VODD2">
+              <node concept="3clFbF" id="2zRMcT4P_fG" role="3cqZAp">
+                <node concept="Xl_RD" id="2zRMcT4P_fH" role="3clFbG">
+                  <property role="Xl_RC" value="an algebraic term with type" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="5a_u3Oz7hIr" role="3EZMnx">
           <property role="3F0ifm" value="(" />
@@ -547,6 +569,15 @@
           <node concept="3F1sOY" id="28$LOSBsDiq" role="1kIj9b">
             <ref role="1NtTu8" to="v0r8:5a_u3OyMSQm" resolve="type" />
           </node>
+          <node concept="uPpia" id="2zRMcT4P_fI" role="1djCvC">
+            <node concept="3clFbS" id="2zRMcT4P_fJ" role="2VODD2">
+              <node concept="3clFbF" id="2zRMcT4P_fK" role="3cqZAp">
+                <node concept="Xl_RD" id="2zRMcT4P_fL" role="3clFbG">
+                  <property role="Xl_RC" value="an algebraic term with type" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3EZMnI" id="28$LOSBsHij" role="3EZMnx">
           <node concept="2iRfu4" id="28$LOSBsHik" role="2iSdaV" />
@@ -600,6 +631,15 @@
                 <node concept="3clFbF" id="JV9IWPQdbI" role="3cqZAp">
                   <node concept="3clFbT" id="JV9IWPQdbH" role="3clFbG">
                     <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="uPpia" id="2zRMcT4P_fM" role="1djCvC">
+              <node concept="3clFbS" id="2zRMcT4P_fN" role="2VODD2">
+                <node concept="3clFbF" id="2zRMcT4P_fO" role="3cqZAp">
+                  <node concept="Xl_RD" id="2zRMcT4P_fP" role="3clFbG">
+                    <property role="Xl_RC" value="an algebraic term with type" />
                   </node>
                 </node>
               </node>
@@ -712,6 +752,15 @@
                   <node concept="3clFbF" id="JV9IWPQdqB" role="3cqZAp">
                     <node concept="3clFbT" id="JV9IWPQdqA" role="3clFbG">
                       <property role="3clFbU" value="false" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="uPpia" id="2zRMcT4P_fQ" role="1djCvC">
+                <node concept="3clFbS" id="2zRMcT4P_fR" role="2VODD2">
+                  <node concept="3clFbF" id="2zRMcT4P_fS" role="3cqZAp">
+                    <node concept="Xl_RD" id="2zRMcT4P_fT" role="3clFbG">
+                      <property role="Xl_RC" value="an algebraic term with type" />
                     </node>
                   </node>
                 </node>
@@ -950,6 +999,15 @@
       <node concept="_tjkj" id="5a_u3Oz5bbM" role="3EZMnx">
         <node concept="3F1sOY" id="5a_u3Oz5bbY" role="_tjki">
           <ref role="1NtTu8" to="v0r8:5a_u3Oz5b2N" resolve="cond" />
+        </node>
+        <node concept="uPpia" id="1ZlHRbgl0mN" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgl0mO" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgl0nb" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgl0na" role="3clFbG">
+                <property role="Xl_RC" value="a condition for the case" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="5a_u3O$2CzH" role="3EZMnx">
@@ -1494,6 +1552,15 @@
         <node concept="3F1sOY" id="28$LOSBCuhq" role="1kIj9b">
           <ref role="1NtTu8" to="v0r8:28$LOSBCugO" resolve="type" />
         </node>
+        <node concept="uPpia" id="2zRMcT4P_fU" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_fV" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_fW" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_fX" role="3clFbG">
+                <property role="Xl_RC" value="an argument of type" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="28$LOSBF$V5" role="3EZMnx">
         <node concept="3F1sOY" id="28$LOSBF$Vd" role="_tjki">
@@ -1504,6 +1571,15 @@
             <node concept="3clFbF" id="28$LOSBGsxg" role="3cqZAp">
               <node concept="Xl_RD" id="28$LOSBGsxf" role="3clFbG">
                 <property role="Xl_RC" value="*" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgkZZM" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgkZZN" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgl00a" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgl009" role="3clFbG">
+                <property role="Xl_RC" value="a multi argument for the constructor" />
               </node>
             </node>
           </node>

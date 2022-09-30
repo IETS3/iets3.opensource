@@ -12,6 +12,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -28,12 +29,14 @@
     <property role="EcuMT" value="1977415354602911755" />
     <property role="TrG5h" value="DefaultTrace" />
     <property role="34LRSv" value="default" />
+    <property role="R4oN_" value="a default trace" />
     <ref role="1TJDcQ" to="ci3w:1PzuxQOT$Zx" resolve="TraceKind" />
   </node>
   <node concept="1TIwiD" id="1HLccB8wPQ4">
     <property role="EcuMT" value="1977415354602970500" />
     <property role="TrG5h" value="RealizesKind" />
     <property role="34LRSv" value="realizes" />
+    <property role="R4oN_" value="a realizes kind" />
     <ref role="1TJDcQ" to="ci3w:1PzuxQOT$Zx" resolve="TraceKind" />
   </node>
 </model>
