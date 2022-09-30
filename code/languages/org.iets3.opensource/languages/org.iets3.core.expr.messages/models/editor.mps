@@ -507,7 +507,7 @@
           <node concept="3clFbS" id="2zRMcT4P_hR" role="2VODD2">
             <node concept="3clFbF" id="2zRMcT4P_hS" role="3cqZAp">
               <node concept="Xl_RD" id="2zRMcT4P_hT" role="3clFbG">
-                <property role="Xl_RC" value="a name for the message definition" />
+                <property role="Xl_RC" value="a message definition with name" />
               </node>
             </node>
           </node>
@@ -856,7 +856,7 @@
           <node concept="3clFbS" id="2zRMcT4P_hV" role="2VODD2">
             <node concept="3clFbF" id="2zRMcT4P_hW" role="3cqZAp">
               <node concept="Xl_RD" id="2zRMcT4P_hX" role="3clFbG">
-                <property role="Xl_RC" value="a name for the message argument" />
+                <property role="Xl_RC" value="a message argument with name" />
               </node>
             </node>
           </node>

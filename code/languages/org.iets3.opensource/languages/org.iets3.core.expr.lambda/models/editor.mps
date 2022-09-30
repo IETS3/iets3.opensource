@@ -412,7 +412,7 @@
           <node concept="3clFbS" id="2zRMcT4P_hB" role="2VODD2">
             <node concept="3clFbF" id="2zRMcT4P_hC" role="3cqZAp">
               <node concept="Xl_RD" id="2zRMcT4P_hD" role="3clFbG">
-                <property role="Xl_RC" value="a name for the lambda argument" />
+                <property role="Xl_RC" value="a lambda argument with name" />
               </node>
             </node>
           </node>
@@ -689,7 +689,7 @@
           <node concept="3clFbS" id="2zRMcT4P_hF" role="2VODD2">
             <node concept="3clFbF" id="2zRMcT4P_hG" role="3cqZAp">
               <node concept="Xl_RD" id="2zRMcT4P_hH" role="3clFbG">
-                <property role="Xl_RC" value="a name for the function argument" />
+                <property role="Xl_RC" value="a function argument with name" />
               </node>
             </node>
           </node>

@@ -238,7 +238,7 @@
           <node concept="3clFbS" id="2zRMcT4P_hz" role="2VODD2">
             <node concept="3clFbF" id="2zRMcT4P_h$" role="3cqZAp">
               <node concept="Xl_RD" id="2zRMcT4P_h_" role="3clFbG">
-                <property role="Xl_RC" value="a type of an event argument" />
+                <property role="Xl_RC" value="an event argument with type" />
               </node>
             </node>
           </node>

@@ -764,7 +764,7 @@
           <node concept="3clFbS" id="2zRMcT4P_gB" role="2VODD2">
             <node concept="3clFbF" id="2zRMcT4P_gC" role="3cqZAp">
               <node concept="Xl_RD" id="2zRMcT4P_gD" role="3clFbG">
-                <property role="Xl_RC" value="a key of a key-value pair" />
+                <property role="Xl_RC" value="a key-value pair with key" />
               </node>
             </node>
           </node>
@@ -787,7 +787,7 @@
           <node concept="3clFbS" id="2zRMcT4P_gF" role="2VODD2">
             <node concept="3clFbF" id="2zRMcT4P_gG" role="3cqZAp">
               <node concept="Xl_RD" id="2zRMcT4P_gH" role="3clFbG">
-                <property role="Xl_RC" value="a value of a key-value pair" />
+                <property role="Xl_RC" value="a key-value pair with value" />
               </node>
             </node>
           </node>

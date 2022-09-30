@@ -5246,7 +5246,7 @@
           <node concept="3clFbS" id="2zRMcT4P_i7" role="2VODD2">
             <node concept="3clFbF" id="2zRMcT4P_i8" role="3cqZAp">
               <node concept="Xl_RD" id="2zRMcT4P_i9" role="3clFbG">
-                <property role="Xl_RC" value="a name for the cell argument" />
+                <property role="Xl_RC" value="a cell argument with name" />
               </node>
             </node>
           </node>
@@ -5537,7 +5537,7 @@
             <node concept="3clFbS" id="2zRMcT4P_ib" role="2VODD2">
               <node concept="3clFbF" id="2zRMcT4P_ic" role="3cqZAp">
                 <node concept="Xl_RD" id="2zRMcT4P_id" role="3clFbG">
-                  <property role="Xl_RC" value="a cell constraint with a type" />
+                  <property role="Xl_RC" value="a cell constraint with type" />
                 </node>
               </node>
             </node>
