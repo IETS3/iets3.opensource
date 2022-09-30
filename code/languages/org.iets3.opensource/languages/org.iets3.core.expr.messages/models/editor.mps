@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -212,10 +212,8 @@
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
       <concept id="621193272061064420" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SideTransformationCondition" flags="ig" index="1m$hWp" />
-      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -505,10 +503,10 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <ref role="1k5W1q" node="3vxfdxbhnuU" resolve="message" />
         </node>
-        <node concept="1oAbb0" id="1ioR3Ucmq$F" role="1oA3V3">
-          <node concept="3clFbS" id="1ioR3Ucmq$G" role="2VODD2">
-            <node concept="3clFbF" id="1ioR3Ucmq_2" role="3cqZAp">
-              <node concept="Xl_RD" id="1ioR3Ucmq_1" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_hQ" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_hR" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_hS" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_hT" role="3clFbG">
                 <property role="Xl_RC" value="a name for the message definition" />
               </node>
             </node>
@@ -854,10 +852,10 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="1oAbb0" id="1ioR3Ucmqbp" role="1oA3V3">
-          <node concept="3clFbS" id="1ioR3Ucmqbq" role="2VODD2">
-            <node concept="3clFbF" id="1ioR3UcmqbK" role="3cqZAp">
-              <node concept="Xl_RD" id="1ioR3UcmqbJ" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_hU" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_hV" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_hW" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_hX" role="3clFbG">
                 <property role="Xl_RC" value="a name for the message argument" />
               </node>
             </node>

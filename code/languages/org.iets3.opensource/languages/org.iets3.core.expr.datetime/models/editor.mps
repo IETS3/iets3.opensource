@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -94,17 +94,19 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
         <child id="5083944728300220903" name="wrapped" index="yw3OG" />
       </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
       </concept>
-      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
       <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ig" index="1Lj6DC" />
       <concept id="2862331529394479405" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQueryCell" flags="ng" index="1Lj6DL">
         <child id="2862331529394487726" name="query" index="1Lj8FM" />
@@ -507,10 +509,10 @@
           <node concept="3F1sOY" id="7RGJ_88mQ14" role="1kIj9b">
             <ref role="1NtTu8" to="mi3w:7aRvJQE2nOA" resolve="value" />
           </node>
-          <node concept="1oAbb0" id="2Zbcfw$$2qJ" role="1oA3V3">
-            <node concept="3clFbS" id="2Zbcfw$$2qK" role="2VODD2">
-              <node concept="3clFbF" id="2Zbcfw$$2qP" role="3cqZAp">
-                <node concept="Xl_RD" id="2Zbcfw$$2qO" role="3clFbG">
+          <node concept="uPpia" id="2zRMcT4P_hi" role="1djCvC">
+            <node concept="3clFbS" id="2zRMcT4P_hj" role="2VODD2">
+              <node concept="3clFbF" id="2zRMcT4P_hk" role="3cqZAp">
+                <node concept="Xl_RD" id="2zRMcT4P_hl" role="3clFbG">
                   <property role="Xl_RC" value="a date delta literal" />
                 </node>
               </node>
@@ -949,10 +951,10 @@
           <node concept="3F1sOY" id="3HiHZeyhTto" role="1kIj9b">
             <ref role="1NtTu8" to="mi3w:3HiHZeyhTo1" resolve="value" />
           </node>
-          <node concept="1oAbb0" id="2Zbcfw$$2x2" role="1oA3V3">
-            <node concept="3clFbS" id="2Zbcfw$$2x3" role="2VODD2">
-              <node concept="3clFbF" id="2Zbcfw$$2x8" role="3cqZAp">
-                <node concept="Xl_RD" id="2Zbcfw$$2x7" role="3clFbG">
+          <node concept="uPpia" id="2zRMcT4P_hm" role="1djCvC">
+            <node concept="3clFbS" id="2zRMcT4P_hn" role="2VODD2">
+              <node concept="3clFbF" id="2zRMcT4P_ho" role="3cqZAp">
+                <node concept="Xl_RD" id="2zRMcT4P_hp" role="3clFbG">
                   <property role="Xl_RC" value="a time delta literal" />
                 </node>
               </node>

@@ -165,11 +165,11 @@
         <reference id="4944417823362115317" name="loop" index="a1vW_" />
       </concept>
       <concept id="2223190514810433423" name="org.iets3.core.expr.math.structure.ToReal" flags="ng" index="2p$nhL" />
-      <concept id="902756210908825427" name="org.iets3.core.expr.math.structure.CosinusExpression" flags="ng" index="2DubMI" />
-      <concept id="902756210919735489" name="org.iets3.core.expr.math.structure.TangensHyperbolicus" flags="ng" index="2E8jGW" />
-      <concept id="902756210922679116" name="org.iets3.core.expr.math.structure.SinusHyperbolicus" flags="ng" index="2Elt2L" />
-      <concept id="902756210914953420" name="org.iets3.core.expr.math.structure.TangensExpression" flags="ng" index="2EQzcL" />
-      <concept id="902756210934237227" name="org.iets3.core.expr.math.structure.ArcCosinus" flags="ng" index="2F17fm" />
+      <concept id="902756210908825427" name="org.iets3.core.expr.math.structure.CosineExpression" flags="ng" index="2DubMI" />
+      <concept id="902756210919735489" name="org.iets3.core.expr.math.structure.TangentHyperbolicus" flags="ng" index="2E8jGW" />
+      <concept id="902756210922679116" name="org.iets3.core.expr.math.structure.SineHyperbolicus" flags="ng" index="2Elt2L" />
+      <concept id="902756210914953420" name="org.iets3.core.expr.math.structure.TangentExpression" flags="ng" index="2EQzcL" />
+      <concept id="902756210934237227" name="org.iets3.core.expr.math.structure.ArcCosine" flags="ng" index="2F17fm" />
       <concept id="902756210928623998" name="org.iets3.core.expr.math.structure.TrigonometricExpression" flags="ng" index="2FEDE3">
         <child id="902756210928624001" name="expr" index="2FEDDW" />
       </concept>
@@ -182,18 +182,18 @@
       </concept>
       <concept id="6170801853434914874" name="org.iets3.core.expr.math.structure.ToInteger" flags="ng" index="KV7YH" />
       <concept id="4179418036532649528" name="org.iets3.core.expr.math.structure.PolynomialExpression" flags="ng" index="2LoXyR" />
-      <concept id="1916329580313991857" name="org.iets3.core.expr.math.structure.ArcSinus" flags="ng" index="2TE74C" />
-      <concept id="1916329580313566767" name="org.iets3.core.expr.math.structure.ArcTangensHyperbolicus" flags="ng" index="2TGvmQ" />
-      <concept id="1916329580313851730" name="org.iets3.core.expr.math.structure.ArcTangens" flags="ng" index="2THxNb" />
-      <concept id="1916329580312968505" name="org.iets3.core.expr.math.structure.CosinusHyperbolicus" flags="ng" index="2TI9qw" />
-      <concept id="1916329580313117066" name="org.iets3.core.expr.math.structure.ArcCosinusHyperbolicus" flags="ng" index="2TIMCj" />
-      <concept id="1916329580313400822" name="org.iets3.core.expr.math.structure.ArcSinusHyperbolicus" flags="ng" index="2TJRTJ" />
+      <concept id="1916329580313991857" name="org.iets3.core.expr.math.structure.ArcSine" flags="ng" index="2TE74C" />
+      <concept id="1916329580313566767" name="org.iets3.core.expr.math.structure.ArcTangentHyperbolicus" flags="ng" index="2TGvmQ" />
+      <concept id="1916329580313851730" name="org.iets3.core.expr.math.structure.ArcTangent" flags="ng" index="2THxNb" />
+      <concept id="1916329580312968505" name="org.iets3.core.expr.math.structure.CosineHyperbolicus" flags="ng" index="2TI9qw" />
+      <concept id="1916329580313117066" name="org.iets3.core.expr.math.structure.ArcCosineHyperbolicus" flags="ng" index="2TIMCj" />
+      <concept id="1916329580313400822" name="org.iets3.core.expr.math.structure.ArcSineHyperbolicus" flags="ng" index="2TJRTJ" />
       <concept id="3800040087837809793" name="org.iets3.core.expr.math.structure.IntegralExpression" flags="ng" index="2Vrmzi">
         <child id="3800040087837872067" name="body" index="2VrBIg" />
         <child id="3800040087837872066" name="upper" index="2VrBIh" />
         <child id="3800040087837872065" name="lower" index="2VrBIi" />
       </concept>
-      <concept id="5633249801129517229" name="org.iets3.core.expr.math.structure.SinusExpression" flags="ng" index="11s39O" />
+      <concept id="5633249801129517229" name="org.iets3.core.expr.math.structure.SineExpression" flags="ng" index="11s39O" />
       <concept id="6990314453967156784" name="org.iets3.core.expr.math.structure.PiExpression" flags="ng" index="39ZMf5" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
@@ -505,9 +505,7 @@
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
-      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
       <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ig" index="1Lj6DC" />
       <concept id="2862331529394479405" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQueryCell" flags="ng" index="1Lj6DL">
         <child id="2862331529394487726" name="query" index="1Lj8FM" />
@@ -2777,10 +2775,10 @@
         <node concept="3F1sOY" id="KaZMgylLn3" role="1kIj9b">
           <ref role="1NtTu8" to="hm2y:KaZMgy4Ilu" resolve="expr" />
         </node>
-        <node concept="1oAbb0" id="6052IH7NWpq" role="1oA3V3">
-          <node concept="3clFbS" id="6052IH7NWpr" role="2VODD2">
-            <node concept="3clFbF" id="6052IH7NWTI" role="3cqZAp">
-              <node concept="Xl_RD" id="6052IH7NWTH" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_gi" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_gj" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_gk" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_gl" role="3clFbG">
                 <property role="Xl_RC" value="a plain constraint with expression" />
               </node>
             </node>
@@ -6012,10 +6010,10 @@
               </node>
             </node>
           </node>
-          <node concept="1oAbb0" id="2Zbcfw$x9ZZ" role="1oA3V3">
-            <node concept="3clFbS" id="2Zbcfw$xa00" role="2VODD2">
-              <node concept="3clFbF" id="2Zbcfw$zT34" role="3cqZAp">
-                <node concept="Xl_RD" id="2Zbcfw$zT33" role="3clFbG">
+          <node concept="uPpia" id="2zRMcT4P_gm" role="1djCvC">
+            <node concept="3clFbS" id="2zRMcT4P_gn" role="2VODD2">
+              <node concept="3clFbF" id="2zRMcT4P_go" role="3cqZAp">
+                <node concept="Xl_RD" id="2zRMcT4P_gp" role="3clFbG">
                   <property role="Xl_RC" value="force away" />
                 </node>
               </node>

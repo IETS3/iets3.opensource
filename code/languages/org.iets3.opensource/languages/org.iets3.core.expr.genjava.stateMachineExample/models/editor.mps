@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -78,9 +78,7 @@
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
-      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -236,10 +234,10 @@
         <node concept="3F1sOY" id="4NM7IHyCReS" role="1kIj9b">
           <ref role="1NtTu8" to="44fz:4NM7IHyCGh1" resolve="type" />
         </node>
-        <node concept="1oAbb0" id="2Zbcfw$$2xW" role="1oA3V3">
-          <node concept="3clFbS" id="2Zbcfw$$2xX" role="2VODD2">
-            <node concept="3clFbF" id="2Zbcfw$$2Ax" role="3cqZAp">
-              <node concept="Xl_RD" id="2Zbcfw$$2Aw" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_hy" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_hz" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_h$" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_h_" role="3clFbG">
                 <property role="Xl_RC" value="a type of an event argument" />
               </node>
             </node>

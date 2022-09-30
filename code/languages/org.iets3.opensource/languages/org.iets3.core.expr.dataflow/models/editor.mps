@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -241,9 +241,7 @@
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
-      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -3450,10 +3448,10 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="1oAbb0" id="2Zbcfw$$2fG" role="1oA3V3">
-          <node concept="3clFbS" id="2Zbcfw$$2fH" role="2VODD2">
-            <node concept="3clFbF" id="2Zbcfw$$2g4" role="3cqZAp">
-              <node concept="Xl_RD" id="2Zbcfw$$2g3" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_gU" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_gV" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_gW" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_gX" role="3clFbG">
                 <property role="Xl_RC" value="the name of the incoming port" />
               </node>
             </node>
@@ -3507,10 +3505,10 @@
             <property role="Vbekb" value="g1_k_vY/BOLD" />
           </node>
         </node>
-        <node concept="1oAbb0" id="1DYBh1pkfGj" role="1oA3V3">
-          <node concept="3clFbS" id="1DYBh1pkfGk" role="2VODD2">
-            <node concept="3clFbF" id="1DYBh1pkfKR" role="3cqZAp">
-              <node concept="Xl_RD" id="1DYBh1pkfKQ" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_gY" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_gZ" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_h0" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_h1" role="3clFbG">
                 <property role="Xl_RC" value="the name of the outgoing port" />
               </node>
             </node>
@@ -3583,10 +3581,10 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="1oAbb0" id="1DYBh1pkg2r" role="1oA3V3">
-          <node concept="3clFbS" id="1DYBh1pkg2s" role="2VODD2">
-            <node concept="3clFbF" id="1DYBh1pkg2M" role="3cqZAp">
-              <node concept="Xl_RD" id="1DYBh1pkg2L" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_h2" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_h3" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_h4" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_h5" role="3clFbG">
                 <property role="Xl_RC" value="the name of the block parameter" />
               </node>
             </node>

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles" version="0" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
@@ -457,15 +457,13 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
-      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.IOptionalDescriptionText" flags="ng" index="1djCvD">
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText" index="1oA3V3" />
       </concept>
-      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell">
       <concept id="1161622981231" name="de.slisson.mps.richtext.customcell.structure.ConceptFunctionParameter_cell" flags="nn" index="1Q80Hy" />
@@ -789,10 +787,10 @@
           <node concept="3F1sOY" id="1ZlHRbhCPAp" role="1kIj9b">
             <ref role="1NtTu8" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
           </node>
-          <node concept="1oAbb0" id="1ZlHRbhCPAs" role="1oA3V3">
-            <node concept="3clFbS" id="1ZlHRbhCPAt" role="2VODD2">
-              <node concept="3clFbF" id="2Zbcfw$hxm3" role="3cqZAp">
-                <node concept="Xl_RD" id="2Zbcfw$hxm2" role="3clFbG">
+          <node concept="uPpia" id="2zRMcT4P_fa" role="1djCvC">
+            <node concept="3clFbS" id="2zRMcT4P_fb" role="2VODD2">
+              <node concept="3clFbF" id="2zRMcT4P_fc" role="3cqZAp">
+                <node concept="Xl_RD" id="2zRMcT4P_fd" role="3clFbG">
                   <property role="Xl_RC" value="a component with kind" />
                 </node>
               </node>
@@ -8690,10 +8688,10 @@
         <node concept="3F1sOY" id="mIQkxfpv8Y" role="1kIj9b">
           <ref role="1NtTu8" to="w9y2:mIQkxfpv7_" resolve="category" />
         </node>
-        <node concept="1oAbb0" id="2Zbcfw$hu3u" role="1oA3V3">
-          <node concept="3clFbS" id="2Zbcfw$hu3v" role="2VODD2">
-            <node concept="3clFbF" id="2Zbcfw$v2Ud" role="3cqZAp">
-              <node concept="Xl_RD" id="2Zbcfw$v2Uc" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_fe" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_ff" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_fg" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_fh" role="3clFbG">
                 <property role="Xl_RC" value="a port with category" />
               </node>
             </node>
@@ -10578,10 +10576,10 @@
           <node concept="3F1sOY" id="2Q7cX_iyKtQ" role="1kIj9b">
             <ref role="1NtTu8" to="w9y2:2Q7cX_iyKtq" resolve="trigger" />
           </node>
-          <node concept="1oAbb0" id="2Zbcfw$hv$b" role="1oA3V3">
-            <node concept="3clFbS" id="2Zbcfw$hv$c" role="2VODD2">
-              <node concept="3clFbF" id="2Zbcfw$hv$h" role="3cqZAp">
-                <node concept="Xl_RD" id="2Zbcfw$hv$g" role="3clFbG">
+          <node concept="uPpia" id="2zRMcT4P_fi" role="1djCvC">
+            <node concept="3clFbS" id="2zRMcT4P_fj" role="2VODD2">
+              <node concept="3clFbF" id="2zRMcT4P_fk" role="3cqZAp">
+                <node concept="Xl_RD" id="2zRMcT4P_fl" role="3clFbG">
                   <property role="Xl_RC" value="a simple behavior with trigger" />
                 </node>
               </node>
@@ -13481,10 +13479,10 @@
             <property role="1$x2rV" value="&lt;kind&gt;" />
             <ref role="1NtTu8" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
           </node>
-          <node concept="1oAbb0" id="2Zbcfw$hsWN" role="1oA3V3">
-            <node concept="3clFbS" id="2Zbcfw$hsWO" role="2VODD2">
-              <node concept="3clFbF" id="2Zbcfw$v1Jn" role="3cqZAp">
-                <node concept="Xl_RD" id="2Zbcfw$v1Jm" role="3clFbG">
+          <node concept="uPpia" id="2zRMcT4P_fm" role="1djCvC">
+            <node concept="3clFbS" id="2zRMcT4P_fn" role="2VODD2">
+              <node concept="3clFbF" id="2zRMcT4P_fo" role="3cqZAp">
+                <node concept="Xl_RD" id="2zRMcT4P_fp" role="3clFbG">
                   <property role="Xl_RC" value="a component with kind" />
                 </node>
               </node>

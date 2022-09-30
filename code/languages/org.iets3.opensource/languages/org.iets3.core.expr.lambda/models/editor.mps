@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -288,9 +288,7 @@
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
-      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -410,10 +408,10 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="1oAbb0" id="1ioR3Ucmgww" role="1oA3V3">
-          <node concept="3clFbS" id="1ioR3Ucmgwx" role="2VODD2">
-            <node concept="3clFbF" id="1ioR3UcmgwS" role="3cqZAp">
-              <node concept="Xl_RD" id="1ioR3UcmgwR" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_hA" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_hB" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_hC" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_hD" role="3clFbG">
                 <property role="Xl_RC" value="a name for the lambda argument" />
               </node>
             </node>
@@ -687,10 +685,10 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="1oAbb0" id="1ioR3Ucmc1K" role="1oA3V3">
-          <node concept="3clFbS" id="1ioR3Ucmc1L" role="2VODD2">
-            <node concept="3clFbF" id="1ioR3UcmgiE" role="3cqZAp">
-              <node concept="Xl_RD" id="1ioR3UcmgiD" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_hE" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_hF" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_hG" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_hH" role="3clFbG">
                 <property role="Xl_RC" value="a name for the function argument" />
               </node>
             </node>

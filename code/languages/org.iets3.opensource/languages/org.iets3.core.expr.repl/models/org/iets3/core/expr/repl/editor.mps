@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="3bdedd09-792a-4e15-a4db-83970df3ee86" name="de.itemis.mps.editor.collapsible" version="0" />
     <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
@@ -404,9 +404,7 @@
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
-        <child id="7463174232466963375" name="descriptionText_old" index="1oA3V3" />
       </concept>
-      <concept id="7463174232466929580" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_DescriptionText" flags="ig" index="1oAbb0" />
     </language>
     <language id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell">
       <concept id="8760592470373336790" name="com.mbeddr.mpsutil.framecell.structure.CellModel_FrameCell" flags="ng" index="3j0QqT">
@@ -5244,10 +5242,10 @@
         <node concept="3F0A7n" id="5xEoEMrzSn7" role="1kIj9b">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
-        <node concept="1oAbb0" id="1ioR3UcmDtS" role="1oA3V3">
-          <node concept="3clFbS" id="1ioR3UcmDtT" role="2VODD2">
-            <node concept="3clFbF" id="1ioR3UcmFvP" role="3cqZAp">
-              <node concept="Xl_RD" id="1ioR3UcmFvO" role="3clFbG">
+        <node concept="uPpia" id="2zRMcT4P_i6" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_i7" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_i8" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_i9" role="3clFbG">
                 <property role="Xl_RC" value="a name for the cell argument" />
               </node>
             </node>
@@ -5535,10 +5533,10 @@
           <node concept="3F1sOY" id="3_Nra3DTaTW" role="1kIj9b">
             <ref role="1NtTu8" to="wtll:3_Nra3DTaT0" resolve="type" />
           </node>
-          <node concept="1oAbb0" id="2Zbcfw$$3gA" role="1oA3V3">
-            <node concept="3clFbS" id="2Zbcfw$$3gB" role="2VODD2">
-              <node concept="3clFbF" id="2Zbcfw$$3gZ" role="3cqZAp">
-                <node concept="Xl_RD" id="2Zbcfw$$3gY" role="3clFbG">
+          <node concept="uPpia" id="2zRMcT4P_ia" role="1djCvC">
+            <node concept="3clFbS" id="2zRMcT4P_ib" role="2VODD2">
+              <node concept="3clFbF" id="2zRMcT4P_ic" role="3cqZAp">
+                <node concept="Xl_RD" id="2zRMcT4P_id" role="3clFbG">
                   <property role="Xl_RC" value="a cell constraint with a type" />
                 </node>
               </node>
