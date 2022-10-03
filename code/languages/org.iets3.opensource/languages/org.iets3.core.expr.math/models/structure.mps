@@ -21,6 +21,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -60,6 +61,7 @@
     <property role="TrG5h" value="AbsExpression" />
     <property role="34LRSv" value="abs" />
     <property role="EcuMT" value="4944417823362107289" />
+    <property role="R4oN_" value="absolute value" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4iu6t1eB97r" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -77,6 +79,7 @@
     <property role="34LRSv" value="frac" />
     <property role="EcuMT" value="4944417823362108742" />
     <property role="3GE5qa" value="rat" />
+    <property role="R4oN_" value="a fraction consisting of a numerator(above) and denominator(below)" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4iu6t1eAWP7" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -106,6 +109,7 @@
     <property role="TrG5h" value="LogExpression" />
     <property role="34LRSv" value="log" />
     <property role="EcuMT" value="4944417823362113527" />
+    <property role="R4oN_" value="logarithm" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4iu6t1eB9_$" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -130,6 +134,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="4944417823362115312" />
+    <property role="R4oN_" value="a base expression for mathematical loops" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="PWcNB4W2v_" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -172,6 +177,7 @@
   <node concept="1TIwiD" id="4iu6t1eAYrL">
     <property role="TrG5h" value="LoopVarRef" />
     <property role="EcuMT" value="4944417823362115313" />
+    <property role="R4oN_" value="reference to a loop expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4iu6t1eAYrP" role="1TKVEi">
       <property role="20kJfa" value="loop" />
@@ -187,6 +193,7 @@
     <property role="TrG5h" value="PowerExpression" />
     <property role="34LRSv" value="pow" />
     <property role="EcuMT" value="4944417823362146628" />
+    <property role="R4oN_" value="power" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4iu6t1eBdVy" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -210,6 +217,7 @@
     <property role="TrG5h" value="ProductLoopExpression" />
     <property role="34LRSv" value="product" />
     <property role="EcuMT" value="4944417823362148603" />
+    <property role="R4oN_" value="product" />
     <ref role="1TJDcQ" node="4iu6t1eAYrK" resolve="MathLoopExpr" />
     <node concept="1QGGSu" id="2xnqcRXw7FQ" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/product.png" />
@@ -219,6 +227,7 @@
     <property role="TrG5h" value="SumExpression" />
     <property role="34LRSv" value="sum" />
     <property role="EcuMT" value="4944417823362156001" />
+    <property role="R4oN_" value="sum" />
     <ref role="1TJDcQ" node="4iu6t1eAYrK" resolve="MathLoopExpr" />
     <node concept="1QGGSu" id="2xnqcRXw7FW" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/sum.png" />
@@ -228,6 +237,7 @@
     <property role="TrG5h" value="SqrtExpression" />
     <property role="34LRSv" value="sqrt" />
     <property role="EcuMT" value="4944417823362158056" />
+    <property role="R4oN_" value="square root" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4iu6t1eB9SW" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -244,6 +254,7 @@
     <property role="EcuMT" value="6990314453967156784" />
     <property role="TrG5h" value="PiExpression" />
     <property role="34LRSv" value="pi" />
+    <property role="R4oN_" value="a number denoting the ratio of a circle's circumference to its diameter" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1QGGSu" id="1yW0h04FUIO" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/pi.png" />
@@ -254,6 +265,7 @@
     <property role="TrG5h" value="ToInteger" />
     <property role="34LRSv" value="toInt" />
     <property role="3GE5qa" value="rat" />
+    <property role="R4oN_" value="convert to integer" />
     <ref role="1TJDcQ" node="5mz5Tt_jNyK" resolve="AbstractRatTarget" />
   </node>
   <node concept="1TIwiD" id="5mz5Tt_jNyK">
@@ -261,6 +273,7 @@
     <property role="TrG5h" value="AbstractRatTarget" />
     <property role="3GE5qa" value="rat" />
     <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="a base operation for operations on rational targets" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mz5Tt_jNyL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -271,6 +284,7 @@
     <property role="TrG5h" value="RatExpr" />
     <property role="34LRSv" value="rat" />
     <property role="3GE5qa" value="rat" />
+    <property role="R4oN_" value="a rational expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5mz5Tt_ip43" role="1TKVEi">
       <property role="IQ2ns" value="6170801853434532099" />
@@ -285,6 +299,7 @@
     <property role="TrG5h" value="ToDecimalTarget" />
     <property role="34LRSv" value="toDecimal" />
     <property role="3GE5qa" value="rat" />
+    <property role="R4oN_" value="convert to decimal with a precision of n digits" />
     <ref role="1TJDcQ" node="5mz5Tt_jNyK" resolve="AbstractRatTarget" />
     <node concept="1TJgyi" id="5mz5Tt_jL66" role="1TKVEl">
       <property role="IQ2nx" value="6170801853434892678" />
@@ -297,41 +312,47 @@
     <property role="TrG5h" value="RationalType" />
     <property role="34LRSv" value="rat" />
     <property role="3GE5qa" value="rat" />
+    <property role="R4oN_" value="a rational type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="4SHkH$fnm2H">
     <property role="EcuMT" value="5633249801129517229" />
-    <property role="TrG5h" value="SinusExpression" />
+    <property role="TrG5h" value="SineExpression" />
     <property role="34LRSv" value="sin" />
     <property role="3GE5qa" value="trigonometric" />
+    <property role="R4oN_" value="sine" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="M7eZQ_ZStj">
     <property role="EcuMT" value="902756210908825427" />
-    <property role="TrG5h" value="CosinusExpression" />
+    <property role="TrG5h" value="CosineExpression" />
     <property role="34LRSv" value="cos" />
     <property role="3GE5qa" value="trigonometric" />
+    <property role="R4oN_" value="cosine" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="M7eZQAngzc">
     <property role="EcuMT" value="902756210914953420" />
-    <property role="TrG5h" value="TangensExpression" />
+    <property role="TrG5h" value="TangentExpression" />
     <property role="34LRSv" value="tan" />
     <property role="3GE5qa" value="trigonometric" />
+    <property role="R4oN_" value="tangent" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="M7eZQADw31">
     <property role="EcuMT" value="902756210919735489" />
-    <property role="TrG5h" value="TangensHyperbolicus" />
+    <property role="TrG5h" value="TangentHyperbolicus" />
     <property role="34LRSv" value="tanh" />
     <property role="3GE5qa" value="trigonometric" />
+    <property role="R4oN_" value="tangent hyperbolicus" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="M7eZQAOIHc">
     <property role="EcuMT" value="902756210922679116" />
     <property role="3GE5qa" value="trigonometric" />
-    <property role="TrG5h" value="SinusHyperbolicus" />
+    <property role="TrG5h" value="SineHyperbolicus" />
     <property role="34LRSv" value="sinh" />
+    <property role="R4oN_" value="sine hyperbolicus" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="M7eZQBbV1s">
@@ -339,6 +360,7 @@
     <property role="3GE5qa" value="trigonometric" />
     <property role="EcuMT" value="902756210928623998" />
     <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="a base expression for trigonometric expressions" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="M7eZQBbq61" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -351,62 +373,71 @@
   <node concept="1TIwiD" id="M7eZQBwOwF">
     <property role="EcuMT" value="902756210934237227" />
     <property role="3GE5qa" value="trigonometric" />
-    <property role="TrG5h" value="ArcCosinus" />
+    <property role="TrG5h" value="ArcCosine" />
     <property role="34LRSv" value="acos" />
+    <property role="R4oN_" value="arcus cosine (inverse cosine)" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="1EoaTAz8bOT">
     <property role="EcuMT" value="1916329580312968505" />
     <property role="3GE5qa" value="trigonometric" />
-    <property role="TrG5h" value="CosinusHyperbolicus" />
+    <property role="TrG5h" value="CosineHyperbolicus" />
     <property role="34LRSv" value="cosh" />
+    <property role="R4oN_" value="cosine hyperbolicus" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="1EoaTAz8K6a">
     <property role="EcuMT" value="1916329580313117066" />
     <property role="3GE5qa" value="trigonometric" />
-    <property role="TrG5h" value="ArcCosinusHyperbolicus" />
+    <property role="TrG5h" value="ArcCosineHyperbolicus" />
     <property role="34LRSv" value="acosh" />
+    <property role="R4oN_" value="arcus cosine hyperbolicus (inverse cosine hyperbolicus)" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="1EoaTAz9PnQ">
     <property role="EcuMT" value="1916329580313400822" />
     <property role="3GE5qa" value="trigonometric" />
-    <property role="TrG5h" value="ArcSinusHyperbolicus" />
+    <property role="TrG5h" value="ArcSineHyperbolicus" />
     <property role="34LRSv" value="asinh" />
+    <property role="R4oN_" value="arcus sine hyperbolicus (inverse sine hyperbolicus)" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="1EoaTAzatSJ">
     <property role="EcuMT" value="1916329580313566767" />
     <property role="3GE5qa" value="trigonometric" />
-    <property role="TrG5h" value="ArcTangensHyperbolicus" />
+    <property role="TrG5h" value="ArcTangentHyperbolicus" />
     <property role="34LRSv" value="atanh" />
+    <property role="R4oN_" value="arcus tangent hyperbolicus (inverse tangent hyperbolicus)" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="1EoaTAzbzti">
     <property role="EcuMT" value="1916329580313851730" />
     <property role="3GE5qa" value="trigonometric" />
-    <property role="TrG5h" value="ArcTangens" />
+    <property role="TrG5h" value="ArcTangent" />
     <property role="34LRSv" value="atan" />
+    <property role="R4oN_" value="arcus tangent (inverse tangent)" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="1EoaTAzc5EL">
     <property role="EcuMT" value="1916329580313991857" />
     <property role="3GE5qa" value="trigonometric" />
-    <property role="TrG5h" value="ArcSinus" />
+    <property role="TrG5h" value="ArcSine" />
     <property role="34LRSv" value="asin" />
+    <property role="R4oN_" value="arcus sine (inverse sine)" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
   <node concept="1TIwiD" id="3C0hCYboTSS">
     <property role="EcuMT" value="4179418036532649528" />
     <property role="TrG5h" value="PolynomialExpression" />
     <property role="34LRSv" value="polynom" />
+    <property role="R4oN_" value="a polynomial" />
     <ref role="1TJDcQ" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
   </node>
   <node concept="1TIwiD" id="3iWt5efOhM1">
     <property role="EcuMT" value="3800040087837809793" />
     <property role="TrG5h" value="IntegralExpression" />
     <property role="34LRSv" value="integral" />
+    <property role="R4oN_" value="definite integral" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3iWt5efOwZ1" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -435,6 +466,7 @@
     <property role="3GE5qa" value="rat" />
     <property role="TrG5h" value="ToReal" />
     <property role="34LRSv" value="toReal" />
+    <property role="R4oN_" value="convert to real" />
     <ref role="1TJDcQ" node="5mz5Tt_jNyK" resolve="AbstractRatTarget" />
   </node>
 </model>

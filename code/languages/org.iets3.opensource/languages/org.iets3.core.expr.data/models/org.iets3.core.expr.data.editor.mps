@@ -4,7 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -14,9 +14,9 @@
     <import index="reoo" ref="r:1e59a084-7ebe-4e95-89ab-c58a7e396583(de.slisson.mps.tables.editor)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="hm5v" ref="r:3d8b4628-659e-4af1-a607-3cc893005b62(de.slisson.mps.tables.runtime.cells)" />
-    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="jgwk" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells.traversal(MPS.Editor/)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
     <import index="e9k1" ref="r:00903dee-f0b0-48de-9335-7cb3f90ae462(org.iets3.core.expr.data.structure)" implicit="true" />
@@ -144,6 +144,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -217,8 +220,12 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ng" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
@@ -430,6 +437,15 @@
           <property role="ZjSer" value="allows lookup" />
           <ref role="1NtTu8" to="e9k1:2SzGbCMIroO" resolve="allowLookup" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          <node concept="uPpia" id="1DYBh1pi0B3" role="1djCvC">
+            <node concept="3clFbS" id="1DYBh1pi0B4" role="2VODD2">
+              <node concept="3clFbF" id="1DYBh1pi0FC" role="3cqZAp">
+                <node concept="Xl_RD" id="1DYBh1pi0FB" role="3clFbG">
+                  <property role="Xl_RC" value="Enable look ups on the data table" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="_tjkj" id="7F9023_OOa9" role="3EZMnx">
           <node concept="3EZMnI" id="7F9023_LY$o" role="_tjki">
@@ -440,6 +456,15 @@
             <node concept="2iRfu4" id="7F9023_LY$t" role="2iSdaV" />
             <node concept="3F1sOY" id="7F9023_OOmA" role="3EZMnx">
               <ref role="1NtTu8" to="e9k1:7F9023_OEld" resolve="defaultLookupColumn" />
+            </node>
+          </node>
+          <node concept="uPpia" id="1ZlHRbgqrpG" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqrpH" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqrpM" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqrpL" role="3clFbG">
+                  <property role="Xl_RC" value="a default lookup column for the data table" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -920,8 +945,8 @@
             </node>
           </node>
           <node concept="3om3PG" id="4_sn_QHmQrX" role="3ot9go">
-            <ref role="1xHBj6" to="hm2y:6sdnDbSla17" resolve="Expression" />
             <ref role="1xHBhH" to="e9k1:cPLa7FpcCS" resolve="DataCell" />
+            <ref role="1xHBj6" to="hm2y:6sdnDbSla17" resolve="Expression" />
             <node concept="3clFbS" id="4_sn_QHmQrY" role="2VODD2">
               <node concept="3cpWs8" id="4_sn_QHnvmi" role="3cqZAp">
                 <node concept="3cpWsn" id="4_sn_QHnvmj" role="3cpWs9">

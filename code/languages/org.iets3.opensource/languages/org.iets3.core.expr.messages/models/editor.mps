@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -169,6 +169,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -195,16 +196,24 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
+      <concept id="484443907672824414" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SubstituteCondition" flags="ig" index="3gMsPO" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
+        <child id="484443907672828832" name="substituteCondition" index="3gMvMa" />
+        <child id="621193272061064649" name="sideTransformCondition" index="1m$hSO" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
+      <concept id="621193272061064420" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SideTransformationCondition" flags="ig" index="1m$hWp" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -494,10 +503,28 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <ref role="1k5W1q" node="3vxfdxbhnuU" resolve="message" />
         </node>
+        <node concept="uPpia" id="2zRMcT4P_hQ" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_hR" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_hS" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_hT" role="3clFbG">
+                <property role="Xl_RC" value="a message definition with name" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="3vxfdxbksd5" role="3EZMnx">
         <node concept="3F1sOY" id="3vxfdxbksdJ" role="_tjki">
           <ref role="1NtTu8" to="kelk:3vxfdxbksau" resolve="kind" />
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqFIm" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqFIn" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqFIs" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqFIr" role="3clFbG">
+                <property role="Xl_RC" value="a kind for the message definition" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="_tjkj" id="3vxfdxbdUnG" role="3EZMnx">
@@ -547,6 +574,15 @@
             </node>
           </node>
           <node concept="2iRfu4" id="3vxfdxbdUmg" role="2iSdaV" />
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqG5q" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqG5r" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqGgL" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqGgK" role="3clFbG">
+                <property role="Xl_RC" value="arguments for the message definition" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="3vxfdxbdM8z" role="3EZMnx">
@@ -698,6 +734,29 @@
         <node concept="VechU" id="7OtDX6qkaOM" role="3F10Kt">
           <property role="Vb096" value="fLwANPn/red" />
         </node>
+        <node concept="uPpia" id="1ZlHRbg48H7" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbg48H8" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbg48Hd" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbg48Hc" role="3clFbG">
+                <property role="Xl_RC" value="deprecated" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3gMsPO" id="1ZlHRbg7DGg" role="3gMvMa">
+          <node concept="3clFbS" id="1ZlHRbg7DGh" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbg7DGC" role="3cqZAp">
+              <node concept="3clFbT" id="1ZlHRbg7DGB" role="3clFbG" />
+            </node>
+          </node>
+        </node>
+        <node concept="1m$hWp" id="1ZlHRbg7DHc" role="1m$hSO">
+          <node concept="3clFbS" id="1ZlHRbg7DHd" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbg7DHi" role="3cqZAp">
+              <node concept="3clFbT" id="1ZlHRbg7DHh" role="3clFbG" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="3vxfdxbjbRV" role="2iSdaV" />
       <node concept="3EZMnI" id="3vxfdxbjc$D" role="3EZMnx">
@@ -793,6 +852,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="2zRMcT4P_hU" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_hV" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_hW" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_hX" role="3clFbG">
+                <property role="Xl_RC" value="a message argument with name" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="5WJNTMTyRaU" role="3EZMnx">
         <node concept="3EZMnI" id="5WJNTMTyRb5" role="_tjki">
@@ -811,6 +879,15 @@
           </node>
           <node concept="11L4FC" id="5WJNTMTzYOB" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqFnJ" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqFnK" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqFsk" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqFsj" role="3clFbG">
+                <property role="Xl_RC" value="a type for the message argument" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

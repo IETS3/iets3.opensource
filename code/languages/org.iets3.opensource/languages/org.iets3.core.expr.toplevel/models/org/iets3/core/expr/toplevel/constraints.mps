@@ -1795,7 +1795,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4ptnK4jbxYV">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="1M2myG" to="yv47:4ptnK4jbqZG" resolve="FieldSetter" />
     <node concept="1N5Pfh" id="4ptnK4jbxZ5" role="1Mr941">
       <ref role="1N5Vy1" to="yv47:4ptnK4jbqZQ" resolve="field" />
@@ -1833,7 +1833,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4ptnK4jb$kR">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="1M2myG" to="yv47:4ptnK4jbr8C" resolve="BuilderAdapter" />
   </node>
   <node concept="1M2fIO" id="mQGcCvA5Jk">
