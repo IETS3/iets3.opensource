@@ -14,6 +14,7 @@
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">f003a0fe-c140-41d7-a145-ea42368e581c(org.iets3.core.expr.stringvalidation)</dependency>
+    <dependency reexport="false">ad2cd2ae-226c-4046-9241-9790f9c3a35e(org.iets3.core.expr.stringvalidation.interpreter)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
@@ -71,6 +72,7 @@
     <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="0" />
     <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
     <module reference="f003a0fe-c140-41d7-a145-ea42368e581c(org.iets3.core.expr.stringvalidation)" version="0" />
+    <module reference="ad2cd2ae-226c-4046-9241-9790f9c3a35e(org.iets3.core.expr.stringvalidation.interpreter)" version="0" />
     <module reference="f38b69a3-1d33-4f9b-84e0-ac1095df2998(org.iets3.core.expr.stringvalidation.runtime)" version="0" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
   </dependencyVersions>
