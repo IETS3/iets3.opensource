@@ -2841,14 +2841,6 @@
         <ref role="3uigEE" node="5wF$o0BEpMb" resolve="XValidateStringExpression" />
       </node>
     </node>
-    <node concept="312cEg" id="5wF$o0BF349" role="jymVt">
-      <property role="TrG5h" value="context" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="5wF$o0BF34a" role="1B3o_S" />
-      <node concept="3uibUv" id="5wF$o0BF34c" role="1tU5fm">
-        <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
-      </node>
-    </node>
     <node concept="312cEg" id="5wF$o0BHuBe" role="jymVt">
       <property role="TrG5h" value="xenv" />
       <property role="3TUv4t" value="true" />
@@ -2880,30 +2872,11 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5wF$o0BF34d" role="3cqZAp">
-          <node concept="37vLTI" id="5wF$o0BF34f" role="3clFbG">
-            <node concept="2OqwBi" id="5wF$o0BF3ni" role="37vLTJ">
-              <node concept="Xjq3P" id="5wF$o0BF3om" role="2Oq$k0" />
-              <node concept="2OwXpG" id="5wF$o0BF3nl" role="2OqNvi">
-                <ref role="2Oxat5" node="5wF$o0BF349" resolve="context" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="5wF$o0BF34j" role="37vLTx">
-              <ref role="3cqZAo" node="5wF$o0BEs7o" resolve="context" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="37vLTG" id="5wF$o0BEpN2" role="3clF46">
         <property role="TrG5h" value="expr" />
         <node concept="3uibUv" id="5wF$o0BEpN1" role="1tU5fm">
           <ref role="3uigEE" node="5wF$o0BEpMb" resolve="XValidateStringExpression" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="5wF$o0BEs7o" role="3clF46">
-        <property role="TrG5h" value="context" />
-        <node concept="3uibUv" id="5wF$o0BEsgQ" role="1tU5fm">
-          <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
         </node>
       </node>
     </node>
@@ -3825,32 +3798,6 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="pOv0_XCRKk" role="3cqZAp">
-                          <node concept="2OqwBi" id="pOv0_XD2Pv" role="3clFbG">
-                            <node concept="2OqwBi" id="pOv0_XCV9S" role="2Oq$k0">
-                              <node concept="37vLTw" id="pOv0_XCRKi" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                              </node>
-                              <node concept="liA8E" id="pOv0_XCZg_" role="2OqNvi">
-                                <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="pOv0_XD9hF" role="2OqNvi">
-                              <ref role="37wK5l" to="2ahs:EWig$gA2Eu" resolve="push" />
-                              <node concept="37vLTw" id="pOv0_XDe2P" role="37wK5m">
-                                <ref role="3cqZAo" node="pOv0_XCxf6" resolve="temp" />
-                              </node>
-                              <node concept="2ShNRf" id="pOv0_XDzRm" role="37wK5m">
-                                <node concept="3rGOSV" id="pOv0_XDOYb" role="2ShVmc">
-                                  <node concept="3Tqbb2" id="pOv0_XDXQx" role="3rHrn6" />
-                                  <node concept="3uibUv" id="pOv0_XE2T4" role="3rHtpV">
-                                    <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
                         <node concept="3cpWs8" id="2LaXqmXqKDW" role="3cqZAp">
                           <node concept="3cpWsn" id="2LaXqmXqKDX" role="3cpWs9">
                             <property role="TrG5h" value="finding" />
@@ -3942,28 +3889,6 @@
                                     <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
                                   </node>
                                   <node concept="37vLTw" id="pOv0_XFseA" role="37wK5m">
-                                    <ref role="3cqZAo" node="pOv0_XF9nV" resolve="pbf" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3clFbF" id="pOv0_XF_Iq" role="3cqZAp">
-                              <node concept="2OqwBi" id="pOv0_XFLt5" role="3clFbG">
-                                <node concept="2OqwBi" id="pOv0_XFDJc" role="2Oq$k0">
-                                  <node concept="37vLTw" id="pOv0_XF_Io" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                                  </node>
-                                  <node concept="liA8E" id="pOv0_XFH$H" role="2OqNvi">
-                                    <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="pOv0_XFQj2" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-                                  <node concept="10M0yZ" id="pOv0_XFVld" role="37wK5m">
-                                    <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
-                                    <ref role="3cqZAo" to="iegw:6KviS2K$BOV" resolve="POSITION_BASED_FIND" />
-                                  </node>
-                                  <node concept="37vLTw" id="pOv0_XG4kg" role="37wK5m">
                                     <ref role="3cqZAo" node="pOv0_XF9nV" resolve="pbf" />
                                   </node>
                                 </node>
@@ -4104,24 +4029,6 @@
                               </node>
                               <node concept="liA8E" id="pOv0_XGMfZ" role="2OqNvi">
                                 <ref role="37wK5l" node="5wF$o0BGNpJ" resolve="pop" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbF" id="pOv0_XGUnJ" role="3cqZAp">
-                            <node concept="2OqwBi" id="pOv0_XH6Sz" role="3clFbG">
-                              <node concept="2OqwBi" id="pOv0_XGXSV" role="2Oq$k0">
-                                <node concept="37vLTw" id="pOv0_XGUnH" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                                </node>
-                                <node concept="liA8E" id="pOv0_XH3ED" role="2OqNvi">
-                                  <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="pOv0_XHd7i" role="2OqNvi">
-                                <ref role="37wK5l" to="2ahs:7F2vPZ3KY1h" resolve="pop" />
-                                <node concept="37vLTw" id="pOv0_XHi5d" role="37wK5m">
-                                  <ref role="3cqZAo" node="pOv0_XCxf6" resolve="temp" />
-                                </node>
                               </node>
                             </node>
                           </node>
@@ -5166,32 +5073,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbF" id="pOv0_Xhy7j" role="3cqZAp">
-                    <node concept="2OqwBi" id="pOv0_XhB$D" role="3clFbG">
-                      <node concept="2OqwBi" id="pOv0_Xh$oO" role="2Oq$k0">
-                        <node concept="37vLTw" id="pOv0_Xhy7h" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                        </node>
-                        <node concept="liA8E" id="pOv0_XhAmi" role="2OqNvi">
-                          <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="pOv0_XhF0p" role="2OqNvi">
-                        <ref role="37wK5l" to="2ahs:EWig$gA2Eu" resolve="push" />
-                        <node concept="37vLTw" id="pOv0_Xic3K" role="37wK5m">
-                          <ref role="3cqZAo" node="pOv0_Xi1T4" resolve="temp" />
-                        </node>
-                        <node concept="2ShNRf" id="pOv0_Xih7i" role="37wK5m">
-                          <node concept="3rGOSV" id="pOv0_Xil4a" role="2ShVmc">
-                            <node concept="3Tqbb2" id="pOv0_XiqkS" role="3rHrn6" />
-                            <node concept="3uibUv" id="pOv0_Xit_y" role="3rHtpV">
-                              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="pOv0_Xb7Z6" role="3cqZAp">
                     <node concept="2OqwBi" id="pOv0_Xba45" role="3clFbG">
                       <node concept="37vLTw" id="pOv0_Xb7Z4" role="2Oq$k0">
@@ -5204,26 +5085,6 @@
                           <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
                         </node>
                         <node concept="3clFbT" id="pOv0_XbpzM" role="37wK5m" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="pOv0_XhKX8" role="3cqZAp">
-                    <node concept="2OqwBi" id="pOv0_XhQxC" role="3clFbG">
-                      <node concept="2OqwBi" id="pOv0_XhNf8" role="2Oq$k0">
-                        <node concept="37vLTw" id="pOv0_XhKX6" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                        </node>
-                        <node concept="liA8E" id="pOv0_XhPjS" role="2OqNvi">
-                          <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="pOv0_XhU8c" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-                        <node concept="10M0yZ" id="pOv0_XhWId" role="37wK5m">
-                          <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
-                          <ref role="3cqZAo" to="iegw:6KviS2K$$ui" resolve="USE_MATCH_AS_FINDER" />
-                        </node>
-                        <node concept="3clFbT" id="pOv0_XhWIh" role="37wK5m" />
                       </node>
                     </node>
                   </node>
@@ -5271,28 +5132,6 @@
                           <ref role="3cqZAo" to="iegw:6KviS2K$BOV" resolve="POSITION_BASED_FIND" />
                         </node>
                         <node concept="37vLTw" id="pOv0_Xc0xN" role="37wK5m">
-                          <ref role="3cqZAo" node="2LaXqmXBAFV" resolve="predecessor" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="pOv0_Xiyjb" role="3cqZAp">
-                    <node concept="2OqwBi" id="pOv0_Xiyjd" role="3clFbG">
-                      <node concept="2OqwBi" id="pOv0_Xiyje" role="2Oq$k0">
-                        <node concept="37vLTw" id="pOv0_Xiyjf" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                        </node>
-                        <node concept="liA8E" id="pOv0_Xiyjg" role="2OqNvi">
-                          <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="pOv0_Xiyjh" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-                        <node concept="10M0yZ" id="pOv0_Xi_2k" role="37wK5m">
-                          <ref role="3cqZAo" to="iegw:6KviS2K$BOV" resolve="POSITION_BASED_FIND" />
-                          <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
-                        </node>
-                        <node concept="37vLTw" id="pOv0_Xi_2o" role="37wK5m">
                           <ref role="3cqZAo" node="2LaXqmXBAFV" resolve="predecessor" />
                         </node>
                       </node>
@@ -5391,24 +5230,6 @@
                         </node>
                         <node concept="liA8E" id="pOv0_XcdYq" role="2OqNvi">
                           <ref role="37wK5l" node="5wF$o0BGNpJ" resolve="pop" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="pOv0_XiFN1" role="3cqZAp">
-                      <node concept="2OqwBi" id="pOv0_XiFN3" role="3clFbG">
-                        <node concept="2OqwBi" id="pOv0_XiFN4" role="2Oq$k0">
-                          <node concept="37vLTw" id="pOv0_XiFN5" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                          </node>
-                          <node concept="liA8E" id="pOv0_XiFN6" role="2OqNvi">
-                            <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="pOv0_XiFN7" role="2OqNvi">
-                          <ref role="37wK5l" to="2ahs:7F2vPZ3KY1h" resolve="pop" />
-                          <node concept="37vLTw" id="pOv0_XiFN8" role="37wK5m">
-                            <ref role="3cqZAo" node="pOv0_Xi1T4" resolve="temp" />
-                          </node>
                         </node>
                       </node>
                     </node>
@@ -5563,32 +5384,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbF" id="pOv0_XknXL" role="3cqZAp">
-                    <node concept="2OqwBi" id="pOv0_XknXM" role="3clFbG">
-                      <node concept="2OqwBi" id="pOv0_XknXN" role="2Oq$k0">
-                        <node concept="37vLTw" id="pOv0_XknXO" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                        </node>
-                        <node concept="liA8E" id="pOv0_XknXP" role="2OqNvi">
-                          <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="pOv0_XknXQ" role="2OqNvi">
-                        <ref role="37wK5l" to="2ahs:EWig$gA2Eu" resolve="push" />
-                        <node concept="37vLTw" id="pOv0_XknXR" role="37wK5m">
-                          <ref role="3cqZAo" node="pOv0_Xkt6G" resolve="temp" />
-                        </node>
-                        <node concept="2ShNRf" id="pOv0_XknXS" role="37wK5m">
-                          <node concept="3rGOSV" id="pOv0_XknXT" role="2ShVmc">
-                            <node concept="3Tqbb2" id="pOv0_XknXU" role="3rHrn6" />
-                            <node concept="3uibUv" id="pOv0_XknXV" role="3rHtpV">
-                              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="pOv0_XknXW" role="3cqZAp">
                     <node concept="2OqwBi" id="pOv0_XknXX" role="3clFbG">
                       <node concept="37vLTw" id="pOv0_XknXY" role="2Oq$k0">
@@ -5601,26 +5396,6 @@
                           <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
                         </node>
                         <node concept="3clFbT" id="pOv0_XknY1" role="37wK5m" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="pOv0_XknY5" role="3cqZAp">
-                    <node concept="2OqwBi" id="pOv0_XknY6" role="3clFbG">
-                      <node concept="2OqwBi" id="pOv0_XknY7" role="2Oq$k0">
-                        <node concept="37vLTw" id="pOv0_XknY8" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                        </node>
-                        <node concept="liA8E" id="pOv0_XknY9" role="2OqNvi">
-                          <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="pOv0_XknYa" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-                        <node concept="10M0yZ" id="pOv0_XknYb" role="37wK5m">
-                          <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
-                          <ref role="3cqZAo" to="iegw:6KviS2K$$ui" resolve="USE_MATCH_AS_FINDER" />
-                        </node>
-                        <node concept="3clFbT" id="pOv0_XknYc" role="37wK5m" />
                       </node>
                     </node>
                   </node>
@@ -5668,28 +5443,6 @@
                           <ref role="3cqZAo" to="iegw:6KviS2K$BOV" resolve="POSITION_BASED_FIND" />
                         </node>
                         <node concept="37vLTw" id="pOv0_XkJOx" role="37wK5m">
-                          <ref role="3cqZAo" node="4xzR2e_x3Nj" resolve="successor" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="pOv0_XkJO_" role="3cqZAp">
-                    <node concept="2OqwBi" id="pOv0_XkJOA" role="3clFbG">
-                      <node concept="2OqwBi" id="pOv0_XkJOB" role="2Oq$k0">
-                        <node concept="37vLTw" id="pOv0_XkJOC" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                        </node>
-                        <node concept="liA8E" id="pOv0_XkJOD" role="2OqNvi">
-                          <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="pOv0_XkJOE" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-                        <node concept="10M0yZ" id="pOv0_XkJOF" role="37wK5m">
-                          <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
-                          <ref role="3cqZAo" to="iegw:6KviS2K$BOV" resolve="POSITION_BASED_FIND" />
-                        </node>
-                        <node concept="37vLTw" id="pOv0_XkJOG" role="37wK5m">
                           <ref role="3cqZAo" node="4xzR2e_x3Nj" resolve="successor" />
                         </node>
                       </node>
@@ -5780,24 +5533,6 @@
                         </node>
                         <node concept="liA8E" id="pOv0_Xli3u" role="2OqNvi">
                           <ref role="37wK5l" node="5wF$o0BGNpJ" resolve="pop" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="pOv0_Xli3v" role="3cqZAp">
-                      <node concept="2OqwBi" id="pOv0_Xli3w" role="3clFbG">
-                        <node concept="2OqwBi" id="pOv0_Xli3x" role="2Oq$k0">
-                          <node concept="37vLTw" id="pOv0_Xli3y" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                          </node>
-                          <node concept="liA8E" id="pOv0_Xli3z" role="2OqNvi">
-                            <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="pOv0_Xli3$" role="2OqNvi">
-                          <ref role="37wK5l" to="2ahs:7F2vPZ3KY1h" resolve="pop" />
-                          <node concept="37vLTw" id="pOv0_Xli3_" role="37wK5m">
-                            <ref role="3cqZAo" node="pOv0_Xkt6G" resolve="temp" />
-                          </node>
                         </node>
                       </node>
                     </node>
@@ -6051,28 +5786,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="5wF$o0BIJu_" role="3cqZAp">
-                  <node concept="2OqwBi" id="5wF$o0BINCe" role="3clFbG">
-                    <node concept="2OqwBi" id="5wF$o0BIKZi" role="2Oq$k0">
-                      <node concept="37vLTw" id="5wF$o0BIJuz" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                      </node>
-                      <node concept="liA8E" id="5wF$o0BIM$o" role="2OqNvi">
-                        <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="5wF$o0BIPhr" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-                      <node concept="10M0yZ" id="5wF$o0BIQW9" role="37wK5m">
-                        <ref role="3cqZAo" to="iegw:6KviS2K$BOV" resolve="POSITION_BASED_FIND" />
-                        <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
-                      </node>
-                      <node concept="37vLTw" id="5wF$o0BIZnL" role="37wK5m">
-                        <ref role="3cqZAo" node="2LaXqmX$FtJ" resolve="positionFind" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3cpWs8" id="2LaXqmX$FtU" role="3cqZAp">
                   <node concept="3cpWsn" id="2LaXqmX$FtV" role="3cpWs9">
                     <property role="TrG5h" value="positiveMatch" />
@@ -6285,28 +5998,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="5wF$o0BMHe4" role="3cqZAp">
-                <node concept="2OqwBi" id="5wF$o0BMM9a" role="3clFbG">
-                  <node concept="2OqwBi" id="5wF$o0BMIR6" role="2Oq$k0">
-                    <node concept="37vLTw" id="5wF$o0BMHe2" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                    </node>
-                    <node concept="liA8E" id="5wF$o0BMKVb" role="2OqNvi">
-                      <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="5wF$o0BMOXL" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-                    <node concept="10M0yZ" id="5wF$o0BMR8f" role="37wK5m">
-                      <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
-                      <ref role="3cqZAo" to="iegw:6KviS2K$$ui" resolve="USE_MATCH_AS_FINDER" />
-                    </node>
-                    <node concept="3clFbT" id="5wF$o0BMUcB" role="37wK5m">
-                      <property role="3clFbU" value="true" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs8" id="5wF$o0BNfWL" role="3cqZAp">
                 <node concept="3cpWsn" id="5wF$o0BNfWM" role="3cpWs9">
                   <property role="TrG5h" value="theThingToFind" />
@@ -6368,28 +6059,6 @@
                           <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
                         </node>
                         <node concept="2GrUjf" id="5wF$o0BOqZH" role="37wK5m">
-                          <ref role="2Gs0qQ" node="4lCUG7OufkZ" resolve="found" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="5wF$o0BOvva" role="3cqZAp">
-                    <node concept="2OqwBi" id="5wF$o0BOA0v" role="3clFbG">
-                      <node concept="2OqwBi" id="5wF$o0BOxCs" role="2Oq$k0">
-                        <node concept="37vLTw" id="5wF$o0BOvv8" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                        </node>
-                        <node concept="liA8E" id="5wF$o0BO$mf" role="2OqNvi">
-                          <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="5wF$o0BODFn" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-                        <node concept="10M0yZ" id="5wF$o0BOG6x" role="37wK5m">
-                          <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
-                          <ref role="3cqZAo" to="iegw:4lCUG7OuaLT" resolve="OCCURENCE_BASED_FINDING" />
-                        </node>
-                        <node concept="2GrUjf" id="5wF$o0BOG6_" role="37wK5m">
                           <ref role="2Gs0qQ" node="4lCUG7OufkZ" resolve="found" />
                         </node>
                       </node>
@@ -6786,28 +6455,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="pOv0_XpB32" role="3cqZAp">
-                <node concept="2OqwBi" id="pOv0_XpKd9" role="3clFbG">
-                  <node concept="2OqwBi" id="pOv0_XpE3l" role="2Oq$k0">
-                    <node concept="37vLTw" id="pOv0_XpB30" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-                    </node>
-                    <node concept="liA8E" id="pOv0_XpHth" role="2OqNvi">
-                      <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="pOv0_XpPKV" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-                    <node concept="10M0yZ" id="pOv0_XpTZG" role="37wK5m">
-                      <ref role="3cqZAo" to="iegw:6KviS2K$BOV" resolve="POSITION_BASED_FIND" />
-                      <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
-                    </node>
-                    <node concept="37vLTw" id="pOv0_Xq2pd" role="37wK5m">
-                      <ref role="3cqZAo" node="6KviS2K$Rdg" resolve="positionFind" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs8" id="6KviS2K$sSH" role="3cqZAp">
                 <node concept="3cpWsn" id="6KviS2K$sSI" role="3cpWs9">
                   <property role="TrG5h" value="positiveMatch" />
@@ -7023,33 +6670,6 @@
       </node>
       <node concept="3Tm1VV" id="5wF$o0BEq6$" role="1B3o_S" />
       <node concept="3clFbS" id="5wF$o0BEq6_" role="3clF47">
-        <node concept="3clFbF" id="5wF$o0BF8VB" role="3cqZAp">
-          <node concept="2OqwBi" id="5wF$o0BFb8K" role="3clFbG">
-            <node concept="2OqwBi" id="5wF$o0BF9qB" role="2Oq$k0">
-              <node concept="37vLTw" id="5wF$o0BF8V_" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wF$o0BF349" resolve="context" />
-              </node>
-              <node concept="liA8E" id="5wF$o0BFa8Y" role="2OqNvi">
-                <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
-              </node>
-            </node>
-            <node concept="liA8E" id="5wF$o0BFdEC" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
-              <node concept="10M0yZ" id="5wF$o0BFiAk" role="37wK5m">
-                <ref role="3cqZAo" to="iegw:4lCUG7OuaIy" resolve="CANDIDATE_STRING" />
-                <ref role="1PxDUh" to="iegw:4lCUG7OuaH_" resolve="Constants" />
-              </node>
-              <node concept="2OqwBi" id="5wF$o0BFksA" role="37wK5m">
-                <node concept="37vLTw" id="5wF$o0BFjM9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5wF$o0BEq2T" resolve="expr" />
-                </node>
-                <node concept="2OwXpG" id="5wF$o0BFkXn" role="2OqNvi">
-                  <ref role="2Oxat5" node="5wF$o0BEpY3" resolve="candidate" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="5wF$o0BHy95" role="3cqZAp">
           <node concept="2OqwBi" id="5wF$o0BHyKL" role="3clFbG">
             <node concept="37vLTw" id="5wF$o0BHy93" role="2Oq$k0">
