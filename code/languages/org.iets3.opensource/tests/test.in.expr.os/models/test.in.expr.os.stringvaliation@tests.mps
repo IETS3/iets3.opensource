@@ -10,6 +10,7 @@
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
     <use id="f003a0fe-c140-41d7-a145-ea42368e581c" name="org.iets3.core.expr.stringvalidation" version="0" />
+    <devkit ref="ffc660b2-672c-4f91-9291-8426ed4e58de(org.iets3.core.expr.genjava.advanced.devkit)" />
   </languages>
   <imports />
   <registry>
@@ -38,6 +39,9 @@
       </concept>
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
+      </concept>
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
+        <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
         <child id="5115872837157187954" name="expr" index="30bsDf" />
@@ -157,6 +161,7 @@
       <concept id="7791028896441459316" name="org.iets3.core.expr.stringvalidation.structure.CannotRepeatCheck" flags="ng" index="33biBO" />
       <concept id="7791028896441370852" name="org.iets3.core.expr.stringvalidation.structure.NotLetterOrDigitMatch" flags="ng" index="33b$d$" />
       <concept id="3709229751379256802" name="org.iets3.core.expr.stringvalidation.structure.StringResultMessagesOp" flags="ng" index="1afb4G" />
+      <concept id="3709229751379197145" name="org.iets3.core.expr.stringvalidation.structure.ValidateStringResultType" flags="ng" index="1afqwn" />
       <concept id="3709229751378830340" name="org.iets3.core.expr.stringvalidation.structure.NumberMatch" flags="ng" index="1ahN3a" />
       <concept id="3709229751378246922" name="org.iets3.core.expr.stringvalidation.structure.MaxCountCheck" flags="ng" index="1aj2B4">
         <property id="3709229751378246923" name="value" index="1aj2B5" />
@@ -633,23 +638,20 @@
     <node concept="1aga60" id="2LaXqmXAfIH" role="_iOnB">
       <property role="TrG5h" value="rule7a" />
       <property role="0Rz4W" value="-1379507436" />
-      <node concept="1QScDb" id="3dTPcTTisVV" role="1ahQXP">
-        <node concept="1afb4G" id="3dTPcTTisXo" role="1QScD9" />
-        <node concept="2L0563" id="2LaXqmXAfUa" role="30czhm">
-          <node concept="1afdae" id="2LaXqmXAfUq" role="2L6No8">
-            <ref role="1afue_" node="2LaXqmXAfTH" resolve="s" />
-          </node>
-          <node concept="2L6KGn" id="2LaXqmXAfUB" role="2L6KGm">
-            <node concept="2L79uL" id="2LaXqmXAfUA" role="2L79uM" />
-            <node concept="3s$PjS" id="2LaXqmXAfUL" role="2L79uO" />
-            <node concept="2hOZQp" id="2LaXqmXAxYu" role="2L7ll4">
-              <node concept="2L7lk8" id="2LaXqmXAxYv" role="2L7lkK" />
-              <node concept="3s$D55" id="2LaXqmXBTIW" role="2hOYAk">
-                <node concept="2L6Se2" id="2LaXqmXBTJ0" role="3s$D57">
-                  <ref role="2L6Se5" node="4lCUG7OsXKY" resolve="space" />
-                </node>
-                <node concept="3s$PjS" id="2LaXqmXBTJ7" role="3s$D57" />
+      <node concept="2L0563" id="2LaXqmXAfUa" role="1ahQXP">
+        <node concept="1afdae" id="2LaXqmXAfUq" role="2L6No8">
+          <ref role="1afue_" node="2LaXqmXAfTH" resolve="s" />
+        </node>
+        <node concept="2L6KGn" id="2LaXqmXAfUB" role="2L6KGm">
+          <node concept="2L79uL" id="2LaXqmXAfUA" role="2L79uM" />
+          <node concept="3s$PjS" id="2LaXqmXAfUL" role="2L79uO" />
+          <node concept="2hOZQp" id="2LaXqmXAxYu" role="2L7ll4">
+            <node concept="2L7lk8" id="2LaXqmXAxYv" role="2L7lkK" />
+            <node concept="3s$D55" id="2LaXqmXBTIW" role="2hOYAk">
+              <node concept="2L6Se2" id="2LaXqmXBTJ0" role="3s$D57">
+                <ref role="2L6Se5" node="4lCUG7OsXKY" resolve="space" />
               </node>
+              <node concept="3s$PjS" id="2LaXqmXBTJ7" role="3s$D57" />
             </node>
           </node>
         </node>
@@ -667,6 +669,7 @@
           </node>
         </node>
       </node>
+      <node concept="1afqwn" id="Tm7SWqLDV8" role="2zM23F" />
     </node>
     <node concept="_ixoA" id="2LaXqmXAfzT" role="_iOnB" />
     <node concept="_fkuM" id="4lCUG7OsyZf" role="_iOnB">
