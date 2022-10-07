@@ -5910,7 +5910,7 @@
                               </node>
                               <node concept="2OqwBi" id="6QTlKYwZ1_e" role="33vP2m">
                                 <node concept="liA8E" id="6QTlKYwZ1_l" role="2OqNvi">
-                                  <ref role="37wK5l" to="oq0c:4AahbtV2JOQ" resolve="data" />
+                                  <ref role="37wK5l" to="oq0c:4AahbtV2JOQ" resolve="getData" />
                                 </node>
                                 <node concept="2OqwBi" id="6QTlKYwZ1_h" role="2Oq$k0">
                                   <node concept="37vLTw" id="6QTlKYwZ1_i" role="2Oq$k0">
@@ -6322,7 +6322,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="2LEfNl$XNIh" role="2OqNvi">
-                        <ref role="37wK5l" to="oq0c:4AahbtURenE" resolve="source" />
+                        <ref role="37wK5l" to="oq0c:4AahbtURenE" resolve="getSource" />
                       </node>
                     </node>
                   </node>

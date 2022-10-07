@@ -230,7 +230,7 @@
             </node>
           </node>
           <node concept="liA8E" id="4AahbtV39TK" role="2OqNvi">
-            <ref role="37wK5l" to="oq0c:4AahbtV2JOQ" resolve="data" />
+            <ref role="37wK5l" to="oq0c:4AahbtV2JOQ" resolve="getData" />
           </node>
         </node>
       </node>
@@ -265,7 +265,7 @@
             </node>
           </node>
           <node concept="liA8E" id="4AahbtV38qA" role="2OqNvi">
-            <ref role="37wK5l" to="oq0c:4AahbtURenE" resolve="source" />
+            <ref role="37wK5l" to="oq0c:4AahbtURenE" resolve="getSource" />
           </node>
         </node>
       </node>
@@ -300,7 +300,7 @@
             </node>
           </node>
           <node concept="liA8E" id="4AahbtV39nd" role="2OqNvi">
-            <ref role="37wK5l" to="oq0c:4AahbtUNo_P" resolve="text" />
+            <ref role="37wK5l" to="oq0c:4AahbtUNo_P" resolve="getText" />
           </node>
         </node>
       </node>
