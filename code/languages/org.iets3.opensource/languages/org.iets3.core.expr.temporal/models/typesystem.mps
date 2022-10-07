@@ -22,8 +22,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="x8ug" ref="r:761e0f2a-4ffc-4d74-83bd-c6255a04ca73(org.iets3.core.expr.temporal.behavior)" implicit="true" />
   </imports>
@@ -376,35 +376,19 @@
             </node>
           </node>
         </node>
-        <node concept="1Wc70l" id="7UPMhn0RUWU" role="3clFbw">
-          <node concept="3fqX7Q" id="7UPMhn0RXb_" role="3uHU7w">
-            <node concept="2OqwBi" id="7UPMhn0RXbB" role="3fr31v">
-              <node concept="2OqwBi" id="7UPMhn0RXbC" role="2Oq$k0">
-                <node concept="2OqwBi" id="7UPMhn0RXbD" role="2Oq$k0">
-                  <node concept="1YBJjd" id="7UPMhn0RXbE" role="2Oq$k0">
-                    <ref role="1YBMHb" node="50smQ1V92UJ" resolve="tl" />
-                  </node>
-                  <node concept="3TrEf2" id="7UPMhn0RXbF" role="2OqNvi">
-                    <ref role="3Tt5mk" to="l462:7SY$c$i5rRe" resolve="typeConstraint" />
-                  </node>
-                </node>
-                <node concept="2yIwOk" id="7UPMhn0RXbG" role="2OqNvi" />
-              </node>
-              <node concept="liA8E" id="7UPMhn0RXbH" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
-              </node>
+        <node concept="2OqwBi" id="2lDkbojtFxb" role="3clFbw">
+          <node concept="2OqwBi" id="2lDkbojtExt" role="2Oq$k0">
+            <node concept="1YBJjd" id="2lDkbojtE3q" role="2Oq$k0">
+              <ref role="1YBMHb" node="50smQ1V92UJ" resolve="tl" />
+            </node>
+            <node concept="3TrEf2" id="2lDkbojtEUP" role="2OqNvi">
+              <ref role="3Tt5mk" to="l462:7SY$c$i5rRe" resolve="typeConstraint" />
             </node>
           </node>
-          <node concept="2OqwBi" id="7SY$c$idH3I" role="3uHU7B">
-            <node concept="2OqwBi" id="7SY$c$idGMc" role="2Oq$k0">
-              <node concept="1YBJjd" id="7SY$c$idGGD" role="2Oq$k0">
-                <ref role="1YBMHb" node="50smQ1V92UJ" resolve="tl" />
-              </node>
-              <node concept="3TrEf2" id="7SY$c$idGPU" role="2OqNvi">
-                <ref role="3Tt5mk" to="l462:7SY$c$i5rRe" resolve="typeConstraint" />
-              </node>
+          <node concept="1mIQ4w" id="2lDkbojtFVW" role="2OqNvi">
+            <node concept="chp4Y" id="2lDkbojtG3j" role="cj9EA">
+              <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
             </node>
-            <node concept="3x8VRR" id="7SY$c$idHhG" role="2OqNvi" />
           </node>
         </node>
       </node>
