@@ -2703,6 +2703,54 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="BVrsO9UEqL" role="_iOnB" />
+    <node concept="_ixoA" id="BVrsO9UEIV" role="_iOnB" />
+    <node concept="1aga60" id="BVrsO9UyOm" role="_iOnB">
+      <property role="TrG5h" value="backslashNotAtBeginning" />
+      <node concept="1ahQXy" id="BVrsO9UzbB" role="1ahQWs">
+        <property role="TrG5h" value="s" />
+        <node concept="30bdrU" id="BVrsO9UzbC" role="3ix9CU" />
+      </node>
+      <node concept="1QScDb" id="BVrsO9UzeT" role="1ahQXP">
+        <node concept="jdvZO" id="BVrsO9UzeU" role="1QScD9" />
+        <node concept="2L0563" id="BVrsO9UzeV" role="30czhm">
+          <node concept="1afdae" id="BVrsO9UzeW" role="2L6No8">
+            <ref role="1afue_" node="BVrsO9UzbB" resolve="s" />
+          </node>
+          <node concept="3sACuA" id="BVrsO9UF3L" role="2L6KGm">
+            <node concept="2L7lkD" id="BVrsO9UFdx" role="3s_0Xt" />
+            <node concept="3soY0h" id="BVrsO9UFam" role="3sACuF" />
+            <node concept="2L6SOr" id="BVrsO9UFd_" role="3s_0Xw">
+              <property role="2L6SOq" value="\\" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_fkuM" id="BVrsO9UFuH" role="_iOnB">
+      <property role="TrG5h" value="testBackslash" />
+      <node concept="_fkuZ" id="BVrsO9UFMT" role="_fkp5">
+        <node concept="_fku$" id="BVrsO9UFMU" role="_fkur" />
+        <node concept="1af_rf" id="BVrsO9UFQd" role="_fkuY">
+          <ref role="1afhQb" node="BVrsO9UyOm" resolve="backslashNotAtBeginning" />
+          <node concept="30bdrP" id="BVrsO9UFTs" role="1afhQ5">
+            <property role="30bdrQ" value="hello" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="BVrsO9UJn_" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="BVrsO9UKiT" role="_fkp5">
+        <node concept="_fku$" id="BVrsO9UKiU" role="_fkur" />
+        <node concept="1af_rf" id="BVrsO9UKiV" role="_fkuY">
+          <property role="0Rz4W" value="142573957" />
+          <ref role="1afhQb" node="BVrsO9UyOm" resolve="backslashNotAtBeginning" />
+          <node concept="30bdrP" id="BVrsO9UKiW" role="1afhQ5">
+            <property role="30bdrQ" value="\\hello" />
+          </node>
+        </node>
+        <node concept="2vmpn$" id="BVrsO9UMv_" role="_fkuS" />
+      </node>
+    </node>
   </node>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
     <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
