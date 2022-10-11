@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -116,6 +116,10 @@
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="1838685759388685703" name="jetbrains.mps.lang.editor.structure.TransformationFeature_DescriptionText" flags="ng" index="3cqGtN">
+        <child id="1838685759388685704" name="query" index="3cqGtW" />
+      </concept>
+      <concept id="1838685759388690401" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_DescriptionText" flags="ig" index="3cqJkl" />
       <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
@@ -133,6 +137,9 @@
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="7291101478617127464" name="jetbrains.mps.lang.editor.structure.IExtensibleTransformationMenuPart" flags="ng" index="1joUw2">
+        <child id="8954657570916349207" name="features" index="2jZA2a" />
       </concept>
       <concept id="7597241200646296619" name="jetbrains.mps.lang.editor.structure.QueryFunction_SNode" flags="in" index="3k4GqP" />
       <concept id="7597241200646296617" name="jetbrains.mps.lang.editor.structure.NavigatableNodeStyleClassItem" flags="ln" index="3k4GqR">
@@ -268,11 +275,15 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
       <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
@@ -363,6 +374,15 @@
         <node concept="3F1sOY" id="6KxoTHgSIsZ" role="_tjki">
           <ref role="1NtTu8" to="zzzn:6KxoTHgSIsv" resolve="effect" />
         </node>
+        <node concept="uPpia" id="1ZlHRbgqBMq" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqBMr" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqBMx" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqBMw" role="3clFbG">
+                <property role="Xl_RC" value="an effect declaration for the function type" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="6zmBjqUjGZT" role="3EZMnx">
         <ref role="1NtTu8" to="zzzn:6zmBjqUjGYT" resolve="returnType" />
@@ -388,6 +408,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="2zRMcT4P_hA" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_hB" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_hC" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_hD" role="3clFbG">
+                <property role="Xl_RC" value="a lambda argument with name" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="5WJNTMTzFsc" role="3EZMnx">
         <node concept="3EZMnI" id="5WJNTMTzFsn" role="_tjki">
@@ -406,6 +435,15 @@
           </node>
           <node concept="11L4FC" id="5WJNTMT$Elm" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqBUF" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqBUG" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqBUM" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqBUL" role="3clFbG">
+                <property role="Xl_RC" value="a type for the lambda argument" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -647,6 +685,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="2zRMcT4P_hE" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_hF" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_hG" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_hH" role="3clFbG">
+                <property role="Xl_RC" value="a function argument with name" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="5WJNTMTyRaU" role="3EZMnx">
         <node concept="3EZMnI" id="5WJNTMTyRb5" role="_tjki">
@@ -665,6 +712,15 @@
           </node>
           <node concept="11L4FC" id="5WJNTMTzYOB" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqBGi" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqBGj" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqBGF" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqBGE" role="3clFbG">
+                <property role="Xl_RC" value="a type for the function argument" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -834,6 +890,15 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqCxR" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqCxS" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqCxY" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqCxX" role="3clFbG">
+                <property role="Xl_RC" value="a type for the constant value" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="KaZMgy4KRG" role="3EZMnx">
         <node concept="3F1sOY" id="KaZMgy4KS8" role="_tjki">
@@ -844,6 +909,15 @@
             <node concept="3clFbF" id="KaZMgy4KSF" role="3cqZAp">
               <node concept="Xl_RD" id="KaZMgy4KSE" role="3clFbG">
                 <property role="Xl_RC" value="where" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqCX$" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqCX_" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqCXF" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqCXE" role="3clFbG">
+                <property role="Xl_RC" value="a contract for the constant value" />
               </node>
             </node>
           </node>
@@ -1218,6 +1292,17 @@
             </node>
           </node>
         </node>
+        <node concept="3cqGtN" id="1ZlHRbgXF$w" role="2jZA2a">
+          <node concept="3cqJkl" id="1ZlHRbgXF$x" role="3cqGtW">
+            <node concept="3clFbS" id="1ZlHRbgXF$y" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgXFIe" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgXFId" role="3clFbG">
+                  <property role="Xl_RC" value="wrap with a block" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1Qtc8_" id="3wXkdMVsKfa" role="IW6Ez">
@@ -1275,6 +1360,17 @@
                 </node>
                 <node concept="TSZUe" id="3wXkdMVsKf$" role="2OqNvi">
                   <node concept="7Obwk" id="3wXkdMVsKf_" role="25WWJ7" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cqGtN" id="1ZlHRbgXFSd" role="2jZA2a">
+          <node concept="3cqJkl" id="1ZlHRbgXFSe" role="3cqGtW">
+            <node concept="3clFbS" id="1ZlHRbgXFSf" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgXG8D" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgXG8F" role="3clFbG">
+                  <property role="Xl_RC" value="wrap with a block" />
                 </node>
               </node>
             </node>
@@ -1474,6 +1570,15 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqC30" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqC31" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqC37" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqC36" role="3clFbG">
+                <property role="Xl_RC" value="a type for the local variable declaration" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="1VmWkC0z5TX" role="3EZMnx">
         <node concept="3F1sOY" id="1VmWkC0z5TY" role="_tjki">
@@ -1484,6 +1589,15 @@
             <node concept="3clFbF" id="1VmWkC0z5U1" role="3cqZAp">
               <node concept="Xl_RD" id="1VmWkC0z5U2" role="3clFbG">
                 <property role="Xl_RC" value="where" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqC5c" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqC5d" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqC9M" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqC9L" role="3clFbG">
+                <property role="Xl_RC" value="a contract for the local variable declaration" />
               </node>
             </node>
           </node>
@@ -1599,6 +1713,17 @@
                   <node concept="chp4Y" id="3WWvqarSh3N" role="cj9EA">
                     <ref role="cht4Q" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cqGtN" id="1ZlHRbgXE5T" role="2jZA2a">
+          <node concept="3cqJkl" id="1ZlHRbgXE5X" role="3cqGtW">
+            <node concept="3clFbS" id="1ZlHRbgXE61" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgXEqx" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgXEqw" role="3clFbG">
+                  <property role="Xl_RC" value="create a local, constant value" />
                 </node>
               </node>
             </node>
