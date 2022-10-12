@@ -21,10 +21,10 @@ We take care of porting changes done in older supported MPS versions to the newe
 For details see [wiki](https://github.com/IETS3/iets3.opensource/wiki/Supported-MPS-Versions).
 
 ### What MPS versions are currently supported? 
-- MPS 2021.1 (branch: [master](https://github.com/IETS3/iets3.opensource/tree/master)) 
+- MPS 2021.2 (branch: [master](https://github.com/IETS3/iets3.opensource/tree/master)) 
+- MPS 2021.1 (branch: [maintenance/mps20211](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20211)) 
 - MPS 2020.3 (branch: [maintenance/mps20203](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20203)) 
 - MPS 2020.2 (branch: [maintenance/mps20202](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20202)) 
-- MPS 2020.1 (branch: [maintenance/mps20201](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20201)) 
 
 ## Community
 

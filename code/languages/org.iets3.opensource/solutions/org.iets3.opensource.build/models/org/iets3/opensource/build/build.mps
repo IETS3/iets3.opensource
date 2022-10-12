@@ -147,6 +147,9 @@
       <concept id="1265949165890536423" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleJars" flags="ng" index="L2wRC">
         <reference id="1265949165890536425" name="module" index="L2wRA" />
       </concept>
+      <concept id="8971171305100238972" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyTargetLanguage" flags="ng" index="Rbm2T">
+        <reference id="3189788309731922643" name="language" index="1E1Vl2" />
+      </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
@@ -8788,6 +8791,21 @@
         <node concept="1E0d5M" id="3qKzW8QJ_KG" role="1E1XAP">
           <ref role="1E0d5P" node="3qKzW8QxJyw" resolve="org.iets3.core.expr.base.shared.runtime" />
         </node>
+        <node concept="1SiIV0" id="4W3jsc44qH7" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qH8" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qH9" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qHa" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KZG" resolve="jetbrains.mps.baseLanguage.closures" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qHb" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qHc" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="lH$Puj5DFq" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9012,6 +9030,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="4W3jsc44qHX" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qHY" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="26tZ$Z4qVBy" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9142,6 +9165,21 @@
         <node concept="1E0d5M" id="2xddOZL76P6" role="1E1XAP">
           <ref role="1E0d5P" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
         </node>
+        <node concept="1SiIV0" id="4W3jsc44qIn" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qIo" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qIp" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qIq" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KZG" resolve="jetbrains.mps.baseLanguage.closures" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qIr" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qIs" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="26tZ$Z4qWbm" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9264,6 +9302,26 @@
             <node concept="3qWCbU" id="1RMC8GHEwUs" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qIP" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qIQ" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qIR" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qIS" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KZG" resolve="jetbrains.mps.baseLanguage.closures" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qIT" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qIU" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qIV" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qIW" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
           </node>
         </node>
       </node>
@@ -9553,6 +9611,16 @@
         <node concept="1E0d5M" id="2xddOZL76QC" role="1E1XAP">
           <ref role="1E0d5P" node="2xddOZL74Qj" resolve="org.iets3.core.expr.datetime.runtime" />
         </node>
+        <node concept="1SiIV0" id="4W3jsc44qJH" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qJI" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qJJ" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qJK" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7sID8G9sQTG" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9693,6 +9761,21 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qK9" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qKa" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qKb" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qKc" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KZG" resolve="jetbrains.mps.baseLanguage.closures" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4W3jsc44qKd" role="3bR37C">
+          <node concept="Rbm2T" id="4W3jsc44qKe" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
           </node>
         </node>
       </node>
