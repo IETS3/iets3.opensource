@@ -3733,6 +3733,11 @@
             <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
           </node>
         </node>
+        <node concept="1SiIV0" id="230lIJVLiE" role="3bR37C">
+          <node concept="3bR9La" id="230lIJVLiF" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5a_u3OzLedQ" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -4918,6 +4923,11 @@
         <node concept="1SiIV0" id="6ycJs$Ayp7j" role="3bR37C">
           <node concept="3bR9La" id="6ycJs$Ayp7k" role="1SiIV1">
             <ref role="3bR37D" node="3FexrMiSOe$" resolve="org.iets3.core.expr.plugin" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="230lIJVLk_" role="3bR37C">
+          <node concept="3bR9La" id="230lIJVLkA" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
           </node>
         </node>
       </node>
