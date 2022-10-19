@@ -26,6 +26,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -4053,13 +4054,23 @@
     <property role="3GE5qa" value="enum" />
     <node concept="3clFbS" id="bAwKVX3rBk" role="18ibNy">
       <node concept="3clFbJ" id="bAwKVX3sq$" role="3cqZAp">
-        <node concept="3fqX7Q" id="bAwKVX3tpr" role="3clFbw">
-          <node concept="2OqwBi" id="bAwKVX3tpt" role="3fr31v">
-            <node concept="1YBJjd" id="bAwKVX3tpu" role="2Oq$k0">
+        <node concept="22lmx$" id="2ZPMv$jtQmx" role="3clFbw">
+          <node concept="2OqwBi" id="2ZPMv$jtQRz" role="3uHU7w">
+            <node concept="1YBJjd" id="2ZPMv$jtQw2" role="2Oq$k0">
               <ref role="1YBMHb" node="bAwKVX3rBm" resolve="enumDeclaration" />
             </node>
-            <node concept="2qgKlT" id="bAwKVX3tpv" role="2OqNvi">
-              <ref role="37wK5l" to="nu60:3Y6fbK16sYK" resolve="isValued" />
+            <node concept="3TrcHB" id="2ZPMv$jtRSy" role="2OqNvi">
+              <ref role="3TsBF5" to="yv47:2ZPMv$jtPzQ" resolve="disableDuplicateCheck" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="bAwKVX3tpr" role="3uHU7B">
+            <node concept="2OqwBi" id="bAwKVX3tpt" role="3fr31v">
+              <node concept="1YBJjd" id="bAwKVX3tpu" role="2Oq$k0">
+                <ref role="1YBMHb" node="bAwKVX3rBm" resolve="enumDeclaration" />
+              </node>
+              <node concept="2qgKlT" id="bAwKVX3tpv" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:3Y6fbK16sYK" resolve="isValued" />
+              </node>
             </node>
           </node>
         </node>
