@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectLibraryManager">
-    <option name="libraries">
+<project version='4'>
+  <component name='ProjectLibraryManager'>
+    <option name='libraries'>
       <map>
-        <entry key="mbeddr.plattform">
+        <entry key='mbeddr.plattform'>
           <value>
             <Library>
-              <option name="name" value="mbeddr.plattform" />
-              <option name="path" value="${iets3.github.opensource.home}/build/dependencies/com.mbeddr.platform" />
+              <option name='name' value='mbeddr.plattform' />
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform' />
             </Library>
           </value>
         </entry>
