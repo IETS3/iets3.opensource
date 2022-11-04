@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
@@ -1196,6 +1197,20 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3clFbF" id="5XfUTkNKLMh" role="3cqZAp">
+                            <node concept="2OqwBi" id="5XfUTkNKMEJ" role="3clFbG">
+                              <node concept="37vLTw" id="5XfUTkNKLMf" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3DWpd_K7xzM" resolve="errorCell" />
+                              </node>
+                              <node concept="liA8E" id="5XfUTkNKO59" role="2OqNvi">
+                                <ref role="37wK5l" to="g51k:~EditorCell_Basic.setSRole(org.jetbrains.mps.openapi.language.SConceptFeature)" resolve="setSRole" />
+                                <node concept="2OqwBi" id="5XfUTkNKOJE" role="37wK5m">
+                                  <node concept="pncrf" id="5XfUTkNKOe3" role="2Oq$k0" />
+                                  <node concept="2NL2c5" id="5XfUTkNKQgN" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbF" id="3ijo1YRLJA$" role="3cqZAp">
                             <node concept="37vLTw" id="3DWpd_K7x$0" role="3clFbG">
                               <ref role="3cqZAo" node="3DWpd_K7xzM" resolve="errorCell" />
@@ -1360,6 +1375,20 @@
                                     <ref role="3cqZAo" node="3DWpd_K411H" resolve="errorCell" />
                                   </node>
                                 </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="5XfUTkNKQBm" role="3cqZAp">
+                          <node concept="2OqwBi" id="5XfUTkNKQBn" role="3clFbG">
+                            <node concept="37vLTw" id="5XfUTkNKQBo" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3DWpd_K411H" resolve="errorCell" />
+                            </node>
+                            <node concept="liA8E" id="5XfUTkNKQBp" role="2OqNvi">
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.setSRole(org.jetbrains.mps.openapi.language.SConceptFeature)" resolve="setSRole" />
+                              <node concept="2OqwBi" id="5XfUTkNKQBq" role="37wK5m">
+                                <node concept="pncrf" id="5XfUTkNKQBr" role="2Oq$k0" />
+                                <node concept="2NL2c5" id="5XfUTkNKQBs" role="2OqNvi" />
                               </node>
                             </node>
                           </node>
