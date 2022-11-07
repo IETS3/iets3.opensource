@@ -13936,24 +13936,8 @@
     <property role="TrG5h" value="typesystemCustomization" />
     <property role="3GE5qa" value="typesystem" />
     <node concept="3uibUv" id="3HxoqR_WS1J" role="luc8K">
-      <ref role="3uigEE" node="13FXotcVCgO" resolve="TypesystemCustomizer" />
+      <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
     </node>
-  </node>
-  <node concept="312cEu" id="13FXotcVCgO">
-    <property role="TrG5h" value="TypesystemCustomizer" />
-    <property role="1sVAO0" value="true" />
-    <property role="3GE5qa" value="typesystem" />
-    <node concept="2tJIrI" id="13FXotcVChe" role="jymVt" />
-    <node concept="3clFb_" id="2CFPPn7$RyE" role="jymVt">
-      <property role="TrG5h" value="checkDuplicateValuesInEnums" />
-      <property role="1EzhhJ" value="true" />
-      <node concept="10P_77" id="3HxoqR_TSM5" role="3clF45" />
-      <node concept="3Tm1VV" id="2CFPPn7$RyH" role="1B3o_S" />
-      <node concept="3clFbS" id="2CFPPn7$RyI" role="3clF47" />
-    </node>
-    <node concept="2tJIrI" id="13FXotcVChh" role="jymVt" />
-    <node concept="2tJIrI" id="13FXotcVChm" role="jymVt" />
-    <node concept="3Tm1VV" id="13FXotcVCgP" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="34s7_UnROPW">
     <property role="3GE5qa" value="typesystem" />
@@ -13988,9 +13972,6 @@
     <node concept="2tJIrI" id="34s7_UnSc76" role="jymVt" />
     <node concept="2tJIrI" id="34s7_UnSc7k" role="jymVt" />
     <node concept="3Tm1VV" id="34s7_UnROPX" role="1B3o_S" />
-    <node concept="3uibUv" id="34s7_UnRUp0" role="1zkMxy">
-      <ref role="3uigEE" node="13FXotcVCgO" resolve="TypesystemCustomizer" />
-    </node>
     <node concept="3clFb_" id="34s7_UnScaS" role="jymVt">
       <property role="TrG5h" value="checkDuplicateValuesInEnums" />
       <node concept="10P_77" id="34s7_UnScaT" role="3clF45" />
@@ -14006,6 +13987,20 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="3uibUv" id="34s7_UnUHdl" role="EKbjA">
+      <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
+    </node>
+  </node>
+  <node concept="3HP615" id="34s7_UnUH2A">
+    <property role="3GE5qa" value="typesystem" />
+    <property role="TrG5h" value="TypesystemCustomizer" />
+    <node concept="3clFb_" id="34s7_UnUH4e" role="jymVt">
+      <property role="TrG5h" value="checkDuplicateValuesInEnums" />
+      <node concept="10P_77" id="34s7_UnUH4f" role="3clF45" />
+      <node concept="3Tm1VV" id="34s7_UnUH4g" role="1B3o_S" />
+      <node concept="3clFbS" id="34s7_UnUH4h" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="34s7_UnUH2B" role="1B3o_S" />
   </node>
 </model>
 
