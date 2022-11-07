@@ -6685,9 +6685,15 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="1WjCak8S44J" role="3cqZAp">
-          <node concept="3clFbT" id="1WjCak8S456" role="3cqZAk">
-            <property role="3clFbU" value="true" />
+        <node concept="3cpWs6" id="34s7_UnSb2$" role="3cqZAp">
+          <node concept="2OqwBi" id="34s7_UnSbj4" role="3cqZAk">
+            <node concept="2YIFZM" id="34s7_UnSb7L" role="2Oq$k0">
+              <ref role="37wK5l" to="oq0c:34s7_UnSaA4" resolve="getInstance" />
+              <ref role="1Pybhc" to="oq0c:34s7_UnROPW" resolve="DefaultTypesystemCustomizer" />
+            </node>
+            <node concept="liA8E" id="34s7_UnSbvO" role="2OqNvi">
+              <ref role="37wK5l" to="oq0c:2CFPPn7$RyE" resolve="checkDuplicateValuesInEnums" />
+            </node>
           </node>
         </node>
       </node>
