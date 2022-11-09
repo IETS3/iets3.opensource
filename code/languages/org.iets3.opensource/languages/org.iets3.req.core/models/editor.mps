@@ -31,6 +31,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="882r" ref="r:7c2726cf-5697-49bb-92f6-2986272fb311(com.mbeddr.doc.intentions)" />
     <import index="bemq" ref="r:4cfa8b0a-7754-4d3d-9e06-0ce9d427860c(org.iets3.req.core.behavior)" />
+    <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
@@ -2690,32 +2691,11 @@
               <node concept="2jZ$Xq" id="73kHms32EbF" role="2jZA2a">
                 <node concept="2jZ$Xn" id="73kHms32IGi" role="2jZ$wY">
                   <node concept="3clFbS" id="73kHms32IGj" role="2VODD2">
-                    <node concept="3cpWs8" id="73kHms32Ksz" role="3cqZAp">
-                      <node concept="3cpWsn" id="73kHms32Ks$" role="3cpWs9">
-                        <property role="TrG5h" value="icon" />
-                        <node concept="3uibUv" id="73kHms32ITD" role="1tU5fm">
-                          <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
-                        </node>
-                        <node concept="2OqwBi" id="73kHms32Ks_" role="33vP2m">
-                          <node concept="liA8E" id="73kHms32KsA" role="2OqNvi">
-                            <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
-                            <node concept="2ZBlsa" id="73kHms32KsB" role="37wK5m" />
-                          </node>
-                          <node concept="2YIFZM" id="73kHms32KsC" role="2Oq$k0">
-                            <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
-                            <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="73kHms32NqQ" role="3cqZAp">
-                      <node concept="2ShNRf" id="73kHms32NqM" role="3clFbG">
-                        <node concept="1pGfFk" id="73kHms336aA" role="2ShVmc">
-                          <ref role="37wK5l" to="unno:Z6TQiSRD5N" resolve="Icon2IconResourceAdapter_Deprecated" />
-                          <node concept="37vLTw" id="73kHms336mf" role="37wK5m">
-                            <ref role="3cqZAo" node="73kHms32Ks$" resolve="icon" />
-                          </node>
-                        </node>
+                    <node concept="3clFbF" id="7ocMcpExxoS" role="3cqZAp">
+                      <node concept="2YIFZM" id="7ocMcpExy_l" role="3clFbG">
+                        <ref role="37wK5l" to="ze1i:~IconResourceUtil.getIconResourceForNode(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconResourceForNode" />
+                        <ref role="1Pybhc" to="ze1i:~IconResourceUtil" resolve="IconResourceUtil" />
+                        <node concept="2ZBlsa" id="7ocMcpExyVw" role="37wK5m" />
                       </node>
                     </node>
                   </node>
@@ -2825,32 +2805,11 @@
                 <node concept="2jZ$Xq" id="73kHms33gDX" role="2jZA2a">
                   <node concept="2jZ$Xn" id="73kHms33hOY" role="2jZ$wY">
                     <node concept="3clFbS" id="73kHms33hOZ" role="2VODD2">
-                      <node concept="3cpWs8" id="73kHms33i1m" role="3cqZAp">
-                        <node concept="3cpWsn" id="73kHms33i1n" role="3cpWs9">
-                          <property role="TrG5h" value="icon" />
-                          <node concept="3uibUv" id="73kHms33hSC" role="1tU5fm">
-                            <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
-                          </node>
-                          <node concept="2OqwBi" id="73kHms33i1o" role="33vP2m">
-                            <node concept="liA8E" id="73kHms33i1p" role="2OqNvi">
-                              <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
-                              <node concept="2ZBlsa" id="73kHms33i89" role="37wK5m" />
-                            </node>
-                            <node concept="2YIFZM" id="73kHms33i1r" role="2Oq$k0">
-                              <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-                              <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="73kHms33ivP" role="3cqZAp">
-                        <node concept="2ShNRf" id="73kHms33ivQ" role="3clFbG">
-                          <node concept="1pGfFk" id="73kHms33ivR" role="2ShVmc">
-                            <ref role="37wK5l" to="unno:Z6TQiSRD5N" resolve="Icon2IconResourceAdapter_Deprecated" />
-                            <node concept="37vLTw" id="73kHms33ivS" role="37wK5m">
-                              <ref role="3cqZAo" node="73kHms33i1n" resolve="icon" />
-                            </node>
-                          </node>
+                      <node concept="3clFbF" id="7ocMcpEx_gp" role="3cqZAp">
+                        <node concept="2YIFZM" id="7ocMcpEy9uo" role="3clFbG">
+                          <ref role="37wK5l" to="ze1i:~IconResourceUtil.getIconResourceForConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconResourceForConcept" />
+                          <ref role="1Pybhc" to="ze1i:~IconResourceUtil" resolve="IconResourceUtil" />
+                          <node concept="2ZBlsa" id="7ocMcpEy9up" role="37wK5m" />
                         </node>
                       </node>
                     </node>
