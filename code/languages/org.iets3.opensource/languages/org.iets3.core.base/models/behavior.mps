@@ -209,6 +209,11 @@
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -2668,16 +2673,7 @@
   <node concept="13h7C7" id="5I8v_DCo65J">
     <ref role="13h7C2" to="4kwy:5I8v_DCo65k" resolve="ICanHide" />
     <node concept="13hLZK" id="5I8v_DCo65K" role="13h7CW">
-      <node concept="3clFbS" id="5I8v_DCo65L" role="2VODD2">
-        <node concept="3clFbF" id="5I8v_DCq4wD" role="3cqZAp">
-          <node concept="2OqwBi" id="5I8v_DCq4Cl" role="3clFbG">
-            <node concept="13iPFW" id="5I8v_DCq4wC" role="2Oq$k0" />
-            <node concept="2qgKlT" id="5I8v_DCq4LS" role="2OqNvi">
-              <ref role="37wK5l" node="5I8v_DCoggH" resolve="show" />
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="5I8v_DCo65L" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="5I8v_DCodq4" role="13h7CS">
       <property role="13i0it" value="true" />
@@ -2685,52 +2681,42 @@
       <node concept="3Tm1VV" id="5I8v_DCodq5" role="1B3o_S" />
       <node concept="10P_77" id="5I8v_DCodqk" role="3clF45" />
       <node concept="3clFbS" id="5I8v_DCodq7" role="3clF47">
-        <node concept="3clFbJ" id="5I8v_DCodqZ" role="3cqZAp">
-          <node concept="3clFbC" id="5I8v_DCoe26" role="3clFbw">
-            <node concept="10Nm6u" id="5I8v_DCoehT" role="3uHU7w" />
-            <node concept="2OqwBi" id="5I8v_DCodJm" role="3uHU7B">
-              <node concept="liA8E" id="5I8v_DCodRH" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
-                <node concept="Xl_RD" id="5I8v_DCodST" role="37wK5m">
-                  <property role="Xl_RC" value="ICanHide" />
-                </node>
+        <node concept="3cpWs8" id="xT_JuhrfOC" role="3cqZAp">
+          <node concept="3cpWsn" id="xT_JuhrfOF" role="3cpWs9">
+            <property role="TrG5h" value="visible" />
+            <node concept="0kSF2" id="xT_Juhrgpz" role="33vP2m">
+              <node concept="3uibUv" id="xT_JuhrgpA" role="0kSFW">
+                <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
               </node>
-              <node concept="2JrnkZ" id="5I8v_DCodJr" role="2Oq$k0">
-                <node concept="13iPFW" id="5I8v_DCodrj" role="2JrQYb" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="5I8v_DCodr1" role="3clFbx">
-            <node concept="3cpWs6" id="5I8v_DCoejr" role="3cqZAp">
-              <node concept="3clFbT" id="5I8v_DCoekk" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="5I8v_DCoele" role="9aQIa">
-            <node concept="3clFbS" id="5I8v_DCoelf" role="9aQI4">
-              <node concept="3cpWs6" id="5I8v_DCoem8" role="3cqZAp">
-                <node concept="2OqwBi" id="5I8v_DCoffl" role="3cqZAk">
-                  <node concept="0kSF2" id="5I8v_DCoeVy" role="2Oq$k0">
-                    <node concept="3uibUv" id="5I8v_DCoeV$" role="0kSFW">
-                      <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
-                    </node>
-                    <node concept="2OqwBi" id="5I8v_DCoeAT" role="0kSFX">
-                      <node concept="liA8E" id="5I8v_DCoeJW" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
-                        <node concept="Xl_RD" id="5I8v_DCoeMD" role="37wK5m">
-                          <property role="Xl_RC" value="ICanHide" />
-                        </node>
-                      </node>
-                      <node concept="2JrnkZ" id="5I8v_DCoeAY" role="2Oq$k0">
-                        <node concept="13iPFW" id="5I8v_DCoenT" role="2JrQYb" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="5I8v_DCofxS" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Boolean.booleanValue()" resolve="booleanValue" />
+              <node concept="2OqwBi" id="xT_JuhrfWW" role="0kSFX">
+                <node concept="liA8E" id="xT_JuhrfWX" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                  <node concept="Xl_RD" id="xT_JuhrfWY" role="37wK5m">
+                    <property role="Xl_RC" value="ICanHide" />
                   </node>
                 </node>
+                <node concept="2JrnkZ" id="xT_JuhrfWZ" role="2Oq$k0">
+                  <node concept="13iPFW" id="xT_JuhrfX0" role="2JrQYb" />
+                </node>
+              </node>
+            </node>
+            <node concept="3uibUv" id="xT_JuhrggQ" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="xT_Juhrfsh" role="3cqZAp">
+          <node concept="3K4zz7" id="xT_JuhrhlU" role="3cqZAk">
+            <node concept="3clFbT" id="xT_Juhrhop" role="3K4E3e">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="37vLTw" id="xT_JuhrhqJ" role="3K4GZi">
+              <ref role="3cqZAo" node="xT_JuhrfOF" resolve="visible" />
+            </node>
+            <node concept="3clFbC" id="xT_Juhrh1P" role="3K4Cdx">
+              <node concept="10Nm6u" id="xT_Juhrhbu" role="3uHU7w" />
+              <node concept="37vLTw" id="xT_JuhrgHa" role="3uHU7B">
+                <ref role="3cqZAo" node="xT_JuhrfOF" resolve="visible" />
               </node>
             </node>
           </node>
@@ -2739,7 +2725,7 @@
       <node concept="P$JXv" id="5I8v_DCqcgc" role="lGtFl">
         <node concept="TZ5HA" id="5I8v_DCqcgd" role="TZ5H$">
           <node concept="1dT_AC" id="5I8v_DCqcge" role="1dT_Ay">
-            <property role="1dT_AB" value="Used do conditionally show the node that implement this interface in the editor." />
+            <property role="1dT_AB" value="Used to conditionally show the node that implements this interface in the editor." />
           </node>
         </node>
         <node concept="TZ5HA" id="5I8v_DCqcq4" role="TZ5H$">
@@ -2749,7 +2735,7 @@
         </node>
         <node concept="TZ5HA" id="5I8v_DCqcrF" role="TZ5H$">
           <node concept="1dT_AC" id="5I8v_DCqcrG" role="1dT_Ay">
-            <property role="1dT_AB" value="that shall call hide() or show accordingly to its requirement. " />
+            <property role="1dT_AB" value="that shall call hide() or show() accordingly to its requirements. " />
           </node>
         </node>
         <node concept="x79VA" id="5I8v_DCqcgf" role="3nqlJM">
@@ -2784,7 +2770,7 @@
       <node concept="P$JXv" id="5I8v_DCqckD" role="lGtFl">
         <node concept="TZ5HA" id="5I8v_DCqckE" role="TZ5H$">
           <node concept="1dT_AC" id="5I8v_DCqckF" role="1dT_Ay">
-            <property role="1dT_AB" value="Indicate that the node implementing this interface should not be visible in the editor." />
+            <property role="1dT_AB" value="Indicates that the node implementing this interface should not be visible in the editor." />
           </node>
         </node>
       </node>
@@ -2816,7 +2802,7 @@
       <node concept="P$JXv" id="5I8v_DCqclq" role="lGtFl">
         <node concept="TZ5HA" id="5I8v_DCqclr" role="TZ5H$">
           <node concept="1dT_AC" id="5I8v_DCqcls" role="1dT_Ay">
-            <property role="1dT_AB" value="Indicate that the node implementing this interface shall be visible in the editor." />
+            <property role="1dT_AB" value="Indicates that the node implementing this interface shall be visible in the editor." />
           </node>
         </node>
       </node>
