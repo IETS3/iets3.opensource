@@ -289,7 +289,7 @@
         <node concept="OjmMv" id="2LaXqmVNiBF" role="1w35rA">
           <node concept="19SGf9" id="2LaXqmVNiBG" role="OjmMu">
             <node concept="19SUe$" id="2LaXqmVNiBH" role="19SJt6">
-              <property role="19SUeA" value="Der Familienname enthält mehr als 2 Ziffernn" />
+              <property role="19SUeA" value="The surname contains more than 2 digits" />
             </node>
           </node>
         </node>
@@ -306,7 +306,7 @@
         <node concept="OjmMv" id="2LaXqmVNk2$" role="1w35rA">
           <node concept="19SGf9" id="2LaXqmVNk2_" role="OjmMu">
             <node concept="19SUe$" id="2LaXqmVNk2A" role="19SJt6">
-              <property role="19SUeA" value="Der Familienname enthält 2 Ziffern, die nicht unmittelbar hintereinander stehen  -&gt; Das verstehe ich noch nicht so ganz&#10;Mit Zahl = mehrereZiffernAmStück, die Anzahl der ZAHLEN in String ist &lt;= 1" />
+              <property role="19SUeA" value="The family name contains 2 digits that are not immediately after each other -&gt; I don't quite understand that yet.&#10;With number = severalDigitsInARow, the number of NUMBERS in string is &lt;= 1" />
             </node>
           </node>
         </node>
@@ -664,7 +664,7 @@
         <node concept="OjmMv" id="2LaXqmXBV02" role="1w35rA">
           <node concept="19SGf9" id="2LaXqmXBV03" role="OjmMu">
             <node concept="19SUe$" id="2LaXqmXBV04" role="19SJt6">
-              <property role="19SUeA" value="Vor einer Ziffer oder Ziffernfolge muss ein Leerzeichen stehen (z. B. Maier 3)" />
+              <property role="19SUeA" value="A digit or sequence of digits must be preceded by a space (e.g. Maier 3)." />
             </node>
           </node>
         </node>
@@ -879,7 +879,7 @@
         <node concept="OjmMv" id="2LaXqmXDDb$" role="1w35rA">
           <node concept="19SGf9" id="2LaXqmXDDb_" role="OjmMu">
             <node concept="19SUe$" id="2LaXqmXDDbA" role="19SJt6">
-              <property role="19SUeA" value="Vor einer nicht auf Stelle 1 beginnenden Ziffernfolge muss ein Buchstabe, ein Leerzeichen, ein Bindestrich, ein Schrägstrich oder ein Punkt stehen" />
+              <property role="19SUeA" value="A sequence of digits not starting at digit 1 must be preceded by a letter, a space, a hyphen, a slash or a period." />
             </node>
           </node>
         </node>
@@ -1041,7 +1041,7 @@
         <node concept="OjmMv" id="2LaXqmX$yFT" role="1w35rA">
           <node concept="19SGf9" id="2LaXqmX$yFU" role="OjmMu">
             <node concept="19SUe$" id="2LaXqmX$yFV" role="19SJt6">
-              <property role="19SUeA" value="Zulässig sind Buchstaben, Leerzeichen, Bindestriche, Hochkommata, Ziffern, Klammern oder Punkte." />
+              <property role="19SUeA" value="Allowed are letters, spaces, hyphens, apostrophes, numbers, brackets or dots." />
             </node>
           </node>
         </node>
@@ -1187,7 +1187,7 @@
         <node concept="OjmMv" id="2LaXqmXwWU3" role="1w35rA">
           <node concept="19SGf9" id="2LaXqmXwWU4" role="OjmMu">
             <node concept="19SUe$" id="2LaXqmXwWU5" role="19SJt6">
-              <property role="19SUeA" value="Mindestens 3 gleiche aufeinanderfolgende Buchstaben am Beginn der Straße sind unzulässig, es sei denn, die Straße beginnt mit „III“ und an der 4. Stelle folgt ein Punkt, der nicht letztes Zeichen der Straße ist oder  die Straße beginnt mit der Zeichenfolge „MMM-Str“" />
+              <property role="19SUeA" value="At least 3 identical consecutive letters at the beginning of the street are not permitted, unless the street starts with &quot;III&quot; and is followed in the 4th place by a dot, which is not the last character of the street, or the street begins with the character string &quot;MMM-Str&quot;" />
             </node>
           </node>
         </node>
@@ -1277,7 +1277,7 @@
         <node concept="OjmMv" id="2LaXqmVLIms" role="1w35rA">
           <node concept="19SGf9" id="2LaXqmVLImt" role="OjmMu">
             <node concept="19SUe$" id="2LaXqmVLImu" role="19SJt6">
-              <property role="19SUeA" value="(von mir ausgedacht) Mindestens 3 aufeinanderfolgende Buchstaben am Beginn des Familiennamens sind unzulässig." />
+              <property role="19SUeA" value="(made up by me) At least 3 consecutive letters at the beginning of the family name are not allowed." />
             </node>
           </node>
         </node>
@@ -1312,7 +1312,7 @@
         <node concept="OjmMv" id="2LaXqmXsaxB" role="1w35rA">
           <node concept="19SGf9" id="2LaXqmXsaxC" role="OjmMu">
             <node concept="19SUe$" id="2LaXqmXsaxD" role="19SJt6">
-              <property role="19SUeA" value="Mindestens 3 gleiche aufeinanderfolgende Buchstaben am Beginn des Familiennamens sind unzulässig." />
+              <property role="19SUeA" value="At least 3 identical consecutive letters at the beginning of the family name are not allowed." />
             </node>
           </node>
         </node>
@@ -1468,7 +1468,7 @@
         <node concept="OjmMv" id="6KviS2K_zHG" role="1w35rA">
           <node concept="19SGf9" id="6KviS2K_zHH" role="OjmMu">
             <node concept="19SUe$" id="6KviS2K_zHI" role="19SJt6">
-              <property role="19SUeA" value="Auf der ersten Stelle des Familiennamens ist nur ein Buchstabe ungleich „ß“ oder ein Hochkomma zugelassen" />
+              <property role="19SUeA" value="Only a letter other than &quot;ß&quot; or an apostrophe is allowed at the first position of the family name." />
             </node>
           </node>
         </node>
@@ -1580,7 +1580,7 @@
         <node concept="OjmMv" id="6KviS2Kw8fz" role="1w35rA">
           <node concept="19SGf9" id="6KviS2Kw8f$" role="OjmMu">
             <node concept="19SUe$" id="6KviS2Kw8f_" role="19SJt6">
-              <property role="19SUeA" value="Auf der letzten Stelle des Familiennamens ist nur ein Buchstabe, eine Ziffer, eine schließende Klammer, ein Punkt oder ein Hochkomma zugelassen" />
+              <property role="19SUeA" value="Only a letter, digit, closing parenthesis, period, or apostrophe is allowed as the last digit of the surname." />
             </node>
           </node>
         </node>
@@ -1723,7 +1723,7 @@
         <node concept="OjmMv" id="6KviS2KuwbM" role="1w35rA">
           <node concept="19SGf9" id="6KviS2KuwbN" role="OjmMu">
             <node concept="19SUe$" id="6KviS2KuwbO" role="19SJt6">
-              <property role="19SUeA" value="Bindestriche dürfen nicht mehrfach aufeinanderfolgen" />
+              <property role="19SUeA" value="Hyphens must not follow each other more than once." />
             </node>
           </node>
         </node>
@@ -1858,12 +1858,13 @@
         <node concept="OjmMv" id="6KviS2JdW8g" role="1w35rA">
           <node concept="19SGf9" id="6KviS2JdW8h" role="OjmMu">
             <node concept="19SUe$" id="6KviS2JdW8i" role="19SJt6">
-              <property role="19SUeA" value="Vor und nach Bindestrichen sind keine Leerzeichen erlaubt." />
+              <property role="19SUeA" value="No spaces are allowed before and after hyphens." />
             </node>
           </node>
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="6_uiIQ$Ffgy" role="_iOnB" />
     <node concept="1aga60" id="3dTPcTRNkkL" role="_iOnB">
       <property role="TrG5h" value="rule4b" />
       <property role="0Rz4W" value="859708138" />
@@ -1875,7 +1876,7 @@
         <node concept="OjmMv" id="3dTPcTRNkl6" role="1w35rA">
           <node concept="19SGf9" id="3dTPcTRNkl7" role="OjmMu">
             <node concept="19SUe$" id="3dTPcTRNkl8" role="19SJt6">
-              <property role="19SUeA" value="Vor und nach Bindestrichen sind keine Leerzeichen erlaubt." />
+              <property role="19SUeA" value="No spaces are allowed before and after hyphens." />
             </node>
           </node>
         </node>
@@ -2008,7 +2009,7 @@
         <node concept="OjmMv" id="6KviS2KA2HO" role="1w35rA">
           <node concept="19SGf9" id="6KviS2KA2HP" role="OjmMu">
             <node concept="19SUe$" id="6KviS2KA2HQ" role="19SJt6">
-              <property role="19SUeA" value="Auf der letzten Stelle des Wohnortes ist nur ein Buchstabe, eine schließende Klammer oder ein Punkt zugelassen" />
+              <property role="19SUeA" value="Only one letter, closing parenthesis or period is allowed as the last digit of the place of residence." />
             </node>
           </node>
         </node>
@@ -2110,7 +2111,7 @@
         <node concept="OjmMv" id="6KviS2Jq0fN" role="1w35rA">
           <node concept="19SGf9" id="6KviS2Jq0fO" role="OjmMu">
             <node concept="19SUe$" id="6KviS2Jq0fP" role="19SJt6">
-              <property role="19SUeA" value="Gleiche Sonder- und Leerzeichen dürfen nicht mehrfach aufeinanderfolgen" />
+              <property role="19SUeA" value="The same special characters and spaces must not follow each other more than once." />
             </node>
           </node>
         </node>
@@ -2214,7 +2215,7 @@
         <node concept="OjmMv" id="6KviS2JbJuV" role="1w35rA">
           <node concept="19SGf9" id="6KviS2JbJuW" role="OjmMu">
             <node concept="19SUe$" id="6KviS2JbJuX" role="19SJt6">
-              <property role="19SUeA" value="Das Pluszeichen ist nur auf der ersten Stelle zulässig und die restlichen Stellen müssen Grundstellung (Leerzeichen) sein" />
+              <property role="19SUeA" value="The plus sign is only allowed on the first digit and the remaining digits must be home position (space)." />
             </node>
           </node>
         </node>
@@ -2369,7 +2370,7 @@
         <node concept="OjmMv" id="6KviS2JdVvh" role="1w35rA">
           <node concept="19SGf9" id="6KviS2JdVvi" role="OjmMu">
             <node concept="19SUe$" id="6KviS2JdVvj" role="19SJt6">
-              <property role="19SUeA" value="Gleiche Sonder- und Leerzeichen dürfen nicht mehrfach aufeinanderfolgen." />
+              <property role="19SUeA" value="The same special characters and spaces must not follow each other more than once." />
             </node>
           </node>
         </node>
@@ -2472,13 +2473,6 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="4xzR2e_wKAS" role="_iOnB" />
-    <node concept="_ixoA" id="4xzR2e_vdum" role="_iOnB" />
-    <node concept="_ixoA" id="4xzR2e_wLjG" role="_iOnB" />
-    <node concept="_ixoA" id="4xzR2e_wLyD" role="_iOnB" />
-    <node concept="_ixoA" id="4xzR2e_wLLB" role="_iOnB" />
-    <node concept="_ixoA" id="4xzR2e_wM0A" role="_iOnB" />
-    <node concept="_ixoA" id="4xzR2e_wMfA" role="_iOnB" />
     <node concept="_ixoA" id="4xzR2e_wMuB" role="_iOnB" />
     <node concept="1aga60" id="4xzR2e_vdVd" role="_iOnB">
       <property role="TrG5h" value="vorname" />
