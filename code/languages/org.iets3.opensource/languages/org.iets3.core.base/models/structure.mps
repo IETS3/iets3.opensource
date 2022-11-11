@@ -33,6 +33,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -77,6 +78,7 @@
   <node concept="1TIwiD" id="6LfBX8Ym0Cy">
     <property role="TrG5h" value="IETS3DummyIcon16" />
     <property role="EcuMT" value="7804632404594264610" />
+    <property role="R4oN_" value="an IETS3 icon (16px)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="5$yCC4G$ycI" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-16.png" />
@@ -101,6 +103,7 @@
   <node concept="1TIwiD" id="cJpacq408a">
     <property role="TrG5h" value="OptionalNameSpecifier" />
     <property role="EcuMT" value="229512757698888202" />
+    <property role="R4oN_" value="a specifier that's used for optional names" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="cJpacq408b" role="1TKVEl">
       <property role="TrG5h" value="optionalName" />
@@ -164,6 +167,7 @@
   <node concept="1TIwiD" id="4SjtGYzyERT">
     <property role="TrG5h" value="IETS3DummyIcon32" />
     <property role="EcuMT" value="5625970993689964025" />
+    <property role="R4oN_" value="an IETS3 icon (32px)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="5$yCC4G$ycJ" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-32.png" />
@@ -172,6 +176,7 @@
   <node concept="1TIwiD" id="4SjtGYz$Car">
     <property role="TrG5h" value="IETS3DummyIcon24" />
     <property role="EcuMT" value="5625970993690477211" />
+    <property role="R4oN_" value="an IETS3 icon (24px)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="5$yCC4G$ycK" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-24.png" />

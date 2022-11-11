@@ -4,9 +4,8 @@
 
 ### Using Gradle
 If you just want to build the project, no prerequisites are required. Just run `./gradlew build` from the checkout
-directory. This will download a pre-built version the mbeddr platform from the itemis Nexus repository. Run 
-`./gradlew setup` to generate the `libraries.xml` file so that the mbeddr platform libraries are loaded during the 
-start of mps.
+directory. This will download required version of the mbeddr platform language library from the itemis Nexus repository.
+When the build has finished, you can open the project in MPS from the folder `<iets3.opensource>/code/languages/org.iets3.opensource`
 
 To publish this project's artifacts to the Maven local repository run `./gradlew publishToMavenLocal`.
 

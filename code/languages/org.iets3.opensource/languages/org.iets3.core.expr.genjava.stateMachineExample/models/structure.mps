@@ -15,6 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -45,6 +46,7 @@
     <property role="TrG5h" value="StateMachine" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="stateMachine" />
+    <property role="R4oN_" value="a state machine" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4NM7IHyCGfE" role="1TKVEi">
       <property role="IQ2ns" value="5544528087567483882" />
@@ -74,6 +76,7 @@
     <property role="EcuMT" value="5544528087567483815" />
     <property role="TrG5h" value="Event" />
     <property role="34LRSv" value="event" />
+    <property role="R4oN_" value="an event" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4NM7IHyCGfP" role="1TKVEi">
       <property role="IQ2ns" value="5544528087567483893" />
@@ -90,6 +93,7 @@
     <property role="EcuMT" value="5544528087567483818" />
     <property role="TrG5h" value="State" />
     <property role="34LRSv" value="state" />
+    <property role="R4oN_" value="a state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4NM7IHyCGeF" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
@@ -106,6 +110,7 @@
     <property role="EcuMT" value="5544528087567483821" />
     <property role="TrG5h" value="Transition" />
     <property role="34LRSv" value="transition" />
+    <property role="R4oN_" value="a transition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4NM7IHyCGfX" role="1TKVEi">
       <property role="IQ2ns" value="5544528087567483901" />
@@ -124,6 +129,7 @@
   <node concept="1TIwiD" id="4NM7IHyCGeI">
     <property role="EcuMT" value="5544528087567483822" />
     <property role="TrG5h" value="EventRef" />
+    <property role="R4oN_" value="an event reference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4NM7IHyCGg2" role="1TKVEi">
       <property role="IQ2ns" value="5544528087567483906" />
@@ -142,6 +148,7 @@
   <node concept="1TIwiD" id="4NM7IHyCGeJ">
     <property role="EcuMT" value="5544528087567483823" />
     <property role="TrG5h" value="EventArg" />
+    <property role="R4oN_" value="an event argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4NM7IHyCGh1" role="1TKVEi">
       <property role="IQ2ns" value="5544528087567483969" />
@@ -157,6 +164,7 @@
   <node concept="1TIwiD" id="4NM7IHyCGeM">
     <property role="EcuMT" value="5544528087567483826" />
     <property role="TrG5h" value="EventArgRef" />
+    <property role="R4oN_" value="a reference to a event argument" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4NM7IHyCGh3" role="1TKVEi">
       <property role="IQ2ns" value="5544528087567483971" />

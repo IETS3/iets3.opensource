@@ -20,6 +20,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -53,6 +54,7 @@
   <node concept="1TIwiD" id="7mG7sQPphB4">
     <property role="TrG5h" value="User" />
     <property role="EcuMT" value="8479184967780604356" />
+    <property role="R4oN_" value="a user with personal information" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="cJpacq5Tp7" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
@@ -80,6 +82,7 @@
     <property role="TrG5h" value="UserDirectory" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="8479184967780604478" />
+    <property role="R4oN_" value="a list of users" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="7mG7sQPphD1" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -98,6 +101,7 @@
   <node concept="1TIwiD" id="7mG7sQPpUfB">
     <property role="TrG5h" value="UserRef" />
     <property role="EcuMT" value="8479184967780770791" />
+    <property role="R4oN_" value="a reference to a user" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7mG7sQPpUfC" role="1TKVEi">
       <property role="20kJfa" value="user" />

@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -42,12 +43,14 @@
     <property role="EcuMT" value="391130746957825247" />
     <property role="TrG5h" value="ContractSubject" />
     <property role="34LRSv" value="it" />
+    <property role="R4oN_" value="a variable that references the value of the check statement" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="lH$PuiWw5j">
     <property role="EcuMT" value="391130746987872595" />
     <property role="TrG5h" value="CheckStatement" />
     <property role="34LRSv" value="check" />
+    <property role="R4oN_" value="a check statement" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="lH$PuiWw5k" role="1TKVEi">
       <property role="IQ2ns" value="391130746987872596" />
@@ -66,6 +69,7 @@
   <node concept="1TIwiD" id="lH$PuiWw5m">
     <property role="EcuMT" value="391130746987872598" />
     <property role="TrG5h" value="CheckClause" />
+    <property role="R4oN_" value="a check clause" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="lH$PuiWw5n" role="1TKVEi">
       <property role="IQ2ns" value="391130746987872599" />
