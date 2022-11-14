@@ -7180,7 +7180,7 @@
     </node>
     <node concept="qq9P1" id="4SHkH$fob5Y" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:4SHkH$fnm2H" resolve="SinusExpression" />
+      <ref role="qq9wM" to="1qv1:4SHkH$fnm2H" resolve="SineExpression" />
       <node concept="qpFDx" id="4SHkH$foemg" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="4SHkH$foeQh" role="rajlz">
@@ -7216,7 +7216,7 @@
     </node>
     <node concept="qq9P1" id="M7eZQA0z3Y" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:M7eZQ_ZStj" resolve="CosinusExpression" />
+      <ref role="qq9wM" to="1qv1:M7eZQ_ZStj" resolve="CosineExpression" />
       <node concept="qpFDx" id="M7eZQA0AHh" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="M7eZQA0Bmw" role="rajlz">
@@ -7252,7 +7252,7 @@
     </node>
     <node concept="qq9P1" id="M7eZQAnRSv" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:M7eZQAngzc" resolve="TangensExpression" />
+      <ref role="qq9wM" to="1qv1:M7eZQAngzc" resolve="TangentExpression" />
       <node concept="qpFDx" id="M7eZQAnV2$" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="M7eZQAnVyC" role="rajlz">
@@ -7288,7 +7288,7 @@
     </node>
     <node concept="qq9P1" id="M7eZQANOsk" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:M7eZQADw31" resolve="TangensHyperbolicus" />
+      <ref role="qq9wM" to="1qv1:M7eZQADw31" resolve="TangentHyperbolicus" />
       <node concept="qpFDx" id="M7eZQANRKF" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="M7eZQANSgJ" role="rajlz">
@@ -7324,7 +7324,7 @@
     </node>
     <node concept="qq9P1" id="M7eZQAPmBv" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:M7eZQAOIHc" resolve="SinusHyperbolicus" />
+      <ref role="qq9wM" to="1qv1:M7eZQAOIHc" resolve="SineHyperbolicus" />
       <node concept="qpFDx" id="M7eZQAPpy5" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="M7eZQAPq28" role="rajlz">
@@ -7371,7 +7371,7 @@
     </node>
     <node concept="qq9P1" id="1EoaTAz5v0p" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:M7eZQBwOwF" resolve="ArcCosinus" />
+      <ref role="qq9wM" to="1qv1:M7eZQBwOwF" resolve="ArcCosine" />
       <node concept="qpFDx" id="1EoaTAz5y0m" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="1EoaTAz5ywq" role="rajlz">
@@ -7407,7 +7407,7 @@
     </node>
     <node concept="qq9P1" id="1EoaTAz8kXO" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:1EoaTAz8bOT" resolve="CosinusHyperbolicus" />
+      <ref role="qq9wM" to="1qv1:1EoaTAz8bOT" resolve="CosineHyperbolicus" />
       <node concept="qpFDx" id="1EoaTAz8rgL" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="1EoaTAz8s1d" role="rajlz">
@@ -7443,7 +7443,7 @@
     </node>
     <node concept="qq9P1" id="1EoaTAz8NPr" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:1EoaTAz8K6a" resolve="ArcCosinusHyperbolicus" />
+      <ref role="qq9wM" to="1qv1:1EoaTAz8K6a" resolve="ArcCosineHyperbolicus" />
       <node concept="qpFDx" id="1EoaTAz8QTR" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="1EoaTAz8RFB" role="rajlz">
@@ -7479,7 +7479,7 @@
     </node>
     <node concept="qq9P1" id="1EoaTAz9Wag" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:1EoaTAz9PnQ" resolve="ArcSinusHyperbolicus" />
+      <ref role="qq9wM" to="1qv1:1EoaTAz9PnQ" resolve="ArcSineHyperbolicus" />
       <node concept="qpFDx" id="1EoaTAza2$m" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="1EoaTAza3ns" role="rajlz">
@@ -7515,7 +7515,7 @@
     </node>
     <node concept="qq9P1" id="1EoaTAzbcFh" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:1EoaTAzatSJ" resolve="ArcTangensHyperbolicus" />
+      <ref role="qq9wM" to="1qv1:1EoaTAzatSJ" resolve="ArcTangentHyperbolicus" />
       <node concept="qpFDx" id="1EoaTAzbfQu" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="1EoaTAzbgGe" role="rajlz">
@@ -7551,7 +7551,7 @@
     </node>
     <node concept="qq9P1" id="1EoaTAzbGP2" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:1EoaTAzbzti" resolve="ArcTangens" />
+      <ref role="qq9wM" to="1qv1:1EoaTAzbzti" resolve="ArcTangent" />
       <node concept="qpFDx" id="1EoaTAzbKiW" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="1EoaTAzbL8E" role="rajlz">
@@ -7587,7 +7587,7 @@
     </node>
     <node concept="qq9P1" id="1EoaTAzclDy" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:1EoaTAzc5EL" resolve="ArcSinus" />
+      <ref role="qq9wM" to="1qv1:1EoaTAzc5EL" resolve="ArcSine" />
       <node concept="qpFDx" id="1EoaTAzcsZX" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="1EoaTAzctR2" role="rajlz">

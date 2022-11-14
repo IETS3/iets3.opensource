@@ -15,6 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -52,6 +53,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="attributes" />
     <property role="EcuMT" value="1970998948979368454" />
+    <property role="R4oN_" value="a base concept for attribute values" />
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMyV">
     <property role="TrG5h" value="IAttribute" />
@@ -111,6 +113,7 @@
     <property role="EcuMT" value="4886573260947348600" />
     <property role="3GE5qa" value="attributes" />
     <property role="TrG5h" value="EmptyAttribute" />
+    <property role="R4oN_" value="an empty line for attribute containers" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4fgA7QrG5M2" role="PzmwI">
       <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
@@ -123,6 +126,7 @@
     <property role="EcuMT" value="4886573260946639134" />
     <property role="3GE5qa" value="attributes" />
     <property role="TrG5h" value="AttributeContainerWithContext" />
+    <property role="R4oN_" value="a container for attributes with a context expression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="GKE0N8VlFG" role="1TKVEi">
       <property role="IQ2ns" value="806329106163391212" />
@@ -139,6 +143,7 @@
     <property role="EcuMT" value="806329106163335739" />
     <property role="3GE5qa" value="attributes" />
     <property role="TrG5h" value="AttributeContainer" />
+    <property role="R4oN_" value="a container for attributes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="GKE0N8V89c" role="1TKVEi">
       <property role="IQ2ns" value="806329106163335756" />

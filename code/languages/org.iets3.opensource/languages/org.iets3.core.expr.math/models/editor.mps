@@ -72,6 +72,10 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1838685759388685703" name="jetbrains.mps.lang.editor.structure.TransformationFeature_DescriptionText" flags="ng" index="3cqGtN">
+        <child id="1838685759388685704" name="query" index="3cqGtW" />
+      </concept>
+      <concept id="1838685759388690401" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_DescriptionText" flags="ig" index="3cqJkl" />
       <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
@@ -1007,6 +1011,17 @@
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
                     <node concept="10Nm6u" id="7BZzIqklP56" role="37wK5m" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cqGtN" id="1ZlHRbgXKYQ" role="2jZA2a">
+          <node concept="3cqJkl" id="1ZlHRbgXKYR" role="3cqGtW">
+            <node concept="3clFbS" id="1ZlHRbgXKYS" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgXL9Q" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgXL9P" role="3clFbG">
+                  <property role="Xl_RC" value="create a fraction" />
                 </node>
               </node>
             </node>

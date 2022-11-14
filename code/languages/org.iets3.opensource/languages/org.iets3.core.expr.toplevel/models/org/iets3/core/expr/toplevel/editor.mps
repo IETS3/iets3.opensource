@@ -5,7 +5,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="3bdedd09-792a-4e15-a4db-83970df3ee86" name="de.itemis.mps.editor.collapsible" version="-1" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
@@ -419,11 +419,15 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="8224407690718723337" name="doNotGenerateNodeSubstituteAction" index="ZpkCL" />
         <child id="621193272061064649" name="sideTransformCondition" index="1m$hSO" />
@@ -592,6 +596,15 @@
         <node concept="1kHk_G" id="2uR5X5azvkk" role="3EZMnx">
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
           <ref role="1NtTu8" to="zzzn:2uR5X5azvjH" resolve="ext" />
+          <node concept="uPpia" id="1ZlHRbf$$OS" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbf$$OT" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbf$$Pi" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbf$$Ph" role="3clFbG">
+                  <property role="Xl_RC" value="extension function" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="49WTic8f4or" role="3EZMnx">
           <property role="3F0ifm" value="fun" />
@@ -655,6 +668,15 @@
           <node concept="3F1sOY" id="6KxoTHgSIsZ" role="_tjki">
             <ref role="1NtTu8" to="zzzn:3npF9QX0lor" resolve="effect" />
           </node>
+          <node concept="uPpia" id="1ZlHRbgqWnZ" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqWo0" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqWsA" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqWs_" role="3clFbG">
+                  <property role="Xl_RC" value="an effect tag for the function" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="49WTic8f4tT" role="3EZMnx">
           <property role="3F0ifm" value="(" />
@@ -703,6 +725,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqWuB" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqWuC" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqWv1" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqWv0" role="3clFbG">
+                <property role="Xl_RC" value="a type for the function" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="KaZMgyebXJ" role="3EZMnx">
         <node concept="3F1sOY" id="KaZMgyec5r" role="_tjki">
@@ -713,6 +744,15 @@
             <node concept="3clFbF" id="KaZMgyec6b" role="3cqZAp">
               <node concept="Xl_RD" id="KaZMgyec6a" role="3clFbG">
                 <property role="Xl_RC" value="where" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqW$O" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqW$P" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqW$W" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqW$V" role="3clFbG">
+                <property role="Xl_RC" value="a contract for the function" />
               </node>
             </node>
           </node>
@@ -1073,6 +1113,15 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqUxB" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqUxC" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqUy1" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqUy0" role="3clFbG">
+                <property role="Xl_RC" value="a type for the global constant" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="69zaTr1HgTo" role="3EZMnx">
         <property role="3F0ifm" value="=" />
@@ -1159,6 +1208,15 @@
         <node concept="_tjkj" id="11foXHHQY7w" role="3EZMnx">
           <node concept="3F1sOY" id="11foXHHQY7x" role="_tjki">
             <ref role="1NtTu8" to="yv47:6JZACDWOa9F" resolve="refFlag" />
+          </node>
+          <node concept="uPpia" id="1ZlHRbgqX9A" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqX9B" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqX9I" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqX9H" role="3clFbG">
+                  <property role="Xl_RC" value="make the record referencable" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3F0ifn" id="11foXHHQY7y" role="3EZMnx">
@@ -1254,6 +1312,15 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="1ZlHRbgqXRR" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqXRS" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqXRZ" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqXRY" role="3clFbG">
+                  <property role="Xl_RC" value="a contract for the record" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="11foXHHQYxB" role="2iSdaV" />
       </node>
@@ -1261,6 +1328,15 @@
         <node concept="_tjkj" id="11foXHHQZ9s" role="3EZMnx">
           <node concept="3F1sOY" id="11foXHHQZ9t" role="_tjki">
             <ref role="1NtTu8" to="yv47:6JZACDWOa9F" resolve="refFlag" />
+          </node>
+          <node concept="uPpia" id="1ZlHRbgqXT2" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqXT3" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqXTs" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqXTr" role="3clFbG">
+                  <property role="Xl_RC" value="make the record referencable" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3F0ifn" id="11foXHHQZ9u" role="3EZMnx">
@@ -1347,6 +1423,15 @@
             <node concept="3clFbF" id="5YygIlbmLcj" role="3cqZAp">
               <node concept="Xl_RD" id="5YygIlbmLck" role="3clFbG">
                 <property role="Xl_RC" value="where" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqYhS" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqYhT" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqYii" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqYih" role="3clFbG">
+                <property role="Xl_RC" value="a contract for the record member" />
               </node>
             </node>
           </node>
@@ -1538,6 +1623,15 @@
             </node>
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqYA$" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqYA_" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqYAG" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqYAF" role="3clFbG">
+                <property role="Xl_RC" value="a contract for the type definition" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -1638,6 +1732,15 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqWAX" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqWAY" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqWB5" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqWB4" role="3clFbG">
+                <property role="Xl_RC" value="a value for the new value setter" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="15mJ3JeHQ$p" role="2iSdaV" />
     </node>
@@ -1715,6 +1818,15 @@
           <node concept="1kHk_G" id="3WWvqarUHzU" role="3EZMnx">
             <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
             <ref role="1NtTu8" to="yv47:67Y8mp$M9cx" resolve="qualified" />
+            <node concept="uPpia" id="1ZlHRbgha55" role="1djCvC">
+              <node concept="3clFbS" id="1ZlHRbgha56" role="2VODD2">
+                <node concept="3clFbF" id="1sNMMH7wOvW" role="3cqZAp">
+                  <node concept="Xl_RD" id="1sNMMH7wOvV" role="3clFbG">
+                    <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3F0ifn" id="3WWvqarUHzV" role="3EZMnx">
             <property role="3F0ifm" value="enum" />
@@ -1765,13 +1877,22 @@
                   <property role="VOm3f" value="true" />
                 </node>
               </node>
+              <node concept="l2Vlx" id="3WWvqarUH$5" role="2iSdaV" />
               <node concept="VPM3Z" id="3WWvqarUH$6" role="3F10Kt">
                 <property role="VOm3f" value="false" />
               </node>
               <node concept="11L4FC" id="3WWvqarUH$7" role="3F10Kt">
                 <property role="VOm3f" value="true" />
               </node>
-              <node concept="l2Vlx" id="3WWvqarUH$5" role="2iSdaV" />
+            </node>
+            <node concept="uPpia" id="1ZlHRbgqVnA" role="1djCvC">
+              <node concept="3clFbS" id="1ZlHRbgqVnB" role="2VODD2">
+                <node concept="3clFbF" id="1ZlHRbgqVo0" role="3cqZAp">
+                  <node concept="Xl_RD" id="1ZlHRbgqVnZ" role="3clFbG">
+                    <property role="Xl_RC" value="a type for the enumeration" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3F0ifn" id="3WWvqarUJIZ" role="3EZMnx">
@@ -1841,6 +1962,15 @@
                 </node>
               </node>
             </node>
+            <node concept="uPpia" id="1ZlHRbghbch" role="1djCvC">
+              <node concept="3clFbS" id="1ZlHRbghbci" role="2VODD2">
+                <node concept="3clFbF" id="1ZlHRbghbcm" role="3cqZAp">
+                  <node concept="Xl_RD" id="1sNMMH7wORy" role="3clFbG">
+                    <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3F0ifn" id="3YhAT14YvN7" role="3EZMnx">
             <property role="3F0ifm" value="enum" />
@@ -1899,6 +2029,15 @@
                 <property role="VOm3f" value="true" />
               </node>
             </node>
+            <node concept="uPpia" id="1ZlHRbgqVqw" role="1djCvC">
+              <node concept="3clFbS" id="1ZlHRbgqVqx" role="2VODD2">
+                <node concept="3clFbF" id="1ZlHRbgqVv7" role="3cqZAp">
+                  <node concept="Xl_RD" id="1ZlHRbgqVv6" role="3clFbG">
+                    <property role="Xl_RC" value="a type for the enumeration" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3F0ifn" id="3YhAT14YvNu" role="3EZMnx">
             <property role="3F0ifm" value="{..}" />
@@ -1924,10 +2063,12 @@
           <property role="ZpkCL" value="true" />
           <ref role="1NtTu8" to="yv47:67Y8mp$M9cx" resolve="qualified" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
-          <node concept="1m$hWp" id="6lyH5OSTcbn" role="1m$hSO">
-            <node concept="3clFbS" id="6lyH5OSTcbo" role="2VODD2">
-              <node concept="3clFbF" id="6lyH5OSTcbv" role="3cqZAp">
-                <node concept="3clFbT" id="6lyH5OSTcbu" role="3clFbG" />
+          <node concept="uPpia" id="1ZlHRbghbpm" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbghbpn" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbghbpH" role="3cqZAp">
+                <node concept="Xl_RD" id="1sNMMH7wOS5" role="3clFbG">
+                  <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
+                </node>
               </node>
             </node>
           </node>
@@ -1961,7 +2102,6 @@
             </node>
           </node>
         </node>
-        <node concept="l2Vlx" id="3WWvqarUGzE" role="2iSdaV" />
         <node concept="_tjkj" id="3WWvqarUGzv" role="3EZMnx">
           <node concept="3EZMnI" id="3WWvqarUGzw" role="_tjki">
             <node concept="3F0ifn" id="3WWvqarUGzx" role="3EZMnx">
@@ -1982,15 +2122,25 @@
                 <property role="VOm3f" value="true" />
               </node>
             </node>
+            <node concept="l2Vlx" id="3WWvqarUGzB" role="2iSdaV" />
             <node concept="VPM3Z" id="3WWvqarUGzC" role="3F10Kt">
               <property role="VOm3f" value="false" />
             </node>
             <node concept="11L4FC" id="3WWvqarUGzD" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
-            <node concept="l2Vlx" id="3WWvqarUGzB" role="2iSdaV" />
+          </node>
+          <node concept="uPpia" id="1ZlHRbgqVx8" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbgqVx9" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbgqVxg" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbgqVxf" role="3clFbG">
+                  <property role="Xl_RC" value="a type for the enumeration" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
+        <node concept="l2Vlx" id="3WWvqarUGzE" role="2iSdaV" />
         <node concept="3F0ifn" id="3WWvqarUGzF" role="3EZMnx">
           <property role="3F0ifm" value="{" />
         </node>
@@ -2152,6 +2302,15 @@
                 </node>
               </node>
             </node>
+            <node concept="uPpia" id="1ZlHRbghbqS" role="1djCvC">
+              <node concept="3clFbS" id="1ZlHRbghbqT" role="2VODD2">
+                <node concept="3clFbF" id="1ZlHRbghbqX" role="3cqZAp">
+                  <node concept="Xl_RD" id="1sNMMH7wOSD" role="3clFbG">
+                    <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3F0ifn" id="3YhAT14YxUK" role="3EZMnx">
             <property role="3F0ifm" value="enum" />
@@ -2208,6 +2367,15 @@
               </node>
               <node concept="11L4FC" id="3YhAT14YxV6" role="3F10Kt">
                 <property role="VOm3f" value="true" />
+              </node>
+            </node>
+            <node concept="uPpia" id="1ZlHRbgqVB0" role="1djCvC">
+              <node concept="3clFbS" id="1ZlHRbgqVB1" role="2VODD2">
+                <node concept="3clFbF" id="1ZlHRbgqVBw" role="3cqZAp">
+                  <node concept="Xl_RD" id="1ZlHRbgqVBv" role="3clFbG">
+                    <property role="Xl_RC" value="a type for the enumeration" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2319,6 +2487,9 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+      </node>
+      <node concept="VPRnO" id="5XfUTkO2TKm" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>
@@ -2872,7 +3043,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4ptnK4jbr0k">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="1XX52x" to="yv47:4ptnK4jbqZG" resolve="FieldSetter" />
     <node concept="3EZMnI" id="4ptnK4jbr0v" role="2wV5jI">
       <node concept="1iCGBv" id="4ptnK4jbr0D" role="3EZMnx">
@@ -2900,7 +3071,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4ptnK4jbr1n">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="1XX52x" to="yv47:4ptnK4jbqZj" resolve="BuilderExpression" />
     <node concept="3uPbVW" id="4ptnK4jbr87" role="2wV5jI">
       <property role="3vr1H$" value="true" />
@@ -3020,7 +3191,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4ptnK4jbr9n">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="1XX52x" to="yv47:4ptnK4jbr8M" resolve="RecordTypeAdapter" />
     <node concept="1kIj98" id="4ptnK4jbr9y" role="2wV5jI">
       <node concept="3F1sOY" id="4ptnK4jbr9C" role="1kIj9b">
