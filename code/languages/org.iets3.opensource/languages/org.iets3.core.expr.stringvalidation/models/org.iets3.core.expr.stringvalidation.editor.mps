@@ -373,7 +373,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6KviS2JdW9Y">
-    <property role="3GE5qa" value="check" />
+    <property role="3GE5qa" value="check.occurence" />
     <ref role="1XX52x" to="3r88:6KviS2JdW9y" resolve="FailCheck" />
     <node concept="PMmxH" id="3dTPcTRNnnU" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -625,13 +625,13 @@
     </node>
   </node>
   <node concept="24kQdi" id="3dTPcTThmnZ">
-    <ref role="1XX52x" to="3r88:3dTPcTThmny" resolve="StringResultOkOp" />
+    <ref role="1XX52x" to="3r88:3dTPcTThmny" resolve="ValidateStringResultOkOp" />
     <node concept="3F0ifn" id="3dTPcTThmo1" role="2wV5jI">
       <property role="3F0ifm" value="ok" />
     </node>
   </node>
   <node concept="24kQdi" id="3dTPcTThCX7">
-    <ref role="1XX52x" to="3r88:3dTPcTThCWF" resolve="StringResultMessagesOp" />
+    <ref role="1XX52x" to="3r88:3dTPcTThCWF" resolve="ValidateStringResultErrorsOp" />
     <node concept="3F0ifn" id="3dTPcTThCX9" role="2wV5jI">
       <property role="3F0ifm" value="errors" />
     </node>

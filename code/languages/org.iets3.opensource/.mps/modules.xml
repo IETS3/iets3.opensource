@@ -35,7 +35,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.stateMachineExample/org.iets3.core.expr.genjava.stateMachineExample.mpl" folder="expr.genjava.stateMachineExample" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.stateMachineExample/runtime/org.iets3.core.expr.genjava.stateMachineExample.runtime.msd" folder="expr.genjava.stateMachineExample" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.stateMachineExample/sandbox/org.iets3.core.expr.genjava.stateMachineExample.sandbox.msd" folder="expr.genjava.stateMachineExample" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.stringvalidation/org.iets3.core.expr.genjava.stringvalidation.mpl" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.stringvalidation/org.iets3.core.expr.genjava.stringvalidation.mpl" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.temporal/org.iets3.core.expr.genjava.temporal.mpl" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.tests/org.iets3.core.expr.genjava.tests.mpl" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.toplevel/org.iets3.core.expr.genjava.toplevel.mpl" folder="expr.genjava" />

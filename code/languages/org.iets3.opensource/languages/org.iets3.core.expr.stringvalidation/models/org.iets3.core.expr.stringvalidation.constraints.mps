@@ -63,7 +63,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="3dTPcTThm_w">
-    <ref role="1M2myG" to="3r88:3dTPcTThmny" resolve="StringResultOkOp" />
+    <ref role="1M2myG" to="3r88:3dTPcTThmny" resolve="ValidateStringResultOkOp" />
     <node concept="9S07l" id="3dTPcTThm_x" role="9Vyp8">
       <node concept="3clFbS" id="3dTPcTThm_y" role="2VODD2">
         <node concept="3clFbF" id="3dTPcTThmDs" role="3cqZAp">
@@ -87,7 +87,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="3dTPcTThDt3">
-    <ref role="1M2myG" to="3r88:3dTPcTThCWF" resolve="StringResultMessagesOp" />
+    <ref role="1M2myG" to="3r88:3dTPcTThCWF" resolve="ValidateStringResultErrorsOp" />
     <node concept="9S07l" id="3dTPcTThDt4" role="9Vyp8">
       <node concept="3clFbS" id="3dTPcTThDt5" role="2VODD2">
         <node concept="3clFbF" id="3dTPcTThDt6" role="3cqZAp">

@@ -221,7 +221,7 @@
   </node>
   <node concept="1TIwiD" id="6KviS2JdW9y">
     <property role="EcuMT" value="7791028896441811554" />
-    <property role="3GE5qa" value="check" />
+    <property role="3GE5qa" value="check.occurence" />
     <property role="TrG5h" value="FailCheck" />
     <property role="34LRSv" value="not allowed" />
     <ref role="1TJDcQ" node="4lCUG7OtrY4" resolve="AbstractOccurenceBasedCheck" />
@@ -251,11 +251,6 @@
     <property role="TrG5h" value="PositionIndicatorFirst" />
     <property role="34LRSv" value="first" />
     <ref role="1TJDcQ" node="6KviS2Ku$9X" resolve="AbstractPositionIndicator" />
-    <node concept="1TJgyi" id="6KviS2KvaIi" role="1TKVEl">
-      <property role="IQ2nx" value="7791028896462946943" />
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6KviS2Kvb2D">
     <property role="EcuMT" value="7791028896463106217" />
@@ -263,11 +258,6 @@
     <property role="TrG5h" value="PositionIndicatorLast" />
     <property role="34LRSv" value="last" />
     <ref role="1TJDcQ" node="6KviS2Ku$9X" resolve="AbstractPositionIndicator" />
-    <node concept="1TJgyi" id="6KviS2Kvb2E" role="1TKVEl">
-      <property role="IQ2nx" value="7791028896462946943" />
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6KviS2KwOnF">
     <property role="EcuMT" value="7791028896463537643" />
@@ -440,7 +430,7 @@
   </node>
   <node concept="1TIwiD" id="3dTPcTThmny">
     <property role="EcuMT" value="4982093843543755776" />
-    <property role="TrG5h" value="StringResultOkOp" />
+    <property role="TrG5h" value="ValidateStringResultOkOp" />
     <property role="34LRSv" value="ok" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3dTPcTThmnz" role="PzmwI">
@@ -449,7 +439,7 @@
   </node>
   <node concept="1TIwiD" id="3dTPcTThCWF">
     <property role="EcuMT" value="3709229751379256802" />
-    <property role="TrG5h" value="StringResultMessagesOp" />
+    <property role="TrG5h" value="ValidateStringResultErrorsOp" />
     <property role="34LRSv" value="errors" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3dTPcTThCWG" role="PzmwI">

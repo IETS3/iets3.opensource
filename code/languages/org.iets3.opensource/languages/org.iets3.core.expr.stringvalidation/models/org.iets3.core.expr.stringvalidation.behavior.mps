@@ -729,7 +729,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3dTPcTThAXF">
-    <ref role="13h7C2" to="3r88:3dTPcTThmny" resolve="StringResultOkOp" />
+    <ref role="13h7C2" to="3r88:3dTPcTThmny" resolve="ValidateStringResultOkOp" />
     <node concept="13hLZK" id="3dTPcTThAXG" role="13h7CW">
       <node concept="3clFbS" id="3dTPcTThAXH" role="2VODD2" />
     </node>
@@ -748,7 +748,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3dTPcTThDeU">
-    <ref role="13h7C2" to="3r88:3dTPcTThCWF" resolve="StringResultMessagesOp" />
+    <ref role="13h7C2" to="3r88:3dTPcTThCWF" resolve="ValidateStringResultErrorsOp" />
     <node concept="13hLZK" id="3dTPcTThDeV" role="13h7CW">
       <node concept="3clFbS" id="3dTPcTThDeW" role="2VODD2" />
     </node>
@@ -1168,7 +1168,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="pOv0_Xm8hd">
-    <property role="3GE5qa" value="check" />
+    <property role="3GE5qa" value="check.occurence" />
     <ref role="13h7C2" to="3r88:6KviS2JdW9y" resolve="FailCheck" />
     <node concept="13i0hz" id="pOv0_Xm8ho" role="13h7CS">
       <property role="TrG5h" value="makeX" />

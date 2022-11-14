@@ -7100,6 +7100,7 @@
   </node>
   <node concept="312cEu" id="5wF$o0BFLx9">
     <property role="TrG5h" value="XCannotBeCheckKind" />
+    <property role="3GE5qa" value="check.kind" />
     <node concept="3Tm1VV" id="5wF$o0BFLxa" role="1B3o_S" />
     <node concept="3uibUv" id="5wF$o0BFLxb" role="1zkMxy">
       <ref role="3uigEE" node="5wF$o0BFGxZ" resolve="XCheckKind" />

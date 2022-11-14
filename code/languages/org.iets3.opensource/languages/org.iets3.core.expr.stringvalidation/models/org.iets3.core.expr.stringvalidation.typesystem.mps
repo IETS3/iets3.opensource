@@ -267,7 +267,7 @@
     </node>
     <node concept="1YaCAy" id="3dTPcTThmox" role="1YuTPh">
       <property role="TrG5h" value="stringResultOkOp" />
-      <ref role="1YaFvo" to="3r88:3dTPcTThmny" resolve="StringResultOkOp" />
+      <ref role="1YaFvo" to="3r88:3dTPcTThmny" resolve="ValidateStringResultOkOp" />
     </node>
   </node>
   <node concept="1YbPZF" id="3dTPcTThCXA">
@@ -301,7 +301,7 @@
     </node>
     <node concept="1YaCAy" id="3dTPcTThCXD" role="1YuTPh">
       <property role="TrG5h" value="stringResultMessagesOp" />
-      <ref role="1YaFvo" to="3r88:3dTPcTThCWF" resolve="StringResultMessagesOp" />
+      <ref role="1YaFvo" to="3r88:3dTPcTThCWF" resolve="ValidateStringResultErrorsOp" />
     </node>
   </node>
 </model>
