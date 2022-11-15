@@ -31,9 +31,6 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -424,8 +421,8 @@
       <ref role="qq9wM" to="mi3w:41xkdV7Z9B0" resolve="EmptyRangeLiteral" />
       <node concept="3vetai" id="5LVdhDvjfut" role="3vQZUl">
         <node concept="2ShNRf" id="5LVdhDvjfuz" role="3vdyny">
-          <node concept="HV5vD" id="5LVdhDvjgOa" role="2ShVmc">
-            <ref role="HV5vE" to="2j0k:4O9rw8aCYPg" resolve="EmptyDateRangeValue" />
+          <node concept="1pGfFk" id="4xzR2e_v6rk" role="2ShVmc">
+            <ref role="37wK5l" to="2j0k:71iF5NcALUq" resolve="EmptyDateRangeValue" />
           </node>
         </node>
       </node>
