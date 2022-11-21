@@ -214,6 +214,12 @@
       <property role="20kJfa" value="col" />
       <ref role="20lvS9" node="7F9023_OqBf" resolve="DataColDefRef" />
     </node>
+    <node concept="1TJgyj" id="3RQ2yxdeEit" role="1TKVEi">
+      <property role="IQ2ns" value="4464767248795083933" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="defaultRow" />
+      <ref role="20lvS9" node="1WMFq5x4fLm" resolve="DataRowRefForLookup" />
+    </node>
     <node concept="1TJgyj" id="stdmzxm7Y5" role="1TKVEi">
       <property role="IQ2ns" value="512624657163648901" />
       <property role="20kJfa" value="col_old" />
@@ -269,6 +275,18 @@
       <property role="IQ2ns" value="4073179274522615557" />
       <property role="20kJfa" value="dataRow" />
       <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="cPLa7Fpiy9" resolve="DataRow" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1WMFq5x4fLm">
+    <property role="EcuMT" value="2248050072641141846" />
+    <property role="TrG5h" value="DataRowRefForLookup" />
+    <property role="34LRSv" value="default" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1WMFq5x4fLn" role="1TKVEi">
+      <property role="20lbJX" value="fLJekj4/1" />
+      <property role="IQ2ns" value="2248050072641141847" />
+      <property role="20kJfa" value="dataRow" />
       <ref role="20lvS9" node="cPLa7Fpiy9" resolve="DataRow" />
     </node>
   </node>
