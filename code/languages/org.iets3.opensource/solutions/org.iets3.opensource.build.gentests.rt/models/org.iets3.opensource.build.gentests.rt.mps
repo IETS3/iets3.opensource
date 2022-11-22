@@ -2,7 +2,7 @@
 <model ref="r:56314b6a-e509-4908-989e-0d5d3dc89bfa(org.iets3.opensource.build.gentests.rt)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="uqj" ref="e70ad515-8ff0-4a50-8cb4-41406f14e348/java:org.junit.extensions.cpsuite(org.iets3.opensource.build.gentests.rt/)" />
