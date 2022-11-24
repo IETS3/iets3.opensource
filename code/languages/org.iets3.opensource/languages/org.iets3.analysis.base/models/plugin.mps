@@ -6905,23 +6905,38 @@
                                           </node>
                                           <node concept="9aQIb" id="2E$J0GoiiFu" role="9aQIa">
                                             <node concept="3clFbS" id="2E$J0GoiiFv" role="9aQI4">
-                                              <node concept="3clFbF" id="2E$J0God1JX" role="3cqZAp">
-                                                <node concept="2YIFZM" id="2E$J0GoiwsG" role="3clFbG">
-                                                  <ref role="37wK5l" to="jkm4:~Messages.showWarningDialog(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showWarningDialog" />
-                                                  <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                                                  <node concept="2OqwBi" id="2E$J0GoiyoZ" role="37wK5m">
-                                                    <node concept="37vLTw" id="2E$J0GoiwsH" role="2Oq$k0">
-                                                      <ref role="3cqZAo" node="2E$J0GohUwH" resolve="mpsProject" />
-                                                    </node>
-                                                    <node concept="liA8E" id="2E$J0GoiziV" role="2OqNvi">
-                                                      <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
-                                                    </node>
+                                              <node concept="3clFbF" id="Mi7DpTpfAU" role="3cqZAp">
+                                                <node concept="2OqwBi" id="Mi7DpTpnEU" role="3clFbG">
+                                                  <node concept="2YIFZM" id="Mi7DpTpl5E" role="2Oq$k0">
+                                                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                                                    <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                                                   </node>
-                                                  <node concept="Xl_RD" id="2E$J0GoiwsI" role="37wK5m">
-                                                    <property role="Xl_RC" value="Solvable node is not available anymore" />
-                                                  </node>
-                                                  <node concept="Xl_RD" id="2E$J0GoiJ1b" role="37wK5m">
-                                                    <property role="Xl_RC" value="Solvable not found" />
+                                                  <node concept="liA8E" id="Mi7DpTptA6" role="2OqNvi">
+                                                    <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                                                    <node concept="1bVj0M" id="Mi7DpTpzlR" role="37wK5m">
+                                                      <node concept="3clFbS" id="Mi7DpTpzlS" role="1bW5cS">
+                                                        <node concept="3clFbF" id="Mi7DpTpGMU" role="3cqZAp">
+                                                          <node concept="2YIFZM" id="2E$J0GoiwsG" role="3clFbG">
+                                                            <ref role="37wK5l" to="jkm4:~Messages.showWarningDialog(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showWarningDialog" />
+                                                            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                                            <node concept="2OqwBi" id="2E$J0GoiyoZ" role="37wK5m">
+                                                              <node concept="37vLTw" id="2E$J0GoiwsH" role="2Oq$k0">
+                                                                <ref role="3cqZAo" node="2E$J0GohUwH" resolve="mpsProject" />
+                                                              </node>
+                                                              <node concept="liA8E" id="2E$J0GoiziV" role="2OqNvi">
+                                                                <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+                                                              </node>
+                                                            </node>
+                                                            <node concept="Xl_RD" id="2E$J0GoiwsI" role="37wK5m">
+                                                              <property role="Xl_RC" value="Solvable node is not available anymore" />
+                                                            </node>
+                                                            <node concept="Xl_RD" id="2E$J0GoiJ1b" role="37wK5m">
+                                                              <property role="Xl_RC" value="Solvable not found" />
+                                                            </node>
+                                                          </node>
+                                                        </node>
+                                                      </node>
+                                                    </node>
                                                   </node>
                                                 </node>
                                               </node>

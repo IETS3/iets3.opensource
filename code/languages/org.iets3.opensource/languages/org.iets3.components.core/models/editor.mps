@@ -50,6 +50,7 @@
     <import index="ir4w" ref="r:1ee7d695-67a0-4310-b6a9-28ed5f54bc88(org.iets3.core.attributes.editor)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
@@ -4623,25 +4624,40 @@
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="3clFbF" id="41i_FWyXP1_" role="3cqZAp">
-                                        <node concept="2YIFZM" id="41i_FWyXP1A" role="3clFbG">
-                                          <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                          <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
-                                          <node concept="10Nm6u" id="41i_FWyXP1B" role="37wK5m" />
-                                          <node concept="3cpWs3" id="41i_FWyXP1C" role="37wK5m">
-                                            <node concept="37vLTw" id="41i_FWyXP1D" role="3uHU7w">
-                                              <ref role="3cqZAo" node="41i_FWyXP19" resolve="nestedPath" />
-                                            </node>
-                                            <node concept="Xl_RD" id="41i_FWyXP1E" role="3uHU7B">
-                                              <property role="Xl_RC" value="Attempted to create recursive nesting of components:\n" />
-                                            </node>
+                                      <node concept="3clFbF" id="Mi7DpTqoT_" role="3cqZAp">
+                                        <node concept="2OqwBi" id="Mi7DpTqrm6" role="3clFbG">
+                                          <node concept="2YIFZM" id="Mi7DpTqqqY" role="2Oq$k0">
+                                            <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                                            <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                                           </node>
-                                          <node concept="Xl_RD" id="41i_FWyXP1F" role="37wK5m">
-                                            <property role="Xl_RC" value="Illegal nesting" />
-                                          </node>
-                                          <node concept="10M0yZ" id="41i_FWyXP1G" role="37wK5m">
-                                            <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                            <ref role="3cqZAo" to="dxuu:~JOptionPane.WARNING_MESSAGE" resolve="WARNING_MESSAGE" />
+                                          <node concept="liA8E" id="Mi7DpTqwzM" role="2OqNvi">
+                                            <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                                            <node concept="1bVj0M" id="Mi7DpTqxTn" role="37wK5m">
+                                              <node concept="3clFbS" id="Mi7DpTqxTo" role="1bW5cS">
+                                                <node concept="3clFbF" id="Mi7DpTq$F7" role="3cqZAp">
+                                                  <node concept="2YIFZM" id="41i_FWyXP1A" role="3clFbG">
+                                                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
+                                                    <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                                    <node concept="10Nm6u" id="41i_FWyXP1B" role="37wK5m" />
+                                                    <node concept="3cpWs3" id="41i_FWyXP1C" role="37wK5m">
+                                                      <node concept="37vLTw" id="41i_FWyXP1D" role="3uHU7w">
+                                                        <ref role="3cqZAo" node="41i_FWyXP19" resolve="nestedPath" />
+                                                      </node>
+                                                      <node concept="Xl_RD" id="41i_FWyXP1E" role="3uHU7B">
+                                                        <property role="Xl_RC" value="Attempted to create recursive nesting of components:\n" />
+                                                      </node>
+                                                    </node>
+                                                    <node concept="Xl_RD" id="41i_FWyXP1F" role="37wK5m">
+                                                      <property role="Xl_RC" value="Illegal nesting" />
+                                                    </node>
+                                                    <node concept="10M0yZ" id="41i_FWyXP1G" role="37wK5m">
+                                                      <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                                      <ref role="3cqZAo" to="dxuu:~JOptionPane.WARNING_MESSAGE" resolve="WARNING_MESSAGE" />
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
                                           </node>
                                         </node>
                                       </node>
