@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
@@ -6759,9 +6758,6 @@
       <node concept="2iRfu4" id="3nVyItrZBNH" role="2iSdaV" />
       <node concept="3F0ifn" id="3nVyItrZBND" role="3EZMnx">
         <property role="3F0ifm" value="empty" />
-        <node concept="11LMrY" id="3tcv7J0_Tob" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="3CIbrd" id="1kEzTWVBIaM" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -6770,6 +6766,9 @@
         <node concept="3EZMnI" id="3tcv7J0yv9A" role="_tjki">
           <node concept="3F0ifn" id="3nVyItrZBO4" role="3EZMnx">
             <property role="3F0ifm" value="&lt;" />
+            <node concept="11L4FC" id="3jp1EC0Z6K$" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
             <node concept="11LMrY" id="3nVyItrZBOf" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
