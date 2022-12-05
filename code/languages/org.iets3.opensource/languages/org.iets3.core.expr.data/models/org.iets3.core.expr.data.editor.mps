@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:9dbbba98-10eb-4541-87eb-0b6e6386b68c(org.iets3.core.expr.data.editor)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -19,6 +20,7 @@
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="e9k1" ref="r:00903dee-f0b0-48de-9335-7cb3f90ae462(org.iets3.core.expr.data.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -50,6 +52,9 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styles" index="V601i" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -64,6 +69,7 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -187,9 +193,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
-        <child id="1068581517676" name="expression" index="3cqZAk" />
-      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -220,7 +223,7 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
-      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ng" index="uPpia" />
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
@@ -311,7 +314,7 @@
         <child id="5662204344887343006" name="style" index="1geGt4" />
       </concept>
       <concept id="5662204344885763446" name="de.slisson.mps.tables.structure.TableStyle" flags="ng" index="1g0IQG">
-        <child id="3785936898437886280" name="items" index="3hTmz4" />
+        <reference id="1186406756722" name="styleClass" index="VmB1A" />
       </concept>
       <concept id="3785936898437629812" name="de.slisson.mps.tables.structure.BorderBottomWidthStyleItem" flags="lg" index="3hShVS" />
       <concept id="3785936898437423425" name="de.slisson.mps.tables.structure.IntegerTableStyleItem" flags="lg" index="3hSBzd">
@@ -474,33 +477,7 @@
           <node concept="2r3Xtq" id="5hullqu1Kmh" role="2rfbqz">
             <node concept="1A0rlU" id="5hullqu5Vbi" role="uCobI">
               <node concept="3F0ifn" id="5hullqu5WMQ" role="1A0rbF">
-                <node concept="VPM3Z" id="5hullqu5WMU" role="3F10Kt">
-                  <property role="VOm3f" value="false" />
-                </node>
-                <node concept="3tD6jV" id="5hullqu5WN0" role="3F10Kt">
-                  <ref role="3tD7wE" to="reoo:5PDTdguqQlC" resolve="border-top-width" />
-                  <node concept="3sjG9q" id="5hullqu5WN1" role="3tD6jU">
-                    <node concept="3clFbS" id="5hullqu5WN2" role="2VODD2">
-                      <node concept="3clFbF" id="5hullqu5X41" role="3cqZAp">
-                        <node concept="3cmrfG" id="5hullqu5X40" role="3clFbG">
-                          <property role="3cmrfH" value="0" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3tD6jV" id="5hullqu5Xll" role="3F10Kt">
-                  <ref role="3tD7wE" to="reoo:5PDTdguqQlv" resolve="border-left-width" />
-                  <node concept="3sjG9q" id="5hullqu5Xln" role="3tD6jU">
-                    <node concept="3clFbS" id="5hullqu5Xlp" role="2VODD2">
-                      <node concept="3clFbF" id="5hullqu5XAz" role="3cqZAp">
-                        <node concept="3cmrfG" id="5hullqu5XAy" role="3clFbG">
-                          <property role="3cmrfH" value="0" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
+                <ref role="1k5W1q" node="621ujKeU3sS" resolve="DataTableColumnHeaderForRowHeaders" />
               </node>
             </node>
             <node concept="2r3VGE" id="5hullqu1Kmj" role="uCobI">
@@ -648,35 +625,7 @@
                 </node>
               </node>
               <node concept="1g0IQG" id="5hullqu1KnL" role="1geGt4">
-                <node concept="3tD6jV" id="6EEZHsfdit$" role="3F10Kt">
-                  <ref role="3tD7wE" to="reoo:5PDTdguqQmB" resolve="shade-color" />
-                  <node concept="3sjG9q" id="6EEZHsfdit_" role="3tD6jU">
-                    <node concept="3clFbS" id="6EEZHsfditA" role="2VODD2">
-                      <node concept="3cpWs6" id="6EEZHsfditB" role="3cqZAp">
-                        <node concept="2ShNRf" id="6EEZHsfditC" role="3cqZAk">
-                          <node concept="1pGfFk" id="6EEZHsfditD" role="2ShVmc">
-                            <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
-                            <node concept="3cmrfG" id="6EEZHsfditE" role="37wK5m">
-                              <property role="3cmrfH" value="220" />
-                            </node>
-                            <node concept="3cmrfG" id="6EEZHsfditF" role="37wK5m">
-                              <property role="3cmrfH" value="220" />
-                            </node>
-                            <node concept="3cmrfG" id="6EEZHsfditG" role="37wK5m">
-                              <property role="3cmrfH" value="220" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3hWdHu" id="5hullqu1KnM" role="3hTmz4">
-                  <property role="Vb097" value="fLJRk5B/darkGray" />
-                </node>
-                <node concept="3hShVS" id="5hullqu1KnN" role="3hTmz4">
-                  <property role="3hSBKY" value="3" />
-                </node>
+                <ref role="VmB1A" node="5BtJuGRt7EK" resolve="DataTableColumHeader" />
               </node>
             </node>
           </node>
@@ -816,30 +765,8 @@
       <node concept="2reCLk" id="cPLa7Fq7iF" role="2r0Tv6">
         <node concept="2reCLy" id="5hullqu1JxI" role="2reCL6">
           <node concept="3EZMnI" id="8XWEteq8eD" role="2reSmM">
+            <ref role="1k5W1q" node="5BtJuGRt7EY" resolve="DataTableRowHeader" />
             <node concept="2iRfu4" id="8XWEteq8eE" role="2iSdaV" />
-            <node concept="3tD6jV" id="8XWEtergff" role="3F10Kt">
-              <ref role="3tD7wE" to="reoo:5PDTdguqQmB" resolve="shade-color" />
-              <node concept="3sjG9q" id="8XWEtergfg" role="3tD6jU">
-                <node concept="3clFbS" id="8XWEtergfh" role="2VODD2">
-                  <node concept="3cpWs6" id="8XWEteq8I6" role="3cqZAp">
-                    <node concept="2ShNRf" id="8XWEteq8I7" role="3cqZAk">
-                      <node concept="1pGfFk" id="8XWEteq8I8" role="2ShVmc">
-                        <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
-                        <node concept="3cmrfG" id="8XWEteq8I9" role="37wK5m">
-                          <property role="3cmrfH" value="220" />
-                        </node>
-                        <node concept="3cmrfG" id="8XWEteq8Ia" role="37wK5m">
-                          <property role="3cmrfH" value="220" />
-                        </node>
-                        <node concept="3cmrfG" id="8XWEteq8Ib" role="37wK5m">
-                          <property role="3cmrfH" value="220" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3F0A7n" id="4v5hZncKAmQ" role="3EZMnx">
               <property role="1O74Pk" value="true" />
               <property role="39s7Ar" value="true" />
@@ -847,6 +774,7 @@
               <ref role="1k5W1q" to="itrz:ub9nkyQsN2" resolve="iets3Identifier" />
             </node>
           </node>
+          <node concept="1g0IQG" id="5BtJuGRtY05" role="1geGt4" />
         </node>
         <node concept="2r731s" id="4_sn_QHlhmA" role="2reCL6">
           <node concept="2r732K" id="4_sn_QHlhn9" role="2r73lS">
@@ -1408,6 +1336,135 @@
           </node>
           <node concept="VechU" id="6WstIz8MKZX" role="3F10Kt">
             <property role="Vb096" value="fLJRk5B/darkGray" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="V5hpn" id="5BtJuGRt7DH">
+    <property role="TrG5h" value="DataTableStyles" />
+    <node concept="14StLt" id="5BtJuGRt7EK" role="V601i">
+      <property role="TrG5h" value="DataTableColumHeader" />
+      <node concept="3tD6jV" id="5T8tZL2kM_m" role="3F10Kt">
+        <ref role="3tD7wE" to="reoo:5PDTdguqQmB" resolve="shade-color" />
+        <node concept="3sjG9q" id="5T8tZL2kM_o" role="3tD6jU">
+          <node concept="3clFbS" id="5T8tZL2kM_q" role="2VODD2">
+            <node concept="3clFbF" id="5T8tZL2kN89" role="3cqZAp">
+              <node concept="2ShNRf" id="5T8tZL2kN8b" role="3clFbG">
+                <node concept="1pGfFk" id="5T8tZL2kN8c" role="2ShVmc">
+                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                  <node concept="2ShNRf" id="5T8tZL2kN8d" role="37wK5m">
+                    <node concept="1pGfFk" id="5T8tZL2kN8e" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <node concept="3cmrfG" id="5T8tZL2kN8f" role="37wK5m">
+                        <property role="3cmrfH" value="220" />
+                      </node>
+                      <node concept="3cmrfG" id="5T8tZL2kN8g" role="37wK5m">
+                        <property role="3cmrfH" value="220" />
+                      </node>
+                      <node concept="3cmrfG" id="5T8tZL2kN8h" role="37wK5m">
+                        <property role="3cmrfH" value="220" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2ShNRf" id="5T8tZL2kN8i" role="37wK5m">
+                    <node concept="1pGfFk" id="5T8tZL2kN8j" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <node concept="3cmrfG" id="7SzcYVyrJVU" role="37wK5m">
+                        <property role="3cmrfH" value="30" />
+                      </node>
+                      <node concept="3cmrfG" id="7SzcYVyrK6F" role="37wK5m">
+                        <property role="3cmrfH" value="30" />
+                      </node>
+                      <node concept="3cmrfG" id="7SzcYVyrKnG" role="37wK5m">
+                        <property role="3cmrfH" value="30" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3hWdHu" id="5BtJuGRtWNK" role="3F10Kt">
+        <property role="Vb097" value="fLJRk5B/darkGray" />
+      </node>
+      <node concept="3hShVS" id="5BtJuGRtWNL" role="3F10Kt">
+        <property role="3hSBKY" value="3" />
+      </node>
+    </node>
+    <node concept="14StLt" id="621ujKeU3sS" role="V601i">
+      <property role="TrG5h" value="DataTableColumnHeaderForRowHeaders" />
+      <node concept="VPM3Z" id="7MFzeeGtSFR" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
+      <node concept="3tD6jV" id="7MFzeeGtSFS" role="3F10Kt">
+        <ref role="3tD7wE" to="reoo:5PDTdguqQlC" resolve="border-top-width" />
+        <node concept="3sjG9q" id="7MFzeeGtSFT" role="3tD6jU">
+          <node concept="3clFbS" id="7MFzeeGtSFU" role="2VODD2">
+            <node concept="3clFbF" id="7MFzeeGtSFV" role="3cqZAp">
+              <node concept="3cmrfG" id="7MFzeeGtSFW" role="3clFbG">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3tD6jV" id="7MFzeeGtSFX" role="3F10Kt">
+        <ref role="3tD7wE" to="reoo:5PDTdguqQlv" resolve="border-left-width" />
+        <node concept="3sjG9q" id="7MFzeeGtSFY" role="3tD6jU">
+          <node concept="3clFbS" id="7MFzeeGtSFZ" role="2VODD2">
+            <node concept="3clFbF" id="7MFzeeGtSG0" role="3cqZAp">
+              <node concept="3cmrfG" id="7MFzeeGtSG1" role="3clFbG">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="5BtJuGRt7EY" role="V601i">
+      <property role="TrG5h" value="DataTableRowHeader" />
+      <node concept="3tD6jV" id="5T8tZL2kNi0" role="3F10Kt">
+        <ref role="3tD7wE" to="reoo:5PDTdguqQmB" resolve="shade-color" />
+        <node concept="3sjG9q" id="5T8tZL2kNi2" role="3tD6jU">
+          <node concept="3clFbS" id="5T8tZL2kNi4" role="2VODD2">
+            <node concept="3clFbF" id="5T8tZL2kNqx" role="3cqZAp">
+              <node concept="2ShNRf" id="621ujKeQ6Ga" role="3clFbG">
+                <node concept="1pGfFk" id="621ujKeQ6Gb" role="2ShVmc">
+                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                  <node concept="2ShNRf" id="621ujKeQ6Gc" role="37wK5m">
+                    <node concept="1pGfFk" id="621ujKeQ6Gd" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <node concept="3cmrfG" id="621ujKeQ6Ge" role="37wK5m">
+                        <property role="3cmrfH" value="220" />
+                      </node>
+                      <node concept="3cmrfG" id="621ujKeQ6Gf" role="37wK5m">
+                        <property role="3cmrfH" value="220" />
+                      </node>
+                      <node concept="3cmrfG" id="621ujKeQ6Gg" role="37wK5m">
+                        <property role="3cmrfH" value="220" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2ShNRf" id="621ujKeQ6Gh" role="37wK5m">
+                    <node concept="1pGfFk" id="621ujKeQ6Gi" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <node concept="3cmrfG" id="7SzcYVyrKVS" role="37wK5m">
+                        <property role="3cmrfH" value="30" />
+                      </node>
+                      <node concept="3cmrfG" id="7SzcYVyrL8u" role="37wK5m">
+                        <property role="3cmrfH" value="30" />
+                      </node>
+                      <node concept="3cmrfG" id="7SzcYVyrLnI" role="37wK5m">
+                        <property role="3cmrfH" value="30" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
