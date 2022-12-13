@@ -1984,23 +1984,49 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbJ" id="7yYa0tuzwl4" role="3cqZAp">
+              <node concept="3clFbS" id="7yYa0tuzwl6" role="3clFbx">
+                <node concept="3cpWs6" id="7yYa0tuzx1x" role="3cqZAp">
+                  <node concept="37vLTw" id="7yYa0tuzx1A" role="3cqZAk">
+                    <ref role="3cqZAo" node="7DTWJ$8lKcJ" resolve="val" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2ZW3vV" id="7yYa0tuzwrG" role="3clFbw">
+                <node concept="3uibUv" id="7yYa0tuzwsO" role="2ZW6by">
+                  <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+                </node>
+                <node concept="37vLTw" id="7yYa0tuzwlV" role="2ZW6bz">
+                  <ref role="3cqZAo" node="7DTWJ$8lKcJ" resolve="val" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="7DTWJ$8lKgV" role="3cqZAp">
               <node concept="3clFbS" id="7DTWJ$8lKgX" role="3clFbx">
+                <node concept="3cpWs8" id="7yYa0tuz6aJ" role="3cqZAp">
+                  <node concept="3cpWsn" id="7yYa0tuz6aK" role="3cpWs9">
+                    <property role="TrG5h" value="decimal" />
+                    <node concept="3uibUv" id="7yYa0tuyY7O" role="1tU5fm">
+                      <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                    </node>
+                    <node concept="10QFUN" id="7yYa0tuz6aL" role="33vP2m">
+                      <node concept="37vLTw" id="7yYa0tuz6aM" role="10QFUP">
+                        <ref role="3cqZAo" node="7DTWJ$8lKcJ" resolve="val" />
+                      </node>
+                      <node concept="3uibUv" id="7yYa0tuz6aN" role="10QFUM">
+                        <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="7DTWJ$8nBNE" role="3cqZAp">
                   <node concept="3cpWsn" id="7DTWJ$8nBNF" role="3cpWs9">
                     <property role="TrG5h" value="bd" />
                     <node concept="3uibUv" id="7DTWJ$8nBNC" role="1tU5fm">
                       <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
                     </node>
-                    <node concept="1eOMI4" id="7DTWJ$8nBNG" role="33vP2m">
-                      <node concept="10QFUN" id="7DTWJ$8nBNH" role="1eOMHV">
-                        <node concept="37vLTw" id="7DTWJ$8nBNI" role="10QFUP">
-                          <ref role="3cqZAo" node="7DTWJ$8lKcJ" resolve="val" />
-                        </node>
-                        <node concept="3uibUv" id="7DTWJ$8nBNJ" role="10QFUM">
-                          <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="7yYa0tuz6aO" role="33vP2m">
+                      <ref role="3cqZAo" node="7yYa0tuz6aK" resolve="decimal" />
                     </node>
                   </node>
                 </node>
