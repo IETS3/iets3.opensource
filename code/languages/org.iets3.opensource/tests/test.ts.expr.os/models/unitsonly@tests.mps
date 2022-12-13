@@ -29,6 +29,7 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="63ih" ref="r:8b224ec5-7a3e-45b9-8341-eb73ff942246(org.iets3.core.expr.math.typesystem)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
@@ -653,8 +654,8 @@
             <node concept="37vLTw" id="3FpaOZJSU_H" role="2Oq$k0">
               <ref role="3cqZAo" node="3FpaOZJSUoe" resolve="range" />
             </node>
-            <node concept="3TrcHB" id="3FpaOZJSUWJ" role="2OqNvi">
-              <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
+            <node concept="2qgKlT" id="SIMVVoux23" role="2OqNvi">
+              <ref role="37wK5l" to="b1h1:SIMVVosRGL" resolve="getMinimum" />
             </node>
           </node>
           <node concept="3_1$Yv" id="3FpaOZJSVlU" role="3_9lra">
@@ -671,8 +672,8 @@
             <node concept="37vLTw" id="3FpaOZJSV03" role="2Oq$k0">
               <ref role="3cqZAo" node="3FpaOZJSUoe" resolve="range" />
             </node>
-            <node concept="3TrcHB" id="3FpaOZJSVeS" role="2OqNvi">
-              <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
+            <node concept="2qgKlT" id="SIMVVouxdh" role="2OqNvi">
+              <ref role="37wK5l" to="b1h1:SIMVVosRWc" resolve="getMaximum" />
             </node>
           </node>
           <node concept="3_1$Yv" id="3FpaOZJSVyn" role="3_9lra">

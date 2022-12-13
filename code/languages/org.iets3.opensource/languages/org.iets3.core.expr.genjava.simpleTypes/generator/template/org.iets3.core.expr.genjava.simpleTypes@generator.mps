@@ -6030,8 +6030,8 @@
                               <ref role="3Tt5mk" to="5qo5:19PglA20qXS" resolve="range" />
                             </node>
                           </node>
-                          <node concept="3TrcHB" id="1wEm9ap1EdG" role="2OqNvi">
-                            <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
+                          <node concept="2qgKlT" id="SIMVVotkSH" role="2OqNvi">
+                            <ref role="37wK5l" to="b1h1:SIMVVosRGL" resolve="getMinimum" />
                           </node>
                         </node>
                       </node>
@@ -6103,8 +6103,8 @@
                               <ref role="3Tt5mk" to="5qo5:19PglA20qXS" resolve="range" />
                             </node>
                           </node>
-                          <node concept="3TrcHB" id="1wEm9ap1FOO" role="2OqNvi">
-                            <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
+                          <node concept="2qgKlT" id="SIMVVouyLD" role="2OqNvi">
+                            <ref role="37wK5l" to="b1h1:SIMVVosRWc" resolve="getMaximum" />
                           </node>
                         </node>
                       </node>
