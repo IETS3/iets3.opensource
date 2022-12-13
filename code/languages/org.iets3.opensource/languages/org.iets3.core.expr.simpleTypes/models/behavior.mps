@@ -795,6 +795,41 @@
         <node concept="17QB3L" id="4rZeNQ6OgzY" role="1tU5fm" />
       </node>
     </node>
+    <node concept="13i0hz" id="SIMVVorXi8" role="13h7CS">
+      <property role="TrG5h" value="isValidNumber" />
+      <node concept="3Tm1VV" id="SIMVVorXi9" role="1B3o_S" />
+      <node concept="10P_77" id="SIMVVorX$i" role="3clF45" />
+      <node concept="3clFbS" id="SIMVVorXib" role="3clF47">
+        <node concept="3clFbF" id="SIMVVorX_f" role="3cqZAp">
+          <node concept="22lmx$" id="SIMVVorXUL" role="3clFbG">
+            <node concept="BsUDl" id="SIMVVorXWd" role="3uHU7w">
+              <ref role="37wK5l" node="4rZeNQ6Og7j" resolve="isReal" />
+              <node concept="37vLTw" id="SIMVVorXXd" role="37wK5m">
+                <ref role="3cqZAo" node="SIMVVorX$Q" resolve="val" />
+              </node>
+            </node>
+            <node concept="22lmx$" id="SIMVVorXSa" role="3uHU7B">
+              <node concept="BsUDl" id="SIMVVorX_e" role="3uHU7B">
+                <ref role="37wK5l" node="4rZeNQ6OfoS" resolve="isZero" />
+                <node concept="37vLTw" id="SIMVVorX_O" role="37wK5m">
+                  <ref role="3cqZAo" node="SIMVVorX$Q" resolve="val" />
+                </node>
+              </node>
+              <node concept="BsUDl" id="SIMVVorXT4" role="3uHU7w">
+                <ref role="37wK5l" node="4rZeNQ6Og4r" resolve="isInteger" />
+                <node concept="37vLTw" id="SIMVVorXTU" role="37wK5m">
+                  <ref role="3cqZAo" node="SIMVVorX$Q" resolve="val" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="SIMVVorX$Q" role="3clF46">
+        <property role="TrG5h" value="val" />
+        <node concept="17QB3L" id="SIMVVorX$P" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="13i0hz" id="uGVYUijgRw" role="13h7CS">
       <property role="TrG5h" value="canBeInt" />
       <node concept="3Tm1VV" id="uGVYUijgRx" role="1B3o_S" />

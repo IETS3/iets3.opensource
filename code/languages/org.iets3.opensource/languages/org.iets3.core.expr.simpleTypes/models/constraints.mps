@@ -15,7 +15,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -202,30 +201,12 @@
       <ref role="EomxK" to="5qo5:4rZeNQ6Oert" resolve="value" />
       <node concept="QB0g5" id="4rZeNQ6Oeyt" role="QCWH9">
         <node concept="3clFbS" id="4rZeNQ6Oeyu" role="2VODD2">
-          <node concept="3clFbF" id="4rZeNQ6OgE7" role="3cqZAp">
-            <node concept="22lmx$" id="4rZeNQ6Ohmk" role="3clFbG">
-              <node concept="2OqwBi" id="4rZeNQ6Ohvd" role="3uHU7w">
-                <node concept="EsrRn" id="4rZeNQ6Ohq_" role="2Oq$k0" />
-                <node concept="2qgKlT" id="4rZeNQ6OhC4" role="2OqNvi">
-                  <ref role="37wK5l" to="b1h1:4rZeNQ6Og7j" resolve="isReal" />
-                  <node concept="1Wqviy" id="4rZeNQ6OhG7" role="37wK5m" />
-                </node>
-              </node>
-              <node concept="22lmx$" id="4rZeNQ6OgXk" role="3uHU7B">
-                <node concept="2OqwBi" id="4rZeNQ6OgH$" role="3uHU7B">
-                  <node concept="EsrRn" id="4rZeNQ6OgE5" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="4rZeNQ6OgP5" role="2OqNvi">
-                    <ref role="37wK5l" to="b1h1:4rZeNQ6OfoS" resolve="isZero" />
-                    <node concept="1Wqviy" id="4rZeNQ6OgSh" role="37wK5m" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="4rZeNQ6Oh5c" role="3uHU7w">
-                  <node concept="EsrRn" id="4rZeNQ6Oh0W" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="4rZeNQ6Ohdd" role="2OqNvi">
-                    <ref role="37wK5l" to="b1h1:4rZeNQ6Og4r" resolve="isInteger" />
-                    <node concept="1Wqviy" id="4rZeNQ6OhgP" role="37wK5m" />
-                  </node>
-                </node>
+          <node concept="3clFbF" id="SIMVVorYsz" role="3cqZAp">
+            <node concept="2OqwBi" id="SIMVVorYJO" role="3clFbG">
+              <node concept="EsrRn" id="SIMVVorYsy" role="2Oq$k0" />
+              <node concept="2qgKlT" id="SIMVVorZoT" role="2OqNvi">
+                <ref role="37wK5l" to="b1h1:SIMVVorXi8" resolve="isValidNumber" />
+                <node concept="1Wqviy" id="SIMVVorZqI" role="37wK5m" />
               </node>
             </node>
           </node>

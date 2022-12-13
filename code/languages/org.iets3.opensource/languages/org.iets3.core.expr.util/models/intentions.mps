@@ -3397,43 +3397,6 @@
           </node>
         </node>
         <node concept="3clFbJ" id="6GGzMC67ztT" role="3cqZAp">
-          <node concept="22lmx$" id="SIMVVoivhW" role="3clFbw">
-            <node concept="2OqwBi" id="SIMVVoixn7" role="3uHU7w">
-              <node concept="37vLTw" id="SIMVVoizU$" role="2Oq$k0">
-                <ref role="3cqZAo" node="SIMVVoizUw" resolve="testLiteral" />
-              </node>
-              <node concept="2qgKlT" id="SIMVVoiCch" role="2OqNvi">
-                <ref role="37wK5l" to="b1h1:4rZeNQ6Og7j" resolve="isReal" />
-                <node concept="37vLTw" id="SIMVVoiDdv" role="37wK5m">
-                  <ref role="3cqZAo" node="6GGzMC67Efh" resolve="l" />
-                </node>
-              </node>
-            </node>
-            <node concept="22lmx$" id="SIMVVoiDB0" role="3uHU7B">
-              <node concept="2OqwBi" id="SIMVVoiErP" role="3uHU7B">
-                <node concept="37vLTw" id="SIMVVoiDOG" role="2Oq$k0">
-                  <ref role="3cqZAo" node="SIMVVoizUw" resolve="testLiteral" />
-                </node>
-                <node concept="2qgKlT" id="SIMVVoiF0T" role="2OqNvi">
-                  <ref role="37wK5l" to="b1h1:4rZeNQ6OfoS" resolve="isZero" />
-                  <node concept="37vLTw" id="SIMVVoiFgi" role="37wK5m">
-                    <ref role="3cqZAo" node="6GGzMC67Efh" resolve="l" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="SIMVVoiAP0" role="3uHU7w">
-                <node concept="37vLTw" id="SIMVVoiAeh" role="2Oq$k0">
-                  <ref role="3cqZAo" node="SIMVVoizUw" resolve="testLiteral" />
-                </node>
-                <node concept="2qgKlT" id="SIMVVoiBw5" role="2OqNvi">
-                  <ref role="37wK5l" to="b1h1:4rZeNQ6Og4r" resolve="isInteger" />
-                  <node concept="37vLTw" id="SIMVVoiBOH" role="37wK5m">
-                    <ref role="3cqZAo" node="6GGzMC67Efh" resolve="l" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbS" id="6GGzMC67ztY" role="3clFbx">
             <node concept="3cpWs6" id="6GGzMC67ztZ" role="3cqZAp">
               <node concept="2OqwBi" id="2oUyrt_3jmX" role="3cqZAk">
@@ -3450,6 +3413,17 @@
                     <ref role="3cqZAo" node="6GGzMC65iRK" resolve="s" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="SIMVVos5Gw" role="3clFbw">
+            <node concept="37vLTw" id="SIMVVos5hX" role="2Oq$k0">
+              <ref role="3cqZAo" node="SIMVVoizUw" resolve="testLiteral" />
+            </node>
+            <node concept="2qgKlT" id="SIMVVos6_A" role="2OqNvi">
+              <ref role="37wK5l" to="b1h1:SIMVVorXi8" resolve="isValidNumber" />
+              <node concept="37vLTw" id="SIMVVos6Tb" role="37wK5m">
+                <ref role="3cqZAo" node="6GGzMC67Efh" resolve="l" />
               </node>
             </node>
           </node>
