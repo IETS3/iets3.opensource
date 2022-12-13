@@ -2180,8 +2180,8 @@
                       <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
                       <node concept="2OqwBi" id="uGVYUijjhD" role="37wK5m">
                         <node concept="oxGPV" id="uGVYUijjhE" role="2Oq$k0" />
-                        <node concept="3TrcHB" id="uGVYUijjhF" role="2OqNvi">
-                          <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                        <node concept="2qgKlT" id="SIMVVoghRd" role="2OqNvi">
+                          <ref role="37wK5l" to="b1h1:2oUyrt$QPvb" resolve="valueWithDotInsteadOfComma" />
                         </node>
                       </node>
                     </node>

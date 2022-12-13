@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -3856,11 +3857,11 @@
                     <property role="2qtEX9" value="value" />
                     <node concept="3zFVjK" id="6IxV2nSdQnr" role="3zH0cK">
                       <node concept="3clFbS" id="6IxV2nSdQns" role="2VODD2">
-                        <node concept="3clFbF" id="6IxV2nSdQw9" role="3cqZAp">
-                          <node concept="2OqwBi" id="6IxV2nSdQNc" role="3clFbG">
-                            <node concept="30H73N" id="6IxV2nSdQw8" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="6IxV2nSdRs9" role="2OqNvi">
-                              <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                        <node concept="3cpWs6" id="SIMVVogFvP" role="3cqZAp">
+                          <node concept="2OqwBi" id="SIMVVogFWd" role="3cqZAk">
+                            <node concept="30H73N" id="SIMVVogFDg" role="2Oq$k0" />
+                            <node concept="2qgKlT" id="SIMVVogGnt" role="2OqNvi">
+                              <ref role="37wK5l" to="b1h1:2oUyrt$QPvb" resolve="valueWithDotInsteadOfComma" />
                             </node>
                           </node>
                         </node>

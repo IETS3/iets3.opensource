@@ -1648,6 +1648,48 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="SIMVVonDnL" role="_iOnB" />
+    <node concept="_fkuM" id="SIMVVonDBA" role="_iOnB">
+      <property role="TrG5h" value="hexNumbers" />
+      <node concept="_fkuZ" id="SIMVVonDJy" role="_fkp5">
+        <node concept="_fku$" id="SIMVVonDJz" role="_fkur" />
+        <node concept="30bXRB" id="SIMVVonDL5" role="_fkuS">
+          <property role="30bXRw" value="255" />
+        </node>
+        <node concept="30bXRB" id="SIMVVonDKr" role="_fkuY">
+          <property role="30bXRw" value="0xFF" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="SIMVVoqeMW" role="_fkp5">
+        <node concept="_fku$" id="SIMVVoqeMX" role="_fkur" />
+        <node concept="30bXRB" id="SIMVVoqeMY" role="_fkuS">
+          <property role="30bXRw" value="255" />
+        </node>
+        <node concept="30bXRB" id="SIMVVoqeMZ" role="_fkuY">
+          <property role="30bXRw" value="0xff" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="SIMVVoqeNP" role="_fkp5">
+        <node concept="_fku$" id="SIMVVoqeNQ" role="_fkur" />
+        <node concept="30bXRB" id="SIMVVoqeNR" role="_fkuS">
+          <property role="30bXRw" value="0" />
+        </node>
+        <node concept="30bXRB" id="SIMVVoqeNS" role="_fkuY">
+          <property role="30bXRw" value="0x0" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="SIMVVoqeOX" role="_fkp5">
+        <node concept="_fku$" id="SIMVVoqeOY" role="_fkur" />
+        <node concept="30bXRB" id="SIMVVoqeSg" role="_fkuS">
+          <property role="30bXRw" value="-15" />
+        </node>
+        <node concept="30cIq6" id="SIMVVoqeQv" role="_fkuY">
+          <node concept="30bXRB" id="SIMVVoqeP0" role="30czhm">
+            <property role="30bXRw" value="0xF" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="1OtF0I6DM8i" role="_iOnB" />
     <node concept="_ixoA" id="1$1rueeDiqO" role="_iOnB" />
     <node concept="_ixoA" id="7Wa2sv44boh" role="_iOnB" />
