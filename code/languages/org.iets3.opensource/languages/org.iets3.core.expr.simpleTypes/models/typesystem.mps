@@ -3561,7 +3561,7 @@
             <node concept="3clFbS" id="3p6$WoEzUg8" role="3clFbx">
               <node concept="2MkqsV" id="3p6$WoEzUA7" role="3cqZAp">
                 <node concept="Xl_RD" id="3p6$WoEzUAm" role="2MkJ7o">
-                  <property role="Xl_RC" value="invalid range (max &lt; min or precison error)" />
+                  <property role="Xl_RC" value="invalid range (max &lt; min or precision error)" />
                 </node>
                 <node concept="1YBJjd" id="3p6$WoEzUBQ" role="1urrMF">
                   <ref role="1YBMHb" node="3p6$WoEzUg2" resolve="nt" />
