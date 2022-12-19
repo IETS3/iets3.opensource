@@ -135,12 +135,24 @@ dependencies {
 }
 
 
-task resolveMps(type: Sync) {
-    dependsOn configurations.mps
-    from {
-        configurations.mps.resolve().collect { zipTree(it) }
+ext.skipResolveMps = project.hasProperty('mpsHomeDir')
+ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "$buildDir/mps")
+
+if (project.skipResolveMps) {
+    task resolveMps {
+        doLast {
+            logger.info "MPS resolution skipped"
+            logger.info "MPS home: " + mpsHomeDir.getAbsolutePath()
+        }
     }
-    into "$buildDir/mps"
+} else {
+    task resolveMps(type: Copy) {
+        dependsOn configurations.mps
+        from {
+            configurations.mps.resolve().collect { zipTree(it) }
+        }
+        into mpsHomeDir
+    }
 }
 
 task resolveLanguageLibs(type: Sync) {
@@ -171,7 +183,7 @@ task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageL
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
-        'mps.home'                          : resolveMps.destinationDir,
+        'mps.home'                          : mpsHomeDir.getAbsolutePath(),
         'iets3.github.opensource.home'      : rootDir,
         'build.dir'                         : buildDir,
         'mps.generator.skipUnmodifiedModels': incrementalBuild,
