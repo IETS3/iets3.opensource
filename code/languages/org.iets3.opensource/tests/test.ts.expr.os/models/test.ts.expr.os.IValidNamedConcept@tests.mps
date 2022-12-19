@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b2f1151b-2b4d-4138-a964-339fb2310ecc(test.in.expr.os.IValidNamedConcept@tests)">
+<model ref="r:04da7edc-4070-4a9f-b0a0-5de41c37f432(test.ts.expr.os.IValidNamedConcept@tests)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="a2242e6f-d308-41e6-ac06-28b0a2a4ad79" name="TestValidNameConcept" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
