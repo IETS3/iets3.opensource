@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:53be11f3-57c5-4686-bb2a-0b15a13b560c(TestValidNameConcept.behavior)">
+<model ref="r:53be11f3-57c5-4686-bb2a-0b15a13b560c(test.ts.expr.os.validNameConcept.behavior)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
@@ -9,7 +9,7 @@
   <imports>
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
-    <import index="otrn" ref="r:e2fb2588-e67f-482d-9930-e9a6a3971cb0(TestValidNameConcept.structure)" implicit="true" />
+    <import index="otrn" ref="r:e2fb2588-e67f-482d-9930-e9a6a3971cb0(test.ts.expr.os.validNameConcept.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">

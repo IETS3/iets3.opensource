@@ -13,7 +13,6 @@
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.genjava.stateMachineExample.devkit/org.iets3.core.expr.genjava.stateMachineExample.devkit.devkit" folder="expr.genjava.stateMachineExample" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.stateful.devkit/org.iets3.core.expr.stateful.devkit.devkit" folder="expr.lang-stateful" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.req/org.iets3.req.devkit" folder="req" />
-      <modulePath path="$PROJECT_DIR$/languages/TestValidNameConcept/TestValidNameConcept.mpl" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.base/org.iets3.analysis.base.mpl" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.core/org.iets3.components.core.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.plugin/org.iets3.components.plugin.msd" folder="comp" />
@@ -75,6 +74,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/test.iest3.component.attribute/test.iest3.component.attribute.mpl" folder="comp" />
+      <modulePath path="$PROJECT_DIR$/languages/test.ts.expr.os.validNameConcept/test.ts.expr.os.validNameConcept.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.interpreter/org.iets3.components.core.interpreter.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.sandbox/org.iets3.components.core.sandbox.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.adt.interpreter/org.iets3.core.expr.adt.interpreter.msd" folder="expr.lang-advanced" />
