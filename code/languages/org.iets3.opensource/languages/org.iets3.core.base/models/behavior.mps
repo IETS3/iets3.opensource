@@ -1824,7 +1824,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="6OMpQn6XRp3" role="3uHU7w">
-              <property role="Xl_RC" value="a-zA-Z$[_]]" />
+              <property role="Xl_RC" value="a-zA-Z$_]" />
             </node>
           </node>
         </node>
@@ -1911,7 +1911,7 @@
                   </node>
                 </node>
                 <node concept="Xl_RD" id="6OMpQn6QvCp" role="3uHU7w">
-                  <property role="Xl_RC" value="[_" />
+                  <property role="Xl_RC" value="_" />
                 </node>
               </node>
               <node concept="37vLTw" id="6OMpQn6Q$ts" role="3uHU7w">
@@ -1919,7 +1919,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="6OMpQn6QvO3" role="3uHU7w">
-              <property role="Xl_RC" value="]]*" />
+              <property role="Xl_RC" value="]*" />
             </node>
           </node>
         </node>
@@ -1927,7 +1927,7 @@
     </node>
     <node concept="13i0hz" id="39ERoteujbz" role="13h7CS">
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="isLegalName" />
+      <property role="TrG5h" value="isValidName" />
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="39ERoteujb$" role="1B3o_S" />
       <node concept="10P_77" id="39ERoteujS3" role="3clF45" />
@@ -2178,7 +2178,7 @@
                   <node concept="liA8E" id="7JoR4kgoOOw" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                     <node concept="Xl_RD" id="7JoR4kgoOOx" role="37wK5m">
-                      <property role="Xl_RC" value="[^a-zA-Z0-9$[_]]" />
+                      <property role="Xl_RC" value="[^a-zA-Z0-9$_]" />
                     </node>
                     <node concept="Xl_RD" id="7JoR4kgoOOy" role="37wK5m">
                       <property role="Xl_RC" value="_" />
