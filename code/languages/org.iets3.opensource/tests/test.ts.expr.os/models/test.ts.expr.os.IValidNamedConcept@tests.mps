@@ -5,17 +5,17 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="a2242e6f-d308-41e6-ac06-28b0a2a4ad79" name="TestValidNameConcept" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="a2242e6f-d308-41e6-ac06-28b0a2a4ad79" name="test.ts.expr.os.validNameConcept" version="0" />
   </languages>
   <imports>
     <import index="kwl8" ref="r:02d078a1-d0db-43fc-a66a-8505d53851a4(org.iets3.core.base.constraints)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
-    <import index="otrn" ref="r:e2fb2588-e67f-482d-9930-e9a6a3971cb0(TestValidNameConcept.structure)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
+    <import index="otrn" ref="r:e2fb2588-e67f-482d-9930-e9a6a3971cb0(test.ts.expr.os.validNameConcept.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -164,15 +164,15 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="a2242e6f-d308-41e6-ac06-28b0a2a4ad79" name="TestValidNameConcept">
-      <concept id="7868465185796786647" name="TestValidNameConcept.structure.ValidName_UmlautsOff_ParagraphOn_ApostropheOn" flags="ng" index="2FK6UM" />
-      <concept id="7868465185796786649" name="TestValidNameConcept.structure.ValidName_UmlautsOff_ParagraphOff_ApostropheOn" flags="ng" index="2FK6UW" />
-      <concept id="7868465185796786648" name="TestValidNameConcept.structure.ValidName_UmlautsOff_ParagraphOn_ApostropheOff" flags="ng" index="2FK6UX" />
-      <concept id="7868465185796786650" name="TestValidNameConcept.structure.ValidName_UmlautsOff_ParagraphOff_ApostropheOff" flags="ng" index="2FK6UZ" />
-      <concept id="7868465185796758887" name="TestValidNameConcept.structure.ValidName_UmlautsOn_ParagraphOff_ApostropheOn" flags="ng" index="2FKZC2" />
-      <concept id="7868465185796758882" name="TestValidNameConcept.structure.ValidName_UmlautsOn_ParagraphOn_ApostropheOn" flags="ng" index="2FKZC7" />
-      <concept id="7868465185796758888" name="TestValidNameConcept.structure.ValidName_UmlautsOn_ParagraphOff_ApostropheOff" flags="ng" index="2FKZCd" />
-      <concept id="7868465185796758879" name="TestValidNameConcept.structure.ValidName_UmlautsOn_ParagraphOn_ApostropheOff" flags="ng" index="2FKZCU" />
+    <language id="a2242e6f-d308-41e6-ac06-28b0a2a4ad79" name="test.ts.expr.os.validNameConcept">
+      <concept id="7868465185796786647" name="test.ts.expr.os.validNameConcept.structure.ValidName_UmlautsOff_ParagraphOn_ApostropheOn" flags="ng" index="2FK6UM" />
+      <concept id="7868465185796786649" name="test.ts.expr.os.validNameConcept.structure.ValidName_UmlautsOff_ParagraphOff_ApostropheOn" flags="ng" index="2FK6UW" />
+      <concept id="7868465185796786648" name="test.ts.expr.os.validNameConcept.structure.ValidName_UmlautsOff_ParagraphOn_ApostropheOff" flags="ng" index="2FK6UX" />
+      <concept id="7868465185796786650" name="test.ts.expr.os.validNameConcept.structure.ValidName_UmlautsOff_ParagraphOff_ApostropheOff" flags="ng" index="2FK6UZ" />
+      <concept id="7868465185796758887" name="test.ts.expr.os.validNameConcept.structure.ValidName_UmlautsOn_ParagraphOff_ApostropheOn" flags="ng" index="2FKZC2" />
+      <concept id="7868465185796758882" name="test.ts.expr.os.validNameConcept.structure.ValidName_UmlautsOn_ParagraphOn_ApostropheOn" flags="ng" index="2FKZC7" />
+      <concept id="7868465185796758888" name="test.ts.expr.os.validNameConcept.structure.ValidName_UmlautsOn_ParagraphOff_ApostropheOff" flags="ng" index="2FKZCd" />
+      <concept id="7868465185796758879" name="test.ts.expr.os.validNameConcept.structure.ValidName_UmlautsOn_ParagraphOn_ApostropheOff" flags="ng" index="2FKZCU" />
     </language>
   </registry>
   <node concept="1lH9Xt" id="6OMpQn6WPO4">

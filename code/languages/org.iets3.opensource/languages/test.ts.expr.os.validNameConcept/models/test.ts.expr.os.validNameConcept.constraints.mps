@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fb551635-c73e-4781-8036-a5d9eed1a884(TestValidNameConcept.constraints)">
+<model ref="r:fb551635-c73e-4781-8036-a5d9eed1a884(test.ts.expr.os.validNameConcept.constraints)">
   <persistence version="9" />
   <languages>
     <use id="5dae8159-ab99-46bb-a40d-0cee30ee7018" name="jetbrains.mps.lang.constraints.rules.kinds" version="0" />

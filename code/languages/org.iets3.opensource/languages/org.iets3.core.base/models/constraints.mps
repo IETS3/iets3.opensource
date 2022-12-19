@@ -279,7 +279,7 @@
                 <node concept="2yIwOk" id="39ERoteunRa" role="2OqNvi" />
               </node>
               <node concept="2qgKlT" id="39ERoteuoOS" role="2OqNvi">
-                <ref role="37wK5l" to="gdgh:39ERoteujbz" resolve="isLegalName" />
+                <ref role="37wK5l" to="gdgh:39ERoteujbz" resolve="isValidName" />
                 <node concept="1Wqviy" id="39ERoteuoZJ" role="37wK5m" />
               </node>
             </node>
