@@ -1820,11 +1820,11 @@
                 <ref role="3cqZAo" node="4ZH31cjGTqM" resolve="uml" />
               </node>
               <node concept="Xl_RD" id="4ZH31cjH0b8" role="3uHU7B">
-                <property role="Xl_RC" value="[" />
+                <property role="Xl_RC" value="[a-zA-Z$_" />
               </node>
             </node>
             <node concept="Xl_RD" id="6OMpQn6XRp3" role="3uHU7w">
-              <property role="Xl_RC" value="a-zA-Z$_]" />
+              <property role="Xl_RC" value="]" />
             </node>
           </node>
         </node>
@@ -1891,27 +1891,17 @@
         <node concept="3clFbF" id="6OMpQn6XUgS" role="3cqZAp">
           <node concept="3cpWs3" id="6OMpQn6QvNV" role="3clFbG">
             <node concept="3cpWs3" id="6OMpQn6QvCj" role="3uHU7B">
-              <node concept="3cpWs3" id="4ZH31cjH3AC" role="3uHU7B">
-                <node concept="3cpWs3" id="4ZH31cjH3l3" role="3uHU7B">
-                  <node concept="3cpWs3" id="4ZH31cjH22w" role="3uHU7B">
-                    <node concept="3cpWs3" id="4ZH31cjH2jv" role="3uHU7B">
-                      <node concept="37vLTw" id="4ZH31cjH2uQ" role="3uHU7w">
-                        <ref role="3cqZAo" node="6OMpQn6XSaN" resolve="uml" />
-                      </node>
-                      <node concept="Xl_RD" id="6OMpQn6XTUD" role="3uHU7B">
-                        <property role="Xl_RC" value="[" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="4ZH31cjH22A" role="3uHU7w">
-                      <property role="Xl_RC" value="a-zA-Z0-9$" />
-                    </node>
+              <node concept="3cpWs3" id="4ZH31cjH3l3" role="3uHU7B">
+                <node concept="3cpWs3" id="4A2d0p4bud5" role="3uHU7B">
+                  <node concept="37vLTw" id="4A2d0p4buzw" role="3uHU7w">
+                    <ref role="3cqZAo" node="6OMpQn6XSaN" resolve="uml" />
                   </node>
-                  <node concept="37vLTw" id="4ZH31cjH3tR" role="3uHU7w">
-                    <ref role="3cqZAo" node="6OMpQn6XSaU" resolve="par" />
+                  <node concept="Xl_RD" id="4A2d0p4buNi" role="3uHU7B">
+                    <property role="Xl_RC" value="[a-zA-Z0-9$_" />
                   </node>
                 </node>
-                <node concept="Xl_RD" id="6OMpQn6QvCp" role="3uHU7w">
-                  <property role="Xl_RC" value="_" />
+                <node concept="37vLTw" id="4ZH31cjH3tR" role="3uHU7w">
+                  <ref role="3cqZAo" node="6OMpQn6XSaU" resolve="par" />
                 </node>
               </node>
               <node concept="37vLTw" id="6OMpQn6Q$ts" role="3uHU7w">
