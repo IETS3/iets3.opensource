@@ -69,6 +69,7 @@
     <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
     <import index="jmi8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.util(MPS.IDEA/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
@@ -1143,38 +1144,53 @@
       <node concept="3clFbS" id="2g6f$baql9u" role="3clF47">
         <node concept="3clFbJ" id="2g6f$bar0kg" role="3cqZAp">
           <node concept="3clFbS" id="2g6f$bar0ki" role="3clFbx">
-            <node concept="3clFbF" id="2g6f$bb2Ad9" role="3cqZAp">
-              <node concept="2YIFZM" id="2g6f$bb2Aeh" role="3clFbG">
-                <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
-                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                <node concept="3cpWs3" id="2g6f$bb2ABa" role="37wK5m">
-                  <node concept="2OqwBi" id="1br4Vy9o_n" role="3uHU7w">
-                    <node concept="2OqwBi" id="1br4Vy9o_o" role="2Oq$k0">
-                      <node concept="2WthIp" id="1br4Vy9o_p" role="2Oq$k0" />
-                      <node concept="3gHZIF" id="1br4Vy9o_q" role="2OqNvi">
-                        <ref role="2WH_rO" node="5ipapt3lxen" resolve="someNode" />
+            <node concept="3clFbF" id="Mi7DpTpS7i" role="3cqZAp">
+              <node concept="2OqwBi" id="Mi7DpTpVMx" role="3clFbG">
+                <node concept="2YIFZM" id="Mi7DpTpUul" role="2Oq$k0">
+                  <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                  <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+                </node>
+                <node concept="liA8E" id="Mi7DpTpYCz" role="2OqNvi">
+                  <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                  <node concept="1bVj0M" id="Mi7DpTq10i" role="37wK5m">
+                    <node concept="3clFbS" id="Mi7DpTq10j" role="1bW5cS">
+                      <node concept="3clFbF" id="2g6f$bb2Ad9" role="3cqZAp">
+                        <node concept="2YIFZM" id="2g6f$bb2Aeh" role="3clFbG">
+                          <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                          <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                          <node concept="3cpWs3" id="2g6f$bb2ABa" role="37wK5m">
+                            <node concept="2OqwBi" id="1br4Vy9o_n" role="3uHU7w">
+                              <node concept="2OqwBi" id="1br4Vy9o_o" role="2Oq$k0">
+                                <node concept="2WthIp" id="1br4Vy9o_p" role="2Oq$k0" />
+                                <node concept="3gHZIF" id="1br4Vy9o_q" role="2OqNvi">
+                                  <ref role="2WH_rO" node="5ipapt3lxen" resolve="someNode" />
+                                </node>
+                              </node>
+                              <node concept="2qgKlT" id="1br4Vy9o_r" role="2OqNvi">
+                                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="2g6f$bb2AfU" role="3uHU7B">
+                              <property role="Xl_RC" value="The trace was null for node \n" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="2g6f$bb2AeO" role="37wK5m">
+                            <property role="Xl_RC" value="Tracing" />
+                          </node>
+                        </node>
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="1br4Vy9o_r" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                    </node>
                   </node>
-                  <node concept="Xl_RD" id="2g6f$bb2AfU" role="3uHU7B">
-                    <property role="Xl_RC" value="The trace was null for node \n" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="2g6f$bb2AeO" role="37wK5m">
-                  <property role="Xl_RC" value="Tracing" />
                 </node>
               </node>
             </node>
             <node concept="3cpWs6" id="2g6f$bar1TO" role="3cqZAp" />
           </node>
           <node concept="3clFbC" id="2g6f$bar1p$" role="3clFbw">
-            <node concept="10Nm6u" id="2g6f$bar1Qb" role="3uHU7w" />
             <node concept="37vLTw" id="2g6f$bar0T4" role="3uHU7B">
               <ref role="3cqZAo" node="2g6f$baqub7" resolve="root" />
             </node>
+            <node concept="10Nm6u" id="2g6f$bar1Qb" role="3uHU7w" />
           </node>
         </node>
         <node concept="3cpWs8" id="5Ch7I6mj5T1" role="3cqZAp">
