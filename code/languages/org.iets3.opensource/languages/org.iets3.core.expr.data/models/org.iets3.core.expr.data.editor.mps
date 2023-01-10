@@ -21,6 +21,7 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="5991739802479784074" name="jetbrains.mps.lang.editor.structure.MenuTypeNamed" flags="ng" index="22hDWg" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -76,6 +77,15 @@
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
+      <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
+        <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
+        <child id="1139535219969" name="item" index="1h_SK8" />
+      </concept>
+      <concept id="1139535280617" name="jetbrains.mps.lang.editor.structure.CellActionMapItem" flags="lg" index="1hA7zw">
+        <property id="1139535298778" name="actionId" index="1hAc7j" />
+        <child id="1139535280620" name="executeFunction" index="1hA7z_" />
+      </concept>
+      <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -96,6 +106,7 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
@@ -1186,6 +1197,7 @@
       <node concept="2iRfu4" id="7EHDEMiDE43" role="2iSdaV" />
       <node concept="1iCGBv" id="1WMFq5x4fLp" role="3EZMnx">
         <ref role="1NtTu8" to="e9k1:1WMFq5x4fLn" resolve="dataRow" />
+        <ref role="1ERwB7" node="4dez30I6DgH" resolve="DataRowRefForLookup_Actions" />
         <node concept="1sVBvm" id="1WMFq5x4fLq" role="1sWHZn">
           <node concept="3F0A7n" id="1WMFq5x4fLr" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -1236,6 +1248,36 @@
       <node concept="3cWJ9i" id="5NQtOFqe3BT" role="1Qtc8$">
         <node concept="CtIbL" id="5NQtOFqe3BV" role="CtIbM">
           <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="4dez30I6DgH">
+    <property role="TrG5h" value="DataRowRefForLookup_Actions" />
+    <ref role="1h_SK9" to="e9k1:1WMFq5x4fLm" resolve="DataRowRefForLookup" />
+    <node concept="1hA7zw" id="4dez30I6DgI" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
+      <node concept="1hAIg9" id="4dez30I6DgJ" role="1hA7z_">
+        <node concept="3clFbS" id="4dez30I6DgK" role="2VODD2">
+          <node concept="3clFbF" id="4dez30I7H_a" role="3cqZAp">
+            <node concept="2OqwBi" id="4dez30I7K9X" role="3clFbG">
+              <node concept="0IXxy" id="4dez30I7H_9" role="2Oq$k0" />
+              <node concept="3YRAZt" id="4dez30I7L4n" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="4dez30I6DgW" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="4dez30I6DgX" role="1hA7z_">
+        <node concept="3clFbS" id="4dez30I6DgY" role="2VODD2">
+          <node concept="3clFbF" id="4dez30I8hnq" role="3cqZAp">
+            <node concept="2OqwBi" id="4dez30I8hnr" role="3clFbG">
+              <node concept="0IXxy" id="4dez30I8hns" role="2Oq$k0" />
+              <node concept="3YRAZt" id="4dez30I8hnt" role="2OqNvi" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
