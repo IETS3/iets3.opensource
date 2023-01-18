@@ -9,6 +9,7 @@
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -31,6 +32,9 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styles" index="V601i" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
@@ -41,6 +45,7 @@
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
@@ -70,6 +75,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -92,6 +100,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
@@ -143,98 +152,28 @@
     <node concept="3EZMnI" id="3nGzaxURa4M" role="2wV5jI">
       <node concept="3F0ifn" id="3nGzaxURa5a" role="3EZMnx">
         <property role="3F0ifm" value="/" />
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
         <node concept="11LMrY" id="3nGzaxURa5c" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="3nGzaxUSFB0" role="3F10Kt">
-          <node concept="3ZlJ5R" id="3nGzaxUSFB2" role="VblUZ">
-            <node concept="3clFbS" id="3nGzaxUSFB3" role="2VODD2">
-              <node concept="3clFbF" id="3nGzaxUSGTS" role="3cqZAp">
-                <node concept="2YIFZM" id="3nGzaxUSH7Z" role="3clFbG">
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <node concept="Xl_RD" id="3nGzaxUSHgs" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="3F0A7n" id="3nGzaxURa54" role="3EZMnx">
         <ref role="1NtTu8" to="mi3w:3nGzaxURa4k" resolve="dd" />
-        <node concept="VechU" id="6C0OSEaGBuF" role="3F10Kt">
-          <node concept="3ZlJ5R" id="6C0OSEaGBuG" role="VblUZ">
-            <node concept="3clFbS" id="6C0OSEaGBuH" role="2VODD2">
-              <node concept="3clFbF" id="6C0OSEaGBuI" role="3cqZAp">
-                <node concept="2YIFZM" id="6C0OSEaGBuJ" role="3clFbG">
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <node concept="Xl_RD" id="6C0OSEaGBuK" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
       </node>
       <node concept="3F0A7n" id="3nGzaxURa4Y" role="3EZMnx">
         <ref role="1NtTu8" to="mi3w:3nGzaxURa4l" resolve="mm" />
-        <node concept="VechU" id="6C0OSEaGBll" role="3F10Kt">
-          <node concept="3ZlJ5R" id="6C0OSEaGBlm" role="VblUZ">
-            <node concept="3clFbS" id="6C0OSEaGBln" role="2VODD2">
-              <node concept="3clFbF" id="6C0OSEaGBlo" role="3cqZAp">
-                <node concept="2YIFZM" id="6C0OSEaGBlp" role="3clFbG">
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <node concept="Xl_RD" id="6C0OSEaGBlq" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
       </node>
       <node concept="3F0A7n" id="3nGzaxURa4S" role="3EZMnx">
         <ref role="1NtTu8" to="mi3w:3nGzaxURa4m" resolve="yyyy" />
-        <node concept="VechU" id="6C0OSEaGBcc" role="3F10Kt">
-          <node concept="3ZlJ5R" id="6C0OSEaGBcd" role="VblUZ">
-            <node concept="3clFbS" id="6C0OSEaGBce" role="2VODD2">
-              <node concept="3clFbF" id="6C0OSEaGBcf" role="3cqZAp">
-                <node concept="2YIFZM" id="6C0OSEaGBcg" role="3clFbG">
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <node concept="Xl_RD" id="6C0OSEaGBch" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
       </node>
       <node concept="3F0ifn" id="3nGzaxURa57" role="3EZMnx">
         <property role="3F0ifm" value="/" />
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
         <node concept="11L4FC" id="3nGzaxURa5j" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="6C0OSEaGBCh" role="3F10Kt">
-          <node concept="3ZlJ5R" id="6C0OSEaGBCi" role="VblUZ">
-            <node concept="3clFbS" id="6C0OSEaGBCj" role="2VODD2">
-              <node concept="3clFbF" id="6C0OSEaGBCk" role="3cqZAp">
-                <node concept="2YIFZM" id="6C0OSEaGBCl" role="3clFbG">
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <node concept="Xl_RD" id="6C0OSEaGBCm" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="2iRfu4" id="3nGzaxURa4P" role="2iSdaV" />
@@ -370,26 +309,12 @@
       </node>
       <node concept="3F0ifn" id="7khFtBHlNKZ" role="3EZMnx">
         <property role="3F0ifm" value="/" />
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
         <node concept="11LMrY" id="7khFtBHlV9$" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
         <node concept="11L4FC" id="7khFtBHlViY" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="7khFtBHlV9_" role="3F10Kt">
-          <node concept="3ZlJ5R" id="7khFtBHlV9A" role="VblUZ">
-            <node concept="3clFbS" id="7khFtBHlV9B" role="2VODD2">
-              <node concept="3clFbF" id="7khFtBHlV9C" role="3cqZAp">
-                <node concept="2YIFZM" id="7khFtBHlV9D" role="3clFbG">
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <node concept="Xl_RD" id="7khFtBHlV9E" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="3F1sOY" id="7khFtBHlNLF" role="3EZMnx">
@@ -403,23 +328,9 @@
       </node>
       <node concept="3F0ifn" id="7khFtBHlNL7" role="3EZMnx">
         <property role="3F0ifm" value="/" />
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
         <node concept="11L4FC" id="7khFtBHlVjc" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="7khFtBHlVjd" role="3F10Kt">
-          <node concept="3ZlJ5R" id="7khFtBHlVje" role="VblUZ">
-            <node concept="3clFbS" id="7khFtBHlVjf" role="2VODD2">
-              <node concept="3clFbF" id="7khFtBHlVjg" role="3cqZAp">
-                <node concept="2YIFZM" id="7khFtBHlVjh" role="3clFbG">
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <node concept="Xl_RD" id="7khFtBHlVji" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>
@@ -711,42 +622,14 @@
     <node concept="3EZMnI" id="3HiHZey9pdy" role="2wV5jI">
       <node concept="3F0ifn" id="3HiHZey9pdz" role="3EZMnx">
         <property role="3F0ifm" value="\" />
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
         <node concept="11LMrY" id="3HiHZey9pd$" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="3HiHZey9pd_" role="3F10Kt">
-          <node concept="3ZlJ5R" id="3HiHZey9pdA" role="VblUZ">
-            <node concept="3clFbS" id="3HiHZey9pdB" role="2VODD2">
-              <node concept="3clFbF" id="3HiHZey9pdC" role="3cqZAp">
-                <node concept="2YIFZM" id="3HiHZey9pdD" role="3clFbG">
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <node concept="Xl_RD" id="3HiHZey9pdE" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="3F0A7n" id="3HiHZey9pdF" role="3EZMnx">
         <ref role="1NtTu8" to="mi3w:3HiHZey9lUb" resolve="hh" />
-        <node concept="VechU" id="3HiHZey9pdG" role="3F10Kt">
-          <node concept="3ZlJ5R" id="3HiHZey9pdH" role="VblUZ">
-            <node concept="3clFbS" id="3HiHZey9pdI" role="2VODD2">
-              <node concept="3clFbF" id="3HiHZey9pdJ" role="3cqZAp">
-                <node concept="2YIFZM" id="3HiHZey9pdK" role="3clFbG">
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <node concept="Xl_RD" id="3HiHZey9pdL" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
       </node>
       <node concept="3F0ifn" id="3HiHZey9pqa" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -759,21 +642,7 @@
       </node>
       <node concept="3F0A7n" id="3HiHZey9pdM" role="3EZMnx">
         <ref role="1NtTu8" to="mi3w:3HiHZey9lUd" resolve="mm" />
-        <node concept="VechU" id="3HiHZey9pdN" role="3F10Kt">
-          <node concept="3ZlJ5R" id="3HiHZey9pdO" role="VblUZ">
-            <node concept="3clFbS" id="3HiHZey9pdP" role="2VODD2">
-              <node concept="3clFbF" id="3HiHZey9pdQ" role="3cqZAp">
-                <node concept="2YIFZM" id="3HiHZey9pdR" role="3clFbG">
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <node concept="Xl_RD" id="3HiHZey9pdS" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
       </node>
       <node concept="3F0ifn" id="3HiHZeyb5Uv" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -786,41 +655,13 @@
       </node>
       <node concept="3F0A7n" id="3HiHZeyb5VB" role="3EZMnx">
         <ref role="1NtTu8" to="mi3w:3HiHZeyb5uA" resolve="ss" />
-        <node concept="VechU" id="3HiHZeybvRr" role="3F10Kt">
-          <node concept="3ZlJ5R" id="3HiHZeybvRs" role="VblUZ">
-            <node concept="3clFbS" id="3HiHZeybvRt" role="2VODD2">
-              <node concept="3clFbF" id="3HiHZeybvRu" role="3cqZAp">
-                <node concept="2YIFZM" id="3HiHZeybvRv" role="3clFbG">
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <node concept="Xl_RD" id="3HiHZeybvRw" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
       </node>
       <node concept="3F0ifn" id="3HiHZey9pe0" role="3EZMnx">
         <property role="3F0ifm" value="\" />
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
         <node concept="11L4FC" id="3HiHZey9pe1" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="3HiHZey9pe2" role="3F10Kt">
-          <node concept="3ZlJ5R" id="3HiHZey9pe3" role="VblUZ">
-            <node concept="3clFbS" id="3HiHZey9pe4" role="2VODD2">
-              <node concept="3clFbF" id="3HiHZey9pe5" role="3cqZAp">
-                <node concept="2YIFZM" id="3HiHZey9pe6" role="3clFbG">
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <node concept="Xl_RD" id="3HiHZey9pe7" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="2iRfu4" id="3HiHZey9pe8" role="2iSdaV" />
@@ -836,26 +677,12 @@
       </node>
       <node concept="3F0ifn" id="3HiHZeyanOZ" role="3EZMnx">
         <property role="3F0ifm" value="\" />
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
         <node concept="11LMrY" id="3HiHZeyanP0" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
         <node concept="11L4FC" id="3HiHZeyanP1" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="3HiHZeyanP2" role="3F10Kt">
-          <node concept="3ZlJ5R" id="3HiHZeyanP3" role="VblUZ">
-            <node concept="3clFbS" id="3HiHZeyanP4" role="2VODD2">
-              <node concept="3clFbF" id="3HiHZeyanP5" role="3cqZAp">
-                <node concept="2YIFZM" id="3HiHZeyanP6" role="3clFbG">
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <node concept="Xl_RD" id="3HiHZeyanP7" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="3F1sOY" id="3HiHZeyanP8" role="3EZMnx">
@@ -887,23 +714,9 @@
       </node>
       <node concept="3F0ifn" id="3HiHZeyanPb" role="3EZMnx">
         <property role="3F0ifm" value="\" />
+        <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
         <node concept="11L4FC" id="3HiHZeyanPc" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="3HiHZeyanPd" role="3F10Kt">
-          <node concept="3ZlJ5R" id="3HiHZeyanPe" role="VblUZ">
-            <node concept="3clFbS" id="3HiHZeyanPf" role="2VODD2">
-              <node concept="3clFbF" id="3HiHZeyanPg" role="3cqZAp">
-                <node concept="2YIFZM" id="3HiHZeyanPh" role="3clFbG">
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                  <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <node concept="Xl_RD" id="3HiHZeyanPi" role="37wK5m">
-                    <property role="Xl_RC" value="#822100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>
@@ -991,6 +804,40 @@
     <node concept="3F0ifn" id="7MYpJaZ9zRQ" role="2wV5jI">
       <property role="3F0ifm" value="currentDate" />
       <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+    </node>
+  </node>
+  <node concept="V5hpn" id="2GzLOsV0qKw">
+    <property role="3GE5qa" value="date" />
+    <property role="TrG5h" value="dateDefaultStyles" />
+    <node concept="14StLt" id="2GzLOsV0qKA" role="V601i">
+      <property role="TrG5h" value="defaultDateColor" />
+      <node concept="VechU" id="2GzLOsV0qKD" role="3F10Kt">
+        <node concept="3ZlJ5R" id="2GzLOsV0qKV" role="VblUZ">
+          <node concept="3clFbS" id="2GzLOsV0qKW" role="2VODD2">
+            <node concept="3clFbF" id="2GzLOsV0qWT" role="3cqZAp">
+              <node concept="2ShNRf" id="2GzLOsUZP5r" role="3clFbG">
+                <node concept="1pGfFk" id="2GzLOsUZP5s" role="2ShVmc">
+                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                  <node concept="2YIFZM" id="2GzLOsUZP5t" role="37wK5m">
+                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                    <node concept="Xl_RD" id="2GzLOsUZP5u" role="37wK5m">
+                      <property role="Xl_RC" value="#822100" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="2GzLOsUZP5v" role="37wK5m">
+                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                    <node concept="Xl_RD" id="2GzLOsUZP5w" role="37wK5m">
+                      <property role="Xl_RC" value="#b32d00" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
