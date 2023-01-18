@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles" version="0" />
@@ -611,9 +610,18 @@
       <node concept="3uibUv" id="2CEi94emCnK" role="1tU5fm">
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
-      <node concept="10M0yZ" id="4A7H4EzineK" role="33vP2m">
-        <ref role="1PxDUh" to="exr9:~MPSColors" resolve="MPSColors" />
-        <ref role="3cqZAo" to="exr9:~MPSColors.DARK_BLUE" resolve="DARK_BLUE" />
+      <node concept="2ShNRf" id="2GzLOsTpDoc" role="33vP2m">
+        <node concept="1pGfFk" id="2GzLOsTq3xz" role="2ShVmc">
+          <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+          <node concept="10M0yZ" id="2GzLOsTq3Ng" role="37wK5m">
+            <ref role="3cqZAo" to="exr9:~MPSColors.DARK_BLUE" resolve="DARK_BLUE" />
+            <ref role="1PxDUh" to="exr9:~MPSColors" resolve="MPSColors" />
+          </node>
+          <node concept="10M0yZ" id="2GzLOsTq3RZ" role="37wK5m">
+            <ref role="3cqZAo" to="exr9:~MPSColors.LIGHT_BLUE" resolve="LIGHT_BLUE" />
+            <ref role="1PxDUh" to="exr9:~MPSColors" resolve="MPSColors" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="Wx3nA" id="7D7uZV2gA03" role="jymVt">
