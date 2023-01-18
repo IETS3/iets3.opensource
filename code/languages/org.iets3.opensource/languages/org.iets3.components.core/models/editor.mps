@@ -52,6 +52,7 @@
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
@@ -1417,16 +1418,35 @@
           <node concept="3clFbS" id="2Df8LH1ei$3" role="2VODD2">
             <node concept="3clFbF" id="2Df8LH1ei$Z" role="3cqZAp">
               <node concept="2ShNRf" id="2Df8LH1ei$X" role="3clFbG">
-                <node concept="1pGfFk" id="2Df8LH1ej4K" role="2ShVmc">
-                  <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
-                  <node concept="3cmrfG" id="2Df8LH1ej5U" role="37wK5m">
-                    <property role="3cmrfH" value="29" />
+                <node concept="1pGfFk" id="2GzLOsTeMIC" role="2ShVmc">
+                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                  <node concept="2ShNRf" id="2GzLOsTeMNk" role="37wK5m">
+                    <node concept="1pGfFk" id="2Df8LH1ej4K" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <node concept="3cmrfG" id="2Df8LH1ej5U" role="37wK5m">
+                        <property role="3cmrfH" value="29" />
+                      </node>
+                      <node concept="3cmrfG" id="2Df8LH1ej9M" role="37wK5m">
+                        <property role="3cmrfH" value="116" />
+                      </node>
+                      <node concept="3cmrfG" id="2Df8LH1ejiA" role="37wK5m">
+                        <property role="3cmrfH" value="145" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="3cmrfG" id="2Df8LH1ej9M" role="37wK5m">
-                    <property role="3cmrfH" value="116" />
-                  </node>
-                  <node concept="3cmrfG" id="2Df8LH1ejiA" role="37wK5m">
-                    <property role="3cmrfH" value="145" />
+                  <node concept="2ShNRf" id="2GzLOsTeN0n" role="37wK5m">
+                    <node concept="1pGfFk" id="2GzLOsTeN0m" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <node concept="3cmrfG" id="2GzLOsTeN9Y" role="37wK5m">
+                        <property role="3cmrfH" value="63" />
+                      </node>
+                      <node concept="3cmrfG" id="2GzLOsTeN_h" role="37wK5m">
+                        <property role="3cmrfH" value="179" />
+                      </node>
+                      <node concept="3cmrfG" id="2GzLOsTeO8Q" role="37wK5m">
+                        <property role="3cmrfH" value="217" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1446,16 +1466,35 @@
           <node concept="3clFbS" id="2Df8LH1kXkC" role="2VODD2">
             <node concept="3clFbF" id="2Df8LH1kXkD" role="3cqZAp">
               <node concept="2ShNRf" id="2Df8LH1kXkE" role="3clFbG">
-                <node concept="1pGfFk" id="2Df8LH1kXkF" role="2ShVmc">
-                  <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
-                  <node concept="3cmrfG" id="2Df8LH1kXkG" role="37wK5m">
-                    <property role="3cmrfH" value="145" />
+                <node concept="1pGfFk" id="2GzLOsTeRgV" role="2ShVmc">
+                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                  <node concept="2ShNRf" id="2GzLOsTeRlX" role="37wK5m">
+                    <node concept="1pGfFk" id="2Df8LH1kXkF" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <node concept="3cmrfG" id="2Df8LH1kXkG" role="37wK5m">
+                        <property role="3cmrfH" value="145" />
+                      </node>
+                      <node concept="3cmrfG" id="2Df8LH1kXkH" role="37wK5m">
+                        <property role="3cmrfH" value="136" />
+                      </node>
+                      <node concept="3cmrfG" id="2Df8LH1kXkI" role="37wK5m">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="3cmrfG" id="2Df8LH1kXkH" role="37wK5m">
-                    <property role="3cmrfH" value="136" />
-                  </node>
-                  <node concept="3cmrfG" id="2Df8LH1kXkI" role="37wK5m">
-                    <property role="3cmrfH" value="1" />
+                  <node concept="2ShNRf" id="2GzLOsTeSQd" role="37wK5m">
+                    <node concept="1pGfFk" id="2GzLOsTeTWi" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <node concept="3cmrfG" id="2GzLOsTeUaH" role="37wK5m">
+                        <property role="3cmrfH" value="254" />
+                      </node>
+                      <node concept="3cmrfG" id="2GzLOsTeUo3" role="37wK5m">
+                        <property role="3cmrfH" value="237" />
+                      </node>
+                      <node concept="3cmrfG" id="2GzLOsTeUrD" role="37wK5m">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
