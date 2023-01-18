@@ -8,6 +8,7 @@
   <imports>
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="sf4k" ref="r:c07349ad-48c5-45c4-a238-c8737c1d5f8e(org.iets3.components.req.structure)" implicit="true" />
     <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" implicit="true" />
   </imports>
@@ -119,9 +120,18 @@
                   <node concept="1pGfFk" id="cJpacq5ZtF" role="2ShVmc">
                     <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
                     <node concept="pncrf" id="cJpacq5Zul" role="37wK5m" />
-                    <node concept="10M0yZ" id="cJpacq5ZAQ" role="37wK5m">
-                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="z60i:~Color.blue" resolve="blue" />
+                    <node concept="2ShNRf" id="2GzLOsTyy2W" role="37wK5m">
+                      <node concept="1pGfFk" id="2GzLOsTyySj" role="2ShVmc">
+                        <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                        <node concept="10M0yZ" id="cJpacq5ZAQ" role="37wK5m">
+                          <ref role="3cqZAo" to="z60i:~Color.blue" resolve="blue" />
+                          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                        </node>
+                        <node concept="10M0yZ" id="2GzLOsTyyYu" role="37wK5m">
+                          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                          <ref role="3cqZAo" to="z60i:~Color.blue" resolve="blue" />
+                        </node>
+                      </node>
                     </node>
                     <node concept="3cmrfG" id="cJpacq5ZKp" role="37wK5m">
                       <property role="3cmrfH" value="2" />
