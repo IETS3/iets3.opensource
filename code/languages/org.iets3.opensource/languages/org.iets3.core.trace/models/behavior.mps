@@ -11,6 +11,7 @@
     <import index="soq7" ref="r:4d48d56b-d670-4e5b-a763-2232bb0c4f2d(org.iets3.core.attributes.behavior)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -88,7 +89,9 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -197,9 +200,28 @@
       <node concept="3Tm1VV" id="mhbzaHl1pv" role="1B3o_S" />
       <node concept="3clFbS" id="mhbzaHl1p$" role="3clF47">
         <node concept="3clFbF" id="mhbzaHl1pD" role="3cqZAp">
-          <node concept="10M0yZ" id="mhbzaHl1zU" role="3clFbG">
-            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-            <ref role="3cqZAo" to="z60i:~Color.BLUE" resolve="BLUE" />
+          <node concept="2ShNRf" id="3frJLkOg9A8" role="3clFbG">
+            <node concept="1pGfFk" id="3frJLkOgaeq" role="2ShVmc">
+              <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+              <node concept="10M0yZ" id="mhbzaHl1zU" role="37wK5m">
+                <ref role="3cqZAo" to="z60i:~Color.BLUE" resolve="BLUE" />
+                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+              </node>
+              <node concept="2ShNRf" id="3frJLkOguwM" role="37wK5m">
+                <node concept="1pGfFk" id="3frJLkOguYH" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                  <node concept="3cmrfG" id="3frJLkOg_Lo" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="3frJLkOgvit" role="37wK5m">
+                    <property role="3cmrfH" value="102" />
+                  </node>
+                  <node concept="3cmrfG" id="3frJLkOg_S1" role="37wK5m">
+                    <property role="3cmrfH" value="255" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
