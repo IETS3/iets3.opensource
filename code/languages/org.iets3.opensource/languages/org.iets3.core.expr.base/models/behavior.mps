@@ -20156,18 +20156,9 @@
       <node concept="3uibUv" id="4XlPKepacWU" role="1tU5fm">
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
-      <node concept="2ShNRf" id="2GzLOsTJoc5" role="33vP2m">
-        <node concept="1pGfFk" id="2GzLOsTJuNF" role="2ShVmc">
-          <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-          <node concept="10M0yZ" id="4XlPKepacWV" role="37wK5m">
-            <ref role="3cqZAo" to="z60i:~Color.red" resolve="red" />
-            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-          </node>
-          <node concept="10M0yZ" id="2GzLOsTJBaf" role="37wK5m">
-            <ref role="3cqZAo" to="z60i:~Color.red" resolve="red" />
-            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-          </node>
-        </node>
+      <node concept="10M0yZ" id="38mO9wfUdN$" role="33vP2m">
+        <ref role="3cqZAo" to="lzb2:~JBColor.red" resolve="red" />
+        <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
       </node>
     </node>
     <node concept="Wx3nA" id="4XlPKepacWW" role="jymVt">

@@ -674,18 +674,9 @@
                                     <ref role="37wK5l" to="oq0c:4nY0kF82jiw" resolve="toString" />
                                   </node>
                                 </node>
-                                <node concept="2ShNRf" id="1O3benwjbha" role="37wK5m">
-                                  <node concept="1pGfFk" id="1O3benwjd06" role="2ShVmc">
-                                    <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                                    <node concept="10M0yZ" id="1O3benwjdni" role="37wK5m">
-                                      <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                    </node>
-                                    <node concept="10M0yZ" id="1O3benwjdEk" role="37wK5m">
-                                      <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                    </node>
-                                  </node>
+                                <node concept="10M0yZ" id="38mO9wgocoW" role="37wK5m">
+                                  <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                                  <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                                 </node>
                               </node>
                             </node>
@@ -765,31 +756,13 @@
                             <ref role="37wK5l" to="31n1:2QxWJFK_S9T" resolve="isReferenceable" />
                           </node>
                         </node>
-                        <node concept="2ShNRf" id="1O3benwjeZk" role="3K4E3e">
-                          <node concept="1pGfFk" id="1O3benwjgwn" role="2ShVmc">
-                            <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                            <node concept="10M0yZ" id="1O3benwjhKr" role="37wK5m">
-                              <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                            </node>
-                            <node concept="10M0yZ" id="1O3benwjjKN" role="37wK5m">
-                              <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                            </node>
-                          </node>
+                        <node concept="10M0yZ" id="38mO9wgodVA" role="3K4E3e">
+                          <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                          <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                         </node>
-                        <node concept="2ShNRf" id="1O3benwjkh1" role="3K4GZi">
-                          <node concept="1pGfFk" id="1O3benwjlsi" role="2ShVmc">
-                            <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                            <node concept="10M0yZ" id="1O3benwjoko" role="37wK5m">
-                              <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
-                              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                            </node>
-                            <node concept="10M0yZ" id="1O3benwjp_H" role="37wK5m">
-                              <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                            </node>
-                          </node>
+                        <node concept="10M0yZ" id="38mO9wgolrB" role="3K4GZi">
+                          <ref role="3cqZAo" to="lzb2:~JBColor.gray" resolve="gray" />
+                          <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                         </node>
                       </node>
                     </node>
@@ -846,31 +819,13 @@
                             <ref role="37wK5l" to="31n1:2QxWJFK_S9T" resolve="isReferenceable" />
                           </node>
                         </node>
-                        <node concept="2ShNRf" id="1O3benwjq79" role="3K4E3e">
-                          <node concept="1pGfFk" id="1O3benwjq7a" role="2ShVmc">
-                            <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                            <node concept="10M0yZ" id="1O3benwjq7b" role="37wK5m">
-                              <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                            </node>
-                            <node concept="10M0yZ" id="1O3benwjq7c" role="37wK5m">
-                              <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                            </node>
-                          </node>
+                        <node concept="10M0yZ" id="38mO9wgolRt" role="3K4E3e">
+                          <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                          <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                         </node>
-                        <node concept="2ShNRf" id="1O3benwjq7d" role="3K4GZi">
-                          <node concept="1pGfFk" id="1O3benwjq7e" role="2ShVmc">
-                            <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                            <node concept="10M0yZ" id="1O3benwjq7f" role="37wK5m">
-                              <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
-                              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                            </node>
-                            <node concept="10M0yZ" id="1O3benwjq7g" role="37wK5m">
-                              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                              <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                            </node>
-                          </node>
+                        <node concept="10M0yZ" id="38mO9wgonX$" role="3K4GZi">
+                          <ref role="3cqZAo" to="lzb2:~JBColor.gray" resolve="gray" />
+                          <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                         </node>
                       </node>
                     </node>
@@ -967,18 +922,9 @@
                 </node>
               </node>
               <node concept="3cpWs6" id="4nY0kF8uqN3" role="3cqZAp">
-                <node concept="2ShNRf" id="1O3benwjscE" role="3cqZAk">
-                  <node concept="1pGfFk" id="1O3benwjt4T" role="2ShVmc">
-                    <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                    <node concept="10M0yZ" id="4nY0kF8uRw6" role="37wK5m">
-                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                    </node>
-                    <node concept="10M0yZ" id="1O3benwjtOB" role="37wK5m">
-                      <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                    </node>
-                  </node>
+                <node concept="10M0yZ" id="38mO9wgoouD" role="3cqZAk">
+                  <ref role="3cqZAo" to="lzb2:~JBColor.white" resolve="white" />
+                  <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                 </node>
               </node>
             </node>
@@ -1020,18 +966,9 @@
                       <node concept="3uibUv" id="2AmZaIYoK0h" role="1tU5fm">
                         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
                       </node>
-                      <node concept="2ShNRf" id="1O3benwjv2m" role="33vP2m">
-                        <node concept="1pGfFk" id="1O3benwjwdg" role="2ShVmc">
-                          <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                          <node concept="10M0yZ" id="2AmZaIYoKXN" role="37wK5m">
-                            <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                          </node>
-                          <node concept="10M0yZ" id="1O3benwjyIV" role="37wK5m">
-                            <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                          </node>
-                        </node>
+                      <node concept="10M0yZ" id="38mO9wgou5L" role="33vP2m">
+                        <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                        <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                       </node>
                     </node>
                   </node>
@@ -1099,18 +1036,9 @@
                                           <property role="1K8rM7" value="property_name" />
                                         </node>
                                       </node>
-                                      <node concept="2ShNRf" id="1O3benwj$Ta" role="37vLTx">
-                                        <node concept="1pGfFk" id="1O3benwjA5t" role="2ShVmc">
-                                          <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                                          <node concept="10M0yZ" id="2AmZaIYoLIY" role="37wK5m">
-                                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                            <ref role="3cqZAo" to="z60i:~Color.red" resolve="red" />
-                                          </node>
-                                          <node concept="10M0yZ" id="1O3benwjBUf" role="37wK5m">
-                                            <ref role="3cqZAo" to="z60i:~Color.red" resolve="red" />
-                                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                          </node>
-                                        </node>
+                                      <node concept="10M0yZ" id="38mO9wgopyg" role="37vLTx">
+                                        <ref role="3cqZAo" to="lzb2:~JBColor.red" resolve="red" />
+                                        <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                                       </node>
                                     </node>
                                   </node>
@@ -1466,18 +1394,9 @@
                                     <node concept="37vLTw" id="2AmZaIYoMiv" role="37vLTJ">
                                       <ref role="3cqZAo" node="2AmZaIYoK0g" resolve="color" />
                                     </node>
-                                    <node concept="2ShNRf" id="1O3benwjCtA" role="37vLTx">
-                                      <node concept="1pGfFk" id="1O3benwjCtB" role="2ShVmc">
-                                        <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                                        <node concept="10M0yZ" id="1O3benwjCtC" role="37wK5m">
-                                          <ref role="3cqZAo" to="z60i:~Color.red" resolve="red" />
-                                          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                        </node>
-                                        <node concept="10M0yZ" id="1O3benwjCtD" role="37wK5m">
-                                          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                          <ref role="3cqZAo" to="z60i:~Color.red" resolve="red" />
-                                        </node>
-                                      </node>
+                                    <node concept="10M0yZ" id="38mO9wgoq$Y" role="37vLTx">
+                                      <ref role="3cqZAo" to="lzb2:~JBColor.red" resolve="red" />
+                                      <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                                     </node>
                                   </node>
                                 </node>
@@ -1508,18 +1427,9 @@
                                 <node concept="37vLTw" id="2AmZaIYoMMk" role="37vLTJ">
                                   <ref role="3cqZAo" node="2AmZaIYoK0g" resolve="color" />
                                 </node>
-                                <node concept="2ShNRf" id="1O3benwjDTn" role="37vLTx">
-                                  <node concept="1pGfFk" id="1O3benwjEPg" role="2ShVmc">
-                                    <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                                    <node concept="10M0yZ" id="2AmZaIYoMV3" role="37wK5m">
-                                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                      <ref role="3cqZAo" to="z60i:~Color.orange" resolve="orange" />
-                                    </node>
-                                    <node concept="10M0yZ" id="1O3benwjFfn" role="37wK5m">
-                                      <ref role="3cqZAo" to="z60i:~Color.orange" resolve="orange" />
-                                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                    </node>
-                                  </node>
+                                <node concept="10M0yZ" id="38mO9wgorKp" role="37vLTx">
+                                  <ref role="3cqZAo" to="lzb2:~JBColor.orange" resolve="orange" />
+                                  <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                                 </node>
                               </node>
                             </node>
@@ -1563,18 +1473,9 @@
                             <node concept="37vLTw" id="2AmZaIYoNsz" role="37vLTJ">
                               <ref role="3cqZAo" node="2AmZaIYoK0g" resolve="color" />
                             </node>
-                            <node concept="2ShNRf" id="1O3benwjFZH" role="37vLTx">
-                              <node concept="1pGfFk" id="1O3benwjFZI" role="2ShVmc">
-                                <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                                <node concept="10M0yZ" id="1O3benwjFZJ" role="37wK5m">
-                                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                  <ref role="3cqZAo" to="z60i:~Color.orange" resolve="orange" />
-                                </node>
-                                <node concept="10M0yZ" id="1O3benwjFZK" role="37wK5m">
-                                  <ref role="3cqZAo" to="z60i:~Color.orange" resolve="orange" />
-                                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                </node>
-                              </node>
+                            <node concept="10M0yZ" id="38mO9wgosZO" role="37vLTx">
+                              <ref role="3cqZAo" to="lzb2:~JBColor.orange" resolve="orange" />
+                              <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                             </node>
                           </node>
                         </node>
@@ -2583,18 +2484,9 @@
                                 <ref role="37wK5l" to="oq0c:4nY0kF82jiw" resolve="toString" />
                               </node>
                             </node>
-                            <node concept="2ShNRf" id="1O3benwosXc" role="37wK5m">
-                              <node concept="1pGfFk" id="1O3benwotFW" role="2ShVmc">
-                                <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                                <node concept="10M0yZ" id="1O3benwouCj" role="37wK5m">
-                                  <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                </node>
-                                <node concept="10M0yZ" id="1O3benwov70" role="37wK5m">
-                                  <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                </node>
-                              </node>
+                            <node concept="10M0yZ" id="38mO9wgovIu" role="37wK5m">
+                              <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                              <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                             </node>
                           </node>
                         </node>
@@ -2968,18 +2860,9 @@
                         </node>
                         <node concept="liA8E" id="5avmkTFzVuU" role="2OqNvi">
                           <ref role="37wK5l" to="g51k:~EditorCell_Label.setTextColor(java.awt.Color)" resolve="setTextColor" />
-                          <node concept="2ShNRf" id="1O3benwowLG" role="37wK5m">
-                            <node concept="1pGfFk" id="1O3benwoxvq" role="2ShVmc">
-                              <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                              <node concept="10M0yZ" id="5avmkTFzWE7" role="37wK5m">
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                              </node>
-                              <node concept="10M0yZ" id="1O3benwoxyF" role="37wK5m">
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                              </node>
-                            </node>
+                          <node concept="10M0yZ" id="38mO9wgoxrt" role="37wK5m">
+                            <ref role="3cqZAo" to="lzb2:~JBColor.white" resolve="white" />
+                            <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                           </node>
                         </node>
                       </node>
@@ -3012,18 +2895,9 @@
                           <node concept="1Z6Ecs" id="1CcsU$uSq$T" role="37wK5m">
                             <ref role="1Z6EpT" to="reoo:5PDTdguqQmB" resolve="shade-color" />
                           </node>
-                          <node concept="2ShNRf" id="1O3benwoxE5" role="37wK5m">
-                            <node concept="1pGfFk" id="1O3benwoyqb" role="2ShVmc">
-                              <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                              <node concept="10M0yZ" id="5avmkTFyf4E" role="37wK5m">
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
-                              </node>
-                              <node concept="10M0yZ" id="1O3benwoyzu" role="37wK5m">
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
-                              </node>
-                            </node>
+                          <node concept="10M0yZ" id="38mO9wgoxfW" role="37wK5m">
+                            <ref role="3cqZAo" to="lzb2:~JBColor.gray" resolve="gray" />
+                            <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                           </node>
                         </node>
                       </node>
@@ -3043,18 +2917,9 @@
                             <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
                             <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
                           </node>
-                          <node concept="2ShNRf" id="1O3benwoyB7" role="37wK5m">
-                            <node concept="1pGfFk" id="1O3benwoyB8" role="2ShVmc">
-                              <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                              <node concept="10M0yZ" id="1O3benwoyB9" role="37wK5m">
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                              </node>
-                              <node concept="10M0yZ" id="1O3benwoyBa" role="37wK5m">
-                                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                              </node>
-                            </node>
+                          <node concept="10M0yZ" id="38mO9wgoxzx" role="37wK5m">
+                            <ref role="3cqZAo" to="lzb2:~JBColor.white" resolve="white" />
+                            <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                           </node>
                         </node>
                       </node>
@@ -3128,18 +2993,9 @@
                         </node>
                         <node concept="liA8E" id="5avmkTF$j60" role="2OqNvi">
                           <ref role="37wK5l" to="g51k:~EditorCell_Label.setTextColor(java.awt.Color)" resolve="setTextColor" />
-                          <node concept="2ShNRf" id="1O3benwoyIm" role="37wK5m">
-                            <node concept="1pGfFk" id="1O3benwoyIn" role="2ShVmc">
-                              <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                              <node concept="10M0yZ" id="1O3benwoyIo" role="37wK5m">
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                              </node>
-                              <node concept="10M0yZ" id="1O3benwoyIp" role="37wK5m">
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                              </node>
-                            </node>
+                          <node concept="10M0yZ" id="38mO9wgoxJd" role="37wK5m">
+                            <ref role="3cqZAo" to="lzb2:~JBColor.white" resolve="white" />
+                            <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                           </node>
                         </node>
                       </node>
@@ -3172,18 +3028,9 @@
                           <node concept="1Z6Ecs" id="5avmkTF9ZFn" role="37wK5m">
                             <ref role="1Z6EpT" to="reoo:5PDTdguqQmB" resolve="shade-color" />
                           </node>
-                          <node concept="2ShNRf" id="1O3benwoyMA" role="37wK5m">
-                            <node concept="1pGfFk" id="1O3benwoyMB" role="2ShVmc">
-                              <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                              <node concept="10M0yZ" id="1O3benwoyMC" role="37wK5m">
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
-                              </node>
-                              <node concept="10M0yZ" id="1O3benwoyMD" role="37wK5m">
-                                <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                              </node>
-                            </node>
+                          <node concept="10M0yZ" id="38mO9wgoxVO" role="37wK5m">
+                            <ref role="3cqZAo" to="lzb2:~JBColor.gray" resolve="gray" />
+                            <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                           </node>
                         </node>
                       </node>
@@ -3203,18 +3050,9 @@
                             <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
                             <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
                           </node>
-                          <node concept="2ShNRf" id="1O3benwoyVA" role="37wK5m">
-                            <node concept="1pGfFk" id="1O3benwoyVB" role="2ShVmc">
-                              <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                              <node concept="10M0yZ" id="1O3benwoyVC" role="37wK5m">
-                                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                              </node>
-                              <node concept="10M0yZ" id="1O3benwoyVD" role="37wK5m">
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                              </node>
-                            </node>
+                          <node concept="10M0yZ" id="38mO9wgoy32" role="37wK5m">
+                            <ref role="3cqZAo" to="lzb2:~JBColor.white" resolve="white" />
+                            <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                           </node>
                         </node>
                       </node>
@@ -3286,18 +3124,9 @@
             <node concept="3clFbJ" id="5avmkTF_XDU" role="3cqZAp">
               <node concept="3clFbS" id="5avmkTF_XDV" role="3clFbx">
                 <node concept="3cpWs6" id="5avmkTF_XDW" role="3cqZAp">
-                  <node concept="2ShNRf" id="1O3benw7pNn" role="3cqZAk">
-                    <node concept="1pGfFk" id="1O3benw7qAS" role="2ShVmc">
-                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                      <node concept="10M0yZ" id="5avmkTF_XYG" role="37wK5m">
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      </node>
-                      <node concept="10M0yZ" id="1O3benw7sFn" role="37wK5m">
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      </node>
-                    </node>
+                  <node concept="10M0yZ" id="38mO9wgmqXv" role="3cqZAk">
+                    <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                    <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                   </node>
                 </node>
               </node>
@@ -3314,18 +3143,9 @@
             <node concept="3clFbJ" id="5avmkTFSZAd" role="3cqZAp">
               <node concept="3clFbS" id="5avmkTFSZAf" role="3clFbx">
                 <node concept="3cpWs6" id="1O3benw7rA0" role="3cqZAp">
-                  <node concept="2ShNRf" id="1O3benw7rA1" role="3cqZAk">
-                    <node concept="1pGfFk" id="1O3benw7rA2" role="2ShVmc">
-                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                      <node concept="10M0yZ" id="1O3benw7rA3" role="37wK5m">
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      </node>
-                      <node concept="10M0yZ" id="1O3benw7sY7" role="37wK5m">
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      </node>
-                    </node>
+                  <node concept="10M0yZ" id="38mO9wgmrAd" role="3cqZAk">
+                    <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                    <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                   </node>
                 </node>
               </node>
@@ -3347,18 +3167,9 @@
               </node>
             </node>
             <node concept="3cpWs6" id="5avmkTFAIhe" role="3cqZAp">
-              <node concept="2ShNRf" id="1O3benw7tnO" role="3cqZAk">
-                <node concept="1pGfFk" id="1O3benw7u6A" role="2ShVmc">
-                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                  <node concept="10M0yZ" id="1O3benw7uzh" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  </node>
-                  <node concept="10M0yZ" id="1O3benw7v8n" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  </node>
-                </node>
+              <node concept="10M0yZ" id="38mO9wgmsfd" role="3cqZAk">
+                <ref role="3cqZAo" to="lzb2:~JBColor.lightGray" resolve="lightGray" />
+                <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
               </node>
             </node>
           </node>
@@ -3371,18 +3182,9 @@
             <node concept="3clFbJ" id="5avmkTFA1_n" role="3cqZAp">
               <node concept="3clFbS" id="5avmkTFA1_o" role="3clFbx">
                 <node concept="3cpWs6" id="1O3benw9hhp" role="3cqZAp">
-                  <node concept="2ShNRf" id="1O3benw9hhq" role="3cqZAk">
-                    <node concept="1pGfFk" id="1O3benw9hhr" role="2ShVmc">
-                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                      <node concept="10M0yZ" id="1O3benw9hhs" role="37wK5m">
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                      </node>
-                      <node concept="10M0yZ" id="1O3benw9hht" role="37wK5m">
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                      </node>
-                    </node>
+                  <node concept="10M0yZ" id="38mO9wgmsKo" role="3cqZAk">
+                    <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                    <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                   </node>
                 </node>
               </node>
@@ -3399,18 +3201,9 @@
             <node concept="3clFbJ" id="5avmkTFTam3" role="3cqZAp">
               <node concept="3clFbS" id="5avmkTFTam4" role="3clFbx">
                 <node concept="3cpWs6" id="1O3benw9idH" role="3cqZAp">
-                  <node concept="2ShNRf" id="1O3benw9idI" role="3cqZAk">
-                    <node concept="1pGfFk" id="1O3benw9idJ" role="2ShVmc">
-                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                      <node concept="10M0yZ" id="1O3benw9idK" role="37wK5m">
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                      </node>
-                      <node concept="10M0yZ" id="1O3benw9idL" role="37wK5m">
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                      </node>
-                    </node>
+                  <node concept="10M0yZ" id="38mO9wgmteZ" role="3cqZAk">
+                    <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                    <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                   </node>
                 </node>
               </node>
@@ -3432,18 +3225,9 @@
               </node>
             </node>
             <node concept="3cpWs6" id="1O3benw9itq" role="3cqZAp">
-              <node concept="2ShNRf" id="1O3benw9itr" role="3cqZAk">
-                <node concept="1pGfFk" id="1O3benw9its" role="2ShVmc">
-                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                  <node concept="10M0yZ" id="1O3benw9itt" role="37wK5m">
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                  </node>
-                  <node concept="10M0yZ" id="1O3benw9itu" role="37wK5m">
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                  </node>
-                </node>
+              <node concept="10M0yZ" id="38mO9wgmtNa" role="3cqZAk">
+                <ref role="3cqZAo" to="lzb2:~JBColor.lightGray" resolve="lightGray" />
+                <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
               </node>
             </node>
           </node>
@@ -3456,18 +3240,9 @@
             <node concept="3clFbJ" id="5avmkTFA2L3" role="3cqZAp">
               <node concept="3clFbS" id="5avmkTFA2L4" role="3clFbx">
                 <node concept="3cpWs6" id="1O3benw9iPx" role="3cqZAp">
-                  <node concept="2ShNRf" id="1O3benw9iPy" role="3cqZAk">
-                    <node concept="1pGfFk" id="1O3benw9iPz" role="2ShVmc">
-                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                      <node concept="10M0yZ" id="1O3benw9iP$" role="37wK5m">
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                      </node>
-                      <node concept="10M0yZ" id="1O3benw9iP_" role="37wK5m">
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      </node>
-                    </node>
+                  <node concept="10M0yZ" id="38mO9wgmugM" role="3cqZAk">
+                    <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                    <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                   </node>
                 </node>
               </node>
@@ -3484,18 +3259,9 @@
             <node concept="3clFbJ" id="5avmkTFTaJk" role="3cqZAp">
               <node concept="3clFbS" id="5avmkTFTaJl" role="3clFbx">
                 <node concept="3cpWs6" id="1O3benw9jd4" role="3cqZAp">
-                  <node concept="2ShNRf" id="1O3benw9jd5" role="3cqZAk">
-                    <node concept="1pGfFk" id="1O3benw9jd6" role="2ShVmc">
-                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                      <node concept="10M0yZ" id="1O3benw9jd7" role="37wK5m">
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                      </node>
-                      <node concept="10M0yZ" id="1O3benw9jd8" role="37wK5m">
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      </node>
-                    </node>
+                  <node concept="10M0yZ" id="38mO9wgmuJZ" role="3cqZAk">
+                    <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                    <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                   </node>
                 </node>
               </node>
@@ -3517,18 +3283,9 @@
               </node>
             </node>
             <node concept="3cpWs6" id="1O3benw9jto" role="3cqZAp">
-              <node concept="2ShNRf" id="1O3benw9jtp" role="3cqZAk">
-                <node concept="1pGfFk" id="1O3benw9jtq" role="2ShVmc">
-                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                  <node concept="10M0yZ" id="1O3benw9jtr" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  </node>
-                  <node concept="10M0yZ" id="1O3benw9jts" role="37wK5m">
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                  </node>
-                </node>
+              <node concept="10M0yZ" id="38mO9wgmvcT" role="3cqZAk">
+                <ref role="3cqZAo" to="lzb2:~JBColor.lightGray" resolve="lightGray" />
+                <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
               </node>
             </node>
           </node>
@@ -3541,18 +3298,9 @@
             <node concept="3clFbJ" id="5avmkTFA3SR" role="3cqZAp">
               <node concept="3clFbS" id="5avmkTFA3SS" role="3clFbx">
                 <node concept="3cpWs6" id="1O3benw9jQ6" role="3cqZAp">
-                  <node concept="2ShNRf" id="1O3benw9jQ7" role="3cqZAk">
-                    <node concept="1pGfFk" id="1O3benw9jQ8" role="2ShVmc">
-                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                      <node concept="10M0yZ" id="1O3benw9jQ9" role="37wK5m">
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                      </node>
-                      <node concept="10M0yZ" id="1O3benw9jQa" role="37wK5m">
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                      </node>
-                    </node>
+                  <node concept="10M0yZ" id="38mO9wgmvDx" role="3cqZAk">
+                    <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                    <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                   </node>
                 </node>
               </node>
@@ -3569,18 +3317,9 @@
             <node concept="3clFbJ" id="5avmkTFTbig" role="3cqZAp">
               <node concept="3clFbS" id="5avmkTFTbih" role="3clFbx">
                 <node concept="3cpWs6" id="1O3benw9keg" role="3cqZAp">
-                  <node concept="2ShNRf" id="1O3benw9keh" role="3cqZAk">
-                    <node concept="1pGfFk" id="1O3benw9kei" role="2ShVmc">
-                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                      <node concept="10M0yZ" id="1O3benw9kej" role="37wK5m">
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      </node>
-                      <node concept="10M0yZ" id="1O3benw9kek" role="37wK5m">
-                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      </node>
-                    </node>
+                  <node concept="10M0yZ" id="38mO9wgmwbJ" role="3cqZAk">
+                    <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                    <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                   </node>
                 </node>
               </node>
@@ -3602,18 +3341,9 @@
               </node>
             </node>
             <node concept="3cpWs6" id="1O3benw9kvb" role="3cqZAp">
-              <node concept="2ShNRf" id="1O3benw9kvc" role="3cqZAk">
-                <node concept="1pGfFk" id="1O3benw9kvd" role="2ShVmc">
-                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                  <node concept="10M0yZ" id="1O3benw9kve" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  </node>
-                  <node concept="10M0yZ" id="1O3benw9kvf" role="37wK5m">
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                  </node>
-                </node>
+              <node concept="10M0yZ" id="38mO9wgmwDd" role="3cqZAk">
+                <ref role="3cqZAo" to="lzb2:~JBColor.lightGray" resolve="lightGray" />
+                <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
               </node>
             </node>
           </node>
@@ -3742,18 +3472,9 @@
                     <node concept="3clFbJ" id="5TsxM4BC0RS" role="3cqZAp">
                       <node concept="3clFbS" id="5TsxM4BC0RU" role="3clFbx">
                         <node concept="3cpWs6" id="5TsxM4BC4CL" role="3cqZAp">
-                          <node concept="2ShNRf" id="1O3benw6RHy" role="3cqZAk">
-                            <node concept="1pGfFk" id="1O3benw6SVw" role="2ShVmc">
-                              <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                              <node concept="10M0yZ" id="5TsxM4BC91o" role="37wK5m">
-                                <ref role="3cqZAo" to="z60i:~Color.yellow" resolve="yellow" />
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                              </node>
-                              <node concept="10M0yZ" id="1O3benw6Tbc" role="37wK5m">
-                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                <ref role="3cqZAo" to="z60i:~Color.yellow" resolve="yellow" />
-                              </node>
-                            </node>
+                          <node concept="10M0yZ" id="38mO9wgmxtz" role="3cqZAk">
+                            <ref role="3cqZAo" to="lzb2:~JBColor.yellow" resolve="yellow" />
+                            <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                           </node>
                         </node>
                       </node>
@@ -4473,18 +4194,9 @@
                 <node concept="3ZlJ5R" id="1O3benwaZzf" role="VblUZ">
                   <node concept="3clFbS" id="1O3benwaZzg" role="2VODD2">
                     <node concept="3clFbF" id="1O3benwaZB7" role="3cqZAp">
-                      <node concept="2ShNRf" id="1O3benwaZB5" role="3clFbG">
-                        <node concept="1pGfFk" id="1O3benwb0lD" role="2ShVmc">
-                          <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                          <node concept="10M0yZ" id="1O3benwb0Iw" role="37wK5m">
-                            <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                          </node>
-                          <node concept="10M0yZ" id="1O3benwcE0R" role="37wK5m">
-                            <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                          </node>
-                        </node>
+                      <node concept="10M0yZ" id="38mO9wgmy7o" role="3clFbG">
+                        <ref role="3cqZAo" to="lzb2:~JBColor.lightGray" resolve="lightGray" />
+                        <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                       </node>
                     </node>
                   </node>
@@ -5118,31 +4830,13 @@
                                     <ref role="37wK5l" to="wyt6:~StringBuilder.toString()" resolve="toString" />
                                   </node>
                                 </node>
-                                <node concept="2ShNRf" id="1O3benw9mbR" role="37wK5m">
-                                  <node concept="1pGfFk" id="1O3benw9niP" role="2ShVmc">
-                                    <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                                    <node concept="10M0yZ" id="6GwlCCBaM$5" role="37wK5m">
-                                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                      <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                                    </node>
-                                    <node concept="10M0yZ" id="1O3benw9otY" role="37wK5m">
-                                      <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                    </node>
-                                  </node>
+                                <node concept="10M0yZ" id="38mO9wgmzov" role="37wK5m">
+                                  <ref role="3cqZAo" to="lzb2:~JBColor.black" resolve="black" />
+                                  <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                                 </node>
-                                <node concept="2ShNRf" id="1O3benw9pFo" role="37wK5m">
-                                  <node concept="1pGfFk" id="1O3benw9qNr" role="2ShVmc">
-                                    <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                                    <node concept="10M0yZ" id="2ufoZQJzKAa" role="37wK5m">
-                                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                      <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                                    </node>
-                                    <node concept="10M0yZ" id="1O3benw9sxF" role="37wK5m">
-                                      <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                    </node>
-                                  </node>
+                                <node concept="10M0yZ" id="38mO9wgm$bf" role="37wK5m">
+                                  <ref role="3cqZAo" to="lzb2:~JBColor.lightGray" resolve="lightGray" />
+                                  <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                                 </node>
                               </node>
                             </node>
