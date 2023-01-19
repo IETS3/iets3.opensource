@@ -634,18 +634,9 @@
                 <node concept="1pGfFk" id="2c2AzQcFQIJ" role="2ShVmc">
                   <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
                   <node concept="pncrf" id="2c2AzQcFQM_" role="37wK5m" />
-                  <node concept="2ShNRf" id="2GzLOsV20$P" role="37wK5m">
-                    <node concept="1pGfFk" id="2GzLOsV21v4" role="2ShVmc">
-                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                      <node concept="10M0yZ" id="2c2AzQcFRxe" role="37wK5m">
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
-                      </node>
-                      <node concept="10M0yZ" id="2GzLOsV21z8" role="37wK5m">
-                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
-                      </node>
-                    </node>
+                  <node concept="10M0yZ" id="38mO9wg5rGO" role="37wK5m">
+                    <ref role="3cqZAo" to="lzb2:~JBColor.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                   </node>
                   <node concept="3cmrfG" id="2c2AzQcFREw" role="37wK5m">
                     <property role="3cmrfH" value="2" />

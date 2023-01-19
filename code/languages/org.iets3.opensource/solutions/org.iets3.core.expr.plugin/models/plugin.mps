@@ -4767,18 +4767,9 @@
             </node>
             <node concept="liA8E" id="4yQfyMjgweN" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JComponent.setBackground(java.awt.Color)" resolve="setBackground" />
-              <node concept="2ShNRf" id="1O3benwr_tV" role="37wK5m">
-                <node concept="1pGfFk" id="1O3benwrHiU" role="2ShVmc">
-                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
-                  <node concept="10M0yZ" id="1O3benwrNgm" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  </node>
-                  <node concept="10M0yZ" id="1O3benwrQHB" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  </node>
-                </node>
+              <node concept="10M0yZ" id="38mO9wg6jp_" role="37wK5m">
+                <ref role="3cqZAo" to="lzb2:~JBColor.white" resolve="white" />
+                <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
               </node>
             </node>
           </node>
