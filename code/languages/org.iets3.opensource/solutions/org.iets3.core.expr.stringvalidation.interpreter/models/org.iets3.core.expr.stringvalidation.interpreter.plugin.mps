@@ -142,7 +142,7 @@
     <property role="UYu25" value="arithmetic" />
     <node concept="qq9P1" id="3dTPcTTj0Qq" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="3r88:3dTPcTThCWF" resolve="StringResultMessagesOp" />
+      <ref role="qq9wM" to="3r88:3dTPcTThCWF" resolve="ValidateStringResultErrorsOp" />
       <node concept="3vetai" id="3dTPcTTj3FI" role="3vQZUl">
         <node concept="3EllGN" id="3dTPcTTj3FW" role="3vdyny">
           <node concept="2OqwBi" id="3dTPcTTj3FX" role="3ElVtu">
@@ -157,7 +157,7 @@
     </node>
     <node concept="qq9P1" id="3dTPcTTiSTh" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="3r88:3dTPcTThmny" resolve="StringResultOkOp" />
+      <ref role="qq9wM" to="3r88:3dTPcTThmny" resolve="ValidateStringResultOkOp" />
       <node concept="3vetai" id="3dTPcTTiVuM" role="3vQZUl">
         <node concept="2OqwBi" id="3dTPcTTiWYo" role="3vdyny">
           <node concept="1eOMI4" id="3dTPcTTiWyo" role="2Oq$k0">
