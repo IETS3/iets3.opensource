@@ -1185,14 +1185,13 @@
   <node concept="24kQdi" id="1WMFq5x4fLo">
     <ref role="1XX52x" to="e9k1:1WMFq5x4fLm" resolve="DataRowRefForLookup" />
     <node concept="3EZMnI" id="7EHDEMiDE42" role="2wV5jI">
-      <node concept="PMmxH" id="7EHDEMiDE4h" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <node concept="xShMh" id="4dez30I51Ia" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+      <node concept="3F0ifn" id="30tzQ1E08Bz" role="3EZMnx">
+        <property role="3F0ifm" value="default" />
+        <ref role="1ERwB7" node="4dez30I6DgH" resolve="DataRowRefForLookup_Actions" />
       </node>
-      <node concept="3F0ifn" id="7EHDEMiDE4s" role="3EZMnx">
+      <node concept="3F0ifn" id="30tzQ1E08BO" role="3EZMnx">
         <property role="3F0ifm" value="=" />
+        <ref role="1ERwB7" node="4dez30I6DgH" resolve="DataRowRefForLookup_Actions" />
       </node>
       <node concept="2iRfu4" id="7EHDEMiDE43" role="2iSdaV" />
       <node concept="1iCGBv" id="1WMFq5x4fLp" role="3EZMnx">
