@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="3bdedd09-792a-4e15-a4db-83970df3ee86" name="de.itemis.mps.editor.collapsible" version="0" />
     <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
@@ -392,11 +392,15 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -743,6 +747,15 @@
                 </node>
                 <node concept="11L4FC" id="4nY0kF8k76a" role="3F10Kt">
                   <property role="VOm3f" value="true" />
+                </node>
+              </node>
+              <node concept="uPpia" id="1ZlHRbgqLax" role="1djCvC">
+                <node concept="3clFbS" id="1ZlHRbgqLay" role="2VODD2">
+                  <node concept="3clFbF" id="1ZlHRbgqLf7" role="3cqZAp">
+                    <node concept="Xl_RD" id="1ZlHRbgqLf6" role="3clFbG">
+                      <property role="Xl_RC" value="an optional name for the default entry" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -5031,6 +5044,15 @@
             </node>
           </node>
         </node>
+        <node concept="uPpia" id="1ZlHRbgqJid" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqJie" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqJiD" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqJiC" role="3clFbG">
+                <property role="Xl_RC" value="a finder for the coordinate cell reference" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0A7n" id="5avmkTFcXRb" role="3EZMnx">
         <ref role="1NtTu8" to="wtll:5avmkTFcWo6" resolve="cell" />
@@ -5220,6 +5242,15 @@
         <node concept="3F0A7n" id="5xEoEMrzSn7" role="1kIj9b">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
+        <node concept="uPpia" id="2zRMcT4P_i6" role="1djCvC">
+          <node concept="3clFbS" id="2zRMcT4P_i7" role="2VODD2">
+            <node concept="3clFbF" id="2zRMcT4P_i8" role="3cqZAp">
+              <node concept="Xl_RD" id="2zRMcT4P_i9" role="3clFbG">
+                <property role="Xl_RC" value="a cell argument with name" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="5xEoEMrzSnw" role="3EZMnx">
         <node concept="3EZMnI" id="5xEoEMrzSnG" role="_tjki">
@@ -5238,6 +5269,15 @@
           </node>
           <node concept="VPM3Z" id="5xEoEMrzSnK" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqIMM" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqIMN" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqIMT" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqIMS" role="3clFbG">
+                <property role="Xl_RC" value="a type for the cell argument" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -5493,6 +5533,15 @@
           <node concept="3F1sOY" id="3_Nra3DTaTW" role="1kIj9b">
             <ref role="1NtTu8" to="wtll:3_Nra3DTaT0" resolve="type" />
           </node>
+          <node concept="uPpia" id="2zRMcT4P_ia" role="1djCvC">
+            <node concept="3clFbS" id="2zRMcT4P_ib" role="2VODD2">
+              <node concept="3clFbF" id="2zRMcT4P_ic" role="3cqZAp">
+                <node concept="Xl_RD" id="2zRMcT4P_id" role="3clFbG">
+                  <property role="Xl_RC" value="a cell constraint with type" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3EZMnI" id="3_Nra3DTaU5" role="3EZMnx">
@@ -5561,6 +5610,15 @@
         <node concept="1kHk_G" id="3pIANU_03oi" role="3EZMnx">
           <ref role="1NtTu8" to="wtll:3pIANU_03o9" resolve="template" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          <node concept="uPpia" id="1ZlHRbg90gW" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbg90gX" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbg90ly" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbg90lx" role="3clFbG">
+                  <property role="Xl_RC" value="a template spreadsheet" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="3_Nra3E2xmq" role="3EZMnx">
           <property role="3F0ifm" value="sheet" />
@@ -5643,6 +5701,15 @@
         <node concept="1kHk_G" id="2c2AzQdaWRM" role="3EZMnx">
           <ref role="1NtTu8" to="wtll:3pIANU_03o9" resolve="template" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          <node concept="uPpia" id="1ZlHRbg90o2" role="1djCvC">
+            <node concept="3clFbS" id="1ZlHRbg90o3" role="2VODD2">
+              <node concept="3clFbF" id="1ZlHRbg90o9" role="3cqZAp">
+                <node concept="Xl_RD" id="1ZlHRbg90o8" role="3clFbG">
+                  <property role="Xl_RC" value="a template spreadsheet" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="2c2AzQdaWRN" role="3EZMnx">
           <property role="3F0ifm" value="sheet" />

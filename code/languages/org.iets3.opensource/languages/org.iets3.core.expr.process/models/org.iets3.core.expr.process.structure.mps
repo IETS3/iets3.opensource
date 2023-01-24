@@ -17,6 +17,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -55,6 +56,7 @@
     <property role="EcuMT" value="9163496876326301095" />
     <property role="TrG5h" value="MultipartyBooleanDecision" />
     <property role="34LRSv" value="multi-party-boolean-decision" />
+    <property role="R4oN_" value="a multi party boolean decision" />
     <ref role="1TJDcQ" node="7WFhXJlPaQJ" resolve="MultipartyAbstractDecision" />
     <node concept="1TJgyi" id="Z4fkwzdXgm" role="1TKVEl">
       <property role="IQ2nx" value="1136100386042008598" />
@@ -67,6 +69,7 @@
     <property role="TrG5h" value="AbstractDecision" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base process for decisions" />
     <ref role="1TJDcQ" node="7WFhXJlQowD" resolve="Process" />
     <node concept="PrWs8" id="7WFhXJlPaQH" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
@@ -77,6 +80,7 @@
     <property role="TrG5h" value="MultipartyAbstractDecision" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base decision for multi-party decisions" />
     <ref role="1TJDcQ" node="7WFhXJlPaQG" resolve="AbstractDecision" />
     <node concept="1TJgyi" id="VApoyDEJo7" role="1TKVEl">
       <property role="IQ2nx" value="1073657198810953223" />
@@ -119,6 +123,7 @@
     <property role="EcuMT" value="9163496876326301104" />
     <property role="TrG5h" value="Party" />
     <property role="34LRSv" value="@" />
+    <property role="R4oN_" value="a party" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7WFhXJlPaQN" role="1TKVEl">
       <property role="IQ2nx" value="9163496876326301107" />
@@ -131,6 +136,7 @@
     <property role="TrG5h" value="RunProcess" />
     <property role="34LRSv" value="run" />
     <property role="3GE5qa" value="process" />
+    <property role="R4oN_" value="run a process" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="Z4fkwzcyZm" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -149,6 +155,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="process" />
+    <property role="R4oN_" value="a base concept for processes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7WFhXJlQoxO" role="PzmwI">
       <ref role="PrY4T" to="8lgj:5y3VELft_XL" resolve="IInteractor" />
@@ -161,6 +168,7 @@
     <property role="EcuMT" value="9163496876326619247" />
     <property role="TrG5h" value="ProcessType" />
     <property role="3GE5qa" value="process" />
+    <property role="R4oN_" value="a process type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="7WFhXJlQoxK" role="1TKVEi">
       <property role="IQ2ns" value="9163496876326619248" />
@@ -176,12 +184,14 @@
     <property role="EcuMT" value="1136100386042220322" />
     <property role="TrG5h" value="PartyType" />
     <property role="34LRSv" value="party" />
+    <property role="R4oN_" value="a party type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="Z4fkwzeKWz">
     <property role="EcuMT" value="1136100386042220323" />
     <property role="TrG5h" value="PartyLiteral" />
     <property role="34LRSv" value="@" />
+    <property role="R4oN_" value="a party" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyi" id="Z4fkwzeNZ7" role="1TKVEl">
       <property role="IQ2nx" value="1136100386042232775" />
@@ -195,6 +205,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="procedure" />
+    <property role="R4oN_" value="a base concept for decision procedures" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="33mFrumMqnB">
@@ -202,6 +213,7 @@
     <property role="3GE5qa" value="procedure" />
     <property role="TrG5h" value="UnanimousDecProc" />
     <property role="34LRSv" value="unanimous" />
+    <property role="R4oN_" value="a decision by all parties" />
     <ref role="1TJDcQ" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
   </node>
   <node concept="1TIwiD" id="1mDdTFSdh$">
@@ -209,6 +221,7 @@
     <property role="3GE5qa" value="procedure" />
     <property role="TrG5h" value="MajorityDecProc" />
     <property role="34LRSv" value="majority" />
+    <property role="R4oN_" value="a decision by the majority of the parties (more than 50%)" />
     <ref role="1TJDcQ" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
   </node>
   <node concept="1TIwiD" id="3iESbJshtqt">
@@ -216,6 +229,7 @@
     <property role="3GE5qa" value="procedure" />
     <property role="TrG5h" value="CustomDecProc" />
     <property role="34LRSv" value="custom" />
+    <property role="R4oN_" value="a custom decision procedure" />
     <ref role="1TJDcQ" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
     <node concept="PrWs8" id="3iESbJshtqw" role="PzmwI">
       <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
@@ -227,6 +241,7 @@
     <property role="3GE5qa" value="turnout" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base concept for turnout policies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3wXkdMVkcb0">
@@ -234,6 +249,7 @@
     <property role="3GE5qa" value="turnout" />
     <property role="TrG5h" value="AllTurnoutPolicy" />
     <property role="34LRSv" value="all" />
+    <property role="R4oN_" value="all turnout policy" />
     <ref role="1TJDcQ" node="3wXkdMVkca7" resolve="AbstractTurnoutPolicy" />
   </node>
   <node concept="1TIwiD" id="4IV0h47Eai8">
@@ -241,6 +257,7 @@
     <property role="TrG5h" value="SenderPartyInterceptor" />
     <property role="34LRSv" value="senderIs" />
     <property role="3GE5qa" value="interceptor" />
+    <property role="R4oN_" value="an interceptor checking that the sender is a specific party or a collection of parties" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IV0h47EaiE" role="1TKVEi">
       <property role="IQ2ns" value="5456956546144052394" />
@@ -261,6 +278,7 @@
     <property role="3GE5qa" value="interceptor" />
     <property role="TrG5h" value="SenderContextArg" />
     <property role="34LRSv" value="sender" />
+    <property role="R4oN_" value="a reference to the sender" />
     <ref role="1TJDcQ" to="8lgj:4IV0h47hCX3" resolve="AbstractContextArgument" />
   </node>
   <node concept="1TIwiD" id="4IV0h47I93P">
@@ -268,6 +286,7 @@
     <property role="3GE5qa" value="interceptor" />
     <property role="TrG5h" value="AnySenderExpr" />
     <property role="34LRSv" value="*" />
+    <property role="R4oN_" value="any sender" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="4IV0h48lf7t">
@@ -275,6 +294,7 @@
     <property role="3GE5qa" value="interceptor" />
     <property role="TrG5h" value="TakeTurnsInterceptor" />
     <property role="34LRSv" value="takeTurns" />
+    <property role="R4oN_" value="an interceptor taking turns" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4IV0h48lf9e" role="1TKVEl">
       <property role="IQ2nx" value="5456956546155344462" />
@@ -311,6 +331,7 @@
     <property role="3GE5qa" value="interceptor" />
     <property role="TrG5h" value="WhoIsNextExpr" />
     <property role="34LRSv" value="whoIsNext" />
+    <property role="R4oN_" value="get the party who's turn is next" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
 </model>

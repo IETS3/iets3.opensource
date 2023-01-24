@@ -1051,7 +1051,7 @@
   </node>
   <node concept="13h7C7" id="4SHkH$fnmeE">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:4SHkH$fnm2H" resolve="SinusExpression" />
+    <ref role="13h7C2" to="1qv1:4SHkH$fnm2H" resolve="SineExpression" />
     <node concept="13hLZK" id="4SHkH$fnmeF" role="13h7CW">
       <node concept="3clFbS" id="4SHkH$fnmeG" role="2VODD2" />
     </node>
@@ -1071,7 +1071,7 @@
   </node>
   <node concept="13h7C7" id="M7eZQ_ZTDM">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:M7eZQ_ZStj" resolve="CosinusExpression" />
+    <ref role="13h7C2" to="1qv1:M7eZQ_ZStj" resolve="CosineExpression" />
     <node concept="13hLZK" id="M7eZQ_ZTDN" role="13h7CW">
       <node concept="3clFbS" id="M7eZQ_ZTDO" role="2VODD2" />
     </node>
@@ -1156,7 +1156,7 @@
   </node>
   <node concept="13h7C7" id="1EoaTAz5Op_">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:M7eZQBwOwF" resolve="ArcCosinus" />
+    <ref role="13h7C2" to="1qv1:M7eZQBwOwF" resolve="ArcCosine" />
     <node concept="13hLZK" id="1EoaTAz5OpA" role="13h7CW">
       <node concept="3clFbS" id="1EoaTAz5OpB" role="2VODD2" />
     </node>
@@ -1176,7 +1176,7 @@
   </node>
   <node concept="13h7C7" id="1EoaTAz6Kos">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:M7eZQAOIHc" resolve="SinusHyperbolicus" />
+    <ref role="13h7C2" to="1qv1:M7eZQAOIHc" resolve="SineHyperbolicus" />
     <node concept="13hLZK" id="1EoaTAz6Kot" role="13h7CW">
       <node concept="3clFbS" id="1EoaTAz6Kou" role="2VODD2" />
     </node>
@@ -1196,7 +1196,7 @@
   </node>
   <node concept="13h7C7" id="1EoaTAz6Kq0">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:M7eZQAngzc" resolve="TangensExpression" />
+    <ref role="13h7C2" to="1qv1:M7eZQAngzc" resolve="TangentExpression" />
     <node concept="13hLZK" id="1EoaTAz6Kq1" role="13h7CW">
       <node concept="3clFbS" id="1EoaTAz6Kq2" role="2VODD2" />
     </node>
@@ -1216,7 +1216,7 @@
   </node>
   <node concept="13h7C7" id="1EoaTAz6Kr$">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:M7eZQADw31" resolve="TangensHyperbolicus" />
+    <ref role="13h7C2" to="1qv1:M7eZQADw31" resolve="TangentHyperbolicus" />
     <node concept="13hLZK" id="1EoaTAz6Kr_" role="13h7CW">
       <node concept="3clFbS" id="1EoaTAz6KrA" role="2VODD2" />
     </node>
@@ -1236,7 +1236,7 @@
   </node>
   <node concept="13h7C7" id="1EoaTAz8bPl">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:1EoaTAz8bOT" resolve="CosinusHyperbolicus" />
+    <ref role="13h7C2" to="1qv1:1EoaTAz8bOT" resolve="CosineHyperbolicus" />
     <node concept="13hLZK" id="1EoaTAz8bPm" role="13h7CW">
       <node concept="3clFbS" id="1EoaTAz8bPn" role="2VODD2" />
     </node>
@@ -1256,7 +1256,7 @@
   </node>
   <node concept="13h7C7" id="1EoaTAz8K6A">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:1EoaTAz8K6a" resolve="ArcCosinusHyperbolicus" />
+    <ref role="13h7C2" to="1qv1:1EoaTAz8K6a" resolve="ArcCosineHyperbolicus" />
     <node concept="13hLZK" id="1EoaTAz8K6B" role="13h7CW">
       <node concept="3clFbS" id="1EoaTAz8K6C" role="2VODD2" />
     </node>
@@ -1276,7 +1276,7 @@
   </node>
   <node concept="13h7C7" id="1EoaTAz9Poi">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:1EoaTAz9PnQ" resolve="ArcSinusHyperbolicus" />
+    <ref role="13h7C2" to="1qv1:1EoaTAz9PnQ" resolve="ArcSineHyperbolicus" />
     <node concept="13hLZK" id="1EoaTAz9Poj" role="13h7CW">
       <node concept="3clFbS" id="1EoaTAz9Pok" role="2VODD2" />
     </node>
@@ -1296,7 +1296,7 @@
   </node>
   <node concept="13h7C7" id="1EoaTAzauIM">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:1EoaTAzatSJ" resolve="ArcTangensHyperbolicus" />
+    <ref role="13h7C2" to="1qv1:1EoaTAzatSJ" resolve="ArcTangentHyperbolicus" />
     <node concept="13hLZK" id="1EoaTAzauIN" role="13h7CW">
       <node concept="3clFbS" id="1EoaTAzauIO" role="2VODD2" />
     </node>
@@ -1316,7 +1316,7 @@
   </node>
   <node concept="13h7C7" id="1EoaTAzbztI">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:1EoaTAzbzti" resolve="ArcTangens" />
+    <ref role="13h7C2" to="1qv1:1EoaTAzbzti" resolve="ArcTangent" />
     <node concept="13hLZK" id="1EoaTAzbztJ" role="13h7CW">
       <node concept="3clFbS" id="1EoaTAzbztK" role="2VODD2" />
     </node>
@@ -1336,7 +1336,7 @@
   </node>
   <node concept="13h7C7" id="1EoaTAzc6zs">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="13h7C2" to="1qv1:1EoaTAzc5EL" resolve="ArcSinus" />
+    <ref role="13h7C2" to="1qv1:1EoaTAzc5EL" resolve="ArcSine" />
     <node concept="13hLZK" id="1EoaTAzc6zt" role="13h7CW">
       <node concept="3clFbS" id="1EoaTAzc6zu" role="2VODD2" />
     </node>

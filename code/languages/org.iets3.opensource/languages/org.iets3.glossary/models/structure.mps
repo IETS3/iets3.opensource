@@ -21,6 +21,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -61,6 +62,7 @@
     <property role="TrG5h" value="GlossaryChunk" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="7551038907536067158" />
+    <property role="R4oN_" value="a glossary of terms" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="6zaFu4oPODo" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -79,6 +81,7 @@
   <node concept="1TIwiD" id="6zaFu4oPODn">
     <property role="TrG5h" value="GlossaryTerm" />
     <property role="EcuMT" value="7551038907536067159" />
+    <property role="R4oN_" value="a glossary term with optonal attributes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6zaFu4oPPYK" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
@@ -101,6 +104,7 @@
   <node concept="1TIwiD" id="6zaFu4oPPYM">
     <property role="TrG5h" value="GlossaryDocSection" />
     <property role="EcuMT" value="7551038907536072626" />
+    <property role="R4oN_" value="a glossary section for the doc language" />
     <ref role="1TJDcQ" to="2c95:2TZO3Dbv6Ju" resolve="AbstractSection" />
   </node>
   <node concept="1TIwiD" id="6zaFu4oQ9na">
@@ -109,12 +113,14 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="attributes" />
     <property role="EcuMT" value="7551038907536152010" />
+    <property role="R4oN_" value="a base concept for term attributes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6zaFu4oQdsW">
     <property role="TrG5h" value="TermRefWord" />
     <property role="34LRSv" value="[" />
     <property role="EcuMT" value="7551038907536168764" />
+    <property role="R4oN_" value="a term reference with an optional alternative text" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6zaFu4oQdt2" role="1TKVEi">
       <property role="20kJfa" value="term" />
@@ -135,6 +141,7 @@
   <node concept="1TIwiD" id="6zaFu4oQfqR">
     <property role="TrG5h" value="AlternateText" />
     <property role="EcuMT" value="7551038907536176823" />
+    <property role="R4oN_" value="an alternative text" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6zaFu4oQfqV" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -148,6 +155,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="attributes" />
     <property role="EcuMT" value="7551038907536661369" />
+    <property role="R4oN_" value="a base concept for term reference term attributes" />
     <ref role="1TJDcQ" node="6zaFu4oQ9na" resolve="TermAttribute" />
     <node concept="1TJgyj" id="6zaFu4oS5HU" role="1TKVEi">
       <property role="20kJfa" value="term" />
@@ -161,6 +169,7 @@
     <property role="34LRSv" value="synonym" />
     <property role="3GE5qa" value="attributes" />
     <property role="EcuMT" value="7551038907536661536" />
+    <property role="R4oN_" value="a synonym attribute" />
     <ref role="1TJDcQ" node="6zaFu4oS5HT" resolve="TermRefTermAttribute" />
   </node>
   <node concept="1TIwiD" id="6zaFu4oSzVX">
@@ -168,12 +177,14 @@
     <property role="34LRSv" value="find glossary words" />
     <property role="3GE5qa" value="assessments" />
     <property role="EcuMT" value="7551038907536785149" />
+    <property role="R4oN_" value="find glossary words" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
   </node>
   <node concept="1TIwiD" id="6zaFu4oS_ac">
     <property role="3GE5qa" value="assessments" />
     <property role="TrG5h" value="FoundWordAssResult" />
     <property role="EcuMT" value="7551038907536790156" />
+    <property role="R4oN_" value="a found word" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyi" id="6zaFu4oS_bz" role="1TKVEl">
       <property role="TrG5h" value="position" />
@@ -203,6 +214,7 @@
     <property role="TrG5h" value="AliasAttribute" />
     <property role="34LRSv" value="alias" />
     <property role="EcuMT" value="385356062733094866" />
+    <property role="R4oN_" value="an alias attribute" />
     <ref role="1TJDcQ" node="6zaFu4oQ9na" resolve="TermAttribute" />
     <node concept="1TJgyi" id="lp3OKvfWZj" role="1TKVEl">
       <property role="TrG5h" value="aliasText" />
