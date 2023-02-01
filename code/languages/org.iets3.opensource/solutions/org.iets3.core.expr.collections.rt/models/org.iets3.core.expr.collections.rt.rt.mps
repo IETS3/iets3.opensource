@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5d67e954-7960-4214-97d1-8f5d3823a964(org.iets3.core.expr.genjava.simpleTypes.rt.rt)">
+<model ref="r:5d67e954-7960-4214-97d1-8f5d3823a964(org.iets3.core.expr.collections.rt.rt)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
