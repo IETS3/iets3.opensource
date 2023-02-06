@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
@@ -37,6 +38,7 @@
     <import index="9eyi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.lang.editor.menus.transformation(MPS.Editor/)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
     <import index="6lvu" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellMenu(MPS.Editor/)" />
+    <import index="q4oi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellActions(MPS.Editor/)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
@@ -340,6 +342,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -1210,6 +1216,25 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3clFbF" id="4r248Xv4qna" role="3cqZAp">
+                            <node concept="2OqwBi" id="4r248Xv4gPU" role="3clFbG">
+                              <node concept="37vLTw" id="4r248Xv4fWQ" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3DWpd_K7xzM" resolve="errorCell" />
+                              </node>
+                              <node concept="liA8E" id="4r248Xv4isS" role="2OqNvi">
+                                <ref role="37wK5l" to="g51k:~EditorCell_Basic.setAction(jetbrains.mps.openapi.editor.cells.CellActionType,jetbrains.mps.openapi.editor.cells.CellAction)" resolve="setAction" />
+                                <node concept="Rm8GO" id="4r248Xv4jak" role="37wK5m">
+                                  <ref role="Rm8GQ" to="f4zo:~CellActionType.PASTE" resolve="PASTE" />
+                                  <ref role="1Px2BO" to="f4zo:~CellActionType" resolve="CellActionType" />
+                                </node>
+                                <node concept="2ShNRf" id="4r248Xv4jUf" role="37wK5m">
+                                  <node concept="1pGfFk" id="4r248Xv4oTy" role="2ShVmc">
+                                    <ref role="37wK5l" to="q4oi:~CellAction_PasteNode.&lt;init&gt;()" resolve="CellAction_PasteNode" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbF" id="3ijo1YRLJA$" role="3cqZAp">
                             <node concept="37vLTw" id="3DWpd_K7x$0" role="3clFbG">
                               <ref role="3cqZAo" node="3DWpd_K7xzM" resolve="errorCell" />
@@ -1388,6 +1413,25 @@
                               <node concept="2OqwBi" id="5XfUTkNKQBq" role="37wK5m">
                                 <node concept="pncrf" id="5XfUTkNKQBr" role="2Oq$k0" />
                                 <node concept="2NL2c5" id="5XfUTkNKQBs" role="2OqNvi" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="4r248Xv4p83" role="3cqZAp">
+                          <node concept="2OqwBi" id="4r248Xv4p84" role="3clFbG">
+                            <node concept="37vLTw" id="4r248Xv4p85" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3DWpd_K411H" resolve="errorCell" />
+                            </node>
+                            <node concept="liA8E" id="4r248Xv4p86" role="2OqNvi">
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.setAction(jetbrains.mps.openapi.editor.cells.CellActionType,jetbrains.mps.openapi.editor.cells.CellAction)" resolve="setAction" />
+                              <node concept="Rm8GO" id="4r248Xv4p87" role="37wK5m">
+                                <ref role="1Px2BO" to="f4zo:~CellActionType" resolve="CellActionType" />
+                                <ref role="Rm8GQ" to="f4zo:~CellActionType.PASTE" resolve="PASTE" />
+                              </node>
+                              <node concept="2ShNRf" id="4r248Xv4p88" role="37wK5m">
+                                <node concept="1pGfFk" id="4r248Xv4p89" role="2ShVmc">
+                                  <ref role="37wK5l" to="q4oi:~CellAction_PasteNode.&lt;init&gt;()" resolve="CellAction_PasteNode" />
+                                </node>
                               </node>
                             </node>
                           </node>
