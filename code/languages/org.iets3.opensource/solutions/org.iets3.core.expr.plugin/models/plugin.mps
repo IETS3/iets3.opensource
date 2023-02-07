@@ -1247,7 +1247,7 @@
                   <property role="2bfB8j" value="true" />
                   <property role="373rjd" value="true" />
                   <ref role="1Y3XeK" to="82uw:~Consumer" resolve="Consumer" />
-                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                   <node concept="3Tm1VV" id="6gm0QU7dqS6" role="1B3o_S" />
                   <node concept="3clFb_" id="6gm0QU7dqSk" role="jymVt">
                     <property role="TrG5h" value="accept" />
@@ -1271,7 +1271,7 @@
                       </node>
                     </node>
                     <node concept="2AHcQZ" id="6gm0QU7dqSs" role="2AJF6D">
-                      <ref role="2AI5Lk" to="wyt6:~Override" />
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
                   <node concept="3uibUv" id="6gm0QU7dqSv" role="2Ghqu4">
