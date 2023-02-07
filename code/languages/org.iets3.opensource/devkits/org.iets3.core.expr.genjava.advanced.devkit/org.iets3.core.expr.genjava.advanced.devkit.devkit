@@ -4,6 +4,7 @@
   <exported-language name="4453335f-7c63-4874-b3b1-ece8c37e6d9b(org.iets3.core.expr.genjava.temporal)" />
   <exported-language name="15d858db-2d21-4ae9-90c4-f595086d0bdf(org.iets3.core.expr.genjava.util)" />
   <exported-language name="752cf1d3-84d1-4f2b-bbf5-4ef076a62ec7(org.iets3.core.expr.genjava.messages)" />
+  <exported-language name="f9bb00ab-1f7e-40ab-9ec0-b11e02d84d0f(org.iets3.core.expr.genjava.stringvalidation)" />
   <extendedDevKits>
     <extendedDevKit>da9c5738-b245-4e38-b52f-e6ee76cadd7f(org.iets3.core.expr.genjava.core.devkit)</extendedDevKit>
   </extendedDevKits>
@@ -12,6 +13,7 @@
     <exported-solution>a37d732b-a361-4dba-bc6f-f8e645007559(org.iets3.core.expr.genjava.advanced.genplan)</exported-solution>
     <exported-solution>646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)</exported-solution>
     <exported-solution>52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)</exported-solution>
+    <exported-solution>f38b69a3-1d33-4f9b-84e0-ac1095df2998(org.iets3.core.expr.stringvalidation.runtime)</exported-solution>
   </exported-solutions>
   <generation-plan model="r:b6940564-70dd-428c-9fbc-f83a23b7043b(org.iets3.core.expr.genjava.advanced.genplan.genplan)" />
 </dev-kit>

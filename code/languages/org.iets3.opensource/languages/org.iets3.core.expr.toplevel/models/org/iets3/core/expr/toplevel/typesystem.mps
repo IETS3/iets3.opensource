@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -26,6 +27,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -4053,18 +4055,30 @@
     <property role="3GE5qa" value="enum" />
     <node concept="3clFbS" id="bAwKVX3rBk" role="18ibNy">
       <node concept="3clFbJ" id="bAwKVX3sq$" role="3cqZAp">
-        <node concept="3fqX7Q" id="bAwKVX3tpr" role="3clFbw">
-          <node concept="2OqwBi" id="bAwKVX3tpt" role="3fr31v">
-            <node concept="1YBJjd" id="bAwKVX3tpu" role="2Oq$k0">
-              <ref role="1YBMHb" node="bAwKVX3rBm" resolve="enumDeclaration" />
-            </node>
-            <node concept="2qgKlT" id="bAwKVX3tpv" role="2OqNvi">
-              <ref role="37wK5l" to="nu60:3Y6fbK16sYK" resolve="isValued" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbS" id="bAwKVX3sqA" role="3clFbx">
           <node concept="3cpWs6" id="bAwKVX3tpW" role="3cqZAp" />
+        </node>
+        <node concept="22lmx$" id="1WjCak8S51q" role="3clFbw">
+          <node concept="3fqX7Q" id="1WjCak8S6Da" role="3uHU7w">
+            <node concept="2OqwBi" id="1WjCak8S6Dc" role="3fr31v">
+              <node concept="1YBJjd" id="1WjCak8S6Dd" role="2Oq$k0">
+                <ref role="1YBMHb" node="bAwKVX3rBm" resolve="enumDeclaration" />
+              </node>
+              <node concept="2qgKlT" id="1WjCak8S6De" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:1WjCak8S2F0" resolve="checkDuplicates" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="bAwKVX3tpr" role="3uHU7B">
+            <node concept="2OqwBi" id="bAwKVX3tpt" role="3fr31v">
+              <node concept="1YBJjd" id="bAwKVX3tpu" role="2Oq$k0">
+                <ref role="1YBMHb" node="bAwKVX3rBm" resolve="enumDeclaration" />
+              </node>
+              <node concept="2qgKlT" id="bAwKVX3tpv" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:3Y6fbK16sYK" resolve="isValued" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3clFbH" id="Y$AzCx89nj" role="3cqZAp" />

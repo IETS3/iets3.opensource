@@ -39,6 +39,7 @@
     <language slang="l:cc59a077-028a-42b0-ad86-6a1d71258691:org.iets3.core.expr.genjava.datetime" version="0" />
     <language slang="l:752cf1d3-84d1-4f2b-bbf5-4ef076a62ec7:org.iets3.core.expr.genjava.messages" version="-1" />
     <language slang="l:5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40:org.iets3.core.expr.genjava.simpleTypes" version="0" />
+    <language slang="l:f9bb00ab-1f7e-40ab-9ec0-b11e02d84d0f:org.iets3.core.expr.genjava.stringvalidation" version="0" />
     <language slang="l:4453335f-7c63-4874-b3b1-ece8c37e6d9b:org.iets3.core.expr.genjava.temporal" version="0" />
     <language slang="l:e75207bb-7b13-40bd-b80b-c8fe625c4ee2:org.iets3.core.expr.genjava.tests" version="0" />
     <language slang="l:ddeeec5e-aa31-4c44-bc40-319cd452626e:org.iets3.core.expr.genjava.toplevel" version="0" />
@@ -66,6 +67,7 @@
     <module reference="68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)" version="0" />
     <module reference="336cc7f4-18d3-473b-81a1-d8df1c0ad27a(org.iets3.core.expr.genjava.toplevel.rt)" version="0" />
     <module reference="52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)" version="0" />
+    <module reference="f38b69a3-1d33-4f9b-84e0-ac1095df2998(org.iets3.core.expr.stringvalidation.runtime)" version="0" />
     <module reference="0a68022c-4e89-4403-a717-1caf19c68980(test.ex.core.expr.genjava)" version="0" />
   </dependencyVersions>
 </solution>
