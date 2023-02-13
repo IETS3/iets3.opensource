@@ -625,7 +625,7 @@
                 </node>
               </node>
               <node concept="1g0IQG" id="5hullqu1KnL" role="1geGt4">
-                <ref role="VmB1A" node="5BtJuGRt7EK" resolve="DataTableColumHeader" />
+                <ref role="VmB1A" node="5BtJuGRt7EK" resolve="DataTableColumnHeader" />
               </node>
             </node>
           </node>
@@ -1344,7 +1344,7 @@
   <node concept="V5hpn" id="5BtJuGRt7DH">
     <property role="TrG5h" value="DataTableStyles" />
     <node concept="14StLt" id="5BtJuGRt7EK" role="V601i">
-      <property role="TrG5h" value="DataTableColumHeader" />
+      <property role="TrG5h" value="DataTableColumnHeader" />
       <node concept="3tD6jV" id="5T8tZL2kM_m" role="3F10Kt">
         <ref role="3tD7wE" to="reoo:5PDTdguqQmB" resolve="shade-color" />
         <node concept="3sjG9q" id="5T8tZL2kM_o" role="3tD6jU">
@@ -1371,13 +1371,13 @@
                     <node concept="1pGfFk" id="5T8tZL2kN8j" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                       <node concept="3cmrfG" id="7SzcYVyrJVU" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                       <node concept="3cmrfG" id="7SzcYVyrK6F" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                       <node concept="3cmrfG" id="7SzcYVyrKnG" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                     </node>
                   </node>
@@ -1452,13 +1452,13 @@
                     <node concept="1pGfFk" id="621ujKeQ6Gi" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                       <node concept="3cmrfG" id="7SzcYVyrKVS" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                       <node concept="3cmrfG" id="7SzcYVyrL8u" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                       <node concept="3cmrfG" id="7SzcYVyrLnI" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                     </node>
                   </node>
