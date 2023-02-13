@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:d01b97ee-eb54-4b3c-b85e-f72b7435869b(org.iets3.core.expr.data.constraints)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="5dae8159-ab99-46bb-a40d-0cee30ee7018" name="jetbrains.mps.lang.constraints.rules.kinds" version="0" />
     <use id="ea3159bf-f48e-4720-bde2-86dba75f0d34" name="jetbrains.mps.lang.context.defs" version="0" />
@@ -16,11 +17,12 @@
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="e9k1" ref="r:00903dee-f0b0-48de-9335-7cb3f90ae462(org.iets3.core.expr.data.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
+    <import index="ux24" ref="r:74ad67c1-3cf0-4c00-bd30-edf8df02cfe5(org.iets3.core.expr.data.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -451,6 +453,61 @@
               </node>
               <node concept="3clFbT" id="6WstIz8MKEx" role="37wK5m">
                 <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1WMFq5x4gkL">
+    <ref role="1M2myG" to="e9k1:1WMFq5x4fLm" resolve="DataRowRefForLookup" />
+    <node concept="1N5Pfh" id="1WMFq5x4gm0" role="1Mr941">
+      <ref role="1N5Vy1" to="e9k1:1WMFq5x4fLn" resolve="dataRow" />
+      <node concept="3dgokm" id="1WMFq5x4gm1" role="1N6uqs">
+        <node concept="3clFbS" id="1WMFq5x4gm2" role="2VODD2">
+          <node concept="3clFbF" id="1WMFq5x4gm3" role="3cqZAp">
+            <node concept="2YIFZM" id="1WMFq5x4gm4" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="1WMFq5x4gm5" role="37wK5m">
+                <node concept="2OqwBi" id="1WMFq5x4gm6" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5nzoslouWGn" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5nzoslouW5T" role="2Oq$k0">
+                      <node concept="2rP1CM" id="1WMFq5x4gmb" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5nzoslouWot" role="2OqNvi">
+                        <node concept="1xMEDy" id="5nzoslouWov" role="1xVPHs">
+                          <node concept="chp4Y" id="5nzoslouWvn" role="ri$Ld">
+                            <ref role="cht4Q" to="e9k1:stdmzxm7Y2" resolve="DataTableLookUp" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="5nzoslouWNj" role="2OqNvi">
+                      <ref role="37wK5l" to="ux24:5nzoslouECc" resolve="getDataSelector" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="1WMFq5x4gmh" role="2OqNvi">
+                    <ref role="3Tt5mk" to="e9k1:cPLa7FstD4" resolve="table" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="1WMFq5x4gmi" role="2OqNvi">
+                  <ref role="3TtcxE" to="e9k1:cPLa7FpRVO" resolve="rows" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9S07l" id="1WMFq5x4jil" role="9Vyp8">
+      <node concept="3clFbS" id="1WMFq5x4jim" role="2VODD2">
+        <node concept="3clFbF" id="1WMFq5x4jiH" role="3cqZAp">
+          <node concept="2OqwBi" id="67dYdlPOTzy" role="3clFbG">
+            <node concept="nLn13" id="67dYdlPOSXB" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="67dYdlPOTJ9" role="2OqNvi">
+              <node concept="chp4Y" id="67dYdlPOTT1" role="cj9EA">
+                <ref role="cht4Q" to="e9k1:stdmzxm7Y2" resolve="DataTableLookUp" />
               </node>
             </node>
           </node>
