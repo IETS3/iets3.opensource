@@ -3525,7 +3525,7 @@
     </node>
   </node>
   <node concept="RtYIR" id="1WlYLwX1DOp">
-    <property role="Rtri_" value="100" />
+    <property role="Rtri_" value="200" />
     <property role="3NULOk" value="ModelCoverage_Coloring" />
     <property role="3GE5qa" value="coverage" />
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -5733,7 +5733,7 @@
     </node>
   </node>
   <node concept="RtYIR" id="3TIaSh$92nT">
-    <property role="Rtri_" value="100" />
+    <property role="Rtri_" value="210" />
     <property role="3GE5qa" value="coverageHighlighter" />
     <property role="3NULOk" value="coverageAnnotation" />
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />

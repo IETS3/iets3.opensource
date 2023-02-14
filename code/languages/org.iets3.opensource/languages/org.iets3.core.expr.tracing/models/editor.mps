@@ -333,7 +333,7 @@
     </language>
   </registry>
   <node concept="RtYIR" id="1rUbSenML5">
-    <property role="Rtri_" value="100" />
+    <property role="Rtri_" value="240" />
     <property role="3NULOk" value="Tracing" />
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="RtMap" id="1rUbSenNEl" role="RtEXV">
@@ -752,7 +752,7 @@
     <node concept="Rtstu" id="1OitGwf5Zbs" role="6VMZX" />
   </node>
   <node concept="RtYIR" id="2CFPPn7pH83">
-    <property role="Rtri_" value="100" />
+    <property role="Rtri_" value="250" />
     <property role="3NULOk" value="Tracing" />
     <ref role="1XX52x" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="RtMap" id="2CFPPn7pH84" role="RtEXV">
@@ -1603,7 +1603,7 @@
     <node concept="3Tm1VV" id="2CFPPn7pTGr" role="1B3o_S" />
   </node>
   <node concept="RtYIR" id="5U8d23PW4kf">
-    <property role="Rtri_" value="100" />
+    <property role="Rtri_" value="230" />
     <property role="3NULOk" value="Coloring" />
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="RtMap" id="5U8d23PW4kg" role="RtEXV">
