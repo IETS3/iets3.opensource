@@ -1180,6 +1180,23 @@
       <node concept="3Tm1VV" id="2oUyrt$Q$ED" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="2oUyrt$Tbp9" role="jymVt" />
+    <node concept="2YIFZL" id="4NJAaUg4P5X" role="jymVt">
+      <property role="TrG5h" value="allowHexadecimalNumbers" />
+      <node concept="3clFbS" id="4NJAaUg4P5Y" role="3clF47">
+        <node concept="3clFbF" id="4NJAaUg4P5Z" role="3cqZAp">
+          <node concept="2OqwBi" id="4NJAaUg4P60" role="3clFbG">
+            <node concept="1rXfSq" id="4NJAaUg4P61" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
+            </node>
+            <node concept="liA8E" id="4NJAaUg4P62" role="2OqNvi">
+              <ref role="37wK5l" to="oq0c:4NJAaUg1hYw" resolve="allowHexadecimalNumbers" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4NJAaUg4P63" role="3clF45" />
+      <node concept="3Tm1VV" id="4NJAaUg4P64" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="2Qbt$1tTQb0" role="jymVt" />
     <node concept="3Tm1VV" id="2Qbt$1tTQaI" role="1B3o_S" />
   </node>
