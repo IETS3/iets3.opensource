@@ -55,6 +55,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.process/org.iets3.core.expr.process.mpl" folder="expr.lang-stateful" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.query/org.iets3.core.expr.query.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.repl/org.iets3.core.expr.repl.mpl" folder="expr.lang-core" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.shortcircuit/org.iets3.core.expr.shortcircuit.mpl" folder="expr.plugins" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes.tests/org.iets3.core.expr.simpleTypes.tests.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.statemachines/org.iets3.core.expr.statemachines.mpl" folder="expr.lang-stateful" />
@@ -142,6 +143,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/solutions/test.ex.core.expr.genjava/test.ex.core.expr.genjava.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/test.iets3.core.assessment/test.iets3.core.tracequery.msd" folder="trace" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.nixHandlers.expr.os/test.nixHandlers.expr.os.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/solutions/test.org.iets3.core.comments/test.org.iets3.core.comments.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/test.ts.components.core/test.ts.components.core.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.in.expr.os/test.in.expr.os.msd" folder="expr.tests" />
