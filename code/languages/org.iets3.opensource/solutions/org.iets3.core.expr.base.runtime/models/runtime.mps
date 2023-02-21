@@ -18,7 +18,6 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="ppzb" ref="r:5db517a0-f62d-4841-a421-11bb7269799d(org.iets3.core.expr.base.shared.runtime)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3364,12 +3363,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="26cjRACW2hY" role="3clFbw">
-                <node concept="37vLTw" id="26cjRACW24i" role="2Oq$k0">
-                  <ref role="3cqZAo" node="26cjRACVUHy" resolve="handlers" />
-                </node>
-                <node concept="1v1jN8" id="26cjRACW2EZ" role="2OqNvi" />
-              </node>
               <node concept="9aQIb" id="26cjRACW3S9" role="9aQIa">
                 <node concept="3clFbS" id="26cjRACW3Sa" role="9aQI4">
                   <node concept="3clFbF" id="26cjRACVUHN" role="3cqZAp">
@@ -3385,6 +3378,30 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="22lmx$" id="3NMMaaIDNfU" role="3clFbw">
+                <node concept="3eOVzh" id="3NMMaaIDP5R" role="3uHU7w">
+                  <node concept="3cmrfG" id="3NMMaaIDPaX" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="2OqwBi" id="3NMMaaIDNZN" role="3uHU7B">
+                    <node concept="2OqwBi" id="3NMMaaIDNIF" role="2Oq$k0">
+                      <node concept="37vLTw" id="3NMMaaIDNtG" role="2Oq$k0">
+                        <ref role="3cqZAo" node="26cjRACVUHy" resolve="handlers" />
+                      </node>
+                      <node concept="1uHKPH" id="3NMMaaIDNQh" role="2OqNvi" />
+                    </node>
+                    <node concept="liA8E" id="3NMMaaIDOl$" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:26cjRACVPUy" resolve="getPriorityLevel" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="26cjRACW2hY" role="3uHU7B">
+                  <node concept="37vLTw" id="26cjRACW24i" role="2Oq$k0">
+                    <ref role="3cqZAo" node="26cjRACVUHy" resolve="handlers" />
+                  </node>
+                  <node concept="1v1jN8" id="26cjRACW2EZ" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -3408,23 +3425,33 @@
       <node concept="3Tm1VV" id="26cjRACVUI8" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="31HAhmC_A0A" role="jymVt" />
-    <node concept="2YIFZL" id="31HAhmC_A$8" role="jymVt">
-      <property role="TrG5h" value="reset" />
-      <node concept="3clFbS" id="31HAhmC_A$b" role="3clF47">
-        <node concept="3clFbF" id="31HAhmC_BhB" role="3cqZAp">
-          <node concept="2OqwBi" id="31HAhmC_Bze" role="3clFbG">
-            <node concept="10M0yZ" id="31HAhmC_BhN" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+    <node concept="2YIFZL" id="3NMMaaIJODH" role="jymVt">
+      <property role="TrG5h" value="prioritizeTemporarily" />
+      <node concept="3clFbS" id="3NMMaaIJODJ" role="3clF47">
+        <node concept="3clFbF" id="3NMMaaIJODK" role="3cqZAp">
+          <node concept="37vLTI" id="3NMMaaIJODL" role="3clFbG">
+            <node concept="37vLTw" id="3NMMaaIJODM" role="37vLTx">
+              <ref role="3cqZAo" node="3NMMaaIJODQ" resolve="tmpHandler" />
             </node>
-            <node concept="liA8E" id="31HAhmC_BYF" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="Xl_RD" id="31HAhmC_C0b" role="37wK5m">
-                <property role="Xl_RC" value="Resetting handler" />
-              </node>
+            <node concept="37vLTw" id="3NMMaaIJODN" role="37vLTJ">
+              <ref role="3cqZAo" node="26cjRACVUHk" resolve="handler" />
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3cqZAl" id="3NMMaaIJODP" role="3clF45" />
+      <node concept="37vLTG" id="3NMMaaIJODQ" role="3clF46">
+        <property role="TrG5h" value="tmpHandler" />
+        <node concept="3uibUv" id="3NMMaaIJODR" role="1tU5fm">
+          <ref role="3uigEE" to="oq0c:26cjRACVMdy" resolve="NixHandler" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3NMMaaIJODO" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3NMMaaIJGl6" role="jymVt" />
+    <node concept="2YIFZL" id="31HAhmC_A$8" role="jymVt">
+      <property role="TrG5h" value="reset" />
+      <node concept="3clFbS" id="31HAhmC_A$b" role="3clF47">
         <node concept="3clFbF" id="31HAhmC_AAd" role="3cqZAp">
           <node concept="37vLTI" id="31HAhmC_B67" role="3clFbG">
             <node concept="10Nm6u" id="31HAhmC_B7x" role="37vLTx" />
@@ -3436,25 +3463,6 @@
         <node concept="3clFbF" id="31HAhmC_Cp1" role="3cqZAp">
           <node concept="1rXfSq" id="31HAhmC_CoZ" role="3clFbG">
             <ref role="37wK5l" node="26cjRACVUHp" resolve="resolveMapper" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="31HAhmC_CuD" role="3cqZAp">
-          <node concept="2OqwBi" id="31HAhmC_CKI" role="3clFbG">
-            <node concept="10M0yZ" id="31HAhmC_CuW" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="31HAhmC_D77" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="3cpWs3" id="31HAhmC_DF8" role="37wK5m">
-                <node concept="37vLTw" id="31HAhmC_DIq" role="3uHU7w">
-                  <ref role="3cqZAo" node="26cjRACVUHk" resolve="handler" />
-                </node>
-                <node concept="Xl_RD" id="31HAhmC_Dfh" role="3uHU7B">
-                  <property role="Xl_RC" value="Handler now: " />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>
