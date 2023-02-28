@@ -1376,6 +1376,7 @@
     </node>
     <node concept="13i0hz" id="3NwcubmnBQ5" role="13h7CS">
       <property role="TrG5h" value="runSolverAsync" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="3NwcubmnBQ6" role="1B3o_S" />
       <node concept="3clFbS" id="3NwcubmnBQ8" role="3clF47">
         <node concept="3clFbF" id="3NwcubmnCHl" role="3cqZAp">
