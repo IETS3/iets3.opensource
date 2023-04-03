@@ -57,6 +57,7 @@
     <property role="EcuMT" value="231307155597462254" />
     <property role="TrG5h" value="DataTable" />
     <property role="34LRSv" value="data" />
+    <property role="R4oN_" value="a data table" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2SzGbCMIroO" role="1TKVEl">
       <property role="IQ2nx" value="3324695263690995252" />
@@ -96,6 +97,7 @@
   <node concept="1TIwiD" id="cPLa7FpaUQ">
     <property role="EcuMT" value="231307155597471414" />
     <property role="TrG5h" value="DataColDef" />
+    <property role="R4oN_" value="a data column definition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="cPLa7Fpb6r" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
@@ -111,6 +113,7 @@
   <node concept="1TIwiD" id="cPLa7FpcCS">
     <property role="EcuMT" value="231307155597478456" />
     <property role="TrG5h" value="DataCell" />
+    <property role="R4oN_" value="a data cell" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="cPLa7FpdsY" role="1TKVEi">
       <property role="IQ2ns" value="231307155597481790" />
@@ -129,6 +132,7 @@
   <node concept="1TIwiD" id="cPLa7Fpiy9">
     <property role="EcuMT" value="231307155597502601" />
     <property role="TrG5h" value="DataRow" />
+    <property role="R4oN_" value="a data row containing data cells" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="cPLa7FpcRm" role="1TKVEi">
       <property role="IQ2ns" value="231307155597479382" />
@@ -144,6 +148,7 @@
   <node concept="1TIwiD" id="cPLa7Fs1v4">
     <property role="EcuMT" value="231307155598219204" />
     <property role="TrG5h" value="DataTableType" />
+    <property role="R4oN_" value="a data table type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="cPLa7Fs1QU" role="1TKVEi">
       <property role="IQ2ns" value="231307155598220730" />
@@ -155,6 +160,7 @@
   <node concept="1TIwiD" id="cPLa7Fstqs">
     <property role="EcuMT" value="231307155598333596" />
     <property role="TrG5h" value="DataSelector" />
+    <property role="R4oN_" value="a reference to a data table" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="cPLa7FstD4" role="1TKVEi">
       <property role="IQ2ns" value="231307155598334532" />
@@ -166,6 +172,7 @@
   <node concept="1TIwiD" id="cPLa7Ft09N">
     <property role="EcuMT" value="231307155598475891" />
     <property role="TrG5h" value="DataColOp" />
+    <property role="R4oN_" value="a data column definition target" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="cPLa7Ft0lw" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -180,6 +187,7 @@
   <node concept="1TIwiD" id="cPLa7FtAvS">
     <property role="EcuMT" value="231307155598632952" />
     <property role="TrG5h" value="DataRowOp" />
+    <property role="R4oN_" value="an operation on a data row" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="cPLa7FtAIy" role="1TKVEi">
       <property role="IQ2ns" value="231307155598633890" />
@@ -194,12 +202,14 @@
   <node concept="1TIwiD" id="cPLa7Fu7zn">
     <property role="EcuMT" value="231307155598768343" />
     <property role="TrG5h" value="DummyDataSelectorType" />
+    <property role="R4oN_" value="a dummy data selector type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="stdmzxm7Y2">
     <property role="EcuMT" value="512624657163648898" />
     <property role="TrG5h" value="DataTableLookUp" />
     <property role="34LRSv" value="lookUpBy" />
+    <property role="R4oN_" value="lookup the row by column and value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="stdmzxm7Y7" role="1TKVEi">
       <property role="IQ2ns" value="512624657163648903" />
@@ -230,6 +240,7 @@
   <node concept="1TIwiD" id="7F9023_OqBf">
     <property role="EcuMT" value="8847603084240726479" />
     <property role="TrG5h" value="DataColDefRef" />
+    <property role="R4oN_" value="a reference to a data column definition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7F9023_OqBg" role="1TKVEi">
       <property role="IQ2ns" value="8847603084240726480" />
@@ -247,7 +258,7 @@
     <property role="TrG5h" value="DataIsInTarget" />
     <property role="34LRSv" value="is" />
     <property role="3GE5qa" value="expr" />
-    <property role="R4oN_" value="check data element against one or several rows" />
+    <property role="R4oN_" value="check the data element against one or several rows" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3y6PJwOpPmS" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -264,6 +275,7 @@
     <property role="EcuMT" value="4073179274522613180" />
     <property role="3GE5qa" value="expr" />
     <property role="TrG5h" value="DataRowSelector" />
+    <property role="R4oN_" value="a reference to a data row" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3y6PJwOpPW5" role="1TKVEi">
       <property role="IQ2ns" value="4073179274522615557" />

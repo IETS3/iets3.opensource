@@ -341,6 +341,12 @@
       </concept>
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
+      <concept id="7740953487936183912" name="org.iets3.core.expr.toplevel.structure.Typedef" flags="ng" index="1WbbD7">
+        <child id="7740953487936183915" name="originalType" index="1WbbD4" />
+      </concept>
+      <concept id="7740953487936184022" name="org.iets3.core.expr.toplevel.structure.TypedefType" flags="ng" index="1WbbFT">
+        <reference id="7740953487936184023" name="typedef" index="1WbbFS" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -433,27 +439,27 @@
         <child id="971707942815320383" name="upper" index="39$JC6" />
         <child id="971707942815320390" name="body" index="39$JDZ" />
       </concept>
-      <concept id="902756210908825427" name="org.iets3.core.expr.math.structure.CosinusExpression" flags="ng" index="2DubMI" />
-      <concept id="902756210919735489" name="org.iets3.core.expr.math.structure.TangensHyperbolicus" flags="ng" index="2E8jGW" />
-      <concept id="902756210922679116" name="org.iets3.core.expr.math.structure.SinusHyperbolicus" flags="ng" index="2Elt2L" />
-      <concept id="902756210914953420" name="org.iets3.core.expr.math.structure.TangensExpression" flags="ng" index="2EQzcL" />
-      <concept id="902756210934237227" name="org.iets3.core.expr.math.structure.ArcCosinus" flags="ng" index="2F17fm" />
+      <concept id="902756210908825427" name="org.iets3.core.expr.math.structure.CosineExpression" flags="ng" index="2DubMI" />
+      <concept id="902756210919735489" name="org.iets3.core.expr.math.structure.TangentHyperbolicus" flags="ng" index="2E8jGW" />
+      <concept id="902756210922679116" name="org.iets3.core.expr.math.structure.SineHyperbolicus" flags="ng" index="2Elt2L" />
+      <concept id="902756210914953420" name="org.iets3.core.expr.math.structure.TangentExpression" flags="ng" index="2EQzcL" />
+      <concept id="902756210934237227" name="org.iets3.core.expr.math.structure.ArcCosine" flags="ng" index="2F17fm" />
       <concept id="902756210928623998" name="org.iets3.core.expr.math.structure.TrigonometricExpression" flags="ng" index="2FEDE3">
         <child id="902756210928624001" name="expr" index="2FEDDW" />
       </concept>
       <concept id="4179418036532649528" name="org.iets3.core.expr.math.structure.PolynomialExpression" flags="ng" index="2LoXyR" />
-      <concept id="1916329580313991857" name="org.iets3.core.expr.math.structure.ArcSinus" flags="ng" index="2TE74C" />
-      <concept id="1916329580313566767" name="org.iets3.core.expr.math.structure.ArcTangensHyperbolicus" flags="ng" index="2TGvmQ" />
-      <concept id="1916329580313851730" name="org.iets3.core.expr.math.structure.ArcTangens" flags="ng" index="2THxNb" />
-      <concept id="1916329580312968505" name="org.iets3.core.expr.math.structure.CosinusHyperbolicus" flags="ng" index="2TI9qw" />
-      <concept id="1916329580313117066" name="org.iets3.core.expr.math.structure.ArcCosinusHyperbolicus" flags="ng" index="2TIMCj" />
-      <concept id="1916329580313400822" name="org.iets3.core.expr.math.structure.ArcSinusHyperbolicus" flags="ng" index="2TJRTJ" />
+      <concept id="1916329580313991857" name="org.iets3.core.expr.math.structure.ArcSine" flags="ng" index="2TE74C" />
+      <concept id="1916329580313566767" name="org.iets3.core.expr.math.structure.ArcTangentHyperbolicus" flags="ng" index="2TGvmQ" />
+      <concept id="1916329580313851730" name="org.iets3.core.expr.math.structure.ArcTangent" flags="ng" index="2THxNb" />
+      <concept id="1916329580312968505" name="org.iets3.core.expr.math.structure.CosineHyperbolicus" flags="ng" index="2TI9qw" />
+      <concept id="1916329580313117066" name="org.iets3.core.expr.math.structure.ArcCosineHyperbolicus" flags="ng" index="2TIMCj" />
+      <concept id="1916329580313400822" name="org.iets3.core.expr.math.structure.ArcSineHyperbolicus" flags="ng" index="2TJRTJ" />
       <concept id="3800040087837809793" name="org.iets3.core.expr.math.structure.IntegralExpression" flags="ng" index="2Vrmzi">
         <child id="3800040087837872067" name="body" index="2VrBIg" />
         <child id="3800040087837872066" name="upper" index="2VrBIh" />
         <child id="3800040087837872065" name="lower" index="2VrBIi" />
       </concept>
-      <concept id="5633249801129517229" name="org.iets3.core.expr.math.structure.SinusExpression" flags="ng" index="11s39O" />
+      <concept id="5633249801129517229" name="org.iets3.core.expr.math.structure.SineExpression" flags="ng" index="11s39O" />
     </language>
     <language id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare">
       <concept id="756135271275943220" name="com.mbeddr.mpsutil.compare.structure.AssertNodeEquals" flags="ng" index="3GXo0L" />
@@ -2225,6 +2231,37 @@
               </node>
               <node concept="2gteS_" id="77FPJvcLcpb" role="2gteVg">
                 <property role="2gteVv" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1WbbD7" id="3vbD2Cjzqz1" role="_iOnC">
+          <property role="TrG5h" value="numInM" />
+          <node concept="2c7tTJ" id="3vbD2Cjzq_i" role="1WbbD4">
+            <node concept="CIsGf" id="3vbD2Cjzq_A" role="2c7tTI">
+              <node concept="CIsvn" id="3vbD2Cjzq_$" role="CIi4h">
+                <ref role="CIi3I" to="ku0a:5XaocLWHSS4" resolve="m" />
+              </node>
+            </node>
+            <node concept="mLuIC" id="3vbD2Cjzq_a" role="2c7tTw" />
+          </node>
+        </node>
+        <node concept="1WbbD7" id="3vbD2Cj$PEP" role="_iOnC">
+          <property role="TrG5h" value="doubleUnit" />
+          <node concept="2c7tTJ" id="3vbD2Cj$PHm" role="1WbbD4">
+            <node concept="CIsGf" id="3vbD2Cj$PI2" role="2c7tTI">
+              <node concept="CIsvn" id="3vbD2Cj$PI0" role="CIi4h">
+                <ref role="CIi3I" to="ku0a:5XaocLWHSS4" resolve="m" />
+              </node>
+            </node>
+            <node concept="1WbbFT" id="3vbD2Cj$PH3" role="2c7tTw">
+              <ref role="1WbbFS" node="3vbD2Cjzqz1" resolve="numInM" />
+            </node>
+            <node concept="7CXmI" id="3vbD2Cj_d1N" role="lGtFl">
+              <node concept="1TM$A" id="3vbD2Cj_d1O" role="7EUXB">
+                <node concept="2PYRI3" id="3vbD2Cj_nNm" role="3lydEf">
+                  <ref role="39XzEq" to="xqtf:3vbD2Cjzjw1" />
+                </node>
               </node>
             </node>
           </node>
@@ -6798,7 +6835,7 @@
             <node concept="2c7tTJ" id="_I$tx9Jsa8" role="3ix9CU">
               <node concept="RJ73O" id="_I$tx9Jsa$" role="2c7tTI">
                 <node concept="RJ7c4" id="_I$tx9Jsay" role="3KjDV8">
-                  <ref role="3KjDVa" to="ku0a:1KUmgSFvJUm" resolve="metre" />
+                  <ref role="3KjDVa" to="ku0a:1KUmgSFvJUm" resolve="length" />
                 </node>
               </node>
               <node concept="mLuIC" id="_I$tx9Js9Y" role="2c7tTw" />

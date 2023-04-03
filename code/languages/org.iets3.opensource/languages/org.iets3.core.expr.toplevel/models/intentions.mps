@@ -865,7 +865,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="4ptnK4jbIxp">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <property role="TrG5h" value="addSetterForMandatorFields" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="yv47:4ptnK4jbqZj" resolve="BuilderExpression" />
@@ -996,7 +996,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6cw1FA4enca">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <property role="TrG5h" value="assignDefaultsWhereAvailable" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="yv47:4ptnK4jbqZj" resolve="BuilderExpression" />

@@ -56,7 +56,7 @@
     <property role="34LRSv" value="boolean" />
     <property role="3GE5qa" value="bool" />
     <property role="EcuMT" value="7425695345928349207" />
-    <property role="R4oN_" value="Represents the truth values of logic and Boolean algebra" />
+    <property role="R4oN_" value="a type for truth values of logic and Boolean algebra" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
     <node concept="PrWs8" id="35CkgbLkSIs" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
@@ -68,7 +68,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="bool" />
     <property role="EcuMT" value="7425695345928358742" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base literal for booleans" />
     <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="PrimitiveLiteral" />
   </node>
   <node concept="1TIwiD" id="6sdnDbSlcHp">
@@ -76,7 +76,7 @@
     <property role="34LRSv" value="true" />
     <property role="3GE5qa" value="bool" />
     <property role="EcuMT" value="7425695345928358745" />
-    <property role="R4oN_" value="true literal" />
+    <property role="R4oN_" value="a true literal" />
     <ref role="1TJDcQ" node="6sdnDbSlcHm" resolve="BooleanLiteral" />
     <node concept="PrWs8" id="4OgAv3N4VpX" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
@@ -87,7 +87,7 @@
     <property role="34LRSv" value="false" />
     <property role="3GE5qa" value="bool" />
     <property role="EcuMT" value="7425695345928358774" />
-    <property role="R4oN_" value="false literal" />
+    <property role="R4oN_" value="a false literal" />
     <ref role="1TJDcQ" node="6sdnDbSlcHm" resolve="BooleanLiteral" />
     <node concept="PrWs8" id="4OgAv3N4Vq0" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
@@ -99,7 +99,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="numeric" />
     <property role="EcuMT" value="5115872837157054168" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base type for numeric types" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
     <node concept="PrWs8" id="60Qa1k_vshl" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
@@ -110,7 +110,7 @@
     <property role="34LRSv" value="int" />
     <property role="3GE5qa" value="numeric" />
     <property role="EcuMT" value="5115872837157054169" />
-    <property role="R4oN_" value="numeric type corresponding to number[-inf|inf]{0}" />
+    <property role="R4oN_" value="a numeric type corresponding to number[-inf|inf]{0}" />
     <ref role="1TJDcQ" node="4rZeNQ6Oero" resolve="NumericType" />
   </node>
   <node concept="1TIwiD" id="4rZeNQ6Oerq">
@@ -136,7 +136,7 @@
     <property role="TrG5h" value="RealType" />
     <property role="34LRSv" value="real" />
     <property role="EcuMT" value="5115872837157054284" />
-    <property role="R4oN_" value="numeric type corresponding to number[-inf|inf]{9}" />
+    <property role="R4oN_" value="a numeric type corresponding to number[-inf|inf]{9}" />
     <ref role="1TJDcQ" node="4rZeNQ6Oero" resolve="NumericType" />
   </node>
   <node concept="1TIwiD" id="4rZeNQ6OYR7">
@@ -144,7 +144,7 @@
     <property role="34LRSv" value="string" />
     <property role="3GE5qa" value="string" />
     <property role="EcuMT" value="5115872837157252551" />
-    <property role="R4oN_" value="A sequence of characters" />
+    <property role="R4oN_" value="a sequence of characters type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
     <node concept="PrWs8" id="60Qa1k_vswP" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
@@ -155,7 +155,7 @@
     <property role="TrG5h" value="StringLiteral" />
     <property role="34LRSv" value="&quot;" />
     <property role="EcuMT" value="5115872837157252552" />
-    <property role="R4oN_" value="string literal" />
+    <property role="R4oN_" value="a string literal" />
     <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="PrimitiveLiteral" />
     <node concept="1TJgyi" id="4rZeNQ6OYRb" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -175,7 +175,7 @@
     <property role="EcuMT" value="1330041117646892901" />
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="NumberRangeSpec" />
-    <property role="R4oN_" value="specifies a number's range" />
+    <property role="R4oN_" value="specify a number's range" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="19PglA20qXJ" role="1TKVEl">
       <property role="IQ2nx" value="1330041117646892911" />
@@ -193,7 +193,7 @@
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="NumberType" />
     <property role="34LRSv" value="number" />
-    <property role="R4oN_" value="A number with an optional precision and range" />
+    <property role="R4oN_" value="a number type with an optional precision and range" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
     <node concept="PrWs8" id="60Qa1k_nI4f" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
@@ -215,7 +215,7 @@
     <property role="EcuMT" value="1330041117646892924" />
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="NumberPrecSpec" />
-    <property role="R4oN_" value="specification of number's precision (digits behind dot)" />
+    <property role="R4oN_" value="a specification of a number's precision (digits behind dot)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="19PglA20qY6" role="1TKVEl">
       <property role="IQ2nx" value="1330041117646892934" />
@@ -259,7 +259,7 @@
     <property role="TrG5h" value="RoundingMode" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base concept for rounding modes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7DTWJ$8khf9">
@@ -267,7 +267,7 @@
     <property role="3GE5qa" value="numeric.number.precision" />
     <property role="TrG5h" value="TruncateRoundingMode" />
     <property role="34LRSv" value="truncate" />
-    <property role="R4oN_" value="truncate" />
+    <property role="R4oN_" value="chop off the decimal portion" />
     <ref role="1TJDcQ" node="7DTWJ$8kg8g" resolve="RoundingMode" />
   </node>
   <node concept="1TIwiD" id="7DTWJ$8nSWK">
@@ -291,7 +291,7 @@
     <property role="3GE5qa" value="numeric.number.limit" />
     <property role="TrG5h" value="LimitExpression" />
     <property role="34LRSv" value="limit" />
-    <property role="R4oN_" value="limits value to the bounds given by the specified numeric type" />
+    <property role="R4oN_" value="limit a value to the bounds given by the specified numeric type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="4qVjx3kqTOO" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -316,7 +316,7 @@
     <property role="TrG5h" value="StringLengthTarget" />
     <property role="34LRSv" value="length" />
     <property role="3GE5qa" value="string" />
-    <property role="R4oN_" value="length of a string" />
+    <property role="R4oN_" value="get the length of the string" />
     <ref role="1TJDcQ" node="5cK3QOdYQ7D" resolve="AbstractStringDotTarget" />
   </node>
   <node concept="1TIwiD" id="5cK3QOdYQ7D">
@@ -325,7 +325,7 @@
     <property role="TrG5h" value="AbstractStringDotTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base operation for string operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5cK3QOe1K5t" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -336,7 +336,7 @@
     <property role="TrG5h" value="StringContainsTarget" />
     <property role="34LRSv" value="contains" />
     <property role="3GE5qa" value="string" />
-    <property role="R4oN_" value="check if string contains substring" />
+    <property role="R4oN_" value="check if the string contains a substring" />
     <ref role="1TJDcQ" node="5cK3QOdYQ7D" resolve="AbstractStringDotTarget" />
     <node concept="1TJgyj" id="IMhG9rs$rO" role="1TKVEi">
       <property role="IQ2ns" value="842813880843519732" />
@@ -351,7 +351,7 @@
     <property role="3GE5qa" value="string.interpol" />
     <property role="TrG5h" value="StringInterpolationExpr" />
     <property role="34LRSv" value="'''" />
-    <property role="R4oN_" value="string with embeddable $(expressions)" />
+    <property role="R4oN_" value="a string with embeddable $(expressions)" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="4qVjx3kqZad" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -372,7 +372,7 @@
     <property role="3GE5qa" value="string.interpol" />
     <property role="TrG5h" value="InterpolExprWord" />
     <property role="34LRSv" value="$(" />
-    <property role="R4oN_" value="embeds an expression into an interpolated string" />
+    <property role="R4oN_" value="embed an expression into an interpolated string" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7cphKbL6izz" role="1TKVEi">
       <property role="IQ2ns" value="8293738266739943651" />
@@ -393,7 +393,7 @@
     <property role="TrG5h" value="StringStartsWithTarget" />
     <property role="34LRSv" value="startsWith" />
     <property role="3GE5qa" value="string" />
-    <property role="R4oN_" value="starts with" />
+    <property role="R4oN_" value="check that the string starts with an expression" />
     <ref role="1TJDcQ" node="5cK3QOdYQ7D" resolve="AbstractStringDotTarget" />
     <node concept="1TJgyj" id="56r2aFONcVE" role="1TKVEi">
       <property role="IQ2ns" value="842813880843519732" />
@@ -408,7 +408,7 @@
     <property role="3GE5qa" value="numeric.number.limit" />
     <property role="TrG5h" value="BoundsExpression" />
     <property role="34LRSv" value="bounds" />
-    <property role="R4oN_" value="limit a number with min/max bounds" />
+    <property role="R4oN_" value="limit a number within min/max bounds" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4eVSC65JA4Q" role="1TKVEi">
       <property role="IQ2ns" value="4723261570619513266" />
@@ -441,7 +441,8 @@
   <node concept="1TIwiD" id="4399ITS_dMM">
     <property role="EcuMT" value="4668305294413323442" />
     <property role="TrG5h" value="ToleranceExpr" />
-    <property role="34LRSv" value="tolerance" />
+    <property role="34LRSv" value="±" />
+    <property role="R4oN_" value="a tolerance" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4399ITS_ea3" role="1TKVEi">
       <property role="IQ2ns" value="4668305294413324931" />
@@ -463,7 +464,7 @@
     <property role="3GE5qa" value="numeric.number.precision" />
     <property role="TrG5h" value="RoundHalfUpRoundingMode" />
     <property role="34LRSv" value="round half up" />
-    <property role="R4oN_" value="mathematical rounding mode" />
+    <property role="R4oN_" value="a mathematical rounding mode" />
     <ref role="1TJDcQ" node="7DTWJ$8kg8g" resolve="RoundingMode" />
   </node>
   <node concept="1TIwiD" id="5bvGQanjMKN">
@@ -471,7 +472,7 @@
     <property role="TrG5h" value="StringEndsWithTarget" />
     <property role="34LRSv" value="endsWith" />
     <property role="3GE5qa" value="string" />
-    <property role="R4oN_" value="ends with" />
+    <property role="R4oN_" value="check if the string ends with an expression" />
     <ref role="1TJDcQ" node="5cK3QOdYQ7D" resolve="AbstractStringDotTarget" />
     <node concept="1TJgyj" id="5bvGQanjMKP" role="1TKVEi">
       <property role="IQ2ns" value="5971688866943282229" />

@@ -1,2 +1,0 @@
-# To override values defined in this file create projectlibraries.overrides.properties and put overridden values there.
-mbeddr.plattform=${mbeddr.github.core.home}/code/languages

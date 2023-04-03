@@ -4,14 +4,13 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
-
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.175.cc60dc8'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.7.288.4ea765f'
     }
 }
 
@@ -21,32 +20,27 @@ plugins {
     id 'co.riiid.gradle' version '0.4.2'
 }
 
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-def jdk_home
+ext.dependencyRepositories = [
+    'https://artifacts.itemis.cloud/repository/maven-mps/'
+]
 
-if (ext.has('java11_home')) {
-    jdk_home = ext.get('java11_home')
-} else if (System.getenv('JB_JAVA11_HOME') != null) {
-    jdk_home = System.getenv('JB_JAVA11_HOME')
-} else {
-    def expected = JavaVersion.VERSION_11
-    if (JavaVersion.current() != expected) {
-        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
-                + "  * Use project property java11_home to point to the Java 11 JDK.\n"
-                + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
-                + "  * Run Gradle using Java 11")
+repositories {
+    // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
+    // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+        }
     }
-    jdk_home = System.getProperty('java.home')
+    mavenCentral()
 }
 
-// Check JDK location
-if (!new File(jdk_home, "lib").exists()) {
-    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
+apply plugin: 'download-jbr'
+
+// configure jbr download
+downloadJbr {
+    jbrVersion = '11_0_11-b1341.60'
 }
-
-logger.info 'Using JDK at {}', jdk_home
-
-ext.jdk_home = jdk_home
 
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
@@ -56,14 +50,13 @@ if (project.hasProperty("forceCI")) {
     ext.ciBuild = project.hasProperty("teamcity")
 }
 
-
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 def major = "2021"
 def minor = "1"
 
 // Dependency versions
-ext.mpsVersion = '2021.1.1'
+ext.mpsVersion = '2021.1.4'
 
 def mbeddrVersion = "2021.1+"
 
@@ -112,14 +105,10 @@ if (!project.hasProperty("mbeddrVersion")) {
 }
 
 
-ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+ext.releaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
+ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots'
 ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
 
-ext.dependencyRepositories = [
-    'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-    'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
-]
 
 // 'artifacts' is used in the generated ant scripts as build output directory
 ext.artifactsDir = new File(buildDir, 'artifacts')
@@ -145,21 +134,6 @@ dependencies {
     pcollections 'org.pcollections:pcollections:3.1.4'
 }
 
-repositories {
-    mavenLocal()
-    for (repoUrl in project.dependencyRepositories) {
-        maven {
-            url repoUrl
-            if (project.hasProperty('nexusUsername')) {
-                credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
-                }
-            }
-        }
-    }
-    mavenCentral()
-}
 
 task resolveMps(type: Sync) {
     dependsOn configurations.mps
@@ -193,7 +167,7 @@ task resolvePcollections(type: Sync) {
     }
 }
 
-task resolveDependencies(dependsOn: [resolveLanguageLibs, resolvePcollections])
+task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs, resolvePcollections])
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
@@ -207,15 +181,14 @@ if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
     defaultScriptArgs.put('mps.ant.log', gradle.startParameter.logLevel.toString().toLowerCase())
 }
 
-def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
-        project.files("$ext.jdk_home/lib/tools.jar")
-
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
 ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
-ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
-ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = project.configurations.junitAnt.fileCollection { true }
+afterEvaluate {
+    project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
+}
 
-task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveDependencies]) {
+task buildAllScripts(type: BuildLanguages, dependsOn: resolveDependencies) {
     script "$buildDir/scripts/build-allScripts.xml"
 }
 
@@ -293,29 +266,27 @@ static def addDependency(Object pom, Configuration config) {
 publishing {
     repositories {
         maven {
-            url project.publishingRepository
-            if (project.hasProperty('nexusUsername')) {
+            url = project.publishingRepository
+            if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
                 credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
+                    username = project.findProperty("artifacts.itemis.cloud.user")
+                    password = project.findProperty("artifacts.itemis.cloud.pw")
                 }
             }
         }
-    }
-    repositories {
-        if(currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
-                maven {
-                    name = "GitHubPackages"
-                    url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")
-                    if(project.hasProperty("gpr.token")) {
-                        credentials {
-                            username = project.findProperty("gpr.user")
-                            password = project.findProperty("gpr.token")
-                        }
+        if (currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")
+                if (project.hasProperty("gpr.token")) {
+                    credentials {
+                        username = project.findProperty("gpr.user")
+                        password = project.findProperty("gpr.token")
                     }
                 }
             }
         }
+    }
 
     publications {
         openSource(MavenPublication) {
@@ -391,21 +362,6 @@ publishing {
             addDependency(pom, 'org.iets3.core.expr.datetime', 'datetime-runtime', project.version)
         }
     }
-}
-
-
-task generateLibrariesXml(type: GenerateLibrariesXml) {
-    dependsOn resolveDependencies
-    description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
-    defaults rootProject.file('projectlibraries.properties')
-    overrides rootProject.file('projectlibraries.overrides.properties')
-    destination file('code/languages/org.iets3.opensource/.mps/libraries.xml')
-}
-
-task setup {
-    dependsOn generateLibrariesXml
-    dependsOn resolveDependencies
-    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
 defaultTasks 'buildLanguages'

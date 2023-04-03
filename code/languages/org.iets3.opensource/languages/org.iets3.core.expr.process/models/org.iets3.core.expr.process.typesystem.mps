@@ -402,7 +402,7 @@
         <node concept="3clFbS" id="4IV0h47EbEl" role="3clFbx">
           <node concept="2MkqsV" id="4IV0h47EjUH" role="3cqZAp">
             <node concept="Xl_RD" id="4IV0h47EjUT" role="2MkJ7o">
-              <property role="Xl_RC" value="party or collectio&lt;party&gt; required" />
+              <property role="Xl_RC" value="party or collection&lt;party&gt; required" />
             </node>
             <node concept="2OqwBi" id="4IV0h47Ek4t" role="1urrMF">
               <node concept="1YBJjd" id="4IV0h47EjVI" role="2Oq$k0">
