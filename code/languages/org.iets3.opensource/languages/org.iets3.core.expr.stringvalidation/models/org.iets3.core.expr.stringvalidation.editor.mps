@@ -10,6 +10,7 @@
   <imports>
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" />
     <import index="3r88" ref="r:0561db97-8a79-45b6-97f8-a5fd9b986b44(org.iets3.core.expr.stringvalidation.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -168,10 +169,18 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="3dTPcTThWRr" role="3EZMnx">
-        <property role="3F0ifm" value="|" />
-        <node concept="11L4FC" id="3dTPcTTiuK9" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+      <node concept="gc7cB" id="68WEpgCMwU8" role="3EZMnx">
+        <node concept="3VJUX4" id="68WEpgCMwUb" role="3YsKMw">
+          <node concept="3clFbS" id="68WEpgCMwUe" role="2VODD2">
+            <node concept="3clFbF" id="68WEpgCMwZw" role="3cqZAp">
+              <node concept="2ShNRf" id="68WEpgCMwZu" role="3clFbG">
+                <node concept="1pGfFk" id="68WEpgCMyVZ" role="2ShVmc">
+                  <ref role="37wK5l" to="m999:1F0U9H74l9q" resolve="EndCell" />
+                  <node concept="pncrf" id="68WEpgCMyZg" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
