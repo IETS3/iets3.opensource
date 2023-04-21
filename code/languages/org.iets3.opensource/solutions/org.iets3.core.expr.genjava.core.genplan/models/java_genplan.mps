@@ -49,7 +49,7 @@
     </node>
     <node concept="2VgMA1" id="1Trztl4NY$f" role="2VgMA7">
       <node concept="3ps74r" id="1Trztl4NY$t" role="3ps6aC">
-        <property role="TrG5h" value="synch1" />
+        <property role="TrG5h" value="sync1" />
       </node>
     </node>
     <node concept="2VgMA2" id="1Trztl4NY$H" role="2VgMA7">
@@ -64,7 +64,7 @@
     </node>
     <node concept="2VgMA1" id="1Trztl4NY__" role="2VgMA7">
       <node concept="3ps74r" id="1Trztl4NY_Q" role="3ps6aC">
-        <property role="TrG5h" value="synch2" />
+        <property role="TrG5h" value="sync2" />
       </node>
     </node>
     <node concept="2VgMA2" id="1Trztl4NYAS" role="2VgMA7">
