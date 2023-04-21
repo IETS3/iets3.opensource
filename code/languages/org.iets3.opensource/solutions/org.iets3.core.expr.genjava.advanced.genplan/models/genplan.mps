@@ -40,6 +40,10 @@
       </node>
     </node>
     <node concept="2VgMA2" id="7bZFIimhGaU" role="2VgMA7">
+      <node concept="2V$Bhx" id="peqCRp_vLm" role="1t_9vn">
+        <property role="2V$B1T" value="f9bb00ab-1f7e-40ab-9ec0-b11e02d84d0f" />
+        <property role="2V$B1Q" value="org.iets3.core.expr.genjava.stringvalidation" />
+      </node>
       <node concept="2V$Bhx" id="DHMrP91qoC" role="1t_9vn">
         <property role="2V$B1T" value="e75207bb-7b13-40bd-b80b-c8fe625c4ee2" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.tests" />
@@ -74,10 +78,6 @@
       <node concept="2V$Bhx" id="5LerK4rlVSC" role="1t_9vn">
         <property role="2V$B1T" value="752cf1d3-84d1-4f2b-bbf5-4ef076a62ec7" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.messages" />
-      </node>
-      <node concept="2V$Bhx" id="Tm7SWq5JtX" role="1t_9vn">
-        <property role="2V$B1T" value="f9bb00ab-1f7e-40ab-9ec0-b11e02d84d0f" />
-        <property role="2V$B1Q" value="org.iets3.core.expr.genjava.stringvalidation" />
       </node>
       <node concept="2V$Bhx" id="lH$PuhTIAz" role="1t_9vn">
         <property role="2V$B1T" value="f2abf2a6-552e-4906-ab58-930f9a79aff4" />
