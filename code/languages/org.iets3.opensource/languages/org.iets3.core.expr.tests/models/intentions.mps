@@ -6,6 +6,7 @@
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,6 +24,9 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="grbm" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.text(org.apache.commons/)" />
     <import index="gyfg" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.base(de.q60.mps.libs/)" />
+    <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
   </imports>
@@ -280,6 +284,9 @@
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
+      </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -318,7 +325,7 @@
             <node concept="2Sf5sV" id="ub9nkyPnxH" role="2Oq$k0" />
             <node concept="2qgKlT" id="ub9nkyQaXr" role="2OqNvi">
               <ref role="37wK5l" to="gdgh:ub9nkyQ908" resolve="runManuallyWithUIUpdate" />
-              <node concept="10Nm6u" id="4_qY3E4_j8E" role="37wK5m" />
+              <node concept="1XNTG" id="3PDeYR10N2D" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -425,13 +432,26 @@
     </node>
     <node concept="2Sbjvc" id="ub9nkyPcj7" role="2ZfgGD">
       <node concept="3clFbS" id="ub9nkyPcj8" role="2VODD2">
-        <node concept="3clFbF" id="ub9nkyPdsa" role="3cqZAp">
-          <node concept="2OqwBi" id="ub9nkyPe0i" role="3clFbG">
-            <node concept="2OqwBi" id="ub9nkyPduT" role="2Oq$k0">
-              <node concept="2Sf5sV" id="ub9nkyPds1" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4_qY3E4Dr0U" role="2OqNvi">
+        <node concept="3cpWs8" id="3JvidvJx5cB" role="3cqZAp">
+          <node concept="3cpWsn" id="3JvidvJx5cC" role="3cpWs9">
+            <property role="TrG5h" value="nonEmptyItems" />
+            <node concept="A3Dl8" id="3JvidvJx591" role="1tU5fm">
+              <node concept="3Tqbb2" id="3JvidvJx594" role="A3Ik2">
+                <ref role="ehGHo" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3JvidvJx5cD" role="33vP2m">
+              <node concept="2Sf5sV" id="3JvidvJx5cE" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3JvidvJx5cF" role="2OqNvi">
                 <ref role="37wK5l" to="xk6s:59WscmUTju7" resolve="nonEmptyItems" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="ub9nkyPdsa" role="3cqZAp">
+          <node concept="2OqwBi" id="ub9nkyPe0i" role="3clFbG">
+            <node concept="37vLTw" id="3JvidvJx5cG" role="2Oq$k0">
+              <ref role="3cqZAo" node="3JvidvJx5cC" resolve="nonEmptyItems" />
             </node>
             <node concept="2es0OD" id="ub9nkyPfpg" role="2OqNvi">
               <node concept="1bVj0M" id="ub9nkyPfpi" role="23t8la">
@@ -442,7 +462,7 @@
                         <ref role="3cqZAo" node="ub9nkyPfpk" resolve="it" />
                       </node>
                       <node concept="2qgKlT" id="ub9nkyQb6k" role="2OqNvi">
-                        <ref role="37wK5l" to="gdgh:ub9nkyQ908" resolve="runManuallyWithUIUpdate" />
+                        <ref role="37wK5l" to="gdgh:3R3AIvumrTm" resolve="runManually" />
                         <node concept="1XNTG" id="6$2dS_IVMf6" role="37wK5m" />
                       </node>
                     </node>
@@ -453,6 +473,16 @@
                   <node concept="2jxLKc" id="ub9nkyPfpl" role="1tU5fm" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3JvidvJx4Kd" role="3cqZAp">
+          <node concept="2YIFZM" id="3JvidvJx6cH" role="3clFbG">
+            <ref role="37wK5l" to="gdgh:3JvidvJx5Pp" resolve="updateEditors" />
+            <ref role="1Pybhc" to="gdgh:3JvidvJwDTf" resolve="RunManuallyUtil" />
+            <node concept="1XNTG" id="3JvidvJx6cI" role="37wK5m" />
+            <node concept="37vLTw" id="3JvidvJx6cJ" role="37wK5m">
+              <ref role="3cqZAo" node="3JvidvJx5cC" resolve="nonEmptyItems" />
             </node>
           </node>
         </node>

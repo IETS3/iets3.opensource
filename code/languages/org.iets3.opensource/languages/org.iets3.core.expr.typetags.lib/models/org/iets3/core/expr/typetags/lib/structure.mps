@@ -48,6 +48,7 @@
     <property role="TrG5h" value="ReadDataFromURLExpression" />
     <property role="34LRSv" value="read-from-url" />
     <property role="EcuMT" value="1759375669591499846" />
+    <property role="R4oN_" value="read from an url" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="PrWs8" id="6KxoTHgLvAT" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -64,18 +65,21 @@
     <property role="TrG5h" value="SanitizeExpression" />
     <property role="34LRSv" value="sanitize" />
     <property role="EcuMT" value="7791618349053218919" />
+    <property role="R4oN_" value="sanitize" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
   </node>
   <node concept="1TIwiD" id="sflsE7kWAQ">
     <property role="TrG5h" value="TaintExpression" />
     <property role="34LRSv" value="taint" />
     <property role="EcuMT" value="508719611258325430" />
+    <property role="R4oN_" value="taint" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
   </node>
   <node concept="1TIwiD" id="sflsE7lp9_">
     <property role="TrG5h" value="EffectExpression" />
     <property role="34LRSv" value="effect*" />
     <property role="EcuMT" value="508719611258442341" />
+    <property role="R4oN_" value="an expression that has an effect" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="PrWs8" id="sflsE7lpsT" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -85,6 +89,7 @@
     <property role="TrG5h" value="StorePatientData" />
     <property role="34LRSv" value="db-store" />
     <property role="EcuMT" value="508719611259447856" />
+    <property role="R4oN_" value="store the patient data" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="sflsE7peCL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -114,24 +119,28 @@
     <property role="TrG5h" value="CurrentPatient" />
     <property role="34LRSv" value="cur-patient" />
     <property role="EcuMT" value="508719611259464313" />
+    <property role="R4oN_" value="the current patient" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="sflsE7pjMH">
     <property role="TrG5h" value="CurrentTime" />
     <property role="34LRSv" value="cur-time" />
     <property role="EcuMT" value="508719611259468973" />
+    <property role="R4oN_" value="the current time" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="sflsE7pjNb">
     <property role="TrG5h" value="CurrentDate" />
     <property role="34LRSv" value="cur-date" />
     <property role="EcuMT" value="508719611259469003" />
+    <property role="R4oN_" value="the current date" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="TUBgQ0Fpp8">
     <property role="EcuMT" value="1043318945008686664" />
     <property role="TrG5h" value="EncryptedTag" />
     <property role="34LRSv" value="encrypted" />
+    <property role="R4oN_" value="an encryped tag" />
     <ref role="1TJDcQ" to="w1hl:1RcasK0SmZc" resolve="UnaryTag" />
   </node>
   <node concept="1TIwiD" id="TUBgQ0G6Ye">
@@ -140,6 +149,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="classification" />
+    <property role="R4oN_" value="a base tag for classification levels" />
     <ref role="1TJDcQ" to="w1hl:1WJTL5jv9KN" resolve="NAryTag" />
   </node>
   <node concept="1TIwiD" id="TUBgQ0G6Yf">
@@ -147,6 +157,7 @@
     <property role="TrG5h" value="SecretClassLevel" />
     <property role="34LRSv" value="secret" />
     <property role="3GE5qa" value="classification" />
+    <property role="R4oN_" value="secret classification level" />
     <ref role="1TJDcQ" node="TUBgQ0G6Ye" resolve="ClassificationLevel" />
   </node>
   <node concept="1TIwiD" id="TUBgQ0G6Yg">
@@ -154,6 +165,7 @@
     <property role="TrG5h" value="TopSecretClassLevel" />
     <property role="34LRSv" value="topsecret" />
     <property role="3GE5qa" value="classification" />
+    <property role="R4oN_" value="top secret classification level" />
     <ref role="1TJDcQ" node="TUBgQ0G6Ye" resolve="ClassificationLevel" />
   </node>
   <node concept="1TIwiD" id="TUBgQ0G6Yh">
@@ -161,6 +173,7 @@
     <property role="TrG5h" value="ConfidentialClassLevel" />
     <property role="34LRSv" value="confidential" />
     <property role="3GE5qa" value="classification" />
+    <property role="R4oN_" value="confidential classification level" />
     <ref role="1TJDcQ" node="TUBgQ0G6Ye" resolve="ClassificationLevel" />
   </node>
 </model>

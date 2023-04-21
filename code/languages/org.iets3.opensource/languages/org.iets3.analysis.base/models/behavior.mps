@@ -4,7 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -1332,6 +1332,7 @@
     </node>
     <node concept="13i0hz" id="7QODtLw3SMH" role="13h7CS">
       <property role="TrG5h" value="runSolver" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="7QODtLw3SMI" role="1B3o_S" />
       <node concept="3uibUv" id="7QODtLw3VBg" role="3clF45">
         <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
@@ -1375,6 +1376,7 @@
     </node>
     <node concept="13i0hz" id="3NwcubmnBQ5" role="13h7CS">
       <property role="TrG5h" value="runSolverAsync" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="3NwcubmnBQ6" role="1B3o_S" />
       <node concept="3clFbS" id="3NwcubmnBQ8" role="3clF47">
         <node concept="3clFbF" id="3NwcubmnCHl" role="3cqZAp">

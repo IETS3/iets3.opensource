@@ -4,7 +4,7 @@
   <languages>
     <use id="309e0004-4976-4416-b947-ec02ae4ecef2" name="com.mbeddr.mpsutil.modellisteners" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -86,7 +86,7 @@
     </language>
   </registry>
   <node concept="jA7cl" id="4ptnK4jesjN">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="1M2myG" to="yv47:4ptnK4jbqZj" resolve="BuilderExpression" />
     <node concept="j_Nyg" id="4ptnK4jesjX" role="j$A37">
       <ref role="j_u2Y" to="yv47:4ptnK4jbqZt" resolve="adapted" />

@@ -15,6 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -42,6 +43,7 @@
     <property role="EcuMT" value="6913547888673466377" />
     <property role="TrG5h" value="TraceTargetRef" />
     <property role="3GE5qa" value="result" />
+    <property role="R4oN_" value="a reference to a trace target" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ZLQMNq2awa" role="1TKVEi">
       <property role="IQ2ns" value="6913547888673466378" />
@@ -54,6 +56,7 @@
     <property role="EcuMT" value="6913547888673466380" />
     <property role="TrG5h" value="GenericTraceResult" />
     <property role="3GE5qa" value="result" />
+    <property role="R4oN_" value="an assement result with traces" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="5ZLQMNq2g6O" role="1TKVEi">
       <property role="IQ2ns" value="6913547888673489332" />
@@ -72,6 +75,7 @@
   <node concept="1TIwiD" id="5ZLQMNq2g6R">
     <property role="EcuMT" value="6913547888673489335" />
     <property role="TrG5h" value="GenericTraceQuery" />
+    <property role="R4oN_" value="a generic trace query" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="5ZLQMNq2hPS" role="1TKVEi">
       <property role="IQ2ns" value="6913547888673496440" />
@@ -101,6 +105,7 @@
     <property role="EcuMT" value="3587241503657463099" />
     <property role="TrG5h" value="UntracedElementsQuery" />
     <property role="34LRSv" value="untraced elements" />
+    <property role="R4oN_" value="a query for untraced elements" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="378sigX35lr" role="1TKVEi">
       <property role="IQ2ns" value="3587241503657579867" />
@@ -126,6 +131,7 @@
     <property role="EcuMT" value="3587241503657813626" />
     <property role="3GE5qa" value="result" />
     <property role="TrG5h" value="UntracedResult" />
+    <property role="R4oN_" value="an assement result for untraced nodes" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="378sigX3YpV" role="1TKVEi">
       <property role="IQ2ns" value="3587241503657813627" />

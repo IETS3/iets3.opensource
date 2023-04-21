@@ -2,7 +2,7 @@
 <model ref="r:7a10557a-7040-44a0-b63f-aa6db13b2ace(org.iets3.core.expr.messages.interpreter.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
@@ -230,7 +230,7 @@
             </node>
           </node>
           <node concept="liA8E" id="4AahbtV39TK" role="2OqNvi">
-            <ref role="37wK5l" to="oq0c:4AahbtV2JOQ" resolve="data" />
+            <ref role="37wK5l" to="oq0c:4AahbtV2JOQ" resolve="getData" />
           </node>
         </node>
       </node>
@@ -265,7 +265,7 @@
             </node>
           </node>
           <node concept="liA8E" id="4AahbtV38qA" role="2OqNvi">
-            <ref role="37wK5l" to="oq0c:4AahbtURenE" resolve="source" />
+            <ref role="37wK5l" to="oq0c:4AahbtURenE" resolve="getSource" />
           </node>
         </node>
       </node>
@@ -300,7 +300,7 @@
             </node>
           </node>
           <node concept="liA8E" id="4AahbtV39nd" role="2OqNvi">
-            <ref role="37wK5l" to="oq0c:4AahbtUNo_P" resolve="text" />
+            <ref role="37wK5l" to="oq0c:4AahbtUNo_P" resolve="getText" />
           </node>
         </node>
       </node>

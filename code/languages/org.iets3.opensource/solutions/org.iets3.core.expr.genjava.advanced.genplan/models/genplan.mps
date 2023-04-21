@@ -2,7 +2,7 @@
 <model ref="r:b6940564-70dd-428c-9fbc-f83a23b7043b(org.iets3.core.expr.genjava.advanced.genplan.genplan)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
   </languages>
   <imports />
@@ -74,6 +74,10 @@
       <node concept="2V$Bhx" id="5LerK4rlVSC" role="1t_9vn">
         <property role="2V$B1T" value="752cf1d3-84d1-4f2b-bbf5-4ef076a62ec7" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.messages" />
+      </node>
+      <node concept="2V$Bhx" id="Tm7SWq5JtX" role="1t_9vn">
+        <property role="2V$B1T" value="f9bb00ab-1f7e-40ab-9ec0-b11e02d84d0f" />
+        <property role="2V$B1Q" value="org.iets3.core.expr.genjava.stringvalidation" />
       </node>
       <node concept="2V$Bhx" id="lH$PuhTIAz" role="1t_9vn">
         <property role="2V$B1T" value="f2abf2a6-552e-4906-ab58-930f9a79aff4" />

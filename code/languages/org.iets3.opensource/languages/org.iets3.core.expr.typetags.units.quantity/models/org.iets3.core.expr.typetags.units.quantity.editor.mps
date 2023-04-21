@@ -3,16 +3,16 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="19h7" ref="r:c367b380-739b-4331-a16f-a542455fc0c8(de.itemis.mps.editor.math.editor)" />
+    <import index="u5dy" ref="r:5d3c1e26-8102-4cf4-aae4-75b28fa3d3a6(org.iets3.core.expr.typetags.units.editor)" />
     <import index="a0oj" ref="r:7add344e-59b0-49a5-a0a7-0e0dc1798815(org.iets3.core.expr.typetags.units.quantity.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="u5dy" ref="r:5d3c1e26-8102-4cf4-aae4-75b28fa3d3a6(org.iets3.core.expr.typetags.units.editor)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="b0gq" ref="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" implicit="true" />
   </imports>
@@ -500,8 +500,8 @@
       <node concept="jtDJS" id="3j3yk3guLE3" role="1LiK7o">
         <ref role="1k5W1q" to="u5dy:4M31vJayoGp" resolve="UnitTag" />
         <node concept="1iCGBv" id="3j3yk3guLEf" role="jn6J4">
-          <ref role="1ERwB7" to="u5dy:6iN55ZJbWMT" resolve="deleteUnit" />
           <ref role="1NtTu8" to="a0oj:71Zj$i0ct2e" resolve="quantity" />
+          <ref role="1ERwB7" to="u5dy:6iN55ZJbWMT" resolve="deleteUnit" />
           <node concept="1sVBvm" id="3j3yk3guLEh" role="1sWHZn">
             <node concept="3F0A7n" id="3j3yk3guLEr" role="2wV5jI">
               <property role="1Intyy" value="true" />

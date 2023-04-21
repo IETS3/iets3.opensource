@@ -95,6 +95,7 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -122,6 +123,9 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -206,6 +210,14 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -904,6 +916,37 @@
                           </node>
                         </node>
                       </node>
+                    </node>
+                  </node>
+                  <node concept="Jncv_" id="TcaAhODpaj" role="3cqZAp">
+                    <ref role="JncvD" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
+                    <node concept="37vLTw" id="TcaAhODph1" role="JncvB">
+                      <ref role="3cqZAo" node="2NHHcg2MxT6" resolve="elementSupertype" />
+                    </node>
+                    <node concept="3clFbS" id="TcaAhODpan" role="Jncv$">
+                      <node concept="2MkqsV" id="TcaAhODpHV" role="3cqZAp">
+                        <node concept="1YBJjd" id="TcaAhODrtH" role="1urrMF">
+                          <ref role="1YBMHb" node="5avmkTFlBXd" resolve="re" />
+                        </node>
+                        <node concept="3cpWs3" id="TcaAhOJ8Y$" role="2MkJ7o">
+                          <node concept="2OqwBi" id="TcaAhODq_G" role="3uHU7w">
+                            <node concept="Jnkvi" id="TcaAhODqaP" role="2Oq$k0">
+                              <ref role="1M0zk5" node="TcaAhODpap" resolve="errorType" />
+                            </node>
+                            <node concept="3TrcHB" id="TcaAhODr7d" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpd4:hfSilrU" resolve="errorText" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="TcaAhOJ7h3" role="3uHU7B">
+                            <property role="Xl_RC" value="No common supertype found:" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs6" id="TcaAhODX4a" role="3cqZAp" />
+                    </node>
+                    <node concept="JncvC" id="TcaAhODpap" role="JncvA">
+                      <property role="TrG5h" value="errorType" />
+                      <node concept="2jxLKc" id="TcaAhODpaq" role="1tU5fm" />
                     </node>
                   </node>
                   <node concept="3cpWs8" id="VApoyDzGBW" role="3cqZAp">

@@ -70,7 +70,7 @@
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -126,7 +126,9 @@
                   <node concept="I4A8Y" id="1F1F0IUZBUn" role="2OqNvi" />
                 </node>
                 <node concept="1j9C0f" id="1F1F0IUZBUo" role="2OqNvi">
-                  <ref role="1j9C0d" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
+                  <node concept="chp4Y" id="aofgSPMowD" role="3MHPCF">
+                    <ref role="cht4Q" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
+                  </node>
                 </node>
               </node>
             </node>

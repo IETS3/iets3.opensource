@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -34,6 +35,7 @@
     <property role="EcuMT" value="4448734902938442738" />
     <property role="TrG5h" value="TestAttribute" />
     <property role="34LRSv" value="testattribute" />
+    <property role="R4oN_" value="a test attribute" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3QX5db_yno8" role="PzmwI">
       <ref role="PrY4T" to="w9y2:1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
@@ -43,12 +45,14 @@
     <property role="EcuMT" value="4448734902940615074" />
     <property role="TrG5h" value="TestPortCategoryAccepts" />
     <property role="34LRSv" value="testAcc" />
+    <property role="R4oN_" value="a test port category (accepts)" />
     <ref role="1TJDcQ" to="w9y2:siw10H0or2" resolve="PortCategory" />
   </node>
   <node concept="1TIwiD" id="3QX5db_E9QV">
     <property role="EcuMT" value="4448734902940638651" />
     <property role="TrG5h" value="TestPortType" />
     <property role="34LRSv" value="TestPType" />
+    <property role="R4oN_" value="a test port type" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3QX5db_E9Rb" role="PzmwI">
       <ref role="PrY4T" to="w9y2:6LfBX8YlAdL" resolve="IPortType" />
@@ -58,11 +62,13 @@
     <property role="EcuMT" value="4448734902941668085" />
     <property role="TrG5h" value="TestPortCategoryOffers" />
     <property role="34LRSv" value="testOff" />
+    <property role="R4oN_" value="a test port category (offers)" />
     <ref role="1TJDcQ" to="w9y2:siw10H0or2" resolve="PortCategory" />
   </node>
   <node concept="1TIwiD" id="48ZWgAGwh6D">
     <property role="EcuMT" value="4773799153887154601" />
     <property role="TrG5h" value="TestConnectorType" />
+    <property role="R4oN_" value="a test connector type" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="48ZWgAGwh6E" role="PzmwI">
       <ref role="PrY4T" to="w9y2:4KDeVD8s9RL" resolve="IConnectorType" />
@@ -72,18 +78,21 @@
     <property role="EcuMT" value="8956532715637138334" />
     <property role="TrG5h" value="TestKindB" />
     <property role="34LRSv" value="testKindB" />
+    <property role="R4oN_" value="a test kind for components" />
     <ref role="1TJDcQ" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
   </node>
   <node concept="1TIwiD" id="3QX5db_HNz8">
     <property role="EcuMT" value="4448734902941595848" />
     <property role="TrG5h" value="TestKindA" />
     <property role="34LRSv" value="testKindA" />
+    <property role="R4oN_" value="a test kind for components" />
     <ref role="1TJDcQ" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
   </node>
   <node concept="1TIwiD" id="7LbZKOmT25i">
     <property role="EcuMT" value="8956532715640070482" />
     <property role="TrG5h" value="TestKindC" />
     <property role="34LRSv" value="testKindC" />
+    <property role="R4oN_" value="a test kind for components" />
     <ref role="1TJDcQ" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
   </node>
 </model>

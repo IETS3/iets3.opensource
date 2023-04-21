@@ -2,7 +2,7 @@
 <model ref="r:a61c1d06-4553-4044-9d05-d40e966a3210(org.iets3.core.expr.lambda.interpreter.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
@@ -1339,21 +1339,38 @@
     <node concept="qq9P1" id="$yb$20fCiT" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
-      <node concept="3vetai" id="$yb$20fCjs" role="3vQZUl">
-        <node concept="2ShNRf" id="$yb$20fEoZ" role="3vdyny">
-          <node concept="1pGfFk" id="$yb$20fEwf" role="2ShVmc">
-            <ref role="37wK5l" to="sxpq:$yb$20fE3_" resolve="LambdaValue" />
-            <node concept="2OqwBi" id="$yb$20fEyA" role="37wK5m">
-              <node concept="oxGPV" id="$yb$20fEwv" role="2Oq$k0" />
-              <node concept="2qgKlT" id="$yb$20fEBz" role="2OqNvi">
-                <ref role="37wK5l" to="5s8v:$yb$20fCkw" resolve="makeExplicitLambda" />
-                <node concept="oxNuS" id="6ovbtsiW1rd" role="37wK5m" />
+      <node concept="3dA_Gj" id="$o50RKwSys" role="3vQZUl">
+        <node concept="9aQIb" id="$o50RKwSyu" role="3vcmbn">
+          <node concept="3clFbS" id="$o50RKwSyw" role="9aQI4">
+            <node concept="3cpWs8" id="$o50RKyA3A" role="3cqZAp">
+              <node concept="3cpWsn" id="$o50RKyA3D" role="3cpWs9">
+                <property role="TrG5h" value="explicitLambda" />
+                <node concept="3Tqbb2" id="$o50RKyA3$" role="1tU5fm">
+                  <ref role="ehGHo" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
+                </node>
+                <node concept="2OqwBi" id="$yb$20fEyA" role="33vP2m">
+                  <node concept="oxGPV" id="$yb$20fEwv" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="$yb$20fEBz" role="2OqNvi">
+                    <ref role="37wK5l" to="5s8v:$yb$20fCkw" resolve="makeExplicitLambda" />
+                    <node concept="oxNuS" id="6ovbtsiW1rd" role="37wK5m" />
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="oxNuS" id="22hm_0zJz3I" role="37wK5m" />
-            <node concept="3fckFw" id="4_qY3E6GDzf" role="37wK5m" />
-            <node concept="3clFbT" id="5ya_dKpuVVq" role="37wK5m">
-              <property role="3clFbU" value="false" />
+            <node concept="3cpWs6" id="$o50RKwSIW" role="3cqZAp">
+              <node concept="2ShNRf" id="$yb$20fEoZ" role="3cqZAk">
+                <node concept="1pGfFk" id="$yb$20fEwf" role="2ShVmc">
+                  <ref role="37wK5l" to="sxpq:$yb$20fE3_" resolve="LambdaValue" />
+                  <node concept="37vLTw" id="$o50RKyACe" role="37wK5m">
+                    <ref role="3cqZAo" node="$o50RKyA3D" resolve="explicitLambda" />
+                  </node>
+                  <node concept="oxNuS" id="22hm_0zJz3I" role="37wK5m" />
+                  <node concept="3fckFw" id="4_qY3E6GDzf" role="37wK5m" />
+                  <node concept="3clFbT" id="5ya_dKpuVVq" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
