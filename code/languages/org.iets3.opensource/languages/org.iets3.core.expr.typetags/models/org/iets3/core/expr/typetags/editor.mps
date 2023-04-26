@@ -77,6 +77,7 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1240253180846" name="jetbrains.mps.lang.editor.structure.IndentLayoutNoWrapClassItem" flags="ln" index="34QqEe" />
       <concept id="1838685759388685703" name="jetbrains.mps.lang.editor.structure.TransformationFeature_DescriptionText" flags="ng" index="3cqGtN">
         <child id="1838685759388685704" name="query" index="3cqGtW" />
       </concept>
@@ -352,6 +353,9 @@
     <node concept="1WcQYu" id="1xEzHAkxZ5T" role="2wV5jI">
       <node concept="2ElW$n" id="1xEzHAkxZ5V" role="2El2Yn" />
       <node concept="3EZMnI" id="1xEzHAktP36" role="1LiK7o">
+        <node concept="34QqEe" id="1ENvKy8atQ4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
         <node concept="l2Vlx" id="1xEzHAktP37" role="2iSdaV" />
         <node concept="1kIj98" id="1xEzHAktRLI" role="3EZMnx">
           <node concept="3F1sOY" id="1xEzHAktRLY" role="1kIj9b">
@@ -632,6 +636,9 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7eOyx9r3D2u" role="2iSdaV" />
+      <node concept="34QqEe" id="4Lmaxwvrdv7" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
   <node concept="3INDKC" id="3cUcim$6q3Z">
