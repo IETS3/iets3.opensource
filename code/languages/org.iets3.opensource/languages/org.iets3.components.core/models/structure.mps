@@ -1422,6 +1422,9 @@
     <node concept="PrWs8" id="2QRlyxOgRVg" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="2_GRxqhsLR7" role="PzmwI">
+      <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="77HYM7HnhfK">
     <property role="EcuMT" value="8209493818901074928" />
