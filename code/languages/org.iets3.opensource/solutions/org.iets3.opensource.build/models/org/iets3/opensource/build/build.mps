@@ -9919,6 +9919,11 @@
         <node concept="1E0d5M" id="5BQDrmkjsbB" role="1E1XAP">
           <ref role="1E0d5P" node="4lCUG7OqixA" resolve="org.iets3.core.expr.stringvalidation.runtime" />
         </node>
+        <node concept="1SiIV0" id="5WMalqdcxCB" role="3bR37C">
+          <node concept="Rbm2T" id="5WMalqdcxCC" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5Y0kZK1N637" role="2G$12L">
         <property role="BnDLt" value="true" />
