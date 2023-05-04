@@ -111,6 +111,9 @@
     <node concept="PrWs8" id="60Qa1k_uzVZ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
+    <node concept="PrWs8" id="3Rh3xXbd9Oc" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6xvNSEj6BMb" resolve="IComplexTypeSupportsEquals" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUinsw">
     <property role="TrG5h" value="ListType" />
