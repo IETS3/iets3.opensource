@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5d67e954-7960-4214-97d1-8f5d3823a964(org.iets3.core.expr.genjava.simpleTypes.rt.rt)">
+<model ref="r:5d67e954-7960-4214-97d1-8f5d3823a964(org.iets3.core.expr.collections.rt.rt)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -120,6 +121,9 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1171903916106" name="jetbrains.mps.baseLanguage.structure.UpperBoundType" flags="in" index="3qUE_q">
+        <child id="1171903916107" name="bound" index="3qUE_r" />
+      </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
@@ -155,6 +159,103 @@
   </registry>
   <node concept="312cEu" id="4lRNjFWGzDc">
     <property role="TrG5h" value="CollectionHelper" />
+    <node concept="2YIFZL" id="3A3G7ASlgFu" role="jymVt">
+      <property role="TrG5h" value="flatten" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3A3G7ASlgFx" role="3clF47">
+        <node concept="3cpWs8" id="3A3G7ASlXHG" role="3cqZAp">
+          <node concept="3cpWsn" id="3A3G7ASlXHH" role="3cpWs9">
+            <property role="TrG5h" value="r" />
+            <node concept="3uibUv" id="3A3G7ASlXHE" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
+              <node concept="3uibUv" id="3A3G7ASlXIj" role="11_B2D">
+                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="3A3G7ASq3$X" role="33vP2m">
+              <node concept="1pGfFk" id="3A3G7ASq492" role="2ShVmc">
+                <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                <node concept="3uibUv" id="3A3G7ASq58F" role="1pMfVU">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="3A3G7ASlX$O" role="3cqZAp">
+          <node concept="2GrKxI" id="3A3G7ASlX$P" role="2Gsz3X">
+            <property role="TrG5h" value="coll" />
+          </node>
+          <node concept="37vLTw" id="3A3G7ASlXBp" role="2GsD0m">
+            <ref role="3cqZAo" node="3A3G7ASlgKy" resolve="vec" />
+          </node>
+          <node concept="3clFbS" id="3A3G7ASlX$R" role="2LFqv$">
+            <node concept="3clFbF" id="3A3G7ASq68Z" role="3cqZAp">
+              <node concept="2OqwBi" id="3A3G7ASq6U9" role="3clFbG">
+                <node concept="37vLTw" id="3A3G7ASq68X" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3A3G7ASlXHH" resolve="r" />
+                </node>
+                <node concept="liA8E" id="3A3G7ASq8SI" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
+                  <node concept="2GrUjf" id="3A3G7ASq9gy" role="37wK5m">
+                    <ref role="2Gs0qQ" node="3A3G7ASlX$P" resolve="coll" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3A3G7ASqaYH" role="3cqZAp">
+          <node concept="3cpWsn" id="3A3G7ASqaYI" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="3A3G7ASqaYF" role="1tU5fm">
+              <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
+              <node concept="3uibUv" id="3A3G7ASqbpU" role="11_B2D">
+                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="3A3G7ASqbXy" role="33vP2m">
+              <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+              <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
+              <node concept="37vLTw" id="3A3G7ASqc7S" role="37wK5m">
+                <ref role="3cqZAo" node="3A3G7ASlXHH" resolve="r" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2VjxpUAJMJm" role="3cqZAp" />
+        <node concept="3cpWs6" id="3A3G7ASm7ln" role="3cqZAp">
+          <node concept="37vLTw" id="3A3G7ASqcqg" role="3cqZAk">
+            <ref role="3cqZAo" node="3A3G7ASqaYI" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3A3G7ASlgAr" role="1B3o_S" />
+      <node concept="3uibUv" id="3A3G7ASlgFl" role="3clF45">
+        <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
+        <node concept="3uibUv" id="3A3G7ASlXAH" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3A3G7ASlgKy" role="3clF46">
+        <property role="TrG5h" value="vec" />
+        <node concept="3uibUv" id="3A3G7ASlX$8" role="1tU5fm">
+          <ref role="3uigEE" to="j10v:~PCollection" resolve="PCollection" />
+          <node concept="3qUE_q" id="$9KWJq6Bh3" role="11_B2D">
+            <node concept="3uibUv" id="3A3G7ASm3IQ" role="3qUE_r">
+              <ref role="3uigEE" to="j10v:~PCollection" resolve="PCollection" />
+              <node concept="3qUE_q" id="$9KWJq5KyH" role="11_B2D">
+                <node concept="3uibUv" id="$9KWJq5KQR" role="3qUE_r">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="4lRNjFWGzDY" role="jymVt" />
     <node concept="2YIFZL" id="4lRNjFWSiFT" role="jymVt">
       <property role="TrG5h" value="min" />

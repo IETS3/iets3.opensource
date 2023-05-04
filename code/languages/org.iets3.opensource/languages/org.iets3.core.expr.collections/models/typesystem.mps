@@ -109,6 +109,9 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -259,6 +262,14 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -470,6 +481,37 @@
                             </node>
                           </node>
                         </node>
+                      </node>
+                    </node>
+                    <node concept="Jncv_" id="TcaAhODpaj" role="3cqZAp">
+                      <ref role="JncvD" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
+                      <node concept="37vLTw" id="TcaAhODph1" role="JncvB">
+                        <ref role="3cqZAo" node="7rdMSLlpzv2" resolve="elementSupertype" />
+                      </node>
+                      <node concept="3clFbS" id="TcaAhODpan" role="Jncv$">
+                        <node concept="2MkqsV" id="TcaAhODpHV" role="3cqZAp">
+                          <node concept="1YBJjd" id="TcaAhODrtH" role="1urrMF">
+                            <ref role="1YBMHb" node="6zmBjqUipC$" resolve="literal" />
+                          </node>
+                          <node concept="3cpWs3" id="TcaAhOJ3xK" role="2MkJ7o">
+                            <node concept="Xl_RD" id="TcaAhOJ4bz" role="3uHU7B">
+                              <property role="Xl_RC" value="No common supertype found:" />
+                            </node>
+                            <node concept="2OqwBi" id="TcaAhODq_G" role="3uHU7w">
+                              <node concept="Jnkvi" id="TcaAhODqaP" role="2Oq$k0">
+                                <ref role="1M0zk5" node="TcaAhODpap" resolve="errorType" />
+                              </node>
+                              <node concept="3TrcHB" id="TcaAhODr7d" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpd4:hfSilrU" resolve="errorText" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWs6" id="TcaAhOLGsy" role="3cqZAp" />
+                      </node>
+                      <node concept="JncvC" id="TcaAhODpap" role="JncvA">
+                        <property role="TrG5h" value="errorType" />
+                        <node concept="2jxLKc" id="TcaAhODpaq" role="1tU5fm" />
                       </node>
                     </node>
                     <node concept="3clFbJ" id="7rdMSLlpzva" role="3cqZAp">
@@ -1945,6 +1987,37 @@
                           </node>
                         </node>
                         <node concept="3Tqbb2" id="2ufoZQJ05rB" role="1tU5fm" />
+                      </node>
+                    </node>
+                    <node concept="Jncv_" id="TcaAhOIN_j" role="3cqZAp">
+                      <ref role="JncvD" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
+                      <node concept="37vLTw" id="TcaAhOIN_k" role="JncvB">
+                        <ref role="3cqZAo" node="2ufoZQJ05rA" resolve="elementSupertype" />
+                      </node>
+                      <node concept="3clFbS" id="TcaAhOIN_l" role="Jncv$">
+                        <node concept="2MkqsV" id="TcaAhOIN_m" role="3cqZAp">
+                          <node concept="1YBJjd" id="TcaAhOIN_n" role="1urrMF">
+                            <ref role="1YBMHb" node="7GwCuf2WbPx" resolve="literal" />
+                          </node>
+                          <node concept="3cpWs3" id="TcaAhOJ6Rx" role="2MkJ7o">
+                            <node concept="2OqwBi" id="TcaAhOIN_o" role="3uHU7w">
+                              <node concept="Jnkvi" id="TcaAhOIN_p" role="2Oq$k0">
+                                <ref role="1M0zk5" node="TcaAhOIN_s" resolve="errorType" />
+                              </node>
+                              <node concept="3TrcHB" id="TcaAhOIN_q" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpd4:hfSilrU" resolve="errorText" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="TcaAhOJ7h3" role="3uHU7B">
+                              <property role="Xl_RC" value="No common supertype found:" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWs6" id="TcaAhOIN_r" role="3cqZAp" />
+                      </node>
+                      <node concept="JncvC" id="TcaAhOIN_s" role="JncvA">
+                        <property role="TrG5h" value="errorType" />
+                        <node concept="2jxLKc" id="TcaAhOIN_t" role="1tU5fm" />
                       </node>
                     </node>
                     <node concept="3clFbJ" id="2ufoZQIYH0s" role="3cqZAp">
