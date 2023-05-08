@@ -55,6 +55,9 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1214317859050" name="jetbrains.mps.lang.editor.structure.LayoutConstraintStyleClassItem" flags="ln" index="2UZ17K">
+        <property id="1214317859051" name="layoutConstraint" index="2UZ17L" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
         <child id="1223387335081" name="query" index="3n$kyP" />
@@ -1133,6 +1136,12 @@
         <node concept="11L4FC" id="19PglA20rbi" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="2UZ17K" id="4Lxc_bimzPn" role="3F10Kt">
+          <property role="2UZ17L" value="g$1RmbY/noflow" />
+        </node>
+      </node>
+      <node concept="34QqEe" id="4Lxc_bir6kT" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>

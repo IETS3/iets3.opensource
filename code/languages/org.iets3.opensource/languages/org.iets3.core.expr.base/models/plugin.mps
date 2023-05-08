@@ -44,11 +44,11 @@
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="ppzb" ref="r:5db517a0-f62d-4841-a421-11bb7269799d(org.iets3.core.expr.base.shared.runtime)" />
+    <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
-    <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -13931,6 +13931,76 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="2O$zpZk7gkh" role="1B3o_S" />
+  </node>
+  <node concept="3HP615" id="34s7_UnUH2A">
+    <property role="3GE5qa" value="typesystem" />
+    <property role="TrG5h" value="TypesystemCustomizer" />
+    <node concept="3clFb_" id="34s7_UnUH4e" role="jymVt">
+      <property role="TrG5h" value="checkDuplicateValuesInEnums" />
+      <node concept="10P_77" id="34s7_UnUH4f" role="3clF45" />
+      <node concept="3Tm1VV" id="34s7_UnUH4g" role="1B3o_S" />
+      <node concept="3clFbS" id="34s7_UnUH4h" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="34s7_UnUH2B" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="34s7_UnROPW">
+    <property role="3GE5qa" value="typesystem" />
+    <property role="TrG5h" value="DefaultTypesystemCustomizer" />
+    <node concept="Wx3nA" id="34s7_UnSaT2" role="jymVt">
+      <property role="TrG5h" value="instance" />
+      <node concept="3uibUv" id="34s7_UnSaT5" role="1tU5fm">
+        <ref role="3uigEE" node="34s7_UnROPW" resolve="DefaultTypesystemCustomizer" />
+      </node>
+      <node concept="2ShNRf" id="34s7_UnSaT6" role="33vP2m">
+        <node concept="HV5vD" id="34s7_UnSaT7" role="2ShVmc">
+          <ref role="HV5vE" node="34s7_UnROPW" resolve="DefaultTypesystemCustomizer" />
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="34s7_UnSaT4" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="34s7_UnSajA" role="jymVt" />
+    <node concept="2YIFZL" id="34s7_UnSaA4" role="jymVt">
+      <property role="TrG5h" value="getInstance" />
+      <node concept="3clFbS" id="34s7_UnSaA7" role="3clF47">
+        <node concept="3cpWs6" id="34s7_UnSaGJ" role="3cqZAp">
+          <node concept="37vLTw" id="34s7_UnSaYH" role="3cqZAk">
+            <ref role="3cqZAo" node="34s7_UnSaT2" resolve="instance" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="34s7_UnSap2" role="1B3o_S" />
+      <node concept="3uibUv" id="34s7_UnSay9" role="3clF45">
+        <ref role="3uigEE" node="34s7_UnROPW" resolve="DefaultTypesystemCustomizer" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="34s7_UnSc76" role="jymVt" />
+    <node concept="2tJIrI" id="34s7_UnSc7k" role="jymVt" />
+    <node concept="3Tm1VV" id="34s7_UnROPX" role="1B3o_S" />
+    <node concept="3clFb_" id="34s7_UnScaS" role="jymVt">
+      <property role="TrG5h" value="checkDuplicateValuesInEnums" />
+      <node concept="10P_77" id="34s7_UnScaT" role="3clF45" />
+      <node concept="3Tm1VV" id="34s7_UnScaU" role="1B3o_S" />
+      <node concept="3clFbS" id="34s7_UnScaY" role="3clF47">
+        <node concept="3clFbF" id="34s7_UnSctg" role="3cqZAp">
+          <node concept="3clFbT" id="34s7_UnSctf" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="34s7_UnScaZ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="34s7_UnUHdl" role="EKbjA">
+      <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
+    </node>
+  </node>
+  <node concept="vrV6u" id="3HxoqR_T8F2">
+    <property role="TrG5h" value="typesystemCustomization" />
+    <property role="3GE5qa" value="typesystem" />
+    <node concept="3uibUv" id="3HxoqR_WS1J" role="luc8K">
+      <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
+    </node>
   </node>
 </model>
 
