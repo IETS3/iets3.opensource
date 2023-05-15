@@ -124,6 +124,9 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -241,6 +244,14 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -261,6 +272,9 @@
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -428,6 +442,37 @@
                           </node>
                         </node>
                       </node>
+                    </node>
+                  </node>
+                  <node concept="Jncv_" id="TcaAhODpaj" role="3cqZAp">
+                    <ref role="JncvD" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
+                    <node concept="3clFbS" id="TcaAhODpan" role="Jncv$">
+                      <node concept="2MkqsV" id="TcaAhODpHV" role="3cqZAp">
+                        <node concept="1YBJjd" id="TcaAhODrtH" role="1urrMF">
+                          <ref role="1YBMHb" node="50smQ1V92UJ" resolve="tl" />
+                        </node>
+                        <node concept="3cpWs3" id="TcaAhOIXyJ" role="2MkJ7o">
+                          <node concept="2OqwBi" id="TcaAhODq_G" role="3uHU7w">
+                            <node concept="Jnkvi" id="TcaAhODqaP" role="2Oq$k0">
+                              <ref role="1M0zk5" node="TcaAhODpap" resolve="errorType" />
+                            </node>
+                            <node concept="3TrcHB" id="TcaAhODr7d" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpd4:hfSilrU" resolve="errorText" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="TcaAhOJ7h3" role="3uHU7B">
+                            <property role="Xl_RC" value="No common supertype found:" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs6" id="TcaAhODX4a" role="3cqZAp" />
+                    </node>
+                    <node concept="JncvC" id="TcaAhODpap" role="JncvA">
+                      <property role="TrG5h" value="errorType" />
+                      <node concept="2jxLKc" id="TcaAhODpaq" role="1tU5fm" />
+                    </node>
+                    <node concept="37vLTw" id="TcaAhOIXpK" role="JncvB">
+                      <ref role="3cqZAo" node="2NHHcg2MxT6" resolve="sliceSupertype" />
                     </node>
                   </node>
                   <node concept="3clFbJ" id="2LepRDoQrkO" role="3cqZAp">
