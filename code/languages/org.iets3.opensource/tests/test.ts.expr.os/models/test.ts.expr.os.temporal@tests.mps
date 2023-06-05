@@ -2,7 +2,7 @@
 <model ref="r:ee0a7faa-c074-4e08-828d-686d2bece489(test.ts.expr.os.temporal@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="3" />
@@ -25,6 +25,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -152,6 +153,7 @@
   </registry>
   <node concept="1lH9Xt" id="4Uid4MjTGPC">
     <property role="TrG5h" value="temporal" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="4Uid4MjTGUb" role="1SKRRt">
       <node concept="_iOnU" id="4Uid4MjTGXt" role="1qenE9">
         <property role="TrG5h" value="temporal" />
@@ -185,7 +187,7 @@
                   <node concept="2vmvy5" id="1oDsV1Uhed8" role="3ix9CU" />
                 </node>
                 <node concept="3ix4Yz" id="4Uid4MjTLwe" role="3ix9pP">
-                  <ref role="3ix4Yw" node="1oDsV1UhdNf" resolve="it" />
+                  <ref role="3ix4Yw" node="1oDsV1UhdNf" />
                 </node>
               </node>
               <node concept="7CXmI" id="4Uid4MjZc3j" role="lGtFl">
@@ -195,7 +197,7 @@
               </node>
             </node>
             <node concept="_emDc" id="4Uid4MjTKaT" role="30czhm">
-              <ref role="_emDf" node="6C2wkq7iIpb" resolve="hasChild1" />
+              <ref role="_emDf" node="6C2wkq7iIpb" />
             </node>
           </node>
         </node>
@@ -214,7 +216,7 @@
               </node>
             </node>
             <node concept="_emDc" id="4Uid4MjTL96" role="30czhm">
-              <ref role="_emDf" node="6C2wkq7iIpb" resolve="hasChild1" />
+              <ref role="_emDf" node="6C2wkq7iIpb" />
             </node>
           </node>
         </node>
@@ -249,7 +251,7 @@
           <property role="TrG5h" value="point1" />
           <node concept="2S399m" id="6N7p0lWtH6B" role="2zPyp_">
             <node concept="2Ss9cW" id="6N7p0lWtH6H" role="2S399n">
-              <ref role="2Ss9cX" node="6N7p0lWtq35" resolve="Point" />
+              <ref role="2Ss9cX" node="6N7p0lWtq35" />
             </node>
             <node concept="2vmpnb" id="6N7p0lWuu0I" role="2S399l" />
           </node>
@@ -259,10 +261,10 @@
           <node concept="FfN7I" id="6N7p0lWuOMw" role="2zPyp_">
             <node concept="FfN7L" id="6N7p0lWuOMA" role="FfN64">
               <node concept="_emDc" id="6N7p0lWuON5" role="FfN7M">
-                <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+                <ref role="_emDf" node="7aRvJQErc4O" />
               </node>
               <node concept="_emDc" id="6N7p0lWuONs" role="FfN7O">
-                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+                <ref role="_emDf" node="6N7p0lWtErk" />
               </node>
             </node>
           </node>
@@ -272,10 +274,10 @@
           <property role="TrG5h" value="comp1" />
           <node concept="30cPrO" id="6N7p0lWyhZL" role="2zPyp_">
             <node concept="_emDc" id="6N7p0lWyi0W" role="30dEs_">
-              <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              <ref role="_emDf" node="6N7p0lWtErk" />
             </node>
             <node concept="_emDc" id="6N7p0lWyhZ$" role="30dEsF">
-              <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              <ref role="_emDf" node="6N7p0lWtErk" />
             </node>
             <node concept="7CXmI" id="6N7p0lWyiCV" role="lGtFl">
               <node concept="7OXhh" id="6N7p0lWyiHe" role="7EUXB">
@@ -291,7 +293,7 @@
               <property role="30bXRw" value="5" />
             </node>
             <node concept="_emDc" id="6N7p0lWyi5Y" role="30dEsF">
-              <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              <ref role="_emDf" node="6N7p0lWtErk" />
             </node>
             <node concept="7CXmI" id="6N7p0lWyiMy" role="lGtFl">
               <node concept="1TM$A" id="6N7p0lWyiMz" role="7EUXB" />
@@ -302,10 +304,10 @@
           <property role="TrG5h" value="comp3" />
           <node concept="30cPrO" id="6N7p0lWyieW" role="2zPyp_">
             <node concept="_emDc" id="6N7p0lWyih6" role="30dEs_">
-              <ref role="_emDf" node="6N7p0lWuM1Z" resolve="tempPoint" />
+              <ref role="_emDf" node="6N7p0lWuM1Z" />
             </node>
             <node concept="_emDc" id="6N7p0lWyieA" role="30dEsF">
-              <ref role="_emDf" node="6N7p0lWuM1Z" resolve="tempPoint" />
+              <ref role="_emDf" node="6N7p0lWuM1Z" />
             </node>
             <node concept="7CXmI" id="6N7p0lWyiHt" role="lGtFl">
               <node concept="7OXhh" id="6N7p0lWyiLZ" role="7EUXB">
@@ -320,7 +322,7 @@
             <node concept="FfN7I" id="6N7p0lWyiuq" role="30dEs_">
               <node concept="FfN7L" id="6N7p0lWyixf" role="FfN64">
                 <node concept="_emDc" id="6N7p0lWyixe" role="FfN7M">
-                  <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+                  <ref role="_emDf" node="7aRvJQErc4O" />
                 </node>
                 <node concept="30bXRB" id="6N7p0lWyi$_" role="FfN7O">
                   <property role="30bXRw" value="5" />
@@ -328,7 +330,7 @@
               </node>
             </node>
             <node concept="_emDc" id="6N7p0lWyir5" role="30dEsF">
-              <ref role="_emDf" node="6N7p0lWuM1Z" resolve="tempPoint" />
+              <ref role="_emDf" node="6N7p0lWuM1Z" />
             </node>
             <node concept="7CXmI" id="6N7p0lWyiQT" role="lGtFl">
               <node concept="1TM$A" id="6N7p0lWyiQU" role="7EUXB" />

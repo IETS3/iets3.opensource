@@ -2,7 +2,7 @@
 <model ref="r:c2c929a6-234a-4896-9321-c345e30b439e(test.org.iets3.core.comments.tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
     <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="7" />
@@ -162,7 +162,7 @@
             </node>
             <node concept="1i6xzV" id="5kwEgmAh7r6" role="GnABu">
               <node concept="1i1fwW" id="5kwEgmAh7rg" role="MGl3R">
-                <ref role="1i1fwX" node="5kwEgmAh7qt" resolve="CP1" />
+                <ref role="1i1fwX" node="5kwEgmAh7qt" />
               </node>
             </node>
           </node>
@@ -190,7 +190,7 @@
           <node concept="GnABt" id="5kwEgmAh7si" role="1i1XAe">
             <node concept="1i6xzV" id="5kwEgmAh7sl" role="GnABu">
               <node concept="1i1fwW" id="5kwEgmAh7sm" role="MGl3R">
-                <ref role="1i1fwX" node="5kwEgmAh7sp" resolve="CP1" />
+                <ref role="1i1fwX" node="5kwEgmAh7sp" />
               </node>
               <node concept="1z9TsT" id="12ACZ2oN$L7" role="lGtFl">
                 <node concept="OjmMv" id="12ACZ2oN$L8" role="1w35rA">

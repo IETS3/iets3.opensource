@@ -58,20 +58,20 @@
   </registry>
   <node concept="Ik52s" id="4NM7IHyE28o">
     <property role="TrG5h" value="Lamp" />
-    <ref role="IkdO4" node="4NM7IHyE28p" resolve="OFF" />
+    <ref role="IkdO4" node="4NM7IHyE28p" />
     <node concept="IkdP1" id="4NM7IHyE28p" role="IkdO7">
       <property role="TrG5h" value="OFF" />
       <node concept="IkdP6" id="4NM7IHyE28q" role="IkdOo">
-        <ref role="IkdOm" node="4NM7IHyE28A" resolve="ON" />
+        <ref role="IkdOm" node="4NM7IHyE28A" />
         <node concept="IkdP5" id="4NM7IHyE28T" role="IkdOs">
-          <ref role="IkdFF" node="4NM7IHyE28F" resolve="PressButton" />
+          <ref role="IkdFF" node="4NM7IHyE28F" />
           <node concept="InuEK" id="4NM7IHyE296" role="IkdFD">
             <node concept="30d6GJ" id="4NM7IHyE29y" role="I61DU">
               <node concept="30bXRB" id="4NM7IHyE29C" role="30dEs_">
                 <property role="30bXRw" value="5" />
               </node>
               <node concept="IkdPp" id="4NM7IHyE29j" role="30dEsF">
-                <ref role="IkdEC" node="4NM7IHyE28I" resolve="time" />
+                <ref role="IkdEC" node="4NM7IHyE28I" />
               </node>
             </node>
           </node>
@@ -81,9 +81,9 @@
     <node concept="IkdP1" id="4NM7IHyE28A" role="IkdO7">
       <property role="TrG5h" value="ON" />
       <node concept="IkdP6" id="4NM7IHyE2am" role="IkdOo">
-        <ref role="IkdOm" node="4NM7IHyE28p" resolve="OFF" />
+        <ref role="IkdOm" node="4NM7IHyE28p" />
         <node concept="IkdP5" id="4NM7IHyE2aq" role="IkdOs">
-          <ref role="IkdFF" node="4NM7IHyE28F" resolve="PressButton" />
+          <ref role="IkdFF" node="4NM7IHyE28F" />
         </node>
       </node>
     </node>

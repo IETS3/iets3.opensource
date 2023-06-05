@@ -2,7 +2,7 @@
 <model ref="r:8e00b09c-07da-452f-bed5-a4e808753669(test.in.expr.os.tuples@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <devkit ref="ec967770-4707-442f-baaf-a8b7bb554717(org.iets3.core.expr.genall.core.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
@@ -124,7 +124,7 @@
         <node concept="3nOhSe" id="6HHp2WmY4dT" role="_fkuY">
           <property role="3nOAFM" value="0" />
           <node concept="_emDc" id="6HHp2WmY4hj" role="3nOhSx">
-            <ref role="_emDf" node="6HHp2WmY4cI" resolve="t1" />
+            <ref role="_emDf" node="6HHp2WmY4cI" />
           </node>
         </node>
         <node concept="30bXRB" id="6HHp2WmY4dV" role="_fkuS">
@@ -139,7 +139,7 @@
         <node concept="3nOhSe" id="6HHp2WmY4dZ" role="_fkuY">
           <property role="3nOAFM" value="1" />
           <node concept="_emDc" id="6HHp2WmY4hn" role="3nOhSx">
-            <ref role="_emDf" node="6HHp2WmY4cI" resolve="t1" />
+            <ref role="_emDf" node="6HHp2WmY4cI" />
           </node>
         </node>
         <node concept="30bXRB" id="6HHp2WmY4e1" role="_fkuS">
@@ -196,7 +196,7 @@
         <node concept="3nOhSe" id="3aItn4K2fsZ" role="_fkuY">
           <property role="3nOAFM" value="0" />
           <node concept="_emDc" id="3aItn4K2ft0" role="3nOhSx">
-            <ref role="_emDf" node="3aItn4K2fqa" resolve="t2" />
+            <ref role="_emDf" node="3aItn4K2fqa" />
           </node>
         </node>
         <node concept="30bXRB" id="3aItn4K2ft1" role="_fkuS">
@@ -208,7 +208,7 @@
         <node concept="3nOhSe" id="3aItn4K2ft4" role="_fkuY">
           <property role="3nOAFM" value="1" />
           <node concept="_emDc" id="3aItn4K2ft5" role="3nOhSx">
-            <ref role="_emDf" node="3aItn4K2fqa" resolve="t2" />
+            <ref role="_emDf" node="3aItn4K2fqa" />
           </node>
         </node>
         <node concept="30bdrP" id="3aItn4K2ft6" role="_fkuS">
@@ -220,7 +220,7 @@
         <node concept="3nOhSe" id="3aItn4K2ft9" role="_fkuY">
           <property role="3nOAFM" value="2" />
           <node concept="_emDc" id="3aItn4K2fta" role="3nOhSx">
-            <ref role="_emDf" node="3aItn4K2fqa" resolve="t2" />
+            <ref role="_emDf" node="3aItn4K2fqa" />
           </node>
         </node>
         <node concept="2vmpnb" id="3aItn4K2ftb" role="_fkuS" />

@@ -2,7 +2,7 @@
 <model ref="r:948ca463-bc1f-4c44-9a83-20450008aee6(test.ts.expr.os.base@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="3" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
@@ -25,6 +25,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -91,6 +92,7 @@
   </registry>
   <node concept="1lH9Xt" id="6powCZk6$x2">
     <property role="TrG5h" value="IfElseSection_types" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6powCZk6$x3" role="1SKRRt">
       <node concept="_iOnU" id="6powCZk6$Im" role="1qenE9">
         <property role="TrG5h" value="IfElseTypes" />
@@ -136,7 +138,7 @@
           <node concept="39w5ZF" id="6powCZkaU5X" role="2zPyp_">
             <node concept="pf3Wd" id="6powCZkaU5Y" role="pf3W8">
               <node concept="_emDc" id="6powCZkaU7f" role="pf3We">
-                <ref role="_emDf" node="2JXkwhJg4g0" resolve="a" />
+                <ref role="_emDf" node="2JXkwhJg4g0" />
               </node>
               <node concept="7CXmI" id="S9ITXNly59" role="lGtFl">
                 <node concept="30Omv" id="S9ITXNlyaP" role="7EUXB">
@@ -150,7 +152,7 @@
             </node>
             <node concept="2vmpn$" id="6powCZkaU6k" role="39w5ZE" />
             <node concept="_emDc" id="6powCZkaU6y" role="39w5ZG">
-              <ref role="_emDf" node="2JXkwhJg4g0" resolve="a" />
+              <ref role="_emDf" node="2JXkwhJg4g0" />
             </node>
           </node>
         </node>
@@ -162,10 +164,10 @@
                 <node concept="pf3Wd" id="6powCZkaVkE" role="pf3W8">
                   <node concept="30dDZf" id="6powCZkaVOD" role="pf3We">
                     <node concept="_emDc" id="6powCZkaVSo" role="30dEs_">
-                      <ref role="_emDf" node="6powCZkaVwm" resolve="b" />
+                      <ref role="_emDf" node="6powCZkaVwm" />
                     </node>
                     <node concept="_emDc" id="6powCZkaVI7" role="30dEsF">
-                      <ref role="_emDf" node="2JXkwhJg4g0" resolve="a" />
+                      <ref role="_emDf" node="2JXkwhJg4g0" />
                     </node>
                   </node>
                   <node concept="7CXmI" id="S9ITXNlyOU" role="lGtFl">
@@ -184,14 +186,14 @@
                 </node>
                 <node concept="30d6GJ" id="6powCZkaVth" role="39w5ZE">
                   <node concept="_emDc" id="6powCZkaVzk" role="30dEs_">
-                    <ref role="_emDf" node="6powCZkaVwm" resolve="b" />
+                    <ref role="_emDf" node="6powCZkaVwm" />
                   </node>
                   <node concept="_emDc" id="6powCZkaVqI" role="30dEsF">
-                    <ref role="_emDf" node="2JXkwhJg4g0" resolve="a" />
+                    <ref role="_emDf" node="2JXkwhJg4g0" />
                   </node>
                 </node>
                 <node concept="_emDc" id="6powCZkaVDI" role="39w5ZG">
-                  <ref role="_emDf" node="2JXkwhJg4g0" resolve="a" />
+                  <ref role="_emDf" node="2JXkwhJg4g0" />
                 </node>
               </node>
               <node concept="7CXmI" id="S9ITXNly_w" role="lGtFl">
@@ -210,7 +212,7 @@
             </node>
             <node concept="2vmpn$" id="6powCZkaVdP" role="39w5ZE" />
             <node concept="_emDc" id="6powCZkaVe3" role="39w5ZG">
-              <ref role="_emDf" node="2JXkwhJg4g0" resolve="a" />
+              <ref role="_emDf" node="2JXkwhJg4g0" />
             </node>
           </node>
         </node>

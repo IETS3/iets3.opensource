@@ -2,7 +2,7 @@
 <model ref="r:e0544697-59c7-4559-b285-77a436064a3e(test.in.expr.os.lookuptable@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="0406e4b3-cffd-4d16-8533-6bc50680ab3b" name="org.iets3.core.expr.lookup" version="0" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
@@ -120,7 +120,7 @@
             </node>
           </node>
           <node concept="2Wn3e0" id="1tbxNVtFwnW" role="30czhm">
-            <ref role="2Wn3bo" node="1tbxNVtEPJD" resolve="MyLook" />
+            <ref role="2Wn3bo" node="1tbxNVtEPJD" />
           </node>
         </node>
       </node>
