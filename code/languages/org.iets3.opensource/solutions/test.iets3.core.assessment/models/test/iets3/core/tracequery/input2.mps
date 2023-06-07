@@ -83,7 +83,7 @@
         <node concept="2DxjnZ" id="1HLccB8wSr4" role="3PL9QJ">
           <node concept="3jWAPd" id="1HLccB8wSSk" role="2DxiDt" />
           <node concept="2Dx6l7" id="1Sur9ckX6Zu" role="2DxiDn">
-            <ref role="2Dx65g" to="ecrc:1Sur9ckX6Yc" />
+            <ref role="2Dx65g" to="ecrc:1Sur9ckX6Yc" resolve="handlebars" />
           </node>
         </node>
       </node>
@@ -98,7 +98,7 @@
         <node concept="2DxjnZ" id="1HLccB8wTrl" role="3PL9QJ">
           <node concept="3jWOz2" id="1HLccB8wTrp" role="2DxiDt" />
           <node concept="2Dx6l7" id="mhbzaHv9o4" role="2DxiDn">
-            <ref role="2Dx65g" node="1HLccB8wSqS" />
+            <ref role="2Dx65g" node="1HLccB8wSqS" resolve="F" />
           </node>
         </node>
       </node>
@@ -116,7 +116,7 @@
     <node concept="1i1AuW" id="1HLccB8wSqK" role="1i1AA4" />
     <node concept="1i1AuW" id="1HLccB8wSqz" role="1i1AA4" />
     <node concept="3GEVxB" id="1Sur9ckX6Zq" role="38kjvB">
-      <ref role="3GEb4d" to="ecrc:1Sur9ckX6Pc" />
+      <ref role="3GEb4d" to="ecrc:1Sur9ckX6Pc" resolve="bikeComponents" />
     </node>
   </node>
 </model>

@@ -785,9 +785,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckX8mr" role="3pwfKK">
-            <ref role="25YdEo" to="ojsi:1HLccB8wSqC" />
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqC" resolve="E" />
             <node concept="25Ync_" id="1Sur9ckX8ms" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" resolve="handlebars" />
             </node>
           </node>
         </node>
@@ -800,9 +800,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckX8mp" role="3pwfKK">
-            <ref role="25YdEo" to="ecrc:1HLccB8wSqS" />
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqS" resolve="C" />
             <node concept="25Ync_" id="1Sur9ckX8mq" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6YB" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6YB" resolve="frame" />
             </node>
           </node>
         </node>
@@ -815,9 +815,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckX8mn" role="3pwfKK">
-            <ref role="25YdEo" to="ecrc:1HLccB8wSqC" />
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqC" resolve="B" />
             <node concept="25Ync_" id="1Sur9ckX8mo" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6Ym" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6Ym" resolve="wheels" />
             </node>
           </node>
         </node>
@@ -830,9 +830,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckX8ml" role="3pwfKK">
-            <ref role="25YdEo" to="ecrc:1HLccB8wSqs" />
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqs" resolve="A" />
             <node concept="25Ync_" id="1Sur9ckX8mm" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" resolve="handlebars" />
             </node>
           </node>
         </node>
@@ -845,9 +845,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="mhbzaHvaZh" role="3pwfKK">
-            <ref role="25YdEo" to="ojsi:1HLccB8wSqS" />
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqS" resolve="F" />
             <node concept="25Ync_" id="mhbzaHvaZi" role="25YdEu">
-              <ref role="25YncA" to="ojsi:1HLccB8wSqS" />
+              <ref role="25YncA" to="ojsi:1HLccB8wSqS" resolve="F" />
             </node>
           </node>
         </node>
@@ -881,9 +881,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckX9bh" role="3pwfKK">
-            <ref role="25YdEo" to="ecrc:1HLccB8wSqS" />
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqS" resolve="C" />
             <node concept="25Ync_" id="1Sur9ckX9bi" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6YB" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6YB" resolve="frame" />
             </node>
           </node>
         </node>
@@ -896,9 +896,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckX9bf" role="3pwfKK">
-            <ref role="25YdEo" to="ecrc:1HLccB8wSqC" />
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqC" resolve="B" />
             <node concept="25Ync_" id="1Sur9ckX9bg" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6Ym" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6Ym" resolve="wheels" />
             </node>
           </node>
         </node>
@@ -911,9 +911,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckX9bd" role="3pwfKK">
-            <ref role="25YdEo" to="ecrc:1HLccB8wSqs" />
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqs" resolve="A" />
             <node concept="25Ync_" id="1Sur9ckX9be" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" resolve="handlebars" />
             </node>
           </node>
         </node>
@@ -926,9 +926,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckX9b9" role="3pwfKK">
-            <ref role="25YdEo" to="ojsi:1HLccB8wSqC" />
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqC" resolve="E" />
             <node concept="25Ync_" id="1Sur9ckX9ba" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" resolve="handlebars" />
             </node>
           </node>
         </node>
@@ -941,9 +941,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="mhbzaHvbNi" role="3pwfKK">
-            <ref role="25YdEo" to="ojsi:1HLccB8wSqS" />
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqS" resolve="F" />
             <node concept="25Ync_" id="mhbzaHvbNj" role="25YdEu">
-              <ref role="25YncA" to="ojsi:1HLccB8wSqS" />
+              <ref role="25YncA" to="ojsi:1HLccB8wSqS" resolve="F" />
             </node>
           </node>
         </node>
@@ -977,9 +977,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckXa01" role="3pwfKK">
-            <ref role="25YdEo" to="ecrc:1HLccB8wSqS" />
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqS" resolve="C" />
             <node concept="25Ync_" id="1Sur9ckXa02" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6YB" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6YB" resolve="frame" />
             </node>
           </node>
         </node>
@@ -992,9 +992,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckX9ZZ" role="3pwfKK">
-            <ref role="25YdEo" to="ecrc:1HLccB8wSqC" />
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqC" resolve="B" />
             <node concept="25Ync_" id="1Sur9ckXa00" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6Ym" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6Ym" resolve="wheels" />
             </node>
           </node>
         </node>
@@ -1007,9 +1007,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="1Sur9ckX9ZX" role="3pwfKK">
-            <ref role="25YdEo" to="ojsi:1HLccB8wSqC" />
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqC" resolve="E" />
             <node concept="25Ync_" id="1Sur9ckX9ZY" role="25YdEu">
-              <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" />
+              <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" resolve="handlebars" />
             </node>
           </node>
         </node>
@@ -1044,9 +1044,9 @@
             </node>
           </node>
           <node concept="25Yncw" id="mhbzaHvdqL" role="3pwfKK">
-            <ref role="25YdEo" to="ojsi:1HLccB8wSqS" />
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqS" resolve="F" />
             <node concept="25Ync_" id="mhbzaHvdqM" role="25YdEu">
-              <ref role="25YncA" to="ojsi:1HLccB8wSqS" />
+              <ref role="25YncA" to="ojsi:1HLccB8wSqS" resolve="F" />
             </node>
           </node>
         </node>

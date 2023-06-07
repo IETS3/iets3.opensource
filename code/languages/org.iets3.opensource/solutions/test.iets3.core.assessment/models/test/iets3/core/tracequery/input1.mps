@@ -128,9 +128,9 @@
           </node>
         </node>
         <node concept="25Yncw" id="mhbzaHv9xp" role="3pwfKK">
-          <ref role="25YdEo" to="ojsi:1HLccB8wSqS" />
+          <ref role="25YdEo" to="ojsi:1HLccB8wSqS" resolve="F" />
           <node concept="25Ync_" id="mhbzaHv9xq" role="25YdEu">
-            <ref role="25YncA" to="ojsi:1HLccB8wSqS" />
+            <ref role="25YncA" to="ojsi:1HLccB8wSqS" resolve="F" />
           </node>
         </node>
       </node>
@@ -158,7 +158,7 @@
         <node concept="2DxjnZ" id="1HLccB8yRh3" role="3PL9QJ">
           <node concept="3jWOz2" id="1HLccB8zEJ8" role="2DxiDt" />
           <node concept="2Dx6l7" id="1Sur9ckX6Z9" role="2DxiDn">
-            <ref role="2Dx65g" node="1Sur9ckX6Yc" />
+            <ref role="2Dx65g" node="1Sur9ckX6Yc" resolve="handlebars" />
           </node>
         </node>
       </node>
@@ -173,7 +173,7 @@
         <node concept="2DxjnZ" id="1HLccB8wSr4" role="3PL9QJ">
           <node concept="3jWAPd" id="1HLccB8wSSk" role="2DxiDt" />
           <node concept="2Dx6l7" id="1Sur9ckX6Zd" role="2DxiDn">
-            <ref role="2Dx65g" node="1Sur9ckX6Ym" />
+            <ref role="2Dx65g" node="1Sur9ckX6Ym" resolve="wheels" />
           </node>
         </node>
       </node>
@@ -188,7 +188,7 @@
         <node concept="2DxjnZ" id="mhbzaHu_nL" role="3PL9QJ">
           <node concept="3jWAPd" id="mhbzaHu_nR" role="2DxiDt" />
           <node concept="2Dx6l7" id="1Sur9ckX6Zh" role="2DxiDn">
-            <ref role="2Dx65g" node="1Sur9ckX6YB" />
+            <ref role="2Dx65g" node="1Sur9ckX6YB" resolve="frame" />
           </node>
         </node>
       </node>
@@ -196,7 +196,7 @@
     <node concept="1i1AuW" id="1HLccB8wSqK" role="1i1AA4" />
     <node concept="1i1AuW" id="1HLccB8wSqz" role="1i1AA4" />
     <node concept="3GEVxB" id="1Sur9ckX6Z5" role="38kjvB">
-      <ref role="3GEb4d" node="1Sur9ckX6Pc" />
+      <ref role="3GEb4d" node="1Sur9ckX6Pc" resolve="bikeComponents" />
     </node>
   </node>
   <node concept="1i1ALs" id="1Sur9ckX6Pc">

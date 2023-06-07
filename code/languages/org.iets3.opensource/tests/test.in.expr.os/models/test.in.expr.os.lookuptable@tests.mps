@@ -120,7 +120,7 @@
             </node>
           </node>
           <node concept="2Wn3e0" id="1tbxNVtFwnW" role="30czhm">
-            <ref role="2Wn3bo" node="1tbxNVtEPJD" />
+            <ref role="2Wn3bo" node="1tbxNVtEPJD" resolve="MyLook" />
           </node>
         </node>
       </node>
