@@ -66,10 +66,6 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
-      <concept id="5955298286257997823" name="org.iets3.core.expr.base.structure.ColonCast" flags="ng" index="1LgZZ2">
-        <child id="5955298286257997833" name="type" index="1LgZ0O" />
-        <child id="5955298286257997830" name="expr" index="1LgZ0V" />
-      </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
@@ -1680,16 +1676,13 @@
         <node concept="1afdae" id="2aG75lobfkH" role="30dEs_">
           <ref role="1afue_" node="M7eZQAnckY" resolve="eps" />
         </node>
-        <node concept="1LgZZ2" id="27$4JRbRpf2" role="30dEsF">
-          <node concept="30bXLL" id="27$4JRbRqlX" role="1LgZ0O" />
-          <node concept="a1tT9" id="M7eZQAwJtf" role="1LgZ0V">
-            <node concept="30dvUo" id="27$4JRbPOvR" role="a0Cwb">
-              <node concept="1afdae" id="M7eZQAwJti" role="30dEsF">
-                <ref role="1afue_" node="M7eZQAnc_N" resolve="expected" />
-              </node>
-              <node concept="1afdae" id="M7eZQAwJth" role="30dEs_">
-                <ref role="1afue_" node="M7eZQAnckx" resolve="observed" />
-              </node>
+        <node concept="a1tT9" id="M7eZQAwJtf" role="30dEsF">
+          <node concept="30dvUo" id="27$4JRbPOvR" role="a0Cwb">
+            <node concept="1afdae" id="M7eZQAwJti" role="30dEsF">
+              <ref role="1afue_" node="M7eZQAnc_N" resolve="expected" />
+            </node>
+            <node concept="1afdae" id="M7eZQAwJth" role="30dEs_">
+              <ref role="1afue_" node="M7eZQAnckx" resolve="observed" />
             </node>
           </node>
         </node>
