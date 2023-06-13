@@ -1184,7 +1184,7 @@
     </node>
     <node concept="2tJIrI" id="3p6$WoErNQB" role="jymVt" />
     <node concept="3clFb_" id="2NHHcg2Ks0y" role="jymVt">
-      <property role="TrG5h" value="computerSupertype" />
+      <property role="TrG5h" value="computeSupertype" />
       <property role="1EzhhJ" value="false" />
       <node concept="37vLTG" id="2NHHcg2Ks0z" role="3clF46">
         <property role="TrG5h" value="types" />

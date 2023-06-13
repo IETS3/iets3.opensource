@@ -297,7 +297,7 @@
     </node>
     <node concept="2tJIrI" id="2rzAw9UV1UU" role="jymVt" />
     <node concept="3clFb_" id="2rzAw9UV188" role="jymVt">
-      <property role="TrG5h" value="computerSupertype" />
+      <property role="TrG5h" value="computeSupertype" />
       <node concept="37vLTG" id="2rzAw9UV189" role="3clF46">
         <property role="TrG5h" value="types" />
         <node concept="2I9FWS" id="2rzAw9UV18a" role="1tU5fm" />
