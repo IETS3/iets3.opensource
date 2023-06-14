@@ -17002,6 +17002,103 @@
     <node concept="1qefOq" id="1IiUOyIooOY" role="1SKRRt">
       <node concept="_iOnV" id="1IiUOyIooP2" role="1qenE9">
         <property role="TrG5h" value="equalityTypes" />
+        <node concept="2zPypq" id="7mtXr8h9IGx" role="_iOnC">
+          <property role="TrG5h" value="x1" />
+          <node concept="30bXRB" id="7mtXr8h9Jrk" role="2zPyp_">
+            <property role="30bXRw" value="1" />
+          </node>
+          <node concept="mLuIC" id="7mtXr8h9Jr6" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="7mtXr8h9JwN" role="_iOnC">
+          <property role="TrG5h" value="y1" />
+          <node concept="30bXRB" id="7mtXr8h9JAL" role="2zPyp_">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="mLuIC" id="7mtXr8h9JA6" role="2zM23F">
+            <node concept="2gteS_" id="7mtXr8h9JAi" role="2gteVg">
+              <property role="2gteVv" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="7mtXr8h9JLw" role="_iOnC">
+          <property role="TrG5h" value="number1" />
+          <node concept="30cPrO" id="7mtXr8h9JQZ" role="2zPyp_">
+            <node concept="_emDc" id="7mtXr8h9JRL" role="30dEs_">
+              <ref role="_emDf" node="7mtXr8h9JwN" resolve="y1" />
+            </node>
+            <node concept="_emDc" id="7mtXr8h9JQM" role="30dEsF">
+              <ref role="_emDf" node="7mtXr8h9IGx" resolve="x1" />
+            </node>
+            <node concept="7CXmI" id="7mtXr8h9KgS" role="lGtFl">
+              <node concept="7OXhh" id="7mtXr8h9KiL" role="7EUXB">
+                <property role="GvXf4" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="7mtXr8h9JYb" role="lGtFl">
+            <node concept="OjmMv" id="7mtXr8h9JYc" role="1w35rA">
+              <node concept="19SGf9" id="7mtXr8h9JYd" role="OjmMu">
+                <node concept="19SUe$" id="7mtXr8h9JYe" role="19SJt6">
+                  <property role="19SUeA" value="Should not return error since x1 is default precision 0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="7mtXr8h9JGt" role="_iOnC" />
+        <node concept="2zPypq" id="7mtXr8h9HY2" role="_iOnC">
+          <property role="TrG5h" value="x2" />
+          <node concept="30bXRB" id="7mtXr8h9I3S" role="2zPyp_">
+            <property role="30bXRw" value="15" />
+          </node>
+          <node concept="mLuIC" id="7mtXr8h9I31" role="2zM23F">
+            <node concept="2gteSX" id="7mtXr8h9I3d" role="2gteSx">
+              <property role="2gteSR" value="10" />
+              <property role="2gteSE" value="20" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="7mtXr8h9I9i" role="_iOnC">
+          <property role="TrG5h" value="y2" />
+          <node concept="30bXRB" id="7mtXr8h9IfP" role="2zPyp_">
+            <property role="30bXRw" value="12" />
+          </node>
+          <node concept="mLuIC" id="7mtXr8h9Iel" role="2zM23F">
+            <node concept="2gteSX" id="7mtXr8h9Iex" role="2gteSx">
+              <property role="2gteSR" value="10" />
+              <property role="2gteSE" value="20" />
+            </node>
+            <node concept="2gteS_" id="7mtXr8h9Ifa" role="2gteVg">
+              <property role="2gteVv" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="7mtXr8h9HOy" role="_iOnC">
+          <property role="TrG5h" value="number2" />
+          <node concept="30cPrO" id="7mtXr8h9Ih0" role="2zPyp_">
+            <node concept="_emDc" id="7mtXr8h9IhV" role="30dEs_">
+              <ref role="_emDf" node="7mtXr8h9I9i" resolve="y2" />
+            </node>
+            <node concept="_emDc" id="7mtXr8h9IgE" role="30dEsF">
+              <ref role="_emDf" node="7mtXr8h9HY2" resolve="x2" />
+            </node>
+            <node concept="7CXmI" id="7mtXr8h9Kby" role="lGtFl">
+              <node concept="7OXhh" id="7mtXr8h9KeN" role="7EUXB">
+                <property role="GvXf4" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="7mtXr8h9Ipk" role="lGtFl">
+            <node concept="OjmMv" id="7mtXr8h9Ipl" role="1w35rA">
+              <node concept="19SGf9" id="7mtXr8h9Ipm" role="OjmMu">
+                <node concept="19SUe$" id="7mtXr8h9Ipn" role="19SJt6">
+                  <property role="19SUeA" value="Should not return error since x2 is default precision 0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="7mtXr8h9HFf" role="_iOnC" />
         <node concept="2zPypq" id="1IiUOyIoseT" role="_iOnC">
           <property role="TrG5h" value="success1" />
           <node concept="30cPrO" id="1IiUOyIosgS" role="2zPyp_">
