@@ -2375,14 +2375,36 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="2Ml_6NDN$v4" role="3cqZAp">
+              <node concept="1PaTwC" id="2Ml_6NDN$v5" role="1aUNEU">
+                <node concept="3oM_SD" id="2Ml_6NDRIGq" role="1PaTwD">
+                  <property role="3oM_SC" value="We" />
+                </node>
+                <node concept="3oM_SD" id="2Ml_6NDRIGM" role="1PaTwD">
+                  <property role="3oM_SC" value="do" />
+                </node>
+                <node concept="3oM_SD" id="2Ml_6NDRIH3" role="1PaTwD">
+                  <property role="3oM_SC" value="not" />
+                </node>
+                <node concept="3oM_SD" id="2Ml_6NDRIHl" role="1PaTwD">
+                  <property role="3oM_SC" value="allow" />
+                </node>
+                <node concept="3oM_SD" id="2Ml_6NDNJkx" role="1PaTwD">
+                  <property role="3oM_SC" value="JoinTypes" />
+                </node>
+                <node concept="3oM_SD" id="2Ml_6NDNJkR" role="1PaTwD">
+                  <property role="3oM_SC" value="within" />
+                </node>
+                <node concept="3oM_SD" id="2Ml_6NDNJkZ" role="1PaTwD">
+                  <property role="3oM_SC" value="tuples" />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="1G7Ce6ww1gM" role="3cqZAp">
               <node concept="3cpWsn" id="1G7Ce6ww1gN" role="3cpWs9">
                 <property role="TrG5h" value="noJoinTypes" />
                 <node concept="10P_77" id="1G7Ce6wvYWk" role="1tU5fm" />
-                <node concept="3clFbC" id="5Am5nOLu19P" role="33vP2m">
-                  <node concept="3cmrfG" id="5Am5nOLuek0" role="3uHU7w">
-                    <property role="3cmrfH" value="0" />
-                  </node>
+                <node concept="3clFbC" id="2Ml_6NDRxpj" role="33vP2m">
                   <node concept="2OqwBi" id="5Am5nOLt_W$" role="3uHU7B">
                     <node concept="2OqwBi" id="1G7Ce6ww1gX" role="2Oq$k0">
                       <node concept="37vLTw" id="1G7Ce6ww1gY" role="2Oq$k0">
@@ -2412,6 +2434,9 @@
                       </node>
                     </node>
                     <node concept="34oBXx" id="5Am5nOLtO$A" role="2OqNvi" />
+                  </node>
+                  <node concept="3cmrfG" id="5Am5nOLuek0" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
