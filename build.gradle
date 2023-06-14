@@ -94,16 +94,10 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     }
 }
 
-if (!project.hasProperty("mbeddrVersion")) {
-    //if (forceLocal) {
-    //    ext.mbeddrVersionSelector = '1.0-SNAPSHOT'
-    //    logger.log(LogLevel.WARN, "Local mbeddr version $ext.mbeddrVersionSelector forced")
-    //}
-} else {
+if (project.hasProperty("mbeddrVersion")) {
     logger.log(LogLevel.WARN, "mbeddr version externally overwritten to $ext.mbeddrVersion")
     ext.mbeddrVersionSelector = ext.mbeddrVersion
-}
-
+} 
 
 ext.releaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots'
