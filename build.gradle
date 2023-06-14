@@ -8,7 +8,6 @@ import java.time.format.FormatStyle
 buildscript {
     repositories {
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
-        mavenLocal()
     }
     dependencies {
         classpath 'de.itemis.mps:mps-gradle-plugin:1.16.352.17eae3e'
