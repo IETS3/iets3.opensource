@@ -129,6 +129,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
     <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
@@ -159,6 +163,10 @@
   <node concept="1lH9Xt" id="7$68VCkh_0f">
     <property role="TrG5h" value="LeastCommonSuperType" />
     <node concept="1qefOq" id="5FFsEXIecet" role="1SKRRt">
+      <node concept="15s5l7" id="1e46OlHj8ce" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node '(instance of JoinType)' cannot be child of node '(instance of NodeTypeCheckOperation)'&quot;;FLAVOUR_RULE_ID=&quot;[r:9750d418-880f-460d-9880-d67dd111722d(org.iets3.core.expr.base.constraints)/6095949300264944903]&quot;;" />
+        <property role="huDt6" value="Node '(instance of JoinType)' cannot be child of node '(instance of NodeTypeCheckOperation)'" />
+      </node>
       <node concept="_iOnU" id="5FFsEXIecex" role="1qenE9">
         <property role="TrG5h" value="leastCommonSuperTypeTests" />
         <node concept="2Ss9d8" id="3yVmeSjL7l_" role="_iOnB">
