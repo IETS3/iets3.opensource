@@ -110,7 +110,7 @@ ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
 
 
 wrapper {
-    gradleVersion '8.0.2'
+    gradleVersion '5.5.1'
     distributionType Wrapper.DistributionType.ALL
 }
 
