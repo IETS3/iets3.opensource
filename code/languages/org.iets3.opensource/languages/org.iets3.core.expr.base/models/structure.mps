@@ -1542,6 +1542,11 @@
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
   </node>
+  <node concept="PlHQZ" id="5ipapt35kjG">
+    <property role="EcuMT" value="6095949300264944876" />
+    <property role="3GE5qa" value="join" />
+    <property role="TrG5h" value="IJoinTypeContext" />
+  </node>
   <node concept="PlHQZ" id="7obiejCh8R2">
     <property role="EcuMT" value="8505972469205863874" />
     <property role="TrG5h" value="ITraceRoot" />
