@@ -2,7 +2,7 @@
 <model ref="r:ee5b1a89-4907-4bd7-bb79-ba99ef537bd3(test.ts.expr.os.unitsonly@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
@@ -54,6 +54,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -578,6 +579,7 @@
   </registry>
   <node concept="1lH9Xt" id="2JXkwhJfxJF">
     <property role="TrG5h" value="Conversions" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="3FpaOZJSRbe" role="1qtyYc">
       <property role="TrG5h" value="assertNumberType" />
       <node concept="3cqZAl" id="3FpaOZJSRh5" role="3clF45" />
@@ -1638,6 +1640,7 @@
   </node>
   <node concept="1lH9Xt" id="2S3ZC$oC8Qf">
     <property role="TrG5h" value="ExpressionsPart1" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7lvSX9d0zmJ" role="1SKRRt">
       <node concept="_iOnV" id="7lvSX9d0zoU" role="1qenE9">
         <property role="TrG5h" value="ErrorChecks" />
@@ -2274,6 +2277,7 @@
   </node>
   <node concept="1lH9Xt" id="1fzaMYHrHpe">
     <property role="TrG5h" value="ExpressionsPart2" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="1JTgXSYMRE7" role="1qtyYc">
       <property role="TrG5h" value="assertNodeUnitType" />
       <node concept="3cqZAl" id="1JTgXSYMREk" role="3clF45" />
@@ -6238,6 +6242,7 @@
   </node>
   <node concept="1lH9Xt" id="69HsIy5Gpuq">
     <property role="TrG5h" value="DerivedUnitAndQuantityTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="69HsIy5Gpus" role="1SKRRt">
       <node concept="_iOnV" id="69HsIy5Gpur" role="1qenE9">
         <property role="TrG5h" value="DerivedUnitTest" />

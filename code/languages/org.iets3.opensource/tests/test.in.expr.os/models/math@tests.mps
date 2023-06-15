@@ -2,7 +2,7 @@
 <model ref="r:04a13e22-2253-4023-a07e-4ed087d741d9(test.in.expr.os.math@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" name="org.iets3.core.expr.math" version="-1" />
     <use id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags" version="0" />
@@ -29,6 +29,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -1676,12 +1677,12 @@
           <ref role="1afue_" node="M7eZQAnckY" resolve="eps" />
         </node>
         <node concept="a1tT9" id="M7eZQAwJtf" role="30dEsF">
-          <node concept="30dvUo" id="M7eZQAwJtg" role="a0Cwb">
-            <node concept="1afdae" id="M7eZQAwJth" role="30dEs_">
-              <ref role="1afue_" node="M7eZQAnckx" resolve="observed" />
-            </node>
+          <node concept="30dvUo" id="27$4JRbPOvR" role="a0Cwb">
             <node concept="1afdae" id="M7eZQAwJti" role="30dEsF">
               <ref role="1afue_" node="M7eZQAnc_N" resolve="expected" />
+            </node>
+            <node concept="1afdae" id="M7eZQAwJth" role="30dEs_">
+              <ref role="1afue_" node="M7eZQAnckx" resolve="observed" />
             </node>
           </node>
         </node>
@@ -3088,6 +3089,7 @@
   </node>
   <node concept="1lH9Xt" id="2aG75lpBm0$">
     <property role="TrG5h" value="MathExpressionsNodesTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="2aG75lpBm1E" role="1SKRRt">
       <node concept="_iOnV" id="2aG75lpBm1D" role="1qenE9">
         <property role="TrG5h" value="DummyLib" />

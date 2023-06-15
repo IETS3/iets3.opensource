@@ -10,7 +10,7 @@ buildscript {
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.7.288.4ea765f'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.16.352.17eae3e'
     }
 }
 
@@ -39,7 +39,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '11_0_11-b1341.60'
+    jbrVersion = '17.0.3-b469.32'
 }
 
 // detect if we are in a CI build
@@ -52,13 +52,13 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
-def major = "2021"
-def minor = "3"
+def major = "2022"
+def minor = "2"
 
 // Dependency versions
-ext.mpsVersion = '2021.3.2'
+ext.mpsVersion = '2022.2'
 
-def mbeddrVersion = "2021.3+"
+def mbeddrVersion = "2022.2+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -94,16 +94,10 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     }
 }
 
-if (!project.hasProperty("mbeddrVersion")) {
-    if (forceLocal) {
-        ext.mbeddrVersionSelector = '1.0-SNAPSHOT'
-        logger.log(LogLevel.WARN, "Local mbeddr version $ext.mbeddrVersionSelector forced")
-    }
-} else {
+if (project.hasProperty("mbeddrVersion")) {
     logger.log(LogLevel.WARN, "mbeddr version externally overwritten to $ext.mbeddrVersion")
     ext.mbeddrVersionSelector = ext.mbeddrVersion
-}
-
+} 
 
 ext.releaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots'
@@ -116,7 +110,7 @@ ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
 
 
 wrapper {
-    gradleVersion '5.5.1'
+    gradleVersion '8.0.2'
     distributionType Wrapper.DistributionType.ALL
 }
 

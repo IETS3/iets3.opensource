@@ -2,7 +2,7 @@
 <model ref="r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="-1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
@@ -70,6 +70,7 @@
         <reference id="6626913010124185482" name="migration" index="3ea_Bf" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -773,6 +774,7 @@
   </registry>
   <node concept="1lH9Xt" id="7k$Bvd3eSU8">
     <property role="TrG5h" value="stringTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7k$Bvd3eSUO" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8j" role="1qenE9">
         <property role="TrG5h" value="stringTests" />
@@ -892,6 +894,7 @@
   </node>
   <node concept="1lH9Xt" id="7k$Bvd3eS8N">
     <property role="TrG5h" value="realTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7k$Bvd3eS9v" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8k" role="1qenE9">
         <property role="TrG5h" value="realTests" />
@@ -963,6 +966,7 @@
   </node>
   <node concept="1lH9Xt" id="7k$Bvd3eR8C">
     <property role="TrG5h" value="realAndIntTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7k$Bvd3eR9k" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8l" role="1qenE9">
         <property role="TrG5h" value="realAndInt" />
@@ -1070,6 +1074,7 @@
   </node>
   <node concept="1lH9Xt" id="6HHp2WmQh7e">
     <property role="TrG5h" value="paths" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6HHp2WmQh7f" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8m" role="1qenE9">
         <property role="TrG5h" value="path" />
@@ -1279,6 +1284,7 @@
   </node>
   <node concept="1lH9Xt" id="6HHp2WmQdlQ">
     <property role="TrG5h" value="lambda" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6HHp2WmQdlR" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8n" role="1qenE9">
         <property role="TrG5h" value="lambda" />
@@ -1605,6 +1611,7 @@
   </node>
   <node concept="1lH9Xt" id="7k$Bvd3eP4Z">
     <property role="TrG5h" value="intTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7k$Bvd3eP5F" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8o" role="1qenE9">
         <property role="TrG5h" value="intTests" />
@@ -1728,6 +1735,7 @@
   </node>
   <node concept="1lH9Xt" id="5aHkq2w38OI">
     <property role="TrG5h" value="errors2" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5aHkq2w38OJ" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8p" role="1qenE9">
         <property role="TrG5h" value="errors2" />
@@ -2219,6 +2227,7 @@
   </node>
   <node concept="1lH9Xt" id="6HHp2WmO$hn">
     <property role="TrG5h" value="covariantTyping" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6HHp2WmO$ho" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8q" role="1qenE9">
         <property role="TrG5h" value="covariantTyping" />
@@ -2289,6 +2298,7 @@
   </node>
   <node concept="1lH9Xt" id="6HHp2WmOy2p">
     <property role="TrG5h" value="collections" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6HHp2WmOy2q" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8r" role="1qenE9">
         <property role="TrG5h" value="collections" />
@@ -3131,6 +3141,7 @@
   </node>
   <node concept="1lH9Xt" id="7k$Bvd3eOif">
     <property role="TrG5h" value="booleanTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7k$Bvd3eOiV" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8s" role="1qenE9">
         <property role="TrG5h" value="booleanTests" />
@@ -3266,6 +3277,7 @@
   </node>
   <node concept="1lH9Xt" id="TuTPrvFMnN">
     <property role="TrG5h" value="alt" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="TuTPrvFMnO" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8t" role="1qenE9">
         <property role="TrG5h" value="alt" />
@@ -3554,6 +3566,7 @@
   </node>
   <node concept="1lH9Xt" id="6rdp$3y_pan">
     <property role="TrG5h" value="numbers" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="3Up1DZuQfk7" role="1SL9yI">
       <property role="TrG5h" value="aNumberTypeShouldBeEqualToItself" />
       <node concept="3cqZAl" id="3Up1DZuQfk8" role="3clF45" />
@@ -5690,6 +5703,7 @@
   </node>
   <node concept="1lH9Xt" id="2Fd5B1gxiAA">
     <property role="TrG5h" value="ConstantCycles" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="2Fd5B1gxiAB" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8v" role="1qenE9">
         <property role="TrG5h" value="ConstantCycles" />
@@ -5745,6 +5759,7 @@
   </node>
   <node concept="1lH9Xt" id="6JZACDWLVX9">
     <property role="TrG5h" value="referenceTypes" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6JZACDWLVXa" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8w" role="1qenE9">
         <property role="TrG5h" value="referenceTypes" />
@@ -5990,6 +6005,7 @@
   </node>
   <node concept="1lH9Xt" id="7VuYlCR1OAH">
     <property role="TrG5h" value="join" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7VuYlCR1OAI" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8x" role="1qenE9">
         <property role="TrG5h" value="join" />
@@ -6096,6 +6112,7 @@
   </node>
   <node concept="1lH9Xt" id="7cphKbKqVBO">
     <property role="TrG5h" value="grouping" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7cphKbKqVBP" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8y" role="1qenE9">
         <property role="TrG5h" value="grouping" />
@@ -6324,6 +6341,7 @@
   </node>
   <node concept="1lH9Xt" id="ORfz$DS4eh">
     <property role="TrG5h" value="effects" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="ORfz$DS4ei" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8z" role="1qenE9">
         <property role="TrG5h" value="effects" />
@@ -6384,6 +6402,7 @@
   </node>
   <node concept="1lH9Xt" id="63mrHUnQgzm">
     <property role="TrG5h" value="numberTypes" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="63mrHUnQh9K" role="1SKRRt">
       <node concept="_iOnV" id="63mrHUnQo5m" role="1qenE9">
         <property role="TrG5h" value="numbertypes" />
@@ -6971,6 +6990,7 @@
   </node>
   <node concept="1lH9Xt" id="7OzZ9xI5cyS">
     <property role="TrG5h" value="errors" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7OzZ9xI5cyT" role="1SKRRt">
       <node concept="_iOnV" id="7OzZ9xI5cyV" role="1qenE9">
         <property role="TrG5h" value="errors" />
@@ -7397,6 +7417,7 @@
   </node>
   <node concept="1lH9Xt" id="3gKGtj9bXxW">
     <property role="TrG5h" value="enums" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3gKGtj9bXxX" role="1SKRRt">
       <node concept="_iOnV" id="3gKGtj9bXxZ" role="1qenE9">
         <property role="TrG5h" value="enums" />
@@ -7755,6 +7776,7 @@
   </node>
   <node concept="1lH9Xt" id="3ni3Wiec5Qs">
     <property role="TrG5h" value="effects2" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3ni3Wiec5Qt" role="1SKRRt">
       <node concept="_iOnV" id="3ni3Wiec5Qu" role="1qenE9">
         <property role="TrG5h" value="effects2" />
@@ -14220,6 +14242,7 @@
   </node>
   <node concept="1lH9Xt" id="3N4k0eSJKEN">
     <property role="TrG5h" value="options" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3N4k0eSJKEO" role="1SKRRt">
       <node concept="_iOnV" id="3N4k0eSJKEP" role="1qenE9">
         <property role="TrG5h" value="options" />
@@ -14397,6 +14420,7 @@
   </node>
   <node concept="1lH9Xt" id="53f0GWGI1l0">
     <property role="TrG5h" value="testOfIfTyoes" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="53f0GWGI2NT" role="1SL9yI">
       <property role="TrG5h" value="testTypeOfActionIf" />
       <node concept="3cqZAl" id="53f0GWGI2NU" role="3clF45" />
@@ -14838,6 +14862,7 @@
   </node>
   <node concept="1lH9Xt" id="5a_u3OyMFfG">
     <property role="TrG5h" value="algebraic" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5a_u3OyMFfH" role="1SKRRt">
       <node concept="_iOnV" id="5a_u3OyMFfI" role="1qenE9">
         <property role="TrG5h" value="algebraic" />
@@ -15015,6 +15040,7 @@
   </node>
   <node concept="1lH9Xt" id="7aRvJQEkOc$">
     <property role="TrG5h" value="dateStuff" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7aRvJQEkOc_" role="1SKRRt">
       <node concept="_iOnV" id="7aRvJQEkOcA" role="1qenE9">
         <property role="TrG5h" value="dateStuf" />
@@ -15246,6 +15272,7 @@
   </node>
   <node concept="1lH9Xt" id="1VmWkC0z0B4">
     <property role="TrG5h" value="vars" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1VmWkC0z0Bf" role="1SKRRt">
       <node concept="_iOnV" id="7aAW5BPgQCz" role="1qenE9">
         <property role="TrG5h" value="vars" />
@@ -15609,6 +15636,7 @@
   </node>
   <node concept="1lH9Xt" id="KoRsm$utLj">
     <property role="TrG5h" value="ListEquality" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="KoRsm$utLk" role="1SKRRt">
       <node concept="_iOnV" id="KoRsm$utLm" role="1qenE9">
         <property role="TrG5h" value="ListEquality" />
@@ -15816,6 +15844,7 @@
   </node>
   <node concept="1lH9Xt" id="5aYM8itcbxS">
     <property role="TrG5h" value="multidectab" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5aYM8itcbxT" role="1SKRRt">
       <node concept="_iOnV" id="5aYM8itcbxW" role="1qenE9">
         <property role="TrG5h" value="lib" />
@@ -16014,6 +16043,7 @@
   </node>
   <node concept="1lH9Xt" id="4PRpvcZw5Fx">
     <property role="TrG5h" value="datatable" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="4PRpvcZw5HP" role="1SKRRt">
       <node concept="_iOnV" id="7aAW5BPgQC$" role="1qenE9">
         <property role="TrG5h" value="myTest" />
@@ -16424,6 +16454,7 @@
   <node concept="1lH9Xt" id="4QQXQNDkWUR">
     <property role="TrG5h" value="commentedContent" />
     <property role="3GE5qa" value="commented" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="230lIJVQUM" role="1SKRRt">
       <node concept="_iOnU" id="230lIJVQWI" role="1qenE9">
         <property role="TrG5h" value="TestSuiteUsingCommented" />
@@ -16701,6 +16732,7 @@
   </node>
   <node concept="1lH9Xt" id="1CsE99tshJT">
     <property role="TrG5h" value="tuplesInLists" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1CsE99tshJU" role="1SKRRt">
       <node concept="_iOnV" id="1CsE99tshJV" role="1qenE9">
         <property role="TrG5h" value="enums" />
@@ -16992,6 +17024,7 @@
   </node>
   <node concept="1lH9Xt" id="1IiUOyIooCs">
     <property role="TrG5h" value="collectionEqualityType" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1IiUOyIooOY" role="1SKRRt">
       <node concept="_iOnV" id="1IiUOyIooP2" role="1qenE9">
         <property role="TrG5h" value="collectionEqualityTypes" />
