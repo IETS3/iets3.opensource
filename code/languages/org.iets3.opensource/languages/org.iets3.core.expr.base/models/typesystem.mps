@@ -3799,7 +3799,7 @@
             <property role="TrG5h" value="needsToSuroundOptionalType" />
             <node concept="10P_77" id="bA6f$pFi$p" role="1tU5fm" />
             <node concept="2YIFZM" id="bA6f$pFjff" role="33vP2m">
-              <ref role="37wK5l" node="bA6f$py8yE" resolve="flattenJoinTypes" />
+              <ref role="37wK5l" node="bA6f$py8yE" resolve="checkOptionTypeIsReuiredAndRecursivlyExtractElementTypes" />
               <ref role="1Pybhc" node="12WRc28WG_m" resolve="TypingHelper" />
               <node concept="37vLTw" id="bA6f$pFjfg" role="37wK5m">
                 <ref role="3cqZAo" node="6KhzXd8gM7I" resolve="types" />
@@ -4256,7 +4256,7 @@
     </node>
     <node concept="2tJIrI" id="bA6f$pybyY" role="jymVt" />
     <node concept="2YIFZL" id="bA6f$py8yE" role="jymVt">
-      <property role="TrG5h" value="flattenJoinTypes" />
+      <property role="TrG5h" value="checkOptionTypeIsReuiredAndRecursivlyExtractElementTypes" />
       <node concept="3Tm6S6" id="bA6f$py8yF" role="1B3o_S" />
       <node concept="10P_77" id="bA6f$pE3tz" role="3clF45" />
       <node concept="37vLTG" id="bA6f$py8yy" role="3clF46">
@@ -4303,7 +4303,7 @@
                             <ref role="3cqZAo" node="bA6f$pE8$l" resolve="optionalResult" />
                           </node>
                           <node concept="1rXfSq" id="bA6f$pFc_8" role="37vLTx">
-                            <ref role="37wK5l" node="bA6f$py8yE" resolve="flattenJoinTypes" />
+                            <ref role="37wK5l" node="bA6f$py8yE" resolve="checkOptionTypeIsReuiredAndRecursivlyExtractElementTypes" />
                             <node concept="2OqwBi" id="bA6f$pFc_9" role="37wK5m">
                               <node concept="1PxgMI" id="bA6f$pFc_a" role="2Oq$k0">
                                 <node concept="chp4Y" id="bA6f$pFc_b" role="3oSUPX">
@@ -4382,7 +4382,7 @@
                               <ref role="3cqZAo" node="bA6f$pE8$l" resolve="optionalResult" />
                             </node>
                             <node concept="1rXfSq" id="bA6f$pFf35" role="37vLTx">
-                              <ref role="37wK5l" node="bA6f$py8yE" resolve="flattenJoinTypes" />
+                              <ref role="37wK5l" node="bA6f$py8yE" resolve="checkOptionTypeIsReuiredAndRecursivlyExtractElementTypes" />
                               <node concept="37vLTw" id="bA6f$pFf36" role="37wK5m">
                                 <ref role="3cqZAo" node="bA6f$pCQsv" resolve="listTypes" />
                               </node>
