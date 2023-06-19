@@ -17,7 +17,7 @@ buildscript {
 plugins {
     id 'base'
     id 'maven-publish'
-    id 'co.riiid.gradle' version '0.4.2'
+    id "com.github.breadmoirai.github-release" version "2.4.1"
 }
 
 ext.dependencyRepositories = [
@@ -382,21 +382,18 @@ Includes dependencies:
 ${depsList}
 """
 
-github {
+githubRelease {
     owner = 'IETS3'
     repo = 'iets3.opensource'
     token = rootProject.findProperty('github.token') ?: 'empty'
     tagName = 'nightly-' + version
     targetCommitish = GitBasedVersioning.getGitCommitHash()
-    name = 'Nighly Build ' + version
+    body = releaseNotes
     prerelease = true
-    assets = packageDistroWithDependencies.outputs.files.collect {it.path}
-}
-githubRelease.doFirst {
-    // do late body init to avoid executing listMergedPRs during config phase
-    github {
-        body = releaseNotes
-    }
+    releaseAssets = packageDistroWithDependencies.outputs.files.collect {it.path}
+    dryRun = true
 }
 
-githubRelease.dependsOn packageDistroWithDependencies
+tasks.named('githubRelease').configure {
+  dependsOn packageDistroWithDependencies
+}
