@@ -391,7 +391,7 @@ githubRelease {
     body = releaseNotes
     prerelease = true
     releaseAssets = packageDistroWithDependencies.outputs.files.collect {it.path}
-    dryRun = true
+    dryRun = false 
 }
 
 tasks.named('githubRelease').configure {
