@@ -29,6 +29,7 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="63ih" ref="r:8b224ec5-7a3e-45b9-8341-eb73ff942246(org.iets3.core.expr.math.typesystem)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
@@ -653,8 +654,8 @@
             <node concept="37vLTw" id="3FpaOZJSU_H" role="2Oq$k0">
               <ref role="3cqZAo" node="3FpaOZJSUoe" resolve="range" />
             </node>
-            <node concept="3TrcHB" id="3FpaOZJSUWJ" role="2OqNvi">
-              <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
+            <node concept="2qgKlT" id="SIMVVoux23" role="2OqNvi">
+              <ref role="37wK5l" to="b1h1:SIMVVosRGL" resolve="getMinimum" />
             </node>
           </node>
           <node concept="3_1$Yv" id="3FpaOZJSVlU" role="3_9lra">
@@ -671,8 +672,8 @@
             <node concept="37vLTw" id="3FpaOZJSV03" role="2Oq$k0">
               <ref role="3cqZAo" node="3FpaOZJSUoe" resolve="range" />
             </node>
-            <node concept="3TrcHB" id="3FpaOZJSVeS" role="2OqNvi">
-              <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
+            <node concept="2qgKlT" id="SIMVVouxdh" role="2OqNvi">
+              <ref role="37wK5l" to="b1h1:SIMVVosRWc" resolve="getMaximum" />
             </node>
           </node>
           <node concept="3_1$Yv" id="3FpaOZJSVyn" role="3_9lra">
@@ -712,6 +713,23 @@
                 <property role="Xl_RC" value="-273" />
               </node>
               <node concept="Xl_RD" id="3FpaOZJSVN7" role="2XxRq1">
+                <property role="Xl_RC" value="-273" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7yYa0tuAVTt" role="3cqZAp">
+          <node concept="2OqwBi" id="7yYa0tuAVTu" role="3clFbG">
+            <node concept="2WthIp" id="7yYa0tuAVTv" role="2Oq$k0" />
+            <node concept="2XshWL" id="7yYa0tuAVTw" role="2OqNvi">
+              <ref role="2WH_rO" node="3FpaOZJSRbe" resolve="assertNumberType" />
+              <node concept="3xONca" id="7yYa0tuAVTx" role="2XxRq1">
+                <ref role="3xOPvv" node="7yYa0tuAVug" resolve="specTypeKMyC2" />
+              </node>
+              <node concept="Xl_RD" id="7yYa0tuAVTy" role="2XxRq1">
+                <property role="Xl_RC" value="-273" />
+              </node>
+              <node concept="Xl_RD" id="7yYa0tuAVTz" role="2XxRq1">
                 <property role="Xl_RC" value="-273" />
               </node>
             </node>
@@ -1116,6 +1134,26 @@
               </node>
               <node concept="3xLA65" id="77FPJvcWeza" role="lGtFl">
                 <property role="TrG5h" value="specTypeKMyC" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="CIrOH" id="7yYa0tuAVAQ" role="_iOnC">
+          <property role="TrG5h" value="myC2" />
+          <ref role="Rn5ok" node="1KUmgSFvJZV" resolve="myCs" />
+        </node>
+        <node concept="TRoc0" id="7yYa0tuAVub" role="_iOnC">
+          <property role="27Q$Ze" value="false" />
+          <ref role="27Q$ZQ" to="ku0a:5XaocLWHSS8" resolve="K" />
+          <ref role="27Q$ZR" node="7yYa0tuAVAQ" resolve="myC2" />
+          <node concept="27LzZq" id="7yYa0tuAVuc" role="27P04L">
+            <node concept="30dvUo" id="7yYa0tuAVud" role="27K$mF">
+              <node concept="2m5Cep" id="7yYa0tuAVue" role="30dEsF" />
+              <node concept="30bXRB" id="7yYa0tuAVuf" role="30dEs_">
+                <property role="30bXRw" value="0x111" />
+              </node>
+              <node concept="3xLA65" id="7yYa0tuAVug" role="lGtFl">
+                <property role="TrG5h" value="specTypeKMyC2" />
               </node>
             </node>
           </node>

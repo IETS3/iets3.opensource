@@ -1153,6 +1153,19 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4NJAaUg11Bg" role="jymVt" />
+    <node concept="3clFb_" id="4NJAaUg1hYw" role="jymVt">
+      <property role="TrG5h" value="allowHexadecimalNumbers" />
+      <node concept="3clFbS" id="4NJAaUg1hYz" role="3clF47">
+        <node concept="3clFbF" id="4NJAaUg1ie9" role="3cqZAp">
+          <node concept="3clFbT" id="4NJAaUg1ie8" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4NJAaUg1fSe" role="1B3o_S" />
+      <node concept="10P_77" id="4NJAaUg1hXd" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="2q0DACtJfgT" role="jymVt" />
     <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
   </node>
