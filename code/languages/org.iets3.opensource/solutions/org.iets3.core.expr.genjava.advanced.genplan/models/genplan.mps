@@ -84,6 +84,22 @@
         <property role="2V$B1T" value="f61473f9-130f-42f6-b98d-6c438812c2f6" />
         <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.unitTest" />
       </node>
+      <node concept="2V$Bhx" id="7DfYVnk4qyy" role="1t_9vn">
+        <property role="2V$B1T" value="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" />
+        <property role="2V$B1Q" value="com.mbeddr.core.base" />
+      </node>
+      <node concept="2V$Bhx" id="7DfYVnk4o4K" role="1t_9vn">
+        <property role="2V$B1T" value="d441fba0-f46b-43cd-b723-dad7b65da615" />
+        <property role="2V$B1Q" value="org.iets3.core.expr.tests" />
+      </node>
+      <node concept="2V$Bhx" id="7DfYVnk4o4h" role="1t_9vn">
+        <property role="2V$B1T" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.core" />
+      </node>
+      <node concept="2V$Bhx" id="7DfYVnk4ncE" role="1t_9vn">
+        <property role="2V$B1T" value="8585453e-6bfb-4d80-98de-b16074f1d86c" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.test" />
+      </node>
     </node>
   </node>
 </model>
