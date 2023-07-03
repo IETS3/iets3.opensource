@@ -27,6 +27,11 @@ For details see [wiki](https://github.com/IETS3/iets3.opensource/wiki/Supported-
 - MPS 2021.1 (branch: [maintenance/mps20211](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20211)) 
 - MPS 2020.3 (branch: [maintenance/mps20203](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20203)) 
 
+## Documentation
+
+- [KernelF | MPS Platform Docs](http://mbeddr.com/mps-platform-docs/languages/kernelf/)
+- [Platform essentials | MPS Platform Docs](http://mbeddr.com/mps-platform-docs/platform_essentials/)
+
 ## Community
 
 ### Slack
