@@ -472,6 +472,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -1209,18 +1213,30 @@
       <ref role="30HIoZ" to="yv47:2S3ZC$oCfaF" resolve="TypedefContractValExpr" />
       <node concept="gft3U" id="lH$PuhvqCr" role="1lVwrX">
         <node concept="2kixu8" id="lH$PuhvqCx" role="gfFT$" />
+        <node concept="15s5l7" id="7DfYVnlwVqM" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+          <property role="huDt6" value="all typesystem messages" />
+        </node>
       </node>
     </node>
     <node concept="3aamgX" id="lH$PuhvrDx" role="3acgRq">
       <ref role="30HIoZ" to="zzzn:KaZMgy7sW6" resolve="ValValueInContractExpr" />
       <node concept="gft3U" id="lH$PuhwA3g" role="1lVwrX">
         <node concept="2kixu8" id="lH$PuhwA3h" role="gfFT$" />
+        <node concept="15s5l7" id="7DfYVnlwVqO" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+          <property role="huDt6" value="all typesystem messages" />
+        </node>
       </node>
     </node>
     <node concept="3aamgX" id="lH$PuiWfNK" role="3acgRq">
       <ref role="30HIoZ" to="zzzn:KaZMgyeHyQ" resolve="FunResExpr" />
       <node concept="gft3U" id="lH$PuiWhx5" role="1lVwrX">
         <node concept="2kixu8" id="lH$PuiWhx6" role="gfFT$" />
+        <node concept="15s5l7" id="7DfYVnlwVqQ" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+          <property role="huDt6" value="all typesystem messages" />
+        </node>
       </node>
     </node>
     <node concept="2rT7sh" id="2qRo6DhZXuC" role="2rTMjI">
@@ -9350,14 +9366,16 @@
               </node>
               <node concept="1Wc70l" id="EpsWA8jRsQ" role="3clFbw">
                 <node concept="1Wc70l" id="EpsWA8jRsR" role="3uHU7B">
-                  <node concept="2ZW3vV" id="EpsWA8jRsS" role="3uHU7B">
-                    <node concept="3Tqbb2" id="EpsWA8jRsT" role="2ZW6by">
-                      <ref role="ehGHo" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
-                    </node>
-                    <node concept="2OqwBi" id="EpsWA8jRsU" role="2ZW6bz">
+                  <node concept="2OqwBi" id="7DfYVnlwT22" role="3uHU7B">
+                    <node concept="2OqwBi" id="EpsWA8jRsU" role="2Oq$k0">
                       <node concept="30H73N" id="EpsWA8jRsV" role="2Oq$k0" />
                       <node concept="3TrEf2" id="EpsWA8jRsW" role="2OqNvi">
                         <ref role="3Tt5mk" to="zzzn:49WTic8eSDm" resolve="body" />
+                      </node>
+                    </node>
+                    <node concept="1mIQ4w" id="7DfYVnlwT23" role="2OqNvi">
+                      <node concept="chp4Y" id="7DfYVnlwT25" role="cj9EA">
+                        <ref role="cht4Q" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
                       </node>
                     </node>
                   </node>
@@ -9383,11 +9401,8 @@
                     <node concept="3x8VRR" id="EpsWA8jRt6" role="2OqNvi" />
                   </node>
                 </node>
-                <node concept="2ZW3vV" id="EpsWA8jRt7" role="3uHU7w">
-                  <node concept="3Tqbb2" id="EpsWA8jRt8" role="2ZW6by">
-                    <ref role="ehGHo" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
-                  </node>
-                  <node concept="2OqwBi" id="EpsWA8jRt9" role="2ZW6bz">
+                <node concept="2OqwBi" id="7DfYVnlwSO2" role="3uHU7w">
+                  <node concept="2OqwBi" id="EpsWA8jRt9" role="2Oq$k0">
                     <node concept="1eOMI4" id="EpsWA8jRta" role="2Oq$k0">
                       <node concept="10QFUN" id="EpsWA8jRtb" role="1eOMHV">
                         <node concept="3Tqbb2" id="EpsWA8jRtc" role="10QFUM">
@@ -9403,6 +9418,11 @@
                     </node>
                     <node concept="3TrEf2" id="EpsWA8jRtg" role="2OqNvi">
                       <ref role="3Tt5mk" to="hm2y:69zaTr1EKHX" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="7DfYVnlwSO3" role="2OqNvi">
+                    <node concept="chp4Y" id="7DfYVnlwSO5" role="cj9EA">
+                      <ref role="cht4Q" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
                     </node>
                   </node>
                 </node>
