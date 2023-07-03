@@ -21,9 +21,6 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
-      <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
-        <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
-      </concept>
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
@@ -612,13 +609,6 @@
       <property role="TrG5h" value="order" />
       <property role="IQ2nx" value="890435239346753553" />
       <ref role="AX2Wp" node="17Nm8oCo8NN" resolve="SortOrder" />
-      <node concept="3l_iC" id="17Nm8oCo8O5" role="lGtFl">
-        <node concept="1TJgyi" id="Lrty7CKd0h" role="3l_iP">
-          <property role="TrG5h" value="order" />
-          <property role="IQ2nx" value="890435239346753553" />
-          <ref role="AX2Wp" node="Lrty7CKd06" resolve="SortOrder" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2WnvluK">

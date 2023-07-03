@@ -46,9 +46,6 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
-      <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
-        <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
-      </concept>
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
@@ -711,13 +708,6 @@
       <property role="TrG5h" value="what" />
       <property role="IQ2nx" value="3822903164827733176" />
       <ref role="AX2Wp" node="17Nm8oCo8NX" resolve="SomeOrNoneOrColl" />
-      <node concept="3l_iC" id="17Nm8oCo8O9" role="lGtFl">
-        <node concept="1TJgyi" id="3kdFyLYhwMS" role="3l_iP">
-          <property role="IQ2nx" value="3822903164827733176" />
-          <property role="TrG5h" value="what" />
-          <ref role="AX2Wp" node="3kdFyLYhwMr" resolve="SomeOrNoneOrColl" />
-        </node>
-      </node>
     </node>
     <node concept="1TJgyj" id="3kdFyLYhwM7" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
