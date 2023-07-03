@@ -43,6 +43,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
   </imports>
   <registry>
@@ -2053,8 +2054,14 @@
                     </node>
                     <node concept="2OqwBi" id="34EJa6aIpEl" role="33vP2m">
                       <node concept="2YIFZM" id="34EJa6aIpEm" role="2Oq$k0">
-                        <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance()" resolve="getInstance" />
+                        <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository)" resolve="getInstance" />
                         <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
+                        <node concept="2OqwBi" id="7DfYVno9znA" role="37wK5m">
+                          <node concept="1Q80Hx" id="7DfYVno9yXW" role="2Oq$k0" />
+                          <node concept="liA8E" id="7DfYVno9z_o" role="2OqNvi">
+                            <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+                          </node>
+                        </node>
                       </node>
                       <node concept="liA8E" id="34EJa6aIpEn" role="2OqNvi">
                         <ref role="37wK5l" to="vndm:~LanguageRegistry.getAllLanguages()" resolve="getAllLanguages" />
