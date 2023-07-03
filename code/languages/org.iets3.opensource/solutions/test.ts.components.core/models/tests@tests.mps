@@ -101,8 +101,8 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="411710798111762102" name="org.iets3.core.expr.toplevel.structure.AbstractFunctionAdapter" flags="ng" index="q4_pW">
-        <child id="411710798109576791" name="fun" index="qdjUt" />
+      <concept id="336196204780206756" name="org.iets3.core.expr.toplevel.structure.AbstractFunctionLikeAdapter" flags="ng" index="34q58e">
+        <child id="336196204780218355" name="functionLike" index="34q0Xp" />
       </concept>
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
     </language>
@@ -134,6 +134,7 @@
       <concept id="8209493818901074928" name="org.iets3.components.core.structure.InlineComponentInstance" flags="ng" index="2sGezh">
         <child id="8209493818901074929" name="component" index="2sGezg" />
       </concept>
+      <concept id="3788552210011763141" name="org.iets3.components.core.structure.CompFunctionAdapter" flags="ng" index="2AlxnG" />
       <concept id="509610514780564823" name="org.iets3.components.core.structure.EmptySubstructureContent" flags="ng" index="GnyP7" />
       <concept id="509610514780580301" name="org.iets3.components.core.structure.ComponentSubstructure" flags="ng" index="GnABt">
         <child id="509610514780580302" name="contents" index="GnABu" />
@@ -183,7 +184,6 @@
       <concept id="227686178023855820" name="org.iets3.components.core.structure.AbstractConnectorRefTarget" flags="ng" index="1yi36j">
         <reference id="227686178023855923" name="connector" index="1yi31G" />
       </concept>
-      <concept id="3177368305997534653" name="org.iets3.components.core.structure.CompFunctionAdapter_old" flags="ng" index="3zyh8u" />
       <concept id="4217735156746120255" name="org.iets3.components.core.structure.AbstractConnectorBase" flags="ng" index="1O3KJS">
         <child id="4217735156746171148" name="connectorType" index="1O05jb" />
       </concept>
@@ -412,10 +412,10 @@
       <node concept="H_j2F" id="5L_xiGQ8voO" role="1i1XAe">
         <node concept="H_vQO" id="5L_xiGQ8voP" role="H_jLS" />
       </node>
-      <node concept="3zyh8u" id="7LbZKOmHXBr" role="1i1XAe">
-        <node concept="1aga60" id="7LbZKOmHXBs" role="qdjUt">
+      <node concept="2AlxnG" id="7DfYVno4_g0" role="1i1XAe">
+        <node concept="1aga60" id="7DfYVno4_g1" role="34q0Xp">
           <property role="TrG5h" value="funcInKindA" />
-          <node concept="UmHTt" id="7LbZKOmHXBt" role="1ahQXP" />
+          <node concept="UmHTt" id="7DfYVno4_go" role="1ahQXP" />
         </node>
       </node>
       <node concept="3o2yKq" id="7LbZKOmHOcf" role="1i0K$_" />
@@ -427,10 +427,10 @@
         <node concept="H_vQO" id="5L_xiGQ8voR" role="H_jLS" />
       </node>
       <node concept="1EZ9Mj" id="7LbZKOmHRWh" role="1i0K$_" />
-      <node concept="3zyh8u" id="7LbZKOmHX_l" role="1i1XAe">
-        <node concept="1aga60" id="7LbZKOmHX_m" role="qdjUt">
+      <node concept="2AlxnG" id="7DfYVno4_gU" role="1i1XAe">
+        <node concept="1aga60" id="7DfYVno4_gV" role="34q0Xp">
           <property role="TrG5h" value="funcInKindB" />
-          <node concept="UmHTt" id="7LbZKOmHXB5" role="1ahQXP" />
+          <node concept="UmHTt" id="7DfYVno4_hk" role="1ahQXP" />
         </node>
       </node>
     </node>
