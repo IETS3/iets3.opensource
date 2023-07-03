@@ -466,6 +466,36 @@
                 <property role="pfQqC" value="extCmp" />
               </node>
             </node>
+            <node concept="1i6xzV" id="7DfYVnlgN68" role="GnABu">
+              <node concept="1i1fwW" id="7DfYVnlgN69" role="MGl3R">
+                <ref role="1i1fwX" node="48ZWgAGs_py" resolve="ExternalRootComp" />
+              </node>
+              <node concept="pfQqD" id="7DfYVnlgN6a" role="pfQ1b">
+                <property role="pfQqC" value="extCmp2" />
+              </node>
+            </node>
+            <node concept="VCwYV" id="7DfYVnlgN0T" role="GnABu">
+              <ref role="paF6x" node="48ZWgAGwg_S" resolve="dummySubortPort" />
+              <ref role="paF6R" node="48ZWgAGwgBf" resolve="dummyGovPort" />
+              <node concept="VCwY8" id="7DfYVnlgN0U" role="VCno0">
+                <ref role="VCwYn" node="48ZWgAGs_vC" resolve="extCmp" />
+              </node>
+              <node concept="VCwY8" id="7DfYVnlgN0V" role="VC6R4">
+                <ref role="VCwYn" node="7DfYVnlgN68" resolve="extCmp2" />
+              </node>
+              <node concept="3IJI2w" id="7DfYVnlgN2l" role="1O05jb" />
+            </node>
+            <node concept="VCwYV" id="7DfYVnlgN7k" role="GnABu">
+              <ref role="paF6x" node="48ZWgAGwg_S" resolve="dummySubortPort" />
+              <ref role="paF6R" node="48ZWgAGwgBf" resolve="dummyGovPort" />
+              <node concept="VCwY8" id="7DfYVnlgN7l" role="VCno0">
+                <ref role="VCwYn" node="7DfYVnlgN68" resolve="extCmp2" />
+              </node>
+              <node concept="VCwY8" id="7DfYVnlgN7m" role="VC6R4">
+                <ref role="VCwYn" node="48ZWgAGs_vC" resolve="extCmp" />
+              </node>
+              <node concept="3IJI2w" id="7DfYVnlgN7n" role="1O05jb" />
+            </node>
           </node>
           <node concept="3oth5z" id="48ZWgAGs_wg" role="18DfD7">
             <node concept="33R2CR" id="48ZWgAGs_wh" role="33Rvbw">
@@ -536,6 +566,9 @@
                   <ref role="1BTHP0" node="48ZWgAGs_vC" resolve="extCmp" />
                   <node concept="3KTrbX" id="48ZWgAGwgvX" role="3KTr4d">
                     <ref role="3AHY9a" node="48ZWgAGs_vC" resolve="extCmp" />
+                  </node>
+                  <node concept="3KTrbX" id="7DfYVnlgSYu" role="3KTr4d">
+                    <ref role="3AHY9a" node="7DfYVnlgN68" resolve="extCmp2" />
                   </node>
                 </node>
               </node>
