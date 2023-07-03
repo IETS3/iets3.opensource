@@ -15,7 +15,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
-        <reference id="899069222106091871" name="oldMember" index="2wpffI" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
@@ -26,19 +25,6 @@
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
-      </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
-        <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
-        <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
-        <child id="6491077959632451996" name="oldEnum" index="3lCyv" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -480,50 +466,21 @@
     <property role="TrG5h" value="TimeUnit" />
     <property role="3F6X1D" value="3885635233750859768" />
     <ref role="1H5jkz" node="17Nm8oCo8NT" resolve="DAYS" />
-    <node concept="2JgGob" id="17Nm8oCo8NS" role="lGtFl">
-      <property role="3scbB" value="5CkWgdpp3eY/string_name" />
-      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
-      <node concept="AxPO7" id="3nGzaxUtzZS" role="3lCyv">
-        <property role="TrG5h" value="TimeUnit" />
-        <property role="3F6X1D" value="3885635233750859768" />
-        <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-        <node concept="M4N5e" id="3nGzaxUtzZT" role="M5hS2">
-          <property role="1uS6qo" value="DAYS" />
-          <property role="1uS6qv" value="DAYS" />
-        </node>
-        <node concept="M4N5e" id="3nGzaxUt$00" role="M5hS2">
-          <property role="1uS6qo" value="WEEKS" />
-          <property role="1uS6qv" value="WEEKS" />
-        </node>
-        <node concept="M4N5e" id="3nGzaxUtzZX" role="M5hS2">
-          <property role="1uS6qo" value="MONTHS" />
-          <property role="1uS6qv" value="MONTHS" />
-        </node>
-        <node concept="M4N5e" id="3nGzaxUt$07" role="M5hS2">
-          <property role="1uS6qo" value="YEARS" />
-          <property role="1uS6qv" value="YEARS" />
-        </node>
-      </node>
-    </node>
     <node concept="25R33" id="17Nm8oCo8NT" role="25R1y">
       <property role="TrG5h" value="DAYS" />
       <property role="3tVfz5" value="3885635233750859769" />
-      <ref role="2wpffI" node="3nGzaxUtzZT" />
     </node>
     <node concept="25R33" id="17Nm8oCo8NU" role="25R1y">
       <property role="TrG5h" value="WEEKS" />
       <property role="3tVfz5" value="3885635233750859776" />
-      <ref role="2wpffI" node="3nGzaxUt$00" />
     </node>
     <node concept="25R33" id="17Nm8oCo8NV" role="25R1y">
       <property role="TrG5h" value="MONTHS" />
       <property role="3tVfz5" value="3885635233750859773" />
-      <ref role="2wpffI" node="3nGzaxUtzZX" />
     </node>
     <node concept="25R33" id="17Nm8oCo8NW" role="25R1y">
       <property role="TrG5h" value="YEARS" />
       <property role="3tVfz5" value="3885635233750859783" />
-      <ref role="2wpffI" node="3nGzaxUt$07" />
     </node>
   </node>
 </model>
