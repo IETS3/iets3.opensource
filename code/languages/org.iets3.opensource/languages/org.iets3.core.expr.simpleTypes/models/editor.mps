@@ -221,7 +221,6 @@
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
-      <concept id="904978958140335648" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_parentNode" flags="ng" index="1tDOuL" />
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
@@ -345,7 +344,10 @@
                   </node>
                   <node concept="3clFbF" id="Mf8p5hcAaO" role="3cqZAp">
                     <node concept="2OqwBi" id="Mf8p5hcAhU" role="3clFbG">
-                      <node concept="1tDOuL" id="Mf8p5hcAaM" role="2Oq$k0" />
+                      <node concept="2OqwBi" id="7DfYVnlwYvJ" role="2Oq$k0">
+                        <node concept="313q4" id="7DfYVnlwYvx" role="2Oq$k0" />
+                        <node concept="1mfA1w" id="7DfYVnlwYzd" role="2OqNvi" />
+                      </node>
                       <node concept="1P9Npp" id="Mf8p5hcAqP" role="2OqNvi">
                         <node concept="37vLTw" id="Mf8p5hebsB" role="1P9ThW">
                           <ref role="3cqZAo" node="Mf8p5hea6J" resolve="negLit" />
@@ -355,7 +357,10 @@
                   </node>
                 </node>
                 <node concept="2OqwBi" id="Mf8p5hc_GF" role="3clFbw">
-                  <node concept="1tDOuL" id="Mf8p5hc_q3" role="2Oq$k0" />
+                  <node concept="2OqwBi" id="7DfYVnlwXIp" role="2Oq$k0">
+                    <node concept="313q4" id="7DfYVnlwXkU" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="7DfYVnlwYhm" role="2OqNvi" />
+                  </node>
                   <node concept="1mIQ4w" id="Mf8p5hcA4R" role="2OqNvi">
                     <node concept="chp4Y" id="Mf8p5hcA6U" role="cj9EA">
                       <ref role="cht4Q" to="hm2y:4rZeNQ6NtQV" resolve="UnaryMinusExpression" />
