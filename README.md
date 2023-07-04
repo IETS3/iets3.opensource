@@ -3,8 +3,15 @@
 ## Build instructions
 
 ### Using Gradle
-If you just want to build the project, no prerequisites are required. Just run `./gradlew build` from the checkout
-directory. This will download required version of the mbeddr platform language library from the itemis Nexus repository.
+If you just want to build the project, you only need to edit the gradle.properties file:
+Add your GitHub user name and a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), so that you can download the mps-qa dependency from GitHub.
+
+```
+gpr.user=user
+gpr.token=ghp_...
+```
+ 
+ Then just run `./gradlew build` from the checkout directory. This will download required version of the mbeddr platform language library from the itemis Nexus repository.
 When the build has finished, you can open the project in MPS from the folder `<iets3.opensource>/code/languages/org.iets3.opensource`
 
 To publish this project's artifacts to the Maven local repository run `./gradlew publishToMavenLocal`.
