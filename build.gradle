@@ -32,6 +32,13 @@ repositories {
             url repoUrl
         }
     }
+    maven {
+        url "https://maven.pkg.github.com/mbeddr/mps-qa"
+        credentials {
+            username = rootProject.findProperty("gpr.user")
+            password = rootProject.findProperty("gpr.token")
+        }
+    }
     mavenCentral()
 }
 
@@ -123,6 +130,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
+    languageLibs "org.mpsqa:all-in-one:$mpsVersion+"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
     pcollections 'org.pcollections:pcollections:3.1.4'
@@ -210,6 +218,26 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
 }
 
 check.dependsOn buildAndRunTests
+
+apply plugin: 'modelcheck'
+
+File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
+
+modelcheck {
+    projectLocation =  new File("$projectDir/code")
+    mpsConfig = configurations.mps
+    macros = [new Macro("iets3.github.opensource.home", "$projectDir")]
+    junitFile = modelcheckresult
+    errorNoFail = true
+    debug = false
+    maxHeap = "4G"
+}
+
+afterEvaluate {  project -> 
+    check.configure {
+        dependsOn tasks.named('checkmodels')
+    }
+}
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     archiveBaseName = 'org.iets3.opensource'
