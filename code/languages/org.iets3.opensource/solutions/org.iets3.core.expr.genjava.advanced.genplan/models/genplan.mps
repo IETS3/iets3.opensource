@@ -8,10 +8,15 @@
   <imports />
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
+      <concept id="1152961914448136207" name="jetbrains.mps.lang.generator.plan.structure.LanguageEntry" flags="ng" index="2Qf6Nf">
+        <child id="1152961914448136208" name="language" index="2Qf6Ng" />
+      </concept>
       <concept id="1820634577908471803" name="jetbrains.mps.lang.generator.plan.structure.Plan" flags="ng" index="2VgMpV">
         <child id="1820634577908471815" name="steps" index="2VgMA7" />
       </concept>
       <concept id="1820634577908471810" name="jetbrains.mps.lang.generator.plan.structure.Transform" flags="ng" index="2VgMA2">
+        <property id="2209292798354050154" name="individualStepPerGenerator" index="1s431M" />
+        <child id="1152961914448142326" name="entries" index="2Qf7GQ" />
         <child id="2944629966652439181" name="languages" index="1t_9vn" />
       </concept>
     </language>
@@ -83,6 +88,33 @@
       <node concept="2V$Bhx" id="1URTIF$uG6y" role="1t_9vn">
         <property role="2V$B1T" value="f61473f9-130f-42f6-b98d-6c438812c2f6" />
         <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.unitTest" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6m3HP9nDSZG" role="2VgMA7">
+      <property role="1s431M" value="true" />
+      <node concept="2Qf6Nf" id="6m3HP9nDSZY" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="6m3HP9nDT02" role="2Qf6Ng">
+          <property role="2V$B1T" value="8585453e-6bfb-4d80-98de-b16074f1d86c" />
+          <property role="2V$B1Q" value="jetbrains.mps.lang.test" />
+        </node>
+      </node>
+      <node concept="2Qf6Nf" id="6m3HP9nDT04" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="6m3HP9nDT0a" role="2Qf6Ng">
+          <property role="2V$B1T" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c" />
+          <property role="2V$B1Q" value="jetbrains.mps.lang.core" />
+        </node>
+      </node>
+      <node concept="2Qf6Nf" id="6m3HP9nDT0c" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="6m3HP9nDT0k" role="2Qf6Ng">
+          <property role="2V$B1T" value="d441fba0-f46b-43cd-b723-dad7b65da615" />
+          <property role="2V$B1Q" value="org.iets3.core.expr.tests" />
+        </node>
+      </node>
+      <node concept="2Qf6Nf" id="6m3HP9nDT0m" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="6m3HP9nDT0w" role="2Qf6Ng">
+          <property role="2V$B1T" value="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" />
+          <property role="2V$B1Q" value="com.mbeddr.core.base" />
+        </node>
       </node>
     </node>
   </node>
