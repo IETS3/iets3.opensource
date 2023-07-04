@@ -223,11 +223,16 @@ apply plugin: 'modelcheck'
 
 File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
 
+def pluginsList = []
+
 modelcheck {
     projectLocation =  new File("$projectDir/code")
+    mpsLocation = new File("$buildDir/mps")
+    plugins = pluginsList
     mpsConfig = configurations.mps
     macros = [new Macro("iets3.github.opensource.home", "$projectDir")]
     junitFile = modelcheckresult
+    junitFormat = "message"
     errorNoFail = true
     debug = false
     maxHeap = "4G"
