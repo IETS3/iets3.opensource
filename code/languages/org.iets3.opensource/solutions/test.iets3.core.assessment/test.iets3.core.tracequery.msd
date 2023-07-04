@@ -50,7 +50,7 @@
     <language slang="l:f3eafff0-30d2-46d6-9150-f0f3b880ce27:org.iets3.core.expr.path" version="0" />
     <language slang="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" version="4" />
     <language slang="l:7d21cc4b-4c24-41db-9868-8af4a7f3eba9:org.iets3.core.trace" version="0" />
-    <language slang="l:9eff3336-14d7-46c5-afe1-dcbad13c14c3:org.iets3.core.trace.test" version="-1" />
+    <language slang="l:9eff3336-14d7-46c5-afe1-dcbad13c14c3:org.iets3.core.trace.test" version="0" />
     <language slang="l:3c910f62-7ca9-45f3-a98a-c6239acaa8f1:test.iest3.component.attribute" version="0" />
   </languageVersions>
   <dependencyVersions>
@@ -100,4 +100,3 @@
     <module reference="785e2843-aa64-4743-afec-47634f9d78a4(test.iets3.core.tracequery)" version="0" />
   </dependencyVersions>
 </solution>
-
