@@ -239,6 +239,10 @@ afterEvaluate {  project ->
     }
 }
 
+checkmodels {
+    dependsOn(resolveMps)
+}
+
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     archiveBaseName = 'org.iets3.opensource'
     from artifactsDir
