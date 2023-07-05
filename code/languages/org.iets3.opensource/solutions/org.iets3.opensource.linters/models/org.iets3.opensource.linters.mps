@@ -235,12 +235,6 @@
   <node concept="2wR3oc" id="1y9CZgddoKG">
     <ref role="2wR3oD" to="emnw:3jiJ$OUDXsn" resolve="models_in_same_project_with_same_IDs" />
   </node>
-  <node concept="2wR3oc" id="1y9CZgddoKH">
-    <ref role="2wR3oD" to="wpu7:2dSiT1hKT_t" resolve="modules_and_file_system_layout_consistency" />
-  </node>
-  <node concept="2wR3oc" id="1y9CZgddoKI">
-    <ref role="2wR3oD" to="wpu7:3$9W3co2Xpl" resolve="modules_in_project_directory_on_harddisk_but_not_added_to_project" />
-  </node>
   <node concept="2wR3oc" id="1y9CZgddoKJ">
     <ref role="2wR3oD" to="wpu7:52u1lglB0sa" resolve="not_migrated_modules_and_models" />
   </node>
