@@ -805,20 +805,6 @@
                             <node concept="3N13vt" id="6lwqIIdYgdz" role="3cqZAp" />
                           </node>
                           <node concept="22lmx$" id="6lwqIIdYfBs" role="3clFbw">
-                            <node concept="3clFbC" id="6lwqIIdYfUh" role="3uHU7w">
-                              <node concept="Rm8GO" id="6lwqIIdYgbw" role="3uHU7w">
-                                <ref role="Rm8GQ" to="lui2:~SDependencyScope.GENERATES_INTO" resolve="GENERATES_INTO" />
-                                <ref role="1Px2BO" to="lui2:~SDependencyScope" resolve="SDependencyScope" />
-                              </node>
-                              <node concept="2OqwBi" id="6lwqIIdYfHG" role="3uHU7B">
-                                <node concept="37vLTw" id="6lwqIIdYfDO" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="6lwqIIdY8e0" resolve="dep" />
-                                </node>
-                                <node concept="liA8E" id="6lwqIIdYfLg" role="2OqNvi">
-                                  <ref role="37wK5l" to="w0gx:~Dependency.getScope()" resolve="getScope" />
-                                </node>
-                              </node>
-                            </node>
                             <node concept="3clFbC" id="6lwqIIdYfmn" role="3uHU7B">
                               <node concept="2OqwBi" id="6lwqIIdYeHZ" role="3uHU7B">
                                 <node concept="37vLTw" id="6lwqIIdYewE" role="2Oq$k0">
@@ -830,6 +816,20 @@
                               </node>
                               <node concept="Rm8GO" id="6lwqIIdYfAa" role="3uHU7w">
                                 <ref role="Rm8GQ" to="lui2:~SDependencyScope.DESIGN" resolve="DESIGN" />
+                                <ref role="1Px2BO" to="lui2:~SDependencyScope" resolve="SDependencyScope" />
+                              </node>
+                            </node>
+                            <node concept="3clFbC" id="6lwqIIdYfUh" role="3uHU7w">
+                              <node concept="2OqwBi" id="6lwqIIdYfHG" role="3uHU7B">
+                                <node concept="37vLTw" id="6lwqIIdYfDO" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6lwqIIdY8e0" resolve="dep" />
+                                </node>
+                                <node concept="liA8E" id="6lwqIIdYfLg" role="2OqNvi">
+                                  <ref role="37wK5l" to="w0gx:~Dependency.getScope()" resolve="getScope" />
+                                </node>
+                              </node>
+                              <node concept="Rm8GO" id="6lwqIIdYgbw" role="3uHU7w">
+                                <ref role="Rm8GQ" to="lui2:~SDependencyScope.GENERATES_INTO" resolve="GENERATES_INTO" />
                                 <ref role="1Px2BO" to="lui2:~SDependencyScope" resolve="SDependencyScope" />
                               </node>
                             </node>

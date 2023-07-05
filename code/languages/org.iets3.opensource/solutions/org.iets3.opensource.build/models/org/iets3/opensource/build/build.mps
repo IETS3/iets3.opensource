@@ -3871,6 +3871,7 @@
         </node>
         <node concept="1SiIV0" id="3MqEfsXeLmt" role="3bR37C">
           <node concept="3bR9La" id="3MqEfsXeLmu" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="5khwDRKS378" resolve="org.iets3.core.expr.base.collections.stubs" />
           </node>
         </node>
