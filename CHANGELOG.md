@@ -11,8 +11,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
-- Typesystem problems when computing the least common supertype (s.a.[The type inference underlying the alt-expressions doesn't work correctly] (https://github.com/IETS3/iets3.opensource/issues/505).
-  These occured e. g. when using expressions returning different types, so that the super type of those should build by using a join type.
+- Computation of the least-common-supertype for expressions with different return types has been fixed. The typesystem now correctly infers a join type (c.f. [original issue](https://github.com/IETS3/iets3.opensource/issues/505))
 
 ### Added
 
