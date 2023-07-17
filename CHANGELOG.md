@@ -15,5 +15,5 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 
-- Tuples are now handled within the typesystem.
-	
+- Tuples are now handled within the typesystem. 
+  Insteasd of allowing JoinTypes within tuples we join different tuple types (we do not allow JoinTypes within tuples).
