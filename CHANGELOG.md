@@ -12,7 +12,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Computation of the least-common-supertype for expressions with different return types has been fixed. The typesystem now correctly infers a join type (c.f. [original issue](https://github.com/IETS3/iets3.opensource/issues/505))
-- Naming constraint of IValidNamedConcept is customizable [original issue](https://github.com/IETS3/iets3.opensource/pull/631)
+- Naming constraint of IValidNamedConcept is customizable [original request](https://github.com/IETS3/iets3.opensource/pull/631)
+- Made transformation action [applyCommentsToIDocumentable](http://127.0.0.1:63320/node?ref=r%3A80fb0853-eb3b-4e84-aebd-cc7fdb011d97%28org.iets3.core.base.editor%29%2F5981628904839421072) only applicable if documentation is allowed [original request](https://github.com/IETS3/iets3.opensource/pull/626)
 
 ### Added
 
