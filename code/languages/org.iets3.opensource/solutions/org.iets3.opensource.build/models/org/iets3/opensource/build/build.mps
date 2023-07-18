@@ -12490,35 +12490,6 @@
           <ref role="1Busuk" node="5wLtKNeSRRB" resolve="org.iets3.core.base" />
         </node>
       </node>
-      <node concept="1yeLz9" id="6jNBFGEiifc" role="1TViLv">
-        <property role="TrG5h" value="test.ts.expr.os.validNameConcept.generator00" />
-        <property role="3LESm3" value="52010ce6-a1ee-447c-bb96-fb1aaf5e48af" />
-        <node concept="1BupzO" id="6jNBFGEiify" role="3bR31x">
-          <property role="3ZfqAx" value="generator1/templates" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="6jNBFGEiifz" role="1HemKq">
-            <node concept="398BVA" id="6jNBFGEiifd" role="3LXTmr">
-              <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="6jNBFGEiife" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6jNBFGEiiff" role="2Ry0An">
-                  <property role="2Ry0Am" value="test.ts.expr.os.validNameConcept" />
-                  <node concept="2Ry0Ak" id="6jNBFGEiifg" role="2Ry0An">
-                    <property role="2Ry0Am" value="generator1" />
-                    <node concept="2Ry0Ak" id="6jNBFGEiifh" role="2Ry0An">
-                      <property role="2Ry0Am" value="templates" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="6jNBFGEiif$" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="1E1JtA" id="5IOlOc8uq2z" role="3989C9">
       <property role="BnDLt" value="true" />
