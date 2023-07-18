@@ -933,7 +933,7 @@
               <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
             </node>
             <node concept="liA8E" id="2NHHcg2Kzwb" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:2NHHcg2KrmD" resolve="computerSupertype" />
+              <ref role="37wK5l" to="oq0c:2NHHcg2KrmD" resolve="computeSupertype" />
               <node concept="37vLTw" id="2NHHcg2KzyC" role="37wK5m">
                 <ref role="3cqZAo" node="2NHHcg2KyAZ" resolve="types" />
               </node>
@@ -1012,7 +1012,7 @@
               <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
             </node>
             <node concept="liA8E" id="3f3yNhCT_r4" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:2NHHcg2KrmD" resolve="computerSupertype" />
+              <ref role="37wK5l" to="oq0c:2NHHcg2KrmD" resolve="computeSupertype" />
               <node concept="37vLTw" id="3f3yNhCTG78" role="37wK5m">
                 <ref role="3cqZAo" node="3f3yNhCT_Y4" resolve="types" />
               </node>
