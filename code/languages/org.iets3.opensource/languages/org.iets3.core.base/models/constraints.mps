@@ -29,7 +29,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -55,9 +54,6 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="8356039341262087992" name="line" index="1aUNEU" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -83,14 +79,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-    </language>
-    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
-        <property id="155656958578482949" name="value" index="3oM_SC" />
-      </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
-        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -204,71 +192,6 @@
               </node>
               <node concept="2qgKlT" id="8q0nkX_haT" role="2OqNvi">
                 <ref role="37wK5l" to="gdgh:64w0Iq2$5zE" resolve="allowEverythingExceptWhitespace" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="39ERoteBOIj" role="3cqZAp" />
-          <node concept="3SKdUt" id="39ERoteBNe2" role="3cqZAp">
-            <node concept="1PaTwC" id="39ERoteBNe3" role="1aUNEU">
-              <node concept="3oM_SD" id="39ERoteBNgx" role="1PaTwD">
-                <property role="3oM_SC" value="It" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNgB" role="1PaTwD">
-                <property role="3oM_SC" value="is" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNgH" role="1PaTwD">
-                <property role="3oM_SC" value="essential" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNiV" role="1PaTwD">
-                <property role="3oM_SC" value="that" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNk3" role="1PaTwD">
-                <property role="3oM_SC" value="this" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNky" role="1PaTwD">
-                <property role="3oM_SC" value="test" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNkF" role="1PaTwD">
-                <property role="3oM_SC" value="uses" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNlQ" role="1PaTwD">
-                <property role="3oM_SC" value="only" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNn4" role="1PaTwD">
-                <property role="3oM_SC" value="this" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNnj" role="1PaTwD">
-                <property role="3oM_SC" value="method" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNoz" role="1PaTwD">
-                <property role="3oM_SC" value="to" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNrv" role="1PaTwD">
-                <property role="3oM_SC" value="check" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNu5" role="1PaTwD">
-                <property role="3oM_SC" value="for" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNuo" role="1PaTwD">
-                <property role="3oM_SC" value="valid" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNvE" role="1PaTwD">
-                <property role="3oM_SC" value="names," />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNx4" role="1PaTwD">
-                <property role="3oM_SC" value="because" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBOoi" role="1PaTwD">
-                <property role="3oM_SC" value="tests" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBNyP" role="1PaTwD">
-                <property role="3oM_SC" value="expect" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBN$e" role="1PaTwD">
-                <property role="3oM_SC" value="this" />
-              </node>
-              <node concept="3oM_SD" id="39ERoteBOtl" role="1PaTwD">
-                <property role="3oM_SC" value="behaviour" />
               </node>
             </node>
           </node>
