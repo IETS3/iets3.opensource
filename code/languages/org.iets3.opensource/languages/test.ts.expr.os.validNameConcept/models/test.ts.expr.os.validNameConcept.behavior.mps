@@ -8,7 +8,6 @@
   </languages>
   <imports>
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
-    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="otrn" ref="r:e2fb2588-e67f-482d-9930-e9a6a3971cb0(test.ts.expr.os.validNameConcept.structure)" implicit="true" />
   </imports>
   <registry>

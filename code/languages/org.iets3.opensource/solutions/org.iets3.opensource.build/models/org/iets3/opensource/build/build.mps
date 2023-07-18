@@ -12567,19 +12567,9 @@
           <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
         </node>
       </node>
-      <node concept="1SiIV0" id="5IOlOc8vtjs" role="3bR37C">
-        <node concept="3bR9La" id="5IOlOc8vtjt" role="1SiIV1">
-          <ref role="3bR37D" node="5zQvLw7dx1X" resolve="org.iets3.core.expr.datetime" />
-        </node>
-      </node>
       <node concept="1SiIV0" id="5IOlOc8vtju" role="3bR37C">
         <node concept="3bR9La" id="5IOlOc8vtjv" role="1SiIV1">
           <ref role="3bR37D" node="44Ryrhr_Yca" resolve="org.iets3.core.expr.util" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="5IOlOc8vtjw" role="3bR37C">
-        <node concept="3bR9La" id="5IOlOc8vtjx" role="1SiIV1">
-          <ref role="3bR37D" node="7wjZwvOduey" resolve="org.iets3.core.expr.tests.rt" />
         </node>
       </node>
       <node concept="3rtmxn" id="5IOlOc8vvhm" role="3bR31x">
@@ -12601,11 +12591,6 @@
       <node concept="1SiIV0" id="6q$NxWeKRIj" role="3bR37C">
         <node concept="3bR9La" id="6q$NxWeKRIk" role="1SiIV1">
           <ref role="3bR37D" node="5wLtKNeSRQv" resolve="org.iets3.core.expr.math" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="6q$NxWeKRIl" role="3bR37C">
-        <node concept="3bR9La" id="6q$NxWeKRIm" role="1SiIV1">
-          <ref role="3bR37D" to="al5i:776vT$mR9hk" resolve="com.mbeddr.mpsutil.compare" />
         </node>
       </node>
       <node concept="1SiIV0" id="6q$NxWeKRIn" role="3bR37C">
@@ -12643,11 +12628,6 @@
       <node concept="1SiIV0" id="66PK8SyARdP" role="3bR37C">
         <node concept="3bR9La" id="66PK8SyARdQ" role="1SiIV1">
           <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="66PK8SyARdR" role="3bR37C">
-        <node concept="3bR9La" id="66PK8SyARdS" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
         </node>
       </node>
       <node concept="1SiIV0" id="2tv4PdqaQDU" role="3bR37C">
