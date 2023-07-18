@@ -12,8 +12,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Computation of the least-common-supertype for expressions with different return types has been fixed. The typesystem now correctly infers a join type (c.f. [original issue](https://github.com/IETS3/iets3.opensource/issues/505))
+- Naming constraint of IValidNamedConcept is customizable [original issue](https://github.com/IETS3/iets3.opensource/pull/631)
 
 ### Added
 
 - Tuples are now handled within the typesystem.
    Instead of allowing JoinTypes within tuples we merge different tuple types by JoinTypes.
+- Each subconcept of IValidNamedConcept can now contribute and customize naming constraints
