@@ -133,6 +133,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
     <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
       <concept id="5096753237482793710" name="org.iets3.core.expr.lambda.structure.ReadModifyEffectTag" flags="ng" index="2lgajY" />
@@ -463,6 +467,10 @@
     <property role="TrG5h" value="encryptedTest" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="TUBgQ0FQG0" role="1SKRRt">
+      <node concept="15s5l7" id="2X44w_BFqzF" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnU" id="7bZFIilWD7g" role="1qenE9">
         <property role="TrG5h" value="encryptedTest" />
         <node concept="2zPypq" id="TUBgQ0FR0l" role="_iOnB">

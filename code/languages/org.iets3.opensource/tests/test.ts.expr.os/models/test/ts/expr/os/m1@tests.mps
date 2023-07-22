@@ -802,6 +802,10 @@
     <property role="TrG5h" value="stringTests" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7k$Bvd3eSUO" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vOHYc" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7Z_pmaBAG8j" role="1qenE9">
         <property role="TrG5h" value="stringTests" />
         <node concept="2zPypq" id="7k$Bvd3eTmz" role="_iOnC">
@@ -922,6 +926,10 @@
     <property role="TrG5h" value="realTests" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7k$Bvd3eS9v" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vOI3Q" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7Z_pmaBAG8k" role="1qenE9">
         <property role="TrG5h" value="realTests" />
         <node concept="2zPypq" id="7k$Bvd3eS_f" role="_iOnC">
@@ -994,6 +1002,10 @@
     <property role="TrG5h" value="realAndIntTests" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7k$Bvd3eR9k" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vOIcH" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7Z_pmaBAG8l" role="1qenE9">
         <property role="TrG5h" value="realAndInt" />
         <node concept="2zPypq" id="7k$Bvd3eRFk" role="_iOnC">
@@ -1639,6 +1651,10 @@
     <property role="TrG5h" value="intTests" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7k$Bvd3eP5F" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vOIot" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7Z_pmaBAG8o" role="1qenE9">
         <property role="TrG5h" value="intTests" />
         <node concept="2zPypq" id="7k$Bvd3eQJE" role="_iOnC">
@@ -1763,6 +1779,10 @@
     <property role="TrG5h" value="errors2" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5aHkq2w38OJ" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vOIUK" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7Z_pmaBAG8p" role="1qenE9">
         <property role="TrG5h" value="errors2" />
         <node concept="2zPypq" id="5aHkq2w38OL" role="_iOnC">
@@ -2255,6 +2275,10 @@
     <property role="TrG5h" value="covariantTyping" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6HHp2WmO$ho" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vOJ4z" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7Z_pmaBAG8q" role="1qenE9">
         <property role="TrG5h" value="covariantTyping" />
         <node concept="2zPypq" id="6HHp2WmO$np" role="_iOnC">
@@ -3169,6 +3193,10 @@
     <property role="TrG5h" value="booleanTests" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7k$Bvd3eOiV" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vxhTq" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7Z_pmaBAG8s" role="1qenE9">
         <property role="TrG5h" value="booleanTests" />
         <node concept="2zPypq" id="7k$Bvd3eOQX" role="_iOnC">
@@ -3305,6 +3333,10 @@
     <property role="TrG5h" value="alt" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="TuTPrvFMnO" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vOJou" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7Z_pmaBAG8t" role="1qenE9">
         <property role="TrG5h" value="alt" />
         <node concept="2zPypq" id="38v7GtLpvHY" role="_iOnC">
@@ -5787,6 +5819,10 @@
     <property role="TrG5h" value="referenceTypes" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6JZACDWLVXa" role="1SKRRt">
+      <node concept="15s5l7" id="2X44w_B_giI" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7Z_pmaBAG8w" role="1qenE9">
         <property role="TrG5h" value="referenceTypes" />
         <node concept="_ixoA" id="6JZACDWLVYk" role="_iOnC" />
@@ -6140,6 +6176,10 @@
     <property role="TrG5h" value="grouping" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7cphKbKqVBP" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vvYyA" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7Z_pmaBAG8y" role="1qenE9">
         <property role="TrG5h" value="grouping" />
         <node concept="2Ss9d8" id="7cphKbKqWTD" role="_iOnC">
@@ -6430,6 +6470,10 @@
     <property role="TrG5h" value="numberTypes" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="63mrHUnQh9K" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vwDZy" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="63mrHUnQo5m" role="1qenE9">
         <property role="TrG5h" value="numbertypes" />
         <node concept="1Ws0TD" id="63mrHUnQh9N" role="_iOnC">
@@ -7642,6 +7686,7 @@
           <node concept="7CXmI" id="Y$AzCx9EFD" role="lGtFl">
             <node concept="7OXhh" id="Y$AzCx9EFV" role="7EUXB">
               <property role="GvXf4" value="true" />
+              <property role="G7GLP" value="true" />
             </node>
           </node>
         </node>
@@ -7663,6 +7708,7 @@
           <node concept="7CXmI" id="Y$AzCx9yC5" role="lGtFl">
             <node concept="7OXhh" id="Y$AzCx9yCn" role="7EUXB">
               <property role="GvXf4" value="true" />
+              <property role="G7GLP" value="true" />
             </node>
           </node>
         </node>
@@ -7687,6 +7733,7 @@
           <node concept="7CXmI" id="Y$AzCx9yCJ" role="lGtFl">
             <node concept="7OXhh" id="Y$AzCx9yCK" role="7EUXB">
               <property role="GvXf4" value="true" />
+              <property role="G7GLP" value="true" />
             </node>
           </node>
           <node concept="2p629w" id="Y$AzCx9yLx" role="3c3ckp" />
@@ -14469,6 +14516,10 @@
       </node>
     </node>
     <node concept="1qefOq" id="53f0GWGI1l1" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vOJBF" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7aAW5BPgQCy" role="1qenE9">
         <property role="TrG5h" value="typeOfIf" />
         <node concept="1aga60" id="53f0GWGI1Zm" role="_iOnC">
@@ -14890,6 +14941,10 @@
     <property role="TrG5h" value="algebraic" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5a_u3OyMFfH" role="1SKRRt">
+      <node concept="15s5l7" id="2X44w_BFUpE" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="5a_u3OyMFfI" role="1qenE9">
         <property role="TrG5h" value="algebraic" />
         <node concept="1KraG_" id="5a_u3OyMFHu" role="_iOnC">
@@ -15068,6 +15123,10 @@
     <property role="TrG5h" value="dateStuff" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7aRvJQEkOc_" role="1SKRRt">
+      <node concept="15s5l7" id="2X44w_BFwv9" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7aRvJQEkOcA" role="1qenE9">
         <property role="TrG5h" value="dateStuf" />
         <node concept="2zPypq" id="26CArgU3lPZ" role="_iOnC">
@@ -15300,6 +15359,10 @@
     <property role="TrG5h" value="vars" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1VmWkC0z0Bf" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vx9Pi" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="7aAW5BPgQCz" role="1qenE9">
         <property role="TrG5h" value="vars" />
         <node concept="1aga60" id="1VmWkC0z1Et" role="_iOnC">
@@ -15664,6 +15727,10 @@
     <property role="TrG5h" value="ListEquality" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="KoRsm$utLk" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vxhKy" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="KoRsm$utLm" role="1qenE9">
         <property role="TrG5h" value="ListEquality" />
         <node concept="_ixoA" id="KoRsm$utLt" role="_iOnC" />
@@ -16543,6 +16610,10 @@
       </node>
     </node>
     <node concept="1qefOq" id="4QQXQNDkWXU" role="1SKRRt">
+      <node concept="15s5l7" id="6YM8w5vOJG6" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="4QQXQNDkX10" role="1qenE9">
         <property role="TrG5h" value="LibUsingCommented" />
         <node concept="1X3_iC" id="4QQXQNDkX$_" role="lGtFl">
@@ -16760,6 +16831,10 @@
     <property role="TrG5h" value="tuplesInLists" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1CsE99tshJU" role="1SKRRt">
+      <node concept="15s5l7" id="2X44w_B_J1A" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused assignment&quot;;FLAVOUR_RULE_ID=&quot;[r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6775161151587298302]&quot;;" />
+        <property role="huDt6" value="Warning: Unused assignment" />
+      </node>
       <node concept="_iOnV" id="1CsE99tshJV" role="1qenE9">
         <property role="TrG5h" value="enums" />
         <node concept="2zPypq" id="1CsE99tsi13" role="_iOnC">
