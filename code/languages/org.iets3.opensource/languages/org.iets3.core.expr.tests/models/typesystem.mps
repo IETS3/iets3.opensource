@@ -11,6 +11,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="yjde" ref="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
@@ -1327,6 +1328,24 @@
     <node concept="1YaCAy" id="1ESmOTbCHeP" role="1YuTPh">
       <property role="TrG5h" value="andMatcher" />
       <ref role="1YaFvo" to="av4b:1ESmOTbCHcU" resolve="AndMatcher" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3YOARm9EwaG">
+    <property role="TrG5h" value="check_TestSuite" />
+    <node concept="3clFbS" id="3YOARm9EwaH" role="18ibNy">
+      <node concept="3clFbF" id="5S6diJ8r0dZ" role="3cqZAp">
+        <node concept="2YIFZM" id="5S6diJ8r0gy" role="3clFbG">
+          <ref role="37wK5l" to="yjde:hNAD0wM" resolve="checkDataFlow" />
+          <ref role="1Pybhc" to="yjde:hNACUz_" resolve="DataFlowUtil" />
+          <node concept="1YBJjd" id="3YOARm9Ews_" role="37wK5m">
+            <ref role="1YBMHb" node="3YOARm9EwaJ" resolve="testSuite" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3YOARm9EwaJ" role="1YuTPh">
+      <property role="TrG5h" value="testSuite" />
+      <ref role="1YaFvo" to="av4b:ub9nkyK62f" resolve="TestSuite" />
     </node>
   </node>
 </model>
