@@ -8,7 +8,7 @@
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
-    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
+    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -44,6 +44,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
@@ -87,6 +90,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -935,15 +939,15 @@
           </node>
         </node>
         <node concept="3clFbH" id="3YOARm9A$MC" role="3cqZAp" />
-        <node concept="Jncv_" id="3YOARm9A$SK" role="3cqZAp">
-          <ref role="JncvD" to="zzzn:1VmWkC0$wKA" resolve="LocalVarRef" />
-          <node concept="2OqwBi" id="3YOARm9A_ih" role="JncvB">
-            <node concept="3__QtB" id="3YOARm9A_1F" role="2Oq$k0" />
-            <node concept="3TrEf2" id="3YOARm9A_Mt" role="2OqNvi">
+        <node concept="Jncv_" id="2X44w_BemyN" role="3cqZAp">
+          <ref role="JncvD" to="hm2y:aPhVmWYjmk" resolve="ICanBeLValue" />
+          <node concept="2OqwBi" id="2X44w_BemSK" role="JncvB">
+            <node concept="3__QtB" id="2X44w_BemCq" role="2Oq$k0" />
+            <node concept="3TrEf2" id="2X44w_Benqa" role="2OqNvi">
               <ref role="3Tt5mk" to="hm2y:4rZeNQ6MpKm" resolve="left" />
             </node>
           </node>
-          <node concept="3clFbS" id="3YOARm9A$SO" role="Jncv$">
+          <node concept="3clFbS" id="2X44w_BemyR" role="Jncv$">
             <node concept="3_FXB6" id="3YOARm9At3w" role="3cqZAp">
               <node concept="2OqwBi" id="3YOARm9Atef" role="1XBRO_">
                 <node concept="3__QtB" id="3YOARm9AtdT" role="2Oq$k0" />
@@ -953,17 +957,17 @@
               </node>
               <node concept="2OqwBi" id="3YOARm9AAS7" role="3_H1SZ">
                 <node concept="Jnkvi" id="3YOARm9AAHN" role="2Oq$k0">
-                  <ref role="1M0zk5" node="3YOARm9A$SQ" resolve="localVarRef" />
+                  <ref role="1M0zk5" node="2X44w_BemyT" resolve="leftValue" />
                 </node>
-                <node concept="3TrEf2" id="3YOARm9ABac" role="2OqNvi">
-                  <ref role="3Tt5mk" to="zzzn:1VmWkC0$wL2" resolve="var" />
+                <node concept="2qgKlT" id="2X44w_Beoep" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:2X44w_B9GfH" resolve="getReferenableNode" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="JncvC" id="3YOARm9A$SQ" role="JncvA">
-            <property role="TrG5h" value="localVarRef" />
-            <node concept="2jxLKc" id="3YOARm9A$SR" role="1tU5fm" />
+          <node concept="JncvC" id="2X44w_BemyT" role="JncvA">
+            <property role="TrG5h" value="leftValue" />
+            <node concept="2jxLKc" id="2X44w_BemyU" role="1tU5fm" />
           </node>
         </node>
       </node>
