@@ -1035,7 +1035,7 @@
       </node>
     </node>
     <node concept="3clFb_" id="2NHHcg2KrmD" role="jymVt">
-      <property role="TrG5h" value="computerSupertype" />
+      <property role="TrG5h" value="computeSupertype" />
       <property role="1EzhhJ" value="true" />
       <node concept="37vLTG" id="2NHHcg2Gd2N" role="3clF46">
         <property role="TrG5h" value="types" />
@@ -13932,16 +13932,12 @@
     </node>
     <node concept="3Tm1VV" id="2O$zpZk7gkh" role="1B3o_S" />
   </node>
-  <node concept="3HP615" id="34s7_UnUH2A">
+  <node concept="vrV6u" id="3HxoqR_T8F2">
+    <property role="TrG5h" value="typesystemCustomization" />
     <property role="3GE5qa" value="typesystem" />
-    <property role="TrG5h" value="TypesystemCustomizer" />
-    <node concept="3clFb_" id="34s7_UnUH4e" role="jymVt">
-      <property role="TrG5h" value="checkDuplicateValuesInEnums" />
-      <node concept="10P_77" id="34s7_UnUH4f" role="3clF45" />
-      <node concept="3Tm1VV" id="34s7_UnUH4g" role="1B3o_S" />
-      <node concept="3clFbS" id="34s7_UnUH4h" role="3clF47" />
+    <node concept="3uibUv" id="3HxoqR_WS1J" role="luc8K">
+      <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
     </node>
-    <node concept="3Tm1VV" id="34s7_UnUH2B" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="34s7_UnROPW">
     <property role="3GE5qa" value="typesystem" />
@@ -13995,12 +13991,16 @@
       <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
     </node>
   </node>
-  <node concept="vrV6u" id="3HxoqR_T8F2">
-    <property role="TrG5h" value="typesystemCustomization" />
+  <node concept="3HP615" id="34s7_UnUH2A">
     <property role="3GE5qa" value="typesystem" />
-    <node concept="3uibUv" id="3HxoqR_WS1J" role="luc8K">
-      <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
+    <property role="TrG5h" value="TypesystemCustomizer" />
+    <node concept="3clFb_" id="34s7_UnUH4e" role="jymVt">
+      <property role="TrG5h" value="checkDuplicateValuesInEnums" />
+      <node concept="10P_77" id="34s7_UnUH4f" role="3clF45" />
+      <node concept="3Tm1VV" id="34s7_UnUH4g" role="1B3o_S" />
+      <node concept="3clFbS" id="34s7_UnUH4h" role="3clF47" />
     </node>
+    <node concept="3Tm1VV" id="34s7_UnUH2B" role="1B3o_S" />
   </node>
 </model>
 
