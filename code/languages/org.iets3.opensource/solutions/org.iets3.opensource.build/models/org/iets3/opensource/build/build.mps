@@ -12583,6 +12583,22 @@
           <ref role="1Busuk" node="5wLtKNeSRRB" resolve="org.iets3.core.base" />
         </node>
       </node>
+      <node concept="3rtmxn" id="1kIK2aIj84b" role="3bR31x">
+        <node concept="3LXTmp" id="1kIK2aIj84c" role="3rtmxm">
+          <node concept="3qWCbU" id="1kIK2aIj84d" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="1kIK2aIj84e" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="1kIK2aIj84f" role="iGT6I">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="1kIK2aIj84g" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ts.expr.os.validNameConcept" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="5IOlOc8uq2z" role="3989C9">
       <property role="BnDLt" value="true" />
