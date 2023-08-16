@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:9dbbba98-10eb-4541-87eb-0b6e6386b68c(org.iets3.core.expr.data.editor)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
@@ -665,7 +666,7 @@
                 </node>
               </node>
               <node concept="1g0IQG" id="5hullqu1KnL" role="1geGt4">
-                <ref role="VmB1A" node="5BtJuGRt7EK" resolve="DataTableColumHeader" />
+                <ref role="VmB1A" node="5BtJuGRt7EK" resolve="DataTableColumnHeader" />
               </node>
             </node>
           </node>
@@ -1396,40 +1397,10 @@
       </node>
     </node>
   </node>
-  <node concept="1h_SRR" id="4dez30I6DgH">
-    <property role="TrG5h" value="DataRowRefForLookup_Actions" />
-    <ref role="1h_SK9" to="e9k1:1WMFq5x4fLm" resolve="DataRowRefForLookup" />
-    <node concept="1hA7zw" id="4dez30I6DgI" role="1h_SK8">
-      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
-      <node concept="1hAIg9" id="4dez30I6DgJ" role="1hA7z_">
-        <node concept="3clFbS" id="4dez30I6DgK" role="2VODD2">
-          <node concept="3clFbF" id="4dez30I7H_a" role="3cqZAp">
-            <node concept="2OqwBi" id="4dez30I7K9X" role="3clFbG">
-              <node concept="0IXxy" id="4dez30I7H_9" role="2Oq$k0" />
-              <node concept="3YRAZt" id="4dez30I7L4n" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1hA7zw" id="4dez30I6DgW" role="1h_SK8">
-      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
-      <node concept="1hAIg9" id="4dez30I6DgX" role="1hA7z_">
-        <node concept="3clFbS" id="4dez30I6DgY" role="2VODD2">
-          <node concept="3clFbF" id="4dez30I8hnq" role="3cqZAp">
-            <node concept="2OqwBi" id="4dez30I8hnr" role="3clFbG">
-              <node concept="0IXxy" id="4dez30I8hns" role="2Oq$k0" />
-              <node concept="3YRAZt" id="4dez30I8hnt" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="V5hpn" id="5BtJuGRt7DH">
     <property role="TrG5h" value="DataTableStyles" />
     <node concept="14StLt" id="5BtJuGRt7EK" role="V601i">
-      <property role="TrG5h" value="DataTableColumHeader" />
+      <property role="TrG5h" value="DataTableColumnHeader" />
       <node concept="3tD6jV" id="5T8tZL2kM_m" role="3F10Kt">
         <ref role="3tD7wE" to="reoo:5PDTdguqQmB" resolve="shade-color" />
         <node concept="3sjG9q" id="5T8tZL2kM_o" role="3tD6jU">
@@ -1456,13 +1427,13 @@
                     <node concept="1pGfFk" id="5T8tZL2kN8j" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                       <node concept="3cmrfG" id="7SzcYVyrJVU" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                       <node concept="3cmrfG" id="7SzcYVyrK6F" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                       <node concept="3cmrfG" id="7SzcYVyrKnG" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                     </node>
                   </node>
@@ -1537,13 +1508,13 @@
                     <node concept="1pGfFk" id="621ujKeQ6Gi" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                       <node concept="3cmrfG" id="7SzcYVyrKVS" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                       <node concept="3cmrfG" id="7SzcYVyrL8u" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                       <node concept="3cmrfG" id="7SzcYVyrLnI" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
+                        <property role="3cmrfH" value="80" />
                       </node>
                     </node>
                   </node>
@@ -1596,6 +1567,36 @@
       <node concept="3cWJ9i" id="5NQtOFqe3BT" role="1Qtc8$">
         <node concept="CtIbL" id="5NQtOFqe3BV" role="CtIbM">
           <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="4dez30I6DgH">
+    <property role="TrG5h" value="DataRowRefForLookup_Actions" />
+    <ref role="1h_SK9" to="e9k1:1WMFq5x4fLm" resolve="DataRowRefForLookup" />
+    <node concept="1hA7zw" id="4dez30I6DgI" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
+      <node concept="1hAIg9" id="4dez30I6DgJ" role="1hA7z_">
+        <node concept="3clFbS" id="4dez30I6DgK" role="2VODD2">
+          <node concept="3clFbF" id="4dez30I7H_a" role="3cqZAp">
+            <node concept="2OqwBi" id="4dez30I7K9X" role="3clFbG">
+              <node concept="0IXxy" id="4dez30I7H_9" role="2Oq$k0" />
+              <node concept="3YRAZt" id="4dez30I7L4n" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="4dez30I6DgW" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="4dez30I6DgX" role="1hA7z_">
+        <node concept="3clFbS" id="4dez30I6DgY" role="2VODD2">
+          <node concept="3clFbF" id="4dez30I8hnq" role="3cqZAp">
+            <node concept="2OqwBi" id="4dez30I8hnr" role="3clFbG">
+              <node concept="0IXxy" id="4dez30I8hns" role="2Oq$k0" />
+              <node concept="3YRAZt" id="4dez30I8hnt" role="2OqNvi" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

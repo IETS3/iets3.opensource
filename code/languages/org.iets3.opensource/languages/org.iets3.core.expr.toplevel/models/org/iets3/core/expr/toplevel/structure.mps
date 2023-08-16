@@ -625,6 +625,9 @@
     <node concept="PrWs8" id="67Y8mp$DMVL" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="3U1bmSgHg4o" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DN2V">
     <property role="3GE5qa" value="enum" />

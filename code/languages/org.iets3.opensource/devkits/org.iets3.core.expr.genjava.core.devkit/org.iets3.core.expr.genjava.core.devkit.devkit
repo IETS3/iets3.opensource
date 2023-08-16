@@ -8,7 +8,6 @@
   <exported-solutions>
     <exported-solution>3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)</exported-solution>
     <exported-solution>708a03ad-8699-43c9-821a-6cd00b68e9f8(org.iets3.core.expr.genjava.functionalJava)</exported-solution>
-    <exported-solution>272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.genjava.simpleTypes.rt)</exported-solution>
     <exported-solution>fde59617-0336-493b-a7ec-21148c3507f1(org.iets3.core.expr.genjava.temporal.rt)</exported-solution>
     <exported-solution>68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)</exported-solution>
     <exported-solution>336cc7f4-18d3-473b-81a1-d8df1c0ad27a(org.iets3.core.expr.genjava.toplevel.rt)</exported-solution>
@@ -17,6 +16,7 @@
     <exported-solution>b76a0f63-5959-456b-993a-c796cc0d0c13(org.iets3.core.expr.base.collections.stubs)</exported-solution>
     <exported-solution>52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)</exported-solution>
     <exported-solution>00ca1323-762b-4f39-ab5a-6a6bd602dc4b(org.iets3.core.expr.base.shared.runtime)</exported-solution>
+    <exported-solution>272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.collections.rt)</exported-solution>
   </exported-solutions>
   <generation-plan model="r:44582398-dfcf-40ad-bb09-b88bb3cc5de2(org.iets3.core.expr.genjava.core.genplan.genplan)" />
 </dev-kit>
