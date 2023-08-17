@@ -335,7 +335,6 @@
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
       </concept>
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
-        <property id="7430509679011668804" name="counterVarName" index="1qytDF" />
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
       <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
@@ -2820,7 +2819,6 @@
                   </node>
                 </node>
                 <node concept="1WS0z7" id="51$u9xhENVZ" role="lGtFl">
-                  <property role="1qytDF" value="" />
                   <node concept="3JmXsc" id="51$u9xhENW0" role="3Jn$fo">
                     <node concept="3clFbS" id="51$u9xhENW1" role="2VODD2">
                       <node concept="3clFbF" id="51$u9xhENW2" role="3cqZAp">
@@ -12342,7 +12340,6 @@
                           </node>
                         </node>
                         <node concept="1WS0z7" id="5GWVuvePe4C" role="lGtFl">
-                          <property role="1qytDF" value="" />
                           <node concept="3JmXsc" id="5GWVuvePe4D" role="3Jn$fo">
                             <node concept="3clFbS" id="5GWVuvePe4E" role="2VODD2">
                               <node concept="3clFbF" id="5GWVuvePe4F" role="3cqZAp">
@@ -12737,7 +12734,6 @@
                           </node>
                         </node>
                         <node concept="1WS0z7" id="2xqzTs3kPdA" role="lGtFl">
-                          <property role="1qytDF" value="" />
                           <node concept="3JmXsc" id="2xqzTs3kPdB" role="3Jn$fo">
                             <node concept="3clFbS" id="2xqzTs3kPdC" role="2VODD2">
                               <node concept="3clFbF" id="2xqzTs3kPdD" role="3cqZAp">
@@ -18192,7 +18188,6 @@
                     </node>
                   </node>
                   <node concept="1WS0z7" id="5RqWvw9lQ0s" role="lGtFl">
-                    <property role="1qytDF" value="" />
                     <node concept="3JmXsc" id="5RqWvw9lQ0t" role="3Jn$fo">
                       <node concept="3clFbS" id="5RqWvw9lQ0u" role="2VODD2">
                         <node concept="3clFbF" id="5RqWvw9lQ0v" role="3cqZAp">
@@ -18384,7 +18379,6 @@
                   </node>
                 </node>
                 <node concept="1WS0z7" id="7u5ECcyqLQj" role="lGtFl">
-                  <property role="1qytDF" value="" />
                   <node concept="3JmXsc" id="7u5ECcyqLQk" role="3Jn$fo">
                     <node concept="3clFbS" id="7u5ECcyqLQl" role="2VODD2">
                       <node concept="3clFbF" id="7u5ECcyqLQm" role="3cqZAp">
@@ -18864,7 +18858,6 @@
                 </node>
               </node>
               <node concept="1WS0z7" id="4ORV4ylbw1g" role="lGtFl">
-                <property role="1qytDF" value="" />
                 <node concept="3JmXsc" id="4ORV4ylbw1j" role="3Jn$fo">
                   <node concept="3clFbS" id="4ORV4ylbw1k" role="2VODD2">
                     <node concept="3clFbF" id="4ORV4ylbw1q" role="3cqZAp">
@@ -19101,7 +19094,6 @@
                     </node>
                   </node>
                   <node concept="1WS0z7" id="6hYPZtxkVIO" role="lGtFl">
-                    <property role="1qytDF" value="" />
                     <node concept="3JmXsc" id="6hYPZtxkVIP" role="3Jn$fo">
                       <node concept="3clFbS" id="6hYPZtxkVIQ" role="2VODD2">
                         <node concept="3clFbF" id="6hYPZtxkVIR" role="3cqZAp">

@@ -12592,6 +12592,22 @@
           </node>
         </node>
       </node>
+      <node concept="3rtmxn" id="1MVXLMysBxn" role="3bR31x">
+        <node concept="3LXTmp" id="1MVXLMysBxo" role="3rtmxm">
+          <node concept="3qWCbU" id="1MVXLMysBxp" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="1MVXLMysBxq" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="1MVXLMysBxr" role="iGT6I">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="1MVXLMysBxs" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ts.expr.os.validNameConcept" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="5IOlOc8uq2z" role="3989C9">
       <property role="BnDLt" value="true" />
