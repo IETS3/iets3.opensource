@@ -68,8 +68,8 @@
     <import index="461n" ref="r:3b46a963-6deb-4d82-bdc0-36b5d9297fcf(de.slisson.mps.conditionalEditor.hints.editor)" />
     <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
     <import index="jmi8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.util(MPS.IDEA/)" />
-    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
@@ -1187,10 +1187,10 @@
             <node concept="3cpWs6" id="2g6f$bar1TO" role="3cqZAp" />
           </node>
           <node concept="3clFbC" id="2g6f$bar1p$" role="3clFbw">
-            <node concept="10Nm6u" id="2g6f$bar1Qb" role="3uHU7w" />
             <node concept="37vLTw" id="2g6f$bar0T4" role="3uHU7B">
               <ref role="3cqZAo" node="2g6f$baqub7" resolve="root" />
             </node>
+            <node concept="10Nm6u" id="2g6f$bar1Qb" role="3uHU7w" />
           </node>
         </node>
         <node concept="3cpWs8" id="5Ch7I6mj5T1" role="3cqZAp">
@@ -1241,14 +1241,6 @@
         </node>
         <node concept="3clFbF" id="6gm0QU7cNvj" role="3cqZAp">
           <node concept="37vLTI" id="6gm0QU7cVnZ" role="3clFbG">
-            <node concept="2OqwBi" id="6gm0QU7cPRb" role="37vLTJ">
-              <node concept="37vLTw" id="6gm0QU7cNvh" role="2Oq$k0">
-                <ref role="3cqZAo" node="5Ch7I6mj5T2" resolve="options" />
-              </node>
-              <node concept="2OwXpG" id="6gm0QU7cSDL" role="2OqNvi">
-                <ref role="2Oxat5" to="pu3r:1jYY0u2P2KW" resolve="disposer" />
-              </node>
-            </node>
             <node concept="2ShNRf" id="6gm0QU7cXdP" role="37vLTx">
               <node concept="YeOm9" id="6gm0QU7dqS2" role="2ShVmc">
                 <node concept="1Y3b0j" id="6gm0QU7dqS5" role="YeSDq">
@@ -1286,6 +1278,14 @@
                     <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6gm0QU7cPRb" role="37vLTJ">
+              <node concept="37vLTw" id="6gm0QU7cNvh" role="2Oq$k0">
+                <ref role="3cqZAo" node="5Ch7I6mj5T2" resolve="options" />
+              </node>
+              <node concept="2OwXpG" id="6gm0QU7cSDL" role="2OqNvi">
+                <ref role="2Oxat5" to="pu3r:1jYY0u2P2KW" resolve="disposer" />
               </node>
             </node>
           </node>
