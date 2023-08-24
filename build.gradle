@@ -10,7 +10,7 @@ buildscript {
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.16.352.17eae3e'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.18.356.90f1a8c'
     }
 }
 
@@ -231,13 +231,12 @@ modelcheck {
     maxHeap = "4G"
 }
 
-/*
+
 afterEvaluate {  project -> 
     check.configure {
         dependsOn tasks.named('checkmodels')
     }
 }
-*/
 
 checkmodels {
     dependsOn(resolveMps)
