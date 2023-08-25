@@ -8,6 +8,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
@@ -15,8 +16,8 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
-    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -137,6 +138,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -211,6 +213,7 @@
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
+      <concept id="2489050352088028316" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_editorContext" flags="ng" index="2MNBq7" />
       <concept id="2283544813052478257" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarCellsTransformationMenuPart" flags="ng" index="2X7gjp" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
@@ -221,7 +224,6 @@
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
-      <concept id="904978958140335648" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_parentNode" flags="ng" index="1tDOuL" />
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
@@ -304,6 +306,23 @@
           </node>
           <node concept="315t4" id="6uFWVHJRvzf" role="31dnY">
             <node concept="3clFbS" id="6uFWVHJRvzg" role="2VODD2">
+              <node concept="3cpWs8" id="3fBaoKvNdbH" role="3cqZAp">
+                <node concept="3cpWsn" id="3fBaoKvNdbK" role="3cpWs9">
+                  <property role="TrG5h" value="parent" />
+                  <node concept="3Tqbb2" id="3fBaoKvNdbF" role="1tU5fm" />
+                  <node concept="2OqwBi" id="3fBaoKvNdUc" role="33vP2m">
+                    <node concept="2OqwBi" id="3fBaoKvNdwB" role="2Oq$k0">
+                      <node concept="2MNBq7" id="3fBaoKvNdhN" role="2Oq$k0" />
+                      <node concept="liA8E" id="3fBaoKvNdGz" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode()" resolve="getSelectedNode" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3fBaoKvNe8w" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getParent()" resolve="getParent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbJ" id="Mf8p5hc_dR" role="3cqZAp">
                 <node concept="3clFbS" id="Mf8p5hc_dT" role="3clFbx">
                   <node concept="3cpWs8" id="Mf8p5hea6I" role="3cqZAp">
@@ -345,7 +364,9 @@
                   </node>
                   <node concept="3clFbF" id="Mf8p5hcAaO" role="3cqZAp">
                     <node concept="2OqwBi" id="Mf8p5hcAhU" role="3clFbG">
-                      <node concept="1tDOuL" id="Mf8p5hcAaM" role="2Oq$k0" />
+                      <node concept="37vLTw" id="3fBaoKvNept" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3fBaoKvNdbK" resolve="parent" />
+                      </node>
                       <node concept="1P9Npp" id="Mf8p5hcAqP" role="2OqNvi">
                         <node concept="37vLTw" id="Mf8p5hebsB" role="1P9ThW">
                           <ref role="3cqZAo" node="Mf8p5hea6J" resolve="negLit" />
@@ -355,7 +376,9 @@
                   </node>
                 </node>
                 <node concept="2OqwBi" id="Mf8p5hc_GF" role="3clFbw">
-                  <node concept="1tDOuL" id="Mf8p5hc_q3" role="2Oq$k0" />
+                  <node concept="37vLTw" id="3fBaoKvNell" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3fBaoKvNdbK" resolve="parent" />
+                  </node>
                   <node concept="1mIQ4w" id="Mf8p5hcA4R" role="2OqNvi">
                     <node concept="chp4Y" id="Mf8p5hcA6U" role="cj9EA">
                       <ref role="cht4Q" to="hm2y:4rZeNQ6NtQV" resolve="UnaryMinusExpression" />

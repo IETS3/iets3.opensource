@@ -12,7 +12,7 @@
   </facets>
   <accessoryModels />
   <generators>
-    <generator namespace="org.iets3.core.expr.repl#1240669143552786950" uuid="76ac7cd6-5b28-4bc4-9a31-45fa744b6ac9">
+    <generator alias="" namespace="org.iets3.core.expr.repl#1240669143552786950" uuid="76ac7cd6-5b28-4bc4-9a31-45fa744b6ac9">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -23,10 +23,9 @@
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
       </facets>
-      <external-templates />
-      <dependencies>
-        <dependency reexport="false">56959ea0-1a4c-409d-b923-9a5132cecf97(org.iets3.core.expr.tests#543569365052197681)</dependency>
-      </dependencies>
+      <external-templates>
+        <generator generatorUID="56959ea0-1a4c-409d-b923-9a5132cecf97(org.iets3.core.expr.tests#543569365052197681)" />
+      </external-templates>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />

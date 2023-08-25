@@ -11,9 +11,7 @@
     <devkit ref="ce1cf8e2-ad23-4a29-b20d-ca13a97e194f(org.iets3.core.expr.advanced.devkit)" />
     <devkit ref="b2a65b84-7ec9-404f-8602-f16394bb1d98(org.iets3.core.expr.stateful.devkit)" />
   </languages>
-  <imports>
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-  </imports>
+  <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
@@ -139,6 +137,9 @@
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="1801842150043102459" name="org.iets3.core.expr.tests.structure.OptExpression" flags="ng" index="2nD44o">
+        <child id="1801842150043102462" name="expr" index="2nD44t" />
+      </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -3354,9 +3355,11 @@
             </node>
             <node concept="1KhKv7" id="5a_u3O$5dPZ" role="1KrJjn" />
           </node>
-          <node concept="1Kvkmc" id="5a_u3O$5drI" role="1Kh3Cz">
-            <property role="1Kvkm5" value="0" />
-            <node concept="1KgZKh" id="5a_u3O$5drJ" role="30czhm" />
+          <node concept="2nD44o" id="7DfYVnmwFKF" role="1Kh3Cz">
+            <node concept="1Kvkmc" id="5a_u3O$5drI" role="2nD44t">
+              <property role="1Kvkm5" value="0" />
+              <node concept="1KgZKh" id="5a_u3O$5drJ" role="30czhm" />
+            </node>
           </node>
         </node>
         <node concept="1Kh3CC" id="5a_u3OzRiVG" role="1Kh3EZ">
@@ -3366,9 +3369,11 @@
             </node>
             <node concept="1KhKv7" id="5a_u3OzRiVJ" role="1KrJjn" />
           </node>
-          <node concept="1Kvkmc" id="5a_u3OzRiVK" role="1Kh3Cz">
-            <property role="1Kvkm5" value="0" />
-            <node concept="1KgZKh" id="5a_u3OzRiVL" role="30czhm" />
+          <node concept="2nD44o" id="7DfYVnmwHBU" role="1Kh3Cz">
+            <node concept="1Kvkmc" id="5a_u3OzRiVK" role="2nD44t">
+              <property role="1Kvkm5" value="0" />
+              <node concept="1KgZKh" id="5a_u3OzRiVL" role="30czhm" />
+            </node>
           </node>
         </node>
         <node concept="1Kh3CC" id="5a_u3OzRnS_" role="1Kh3EZ">

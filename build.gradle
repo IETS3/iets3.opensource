@@ -10,7 +10,7 @@ buildscript {
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.16.352.17eae3e'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.18.356.90f1a8c'
     }
 }
 
@@ -123,6 +123,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
+    languageLibs "org.mpsqa:all-in-one:$mpsVersion+"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
     pcollections 'org.pcollections:pcollections:3.1.4'
@@ -210,6 +211,36 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
 }
 
 check.dependsOn buildAndRunTests
+
+apply plugin: 'modelcheck'
+
+File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
+
+def pluginsList = []
+
+modelcheck {
+    projectLocation =  new File("$projectDir/code")
+    mpsLocation = new File("$buildDir/mps")
+    plugins = pluginsList
+    mpsConfig = configurations.mps
+    macros = [new Macro("iets3.github.opensource.home", "$projectDir")]
+    junitFile = modelcheckresult
+    junitFormat = "message"
+    errorNoFail = true
+    debug = false
+    maxHeap = "4G"
+}
+
+
+afterEvaluate {  project -> 
+    check.configure {
+        dependsOn tasks.named('checkmodels')
+    }
+}
+
+checkmodels {
+    dependsOn(resolveMps)
+}
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     archiveBaseName = 'org.iets3.opensource'
