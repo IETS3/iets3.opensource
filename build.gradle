@@ -39,7 +39,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '17.0.3-b469.32'
+    jbrVersion = '17.0.6-b653.34'
 }
 
 // detect if we are in a CI build
@@ -53,17 +53,17 @@ if (project.hasProperty("forceCI")) {
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 def major = "2022"
-def minor = "2"
+def minor = "3"
 
 // Dependency versions
-ext.mpsVersion = '2022.2'
+ext.mpsVersion = '2022.3'
 
-def mbeddrVersion = "2022.2+"
+def mbeddrVersion = "2022.3+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
 // be used here. No need to convert "/" the script will take care of that.
-def mbeddrBranch = ""
+def mbeddrBranch = "master"
 def currentBranch = ""
 
 
@@ -238,9 +238,9 @@ afterEvaluate {  project ->
     }
 }
 
-checkmodels {
-    dependsOn(resolveMps)
-}
+//checkmodels {
+//    dependsOn(resolveMps)
+//}
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     archiveBaseName = 'org.iets3.opensource'
