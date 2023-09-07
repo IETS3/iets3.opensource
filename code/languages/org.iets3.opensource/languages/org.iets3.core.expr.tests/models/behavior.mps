@@ -11974,7 +11974,7 @@
                       </node>
                       <node concept="2YIFZM" id="3_xsRJ4yM00" role="37vLTx">
                         <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                        <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot,org.jetbrains.mps.openapi.persistence.ModelFactoryType)" resolve="createModelWithAdjustments" />
+                        <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot)" resolve="createModelWithAdjustments" />
                         <node concept="37vLTw" id="3_xsRJ4yNVW" role="37wK5m">
                           <ref role="3cqZAo" node="3_xsRJ4ALZc" resolve="name" />
                         </node>
@@ -11995,7 +11995,7 @@
                     </node>
                     <node concept="2YIFZM" id="3_xsRJ4yLZm" role="37vLTx">
                       <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                      <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot,org.jetbrains.mps.openapi.persistence.ModelFactoryType)" resolve="createModelWithAdjustments" />
+                      <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot)" resolve="createModelWithAdjustments" />
                       <node concept="37vLTw" id="3_xsRJ4yNDJ" role="37wK5m">
                         <ref role="3cqZAo" node="3_xsRJ4ALZc" resolve="name" />
                       </node>
