@@ -19,13 +19,6 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
-      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
-        <reference id="6054523464627965081" name="concept" index="trN6q" />
-      </concept>
-      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
-        <property id="7588428831955550663" name="role" index="Hh88m" />
-        <child id="7588428831947959310" name="attributed" index="EQaZv" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -199,55 +192,6 @@
       <property role="TrG5h" value="value" />
       <property role="IQ2nx" value="8337440621611273671" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="lqDNwvnvZv">
-    <property role="TrG5h" value="InferredAttribute" />
-    <property role="3GE5qa" value="definition.meta" />
-    <property role="EcuMT" value="385804577579859935" />
-    <property role="R4oN_" value="an inferred node attribute" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="1TJgyj" id="lqDNwvnvZG" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="substitutions" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <property role="IQ2ns" value="385804577579859948" />
-      <ref role="20lvS9" node="lqDNwvnvYQ" resolve="InferredSubstitution" />
-    </node>
-    <node concept="M6xJ_" id="lqDNwvnvZw" role="lGtFl">
-      <property role="Hh88m" value="inferred" />
-      <node concept="trNpa" id="5pSqQr$RAFq" role="EQaZv">
-        <ref role="trN6q" to="w1hl:1xEzHAktP2Q" resolve="TaggedType" />
-      </node>
-    </node>
-  </node>
-  <node concept="1TIwiD" id="lqDNwvnvYQ">
-    <property role="TrG5h" value="InferredSubstitution" />
-    <property role="3GE5qa" value="definition.meta" />
-    <property role="EcuMT" value="385804577579859894" />
-    <property role="R4oN_" value="an inferred substituion" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="lqDNwvnvZo" role="1TKVEi">
-      <property role="20kJfa" value="metaUnit" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <property role="IQ2ns" value="385804577579859928" />
-      <ref role="20lvS9" node="7eOyx9raabt" resolve="MetaUnit" />
-    </node>
-    <node concept="1TJgyj" id="lqDNwvnvZk" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="realUnit" />
-      <property role="IQ2ns" value="385804577579859924" />
-      <ref role="20lvS9" node="7eOyx9r3k4t" resolve="UnitSpecification" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7eOyx9raabt">
-    <property role="TrG5h" value="MetaUnit" />
-    <property role="3GE5qa" value="definition.meta" />
-    <property role="EcuMT" value="8337440621613064925" />
-    <property role="R4oN_" value="a meta unit" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2Ux6GHgTOwT" role="PzmwI">
-      <ref role="PrY4T" node="7eOyx9r3k3e" resolve="IUnit" />
     </node>
   </node>
   <node concept="1TIwiD" id="yGiRIEU5vF">
