@@ -5,7 +5,15 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). 
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## September 2023
 
+### Fixed
+
+- Unit comparisons for the **same** unit defined in **different** packages now lead to an error message for compatibility
+
+### Removed
+
+- the MetaUnit node was removed since it was not actively used 
 
 ## July 2023
 
