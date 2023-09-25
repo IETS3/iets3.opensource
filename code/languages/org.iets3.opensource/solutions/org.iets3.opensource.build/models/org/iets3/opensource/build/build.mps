@@ -12514,6 +12514,11 @@
           <ref role="3bR37D" node="7Yul2TvQ2N5" resolve="test.ts.expr.os.validNameConcept" />
         </node>
       </node>
+      <node concept="1SiIV0" id="193tnjlVdcJ" role="3bR37C">
+        <node concept="3bR9La" id="193tnjlVdcK" role="1SiIV1">
+          <ref role="3bR37D" node="OJuIQp$d7j" resolve="test.in.expr.os" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="OJuIQp$d7j" role="3989C9">
       <property role="BnDLt" value="true" />
