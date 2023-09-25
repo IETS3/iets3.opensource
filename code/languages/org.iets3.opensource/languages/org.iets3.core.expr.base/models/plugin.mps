@@ -13218,6 +13218,14 @@
     <property role="3GE5qa" value="identConfig" />
     <property role="TrG5h" value="IdentifierConfigurator" />
     <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="12O03AaWLfx" role="jymVt" />
+    <node concept="3clFb_" id="12O03AaWLhs" role="jymVt">
+      <property role="TrG5h" value="getPriorityLevel" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="10Oyi0" id="12O03AaWLht" role="3clF45" />
+      <node concept="3Tm1VV" id="12O03AaWLhu" role="1B3o_S" />
+      <node concept="3clFbS" id="12O03AaWLhv" role="3clF47" />
+    </node>
     <node concept="2tJIrI" id="3NUSEp5xIaF" role="jymVt" />
     <node concept="3clFb_" id="3NUSEp5xVog" role="jymVt">
       <property role="TrG5h" value="allowUmlautsInIdentifiers" />
@@ -13256,6 +13264,23 @@
     <property role="3GE5qa" value="identConfig" />
     <property role="TrG5h" value="DefaultIdentifierConfigurator" />
     <node concept="2tJIrI" id="3NUSEp5y2Eb" role="jymVt" />
+    <node concept="2tJIrI" id="12O03AaWL$w" role="jymVt" />
+    <node concept="3clFb_" id="12O03AaWLED" role="jymVt">
+      <property role="TrG5h" value="getPriorityLevel" />
+      <node concept="10Oyi0" id="12O03AaWLEE" role="3clF45" />
+      <node concept="3Tm1VV" id="12O03AaWLEF" role="1B3o_S" />
+      <node concept="3clFbS" id="12O03AaWLEH" role="3clF47">
+        <node concept="3clFbF" id="12O03AaWLEK" role="3cqZAp">
+          <node concept="3cmrfG" id="12O03AaWLEJ" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="12O03AaWLEI" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="12O03AaWLXx" role="jymVt" />
     <node concept="3clFb_" id="3NUSEp5y2Je" role="jymVt">
       <property role="TrG5h" value="allowUmlautsInIdentifiers" />
       <node concept="37vLTG" id="6fmG8CYU4m0" role="3clF46">
