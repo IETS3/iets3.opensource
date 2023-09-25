@@ -1032,7 +1032,7 @@
       </node>
     </node>
     <node concept="3clFb_" id="2NHHcg2KrmD" role="jymVt">
-      <property role="TrG5h" value="computerSupertype" />
+      <property role="TrG5h" value="computeSupertype" />
       <property role="1EzhhJ" value="true" />
       <node concept="37vLTG" id="2NHHcg2Gd2N" role="3clF46">
         <property role="TrG5h" value="types" />
