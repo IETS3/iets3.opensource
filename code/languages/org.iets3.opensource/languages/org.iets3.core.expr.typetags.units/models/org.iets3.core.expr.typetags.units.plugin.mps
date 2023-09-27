@@ -297,7 +297,7 @@
     </node>
     <node concept="2tJIrI" id="2rzAw9UV1UU" role="jymVt" />
     <node concept="3clFb_" id="2rzAw9UV188" role="jymVt">
-      <property role="TrG5h" value="computerSupertype" />
+      <property role="TrG5h" value="computeSupertype" />
       <node concept="37vLTG" id="2rzAw9UV189" role="3clF46">
         <property role="TrG5h" value="types" />
         <node concept="2I9FWS" id="2rzAw9UV18a" role="1tU5fm" />
@@ -352,7 +352,7 @@
           <node concept="3clFbS" id="2rzAw9UVxor" role="3clFbx">
             <node concept="3cpWs6" id="2rzAw9UVxKv" role="3cqZAp">
               <node concept="3nyPlj" id="2rzAw9UV1by" role="3cqZAk">
-                <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computerSupertype" />
+                <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computeSupertype" />
                 <node concept="37vLTw" id="2rzAw9UV1bv" role="37wK5m">
                   <ref role="3cqZAo" node="2rzAw9UV189" resolve="types" />
                 </node>
@@ -499,7 +499,7 @@
                 <property role="TrG5h" value="superBaseType" />
                 <node concept="3Tqbb2" id="2rzAw9V0r9x" role="1tU5fm" />
                 <node concept="3nyPlj" id="2rzAw9V0rwL" role="33vP2m">
-                  <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computerSupertype" />
+                  <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computeSupertype" />
                   <node concept="2OqwBi" id="2rzAw9V0rwM" role="37wK5m">
                     <node concept="37vLTw" id="2rzAw9V0rwN" role="2Oq$k0">
                       <ref role="3cqZAo" node="2rzAw9UYuJV" resolve="typesForUnit" />
@@ -675,7 +675,7 @@
                 <property role="TrG5h" value="nonUnitsSuperType" />
                 <node concept="3Tqbb2" id="66PK8Sylf7L" role="1tU5fm" />
                 <node concept="3nyPlj" id="66PK8Sylfui" role="33vP2m">
-                  <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computerSupertype" />
+                  <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computeSupertype" />
                   <node concept="2OqwBi" id="66PK8Sylkev" role="37wK5m">
                     <node concept="37vLTw" id="66PK8SyliUu" role="2Oq$k0">
                       <ref role="3cqZAo" node="2rzAw9UZA6t" resolve="typesWithoutUnitSpec" />
