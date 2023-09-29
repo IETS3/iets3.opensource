@@ -12,7 +12,15 @@
     <import index="rthw" ref="r:ee5b1a89-4907-4bd7-bb79-ba99ef537bd3(test.ts.expr.os.unitsonly@tests)" />
   </imports>
   <registry>
+    <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
+        <property id="5115872837157054173" name="value" index="30bXRw" />
+      </concept>
+    </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
+        <child id="7089558164906249715" name="value" index="2zPyp_" />
+      </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
       <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnU">
         <child id="543569365052711058" name="contents" index="_iOnB" />
@@ -67,6 +75,13 @@
       <property role="TrG5h" value="Modelling1" />
       <node concept="27tTDb" id="1YvM8qoUtOY" role="27tTDm">
         <ref role="27tTD8" node="1YvM8qoUtL3" resolve="Modelling" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="2ahKK8qLgfz" role="_iOnB" />
+    <node concept="2zPypq" id="2ahKK8qLgfU" role="_iOnB">
+      <property role="TrG5h" value="x" />
+      <node concept="30bXRB" id="2ahKK8qLggi" role="2zPyp_">
+        <property role="30bXRw" value="1" />
       </node>
     </node>
     <node concept="3GEVxB" id="1SyV1pw9Uqu" role="3i6evy">
