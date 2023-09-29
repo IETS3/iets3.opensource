@@ -1678,6 +1678,11 @@
             <ref role="3bR37D" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5ma292DgRbU" role="3bR37C">
+          <node concept="3bR9La" id="5ma292DgRbV" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="JUiQTzdtrz" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1991,11 +1996,6 @@
         <node concept="1SiIV0" id="_I$tx9JuJx" role="3bR37C">
           <node concept="3bR9La" id="_I$tx9JuJy" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7iQqdOBku0B" role="3bR37C">
-          <node concept="3bR9La" id="7iQqdOBku0C" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
       </node>
