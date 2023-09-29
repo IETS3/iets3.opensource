@@ -15,6 +15,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" implicit="true" />
     <import index="iy3m" ref="r:1c658055-0fdc-45f4-8442-9bac78d96a2f(org.iets3.core.expr.typetags.bindingtime.behavior)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -116,6 +117,10 @@
         <child id="3592071576955708909" name="isApplicableClause" index="1xSnZW" />
       </concept>
       <concept id="1201618299781" name="jetbrains.mps.lang.typesystem.structure.ErrorInfoExpression" flags="nn" index="3622Ei" />
+      <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
+        <child id="1195213635060" name="body" index="18ibNy" />
+      </concept>
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
@@ -775,6 +780,64 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="1CvMCa_pqT3">
+    <property role="TrG5h" value="check_BTGroup_cycles" />
+    <node concept="3clFbS" id="1CvMCa_pqT4" role="18ibNy">
+      <node concept="3clFbJ" id="1CvMCa_oYtw" role="3cqZAp">
+        <node concept="2OqwBi" id="1CvMCa_oYK$" role="3clFbw">
+          <node concept="1YBJjd" id="1CvMCa_oYtG" role="2Oq$k0">
+            <ref role="1YBMHb" node="1CvMCa_pqT6" resolve="btGroup" />
+          </node>
+          <node concept="2qgKlT" id="1CvMCa_oZbE" role="2OqNvi">
+            <ref role="37wK5l" to="hwgx:59HbAIOYtvQ" resolve="isInvolvedInCycle" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="1CvMCa_oYty" role="3clFbx">
+          <node concept="2MkqsV" id="1CvMCa_oZmt" role="3cqZAp">
+            <node concept="Xl_RD" id="1CvMCa_oZmD" role="2MkJ7o">
+              <property role="Xl_RC" value="Computation Class involved in Cycle. Please remove." />
+            </node>
+            <node concept="1YBJjd" id="1CvMCa_oZoO" role="1urrMF">
+              <ref role="1YBMHb" node="1CvMCa_pqT6" resolve="btGroup" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1CvMCa_pqT6" role="1YuTPh">
+      <property role="TrG5h" value="btGroup" />
+      <ref role="1YaFvo" to="n0mj:13eh33ruPNR" resolve="BTGroup" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="1CvMCa_prKz">
+    <property role="TrG5h" value="check_BTDeclaration_cycle" />
+    <node concept="3clFbS" id="1CvMCa_prK$" role="18ibNy">
+      <node concept="3clFbJ" id="1CvMCa_prKE" role="3cqZAp">
+        <node concept="2OqwBi" id="1CvMCa_ps6V" role="3clFbw">
+          <node concept="1YBJjd" id="1CvMCa_prKQ" role="2Oq$k0">
+            <ref role="1YBMHb" node="1CvMCa_prKA" resolve="btDeclaration" />
+          </node>
+          <node concept="2qgKlT" id="1CvMCa_psy1" role="2OqNvi">
+            <ref role="37wK5l" to="hwgx:59HbAIOYtvQ" resolve="isInvolvedInCycle" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="1CvMCa_prKG" role="3clFbx">
+          <node concept="2MkqsV" id="1CvMCa_psCS" role="3cqZAp">
+            <node concept="Xl_RD" id="1CvMCa_psD4" role="2MkJ7o">
+              <property role="Xl_RC" value="Computation Stage involved in cycle. Please remove." />
+            </node>
+            <node concept="1YBJjd" id="1CvMCa_psEn" role="1urrMF">
+              <ref role="1YBMHb" node="1CvMCa_prKA" resolve="btDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1CvMCa_prKA" role="1YuTPh">
+      <property role="TrG5h" value="btDeclaration" />
+      <ref role="1YaFvo" to="n0mj:2tub4U54J$L" resolve="BTDeclaration" />
     </node>
   </node>
 </model>
