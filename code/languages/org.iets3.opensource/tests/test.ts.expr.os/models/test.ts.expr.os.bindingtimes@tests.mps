@@ -347,5 +347,68 @@
   <node concept="2XOHcx" id="39Wr1SsNbgB">
     <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
+  <node concept="1lH9Xt" id="1CvMCa_pvyR">
+    <property role="TrG5h" value="CycleDetection" />
+    <node concept="1qefOq" id="1CvMCa_pvyS" role="1SKRRt">
+      <node concept="_iOnU" id="1CvMCa_pvyW" role="1qenE9">
+        <property role="TrG5h" value="CycleDetection" />
+        <node concept="3bHhz7" id="1CvMCa_pv_V" role="_iOnB">
+          <property role="TrG5h" value="Test" />
+          <node concept="27tTDb" id="1CvMCa_pvAc" role="myBl9">
+            <ref role="27tTD8" node="1CvMCa_pv_V" resolve="Test" />
+          </node>
+          <node concept="7CXmI" id="1CvMCa_pvAf" role="lGtFl">
+            <node concept="1TM$A" id="1CvMCa_pvAg" role="7EUXB" />
+          </node>
+        </node>
+        <node concept="3bHhz7" id="1CvMCa_pvAD" role="_iOnB">
+          <property role="TrG5h" value="Test2" />
+          <node concept="27tTDb" id="1CvMCa_pvBG" role="myBl9">
+            <ref role="27tTD8" node="1CvMCa_pvBj" resolve="Test3" />
+          </node>
+          <node concept="7CXmI" id="1CvMCa_pvBJ" role="lGtFl">
+            <node concept="1TM$A" id="1CvMCa_pvBK" role="7EUXB" />
+          </node>
+        </node>
+        <node concept="3bHhz7" id="1CvMCa_pvBj" role="_iOnB">
+          <property role="TrG5h" value="Test3" />
+          <node concept="27tTDb" id="1CvMCa_pvBD" role="myBl9">
+            <ref role="27tTD8" node="1CvMCa_pvAD" resolve="Test2" />
+          </node>
+          <node concept="7CXmI" id="1CvMCa_pvBP" role="lGtFl">
+            <node concept="1TM$A" id="1CvMCa_pvBQ" role="7EUXB" />
+          </node>
+        </node>
+        <node concept="_ixoA" id="1CvMCa_pvAl" role="_iOnB" />
+        <node concept="2yjdlZ" id="1CvMCa_pvz3" role="_iOnB">
+          <property role="TrG5h" value="Test" />
+          <node concept="27tr6f" id="1CvMCa_pvz6" role="27trTS">
+            <ref role="27tr6c" node="1CvMCa_pvz3" resolve="Test" />
+          </node>
+          <node concept="7CXmI" id="1CvMCa_pvzh" role="lGtFl">
+            <node concept="1TM$A" id="1CvMCa_pvzi" role="7EUXB" />
+          </node>
+        </node>
+        <node concept="2yjdlZ" id="1CvMCa_pvzM" role="_iOnB">
+          <property role="TrG5h" value="Test2" />
+          <node concept="27tr6f" id="1CvMCa_pvzV" role="27trTS">
+            <ref role="27tr6c" node="1CvMCa_pv$8" resolve="Test3" />
+          </node>
+          <node concept="7CXmI" id="1CvMCa_pv_g" role="lGtFl">
+            <node concept="1TM$A" id="1CvMCa_pv_h" role="7EUXB" />
+          </node>
+        </node>
+        <node concept="2yjdlZ" id="1CvMCa_pv$8" role="_iOnB">
+          <property role="TrG5h" value="Test3" />
+          <node concept="27tr6f" id="1CvMCa_pv$j" role="27trTS">
+            <ref role="27tr6c" node="1CvMCa_pvzM" resolve="Test2" />
+          </node>
+          <node concept="7CXmI" id="1CvMCa_pv_m" role="lGtFl">
+            <node concept="1TM$A" id="1CvMCa_pv_n" role="7EUXB" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
