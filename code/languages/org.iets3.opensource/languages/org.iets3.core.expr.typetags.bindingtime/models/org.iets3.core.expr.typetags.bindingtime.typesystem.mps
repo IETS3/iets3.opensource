@@ -11,7 +11,6 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="w1hl" ref="r:04b74a30-84ff-4d44-89e3-8084278f9c79(org.iets3.core.expr.typetags.structure)" implicit="true" />
     <import index="n0mj" ref="r:8218afdf-a485-4479-86a0-78900b96a4dd(org.iets3.core.expr.typetags.bindingtime.structure)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" implicit="true" />
     <import index="iy3m" ref="r:1c658055-0fdc-45f4-8442-9bac78d96a2f(org.iets3.core.expr.typetags.bindingtime.behavior)" implicit="true" />
@@ -135,18 +134,11 @@
         <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -447,44 +439,6 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="6OaC6FaQ4dj" role="3cqZAp" />
-      <node concept="2xdQw9" id="2ahKK8r0_Ld" role="3cqZAp">
-        <property role="2xdLsb" value="h1akgim/info" />
-        <node concept="3cpWs3" id="2ahKK8r0Y1p" role="9lYJi">
-          <node concept="2OqwBi" id="2ahKK8r14by" role="3uHU7w">
-            <node concept="2OqwBi" id="2ahKK8r11pe" role="2Oq$k0">
-              <node concept="37vLTw" id="2ahKK8r0ZQB" role="2Oq$k0">
-                <ref role="3cqZAo" node="6OaC6FaQ9ch" resolve="supTag" />
-              </node>
-              <node concept="2yIwOk" id="2ahKK8r12gD" role="2OqNvi" />
-            </node>
-            <node concept="liA8E" id="2ahKK8r15YD" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
-            </node>
-          </node>
-          <node concept="3cpWs3" id="2ahKK8r0QwQ" role="3uHU7B">
-            <node concept="3cpWs3" id="2ahKK8r0G0H" role="3uHU7B">
-              <node concept="Xl_RD" id="2ahKK8r0_Lf" role="3uHU7B">
-                <property role="Xl_RC" value="Concepts: " />
-              </node>
-              <node concept="2OqwBi" id="2ahKK8r0Nx$" role="3uHU7w">
-                <node concept="2OqwBi" id="2ahKK8r0KfH" role="2Oq$k0">
-                  <node concept="37vLTw" id="2ahKK8r0IHK" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6OaC6FaQ5dG" resolve="subTag" />
-                  </node>
-                  <node concept="2yIwOk" id="2ahKK8r0LBR" role="2OqNvi" />
-                </node>
-                <node concept="liA8E" id="2ahKK8r0Pn4" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
-                </node>
-              </node>
-            </node>
-            <node concept="Xl_RD" id="2ahKK8r0T0I" role="3uHU7w">
-              <property role="Xl_RC" value=" and " />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3clFbH" id="2ahKK8r0$D6" role="3cqZAp" />
       <node concept="3clFbJ" id="6OaC6FaGidh" role="3cqZAp">
         <node concept="3clFbS" id="6OaC6FaGidj" role="3clFbx">
@@ -518,38 +472,6 @@
         </node>
       </node>
       <node concept="3clFbH" id="6OaC6FaGfLQ" role="3cqZAp" />
-      <node concept="3clFbH" id="6OaC6FaQVo9" role="3cqZAp" />
-      <node concept="2xdQw9" id="2ahKK8qZMaQ" role="3cqZAp">
-        <property role="2xdLsb" value="h1akgim/info" />
-        <node concept="3cpWs3" id="2ahKK8r0ctP" role="9lYJi">
-          <node concept="2OqwBi" id="2ahKK8r0pbI" role="3uHU7w">
-            <node concept="37vLTw" id="2ahKK8r0esu" role="2Oq$k0">
-              <ref role="3cqZAo" node="6OaC6FaQ9ch" resolve="supTag" />
-            </node>
-            <node concept="2qgKlT" id="2ahKK8r0rfI" role="2OqNvi">
-              <ref role="37wK5l" to="qlm2:76ZhK6XVfon" resolve="getName" />
-            </node>
-          </node>
-          <node concept="3cpWs3" id="2ahKK8r00rI" role="3uHU7B">
-            <node concept="3cpWs3" id="2ahKK8qZRB1" role="3uHU7B">
-              <node concept="Xl_RD" id="2ahKK8qZMaS" role="3uHU7B">
-                <property role="Xl_RC" value="Checking " />
-              </node>
-              <node concept="2OqwBi" id="2ahKK8r0m7G" role="3uHU7w">
-                <node concept="37vLTw" id="2ahKK8qZXkC" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6OaC6FaQ5dG" resolve="subTag" />
-                </node>
-                <node concept="2qgKlT" id="2ahKK8r0nZK" role="2OqNvi">
-                  <ref role="37wK5l" to="qlm2:76ZhK6XVfon" resolve="getName" />
-                </node>
-              </node>
-            </node>
-            <node concept="Xl_RD" id="2ahKK8r02Hq" role="3uHU7w">
-              <property role="Xl_RC" value=" against " />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3SKdUt" id="6OaC6FaD9kM" role="3cqZAp">
         <node concept="1PaTwC" id="6OaC6FaD9kN" role="1aUNEU">
           <node concept="3oM_SD" id="6OaC6FaD9$k" role="1PaTwD">
