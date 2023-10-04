@@ -10,8 +10,8 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="w1hl" ref="r:04b74a30-84ff-4d44-89e3-8084278f9c79(org.iets3.core.expr.typetags.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -58,7 +58,7 @@
     <property role="EcuMT" value="2836753531041675569" />
     <property role="TrG5h" value="BTDeclaration" />
     <property role="34LRSv" value="stage" />
-    <property role="R4oN_" value="Computation stage" />
+    <property role="R4oN_" value="computation stage" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2tub4U553Hy" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
@@ -101,7 +101,7 @@
   <node concept="1TIwiD" id="13eh33ruPNR">
     <property role="EcuMT" value="1210980326440656119" />
     <property role="TrG5h" value="BTGroup" />
-    <property role="R4oN_" value="Group binding times under a common description" />
+    <property role="R4oN_" value="group binding times under a common description" />
     <property role="34LRSv" value="computation class" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="13eh33ruPNS" role="PzmwI">
