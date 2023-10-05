@@ -2332,6 +2332,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="4sMZ8GEaS9$" role="3bR37C">
+          <node concept="3bR9La" id="4sMZ8GEaS9_" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5wdSIUgQCW5" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -8469,6 +8474,9 @@
         <node concept="3LEDTM" id="2xddOZL76NM" role="3LEDUa">
           <ref role="3LEDTN" node="2xddOZL74Qf" resolve="org.iets3.core.expr.temporal.runtime" />
         </node>
+        <node concept="3LEDTy" id="4sMZ8GEaSkI" role="3LEDUa">
+          <ref role="3LEDTV" node="2utoDiy1iVD" resolve="org.iets3.core.expr.typetags.bindingtime" />
+        </node>
       </node>
       <node concept="3LEwk6" id="2zpAVpC_ky5" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -12723,6 +12731,11 @@
       <node concept="1SiIV0" id="7Yul2TvQ4JG" role="3bR37C">
         <node concept="3bR9La" id="7Yul2TvQ4JH" role="1SiIV1">
           <ref role="3bR37D" node="7Yul2TvQ2N5" resolve="test.ts.expr.os.validNameConcept" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="4sMZ8GEb1jK" role="3bR37C">
+        <node concept="3bR9La" id="4sMZ8GEb1jL" role="1SiIV1">
+          <ref role="3bR37D" node="2utoDiy1iVD" resolve="org.iets3.core.expr.typetags.bindingtime" />
         </node>
       </node>
     </node>
