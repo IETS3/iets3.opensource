@@ -862,5 +862,11 @@
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7MYpJaZ9zRp">
+    <property role="EcuMT" value="8988735099053161945" />
+    <property role="TrG5h" value="CurrentDateExpr" />
+    <property role="34LRSv" value="currentDate" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
 </model>
 
