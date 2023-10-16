@@ -12858,6 +12858,11 @@
           <ref role="3bR37D" node="6n8rWbyXz_9" resolve="org.iets3.core.expr.typetags.units.si" />
         </node>
       </node>
+      <node concept="1SiIV0" id="x6l$aosZ0M" role="3bR37C">
+        <node concept="3bR9La" id="x6l$aosZ0N" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="5kwEgmAh8J_" role="3989C9">
       <property role="BnDLt" value="true" />

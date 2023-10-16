@@ -175,6 +175,9 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -380,6 +383,12 @@
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
@@ -14025,6 +14034,61 @@
     <property role="3GE5qa" value="typesystem" />
     <node concept="3uibUv" id="3HxoqR_WS1J" role="luc8K">
       <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
+    </node>
+  </node>
+  <node concept="1lYeZD" id="x6l$aoyUxg">
+    <property role="TrG5h" value="DefaultIdentifierConfiguratorExtension" />
+    <property role="3GE5qa" value="identConfig" />
+    <ref role="1lYe$Y" node="3NUSEp5xVSm" resolve="identifierConfigurator" />
+    <node concept="3Tm1VV" id="x6l$aoyUxh" role="1B3o_S" />
+    <node concept="2tJIrI" id="x6l$aoyUxi" role="jymVt" />
+    <node concept="q3mfD" id="x6l$aozcTj" role="jymVt">
+      <property role="TrG5h" value="activate" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0CPy" resolve="activate" />
+      <node concept="3Tm1VV" id="x6l$aozcTl" role="1B3o_S" />
+      <node concept="3clFbS" id="x6l$aozcTn" role="3clF47">
+        <node concept="RRSsy" id="x6l$aoC4YD" role="3cqZAp">
+          <property role="RRSoG" value="h1akgim/info" />
+          <node concept="Xl_RD" id="x6l$aoC4YF" role="RRSoy">
+            <property role="Xl_RC" value="ExtensionPoint implementation DefaultIdentifierConfiguratorExtension is activated" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="x6l$aozcTq" role="3clF45" />
+    </node>
+    <node concept="q3mfD" id="x6l$aozcWg" role="jymVt">
+      <property role="TrG5h" value="deactivate" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0BDO" resolve="deactivate" />
+      <node concept="3Tm1VV" id="x6l$aozcWi" role="1B3o_S" />
+      <node concept="3clFbS" id="x6l$aozcWk" role="3clF47">
+        <node concept="RRSsy" id="x6l$aoC5nO" role="3cqZAp">
+          <property role="RRSoG" value="h1akgim/info" />
+          <node concept="Xl_RD" id="x6l$aoC5nP" role="RRSoy">
+            <property role="Xl_RC" value="ExtensionPoint implementation DefaultIdentifierConfiguratorExtension is deactivated" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="x6l$aozcWn" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="x6l$aoyUxl" role="jymVt" />
+    <node concept="q3mfD" id="x6l$aoyUxm" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
+      <node concept="3Tm1VV" id="x6l$aoyUxo" role="1B3o_S" />
+      <node concept="3clFbS" id="x6l$aoyUxq" role="3clF47">
+        <node concept="3cpWs6" id="2TlZyI4POS2" role="3cqZAp">
+          <node concept="2ShNRf" id="2TlZyI4PP1Q" role="3cqZAk">
+            <node concept="HV5vD" id="x6l$aozcRE" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="HV5vE" node="3NUSEp5y2Ea" resolve="DefaultIdentifierConfigurator" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="q3mfm" id="x6l$aoyUxr" role="3clF45">
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
+        <ref role="1QQUv3" node="x6l$aoyUxm" resolve="get" />
+      </node>
     </node>
   </node>
 </model>
