@@ -495,7 +495,7 @@
                           </node>
                           <node concept="3cpWs3" id="TcaAhOJ3xK" role="2MkJ7o">
                             <node concept="Xl_RD" id="TcaAhOJ4bz" role="3uHU7B">
-                              <property role="Xl_RC" value="No common supertype found:" />
+                              <property role="Xl_RC" value="Incompatible element types – " />
                             </node>
                             <node concept="2OqwBi" id="TcaAhODq_G" role="3uHU7w">
                               <node concept="Jnkvi" id="TcaAhODqaP" role="2Oq$k0">
