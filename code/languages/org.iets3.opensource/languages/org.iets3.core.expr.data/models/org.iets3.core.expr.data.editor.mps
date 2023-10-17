@@ -312,9 +312,7 @@
       <concept id="5662204344885760731" name="de.slisson.mps.tables.structure.IStylable" flags="ng" index="1g0I81">
         <child id="5662204344887343006" name="style" index="1geGt4" />
       </concept>
-      <concept id="5662204344885763446" name="de.slisson.mps.tables.structure.TableStyle" flags="ng" index="1g0IQG">
-        <reference id="1186406756722" name="styleClass" index="VmB1A" />
-      </concept>
+      <concept id="5662204344885763446" name="de.slisson.mps.tables.structure.TableStyle" flags="ng" index="1g0IQG" />
       <concept id="3785936898437629812" name="de.slisson.mps.tables.structure.BorderBottomWidthStyleItem" flags="lg" index="3hShVS" />
       <concept id="3785936898437423425" name="de.slisson.mps.tables.structure.IntegerTableStyleItem" flags="lg" index="3hSBzd">
         <property id="3785936898437424562" name="value" index="3hSBKY" />
@@ -623,9 +621,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="1g0IQG" id="5hullqu1KnL" role="1geGt4">
-                <ref role="VmB1A" node="5BtJuGRt7EK" resolve="DataTableColumnHeader" />
-              </node>
+              <node concept="1g0IQG" id="5hullqu1KnL" role="1geGt4" />
             </node>
           </node>
           <node concept="2reSaE" id="4_sn_QHs_5X" role="2rf8GZ">
