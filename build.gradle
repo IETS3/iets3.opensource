@@ -123,7 +123,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-    languageLibs "org.mpsqa:all-in-one:$mpsVersion"
+    languageLibs "org.mpsqa:all-in-one:$mpsVersion+"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
     pcollections 'org.pcollections:pcollections:3.1.4'
