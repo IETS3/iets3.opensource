@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:08bbdb26-9c27-4017-b6b0-44a8fa906889(test.in.expr.os.temporal@tests)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
@@ -88,6 +89,7 @@
         <child id="7849560302565679723" name="condition" index="39w5ZE" />
         <child id="7849560302565679725" name="thenPart" index="39w5ZG" />
       </concept>
+      <concept id="3889855429450038473" name="org.iets3.core.expr.base.structure.EmptyValue" flags="ng" index="1I1voI" />
       <concept id="5955298286257997823" name="org.iets3.core.expr.base.structure.ColonCast" flags="ng" index="1LgZZ2">
         <child id="5955298286257997833" name="type" index="1LgZ0O" />
         <child id="5955298286257997830" name="expr" index="1LgZ0V" />
@@ -505,6 +507,26 @@
         </node>
       </node>
     </node>
+    <node concept="2zPypq" id="4SmV64T2lkv" role="_iOnB">
+      <property role="TrG5h" value="v6" />
+      <property role="0Rz4W" value="34085867" />
+      <node concept="FfN7I" id="4SmV64T2lkw" role="2zPyp_">
+        <node concept="FfN7L" id="4SmV64T2lkx" role="FfN64">
+          <node concept="_emDc" id="4SmV64T2lkz" role="FfN7M">
+            <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+          </node>
+          <node concept="1I1voI" id="4SmV64TeQrN" role="FfN7O" />
+        </node>
+        <node concept="FfN7L" id="4SmV64T2lk$" role="FfN64">
+          <node concept="_emDc" id="4SmV64T2lk_" role="FfN7M">
+            <ref role="_emDf" node="7aRvJQErc4P" resolve="date05" />
+          </node>
+          <node concept="30bXRB" id="4SmV64T2lkA" role="FfN7O">
+            <property role="30bXRw" value="20" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2zPypq" id="x6l$amTjlT" role="_iOnB">
       <property role="TrG5h" value="list" />
       <node concept="3iBYfx" id="x6l$amTmbs" role="2zPyp_">
@@ -546,7 +568,7 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="x6l$anoBHl" role="_iOnB" />
+    <node concept="_ixoA" id="4SmV64TVKDD" role="_iOnB" />
     <node concept="_fkuM" id="VFjlN5ID3N" role="_iOnB">
       <property role="TrG5h" value="Equality" />
       <node concept="_fkuZ" id="VFjlN5L78C" role="_fkp5">
@@ -757,6 +779,34 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3dYjL0" id="4SmV64T1RZK" role="_fkp5" />
+      <node concept="_fkuZ" id="4SmV64T1ULd" role="_fkp5">
+        <node concept="_fku$" id="4SmV64T1ULe" role="_fkur" />
+        <node concept="_emDc" id="4SmV64T1UMy" role="_fkuY">
+          <ref role="_emDf" node="7aRvJQErc4W" resolve="v1" />
+        </node>
+        <node concept="_emDc" id="4SmV64T2EE6" role="_fkuS">
+          <ref role="_emDf" node="7aRvJQErc4W" resolve="v1" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="4SmV64T2EGW" role="_fkp5">
+        <node concept="_fku$" id="4SmV64T2EGX" role="_fkur" />
+        <node concept="_emDc" id="4SmV64T2EGY" role="_fkuY">
+          <ref role="_emDf" node="4SmV64T2lkv" resolve="v6" />
+        </node>
+        <node concept="_emDc" id="4SmV64T2EGZ" role="_fkuS">
+          <ref role="_emDf" node="4SmV64T2lkv" resolve="v6" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="4SmV64T2EFC" role="_fkp5">
+        <node concept="3uTIKI" id="4SmV64Tozc4" role="_fkur" />
+        <node concept="_emDc" id="4SmV64T2PiR" role="_fkuY">
+          <ref role="_emDf" node="7aRvJQErc4W" resolve="v1" />
+        </node>
+        <node concept="_emDc" id="4SmV64T2RXH" role="_fkuS">
+          <ref role="_emDf" node="4SmV64T2lkv" resolve="v6" />
         </node>
       </node>
     </node>
