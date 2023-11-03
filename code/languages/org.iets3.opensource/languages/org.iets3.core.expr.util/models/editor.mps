@@ -2952,7 +2952,7 @@
       <node concept="VPM3Z" id="5yPljRXY_4B" role="3F10Kt" />
       <node concept="2iRfu4" id="8XWEteeTxk" role="2iSdaV" />
       <node concept="3F0ifn" id="2FeCPobcYzo" role="3EZMnx">
-        <property role="3F0ifm" value="not" />
+        <property role="3F0ifm" value="[not]" />
         <ref role="1ERwB7" node="2FeCPoc7N5i" resolve="removeNegate" />
         <node concept="pkWqt" id="2FeCPobd1mQ" role="pqm2j">
           <node concept="3clFbS" id="2FeCPobd1mR" role="2VODD2">
@@ -2965,6 +2965,12 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="Veino" id="18cR6kS5_tL" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5B/darkGray" />
+        </node>
+        <node concept="VechU" id="18cR6kS5_NR" role="3F10Kt">
+          <property role="Vb096" value="hEZAO13/white" />
         </node>
       </node>
       <node concept="1kIj98" id="4LQ7f3jDZ_Y" role="3EZMnx">
