@@ -17,6 +17,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
@@ -58,6 +59,13 @@
       </concept>
     </language>
     <language id="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" name="org.iets3.core.expr.data">
+      <concept id="8847603084240726479" name="org.iets3.core.expr.data.structure.DataColDefRef" flags="ng" index="2v6aBJ">
+        <reference id="8847603084240726480" name="col" index="2v6aBK" />
+      </concept>
+      <concept id="512624657163648898" name="org.iets3.core.expr.data.structure.DataTableLookUp" flags="ng" index="3AhkFE">
+        <child id="8847603084240729054" name="col" index="2v6bfY" />
+        <child id="512624657163648903" name="arg" index="3AhkFJ" />
+      </concept>
       <concept id="231307155598475891" name="org.iets3.core.expr.data.structure.DataColOp" flags="ng" index="3Cgsri">
         <reference id="231307155598477016" name="col" index="3Cgs9T" />
       </concept>
@@ -75,6 +83,7 @@
         <child id="231307155597484623" name="value" index="3CkirI" />
       </concept>
       <concept id="231307155597462254" name="org.iets3.core.expr.data.structure.DataTable" flags="ng" index="3CkkTf">
+        <property id="3324695263690995252" name="allowLookup" index="sAwqe" />
         <child id="231307155597477158" name="dataCols" index="3Ckg67" />
         <child id="231307155597655796" name="rows" index="3CkFDl" />
       </concept>
@@ -93,6 +102,7 @@
     <node concept="_ixoA" id="6wzrxL2Tkns" role="_iOnB" />
     <node concept="3CkkTf" id="6wzrxL2VwCV" role="_iOnB">
       <property role="TrG5h" value="Table" />
+      <property role="sAwqe" value="true" />
       <node concept="3CkmCn" id="6wzrxL2VwCX" role="3Ckg67">
         <property role="TrG5h" value="val1" />
         <node concept="30bXR$" id="6wzrxL2VwCW" role="3CknON" />
@@ -126,8 +136,8 @@
         </node>
         <node concept="3CkgUp" id="6wzrxL2VwD9" role="3Ckg_R">
           <ref role="3Ckhev" node="6wzrxL2VwCZ" resolve="val2" />
-          <node concept="30bXRB" id="6wzrxL2VwD6" role="3CkirI">
-            <property role="30bXRw" value="3" />
+          <node concept="30bXRB" id="6wzrxL2ZEQw" role="3CkirI">
+            <property role="30bXRw" value="4" />
           </node>
         </node>
       </node>
@@ -180,6 +190,32 @@
         </node>
         <node concept="30bXRB" id="6wzrxL2TkBP" role="_fkuS">
           <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6wzrxL2ZD3Z" role="_fkp5">
+        <node concept="_fku$" id="6wzrxL2ZD40" role="_fkur" />
+        <node concept="1QScDb" id="6wzrxL2ZEr5" role="_fkuY">
+          <node concept="3Cgsri" id="6wzrxL2ZE$5" role="1QScD9">
+            <ref role="3Cgs9T" node="6wzrxL2VwCZ" resolve="val2" />
+          </node>
+          <node concept="wdKpt" id="6wzrxL2ZEif" role="30czhm">
+            <node concept="1QScDb" id="6wzrxL2ZDlK" role="30czhm">
+              <node concept="3AhkFE" id="6wzrxL2ZDnq" role="1QScD9">
+                <node concept="30bXRB" id="6wzrxL2ZDRX" role="3AhkFJ">
+                  <property role="30bXRw" value="3" />
+                </node>
+                <node concept="2v6aBJ" id="6wzrxL2ZDEO" role="2v6bfY">
+                  <ref role="2v6aBK" node="6wzrxL2VwCX" resolve="val1" />
+                </node>
+              </node>
+              <node concept="3Ch18X" id="6wzrxL2ZDk7" role="30czhm">
+                <ref role="3Ch1V_" node="6wzrxL2VwCV" resolve="Table" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="6wzrxL2ZD46" role="_fkuS">
+          <property role="30bXRw" value="4" />
         </node>
       </node>
     </node>
