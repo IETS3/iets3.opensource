@@ -1297,21 +1297,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="7aRvJQErc51" role="_iOnB" />
-    <node concept="_fkuM" id="1fRBlzmWPfa" role="_iOnB">
-      <property role="TrG5h" value="ValueBeforeFirstSlice" />
-      <node concept="mXNUv" id="1fRBlzmYqXe" role="_fkp5">
-        <node concept="1QScDb" id="1fRBlzmXehv" role="mXJVd">
-          <node concept="F9$mi" id="1fRBlzmXgR$" role="1QScD9">
-            <node concept="_emDc" id="1fRBlzmXjol" role="F9$mm">
-              <ref role="_emDf" node="1fRBlzmWEl5" resolve="beforeDate0" />
-            </node>
-          </node>
-          <node concept="_emDc" id="1fRBlzmXbHt" role="30czhm">
-            <ref role="_emDf" node="7aRvJQErc4W" resolve="v1" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="_ixoA" id="7aRvJQErc52" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQErc53" role="_iOnB" />
     <node concept="2zPypq" id="7aRvJQErc54" role="_iOnB">
@@ -4101,14 +4086,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="1fRBlzmZpyx" role="_iOnB" />
-    <node concept="_fkuM" id="1fRBlzmZnLf" role="_iOnB">
-      <property role="TrG5h" value="reduceBeforeSlice" />
-      <node concept="mXNUv" id="1fRBlzn2Wri" role="_fkp5">
-        <node concept="_emDc" id="1fRBlzn2Wrx" role="mXJVd">
-          <ref role="_emDf" node="1fRBlzmZqf8" resolve="reduceBeforeFirstSlice" />
-        </node>
-      </node>
-    </node>
     <node concept="_ixoA" id="7SY$c$iii7R" role="_iOnB" />
     <node concept="2zPypq" id="7SY$c$iikdt" role="_iOnB">
       <property role="TrG5h" value="toReduceWithoutSlices1" />
