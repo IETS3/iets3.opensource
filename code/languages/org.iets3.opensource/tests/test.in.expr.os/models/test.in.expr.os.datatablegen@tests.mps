@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:61d7f5c8-8431-48e3-a4a0-17a05830b935(playground.datatablegen)">
+<model ref="r:12a7a296-b11b-4305-8259-d25f523b38d0(test.in.expr.os.datatablegen@tests)">
   <persistence version="9" />
   <languages>
-    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="1" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="3" />
-    <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
-    <use id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
+    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
     <use id="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" name="org.iets3.core.expr.data" version="1" />
     <devkit ref="33eb240b-05aa-417a-b719-386d26df80b8(org.iets3.core.expr.genall.advanced.devkit)" />
+    <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports />
   <registry>
@@ -85,8 +83,11 @@
       </concept>
     </language>
   </registry>
+  <node concept="2XOHcx" id="6wzrxL2ZwEE">
+    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
+  </node>
   <node concept="_iOnU" id="28$LOSAPZOM">
-    <property role="TrG5h" value="dt" />
+    <property role="TrG5h" value="TestsForDataTableGenerator" />
     <property role="1XBH2A" value="true" />
     <property role="2SXJ1i" value="true" />
     <node concept="_ixoA" id="6wzrxL2Tkns" role="_iOnB" />
@@ -183,9 +184,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="6wzrxL2Tjw8" role="_iOnB" />
-  </node>
-  <node concept="2XOHcx" id="4rZeNQ6M9GV">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
 </model>
 
