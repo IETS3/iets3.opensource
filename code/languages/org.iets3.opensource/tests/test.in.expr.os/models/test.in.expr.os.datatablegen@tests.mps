@@ -42,6 +42,7 @@
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
@@ -51,6 +52,9 @@
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
         <child id="7089558164906249715" name="value" index="2zPyp_" />
       </concept>
+      <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
+        <reference id="543569365051789114" name="constant" index="_emDf" />
+      </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -59,6 +63,12 @@
       </concept>
     </language>
     <language id="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" name="org.iets3.core.expr.data">
+      <concept id="4073179274522613180" name="org.iets3.core.expr.data.structure.DataRowSelector" flags="ng" index="cSod4">
+        <reference id="4073179274522615557" name="dataRow" index="cSoBX" />
+      </concept>
+      <concept id="4073179274522613175" name="org.iets3.core.expr.data.structure.DataIsInTarget" flags="ng" index="cSodf">
+        <child id="4073179274522613178" name="selectors" index="cSod2" />
+      </concept>
       <concept id="8847603084240726479" name="org.iets3.core.expr.data.structure.DataColDefRef" flags="ng" index="2v6aBJ">
         <reference id="8847603084240726480" name="col" index="2v6aBK" />
       </concept>
@@ -190,6 +200,37 @@
         </node>
         <node concept="30bXRB" id="6wzrxL2TkBP" role="_fkuS">
           <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6wzrxL31fsM" role="_fkp5">
+        <node concept="_fku$" id="6wzrxL31fsN" role="_fkur" />
+        <node concept="2vmpnb" id="6wzrxL31hQH" role="_fkuS" />
+        <node concept="1QScDb" id="6wzrxL31hv8" role="_fkuY">
+          <node concept="cSodf" id="6wzrxL31hCZ" role="1QScD9">
+            <node concept="cSod4" id="6wzrxL31hD1" role="cSod2">
+              <ref role="cSoBX" node="6wzrxL2VwD2" resolve="keyA" />
+            </node>
+          </node>
+          <node concept="_emDc" id="6wzrxL31hrM" role="30czhm">
+            <ref role="_emDf" node="6wzrxL2WvUo" resolve="aRow" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6wzrxL31n0r" role="_fkp5">
+        <node concept="_fku$" id="6wzrxL31n0s" role="_fkur" />
+        <node concept="2vmpnb" id="6wzrxL31n0t" role="_fkuS" />
+        <node concept="1QScDb" id="6wzrxL31n0u" role="_fkuY">
+          <node concept="cSodf" id="6wzrxL31n0v" role="1QScD9">
+            <node concept="cSod4" id="6wzrxL31n0w" role="cSod2">
+              <ref role="cSoBX" node="6wzrxL2VwD2" resolve="keyA" />
+            </node>
+            <node concept="cSod4" id="6wzrxL31n4z" role="cSod2">
+              <ref role="cSoBX" node="6wzrxL2VwD7" resolve="keyB" />
+            </node>
+          </node>
+          <node concept="_emDc" id="6wzrxL31n0x" role="30czhm">
+            <ref role="_emDf" node="6wzrxL2WvUo" resolve="aRow" />
+          </node>
         </node>
       </node>
       <node concept="_fkuZ" id="6wzrxL2ZD3Z" role="_fkp5">
