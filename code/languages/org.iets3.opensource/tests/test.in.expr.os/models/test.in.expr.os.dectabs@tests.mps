@@ -389,9 +389,6 @@
     <node concept="_ixoA" id="6OunYCfqulh" role="_iOnB" />
     <node concept="_ixoA" id="6OunYCfqupl" role="_iOnB" />
   </node>
-  <node concept="2XOHcx" id="4rZeNQ6M9GV">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
-  </node>
   <node concept="_iOnU" id="5crSXMhjI0">
     <property role="TrG5h" value="utils_dectab_ranges_1" />
     <property role="2SXJ1i" value="true" />
@@ -2871,6 +2868,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="4rZeNQ6M9GV">
+    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
 </model>
 
