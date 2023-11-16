@@ -13,6 +13,7 @@
     <import index="2j0k" ref="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
+    <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -5411,235 +5412,28 @@
       <node concept="3Tm1VV" id="FLl_um7eIw" role="1B3o_S" />
       <node concept="10Oyi0" id="FLl_um7eIy" role="3clF45" />
       <node concept="37vLTG" id="FLl_um7eIz" role="3clF46">
-        <property role="TrG5h" value="value" />
+        <property role="TrG5h" value="other" />
         <node concept="3uibUv" id="FLl_um7eI_" role="1tU5fm">
           <ref role="3uigEE" node="50smQ1V9Ofy" resolve="TemporalValue" />
         </node>
       </node>
       <node concept="3clFbS" id="FLl_um7eIA" role="3clF47">
-        <node concept="3cpWs8" id="FLl_um9YCC" role="3cqZAp">
-          <node concept="3cpWsn" id="FLl_um9YCD" role="3cpWs9">
-            <property role="TrG5h" value="thisIntervals" />
-            <node concept="3uibUv" id="FLl_um9Wz0" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~List" resolve="List" />
-              <node concept="3uibUv" id="FLl_um9Wz3" role="11_B2D">
-                <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="FLl_um9YCE" role="33vP2m">
-              <node concept="Xjq3P" id="FLl_um9YCF" role="2Oq$k0" />
-              <node concept="liA8E" id="FLl_um9YCG" role="2OqNvi">
+        <node concept="3cpWs6" id="5wcxmW8A_aM" role="3cqZAp">
+          <node concept="2YIFZM" id="5wcxmW8A6fw" role="3cqZAk">
+            <ref role="37wK5l" to="dj6k:36hsHVf8gwW" resolve="compare" />
+            <ref role="1Pybhc" to="dj6k:36hsHVf8gww" resolve="OH" />
+            <node concept="2OqwBi" id="5wcxmW8AW5O" role="37wK5m">
+              <node concept="Xjq3P" id="5wcxmW8ARHL" role="2Oq$k0" />
+              <node concept="liA8E" id="5wcxmW8B2wx" role="2OqNvi">
                 <ref role="37wK5l" node="50smQ1VdGyd" resolve="intervals" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="FLl_umaq33" role="3cqZAp">
-          <node concept="3cpWsn" id="FLl_umaq34" role="3cpWs9">
-            <property role="TrG5h" value="otherIntervals" />
-            <node concept="3uibUv" id="FLl_umaq35" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~List" resolve="List" />
-              <node concept="3uibUv" id="FLl_umaq36" role="11_B2D">
-                <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="FLl_umaq37" role="33vP2m">
+            <node concept="2OqwBi" id="FLl_umaq37" role="37wK5m">
               <node concept="37vLTw" id="FLl_umaYvO" role="2Oq$k0">
-                <ref role="3cqZAo" node="FLl_um7eIz" resolve="value" />
+                <ref role="3cqZAo" node="FLl_um7eIz" resolve="other" />
               </node>
               <node concept="liA8E" id="FLl_umaq39" role="2OqNvi">
                 <ref role="37wK5l" node="50smQ1VdGyd" resolve="intervals" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="FLl_umhERu" role="3cqZAp">
-          <node concept="3cpWsn" id="FLl_umhERx" role="3cpWs9">
-            <property role="TrG5h" value="min" />
-            <node concept="10Oyi0" id="FLl_umhERs" role="1tU5fm" />
-            <node concept="3cmrfG" id="FLl_umhRL8" role="33vP2m">
-              <property role="3cmrfH" value="0" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="FLl_umhY5d" role="3cqZAp">
-          <node concept="3cpWsn" id="FLl_umhY5g" role="3cpWs9">
-            <property role="TrG5h" value="max" />
-            <node concept="10Oyi0" id="FLl_umhY5b" role="1tU5fm" />
-            <node concept="3cmrfG" id="FLl_umi99z" role="33vP2m">
-              <property role="3cmrfH" value="0" />
-            </node>
-          </node>
-        </node>
-        <node concept="1Dw8fO" id="FLl_umcst$" role="3cqZAp">
-          <node concept="3clFbS" id="FLl_umcstA" role="2LFqv$">
-            <node concept="3cpWs8" id="FLl_ume$E3" role="3cqZAp">
-              <node concept="3cpWsn" id="FLl_ume$E4" role="3cpWs9">
-                <property role="TrG5h" value="currentDate" />
-                <node concept="3uibUv" id="FLl_ume$E5" role="1tU5fm">
-                  <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
-                </node>
-                <node concept="2OqwBi" id="FLl_umgd$9" role="33vP2m">
-                  <node concept="37vLTw" id="FLl_umg9fW" role="2Oq$k0">
-                    <ref role="3cqZAo" node="FLl_um9YCD" resolve="thisIntervals" />
-                  </node>
-                  <node concept="liA8E" id="FLl_umgklX" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
-                    <node concept="37vLTw" id="FLl_umgr8Q" role="37wK5m">
-                      <ref role="3cqZAo" node="FLl_umcstB" resolve="i" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="FLl_umgy2x" role="3cqZAp">
-              <node concept="3cpWsn" id="FLl_umgy2y" role="3cpWs9">
-                <property role="TrG5h" value="otherDate" />
-                <node concept="3uibUv" id="FLl_umgy2z" role="1tU5fm">
-                  <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
-                </node>
-                <node concept="2OqwBi" id="FLl_umgy2$" role="33vP2m">
-                  <node concept="37vLTw" id="FLl_umgy2_" role="2Oq$k0">
-                    <ref role="3cqZAo" node="FLl_umaq34" resolve="otherIntervals" />
-                  </node>
-                  <node concept="liA8E" id="FLl_umgy2A" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
-                    <node concept="37vLTw" id="FLl_umgy2B" role="37wK5m">
-                      <ref role="3cqZAo" node="FLl_umcstB" resolve="i" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="FLl_umhpkT" role="3cqZAp">
-              <node concept="3cpWsn" id="FLl_umhpkU" role="3cpWs9">
-                <property role="TrG5h" value="result" />
-                <node concept="10Oyi0" id="FLl_umhmDI" role="1tU5fm" />
-                <node concept="2OqwBi" id="FLl_umhpkV" role="33vP2m">
-                  <node concept="37vLTw" id="FLl_umhpkW" role="2Oq$k0">
-                    <ref role="3cqZAo" node="FLl_ume$E4" resolve="currentDate" />
-                  </node>
-                  <node concept="liA8E" id="FLl_umhpkX" role="2OqNvi">
-                    <ref role="37wK5l" to="28m1:~LocalDate.compareTo(java.time.chrono.ChronoLocalDate)" resolve="compareTo" />
-                    <node concept="37vLTw" id="FLl_umhpkY" role="37wK5m">
-                      <ref role="3cqZAo" node="FLl_umgy2y" resolve="otherDate" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="FLl_umipFT" role="3cqZAp">
-              <node concept="37vLTI" id="FLl_umiwA$" role="3clFbG">
-                <node concept="2YIFZM" id="FLl_umiHEL" role="37vLTx">
-                  <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-                  <ref role="37wK5l" to="wyt6:~Math.min(int,int)" resolve="min" />
-                  <node concept="37vLTw" id="FLl_umiOo7" role="37wK5m">
-                    <ref role="3cqZAo" node="FLl_umhERx" resolve="min" />
-                  </node>
-                  <node concept="37vLTw" id="FLl_umiVFi" role="37wK5m">
-                    <ref role="3cqZAo" node="FLl_umhpkU" resolve="result" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="FLl_umipFR" role="37vLTJ">
-                  <ref role="3cqZAo" node="FLl_umhERx" resolve="min" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="FLl_umj7jh" role="3cqZAp">
-              <node concept="37vLTI" id="FLl_umjeeX" role="3clFbG">
-                <node concept="2YIFZM" id="FLl_umjrhL" role="37vLTx">
-                  <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-                  <ref role="37wK5l" to="wyt6:~Math.max(int,int)" resolve="max" />
-                  <node concept="37vLTw" id="FLl_umjvOH" role="37wK5m">
-                    <ref role="3cqZAo" node="FLl_umhY5g" resolve="max" />
-                  </node>
-                  <node concept="37vLTw" id="FLl_umjAGm" role="37wK5m">
-                    <ref role="3cqZAo" node="FLl_umhpkU" resolve="result" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="FLl_umj7jf" role="37vLTJ">
-                  <ref role="3cqZAo" node="FLl_umhY5g" resolve="max" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWsn" id="FLl_umcstB" role="1Duv9x">
-            <property role="TrG5h" value="i" />
-            <node concept="10Oyi0" id="FLl_umcyDp" role="1tU5fm" />
-            <node concept="3cmrfG" id="FLl_umcOvM" role="33vP2m">
-              <property role="3cmrfH" value="0" />
-            </node>
-          </node>
-          <node concept="3eOVzh" id="FLl_umd0Rj" role="1Dwp0S">
-            <node concept="37vLTw" id="FLl_umcTZd" role="3uHU7B">
-              <ref role="3cqZAo" node="FLl_umcstB" resolve="i" />
-            </node>
-            <node concept="2YIFZM" id="FLl_umfWe9" role="3uHU7w">
-              <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-              <ref role="37wK5l" to="wyt6:~Math.min(int,int)" resolve="min" />
-              <node concept="2OqwBi" id="FLl_umfWea" role="37wK5m">
-                <node concept="37vLTw" id="FLl_umfWeb" role="2Oq$k0">
-                  <ref role="3cqZAo" node="FLl_um9YCD" resolve="thisIntervals" />
-                </node>
-                <node concept="liA8E" id="FLl_umfWec" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="FLl_umfWed" role="37wK5m">
-                <node concept="37vLTw" id="FLl_umfWee" role="2Oq$k0">
-                  <ref role="3cqZAo" node="FLl_umaq34" resolve="otherIntervals" />
-                </node>
-                <node concept="liA8E" id="FLl_umfWef" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3uNrnE" id="7k6A8WfiCaV" role="1Dwrff">
-            <node concept="37vLTw" id="7k6A8WfiCaX" role="2$L3a6">
-              <ref role="3cqZAo" node="FLl_umcstB" resolve="i" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="FLl_umjJE7" role="3cqZAp">
-          <node concept="3clFbS" id="FLl_umjJE9" role="3clFbx">
-            <node concept="3cpWs6" id="FLl_umkeWL" role="3cqZAp">
-              <node concept="3cmrfG" id="FLl_umkj5R" role="3cqZAk">
-                <property role="3cmrfH" value="-1" />
-              </node>
-            </node>
-          </node>
-          <node concept="3eOVzh" id="FLl_umk4rB" role="3clFbw">
-            <node concept="3cmrfG" id="FLl_umk8NO" role="3uHU7w">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="37vLTw" id="FLl_umjWZT" role="3uHU7B">
-              <ref role="3cqZAo" node="FLl_umhERx" resolve="min" />
-            </node>
-          </node>
-          <node concept="3eNFk2" id="FLl_umk$xC" role="3eNLev">
-            <node concept="3eOSWO" id="FLl_umloOF" role="3eO9$A">
-              <node concept="3cmrfG" id="FLl_umloOX" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
-              </node>
-              <node concept="37vLTw" id="FLl_umlhWG" role="3uHU7B">
-                <ref role="3cqZAo" node="FLl_umhY5g" resolve="max" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="FLl_umk$xE" role="3eOfB_">
-              <node concept="3cpWs6" id="FLl_umlvwt" role="3cqZAp">
-                <node concept="3cmrfG" id="FLl_umlAa$" role="3cqZAk">
-                  <property role="3cmrfH" value="1" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="FLl_umlGOw" role="9aQIa">
-            <node concept="3clFbS" id="FLl_umlGOx" role="9aQI4">
-              <node concept="3cpWs6" id="FLl_umlMBi" role="3cqZAp">
-                <node concept="3cmrfG" id="FLl_umlTi2" role="3cqZAk">
-                  <property role="3cmrfH" value="0" />
-                </node>
               </node>
             </node>
           </node>
