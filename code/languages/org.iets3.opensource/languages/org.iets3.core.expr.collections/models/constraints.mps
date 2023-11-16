@@ -181,7 +181,9 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -501,8 +503,29 @@
         <node concept="3clFbJ" id="4ptnK4j$WvB" role="3cqZAp">
           <node concept="3clFbS" id="4ptnK4j$WvD" role="3clFbx">
             <node concept="3cpWs6" id="6vUyz1yKO4n" role="3cqZAp">
-              <node concept="3clFbT" id="6vUyz1yPQsH" role="3cqZAk">
-                <property role="3clFbU" value="true" />
+              <node concept="2OqwBi" id="3sWKo0FtNXu" role="3cqZAk">
+                <node concept="1PxgMI" id="3sWKo0FtNeC" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="chp4Y" id="3sWKo0FtNra" role="3oSUPX">
+                    <ref role="cht4Q" to="hm2y:3sWKo0FlPLx" resolve="ITypeCanBeSorted" />
+                  </node>
+                  <node concept="2OqwBi" id="4ptnK4j_0S4" role="1m5AlR">
+                    <node concept="1PxgMI" id="4ptnK4j_0S5" role="2Oq$k0">
+                      <node concept="chp4Y" id="4ptnK4j_0S6" role="3oSUPX">
+                        <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                      </node>
+                      <node concept="37vLTw" id="4ptnK4j_0S7" role="1m5AlR">
+                        <ref role="3cqZAo" node="6b_jefnKxOk" resolve="ct" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="4ptnK4j_0S8" role="2OqNvi">
+                      <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="3sWKo0FtOlb" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:3sWKo0FtLzi" resolve="isSortingSupported" />
+                </node>
               </node>
             </node>
           </node>

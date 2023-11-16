@@ -26865,5 +26865,24 @@
       <node concept="17QB3L" id="6ngDzsNlH8k" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="3sWKo0FtLz7">
+    <ref role="13h7C2" to="hm2y:3sWKo0FlPLx" resolve="ITypeCanBeSorted" />
+    <node concept="13i0hz" id="3sWKo0FtLzi" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isSortingSupported" />
+      <node concept="3Tm1VV" id="3sWKo0FtLzj" role="1B3o_S" />
+      <node concept="10P_77" id="3sWKo0FtLzy" role="3clF45" />
+      <node concept="3clFbS" id="3sWKo0FtLzl" role="3clF47">
+        <node concept="3clFbF" id="3sWKo0FtL$e" role="3cqZAp">
+          <node concept="3clFbT" id="3sWKo0FtL$d" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="3sWKo0FtLz8" role="13h7CW">
+      <node concept="3clFbS" id="3sWKo0FtLz9" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

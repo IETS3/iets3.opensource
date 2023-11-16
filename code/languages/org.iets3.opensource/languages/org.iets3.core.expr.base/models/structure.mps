@@ -120,6 +120,9 @@
     <property role="EcuMT" value="7425695345928515123" />
     <property role="R4oN_" value="a base concept for primitive types" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="3sWKo0FlPLy" role="PzmwI">
+      <ref role="PrY4T" node="3sWKo0FlPLx" resolve="ITypeCanBeSorted" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MpKl">
     <property role="TrG5h" value="BinaryExpression" />
@@ -2188,6 +2191,10 @@
   <node concept="PlHQZ" id="6xvNSEj6BMb">
     <property role="EcuMT" value="7520958096812440715" />
     <property role="TrG5h" value="IComplexTypeSupportsEquals" />
+  </node>
+  <node concept="PlHQZ" id="3sWKo0FlPLx">
+    <property role="EcuMT" value="3980268926915796065" />
+    <property role="TrG5h" value="ITypeCanBeSorted" />
   </node>
 </model>
 
