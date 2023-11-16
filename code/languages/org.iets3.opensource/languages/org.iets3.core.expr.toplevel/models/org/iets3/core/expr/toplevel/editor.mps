@@ -1345,6 +1345,33 @@
             </node>
           </node>
         </node>
+        <node concept="3EZMnI" id="3sWKo0DYLzM" role="3EZMnx">
+          <node concept="2iRfu4" id="3sWKo0DYLzN" role="2iSdaV" />
+          <node concept="3F0ifn" id="3sWKo0DYLW2" role="3EZMnx">
+            <property role="3F0ifm" value="with comparison order" />
+            <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          </node>
+          <node concept="3F2HdR" id="6vUyz1z4SF$" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="yv47:6vUyz1z4RZG" resolve="comparisonOrder" />
+            <node concept="2iRfu4" id="3sWKo0DTWqT" role="2czzBx" />
+          </node>
+          <node concept="pkWqt" id="3sWKo0DYLBU" role="pqm2j">
+            <node concept="3clFbS" id="3sWKo0DYLBV" role="2VODD2">
+              <node concept="3clFbF" id="3sWKo0DWGCk" role="3cqZAp">
+                <node concept="2OqwBi" id="3sWKo0DWMaL" role="3clFbG">
+                  <node concept="2OqwBi" id="3sWKo0DWH7v" role="2Oq$k0">
+                    <node concept="pncrf" id="3sWKo0DWGCj" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="3sWKo0DWHUF" role="2OqNvi">
+                      <ref role="3TtcxE" to="yv47:6vUyz1z4RZG" resolve="comparisonOrder" />
+                    </node>
+                  </node>
+                  <node concept="3GX2aA" id="3sWKo0DWTb6" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="_tjkj" id="11foXHHQYya" role="3EZMnx">
           <node concept="3F1sOY" id="11foXHHQYyb" role="_tjki">
             <ref role="1NtTu8" to="hm2y:KaZMgy4Ily" resolve="contract" />
@@ -4839,6 +4866,19 @@
     <node concept="3Tm1VV" id="4db20qfqb8V" role="1B3o_S" />
     <node concept="3uibUv" id="68WEpgCCy0n" role="1zkMxy">
       <ref role="3uigEE" to="r4b4:4QhMqW2TcDm" resolve="AbstractBracketCell" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3sWKo0E1oBa">
+    <property role="3GE5qa" value="record" />
+    <ref role="1XX52x" to="yv47:3sWKo0E1oB0" resolve="RecordComparisonOrder" />
+    <node concept="1iCGBv" id="3sWKo0E1oBc" role="2wV5jI">
+      <ref role="1NtTu8" to="yv47:3sWKo0E1oB1" resolve="member" />
+      <node concept="1sVBvm" id="3sWKo0E1oBe" role="1sWHZn">
+        <node concept="3F0A7n" id="3sWKo0E1oBl" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
