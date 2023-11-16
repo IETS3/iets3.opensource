@@ -92,9 +92,6 @@
     <property role="3GE5qa" value="date" />
     <property role="R4oN_" value="a base type for dates" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    <node concept="PrWs8" id="3sWKo0FskoE" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3sWKo0FlPLx" resolve="ITypeCanBeSorted" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3nGzaxUXsfN">
     <property role="EcuMT" value="3885635233759216627" />
@@ -535,9 +532,6 @@
     <node concept="PrWs8" id="7zAZa_vg5yL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
-    <node concept="PrWs8" id="3sWKo0FqQ2R" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3sWKo0FlPLx" resolve="ITypeCanBeSorted" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7khFtBHJt9t">
     <property role="EcuMT" value="8435714728549798493" />
@@ -666,7 +660,7 @@
     <property role="TrG5h" value="TimeType" />
     <property role="34LRSv" value="time" />
     <property role="3GE5qa" value="time" />
-    <property role="R4oN_" value="hours and minutes" />
+    <property role="R4oN_" value="hours, minutes and seconds" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="3HiHZey9lU5">

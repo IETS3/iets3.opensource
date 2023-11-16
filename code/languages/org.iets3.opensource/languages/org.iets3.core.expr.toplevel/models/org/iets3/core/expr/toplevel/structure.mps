@@ -374,9 +374,6 @@
     <node concept="PrWs8" id="5FZDsYwdPtf" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
-    <node concept="PrWs8" id="3sWKo0Ft5e9" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3sWKo0FlPLx" resolve="ITypeCanBeSorted" />
-    </node>
     <node concept="1TJgyj" id="7D7uZV2dYz3" role="1TKVEi">
       <property role="20kJfa" value="record" />
       <property role="20lbJX" value="fLJekj4/_1" />
