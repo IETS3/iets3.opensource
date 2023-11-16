@@ -92,6 +92,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="FLl_um4YlE" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3sWKo0FlPLx" resolve="ITypeCanBeSorted" />
+    </node>
   </node>
   <node concept="1TIwiD" id="50smQ1V8QEe">
     <property role="EcuMT" value="5772589292323039886" />
