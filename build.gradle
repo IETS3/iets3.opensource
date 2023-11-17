@@ -97,7 +97,7 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
 if (project.hasProperty("mbeddrVersion")) {
     logger.log(LogLevel.WARN, "mbeddr version externally overwritten to $ext.mbeddrVersion")
     ext.mbeddrVersionSelector = ext.mbeddrVersion
-} 
+}
 
 ext.releaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots'
@@ -232,7 +232,7 @@ modelcheck {
 }
 
 
-afterEvaluate {  project -> 
+afterEvaluate {  project ->
     check.configure {
         dependsOn tasks.named('checkmodels')
     }
@@ -422,7 +422,7 @@ githubRelease {
     body = releaseNotes
     prerelease = true
     releaseAssets = packageDistroWithDependencies.outputs.files.collect {it.path}
-    dryRun = false 
+    dryRun = false
 }
 
 tasks.named('githubRelease').configure {

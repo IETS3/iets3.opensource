@@ -90,6 +90,9 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
@@ -5573,6 +5576,11 @@
       <node concept="2iRfu4" id="3_Nra3E2xkR" role="2iSdaV" />
       <node concept="3F0ifn" id="3_Nra3E2xkN" role="3EZMnx">
         <property role="3F0ifm" value="sheet" />
+        <node concept="OXEIz" id="yfp7edvEmY" role="P5bDN">
+          <node concept="UkePV" id="yfp7edvEmZ" role="OY2wv">
+            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" resolve="Type" />
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="3_Nra3E2xkZ" role="3EZMnx">
         <property role="3F0ifm" value="&lt;" />
