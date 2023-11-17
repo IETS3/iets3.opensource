@@ -147,6 +147,9 @@
       <concept id="1136917249679" name="jetbrains.mps.lang.editor.structure.CellKeyMap_IsApplicableFunction" flags="in" index="2Pz7Y7" />
       <concept id="1136917288805" name="jetbrains.mps.lang.editor.structure.CellKeyMap_ExecuteFunction" flags="in" index="2PzhpH" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -745,6 +748,7 @@
           <ref role="1NtTu8" to="zzzn:49WTic8eSCZ" resolve="args" />
           <ref role="1ERwB7" node="2KGel$SrnV0" resolve="deleteFunParens" />
           <node concept="l2Vlx" id="4Lmaxwvn71q" role="2czzBx" />
+          <node concept="3F0ifn" id="7joYtgBM8Bt" role="2czzBI" />
         </node>
         <node concept="3F0ifn" id="49WTic8f4ui" role="3EZMnx">
           <property role="3F0ifm" value=")" />
@@ -2719,6 +2723,11 @@
       <node concept="3F0ifn" id="7cphKbKnKSi" role="3EZMnx">
         <property role="3F0ifm" value="group" />
         <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+        <node concept="OXEIz" id="yfp7edvEmG" role="P5bDN">
+          <node concept="UkePV" id="yfp7edvEmH" role="OY2wv">
+            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" />
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="7cphKbKnKSo" role="3EZMnx">
         <property role="3F0ifm" value="&lt;" />
@@ -2771,6 +2780,11 @@
       <node concept="3F0ifn" id="7cphKbLawOi" role="3EZMnx">
         <property role="3F0ifm" value="record" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="OXEIz" id="yfp7edvEmI" role="P5bDN">
+          <node concept="UkePV" id="yfp7edvEmJ" role="OY2wv">
+            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" />
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="5ipapt3wcax" role="3EZMnx">
         <property role="3F0ifm" value="{" />

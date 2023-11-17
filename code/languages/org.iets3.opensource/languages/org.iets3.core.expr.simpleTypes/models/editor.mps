@@ -53,6 +53,9 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
@@ -364,25 +367,25 @@
                   </node>
                   <node concept="3clFbF" id="Mf8p5hcAaO" role="3cqZAp">
                     <node concept="2OqwBi" id="Mf8p5hcAhU" role="3clFbG">
-                      <node concept="37vLTw" id="3fBaoKvNept" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3fBaoKvNdbK" resolve="parent" />
-                      </node>
                       <node concept="1P9Npp" id="Mf8p5hcAqP" role="2OqNvi">
                         <node concept="37vLTw" id="Mf8p5hebsB" role="1P9ThW">
                           <ref role="3cqZAo" node="Mf8p5hea6J" resolve="negLit" />
                         </node>
                       </node>
+                      <node concept="37vLTw" id="3fBaoKvNept" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3fBaoKvNdbK" resolve="parent" />
+                      </node>
                     </node>
                   </node>
                 </node>
                 <node concept="2OqwBi" id="Mf8p5hc_GF" role="3clFbw">
-                  <node concept="37vLTw" id="3fBaoKvNell" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3fBaoKvNdbK" resolve="parent" />
-                  </node>
                   <node concept="1mIQ4w" id="Mf8p5hcA4R" role="2OqNvi">
                     <node concept="chp4Y" id="Mf8p5hcA6U" role="cj9EA">
                       <ref role="cht4Q" to="hm2y:4rZeNQ6NtQV" resolve="UnaryMinusExpression" />
                     </node>
+                  </node>
+                  <node concept="37vLTw" id="3fBaoKvNell" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3fBaoKvNdbK" resolve="parent" />
                   </node>
                 </node>
               </node>
@@ -447,6 +450,11 @@
       <node concept="3F0ifn" id="78hTg1$P0Vl" role="3EZMnx">
         <property role="3F0ifm" value="number" />
         <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+        <node concept="OXEIz" id="yfp7edvEmK" role="P5bDN">
+          <node concept="UkePV" id="yfp7edvEmL" role="OY2wv">
+            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" />
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="19PglA25VNW" role="3EZMnx">
         <node concept="3F1sOY" id="19PglA25VOe" role="_tjki">

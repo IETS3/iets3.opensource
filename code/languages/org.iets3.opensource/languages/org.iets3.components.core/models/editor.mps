@@ -56,6 +56,7 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" implicit="true" />
   </imports>
   <registry>
@@ -115,11 +116,17 @@
         <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
+      <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
+        <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
         <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
       </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
       </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styles" index="V601i" />
@@ -185,6 +192,7 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -11910,6 +11918,11 @@
         <node concept="11LMrY" id="1WAg9Tzrz8T" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="OXEIz" id="yfp7edvEmW" role="P5bDN">
+          <node concept="UkePV" id="yfp7edvEmX" role="OY2wv">
+            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" />
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="1WAg9Tzrz6S" role="3EZMnx">
         <ref role="1NtTu8" to="w9y2:1WAg9Tzrz6g" resolve="portType" />
@@ -12727,14 +12740,6 @@
           </node>
         </node>
       </node>
-      <node concept="2T_mXK" id="7DfYVnpkjB8" role="3EZMnx">
-        <node concept="2T_bXS" id="7DfYVnpkjB9" role="3F10Kt">
-          <property role="Vb096" value="fLJRk5_/gray" />
-        </node>
-        <node concept="2T_bXT" id="7DfYVnpkjBa" role="3F10Kt">
-          <property role="1lJzqX" value="2" />
-        </node>
-      </node>
       <node concept="2iRkQZ" id="TLP0T_iW8M" role="2iSdaV" />
       <node concept="3EZMnI" id="1UsX3PC54Ti" role="AHCbl">
         <node concept="VPM3Z" id="1UsX3PC54Tk" role="3F10Kt">
@@ -12819,6 +12824,14 @@
           <node concept="2T_bXT" id="7DfYVnpkjRi" role="3F10Kt">
             <property role="1lJzqX" value="2" />
           </node>
+        </node>
+      </node>
+      <node concept="2T_mXK" id="7DfYVnpkjB8" role="3EZMnx">
+        <node concept="2T_bXS" id="7DfYVnpkjB9" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+        <node concept="2T_bXT" id="7DfYVnpkjBa" role="3F10Kt">
+          <property role="1lJzqX" value="2" />
         </node>
       </node>
     </node>
