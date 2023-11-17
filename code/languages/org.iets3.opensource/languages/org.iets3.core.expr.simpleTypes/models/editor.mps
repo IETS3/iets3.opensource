@@ -452,7 +452,7 @@
         <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         <node concept="OXEIz" id="yfp7edvEmK" role="P5bDN">
           <node concept="UkePV" id="yfp7edvEmL" role="OY2wv">
-            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" />
+            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" resolve="Type" />
           </node>
         </node>
       </node>
