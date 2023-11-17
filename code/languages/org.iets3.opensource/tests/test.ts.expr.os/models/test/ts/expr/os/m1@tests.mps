@@ -30,6 +30,7 @@
     <import index="yjde" ref="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
     <import index="iyw" ref="r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)" />
+    <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
@@ -652,6 +653,12 @@
         <child id="8427750732757990724" name="expected" index="3tpDZB" />
       </concept>
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
+      <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
+        <child id="1172073511101" name="message" index="3_1BAH" />
+      </concept>
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ng" index="3_9gw8">
+        <child id="1172075534298" name="message" index="3_9lra" />
+      </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -15352,6 +15359,119 @@
         <node concept="_ixoA" id="26CArgU5oL4" role="_iOnC" />
         <node concept="7CXmI" id="7aRvJQEkOds" role="lGtFl">
           <node concept="7OXhh" id="7aRvJQEkOdt" role="7EUXB" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3FK6iin2JaJ" role="1SL9yI">
+      <property role="TrG5h" value="isSame" />
+      <node concept="3cqZAl" id="3FK6iin2JaK" role="3clF45" />
+      <node concept="3clFbS" id="3FK6iin2JaO" role="3clF47">
+        <node concept="3cpWs8" id="3FK6iin2Jgi" role="3cqZAp">
+          <node concept="3cpWsn" id="3FK6iin2Jgl" role="3cpWs9">
+            <property role="TrG5h" value="jan_1_2000" />
+            <node concept="3Tqbb2" id="3FK6iin2Jgh" role="1tU5fm">
+              <ref role="ehGHo" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
+            </node>
+            <node concept="2c44tf" id="3FK6iin2K8w" role="33vP2m">
+              <node concept="1fc2QT" id="3FK6iin2Kaz" role="2c44tc">
+                <property role="1fc2QW" value="01" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QY" value="2000" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3FK6iin6Ya2" role="3cqZAp">
+          <node concept="3cpWsn" id="3FK6iin6Ya3" role="3cpWs9">
+            <property role="TrG5h" value="jan_1_2000_copy" />
+            <node concept="3Tqbb2" id="3FK6iin6Ya4" role="1tU5fm">
+              <ref role="ehGHo" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
+            </node>
+            <node concept="2c44tf" id="3FK6iin6Ya5" role="33vP2m">
+              <node concept="1fc2QT" id="3FK6iin6Ya6" role="2c44tc">
+                <property role="1fc2QW" value="01" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QY" value="2000" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3FK6iin2K6y" role="3cqZAp">
+          <node concept="3cpWsn" id="3FK6iin2K6z" role="3cpWs9">
+            <property role="TrG5h" value="jan_2_2000" />
+            <node concept="3Tqbb2" id="3FK6iin2K6p" role="1tU5fm">
+              <ref role="ehGHo" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
+            </node>
+            <node concept="2c44tf" id="3FK6iin2K6$" role="33vP2m">
+              <node concept="1fc2QT" id="3FK6iin2K6_" role="2c44tc">
+                <property role="1fc2QW" value="02" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QY" value="2000" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3FK6iin2JhT" role="3cqZAp" />
+        <node concept="3vlDli" id="3FK6iin2Kf4" role="3cqZAp">
+          <node concept="3clFbT" id="3FK6iin45u_" role="3tpDZB">
+            <property role="3clFbU" value="true" />
+          </node>
+          <node concept="2OqwBi" id="3FK6iin2Kpb" role="3tpDZA">
+            <node concept="37vLTw" id="3FK6iin2Kfx" role="2Oq$k0">
+              <ref role="3cqZAo" node="3FK6iin2Jgl" resolve="date1" />
+            </node>
+            <node concept="2qgKlT" id="3FK6iin2KQt" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:7GwCuf2r4g6" resolve="isSameAs" />
+              <node concept="37vLTw" id="3FK6iin2KXz" role="37wK5m">
+                <ref role="3cqZAo" node="3FK6iin2Jgl" resolve="date1" />
+              </node>
+            </node>
+          </node>
+          <node concept="3_1$Yv" id="3FK6iin7yJJ" role="3_9lra">
+            <node concept="Xl_RD" id="3FK6iin7yQi" role="3_1BAH">
+              <property role="Xl_RC" value="date literal equals itself" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="3FK6iin2La6" role="3cqZAp">
+          <node concept="2OqwBi" id="3FK6iin2La7" role="3tpDZA">
+            <node concept="37vLTw" id="3FK6iin2La8" role="2Oq$k0">
+              <ref role="3cqZAo" node="3FK6iin2Jgl" resolve="date1" />
+            </node>
+            <node concept="2qgKlT" id="3FK6iin2La9" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:7GwCuf2r4g6" resolve="isSameAs" />
+              <node concept="37vLTw" id="3FK6iin2Laa" role="37wK5m">
+                <ref role="3cqZAo" node="3FK6iin2K6z" resolve="date2" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbT" id="3FK6iin47pv" role="3tpDZB" />
+          <node concept="3_1$Yv" id="3FK6iin7zEg" role="3_9lra">
+            <node concept="Xl_RD" id="3FK6iin7zKN" role="3_1BAH">
+              <property role="Xl_RC" value="date literal equals a date literal with a different date" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="3FK6iin6Ynw" role="3cqZAp">
+          <node concept="2OqwBi" id="3FK6iin6Ynx" role="3tpDZA">
+            <node concept="37vLTw" id="3FK6iin6Yny" role="2Oq$k0">
+              <ref role="3cqZAo" node="3FK6iin2Jgl" resolve="date1" />
+            </node>
+            <node concept="2qgKlT" id="3FK6iin6Ynz" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:7GwCuf2r4g6" resolve="isSameAs" />
+              <node concept="37vLTw" id="3FK6iin6Yn$" role="37wK5m">
+                <ref role="3cqZAo" node="3FK6iin6Ya3" resolve="date3" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbT" id="3FK6iin7$A8" role="3tpDZB">
+            <property role="3clFbU" value="true" />
+          </node>
+          <node concept="3_1$Yv" id="3FK6iin7kEP" role="3_9lra">
+            <node concept="Xl_RD" id="3FK6iin7l7q" role="3_1BAH">
+              <property role="Xl_RC" value="two date literals of the same date are equal" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

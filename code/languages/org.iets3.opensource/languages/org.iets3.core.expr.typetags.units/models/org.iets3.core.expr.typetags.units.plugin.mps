@@ -1167,7 +1167,7 @@
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
               <node concept="Xl_RD" id="69hlyJ6fP5k" role="37wK5m">
-                <property role="Xl_RC" value="The different types \&quot;%s\&quot; cannot be combined. Only types with same unit can be combined." />
+                <property role="Xl_RC" value="The different types \&quot;%s\&quot; are incompatible. Only types with same unit are compatible." />
               </node>
               <node concept="37vLTw" id="69hlyJ6g7p8" role="37wK5m">
                 <ref role="3cqZAo" node="69hlyJ6g7oT" resolve="typesErrorMsg" />

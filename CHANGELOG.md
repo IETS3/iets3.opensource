@@ -4,8 +4,18 @@ All notable changes to this project are documented in this file.
 
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). 
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
+## October 2023
+
+### Fixed
+
+- Generation of nested short lambda expression now use the correct type for "it" as a variable.
 
 ## September 2023
+
+### Added
+
+- Temporal Literal shows an error if two slices use the same point in time. The check can handle date literals and (nested) references to constants with a date literal. (See [PR 707](https://github.com/IETS3/iets3.opensource/pull/707))
+- Temporal Literal shows a warning if the point in time of a slice cannot be unwrapped to a date literal, rendering the duplicates-check mentioned above ineffective. (See [PR 707](https://github.com/IETS3/iets3.opensource/pull/707))
 
 ### Fixed
 
