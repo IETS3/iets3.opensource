@@ -10,6 +10,12 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Generation of nested short lambda expression now use the correct type for "it" as a variable.
 
+## November 2023
+
+### Fixed
+
+- String validation: A bug in the number detection logic was fixed
+
 ## September 2023
 
 ### Added
