@@ -14,7 +14,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
-- String validation: A bug in the number detection logic was fixed
+- String validation: A bug in the successor execution logic was fixed
 
 ## September 2023
 
