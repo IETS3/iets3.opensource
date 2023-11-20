@@ -659,7 +659,7 @@
     <property role="3GE5qa" value="lambda" />
     <ref role="1XX52x" to="zzzn:6zmBjqUmsuo" resolve="ShortLambdaItExpression" />
     <node concept="3F0ifn" id="6zmBjqUmsuN" role="2wV5jI">
-      <property role="3F0ifm" value="it" />
+      <property role="3F0ifm" value="element" />
       <node concept="3k4GqR" id="6vzDuv93rUb" role="3F10Kt">
         <node concept="3k4GqP" id="6vzDuv93rUc" role="3k4GqO">
           <node concept="3clFbS" id="6vzDuv93rUd" role="2VODD2">
