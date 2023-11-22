@@ -124,6 +124,9 @@
         <property id="5974682372640371252" name="errmsg" index="xVyv2" />
         <child id="8219602584783494093" name="actual" index="mXJVd" />
       </concept>
+      <concept id="8219602584783477664" name="org.iets3.core.expr.tests.structure.AbstractTestItem" flags="ng" index="mXNUw">
+        <property id="4770332828445654111" name="isIgnored" index="2xO9KL" />
+      </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -2557,6 +2560,7 @@
         <node concept="2vmpnb" id="7aUGNm5JbO9" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="7aUGNm5Jhw5" role="_fkp5">
+        <property role="2xO9KL" value="true" />
         <node concept="_fku$" id="7aUGNm5Jhw6" role="_fkur" />
         <node concept="1QScDb" id="7aUGNm5JBwZ" role="_fkuY">
           <node concept="3iB8M5" id="7aUGNm5JM_E" role="1QScD9" />
@@ -3028,6 +3032,7 @@
         <node concept="2vmpnb" id="7aUGNm6X0RH" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="7aUGNm6QQNk" role="_fkp5">
+        <property role="2xO9KL" value="true" />
         <node concept="_fku$" id="7aUGNm6QQNl" role="_fkur" />
         <node concept="1aduha" id="7aUGNm6QQNm" role="_fkuY">
           <node concept="1adJid" id="7aUGNm6QQNn" role="1aduh9">
