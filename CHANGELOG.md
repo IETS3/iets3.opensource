@@ -18,6 +18,14 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - `SliceValue` can now correctly be checked for equality: `SliceValue.equals()` and `SliceValue.hashCode()` are overwritten.
 - `TemporalValue.hashCode()` was overwritten, thus `equals` and `hashCode()` are in sync now.
 
+## November 2023
+
+### Added
+
+- The `sort` method of collections now supports more types: all primitive types, the option type, all datetime types, the temporal type and the record type
+   - Records: The sorting order can be added through the intention `Add a Comparison Order`, otherwise, the records are sorted based on the declaration order of the members
+   - Option: Sorting removes all `none` values since the underlying data structure of collections doesn't support null values.
+
 ## September 2023
 
 ### Added

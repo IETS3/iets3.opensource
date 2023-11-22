@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:f17e1021-3869-4fe5-b3c7-0b2a9149a478(org.iets3.core.expr.temporal.runtime)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
@@ -14,8 +13,9 @@
     <import index="2j0k" ref="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
-    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="ppzb" ref="r:5db517a0-f62d-4841-a421-11bb7269799d(org.iets3.core.expr.base.shared.runtime)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -91,7 +91,9 @@
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
       </concept>
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <child id="1095933932569" name="implementedInterface" index="EKbjA" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -5546,6 +5548,48 @@
     </node>
     <node concept="2tJIrI" id="7SY$c$ignm5" role="jymVt" />
     <node concept="3Tm1VV" id="50smQ1V9Ofz" role="1B3o_S" />
+    <node concept="3clFb_" id="FLl_um7eIv" role="jymVt">
+      <property role="TrG5h" value="compareTo" />
+      <node concept="3Tm1VV" id="FLl_um7eIw" role="1B3o_S" />
+      <node concept="10Oyi0" id="FLl_um7eIy" role="3clF45" />
+      <node concept="37vLTG" id="FLl_um7eIz" role="3clF46">
+        <property role="TrG5h" value="other" />
+        <node concept="3uibUv" id="FLl_um7eI_" role="1tU5fm">
+          <ref role="3uigEE" node="50smQ1V9Ofy" resolve="TemporalValue" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="FLl_um7eIA" role="3clF47">
+        <node concept="3cpWs6" id="5wcxmW8A_aM" role="3cqZAp">
+          <node concept="2YIFZM" id="5wcxmW8A6fw" role="3cqZAk">
+            <ref role="37wK5l" to="dj6k:36hsHVf8gwW" resolve="compare" />
+            <ref role="1Pybhc" to="dj6k:36hsHVf8gww" resolve="OH" />
+            <node concept="2OqwBi" id="5wcxmW8AW5O" role="37wK5m">
+              <node concept="Xjq3P" id="5wcxmW8ARHL" role="2Oq$k0" />
+              <node concept="liA8E" id="5wcxmW8B2wx" role="2OqNvi">
+                <ref role="37wK5l" node="50smQ1VdGyd" resolve="intervals" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="FLl_umaq37" role="37wK5m">
+              <node concept="37vLTw" id="FLl_umaYvO" role="2Oq$k0">
+                <ref role="3cqZAo" node="FLl_um7eIz" resolve="other" />
+              </node>
+              <node concept="liA8E" id="FLl_umaq39" role="2OqNvi">
+                <ref role="37wK5l" node="50smQ1VdGyd" resolve="intervals" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="FLl_um7eIB" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="FLl_um6Uww" role="EKbjA">
+      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
+      <node concept="3uibUv" id="FLl_um78Bn" role="11_B2D">
+        <ref role="3uigEE" node="50smQ1V9Ofy" resolve="TemporalValue" />
+      </node>
+    </node>
   </node>
   <node concept="Qs71p" id="6AGD1sTq$nE">
     <property role="TrG5h" value="ReduceStrategy" />
