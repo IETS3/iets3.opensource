@@ -40,6 +40,7 @@
     <import index="av1m" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.style(MPS.Editor/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="fulz" ref="r:6f792c44-2a5d-40e8-9f05-33f7d4ae26ec(jetbrains.mps.editor.runtime.completion)" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
     <import index="i6kd" ref="r:2261c766-d7b6-49d7-91bd-1207e471af0b(org.iets3.core.expr.lambda.editor)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -583,7 +584,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -4865,81 +4865,14 @@
     </node>
     <node concept="3lBaaS" id="6wzrxL3ayZc" role="3l$a4r">
       <node concept="3clFbS" id="6wzrxL3ayZd" role="2VODD2">
-        <node concept="3cpWs8" id="6wzrxL3tVqH" role="3cqZAp">
-          <node concept="3cpWsn" id="6wzrxL3tVqI" role="3cpWs9">
-            <property role="TrG5h" value="ppc" />
-            <node concept="3Tqbb2" id="6wzrxL3tVeR" role="1tU5fm">
-              <ref role="ehGHo" to="hm2y:6wzrxL38hak" resolve="IPreferredProposalContext" />
-            </node>
-            <node concept="2OqwBi" id="6wzrxL3tVqJ" role="33vP2m">
-              <node concept="3lBN6P" id="6wzrxL3tVqK" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="6wzrxL3tVqL" role="2OqNvi">
-                <node concept="1xMEDy" id="6wzrxL3tVqM" role="1xVPHs">
-                  <node concept="chp4Y" id="6wzrxL3tVqN" role="ri$Ld">
-                    <ref role="cht4Q" to="hm2y:6wzrxL38hak" resolve="IPreferredProposalContext" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="6wzrxL3tVqO" role="1xVPHs" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="6wzrxL3tTQz" role="3cqZAp">
-          <node concept="3clFbS" id="6wzrxL3tTQ_" role="3clFbx">
-            <node concept="3clFbF" id="6wzrxL3a_k5" role="3cqZAp">
-              <node concept="2OqwBi" id="6wzrxL3a_or" role="3clFbG">
-                <node concept="3lBNjA" id="6wzrxL3a_k4" role="2Oq$k0" />
-                <node concept="liA8E" id="6wzrxL3a_Ak" role="2OqNvi">
-                  <ref role="37wK5l" to="av1m:~EditorMenuItemStyle.setPriority(double)" resolve="setPriority" />
-                  <node concept="3cmrfG" id="6wzrxL3a_Hn" role="37wK5m">
-                    <property role="3cmrfH" value="100" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="6wzrxL3aZyv" role="3cqZAp">
-              <node concept="2OqwBi" id="6wzrxL3aZFC" role="3clFbG">
-                <node concept="3lBNjA" id="6wzrxL3aZyu" role="2Oq$k0" />
-                <node concept="liA8E" id="6wzrxL3aZXi" role="2OqNvi">
-                  <ref role="37wK5l" to="av1m:~EditorMenuItemStyle.setBackgroundColor(java.awt.Color)" resolve="setBackgroundColor" />
-                  <node concept="2YIFZM" id="6wzrxL3b0wN" role="37wK5m">
-                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                    <node concept="Xl_RD" id="6wzrxL3b0Em" role="37wK5m">
-                      <property role="Xl_RC" value="#eeeeee" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1Wc70l" id="6wzrxL3tVIE" role="3clFbw">
-            <node concept="2OqwBi" id="6wzrxL3tW1Z" role="3uHU7w">
-              <node concept="37vLTw" id="6wzrxL3tVLl" role="2Oq$k0">
-                <ref role="3cqZAo" node="6wzrxL3tVqI" resolve="ppc" />
-              </node>
-              <node concept="2qgKlT" id="6wzrxL3tWtr" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:6wzrxL38h$$" resolve="isPreferred" />
-                <node concept="1eOMI4" id="6wzrxL3tXot" role="37wK5m">
-                  <node concept="10QFUN" id="6wzrxL3tXos" role="1eOMHV">
-                    <node concept="2OqwBi" id="6wzrxL3tXop" role="10QFUP">
-                      <node concept="3lBNg1" id="6wzrxL3tXoq" role="2Oq$k0" />
-                      <node concept="liA8E" id="6wzrxL3tXor" role="2OqNvi">
-                        <ref role="37wK5l" to="fulz:6MqJAGngeyx" resolve="getParameterObject" />
-                      </node>
-                    </node>
-                    <node concept="3Tqbb2" id="6wzrxL3tXoo" role="10QFUM" />
-                  </node>
-                </node>
-                <node concept="3lBMY0" id="jqB9Ucwm4a" role="37wK5m" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="6wzrxL3tUMB" role="3uHU7B">
-              <node concept="37vLTw" id="6wzrxL3tVqP" role="2Oq$k0">
-                <ref role="3cqZAo" node="6wzrxL3tVqI" resolve="ppc" />
-              </node>
-              <node concept="3x8VRR" id="6wzrxL3tV9s" role="2OqNvi" />
-            </node>
+        <node concept="3clFbF" id="jqB9UdvLtf" role="3cqZAp">
+          <node concept="2YIFZM" id="jqB9UdvLTK" role="3clFbG">
+            <ref role="37wK5l" to="buwp:jqB9UdvG0w" resolve="pri" />
+            <ref role="1Pybhc" to="buwp:jqB9UdvFo_" resolve="PriorisationHelper" />
+            <node concept="3lBNg1" id="jqB9UdvMIw" role="37wK5m" />
+            <node concept="3lBNjA" id="jqB9UdvMLE" role="37wK5m" />
+            <node concept="3lBN6P" id="jqB9UdvMXp" role="37wK5m" />
+            <node concept="3lBMY0" id="jqB9UdvN9m" role="37wK5m" />
           </node>
         </node>
       </node>

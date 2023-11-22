@@ -68,7 +68,7 @@
     <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
   <node concept="_iOnU" id="jqB9UczD_y">
-    <property role="TrG5h" value="L" />
+    <property role="TrG5h" value="TryOutPriorisation" />
     <node concept="5mgZ8" id="6wzrxL3eVQr" role="_iOnB">
       <property role="TrG5h" value="Color" />
       <node concept="5mgYR" id="6wzrxL3eWi_" role="5mgYi">
@@ -145,8 +145,8 @@
         <node concept="5mhuz" id="jqB9UczG3r" role="1afhQ5">
           <ref role="5mhpJ" node="6wzrxL3eWiM" resolve="blue" />
         </node>
-        <node concept="5mhuz" id="jqB9UdvwAB" role="1afhQ5">
-          <ref role="5mhpJ" node="6wzrxL3xgXt" resolve="s" />
+        <node concept="5mhuz" id="jqB9Ud$CFS" role="1afhQ5">
+          <ref role="5mhpJ" node="6wzrxL3xgXz" resolve="m" />
         </node>
       </node>
     </node>
