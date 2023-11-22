@@ -13854,6 +13854,11 @@
           <ref role="3bR37D" node="sIFyDYEApj" resolve="org.iets3.core.expr.base.runtime" />
         </node>
       </node>
+      <node concept="1SiIV0" id="jqB9Ud_e3K" role="3bR37C">
+        <node concept="3bR9La" id="jqB9Ud_e3L" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="1YwzPHwBxon" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
