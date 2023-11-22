@@ -152,6 +152,9 @@
     <node concept="PrWs8" id="5lNY$88SS38" role="PzmwI">
       <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     </node>
+    <node concept="PrWs8" id="jqB9UaL9Qy" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6wzrxL38hak" resolve="IPreferredProposalContext" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8hwXW">
     <property role="TrG5h" value="FunRef" />
@@ -264,6 +267,9 @@
     </node>
     <node concept="PrWs8" id="5RRBXwZFT$e" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+    <node concept="PrWs8" id="6wzrxL38i5w" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6wzrxL38hak" resolve="IPreferredProposalContext" />
     </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
