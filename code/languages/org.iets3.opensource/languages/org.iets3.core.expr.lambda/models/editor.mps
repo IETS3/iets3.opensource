@@ -86,6 +86,9 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styles" index="V601i" />
       </concept>
@@ -354,6 +357,11 @@
         <property role="3F0ifm" value="(" />
         <node concept="11LMrY" id="6zmBjqUjH25" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="OXEIz" id="yfp7edvEmE" role="P5bDN">
+          <node concept="UkePV" id="yfp7edvEmF" role="OY2wv">
+            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" resolve="Type" />
+          </node>
         </node>
       </node>
       <node concept="3F2HdR" id="6zmBjqUjGZy" role="3EZMnx">
