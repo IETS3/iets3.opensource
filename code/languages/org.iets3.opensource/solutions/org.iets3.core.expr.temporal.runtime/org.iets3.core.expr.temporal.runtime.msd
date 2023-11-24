@@ -15,6 +15,7 @@
   <dependencies>
     <dependency reexport="false">957f018c-4561-4081-9ad3-b8618bf1160d(org.iets3.core.expr.datetime.runtime)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -25,6 +26,7 @@
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="957f018c-4561-4081-9ad3-b8618bf1160d(org.iets3.core.expr.datetime.runtime)" version="0" />
+    <module reference="52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)" version="0" />
     <module reference="17ecc6b6-d106-4b60-87a9-3fde52f92301(org.iets3.core.expr.temporal.runtime)" version="0" />
   </dependencyVersions>
 </solution>

@@ -461,6 +461,28 @@
         </node>
       </node>
     </node>
+    <node concept="2zPypq" id="5s2FNgbirfz" role="_iOnB">
+      <property role="TrG5h" value="v1_float" />
+      <property role="0Rz4W" value="864470150" />
+      <node concept="FfN7I" id="5s2FNgbirf$" role="2zPyp_">
+        <node concept="FfN7L" id="5s2FNgbirf_" role="FfN64">
+          <node concept="30bXRB" id="5s2FNgbirfA" role="FfN7O">
+            <property role="30bXRw" value="10." />
+          </node>
+          <node concept="_emDc" id="5s2FNgbirfB" role="FfN7M">
+            <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="5s2FNgbirfC" role="FfN64">
+          <node concept="_emDc" id="5s2FNgbirfD" role="FfN7M">
+            <ref role="_emDf" node="7aRvJQErc4P" resolve="date05" />
+          </node>
+          <node concept="30bXRB" id="5s2FNgbirfE" role="FfN7O">
+            <property role="30bXRw" value="20.0" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2zPypq" id="7aRvJQErc4X" role="_iOnB">
       <property role="TrG5h" value="v2" />
       <property role="0Rz4W" value="2015811261" />
@@ -549,6 +571,15 @@
     <node concept="_ixoA" id="x6l$anoBHl" role="_iOnB" />
     <node concept="_fkuM" id="VFjlN5ID3N" role="_iOnB">
       <property role="TrG5h" value="Equality" />
+      <node concept="_fkuZ" id="5s2FNgbjQVC" role="_fkp5">
+        <node concept="_fku$" id="5s2FNgbjQVD" role="_fkur" />
+        <node concept="_emDc" id="5s2FNgbjR3E" role="_fkuY">
+          <ref role="_emDf" node="7aRvJQErc4W" resolve="v1" />
+        </node>
+        <node concept="_emDc" id="5s2FNgbjR7c" role="_fkuS">
+          <ref role="_emDf" node="5s2FNgbirfz" resolve="v1_float" />
+        </node>
+      </node>
       <node concept="_fkuZ" id="VFjlN5L78C" role="_fkp5">
         <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="VFjlN5L78D" role="_fkur" />

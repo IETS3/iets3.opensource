@@ -13,6 +13,7 @@
     <import index="2j0k" ref="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
+    <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -3858,24 +3859,23 @@
                 </node>
               </node>
               <node concept="3fqX7Q" id="7aRvJQF0lZA" role="3clFbw">
-                <node concept="2OqwBi" id="7aRvJQF0lZB" role="3fr31v">
-                  <node concept="2OqwBi" id="7aRvJQF0lZC" role="2Oq$k0">
-                    <node concept="37vLTw" id="4OwGieAyZvW" role="2Oq$k0">
+                <node concept="2YIFZM" id="5s2FNgbsXcO" role="3fr31v">
+                  <ref role="1Pybhc" to="dj6k:1EZBwZ4mn8E" resolve="EqualsHelper" />
+                  <ref role="37wK5l" to="dj6k:1EZBwZ4muLD" resolve="equals" />
+                  <node concept="2OqwBi" id="5s2FNgbt34z" role="37wK5m">
+                    <node concept="37vLTw" id="5s2FNgbt34$" role="2Oq$k0">
                       <ref role="3cqZAo" node="4OwGieAyZvO" resolve="s" />
                     </node>
-                    <node concept="liA8E" id="7aRvJQF0lZE" role="2OqNvi">
+                    <node concept="liA8E" id="5s2FNgbt34_" role="2OqNvi">
                       <ref role="37wK5l" node="50smQ1VbR0B" resolve="value" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="7aRvJQF0lZF" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
-                    <node concept="2OqwBi" id="7aRvJQF0lZG" role="37wK5m">
-                      <node concept="37vLTw" id="7aRvJQF0lZH" role="2Oq$k0">
-                        <ref role="3cqZAo" node="50smQ1VaYe$" resolve="otherSlice" />
-                      </node>
-                      <node concept="liA8E" id="7aRvJQF0lZI" role="2OqNvi">
-                        <ref role="37wK5l" node="50smQ1VbR0B" resolve="value" />
-                      </node>
+                  <node concept="2OqwBi" id="5s2FNgbtejY" role="37wK5m">
+                    <node concept="37vLTw" id="5s2FNgbtejZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="50smQ1VaYe$" resolve="otherSlice" />
+                    </node>
+                    <node concept="liA8E" id="5s2FNgbtek0" role="2OqNvi">
+                      <ref role="37wK5l" node="50smQ1VbR0B" resolve="value" />
                     </node>
                   </node>
                 </node>

@@ -1996,11 +1996,6 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7iQqdOBku0B" role="3bR37C">
-          <node concept="3bR9La" id="7iQqdOBku0C" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="_I$tx9JvQU" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5038,6 +5033,11 @@
             <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5s2FNgb$buT" role="3bR37C">
+          <node concept="3bR9La" id="5s2FNgb$buU" role="1SiIV1">
+            <ref role="3bR37D" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396fH" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -6096,6 +6096,11 @@
             <node concept="3qWCbU" id="2xddOZL74Px" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5s2FNgb$bxc" role="3bR37C">
+          <node concept="3bR9La" id="5s2FNgb$bxd" role="1SiIV1">
+            <ref role="3bR37D" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
           </node>
         </node>
       </node>
@@ -7535,6 +7540,11 @@
         <node concept="1SiIV0" id="3qKzW8QC_j$" role="3bR37C">
           <node concept="3bR9La" id="3qKzW8QC_j_" role="1SiIV1">
             <ref role="3bR37D" node="3qKzW8QxJyw" resolve="org.iets3.core.expr.base.shared.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5s2FNgb$bzP" role="3bR37C">
+          <node concept="3bR9La" id="5s2FNgb$bzQ" role="1SiIV1">
+            <ref role="3bR37D" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
           </node>
         </node>
       </node>
