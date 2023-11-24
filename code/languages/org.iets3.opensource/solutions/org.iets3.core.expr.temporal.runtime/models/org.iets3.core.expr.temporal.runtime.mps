@@ -3921,6 +3921,12 @@
                 <ref role="2Oxat5" node="50smQ1V9OxE" resolve="slices" />
               </node>
             </node>
+            <node concept="2OqwBi" id="6Dza3DEIWVP" role="37wK5m">
+              <node concept="Xjq3P" id="6Dza3DEISPp" role="2Oq$k0" />
+              <node concept="2OwXpG" id="6Dza3DEJ34c" role="2OqNvi">
+                <ref role="2Oxat5" node="7SY$c$igh7w" resolve="defaultValue" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
