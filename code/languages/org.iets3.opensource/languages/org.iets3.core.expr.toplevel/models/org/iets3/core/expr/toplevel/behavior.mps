@@ -8578,6 +8578,25 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="7SszixhZVRp" role="13h7CS">
+      <property role="TrG5h" value="nodeForTypingFieldSetter" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="7SszixhZVRq" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7SszixhZWjX" role="3clF45" />
+      <node concept="3clFbS" id="7SszixhZVRs" role="3clF47">
+        <node concept="3clFbF" id="7SszixhZWys" role="3cqZAp">
+          <node concept="37vLTw" id="7SszixhZWyr" role="3clFbG">
+            <ref role="3cqZAo" node="7SszixhZWr_" resolve="setter" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7SszixhZWr_" role="3clF46">
+        <property role="TrG5h" value="setter" />
+        <node concept="3Tqbb2" id="7SszixhZWr$" role="1tU5fm">
+          <ref role="ehGHo" to="yv47:4ptnK4jbqZG" resolve="FieldSetter" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="4ptnK4jbra5" role="13h7CW">
       <node concept="3clFbS" id="4ptnK4jbra6" role="2VODD2" />
     </node>
