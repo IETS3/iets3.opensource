@@ -4,6 +4,14 @@ All notable changes to this project are documented in this file.
 
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). 
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
+
+## November 2023
+
+### Fixes
+
+- Unit definitions are now checked for cycles.
+- When units are converted, the specified conversion specifier is used, instead of the first one.
+
 ## October 2023
 
 ### Fixed

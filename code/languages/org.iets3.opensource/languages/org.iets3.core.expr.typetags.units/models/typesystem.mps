@@ -7,6 +7,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -69,6 +70,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -172,6 +177,7 @@
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -185,6 +191,14 @@
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
+      </concept>
+      <concept id="1163670490218" name="jetbrains.mps.baseLanguage.structure.SwitchStatement" flags="nn" index="3KaCP$">
+        <child id="1163670766145" name="expression" index="3KbGdf" />
+        <child id="1163670772911" name="case" index="3KbHQx" />
+      </concept>
+      <concept id="1163670641947" name="jetbrains.mps.baseLanguage.structure.SwitchCase" flags="ng" index="3KbdKl">
+        <child id="1163670677455" name="expression" index="3Kbmr1" />
+        <child id="1163670683720" name="body" index="3Kbo56" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -3316,8 +3330,75 @@
                   <node concept="liA8E" id="52UOzzPp0Rp" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                     <node concept="Xl_RD" id="yGiRIEWwlX" role="37wK5m">
-                      <property role="Xl_RC" value="Multiple matching conversion specifiers have been found" />
+                      <property role="Xl_RC" value="Multiple matching conversion specifiers have been found." />
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="4qv99Irzl5n" role="3cqZAp">
+                <node concept="3cpWsn" id="4qv99Irzl5o" role="3cpWs9">
+                  <property role="TrG5h" value="config" />
+                  <node concept="3uibUv" id="4qv99Irzl1t" role="1tU5fm">
+                    <ref role="3uigEE" to="zdxd:4qv99IryjZo" resolve="IUnitLangConfig" />
+                  </node>
+                  <node concept="2YIFZM" id="4qv99IrBAXj" role="33vP2m">
+                    <ref role="37wK5l" to="zdxd:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="zdxd:4qv99IrBkzE" resolve="UnitLangConfigHelper" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="4qv99IrBSVk" role="3cqZAp" />
+              <node concept="3KaCP$" id="4qv99Irzn8d" role="3cqZAp">
+                <node concept="2OqwBi" id="4qv99Irzm7o" role="3KbGdf">
+                  <node concept="37vLTw" id="4qv99Irzm1b" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4qv99Irzl5o" resolve="config" />
+                  </node>
+                  <node concept="liA8E" id="4qv99IrzmhT" role="2OqNvi">
+                    <ref role="37wK5l" to="zdxd:4qv99Irylny" resolve="getConversionSpecifierSelection" />
+                  </node>
+                </node>
+                <node concept="3KbdKl" id="4qv99Irzsw5" role="3KbHQx">
+                  <node concept="Rm8GO" id="4qv99IrzsAO" role="3Kbmr1">
+                    <ref role="Rm8GQ" to="zdxd:4qv99IrykKI" resolve="DEFINED_IN_CONVERT_EXPESSION" />
+                    <ref role="1Px2BO" to="zdxd:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+                  </node>
+                  <node concept="3clFbS" id="4qv99IrzsEt" role="3Kbo56">
+                    <node concept="3clFbF" id="4qv99IrAHPr" role="3cqZAp">
+                      <node concept="2OqwBi" id="4qv99IrAJ6t" role="3clFbG">
+                        <node concept="37vLTw" id="4qv99IrAHPp" role="2Oq$k0">
+                          <ref role="3cqZAo" node="52UOzzPoZFv" resolve="builder" />
+                        </node>
+                        <node concept="liA8E" id="4qv99IrAKGA" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
+                          <node concept="Xl_RD" id="4qv99IrALwF" role="37wK5m">
+                            <property role="Xl_RC" value=" For conversions, the selected specifier will be used" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3zACq4" id="4qv99IrzsZA" role="3cqZAp" />
+                  </node>
+                </node>
+                <node concept="3KbdKl" id="4qv99IrzneS" role="3KbHQx">
+                  <node concept="Rm8GO" id="4qv99Irznk1" role="3Kbmr1">
+                    <ref role="Rm8GQ" to="zdxd:4qv99IrykGi" resolve="FIRST_APPLICABLE" />
+                    <ref role="1Px2BO" to="zdxd:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+                  </node>
+                  <node concept="3clFbS" id="4qv99Irznkz" role="3Kbo56">
+                    <node concept="3clFbF" id="4qv99IrAV70" role="3cqZAp">
+                      <node concept="2OqwBi" id="4qv99IrAV71" role="3clFbG">
+                        <node concept="37vLTw" id="4qv99IrAV72" role="2Oq$k0">
+                          <ref role="3cqZAo" node="52UOzzPoZFv" resolve="builder" />
+                        </node>
+                        <node concept="liA8E" id="4qv99IrAV73" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
+                          <node concept="Xl_RD" id="4qv99IrAV74" role="37wK5m">
+                            <property role="Xl_RC" value=" For conversions, the first applicable specifier will be used" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3zACq4" id="4qv99Irzsu_" role="3cqZAp" />
                   </node>
                 </node>
               </node>

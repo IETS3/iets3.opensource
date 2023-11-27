@@ -80,6 +80,9 @@
     <node concept="PrWs8" id="2JXkwhJfSCx" role="PrDN$">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="9MvF2i4gt7" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3jsZ">
     <property role="TrG5h" value="Unit" />
@@ -115,6 +118,9 @@
     </node>
     <node concept="PrWs8" id="3WnwFDbcwDv" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+    <node concept="PrWs8" id="9MvF2i48Ez" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3k4t">
