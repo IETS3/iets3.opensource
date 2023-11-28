@@ -464,12 +464,6 @@
         <child id="1205770614681" name="actualArgument" index="2XxRq1" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -8714,12 +8708,6 @@
     <node concept="3clFb_" id="kZqQ80eLNM" role="jymVt">
       <property role="TrG5h" value="execute" />
       <node concept="3clFbS" id="kZqQ80eLNP" role="3clF47">
-        <node concept="2xdQw9" id="3ApArNFGPnP" role="3cqZAp">
-          <property role="2xdLsb" value="h1akgim/info" />
-          <node concept="Xl_RD" id="3ApArNFGPnR" role="9lYJi">
-            <property role="Xl_RC" value="Executed" />
-          </node>
-        </node>
         <node concept="3clFbJ" id="kZqQ80eOM9" role="3cqZAp">
           <node concept="3clFbS" id="kZqQ80eOMa" role="3clFbx">
             <node concept="3clFbF" id="kZqQ80eVoy" role="3cqZAp">
