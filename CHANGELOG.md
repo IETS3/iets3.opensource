@@ -10,7 +10,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixes
 
 - Unit definitions are now checked for cycles.
-- When units are converted, the specified conversion specifier is used, instead of the first one.
+- Units now provide an extension point to configure which conversion specifier is used per default.
+  Per default the first available one is used as in older versions. The extension point supports using the one specified in the conversion expression.
 
 ## October 2023
 
