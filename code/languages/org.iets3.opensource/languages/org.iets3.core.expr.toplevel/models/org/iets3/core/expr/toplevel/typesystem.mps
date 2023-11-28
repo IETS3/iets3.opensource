@@ -24,7 +24,6 @@
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -59,9 +58,6 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -3677,20 +3673,6 @@
     <property role="TrG5h" value="typeof_FieldSetter" />
     <property role="3GE5qa" value="record.builder" />
     <node concept="3clFbS" id="4ptnK4jiabS" role="18ibNy">
-      <node concept="3clFbF" id="7Sszixi6bNb" role="3cqZAp">
-        <node concept="2OqwBi" id="7Sszixi6bN8" role="3clFbG">
-          <node concept="10M0yZ" id="7Sszixi6bN9" role="2Oq$k0">
-            <ref role="1PxDUh" to="wyt6:~System" />
-            <ref role="3cqZAo" to="wyt6:~System.err" />
-          </node>
-          <node concept="liA8E" id="7Sszixi6bNa" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-            <node concept="Xl_RD" id="7Sszixi6c2s" role="37wK5m">
-              <property role="Xl_RC" value="okj" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3cpWs8" id="7SszixhZU64" role="3cqZAp">
         <node concept="3cpWsn" id="7SszixhZU65" role="3cpWs9">
           <property role="TrG5h" value="ba" />
