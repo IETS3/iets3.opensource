@@ -338,13 +338,6 @@
       <property role="20kJfa" value="refFlag" />
       <ref role="20lvS9" node="6JZACDWOa9c" resolve="ReferenceableFlag" />
     </node>
-    <node concept="1TJgyj" id="6vUyz1z4RZG" role="1TKVEi">
-      <property role="IQ2ns" value="7492452870509527020" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="comparisonOrder" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3sWKo0E1oB0" resolve="RecordComparisonOrder" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7D7uZV2dYyT">
     <property role="3GE5qa" value="record" />
@@ -745,6 +738,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="602952467877562565" />
       <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
+    </node>
+    <node concept="1TJgyj" id="6vUyz1z4RZG" role="1TKVEi">
+      <property role="IQ2ns" value="7492452870509527020" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="comparisonOrder" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3sWKo0E1oB0" resolve="RecordComparisonOrder" />
     </node>
   </node>
   <node concept="1TIwiD" id="7zXSNv$jGoK">

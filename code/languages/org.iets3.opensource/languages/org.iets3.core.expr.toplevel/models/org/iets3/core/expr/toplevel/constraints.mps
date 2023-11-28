@@ -2151,7 +2151,7 @@
                   <node concept="2Xjw5R" id="3sWKo0E1prS" role="2OqNvi">
                     <node concept="1xMEDy" id="3sWKo0E1prU" role="1xVPHs">
                       <node concept="chp4Y" id="3sWKo0E1pws" role="ri$Ld">
-                        <ref role="cht4Q" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+                        <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
                       </node>
                     </node>
                     <node concept="1xIGOp" id="3sWKo0E1pJ9" role="1xVPHs" />
