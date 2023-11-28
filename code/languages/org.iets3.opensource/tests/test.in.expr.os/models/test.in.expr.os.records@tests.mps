@@ -209,6 +209,7 @@
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
       </concept>
       <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
+        <child id="7492452870509527020" name="comparisonOrder" index="4Uvns" />
         <child id="602952467877562565" name="members" index="S5Trm" />
       </concept>
       <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
@@ -216,7 +217,6 @@
       </concept>
       <concept id="8811147530084018361" name="org.iets3.core.expr.toplevel.structure.RecordMember" flags="ng" index="2Ss9d7" />
       <concept id="8811147530084018358" name="org.iets3.core.expr.toplevel.structure.RecordDeclaration" flags="ng" index="2Ss9d8">
-        <child id="7492452870509527020" name="comparisonOrder" index="4Uvns" />
         <child id="7782108600709718635" name="refFlag" index="nbNzx" />
       </concept>
       <concept id="1024425597324739336" name="org.iets3.core.expr.toplevel.structure.RecordMemberRefInConstraint" flags="ng" index="XrbUJ">

@@ -1099,7 +1099,7 @@
                 <node concept="1PxgMI" id="3sWKo0EpqFo" role="2Oq$k0">
                   <property role="1BlNFB" value="true" />
                   <node concept="chp4Y" id="3sWKo0EpqFp" role="3oSUPX">
-                    <ref role="cht4Q" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+                    <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
                   </node>
                   <node concept="37vLTw" id="3sWKo0EpqFq" role="1m5AlR">
                     <ref role="3cqZAo" node="7$ajNzjzZzN" resolve="recordDeclaration" />
@@ -1116,7 +1116,7 @@
               <node concept="1PxgMI" id="7k6A8WfxKFt" role="2Oq$k0">
                 <property role="1BlNFB" value="true" />
                 <node concept="chp4Y" id="7k6A8WfxNsN" role="3oSUPX">
-                  <ref role="cht4Q" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+                  <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
                 </node>
                 <node concept="37vLTw" id="7k6A8WfxDdY" role="1m5AlR">
                   <ref role="3cqZAo" node="7$ajNzjzZzN" resolve="recordDeclaration" />
@@ -1233,7 +1233,7 @@
                   <node concept="1PxgMI" id="7k6A8Wfyf4P" role="2Oq$k0">
                     <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="7k6A8Wfyf4Q" role="3oSUPX">
-                      <ref role="cht4Q" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+                      <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
                     </node>
                     <node concept="37vLTw" id="7k6A8Wfyf4R" role="1m5AlR">
                       <ref role="3cqZAo" node="7$ajNzjzZzN" resolve="recordDeclaration" />
