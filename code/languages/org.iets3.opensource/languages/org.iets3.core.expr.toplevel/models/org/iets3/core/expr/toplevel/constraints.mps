@@ -4,6 +4,7 @@
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -2126,6 +2127,39 @@
               <node concept="nLn13" id="c36CPsxQuk" role="1m5AlR" />
               <node concept="chp4Y" id="c36CPsxQul" role="3oSUPX">
                 <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3sWKo0E1oFo">
+    <property role="3GE5qa" value="record" />
+    <ref role="1M2myG" to="yv47:3sWKo0E1oB0" resolve="RecordComparisonOrder" />
+    <node concept="1N5Pfh" id="3sWKo0E1oFp" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:3sWKo0E1oB1" resolve="member" />
+      <node concept="3dgokm" id="3sWKo0E1oJj" role="1N6uqs">
+        <node concept="3clFbS" id="3sWKo0E1oJk" role="2VODD2">
+          <node concept="3clFbF" id="3sWKo0E1oNF" role="3cqZAp">
+            <node concept="2YIFZM" id="3sWKo0E1oTl" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="3sWKo0E1q7j" role="37wK5m">
+                <node concept="2OqwBi" id="3sWKo0E1pgO" role="2Oq$k0">
+                  <node concept="2rP1CM" id="3sWKo0E1oVE" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="3sWKo0E1prS" role="2OqNvi">
+                    <node concept="1xMEDy" id="3sWKo0E1prU" role="1xVPHs">
+                      <node concept="chp4Y" id="3sWKo0E1pws" role="ri$Ld">
+                        <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="3sWKo0E1pJ9" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="3sWKo0E1qSC" role="2OqNvi">
+                  <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
+                </node>
               </node>
             </node>
           </node>
