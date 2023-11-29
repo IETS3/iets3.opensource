@@ -4,6 +4,15 @@ All notable changes to this project are documented in this file.
 
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). 
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
+
+## November 2023
+
+### Fixes
+
+- Unit definitions are now checked for cycles.
+- Units now provide an extension point to configure which conversion specifier is used per default.
+  Per default the first available one is used as in older versions. The extension point supports using the one specified in the conversion expression.
+
 ## October 2023
 
 ### Fixed
