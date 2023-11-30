@@ -177,6 +177,7 @@
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -228,6 +229,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -1082,6 +1084,51 @@
     </node>
     <node concept="1SWQZ3" id="5FZDsYw995V" role="lGtFl">
       <property role="1SWRpm" value="BUILDER" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3sWKo0DWTli">
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="AddComparisonOrder" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+    <node concept="2S6ZIM" id="3sWKo0DWTlj" role="2ZfVej">
+      <node concept="3clFbS" id="3sWKo0DWTlk" role="2VODD2">
+        <node concept="3clFbF" id="3sWKo0DWToP" role="3cqZAp">
+          <node concept="Xl_RD" id="3sWKo0DWToO" role="3clFbG">
+            <property role="Xl_RC" value="Add a Comparison Order" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3sWKo0DWTll" role="2ZfgGD">
+      <node concept="3clFbS" id="3sWKo0DWTlm" role="2VODD2">
+        <node concept="3clFbF" id="3sWKo0DX2e4" role="3cqZAp">
+          <node concept="2OqwBi" id="3sWKo0DX715" role="3clFbG">
+            <node concept="2OqwBi" id="3sWKo0DX2$S" role="2Oq$k0">
+              <node concept="2Sf5sV" id="3sWKo0DX2e3" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="3sWKo0DX3no" role="2OqNvi">
+                <ref role="3TtcxE" to="yv47:6vUyz1z4RZG" resolve="comparisonOrder" />
+              </node>
+            </node>
+            <node concept="WFELt" id="3sWKo0DXabI" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="3sWKo0DWTqQ" role="2ZfVeh">
+      <node concept="3clFbS" id="3sWKo0DWTqR" role="2VODD2">
+        <node concept="3clFbF" id="3sWKo0DWTrj" role="3cqZAp">
+          <node concept="2OqwBi" id="3sWKo0DWYXd" role="3clFbG">
+            <node concept="2OqwBi" id="3sWKo0DWTUu" role="2Oq$k0">
+              <node concept="2Sf5sV" id="3sWKo0DWTri" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="3sWKo0DWUH7" role="2OqNvi">
+                <ref role="3TtcxE" to="yv47:6vUyz1z4RZG" resolve="comparisonOrder" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="3sWKo0DX27W" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
