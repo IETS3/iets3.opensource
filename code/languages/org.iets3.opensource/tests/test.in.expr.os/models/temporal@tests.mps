@@ -7594,6 +7594,32 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="1nutsCOwlgs" role="jymVt">
+      <property role="TrG5h" value="TT7_null" />
+      <node concept="3Tm6S6" id="1nutsCOwlgt" role="1B3o_S" />
+      <node concept="3uibUv" id="1nutsCOwlgu" role="1tU5fm">
+        <ref role="3uigEE" to="8rdi:50smQ1V9Ofy" resolve="TemporalValue" />
+      </node>
+      <node concept="2ShNRf" id="1nutsCOwlgv" role="33vP2m">
+        <node concept="1pGfFk" id="1nutsCOwlgw" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="37wK5l" to="8rdi:50smQ1V9OlU" resolve="TemporalValue" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="1nutsCOwmug" role="jymVt">
+      <property role="TrG5h" value="TT8_null" />
+      <node concept="3Tm6S6" id="1nutsCOwmuh" role="1B3o_S" />
+      <node concept="3uibUv" id="1nutsCOwmui" role="1tU5fm">
+        <ref role="3uigEE" to="8rdi:50smQ1V9Ofy" resolve="TemporalValue" />
+      </node>
+      <node concept="2ShNRf" id="1nutsCOwmuj" role="33vP2m">
+        <node concept="1pGfFk" id="1nutsCOwmuk" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="37wK5l" to="8rdi:50smQ1V9OlU" resolve="TemporalValue" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="x6l$anUtwZ" role="1B3o_S" />
     <node concept="3s_gsd" id="x6l$anUtx0" role="3s_ewO">
       <node concept="3s$Bmu" id="x6l$anUtx1" role="3s_gse">
@@ -7740,6 +7766,79 @@
                 <ref role="37wK5l" to="8rdi:50smQ1Vatfj" resolve="equals" />
                 <node concept="37vLTw" id="6ZdYLeAPvjU" role="37wK5m">
                   <ref role="3cqZAo" node="6ZdYLeAPrsA" resolve="TT6_null" />
+                </node>
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="1nutsCOwjhx" role="3_9lra">
+              <node concept="3cpWs3" id="1nutsCOwjto" role="3_1BAH">
+                <node concept="2OqwBi" id="1nutsCOwjtp" role="3uHU7w">
+                  <node concept="37vLTw" id="1nutsCOwjtq" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6ZdYLeAPrsA" resolve="TT6_null" />
+                  </node>
+                  <node concept="liA8E" id="1nutsCOwjtr" role="2OqNvi">
+                    <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="1nutsCOwjts" role="3uHU7B">
+                  <node concept="3cpWs3" id="1nutsCOwjtt" role="3uHU7B">
+                    <node concept="Xl_RD" id="1nutsCOwjtu" role="3uHU7B">
+                      <property role="Xl_RC" value="TemporalValues have different slices: actual: " />
+                    </node>
+                    <node concept="2OqwBi" id="1nutsCOwjtv" role="3uHU7w">
+                      <node concept="37vLTw" id="1nutsCOwjtw" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6ZdYLeAPpeq" resolve="TT5_null" />
+                      </node>
+                      <node concept="liA8E" id="1nutsCOwjtx" role="2OqNvi">
+                        <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="1nutsCOwjty" role="3uHU7w">
+                    <property role="Xl_RC" value=" expected: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="1nutsCOwqTs" role="3cqZAp">
+            <node concept="2OqwBi" id="1nutsCOwrcS" role="3vFALc">
+              <node concept="37vLTw" id="1nutsCOwrcT" role="2Oq$k0">
+                <ref role="3cqZAo" node="1nutsCOwlgs" resolve="TT7_null" />
+              </node>
+              <node concept="liA8E" id="1nutsCOwrcU" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:50smQ1Vatfj" resolve="equals" />
+                <node concept="37vLTw" id="1nutsCOwrcV" role="37wK5m">
+                  <ref role="3cqZAo" node="1nutsCOwmug" resolve="TT8_null" />
+                </node>
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="1nutsCOwrP0" role="3_9lra">
+              <node concept="3cpWs3" id="1nutsCOws3q" role="3_1BAH">
+                <node concept="2OqwBi" id="1nutsCOws3r" role="3uHU7w">
+                  <node concept="37vLTw" id="1nutsCOws3s" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1nutsCOwmug" resolve="TT8_null" />
+                  </node>
+                  <node concept="liA8E" id="1nutsCOws3t" role="2OqNvi">
+                    <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="1nutsCOws3u" role="3uHU7B">
+                  <node concept="3cpWs3" id="1nutsCOws3v" role="3uHU7B">
+                    <node concept="Xl_RD" id="1nutsCOws3w" role="3uHU7B">
+                      <property role="Xl_RC" value="TemporalValues have different slices: actual: " />
+                    </node>
+                    <node concept="2OqwBi" id="1nutsCOws3x" role="3uHU7w">
+                      <node concept="37vLTw" id="1nutsCOws3y" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1nutsCOwlgs" resolve="TT7_null" />
+                      </node>
+                      <node concept="liA8E" id="1nutsCOws3z" role="2OqNvi">
+                        <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="1nutsCOws3$" role="3uHU7w">
+                    <property role="Xl_RC" value=" expected: " />
+                  </node>
                 </node>
               </node>
             </node>
@@ -7912,6 +8011,79 @@
               </node>
               <node concept="liA8E" id="6ZdYLeAPx2$" role="2OqNvi">
                 <ref role="37wK5l" to="8rdi:x6l$amVY8h" resolve="hashCode" />
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="1nutsCOwuf5" role="3_9lra">
+              <node concept="3cpWs3" id="1nutsCOwuQs" role="3_1BAH">
+                <node concept="2OqwBi" id="1nutsCOwuQt" role="3uHU7w">
+                  <node concept="37vLTw" id="1nutsCOwuQu" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6ZdYLeAPrsA" resolve="TT6_null" />
+                  </node>
+                  <node concept="liA8E" id="1nutsCOwuQv" role="2OqNvi">
+                    <ref role="37wK5l" to="8rdi:x6l$amVY8h" resolve="hashCode" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="1nutsCOwuQw" role="3uHU7B">
+                  <node concept="3cpWs3" id="1nutsCOwuQx" role="3uHU7B">
+                    <node concept="Xl_RD" id="1nutsCOwuQy" role="3uHU7B">
+                      <property role="Xl_RC" value="Hashcodes of TemporalValues with different slices: actual: " />
+                    </node>
+                    <node concept="2OqwBi" id="1nutsCOwuQz" role="3uHU7w">
+                      <node concept="37vLTw" id="1nutsCOwuQ$" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6ZdYLeAPpeq" resolve="TT5_null" />
+                      </node>
+                      <node concept="liA8E" id="1nutsCOwuQ_" role="2OqNvi">
+                        <ref role="37wK5l" to="8rdi:x6l$amVY8h" resolve="hashCode" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="1nutsCOwuQA" role="3uHU7w">
+                    <property role="Xl_RC" value=" expected: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="1nutsCOwsMj" role="3cqZAp">
+            <node concept="2OqwBi" id="1nutsCOwtuI" role="3vFALc">
+              <node concept="37vLTw" id="1nutsCOwtuJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="1nutsCOwlgs" resolve="TT7_null" />
+              </node>
+              <node concept="liA8E" id="1nutsCOwtuK" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:50smQ1Vatfj" resolve="equals" />
+                <node concept="37vLTw" id="1nutsCOwtuL" role="37wK5m">
+                  <ref role="3cqZAo" node="1nutsCOwmug" resolve="TT8_null" />
+                </node>
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="1nutsCOwu7r" role="3_9lra">
+              <node concept="3cpWs3" id="1nutsCOwwij" role="3_1BAH">
+                <node concept="2OqwBi" id="1nutsCOwwik" role="3uHU7w">
+                  <node concept="37vLTw" id="1nutsCOwwil" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1nutsCOwmug" resolve="TT8_null" />
+                  </node>
+                  <node concept="liA8E" id="1nutsCOwwim" role="2OqNvi">
+                    <ref role="37wK5l" to="8rdi:x6l$amVY8h" resolve="hashCode" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="1nutsCOwwin" role="3uHU7B">
+                  <node concept="3cpWs3" id="1nutsCOwwio" role="3uHU7B">
+                    <node concept="Xl_RD" id="1nutsCOwwip" role="3uHU7B">
+                      <property role="Xl_RC" value="Hashcodes of TemporalValues with different slices: actual: " />
+                    </node>
+                    <node concept="2OqwBi" id="1nutsCOwwiq" role="3uHU7w">
+                      <node concept="37vLTw" id="1nutsCOwwir" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1nutsCOwlgs" resolve="TT7_null" />
+                      </node>
+                      <node concept="liA8E" id="1nutsCOwwis" role="2OqNvi">
+                        <ref role="37wK5l" to="8rdi:x6l$amVY8h" resolve="hashCode" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="1nutsCOwwit" role="3uHU7w">
+                    <property role="Xl_RC" value=" expected: " />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -8189,6 +8361,139 @@
             </node>
             <node concept="37vLTw" id="6ZdYLeAPuTN" role="37vLTJ">
               <ref role="3cqZAo" node="6ZdYLeAPrsA" resolve="TT6_null" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1nutsCOwnGL" role="3cqZAp" />
+        <node concept="3clFbF" id="1nutsCOslOq" role="3cqZAp">
+          <node concept="37vLTI" id="1nutsCOslOr" role="3clFbG">
+            <node concept="37vLTw" id="1nutsCOslO_" role="37vLTJ">
+              <ref role="3cqZAo" node="1nutsCOwlgs" resolve="TT7_null" />
+            </node>
+            <node concept="2OqwBi" id="1nutsCOwowu" role="37vLTx">
+              <node concept="37vLTw" id="1nutsCOwowv" role="2Oq$k0">
+                <ref role="3cqZAo" node="1nutsCOwlgs" resolve="TT7_null" />
+              </node>
+              <node concept="liA8E" id="1nutsCOwoww" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:3nGzaxUxJqb" resolve="slice" />
+                <node concept="2ShNRf" id="1nutsCOwowx" role="37wK5m">
+                  <node concept="1pGfFk" id="1nutsCOwowy" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="8rdi:50smQ1VbaTB" resolve="SliceValue" />
+                    <node concept="37vLTw" id="1nutsCOwowz" role="37wK5m">
+                      <ref role="3cqZAo" node="6ZdYLeAPpeq" resolve="TT5_null" />
+                    </node>
+                    <node concept="2YIFZM" id="1nutsCOwow$" role="37wK5m">
+                      <ref role="37wK5l" to="28m1:~LocalDate.parse(java.lang.CharSequence)" resolve="parse" />
+                      <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
+                      <node concept="Xl_RD" id="1nutsCOwow_" role="37wK5m">
+                        <property role="Xl_RC" value="2000-01-01" />
+                      </node>
+                    </node>
+                    <node concept="10Nm6u" id="1nutsCOwowA" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1nutsCOwo1h" role="3cqZAp">
+          <node concept="37vLTI" id="1nutsCOwo1i" role="3clFbG">
+            <node concept="2OqwBi" id="1nutsCOwo1j" role="37vLTx">
+              <node concept="37vLTw" id="1nutsCOwo1k" role="2Oq$k0">
+                <ref role="3cqZAo" node="6ZdYLeAPpeq" resolve="TT5_null" />
+              </node>
+              <node concept="liA8E" id="1nutsCOwo1l" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:3nGzaxUxJqb" resolve="slice" />
+                <node concept="2ShNRf" id="1nutsCOwo1m" role="37wK5m">
+                  <node concept="1pGfFk" id="1nutsCOwo1n" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="8rdi:50smQ1VbaTB" resolve="SliceValue" />
+                    <node concept="37vLTw" id="1nutsCOwo1o" role="37wK5m">
+                      <ref role="3cqZAo" node="6ZdYLeAPpeq" resolve="TT5_null" />
+                    </node>
+                    <node concept="2YIFZM" id="1nutsCOwo1p" role="37wK5m">
+                      <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
+                      <ref role="37wK5l" to="28m1:~LocalDate.parse(java.lang.CharSequence)" resolve="parse" />
+                      <node concept="Xl_RD" id="1nutsCOwo1q" role="37wK5m">
+                        <property role="Xl_RC" value="2000-01-05" />
+                      </node>
+                    </node>
+                    <node concept="3cmrfG" id="1nutsCOwo1r" role="37wK5m">
+                      <property role="3cmrfH" value="5" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="1nutsCOwo1s" role="37vLTJ">
+              <ref role="3cqZAo" node="1nutsCOwlgs" resolve="TT7_null" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1nutsCOsmwQ" role="3cqZAp">
+          <node concept="37vLTI" id="1nutsCOsmwR" role="3clFbG">
+            <node concept="37vLTw" id="1nutsCOsmx1" role="37vLTJ">
+              <ref role="3cqZAo" node="1nutsCOwmug" resolve="TT8_null" />
+            </node>
+            <node concept="2OqwBi" id="1nutsCOwpbb" role="37vLTx">
+              <node concept="37vLTw" id="1nutsCOwpbc" role="2Oq$k0">
+                <ref role="3cqZAo" node="1nutsCOwmug" resolve="TT8_null" />
+              </node>
+              <node concept="liA8E" id="1nutsCOwpbd" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:3nGzaxUxJqb" resolve="slice" />
+                <node concept="2ShNRf" id="1nutsCOwpbe" role="37wK5m">
+                  <node concept="1pGfFk" id="1nutsCOwpbf" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="8rdi:50smQ1VbaTB" resolve="SliceValue" />
+                    <node concept="37vLTw" id="1nutsCOwpbg" role="37wK5m">
+                      <ref role="3cqZAo" node="6ZdYLeAPpeq" resolve="TT5_null" />
+                    </node>
+                    <node concept="2YIFZM" id="1nutsCOwpbh" role="37wK5m">
+                      <ref role="37wK5l" to="28m1:~LocalDate.parse(java.lang.CharSequence)" resolve="parse" />
+                      <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
+                      <node concept="Xl_RD" id="1nutsCOwpbi" role="37wK5m">
+                        <property role="Xl_RC" value="2000-01-01" />
+                      </node>
+                    </node>
+                    <node concept="10Nm6u" id="1nutsCOwpbj" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1nutsCOwoHE" role="3cqZAp">
+          <node concept="37vLTI" id="1nutsCOwoHF" role="3clFbG">
+            <node concept="2OqwBi" id="1nutsCOwoHG" role="37vLTx">
+              <node concept="37vLTw" id="1nutsCOwoHH" role="2Oq$k0">
+                <ref role="3cqZAo" node="6ZdYLeAPrsA" resolve="TT6_null" />
+              </node>
+              <node concept="liA8E" id="1nutsCOwoHI" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:3nGzaxUxJqb" resolve="slice" />
+                <node concept="2ShNRf" id="1nutsCOwoHJ" role="37wK5m">
+                  <node concept="1pGfFk" id="1nutsCOwoHK" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="8rdi:50smQ1VbaTB" resolve="SliceValue" />
+                    <node concept="37vLTw" id="1nutsCOwoHL" role="37wK5m">
+                      <ref role="3cqZAo" node="6ZdYLeAPrsA" resolve="TT6_null" />
+                    </node>
+                    <node concept="2YIFZM" id="1nutsCOwoHM" role="37wK5m">
+                      <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
+                      <ref role="37wK5l" to="28m1:~LocalDate.parse(java.lang.CharSequence)" resolve="parse" />
+                      <node concept="Xl_RD" id="1nutsCOwoHN" role="37wK5m">
+                        <property role="Xl_RC" value="2000-01-05" />
+                      </node>
+                    </node>
+                    <node concept="3cmrfG" id="1nutsCOwoHO" role="37wK5m">
+                      <property role="3cmrfH" value="6" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="1nutsCOwoHP" role="37vLTJ">
+              <ref role="3cqZAo" node="1nutsCOwmug" resolve="TT8_null" />
             </node>
           </node>
         </node>
