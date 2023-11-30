@@ -24,6 +24,19 @@ The project does _not_ follow Semantic Versioning and the changes are documented
    - Records: The sorting order can be added through the intention `Add a Comparison Order`, otherwise, the records are sorted based on the declaration order of the members
    - Option: Sorting removes all `none` values since the underlying data structure of collections doesn't support null values.
 
+## November 2023
+
+## Changed
+
+- The comparison helper in org.iets3.core.expr.simpleTypes.runtime and the equals helper in the test language where merged into a new class EqualsHelper inside the first runtime solution to return the same values.
+
+## Oktober 2023
+
+## Fixed
+
+- `SliceValue` can now correctly be checked for equality: `SliceValue.equals()` and `SliceValue.hashCode()` are overwritten.
+- `TemporalValue.hashCode()` was overwritten, thus `equals` and `hashCode()` are in sync now.
+
 ## September 2023
 
 ### Added
