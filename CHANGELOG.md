@@ -4,17 +4,24 @@ All notable changes to this project are documented in this file.
 
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). 
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
-## October 2023
+
+## Dezember 2023
 
 ### Fixed
 
-- Generation of nested short lambda expression now use the correct type for "it" as a variable.
+- Collections: The index expression now works with collection types in the generator.
 
 ## November 2023
 
 ### Fixed
 
 - String validation: A bug in the number detection logic was fixed
+
+## October 2023
+
+### Fixed
+
+- Generation of nested short lambda expression now use the correct type for "it" as a variable.
 
 ## September 2023
 
