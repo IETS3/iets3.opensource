@@ -13,14 +13,26 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## November 2023
 
+### Added
+
+- The `sort` method of collections now supports more types: all primitive types, the option type, all datetime types, the temporal type and the record type
+   - Records: The sorting order can be added through the intention `Add a Comparison Order`, otherwise, the records are sorted based on the declaration order of the members
+   - Option: Sorting removes all `none` values since the underlying data structure of collections doesn't support null values.
+
+### Changed
+
+- The comparison helper in org.iets3.core.expr.simpleTypes.runtime and the equals helper in the test language where merged into a new class EqualsHelper inside the first runtime solution to return the same values.
+
 ### Fixed
 
 - String validation: A bug in the number detection logic was fixed
 
-## October 2023
+## Oktober 2023
 
-### Fixed
+## Fixed
 
+- `SliceValue` can now correctly be checked for equality: `SliceValue.equals()` and `SliceValue.hashCode()` are overwritten.
+- `TemporalValue.hashCode()` was overwritten, thus `equals` and `hashCode()` are in sync now.
 - Generation of nested short lambda expression now use the correct type for "it" as a variable.
 
 ## September 2023
