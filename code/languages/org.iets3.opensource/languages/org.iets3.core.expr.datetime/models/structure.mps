@@ -660,7 +660,7 @@
     <property role="TrG5h" value="TimeType" />
     <property role="34LRSv" value="time" />
     <property role="3GE5qa" value="time" />
-    <property role="R4oN_" value="hours and minutes" />
+    <property role="R4oN_" value="hours, minutes and seconds" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="3HiHZey9lU5">
