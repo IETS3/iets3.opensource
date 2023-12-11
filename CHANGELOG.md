@@ -4,19 +4,12 @@ All notable changes to this project are documented in this file.
 
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). 
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
-## November 2023
+
+## Dezember 2023
 
 ### Fixed
 
-- Generation of nested short lambda expression now use the correct type for "it" as a variable.
-- String validation: A bug in the successor execution logic was fixed.
-
-## Oktober 2023
-
-## Fixed
-
-- `SliceValue` can now correctly be checked for equality: `SliceValue.equals()` and `SliceValue.hashCode()` are overwritten.
-- `TemporalValue.hashCode()` was overwritten, thus `equals` and `hashCode()` are in sync now.
+- Collections: The index expression now works with collection types in the generator.
 
 ## November 2023
 
@@ -25,6 +18,22 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - The `sort` method of collections now supports more types: all primitive types, the option type, all datetime types, the temporal type and the record type
    - Records: The sorting order can be added through the intention `Add a Comparison Order`, otherwise, the records are sorted based on the declaration order of the members
    - Option: Sorting removes all `none` values since the underlying data structure of collections doesn't support null values.
+
+### Changed
+
+- The comparison helper in org.iets3.core.expr.simpleTypes.runtime and the equals helper in the test language where merged into a new class EqualsHelper inside the first runtime solution to return the same values.
+
+### Fixed
+
+- String validation: A bug in the number detection logic was fixed
+
+## Oktober 2023
+
+## Fixed
+
+- `SliceValue` can now correctly be checked for equality: `SliceValue.equals()` and `SliceValue.hashCode()` are overwritten.
+- `TemporalValue.hashCode()` was overwritten, thus `equals` and `hashCode()` are in sync now.
+- Generation of nested short lambda expression now use the correct type for "it" as a variable.
 
 ## September 2023
 
@@ -54,3 +63,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Tuples are now handled within the typesystem.
    Instead of allowing JoinTypes within tuples we merge different tuple types by JoinTypes.
 - Each subconcept of IValidNamedConcept can now contribute and customize naming constraints
+
+### Changed
+
+- `IETS3ExprEvalHelper` methods no longer log exceptions that they re-throw. Some callers may ignore exceptions thrown by the interpreter, and having them logged unnecessarily clutters the logs. It is now the caller's responsibility to log exceptions where needed.

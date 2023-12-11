@@ -21,8 +21,8 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
@@ -822,6 +822,12 @@
     <node concept="3uibUv" id="7D7uZV2yaTX" role="EKbjA">
       <ref role="3uigEE" to="sxp1:6LLGpXJAGuu" resolve="IRecordValue" />
     </node>
+    <node concept="3uibUv" id="3sWKo0Ed0wd" role="EKbjA">
+      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
+      <node concept="3uibUv" id="3sWKo0Ed5eN" role="11_B2D">
+        <ref role="3uigEE" node="7D7uZV2szll" resolve="RecordValue" />
+      </node>
+    </node>
     <node concept="3clFb_" id="7D7uZV2yb7j" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getValueForPath" />
@@ -1255,12 +1261,6 @@
       </node>
       <node concept="2AHcQZ" id="3sWKo0Ed1L8" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" />
-      </node>
-    </node>
-    <node concept="3uibUv" id="3sWKo0Ed0wd" role="EKbjA">
-      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
-      <node concept="3uibUv" id="3sWKo0Ed5eN" role="11_B2D">
-        <ref role="3uigEE" node="7D7uZV2szll" resolve="RecordValue" />
       </node>
     </node>
   </node>
