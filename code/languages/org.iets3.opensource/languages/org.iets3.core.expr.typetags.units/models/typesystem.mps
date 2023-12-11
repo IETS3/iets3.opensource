@@ -3360,7 +3360,7 @@
                 <node concept="3KbdKl" id="4qv99Irzsw5" role="3KbHQx">
                   <node concept="Rm8GO" id="4qv99IrzsAO" role="3Kbmr1">
                     <ref role="Rm8GQ" to="zdxd:4qv99IrykKI" resolve="DEFINED_IN_CONVERT_EXPESSION" />
-                    <ref role="1Px2BO" to="zdxd:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+                    <ref role="1Px2BO" to="zdxd:4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
                   </node>
                   <node concept="3clFbS" id="4qv99IrzsEt" role="3Kbo56">
                     <node concept="3clFbF" id="4qv99IrAHPr" role="3cqZAp">
@@ -3382,7 +3382,7 @@
                 <node concept="3KbdKl" id="4qv99IrzneS" role="3KbHQx">
                   <node concept="Rm8GO" id="4qv99Irznk1" role="3Kbmr1">
                     <ref role="Rm8GQ" to="zdxd:4qv99IrykGi" resolve="FIRST_APPLICABLE" />
-                    <ref role="1Px2BO" to="zdxd:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+                    <ref role="1Px2BO" to="zdxd:4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
                   </node>
                   <node concept="3clFbS" id="4qv99Irznkz" role="3Kbo56">
                     <node concept="3clFbF" id="4qv99IrAV70" role="3cqZAp">
