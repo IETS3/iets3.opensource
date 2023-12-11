@@ -14902,34 +14902,8 @@
                   <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
                   <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
                   <node concept="2OqwBi" id="3mvkonGsb6y" role="37wK5m">
-                    <node concept="37vLTw" id="3mvkonGsamn" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3mvkonGs7Uk" resolve="l" />
-                      <node concept="29HgVG" id="3mvkonGsfWO" role="lGtFl">
-                        <node concept="3NFfHV" id="3mvkonGsfZ4" role="3NFExx">
-                          <node concept="3clFbS" id="3mvkonGsfZ5" role="2VODD2">
-                            <node concept="3clFbF" id="3mvkonGuGH8" role="3cqZAp">
-                              <node concept="2OqwBi" id="3mvkonGuHzO" role="3clFbG">
-                                <node concept="2OqwBi" id="3mvkonGuGS5" role="2Oq$k0">
-                                  <node concept="30H73N" id="3mvkonGuGH7" role="2Oq$k0" />
-                                  <node concept="2Xjw5R" id="3mvkonGuHfj" role="2OqNvi">
-                                    <node concept="1xMEDy" id="3mvkonGuHfl" role="1xVPHs">
-                                      <node concept="chp4Y" id="3mvkonGuHjk" role="ri$Ld">
-                                        <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3TrEf2" id="3mvkonGuI6_" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                     <node concept="liA8E" id="3mvkonGscbd" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object)" resolve="indexOf" />
+                      <ref role="37wK5l" to="33ny:~AbstractList.indexOf(java.lang.Object)" resolve="indexOf" />
                       <node concept="37vLTw" id="3mvkonGuMat" role="37wK5m">
                         <ref role="3cqZAo" node="3mvkonGuL4o" resolve="s" />
                         <node concept="1ZhdrF" id="3mvkonGuMPR" role="lGtFl">
@@ -15093,6 +15067,36 @@
                               <node concept="3cpWs6" id="3mvkonGuXhG" role="3cqZAp">
                                 <node concept="Xl_RD" id="3mvkonGuXnq" role="3cqZAk">
                                   <property role="Xl_RC" value="error" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2YIFZM" id="3S$dVIhEbEr" role="2Oq$k0">
+                      <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
+                      <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                      <node concept="37vLTw" id="3mvkonGsamn" role="37wK5m">
+                        <ref role="3cqZAo" node="3mvkonGs7Uk" resolve="l" />
+                        <node concept="29HgVG" id="3mvkonGsfWO" role="lGtFl">
+                          <node concept="3NFfHV" id="3mvkonGsfZ4" role="3NFExx">
+                            <node concept="3clFbS" id="3mvkonGsfZ5" role="2VODD2">
+                              <node concept="3clFbF" id="3mvkonGuGH8" role="3cqZAp">
+                                <node concept="2OqwBi" id="3mvkonGuHzO" role="3clFbG">
+                                  <node concept="2OqwBi" id="3mvkonGuGS5" role="2Oq$k0">
+                                    <node concept="30H73N" id="3mvkonGuGH7" role="2Oq$k0" />
+                                    <node concept="2Xjw5R" id="3mvkonGuHfj" role="2OqNvi">
+                                      <node concept="1xMEDy" id="3mvkonGuHfl" role="1xVPHs">
+                                        <node concept="chp4Y" id="3mvkonGuHjk" role="ri$Ld">
+                                          <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3TrEf2" id="3mvkonGuI6_" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
