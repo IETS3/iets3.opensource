@@ -16116,13 +16116,6 @@
         </node>
       </node>
     </node>
-    <node concept="3aamgX" id="4SmV64TcNRV" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="hm2y:3nVyItrZBN9" resolve="EmptyValue" />
-      <node concept="gft3U" id="4SmV64Tev8l" role="1lVwrX">
-        <node concept="10Nm6u" id="4SmV64Tev8p" role="gfFT$" />
-      </node>
-    </node>
   </node>
   <node concept="jVnub" id="10wUh3ORqUF">
     <property role="TrG5h" value="Type" />
