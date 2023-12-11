@@ -1259,7 +1259,7 @@
     <property role="EcuMT" value="3980268926893656512" />
     <property role="3GE5qa" value="record" />
     <property role="TrG5h" value="RecordComparisonOrder" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3sWKo0E1oB1" role="1TKVEi">
       <property role="IQ2ns" value="3980268926893656513" />
       <property role="20kJfa" value="member" />

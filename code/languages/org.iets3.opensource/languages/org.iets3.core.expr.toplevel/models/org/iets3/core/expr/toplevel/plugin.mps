@@ -1141,7 +1141,7 @@
                           <ref role="37wK5l" node="7_$HJtBvdxi" resolve="getValueByName" />
                           <node concept="2OqwBi" id="7k6A8Wfyf4i" role="37wK5m">
                             <node concept="37vLTw" id="7k6A8Wfyf4j" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7k6A8Wfyf4M" resolve="comparisonOrder" />
+                              <ref role="3cqZAo" node="7k6A8Wfyf4M" resolve="member" />
                             </node>
                             <node concept="3TrcHB" id="7k6A8WfyZcZ" role="2OqNvi">
                               <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -1235,7 +1235,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3sWKo0Ed1L8" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
