@@ -489,25 +489,17 @@
     <property role="TrG5h" value="QuantityType" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="45a4DYZTszf" role="PzmwI">
+      <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="45a4DYZrKZa">
     <property role="EcuMT" value="4704593238062731210" />
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityDivType" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
-    <node concept="1TJgyj" id="45a4DYZt0ha" role="1TKVEi">
-      <property role="IQ2ns" value="4704593238063055946" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="top" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="69ocqYc6oAT" resolve="QuantityType" />
-    </node>
-    <node concept="1TJgyj" id="45a4DYZt0sc" role="1TKVEi">
-      <property role="IQ2ns" value="4704593238063056652" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="bot" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="69ocqYc6oAT" resolve="QuantityType" />
+    <node concept="PrWs8" id="45a4DYZTJ9T" role="PzmwI">
+      <ref role="PrY4T" node="45a4DYZTqlq" resolve="IGroupDivide" />
     </node>
   </node>
   <node concept="1TIwiD" id="45a4DYZrLdN">
@@ -515,19 +507,8 @@
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityMulType" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
-    <node concept="1TJgyj" id="45a4DYZtq7A" role="1TKVEi">
-      <property role="IQ2ns" value="4704593238063161830" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="left" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="69ocqYc6oAT" resolve="QuantityType" />
-    </node>
-    <node concept="1TJgyj" id="45a4DYZtql2" role="1TKVEi">
-      <property role="IQ2ns" value="4704593238063162690" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="right" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="69ocqYc6oAT" resolve="QuantityType" />
+    <node concept="PrWs8" id="45a4DYZTHMA" role="PzmwI">
+      <ref role="PrY4T" node="45a4DYZTqcG" resolve="IGroupMultiply" />
     </node>
   </node>
   <node concept="1TIwiD" id="45a4DYZrLy8">
@@ -541,23 +522,17 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1KUmgSFpwWn" resolve="Quantity" />
     </node>
+    <node concept="PrWs8" id="45a4DYZTLEJ" role="PzmwI">
+      <ref role="PrY4T" node="45a4DYZTqxY" resolve="IGroupBase" />
+    </node>
   </node>
   <node concept="1TIwiD" id="45a4DYZrLVu">
     <property role="EcuMT" value="4704593238062735070" />
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityExpType" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
-    <node concept="1TJgyi" id="45a4DYZ$rlx" role="1TKVEl">
-      <property role="IQ2nx" value="4704593238065001825" />
-      <property role="TrG5h" value="exp" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyj" id="45a4DYZ$r85" role="1TKVEi">
-      <property role="IQ2ns" value="4704593238065000965" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="base" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="45a4DYZrLy8" resolve="QuantityBaseType" />
+    <node concept="PrWs8" id="45a4DYZTL_P" role="PzmwI">
+      <ref role="PrY4T" node="45a4DYZTqri" resolve="IGroupPower" />
     </node>
   </node>
   <node concept="1TIwiD" id="45a4DYZtiVD">
@@ -565,6 +540,94 @@
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityEmptyType" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
+    <node concept="PrWs8" id="45a4DZ00H03" role="PzmwI">
+      <ref role="PrY4T" node="45a4DYZYSsN" resolve="IGroupNeutral" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="45a4DYZTq2h">
+    <property role="EcuMT" value="4704593238070501521" />
+    <property role="TrG5h" value="IGroupLike" />
+    <property role="3GE5qa" value="group" />
+  </node>
+  <node concept="PlHQZ" id="45a4DYZTqcG">
+    <property role="EcuMT" value="4704593238070502188" />
+    <property role="TrG5h" value="IGroupMultiply" />
+    <property role="3GE5qa" value="group" />
+    <node concept="1TJgyj" id="45a4DYZU0Ct" role="1TKVEi">
+      <property role="IQ2ns" value="4704593238070659613" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="45a4DYZTq2h" resolve="IGroupLike" />
+    </node>
+    <node concept="1TJgyj" id="45a4DYZU0Rx" role="1TKVEi">
+      <property role="IQ2ns" value="4704593238070660577" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="45a4DYZTq2h" resolve="IGroupLike" />
+    </node>
+    <node concept="PrWs8" id="45a4DYZU0_Z" role="PrDN$">
+      <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="45a4DYZTqlq">
+    <property role="EcuMT" value="4704593238070502746" />
+    <property role="TrG5h" value="IGroupDivide" />
+    <property role="3GE5qa" value="group" />
+    <node concept="1TJgyj" id="45a4DYZTYN8" role="1TKVEi">
+      <property role="IQ2ns" value="4704593238070652104" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="top" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="45a4DYZTq2h" resolve="IGroupLike" />
+    </node>
+    <node concept="1TJgyj" id="45a4DYZTYSQ" role="1TKVEi">
+      <property role="IQ2ns" value="4704593238070652470" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="bot" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="45a4DYZTq2h" resolve="IGroupLike" />
+    </node>
+    <node concept="PrWs8" id="45a4DYZTZbZ" role="PrDN$">
+      <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="45a4DYZTqri">
+    <property role="EcuMT" value="4704593238070503122" />
+    <property role="TrG5h" value="IGroupPower" />
+    <property role="3GE5qa" value="group" />
+    <node concept="1TJgyi" id="45a4DYZU2f$" role="1TKVEl">
+      <property role="IQ2nx" value="4704593238070666212" />
+      <property role="TrG5h" value="exp" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="45a4DYZU2x4" role="1TKVEi">
+      <property role="IQ2ns" value="4704593238070667332" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="base" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="45a4DYZTqxY" resolve="IGroupBase" />
+    </node>
+    <node concept="PrWs8" id="45a4DYZXY18" role="PrDN$">
+      <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="45a4DYZTqxY">
+    <property role="EcuMT" value="4704593238070503550" />
+    <property role="TrG5h" value="IGroupBase" />
+    <property role="3GE5qa" value="group" />
+    <node concept="PrWs8" id="45a4DYZXt9L" role="PrDN$">
+      <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="45a4DYZYSsN">
+    <property role="EcuMT" value="4704593238071936819" />
+    <property role="3GE5qa" value="group" />
+    <property role="TrG5h" value="IGroupNeutral" />
+    <node concept="PrWs8" id="45a4DYZYSzT" role="PrDN$">
+      <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
+    </node>
   </node>
 </model>
 
