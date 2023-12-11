@@ -1239,8 +1239,8 @@
                       <ref role="3cqZAo" node="7$ajNzjzZzN" resolve="recordDeclaration" />
                     </node>
                   </node>
-                  <node concept="3Tsc0h" id="7k6A8Wfyf4S" role="2OqNvi">
-                    <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
+                  <node concept="2qgKlT" id="4opGcINciak" role="2OqNvi">
+                    <ref role="37wK5l" to="nu60:1qrYg08iahZ" resolve="effectiveMembers" />
                   </node>
                 </node>
               </node>

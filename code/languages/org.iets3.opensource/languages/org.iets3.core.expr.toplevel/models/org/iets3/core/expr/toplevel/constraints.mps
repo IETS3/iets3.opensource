@@ -2157,8 +2157,8 @@
                     <node concept="1xIGOp" id="3sWKo0E1pJ9" role="1xVPHs" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="3sWKo0E1qSC" role="2OqNvi">
-                  <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
+                <node concept="2qgKlT" id="4opGcINclsz" role="2OqNvi">
+                  <ref role="37wK5l" to="nu60:1qrYg08iahZ" resolve="effectiveMembers" />
                 </node>
               </node>
             </node>
