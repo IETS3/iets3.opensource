@@ -18168,11 +18168,6 @@
               </node>
               <node concept="raruj" id="5RqWvw9lQ2p" role="lGtFl" />
             </node>
-            <node concept="3cpWs6" id="7DfYVnlw7KY" role="3cqZAp">
-              <node concept="3cmrfG" id="7DfYVnlw7U7" role="3cqZAk">
-                <property role="3cmrfH" value="0" />
-              </node>
-            </node>
           </node>
           <node concept="3cqZAl" id="znKGbFwwYr" role="3clF45" />
         </node>
@@ -19127,11 +19122,6 @@
                 </node>
               </node>
               <node concept="raruj" id="6hYPZtxkVJl" role="lGtFl" />
-            </node>
-            <node concept="3cpWs6" id="7DfYVnlvZdd" role="3cqZAp">
-              <node concept="3cmrfG" id="7DfYVnlvZDi" role="3cqZAk">
-                <property role="3cmrfH" value="0" />
-              </node>
             </node>
           </node>
           <node concept="3cqZAl" id="znKGbFwntN" role="3clF45" />
