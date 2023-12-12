@@ -39,7 +39,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '17.0.6-b469.82'
+    jbrVersion = '17.0.6-b653.34'
 }
 
 // detect if we are in a CI build
@@ -53,12 +53,14 @@ if (project.hasProperty("forceCI")) {
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 def major = "2022"
-def minor = "2"
+def minor = "3"
 
 // Dependency versions
-ext.mpsVersion = '2022.2.1'
+ext.mpsVersion = '2022.3.1'
 
-def mbeddrVersion = "2022.2+"
+def mbeddrVersion = "2022.3+"
+
+def mpsQAVersion = major + "." + minor
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -123,7 +125,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-    languageLibs "org.mpsqa:all-in-one:$mpsVersion+"
+    languageLibs "org.mpsqa:all-in-one:$mpsQAVersion+"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
     pcollections 'org.pcollections:pcollections:3.1.4'
