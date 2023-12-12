@@ -204,25 +204,25 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3bE2i5JypXo" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="3bE2i5JypZB" role="jymVt">
       <property role="TrG5h" value="getConversionSpecifierSelection" />
       <node concept="3Tm1VV" id="3bE2i5JypZD" role="1B3o_S" />
       <node concept="3uibUv" id="3bE2i5JypZE" role="3clF45">
-        <ref role="3uigEE" to="zdxd:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+        <ref role="3uigEE" to="zdxd:4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
       </node>
       <node concept="3clFbS" id="3bE2i5JypZF" role="3clF47">
         <node concept="3clFbF" id="3bE2i5Jyqh9" role="3cqZAp">
           <node concept="Rm8GO" id="3bE2i5Jyqha" role="3clFbG">
             <ref role="Rm8GQ" to="zdxd:4qv99IrykKI" resolve="DEFINED_IN_CONVERT_EXPESSION" />
-            <ref role="1Px2BO" to="zdxd:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+            <ref role="1Px2BO" to="zdxd:4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
           </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="3bE2i5JypZG" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
