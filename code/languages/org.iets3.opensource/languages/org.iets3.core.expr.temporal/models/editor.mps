@@ -203,7 +203,7 @@
         </node>
         <node concept="OXEIz" id="yfp7edvEmM" role="P5bDN">
           <node concept="UkePV" id="yfp7edvEmN" role="OY2wv">
-            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" />
+            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" resolve="Type" />
           </node>
         </node>
       </node>
