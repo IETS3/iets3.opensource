@@ -9,7 +9,13 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
+- The `index` expression in collections operations now works correctly in nested expressions in the interpreter and generator.
+- Generation of nested short lambda expression now use the correct type for "it" as a variable.
 - Collections: The index expression now works with collection types in the generator.
+
+### Added
+
+- The `all` and `any` operation of collections now also support the `index` expression. The concepts `AllWithIndexOp` and `AnyWithIndexOp` are therefore deprecated.
 
 ## November 2023
 
@@ -25,9 +31,14 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
+- String validation: A bug in the number detection logic was fixed
 - String validation: A bug in the successor execution logic was fixed
+- 
+## October 2023
 
-## Oktober 2023
+### Fixed
+
+- Generation of nested short lambda expression now use the correct type for "it" as a variable.
 
 ## September 2023
 
