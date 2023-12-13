@@ -390,6 +390,9 @@
     <property role="EcuMT" value="8872269265515619803" />
     <property role="R4oN_" value="an existential quantifier (true if at least one is true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+    <node concept="PrWs8" id="7G4S3eSr2T3" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2RfRi">
     <property role="3GE5qa" value="collection" />
@@ -398,6 +401,9 @@
     <property role="EcuMT" value="8872269265518788050" />
     <property role="R4oN_" value="an universal quantifier (true if all elements are true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+    <node concept="PrWs8" id="7G4S3eSr2T0" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2Wbm7">
     <property role="TrG5h" value="SetType" />
