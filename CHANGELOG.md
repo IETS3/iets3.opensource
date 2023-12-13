@@ -4,17 +4,28 @@ All notable changes to this project are documented in this file.
 
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). 
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
-## October 2023
+
+## December 2023
 
 ### Fixed
 
-- Generation of nested short lambda expression now use the correct type for "it" as a variable.
+- The `index` expression in collections operations now works correctly in nested expressions in the interpreter and generator.
+
+### Added
+
+- The `all` and `any` operation of collections now also support the `index` expression. The concepts `AllWithIndexOp` and `AnyWithIndexOp` are therefore deprecated.
 
 ## November 2023
 
 ### Fixed
 
 - String validation: A bug in the number detection logic was fixed
+
+## October 2023
+
+### Fixed
+
+- Generation of nested short lambda expression now use the correct type for "it" as a variable.
 
 ## September 2023
 
