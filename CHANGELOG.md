@@ -17,6 +17,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The `all` and `any` operation of collections now also support the `index` expression. The concepts `AllWithIndexOp` and `AnyWithIndexOp` are therefore deprecated.
 
+### Changed
+
+- The class `IETS3ExprEvalHelper` was deprecated and a new class `IETS3ExprEvaluator` was introduced that can also influence the creation of the computation trace.
+
 ## November 2023
 
 ### Added
