@@ -39,7 +39,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '11_0_11-b1341.60'
+    jbrVersion = '11_0_14_1-b1751.46'
 }
 
 // detect if we are in a CI build
@@ -56,7 +56,7 @@ def major = "2021"
 def minor = "3"
 
 // Dependency versions
-ext.mpsVersion = '2021.3.3'
+ext.mpsVersion = '2021.3.5'
 
 def mbeddrVersion = "2021.3+"
 
