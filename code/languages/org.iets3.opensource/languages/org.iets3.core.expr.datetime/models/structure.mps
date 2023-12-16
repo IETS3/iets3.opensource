@@ -866,6 +866,7 @@
     <property role="EcuMT" value="8988735099053161945" />
     <property role="TrG5h" value="CurrentDateExpr" />
     <property role="34LRSv" value="currentDate" />
+    <property role="R4oN_" value="returns the current date" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
 </model>

@@ -990,7 +990,7 @@
     <ref role="1XX52x" to="mi3w:7MYpJaZ9zRp" resolve="CurrentDateExpr" />
     <node concept="3F0ifn" id="7MYpJaZ9zRQ" role="2wV5jI">
       <property role="3F0ifm" value="currentDate" />
-      <ref role="1k5W1q" to="itrz:ub9nkyQsN2" resolve="iets3Identifier" />
+      <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
     </node>
   </node>
 </model>
