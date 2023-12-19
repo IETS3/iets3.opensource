@@ -16,6 +16,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - The `all` and `any` operation of collections now also support the `index` expression. The concepts `AllWithIndexOp` and `AnyWithIndexOp` are therefore deprecated.
+- Named tuples were added. The can be declared at the top level with the keywords `named tuple`. Fields can be accessed witht the `.` expression.
 
 ### Changed
 
