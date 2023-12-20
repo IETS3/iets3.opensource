@@ -5165,6 +5165,21 @@
         </node>
       </node>
     </node>
+    <node concept="3EZMnI" id="7yOFqurLn4g" role="6VMZX">
+      <node concept="2iRfu4" id="7yOFqurLn4h" role="2iSdaV" />
+      <node concept="3F0ifn" id="7yOFqurLmOD" role="3EZMnx">
+        <property role="3F0ifm" value="tuple declaration:" />
+      </node>
+      <node concept="1iCGBv" id="7yOFqurLn6D" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:4ZbdskRgu_6" resolve="tuple" />
+        <node concept="1sVBvm" id="7yOFqurLn6F" role="1sWHZn">
+          <node concept="3F0A7n" id="7yOFqurLn6N" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="4ZbdskRDH_Z">
     <property role="3GE5qa" value="tuples" />

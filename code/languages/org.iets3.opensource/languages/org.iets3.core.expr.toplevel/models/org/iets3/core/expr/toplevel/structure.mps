@@ -1272,6 +1272,7 @@
     <property role="TrG5h" value="NamedTupleDeclaration" />
     <property role="3GE5qa" value="tuples" />
     <property role="34LRSv" value="named tuple" />
+    <property role="R4oN_" value="a tuple declaration with named members" />
     <ref role="1TJDcQ" node="7zXSNv$jGoK" resolve="AbstractTypeDeclaration" />
     <node concept="PrWs8" id="4ZbdskRgjgH" role="PzmwI">
       <ref role="PrY4T" node="4ZbdskRggS1" resolve="ITupleDeclaration" />
@@ -1397,6 +1398,9 @@
       <property role="20kJfa" value="member" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4ZbdskR3pBF" resolve="ITupleMember" />
+    </node>
+    <node concept="PrWs8" id="7yOFqurE$VZ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="4ZbdskRgKyK">

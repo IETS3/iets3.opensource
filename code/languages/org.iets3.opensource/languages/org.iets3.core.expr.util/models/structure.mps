@@ -582,6 +582,11 @@
     <property role="EcuMT" value="8853770331921611232" />
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="IMultiDecTab" />
+    <node concept="1TJgyj" id="7yOFqus30SM" role="1TKVEi">
+      <property role="IQ2ns" value="8697767715748449842" />
+      <property role="20kJfa" value="resultTuple" />
+      <ref role="20lvS9" to="yv47:4ZbdskR3pBE" resolve="NamedTupleDeclaration" />
+    </node>
     <node concept="1TJgyj" id="7FuUjk_57Cw" role="1TKVEi">
       <property role="IQ2ns" value="8853770331921611296" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
