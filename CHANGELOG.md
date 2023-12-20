@@ -21,6 +21,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 
 - The class `IETS3ExprEvalHelper` was deprecated and a new class `IETS3ExprEvaluator` was introduced that can also influence the creation of the computation trace.
+- Multi-decision tables now return an internal stored named tuple instead of a tuple. The new return type is compatible with the old type.
 
 ## November 2023
 
