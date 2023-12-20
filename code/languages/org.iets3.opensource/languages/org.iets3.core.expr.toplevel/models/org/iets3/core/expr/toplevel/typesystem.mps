@@ -4534,7 +4534,7 @@
                                 </node>
                                 <node concept="2OqwBi" id="7yOFqurG75p" role="3uHU7B">
                                   <node concept="37vLTw" id="7yOFqurG75q" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="7yOFqurG75s" resolve="it" />
+                                    <ref role="3cqZAo" node="7yOFqurG75s" resolve="setter" />
                                   </node>
                                   <node concept="3TrEf2" id="7yOFqurG75r" role="2OqNvi">
                                     <ref role="3Tt5mk" to="yv47:4ZbdskRDH_O" resolve="member" />
@@ -4765,7 +4765,7 @@
             <node concept="2OqwBi" id="7yOFqurKW3m" role="3uHU7w">
               <node concept="2OqwBi" id="7yOFqurKW3n" role="2Oq$k0">
                 <node concept="1YBJjd" id="7yOFqurKW3o" role="2Oq$k0">
-                  <ref role="1YBMHb" node="7yOFqurKW2U" resolve="tupleType" />
+                  <ref role="1YBMHb" node="7yOFqurKW2U" resolve="namedTupleType2" />
                 </node>
                 <node concept="2qgKlT" id="7yOFqurKXv2" role="2OqNvi">
                   <ref role="37wK5l" to="pbu6:4ZbdskT1yfk" resolve="getElementTypes" />

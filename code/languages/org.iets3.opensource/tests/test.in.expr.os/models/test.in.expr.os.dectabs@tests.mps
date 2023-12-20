@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
+    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="3" />
     <devkit ref="33eb240b-05aa-417a-b719-386d26df80b8(org.iets3.core.expr.genall.advanced.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
@@ -58,6 +58,7 @@
       </concept>
       <concept id="161551962036658012" name="org.iets3.core.expr.util.structure.MultiDecTab" flags="ng" index="1fMURV" />
       <concept id="8853770331921611232" name="org.iets3.core.expr.util.structure.IMultiDecTab" flags="ng" index="1vMD3l">
+        <child id="1609062041026819473" name="resultTupleDeclaration" index="2ACRNR" />
         <child id="8853770331921611296" name="colDefs" index="1vMDcl" />
         <child id="8853770331921611812" name="rows" index="1vMDkh" />
       </concept>
@@ -76,6 +77,9 @@
       </concept>
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
+      </concept>
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
@@ -146,6 +150,11 @@
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
+      <concept id="5749748470420409857" name="org.iets3.core.expr.toplevel.structure.ITupleDeclaration" flags="ng" index="1SyzJ4">
+        <child id="5749748470420419627" name="members" index="1Syw7I" />
+      </concept>
+      <concept id="5749748470417082344" name="org.iets3.core.expr.toplevel.structure.TupleMember" flags="ng" index="1SLn8H" />
+      <concept id="5749748470417037802" name="org.iets3.core.expr.toplevel.structure.NamedTupleDeclaration" flags="ng" index="1SLEKJ" />
       <concept id="7740953487936183912" name="org.iets3.core.expr.toplevel.structure.Typedef" flags="ng" index="1WbbD7">
         <child id="7740953487936183915" name="originalType" index="1WbbD4" />
       </concept>
@@ -483,6 +492,13 @@
             <property role="TrG5h" value="r" />
             <node concept="mLuIC" id="6OunYCfi$nV" role="1fMUOZ" />
           </node>
+          <node concept="1SLEKJ" id="1pkymqLocJx" role="2ACRNR">
+            <property role="TrG5h" value="7862827458318976204_ResultTuple" />
+            <node concept="1SLn8H" id="1pkymqLocJy" role="1Syw7I">
+              <property role="TrG5h" value="r" />
+              <node concept="mLuIC" id="1pkymqLocJz" role="2S399n" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1ahQXy" id="6OunYCfi$jO" role="1ahQWs">
@@ -584,6 +600,17 @@
             <node concept="mLuIC" id="7vcJOhhDxoI" role="1fMUOZ">
               <node concept="2gteS_" id="7vcJOhhDBU1" role="2gteVg">
                 <property role="2gteVv" value="1" />
+              </node>
+            </node>
+          </node>
+          <node concept="1SLEKJ" id="1pkymqLocJ$" role="2ACRNR">
+            <property role="TrG5h" value="8632484885910918669_ResultTuple" />
+            <node concept="1SLn8H" id="1pkymqLocJ_" role="1Syw7I">
+              <property role="TrG5h" value="r" />
+              <node concept="mLuIC" id="1pkymqLocJA" role="2S399n">
+                <node concept="2gteS_" id="1pkymqLocJB" role="2gteVg">
+                  <property role="2gteVv" value="1" />
+                </node>
               </node>
             </node>
           </node>
@@ -961,6 +988,17 @@
             </node>
           </node>
         </node>
+        <node concept="1SLEKJ" id="1pkymqLocJC" role="2ACRNR">
+          <property role="TrG5h" value="7862827458321060166_ResultTuple" />
+          <node concept="1SLn8H" id="1pkymqLocJD" role="1Syw7I">
+            <property role="TrG5h" value="base" />
+            <node concept="mLuIC" id="1pkymqLocJE" role="2S399n">
+              <node concept="2gteS_" id="1pkymqLocJF" role="2gteVg">
+                <property role="2gteVv" value="2" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1ahQXy" id="6OunYCfqwBU" role="1ahQWs">
         <property role="TrG5h" value="state" />
@@ -1101,6 +1139,21 @@
           <property role="TrG5h" value="volDiscount" />
           <node concept="1WbbFT" id="6OunYCfqDxB" role="1fMUOZ">
             <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
+          </node>
+        </node>
+        <node concept="1SLEKJ" id="1pkymqLocJG" role="2ACRNR">
+          <property role="TrG5h" value="7862827458321072184_ResultTuple" />
+          <node concept="1SLn8H" id="1pkymqLocJH" role="1Syw7I">
+            <property role="TrG5h" value="base" />
+            <node concept="1WbbFT" id="1pkymqLocJI" role="2S399n">
+              <ref role="1WbbFS" node="6OunYCfqD$8" resolve="Currency" />
+            </node>
+          </node>
+          <node concept="1SLn8H" id="1pkymqLocJJ" role="1Syw7I">
+            <property role="TrG5h" value="volDiscount" />
+            <node concept="1WbbFT" id="1pkymqLocJK" role="2S399n">
+              <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
+            </node>
           </node>
         </node>
       </node>
@@ -1257,6 +1310,21 @@
           <property role="TrG5h" value="volDiscount" />
           <node concept="1WbbFT" id="6OunYCfqIGN" role="1fMUOZ">
             <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
+          </node>
+        </node>
+        <node concept="1SLEKJ" id="1pkymqLocJL" role="2ACRNR">
+          <property role="TrG5h" value="7862827458321115908_ResultTuple" />
+          <node concept="1SLn8H" id="1pkymqLocJM" role="1Syw7I">
+            <property role="TrG5h" value="base" />
+            <node concept="1WbbFT" id="1pkymqLocJN" role="2S399n">
+              <ref role="1WbbFS" node="6OunYCfqD$8" resolve="Currency" />
+            </node>
+          </node>
+          <node concept="1SLn8H" id="1pkymqLocJO" role="1Syw7I">
+            <property role="TrG5h" value="volDiscount" />
+            <node concept="1WbbFT" id="1pkymqLocJP" role="2S399n">
+              <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
+            </node>
           </node>
         </node>
       </node>
@@ -1483,6 +1551,21 @@
           <property role="TrG5h" value="volDiscount" />
           <node concept="1WbbFT" id="6OunYCfqNYO" role="1fMUOZ">
             <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
+          </node>
+        </node>
+        <node concept="1SLEKJ" id="1pkymqLocJQ" role="2ACRNR">
+          <property role="TrG5h" value="7862827458321137539_ResultTuple" />
+          <node concept="1SLn8H" id="1pkymqLocJR" role="1Syw7I">
+            <property role="TrG5h" value="base" />
+            <node concept="1WbbFT" id="1pkymqLocJS" role="2S399n">
+              <ref role="1WbbFS" node="6OunYCfqD$8" resolve="Currency" />
+            </node>
+          </node>
+          <node concept="1SLn8H" id="1pkymqLocJT" role="1Syw7I">
+            <property role="TrG5h" value="volDiscount" />
+            <node concept="1WbbFT" id="1pkymqLocJU" role="2S399n">
+              <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
+            </node>
           </node>
         </node>
       </node>
@@ -1715,6 +1798,21 @@
           <property role="TrG5h" value="volDiscount" />
           <node concept="1WbbFT" id="7vcJOhhDCqH" role="1fMUOZ">
             <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
+          </node>
+        </node>
+        <node concept="1SLEKJ" id="1pkymqLocJV" role="2ACRNR">
+          <property role="TrG5h" value="8632484885910947423_ResultTuple" />
+          <node concept="1SLn8H" id="1pkymqLocJW" role="1Syw7I">
+            <property role="TrG5h" value="base" />
+            <node concept="1WbbFT" id="1pkymqLocJX" role="2S399n">
+              <ref role="1WbbFS" node="6OunYCfqD$8" resolve="Currency" />
+            </node>
+          </node>
+          <node concept="1SLn8H" id="1pkymqLocJY" role="1Syw7I">
+            <property role="TrG5h" value="volDiscount" />
+            <node concept="1WbbFT" id="1pkymqLocJZ" role="2S399n">
+              <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
+            </node>
           </node>
         </node>
       </node>

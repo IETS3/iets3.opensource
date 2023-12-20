@@ -1305,7 +1305,7 @@
     <property role="EcuMT" value="5749748470417065626" />
     <property role="3GE5qa" value="tuples" />
     <property role="TrG5h" value="EmptyTupleMember" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4ZbdskR3wqr" role="PzmwI">
       <ref role="PrY4T" node="4ZbdskR3pBF" resolve="ITupleMember" />
     </node>
@@ -1321,7 +1321,7 @@
     <property role="3GE5qa" value="tuples" />
     <property role="TrG5h" value="TupleMember" />
     <property role="R4oN_" value="a new member in this tuple" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4ZbdskR3$zZ" role="PzmwI">
       <ref role="PrY4T" node="4ZbdskR3pBF" resolve="ITupleMember" />
     </node>

@@ -10060,7 +10060,7 @@
             <node concept="2OqwBi" id="4ZbdskRgmML" role="2Oq$k0">
               <node concept="13iPFW" id="4ZbdskRgmMM" role="2Oq$k0" />
               <node concept="2qgKlT" id="4ZbdskRgmMN" role="2OqNvi">
-                <ref role="37wK5l" node="4ZbdskRgmOY" />
+                <ref role="37wK5l" node="4ZbdskRgmOY" resolve="effectiveMembers" />
               </node>
             </node>
             <node concept="3zZkjj" id="4ZbdskRgmMO" role="2OqNvi">
@@ -10136,7 +10136,7 @@
               <node concept="2OqwBi" id="4ZbdskRgmNr" role="3cqZAk">
                 <node concept="13iPFW" id="4ZbdskRgmNs" role="2Oq$k0" />
                 <node concept="2qgKlT" id="4ZbdskRgmNt" role="2OqNvi">
-                  <ref role="37wK5l" node="4ZbdskRgmOY" />
+                  <ref role="37wK5l" node="4ZbdskRgmOY" resolve="effectiveMembers" />
                 </node>
               </node>
             </node>
@@ -10184,7 +10184,7 @@
               <node concept="2OqwBi" id="4ZbdskRgmNL" role="2Oq$k0">
                 <node concept="13iPFW" id="4ZbdskRgmNM" role="2Oq$k0" />
                 <node concept="2qgKlT" id="4ZbdskRgmNN" role="2OqNvi">
-                  <ref role="37wK5l" node="4ZbdskRgmOY" />
+                  <ref role="37wK5l" node="4ZbdskRgmOY" resolve="effectiveMembers" />
                 </node>
               </node>
               <node concept="3zZkjj" id="4ZbdskRgmNO" role="2OqNvi">

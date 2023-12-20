@@ -2186,7 +2186,7 @@
                                     <ref role="37wK5l" to="nu60:4ZbdskSg3_i" resolve="getTupleDeclaration" />
                                   </node>
                                   <node concept="37vLTw" id="4ZbdskTgxSb" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="4ZbdskTgxS5" resolve="node" />
+                                    <ref role="3cqZAo" node="4ZbdskTgxS5" resolve="accessExpr" />
                                   </node>
                                 </node>
                                 <node concept="2qgKlT" id="4ZbdskRhv6C" role="2OqNvi">
