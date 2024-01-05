@@ -9,6 +9,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -296,14 +297,17 @@
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
+        <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
       </concept>
       <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
+      <concept id="1216383337216" name="jetbrains.mps.lang.typesystem.structure.ConceptFunctionParameter_node" flags="nn" index="Q6c8r" />
       <concept id="1216383482742" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgument" flags="ng" index="Q6JDH">
         <child id="1216383511839" name="argumentType" index="Q6QK4" />
       </concept>
       <concept id="1216390348809" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgumentReference" flags="nn" index="QwW4i">
         <reference id="1216390348810" name="quickFixArgument" index="QwW4h" />
       </concept>
+      <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -377,7 +381,6 @@
         <child id="1180447237840" name="errorString" index="3o8Qv2" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
-        <child id="1174662598553" name="nodeToCheck" index="1ZmcU8" />
       </concept>
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
@@ -455,6 +458,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -5135,12 +5139,12 @@
             <node concept="2ShNRf" id="4CJErGj9uE$" role="33vP2m">
               <node concept="2T8Vx0" id="4CJErGjb5IM" role="2ShVmc">
                 <node concept="2I9FWS" id="4CJErGjb5IO" role="2T96Bj">
-                  <ref role="2I9WkF" to="i3ya:7eOyx9r3jsZ" resolve="BasicUnit" />
+                  <ref role="2I9WkF" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
                 </node>
               </node>
             </node>
             <node concept="2I9FWS" id="4CJErGj9uEB" role="1tU5fm">
-              <ref role="2I9WkF" to="i3ya:7eOyx9r3jsZ" resolve="BasicUnit" />
+              <ref role="2I9WkF" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
             </node>
           </node>
         </node>
@@ -5233,7 +5237,7 @@
       </node>
       <node concept="3Tm1VV" id="4CJErGj9uv4" role="1B3o_S" />
       <node concept="2I9FWS" id="4CJErGj9uvP" role="3clF45">
-        <ref role="2I9WkF" to="i3ya:7eOyx9r3jsZ" resolve="BasicUnit" />
+        <ref role="2I9WkF" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
       </node>
       <node concept="37vLTG" id="4CJErGj9uCU" role="3clF46">
         <property role="TrG5h" value="texpr" />
@@ -7095,7 +7099,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="7DmLSRHe$1q">
-    <property role="TrG5h" value="typeof_BasicUnit" />
+    <property role="TrG5h" value="typeof_Unit" />
     <property role="3GE5qa" value="definition.unit" />
     <node concept="3clFbS" id="7DmLSRHe$1r" role="18ibNy">
       <node concept="1Z5TYs" id="7DmLSRHe$se" role="3cqZAp">
@@ -7122,7 +7126,7 @@
     </node>
     <node concept="1YaCAy" id="7DmLSRHe$1t" role="1YuTPh">
       <property role="TrG5h" value="basicUnit" />
-      <ref role="1YaFvo" to="i3ya:7eOyx9r3jsZ" resolve="BasicUnit" />
+      <ref role="1YaFvo" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
     </node>
   </node>
   <node concept="1YbPZF" id="7DmLSRHf8zY">
@@ -7287,74 +7291,257 @@
       <ref role="1YaFvo" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
     </node>
   </node>
-  <node concept="1YbPZF" id="7DmLSRHfFSD">
-    <property role="TrG5h" value="typeof_DerivedUnit" />
-    <property role="3GE5qa" value="definition.unit" />
-    <node concept="3clFbS" id="7DmLSRHfFSE" role="18ibNy">
-      <node concept="nvevp" id="7DmLSRHgdRU" role="3cqZAp">
-        <node concept="3clFbS" id="7DmLSRHgdRW" role="nvhr_">
-          <node concept="nvevp" id="7Bmg9Oo1kVz" role="3cqZAp">
-            <node concept="3clFbS" id="7Bmg9Oo1kV$" role="nvhr_">
-              <node concept="1Z5TYs" id="7Bmg9Oo1lAi" role="3cqZAp">
-                <property role="3wDh2S" value="true" />
-                <node concept="mw_s8" id="7Bmg9Oo1lAk" role="1ZfhK$">
-                  <node concept="2X3wrD" id="7Bmg9Oo1lAl" role="mwGJk">
-                    <ref role="2X3Bk0" node="7DmLSRHgdS0" resolve="specT" />
-                  </node>
-                </node>
-                <node concept="mw_s8" id="7Bmg9Oo1lCa" role="1ZfhKB">
-                  <node concept="2X3wrD" id="7Bmg9Oo1lC8" role="mwGJk">
-                    <ref role="2X3Bk0" node="7Bmg9Oo1kVA" resolve="dimT" />
-                  </node>
-                </node>
-                <node concept="1YBJjd" id="7Bmg9Oo1$_X" role="1ZmcU8">
-                  <ref role="1YBMHb" node="7DmLSRHfFSG" resolve="derivedUnit" />
-                </node>
-                <node concept="Xl_RD" id="7Bmg9Oo1$AP" role="3o8Qv2">
-                  <property role="Xl_RC" value="Incompatible quantity types for unit definition" />
-                </node>
+  <node concept="18kY7G" id="7Bmg9Oo6rqP">
+    <property role="TrG5h" value="check_Quantity" />
+    <property role="3GE5qa" value="definition.quantity" />
+    <node concept="3clFbS" id="7Bmg9Oo6rqQ" role="18ibNy">
+      <node concept="3clFbJ" id="7Bmg9Oo6rtN" role="3cqZAp">
+        <node concept="1Wc70l" id="7Bmg9Oo6sQs" role="3clFbw">
+          <node concept="2OqwBi" id="7Bmg9Oo6tgq" role="3uHU7w">
+            <node concept="2OqwBi" id="7Bmg9Oo6t1I" role="2Oq$k0">
+              <node concept="1YBJjd" id="7Bmg9Oo6sXC" role="2Oq$k0">
+                <ref role="1YBMHb" node="7Bmg9Oo6rqS" resolve="quantity" />
+              </node>
+              <node concept="3TrEf2" id="7Bmg9Oo6t59" role="2OqNvi">
+                <ref role="3Tt5mk" to="i3ya:7athFveyPVm" resolve="specification" />
               </node>
             </node>
-            <node concept="1Z2H0r" id="7Bmg9Oo1kYL" role="nvjzm">
-              <node concept="2OqwBi" id="7Bmg9Oo1lkF" role="1Z2MuG">
-                <node concept="1YBJjd" id="7Bmg9Oo1l3F" role="2Oq$k0">
-                  <ref role="1YBMHb" node="7DmLSRHfFSG" resolve="derivedUnit" />
-                </node>
-                <node concept="3TrEf2" id="7Bmg9Oo1loB" role="2OqNvi">
-                  <ref role="3Tt5mk" to="i3ya:69ocqYc5QC4" resolve="dimension" />
-                </node>
+            <node concept="3x8VRR" id="7Bmg9Oo6tS9" role="2OqNvi" />
+          </node>
+          <node concept="3fqX7Q" id="7Bmg9Oo6rvB" role="3uHU7B">
+            <node concept="2OqwBi" id="7Bmg9Oo6rOk" role="3fr31v">
+              <node concept="1YBJjd" id="7Bmg9Oo6rxT" role="2Oq$k0">
+                <ref role="1YBMHb" node="7Bmg9Oo6rqS" resolve="quantity" />
               </node>
-            </node>
-            <node concept="2X1qdy" id="7Bmg9Oo1kVA" role="2X0Ygz">
-              <property role="TrG5h" value="dimT" />
-              <node concept="2jxLKc" id="7Bmg9Oo1kVB" role="1tU5fm" />
+              <node concept="3TrcHB" id="7Bmg9Oo6spN" role="2OqNvi">
+                <ref role="3TsBF5" to="i3ya:7Bmg9Oo3Vr1" resolve="derived" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1Z2H0r" id="7DmLSRHgdUz" role="nvjzm">
-          <node concept="2OqwBi" id="7Bmg9Oo1kse" role="1Z2MuG">
-            <node concept="2OqwBi" id="7DmLSRHfXPk" role="2Oq$k0">
-              <node concept="1YBJjd" id="7DmLSRHfXPl" role="2Oq$k0">
-                <ref role="1YBMHb" node="7DmLSRHfFSG" resolve="derivedUnit" />
+        <node concept="3clFbS" id="7Bmg9Oo6rtP" role="3clFbx">
+          <node concept="2MkqsV" id="7Bmg9Oo6u80" role="3cqZAp">
+            <node concept="3Cnw8n" id="7Bmg9Oo7sJ0" role="1urrFz">
+              <ref role="QpYPw" node="7Bmg9Oo7t1L" resolve="fix_nonderivedQuantityMakeDerived" />
+            </node>
+            <node concept="1YBJjd" id="7Bmg9Oo6vIz" role="1urrMF">
+              <ref role="1YBMHb" node="7Bmg9Oo6rqS" resolve="quantity" />
+            </node>
+            <node concept="3cpWs3" id="7Bmg9Oo6uTu" role="2MkJ7o">
+              <node concept="Xl_RD" id="7Bmg9Oo6uV9" role="3uHU7w">
+                <property role="Xl_RC" value=" has a hidden specification. Please remove or set as derived." />
               </node>
-              <node concept="3TrEf2" id="7DmLSRHfXPm" role="2OqNvi">
-                <ref role="3Tt5mk" to="i3ya:7eOyx9r3k4r" resolve="specification" />
+              <node concept="2OqwBi" id="69ocqYbSw3h" role="3uHU7B">
+                <node concept="2YIFZM" id="69ocqYbSvPo" role="2Oq$k0">
+                  <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="UnitLangConfigHelper" />
+                </node>
+                <node concept="liA8E" id="69ocqYbSwk5" role="2OqNvi">
+                  <ref role="37wK5l" to="65nr:69ocqYbStSj" resolve="getQuantitySpecifier" />
+                </node>
               </node>
             </node>
-            <node concept="3TrEf2" id="7Bmg9Oo1kNJ" role="2OqNvi">
-              <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="components" />
+            <node concept="3Cnw8n" id="7Bmg9Oo6XnW" role="1urrFz">
+              <ref role="QpYPw" node="7Bmg9Oo6XnT" resolve="fix_" />
             </node>
           </node>
-        </node>
-        <node concept="2X1qdy" id="7DmLSRHgdS0" role="2X0Ygz">
-          <property role="TrG5h" value="specT" />
-          <node concept="2jxLKc" id="7DmLSRHgdS1" role="1tU5fm" />
         </node>
       </node>
     </node>
-    <node concept="1YaCAy" id="7DmLSRHfFSG" role="1YuTPh">
-      <property role="TrG5h" value="derivedUnit" />
-      <ref role="1YaFvo" to="i3ya:7athFveDsjK" resolve="DerivedUnit" />
+    <node concept="1YaCAy" id="7Bmg9Oo6rqS" role="1YuTPh">
+      <property role="TrG5h" value="quantity" />
+      <ref role="1YaFvo" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="7Bmg9Oo6XnT">
+    <property role="TrG5h" value="fix_nonderivedQuantityRemoveSpec" />
+    <property role="3GE5qa" value="definition.quantity" />
+    <node concept="Q5ZZ6" id="7Bmg9Oo6XnU" role="Q6x$H">
+      <node concept="3clFbS" id="7Bmg9Oo6XnV" role="2VODD2">
+        <node concept="3clFbF" id="7Bmg9Oo6XCg" role="3cqZAp">
+          <node concept="2OqwBi" id="7Bmg9Oo6Z1v" role="3clFbG">
+            <node concept="2OqwBi" id="7Bmg9Oo6Yn9" role="2Oq$k0">
+              <node concept="1PxgMI" id="7Bmg9Oo6Y4y" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="7Bmg9Oo6Y5n" role="3oSUPX">
+                  <ref role="cht4Q" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                </node>
+                <node concept="Q6c8r" id="7Bmg9Oo6XCf" role="1m5AlR" />
+              </node>
+              <node concept="3TrEf2" id="7Bmg9Oo6YQi" role="2OqNvi">
+                <ref role="3Tt5mk" to="i3ya:7athFveyPVm" resolve="specification" />
+              </node>
+            </node>
+            <node concept="3YRAZt" id="7Bmg9Oo6Zty" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="7Bmg9Oo6Zu7" role="QzAvj">
+      <node concept="3clFbS" id="7Bmg9Oo6Zu8" role="2VODD2">
+        <node concept="3clFbF" id="7Bmg9Oo6Z$p" role="3cqZAp">
+          <node concept="Xl_RD" id="7Bmg9Oo6Z$o" role="3clFbG">
+            <property role="Xl_RC" value="Remove Hidden Specification" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="7Bmg9Oo7t1L">
+    <property role="3GE5qa" value="definition.quantity" />
+    <property role="TrG5h" value="fix_nonderivedQuantityMakeDerived" />
+    <node concept="Q5ZZ6" id="7Bmg9Oo7t1M" role="Q6x$H">
+      <node concept="3clFbS" id="7Bmg9Oo7t1N" role="2VODD2">
+        <node concept="3clFbF" id="7Bmg9Oo7tgb" role="3cqZAp">
+          <node concept="37vLTI" id="7Bmg9Oo7viZ" role="3clFbG">
+            <node concept="3clFbT" id="7Bmg9Oo7vjG" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="7Bmg9Oo7u94" role="37vLTJ">
+              <node concept="1PxgMI" id="7Bmg9Oo7tQw" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="7Bmg9Oo7tRl" role="3oSUPX">
+                  <ref role="cht4Q" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                </node>
+                <node concept="Q6c8r" id="7Bmg9Oo7tga" role="1m5AlR" />
+              </node>
+              <node concept="3TrcHB" id="7Bmg9Oo7uMY" role="2OqNvi">
+                <ref role="3TsBF5" to="i3ya:7Bmg9Oo3Vr1" resolve="derived" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="7Bmg9Oo7t2c" role="QzAvj">
+      <node concept="3clFbS" id="7Bmg9Oo7t2d" role="2VODD2">
+        <node concept="3clFbF" id="7Bmg9Oo7t8u" role="3cqZAp">
+          <node concept="Xl_RD" id="7Bmg9Oo7t8t" role="3clFbG">
+            <property role="Xl_RC" value="Turn Into Derived Quantity" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="7Bmg9Oo9mUk">
+    <property role="TrG5h" value="check_Unit" />
+    <property role="3GE5qa" value="definition.unit" />
+    <node concept="3clFbS" id="7Bmg9Oo9mUl" role="18ibNy">
+      <node concept="3clFbJ" id="7Bmg9Oo9mZH" role="3cqZAp">
+        <node concept="1Wc70l" id="7Bmg9Oo9oyU" role="3clFbw">
+          <node concept="2OqwBi" id="7Bmg9Oo9q2l" role="3uHU7w">
+            <node concept="2OqwBi" id="7Bmg9Oo9oKB" role="2Oq$k0">
+              <node concept="1YBJjd" id="7Bmg9Oo9oFt" role="2Oq$k0">
+                <ref role="1YBMHb" node="7Bmg9Oo9mUn" resolve="unit" />
+              </node>
+              <node concept="3TrEf2" id="7Bmg9Oo9p_W" role="2OqNvi">
+                <ref role="3Tt5mk" to="i3ya:7Bmg9Oo7KCS" resolve="specification" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7Bmg9Oo9qyc" role="2OqNvi" />
+          </node>
+          <node concept="3fqX7Q" id="7Bmg9Oo9n2J" role="3uHU7B">
+            <node concept="2OqwBi" id="7Bmg9Oo9nqL" role="3fr31v">
+              <node concept="1YBJjd" id="7Bmg9Oo9n4B" role="2Oq$k0">
+                <ref role="1YBMHb" node="7Bmg9Oo9mUn" resolve="unit" />
+              </node>
+              <node concept="3TrcHB" id="7Bmg9Oo9o9$" role="2OqNvi">
+                <ref role="3TsBF5" to="i3ya:7Bmg9Oo7Kvu" resolve="derived" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="7Bmg9Oo9mZJ" role="3clFbx">
+          <node concept="2MkqsV" id="7Bmg9Oo9qFl" role="3cqZAp">
+            <node concept="Xl_RD" id="7Bmg9Oo9qH9" role="2MkJ7o">
+              <property role="Xl_RC" value="Unit has a hidden specification. Please remove or set as derived." />
+            </node>
+            <node concept="1YBJjd" id="7Bmg9Oo9rqt" role="1urrMF">
+              <ref role="1YBMHb" node="7Bmg9Oo9mUn" resolve="unit" />
+            </node>
+            <node concept="3Cnw8n" id="7Bmg9Oo9rMm" role="1urrFz">
+              <ref role="QpYPw" node="7Bmg9Oo6XnT" resolve="fix_nonderivedQuantityRemoveSpec" />
+            </node>
+            <node concept="3Cnw8n" id="7Bmg9Oo9rAI" role="1urrFz">
+              <ref role="QpYPw" node="7Bmg9Oo9rAF" resolve="fix_" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7Bmg9Oo9mUn" role="1YuTPh">
+      <property role="TrG5h" value="unit" />
+      <ref role="1YaFvo" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="7Bmg9Oo9rAF">
+    <property role="TrG5h" value="fix_nonderivedUnitMakeDerived" />
+    <property role="3GE5qa" value="definition.unit" />
+    <node concept="Q5ZZ6" id="7Bmg9Oo9rAG" role="Q6x$H">
+      <node concept="3clFbS" id="7Bmg9Oo9rAH" role="2VODD2">
+        <node concept="3clFbF" id="7Bmg9Oo9uCu" role="3cqZAp">
+          <node concept="37vLTI" id="7Bmg9Oo9wwc" role="3clFbG">
+            <node concept="3clFbT" id="7Bmg9Oo9wym" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="7Bmg9Oo9vjV" role="37vLTJ">
+              <node concept="1PxgMI" id="7Bmg9Oo9uXb" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="7Bmg9Oo9uYO" role="3oSUPX">
+                  <ref role="cht4Q" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
+                </node>
+                <node concept="Q6c8r" id="7Bmg9Oo9uCt" role="1m5AlR" />
+              </node>
+              <node concept="3TrcHB" id="7Bmg9Oo9vXR" role="2OqNvi">
+                <ref role="3TsBF5" to="i3ya:7Bmg9Oo7Kvu" resolve="derived" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="7Bmg9Oo9wKK" role="QzAvj">
+      <node concept="3clFbS" id="7Bmg9Oo9wKL" role="2VODD2">
+        <node concept="3clFbF" id="7Bmg9Oo9wNG" role="3cqZAp">
+          <node concept="Xl_RD" id="7Bmg9Oo9wNF" role="3clFbG">
+            <property role="Xl_RC" value="Turn Into Derived Unit" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="7Bmg9Oo9rYY">
+    <property role="3GE5qa" value="definition.unit" />
+    <property role="TrG5h" value="fix_nonderivedUnitRemoveSpec" />
+    <node concept="Q5ZZ6" id="7Bmg9Oo9rYZ" role="Q6x$H">
+      <node concept="3clFbS" id="7Bmg9Oo9rZ0" role="2VODD2">
+        <node concept="3clFbF" id="7Bmg9Oo9s5U" role="3cqZAp">
+          <node concept="2OqwBi" id="7Bmg9Oo9tNc" role="3clFbG">
+            <node concept="2OqwBi" id="7Bmg9Oo9sKY" role="2Oq$k0">
+              <node concept="1PxgMI" id="7Bmg9Oo9sqe" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="7Bmg9Oo9srR" role="3oSUPX">
+                  <ref role="cht4Q" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
+                </node>
+                <node concept="Q6c8r" id="7Bmg9Oo9s5T" role="1m5AlR" />
+              </node>
+              <node concept="3TrEf2" id="7Bmg9Oo9tqU" role="2OqNvi">
+                <ref role="3Tt5mk" to="i3ya:7Bmg9Oo7KCS" resolve="specification" />
+              </node>
+            </node>
+            <node concept="3YRAZt" id="7Bmg9Oo9u_v" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="7Bmg9Oo9wX7" role="QzAvj">
+      <node concept="3clFbS" id="7Bmg9Oo9wX8" role="2VODD2">
+        <node concept="3clFbF" id="7Bmg9Oo9wY1" role="3cqZAp">
+          <node concept="Xl_RD" id="7Bmg9Oo9wY0" role="3clFbG">
+            <property role="Xl_RC" value="Remove Hidden Specification" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

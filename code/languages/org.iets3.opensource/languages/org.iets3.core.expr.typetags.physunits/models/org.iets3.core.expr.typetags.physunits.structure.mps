@@ -82,7 +82,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3jsZ">
-    <property role="TrG5h" value="BasicUnit" />
+    <property role="TrG5h" value="Unit" />
     <property role="34LRSv" value="unit" />
     <property role="R4oN_" value="a unit definition" />
     <property role="EcuMT" value="8337440621611267903" />
@@ -113,6 +113,17 @@
       <node concept="t5JxF" id="7athFveyN3V" role="lGtFl">
         <property role="t5JxN" value="If true allow SI-scaling prefixes for the unit when used inside expressions" />
       </node>
+    </node>
+    <node concept="1TJgyi" id="7Bmg9Oo7Kvu" role="1TKVEl">
+      <property role="IQ2nx" value="8779275567064090590" />
+      <property role="TrG5h" value="derived" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="7Bmg9Oo7KCS" role="1TKVEi">
+      <property role="IQ2ns" value="8779275567064091192" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="specification" />
+      <ref role="20lvS9" node="7eOyx9r3k4t" resolve="UnitSpecification" />
     </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3k4t">
@@ -210,13 +221,13 @@
       <property role="20kJfa" value="sourceUnit" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="1741902046312150360" />
-      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="BasicUnit" />
+      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="Unit" />
     </node>
     <node concept="1TJgyj" id="1wGuEUvXzlp" role="1TKVEi">
       <property role="20kJfa" value="targetUnit" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="1741902046312150361" />
-      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="BasicUnit" />
+      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="Unit" />
     </node>
     <node concept="PrWs8" id="5pSqQr$_PJ9" role="PzmwI">
       <ref role="PrY4T" node="6mzZsELfLSn" resolve="ICanUseNoUnit" />
@@ -260,7 +271,7 @@
       <property role="20kJfa" value="targetUnit" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4121031889271053292" />
-      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="BasicUnit" />
+      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="Unit" />
     </node>
     <node concept="1TJgyj" id="yGiRIEUFLN" role="1TKVEi">
       <property role="20kJfa" value="conversionSpecifier" />
@@ -290,7 +301,7 @@
       <property role="20kJfa" value="targetUnit" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="9088900783727405800" />
-      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="BasicUnit" />
+      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="Unit" />
     </node>
     <node concept="1TJgyj" id="7SygLIkPQFD" role="1TKVEi">
       <property role="20kJfa" value="conversionSpecifier" />
@@ -324,6 +335,11 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="specification" />
       <ref role="20lvS9" node="7athFveyQjs" resolve="QuantitySpecification" />
+    </node>
+    <node concept="1TJgyi" id="7Bmg9Oo3Vr1" role="1TKVEl">
+      <property role="IQ2nx" value="8779275567063086785" />
+      <property role="TrG5h" value="derived" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="PlHQZ" id="1KUmgSF_6Qv">
@@ -434,37 +450,6 @@
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7athFve_SVK" resolve="QuantityExpr" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7athFveDsjK">
-    <property role="EcuMT" value="8258835046927287536" />
-    <property role="3GE5qa" value="definition.unit" />
-    <property role="TrG5h" value="DerivedUnit" />
-    <property role="34LRSv" value="derived unit" />
-    <property role="R4oN_" value="compose units" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyj" id="69ocqYc5QC4" role="1TKVEi">
-      <property role="IQ2ns" value="7086468643706857988" />
-      <property role="20kJfa" value="dimension" />
-      <ref role="20lvS9" node="1KUmgSFpwWn" resolve="Quantity" />
-    </node>
-    <node concept="1TJgyj" id="7eOyx9r3k4r" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="specification" />
-      <property role="IQ2ns" value="8337440621611270427" />
-      <ref role="20lvS9" node="7eOyx9r3k4t" resolve="UnitSpecification" />
-    </node>
-    <node concept="PrWs8" id="7athFveDsy4" role="PzmwI">
-      <ref role="PrY4T" node="7eOyx9r3k3e" resolve="IUnit" />
-    </node>
-    <node concept="PrWs8" id="7athFveDsyU" role="PzmwI">
-      <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
-    </node>
-    <node concept="PrWs8" id="7athFveDsIJ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
-    </node>
-    <node concept="PrWs8" id="7athFveDsPj" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
   </node>
   <node concept="1TIwiD" id="7athFveEYHG">

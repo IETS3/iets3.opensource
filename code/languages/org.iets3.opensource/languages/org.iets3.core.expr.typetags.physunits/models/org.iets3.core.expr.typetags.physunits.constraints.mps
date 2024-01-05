@@ -223,7 +223,7 @@
                 </node>
                 <node concept="v3k3i" id="2d7UJSOCG6Q" role="2OqNvi">
                   <node concept="chp4Y" id="2d7UJSOCG6R" role="v3oSu">
-                    <ref role="cht4Q" to="i3ya:7eOyx9r3jsZ" resolve="BasicUnit" />
+                    <ref role="cht4Q" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
                   </node>
                 </node>
               </node>
@@ -248,7 +248,7 @@
                 </node>
                 <node concept="v3k3i" id="2d7UJSOCG8O" role="2OqNvi">
                   <node concept="chp4Y" id="2d7UJSOCG8P" role="v3oSu">
-                    <ref role="cht4Q" to="i3ya:7eOyx9r3jsZ" resolve="BasicUnit" />
+                    <ref role="cht4Q" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
                   </node>
                 </node>
               </node>
@@ -590,7 +590,7 @@
   </node>
   <node concept="1M2fIO" id="1KUmgSFvSuo">
     <property role="3GE5qa" value="definition.unit" />
-    <ref role="1M2myG" to="i3ya:7eOyx9r3jsZ" resolve="BasicUnit" />
+    <ref role="1M2myG" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
     <node concept="1N5Pfh" id="1KUmgSFvSup" role="1Mr941">
       <ref role="1N5Vy1" to="i3ya:1KUmgSFpwWq" resolve="dimension" />
       <node concept="3dgokm" id="1KUmgSFvSut" role="1N6uqs">
