@@ -38,6 +38,7 @@
     <import index="q4oi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellActions(MPS.Editor/)" />
     <import index="av1m" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.style(MPS.Editor/)" />
     <import index="fulz" ref="r:6f792c44-2a5d-40e8-9f05-33f7d4ae26ec(jetbrains.mps.editor.runtime.completion)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
@@ -380,6 +381,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -6956,11 +6960,24 @@
                 </node>
                 <node concept="liA8E" id="6wzrxL3aZXi" role="2OqNvi">
                   <ref role="37wK5l" to="av1m:~EditorMenuItemStyle.setBackgroundColor(java.awt.Color)" resolve="setBackgroundColor" />
-                  <node concept="2YIFZM" id="6wzrxL3b0wN" role="37wK5m">
-                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                    <node concept="Xl_RD" id="6wzrxL3b0Em" role="37wK5m">
-                      <property role="Xl_RC" value="#eeeeee" />
+                  <node concept="2ShNRf" id="5s1lueTE6tG" role="37wK5m">
+                    <node concept="1pGfFk" id="5s1lueTEFuR" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                      <node concept="2YIFZM" id="6wzrxL3b0wN" role="37wK5m">
+                        <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+                        <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                        <node concept="Xl_RD" id="6wzrxL3b0Em" role="37wK5m">
+                          <property role="Xl_RC" value="#eeeeee" />
+                        </node>
+                      </node>
+                      <node concept="2YIFZM" id="5s1lueTEL79" role="37wK5m">
+                        <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+                        <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                        <node concept="Xl_RD" id="5s1lueTEL7a" role="37wK5m">
+                          <property role="Xl_RC" value="#eeeeee" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -7063,18 +7080,31 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="jqB9UdvOmj" role="3cqZAp">
-              <node concept="2OqwBi" id="jqB9UdvOmk" role="3clFbG">
-                <node concept="37vLTw" id="jqB9UdvOml" role="2Oq$k0">
+            <node concept="3clFbF" id="5s1lueTELea" role="3cqZAp">
+              <node concept="2OqwBi" id="5s1lueTELeb" role="3clFbG">
+                <node concept="37vLTw" id="5s1lueTELec" role="2Oq$k0">
                   <ref role="3cqZAo" node="jqB9UdvOmD" resolve="style" />
                 </node>
-                <node concept="liA8E" id="jqB9UdvOmm" role="2OqNvi">
+                <node concept="liA8E" id="5s1lueTELed" role="2OqNvi">
                   <ref role="37wK5l" to="av1m:~EditorMenuItemStyle.setBackgroundColor(java.awt.Color)" resolve="setBackgroundColor" />
-                  <node concept="2YIFZM" id="jqB9UdvOmn" role="37wK5m">
-                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                    <node concept="Xl_RD" id="jqB9UdvOmo" role="37wK5m">
-                      <property role="Xl_RC" value="#eeeeee" />
+                  <node concept="2ShNRf" id="5s1lueTELee" role="37wK5m">
+                    <node concept="1pGfFk" id="5s1lueTELef" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                      <node concept="2YIFZM" id="5s1lueTELeg" role="37wK5m">
+                        <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+                        <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                        <node concept="Xl_RD" id="5s1lueTELeh" role="37wK5m">
+                          <property role="Xl_RC" value="#eeeeee" />
+                        </node>
+                      </node>
+                      <node concept="2YIFZM" id="5s1lueTELei" role="37wK5m">
+                        <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                        <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+                        <node concept="Xl_RD" id="5s1lueTELej" role="37wK5m">
+                          <property role="Xl_RC" value="#eeeeee" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

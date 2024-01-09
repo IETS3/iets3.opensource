@@ -120,6 +120,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -810,6 +811,25 @@
                 <ref role="3cqZAo" node="6wzrxL2ZM$U" resolve="entries" />
               </node>
               <node concept="3clFbS" id="6wzrxL2ZQQy" role="2LFqv$">
+                <node concept="3cpWs8" id="48Q4_iT7kjK" role="3cqZAp">
+                  <node concept="3cpWsn" id="48Q4_iT7kjL" role="3cpWs9">
+                    <property role="TrG5h" value="row" />
+                    <node concept="3uibUv" id="48Q4_iT7khG" role="1tU5fm">
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                    </node>
+                    <node concept="2OqwBi" id="48Q4_iT7kjM" role="33vP2m">
+                      <node concept="2GrUjf" id="48Q4_iT7kjN" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="6wzrxL2ZQQw" resolve="e" />
+                      </node>
+                      <node concept="liA8E" id="48Q4_iT7kjO" role="2OqNvi">
+                        <ref role="37wK5l" node="6wzrxL2ZSAF" resolve="get" />
+                        <node concept="37vLTw" id="48Q4_iT7kjP" role="37wK5m">
+                          <ref role="3cqZAo" node="6wzrxL2ZQ_L" resolve="col" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbJ" id="6wzrxL30dYM" role="3cqZAp">
                   <node concept="3clFbS" id="6wzrxL30dYO" role="3clFbx">
                     <node concept="3cpWs6" id="6wzrxL30gcX" role="3cqZAp">
@@ -818,22 +838,22 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="6wzrxL30nRs" role="3clFbw">
-                    <node concept="2OqwBi" id="6wzrxL30ncr" role="2Oq$k0">
-                      <node concept="2GrUjf" id="6wzrxL30n3N" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="6wzrxL2ZQQw" resolve="e" />
-                      </node>
-                      <node concept="liA8E" id="6wzrxL30nsK" role="2OqNvi">
-                        <ref role="37wK5l" node="6wzrxL2ZSAF" resolve="get" />
-                        <node concept="37vLTw" id="6wzrxL30nt1" role="37wK5m">
-                          <ref role="3cqZAo" node="6wzrxL2ZQ_L" resolve="col" />
-                        </node>
+                  <node concept="1Wc70l" id="48Q4_iT7kIq" role="3clFbw">
+                    <node concept="3y3z36" id="48Q4_iT7l1T" role="3uHU7B">
+                      <node concept="10Nm6u" id="48Q4_iT7ll4" role="3uHU7w" />
+                      <node concept="37vLTw" id="48Q4_iT7kMA" role="3uHU7B">
+                        <ref role="3cqZAo" node="48Q4_iT7kjL" resolve="row" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="6wzrxL30oq7" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
-                      <node concept="37vLTw" id="6wzrxL30oBA" role="37wK5m">
-                        <ref role="3cqZAo" node="6wzrxL2ZQl$" resolve="value" />
+                    <node concept="2OqwBi" id="6wzrxL30nRs" role="3uHU7w">
+                      <node concept="liA8E" id="6wzrxL30oq7" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                        <node concept="37vLTw" id="6wzrxL30oBA" role="37wK5m">
+                          <ref role="3cqZAo" node="6wzrxL2ZQl$" resolve="value" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="48Q4_iT7kF1" role="2Oq$k0">
+                        <ref role="3cqZAo" node="48Q4_iT7kjL" resolve="row" />
                       </node>
                     </node>
                   </node>

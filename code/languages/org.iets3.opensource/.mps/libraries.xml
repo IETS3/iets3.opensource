@@ -7,8 +7,8 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.plattform" />
-              <option name="path" value="${iets3.github.opensource.home}/build/dependencies/com.mbeddr.platform" />
-            </Library>
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform' />            
+   			</Library>
           </value>
         </entry>
       </map>
