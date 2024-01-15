@@ -2189,5 +2189,9 @@
     <property role="EcuMT" value="7520958096812440715" />
     <property role="TrG5h" value="IComplexTypeSupportsEquals" />
   </node>
+  <node concept="PlHQZ" id="6wzrxL38hak">
+    <property role="EcuMT" value="7503962471793758868" />
+    <property role="TrG5h" value="IPreferredProposalContext" />
+  </node>
 </model>
 

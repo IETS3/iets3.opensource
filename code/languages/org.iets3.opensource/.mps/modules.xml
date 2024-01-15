@@ -29,6 +29,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.doc/org.iets3.core.expr.doc.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.base/org.iets3.core.expr.genjava.base.mpl" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.contracts/org.iets3.core.expr.genjava.contracts.mpl" folder="expr.genjava" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.data/org.iets3.core.expr.genjava.data.mpl" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.datetime/org.iets3.core.expr.genjava.datetime.mpl" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.messages/org.iets3.core.expr.genjava.messages.mpl" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.simpleTypes/org.iets3.core.expr.genjava.simpleTypes.mpl" folder="expr.genjava" />

@@ -229,6 +229,7 @@
       </concept>
       <concept id="8271636411545326830" name="org.iets3.core.expr.datetime.structure.ToStringOp" flags="ng" index="2R$_mj" />
       <concept id="5674727352060023053" name="org.iets3.core.expr.datetime.structure.DateDeltaToNumberOp" flags="ng" index="2YuVXS" />
+      <concept id="8988735099053161945" name="org.iets3.core.expr.datetime.structure.CurrentDateExpr" flags="ng" index="33A5GF" />
       <concept id="5551088970758388084" name="org.iets3.core.expr.datetime.structure.IntersectRangeOp" flags="ng" index="17FhtQ">
         <child id="5551088970758393210" name="other" index="17FudS" />
       </concept>
@@ -442,7 +443,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="6fXpv6P_vaO" role="_iOnB" />
-    <node concept="_ixoA" id="26CArgU5oL4" role="_iOnB" />
     <node concept="_fkuM" id="26CArgU5oG0" role="_iOnB">
       <property role="TrG5h" value="dateComparison" />
       <node concept="_fkuZ" id="7aRvJQF4Ua7" role="_fkp5">
@@ -6840,6 +6840,27 @@
       </node>
     </node>
     <node concept="_ixoA" id="4V0FBnKJhrk" role="_iOnB" />
+    <node concept="_fkuM" id="7MYpJaZccds" role="_iOnB">
+      <property role="TrG5h" value="Now" />
+      <node concept="_fkuZ" id="7MYpJaZccFl" role="_fkp5">
+        <node concept="_fku$" id="7MYpJaZccGK" role="_fkur" />
+        <node concept="33A5GF" id="7MYpJaZd1jI" role="_fkuY" />
+        <node concept="33A5GF" id="7MYpJaZccHX" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="7MYpJaZd1fq" role="_fkp5">
+        <node concept="_fku$" id="7MYpJaZd1fr" role="_fkur" />
+        <node concept="30d6GG" id="7MYpJaZd5Zq" role="_fkuY">
+          <node concept="1QScDb" id="7MYpJaZd1fu" role="30dEsF">
+            <node concept="k_sJE" id="7MYpJaZd1fv" role="1QScD9" />
+            <node concept="33A5GF" id="7MYpJaZd1fw" role="30czhm" />
+          </node>
+          <node concept="30bXRB" id="7MYpJaZd1ft" role="30dEs_">
+            <property role="30bXRw" value="2023" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="7MYpJaZd3Ew" role="_fkuS" />
+      </node>
+    </node>
     <node concept="_ixoA" id="4V0FBnKJi0T" role="_iOnB" />
     <node concept="_ixoA" id="j5CxBK7y2D" role="_iOnB" />
   </node>
