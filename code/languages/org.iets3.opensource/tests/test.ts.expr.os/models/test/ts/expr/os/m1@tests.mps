@@ -16285,15 +16285,7 @@
             </node>
             <node concept="3CkgUp" id="2KRUNf1n43H" role="3Ckg_R">
               <ref role="3Ckhev" node="2KRUNf1n43z" resolve="val2" />
-              <node concept="1I1voI" id="3tcv7J0Gk0B" role="3CkirI">
-                <node concept="7CXmI" id="3tcv7J0Gk9B" role="lGtFl">
-                  <node concept="1TM$A" id="3tcv7J0V6WQ" role="7EUXB">
-                    <node concept="2PYRI3" id="3tcv7J0V6WR" role="3lydEf">
-                      <ref role="39XzEq" to="rpit:3tcv7J0Q0xB" />
-                    </node>
-                  </node>
-                </node>
-              </node>
+              <node concept="1I1voI" id="3tcv7J0Gk0B" role="3CkirI" />
             </node>
           </node>
         </node>

@@ -2135,6 +2135,13 @@
   </node>
   <node concept="jVnub" id="7bZFIimgIJh">
     <property role="TrG5h" value="Expression2Expression" />
+    <node concept="3aamgX" id="5s1lueTGJVC" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:3nVyItrZBN9" resolve="EmptyValue" />
+      <node concept="gft3U" id="5s1lueTIq6c" role="1lVwrX">
+        <node concept="10Nm6u" id="5s1lueTIq6i" role="gfFT$" />
+      </node>
+    </node>
     <node concept="3aamgX" id="6IxV2nSbW0R" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="hm2y:4rZeNQ6OJ4v" resolve="ParensExpression" />
