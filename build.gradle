@@ -116,7 +116,7 @@ ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
 
 
 wrapper {
-    gradleVersion '5.5.1'
+    gradleVersion '8.5'
     distributionType Wrapper.DistributionType.ALL
 }
 
@@ -131,7 +131,7 @@ dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
-    pcollections 'org.pcollections:pcollections:3.1.4'
+    pcollections 'org.pcollections:pcollections:4.0.1'
 }
 
 
