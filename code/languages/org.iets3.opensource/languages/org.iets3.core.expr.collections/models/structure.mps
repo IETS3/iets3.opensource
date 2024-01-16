@@ -21,7 +21,9 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -372,6 +374,9 @@
     <property role="EcuMT" value="8872269265515619803" />
     <property role="R4oN_" value="an existential quantifier (true if at least one is true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+    <node concept="PrWs8" id="7G4S3eSr2T3" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2RfRi">
     <property role="3GE5qa" value="collection" />
@@ -380,6 +385,9 @@
     <property role="EcuMT" value="8872269265518788050" />
     <property role="R4oN_" value="an universal quantifier (true if all elements are true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+    <node concept="PrWs8" id="7G4S3eSr2T0" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2Wbm7">
     <property role="TrG5h" value="SetType" />
@@ -448,6 +456,9 @@
     <node concept="PrWs8" id="60Qa1k_uVII" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
+    <node concept="PrWs8" id="6iWyECKYPfq" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6xvNSEj6BMb" resolve="IComplexTypeSupportsEquals" />
+    </node>
     <node concept="1TJgyj" id="7kYh9WszdBR" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="keyType" />
@@ -461,9 +472,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8448265401163110905" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    </node>
-    <node concept="PrWs8" id="6iWyECKYPfq" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6xvNSEj6BMb" resolve="IComplexTypeSupportsEquals" />
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WszdHC">
@@ -1070,6 +1078,9 @@
     <property role="EcuMT" value="444732437356043012" />
     <property role="R4oN_" value="an universal quantifier (true if all elements are true) that passes the element's index into the closure as well" />
     <ref role="1TJDcQ" node="oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
+    <node concept="asaX9" id="7G4S3eT76i8" role="lGtFl">
+      <property role="YLQ7P" value="Use AllOp with an IndexExpr instead" />
+    </node>
   </node>
   <node concept="1TIwiD" id="oG0sI$GQkF">
     <property role="3GE5qa" value="" />
@@ -1087,6 +1098,9 @@
     <property role="EcuMT" value="4481921169623440367" />
     <property role="R4oN_" value="an existential quantifier (true if at least one is true) that passes the element's index into the closure as well." />
     <ref role="1TJDcQ" node="oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
+    <node concept="asaX9" id="7G4S3eT76i_" role="lGtFl">
+      <property role="YLQ7P" value="Use AnyOp with an IndexExpr instead" />
+    </node>
   </node>
   <node concept="1TIwiD" id="lR2RIFOEit">
     <property role="EcuMT" value="393796118209799325" />

@@ -5,30 +5,47 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). 
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## January 2024
+
+### Changed
+
+- The PCollections library was updated to version 4.0.1.
+
 ## December 2023
 
 ### Fixed
 
+- The `index` expression in collections operations now works correctly in nested expressions in the interpreter and generator.
+- Generation of nested short lambda expression now use the correct type for "it" as a variable.
 - Collections: The index expression now works with collection types in the generator.
 
+### Added
+
+- The `all` and `any` operation of collections now also support the `index` expression. The concepts `AllWithIndexOp` and `AnyWithIndexOp` are therefore deprecated.
+
+### Changed
+
+- The class `IETS3ExprEvalHelper` was deprecated and a new class `IETS3ExprEvaluator` was introduced that can also influence the creation of the computation trace.
+
 ## November 2023
-
-### Fixed
-
-- Unit definitions are now checked for cycles.
-- Units now provide an extension point to configure which conversion specifier is used per default.
-  Per default the first available one is used as in older versions. The extension point supports using the one specified in the conversion expression.
 
 ### Added
 
 - The `sort` method of collections now supports more types: all primitive types, the option type, all datetime types, the temporal type and the record type
-- Records: The sorting order can be added through the intention `Add a Comparison Order`, otherwise, the records are sorted based on the declaration order of the members
-- Option: Sorting removes all `none` values since the underlying data structure of collections doesn't support null values.
+   - Records: The sorting order can be added through the intention `Add a Comparison Order`, otherwise, the records are sorted based on the declaration order of the members
+   - Option: Sorting removes all `none` values since the underlying data structure of collections doesn't support null values.
 
 ### Changed
 
 - The comparison helper in org.iets3.core.expr.simpleTypes.runtime and the equals helper in the test language where merged into a new class EqualsHelper inside the first runtime solution to return the same values.
 
+## October 2023
+
+### Fixed
+
+- String validation: A bug in the number detection logic was fixed
+- String validation: A bug in the successor execution logic was fixed
+- 
 ## October 2023
 
 ### Fixed
