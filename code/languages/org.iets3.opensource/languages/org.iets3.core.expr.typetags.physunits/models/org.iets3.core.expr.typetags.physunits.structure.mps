@@ -108,7 +108,7 @@
     </node>
     <node concept="1TJgyi" id="7athFvevHxP" role="1TKVEl">
       <property role="IQ2nx" value="8258835046924736629" />
-      <property role="TrG5h" value="siScaled" />
+      <property role="TrG5h" value="metricScaled" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
       <node concept="t5JxF" id="7athFveyN3V" role="lGtFl">
         <property role="t5JxN" value="If true allow SI-scaling prefixes for the unit when used inside expressions" />
@@ -149,6 +149,11 @@
     <property role="R4oN_" value="a reference to an unit" />
     <property role="3GE5qa" value="definition.expressions" />
     <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpr" />
+    <node concept="1TJgyi" id="7Bmg9OopAyq" role="1TKVEl">
+      <property role="IQ2nx" value="8779275567068768410" />
+      <property role="TrG5h" value="metricPrefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="4CUqBF4xMRo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
