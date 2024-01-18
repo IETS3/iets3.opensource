@@ -184,8 +184,8 @@
               <node concept="1Wqviy" id="8iseid1uGE" role="2Oq$k0" />
               <node concept="liA8E" id="8iseid1uGF" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                <node concept="Xl_RD" id="8iseid1uGG" role="37wK5m">
-                  <property role="Xl_RC" value="\\d\\d" />
+                <node concept="Xl_RD" id="knfvDjEZj0" role="37wK5m">
+                  <property role="Xl_RC" value="(0[1-9]|[12]\\d|3[01])" />
                 </node>
               </node>
             </node>
@@ -202,8 +202,8 @@
               <node concept="1Wqviy" id="3C_9jV3oYu" role="2Oq$k0" />
               <node concept="liA8E" id="3C_9jV3oYv" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                <node concept="Xl_RD" id="3C_9jV3oYw" role="37wK5m">
-                  <property role="Xl_RC" value="\\d\\d" />
+                <node concept="Xl_RD" id="8iseid1uGG" role="37wK5m">
+                  <property role="Xl_RC" value="(0[1-9]|1[0-2])" />
                 </node>
               </node>
             </node>
