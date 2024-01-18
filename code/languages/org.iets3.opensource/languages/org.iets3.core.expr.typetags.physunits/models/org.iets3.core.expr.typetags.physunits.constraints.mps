@@ -15,6 +15,8 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" />
     <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.quantities.behavior)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -158,6 +160,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
+        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -687,6 +692,41 @@
                       <node concept="3kakTB" id="1KUmgSFw73U" role="2Oq$k0" />
                       <node concept="1mfA1w" id="1KUmgSFw73V" role="2OqNvi" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="73cP8DpvQzv">
+    <property role="3GE5qa" value="definition.quantity" />
+    <ref role="1M2myG" to="i3ya:7athFveyQYz" resolve="QuantityReference" />
+    <node concept="1N5Pfh" id="73cP8Dpyk0W" role="1Mr941">
+      <ref role="1N5Vy1" to="i3ya:7athFveyRoc" resolve="quantity" />
+      <node concept="3dgokm" id="73cP8Dpyk6y" role="1N6uqs">
+        <node concept="3clFbS" id="73cP8Dpyk6z" role="2VODD2">
+          <node concept="3clFbF" id="1F1F0IUZAKy" role="3cqZAp">
+            <node concept="2YIFZM" id="1F1F0IUZAOR" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="1F1F0IUZAOT" role="37wK5m">
+                <node concept="2OqwBi" id="1F1F0IUZAOU" role="2Oq$k0">
+                  <node concept="2rP1CM" id="1F1F0IUZAOV" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="1F1F0IUZAOW" role="2OqNvi">
+                    <node concept="1xMEDy" id="1F1F0IUZAOX" role="1xVPHs">
+                      <node concept="chp4Y" id="1F1F0IUZAOY" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1F1F0IUZAOZ" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="1F1F0IUZAP0" role="37wK5m">
+                    <ref role="3TV0OU" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
                   </node>
                 </node>
               </node>

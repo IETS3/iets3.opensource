@@ -32,6 +32,7 @@
     <import index="65nr" ref="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)" />
     <import index="v18h" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:kotlin(MPS.IDEA/)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -5502,7 +5503,7 @@
                 <ref role="1YBMHb" node="45a4DYZsBqE" resolve="qRef" />
               </node>
               <node concept="3TrEf2" id="45a4DYZsCsZ" role="2OqNvi">
-                <ref role="3Tt5mk" to="i3ya:7athFveyRoc" resolve="q" />
+                <ref role="3Tt5mk" to="i3ya:7athFveyRoc" resolve="quantity" />
               </node>
             </node>
           </node>
@@ -7416,6 +7417,44 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="73cP8Dpy1yr" role="3cqZAp" />
+      <node concept="3cpWs8" id="RIvadv3afz" role="3cqZAp">
+        <node concept="3cpWsn" id="RIvadv3af$" role="3cpWs9">
+          <property role="TrG5h" value="elements" />
+          <node concept="2hMVRd" id="RIvadv3afp" role="1tU5fm">
+            <node concept="3Tqbb2" id="RIvadv3afs" role="2hN53Y">
+              <ref role="ehGHo" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="RIvadv3af_" role="33vP2m">
+            <node concept="1YBJjd" id="2Fd5B1gx$ur" role="2Oq$k0">
+              <ref role="1YBMHb" node="7Bmg9Oo6rqS" resolve="quantity" />
+            </node>
+            <node concept="2qgKlT" id="RIvadv3afB" role="2OqNvi">
+              <ref role="37wK5l" to="hwgx:17fjvcLFUH5" resolve="getCyclicDependencyElements" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="RIvadv3a$s" role="3cqZAp">
+        <node concept="3clFbS" id="RIvadv3a$u" role="3clFbx">
+          <node concept="2MkqsV" id="RIvadv3hzr" role="3cqZAp">
+            <node concept="Xl_RD" id="RIvadv3hzE" role="2MkJ7o">
+              <property role="Xl_RC" value="Cyclic definitions are not allowed" />
+            </node>
+            <node concept="1YBJjd" id="73cP8Dpy3qB" role="1urrMF">
+              <ref role="1YBMHb" node="7Bmg9Oo6rqS" resolve="quantity" />
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="RIvadv3c6a" role="3clFbw">
+          <node concept="10Nm6u" id="RIvadv3c6y" role="3uHU7w" />
+          <node concept="37vLTw" id="RIvadv3a$V" role="3uHU7B">
+            <ref role="3cqZAo" node="RIvadv3af$" resolve="elements" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="73cP8Dpy1zA" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="7Bmg9Oo6rqS" role="1YuTPh">
       <property role="TrG5h" value="quantity" />

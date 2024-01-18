@@ -335,6 +335,12 @@
     <node concept="PrWs8" id="1KUmgSFpIfY" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
+    <node concept="PrWs8" id="73cP8DpvRXw" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
+    <node concept="PrWs8" id="73cP8Dpynu1" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
     <node concept="1TJgyj" id="7athFveyPVm" role="1TKVEi">
       <property role="IQ2ns" value="8258835046925557462" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -372,7 +378,7 @@
     <ref role="1TJDcQ" node="7athFve_SVK" resolve="QuantityExpr" />
     <node concept="1TJgyj" id="7athFveyRoc" role="1TKVEi">
       <property role="IQ2ns" value="8258835046925563404" />
-      <property role="20kJfa" value="q" />
+      <property role="20kJfa" value="quantity" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1KUmgSFpwWn" resolve="Quantity" />
     </node>

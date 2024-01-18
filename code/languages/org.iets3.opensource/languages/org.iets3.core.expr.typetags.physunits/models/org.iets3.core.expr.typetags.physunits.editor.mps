@@ -2189,7 +2189,7 @@
     <property role="3GE5qa" value="definition.quantity" />
     <ref role="1XX52x" to="i3ya:7athFveyQYz" resolve="QuantityReference" />
     <node concept="1iCGBv" id="7athFve$gND" role="2wV5jI">
-      <ref role="1NtTu8" to="i3ya:7athFveyRoc" resolve="q" />
+      <ref role="1NtTu8" to="i3ya:7athFveyRoc" resolve="quantity" />
       <node concept="1sVBvm" id="7athFve$gNF" role="1sWHZn">
         <node concept="3F0A7n" id="7athFve$gRQ" role="2wV5jI">
           <property role="1Intyy" value="true" />
