@@ -2652,5 +2652,33 @@
       </node>
     </node>
   </node>
+  <node concept="22mcaB" id="73cP8DpotaA">
+    <property role="3GE5qa" value="definition.quantity" />
+    <ref role="aqKnT" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
+    <node concept="22hDWj" id="73cP8Dpotd3" role="22hAXT" />
+    <node concept="3VyMlK" id="73cP8DprhZz" role="3ft7WO" />
+    <node concept="3N5dw7" id="73cP8DpotfV" role="3ft7WO">
+      <node concept="3N5aqt" id="73cP8DpotfW" role="3Na0zg">
+        <node concept="3clFbS" id="73cP8DpotfX" role="2VODD2">
+          <node concept="3clFbF" id="73cP8Dpot$O" role="3cqZAp">
+            <node concept="2pJPEk" id="73cP8Dpot$M" role="3clFbG">
+              <node concept="2pJPED" id="73cP8Dpot$N" role="2pJPEn">
+                <ref role="2pJxaS" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
+                <node concept="2pIpSj" id="73cP8DpotMo" role="2pJxcM">
+                  <ref role="2pIpSl" to="i3ya:7athFveyQy5" resolve="spec" />
+                  <node concept="36biLy" id="73cP8DpotPm" role="28nt2d">
+                    <node concept="3N4pyC" id="73cP8DpotVe" role="36biLW" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2kknPJ" id="73cP8Dpotki" role="2klrvf">
+        <ref role="2ZyFGn" to="i3ya:7athFveyQYz" resolve="QuantityReference" />
+      </node>
+    </node>
+  </node>
 </model>
 
