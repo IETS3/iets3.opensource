@@ -362,6 +362,7 @@
     <property role="EcuMT" value="8258835046925559004" />
     <property role="3GE5qa" value="definition.quantity" />
     <property role="TrG5h" value="QuantitySpecification" />
+    <property role="R4oN_" value="a specification of a measure" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="7athFveyQy5" role="1TKVEi">
       <property role="IQ2ns" value="8258835046925559941" />
@@ -375,6 +376,7 @@
     <property role="EcuMT" value="8258835046925561763" />
     <property role="3GE5qa" value="definition.quantity" />
     <property role="TrG5h" value="QuantityReference" />
+    <property role="R4oN_" value="a reference to a quantity expression" />
     <ref role="1TJDcQ" node="7athFve_SVK" resolve="QuantityExpr" />
     <node concept="1TJgyj" id="7athFveyRoc" role="1TKVEi">
       <property role="IQ2ns" value="8258835046925563404" />
@@ -388,6 +390,7 @@
     <property role="3GE5qa" value="definition.quantity" />
     <property role="R5$K7" value="true" />
     <property role="TrG5h" value="QuantityExpr" />
+    <property role="R4oN_" value="a quantity expression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="1JynhuWjY6f" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
@@ -398,6 +401,7 @@
     <property role="3GE5qa" value="definition.quantity" />
     <property role="TrG5h" value="QuantityExponent" />
     <property role="34LRSv" value="^" />
+    <property role="R4oN_" value="a quantity expression defined with an exponent" />
     <ref role="1TJDcQ" node="7athFve_SVK" resolve="QuantityExpr" />
     <node concept="PrWs8" id="1JynhuWjZPj" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqri" resolve="IGroupPower" />
@@ -422,6 +426,7 @@
     <property role="3GE5qa" value="definition.quantity" />
     <property role="TrG5h" value="QuantityDiv" />
     <property role="34LRSv" value="/" />
+    <property role="R4oN_" value="a quantity expression defined as a fraction" />
     <ref role="1TJDcQ" node="7athFve_SVK" resolve="QuantityExpr" />
     <node concept="PrWs8" id="1JynhuWjYZK" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqlq" resolve="IGroupDivide" />
@@ -446,6 +451,7 @@
     <property role="3GE5qa" value="definition.quantity" />
     <property role="TrG5h" value="QuantityMul" />
     <property role="34LRSv" value="*" />
+    <property role="R4oN_" value="a quantity expression defined as a multiplication" />
     <ref role="1TJDcQ" node="7athFve_SVK" resolve="QuantityExpr" />
     <node concept="PrWs8" id="1JynhuWjX1t" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqcG" resolve="IGroupMultiply" />
@@ -470,12 +476,15 @@
     <property role="3GE5qa" value="definition.unit" />
     <property role="R5$K7" value="true" />
     <property role="TrG5h" value="UnitExpr" />
+    <property role="R4oN_" value="an abstract unit expression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
   <node concept="1TIwiD" id="7athFveF1bP">
     <property role="EcuMT" value="8258835046927700725" />
     <property role="3GE5qa" value="definition.unit" />
     <property role="TrG5h" value="UnitDiv" />
+    <property role="R4oN_" value="a unit expression defined as a fraction" />
+    <property role="34LRSv" value="/" />
     <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpr" />
     <node concept="1TJgyj" id="7athFveF1os" role="1TKVEi">
       <property role="IQ2ns" value="8258835046927701532" />
@@ -497,6 +506,7 @@
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityType" />
     <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="an abstract quantity type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="45a4DYZTszf" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
@@ -506,6 +516,8 @@
     <property role="EcuMT" value="4704593238062731210" />
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityDivType" />
+    <property role="R4oN_" value="a type of a quantity" />
+    <property role="34LRSv" value="/" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
     <node concept="PrWs8" id="45a4DYZTJ9T" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqlq" resolve="IGroupDivide" />
@@ -529,6 +541,8 @@
     <property role="EcuMT" value="4704593238062732147" />
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityMulType" />
+    <property role="R4oN_" value="a multiplication type of a quantity" />
+    <property role="34LRSv" value="^^" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
     <node concept="PrWs8" id="45a4DYZTHMA" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqcG" resolve="IGroupMultiply" />
@@ -552,6 +566,7 @@
     <property role="EcuMT" value="4704593238062733448" />
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityBaseType" />
+    <property role="R4oN_" value="a base quantity typr" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
     <node concept="1TJgyj" id="45a4DYZrZ_c" role="1TKVEi">
       <property role="IQ2ns" value="4704593238062790988" />
@@ -567,6 +582,8 @@
     <property role="EcuMT" value="4704593238062735070" />
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityExpType" />
+    <property role="R4oN_" value="an exponential type of a quantity" />
+    <property role="34LRSv" value="^" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
     <node concept="PrWs8" id="45a4DYZTL_P" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqri" resolve="IGroupPower" />
@@ -590,6 +607,7 @@
     <property role="EcuMT" value="4704593238063132393" />
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityEmptyType" />
+    <property role="R4oN_" value="an empty type of a quantity" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
     <node concept="PrWs8" id="45a4DZ00H03" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZYSsN" resolve="IGroupNeutral" />
@@ -644,6 +662,7 @@
     <property role="EcuMT" value="2009270740285664894" />
     <property role="3GE5qa" value="definition.quantity" />
     <property role="TrG5h" value="QuantityEmpty" />
+    <property role="R4oN_" value="an empty quantity expression" />
     <ref role="1TJDcQ" node="7athFve_SVK" resolve="QuantityExpr" />
     <node concept="PrWs8" id="1JynhuWk38B" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZYSsN" resolve="IGroupNeutral" />
