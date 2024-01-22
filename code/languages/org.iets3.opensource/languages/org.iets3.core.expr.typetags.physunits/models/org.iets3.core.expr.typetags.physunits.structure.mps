@@ -402,10 +402,12 @@
     <node concept="PrWs8" id="1JynhuWjZPj" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqri" resolve="IGroupPower" />
     </node>
-    <node concept="1TJgyi" id="1JynhuWn9s5" role="1TKVEl">
-      <property role="IQ2nx" value="2009270740286478085" />
-      <property role="TrG5h" value="exp" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="73cP8DpWLWP" role="1TKVEi">
+      <property role="IQ2ns" value="8128105118176583477" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3j3yk3guAAl" resolve="Exponent" />
     </node>
     <node concept="1TJgyj" id="1JynhuWn9yB" role="1TKVEi">
       <property role="IQ2ns" value="2009270740286478503" />
@@ -569,10 +571,12 @@
     <node concept="PrWs8" id="45a4DYZTL_P" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqri" resolve="IGroupPower" />
     </node>
-    <node concept="1TJgyi" id="1JynhuWn4y7" role="1TKVEl">
-      <property role="IQ2nx" value="2009270740286457991" />
-      <property role="TrG5h" value="exp" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="73cP8DpWLuf" role="1TKVEi">
+      <property role="IQ2ns" value="8128105118176581519" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3j3yk3guAAl" resolve="Exponent" />
     </node>
     <node concept="1TJgyj" id="1JynhuWn4Br" role="1TKVEi">
       <property role="IQ2ns" value="2009270740286458331" />

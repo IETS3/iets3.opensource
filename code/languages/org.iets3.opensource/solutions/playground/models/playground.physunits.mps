@@ -18,6 +18,9 @@
         <reference id="2034036099103723290" name="dimension" index="Rn5ok" />
         <child id="8779275567064091192" name="specification" index="1xMkE_" />
       </concept>
+      <concept id="8337440621611273670" name="org.iets3.core.expr.typetags.physunits.structure.IntegerExponent" flags="ng" index="CIsvk">
+        <property id="8337440621611273671" name="value" index="CIsvl" />
+      </concept>
       <concept id="8337440621611273669" name="org.iets3.core.expr.typetags.physunits.structure.UnitReference" flags="ng" index="CIsvn">
         <property id="8779275567068768410" name="metricPrefix" index="1xG2w7" />
         <reference id="8337440621611297532" name="unit" index="CIi3I" />
@@ -32,6 +35,10 @@
       <concept id="1069230850837260491" name="org.iets3.core.expr.typetags.physunits.structure.ConversionRule" flags="ng" index="TRoc0">
         <child id="1741902046312299423" name="specifiers" index="27P04L" />
       </concept>
+      <concept id="8258835046926359799" name="org.iets3.core.expr.typetags.physunits.structure.QuantityExponent" flags="ng" index="2W2HD0">
+        <child id="2009270740286478503" name="base" index="2BJGmK" />
+        <child id="8128105118176583477" name="exp" index="DfWIZ" />
+      </concept>
       <concept id="8258835046926363392" name="org.iets3.core.expr.typetags.physunits.structure.QuantityDiv" flags="ng" index="2W2IQR">
         <child id="2009270740286477406" name="bot" index="2BJG_9" />
         <child id="2009270740286476832" name="top" index="2BJGWR" />
@@ -40,7 +47,7 @@
         <child id="8258835046925559941" name="spec" index="2W5ySM" />
       </concept>
       <concept id="8258835046925561763" name="org.iets3.core.expr.typetags.physunits.structure.QuantityReference" flags="ng" index="2W5y$k">
-        <reference id="8258835046925563404" name="q" index="2W5z2V" />
+        <reference id="8258835046925563404" name="quantity" index="2W5z2V" />
       </concept>
       <concept id="8258835046927700725" name="org.iets3.core.expr.typetags.physunits.structure.UnitDiv" flags="ng" index="2Wclh2">
         <child id="8258835046927701532" name="top" index="2Wcl2F" />
@@ -117,8 +124,22 @@
         </node>
       </node>
     </node>
+    <node concept="Rn5op" id="73cP8DpA3N9" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="test" />
+      <node concept="2W5y9F" id="73cP8DpRAQX" role="2W5xxx">
+        <node concept="2W2HD0" id="7i1yFLkmqaS" role="2W5ySM">
+          <node concept="CIsvk" id="7i1yFLkmqaT" role="DfWIZ">
+            <property role="CIsvl" value="10" />
+          </node>
+          <node concept="2W5y$k" id="73cP8DpRAQW" role="2BJGmK">
+            <ref role="2W5z2V" node="7athFvezQgW" resolve="distance" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="Rn5op" id="45a4DYZte7z" role="_iOnB">
-      <property role="TrG5h" value="accelleration" />
+      <property role="TrG5h" value="acceleration" />
       <property role="1xQvps" value="true" />
       <node concept="2W5y9F" id="45a4DYZte81" role="2W5xxx">
         <node concept="2W2IQR" id="3Bf5P$3oZjc" role="2W5ySM">

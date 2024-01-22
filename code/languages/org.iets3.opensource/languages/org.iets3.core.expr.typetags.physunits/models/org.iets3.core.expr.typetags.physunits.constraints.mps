@@ -111,6 +111,7 @@
       <concept id="1163202694127" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_oldReferentNode" flags="nn" index="3ki8Fx" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
@@ -735,6 +736,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="7i1yFLkmcdt">
+    <ref role="1M2myG" to="i3ya:3j3yk3guAAl" resolve="Exponent" />
+    <ref role="1MND4H" to="i3ya:7eOyx9r3kR6" resolve="IntegerExponent" />
   </node>
 </model>
 
