@@ -2005,7 +2005,7 @@
               <node concept="2OqwBi" id="2mvFNoTuqyT" role="3clFbG">
                 <node concept="1Q80Hx" id="2mvFNoTuqz5" role="2Oq$k0" />
                 <node concept="liA8E" id="2mvFNoTuqyV" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode)" resolve="select" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode)" resolve="selectWRTFocusPolicy" />
                   <node concept="2OqwBi" id="2mvFNoTuqyW" role="37wK5m">
                     <node concept="2OqwBi" id="2mvFNoTuqyX" role="2Oq$k0">
                       <node concept="37vLTw" id="2mvFNoTuqyY" role="2Oq$k0">
@@ -2022,30 +2022,21 @@
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="1fzaMYHtnTx" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="2mvFNoTuqzb" role="8Wnug">
-                <node concept="2OqwBi" id="2mvFNoTuqz6" role="3clFbG">
-                  <node concept="37vLTw" id="2mvFNoTuqz2" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2mvFNoTuqyc" resolve="exponent" />
-                  </node>
-                  <node concept="1OKiuA" id="2mvFNoTuqz7" role="2OqNvi">
-                    <node concept="1Q80Hx" id="2mvFNoTuqz8" role="lBI5i" />
-                    <node concept="2B6iha" id="2mvFNoTuqz9" role="lGT1i">
-                      <property role="1lyBwo" value="59pBc0SIIVt/mostRelevant" />
-                    </node>
-                    <node concept="3cmrfG" id="2mvFNoTuqza" role="3dN3m$">
-                      <property role="3cmrfH" value="-1" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="1FNNb$" id="2mvFNoTuqzc" role="1FNMel">
           <ref role="1FNNbB" to="i3ya:3j3yk3gAgiT" resolve="FractionalExponent" />
+        </node>
+        <node concept="3cqGtN" id="7i1yFLkpB8w" role="2jZA2a">
+          <node concept="3cqJkl" id="7i1yFLkpB8x" role="3cqGtW">
+            <node concept="3clFbS" id="7i1yFLkpB8y" role="2VODD2">
+              <node concept="3clFbF" id="7i1yFLkpBba" role="3cqZAp">
+                <node concept="Xl_RD" id="7i1yFLkpBb9" role="3clFbG">
+                  <property role="Xl_RC" value="change to a fractional exponent" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -2349,10 +2340,8 @@
             </node>
           </node>
         </node>
-        <node concept="1kIj98" id="73cP8DpWMxn" role="jn6J3">
-          <node concept="3F1sOY" id="73cP8DpWM_x" role="1kIj9b">
-            <ref role="1NtTu8" to="i3ya:73cP8DpWLWP" resolve="exp" />
-          </node>
+        <node concept="3F1sOY" id="7i1yFLkohF$" role="jn6J3">
+          <ref role="1NtTu8" to="i3ya:73cP8DpWLWP" resolve="exp" />
         </node>
       </node>
     </node>
@@ -2699,6 +2688,10 @@
         <ref role="2ZyFGn" to="i3ya:7athFveyQYz" resolve="QuantityReference" />
       </node>
     </node>
+  </node>
+  <node concept="22mcaB" id="7i1yFLkmzTD">
+    <ref role="aqKnT" to="i3ya:3j3yk3gAgiT" resolve="FractionalExponent" />
+    <node concept="22hDWj" id="7i1yFLkmzXk" role="22hAXT" />
   </node>
 </model>
 
