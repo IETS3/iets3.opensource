@@ -12,6 +12,10 @@
       <concept id="1741902046311368052" name="org.iets3.core.expr.typetags.physunits.structure.ConversionSpecifier" flags="ng" index="27LzZq">
         <child id="1741902046311628549" name="expression" index="27K$mF" />
       </concept>
+      <concept id="8395143721870511934" name="org.iets3.core.expr.typetags.physunits.structure.UnitExponent" flags="ng" index="wWcm2">
+        <child id="8395143721870514821" name="exp" index="wWd0T" />
+        <child id="8395143721870514822" name="base" index="wWd0U" />
+      </concept>
       <concept id="8337440621611267903" name="org.iets3.core.expr.typetags.physunits.structure.Unit" flags="ng" index="CIrOH">
         <property id="8258835046924736629" name="metricScaled" index="2WSTV2" />
         <property id="8779275567064090590" name="derived" index="1xMkt3" />
@@ -52,10 +56,6 @@
       <concept id="8258835046927700725" name="org.iets3.core.expr.typetags.physunits.structure.UnitDiv" flags="ng" index="2Wclh2">
         <child id="8258835046927701532" name="top" index="2Wcl2F" />
         <child id="8258835046927702473" name="bot" index="2WclXY" />
-      </concept>
-      <concept id="8258835046927167010" name="org.iets3.core.expr.typetags.physunits.structure.QuantityMul" flags="ng" index="2WfEyl">
-        <child id="2009270740286479703" name="left" index="2BJG10" />
-        <child id="2009270740286480511" name="right" index="2BJJPC" />
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
@@ -191,6 +191,21 @@
         </node>
       </node>
     </node>
+    <node concept="CIrOH" id="7i1yFLkuHrv" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="derived" />
+      <ref role="Rn5ok" node="1SjIQXOJS58" resolve="area" />
+      <node concept="CIsGf" id="7i1yFLkuHvT" role="1xMkE_">
+        <node concept="wWcm2" id="7i1yFLkvE9$" role="CIi4h">
+          <node concept="CIsvn" id="7i1yFLkuHvS" role="wWd0U">
+            <ref role="CIi3I" node="7athFve_004" resolve="m" />
+          </node>
+          <node concept="CIsvk" id="7i1yFLkvEqp" role="wWd0T">
+            <property role="CIsvl" value="2" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="7Bmg9Oopwet" role="_iOnB" />
     <node concept="2zPypq" id="7Bmg9Oopwfe" role="_iOnB">
       <property role="TrG5h" value="test" />
@@ -232,11 +247,11 @@
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="area" />
       <node concept="2W5y9F" id="1SjIQXOJSdu" role="2W5xxx">
-        <node concept="2WfEyl" id="1SjIQXOJSff" role="2W5ySM">
-          <node concept="2W5y$k" id="1SjIQXOJSgH" role="2BJG10">
-            <ref role="2W5z2V" node="7athFvezQgW" resolve="distance" />
+        <node concept="2W2HD0" id="7i1yFLkw60J" role="2W5ySM">
+          <node concept="CIsvk" id="7i1yFLkw60K" role="DfWIZ">
+            <property role="CIsvl" value="2" />
           </node>
-          <node concept="2W5y$k" id="1SjIQXOJSiU" role="2BJJPC">
+          <node concept="2W5y$k" id="1SjIQXOJSgH" role="2BJGmK">
             <ref role="2W5z2V" node="7athFvezQgW" resolve="distance" />
           </node>
         </node>
@@ -245,7 +260,7 @@
     <node concept="_ixoA" id="1SjIQXOJN17" role="_iOnB" />
     <node concept="CIrOH" id="1SjIQXOK0go" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="test" />
+      <property role="TrG5h" value="testDerived" />
       <ref role="Rn5ok" node="1SjIQXOJS58" resolve="distance2" />
       <node concept="CIsGf" id="1SjIQXOK0m1" role="1xMkE_">
         <node concept="2Wclh2" id="1SjIQXOK0zV" role="CIi4h">

@@ -668,5 +668,49 @@
       <ref role="PrY4T" node="45a4DYZYSsN" resolve="IGroupNeutral" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7i1yFLksg8d">
+    <property role="EcuMT" value="8395143721870492173" />
+    <property role="3GE5qa" value="definition.unit" />
+    <property role="TrG5h" value="UnitMul" />
+    <property role="34LRSv" value="*" />
+    <property role="R4oN_" value="a unit expression defined as a multiplication" />
+    <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpr" />
+    <node concept="1TJgyj" id="7i1yFLksgFY" role="1TKVEi">
+      <property role="IQ2ns" value="8395143721870494462" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7athFveEYHG" resolve="UnitExpr" />
+    </node>
+    <node concept="1TJgyj" id="7i1yFLksgSc" role="1TKVEi">
+      <property role="IQ2ns" value="8395143721870495244" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7athFveEYHG" resolve="UnitExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7i1yFLkskWY">
+    <property role="EcuMT" value="8395143721870511934" />
+    <property role="3GE5qa" value="definition.unit" />
+    <property role="TrG5h" value="UnitExponent" />
+    <property role="34LRSv" value="^" />
+    <property role="R4oN_" value="a unit expression defined as an exponent" />
+    <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpr" />
+    <node concept="1TJgyj" id="7i1yFLkslE5" role="1TKVEi">
+      <property role="IQ2ns" value="8395143721870514821" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3j3yk3guAAl" resolve="Exponent" />
+    </node>
+    <node concept="1TJgyj" id="7i1yFLkslE6" role="1TKVEi">
+      <property role="IQ2ns" value="8395143721870514822" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="base" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7eOyx9r3kR5" resolve="UnitReference" />
+    </node>
+  </node>
 </model>
 
