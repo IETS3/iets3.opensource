@@ -30,7 +30,7 @@
         <reference id="8337440621611297532" name="unit" index="CIi3I" />
       </concept>
       <concept id="8337440621611270429" name="org.iets3.core.expr.typetags.physunits.structure.UnitSpecification" flags="ng" index="CIsGf">
-        <child id="8337440621611297539" name="components" index="CIi4h" />
+        <child id="8337440621611297539" name="expr" index="CIi4h" />
       </concept>
       <concept id="2034036099103723287" name="org.iets3.core.expr.typetags.physunits.structure.Quantity" flags="ng" index="Rn5op">
         <property id="8779275567063086785" name="derived" index="1xQvps" />

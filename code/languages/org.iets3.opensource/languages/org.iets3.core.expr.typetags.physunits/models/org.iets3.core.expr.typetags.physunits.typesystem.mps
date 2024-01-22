@@ -296,6 +296,9 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
+        <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
+      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -344,6 +347,7 @@
         <child id="1236165725858" name="rule" index="3he0YX" />
       </concept>
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
         <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
@@ -7777,6 +7781,55 @@
     <node concept="1YaCAy" id="7i1yFLkwhY4" role="1YuTPh">
       <property role="TrG5h" value="qExp" />
       <ref role="1YaFvo" to="i3ya:7athFve_TNR" resolve="QuantityExponent" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7i1yFLkJ$8Q">
+    <property role="TrG5h" value="check_UnitReference" />
+    <property role="3GE5qa" value="definition.expressions" />
+    <node concept="3clFbS" id="7i1yFLkJ$8R" role="18ibNy">
+      <node concept="3clFbJ" id="7i1yFLkJ$bp" role="3cqZAp">
+        <node concept="3fqX7Q" id="7i1yFLkJGoi" role="3clFbw">
+          <node concept="2YIFZM" id="7i1yFLkJGok" role="3fr31v">
+            <ref role="37wK5l" to="rppw:7i1yFLkJAqI" resolve="isValidPrefix" />
+            <ref role="1Pybhc" to="rppw:7Bmg9Oo9PPj" resolve="MetricPrefixes" />
+            <node concept="2OqwBi" id="7i1yFLkJGol" role="37wK5m">
+              <node concept="1YBJjd" id="7i1yFLkJGom" role="2Oq$k0">
+                <ref role="1YBMHb" node="7i1yFLkJ$8T" resolve="unitReference" />
+              </node>
+              <node concept="3TrcHB" id="7i1yFLkJGon" role="2OqNvi">
+                <ref role="3TsBF5" to="i3ya:7Bmg9OopAyq" resolve="metricPrefix" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="7i1yFLkJ$br" role="3clFbx">
+          <node concept="2MkqsV" id="7i1yFLkJGsg" role="3cqZAp">
+            <node concept="1YBJjd" id="7i1yFLkJHbD" role="1urrMF">
+              <ref role="1YBMHb" node="7i1yFLkJ$8T" resolve="unitReference" />
+            </node>
+            <node concept="3cpWs3" id="7i1yFLkJGPf" role="2MkJ7o">
+              <node concept="Xl_RD" id="7i1yFLkJGQz" role="3uHU7w">
+                <property role="Xl_RC" value=" is not a valid metric prefix" />
+              </node>
+              <node concept="2OqwBi" id="7i1yFLkJGwU" role="3uHU7B">
+                <node concept="1YBJjd" id="7i1yFLkJGwV" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7i1yFLkJ$8T" resolve="unitReference" />
+                </node>
+                <node concept="3TrcHB" id="7i1yFLkJGwW" role="2OqNvi">
+                  <ref role="3TsBF5" to="i3ya:7Bmg9OopAyq" resolve="metricPrefix" />
+                </node>
+              </node>
+            </node>
+            <node concept="2ODE4t" id="7i1yFLkJHeP" role="1urrC5">
+              <ref role="2ODJFN" to="i3ya:7Bmg9OopAyq" resolve="metricPrefix" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7i1yFLkJ$8T" role="1YuTPh">
+      <property role="TrG5h" value="unitReference" />
+      <ref role="1YaFvo" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
     </node>
   </node>
 </model>
