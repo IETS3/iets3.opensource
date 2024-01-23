@@ -588,7 +588,7 @@
                 <ref role="3cqZAo" node="brG9xoyFVp" resolve="fraction" />
               </node>
               <node concept="2OwXpG" id="6Lx6lqAVrw" role="2OqNvi">
-                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
               </node>
             </node>
           </node>
@@ -609,7 +609,7 @@
         <node concept="10Oyi0" id="brG9xoyyIC" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="brG9xoyyIM" role="3clF46">
-        <property role="TrG5h" value="denumerator" />
+        <property role="TrG5h" value="denominator" />
         <node concept="10Oyi0" id="brG9xoyyJ0" role="1tU5fm" />
       </node>
       <node concept="3Tm1VV" id="brG9xoyyF$" role="1B3o_S" />
@@ -623,7 +623,7 @@
               <property role="3cmrfH" value="0" />
             </node>
             <node concept="37vLTw" id="brG9xoyz55" role="3uHU7B">
-              <ref role="3cqZAo" node="brG9xoyyIM" resolve="denumerator" />
+              <ref role="3cqZAo" node="brG9xoyyIM" resolve="denominator" />
             </node>
           </node>
         </node>
@@ -650,7 +650,7 @@
               <property role="3cmrfH" value="1" />
             </node>
             <node concept="37vLTw" id="brG9xoyyJB" role="3uHU7B">
-              <ref role="3cqZAo" node="brG9xoyyIM" resolve="denumerator" />
+              <ref role="3cqZAo" node="brG9xoyyIM" resolve="denominator" />
             </node>
           </node>
           <node concept="9aQIb" id="brG9xoyztB" role="9aQIa">
@@ -704,7 +704,7 @@
                                   <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                                   <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                                   <node concept="37vLTw" id="brG9xoy_WQ" role="37wK5m">
-                                    <ref role="3cqZAo" node="brG9xoyyIM" resolve="denumerator" />
+                                    <ref role="3cqZAo" node="brG9xoyyIM" resolve="denominator" />
                                   </node>
                                 </node>
                               </node>
@@ -730,7 +730,7 @@
       <node concept="3clFbS" id="3j3yk3guAC6" role="3clF47" />
     </node>
     <node concept="13i0hz" id="3j3yk3guABz" role="13h7CS">
-      <property role="TrG5h" value="getDenumerator" />
+      <property role="TrG5h" value="getDenominator" />
       <property role="13i0it" value="true" />
       <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="3j3yk3guAB$" role="1B3o_S" />
@@ -755,7 +755,7 @@
             <node concept="2OqwBi" id="5dSoB2M26wC" role="3uHU7w">
               <node concept="13iPFW" id="5dSoB2M26pI" role="2Oq$k0" />
               <node concept="2qgKlT" id="5dSoB2M26KL" role="2OqNvi">
-                <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenumerator" />
+                <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenominator" />
               </node>
             </node>
             <node concept="2OqwBi" id="5dSoB2M25JD" role="3uHU7B">
@@ -812,7 +812,7 @@
             <property role="TrG5h" value="den" />
             <node concept="10Oyi0" id="3j3yk3gB5KT" role="1tU5fm" />
             <node concept="BsUDl" id="3j3yk3gB5T5" role="33vP2m">
-              <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenumerator" />
+              <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenominator" />
             </node>
           </node>
         </node>
@@ -952,10 +952,10 @@
       <node concept="10Oyi0" id="3j3yk3gAgkq" role="3clF45" />
     </node>
     <node concept="13i0hz" id="3j3yk3gAgk7" role="13h7CS">
-      <property role="TrG5h" value="getDenumerator" />
+      <property role="TrG5h" value="getDenominator" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="3j3yk3guABz" resolve="getDenumerator" />
+      <ref role="13i0hy" node="3j3yk3guABz" resolve="getDenominator" />
       <node concept="3Tm1VV" id="3j3yk3gAgk8" role="1B3o_S" />
       <node concept="3clFbS" id="3j3yk3gAgkb" role="3clF47">
         <node concept="3cpWs8" id="6Lx6lqB9RD" role="3cqZAp">
@@ -1226,10 +1226,10 @@
       <node concept="3Tm1VV" id="lqDNwvmdNU" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="3j3yk3guJ7z" role="13h7CS">
-      <property role="TrG5h" value="getDenumerator" />
+      <property role="TrG5h" value="getDenominator" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="3j3yk3guABz" resolve="getDenumerator" />
+      <ref role="13i0hy" node="3j3yk3guABz" resolve="getDenominator" />
       <node concept="3Tm1VV" id="3j3yk3guJ7$" role="1B3o_S" />
       <node concept="3clFbS" id="3j3yk3guJ7B" role="3clF47">
         <node concept="3cpWs6" id="3j3yk3guJ9_" role="3cqZAp">
@@ -4067,7 +4067,7 @@
     <node concept="312cEg" id="5dSoB2LN6B2" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="denumerator" />
+      <property role="TrG5h" value="denominator" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="5dSoB2LN5wS" role="1B3o_S" />
       <node concept="10Oyi0" id="5dSoB2LN5x9" role="1tU5fm" />
@@ -4149,12 +4149,12 @@
         <node concept="3clFbF" id="5dSoB2LN7yF" role="3cqZAp">
           <node concept="37vLTI" id="5dSoB2LN8bV" role="3clFbG">
             <node concept="37vLTw" id="5dSoB2LN8gO" role="37vLTx">
-              <ref role="3cqZAo" node="5dSoB2LN6DA" resolve="denumerator" />
+              <ref role="3cqZAo" node="5dSoB2LN6DA" resolve="denominator" />
             </node>
             <node concept="2OqwBi" id="5dSoB2LN7_q" role="37vLTJ">
               <node concept="Xjq3P" id="5dSoB2LN7yD" role="2Oq$k0" />
               <node concept="2OwXpG" id="5dSoB2LN7HH" role="2OqNvi">
-                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
               </node>
             </node>
           </node>
@@ -4166,7 +4166,7 @@
         <node concept="10Oyi0" id="5dSoB2LN6Dr" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="5dSoB2LN6DA" role="3clF46">
-        <property role="TrG5h" value="denumerator" />
+        <property role="TrG5h" value="denominator" />
         <node concept="10Oyi0" id="5dSoB2LN6DS" role="1tU5fm" />
       </node>
     </node>
@@ -4184,7 +4184,7 @@
               <node concept="2OqwBi" id="5dSoB2LNQIx" role="37wK5m">
                 <node concept="Xjq3P" id="5dSoB2LNQ$a" role="2Oq$k0" />
                 <node concept="2OwXpG" id="5dSoB2LNRc$" role="2OqNvi">
-                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                 </node>
               </node>
               <node concept="2OqwBi" id="5dSoB2LNSn2" role="37wK5m">
@@ -4215,7 +4215,7 @@
                 <node concept="2OqwBi" id="73cP8DpYHk1" role="2$L3a6">
                   <node concept="Xjq3P" id="73cP8DpYGcg" role="2Oq$k0" />
                   <node concept="2OwXpG" id="73cP8DpYIjY" role="2OqNvi">
-                    <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                    <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                   </node>
                 </node>
               </node>
@@ -4276,7 +4276,7 @@
                   <node concept="2OqwBi" id="5dSoB2LV3oB" role="3uHU7B">
                     <node concept="Xjq3P" id="5dSoB2LV2EI" role="2Oq$k0" />
                     <node concept="2OwXpG" id="5dSoB2LV4XY" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                 </node>
@@ -4299,7 +4299,7 @@
                   <node concept="2OqwBi" id="5dSoB2LUNb7" role="3uHU7B">
                     <node concept="Xjq3P" id="5dSoB2LUNb8" role="2Oq$k0" />
                     <node concept="2OwXpG" id="5dSoB2LUNb9" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                   <node concept="3cmrfG" id="5dSoB2LUNb6" role="3uHU7w">
@@ -4363,7 +4363,7 @@
                       <ref role="3cqZAo" node="5dSoB2LVZsU" resolve="that" />
                     </node>
                     <node concept="2OwXpG" id="5dSoB2LYKQq" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="5dSoB2LYDjf" role="3uHU7B">
@@ -4387,7 +4387,7 @@
                   <node concept="2OqwBi" id="5dSoB2LZ1aj" role="3uHU7B">
                     <node concept="Xjq3P" id="5dSoB2LZ06z" role="2Oq$k0" />
                     <node concept="2OwXpG" id="5dSoB2LZ3pX" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                 </node>
@@ -4438,7 +4438,7 @@
               <node concept="2OqwBi" id="5dSoB2Mdj33" role="3uHU7w">
                 <node concept="Xjq3P" id="5dSoB2Mdi0l" role="2Oq$k0" />
                 <node concept="2OwXpG" id="5dSoB2MdllG" role="2OqNvi">
-                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                 </node>
               </node>
             </node>
@@ -4538,13 +4538,13 @@
                         <ref role="3cqZAo" node="5dSoB2LRUpu" resolve="that" />
                       </node>
                       <node concept="2OwXpG" id="5dSoB2LScpN" role="2OqNvi">
-                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="5dSoB2LS5Cs" role="3uHU7B">
                       <node concept="Xjq3P" id="5dSoB2LS51d" role="2Oq$k0" />
                       <node concept="2OwXpG" id="5dSoB2LS7dp" role="2OqNvi">
-                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                       </node>
                     </node>
                   </node>
@@ -4615,7 +4615,7 @@
           <node concept="37vLTI" id="5dSoB2LRKNp" role="3clFbG">
             <node concept="3cpWs3" id="5dSoB2LRLPX" role="37vLTx">
               <node concept="37vLTw" id="5dSoB2LRLTV" role="3uHU7w">
-                <ref role="3cqZAo" node="5dSoB2LN6B2" resolve="denumerator" />
+                <ref role="3cqZAo" node="5dSoB2LN6B2" resolve="denominator" />
               </node>
               <node concept="17qRlL" id="5dSoB2LRLol" role="3uHU7B">
                 <node concept="37vLTw" id="5dSoB2LRKYf" role="3uHU7B">
@@ -4663,7 +4663,7 @@
               <node concept="2OqwBi" id="5dSoB2LOb4C" role="37wK5m">
                 <node concept="Xjq3P" id="5dSoB2LOaPX" role="2Oq$k0" />
                 <node concept="2OwXpG" id="5dSoB2LObFl" role="2OqNvi">
-                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                 </node>
               </node>
             </node>
@@ -4691,7 +4691,7 @@
                 <node concept="2OqwBi" id="5dSoB2LOdTE" role="3uHU7B">
                   <node concept="Xjq3P" id="5dSoB2LOdDy" role="2Oq$k0" />
                   <node concept="2OwXpG" id="5dSoB2LOez7" role="2OqNvi">
-                    <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                    <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                   </node>
                 </node>
               </node>
@@ -4768,13 +4768,13 @@
                       <ref role="3cqZAo" node="5dSoB2LN9rv" resolve="that" />
                     </node>
                     <node concept="2OwXpG" id="5dSoB2LOh_i" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="5dSoB2LOh_j" role="3uHU7B">
                     <node concept="Xjq3P" id="5dSoB2LOh_k" role="2Oq$k0" />
                     <node concept="2OwXpG" id="5dSoB2LOh_l" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                 </node>
@@ -4857,7 +4857,7 @@
                         <ref role="3cqZAo" node="5dSoB2LNdUI" resolve="that" />
                       </node>
                       <node concept="2OwXpG" id="5dSoB2MehI8" role="2OqNvi">
-                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                       </node>
                     </node>
                   </node>
@@ -4873,7 +4873,7 @@
                     <node concept="2OqwBi" id="5dSoB2MehHZ" role="3uHU7B">
                       <node concept="Xjq3P" id="5dSoB2MehI0" role="2Oq$k0" />
                       <node concept="2OwXpG" id="5dSoB2MehI1" role="2OqNvi">
-                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                       </node>
                     </node>
                   </node>
@@ -4884,13 +4884,13 @@
                       <ref role="3cqZAo" node="5dSoB2LNdUI" resolve="that" />
                     </node>
                     <node concept="2OwXpG" id="5dSoB2LO_jX" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="5dSoB2LOx_L" role="3uHU7B">
                     <node concept="Xjq3P" id="5dSoB2LOxh8" role="2Oq$k0" />
                     <node concept="2OwXpG" id="5dSoB2LOyyX" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                 </node>
@@ -4938,7 +4938,7 @@
                         <ref role="3cqZAo" node="5dSoB2LNelG" resolve="that" />
                       </node>
                       <node concept="2OwXpG" id="5dSoB2MejY6" role="2OqNvi">
-                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                       </node>
                     </node>
                   </node>
@@ -4954,7 +4954,7 @@
                     <node concept="2OqwBi" id="5dSoB2MejYb" role="3uHU7B">
                       <node concept="Xjq3P" id="5dSoB2MejYc" role="2Oq$k0" />
                       <node concept="2OwXpG" id="5dSoB2MejYd" role="2OqNvi">
-                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                        <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                       </node>
                     </node>
                   </node>
@@ -4965,13 +4965,13 @@
                       <ref role="3cqZAo" node="5dSoB2LNelG" resolve="that" />
                     </node>
                     <node concept="2OwXpG" id="5dSoB2LOBO7" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="5dSoB2LOBO8" role="3uHU7B">
                     <node concept="Xjq3P" id="5dSoB2LOBO9" role="2Oq$k0" />
                     <node concept="2OwXpG" id="5dSoB2LOBOa" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                 </node>
@@ -5020,7 +5020,7 @@
                   <node concept="2OqwBi" id="3htFKtcipK6" role="3uHU7B">
                     <node concept="Xjq3P" id="3htFKtcioGQ" role="2Oq$k0" />
                     <node concept="2OwXpG" id="3htFKtcirfr" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                     </node>
                   </node>
                 </node>
@@ -5056,7 +5056,7 @@
                 <node concept="2OqwBi" id="6q$NxWf0jBC" role="37wK5m">
                   <node concept="Xjq3P" id="6q$NxWf0iQN" role="2Oq$k0" />
                   <node concept="2OwXpG" id="6q$NxWf0kXu" role="2OqNvi">
-                    <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                    <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                   </node>
                 </node>
               </node>
@@ -5290,7 +5290,7 @@
             <node concept="2OqwBi" id="5dSoB2LWVTx" role="3uHU7B">
               <node concept="Xjq3P" id="5dSoB2LWVLO" role="2Oq$k0" />
               <node concept="2OwXpG" id="5dSoB2LWWD2" role="2OqNvi">
-                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
               </node>
             </node>
           </node>
@@ -5317,7 +5317,7 @@
                 <ref role="3cqZAo" node="5dSoB2LVAnC" resolve="that" />
               </node>
               <node concept="2OwXpG" id="5dSoB2LX2I7" role="2OqNvi">
-                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
               </node>
             </node>
           </node>
@@ -5335,7 +5335,7 @@
                   <ref role="3cqZAo" node="5dSoB2LVAnC" resolve="that" />
                 </node>
                 <node concept="2OwXpG" id="5dSoB2LXczY" role="2OqNvi">
-                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                 </node>
               </node>
               <node concept="2OqwBi" id="5dSoB2LXa51" role="3uHU7B">
@@ -5365,7 +5365,7 @@
               <node concept="2OqwBi" id="5dSoB2LXgsw" role="3uHU7B">
                 <node concept="Xjq3P" id="5dSoB2LXgif" role="2Oq$k0" />
                 <node concept="2OwXpG" id="5dSoB2LXhc3" role="2OqNvi">
-                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                 </node>
               </node>
             </node>
@@ -7250,7 +7250,7 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="mfJ1vOCPI_" role="2OqNvi">
-                      <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenumerator" />
+                      <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenominator" />
                     </node>
                   </node>
                 </node>
@@ -7336,7 +7336,7 @@
                     <ref role="3cqZAo" node="26hWC1Hm0al" resolve="root" />
                   </node>
                   <node concept="2qgKlT" id="5dSoB2M2sEx" role="2OqNvi">
-                    <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenumerator" />
+                    <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenominator" />
                   </node>
                 </node>
               </node>
@@ -7430,7 +7430,7 @@
         </node>
         <node concept="TZ5HA" id="5dSoB2LRaeD" role="TZ5H$">
           <node concept="1dT_AC" id="5dSoB2LRaeE" role="1dT_Ay">
-            <property role="1dT_AB" value="have the exact same denumerator and the modulo check should be performed with their numerators. " />
+            <property role="1dT_AB" value="have the exact same denominator and the modulo check should be performed with their numerators. " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1Hv1T9" role="TZ5H$" />
@@ -8254,7 +8254,7 @@
                     <ref role="3cqZAo" node="4jkbLB62Ym9" resolve="exp" />
                   </node>
                   <node concept="2OwXpG" id="6Lx6lqADXo" role="2OqNvi">
-                    <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                    <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                   </node>
                 </node>
               </node>
@@ -8316,7 +8316,7 @@
                                             <ref role="3cqZAo" node="4jkbLB62Ym9" resolve="exp" />
                                           </node>
                                           <node concept="2OwXpG" id="2oUyrt_3bQS" role="2OqNvi">
-                                            <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                                            <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                                           </node>
                                         </node>
                                         <node concept="Xl_RD" id="2oUyrt_38lq" role="3uHU7B" />
@@ -11454,7 +11454,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="73cP8DpXeLP" role="2OqNvi">
-                  <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenumerator" />
+                  <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenominator" />
                 </node>
               </node>
             </node>
@@ -11480,7 +11480,7 @@
                 <ref role="3cqZAo" node="7DmLSRHd1z_" resolve="exp" />
               </node>
               <node concept="2OwXpG" id="73cP8DpXfB9" role="2OqNvi">
-                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
               </node>
             </node>
           </node>
@@ -11532,7 +11532,7 @@
                                       <ref role="3cqZAo" node="7DmLSRHd1z_" resolve="exp" />
                                     </node>
                                     <node concept="2OwXpG" id="73cP8DpXtzr" role="2OqNvi">
-                                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                                     </node>
                                   </node>
                                 </node>
@@ -12374,7 +12374,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="73cP8DpWSHE" role="2OqNvi">
-                  <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenumerator" />
+                  <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenominator" />
                 </node>
               </node>
             </node>
@@ -12400,7 +12400,7 @@
                 <ref role="3cqZAo" node="73cP8DpWiAk" resolve="exp" />
               </node>
               <node concept="2OwXpG" id="73cP8DpX_o5" role="2OqNvi">
-                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
               </node>
             </node>
           </node>
@@ -12452,7 +12452,7 @@
                                       <ref role="3cqZAo" node="73cP8DpWiAk" resolve="exp" />
                                     </node>
                                     <node concept="2OwXpG" id="73cP8DpX_oo" role="2OqNvi">
-                                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denumerator" />
+                                      <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                                     </node>
                                   </node>
                                 </node>
