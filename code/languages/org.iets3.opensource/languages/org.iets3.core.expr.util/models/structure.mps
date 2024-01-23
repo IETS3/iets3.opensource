@@ -596,6 +596,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="8XWEtdYbNZ" resolve="DataRow" />
     </node>
+    <node concept="1TJgyj" id="1pkymqKXZmh" role="1TKVEi">
+      <property role="IQ2ns" value="1609062041026819473" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="resultTupleDeclaration" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="yv47:4ZbdskR3pBE" resolve="NamedTupleDeclaration" />
+    </node>
     <node concept="PrWs8" id="2U$lnbPqLp1" role="PrDN$">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>

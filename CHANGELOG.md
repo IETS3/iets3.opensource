@@ -16,16 +16,18 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - The `index` expression in collections operations now works correctly in nested expressions in the interpreter and generator.
-- Generation of nested short lambda expression now use the correct type for "it" as a variable.
+- Generation of nested short lambda expression now uses the correct type for "it" as a variable.
 - Collections: The index expression now works with collection types in the generator.
 
 ### Added
 
 - The `all` and `any` operation of collections now also support the `index` expression. The concepts `AllWithIndexOp` and `AnyWithIndexOp` are therefore deprecated.
+- Named tuples were added. They can be declared at the top level with the keywords `named tuple`. Fields can be accessed witht the `.` expression.
 
 ### Changed
 
 - The class `IETS3ExprEvalHelper` was deprecated and a new class `IETS3ExprEvaluator` was introduced that can also influence the creation of the computation trace.
+- Multi-decision tables now return an internal stored named tuple instead of a tuple. The new return type is compatible with the old type.
 
 ## November 2023
 
