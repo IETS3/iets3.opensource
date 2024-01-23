@@ -515,6 +515,7 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1240217271293" name="jetbrains.mps.baseLanguage.collections.structure.LinkedHashSetCreator" flags="nn" index="32HrFt" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
@@ -6331,8 +6332,8 @@
           <node concept="3cpWsn" id="45a4DYZu5BX" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="2ShNRf" id="45a4DYZu5Mu" role="33vP2m">
-              <node concept="2i4dXS" id="45a4DYZGODh" role="2ShVmc">
-                <node concept="3Tqbb2" id="45a4DYZGSiP" role="HW$YZ">
+              <node concept="32HrFt" id="3xM68GMmnpM" role="2ShVmc">
+                <node concept="3Tqbb2" id="3xM68GMmsuj" role="HW$YZ">
                   <ref role="ehGHo" to="i3ya:45a4DYZTqri" resolve="IGroupPower" />
                 </node>
               </node>
