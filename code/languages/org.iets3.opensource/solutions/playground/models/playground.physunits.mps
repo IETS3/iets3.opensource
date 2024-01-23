@@ -63,6 +63,7 @@
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
+      <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
@@ -208,7 +209,7 @@
     </node>
     <node concept="_ixoA" id="7Bmg9Oopwet" role="_iOnB" />
     <node concept="2zPypq" id="7Bmg9Oopwfe" role="_iOnB">
-      <property role="TrG5h" value="test" />
+      <property role="TrG5h" value="test3" />
       <node concept="2c7tTJ" id="1SjIQXOJqfc" role="2zM23F">
         <node concept="CIsGf" id="1SjIQXOJqge" role="2c7tTI">
           <node concept="CIsvn" id="1SjIQXOJqgc" role="CIi4h">
@@ -239,6 +240,32 @@
           </node>
           <node concept="30bXRB" id="1SjIQXOJNfU" role="1YnStB">
             <property role="30bXRw" value="12" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="3xM68GMBddo" role="_iOnB" />
+    <node concept="2zPypq" id="3xM68GMBlE0" role="_iOnB">
+      <property role="TrG5h" value="testUnit" />
+      <node concept="30dDTi" id="3xM68GMCcJY" role="2zPyp_">
+        <node concept="1YnStw" id="3xM68GMCdoq" role="30dEs_">
+          <node concept="CIsGf" id="3xM68GMCdod" role="2c7tTI">
+            <node concept="CIsvn" id="3xM68GMCdoe" role="CIi4h">
+              <ref role="CIi3I" node="7athFve_004" resolve="m" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="3xM68GMCd1F" role="1YnStB">
+            <property role="30bXRw" value="10" />
+          </node>
+        </node>
+        <node concept="1YnStw" id="3xM68GMBlWH" role="30dEsF">
+          <node concept="CIsGf" id="3xM68GMBlWw" role="2c7tTI">
+            <node concept="CIsvn" id="3xM68GMBlWx" role="CIi4h">
+              <ref role="CIi3I" node="7athFveDsfr" resolve="s" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="3xM68GMBlVq" role="1YnStB">
+            <property role="30bXRw" value="5" />
           </node>
         </node>
       </node>
