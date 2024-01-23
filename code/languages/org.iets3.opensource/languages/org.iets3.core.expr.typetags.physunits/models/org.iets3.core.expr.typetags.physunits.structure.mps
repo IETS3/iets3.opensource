@@ -542,7 +542,7 @@
     <property role="3GE5qa" value="definition.quantity.typesystem" />
     <property role="TrG5h" value="QuantityMulType" />
     <property role="R4oN_" value="a multiplication type of a quantity" />
-    <property role="34LRSv" value="^^" />
+    <property role="34LRSv" value="*" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
     <node concept="PrWs8" id="45a4DYZTHMA" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqcG" resolve="IGroupMultiply" />
