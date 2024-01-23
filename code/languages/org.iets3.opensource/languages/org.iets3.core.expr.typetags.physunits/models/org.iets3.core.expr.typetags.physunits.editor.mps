@@ -1941,20 +1941,6 @@
           </node>
         </node>
       </node>
-      <node concept="2ElW$n" id="73cP8DpN4bT" role="2El2Yn">
-        <node concept="3EZMnI" id="73cP8DpN4jZ" role="2ElW$Z">
-          <node concept="2iRfu4" id="73cP8DpN4k0" role="2iSdaV" />
-          <node concept="3F1sOY" id="73cP8DpN4gf" role="3EZMnx">
-            <ref role="1NtTu8" to="i3ya:1JynhuWn98w" resolve="top" />
-          </node>
-          <node concept="3F0ifn" id="73cP8DpN4mC" role="3EZMnx">
-            <property role="3F0ifm" value="/" />
-          </node>
-          <node concept="3F1sOY" id="73cP8DpN4ss" role="3EZMnx">
-            <ref role="1NtTu8" to="i3ya:1JynhuWn9hu" resolve="bot" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7athFveAoTd">
