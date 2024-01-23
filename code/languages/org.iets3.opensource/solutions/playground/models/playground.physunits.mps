@@ -9,9 +9,6 @@
   <imports />
   <registry>
     <language id="7ee265bd-5986-4709-86ed-2c6daa33cd8c" name="org.iets3.core.expr.typetags.physunits">
-      <concept id="1741902046311368052" name="org.iets3.core.expr.typetags.physunits.structure.ConversionSpecifier" flags="ng" index="27LzZq">
-        <child id="1741902046311628549" name="expression" index="27K$mF" />
-      </concept>
       <concept id="8395143721870511934" name="org.iets3.core.expr.typetags.physunits.structure.UnitExponent" flags="ng" index="wWcm2">
         <child id="8395143721870514821" name="exp" index="wWd0T" />
         <child id="8395143721870514822" name="base" index="wWd0U" />
@@ -26,7 +23,6 @@
         <property id="8337440621611273671" name="value" index="CIsvl" />
       </concept>
       <concept id="8337440621611273669" name="org.iets3.core.expr.typetags.physunits.structure.UnitReference" flags="ng" index="CIsvn">
-        <property id="8779275567068768410" name="metricPrefix" index="1xG2w7" />
         <reference id="8337440621611297532" name="unit" index="CIi3I" />
       </concept>
       <concept id="8337440621611270429" name="org.iets3.core.expr.typetags.physunits.structure.UnitSpecification" flags="ng" index="CIsGf">
@@ -35,9 +31,6 @@
       <concept id="2034036099103723287" name="org.iets3.core.expr.typetags.physunits.structure.Quantity" flags="ng" index="Rn5op">
         <property id="8779275567063086785" name="derived" index="1xQvps" />
         <child id="8258835046925557462" name="specification" index="2W5xxx" />
-      </concept>
-      <concept id="1069230850837260491" name="org.iets3.core.expr.typetags.physunits.structure.ConversionRule" flags="ng" index="TRoc0">
-        <child id="1741902046312299423" name="specifiers" index="27P04L" />
       </concept>
       <concept id="8258835046926359799" name="org.iets3.core.expr.typetags.physunits.structure.QuantityExponent" flags="ng" index="2W2HD0">
         <child id="2009270740286478503" name="base" index="2BJGmK" />
@@ -59,19 +52,13 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="7425695345928347719" name="org.iets3.core.expr.base.structure.Expression" flags="ng" index="2vmvVl" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
-        <child id="7089558164905593725" name="type" index="2zM23F" />
-      </concept>
       <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
-      <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
-      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
@@ -86,9 +73,6 @@
       </concept>
     </language>
     <language id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags">
-      <concept id="1759375669591494838" name="org.iets3.core.expr.typetags.structure.TaggedType" flags="ng" index="2c7tTJ">
-        <child id="1759375669591494841" name="baseType" index="2c7tTw" />
-      </concept>
       <concept id="8196347919645043518" name="org.iets3.core.expr.typetags.structure.IWithTags" flags="ng" index="3ciMKZ">
         <child id="1759375669591494839" name="tags" index="2c7tTI" />
       </concept>
@@ -207,43 +191,6 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="7Bmg9Oopwet" role="_iOnB" />
-    <node concept="2zPypq" id="7Bmg9Oopwfe" role="_iOnB">
-      <property role="TrG5h" value="test3" />
-      <node concept="2c7tTJ" id="1SjIQXOJqfc" role="2zM23F">
-        <node concept="CIsGf" id="1SjIQXOJqge" role="2c7tTI">
-          <node concept="CIsvn" id="1SjIQXOJqgc" role="CIi4h">
-            <property role="1xG2w7" value="" />
-            <ref role="CIi3I" node="7athFveDsfr" resolve="s" />
-          </node>
-        </node>
-        <node concept="mLuIC" id="1SjIQXOJqeC" role="2c7tTw" />
-      </node>
-      <node concept="30dDZf" id="7i1yFLkXYHo" role="2zPyp_">
-        <node concept="1YnStw" id="1SjIQXOJMUd" role="30dEsF">
-          <node concept="CIsGf" id="1SjIQXOJMU1" role="2c7tTI">
-            <node concept="CIsvn" id="1SjIQXOJMU2" role="CIi4h">
-              <property role="1xG2w7" value="" />
-              <ref role="CIi3I" node="7athFve_004" resolve="m" />
-            </node>
-          </node>
-          <node concept="30bXRB" id="1SjIQXOJMRa" role="1YnStB">
-            <property role="30bXRw" value="12" />
-          </node>
-        </node>
-        <node concept="1YnStw" id="1SjIQXOJNl1" role="30dEs_">
-          <node concept="CIsGf" id="1SjIQXOJNkV" role="2c7tTI">
-            <node concept="CIsvn" id="1SjIQXOJNkW" role="CIi4h">
-              <property role="1xG2w7" value="k" />
-              <ref role="CIi3I" node="7athFve_004" resolve="m" />
-            </node>
-          </node>
-          <node concept="30bXRB" id="1SjIQXOJNfU" role="1YnStB">
-            <property role="30bXRw" value="12" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="_ixoA" id="3xM68GMBddo" role="_iOnB" />
     <node concept="2zPypq" id="3xM68GMBlE0" role="_iOnB">
       <property role="TrG5h" value="testUnit" />
@@ -282,45 +229,6 @@
           <node concept="2W5y$k" id="1SjIQXOJSgH" role="2BJGmK">
             <ref role="2W5z2V" node="7athFvezQgW" resolve="distance" />
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="_ixoA" id="1SjIQXOJN17" role="_iOnB" />
-    <node concept="CIrOH" id="1SjIQXOK0go" role="_iOnB">
-      <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="testDerived" />
-      <ref role="Rn5ok" node="1SjIQXOJS58" resolve="distance2" />
-      <node concept="CIsGf" id="1SjIQXOK0m1" role="1xMkE_">
-        <node concept="2Wclh2" id="1SjIQXOK0zV" role="CIi4h">
-          <node concept="CIsvn" id="1SjIQXOK0LW" role="2Wcl2F">
-            <ref role="CIi3I" node="7athFveDsfr" resolve="s" />
-          </node>
-          <node concept="CIsvn" id="1SjIQXOK10j" role="2WclXY">
-            <ref role="CIi3I" node="7athFve_004" resolve="m" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="TRoc0" id="1SjIQXOKrNQ" role="_iOnB">
-      <node concept="27LzZq" id="1SjIQXOKrNS" role="27P04L">
-        <node concept="2vmvVl" id="1SjIQXOKrNU" role="27K$mF" />
-      </node>
-    </node>
-    <node concept="2zPypq" id="1SjIQXOJTNK" role="_iOnB">
-      <property role="TrG5h" value="test2" />
-      <node concept="1YnStw" id="1SjIQXOJTTt" role="2zPyp_">
-        <node concept="CIsGf" id="1SjIQXOJTSy" role="2c7tTI">
-          <node concept="2Wclh2" id="1SjIQXOJU_I" role="CIi4h">
-            <node concept="CIsvn" id="1SjIQXOJUDa" role="2Wcl2F">
-              <ref role="CIi3I" node="7athFve_004" resolve="m" />
-            </node>
-            <node concept="CIsvn" id="1SjIQXOJUHp" role="2WclXY">
-              <ref role="CIi3I" node="7athFveDsfr" resolve="s" />
-            </node>
-          </node>
-        </node>
-        <node concept="30bXRB" id="1SjIQXOJTQK" role="1YnStB">
-          <property role="30bXRw" value="12" />
         </node>
       </node>
     </node>
