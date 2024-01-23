@@ -1832,8 +1832,12 @@
   <node concept="24kQdi" id="7athFve$g6m">
     <property role="3GE5qa" value="definition.quantity" />
     <ref role="1XX52x" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
-    <node concept="3F1sOY" id="7athFveCzEb" role="2wV5jI">
-      <ref role="1NtTu8" to="i3ya:7athFveyQy5" resolve="spec" />
+    <node concept="3EZMnI" id="mfJ1vOPOcv" role="2wV5jI">
+      <node concept="2iRfu4" id="mfJ1vOPOcw" role="2iSdaV" />
+      <node concept="3F1sOY" id="7athFveCzEb" role="3EZMnx">
+        <ref role="1NtTu8" to="i3ya:7athFveyQy5" resolve="spec" />
+      </node>
+      <node concept="VPM3Z" id="mfJ1vOPOf1" role="3F10Kt" />
     </node>
   </node>
   <node concept="24kQdi" id="7athFve$gLZ">
