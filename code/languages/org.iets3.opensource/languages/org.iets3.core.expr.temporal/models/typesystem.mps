@@ -154,16 +154,12 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
-      <concept id="8276990574909231788" name="jetbrains.mps.baseLanguage.structure.FinallyClause" flags="ng" index="1wplmZ">
-        <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
-      </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
-        <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
@@ -1022,27 +1018,23 @@
                                           </node>
                                         </node>
                                       </node>
-                                    </node>
-                                  </node>
-                                  <node concept="3clFbS" id="4vJmyITi0OE" role="1zxBo7">
-                                    <node concept="3clFbF" id="1MJboh4O5Hy" role="3cqZAp">
-                                      <node concept="2OqwBi" id="1MJboh4O6xy" role="3clFbG">
-                                        <node concept="37vLTw" id="1MJboh4O5Hx" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="1MJboh4O57C" resolve="it" />
-                                        </node>
-                                        <node concept="2qgKlT" id="1MJboh4O9p7" role="2OqNvi">
-                                          <ref role="37wK5l" to="pbu6:7GwCuf2r4g6" resolve="isSameAs" />
-                                          <node concept="37vLTw" id="1MJboh4Oacz" role="37wK5m">
-                                            <ref role="3cqZAo" node="5oaaToWY2tT" resolve="date" />
-                                          </node>
-                                        </node>
+                                      <node concept="3cpWs6" id="JblrdgIUTz" role="3cqZAp">
+                                        <node concept="3clFbT" id="JblrdgIUTX" role="3cqZAk" />
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="1wplmZ" id="4vJmyITiBiS" role="1zxBo6">
-                                    <node concept="3clFbS" id="4vJmyITiBiT" role="1wplMD">
-                                      <node concept="3cpWs6" id="4vJmyITiMGT" role="3cqZAp">
-                                        <node concept="3clFbT" id="4vJmyITiMHc" role="3cqZAk" />
+                                  <node concept="3clFbS" id="4vJmyITi0OE" role="1zxBo7">
+                                    <node concept="3cpWs6" id="JblrdgIKOg" role="3cqZAp">
+                                      <node concept="2OqwBi" id="JblrdgIKOi" role="3cqZAk">
+                                        <node concept="37vLTw" id="JblrdgIKOj" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="1MJboh4O57C" resolve="it" />
+                                        </node>
+                                        <node concept="2qgKlT" id="JblrdgIKOk" role="2OqNvi">
+                                          <ref role="37wK5l" to="pbu6:7GwCuf2r4g6" resolve="isSameAs" />
+                                          <node concept="37vLTw" id="JblrdgIKOl" role="37wK5m">
+                                            <ref role="3cqZAo" node="5oaaToWY2tT" resolve="date" />
+                                          </node>
+                                        </node>
                                       </node>
                                     </node>
                                   </node>
