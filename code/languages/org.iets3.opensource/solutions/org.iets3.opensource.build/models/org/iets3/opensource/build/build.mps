@@ -1984,6 +1984,21 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
+        <node concept="1SiIV0" id="ZYMHUkpZ7m" role="3bR37C">
+          <node concept="3bR9La" id="ZYMHUkpZ7n" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:lse_ua97Px" resolve="com.mbeddr.mpsutil.smodule.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="ZYMHUkpZ7o" role="3bR37C">
+          <node concept="3bR9La" id="ZYMHUkpZ7p" role="1SiIV1">
+            <ref role="3bR37D" node="1VJeVhdX98g" resolve="org.iets3.core.expr.typetags.physunits" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="ZYMHUkpZ7q" role="3bR37C">
+          <node concept="3bR9La" id="ZYMHUkpZ7r" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1VJeVhdX98g" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2108,11 +2123,6 @@
         <node concept="1SiIV0" id="1VJeVhdX9T6" role="3bR37C">
           <node concept="3bR9La" id="1VJeVhdX9T7" role="1SiIV1">
             <ref role="3bR37D" to="al5i:lse_ua97Px" resolve="com.mbeddr.mpsutil.smodule.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1VJeVhdX9T8" role="3bR37C">
-          <node concept="3bR9La" id="1VJeVhdX9T9" role="1SiIV1">
-            <ref role="3bR37D" node="6n8rWbyXz_9" resolve="org.iets3.core.expr.typetags.units.si" />
           </node>
         </node>
         <node concept="1SiIV0" id="1VJeVhdX9Ta" role="3bR37C">
@@ -11219,6 +11229,18 @@
         </node>
         <node concept="3LEDTy" id="6wzrxL2ZwhD" role="3LEDUa">
           <ref role="3LEDTV" node="6wzrxL2Zv5t" resolve="org.iets3.core.expr.genjava.data" />
+        </node>
+        <node concept="3LEDTy" id="ZYMHUkpZqr" role="3LEDUa">
+          <ref role="3LEDTV" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+        </node>
+        <node concept="3LEDTy" id="ZYMHUkpZqs" role="3LEDUa">
+          <ref role="3LEDTV" node="ub9nkyRnyj" resolve="org.iets3.core.expr.tests" />
+        </node>
+        <node concept="3LEDTy" id="ZYMHUkpZqt" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+        </node>
+        <node concept="3LEDTy" id="ZYMHUkpZqu" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
         </node>
       </node>
       <node concept="3LEwk6" id="j5CxBKa9ks" role="2G$12L">

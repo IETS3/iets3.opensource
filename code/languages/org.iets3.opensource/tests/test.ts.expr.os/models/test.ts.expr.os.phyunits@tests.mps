@@ -14,8 +14,8 @@
   </languages>
   <imports>
     <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
-    <import index="bcgi" ref="r:4f16a069-9931-4ab4-b538-6d5b7738fb54(org.iets3.core.expr.typetags.physunits.migration)" />
     <import index="x0pf" ref="r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)" />
+    <import index="n6a9" ref="r:00045955-9409-4c08-901b-5694dc479158(org.iets3.core.expr.typetags.units.migration)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -204,7 +204,7 @@
   <node concept="2lJO3n" id="mfJ1vPEqrN">
     <property role="TrG5h" value="MigrateUnitsToPhysUnits_Test" />
     <node concept="3ea_Bc" id="mfJ1vPEqrO" role="3ea0P7">
-      <ref role="3ea_Bf" to="bcgi:mfJ1vPEq62" resolve="MigrateUnitsToPhysUnits" />
+      <ref role="3ea_Bf" to="n6a9:mfJ1vPEq62" resolve="MigrateUnitsToPhysUnits" />
     </node>
     <node concept="1qefOq" id="mfJ1vPEqsU" role="2lJO3o">
       <node concept="_iOnU" id="mfJ1vPEqsT" role="1qenE9">
