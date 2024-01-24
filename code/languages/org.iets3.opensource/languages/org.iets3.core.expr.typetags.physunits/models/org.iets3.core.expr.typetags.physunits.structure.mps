@@ -362,7 +362,7 @@
     <property role="3GE5qa" value="definition.quantity" />
     <property role="TrG5h" value="QuantitySpecification" />
     <property role="R4oN_" value="a specification of a measure" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7athFveyQy5" role="1TKVEi">
       <property role="IQ2ns" value="8258835046925559941" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -390,7 +390,7 @@
     <property role="R5$K7" value="true" />
     <property role="TrG5h" value="QuantityExpr" />
     <property role="R4oN_" value="a quantity expression" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1JynhuWjY6f" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
     </node>
@@ -476,7 +476,7 @@
     <property role="R5$K7" value="true" />
     <property role="TrG5h" value="UnitExpr" />
     <property role="R4oN_" value="an abstract unit expression" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7athFveF1bP">
     <property role="EcuMT" value="8258835046927700725" />

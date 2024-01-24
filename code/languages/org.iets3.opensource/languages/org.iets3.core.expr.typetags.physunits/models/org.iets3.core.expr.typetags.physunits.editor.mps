@@ -2151,7 +2151,7 @@
           <node concept="3clFbS" id="7yw1DU9aNEH" role="2VODD2">
             <node concept="3clFbF" id="7yw1DU9aNKt" role="3cqZAp">
               <node concept="2YIFZM" id="7yw1DU9bKmu" role="3clFbG">
-                <ref role="37wK5l" to="rppw:7yw1DU9aTt4" resolve="getAvailablePrefixes" />
+                <ref role="37wK5l" to="rppw:7yw1DU9aTt4" resolve="getAvailablePrefixesDefinitions" />
                 <ref role="1Pybhc" to="rppw:7Bmg9Oo9PPj" resolve="MetricPrefixes" />
               </node>
             </node>

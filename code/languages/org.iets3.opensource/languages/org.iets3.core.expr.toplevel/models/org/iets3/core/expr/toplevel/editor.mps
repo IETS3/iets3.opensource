@@ -4695,7 +4695,7 @@
                                 <node concept="liA8E" id="5PQzQx6Art3" role="2OqNvi">
                                   <ref role="37wK5l" to="cj4x:~ActionHandler.executeAction(jetbrains.mps.openapi.editor.cells.EditorCell,jetbrains.mps.openapi.editor.cells.CellActionType)" resolve="executeAction" />
                                   <node concept="Xjq3P" id="5GDxAP1DxMd" role="37wK5m">
-                                    <ref role="1HBi2w" node="7x0eTkxfOs" resolve="Cell" />
+                                    <ref role="1HBi2w" node="7x0eTkxfOs" resolve="EndCell.Cell" />
                                   </node>
                                   <node concept="37vLTw" id="5PQzQx6Art5" role="37wK5m">
                                     <ref role="3cqZAo" node="5PQzQx6_9xO" resolve="actionType" />
@@ -5143,7 +5143,7 @@
       <node concept="3clFbS" id="6wzrxL3ayZd" role="2VODD2">
         <node concept="3clFbF" id="jqB9UdvLtf" role="3cqZAp">
           <node concept="2YIFZM" id="jqB9UdvLTK" role="3clFbG">
-            <ref role="37wK5l" to="buwp:jqB9UdvG0w" resolve="pri" />
+            <ref role="37wK5l" to="buwp:jqB9UdvG0w" resolve="prioritizeByRef" />
             <ref role="1Pybhc" to="buwp:jqB9UdvFo_" resolve="PriorisationHelper" />
             <node concept="3lBNg1" id="jqB9UdvMIw" role="37wK5m" />
             <node concept="3lBNjA" id="jqB9UdvMLE" role="37wK5m" />
