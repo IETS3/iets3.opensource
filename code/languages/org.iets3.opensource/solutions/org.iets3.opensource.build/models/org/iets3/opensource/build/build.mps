@@ -12668,6 +12668,11 @@
           <ref role="3bR37D" to="ffeo:7Kfy9QB6L5O" resolve="jetbrains.mps.lang.extension" />
         </node>
       </node>
+      <node concept="1SiIV0" id="1VJeVhe9BI8" role="3bR37C">
+        <node concept="3bR9La" id="1VJeVhe9BI9" role="1SiIV1">
+          <ref role="3bR37D" node="1VJeVhdX98g" resolve="org.iets3.core.expr.typetags.physunits" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="OJuIQp$d7j" role="3989C9">
       <property role="BnDLt" value="true" />
