@@ -156,14 +156,6 @@
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
     </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
-      </concept>
-    </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
@@ -184,12 +176,6 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
-        <child id="8375407818529178007" name="text" index="OjmMu" />
-      </concept>
-      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
-        <child id="4052432714772608243" name="text" index="1w35rA" />
-      </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
@@ -2480,15 +2466,6 @@
         <node concept="_ixoA" id="3xM68GMBddo" role="_iOnB" />
         <node concept="2zPypq" id="3xM68GMBlE0" role="_iOnB">
           <property role="TrG5h" value="testUnit" />
-          <node concept="1z9TsT" id="5GDxAP1nftF" role="lGtFl">
-            <node concept="OjmMv" id="5GDxAP1nftG" role="1w35rA">
-              <node concept="19SGf9" id="5GDxAP1nftH" role="OjmMu">
-                <node concept="19SUe$" id="5GDxAP1nftI" role="19SJt6">
-                  <property role="19SUeA" value="TODO: why is is not an error when using a multiplication/div instead of an addition/subtraction?" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="30dDTi" id="3xM68GMCcJY" role="2zPyp_">
             <node concept="1YnStw" id="3xM68GMCdoq" role="30dEs_">
               <node concept="CIsGf" id="3xM68GMCdod" role="2c7tTI">
@@ -2507,6 +2484,42 @@
                 </node>
               </node>
               <node concept="30bXRB" id="3xM68GMBlVq" role="1YnStB">
+                <property role="30bXRw" value="5" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="7dduDjLic4U" role="_iOnB" />
+        <node concept="2zPypq" id="7dduDjL2IdL" role="_iOnB">
+          <property role="TrG5h" value="testUnit2" />
+          <node concept="30dDTi" id="7dduDjL2IdQ" role="2zPyp_">
+            <node concept="1YnStw" id="7dduDjL2IdR" role="30dEs_">
+              <node concept="CIsGf" id="7dduDjL2IdS" role="2c7tTI">
+                <node concept="wW8yL" id="7dduDjL2Kkv" role="CIi4h">
+                  <node concept="CIsvn" id="7dduDjL2KK8" role="wW8iK">
+                    <ref role="CIi3I" node="7athFveDsfr" resolve="s" />
+                  </node>
+                  <node concept="CIsvn" id="7dduDjL2IdT" role="wW812">
+                    <ref role="CIi3I" node="7athFve_004" resolve="m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="30bXRB" id="7dduDjL2IdU" role="1YnStB">
+                <property role="30bXRw" value="10" />
+              </node>
+            </node>
+            <node concept="1YnStw" id="7dduDjL2IdV" role="30dEsF">
+              <node concept="CIsGf" id="7dduDjL2IdW" role="2c7tTI">
+                <node concept="wW8yL" id="7dduDjL2Jur" role="CIi4h">
+                  <node concept="CIsvn" id="7dduDjL2JTC" role="wW8iK">
+                    <ref role="CIi3I" node="7athFveDsfr" resolve="s" />
+                  </node>
+                  <node concept="CIsvn" id="7dduDjL2IdX" role="wW812">
+                    <ref role="CIi3I" node="7athFve_004" resolve="m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="30bXRB" id="7dduDjL2IdY" role="1YnStB">
                 <property role="30bXRw" value="5" />
               </node>
             </node>
