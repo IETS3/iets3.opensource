@@ -2,7 +2,7 @@
 <model ref="r:f196894a-6bc3-4955-8759-1868547f56f4(test.in.expr.os.query@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="0" />
     <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
@@ -579,27 +579,21 @@
             <node concept="1v5h_X" id="5QDPRL$y5QT" role="1v5wSW">
               <node concept="1v5heA" id="5QDPRL$y5TJ" role="1v5heY">
                 <property role="TrG5h" value="members" />
-                <node concept="3iBYCm" id="7DfYVnm_IpJ" role="1v5hez">
-                  <node concept="2gteSW" id="7DfYVnm_IpK" role="1ietDw">
+                <node concept="3iBYCm" id="3h73ZjvpduD" role="1v5hez">
+                  <node concept="2gteSW" id="3h73ZjvpduE" role="1ietDw">
                     <property role="2gteSQ" value="3" />
                     <property role="2gteSD" value="3" />
                   </node>
-                  <node concept="2Ss9cW" id="7DfYVnm_IpL" role="3iBWmK">
+                  <node concept="2Ss9cW" id="3h73ZjvpduF" role="3iBWmK">
                     <ref role="2Ss9cX" node="5QDPRL$x94A" resolve="Invoice" />
                   </node>
-                </node>
-              </node>
-              <node concept="1v5heA" id="5QDPRL$yw_F" role="1v5heY">
-                <property role="TrG5h" value="key" />
-                <node concept="5mh7t" id="7DfYVnm_IpI" role="1v5hez">
-                  <ref role="5mh6l" node="5QDPRL$xa$Y" resolve="country" />
                 </node>
               </node>
               <node concept="2S399m" id="5QDPRL$y8zP" role="1v5heX">
                 <node concept="2Ss9cW" id="5QDPRL$y8AT" role="2S399n">
                   <ref role="2Ss9cX" node="5QDPRL$x94A" resolve="Invoice" />
                 </node>
-                <node concept="1vwrg0" id="7DfYVnm_y$H" role="2S399l">
+                <node concept="1vwrg0" id="5QDPRL$y$z7" role="2S399l">
                   <ref role="1vwrg3" node="5QDPRL$yw_F" resolve="key" />
                 </node>
                 <node concept="1QScDb" id="5QDPRL$yaqM" role="2S399l">
@@ -612,6 +606,12 @@
                       <ref role="1vwrg3" node="5QDPRL$y5TJ" resolve="members" />
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="1v5heA" id="5QDPRL$yw_F" role="1v5heY">
+                <property role="TrG5h" value="key" />
+                <node concept="5mh7t" id="3h73ZjvpduC" role="1v5hez">
+                  <ref role="5mh6l" node="5QDPRL$xa$Y" resolve="country" />
                 </node>
               </node>
             </node>

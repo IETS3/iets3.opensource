@@ -5,6 +5,7 @@
   <exported-language name="15d858db-2d21-4ae9-90c4-f595086d0bdf(org.iets3.core.expr.genjava.util)" />
   <exported-language name="752cf1d3-84d1-4f2b-bbf5-4ef076a62ec7(org.iets3.core.expr.genjava.messages)" />
   <exported-language name="f9bb00ab-1f7e-40ab-9ec0-b11e02d84d0f(org.iets3.core.expr.genjava.stringvalidation)" />
+  <exported-language name="98560bc9-b823-4181-83c6-33c39e2f5e9b(org.iets3.core.expr.genjava.data)" />
   <extendedDevKits>
     <extendedDevKit>da9c5738-b245-4e38-b52f-e6ee76cadd7f(org.iets3.core.expr.genjava.core.devkit)</extendedDevKit>
   </extendedDevKits>

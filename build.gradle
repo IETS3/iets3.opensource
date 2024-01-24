@@ -39,7 +39,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '17.0.3-b469.32'
+    jbrVersion = '17.0.6-b469.82'
 }
 
 // detect if we are in a CI build
@@ -56,7 +56,7 @@ def major = "2022"
 def minor = "2"
 
 // Dependency versions
-ext.mpsVersion = '2022.2'
+ext.mpsVersion = '2022.2.2'
 
 def mbeddrVersion = "2022.2+"
 
@@ -126,7 +126,7 @@ dependencies {
     languageLibs "org.mpsqa:all-in-one:$mpsVersion+"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
-    pcollections 'org.pcollections:pcollections:3.1.4'
+    pcollections 'org.pcollections:pcollections:4.0.1'
 }
 
 

@@ -7458,7 +7458,7 @@
         </node>
         <node concept="CIrOH" id="5XaocLWHSS4" role="_iOnC">
           <property role="TrG5h" value="a" />
-          <ref role="Rn5ok" node="1KUmgSFvJUk" resolve="quantity" />
+          <ref role="Rn5ok" node="1KUmgSFvJUk" resolve="quantityA" />
           <node concept="7CXmI" id="74SLKElsesQ" role="lGtFl">
             <node concept="1TM$A" id="74SLKElsesR" role="7EUXB">
               <node concept="2PYRI3" id="74SLKElsesS" role="3lydEf">

@@ -25,7 +25,6 @@ For details see [wiki](https://github.com/IETS3/iets3.opensource/wiki/Supported-
 - MPS 2021.3 (branch: [maintenance/mps20213](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20213)) 
 - MPS 2021.2 (branch: [maintenance/mps20212](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20212)) 
 - MPS 2021.1 (branch: [maintenance/mps20211](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20211)) 
-- MPS 2020.3 (branch: [maintenance/mps20203](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20203)) 
 
 ## Documentation
 
