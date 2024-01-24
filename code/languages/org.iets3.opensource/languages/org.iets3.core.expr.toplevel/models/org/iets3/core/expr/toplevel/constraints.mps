@@ -2194,5 +2194,42 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="wlV$3ktrJW">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1M2myG" to="yv47:6PMVc5H_jO2" resolve="EnumSortByValue" />
+    <node concept="9S07l" id="wlV$3ktrJX" role="9Vyp8">
+      <node concept="3clFbS" id="wlV$3ktrJY" role="2VODD2">
+        <node concept="3clFbF" id="wlV$3ktrNX" role="3cqZAp">
+          <node concept="1Wc70l" id="wlV$3kttnB" role="3clFbG">
+            <node concept="2OqwBi" id="wlV$3ktwMj" role="3uHU7w">
+              <node concept="2OqwBi" id="wlV$3ktuja" role="2Oq$k0">
+                <node concept="1PxgMI" id="wlV$3kttKx" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="chp4Y" id="wlV$3kttWP" role="3oSUPX">
+                    <ref role="cht4Q" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
+                  </node>
+                  <node concept="nLn13" id="wlV$3kttsp" role="1m5AlR" />
+                </node>
+                <node concept="3TrEf2" id="wlV$3ktwp1" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yv47:2MpPNJw_h8y" resolve="type" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="wlV$3ktxmx" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:7k6A8Wfp3IU" resolve="canBeSorted" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="wlV$3ktss2" role="3uHU7B">
+              <node concept="nLn13" id="wlV$3ktrNW" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="wlV$3ktsG8" role="2OqNvi">
+                <node concept="chp4Y" id="wlV$3ktsMd" role="cj9EA">
+                  <ref role="cht4Q" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

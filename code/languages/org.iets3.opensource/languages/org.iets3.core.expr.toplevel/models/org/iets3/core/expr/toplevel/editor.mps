@@ -44,6 +44,7 @@
     <import index="i6kd" ref="r:2261c766-d7b6-49d7-91bd-1207e471af0b(org.iets3.core.expr.lambda.editor)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -154,6 +155,9 @@
       <concept id="1136917249679" name="jetbrains.mps.lang.editor.structure.CellKeyMap_IsApplicableFunction" flags="in" index="2Pz7Y7" />
       <concept id="1136917288805" name="jetbrains.mps.lang.editor.structure.CellKeyMap_ExecuteFunction" flags="in" index="2PzhpH" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
       </concept>
@@ -1984,7 +1988,30 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="3WWvqarUGzF" role="3EZMnx">
+      <node concept="_tjkj" id="365yA_N$Zyn" role="3EZMnx">
+        <node concept="ZYGn8" id="365yA_N_0ba" role="ZWbT9">
+          <node concept="3clFbS" id="365yA_N_0bb" role="2VODD2">
+            <node concept="3clFbF" id="365yA_N_0c0" role="3cqZAp">
+              <node concept="Xl_RD" id="365yA_N_0bZ" role="3clFbG">
+                <property role="Xl_RC" value="order" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F1sOY" id="wlV$3lAU9q" role="_tjki">
+          <ref role="1NtTu8" to="yv47:6PMVc5H_jOd" resolve="order" />
+        </node>
+        <node concept="uPpia" id="wlV$3lDYlI" role="1djCvC">
+          <node concept="3clFbS" id="wlV$3lDYlJ" role="2VODD2">
+            <node concept="3clFbF" id="wlV$3lDYqr" role="3cqZAp">
+              <node concept="Xl_RD" id="wlV$3lDYqq" role="3clFbG">
+                <property role="Xl_RC" value="define the order how enum entries get compared to each other" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="365yA_NB4Ey" role="3EZMnx">
         <property role="3F0ifm" value="{" />
       </node>
       <node concept="1QoScp" id="3WWvqarUG5J" role="3EZMnx">
@@ -4930,6 +4957,21 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="wlV$3lvXc8">
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumSortOrderEditor" />
+    <ref role="1XX52x" to="yv47:wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
+    <node concept="PMmxH" id="wlV$3lvXca" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="wlV$3lAU9R">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
+    <node concept="PMmxH" id="wlV$3lAU9T" role="2wV5jI">
+      <ref role="PMmxG" node="wlV$3lvXc8" resolve="AbstractEnumSortOrderEditor" />
     </node>
   </node>
 </model>
