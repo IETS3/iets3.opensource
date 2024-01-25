@@ -3671,6 +3671,47 @@
     <property role="TrG5h" value="typeof_FieldSetter" />
     <property role="3GE5qa" value="record.builder" />
     <node concept="3clFbS" id="4ptnK4jiabS" role="18ibNy">
+      <node concept="3cpWs8" id="7SszixhZU64" role="3cqZAp">
+        <node concept="3cpWsn" id="7SszixhZU65" role="3cpWs9">
+          <property role="TrG5h" value="ba" />
+          <node concept="3Tqbb2" id="7SszixhZU1K" role="1tU5fm">
+            <ref role="ehGHo" to="yv47:4ptnK4jbr8C" resolve="BuilderAdapter" />
+          </node>
+          <node concept="2OqwBi" id="7SszixhZU66" role="33vP2m">
+            <node concept="1PxgMI" id="7SszixhZU67" role="2Oq$k0">
+              <node concept="chp4Y" id="7SszixhZU68" role="3oSUPX">
+                <ref role="cht4Q" to="yv47:4ptnK4jbqZj" resolve="BuilderExpression" />
+              </node>
+              <node concept="2OqwBi" id="7SszixhZU69" role="1m5AlR">
+                <node concept="1YBJjd" id="7SszixhZU6a" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4ptnK4jiabU" resolve="fs" />
+                </node>
+                <node concept="1mfA1w" id="7SszixhZU6b" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="7SszixhZU6c" role="2OqNvi">
+              <ref role="3Tt5mk" to="yv47:4ptnK4jbqZt" resolve="adapted" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="7SszixhZUrv" role="3cqZAp">
+        <node concept="3cpWsn" id="7SszixhZUry" role="3cpWs9">
+          <property role="TrG5h" value="nodeForTyping" />
+          <node concept="3Tqbb2" id="7SszixhZUrt" role="1tU5fm" />
+          <node concept="2OqwBi" id="7SszixhZXcU" role="33vP2m">
+            <node concept="37vLTw" id="7SszixhZX0U" role="2Oq$k0">
+              <ref role="3cqZAo" node="7SszixhZU65" resolve="ba" />
+            </node>
+            <node concept="2qgKlT" id="7SszixhZXtX" role="2OqNvi">
+              <ref role="37wK5l" to="nu60:7SszixhZVRp" resolve="nodeForTypingFieldSetter" />
+              <node concept="1YBJjd" id="7SszixhZXH5" role="37wK5m">
+                <ref role="1YBMHb" node="4ptnK4jiabU" resolve="fs" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="nvevp" id="3N0gPb2kZ3u" role="3cqZAp">
         <node concept="3clFbS" id="3N0gPb2kZ3w" role="nvhr_">
           <node concept="1Z5TYs" id="6gVedWjb_78" role="3cqZAp">
@@ -3735,13 +3776,8 @@
           </node>
         </node>
         <node concept="1Z2H0r" id="3N0gPb2kZ4J" role="nvjzm">
-          <node concept="2OqwBi" id="3N0gPb2kZdp" role="1Z2MuG">
-            <node concept="1YBJjd" id="3N0gPb2kZ5d" role="2Oq$k0">
-              <ref role="1YBMHb" node="4ptnK4jiabU" resolve="fs" />
-            </node>
-            <node concept="3TrEf2" id="3N0gPb2kZwR" role="2OqNvi">
-              <ref role="3Tt5mk" to="yv47:4ptnK4jbqZQ" resolve="field" />
-            </node>
+          <node concept="37vLTw" id="7SszixhZY2j" role="1Z2MuG">
+            <ref role="3cqZAo" node="7SszixhZUry" resolve="nodeForTyping" />
           </node>
         </node>
         <node concept="2X1qdy" id="3N0gPb2kZ3$" role="2X0Ygz">

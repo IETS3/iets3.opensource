@@ -2956,5 +2956,30 @@
       <ref role="1YaFvo" to="mi3w:3HiHZeyrT$S" resolve="TimeDeltaToNumberOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7MYpJaZ9zSj">
+    <property role="TrG5h" value="typeof_CurrentDateExpr" />
+    <node concept="3clFbS" id="7MYpJaZ9zSk" role="18ibNy">
+      <node concept="1Z5TYs" id="7MYpJaZ9$dB" role="3cqZAp">
+        <node concept="mw_s8" id="7MYpJaZ9$dV" role="1ZfhKB">
+          <node concept="2pJPEk" id="7MYpJaZ9$dR" role="mwGJk">
+            <node concept="2pJPED" id="7MYpJaZ9$dT" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7MYpJaZ9$dE" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7MYpJaZ9zSt" role="mwGJk">
+            <node concept="1YBJjd" id="7MYpJaZ9zUn" role="1Z2MuG">
+              <ref role="1YBMHb" node="7MYpJaZ9zSm" resolve="cde" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7MYpJaZ9zSm" role="1YuTPh">
+      <property role="TrG5h" value="cde" />
+      <ref role="1YaFvo" to="mi3w:7MYpJaZ9zRp" resolve="CurrentDateExpr" />
+    </node>
+  </node>
 </model>
 

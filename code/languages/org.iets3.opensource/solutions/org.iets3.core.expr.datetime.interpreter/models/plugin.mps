@@ -286,6 +286,16 @@
     <node concept="1J7WVO" id="3nGzaxUr3fU" role="1J4apk">
       <ref role="1J7WVQ" to="km5y:uGVYUiiVGW" resolve="ExprSimpleTypesInterpreter" />
     </node>
+    <node concept="qq9P1" id="7MYpJaZaRhl" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="mi3w:7MYpJaZ9zRp" resolve="CurrentDateExpr" />
+      <node concept="3vetai" id="7MYpJaZb1Xd" role="3vQZUl">
+        <node concept="2YIFZM" id="7MYpJaZbooO" role="3vdyny">
+          <ref role="37wK5l" to="28m1:~LocalDate.now()" resolve="now" />
+          <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="5LVdhDvw6Ob" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="mi3w:5LVdhDvvwwu" resolve="FromOp" />

@@ -128,7 +128,7 @@ dependencies {
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion+"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
-    pcollections 'org.pcollections:pcollections:3.1.4'
+    pcollections 'org.pcollections:pcollections:4.0.1'
 }
 
 
