@@ -2,8 +2,8 @@
 <model ref="r:6bb59b1e-6116-48ad-b11d-2641d4f6b6a1(org.iets3.core.expr.util.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -511,6 +511,11 @@
     <node concept="PrWs8" id="5crSXLq5Rr" role="PzmwI">
       <ref role="PrY4T" node="5crSXLq2_c" resolve="ICanHaveRangeValueExpr" />
     </node>
+    <node concept="1TJgyi" id="2FeCPobcUL$" role="1TKVEl">
+      <property role="IQ2nx" value="3084582384745819236" />
+      <property role="TrG5h" value="negate" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="8XWEtdYbNZ">
     <property role="EcuMT" value="161551962036813055" />
@@ -596,18 +601,18 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="8XWEtdYbNZ" resolve="DataRow" />
     </node>
+    <node concept="PrWs8" id="2U$lnbPqLp1" role="PrDN$">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
+    <node concept="PrWs8" id="7vcJOhhDND5" role="PrDN$">
+      <ref role="PrY4T" node="22hm_0zj$RB" resolve="IRangeContext" />
+    </node>
     <node concept="1TJgyj" id="1pkymqKXZmh" role="1TKVEi">
       <property role="IQ2ns" value="1609062041026819473" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="resultTupleDeclaration" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="yv47:4ZbdskR3pBE" resolve="NamedTupleDeclaration" />
-    </node>
-    <node concept="PrWs8" id="2U$lnbPqLp1" role="PrDN$">
-      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
-    </node>
-    <node concept="PrWs8" id="7vcJOhhDND5" role="PrDN$">
-      <ref role="PrY4T" node="22hm_0zj$RB" resolve="IRangeContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="7FuUjk_mXBJ">
