@@ -22,6 +22,7 @@
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
     <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
@@ -790,6 +791,30 @@
       </node>
       <node concept="2AHcQZ" id="7fOaqhi3Un1" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5qf1oe$zdF8" role="jymVt" />
+    <node concept="2tJIrI" id="5qf1oe$zeNt" role="jymVt" />
+    <node concept="3clFb_" id="5qf1oe$zfpT" role="jymVt">
+      <property role="TrG5h" value="hashCode" />
+      <node concept="3Tm1VV" id="5qf1oe$zfpU" role="1B3o_S" />
+      <node concept="10Oyi0" id="5qf1oe$zfpX" role="3clF45" />
+      <node concept="3clFbS" id="5qf1oe$zfpY" role="3clF47">
+        <node concept="3clFbF" id="5qf1oe$zktQ" role="3cqZAp">
+          <node concept="2YIFZM" id="5qf1oe$zlvV" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~Objects.hash(java.lang.Object...)" resolve="hash" />
+            <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
+            <node concept="37vLTw" id="5qf1oe$zpPq" role="37wK5m">
+              <ref role="3cqZAo" node="7D7uZV2szuN" resolve="memberData" />
+            </node>
+            <node concept="37vLTw" id="5qf1oe$zscK" role="37wK5m">
+              <ref role="3cqZAo" node="7$ajNzjzZzN" resolve="recordDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5qf1oe$zfpZ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7D7uZV2szl_" role="jymVt" />

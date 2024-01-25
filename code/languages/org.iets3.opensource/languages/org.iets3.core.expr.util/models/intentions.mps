@@ -2,12 +2,13 @@
 <model ref="r:ecf4180a-6e34-47e0-90d1-b073b95f6f24(org.iets3.core.expr.util.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
-    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,8 +24,12 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
+    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
+      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -4455,6 +4460,45 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="2FeCPobcZc7" role="lGtFl">
+      <property role="1SWRpm" value="TABLE" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7yOFqus7Z5V">
+    <property role="3GE5qa" value="multidectab.expr" />
+    <property role="TrG5h" value="DeclareReturnType" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="kfo3:8XWEtdX_Xs" resolve="MultiDecTab" />
+    <node concept="2S6ZIM" id="7yOFqus7Z5W" role="2ZfVej">
+      <node concept="3clFbS" id="7yOFqus7Z5X" role="2VODD2">
+        <node concept="3clFbF" id="7yOFqus7Z5Y" role="3cqZAp">
+          <node concept="Xl_RD" id="7yOFqus7Z5Z" role="3clFbG">
+            <property role="Xl_RC" value="Declare The Return Type" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7yOFqus7Z60" role="2ZfgGD">
+      <node concept="3clFbS" id="7yOFqus7Z61" role="2VODD2">
+        <node concept="3clFbF" id="7yOFqus8mC6" role="3cqZAp">
+          <node concept="2OqwBi" id="7yOFqus8mI3" role="3clFbG">
+            <node concept="1XNTG" id="7yOFqus8mC5" role="2Oq$k0" />
+            <node concept="liA8E" id="7yOFqus8mK5" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode)" resolve="select" />
+              <node concept="2Sf5sV" id="7yOFqus8mMg" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7yOFqus822R" role="3cqZAp">
+          <node concept="2OqwBi" id="7yOFqus82eB" role="3clFbG">
+            <node concept="1XNTG" id="7yOFqus822Q" role="2Oq$k0" />
+            <node concept="liA8E" id="7yOFqus82s9" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorContext.openInspector()" resolve="openInspector" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="7yOFqus7Z6g" role="lGtFl">
       <property role="1SWRpm" value="TABLE" />
     </node>
   </node>
