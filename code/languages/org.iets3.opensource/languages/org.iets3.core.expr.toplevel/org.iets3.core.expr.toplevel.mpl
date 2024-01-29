@@ -33,6 +33,7 @@
     <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
     <dependency reexport="false">24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)</dependency>
     <dependency reexport="false">52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)</dependency>
+    <dependency reexport="false">98b3b6eb-9d60-4e29-9afb-762ac8948292(jetbrains.mps.ide.refactoring.platform)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:677f00fb-4488-405e-9885-abb75d472fd1:com.mbeddr.mpsutil.contextactions" version="0" />
@@ -124,6 +125,7 @@
     <module reference="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" version="0" />
     <module reference="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" version="0" />
     <module reference="8d29d73f-ed99-4652-ae0a-083cdfe53c34(jetbrains.mps.ide.platform)" version="0" />
+    <module reference="98b3b6eb-9d60-4e29-9afb-762ac8948292(jetbrains.mps.ide.refactoring.platform)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />

@@ -3923,6 +3923,11 @@
             <ref role="3bR37D" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6ZD7qzEAhqn" role="3bR37C">
+          <node concept="3bR9La" id="6ZD7qzEAhqo" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4X1d9kMCbcv" resolve="jetbrains.mps.ide.refactoring.platform" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5a_u3OzLedQ" role="2G$12L">
         <property role="BnDLt" value="true" />
