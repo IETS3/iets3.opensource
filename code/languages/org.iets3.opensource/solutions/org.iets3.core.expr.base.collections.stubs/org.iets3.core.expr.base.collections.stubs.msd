@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.iets3.core.expr.base.collections.stubs" uuid="b76a0f63-5959-456b-993a-c796cc0d0c13" moduleVersion="0" compileInMPS="true">
+<solution name="org.iets3.core.expr.base.collections.stubs" uuid="b76a0f63-5959-456b-993a-c796cc0d0c13" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="pcollections.jar" />
@@ -8,12 +8,9 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/pcollections.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/pcollections.jar" />
-  </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>

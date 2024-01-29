@@ -165,6 +165,7 @@
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <property id="890797661671409019" name="forceMultiLine" index="3yWfEV" />
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -305,7 +306,6 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
@@ -588,7 +588,7 @@
                     <node concept="3clFbF" id="7_$HJtBtOwl" role="3cqZAp">
                       <node concept="2OqwBi" id="7_$HJtBtOwm" role="3clFbG">
                         <node concept="37vLTw" id="7_$HJtBtOwn" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7_$HJtBtOwp" resolve="it" />
+                          <ref role="3cqZAo" node="4z0AnX8176H" />
                         </node>
                         <node concept="2qgKlT" id="7_$HJtBtOwo" role="2OqNvi">
                           <ref role="37wK5l" to="pbu6:7_$HJtBs0P$" resolve="isSynthesized" />
@@ -596,9 +596,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="Rh6nW" id="7_$HJtBtOwp" role="1bW2Oz">
+                  <node concept="gl6BB" id="4z0AnX8176H" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="7_$HJtBtOwq" role="1tU5fm" />
+                    <node concept="2jxLKc" id="4z0AnX8176I" role="1tU5fm" />
                   </node>
                 </node>
               </node>
@@ -657,7 +657,7 @@
                     <node concept="3clFbF" id="69zaTr1W0aA" role="3cqZAp">
                       <node concept="2OqwBi" id="69zaTr1W0zH" role="3clFbG">
                         <node concept="37vLTw" id="69zaTr1W0a_" role="2Oq$k0">
-                          <ref role="3cqZAo" node="69zaTr1W086" resolve="it" />
+                          <ref role="3cqZAo" node="4z0AnX8176J" />
                         </node>
                         <node concept="2qgKlT" id="69zaTr1W0Ed" role="2OqNvi">
                           <ref role="37wK5l" to="pbu6:69zaTr1W0u$" resolve="isGeneric" />
@@ -665,9 +665,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="Rh6nW" id="69zaTr1W086" role="1bW2Oz">
+                  <node concept="gl6BB" id="4z0AnX8176J" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="69zaTr1W087" role="1tU5fm" />
+                    <node concept="2jxLKc" id="4z0AnX8176K" role="1tU5fm" />
                   </node>
                 </node>
               </node>
@@ -1884,7 +1884,7 @@
                     <node concept="2ShNRf" id="1PoRi1pB9Yy" role="2Oq$k0">
                       <node concept="1pGfFk" id="1PoRi1pBbWD" role="2ShVmc">
                         <property role="373rjd" value="true" />
-                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="Builder" />
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1PoRi1pBcfZ" role="2OqNvi">
@@ -1933,7 +1933,7 @@
                     <node concept="2ShNRf" id="1PoRi1pBj92" role="2Oq$k0">
                       <node concept="1pGfFk" id="1PoRi1pBjx3" role="2ShVmc">
                         <property role="373rjd" value="true" />
-                        <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.&lt;init&gt;()" resolve="Builder" />
+                        <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.&lt;init&gt;()" resolve="CanBeAncestorContext.Builder" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1PoRi1pBjTR" role="2OqNvi">
