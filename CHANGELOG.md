@@ -12,7 +12,12 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - The PCollections library was updated to version 4.0.1.
 
 ### Fixed
-- Uncatched `DateTimeException` during check DateLiteral
+
+- Uncatched `DateTimeException` during check DateLiteral.
+
+### Added
+
+- `NumberLiteral` can now be converted to a `BigDecimal` with the method `toBigDecimal`.
 
 ## December 2023
 
