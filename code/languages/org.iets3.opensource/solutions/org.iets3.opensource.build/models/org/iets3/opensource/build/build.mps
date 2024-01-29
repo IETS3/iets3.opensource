@@ -4933,6 +4933,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="7zD2yq8eXBf" role="3bR37C">
+            <node concept="3bR9La" id="7zD2yq8eXBg" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1ULLXZL0gZG" resolve="org.junit.junit5" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="ub9nkyRnyt" role="3bR37C">
           <node concept="1Busua" id="ub9nkyRnyu" role="1SiIV1">
