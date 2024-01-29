@@ -137,14 +137,9 @@
       </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
-        <child id="1188214630783" name="value" index="2B76xF" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1188214545140" name="jetbrains.mps.baseLanguage.structure.AnnotationInstanceValue" flags="ng" index="2B6LJw">
-        <reference id="1188214555875" name="key" index="2B6OnR" />
-        <child id="1188214607812" name="value" index="2B70Vg" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
@@ -298,7 +293,7 @@
         <child id="1160998896846" name="condition" index="1gVkn0" />
         <child id="1160998916832" name="message" index="1gVpfI" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
         <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
@@ -333,7 +328,7 @@
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
@@ -440,9 +435,6 @@
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
@@ -457,7 +449,7 @@
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
       <concept id="1213999117680" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldAccessOperation" flags="nn" index="2BZ7hE" />
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
     </language>
@@ -525,7 +517,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -6442,46 +6434,7 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="3clFb_" id="2fgSOgkgxBz" role="jymVt">
-      <property role="TrG5h" value="getMaxPossibleText" />
-      <node concept="3Tm1VV" id="2fgSOgkgxB_" role="1B3o_S" />
-      <node concept="2AHcQZ" id="2fgSOgkgxBB" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-        <node concept="2B6LJw" id="7tc9lTMfnGo" role="2B76xF">
-          <ref role="2B6OnR" to="wyt6:~Deprecated.since()" resolve="since" />
-          <node concept="Xl_RD" id="7tc9lTMfnGk" role="2B70Vg">
-            <property role="Xl_RC" value="2020.2" />
-          </node>
-        </node>
-        <node concept="2B6LJw" id="7tc9lTMfnGp" role="2B76xF">
-          <ref role="2B6OnR" to="wyt6:~Deprecated.forRemoval()" resolve="forRemoval" />
-          <node concept="3clFbT" id="7tc9lTMfnGq" role="2B70Vg">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2fgSOgkgxBC" role="2AJF6D">
-        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
-      </node>
-      <node concept="3uibUv" id="2fgSOgkgxBJ" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
-      <node concept="3clFbS" id="2fgSOgkgxBN" role="3clF47">
-        <node concept="3clFbF" id="2fgSOgkgCy3" role="3cqZAp">
-          <node concept="Xl_RD" id="2fgSOgkgCy2" role="3clFbG">
-            <property role="Xl_RC" value="ISolvables" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2fgSOgkgxBO" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-      <node concept="P$JXv" id="7tc9lTMfnGl" role="lGtFl">
-        <node concept="TZ5HI" id="7tc9lTMfnGm" role="3nqlJM">
-          <node concept="TZ5HA" id="7tc9lTMfnGn" role="3HnX3l" />
-        </node>
-      </node>
-    </node>
+    <node concept="2tJIrI" id="4z0AnX4KPM9" role="jymVt" />
     <node concept="3clFb_" id="2S0X1v6MAGK" role="jymVt">
       <property role="TrG5h" value="getClickConsumer" />
       <node concept="3Tm1VV" id="2S0X1v6MAGL" role="1B3o_S" />
@@ -8770,12 +8723,12 @@
             <node concept="2ShNRf" id="5HzZDakJctO" role="37vLTx">
               <node concept="1pGfFk" id="5HzZDakJctP" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String,javax.swing.Icon,int)" resolve="JLabel" />
-                <node concept="2OqwBi" id="5HzZDakJctQ" role="37wK5m">
-                  <node concept="37vLTw" id="2S0X1v6N2GP" role="2Oq$k0">
+                <node concept="2OqwBi" id="4z0AnX4L0SL" role="37wK5m">
+                  <node concept="37vLTw" id="4z0AnX4KZhg" role="2Oq$k0">
                     <ref role="3cqZAo" node="2S0X1v6N1c0" resolve="widgetText" />
                   </node>
-                  <node concept="liA8E" id="5HzZDakJctS" role="2OqNvi">
-                    <ref role="37wK5l" to="jkny:~StatusBarWidget$TextPresentation.getMaxPossibleText()" resolve="getMaxPossibleText" />
+                  <node concept="liA8E" id="4z0AnX4L2gN" role="2OqNvi">
+                    <ref role="37wK5l" to="jkny:~StatusBarWidget$TextPresentation.getText()" resolve="getText" />
                   </node>
                 </node>
                 <node concept="10M0yZ" id="$0lM0JKFLd" role="37wK5m">
