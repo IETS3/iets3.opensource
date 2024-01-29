@@ -9600,15 +9600,30 @@
             </node>
             <node concept="1bVj0M" id="kZqQ80bey0" role="37wK5m">
               <node concept="3clFbS" id="kZqQ80bey1" role="1bW5cS">
-                <node concept="3clFbF" id="kZqQ80bey2" role="3cqZAp">
-                  <node concept="2OqwBi" id="kZqQ80bey3" role="3clFbG">
-                    <node concept="37vLTw" id="kZqQ80bey4" role="2Oq$k0">
-                      <ref role="3cqZAo" node="kZqQ80bex_" resolve="tool" />
+                <node concept="3J1_TO" id="4Yyd4M7l0my" role="3cqZAp">
+                  <node concept="3uVAMA" id="4Yyd4M7l3Yp" role="1zxBo5">
+                    <node concept="XOnhg" id="4Yyd4M7l3Yq" role="1zc67B">
+                      <property role="TrG5h" value="e" />
+                      <node concept="nSUau" id="4Yyd4M7l3Yr" role="1tU5fm">
+                        <node concept="3uibUv" id="4Yyd4M7l5uf" role="nSUat">
+                          <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="liA8E" id="kZqQ80bey5" role="2OqNvi">
-                      <ref role="37wK5l" to="71xd:~BaseTabbedProjectTool.closeTab(javax.swing.JComponent)" resolve="closeTab" />
-                      <node concept="37vLTw" id="kZqQ80bey6" role="37wK5m">
-                        <ref role="3cqZAo" node="kZqQ80bex1" resolve="tab" />
+                    <node concept="3clFbS" id="4Yyd4M7l3Ys" role="1zc67A" />
+                  </node>
+                  <node concept="3clFbS" id="4Yyd4M7l0m$" role="1zxBo7">
+                    <node concept="3clFbF" id="kZqQ80bey2" role="3cqZAp">
+                      <node concept="2OqwBi" id="kZqQ80bey3" role="3clFbG">
+                        <node concept="37vLTw" id="kZqQ80bey4" role="2Oq$k0">
+                          <ref role="3cqZAo" node="kZqQ80bex_" resolve="tool" />
+                        </node>
+                        <node concept="liA8E" id="kZqQ80bey5" role="2OqNvi">
+                          <ref role="37wK5l" to="71xd:~BaseTabbedProjectTool.closeTab(javax.swing.JComponent)" resolve="closeTab" />
+                          <node concept="37vLTw" id="kZqQ80bey6" role="37wK5m">
+                            <ref role="3cqZAo" node="kZqQ80bex1" resolve="tab" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
