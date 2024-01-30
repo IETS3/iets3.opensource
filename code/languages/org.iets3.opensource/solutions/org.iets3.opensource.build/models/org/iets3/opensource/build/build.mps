@@ -9679,6 +9679,9 @@
             <ref role="1E1Vl2" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
           </node>
         </node>
+        <node concept="1E0d5M" id="4tIsRgZDdpK" role="1E1XAP">
+          <ref role="1E0d5P" node="5v$Gz_MUO6K" resolve="org.iets3.core.expr.genjava.tests.rt" />
+        </node>
       </node>
       <node concept="1E1JtD" id="26tZ$Z4qWJe" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9850,6 +9853,9 @@
           <node concept="Rbm2T" id="7DfYVnp3kRt" role="1SiIV1">
             <ref role="1E1Vl2" node="lH$Puj5DFq" resolve="org.iets3.core.expr.genjava.contracts" />
           </node>
+        </node>
+        <node concept="1E0d5M" id="4tIsRgZDdq9" role="1E1XAP">
+          <ref role="1E0d5P" node="26tZ$Z4rreH" resolve="org.iets3.core.expr.genjava.toplevel.rt" />
         </node>
       </node>
       <node concept="1E1JtD" id="5BQDrmkjrxX" role="2G$12L">

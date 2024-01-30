@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="org.iets3.core.expr.genjava.tests" uuid="e75207bb-7b13-40bd-b80b-c8fe625c4ee2" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -175,6 +175,9 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="e75207bb-7b13-40bd-b80b-c8fe625c4ee2(org.iets3.core.expr.genjava.tests)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)</dependency>
+  </runtime>
   <extendedLanguages />
 </language>
 
