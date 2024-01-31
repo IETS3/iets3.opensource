@@ -549,6 +549,13 @@
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
+      <concept id="1178870617262" name="jetbrains.mps.lang.typesystem.structure.CoerceExpression" flags="nn" index="1UaxmW">
+        <child id="1178870894644" name="pattern" index="1Ub_4A" />
+        <child id="1178870894645" name="nodeToCoerce" index="1Ub_4B" />
+      </concept>
+      <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
+        <reference id="1174642800329" name="concept" index="1YaFvo" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -3226,16 +3233,18 @@
         <node concept="2e7140" id="5BNZGjBvzmg" role="2e1Fq_">
           <node concept="3clFbS" id="5BNZGjBvzmh" role="2VODD2">
             <node concept="3clFbF" id="5BNZGjBvznm" role="3cqZAp">
-              <node concept="2OqwBi" id="5BNZGjBvzBc" role="3clFbG">
-                <node concept="2OqwBi" id="5BNZGjBvzq4" role="2Oq$k0">
-                  <node concept="2e73FJ" id="5BNZGjBvznl" role="2Oq$k0" />
-                  <node concept="3JvlWi" id="5BNZGjBvzyr" role="2OqNvi" />
-                </node>
-                <node concept="1mIQ4w" id="5BNZGjBvzFR" role="2OqNvi">
-                  <node concept="chp4Y" id="5BNZGjBvzIb" role="cj9EA">
-                    <ref role="cht4Q" to="hm2y:S$tO8ocniU" resolve="TupleType" />
+              <node concept="2OqwBi" id="6GiZkUz4CgA" role="3clFbG">
+                <node concept="1UaxmW" id="6GiZkUz4BKU" role="2Oq$k0">
+                  <node concept="1YaCAy" id="6GiZkUz4BTr" role="1Ub_4A">
+                    <property role="TrG5h" value="tupleType" />
+                    <ref role="1YaFvo" to="hm2y:S$tO8ocniU" resolve="TupleType" />
+                  </node>
+                  <node concept="2OqwBi" id="5BNZGjBvzq4" role="1Ub_4B">
+                    <node concept="2e73FJ" id="5BNZGjBvznl" role="2Oq$k0" />
+                    <node concept="3JvlWi" id="5BNZGjBvzyr" role="2OqNvi" />
                   </node>
                 </node>
+                <node concept="3x8VRR" id="6GiZkUz4CCA" role="2OqNvi" />
               </node>
             </node>
           </node>
