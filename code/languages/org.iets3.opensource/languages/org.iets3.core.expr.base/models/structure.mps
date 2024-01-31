@@ -2209,7 +2209,7 @@
   <node concept="1TIwiD" id="5r47dOfJ9kS">
     <property role="EcuMT" value="6252153918474458424" />
     <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="NamedTupleType" />
+    <property role="TrG5h" value="InlineTupleType" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="5r47dOfJ9kT" role="1TKVEi">
       <property role="IQ2ns" value="6252153918474458425" />

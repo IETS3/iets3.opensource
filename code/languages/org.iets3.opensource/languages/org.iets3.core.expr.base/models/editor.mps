@@ -7215,7 +7215,7 @@
   </node>
   <node concept="22mcaB" id="6GiZkUz7qWL">
     <property role="3GE5qa" value="tuples" />
-    <ref role="aqKnT" to="hm2y:5r47dOfJ9kS" resolve="NamedTupleType" />
+    <ref role="aqKnT" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
     <node concept="22hDWj" id="6GiZkUz7qWM" role="22hAXT" />
   </node>
   <node concept="22mcaB" id="6GiZkUz7t5K">
@@ -7311,7 +7311,7 @@
               </node>
               <node concept="1mIQ4w" id="7cphKbLwhTP" role="2OqNvi">
                 <node concept="chp4Y" id="7cphKbLwq6U" role="cj9EA">
-                  <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="NamedTupleType" />
+                  <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
                 </node>
               </node>
             </node>
@@ -7321,7 +7321,7 @@
                   <node concept="2OqwBi" id="7cphKbLwxky" role="2Oq$k0">
                     <node concept="1PxgMI" id="7cphKbLwuTO" role="2Oq$k0">
                       <node concept="chp4Y" id="7cphKbLwvuN" role="3oSUPX">
-                        <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="NamedTupleType" />
+                        <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
                       </node>
                       <node concept="37vLTw" id="7cphKbLwrOI" role="1m5AlR">
                         <ref role="3cqZAo" node="7cphKbLwqZr" resolve="baseType" />
@@ -7361,6 +7361,48 @@
         <node concept="3F0A7n" id="6GiZkUzcMTB" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1c6hIxyRTnQ">
+    <property role="3GE5qa" value="tuples" />
+    <ref role="1XX52x" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
+    <node concept="3EZMnI" id="1c6hIxySmQ7" role="2wV5jI">
+      <node concept="l2Vlx" id="1c6hIxySmQ8" role="2iSdaV" />
+      <node concept="3F0ifn" id="1c6hIxySmQ9" role="3EZMnx">
+        <property role="3F0ifm" value="inline tuple type" />
+      </node>
+      <node concept="3F0ifn" id="1c6hIxySmQa" role="3EZMnx">
+        <property role="3F0ifm" value="decl" />
+      </node>
+      <node concept="1iCGBv" id="1c6hIxySmQb" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:5r47dOfJ9kT" resolve="decl" />
+        <node concept="1sVBvm" id="1c6hIxySmQe" role="1sWHZn">
+          <node concept="PMmxH" id="1c6hIxySmQA" role="2wV5jI">
+            <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1c6hIxySmQh" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="1c6hIxySmQi" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="1c6hIxySmQj" role="3F10Kt">
+          <property role="1413C4" value="body-paren" />
+        </node>
+        <node concept="11LMrY" id="1c6hIxySmQk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1c6hIxySmQl" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="1c6hIxySmQm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="1c6hIxySmQn" role="3F10Kt">
+          <property role="1413C4" value="body-paren" />
         </node>
       </node>
     </node>

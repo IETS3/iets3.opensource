@@ -6294,7 +6294,7 @@
             </node>
             <node concept="1mIQ4w" id="6GiZkUz2vUr" role="2OqNvi">
               <node concept="chp4Y" id="6GiZkUz2vUs" role="cj9EA">
-                <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="NamedTupleType" />
+                <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
               </node>
             </node>
           </node>
@@ -10924,7 +10924,7 @@
     </node>
     <node concept="1YaCAy" id="5r47dOg5h9a" role="1YuTPh">
       <property role="TrG5h" value="tt2" />
-      <ref role="1YaFvo" to="hm2y:5r47dOfJ9kS" resolve="NamedTupleType" />
+      <ref role="1YaFvo" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
     </node>
   </node>
   <node concept="1YbPZF" id="6GiZkUz7CB1">
@@ -10940,7 +10940,7 @@
               </node>
               <node concept="1mIQ4w" id="7cphKbLtMF9" role="2OqNvi">
                 <node concept="chp4Y" id="7cphKbLtMGW" role="cj9EA">
-                  <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="NamedTupleType" />
+                  <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
                 </node>
               </node>
             </node>
@@ -10949,11 +10949,11 @@
                 <node concept="3cpWsn" id="7cphKbLtN7p" role="3cpWs9">
                   <property role="TrG5h" value="tt" />
                   <node concept="3Tqbb2" id="7cphKbLtN7g" role="1tU5fm">
-                    <ref role="ehGHo" to="hm2y:5r47dOfJ9kS" resolve="NamedTupleType" />
+                    <ref role="ehGHo" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
                   </node>
                   <node concept="1PxgMI" id="7cphKbLtN7q" role="33vP2m">
                     <node concept="chp4Y" id="7cphKbLtN7r" role="3oSUPX">
-                      <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="NamedTupleType" />
+                      <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
                     </node>
                     <node concept="2X3wrD" id="7cphKbLtN7s" role="1m5AlR">
                       <ref role="2X3Bk0" node="7cphKbLtLSA" resolve="ctxType" />

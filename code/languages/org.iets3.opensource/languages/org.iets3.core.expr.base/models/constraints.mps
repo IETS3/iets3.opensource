@@ -1121,7 +1121,7 @@
             </node>
             <node concept="1mIQ4w" id="7cphKbLweYP" role="2OqNvi">
               <node concept="chp4Y" id="7cphKbLwffF" role="cj9EA">
-                <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="NamedTupleType" />
+                <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
               </node>
             </node>
           </node>
