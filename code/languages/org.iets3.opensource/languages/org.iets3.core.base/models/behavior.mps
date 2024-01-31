@@ -2684,7 +2684,7 @@
                   <node concept="3clFbF" id="3JvidvJxehH" role="3cqZAp">
                     <node concept="2OqwBi" id="3JvidvJxemu" role="3clFbG">
                       <node concept="37vLTw" id="3JvidvJxehG" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4z0AnX8173d" />
+                        <ref role="3cqZAo" node="4z0AnX8173d" resolve="it" />
                       </node>
                       <node concept="2qgKlT" id="3JvidvJxew9" role="2OqNvi">
                         <ref role="37wK5l" node="3JvidvJx7iM" resolve="performAdditionalEditorUpdate" />
@@ -2745,7 +2745,7 @@
                         <node concept="3clFbF" id="3JvidvJwMGj" role="3cqZAp">
                           <node concept="2OqwBi" id="3JvidvJwN1D" role="3clFbG">
                             <node concept="37vLTw" id="3JvidvJwMGi" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4z0AnX8173f" />
+                              <ref role="3cqZAo" node="4z0AnX8173f" resolve="it" />
                             </node>
                             <node concept="2Rxl7S" id="3JvidvJwNwU" role="2OqNvi" />
                           </node>
@@ -2783,7 +2783,7 @@
                           <node concept="2OqwBi" id="4bmM0avMFeJ" role="25WWJ7">
                             <node concept="2OqwBi" id="4bmM0avMFeK" role="2Oq$k0">
                               <node concept="37vLTw" id="4bmM0avMFeL" role="2Oq$k0">
-                                <ref role="3cqZAo" node="4z0AnX8173h" />
+                                <ref role="3cqZAo" node="4z0AnX8173h" resolve="it" />
                               </node>
                               <node concept="liA8E" id="4bmM0avMFeM" role="2OqNvi">
                                 <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell()" resolve="getRootCell" />
@@ -2810,7 +2810,7 @@
                   <node concept="3clFbF" id="4bmM0avMFeT" role="3cqZAp">
                     <node concept="2OqwBi" id="4bmM0avMFeU" role="3clFbG">
                       <node concept="37vLTw" id="4bmM0avMFeV" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4z0AnX8173j" />
+                        <ref role="3cqZAo" node="4z0AnX8173j" resolve="it" />
                       </node>
                       <node concept="liA8E" id="4bmM0avMFeW" role="2OqNvi">
                         <ref role="37wK5l" to="exr9:~EditorComponent.update()" resolve="update" />

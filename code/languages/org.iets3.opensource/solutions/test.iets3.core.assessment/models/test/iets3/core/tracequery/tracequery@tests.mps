@@ -273,7 +273,7 @@
                     <node concept="3clFbF" id="mhbzaHpB8$" role="3cqZAp">
                       <node concept="2OqwBi" id="mhbzaHpBkD" role="3clFbG">
                         <node concept="37vLTw" id="mhbzaHpB8z" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4z0AnX817oM" />
+                          <ref role="3cqZAo" node="4z0AnX817oM" resolve="it" />
                         </node>
                         <node concept="2qgKlT" id="mhbzaHpBEa" role="2OqNvi">
                           <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />

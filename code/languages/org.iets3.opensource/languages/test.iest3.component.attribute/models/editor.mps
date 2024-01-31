@@ -125,7 +125,7 @@
                             <node concept="3clFbF" id="48ZWgAGrgZN" role="3cqZAp">
                               <node concept="2OqwBi" id="48ZWgAGrhiK" role="3clFbG">
                                 <node concept="37vLTw" id="48ZWgAGrgZM" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4z0AnX817m8" />
+                                  <ref role="3cqZAo" node="4z0AnX817m8" resolve="it" />
                                 </node>
                                 <node concept="liA8E" id="48ZWgAGris4" role="2OqNvi">
                                   <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />

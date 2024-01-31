@@ -521,7 +521,7 @@
                     <node concept="3clFbF" id="7aipPVpQnAf" role="3cqZAp">
                       <node concept="2OqwBi" id="7aipPVpQnSY" role="3clFbG">
                         <node concept="37vLTw" id="7aipPVpQnAe" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4z0AnX81749" />
+                          <ref role="3cqZAo" node="4z0AnX81749" resolve="it" />
                         </node>
                         <node concept="liA8E" id="7aipPVpQodb" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />

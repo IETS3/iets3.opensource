@@ -1169,7 +1169,7 @@
                             <node concept="3fqX7Q" id="1eTp1AxLPF8" role="3clFbG">
                               <node concept="2OqwBi" id="1eTp1AxLPF9" role="3fr31v">
                                 <node concept="37vLTw" id="1eTp1AxLPFa" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4z0AnX817bu" />
+                                  <ref role="3cqZAo" node="4z0AnX817bu" resolve="it" />
                                 </node>
                                 <node concept="liA8E" id="1eTp1AxLPFb" role="2OqNvi">
                                   <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
@@ -1198,7 +1198,7 @@
                             </node>
                             <node concept="2OqwBi" id="1eTp1AxLPFl" role="3uHU7B">
                               <node concept="37vLTw" id="1eTp1AxLPFm" role="2Oq$k0">
-                                <ref role="3cqZAo" node="4z0AnX817bw" />
+                                <ref role="3cqZAo" node="4z0AnX817bw" resolve="it" />
                               </node>
                               <node concept="liA8E" id="1eTp1AxLPFn" role="2OqNvi">
                                 <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage()" resolve="getLanguage" />
@@ -1390,7 +1390,7 @@
                                 <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="isSubConceptOf" />
                                 <node concept="2OqwBi" id="61R9vA3NxDQ" role="37wK5m">
                                   <node concept="37vLTw" id="61R9vA3NxDR" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="4z0AnX817by" />
+                                    <ref role="3cqZAo" node="4z0AnX817by" resolve="it" />
                                   </node>
                                   <node concept="liA8E" id="61R9vA3NxDS" role="2OqNvi">
                                     <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />

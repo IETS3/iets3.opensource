@@ -361,7 +361,7 @@
                                 <ref role="2pIpSl" to="a0oj:71Zj$i0ct2e" resolve="quantity" />
                                 <node concept="36biLy" id="76ZhK6XZ3Iq" role="28nt2d">
                                   <node concept="37vLTw" id="76ZhK6XZ3IR" role="36biLW">
-                                    <ref role="3cqZAo" node="4z0AnX817iz" />
+                                    <ref role="3cqZAo" node="4z0AnX817iz" resolve="it" />
                                   </node>
                                 </node>
                               </node>

@@ -478,7 +478,7 @@
                       <node concept="liA8E" id="1mDdTFSvNt" role="2OqNvi">
                         <ref role="37wK5l" to="33ny:~Collection.contains(java.lang.Object)" resolve="contains" />
                         <node concept="37vLTw" id="1mDdTFSvRG" role="37wK5m">
-                          <ref role="3cqZAo" node="4z0AnX817c$" />
+                          <ref role="3cqZAo" node="4z0AnX817c$" resolve="it" />
                         </node>
                       </node>
                     </node>
@@ -923,7 +923,7 @@
                       <node concept="2OqwBi" id="4IV0h47t3Ap" role="3clFbG">
                         <node concept="2OqwBi" id="4IV0h47t3Aq" role="2Oq$k0">
                           <node concept="37vLTw" id="4IV0h47t3Ar" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4z0AnX817cA" />
+                            <ref role="3cqZAo" node="4z0AnX817cA" resolve="it" />
                           </node>
                           <node concept="2OwXpG" id="4IV0h47t3As" role="2OqNvi">
                             <ref role="2Oxat5" to="n9sl:4IV0h47l1DZ" resolve="arg" />
@@ -1338,7 +1338,7 @@
                       <node concept="2OqwBi" id="4IV0h48m1SO" role="3clFbG">
                         <node concept="2OqwBi" id="4IV0h48m1SP" role="2Oq$k0">
                           <node concept="37vLTw" id="4IV0h48m1SQ" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4z0AnX817cC" />
+                            <ref role="3cqZAo" node="4z0AnX817cC" resolve="it" />
                           </node>
                           <node concept="2OwXpG" id="4IV0h48m1SR" role="2OqNvi">
                             <ref role="2Oxat5" to="n9sl:4IV0h47l1DZ" resolve="arg" />

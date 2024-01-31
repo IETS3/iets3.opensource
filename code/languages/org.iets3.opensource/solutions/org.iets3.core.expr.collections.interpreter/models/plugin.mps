@@ -4180,12 +4180,12 @@
                                 <node concept="3clFbF" id="36hsHVfkcR7" role="3cqZAp">
                                   <node concept="2OqwBi" id="36hsHVfkd3J" role="3clFbG">
                                     <node concept="37vLTw" id="36hsHVfkcR6" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="4z0AnX817mY" />
+                                      <ref role="3cqZAo" node="4z0AnX817mY" resolve="a" />
                                     </node>
                                     <node concept="liA8E" id="36hsHVfkdwB" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~Comparable.compareTo(java.lang.Object)" resolve="compareTo" />
                                       <node concept="37vLTw" id="36hsHVfke4a" role="37wK5m">
-                                        <ref role="3cqZAo" node="4z0AnX817n0" />
+                                        <ref role="3cqZAo" node="4z0AnX817n0" resolve="b" />
                                       </node>
                                     </node>
                                   </node>
@@ -4247,12 +4247,12 @@
                                   <node concept="3clFbF" id="36hsHVfke_N" role="3cqZAp">
                                     <node concept="2OqwBi" id="36hsHVfkeL2" role="3clFbG">
                                       <node concept="37vLTw" id="36hsHVfke_M" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="4z0AnX817n2" />
+                                        <ref role="3cqZAo" node="4z0AnX817n2" resolve="a" />
                                       </node>
                                       <node concept="liA8E" id="36hsHVfkf4a" role="2OqNvi">
                                         <ref role="37wK5l" to="wyt6:~Comparable.compareTo(java.lang.Object)" resolve="compareTo" />
                                         <node concept="37vLTw" id="36hsHVfkfBS" role="37wK5m">
-                                          <ref role="3cqZAo" node="4z0AnX817n4" />
+                                          <ref role="3cqZAo" node="4z0AnX817n4" resolve="b" />
                                         </node>
                                       </node>
                                     </node>

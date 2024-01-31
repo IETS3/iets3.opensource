@@ -4246,7 +4246,7 @@
                                   <ref role="37wK5l" to="xfg9:5ye9uPrx0ez" resolve="isOtherwiseLiteral" />
                                   <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
                                   <node concept="37vLTw" id="53cOfDpyX5I" role="37wK5m">
-                                    <ref role="3cqZAo" node="4z0AnX817dU" />
+                                    <ref role="3cqZAo" node="4z0AnX817dU" resolve="it" />
                                   </node>
                                 </node>
                               </node>
@@ -4275,7 +4275,7 @@
                                     <property role="Xl_RC" value="Multiple otherwise literals are not allowed" />
                                   </node>
                                   <node concept="37vLTw" id="53cOfDpd6ik" role="1urrMF">
-                                    <ref role="3cqZAo" node="4z0AnX817dW" />
+                                    <ref role="3cqZAo" node="4z0AnX817dW" resolve="it" />
                                   </node>
                                 </node>
                               </node>

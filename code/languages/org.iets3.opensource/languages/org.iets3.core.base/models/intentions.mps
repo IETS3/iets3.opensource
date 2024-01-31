@@ -268,7 +268,7 @@
                         <node concept="2OqwBi" id="6js_s$imKOJ" role="3uHU7B">
                           <node concept="2OqwBi" id="6js_s$imKOK" role="2Oq$k0">
                             <node concept="37vLTw" id="6js_s$imKOL" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4z0AnX8173r" />
+                              <ref role="3cqZAo" node="4z0AnX8173r" resolve="it" />
                             </node>
                             <node concept="liA8E" id="6js_s$imKOM" role="2OqNvi">
                               <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell()" resolve="getRootCell" />
@@ -294,7 +294,7 @@
                   <node concept="3clFbF" id="6js_s$imKOT" role="3cqZAp">
                     <node concept="2OqwBi" id="6js_s$imKOU" role="3clFbG">
                       <node concept="37vLTw" id="6js_s$imKOV" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4z0AnX8173t" />
+                        <ref role="3cqZAo" node="4z0AnX8173t" resolve="it" />
                       </node>
                       <node concept="liA8E" id="6js_s$imKOW" role="2OqNvi">
                         <ref role="37wK5l" to="exr9:~EditorComponent.update()" resolve="update" />
@@ -333,7 +333,7 @@
                   <node concept="3clFbF" id="6js_s$imTAS" role="3cqZAp">
                     <node concept="2OqwBi" id="6js_s$imTR0" role="3clFbG">
                       <node concept="37vLTw" id="6js_s$imTAR" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4z0AnX8173v" />
+                        <ref role="3cqZAo" node="4z0AnX8173v" resolve="it" />
                       </node>
                       <node concept="2qgKlT" id="1Kc3mnJ0OvJ" role="2OqNvi">
                         <ref role="37wK5l" to="gdgh:3R3AIvumwpO" resolve="hasExistingResult" />

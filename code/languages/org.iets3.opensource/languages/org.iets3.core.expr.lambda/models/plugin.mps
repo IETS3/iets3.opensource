@@ -451,7 +451,7 @@
                     <node concept="3clFbF" id="22hm_0zJCvx" role="3cqZAp">
                       <node concept="2OqwBi" id="22hm_0zJCvy" role="3clFbG">
                         <node concept="37vLTw" id="22hm_0zJCvz" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4z0AnX817aY" />
+                          <ref role="3cqZAo" node="4z0AnX817aY" resolve="it" />
                         </node>
                         <node concept="2qgKlT" id="22hm_0zJCv$" role="2OqNvi">
                           <ref role="37wK5l" to="pbu6:22hm_0zJBUZ" resolve="targetStateIsMutable" />
@@ -991,7 +991,7 @@
                           </node>
                           <node concept="3EllGN" id="6ITtBskYEkp" role="3uHU7B">
                             <node concept="37vLTw" id="6ITtBskYEkq" role="3ElVtu">
-                              <ref role="3cqZAo" node="4z0AnX817b0" />
+                              <ref role="3cqZAo" node="4z0AnX817b0" resolve="key" />
                             </node>
                             <node concept="37vLTw" id="6ITtBskYEkr" role="3ElQJh">
                               <ref role="3cqZAo" node="dsAFRk0GB0" resolve="mapping" />
@@ -1140,7 +1140,7 @@
                               </node>
                               <node concept="3EllGN" id="6ITtBskXoUd" role="3uHU7B">
                                 <node concept="37vLTw" id="6ITtBskXoUe" role="3ElVtu">
-                                  <ref role="3cqZAo" node="4z0AnX817b2" />
+                                  <ref role="3cqZAo" node="4z0AnX817b2" resolve="key" />
                                 </node>
                                 <node concept="37vLTw" id="6ITtBskXoUf" role="3ElQJh">
                                   <ref role="3cqZAo" node="dsAFRk4B7x" resolve="shortLambdaMapping" />
@@ -1267,7 +1267,7 @@
                                     <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
                                     <node concept="2OqwBi" id="dsAFRk6FhD" role="37wK5m">
                                       <node concept="37vLTw" id="dsAFRk6ESX" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="4z0AnX817b4" />
+                                        <ref role="3cqZAo" node="4z0AnX817b4" resolve="mapping" />
                                       </node>
                                       <node concept="3AV6Ez" id="dsAFRka_Qp" role="2OqNvi" />
                                     </node>
@@ -1282,7 +1282,7 @@
                                           <ref role="37wK5l" to="2ahs:RaqQlV4lZg" resolve="coverValue" />
                                           <node concept="2OqwBi" id="dsAFRk6ImD" role="37wK5m">
                                             <node concept="37vLTw" id="dsAFRk6I05" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="4z0AnX817b4" />
+                                              <ref role="3cqZAo" node="4z0AnX817b4" resolve="mapping" />
                                             </node>
                                             <node concept="3AY5_j" id="dsAFRkaAEM" role="2OqNvi" />
                                           </node>
@@ -1326,11 +1326,11 @@
                               <node concept="3clFbF" id="dsAFRk2nFu" role="3cqZAp">
                                 <node concept="3clFbC" id="dsAFRk2r8w" role="3clFbG">
                                   <node concept="37vLTw" id="dsAFRk2spL" role="3uHU7w">
-                                    <ref role="3cqZAo" node="4z0AnX817b8" />
+                                    <ref role="3cqZAo" node="4z0AnX817b8" resolve="descendant" />
                                   </node>
                                   <node concept="3EllGN" id="dsAFRk2q08" role="3uHU7B">
                                     <node concept="37vLTw" id="dsAFRk2qrp" role="3ElVtu">
-                                      <ref role="3cqZAo" node="4z0AnX817b6" />
+                                      <ref role="3cqZAo" node="4z0AnX817b6" resolve="key" />
                                     </node>
                                     <node concept="37vLTw" id="dsAFRk2p1B" role="3ElQJh">
                                       <ref role="3cqZAo" node="dsAFRk0GB0" resolve="mapping" />
@@ -1369,7 +1369,7 @@
                       <ref role="37wK5l" to="pbu6:1WlYLwX3McV" resolve="isNodeCovered" />
                       <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
                       <node concept="37vLTw" id="230vOq3ig5J" role="37wK5m">
-                        <ref role="3cqZAo" node="4z0AnX817b8" />
+                        <ref role="3cqZAo" node="4z0AnX817b8" resolve="descendant" />
                       </node>
                     </node>
                   </node>
@@ -2196,7 +2196,7 @@
                           <node concept="liA8E" id="$yb$20ldT9" role="2OqNvi">
                             <ref role="37wK5l" to="2ahs:2X4$XGmegKw" resolve="evaluate" />
                             <node concept="37vLTw" id="$yb$20ldTa" role="37wK5m">
-                              <ref role="3cqZAo" node="4z0AnX817ba" />
+                              <ref role="3cqZAo" node="4z0AnX817ba" resolve="it" />
                             </node>
                             <node concept="37vLTw" id="$yb$20ldTb" role="37wK5m">
                               <ref role="3cqZAo" node="$yb$20laHc" resolve="context" />

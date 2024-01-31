@@ -1258,7 +1258,7 @@
                           <node concept="liA8E" id="3TIaSh_f2Uo" role="2OqNvi">
                             <ref role="37wK5l" to="2ahs:RaqQlV4lZg" resolve="coverValue" />
                             <node concept="37vLTw" id="Om1N8Vect_" role="37wK5m">
-                              <ref role="3cqZAo" node="4z0AnX817ny" />
+                              <ref role="3cqZAo" node="4z0AnX817ny" resolve="it" />
                             </node>
                             <node concept="10Nm6u" id="3TIaSh_f3vR" role="37wK5m" />
                           </node>

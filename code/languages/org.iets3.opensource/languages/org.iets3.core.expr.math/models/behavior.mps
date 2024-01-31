@@ -1563,7 +1563,7 @@
                         <ref role="37wK5l" to="7xqi:2aG75lpC1hM" resolve="mapToPowerExpressions" />
                         <ref role="1Pybhc" to="7xqi:3iWt5efKWGp" resolve="PolynomialExpressionUtil" />
                         <node concept="37vLTw" id="2aG75lpCirv" role="37wK5m">
-                          <ref role="3cqZAo" node="4z0AnX817bo" />
+                          <ref role="3cqZAo" node="4z0AnX817bo" resolve="it" />
                         </node>
                         <node concept="2OqwBi" id="2aG75lpCmQn" role="37wK5m">
                           <node concept="2OqwBi" id="2aG75lpCj9M" role="2Oq$k0">

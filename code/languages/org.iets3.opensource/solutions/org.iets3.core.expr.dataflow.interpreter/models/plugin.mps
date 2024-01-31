@@ -371,7 +371,7 @@
                                 <node concept="qpA2v" id="2vkvJYT7J3M" role="3clFbG">
                                   <node concept="2OqwBi" id="2vkvJYT7Jj7" role="3SLO0q">
                                     <node concept="37vLTw" id="2vkvJYT7J9E" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="4z0AnX817ne" />
+                                      <ref role="3cqZAo" node="4z0AnX817ne" resolve="it" />
                                     </node>
                                     <node concept="3TrEf2" id="2vkvJYT7J$9" role="2OqNvi">
                                       <ref role="3Tt5mk" to="gx5r:2vkvJYT213x" resolve="value" />
@@ -830,7 +830,7 @@
                       <node concept="3clFbF" id="2vkvJYTf3Z9" role="3cqZAp">
                         <node concept="2OqwBi" id="2vkvJYTf3Za" role="3clFbG">
                           <node concept="37vLTw" id="2vkvJYTf3Zb" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4z0AnX817ng" />
+                            <ref role="3cqZAo" node="4z0AnX817ng" resolve="it" />
                           </node>
                           <node concept="2qgKlT" id="2vkvJYTf3Zc" role="2OqNvi">
                             <ref role="37wK5l" to="b4m9:5Q9FzcI4YUK" resolve="connectsToOutsidePort" />
@@ -991,7 +991,7 @@
                             <node concept="3clFbF" id="2vkvJYTf_OK" role="3cqZAp">
                               <node concept="2OqwBi" id="2vkvJYTf_OL" role="3clFbG">
                                 <node concept="37vLTw" id="2vkvJYTf_OM" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4z0AnX817ni" />
+                                  <ref role="3cqZAo" node="4z0AnX817ni" resolve="it" />
                                 </node>
                                 <node concept="2qgKlT" id="2vkvJYTf_ON" role="2OqNvi">
                                   <ref role="37wK5l" to="b4m9:5Q9FzcI6bZ6" resolve="connectsToInsideInPort" />
@@ -1094,7 +1094,7 @@
                                 </node>
                                 <node concept="2OqwBi" id="PkV_vHz5MT" role="3uHU7B">
                                   <node concept="37vLTw" id="PkV_vHz5MU" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="4z0AnX817nk" />
+                                    <ref role="3cqZAo" node="4z0AnX817nk" resolve="it" />
                                   </node>
                                   <node concept="3TrEf2" id="PkV_vHz5MV" role="2OqNvi">
                                     <ref role="3Tt5mk" to="gx5r:2vkvJYSQEwb" resolve="param" />

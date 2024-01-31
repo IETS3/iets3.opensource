@@ -290,7 +290,7 @@
                       <node concept="3clFbF" id="5Q9FzcI57n0" role="3cqZAp">
                         <node concept="2OqwBi" id="5Q9FzcI57n1" role="3clFbG">
                           <node concept="37vLTw" id="5Q9FzcI57n2" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4z0AnX8178K" />
+                            <ref role="3cqZAo" node="4z0AnX8178K" resolve="it" />
                           </node>
                           <node concept="2qgKlT" id="5Q9FzcI57n3" role="2OqNvi">
                             <ref role="37wK5l" to="b4m9:5Q9FzcI4YUK" resolve="connectsToOutsidePort" />
@@ -401,7 +401,7 @@
                       <node concept="3clFbF" id="5Q9FzcI6uoY" role="3cqZAp">
                         <node concept="2OqwBi" id="5Q9FzcI6uoZ" role="3clFbG">
                           <node concept="37vLTw" id="5Q9FzcI6up0" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4z0AnX8178M" />
+                            <ref role="3cqZAo" node="4z0AnX8178M" resolve="it" />
                           </node>
                           <node concept="2qgKlT" id="5Q9FzcI6up1" role="2OqNvi">
                             <ref role="37wK5l" to="b4m9:5Q9FzcI6bZ6" resolve="connectsToInsideInPort" />

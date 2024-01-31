@@ -523,7 +523,7 @@
                   <node concept="3clFbF" id="1WCh2thdbSL" role="3cqZAp">
                     <node concept="2OqwBi" id="1WCh2thdbZl" role="3clFbG">
                       <node concept="37vLTw" id="1WCh2thdbSK" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4z0AnX81724" />
+                        <ref role="3cqZAo" node="4z0AnX81724" resolve="it" />
                       </node>
                       <node concept="2qgKlT" id="1WCh2thdceu" role="2OqNvi">
                         <ref role="37wK5l" to="3eba:1WCh2thaL0Y" resolve="autowire" />
