@@ -16,6 +16,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Uncatched `DateTimeException` during check DateLiteral.
 - IntHelper.equals now correctly deals with the combination of 0.0,-0.0,0 and -0.
 
+### Added
+
+- `NumberLiteral` can now be converted to a `BigDecimal` with the method `toBigDecimal`.
+
 ## December 2023
 
 ### Fixed
