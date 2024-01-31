@@ -24,11 +24,9 @@
     <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
-    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
@@ -440,19 +438,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="13i0hz" id="3DYDRw0K4dF" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="3DYDRw0K4dG" role="1B3o_S" />
-      <node concept="3clFbS" id="3DYDRw0K4dJ" role="3clF47">
-        <node concept="3clFbF" id="3DYDRw0K4dM" role="3cqZAp">
-          <node concept="3clFbT" id="3DYDRw0K4dL" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="3DYDRw0K4dK" role="3clF45" />
     </node>
     <node concept="13i0hz" id="52Frzr8XPzG" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -2155,19 +2140,6 @@
       </node>
       <node concept="17QB3L" id="22hm_0zbqzd" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="22hm_0zbqze" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="22hm_0zbqzf" role="1B3o_S" />
-      <node concept="3clFbS" id="22hm_0zbqzi" role="3clF47">
-        <node concept="3clFbF" id="22hm_0zbqzl" role="3cqZAp">
-          <node concept="3clFbT" id="22hm_0zbqzk" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="22hm_0zbqzj" role="3clF45" />
-    </node>
     <node concept="13i0hz" id="22hm_0zjC8O" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
@@ -2468,19 +2440,6 @@
       </node>
       <node concept="17QB3L" id="22hm_0$bcfm" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="22hm_0$bcfn" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="22hm_0$bcfo" role="1B3o_S" />
-      <node concept="3clFbS" id="22hm_0$bcfr" role="3clF47">
-        <node concept="3clFbF" id="22hm_0$bcfu" role="3cqZAp">
-          <node concept="3clFbT" id="22hm_0$bcft" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="22hm_0$bcfs" role="3clF45" />
-    </node>
     <node concept="13i0hz" id="1Vx$q3aP7pV" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
@@ -2759,19 +2718,6 @@
         </node>
       </node>
       <node concept="17QB3L" id="8XWEtdZOGB" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="8XWEtdZOGC" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="8XWEtdZOGD" role="1B3o_S" />
-      <node concept="3clFbS" id="8XWEtdZOGG" role="3clF47">
-        <node concept="3clFbF" id="8XWEtdZOGJ" role="3cqZAp">
-          <node concept="3clFbT" id="8XWEtdZOGI" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="8XWEtdZOGH" role="3clF45" />
     </node>
     <node concept="13i0hz" id="8XWEteuHOl" role="13h7CS">
       <property role="TrG5h" value="queryColDefs" />
@@ -3465,19 +3411,6 @@
         </node>
       </node>
       <node concept="17QB3L" id="3V7UZBIQru" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="3V7UZBIQrv" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="3V7UZBIQrw" role="1B3o_S" />
-      <node concept="3clFbS" id="3V7UZBIQrz" role="3clF47">
-        <node concept="3clFbF" id="3V7UZBIQrA" role="3cqZAp">
-          <node concept="3clFbT" id="3V7UZBIQr_" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="3V7UZBIQr$" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="LvU0bhwvou">

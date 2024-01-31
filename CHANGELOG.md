@@ -42,6 +42,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The comparison helper in org.iets3.core.expr.simpleTypes.runtime and the equals helper in the test language where merged into a new class EqualsHelper inside the first runtime solution to return the same values.
 
+## October 2023
+
 ### Fixed
 
 - String validation: A bug in the number detection logic was fixed

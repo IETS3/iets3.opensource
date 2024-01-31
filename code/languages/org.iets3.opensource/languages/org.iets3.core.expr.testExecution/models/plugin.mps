@@ -11,8 +11,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
-    <import index="tkzh" ref="r:7a3bd1e3-4325-42bd-ac44-c80ecc92d42d(org.iets3.core.expr.testExecution.editor)" />
     <import index="6yn5" ref="r:2bfc35a4-8334-4342-8e2a-a54b7cda4a4c(org.iets3.core.expr.testExecution.structure)" />
   </imports>
   <registry>

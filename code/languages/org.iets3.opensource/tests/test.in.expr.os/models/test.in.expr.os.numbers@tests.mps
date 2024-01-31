@@ -2,7 +2,7 @@
 <model ref="r:136a38b9-9b4d-4cdb-82ce-de7f17f13658(test.in.expr.os.numbers@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <devkit ref="ec967770-4707-442f-baaf-a8b7bb554717(org.iets3.core.expr.genall.core.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
@@ -1729,7 +1729,7 @@
         <property role="TrG5h" value="this" />
         <node concept="mLuIC" id="1IomA9vYtGy" role="3ix9CU">
           <node concept="2gteS_" id="1IomA9vYtHp" role="2gteVg">
-            <property role="2gteVv" value="2" />
+            <property role="2gteVv" value="3" />
           </node>
         </node>
       </node>
