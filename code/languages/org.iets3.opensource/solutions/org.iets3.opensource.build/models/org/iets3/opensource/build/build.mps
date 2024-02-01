@@ -9943,6 +9943,7 @@
         </node>
         <node concept="1SiIV0" id="2YQA$O1yrFO" role="3bR37C">
           <node concept="3bR9La" id="2YQA$O1yrFP" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>

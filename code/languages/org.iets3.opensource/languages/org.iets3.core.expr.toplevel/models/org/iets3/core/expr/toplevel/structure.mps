@@ -1300,7 +1300,8 @@
     <property role="EcuMT" value="7886626212990500101" />
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumSortByDeclaration" />
-    <property role="34LRSv" value="order by occurence within declaration " />
+    <property role="34LRSv" value="order by declaration " />
+    <property role="R4oN_" value="order by occurence within declaration " />
     <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
   </node>
   <node concept="1TIwiD" id="wlV$3kt3Ry">

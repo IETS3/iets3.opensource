@@ -2715,7 +2715,7 @@
                 <node concept="3clFbJ" id="6WstIz8RBxl" role="3cqZAp">
                   <node concept="3clFbC" id="6WstIz8RB_7" role="3clFbw">
                     <node concept="2YIFZM" id="4$j2$kkixM6" role="3uHU7w">
-                      <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="createEnumLiteral" />
+                      <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="getInstance" />
                       <ref role="1Pybhc" to="pq1l:365yA_OO5FT" resolve="EnumLiteral" />
                       <node concept="2OqwBi" id="4$j2$kkiyqu" role="37wK5m">
                         <node concept="2GrUjf" id="4$j2$kkiyih" role="2Oq$k0">
@@ -2829,7 +2829,7 @@
                       <node concept="liA8E" id="2zwra1$TF10" role="2OqNvi">
                         <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
                         <node concept="2YIFZM" id="4$j2$kkhous" role="37wK5m">
-                          <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="createEnumLiteral" />
+                          <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="getInstance" />
                           <ref role="1Pybhc" to="pq1l:365yA_OO5FT" resolve="EnumLiteral" />
                           <node concept="2GrUjf" id="4$j2$kkhoWv" role="37wK5m">
                             <ref role="2Gs0qQ" node="2zwra1$TDao" resolve="l" />
@@ -2910,7 +2910,7 @@
                 </node>
                 <node concept="2YIFZM" id="4$j2$kkibej" role="3uHU7w">
                   <ref role="1Pybhc" to="pq1l:365yA_OO5FT" resolve="EnumLiteral" />
-                  <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="createEnumLiteral" />
+                  <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="getInstance" />
                   <node concept="2OqwBi" id="4$j2$kkic0a" role="37wK5m">
                     <node concept="oxGPV" id="4$j2$kkibJa" role="2Oq$k0" />
                     <node concept="3TrEf2" id="4$j2$kkicMg" role="2OqNvi">

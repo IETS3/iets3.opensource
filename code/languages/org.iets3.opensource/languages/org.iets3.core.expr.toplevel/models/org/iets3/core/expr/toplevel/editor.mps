@@ -1989,18 +1989,6 @@
         </node>
       </node>
       <node concept="_tjkj" id="365yA_N$Zyn" role="3EZMnx">
-        <node concept="ZYGn8" id="365yA_N_0ba" role="ZWbT9">
-          <node concept="3clFbS" id="365yA_N_0bb" role="2VODD2">
-            <node concept="3clFbF" id="365yA_N_0c0" role="3cqZAp">
-              <node concept="Xl_RD" id="365yA_N_0bZ" role="3clFbG">
-                <property role="Xl_RC" value="order" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3F1sOY" id="wlV$3lAU9q" role="_tjki">
-          <ref role="1NtTu8" to="yv47:6PMVc5H_jOd" resolve="order" />
-        </node>
         <node concept="uPpia" id="wlV$3lDYlI" role="1djCvC">
           <node concept="3clFbS" id="wlV$3lDYlJ" role="2VODD2">
             <node concept="3clFbF" id="wlV$3lDYqr" role="3cqZAp">
@@ -2009,6 +1997,16 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="3EZMnI" id="6ww1tcsEGEg" role="_tjki">
+          <node concept="3F0ifn" id="6ww1tcsEGEv" role="3EZMnx">
+            <property role="3F0ifm" value="order" />
+          </node>
+          <node concept="3F1sOY" id="wlV$3lAU9q" role="3EZMnx">
+            <ref role="1NtTu8" to="yv47:6PMVc5H_jOd" resolve="order" />
+          </node>
+          <node concept="2iRfu4" id="6ww1tcsEGEj" role="2iSdaV" />
+          <node concept="VPM3Z" id="6ww1tcsEGEk" role="3F10Kt" />
         </node>
       </node>
       <node concept="3F0ifn" id="365yA_NB4Ey" role="3EZMnx">
@@ -4959,19 +4957,11 @@
       </node>
     </node>
   </node>
-  <node concept="PKFIW" id="wlV$3lvXc8">
-    <property role="3GE5qa" value="enum" />
-    <property role="TrG5h" value="EnumSortOrderEditor" />
-    <ref role="1XX52x" to="yv47:wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
-    <node concept="PMmxH" id="wlV$3lvXca" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-    </node>
-  </node>
   <node concept="24kQdi" id="wlV$3lAU9R">
     <property role="3GE5qa" value="enum" />
     <ref role="1XX52x" to="yv47:wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
-    <node concept="PMmxH" id="wlV$3lAU9T" role="2wV5jI">
-      <ref role="PMmxG" node="wlV$3lvXc8" resolve="AbstractEnumSortOrderEditor" />
+    <node concept="PMmxH" id="6ww1tcsEGJG" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
