@@ -7220,7 +7220,7 @@
   </node>
   <node concept="22mcaB" id="6GiZkUz7t5K">
     <property role="3GE5qa" value="tuples" />
-    <ref role="aqKnT" to="hm2y:6GiZkUz7qWO" resolve="InlinedNamedTupleAccess" />
+    <ref role="aqKnT" to="hm2y:6GiZkUz7qWO" resolve="InlineNamedTupleAccess" />
     <node concept="2F$Pav" id="2Q7faZZqpyr" role="3ft7WO">
       <node concept="3eGOop" id="2Q7faZZrL1w" role="2$S_pN">
         <node concept="ucgPf" id="2Q7faZZrL1y" role="3aKz83">
@@ -7228,7 +7228,7 @@
             <node concept="3clFbF" id="2Q7faZZrLgx" role="3cqZAp">
               <node concept="2pJPEk" id="2Q7faZZrLgv" role="3clFbG">
                 <node concept="2pJPED" id="2Q7faZZrLmR" role="2pJPEn">
-                  <ref role="2pJxaS" to="hm2y:6GiZkUz7qWO" resolve="InlinedNamedTupleAccess" />
+                  <ref role="2pJxaS" to="hm2y:6GiZkUz7qWO" resolve="InlineNamedTupleAccess" />
                   <node concept="2pIpSj" id="6GiZkUz7zPx" role="2pJxcM">
                     <ref role="2pIpSl" to="hm2y:6GiZkUz7r1V" resolve="member" />
                     <node concept="36biLy" id="6GiZkUz7zSt" role="28nt2d">
@@ -7354,7 +7354,7 @@
   </node>
   <node concept="24kQdi" id="6GiZkUzcMTp">
     <property role="3GE5qa" value="tuples" />
-    <ref role="1XX52x" to="hm2y:6GiZkUz7qWO" resolve="InlinedNamedTupleAccess" />
+    <ref role="1XX52x" to="hm2y:6GiZkUz7qWO" resolve="InlineNamedTupleAccess" />
     <node concept="1iCGBv" id="6GiZkUzcMTr" role="2wV5jI">
       <ref role="1NtTu8" to="hm2y:6GiZkUz7r1V" resolve="member" />
       <node concept="1sVBvm" id="6GiZkUzcMTt" role="1sWHZn">

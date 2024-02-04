@@ -2221,7 +2221,7 @@
   <node concept="1TIwiD" id="6GiZkUz7qWO">
     <property role="EcuMT" value="7715507625824988980" />
     <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="InlinedNamedTupleAccess" />
+    <property role="TrG5h" value="InlineNamedTupleAccess" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="6GiZkUz7r1V" role="1TKVEi">
       <property role="IQ2ns" value="7715507625824989307" />

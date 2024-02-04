@@ -11059,7 +11059,7 @@
     </node>
     <node concept="1YaCAy" id="6GiZkUz7CB4" role="1YuTPh">
       <property role="TrG5h" value="inta" />
-      <ref role="1YaFvo" to="hm2y:6GiZkUz7qWO" resolve="InlinedNamedTupleAccess" />
+      <ref role="1YaFvo" to="hm2y:6GiZkUz7qWO" resolve="InlineNamedTupleAccess" />
     </node>
   </node>
 </model>

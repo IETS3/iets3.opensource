@@ -1100,7 +1100,7 @@
   </node>
   <node concept="1M2fIO" id="6GiZkUz7$Pr">
     <property role="3GE5qa" value="tuples" />
-    <ref role="1M2myG" to="hm2y:6GiZkUz7qWO" resolve="InlinedNamedTupleAccess" />
+    <ref role="1M2myG" to="hm2y:6GiZkUz7qWO" resolve="InlineNamedTupleAccess" />
     <node concept="9S07l" id="6GiZkUz7$Ps" role="9Vyp8">
       <node concept="3clFbS" id="6GiZkUz7$Pt" role="2VODD2">
         <node concept="3clFbF" id="6GiZkUz7$X6" role="3cqZAp">

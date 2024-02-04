@@ -27409,7 +27409,7 @@
   </node>
   <node concept="13h7C7" id="6GiZkUz7qWV">
     <property role="3GE5qa" value="tuples" />
-    <ref role="13h7C2" to="hm2y:6GiZkUz7qWO" resolve="InlinedNamedTupleAccess" />
+    <ref role="13h7C2" to="hm2y:6GiZkUz7qWO" resolve="InlineNamedTupleAccess" />
     <node concept="13hLZK" id="6GiZkUz7qWW" role="13h7CW">
       <node concept="3clFbS" id="6GiZkUz7qWX" role="2VODD2" />
     </node>
