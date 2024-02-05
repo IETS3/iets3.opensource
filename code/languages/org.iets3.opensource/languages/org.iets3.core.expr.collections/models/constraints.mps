@@ -1028,25 +1028,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="672JozYGA3d" role="3cqZAp">
-          <node concept="3clFbS" id="672JozYGA3e" role="3clFbx">
-            <node concept="3cpWs6" id="672JozYGA3f" role="3cqZAp">
-              <node concept="3clFbT" id="672JozYGA3g" role="3cqZAk">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="672JozYGA3h" role="3clFbw">
-            <node concept="37vLTw" id="672JozYGA3i" role="2Oq$k0">
-              <ref role="3cqZAo" node="6XBPhggEzuo" resolve="tt" />
-            </node>
-            <node concept="1mIQ4w" id="672JozYGA3j" role="2OqNvi">
-              <node concept="chp4Y" id="672JozYJTtr" role="cj9EA">
-                <ref role="cht4Q" to="hm2y:4ZbdskT0qlt" resolve="ITupleType" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="6XBPhggEzuC" role="3cqZAp">
           <node concept="3clFbS" id="6XBPhggEzuD" role="3clFbx">
             <node concept="3cpWs6" id="6XBPhggEzuE" role="3cqZAp">
