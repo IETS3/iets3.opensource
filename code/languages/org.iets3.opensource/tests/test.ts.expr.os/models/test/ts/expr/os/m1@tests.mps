@@ -98,7 +98,6 @@
       <concept id="161551962036658012" name="org.iets3.core.expr.util.structure.MultiDecTab" flags="ng" index="1fMURV" />
       <concept id="8853770331921611232" name="org.iets3.core.expr.util.structure.IMultiDecTab" flags="ng" index="1vMD3l">
         <reference id="8697767715748449842" name="resultTuple" index="3$Iael" />
-        <child id="1609062041026819473" name="resultTupleDeclaration" index="2ACRNR" />
         <child id="8853770331921611296" name="colDefs" index="1vMDcl" />
         <child id="8853770331921611812" name="rows" index="1vMDkh" />
       </concept>
@@ -16020,9 +16019,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="1SLEKJ" id="1pkymqLocNk" role="2ACRNR">
-                <property role="TrG5h" value="7241462708334131240_ResultTuple" />
-              </node>
             </node>
             <node concept="uhfPG" id="6hYPZtwvBHL" role="1aduh9">
               <ref role="uhfO8" node="6hYPZtwvBuy" resolve="x" />
@@ -16139,21 +16135,6 @@
                     <node concept="1TM$A" id="3eQTdYHnapC" role="7EUXB">
                       <node concept="2PYRI3" id="6GvFh7h3wkB" role="3lydEf">
                         <ref role="39XzEq" to="523r:8XWEtek2IL" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="1SLEKJ" id="1pkymqLocNl" role="2ACRNR">
-                  <property role="TrG5h" value="3726417391033032681_ResultTuple" />
-                  <node concept="1SLn8H" id="1pkymqLocNm" role="1Syw7I">
-                    <property role="TrG5h" value="res1" />
-                    <node concept="mLuIC" id="1pkymqLocNn" role="2S399n" />
-                  </node>
-                  <node concept="1SLn8H" id="1pkymqLocNo" role="1Syw7I">
-                    <property role="TrG5h" value="res2" />
-                    <node concept="mLuIC" id="1pkymqLocNp" role="2S399n">
-                      <node concept="2gteS_" id="1pkymqLocNq" role="2gteVg">
-                        <property role="2gteVv" value="1" />
                       </node>
                     </node>
                   </node>

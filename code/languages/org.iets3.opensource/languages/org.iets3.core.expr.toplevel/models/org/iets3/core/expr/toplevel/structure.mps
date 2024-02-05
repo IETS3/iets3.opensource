@@ -1276,11 +1276,45 @@
       <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4ZbdskR3pBE">
+    <property role="EcuMT" value="5749748470417037802" />
+    <property role="TrG5h" value="NamedTupleDeclaration" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="34LRSv" value="named tuple" />
+    <property role="R4oN_" value="a tuple declaration with named members" />
+    <ref role="1TJDcQ" node="7zXSNv$jGoK" resolve="AbstractTypeDeclaration" />
+    <node concept="PrWs8" id="4ZbdskRgjgH" role="PzmwI">
+      <ref role="PrY4T" node="4ZbdskRggS1" resolve="ITupleDeclaration" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4ZbdskR3pBF">
+    <property role="EcuMT" value="5749748470417037803" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="TrG5h" value="ITupleMember" />
+    <node concept="PrWs8" id="4ZbdskR3pBG" role="PrDN$">
+      <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
+    </node>
+    <node concept="PrWs8" id="4ZbdskR3pBI" role="PrDN$">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="4ZbdskR3pBL" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:4WLweXm3SVw" resolve="ITypeable" />
+    </node>
+    <node concept="PrWs8" id="4ZbdskR3pBP" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
+    <node concept="PrWs8" id="4ZbdskR3pBU" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="4ZbdskR3pC0" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:4AahbtUNHrQ" resolve="IProgramLocationProvider" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="4ZbdskR3wqq">
     <property role="EcuMT" value="5749748470417065626" />
     <property role="3GE5qa" value="tuples" />
     <property role="TrG5h" value="EmptyTupleMember" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="4ZbdskR3wqr" role="PzmwI">
       <ref role="PrY4T" node="4ZbdskR3pBF" resolve="ITupleMember" />
     </node>
@@ -1289,6 +1323,22 @@
     </node>
     <node concept="PrWs8" id="4ZbdskR3wqw" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4ZbdskR3$vC">
+    <property role="EcuMT" value="5749748470417082344" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="TrG5h" value="TupleMember" />
+    <property role="R4oN_" value="a new member in this tuple" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="4ZbdskR3$zZ" role="PzmwI">
+      <ref role="PrY4T" node="4ZbdskR3pBF" resolve="ITupleMember" />
+    </node>
+    <node concept="PrWs8" id="4ZbdskR3$$1" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="4ZbdskR3$$4" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
   </node>
   <node concept="PlHQZ" id="4ZbdskRggS1">
@@ -1324,6 +1374,22 @@
       <ref role="PrY4T" to="hm2y:4AahbtUNHrQ" resolve="IProgramLocationProvider" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4ZbdskRgu$y">
+    <property role="EcuMT" value="5749748470420465954" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="TrG5h" value="NamedTupleType" />
+    <property role="R4oN_" value="a n-nary named tuple type" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="4ZbdskRgu_6" role="1TKVEi">
+      <property role="IQ2ns" value="5749748470420465990" />
+      <property role="20kJfa" value="tuple" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4ZbdskR3pBE" resolve="NamedTupleDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4ZbdskT0qly" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4ZbdskT0qlt" resolve="ITupleType" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="4ZbdskRDH_N">
     <property role="EcuMT" value="5749748470427081075" />
     <property role="3GE5qa" value="tuples" />
@@ -1344,72 +1410,6 @@
     </node>
     <node concept="PrWs8" id="7yOFqurE$VZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="4ZbdskR3pBF">
-    <property role="EcuMT" value="5749748470417037803" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="ITupleMember" />
-    <node concept="PrWs8" id="4ZbdskR3pBG" role="PrDN$">
-      <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
-    </node>
-    <node concept="PrWs8" id="4ZbdskR3pBI" role="PrDN$">
-      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="4ZbdskR3pBL" role="PrDN$">
-      <ref role="PrY4T" to="hm2y:4WLweXm3SVw" resolve="ITypeable" />
-    </node>
-    <node concept="PrWs8" id="4ZbdskR3pBP" role="PrDN$">
-      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
-    </node>
-    <node concept="PrWs8" id="4ZbdskR3pBU" role="PrDN$">
-      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
-    </node>
-    <node concept="PrWs8" id="4ZbdskR3pC0" role="PrDN$">
-      <ref role="PrY4T" to="hm2y:4AahbtUNHrQ" resolve="IProgramLocationProvider" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4ZbdskR3$vC">
-    <property role="EcuMT" value="5749748470417082344" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="TupleMember" />
-    <property role="R4oN_" value="a new member in this tuple" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4ZbdskR3$zZ" role="PzmwI">
-      <ref role="PrY4T" node="4ZbdskR3pBF" resolve="ITupleMember" />
-    </node>
-    <node concept="PrWs8" id="4ZbdskR3$$1" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
-    </node>
-    <node concept="PrWs8" id="4ZbdskR3$$4" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4ZbdskR3pBE">
-    <property role="EcuMT" value="5749748470417037802" />
-    <property role="TrG5h" value="NamedTupleDeclaration" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="34LRSv" value="named tuple" />
-    <property role="R4oN_" value="a tuple declaration with named members" />
-    <ref role="1TJDcQ" node="7zXSNv$jGoK" resolve="AbstractTypeDeclaration" />
-    <node concept="PrWs8" id="4ZbdskRgjgH" role="PzmwI">
-      <ref role="PrY4T" node="4ZbdskRggS1" resolve="ITupleDeclaration" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4ZbdskRgu$y">
-    <property role="EcuMT" value="5749748470420465954" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="NamedTupleType" />
-    <property role="R4oN_" value="a n-nary named tuple type" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    <node concept="1TJgyj" id="4ZbdskRgu_6" role="1TKVEi">
-      <property role="IQ2ns" value="5749748470420465990" />
-      <property role="20kJfa" value="tuple" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4ZbdskR3pBE" resolve="NamedTupleDeclaration" />
-    </node>
-    <node concept="PrWs8" id="4ZbdskT0qly" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:4ZbdskT0qlt" resolve="ITupleType" />
     </node>
   </node>
   <node concept="1TIwiD" id="4ZbdskRgKyK">
