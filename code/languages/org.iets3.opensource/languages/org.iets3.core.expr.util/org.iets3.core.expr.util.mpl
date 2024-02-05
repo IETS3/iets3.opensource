@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.iets3.core.expr.util" uuid="8bb1251e-eae5-47ab-9843-33adfae8edaa" languageVersion="3" moduleVersion="2">
+<language namespace="org.iets3.core.expr.util" uuid="8bb1251e-eae5-47ab-9843-33adfae8edaa" languageVersion="2" moduleVersion="2">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
