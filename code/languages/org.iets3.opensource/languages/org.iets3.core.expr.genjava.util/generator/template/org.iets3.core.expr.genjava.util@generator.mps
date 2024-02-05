@@ -569,6 +569,13 @@
           </node>
         </node>
       </node>
+      <node concept="2aEySx" id="5gz1ElMSzRE" role="lGtFl">
+        <node concept="19SGf9" id="5gz1ElMSzRF" role="2aEySw">
+          <node concept="19SUe$" id="5gz1ElMSzRG" role="19SJt6">
+            <property role="19SUeA" value="desugaring mandatory, because ResultColDef are not preserved during gen." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3aamgX" id="5Jw72wdrQDO" role="3acgRq">
       <property role="36QftV" value="true" />
