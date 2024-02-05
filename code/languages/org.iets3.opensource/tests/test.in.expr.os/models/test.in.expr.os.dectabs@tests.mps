@@ -73,6 +73,9 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="1019070541450015930" name="org.iets3.core.expr.base.structure.TupleType" flags="ng" index="m5gfS">
+        <child id="1019070541450015931" name="elementTypes" index="m5gfT" />
+      </concept>
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -150,9 +153,6 @@
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
       <concept id="5749748470420409857" name="org.iets3.core.expr.toplevel.structure.ITupleDeclaration" flags="ng" index="1SyzJ4">
         <child id="5749748470420419627" name="members" index="1Syw7I" />
-      </concept>
-      <concept id="5749748470420465954" name="org.iets3.core.expr.toplevel.structure.NamedTupleType" flags="ng" index="1SyHNB">
-        <reference id="5749748470420465990" name="tuple" index="1SyHM3" />
       </concept>
       <concept id="5749748470417082344" name="org.iets3.core.expr.toplevel.structure.TupleMember" flags="ng" index="1SLn8H" />
       <concept id="5749748470417037802" name="org.iets3.core.expr.toplevel.structure.NamedTupleDeclaration" flags="ng" index="1SLEKJ" />
@@ -910,22 +910,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="6OunYCfqiYO" role="_iOnB" />
-    <node concept="1SLEKJ" id="1pkymqL_Qs3" role="_iOnB">
-      <property role="TrG5h" value="FareAndDiscount" />
-      <node concept="1SLn8H" id="1pkymqL_QTV" role="1Syw7I">
-        <property role="TrG5h" value="currency" />
-        <node concept="1WbbFT" id="1pkymqL_QTY" role="2S399n">
-          <ref role="1WbbFS" node="6OunYCfqD$8" resolve="Currency" />
-        </node>
-      </node>
-      <node concept="1SLn8H" id="1pkymqL_QUq" role="1Syw7I">
-        <property role="TrG5h" value="percentage" />
-        <node concept="1WbbFT" id="1pkymqL_QUv" role="2S399n">
-          <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
-        </node>
-      </node>
-    </node>
-    <node concept="_ixoA" id="1pkymqL_PYo" role="_iOnB" />
     <node concept="1aga60" id="6OunYCfqwc5" role="_iOnB">
       <property role="TrG5h" value="calculateFare" />
       <node concept="1fMURV" id="6OunYCfqx56" role="1ahQXP">
@@ -1184,8 +1168,13 @@
         <property role="TrG5h" value="club" />
         <node concept="2vmvy5" id="6OunYCfq$1p" role="3ix9CU" />
       </node>
-      <node concept="1SyHNB" id="1pkymqL_RvP" role="2zM23F">
-        <ref role="1SyHM3" node="1pkymqL_Qs3" resolve="FareAndDiscount" />
+      <node concept="m5gfS" id="6OunYCfqHUN" role="2zM23F">
+        <node concept="1WbbFT" id="6OunYCfqHUO" role="m5gfT">
+          <ref role="1WbbFS" node="6OunYCfqD$8" resolve="Currency" />
+        </node>
+        <node concept="1WbbFT" id="6OunYCfqHUP" role="m5gfT">
+          <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
+        </node>
       </node>
     </node>
     <node concept="_ixoA" id="6OunYCfqJny" role="_iOnB" />
