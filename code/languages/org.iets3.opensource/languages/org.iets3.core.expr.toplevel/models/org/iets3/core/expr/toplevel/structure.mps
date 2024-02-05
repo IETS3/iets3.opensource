@@ -1286,21 +1286,21 @@
     <property role="EcuMT" value="7886626212990500095" />
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumSortByLiteral" />
-    <property role="34LRSv" value="order by literal" />
+    <property role="34LRSv" value="by literal" />
     <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
   </node>
   <node concept="1TIwiD" id="6PMVc5H_jO2">
     <property role="EcuMT" value="7886626212990500098" />
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumSortByValue" />
-    <property role="34LRSv" value="order by value" />
+    <property role="34LRSv" value="by value" />
     <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
   </node>
   <node concept="1TIwiD" id="6PMVc5H_jO5">
     <property role="EcuMT" value="7886626212990500101" />
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumSortByDeclaration" />
-    <property role="34LRSv" value="order by declaration " />
+    <property role="34LRSv" value="by declaration" />
     <property role="R4oN_" value="order by occurence within declaration " />
     <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
   </node>

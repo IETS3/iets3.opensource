@@ -2121,7 +2121,7 @@
       <node concept="3Tm1VV" id="365yA_OO6AL" role="1B3o_S" />
       <node concept="10Oyi0" id="365yA_OO6AN" role="3clF45" />
       <node concept="37vLTG" id="365yA_OO6AO" role="3clF46">
-        <property role="TrG5h" value="enumLiteral" />
+        <property role="TrG5h" value="other" />
         <node concept="3uibUv" id="365yA_OO6AQ" role="1tU5fm">
           <ref role="3uigEE" node="365yA_OO5FT" resolve="EnumLiteral" />
         </node>
@@ -2146,14 +2146,17 @@
             <node concept="3clFbS" id="wlV$3ktZtI" role="1pnPq1">
               <node concept="3cpWs6" id="wlV$3ku3BB" role="3cqZAp">
                 <node concept="3cpWsd" id="wlV$3ku3BC" role="3cqZAk">
-                  <node concept="1rXfSq" id="wlV$3ku3BD" role="3uHU7B">
-                    <ref role="37wK5l" node="4$j2$kkcHdR" resolve="getIndex" />
-                  </node>
                   <node concept="2OqwBi" id="wlV$3ku3BE" role="3uHU7w">
                     <node concept="37vLTw" id="wlV$3ku3BF" role="2Oq$k0">
                       <ref role="3cqZAo" node="365yA_OO6AO" resolve="enumLiteral" />
                     </node>
                     <node concept="liA8E" id="wlV$3ku3BG" role="2OqNvi">
+                      <ref role="37wK5l" node="4$j2$kkcHdR" resolve="getIndex" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2nSV6xMIzA9" role="3uHU7B">
+                    <node concept="Xjq3P" id="2nSV6xMIz84" role="2Oq$k0" />
+                    <node concept="liA8E" id="2nSV6xMIAb1" role="2OqNvi">
                       <ref role="37wK5l" node="4$j2$kkcHdR" resolve="getIndex" />
                     </node>
                   </node>
