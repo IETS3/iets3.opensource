@@ -1761,12 +1761,17 @@
                 </node>
                 <node concept="1eOMI4" id="4$j2$kkgKUL" role="10QFUP">
                   <node concept="2OqwBi" id="4$j2$kkge1P" role="1eOMHV">
-                    <node concept="2OqwBi" id="4$j2$kkge1Q" role="2Oq$k0">
-                      <node concept="37vLTw" id="4$j2$kkge1R" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4$j2$kkg2Qn" resolve="ctx" />
+                    <node concept="2OqwBi" id="4Vdc9qSibVl" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4$j2$kkge1Q" role="2Oq$k0">
+                        <node concept="37vLTw" id="4$j2$kkge1R" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4$j2$kkg2Qn" resolve="ctx" />
+                        </node>
+                        <node concept="liA8E" id="4$j2$kkge1S" role="2OqNvi">
+                          <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
+                        </node>
                       </node>
-                      <node concept="liA8E" id="4$j2$kkge1S" role="2OqNvi">
-                        <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
+                      <node concept="liA8E" id="4Vdc9qSie77" role="2OqNvi">
+                        <ref role="37wK5l" to="2ahs:7g1Uk$b6H$v" resolve="getRootEnvironment" />
                       </node>
                     </node>
                     <node concept="liA8E" id="4$j2$kkge1T" role="2OqNvi">
