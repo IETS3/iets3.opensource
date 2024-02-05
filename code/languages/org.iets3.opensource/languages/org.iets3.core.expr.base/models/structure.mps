@@ -1114,9 +1114,6 @@
       <property role="IQ2ns" value="1019070541450015931" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
-    <node concept="PrWs8" id="4ZbdskT0ql$" role="PzmwI">
-      <ref role="PrY4T" node="4ZbdskT0qlt" resolve="ITupleType" />
-    </node>
   </node>
   <node concept="1TIwiD" id="S$tO8ocnpq">
     <property role="TrG5h" value="TupleValue" />
@@ -1125,9 +1122,6 @@
     <property role="EcuMT" value="1019070541450016346" />
     <property role="R4oN_" value="a n-ary tuple value" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="PrWs8" id="4ZbdskSW3CO" role="PzmwI">
-      <ref role="PrY4T" node="4ZbdskSW2Ng" resolve="ITupleValue" />
-    </node>
     <node concept="PrWs8" id="4qVjx3kr2pf" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
@@ -2198,16 +2192,6 @@
   <node concept="PlHQZ" id="6wzrxL38hak">
     <property role="EcuMT" value="7503962471793758868" />
     <property role="TrG5h" value="IPreferredProposalContext" />
-  </node>
-  <node concept="PlHQZ" id="4ZbdskSW2Ng">
-    <property role="EcuMT" value="5749748470448663760" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="ITupleValue" />
-  </node>
-  <node concept="PlHQZ" id="4ZbdskT0qlt">
-    <property role="EcuMT" value="5749748470449808733" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="ITupleType" />
   </node>
 </model>
 
