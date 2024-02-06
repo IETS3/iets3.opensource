@@ -53,7 +53,6 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="784421273959492578" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_IncludeMenu" flags="ng" index="mvV$s">
         <child id="784421273959492606" name="nodeFunction" index="mvV$0" />
-        <child id="6718020819487784677" name="menuReference" index="A14EM" />
       </concept>
       <concept id="784421273959493166" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_TargetNode" flags="ig" index="mvVNg" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
@@ -1221,11 +1220,6 @@
         </node>
       </node>
       <node concept="L$LW2" id="cEt5uj8MY$" role="1Qtc8A" />
-      <node concept="mvV$s" id="cEt5uj8N1X" role="1Qtc8A">
-        <node concept="A1WHu" id="cEt5uj8N1Y" role="A14EM">
-          <ref role="A1WHt" node="cEt5uj8N0C" resolve="UnitReference_AddExponent" />
-        </node>
-      </node>
       <node concept="mvV$s" id="76ZhK6Y1Iwu" role="1Qtc8A">
         <node concept="mvVNg" id="76ZhK6Y1Iwy" role="mvV$0">
           <node concept="3clFbS" id="76ZhK6Y1Iwz" role="2VODD2">
