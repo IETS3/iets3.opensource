@@ -16,6 +16,7 @@
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="pq1l" ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
+    <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -86,13 +87,6 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ" />
-      <concept id="1109279851642" name="jetbrains.mps.baseLanguage.structure.GenericDeclaration" flags="ng" index="16eOlS">
-        <child id="1109279881614" name="typeVariableDeclaration" index="16eVyc" />
-      </concept>
-      <concept id="1109283449304" name="jetbrains.mps.baseLanguage.structure.TypeVariableReference" flags="in" index="16syzq">
-        <reference id="1109283546497" name="typeVariableDeclaration" index="16sUi3" />
-      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -110,7 +104,6 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -186,7 +179,6 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -4085,7 +4077,7 @@
                 <node concept="1eOMI4" id="2OJHliZu83c" role="2Oq$k0">
                   <node concept="10QFUN" id="2OJHliZu839" role="1eOMHV">
                     <node concept="3uibUv" id="2OJHliZu8HI" role="10QFUM">
-                      <ref role="3uigEE" node="2OJHliYY4mW" resolve="IComparator" />
+                      <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
                     </node>
                     <node concept="37vLTw" id="2OJHliZu3dR" role="10QFUP">
                       <ref role="3cqZAo" node="36hsHVf8gxf" resolve="n1" />
@@ -4093,7 +4085,10 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2OJHliZuc2d" role="2OqNvi">
-                  <ref role="37wK5l" node="2OJHliYY61B" resolve="compareWith" />
+                  <ref role="37wK5l" to="33ny:~Comparator.compare(java.lang.Object,java.lang.Object)" resolve="compare" />
+                  <node concept="37vLTw" id="4xqUaW4vyVj" role="37wK5m">
+                    <ref role="3cqZAo" node="36hsHVf8gxf" resolve="n1" />
+                  </node>
                   <node concept="37vLTw" id="768MZDbo4ax" role="37wK5m">
                     <ref role="3cqZAo" node="36hsHVf8gxh" resolve="n2" />
                   </node>
@@ -4104,7 +4099,7 @@
           <node concept="1Wc70l" id="3NrZJIBLN7W" role="3clFbw">
             <node concept="2ZW3vV" id="3NrZJIBLQOx" role="3uHU7w">
               <node concept="3uibUv" id="3NrZJIBLSBu" role="2ZW6by">
-                <ref role="3uigEE" node="2OJHliYY4mW" resolve="IComparator" />
+                <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
               </node>
               <node concept="37vLTw" id="3NrZJIBLOVY" role="2ZW6bz">
                 <ref role="3cqZAo" node="36hsHVf8gxh" resolve="n2" />
@@ -4131,7 +4126,7 @@
               </node>
               <node concept="2ZW3vV" id="3NrZJIBKKZu" role="3uHU7w">
                 <node concept="3uibUv" id="3NrZJIBKMUr" role="2ZW6by">
-                  <ref role="3uigEE" node="2OJHliYY4mW" resolve="IComparator" />
+                  <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
                 </node>
                 <node concept="37vLTw" id="3NrZJIBKJ5R" role="2ZW6bz">
                   <ref role="3cqZAo" node="36hsHVf8gxf" resolve="n1" />
@@ -4656,26 +4651,6 @@
           <property role="1dT_AB" value="Generic helper methods for objects" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="3HP615" id="2OJHliYY4mW">
-    <property role="TrG5h" value="IComparator" />
-    <node concept="3clFb_" id="2OJHliYY61B" role="jymVt">
-      <property role="TrG5h" value="compareWith" />
-      <node concept="3clFbS" id="2OJHliYY61E" role="3clF47" />
-      <node concept="3Tm1VV" id="2OJHliYY61F" role="1B3o_S" />
-      <node concept="10Oyi0" id="2OJHliZ6Afc" role="3clF45" />
-      <node concept="37vLTG" id="2OJHliZ5ZGd" role="3clF46">
-        <property role="TrG5h" value="value" />
-        <node concept="16syzq" id="3NrZJIC8T4F" role="1tU5fm">
-          <ref role="16sUi3" node="3NrZJIC8T4g" resolve="E" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2OJHliYY4o0" role="jymVt" />
-    <node concept="3Tm1VV" id="2OJHliYY4mX" role="1B3o_S" />
-    <node concept="16euLQ" id="3NrZJIC8T4g" role="16eVyc">
-      <property role="TrG5h" value="T" />
     </node>
   </node>
 </model>
