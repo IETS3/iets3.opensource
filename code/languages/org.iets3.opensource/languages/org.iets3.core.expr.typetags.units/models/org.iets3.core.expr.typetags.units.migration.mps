@@ -3324,7 +3324,7 @@
                         <ref role="ehGHo" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
                       </node>
                       <node concept="1rXfSq" id="3L5pZbdUyEI" role="33vP2m">
-                        <ref role="37wK5l" node="3pG3MI6vva_" resolve="replaceQuantity" />
+                        <ref role="37wK5l" node="3pG3MI6vva_" resolve="createNewQuantity" />
                         <node concept="37vLTw" id="3L5pZbdUyEJ" role="37wK5m">
                           <ref role="3cqZAo" node="3pG3MI6v8ye" resolve="oldQuantity" />
                         </node>
@@ -3360,7 +3360,7 @@
                       </node>
                       <node concept="1P9Npp" id="3pG3MI6yL7P" role="2OqNvi">
                         <node concept="37vLTw" id="3L5pZbdUyEK" role="1P9ThW">
-                          <ref role="3cqZAo" node="3L5pZbdUyEH" resolve="replaceQuantity" />
+                          <ref role="3cqZAo" node="3L5pZbdUyEH" resolve="newQuantity" />
                         </node>
                       </node>
                     </node>
@@ -3428,7 +3428,7 @@
                   </node>
                   <node concept="3clFbF" id="3pG3MI6xkW5" role="3cqZAp">
                     <node concept="37vLTw" id="3L5pZbdS7T_" role="3clFbG">
-                      <ref role="3cqZAo" node="3L5pZbdS7Tv" resolve="addNextSibling" />
+                      <ref role="3cqZAo" node="3L5pZbdS7Tv" resolve="newUnit" />
                     </node>
                   </node>
                 </node>
@@ -3525,7 +3525,7 @@
                       </node>
                       <node concept="1P9Npp" id="5T4gJsGAMwT" role="2OqNvi">
                         <node concept="37vLTw" id="3L5pZbdPyrq" role="1P9ThW">
-                          <ref role="3cqZAo" node="3L5pZbdPyrn" resolve="createNewUnitSpecification" />
+                          <ref role="3cqZAo" node="3L5pZbdPyrn" resolve="newUnitSpecification" />
                         </node>
                       </node>
                     </node>
