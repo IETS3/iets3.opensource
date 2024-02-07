@@ -2,8 +2,8 @@
 <model ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
@@ -11,11 +11,11 @@
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -43,9 +43,9 @@
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="ppzb" ref="r:5db517a0-f62d-4841-a421-11bb7269799d(org.iets3.core.expr.base.shared.runtime)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" />
   </imports>
@@ -547,6 +547,9 @@
     <node concept="3uibUv" id="6MNhNeUh6na" role="EKbjA">
       <ref role="3uigEE" to="2ahs:6MNhNeUeM9i" resolve="IStopAndReturn" />
     </node>
+    <node concept="3uibUv" id="4TtBy4czRM6" role="EKbjA">
+      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
+    </node>
     <node concept="3Tm1VV" id="UN2ftLWgA9" role="1B3o_S" />
     <node concept="3clFb_" id="UN2ftLXFXP" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -670,6 +673,7 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="4TtBy4czSoi" role="jymVt" />
     <node concept="3UR2Jj" id="3iq6R$ZyJbu" role="lGtFl">
       <node concept="TZ5HA" id="3iq6R$ZyJbv" role="TZ5H$">
         <node concept="1dT_AC" id="3iq6R$ZyJbw" role="1dT_Ay">
@@ -677,7 +681,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="4TtBy4czSoi" role="jymVt" />
     <node concept="3clFb_" id="4TtBy4czRUR" role="jymVt">
       <property role="TrG5h" value="compareTo" />
       <node concept="3Tm1VV" id="4TtBy4czRUS" role="1B3o_S" />
@@ -737,9 +740,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="29KNCeybCV7" role="jymVt" />
-    <node concept="3uibUv" id="4TtBy4czRM6" role="EKbjA">
-      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
-    </node>
   </node>
   <node concept="312cEu" id="12WRc298rqY">
     <property role="TrG5h" value="SpecificErrorValue" />
@@ -5034,15 +5034,52 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="29BBztTV4Jd" role="3cqZAp">
-          <node concept="2OqwBi" id="29BBztTV5d7" role="3cqZAk">
-            <node concept="37vLTw" id="29BBztTV4PD" role="2Oq$k0">
-              <ref role="3cqZAo" node="29BBztTV3kj" resolve="l" />
+        <node concept="3J1_TO" id="4dMN4HhUXWP" role="3cqZAp">
+          <node concept="3uVAMA" id="4dMN4HhUXWQ" role="1zxBo5">
+            <node concept="XOnhg" id="4dMN4HhUXWR" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="ex" />
+              <node concept="nSUau" id="4dMN4HhUXWS" role="1tU5fm">
+                <node concept="3uibUv" id="4dMN4HhUXWT" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="29BBztTV63H" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-              <node concept="37vLTw" id="29BBztTV66e" role="37wK5m">
-                <ref role="3cqZAo" node="29BBztTV3kl" resolve="r" />
+            <node concept="3clFbS" id="4dMN4HhUXWU" role="1zc67A">
+              <node concept="3cpWs6" id="4dMN4HhUXWV" role="3cqZAp">
+                <node concept="3clFbT" id="4dMN4HhUXWW" role="3cqZAk">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="4dMN4HhUXWX" role="1zxBo7">
+            <node concept="3cpWs6" id="4dMN4HhUXWY" role="3cqZAp">
+              <node concept="3clFbC" id="1aGchTf48xf" role="3cqZAk">
+                <node concept="2OqwBi" id="4dMN4HhUXX0" role="3uHU7B">
+                  <node concept="2ShNRf" id="4dMN4HhUXX1" role="2Oq$k0">
+                    <node concept="1pGfFk" id="4dMN4HhUXX2" role="2ShVmc">
+                      <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
+                      <node concept="37vLTw" id="4dMN4HhUXX3" role="37wK5m">
+                        <ref role="3cqZAo" node="29BBztTV3kj" resolve="l" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4dMN4HhUXX4" role="2OqNvi">
+                    <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
+                    <node concept="2ShNRf" id="4dMN4HhUXX5" role="37wK5m">
+                      <node concept="1pGfFk" id="4dMN4HhUXX6" role="2ShVmc">
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
+                        <node concept="37vLTw" id="4dMN4HhUXX7" role="37wK5m">
+                          <ref role="3cqZAo" node="29BBztTV3kl" resolve="r" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cmrfG" id="4dMN4HhUXX8" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
               </node>
             </node>
           </node>
