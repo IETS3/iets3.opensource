@@ -45,6 +45,12 @@
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -59,8 +65,12 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
+        <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
@@ -87,6 +97,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -104,6 +117,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -150,6 +164,7 @@
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
@@ -183,7 +198,12 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+      <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
+        <reference id="1170346070688" name="classifier" index="1Y3XeK" />
+        <child id="1201186121363" name="typeParameter" index="2Ghqu4" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -4006,6 +4026,126 @@
   </node>
   <node concept="312cEu" id="36hsHVf8gww">
     <property role="TrG5h" value="OH" />
+    <node concept="2tJIrI" id="E5fBuTlCar" role="jymVt" />
+    <node concept="2tJIrI" id="UXPcFkj2dF" role="jymVt" />
+    <node concept="Wx3nA" id="4UpGdVfRwLx" role="jymVt">
+      <property role="TrG5h" value="predicateComparable" />
+      <node concept="3uibUv" id="4UpGdVfRwLz" role="1tU5fm">
+        <ref role="3uigEE" to="82uw:~Predicate" resolve="Predicate" />
+      </node>
+      <node concept="2ShNRf" id="4UpGdVfRwL$" role="33vP2m">
+        <node concept="YeOm9" id="4UpGdVfRwL_" role="2ShVmc">
+          <node concept="1Y3b0j" id="4UpGdVfRwLA" role="YeSDq">
+            <property role="2bfB8j" value="true" />
+            <property role="373rjd" value="true" />
+            <ref role="1Y3XeK" to="82uw:~Predicate" resolve="Predicate" />
+            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+            <node concept="3Tm1VV" id="4UpGdVfRwLB" role="1B3o_S" />
+            <node concept="3clFb_" id="4UpGdVfRwLC" role="jymVt">
+              <property role="TrG5h" value="test" />
+              <node concept="3Tm1VV" id="4UpGdVfRwLD" role="1B3o_S" />
+              <node concept="10P_77" id="4UpGdVfRwLE" role="3clF45" />
+              <node concept="37vLTG" id="4UpGdVfRwLF" role="3clF46">
+                <property role="TrG5h" value="object" />
+                <node concept="3uibUv" id="4UpGdVfRwLG" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="4UpGdVfRwLH" role="3clF47">
+                <node concept="3cpWs6" id="4UpGdVfRwLI" role="3cqZAp">
+                  <node concept="3y3z36" id="4UpGdVfRwLJ" role="3cqZAk">
+                    <node concept="10Nm6u" id="4UpGdVfRwLK" role="3uHU7w" />
+                    <node concept="37vLTw" id="4UpGdVfRwLL" role="3uHU7B">
+                      <ref role="3cqZAo" node="4UpGdVfRwLF" resolve="object" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2AHcQZ" id="4UpGdVfRwLM" role="2AJF6D">
+                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+              </node>
+            </node>
+            <node concept="3uibUv" id="4UpGdVfRwLN" role="2Ghqu4">
+              <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="4UpGdVfRwLO" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="4UpGdVfRxKb" role="jymVt">
+      <property role="TrG5h" value="predicateIComparator" />
+      <node concept="3uibUv" id="4UpGdVfRxKd" role="1tU5fm">
+        <ref role="3uigEE" to="82uw:~Predicate" resolve="Predicate" />
+      </node>
+      <node concept="2ShNRf" id="4UpGdVfRxKe" role="33vP2m">
+        <node concept="YeOm9" id="4UpGdVfRxKf" role="2ShVmc">
+          <node concept="1Y3b0j" id="4UpGdVfRxKg" role="YeSDq">
+            <property role="2bfB8j" value="true" />
+            <property role="373rjd" value="true" />
+            <ref role="1Y3XeK" to="82uw:~Predicate" resolve="Predicate" />
+            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+            <node concept="3Tm1VV" id="4UpGdVfRxKh" role="1B3o_S" />
+            <node concept="3clFb_" id="4UpGdVfRxKi" role="jymVt">
+              <property role="TrG5h" value="test" />
+              <node concept="3Tm1VV" id="4UpGdVfRxKj" role="1B3o_S" />
+              <node concept="10P_77" id="4UpGdVfRxKk" role="3clF45" />
+              <node concept="37vLTG" id="4UpGdVfRxKl" role="3clF46">
+                <property role="TrG5h" value="object" />
+                <node concept="3uibUv" id="4UpGdVfRxKm" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="4UpGdVfRxKn" role="3clF47">
+                <node concept="3cpWs6" id="4UpGdVfRxKo" role="3cqZAp">
+                  <node concept="3y3z36" id="4UpGdVfRxKp" role="3cqZAk">
+                    <node concept="10Nm6u" id="4UpGdVfRxKq" role="3uHU7w" />
+                    <node concept="37vLTw" id="4UpGdVfRxKr" role="3uHU7B">
+                      <ref role="3cqZAo" node="4UpGdVfRxKl" resolve="object" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2AHcQZ" id="4UpGdVfRxKs" role="2AJF6D">
+                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+              </node>
+            </node>
+            <node concept="3uibUv" id="4UpGdVfRxKt" role="2Ghqu4">
+              <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="4UpGdVfRxKu" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3tB7DXSOjSw" role="jymVt" />
+    <node concept="2YIFZL" id="4UpGdVfRtuP" role="jymVt">
+      <property role="TrG5h" value="predicate" />
+      <node concept="3clFbS" id="4UpGdVfRtuV" role="3clF47">
+        <node concept="3clFbF" id="4UpGdVfRtuW" role="3cqZAp">
+          <node concept="2OqwBi" id="4UpGdVfRtuY" role="3clFbG">
+            <node concept="37vLTw" id="4UpGdVfRtuZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="4UpGdVfRwLx" resolve="predicateComparable" />
+            </node>
+            <node concept="liA8E" id="4UpGdVfRtv0" role="2OqNvi">
+              <ref role="37wK5l" to="82uw:~Predicate.or(java.util.function.Predicate)" resolve="or" />
+              <node concept="37vLTw" id="4UpGdVfRyIV" role="37wK5m">
+                <ref role="3cqZAo" node="4UpGdVfRxKb" resolve="predicateIComparator" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="4UpGdVfRyO0" role="3clF45">
+        <ref role="3uigEE" to="82uw:~Predicate" resolve="Predicate" />
+        <node concept="3uibUv" id="4UpGdVfRz5t" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4UpGdVfRtuR" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="4UpGdVfRqld" role="jymVt" />
+    <node concept="2tJIrI" id="3tB7DXSOqcW" role="jymVt" />
     <node concept="2YIFZL" id="36hsHVf8gwW" role="jymVt">
       <property role="TrG5h" value="compare" />
       <property role="od$2w" value="false" />
