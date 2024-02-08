@@ -1098,5 +1098,36 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6GiZkUz7$Pr">
+    <property role="3GE5qa" value="tuples" />
+    <ref role="1M2myG" to="hm2y:6GiZkUz7qWO" resolve="InlineNamedTupleAccess" />
+    <node concept="9S07l" id="6GiZkUz7$Ps" role="9Vyp8">
+      <node concept="3clFbS" id="6GiZkUz7$Pt" role="2VODD2">
+        <node concept="3clFbF" id="6GiZkUz7$X6" role="3cqZAp">
+          <node concept="2OqwBi" id="7cphKbLweDA" role="3clFbG">
+            <node concept="2OqwBi" id="7cphKbLwdZw" role="2Oq$k0">
+              <node concept="2OqwBi" id="7cphKbLwdf4" role="2Oq$k0">
+                <node concept="1PxgMI" id="7cphKbLwcPC" role="2Oq$k0">
+                  <node concept="chp4Y" id="7cphKbLwcXc" role="3oSUPX">
+                    <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                  </node>
+                  <node concept="nLn13" id="7cphKbLwcfl" role="1m5AlR" />
+                </node>
+                <node concept="3TrEf2" id="7cphKbLwd$z" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="7cphKbLwek1" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="7cphKbLweYP" role="2OqNvi">
+              <node concept="chp4Y" id="7cphKbLwffF" role="cj9EA">
+                <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
