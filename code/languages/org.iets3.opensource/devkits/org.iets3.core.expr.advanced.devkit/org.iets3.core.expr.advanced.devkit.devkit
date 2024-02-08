@@ -31,6 +31,7 @@
     <exported-solution>957f018c-4561-4081-9ad3-b8618bf1160d(org.iets3.core.expr.datetime.runtime)</exported-solution>
     <exported-solution>17ecc6b6-d106-4b60-87a9-3fde52f92301(org.iets3.core.expr.temporal.runtime)</exported-solution>
     <exported-solution>616c1a94-9ced-468d-8c3a-fbdcf9734823(org.iets3.core.expr.typetags.units.interpreter)</exported-solution>
+    <exported-solution>86255e62-4839-480a-a7d0-9ee30f97e2d8(org.iets3.core.expr.typetags.phyunits.si)</exported-solution>
   </exported-solutions>
 </dev-kit>
 
