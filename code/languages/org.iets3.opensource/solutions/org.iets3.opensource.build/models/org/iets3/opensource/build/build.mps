@@ -2024,6 +2024,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2qDVhi7tshP" role="3bR37C">
+          <node concept="3bR9La" id="2qDVhi7tshQ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9c" resolve="jetbrains.mps.lang.quotation" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3jMXg07aoGO" role="2G$12L">
         <property role="BnDLt" value="true" />
