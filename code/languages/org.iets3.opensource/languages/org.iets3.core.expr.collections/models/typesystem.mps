@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -99,7 +99,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -129,7 +129,7 @@
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="1196350785110" name="jetbrains.mps.lang.quotation.structure.AbstractAntiquotation" flags="ngI" index="2c44t0">
+      <concept id="1196350785110" name="jetbrains.mps.lang.quotation.structure.AbstractAntiquotation" flags="ng" index="2c44t0">
         <child id="1196350785111" name="expression" index="2c44t1" />
       </concept>
       <concept id="1196350785112" name="jetbrains.mps.lang.quotation.structure.Antiquotation" flags="ng" index="2c44te" />
@@ -218,6 +218,10 @@
         <child id="1210784642750" name="value" index="3CoRuB" />
       </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
+      <concept id="1178870617262" name="jetbrains.mps.lang.typesystem.structure.CoerceExpression" flags="nn" index="1UaxmW">
+        <child id="1178870894644" name="pattern" index="1Ub_4A" />
+        <child id="1178870894645" name="nodeToCoerce" index="1Ub_4B" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -296,7 +300,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
@@ -5590,11 +5594,12 @@
                   <node concept="3Tqbb2" id="1mDdTGUIpI" role="1tU5fm">
                     <ref role="ehGHo" to="hm2y:S$tO8ocniU" resolve="TupleType" />
                   </node>
-                  <node concept="1PxgMI" id="1mDdTGUIpS" role="33vP2m">
-                    <node concept="chp4Y" id="1mDdTGUIpT" role="3oSUPX">
-                      <ref role="cht4Q" to="hm2y:S$tO8ocniU" resolve="TupleType" />
+                  <node concept="1UaxmW" id="6GiZkUyXeak" role="33vP2m">
+                    <node concept="1YaCAy" id="6GiZkUyXeal" role="1Ub_4A">
+                      <property role="TrG5h" value="tupleType" />
+                      <ref role="1YaFvo" to="hm2y:S$tO8ocniU" resolve="TupleType" />
                     </node>
-                    <node concept="37vLTw" id="1mDdTGUIpU" role="1m5AlR">
+                    <node concept="37vLTw" id="6GiZkUz1sX2" role="1Ub_4B">
                       <ref role="3cqZAo" node="1mDdTGU9aR" resolve="baseType" />
                     </node>
                   </node>

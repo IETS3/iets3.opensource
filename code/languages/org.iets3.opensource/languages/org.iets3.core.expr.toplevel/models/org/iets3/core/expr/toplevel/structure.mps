@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -71,7 +71,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -614,6 +614,12 @@
       <property role="TrG5h" value="qualified" />
       <property role="IQ2nx" value="7061117989424763681" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="6PMVc5H_jOd" role="1TKVEi">
+      <property role="IQ2ns" value="7886626212990500109" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="order" />
+      <ref role="20lvS9" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
     </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DMVh">
@@ -1275,6 +1281,34 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6PMVc5H_jO5">
+    <property role="EcuMT" value="7886626212990500101" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumSortByDeclaration" />
+    <property role="34LRSv" value="by declaration" />
+    <property role="R4oN_" value="order by occurence within declaration " />
+    <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
+  </node>
+  <node concept="1TIwiD" id="6PMVc5H_jO2">
+    <property role="EcuMT" value="7886626212990500098" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumSortByValue" />
+    <property role="34LRSv" value="by value" />
+    <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
+  </node>
+  <node concept="1TIwiD" id="wlV$3kt3Ry">
+    <property role="TrG5h" value="AbstractEnumSortOrder" />
+    <property role="3GE5qa" value="enum" />
+    <property role="EcuMT" value="7886626212990500094" />
+    <property role="R5$K7" value="true" />
+  </node>
+  <node concept="1TIwiD" id="6PMVc5H_jNZ">
+    <property role="EcuMT" value="7886626212990500095" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumSortByLiteral" />
+    <property role="34LRSv" value="by literal" />
+    <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
   </node>
 </model>
 

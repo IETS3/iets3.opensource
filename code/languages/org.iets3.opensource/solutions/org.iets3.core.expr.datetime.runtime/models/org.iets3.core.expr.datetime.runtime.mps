@@ -2,9 +2,9 @@
 <model ref="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
   </languages>
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
@@ -33,7 +33,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -156,7 +156,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -178,7 +178,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
@@ -207,7 +207,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -2928,12 +2928,6 @@
     <node concept="3uibUv" id="7khFtBHIhrN" role="1zkMxy">
       <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
     </node>
-    <node concept="3uibUv" id="6vUyz1yQsvi" role="EKbjA">
-      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
-      <node concept="3uibUv" id="6vUyz1yQu9m" role="11_B2D">
-        <ref role="3uigEE" node="4voqclTstQm" resolve="DiscreteDateRangeValue" />
-      </node>
-    </node>
     <node concept="3clFb_" id="6vUyz1yQv8l" role="jymVt">
       <property role="TrG5h" value="compareTo" />
       <node concept="3Tm1VV" id="6vUyz1yQv8m" role="1B3o_S" />
@@ -2941,7 +2935,7 @@
       <node concept="37vLTG" id="6vUyz1yQv8p" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="6vUyz1yQv8r" role="1tU5fm">
-          <ref role="3uigEE" node="4voqclTstQm" resolve="DiscreteDateRangeValue" />
+          <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
         </node>
       </node>
       <node concept="3clFbS" id="6vUyz1yQv8s" role="3clF47">
@@ -2962,8 +2956,8 @@
                   <node concept="37vLTw" id="6vUyz1yQAYA" role="2Oq$k0">
                     <ref role="3cqZAo" node="6vUyz1yQv8p" resolve="value" />
                   </node>
-                  <node concept="2OwXpG" id="6vUyz1yQCJ7" role="2OqNvi">
-                    <ref role="2Oxat5" node="26CArgU3vt4" resolve="begin" />
+                  <node concept="liA8E" id="7HSGsv4zvwb" role="2OqNvi">
+                    <ref role="37wK5l" node="7khFtBHIiHK" resolve="begin" />
                   </node>
                 </node>
               </node>
@@ -3007,7 +3001,7 @@
                     <ref role="3cqZAo" node="6vUyz1yQv8p" resolve="value" />
                   </node>
                   <node concept="liA8E" id="6vUyz1z0Ss3" role="2OqNvi">
-                    <ref role="37wK5l" node="4voqclTsBpn" resolve="end" />
+                    <ref role="37wK5l" node="7khFtBHIiHR" resolve="end" />
                   </node>
                 </node>
               </node>
@@ -3227,7 +3221,7 @@
       <node concept="37vLTG" id="6vUyz1ySVhx" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="6vUyz1ySVhy" role="1tU5fm">
-          <ref role="3uigEE" node="7khFtBHHXIi" resolve="ArbitraryDateRangeValue" />
+          <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
         </node>
       </node>
       <node concept="3clFbS" id="6vUyz1ySVhz" role="3clF47">
@@ -3267,7 +3261,7 @@
                     <ref role="3cqZAo" node="6vUyz1ySVhx" resolve="value" />
                   </node>
                   <node concept="liA8E" id="6vUyz1z0vzR" role="2OqNvi">
-                    <ref role="37wK5l" node="7khFtBHHXJ7" resolve="begin" />
+                    <ref role="37wK5l" node="7khFtBHIiHK" resolve="begin" />
                   </node>
                 </node>
               </node>
@@ -3311,7 +3305,7 @@
                     <ref role="3cqZAo" node="6vUyz1ySVhx" resolve="value" />
                   </node>
                   <node concept="liA8E" id="6vUyz1z0zvB" role="2OqNvi">
-                    <ref role="37wK5l" node="7khFtBHHXJ7" resolve="begin" />
+                    <ref role="37wK5l" node="7khFtBHIiHK" resolve="begin" />
                   </node>
                 </node>
               </node>
@@ -3358,12 +3352,6 @@
     </node>
     <node concept="3uibUv" id="7khFtBHIeIq" role="1zkMxy">
       <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
-    </node>
-    <node concept="3uibUv" id="6vUyz1ySUw1" role="EKbjA">
-      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
-      <node concept="3uibUv" id="6vUyz1ySUNz" role="11_B2D">
-        <ref role="3uigEE" node="7khFtBHHXIi" resolve="ArbitraryDateRangeValue" />
-      </node>
     </node>
   </node>
   <node concept="312cEu" id="7khFtBHIbg6">
@@ -4631,6 +4619,33 @@
     </node>
     <node concept="2tJIrI" id="7khFtBHIiHx" role="jymVt" />
     <node concept="3Tm1VV" id="7khFtBHIbg7" role="1B3o_S" />
+    <node concept="3clFb_" id="7HSGsv4zMiX" role="jymVt">
+      <property role="TrG5h" value="compareTo" />
+      <node concept="3Tm1VV" id="7HSGsv4zMiY" role="1B3o_S" />
+      <node concept="10Oyi0" id="7HSGsv4zMj0" role="3clF45" />
+      <node concept="37vLTG" id="7HSGsv4zMj1" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="3uibUv" id="7HSGsv4$xfO" role="1tU5fm">
+          <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7HSGsv4zMj4" role="3clF47">
+        <node concept="3cpWs6" id="7HSGsv4_caz" role="3cqZAp">
+          <node concept="3cmrfG" id="7HSGsv4_qv$" role="3cqZAk">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7HSGsv4zMj5" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="7HSGsv4zI7F" role="EKbjA">
+      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
+      <node concept="3uibUv" id="7HSGsv4$wer" role="11_B2D">
+        <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="4O9rw8aCYPg">
     <property role="TrG5h" value="EmptyDateRangeValue" />

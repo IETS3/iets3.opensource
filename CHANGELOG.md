@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). 
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## February 2024
+
+### Added
+
+- Enumerations can have an order by declaration, by literal or by value ascociated with the literal 
+
 ## January 2024
 
 ### Changed
@@ -13,12 +19,14 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 - Uncatched `DateTimeException` during check DateLiteral.
+- IntHelper.equals now correctly deals with the combination of 0.0,-0.0,0 and -0.
 
 ### Added
 
 - `NumberLiteral` can now be converted to a `BigDecimal` with the method `toBigDecimal`.
 - Uncatched `DateTimeException` during check DateLiteral
 - The type parameter is now used in the Java generation of the FailExpr.
+-  Named based access of result columns of multi decision tables were added. Columns can be referenced by name and coexist with the index based access.
 
 ## December 2023
 

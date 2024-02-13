@@ -2,10 +2,10 @@
 <model ref="r:4243557f-1c7a-4d6b-953a-807576e4bee7(org.iets3.core.expr.genjava.base@generator)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="f2abf2a6-552e-4906-ab58-930f9a79aff4" name="org.iets3.core.expr.genjava.contracts" version="-1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -184,7 +184,7 @@
       <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
         <child id="1160998896846" name="condition" index="1gVkn0" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
         <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
@@ -215,7 +215,7 @@
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -280,7 +280,7 @@
       <concept id="1200911316486" name="jetbrains.mps.lang.generator.structure.MappingLabelDeclaration" flags="lg" index="2rT7sh">
         <reference id="1200913004646" name="targetConcept" index="2rZz_L" />
       </concept>
-      <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ngI" index="v9R3L">
+      <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
       </concept>
       <concept id="2880994019885263148" name="jetbrains.mps.lang.generator.structure.LoopMacroNamespaceAccessor" flags="ng" index="$GB7w">
@@ -462,7 +462,7 @@
         <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
@@ -16455,6 +16455,34 @@
                     <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                   </node>
                   <node concept="raruj" id="2ICvjplLKNO" role="lGtFl" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3r6ed$FPwzm" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
+      <node concept="1Koe21" id="3r6ed$FPwRi" role="1lVwrX">
+        <node concept="3clFb_" id="3r6ed$FPwRj" role="1Koe22">
+          <property role="DiZV1" value="false" />
+          <property role="od$2w" value="false" />
+          <property role="2aFKle" value="false" />
+          <property role="TrG5h" value="foo" />
+          <node concept="3Tm1VV" id="3r6ed$FPwRk" role="1B3o_S" />
+          <node concept="3cqZAl" id="3r6ed$FPwRl" role="3clF45" />
+          <node concept="3clFbS" id="3r6ed$FPwRm" role="3clF47">
+            <node concept="3cpWs8" id="3r6ed$FPwRn" role="3cqZAp">
+              <node concept="3cpWsn" id="3r6ed$FPwRo" role="3cpWs9">
+                <property role="TrG5h" value="l" />
+                <node concept="3uibUv" id="3r6ed$FPwRp" role="1tU5fm">
+                  <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
+                  <node concept="3uibUv" id="3r6ed$FPwRq" role="11_B2D">
+                    <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                  </node>
+                  <node concept="raruj" id="3r6ed$FPwRr" role="lGtFl" />
                 </node>
               </node>
             </node>
