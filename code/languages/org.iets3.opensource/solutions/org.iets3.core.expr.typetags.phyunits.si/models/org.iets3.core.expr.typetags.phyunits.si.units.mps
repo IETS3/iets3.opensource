@@ -186,7 +186,6 @@
     <node concept="CIrOH" id="3xM68GMigWt" role="_iOnB">
       <property role="TrG5h" value="kg" />
       <property role="1o$tow" value="kilogram" />
-      <property role="2WSTV2" value="true" />
       <ref role="Rn5ok" node="3xM68GMigWn" resolve="weight" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWw" role="_iOnB">
@@ -214,7 +213,6 @@
       <ref role="Rn5ok" node="3xM68GMigWl" resolve="luminous intensity" />
     </node>
     <node concept="_ixoA" id="3NjH4t$iJlT" role="_iOnB" />
-    <node concept="_ixoA" id="3NjH4t$iNI1" role="_iOnB" />
     <node concept="1Ws0TD" id="3NjH4t$iNFU" role="_iOnB">
       <property role="1WsWdv" value="Helper Units" />
     </node>
@@ -653,7 +651,6 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="3xM68GMigYJ" role="_iOnB" />
     <node concept="_ixoA" id="6EvkZrL0XB2" role="_iOnB" />
     <node concept="1Ws0TD" id="3NjH4t$iNH9" role="_iOnB">
       <property role="1WsWdv" value="Units officially accepted for use with the SI" />
@@ -769,6 +766,16 @@
       </node>
     </node>
     <node concept="_ixoA" id="6EvkZrOs06V" role="_iOnB" />
+    <node concept="1Ws0TD" id="6EvkZrOL65e" role="_iOnB">
+      <property role="1WsWdv" value="Additional units" />
+    </node>
+    <node concept="_ixoA" id="6EvkZrOKO5F" role="_iOnB" />
+    <node concept="CIrOH" id="6EvkZrOLErr" role="_iOnB">
+      <property role="TrG5h" value="g" />
+      <property role="2WSTV2" value="true" />
+      <ref role="Rn5ok" node="3xM68GMigWn" resolve="mass" />
+    </node>
+    <node concept="_ixoA" id="6EvkZrONBIh" role="_iOnB" />
     <node concept="1Ws0TD" id="3xM68GMigYK" role="_iOnB">
       <property role="1WsWdv" value="Derived units with special names" />
     </node>
@@ -3670,9 +3677,6 @@
       <property role="TrG5h" value="luminance" />
       <node concept="2W5y9F" id="6EvkZrNLE8F" role="2W5xxx">
         <node concept="2W2IQR" id="6EvkZrNLE8E" role="2W5ySM">
-          <node concept="2W5y$k" id="6EvkZrNLE8A" role="2BJGWR">
-            <ref role="2W5z2V" node="3xM68GMigWl" resolve="luminous intensity" />
-          </node>
           <node concept="2W2HD0" id="6EvkZrNLE8D" role="2BJG_9">
             <node concept="2W5y$k" id="6EvkZrNLE8B" role="2BJGmK">
               <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
@@ -3680,6 +3684,9 @@
             <node concept="CIsvk" id="6EvkZrNLE8C" role="DfWIZ">
               <property role="CIsvl" value="2" />
             </node>
+          </node>
+          <node concept="2W5y$k" id="6EvkZrNLE8A" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigWl" resolve="luminous intensity" />
           </node>
         </node>
       </node>
