@@ -725,7 +725,7 @@
         <property role="3F0ifm" value="for" />
       </node>
       <node concept="1iCGBv" id="1KUmgSFpwWL" role="3EZMnx">
-        <ref role="1NtTu8" to="i3ya:1KUmgSFpwWq" resolve="dimension" />
+        <ref role="1NtTu8" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
         <node concept="1sVBvm" id="1KUmgSFpwWN" role="1sWHZn">
           <node concept="3F0A7n" id="1KUmgSFpwX2" role="2wV5jI">
             <property role="1Intyy" value="true" />

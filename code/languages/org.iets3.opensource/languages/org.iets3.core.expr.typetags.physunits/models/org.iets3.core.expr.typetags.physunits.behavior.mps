@@ -1464,7 +1464,7 @@
             <node concept="2OqwBi" id="3WnwFDbcxhT" role="2Oq$k0">
               <node concept="13iPFW" id="3WnwFDbcwXN" role="2Oq$k0" />
               <node concept="3TrEf2" id="3WnwFDbcXsB" role="2OqNvi">
-                <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="dimension" />
+                <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
               </node>
             </node>
             <node concept="2qgKlT" id="3WnwFDbcYu1" role="2OqNvi">
@@ -5677,7 +5677,7 @@
       </node>
     </node>
     <node concept="2YIFZL" id="1KUmgSFw1bh" role="jymVt">
-      <property role="TrG5h" value="getVisibleDimensionFrom" />
+      <property role="TrG5h" value="getVisibleQuantityFrom" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="1KUmgSFw1bi" role="3clF47">
@@ -9732,7 +9732,7 @@
                           </node>
                         </node>
                         <node concept="3TrEf2" id="2hjX6q58HQx" role="2OqNvi">
-                          <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="dimension" />
+                          <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
                         </node>
                       </node>
                     </node>

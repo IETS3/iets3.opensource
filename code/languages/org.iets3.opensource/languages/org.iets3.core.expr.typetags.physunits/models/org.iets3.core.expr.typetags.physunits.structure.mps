@@ -89,7 +89,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1KUmgSFpwWq" role="1TKVEi">
       <property role="IQ2ns" value="2034036099103723290" />
-      <property role="20kJfa" value="dimension" />
+      <property role="20kJfa" value="quantity" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1KUmgSFpwWn" resolve="Quantity" />
     </node>

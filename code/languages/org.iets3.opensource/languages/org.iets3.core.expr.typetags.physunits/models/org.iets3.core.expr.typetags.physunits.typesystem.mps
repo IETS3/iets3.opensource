@@ -6880,7 +6880,7 @@
                     <ref role="1YBMHb" node="7DmLSRHe$1t" resolve="unit" />
                   </node>
                   <node concept="3TrEf2" id="7DmLSRHe_tW" role="2OqNvi">
-                    <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="dimension" />
+                    <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
                   </node>
                 </node>
               </node>
@@ -6917,7 +6917,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="2hjX6q5l$Wf" role="2OqNvi">
-                    <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="dimension" />
+                    <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="2hjX6q5l$W4" role="3uHU7w">
@@ -6925,7 +6925,7 @@
                     <ref role="1YBMHb" node="7DmLSRHe$1t" resolve="unit" />
                   </node>
                   <node concept="3TrEf2" id="2hjX6q5l$W6" role="2OqNvi">
-                    <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="dimension" />
+                    <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
                   </node>
                 </node>
               </node>
@@ -7005,7 +7005,7 @@
               <ref role="1YBMHb" node="7DmLSRHe$1t" resolve="unit" />
             </node>
             <node concept="3TrEf2" id="7Bmg9OopWNN" role="2OqNvi">
-              <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="dimension" />
+              <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
             </node>
           </node>
         </node>
@@ -7210,7 +7210,7 @@
                                   <ref role="3cqZAo" node="3xM68GMr6wP" resolve="referencedUnit" />
                                 </node>
                                 <node concept="3TrEf2" id="3xM68GMqeIj" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="dimension" />
+                                  <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
                                 </node>
                               </node>
                             </node>

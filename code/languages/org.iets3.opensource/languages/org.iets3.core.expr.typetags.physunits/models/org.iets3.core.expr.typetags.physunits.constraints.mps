@@ -598,7 +598,7 @@
     <property role="3GE5qa" value="definition.unit" />
     <ref role="1M2myG" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
     <node concept="1N5Pfh" id="1KUmgSFvSup" role="1Mr941">
-      <ref role="1N5Vy1" to="i3ya:1KUmgSFpwWq" resolve="dimension" />
+      <ref role="1N5Vy1" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
       <node concept="3dgokm" id="1KUmgSFvSut" role="1N6uqs">
         <node concept="3clFbS" id="1KUmgSFvSuv" role="2VODD2">
           <node concept="3clFbF" id="1Ovl2ivuHjR" role="3cqZAp">
@@ -606,7 +606,7 @@
               <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
               <node concept="2YIFZM" id="1KUmgSFw73M" role="37wK5m">
-                <ref role="37wK5l" to="rppw:1KUmgSFw1bh" resolve="getVisibleDimensionFrom" />
+                <ref role="37wK5l" to="rppw:1KUmgSFw1bh" resolve="getVisibleQuantityFrom" />
                 <ref role="1Pybhc" to="rppw:6FK1Pb8y_co" resolve="ScopingHelper" />
                 <node concept="1eOMI4" id="1KUmgSFw73N" role="37wK5m">
                   <node concept="3K4zz7" id="1KUmgSFw73O" role="1eOMHV">

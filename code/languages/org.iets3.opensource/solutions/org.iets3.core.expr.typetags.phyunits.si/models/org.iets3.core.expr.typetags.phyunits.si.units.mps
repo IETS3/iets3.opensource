@@ -23,7 +23,7 @@
       </concept>
       <concept id="8337440621611267903" name="org.iets3.core.expr.typetags.physunits.structure.Unit" flags="ng" index="CIrOH">
         <property id="8779275567064090590" name="derived" index="1xMkt3" />
-        <reference id="2034036099103723290" name="dimension" index="Rn5ok" />
+        <reference id="2034036099103723290" name="quantity" index="Rn5ok" />
         <child id="8779275567064091192" name="specification" index="1xMkE_" />
       </concept>
       <concept id="8337440621611273670" name="org.iets3.core.expr.typetags.physunits.structure.IntegerExponent" flags="ng" index="CIsvk">
@@ -170,7 +170,7 @@
       <ref role="3GEb4d" node="3xM68GMigWg" resolve="SIUnit" />
     </node>
     <node concept="1Ws0TD" id="3xM68GMigW$" role="_iOnB">
-      <property role="1WsWdv" value="Dimension" />
+      <property role="1WsWdv" value="Measure" />
     </node>
     <node concept="Rn5op" id="3xM68GMigW_" role="_iOnB">
       <property role="TrG5h" value="magnetic flux" />
