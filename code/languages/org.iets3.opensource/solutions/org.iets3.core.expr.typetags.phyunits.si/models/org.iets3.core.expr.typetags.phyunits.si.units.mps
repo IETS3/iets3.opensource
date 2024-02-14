@@ -22,6 +22,7 @@
         <child id="8395143721870514822" name="base" index="wWd0U" />
       </concept>
       <concept id="8337440621611267903" name="org.iets3.core.expr.typetags.physunits.structure.Unit" flags="ng" index="CIrOH">
+        <property id="4383045081079374439" name="unitName" index="1o$tow" />
         <property id="8779275567064090590" name="derived" index="1xMkt3" />
         <reference id="2034036099103723290" name="quantity" index="Rn5ok" />
         <child id="8779275567064091192" name="specification" index="1xMkE_" />
@@ -97,28 +98,28 @@
     </language>
   </registry>
   <node concept="_iOnU" id="3xM68GMigWg">
-    <property role="TrG5h" value="SIUnits" />
+    <property role="TrG5h" value="SIBaseUnits" />
     <node concept="Rn5op" id="3xM68GMigWh" role="_iOnB">
-      <property role="TrG5h" value="current" />
+      <property role="TrG5h" value="electric current" />
     </node>
     <node concept="Rn5op" id="3xM68GMigWi" role="_iOnB">
-      <property role="TrG5h" value="undefined unit (helper)" />
+      <property role="TrG5h" value="no unit" />
       <property role="1xQvps" value="false" />
     </node>
     <node concept="Rn5op" id="3xM68GMigWj" role="_iOnB">
       <property role="TrG5h" value="length" />
     </node>
     <node concept="Rn5op" id="3xM68GMigWk" role="_iOnB">
-      <property role="TrG5h" value="amount of chemical substance" />
+      <property role="TrG5h" value="amount of substance" />
     </node>
     <node concept="Rn5op" id="3xM68GMigWl" role="_iOnB">
       <property role="TrG5h" value="luminous intensity" />
     </node>
     <node concept="Rn5op" id="3xM68GMigWm" role="_iOnB">
-      <property role="TrG5h" value="temperature" />
+      <property role="TrG5h" value="thermodynamic temperature" />
     </node>
     <node concept="Rn5op" id="3xM68GMigWn" role="_iOnB">
-      <property role="TrG5h" value="weight" />
+      <property role="TrG5h" value="mass" />
       <property role="1xQvps" value="false" />
     </node>
     <node concept="Rn5op" id="3xM68GMigWo" role="_iOnB">
@@ -127,36 +128,65 @@
     </node>
     <node concept="_ixoA" id="3xM68GMigWp" role="_iOnB" />
     <node concept="1Ws0TD" id="3xM68GMigWq" role="_iOnB">
-      <property role="1WsWdv" value="SI Units" />
+      <property role="1WsWdv" value="Official SI Units" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWr" role="_iOnB">
       <property role="TrG5h" value="m" />
+      <property role="1o$tow" value="metre" />
       <ref role="Rn5ok" node="3xM68GMigWj" resolve="length" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWs" role="_iOnB">
       <property role="TrG5h" value="s" />
+      <property role="1o$tow" value="second" />
       <ref role="Rn5ok" node="3xM68GMigWo" resolve="time" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWt" role="_iOnB">
       <property role="TrG5h" value="kg" />
+      <property role="1o$tow" value="kilogram" />
       <ref role="Rn5ok" node="3xM68GMigWn" resolve="weight" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWu" role="_iOnB">
       <property role="TrG5h" value="mol" />
+      <property role="1o$tow" value="mole" />
       <ref role="Rn5ok" node="3xM68GMigWk" resolve="amount of chemical substance" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWv" role="_iOnB">
       <property role="TrG5h" value="K" />
+      <property role="1o$tow" value="kelvin" />
       <ref role="Rn5ok" node="3xM68GMigWm" resolve="temperature" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWw" role="_iOnB">
       <property role="TrG5h" value="A" />
+      <property role="1o$tow" value="ampere" />
       <ref role="Rn5ok" node="3xM68GMigWh" resolve="current" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWx" role="_iOnB">
       <property role="TrG5h" value="cd" />
+      <property role="1o$tow" value="candela" />
       <ref role="Rn5ok" node="3xM68GMigWl" resolve="luminous intensity" />
     </node>
+    <node concept="_ixoA" id="3NjH4t$iJlT" role="_iOnB" />
+    <node concept="1Ws0TD" id="3NjH4t$iNH9" role="_iOnB">
+      <property role="1WsWdv" value="Units officially accepted for use with the SI" />
+    </node>
+    <node concept="_ixoA" id="3NjH4t$iNGI" role="_iOnB" />
+    <node concept="CIrOH" id="3NjH4t$iNIu" role="_iOnB">
+      <property role="TrG5h" value="min" />
+      <ref role="Rn5ok" node="3xM68GMigWo" resolve="time" />
+    </node>
+    <node concept="CIrOH" id="3NjH4t$iNJw" role="_iOnB">
+      <property role="TrG5h" value="h" />
+      <ref role="Rn5ok" node="3xM68GMigWo" resolve="time" />
+    </node>
+    <node concept="CIrOH" id="3NjH4t$iNK$" role="_iOnB">
+      <property role="TrG5h" value="day" />
+      <ref role="Rn5ok" node="3xM68GMigWo" resolve="time" />
+    </node>
+    <node concept="_ixoA" id="3NjH4t$iNI1" role="_iOnB" />
+    <node concept="1Ws0TD" id="3NjH4t$iNFU" role="_iOnB">
+      <property role="1WsWdv" value="Helper Units" />
+    </node>
+    <node concept="_ixoA" id="3NjH4t$iNFx" role="_iOnB" />
     <node concept="CIrOH" id="36kPvG5oSra" role="_iOnB">
       <property role="TrG5h" value="nounit" />
       <ref role="Rn5ok" node="3xM68GMigWi" resolve="undefined unit (helper)" />

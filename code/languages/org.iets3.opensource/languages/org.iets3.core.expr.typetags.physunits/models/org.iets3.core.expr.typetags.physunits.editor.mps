@@ -343,6 +343,9 @@
       <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
       <concept id="1984422498404534858" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_TransformationText" flags="ig" index="2ee1ZP" />
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
         <child id="8207263695490893799" name="symbols" index="2ElW$Z" />
       </concept>
@@ -698,6 +701,17 @@
       <node concept="3F0A7n" id="7eOyx9r3k5O" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" node="4M31vJayoGp" resolve="UnitTag" />
+      </node>
+      <node concept="_tjkj" id="3NjH4t$gA$D" role="3EZMnx">
+        <node concept="3EZMnI" id="3NjH4t$gAFV" role="_tjki">
+          <node concept="2iRfu4" id="3NjH4t$gAFW" role="2iSdaV" />
+          <node concept="3F0ifn" id="3NjH4t$gADQ" role="3EZMnx">
+            <property role="3F0ifm" value="named" />
+          </node>
+          <node concept="3F0A7n" id="3NjH4t$gAKW" role="3EZMnx">
+            <ref role="1NtTu8" to="i3ya:3NjH4t$gA9B" resolve="unitName" />
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="7eOyx9r3k5H" role="2iSdaV" />
       <node concept="3EZMnI" id="7Bmg9Oo7Lqu" role="3EZMnx">
