@@ -296,6 +296,7 @@
         <child id="1185805047793" name="body" index="nvhr_" />
         <child id="1185805056450" name="argument" index="nvjzm" />
         <child id="1205761991995" name="argumentRepresentator" index="2X0Ygz" />
+        <child id="8755047172977267646" name="warning" index="3SAjUU" />
       </concept>
       <concept id="1175147569072" name="jetbrains.mps.lang.typesystem.structure.AbstractSubtypingRule" flags="ig" index="2sgdUx">
         <child id="1175147624276" name="body" index="2sgrp5" />
@@ -6999,6 +7000,9 @@
                         <property role="TrG5h" value="specT" />
                         <node concept="2jxLKc" id="7Bmg9OopViI" role="1tU5fm" />
                       </node>
+                      <node concept="Xl_RD" id="6EvkZrOVUo0" role="3SAjUU">
+                        <property role="Xl_RC" value="No type was calculated because the definition is incomplete" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -7027,6 +7031,9 @@
         <node concept="2X1qdy" id="7Bmg9OopVDI" role="2X0Ygz">
           <property role="TrG5h" value="dimT" />
           <node concept="2jxLKc" id="7Bmg9OopVDJ" role="1tU5fm" />
+        </node>
+        <node concept="Xl_RD" id="6EvkZrOSBzo" role="3SAjUU">
+          <property role="Xl_RC" value="No type was calculated because the definition is incomplete" />
         </node>
       </node>
     </node>
