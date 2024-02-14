@@ -2220,6 +2220,11 @@
             <ref role="3bR37D" node="lJ$0svpRkJ" resolve="org.iets3.core.expr.typetags.units" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5jJZepiz5KF" role="3bR37C">
+          <node concept="3bR9La" id="5jJZepiz5KG" role="1SiIV1">
+            <ref role="3bR37D" node="3jMXg07aoGO" resolve="org.iets3.core.expr.typetags.phyunits.si" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="_I$tx9JvQU" role="2G$12L">
         <property role="BnDLt" value="true" />
