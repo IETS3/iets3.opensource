@@ -369,7 +369,7 @@
     <property role="3GE5qa" value="definition.quantity" />
     <property role="TrG5h" value="QuantitySpecification" />
     <property role="R4oN_" value="a specification of a measure" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="w1hl:1RcasK0SmZc" resolve="UnaryTag" />
     <node concept="1TJgyj" id="7athFveyQy5" role="1TKVEi">
       <property role="IQ2ns" value="8258835046925559941" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
