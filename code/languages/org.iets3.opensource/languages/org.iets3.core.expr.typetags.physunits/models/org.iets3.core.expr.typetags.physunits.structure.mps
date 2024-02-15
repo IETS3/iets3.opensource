@@ -308,11 +308,12 @@
     <property role="R4oN_" value="convert to a target unit" />
     <property role="3GE5qa" value="definition.conversion" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7SygLIkPQFC" role="1TKVEi">
+    <node concept="1TJgyj" id="3eEp8AD8ais" role="1TKVEi">
+      <property role="IQ2ns" value="3722898584385922204" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="targetUnit" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <property role="IQ2ns" value="9088900783727405800" />
-      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="Unit" />
+      <ref role="20lvS9" node="7eOyx9r3kR5" resolve="UnitReference" />
     </node>
     <node concept="1TJgyj" id="7SygLIkPQFD" role="1TKVEi">
       <property role="20kJfa" value="conversionSpecifier" />
