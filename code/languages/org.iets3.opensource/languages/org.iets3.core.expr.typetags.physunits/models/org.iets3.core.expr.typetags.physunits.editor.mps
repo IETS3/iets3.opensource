@@ -1027,15 +1027,8 @@
       <node concept="3F0ifn" id="3$KQaHc8Umk" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
       </node>
-      <node concept="1iCGBv" id="3$KQaHc8UmM" role="3EZMnx">
-        <ref role="1NtTu8" to="i3ya:3$KQaHc3HJG" resolve="targetUnit" />
-        <node concept="1sVBvm" id="3$KQaHc8UmN" role="1sWHZn">
-          <node concept="3F0A7n" id="3$KQaHc8Un5" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <ref role="1k5W1q" node="4M31vJayoGp" resolve="UnitTag" />
-          </node>
-        </node>
+      <node concept="3F1sOY" id="1BdB9zGaAX0" role="3EZMnx">
+        <ref role="1NtTu8" to="i3ya:1BdB9zGazEO" resolve="targetUnit" />
       </node>
       <node concept="3F0ifn" id="3$KQaHc8Unp" role="3EZMnx">
         <property role="3F0ifm" value="]" />

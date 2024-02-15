@@ -4090,19 +4090,6 @@
       <property role="1o$tow" value="day" />
       <ref role="Rn5ok" node="3xM68GMigWo" resolve="time" />
     </node>
-    <node concept="_ixoA" id="6EvkZrOfJzs" role="_iOnB" />
-    <node concept="CIrOH" id="3xM68GMih1G" role="_iOnB">
-      <property role="TrG5h" value="ns" />
-      <ref role="Rn5ok" node="3xM68GMigWo" resolve="time" />
-    </node>
-    <node concept="CIrOH" id="3xM68GMih1H" role="_iOnB">
-      <property role="TrG5h" value="µs" />
-      <ref role="Rn5ok" node="3xM68GMigWo" resolve="time" />
-    </node>
-    <node concept="CIrOH" id="3xM68GMih1I" role="_iOnB">
-      <property role="TrG5h" value="ms" />
-      <ref role="Rn5ok" node="3xM68GMigWo" resolve="time" />
-    </node>
     <node concept="_ixoA" id="6EvkZrOhFB2" role="_iOnB" />
     <node concept="TRoc0" id="4UAQJ87RKyK" role="_iOnB">
       <node concept="27LzZq" id="4UAQJ87RKyM" role="27P04L">
