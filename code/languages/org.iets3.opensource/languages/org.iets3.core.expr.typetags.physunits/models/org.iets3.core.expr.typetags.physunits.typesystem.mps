@@ -409,12 +409,6 @@
       </concept>
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
-        <property id="2034914114981261751" name="severity" index="RRSoG" />
-        <child id="2034914114981261753" name="message" index="RRSoy" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -8514,28 +8508,6 @@
         <node concept="3clFbH" id="3pxcf5ViVuF" role="3cqZAp" />
         <node concept="3clFbJ" id="3pxcf5Vj0Tp" role="3cqZAp">
           <node concept="3clFbS" id="3pxcf5Vj0Tr" role="3clFbx">
-            <node concept="RRSsy" id="3MkNnsWXWFq" role="3cqZAp">
-              <property role="RRSoG" value="gZ5fh_4/error" />
-              <node concept="3cpWs3" id="3MkNnsWY0cY" role="RRSoy">
-                <node concept="37vLTw" id="3MkNnsWY0rX" role="3uHU7w">
-                  <ref role="3cqZAo" node="3pxcf5ViYoU" resolve="unit" />
-                </node>
-                <node concept="3cpWs3" id="3MkNnsWXYT8" role="3uHU7B">
-                  <node concept="3cpWs3" id="3MkNnsWXYex" role="3uHU7B">
-                    <node concept="Xl_RD" id="3MkNnsWXWFs" role="3uHU7B">
-                      <property role="Xl_RC" value="Physical: Dimension:" />
-                    </node>
-                    <node concept="37vLTw" id="3MkNnsWXYt4" role="3uHU7w">
-                      <ref role="3cqZAo" node="3pxcf5ViU1h" resolve="dimension" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="3MkNnsWXZ7T" role="3uHU7w">
-                    <property role="Xl_RC" value=" Unit:" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="3MkNnsWYi2b" role="3cqZAp" />
             <node concept="3cpWs6" id="3pxcf5VjjMu" role="3cqZAp">
               <node concept="2OqwBi" id="3pxcf5VjjMw" role="3cqZAk">
                 <node concept="35c_gC" id="3pxcf5VjjMx" role="2Oq$k0">
