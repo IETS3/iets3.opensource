@@ -10237,19 +10237,31 @@
                       </node>
                       <node concept="2pIpSj" id="5X7HQPSGrEQ" role="2pJxcM">
                         <ref role="2pIpSl" to="i3ya:1wGuEUvVzW5" resolve="expression" />
-                        <node concept="2pJPED" id="5X7HQPSGrER" role="28nt2d">
-                          <ref role="2pJxaS" to="hm2y:4rZeNQ6MqlJ" resolve="MulExpression" />
-                          <node concept="2pIpSj" id="5X7HQPSGrES" role="2pJxcM">
-                            <ref role="2pIpSl" to="hm2y:4rZeNQ6MpKm" resolve="left" />
-                            <node concept="2pJPED" id="5X7HQPSGrET" role="28nt2d">
-                              <ref role="2pJxaS" to="i3ya:4vPcjvhSVaI" resolve="ValExpression" />
+                        <node concept="2pJPED" id="5dIhu0sQaFU" role="28nt2d">
+                          <ref role="2pJxaS" to="hm2y:2Qbt$1tNGy4" resolve="CastExpression" />
+                          <node concept="2pIpSj" id="5dIhu0sQaKG" role="2pJxcM">
+                            <ref role="2pIpSl" to="hm2y:2Qbt$1tNGy9" resolve="expectedType" />
+                            <node concept="2pJPED" id="5dIhu0sQaLf" role="28nt2d">
+                              <ref role="2pJxaS" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
                             </node>
                           </node>
-                          <node concept="2pIpSj" id="5X7HQPSGrEU" role="2pJxcM">
-                            <ref role="2pIpSl" to="hm2y:4rZeNQ6MpKo" resolve="right" />
-                            <node concept="36biLy" id="5X7HQPSMJ7Z" role="28nt2d">
-                              <node concept="37vLTw" id="5X7HQPSMJhC" role="36biLW">
-                                <ref role="3cqZAo" node="5X7HQPSKPn7" resolve="powerExpr" />
+                          <node concept="2pIpSj" id="5dIhu0sQaGf" role="2pJxcM">
+                            <ref role="2pIpSl" to="hm2y:252QIDzztQk" resolve="expr" />
+                            <node concept="2pJPED" id="5X7HQPSGrER" role="28nt2d">
+                              <ref role="2pJxaS" to="hm2y:4rZeNQ6MqlJ" resolve="MulExpression" />
+                              <node concept="2pIpSj" id="5X7HQPSGrES" role="2pJxcM">
+                                <ref role="2pIpSl" to="hm2y:4rZeNQ6MpKm" resolve="left" />
+                                <node concept="2pJPED" id="5X7HQPSGrET" role="28nt2d">
+                                  <ref role="2pJxaS" to="i3ya:4vPcjvhSVaI" resolve="ValExpression" />
+                                </node>
+                              </node>
+                              <node concept="2pIpSj" id="5X7HQPSGrEU" role="2pJxcM">
+                                <ref role="2pIpSl" to="hm2y:4rZeNQ6MpKo" resolve="right" />
+                                <node concept="36biLy" id="5X7HQPSMJ7Z" role="28nt2d">
+                                  <node concept="37vLTw" id="5X7HQPSMJhC" role="36biLW">
+                                    <ref role="3cqZAo" node="5X7HQPSKPn7" resolve="powerExpr" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
