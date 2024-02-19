@@ -229,6 +229,18 @@
         </node>
       </node>
     </node>
+    <node concept="CIrOH" id="5noD5ljEgMY" role="_iOnB">
+      <property role="TrG5h" value="Hz2" />
+      <ref role="Rn5ok" node="1KUmgSFvJUB" resolve="frequency" />
+      <node concept="CIsGf" id="5noD5ljEgMZ" role="CIsG9">
+        <node concept="CIsvn" id="5noD5ljEgN0" role="CIi4h">
+          <ref role="CIi3I" node="5XaocLWHSS5" resolve="s" />
+          <node concept="CIsvk" id="5noD5ljEgN1" role="CIi3G">
+            <property role="CIsvl" value="-1" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="CIrOH" id="69HsIy5F$DR" role="_iOnB">
       <property role="TrG5h" value="rad" />
       <ref role="Rn5ok" node="1KUmgSFvJUI" resolve="angle" />
