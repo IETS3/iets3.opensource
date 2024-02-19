@@ -9,6 +9,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -432,6 +433,17 @@
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
+    </language>
+    <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
+      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
+      <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
+        <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
+        <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
+        <child id="6202678563380433923" name="query" index="sbcd9" />
+      </concept>
+    </language>
+    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
@@ -1700,6 +1712,29 @@
                 <node concept="3TrcHB" id="7Bmg9Oo3XI6" role="2OqNvi">
                   <ref role="3TsBF5" to="i3ya:7Bmg9Oo3Vr1" resolve="derived" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3EZMnI" id="5noD5lk8d7w" role="6VMZX">
+      <node concept="2iRfu4" id="5noD5lk8d7x" role="2iSdaV" />
+      <node concept="3F0ifn" id="5noD5lk8cFb" role="3EZMnx">
+        <property role="3F0ifm" value="SI base unit equivalents" />
+      </node>
+      <node concept="s8t4o" id="5noD5lk8dkw" role="3EZMnx">
+        <property role="28Zw97" value="true" />
+        <ref role="28F8cf" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        <node concept="xShMh" id="5noD5lk8dky" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="s8sZD" id="5noD5lk8dkz" role="sbcd9">
+          <node concept="3clFbS" id="5noD5lk8dk$" role="2VODD2">
+            <node concept="3clFbF" id="5noD5lk8dpH" role="3cqZAp">
+              <node concept="2OqwBi" id="5noD5lk8dNv" role="3clFbG">
+                <node concept="pncrf" id="5noD5lk8dpG" role="2Oq$k0" />
+                <node concept="3JvlWi" id="5noD5lk8eqn" role="2OqNvi" />
               </node>
             </node>
           </node>
