@@ -8534,5 +8534,74 @@
       <ref role="3GEb4d" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
     </node>
   </node>
+  <node concept="1lH9Xt" id="EsE2hyi_Ut">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="ErrorMessages" />
+    <node concept="1qefOq" id="EsE2hyiAIa" role="1SKRRt">
+      <node concept="_iOnV" id="EsE2hyiAI9" role="1qenE9">
+        <property role="TrG5h" value="TestLibrary" />
+        <node concept="CIrOH" id="EsE2hyfZJe" role="_iOnC">
+          <property role="TrG5h" value="kg" />
+          <ref role="Rn5ok" to="8ps7:3xM68GMigWn" resolve="mass" />
+          <node concept="7CXmI" id="EsE2hyiAWz" role="lGtFl">
+            <node concept="29bkU" id="EsE2hyiAWI" role="7EUXB">
+              <node concept="2PQEqo" id="EsE2hyiAWJ" role="3lydCh">
+                <ref role="39XzEq" to="x0pf:EsE2hyhvSF" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="CIrOH" id="EsE2hyiBRT" role="_iOnC">
+          <property role="TrG5h" value="myunit" />
+          <property role="1xMkt3" value="false" />
+          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="no unit" />
+          <node concept="CIsGf" id="EsE2hyiBSq" role="1xMkE_">
+            <node concept="CIsvn" id="EsE2hyiBSp" role="CIi4h">
+              <ref role="CIi3I" node="EsE2hyfZJe" resolve="kg" />
+            </node>
+          </node>
+          <node concept="7CXmI" id="EsE2hyiBST" role="lGtFl">
+            <node concept="1TM$A" id="EsE2hyiBTk" role="7EUXB">
+              <node concept="2PYRI3" id="EsE2hyiBTl" role="3lydEf">
+                <ref role="39XzEq" to="x0pf:7Bmg9Oo9qFl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="CIrOH" id="EsE2hyiChM" role="_iOnC">
+          <property role="TrG5h" value="myunit2" />
+          <property role="1xMkt3" value="true" />
+          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="no unit" />
+          <node concept="7CXmI" id="EsE2hyiCmR" role="lGtFl">
+            <node concept="29bkU" id="EsE2hyiCnm" role="7EUXB">
+              <node concept="2PQEqo" id="EsE2hyiCnn" role="3lydCh">
+                <ref role="39XzEq" to="x0pf:2hjX6q5lAqY" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="EsE2hyiDd8" role="_iOnC" />
+        <node concept="2zPypq" id="EsE2hyiDdN" role="_iOnC">
+          <property role="TrG5h" value="noUnitToStrip" />
+          <node concept="2yh1Mg" id="EsE2hyiDes" role="2zPyp_">
+            <node concept="30bXRB" id="EsE2hyiDeF" role="30czhm">
+              <property role="30bXRw" value="10" />
+            </node>
+            <node concept="7CXmI" id="EsE2hyiDf7" role="lGtFl">
+              <node concept="o5Tdl" id="EsE2hyiDge" role="7EUXB" />
+              <node concept="1TM$A" id="EsE2hyiDgf" role="7EUXB">
+                <node concept="2PYRI3" id="EsE2hyiDgg" role="3lydEf">
+                  <ref role="39XzEq" to="x0pf:5XaocLWKnE0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3GEVxB" id="EsE2hyiAIe" role="3i6evy">
+          <ref role="3GEb4d" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
