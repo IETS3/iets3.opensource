@@ -16,32 +16,30 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>
     <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
     <import index="x0pf" ref="r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)" />
-    <import index="n6a9" ref="r:00045955-9409-4c08-901b-5694dc479158(org.iets3.core.expr.typetags.units.migration)" />
     <import index="63ih" ref="r:8b224ec5-7a3e-45b9-8341-eb73ff942246(org.iets3.core.expr.math.typesystem)" />
     <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="xqtf" ref="r:bf3cd5a0-eefc-4fd9-b3a6-b57643c9d80c(org.iets3.core.expr.typetags.units.typesystem)" />
     <import index="w1hl" ref="r:04b74a30-84ff-4d44-89e3-8084278f9c79(org.iets3.core.expr.typetags.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="eppz" ref="r:42a3bc53-29b1-44d6-9767-7c921cef7ba0(org.iets3.core.expr.typetags.typesystem)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
-    <import index="ku0a" ref="r:1881124b-7ac4-4b0f-a7dd-12953ac3263b(org.iets3.core.expr.typetags.units.si.units)" />
     <import index="cp9o" ref="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="dntf" ref="r:5d67260e-ef2e-4f51-9a4f-b005e241d989(org.iets3.core.expr.typetags.units.behavior)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="1qv1" ref="r:c53b8bbc-6142-4787-a6e4-66310b772b37(org.iets3.core.expr.math.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
-    <import index="b0gq" ref="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
     <import index="8ps7" ref="r:4134cae9-4017-4808-bf1c-768cb21cb9ea(org.iets3.core.expr.typetags.phyunits.si.units)" />
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" />
     <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)" />
+    <import index="zdxd" ref="r:8397e61b-8602-4a1e-97b1-3469618bad2d(org.iets3.core.expr.typetags.units.plugin)" />
+    <import index="65nr" ref="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -244,6 +242,10 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -291,7 +293,13 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
+      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
+        <child id="1160998896846" name="condition" index="1gVkn0" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -8213,16 +8221,33 @@
             </node>
           </node>
         </node>
-        <node concept="3vlDli" id="2x0M_l2NFTy" role="3cqZAp">
-          <node concept="2YIFZM" id="2x0M_l2NFYN" role="3tpDZB">
-            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
-            <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-            <node concept="3cmrfG" id="2x0M_l2NFYO" role="37wK5m">
-              <property role="3cmrfH" value="1000" />
+        <node concept="1gVbGN" id="31Bxel01qQS" role="3cqZAp">
+          <node concept="3clFbC" id="31Bxel01qTh" role="1gVkn0">
+            <node concept="3cmrfG" id="31Bxel01qTi" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
             </node>
-          </node>
-          <node concept="37vLTw" id="2x0M_l2O17n" role="3tpDZA">
-            <ref role="3cqZAo" node="31Bxel01qHD" resolve="evaluate" />
+            <node concept="2OqwBi" id="31Bxel01qTj" role="3uHU7B">
+              <node concept="1eOMI4" id="31Bxel01qTk" role="2Oq$k0">
+                <node concept="10QFUN" id="31Bxel01qTl" role="1eOMHV">
+                  <node concept="37vLTw" id="31Bxel01qTm" role="10QFUP">
+                    <ref role="3cqZAo" node="31Bxel01qHD" resolve="evaluate" />
+                  </node>
+                  <node concept="3uibUv" id="31Bxel01qTn" role="10QFUM">
+                    <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="31Bxel01qTo" role="2OqNvi">
+                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
+                <node concept="2YIFZM" id="31Bxel01qTp" role="37wK5m">
+                  <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
+                  <node concept="3cmrfG" id="31Bxel01qTq" role="37wK5m">
+                    <property role="3cmrfH" value="1000" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -8258,16 +8283,33 @@
             </node>
           </node>
         </node>
-        <node concept="3vlDli" id="2x0M_l2NGk0" role="3cqZAp">
-          <node concept="2YIFZM" id="2x0M_l2NGph" role="3tpDZB">
-            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
-            <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-            <node concept="3cmrfG" id="2x0M_l2NGpi" role="37wK5m">
-              <property role="3cmrfH" value="1" />
+        <node concept="1gVbGN" id="31Bxel00H8z" role="3cqZAp">
+          <node concept="3clFbC" id="31Bxel00K4f" role="1gVkn0">
+            <node concept="3cmrfG" id="31Bxel00KCG" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
             </node>
-          </node>
-          <node concept="37vLTw" id="2x0M_l2O1c8" role="3tpDZA">
-            <ref role="3cqZAo" node="31BxekZYVPO" resolve="evaluate" />
+            <node concept="2OqwBi" id="31Bxel00HG7" role="3uHU7B">
+              <node concept="1eOMI4" id="31Bxel00HiR" role="2Oq$k0">
+                <node concept="10QFUN" id="31Bxel00HiQ" role="1eOMHV">
+                  <node concept="37vLTw" id="31Bxel00HiP" role="10QFUP">
+                    <ref role="3cqZAo" node="31BxekZYVPO" resolve="evaluate" />
+                  </node>
+                  <node concept="3uibUv" id="31Bxel00Hnr" role="10QFUM">
+                    <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="31Bxel00IwC" role="2OqNvi">
+                <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
+                <node concept="2YIFZM" id="31Bxel00J2a" role="37wK5m">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                  <node concept="3cmrfG" id="31Bxel00J6r" role="37wK5m">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -8303,16 +8345,33 @@
             </node>
           </node>
         </node>
-        <node concept="3vlDli" id="2x0M_l2NGyI" role="3cqZAp">
-          <node concept="2YIFZM" id="2x0M_l2NHjA" role="3tpDZB">
-            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
-            <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-            <node concept="3cmrfG" id="2x0M_l2NHjB" role="37wK5m">
-              <property role="3cmrfH" value="5000" />
+        <node concept="1gVbGN" id="31Bxel01rka" role="3cqZAp">
+          <node concept="3clFbC" id="31Bxel01rkb" role="1gVkn0">
+            <node concept="3cmrfG" id="31Bxel01rkc" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
             </node>
-          </node>
-          <node concept="37vLTw" id="2x0M_l2O1h6" role="3tpDZA">
-            <ref role="3cqZAo" node="31Bxel01rk6" resolve="evaluate" />
+            <node concept="2OqwBi" id="31Bxel01rkd" role="3uHU7B">
+              <node concept="1eOMI4" id="31Bxel01rke" role="2Oq$k0">
+                <node concept="10QFUN" id="31Bxel01rkf" role="1eOMHV">
+                  <node concept="37vLTw" id="31Bxel01rkg" role="10QFUP">
+                    <ref role="3cqZAo" node="31Bxel01rk6" resolve="evaluate" />
+                  </node>
+                  <node concept="3uibUv" id="31Bxel01rkh" role="10QFUM">
+                    <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="31Bxel01rki" role="2OqNvi">
+                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
+                <node concept="2YIFZM" id="31Bxel01rkj" role="37wK5m">
+                  <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
+                  <node concept="3cmrfG" id="31Bxel01rkk" role="37wK5m">
+                    <property role="3cmrfH" value="5000" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -8348,15 +8407,32 @@
             </node>
           </node>
         </node>
-        <node concept="3vlDli" id="2x0M_l2NHCN" role="3cqZAp">
-          <node concept="37vLTw" id="2x0M_l2NHG4" role="3tpDZB">
-            <ref role="3cqZAo" node="31Bxel01rGY" resolve="evaluate" />
-          </node>
-          <node concept="2YIFZM" id="31Bxel01rHb" role="3tpDZA">
-            <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
-            <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-            <node concept="3cmrfG" id="31Bxel01rHc" role="37wK5m">
-              <property role="3cmrfH" value="1" />
+        <node concept="1gVbGN" id="31Bxel01rH2" role="3cqZAp">
+          <node concept="3clFbC" id="31Bxel01rH3" role="1gVkn0">
+            <node concept="3cmrfG" id="31Bxel01rH4" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="31Bxel01rH5" role="3uHU7B">
+              <node concept="1eOMI4" id="31Bxel01rH6" role="2Oq$k0">
+                <node concept="10QFUN" id="31Bxel01rH7" role="1eOMHV">
+                  <node concept="37vLTw" id="31Bxel01rH8" role="10QFUP">
+                    <ref role="3cqZAo" node="31Bxel01rGY" resolve="evaluate" />
+                  </node>
+                  <node concept="3uibUv" id="31Bxel01rH9" role="10QFUM">
+                    <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="31Bxel01rHa" role="2OqNvi">
+                <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
+                <node concept="2YIFZM" id="7nX5dD_seBI" role="37wK5m">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                  <node concept="3cmrfG" id="7nX5dD_seBJ" role="37wK5m">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -8471,9 +8547,9 @@
               <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
               <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
             </node>
-            <node concept="10M0yZ" id="31BxekZWApz" role="37vLTJ">
-              <ref role="3cqZAo" to="cp9o:3bE2i5JyurL" resolve="PRIORITY" />
-              <ref role="1PxDUh" to="cp9o:3bE2i5JypU2" resolve="NewBehaviorUnitLangConfig" />
+            <node concept="10M0yZ" id="7TK9se3ZjGJ" role="37vLTJ">
+              <ref role="3cqZAo" to="cp9o:7TK9se3Zi4G" resolve="PRIORITY" />
+              <ref role="1PxDUh" to="cp9o:7TK9se3Zi4B" resolve="NewBehaviorPhysUnitLangConfig" />
             </node>
           </node>
         </node>
@@ -8483,9 +8559,9 @@
       <node concept="3clFbS" id="31BxekZWA$S" role="2VODD2">
         <node concept="3clFbF" id="31BxekZWA_3" role="3cqZAp">
           <node concept="37vLTI" id="31BxekZWA_4" role="3clFbG">
-            <node concept="10M0yZ" id="31BxekZWA_6" role="37vLTJ">
-              <ref role="3cqZAo" to="cp9o:3bE2i5JyurL" resolve="PRIORITY" />
-              <ref role="1PxDUh" to="cp9o:3bE2i5JypU2" resolve="NewBehaviorUnitLangConfig" />
+            <node concept="10M0yZ" id="7TK9se3ZjHK" role="37vLTJ">
+              <ref role="3cqZAo" to="cp9o:7TK9se3Zi4G" resolve="PRIORITY" />
+              <ref role="1PxDUh" to="cp9o:7TK9se3Zi4B" resolve="NewBehaviorPhysUnitLangConfig" />
             </node>
             <node concept="3cmrfG" id="31BxekZWAAp" role="37vLTx">
               <property role="3cmrfH" value="-1" />

@@ -15,6 +15,7 @@
   <exported-language name="8bb1251e-eae5-47ab-9843-33adfae8edaa(org.iets3.core.expr.util)" />
   <exported-language name="cee4aa62-aca9-4f26-9602-75129cd457c9(org.iets3.core.expr.dataflow)" />
   <exported-language name="9c3cc6fb-ae5e-46d1-ace2-1e08bb47d03d(org.iets3.core.expr.typetags.bindingtime)" />
+  <exported-language name="7ee265bd-5986-4709-86ed-2c6daa33cd8c(org.iets3.core.expr.typetags.physunits)" />
   <exported-solutions>
     <exported-solution>79d5345e-e919-477c-b448-d9d5f36e2f92(org.iets3.core.expr.adt.interpreter)</exported-solution>
     <exported-solution>3a79aca0-f4b1-40f1-a3e9-259162afa77b(org.iets3.core.expr.dataflow.interpreter)</exported-solution>
