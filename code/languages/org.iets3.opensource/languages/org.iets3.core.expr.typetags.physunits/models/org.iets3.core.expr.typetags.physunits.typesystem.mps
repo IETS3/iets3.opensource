@@ -217,6 +217,9 @@
         <child id="1163670677455" name="expression" index="3Kbmr1" />
         <child id="1163670683720" name="body" index="3Kbo56" />
       </concept>
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -235,19 +238,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA" />
-      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
-      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
-        <reference id="6832197706140518108" name="param" index="zr_51" />
-      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
-        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
-        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
-      </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -422,6 +416,14 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -5685,12 +5687,6 @@
             <property role="1dT_AB" value="The assumption for this algorithm is that the arguments are already minimized. Otherwise recursion is needed" />
           </node>
         </node>
-        <node concept="TUZQ0" id="45a4DYZR5Fl" role="3nqlJM">
-          <node concept="zr_55" id="45a4DYZR5Fn" role="zr_5Q">
-            <ref role="zr_51" node="45a4DYZteDG" resolve="qTy" />
-          </node>
-        </node>
-        <node concept="x79VA" id="45a4DYZR5Fo" role="3nqlJM" />
       </node>
     </node>
     <node concept="3Tm1VV" id="45a4DYZteBK" role="1B3o_S" />
@@ -5941,8 +5937,13 @@
                     <node concept="2qgKlT" id="1JynhuWsshT" role="2OqNvi">
                       <ref role="37wK5l" to="rppw:1JynhuWsqnp" resolve="setExp" />
                       <node concept="2OqwBi" id="73cP8DpYQ_w" role="37wK5m">
-                        <node concept="37vLTw" id="73cP8DpYpUd" role="2Oq$k0">
-                          <ref role="3cqZAo" node="45a4DYZIIhM" resolve="exp" />
+                        <node concept="2OqwBi" id="5BsFqGHUS_y" role="2Oq$k0">
+                          <node concept="37vLTw" id="73cP8DpYpUd" role="2Oq$k0">
+                            <ref role="3cqZAo" node="45a4DYZIIhM" resolve="exp" />
+                          </node>
+                          <node concept="liA8E" id="5BsFqGHUU0D" role="2OqNvi">
+                            <ref role="37wK5l" to="rppw:5dSoB2LNP7n" resolve="reciprocal" />
+                          </node>
                         </node>
                         <node concept="liA8E" id="73cP8DpYRTG" role="2OqNvi">
                           <ref role="37wK5l" to="rppw:73cP8DpYBze" resolve="negate" />
@@ -6193,6 +6194,81 @@
     <node concept="2YIFZL" id="45a4DYZttz_" role="jymVt">
       <property role="TrG5h" value="simplifyMultAndPow" />
       <node concept="3clFbS" id="45a4DYZttzC" role="3clF47">
+        <node concept="Jncv_" id="EsE2hymP_8" role="3cqZAp">
+          <ref role="JncvD" to="i3ya:45a4DYZTqri" resolve="IGroupPower" />
+          <node concept="37vLTw" id="EsE2hymRrw" role="JncvB">
+            <ref role="3cqZAo" node="45a4DYZttAP" resolve="qTy" />
+          </node>
+          <node concept="3clFbS" id="EsE2hymP_c" role="Jncv$">
+            <node concept="3clFbJ" id="EsE2hymUf2" role="3cqZAp">
+              <node concept="2OqwBi" id="EsE2hyn37H" role="3clFbw">
+                <node concept="2OqwBi" id="EsE2hymYvh" role="2Oq$k0">
+                  <node concept="Jnkvi" id="EsE2hymVJ_" role="2Oq$k0">
+                    <ref role="1M0zk5" node="EsE2hymP_e" resolve="power" />
+                  </node>
+                  <node concept="2qgKlT" id="EsE2hyn14M" role="2OqNvi">
+                    <ref role="37wK5l" to="rppw:1JynhuWslGU" resolve="getExp" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="EsE2hyn4Ok" role="2OqNvi">
+                  <ref role="37wK5l" to="rppw:5dSoB2LRAhY" resolve="equals" />
+                  <node concept="10M0yZ" id="EsE2hyn5Xg" role="37wK5m">
+                    <ref role="3cqZAo" to="rppw:5dSoB2LTsTN" resolve="ONE" />
+                    <ref role="1PxDUh" to="rppw:5dSoB2LMRlC" resolve="Fraction" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="EsE2hymUf4" role="3clFbx">
+                <node concept="3cpWs6" id="EsE2hyn89w" role="3cqZAp">
+                  <node concept="2OqwBi" id="EsE2hyneg2" role="3cqZAk">
+                    <node concept="Jnkvi" id="EsE2hyndd3" role="2Oq$k0">
+                      <ref role="1M0zk5" node="EsE2hymP_e" resolve="power" />
+                    </node>
+                    <node concept="2qgKlT" id="EsE2hyneL8" role="2OqNvi">
+                      <ref role="37wK5l" to="rppw:1JynhuWs9Jp" resolve="getBase" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3eNFk2" id="EsE2hyngAu" role="3eNLev">
+                <node concept="2OqwBi" id="EsE2hynncC" role="3eO9$A">
+                  <node concept="2OqwBi" id="EsE2hyniRD" role="2Oq$k0">
+                    <node concept="Jnkvi" id="EsE2hynh9q" role="2Oq$k0">
+                      <ref role="1M0zk5" node="EsE2hymP_e" resolve="power" />
+                    </node>
+                    <node concept="2qgKlT" id="EsE2hynl2o" role="2OqNvi">
+                      <ref role="37wK5l" to="rppw:1JynhuWslGU" resolve="getExp" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="EsE2hynp3Q" role="2OqNvi">
+                    <ref role="37wK5l" to="rppw:5dSoB2LRAhY" resolve="equals" />
+                    <node concept="10M0yZ" id="EsE2hyocW8" role="37wK5m">
+                      <ref role="3cqZAo" to="rppw:5dSoB2LTpwy" resolve="ZERO" />
+                      <ref role="1PxDUh" to="rppw:5dSoB2LMRlC" resolve="Fraction" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="EsE2hyngAw" role="3eOfB_">
+                  <node concept="3cpWs6" id="EsE2hynskm" role="3cqZAp">
+                    <node concept="2OqwBi" id="EsE2hynwIS" role="3cqZAk">
+                      <node concept="Jnkvi" id="EsE2hynuGR" role="2Oq$k0">
+                        <ref role="1M0zk5" node="EsE2hymP_e" resolve="power" />
+                      </node>
+                      <node concept="2qgKlT" id="EsE2hynxgW" role="2OqNvi">
+                        <ref role="37wK5l" to="rppw:45a4DYZV86U" resolve="mkNeutralElem" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="EsE2hymP_e" role="JncvA">
+            <property role="TrG5h" value="power" />
+            <node concept="2jxLKc" id="EsE2hymP_f" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="EsE2hymNpf" role="3cqZAp" />
         <node concept="3clFbJ" id="45a4DYZQ9Hc" role="3cqZAp">
           <node concept="3clFbS" id="45a4DYZQ9He" role="3clFbx">
             <node concept="3cpWs6" id="45a4DYZQ_Hu" role="3cqZAp">
