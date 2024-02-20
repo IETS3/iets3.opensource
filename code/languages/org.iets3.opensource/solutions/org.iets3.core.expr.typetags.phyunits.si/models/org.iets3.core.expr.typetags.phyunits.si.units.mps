@@ -223,7 +223,7 @@
     <node concept="_ixoA" id="36kPvG5oSoJ" role="_iOnB" />
   </node>
   <node concept="_iOnU" id="3xM68GMigWy">
-    <property role="TrG5h" value="SIUnitsDerivedAndScaled" />
+    <property role="TrG5h" value="SIDerivedUnits" />
     <node concept="3GEVxB" id="3xM68GMigWz" role="3i6evy">
       <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="3xM68GMigWg" resolve="SIUnit" />
