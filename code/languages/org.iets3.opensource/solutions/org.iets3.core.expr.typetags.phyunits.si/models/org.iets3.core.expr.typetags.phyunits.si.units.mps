@@ -146,7 +146,7 @@
       <property role="TrG5h" value="electric current" />
     </node>
     <node concept="Rn5op" id="3xM68GMigWi" role="_iOnB">
-      <property role="TrG5h" value="no unit" />
+      <property role="TrG5h" value="dimensionless" />
       <property role="1xQvps" value="false" />
     </node>
     <node concept="Rn5op" id="3xM68GMigWj" role="_iOnB">
