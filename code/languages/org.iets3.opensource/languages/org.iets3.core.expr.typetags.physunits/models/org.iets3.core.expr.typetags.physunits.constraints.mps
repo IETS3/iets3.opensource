@@ -522,7 +522,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="73cP8DpvQzv">
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <ref role="1M2myG" to="i3ya:7athFveyQYz" resolve="QuantityReference" />
     <node concept="1N5Pfh" id="73cP8Dpyk0W" role="1Mr941">
       <ref role="1N5Vy1" to="i3ya:7athFveyRoc" resolve="quantity" />
@@ -561,7 +561,7 @@
     <ref role="1MND4H" to="i3ya:7eOyx9r3kR6" resolve="IntegerExponent" />
   </node>
   <node concept="1M2fIO" id="15KrVXSmBIA">
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <ref role="1M2myG" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
     <node concept="9S07l" id="15KrVXSmBKf" role="9Vyp8">
       <node concept="3clFbS" id="15KrVXSmBKg" role="2VODD2">

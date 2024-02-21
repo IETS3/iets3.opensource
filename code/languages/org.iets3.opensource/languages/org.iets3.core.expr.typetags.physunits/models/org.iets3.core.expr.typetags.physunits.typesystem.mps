@@ -5101,7 +5101,7 @@
   </node>
   <node concept="1YbPZF" id="45a4DYZrUYx">
     <property role="TrG5h" value="typeof_Quantity" />
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <node concept="3clFbS" id="45a4DYZrUYy" role="18ibNy">
       <node concept="3clFbJ" id="45a4DYZrV4I" role="3cqZAp">
         <node concept="2OqwBi" id="45a4DYZrWR6" role="3clFbw">
@@ -5180,7 +5180,7 @@
   </node>
   <node concept="1YbPZF" id="45a4DYZslmo">
     <property role="TrG5h" value="typeof_QuantityDiv" />
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <node concept="3clFbS" id="45a4DYZslmp" role="18ibNy">
       <node concept="nvevp" id="45a4DYZslFu" role="3cqZAp">
         <node concept="3clFbS" id="45a4DYZslFw" role="nvhr_">
@@ -5325,7 +5325,7 @@
     </node>
   </node>
   <node concept="2sgARr" id="45a4DYZspk_">
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <property role="TrG5h" value="QuantityTypes" />
     <node concept="3clFbS" id="45a4DYZspkA" role="2sgrp5">
       <node concept="3cpWs6" id="45a4DYZsq1p" role="3cqZAp">
@@ -5343,7 +5343,7 @@
   </node>
   <node concept="1YbPZF" id="45a4DYZsBqB">
     <property role="TrG5h" value="typeof_QuantityReference" />
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <node concept="3clFbS" id="45a4DYZsBqC" role="18ibNy">
       <node concept="1Z5TYs" id="45a4DYZsBVy" role="3cqZAp">
         <node concept="mw_s8" id="45a4DYZsBZ6" role="1ZfhKB">
@@ -5373,7 +5373,7 @@
     </node>
   </node>
   <node concept="312cEu" id="45a4DYZteBJ">
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <property role="TrG5h" value="QuantityTypeHelper" />
     <node concept="2tJIrI" id="45a4DYZR4zQ" role="jymVt" />
     <node concept="2YIFZL" id="45a4DYZteD9" role="jymVt">
@@ -6891,7 +6891,7 @@
   </node>
   <node concept="1YbPZF" id="45a4DYZRQku">
     <property role="TrG5h" value="typeof_QuantityMul" />
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <node concept="3clFbS" id="45a4DYZRQkv" role="18ibNy">
       <node concept="nvevp" id="45a4DYZRQrv" role="3cqZAp">
         <node concept="3clFbS" id="45a4DYZRQrw" role="nvhr_">
@@ -6997,11 +6997,11 @@
             </node>
             <node concept="1Z2H0r" id="45a4DYZRRyl" role="nvjzm">
               <node concept="2OqwBi" id="45a4DYZRR_k" role="1Z2MuG">
-                <node concept="1YBJjd" id="45a4DYZRR$p" role="2Oq$k0">
-                  <ref role="1YBMHb" node="45a4DYZRQkx" resolve="qMul" />
-                </node>
                 <node concept="3TrEf2" id="45a4DYZRRFy" role="2OqNvi">
                   <ref role="3Tt5mk" to="i3ya:1JynhuWna1Z" resolve="right" />
+                </node>
+                <node concept="1YBJjd" id="45a4DYZRR$p" role="2Oq$k0">
+                  <ref role="1YBMHb" node="45a4DYZRQkx" resolve="qMul" />
                 </node>
               </node>
             </node>
@@ -7013,11 +7013,11 @@
         </node>
         <node concept="1Z2H0r" id="45a4DYZRQQk" role="nvjzm">
           <node concept="2OqwBi" id="45a4DYZRR2D" role="1Z2MuG">
-            <node concept="1YBJjd" id="45a4DYZRQSM" role="2Oq$k0">
-              <ref role="1YBMHb" node="45a4DYZRQkx" resolve="qMul" />
-            </node>
             <node concept="3TrEf2" id="45a4DYZRRkI" role="2OqNvi">
               <ref role="3Tt5mk" to="i3ya:1JynhuWn9Pn" resolve="left" />
+            </node>
+            <node concept="1YBJjd" id="45a4DYZRQSM" role="2Oq$k0">
+              <ref role="1YBMHb" node="45a4DYZRQkx" resolve="qMul" />
             </node>
           </node>
         </node>
@@ -7486,7 +7486,7 @@
   </node>
   <node concept="18kY7G" id="7Bmg9Oo6rqP">
     <property role="TrG5h" value="check_Quantity" />
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <node concept="3clFbS" id="7Bmg9Oo6rqQ" role="18ibNy">
       <node concept="3clFbJ" id="7Bmg9Oo6rtN" role="3cqZAp">
         <node concept="1Wc70l" id="7Bmg9Oo6sQs" role="3clFbw">
@@ -7586,7 +7586,7 @@
   </node>
   <node concept="Q5z_Y" id="7Bmg9Oo6XnT">
     <property role="TrG5h" value="fix_nonderivedQuantityRemoveSpec" />
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <node concept="Q5ZZ6" id="7Bmg9Oo6XnU" role="Q6x$H">
       <node concept="3clFbS" id="7Bmg9Oo6XnV" role="2VODD2">
         <node concept="3clFbF" id="7Bmg9Oo6XCg" role="3cqZAp">
@@ -7619,7 +7619,7 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="7Bmg9Oo7t1L">
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <property role="TrG5h" value="fix_nonderivedQuantityMakeDerived" />
     <node concept="Q5ZZ6" id="7Bmg9Oo7t1M" role="Q6x$H">
       <node concept="3clFbS" id="7Bmg9Oo7t1N" role="2VODD2">
@@ -8132,7 +8132,7 @@
   </node>
   <node concept="1YbPZF" id="7i1yFLkwhY1">
     <property role="TrG5h" value="typeof_QuantityExponent" />
-    <property role="3GE5qa" value="definition.quantity" />
+    <property role="3GE5qa" value="group" />
     <node concept="3clFbS" id="7i1yFLkwhY2" role="18ibNy">
       <node concept="nvevp" id="7i1yFLkwic2" role="3cqZAp">
         <node concept="3clFbS" id="7i1yFLkwic3" role="nvhr_">
