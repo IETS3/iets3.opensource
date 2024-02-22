@@ -151,7 +151,7 @@
     <property role="TrG5h" value="UnitReference" />
     <property role="EcuMT" value="8337440621611273669" />
     <property role="R4oN_" value="a reference to an unit" />
-    <property role="3GE5qa" value="definition.expressions" />
+    <property role="3GE5qa" value="definition.unit" />
     <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpr" />
     <node concept="1TJgyi" id="7Bmg9OopAyq" role="1TKVEl">
       <property role="IQ2nx" value="8779275567068768410" />

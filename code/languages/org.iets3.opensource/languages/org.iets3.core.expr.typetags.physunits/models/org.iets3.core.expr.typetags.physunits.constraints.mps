@@ -172,7 +172,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="40jlwCD6fMj">
-    <property role="3GE5qa" value="definition.expressions" />
+    <property role="3GE5qa" value="definition.unit" />
     <ref role="1M2myG" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
     <node concept="1N5Pfh" id="40jlwCD6hKx" role="1Mr941">
       <ref role="1N5Vy1" to="i3ya:7eOyx9r3qFW" resolve="unit" />
