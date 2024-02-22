@@ -748,6 +748,19 @@
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
     </node>
+    <node concept="2tJIrI" id="7Mca05mQbFo" role="jymVt" />
+    <node concept="Qs71p" id="7Mca05mQbLB" role="jymVt">
+      <property role="TrG5h" value="MinimizationStrategy" />
+      <node concept="QsSxf" id="7Mca05mQbW4" role="Qtgdg">
+        <property role="TrG5h" value="DIVISION" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+      </node>
+      <node concept="QsSxf" id="7Mca05mQc0x" role="Qtgdg">
+        <property role="TrG5h" value="MULTIPLICATION" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+      </node>
+      <node concept="3Tm1VV" id="7Mca05mQbLC" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="4qv99Irykn3" role="jymVt" />
     <node concept="3clFb_" id="26cjRACVSeU" role="jymVt">
       <property role="TrG5h" value="getPriorityLevel" />
@@ -762,6 +775,15 @@
       <node concept="3Tm1VV" id="4qv99IrylnA" role="1B3o_S" />
       <node concept="3uibUv" id="4qv99IryllQ" role="3clF45">
         <ref role="3uigEE" node="4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7Mca05mQce6" role="jymVt" />
+    <node concept="3clFb_" id="7Mca05mQcuG" role="jymVt">
+      <property role="TrG5h" value="getMinimizationStrategy" />
+      <node concept="3clFbS" id="7Mca05mQcuJ" role="3clF47" />
+      <node concept="3Tm1VV" id="7Mca05mQcuK" role="1B3o_S" />
+      <node concept="3uibUv" id="7Mca05mQcmJ" role="3clF45">
+        <ref role="3uigEE" node="7Mca05mQbLB" resolve="MinimizationStrategy" />
       </node>
     </node>
     <node concept="2tJIrI" id="69ocqYbPQoZ" role="jymVt" />
@@ -810,6 +832,25 @@
       </node>
       <node concept="2AHcQZ" id="4qv99IrzP4_" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7Mca05mQcSX" role="jymVt" />
+    <node concept="3clFb_" id="7Mca05mQcD4" role="jymVt">
+      <property role="TrG5h" value="getMinimizationStrategy" />
+      <node concept="3Tm1VV" id="7Mca05mQcD6" role="1B3o_S" />
+      <node concept="3uibUv" id="7Mca05mQcD7" role="3clF45">
+        <ref role="3uigEE" node="7Mca05mQbLB" resolve="MinimizationStrategy" />
+      </node>
+      <node concept="3clFbS" id="7Mca05mQcD8" role="3clF47">
+        <node concept="3clFbF" id="7Mca05mQcDb" role="3cqZAp">
+          <node concept="Rm8GO" id="7Mca05n5K9E" role="3clFbG">
+            <ref role="Rm8GQ" node="7Mca05mQc0x" resolve="MULTIPLICATION" />
+            <ref role="1Px2BO" node="7Mca05mQbLB" resolve="MinimizationStrategy" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7Mca05mQcD9" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="4qv99IrzTTd" role="jymVt" />

@@ -265,6 +265,17 @@
         <ref role="1Px2BO" to="65nr:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
       </node>
     </node>
+    <node concept="Wx3nA" id="7Mca05mQjwK" role="jymVt">
+      <property role="TrG5h" value="MINIMIZATION_STRATEGY" />
+      <node concept="3Tm1VV" id="7Mca05mQjwL" role="1B3o_S" />
+      <node concept="3uibUv" id="7Mca05mQjwM" role="1tU5fm">
+        <ref role="3uigEE" to="65nr:7Mca05mQbLB" resolve="MinimizationStrategy" />
+      </node>
+      <node concept="Rm8GO" id="7Mca05n5KxP" role="33vP2m">
+        <ref role="Rm8GQ" to="65nr:7Mca05mQc0x" resolve="MULTIPLICATION" />
+        <ref role="1Px2BO" to="65nr:7Mca05mQbLB" resolve="MinimizationStrategy" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="7TK9se3Zi4O" role="jymVt" />
     <node concept="3clFb_" id="7TK9se3Zi4P" role="jymVt">
       <property role="TrG5h" value="getPriorityLevel" />
@@ -325,6 +336,24 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7TK9se3Zj36" role="jymVt" />
+    <node concept="3clFb_" id="7Mca05mQjco" role="jymVt">
+      <property role="TrG5h" value="getMinimizationStrategy" />
+      <node concept="3Tm1VV" id="7Mca05mQjcq" role="1B3o_S" />
+      <node concept="3uibUv" id="7Mca05mQjcr" role="3clF45">
+        <ref role="3uigEE" to="65nr:7Mca05mQbLB" resolve="MinimizationStrategy" />
+      </node>
+      <node concept="3clFbS" id="7Mca05mQjcs" role="3clF47">
+        <node concept="3clFbF" id="7Mca05mQkIi" role="3cqZAp">
+          <node concept="37vLTw" id="7Mca05mQkIh" role="3clFbG">
+            <ref role="3cqZAo" node="7Mca05mQjwK" resolve="MINIMIZATION_STRATEGY" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7Mca05mQjct" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7Mca05mQkZq" role="jymVt" />
     <node concept="3clFb_" id="7TK9se3ZiFi" role="jymVt">
       <property role="TrG5h" value="getQuantitySpecifier" />
       <node concept="3Tm1VV" id="7TK9se3ZiFk" role="1B3o_S" />
