@@ -141,6 +141,9 @@
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
+        <child id="1140131861877" name="replacementNode" index="1P9ThW" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -455,6 +458,49 @@
             <node concept="2Sf5sV" id="15KrVXSxdHm" role="2Oq$k0" />
             <node concept="2qgKlT" id="15KrVXSxdOH" role="2OqNvi">
               <ref role="37wK5l" to="rppw:15KrVXSxcF0" resolve="convertableToMul" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7Mca05n6aED">
+    <property role="3GE5qa" value="group" />
+    <property role="TrG5h" value="SwitchMultiplicationOrder" />
+    <ref role="2ZfgGC" to="i3ya:45a4DYZTqcG" resolve="IGroupMultiply" />
+    <node concept="2S6ZIM" id="7Mca05n6aEE" role="2ZfVej">
+      <node concept="3clFbS" id="7Mca05n6aEF" role="2VODD2">
+        <node concept="3clFbF" id="7Mca05n6aVc" role="3cqZAp">
+          <node concept="Xl_RD" id="7Mca05n6aVb" role="3clFbG">
+            <property role="Xl_RC" value="Switch Multiplication Order" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7Mca05n6aEG" role="2ZfgGD">
+      <node concept="3clFbS" id="7Mca05n6aEH" role="2VODD2">
+        <node concept="3clFbF" id="7Mca05n6bSR" role="3cqZAp">
+          <node concept="2OqwBi" id="7Mca05n6bTY" role="3clFbG">
+            <node concept="2Sf5sV" id="7Mca05n6bSQ" role="2Oq$k0" />
+            <node concept="1P9Npp" id="7Mca05n6bYS" role="2OqNvi">
+              <node concept="2OqwBi" id="7Mca05n8pmZ" role="1P9ThW">
+                <node concept="2Sf5sV" id="7Mca05n8pdM" role="2Oq$k0" />
+                <node concept="2qgKlT" id="7Mca05n8pBS" role="2OqNvi">
+                  <ref role="37wK5l" to="rppw:45a4DYZTqDU" resolve="mkMultiply" />
+                  <node concept="2OqwBi" id="7Mca05n8pKu" role="37wK5m">
+                    <node concept="2Sf5sV" id="7Mca05n8pJ1" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="7Mca05n8pOV" role="2OqNvi">
+                      <ref role="37wK5l" to="rppw:1JynhuWs0LF" resolve="getRight" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7Mca05n8pSX" role="37wK5m">
+                    <node concept="2Sf5sV" id="7Mca05n8pSg" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="7Mca05n8pXH" role="2OqNvi">
+                      <ref role="37wK5l" to="rppw:1JynhuWs0Bg" resolve="getLeft" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
