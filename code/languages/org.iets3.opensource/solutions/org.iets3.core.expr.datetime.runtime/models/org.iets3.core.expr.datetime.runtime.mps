@@ -2,9 +2,9 @@
 <model ref="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
   </languages>
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
@@ -4619,12 +4619,6 @@
     </node>
     <node concept="2tJIrI" id="7khFtBHIiHx" role="jymVt" />
     <node concept="3Tm1VV" id="7khFtBHIbg7" role="1B3o_S" />
-    <node concept="3uibUv" id="7HSGsv4zI7F" role="EKbjA">
-      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
-      <node concept="3uibUv" id="7HSGsv4$wer" role="11_B2D">
-        <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
-      </node>
-    </node>
     <node concept="3clFb_" id="7HSGsv4zMiX" role="jymVt">
       <property role="TrG5h" value="compareTo" />
       <node concept="3Tm1VV" id="7HSGsv4zMiY" role="1B3o_S" />
@@ -4644,6 +4638,12 @@
       </node>
       <node concept="2AHcQZ" id="7HSGsv4zMj5" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="7HSGsv4zI7F" role="EKbjA">
+      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
+      <node concept="3uibUv" id="7HSGsv4$wer" role="11_B2D">
+        <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
       </node>
     </node>
   </node>
