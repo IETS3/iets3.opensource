@@ -13,6 +13,7 @@
   <imports>
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" />
     <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)" />
+    <import index="x0pf" ref="r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -500,6 +501,36 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7Mca05nd9Nr">
+    <property role="3GE5qa" value="group" />
+    <property role="TrG5h" value="SimplifyGroup" />
+    <ref role="2ZfgGC" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
+    <node concept="2S6ZIM" id="7Mca05nd9Ns" role="2ZfVej">
+      <node concept="3clFbS" id="7Mca05nd9Nt" role="2VODD2">
+        <node concept="3clFbF" id="7Mca05nd9Ow" role="3cqZAp">
+          <node concept="Xl_RD" id="7Mca05nd9Ov" role="3clFbG">
+            <property role="Xl_RC" value="Simplify" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7Mca05nd9Nu" role="2ZfgGD">
+      <node concept="3clFbS" id="7Mca05nd9Nv" role="2VODD2">
+        <node concept="3clFbF" id="7Mca05neJTp" role="3cqZAp">
+          <node concept="2OqwBi" id="7Mca05neK1j" role="3clFbG">
+            <node concept="2Sf5sV" id="7Mca05neJTo" role="2Oq$k0" />
+            <node concept="1P9Npp" id="7Mca05neKbC" role="2OqNvi">
+              <node concept="2YIFZM" id="7Mca05ndC8K" role="1P9ThW">
+                <ref role="37wK5l" to="x0pf:45a4DYZteD9" resolve="minimize" />
+                <ref role="1Pybhc" to="x0pf:45a4DYZteBJ" resolve="GroupHelper" />
+                <node concept="2Sf5sV" id="7Mca05ndC9u" role="37wK5m" />
               </node>
             </node>
           </node>
