@@ -2650,8 +2650,30 @@
             </node>
           </node>
         </node>
-        <node concept="3F1sOY" id="7i1yFLksmJ4" role="jn6J3">
-          <ref role="1NtTu8" to="i3ya:7i1yFLkslE5" resolve="exp" />
+        <node concept="130CD5" id="2NJGAccdz62" role="jn6J3">
+          <node concept="3F1sOY" id="2NJGAccdz63" role="130CDr">
+            <ref role="1NtTu8" to="i3ya:7i1yFLkslE5" resolve="exp" />
+          </node>
+          <node concept="130t_x" id="2NJGAccdz64" role="130p63">
+            <property role="1hAc7k" value="g_hAxAO/delete_action_id" />
+            <node concept="130t_S" id="2NJGAccdz65" role="130oVf">
+              <node concept="3clFbS" id="2NJGAccdz66" role="2VODD2">
+                <node concept="3clFbF" id="2NJGAccdz67" role="3cqZAp">
+                  <node concept="2OqwBi" id="2NJGAccdz68" role="3clFbG">
+                    <node concept="130tyv" id="2NJGAccdz69" role="2Oq$k0" />
+                    <node concept="1P9Npp" id="2NJGAccdz6a" role="2OqNvi">
+                      <node concept="2OqwBi" id="2NJGAccdz6b" role="1P9ThW">
+                        <node concept="130tyv" id="2NJGAccdz6c" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="2NJGAccdz6d" role="2OqNvi">
+                          <ref role="3Tt5mk" to="i3ya:7i1yFLkslE6" resolve="base" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
