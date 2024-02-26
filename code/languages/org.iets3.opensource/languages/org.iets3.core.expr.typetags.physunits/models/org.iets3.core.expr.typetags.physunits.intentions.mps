@@ -51,6 +51,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -65,6 +66,9 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
@@ -545,6 +549,67 @@
         <node concept="3clFbF" id="7Mca05nOEz4" role="3cqZAp">
           <node concept="3clFbT" id="7Mca05nOEz3" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2NJGAccmSh4">
+    <property role="TrG5h" value="SimplifyFraction" />
+    <ref role="2ZfgGC" to="i3ya:3j3yk3gAgiT" resolve="FractionalExponent" />
+    <node concept="2S6ZIM" id="2NJGAccmSh5" role="2ZfVej">
+      <node concept="3clFbS" id="2NJGAccmSh6" role="2VODD2">
+        <node concept="3clFbF" id="2NJGAccmVOu" role="3cqZAp">
+          <node concept="Xl_RD" id="2NJGAccmVOt" role="3clFbG">
+            <property role="Xl_RC" value="Simplify Fraction" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2NJGAccmSh7" role="2ZfgGD">
+      <node concept="3clFbS" id="2NJGAccmSh8" role="2VODD2">
+        <node concept="3clFbF" id="2NJGAccn4e4" role="3cqZAp">
+          <node concept="2OqwBi" id="2NJGAccn4gX" role="3clFbG">
+            <node concept="2Sf5sV" id="2NJGAccn4e3" role="2Oq$k0" />
+            <node concept="1P9Npp" id="2NJGAccn4m5" role="2OqNvi">
+              <node concept="2OqwBi" id="2NJGAccn2bA" role="1P9ThW">
+                <node concept="35c_gC" id="2NJGAccn06E" role="2Oq$k0">
+                  <ref role="35c_gD" to="i3ya:3j3yk3gAgiT" resolve="FractionalExponent" />
+                </node>
+                <node concept="2qgKlT" id="2NJGAccn2xW" role="2OqNvi">
+                  <ref role="37wK5l" to="rppw:brG9xoyyFz" resolve="from" />
+                  <node concept="2OqwBi" id="2NJGAccn8ds" role="37wK5m">
+                    <node concept="2Sf5sV" id="2NJGAccn84E" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="2NJGAccn8hW" role="2OqNvi">
+                      <ref role="37wK5l" to="rppw:3j3yk3guAC3" resolve="getNumerator" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2NJGAccn8kD" role="37wK5m">
+                    <node concept="2Sf5sV" id="2NJGAccn8jN" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="2NJGAccn8qO" role="2OqNvi">
+                      <ref role="37wK5l" to="rppw:3j3yk3guABz" resolve="getDenominator" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="2NJGAccmVYQ" role="2ZfVeh">
+      <node concept="3clFbS" id="2NJGAccmVYR" role="2VODD2">
+        <node concept="3clFbF" id="2NJGAccmW4B" role="3cqZAp">
+          <node concept="3clFbC" id="2NJGAccmYQS" role="3clFbG">
+            <node concept="3cmrfG" id="2NJGAccmYSi" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="2NJGAccmWoY" role="3uHU7B">
+              <node concept="2Sf5sV" id="2NJGAccmW4A" role="2Oq$k0" />
+              <node concept="2qgKlT" id="2NJGAccmXG7" role="2OqNvi">
+                <ref role="37wK5l" to="rppw:3j3yk3guABz" resolve="getDenominator" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
