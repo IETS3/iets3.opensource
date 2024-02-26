@@ -373,8 +373,6 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
-      <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
-      <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
       <concept id="1984422498404534858" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_TransformationText" flags="ig" index="2ee1ZP" />
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
@@ -383,7 +381,6 @@
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
         <child id="8207263695490893799" name="symbols" index="2ElW$Z" />
       </concept>
-      <concept id="2489050352088028316" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_editorContext" flags="ng" index="2MNBq7" />
       <concept id="6856661361479784881" name="com.mbeddr.mpsutil.grammarcells.structure.InlineActionMapItem_Param_node" flags="ng" index="130tyv" />
       <concept id="6856661361479784527" name="com.mbeddr.mpsutil.grammarcells.structure.InlineActionMapItem" flags="ng" index="130t_x">
         <property id="1139535298778" name="actionId" index="1hAc7k" />
@@ -401,11 +398,9 @@
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
-        <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
-      <concept id="2862331529394480355" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SubConcept" flags="ng" index="1Lj6YZ" />
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
@@ -452,12 +447,6 @@
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
-        <property id="2034914114981261751" name="severity" index="RRSoG" />
-        <child id="2034914114981261753" name="message" index="RRSoy" />
-      </concept>
     </language>
     <language id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations">
       <concept id="8658283006837849469" name="de.itemis.mps.editor.math.notations.structure.PowerEditor" flags="ng" index="jtDJS">
@@ -2238,21 +2227,6 @@
               </node>
             </node>
           </node>
-          <node concept="2e7140" id="5dNVOCFP7ZW" role="2e1Fq_">
-            <node concept="3clFbS" id="5dNVOCFP7ZX" role="2VODD2">
-              <node concept="3clFbF" id="5dNVOCFP803" role="3cqZAp">
-                <node concept="17R0WA" id="5dNVOCFP805" role="3clFbG">
-                  <node concept="2OqwBi" id="5dNVOCFP806" role="3uHU7w">
-                    <node concept="2MNBq7" id="5dNVOCFP807" role="2Oq$k0" />
-                    <node concept="liA8E" id="5dNVOCFP808" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode()" resolve="getSelectedNode" />
-                    </node>
-                  </node>
-                  <node concept="2e73FJ" id="5dNVOCFP809" role="3uHU7B" />
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
         <node concept="1kIj98" id="7yw1DU9fxlw" role="jiBfM">
           <node concept="3F1sOY" id="7athFveF26Z" role="1kIj9b">
@@ -2492,21 +2466,6 @@
           <node concept="3F1sOY" id="7i1yFLkshm$" role="1kIj9b">
             <ref role="1NtTu8" to="i3ya:7i1yFLksgFY" resolve="left" />
           </node>
-          <node concept="2e7140" id="5dNVOCFJgOC" role="2e1Fq_">
-            <node concept="3clFbS" id="5dNVOCFJgOD" role="2VODD2">
-              <node concept="3clFbF" id="5dNVOCFNDHK" role="3cqZAp">
-                <node concept="17R0WA" id="5dNVOCFNE12" role="3clFbG">
-                  <node concept="2OqwBi" id="5dNVOCFNEun" role="3uHU7w">
-                    <node concept="2MNBq7" id="5dNVOCFNEcl" role="2Oq$k0" />
-                    <node concept="liA8E" id="5dNVOCFNEHs" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode()" resolve="getSelectedNode" />
-                    </node>
-                  </node>
-                  <node concept="2e73FJ" id="5dNVOCFNDHJ" role="3uHU7B" />
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
         <node concept="3ZSo5i" id="3NjH4t$4$KT" role="3EZMnx">
           <node concept="3F0ifn" id="3NjH4t$4_2s" role="3EZMny">
@@ -2560,45 +2519,6 @@
         <node concept="1kIj98" id="7i1yFLkshmA" role="3EZMnx">
           <node concept="3F1sOY" id="7i1yFLkshmB" role="1kIj9b">
             <ref role="1NtTu8" to="i3ya:7i1yFLksgSc" resolve="right" />
-          </node>
-          <node concept="2e7140" id="5dNVOCFJgbF" role="2e1Fq_">
-            <node concept="3clFbS" id="5dNVOCFJgbG" role="2VODD2">
-              <node concept="RRSsy" id="5dNVOCFJg0B" role="3cqZAp">
-                <property role="RRSoG" value="gZ5fh_4/error" />
-                <node concept="3cpWs3" id="5dNVOCFJg0C" role="RRSoy">
-                  <node concept="2OqwBi" id="5dNVOCFJg0D" role="3uHU7w">
-                    <node concept="2MNBq7" id="5dNVOCFJg0E" role="2Oq$k0" />
-                    <node concept="liA8E" id="5dNVOCFJg0F" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode()" resolve="getSelectedNode" />
-                    </node>
-                  </node>
-                  <node concept="3cpWs3" id="5dNVOCFJg0G" role="3uHU7B">
-                    <node concept="3cpWs3" id="5dNVOCFJg0H" role="3uHU7B">
-                      <node concept="3cpWs3" id="5dNVOCFJg0I" role="3uHU7B">
-                        <node concept="3cpWs3" id="5dNVOCFJg0J" role="3uHU7B">
-                          <node concept="Xl_RD" id="5dNVOCFJg0K" role="3uHU7B">
-                            <property role="Xl_RC" value="Right:" />
-                          </node>
-                          <node concept="2e73FJ" id="5dNVOCFJgng" role="3uHU7w" />
-                        </node>
-                        <node concept="Xl_RD" id="5dNVOCFJg0M" role="3uHU7w">
-                          <property role="Xl_RC" value=":" />
-                        </node>
-                      </node>
-                      <node concept="1Lj6YZ" id="5dNVOCFJgsX" role="3uHU7w" />
-                    </node>
-                    <node concept="Xl_RD" id="5dNVOCFJg0O" role="3uHU7w">
-                      <property role="Xl_RC" value=":" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="5dNVOCFJg0P" role="3cqZAp">
-                <node concept="3clFbT" id="5dNVOCFJg0Q" role="3clFbG">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>
