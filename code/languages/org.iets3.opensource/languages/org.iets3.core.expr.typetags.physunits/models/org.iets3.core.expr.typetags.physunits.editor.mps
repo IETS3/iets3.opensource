@@ -10,6 +10,7 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -371,6 +372,9 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="1984422498404534858" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_TransformationText" flags="ig" index="2ee1ZP" />
@@ -1575,7 +1579,7 @@
             <node concept="3cpWs8" id="3eEp8ADw1xc" role="3cqZAp">
               <node concept="3cpWsn" id="3eEp8ADw1xf" role="3cpWs9">
                 <property role="TrG5h" value="prefix" />
-                <node concept="2OqwBi" id="35H1j$GixaD" role="33vP2m">
+                <node concept="2EnYce" id="72Y1gHJ9n27" role="33vP2m">
                   <node concept="2YIFZM" id="3eEp8ADw1Of" role="2Oq$k0">
                     <ref role="37wK5l" to="rppw:3eEp8ADvm51" resolve="extractPrefix" />
                     <ref role="1Pybhc" to="rppw:7Bmg9Oo9PPj" resolve="MetricPrefixes" />
