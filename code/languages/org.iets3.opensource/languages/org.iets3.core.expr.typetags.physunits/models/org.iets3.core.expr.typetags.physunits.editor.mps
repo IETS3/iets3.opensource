@@ -32,6 +32,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="fulz" ref="r:6f792c44-2a5d-40e8-9f05-33f7d4ae26ec(jetbrains.mps.editor.runtime.completion)" implicit="true" />
     <import index="av1m" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.style(MPS.Editor/)" implicit="true" />
     <import index="w1hl" ref="r:04b74a30-84ff-4d44-89e3-8084278f9c79(org.iets3.core.expr.typetags.structure)" implicit="true" />
@@ -405,6 +406,7 @@
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
       <concept id="1984422498404534858" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_TransformationText" flags="ig" index="2ee1ZP" />
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
@@ -433,6 +435,7 @@
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
+      <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
@@ -2286,10 +2289,50 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="se9FQYU8zb" role="1djCvC">
+            <node concept="3clFbS" id="se9FQYU8zc" role="2VODD2">
+              <node concept="3clFbF" id="se9FQYU8zg" role="3cqZAp">
+                <node concept="3cpWs3" id="se9FQYU8zh" role="3clFbG">
+                  <node concept="2OqwBi" id="se9FQYU8zi" role="3uHU7w">
+                    <node concept="2e73FJ" id="se9FQYU8zj" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="se9FQYU8zk" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs3" id="se9FQYU8zl" role="3uHU7B">
+                    <node concept="1oAbNU" id="se9FQYU8zm" role="3uHU7B" />
+                    <node concept="Xl_RD" id="se9FQYU8zn" role="3uHU7w">
+                      <property role="Xl_RC" value=" for " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1kIj98" id="7yw1DU9fxlw" role="jiBfM">
           <node concept="3F1sOY" id="7athFveF26Z" role="1kIj9b">
             <ref role="1NtTu8" to="i3ya:7athFveF1B9" resolve="bot" />
+          </node>
+          <node concept="uPpia" id="se9FQYU99b" role="1djCvC">
+            <node concept="3clFbS" id="se9FQYU99c" role="2VODD2">
+              <node concept="3clFbF" id="se9FQYU99E" role="3cqZAp">
+                <node concept="3cpWs3" id="se9FQYU99F" role="3clFbG">
+                  <node concept="2OqwBi" id="se9FQYU99G" role="3uHU7w">
+                    <node concept="2e73FJ" id="se9FQYU99H" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="se9FQYU99I" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs3" id="se9FQYU99J" role="3uHU7B">
+                    <node concept="1oAbNU" id="se9FQYU99K" role="3uHU7B" />
+                    <node concept="Xl_RD" id="se9FQYU99L" role="3uHU7w">
+                      <property role="Xl_RC" value=" for " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -2525,6 +2568,26 @@
           <node concept="3F1sOY" id="7i1yFLkshm$" role="1kIj9b">
             <ref role="1NtTu8" to="i3ya:7i1yFLksgFY" resolve="left" />
           </node>
+          <node concept="uPpia" id="se9FQYO6nH" role="1djCvC">
+            <node concept="3clFbS" id="se9FQYO6nI" role="2VODD2">
+              <node concept="3clFbF" id="se9FQYO6xf" role="3cqZAp">
+                <node concept="3cpWs3" id="se9FQYO79r" role="3clFbG">
+                  <node concept="2OqwBi" id="se9FQYO7m9" role="3uHU7w">
+                    <node concept="2e73FJ" id="se9FQYO7c1" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="se9FQYO7$N" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs3" id="se9FQYO70O" role="3uHU7B">
+                    <node concept="1oAbNU" id="se9FQYO6xe" role="3uHU7B" />
+                    <node concept="Xl_RD" id="se9FQYO70W" role="3uHU7w">
+                      <property role="Xl_RC" value=" for " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3ZSo5i" id="3NjH4t$4$KT" role="3EZMnx">
           <node concept="3F0ifn" id="3NjH4t$4_2s" role="3EZMny">
@@ -2578,6 +2641,26 @@
         <node concept="1kIj98" id="7i1yFLkshmA" role="3EZMnx">
           <node concept="3F1sOY" id="7i1yFLkshmB" role="1kIj9b">
             <ref role="1NtTu8" to="i3ya:7i1yFLksgSc" resolve="right" />
+          </node>
+          <node concept="uPpia" id="se9FQYQ5ty" role="1djCvC">
+            <node concept="3clFbS" id="se9FQYQ5tz" role="2VODD2">
+              <node concept="3clFbF" id="se9FQYQ5tB" role="3cqZAp">
+                <node concept="3cpWs3" id="se9FQYQ5tC" role="3clFbG">
+                  <node concept="2OqwBi" id="se9FQYQ5tD" role="3uHU7w">
+                    <node concept="2e73FJ" id="se9FQYQ5tE" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="se9FQYQ5tF" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs3" id="se9FQYQ5tG" role="3uHU7B">
+                    <node concept="1oAbNU" id="se9FQYQ5tH" role="3uHU7B" />
+                    <node concept="Xl_RD" id="se9FQYQ5tI" role="3uHU7w">
+                      <property role="Xl_RC" value=" for " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
