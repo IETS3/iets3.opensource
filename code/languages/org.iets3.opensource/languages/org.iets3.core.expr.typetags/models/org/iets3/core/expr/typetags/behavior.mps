@@ -23,7 +23,6 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
-    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="b0gq" ref="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -1988,29 +1987,6 @@
         </node>
       </node>
       <node concept="17QB3L" id="2Ux6GHgZE_L" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="2Ux6GHgZE_M" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="2Ux6GHgZE_N" role="1B3o_S" />
-      <node concept="3clFbS" id="2Ux6GHgZE_Q" role="3clF47">
-        <node concept="3cpWs6" id="2Ux6GHgZFGd" role="3cqZAp">
-          <node concept="2OqwBi" id="2Ux6GHgZGrq" role="3cqZAk">
-            <node concept="2OqwBi" id="2Ux6GHgZFQ_" role="2Oq$k0">
-              <node concept="13iPFW" id="2Ux6GHgZFGn" role="2Oq$k0" />
-              <node concept="3TrEf2" id="2Ux6GHgZG7C" role="2OqNvi">
-                <ref role="3Tt5mk" to="w1hl:2Ux6GHgZDQG" resolve="expr" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="2Ux6GHgZGJ7" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="2Ux6GHgZE_R" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="4HxogODQfRC">

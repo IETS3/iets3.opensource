@@ -2,10 +2,8 @@
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -17,19 +15,6 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
   </imports>
   <registry>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="3693790620639876318" name="com.mbeddr.mpsutil.blutil.structure.BLDoc" flags="ng" index="2aEySx">
-        <child id="3693790620639876319" name="text" index="2aEySw" />
-      </concept>
-    </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
-      </concept>
-    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
@@ -1585,15 +1570,11 @@
   <node concept="PlHQZ" id="6BCTLIjCra2">
     <property role="EcuMT" value="7631603674206286466" />
     <property role="TrG5h" value="IControlAdvancedFeatures_old" />
-    <node concept="2aEySx" id="3WRc5uujLwE" role="lGtFl">
-      <node concept="19SGf9" id="3WRc5uujLwF" role="2aEySw">
-        <node concept="19SUe$" id="3WRc5uujLwG" role="19SJt6">
-          <property role="19SUeA" value="Only works for root nodes." />
-        </node>
-      </node>
-    </node>
     <node concept="asaX9" id="2gD$V1Yh9A_" role="lGtFl">
       <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.base&quot;" />
+    </node>
+    <node concept="t5JxF" id="7DfYVnmtusk" role="lGtFl">
+      <property role="t5JxN" value="Only works for root nodes." />
     </node>
   </node>
   <node concept="PlHQZ" id="ORfz$DS6_k">
@@ -2193,11 +2174,6 @@
     <property role="EcuMT" value="7503962471793758868" />
     <property role="TrG5h" value="IPreferredProposalContext" />
   </node>
-  <node concept="PlHQZ" id="5r47dOfJ8Ur">
-    <property role="TrG5h" value="ITupleDeclaration" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="EcuMT" value="6252153918474456730" />
-  </node>
   <node concept="PlHQZ" id="5r47dOfJ8UC">
     <property role="TrG5h" value="ITupleMemberDeclaration" />
     <property role="3GE5qa" value="tuples" />
@@ -2206,17 +2182,10 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5r47dOfJ9kS">
-    <property role="EcuMT" value="6252153918474458424" />
+  <node concept="PlHQZ" id="5r47dOfJ8Ur">
+    <property role="TrG5h" value="ITupleDeclaration" />
     <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="InlineTupleType" />
-    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
-    <node concept="1TJgyj" id="5r47dOfJ9kT" role="1TKVEi">
-      <property role="IQ2ns" value="6252153918474458425" />
-      <property role="20kJfa" value="decl" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5r47dOfJ8Ur" resolve="ITupleDeclaration" />
-    </node>
+    <property role="EcuMT" value="6252153918474456730" />
   </node>
   <node concept="1TIwiD" id="6GiZkUz7qWO">
     <property role="EcuMT" value="7715507625824988980" />
@@ -2234,6 +2203,18 @@
     </node>
     <node concept="PrWs8" id="6GiZkUz7qWS" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5r47dOfJ9kS">
+    <property role="EcuMT" value="6252153918474458424" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="TrG5h" value="InlineTupleType" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="5r47dOfJ9kT" role="1TKVEi">
+      <property role="IQ2ns" value="6252153918474458425" />
+      <property role="20kJfa" value="decl" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5r47dOfJ8Ur" resolve="ITupleDeclaration" />
     </node>
   </node>
 </model>
