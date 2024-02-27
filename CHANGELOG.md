@@ -20,6 +20,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The expression tracing support was extracted into a new plugin `org.iets3.core.expr.tracing`.
 - The REPL support was extracted into `org.iets3.core.expr.repl`.
+- Enumerations can have an order by declaration, by literal or by value ascociated with the literal
+
+### Fixed
+- Update java generator to fix compilation error of generated [TupleAccess]( https://github.com/IETS3/iets3.opensource/issues/774)
 
 ## January 2024
 
