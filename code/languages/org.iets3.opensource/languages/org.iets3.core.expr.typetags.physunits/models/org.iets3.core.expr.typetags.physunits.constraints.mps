@@ -614,5 +614,40 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="42$mjgfqjCg">
+    <property role="3GE5qa" value="group.typesystem" />
+    <ref role="1M2myG" to="i3ya:45a4DYZrLy8" resolve="QuantityBaseType" />
+    <node concept="1N5Pfh" id="42$mjgfqjId" role="1Mr941">
+      <ref role="1N5Vy1" to="i3ya:45a4DYZrZ_c" resolve="quantity" />
+      <node concept="3dgokm" id="42$mjgfqk9Q" role="1N6uqs">
+        <node concept="3clFbS" id="42$mjgfqk9S" role="2VODD2">
+          <node concept="3clFbF" id="42$mjgfqkd8" role="3cqZAp">
+            <node concept="2YIFZM" id="42$mjgfqkd9" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="42$mjgfqkda" role="37wK5m">
+                <node concept="2OqwBi" id="42$mjgfqkdb" role="2Oq$k0">
+                  <node concept="2rP1CM" id="42$mjgfqkdc" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="42$mjgfqkdd" role="2OqNvi">
+                    <node concept="1xMEDy" id="42$mjgfqkde" role="1xVPHs">
+                      <node concept="chp4Y" id="42$mjgfqkdf" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="42$mjgfqkdg" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="42$mjgfqkdh" role="37wK5m">
+                    <ref role="3TV0OU" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

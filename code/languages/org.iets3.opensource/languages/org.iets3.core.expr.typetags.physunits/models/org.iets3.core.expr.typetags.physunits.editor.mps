@@ -2691,7 +2691,7 @@
                 <node concept="liA8E" id="3eEp8ADqaZ3" role="2OqNvi">
                   <ref role="37wK5l" to="av1m:~EditorMenuItemStyle.setPriority(double)" resolve="setPriority" />
                   <node concept="3cmrfG" id="3eEp8ADqb1k" role="37wK5m">
-                    <property role="3cmrfH" value="-1" />
+                    <property role="3cmrfH" value="200" />
                   </node>
                 </node>
               </node>
@@ -2733,8 +2733,8 @@
                   <node concept="3lBNjA" id="3eEp8ADqc5_" role="2Oq$k0" />
                   <node concept="liA8E" id="3eEp8ADqc5A" role="2OqNvi">
                     <ref role="37wK5l" to="av1m:~EditorMenuItemStyle.setPriority(double)" resolve="setPriority" />
-                    <node concept="3cmrfG" id="EsE2hy6NK3" role="37wK5m">
-                      <property role="3cmrfH" value="5" />
+                    <node concept="3cmrfG" id="42$mjgfmwyB" role="37wK5m">
+                      <property role="3cmrfH" value="100" />
                     </node>
                   </node>
                 </node>
@@ -2792,7 +2792,7 @@
                   <node concept="liA8E" id="EsE2hy3zho" role="2OqNvi">
                     <ref role="37wK5l" to="av1m:~EditorMenuItemStyle.setPriority(double)" resolve="setPriority" />
                     <node concept="3cmrfG" id="EsE2hy3zhp" role="37wK5m">
-                      <property role="3cmrfH" value="10" />
+                      <property role="3cmrfH" value="300" />
                     </node>
                   </node>
                 </node>
@@ -3055,6 +3055,11 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="22mcaB" id="42$mjgfqnzy">
+    <property role="3GE5qa" value="group.typesystem" />
+    <ref role="aqKnT" to="i3ya:45a4DYZtiVD" resolve="QuantityEmptyType" />
+    <node concept="22hDWj" id="42$mjgfqnMj" role="22hAXT" />
   </node>
 </model>
 
