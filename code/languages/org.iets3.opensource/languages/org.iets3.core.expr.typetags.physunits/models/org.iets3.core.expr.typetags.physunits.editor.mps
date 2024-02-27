@@ -785,11 +785,29 @@
       <node concept="1kHk_G" id="7Bmg9Oo7L6Y" role="3EZMnx">
         <ref role="1NtTu8" to="i3ya:7Bmg9Oo7Kvu" resolve="derived" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="uPpia" id="7at3vyOfAPh" role="1djCvC">
+          <node concept="3clFbS" id="7at3vyOfAPi" role="2VODD2">
+            <node concept="3clFbF" id="7at3vyOfAVX" role="3cqZAp">
+              <node concept="Xl_RD" id="7at3vyOfAVW" role="3clFbG">
+                <property role="Xl_RC" value="mark the unit as derived from other units" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1kHk_G" id="7athFvevHKD" role="3EZMnx">
         <property role="ZjSer" value="metric-scaled" />
         <ref role="1NtTu8" to="i3ya:7athFvevHxP" resolve="metricScaled" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="uPpia" id="7at3vyOhMR1" role="1djCvC">
+          <node concept="3clFbS" id="7at3vyOhMR2" role="2VODD2">
+            <node concept="3clFbF" id="7at3vyOhMSJ" role="3cqZAp">
+              <node concept="Xl_RD" id="7at3vyOhMSI" role="3clFbG">
+                <property role="Xl_RC" value="enable automatic metric scaling for the unit" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="69uDFDbfr0t" role="3EZMnx">
         <property role="3F0ifm" value="unit" />
@@ -810,6 +828,15 @@
           </node>
           <node concept="3F0A7n" id="3NjH4t$gAKW" role="3EZMnx">
             <ref role="1NtTu8" to="i3ya:3NjH4t$gA9B" resolve="unitName" />
+          </node>
+        </node>
+        <node concept="uPpia" id="7at3vyOjE$H" role="1djCvC">
+          <node concept="3clFbS" id="7at3vyOjE$I" role="2VODD2">
+            <node concept="3clFbF" id="7at3vyOjEA1" role="3cqZAp">
+              <node concept="Xl_RD" id="7at3vyOjEA0" role="3clFbG">
+                <property role="Xl_RC" value="add a unit name" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
