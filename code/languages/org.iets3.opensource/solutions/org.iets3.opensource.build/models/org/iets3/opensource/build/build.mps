@@ -8485,6 +8485,12 @@
         <node concept="3LEz8M" id="7uAdOXh29XL" role="3LEz9a">
           <ref role="3LEz8N" node="7uAdOXgkWI9" resolve="org.iets3.core.expr.repl.devkit" />
         </node>
+        <node concept="3LEDTy" id="7uAdOXh5E_6" role="3LEDUa">
+          <ref role="3LEDTV" node="3a2FJuC8s9O" resolve="org.iets3.core.expr.tracing" />
+        </node>
+        <node concept="3LEDTM" id="7uAdOXh5E_7" role="3LEDUa">
+          <ref role="3LEDTN" node="72k3qZIaGXV" resolve="org.iets3.core.expr.tracing.plugin" />
+        </node>
       </node>
       <node concept="3LEwk6" id="2zpAVpC_4Ut" role="2G$12L">
         <property role="BnDLt" value="true" />

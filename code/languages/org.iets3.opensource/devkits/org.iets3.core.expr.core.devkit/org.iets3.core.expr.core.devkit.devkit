@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="org.iets3.core.expr.core.devkit" uuid="c4e521ab-b605-4ef9-a7c3-68075da058f0">
+  <exported-language name="63c1aad1-e2db-439c-a30a-02b5e0bc80f3(org.iets3.core.expr.tracing)" />
   <extendedDevKits>
     <extendedDevKit>55137ade-7e38-4ce6-be99-a8537944b400(org.iets3.core.expr.base.devkit)</extendedDevKit>
     <extendedDevKit>b959c3bf-b068-4828-a862-7a9d895a49d4(org.iets3.core.expr.repl.devkit)</extendedDevKit>
   </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>b0e7c6a8-b47d-4637-b0e8-e5bfd486c4e8(org.iets3.core.expr.tracing.plugin)</exported-solution>
+  </exported-solutions>
 </dev-kit>
 
