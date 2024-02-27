@@ -1670,7 +1670,7 @@
                         <node concept="3y3z36" id="35H1j$G72Lm" role="3K4Cdx">
                           <node concept="10Nm6u" id="35H1j$G7364" role="3uHU7w" />
                           <node concept="37vLTw" id="35H1j$G729D" role="3uHU7B">
-                            <ref role="3cqZAo" node="3eEp8ADw1xf" resolve="metricPrefix" />
+                            <ref role="3cqZAo" node="3eEp8ADw1xf" resolve="prefix" />
                           </node>
                         </node>
                       </node>
@@ -1911,7 +1911,7 @@
                 <node concept="2OqwBi" id="69ocqYbSw3h" role="3cqZAk">
                   <node concept="2YIFZM" id="69ocqYbSvPo" role="2Oq$k0">
                     <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
-                    <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="UnitLangConfigHelper" />
+                    <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
                   </node>
                   <node concept="liA8E" id="69ocqYbSwk5" role="2OqNvi">
                     <ref role="37wK5l" to="65nr:69ocqYbStSj" resolve="getQuantitySpecifier" />
@@ -2415,7 +2415,7 @@
                 <node concept="2OqwBi" id="69ocqYbTIb3" role="25WWJ7">
                   <node concept="2YIFZM" id="69ocqYbTI1h" role="2Oq$k0">
                     <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
-                    <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="UnitLangConfigHelper" />
+                    <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
                   </node>
                   <node concept="liA8E" id="69ocqYbTInP" role="2OqNvi">
                     <ref role="37wK5l" to="65nr:69ocqYbStSj" resolve="getQuantitySpecifier" />

@@ -421,7 +421,7 @@
                       </node>
                       <node concept="2YIFZM" id="2rzAw9UY1ST" role="33vP2m">
                         <ref role="37wK5l" node="2rzAw9UXBuX" resolve="findUnitSpecificationInKey" />
-                        <ref role="1Pybhc" node="2rzAw9UX_8Q" resolve="UnitTypesPrimitiveTypeMapperHelper" />
+                        <ref role="1Pybhc" node="2rzAw9UX_8Q" resolve="vUnitTypesPrimitiveTypeMapperHelper" />
                         <node concept="37vLTw" id="2rzAw9UY1SU" role="37wK5m">
                           <ref role="3cqZAo" node="2rzAw9UY1SA" resolve="unitSpec2TypesMap" />
                         </node>
@@ -800,11 +800,11 @@
       <property role="TrG5h" value="MinimizationStrategy" />
       <node concept="QsSxf" id="7Mca05mQbW4" role="Qtgdg">
         <property role="TrG5h" value="DIVISION" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="7Mca05mQc0x" role="Qtgdg">
         <property role="TrG5h" value="MULTIPLICATION" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="3Tm1VV" id="7Mca05mQbLC" role="1B3o_S" />
     </node>
@@ -830,7 +830,7 @@
       <node concept="3clFbS" id="7Mca05mQcuJ" role="3clF47" />
       <node concept="3Tm1VV" id="7Mca05mQcuK" role="1B3o_S" />
       <node concept="3uibUv" id="7Mca05mQcmJ" role="3clF45">
-        <ref role="3uigEE" node="7Mca05mQbLB" resolve="MinimizationStrategy" />
+        <ref role="3uigEE" node="7Mca05mQbLB" resolve="IUnitLangConfig.MinimizationStrategy" />
       </node>
     </node>
     <node concept="2tJIrI" id="69ocqYbPQoZ" role="jymVt" />
@@ -886,18 +886,18 @@
       <property role="TrG5h" value="getMinimizationStrategy" />
       <node concept="3Tm1VV" id="7Mca05mQcD6" role="1B3o_S" />
       <node concept="3uibUv" id="7Mca05mQcD7" role="3clF45">
-        <ref role="3uigEE" node="7Mca05mQbLB" resolve="MinimizationStrategy" />
+        <ref role="3uigEE" node="7Mca05mQbLB" resolve="IUnitLangConfig.MinimizationStrategy" />
       </node>
       <node concept="3clFbS" id="7Mca05mQcD8" role="3clF47">
         <node concept="3clFbF" id="7Mca05mQcDb" role="3cqZAp">
           <node concept="Rm8GO" id="7Mca05n5K9E" role="3clFbG">
             <ref role="Rm8GQ" node="7Mca05mQc0x" resolve="MULTIPLICATION" />
-            <ref role="1Px2BO" node="7Mca05mQbLB" resolve="MinimizationStrategy" />
+            <ref role="1Px2BO" node="7Mca05mQbLB" resolve="IUnitLangConfig.MinimizationStrategy" />
           </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="7Mca05mQcD9" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="4qv99IrzTTd" role="jymVt" />
@@ -938,7 +938,7 @@
               <node concept="2OqwBi" id="4qv99IrBJ3W" role="2Oq$k0">
                 <node concept="2OqwBi" id="4qv99IrBJ3X" role="2Oq$k0">
                   <node concept="2O5UvJ" id="4qv99IrBJ3Y" role="2Oq$k0">
-                    <ref role="2O5UnU" node="4qv99IryjZk" resolve="UnitLangConfig" />
+                    <ref role="2O5UnU" node="4qv99IryjZk" resolve="PhysUnitLangConfig" />
                   </node>
                   <node concept="SfwO_" id="4qv99IrBJ3Z" role="2OqNvi" />
                 </node>
@@ -1000,7 +1000,7 @@
             <node concept="2ShNRf" id="4qv99IrBK8j" role="3K4E3e">
               <node concept="HV5vD" id="4qv99IrBMfR" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="HV5vE" node="4qv99IrzTI8" resolve="DefaultUnitLangConfig" />
+                <ref role="HV5vE" node="4qv99IrzTI8" resolve="DefaultPhysUnitLangConfig" />
               </node>
             </node>
             <node concept="37vLTw" id="4qv99IrBMks" role="3K4GZi">
@@ -1024,7 +1024,7 @@
   </node>
   <node concept="1lYeZD" id="3bE2i5JxRVg">
     <property role="TrG5h" value="DefaultPhysUnitLangConfigExtension" />
-    <ref role="1lYe$Y" node="4qv99IryjZk" resolve="UnitLangConfig" />
+    <ref role="1lYe$Y" node="4qv99IryjZk" resolve="PhysUnitLangConfig" />
     <node concept="3Tm1VV" id="3bE2i5JxRVh" role="1B3o_S" />
     <node concept="2tJIrI" id="3bE2i5JxRVi" role="jymVt" />
     <node concept="3tTeZs" id="3bE2i5JxRVj" role="jymVt">
@@ -1045,7 +1045,7 @@
           <node concept="2ShNRf" id="3bE2i5Jy5cB" role="3cqZAk">
             <node concept="HV5vD" id="3bE2i5JyoxM" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="HV5vE" node="4qv99IrzTI8" resolve="DefaultUnitLangConfig" />
+              <ref role="HV5vE" node="4qv99IrzTI8" resolve="DefaultPhysUnitLangConfig" />
             </node>
           </node>
         </node>
@@ -1073,7 +1073,7 @@
                 </node>
                 <node concept="2YIFZM" id="4qv99IrBUee" role="33vP2m">
                   <ref role="37wK5l" node="4qv99IrBnzk" resolve="getConfig" />
-                  <ref role="1Pybhc" node="4qv99IrBkzE" resolve="UnitLangConfigHelper" />
+                  <ref role="1Pybhc" node="4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
                 </node>
               </node>
             </node>
@@ -1098,7 +1098,7 @@
               <node concept="3KbdKl" id="4qv99Irzsw5" role="3KbHQx">
                 <node concept="Rm8GO" id="4qv99IrzsAO" role="3Kbmr1">
                   <ref role="Rm8GQ" node="4qv99IrykKI" resolve="DEFINED_IN_CONVERT_EXPESSION" />
-                  <ref role="1Px2BO" node="4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+                  <ref role="1Px2BO" node="4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
                 </node>
                 <node concept="3clFbS" id="4qv99IrzsEt" role="3Kbo56">
                   <node concept="3clFbF" id="4qv99IrzsGq" role="3cqZAp">
@@ -1120,7 +1120,7 @@
               <node concept="3KbdKl" id="4qv99IrzneS" role="3KbHQx">
                 <node concept="Rm8GO" id="4qv99Irznk1" role="3Kbmr1">
                   <ref role="Rm8GQ" node="4qv99IrykGi" resolve="FIRST_APPLICABLE" />
-                  <ref role="1Px2BO" node="4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+                  <ref role="1Px2BO" node="4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
                 </node>
                 <node concept="3clFbS" id="4qv99Irznkz" role="3Kbo56">
                   <node concept="3clFbF" id="4qv99IrznE_" role="3cqZAp">
@@ -1209,8 +1209,8 @@
                 </node>
                 <node concept="3EllGN" id="3xzP2_mBD9t" role="37vLTJ">
                   <node concept="10M0yZ" id="3xzP2_mBDF5" role="3ElVtu">
-                    <ref role="3cqZAo" node="3xzP2_mBDvY" />
-                    <ref role="1PxDUh" node="3xzP2_mBDaG" resolve="UnitInterpreterHelper" />
+                    <ref role="3cqZAo" node="3xzP2_mBDvY" resolve="CURRENT_VAL_EXPRESSION" />
+                    <ref role="1PxDUh" node="3xzP2_mBDaG" resolve="PhysUnitInterpreterHelper" />
                   </node>
                   <node concept="TvHiN" id="3xzP2_mBCPc" role="3ElQJh" />
                 </node>
@@ -1247,8 +1247,8 @@
             <node concept="3cpWs6" id="3xzP2_mBFji" role="3cqZAp">
               <node concept="3EllGN" id="3xzP2_mBFBH" role="3cqZAk">
                 <node concept="10M0yZ" id="3xzP2_mBFEn" role="3ElVtu">
-                  <ref role="3cqZAo" node="3xzP2_mBDvY" />
-                  <ref role="1PxDUh" node="3xzP2_mBDaG" />
+                  <ref role="3cqZAo" node="3xzP2_mBDvY" resolve="CURRENT_VAL_EXPRESSION" />
+                  <ref role="1PxDUh" node="3xzP2_mBDaG" resolve="PhysUnitInterpreterHelper" />
                 </node>
                 <node concept="TvHiN" id="3xzP2_mBFjq" role="3ElQJh" />
               </node>
@@ -1412,7 +1412,7 @@
                       <node concept="2OqwBi" id="6Y1H$2PZ78T" role="3clFbG">
                         <node concept="2JrnkZ" id="6Y1H$2PZ6Uq" role="2Oq$k0">
                           <node concept="37vLTw" id="6Y1H$2PZ87F" role="2JrQYb">
-                            <ref role="3cqZAo" node="6Y1H$2PZ7YW" resolve="copy" />
+                            <ref role="3cqZAo" node="6Y1H$2PZ7YW" resolve="copiedExpr" />
                           </node>
                         </node>
                         <node concept="liA8E" id="6Y1H$2PZ7gY" role="2OqNvi">
@@ -1477,7 +1477,7 @@
                   </node>
                   <node concept="1Wc70l" id="6Y1H$2PZ8fI" role="3clFbw">
                     <node concept="37vLTw" id="Fhq44ekZeV" role="3uHU7w">
-                      <ref role="3cqZAo" node="Fhq44ekZeN" resolve="b" />
+                      <ref role="3cqZAo" node="Fhq44ekZeN" resolve="interpretDirectly" />
                     </node>
                     <node concept="1Wc70l" id="6Y1H$2Q0aWK" role="3uHU7B">
                       <node concept="3y3z36" id="7Dq0xpBu1m6" role="3uHU7w">

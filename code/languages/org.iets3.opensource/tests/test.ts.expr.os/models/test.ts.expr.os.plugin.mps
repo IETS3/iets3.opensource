@@ -173,11 +173,11 @@
       <property role="TrG5h" value="CONVERSION_SPECIFIER_SELECTION" />
       <node concept="3Tm1VV" id="2x0M_l2TzxU" role="1B3o_S" />
       <node concept="3uibUv" id="2x0M_l2TA$T" role="1tU5fm">
-        <ref role="3uigEE" to="zdxd:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+        <ref role="3uigEE" to="zdxd:4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
       </node>
       <node concept="Rm8GO" id="3bE2i5Jyqha" role="33vP2m">
         <ref role="Rm8GQ" to="zdxd:4qv99IrykKI" resolve="DEFINED_IN_CONVERT_EXPESSION" />
-        <ref role="1Px2BO" to="zdxd:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+        <ref role="1Px2BO" to="zdxd:4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
       </node>
     </node>
     <node concept="2tJIrI" id="3bE2i5JyqUG" role="jymVt" />
@@ -258,22 +258,22 @@
       <property role="TrG5h" value="CONVERSION_SPECIFIER_SELECTION" />
       <node concept="3Tm1VV" id="7TK9se3Zi4L" role="1B3o_S" />
       <node concept="3uibUv" id="7TK9se3Zi4M" role="1tU5fm">
-        <ref role="3uigEE" to="65nr:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+        <ref role="3uigEE" to="65nr:4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
       </node>
       <node concept="Rm8GO" id="7TK9se3Zi4N" role="33vP2m">
         <ref role="Rm8GQ" to="65nr:4qv99IrykKI" resolve="DEFINED_IN_CONVERT_EXPESSION" />
-        <ref role="1Px2BO" to="65nr:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+        <ref role="1Px2BO" to="65nr:4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
       </node>
     </node>
     <node concept="Wx3nA" id="7Mca05mQjwK" role="jymVt">
       <property role="TrG5h" value="MINIMIZATION_STRATEGY" />
       <node concept="3Tm1VV" id="7Mca05mQjwL" role="1B3o_S" />
       <node concept="3uibUv" id="7Mca05mQjwM" role="1tU5fm">
-        <ref role="3uigEE" to="65nr:7Mca05mQbLB" resolve="MinimizationStrategy" />
+        <ref role="3uigEE" to="65nr:7Mca05mQbLB" resolve="IUnitLangConfig.MinimizationStrategy" />
       </node>
       <node concept="Rm8GO" id="7Mca05n5KxP" role="33vP2m">
         <ref role="Rm8GQ" to="65nr:7Mca05mQc0x" resolve="MULTIPLICATION" />
-        <ref role="1Px2BO" to="65nr:7Mca05mQbLB" resolve="MinimizationStrategy" />
+        <ref role="1Px2BO" to="65nr:7Mca05mQbLB" resolve="IUnitLangConfig.MinimizationStrategy" />
       </node>
     </node>
     <node concept="2tJIrI" id="7TK9se3Zi4O" role="jymVt" />
@@ -322,7 +322,7 @@
       <property role="TrG5h" value="getConversionSpecifierSelection" />
       <node concept="3Tm1VV" id="7TK9se3Zi56" role="1B3o_S" />
       <node concept="3uibUv" id="7TK9se3Zi57" role="3clF45">
-        <ref role="3uigEE" to="65nr:4qv99IrykBs" resolve="ConversionSpecifierSelection" />
+        <ref role="3uigEE" to="65nr:4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
       </node>
       <node concept="3clFbS" id="7TK9se3Zi58" role="3clF47">
         <node concept="3clFbF" id="7TK9se3Zi59" role="3cqZAp">
@@ -340,7 +340,7 @@
       <property role="TrG5h" value="getMinimizationStrategy" />
       <node concept="3Tm1VV" id="7Mca05mQjcq" role="1B3o_S" />
       <node concept="3uibUv" id="7Mca05mQjcr" role="3clF45">
-        <ref role="3uigEE" to="65nr:7Mca05mQbLB" resolve="MinimizationStrategy" />
+        <ref role="3uigEE" to="65nr:7Mca05mQbLB" resolve="IUnitLangConfig.MinimizationStrategy" />
       </node>
       <node concept="3clFbS" id="7Mca05mQjcs" role="3clF47">
         <node concept="3clFbF" id="7Mca05mQkIi" role="3cqZAp">
@@ -350,7 +350,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="7Mca05mQjct" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7Mca05mQkZq" role="jymVt" />
@@ -368,13 +368,13 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="7TK9se3ZiFn" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
   <node concept="1lYeZD" id="7TK9se3Zi5c">
     <property role="TrG5h" value="PhysUnitLangConfigExtensionNewBehaviors" />
-    <ref role="1lYe$Y" to="65nr:4qv99IryjZk" resolve="UnitLangConfig" />
+    <ref role="1lYe$Y" to="65nr:4qv99IryjZk" resolve="PhysUnitLangConfig" />
     <node concept="3Tm1VV" id="7TK9se3Zi5d" role="1B3o_S" />
     <node concept="2tJIrI" id="7TK9se3Zi5e" role="jymVt" />
     <node concept="3tTeZs" id="7TK9se3Zi5f" role="jymVt">
@@ -395,7 +395,7 @@
           <node concept="2ShNRf" id="7TK9se3Zi5m" role="3cqZAk">
             <node concept="HV5vD" id="7TK9se3Zi5n" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="HV5vE" node="7TK9se3Zi4B" resolve="NewBehaviorNewUnitLangConfig" />
+              <ref role="HV5vE" node="7TK9se3Zi4B" resolve="NewBehaviorPhysUnitLangConfig" />
             </node>
           </node>
         </node>

@@ -16,7 +16,7 @@
       <concept id="8337440621611267903" name="org.iets3.core.expr.typetags.physunits.structure.Unit" flags="ng" index="CIrOH">
         <property id="8258835046924736629" name="metricScaled" index="2WSTV2" />
         <property id="8779275567064090590" name="derived" index="1xMkt3" />
-        <reference id="2034036099103723290" name="dimension" index="Rn5ok" />
+        <reference id="2034036099103723290" name="quantity" index="Rn5ok" />
         <child id="8779275567064091192" name="specification" index="1xMkE_" />
       </concept>
       <concept id="8337440621611273670" name="org.iets3.core.expr.typetags.physunits.structure.IntegerExponent" flags="ng" index="CIsvk">
@@ -26,7 +26,7 @@
         <reference id="8337440621611297532" name="unit" index="CIi3I" />
       </concept>
       <concept id="8337440621611270429" name="org.iets3.core.expr.typetags.physunits.structure.UnitSpecification" flags="ng" index="CIsGf">
-        <child id="8337440621611297539" name="expr" index="CIi4h" />
+        <child id="8337440621611297539" name="specification" index="CIi4h" />
       </concept>
       <concept id="2034036099103723287" name="org.iets3.core.expr.typetags.physunits.structure.Quantity" flags="ng" index="Rn5op">
         <property id="8779275567063086785" name="derived" index="1xQvps" />
@@ -36,7 +36,7 @@
         <child id="2009270740286478503" name="base" index="2BJGmK" />
         <child id="8128105118176583477" name="exp" index="DfWIZ" />
       </concept>
-      <concept id="8258835046926363392" name="org.iets3.core.expr.typetags.physunits.structure.QuantityDiv" flags="ng" index="2W2IQR">
+      <concept id="8258835046926363392" name="org.iets3.core.expr.typetags.physunits.structure.QuantityDivision" flags="ng" index="2W2IQR">
         <child id="2009270740286477406" name="bot" index="2BJG_9" />
         <child id="2009270740286476832" name="top" index="2BJGWR" />
       </concept>
@@ -46,7 +46,7 @@
       <concept id="8258835046925561763" name="org.iets3.core.expr.typetags.physunits.structure.QuantityReference" flags="ng" index="2W5y$k">
         <reference id="8258835046925563404" name="quantity" index="2W5z2V" />
       </concept>
-      <concept id="8258835046927700725" name="org.iets3.core.expr.typetags.physunits.structure.UnitDiv" flags="ng" index="2Wclh2">
+      <concept id="8258835046927700725" name="org.iets3.core.expr.typetags.physunits.structure.UnitDivision" flags="ng" index="2Wclh2">
         <child id="8258835046927701532" name="top" index="2Wcl2F" />
         <child id="8258835046927702473" name="bot" index="2WclXY" />
       </concept>

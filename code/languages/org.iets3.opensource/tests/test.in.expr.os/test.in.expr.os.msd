@@ -88,6 +88,7 @@
     <language slang="l:5186c6ce-428c-4f09-a9df-73d9e86c27d3:org.iets3.core.expr.typetags" version="0" />
     <language slang="l:9c3cc6fb-ae5e-46d1-ace2-1e08bb47d03d:org.iets3.core.expr.typetags.bindingtime" version="0" />
     <language slang="l:2c8e8304-72f7-4e6a-853a-ac0616a47569:org.iets3.core.expr.typetags.lib" version="0" />
+    <language slang="l:7ee265bd-5986-4709-86ed-2c6daa33cd8c:org.iets3.core.expr.typetags.physunits" version="0" />
     <language slang="l:cb91a38e-738a-4811-a96d-448d08f526fa:org.iets3.core.expr.typetags.units" version="1" />
     <language slang="l:be679007-4312-4db1-9ac0-ab7dfbe66a74:org.iets3.core.expr.typetags.units.quantity" version="0" />
     <language slang="l:8bb1251e-eae5-47ab-9843-33adfae8edaa:org.iets3.core.expr.util" version="2" />
@@ -122,8 +123,12 @@
     <module reference="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" version="0" />
     <module reference="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
+    <module reference="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="446c26eb-2b7b-4bf0-9b35-f83fa582753e(jetbrains.mps.lang.modelapi)" version="0" />
+    <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
+    <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
+    <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="1" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
@@ -180,6 +185,7 @@
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
     <module reference="9c16e638-297e-41f0-b9e1-a1e04a4aea54(org.iets3.core.expr.toplevel.interpreter)" version="0" />
     <module reference="b4ec5624-2e67-4a4e-9ece-34bcbf966115(org.iets3.core.expr.typetags.lib.interpreter)" version="0" />
+    <module reference="86255e62-4839-480a-a7d0-9ee30f97e2d8(org.iets3.core.expr.typetags.phyunits.si)" version="0" />
     <module reference="616c1a94-9ced-468d-8c3a-fbdcf9734823(org.iets3.core.expr.typetags.units.interpreter)" version="0" />
     <module reference="1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)" version="0" />
     <module reference="4289e037-cc03-4bfe-bf89-2db268aec73a(org.iets3.core.expr.util.interpreter)" version="0" />

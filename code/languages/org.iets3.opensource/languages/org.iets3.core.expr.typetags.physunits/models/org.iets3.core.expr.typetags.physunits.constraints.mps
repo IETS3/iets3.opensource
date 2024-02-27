@@ -586,7 +586,7 @@
         <node concept="3clFbJ" id="15KrVXSmBUM" role="3cqZAp">
           <node concept="2OqwBi" id="15KrVXSmCEQ" role="3clFbw">
             <node concept="37vLTw" id="15KrVXSmGyg" role="2Oq$k0">
-              <ref role="3cqZAo" node="15KrVXSmGya" resolve="ancestor" />
+              <ref role="3cqZAo" node="15KrVXSmGya" resolve="expr" />
             </node>
             <node concept="3x8VRR" id="15KrVXSmCUL" role="2OqNvi" />
           </node>

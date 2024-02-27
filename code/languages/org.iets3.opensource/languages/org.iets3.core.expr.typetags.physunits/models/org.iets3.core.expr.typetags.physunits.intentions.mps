@@ -415,7 +415,7 @@
           <node concept="2OqwBi" id="15KrVXSx26q" role="3clFbG">
             <node concept="2Sf5sV" id="15KrVXSx1VL" role="2Oq$k0" />
             <node concept="2qgKlT" id="15KrVXSx2pX" role="2OqNvi">
-              <ref role="37wK5l" to="rppw:15KrVXSwXYh" resolve="convertToDiv" />
+              <ref role="37wK5l" to="rppw:15KrVXSwXYh" resolve="convertToDivIfPossible" />
             </node>
           </node>
         </node>
@@ -427,7 +427,7 @@
           <node concept="2OqwBi" id="15KrVXSxaNe" role="3clFbG">
             <node concept="2Sf5sV" id="15KrVXSxaxJ" role="2Oq$k0" />
             <node concept="2qgKlT" id="15KrVXSxb71" role="2OqNvi">
-              <ref role="37wK5l" to="rppw:15KrVXSx7g2" resolve="convertableToDiv" />
+              <ref role="37wK5l" to="rppw:15KrVXSx7g2" resolve="convertableToDivide" />
             </node>
           </node>
         </node>
@@ -453,7 +453,7 @@
           <node concept="2OqwBi" id="15KrVXSxc3j" role="3clFbG">
             <node concept="2Sf5sV" id="15KrVXSxbSE" role="2Oq$k0" />
             <node concept="2qgKlT" id="15KrVXSxcmA" role="2OqNvi">
-              <ref role="37wK5l" to="rppw:15KrVXSx2Vf" resolve="convertToMul" />
+              <ref role="37wK5l" to="rppw:15KrVXSx2Vf" resolve="convertToMulIfPossible" />
             </node>
           </node>
         </node>
@@ -465,7 +465,7 @@
           <node concept="2OqwBi" id="15KrVXSxdK7" role="3clFbG">
             <node concept="2Sf5sV" id="15KrVXSxdHm" role="2Oq$k0" />
             <node concept="2qgKlT" id="15KrVXSxdOH" role="2OqNvi">
-              <ref role="37wK5l" to="rppw:15KrVXSxcF0" resolve="convertableToMul" />
+              <ref role="37wK5l" to="rppw:15KrVXSxcF0" resolve="convertableToMultiply" />
             </node>
           </node>
         </node>
