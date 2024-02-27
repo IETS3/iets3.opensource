@@ -5650,9 +5650,6 @@
         <node concept="3GEVxB" id="2tv4PdqaolL" role="3i6evy">
           <ref role="3GEb4d" to="ku0a:5XaocLWHGMs" resolve="SIUnits" />
         </node>
-        <node concept="3GEVxB" id="2UZH4PMTqEI" role="3i6evy">
-          <ref role="3GEb4d" node="2UZH4PMT5or" resolve="duplicateUnits" />
-        </node>
         <node concept="2zPypq" id="6P2XQ7pvL7$" role="_iOnC">
           <property role="TrG5h" value="minWithMixedType" />
           <node concept="2c7tTJ" id="6P2XQ7pvL7_" role="2zM23F">
@@ -5825,6 +5822,9 @@
             </node>
             <node concept="mLuIC" id="J6oDkVCEzW" role="2c7tTw" />
           </node>
+        </node>
+        <node concept="3GEVxB" id="2UZH4PMTqEI" role="3i6evy">
+          <ref role="3GEb4d" node="2UZH4PMT5or" resolve="duplicateUnits" />
         </node>
       </node>
     </node>
@@ -7267,8 +7267,8 @@
         <node concept="_fku$" id="69HsIy5GLSK" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSL" role="_fkuY">
           <node concept="3EXbTZ" id="69HsIy5GLSM" role="1QScD9">
-            <ref role="3EXiBN" to="ku0a:69HsIy5FxTe" resolve="gramm" />
             <ref role="3EXiBM" to="ku0a:69HsIy5Fyjh" resolve="conversion_kg_gramm (any)" />
+            <ref role="3EXiBN" to="ku0a:69HsIy5FxTe" resolve="g" />
           </node>
           <node concept="1YnStw" id="69HsIy5GU5N" role="30czhm">
             <node concept="CIsGf" id="69HsIy5GU5o" role="2c7tTI">
