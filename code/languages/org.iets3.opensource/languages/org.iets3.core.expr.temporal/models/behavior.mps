@@ -262,6 +262,19 @@
         <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
     </node>
+    <node concept="13i0hz" id="7k6A8Wfr4F0" role="13h7CS">
+      <property role="TrG5h" value="canBeSorted" />
+      <ref role="13i0hy" to="pbu6:7k6A8Wfp3IU" resolve="canBeSorted" />
+      <node concept="3Tm1VV" id="7k6A8Wfr4F1" role="1B3o_S" />
+      <node concept="3clFbS" id="7k6A8Wfr4F6" role="3clF47">
+        <node concept="3clFbF" id="7k6A8Wfr4SX" role="3cqZAp">
+          <node concept="3clFbT" id="7k6A8Wfr4SW" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7k6A8Wfr4F7" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="50smQ1VdacN">
     <ref role="13h7C2" to="l462:50smQ1Vcw3K" resolve="AbstractTemporalOp" />

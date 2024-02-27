@@ -1975,7 +1975,7 @@
                           <ref role="2pJxcJ" to="w1hl:5XaocLWF257" resolve="description" />
                           <node concept="WxPPo" id="uuJ7IpZtwW" role="28ntcv">
                             <node concept="37vLTw" id="4CJErGjbX4o" role="WxPPp">
-                              <ref role="3cqZAo" node="4CJErGjbX4a" resolve="string" />
+                              <ref role="3cqZAo" node="4CJErGjbX4a" resolve="errMsg" />
                             </node>
                           </node>
                         </node>

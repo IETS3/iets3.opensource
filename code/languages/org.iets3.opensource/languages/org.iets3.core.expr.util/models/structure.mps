@@ -479,6 +479,9 @@
     <node concept="PrWs8" id="6OunYCf7fuw" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="5r47dOg5Dis" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5r47dOfJ8UC" resolve="ITupleMemberDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="8XWEtdYdD1">
     <property role="EcuMT" value="161551962036820545" />
@@ -510,6 +513,11 @@
     </node>
     <node concept="PrWs8" id="5crSXLq5Rr" role="PzmwI">
       <ref role="PrY4T" node="5crSXLq2_c" resolve="ICanHaveRangeValueExpr" />
+    </node>
+    <node concept="1TJgyi" id="2FeCPobcUL$" role="1TKVEl">
+      <property role="IQ2nx" value="3084582384745819236" />
+      <property role="TrG5h" value="negate" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="8XWEtdYbNZ">
@@ -601,6 +609,9 @@
     </node>
     <node concept="PrWs8" id="7vcJOhhDND5" role="PrDN$">
       <ref role="PrY4T" node="22hm_0zj$RB" resolve="IRangeContext" />
+    </node>
+    <node concept="PrWs8" id="6GiZkUyVeSf" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:5r47dOfJ8Ur" resolve="ITupleDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="7FuUjk_mXBJ">

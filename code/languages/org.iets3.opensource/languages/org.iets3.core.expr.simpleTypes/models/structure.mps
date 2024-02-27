@@ -61,6 +61,9 @@
     <node concept="PrWs8" id="35CkgbLkSIs" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
+    <node concept="PrWs8" id="6wzrxL3bCk$" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:_kNv2PXITO" resolve="ITypeSupportsProposals" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSlcHm">
     <property role="TrG5h" value="BooleanLiteral" />
