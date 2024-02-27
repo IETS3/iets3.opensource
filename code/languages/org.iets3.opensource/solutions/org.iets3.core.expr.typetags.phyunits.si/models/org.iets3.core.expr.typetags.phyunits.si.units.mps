@@ -1461,7 +1461,7 @@
     <node concept="_ixoA" id="6EvkZrL52E9" role="_iOnB" />
     <node concept="CIrOH" id="6EvkZrL0D$w" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m/s" />
+      <property role="TrG5h" value="m÷s" />
       <property role="1o$tow" value="metre per second" />
       <ref role="Rn5ok" node="6EvkZrL11H8" resolve="speed" />
       <node concept="CIsGf" id="6EvkZrL0HC9" role="1xMkE_">
@@ -1482,7 +1482,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrL6aig" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m/s²" />
+      <property role="TrG5h" value="m÷s²" />
       <property role="1o$tow" value="metre per second squared" />
       <ref role="Rn5ok" node="6EvkZrL3j6r" resolve="acceleration" />
       <node concept="CIsGf" id="6EvkZrL6aih" role="1xMkE_">
@@ -1503,7 +1503,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrL6rgK" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m/s³" />
+      <property role="TrG5h" value="m÷s³" />
       <property role="1o$tow" value="metre per second cubed" />
       <ref role="Rn5ok" node="6EvkZrL3vn0" resolve="jerk" />
       <node concept="CIsGf" id="6EvkZrL6rgL" role="1xMkE_">
@@ -1524,7 +1524,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrL6GqJ" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m/s⁴" />
+      <property role="TrG5h" value="m÷s⁴" />
       <property role="1o$tow" value="metre per second to the fourth" />
       <ref role="Rn5ok" node="6EvkZrL3FH6" resolve="snap" />
       <node concept="CIsGf" id="6EvkZrL6GqK" role="1xMkE_">
@@ -1545,7 +1545,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrL6XKd" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="rad/s" />
+      <property role="TrG5h" value="rad÷s" />
       <property role="1o$tow" value="radian per second" />
       <ref role="Rn5ok" node="6EvkZrL40tx" resolve="angular velocity" />
       <node concept="CIsGf" id="6EvkZrL6XKe" role="1xMkE_">
@@ -1566,7 +1566,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrL7D8H" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="rad/s²" />
+      <property role="TrG5h" value="rad÷s²" />
       <property role="1o$tow" value="radian per second squared" />
       <ref role="Rn5ok" node="6EvkZrL4l8w" resolve="angular acceleration" />
       <node concept="CIsGf" id="6EvkZrL7D8I" role="1xMkE_">
@@ -1587,7 +1587,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrL9n4v" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="Hz/s" />
+      <property role="TrG5h" value="Hz÷s" />
       <property role="1o$tow" value="hertz per second" />
       <ref role="Rn5ok" node="6EvkZrL4DPt" resolve="frequency drift" />
       <node concept="CIsGf" id="6EvkZrL9QJW" role="1xMkE_">
@@ -1608,7 +1608,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLaHz1" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m³/s" />
+      <property role="TrG5h" value="m³÷s" />
       <property role="1o$tow" value="cubic metre per second" />
       <ref role="Rn5ok" node="6EvkZrLbmU3" resolve="volumetric flow" />
       <node concept="CIsGf" id="6EvkZrLaMen" role="1xMkE_">
@@ -2231,7 +2231,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfJan" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="N/s" />
+      <property role="TrG5h" value="N÷s" />
       <property role="1o$tow" value="newton per second" />
       <ref role="Rn5ok" node="6EvkZrLx9AS" resolve="N/s_Quantity" />
       <node concept="CIsGf" id="6EvkZrLmSzs" role="1xMkE_">
@@ -2263,7 +2263,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfJso" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="kg/m²" />
+      <property role="TrG5h" value="kg÷m²" />
       <property role="1o$tow" value="kilogram per square metre" />
       <ref role="Rn5ok" node="6EvkZrLxpfD" resolve="kg/m²_Quantity" />
       <node concept="CIsGf" id="6EvkZrLnd5S" role="1xMkE_">
@@ -2284,7 +2284,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfOfc" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="kg/m³" />
+      <property role="TrG5h" value="kg÷m³" />
       <property role="1o$tow" value="kilogram per cubic metre" />
       <ref role="Rn5ok" node="6EvkZrLxx79" resolve="kg/m³_Quantity" />
       <node concept="CIsGf" id="6EvkZrLnASC" role="1xMkE_">
@@ -2305,7 +2305,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfOof" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m³/kg" />
+      <property role="TrG5h" value="m³÷kg" />
       <property role="1o$tow" value="cubic metre per kilogram" />
       <ref role="Rn5ok" node="6EvkZrLxD1m" resolve="m³/kg_Quantity" />
       <node concept="CIsGf" id="6EvkZrLo0PA" role="1xMkE_">
@@ -2342,7 +2342,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfOEo" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="J/kg" />
+      <property role="TrG5h" value="J÷kg" />
       <property role="1o$tow" value="joule per kilogram" />
       <ref role="Rn5ok" node="6EvkZrLxT2v" resolve="J/kg_Quantity" />
       <node concept="CIsGf" id="6EvkZrLp4P$" role="1xMkE_">
@@ -2358,7 +2358,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfONu" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="J/m³" />
+      <property role="TrG5h" value="J÷m³" />
       <property role="1o$tow" value="joule per cubic metre" />
       <ref role="Rn5ok" node="6EvkZrLy1el" resolve="J/m³_Quantity" />
       <node concept="CIsGf" id="6EvkZrLpql3" role="1xMkE_">
@@ -2379,7 +2379,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfOW_" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="N/m" />
+      <property role="TrG5h" value="N÷m" />
       <property role="1o$tow" value="newton per metre" />
       <ref role="Rn5ok" node="6EvkZrLy9zH" resolve="N/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrLpQ3E" role="1xMkE_">
@@ -2395,7 +2395,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfP5H" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="W/m²" />
+      <property role="TrG5h" value="W÷m²" />
       <property role="1o$tow" value="watt per square metre" />
       <ref role="Rn5ok" node="6EvkZrLyhZ5" resolve="W/m²_Quantity" />
       <node concept="CIsGf" id="6EvkZrLpVI1" role="1xMkE_">
@@ -2416,7 +2416,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfPeQ" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m²/s" />
+      <property role="TrG5h" value="m²÷s" />
       <property role="1o$tow" value="square metre per second" />
       <ref role="Rn5ok" node="6EvkZrLyqxV" resolve="m²/s_Quantity" />
       <node concept="CIsGf" id="6EvkZrLqcXa" role="1xMkE_">
@@ -2453,7 +2453,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfPxb" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="kg/m" />
+      <property role="TrG5h" value="kg÷m" />
       <property role="1o$tow" value="kilogram per metre" />
       <ref role="Rn5ok" node="6EvkZrLyFNR" resolve="kg/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrLq$9u" role="1xMkE_">
@@ -2469,7 +2469,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLhVh6" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="kg/s" />
+      <property role="TrG5h" value="kg÷s" />
       <property role="1o$tow" value="kilogram per second" />
       <ref role="Rn5ok" node="6EvkZrLyOx$" resolve="kg/s_Quantity" />
       <node concept="CIsGf" id="6EvkZrLqE36" role="1xMkE_">
@@ -2485,7 +2485,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi05M" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="W/(sr⋅m²)" />
+      <property role="TrG5h" value="W÷(sr⋅m²)" />
       <property role="1o$tow" value="watt per steradian square metre" />
       <ref role="Rn5ok" node="6EvkZrLyXgB" resolve="W/(srm²)_Quantity" />
       <node concept="CIsGf" id="6EvkZrLqJYd" role="1xMkE_">
@@ -2511,7 +2511,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi0f8" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="W/(sr⋅m³)" />
+      <property role="TrG5h" value="W÷(sr⋅m³)" />
       <property role="1o$tow" value="watt per steradian cubic metre" />
       <ref role="Rn5ok" node="6EvkZrLz68$" resolve="W/(srm³)_Quantity" />
       <node concept="CIsGf" id="6EvkZrLre1d" role="1xMkE_">
@@ -2537,7 +2537,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi0ov" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="W/m" />
+      <property role="TrG5h" value="W÷m" />
       <property role="1o$tow" value="watt per metre" />
       <ref role="Rn5ok" node="6EvkZrLzfbt" resolve="W/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrLrklG" role="1xMkE_">
@@ -2553,7 +2553,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi0xR" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="Gy/s" />
+      <property role="TrG5h" value="Gy÷s" />
       <property role="1o$tow" value="gray per second" />
       <ref role="Rn5ok" node="6EvkZrLzok8" resolve="Gy/s_Quantity" />
       <node concept="CIsGf" id="6EvkZrLrqCO" role="1xMkE_">
@@ -2569,7 +2569,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi0Fg" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m/m³" />
+      <property role="TrG5h" value="m÷m³" />
       <property role="1o$tow" value="metre per cubic metre" />
       <ref role="Rn5ok" node="6EvkZrLzxBN" resolve="m/m³_Quantity" />
       <node concept="CIsGf" id="6EvkZrLrx5E" role="1xMkE_">
@@ -2590,7 +2590,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi0OE" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="W/m³" />
+      <property role="TrG5h" value="W÷m³" />
       <property role="1o$tow" value="watt per cubic metre" />
       <ref role="Rn5ok" node="6EvkZrLzF0g" resolve="W/m³_Quantity" />
       <node concept="CIsGf" id="6EvkZrLrUTz" role="1xMkE_">
@@ -2611,7 +2611,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi0Y5" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="J/(m²⋅s)" />
+      <property role="TrG5h" value="J÷(m²⋅s)" />
       <property role="1o$tow" value="joule per square metre second" />
       <ref role="Rn5ok" node="6EvkZrLzOyj" resolve="J/(m²s)_Quantity" />
       <node concept="CIsGf" id="6EvkZrLslet" role="1xMkE_">
@@ -2653,7 +2653,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi1gY" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="J/m²" />
+      <property role="TrG5h" value="J÷m²" />
       <property role="1o$tow" value="joule per square metre" />
       <ref role="Rn5ok" node="6EvkZrL$7ZE" resolve="J/m²_Quantity" />
       <node concept="CIsGf" id="6EvkZrLtNHI" role="1xMkE_">
@@ -2695,7 +2695,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi1zV" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="N⋅m⋅s/kg" />
+      <property role="TrG5h" value="N⋅m⋅s÷kg" />
       <property role="1o$tow" value="newton metre second per kilogram" />
       <ref role="Rn5ok" node="6EvkZrL$rLp" resolve="Nm(s/kg)_Quantity" />
       <node concept="CIsGf" id="6EvkZrLuSKK" role="1xMkE_">
@@ -2721,7 +2721,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi6oV" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="W/sr" />
+      <property role="TrG5h" value="W÷sr" />
       <property role="1o$tow" value="watt per steradian" />
       <ref role="Rn5ok" node="6EvkZrL$_Rl" resolve="W/sr_Quantity" />
       <node concept="CIsGf" id="6EvkZrLvKph" role="1xMkE_">
@@ -2737,7 +2737,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLi6ys" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="W/(sr⋅m)" />
+      <property role="TrG5h" value="W÷(sr⋅m)" />
       <property role="1o$tow" value="watt per steradian metre" />
       <ref role="Rn5ok" node="6EvkZrL$K4A" resolve="W/(srm)_Quantity" />
       <node concept="CIsGf" id="6EvkZrLvYFq" role="1xMkE_">
@@ -2911,7 +2911,7 @@
     <node concept="_ixoA" id="6EvkZrMI3NL" role="_iOnB" />
     <node concept="CIrOH" id="6EvkZrMe9Xi" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="mol/m³" />
+      <property role="TrG5h" value="mol÷m³" />
       <property role="1o$tow" value="mole per cubic metre" />
       <ref role="Rn5ok" node="6EvkZrMFXkV" resolve="mol/m³_Quantity" />
       <node concept="CIsGf" id="6EvkZrMz4el" role="1xMkE_">
@@ -2932,7 +2932,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMy$P$" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m³/mol" />
+      <property role="TrG5h" value="m³÷mol" />
       <property role="1o$tow" value="cubic metre per mole" />
       <ref role="Rn5ok" node="6EvkZrMG849" resolve="m³/mol_Quantity" />
       <node concept="CIsGf" id="6EvkZrMzxZX" role="1xMkE_">
@@ -2953,7 +2953,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMyIXO" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="J/(K⋅mol)" />
+      <property role="TrG5h" value="J÷(K⋅mol)" />
       <property role="1o$tow" value="joule per kelvin mole" />
       <ref role="Rn5ok" node="6EvkZrMGiQ4" resolve="J/(Kmol)_Quantity" />
       <node concept="CIsGf" id="6EvkZrMzZPf" role="1xMkE_">
@@ -2974,7 +2974,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMyJd0" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="J/mol" />
+      <property role="TrG5h" value="J÷mol" />
       <property role="1o$tow" value="joule per mole" />
       <ref role="Rn5ok" node="6EvkZrMGtM_" resolve="J/mol_Quantity" />
       <node concept="CIsGf" id="6EvkZrMzZPp" role="1xMkE_">
@@ -2990,7 +2990,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMyTlk" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="S⋅m²/mol" />
+      <property role="TrG5h" value="S⋅m²÷mol" />
       <property role="1o$tow" value="siemens square metre per mole" />
       <ref role="Rn5ok" node="6EvkZrMGCRO" resolve="sm²/mol_Quantity" />
       <node concept="CIsGf" id="6EvkZrMzZPz" role="1xMkE_">
@@ -3016,7 +3016,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMyT$w" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="mol/kg" />
+      <property role="TrG5h" value="mol÷kg" />
       <property role="1o$tow" value="mole per kilogram" />
       <ref role="Rn5ok" node="6EvkZrMGO8c" resolve="mol/kg_Quantity" />
       <node concept="CIsGf" id="6EvkZrMzZPH" role="1xMkE_">
@@ -3032,7 +3032,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMyTNL" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="kg/mol" />
+      <property role="TrG5h" value="kg÷mol" />
       <property role="1o$tow" value="kilogram per mole" />
       <ref role="Rn5ok" node="6EvkZrMGZpQ" resolve="kg/mol_Quantity" />
       <node concept="CIsGf" id="6EvkZrMzZPR" role="1xMkE_">
@@ -3048,7 +3048,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMyU31" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m³/(mol⋅s)" />
+      <property role="TrG5h" value="m³÷(mol⋅s)" />
       <property role="1o$tow" value="cubic metre per mole second" />
       <ref role="Rn5ok" node="6EvkZrMHaHq" resolve="m³/(mols)_Quantity" />
       <node concept="CIsGf" id="6EvkZrMzZQ1" role="1xMkE_">
@@ -3380,7 +3380,7 @@
     <node concept="_ixoA" id="6EvkZrN75yD" role="_iOnB" />
     <node concept="CIrOH" id="6EvkZrMNrvq" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="C/m²" />
+      <property role="TrG5h" value="C÷m²" />
       <property role="1o$tow" value="coulomb per square metre" />
       <ref role="Rn5ok" node="6EvkZrMWyB4" resolve="C/m²_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPfCw" role="1xMkE_">
@@ -3401,7 +3401,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMNAQT" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="C/m³" />
+      <property role="TrG5h" value="C÷m³" />
       <property role="1o$tow" value="coulomb per cubic metre" />
       <ref role="Rn5ok" node="6EvkZrMWK62" resolve="C/m³_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPfCE" role="1xMkE_">
@@ -3422,7 +3422,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMNMep" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="A/m²" />
+      <property role="TrG5h" value="A÷m²" />
       <property role="1o$tow" value="ampere per square metre" />
       <ref role="Rn5ok" node="6EvkZrMXpAv" resolve="A/m²_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPfCL" role="1xMkE_">
@@ -3443,7 +3443,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMNX_V" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="S/m" />
+      <property role="TrG5h" value="S÷m" />
       <property role="1o$tow" value="siemens per metre" />
       <ref role="Rn5ok" node="6EvkZrMXP4p" resolve="S/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPfCS" role="1xMkE_">
@@ -3459,7 +3459,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMO8Xv" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="F/m" />
+      <property role="TrG5h" value="F÷m" />
       <property role="1o$tow" value="farad per metre" />
       <ref role="Rn5ok" node="6EvkZrMYgYA" resolve="F/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPfCZ" role="1xMkE_">
@@ -3475,7 +3475,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMO9ek" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="H/m" />
+      <property role="TrG5h" value="H÷m" />
       <property role="1o$tow" value="henry per metre" />
       <ref role="Rn5ok" node="6EvkZrMYUP8" resolve="H/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPfD6" role="1xMkE_">
@@ -3491,7 +3491,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMO9va" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="V/m" />
+      <property role="TrG5h" value="V÷m" />
       <property role="1o$tow" value="volt per metre" />
       <ref role="Rn5ok" node="6EvkZrMZnPT" resolve="V/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPfDd" role="1xMkE_">
@@ -3507,7 +3507,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMO9K1" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="A/m" />
+      <property role="TrG5h" value="A÷m" />
       <property role="1o$tow" value="ampere per metre" />
       <ref role="Rn5ok" node="6EvkZrMZPur" resolve="A/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPfDk" role="1xMkE_">
@@ -3523,7 +3523,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMOl7H" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="C/kg" />
+      <property role="TrG5h" value="C÷kg" />
       <property role="1o$tow" value="coulomb per kilogram" />
       <ref role="Rn5ok" node="6EvkZrN0jt0" resolve="C/kg_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPAr3" role="1xMkE_">
@@ -3555,7 +3555,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMOlDw" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="C/m" />
+      <property role="TrG5h" value="C÷m" />
       <property role="1o$tow" value="coulomb per metre" />
       <ref role="Rn5ok" node="6EvkZrN1VkH" resolve="C/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPArn" role="1xMkE_">
@@ -3571,7 +3571,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMOlUr" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="J/T" />
+      <property role="TrG5h" value="J÷T" />
       <property role="1o$tow" value="joule per tesla" />
       <ref role="Rn5ok" node="6EvkZrN2qKn" resolve="J/T_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPArx" role="1xMkE_">
@@ -3587,7 +3587,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMOmbn" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m²/(V⋅s)" />
+      <property role="TrG5h" value="m²÷(V⋅s)" />
       <property role="1o$tow" value="square metre per volt second" />
       <ref role="Rn5ok" node="6EvkZrN39jP" resolve="m²/(Vs)_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPArF" role="1xMkE_">
@@ -3629,7 +3629,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMOGV5" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="Wb/m" />
+      <property role="TrG5h" value="Wb÷m" />
       <property role="1o$tow" value="weber per metre" />
       <ref role="Rn5ok" node="6EvkZrN5PmY" resolve="Wb/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPArZ" role="1xMkE_">
@@ -3693,7 +3693,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrMP4cZ" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m/H" />
+      <property role="TrG5h" value="m÷H" />
       <property role="1o$tow" value="metre per henry" />
       <ref role="Rn5ok" node="6EvkZrNdCaG" resolve="m/H_Quantity" />
       <node concept="CIsGf" id="6EvkZrMPAsB" role="1xMkE_">
@@ -3807,7 +3807,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrNFueB" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="cd/m²" />
+      <property role="TrG5h" value="cd÷m²" />
       <property role="1o$tow" value="candela per square metre" />
       <ref role="Rn5ok" node="6EvkZrNLE8G" resolve="cd/m²_Quantity" />
       <node concept="CIsGf" id="6EvkZrNJG5c" role="1xMkE_">
@@ -3828,7 +3828,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrNFuyP" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="lm/W" />
+      <property role="TrG5h" value="lm÷W" />
       <property role="1o$tow" value="lumen per watt" />
       <ref role="Rn5ok" node="6EvkZrNLUp$" resolve="lm/W_Quantity" />
       <node concept="CIsGf" id="6EvkZrNJG5B" role="1xMkE_">
@@ -3949,7 +3949,7 @@
     <node concept="_ixoA" id="6EvkZrNRLve" role="_iOnB" />
     <node concept="CIrOH" id="6EvkZrNSOk_" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="J/K" />
+      <property role="TrG5h" value="J÷K" />
       <property role="1o$tow" value="joule per kelvin" />
       <ref role="Rn5ok" node="6EvkZrNXdcc" resolve="J/K_Quantity" />
       <node concept="CIsGf" id="6EvkZrNUnNx" role="1xMkE_">
@@ -3965,7 +3965,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrNTlg7" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="J/(K⋅kg)" />
+      <property role="TrG5h" value="J÷(K⋅kg)" />
       <property role="1o$tow" value="joule per kilogram kelvin" />
       <ref role="Rn5ok" node="6EvkZrNXuk1" resolve="J/(Kkg)_Quantity" />
       <node concept="CIsGf" id="6EvkZrNUnND" role="1xMkE_">
@@ -3986,7 +3986,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrNT_HS" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="W/(m⋅K)" />
+      <property role="TrG5h" value="W÷(m⋅K)" />
       <property role="1o$tow" value="watt per metre kelvin" />
       <ref role="Rn5ok" node="6EvkZrNZpHy" resolve="W/(mK)_Quantity" />
       <node concept="CIsGf" id="6EvkZrNUnNL" role="1xMkE_">
@@ -4007,7 +4007,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrNTQbE" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="K/W" />
+      <property role="TrG5h" value="K÷W" />
       <property role="1o$tow" value="kelvin per watt" />
       <ref role="Rn5ok" node="6EvkZrNXJB4" resolve="K/W_Quantity" />
       <node concept="CIsGf" id="6EvkZrNUnNT" role="1xMkE_">
@@ -4039,7 +4039,7 @@
     </node>
     <node concept="CIrOH" id="6EvkZrNU6Yq" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="K/m" />
+      <property role="TrG5h" value="K÷m" />
       <property role="1o$tow" value="kelvin per metre" />
       <ref role="Rn5ok" node="6EvkZrNYivh" resolve="K/m_Quantity" />
       <node concept="CIsGf" id="6EvkZrNUnO9" role="1xMkE_">
