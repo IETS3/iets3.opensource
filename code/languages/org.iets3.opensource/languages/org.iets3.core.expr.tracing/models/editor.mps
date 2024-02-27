@@ -24,6 +24,7 @@
     <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="90j9" ref="r:f2db22e1-5ffd-4b44-94b1-21c00f016390(org.iets3.core.expr.tracing.plugin.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="epcs" ref="b33d119e-196d-4497-977c-5c167b21fe33/r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.editor)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
@@ -1642,9 +1643,9 @@
                 </node>
                 <node concept="liA8E" id="1_8vgjd6ar5" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
-                  <node concept="10M0yZ" id="1_8vgjd6br7" role="37wK5m">
-                    <ref role="3cqZAo" to="jpm3:7IhZGc$zknx" resolve="COLORIZE_CODE" />
-                    <ref role="1PxDUh" to="jpm3:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
+                  <node concept="10M0yZ" id="7uAdOXgXOQE" role="37wK5m">
+                    <ref role="3cqZAo" to="90j9:7IhZGc$zknx" resolve="COLORIZE_CODE" />
+                    <ref role="1PxDUh" to="90j9:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
                   </node>
                 </node>
               </node>
@@ -1723,9 +1724,9 @@
                   </node>
                   <node concept="liA8E" id="5U8d23QfV7o" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
-                    <node concept="10M0yZ" id="7IhZGc$AiEK" role="37wK5m">
-                      <ref role="3cqZAo" to="jpm3:7IhZGc$zknx" resolve="COLORIZE_CODE" />
-                      <ref role="1PxDUh" to="jpm3:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
+                    <node concept="10M0yZ" id="7uAdOXh1lbu" role="37wK5m">
+                      <ref role="3cqZAo" to="90j9:7IhZGc$zknx" resolve="COLORIZE_CODE" />
+                      <ref role="1PxDUh" to="90j9:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
                     </node>
                   </node>
                 </node>
@@ -1781,9 +1782,9 @@
                             </node>
                             <node concept="liA8E" id="5U8d23QlQhh" role="2OqNvi">
                               <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
-                              <node concept="10M0yZ" id="7IhZGc$AiVx" role="37wK5m">
-                                <ref role="1PxDUh" to="jpm3:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
-                                <ref role="3cqZAo" to="jpm3:7IhZGc$zknx" resolve="COLORIZE_CODE" />
+                              <node concept="10M0yZ" id="7uAdOXh1e0F" role="37wK5m">
+                                <ref role="3cqZAo" to="90j9:7IhZGc$zknx" resolve="COLORIZE_CODE" />
+                                <ref role="1PxDUh" to="90j9:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
                               </node>
                             </node>
                           </node>
