@@ -914,7 +914,7 @@
       <node concept="3clFbS" id="69ocqYbStYS" role="3clF47">
         <node concept="3cpWs6" id="69ocqYbSu$9" role="3cqZAp">
           <node concept="Xl_RD" id="69ocqYbSuG3" role="3cqZAk">
-            <property role="Xl_RC" value="measure" />
+            <property role="Xl_RC" value="quantity" />
           </node>
         </node>
       </node>
