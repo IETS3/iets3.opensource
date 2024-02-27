@@ -6848,35 +6848,58 @@
         <node concept="3LEDTy" id="7uAdOXgkUAt" role="3LEDUa">
           <ref role="3LEDTV" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
         </node>
-        <node concept="3LEDTM" id="7uAdOXgkUAv" role="3LEDUa">
-          <ref role="3LEDTN" node="44TucI396gt" resolve="org.iets3.core.expr.base.interpreter" />
-        </node>
-        <node concept="3LEDTM" id="7uAdOXgkUAw" role="3LEDUa">
-          <ref role="3LEDTN" node="44TucI396ft" resolve="org.iets3.core.expr.collections.interpreter" />
-        </node>
-        <node concept="3LEDTM" id="7uAdOXgkUAx" role="3LEDUa">
-          <ref role="3LEDTN" node="44TucI396gl" resolve="org.iets3.core.expr.lambda.interpreter" />
-        </node>
-        <node concept="3LEDTM" id="7uAdOXgkUAy" role="3LEDUa">
-          <ref role="3LEDTN" node="44TucI396fP" resolve="org.iets3.core.expr.metafunction.interpreter" />
-        </node>
-        <node concept="3LEDTM" id="7uAdOXgkUAz" role="3LEDUa">
-          <ref role="3LEDTN" node="44TucI396f_" resolve="org.iets3.core.expr.path.interpreter" />
-        </node>
-        <node concept="3LEDTM" id="7uAdOXgkUA_" role="3LEDUa">
-          <ref role="3LEDTN" node="44TucI396g5" resolve="org.iets3.core.expr.simpleTypes.interpreter" />
-        </node>
-        <node concept="3LEDTM" id="7uAdOXgkUAA" role="3LEDUa">
-          <ref role="3LEDTN" node="44TucI396fH" resolve="org.iets3.core.expr.tests.interpreter" />
-        </node>
         <node concept="3LEDTM" id="7uAdOXgkUAB" role="3LEDUa">
           <ref role="3LEDTN" node="mM1quA9GB_" resolve="org.iets3.core.expr.lambda.plugin" />
         </node>
         <node concept="3LEDTM" id="7uAdOXgkUAC" role="3LEDUa">
           <ref role="3LEDTN" node="3FexrMiSOe$" resolve="org.iets3.core.expr.plugin" />
         </node>
-        <node concept="3LEDTM" id="7uAdOXgkUAE" role="3LEDUa">
+        <node concept="3LEz8M" id="7uAdOXh5C9R" role="3LEz9a">
+          <ref role="3LEz8N" node="7uAdOXh5ASo" resolve="org.iets3.core.expr.interpreter.devkit" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="7uAdOXh5ASo" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.core.expr.interpreter.devkit" />
+        <property role="3LESm3" value="e234a1e7-550c-4730-a932-f9447090df76" />
+        <node concept="398BVA" id="7uAdOXh5ASp" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="7uAdOXh5ASq" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="7uAdOXh5ASr" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.interpreter.devkit" />
+              <node concept="2Ry0Ak" id="7uAdOXh5B$Q" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.interpreter.devkit.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTM" id="7uAdOXh5AS_" role="3LEDUa">
+          <ref role="3LEDTN" node="44TucI396gt" resolve="org.iets3.core.expr.base.interpreter" />
+        </node>
+        <node concept="3LEDTM" id="7uAdOXh5ASA" role="3LEDUa">
+          <ref role="3LEDTN" node="44TucI396ft" resolve="org.iets3.core.expr.collections.interpreter" />
+        </node>
+        <node concept="3LEDTM" id="7uAdOXh5ASB" role="3LEDUa">
+          <ref role="3LEDTN" node="44TucI396gl" resolve="org.iets3.core.expr.lambda.interpreter" />
+        </node>
+        <node concept="3LEDTM" id="7uAdOXh5ASC" role="3LEDUa">
+          <ref role="3LEDTN" node="44TucI396fP" resolve="org.iets3.core.expr.metafunction.interpreter" />
+        </node>
+        <node concept="3LEDTM" id="7uAdOXh5ASD" role="3LEDUa">
+          <ref role="3LEDTN" node="44TucI396f_" resolve="org.iets3.core.expr.path.interpreter" />
+        </node>
+        <node concept="3LEDTM" id="7uAdOXh5ASE" role="3LEDUa">
+          <ref role="3LEDTN" node="44TucI396g5" resolve="org.iets3.core.expr.simpleTypes.interpreter" />
+        </node>
+        <node concept="3LEDTM" id="7uAdOXh5ASF" role="3LEDUa">
+          <ref role="3LEDTN" node="44TucI396fH" resolve="org.iets3.core.expr.tests.interpreter" />
+        </node>
+        <node concept="3LEDTM" id="7uAdOXh5ASI" role="3LEDUa">
           <ref role="3LEDTN" node="44TucI396gd" resolve="org.iets3.core.expr.toplevel.interpreter" />
+        </node>
+        <node concept="3LEDTM" id="7uAdOXh5BLc" role="3LEDUa">
+          <ref role="3LEDTN" node="44TucI396fd" resolve="org.iets3.core.expr.repl.interpreter" />
         </node>
       </node>
       <node concept="3LEwk6" id="2zpAVpC_ky5" role="2G$12L">
