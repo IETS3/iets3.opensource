@@ -415,7 +415,7 @@
     <property role="3GE5qa" value="group" />
     <property role="TrG5h" value="QuantityExponent" />
     <property role="34LRSv" value="^" />
-    <property role="R4oN_" value="a quantity expression defined with an exponent" />
+    <property role="R4oN_" value="a quantity exponent expression" />
     <ref role="1TJDcQ" node="7athFve_SVK" resolve="QuantityExpr" />
     <node concept="PrWs8" id="1JynhuWjZPj" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqri" resolve="IGroupPower" />
@@ -440,7 +440,7 @@
     <property role="3GE5qa" value="group" />
     <property role="TrG5h" value="QuantityDiv" />
     <property role="34LRSv" value="/" />
-    <property role="R4oN_" value="a quantity expression defined as a fraction" />
+    <property role="R4oN_" value="a quantity division expression" />
     <ref role="1TJDcQ" node="7athFve_SVK" resolve="QuantityExpr" />
     <node concept="PrWs8" id="1JynhuWjYZK" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqlq" resolve="IGroupDivide" />
@@ -465,7 +465,7 @@
     <property role="3GE5qa" value="group" />
     <property role="TrG5h" value="QuantityMul" />
     <property role="34LRSv" value="*" />
-    <property role="R4oN_" value="a quantity expression defined as a multiplication" />
+    <property role="R4oN_" value="a quantity multiplication expression" />
     <ref role="1TJDcQ" node="7athFve_SVK" resolve="QuantityExpr" />
     <node concept="PrWs8" id="1JynhuWjX1t" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqcG" resolve="IGroupMultiply" />
@@ -500,7 +500,7 @@
     <property role="EcuMT" value="8258835046927700725" />
     <property role="3GE5qa" value="definition.unit" />
     <property role="TrG5h" value="UnitDiv" />
-    <property role="R4oN_" value="a unit expression defined as a fraction" />
+    <property role="R4oN_" value="a unit fraction expression" />
     <property role="34LRSv" value="/" />
     <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpr" />
     <node concept="1TJgyj" id="7athFveF1os" role="1TKVEi">
@@ -586,7 +586,7 @@
     <property role="EcuMT" value="4704593238062733448" />
     <property role="3GE5qa" value="group.typesystem" />
     <property role="TrG5h" value="QuantityBaseType" />
-    <property role="R4oN_" value="a base quantity typr" />
+    <property role="R4oN_" value="a base quantity type" />
     <ref role="1TJDcQ" node="69ocqYc6oAT" resolve="QuantityType" />
     <node concept="1TJgyj" id="45a4DYZrZ_c" role="1TKVEi">
       <property role="IQ2ns" value="4704593238062790988" />
@@ -693,7 +693,7 @@
     <property role="3GE5qa" value="definition.unit" />
     <property role="TrG5h" value="UnitMul" />
     <property role="34LRSv" value="*" />
-    <property role="R4oN_" value="a unit expression defined as a multiplication" />
+    <property role="R4oN_" value="a unit multiplication expression" />
     <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpr" />
     <node concept="1TJgyj" id="7i1yFLksgFY" role="1TKVEi">
       <property role="IQ2ns" value="8395143721870494462" />
@@ -718,7 +718,7 @@
     <property role="3GE5qa" value="definition.unit" />
     <property role="TrG5h" value="UnitExponent" />
     <property role="34LRSv" value="^" />
-    <property role="R4oN_" value="a unit expression defined as an exponent" />
+    <property role="R4oN_" value="a unit exponent expression" />
     <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpr" />
     <node concept="1TJgyj" id="7i1yFLkslE5" role="1TKVEi">
       <property role="IQ2ns" value="8395143721870514821" />
