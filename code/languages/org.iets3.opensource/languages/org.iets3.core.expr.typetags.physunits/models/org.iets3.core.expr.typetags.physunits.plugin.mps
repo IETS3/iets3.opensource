@@ -1320,7 +1320,7 @@
                   <ref role="3cqZAo" node="7Dq0xpBteN_" resolve="specification" />
                 </node>
                 <node concept="3TrEf2" id="7Dq0xpBtgC3" role="2OqNvi">
-                  <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="expr" />
+                  <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
                 </node>
               </node>
               <node concept="3clFbS" id="7Dq0xpBtgmh" role="Jncv$">

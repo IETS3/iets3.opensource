@@ -399,7 +399,7 @@
   <node concept="2S6QgY" id="3EoIKdtHATU">
     <property role="3GE5qa" value="group" />
     <property role="TrG5h" value="ConvertIGroupMultiplyToDiv" />
-    <ref role="2ZfgGC" to="i3ya:45a4DYZTqcG" resolve="IGroupMultiply" />
+    <ref role="2ZfgGC" to="i3ya:45a4DYZTqcG" resolve="IGroupMultiplication" />
     <node concept="2S6ZIM" id="3EoIKdtHATV" role="2ZfVej">
       <node concept="3clFbS" id="3EoIKdtHATW" role="2VODD2">
         <node concept="3clFbF" id="3EoIKdtHBqT" role="3cqZAp">
@@ -437,7 +437,7 @@
   <node concept="2S6QgY" id="3EoIKdtSnq0">
     <property role="3GE5qa" value="group" />
     <property role="TrG5h" value="ConvertIGroupDivToMul" />
-    <ref role="2ZfgGC" to="i3ya:45a4DYZTqlq" resolve="IGroupDivide" />
+    <ref role="2ZfgGC" to="i3ya:45a4DYZTqlq" resolve="IGroupDivision" />
     <node concept="2S6ZIM" id="3EoIKdtSnq1" role="2ZfVej">
       <node concept="3clFbS" id="3EoIKdtSnq2" role="2VODD2">
         <node concept="3clFbF" id="3EoIKdtSnq3" role="3cqZAp">
@@ -475,7 +475,7 @@
   <node concept="2S6QgY" id="7Mca05n6aED">
     <property role="3GE5qa" value="group" />
     <property role="TrG5h" value="SwitchMultiplicationOrder" />
-    <ref role="2ZfgGC" to="i3ya:45a4DYZTqcG" resolve="IGroupMultiply" />
+    <ref role="2ZfgGC" to="i3ya:45a4DYZTqcG" resolve="IGroupMultiplication" />
     <node concept="2S6ZIM" id="7Mca05n6aEE" role="2ZfVej">
       <node concept="3clFbS" id="7Mca05n6aEF" role="2VODD2">
         <node concept="3clFbF" id="7Mca05n6aVc" role="3cqZAp">

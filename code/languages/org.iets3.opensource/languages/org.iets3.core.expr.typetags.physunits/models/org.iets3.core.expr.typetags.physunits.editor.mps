@@ -771,7 +771,7 @@
       <node concept="2iRfu4" id="7Bmg9OopAEZ" role="2iSdaV" />
       <node concept="VPM3Z" id="7i1yFLkY3Ie" role="3F10Kt" />
       <node concept="3F1sOY" id="69ocqYc1NTc" role="3EZMnx">
-        <ref role="1NtTu8" to="i3ya:7eOyx9r3qG3" resolve="expr" />
+        <ref role="1NtTu8" to="i3ya:7eOyx9r3qG3" resolve="specification" />
         <node concept="VPRnO" id="5dNVOCFVCLN" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -880,7 +880,7 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="7Mca05nq79x" role="2OqNvi">
-                      <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="expr" />
+                      <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="7Mca05nq7i1" role="2OqNvi">
@@ -904,7 +904,7 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="7Mca05ny9Qt" role="2OqNvi">
-                  <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="expr" />
+                  <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
                 </node>
               </node>
               <node concept="3x8VRR" id="7Mca05nya9D" role="2OqNvi" />
@@ -1607,7 +1607,7 @@
                   <ref role="3cqZAo" node="2hvpuDTJmwC" resolve="spec" />
                 </node>
                 <node concept="3TrEf2" id="69ocqYc2lLq" role="2OqNvi">
-                  <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="expr" />
+                  <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
                 </node>
               </node>
             </node>
@@ -2098,7 +2098,7 @@
   </node>
   <node concept="24kQdi" id="7athFve_VqW">
     <property role="3GE5qa" value="group" />
-    <ref role="1XX52x" to="i3ya:7athFve_UG0" resolve="QuantityDiv" />
+    <ref role="1XX52x" to="i3ya:7athFve_UG0" resolve="QuantityDivision" />
     <node concept="1WcQYu" id="7Bmg9Oo1Nm6" role="2wV5jI">
       <node concept="jtDVG" id="4r1mNB_wbxJ" role="1LiK7o">
         <node concept="2R9Tw8" id="4iu6t1eBmDL" role="3F10Kt">
@@ -2270,7 +2270,7 @@
   </node>
   <node concept="24kQdi" id="7athFveF245">
     <property role="3GE5qa" value="definition.unit" />
-    <ref role="1XX52x" to="i3ya:7athFveF1bP" resolve="UnitDiv" />
+    <ref role="1XX52x" to="i3ya:7athFveF1bP" resolve="UnitDivision" />
     <node concept="1WcQYu" id="7yw1DU9fwXf" role="2wV5jI">
       <node concept="jtDVG" id="7athFveF26X" role="1LiK7o">
         <node concept="2R9Tw8" id="7athFveF26Y" role="3F10Kt">
@@ -2449,7 +2449,7 @@
   </node>
   <node concept="24kQdi" id="45a4DYZOU19">
     <property role="3GE5qa" value="group.typesystem" />
-    <ref role="1XX52x" to="i3ya:45a4DYZrKZa" resolve="QuantityDivType" />
+    <ref role="1XX52x" to="i3ya:45a4DYZrKZa" resolve="QuantityDivisionType" />
     <node concept="jtDVG" id="45a4DYZOUvc" role="2wV5jI">
       <node concept="2R9Tw8" id="45a4DYZOUvd" role="3F10Kt">
         <property role="VOm3f" value="true" />
@@ -2495,7 +2495,7 @@
   </node>
   <node concept="24kQdi" id="45a4DYZOUF_">
     <property role="3GE5qa" value="group.typesystem" />
-    <ref role="1XX52x" to="i3ya:45a4DYZrLVu" resolve="QuantityExpType" />
+    <ref role="1XX52x" to="i3ya:45a4DYZrLVu" resolve="QuantityExponentType" />
     <node concept="jtDJS" id="45a4DYZOUKT" role="2wV5jI">
       <node concept="3F1sOY" id="45a4DYZOUME" role="jn6J4">
         <ref role="1NtTu8" to="i3ya:1JynhuWn4Br" resolve="base" />
@@ -2507,7 +2507,7 @@
   </node>
   <node concept="24kQdi" id="45a4DYZOUTg">
     <property role="3GE5qa" value="group.typesystem" />
-    <ref role="1XX52x" to="i3ya:45a4DYZrLdN" resolve="QuantityMulType" />
+    <ref role="1XX52x" to="i3ya:45a4DYZrLdN" resolve="QuantityMultiplicationType" />
     <node concept="3EZMnI" id="45a4DYZOUYB" role="2wV5jI">
       <node concept="2iRfu4" id="45a4DYZOUYC" role="2iSdaV" />
       <node concept="3F1sOY" id="45a4DYZOUVI" role="3EZMnx">
@@ -2523,7 +2523,7 @@
   </node>
   <node concept="22mcaB" id="1JynhuWk3hZ">
     <property role="3GE5qa" value="group" />
-    <ref role="aqKnT" to="i3ya:1JynhuWk2TY" resolve="QuantityEmpty" />
+    <ref role="aqKnT" to="i3ya:1JynhuWk2TY" resolve="QuantityNeutral" />
     <node concept="22hDWj" id="1JynhuWk3ks" role="22hAXT" />
   </node>
   <node concept="22mcaB" id="73cP8DpotaA">
@@ -2933,12 +2933,12 @@
   </node>
   <node concept="22mcaB" id="15KrVXSF0u_">
     <property role="3GE5qa" value="definition.unit" />
-    <ref role="aqKnT" to="i3ya:15KrVXSF04P" resolve="UnitEmpty" />
+    <ref role="aqKnT" to="i3ya:15KrVXSF04P" resolve="UnitNeutral" />
     <node concept="22hDWj" id="15KrVXSF0xs" role="22hAXT" />
   </node>
   <node concept="24kQdi" id="7Mca05m6JLM">
     <property role="3GE5qa" value="group" />
-    <ref role="1XX52x" to="i3ya:1JynhuWk2TY" resolve="QuantityEmpty" />
+    <ref role="1XX52x" to="i3ya:1JynhuWk2TY" resolve="QuantityNeutral" />
     <node concept="3F0ifn" id="7Mca05m6JPj" role="2wV5jI">
       <property role="3F0ifm" value="dimensionless" />
       <node concept="Vb9p2" id="7Mca05m6JUC" role="3F10Kt" />
@@ -2969,7 +2969,7 @@
   </node>
   <node concept="24kQdi" id="7Mca05nkjJo">
     <property role="3GE5qa" value="definition.unit" />
-    <ref role="1XX52x" to="i3ya:15KrVXSF04P" resolve="UnitEmpty" />
+    <ref role="1XX52x" to="i3ya:15KrVXSF04P" resolve="UnitNeutral" />
     <node concept="3F0ifn" id="7Mca05nkjUa" role="2wV5jI">
       <property role="3F0ifm" value="nounit" />
       <node concept="Vb9p2" id="7Mca05nkjUb" role="3F10Kt" />
