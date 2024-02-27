@@ -2245,22 +2245,6 @@
         </node>
       </node>
     </node>
-    <node concept="CIrOH" id="6EvkZrLfJjn" role="_iOnB">
-      <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="m⁻¹" />
-      <property role="1o$tow" value="reciprocal metre" />
-      <ref role="Rn5ok" node="3xM68GMigWi" resolve="dimensionless" />
-      <node concept="CIsGf" id="6EvkZrLn2Oc" role="1xMkE_">
-        <node concept="wWcm2" id="6EvkZrLn2Op" role="CIi4h">
-          <node concept="CIsvk" id="6EvkZrLn2Oq" role="wWd0T">
-            <property role="CIsvl" value="-1" />
-          </node>
-          <node concept="CIsvn" id="6EvkZrLn2Ob" role="wWd0U">
-            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="CIrOH" id="6EvkZrLfJso" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="kg÷m²" />
