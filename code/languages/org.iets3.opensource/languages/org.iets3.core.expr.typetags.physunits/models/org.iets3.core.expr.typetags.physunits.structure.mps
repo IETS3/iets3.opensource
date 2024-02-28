@@ -773,5 +773,12 @@
       <property role="1L1pqM" value="binary-scaled" />
     </node>
   </node>
+  <node concept="1TIwiD" id="14aBVbMOlEH">
+    <property role="EcuMT" value="1227969439338683053" />
+    <property role="3GE5qa" value="definition.conversion" />
+    <property role="TrG5h" value="NoConvertExpression" />
+    <property role="34LRSv" value="noConvert" />
+    <ref role="1TJDcQ" node="yGiRIEU5vF" resolve="StripUnitExpression" />
+  </node>
 </model>
 
