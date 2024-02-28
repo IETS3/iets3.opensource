@@ -14,7 +14,7 @@
         <child id="8395143721870514822" name="base" index="wWd0U" />
       </concept>
       <concept id="8337440621611267903" name="org.iets3.core.expr.typetags.physunits.structure.Unit" flags="ng" index="CIrOH">
-        <property id="8258835046924736629" name="metricScaled" index="2WSTV2" />
+        <property id="2615231874529702172" name="scaling" index="22P1Ek" />
         <property id="8779275567064090590" name="derived" index="1xMkt3" />
         <reference id="2034036099103723290" name="quantity" index="Rn5ok" />
         <child id="8779275567064091192" name="specification" index="1xMkE_" />
@@ -149,7 +149,7 @@
     <node concept="_ixoA" id="7yw1DU9eZ5S" role="_iOnB" />
     <node concept="CIrOH" id="7athFve_004" role="_iOnB">
       <property role="TrG5h" value="m" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="7athFvezQgW" resolve="distance" />
     </node>
     <node concept="CIrOH" id="7CxaVGr9Ad3" role="_iOnB">
@@ -158,7 +158,7 @@
     </node>
     <node concept="CIrOH" id="7athFveDsfr" role="_iOnB">
       <property role="TrG5h" value="s" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="7athFve$cO4" resolve="time" />
     </node>
     <node concept="CIrOH" id="5WrZzYhLMZx" role="_iOnB">

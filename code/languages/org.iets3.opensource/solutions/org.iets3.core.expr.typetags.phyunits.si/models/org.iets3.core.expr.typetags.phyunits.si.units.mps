@@ -22,7 +22,7 @@
         <child id="8395143721870514822" name="base" index="wWd0U" />
       </concept>
       <concept id="8337440621611267903" name="org.iets3.core.expr.typetags.physunits.structure.Unit" flags="ng" index="CIrOH">
-        <property id="8258835046924736629" name="metricScaled" index="2WSTV2" />
+        <property id="2615231874529702172" name="scaling" index="22P1Ek" />
         <property id="4383045081079374439" name="unitName" index="1o$tow" />
         <property id="8779275567064090590" name="derived" index="1xMkt3" />
         <reference id="2034036099103723290" name="quantity" index="Rn5ok" />
@@ -32,7 +32,7 @@
         <property id="8337440621611273671" name="value" index="CIsvl" />
       </concept>
       <concept id="8337440621611273669" name="org.iets3.core.expr.typetags.physunits.structure.UnitReference" flags="ng" index="CIsvn">
-        <property id="8779275567068768410" name="metricPrefix" index="1xG2w7" />
+        <property id="8779275567068768410" name="prefix" index="1xG2w7" />
         <reference id="8337440621611297532" name="unit" index="CIi3I" />
       </concept>
       <concept id="8337440621611270429" name="org.iets3.core.expr.typetags.physunits.structure.UnitSpecification" flags="ng" index="CIsGf">
@@ -173,13 +173,14 @@
     <node concept="CIrOH" id="3xM68GMigWs" role="_iOnB">
       <property role="TrG5h" value="s" />
       <property role="1o$tow" value="second" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
+      <property role="1xMkt3" value="false" />
       <ref role="Rn5ok" node="3xM68GMigWo" resolve="time" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWr" role="_iOnB">
       <property role="TrG5h" value="m" />
       <property role="1o$tow" value="metre" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWj" resolve="length" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWt" role="_iOnB">
@@ -190,25 +191,25 @@
     <node concept="CIrOH" id="3xM68GMigWw" role="_iOnB">
       <property role="TrG5h" value="A" />
       <property role="1o$tow" value="ampere" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWh" resolve="electric current" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWu" role="_iOnB">
       <property role="TrG5h" value="mol" />
       <property role="1o$tow" value="mole" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWk" resolve="amount of substance" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWv" role="_iOnB">
       <property role="TrG5h" value="K" />
       <property role="1o$tow" value="kelvin" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWm" resolve="thermodynamic temperature" />
     </node>
     <node concept="CIrOH" id="3xM68GMigWx" role="_iOnB">
       <property role="TrG5h" value="cd" />
       <property role="1o$tow" value="candela" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWl" resolve="luminous intensity" />
     </node>
     <node concept="_ixoA" id="3NjH4t$iJlT" role="_iOnB" />
@@ -839,7 +840,7 @@
     <node concept="_ixoA" id="6EvkZrOKO5F" role="_iOnB" />
     <node concept="CIrOH" id="6EvkZrOLErr" role="_iOnB">
       <property role="TrG5h" value="g" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWn" resolve="mass" />
     </node>
     <node concept="_ixoA" id="6EvkZrONBIh" role="_iOnB" />
@@ -850,7 +851,7 @@
       <property role="TrG5h" value="Hz" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="hertz" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXC" resolve="frequency" />
       <node concept="CIsGf" id="3xM68GMigYM" role="1xMkE_">
         <node concept="wWcm2" id="3xM68GMigYN" role="CIi4h">
@@ -914,7 +915,7 @@
       <property role="TrG5h" value="N" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="newton" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigYl" resolve="force" />
       <node concept="CIsGf" id="3xM68GMigZ7" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMigZ8" role="CIi4h">
@@ -941,7 +942,7 @@
       <property role="TrG5h" value="Pa" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="pascal" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXx" resolve="pressure" />
       <node concept="CIsGf" id="3xM68GMigZg" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMigZh" role="CIi4h">
@@ -963,7 +964,7 @@
       <property role="TrG5h" value="J" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="joule" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigY_" resolve="energy" />
       <node concept="CIsGf" id="3xM68GMigZn" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMigZo" role="CIi4h">
@@ -980,7 +981,7 @@
       <property role="TrG5h" value="W" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="watt" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigYu" resolve="power" />
       <node concept="CIsGf" id="3xM68GMigZs" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMigZt" role="CIi4h">
@@ -1002,7 +1003,7 @@
       <property role="TrG5h" value="C" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="coulomb" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigY7" resolve="electric charge" />
       <node concept="CIsGf" id="3xM68GMigZz" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMigZ$" role="CIi4h">
@@ -1019,7 +1020,7 @@
       <property role="TrG5h" value="V" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="volt" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXH" resolve="voltage" />
       <node concept="CIsGf" id="3xM68GMigZC" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMigZD" role="CIi4h">
@@ -1041,7 +1042,7 @@
       <property role="TrG5h" value="F" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="farad" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWU" resolve="electrical capacitance" />
       <node concept="CIsGf" id="3xM68GMigZJ" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMigZK" role="CIi4h">
@@ -1063,7 +1064,7 @@
       <property role="TrG5h" value="Ω" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="ohm" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXq" resolve="electrical resistance" />
       <node concept="CIsGf" id="3xM68GMigZQ" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMigZR" role="CIi4h">
@@ -1085,7 +1086,7 @@
       <property role="TrG5h" value="S" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="siemens" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWG" resolve="electrical conductance" />
       <node concept="CIsGf" id="3xM68GMigZX" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMigZY" role="CIi4h">
@@ -1107,7 +1108,7 @@
       <property role="TrG5h" value="Wb" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="weber" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigW_" resolve="magnetic flux" />
       <node concept="CIsGf" id="3xM68GMih04" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMih05" role="CIi4h">
@@ -1129,7 +1130,7 @@
       <property role="TrG5h" value="T" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="tesla" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXa" resolve="magnetic induction" />
       <node concept="CIsGf" id="3xM68GMih0b" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMih0c" role="CIi4h">
@@ -1156,7 +1157,7 @@
       <property role="TrG5h" value="H" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="henry" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigX1" resolve="electrical inductance" />
       <node concept="CIsGf" id="3xM68GMih0k" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMih0l" role="CIi4h">
@@ -1183,7 +1184,7 @@
       <property role="TrG5h" value="lm" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="lumen" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXO" resolve="luminous flux" />
       <node concept="CIsGf" id="3xM68GMih0t" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMih0u" role="CIi4h">
@@ -1200,7 +1201,7 @@
       <property role="TrG5h" value="lx" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="lux" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXT" resolve="illuminance" />
       <node concept="CIsGf" id="3xM68GMih0y" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMih0z" role="CIi4h">
@@ -1222,7 +1223,7 @@
       <property role="TrG5h" value="Bq" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="becquerel" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigYE" resolve="radioactivity" />
       <node concept="CIsGf" id="3xM68GMih0D" role="1xMkE_">
         <node concept="wWcm2" id="3xM68GMih0E" role="CIi4h">
@@ -1239,7 +1240,7 @@
       <property role="TrG5h" value="Gy" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="gray" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWN" resolve="absorbed dose" />
       <node concept="CIsGf" id="3xM68GMih0I" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMih0J" role="CIi4h">
@@ -1261,7 +1262,7 @@
       <property role="TrG5h" value="Sv" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="sievert" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXj" resolve="equivalent dose" />
       <node concept="CIsGf" id="3xM68GMih0P" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMih0Q" role="CIi4h">
@@ -1283,7 +1284,7 @@
       <property role="TrG5h" value="kat" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="katal" />
-      <property role="2WSTV2" value="true" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigY0" resolve="catalytic activity" />
       <node concept="CIsGf" id="3xM68GMih0W" role="1xMkE_">
         <node concept="wW8yL" id="3xM68GMih0X" role="CIi4h">
@@ -4240,6 +4241,29 @@
         <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
       </node>
     </node>
+    <node concept="_ixoA" id="2Yx91N$uiqk" role="_iOnB" />
+    <node concept="1Ws0TD" id="2Yx91N$uADE" role="_iOnB">
+      <property role="1WsWdv" value="Binary" />
+    </node>
+    <node concept="_ixoA" id="2Yx91N$uUMr" role="_iOnB" />
+    <node concept="Rn5op" id="7F14or$gcr1" role="_iOnB">
+      <property role="TrG5h" value="digital information" />
+    </node>
+    <node concept="_ixoA" id="7F14or$gcz4" role="_iOnB" />
+    <node concept="CIrOH" id="7F14or$gczd" role="_iOnB">
+      <property role="TrG5h" value="B" />
+      <property role="1o$tow" value="byte" />
+      <property role="22P1Ek" value="2hbaSyABMZQ/binary" />
+      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
+    </node>
+    <node concept="_ixoA" id="2Yx91N$tL$N" role="_iOnB" />
+    <node concept="CIrOH" id="2Yx91N$tLAX" role="_iOnB">
+      <property role="TrG5h" value="b" />
+      <property role="1o$tow" value="bit" />
+      <property role="22P1Ek" value="2hbaSyABMZQ/binary" />
+      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
+    </node>
+    <node concept="_ixoA" id="2Yx91N$veEh" role="_iOnB" />
   </node>
 </model>
 

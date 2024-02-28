@@ -15,8 +15,16 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
-        <property id="7862711839422615217" name="text" index="t5JxN" />
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -52,7 +60,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -105,13 +112,10 @@
     <node concept="PrWs8" id="9MvF2i48Ez" role="PzmwI">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
-    <node concept="1TJgyi" id="7athFvevHxP" role="1TKVEl">
-      <property role="IQ2nx" value="8258835046924736629" />
-      <property role="TrG5h" value="metricScaled" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="t5JxF" id="7athFveyN3V" role="lGtFl">
-        <property role="t5JxN" value="If true allow SI-scaling prefixes for the unit when used inside expressions" />
-      </node>
+    <node concept="1TJgyi" id="2hbaSyABN4s" role="1TKVEl">
+      <property role="IQ2nx" value="2615231874529702172" />
+      <property role="TrG5h" value="scaling" />
+      <ref role="AX2Wp" node="2hbaSyABMZL" resolve="ScalingType" />
     </node>
     <node concept="1TJgyi" id="7Bmg9Oo7Kvu" role="1TKVEl">
       <property role="IQ2nx" value="8779275567064090590" />
@@ -155,7 +159,7 @@
     <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpression" />
     <node concept="1TJgyi" id="7Bmg9OopAyq" role="1TKVEl">
       <property role="IQ2nx" value="8779275567068768410" />
-      <property role="TrG5h" value="metricPrefix" />
+      <property role="TrG5h" value="prefix" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="4CUqBF4xMRo" role="PzmwI">
@@ -746,6 +750,27 @@
     <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpression" />
     <node concept="PrWs8" id="15KrVXSF0j4" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZYSsN" resolve="IGroupNeutral" />
+    </node>
+  </node>
+  <node concept="25R3W" id="2hbaSyABMZL">
+    <property role="3F6X1D" value="2615231874529701873" />
+    <property role="3GE5qa" value="definition.unit" />
+    <property role="TrG5h" value="UnitScalingType" />
+    <ref role="1H5jkz" node="2hbaSyABMZM" resolve="unscaled" />
+    <node concept="25R33" id="2hbaSyABMZM" role="25R1y">
+      <property role="3tVfz5" value="2615231874529701874" />
+      <property role="TrG5h" value="unscaled" />
+      <property role="1L1pqM" value="unscaled" />
+    </node>
+    <node concept="25R33" id="2hbaSyABMZN" role="25R1y">
+      <property role="3tVfz5" value="2615231874529701875" />
+      <property role="TrG5h" value="metric" />
+      <property role="1L1pqM" value="metric-scaled" />
+    </node>
+    <node concept="25R33" id="2hbaSyABMZQ" role="25R1y">
+      <property role="3tVfz5" value="2615231874529701878" />
+      <property role="TrG5h" value="binary" />
+      <property role="1L1pqM" value="binary-scaled" />
     </node>
   </node>
 </model>
