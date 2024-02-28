@@ -4243,7 +4243,7 @@
     </node>
     <node concept="_ixoA" id="2Yx91N$uiqk" role="_iOnB" />
     <node concept="1Ws0TD" id="2Yx91N$uADE" role="_iOnB">
-      <property role="1WsWdv" value="Binary" />
+      <property role="1WsWdv" value="Digital information" />
     </node>
     <node concept="_ixoA" id="2Yx91N$uUMr" role="_iOnB" />
     <node concept="Rn5op" id="7F14or$gcr1" role="_iOnB">
@@ -4252,16 +4252,61 @@
     <node concept="_ixoA" id="7F14or$gcz4" role="_iOnB" />
     <node concept="CIrOH" id="7F14or$gczd" role="_iOnB">
       <property role="TrG5h" value="B" />
-      <property role="1o$tow" value="byte" />
+      <property role="1o$tow" value="binary byte" />
       <property role="22P1Ek" value="2hbaSyABMZQ/binary" />
       <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
     </node>
-    <node concept="_ixoA" id="2Yx91N$tL$N" role="_iOnB" />
     <node concept="CIrOH" id="2Yx91N$tLAX" role="_iOnB">
       <property role="TrG5h" value="b" />
-      <property role="1o$tow" value="bit" />
+      <property role="1o$tow" value="binary bit" />
       <property role="22P1Ek" value="2hbaSyABMZQ/binary" />
       <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
+    </node>
+    <node concept="_ixoA" id="14aBVbN56eu" role="_iOnB" />
+    <node concept="CIrOH" id="14aBVbN55En" role="_iOnB">
+      <property role="TrG5h" value="byte" />
+      <property role="1o$tow" value="byte" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
+      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
+    </node>
+    <node concept="CIrOH" id="14aBVbN55Ep" role="_iOnB">
+      <property role="TrG5h" value="bit" />
+      <property role="1o$tow" value="bit" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
+      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
+    </node>
+    <node concept="_ixoA" id="14aBVbNnPLO" role="_iOnB" />
+    <node concept="TRoc0" id="14aBVbN4A4Q" role="_iOnB">
+      <node concept="27LzZq" id="14aBVbN4A4S" role="27P04L">
+        <node concept="30dDTi" id="14aBVbN4Ue_" role="27K$mF">
+          <node concept="30bXRB" id="14aBVbN4Uji" role="30dEs_">
+            <property role="30bXRw" value="8" />
+          </node>
+          <node concept="2m5Cep" id="14aBVbN4U9V" role="30dEsF" />
+        </node>
+      </node>
+      <node concept="CIsvn" id="14aBVbN4U0L" role="2vOZTa">
+        <ref role="CIi3I" node="7F14or$gczd" resolve="B" />
+      </node>
+      <node concept="CIsvn" id="14aBVbN4U5g" role="2vOYbH">
+        <ref role="CIi3I" node="2Yx91N$tLAX" resolve="b" />
+      </node>
+    </node>
+    <node concept="TRoc0" id="14aBVbN5r6V" role="_iOnB">
+      <node concept="27LzZq" id="14aBVbN5r6W" role="27P04L">
+        <node concept="30dDTi" id="14aBVbN5r6X" role="27K$mF">
+          <node concept="30bXRB" id="14aBVbN5r6Y" role="30dEs_">
+            <property role="30bXRw" value="8" />
+          </node>
+          <node concept="2m5Cep" id="14aBVbN5r6Z" role="30dEsF" />
+        </node>
+      </node>
+      <node concept="CIsvn" id="14aBVbN5JeB" role="2vOZTa">
+        <ref role="CIi3I" node="14aBVbN55En" resolve="Byte" />
+      </node>
+      <node concept="CIsvn" id="14aBVbNhCkx" role="2vOYbH">
+        <ref role="CIi3I" node="14aBVbN55Ep" resolve="bit" />
+      </node>
     </node>
     <node concept="_ixoA" id="2Yx91N$veEh" role="_iOnB" />
   </node>
