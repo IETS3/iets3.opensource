@@ -41,6 +41,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
       </concept>
@@ -66,6 +67,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -371,6 +375,23 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="3wrpJuqrRN6" role="jymVt" />
+    <node concept="3clFb_" id="3wrpJuqrRoW" role="jymVt">
+      <property role="TrG5h" value="implicitConversionIsEnabled" />
+      <node concept="3Tm1VV" id="3wrpJuqrRoY" role="1B3o_S" />
+      <node concept="10P_77" id="3wrpJuqrRoZ" role="3clF45" />
+      <node concept="3clFbS" id="3wrpJuqrRp0" role="3clF47">
+        <node concept="3clFbF" id="3wrpJuqrRp3" role="3cqZAp">
+          <node concept="3clFbT" id="3wrpJuqrRp2" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3wrpJuqrRp1" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3wrpJuqrRTr" role="jymVt" />
   </node>
   <node concept="1lYeZD" id="7TK9se3Zi5c">
     <property role="TrG5h" value="PhysUnitLangConfigExtensionNewBehaviors" />
