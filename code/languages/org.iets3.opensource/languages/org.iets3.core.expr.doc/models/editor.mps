@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
@@ -14,6 +13,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="34lm" ref="r:04cb519f-2059-4c60-9414-918c7823fd79(org.iets3.core.expr.doc.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -133,6 +133,9 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -249,9 +252,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport">
-      <concept id="1829257266377339186" name="jetbrains.mps.ide.httpsupport.structure.Node_getURLOperation" flags="ng" index="2$mYbS" />
-    </language>
   </registry>
   <node concept="24kQdi" id="1sudaVNnKpk">
     <ref role="1XX52x" to="34lm:1sudaVNmXYu" resolve="Frame" />
@@ -367,10 +367,11 @@
           <node concept="1HfYo3" id="2c2AzQcEfkl" role="1HlULh">
             <node concept="3TQlhw" id="2c2AzQcEfkm" role="1Hhtcw">
               <node concept="3clFbS" id="2c2AzQcEfkn" role="2VODD2">
-                <node concept="3clFbF" id="2c2AzQcEfko" role="3cqZAp">
-                  <node concept="2OqwBi" id="2c2AzQcEg17" role="3clFbG">
-                    <node concept="pncrf" id="2c2AzQcEfHP" role="2Oq$k0" />
-                    <node concept="2$mYbS" id="2c2AzQcEgY9" role="2OqNvi" />
+                <node concept="3clFbF" id="5_s5$c25Qck" role="3cqZAp">
+                  <node concept="2YIFZM" id="5_s5$c25Qd4" role="3clFbG">
+                    <ref role="37wK5l" to="oq0c:1_yOWEXenNM" resolve="getURL" />
+                    <ref role="1Pybhc" to="oq0c:3OrGkZCn9ZQ" resolve="URLUtil" />
+                    <node concept="pncrf" id="5_s5$c25QdN" role="37wK5m" />
                   </node>
                 </node>
               </node>
