@@ -9,7 +9,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 
-- Enumerations can have an order by declaration, by literal or by value ascociated with the literal 
+- Enumerations can have an order by declaration, by literal or by value ascociated with the literal
+
+### Fixed
+- Update java generator to fix compilation error of generated [TupleAccess]( https://github.com/IETS3/iets3.opensource/issues/774)
 
 ## January 2024
 
@@ -54,6 +57,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 
 - The comparison helper in org.iets3.core.expr.simpleTypes.runtime and the equals helper in the test language where merged into a new class EqualsHelper inside the first runtime solution to return the same values.
+
+## October 2023
 
 ### Fixed
 

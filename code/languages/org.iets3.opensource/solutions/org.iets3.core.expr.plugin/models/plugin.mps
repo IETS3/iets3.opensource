@@ -6317,7 +6317,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="2ufoZQISyNV" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.plugin/icons/deleteInspectors.png" />
+      <property role="1iqoE4" value="${module}/icons/deleteInspectors.png" />
     </node>
     <node concept="2S4$dB" id="2ufoZQISyNW" role="1NuT2Z">
       <property role="TrG5h" value="node" />
@@ -6375,7 +6375,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="2ufoZQIRCmr" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.plugin/icons/addInspector.png" />
+      <property role="1iqoE4" value="${module}/icons/addInspector.png" />
     </node>
     <node concept="2S4$dB" id="2ufoZQISkkW" role="1NuT2Z">
       <property role="TrG5h" value="node" />
@@ -6505,7 +6505,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="2ufoZQISnwM" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.plugin/icons/clearInspectors.png" />
+      <property role="1iqoE4" value="${module}/icons/clearInspectors.png" />
     </node>
     <node concept="2S4$dB" id="2ufoZQISnwN" role="1NuT2Z">
       <property role="TrG5h" value="node" />
