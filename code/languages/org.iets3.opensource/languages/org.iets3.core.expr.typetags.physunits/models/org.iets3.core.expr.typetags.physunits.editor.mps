@@ -221,7 +221,9 @@
       </concept>
       <concept id="5425882385312046132" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_CurrentTargetNode" flags="nn" index="1yR$tW" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="7991336459489871999" name="jetbrains.mps.lang.editor.structure.IOutputConceptSubstituteMenuPart" flags="ng" index="3EoQpk">
@@ -1080,6 +1082,20 @@
     <ref role="1XX52x" to="i3ya:VmEWGR2Mzb" resolve="ConversionRule" />
     <node concept="3EZMnI" id="1wGuEUvY7Wc" role="2wV5jI">
       <node concept="3EZMnI" id="1NpnWezQFsA" role="3EZMnx">
+        <node concept="1kHk_G" id="3wrpJuqvjdy" role="3EZMnx">
+          <property role="ZjSer" value="implicit" />
+          <ref role="1NtTu8" to="i3ya:3wrpJuqviSi" resolve="isImplicit" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          <node concept="uPpia" id="3wrpJuqxJJo" role="1djCvC">
+            <node concept="3clFbS" id="3wrpJuqxJJp" role="2VODD2">
+              <node concept="3clFbF" id="3wrpJuqxJJS" role="3cqZAp">
+                <node concept="Xl_RD" id="3wrpJuqxJJR" role="3clFbG">
+                  <property role="Xl_RC" value="implicit conversion" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1kHk_G" id="7Kr9PCKT$aP" role="3EZMnx">
           <property role="ZjSer" value="eager" />
           <ref role="1NtTu8" to="i3ya:1wGuEUvXzlw" resolve="isEager" />
@@ -1124,6 +1140,30 @@
         <property role="3F0ifm" value="}" />
       </node>
       <node concept="2iRkQZ" id="1wGuEUvY7Wd" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="3wrpJuqGxRh" role="6VMZX">
+      <node concept="2iRfu4" id="3wrpJuqGxRi" role="2iSdaV" />
+      <node concept="3F0ifn" id="3wrpJuqGxJ6" role="3EZMnx">
+        <property role="3F0ifm" value="implicit priority:" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F0A7n" id="3wrpJuqGxO8" role="3EZMnx">
+        <property role="1$x2rV" value="0" />
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="i3ya:3wrpJuqGxj$" resolve="implicitPriority" />
+      </node>
+      <node concept="pkWqt" id="3wrpJuqGxY2" role="pqm2j">
+        <node concept="3clFbS" id="3wrpJuqGxY3" role="2VODD2">
+          <node concept="3clFbF" id="3wrpJuqGy48" role="3cqZAp">
+            <node concept="2OqwBi" id="3wrpJuqGyvn" role="3clFbG">
+              <node concept="pncrf" id="3wrpJuqGy47" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3wrpJuqGz93" role="2OqNvi">
+                <ref role="3TsBF5" to="i3ya:3wrpJuqviSi" resolve="isImplicit" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="5Q6EZP5OOQc">
