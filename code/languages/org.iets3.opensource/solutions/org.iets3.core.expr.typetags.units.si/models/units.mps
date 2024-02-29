@@ -91,7 +91,7 @@
       <property role="TrG5h" value="temperature" />
     </node>
     <node concept="Rn5op" id="1KUmgSFvJUq" role="_iOnB">
-      <property role="TrG5h" value="weight" />
+      <property role="TrG5h" value="mass" />
     </node>
     <node concept="Rn5op" id="1KUmgSFvJUr" role="_iOnB">
       <property role="TrG5h" value="time" />
