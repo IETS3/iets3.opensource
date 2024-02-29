@@ -376,6 +376,20 @@
               </node>
             </node>
           </node>
+          <node concept="2HvfSZ" id="45pzosSo7Dr" role="39821P">
+            <node concept="398BVA" id="45pzosSo7Eq" role="2HvfZ0">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="45pzosSo7Fk" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="45pzosSo7Fp" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.math.interpreter" />
+                  <node concept="2Ry0Ak" id="45pzosSo7Fu" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="pUk6x" id="1D8fMMrKjdM" role="pUk7w" />
       </node>
@@ -1202,6 +1216,47 @@
         <node concept="1SiIV0" id="2xddOZL76Af" role="3bR37C">
           <node concept="3bR9La" id="2xddOZL76Ag" role="1SiIV1">
             <ref role="3bR37D" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="45pzosSo7eo" role="3bR37C">
+          <node concept="1BurEX" id="45pzosSo7ep" role="1SiIV1">
+            <node concept="398BVA" id="45pzosSo7eb" role="1BurEY">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="45pzosSo7ec" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="45pzosSo7ed" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.math.interpreter" />
+                  <node concept="2Ry0Ak" id="45pzosSo7ee" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="45pzosSo7ef" role="2Ry0An">
+                      <property role="2Ry0Am" value="big-math-2.3.2.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="45pzosSo7eK" role="3bR31x">
+          <property role="3ZfqAx" value="lib" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="45pzosSo7eL" role="1HemKq">
+            <node concept="398BVA" id="45pzosSo7e_" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="45pzosSo7eA" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="45pzosSo7eB" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.math.interpreter" />
+                  <node concept="2Ry0Ak" id="45pzosSo7eC" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="45pzosSo7eM" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
           </node>
         </node>
       </node>
