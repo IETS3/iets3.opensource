@@ -1,5 +1,5 @@
 import de.itemis.mps.gradle.*
-
+import groovy.xml.XmlSlurper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -212,6 +212,16 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
             report(format: 'frames', todir: "$buildDir/junitreport")
         }
         ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
+
+        // evaluate junit result and fail on error
+        def junitResult = new XmlSlurper().parse(file('TESTS-TestSuites.xml'))
+        def failures = junitResult.'**'.findAll { it.name() == 'failure' }
+        def errors = junitResult.'**'.findAll { it.name() == 'errors' }
+
+        if (failures || errors) {
+            def amount = failures.size() + errors.size()
+            throw new GradleException(amount + " JUnit tests failed. Check the test report for details.")
+        }
     }
 }
 
