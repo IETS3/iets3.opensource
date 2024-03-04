@@ -7903,7 +7903,7 @@
     </node>
     <node concept="13i0hz" id="jqB9UdpHpQ" role="13h7CS">
       <property role="TrG5h" value="isProposalForThisType" />
-      <ref role="13i0hy" to="pbu6:6wzrxL3bBWo" resolve="isProposalForThisType" />
+      <ref role="13i0hy" to="pbu6:6wzrxL3bBWo" resolve="isProposalNodeForThisType" />
       <node concept="3clFbS" id="jqB9UdpHpT" role="3clF47">
         <node concept="3clFbF" id="6wzrxL3vK9X" role="3cqZAp">
           <node concept="1Wc70l" id="6wzrxL3wuVD" role="3clFbG">
