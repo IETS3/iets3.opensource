@@ -155,7 +155,7 @@
           <node concept="2ShNRf" id="2TlZyI4PP1Q" role="3cqZAk">
             <node concept="HV5vD" id="2TlZyI4PPrv" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="HV5vE" node="2TlZyI4PF$d" resolve="MyIdentifierConfigurator" />
+              <ref role="HV5vE" node="2TlZyI4PF$d" resolve="TestIdentifierConfigurator" />
             </node>
           </node>
         </node>

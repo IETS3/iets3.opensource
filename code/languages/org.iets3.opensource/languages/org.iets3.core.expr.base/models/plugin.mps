@@ -338,10 +338,15 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -13328,10 +13333,25 @@
     <node concept="2tJIrI" id="12O03AaWLfx" role="jymVt" />
     <node concept="3clFb_" id="12O03AaWLhs" role="jymVt">
       <property role="TrG5h" value="getPriorityLevel" />
-      <property role="1EzhhJ" value="true" />
       <node concept="10Oyi0" id="12O03AaWLht" role="3clF45" />
       <node concept="3Tm1VV" id="12O03AaWLhu" role="1B3o_S" />
-      <node concept="3clFbS" id="12O03AaWLhv" role="3clF47" />
+      <node concept="3clFbS" id="12O03AaWLhv" role="3clF47">
+        <node concept="3cpWs6" id="3joh7TIXYo1" role="3cqZAp">
+          <node concept="3cmrfG" id="3joh7TIXZxF" role="3cqZAk">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="3joh7TIXZKS" role="lGtFl">
+        <node concept="TZ5HA" id="3joh7TIXZKT" role="TZ5H$">
+          <node concept="1dT_AC" id="3joh7TIXZKU" role="1dT_Ay">
+            <property role="1dT_AB" value="You have to return a greater number if your implementation should be taken into account." />
+          </node>
+        </node>
+        <node concept="x79VA" id="3joh7TIXZKV" role="3nqlJM">
+          <property role="x79VB" value="0 as default" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3NUSEp5xIaF" role="jymVt" />
     <node concept="3clFb_" id="3NUSEp5xVog" role="jymVt">

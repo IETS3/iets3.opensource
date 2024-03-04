@@ -1985,7 +1985,7 @@
               <property role="3cmrfH" value="100" />
             </node>
             <node concept="10M0yZ" id="x6l$aoyNt7" role="37vLTJ">
-              <ref role="1PxDUh" to="zium:2TlZyI4PF$d" resolve="MyIdentifierConfigurator" />
+              <ref role="1PxDUh" to="zium:2TlZyI4PF$d" resolve="TestIdentifierConfigurator" />
               <ref role="3cqZAo" to="zium:2TlZyI4PQGO" resolve="priority" />
             </node>
           </node>
@@ -2080,7 +2080,7 @@
             <node concept="2ShNRf" id="2TlZyI4PVuU" role="2Oq$k0">
               <node concept="HV5vD" id="2TlZyI4PVuV" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="HV5vE" to="zium:2TlZyI4PF$d" resolve="MyIdentifierConfigurator" />
+                <ref role="HV5vE" to="zium:2TlZyI4PF$d" resolve="TestIdentifierConfigurator" />
               </node>
             </node>
             <node concept="liA8E" id="2TlZyI4PVuW" role="2OqNvi">
@@ -2096,7 +2096,7 @@
         <node concept="1gVbGN" id="2TlZyI4PVuX" role="3cqZAp">
           <node concept="2ZW3vV" id="2TlZyI4PVuY" role="1gVkn0">
             <node concept="3uibUv" id="2TlZyI4PVuZ" role="2ZW6by">
-              <ref role="3uigEE" to="zium:2TlZyI4PF$d" resolve="MyIdentifierConfigurator" />
+              <ref role="3uigEE" to="zium:2TlZyI4PF$d" resolve="TestIdentifierConfigurator" />
             </node>
             <node concept="37vLTw" id="2TlZyI4PVv0" role="2ZW6bz">
               <ref role="3cqZAo" node="2TlZyI4PW2G" resolve="resolveIdentConfigReset" />
@@ -2193,7 +2193,7 @@
             </node>
             <node concept="10M0yZ" id="x6l$aoGjPh" role="37vLTJ">
               <ref role="3cqZAo" to="zium:2TlZyI4PQGO" resolve="priority" />
-              <ref role="1PxDUh" to="zium:2TlZyI4PF$d" resolve="MyIdentifierConfigurator" />
+              <ref role="1PxDUh" to="zium:2TlZyI4PF$d" resolve="TestIdentifierConfigurator" />
             </node>
           </node>
         </node>
@@ -2280,7 +2280,7 @@
         <node concept="3clFbF" id="x6l$aoByrF" role="3cqZAp">
           <node concept="37vLTI" id="x6l$aoByrG" role="3clFbG">
             <node concept="10M0yZ" id="x6l$aoByrI" role="37vLTJ">
-              <ref role="1PxDUh" to="zium:2TlZyI4PF$d" resolve="MyIdentifierConfigurator" />
+              <ref role="1PxDUh" to="zium:2TlZyI4PF$d" resolve="TestIdentifierConfigurator" />
               <ref role="3cqZAo" to="zium:2TlZyI4PQGO" resolve="priority" />
             </node>
             <node concept="3cmrfG" id="x6l$aoBywG" role="37vLTx">
