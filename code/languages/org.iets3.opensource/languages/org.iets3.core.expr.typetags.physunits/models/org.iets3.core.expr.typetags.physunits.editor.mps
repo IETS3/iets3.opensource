@@ -928,23 +928,27 @@
         <node concept="s8sZD" id="7Mca05npLr6" role="sbcd9">
           <node concept="3clFbS" id="7Mca05npLr7" role="2VODD2">
             <node concept="3clFbF" id="7Mca05nTXck" role="3cqZAp">
-              <node concept="2YIFZM" id="7Mca05nTXfy" role="3clFbG">
-                <ref role="37wK5l" to="x0pf:45a4DYZteD9" resolve="minimize" />
+              <node concept="2YIFZM" id="37bWBcnzG1H" role="3clFbG">
+                <ref role="37wK5l" to="x0pf:2NJGAccbwxi" resolve="sortByExponent" />
                 <ref role="1Pybhc" to="x0pf:45a4DYZteBJ" resolve="GroupHelper" />
-                <node concept="2OqwBi" id="7Mca05nq7eT" role="37wK5m">
-                  <node concept="2OqwBi" id="7Mca05nq74p" role="2Oq$k0">
-                    <node concept="2OqwBi" id="7Mca05npLr9" role="2Oq$k0">
-                      <node concept="pncrf" id="7Mca05npLra" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="7Mca05nq6Z8" role="2OqNvi">
-                        <ref role="3Tt5mk" to="i3ya:7Bmg9Oo7KCS" resolve="specification" />
+                <node concept="2YIFZM" id="7Mca05nTXfy" role="37wK5m">
+                  <ref role="37wK5l" to="x0pf:45a4DYZteD9" resolve="minimize" />
+                  <ref role="1Pybhc" to="x0pf:45a4DYZteBJ" resolve="GroupHelper" />
+                  <node concept="2OqwBi" id="7Mca05nq7eT" role="37wK5m">
+                    <node concept="2OqwBi" id="7Mca05nq74p" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7Mca05npLr9" role="2Oq$k0">
+                        <node concept="pncrf" id="7Mca05npLra" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="7Mca05nq6Z8" role="2OqNvi">
+                          <ref role="3Tt5mk" to="i3ya:7Bmg9Oo7KCS" resolve="specification" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="7Mca05nq79x" role="2OqNvi">
+                        <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
                       </node>
                     </node>
-                    <node concept="3TrEf2" id="7Mca05nq79x" role="2OqNvi">
-                      <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
+                    <node concept="2qgKlT" id="7Mca05nq7i1" role="2OqNvi">
+                      <ref role="37wK5l" to="rppw:7Mca05npOsl" resolve="getReducedExpr" />
                     </node>
-                  </node>
-                  <node concept="2qgKlT" id="7Mca05nq7i1" role="2OqNvi">
-                    <ref role="37wK5l" to="rppw:7Mca05npOsl" resolve="getReducedExpr" />
                   </node>
                 </node>
               </node>

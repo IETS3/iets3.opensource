@@ -278,17 +278,17 @@
       <property role="TrG5h" value="magnetic flux" />
       <property role="1xQvps" value="true" />
       <node concept="2W5y9F" id="3xM68GMigWA" role="2W5xxx">
-        <node concept="2WfEyl" id="3xM68GMigWB" role="2W5ySM">
-          <node concept="2W5y$k" id="3xM68GMigWC" role="2BJG10">
-            <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
-          </node>
-          <node concept="2W2HD0" id="3xM68GMigWD" role="2BJJPC">
-            <node concept="2W5y$k" id="3xM68GMigWE" role="2BJGmK">
+        <node concept="2WfEyl" id="3NzJkzCfo1Q" role="2W5ySM">
+          <node concept="2W2HD0" id="3NzJkzCfo1R" role="2BJG10">
+            <node concept="2W5y$k" id="3NzJkzCfo1S" role="2BJGmK">
               <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
             </node>
-            <node concept="CIsvk" id="3xM68GMigWF" role="DfWIZ">
+            <node concept="CIsvk" id="3NzJkzCfo1T" role="DfWIZ">
               <property role="CIsvl" value="-1" />
             </node>
+          </node>
+          <node concept="2W5y$k" id="3NzJkzCfo1U" role="2BJJPC">
+            <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
           </node>
         </node>
       </node>
