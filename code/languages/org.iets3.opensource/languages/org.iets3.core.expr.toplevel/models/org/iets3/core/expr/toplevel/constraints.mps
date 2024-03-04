@@ -5,6 +5,7 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -155,6 +156,9 @@
         <child id="1163203787401" name="referentSetHandler" index="3kmjI7" />
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -682,16 +686,16 @@
               </node>
             </node>
             <node concept="3eOVzh" id="6rdp$3yw8gS" role="1Dwp0S">
-              <node concept="2OqwBi" id="6rdp$3yw9iz" role="3uHU7w">
+              <node concept="37vLTw" id="6rdp$3yw6K2" role="3uHU7B">
+                <ref role="3cqZAo" node="6rdp$3yw54t" resolve="i" />
+              </node>
+              <node concept="2EnYce" id="1z1BmEvQJcB" role="3uHU7w">
                 <node concept="37vLTw" id="6rdp$3yw8As" role="2Oq$k0">
                   <ref role="3cqZAo" node="6rdp$3yw0UB" resolve="label" />
                 </node>
                 <node concept="liA8E" id="6rdp$3ywa2U" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
-              </node>
-              <node concept="37vLTw" id="6rdp$3yw6K2" role="3uHU7B">
-                <ref role="3cqZAo" node="6rdp$3yw54t" resolve="i" />
               </node>
             </node>
             <node concept="3uNrnE" id="6rdp$3ywbUI" role="1Dwrff">
