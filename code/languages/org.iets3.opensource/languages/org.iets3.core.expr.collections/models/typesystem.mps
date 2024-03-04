@@ -219,6 +219,10 @@
         <child id="1210784642750" name="value" index="3CoRuB" />
       </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
+      <concept id="1178870617262" name="jetbrains.mps.lang.typesystem.structure.CoerceExpression" flags="nn" index="1UaxmW">
+        <child id="1178870894644" name="pattern" index="1Ub_4A" />
+        <child id="1178870894645" name="nodeToCoerce" index="1Ub_4B" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -495,7 +499,7 @@
                           </node>
                           <node concept="3cpWs3" id="TcaAhOJ3xK" role="2MkJ7o">
                             <node concept="Xl_RD" id="TcaAhOJ4bz" role="3uHU7B">
-                              <property role="Xl_RC" value="No common supertype found:" />
+                              <property role="Xl_RC" value="Incompatible element types – " />
                             </node>
                             <node concept="2OqwBi" id="TcaAhODq_G" role="3uHU7w">
                               <node concept="Jnkvi" id="TcaAhODqaP" role="2Oq$k0">
@@ -5441,11 +5445,12 @@
                   <node concept="3Tqbb2" id="1mDdTGUIpI" role="1tU5fm">
                     <ref role="ehGHo" to="hm2y:S$tO8ocniU" resolve="TupleType" />
                   </node>
-                  <node concept="1PxgMI" id="1mDdTGUIpS" role="33vP2m">
-                    <node concept="chp4Y" id="1mDdTGUIpT" role="3oSUPX">
-                      <ref role="cht4Q" to="hm2y:S$tO8ocniU" resolve="TupleType" />
+                  <node concept="1UaxmW" id="6GiZkUyXeak" role="33vP2m">
+                    <node concept="1YaCAy" id="6GiZkUyXeal" role="1Ub_4A">
+                      <property role="TrG5h" value="tupleType" />
+                      <ref role="1YaFvo" to="hm2y:S$tO8ocniU" resolve="TupleType" />
                     </node>
-                    <node concept="37vLTw" id="1mDdTGUIpU" role="1m5AlR">
+                    <node concept="37vLTw" id="6GiZkUz1sX2" role="1Ub_4B">
                       <ref role="3cqZAo" node="1mDdTGU9aR" resolve="baseType" />
                     </node>
                   </node>
