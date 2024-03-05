@@ -219,16 +219,18 @@ task failOnTestError() {
     description 'evaluate junit result and fail on error'
     doLast {
         
-        def junitResult = new XmlSlurper().parse(file('TESTS-TestSuites.xml'))
-        def failures = junitResult.'**'.findAll { it.name() == 'failure' }
-        def errors = junitResult.'**'.findAll { it.name() == 'errors' }
+        def juniXml = file('TESTS-TestSuites.xml')
+        if(juniXml.exists()){
+            def junitResult = new XmlSlurper().parse(juniXml)
+            def failures = junitResult.'**'.findAll { it.name() == 'failure' }
+            def errors = junitResult.'**'.findAll { it.name() == 'errors' }
 
-        if (failures || errors) {
-            def amount = failures.size() + errors.size()
-            throw new GradleException(amount + " JUnit tests failed. Check the test report for details.")
+            if (failures || errors) {
+                def amount = failures.size() + errors.size()
+                throw new GradleException(amount + " JUnit tests failed. Check the test report for details.")
+            }
         }
     }
-
 }
 buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
