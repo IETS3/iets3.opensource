@@ -25,11 +25,11 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -843,6 +843,30 @@
       </node>
       <node concept="2AHcQZ" id="7fOaqhi3Un1" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5qf1oe$zdF8" role="jymVt" />
+    <node concept="2tJIrI" id="5qf1oe$zeNt" role="jymVt" />
+    <node concept="3clFb_" id="5qf1oe$zfpT" role="jymVt">
+      <property role="TrG5h" value="hashCode" />
+      <node concept="3Tm1VV" id="5qf1oe$zfpU" role="1B3o_S" />
+      <node concept="10Oyi0" id="5qf1oe$zfpX" role="3clF45" />
+      <node concept="3clFbS" id="5qf1oe$zfpY" role="3clF47">
+        <node concept="3clFbF" id="5qf1oe$zktQ" role="3cqZAp">
+          <node concept="2YIFZM" id="5qf1oe$zlvV" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~Objects.hash(java.lang.Object...)" resolve="hash" />
+            <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
+            <node concept="37vLTw" id="5qf1oe$zpPq" role="37wK5m">
+              <ref role="3cqZAo" node="7D7uZV2szuN" resolve="memberData" />
+            </node>
+            <node concept="37vLTw" id="5qf1oe$zscK" role="37wK5m">
+              <ref role="3cqZAo" node="7$ajNzjzZzN" resolve="recordDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5qf1oe$zfpZ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7D7uZV2szl_" role="jymVt" />

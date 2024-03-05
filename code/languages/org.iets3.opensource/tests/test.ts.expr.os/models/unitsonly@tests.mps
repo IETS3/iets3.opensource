@@ -29,9 +29,9 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="63ih" ref="r:8b224ec5-7a3e-45b9-8341-eb73ff942246(org.iets3.core.expr.math.typesystem)" />
     <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="cp9o" ref="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
-    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -1619,7 +1619,6 @@
             <node concept="3EXbTZ" id="6rhVuic9JT1" role="1QScD9">
               <ref role="3EXiBN" node="6rhVuic9JQF" resolve="myMs" />
               <node concept="7CXmI" id="6rhVuic9JT2" role="lGtFl">
-                <node concept="29bkU" id="6rhVuic9JT3" role="7EUXB" />
                 <node concept="1TM$A" id="6rhVuic9JT4" role="7EUXB">
                   <node concept="2PYRI3" id="6rhVuic9JT5" role="3lydEf">
                     <ref role="39XzEq" to="xqtf:yGiRIEWkAm" />
@@ -1654,7 +1653,6 @@
               <ref role="3EXiBN" to="ku0a:5XaocLWHSS5" resolve="s" />
               <node concept="7CXmI" id="6rhVuic9JTf" role="lGtFl">
                 <node concept="1TM$A" id="6rhVuic9JTg" role="7EUXB" />
-                <node concept="29bkU" id="6rhVuic9JTh" role="7EUXB" />
               </node>
             </node>
             <node concept="7CXmI" id="6rhVuic9JTi" role="lGtFl">
@@ -5690,6 +5688,9 @@
         <node concept="3GEVxB" id="2tv4PdqaolL" role="3i6evy">
           <ref role="3GEb4d" to="ku0a:5XaocLWHGMs" resolve="SIUnits" />
         </node>
+        <node concept="3GEVxB" id="2UZH4PMTqEI" role="3i6evy">
+          <ref role="3GEb4d" node="2UZH4PMT5or" resolve="duplicateUnits" />
+        </node>
         <node concept="2zPypq" id="6P2XQ7pvL7$" role="_iOnC">
           <property role="TrG5h" value="minWithMixedType" />
           <node concept="2c7tTJ" id="6P2XQ7pvL7_" role="2zM23F">
@@ -5862,9 +5863,6 @@
             </node>
             <node concept="mLuIC" id="J6oDkVCEzW" role="2c7tTw" />
           </node>
-        </node>
-        <node concept="3GEVxB" id="2UZH4PMTqEI" role="3i6evy">
-          <ref role="3GEb4d" node="2UZH4PMT5or" resolve="duplicateUnits" />
         </node>
       </node>
     </node>
@@ -7293,8 +7291,8 @@
         <node concept="_fku$" id="69HsIy5GLSK" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSL" role="_fkuY">
           <node concept="3EXbTZ" id="69HsIy5GLSM" role="1QScD9">
-            <ref role="3EXiBM" to="ku0a:69HsIy5Fyjh" resolve="conversion_kg_g (any)" />
             <ref role="3EXiBN" to="ku0a:69HsIy5FxTe" resolve="g" />
+            <ref role="3EXiBM" to="ku0a:69HsIy5Fyjh" resolve="conversion_kg_g (any)" />
           </node>
           <node concept="1YnStw" id="69HsIy5GU5N" role="30czhm">
             <node concept="CIsGf" id="69HsIy5GU5o" role="2c7tTI">
@@ -7334,27 +7332,6 @@
         </node>
       </node>
       <node concept="3dYjL0" id="69HsIy5GLTf" role="_fkp5" />
-    </node>
-  </node>
-  <node concept="_iOnV" id="7DfYVnlgZTZ">
-    <property role="TrG5h" value="Quanities" />
-    <node concept="Rn5op" id="1KUmgSFvJZN" role="_iOnC">
-      <property role="TrG5h" value="millimetre" />
-    </node>
-    <node concept="Rn5op" id="1KUmgSFvJZO" role="_iOnC">
-      <property role="TrG5h" value="acceleration" />
-    </node>
-    <node concept="Rn5op" id="1KUmgSFvJZP" role="_iOnC">
-      <property role="TrG5h" value="metre per second" />
-    </node>
-    <node concept="Rn5op" id="1KUmgSFvJZQ" role="_iOnC">
-      <property role="TrG5h" value="centimetre" />
-    </node>
-    <node concept="Rn5op" id="1KUmgSFvJZR" role="_iOnC">
-      <property role="TrG5h" value="percent" />
-    </node>
-    <node concept="Rn5op" id="1KUmgSFvJZS" role="_iOnC">
-      <property role="TrG5h" value="decimetre" />
     </node>
   </node>
   <node concept="_iOnV" id="2UZH4PMT5or">
@@ -7488,6 +7465,27 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="_iOnV" id="7DfYVnlgZTZ">
+    <property role="TrG5h" value="Quanities" />
+    <node concept="Rn5op" id="1KUmgSFvJZN" role="_iOnC">
+      <property role="TrG5h" value="millimetre" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJZO" role="_iOnC">
+      <property role="TrG5h" value="acceleration" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJZP" role="_iOnC">
+      <property role="TrG5h" value="metre per second" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJZQ" role="_iOnC">
+      <property role="TrG5h" value="centimetre" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJZR" role="_iOnC">
+      <property role="TrG5h" value="percent" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJZS" role="_iOnC">
+      <property role="TrG5h" value="decimetre" />
     </node>
   </node>
   <node concept="1lH9Xt" id="31BxekZWy2w">

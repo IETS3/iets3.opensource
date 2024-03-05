@@ -15,6 +15,14 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -26,6 +34,10 @@
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -49,6 +61,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -59,6 +72,7 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
         <child id="1212687122400" name="typeParameter" index="1pMfVU" />
@@ -107,6 +121,28 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="5ymSrLXuyAi" role="1B3o_S" />
+    <node concept="2tJIrI" id="poYlhUNy9o" role="jymVt" />
+    <node concept="2tJIrI" id="poYlhUNy9z" role="jymVt" />
+    <node concept="3clFb_" id="poYlhUNyae" role="jymVt">
+      <property role="TrG5h" value="hashCode" />
+      <node concept="3Tm1VV" id="poYlhUNyaf" role="1B3o_S" />
+      <node concept="10Oyi0" id="poYlhUNyai" role="3clF45" />
+      <node concept="3clFbS" id="poYlhUNyaj" role="3clF47">
+        <node concept="3clFbF" id="poYlhV5vKQ" role="3cqZAp">
+          <node concept="2OqwBi" id="poYlhV5w7b" role="3clFbG">
+            <node concept="37vLTw" id="poYlhV5vKP" role="2Oq$k0">
+              <ref role="3cqZAo" node="5ymSrLXuAvw" resolve="members" />
+            </node>
+            <node concept="liA8E" id="poYlhV5x10" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.hashCode()" resolve="hashCode" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="poYlhUNyak" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5ymSrLXH25y">
     <property role="TrG5h" value="InlineRecordTypeMember" />
@@ -171,6 +207,30 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="5ymSrLXH25z" role="1B3o_S" />
+    <node concept="2tJIrI" id="poYlhUEN8n" role="jymVt" />
+    <node concept="2tJIrI" id="poYlhUEN8N" role="jymVt" />
+    <node concept="3clFb_" id="poYlhUENb$" role="jymVt">
+      <property role="TrG5h" value="hashCode" />
+      <node concept="3Tm1VV" id="poYlhUENb_" role="1B3o_S" />
+      <node concept="10Oyi0" id="poYlhUENbC" role="3clF45" />
+      <node concept="3clFbS" id="poYlhUENbD" role="3clF47">
+        <node concept="3clFbF" id="poYlhUENvz" role="3cqZAp">
+          <node concept="2YIFZM" id="poYlhUENz8" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~Objects.hash(java.lang.Object...)" resolve="hash" />
+            <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
+            <node concept="37vLTw" id="poYlhUENA5" role="37wK5m">
+              <ref role="3cqZAo" node="5ymSrLXH277" resolve="name" />
+            </node>
+            <node concept="37vLTw" id="poYlhUENL4" role="37wK5m">
+              <ref role="3cqZAo" node="5ymSrLXH27Q" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="poYlhUENbE" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
   </node>
 </model>
 
