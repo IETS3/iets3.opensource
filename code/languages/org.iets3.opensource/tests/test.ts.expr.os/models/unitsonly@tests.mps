@@ -7265,7 +7265,7 @@
         <node concept="_fku$" id="69HsIy5GLSK" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSL" role="_fkuY">
           <node concept="3EXbTZ" id="69HsIy5GLSM" role="1QScD9">
-            <ref role="3EXiBN" to="ku0a:69HsIy5FxTe" resolve="gramm" />
+            <ref role="3EXiBN" to="ku0a:69HsIy5FxTe" resolve="g" />
             <ref role="3EXiBM" to="ku0a:69HsIy5Fyjh" resolve="conversion_kg_gramm (any)" />
           </node>
           <node concept="1YnStw" id="69HsIy5GU5N" role="30czhm">
