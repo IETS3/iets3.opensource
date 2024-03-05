@@ -173,6 +173,9 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -335,10 +338,15 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -378,6 +386,12 @@
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
@@ -546,9 +560,6 @@
     <node concept="3uibUv" id="6MNhNeUh6na" role="EKbjA">
       <ref role="3uigEE" to="2ahs:6MNhNeUeM9i" resolve="IStopAndReturn" />
     </node>
-    <node concept="3uibUv" id="4TtBy4czRM6" role="EKbjA">
-      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
-    </node>
     <node concept="3Tm1VV" id="UN2ftLWgA9" role="1B3o_S" />
     <node concept="3clFb_" id="UN2ftLXFXP" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -672,7 +683,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="4TtBy4czSoi" role="jymVt" />
     <node concept="3UR2Jj" id="3iq6R$ZyJbu" role="lGtFl">
       <node concept="TZ5HA" id="3iq6R$ZyJbv" role="TZ5H$">
         <node concept="1dT_AC" id="3iq6R$ZyJbw" role="1dT_Ay">
@@ -680,6 +690,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4TtBy4czSoi" role="jymVt" />
     <node concept="3clFb_" id="4TtBy4czRUR" role="jymVt">
       <property role="TrG5h" value="compareTo" />
       <node concept="3Tm1VV" id="4TtBy4czRUS" role="1B3o_S" />
@@ -739,6 +750,9 @@
       </node>
     </node>
     <node concept="2tJIrI" id="29KNCeybCV7" role="jymVt" />
+    <node concept="3uibUv" id="4TtBy4czRM6" role="EKbjA">
+      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
+    </node>
   </node>
   <node concept="312cEu" id="12WRc298rqY">
     <property role="TrG5h" value="SpecificErrorValue" />
@@ -13316,6 +13330,29 @@
     <property role="3GE5qa" value="identConfig" />
     <property role="TrG5h" value="IdentifierConfigurator" />
     <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="12O03AaWLfx" role="jymVt" />
+    <node concept="3clFb_" id="12O03AaWLhs" role="jymVt">
+      <property role="TrG5h" value="getPriorityLevel" />
+      <node concept="10Oyi0" id="12O03AaWLht" role="3clF45" />
+      <node concept="3Tm1VV" id="12O03AaWLhu" role="1B3o_S" />
+      <node concept="3clFbS" id="12O03AaWLhv" role="3clF47">
+        <node concept="3cpWs6" id="3joh7TIXYo1" role="3cqZAp">
+          <node concept="3cmrfG" id="3joh7TIXZxF" role="3cqZAk">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="3joh7TIXZKS" role="lGtFl">
+        <node concept="TZ5HA" id="3joh7TIXZKT" role="TZ5H$">
+          <node concept="1dT_AC" id="3joh7TIXZKU" role="1dT_Ay">
+            <property role="1dT_AB" value="You have to return a greater number if your implementation should be taken into account." />
+          </node>
+        </node>
+        <node concept="x79VA" id="3joh7TIXZKV" role="3nqlJM">
+          <property role="x79VB" value="0 as default" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="3NUSEp5xIaF" role="jymVt" />
     <node concept="3clFb_" id="3NUSEp5xVog" role="jymVt">
       <property role="TrG5h" value="allowUmlautsInIdentifiers" />
@@ -13354,6 +13391,23 @@
     <property role="3GE5qa" value="identConfig" />
     <property role="TrG5h" value="DefaultIdentifierConfigurator" />
     <node concept="2tJIrI" id="3NUSEp5y2Eb" role="jymVt" />
+    <node concept="2tJIrI" id="12O03AaWL$w" role="jymVt" />
+    <node concept="3clFb_" id="12O03AaWLED" role="jymVt">
+      <property role="TrG5h" value="getPriorityLevel" />
+      <node concept="10Oyi0" id="12O03AaWLEE" role="3clF45" />
+      <node concept="3Tm1VV" id="12O03AaWLEF" role="1B3o_S" />
+      <node concept="3clFbS" id="12O03AaWLEH" role="3clF47">
+        <node concept="3clFbF" id="12O03AaWLEK" role="3cqZAp">
+          <node concept="3cmrfG" id="12O03AaWLEJ" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="12O03AaWLEI" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="12O03AaWLXx" role="jymVt" />
     <node concept="3clFb_" id="3NUSEp5y2Je" role="jymVt">
       <property role="TrG5h" value="allowUmlautsInIdentifiers" />
       <node concept="37vLTG" id="6fmG8CYU4m0" role="3clF46">
@@ -14098,6 +14152,61 @@
     <property role="3GE5qa" value="typesystem" />
     <node concept="3uibUv" id="3HxoqR_WS1J" role="luc8K">
       <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
+    </node>
+  </node>
+  <node concept="1lYeZD" id="x6l$aoyUxg">
+    <property role="TrG5h" value="DefaultIdentifierConfiguratorExtension" />
+    <property role="3GE5qa" value="identConfig" />
+    <ref role="1lYe$Y" node="3NUSEp5xVSm" resolve="identifierConfigurator" />
+    <node concept="3Tm1VV" id="x6l$aoyUxh" role="1B3o_S" />
+    <node concept="2tJIrI" id="x6l$aoyUxi" role="jymVt" />
+    <node concept="q3mfD" id="x6l$aozcTj" role="jymVt">
+      <property role="TrG5h" value="activate" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0CPy" resolve="activate" />
+      <node concept="3Tm1VV" id="x6l$aozcTl" role="1B3o_S" />
+      <node concept="3clFbS" id="x6l$aozcTn" role="3clF47">
+        <node concept="RRSsy" id="x6l$aoC4YD" role="3cqZAp">
+          <property role="RRSoG" value="h1akgim/info" />
+          <node concept="Xl_RD" id="x6l$aoC4YF" role="RRSoy">
+            <property role="Xl_RC" value="ExtensionPoint implementation DefaultIdentifierConfiguratorExtension is activated" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="x6l$aozcTq" role="3clF45" />
+    </node>
+    <node concept="q3mfD" id="x6l$aozcWg" role="jymVt">
+      <property role="TrG5h" value="deactivate" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0BDO" resolve="deactivate" />
+      <node concept="3Tm1VV" id="x6l$aozcWi" role="1B3o_S" />
+      <node concept="3clFbS" id="x6l$aozcWk" role="3clF47">
+        <node concept="RRSsy" id="x6l$aoC5nO" role="3cqZAp">
+          <property role="RRSoG" value="h1akgim/info" />
+          <node concept="Xl_RD" id="x6l$aoC5nP" role="RRSoy">
+            <property role="Xl_RC" value="ExtensionPoint implementation DefaultIdentifierConfiguratorExtension is deactivated" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="x6l$aozcWn" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="x6l$aoyUxl" role="jymVt" />
+    <node concept="q3mfD" id="x6l$aoyUxm" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
+      <node concept="3Tm1VV" id="x6l$aoyUxo" role="1B3o_S" />
+      <node concept="3clFbS" id="x6l$aoyUxq" role="3clF47">
+        <node concept="3cpWs6" id="2TlZyI4POS2" role="3cqZAp">
+          <node concept="2ShNRf" id="2TlZyI4PP1Q" role="3cqZAk">
+            <node concept="HV5vD" id="x6l$aozcRE" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="HV5vE" node="3NUSEp5y2Ea" resolve="DefaultIdentifierConfigurator" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="q3mfm" id="x6l$aoyUxr" role="3clF45">
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
+        <ref role="1QQUv3" node="x6l$aoyUxm" resolve="get" />
+      </node>
     </node>
   </node>
 </model>

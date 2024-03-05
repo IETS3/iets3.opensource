@@ -4933,7 +4933,7 @@
       <node concept="3clFbS" id="6wzrxL3ayZd" role="2VODD2">
         <node concept="3clFbF" id="jqB9UdvLtf" role="3cqZAp">
           <node concept="2YIFZM" id="jqB9UdvLTK" role="3clFbG">
-            <ref role="37wK5l" to="buwp:jqB9UdvG0w" resolve="pri" />
+            <ref role="37wK5l" to="buwp:jqB9UdvG0w" resolve="prioritizeByRef" />
             <ref role="1Pybhc" to="buwp:jqB9UdvFo_" resolve="PriorisationHelper" />
             <node concept="3lBNg1" id="jqB9UdvMIw" role="37wK5m" />
             <node concept="3lBNjA" id="jqB9UdvMLE" role="37wK5m" />
