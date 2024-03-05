@@ -2,7 +2,7 @@
 <model ref="r:a8423ffe-664c-40d0-a415-d454e8bd3b68(test.ts.expr.os.typetags@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
@@ -33,6 +33,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -174,6 +175,7 @@
   </node>
   <node concept="1lH9Xt" id="x_aN5M7h83">
     <property role="TrG5h" value="classificationOnly" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="x_aN5M7h84" role="1SKRRt">
       <node concept="_iOnU" id="7bZFIilWD7h" role="1qenE9">
         <property role="TrG5h" value="taintOnly" />
@@ -459,6 +461,7 @@
   </node>
   <node concept="1lH9Xt" id="TUBgQ0FQFZ">
     <property role="TrG5h" value="encryptedTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="TUBgQ0FQG0" role="1SKRRt">
       <node concept="_iOnU" id="7bZFIilWD7g" role="1qenE9">
         <property role="TrG5h" value="encryptedTest" />
@@ -549,6 +552,7 @@
   </node>
   <node concept="1lH9Xt" id="SRvqsMMazX">
     <property role="TrG5h" value="functionTypes" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="SRvqsMMazY" role="1SKRRt">
       <node concept="_iOnU" id="7bZFIilWD7f" role="1qenE9">
         <property role="TrG5h" value="functionTypes" />
@@ -947,6 +951,7 @@
   </node>
   <node concept="1lH9Xt" id="sflsE7kTyq">
     <property role="TrG5h" value="taintOnly" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="sflsE7kTyr" role="1SKRRt">
       <node concept="_iOnU" id="7bZFIilWD7c" role="1qenE9">
         <property role="TrG5h" value="taintOnly" />
