@@ -437,7 +437,7 @@
     <property role="3GE5qa" value="range.rel" />
     <property role="TrG5h" value="ContainsRangeRelOp" />
     <property role="34LRSv" value="contains" />
-    <property role="R4oN_" value="check that the date range contains another date range" />
+    <property role="R4oN_" value="check that the date range contains another date or date range" />
     <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBHyG$z">
