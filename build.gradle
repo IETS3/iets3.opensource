@@ -212,8 +212,13 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
             report(format: 'frames', todir: "$buildDir/junitreport")
         }
         ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
+    }
+}
 
-        // evaluate junit result and fail on error
+task failOnTestError() {
+    description 'evaluate junit result and fail on error'
+    doLast {
+        
         def junitResult = new XmlSlurper().parse(file('TESTS-TestSuites.xml'))
         def failures = junitResult.'**'.findAll { it.name() == 'failure' }
         def errors = junitResult.'**'.findAll { it.name() == 'errors' }
@@ -223,8 +228,9 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
             throw new GradleException(amount + " JUnit tests failed. Check the test report for details.")
         }
     }
-}
 
+}
+buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
