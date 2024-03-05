@@ -1988,34 +1988,18 @@
       <ref role="13i0hy" to="qlm2:76ZhK6XViJl" resolve="getDescription" />
       <node concept="3Tm1VV" id="76ZhK6XViWp" role="1B3o_S" />
       <node concept="3clFbS" id="76ZhK6XViWu" role="3clF47">
-        <node concept="3SKdUt" id="69ocqYc5rfm" role="3cqZAp">
-          <node concept="1PaTwC" id="69ocqYc5rfn" role="1aUNEU">
-            <node concept="3oM_SD" id="69ocqYc5rpw" role="1PaTwD">
-              <property role="3oM_SC" value="TODO" />
-            </node>
-            <node concept="3oM_SD" id="69ocqYc5rqm" role="1PaTwD">
-              <property role="3oM_SC" value="Use" />
-            </node>
-            <node concept="3oM_SD" id="69ocqYc5rtf" role="1PaTwD">
-              <property role="3oM_SC" value="quantity" />
-            </node>
-            <node concept="3oM_SD" id="69ocqYc5rvJ" role="1PaTwD">
-              <property role="3oM_SC" value="specification" />
-            </node>
-            <node concept="3oM_SD" id="69ocqYc5rzS" role="1PaTwD">
-              <property role="3oM_SC" value="here?" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="69ocqYc5pH5" role="3cqZAp">
-          <node concept="2OqwBi" id="69ocqYc5qT5" role="3cqZAk">
-            <node concept="2OqwBi" id="69ocqYc5pYz" role="2Oq$k0">
-              <node concept="13iPFW" id="69ocqYc5pLQ" role="2Oq$k0" />
-              <node concept="3TrEf2" id="69ocqYc5qJY" role="2OqNvi">
-                <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
+          <node concept="2OqwBi" id="6q45UTychJx" role="3cqZAk">
+            <node concept="2OqwBi" id="69ocqYc5qT5" role="2Oq$k0">
+              <node concept="2OqwBi" id="69ocqYc5pYz" role="2Oq$k0">
+                <node concept="13iPFW" id="69ocqYc5pLQ" role="2Oq$k0" />
+                <node concept="3TrEf2" id="69ocqYc5qJY" role="2OqNvi">
+                  <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
+                </node>
               </node>
+              <node concept="3JvlWi" id="6q45UTych_h" role="2OqNvi" />
             </node>
-            <node concept="2qgKlT" id="69ocqYc5raq" role="2OqNvi">
+            <node concept="2qgKlT" id="6q45UTyci5x" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
             </node>
           </node>
@@ -8465,7 +8449,7 @@
         </node>
         <node concept="TZ5HA" id="26hWC1HvNj0" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1HvNj1" role="1dT_Ay">
-            <property role="1dT_AB" value="Units with zero exponents are eliminated from the resuling unit mapping. " />
+            <property role="1dT_AB" value="Units with zero exponents are eliminated from the resulting unit mapping. " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1HvO5d" role="TZ5H$">
@@ -9743,7 +9727,7 @@
       <node concept="P$JXv" id="2RfL3oOu8TW" role="lGtFl">
         <node concept="TZ5HA" id="2RfL3oOu8TX" role="TZ5H$">
           <node concept="1dT_AC" id="2RfL3oOu8TY" role="1dT_Ay">
-            <property role="1dT_AB" value="Checks wether two unit mappings can be possibly matched / exactly matched. " />
+            <property role="1dT_AB" value="Checks whether two unit mappings can be possibly matched / exactly matched. " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1HxKOi" role="TZ5H$">
@@ -10668,7 +10652,7 @@
                       <property role="3oM_SC" value="different" />
                     </node>
                     <node concept="3oM_SD" id="6RONOaUmMF$" role="1PaTwD">
-                      <property role="3oM_SC" value="scalings" />
+                      <property role="3oM_SC" value="scaling" />
                     </node>
                     <node concept="3oM_SD" id="6RONOaUmMFC" role="1PaTwD">
                       <property role="3oM_SC" value="is" />
@@ -17450,13 +17434,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3MkNnsWZSa5" role="3cqZAp" />
-        <node concept="3SKdUt" id="3MkNnsX0gF$" role="3cqZAp">
-          <node concept="1PaTwC" id="3MkNnsX0gF_" role="1aUNEU">
-            <node concept="3oM_SD" id="3MkNnsX0gYa" role="1PaTwD">
-              <property role="3oM_SC" value="FIXME" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="3MkNnsWZSa6" role="3cqZAp">
           <node concept="2OqwBi" id="3MkNnsX0i6a" role="3cqZAk">
             <node concept="37vLTw" id="3MkNnsX0hT1" role="2Oq$k0">
