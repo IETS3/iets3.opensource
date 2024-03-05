@@ -3271,7 +3271,7 @@
     </node>
     <node concept="qq9P1" id="1c6hIxyZalq" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="hm2y:6GiZkUz7qWO" resolve="InlinedNamedTupleAccess" />
+      <ref role="qq9wM" to="hm2y:6GiZkUz7qWO" resolve="InlineNamedTupleAccess" />
       <node concept="3vetai" id="1c6hIxyZdOK" role="3vQZUl">
         <node concept="2OqwBi" id="1c6hIxyZdOY" role="3vdyny">
           <node concept="2ShNRf" id="1c6hIxyZdOZ" role="2Oq$k0">

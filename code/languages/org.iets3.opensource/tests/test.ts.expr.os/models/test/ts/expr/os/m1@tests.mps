@@ -19368,7 +19368,7 @@
                 <node concept="Ic2ui" id="78zh7PnsuaU" role="30dEsF" />
                 <node concept="3zyZNN" id="78zh7Pnsvag" role="30dEs_">
                   <node concept="1WbbFT" id="6jT4GDw0Eju" role="3zyZWv">
-                    <ref role="1WbbFS" node="5ElkanPNlNY" />
+                    <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
                   </node>
                   <node concept="1MaffS" id="78zh7Pnsvai" role="3zyZNH">
                     <property role="1MbqUG" value="1" />
@@ -19378,7 +19378,7 @@
                         <node concept="30bsCy" id="78zh7Pnsvam" role="30dEsF">
                           <node concept="30dvUo" id="78zh7Pnsvan" role="30bsDf">
                             <node concept="1afdae" id="78zh7Pnsvao" role="30dEsF">
-                              <ref role="1afue_" node="5ElkanPNlNg" />
+                              <ref role="1afue_" node="5ElkanPNlNg" resolve="t" />
                             </node>
                             <node concept="30bXRB" id="78zh7Pnsvap" role="30dEs_">
                               <property role="30bXRw" value="32" />
@@ -19400,7 +19400,7 @@
           </node>
           <node concept="3zyZNN" id="5ElkanPPgTJ" role="1ahQXP">
             <node concept="1WbbFT" id="6jT4GDw0Elc" role="3zyZWv">
-              <ref role="1WbbFS" node="5ElkanPNlNY" />
+              <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
             </node>
             <node concept="1MaffS" id="7Wa2sv4cbNN" role="3zyZNH">
               <property role="1MbqUG" value="1" />
@@ -19440,13 +19440,13 @@
                   <property role="19SUeA" value="This is a generic Fahrenheit to Celsius conversion." />
                 </node>
                 <node concept="2Jv0Bt" id="5ElkanQ5o5Y" role="19SJt6">
-                  <ref role="2Jv0Bu" node="5ElkanPNlNg" />
+                  <ref role="2Jv0Bu" node="5ElkanPNlNg" resolve="t" />
                 </node>
                 <node concept="19SUe$" id="5ElkanQ5o60" role="19SJt6">
                   <property role="19SUeA" value="represents&#10;the Fahrenheit temperature. Note the call to limit; it takes the &#10;value converted via the expression and &quot;presses&quot; it into the bounds&#10;of the" />
                 </node>
                 <node concept="2Jv0Bt" id="5ElkanQcgh4" role="19SJt6">
-                  <ref role="2Jv0Bu" node="5ElkanPNlNY" />
+                  <ref role="2Jv0Bu" node="5ElkanPNlNY" resolve="tempInC" />
                 </node>
                 <node concept="19SUe$" id="5ElkanQcgh6" role="19SJt6">
                   <property role="19SUeA" value="type. Note that there is no runtime error if the &#10;value would be outside the bounds, so this function has to be reviewed&#10;carefully." />
@@ -19465,7 +19465,7 @@
             </node>
           </node>
           <node concept="1WbbFT" id="5ElkanPNoGi" role="2zM23F">
-            <ref role="1WbbFS" node="5ElkanPNlMX" />
+            <ref role="1WbbFS" node="5ElkanPNlMX" resolve="tempInF" />
           </node>
         </node>
         <node concept="_ixoA" id="6jT4GDw0EmU" role="_iOnC" />

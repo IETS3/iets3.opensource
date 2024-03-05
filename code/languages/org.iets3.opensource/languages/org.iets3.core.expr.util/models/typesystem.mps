@@ -1680,12 +1680,12 @@
               <node concept="3cpWsn" id="8XWEte6_8s" role="3cpWs9">
                 <property role="TrG5h" value="tt" />
                 <node concept="3Tqbb2" id="8XWEte6_8o" role="1tU5fm">
-                  <ref role="ehGHo" to="hm2y:5r47dOfJ9kS" resolve="TupleType2" />
+                  <ref role="ehGHo" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
                 </node>
                 <node concept="2ShNRf" id="8XWEte6_8S" role="33vP2m">
                   <node concept="3zrR0B" id="8XWEte6_8I" role="2ShVmc">
                     <node concept="3Tqbb2" id="8XWEte6_8J" role="3zrR0E">
-                      <ref role="ehGHo" to="hm2y:5r47dOfJ9kS" resolve="TupleType2" />
+                      <ref role="ehGHo" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
                     </node>
                   </node>
                 </node>
