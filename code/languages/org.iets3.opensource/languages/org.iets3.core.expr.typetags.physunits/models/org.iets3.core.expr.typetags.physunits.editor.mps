@@ -2190,7 +2190,7 @@
     <node concept="3EZMnI" id="mfJ1vOPOcv" role="2wV5jI">
       <node concept="2iRfu4" id="mfJ1vOPOcw" role="2iSdaV" />
       <node concept="3F1sOY" id="7athFveCzEb" role="3EZMnx">
-        <ref role="1NtTu8" to="i3ya:7athFveyQy5" resolve="spec" />
+        <ref role="1NtTu8" to="i3ya:7athFveyQy5" resolve="specification" />
       </node>
       <node concept="VPM3Z" id="mfJ1vOPOf1" role="3F10Kt" />
     </node>
@@ -2651,7 +2651,7 @@
               <node concept="2pJPED" id="73cP8Dpot$N" role="2pJPEn">
                 <ref role="2pJxaS" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
                 <node concept="2pIpSj" id="73cP8DpotMo" role="2pJxcM">
-                  <ref role="2pIpSl" to="i3ya:7athFveyQy5" resolve="spec" />
+                  <ref role="2pIpSl" to="i3ya:7athFveyQy5" resolve="specification" />
                   <node concept="36biLy" id="73cP8DpotPm" role="28nt2d">
                     <node concept="3N4pyC" id="73cP8DpotVe" role="36biLW" />
                   </node>

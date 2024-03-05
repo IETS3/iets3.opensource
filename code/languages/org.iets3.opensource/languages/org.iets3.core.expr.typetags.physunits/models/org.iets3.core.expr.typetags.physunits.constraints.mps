@@ -535,7 +535,7 @@
             </node>
             <node concept="3cpWs6" id="5ksbktFEKuy" role="3cqZAp">
               <node concept="2YIFZM" id="5ksbktFEKYV" role="3cqZAk">
-                <ref role="37wK5l" to="rppw:5pSqQr$Qyek" resolve="hasUnitSpecification" />
+                <ref role="37wK5l" to="rppw:5pSqQr$Qyek" resolve="hasSpecification" />
                 <ref role="1Pybhc" to="rppw:4jkbLB5RJZL" resolve="UnitConversionUtil" />
                 <node concept="37vLTw" id="5ksbktFEL6Y" role="37wK5m">
                   <ref role="3cqZAo" node="5ksbktFExps" resolve="parentType" />

@@ -502,9 +502,6 @@
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
-      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
-        <reference id="3562215692195600259" name="link" index="13MTZf" />
-      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -563,6 +560,9 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="3133179214568824809" name="jetbrains.mps.lang.text.structure.NodeWrapperElement" flags="nn" index="tu5oc">
+        <child id="3133179214568824810" name="node" index="tu5of" />
+      </concept>
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
@@ -1461,6 +1461,24 @@
   <node concept="13h7C7" id="5Q6EZP5JrJH">
     <property role="3GE5qa" value="definition.unit" />
     <ref role="13h7C2" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
+    <node concept="13i0hz" id="6q45UTyu6RY" role="13h7CS">
+      <property role="TrG5h" value="getReferencedNode" />
+      <ref role="13i0hy" node="6q45UTyu4YY" resolve="getReferencedNode" />
+      <node concept="3Tm1VV" id="6q45UTyu6RZ" role="1B3o_S" />
+      <node concept="3clFbS" id="6q45UTyu6S2" role="3clF47">
+        <node concept="3clFbF" id="6q45UTyu7rp" role="3cqZAp">
+          <node concept="2OqwBi" id="6q45UTyu7EP" role="3clFbG">
+            <node concept="13iPFW" id="6q45UTyu7ro" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6q45UTyu8ab" role="2OqNvi">
+              <ref role="3Tt5mk" to="i3ya:7eOyx9r3qFW" resolve="unit" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6q45UTyu6S3" role="3clF45">
+        <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      </node>
+    </node>
     <node concept="13i0hz" id="lqDNwvmkV$" role="13h7CS">
       <property role="TrG5h" value="getPresentation" />
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -1551,27 +1569,6 @@
       <node concept="2ZThk1" id="2hbaSyAVSP0" role="3clF45">
         <ref role="2ZWj4r" to="i3ya:2hbaSyABMZL" resolve="UnitScalingType" />
       </node>
-    </node>
-    <node concept="13i0hz" id="15KrVXSFh9s" role="13h7CS">
-      <property role="TrG5h" value="getName" />
-      <ref role="13i0hy" node="45a4DYZZqLE" resolve="getName" />
-      <node concept="3Tm1VV" id="15KrVXSFh9t" role="1B3o_S" />
-      <node concept="3clFbS" id="15KrVXSFh9w" role="3clF47">
-        <node concept="3clFbF" id="15KrVXSFhw8" role="3cqZAp">
-          <node concept="2OqwBi" id="15KrVXSFixa" role="3clFbG">
-            <node concept="2OqwBi" id="15KrVXSFhIU" role="2Oq$k0">
-              <node concept="13iPFW" id="15KrVXSFhw5" role="2Oq$k0" />
-              <node concept="3TrEf2" id="15KrVXSFifd" role="2OqNvi">
-                <ref role="3Tt5mk" to="i3ya:7eOyx9r3qFW" resolve="unit" />
-              </node>
-            </node>
-            <node concept="3TrcHB" id="15KrVXSFj39" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="15KrVXSFh9x" role="3clF45" />
     </node>
     <node concept="13i0hz" id="7Mca05nq1CD" role="13h7CS">
       <property role="TrG5h" value="getReducedExpr" />
@@ -1921,6 +1918,24 @@
   <node concept="13h7C7" id="6Mx2Tmonp$n">
     <property role="3GE5qa" value="definition.unit" />
     <ref role="13h7C2" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+    <node concept="13i0hz" id="6q45UTytGHd" role="13h7CS">
+      <property role="TrG5h" value="getExpression" />
+      <ref role="13i0hy" node="6q45UTytEvW" resolve="getExpression" />
+      <node concept="3Tm1VV" id="6q45UTytGHe" role="1B3o_S" />
+      <node concept="3clFbS" id="6q45UTytGHh" role="3clF47">
+        <node concept="3clFbF" id="6q45UTytMvW" role="3cqZAp">
+          <node concept="2OqwBi" id="6q45UTytMKB" role="3clFbG">
+            <node concept="13iPFW" id="6q45UTytMvV" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6q45UTytNgy" role="2OqNvi">
+              <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6q45UTytGHi" role="3clF45">
+        <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
+      </node>
+    </node>
     <node concept="13i0hz" id="69ocqYc47$l" role="13h7CS">
       <property role="TrG5h" value="getPresentation" />
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -2193,12 +2208,12 @@
           <node concept="3cpWsn" id="69ocqYc3$bh" role="3cpWs9">
             <property role="TrG5h" value="nodes" />
             <node concept="2I9FWS" id="69ocqYc3$8X" role="1tU5fm">
-              <ref role="2I9WkF" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
+              <ref role="2I9WkF" to="i3ya:6q45UTyu4OU" resolve="IReference" />
             </node>
             <node concept="2ShNRf" id="69ocqYc3$bi" role="33vP2m">
               <node concept="2T8Vx0" id="69ocqYc3$bj" role="2ShVmc">
                 <node concept="2I9FWS" id="69ocqYc3$bk" role="2T96Bj">
-                  <ref role="2I9WkF" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
+                  <ref role="2I9WkF" to="i3ya:6q45UTyu4OU" resolve="IReference" />
                 </node>
               </node>
             </node>
@@ -2220,7 +2235,7 @@
                 <node concept="2Rf3mk" id="69ocqYc3RAA" role="2OqNvi">
                   <node concept="1xMEDy" id="69ocqYc3RAC" role="1xVPHs">
                     <node concept="chp4Y" id="69ocqYc3SBZ" role="ri$Ld">
-                      <ref role="cht4Q" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
+                      <ref role="cht4Q" to="i3ya:6q45UTyu4OU" resolve="IReference" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="69ocqYc3WWf" role="1xVPHs" />
@@ -2237,7 +2252,7 @@
       </node>
       <node concept="_YKpA" id="1KUmgSF_8_L" role="3clF45">
         <node concept="3Tqbb2" id="1KUmgSF_8_M" role="_ZDj9">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
+          <ref role="ehGHo" to="i3ya:6q45UTyu4OU" resolve="IReference" />
         </node>
       </node>
     </node>
@@ -2255,19 +2270,36 @@
             <node concept="3cpWs6" id="3Up1DZuQD0k" role="3cqZAp">
               <node concept="2OqwBi" id="1yuOfVwyi98" role="3cqZAk">
                 <node concept="2OqwBi" id="1yuOfVwydg4" role="2Oq$k0">
-                  <node concept="2OqwBi" id="5noD5ljFjuS" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6q45UTyvsnO" role="2Oq$k0">
                     <node concept="2OqwBi" id="1yuOfVwyamm" role="2Oq$k0">
                       <node concept="13iPFW" id="5noD5ljE_lD" role="2Oq$k0" />
                       <node concept="2qgKlT" id="5noD5ljFhzH" role="2OqNvi">
                         <ref role="37wK5l" node="1KUmgSF_6Sp" resolve="components" />
                       </node>
                     </node>
-                    <node concept="13MTOL" id="5noD5ljFmXg" role="2OqNvi">
-                      <ref role="13MTZf" to="i3ya:7eOyx9r3qFW" resolve="unit" />
+                    <node concept="3$u5V9" id="6q45UTyvtcX" role="2OqNvi">
+                      <node concept="1bVj0M" id="6q45UTyvtcZ" role="23t8la">
+                        <node concept="3clFbS" id="6q45UTyvtd0" role="1bW5cS">
+                          <node concept="3clFbF" id="6q45UTyvui_" role="3cqZAp">
+                            <node concept="2OqwBi" id="6q45UTyvu$m" role="3clFbG">
+                              <node concept="37vLTw" id="6q45UTyvui$" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6q45UTyvtd1" resolve="it" />
+                              </node>
+                              <node concept="2qgKlT" id="6q45UTyvvWq" role="2OqNvi">
+                                <ref role="37wK5l" node="6q45UTyu4YY" resolve="getReferencedNode" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Rh6nW" id="6q45UTyvtd1" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="6q45UTyvtd2" role="1tU5fm" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                   <node concept="2NgGto" id="30JUdzLCGDF" role="2OqNvi">
-                    <node concept="2OqwBi" id="30JUdzLCK4x" role="576Qk">
+                    <node concept="2OqwBi" id="6q45UTyvxxB" role="576Qk">
                       <node concept="2OqwBi" id="30JUdzLCI9B" role="2Oq$k0">
                         <node concept="Jnkvi" id="5noD5ljEAep" role="2Oq$k0">
                           <ref role="1M0zk5" node="5noD5ljEze0" resolve="otherUnitSpecification" />
@@ -2276,8 +2308,25 @@
                           <ref role="37wK5l" node="1KUmgSF_6Sp" resolve="components" />
                         </node>
                       </node>
-                      <node concept="13MTOL" id="30JUdzLCKD7" role="2OqNvi">
-                        <ref role="13MTZf" to="i3ya:7eOyx9r3qFW" resolve="unit" />
+                      <node concept="3$u5V9" id="6q45UTyvy2Y" role="2OqNvi">
+                        <node concept="1bVj0M" id="6q45UTyvy30" role="23t8la">
+                          <node concept="3clFbS" id="6q45UTyvy31" role="1bW5cS">
+                            <node concept="3clFbF" id="6q45UTyvy4r" role="3cqZAp">
+                              <node concept="2OqwBi" id="6q45UTyvyr1" role="3clFbG">
+                                <node concept="37vLTw" id="6q45UTyvy4q" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6q45UTyvy32" resolve="it" />
+                                </node>
+                                <node concept="2qgKlT" id="6q45UTyvyI6" role="2OqNvi">
+                                  <ref role="37wK5l" node="6q45UTyu4YY" resolve="getReferencedNode" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Rh6nW" id="6q45UTyvy32" role="1bW2Oz">
+                            <property role="TrG5h" value="it" />
+                            <node concept="2jxLKc" id="6q45UTyvy33" role="1tU5fm" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2364,22 +2413,27 @@
             <property role="TrG5h" value="leftSpec" />
             <node concept="3rvAFt" id="5XaocLWF06E" role="1tU5fm">
               <node concept="3Tqbb2" id="5XaocLWF06F" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
               <node concept="3uibUv" id="5XaocLWF06G" role="3rvSg0">
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
             </node>
             <node concept="2YIFZM" id="6n8rWbyKuiE" role="33vP2m">
-              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getUnitMap_UnitSpecification" />
+              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getMap_Group" />
               <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
-              <node concept="1PxgMI" id="5XaocLWF06I" role="37wK5m">
-                <property role="1BlNFB" value="true" />
-                <node concept="37vLTw" id="5XaocLWF06J" role="1m5AlR">
-                  <ref role="3cqZAo" node="5XaocLWF07l" resolve="left" />
+              <node concept="2OqwBi" id="6q45UTyyNSY" role="37wK5m">
+                <node concept="1PxgMI" id="5XaocLWF06I" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="37vLTw" id="5XaocLWF06J" role="1m5AlR">
+                    <ref role="3cqZAo" node="5XaocLWF07l" resolve="left" />
+                  </node>
+                  <node concept="chp4Y" id="72_xmu9hWoI" role="3oSUPX">
+                    <ref role="cht4Q" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
+                  </node>
                 </node>
-                <node concept="chp4Y" id="72_xmu9hWoI" role="3oSUPX">
-                  <ref role="cht4Q" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+                <node concept="2qgKlT" id="6q45UTyyPm8" role="2OqNvi">
+                  <ref role="37wK5l" node="6q45UTytEvW" resolve="getExpression" />
                 </node>
               </node>
             </node>
@@ -2390,22 +2444,27 @@
             <property role="TrG5h" value="rightSpec" />
             <node concept="3rvAFt" id="5XaocLWF06M" role="1tU5fm">
               <node concept="3Tqbb2" id="5XaocLWF06N" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
               <node concept="3uibUv" id="5XaocLWF06O" role="3rvSg0">
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
             </node>
             <node concept="2YIFZM" id="6n8rWbyKuiC" role="33vP2m">
-              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getUnitMap_UnitSpecification" />
+              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getMap_Group" />
               <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
-              <node concept="1PxgMI" id="5XaocLWF06Q" role="37wK5m">
-                <property role="1BlNFB" value="true" />
-                <node concept="37vLTw" id="5XaocLWF06R" role="1m5AlR">
-                  <ref role="3cqZAo" node="5XaocLWF07n" resolve="right" />
+              <node concept="2OqwBi" id="6q45UTyyQ8g" role="37wK5m">
+                <node concept="1PxgMI" id="5XaocLWF06Q" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="37vLTw" id="5XaocLWF06R" role="1m5AlR">
+                    <ref role="3cqZAo" node="5XaocLWF07n" resolve="right" />
+                  </node>
+                  <node concept="chp4Y" id="72_xmu9hWoO" role="3oSUPX">
+                    <ref role="cht4Q" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
+                  </node>
                 </node>
-                <node concept="chp4Y" id="72_xmu9hWoO" role="3oSUPX">
-                  <ref role="cht4Q" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+                <node concept="2qgKlT" id="6q45UTyyQXO" role="2OqNvi">
+                  <ref role="37wK5l" node="6q45UTytEvW" resolve="getExpression" />
                 </node>
               </node>
             </node>
@@ -2421,12 +2480,12 @@
                   <node concept="10P_77" id="5sKgdctUdab" role="1Lm7xW" />
                   <node concept="A3Dl8" id="5sKgdctUdac" role="1Lm7xW">
                     <node concept="3Tqbb2" id="5sKgdctUdad" role="A3Ik2">
-                      <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                      <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                     </node>
                   </node>
                 </node>
                 <node concept="2YIFZM" id="5sKgdctUdzj" role="33vP2m">
-                  <ref role="37wK5l" node="4jkbLB5XZz4" resolve="matchingUnits" />
+                  <ref role="37wK5l" node="4jkbLB5XZz4" resolve="matchingMappings" />
                   <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
                   <node concept="37vLTw" id="5sKgdctUdzk" role="37wK5m">
                     <ref role="3cqZAo" node="5XaocLWF06D" resolve="leftSpec" />
@@ -2659,7 +2718,7 @@
                     <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                   </node>
                   <node concept="3Tqbb2" id="5XaocLWHhoe" role="3rvQeY">
-                    <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                    <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="6n8rWbyKuiW" role="33vP2m">
@@ -2706,7 +2765,7 @@
                     <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                   </node>
                   <node concept="3Tqbb2" id="5XaocLWHne8" role="3rvQeY">
-                    <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                    <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="6n8rWbyKuiZ" role="33vP2m">
@@ -2875,22 +2934,27 @@
             <property role="TrG5h" value="subSpec" />
             <node concept="3rvAFt" id="5XaocLWPnkS" role="1tU5fm">
               <node concept="3Tqbb2" id="5XaocLWPnkT" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
               <node concept="3uibUv" id="5XaocLWPnkU" role="3rvSg0">
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
             </node>
             <node concept="2YIFZM" id="6n8rWbyKui$" role="33vP2m">
-              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getUnitMap_UnitSpecification" />
+              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getMap_Group" />
               <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
-              <node concept="1PxgMI" id="5XaocLWPnkW" role="37wK5m">
-                <property role="1BlNFB" value="true" />
-                <node concept="37vLTw" id="5XaocLWPnkX" role="1m5AlR">
-                  <ref role="3cqZAo" node="5XaocLWPnlc" resolve="sub" />
+              <node concept="2OqwBi" id="6q45UTyzaIQ" role="37wK5m">
+                <node concept="1PxgMI" id="5XaocLWPnkW" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="37vLTw" id="5XaocLWPnkX" role="1m5AlR">
+                    <ref role="3cqZAo" node="5XaocLWPnlc" resolve="sub" />
+                  </node>
+                  <node concept="chp4Y" id="72_xmu9hWoJ" role="3oSUPX">
+                    <ref role="cht4Q" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
+                  </node>
                 </node>
-                <node concept="chp4Y" id="72_xmu9hWoJ" role="3oSUPX">
-                  <ref role="cht4Q" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+                <node concept="2qgKlT" id="6q45UTyzb3S" role="2OqNvi">
+                  <ref role="37wK5l" node="6q45UTytEvW" resolve="getExpression" />
                 </node>
               </node>
             </node>
@@ -2901,22 +2965,27 @@
             <property role="TrG5h" value="supSpec" />
             <node concept="3rvAFt" id="5XaocLWPnl0" role="1tU5fm">
               <node concept="3Tqbb2" id="5XaocLWPnl1" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
               <node concept="3uibUv" id="5XaocLWPnl2" role="3rvSg0">
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
             </node>
             <node concept="2YIFZM" id="6n8rWbyKuiB" role="33vP2m">
-              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getUnitMap_UnitSpecification" />
+              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getMap_Group" />
               <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
-              <node concept="1PxgMI" id="5XaocLWPnl4" role="37wK5m">
-                <property role="1BlNFB" value="true" />
-                <node concept="37vLTw" id="5XaocLWPnl5" role="1m5AlR">
-                  <ref role="3cqZAo" node="5XaocLWPnle" resolve="sup" />
+              <node concept="2OqwBi" id="6q45UTyzbra" role="37wK5m">
+                <node concept="1PxgMI" id="5XaocLWPnl4" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="37vLTw" id="5XaocLWPnl5" role="1m5AlR">
+                    <ref role="3cqZAo" node="5XaocLWPnle" resolve="sup" />
+                  </node>
+                  <node concept="chp4Y" id="72_xmu9hWoL" role="3oSUPX">
+                    <ref role="cht4Q" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
+                  </node>
                 </node>
-                <node concept="chp4Y" id="72_xmu9hWoL" role="3oSUPX">
-                  <ref role="cht4Q" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+                <node concept="2qgKlT" id="6q45UTyzbKn" role="2OqNvi">
+                  <ref role="37wK5l" node="6q45UTytEvW" resolve="getExpression" />
                 </node>
               </node>
             </node>
@@ -2928,7 +2997,7 @@
               <property role="3cmrfH" value="0" />
             </node>
             <node concept="2YIFZM" id="6n8rWbyKuj8" role="1LFl5Q">
-              <ref role="37wK5l" node="4jkbLB5XZz4" resolve="matchingUnits" />
+              <ref role="37wK5l" node="4jkbLB5XZz4" resolve="matchingMappings" />
               <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
               <node concept="37vLTw" id="5XaocLWPnl8" role="37wK5m">
                 <ref role="3cqZAo" node="5XaocLWPnkR" resolve="subSpec" />
@@ -6248,7 +6317,7 @@
     <property role="TrG5h" value="UnitConversionUtil" />
     <node concept="2tJIrI" id="AeX2Dk$nO2" role="jymVt" />
     <node concept="2YIFZL" id="5pSqQr$AdB$" role="jymVt">
-      <property role="TrG5h" value="getUnitSpecification" />
+      <property role="TrG5h" value="getSpecification" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -6313,7 +6382,7 @@
             </node>
             <node concept="3cpWs8" id="5pSqQr$AkUr" role="3cqZAp">
               <node concept="3cpWsn" id="5pSqQr$AkUs" role="3cpWs9">
-                <property role="TrG5h" value="tag" />
+                <property role="TrG5h" value="unitTag" />
                 <node concept="3Tqbb2" id="5pSqQr$AkU6" role="1tU5fm">
                   <ref role="ehGHo" to="w1hl:4HxogODR$_x" resolve="ITag" />
                 </node>
@@ -6330,17 +6399,59 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="5pSqQr$An5i" role="3cqZAp">
-              <node concept="1PxgMI" id="5pSqQr$AnN6" role="3cqZAk">
-                <property role="1BlNFB" value="true" />
-                <node concept="37vLTw" id="5pSqQr$AngA" role="1m5AlR">
-                  <ref role="3cqZAo" node="5pSqQr$AkUs" resolve="tag" />
+            <node concept="3clFbJ" id="6q45UTyrPQE" role="3cqZAp">
+              <node concept="3clFbS" id="6q45UTyrPQG" role="3clFbx">
+                <node concept="3cpWs6" id="5pSqQr$An5i" role="3cqZAp">
+                  <node concept="1PxgMI" id="5pSqQr$AnN6" role="3cqZAk">
+                    <property role="1BlNFB" value="true" />
+                    <node concept="37vLTw" id="5pSqQr$AngA" role="1m5AlR">
+                      <ref role="3cqZAo" node="5pSqQr$AkUs" resolve="tag" />
+                    </node>
+                    <node concept="chp4Y" id="5N$1UHOsTrG" role="3oSUPX">
+                      <ref role="cht4Q" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="chp4Y" id="5N$1UHOsTrG" role="3oSUPX">
-                  <ref role="cht4Q" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+              </node>
+              <node concept="2OqwBi" id="6q45UTyrZJt" role="3clFbw">
+                <node concept="37vLTw" id="6q45UTyrUKO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5pSqQr$AkUs" resolve="unitTag" />
+                </node>
+                <node concept="3x8VRR" id="6q45UTys4GP" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="6q45UTysjB5" role="3cqZAp" />
+            <node concept="3cpWs8" id="6q45UTyse_7" role="3cqZAp">
+              <node concept="3cpWsn" id="6q45UTyse_8" role="3cpWs9">
+                <property role="TrG5h" value="quantityTag" />
+                <node concept="3Tqbb2" id="6q45UTyse_9" role="1tU5fm">
+                  <ref role="ehGHo" to="w1hl:4HxogODR$_x" resolve="ITag" />
+                </node>
+                <node concept="2OqwBi" id="6q45UTyse_a" role="33vP2m">
+                  <node concept="37vLTw" id="6q45UTyse_b" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5pSqQr$AivR" resolve="tagMap" />
+                  </node>
+                  <node concept="liA8E" id="6q45UTyse_c" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
+                    <node concept="35c_gC" id="6q45UTyse_d" role="37wK5m">
+                      <ref role="35c_gD" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
+            <node concept="3cpWs6" id="6q45UTyse_g" role="3cqZAp">
+              <node concept="1PxgMI" id="6q45UTyse_h" role="3cqZAk">
+                <property role="1BlNFB" value="true" />
+                <node concept="37vLTw" id="6q45UTyse_i" role="1m5AlR">
+                  <ref role="3cqZAo" node="6q45UTyse_8" resolve="quantityTag" />
+                </node>
+                <node concept="chp4Y" id="6q45UTyse_j" role="3oSUPX">
+                  <ref role="cht4Q" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6q45UTyse$$" role="3cqZAp" />
           </node>
           <node concept="9aQIb" id="5pSqQr$AfIU" role="9aQIa">
             <node concept="3clFbS" id="5pSqQr$AfIV" role="9aQI4">
@@ -6353,7 +6464,7 @@
       </node>
       <node concept="3Tm1VV" id="5pSqQr$Acp6" role="1B3o_S" />
       <node concept="3Tqbb2" id="5pSqQr$Adtr" role="3clF45">
-        <ref role="ehGHo" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+        <ref role="ehGHo" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
       </node>
       <node concept="37vLTG" id="5pSqQr$AeAn" role="3clF46">
         <property role="TrG5h" value="type" />
@@ -6362,7 +6473,7 @@
     </node>
     <node concept="2tJIrI" id="5pSqQr$Qvts" role="jymVt" />
     <node concept="2YIFZL" id="5pSqQr$Qyek" role="jymVt">
-      <property role="TrG5h" value="hasUnitSpecification" />
+      <property role="TrG5h" value="hasSpecification" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -6397,7 +6508,7 @@
             <property role="TrG5h" value="components" />
             <node concept="_YKpA" id="1KUmgSF_qqV" role="1tU5fm">
               <node concept="3Tqbb2" id="1KUmgSF_qqY" role="_ZDj9">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
+                <ref role="ehGHo" to="i3ya:6q45UTyu4OU" resolve="IReference" />
               </node>
             </node>
             <node concept="2OqwBi" id="1KUmgSF_qxt" role="33vP2m">
@@ -6676,7 +6787,7 @@
               <node concept="3cpWsn" id="5pSqQr$Apam" role="3cpWs9">
                 <property role="TrG5h" value="specification" />
                 <node concept="3Tqbb2" id="5pSqQr$Apaj" role="1tU5fm">
-                  <ref role="ehGHo" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+                  <ref role="ehGHo" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
                 </node>
                 <node concept="1rXfSq" id="5pSqQr$Apan" role="33vP2m">
                   <ref role="37wK5l" node="5pSqQr$AdB$" resolve="getUnitSpecification" />
@@ -6691,16 +6802,21 @@
                 <property role="TrG5h" value="spec" />
                 <node concept="3rvAFt" id="26hWC1Idjy$" role="1tU5fm">
                   <node concept="3Tqbb2" id="26hWC1IdjyD" role="3rvQeY">
-                    <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                    <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                   </node>
                   <node concept="3uibUv" id="6Lx6lqA7VX" role="3rvSg0">
                     <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                   </node>
                 </node>
                 <node concept="1rXfSq" id="26hWC1IdjyH" role="33vP2m">
-                  <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getUnitMap_UnitSpecification" />
-                  <node concept="37vLTw" id="5pSqQr$Aq2b" role="37wK5m">
-                    <ref role="3cqZAo" node="5pSqQr$Apam" resolve="specification" />
+                  <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getMap_Group" />
+                  <node concept="2OqwBi" id="6q45UTywVB8" role="37wK5m">
+                    <node concept="37vLTw" id="5pSqQr$Aq2b" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5pSqQr$Apam" resolve="specification" />
+                    </node>
+                    <node concept="2qgKlT" id="6q45UTyx0gH" role="2OqNvi">
+                      <ref role="37wK5l" node="6q45UTytEvW" resolve="getExpression" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -6760,7 +6876,7 @@
     </node>
     <node concept="2tJIrI" id="26hWC1IdcMX" role="jymVt" />
     <node concept="2YIFZL" id="26hWC1I8AOx" role="jymVt">
-      <property role="TrG5h" value="getUnitMap_Type" />
+      <property role="TrG5h" value="getMap_Type" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="26hWC1I8AO$" role="3clF47">
@@ -6770,7 +6886,7 @@
               <node concept="3cpWsn" id="5pSqQr$AqjR" role="3cpWs9">
                 <property role="TrG5h" value="specification" />
                 <node concept="3Tqbb2" id="5pSqQr$AqjS" role="1tU5fm">
-                  <ref role="ehGHo" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+                  <ref role="ehGHo" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
                 </node>
                 <node concept="1rXfSq" id="5pSqQr$AqjT" role="33vP2m">
                   <ref role="37wK5l" node="5pSqQr$AdB$" resolve="getUnitSpecification" />
@@ -6782,9 +6898,14 @@
             </node>
             <node concept="3cpWs6" id="26hWC1I8Dep" role="3cqZAp">
               <node concept="1rXfSq" id="26hWC1I8Dl7" role="3cqZAk">
-                <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getUnitMap_UnitSpecification" />
-                <node concept="37vLTw" id="5pSqQr$ArfE" role="37wK5m">
-                  <ref role="3cqZAo" node="5pSqQr$AqjR" resolve="specification" />
+                <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getMap_Group" />
+                <node concept="2OqwBi" id="6q45UTyxnyq" role="37wK5m">
+                  <node concept="37vLTw" id="5pSqQr$ArfE" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5pSqQr$AqjR" resolve="specification" />
+                  </node>
+                  <node concept="2qgKlT" id="6q45UTyxnY6" role="2OqNvi">
+                    <ref role="37wK5l" node="6q45UTytEvW" resolve="getExpression" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -6806,7 +6927,7 @@
                   <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                   <ref role="37wK5l" to="33ny:~Collections.emptyMap()" resolve="emptyMap" />
                   <node concept="3Tqbb2" id="6Lx6lqBG2V" role="3PaCim">
-                    <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                    <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                   </node>
                   <node concept="3uibUv" id="6Lx6lqBGEA" role="3PaCim">
                     <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -6820,7 +6941,7 @@
       <node concept="3Tm1VV" id="26hWC1I8_0g" role="1B3o_S" />
       <node concept="3rvAFt" id="26hWC1I8AGx" role="3clF45">
         <node concept="3Tqbb2" id="26hWC1I8AIt" role="3rvQeY">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
         <node concept="3uibUv" id="6Lx6lqA8fF" role="3rvSg0">
           <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -6842,7 +6963,7 @@
         </node>
         <node concept="TZ5HA" id="5dSoB2LPH0c" role="TZ5H$">
           <node concept="1dT_AC" id="5dSoB2LPH0d" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the unit mapping for the given type. " />
+            <property role="1dT_AB" value="Returns the mapping for the given type. " />
           </node>
         </node>
         <node concept="TZ5HA" id="5dSoB2LPH8Q" role="TZ5H$">
@@ -6887,7 +7008,7 @@
     </node>
     <node concept="2tJIrI" id="1GIWTDBlUjf" role="jymVt" />
     <node concept="2YIFZL" id="1GIWTDBlWlh" role="jymVt">
-      <property role="TrG5h" value="getUnitMap_UnitSpecification" />
+      <property role="TrG5h" value="getMap_Group" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="1GIWTDBlWlk" role="3clF47">
@@ -6899,7 +7020,7 @@
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
               <node concept="3Tqbb2" id="lqDNwvrY66" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
             </node>
             <node concept="2ShNRf" id="4jkbLB5XHt6" role="33vP2m">
@@ -6908,7 +7029,7 @@
                   <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                 </node>
                 <node concept="3Tqbb2" id="lqDNwvrYSx" role="3rHrn6">
-                  <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                  <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                 </node>
               </node>
             </node>
@@ -6926,48 +7047,32 @@
             <node concept="2qgKlT" id="7b$SURZ4xXs" role="2OqNvi">
               <ref role="37wK5l" to="hwgx:59HbAIOYtvQ" resolve="isInvolvedInCycle" />
             </node>
-            <node concept="1PxgMI" id="7b$SURZ4omX" role="2Oq$k0">
-              <property role="1BlNFB" value="true" />
-              <node concept="chp4Y" id="7b$SURZ4rk8" role="3oSUPX">
-                <ref role="cht4Q" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
+            <node concept="2OqwBi" id="6q45UTyh4_r" role="2Oq$k0">
+              <node concept="37vLTw" id="7b$SURZ4f9P" role="2Oq$k0">
+                <ref role="3cqZAo" node="1GIWTDBlX2u" resolve="group" />
               </node>
-              <node concept="2OqwBi" id="7b$SURZ4ihT" role="1m5AlR">
-                <node concept="37vLTw" id="7b$SURZ4f9P" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1GIWTDBlX2u" resolve="specification" />
+              <node concept="2Xjw5R" id="6q45UTyh57m" role="2OqNvi">
+                <node concept="1xMEDy" id="6q45UTyh57o" role="1xVPHs">
+                  <node concept="chp4Y" id="6q45UTyh59q" role="ri$Ld">
+                    <ref role="cht4Q" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+                  </node>
                 </node>
-                <node concept="1mfA1w" id="7b$SURZ4lpQ" role="2OqNvi" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="28ZCOKU5dU7" role="3cqZAp" />
-        <node concept="3cpWs8" id="3i2zDNEOldl" role="3cqZAp">
-          <node concept="3cpWsn" id="3i2zDNEOldm" role="3cpWs9">
-            <property role="TrG5h" value="expr" />
-            <node concept="3Tqbb2" id="3i2zDNEOjzo" role="1tU5fm">
-              <ref role="ehGHo" to="i3ya:7athFveEYHG" resolve="UnitExpression" />
-            </node>
-            <node concept="2OqwBi" id="3i2zDNEOldn" role="33vP2m">
-              <node concept="37vLTw" id="3i2zDNEOldo" role="2Oq$k0">
-                <ref role="3cqZAo" node="1GIWTDBlX2u" resolve="specification" />
-              </node>
-              <node concept="3TrEf2" id="3i2zDNEOldp" role="2OqNvi">
-                <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3i2zDNEKq9A" role="3cqZAp">
           <node concept="37vLTI" id="3i2zDNEKuSI" role="3clFbG">
             <node concept="1rXfSq" id="3i2zDNEKzoR" role="37vLTx">
-              <ref role="37wK5l" node="4jkbLB5WkSl" resolve="getUnitMap_UnitReference" />
+              <ref role="37wK5l" node="4jkbLB5WkSl" resolve="getMap_Group" />
               <node concept="37vLTw" id="3i2zDNEOldr" role="37wK5m">
-                <ref role="3cqZAo" node="3i2zDNEOldm" resolve="expr" />
+                <ref role="3cqZAo" node="1GIWTDBlX2u" resolve="group" />
               </node>
               <node concept="1rXfSq" id="3i2zDNEO2Ae" role="37wK5m">
                 <ref role="37wK5l" node="4jkbLB68OYa" resolve="getExponent" />
                 <node concept="37vLTw" id="3i2zDNEOldq" role="37wK5m">
-                  <ref role="3cqZAo" node="3i2zDNEOldm" resolve="expr" />
+                  <ref role="3cqZAo" node="1GIWTDBlX2u" resolve="group" />
                 </node>
               </node>
             </node>
@@ -6985,27 +7090,27 @@
       <node concept="3Tm1VV" id="1GIWTDBlV$S" role="1B3o_S" />
       <node concept="3rvAFt" id="1GIWTDBlWj3" role="3clF45">
         <node concept="3Tqbb2" id="1GIWTDBlWl7" role="3rvQeY">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
         <node concept="3uibUv" id="6Lx6lqAmSL" role="3rvSg0">
           <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
         </node>
       </node>
       <node concept="37vLTG" id="1GIWTDBlX2u" role="3clF46">
-        <property role="TrG5h" value="specification" />
+        <property role="TrG5h" value="group" />
         <node concept="3Tqbb2" id="1GIWTDBlX2t" role="1tU5fm">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+          <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
         </node>
       </node>
       <node concept="P$JXv" id="26hWC1Hv7qX" role="lGtFl">
         <node concept="TZ5HA" id="26hWC1Hv7qY" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hv99P" role="1dT_Ay">
-            <property role="1dT_AB" value="Generates the unit mapping from the given unit specification, no meta unit resolving is applied. " />
+            <property role="1dT_AB" value="Generates the mapping from the given group expression. " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1Hv99W" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hvgmy" role="1dT_Ay">
-            <property role="1dT_AB" value="Composite units are always broken down to atomic units. " />
+            <property role="1dT_AB" value="Composite groups are always broken down to atomic groups " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1Hvgnv" role="TZ5H$">
@@ -7018,7 +7123,7 @@
         </node>
         <node concept="TZ5HA" id="26hWC1Hv9bA" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hv9bB" role="1dT_Ay">
-            <property role="1dT_AB" value="This method returns a new unit mapping. " />
+            <property role="1dT_AB" value="This method returns a new mapping. " />
           </node>
           <node concept="1dT_AC" id="26hWC1Hv7qZ" role="1dT_Ay" />
         </node>
@@ -7026,7 +7131,7 @@
     </node>
     <node concept="2tJIrI" id="4jkbLB68O7r" role="jymVt" />
     <node concept="2YIFZL" id="4jkbLB5WkSl" role="jymVt">
-      <property role="TrG5h" value="getUnitMap_UnitReference" />
+      <property role="TrG5h" value="getMap_Group" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="4jkbLB5WkSo" role="3clF47">
@@ -7038,7 +7143,7 @@
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
               <node concept="3Tqbb2" id="lqDNwvs5Rm" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
             </node>
             <node concept="2ShNRf" id="4jkbLB5WCFZ" role="33vP2m">
@@ -7047,7 +7152,7 @@
                   <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                 </node>
                 <node concept="3Tqbb2" id="lqDNwvs6IU" role="3rHrn6">
-                  <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                  <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                 </node>
               </node>
             </node>
@@ -7060,7 +7165,7 @@
             <node concept="3O6Q9H" id="5rl0a66xc10" role="1tU5fm">
               <node concept="1LlUBW" id="5rl0a66xzTm" role="3O5elw">
                 <node concept="3Tqbb2" id="5rl0a66x_NP" role="1Lm7xW">
-                  <ref role="ehGHo" to="i3ya:7athFveEYHG" resolve="UnitExpression" />
+                  <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
                 </node>
                 <node concept="3uibUv" id="6Lx6lqAqvq" role="1Lm7xW">
                   <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -7071,7 +7176,7 @@
               <node concept="2Jqq0_" id="5rl0a66xE4z" role="2ShVmc">
                 <node concept="1LlUBW" id="5rl0a66xE4$" role="HW$YZ">
                   <node concept="3Tqbb2" id="5rl0a66xE4_" role="1Lm7xW">
-                    <ref role="ehGHo" to="i3ya:7athFveEYHG" resolve="UnitExpression" />
+                    <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
                   </node>
                   <node concept="3uibUv" id="6Lx6lqAqTM" role="1Lm7xW">
                     <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -7106,7 +7211,7 @@
                 <property role="TrG5h" value="headPair" />
                 <node concept="1LlUBW" id="5rl0a66xFy8" role="1tU5fm">
                   <node concept="3Tqbb2" id="5rl0a66xFye" role="1Lm7xW">
-                    <ref role="ehGHo" to="i3ya:7athFveEYHG" resolve="UnitExpression" />
+                    <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
                   </node>
                   <node concept="3uibUv" id="6Lx6lqAriw" role="1Lm7xW">
                     <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -7125,7 +7230,7 @@
               <node concept="3cpWsn" id="5rl0a66yo1W" role="3cpWs9">
                 <property role="TrG5h" value="headExpr" />
                 <node concept="3Tqbb2" id="5rl0a66yo1R" role="1tU5fm">
-                  <ref role="ehGHo" to="i3ya:7athFveEYHG" resolve="UnitExpression" />
+                  <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
                 </node>
                 <node concept="1LFfDK" id="5rl0a66z50B" role="33vP2m">
                   <node concept="3cmrfG" id="5rl0a66zdPD" role="1LF_Uc">
@@ -7155,7 +7260,7 @@
             </node>
             <node concept="3clFbH" id="2Jcs$luXhuv" role="3cqZAp" />
             <node concept="1apkNV" id="3i2zDNEMnHn" role="3cqZAp">
-              <ref role="JncvE" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
+              <ref role="JncvE" to="i3ya:6q45UTyu4OU" resolve="IReference" />
               <node concept="3clFbS" id="3i2zDNEMnHr" role="Jncv_">
                 <node concept="3clFbJ" id="cJMP7su5Ga" role="3cqZAp">
                   <node concept="3clFbS" id="cJMP7su5Gc" role="3clFbx">
@@ -7166,12 +7271,18 @@
                     </node>
                   </node>
                   <node concept="2OqwBi" id="cJMP7suiCg" role="3clFbw">
-                    <node concept="2OqwBi" id="cJMP7subrY" role="2Oq$k0">
-                      <node concept="1bEZVg" id="cJMP7subrZ" role="2Oq$k0">
-                        <ref role="1M0zk5" node="3i2zDNEMnHt" resolve="unitRef" />
+                    <node concept="1PxgMI" id="6q45UTyKUNr" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="6q45UTyL1T0" role="3oSUPX">
+                        <ref role="cht4Q" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
                       </node>
-                      <node concept="3TrEf2" id="cJMP7subs0" role="2OqNvi">
-                        <ref role="3Tt5mk" to="i3ya:7eOyx9r3qFW" resolve="unit" />
+                      <node concept="2OqwBi" id="cJMP7subrY" role="1m5AlR">
+                        <node concept="1bEZVg" id="cJMP7subrZ" role="2Oq$k0">
+                          <ref role="1M0zk5" node="3i2zDNEMnHt" resolve="unitRef" />
+                        </node>
+                        <node concept="2qgKlT" id="6q45UTyKSZO" role="2OqNvi">
+                          <ref role="37wK5l" node="6q45UTyu4YY" resolve="getReferencedNode" />
+                        </node>
                       </node>
                     </node>
                     <node concept="2qgKlT" id="cJMP7supnb" role="2OqNvi">
@@ -7183,23 +7294,23 @@
                   <node concept="3cpWsn" id="3i2zDNEY0i3" role="3cpWs9">
                     <property role="TrG5h" value="specification" />
                     <node concept="3Tqbb2" id="3i2zDNEXlNr" role="1tU5fm">
-                      <ref role="ehGHo" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+                      <ref role="ehGHo" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
                     </node>
                     <node concept="2OqwBi" id="3i2zDNEY0i4" role="33vP2m">
                       <node concept="3TrEf2" id="3i2zDNEY0ia" role="2OqNvi">
-                        <ref role="3Tt5mk" to="i3ya:7Bmg9Oo7KCS" resolve="specification" />
+                        <ref role="3Tt5mk" to="i3ya:6q45UTyLsCx" resolve="specification" />
                       </node>
                       <node concept="1eOMI4" id="3i2zDNF3AJQ" role="2Oq$k0">
                         <node concept="10QFUN" id="3i2zDNF3AJN" role="1eOMHV">
                           <node concept="3Tqbb2" id="3i2zDNF3FZP" role="10QFUM">
-                            <ref role="ehGHo" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
+                            <ref role="ehGHo" to="i3ya:6q45UTyLsdG" resolve="IHaveIUnitSpecification" />
                           </node>
                           <node concept="2OqwBi" id="3i2zDNEY0i7" role="10QFUP">
                             <node concept="1bEZVg" id="3i2zDNEY0i8" role="2Oq$k0">
                               <ref role="1M0zk5" node="3i2zDNEMnHt" resolve="unitRef" />
                             </node>
-                            <node concept="3TrEf2" id="3i2zDNEY0i9" role="2OqNvi">
-                              <ref role="3Tt5mk" to="i3ya:7eOyx9r3qFW" resolve="unit" />
+                            <node concept="2qgKlT" id="6q45UTyLBGF" role="2OqNvi">
+                              <ref role="37wK5l" node="6q45UTyu4YY" resolve="getReferencedNode" />
                             </node>
                           </node>
                         </node>
@@ -7220,8 +7331,8 @@
                             <node concept="1bEZVg" id="3i2zDNEP9El" role="2Oq$k0">
                               <ref role="1M0zk5" node="3i2zDNEMnHt" resolve="unitRef" />
                             </node>
-                            <node concept="3TrEf2" id="6Lx6lquEIW" role="2OqNvi">
-                              <ref role="3Tt5mk" to="i3ya:7eOyx9r3qFW" resolve="unit" />
+                            <node concept="2qgKlT" id="6q45UTyLV$o" role="2OqNvi">
+                              <ref role="37wK5l" node="6q45UTyu4YY" resolve="getReferencedNode" />
                             </node>
                           </node>
                           <node concept="37vLTw" id="5rl0a66_LTQ" role="37wK5m">
@@ -7250,13 +7361,13 @@
                               <ref role="3cqZAo" node="4jkbLB5WCiF" resolve="result" />
                             </node>
                             <node concept="1rXfSq" id="3i2zDNEXSZj" role="37wK5m">
-                              <ref role="37wK5l" node="4jkbLB5WkSl" resolve="getUnitMap_UnitReference" />
+                              <ref role="37wK5l" node="4jkbLB5WkSl" resolve="getMap_Group" />
                               <node concept="2OqwBi" id="3i2zDNEYfgE" role="37wK5m">
                                 <node concept="37vLTw" id="3i2zDNEY8uJ" role="2Oq$k0">
                                   <ref role="3cqZAo" node="3i2zDNEY0i3" resolve="specification" />
                                 </node>
-                                <node concept="3TrEf2" id="3i2zDNEYlsm" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
+                                <node concept="2qgKlT" id="6q45UTyMdVo" role="2OqNvi">
+                                  <ref role="37wK5l" node="6q45UTytEvW" resolve="getExpression" />
                                 </node>
                               </node>
                               <node concept="1rXfSq" id="3i2zDNEYxER" role="37wK5m">
@@ -7265,8 +7376,8 @@
                                   <node concept="37vLTw" id="3i2zDNEYCib" role="2Oq$k0">
                                     <ref role="3cqZAo" node="3i2zDNEY0i3" resolve="specification" />
                                   </node>
-                                  <node concept="3TrEf2" id="3i2zDNEYK2x" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
+                                  <node concept="2qgKlT" id="6q45UTyMuvC" role="2OqNvi">
+                                    <ref role="37wK5l" node="6q45UTytEvW" resolve="getExpression" />
                                   </node>
                                 </node>
                               </node>
@@ -7289,8 +7400,19 @@
                 <ref role="3cqZAo" node="5rl0a66yo1W" resolve="headExpr" />
               </node>
               <node concept="1afrx_" id="3i2zDNEN8mc" role="1amwjI">
-                <ref role="JncvD" to="i3ya:7i1yFLkskWY" resolve="UnitExponent" />
+                <ref role="JncvD" to="i3ya:45a4DYZTqri" resolve="IGroupPower" />
                 <node concept="3clFbS" id="3i2zDNEN8md" role="Jncv$">
+                  <node concept="3cpWs8" id="6q45UTzdTdO" role="3cqZAp">
+                    <node concept="3cpWsn" id="6q45UTzdTdR" role="3cpWs9">
+                      <property role="TrG5h" value="unitExp" />
+                      <node concept="3Tqbb2" id="6q45UTzdTdM" role="1tU5fm">
+                        <ref role="ehGHo" to="i3ya:45a4DYZTqri" resolve="IGroupPower" />
+                      </node>
+                      <node concept="1bEZVg" id="6q45UTzegbz" role="33vP2m">
+                        <ref role="1M0zk5" node="3i2zDNEN8me" resolve="_unitExp" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="3i2zDNEQ2f7" role="3cqZAp">
                     <node concept="37vLTI" id="3i2zDNEQ2f8" role="3clFbG">
                       <node concept="1rXfSq" id="3i2zDNEQ2f9" role="37vLTx">
@@ -7300,15 +7422,15 @@
                         </node>
                         <node concept="2OqwBi" id="3i2zDNF5Ps8" role="37wK5m">
                           <node concept="2OqwBi" id="3i2zDNEQ2fb" role="2Oq$k0">
-                            <node concept="1bEZVg" id="3i2zDNF5zqW" role="2Oq$k0">
-                              <ref role="1M0zk5" node="3i2zDNEN8me" resolve="unitExp" />
+                            <node concept="37vLTw" id="6q45UTzem7v" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6q45UTzdTdR" resolve="unitExp" />
                             </node>
-                            <node concept="3TrEf2" id="3i2zDNF5JKV" role="2OqNvi">
-                              <ref role="3Tt5mk" to="i3ya:7i1yFLkslE6" resolve="base" />
+                            <node concept="2qgKlT" id="6q45UTykaR5" role="2OqNvi">
+                              <ref role="37wK5l" node="1JynhuWs9Jp" resolve="getBase" />
                             </node>
                           </node>
-                          <node concept="3TrEf2" id="3i2zDNF5VJs" role="2OqNvi">
-                            <ref role="3Tt5mk" to="i3ya:7eOyx9r3qFW" resolve="unit" />
+                          <node concept="2qgKlT" id="6q45UTyCHyb" role="2OqNvi">
+                            <ref role="37wK5l" node="6q45UTyu4YY" resolve="getReferencedNode" />
                           </node>
                         </node>
                         <node concept="37vLTw" id="3i2zDNEQ2fe" role="37wK5m">
@@ -7322,13 +7444,24 @@
                   </node>
                 </node>
                 <node concept="JncvC" id="3i2zDNEN8me" role="JncvA">
-                  <property role="TrG5h" value="unitExp" />
+                  <property role="TrG5h" value="_unitExp" />
                   <node concept="2jxLKc" id="3i2zDNEN8mf" role="1tU5fm" />
                 </node>
               </node>
               <node concept="1afrx_" id="3i2zDNEOq6B" role="1amwjI">
-                <ref role="JncvD" to="i3ya:7i1yFLksg8d" resolve="UnitMul" />
+                <ref role="JncvD" to="i3ya:45a4DYZTqcG" resolve="IGroupMultiplication" />
                 <node concept="3clFbS" id="3i2zDNEOq6C" role="Jncv$">
+                  <node concept="3cpWs8" id="6q45UTzezMT" role="3cqZAp">
+                    <node concept="3cpWsn" id="6q45UTzezMW" role="3cpWs9">
+                      <property role="TrG5h" value="unitMul" />
+                      <node concept="3Tqbb2" id="6q45UTzezMR" role="1tU5fm">
+                        <ref role="ehGHo" to="i3ya:45a4DYZTqcG" resolve="IGroupMultiplication" />
+                      </node>
+                      <node concept="1bEZVg" id="6q45UTzeK8G" role="33vP2m">
+                        <ref role="1M0zk5" node="3i2zDNEOq6D" resolve="_unitMul" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="3i2zDNEQ91j" role="3cqZAp">
                     <node concept="2OqwBi" id="3i2zDNEQcNB" role="3clFbG">
                       <node concept="37vLTw" id="3i2zDNEQ91i" role="2Oq$k0">
@@ -7337,22 +7470,22 @@
                       <node concept="2Ke9KJ" id="3i2zDNEQhW2" role="2OqNvi">
                         <node concept="1Ls8ON" id="3i2zDNEQydJ" role="25WWJ7">
                           <node concept="2OqwBi" id="3i2zDNEQJvU" role="1Lso8e">
-                            <node concept="1bEZVg" id="3i2zDNEQDE$" role="2Oq$k0">
-                              <ref role="1M0zk5" node="3i2zDNEOq6D" resolve="unitMul" />
+                            <node concept="37vLTw" id="6q45UTzePQr" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6q45UTzezMW" resolve="unitMul" />
                             </node>
-                            <node concept="3TrEf2" id="3i2zDNEQPoe" role="2OqNvi">
-                              <ref role="3Tt5mk" to="i3ya:7i1yFLksgFY" resolve="left" />
+                            <node concept="2qgKlT" id="6q45UTykzR1" role="2OqNvi">
+                              <ref role="37wK5l" node="1JynhuWs0Bg" resolve="getLeft" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="3i2zDNEQydL" role="1Lso8e">
                             <node concept="1rXfSq" id="3i2zDNEQydM" role="2Oq$k0">
                               <ref role="37wK5l" node="4jkbLB68OYa" resolve="getExponent" />
                               <node concept="2OqwBi" id="3i2zDNEQXDg" role="37wK5m">
-                                <node concept="1bEZVg" id="3i2zDNEQVr5" role="2Oq$k0">
-                                  <ref role="1M0zk5" node="3i2zDNEOq6D" resolve="unitMul" />
+                                <node concept="37vLTw" id="6q45UTzf1Xu" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6q45UTzezMW" resolve="unitMul" />
                                 </node>
-                                <node concept="3TrEf2" id="3i2zDNER3k$" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="i3ya:7i1yFLksgFY" resolve="left" />
+                                <node concept="2qgKlT" id="6q45UTykJry" role="2OqNvi">
+                                  <ref role="37wK5l" node="1JynhuWs0Bg" resolve="getLeft" />
                                 </node>
                               </node>
                             </node>
@@ -7375,22 +7508,22 @@
                       <node concept="2Ke9KJ" id="3i2zDNESnr1" role="2OqNvi">
                         <node concept="1Ls8ON" id="3i2zDNESnr2" role="25WWJ7">
                           <node concept="2OqwBi" id="3i2zDNESnr3" role="1Lso8e">
-                            <node concept="1bEZVg" id="3i2zDNESnr4" role="2Oq$k0">
-                              <ref role="1M0zk5" node="3i2zDNEOq6D" resolve="unitMul" />
+                            <node concept="37vLTw" id="6q45UTzeW6U" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6q45UTzezMW" resolve="unitMul" />
                             </node>
-                            <node concept="3TrEf2" id="3i2zDNESnr5" role="2OqNvi">
-                              <ref role="3Tt5mk" to="i3ya:7i1yFLksgSc" resolve="right" />
+                            <node concept="2qgKlT" id="6q45UTykDyj" role="2OqNvi">
+                              <ref role="37wK5l" node="1JynhuWs0LF" resolve="getRight" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="3i2zDNESnr6" role="1Lso8e">
                             <node concept="1rXfSq" id="3i2zDNESnr7" role="2Oq$k0">
                               <ref role="37wK5l" node="4jkbLB68OYa" resolve="getExponent" />
                               <node concept="2OqwBi" id="3i2zDNESnr8" role="37wK5m">
-                                <node concept="1bEZVg" id="3i2zDNESnr9" role="2Oq$k0">
-                                  <ref role="1M0zk5" node="3i2zDNEOq6D" resolve="unitMul" />
+                                <node concept="37vLTw" id="6q45UTzf85k" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6q45UTzezMW" resolve="unitMul" />
                                 </node>
-                                <node concept="3TrEf2" id="3i2zDNESnra" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="i3ya:7i1yFLksgSc" resolve="right" />
+                                <node concept="2qgKlT" id="6q45UTykL66" role="2OqNvi">
+                                  <ref role="37wK5l" node="1JynhuWs0LF" resolve="getRight" />
                                 </node>
                               </node>
                             </node>
@@ -7407,13 +7540,24 @@
                   </node>
                 </node>
                 <node concept="JncvC" id="3i2zDNEOq6D" role="JncvA">
-                  <property role="TrG5h" value="unitMul" />
+                  <property role="TrG5h" value="_unitMul" />
                   <node concept="2jxLKc" id="3i2zDNEOq6E" role="1tU5fm" />
                 </node>
               </node>
               <node concept="1afrx_" id="3i2zDNEOIXk" role="1amwjI">
-                <ref role="JncvD" to="i3ya:7athFveF1bP" resolve="UnitDivision" />
+                <ref role="JncvD" to="i3ya:45a4DYZTqlq" resolve="IGroupDivision" />
                 <node concept="3clFbS" id="3i2zDNEOIXl" role="Jncv$">
+                  <node concept="3cpWs8" id="6q45UTzfkJp" role="3cqZAp">
+                    <node concept="3cpWsn" id="6q45UTzfkJs" role="3cpWs9">
+                      <property role="TrG5h" value="unitDiv" />
+                      <node concept="3Tqbb2" id="6q45UTzfkJn" role="1tU5fm">
+                        <ref role="ehGHo" to="i3ya:45a4DYZTqlq" resolve="IGroupDivision" />
+                      </node>
+                      <node concept="1bEZVg" id="6q45UTzfuCZ" role="33vP2m">
+                        <ref role="1M0zk5" node="3i2zDNEOIXm" resolve="_unitDiv" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="3i2zDNERWU9" role="3cqZAp">
                     <node concept="2OqwBi" id="3i2zDNERWUa" role="3clFbG">
                       <node concept="37vLTw" id="3i2zDNERWUb" role="2Oq$k0">
@@ -7422,22 +7566,22 @@
                       <node concept="2Ke9KJ" id="3i2zDNERWUc" role="2OqNvi">
                         <node concept="1Ls8ON" id="3i2zDNERWUd" role="25WWJ7">
                           <node concept="2OqwBi" id="3i2zDNERWUe" role="1Lso8e">
-                            <node concept="1bEZVg" id="3i2zDNESbAu" role="2Oq$k0">
-                              <ref role="1M0zk5" node="3i2zDNEOIXm" resolve="unitDiv" />
+                            <node concept="37vLTw" id="6q45UTzf$ti" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6q45UTzfkJs" resolve="unitDiv" />
                             </node>
-                            <node concept="3TrEf2" id="3i2zDNESVqV" role="2OqNvi">
-                              <ref role="3Tt5mk" to="i3ya:7athFveF1os" resolve="top" />
+                            <node concept="2qgKlT" id="6q45UTyUe9Z" role="2OqNvi">
+                              <ref role="37wK5l" node="1JynhuWrSSG" resolve="getNumerator" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="3i2zDNERWUh" role="1Lso8e">
                             <node concept="1rXfSq" id="3i2zDNERWUi" role="2Oq$k0">
                               <ref role="37wK5l" node="4jkbLB68OYa" resolve="getExponent" />
                               <node concept="2OqwBi" id="3i2zDNERWUj" role="37wK5m">
-                                <node concept="1bEZVg" id="3i2zDNESDnq" role="2Oq$k0">
-                                  <ref role="1M0zk5" node="3i2zDNEOIXm" resolve="unitDiv" />
+                                <node concept="37vLTw" id="6q45UTzfEei" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6q45UTzfkJs" resolve="unitDiv" />
                                 </node>
-                                <node concept="3TrEf2" id="3i2zDNERWUl" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="i3ya:7athFveF1os" resolve="top" />
+                                <node concept="2qgKlT" id="6q45UTyUfay" role="2OqNvi">
+                                  <ref role="37wK5l" node="1JynhuWrSSG" resolve="getNumerator" />
                                 </node>
                               </node>
                             </node>
@@ -7460,22 +7604,22 @@
                       <node concept="2Ke9KJ" id="3i2zDNET1cY" role="2OqNvi">
                         <node concept="1Ls8ON" id="3i2zDNET1cZ" role="25WWJ7">
                           <node concept="2OqwBi" id="3i2zDNET1d0" role="1Lso8e">
-                            <node concept="1bEZVg" id="3i2zDNET1d1" role="2Oq$k0">
-                              <ref role="1M0zk5" node="3i2zDNEOIXm" resolve="unitDiv" />
+                            <node concept="37vLTw" id="6q45UTzfKPX" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6q45UTzfkJs" resolve="unitDiv" />
                             </node>
-                            <node concept="3TrEf2" id="3i2zDNET1d2" role="2OqNvi">
-                              <ref role="3Tt5mk" to="i3ya:7athFveF1B9" resolve="bot" />
+                            <node concept="2qgKlT" id="6q45UTyUm61" role="2OqNvi">
+                              <ref role="37wK5l" node="1JynhuWrTer" resolve="getDenominator" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="3i2zDNET1d3" role="1Lso8e">
                             <node concept="1rXfSq" id="3i2zDNET1d4" role="2Oq$k0">
                               <ref role="37wK5l" node="4jkbLB68OYa" resolve="getExponent" />
                               <node concept="2OqwBi" id="3i2zDNET1d5" role="37wK5m">
-                                <node concept="1bEZVg" id="3i2zDNET1d6" role="2Oq$k0">
-                                  <ref role="1M0zk5" node="3i2zDNEOIXm" resolve="unitDiv" />
+                                <node concept="37vLTw" id="6q45UTzfQSf" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6q45UTzfkJs" resolve="unitDiv" />
                                 </node>
-                                <node concept="3TrEf2" id="3i2zDNET1d7" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="i3ya:7athFveF1B9" resolve="bot" />
+                                <node concept="2qgKlT" id="6q45UTyUn5v" role="2OqNvi">
+                                  <ref role="37wK5l" node="1JynhuWrTer" resolve="getDenominator" />
                                 </node>
                               </node>
                             </node>
@@ -7492,7 +7636,7 @@
                   </node>
                 </node>
                 <node concept="JncvC" id="3i2zDNEOIXm" role="JncvA">
-                  <property role="TrG5h" value="unitDiv" />
+                  <property role="TrG5h" value="_unitDiv" />
                   <node concept="2jxLKc" id="3i2zDNEOIXn" role="1tU5fm" />
                 </node>
               </node>
@@ -7518,24 +7662,24 @@
           <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
         </node>
         <node concept="3Tqbb2" id="lqDNwvs4PL" role="3rvQeY">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
       <node concept="37vLTG" id="4jkbLB5Wl7w" role="3clF46">
         <property role="TrG5h" value="expr" />
         <node concept="3Tqbb2" id="4jkbLB5Wl7v" role="1tU5fm">
-          <ref role="ehGHo" to="i3ya:7athFveEYHG" resolve="UnitExpression" />
+          <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
         </node>
       </node>
       <node concept="P$JXv" id="26hWC1Hvat2" role="lGtFl">
         <node concept="TZ5HA" id="26hWC1Hvat3" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hvat4" role="1dT_Ay">
-            <property role="1dT_AB" value="Generates the unit mapping from the given unit reference and multiplies all the exponents with the given one. " />
+            <property role="1dT_AB" value="Generates the mapping from the given group expression and multiplies all the exponents with the given one. " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1HvcuG" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1HvgfI" role="1dT_Ay">
-            <property role="1dT_AB" value="Composite units are always broken down to atomic units. " />
+            <property role="1dT_AB" value="Composite groups are always broken down to atomic groups " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1HvgfP" role="TZ5H$">
@@ -7548,7 +7692,7 @@
         </node>
         <node concept="TZ5HA" id="26hWC1Hvb7E" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hvbv7" role="1dT_Ay">
-            <property role="1dT_AB" value="This method returns a new unit mapping. " />
+            <property role="1dT_AB" value="This method returns a new mapping. " />
           </node>
           <node concept="1dT_AC" id="26hWC1Hvb7F" role="1dT_Ay">
             <property role="1dT_AB" value="" />
@@ -7564,7 +7708,7 @@
     </node>
     <node concept="2tJIrI" id="3$KQaHcb7C1" role="jymVt" />
     <node concept="2YIFZL" id="3$KQaHcb8A6" role="jymVt">
-      <property role="TrG5h" value="getUnitMap_IUnit" />
+      <property role="TrG5h" value="getMap_IUnit" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="3$KQaHcb8A9" role="3clF47">
@@ -7576,7 +7720,7 @@
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
               <node concept="3Tqbb2" id="3$KQaHcbl4p" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
             </node>
             <node concept="2ShNRf" id="3$KQaHcbl4q" role="33vP2m">
@@ -7585,7 +7729,7 @@
                   <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                 </node>
                 <node concept="3Tqbb2" id="3$KQaHcbl4t" role="3rHrn6">
-                  <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                  <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                 </node>
               </node>
             </node>
@@ -7685,7 +7829,7 @@
                 <node concept="3clFbS" id="cJMP7s$U19" role="9aQI4">
                   <node concept="3cpWs6" id="cJMP7s$ZfN" role="3cqZAp">
                     <node concept="1rXfSq" id="3i2zDNF0l4_" role="3cqZAk">
-                      <ref role="37wK5l" node="4jkbLB5WkSl" resolve="getUnitMap_UnitReference" />
+                      <ref role="37wK5l" node="4jkbLB5WkSl" resolve="getMap_Group" />
                       <node concept="37vLTw" id="3i2zDNF0YFb" role="37wK5m">
                         <ref role="3cqZAo" node="3i2zDNF0YF3" resolve="expr" />
                       </node>
@@ -7715,7 +7859,7 @@
       <node concept="3Tm1VV" id="3$KQaHcb8ge" role="1B3o_S" />
       <node concept="3rvAFt" id="3$KQaHcb8zM" role="3clF45">
         <node concept="3Tqbb2" id="3$KQaHcb8zS" role="3rvQeY">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
         <node concept="3uibUv" id="6Lx6lqAs8g" role="3rvSg0">
           <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -7736,7 +7880,7 @@
       <node concept="P$JXv" id="26hWC1HveCr" role="lGtFl">
         <node concept="TZ5HA" id="26hWC1HveCs" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1HvfYc" role="1dT_Ay">
-            <property role="1dT_AB" value="Generates the unit mapping from the given unit and multiplies all the exponents with the given one. " />
+            <property role="1dT_AB" value="Generates the mapping from the given unit and multiplies all the exponents with the given one. " />
           </node>
           <node concept="1dT_AC" id="26hWC1HveCt" role="1dT_Ay">
             <property role="1dT_AB" value="" />
@@ -7754,7 +7898,7 @@
         </node>
         <node concept="TZ5HA" id="26hWC1Hvg5l" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hvg5J" role="1dT_Ay">
-            <property role="1dT_AB" value="This method returns a new unit mapping. " />
+            <property role="1dT_AB" value="This method returns a new mapping. " />
           </node>
           <node concept="1dT_AC" id="26hWC1Hvg5m" role="1dT_Ay">
             <property role="1dT_AB" value="" />
@@ -7764,13 +7908,13 @@
     </node>
     <node concept="2tJIrI" id="5dSoB2M13kb" role="jymVt" />
     <node concept="2YIFZL" id="5dSoB2M16B0" role="jymVt">
-      <property role="TrG5h" value="getUnitMap_IUnit" />
+      <property role="TrG5h" value="getMap_IUnit" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="5dSoB2M16B1" role="3clF47">
         <node concept="3cpWs6" id="5dSoB2M1e9g" role="3cqZAp">
           <node concept="1rXfSq" id="5dSoB2M1eft" role="3cqZAk">
-            <ref role="37wK5l" node="3$KQaHcb8A6" resolve="getUnitMap_IUnit" />
+            <ref role="37wK5l" node="3$KQaHcb8A6" resolve="getMap_IUnit" />
             <node concept="37vLTw" id="5dSoB2M1elM" role="37wK5m">
               <ref role="3cqZAo" node="5dSoB2M16Ca" resolve="unit" />
             </node>
@@ -7788,7 +7932,7 @@
       <node concept="3Tm1VV" id="5dSoB2M16C6" role="1B3o_S" />
       <node concept="3rvAFt" id="5dSoB2M16C7" role="3clF45">
         <node concept="3Tqbb2" id="5dSoB2M16C8" role="3rvQeY">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
         <node concept="3uibUv" id="6Lx6lqAtSQ" role="3rvSg0">
           <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -7805,7 +7949,6 @@
         <node concept="10Oyi0" id="5dSoB2M19jZ" role="1tU5fm" />
       </node>
     </node>
-    <node concept="2tJIrI" id="5dSoB2M14a8" role="jymVt" />
     <node concept="2tJIrI" id="AeX2Dk_nAe" role="jymVt" />
     <node concept="2YIFZL" id="4jkbLB68OYa" role="jymVt">
       <property role="TrG5h" value="getExponent" />
@@ -7813,48 +7956,24 @@
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="4jkbLB68OYd" role="3clF47">
         <node concept="Jncv_" id="mfJ1vOB6va" role="3cqZAp">
-          <ref role="JncvE" to="i3ya:7i1yFLkskWY" resolve="UnitExponent" />
+          <ref role="JncvE" to="i3ya:45a4DYZTqri" resolve="IGroupPower" />
           <node concept="37vLTw" id="mfJ1vOBfZL" role="JncvC">
             <ref role="3cqZAo" node="4jkbLB68Pg3" resolve="expr" />
           </node>
           <node concept="3clFbS" id="mfJ1vOB6ve" role="Jncv_">
             <node concept="3cpWs6" id="mfJ1vOBZ1v" role="3cqZAp">
-              <node concept="2ShNRf" id="mfJ1vOC30z" role="3cqZAk">
-                <node concept="1pGfFk" id="mfJ1vOCiRh" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" node="5dSoB2LN6CU" resolve="Fraction" />
-                  <node concept="2OqwBi" id="mfJ1vOCrFE" role="37wK5m">
-                    <node concept="2OqwBi" id="mfJ1vOCmUo" role="2Oq$k0">
-                      <node concept="Jnkvi" id="mfJ1vOCmUp" role="2Oq$k0">
-                        <ref role="1M0zk5" node="mfJ1vOB6vg" resolve="exponentExpr" />
-                      </node>
-                      <node concept="3TrEf2" id="mfJ1vOCmUq" role="2OqNvi">
-                        <ref role="3Tt5mk" to="i3ya:7i1yFLkslE5" resolve="exp" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="mfJ1vOCv4i" role="2OqNvi">
-                      <ref role="37wK5l" node="3j3yk3guAC3" resolve="getNumerator" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="mfJ1vOCMhq" role="37wK5m">
-                    <node concept="2OqwBi" id="mfJ1vOCFud" role="2Oq$k0">
-                      <node concept="Jnkvi" id="mfJ1vOCEqs" role="2Oq$k0">
-                        <ref role="1M0zk5" node="mfJ1vOB6vg" resolve="exponentExpr" />
-                      </node>
-                      <node concept="3TrEf2" id="mfJ1vOCIMB" role="2OqNvi">
-                        <ref role="3Tt5mk" to="i3ya:7i1yFLkslE5" resolve="exp" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="mfJ1vOCPI_" role="2OqNvi">
-                      <ref role="37wK5l" node="3j3yk3guABz" resolve="getDenominator" />
-                    </node>
-                  </node>
+              <node concept="2OqwBi" id="6q45UTyibwB" role="3cqZAk">
+                <node concept="Jnkvi" id="mfJ1vOCmUp" role="2Oq$k0">
+                  <ref role="1M0zk5" node="mfJ1vOB6vg" resolve="powerGroup" />
+                </node>
+                <node concept="2qgKlT" id="6q45UTyidey" role="2OqNvi">
+                  <ref role="37wK5l" node="1JynhuWslGU" resolve="getExp" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="JncvC" id="mfJ1vOB6vg" role="JncvB">
-            <property role="TrG5h" value="exponentExpr" />
+            <property role="TrG5h" value="powerGroup" />
             <node concept="2jxLKc" id="mfJ1vOB6vh" role="1tU5fm" />
           </node>
         </node>
@@ -7877,7 +7996,7 @@
       <node concept="37vLTG" id="4jkbLB68Pg3" role="3clF46">
         <property role="TrG5h" value="expr" />
         <node concept="3Tqbb2" id="4jkbLB68Pg2" role="1tU5fm">
-          <ref role="ehGHo" to="i3ya:7athFveEYHG" resolve="UnitExpression" />
+          <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
         </node>
       </node>
     </node>
@@ -8016,7 +8135,7 @@
       <node concept="P$JXv" id="26hWC1HlY28" role="lGtFl">
         <node concept="TZ5HA" id="5dSoB2LR8Kt" role="TZ5H$">
           <node concept="1dT_AC" id="5dSoB2LR8Ku" role="1dT_Ay">
-            <property role="1dT_AB" value="Divides all of the exponents in the unit mapping with the given value if it is possible." />
+            <property role="1dT_AB" value="Divides all of the exponents in the mapping with the given value if it is possible." />
           </node>
         </node>
         <node concept="TZ5HA" id="5dSoB2LRa2i" role="TZ5H$">
@@ -8032,7 +8151,7 @@
         <node concept="TZ5HA" id="26hWC1Hv1T9" role="TZ5H$" />
         <node concept="TZ5HA" id="26hWC1Hv1$J" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hv1$K" role="1dT_Ay">
-            <property role="1dT_AB" value="This method returns a new unit mapping. " />
+            <property role="1dT_AB" value="This method returns a new mapping. " />
           </node>
         </node>
       </node>
@@ -8049,7 +8168,7 @@
             <property role="TrG5h" value="result" />
             <node concept="3rvAFt" id="lqDNwvBfkM" role="1tU5fm">
               <node concept="3Tqbb2" id="lqDNwvBfmQ" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
               <node concept="3uibUv" id="6Lx6lqAzIu" role="3rvSg0">
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -8058,7 +8177,7 @@
             <node concept="2ShNRf" id="lqDNwvBfAW" role="33vP2m">
               <node concept="3rGOSV" id="lqDNwvBfAM" role="2ShVmc">
                 <node concept="3Tqbb2" id="lqDNwvBfAN" role="3rHrn6">
-                  <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                  <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                 </node>
                 <node concept="3uibUv" id="6Lx6lqA$K1" role="3rHtpV">
                   <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -8253,7 +8372,7 @@
         <property role="TrG5h" value="unitMap" />
         <node concept="3rvAFt" id="lqDNwvAE9C" role="1tU5fm">
           <node concept="3Tqbb2" id="lqDNwvAEe4" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
           <node concept="3uibUv" id="6Lx6lqA$qZ" role="3rvSg0">
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -8264,7 +8383,7 @@
         <property role="TrG5h" value="withWhom" />
         <node concept="3rvAFt" id="lqDNwvAEiz" role="1tU5fm">
           <node concept="3Tqbb2" id="lqDNwvAEj2" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
           <node concept="3uibUv" id="6Lx6lqA_Kd" role="3rvSg0">
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -8273,7 +8392,7 @@
       </node>
       <node concept="3rvAFt" id="lqDNwvADI1" role="3clF45">
         <node concept="3Tqbb2" id="lqDNwvAE9u" role="3rvQeY">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
         <node concept="3uibUv" id="6Lx6lqAyWD" role="3rvSg0">
           <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -8282,22 +8401,22 @@
       <node concept="P$JXv" id="lqDNwvAEJq" role="lGtFl">
         <node concept="TZ5HA" id="lqDNwvAEJr" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hv2E3" role="1dT_Ay">
-            <property role="1dT_AB" value="Reduces the given unit mapping with an other unit mapping. This means that all of the exponents will be " />
+            <property role="1dT_AB" value="Reduces the given mapping with an other mapping. This means that all of the exponents will be " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1Hv35B" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hv35C" role="1dT_Ay">
-            <property role="1dT_AB" value="substracted in the unit mapping with the corresponding exponent from the other mapping. If a unit is " />
+            <property role="1dT_AB" value="subtracted in the mapping with the corresponding exponent from the other mapping. If a unit is " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1Hv3et" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hv3eu" role="1dT_Ay">
-            <property role="1dT_AB" value="not present in the original mapping, then the inverse exponent of the other mapping's unit will be inserted. " />
+            <property role="1dT_AB" value="not present in the original mapping, then the inverse exponent of the other mapping's node will be inserted. " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1Hv2Gr" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1HvOIA" role="1dT_Ay">
-            <property role="1dT_AB" value="Units with zero exponents are eliminated from the resuling unit mapping. " />
+            <property role="1dT_AB" value="Nodes with zero exponents are eliminated from the resulting mapping. " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1HvOIH" role="TZ5H$">
@@ -8310,7 +8429,7 @@
         </node>
         <node concept="TZ5HA" id="26hWC1Hv2E7" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1Hv2E8" role="1dT_Ay">
-            <property role="1dT_AB" value="This method returns a new unit mapping. " />
+            <property role="1dT_AB" value="This method returns a new mapping. " />
           </node>
         </node>
       </node>
@@ -8330,7 +8449,7 @@
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
               <node concept="3Tqbb2" id="lqDNwvs3wf" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
             </node>
             <node concept="2ShNRf" id="4jkbLB5WsQ3" role="33vP2m">
@@ -8339,7 +8458,7 @@
                   <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                 </node>
                 <node concept="3Tqbb2" id="lqDNwvs4eD" role="3rHrn6">
-                  <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                  <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                 </node>
               </node>
             </node>
@@ -8406,7 +8525,7 @@
           <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
         </node>
         <node concept="3Tqbb2" id="lqDNwvs2aI" role="3rvQeY">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
       <node concept="37vLTG" id="4jkbLB5WpR6" role="3clF46">
@@ -8416,7 +8535,7 @@
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
           </node>
           <node concept="3Tqbb2" id="lqDNwvs0cq" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
         </node>
       </node>
@@ -8427,29 +8546,29 @@
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
           </node>
           <node concept="3Tqbb2" id="lqDNwvs0Zs" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
         </node>
       </node>
       <node concept="P$JXv" id="AeX2DkA6cv" role="lGtFl">
         <node concept="TZ5HA" id="AeX2DkA6cw" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1HvLHk" role="1dT_Ay">
-            <property role="1dT_AB" value="Unifies the given unit mapping with an other unit mapping. This means that all of the exponents will be " />
+            <property role="1dT_AB" value="Unifies the given mapping with an other mapping. This means that all of the exponents will be " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1HvLO8" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1HvLO9" role="1dT_Ay">
-            <property role="1dT_AB" value="summed in the unit mapping with the corresponding exponent from the other mapping. If a unit is not " />
+            <property role="1dT_AB" value="summed in the mapping with the corresponding exponent from the other mapping. If a node is not " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1HvMGe" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1HvMGf" role="1dT_Ay">
-            <property role="1dT_AB" value="present in the original mapping, then the exponent of the other mapping's unit will be inserted. " />
+            <property role="1dT_AB" value="present in the original mapping, then the exponent of the other mapping's node will be inserted. " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1HvNj0" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1HvNj1" role="1dT_Ay">
-            <property role="1dT_AB" value="Units with zero exponents are eliminated from the resulting unit mapping. " />
+            <property role="1dT_AB" value="Nodes with zero exponents are eliminated from the resulting unit mapping. " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1HvO5d" role="TZ5H$">
@@ -8459,7 +8578,7 @@
         </node>
         <node concept="TZ5HA" id="26hWC1HvNjq" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1HvNYm" role="1dT_Ay">
-            <property role="1dT_AB" value="This method returns a new unit mapping. " />
+            <property role="1dT_AB" value="This method returns a new mapping. " />
           </node>
           <node concept="1dT_AC" id="26hWC1HvNjr" role="1dT_Ay">
             <property role="1dT_AB" value="" />
@@ -8611,7 +8730,7 @@
       <node concept="3Tm6S6" id="5rl0a66_kVv" role="1B3o_S" />
       <node concept="3rvAFt" id="5rl0a66_on5" role="3clF45">
         <node concept="3Tqbb2" id="5rl0a66_ooF" role="3rvQeY">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
         <node concept="3uibUv" id="6Lx6lqACbV" role="3rvSg0">
           <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -8621,7 +8740,7 @@
         <property role="TrG5h" value="mapping" />
         <node concept="3rvAFt" id="5rl0a66_rO1" role="1tU5fm">
           <node concept="3Tqbb2" id="5rl0a66_rQa" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
           <node concept="3uibUv" id="6Lx6lqADXQ" role="3rvSg0">
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -8631,7 +8750,7 @@
       <node concept="37vLTG" id="5rl0a66_rX9" role="3clF46">
         <property role="TrG5h" value="key" />
         <node concept="3Tqbb2" id="5rl0a66_rZp" role="1tU5fm">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
       <node concept="37vLTG" id="5rl0a66_s0a" role="3clF46">
@@ -8677,11 +8796,17 @@
                 <node concept="TSZUe" id="4jkbLB63OAL" role="2OqNvi">
                   <node concept="1rXfSq" id="4jkbLB63OAM" role="25WWJ7">
                     <ref role="37wK5l" node="4jkbLB62XPH" resolve="createUnitReference" />
-                    <node concept="2OqwBi" id="4jkbLB63OAN" role="37wK5m">
-                      <node concept="2GrUjf" id="4jkbLB63OAO" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="4jkbLB63OAB" resolve="entry" />
+                    <node concept="1PxgMI" id="6q45UTz6FWP" role="37wK5m">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="6q45UTz6KCa" role="3oSUPX">
+                        <ref role="cht4Q" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
                       </node>
-                      <node concept="3AY5_j" id="4jkbLB63OAP" role="2OqNvi" />
+                      <node concept="2OqwBi" id="4jkbLB63OAN" role="1m5AlR">
+                        <node concept="2GrUjf" id="4jkbLB63OAO" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="4jkbLB63OAB" resolve="entry" />
+                        </node>
+                        <node concept="3AY5_j" id="4jkbLB63OAP" role="2OqNvi" />
+                      </node>
                     </node>
                     <node concept="2OqwBi" id="4jkbLB63OAQ" role="37wK5m">
                       <node concept="2GrUjf" id="4jkbLB63OAR" role="2Oq$k0">
@@ -8712,7 +8837,7 @@
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
           </node>
           <node concept="3Tqbb2" id="lqDNwvsAjZ" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
         </node>
       </node>
@@ -9054,7 +9179,7 @@
           <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
         </node>
         <node concept="3Tqbb2" id="lqDNwvsi5V" role="3rvQeY">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
       <node concept="37vLTG" id="4jkbLB64QPK" role="3clF46">
@@ -9064,7 +9189,7 @@
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
           </node>
           <node concept="3Tqbb2" id="lqDNwvshD8" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
         </node>
       </node>
@@ -9125,7 +9250,7 @@
       <node concept="3Tm1VV" id="AeX2Dk_G0T" role="1B3o_S" />
       <node concept="3rvAFt" id="AeX2Dk_GMi" role="3clF45">
         <node concept="3Tqbb2" id="AeX2Dk_GMu" role="3rvQeY">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
         <node concept="3uibUv" id="6Lx6lqAAtg" role="3rvSg0">
           <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -9135,7 +9260,7 @@
         <property role="TrG5h" value="unitMap" />
         <node concept="3rvAFt" id="AeX2Dk_I7I" role="1tU5fm">
           <node concept="3Tqbb2" id="AeX2Dk_Iac" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
           <node concept="3uibUv" id="6Lx6lqADXS" role="3rvSg0">
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -9151,7 +9276,7 @@
       <node concept="P$JXv" id="AeX2Dk_K06" role="lGtFl">
         <node concept="TZ5HA" id="AeX2Dk_K07" role="TZ5H$">
           <node concept="1dT_AC" id="26hWC1HvPvp" role="1dT_Ay">
-            <property role="1dT_AB" value="This method modifies the original unit mapping. " />
+            <property role="1dT_AB" value="This method modifies the original mapping. " />
           </node>
         </node>
       </node>
@@ -9160,7 +9285,7 @@
     <node concept="2YIFZL" id="4jkbLB5XZz4" role="jymVt">
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <property role="TrG5h" value="matchingUnits" />
+      <property role="TrG5h" value="matchingMappings" />
       <node concept="37vLTG" id="4jkbLB5XZz5" role="3clF46">
         <property role="TrG5h" value="leftUnitMap" />
         <node concept="3rvAFt" id="4jkbLB5Y0fX" role="1tU5fm">
@@ -9168,7 +9293,7 @@
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
           </node>
           <node concept="3Tqbb2" id="lqDNwvsi6I" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
         </node>
       </node>
@@ -9179,7 +9304,7 @@
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
           </node>
           <node concept="3Tqbb2" id="lqDNwvsi_w" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
         </node>
       </node>
@@ -9195,7 +9320,7 @@
                 <node concept="2ShNRf" id="5sKgdcu04Ik" role="1Lso8e">
                   <node concept="kMnCb" id="5sKgdcu0jXi" role="2ShVmc">
                     <node concept="3Tqbb2" id="5sKgdcu0nzq" role="kMuH3">
-                      <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                      <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                     </node>
                   </node>
                 </node>
@@ -9245,7 +9370,7 @@
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
               <node concept="3uibUv" id="6Lx6lqAA83" role="3rvQeY">
-                <ref role="3uigEE" node="5dSoB2LOIkf" resolve="UnitWrapper" />
+                <ref role="3uigEE" node="5dSoB2LOIkf" resolve="NamedNodeWrapper" />
               </node>
             </node>
             <node concept="2ShNRf" id="sYoQOgUPj0" role="33vP2m">
@@ -9254,7 +9379,7 @@
                   <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                 </node>
                 <node concept="3uibUv" id="6Lx6lqA$K7" role="3rHrn6">
-                  <ref role="3uigEE" node="5dSoB2LOIkf" resolve="UnitWrapper" />
+                  <ref role="3uigEE" node="5dSoB2LOIkf" resolve="NamedNodeWrapper" />
                 </node>
               </node>
             </node>
@@ -9265,13 +9390,13 @@
             <property role="TrG5h" value="keys" />
             <node concept="2hMVRd" id="26hWC1HwZ6F" role="1tU5fm">
               <node concept="3uibUv" id="6Lx6lqAyWB" role="2hN53Y">
-                <ref role="3uigEE" node="5dSoB2LOIkf" resolve="UnitWrapper" />
+                <ref role="3uigEE" node="5dSoB2LOIkf" resolve="NamedNodeWrapper" />
               </node>
             </node>
             <node concept="2ShNRf" id="26hWC1Hx14G" role="33vP2m">
               <node concept="2i4dXS" id="26hWC1Hx13r" role="2ShVmc">
                 <node concept="3uibUv" id="6Lx6lqAAjr" role="HW$YZ">
-                  <ref role="3uigEE" node="5dSoB2LOIkf" resolve="UnitWrapper" />
+                  <ref role="3uigEE" node="5dSoB2LOIkf" resolve="NamedNodeWrapper" />
                 </node>
               </node>
             </node>
@@ -9295,7 +9420,7 @@
                   <node concept="3cpWsn" id="26hWC1HwVod" role="3cpWs9">
                     <property role="TrG5h" value="wrapper" />
                     <node concept="3uibUv" id="6Lx6lqAAtU" role="1tU5fm">
-                      <ref role="3uigEE" node="5dSoB2LOIkf" resolve="UnitWrapper" />
+                      <ref role="3uigEE" node="5dSoB2LOIkf" resolve="NamedNodeWrapper" />
                     </node>
                     <node concept="2ShNRf" id="26hWC1HwVJd" role="33vP2m">
                       <node concept="1pGfFk" id="26hWC1HwVRF" role="2ShVmc">
@@ -9366,7 +9491,7 @@
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
               <node concept="3uibUv" id="6Lx6lqAyWH" role="3rvQeY">
-                <ref role="3uigEE" node="5dSoB2LOIkf" resolve="UnitWrapper" />
+                <ref role="3uigEE" node="5dSoB2LOIkf" resolve="NamedNodeWrapper" />
               </node>
             </node>
             <node concept="2ShNRf" id="sYoQOgURZv" role="33vP2m">
@@ -9375,7 +9500,7 @@
                   <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                 </node>
                 <node concept="3uibUv" id="6Lx6lqADRd" role="3rHrn6">
-                  <ref role="3uigEE" node="5dSoB2LOIkf" resolve="UnitWrapper" />
+                  <ref role="3uigEE" node="5dSoB2LOIkf" resolve="NamedNodeWrapper" />
                 </node>
               </node>
             </node>
@@ -9678,7 +9803,7 @@
                             <ref role="3cqZAo" node="5sKgdctSgiV" resolve="it" />
                           </node>
                           <node concept="2OwXpG" id="5sKgdctSl$e" role="2OqNvi">
-                            <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="unit" />
+                            <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="node" />
                           </node>
                         </node>
                       </node>
@@ -9707,7 +9832,7 @@
                               <ref role="3cqZAo" node="5sKgdctSVqP" resolve="it" />
                             </node>
                             <node concept="2OwXpG" id="5sKgdctT4Gr" role="2OqNvi">
-                              <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="unit" />
+                              <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="node" />
                             </node>
                           </node>
                         </node>
@@ -9727,7 +9852,7 @@
       <node concept="P$JXv" id="2RfL3oOu8TW" role="lGtFl">
         <node concept="TZ5HA" id="2RfL3oOu8TX" role="TZ5H$">
           <node concept="1dT_AC" id="2RfL3oOu8TY" role="1dT_Ay">
-            <property role="1dT_AB" value="Checks whether two unit mappings can be possibly matched / exactly matched. " />
+            <property role="1dT_AB" value="Checks whether two mappings can be possibly matched / exactly matched. " />
           </node>
         </node>
         <node concept="TZ5HA" id="26hWC1HxKOi" role="TZ5H$">
@@ -9745,7 +9870,7 @@
         <node concept="10P_77" id="5sKgdctRoC$" role="1Lm7xW" />
         <node concept="A3Dl8" id="5sKgdctTbvU" role="1Lm7xW">
           <node concept="3Tqbb2" id="5sKgdctTfbq" role="A3Ik2">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
         </node>
       </node>
@@ -9760,14 +9885,14 @@
             <property role="TrG5h" value="originalUnitMap" />
             <node concept="3rvAFt" id="3htFKtciTSl" role="1tU5fm">
               <node concept="3Tqbb2" id="3htFKtciTSm" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
               <node concept="3uibUv" id="3htFKtciTSn" role="3rvSg0">
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
             </node>
             <node concept="1rXfSq" id="3htFKtciTSo" role="33vP2m">
-              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getUnitMap_UnitSpecification" />
+              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getMap_Group" />
               <node concept="37vLTw" id="3htFKtciTSp" role="37wK5m">
                 <ref role="3cqZAo" node="3htFKtciTSU" resolve="unitSpecificaion" />
               </node>
@@ -9779,7 +9904,7 @@
             <property role="TrG5h" value="sqrtUnitMap" />
             <node concept="3rvAFt" id="3htFKtciTSs" role="1tU5fm">
               <node concept="3Tqbb2" id="3htFKtciTSt" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
               <node concept="3uibUv" id="3htFKtciTSu" role="3rvSg0">
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -9788,7 +9913,7 @@
             <node concept="2ShNRf" id="3htFKtciTSv" role="33vP2m">
               <node concept="3rGOSV" id="3htFKtciTSw" role="2ShVmc">
                 <node concept="3Tqbb2" id="3htFKtciTSx" role="3rHrn6">
-                  <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                  <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                 </node>
                 <node concept="3uibUv" id="3htFKtciTSy" role="3rHtpV">
                   <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -9852,25 +9977,24 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="3htFKtciTSg" role="3clF45">
-        <ref role="ehGHo" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+        <ref role="ehGHo" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
       </node>
       <node concept="37vLTG" id="3htFKtciTSU" role="3clF46">
-        <property role="TrG5h" value="unitSpecificaion" />
+        <property role="TrG5h" value="group" />
         <node concept="3Tqbb2" id="3htFKtciTSV" role="1tU5fm">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+          <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
         </node>
       </node>
       <node concept="P$JXv" id="3htFKtciTSW" role="lGtFl">
         <node concept="TZ5HA" id="3htFKtciTSX" role="TZ5H$">
           <node concept="1dT_AC" id="3htFKtciTSY" role="1dT_Ay">
-            <property role="1dT_AB" value="Calculates the sqrt of the units within the provided UnitSpecification and returns a new UnitSpecification." />
+            <property role="1dT_AB" value="Calculates the sqrt of the nodes within the provided group and returns a new unit specification" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="3htFKtciTSh" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6q$NxWeDzq_" role="jymVt" />
-    <node concept="2tJIrI" id="6q$NxWeWFID" role="jymVt" />
     <node concept="2YIFZL" id="6q$NxWeWUdj" role="jymVt">
       <property role="TrG5h" value="pow" />
       <node concept="3clFbS" id="6q$NxWeWUdn" role="3clF47">
@@ -9879,14 +10003,14 @@
             <property role="TrG5h" value="originalUnitMap" />
             <node concept="3rvAFt" id="6q$NxWeXkLj" role="1tU5fm">
               <node concept="3Tqbb2" id="6q$NxWeXkLk" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
               <node concept="3uibUv" id="6q$NxWeXkLl" role="3rvSg0">
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
               </node>
             </node>
             <node concept="1rXfSq" id="6q$NxWeXkLm" role="33vP2m">
-              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getUnitMap_UnitSpecification" />
+              <ref role="37wK5l" node="1GIWTDBlWlh" resolve="getMap_Group" />
               <node concept="37vLTw" id="6q$NxWeXppq" role="37wK5m">
                 <ref role="3cqZAo" node="6q$NxWeX50H" resolve="unitSpecification" />
               </node>
@@ -9898,7 +10022,7 @@
             <property role="TrG5h" value="powUnitMap" />
             <node concept="3rvAFt" id="6q$NxWeXkLq" role="1tU5fm">
               <node concept="3Tqbb2" id="6q$NxWeXkLr" role="3rvQeY">
-                <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
               </node>
               <node concept="3uibUv" id="6q$NxWeXkLs" role="3rvSg0">
                 <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -9907,7 +10031,7 @@
             <node concept="2ShNRf" id="6q$NxWeXkLt" role="33vP2m">
               <node concept="3rGOSV" id="6q$NxWeXkLu" role="2ShVmc">
                 <node concept="3Tqbb2" id="6q$NxWeXkLv" role="3rHrn6">
-                  <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                  <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                 </node>
                 <node concept="3uibUv" id="6q$NxWeXkLw" role="3rHtpV">
                   <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -9942,11 +10066,17 @@
                         </node>
                       </node>
                       <node concept="3EllGN" id="6q$NxWeXutC" role="37vLTJ">
-                        <node concept="2OqwBi" id="6q$NxWeXvj4" role="3ElVtu">
-                          <node concept="37vLTw" id="6q$NxWeXuIe" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6q$NxWeXtSa" resolve="it" />
+                        <node concept="1PxgMI" id="6q45UTyIzze" role="3ElVtu">
+                          <property role="1BlNFB" value="true" />
+                          <node concept="chp4Y" id="6q45UTyIBWZ" role="3oSUPX">
+                            <ref role="cht4Q" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
                           </node>
-                          <node concept="3AY5_j" id="6q$NxWeXvG3" role="2OqNvi" />
+                          <node concept="2OqwBi" id="6q$NxWeXvj4" role="1m5AlR">
+                            <node concept="37vLTw" id="6q$NxWeXuIe" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6q$NxWeXtSa" resolve="it" />
+                            </node>
+                            <node concept="3AY5_j" id="6q$NxWeXvG3" role="2OqNvi" />
+                          </node>
                         </node>
                         <node concept="37vLTw" id="6q$NxWeXuaX" role="3ElQJh">
                           <ref role="3cqZAo" node="6q$NxWeXkLp" resolve="powUnitMap" />
@@ -9974,13 +10104,13 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="6q$NxWeWXnn" role="3clF45">
-        <ref role="ehGHo" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+        <ref role="ehGHo" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
       </node>
       <node concept="3Tm1VV" id="6q$NxWeWUdm" role="1B3o_S" />
       <node concept="37vLTG" id="6q$NxWeX50H" role="3clF46">
-        <property role="TrG5h" value="unitSpecification" />
+        <property role="TrG5h" value="group" />
         <node concept="3Tqbb2" id="6q$NxWeX50G" role="1tU5fm">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+          <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
         </node>
       </node>
       <node concept="37vLTG" id="6q$NxWeXcKq" role="3clF46">
@@ -9995,7 +10125,7 @@
         <property role="TrG5h" value="unitMap" />
         <node concept="3rvAFt" id="6q$NxWeY6up" role="1tU5fm">
           <node concept="3Tqbb2" id="6q$NxWeY6uq" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
           <node concept="3uibUv" id="6q$NxWeY6ur" role="3rvSg0">
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -10317,7 +10447,7 @@
             <node concept="2pJPED" id="2hjX6q4O1W6" role="2pJPEn">
               <ref role="2pJxaS" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
               <node concept="2pIpSj" id="2hjX6q4OaOW" role="2pJxcM">
-                <ref role="2pIpSl" to="i3ya:7athFveyQy5" resolve="spec" />
+                <ref role="2pIpSl" to="i3ya:7athFveyQy5" resolve="specification" />
                 <node concept="36biLy" id="2hjX6q4Og8V" role="28nt2d">
                   <node concept="1rXfSq" id="2hjX6q4OjdM" role="36biLW">
                     <ref role="37wK5l" node="2hjX6q4NHDZ" resolve="convertUnit2QuantityExpr" />
@@ -10603,7 +10733,7 @@
           <node concept="3cpWsn" id="5X7HQPSAKSE" role="3cpWs9">
             <property role="TrG5h" value="sourceSpecification" />
             <node concept="3Tqbb2" id="5X7HQPSAKS_" role="1tU5fm">
-              <ref role="ehGHo" to="i3ya:7eOyx9r3k4t" resolve="UnitSpecification" />
+              <ref role="ehGHo" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
             </node>
             <node concept="2YIFZM" id="5X7HQPSASkh" role="33vP2m">
               <ref role="37wK5l" node="5pSqQr$AdB$" resolve="getUnitSpecification" />
@@ -10620,8 +10750,8 @@
             <node concept="37vLTw" id="5X7HQPSGrDD" role="2Oq$k0">
               <ref role="3cqZAo" node="5X7HQPSAKSE" resolve="sourceSpecification" />
             </node>
-            <node concept="3TrEf2" id="5X7HQPSGrDE" role="2OqNvi">
-              <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
+            <node concept="2qgKlT" id="6q45UTyxUyx" role="2OqNvi">
+              <ref role="37wK5l" node="6q45UTytEvW" resolve="getExpression" />
             </node>
           </node>
           <node concept="3clFbS" id="5X7HQPSGrDF" role="Jncv_">
@@ -10990,7 +11120,7 @@
                   <property role="3cmrfH" value="0" />
                 </node>
                 <node concept="2YIFZM" id="5X7HQPSGrFb" role="1LFl5Q">
-                  <ref role="37wK5l" node="4jkbLB5XZz4" resolve="matchingUnits" />
+                  <ref role="37wK5l" node="4jkbLB5XZz4" resolve="matchingMappings" />
                   <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
                   <node concept="37vLTw" id="5X7HQPSGrFc" role="37wK5m">
                     <ref role="3cqZAo" node="5X7HQPSHvT8" resolve="sourceUnitMap" />
@@ -11025,7 +11155,7 @@
         <property role="TrG5h" value="sourceUnitMap" />
         <node concept="3rvAFt" id="5X7HQPSH$2j" role="1tU5fm">
           <node concept="3Tqbb2" id="5X7HQPSH$2k" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
           <node concept="3uibUv" id="5X7HQPSH$2l" role="3rvSg0">
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -11036,7 +11166,7 @@
         <property role="TrG5h" value="targetUnitMap" />
         <node concept="3rvAFt" id="5X7HQPSHNL5" role="1tU5fm">
           <node concept="3Tqbb2" id="5X7HQPSHNL6" role="3rvQeY">
-            <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
           </node>
           <node concept="3uibUv" id="5X7HQPSHNL7" role="3rvSg0">
             <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
@@ -11047,15 +11177,15 @@
     <node concept="3Tm1VV" id="4jkbLB5RJZM" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="5dSoB2LOIkf">
-    <property role="TrG5h" value="UnitWrapper" />
+    <property role="TrG5h" value="NamedNodeWrapper" />
     <node concept="312cEg" id="5dSoB2LOIpJ" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="unit" />
+      <property role="TrG5h" value="node" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="5dSoB2LPpgs" role="1B3o_S" />
       <node concept="3Tqbb2" id="5dSoB2LOIpL" role="1tU5fm">
-        <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+        <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
       </node>
     </node>
     <node concept="2tJIrI" id="1JTgXSYTEud" role="jymVt" />
@@ -11070,7 +11200,7 @@
             <node concept="2OqwBi" id="5dSoB2LOIpT" role="37vLTJ">
               <node concept="Xjq3P" id="5dSoB2LOIpU" role="2Oq$k0" />
               <node concept="2OwXpG" id="5dSoB2LOIpV" role="2OqNvi">
-                <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="unit" />
+                <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="node" />
               </node>
             </node>
           </node>
@@ -11078,9 +11208,9 @@
       </node>
       <node concept="3Tm1VV" id="5dSoB2LOIpW" role="1B3o_S" />
       <node concept="37vLTG" id="5dSoB2LOIpX" role="3clF46">
-        <property role="TrG5h" value="unit" />
+        <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="5dSoB2LOIpY" role="1tU5fm">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
     </node>
@@ -11156,12 +11286,12 @@
                         <ref role="3cqZAo" node="5dSoB2LOIq5" resolve="obj" />
                       </node>
                       <node concept="3uibUv" id="5dSoB2LOJ4R" role="10QFUM">
-                        <ref role="3uigEE" node="5dSoB2LOIkf" resolve="UnitWrapper" />
+                        <ref role="3uigEE" node="5dSoB2LOIkf" resolve="NamedNodeWrapper" />
                       </node>
                     </node>
                   </node>
                   <node concept="3uibUv" id="5dSoB2LOIW3" role="1tU5fm">
-                    <ref role="3uigEE" node="5dSoB2LOIkf" resolve="UnitWrapper" />
+                    <ref role="3uigEE" node="5dSoB2LOIkf" resolve="NamedNodeWrapper" />
                   </node>
                 </node>
               </node>
@@ -11172,13 +11302,13 @@
                       <ref role="3cqZAo" node="5dSoB2LOIqx" resolve="that" />
                     </node>
                     <node concept="2OwXpG" id="4CJErGj5Dex" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="unit" />
+                      <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="node" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="4CJErGj5AK4" role="3uHU7B">
                     <node concept="Xjq3P" id="4CJErGj5Av9" role="2Oq$k0" />
                     <node concept="2OwXpG" id="4CJErGj5B2W" role="2OqNvi">
-                      <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="unit" />
+                      <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="node" />
                     </node>
                   </node>
                 </node>
@@ -11214,7 +11344,7 @@
                 <node concept="2OqwBi" id="5dSoB2LOIr3" role="2Oq$k0">
                   <node concept="Xjq3P" id="5dSoB2LOIr4" role="2Oq$k0" />
                   <node concept="2OwXpG" id="5dSoB2LOIr5" role="2OqNvi">
-                    <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="unit" />
+                    <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="node" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="5dSoB2LOIr6" role="2OqNvi">
@@ -11226,7 +11356,7 @@
               <node concept="2OqwBi" id="5dSoB2LOIr8" role="3uHU7B">
                 <node concept="Xjq3P" id="5dSoB2LOIr9" role="2Oq$k0" />
                 <node concept="2OwXpG" id="5dSoB2LOIra" role="2OqNvi">
-                  <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="unit" />
+                  <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="node" />
                 </node>
               </node>
               <node concept="10Nm6u" id="5dSoB2LOIrb" role="3uHU7w" />
@@ -11240,7 +11370,7 @@
                     <node concept="2OqwBi" id="5dSoB2LOIrh" role="2Oq$k0">
                       <node concept="Xjq3P" id="5dSoB2LOIri" role="2Oq$k0" />
                       <node concept="2OwXpG" id="5dSoB2LOIrj" role="2OqNvi">
-                        <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="unit" />
+                        <ref role="2Oxat5" node="5dSoB2LOIpJ" resolve="node" />
                       </node>
                     </node>
                     <node concept="3TrcHB" id="5dSoB2LOIrk" role="2OqNvi">
@@ -11271,7 +11401,7 @@
         <node concept="3cpWs6" id="5dSoB2LOIrv" role="3cqZAp">
           <node concept="2OqwBi" id="5dSoB2LOIrw" role="3cqZAk">
             <node concept="37vLTw" id="5dSoB2LOIrx" role="2Oq$k0">
-              <ref role="3cqZAo" node="5dSoB2LOIpJ" resolve="unit" />
+              <ref role="3cqZAo" node="5dSoB2LOIpJ" resolve="node" />
             </node>
             <node concept="2qgKlT" id="5dSoB2LOIry" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -11435,8 +11565,8 @@
                         <ref role="3cqZAo" node="5X7HQPSJuZi" resolve="sourceType" />
                       </node>
                     </node>
-                    <node concept="3TrEf2" id="1bJsYf5dSSo" role="2OqNvi">
-                      <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
+                    <node concept="2qgKlT" id="6q45UTyyij0" role="2OqNvi">
+                      <ref role="37wK5l" node="6q45UTytEvW" resolve="getExpression" />
                     </node>
                   </node>
                 </node>
@@ -11461,14 +11591,14 @@
                 <property role="TrG5h" value="sourceUnitMap" />
                 <node concept="3rvAFt" id="yGiRIEUZGo" role="1tU5fm">
                   <node concept="3Tqbb2" id="yGiRIEV01s" role="3rvQeY">
-                    <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                    <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                   </node>
                   <node concept="3uibUv" id="5Q6EZP5ZlCz" role="3rvSg0">
                     <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="6n8rWbyKuix" role="33vP2m">
-                  <ref role="37wK5l" node="26hWC1I8AOx" resolve="getUnitMap_Type" />
+                  <ref role="37wK5l" node="26hWC1I8AOx" resolve="getMap_Type" />
                   <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
                   <node concept="37vLTw" id="5X7HQPSJuZo" role="37wK5m">
                     <ref role="3cqZAo" node="5X7HQPSJuZi" resolve="sourceType" />
@@ -11481,14 +11611,14 @@
                 <property role="TrG5h" value="targetUnitMap" />
                 <node concept="3rvAFt" id="1wGuEUw60fX" role="1tU5fm">
                   <node concept="3Tqbb2" id="1wGuEUw60fY" role="3rvQeY">
-                    <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                    <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                   </node>
                   <node concept="3uibUv" id="5Q6EZP5Zlhb" role="3rvSg0">
                     <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="6n8rWbyKuiO" role="33vP2m">
-                  <ref role="37wK5l" node="5dSoB2M16B0" resolve="getUnitMap_IUnit" />
+                  <ref role="37wK5l" node="5dSoB2M16B0" resolve="getMap_IUnit" />
                   <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
                   <node concept="2OqwBi" id="1wGuEUw60g1" role="37wK5m">
                     <node concept="13iPFW" id="1wGuEUw6byG" role="2Oq$k0" />
@@ -11554,14 +11684,14 @@
                     <property role="TrG5h" value="ruleSourceUnitMap" />
                     <node concept="3rvAFt" id="yGiRIEVd4f" role="1tU5fm">
                       <node concept="3Tqbb2" id="yGiRIEVd4k" role="3rvQeY">
-                        <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                        <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                       </node>
                       <node concept="3uibUv" id="5Q6EZP5ZM0r" role="3rvSg0">
                         <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                       </node>
                     </node>
                     <node concept="2YIFZM" id="6n8rWbyKuiJ" role="33vP2m">
-                      <ref role="37wK5l" node="5dSoB2M16B0" resolve="getUnitMap_IUnit" />
+                      <ref role="37wK5l" node="5dSoB2M16B0" resolve="getMap_IUnit" />
                       <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
                       <node concept="2OqwBi" id="6EvkZrP229J" role="37wK5m">
                         <node concept="2OqwBi" id="yGiRIEVd4X" role="2Oq$k0">
@@ -11587,14 +11717,14 @@
                     <property role="TrG5h" value="ruleTargetUnitMap" />
                     <node concept="3rvAFt" id="1wGuEUw5Zwu" role="1tU5fm">
                       <node concept="3Tqbb2" id="1wGuEUw5Zwv" role="3rvQeY">
-                        <ref role="ehGHo" to="i3ya:7eOyx9r3k3e" resolve="IUnit" />
+                        <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                       </node>
                       <node concept="3uibUv" id="5Q6EZP5Zl$q" role="3rvSg0">
                         <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
                       </node>
                     </node>
                     <node concept="2YIFZM" id="6n8rWbyKuiL" role="33vP2m">
-                      <ref role="37wK5l" node="5dSoB2M16B0" resolve="getUnitMap_IUnit" />
+                      <ref role="37wK5l" node="5dSoB2M16B0" resolve="getMap_IUnit" />
                       <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
                       <node concept="2OqwBi" id="6EvkZrP24do" role="37wK5m">
                         <node concept="2OqwBi" id="1wGuEUw5Zwy" role="2Oq$k0">
@@ -11821,7 +11951,7 @@
                           <property role="3cmrfH" value="0" />
                         </node>
                         <node concept="2YIFZM" id="6n8rWbyKujc" role="1LFl5Q">
-                          <ref role="37wK5l" node="4jkbLB5XZz4" resolve="matchingUnits" />
+                          <ref role="37wK5l" node="4jkbLB5XZz4" resolve="matchingMappings" />
                           <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
                           <node concept="37vLTw" id="26hWC1HyJe3" role="37wK5m">
                             <ref role="3cqZAo" node="yGiRIEUZGx" resolve="sourceUnitMap" />
@@ -11836,7 +11966,7 @@
                           <property role="3cmrfH" value="0" />
                         </node>
                         <node concept="2YIFZM" id="6n8rWbyKuje" role="1LFl5Q">
-                          <ref role="37wK5l" node="4jkbLB5XZz4" resolve="matchingUnits" />
+                          <ref role="37wK5l" node="4jkbLB5XZz4" resolve="matchingMappings" />
                           <ref role="1Pybhc" node="4jkbLB5RJZL" resolve="UnitConversionUtil" />
                           <node concept="37vLTw" id="1wGuEUw6cPs" role="37wK5m">
                             <ref role="3cqZAo" node="1wGuEUw60fW" resolve="targetUnitMap" />
@@ -12309,7 +12439,7 @@
       <node concept="3Tm1VV" id="1KUmgSF_6Sq" role="1B3o_S" />
       <node concept="_YKpA" id="1KUmgSF_6SD" role="3clF45">
         <node concept="3Tqbb2" id="1KUmgSF_6SP" role="_ZDj9">
-          <ref role="ehGHo" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
+          <ref role="ehGHo" to="i3ya:6q45UTyu4OU" resolve="IReference" />
         </node>
       </node>
       <node concept="3clFbS" id="1KUmgSF_6Ss" role="3clF47" />
@@ -13426,6 +13556,24 @@
   <node concept="13h7C7" id="45a4DZ02V_e">
     <property role="3GE5qa" value="group.typesystem" />
     <ref role="13h7C2" to="i3ya:45a4DYZrLy8" resolve="QuantityBaseType" />
+    <node concept="13i0hz" id="6q45UTy$UIo" role="13h7CS">
+      <property role="TrG5h" value="getReferencedNode" />
+      <ref role="13i0hy" node="6q45UTyu4YY" resolve="getReferencedNode" />
+      <node concept="3Tm1VV" id="6q45UTy$UIp" role="1B3o_S" />
+      <node concept="3clFbS" id="6q45UTy$UIs" role="3clF47">
+        <node concept="3clFbF" id="6q45UTy$UWv" role="3cqZAp">
+          <node concept="2OqwBi" id="6q45UTy$VfH" role="3clFbG">
+            <node concept="13iPFW" id="6q45UTy$UWu" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6q45UTy$VNX" role="2OqNvi">
+              <ref role="3Tt5mk" to="i3ya:45a4DYZrZ_c" resolve="quantity" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6q45UTy$UIt" role="3clF45">
+        <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      </node>
+    </node>
     <node concept="13hLZK" id="45a4DZ02V_f" role="13h7CW">
       <node concept="3clFbS" id="45a4DZ02V_g" role="2VODD2" />
     </node>
@@ -14554,7 +14702,7 @@
       <property role="TrG5h" value="getBase" />
       <node concept="3Tm1VV" id="1JynhuWs9Jq" role="1B3o_S" />
       <node concept="3Tqbb2" id="1JynhuWs9Lp" role="3clF45">
-        <ref role="ehGHo" to="i3ya:45a4DYZTqxY" resolve="IGroupBase" />
+        <ref role="ehGHo" to="i3ya:6q45UTyu4OU" resolve="IReference" />
       </node>
       <node concept="3clFbS" id="1JynhuWs9Js" role="3clF47" />
     </node>
@@ -14941,7 +15089,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="7DmLSRHd1zH" role="3clF45">
-        <ref role="ehGHo" to="i3ya:45a4DYZTqxY" resolve="IGroupBase" />
+        <ref role="ehGHo" to="i3ya:6q45UTyu4OU" resolve="IReference" />
       </node>
     </node>
     <node concept="13i0hz" id="5GDxAP1odW_" role="13h7CS">
@@ -15973,7 +16121,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="73cP8DpWiAs" role="3clF45">
-        <ref role="ehGHo" to="i3ya:45a4DYZTqxY" resolve="IGroupBase" />
+        <ref role="ehGHo" to="i3ya:6q45UTyu4OU" resolve="IReference" />
       </node>
     </node>
   </node>
@@ -16275,7 +16423,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="15KrVXSF9bP" role="3clF45">
-        <ref role="ehGHo" to="i3ya:45a4DYZTqxY" resolve="IGroupBase" />
+        <ref role="ehGHo" to="i3ya:6q45UTyu4OU" resolve="IReference" />
       </node>
     </node>
     <node concept="13i0hz" id="7Mca05npTCu" role="13h7CS">
@@ -17699,6 +17847,81 @@
   <node concept="13h7C7" id="3MkNnsWZ9CY">
     <property role="3GE5qa" value="group" />
     <ref role="13h7C2" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
+    <node concept="13i0hz" id="6q45UTytP7A" role="13h7CS">
+      <property role="TrG5h" value="getExpression" />
+      <ref role="13i0hy" node="6q45UTytEvW" resolve="getExpression" />
+      <node concept="3Tm1VV" id="6q45UTytP7B" role="1B3o_S" />
+      <node concept="3clFbS" id="6q45UTytP7E" role="3clF47">
+        <node concept="3clFbF" id="6q45UTytPv0" role="3cqZAp">
+          <node concept="2OqwBi" id="6q45UTytPJF" role="3clFbG">
+            <node concept="13iPFW" id="6q45UTytPuZ" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6q45UTytQfA" role="2OqNvi">
+              <ref role="3Tt5mk" to="i3ya:7athFveyQy5" resolve="specification" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6q45UTytP7F" role="3clF45">
+        <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6q45UTyuj23" role="13h7CS">
+      <property role="TrG5h" value="components" />
+      <ref role="13i0hy" node="1KUmgSF_6Sp" resolve="components" />
+      <node concept="3Tm1VV" id="6q45UTyuj24" role="1B3o_S" />
+      <node concept="3clFbS" id="6q45UTyuj25" role="3clF47">
+        <node concept="3cpWs8" id="6q45UTyuj26" role="3cqZAp">
+          <node concept="3cpWsn" id="6q45UTyuj27" role="3cpWs9">
+            <property role="TrG5h" value="nodes" />
+            <node concept="2I9FWS" id="6q45UTyuj28" role="1tU5fm">
+              <ref role="2I9WkF" to="i3ya:6q45UTyu4OU" resolve="IReference" />
+            </node>
+            <node concept="2ShNRf" id="6q45UTyuj29" role="33vP2m">
+              <node concept="2T8Vx0" id="6q45UTyuj2a" role="2ShVmc">
+                <node concept="2I9FWS" id="6q45UTyuj2b" role="2T96Bj">
+                  <ref role="2I9WkF" to="i3ya:6q45UTyu4OU" resolve="IReference" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6q45UTyuj2c" role="3cqZAp">
+          <node concept="2OqwBi" id="6q45UTyuj2d" role="3clFbG">
+            <node concept="37vLTw" id="6q45UTyuj2e" role="2Oq$k0">
+              <ref role="3cqZAo" node="6q45UTyuj27" resolve="nodes" />
+            </node>
+            <node concept="X8dFx" id="6q45UTyuj2f" role="2OqNvi">
+              <node concept="2OqwBi" id="6q45UTyuj2g" role="25WWJ7">
+                <node concept="2OqwBi" id="6q45UTyuj2h" role="2Oq$k0">
+                  <node concept="13iPFW" id="6q45UTyuj2i" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6q45UTyuj2j" role="2OqNvi">
+                    <ref role="3Tt5mk" to="i3ya:7athFveyQy5" resolve="specification" />
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="6q45UTyuj2k" role="2OqNvi">
+                  <node concept="1xMEDy" id="6q45UTyuj2l" role="1xVPHs">
+                    <node concept="chp4Y" id="6q45UTyuj2m" role="ri$Ld">
+                      <ref role="cht4Q" to="i3ya:6q45UTyu4OU" resolve="IReference" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="6q45UTyuj2n" role="1xVPHs" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6q45UTyuj2o" role="3cqZAp">
+          <node concept="37vLTw" id="6q45UTyuj2p" role="3cqZAk">
+            <ref role="3cqZAo" node="6q45UTyuj27" resolve="nodes" />
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="6q45UTyuj2q" role="3clF45">
+        <node concept="3Tqbb2" id="6q45UTyuj2r" role="_ZDj9">
+          <ref role="ehGHo" to="i3ya:6q45UTyu4OU" resolve="IReference" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="3MkNnsWZ9Oj" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
@@ -17784,7 +18007,28 @@
               <property role="3oM_SC" value="other" />
             </node>
             <node concept="3oM_SD" id="3MkNnsWZhcZ" role="1PaTwD">
-              <property role="3oM_SC" value="concepts" />
+              <property role="3oM_SC" value="concepts." />
+            </node>
+            <node concept="3oM_SD" id="1iFu5fSBqLU" role="1PaTwD">
+              <property role="3oM_SC" value="Can" />
+            </node>
+            <node concept="3oM_SD" id="1iFu5fSBqOe" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="1iFu5fSBqOP" role="1PaTwD">
+              <property role="3oM_SC" value="use:" />
+            </node>
+            <node concept="tu5oc" id="1iFu5fSBqRI" role="1PaTwD">
+              <node concept="2YIFZM" id="6q45UTye_iO" role="tu5of">
+                <ref role="37wK5l" node="5XaocLWPnkL" resolve="subsumes" />
+                <ref role="1Pybhc" node="5XaocLWPmJL" resolve="UnitSubsumption" />
+                <node concept="37vLTw" id="6q45UTye_iP" role="37wK5m">
+                  <ref role="3cqZAo" node="1Ovl2ivysBs" resolve="sub" />
+                </node>
+                <node concept="37vLTw" id="6q45UTye_iQ" role="37wK5m">
+                  <ref role="3cqZAo" node="1Ovl2ivysBu" resolve="sup" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -17940,7 +18184,7 @@
                 <node concept="2OqwBi" id="1Ovl2ivyeO$" role="1m5AlR">
                   <node concept="13iPFW" id="1Ovl2ivyeEZ" role="2Oq$k0" />
                   <node concept="3TrEf2" id="3MkNnsWZkhn" role="2OqNvi">
-                    <ref role="3Tt5mk" to="i3ya:7athFveyQy5" resolve="spec" />
+                    <ref role="3Tt5mk" to="i3ya:7athFveyQy5" resolve="specification" />
                   </node>
                 </node>
               </node>
@@ -17972,7 +18216,7 @@
                       <node concept="2pJPED" id="3MkNnsWZ9Ow" role="2pJPEn">
                         <ref role="2pJxaS" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
                         <node concept="2pIpSj" id="3MkNnsWZp72" role="2pJxcM">
-                          <ref role="2pIpSl" to="i3ya:7athFveyQy5" resolve="spec" />
+                          <ref role="2pIpSl" to="i3ya:7athFveyQy5" resolve="specification" />
                           <node concept="2pJPED" id="3MkNnsWZpma" role="28nt2d">
                             <ref role="2pJxaS" to="i3ya:7athFveyQYz" resolve="QuantityReference" />
                             <node concept="2pIpSj" id="3MkNnsWZpp$" role="2pJxcM">
@@ -18038,6 +18282,24 @@
   <node concept="13h7C7" id="3MkNnsWZvTh">
     <property role="3GE5qa" value="group" />
     <ref role="13h7C2" to="i3ya:7athFveyQYz" resolve="QuantityReference" />
+    <node concept="13i0hz" id="6q45UTyu9NL" role="13h7CS">
+      <property role="TrG5h" value="getReferencedNode" />
+      <ref role="13i0hy" node="6q45UTyu4YY" resolve="getReferencedNode" />
+      <node concept="3Tm1VV" id="6q45UTyu9NM" role="1B3o_S" />
+      <node concept="3clFbS" id="6q45UTyu9NP" role="3clF47">
+        <node concept="3clFbF" id="6q45UTyu9RR" role="3cqZAp">
+          <node concept="2OqwBi" id="6q45UTyua8z" role="3clFbG">
+            <node concept="13iPFW" id="6q45UTyu9RQ" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6q45UTyuaAm" role="2OqNvi">
+              <ref role="3Tt5mk" to="i3ya:7athFveyRoc" resolve="quantity" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6q45UTyu9NQ" role="3clF45">
+        <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      </node>
+    </node>
     <node concept="13i0hz" id="3MkNnsWZvVA" role="13h7CS">
       <property role="TrG5h" value="getPresentation" />
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -18055,27 +18317,6 @@
     </node>
     <node concept="13hLZK" id="3MkNnsWZvTi" role="13h7CW">
       <node concept="3clFbS" id="3MkNnsWZvTj" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="29KERaTv$8q" role="13h7CS">
-      <property role="TrG5h" value="getName" />
-      <ref role="13i0hy" node="45a4DYZZqLE" resolve="getName" />
-      <node concept="3Tm1VV" id="29KERaTv$8r" role="1B3o_S" />
-      <node concept="3clFbS" id="29KERaTv$8u" role="3clF47">
-        <node concept="3clFbF" id="29KERaTv$8x" role="3cqZAp">
-          <node concept="2OqwBi" id="29KERaTv_v3" role="3clFbG">
-            <node concept="2OqwBi" id="29KERaTv$zR" role="2Oq$k0">
-              <node concept="13iPFW" id="29KERaTv$mU" role="2Oq$k0" />
-              <node concept="3TrEf2" id="29KERaTv_3r" role="2OqNvi">
-                <ref role="3Tt5mk" to="i3ya:7athFveyRoc" resolve="quantity" />
-              </node>
-            </node>
-            <node concept="3TrcHB" id="29KERaTvAiO" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="29KERaTv$8v" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="7Mca05npREP">
@@ -19225,6 +19466,59 @@
         </node>
       </node>
       <node concept="17QB3L" id="14aBVbMOCl1" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6q45UTytEu1">
+    <ref role="13h7C2" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
+    <node concept="13i0hz" id="6q45UTytEvW" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getExpression" />
+      <node concept="3Tm1VV" id="6q45UTytEvX" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6q45UTytE_j" role="3clF45">
+        <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
+      </node>
+      <node concept="3clFbS" id="6q45UTytEvZ" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="6q45UTytEu2" role="13h7CW">
+      <node concept="3clFbS" id="6q45UTytEu3" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6q45UTyu4X3">
+    <ref role="13h7C2" to="i3ya:6q45UTyu4OU" resolve="IReference" />
+    <node concept="13i0hz" id="6q45UTyu4YY" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getReferencedNode" />
+      <node concept="3Tm1VV" id="6q45UTyu4YZ" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6q45UTyu52F" role="3clF45">
+        <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      </node>
+      <node concept="3clFbS" id="6q45UTyu4Z1" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="15KrVXSFh9s" role="13h7CS">
+      <property role="TrG5h" value="getName" />
+      <ref role="13i0hy" node="45a4DYZZqLE" resolve="getName" />
+      <node concept="3Tm1VV" id="15KrVXSFh9t" role="1B3o_S" />
+      <node concept="3clFbS" id="15KrVXSFh9w" role="3clF47">
+        <node concept="3clFbF" id="15KrVXSFhw8" role="3cqZAp">
+          <node concept="2OqwBi" id="15KrVXSFixa" role="3clFbG">
+            <node concept="2OqwBi" id="15KrVXSFhIU" role="2Oq$k0">
+              <node concept="13iPFW" id="15KrVXSFhw5" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6q45UTyu8TS" role="2OqNvi">
+                <ref role="37wK5l" node="6q45UTyu4YY" resolve="getReferencedNode" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="15KrVXSFj39" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="15KrVXSFh9x" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="6q45UTyu4X4" role="13h7CW">
+      <node concept="3clFbS" id="6q45UTyu4X5" role="2VODD2" />
     </node>
   </node>
 </model>

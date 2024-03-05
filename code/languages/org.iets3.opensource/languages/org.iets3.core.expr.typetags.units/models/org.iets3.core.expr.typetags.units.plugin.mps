@@ -4689,7 +4689,7 @@
                 <ref role="3cqZAo" node="1FkCRmSo0Xe" resolve="newSpecification" />
               </node>
               <node concept="3TrEf2" id="1FkCRmSGnx$" role="2OqNvi">
-                <ref role="3Tt5mk" to="i3ya:7athFveyQy5" resolve="spec" />
+                <ref role="3Tt5mk" to="i3ya:7athFveyQy5" resolve="specification" />
               </node>
             </node>
           </node>
