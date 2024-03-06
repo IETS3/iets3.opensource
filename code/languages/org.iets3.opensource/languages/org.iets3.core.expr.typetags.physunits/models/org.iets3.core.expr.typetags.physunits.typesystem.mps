@@ -1237,7 +1237,7 @@
                                         <ref role="3cqZAo" node="6FK1Pb8uaUA" resolve="it" />
                                       </node>
                                       <node concept="3TrEf2" id="5Q6EZP5PnyX" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="i3ya:7i1yFLkslE5" resolve="exp" />
+                                        <ref role="3Tt5mk" to="i3ya:7i1yFLkslE5" resolve="exponent" />
                                       </node>
                                     </node>
                                     <node concept="10Nm6u" id="6FK1Pb8udWp" role="3uHU7w" />
@@ -1252,7 +1252,7 @@
                                           <ref role="3cqZAo" node="6FK1Pb8uaUA" resolve="it" />
                                         </node>
                                         <node concept="3TrEf2" id="5Q6EZP5PlXD" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="i3ya:7i1yFLkslE5" resolve="exp" />
+                                          <ref role="3Tt5mk" to="i3ya:7i1yFLkslE5" resolve="exponent" />
                                         </node>
                                       </node>
                                       <node concept="2qgKlT" id="3j3yk3gDP53" role="2OqNvi">
@@ -5522,7 +5522,7 @@
                     <node concept="2pJPED" id="45a4DYZtegF" role="2pJPEn">
                       <ref role="2pJxaS" to="i3ya:45a4DYZrKZa" resolve="QuantityDivisionType" />
                       <node concept="2pIpSj" id="45a4DYZtegG" role="2pJxcM">
-                        <ref role="2pIpSl" to="i3ya:1JynhuWn3X4" resolve="top" />
+                        <ref role="2pIpSl" to="i3ya:1JynhuWn3X4" resolve="numerator" />
                         <node concept="36biLy" id="45a4DYZtegH" role="28nt2d">
                           <node concept="10QFUN" id="45a4DYZtegI" role="36biLW">
                             <node concept="2X3wrD" id="45a4DYZtegJ" role="10QFUP">
@@ -5535,7 +5535,7 @@
                         </node>
                       </node>
                       <node concept="2pIpSj" id="45a4DYZtegL" role="2pJxcM">
-                        <ref role="2pIpSl" to="i3ya:1JynhuWn4gA" resolve="bot" />
+                        <ref role="2pIpSl" to="i3ya:1JynhuWn4gA" resolve="denominator" />
                         <node concept="36biLy" id="45a4DYZtegM" role="28nt2d">
                           <node concept="10QFUN" id="45a4DYZtegN" role="36biLW">
                             <node concept="2X3wrD" id="45a4DYZtegO" role="10QFUP">
@@ -5586,7 +5586,7 @@
                   <ref role="1YBMHb" node="45a4DYZslmr" resolve="qDiv" />
                 </node>
                 <node concept="3TrEf2" id="45a4DYZsmvJ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="i3ya:1JynhuWn9hu" resolve="bot" />
+                  <ref role="3Tt5mk" to="i3ya:1JynhuWn9hu" resolve="denominator" />
                 </node>
               </node>
             </node>
@@ -5602,7 +5602,7 @@
               <ref role="1YBMHb" node="45a4DYZslmr" resolve="qDiv" />
             </node>
             <node concept="3TrEf2" id="45a4DYZsmce" role="2OqNvi">
-              <ref role="3Tt5mk" to="i3ya:1JynhuWn98w" resolve="top" />
+              <ref role="3Tt5mk" to="i3ya:1JynhuWn98w" resolve="numerator" />
             </node>
           </node>
         </node>
@@ -8215,7 +8215,7 @@
     </node>
     <node concept="1YaCAy" id="45a4DYZRQkx" role="1YuTPh">
       <property role="TrG5h" value="qMul" />
-      <ref role="1YaFvo" to="i3ya:7athFveCYSy" resolve="QuantityMul" />
+      <ref role="1YaFvo" to="i3ya:7athFveCYSy" resolve="QuantityMultiplication" />
     </node>
   </node>
   <node concept="1YbPZF" id="7DmLSRHe$1q">
@@ -8421,7 +8421,7 @@
                     <node concept="2pJPED" id="3xM68GMdFSr" role="2pJPEn">
                       <ref role="2pJxaS" to="i3ya:45a4DYZrKZa" resolve="QuantityDivisionType" />
                       <node concept="2pIpSj" id="3xM68GMdG3c" role="2pJxcM">
-                        <ref role="2pIpSl" to="i3ya:1JynhuWn3X4" resolve="top" />
+                        <ref role="2pIpSl" to="i3ya:1JynhuWn3X4" resolve="numerator" />
                         <node concept="36biLy" id="3xM68GMdGtp" role="28nt2d">
                           <node concept="10QFUN" id="3xM68GMdGtq" role="36biLW">
                             <node concept="2X3wrD" id="3xM68GMdGtr" role="10QFUP">
@@ -8434,7 +8434,7 @@
                         </node>
                       </node>
                       <node concept="2pIpSj" id="3xM68GMdGxC" role="2pJxcM">
-                        <ref role="2pIpSl" to="i3ya:1JynhuWn4gA" resolve="bot" />
+                        <ref role="2pIpSl" to="i3ya:1JynhuWn4gA" resolve="denominator" />
                         <node concept="36biLy" id="3xM68GMdGCv" role="28nt2d">
                           <node concept="1eOMI4" id="3xM68GMdGCw" role="36biLW">
                             <node concept="10QFUN" id="3xM68GMdGCx" role="1eOMHV">
@@ -8487,7 +8487,7 @@
                   <ref role="1YBMHb" node="7DmLSRHf8$1" resolve="unitDiv" />
                 </node>
                 <node concept="3TrEf2" id="7DmLSRHfq18" role="2OqNvi">
-                  <ref role="3Tt5mk" to="i3ya:7athFveF1B9" resolve="bot" />
+                  <ref role="3Tt5mk" to="i3ya:7athFveF1B9" resolve="denominator" />
                 </node>
               </node>
             </node>
@@ -8503,7 +8503,7 @@
               <ref role="1YBMHb" node="7DmLSRHf8$1" resolve="unitDiv" />
             </node>
             <node concept="3TrEf2" id="7DmLSRHfpGZ" role="2OqNvi">
-              <ref role="3Tt5mk" to="i3ya:7athFveF1os" resolve="top" />
+              <ref role="3Tt5mk" to="i3ya:7athFveF1os" resolve="numerator" />
             </node>
           </node>
         </node>
@@ -9256,7 +9256,7 @@
                     </node>
                   </node>
                   <node concept="2pIpSj" id="3xM68GMdItG" role="2pJxcM">
-                    <ref role="2pIpSl" to="i3ya:73cP8DpWLuf" resolve="exp" />
+                    <ref role="2pIpSl" to="i3ya:73cP8DpWLuf" resolve="exponent" />
                     <node concept="36biLy" id="3xM68GMdI_L" role="28nt2d">
                       <node concept="2OqwBi" id="3xM68GMdI_M" role="36biLW">
                         <node concept="2OqwBi" id="3xM68GMdI_N" role="2Oq$k0">
@@ -9264,7 +9264,7 @@
                             <ref role="1YBMHb" node="7i1yFLkvFDg" resolve="unitExponent" />
                           </node>
                           <node concept="3TrEf2" id="3xM68GMdI_P" role="2OqNvi">
-                            <ref role="3Tt5mk" to="i3ya:7i1yFLkslE5" resolve="exp" />
+                            <ref role="3Tt5mk" to="i3ya:7i1yFLkslE5" resolve="exponent" />
                           </node>
                         </node>
                         <node concept="1$rogu" id="3xM68GMdI_Q" role="2OqNvi" />
@@ -9380,7 +9380,7 @@
                     </node>
                   </node>
                   <node concept="2pIpSj" id="7i1yFLkwics" role="2pJxcM">
-                    <ref role="2pIpSl" to="i3ya:73cP8DpWLuf" resolve="exp" />
+                    <ref role="2pIpSl" to="i3ya:73cP8DpWLuf" resolve="exponent" />
                     <node concept="36biLy" id="7i1yFLkwict" role="28nt2d">
                       <node concept="2OqwBi" id="7i1yFLkwmAs" role="36biLW">
                         <node concept="2OqwBi" id="7i1yFLkwmm2" role="2Oq$k0">
@@ -9388,7 +9388,7 @@
                             <ref role="1YBMHb" node="7i1yFLkwhY4" resolve="qExp" />
                           </node>
                           <node concept="3TrEf2" id="7i1yFLkwmrx" role="2OqNvi">
-                            <ref role="3Tt5mk" to="i3ya:73cP8DpWLWP" resolve="exp" />
+                            <ref role="3Tt5mk" to="i3ya:73cP8DpWLWP" resolve="exponent" />
                           </node>
                         </node>
                         <node concept="1$rogu" id="7i1yFLkwmUQ" role="2OqNvi" />

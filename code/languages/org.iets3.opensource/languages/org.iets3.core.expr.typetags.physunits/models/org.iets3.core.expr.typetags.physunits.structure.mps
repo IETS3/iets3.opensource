@@ -455,7 +455,7 @@
     <node concept="1TJgyj" id="73cP8DpWLWP" role="1TKVEi">
       <property role="IQ2ns" value="8128105118176583477" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="exp" />
+      <property role="20kJfa" value="exponent" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3j3yk3guAAl" resolve="Exponent" />
     </node>
@@ -480,14 +480,14 @@
     <node concept="1TJgyj" id="1JynhuWn98w" role="1TKVEi">
       <property role="IQ2ns" value="2009270740286476832" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="top" />
+      <property role="20kJfa" value="numerator" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7athFve_SVK" resolve="QuantityExpression" />
     </node>
     <node concept="1TJgyj" id="1JynhuWn9hu" role="1TKVEi">
       <property role="IQ2ns" value="2009270740286477406" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="bot" />
+      <property role="20kJfa" value="denominator" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7athFve_SVK" resolve="QuantityExpression" />
     </node>
@@ -495,7 +495,7 @@
   <node concept="1TIwiD" id="7athFveCYSy">
     <property role="EcuMT" value="8258835046927167010" />
     <property role="3GE5qa" value="group" />
-    <property role="TrG5h" value="QuantityMul" />
+    <property role="TrG5h" value="QuantityMultiplication" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="a quantity multiplication expression" />
     <ref role="1TJDcQ" node="7athFve_SVK" resolve="QuantityExpression" />
@@ -538,14 +538,14 @@
     <node concept="1TJgyj" id="7athFveF1os" role="1TKVEi">
       <property role="IQ2ns" value="8258835046927701532" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="top" />
+      <property role="20kJfa" value="numerator" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7athFveEYHG" resolve="UnitExpression" />
     </node>
     <node concept="1TJgyj" id="7athFveF1B9" role="1TKVEi">
       <property role="IQ2ns" value="8258835046927702473" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="bot" />
+      <property role="20kJfa" value="denominator" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7athFveEYHG" resolve="UnitExpression" />
     </node>
@@ -577,14 +577,14 @@
     <node concept="1TJgyj" id="1JynhuWn3X4" role="1TKVEi">
       <property role="IQ2ns" value="2009270740286455620" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="top" />
+      <property role="20kJfa" value="numerator" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="69ocqYc6oAT" resolve="QuantityType" />
     </node>
     <node concept="1TJgyj" id="1JynhuWn4gA" role="1TKVEi">
       <property role="IQ2ns" value="2009270740286456870" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="bot" />
+      <property role="20kJfa" value="denominator" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="69ocqYc6oAT" resolve="QuantityType" />
     </node>
@@ -643,7 +643,7 @@
     <node concept="1TJgyj" id="73cP8DpWLuf" role="1TKVEi">
       <property role="IQ2ns" value="8128105118176581519" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="exp" />
+      <property role="20kJfa" value="exponent" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3j3yk3guAAl" resolve="Exponent" />
     </node>
@@ -755,7 +755,7 @@
     <node concept="1TJgyj" id="7i1yFLkslE5" role="1TKVEi">
       <property role="IQ2ns" value="8395143721870514821" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="exp" />
+      <property role="20kJfa" value="exponent" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3j3yk3guAAl" resolve="Exponent" />
     </node>
@@ -867,7 +867,7 @@
     <node concept="1TJgyj" id="4RImAbi2n3Y" role="1TKVEi">
       <property role="IQ2ns" value="5615525165854716158" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="exp" />
+      <property role="20kJfa" value="exponent" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3j3yk3guAAl" resolve="Exponent" />
     </node>
@@ -909,14 +909,14 @@
     <node concept="1TJgyj" id="4RImAbi2pkm" role="1TKVEi">
       <property role="IQ2ns" value="5615525165854725398" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="top" />
+      <property role="20kJfa" value="numerator" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4RImAbi2k39" resolve="DimensionExpression" />
     </node>
     <node concept="1TJgyj" id="4RImAbi2pkn" role="1TKVEi">
       <property role="IQ2ns" value="5615525165854725399" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="bot" />
+      <property role="20kJfa" value="denominator" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4RImAbi2k39" resolve="DimensionExpression" />
     </node>
