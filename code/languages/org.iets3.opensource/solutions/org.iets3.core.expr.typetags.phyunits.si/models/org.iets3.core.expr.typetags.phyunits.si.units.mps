@@ -16,6 +16,7 @@
         <child id="1741902046311628549" name="expression" index="27K$mF" />
       </concept>
       <concept id="5185104661801317038" name="org.iets3.core.expr.typetags.physunits.structure.ValExpression" flags="ng" index="2m5Cep" />
+      <concept id="5615525165854719246" name="org.iets3.core.expr.typetags.physunits.structure.Dimension" flags="ng" index="2vTMtG" />
       <concept id="8395143721870492173" name="org.iets3.core.expr.typetags.physunits.structure.UnitMul" flags="ng" index="wW8yL">
         <child id="8395143721870494462" name="left" index="wW812" />
         <child id="8395143721870495244" name="right" index="wW8iK" />
@@ -42,6 +43,7 @@
       </concept>
       <concept id="2034036099103723287" name="org.iets3.core.expr.typetags.physunits.structure.Quantity" flags="ng" index="Rn5op">
         <property id="8779275567063086785" name="derived" index="1xQvps" />
+        <child id="5615525165854741624" name="dimension" index="2vTSSq" />
       </concept>
       <concept id="1069230850837260491" name="org.iets3.core.expr.typetags.physunits.structure.ConversionRule" flags="ng" index="TRoc0">
         <property id="4042938304130002450" name="isImplicit" index="2yp$z_" />
@@ -149,29 +151,53 @@
     <node concept="Rn5op" id="3xM68GMigWo" role="_iOnB">
       <property role="TrG5h" value="time" />
       <property role="1xQvps" value="false" />
+      <node concept="2vTMtG" id="4RImAbi4sDf" role="2vTSSq">
+        <property role="TrG5h" value="T" />
+      </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWh" role="_iOnB">
       <property role="TrG5h" value="electric current" />
+      <node concept="2vTMtG" id="4RImAbi4sDg" role="2vTSSq">
+        <property role="TrG5h" value="I" />
+      </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWi" role="_iOnB">
       <property role="TrG5h" value="dimensionless" />
       <property role="1xQvps" value="false" />
+      <node concept="2vTMtG" id="4RImAbijclJ" role="2vTSSq">
+        <property role="TrG5h" value="1" />
+      </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWj" role="_iOnB">
       <property role="TrG5h" value="length" />
+      <node concept="2vTMtG" id="4RImAbi4sDh" role="2vTSSq">
+        <property role="TrG5h" value="L" />
+      </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWk" role="_iOnB">
       <property role="TrG5h" value="amount of substance" />
+      <node concept="2vTMtG" id="4RImAbi4sDi" role="2vTSSq">
+        <property role="TrG5h" value="N" />
+      </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWl" role="_iOnB">
       <property role="TrG5h" value="luminous intensity" />
+      <node concept="2vTMtG" id="4RImAbi4sDj" role="2vTSSq">
+        <property role="TrG5h" value="J" />
+      </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWm" role="_iOnB">
       <property role="TrG5h" value="thermodynamic temperature" />
+      <node concept="2vTMtG" id="4RImAbi4sDk" role="2vTSSq">
+        <property role="TrG5h" value="Θ" />
+      </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWn" role="_iOnB">
       <property role="TrG5h" value="mass" />
       <property role="1xQvps" value="false" />
+      <node concept="2vTMtG" id="4RImAbi4sDl" role="2vTSSq">
+        <property role="TrG5h" value="M" />
+      </node>
     </node>
     <node concept="_ixoA" id="3xM68GMigWp" role="_iOnB" />
     <node concept="1Ws0TD" id="3xM68GMigWq" role="_iOnB">
