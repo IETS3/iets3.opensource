@@ -223,7 +223,7 @@ task failOnTestError() {
         if(juniXml.exists()){
             def junitResult = new XmlSlurper().parse(juniXml)
             def failures = junitResult.'**'.findAll { it.name() == 'failure' }
-            def errors = junitResult.'**'.findAll { it.name() == 'errors' }
+            def errors = junitResult.'**'.findAll { it.name() == 'error' }
 
             if (failures || errors) {
                 def amount = failures.size() + errors.size()
