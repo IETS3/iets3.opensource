@@ -68,7 +68,7 @@
     </language>
   </registry>
   <node concept="PlHQZ" id="6mzZsELfLSn">
-    <property role="TrG5h" value="ICanUseNoUnit" />
+    <property role="TrG5h" value="ICanUseUnitlessUnit" />
     <property role="EcuMT" value="7323976466033483287" />
     <property role="3GE5qa" value="interfaces" />
   </node>
@@ -263,7 +263,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="PrWs8" id="5pSqQr$_PJ9" role="PzmwI">
-      <ref role="PrY4T" node="6mzZsELfLSn" resolve="ICanUseNoUnit" />
+      <ref role="PrY4T" node="6mzZsELfLSn" resolve="ICanUseUnitlessUnit" />
     </node>
     <node concept="PrWs8" id="1fzaMYHwtl5" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />

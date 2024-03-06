@@ -109,7 +109,7 @@
         <child id="8395143721870495244" name="right" index="wW8iK" />
       </concept>
       <concept id="8395143721870511934" name="org.iets3.core.expr.typetags.physunits.structure.UnitExponent" flags="ng" index="wWcm2">
-        <child id="8395143721870514821" name="exp" index="wWd0T" />
+        <child id="8395143721870514821" name="exponent" index="wWd0T" />
         <child id="8395143721870514822" name="base" index="wWd0U" />
       </concept>
       <concept id="624957442818070507" name="org.iets3.core.expr.typetags.physunits.structure.StripUnitExpression" flags="ng" index="2yh1Mg" />
@@ -141,11 +141,11 @@
       </concept>
       <concept id="8258835046926359799" name="org.iets3.core.expr.typetags.physunits.structure.QuantityExponent" flags="ng" index="2W2HD0">
         <child id="2009270740286478503" name="base" index="2BJGmK" />
-        <child id="8128105118176583477" name="exp" index="DfWIZ" />
+        <child id="8128105118176583477" name="exponent" index="DfWIZ" />
       </concept>
       <concept id="8258835046926363392" name="org.iets3.core.expr.typetags.physunits.structure.QuantityDivision" flags="ng" index="2W2IQR">
-        <child id="2009270740286477406" name="bot" index="2BJG_9" />
-        <child id="2009270740286476832" name="top" index="2BJGWR" />
+        <child id="2009270740286477406" name="denominator" index="2BJG_9" />
+        <child id="2009270740286476832" name="numerator" index="2BJGWR" />
       </concept>
       <concept id="8258835046925559004" name="org.iets3.core.expr.typetags.physunits.structure.QuantitySpecification" flags="ng" index="2W5y9F">
         <child id="8258835046925559941" name="specification" index="2W5ySM" />
@@ -154,10 +154,10 @@
         <reference id="8258835046925563404" name="quantity" index="2W5z2V" />
       </concept>
       <concept id="8258835046927700725" name="org.iets3.core.expr.typetags.physunits.structure.UnitDivision" flags="ng" index="2Wclh2">
-        <child id="8258835046927701532" name="top" index="2Wcl2F" />
-        <child id="8258835046927702473" name="bot" index="2WclXY" />
+        <child id="8258835046927701532" name="numerator" index="2Wcl2F" />
+        <child id="8258835046927702473" name="denominator" index="2WclXY" />
       </concept>
-      <concept id="8258835046927167010" name="org.iets3.core.expr.typetags.physunits.structure.QuantityMul" flags="ng" index="2WfEyl">
+      <concept id="8258835046927167010" name="org.iets3.core.expr.typetags.physunits.structure.QuantityMultiplication" flags="ng" index="2WfEyl">
         <child id="2009270740286479703" name="left" index="2BJG10" />
         <child id="2009270740286480511" name="right" index="2BJJPC" />
       </concept>
@@ -182,7 +182,7 @@
       </concept>
       <concept id="4704593238062735070" name="org.iets3.core.expr.typetags.physunits.structure.QuantityExponentType" flags="ng" index="3Y9gL1">
         <child id="2009270740286458331" name="base" index="2BJxjc" />
-        <child id="8128105118176581519" name="exp" index="DfWc5" />
+        <child id="8128105118176581519" name="exponent" index="DfWc5" />
       </concept>
       <concept id="4704593238063132393" name="org.iets3.core.expr.typetags.physunits.structure.QuantityEmptyType" flags="ng" index="3YfNLQ" />
     </language>
@@ -5679,7 +5679,7 @@
     <node concept="TRoc0" id="1FkCRmRXPMk" role="_iOnC">
       <property role="27Q$Ze" value="false" />
       <node concept="CIsvn" id="1FkCRmRXPMl" role="2vOZTa">
-        <ref role="CIi3I" to="8ps7:36kPvG5oSra" resolve="nounit" />
+        <ref role="CIi3I" to="8ps7:36kPvG5oSra" resolve="unitless" />
       </node>
       <node concept="CIsvn" id="1FkCRmRXPMm" role="2vOYbH">
         <ref role="CIi3I" node="1FkCRmRXPkR" resolve="percent" />
@@ -9734,7 +9734,7 @@
                 <node concept="ZC_QK" id="EsE2hyjkgV" role="2tJFKM">
                   <ref role="2aWVGs" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
                   <node concept="ZC_QK" id="EsE2hyjkgW" role="2aWVGa">
-                    <ref role="2aWVGs" to="8ps7:36kPvG5oSra" resolve="nounit" />
+                    <ref role="2aWVGs" to="8ps7:36kPvG5oSra" resolve="unitless" />
                   </node>
                 </node>
               </node>
