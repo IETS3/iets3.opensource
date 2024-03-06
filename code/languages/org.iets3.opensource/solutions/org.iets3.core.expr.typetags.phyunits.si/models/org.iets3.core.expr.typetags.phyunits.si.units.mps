@@ -42,6 +42,7 @@
         <child id="8337440621611297539" name="specification" index="CIi4h" />
       </concept>
       <concept id="2034036099103723287" name="org.iets3.core.expr.typetags.physunits.structure.Quantity" flags="ng" index="Rn5op">
+        <property id="176225556171206769" name="symbol" index="2DB2h4" />
         <property id="8779275567063086785" name="derived" index="1xQvps" />
         <child id="5615525165854741624" name="dimension" index="2vTSSq" />
       </concept>
@@ -151,12 +152,14 @@
     <node concept="Rn5op" id="3xM68GMigWo" role="_iOnB">
       <property role="TrG5h" value="time" />
       <property role="1xQvps" value="false" />
+      <property role="2DB2h4" value="t" />
       <node concept="2vTMtG" id="4RImAbi4sDf" role="2vTSSq">
         <property role="TrG5h" value="T" />
       </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWh" role="_iOnB">
       <property role="TrG5h" value="electric current" />
+      <property role="2DB2h4" value="I" />
       <node concept="2vTMtG" id="4RImAbi4sDg" role="2vTSSq">
         <property role="TrG5h" value="I" />
       </node>
@@ -164,30 +167,35 @@
     <node concept="Rn5op" id="3xM68GMigWi" role="_iOnB">
       <property role="TrG5h" value="dimensionless" />
       <property role="1xQvps" value="false" />
+      <property role="2DB2h4" value="1" />
       <node concept="2vTMtG" id="4RImAbijclJ" role="2vTSSq">
         <property role="TrG5h" value="1" />
       </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWj" role="_iOnB">
       <property role="TrG5h" value="length" />
+      <property role="2DB2h4" value="l" />
       <node concept="2vTMtG" id="4RImAbi4sDh" role="2vTSSq">
         <property role="TrG5h" value="L" />
       </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWk" role="_iOnB">
       <property role="TrG5h" value="amount of substance" />
+      <property role="2DB2h4" value="n" />
       <node concept="2vTMtG" id="4RImAbi4sDi" role="2vTSSq">
         <property role="TrG5h" value="N" />
       </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWl" role="_iOnB">
       <property role="TrG5h" value="luminous intensity" />
+      <property role="2DB2h4" value="Iᵥ" />
       <node concept="2vTMtG" id="4RImAbi4sDj" role="2vTSSq">
         <property role="TrG5h" value="J" />
       </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWm" role="_iOnB">
       <property role="TrG5h" value="thermodynamic temperature" />
+      <property role="2DB2h4" value="T" />
       <node concept="2vTMtG" id="4RImAbi4sDk" role="2vTSSq">
         <property role="TrG5h" value="Θ" />
       </node>
@@ -195,6 +203,7 @@
     <node concept="Rn5op" id="3xM68GMigWn" role="_iOnB">
       <property role="TrG5h" value="mass" />
       <property role="1xQvps" value="false" />
+      <property role="2DB2h4" value="m" />
       <node concept="2vTMtG" id="4RImAbi4sDl" role="2vTSSq">
         <property role="TrG5h" value="M" />
       </node>
@@ -271,6 +280,7 @@
     <node concept="Rn5op" id="6EvkZrKS7fP" role="_iOnB">
       <property role="TrG5h" value="area" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="A" />
       <node concept="2W5y9F" id="6q45UTzr_np" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_nq" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_nr" role="2BJJPC">
@@ -285,6 +295,7 @@
     <node concept="Rn5op" id="6EvkZrKSbgd" role="_iOnB">
       <property role="TrG5h" value="volume" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="V" />
       <node concept="2W5y9F" id="6q45UTzr_nt" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_nu" role="2W5ySM">
           <node concept="2WfEyl" id="6q45UTzr_nv" role="2BJG10">
@@ -304,6 +315,7 @@
     <node concept="Rn5op" id="3xM68GMigW_" role="_iOnB">
       <property role="TrG5h" value="magnetic flux" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="Φ" />
       <node concept="2W5y9F" id="6q45UTzr_nz" role="4gtQf">
         <node concept="2WfEyl" id="4RImAbhwezK" role="2W5ySM">
           <node concept="2W5y$k" id="4RImAbhwezL" role="2BJG10">
@@ -323,6 +335,7 @@
     <node concept="Rn5op" id="3xM68GMigWG" role="_iOnB">
       <property role="TrG5h" value="electrical conductance" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="G" />
       <node concept="2W5y9F" id="6q45UTzr_nD" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_nE" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_nF" role="2BJG10">
@@ -342,6 +355,7 @@
     <node concept="Rn5op" id="3xM68GMigWN" role="_iOnB">
       <property role="TrG5h" value="absorbed dose" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="D" />
       <node concept="2W5y9F" id="6q45UTzr_nJ" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_nK" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_nL" role="2BJG10">
@@ -361,6 +375,7 @@
     <node concept="Rn5op" id="3xM68GMigWU" role="_iOnB">
       <property role="TrG5h" value="electrical capacitance" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="C" />
       <node concept="2W5y9F" id="6q45UTzr_nP" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_nQ" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_nR" role="2BJG10">
@@ -380,6 +395,7 @@
     <node concept="Rn5op" id="3xM68GMigX1" role="_iOnB">
       <property role="TrG5h" value="electrical inductance" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="L" />
       <node concept="2W5y9F" id="6q45UTzr_nV" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_nW" role="2W5ySM">
           <node concept="2WfEyl" id="6q45UTzr_nX" role="2BJG10">
@@ -404,6 +420,7 @@
     <node concept="Rn5op" id="3xM68GMigXa" role="_iOnB">
       <property role="TrG5h" value="magnetic induction" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="B" />
       <node concept="2W5y9F" id="6q45UTzr_o3" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_o4" role="2W5ySM">
           <node concept="2WfEyl" id="6q45UTzr_o5" role="2BJG10">
@@ -428,6 +445,7 @@
     <node concept="Rn5op" id="3xM68GMigXj" role="_iOnB">
       <property role="TrG5h" value="equivalent dose" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="H" />
       <node concept="2W5y9F" id="6q45UTzr_ob" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_oc" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_od" role="2BJG10">
@@ -447,6 +465,7 @@
     <node concept="Rn5op" id="3xM68GMigXq" role="_iOnB">
       <property role="TrG5h" value="electrical resistance" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="R" />
       <node concept="2W5y9F" id="6q45UTzr_oh" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_oi" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_oj" role="2BJG10">
@@ -466,6 +485,7 @@
     <node concept="Rn5op" id="3xM68GMigXx" role="_iOnB">
       <property role="TrG5h" value="pressure" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="p" />
       <node concept="2W5y9F" id="6q45UTzr_on" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_oo" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_op" role="2BJG10">
@@ -485,6 +505,7 @@
     <node concept="Rn5op" id="3xM68GMigXC" role="_iOnB">
       <property role="TrG5h" value="frequency" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="f" />
       <node concept="2W5y9F" id="6q45UTzr_ot" role="4gtQf">
         <node concept="2W2HD0" id="6q45UTzr_ou" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_ov" role="2BJGmK">
@@ -499,6 +520,7 @@
     <node concept="Rn5op" id="3xM68GMigXH" role="_iOnB">
       <property role="TrG5h" value="voltage" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="V" />
       <node concept="2W5y9F" id="6q45UTzr_ox" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_oy" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_oz" role="2BJG10">
@@ -518,6 +540,7 @@
     <node concept="Rn5op" id="3xM68GMigXO" role="_iOnB">
       <property role="TrG5h" value="luminous flux" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="F" />
       <node concept="2W5y9F" id="6q45UTzr_oB" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_oC" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_oD" role="2BJG10">
@@ -532,6 +555,7 @@
     <node concept="Rn5op" id="3xM68GMigXT" role="_iOnB">
       <property role="TrG5h" value="illuminance" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="Eᵥ" />
       <node concept="2W5y9F" id="6q45UTzr_oF" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_oG" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_oH" role="2BJG10">
@@ -551,6 +575,7 @@
     <node concept="Rn5op" id="3xM68GMigY0" role="_iOnB">
       <property role="TrG5h" value="catalytic activity" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="z" />
       <node concept="2W5y9F" id="6q45UTzr_oL" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_oM" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_oN" role="2BJG10">
@@ -570,6 +595,7 @@
     <node concept="Rn5op" id="3xM68GMigY7" role="_iOnB">
       <property role="TrG5h" value="electric charge" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="Q" />
       <node concept="2W5y9F" id="6q45UTzr_oR" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_oS" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_oT" role="2BJJPC">
@@ -584,6 +610,7 @@
     <node concept="Rn5op" id="3xM68GMigYc" role="_iOnB">
       <property role="TrG5h" value="angle" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="∠" />
       <node concept="1z9TsT" id="6EvkZrKTD1P" role="lGtFl">
         <node concept="OjmMv" id="6EvkZrKTD1Q" role="1w35rA">
           <node concept="19SGf9" id="6EvkZrKTD1R" role="OjmMu">
@@ -617,6 +644,7 @@
     <node concept="Rn5op" id="3xM68GMigYl" role="_iOnB">
       <property role="TrG5h" value="force" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="F⃗" />
       <node concept="2W5y9F" id="6q45UTzr_p3" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_p4" role="2W5ySM">
           <node concept="2WfEyl" id="6q45UTzr_p5" role="2BJG10">
@@ -641,6 +669,7 @@
     <node concept="Rn5op" id="3xM68GMigYu" role="_iOnB">
       <property role="TrG5h" value="power" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="P" />
       <node concept="2W5y9F" id="6q45UTzr_pb" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_pc" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_pd" role="2BJG10">
@@ -660,6 +689,7 @@
     <node concept="Rn5op" id="3xM68GMigY_" role="_iOnB">
       <property role="TrG5h" value="energy" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="E" />
       <node concept="2W5y9F" id="6q45UTzr_ph" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_pi" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_pj" role="2BJG10">
@@ -674,6 +704,7 @@
     <node concept="Rn5op" id="3xM68GMigYE" role="_iOnB">
       <property role="TrG5h" value="radioactivity" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="A" />
       <node concept="2W5y9F" id="6q45UTzr_pl" role="4gtQf">
         <node concept="2W2HD0" id="6q45UTzr_pm" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_pn" role="2BJGmK">
@@ -772,6 +803,7 @@
     <node concept="Rn5op" id="6EvkZrOC$$z" role="_iOnB">
       <property role="TrG5h" value="reactive power" />
       <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="Q" />
       <node concept="2W5y9F" id="6q45UTzr_pp" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_pq" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_pr" role="2BJJPC">
@@ -2020,6 +2052,7 @@
     <node concept="Rn5op" id="6EvkZrL11H8" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="speed" />
+      <property role="2DB2h4" value="v" />
       <node concept="2W5y9F" id="6q45UTzr_pt" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_pu" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_pv" role="2BJJPC">
@@ -2039,6 +2072,7 @@
     <node concept="Rn5op" id="6EvkZrL3j6r" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="acceleration" />
+      <property role="2DB2h4" value="a⃗" />
       <node concept="2W5y9F" id="6q45UTzr_pz" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_p$" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_p_" role="2BJJPC">
@@ -2058,6 +2092,7 @@
     <node concept="Rn5op" id="6EvkZrL3vn0" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="jerk" />
+      <property role="2DB2h4" value="j⃗" />
       <node concept="2W5y9F" id="6q45UTzr_pD" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_pE" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_pF" role="2BJJPC">
@@ -2077,6 +2112,7 @@
     <node concept="Rn5op" id="6EvkZrL3FH6" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="snap" />
+      <property role="2DB2h4" value="s⃗" />
       <node concept="2W5y9F" id="6q45UTzr_pJ" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_pK" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_pL" role="2BJJPC">
@@ -2096,6 +2132,7 @@
     <node concept="Rn5op" id="6EvkZrL40tx" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="angular velocity" />
+      <property role="2DB2h4" value="ω" />
       <node concept="2W5y9F" id="6q45UTzr_pP" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_pQ" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_pR" role="2BJG10">
@@ -2115,6 +2152,7 @@
     <node concept="Rn5op" id="6EvkZrL4l8w" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="angular acceleration" />
+      <property role="2DB2h4" value="ωₐ" />
       <node concept="2W5y9F" id="6q45UTzr_pV" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_pW" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_pX" role="2BJG10">
@@ -2134,6 +2172,7 @@
     <node concept="Rn5op" id="6EvkZrL4DPt" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="frequency drift" />
+      <property role="2DB2h4" value="Δf" />
       <node concept="2W5y9F" id="6q45UTzr_q1" role="4gtQf">
         <node concept="2W2HD0" id="6q45UTzr_q2" role="2W5ySM">
           <node concept="CIsvk" id="6q45UTzr_q3" role="DfWIZ">
@@ -2147,7 +2186,8 @@
     </node>
     <node concept="Rn5op" id="6EvkZrLbmU3" role="_iOnB">
       <property role="1xQvps" value="true" />
-      <property role="TrG5h" value="volumetric flow" />
+      <property role="TrG5h" value="volumetric flow rate" />
+      <property role="2DB2h4" value="Q" />
       <node concept="2W5y9F" id="6q45UTzr_q5" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_q6" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_q7" role="2BJJPC">
@@ -2351,6 +2391,7 @@
     <node concept="Rn5op" id="6EvkZrLmub8" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="momentum" />
+      <property role="2DB2h4" value="p⃗" />
       <node concept="2W5y9F" id="6q45UTzr_qd" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_qe" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_qf" role="2BJG10">
@@ -2365,6 +2406,7 @@
     <node concept="Rn5op" id="6EvkZrLwzjA" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="angular momentum" />
+      <property role="2DB2h4" value="L" />
       <node concept="2W5y9F" id="6q45UTzr_qh" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_qi" role="2W5ySM">
           <node concept="2WfEyl" id="6q45UTzr_qj" role="2BJG10">
@@ -2384,6 +2426,7 @@
     <node concept="Rn5op" id="6EvkZrLwMAi" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="newton-metre" />
+      <property role="2DB2h4" value="N⋅m" />
       <node concept="2W5y9F" id="6q45UTzr_qn" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_qo" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_qp" role="2BJGWR">
@@ -2398,6 +2441,7 @@
     <node concept="Rn5op" id="6EvkZrLx9AS" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="yank" />
+      <property role="2DB2h4" value="Y" />
       <node concept="2W5y9F" id="6q45UTzr_qr" role="4gtQf">
         <node concept="2W2HD0" id="6q45UTzr_qs" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_qt" role="2BJGmK">
@@ -2412,6 +2456,7 @@
     <node concept="Rn5op" id="6EvkZrLxpfD" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="area density" />
+      <property role="2DB2h4" value="ρₐ" />
       <node concept="2W5y9F" id="6q45UTzr_qv" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_qw" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_qx" role="2BJGWR">
@@ -2431,6 +2476,7 @@
     <node concept="Rn5op" id="6EvkZrLxx79" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="mass density" />
+      <property role="2DB2h4" value="ρ" />
       <node concept="2W5y9F" id="6q45UTzr_q_" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_qA" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_qB" role="2BJGWR">
@@ -2450,6 +2496,7 @@
     <node concept="Rn5op" id="6EvkZrLxD1m" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="specific volume" />
+      <property role="2DB2h4" value="v" />
       <node concept="2W5y9F" id="6q45UTzr_qF" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_qG" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_qH" role="2BJGWR">
@@ -2469,6 +2516,7 @@
     <node concept="Rn5op" id="6EvkZrLxKYH" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="action" />
+      <property role="2DB2h4" value="S" />
       <node concept="2W5y9F" id="6q45UTzr_qL" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_qM" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_qN" role="2BJG10">
@@ -2483,6 +2531,7 @@
     <node concept="Rn5op" id="6EvkZrLxT2v" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="specific energy" />
+      <property role="2DB2h4" value="ε" />
       <node concept="2W5y9F" id="6q45UTzr_qP" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_qQ" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_qR" role="2BJGWR">
@@ -2497,6 +2546,7 @@
     <node concept="Rn5op" id="6EvkZrLy1el" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="energy density" />
+      <property role="2DB2h4" value="U" />
       <node concept="2W5y9F" id="6q45UTzr_qT" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_qU" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_qV" role="2BJGWR">
@@ -2516,6 +2566,7 @@
     <node concept="Rn5op" id="6EvkZrLy9zH" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="surface tension" />
+      <property role="2DB2h4" value="γ" />
       <node concept="2W5y9F" id="6q45UTzr_qZ" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_r0" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_r1" role="2BJGWR">
@@ -2530,6 +2581,7 @@
     <node concept="Rn5op" id="6EvkZrLyhZ5" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="heat flux density" />
+      <property role="2DB2h4" value="ϕԛ" />
       <node concept="2W5y9F" id="6q45UTzr_r3" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_r4" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_r5" role="2BJGWR">
@@ -2549,6 +2601,7 @@
     <node concept="Rn5op" id="6EvkZrLyqxV" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="kinematic viscosity" />
+      <property role="2DB2h4" value="ν" />
       <node concept="2W5y9F" id="6q45UTzr_r9" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_ra" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_rb" role="2BJGWR">
@@ -2568,6 +2621,7 @@
     <node concept="Rn5op" id="6EvkZrLyz7s" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="dynamic viscosity" />
+      <property role="2DB2h4" value="μ" />
       <node concept="2W5y9F" id="6q45UTzr_rf" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_rg" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_rh" role="2BJG10">
@@ -2582,6 +2636,7 @@
     <node concept="Rn5op" id="6EvkZrLyFNR" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="linear mass density" />
+      <property role="2DB2h4" value="λₘ" />
       <node concept="2W5y9F" id="6q45UTzr_rj" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_rk" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_rl" role="2BJGWR">
@@ -2596,6 +2651,7 @@
     <node concept="Rn5op" id="6EvkZrLyOx$" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="mass flow rate" />
+      <property role="2DB2h4" value="ṁ" />
       <node concept="2W5y9F" id="6q45UTzr_rn" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_ro" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_rp" role="2BJGWR">
@@ -2610,6 +2666,7 @@
     <node concept="Rn5op" id="6EvkZrLyXgB" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="radiance" />
+      <property role="2DB2h4" value="L" />
       <node concept="2W5y9F" id="6q45UTzr_rr" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_rs" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_rt" role="2BJGWR">
@@ -2634,6 +2691,7 @@
     <node concept="Rn5op" id="6EvkZrLz68$" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="spectral radiance" />
+      <property role="2DB2h4" value="L" />
       <node concept="2W5y9F" id="6q45UTzr_rz" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_r$" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_r_" role="2BJGWR">
@@ -2658,6 +2716,7 @@
     <node concept="Rn5op" id="6EvkZrLzfbt" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="spectral power" />
+      <property role="2DB2h4" value="Φₑ" />
       <node concept="2W5y9F" id="6q45UTzr_rF" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_rG" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_rH" role="2BJGWR">
@@ -2672,6 +2731,7 @@
     <node concept="Rn5op" id="6EvkZrLzok8" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="absorbed dose rate" />
+      <property role="2DB2h4" value="D" />
       <node concept="2W5y9F" id="6q45UTzr_rJ" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_rK" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_rL" role="2BJGWR">
@@ -2686,6 +2746,7 @@
     <node concept="Rn5op" id="6EvkZrLzxBN" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="fuel efficiency" />
+      <property role="2DB2h4" value="Ø" />
       <node concept="2W5y9F" id="6q45UTzr_rN" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_rO" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_rP" role="2BJGWR">
@@ -2705,6 +2766,7 @@
     <node concept="Rn5op" id="6EvkZrLzF0g" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="special irradiance" />
+      <property role="2DB2h4" value="Eₑ" />
       <node concept="2W5y9F" id="6q45UTzr_rT" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_rU" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_rV" role="2BJGWR">
@@ -2724,6 +2786,7 @@
     <node concept="Rn5op" id="6EvkZrLzOyj" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="energy flux density" />
+      <property role="2DB2h4" value="W" />
       <node concept="2W5y9F" id="6q45UTzr_rZ" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_s0" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_s1" role="2BJGWR">
@@ -2748,6 +2811,7 @@
     <node concept="Rn5op" id="6EvkZrLzYfC" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="compressibility" />
+      <property role="2DB2h4" value="β" />
       <node concept="2W5y9F" id="6q45UTzr_s7" role="4gtQf">
         <node concept="2W2HD0" id="6q45UTzr_s8" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_s9" role="2BJGmK">
@@ -2762,6 +2826,7 @@
     <node concept="Rn5op" id="6EvkZrL$7ZE" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="radiant exposure" />
+      <property role="2DB2h4" value="Hₑ" />
       <node concept="2W5y9F" id="6q45UTzr_sb" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_sc" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_sd" role="2BJGWR">
@@ -2781,6 +2846,7 @@
     <node concept="Rn5op" id="6EvkZrL$hRa" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="moment of inertia" />
+      <property role="2DB2h4" value="I" />
       <node concept="2W5y9F" id="6q45UTzr_sh" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_si" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_sj" role="2BJG10">
@@ -2800,6 +2866,7 @@
     <node concept="Rn5op" id="6EvkZrL$rLp" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="specific angular momentum" />
+      <property role="2DB2h4" value="h⃗" />
       <node concept="2W5y9F" id="6q45UTzr_sn" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_so" role="2W5ySM">
           <node concept="2WfEyl" id="6q45UTzr_sp" role="2BJG10">
@@ -2824,6 +2891,7 @@
     <node concept="Rn5op" id="6EvkZrL$_Rl" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="radiant intensity" />
+      <property role="2DB2h4" value="I" />
       <node concept="2W5y9F" id="6q45UTzr_sv" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_sw" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_sx" role="2BJGWR">
@@ -2838,6 +2906,7 @@
     <node concept="Rn5op" id="6EvkZrL$K4A" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="spectral intensity" />
+      <property role="2DB2h4" value="I" />
       <node concept="2W5y9F" id="6q45UTzr_sz" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_s$" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_s_" role="2BJGWR">
@@ -3458,7 +3527,8 @@
     <node concept="_ixoA" id="6EvkZrMcfql" role="_iOnB" />
     <node concept="Rn5op" id="6EvkZrMFXkV" role="_iOnB">
       <property role="1xQvps" value="true" />
-      <property role="TrG5h" value="molarity" />
+      <property role="TrG5h" value="molar concentration" />
+      <property role="2DB2h4" value="C" />
       <node concept="2W5y9F" id="6q45UTzr_sD" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_sE" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_sF" role="2BJGWR">
@@ -3478,6 +3548,7 @@
     <node concept="Rn5op" id="6EvkZrMG849" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="molar volume" />
+      <property role="2DB2h4" value="Vₘ" />
       <node concept="2W5y9F" id="6q45UTzr_sJ" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_sK" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_sL" role="2BJGWR">
@@ -3496,7 +3567,8 @@
     </node>
     <node concept="Rn5op" id="6EvkZrMGiQ4" role="_iOnB">
       <property role="1xQvps" value="true" />
-      <property role="TrG5h" value="molar head capacity" />
+      <property role="TrG5h" value="molar heat capacity" />
+      <property role="2DB2h4" value="c" />
       <node concept="2W5y9F" id="6q45UTzr_sP" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_sQ" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_sR" role="2BJGWR">
@@ -3516,6 +3588,7 @@
     <node concept="Rn5op" id="6EvkZrMGtM_" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="molar energy" />
+      <property role="2DB2h4" value="J÷mol" />
       <node concept="2W5y9F" id="6q45UTzr_sV" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_sW" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_sX" role="2BJGWR">
@@ -3530,6 +3603,7 @@
     <node concept="Rn5op" id="6EvkZrMGCRO" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="molar conductivity" />
+      <property role="2DB2h4" value="λₘ" />
       <node concept="2W5y9F" id="6q45UTzr_sZ" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_t0" role="2W5ySM">
           <node concept="2WfEyl" id="6q45UTzr_t1" role="2BJGWR">
@@ -3554,6 +3628,7 @@
     <node concept="Rn5op" id="6EvkZrMGO8c" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="molality" />
+      <property role="2DB2h4" value="b" />
       <node concept="2W5y9F" id="6q45UTzr_t7" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_t8" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_t9" role="2BJGWR">
@@ -3568,6 +3643,7 @@
     <node concept="Rn5op" id="6EvkZrMGZpQ" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="molar mass" />
+      <property role="2DB2h4" value="M" />
       <node concept="2W5y9F" id="6q45UTzr_tb" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_tc" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_td" role="2BJGWR">
@@ -3582,6 +3658,7 @@
     <node concept="Rn5op" id="6EvkZrMHaHq" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="catalytic efficiency" />
+      <property role="2DB2h4" value="kcat÷Km" />
       <node concept="2W5y9F" id="6q45UTzr_tf" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_tg" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_th" role="2BJGWR">
@@ -3775,6 +3852,7 @@
     <node concept="Rn5op" id="6EvkZrMWyB4" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="electric displacement field" />
+      <property role="2DB2h4" value="D⃗" />
       <node concept="2W5y9F" id="6q45UTzr_tn" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_to" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_tp" role="2BJGWR">
@@ -3794,6 +3872,7 @@
     <node concept="Rn5op" id="6EvkZrMWK62" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="electric charge density" />
+      <property role="2DB2h4" value="ρq" />
       <node concept="2W5y9F" id="6q45UTzr_tt" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_tu" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_tv" role="2BJGWR">
@@ -3813,6 +3892,7 @@
     <node concept="Rn5op" id="6EvkZrMXpAv" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="electric current density" />
+      <property role="2DB2h4" value="J⃗" />
       <node concept="2W5y9F" id="6q45UTzr_tz" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_t$" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_t_" role="2BJGWR">
@@ -3832,6 +3912,7 @@
     <node concept="Rn5op" id="6EvkZrMXP4p" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="electrical conductivity" />
+      <property role="2DB2h4" value="σ" />
       <node concept="2W5y9F" id="6q45UTzr_tD" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_tE" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_tF" role="2BJGWR">
@@ -3846,6 +3927,7 @@
     <node concept="Rn5op" id="6EvkZrMYgYA" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="permittivity" />
+      <property role="2DB2h4" value="εₛ" />
       <node concept="2W5y9F" id="6q45UTzr_tH" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_tI" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_tJ" role="2BJGWR">
@@ -3860,6 +3942,7 @@
     <node concept="Rn5op" id="6EvkZrMYUP8" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="magnetic permeability" />
+      <property role="2DB2h4" value="μₛ" />
       <node concept="2W5y9F" id="6q45UTzr_tL" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_tM" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_tN" role="2BJGWR">
@@ -3874,6 +3957,7 @@
     <node concept="Rn5op" id="6EvkZrMZnPT" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="electric field strength" />
+      <property role="2DB2h4" value="E⃗" />
       <node concept="2W5y9F" id="6q45UTzr_tP" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_tQ" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_tR" role="2BJGWR">
@@ -3888,6 +3972,7 @@
     <node concept="Rn5op" id="6EvkZrMZPur" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="magnetization" />
+      <property role="2DB2h4" value="M" />
       <node concept="2W5y9F" id="6q45UTzr_tT" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_tU" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_tV" role="2BJGWR">
@@ -3902,6 +3987,7 @@
     <node concept="Rn5op" id="6EvkZrN0jt0" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="exposure" />
+      <property role="2DB2h4" value="C÷kg" />
       <node concept="1z9TsT" id="6EvkZrNmrvK" role="lGtFl">
         <node concept="OjmMv" id="6EvkZrNmrvL" role="1w35rA">
           <node concept="19SGf9" id="6EvkZrNmrvM" role="OjmMu">
@@ -3924,7 +4010,8 @@
     </node>
     <node concept="Rn5op" id="6EvkZrN0ZDM" role="_iOnB">
       <property role="1xQvps" value="true" />
-      <property role="TrG5h" value="resistivity" />
+      <property role="TrG5h" value="electrical resistivity" />
+      <property role="2DB2h4" value="ρ" />
       <node concept="2W5y9F" id="6q45UTzr_u1" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_u2" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_u3" role="2BJG10">
@@ -3939,6 +4026,7 @@
     <node concept="Rn5op" id="6EvkZrN1VkH" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="linear charge density" />
+      <property role="2DB2h4" value="Λq" />
       <node concept="2W5y9F" id="6q45UTzr_u5" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_u6" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_u7" role="2BJGWR">
@@ -3953,6 +4041,7 @@
     <node concept="Rn5op" id="6EvkZrN2qKn" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="magnetic dipole moment" />
+      <property role="2DB2h4" value="m" />
       <node concept="2W5y9F" id="6q45UTzr_u9" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_ua" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_ub" role="2BJGWR">
@@ -3967,6 +4056,7 @@
     <node concept="Rn5op" id="6EvkZrN39jP" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="electron mobility" />
+      <property role="2DB2h4" value="μ" />
       <node concept="2W5y9F" id="6q45UTzr_ud" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_ue" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_uf" role="2BJGWR">
@@ -3991,6 +4081,7 @@
     <node concept="Rn5op" id="6EvkZrN4Aj8" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="magnetic reluctance" />
+      <property role="2DB2h4" value="ℛ" />
       <node concept="2W5y9F" id="6q45UTzr_ul" role="4gtQf">
         <node concept="2W2HD0" id="6q45UTzr_um" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_un" role="2BJGmK">
@@ -4005,6 +4096,7 @@
     <node concept="Rn5op" id="6EvkZrN5PmY" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="magnetic vector potential" />
+      <property role="2DB2h4" value="A" />
       <node concept="2W5y9F" id="6q45UTzr_up" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_uq" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_ur" role="2BJGWR">
@@ -4019,6 +4111,7 @@
     <node concept="Rn5op" id="6EvkZrN7kEx" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="magnetic moment" />
+      <property role="2DB2h4" value="m" />
       <node concept="2W5y9F" id="6q45UTzr_ut" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_uu" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_uv" role="2BJG10">
@@ -4033,6 +4126,7 @@
     <node concept="Rn5op" id="6EvkZrN8A5x" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="magnetic rigidity" />
+      <property role="2DB2h4" value="R" />
       <node concept="2W5y9F" id="6q45UTzr_ux" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_uy" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_uz" role="2BJG10">
@@ -4047,6 +4141,7 @@
     <node concept="Rn5op" id="6EvkZrNc5Ti" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="magnetomotive force" />
+      <property role="2DB2h4" value="Ƒ" />
       <node concept="2W5y9F" id="6q45UTzr_u_" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_uA" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_uB" role="2BJG10">
@@ -4061,6 +4156,7 @@
     <node concept="Rn5op" id="6EvkZrNdCaG" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="magnetic susceptibility" />
+      <property role="2DB2h4" value="M" />
       <node concept="2W5y9F" id="6q45UTzr_uD" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_uE" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_uF" role="2BJGWR">
@@ -4409,6 +4505,7 @@
     <node concept="Rn5op" id="6EvkZrNL9KI" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="luminous energy" />
+      <property role="2DB2h4" value="Qᵥ" />
       <node concept="2W5y9F" id="6q45UTzr_uH" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_uI" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_uJ" role="2BJG10">
@@ -4423,6 +4520,7 @@
     <node concept="Rn5op" id="6EvkZrNLpUv" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="luminous exposure" />
+      <property role="2DB2h4" value="H" />
       <node concept="2W5y9F" id="6q45UTzr_uL" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_uM" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_uN" role="2BJG10">
@@ -4437,6 +4535,7 @@
     <node concept="Rn5op" id="6EvkZrNLE8G" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="luminance" />
+      <property role="2DB2h4" value="Lᵥ" />
       <node concept="2W5y9F" id="6q45UTzr_uP" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_uQ" role="2W5ySM">
           <node concept="2W2HD0" id="6q45UTzr_uR" role="2BJG_9">
@@ -4456,6 +4555,7 @@
     <node concept="Rn5op" id="6EvkZrNLUp$" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="luminous efficacy" />
+      <property role="2DB2h4" value="K" />
       <node concept="2W5y9F" id="6q45UTzr_uV" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_uW" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_uX" role="2BJGWR">
@@ -4545,6 +4645,7 @@
     <node concept="Rn5op" id="6EvkZrNXdcc" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="heat capacity" />
+      <property role="2DB2h4" value="Cₚ" />
       <node concept="2W5y9F" id="6q45UTzr_uZ" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_v0" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_v1" role="2BJGWR">
@@ -4559,6 +4660,7 @@
     <node concept="Rn5op" id="6EvkZrNXuk1" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="specific heat capacity" />
+      <property role="2DB2h4" value="c" />
       <node concept="2W5y9F" id="6q45UTzr_v3" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_v4" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_v5" role="2BJGWR">
@@ -4578,6 +4680,7 @@
     <node concept="Rn5op" id="6EvkZrNZpHy" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="thermal conductivity" />
+      <property role="2DB2h4" value="λ" />
       <node concept="2W5y9F" id="6q45UTzr_v9" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_va" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_vb" role="2BJGWR">
@@ -4597,6 +4700,7 @@
     <node concept="Rn5op" id="6EvkZrNXJB4" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="thermal resistance" />
+      <property role="2DB2h4" value="R" />
       <node concept="2W5y9F" id="6q45UTzr_vf" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_vg" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_vh" role="2BJGWR">
@@ -4611,6 +4715,7 @@
     <node concept="Rn5op" id="6EvkZrNY12L" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="thermal expansion coefficient" />
+      <property role="2DB2h4" value="α" />
       <node concept="2W5y9F" id="6q45UTzr_vj" role="4gtQf">
         <node concept="2W2HD0" id="6q45UTzr_vk" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_vl" role="2BJGmK">
@@ -4625,6 +4730,7 @@
     <node concept="Rn5op" id="6EvkZrNYivh" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="temperature gradient" />
+      <property role="2DB2h4" value="α" />
       <node concept="2W5y9F" id="6q45UTzr_vn" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_vo" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_vp" role="2BJGWR">
