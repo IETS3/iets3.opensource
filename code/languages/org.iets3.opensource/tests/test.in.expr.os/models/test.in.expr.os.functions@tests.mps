@@ -29,10 +29,10 @@
       <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ListType" flags="ng" index="3iBYCm" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
-      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ngI" index="pfQq$">
+      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
         <child id="229512757698888936" name="optionalName" index="pfQ1b" />
       </concept>
       <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
@@ -57,7 +57,7 @@
         <child id="606861080870797310" name="expr" index="pf3We" />
       </concept>
       <concept id="7089558164908491660" name="org.iets3.core.expr.base.structure.EmptyExpression" flags="ng" index="2zH6wq" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
@@ -67,7 +67,7 @@
         <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
       <concept id="867786408877811180" name="org.iets3.core.expr.base.structure.Postcondition" flags="ng" index="I61F8" />
-      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
+      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ng" index="I61I7">
         <child id="867786408877811042" name="contract" index="I61D6" />
       </concept>
       <concept id="195141004745644975" name="org.iets3.core.expr.base.structure.AssignmentExpr" flags="ng" index="2YjPKq" />
@@ -135,7 +135,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -159,17 +159,17 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
         <property id="2861782275883660525" name="ext" index="1HeIcW" />
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
       <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60">
@@ -1868,7 +1868,7 @@
       <node concept="_fkuZ" id="5pJXE7$LkHT" role="_fkp5">
         <node concept="_fku$" id="5pJXE7$LkHU" role="_fkur" />
         <node concept="1af_rf" id="5pJXE7$LkLm" role="_fkuY">
-          <ref role="1afhQb" node="Cqs5T9JAiD" resolve="ok" />
+          <ref role="1afhQb" node="Cqs5T9JAiD" resolve="test_0" />
           <node concept="3iBYfx" id="5pJXE7$LkS1" role="1afhQ5">
             <node concept="30bXRB" id="5pJXE7$LkWO" role="3iBYfI">
               <property role="30bXRw" value="1" />
@@ -1896,7 +1896,7 @@
       <node concept="_fkuZ" id="5pJXE7$LlpT" role="_fkp5">
         <node concept="_fku$" id="5pJXE7$LlpU" role="_fkur" />
         <node concept="1af_rf" id="5pJXE7$LlpV" role="_fkuY">
-          <ref role="1afhQb" node="3ss64irDBZE" resolve="ok_1" />
+          <ref role="1afhQb" node="3ss64irDBZE" resolve="test_1" />
           <node concept="3iBYfx" id="5pJXE7$LlpW" role="1afhQ5">
             <node concept="30bXRB" id="5pJXE7$LlpX" role="3iBYfI">
               <property role="30bXRw" value="1" />
@@ -1924,7 +1924,7 @@
       <node concept="_fkuZ" id="5pJXE7$Llqs" role="_fkp5">
         <node concept="_fku$" id="5pJXE7$Llqt" role="_fkur" />
         <node concept="1af_rf" id="5pJXE7$Llqu" role="_fkuY">
-          <ref role="1afhQb" node="3ss64irWotO" resolve="ok_2" />
+          <ref role="1afhQb" node="3ss64irWotO" resolve="test_2" />
           <node concept="3iBYfx" id="5pJXE7$Llqv" role="1afhQ5">
             <node concept="30bXRB" id="5pJXE7$Llqw" role="3iBYfI">
               <property role="30bXRw" value="1" />
@@ -1952,7 +1952,7 @@
       <node concept="_fkuZ" id="5pJXE7$Llra" role="_fkp5">
         <node concept="_fku$" id="5pJXE7$Llrb" role="_fkur" />
         <node concept="1af_rf" id="5pJXE7$Llrc" role="_fkuY">
-          <ref role="1afhQb" node="5pJXE7zpYJR" resolve="ok_3" />
+          <ref role="1afhQb" node="5pJXE7zpYJR" resolve="test_3" />
           <node concept="3iBYfx" id="5pJXE7$Llrd" role="1afhQ5">
             <node concept="30bXRB" id="5pJXE7$Llre" role="3iBYfI">
               <property role="30bXRw" value="1" />
@@ -1980,7 +1980,7 @@
       <node concept="_fkuZ" id="5pJXE7$LnAa" role="_fkp5">
         <node concept="_fku$" id="5pJXE7$LnAb" role="_fkur" />
         <node concept="1af_rf" id="5pJXE7$LnAc" role="_fkuY">
-          <ref role="1afhQb" node="3ss64irWmzM" resolve="ok_4" />
+          <ref role="1afhQb" node="3ss64irWmzM" resolve="test_4" />
           <node concept="3iBYfx" id="5pJXE7$LnAd" role="1afhQ5">
             <node concept="30bXRB" id="5pJXE7$LnAe" role="3iBYfI">
               <property role="30bXRw" value="1" />
@@ -2008,7 +2008,7 @@
       <node concept="_fkuZ" id="5pJXE7$LosE" role="_fkp5">
         <node concept="_fku$" id="5pJXE7$LosF" role="_fkur" />
         <node concept="1af_rf" id="5pJXE7$LosG" role="_fkuY">
-          <ref role="1afhQb" node="3ss64is4Frk" resolve="ok_a_4" />
+          <ref role="1afhQb" node="3ss64is4Frk" resolve="test_a_4" />
           <node concept="3iBYfx" id="5pJXE7$LosH" role="1afhQ5">
             <node concept="30bXRB" id="5pJXE7$LosI" role="3iBYfI">
               <property role="30bXRw" value="1" />
@@ -2036,7 +2036,7 @@
       <node concept="_fkuZ" id="5pJXE7$LoxG" role="_fkp5">
         <node concept="_fku$" id="5pJXE7$LoxH" role="_fkur" />
         <node concept="1af_rf" id="5pJXE7$LoxI" role="_fkuY">
-          <ref role="1afhQb" node="3ss64isagzb" resolve="ok_b_4" />
+          <ref role="1afhQb" node="3ss64isagzb" resolve="test_b_4" />
           <node concept="3iBYfx" id="5pJXE7$LoxJ" role="1afhQ5">
             <node concept="30bXRB" id="5pJXE7$LoxK" role="3iBYfI">
               <property role="30bXRw" value="1" />
@@ -2064,7 +2064,7 @@
       <node concept="_fkuZ" id="5pJXE7$Lozl" role="_fkp5">
         <node concept="_fku$" id="5pJXE7$Lozm" role="_fkur" />
         <node concept="1af_rf" id="5pJXE7$Lozn" role="_fkuY">
-          <ref role="1afhQb" node="5pJXE7z_iUM" resolve="ok_c_4" />
+          <ref role="1afhQb" node="5pJXE7z_iUM" resolve="test_c_4" />
           <node concept="3iBYfx" id="5pJXE7$Lozo" role="1afhQ5">
             <node concept="30bXRB" id="5pJXE7$Lozp" role="3iBYfI">
               <property role="30bXRw" value="1" />
@@ -2092,7 +2092,7 @@
       <node concept="_fkuZ" id="5pJXE7$Lls7" role="_fkp5">
         <node concept="_fku$" id="5pJXE7$Lls8" role="_fkur" />
         <node concept="1af_rf" id="5pJXE7$Lls9" role="_fkuY">
-          <ref role="1afhQb" node="3ss64irykQS" resolve="ok_5" />
+          <ref role="1afhQb" node="3ss64irykQS" resolve="test_5" />
           <node concept="3iBYfx" id="5pJXE7$Llsa" role="1afhQ5">
             <node concept="30bXRB" id="5pJXE7$Llsb" role="3iBYfI">
               <property role="30bXRw" value="1" />
@@ -2120,7 +2120,7 @@
       <node concept="_fkuZ" id="5pJXE7$LoGi" role="_fkp5">
         <node concept="_fku$" id="5pJXE7$LoGj" role="_fkur" />
         <node concept="1af_rf" id="5pJXE7$LoGk" role="_fkuY">
-          <ref role="1afhQb" node="3ss64is4FqZ" resolve="ok_a_5" />
+          <ref role="1afhQb" node="3ss64is4FqZ" resolve="test_a_5" />
           <node concept="3iBYfx" id="5pJXE7$LoGl" role="1afhQ5">
             <node concept="30bXRB" id="5pJXE7$LoGm" role="3iBYfI">
               <property role="30bXRw" value="1" />

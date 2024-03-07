@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:fdc4a3a8-bc78-4f8e-a74a-27e64dd85f6d(org.iets3.core.expr.toplevel.interpreter.plugin)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
@@ -118,7 +119,7 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -240,7 +241,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -982,6 +983,9 @@
             <node concept="3cpWs8" id="c36CPs_RST" role="3cqZAp">
               <node concept="3cpWsn" id="c36CPs_RSU" role="3cpWs9">
                 <property role="TrG5h" value="val" />
+                <node concept="3uibUv" id="c36CPs_RSV" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
                 <node concept="3EllGN" id="c36CPs_RSW" role="33vP2m">
                   <node concept="TvHiN" id="c36CPs_RSX" role="3ElQJh" />
                   <node concept="2OqwBi" id="c36CPs_RSY" role="3ElVtu">
@@ -990,9 +994,6 @@
                       <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
                     </node>
                   </node>
-                </node>
-                <node concept="3uibUv" id="c36CPs_RSV" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
               </node>
             </node>
@@ -1043,6 +1044,9 @@
             <node concept="3cpWs8" id="c36CPs_OG0" role="3cqZAp">
               <node concept="3cpWsn" id="c36CPs_OG1" role="3cpWs9">
                 <property role="TrG5h" value="val" />
+                <node concept="3uibUv" id="c36CPs_OG2" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
                 <node concept="3EllGN" id="c36CPs_Q$A" role="33vP2m">
                   <node concept="TvHiN" id="c36CPs_Q$C" role="3ElQJh" />
                   <node concept="2OqwBi" id="c36CPs_PZK" role="3ElVtu">
@@ -1051,9 +1055,6 @@
                       <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
                     </node>
                   </node>
-                </node>
-                <node concept="3uibUv" id="c36CPs_OG2" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
               </node>
             </node>
@@ -1737,7 +1738,7 @@
             <node concept="3cpWs6" id="1vo80oTYBY" role="3cqZAp">
               <node concept="2YIFZM" id="4$j2$kkhbPr" role="3cqZAk">
                 <ref role="1Pybhc" to="pq1l:365yA_OO5FT" resolve="EnumLiteral" />
-                <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="createEnumLiteral" />
+                <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="getInstance" />
                 <node concept="2OqwBi" id="4$j2$kkhcnE" role="37wK5m">
                   <node concept="oxGPV" id="4$j2$kkhcbe" role="2Oq$k0" />
                   <node concept="3TrEf2" id="4$j2$kkhcXd" role="2OqNvi">

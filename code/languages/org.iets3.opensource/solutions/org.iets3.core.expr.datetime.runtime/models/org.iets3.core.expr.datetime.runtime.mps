@@ -4619,6 +4619,12 @@
     </node>
     <node concept="2tJIrI" id="7khFtBHIiHx" role="jymVt" />
     <node concept="3Tm1VV" id="7khFtBHIbg7" role="1B3o_S" />
+    <node concept="3uibUv" id="7HSGsv4zI7F" role="EKbjA">
+      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
+      <node concept="3uibUv" id="7HSGsv4$wer" role="11_B2D">
+        <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+      </node>
+    </node>
     <node concept="3clFb_" id="7HSGsv4zMiX" role="jymVt">
       <property role="TrG5h" value="compareTo" />
       <node concept="3Tm1VV" id="7HSGsv4zMiY" role="1B3o_S" />
@@ -4637,13 +4643,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="7HSGsv4zMj5" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
-      </node>
-    </node>
-    <node concept="3uibUv" id="7HSGsv4zI7F" role="EKbjA">
-      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
-      <node concept="3uibUv" id="7HSGsv4$wer" role="11_B2D">
-        <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>

@@ -1518,6 +1518,24 @@
       </node>
       <node concept="gft3U" id="oj24_o85BR" role="1lVwrX">
         <node concept="2OqwBi" id="oj24_o85QM" role="gfFT$">
+          <node concept="3TrcHB" id="oj24_o88RN" role="2OqNvi">
+            <ref role="3TsBF5" to="tpce:40UcGlRb7V2" resolve="abstract" />
+            <node concept="1sPUBX" id="oj24_o8ajT" role="lGtFl">
+              <ref role="v9R2y" node="oj24_o2O6z" resolve="SwitchToplevelDotTarget" />
+              <node concept="3NFfHV" id="oj24_o9jIp" role="1sPUBK">
+                <node concept="3clFbS" id="oj24_o9jIq" role="2VODD2">
+                  <node concept="3clFbF" id="oj24_o9jUX" role="3cqZAp">
+                    <node concept="2OqwBi" id="oj24_o9kcj" role="3clFbG">
+                      <node concept="30H73N" id="oj24_o9jUW" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="oj24_o9kzC" role="2OqNvi">
+                        <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="2tJFMh" id="7DfYVno9jMQ" role="2Oq$k0">
             <node concept="29HgVG" id="7DfYVno9jMR" role="lGtFl">
               <node concept="3NFfHV" id="7DfYVno9jMS" role="3NFExx">
@@ -1535,24 +1553,6 @@
             </node>
             <node concept="ZC_QK" id="7DfYVno9jMP" role="2tJFKM">
               <ref role="2aWVGs" to="tpck:gw2VY9q" resolve="BaseConcept" />
-            </node>
-          </node>
-          <node concept="3TrcHB" id="oj24_o88RN" role="2OqNvi">
-            <ref role="3TsBF5" to="tpce:40UcGlRb7V2" resolve="abstract" />
-            <node concept="1sPUBX" id="oj24_o8ajT" role="lGtFl">
-              <ref role="v9R2y" node="oj24_o2O6z" resolve="SwitchToplevelDotTarget" />
-              <node concept="3NFfHV" id="oj24_o9jIp" role="1sPUBK">
-                <node concept="3clFbS" id="oj24_o9jIq" role="2VODD2">
-                  <node concept="3clFbF" id="oj24_o9jUX" role="3cqZAp">
-                    <node concept="2OqwBi" id="oj24_o9kcj" role="3clFbG">
-                      <node concept="30H73N" id="oj24_o9jUW" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="oj24_o9kzC" role="2OqNvi">
-                        <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -9054,19 +9054,6 @@
               </node>
               <node concept="1Wc70l" id="EpsWA8jRsQ" role="3clFbw">
                 <node concept="1Wc70l" id="EpsWA8jRsR" role="3uHU7B">
-                  <node concept="2OqwBi" id="7DfYVnlwT22" role="3uHU7B">
-                    <node concept="2OqwBi" id="EpsWA8jRsU" role="2Oq$k0">
-                      <node concept="30H73N" id="EpsWA8jRsV" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="EpsWA8jRsW" role="2OqNvi">
-                        <ref role="3Tt5mk" to="zzzn:49WTic8eSDm" resolve="body" />
-                      </node>
-                    </node>
-                    <node concept="1mIQ4w" id="7DfYVnlwT23" role="2OqNvi">
-                      <node concept="chp4Y" id="7DfYVnlwT25" role="cj9EA">
-                        <ref role="cht4Q" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="2OqwBi" id="EpsWA8jRsX" role="3uHU7w">
                     <node concept="2OqwBi" id="EpsWA8jRsY" role="2Oq$k0">
                       <node concept="1eOMI4" id="EpsWA8jRsZ" role="2Oq$k0">
@@ -9087,6 +9074,19 @@
                       </node>
                     </node>
                     <node concept="3x8VRR" id="EpsWA8jRt6" role="2OqNvi" />
+                  </node>
+                  <node concept="2OqwBi" id="7DfYVnlwT22" role="3uHU7B">
+                    <node concept="2OqwBi" id="EpsWA8jRsU" role="2Oq$k0">
+                      <node concept="30H73N" id="EpsWA8jRsV" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="EpsWA8jRsW" role="2OqNvi">
+                        <ref role="3Tt5mk" to="zzzn:49WTic8eSDm" resolve="body" />
+                      </node>
+                    </node>
+                    <node concept="1mIQ4w" id="7DfYVnlwT23" role="2OqNvi">
+                      <node concept="chp4Y" id="7DfYVnlwT25" role="cj9EA">
+                        <ref role="cht4Q" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7DfYVnlwSO2" role="3uHU7w">
@@ -10959,7 +10959,7 @@
         </node>
         <node concept="QsSxf" id="1li4vsEDuIF" role="Qtgdg">
           <property role="TrG5h" value="literal" />
-          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
           <node concept="2b32R4" id="1li4vsEDuN3" role="lGtFl">
             <node concept="3JmXsc" id="1li4vsEDuN4" role="2P8S$">
               <node concept="3clFbS" id="1li4vsEDuN5" role="2VODD2">
@@ -10994,7 +10994,7 @@
         <node concept="3uibUv" id="2FUenxLwJZ5" role="EKbjA">
           <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
           <node concept="3uibUv" id="2FUenxLwUgw" role="11_B2D">
-            <ref role="3uigEE" node="1li4vsEDum2" resolve="EnumDeclName" />
+            <ref role="3uigEE" node="1li4vsEDum2" resolve="OuterClass.EnumDeclName" />
             <node concept="1ZhdrF" id="2FUenxLwUGg" role="lGtFl">
               <property role="2qtEX8" value="classifier" />
               <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11131,7 +11131,7 @@
           <node concept="37vLTG" id="1sKh73rdYTJ" role="3clF46">
             <property role="TrG5h" value="a" />
             <node concept="3uibUv" id="1sKh73rdYTK" role="1tU5fm">
-              <ref role="3uigEE" node="1li4vsEDum2" resolve="EnumDeclName" />
+              <ref role="3uigEE" node="1li4vsEDum2" resolve="OuterClass.EnumDeclName" />
               <node concept="1ZhdrF" id="1sKh73rdYTL" role="lGtFl">
                 <property role="2qtEX8" value="classifier" />
                 <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11154,7 +11154,7 @@
           <node concept="37vLTG" id="1sKh73rdYTT" role="3clF46">
             <property role="TrG5h" value="b" />
             <node concept="3uibUv" id="1sKh73rdYTU" role="1tU5fm">
-              <ref role="3uigEE" node="1li4vsEDum2" resolve="EnumDeclName" />
+              <ref role="3uigEE" node="1li4vsEDum2" resolve="OuterClass.EnumDeclName" />
               <node concept="1ZhdrF" id="1sKh73rdYTV" role="lGtFl">
                 <property role="2qtEX8" value="classifier" />
                 <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11186,7 +11186,7 @@
                 <node concept="3uibUv" id="1yE6u6GCi2B" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~Vector" resolve="Vector" />
                   <node concept="3uibUv" id="1yE6u6GG1aO" role="11_B2D">
-                    <ref role="3uigEE" node="1li4vsEDum2" resolve="EnumDeclName" />
+                    <ref role="3uigEE" node="1li4vsEDum2" resolve="OuterClass.EnumDeclName" />
                     <node concept="1ZhdrF" id="1yE6u6GG1aP" role="lGtFl">
                       <property role="2qtEX8" value="classifier" />
                       <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11211,7 +11211,7 @@
                     <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="33ny:~Vector.&lt;init&gt;()" resolve="Vector" />
                     <node concept="3uibUv" id="1sKh73tRZXI" role="1pMfVU">
-                      <ref role="3uigEE" node="1li4vsEDum2" resolve="EnumDeclName" />
+                      <ref role="3uigEE" node="1li4vsEDum2" resolve="OuterClass.EnumDeclName" />
                       <node concept="1ZhdrF" id="1sKh73tRZXJ" role="lGtFl">
                         <property role="2qtEX8" value="classifier" />
                         <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11253,7 +11253,7 @@
               <node concept="3cpWsn" id="1yE6u6GwXxs" role="1Duv9x">
                 <property role="TrG5h" value="e" />
                 <node concept="3uibUv" id="1yE6u6GxbTO" role="1tU5fm">
-                  <ref role="3uigEE" node="1li4vsEDum2" resolve="EnumDeclName" />
+                  <ref role="3uigEE" node="1li4vsEDum2" resolve="OuterClass.EnumDeclName" />
                   <node concept="1ZhdrF" id="1yE6u6Gxdzy" role="lGtFl">
                     <property role="2qtEX8" value="classifier" />
                     <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11274,7 +11274,7 @@
                 </node>
               </node>
               <node concept="uiWXb" id="1yE6u6Gx0Tx" role="1DdaDG">
-                <ref role="uiZuM" node="1li4vsEDum2" resolve="EnumDeclName" />
+                <ref role="uiZuM" node="1li4vsEDum2" resolve="OuterClass.EnumDeclName" />
                 <node concept="1ZhdrF" id="1yE6u6Gx2lI" role="lGtFl">
                   <property role="2qtEX8" value="enumClass" />
                   <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1224573963862/1224573974191" />
@@ -11331,7 +11331,7 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
       <node concept="j$656" id="1li4vsEEyHG" role="1lVwrX">
-        <ref role="v9R2y" node="4qLh1qJ6tzr" resolve="reduce_EnumDeclaration_" />
+        <ref role="v9R2y" node="4qLh1qJ6tzr" resolve="reduce_EnumDeclaration" />
       </node>
       <node concept="30G5F_" id="1li4vsED_Qp" role="30HLyM">
         <node concept="3clFbS" id="1li4vsED_Qq" role="2VODD2">
@@ -11353,7 +11353,7 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
       <node concept="j$656" id="1li4vsEFmgI" role="1lVwrX">
-        <ref role="v9R2y" node="1li4vsELeNV" resolve="reduce_enumDeclaration_with_Value" />
+        <ref role="v9R2y" node="1li4vsELeNV" resolve="reduce_EnumDeclaration_with_Value" />
       </node>
       <node concept="30G5F_" id="1li4vsEDLW3" role="30HLyM">
         <node concept="3clFbS" id="1li4vsEDLW4" role="2VODD2">
@@ -11391,7 +11391,7 @@
             <node concept="37vLTG" id="2nSV6xMK13Z" role="3clF46">
               <property role="TrG5h" value="b" />
               <node concept="3uibUv" id="2nSV6xMK140" role="1tU5fm">
-                <ref role="3uigEE" node="2nSV6xMK13e" resolve="EnumDeclName" />
+                <ref role="3uigEE" node="2nSV6xMK13e" resolve="Foo" />
               </node>
             </node>
             <node concept="3clFbS" id="2nSV6xMK149" role="3clF47">
@@ -11409,7 +11409,7 @@
                   <node concept="3cpWsd" id="2nSV6xMK14g" role="37vLTx">
                     <node concept="2OqwBi" id="2nSV6xMK14h" role="3uHU7w">
                       <node concept="37vLTw" id="2nSV6xMK14i" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2nSV6xMK13Z" resolve="other" />
+                        <ref role="3cqZAo" node="2nSV6xMK13Z" resolve="b" />
                       </node>
                       <node concept="liA8E" id="2nSV6xMK14j" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~Enum.ordinal()" resolve="ordinal" />
@@ -11443,7 +11443,7 @@
           <node concept="3uibUv" id="2nSV6xMK17S" role="EKbjA">
             <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
             <node concept="3uibUv" id="2nSV6xMK17T" role="11_B2D">
-              <ref role="3uigEE" node="2nSV6xMK13e" resolve="EnumDeclName" />
+              <ref role="3uigEE" node="2nSV6xMK13e" resolve="Foo" />
             </node>
           </node>
         </node>
@@ -11497,7 +11497,7 @@
                       <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String)" resolve="compareTo" />
                       <node concept="2OqwBi" id="2nSV6xMLxVC" role="37wK5m">
                         <node concept="37vLTw" id="2nSV6xMLxVD" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2nSV6xMLtZD" resolve="other" />
+                          <ref role="3cqZAo" node="2nSV6xMLtZD" resolve="b" />
                         </node>
                         <node concept="liA8E" id="2nSV6xMLxVE" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~Enum.name()" resolve="name" />
@@ -11580,14 +11580,14 @@
                         <ref role="37wK5l" node="2nSV6xMLKOn" resolve="getValue" />
                       </node>
                       <node concept="37vLTw" id="4xqUaW4wp3P" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4xqUaW4vkWE" resolve="aFoo" />
+                        <ref role="3cqZAo" node="4xqUaW4vkWE" resolve="a" />
                       </node>
                     </node>
                     <node concept="liA8E" id="2nSV6xMLBVG" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String)" resolve="compareTo" />
                       <node concept="2OqwBi" id="2nSV6xMLBVH" role="37wK5m">
                         <node concept="37vLTw" id="2nSV6xMLBVI" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2nSV6xML_uJ" resolve="other" />
+                          <ref role="3cqZAo" node="2nSV6xML_uJ" resolve="b" />
                         </node>
                         <node concept="liA8E" id="2nSV6xMLBVJ" role="2OqNvi">
                           <ref role="37wK5l" node="2nSV6xMLKOn" resolve="getValue" />
@@ -11745,7 +11745,7 @@
           <node concept="37vLTG" id="4xqUaW4vfqa" role="3clF46">
             <property role="TrG5h" value="a" />
             <node concept="3uibUv" id="4xqUaW4vg00" role="1tU5fm">
-              <ref role="3uigEE" node="1li4vsELfWN" resolve="EnumDeclName" />
+              <ref role="3uigEE" node="1li4vsELfWN" resolve="OuterClass.EnumDeclName" />
               <node concept="1ZhdrF" id="4xqUaW4vg01" role="lGtFl">
                 <property role="2qtEX8" value="classifier" />
                 <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11768,7 +11768,7 @@
           <node concept="37vLTG" id="2OJHliZ69m1" role="3clF46">
             <property role="TrG5h" value="b" />
             <node concept="3uibUv" id="2OJHliZ69tp" role="1tU5fm">
-              <ref role="3uigEE" node="1li4vsELfWN" resolve="EnumDeclName" />
+              <ref role="3uigEE" node="1li4vsELfWN" resolve="OuterClass.EnumDeclName" />
               <node concept="1ZhdrF" id="2OJHliZ69tq" role="lGtFl">
                 <property role="2qtEX8" value="classifier" />
                 <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11834,7 +11834,7 @@
                 <node concept="3uibUv" id="1sKh73tS55O" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~Vector" resolve="Vector" />
                   <node concept="3uibUv" id="1sKh73tS55P" role="11_B2D">
-                    <ref role="3uigEE" node="1li4vsEDum2" resolve="EnumDeclName" />
+                    <ref role="3uigEE" node="1li4vsEDum2" resolve="OuterClass.EnumDeclName" />
                     <node concept="1ZhdrF" id="1sKh73tS55Q" role="lGtFl">
                       <property role="2qtEX8" value="classifier" />
                       <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11859,7 +11859,7 @@
                     <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="33ny:~Vector.&lt;init&gt;()" resolve="Vector" />
                     <node concept="3uibUv" id="1sKh73tS560" role="1pMfVU">
-                      <ref role="3uigEE" node="1li4vsEDum2" resolve="EnumDeclName" />
+                      <ref role="3uigEE" node="1li4vsEDum2" resolve="OuterClass.EnumDeclName" />
                       <node concept="1ZhdrF" id="1sKh73tS561" role="lGtFl">
                         <property role="2qtEX8" value="classifier" />
                         <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11901,7 +11901,7 @@
               <node concept="3cpWsn" id="1sKh73tS56g" role="1Duv9x">
                 <property role="TrG5h" value="e" />
                 <node concept="3uibUv" id="1sKh73tS56h" role="1tU5fm">
-                  <ref role="3uigEE" node="1li4vsEDum2" resolve="EnumDeclName" />
+                  <ref role="3uigEE" node="1li4vsEDum2" resolve="OuterClass.EnumDeclName" />
                   <node concept="1ZhdrF" id="1sKh73tS56i" role="lGtFl">
                     <property role="2qtEX8" value="classifier" />
                     <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -11922,7 +11922,7 @@
                 </node>
               </node>
               <node concept="uiWXb" id="1sKh73tS56q" role="1DdaDG">
-                <ref role="uiZuM" node="1li4vsELfWN" resolve="EnumDeclName" />
+                <ref role="uiZuM" node="1li4vsELfWN" resolve="OuterClass.EnumDeclName" />
                 <node concept="1ZhdrF" id="1sKh73tS56r" role="lGtFl">
                   <property role="2qtEX8" value="enumClass" />
                   <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1224573963862/1224573974191" />
@@ -11976,7 +11976,7 @@
               <node concept="3cpWsn" id="1li4vsELJUY" role="1Duv9x">
                 <property role="TrG5h" value="itDeclName" />
                 <node concept="3uibUv" id="1li4vsEM66h" role="1tU5fm">
-                  <ref role="3uigEE" node="1li4vsELfWN" resolve="EnumDeclName" />
+                  <ref role="3uigEE" node="1li4vsELfWN" resolve="OuterClass.EnumDeclName" />
                   <node concept="1ZhdrF" id="1li4vsEM66i" role="lGtFl">
                     <property role="2qtEX8" value="classifier" />
                     <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -12001,14 +12001,14 @@
                   <node concept="3clFbS" id="1li4vsELJVj" role="3clFbx">
                     <node concept="3cpWs6" id="1li4vsELJVk" role="3cqZAp">
                       <node concept="37vLTw" id="1li4vsELJVl" role="3cqZAk">
-                        <ref role="3cqZAo" node="1li4vsELJUY" resolve="it" />
+                        <ref role="3cqZAo" node="1li4vsELJUY" resolve="itDeclName" />
                       </node>
                     </node>
                   </node>
                   <node concept="2OqwBi" id="1li4vsELJVm" role="3clFbw">
                     <node concept="2OqwBi" id="1li4vsELJVn" role="2Oq$k0">
                       <node concept="37vLTw" id="1li4vsELJVo" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1li4vsELJUY" resolve="it" />
+                        <ref role="3cqZAo" node="1li4vsELJUY" resolve="itDeclName" />
                       </node>
                       <node concept="liA8E" id="1li4vsELPjk" role="2OqNvi">
                         <ref role="37wK5l" node="1li4vsELJUF" resolve="getValue" />
@@ -12024,7 +12024,7 @@
                 </node>
               </node>
               <node concept="uiWXb" id="1li4vsEMf3s" role="1DdaDG">
-                <ref role="uiZuM" node="1li4vsELfWN" resolve="EnumDeclName" />
+                <ref role="uiZuM" node="1li4vsELfWN" resolve="OuterClass.EnumDeclName" />
                 <node concept="1ZhdrF" id="2nSV6xMJyNa" role="lGtFl">
                   <property role="2qtEX8" value="enumClass" />
                   <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1224573963862/1224573974191" />
@@ -12066,7 +12066,7 @@
             </node>
           </node>
           <node concept="3uibUv" id="1li4vsELJV$" role="3clF45">
-            <ref role="3uigEE" node="1li4vsELfWN" resolve="EnumDeclName" />
+            <ref role="3uigEE" node="1li4vsELfWN" resolve="OuterClass.EnumDeclName" />
             <node concept="1ZhdrF" id="1li4vsELJV_" role="lGtFl">
               <property role="2qtEX8" value="classifier" />
               <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -12150,7 +12150,7 @@
         <node concept="3uibUv" id="2OJHliYYayP" role="EKbjA">
           <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
           <node concept="3uibUv" id="2OJHliZ66rO" role="11_B2D">
-            <ref role="3uigEE" node="1li4vsELfWN" resolve="EnumDeclName" />
+            <ref role="3uigEE" node="1li4vsELfWN" resolve="OuterClass.EnumDeclName" />
             <node concept="1ZhdrF" id="2OJHliZ66rP" role="lGtFl">
               <property role="2qtEX8" value="classifier" />
               <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />

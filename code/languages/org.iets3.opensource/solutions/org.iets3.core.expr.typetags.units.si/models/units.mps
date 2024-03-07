@@ -2,9 +2,9 @@
 <model ref="r:1881124b-7ac4-4b0f-a7dd-12953ac3263b(org.iets3.core.expr.typetags.units.si.units)">
   <persistence version="9" />
   <languages>
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
-    <use id="cb91a38e-738a-4811-a96d-448d08f526fa" name="org.iets3.core.expr.typetags.units" version="1" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
+    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="-1" />
+    <use id="cb91a38e-738a-4811-a96d-448d08f526fa" name="org.iets3.core.expr.typetags.units" version="-1" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -65,7 +65,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -110,7 +110,7 @@
     </node>
     <node concept="CIrOH" id="5XaocLWHSS6" role="_iOnB">
       <property role="TrG5h" value="kg" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSS7" role="_iOnB">
       <property role="TrG5h" value="mol" />
@@ -865,23 +865,23 @@
     </node>
     <node concept="CIrOH" id="69HsIy5Fy7C" role="_iOnB">
       <property role="TrG5h" value="ng" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fye0" role="_iOnB">
       <property role="TrG5h" value="µg" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fy6n" role="_iOnB">
       <property role="TrG5h" value="mg" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5FxTe" role="_iOnB">
       <property role="TrG5h" value="g" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5FyhU" role="_iOnB">
       <property role="TrG5h" value="ton" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="TRoc0" id="69HsIy5Fyjf" role="_iOnB">
       <ref role="27Q$ZQ" node="5XaocLWHSS6" resolve="kg" />
