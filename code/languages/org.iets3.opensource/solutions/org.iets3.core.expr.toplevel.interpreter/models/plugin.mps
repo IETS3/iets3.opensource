@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:fdc4a3a8-bc78-4f8e-a74a-27e64dd85f6d(org.iets3.core.expr.toplevel.interpreter.plugin)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
@@ -1020,11 +1019,11 @@
                 </node>
               </node>
               <node concept="2ZW3vV" id="3Y6fbK1jN9O" role="3clFbw">
-                <node concept="37vLTw" id="3Y6fbK1jN9a" role="2ZW6bz">
-                  <ref role="3cqZAo" node="c36CPs_RSU" resolve="val" />
-                </node>
                 <node concept="3uibUv" id="4$j2$kkckjq" role="2ZW6by">
                   <ref role="3uigEE" to="pq1l:365yA_OO5FT" resolve="EnumLiteral" />
+                </node>
+                <node concept="37vLTw" id="3Y6fbK1jN9a" role="2ZW6bz">
+                  <ref role="3cqZAo" node="c36CPs_RSU" resolve="val" />
                 </node>
               </node>
             </node>
@@ -1089,11 +1088,11 @@
                 </node>
               </node>
               <node concept="2ZW3vV" id="c36CPs_OGg" role="3clFbw">
-                <node concept="37vLTw" id="c36CPs_OGi" role="2ZW6bz">
-                  <ref role="3cqZAo" node="c36CPs_OG1" resolve="val" />
-                </node>
                 <node concept="3uibUv" id="4$j2$kkcCd6" role="2ZW6by">
                   <ref role="3uigEE" to="pq1l:365yA_OO5FT" resolve="EnumLiteral" />
+                </node>
+                <node concept="37vLTw" id="c36CPs_OGi" role="2ZW6bz">
+                  <ref role="3cqZAo" node="c36CPs_OG1" resolve="val" />
                 </node>
               </node>
             </node>
@@ -2715,9 +2714,6 @@
               <node concept="3clFbS" id="6WstIz8RAkK" role="2LFqv$">
                 <node concept="3clFbJ" id="6WstIz8RBxl" role="3cqZAp">
                   <node concept="3clFbC" id="6WstIz8RB_7" role="3clFbw">
-                    <node concept="37vLTw" id="6WstIz8RBx$" role="3uHU7B">
-                      <ref role="3cqZAo" node="6WstIz8RA0$" resolve="ctx" />
-                    </node>
                     <node concept="2YIFZM" id="4$j2$kkixM6" role="3uHU7w">
                       <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="getInstance" />
                       <ref role="1Pybhc" to="pq1l:365yA_OO5FT" resolve="EnumLiteral" />
@@ -2732,6 +2728,9 @@
                       <node concept="oxNuS" id="4$j2$kkiyNA" role="37wK5m" />
                       <node concept="3fckFw" id="4$j2$kkiyP7" role="37wK5m" />
                       <node concept="2dz_u5" id="4$j2$kkiz21" role="37wK5m" />
+                    </node>
+                    <node concept="37vLTw" id="6WstIz8RBx$" role="3uHU7B">
+                      <ref role="3cqZAo" node="6WstIz8RA0$" resolve="ctx" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="6WstIz8RBxn" role="3clFbx">
