@@ -8338,19 +8338,19 @@
               <ref role="3cqZAo" node="kZqQ800dDB" resolve="options" />
             </node>
             <node concept="liA8E" id="4SH1Ldj_FpZ" role="2OqNvi">
-              <ref role="37wK5l" to="pu3r:4SH1LdjmhBl" resolve="hideToolButton" />
+              <ref role="37wK5l" to="pu3r:4SH1LdjmhBl" resolve="hideToolButtons" />
               <node concept="2ShNRf" id="4SH1LdjEAJK" role="37wK5m">
                 <node concept="3g6Rrh" id="4SH1LdjELyd" role="2ShVmc">
                   <node concept="3uibUv" id="4SH1LdjEKhj" role="3g7fb8">
-                    <ref role="3uigEE" to="pu3r:4SH1LdjhYoh" resolve="ToolButtonEnum" />
+                    <ref role="3uigEE" to="pu3r:4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
                   </node>
                   <node concept="Rm8GO" id="4SH1LdjER7k" role="3g7hyw">
                     <ref role="Rm8GQ" to="pu3r:4SH1Ldjinkn" resolve="NextTrace" />
-                    <ref role="1Px2BO" to="pu3r:4SH1LdjhYoh" resolve="ToolButtonEnum" />
+                    <ref role="1Px2BO" to="pu3r:4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
                   </node>
                   <node concept="Rm8GO" id="4SH1LdjETU0" role="3g7hyw">
                     <ref role="Rm8GQ" to="pu3r:4SH1Ldjintc" resolve="Rerun" />
-                    <ref role="1Px2BO" to="pu3r:4SH1LdjhYoh" resolve="ToolButtonEnum" />
+                    <ref role="1Px2BO" to="pu3r:4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
                   </node>
                 </node>
               </node>

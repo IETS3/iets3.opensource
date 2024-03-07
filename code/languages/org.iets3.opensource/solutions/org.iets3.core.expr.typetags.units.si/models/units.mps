@@ -110,7 +110,7 @@
     </node>
     <node concept="CIrOH" id="5XaocLWHSS6" role="_iOnB">
       <property role="TrG5h" value="kg" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSS7" role="_iOnB">
       <property role="TrG5h" value="mol" />
@@ -865,23 +865,23 @@
     </node>
     <node concept="CIrOH" id="69HsIy5Fy7C" role="_iOnB">
       <property role="TrG5h" value="ng" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fye0" role="_iOnB">
       <property role="TrG5h" value="µg" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fy6n" role="_iOnB">
       <property role="TrG5h" value="mg" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5FxTe" role="_iOnB">
       <property role="TrG5h" value="g" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5FyhU" role="_iOnB">
       <property role="TrG5h" value="ton" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="TRoc0" id="69HsIy5Fyjf" role="_iOnB">
       <ref role="27Q$ZQ" node="5XaocLWHSS6" resolve="kg" />

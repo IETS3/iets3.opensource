@@ -1887,7 +1887,7 @@
           </node>
           <node concept="3clFbC" id="4$j2$kkgfBJ" role="3clFbw">
             <node concept="37vLTw" id="4$j2$kkgf0J" role="3uHU7B">
-              <ref role="3cqZAo" node="4$j2$kkge1O" resolve="inCurrent" />
+              <ref role="3cqZAo" node="4$j2$kkge1O" resolve="enumliteral" />
             </node>
             <node concept="10Nm6u" id="4$j2$kkgfMD" role="3uHU7w" />
           </node>
@@ -2478,7 +2478,7 @@
                 <node concept="3cpWsd" id="wlV$3ku3BC" role="3cqZAk">
                   <node concept="2OqwBi" id="wlV$3ku3BE" role="3uHU7w">
                     <node concept="37vLTw" id="wlV$3ku3BF" role="2Oq$k0">
-                      <ref role="3cqZAo" node="365yA_OO6AO" resolve="enumLiteral" />
+                      <ref role="3cqZAo" node="365yA_OO6AO" resolve="other" />
                     </node>
                     <node concept="liA8E" id="wlV$3ku3BG" role="2OqNvi">
                       <ref role="37wK5l" node="1yE6u6Gug3a" resolve="getDeclarationIndex" />
@@ -2517,7 +2517,7 @@
                     <node concept="2OqwBi" id="365yA_OP1DW" role="37wK5m">
                       <node concept="2OqwBi" id="365yA_OP0bT" role="2Oq$k0">
                         <node concept="37vLTw" id="365yA_ORc6q" role="2Oq$k0">
-                          <ref role="3cqZAo" node="365yA_OO6AO" resolve="enumLiteral" />
+                          <ref role="3cqZAo" node="365yA_OO6AO" resolve="other" />
                         </node>
                         <node concept="2OwXpG" id="365yA_OP0SN" role="2OqNvi">
                           <ref role="2Oxat5" node="365yA_OOfZ6" resolve="literal" />
@@ -2652,7 +2652,7 @@
                       </node>
                       <node concept="2OqwBi" id="wlV$3kuaxd" role="0kSFX">
                         <node concept="37vLTw" id="wlV$3kuaxe" role="2Oq$k0">
-                          <ref role="3cqZAo" node="365yA_OO6AO" resolve="enumLiteral" />
+                          <ref role="3cqZAo" node="365yA_OO6AO" resolve="other" />
                         </node>
                         <node concept="liA8E" id="1ghRTGwxWWv" role="2OqNvi">
                           <ref role="37wK5l" node="4$j2$kkaWid" resolve="getValue" />
@@ -2672,7 +2672,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="365yA_OO6AS" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
