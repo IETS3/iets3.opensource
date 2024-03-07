@@ -425,6 +425,9 @@
       <concept id="4988624180052598016" name="org.iets3.core.expr.tests.structure.RealEqualsTestOp" flags="ng" index="2cNFD2">
         <property id="4988624180052918199" name="decimals" index="2cKlzP" />
       </concept>
+      <concept id="8219602584783477664" name="org.iets3.core.expr.tests.structure.AbstractTestItem" flags="ng" index="mXNUw">
+        <property id="4770332828445654111" name="isIgnored" index="2xO9KL" />
+      </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -8580,6 +8583,15 @@
     </node>
     <node concept="_fkuM" id="69HsIy5GLS_" role="_iOnB">
       <property role="TrG5h" value="scalingWeight" />
+      <node concept="1z9TsT" id="3xJU9K0$Z37" role="lGtFl">
+        <node concept="OjmMv" id="3xJU9K0$Z38" role="1w35rA">
+          <node concept="19SGf9" id="3xJU9K0$Z39" role="OjmMu">
+            <node concept="19SUe$" id="3xJU9K0$Z3a" role="19SJt6">
+              <property role="19SUeA" value="TODO: Again the same problem with the conversion on integer level. Can we provide a warning or fix it" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="_fkuZ" id="69HsIy5GLSA" role="_fkp5">
         <node concept="_fku$" id="69HsIy5GLSB" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSC" role="_fkuY">
@@ -8605,6 +8617,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="69HsIy5GLSJ" role="_fkp5">
+        <property role="2xO9KL" value="true" />
         <node concept="_fku$" id="69HsIy5GLSK" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSL" role="_fkuY">
           <node concept="1YnStw" id="69HsIy5GU5N" role="30czhm">
