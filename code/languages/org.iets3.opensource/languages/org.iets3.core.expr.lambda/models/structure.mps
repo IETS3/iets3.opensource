@@ -563,6 +563,7 @@
     <property role="TrG5h" value="GenericFunctionType" />
     <property role="3GE5qa" value="function" />
     <property role="R4oN_" value="a generic function type" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="5iD_kvlIV0f">
