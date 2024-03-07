@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.iets3.opensource.allScripts.build" uuid="ed0abc8f-2bd9-460c-b01c-761f3a610483" moduleVersion="0" compileInMPS="true">
+<solution name="org.iets3.opensource.allScripts.build" uuid="ed0abc8f-2bd9-460c-b01c-761f3a610483" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
     <dependency reexport="false">3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)</dependency>

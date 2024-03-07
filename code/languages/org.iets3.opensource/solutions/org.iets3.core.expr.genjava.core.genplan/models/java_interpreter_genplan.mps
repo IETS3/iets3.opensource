@@ -2,7 +2,7 @@
 <model ref="r:5a45d31c-961e-446a-984a-d453af8ce385(org.iets3.core.expr.genjava.core.genplan.java_interpreter_genplan)">
   <persistence version="9" />
   <languages>
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
   </languages>
   <imports>
     <import index="g6e4" ref="r:44582398-dfcf-40ad-bb09-b88bb3cc5de2(org.iets3.core.expr.genjava.core.genplan.genplan)" />
@@ -21,7 +21,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
