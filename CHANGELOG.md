@@ -15,6 +15,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 
+- updated gradle build. Build will now fail in case tests were failing.
 - Enumerations can have an order by declaration, by literal or by value ascociated with the literal 
 
 ## January 2024
