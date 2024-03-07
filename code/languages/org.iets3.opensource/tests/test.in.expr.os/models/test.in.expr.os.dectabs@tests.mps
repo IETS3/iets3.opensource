@@ -1519,6 +1519,22 @@
     <node concept="_ixoA" id="6OunYCfqvkJ" role="_iOnB" />
     <node concept="1aga60" id="7vcJOhhDCpu" role="_iOnB">
       <property role="TrG5h" value="calculateFareAndDiscountWithAgeReal" />
+      <node concept="1ahQXy" id="7vcJOhhDCqI" role="1ahQWs">
+        <property role="TrG5h" value="state" />
+        <node concept="5mh7t" id="7vcJOhhDCqJ" role="3ix9CU">
+          <ref role="5mh6l" node="6OunYCfqjNA" resolve="BuLand" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="7vcJOhhDCqK" role="1ahQWs">
+        <property role="TrG5h" value="club" />
+        <node concept="2vmvy5" id="7vcJOhhDCqL" role="3ix9CU" />
+      </node>
+      <node concept="1ahQXy" id="7vcJOhhDCqM" role="1ahQWs">
+        <property role="TrG5h" value="age" />
+        <node concept="1WbbFT" id="7PlS3093M84" role="3ix9CU">
+          <ref role="1WbbFS" node="7PlS3093LMo" resolve="AgeReal" />
+        </node>
+      </node>
       <node concept="1fMURV" id="7vcJOhhDCpv" role="1ahQXP">
         <node concept="1fLkTo" id="7vcJOhhDCpw" role="1vMDkh">
           <node concept="1fLbrf" id="7vcJOhhDCpx" role="1fLbpX">
@@ -1729,22 +1745,6 @@
           <node concept="1WbbFT" id="7vcJOhhDCqH" role="1fMUOZ">
             <ref role="1WbbFS" node="6OunYCfqBWH" resolve="Percentage" />
           </node>
-        </node>
-      </node>
-      <node concept="1ahQXy" id="7vcJOhhDCqI" role="1ahQWs">
-        <property role="TrG5h" value="state" />
-        <node concept="5mh7t" id="7vcJOhhDCqJ" role="3ix9CU">
-          <ref role="5mh6l" node="6OunYCfqjNA" resolve="BuLand" />
-        </node>
-      </node>
-      <node concept="1ahQXy" id="7vcJOhhDCqK" role="1ahQWs">
-        <property role="TrG5h" value="club" />
-        <node concept="2vmvy5" id="7vcJOhhDCqL" role="3ix9CU" />
-      </node>
-      <node concept="1ahQXy" id="7vcJOhhDCqM" role="1ahQWs">
-        <property role="TrG5h" value="age" />
-        <node concept="1WbbFT" id="7PlS3093M84" role="3ix9CU">
-          <ref role="1WbbFS" node="7PlS3093LMo" resolve="AgeReal" />
         </node>
       </node>
     </node>
