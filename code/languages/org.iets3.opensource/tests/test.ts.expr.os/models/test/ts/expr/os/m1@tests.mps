@@ -32,6 +32,7 @@
     <import index="yjde" ref="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" />
+    <import index="bg10" ref="r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
@@ -41,7 +42,9 @@
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
         <child id="8489045168660938517" name="errorRef" index="3lydEf" />
       </concept>
-      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU" />
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU">
+        <child id="8489045168660938635" name="warningRef" index="3lydCh" />
+      </concept>
       <concept id="1215526290564" name="jetbrains.mps.lang.test.structure.NodeTypeCheckOperation" flags="ng" index="30Omv">
         <child id="1215526393912" name="type" index="31d$z" />
       </concept>
@@ -61,7 +64,11 @@
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
-      <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr" />
+      <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr">
+        <child id="4649457259824818099" name="equationRef" index="MJxsd" />
+      </concept>
+      <concept id="4649457259824807647" name="jetbrains.mps.lang.test.structure.TypesystemEquationReference" flags="ng" index="MGsTx" />
+      <concept id="4531408400486526326" name="jetbrains.mps.lang.test.structure.WarningStatementReference" flags="ng" index="2PQEqo" />
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
@@ -8260,6 +8267,44 @@
     <node concept="1qefOq" id="3ni3Wiec5Qt" role="1SKRRt">
       <node concept="_iOnV" id="3ni3Wiec5Qu" role="1qenE9">
         <property role="TrG5h" value="effects2" />
+        <node concept="2zPypq" id="3i3CWWtziew" role="_iOnC">
+          <property role="TrG5h" value="globalcounter" />
+          <node concept="3sRH3H" id="3i3CWWtziiO" role="2zPyp_">
+            <node concept="30bXRB" id="3i3CWWtzij3" role="3sRH3h">
+              <property role="30bXRw" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="1aga60" id="3i3CWWtzjX9" role="_iOnC">
+          <property role="TrG5h" value="update" />
+          <node concept="2lgajX" id="3i3CWWtzk1A" role="28QfE6" />
+          <node concept="1QScDb" id="3i3CWWtziy_" role="1ahQXP">
+            <node concept="3sPC8h" id="3i3CWWtzi$k" role="1QScD9">
+              <node concept="30dDZf" id="3i3CWWtziGm" role="3sPC8l">
+                <node concept="30bXRB" id="3i3CWWtziKM" role="30dEs_">
+                  <property role="30bXRw" value="1" />
+                </node>
+                <node concept="3j5BQN" id="3i3CWWtziC9" role="30dEsF" />
+                <node concept="7CXmI" id="3i3CWWtzQCq" role="lGtFl">
+                  <node concept="29bkU" id="3i3CWWtzSBZ" role="7EUXB">
+                    <node concept="2PQEqo" id="3i3CWWtzSC0" role="3lydCh">
+                      <ref role="39XzEq" to="bg10:69ODpXSSoqa" />
+                    </node>
+                  </node>
+                  <node concept="2DdRWr" id="3i3CWWtzSC1" role="7EUXB">
+                    <node concept="MGsTx" id="3i3CWWtzSC2" role="MJxsd">
+                      <ref role="39XzEq" to="bg10:3GdqffBR6kN" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="_emDc" id="3i3CWWtzixM" role="30czhm">
+              <ref role="_emDf" node="3i3CWWtziew" resolve="globalcounter" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="3i3CWWtziar" role="_iOnC" />
         <node concept="2zPypq" id="3ni3WiedEDe" role="_iOnC">
           <property role="TrG5h" value="x" />
           <node concept="30bXRB" id="3ni3WiedEDE" role="2zPyp_">
