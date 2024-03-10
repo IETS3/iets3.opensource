@@ -3000,9 +3000,6 @@
       <node concept="l2Vlx" id="1WCh2thoP48" role="2iSdaV" />
       <node concept="3F0ifn" id="1WCh2thoP49" role="3EZMnx">
         <property role="3F0ifm" value="inRange" />
-        <node concept="11L4FC" id="1WCh2thoP69" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="3F0ifn" id="1WCh2thoP4a" role="3EZMnx">
         <property role="3F0ifm" value="[" />
