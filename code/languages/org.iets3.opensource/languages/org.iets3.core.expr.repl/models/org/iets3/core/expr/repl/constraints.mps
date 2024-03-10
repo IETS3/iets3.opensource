@@ -2,6 +2,7 @@
 <model ref="r:098cd5d2-6719-4a9b-9976-ee98e642cc00(org.iets3.core.expr.repl.constraints)">
   <persistence version="9" />
   <languages>
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
@@ -596,6 +597,22 @@
             <node concept="2OqwBi" id="5avmkTFi2W8" role="3clFbw">
               <node concept="1Wqviy" id="5avmkTFi2tL" role="2Oq$k0" />
               <node concept="17RlXB" id="5avmkTFi3Pj" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbJ" id="4INVJAvXAOI" role="3cqZAp">
+            <node concept="3clFbS" id="4INVJAvXAOK" role="3clFbx">
+              <node concept="3cpWs6" id="4INVJAvXCxh" role="3cqZAp">
+                <node concept="3clFbT" id="4INVJAvXCxq" role="3cqZAk" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4INVJAvXBCM" role="3clFbw">
+              <node concept="1Wqviy" id="4INVJAvXB0B" role="2Oq$k0" />
+              <node concept="liA8E" id="4INVJAvXCbL" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
+                <node concept="Xl_RD" id="4INVJAvXCl2" role="37wK5m">
+                  <property role="Xl_RC" value="/" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="5avmkTFkueI" role="3cqZAp">
