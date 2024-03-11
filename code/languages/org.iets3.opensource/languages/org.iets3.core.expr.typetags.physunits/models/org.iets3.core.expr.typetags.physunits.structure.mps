@@ -119,7 +119,7 @@
     <node concept="1TJgyi" id="2hbaSyABN4s" role="1TKVEl">
       <property role="IQ2nx" value="2615231874529702172" />
       <property role="TrG5h" value="scaling" />
-      <ref role="AX2Wp" node="2hbaSyABMZL" resolve="ScalingType" />
+      <ref role="AX2Wp" node="2hbaSyABMZL" resolve="UnitScalingType" />
     </node>
     <node concept="1TJgyi" id="7Bmg9Oo7Kvu" role="1TKVEl">
       <property role="IQ2nx" value="8779275567064090590" />
@@ -842,7 +842,7 @@
     <property role="3GE5qa" value="group.dimension" />
     <property role="TrG5h" value="DimensionExpression" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="u36xDg6aSv" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
     </node>
@@ -917,7 +917,7 @@
     <property role="EcuMT" value="5615525165854719246" />
     <property role="3GE5qa" value="group.dimension" />
     <property role="TrG5h" value="Dimension" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4RImAbi2o5p" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

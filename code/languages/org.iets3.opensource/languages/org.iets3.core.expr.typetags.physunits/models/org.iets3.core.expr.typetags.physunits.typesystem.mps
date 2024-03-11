@@ -1834,7 +1834,7 @@
           <node concept="2OqwBi" id="5X7HQPSAH43" role="33vP2m">
             <node concept="2OqwBi" id="5X7HQPSAH44" role="2Oq$k0">
               <node concept="1YBJjd" id="6RONOaUmPLl" role="2Oq$k0">
-                <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
+                <ref role="1YBMHb" node="4lYUAbuFAB" resolve="iConvertUnit" />
               </node>
               <node concept="2qgKlT" id="5X7HQPSAH46" role="2OqNvi">
                 <ref role="37wK5l" to="rppw:7SygLIkQnGn" resolve="getExpression" />
@@ -1870,7 +1870,7 @@
               </node>
               <node concept="2OqwBi" id="5X7HQPSGrDO" role="33vP2m">
                 <node concept="1YBJjd" id="6RONOaUmXW3" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
+                  <ref role="1YBMHb" node="4lYUAbuFAB" resolve="iConvertUnit" />
                 </node>
                 <node concept="2qgKlT" id="5X7HQPSGrDQ" role="2OqNvi">
                   <ref role="37wK5l" to="rppw:1BdB9zGarhv" resolve="getTargetUnitReference" />
@@ -1947,7 +1947,7 @@
                   </node>
                 </node>
                 <node concept="1YBJjd" id="6RONOaUn1AB" role="1urrMF">
-                  <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
+                  <ref role="1YBMHb" node="4lYUAbuFAB" resolve="iConvertUnit" />
                 </node>
               </node>
             </node>
@@ -1984,7 +1984,7 @@
           <ref role="37wK5l" node="7SygLIkQEht" resolve="checkIConvertUnit" />
           <ref role="1Pybhc" node="7SygLIkQEc3" resolve="IConvertUnitHelper" />
           <node concept="1YBJjd" id="7SygLIkRGlN" role="37wK5m">
-            <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
+            <ref role="1YBMHb" node="4lYUAbuFAB" resolve="iConvertUnit" />
           </node>
         </node>
       </node>
@@ -7904,7 +7904,7 @@
                     <property role="TrG5h" value="leftExponent" />
                     <node concept="2OqwBi" id="2NJGAccoLtE" role="33vP2m">
                       <node concept="37vLTw" id="37bWBcnuRY9" role="2Oq$k0">
-                        <ref role="3cqZAo" node="37bWBcnuRY4" resolve="node" />
+                        <ref role="3cqZAo" node="37bWBcnuRY4" resolve="leftPower" />
                       </node>
                       <node concept="2qgKlT" id="2NJGAccoMbT" role="2OqNvi">
                         <ref role="37wK5l" to="rppw:1JynhuWslGU" resolve="getExp" />
@@ -7937,7 +7937,7 @@
                     <property role="TrG5h" value="rightExponent" />
                     <node concept="2OqwBi" id="2NJGAccoMKU" role="33vP2m">
                       <node concept="37vLTw" id="37bWBcnuXPr" role="2Oq$k0">
-                        <ref role="3cqZAo" node="37bWBcnuXPm" resolve="node" />
+                        <ref role="3cqZAo" node="37bWBcnuXPm" resolve="rightPower" />
                       </node>
                       <node concept="2qgKlT" id="2NJGAccoN1Q" role="2OqNvi">
                         <ref role="37wK5l" to="rppw:1JynhuWslGU" resolve="getExp" />
@@ -7995,7 +7995,7 @@
                       <node concept="3clFbS" id="2NJGAccuYfd" role="3clFbx">
                         <node concept="3cpWs6" id="2NJGAccuZTW" role="3cqZAp">
                           <node concept="37vLTw" id="37bWBcntzEx" role="3cqZAk">
-                            <ref role="3cqZAo" node="37bWBcntzEs" resolve="compareTo" />
+                            <ref role="3cqZAo" node="37bWBcntzEs" resolve="compare" />
                           </node>
                         </node>
                       </node>
@@ -8052,7 +8052,7 @@
                                   <property role="3cmrfH" value="-1" />
                                 </node>
                                 <node concept="37vLTw" id="37bWBcntzEy" role="3uHU7B">
-                                  <ref role="3cqZAo" node="37bWBcntzEs" resolve="compareTo" />
+                                  <ref role="3cqZAo" node="37bWBcntzEs" resolve="compare" />
                                 </node>
                               </node>
                             </node>
@@ -10124,7 +10124,7 @@
             <ref role="ehGHo" to="i3ya:6q45UTyt_h5" resolve="IUnitSpecification" />
           </node>
           <node concept="2YIFZM" id="7Dq0xpBteNA" role="33vP2m">
-            <ref role="37wK5l" to="rppw:5pSqQr$AdB$" resolve="getUnitSpecification" />
+            <ref role="37wK5l" to="rppw:5pSqQr$AdB$" resolve="getSpecification" />
             <ref role="1Pybhc" to="rppw:4jkbLB5RJZL" resolve="UnitConversionUtil" />
             <node concept="37vLTw" id="4HVc87K7OgC" role="37wK5m">
               <ref role="3cqZAo" node="4HVc87K7Og$" resolve="type" />
