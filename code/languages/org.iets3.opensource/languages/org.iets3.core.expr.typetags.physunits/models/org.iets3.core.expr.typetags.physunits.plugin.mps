@@ -22,6 +22,8 @@
     <import index="rxpb" ref="r:31fd8edf-66c5-44d7-84a8-5940badb4d17(org.iets3.core.expr.base.interpreter.plugin)" />
     <import index="km5y" ref="r:78e88ebb-2d27-4b89-867f-623c50619338(org.iets3.core.expr.simpleTypes.interpreter.plugin)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="x0pf" ref="r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -870,6 +872,18 @@
       <node concept="3Tm1VV" id="3wrpJuqrQhd" role="1B3o_S" />
       <node concept="10P_77" id="3wrpJuqrQcw" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="HeBpG0vQy" role="jymVt" />
+    <node concept="3clFb_" id="HeBpG0y2X" role="jymVt">
+      <property role="TrG5h" value="getExponentComparator" />
+      <node concept="3clFbS" id="HeBpG0y30" role="3clF47" />
+      <node concept="3Tm1VV" id="HeBpG0y31" role="1B3o_S" />
+      <node concept="3uibUv" id="HeBpG0wXi" role="3clF45">
+        <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
+        <node concept="3Tqbb2" id="HeBpG0E4q" role="11_B2D">
+          <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4qv99IryjZp" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4qv99IrzTI8">
@@ -996,6 +1010,28 @@
       </node>
       <node concept="2AHcQZ" id="3wrpJuqrQGr" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="HeBpG0DHW" role="jymVt" />
+    <node concept="3clFb_" id="HeBpG0yvr" role="jymVt">
+      <property role="TrG5h" value="getExponentComparator" />
+      <node concept="3Tm1VV" id="HeBpG0yvt" role="1B3o_S" />
+      <node concept="3uibUv" id="HeBpG0yvu" role="3clF45">
+        <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
+        <node concept="3Tqbb2" id="2NJGAccbLPE" role="11_B2D">
+          <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="HeBpG0yvv" role="3clF47">
+        <node concept="3clFbF" id="HeBpG0z1j" role="3cqZAp">
+          <node concept="10M0yZ" id="HeBpG0zhP" role="3clFbG">
+            <ref role="3cqZAo" to="x0pf:2NJGAccbKwn" resolve="defaultExponentComparator" />
+            <ref role="1PxDUh" to="x0pf:45a4DYZteBJ" resolve="GroupHelper" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="HeBpG0yvw" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
   </node>

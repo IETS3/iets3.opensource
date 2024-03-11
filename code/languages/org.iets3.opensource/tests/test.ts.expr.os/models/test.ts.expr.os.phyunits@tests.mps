@@ -36,6 +36,7 @@
     <import index="8ps7" ref="r:4134cae9-4017-4808-bf1c-768cb21cb9ea(org.iets3.core.expr.typetags.phyunits.si.units)" />
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" />
     <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)" />
+    <import index="65nr" ref="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -10256,10 +10257,6 @@
                     <node concept="3clFbS" id="2NJGAccqAmo" role="1bW5cS">
                       <node concept="3clFbF" id="2NJGAccqAmp" role="3cqZAp">
                         <node concept="2OqwBi" id="2NJGAccqAmq" role="3clFbG">
-                          <node concept="10M0yZ" id="2NJGAccqAmr" role="2Oq$k0">
-                            <ref role="3cqZAo" to="x0pf:2NJGAccbKwn" resolve="exponentComparator" />
-                            <ref role="1PxDUh" to="x0pf:45a4DYZteBJ" resolve="GroupHelper" />
-                          </node>
                           <node concept="liA8E" id="2NJGAccqAms" role="2OqNvi">
                             <ref role="37wK5l" to="33ny:~Comparator.compare(java.lang.Object,java.lang.Object)" resolve="compare" />
                             <node concept="37vLTw" id="2NJGAccqAmt" role="37wK5m">
@@ -10267,6 +10264,15 @@
                             </node>
                             <node concept="37vLTw" id="2NJGAccqAmu" role="37wK5m">
                               <ref role="3cqZAo" node="2NJGAccqAmx" resolve="b" />
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="HeBpG26_K" role="2Oq$k0">
+                            <node concept="2YIFZM" id="HeBpFXpp$" role="2Oq$k0">
+                              <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                              <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                            </node>
+                            <node concept="liA8E" id="HeBpG27iP" role="2OqNvi">
+                              <ref role="37wK5l" to="65nr:HeBpG0y2X" resolve="getExponentComparator" />
                             </node>
                           </node>
                         </node>

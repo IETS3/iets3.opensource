@@ -7579,9 +7579,6 @@
                     <node concept="3clFbS" id="2NJGAccyQl1" role="1bW5cS">
                       <node concept="3clFbF" id="2NJGAccyQl2" role="3cqZAp">
                         <node concept="2OqwBi" id="2NJGAccyQl3" role="3clFbG">
-                          <node concept="37vLTw" id="2NJGAccyQl4" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2NJGAccbKwn" resolve="exponentComparator" />
-                          </node>
                           <node concept="liA8E" id="2NJGAccyQl5" role="2OqNvi">
                             <ref role="37wK5l" to="33ny:~Comparator.compare(java.lang.Object,java.lang.Object)" resolve="compare" />
                             <node concept="37vLTw" id="2NJGAccyQl6" role="37wK5m">
@@ -7589,6 +7586,15 @@
                             </node>
                             <node concept="37vLTw" id="2NJGAccyQl7" role="37wK5m">
                               <ref role="3cqZAo" node="2NJGAccyQla" resolve="b" />
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="HeBpG1Zds" role="2Oq$k0">
+                            <node concept="2YIFZM" id="HeBpFXpp$" role="2Oq$k0">
+                              <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                              <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                            </node>
+                            <node concept="liA8E" id="HeBpG2006" role="2OqNvi">
+                              <ref role="37wK5l" to="65nr:HeBpG0y2X" resolve="getExponentComparator" />
                             </node>
                           </node>
                         </node>
@@ -7849,7 +7855,7 @@
     </node>
     <node concept="2tJIrI" id="2NJGAccbIXf" role="jymVt" />
     <node concept="Wx3nA" id="2NJGAccbKwn" role="jymVt">
-      <property role="TrG5h" value="exponentComparator" />
+      <property role="TrG5h" value="defaultExponentComparator" />
       <node concept="3Tm1VV" id="2NJGAccbJHy" role="1B3o_S" />
       <node concept="3uibUv" id="2NJGAccbKpF" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
