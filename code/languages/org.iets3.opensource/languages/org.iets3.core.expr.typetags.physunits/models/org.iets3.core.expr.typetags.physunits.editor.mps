@@ -29,6 +29,7 @@
     <import index="x0pf" ref="r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)" />
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -78,6 +79,7 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1106270637846" name="jetbrains.mps.lang.editor.structure.CellLayout_Flow" flags="nn" index="2iR$Sn" />
       <concept id="6089045305654894366" name="jetbrains.mps.lang.editor.structure.SubstituteMenuReference_Default" flags="ng" index="2kknPJ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="784421273959492578" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_IncludeMenu" flags="ng" index="mvV$s">
@@ -243,6 +245,11 @@
         <child id="3982520150122341379" name="query" index="3tD6jU" />
       </concept>
       <concept id="5425882385312046132" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_CurrentTargetNode" flags="nn" index="1yR$tW" />
+      <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
+        <property id="1215007802031" name="value" index="3$6WeP" />
+      </concept>
+      <concept id="1215007883204" name="jetbrains.mps.lang.editor.structure.PaddingLeftStyleClassItem" flags="ln" index="3$7fVu" />
+      <concept id="1215007897487" name="jetbrains.mps.lang.editor.structure.PaddingRightStyleClassItem" flags="ln" index="3$7jql" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -1024,8 +1031,28 @@
       </node>
       <node concept="3EZMnI" id="4RImAbiep55" role="3EZMnx">
         <node concept="2iRfu4" id="4RImAbiep56" role="2iSdaV" />
-        <node concept="3F0ifn" id="4RImAbiep57" role="3EZMnx">
-          <property role="3F0ifm" value="Dimension" />
+        <node concept="1HlG4h" id="HeBpFZ72X" role="3EZMnx">
+          <node concept="1HfYo3" id="HeBpFZ72Z" role="1HlULh">
+            <node concept="3TQlhw" id="HeBpFZ731" role="1Hhtcw">
+              <node concept="3clFbS" id="HeBpFZ733" role="2VODD2">
+                <node concept="3clFbF" id="HeBpFZ7gc" role="3cqZAp">
+                  <node concept="2YIFZM" id="HeBpFZ7i9" role="3clFbG">
+                    <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
+                    <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                    <node concept="2OqwBi" id="HeBpFZ7jh" role="37wK5m">
+                      <node concept="2YIFZM" id="HeBpFZ7ji" role="2Oq$k0">
+                        <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                        <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                      </node>
+                      <node concept="liA8E" id="HeBpFZ7jj" role="2OqNvi">
+                        <ref role="37wK5l" to="65nr:HeBpFYujS" resolve="getNoDimensionSpecifier" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="s8t4o" id="4RImAbiep58" role="3EZMnx">
           <property role="28Zw97" value="true" />
@@ -2181,9 +2208,28 @@
       <node concept="_tjkj" id="4RImAbhz5OU" role="3EZMnx">
         <node concept="3EZMnI" id="4RImAbhz67P" role="_tjki">
           <node concept="2iRfu4" id="4RImAbhz67Q" role="2iSdaV" />
-          <node concept="3F0ifn" id="4RImAbhz5Tu" role="3EZMnx">
-            <property role="3F0ifm" value="with dimension" />
+          <node concept="3F0ifn" id="4GF8daWuyES" role="3EZMnx">
+            <property role="3F0ifm" value="with" />
             <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          </node>
+          <node concept="1HlG4h" id="4GF8daWuyLR" role="3EZMnx">
+            <node concept="1HfYo3" id="4GF8daWuyLT" role="1HlULh">
+              <node concept="3TQlhw" id="4GF8daWuyLV" role="1Hhtcw">
+                <node concept="3clFbS" id="4GF8daWuyLX" role="2VODD2">
+                  <node concept="3clFbF" id="4GF8daWuyT6" role="3cqZAp">
+                    <node concept="2OqwBi" id="4GF8daWuyT8" role="3clFbG">
+                      <node concept="2YIFZM" id="4GF8daWuyT9" role="2Oq$k0">
+                        <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                        <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                      </node>
+                      <node concept="liA8E" id="4GF8daWuyTa" role="2OqNvi">
+                        <ref role="37wK5l" to="65nr:4GF8daWu7qE" resolve="getDimensionSpecifier" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3F1sOY" id="4RImAbi57qp" role="3EZMnx">
             <ref role="1NtTu8" to="i3ya:4RImAbi2thS" resolve="dimension" />
@@ -2341,8 +2387,28 @@
         </node>
         <node concept="3EZMnI" id="4RImAbhDSJI" role="1QoS34">
           <node concept="2iRfu4" id="4RImAbhDSJJ" role="2iSdaV" />
-          <node concept="3F0ifn" id="4RImAbhDSJK" role="3EZMnx">
-            <property role="3F0ifm" value="Dimension" />
+          <node concept="1HlG4h" id="HeBpFXdqC" role="3EZMnx">
+            <node concept="1HfYo3" id="HeBpFXdqE" role="1HlULh">
+              <node concept="3TQlhw" id="HeBpFXdqG" role="1Hhtcw">
+                <node concept="3clFbS" id="HeBpFXdqI" role="2VODD2">
+                  <node concept="3clFbF" id="HeBpFXoXP" role="3cqZAp">
+                    <node concept="2YIFZM" id="HeBpFXp6S" role="3clFbG">
+                      <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
+                      <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                      <node concept="2OqwBi" id="HeBpFXdu7" role="37wK5m">
+                        <node concept="2YIFZM" id="HeBpFXdu8" role="2Oq$k0">
+                          <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                          <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                        </node>
+                        <node concept="liA8E" id="HeBpFXdu9" role="2OqNvi">
+                          <ref role="37wK5l" to="65nr:4GF8daWu7qE" resolve="getDimensionSpecifier" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="s8t4o" id="4RImAbi7GQw" role="3EZMnx">
             <property role="28Zw97" value="true" />
@@ -2381,8 +2447,28 @@
         </node>
         <node concept="3EZMnI" id="5noD5lk8d7w" role="1QoVPY">
           <node concept="2iRfu4" id="5noD5lk8d7x" role="2iSdaV" />
-          <node concept="3F0ifn" id="5noD5lk8cFb" role="3EZMnx">
-            <property role="3F0ifm" value="Dimension" />
+          <node concept="1HlG4h" id="HeBpFXdFE" role="3EZMnx">
+            <node concept="1HfYo3" id="HeBpFXdFG" role="1HlULh">
+              <node concept="3TQlhw" id="HeBpFXdFI" role="1Hhtcw">
+                <node concept="3clFbS" id="HeBpFXdFK" role="2VODD2">
+                  <node concept="3clFbF" id="HeBpFXppw" role="3cqZAp">
+                    <node concept="2YIFZM" id="HeBpFXppy" role="3clFbG">
+                      <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
+                      <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                      <node concept="2OqwBi" id="HeBpFXppz" role="37wK5m">
+                        <node concept="2YIFZM" id="HeBpFXpp$" role="2Oq$k0">
+                          <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                          <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                        </node>
+                        <node concept="liA8E" id="HeBpFXpp_" role="2OqNvi">
+                          <ref role="37wK5l" to="65nr:4GF8daWu7qE" resolve="getDimensionSpecifier" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3F1sOY" id="4RImAbilfI2" role="3EZMnx">
             <ref role="1NtTu8" to="i3ya:4RImAbi2thS" resolve="dimension" />
@@ -2784,8 +2870,7 @@
   <node concept="24kQdi" id="45a4DYZOUy$">
     <property role="3GE5qa" value="group.typesystem" />
     <ref role="1XX52x" to="i3ya:45a4DYZtiVD" resolve="QuantityEmptyType" />
-    <node concept="3F0ifn" id="45a4DYZOU$e" role="2wV5jI">
-      <property role="3F0ifm" value="dimensionless" />
+    <node concept="1HlG4h" id="HeBpFYtMd" role="2wV5jI">
       <node concept="Vb9p2" id="7Mca05m91Qh" role="3F10Kt" />
       <node concept="3k4GqR" id="7Mca05mb2PG" role="3F10Kt">
         <node concept="3k4GqP" id="7Mca05mb2PH" role="3k4GqO">
@@ -2804,6 +2889,23 @@
                 </node>
                 <node concept="3TrEf2" id="7Mca05nm5qj" role="2OqNvi">
                   <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1HfYo3" id="HeBpFYtMq" role="1HlULh">
+        <node concept="3TQlhw" id="HeBpFYtMB" role="1Hhtcw">
+          <node concept="3clFbS" id="HeBpFYtMO" role="2VODD2">
+            <node concept="3clFbF" id="HeBpFYtYU" role="3cqZAp">
+              <node concept="2OqwBi" id="HeBpFYtYW" role="3clFbG">
+                <node concept="2YIFZM" id="HeBpFYtYX" role="2Oq$k0">
+                  <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                </node>
+                <node concept="liA8E" id="HeBpFYtYY" role="2OqNvi">
+                  <ref role="37wK5l" to="65nr:HeBpFYujS" resolve="getNoDimensionSpecifier" />
                 </node>
               </node>
             </node>
@@ -3274,26 +3376,42 @@
   <node concept="24kQdi" id="7Mca05m6JLM">
     <property role="3GE5qa" value="group" />
     <ref role="1XX52x" to="i3ya:1JynhuWk2TY" resolve="QuantityNeutral" />
-    <node concept="3F0ifn" id="7Mca05m6JPj" role="2wV5jI">
-      <property role="3F0ifm" value="dimensionless" />
-      <node concept="Vb9p2" id="7Mca05m6JUC" role="3F10Kt" />
-      <node concept="3k4GqR" id="7Mca05mb1YH" role="3F10Kt">
-        <node concept="3k4GqP" id="7Mca05mb1YJ" role="3k4GqO">
-          <node concept="3clFbS" id="7Mca05mb1YL" role="2VODD2">
-            <node concept="3clFbF" id="7Mca05mb2gK" role="3cqZAp">
-              <node concept="2OqwBi" id="7Mca05nmmMK" role="3clFbG">
-                <node concept="2YIFZM" id="7Mca05mb2m_" role="2Oq$k0">
+    <node concept="1HlG4h" id="HeBpFYwU6" role="2wV5jI">
+      <node concept="Vb9p2" id="HeBpFYwU7" role="3F10Kt" />
+      <node concept="3k4GqR" id="HeBpFYwU8" role="3F10Kt">
+        <node concept="3k4GqP" id="HeBpFYwU9" role="3k4GqO">
+          <node concept="3clFbS" id="HeBpFYwUa" role="2VODD2">
+            <node concept="3clFbF" id="HeBpFYwUb" role="3cqZAp">
+              <node concept="2OqwBi" id="HeBpFYwUc" role="3clFbG">
+                <node concept="2YIFZM" id="HeBpFYwUd" role="2Oq$k0">
                   <ref role="37wK5l" to="rppw:36kPvG5pbWV" resolve="getUnitLessUnit" />
                   <ref role="1Pybhc" to="rppw:3xM68GMxWv0" resolve="StandardUnitHelper" />
-                  <node concept="2OqwBi" id="7Mca05mb2_h" role="37wK5m">
-                    <node concept="1Q80Hx" id="7Mca05mb2rb" role="2Oq$k0" />
-                    <node concept="liA8E" id="7Mca05mb2Kx" role="2OqNvi">
+                  <node concept="2OqwBi" id="HeBpFYwUe" role="37wK5m">
+                    <node concept="1Q80Hx" id="HeBpFYwUf" role="2Oq$k0" />
+                    <node concept="liA8E" id="HeBpFYwUg" role="2OqNvi">
                       <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="7Mca05nmmUs" role="2OqNvi">
+                <node concept="3TrEf2" id="HeBpFYwUh" role="2OqNvi">
                   <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1HfYo3" id="HeBpFYwUi" role="1HlULh">
+        <node concept="3TQlhw" id="HeBpFYwUj" role="1Hhtcw">
+          <node concept="3clFbS" id="HeBpFYwUk" role="2VODD2">
+            <node concept="3clFbF" id="HeBpFYwUl" role="3cqZAp">
+              <node concept="2OqwBi" id="HeBpFYwUm" role="3clFbG">
+                <node concept="2YIFZM" id="HeBpFYwUn" role="2Oq$k0">
+                  <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                </node>
+                <node concept="liA8E" id="HeBpFYwUo" role="2OqNvi">
+                  <ref role="37wK5l" to="65nr:HeBpFYujS" resolve="getNoDimensionSpecifier" />
                 </node>
               </node>
             </node>
@@ -3903,9 +4021,38 @@
   <node concept="24kQdi" id="u36xDg6e9y">
     <property role="3GE5qa" value="group.dimension" />
     <ref role="1XX52x" to="i3ya:u36xDg6dVa" resolve="DimensionNeutral" />
-    <node concept="3F0ifn" id="u36xDg6efg" role="2wV5jI">
-      <property role="3F0ifm" value="no dimension" />
-      <node concept="Vb9p2" id="u36xDg6etO" role="3F10Kt" />
+    <node concept="3EZMnI" id="HeBpFYsKy" role="2wV5jI">
+      <node concept="2iR$Sn" id="HeBpFYsKz" role="2iSdaV" />
+      <node concept="3F0ifn" id="HeBpFYsK$" role="3EZMnx">
+        <property role="3F0ifm" value="no" />
+        <node concept="Vb9p2" id="HeBpFYsK_" role="3F10Kt" />
+        <node concept="3$7fVu" id="HeBpFYsKA" role="3F10Kt">
+          <property role="3$6WeP" value="0.5" />
+        </node>
+      </node>
+      <node concept="1HlG4h" id="HeBpFYsZG" role="3EZMnx">
+        <node concept="Vb9p2" id="HeBpFYtdq" role="3F10Kt" />
+        <node concept="3$7jql" id="HeBpFYsKB" role="3F10Kt">
+          <property role="3$6WeP" value="0.5" />
+        </node>
+        <node concept="1HfYo3" id="HeBpFYsZL" role="1HlULh">
+          <node concept="3TQlhw" id="HeBpFYsZQ" role="1Hhtcw">
+            <node concept="3clFbS" id="HeBpFYsZV" role="2VODD2">
+              <node concept="3clFbF" id="HeBpFYtjl" role="3cqZAp">
+                <node concept="2OqwBi" id="HeBpFYtjn" role="3clFbG">
+                  <node concept="2YIFZM" id="HeBpFYtjo" role="2Oq$k0">
+                    <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="HeBpFYtjp" role="2OqNvi">
+                    <ref role="37wK5l" to="65nr:4GF8daWu7qE" resolve="getDimensionSpecifier" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

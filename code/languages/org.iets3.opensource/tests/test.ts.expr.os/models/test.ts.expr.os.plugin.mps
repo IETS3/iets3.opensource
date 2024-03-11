@@ -54,6 +54,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -373,6 +374,38 @@
       </node>
       <node concept="2AHcQZ" id="7TK9se3ZiFn" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4GF8daWu8A7" role="jymVt" />
+    <node concept="3clFb_" id="4GF8daWu8Kk" role="jymVt">
+      <property role="TrG5h" value="getDimensionSpecifier" />
+      <node concept="3Tm1VV" id="4GF8daWu8Km" role="1B3o_S" />
+      <node concept="17QB3L" id="4GF8daWu8Kn" role="3clF45" />
+      <node concept="3clFbS" id="4GF8daWu8Ko" role="3clF47">
+        <node concept="3clFbF" id="4GF8daWu8Kr" role="3cqZAp">
+          <node concept="Xl_RD" id="4GF8daWu8Kq" role="3clFbG">
+            <property role="Xl_RC" value="dimension" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4GF8daWu8Kp" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="HeBpFYvUl" role="jymVt" />
+    <node concept="3clFb_" id="HeBpFYvw5" role="jymVt">
+      <property role="TrG5h" value="getNoDimensionSpecifier" />
+      <node concept="3Tm1VV" id="HeBpFYvw7" role="1B3o_S" />
+      <node concept="17QB3L" id="HeBpFYvw8" role="3clF45" />
+      <node concept="3clFbS" id="HeBpFYvw9" role="3clF47">
+        <node concept="3clFbF" id="HeBpFYvwc" role="3cqZAp">
+          <node concept="Xl_RD" id="HeBpFYvwb" role="3clFbG">
+            <property role="Xl_RC" value="dimensionless" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="HeBpFYvwa" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="3wrpJuqrRN6" role="jymVt" />

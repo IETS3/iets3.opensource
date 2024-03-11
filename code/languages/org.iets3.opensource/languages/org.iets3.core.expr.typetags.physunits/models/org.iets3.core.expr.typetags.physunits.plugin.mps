@@ -847,9 +847,21 @@
       <property role="TrG5h" value="getQuantitySpecifier" />
       <node concept="3clFbS" id="69ocqYbStSm" role="3clF47" />
       <node concept="3Tm1VV" id="69ocqYbStSn" role="1B3o_S" />
-      <node concept="3uibUv" id="69ocqYbStPL" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="4GF8daWu7gb" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="4GF8daWu76a" role="jymVt" />
+    <node concept="3clFb_" id="4GF8daWu7qE" role="jymVt">
+      <property role="TrG5h" value="getDimensionSpecifier" />
+      <node concept="3clFbS" id="4GF8daWu7qH" role="3clF47" />
+      <node concept="3Tm1VV" id="4GF8daWu7qI" role="1B3o_S" />
+      <node concept="17QB3L" id="4GF8daWu7lF" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="HeBpFYu7E" role="jymVt" />
+    <node concept="3clFb_" id="HeBpFYujS" role="jymVt">
+      <property role="TrG5h" value="getNoDimensionSpecifier" />
+      <node concept="3clFbS" id="HeBpFYujV" role="3clF47" />
+      <node concept="3Tm1VV" id="HeBpFYujW" role="1B3o_S" />
+      <node concept="17QB3L" id="HeBpFYuez" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="3wrpJuqrQ2f" role="jymVt" />
     <node concept="3clFb_" id="3wrpJuqrQh9" role="jymVt">
@@ -936,6 +948,38 @@
       </node>
       <node concept="2AHcQZ" id="69ocqYbStYT" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4GF8daWu7BK" role="jymVt" />
+    <node concept="3clFb_" id="4GF8daWu7Rg" role="jymVt">
+      <property role="TrG5h" value="getDimensionSpecifier" />
+      <node concept="3Tm1VV" id="4GF8daWu7Ri" role="1B3o_S" />
+      <node concept="17QB3L" id="4GF8daWu7Rj" role="3clF45" />
+      <node concept="3clFbS" id="4GF8daWu7Rk" role="3clF47">
+        <node concept="3clFbF" id="4GF8daWu7Rn" role="3cqZAp">
+          <node concept="Xl_RD" id="4GF8daWu7Rm" role="3clFbG">
+            <property role="Xl_RC" value="dimension" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4GF8daWu7Rl" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="HeBpFZ7mJ" role="jymVt" />
+    <node concept="3clFb_" id="HeBpFYuDY" role="jymVt">
+      <property role="TrG5h" value="getNoDimensionSpecifier" />
+      <node concept="3Tm1VV" id="HeBpFYuE0" role="1B3o_S" />
+      <node concept="17QB3L" id="HeBpFYuE1" role="3clF45" />
+      <node concept="3clFbS" id="HeBpFYuE2" role="3clF47">
+        <node concept="3clFbF" id="HeBpFYuE5" role="3cqZAp">
+          <node concept="Xl_RD" id="HeBpFYuE4" role="3clFbG">
+            <property role="Xl_RC" value="dimensionless" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="HeBpFYuE3" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="3wrpJuqrR9_" role="jymVt" />
