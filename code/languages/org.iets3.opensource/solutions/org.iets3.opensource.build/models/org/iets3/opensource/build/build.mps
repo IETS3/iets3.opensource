@@ -2,11 +2,11 @@
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
-    <use id="9d000fbd-bdca-4a46-b39b-c5ba9e79b38c" name="org.iets3.opensource.build.gentests" version="-1" />
-    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
+    <use id="9d000fbd-bdca-4a46-b39b-c5ba9e79b38c" name="org.iets3.opensource.build.gentests" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -6560,7 +6560,7 @@
         <property role="TrG5h" value="org.iets3.core.expr.stateful.devkit" />
         <property role="3LESm3" value="b2a65b84-7ec9-404f-8602-f16394bb1d98" />
         <node concept="398BVA" id="2zpAVpC_neD" role="3LF7KH">
-          <ref role="398BVh" node="5wLtKNeTaqD" />
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="2zpAVpC_nZ1" role="iGT6I">
             <property role="2Ry0Am" value="devkits" />
             <node concept="2Ry0Ak" id="2zpAVpC_oJo" role="2Ry0An">
@@ -6572,22 +6572,22 @@
           </node>
         </node>
         <node concept="3LEDTy" id="2zpAVpC_q8m" role="3LEDUa">
-          <ref role="3LEDTV" node="3ni3WidJ1j3" />
+          <ref role="3LEDTV" node="3ni3WidJ1j3" resolve="org.iets3.core.expr.mutable" />
         </node>
         <node concept="3LEDTy" id="2zpAVpC_q8n" role="3LEDUa">
-          <ref role="3LEDTV" node="2jITtfDiK05" />
+          <ref role="3LEDTV" node="2jITtfDiK05" resolve="org.iets3.core.expr.process" />
         </node>
         <node concept="3LEDTy" id="2zpAVpC_q8o" role="3LEDUa">
-          <ref role="3LEDTV" node="YMJl2BN_Xq" />
+          <ref role="3LEDTV" node="YMJl2BN_Xq" resolve="org.iets3.core.expr.statemachines" />
         </node>
         <node concept="3LEDTM" id="2zpAVpC_q8p" role="3LEDUa">
-          <ref role="3LEDTN" node="44TucI396fX" />
+          <ref role="3LEDTN" node="44TucI396fX" resolve="org.iets3.core.expr.mutable.interpreter" />
         </node>
         <node concept="3LEDTM" id="2zpAVpC_q8q" role="3LEDUa">
-          <ref role="3LEDTN" node="44TucI396f5" />
+          <ref role="3LEDTN" node="44TucI396f5" resolve="org.iets3.core.expr.process.interpreter" />
         </node>
         <node concept="3LEDTM" id="2zpAVpC_q8r" role="3LEDUa">
-          <ref role="3LEDTN" node="44TucI396fl" />
+          <ref role="3LEDTN" node="44TucI396fl" resolve="org.iets3.core.expr.statemachines.interpreter" />
         </node>
       </node>
       <node concept="3LEwk6" id="kEKsc8qAwu" role="2G$12L">
@@ -6595,7 +6595,7 @@
         <property role="TrG5h" value="org.iets3.core.expr.genall.core.devkit" />
         <property role="3LESm3" value="ec967770-4707-442f-baaf-a8b7bb554717" />
         <node concept="398BVA" id="kEKsc8qAWO" role="3LF7KH">
-          <ref role="398BVh" node="5wLtKNeTaqD" />
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="kEKsc8qB5Q" role="iGT6I">
             <property role="2Ry0Am" value="devkits" />
             <node concept="2Ry0Ak" id="kEKsc8qB7d" role="2Ry0An">
@@ -6607,43 +6607,43 @@
           </node>
         </node>
         <node concept="3LEz8M" id="kEKsc8qBa7" role="3LEz9a">
-          <ref role="3LEz8N" node="2zpAVpC$xZc" />
+          <ref role="3LEz8N" node="2zpAVpC$xZc" resolve="org.iets3.core.expr.genjava.core.devkit" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp3S" role="3LEDUa">
-          <ref role="3LEDTV" node="26tZ$Z4qWJe" />
+          <ref role="3LEDTV" node="26tZ$Z4qWJe" resolve="org.iets3.core.expr.genjava.toplevel" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp3T" role="3LEDUa">
-          <ref role="3LEDTV" node="5wLtKNeSRQd" />
+          <ref role="3LEDTV" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp3U" role="3LEDUa">
-          <ref role="3LEDTV" node="49WTic8jAD5" />
+          <ref role="3LEDTV" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp3V" role="3LEDUa">
-          <ref role="3LEDTV" node="5wLtKNeSRRB" />
+          <ref role="3LEDTV" node="5wLtKNeSRRB" resolve="org.iets3.core.base" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp3W" role="3LEDUa">
-          <ref role="3LEDTV" node="49WTic8jAaa" />
+          <ref role="3LEDTV" node="49WTic8jAaa" resolve="org.iets3.analysis.base" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp3X" role="3LEDUa">
-          <ref role="3LEDTV" node="26tZ$Z4qWbm" />
+          <ref role="3LEDTV" node="26tZ$Z4qWbm" resolve="org.iets3.core.expr.genjava.tests" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp3Y" role="3LEDUa">
-          <ref role="3LEDTV" node="5wLtKNeSRPD" />
+          <ref role="3LEDTV" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp3Z" role="3LEDUa">
-          <ref role="3LEDTV" node="ub9nkyRnyj" />
+          <ref role="3LEDTV" node="ub9nkyRnyj" resolve="org.iets3.core.expr.tests" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp40" role="3LEDUa">
-          <ref role="3LEDTV" node="26tZ$Z4qSzW" />
+          <ref role="3LEDTV" node="26tZ$Z4qSzW" resolve="org.iets3.core.expr.genjava.base" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp41" role="3LEDUa">
-          <ref role="3LEDTV" node="5FYd8xZZj2s" />
+          <ref role="3LEDTV" node="5FYd8xZZj2s" resolve="org.iets3.core.expr.path" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp42" role="3LEDUa">
-          <ref role="3LEDTV" node="lH$Puj5DFq" />
+          <ref role="3LEDTV" node="lH$Puj5DFq" resolve="org.iets3.core.expr.genjava.contracts" />
         </node>
         <node concept="3LEDTy" id="3HiHZeyCp43" role="3LEDUa">
-          <ref role="3LEDTV" node="26tZ$Z4qVBy" />
+          <ref role="3LEDTV" node="26tZ$Z4qVBy" resolve="org.iets3.core.expr.genjava.simpleTypes" />
         </node>
         <node concept="3LEDTy" id="6ycJs$Aypds" role="3LEDUa">
           <ref role="3LEDTV" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
@@ -9516,6 +9516,11 @@
               <ref role="3bR37D" node="26tZ$Z4rnV1" resolve="org.iets3.core.expr.genjava.base#8286534136181746510" />
             </node>
           </node>
+          <node concept="1SiIV0" id="7DfYVnp3kQm" role="3bR37C">
+            <node concept="3bR9La" id="7DfYVnp3kQl" role="1SiIV1">
+              <ref role="3bR37D" node="26tZ$Z4rnV1" resolve="org.iets3.core.expr.genjava.base#8286534136181746510" />
+            </node>
+          </node>
           <node concept="1BupzO" id="1RMC8GHEwTI" role="3bR31x">
             <property role="3ZfqAx" value="generator/template" />
             <property role="1Hdu6h" value="true" />
@@ -9539,11 +9544,6 @@
               <node concept="3qWCbU" id="1RMC8GHEwTK" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
-            </node>
-          </node>
-          <node concept="1SiIV0" id="7DfYVnp3kQm" role="3bR37C">
-            <node concept="3bR9La" id="7DfYVnp3kQl" role="1SiIV1">
-              <ref role="3bR37D" node="26tZ$Z4rnV1" resolve="org.iets3.core.expr.genjava.base#8286534136181746510" />
             </node>
           </node>
         </node>
@@ -9999,6 +9999,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7DfYVnp3kRk" role="3bR37C">
+          <node concept="Rbm2T" id="7DfYVnp3kRl" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
         <node concept="1BupzO" id="1RMC8GHEwUS" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -10023,11 +10028,6 @@
         </node>
         <node concept="1E0d5M" id="2xddOZL76PR" role="1E1XAP">
           <ref role="1E0d5P" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
-        </node>
-        <node concept="1SiIV0" id="7DfYVnp3kRk" role="3bR37C">
-          <node concept="Rbm2T" id="7DfYVnp3kRl" role="1SiIV1">
-            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-          </node>
         </node>
         <node concept="1SiIV0" id="7DfYVnp3kRm" role="3bR37C">
           <node concept="Rbm2T" id="7DfYVnp3kRn" role="1SiIV1">
@@ -10740,6 +10740,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="3r6mhuOg7O$" role="3bR37C">
+          <node concept="3bR9La" id="3r6mhuOg7O_" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
         <node concept="1BupzO" id="1RMC8GHEwY3" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -10760,11 +10765,6 @@
             <node concept="3qWCbU" id="1RMC8GHEwY5" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3r6mhuOg7O$" role="3bR37C">
-          <node concept="3bR9La" id="3r6mhuOg7O_" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
       </node>
@@ -10904,6 +10904,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7DfYVnp3kU4" role="3bR37C">
+          <node concept="Rbm2T" id="7DfYVnp3kU5" role="1SiIV1">
+            <ref role="1E1Vl2" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
+          </node>
+        </node>
         <node concept="1BupzO" id="1RMC8GHEwYX" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -10940,11 +10945,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7DfYVnp3kU4" role="3bR37C">
-          <node concept="Rbm2T" id="7DfYVnp3kU5" role="1SiIV1">
-            <ref role="1E1Vl2" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
           </node>
         </node>
       </node>
@@ -13005,6 +13005,11 @@
       <node concept="1SiIV0" id="4qv99IrCRzl" role="3bR37C">
         <node concept="3bR9La" id="4qv99IrCRzm" role="1SiIV1">
           <ref role="3bR37D" to="ffeo:7Kfy9QB6L5O" resolve="jetbrains.mps.lang.extension" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3i3CWWtzXDq" role="3bR37C">
+        <node concept="3bR9La" id="3i3CWWtzXDr" role="1SiIV1">
+          <ref role="3bR37D" node="3ni3WidJ1j3" resolve="org.iets3.core.expr.mutable" />
         </node>
       </node>
       <node concept="1SiIV0" id="3Gr2MmiOUCx" role="3bR37C">
