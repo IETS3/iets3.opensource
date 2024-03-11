@@ -10,14 +10,14 @@ buildscript {
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.7.288.4ea765f'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.18.356.90f1a8c'
     }
 }
 
 plugins {
     id 'base'
     id 'maven-publish'
-    id 'co.riiid.gradle' version '0.4.2'
+    id "com.github.breadmoirai.github-release" version "2.4.1"
 }
 
 ext.dependencyRepositories = [
@@ -39,7 +39,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '11_0_14_1-b1751.46'
+    jbrVersion = '17.0.6-b469.82'
 }
 
 // detect if we are in a CI build
@@ -52,13 +52,13 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
-def major = "2021"
-def minor = "3"
+def major = "2022"
+def minor = "2"
 
 // Dependency versions
-ext.mpsVersion = '2021.3.5'
+ext.mpsVersion = '2022.2.2'
 
-def mbeddrVersion = "2021.3+"
+def mbeddrVersion = "2022.2+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -94,16 +94,10 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     }
 }
 
-if (!project.hasProperty("mbeddrVersion")) {
-    if (forceLocal) {
-        ext.mbeddrVersionSelector = '1.0-SNAPSHOT'
-        logger.log(LogLevel.WARN, "Local mbeddr version $ext.mbeddrVersionSelector forced")
-    }
-} else {
+if (project.hasProperty("mbeddrVersion")) {
     logger.log(LogLevel.WARN, "mbeddr version externally overwritten to $ext.mbeddrVersion")
     ext.mbeddrVersionSelector = ext.mbeddrVersion
 }
-
 
 ext.releaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots'
@@ -116,7 +110,7 @@ ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
 
 
 wrapper {
-    gradleVersion '8.5'
+    gradleVersion '8.0.2'
     distributionType Wrapper.DistributionType.ALL
 }
 
@@ -129,6 +123,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
+    languageLibs "org.mpsqa:all-in-one:$mpsVersion+"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
     pcollections 'org.pcollections:pcollections:4.0.1'
@@ -234,6 +229,36 @@ task failOnTestError() {
 }
 buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
+
+apply plugin: 'modelcheck'
+
+File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
+
+def pluginsList = []
+
+modelcheck {
+    projectLocation =  new File("$projectDir/code")
+    mpsLocation = new File("$buildDir/mps")
+    plugins = pluginsList
+    mpsConfig = configurations.mps
+    macros = [new Macro("iets3.github.opensource.home", "$projectDir")]
+    junitFile = modelcheckresult
+    junitFormat = "message"
+    errorNoFail = true
+    debug = false
+    maxHeap = "4G"
+}
+
+
+afterEvaluate {  project ->
+    check.configure {
+        dependsOn tasks.named('checkmodels')
+    }
+}
+
+checkmodels {
+    dependsOn(resolveMps)
+}
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     archiveBaseName = 'org.iets3.opensource'
@@ -406,21 +431,18 @@ Includes dependencies:
 ${depsList}
 """
 
-github {
+githubRelease {
     owner = 'IETS3'
     repo = 'iets3.opensource'
     token = rootProject.findProperty('github.token') ?: 'empty'
     tagName = 'nightly-' + version
     targetCommitish = GitBasedVersioning.getGitCommitHash()
-    name = 'Nighly Build ' + version
+    body = releaseNotes
     prerelease = true
-    assets = packageDistroWithDependencies.outputs.files.collect {it.path}
-}
-githubRelease.doFirst {
-    // do late body init to avoid executing listMergedPRs during config phase
-    github {
-        body = releaseNotes
-    }
+    releaseAssets = packageDistroWithDependencies.outputs.files.collect {it.path}
+    dryRun = false
 }
 
-githubRelease.dependsOn packageDistroWithDependencies
+tasks.named('githubRelease').configure {
+  dependsOn packageDistroWithDependencies
+}
