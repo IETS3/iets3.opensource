@@ -8,6 +8,7 @@
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -244,6 +245,18 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
       <concept id="3751132065236767083" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.DependentTypeInstance" flags="ig" index="q3mfm">
         <reference id="3751132065236767084" name="decl" index="q3mfh" />
@@ -329,6 +342,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -825,6 +841,13 @@
       <node concept="10Oyi0" id="26cjRACVSeV" role="3clF45" />
       <node concept="3Tm1VV" id="26cjRACVSeW" role="1B3o_S" />
       <node concept="3clFbS" id="26cjRACVSeY" role="3clF47" />
+      <node concept="P$JXv" id="HeBpG29ho" role="lGtFl">
+        <node concept="TZ5HA" id="HeBpG29hp" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG29hq" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the priority of the current configuration. The configuration with the highest priority will be chosen." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="4qv99IrzPzw" role="jymVt" />
     <node concept="3clFb_" id="4qv99Irylny" role="jymVt">
@@ -833,6 +856,18 @@
       <node concept="3Tm1VV" id="4qv99IrylnA" role="1B3o_S" />
       <node concept="3uibUv" id="4qv99IryllQ" role="3clF45">
         <ref role="3uigEE" node="4qv99IrykBs" resolve="IUnitLangConfig.ConversionSpecifierSelection" />
+      </node>
+      <node concept="P$JXv" id="HeBpG29rS" role="lGtFl">
+        <node concept="TZ5HA" id="HeBpG29rT" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG29rU" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the conversion specifier that should be used in convert expressions. It can be the first applicable specifier" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="HeBpG29MA" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG29MB" role="1dT_Ay">
+            <property role="1dT_AB" value="or the one selected in the convert expression." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7Mca05mQce6" role="jymVt" />
@@ -843,6 +878,23 @@
       <node concept="3uibUv" id="7Mca05mQcmJ" role="3clF45">
         <ref role="3uigEE" node="7Mca05mQbLB" resolve="IUnitLangConfig.MinimizationStrategy" />
       </node>
+      <node concept="P$JXv" id="HeBpG29RU" role="lGtFl">
+        <node concept="TZ5HA" id="HeBpG29RV" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG29RW" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the minimization strategy for reducing group-like expressions e.g. quantity and unit specification expression." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="HeBpG2a2p" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG2a2q" role="1dT_Ay">
+            <property role="1dT_AB" value="It is used to make expressions that use different mathematical operations but are semantically equivalent comparable by" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="HeBpG2a7F" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG2a7G" role="1dT_Ay">
+            <property role="1dT_AB" value="reducing them by using the selected strategy." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="69ocqYbPQoZ" role="jymVt" />
     <node concept="3clFb_" id="69ocqYbStSj" role="jymVt">
@@ -850,6 +902,13 @@
       <node concept="3clFbS" id="69ocqYbStSm" role="3clF47" />
       <node concept="3Tm1VV" id="69ocqYbStSn" role="1B3o_S" />
       <node concept="17QB3L" id="4GF8daWu7gb" role="3clF45" />
+      <node concept="P$JXv" id="HeBpG2ad1" role="lGtFl">
+        <node concept="TZ5HA" id="HeBpG2ad2" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG2ad3" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the name used for quantities in the UI." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="4GF8daWu76a" role="jymVt" />
     <node concept="3clFb_" id="4GF8daWu7qE" role="jymVt">
@@ -857,6 +916,13 @@
       <node concept="3clFbS" id="4GF8daWu7qH" role="3clF47" />
       <node concept="3Tm1VV" id="4GF8daWu7qI" role="1B3o_S" />
       <node concept="17QB3L" id="4GF8daWu7lF" role="3clF45" />
+      <node concept="P$JXv" id="HeBpG2any" role="lGtFl">
+        <node concept="TZ5HA" id="HeBpG2anz" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG2an$" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the name used for dimensions in the  UI." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="HeBpFYu7E" role="jymVt" />
     <node concept="3clFb_" id="HeBpFYujS" role="jymVt">
@@ -864,6 +930,13 @@
       <node concept="3clFbS" id="HeBpFYujV" role="3clF47" />
       <node concept="3Tm1VV" id="HeBpFYujW" role="1B3o_S" />
       <node concept="17QB3L" id="HeBpFYuez" role="3clF45" />
+      <node concept="P$JXv" id="HeBpG2ay3" role="lGtFl">
+        <node concept="TZ5HA" id="HeBpG2ay4" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG2ay5" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the name used for the dimensionless dimension in the UI." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3wrpJuqrQ2f" role="jymVt" />
     <node concept="3clFb_" id="3wrpJuqrQh9" role="jymVt">
@@ -871,6 +944,18 @@
       <node concept="3clFbS" id="3wrpJuqrQhc" role="3clF47" />
       <node concept="3Tm1VV" id="3wrpJuqrQhd" role="1B3o_S" />
       <node concept="10P_77" id="3wrpJuqrQcw" role="3clF45" />
+      <node concept="P$JXv" id="HeBpG2aG$" role="lGtFl">
+        <node concept="TZ5HA" id="HeBpG2aG_" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG2aGA" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if implicit conversions between prefixes (for example: metric, binary) are enabled and conversion rules" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="HeBpG2jcE" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG2jcF" role="1dT_Ay">
+            <property role="1dT_AB" value="that are marked as &quot;implicit&quot; are taken into account." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="HeBpG0vQy" role="jymVt" />
     <node concept="3clFb_" id="HeBpG0y2X" role="jymVt">
@@ -881,6 +966,18 @@
         <ref role="3uigEE" to="33ny:~Comparator" resolve="Comparator" />
         <node concept="3Tqbb2" id="HeBpG0E4q" role="11_B2D">
           <ref role="ehGHo" to="i3ya:45a4DYZTq2h" resolve="IGroupLike" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="HeBpG2jhX" role="lGtFl">
+        <node concept="TZ5HA" id="HeBpG2jhY" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG2jhZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the comparator used to order exponents in group-like expressions e.g. quantity and unit specification expression." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="HeBpG2jsq" role="TZ5H$">
+          <node concept="1dT_AC" id="HeBpG2jsr" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
         </node>
       </node>
     </node>
