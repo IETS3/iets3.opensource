@@ -25,10 +25,12 @@
     <dependency reexport="false">4621d3e3-b8a3-4bbe-b7ac-234b6e2d1d68(org.iets3.core.expr.temporal)</dependency>
     <dependency reexport="false">289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998(org.iets3.core.expr.datetime)</dependency>
     <dependency reexport="false">6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0(org.iets3.core.expr.math)</dependency>
+    <dependency reexport="false">1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)</dependency>
+    <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
-    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
+    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="3" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
     <language slang="l:d09a16fb-1d68-4a92-a5a4-20b4b2f86a62:com.mbeddr.mpsutil.jung" version="0" />
@@ -40,8 +42,12 @@
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
+    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <language slang="l:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67:jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
+    <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" version="1" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+    <language slang="l:c0080a47-7e37-4558-bee9-9ae18e690549:jetbrains.mps.lang.extension" version="2" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
     <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="6" />
@@ -184,6 +190,7 @@
     <module reference="7a4a0378-45ed-4612-99b5-b72416acc630(org.iets3.core.expr.tests.interpreter)" version="0" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
     <module reference="9c16e638-297e-41f0-b9e1-a1e04a4aea54(org.iets3.core.expr.toplevel.interpreter)" version="0" />
+    <module reference="b0e7c6a8-b47d-4637-b0e8-e5bfd486c4e8(org.iets3.core.expr.tracing.plugin)" version="0" />
     <module reference="b4ec5624-2e67-4a4e-9ece-34bcbf966115(org.iets3.core.expr.typetags.lib.interpreter)" version="0" />
     <module reference="86255e62-4839-480a-a7d0-9ee30f97e2d8(org.iets3.core.expr.typetags.phyunits.si)" version="0" />
     <module reference="616c1a94-9ced-468d-8c3a-fbdcf9734823(org.iets3.core.expr.typetags.units.interpreter)" version="0" />

@@ -1,5 +1,5 @@
 import de.itemis.mps.gradle.*
-
+import groovy.xml.XmlSlurper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -210,6 +210,24 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
     }
 }
 
+task failOnTestError() {
+    description 'evaluate junit result and fail on error'
+    doLast {
+        
+        def juniXml = file('TESTS-TestSuites.xml')
+        if(juniXml.exists()){
+            def junitResult = new XmlSlurper().parse(juniXml)
+            def failures = junitResult.'**'.findAll { it.name() == 'failure' }
+            def errors = junitResult.'**'.findAll { it.name() == 'error' }
+
+            if (failures || errors) {
+                def amount = failures.size() + errors.size()
+                throw new GradleException(amount + " JUnit tests failed. Check the test report for details.")
+            }
+        }
+    }
+}
+buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
 
 apply plugin: 'modelcheck'

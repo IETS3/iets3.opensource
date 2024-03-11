@@ -39,7 +39,7 @@
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
-    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
+    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="3" />
     <language slang="l:f47b95d4-5e73-4c04-9204-18076950153b:com.mbeddr.mpsutil.compare" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
@@ -52,6 +52,7 @@
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
     <language slang="l:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67:jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
+    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
     <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="0" />
     <language slang="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" version="1" />
     <language slang="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" version="0" />
@@ -160,6 +161,7 @@
     <module reference="7a4a0378-45ed-4612-99b5-b72416acc630(org.iets3.core.expr.tests.interpreter)" version="0" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
     <module reference="9c16e638-297e-41f0-b9e1-a1e04a4aea54(org.iets3.core.expr.toplevel.interpreter)" version="0" />
+    <module reference="b0e7c6a8-b47d-4637-b0e8-e5bfd486c4e8(org.iets3.core.expr.tracing.plugin)" version="0" />
     <module reference="5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)" version="0" />
     <module reference="9c3cc6fb-ae5e-46d1-ace2-1e08bb47d03d(org.iets3.core.expr.typetags.bindingtime)" version="0" />
     <module reference="7ee265bd-5986-4709-86ed-2c6daa33cd8c(org.iets3.core.expr.typetags.physunits)" version="0" />

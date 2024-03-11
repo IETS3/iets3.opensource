@@ -13,7 +13,7 @@
   <sourcePath />
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
-    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
+    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="3" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
     <language slang="l:d09a16fb-1d68-4a92-a5a4-20b4b2f86a62:com.mbeddr.mpsutil.jung" version="0" />
@@ -63,6 +63,7 @@
     <module reference="197e2a32-ff26-4358-af5c-731ae2b35f83(org.iets3.core.expr.simpleTypes.interpreter)" version="0" />
     <module reference="7a4a0378-45ed-4612-99b5-b72416acc630(org.iets3.core.expr.tests.interpreter)" version="0" />
     <module reference="9c16e638-297e-41f0-b9e1-a1e04a4aea54(org.iets3.core.expr.toplevel.interpreter)" version="0" />
+    <module reference="b0e7c6a8-b47d-4637-b0e8-e5bfd486c4e8(org.iets3.core.expr.tracing.plugin)" version="0" />
     <module reference="8f993025-dae8-4316-bd1e-c16bb4dc37fc(playground)" version="0" />
   </dependencyVersions>
 </solution>
