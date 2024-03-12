@@ -130,6 +130,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.toplevel.interpreter/org.iets3.core.expr.toplevel.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.tracing.plugin/org.iets3.core.expr.tracing.plugin.msd" folder="expr.tracing" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.lib.interpreter/org.iets3.core.expr.typetags.lib.interpreter.msd" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.physunits.documentation/org.iets3.core.expr.typetags.physunits.documentation.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.phyunits.si/org.iets3.core.expr.typetags.phyunits.si.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.units.interpreter/org.iets3.core.expr.typetags.units.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.units.si/org.iets3.core.expr.typetags.units.si.msd" folder="expr.lang-advanced" />
