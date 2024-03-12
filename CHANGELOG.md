@@ -57,6 +57,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - The `sort` method of collections now supports more types: all primitive types, the option type, all datetime types, the temporal type and the record type
    - Records: The sorting order can be added through the intention `Add a Comparison Order`, otherwise, the records are sorted based on the declaration order of the members
    - Option: Sorting removes all `none` values since the underlying data structure of collections doesn't support null values.
+- Some missing baseType implementations where added to some
 
 ### Changed
 
@@ -108,7 +109,3 @@ The language extends typetags with support for different binding times of values
 - Tuples are now handled within the typesystem.
    Instead of allowing JoinTypes within tuples we merge different tuple types by JoinTypes.
 - Each subconcept of IValidNamedConcept can now contribute and customize naming constraints
-
-### Changed
-
-- `IETS3ExprEvalHelper` methods no longer log exceptions that they re-throw. Some callers may ignore exceptions thrown by the interpreter, and having them logged unnecessarily clutters the logs. It is now the caller's responsibility to log exceptions where needed.
