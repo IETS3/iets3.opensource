@@ -1188,6 +1188,50 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="5m$XHWMBNBs" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="foo" />
+        <property role="3LESm3" value="5233db54-904b-471a-9225-16cb91c92bce" />
+        <node concept="398BVA" id="5m$XHWMBOgH" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="5m$XHWMBOi1" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="5m$XHWMBOjk" role="2Ry0An">
+              <property role="2Ry0Am" value="foo" />
+              <node concept="2Ry0Ak" id="5m$XHWMBOkB" role="2Ry0An">
+                <property role="2Ry0Am" value="foo.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5m$XHWMBOlL" role="3bR37C">
+          <node concept="3bR9La" id="5m$XHWMBOlM" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="5m$XHWMBOlY" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="5m$XHWMBOlZ" role="1HemKq">
+            <node concept="398BVA" id="5m$XHWMBOlN" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="5m$XHWMBOlO" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5m$XHWMBOlP" role="2Ry0An">
+                  <property role="2Ry0Am" value="foo" />
+                  <node concept="2Ry0Ak" id="5m$XHWMBOlQ" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5m$XHWMBOm0" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="44TucI3cjtV" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="3LESm3" value="b804a851-ecf0-4ad4-a0af-ae720b39191a" />
