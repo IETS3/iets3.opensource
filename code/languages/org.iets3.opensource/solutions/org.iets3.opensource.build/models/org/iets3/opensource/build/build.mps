@@ -2356,16 +2356,6 @@
             <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4Zdo13zhmbv" role="3bR37C">
-          <node concept="3bR9La" id="4Zdo13zhmbw" role="1SiIV1">
-            <ref role="3bR37D" node="lJ$0svpRkJ" resolve="org.iets3.core.expr.typetags.units" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4Zdo13zhngI" role="3bR37C">
-          <node concept="3bR9La" id="4Zdo13zhngJ" role="1SiIV1">
-            <ref role="3bR37D" node="3jMXg07aoGO" resolve="org.iets3.core.expr.typetags.phyunits.si" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="_I$tx9JvQU" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -7072,7 +7062,7 @@
         </node>
         <node concept="1SiIV0" id="6LJ5wQxCDvl" role="3bR37C">
           <node concept="3bR9La" id="6LJ5wQxCDvm" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
+            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="de.itemis.mps.utils.serializer.xml" />
           </node>
         </node>
         <node concept="1BupzO" id="1RMC8GHEwND" role="3bR31x">
@@ -14037,7 +14027,7 @@
       </node>
       <node concept="1SiIV0" id="1YwzPHwBxrS" role="3bR37C">
         <node concept="3bR9La" id="1YwzPHwBxrT" role="1SiIV1">
-          <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
+          <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="de.itemis.mps.utils.serializer.xml" />
         </node>
       </node>
       <node concept="1BupzO" id="1YwzPHwBxrU" role="3bR31x">

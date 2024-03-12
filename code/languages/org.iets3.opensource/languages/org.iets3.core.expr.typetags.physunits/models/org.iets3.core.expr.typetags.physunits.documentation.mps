@@ -11,7 +11,6 @@
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
-    <import index="zdxd" ref="r:8397e61b-8602-4a1e-97b1-3469618bad2d(org.iets3.core.expr.typetags.units.plugin)" />
     <import index="65nr" ref="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)" />
     <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)" />
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" implicit="true" />
@@ -499,7 +498,7 @@
           <node concept="2bctqb" id="4Zdo13zi0$o" role="3z_lpT" />
           <node concept="2NCZwO" id="4Zdo13zi0$p" role="3z_lpI">
             <node concept="2NCMab" id="4Zdo13zi0$q" role="2NCMaf">
-              <ref role="2NCMaa" node="4Zdo13zhp8P" resolve="DocQuantities" />
+              <ref role="2NCMaa" node="4Zdo13zhp8P" resolve="Quantities" />
             </node>
           </node>
         </node>
