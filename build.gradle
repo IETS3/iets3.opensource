@@ -275,7 +275,7 @@ publishing {
                 }
             }
         }
-        if (currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
+        if (currentBranch == "master" || currentBranch.startsWith("maintenance") ) {
             maven {
                 name = "GitHubPackages"
                 url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")
