@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.core.expr.interpreter.devkit" uuid="e234a1e7-550c-4730-a932-f9447090df76">
+  <exported-solutions>
+    <exported-solution>cf90f965-8554-4a16-aa0b-6387f27474ab(org.iets3.core.expr.base.interpreter)</exported-solution>
+    <exported-solution>07f696b4-29e7-4878-aefb-39cac5e8c6cc(org.iets3.core.expr.collections.interpreter)</exported-solution>
+    <exported-solution>8ba65567-1c8a-4983-beb8-0482324d7e44(org.iets3.core.expr.lambda.interpreter)</exported-solution>
+    <exported-solution>dff61827-7f11-4bfe-aeb1-6491ed8a49b2(org.iets3.core.expr.metafunction.interpreter)</exported-solution>
+    <exported-solution>c008c84a-6d05-4b6f-82f0-5cb6c0231a11(org.iets3.core.expr.path.interpreter)</exported-solution>
+    <exported-solution>bd5d2f0b-399d-4cb7-b981-7a3f9ce7bc78(org.iets3.core.expr.repl.interpreter)</exported-solution>
+    <exported-solution>197e2a32-ff26-4358-af5c-731ae2b35f83(org.iets3.core.expr.simpleTypes.interpreter)</exported-solution>
+    <exported-solution>7a4a0378-45ed-4612-99b5-b72416acc630(org.iets3.core.expr.tests.interpreter)</exported-solution>
+    <exported-solution>9c16e638-297e-41f0-b9e1-a1e04a4aea54(org.iets3.core.expr.toplevel.interpreter)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+

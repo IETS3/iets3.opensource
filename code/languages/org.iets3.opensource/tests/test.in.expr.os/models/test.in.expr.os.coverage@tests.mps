@@ -2,7 +2,7 @@
 <model ref="r:cedcefeb-b6c3-4a59-9eee-d6b03a99e30f(test.in.expr.os.coverage@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
@@ -11,28 +11,12 @@
   </languages>
   <imports>
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
-    <import index="nwme" ref="r:ea293304-2b79-4cc3-9b45-e3362a713a17(test.in.expr.os.options@tests)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
-    <import index="5hk6" ref="r:2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b(test.in.expr.os.collections@tests)" />
-    <import index="p0z7" ref="r:fcb91210-c6db-4de0-81c0-ca99e48fd25a(test.in.expr.os.records@tests)" />
-    <import index="2mbx" ref="r:f6b93d14-1af1-4f84-a11b-cbe2d8c5efff(test.in.expr.os.lambda@tests)" />
-    <import index="mslh" ref="r:136a38b9-9b4d-4cdb-82ce-de7f17f13658(test.in.expr.os.numbers@tests)" />
-    <import index="6yvt" ref="r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)" />
-    <import index="5aib" ref="r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)" />
-    <import index="hsr0" ref="r:64810d62-6fc9-4e66-8e91-7e3ebadc7df6(test.in.expr.os.tests@tests)" />
-    <import index="1801" ref="r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)" />
-    <import index="m0t7" ref="r:88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed(test.in.expr.os.error@tests)" />
-    <import index="gq53" ref="r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)" />
-    <import index="pbjv" ref="r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)" />
-    <import index="g9p5" ref="r:88f22b8b-30cf-42e2-ae08-ddc85066a7b8(test.in.expr.os.strings@tests)" />
-    <import index="or3k" ref="r:97f27032-f638-4fda-b6f6-aafb3ccea323(test.in.expr.os.enums@tests)" />
-    <import index="2cs2" ref="r:8e00b09c-07da-452f-bed5-a4e808753669(test.in.expr.os.tuples@tests)" />
-    <import index="b5mq" ref="r:206e2f16-1e9d-4dba-a48f-a14d1e82c7a3(test.in.expr.os.applicationExamples@tests)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
