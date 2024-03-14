@@ -1737,7 +1737,7 @@
             <node concept="3cpWs6" id="1vo80oTYBY" role="3cqZAp">
               <node concept="2YIFZM" id="4$j2$kkhbPr" role="3cqZAk">
                 <ref role="1Pybhc" to="pq1l:365yA_OO5FT" resolve="EnumLiteral" />
-                <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="createEnumLiteral" />
+                <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="getInstance" />
                 <node concept="2OqwBi" id="4$j2$kkhcnE" role="37wK5m">
                   <node concept="oxGPV" id="4$j2$kkhcbe" role="2Oq$k0" />
                   <node concept="3TrEf2" id="4$j2$kkhcXd" role="2OqNvi">
