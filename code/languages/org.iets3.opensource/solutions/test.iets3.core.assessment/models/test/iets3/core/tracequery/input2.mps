@@ -6,6 +6,7 @@
     <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="7" />
     <use id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace" version="0" />
     <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="0" />
+    <use id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute" version="0" />
   </languages>
   <imports>
     <import index="ecrc" ref="r:6086f3d1-6a37-42fa-a020-ed8795a753b4(test.iets3.core.tracequery.input1)" />
@@ -41,7 +42,6 @@
         <child id="596856272727132646" name="content" index="H_jLS" />
       </concept>
       <concept id="596856272727148586" name="org.iets3.components.core.structure.EmptyComponentInterfaceContent" flags="ng" index="H_vQO" />
-      <concept id="7804632404593513952" name="org.iets3.components.core.structure.ComponentKind" flags="ng" index="1i0KCM" />
       <concept id="7804632404593342574" name="org.iets3.components.core.structure.EmptyComponentsChunkContent" flags="ng" index="1i1AuW" />
       <concept id="7804632404593341326" name="org.iets3.components.core.structure.ComponentsChunk" flags="ng" index="1i1ALs">
         <child id="8492736225391506814" name="imports" index="38kjvB" />
@@ -58,6 +58,9 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute">
+      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKindA" flags="ng" index="3o2yKq" />
+    </language>
     <language id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test">
       <concept id="1977415354602970500" name="org.iets3.core.trace.test.structure.RealizesKind" flags="ng" index="3jWAPd" />
       <concept id="1977415354602911755" name="org.iets3.core.trace.test.structure.DefaultTrace" flags="ng" index="3jWOz2" />
@@ -70,7 +73,7 @@
       <node concept="H_j2F" id="48h5VLc6YgN" role="1i1XAe">
         <node concept="H_vQO" id="48h5VLc6YgO" role="H_jLS" />
       </node>
-      <node concept="1i0KCM" id="1HLccB8wSqu" role="1i0K$_" />
+      <node concept="3o2yKq" id="7DfYVnlx_K4" role="1i0K$_" />
     </node>
     <node concept="1i1AuW" id="mhbzaHv6tD" role="1i1AA4" />
     <node concept="1i1XBj" id="1HLccB8wSqC" role="1i1AA4">
@@ -78,7 +81,7 @@
       <node concept="H_j2F" id="48h5VLc6YgP" role="1i1XAe">
         <node concept="H_vQO" id="48h5VLc6YgQ" role="H_jLS" />
       </node>
-      <node concept="1i0KCM" id="1HLccB8wSqD" role="1i0K$_" />
+      <node concept="3o2yKq" id="7DfYVnlx_Kb" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8wSr3" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wSr4" role="3PL9QJ">
           <node concept="3jWAPd" id="1HLccB8wSSk" role="2DxiDt" />
@@ -93,7 +96,7 @@
       <node concept="H_j2F" id="48h5VLc6YgR" role="1i1XAe">
         <node concept="H_vQO" id="48h5VLc6YgS" role="H_jLS" />
       </node>
-      <node concept="1i0KCM" id="1HLccB8wSqT" role="1i0K$_" />
+      <node concept="3o2yKq" id="7DfYVnlx_Ki" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8wTrk" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wTrl" role="3PL9QJ">
           <node concept="3jWOz2" id="1HLccB8wTrp" role="2DxiDt" />
@@ -111,7 +114,7 @@
       <node concept="1i1Xx2" id="mhbzaHv6tn" role="1i1XAe" />
       <node concept="1i1Xx2" id="mhbzaHv6tr" role="1i1XAe" />
       <node concept="1i1Xx2" id="mhbzaHv6tx" role="1i1XAe" />
-      <node concept="1i0KCM" id="mhbzaHsV3W" role="1i0K$_" />
+      <node concept="3o2yKq" id="7DfYVnlx_Kp" role="1i0K$_" />
     </node>
     <node concept="1i1AuW" id="1HLccB8wSqK" role="1i1AA4" />
     <node concept="1i1AuW" id="1HLccB8wSqz" role="1i1AA4" />
