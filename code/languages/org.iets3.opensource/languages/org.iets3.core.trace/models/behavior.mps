@@ -11,6 +11,7 @@
     <import index="soq7" ref="r:4d48d56b-d670-4e5b-a763-2232bb0c4f2d(org.iets3.core.attributes.behavior)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -196,10 +197,10 @@
       <ref role="13i0hy" to="soq7:4A8SzOVam5R" resolve="summaryColor" />
       <node concept="3Tm1VV" id="mhbzaHl1pv" role="1B3o_S" />
       <node concept="3clFbS" id="mhbzaHl1p$" role="3clF47">
-        <node concept="3clFbF" id="mhbzaHl1pD" role="3cqZAp">
-          <node concept="10M0yZ" id="mhbzaHl1zU" role="3clFbG">
-            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-            <ref role="3cqZAo" to="z60i:~Color.BLUE" resolve="BLUE" />
+        <node concept="3clFbF" id="38mO9wg7OU6" role="3cqZAp">
+          <node concept="10M0yZ" id="38mO9wg7OWv" role="3clFbG">
+            <ref role="3cqZAo" to="lzb2:~JBColor.blue" resolve="blue" />
+            <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
           </node>
         </node>
       </node>
