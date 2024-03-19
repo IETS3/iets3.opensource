@@ -47,11 +47,12 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" />
-    <import index="9xw8" ref="6c563085-e123-4aaf-be88-fb88e02f8282/java:io.netty.handler.codec.http(io.netty/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
+    <import index="9xw8" ref="6c563085-e123-4aaf-be88-fb88e02f8282/java:io.netty.handler.codec.http(io.netty/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="rfhd" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util.registry(MPS.IDEA/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -2166,13 +2167,6 @@
             <ref role="3cqZAo" node="2jL$v5BnAGI" resolve="msg" />
           </node>
           <node concept="3K4zz7" id="2jL$v5BnAG1" role="37wK5m">
-            <node concept="2YIFZM" id="4rDeVputUTr" role="3K4E3e">
-              <ref role="37wK5l" node="1_yOWEXenNM" resolve="getURL" />
-              <ref role="1Pybhc" node="3OrGkZCn9ZQ" resolve="URLUtil" />
-              <node concept="37vLTw" id="4rDeVputUY7" role="37wK5m">
-                <ref role="3cqZAo" node="2jL$v5BnAGG" resolve="nodeWithError" />
-              </node>
-            </node>
             <node concept="3y3z36" id="2jL$v5BnAG2" role="3K4Cdx">
               <node concept="10Nm6u" id="2jL$v5BnAG3" role="3uHU7w" />
               <node concept="2OqwBi" id="2jL$v5BnAG4" role="3uHU7B">
@@ -2184,6 +2178,13 @@
             </node>
             <node concept="Xl_RD" id="2jL$v5BnAGb" role="3K4GZi">
               <property role="Xl_RC" value="&lt;node not in model&gt;" />
+            </node>
+            <node concept="2YIFZM" id="4rDeVputUTr" role="3K4E3e">
+              <ref role="37wK5l" node="1_yOWEXenNM" resolve="getURL" />
+              <ref role="1Pybhc" node="3OrGkZCn9ZQ" resolve="URLUtil" />
+              <node concept="37vLTw" id="4rDeVputUY7" role="37wK5m">
+                <ref role="3cqZAo" node="2jL$v5BnAGG" resolve="nodeWithError" />
+              </node>
             </node>
           </node>
           <node concept="37vLTw" id="2jL$v5BnAGc" role="37wK5m">
@@ -9888,13 +9889,31 @@
                 <node concept="37vLTw" id="6LVVWmzCY4F" role="3K4Cdx">
                   <ref role="3cqZAo" node="6LVVWmzxrW5" resolve="highlight" />
                 </node>
-                <node concept="10M0yZ" id="6LVVWmzD2yV" role="3K4E3e">
-                  <ref role="3cqZAo" to="z60i:~Color.blue" resolve="blue" />
-                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <node concept="2ShNRf" id="2GzLOsURDgg" role="3K4E3e">
+                  <node concept="1pGfFk" id="2GzLOsURGi3" role="2ShVmc">
+                    <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                    <node concept="10M0yZ" id="6LVVWmzD2yV" role="37wK5m">
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.blue" resolve="blue" />
+                    </node>
+                    <node concept="10M0yZ" id="2GzLOsURJko" role="37wK5m">
+                      <ref role="3cqZAo" to="z60i:~Color.blue" resolve="blue" />
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="10M0yZ" id="6LVVWmzD3CP" role="3K4GZi">
-                  <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <node concept="2ShNRf" id="2GzLOsURKUG" role="3K4GZi">
+                  <node concept="1pGfFk" id="2GzLOsURNud" role="2ShVmc">
+                    <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                    <node concept="10M0yZ" id="6LVVWmzD3CP" role="37wK5m">
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
+                    </node>
+                    <node concept="10M0yZ" id="2GzLOsURPJE" role="37wK5m">
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -14156,6 +14175,61 @@
       <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
     </node>
   </node>
+  <node concept="1lYeZD" id="x6l$aoyUxg">
+    <property role="TrG5h" value="DefaultIdentifierConfiguratorExtension" />
+    <property role="3GE5qa" value="identConfig" />
+    <ref role="1lYe$Y" node="3NUSEp5xVSm" resolve="identifierConfigurator" />
+    <node concept="3Tm1VV" id="x6l$aoyUxh" role="1B3o_S" />
+    <node concept="2tJIrI" id="x6l$aoyUxi" role="jymVt" />
+    <node concept="q3mfD" id="x6l$aozcTj" role="jymVt">
+      <property role="TrG5h" value="activate" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0CPy" resolve="activate" />
+      <node concept="3Tm1VV" id="x6l$aozcTl" role="1B3o_S" />
+      <node concept="3clFbS" id="x6l$aozcTn" role="3clF47">
+        <node concept="RRSsy" id="x6l$aoC4YD" role="3cqZAp">
+          <property role="RRSoG" value="h1akgim/info" />
+          <node concept="Xl_RD" id="x6l$aoC4YF" role="RRSoy">
+            <property role="Xl_RC" value="ExtensionPoint implementation DefaultIdentifierConfiguratorExtension is activated" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="x6l$aozcTq" role="3clF45" />
+    </node>
+    <node concept="q3mfD" id="x6l$aozcWg" role="jymVt">
+      <property role="TrG5h" value="deactivate" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0BDO" resolve="deactivate" />
+      <node concept="3Tm1VV" id="x6l$aozcWi" role="1B3o_S" />
+      <node concept="3clFbS" id="x6l$aozcWk" role="3clF47">
+        <node concept="RRSsy" id="x6l$aoC5nO" role="3cqZAp">
+          <property role="RRSoG" value="h1akgim/info" />
+          <node concept="Xl_RD" id="x6l$aoC5nP" role="RRSoy">
+            <property role="Xl_RC" value="ExtensionPoint implementation DefaultIdentifierConfiguratorExtension is deactivated" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="x6l$aozcWn" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="x6l$aoyUxl" role="jymVt" />
+    <node concept="q3mfD" id="x6l$aoyUxm" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
+      <node concept="3Tm1VV" id="x6l$aoyUxo" role="1B3o_S" />
+      <node concept="3clFbS" id="x6l$aoyUxq" role="3clF47">
+        <node concept="3cpWs6" id="2TlZyI4POS2" role="3cqZAp">
+          <node concept="2ShNRf" id="2TlZyI4PP1Q" role="3cqZAk">
+            <node concept="HV5vD" id="x6l$aozcRE" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="HV5vE" node="3NUSEp5y2Ea" resolve="DefaultIdentifierConfigurator" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="q3mfm" id="x6l$aoyUxr" role="3clF45">
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
+        <ref role="1QQUv3" node="x6l$aoyUxm" resolve="get" />
+      </node>
+    </node>
+  </node>
   <node concept="312cEu" id="3OrGkZCn9ZQ">
     <property role="TrG5h" value="URLUtil" />
     <property role="3GE5qa" value="interpreter.reporter" />
@@ -14331,61 +14405,6 @@
     <node concept="2tJIrI" id="4rDeVputMVM" role="jymVt" />
     <node concept="2tJIrI" id="1_yOWEXeo3y" role="jymVt" />
     <node concept="3Tm1VV" id="3OrGkZCn9ZR" role="1B3o_S" />
-  </node>
-  <node concept="1lYeZD" id="x6l$aoyUxg">
-    <property role="TrG5h" value="DefaultIdentifierConfiguratorExtension" />
-    <property role="3GE5qa" value="identConfig" />
-    <ref role="1lYe$Y" node="3NUSEp5xVSm" resolve="identifierConfigurator" />
-    <node concept="3Tm1VV" id="x6l$aoyUxh" role="1B3o_S" />
-    <node concept="2tJIrI" id="x6l$aoyUxi" role="jymVt" />
-    <node concept="q3mfD" id="x6l$aozcTj" role="jymVt">
-      <property role="TrG5h" value="activate" />
-      <ref role="2VtyIY" to="90d:3zLwYDe0CPy" resolve="activate" />
-      <node concept="3Tm1VV" id="x6l$aozcTl" role="1B3o_S" />
-      <node concept="3clFbS" id="x6l$aozcTn" role="3clF47">
-        <node concept="RRSsy" id="x6l$aoC4YD" role="3cqZAp">
-          <property role="RRSoG" value="h1akgim/info" />
-          <node concept="Xl_RD" id="x6l$aoC4YF" role="RRSoy">
-            <property role="Xl_RC" value="ExtensionPoint implementation DefaultIdentifierConfiguratorExtension is activated" />
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="x6l$aozcTq" role="3clF45" />
-    </node>
-    <node concept="q3mfD" id="x6l$aozcWg" role="jymVt">
-      <property role="TrG5h" value="deactivate" />
-      <ref role="2VtyIY" to="90d:3zLwYDe0BDO" resolve="deactivate" />
-      <node concept="3Tm1VV" id="x6l$aozcWi" role="1B3o_S" />
-      <node concept="3clFbS" id="x6l$aozcWk" role="3clF47">
-        <node concept="RRSsy" id="x6l$aoC5nO" role="3cqZAp">
-          <property role="RRSoG" value="h1akgim/info" />
-          <node concept="Xl_RD" id="x6l$aoC5nP" role="RRSoy">
-            <property role="Xl_RC" value="ExtensionPoint implementation DefaultIdentifierConfiguratorExtension is deactivated" />
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="x6l$aozcWn" role="3clF45" />
-    </node>
-    <node concept="2tJIrI" id="x6l$aoyUxl" role="jymVt" />
-    <node concept="q3mfD" id="x6l$aoyUxm" role="jymVt">
-      <property role="TrG5h" value="get" />
-      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
-      <node concept="3Tm1VV" id="x6l$aoyUxo" role="1B3o_S" />
-      <node concept="3clFbS" id="x6l$aoyUxq" role="3clF47">
-        <node concept="3cpWs6" id="2TlZyI4POS2" role="3cqZAp">
-          <node concept="2ShNRf" id="2TlZyI4PP1Q" role="3cqZAk">
-            <node concept="HV5vD" id="x6l$aozcRE" role="2ShVmc">
-              <property role="373rjd" value="true" />
-              <ref role="HV5vE" node="3NUSEp5y2Ea" resolve="DefaultIdentifierConfigurator" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="q3mfm" id="x6l$aoyUxr" role="3clF45">
-        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
-        <ref role="1QQUv3" node="x6l$aoyUxm" resolve="get" />
-      </node>
-    </node>
   </node>
 </model>
 
