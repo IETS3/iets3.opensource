@@ -171,7 +171,6 @@
         <property id="4767524222579496545" name="result" index="yKB1$" />
         <property id="4139771920857514899" name="locked" index="3gEyWN" />
         <property id="8891169595164080427" name="template" index="3mSvU8" />
-        <property id="1561612422298411476" name="internal" index="1YhdvH" />
         <child id="5953575425758826187" name="styles" index="ThHu5" />
         <child id="6371013116350760981" name="label" index="336QET" />
         <child id="6371013116349198040" name="expr" index="33cOLO" />
@@ -1824,7 +1823,11 @@
             </node>
           </node>
           <node concept="33c$z$" id="3_Nra3DQ9Wa" role="33dGG4" />
-          <node concept="33c$z$" id="3_Nra3DQ9Wb" role="33dGG4" />
+          <node concept="33c$z$" id="3_Nra3DQ9Wb" role="33dGG4">
+            <node concept="1afdae" id="7DfYVnmvAZK" role="33cOLO">
+              <ref role="1afue_" node="3_Nra3DQ8xB" resolve="a" />
+            </node>
+          </node>
           <node concept="33c$z$" id="3_Nra3DQ9Wc" role="33dGG4">
             <node concept="1afdae" id="3_Nra3DQ9WW" role="33cOLO">
               <ref role="1afue_" node="3_Nra3DQ8xX" resolve="b" />
@@ -3878,7 +3881,6 @@
             </node>
           </node>
           <node concept="33c$z$" id="3pIANU_1YFu" role="33dGG4">
-            <property role="1YhdvH" value="true" />
             <node concept="30bXRB" id="3pIANU_1YJM" role="33cOLO">
               <property role="30bXRw" value="8" />
             </node>
