@@ -84,7 +84,7 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
         def buildNumber = System.env.BUILD_NUMBER.toInteger()
         if (currentBranch.startsWith("maintenance-")) {
             version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
-        } else if (currentBranch.startsWith("datev-loon-staging-") || currentBranch.startsWith("datev-steuer-staging-")){
+        } else if (currentBranch.startsWith("datev-loon-staging-") || currentBranch.startsWith("datev-steuer-staging-") || currentBranch.equals("master")){
             // branch name will be part of the version
             version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)
         } else {
