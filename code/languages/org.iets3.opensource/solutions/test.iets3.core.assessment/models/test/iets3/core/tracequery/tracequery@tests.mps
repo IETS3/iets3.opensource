@@ -2,7 +2,7 @@
 <model ref="r:53599613-e440-445a-b06f-1fcc69f7586a(test.iets3.core.tracequery.tracequery@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
     <use id="be5191a9-3476-47ca-b2a7-a426623add55" name="org.iets3.core.assessment" version="-1" />
@@ -29,6 +29,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -256,6 +257,7 @@
   </node>
   <node concept="1lH9Xt" id="1HLccB8ALxI">
     <property role="TrG5h" value="GenericTraceHelperTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="mhbzaHp$6Y" role="1qtyYc">
       <property role="TrG5h" value="sortResults" />
       <node concept="3clFbS" id="mhbzaHp$70" role="3clF47">
