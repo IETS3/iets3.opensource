@@ -41,7 +41,9 @@
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
       </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -128,7 +130,9 @@
           <node concept="1z9TsT" id="12ACZ2oN$_u" role="lGtFl">
             <node concept="OjmMv" id="12ACZ2oN$_v" role="1w35rA">
               <node concept="19SGf9" id="12ACZ2oN$_w" role="OjmMu">
-                <node concept="19SUe$" id="12ACZ2oN$_x" role="19SJt6" />
+                <node concept="19SUe$" id="12ACZ2oN$_x" role="19SJt6">
+                  <property role="19SUeA" value=" " />
+                </node>
               </node>
             </node>
           </node>
@@ -197,7 +201,9 @@
               <node concept="1z9TsT" id="12ACZ2oN$L7" role="lGtFl">
                 <node concept="OjmMv" id="12ACZ2oN$L8" role="1w35rA">
                   <node concept="19SGf9" id="12ACZ2oN$L9" role="OjmMu">
-                    <node concept="19SUe$" id="12ACZ2oN$La" role="19SJt6" />
+                    <node concept="19SUe$" id="12ACZ2oN$La" role="19SJt6">
+                      <property role="19SUeA" value=" " />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -262,7 +268,9 @@
             <node concept="1z9TsT" id="12ACZ2oN$Wx" role="lGtFl">
               <node concept="OjmMv" id="12ACZ2oN$Wy" role="1w35rA">
                 <node concept="19SGf9" id="12ACZ2oN$Wz" role="OjmMu">
-                  <node concept="19SUe$" id="12ACZ2oN$W$" role="19SJt6" />
+                  <node concept="19SUe$" id="12ACZ2oN$W$" role="19SJt6">
+                    <property role="19SUeA" value=" " />
+                  </node>
                 </node>
               </node>
             </node>
