@@ -24,6 +24,7 @@
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1941,7 +1942,16 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7JCDpchR3PS" role="3cqZAp" />
+        <node concept="3clFbF" id="738HPfgQhkT" role="3cqZAp">
+          <node concept="2OqwBi" id="738HPfgQtDZ" role="3clFbG">
+            <node concept="37vLTw" id="738HPfgQhkR" role="2Oq$k0">
+              <ref role="3cqZAo" node="1cX0cm8Zurw" resolve="jt" />
+            </node>
+            <node concept="2qgKlT" id="738HPfgQB1O" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:H8GgRpqbgk" resolve="sortTypes" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7JCDpchDZwS" role="3cqZAp">
           <node concept="2OqwBi" id="7JCDpchEFHq" role="3clFbG">
             <node concept="2OqwBi" id="7JCDpchEaLn" role="2Oq$k0">
@@ -2695,6 +2705,16 @@
               <node concept="37vLTw" id="1G7Ce6wlPOp" role="25WWJ7">
                 <ref role="3cqZAo" node="1G7Ce6wsKy$" resolve="resultTypes" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="738HPfgQXcL" role="3cqZAp">
+          <node concept="2OqwBi" id="738HPfgR54b" role="3clFbG">
+            <node concept="37vLTw" id="738HPfgQXcJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="1G7Ce6wlPOc" resolve="jt" />
+            </node>
+            <node concept="2qgKlT" id="738HPfgRkXU" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:H8GgRpqbgk" resolve="sortTypes" />
             </node>
           </node>
         </node>
