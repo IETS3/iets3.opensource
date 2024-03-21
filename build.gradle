@@ -82,11 +82,12 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
         currentBranch = GitBasedVersioning.gitBranch
 
         def buildNumber = System.env.BUILD_NUMBER.toInteger()
-        if (currentBranch.startsWith("maintenance/") || currentBranch.startsWith("datev/")) {
+        if (currentBranch.startsWith("maintenance-")) {
             version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
         } else {
-            version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber) + "-SNAPSHOT"
-        }
+            def isSnapshot = !(currentBranch.equals("master") || currentBranch.startsWith("datev-loon-staging-") || currentBranch.startsWith("datev-steuer-staging-"))
+            version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber) + (isSnapshot ? "-SNAPSHOT" : "")
+        } 
         println "##teamcity[buildNumber '${version}']"
     } else {
         version = "$major.$minor-SNAPSHOT"
