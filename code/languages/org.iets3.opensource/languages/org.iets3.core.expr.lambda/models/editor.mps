@@ -18,6 +18,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -272,6 +273,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -1200,11 +1202,23 @@
         <node concept="3ZlJ5R" id="4qVjx3jYYFO" role="VblUZ">
           <node concept="3clFbS" id="4qVjx3jYYFP" role="2VODD2">
             <node concept="3clFbF" id="4qVjx3jZ2fk" role="3cqZAp">
-              <node concept="2YIFZM" id="4qVjx3jZ2tu" role="3clFbG">
-                <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                <node concept="Xl_RD" id="4qVjx3jZ2_X" role="37wK5m">
-                  <property role="Xl_RC" value="#FF5319" />
+              <node concept="2ShNRf" id="2GzLOsV23Ah" role="3clFbG">
+                <node concept="1pGfFk" id="2GzLOsV24pR" role="2ShVmc">
+                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                  <node concept="2YIFZM" id="4qVjx3jZ2tu" role="37wK5m">
+                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+                    <node concept="Xl_RD" id="4qVjx3jZ2_X" role="37wK5m">
+                      <property role="Xl_RC" value="#FF5319" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="2GzLOsV24x6" role="37wK5m">
+                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+                    <node concept="Xl_RD" id="2GzLOsV24x7" role="37wK5m">
+                      <property role="Xl_RC" value="#FF5319" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

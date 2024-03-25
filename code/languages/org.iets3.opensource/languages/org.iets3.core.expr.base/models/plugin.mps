@@ -48,6 +48,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -9886,13 +9887,31 @@
                 <node concept="37vLTw" id="6LVVWmzCY4F" role="3K4Cdx">
                   <ref role="3cqZAo" node="6LVVWmzxrW5" resolve="highlight" />
                 </node>
-                <node concept="10M0yZ" id="6LVVWmzD2yV" role="3K4E3e">
-                  <ref role="3cqZAo" to="z60i:~Color.blue" resolve="blue" />
-                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <node concept="2ShNRf" id="2GzLOsURDgg" role="3K4E3e">
+                  <node concept="1pGfFk" id="2GzLOsURGi3" role="2ShVmc">
+                    <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                    <node concept="10M0yZ" id="6LVVWmzD2yV" role="37wK5m">
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.blue" resolve="blue" />
+                    </node>
+                    <node concept="10M0yZ" id="2GzLOsURJko" role="37wK5m">
+                      <ref role="3cqZAo" to="z60i:~Color.blue" resolve="blue" />
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="10M0yZ" id="6LVVWmzD3CP" role="3K4GZi">
-                  <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <node concept="2ShNRf" id="2GzLOsURKUG" role="3K4GZi">
+                  <node concept="1pGfFk" id="2GzLOsURNud" role="2ShVmc">
+                    <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                    <node concept="10M0yZ" id="6LVVWmzD3CP" role="37wK5m">
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
+                    </node>
+                    <node concept="10M0yZ" id="2GzLOsURPJE" role="37wK5m">
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -14084,16 +14103,12 @@
     </node>
     <node concept="3Tm1VV" id="2O$zpZk7gkh" role="1B3o_S" />
   </node>
-  <node concept="3HP615" id="34s7_UnUH2A">
+  <node concept="vrV6u" id="3HxoqR_T8F2">
+    <property role="TrG5h" value="typesystemCustomization" />
     <property role="3GE5qa" value="typesystem" />
-    <property role="TrG5h" value="TypesystemCustomizer" />
-    <node concept="3clFb_" id="34s7_UnUH4e" role="jymVt">
-      <property role="TrG5h" value="checkDuplicateValuesInEnums" />
-      <node concept="10P_77" id="34s7_UnUH4f" role="3clF45" />
-      <node concept="3Tm1VV" id="34s7_UnUH4g" role="1B3o_S" />
-      <node concept="3clFbS" id="34s7_UnUH4h" role="3clF47" />
+    <node concept="3uibUv" id="3HxoqR_WS1J" role="luc8K">
+      <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
     </node>
-    <node concept="3Tm1VV" id="34s7_UnUH2B" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="34s7_UnROPW">
     <property role="3GE5qa" value="typesystem" />
@@ -14147,12 +14162,16 @@
       <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
     </node>
   </node>
-  <node concept="vrV6u" id="3HxoqR_T8F2">
-    <property role="TrG5h" value="typesystemCustomization" />
+  <node concept="3HP615" id="34s7_UnUH2A">
     <property role="3GE5qa" value="typesystem" />
-    <node concept="3uibUv" id="3HxoqR_WS1J" role="luc8K">
-      <ref role="3uigEE" node="34s7_UnUH2A" resolve="TypesystemCustomizer" />
+    <property role="TrG5h" value="TypesystemCustomizer" />
+    <node concept="3clFb_" id="34s7_UnUH4e" role="jymVt">
+      <property role="TrG5h" value="checkDuplicateValuesInEnums" />
+      <node concept="10P_77" id="34s7_UnUH4f" role="3clF45" />
+      <node concept="3Tm1VV" id="34s7_UnUH4g" role="1B3o_S" />
+      <node concept="3clFbS" id="34s7_UnUH4h" role="3clF47" />
     </node>
+    <node concept="3Tm1VV" id="34s7_UnUH2B" role="1B3o_S" />
   </node>
   <node concept="1lYeZD" id="x6l$aoyUxg">
     <property role="TrG5h" value="DefaultIdentifierConfiguratorExtension" />
