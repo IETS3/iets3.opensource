@@ -1321,18 +1321,18 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="45pzosSo7eo" role="3bR37C">
-          <node concept="1BurEX" id="45pzosSo7ep" role="1SiIV1">
-            <node concept="398BVA" id="45pzosSo7eb" role="1BurEY">
+        <node concept="1SiIV0" id="6upS8_CSn7H" role="3bR37C">
+          <node concept="1BurEX" id="6upS8_CSn7I" role="1SiIV1">
+            <node concept="398BVA" id="6upS8_CSn7w" role="1BurEY">
               <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="45pzosSo7ec" role="iGT6I">
+              <node concept="2Ry0Ak" id="6upS8_CSn7x" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="45pzosSo7ed" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6upS8_CSn7y" role="2Ry0An">
                   <property role="2Ry0Am" value="org.iets3.core.expr.math.interpreter" />
-                  <node concept="2Ry0Ak" id="45pzosSo7ee" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6upS8_CSn7z" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="45pzosSo7ef" role="2Ry0An">
-                      <property role="2Ry0Am" value="big-math-2.3.2.jar" />
+                    <node concept="2Ry0Ak" id="6upS8_CSn7$" role="2Ry0An">
+                      <property role="2Ry0Am" value="big-math.jar" />
                     </node>
                   </node>
                 </node>

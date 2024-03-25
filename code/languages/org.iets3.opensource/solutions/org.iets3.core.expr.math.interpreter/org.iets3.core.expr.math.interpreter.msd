@@ -6,7 +6,7 @@
       <sourceRoot location="lib" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="big-math-2.3.2.jar" />
+      <sourceRoot location="big-math.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -15,7 +15,7 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/big-math-2.3.2.jar" />
+    <stubModelEntry path="${module}/lib/big-math.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
