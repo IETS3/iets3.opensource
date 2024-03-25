@@ -20226,8 +20226,8 @@
         <node concept="3clFbF" id="u36xDg6PL6" role="3cqZAp">
           <node concept="2OqwBi" id="u36xDg6PLv" role="3clFbG">
             <node concept="13iPFW" id="u36xDg6PL5" role="2Oq$k0" />
-            <node concept="2qgKlT" id="u36xDg6PRq" role="2OqNvi">
-              <ref role="37wK5l" node="1JynhuWrTer" resolve="getDenominator" />
+            <node concept="3TrEf2" id="y1JIvrWum3" role="2OqNvi">
+              <ref role="3Tt5mk" to="i3ya:4RImAbi2pkn" resolve="denominator" />
             </node>
           </node>
         </node>
