@@ -184,6 +184,7 @@
       <concept id="6601202312859903205" name="com.mbeddr.doc.structure.ModuleRefWord" flags="ng" index="Z74Dy">
         <child id="8480291644168929007" name="identity" index="2nPJaY" />
       </concept>
+      <concept id="4208238404719201400" name="com.mbeddr.doc.structure.NameAnnotation" flags="ng" index="1h5QrK" />
       <concept id="4208238404723595132" name="com.mbeddr.doc.structure.UrlFormattedText" flags="ng" index="1hOBRO" />
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
@@ -1096,20 +1097,26 @@
             </node>
           </node>
         </node>
-        <node concept="2SaynC" id="7Kcvgw17ev4" role="1_0VJ0">
-          <property role="TrG5h" value="convertExpressionInspector" />
-          <node concept="2Sb_l4" id="7Kcvgw17ev6" role="2SbwM5">
-            <property role="2Sb_kV" value="convert_inspector.png" />
-            <ref role="2Sb_kU" node="4Zdo13zgQDA" resolve="image" />
-          </node>
-          <node concept="OjmMv" id="7Kcvgw17ev8" role="2SaI5j">
-            <node concept="19SGf9" id="7Kcvgw17ev9" role="OjmMu">
-              <node concept="19SUe$" id="7Kcvgw17eva" role="19SJt6">
-                <property role="19SUeA" value="Example: The Inspector of a Convert Expression" />
+        <node concept="3z_lpz" id="75ci$n2TOL6" role="1_0VJ0">
+          <property role="TrG5h" value="convertTo" />
+          <property role="3qS0f3" value="true" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="75ci$n2TOL8" role="3z_lpS">
+            <node concept="19SGf9" id="75ci$n2TOL9" role="OjmMu">
+              <node concept="19SUe$" id="75ci$n2TOLa" role="19SJt6">
+                <property role="19SUeA" value="Example: The Inspector of a Convert Expression " />
               </node>
             </node>
           </node>
-          <node concept="2bctqb" id="7Kcvgw17evc" role="3SHJ_F" />
+          <node concept="2bctqb" id="75ci$n2TOLc" role="3z_lpT" />
+          <node concept="2NCZwO" id="75ci$n2TOLe" role="3z_lpI">
+            <node concept="2NCMab" id="75ci$n2TOMU" role="2NCMaf">
+              <ref role="2NCMaa" node="7Kcvgw16xFb" resolve="Scaling" />
+            </node>
+            <node concept="2NCMab" id="75ci$n2TON0" role="2NCMaf">
+              <ref role="2NCMaa" node="75ci$n2TGIl" resolve="convertTo" />
+            </node>
+          </node>
         </node>
         <node concept="1_0LV8" id="7Kcvgw17ewj" role="1_0VJ0">
           <node concept="19SGf9" id="7Kcvgw17ewk" role="1_0LWR">
@@ -1523,6 +1530,9 @@
             <node concept="CIsvn" id="3eEp8ADceyP" role="2qyG0l">
               <property role="1xG2w7" value="k" />
               <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+            </node>
+            <node concept="1h5QrK" id="75ci$n2TGIl" role="lGtFl">
+              <property role="TrG5h" value="convertTo" />
             </node>
           </node>
         </node>
