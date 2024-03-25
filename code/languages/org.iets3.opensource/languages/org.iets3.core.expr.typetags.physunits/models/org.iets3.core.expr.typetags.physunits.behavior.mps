@@ -4717,14 +4717,14 @@
                 <node concept="2OqwBi" id="73cP8DpYHk1" role="2$L3a6">
                   <node concept="Xjq3P" id="73cP8DpYGcg" role="2Oq$k0" />
                   <node concept="2OwXpG" id="73cP8DpYIjY" role="2OqNvi">
-                    <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
+                    <ref role="2Oxat5" node="5dSoB2LN5wd" resolve="numerator" />
                   </node>
                 </node>
               </node>
               <node concept="2OqwBi" id="73cP8DpYKbn" role="37wK5m">
                 <node concept="Xjq3P" id="73cP8DpYJGR" role="2Oq$k0" />
                 <node concept="2OwXpG" id="73cP8DpYKSP" role="2OqNvi">
-                  <ref role="2Oxat5" node="5dSoB2LN5wd" resolve="numerator" />
+                  <ref role="2Oxat5" node="5dSoB2LN6B2" resolve="denominator" />
                 </node>
               </node>
             </node>
@@ -4964,7 +4964,7 @@
             <node concept="3clFbS" id="4RImAbhYBdL" role="9aQI4">
               <node concept="3cpWs6" id="4RImAbhYDgW" role="3cqZAp">
                 <node concept="2YIFZM" id="4RImAbhZhtK" role="3cqZAk">
-                  <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object)" resolve="valueOf" />
+                  <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                   <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                   <node concept="2OqwBi" id="4RImAbhYE2Q" role="37wK5m">
                     <node concept="Xjq3P" id="4RImAbhYE2R" role="2Oq$k0" />
