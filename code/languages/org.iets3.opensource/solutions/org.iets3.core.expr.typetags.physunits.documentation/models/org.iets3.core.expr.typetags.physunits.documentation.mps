@@ -184,13 +184,11 @@
       <concept id="6601202312859903205" name="com.mbeddr.doc.structure.ModuleRefWord" flags="ng" index="Z74Dy">
         <child id="8480291644168929007" name="identity" index="2nPJaY" />
       </concept>
-      <concept id="4220250885135199523" name="com.mbeddr.doc.structure.ToDoWord" flags="ng" index="3d4VFM">
-        <child id="4220250885135204208" name="text" index="3d4Uyx" />
-      </concept>
       <concept id="4208238404723595132" name="com.mbeddr.doc.structure.UrlFormattedText" flags="ng" index="1hOBRO" />
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
+        <property id="1062634058588045256" name="renderInspector" index="3qS0f3" />
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
@@ -835,23 +833,19 @@
         <node concept="1_0LV8" id="18bX8lHAG_I" role="1_0VJ0">
           <node concept="19SGf9" id="18bX8lHAG_J" role="1_0LWR">
             <node concept="19SUe$" id="18bX8lHAG_K" role="19SJt6">
-              <property role="19SUeA" value="In the inspector, the same formula can be read with SI base quantities. The specification can also be edited in&#10;terms of quantity symbols instead of names. &#10;&#10;" />
+              <property role="19SUeA" value="In the inspector, the same formula can be read with SI base quantities. The specification can also be edited in&#10;terms of quantity symbols instead of names. &#10;" />
             </node>
-            <node concept="3d4VFM" id="18bX8lHAGC0" role="19SJt6">
-              <node concept="19SGf9" id="18bX8lHAGC1" role="3d4Uyx">
-                <node concept="19SUe$" id="18bX8lHAGC2" role="19SJt6">
-                  <property role="19SUeA" value="enable option render inspector" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="18bX8lHAGC3" role="19SJt6" />
           </node>
         </node>
         <node concept="3z_lpz" id="18bX8lHAGB1" role="1_0VJ0">
           <property role="TrG5h" value="magneticFluxInspector" />
+          <property role="3z_lpJ" value="true" />
+          <property role="3qS0f3" value="true" />
           <node concept="OjmMv" id="18bX8lHAGB3" role="3z_lpS">
             <node concept="19SGf9" id="18bX8lHAGB4" role="OjmMu">
-              <node concept="19SUe$" id="18bX8lHAGB5" role="19SJt6" />
+              <node concept="19SUe$" id="18bX8lHAGB5" role="19SJt6">
+                <property role="19SUeA" value="Example: Inspector of a Derived Quantity" />
+              </node>
             </node>
           </node>
           <node concept="2bctqb" id="18bX8lHAGB7" role="3z_lpT" />
@@ -944,23 +938,19 @@
         <node concept="1_0LV8" id="18bX8lHGa5q" role="1_0VJ0">
           <node concept="19SGf9" id="18bX8lHGa5r" role="1_0LWR">
             <node concept="19SUe$" id="18bX8lHGa5s" role="19SJt6">
-              <property role="19SUeA" value="The SI unit equivalents are shown in the inspector:&#10;" />
+              <property role="19SUeA" value="The SI unit equivalents are shown in the inspector:" />
             </node>
-            <node concept="3d4VFM" id="18bX8lHGacr" role="19SJt6">
-              <node concept="19SGf9" id="18bX8lHGacs" role="3d4Uyx">
-                <node concept="19SUe$" id="18bX8lHGact" role="19SJt6">
-                  <property role="19SUeA" value="enable option render inspector" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="18bX8lHGacu" role="19SJt6" />
           </node>
         </node>
         <node concept="3z_lpz" id="18bX8lHGa8y" role="1_0VJ0">
           <property role="TrG5h" value="derivedUnitsInspector" />
+          <property role="3z_lpJ" value="true" />
+          <property role="3qS0f3" value="true" />
           <node concept="OjmMv" id="18bX8lHGa8$" role="3z_lpS">
             <node concept="19SGf9" id="18bX8lHGa8_" role="OjmMu">
-              <node concept="19SUe$" id="18bX8lHGa8A" role="19SJt6" />
+              <node concept="19SUe$" id="18bX8lHGa8A" role="19SJt6">
+                <property role="19SUeA" value="Example: Inspector of a Derived Unit" />
+              </node>
             </node>
           </node>
           <node concept="2bctqb" id="18bX8lHGa8C" role="3z_lpT" />
@@ -1215,7 +1205,9 @@
             <property role="3z_lpJ" value="true" />
             <node concept="OjmMv" id="7Kcvgw17iLH" role="3z_lpS">
               <node concept="19SGf9" id="7Kcvgw17iLI" role="OjmMu">
-                <node concept="19SUe$" id="7Kcvgw17iLJ" role="19SJt6" />
+                <node concept="19SUe$" id="7Kcvgw17iLJ" role="19SJt6">
+                  <property role="19SUeA" value="Example: Implicit Conversion Rule" />
+                </node>
               </node>
             </node>
             <node concept="2bctqb" id="7Kcvgw17iLL" role="3z_lpT" />
@@ -1230,20 +1222,15 @@
           </node>
           <node concept="1_0LV8" id="7Kcvgw17jp0" role="1_0VJ0">
             <node concept="19SGf9" id="7Kcvgw17jp1" role="1_0LWR">
-              <node concept="19SUe$" id="7Kcvgw17jpL" role="19SJt6" />
-              <node concept="3d4VFM" id="7Kcvgw17jpI" role="19SJt6">
-                <node concept="19SGf9" id="7Kcvgw17jpJ" role="3d4Uyx">
-                  <node concept="19SUe$" id="7Kcvgw17jpK" role="19SJt6">
-                    <property role="19SUeA" value="enable option render inspector" />
-                  </node>
-                </node>
+              <node concept="19SUe$" id="7Kcvgw17jpL" role="19SJt6">
+                <property role="19SUeA" value="" />
               </node>
-              <node concept="19SUe$" id="7Kcvgw17jpM" role="19SJt6" />
             </node>
           </node>
           <node concept="3z_lpz" id="7Kcvgw17jo2" role="1_0VJ0">
             <property role="TrG5h" value="convertKGToGInspector" />
             <property role="3z_lpJ" value="true" />
+            <property role="3qS0f3" value="true" />
             <node concept="OjmMv" id="7Kcvgw17jo4" role="3z_lpS">
               <node concept="19SGf9" id="7Kcvgw17jo5" role="OjmMu">
                 <node concept="19SUe$" id="7Kcvgw17jo6" role="19SJt6">
@@ -1300,7 +1287,9 @@
             <property role="3z_lpJ" value="true" />
             <node concept="OjmMv" id="7vDNpxu7BRi" role="3z_lpS">
               <node concept="19SGf9" id="7vDNpxu7BRj" role="OjmMu">
-                <node concept="19SUe$" id="7vDNpxu7BRk" role="19SJt6" />
+                <node concept="19SUe$" id="7vDNpxu7BRk" role="19SJt6">
+                  <property role="19SUeA" value="Example: Eager Conversion Rule" />
+                </node>
               </node>
             </node>
             <node concept="2bctqb" id="7vDNpxu7BRm" role="3z_lpT" />
