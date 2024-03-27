@@ -5,14 +5,14 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
@@ -384,6 +384,7 @@
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -515,7 +516,6 @@
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1205679737078" name="jetbrains.mps.baseLanguage.collections.structure.SortOperation" flags="nn" index="2S7cBI">
         <child id="1205679832066" name="ascending" index="2S7zOq" />
       </concept>
@@ -2694,7 +2694,7 @@
                       <node concept="1Wc70l" id="kZqQ80hiGK" role="3uHU7B">
                         <node concept="2OqwBi" id="kZqQ80hiGQ" role="3uHU7B">
                           <node concept="37vLTw" id="kZqQ80hiGR" role="2Oq$k0">
-                            <ref role="3cqZAo" node="kZqQ80hiGU" resolve="it" />
+                            <ref role="3cqZAo" node="3289kyetf3n" />
                           </node>
                           <node concept="1mIQ4w" id="kZqQ80hiGS" role="2OqNvi">
                             <node concept="chp4Y" id="kZqQ80hiGT" role="cj9EA">
@@ -2708,7 +2708,7 @@
                               <ref role="cht4Q" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
                             </node>
                             <node concept="37vLTw" id="kZqQ80hiGO" role="1m5AlR">
-                              <ref role="3cqZAo" node="kZqQ80hiGU" resolve="it" />
+                              <ref role="3cqZAo" node="3289kyetf3n" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="kZqQ80hiGP" role="2OqNvi">
@@ -2724,7 +2724,7 @@
                                 <ref role="cht4Q" to="hm2y:XblfskIwr9" resolve="IMultiTraceRoot" />
                               </node>
                               <node concept="37vLTw" id="4_BA2XOIPvt" role="1m5AlR">
-                                <ref role="3cqZAo" node="kZqQ80hiGU" resolve="it" />
+                                <ref role="3cqZAo" node="3289kyetf3n" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="4_BA2XOIPvu" role="2OqNvi">
@@ -2735,7 +2735,7 @@
                         </node>
                         <node concept="2OqwBi" id="4_BA2XOIPvw" role="3uHU7B">
                           <node concept="37vLTw" id="4_BA2XOIPvx" role="2Oq$k0">
-                            <ref role="3cqZAo" node="kZqQ80hiGU" resolve="it" />
+                            <ref role="3cqZAo" node="3289kyetf3n" />
                           </node>
                           <node concept="1mIQ4w" id="4_BA2XOIPvy" role="2OqNvi">
                             <node concept="chp4Y" id="4_BA2XOIPvz" role="cj9EA">
@@ -2747,9 +2747,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="kZqQ80hiGU" role="1bW2Oz">
+                <node concept="gl6BB" id="3289kyetf3n" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="kZqQ80hiGV" role="1tU5fm" />
+                  <node concept="2jxLKc" id="3289kyetf3o" role="1tU5fm" />
                 </node>
               </node>
             </node>
@@ -3760,7 +3760,7 @@
                           <node concept="3clFbF" id="3ApArNFCjJI" role="3cqZAp">
                             <node concept="2OqwBi" id="3ApArNFCjJJ" role="3clFbG">
                               <node concept="37vLTw" id="3ApArNFCjJK" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3ApArNFCjJM" resolve="it" />
+                                <ref role="3cqZAo" node="3289kyetf3p" />
                               </node>
                               <node concept="liA8E" id="3ApArNFCjJL" role="2OqNvi">
                                 <ref role="37wK5l" to="jpm3:3ApArNFAK9d" resolve="getPriority" />
@@ -3768,9 +3768,9 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="Rh6nW" id="3ApArNFCjJM" role="1bW2Oz">
+                        <node concept="gl6BB" id="3289kyetf3p" role="1bW2Oz">
                           <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="3ApArNFCjJN" role="1tU5fm" />
+                          <node concept="2jxLKc" id="3289kyetf3q" role="1tU5fm" />
                         </node>
                       </node>
                       <node concept="1nlBCl" id="3ApArNFCjJO" role="2S7zOq" />
@@ -3989,6 +3989,7 @@
     <property role="TrG5h" value="selectAllTraceNodeInCurrentTrace" />
     <property role="2uzpH1" value="Trace: select all traces of this node" />
     <property role="3GE5qa" value="actions" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="4yQfyMjvYR8" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -4102,6 +4103,7 @@
     <property role="TrG5h" value="selectNextTraceNodeAndInspectSource" />
     <property role="2uzpH1" value="Trace: select next trace and inspect source" />
     <property role="3GE5qa" value="actions" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="2JfTTG8itTU" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -4207,6 +4209,7 @@
     <property role="TrG5h" value="selectNextTraceNodeInCurrentTrace" />
     <property role="2uzpH1" value="Trace: select next trace of this node" />
     <property role="3GE5qa" value="actions" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="4yQfyMjrpAi" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
