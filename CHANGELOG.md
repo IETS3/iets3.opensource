@@ -15,6 +15,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - The type calculation of field setters now works.
+- `NumberType#containsZero` now correctly deals with infinite values.
 
 ## February 2024
 
