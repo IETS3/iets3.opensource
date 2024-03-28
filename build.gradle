@@ -123,6 +123,7 @@ configurations {
     languageLibs
     junitAnt
     pcollections // Synced to org.iets3.core.expr.base.collections.stubs/lib
+    bigMath // Synced to org.iets3.core.expr.math.interpreter/lib
 }
 
 dependencies {
@@ -131,6 +132,7 @@ dependencies {
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
     pcollections 'org.pcollections:pcollections:4.0.1'
+    bigMath 'ch.obermuhlner:big-math:2.3.2'
 }
 
 
@@ -166,7 +168,24 @@ task resolvePcollections(type: Sync) {
     }
 }
 
-task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs, resolvePcollections])
+task resolveBigMath(type: Sync) {
+    from configurations.bigMath
+    into file('code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.math.interpreter/lib')
+
+    // Strip version numbers from file names
+    rename { filename ->
+        def ra = configurations.bigMath.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+        String finalName
+        if (ra.classifier != null) {
+            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
+        } else {
+            finalName = "${ra.name}.${ra.extension}"
+        }
+        return finalName
+    }
+}
+
+task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs, resolvePcollections, resolveBigMath])
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
