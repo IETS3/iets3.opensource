@@ -23,6 +23,8 @@
     <dependency reexport="false">ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)</dependency>
+    <dependency reexport="false">cf90f965-8554-4a16-aa0b-6387f27474ab(org.iets3.core.expr.base.interpreter)</dependency>
+    <dependency reexport="false">197e2a32-ff26-4358-af5c-731ae2b35f83(org.iets3.core.expr.simpleTypes.interpreter)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
@@ -149,11 +151,13 @@
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="1" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="3" />
+    <module reference="cf90f965-8554-4a16-aa0b-6387f27474ab(org.iets3.core.expr.base.interpreter)" version="0" />
     <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="5" />
     <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="0" />
     <module reference="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0(org.iets3.core.expr.math)" version="0" />
     <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
+    <module reference="197e2a32-ff26-4358-af5c-731ae2b35f83(org.iets3.core.expr.simpleTypes.interpreter)" version="0" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
     <module reference="b0e7c6a8-b47d-4637-b0e8-e5bfd486c4e8(org.iets3.core.expr.tracing.plugin)" version="0" />
     <module reference="5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)" version="0" />

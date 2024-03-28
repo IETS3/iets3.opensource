@@ -152,6 +152,7 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
+        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -2184,6 +2185,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.expr.typetags.phyunits.si" />
         <property role="3LESm3" value="86255e62-4839-480a-a7d0-9ee30f97e2d8" />
+        <property role="2GAjPV" value="true" />
         <node concept="3rtmxn" id="3jMXg07aoGP" role="3bR31x">
           <node concept="3LXTmp" id="3jMXg07aoGQ" role="3rtmxm">
             <node concept="3qWCbU" id="3jMXg07aoGR" role="3LXTna">
@@ -2239,6 +2241,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.expr.typetags.physunits.documentation" />
         <property role="3LESm3" value="9002631e-7e42-46da-88df-6577409bb437" />
+        <property role="2GAjPV" value="true" />
         <node concept="3rtmxn" id="6M5f7ZU_tm4" role="3bR31x">
           <node concept="3LXTmp" id="6M5f7ZU_tm5" role="3rtmxm">
             <node concept="3qWCbU" id="6M5f7ZU_tm6" role="3LXTna">
@@ -2418,6 +2421,16 @@
         <node concept="1SiIV0" id="5noD5ljwLlh" role="3bR37C">
           <node concept="3bR9La" id="5noD5ljwLli" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35KqXxEDali" role="3bR37C">
+          <node concept="3bR9La" id="35KqXxEDalj" role="1SiIV1">
+            <ref role="3bR37D" node="44TucI396g5" resolve="org.iets3.core.expr.simpleTypes.interpreter" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35KqXxEDalk" role="3bR37C">
+          <node concept="3bR9La" id="35KqXxEDall" role="1SiIV1">
+            <ref role="3bR37D" node="44TucI396gt" resolve="org.iets3.core.expr.base.interpreter" />
           </node>
         </node>
       </node>
