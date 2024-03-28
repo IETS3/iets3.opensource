@@ -98,6 +98,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <property id="997079742910640235" name="fillActionContext" index="1teQrl" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -4148,11 +4149,6 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="2JfTTG8itTV" role="1oa70y" />
     </node>
-    <node concept="1DS2jV" id="2JfTTG8itTW" role="1NuT2Z">
-      <property role="TrG5h" value="mpsProject" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
-      <node concept="1oajcY" id="2JfTTG8itTX" role="1oa70y" />
-    </node>
     <node concept="2S4$dB" id="2JfTTG8itTY" role="1NuT2Z">
       <property role="TrG5h" value="someNode" />
       <node concept="3Tm6S6" id="2JfTTG8itTZ" role="1B3o_S" />
@@ -4258,11 +4254,6 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4yQfyMjrpAj" role="1oa70y" />
     </node>
-    <node concept="1DS2jV" id="4yQfyMjrpAk" role="1NuT2Z">
-      <property role="TrG5h" value="mpsProject" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
-      <node concept="1oajcY" id="4yQfyMjrpAl" role="1oa70y" />
-    </node>
     <node concept="2S4$dB" id="4yQfyMjrpAm" role="1NuT2Z">
       <property role="TrG5h" value="someNode" />
       <node concept="3Tm6S6" id="4yQfyMjrpAn" role="1B3o_S" />
@@ -4367,6 +4358,7 @@
     <property role="2uzpH1" value="Show Trace" />
     <property role="1teQrl" value="true" />
     <property role="3GE5qa" value="actions" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="1rUbSenCeC" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -6044,8 +6036,8 @@
             <node concept="liA8E" id="4yQfyMjgweN" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JComponent.setBackground(java.awt.Color)" resolve="setBackground" />
               <node concept="10M0yZ" id="4yQfyMjgwqm" role="37wK5m">
-                <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                 <ref role="3cqZAo" to="lzb2:~JBColor.white" resolve="white" />
+                <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
               </node>
             </node>
           </node>
