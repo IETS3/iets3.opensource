@@ -196,5 +196,15 @@
       <ref role="20lvS9" node="4HxogODR$_x" resolve="ITag" />
     </node>
   </node>
+  <node concept="1TIwiD" id="45LkEBNxn3O">
+    <property role="EcuMT" value="4715641174722179316" />
+    <property role="TrG5h" value="EmptyTag" />
+    <property role="34LRSv" value="empty" />
+    <property role="R4oN_" value="an empty tag" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="45LkEBNxnd_" role="PzmwI">
+      <ref role="PrY4T" node="4HxogODR$_x" resolve="ITag" />
+    </node>
+  </node>
 </model>
 

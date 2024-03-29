@@ -11,11 +11,13 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - *MessageDefiniton* uses *extensionPoint/IdentifierConfigurator/* that allows the user to decide to use german umlauts and paragraphs in it.
 - This extensionPoint got a new method to select which implementation will be chosen. 
+- A new (experimental) language `org.iets3.core.expr.typetags.physunits` was added that should eventually replace the old unit language. Read the documentation in `org.iets3.core.expr.typetags.physunits.documentation` to learn more about the features of the new language.
 
 ### Fixed
 
 - The type calculation of field setters now works.
 - `NumberType#containsZero` now correctly deals with infinite values.
+- Various usability issues where fixed.
 
 ## February 2024
 

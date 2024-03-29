@@ -2929,7 +2929,7 @@
           </node>
         </node>
         <node concept="30bXRB" id="7w1s6DBwblu" role="_fkuS">
-          <property role="30bXRw" value="2.6390158215457883" />
+          <property role="30bXRw" value="2.639015821545788518748003942459280" />
         </node>
       </node>
       <node concept="_fkuZ" id="7w1s6DBwrww" role="_fkp5">
