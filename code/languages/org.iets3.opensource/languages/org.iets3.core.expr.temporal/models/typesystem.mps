@@ -2306,7 +2306,7 @@
                           <ref role="2Gs0qQ" node="5kIYKlpqDvV" resolve="part" />
                         </node>
                         <node concept="liA8E" id="5kIYKlpqLkl" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SContainmentLink.getRoleName()" resolve="getRoleName" />
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                         </node>
                       </node>
                     </node>

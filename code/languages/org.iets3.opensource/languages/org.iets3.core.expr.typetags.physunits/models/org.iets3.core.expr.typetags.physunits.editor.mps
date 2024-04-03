@@ -576,6 +576,9 @@
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -606,9 +609,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
       <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
         <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
@@ -4001,9 +4001,9 @@
                   <node concept="1yR$tW" id="9M53mI1lVy" role="2Oq$k0" />
                 </node>
                 <node concept="2qgKlT" id="1F1F0IUZAOZ" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                  <node concept="3TUQnm" id="1F1F0IUZAP0" role="37wK5m">
-                    <ref role="3TV0OU" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                  <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                  <node concept="35c_gC" id="3Q$zA1CCXzJ" role="37wK5m">
+                    <ref role="35c_gD" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
                   </node>
                 </node>
               </node>

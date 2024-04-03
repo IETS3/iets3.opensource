@@ -13940,8 +13940,8 @@
     <property role="TrG5h" value="iets3.os.prebuild" />
     <property role="turDy" value="prebuild.xml" />
     <node concept="2igEWh" id="sIFyDYHT4z" role="1hWBAP">
-      <property role="3UIfUI" value="10000" />
       <property role="1YnnvL" value="1024" />
+      <property role="3UIfUI" value="10000" />
     </node>
     <node concept="1E1JtD" id="1YwzPHwBxpc" role="3989C9">
       <property role="BnDLt" value="true" />

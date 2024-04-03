@@ -435,7 +435,7 @@
                       <ref role="3cqZAo" node="6LfBX8Yg$YB" resolve="project" />
                     </node>
                     <node concept="liA8E" id="6LfBX8Yg$Y4" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~Project.getModules()" resolve="getModules" />
+                      <ref role="37wK5l" to="z1c3:~IProject.getProjectModules()" resolve="getProjectModules" />
                     </node>
                   </node>
                   <node concept="A3Dl8" id="6LfBX8Yg$Y5" role="10QFUM">

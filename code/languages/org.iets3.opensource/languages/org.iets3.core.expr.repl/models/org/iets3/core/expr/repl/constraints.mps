@@ -141,6 +141,9 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -157,9 +160,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -824,9 +824,9 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="1F1F0IUZBhv" role="2OqNvi">
-                      <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                      <node concept="3TUQnm" id="1F1F0IUZBhw" role="37wK5m">
-                        <ref role="3TV0OU" to="wtll:3_Nra3E2xlO" resolve="TopLevelSheet" />
+                      <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                      <node concept="35c_gC" id="3Q$zA1CB5PP" role="37wK5m">
+                        <ref role="35c_gD" to="wtll:3_Nra3E2xlO" resolve="TopLevelSheet" />
                       </node>
                     </node>
                   </node>
@@ -912,9 +912,9 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="3pIANU_3npn" role="2OqNvi">
-                      <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                      <node concept="3TUQnm" id="3pIANU_3npo" role="37wK5m">
-                        <ref role="3TV0OU" to="wtll:3_Nra3E2xlO" resolve="TopLevelSheet" />
+                      <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                      <node concept="35c_gC" id="3Q$zA1CB5o9" role="37wK5m">
+                        <ref role="35c_gD" to="wtll:3_Nra3E2xlO" resolve="TopLevelSheet" />
                       </node>
                     </node>
                   </node>

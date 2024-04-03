@@ -8775,7 +8775,7 @@
                     <ref role="3cqZAo" node="2S0X1v6N1c0" resolve="widgetText" />
                   </node>
                   <node concept="liA8E" id="5HzZDakJctS" role="2OqNvi">
-                    <ref role="37wK5l" to="jkny:~StatusBarWidget$TextPresentation.getMaxPossibleText()" resolve="getMaxPossibleText" />
+                    <ref role="37wK5l" to="jkny:~StatusBarWidget$TextPresentation.getText()" resolve="getText" />
                   </node>
                 </node>
                 <node concept="10M0yZ" id="$0lM0JKFLd" role="37wK5m">
@@ -9219,9 +9219,12 @@
               <ref role="3cqZAo" node="5do60t9v3W2" resolve="myStatusBar" />
             </node>
             <node concept="liA8E" id="2S0X1v6Mkqk" role="2OqNvi">
-              <ref role="37wK5l" to="jkny:~StatusBar.addWidget(com.intellij.openapi.wm.StatusBarWidget)" resolve="addWidget" />
+              <ref role="37wK5l" to="jkny:~StatusBar.addWidget(com.intellij.openapi.wm.StatusBarWidget,com.intellij.openapi.Disposable)" resolve="addWidget" />
               <node concept="37vLTw" id="2S0X1v6Mkw8" role="37wK5m">
                 <ref role="3cqZAo" node="2S0X1v6M02G" resolve="widget" />
+              </node>
+              <node concept="37vLTw" id="3Q$zA1C$r1L" role="37wK5m">
+                <ref role="3cqZAo" node="5do60t9v3W2" resolve="myStatusBar" />
               </node>
             </node>
           </node>
