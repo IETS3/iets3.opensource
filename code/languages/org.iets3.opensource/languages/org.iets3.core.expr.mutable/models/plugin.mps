@@ -2,11 +2,6 @@
 <model ref="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
-    <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
-    <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="-1" />
-    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -309,9 +304,6 @@
       <concept id="1240906768633" name="jetbrains.mps.baseLanguage.collections.structure.PutAllOperation" flags="nn" index="3FNE7p">
         <child id="1240906921264" name="map" index="3FOfgg" />
       </concept>
-    </language>
-    <language id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport">
-      <concept id="1829257266377339186" name="jetbrains.mps.ide.httpsupport.structure.Node_getURLOperation" flags="ng" index="2$mYbS" />
     </language>
   </registry>
   <node concept="312cEu" id="3GdqffBQFZI">
@@ -828,12 +820,6 @@
             </node>
           </node>
           <node concept="3K4zz7" id="4e_7uAsLn_G" role="37wK5m">
-            <node concept="2OqwBi" id="2Cyo7$6gSJ0" role="3K4E3e">
-              <node concept="37vLTw" id="2Cyo7$6gS5Q" role="2Oq$k0">
-                <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
-              </node>
-              <node concept="2$mYbS" id="2Cyo7$6gTjm" role="2OqNvi" />
-            </node>
             <node concept="3y3z36" id="4e_7uAsLnvx" role="3K4Cdx">
               <node concept="10Nm6u" id="4e_7uAsLnvy" role="3uHU7w" />
               <node concept="2OqwBi" id="4e_7uAsLnvz" role="3uHU7B">
@@ -845,6 +831,13 @@
             </node>
             <node concept="Xl_RD" id="78hTg1_g6$P" role="3K4GZi">
               <property role="Xl_RC" value="&lt;node not in model&gt;" />
+            </node>
+            <node concept="2YIFZM" id="5_s5$c25L2J" role="3K4E3e">
+              <ref role="37wK5l" to="oq0c:1_yOWEXenNM" resolve="getURL" />
+              <ref role="1Pybhc" to="oq0c:3OrGkZCn9ZQ" resolve="URLUtil" />
+              <node concept="37vLTw" id="5_s5$c25L4s" role="37wK5m">
+                <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
+              </node>
             </node>
           </node>
           <node concept="37vLTw" id="1RzljfOg1y$" role="37wK5m">
@@ -4887,14 +4880,15 @@
                 <node concept="I4A8Y" id="31BLocd1sM2" role="2OqNvi" />
               </node>
             </node>
-            <node concept="2OqwBi" id="3$k5qOedZA3" role="3K4E3e">
-              <node concept="37vLTw" id="3$k5qOedYV$" role="2Oq$k0">
-                <ref role="3cqZAo" node="31BLocd1sMa" resolve="nodeWithError" />
-              </node>
-              <node concept="2$mYbS" id="3$k5qOedZVi" role="2OqNvi" />
-            </node>
             <node concept="Xl_RD" id="31BLocd1sM7" role="3K4GZi">
               <property role="Xl_RC" value="&lt;node not in model&gt;" />
+            </node>
+            <node concept="2YIFZM" id="5_s5$c25KtI" role="3K4E3e">
+              <ref role="37wK5l" to="oq0c:1_yOWEXenNM" resolve="getURL" />
+              <ref role="1Pybhc" to="oq0c:3OrGkZCn9ZQ" resolve="URLUtil" />
+              <node concept="37vLTw" id="5_s5$c25KvO" role="37wK5m">
+                <ref role="3cqZAo" node="31BLocd1sMa" resolve="nodeWithError" />
+              </node>
             </node>
           </node>
           <node concept="37vLTw" id="31BLocd1sM8" role="37wK5m">
