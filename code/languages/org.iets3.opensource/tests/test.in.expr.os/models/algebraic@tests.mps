@@ -2,7 +2,7 @@
 <model ref="r:109d7958-4308-4f2a-95cb-ea4731803298(test.in.expr.os.algebraic@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="0" />
@@ -11,9 +11,7 @@
     <devkit ref="ce1cf8e2-ad23-4a29-b20d-ca13a97e194f(org.iets3.core.expr.advanced.devkit)" />
     <devkit ref="b2a65b84-7ec9-404f-8602-f16394bb1d98(org.iets3.core.expr.stateful.devkit)" />
   </languages>
-  <imports>
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-  </imports>
+  <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
@@ -139,6 +137,9 @@
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="1801842150043102459" name="org.iets3.core.expr.tests.structure.OptExpression" flags="ng" index="2nD44o">
+        <child id="1801842150043102462" name="expr" index="2nD44t" />
+      </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -149,7 +150,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -348,7 +348,6 @@
   <node concept="_iOnU" id="5a_u3OyP53I">
     <property role="TrG5h" value="algebraic" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="1KraG_" id="5a_u3OyMFHu" role="_iOnB">
       <property role="TrG5h" value="Exp" />
       <node concept="1KraX1" id="5a_u3OyMFHz" role="1KraX0">
@@ -1267,7 +1266,6 @@
   <node concept="_iOnU" id="28$LOSAPZOM">
     <property role="TrG5h" value="algebraicQuoting" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="1KraG_" id="28$LOSAPZON" role="_iOnB">
       <property role="TrG5h" value="Exp" />
       <node concept="1KraX1" id="28$LOSAPZOO" role="1KraX0">
@@ -1468,7 +1466,6 @@
   <node concept="_iOnU" id="28$LOSAdrbI">
     <property role="TrG5h" value="algebraicTrafo" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="1KraG_" id="28$LOSAdrbJ" role="_iOnB">
       <property role="TrG5h" value="Exp" />
       <node concept="1KraX1" id="28$LOSAdrbK" role="1KraX0">
@@ -3354,9 +3351,11 @@
             </node>
             <node concept="1KhKv7" id="5a_u3O$5dPZ" role="1KrJjn" />
           </node>
-          <node concept="1Kvkmc" id="5a_u3O$5drI" role="1Kh3Cz">
-            <property role="1Kvkm5" value="0" />
-            <node concept="1KgZKh" id="5a_u3O$5drJ" role="30czhm" />
+          <node concept="2nD44o" id="7DfYVnmwFKF" role="1Kh3Cz">
+            <node concept="1Kvkmc" id="5a_u3O$5drI" role="2nD44t">
+              <property role="1Kvkm5" value="0" />
+              <node concept="1KgZKh" id="5a_u3O$5drJ" role="30czhm" />
+            </node>
           </node>
         </node>
         <node concept="1Kh3CC" id="5a_u3OzRiVG" role="1Kh3EZ">
@@ -3366,9 +3365,11 @@
             </node>
             <node concept="1KhKv7" id="5a_u3OzRiVJ" role="1KrJjn" />
           </node>
-          <node concept="1Kvkmc" id="5a_u3OzRiVK" role="1Kh3Cz">
-            <property role="1Kvkm5" value="0" />
-            <node concept="1KgZKh" id="5a_u3OzRiVL" role="30czhm" />
+          <node concept="2nD44o" id="7DfYVnmwHBU" role="1Kh3Cz">
+            <node concept="1Kvkmc" id="5a_u3OzRiVK" role="2nD44t">
+              <property role="1Kvkm5" value="0" />
+              <node concept="1KgZKh" id="5a_u3OzRiVL" role="30czhm" />
+            </node>
           </node>
         </node>
         <node concept="1Kh3CC" id="5a_u3OzRnS_" role="1Kh3EZ">
