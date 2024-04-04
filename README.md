@@ -30,7 +30,7 @@ For details see [wiki](https://github.com/IETS3/iets3.opensource/wiki/Supported-
 
 ## Documentation
 
-- [KernelF | MPS Platform Docs](http://mbeddr.com/mps-platform-docs/languages/kernelf/)
+- [KernelF | MPS Platform Docs](http://mbeddr.com/mps-platform-docs/languages/kernelf/kernelf)
 - [Platform essentials | MPS Platform Docs](http://mbeddr.com/mps-platform-docs/platform_essentials/)
 
 ## Community
