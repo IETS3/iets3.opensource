@@ -95,12 +95,21 @@
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -124,6 +133,9 @@
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -7512,11 +7524,23 @@
             <node concept="3uibUv" id="31Bxel01iNS" role="1tU5fm">
               <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
-            <node concept="2YIFZM" id="31Bxel01qHE" role="33vP2m">
-              <ref role="37wK5l" to="pbu6:3xDNhgd54rl" resolve="evaluate" />
-              <ref role="1Pybhc" to="pbu6:3xDNhgd53E_" resolve="IETS3ExprEvalHelper" />
-              <node concept="3xONca" id="31Bxel01qHF" role="37wK5m">
-                <ref role="3xOPvv" node="31BxekZX$Xj" resolve="test1" />
+            <node concept="2OqwBi" id="GJLa3qqYFv" role="33vP2m">
+              <node concept="2OqwBi" id="GJLa3qqYgU" role="2Oq$k0">
+                <node concept="2ShNRf" id="GJLa3qqWWU" role="2Oq$k0">
+                  <node concept="HV5vD" id="GJLa3qqY96" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="GJLa3qqYte" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:2nydsCfz7eH" resolve="evaluate" />
+                  <node concept="3xONca" id="GJLa3qqYw0" role="37wK5m">
+                    <ref role="3xOPvv" node="31BxekZX$Xj" resolve="test1" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OwXpG" id="GJLa3qqYTz" role="2OqNvi">
+                <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
               </node>
             </node>
           </node>
@@ -7562,11 +7586,23 @@
             <node concept="3uibUv" id="31BxekZYSWr" role="1tU5fm">
               <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
-            <node concept="2YIFZM" id="31BxekZYVPP" role="33vP2m">
-              <ref role="37wK5l" to="pbu6:3xDNhgd54rl" resolve="evaluate" />
-              <ref role="1Pybhc" to="pbu6:3xDNhgd53E_" resolve="IETS3ExprEvalHelper" />
-              <node concept="3xONca" id="31BxekZYVPQ" role="37wK5m">
-                <ref role="3xOPvv" node="31BxekZXQ0w" resolve="test2" />
+            <node concept="2OqwBi" id="GJLa3qr0f6" role="33vP2m">
+              <node concept="2OqwBi" id="GJLa3qr0f7" role="2Oq$k0">
+                <node concept="2ShNRf" id="GJLa3qr0f8" role="2Oq$k0">
+                  <node concept="HV5vD" id="GJLa3qr0f9" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="GJLa3qr0fa" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:2nydsCfz7eH" resolve="evaluate" />
+                  <node concept="3xONca" id="GJLa3qr0fb" role="37wK5m">
+                    <ref role="3xOPvv" node="31BxekZXQ0w" resolve="test2" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OwXpG" id="GJLa3qr0fc" role="2OqNvi">
+                <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
               </node>
             </node>
           </node>
@@ -7612,11 +7648,23 @@
             <node concept="3uibUv" id="31Bxel01rk7" role="1tU5fm">
               <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
-            <node concept="2YIFZM" id="31Bxel01rk8" role="33vP2m">
-              <ref role="37wK5l" to="pbu6:3xDNhgd54rl" resolve="evaluate" />
-              <ref role="1Pybhc" to="pbu6:3xDNhgd53E_" resolve="IETS3ExprEvalHelper" />
-              <node concept="3xONca" id="31Bxel01rk9" role="37wK5m">
-                <ref role="3xOPvv" node="31BxekZXR26" resolve="test3" />
+            <node concept="2OqwBi" id="GJLa3qr0BX" role="33vP2m">
+              <node concept="2OqwBi" id="GJLa3qr0BY" role="2Oq$k0">
+                <node concept="2ShNRf" id="GJLa3qr0BZ" role="2Oq$k0">
+                  <node concept="HV5vD" id="GJLa3qr0C0" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="GJLa3qr0C1" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:2nydsCfz7eH" resolve="evaluate" />
+                  <node concept="3xONca" id="GJLa3qr0C2" role="37wK5m">
+                    <ref role="3xOPvv" node="31BxekZXR26" resolve="test3" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OwXpG" id="GJLa3qr0C3" role="2OqNvi">
+                <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
               </node>
             </node>
           </node>
@@ -7662,11 +7710,23 @@
             <node concept="3uibUv" id="31Bxel01rGZ" role="1tU5fm">
               <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
-            <node concept="2YIFZM" id="31Bxel01rH0" role="33vP2m">
-              <ref role="37wK5l" to="pbu6:3xDNhgd54rl" resolve="evaluate" />
-              <ref role="1Pybhc" to="pbu6:3xDNhgd53E_" resolve="IETS3ExprEvalHelper" />
-              <node concept="3xONca" id="31Bxel01rH1" role="37wK5m">
-                <ref role="3xOPvv" node="31BxekZXS46" resolve="test4" />
+            <node concept="2OqwBi" id="GJLa3qr0JN" role="33vP2m">
+              <node concept="2OqwBi" id="GJLa3qr0JO" role="2Oq$k0">
+                <node concept="2ShNRf" id="GJLa3qr0JP" role="2Oq$k0">
+                  <node concept="HV5vD" id="GJLa3qr0JQ" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="GJLa3qr0JR" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:2nydsCfz7eH" resolve="evaluate" />
+                  <node concept="3xONca" id="GJLa3qr0JS" role="37wK5m">
+                    <ref role="3xOPvv" node="31BxekZXS46" resolve="test4" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OwXpG" id="GJLa3qr0JT" role="2OqNvi">
+                <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
               </node>
             </node>
           </node>

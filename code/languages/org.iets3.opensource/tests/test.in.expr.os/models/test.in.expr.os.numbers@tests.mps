@@ -83,7 +83,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -182,7 +181,6 @@
   </registry>
   <node concept="_iOnU" id="1RwPUjzhA8h">
     <property role="TrG5h" value="minMax" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="2zPypq" id="1RwPUjznwy$" role="_iOnB">
       <property role="TrG5h" value="m" />
@@ -440,7 +438,6 @@
   <node concept="_iOnU" id="6rdp$3y_pap">
     <property role="TrG5h" value="numbers" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="2zPypq" id="7Wa2sv44gWb" role="_iOnB">
       <property role="TrG5h" value="a1" />
       <node concept="30dDZf" id="7Wa2sv44tPt" role="2zPyp_">
@@ -1656,7 +1653,6 @@
   <node concept="_iOnU" id="2M9Ik4CVVAB">
     <property role="TrG5h" value="precision" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="1WbbD7" id="1IomA9waU6k" role="_iOnB">
       <property role="TrG5h" value="BP0" />
       <node concept="mLuIC" id="1IomA9wb$tP" role="1WbbD4" />

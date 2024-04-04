@@ -360,7 +360,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -673,7 +672,6 @@
   </registry>
   <node concept="_iOnU" id="79jc6Yz$UXd">
     <property role="TrG5h" value="mutable_tx2" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <property role="3GE5qa" value="tx" />
     <node concept="2zPypq" id="79jc6Yz$UXm" role="_iOnB">
@@ -873,7 +871,6 @@
   </node>
   <node concept="_iOnU" id="3GdqffC8MiJ">
     <property role="TrG5h" value="mutable_tx" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <property role="3GE5qa" value="tx" />
     <node concept="1WbbD7" id="35BERW$gp9l" role="_iOnB">
@@ -1492,7 +1489,6 @@
   </node>
   <node concept="_iOnU" id="7$TgoCYai8P">
     <property role="TrG5h" value="B_statemachinesAuto" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <property role="3GE5qa" value="sm" />
     <node concept="174hOD" id="7Z_fDCwiQCg" role="_iOnB">
@@ -1873,7 +1869,6 @@
   </node>
   <node concept="_iOnU" id="3GdqffBKPkQ">
     <property role="TrG5h" value="mutable_boxes" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <property role="3GE5qa" value="mutable" />
     <node concept="2zPypq" id="3GdqffBKPpQ" role="_iOnB">
@@ -2444,7 +2439,6 @@
   </node>
   <node concept="_iOnU" id="35BERWyOOpU">
     <property role="TrG5h" value="mutable_globals" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <property role="3GE5qa" value="mutable" />
     <node concept="2zPypq" id="35BERWyOOpV" role="_iOnB">
@@ -2593,7 +2587,6 @@
   </node>
   <node concept="_iOnU" id="79jc6YzLq4C">
     <property role="TrG5h" value="mutable_Demo" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <property role="3GE5qa" value="mutable" />
     <node concept="2zPypq" id="79jc6YzLq4D" role="_iOnB">
@@ -3260,7 +3253,6 @@
   </node>
   <node concept="_iOnU" id="1RzljfOgq38">
     <property role="TrG5h" value="mutable_tx3" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <property role="3GE5qa" value="tx" />
     <node concept="2zPypq" id="1RzljfOgq39" role="_iOnB">
@@ -11074,7 +11066,6 @@
   </node>
   <node concept="_iOnU" id="7Z_fDCwiPc0">
     <property role="TrG5h" value="A_statemachinesBasic" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <property role="3GE5qa" value="sm" />
     <node concept="1WbbD7" id="7Z_fDCwiPc1" role="_iOnB">
@@ -12280,7 +12271,6 @@
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="REPLDemo" />
     <property role="3GE5qa" value="repl" />
-    <property role="2SXJ1i" value="true" />
     <node concept="2zPypq" id="7bd8pklaJq6" role="_iOnB">
       <property role="TrG5h" value="aNumber" />
       <node concept="30bXRB" id="7bd8pklaJql" role="2zPyp_">
@@ -15231,7 +15221,6 @@
   </node>
   <node concept="_iOnU" id="31BLocd6QAm">
     <property role="TrG5h" value="updateCheck" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <property role="3GE5qa" value="mutable" />
     <node concept="1Ws0TD" id="31BLocd6YX5" role="_iOnB">
@@ -16930,7 +16919,6 @@
   </node>
   <node concept="_iOnU" id="2zpAVpBZYrk">
     <property role="TrG5h" value="boxes" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <property role="3GE5qa" value="boxes" />
     <node concept="2zPypq" id="2zpAVpBZYrl" role="_iOnB">
@@ -17588,8 +17576,6 @@
           <node concept="15qgo_" id="3sNJH551L8Y" role="30czhm">
             <node concept="3sNe5_" id="3sNJH551L9b" role="15qgo$">
               <node concept="1DGDPD" id="3sNJH551L9w" role="3sNe5$">
-                <node concept="30bdrU" id="3sNJH551Lan" role="1bPNon" />
-                <node concept="30bXR$" id="3sNJH551Lb4" role="1bPNsv" />
                 <node concept="30bdrU" id="3JZRUPdr4HE" role="1DGDPC" />
                 <node concept="30bXR$" id="3JZRUPdr4Kx" role="1DGDPA" />
               </node>
