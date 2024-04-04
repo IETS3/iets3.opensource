@@ -14,7 +14,7 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" />
-    <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.quantities.behavior)" />
+    <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="qlm2" ref="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)" implicit="true" />
@@ -164,9 +164,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -616,9 +613,9 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="1F1F0IUZAOZ" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                  <node concept="3TUQnm" id="1F1F0IUZAP0" role="37wK5m">
-                    <ref role="3TV0OU" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                  <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                  <node concept="35c_gC" id="3Q$zA1CCWRN" role="37wK5m">
+                    <ref role="35c_gD" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
                   </node>
                 </node>
               </node>
@@ -709,9 +706,9 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="42$mjgfqkdg" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                  <node concept="3TUQnm" id="42$mjgfqkdh" role="37wK5m">
-                    <ref role="3TV0OU" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                  <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                  <node concept="35c_gC" id="3Q$zA1CCWzK" role="37wK5m">
+                    <ref role="35c_gD" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
                   </node>
                 </node>
               </node>

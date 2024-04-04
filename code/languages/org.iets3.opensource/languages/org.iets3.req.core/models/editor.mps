@@ -470,9 +470,6 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
-      </concept>
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -2669,9 +2666,9 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3wHxcnxBRil" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                        <node concept="3TUQnm" id="3wHxcnxBRkh" role="37wK5m">
-                          <ref role="3TV0OU" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
+                        <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                        <node concept="35c_gC" id="3Q$zA1CDNwI" role="37wK5m">
+                          <ref role="35c_gD" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
                         </node>
                       </node>
                     </node>

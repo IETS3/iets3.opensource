@@ -77,7 +77,6 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -715,7 +714,6 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getAllAttributes" />
-      <property role="DiZV1" value="true" />
       <node concept="3Tm1VV" id="spmH6cG2lB" role="1B3o_S" />
       <node concept="3clFbS" id="spmH6cG2lD" role="3clF47">
         <node concept="3clFbF" id="spmH6cG4N4" role="3cqZAp">

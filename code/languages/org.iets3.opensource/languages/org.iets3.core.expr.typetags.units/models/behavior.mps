@@ -398,9 +398,6 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -9828,9 +9825,9 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="2JXkwhJgnmI" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                        <node concept="3TUQnm" id="2JXkwhJgnmJ" role="37wK5m">
-                          <ref role="3TV0OU" to="b0gq:VmEWGR2Mzb" resolve="ConversionRule" />
+                        <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                        <node concept="35c_gC" id="3Q$zA1CCZFi" role="37wK5m">
+                          <ref role="35c_gD" to="b0gq:VmEWGR2Mzb" resolve="ConversionRule" />
                         </node>
                       </node>
                     </node>
