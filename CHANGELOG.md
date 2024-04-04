@@ -7,9 +7,15 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## March 2024
 
+### Added
+
 - *MessageDefiniton* uses *extensionPoint/IdentifierConfigurator/* that allows the user to decide to use german umlauts and paragraphs in it.
 - This extensionPoint got a new method to select which implementation will be chosen. 
 
+### Fixed
+
+- The type calculation of field setters now works.
+- `NumberType#containsZero` now correctly deals with infinite values.
 
 ## February 2024
 
