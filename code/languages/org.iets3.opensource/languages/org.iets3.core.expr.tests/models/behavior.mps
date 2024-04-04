@@ -12070,82 +12070,50 @@
             <node concept="10Nm6u" id="3_xsRJ4zavu" role="33vP2m" />
           </node>
         </node>
-        <node concept="3J1_TO" id="3_xsRJ4yACy" role="3cqZAp">
-          <node concept="3uVAMA" id="3_xsRJ4yACz" role="1zxBo5">
-            <node concept="XOnhg" id="3_xsRJ4yACo" role="1zc67B">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="blAptAwWT9R" role="1tU5fm">
-                <node concept="3uibUv" id="3_xsRJ4yACq" role="nSUat">
-                  <ref role="3uigEE" to="pa15:~ModelCannotBeCreatedException" resolve="ModelCannotBeCreatedException" />
-                </node>
-              </node>
+        <node concept="3clFbJ" id="3_xsRJ4yAC0" role="3cqZAp">
+          <node concept="2ZW3vV" id="3_xsRJ4yAC3" role="3clFbw">
+            <node concept="37vLTw" id="3_xsRJ4yAC1" role="2ZW6bz">
+              <ref role="3cqZAo" node="3_xsRJ4yHsl" resolve="mr" />
             </node>
-            <node concept="3clFbS" id="3_xsRJ4yACs" role="1zc67A">
-              <node concept="3clFbF" id="3_xsRJ4z0bd" role="3cqZAp">
-                <node concept="2OqwBi" id="3_xsRJ4z0FS" role="3clFbG">
-                  <node concept="37vLTw" id="3_xsRJ4z0bb" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3_xsRJ4yACo" resolve="e" />
+            <node concept="3uibUv" id="3_xsRJ4yKQQ" role="2ZW6by">
+              <ref role="3uigEE" to="pa15:~DefaultModelRoot" resolve="DefaultModelRoot" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="3_xsRJ4yACf" role="9aQIa">
+            <node concept="3clFbS" id="3_xsRJ4yACg" role="9aQI4">
+              <node concept="3clFbF" id="3_xsRJ4yACh" role="3cqZAp">
+                <node concept="37vLTI" id="3_xsRJ4yACi" role="3clFbG">
+                  <node concept="37vLTw" id="3_xsRJ4yACj" role="37vLTJ">
+                    <ref role="3cqZAo" node="3_xsRJ4yABV" resolve="result" />
                   </node>
-                  <node concept="liA8E" id="3_xsRJ4z14K" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
+                  <node concept="2YIFZM" id="3_xsRJ4yM00" role="37vLTx">
+                    <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+                    <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot)" resolve="createModelWithAdjustments" />
+                    <node concept="37vLTw" id="3_xsRJ4yNVW" role="37wK5m">
+                      <ref role="3cqZAo" node="3_xsRJ4ALZc" resolve="name" />
+                    </node>
+                    <node concept="37vLTw" id="3_xsRJ4yM02" role="37wK5m">
+                      <ref role="3cqZAo" node="3_xsRJ4yHsl" resolve="mr" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbS" id="3_xsRJ4yABZ" role="1zxBo7">
-            <node concept="3clFbJ" id="3_xsRJ4yAC0" role="3cqZAp">
-              <node concept="2ZW3vV" id="3_xsRJ4yAC3" role="3clFbw">
-                <node concept="37vLTw" id="3_xsRJ4yAC1" role="2ZW6bz">
-                  <ref role="3cqZAo" node="3_xsRJ4yHsl" resolve="mr" />
+          <node concept="3clFbS" id="3_xsRJ4yAC5" role="3clFbx">
+            <node concept="3clFbF" id="3_xsRJ4yAC6" role="3cqZAp">
+              <node concept="37vLTI" id="3_xsRJ4yAC7" role="3clFbG">
+                <node concept="37vLTw" id="3_xsRJ4yAC8" role="37vLTJ">
+                  <ref role="3cqZAo" node="3_xsRJ4yABV" resolve="result" />
                 </node>
-                <node concept="3uibUv" id="3_xsRJ4yKQQ" role="2ZW6by">
-                  <ref role="3uigEE" to="pa15:~DefaultModelRoot" resolve="DefaultModelRoot" />
-                </node>
-              </node>
-              <node concept="9aQIb" id="3_xsRJ4yACf" role="9aQIa">
-                <node concept="3clFbS" id="3_xsRJ4yACg" role="9aQI4">
-                  <node concept="3clFbF" id="3_xsRJ4yACh" role="3cqZAp">
-                    <node concept="37vLTI" id="3_xsRJ4yACi" role="3clFbG">
-                      <node concept="37vLTw" id="3_xsRJ4yACj" role="37vLTJ">
-                        <ref role="3cqZAo" node="3_xsRJ4yABV" resolve="result" />
-                      </node>
-                      <node concept="2YIFZM" id="3_xsRJ4yM00" role="37vLTx">
-                        <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                        <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot,org.jetbrains.mps.openapi.persistence.ModelFactoryType)" resolve="createModelWithAdjustments" />
-                        <node concept="37vLTw" id="3_xsRJ4yNVW" role="37wK5m">
-                          <ref role="3cqZAo" node="3_xsRJ4ALZc" resolve="name" />
-                        </node>
-                        <node concept="37vLTw" id="3_xsRJ4yM02" role="37wK5m">
-                          <ref role="3cqZAo" node="3_xsRJ4yHsl" resolve="mr" />
-                        </node>
-                        <node concept="10Nm6u" id="3_xsRJ4yM03" role="37wK5m" />
-                      </node>
-                    </node>
+                <node concept="2YIFZM" id="3_xsRJ4yLZm" role="37vLTx">
+                  <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+                  <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot)" resolve="createModelWithAdjustments" />
+                  <node concept="37vLTw" id="3_xsRJ4yNDJ" role="37wK5m">
+                    <ref role="3cqZAo" node="3_xsRJ4ALZc" resolve="name" />
                   </node>
-                </node>
-              </node>
-              <node concept="3clFbS" id="3_xsRJ4yAC5" role="3clFbx">
-                <node concept="3clFbF" id="3_xsRJ4yAC6" role="3cqZAp">
-                  <node concept="37vLTI" id="3_xsRJ4yAC7" role="3clFbG">
-                    <node concept="37vLTw" id="3_xsRJ4yAC8" role="37vLTJ">
-                      <ref role="3cqZAo" node="3_xsRJ4yABV" resolve="result" />
-                    </node>
-                    <node concept="2YIFZM" id="3_xsRJ4yLZm" role="37vLTx">
-                      <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                      <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot,org.jetbrains.mps.openapi.persistence.ModelFactoryType)" resolve="createModelWithAdjustments" />
-                      <node concept="37vLTw" id="3_xsRJ4yNDJ" role="37wK5m">
-                        <ref role="3cqZAo" node="3_xsRJ4ALZc" resolve="name" />
-                      </node>
-                      <node concept="37vLTw" id="3_xsRJ4yLZo" role="37wK5m">
-                        <ref role="3cqZAo" node="3_xsRJ4yHsl" resolve="mr" />
-                      </node>
-                      <node concept="Rm8GO" id="3_xsRJ4ySID" role="37wK5m">
-                        <ref role="Rm8GQ" to="pa15:~PreinstalledModelFactoryTypes.PLAIN_XML" resolve="PLAIN_XML" />
-                        <ref role="1Px2BO" to="pa15:~PreinstalledModelFactoryTypes" resolve="PreinstalledModelFactoryTypes" />
-                      </node>
-                    </node>
+                  <node concept="37vLTw" id="3_xsRJ4yLZo" role="37wK5m">
+                    <ref role="3cqZAo" node="3_xsRJ4yHsl" resolve="mr" />
                   </node>
                 </node>
               </node>
