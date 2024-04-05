@@ -42,6 +42,7 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
   </imports>
@@ -56,6 +57,7 @@
       </concept>
     </language>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
+      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -397,6 +399,15 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="6856661361479784527" name="com.mbeddr.mpsutil.grammarcells.structure.InlineActionMapItem" flags="ng" index="130t_x">
+        <property id="1139535298778" name="actionId" index="1hAc7k" />
+        <child id="6856661361479798753" name="execute" index="130oVf" />
+      </concept>
+      <concept id="6856661361479784534" name="com.mbeddr.mpsutil.grammarcells.structure.InlineActionMapItem_ExecuteFunction" flags="ig" index="130t_S" />
+      <concept id="6856661361479732075" name="com.mbeddr.mpsutil.grammarcells.structure.InlineActionMapCell" flags="ng" index="130CD5">
+        <child id="6856661361479798957" name="actions" index="130p63" />
+        <child id="6856661361479732085" name="cell" index="130CDr" />
+      </concept>
       <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
@@ -1889,10 +1900,26 @@
   </node>
   <node concept="24kQdi" id="4_qY3E4CWiZ">
     <ref role="1XX52x" to="av4b:4_qY3E4CWhU" resolve="EmptyTestItem" />
-    <node concept="3F0ifn" id="4_qY3E4CWjd" role="2wV5jI">
-      <property role="3F0ifm" value="" />
-      <node concept="VPxyj" id="4_qY3E4CWlo" role="3F10Kt">
-        <property role="VOm3f" value="true" />
+    <node concept="130CD5" id="Ss0aue5Xux" role="2wV5jI">
+      <node concept="3F0ifn" id="Ss0aue5XuD" role="130CDr">
+        <property role="3F0ifm" value="" />
+        <node concept="VPxyj" id="x8tpS_RoA4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="130t_x" id="Ss0aue5XuH" role="130p63">
+        <property role="1hAc7k" value="7P1WhNABBiJ/complete_action_id" />
+        <node concept="130t_S" id="Ss0aue5XuI" role="130oVf">
+          <node concept="3clFbS" id="Ss0aue5XuJ" role="2VODD2">
+            <node concept="3clFbF" id="Ss0aue60mu" role="3cqZAp">
+              <node concept="2YIFZM" id="Ss0aue60mR" role="3clFbG">
+                <ref role="1Pybhc" to="buwp:Ss0aue3Qrs" resolve="SingleEntrySelector" />
+                <ref role="37wK5l" to="buwp:Ss0aue3QB0" resolve="selectIfApplicable" />
+                <node concept="1XNTG" id="Ss0aue60LR" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
