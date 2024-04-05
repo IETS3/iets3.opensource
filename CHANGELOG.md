@@ -11,6 +11,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The unnecessary super types of the tuple type were removed and are not necessary anymore.
 
+### Fixed
+
+- Empty-like nodes now automatically select the first code completion entry if there is only one entry.
+
 ## March 2024
 
 ### Added
