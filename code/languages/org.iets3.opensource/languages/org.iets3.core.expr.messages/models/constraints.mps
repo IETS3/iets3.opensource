@@ -148,9 +148,6 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -216,9 +213,9 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="VFjlN5$L_K" role="2OqNvi">
-                    <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                    <node concept="3TUQnm" id="VFjlN5$Ue6" role="37wK5m">
-                      <ref role="3TV0OU" to="kelk:3vxfdxbcs9j" resolve="IMessageNamespace" />
+                    <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                    <node concept="35c_gC" id="3Q$zA1CACvl" role="37wK5m">
+                      <ref role="35c_gD" to="kelk:3vxfdxbcs9j" resolve="IMessageNamespace" />
                     </node>
                   </node>
                 </node>

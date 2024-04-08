@@ -3,8 +3,8 @@
 ## Build instructions
 
 ### Using Gradle
-If you just want to build the project, no prerequisites are required. Just run `./gradlew build` from the checkout
-directory. This will download required version of the mbeddr platform language library from the itemis Nexus repository.
+
+If you just want to build the project, no prerequisites are required. Just run `./gradlew build` from the checkout directory. This will download required version of the mbeddr platform language library from the itemis Nexus repository.
 When the build has finished, you can open the project in MPS from the folder `<iets3.opensource>/code/languages/org.iets3.opensource`
 
 To publish this project's artifacts to the Maven local repository run `./gradlew publishToMavenLocal`.
@@ -21,10 +21,15 @@ We take care of porting changes done in older supported MPS versions to the newe
 For details see [wiki](https://github.com/IETS3/iets3.opensource/wiki/Supported-MPS-Versions).
 
 ### What MPS versions are currently supported? 
-- MPS 2021.3 (branch: [master](https://github.com/IETS3/iets3.opensource/tree/master)) 
+- MPS 2022.2 (branch: [master](https://github.com/IETS3/iets3.opensource/tree/master)) 
+- MPS 2021.3 (branch: [maintenance/mps20213](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20213)) 
 - MPS 2021.2 (branch: [maintenance/mps20212](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20212)) 
 - MPS 2021.1 (branch: [maintenance/mps20211](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20211)) 
-- MPS 2020.3 (branch: [maintenance/mps20203](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20203)) 
+
+## Documentation
+
+- [KernelF | MPS Platform Docs](http://mbeddr.com/mps-platform-docs/languages/kernelf/kernelf)
+- [Platform essentials | MPS Platform Docs](http://mbeddr.com/mps-platform-docs/platform_essentials/)
 
 ## Community
 
