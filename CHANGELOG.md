@@ -16,6 +16,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - `ComponentKind#canbeContent(conceptNode<>)` was deprecated in favour of `ComponentKind#canbeContent(concept<>)` 
 - `Component#canBeInComponentContent(conceptNode<>)` was deprecated in favour of `Component#canBeInComponentContent(concept<>)`
 
+### Added
+
+- Numbers ranges now support exclusive and inclusive intervals.
+
 ## March 2024
 
 ### Added
