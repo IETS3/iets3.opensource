@@ -20,7 +20,7 @@
         <child id="8219602584757553934" name="tp" index="hiESe" />
       </concept>
       <concept id="8219602584758209317" name="org.iets3.core.expr.base.structure.OkTarget" flags="ng" index="htaS_" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
@@ -30,7 +30,7 @@
         <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
       <concept id="867786408877811180" name="org.iets3.core.expr.base.structure.Postcondition" flags="ng" index="I61F8" />
-      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
+      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ng" index="I61I7">
         <child id="867786408877811042" name="contract" index="I61D6" />
       </concept>
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
@@ -83,7 +83,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -151,7 +150,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -166,23 +165,22 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
         <property id="2861782275883660525" name="ext" index="1HeIcW" />
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
     </language>
   </registry>
   <node concept="_iOnU" id="1RwPUjzhA8h">
     <property role="TrG5h" value="minMax" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="2zPypq" id="1RwPUjznwy$" role="_iOnB">
       <property role="TrG5h" value="m" />
@@ -440,7 +438,6 @@
   <node concept="_iOnU" id="6rdp$3y_pap">
     <property role="TrG5h" value="numbers" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="2zPypq" id="7Wa2sv44gWb" role="_iOnB">
       <property role="TrG5h" value="a1" />
       <node concept="30dDZf" id="7Wa2sv44tPt" role="2zPyp_">
@@ -1656,7 +1653,6 @@
   <node concept="_iOnU" id="2M9Ik4CVVAB">
     <property role="TrG5h" value="precision" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="1WbbD7" id="1IomA9waU6k" role="_iOnB">
       <property role="TrG5h" value="BP0" />
       <node concept="mLuIC" id="1IomA9wb$tP" role="1WbbD4" />

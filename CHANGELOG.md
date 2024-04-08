@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## April 2024
+
+### Removed
+
+- The unnecessary super types of the tuple type were removed and are not necessary anymore.
+
+### Changed
+
+- `ComponentKind#canbeContent(conceptNode<>)` was deprecated in favour of `ComponentKind#canbeContent(concept<>)` 
+- `Component#canBeInComponentContent(conceptNode<>)` was deprecated in favour of `Component#canBeInComponentContent(concept<>)`
+
 ## March 2024
 
 ### Added

@@ -8,9 +8,9 @@
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>
-    <import index="zium" ref="r:cdaadb5b-4c31-4b6a-abc8-dffba09779e4(test.in.expr.os.plugin)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="zium" ref="r:cdaadb5b-4c31-4b6a-abc8-dffba09779e4(test.in.expr.os.plugin)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -74,7 +74,7 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -107,7 +107,7 @@
         <child id="1160998896846" name="condition" index="1gVkn0" />
         <child id="1160998916832" name="message" index="1gVpfI" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -118,7 +118,7 @@
       </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -133,7 +133,7 @@
       <concept id="411710798114972602" name="org.iets3.core.expr.base.structure.FailExpr" flags="ng" index="qoPdK">
         <child id="411710798114972606" name="message" index="qoPdO" />
       </concept>
-      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
@@ -143,7 +143,7 @@
         <child id="6541611649051509994" name="err" index="2izrR8" />
         <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
-      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
+      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ng" index="I61I7">
         <child id="867786408877811042" name="contract" index="I61D6" />
       </concept>
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
@@ -190,7 +190,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <reference id="2032654994493517823" name="scoper" index="2HwdWd" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
@@ -235,7 +234,7 @@
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
       </concept>
-      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ngI" index="S5Q1W">
+      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
         <child id="602952467877562565" name="members" index="S5Trm" />
       </concept>
       <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
@@ -272,7 +271,7 @@
       </concept>
       <concept id="4026566441521058530" name="org.iets3.core.expr.messages.structure.CoercionIt" flags="ng" index="1WJySU" />
       <concept id="4026566441518088795" name="org.iets3.core.expr.messages.structure.Group" flags="ng" index="1WOfU3" />
-      <concept id="4026566441518088787" name="org.iets3.core.expr.messages.structure.IMessageNamespace" flags="ngI" index="1WOfUb">
+      <concept id="4026566441518088787" name="org.iets3.core.expr.messages.structure.IMessageNamespace" flags="ng" index="1WOfUb">
         <child id="4026566441518088822" name="contents" index="1WOfUI" />
       </concept>
       <concept id="4026566441518088783" name="org.iets3.core.expr.messages.structure.MessageContainer" flags="ng" index="1WOfUn">
@@ -285,7 +284,6 @@
         <child id="4026566441518474145" name="args" index="1WPDXT" />
       </concept>
       <concept id="4026566441518284472" name="org.iets3.core.expr.messages.structure.MessageTarget" flags="ng" index="1WPo9w">
-        <property id="5299123466390648616" name="messageValue_DEPRECATED" index="MFfev" />
         <reference id="4026566441518284476" name="message" index="1WPo9$" />
         <child id="4026566441519855930" name="args" index="1WFony" />
       </concept>
@@ -308,7 +306,7 @@
       <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
         <child id="1172073511101" name="message" index="3_1BAH" />
       </concept>
-      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ngI" index="3_9gw8">
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ng" index="3_9gw8">
         <child id="1172075534298" name="message" index="3_9lra" />
       </concept>
     </language>
@@ -316,7 +314,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -344,17 +342,16 @@
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
     </language>
   </registry>
   <node concept="_iOnU" id="3vxfdxbrcas">
     <property role="TrG5h" value="messages" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <ref role="2HwdWd" node="1CNpG_h50DB" resolve="Data" />
     <node concept="1aga60" id="4AahbtV2zVo" role="_iOnB">
@@ -363,7 +360,6 @@
       <node concept="1aduha" id="4AahbtV2zZB" role="1ahQXP">
         <node concept="1QScDb" id="4AahbtV2$0Y" role="1aduh9">
           <node concept="1WPo9w" id="4AahbtV2$be" role="1QScD9">
-            <property role="MFfev" value="false" />
             <ref role="1WPo9$" node="3vxfdxbrKAj" resolve="m1" />
           </node>
           <node concept="1WPpZc" id="4AahbtV2$0v" role="30czhm">
@@ -424,7 +420,6 @@
               <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
             </node>
             <node concept="1WPo9w" id="4AahbtV2$bB" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="3vxfdxbrKAj" resolve="m1" />
             </node>
           </node>
@@ -448,7 +443,6 @@
               <node concept="NlJPO" id="4AahbtURxg3" role="1QScD9" />
               <node concept="1QScDb" id="4AahbtURx4f" role="30czhm">
                 <node concept="1WPo9w" id="4AahbtURx4g" role="1QScD9">
-                  <property role="MFfev" value="false" />
                   <ref role="1WPo9$" node="3vxfdxbrKAj" resolve="m1" />
                 </node>
                 <node concept="1WPpZc" id="4AahbtURx4h" role="30czhm">
@@ -467,7 +461,6 @@
           <node concept="NjiR8" id="7OtDX6qlCJ2" role="1QScD9" />
           <node concept="1QScDb" id="3vxfdxbs7eB" role="30czhm">
             <node concept="1WPo9w" id="3vxfdxbs7iJ" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="3vxfdxbrKAQ" resolve="m2" />
             </node>
             <node concept="1WPpZc" id="3vxfdxbs7eD" role="30czhm">
@@ -486,7 +479,6 @@
           <node concept="NjiR8" id="7OtDX6qlD1i" role="1QScD9" />
           <node concept="1QScDb" id="3vxfdxbs7f6" role="30czhm">
             <node concept="1WPo9w" id="3vxfdxbs7jj" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="3vxfdxbrKCL" resolve="m3" />
             </node>
             <node concept="1WPpZc" id="3vxfdxbs7f8" role="30czhm">
@@ -583,7 +575,6 @@
           <node concept="MxAYs" id="4AahbtV3fgs" role="1QScD9" />
           <node concept="1QScDb" id="4AahbtV3f1_" role="30czhm">
             <node concept="1WPo9w" id="4AahbtV3f1A" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="3vxfdxbthSx" resolve="m4" />
               <node concept="30bXRB" id="4AahbtV3f1B" role="1WFony">
                 <property role="30bXRw" value="42" />
@@ -621,7 +612,6 @@
             <node concept="MxAYs" id="4AahbtV85bD" role="1QScD9" />
             <node concept="1QScDb" id="4AahbtV85bE" role="30czhm">
               <node concept="1WPo9w" id="4AahbtV85bF" role="1QScD9">
-                <property role="MFfev" value="false" />
                 <ref role="1WPo9$" node="3vxfdxbthSx" resolve="m4" />
                 <node concept="30bXRB" id="4AahbtV85bG" role="1WFony">
                   <property role="30bXRw" value="42" />
@@ -649,7 +639,6 @@
           <node concept="NjiR8" id="4AahbtUNAHD" role="1QScD9" />
           <node concept="1QScDb" id="3vxfdxbtTgw" role="30czhm">
             <node concept="1WPo9w" id="3vxfdxbtTgx" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="3vxfdxbthSE" resolve="m5" />
               <node concept="30bXRB" id="3vxfdxbtTqq" role="1WFony">
                 <property role="30bXRw" value="33" />
@@ -897,7 +886,6 @@
         <node concept="InuEK" id="4AahbtVbbGs" role="I61D1">
           <node concept="1QScDb" id="4AahbtVRMRz" role="2izrR8">
             <node concept="1WPo9w" id="4AahbtVRNhJ" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="4AahbtVRLW6" resolve="xeey" />
               <node concept="XrbUJ" id="4AahbtVRNmn" role="1WFony">
                 <ref role="XrbUP" node="4AahbtVbbGn" resolve="x" />

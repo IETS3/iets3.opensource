@@ -36,7 +36,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -58,7 +57,7 @@
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -108,7 +107,6 @@
   <node concept="_iOnU" id="28$LOSAPZOM">
     <property role="TrG5h" value="TestsForDataTableGenerator" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="_ixoA" id="6wzrxL2Tkns" role="_iOnB" />
     <node concept="3CkkTf" id="6wzrxL2VwCV" role="_iOnB">
       <property role="TrG5h" value="Table" />

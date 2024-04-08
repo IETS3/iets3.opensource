@@ -23,7 +23,7 @@
       </concept>
       <concept id="8560722270289800014" name="org.iets3.core.expr.base.structure.PlusTag" flags="ng" index="zEY32" />
       <concept id="8560722270290706287" name="org.iets3.core.expr.base.structure.MulTag" flags="ng" index="zJzjz" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="8006404979729416973" name="org.iets3.core.expr.base.structure.OrTag" flags="ng" index="2BFbn_" />
@@ -49,7 +49,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -72,7 +71,7 @@
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -82,7 +81,6 @@
   </node>
   <node concept="_iOnU" id="6WstIz8wNvD">
     <property role="TrG5h" value="logicalgroups" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="2zPypq" id="6WstIz8Gbtx" role="_iOnB">
       <property role="TrG5h" value="one" />
@@ -342,7 +340,6 @@
   </node>
   <node concept="_iOnU" id="7rdMSLlrdN6">
     <property role="TrG5h" value="arithgroups" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="2zPypq" id="7rdMSLlrdN7" role="_iOnB">
       <property role="TrG5h" value="one" />
