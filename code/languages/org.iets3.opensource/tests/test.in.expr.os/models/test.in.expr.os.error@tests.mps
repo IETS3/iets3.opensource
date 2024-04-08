@@ -99,7 +99,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -173,7 +172,6 @@
   </registry>
   <node concept="_iOnU" id="7ZoBx3xgVRK">
     <property role="TrG5h" value="error" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="1WbbD7" id="4H6xI_iSglJ" role="_iOnB">
       <property role="TrG5h" value="attemptType" />

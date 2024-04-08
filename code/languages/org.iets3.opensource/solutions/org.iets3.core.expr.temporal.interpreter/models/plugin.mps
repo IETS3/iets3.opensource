@@ -231,7 +231,11 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -248,9 +252,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -442,8 +443,11 @@
                   <ref role="rqRob" to="l462:3rApyZ4E9We" resolve="value" />
                 </node>
                 <node concept="3EllGN" id="3rApyZ4ES0a" role="37vLTJ">
-                  <node concept="3TUQnm" id="3rApyZ4ETmY" role="3ElVtu">
-                    <ref role="3TV0OU" to="l462:3rApyZ4E9Wd" resolve="DefaultSliceValueExpr" />
+                  <node concept="2OqwBi" id="3Q$zA1CBJyh" role="3ElVtu">
+                    <node concept="35c_gC" id="3Q$zA1CBJiZ" role="2Oq$k0">
+                      <ref role="35c_gD" to="l462:3rApyZ4E9Wd" resolve="DefaultSliceValueExpr" />
+                    </node>
+                    <node concept="FGMqu" id="3Q$zA1CBJIW" role="2OqNvi" />
                   </node>
                   <node concept="TvHiN" id="3rApyZ4ERGf" role="3ElQJh" />
                 </node>
