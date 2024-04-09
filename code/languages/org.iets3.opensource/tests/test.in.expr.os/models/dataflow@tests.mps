@@ -2,7 +2,7 @@
 <model ref="r:d13efac1-a045-434f-8551-7b85e2be7d5e(test.in.expr.os.dataflow@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="0" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
@@ -11,10 +11,7 @@
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
     <devkit ref="ce1cf8e2-ad23-4a29-b20d-ca13a97e194f(org.iets3.core.expr.advanced.devkit)" />
   </languages>
-  <imports>
-    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
-    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
-  </imports>
+  <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
@@ -67,7 +64,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
     </language>
@@ -204,7 +200,6 @@
   </registry>
   <node concept="_iOnU" id="5I_8B5ugs0i">
     <property role="TrG5h" value="Examples" />
-    <property role="2SXJ1i" value="true" />
     <node concept="_ixoA" id="2nByCcxCZHA" role="_iOnB" />
     <node concept="_ixoA" id="2nByCcxD6kM" role="_iOnB" />
     <node concept="1aga60" id="2nByCcxCWbO" role="_iOnB">
@@ -4755,7 +4750,6 @@
   </node>
   <node concept="_iOnU" id="4qjJWfVq$ZE">
     <property role="TrG5h" value="BasicBlocks" />
-    <property role="2SXJ1i" value="true" />
     <node concept="1KScRn" id="4YhD5cZsw6X" role="_iOnB">
       <property role="TrG5h" value="plus" />
       <property role="1k_erx" value="+" />

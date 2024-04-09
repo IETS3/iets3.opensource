@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.core.expr.base.devkit" uuid="55137ade-7e38-4ce6-be99-a8537944b400">
+  <exported-language name="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" />
+  <exported-language name="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" />
+  <exported-language name="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" />
+  <exported-language name="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" />
+  <exported-language name="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" />
+  <exported-language name="7bcf9284-ca29-484f-a3b3-2855bdd813ad(org.iets3.core.expr.simpleTypes.tests)" />
+  <exported-language name="d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)" />
+  <exported-language name="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" />
+  <extendedDevKits>
+    <extendedDevKit>e234a1e7-550c-4730-a932-f9447090df76(org.iets3.core.expr.interpreter.devkit)</extendedDevKit>
+  </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>0495221f-9fd1-41d6-bf26-b3b8aeb7eb7b(org.iets3.core.expr.lambda.plugin)</exported-solution>
+    <exported-solution>cbb71b24-470d-4374-b77c-ebd0d3b3bb27(org.iets3.core.expr.plugin)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+
