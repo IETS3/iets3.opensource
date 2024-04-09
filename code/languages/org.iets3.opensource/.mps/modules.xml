@@ -66,6 +66,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.tracing/org.iets3.core.expr.tracing.mpl" folder="expr.tracing" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.typetags.bindingtime/org.iets3.core.expr.typetags.bindingtime.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.typetags.lib/org.iets3.core.expr.typetags.lib.mpl" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.typetags.physunits/org.iets3.core.expr.typetags.physunits.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.typetags.units.quantity/org.iets3.core.expr.typetags.units.quantity.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.typetags.units/org.iets3.core.expr.typetags.units.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.typetags/org.iets3.core.expr.typetags.mpl" folder="expr.lang-advanced" />
@@ -129,6 +130,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.toplevel.interpreter/org.iets3.core.expr.toplevel.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.tracing.plugin/org.iets3.core.expr.tracing.plugin.msd" folder="expr.tracing" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.lib.interpreter/org.iets3.core.expr.typetags.lib.interpreter.msd" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.physunits.documentation/org.iets3.core.expr.typetags.physunits.documentation.msd" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.phyunits.si/org.iets3.core.expr.typetags.phyunits.si.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.units.interpreter/org.iets3.core.expr.typetags.units.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.units.si/org.iets3.core.expr.typetags.units.si.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.util.interpreter/org.iets3.core.expr.util.interpreter.msd" folder="expr.lang-advanced" />

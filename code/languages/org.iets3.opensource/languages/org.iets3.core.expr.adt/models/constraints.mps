@@ -159,9 +159,6 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -203,9 +200,9 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="5a_u3OzPSQZ" role="2OqNvi">
-                    <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                    <node concept="3TUQnm" id="5a_u3OzPSR0" role="37wK5m">
-                      <ref role="3TV0OU" to="v0r8:5a_u3OyMtco" resolve="AlgebraicDeclaration" />
+                    <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                    <node concept="35c_gC" id="3Q$zA1C_wYF" role="37wK5m">
+                      <ref role="35c_gD" to="v0r8:5a_u3OyMtco" resolve="AlgebraicDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -267,9 +264,9 @@
                             </node>
                           </node>
                           <node concept="2qgKlT" id="5a_u3OzPYSQ" role="2OqNvi">
-                            <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                            <node concept="3TUQnm" id="5a_u3OzPYSR" role="37wK5m">
-                              <ref role="3TV0OU" to="v0r8:5a_u3OyMtco" resolve="AlgebraicDeclaration" />
+                            <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                            <node concept="35c_gC" id="3Q$zA1C_t7V" role="37wK5m">
+                              <ref role="35c_gD" to="v0r8:5a_u3OyMtco" resolve="AlgebraicDeclaration" />
                             </node>
                           </node>
                         </node>
@@ -332,9 +329,9 @@
                               </node>
                             </node>
                             <node concept="2qgKlT" id="5a_u3OzPVj3" role="2OqNvi">
-                              <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                              <node concept="3TUQnm" id="5a_u3OzPVj4" role="37wK5m">
-                                <ref role="3TV0OU" to="v0r8:5a_u3OyMtco" resolve="AlgebraicDeclaration" />
+                              <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                              <node concept="35c_gC" id="3Q$zA1C_twQ" role="37wK5m">
+                                <ref role="35c_gD" to="v0r8:5a_u3OyMtco" resolve="AlgebraicDeclaration" />
                               </node>
                             </node>
                           </node>
