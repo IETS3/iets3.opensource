@@ -150,7 +150,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -349,7 +348,6 @@
   <node concept="_iOnU" id="5a_u3OyP53I">
     <property role="TrG5h" value="algebraic" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="1KraG_" id="5a_u3OyMFHu" role="_iOnB">
       <property role="TrG5h" value="Exp" />
       <node concept="1KraX1" id="5a_u3OyMFHz" role="1KraX0">
@@ -1268,7 +1266,6 @@
   <node concept="_iOnU" id="28$LOSAPZOM">
     <property role="TrG5h" value="algebraicQuoting" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="1KraG_" id="28$LOSAPZON" role="_iOnB">
       <property role="TrG5h" value="Exp" />
       <node concept="1KraX1" id="28$LOSAPZOO" role="1KraX0">
@@ -1469,7 +1466,6 @@
   <node concept="_iOnU" id="28$LOSAdrbI">
     <property role="TrG5h" value="algebraicTrafo" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="1KraG_" id="28$LOSAdrbJ" role="_iOnB">
       <property role="TrG5h" value="Exp" />
       <node concept="1KraX1" id="28$LOSAdrbK" role="1KraX0">

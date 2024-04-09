@@ -126,7 +126,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -865,7 +864,6 @@
   </node>
   <node concept="_iOnU" id="5jYrMSmCNyr">
     <property role="TrG5h" value="base2" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="1Ws0TD" id="3PrmTp6egdk" role="_iOnB">
       <property role="1WsWdv" value="expr.base tests which are not supported by c++ interpreter" />
@@ -1118,7 +1116,6 @@
   <node concept="_iOnU" id="3MHhZL0BptG">
     <property role="TrG5h" value="binary" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="_fkuM" id="1MPB7epHrgD" role="_iOnB">
       <property role="TrG5h" value="logic" />
       <node concept="_fkuZ" id="1MPB7epMJ17" role="_fkp5">
@@ -2139,7 +2136,6 @@
   </node>
   <node concept="_iOnU" id="6HHp2WmT$Y1">
     <property role="TrG5h" value="logic" />
-    <property role="2SXJ1i" value="true" />
     <node concept="_fkuM" id="6HHp2WmT$Y2" role="_iOnB">
       <property role="TrG5h" value="logic" />
       <node concept="_fkuZ" id="6HHp2WmUY1S" role="_fkp5">
