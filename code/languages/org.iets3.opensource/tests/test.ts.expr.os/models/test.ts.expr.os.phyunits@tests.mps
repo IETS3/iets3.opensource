@@ -38,6 +38,7 @@
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" />
     <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)" />
     <import index="65nr" ref="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -64,7 +65,7 @@
         <reference id="5449224527592117654" name="checkingReference" index="1BTHP0" />
         <child id="3655334166513314307" name="nodes" index="3KTr4d" />
       </concept>
-      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ngI" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
       <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr">
@@ -98,7 +99,7 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="7ee265bd-5986-4709-86ed-2c6daa33cd8c" name="org.iets3.core.expr.typetags.physunits">
-      <concept id="7387055326543332204" name="org.iets3.core.expr.typetags.physunits.structure.IHaveIUnitSpecification" flags="ng" index="4gtj2">
+      <concept id="7387055326543332204" name="org.iets3.core.expr.typetags.physunits.structure.IHaveIUnitSpecification" flags="ngI" index="4gtj2">
         <child id="7387055326543333921" name="specification" index="4gtQf" />
       </concept>
       <concept id="1741902046311368052" name="org.iets3.core.expr.typetags.physunits.structure.ConversionSpecifier" flags="ng" index="27LzZq">
@@ -244,7 +245,7 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -294,7 +295,7 @@
       <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
         <child id="1160998896846" name="condition" index="1gVkn0" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -310,7 +311,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -333,7 +334,7 @@
       </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
+      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ngI" index="pfQq$">
         <child id="229512757698888936" name="optionalName" index="pfQ1b" />
       </concept>
       <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
@@ -357,7 +358,7 @@
       <concept id="7089558164910719190" name="org.iets3.core.expr.base.structure.SuccessValueExpr" flags="ng" index="2zAAH0">
         <reference id="7089558164910719191" name="try" index="2zAAH1" />
       </concept>
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV">
@@ -521,7 +522,7 @@
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
       <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
@@ -620,7 +621,7 @@
       <concept id="1759375669591494838" name="org.iets3.core.expr.typetags.structure.TaggedType" flags="ng" index="2c7tTJ">
         <child id="1759375669591494841" name="baseType" index="2c7tTw" />
       </concept>
-      <concept id="8196347919645043518" name="org.iets3.core.expr.typetags.structure.IWithTags" flags="ng" index="3ciMKZ">
+      <concept id="8196347919645043518" name="org.iets3.core.expr.typetags.structure.IWithTags" flags="ngI" index="3ciMKZ">
         <child id="1759375669591494839" name="tags" index="2c7tTI" />
       </concept>
       <concept id="3359996257534647723" name="org.iets3.core.expr.typetags.structure.TaggedExpression" flags="ng" index="1YnStw">
@@ -640,7 +641,7 @@
       <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
         <child id="1172073511101" name="message" index="3_1BAH" />
       </concept>
-      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ng" index="3_9gw8">
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ngI" index="3_9gw8">
         <child id="1172075534298" name="message" index="3_9lra" />
       </concept>
     </language>
@@ -680,6 +681,9 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="3648723375513868532" name="jetbrains.mps.lang.smodel.structure.NodePointer_ResolveOperation" flags="ng" index="Vyspw" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -707,7 +711,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -722,11 +726,11 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
@@ -736,7 +740,7 @@
         <child id="7554398283340318471" name="args" index="3ix9CL" />
       </concept>
       <concept id="7554398283340318478" name="org.iets3.core.expr.lambda.structure.LambdaArg" flags="ng" index="3ix9CS" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
     </language>
@@ -9574,6 +9578,22 @@
       <property role="TrG5h" value="assertUnitTypeMatches" />
       <node concept="3cqZAl" id="EsE2hyiLtJ" role="3clF45" />
       <node concept="3clFbS" id="EsE2hyiLq5" role="3clF47">
+        <node concept="3cpWs8" id="5RtoZfdcsqf" role="3cqZAp">
+          <node concept="3cpWsn" id="5RtoZfdcsqg" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="5RtoZfdcsgP" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="5RtoZfdcsqh" role="33vP2m">
+              <node concept="2JrnkZ" id="5RtoZfdcsqi" role="2Oq$k0">
+                <node concept="1jGwE1" id="5RtoZfdcsqj" role="2JrQYb" />
+              </node>
+              <node concept="liA8E" id="5RtoZfdcsqk" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3vlDli" id="EsE2hyiLvL" role="3cqZAp">
           <node concept="2OqwBi" id="EsE2hyj3Xm" role="3tpDZB">
             <node concept="1PxgMI" id="EsE2hyj3Jk" role="2Oq$k0">
@@ -9587,11 +9607,8 @@
                     <ref role="3cqZAo" node="EsE2hyiLuy" resolve="unit" />
                   </node>
                   <node concept="Vyspw" id="EsE2hyiLKN" role="2OqNvi">
-                    <node concept="2OqwBi" id="EsE2hyiLUi" role="Vysub">
-                      <node concept="1jGwE1" id="EsE2hyiLL6" role="2Oq$k0" />
-                      <node concept="liA8E" id="EsE2hyiM2a" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
-                      </node>
+                    <node concept="37vLTw" id="5RtoZfdcsql" role="Vysub">
+                      <ref role="3cqZAo" node="5RtoZfdcsqg" resolve="repository" />
                     </node>
                   </node>
                 </node>
@@ -9607,11 +9624,8 @@
               <ref role="3cqZAo" node="EsE2hyiLuE" resolve="quantity" />
             </node>
             <node concept="Vyspw" id="EsE2hyiM5c" role="2OqNvi">
-              <node concept="2OqwBi" id="EsE2hyiM7h" role="Vysub">
-                <node concept="1jGwE1" id="EsE2hyiM5Z" role="2Oq$k0" />
-                <node concept="liA8E" id="EsE2hyiM9l" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
-                </node>
+              <node concept="37vLTw" id="5RtoZfdcsvw" role="Vysub">
+                <ref role="3cqZAo" node="5RtoZfdcsqg" resolve="repo" />
               </node>
             </node>
           </node>
@@ -9643,9 +9657,11 @@
               </node>
               <node concept="Vyspw" id="EsE2hyjYE6" role="2OqNvi">
                 <node concept="2OqwBi" id="EsE2hyjYO7" role="Vysub">
-                  <node concept="1jGwE1" id="EsE2hyjYEL" role="2Oq$k0" />
                   <node concept="liA8E" id="EsE2hyjYW9" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                  </node>
+                  <node concept="2JrnkZ" id="5RtoZfdcsku" role="2Oq$k0">
+                    <node concept="1jGwE1" id="5RtoZfdcskv" role="2JrQYb" />
                   </node>
                 </node>
               </node>
