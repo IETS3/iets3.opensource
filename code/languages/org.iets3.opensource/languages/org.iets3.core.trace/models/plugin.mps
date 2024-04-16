@@ -1031,7 +1031,7 @@
                           <ref role="3cqZAo" node="6_Ift$_DjDD" resolve="results" />
                         </node>
                         <node concept="liA8E" id="6_Ift$_DjDM" role="2OqNvi">
-                          <ref role="37wK5l" to="g4jo:J2bOg02Hc_" resolve="getSearchResults" />
+                          <ref role="37wK5l" to="g4jo:4mN_90IMjqo" resolve="getSearchResults2" />
                         </node>
                       </node>
                       <node concept="liA8E" id="6_Ift$_DjDN" role="2OqNvi">

@@ -478,6 +478,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -486,6 +487,9 @@
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -515,9 +519,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
@@ -1775,11 +1776,14 @@
                       <ref role="37wK5l" to="vj5k:3IFXLmiudY7" resolve="setProperty" />
                       <node concept="2OqwBi" id="3IFXLmixSmq" role="37wK5m">
                         <node concept="2OqwBi" id="3IFXLmixQQW" role="2Oq$k0">
-                          <node concept="3TUQnm" id="3IFXLmixQKj" role="2Oq$k0">
-                            <ref role="3TV0OU" to="kfo3:1mPSRGtN8X5" resolve="TreeGroup" />
-                          </node>
                           <node concept="3Tsc0h" id="3IFXLmixR0w" role="2OqNvi">
                             <ref role="3TtcxE" to="tpce:f_TKVDG" resolve="propertyDeclaration" />
+                          </node>
+                          <node concept="2OqwBi" id="GJLa3ql_Ts" role="2Oq$k0">
+                            <node concept="35c_gC" id="GJLa3ql_Tt" role="2Oq$k0">
+                              <ref role="35c_gD" to="kfo3:1mPSRGtN8X5" resolve="TreeGroup" />
+                            </node>
+                            <node concept="FGMqu" id="GJLa3ql_Tu" role="2OqNvi" />
                           </node>
                         </node>
                         <node concept="1z4cxt" id="3IFXLmixUbx" role="2OqNvi">
