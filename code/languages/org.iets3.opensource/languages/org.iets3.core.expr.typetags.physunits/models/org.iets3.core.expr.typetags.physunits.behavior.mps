@@ -39,6 +39,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="65nr" ref="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
@@ -19872,6 +19873,25 @@
       <node concept="3Tqbb2" id="4RImAbipxgT" role="3clF45">
         <ref role="ehGHo" to="i3ya:4RImAbi2k39" resolve="DimensionExpression" />
       </node>
+    </node>
+    <node concept="13i0hz" id="38e9cZjVPzg" role="13h7CS">
+      <property role="TrG5h" value="getDetailedPresentation" />
+      <ref role="13i0hy" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
+      <node concept="3Tm1VV" id="38e9cZjVPzh" role="1B3o_S" />
+      <node concept="3clFbS" id="38e9cZjVPzo" role="3clF47">
+        <node concept="3clFbF" id="HeBpFYtYU" role="3cqZAp">
+          <node concept="2OqwBi" id="HeBpFYtYW" role="3clFbG">
+            <node concept="2YIFZM" id="HeBpFYtYX" role="2Oq$k0">
+              <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+              <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+            </node>
+            <node concept="liA8E" id="HeBpFYtYY" role="2OqNvi">
+              <ref role="37wK5l" to="65nr:HeBpFYujS" resolve="getNoDimensionSpecifier" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="38e9cZjVPzp" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="u36xDg6aUz">
