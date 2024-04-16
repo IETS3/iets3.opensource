@@ -36,14 +36,14 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="fulz" ref="r:6f792c44-2a5d-40e8-9f05-33f7d4ae26ec(jetbrains.mps.editor.runtime.completion)" implicit="true" />
     <import index="av1m" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.style(MPS.Editor/)" implicit="true" />
     <import index="w1hl" ref="r:04b74a30-84ff-4d44-89e3-8084278f9c79(org.iets3.core.expr.typetags.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -2976,18 +2976,25 @@
     <property role="3GE5qa" value="group" />
     <ref role="aqKnT" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
     <node concept="22hDWj" id="73cP8Dpotd3" role="22hAXT" />
-    <node concept="3VyMlK" id="73cP8DprhZz" role="3ft7WO" />
-    <node concept="3N5dw7" id="73cP8DpotfV" role="3ft7WO">
-      <node concept="3N5aqt" id="73cP8DpotfW" role="3Na0zg">
-        <node concept="3clFbS" id="73cP8DpotfX" role="2VODD2">
-          <node concept="3clFbF" id="73cP8Dpot$O" role="3cqZAp">
-            <node concept="2pJPEk" id="73cP8Dpot$M" role="3clFbG">
-              <node concept="2pJPED" id="73cP8Dpot$N" role="2pJPEn">
-                <ref role="2pJxaS" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
-                <node concept="2pIpSj" id="73cP8DpotMo" role="2pJxcM">
-                  <ref role="2pIpSl" to="i3ya:7athFveyQy5" resolve="specification" />
-                  <node concept="36biLy" id="73cP8DpotPm" role="28nt2d">
-                    <node concept="3N4pyC" id="73cP8DpotVe" role="36biLW" />
+    <node concept="2F$Pav" id="38e9cZjSv9E" role="3ft7WO">
+      <node concept="3eGOop" id="38e9cZjSvdm" role="2$S_pN">
+        <node concept="ucgPf" id="38e9cZjSvdo" role="3aKz83">
+          <node concept="3clFbS" id="38e9cZjSvdq" role="2VODD2">
+            <node concept="3clFbF" id="38e9cZjSwNE" role="3cqZAp">
+              <node concept="2pJPEk" id="38e9cZjSwNF" role="3clFbG">
+                <node concept="2pJPED" id="38e9cZjSwNG" role="2pJPEn">
+                  <ref role="2pJxaS" to="i3ya:7athFveyQjs" resolve="QuantitySpecification" />
+                  <node concept="2pIpSj" id="38e9cZjSwNH" role="2pJxcM">
+                    <ref role="2pIpSl" to="i3ya:7athFveyQy5" resolve="specification" />
+                    <node concept="2pJPED" id="38e9cZjSx2I" role="28nt2d">
+                      <ref role="2pJxaS" to="i3ya:7athFveyQYz" resolve="QuantityReference" />
+                      <node concept="2pIpSj" id="38e9cZjSx55" role="2pJxcM">
+                        <ref role="2pIpSl" to="i3ya:7athFveyRoc" resolve="quantity" />
+                        <node concept="36biLy" id="38e9cZjSxbc" role="28nt2d">
+                          <node concept="2ZBlsa" id="38e9cZjSxgz" role="36biLW" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2995,8 +3002,40 @@
           </node>
         </node>
       </node>
-      <node concept="2kknPJ" id="73cP8Dpotki" role="2klrvf">
-        <ref role="2ZyFGn" to="i3ya:7athFveyQYz" resolve="QuantityReference" />
+      <node concept="3Tqbb2" id="38e9cZjSwsp" role="2ZBHrp">
+        <ref role="ehGHo" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+      </node>
+      <node concept="2$S_p_" id="38e9cZjSvh_" role="2$S_pT">
+        <node concept="3clFbS" id="38e9cZjSvhA" role="2VODD2">
+          <node concept="3clFbF" id="38e9cZjSwi6" role="3cqZAp">
+            <node concept="2OqwBi" id="38e9cZjSxNl" role="3clFbG">
+              <node concept="2OqwBi" id="38e9cZjSvm6" role="2Oq$k0">
+                <node concept="2OqwBi" id="38e9cZjSvm7" role="2Oq$k0">
+                  <node concept="2Xjw5R" id="38e9cZjSvm8" role="2OqNvi">
+                    <node concept="1xMEDy" id="38e9cZjSvm9" role="1xVPHs">
+                      <node concept="chp4Y" id="38e9cZjSvma" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="38e9cZjSw8s" role="1xVPHs" />
+                  </node>
+                  <node concept="3bvxqY" id="38e9cZjSw2n" role="2Oq$k0" />
+                </node>
+                <node concept="2qgKlT" id="38e9cZjSvmb" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                  <node concept="35c_gC" id="3Q$zA1CCWRN" role="37wK5m">
+                    <ref role="35c_gD" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="38e9cZjSy5W" role="2OqNvi">
+                <node concept="chp4Y" id="38e9cZjSybi" role="v3oSu">
+                  <ref role="cht4Q" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
