@@ -355,6 +355,9 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1188811367543" name="jetbrains.mps.lang.typesystem.structure.ComparisonRule" flags="ig" index="3aFulz">
+        <child id="1188820750135" name="anotherNode" index="3bfgSz" />
+      </concept>
       <concept id="1236083041311" name="jetbrains.mps.lang.typesystem.structure.OverloadedOperatorTypeRule" flags="ng" index="3ciAk0">
         <property id="1236771585835" name="rightIsExact" index="3PlbSO" />
         <child id="1236083115043" name="leftOperandType" index="3ciSkW" />
@@ -416,6 +419,7 @@
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
+      <concept id="1174663314467" name="jetbrains.mps.lang.typesystem.structure.CreateComparableEquationStatement" flags="nn" index="1ZoVOM" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
@@ -8341,15 +8345,15 @@
                   <node concept="3clFbS" id="2hjX6q5lA5L" role="9aQI4">
                     <node concept="nvevp" id="7Bmg9OopViB" role="3cqZAp">
                       <node concept="3clFbS" id="7Bmg9OopViD" role="nvhr_">
-                        <node concept="1Z5TYs" id="7Bmg9OopYaT" role="3cqZAp">
+                        <node concept="1ZoVOM" id="38e9cZjZ_Th" role="3cqZAp">
                           <property role="3wDh2S" value="true" />
-                          <node concept="mw_s8" id="7Bmg9OopYaV" role="1ZfhK$">
-                            <node concept="2X3wrD" id="7Bmg9OopYaW" role="mwGJk">
+                          <node concept="mw_s8" id="38e9cZjZ_Tj" role="1ZfhK$">
+                            <node concept="2X3wrD" id="38e9cZjZ_Tk" role="mwGJk">
                               <ref role="2X3Bk0" node="7Bmg9OopVDI" resolve="dimT" />
                             </node>
                           </node>
-                          <node concept="mw_s8" id="3mrPY3bLuHW" role="1ZfhKB">
-                            <node concept="2X3wrD" id="3mrPY3bLuHU" role="mwGJk">
+                          <node concept="mw_s8" id="38e9cZjZ_Tl" role="1ZfhKB">
+                            <node concept="2X3wrD" id="38e9cZjZ_Tm" role="mwGJk">
                               <ref role="2X3Bk0" node="7Bmg9OopViH" resolve="specT" />
                             </node>
                           </node>
@@ -10493,6 +10497,25 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3aFulz" id="38e9cZk0Abi">
+    <property role="3GE5qa" value="definition.unit" />
+    <property role="TrG5h" value="compare_QuantityEmptyType_QuantityBaseType" />
+    <node concept="1YaCAy" id="38e9cZk0Awl" role="3bfgSz">
+      <property role="TrG5h" value="quantityBaseType" />
+      <ref role="1YaFvo" to="i3ya:45a4DYZrLy8" resolve="QuantityBaseType" />
+    </node>
+    <node concept="3clFbS" id="38e9cZk0Abk" role="2sgrp5">
+      <node concept="3clFbF" id="38e9cZk0Baj" role="3cqZAp">
+        <node concept="3clFbT" id="38e9cZk0Bai" role="3clFbG">
+          <property role="3clFbU" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="38e9cZk0Avv" role="1YuTPh">
+      <property role="TrG5h" value="quantityEmptyType" />
+      <ref role="1YaFvo" to="i3ya:45a4DYZtiVD" resolve="QuantityEmptyType" />
     </node>
   </node>
 </model>
