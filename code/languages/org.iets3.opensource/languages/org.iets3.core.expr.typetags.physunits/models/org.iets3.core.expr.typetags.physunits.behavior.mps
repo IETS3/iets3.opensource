@@ -18830,16 +18830,19 @@
               <node concept="2HwmR7" id="6RONOaU4vFh" role="2OqNvi">
                 <node concept="1bVj0M" id="6RONOaU4vFi" role="23t8la">
                   <node concept="3clFbS" id="6RONOaU4vFj" role="1bW5cS">
-                    <node concept="3clFbF" id="6RONOaU4vFk" role="3cqZAp">
-                      <node concept="17R0WA" id="6RONOaU4vFl" role="3clFbG">
-                        <node concept="2OqwBi" id="6RONOaU4vFm" role="3uHU7B">
-                          <node concept="37vLTw" id="6RONOaU4vFn" role="2Oq$k0">
+                    <node concept="3clFbF" id="38e9cZkc4b0" role="3cqZAp">
+                      <node concept="2OqwBi" id="38e9cZkc7x_" role="3clFbG">
+                        <node concept="2OqwBi" id="38e9cZkc5j2" role="2Oq$k0">
+                          <node concept="37vLTw" id="38e9cZkc4aY" role="2Oq$k0">
                             <ref role="3cqZAo" node="6RONOaU4vFq" resolve="it" />
                           </node>
-                          <node concept="3AY5_j" id="6RONOaU4vFo" role="2OqNvi" />
+                          <node concept="3AY5_j" id="38e9cZkc6hj" role="2OqNvi" />
                         </node>
-                        <node concept="37vLTw" id="6RONOaU4vFp" role="3uHU7w">
-                          <ref role="3cqZAo" node="6RONOaU4vF6" resolve="prefix" />
+                        <node concept="liA8E" id="38e9cZkc8WO" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
+                          <node concept="37vLTw" id="38e9cZkc9_c" role="37wK5m">
+                            <ref role="3cqZAo" node="6RONOaU4vF6" resolve="prefix" />
+                          </node>
                         </node>
                       </node>
                     </node>
