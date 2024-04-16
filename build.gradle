@@ -83,7 +83,7 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     if (ciBuild) {
         currentBranch = GitBasedVersioning.gitBranch
 
-        def buildNumber = System.env.BUILD_NUMBER.toInteger()
+        def buildNumber = System.env.BUILD_COUNTER.toInteger()
         if (currentBranch.startsWith("maintenance-")) {
             version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
         } else {
