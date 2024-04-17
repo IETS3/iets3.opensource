@@ -926,14 +926,14 @@
     </node>
     <node concept="2tJIrI" id="HeBpFYu7E" role="jymVt" />
     <node concept="3clFb_" id="HeBpFYujS" role="jymVt">
-      <property role="TrG5h" value="getNoDimensionSpecifier" />
+      <property role="TrG5h" value="getUnspecifiedQuantifierSpecifier" />
       <node concept="3clFbS" id="HeBpFYujV" role="3clF47" />
       <node concept="3Tm1VV" id="HeBpFYujW" role="1B3o_S" />
       <node concept="17QB3L" id="HeBpFYuez" role="3clF45" />
       <node concept="P$JXv" id="HeBpG2ay3" role="lGtFl">
         <node concept="TZ5HA" id="HeBpG2ay4" role="TZ5H$">
           <node concept="1dT_AC" id="HeBpG2ay5" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the name used for the dimensionless dimension in the UI." />
+            <property role="1dT_AB" value="Returns the name used for the unspecified dimension in the UI." />
           </node>
         </node>
       </node>
@@ -1079,13 +1079,13 @@
     </node>
     <node concept="2tJIrI" id="HeBpFZ7mJ" role="jymVt" />
     <node concept="3clFb_" id="HeBpFYuDY" role="jymVt">
-      <property role="TrG5h" value="getNoDimensionSpecifier" />
+      <property role="TrG5h" value="getUnspecifiedQuantifierSpecifier" />
       <node concept="3Tm1VV" id="HeBpFYuE0" role="1B3o_S" />
       <node concept="17QB3L" id="HeBpFYuE1" role="3clF45" />
       <node concept="3clFbS" id="HeBpFYuE2" role="3clF47">
         <node concept="3clFbF" id="HeBpFYuE5" role="3cqZAp">
           <node concept="Xl_RD" id="HeBpFYuE4" role="3clFbG">
-            <property role="Xl_RC" value="dimensionless" />
+            <property role="Xl_RC" value="unspecified quantity" />
           </node>
         </node>
       </node>

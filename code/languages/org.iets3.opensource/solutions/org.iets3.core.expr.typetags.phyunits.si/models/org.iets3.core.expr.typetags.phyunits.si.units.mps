@@ -165,12 +165,9 @@
       </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWi" role="_iOnB">
-      <property role="TrG5h" value="dimensionless" />
+      <property role="TrG5h" value="unspecified quantity" />
       <property role="1xQvps" value="false" />
       <property role="2DB2h4" value="N" />
-      <node concept="2vTMtG" id="4RImAbijclJ" role="2vTSSq">
-        <property role="TrG5h" value="1" />
-      </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWj" role="_iOnB">
       <property role="TrG5h" value="length" />
