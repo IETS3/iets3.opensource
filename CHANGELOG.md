@@ -11,6 +11,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The unnecessary super types of the tuple type were removed and are not necessary anymore.
 
+### Fixed
+
+- Enum literals now can be compared for equality in the generator.
+
 ### Changed
 
 - `ComponentKind#canbeContent(conceptNode<>)` was deprecated in favour of `ComponentKind#canbeContent(concept<>)` 
