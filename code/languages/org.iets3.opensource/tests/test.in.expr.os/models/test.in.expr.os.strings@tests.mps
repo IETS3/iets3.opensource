@@ -2,7 +2,7 @@
 <model ref="r:88f22b8b-30cf-42e2-ae08-ddc85066a7b8(test.in.expr.os.strings@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <devkit ref="ec967770-4707-442f-baaf-a8b7bb554717(org.iets3.core.expr.genall.core.devkit)" />
@@ -80,7 +80,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -137,7 +136,6 @@
   </registry>
   <node concept="_iOnU" id="1EIbarKa15w">
     <property role="TrG5h" value="strings" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="2zPypq" id="ucawTYEC8j" role="_iOnB">
       <property role="TrG5h" value="s" />
@@ -1089,7 +1087,6 @@
   </node>
   <node concept="_iOnU" id="60Qa1k_r0P5">
     <property role="TrG5h" value="stringsDefaultValues" />
-    <property role="2SXJ1i" value="true" />
     <node concept="_ixoA" id="60Qa1k_Hz8D" role="_iOnB" />
     <node concept="_fkuM" id="60Qa1k_r2ku" role="_iOnB">
       <property role="TrG5h" value="TestDefaultValues" />
