@@ -1582,6 +1582,44 @@
       </node>
     </node>
     <node concept="_ixoA" id="14aBVbNt3gd" role="_iOnB" />
+    <node concept="CIrOH" id="1a2DxsCM1DB" role="_iOnB">
+      <property role="TrG5h" value="ton" />
+      <ref role="Rn5ok" node="3xM68GMigWn" resolve="mass" />
+    </node>
+    <node concept="_ixoA" id="1a2DxsCKgwW" role="_iOnB" />
+    <node concept="TRoc0" id="1a2DxsCOnE1" role="_iOnB">
+      <node concept="27LzZq" id="1a2DxsCOnE3" role="27P04L">
+        <node concept="30dDTi" id="1a2DxsCPygz" role="27K$mF">
+          <node concept="2m5Cep" id="1a2DxsCPyga" role="30dEsF" />
+          <node concept="30bXRB" id="1a2DxsCPypX" role="30dEs_">
+            <property role="30bXRw" value="1000000" />
+          </node>
+        </node>
+      </node>
+      <node concept="CIsvn" id="1a2DxsCOXog" role="2vOZTa">
+        <ref role="CIi3I" node="1a2DxsCM1DB" resolve="ton" />
+      </node>
+      <node concept="CIsvn" id="1a2DxsCOXos" role="2vOYbH">
+        <ref role="CIi3I" node="6EvkZrOLErr" resolve="g" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="1a2DxsCPytP" role="_iOnB" />
+    <node concept="TRoc0" id="1a2DxsCQHUn" role="_iOnB">
+      <node concept="27LzZq" id="1a2DxsCQHUp" role="27P04L">
+        <node concept="30dvO6" id="1a2DxsCRSwF" role="27K$mF">
+          <node concept="2m5Cep" id="1a2DxsCRSwf" role="30dEsF" />
+          <node concept="30bXRB" id="1a2DxsCRSx8" role="30dEs_">
+            <property role="30bXRw" value="1000000" />
+          </node>
+        </node>
+      </node>
+      <node concept="CIsvn" id="1a2DxsCRjCo" role="2vOZTa">
+        <ref role="CIi3I" node="6EvkZrOLErr" resolve="g" />
+      </node>
+      <node concept="CIsvn" id="1a2DxsCRjCc" role="2vOYbH">
+        <ref role="CIi3I" node="1a2DxsCM1DB" resolve="ton" />
+      </node>
+    </node>
     <node concept="_ixoA" id="6EvkZrONBIh" role="_iOnB" />
     <node concept="1Ws0TD" id="3xM68GMigYK" role="_iOnB">
       <property role="1WsWdv" value="Derived units with special names" />
