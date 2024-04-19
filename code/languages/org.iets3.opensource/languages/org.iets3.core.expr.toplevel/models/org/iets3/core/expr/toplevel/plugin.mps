@@ -179,7 +179,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -2735,13 +2734,8 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5k9pVzGSGdu" role="3cqZAp">
-          <node concept="3nyPlj" id="5k9pVzGSGdt" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
-            <node concept="37vLTw" id="5k9pVzGSGds" role="37wK5m">
-              <ref role="3cqZAo" node="5k9pVzGSGdo" resolve="obj" />
-            </node>
-          </node>
+        <node concept="3cpWs6" id="7LJfRMDRrea" role="3cqZAp">
+          <node concept="3clFbT" id="7LJfRMDRrKp" role="3cqZAk" />
         </node>
       </node>
       <node concept="2AHcQZ" id="5k9pVzGSGdr" role="2AJF6D">
