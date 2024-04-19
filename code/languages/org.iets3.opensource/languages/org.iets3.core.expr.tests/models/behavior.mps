@@ -9567,9 +9567,9 @@
     <property role="3GE5qa" value="vector" />
     <ref role="13h7C2" to="av4b:1bwJEEfQxC8" resolve="TestSubjectAdapter" />
     <node concept="13i0hz" id="1bwJEEeSLhl" role="13h7CS">
-      <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="arguments" />
+      <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="1bwJEEeSLhm" role="1B3o_S" />
       <node concept="2I9FWS" id="1bwJEEeSUiU" role="3clF45">
         <ref role="2I9WkF" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -10286,15 +10286,14 @@
               <node concept="3cpWsn" id="1vJWYavhKZL" role="3cpWs9">
                 <property role="TrG5h" value="matches" />
                 <node concept="10P_77" id="1vJWYavhKZA" role="1tU5fm" />
-                <node concept="2OqwBi" id="1vJWYavhKZM" role="33vP2m">
-                  <node concept="37vLTw" id="1vJWYavhKZN" role="2Oq$k0">
+                <node concept="2YIFZM" id="5k9pVzGTXKW" role="33vP2m">
+                  <ref role="37wK5l" to="dj6k:1EZBwZ4muLD" resolve="equals" />
+                  <ref role="1Pybhc" to="dj6k:1EZBwZ4mn8E" resolve="EqualsHelper" />
+                  <node concept="37vLTw" id="5k9pVzGTYtJ" role="37wK5m">
                     <ref role="3cqZAo" node="1vJWYavhGRk" resolve="expValue" />
                   </node>
-                  <node concept="liA8E" id="1vJWYavhKZO" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
-                    <node concept="37vLTw" id="1vJWYavhKZP" role="37wK5m">
-                      <ref role="3cqZAo" node="4945UtSiwdl" resolve="actualVal" />
-                    </node>
+                  <node concept="37vLTw" id="5k9pVzGTZTr" role="37wK5m">
+                    <ref role="3cqZAo" node="4945UtSiwdl" resolve="actualVal" />
                   </node>
                 </node>
               </node>
