@@ -8338,6 +8338,29 @@
           </node>
           <node concept="3clFbJ" id="7Bmg9OopSPc" role="3cqZAp">
             <node concept="3clFbS" id="7Bmg9OopSPe" role="3clFbx">
+              <node concept="3clFbJ" id="7MLRw0I7aQ9" role="3cqZAp">
+                <node concept="3clFbS" id="7MLRw0I7aQb" role="3clFbx">
+                  <node concept="2MkqsV" id="7MLRw0I7dzv" role="3cqZAp">
+                    <node concept="Xl_RD" id="7MLRw0I7dAA" role="2MkJ7o">
+                      <property role="Xl_RC" value="A derived unit must have a specification" />
+                    </node>
+                    <node concept="1YBJjd" id="7MLRw0I7e2c" role="1urrMF">
+                      <ref role="1YBMHb" node="7DmLSRHe$1t" resolve="unit" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7MLRw0I7cQt" role="3clFbw">
+                  <node concept="2OqwBi" id="7MLRw0I7bgE" role="2Oq$k0">
+                    <node concept="1YBJjd" id="7MLRw0I7aU0" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7DmLSRHe$1t" resolve="unit" />
+                    </node>
+                    <node concept="3TrEf2" id="7MLRw0I7cy1" role="2OqNvi">
+                      <ref role="3Tt5mk" to="i3ya:7Bmg9Oo7KCS" resolve="specification" />
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="7MLRw0I7diT" role="2OqNvi" />
+                </node>
+              </node>
               <node concept="3clFbJ" id="2hjX6q5l_Q$" role="3cqZAp">
                 <node concept="3clFbS" id="2hjX6q5l_QA" role="3clFbx">
                   <node concept="a7r0C" id="2hjX6q5lAqY" role="3cqZAp">
