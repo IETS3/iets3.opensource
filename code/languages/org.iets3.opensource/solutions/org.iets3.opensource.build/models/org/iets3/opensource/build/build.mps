@@ -5266,6 +5266,16 @@
             <ref role="1Busuk" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
+        <node concept="1SiIV0" id="Ss0aue6178" role="3bR37C">
+          <node concept="3bR9La" id="Ss0aue6179" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="341S5cs8Ue0" role="3bR37C">
+          <node concept="3bR9La" id="341S5cs8Ue1" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="ub9nkyRnyj" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -7127,7 +7137,7 @@
         </node>
         <node concept="1SiIV0" id="6LJ5wQxCDvl" role="3bR37C">
           <node concept="3bR9La" id="6LJ5wQxCDvm" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
+            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="de.itemis.mps.utils.serializer.xml" />
           </node>
         </node>
         <node concept="1BupzO" id="1RMC8GHEwND" role="3bR31x">
@@ -7874,6 +7884,11 @@
             <node concept="3qWCbU" id="1RMC8GHEwQd" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Ss0aue61co" role="3bR37C">
+          <node concept="3bR9La" id="Ss0aue61cp" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
       </node>
@@ -14107,7 +14122,7 @@
       </node>
       <node concept="1SiIV0" id="1YwzPHwBxrS" role="3bR37C">
         <node concept="3bR9La" id="1YwzPHwBxrT" role="1SiIV1">
-          <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
+          <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="de.itemis.mps.utils.serializer.xml" />
         </node>
       </node>
       <node concept="1BupzO" id="1YwzPHwBxrU" role="3bR31x">
