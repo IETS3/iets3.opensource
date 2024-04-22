@@ -14,6 +14,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -230,6 +231,9 @@
       <node concept="3uibUv" id="50smQ1Vbb7T" role="1tU5fm">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
+      <node concept="2AHcQZ" id="3BA76Yi63_P" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
     </node>
     <node concept="312cEg" id="50smQ1Vbb8P" role="jymVt">
       <property role="TrG5h" value="myTime" />
@@ -304,11 +308,12 @@
         <node concept="3uibUv" id="50smQ1Vbb6v" role="1tU5fm">
           <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
+        <node concept="2AHcQZ" id="3BA76YhV4GU" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="50smQ1VbqzS" role="jymVt" />
-    <node concept="2tJIrI" id="6GCJsuCKADE" role="jymVt" />
-    <node concept="2tJIrI" id="3nGzaxUy$bQ" role="jymVt" />
     <node concept="3clFb_" id="3nGzaxUy$Sl" role="jymVt">
       <property role="TrG5h" value="copy" />
       <node concept="3uibUv" id="3nGzaxUyA2k" role="3clF45">
@@ -652,6 +657,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="2AHcQZ" id="3BA76YhV97i" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
     <node concept="2tJIrI" id="50smQ1Vc4DL" role="jymVt" />
@@ -2165,30 +2173,29 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3fqX7Q" id="3KgQFIkaiW8" role="3clFbw">
-                        <node concept="2OqwBi" id="3KgQFIkaiW9" role="3fr31v">
-                          <node concept="2OqwBi" id="3KgQFIkaiWa" role="2Oq$k0">
-                            <node concept="2OqwBi" id="3KgQFIkaiWb" role="2Oq$k0">
-                              <node concept="37vLTw" id="3KgQFIkaiWc" role="2Oq$k0">
+                      <node concept="3fqX7Q" id="3BA76YhVaDA" role="3clFbw">
+                        <node concept="2YIFZM" id="3BA76YhVaDC" role="3fr31v">
+                          <ref role="37wK5l" to="33ny:~Objects.equals(java.lang.Object,java.lang.Object)" resolve="equals" />
+                          <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
+                          <node concept="2OqwBi" id="3BA76YhVaRN" role="37wK5m">
+                            <node concept="2OqwBi" id="3BA76YhVaRO" role="2Oq$k0">
+                              <node concept="37vLTw" id="3BA76YhVaRP" role="2Oq$k0">
                                 <ref role="3cqZAo" node="3KgQFIkaiVq" resolve="res" />
                               </node>
-                              <node concept="liA8E" id="3KgQFIkaiWd" role="2OqNvi">
+                              <node concept="liA8E" id="3BA76YhVaRQ" role="2OqNvi">
                                 <ref role="37wK5l" node="1Mp62pP171D" resolve="lastSlice" />
                               </node>
                             </node>
-                            <node concept="liA8E" id="3KgQFIkaiWe" role="2OqNvi">
+                            <node concept="liA8E" id="3BA76YhVaRR" role="2OqNvi">
                               <ref role="37wK5l" node="50smQ1VbR0B" resolve="value" />
                             </node>
                           </node>
-                          <node concept="liA8E" id="3KgQFIkaiWf" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
-                            <node concept="2OqwBi" id="3KgQFIkaiWg" role="37wK5m">
-                              <node concept="37vLTw" id="3KgQFIkaiWh" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3KgQFIkaiVO" resolve="ithSlice" />
-                              </node>
-                              <node concept="liA8E" id="3KgQFIkaiWi" role="2OqNvi">
-                                <ref role="37wK5l" node="50smQ1VbR0B" resolve="value" />
-                              </node>
+                          <node concept="2OqwBi" id="3BA76YhVbvO" role="37wK5m">
+                            <node concept="37vLTw" id="3BA76YhVbvP" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3KgQFIkaiVO" resolve="ithSlice" />
+                            </node>
+                            <node concept="liA8E" id="3BA76YhVbvQ" role="2OqNvi">
+                              <ref role="37wK5l" node="50smQ1VbR0B" resolve="value" />
                             </node>
                           </node>
                         </node>
