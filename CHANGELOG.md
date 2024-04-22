@@ -14,6 +14,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Empty-like nodes now automatically select the first code completion entry if there is only one entry.
+- Enum literals now can be compared for equality in the generator.
 
 ## March 2024
 
