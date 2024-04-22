@@ -412,10 +412,14 @@
       </concept>
       <concept id="1360296727231624741" name="org.iets3.core.expr.tests.structure.InvalidInputOutcome" flags="ng" index="2t9cyf" />
       <concept id="1360296727231624728" name="org.iets3.core.expr.tests.structure.ValidOutcome" flags="ng" index="2t9cyM" />
+      <concept id="1360296727233042952" name="org.iets3.core.expr.tests.structure.TestSubjectAdapter" flags="ng" index="2teEiy">
+        <property id="4134712908316713399" name="internalUniqueID" index="3X4tbc" />
+      </concept>
       <concept id="1360296727233043025" name="org.iets3.core.expr.tests.structure.FunctionSubjectAdapter" flags="ng" index="2teEjV">
         <property id="1360296727242672265" name="checkResults" index="22zroz" />
         <reference id="1360296727233043038" name="fun" index="2teEjO" />
       </concept>
+      <concept id="1360296727229780144" name="org.iets3.core.expr.tests.structure.EmptyProducer" flags="ng" index="2tieSq" />
       <concept id="1360296727219460885" name="org.iets3.core.expr.tests.structure.InputValue" flags="ng" index="2tUAmZ">
         <reference id="1360296727219460916" name="argument" index="2tUAmu" />
         <child id="1360296727219460918" name="value" index="2tUAms" />
@@ -16718,6 +16722,36 @@
               <ref role="2tUAmu" node="3M8$ImsteXi" resolve="s" />
               <node concept="30bdrP" id="1x6zbv8RTU8" role="2tUAms">
                 <property role="30bdrQ" value="a" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5k9pVzGXTEi" role="_iOnB" />
+    <node concept="1aga60" id="5k9pVzGXW6D" role="_iOnB">
+      <property role="TrG5h" value="f" />
+      <node concept="5mhuz" id="5k9pVzGXY48" role="1ahQXP">
+        <ref role="5mhpJ" node="1bwJEEguiBh" resolve="RED" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="5k9pVzGXY4i" role="_iOnB" />
+    <node concept="_fkuM" id="5k9pVzGY0wP" role="_iOnB">
+      <property role="TrG5h" value="enumEquality" />
+      <node concept="1jlL7U" id="3CYAe9brZo9" role="_fkp5">
+        <node concept="2teEjV" id="3CYAe9brZoa" role="1jbP1Y">
+          <property role="3X4tbc" value="1712644506027/apann" />
+          <property role="22zroz" value="true" />
+          <ref role="2teEjO" node="5k9pVzGXW6D" resolve="f" />
+        </node>
+        <node concept="1jlL7l" id="3CYAe9brZob" role="1jlL6c">
+          <node concept="2tieSq" id="3CYAe9brZoj" role="2tibTm" />
+          <node concept="2s0UEP" id="3CYAe9brZo$" role="2s0UE9">
+            <node concept="2t9cyM" id="3CYAe9brZo_" role="2t9cyo" />
+            <node concept="22E7GR" id="3CYAe9brZoM" role="22EBs4">
+              <ref role="22x4DC" node="5k9pVzGXW6D" resolve="f" />
+              <node concept="5mhuz" id="3CYAe9brZoL" role="22E7H2">
+                <ref role="5mhpJ" node="1bwJEEguiBh" resolve="RED" />
               </node>
             </node>
           </node>
