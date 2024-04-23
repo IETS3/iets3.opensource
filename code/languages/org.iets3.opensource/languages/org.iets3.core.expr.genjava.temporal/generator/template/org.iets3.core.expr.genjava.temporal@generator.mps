@@ -5478,7 +5478,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="2Wqs7Xm9jBR" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                        <ref role="37wK5l" to="33ny:~ArrayList.isEmpty()" resolve="isEmpty" />
                       </node>
                     </node>
                   </node>
@@ -5911,7 +5911,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="2Wqs7XmaqtK" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                        <ref role="37wK5l" to="33ny:~ArrayList.isEmpty()" resolve="isEmpty" />
                       </node>
                     </node>
                   </node>
@@ -6346,7 +6346,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="2Wqs7XmarJ1" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                        <ref role="37wK5l" to="33ny:~ArrayList.isEmpty()" resolve="isEmpty" />
                       </node>
                     </node>
                   </node>
@@ -6920,7 +6920,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="2Wqs7XmasQq" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                        <ref role="37wK5l" to="33ny:~ArrayList.isEmpty()" resolve="isEmpty" />
                       </node>
                     </node>
                   </node>

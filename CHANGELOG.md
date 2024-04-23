@@ -11,10 +11,19 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The unnecessary super types of the tuple type were removed and are not necessary anymore.
 
+### Fixed
+
+- Empty-like nodes now automatically select the first code completion entry if there is only one entry.
+- Enum literals now can be compared for equality in the generator.
+
 ### Changed
 
 - `ComponentKind#canbeContent(conceptNode<>)` was deprecated in favour of `ComponentKind#canbeContent(concept<>)` 
 - `Component#canBeInComponentContent(conceptNode<>)` was deprecated in favour of `Component#canBeInComponentContent(concept<>)`
+
+### Added
+
+- Numbers ranges now support exclusive and inclusive intervals.
 
 ## March 2024
 
