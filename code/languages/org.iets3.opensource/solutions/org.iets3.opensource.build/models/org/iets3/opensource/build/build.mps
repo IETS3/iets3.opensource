@@ -1299,6 +1299,25 @@
             <ref role="3bR37D" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6upS8_CSn7H" role="3bR37C">
+          <node concept="1BurEX" id="6upS8_CSn7I" role="1SiIV1">
+            <node concept="398BVA" id="6upS8_CSn7w" role="1BurEY">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="6upS8_CSn7x" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6upS8_CSn7y" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.math.interpreter" />
+                  <node concept="2Ry0Ak" id="6upS8_CSn7z" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="6upS8_CSn7$" role="2Ry0An">
+                      <property role="2Ry0Am" value="big-math.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1BupzO" id="45pzosSo7eK" role="3bR31x">
           <property role="3ZfqAx" value="lib" />
           <property role="1Hdu6h" value="true" />
@@ -1318,25 +1337,6 @@
             </node>
             <node concept="3qWCbU" id="45pzosSo7eM" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6upS8_CSn7H" role="3bR37C">
-          <node concept="1BurEX" id="6upS8_CSn7I" role="1SiIV1">
-            <node concept="398BVA" id="6upS8_CSn7w" role="1BurEY">
-              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="6upS8_CSn7x" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6upS8_CSn7y" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.core.expr.math.interpreter" />
-                  <node concept="2Ry0Ak" id="6upS8_CSn7z" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6upS8_CSn7$" role="2Ry0An">
-                      <property role="2Ry0Am" value="big-math.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -6508,6 +6508,11 @@
         <node concept="1SiIV0" id="5s2FNgb$bxc" role="3bR37C">
           <node concept="3bR9La" id="5s2FNgb$bxd" role="1SiIV1">
             <ref role="3bR37D" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3BA76Yi2vu3" role="3bR37C">
+          <node concept="3bR9La" id="3BA76Yi2vu4" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
           </node>
         </node>
       </node>
@@ -13996,8 +14001,8 @@
     <property role="TrG5h" value="iets3.os.prebuild" />
     <property role="turDy" value="prebuild.xml" />
     <node concept="2igEWh" id="sIFyDYHT4z" role="1hWBAP">
-      <property role="1YnnvL" value="1024" />
       <property role="3UIfUI" value="10000" />
+      <property role="1YnnvL" value="1024" />
     </node>
     <node concept="1E1JtD" id="1YwzPHwBxpc" role="3989C9">
       <property role="BnDLt" value="true" />
