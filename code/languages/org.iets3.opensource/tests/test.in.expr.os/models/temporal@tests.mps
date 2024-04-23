@@ -15,7 +15,6 @@
     <import index="l462" ref="r:d6904536-4de8-40ba-b54e-09fcdfe1b62a(org.iets3.core.expr.temporal.structure)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="8rdi" ref="r:f17e1021-3869-4fe5-b3c7-0b2a9149a478(org.iets3.core.expr.temporal.runtime)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -7963,7 +7962,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="3BA76Yh$PN5" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
                 <node concept="37vLTw" id="3BA76Yh$PUS" role="37wK5m">
                   <ref role="3cqZAo" node="x6l$anF22h" resolve="slice1" />
                 </node>
@@ -7981,7 +7980,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="3BA76YhBYxd" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
                 <node concept="37vLTw" id="3BA76YhBYxe" role="37wK5m">
                   <ref role="3cqZAo" node="x6l$anF22h" resolve="slice1" />
                 </node>
@@ -7999,7 +7998,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="3BA76YhVoLP" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
                 <node concept="37vLTw" id="3BA76YhVoLQ" role="37wK5m">
                   <ref role="3cqZAo" node="3BA76YhXaEH" resolve="slice6" />
                 </node>
@@ -8008,9 +8007,6 @@
           </node>
           <node concept="3clFbH" id="3BA76YhVrPw" role="3cqZAp" />
           <node concept="3vlDli" id="3BA76YhDy3K" role="3cqZAp">
-            <node concept="3cmrfG" id="3BA76YhVrpi" role="3tpDZB">
-              <property role="3cmrfH" value="3" />
-            </node>
             <node concept="2OqwBi" id="3BA76YhDzgr" role="3tpDZA">
               <node concept="37vLTw" id="3BA76YhDzgs" role="2Oq$k0">
                 <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
@@ -8023,6 +8019,9 @@
               <node concept="Xl_RD" id="3BA76YhD_6O" role="3_1BAH">
                 <property role="Xl_RC" value="TemporalValue should contain 2x identical slices" />
               </node>
+            </node>
+            <node concept="3cmrfG" id="475Xz0zF4Y_" role="3tpDZB">
+              <property role="3cmrfH" value="2" />
             </node>
           </node>
           <node concept="3vlDli" id="3BA76YhDDHB" role="3cqZAp">
@@ -8049,6 +8048,106 @@
           </node>
         </node>
       </node>
+      <node concept="3s$Bmu" id="475Xz0wOL_Q" role="3s_gse">
+        <property role="3s$Bm0" value="TestingJoinSlicesContainingNull" />
+        <node concept="3cqZAl" id="475Xz0wOL_R" role="3clF45" />
+        <node concept="3Tm1VV" id="475Xz0wOL_S" role="1B3o_S" />
+        <node concept="3clFbS" id="475Xz0wOL_T" role="3clF47">
+          <node concept="3clFbF" id="475Xz0wOL_U" role="3cqZAp">
+            <node concept="2OqwBi" id="475Xz0wOL_V" role="3clFbG">
+              <node concept="2OqwBi" id="475Xz0wOL_W" role="2Oq$k0">
+                <node concept="37vLTw" id="475Xz0wOL_X" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="475Xz0wOL_Y" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="475Xz0wOL_Z" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="475Xz0wOLA0" role="37wK5m">
+                  <ref role="3cqZAo" node="x6l$anF22h" resolve="slice1" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="475Xz0wOLA1" role="3cqZAp">
+            <node concept="2OqwBi" id="475Xz0wOLA2" role="3clFbG">
+              <node concept="2OqwBi" id="475Xz0wOLA3" role="2Oq$k0">
+                <node concept="37vLTw" id="475Xz0wOLA4" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="475Xz0wOLA5" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="475Xz0wOLA6" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="10Nm6u" id="475Xz0wOPC9" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="475Xz0wOLA8" role="3cqZAp">
+            <node concept="2OqwBi" id="475Xz0wOLA9" role="3clFbG">
+              <node concept="2OqwBi" id="475Xz0wOLAa" role="2Oq$k0">
+                <node concept="37vLTw" id="475Xz0wOLAb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="475Xz0wOLAc" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="475Xz0wOLAd" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="475Xz0wOLAe" role="37wK5m">
+                  <ref role="3cqZAo" node="3BA76YhXaEH" resolve="slice6" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="475Xz0wOLAf" role="3cqZAp" />
+          <node concept="3vlDli" id="475Xz0wOLAg" role="3cqZAp">
+            <node concept="2OqwBi" id="475Xz0wOLAi" role="3tpDZA">
+              <node concept="37vLTw" id="475Xz0wOLAj" role="2Oq$k0">
+                <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+              </node>
+              <node concept="liA8E" id="475Xz0wOLAk" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:50smQ1VcK3N" resolve="numberOfSlices" />
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="475Xz0wOLAl" role="3_9lra">
+              <node concept="Xl_RD" id="475Xz0wOLAm" role="3_1BAH">
+                <property role="Xl_RC" value="TemporalValue should contain 2x identical slices" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="475Xz0zDlDK" role="3tpDZB">
+              <property role="3cmrfH" value="3" />
+            </node>
+          </node>
+          <node concept="3vlDli" id="475Xz0wOLAn" role="3cqZAp">
+            <node concept="3cmrfG" id="475Xz0wOLAo" role="3tpDZB">
+              <property role="3cmrfH" value="2" />
+            </node>
+            <node concept="2OqwBi" id="475Xz0wOLAp" role="3tpDZA">
+              <node concept="2YIFZM" id="475Xz0wOLAq" role="2Oq$k0">
+                <ref role="37wK5l" to="8rdi:3KgQFIkaiVk" resolve="joinSlices" />
+                <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                <node concept="37vLTw" id="475Xz0wOLAr" role="37wK5m">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+              </node>
+              <node concept="liA8E" id="475Xz0wOLAs" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:50smQ1VcK3N" resolve="numberOfSlices" />
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="475Xz0wOLAt" role="3_9lra">
+              <node concept="Xl_RD" id="475Xz0wOLAu" role="3_1BAH">
+                <property role="Xl_RC" value="TemporalValue should contain 1x slides after joining identical slices" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3s$Bmu" id="3BA76YhIqYQ" role="3s_gse">
         <property role="3s$Bm0" value="TestingJoinSlicesWithNull" />
         <node concept="3cqZAl" id="3BA76YhIqYR" role="3clF45" />
@@ -8065,7 +8164,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="3BA76YhIIvF" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
                 <node concept="37vLTw" id="3BA76YhIJF2" role="37wK5m">
                   <ref role="3cqZAo" node="3BA76YhIuEc" resolve="slice5WithNulLValue" />
                 </node>
@@ -8083,7 +8182,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="3BA76YhTouB" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
                 <node concept="37vLTw" id="3BA76YhTouC" role="37wK5m">
                   <ref role="3cqZAo" node="3BA76YhIuEc" resolve="slice5WithNulLValue" />
                 </node>
@@ -8101,7 +8200,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="3BA76YhVsgJ" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
                 <node concept="37vLTw" id="3BA76YhVsgK" role="37wK5m">
                   <ref role="3cqZAo" node="3BA76YhXaEH" resolve="slice6" />
                 </node>
