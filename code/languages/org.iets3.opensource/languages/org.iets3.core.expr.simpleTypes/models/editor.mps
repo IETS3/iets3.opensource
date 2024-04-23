@@ -21,6 +21,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -38,6 +39,7 @@
         <child id="784421273959492606" name="nodeFunction" index="mvV$0" />
       </concept>
       <concept id="784421273959493166" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_TargetNode" flags="ig" index="mvVNg" />
+      <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -675,12 +677,25 @@
     <ref role="1XX52x" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
     <node concept="3EZMnI" id="19PglA20r05" role="2wV5jI">
       <node concept="2iRfu4" id="5i1yF0wqXGJ" role="2iSdaV" />
-      <node concept="3F0ifn" id="19PglA20r01" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
-        <node concept="11LMrY" id="19PglA20rb6" role="3F10Kt">
+      <node concept="1HlG4h" id="2MMBR00YETl" role="3EZMnx">
+        <node concept="1HfYo3" id="2MMBR00YETp" role="1HlULh">
+          <node concept="3TQlhw" id="2MMBR00YETt" role="1Hhtcw">
+            <node concept="3clFbS" id="2MMBR00YETx" role="2VODD2">
+              <node concept="3clFbF" id="2MMBR00YFaQ" role="3cqZAp">
+                <node concept="2OqwBi" id="2MMBR00YFoP" role="3clFbG">
+                  <node concept="pncrf" id="2MMBR00YFaP" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="2MMBR00YF$_" role="2OqNvi">
+                    <ref role="37wK5l" to="b1h1:1HYdmFH2Ri" resolve="getStartBracket" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="11L4FC" id="2MMBR00YF65" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="11L4FC" id="2NHHcg2C$eX" role="3F10Kt">
+        <node concept="11LMrY" id="2MMBR00YF7O" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -745,14 +760,30 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="19PglA20r1q" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
-        <node concept="11L4FC" id="19PglA20rbi" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="34QqEe" id="6Oy4N$q5tUL" role="3F10Kt">
         <property role="VOm3f" value="true" />
+      </node>
+      <node concept="1HlG4h" id="2MMBR00YFMG" role="3EZMnx">
+        <node concept="11L4FC" id="2MMBR00YG8u" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="2MMBR00YG8v" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="1HfYo3" id="2MMBR00YFMJ" role="1HlULh">
+          <node concept="3TQlhw" id="2MMBR00YFMM" role="1Hhtcw">
+            <node concept="3clFbS" id="2MMBR00YFMP" role="2VODD2">
+              <node concept="3clFbF" id="2MMBR00YFTL" role="3cqZAp">
+                <node concept="2OqwBi" id="2MMBR00YFUi" role="3clFbG">
+                  <node concept="pncrf" id="2MMBR00YFTK" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="2MMBR00YFWS" role="2OqNvi">
+                    <ref role="37wK5l" to="b1h1:1HYdmFH3l9" resolve="getEndBracket" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

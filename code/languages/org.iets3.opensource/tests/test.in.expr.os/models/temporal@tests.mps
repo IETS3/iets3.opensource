@@ -122,6 +122,11 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="3693790620639876318" name="com.mbeddr.mpsutil.blutil.structure.BLDoc" flags="ng" index="2aEySx">
+        <child id="3693790620639876319" name="text" index="2aEySw" />
+      </concept>
+    </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
       <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
@@ -7673,6 +7678,56 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="3BA76YhIuEc" role="jymVt">
+      <property role="TrG5h" value="slice5WithNulLValue" />
+      <node concept="3Tm6S6" id="3BA76YhItn2" role="1B3o_S" />
+      <node concept="3uibUv" id="3BA76YhIuD7" role="1tU5fm">
+        <ref role="3uigEE" to="8rdi:50smQ1VbaN9" resolve="SliceValue" />
+      </node>
+      <node concept="2ShNRf" id="3BA76YhIva7" role="33vP2m">
+        <node concept="1pGfFk" id="3BA76YhIx4d" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="37wK5l" to="8rdi:50smQ1VbaTB" resolve="SliceValue" />
+          <node concept="37vLTw" id="3BA76YhIx5$" role="37wK5m">
+            <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+          </node>
+          <node concept="2YIFZM" id="3BA76YhIxCt" role="37wK5m">
+            <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
+            <ref role="37wK5l" to="28m1:~LocalDate.parse(java.lang.CharSequence)" resolve="parse" />
+            <node concept="Xl_RD" id="3BA76YhIxCu" role="37wK5m">
+              <property role="Xl_RC" value="2002-01-01" />
+            </node>
+          </node>
+          <node concept="10Nm6u" id="3BA76YhIxL6" role="37wK5m" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="3BA76YhXaEH" role="jymVt">
+      <property role="TrG5h" value="slice6" />
+      <node concept="3Tm6S6" id="3BA76YhXaEI" role="1B3o_S" />
+      <node concept="3uibUv" id="3BA76YhXaEJ" role="1tU5fm">
+        <ref role="3uigEE" to="8rdi:50smQ1VbaN9" resolve="SliceValue" />
+      </node>
+      <node concept="2ShNRf" id="3BA76YhXaEK" role="33vP2m">
+        <node concept="1pGfFk" id="3BA76YhXaEL" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="37wK5l" to="8rdi:50smQ1VbaTB" resolve="SliceValue" />
+          <node concept="37vLTw" id="3BA76YhXaEM" role="37wK5m">
+            <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+          </node>
+          <node concept="2YIFZM" id="3BA76YhXaEN" role="37wK5m">
+            <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
+            <ref role="37wK5l" to="28m1:~LocalDate.parse(java.lang.CharSequence)" resolve="parse" />
+            <node concept="Xl_RD" id="3BA76YhXaEO" role="37wK5m">
+              <property role="Xl_RC" value="2024-01-01" />
+            </node>
+          </node>
+          <node concept="3cmrfG" id="3BA76YhXbZz" role="37wK5m">
+            <property role="3cmrfH" value="22" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="x6l$anF220" role="jymVt" />
     <node concept="3Tm1VV" id="x6l$anpf0a" role="1B3o_S" />
     <node concept="3s_gsd" id="x6l$anpf0b" role="3s_ewO">
@@ -7924,6 +7979,335 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3s$Bmu" id="_Xxt9afg6U" role="3s_gse">
+        <property role="3s$Bm0" value="TestingJoinSlices" />
+        <node concept="3cqZAl" id="_Xxt9afg6V" role="3clF45" />
+        <node concept="3Tm1VV" id="_Xxt9afg6W" role="1B3o_S" />
+        <node concept="3clFbS" id="_Xxt9afg6X" role="3clF47">
+          <node concept="3clFbF" id="3BA76Yh$CDC" role="3cqZAp">
+            <node concept="2OqwBi" id="3BA76Yh$OvM" role="3clFbG">
+              <node concept="2OqwBi" id="3BA76Yh$CSj" role="2Oq$k0">
+                <node concept="37vLTw" id="3BA76Yh$CDA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="3BA76Yh$MV$" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3BA76Yh$PN5" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="3BA76Yh$PUS" role="37wK5m">
+                  <ref role="3cqZAo" node="x6l$anF22h" resolve="slice1" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3BA76YhBYx8" role="3cqZAp">
+            <node concept="2OqwBi" id="3BA76YhBYx9" role="3clFbG">
+              <node concept="2OqwBi" id="3BA76YhBYxa" role="2Oq$k0">
+                <node concept="37vLTw" id="3BA76YhBYxb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="3BA76YhBYxc" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3BA76YhBYxd" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="3BA76YhBYxe" role="37wK5m">
+                  <ref role="3cqZAo" node="x6l$anF22h" resolve="slice1" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3BA76YhVoLK" role="3cqZAp">
+            <node concept="2OqwBi" id="3BA76YhVoLL" role="3clFbG">
+              <node concept="2OqwBi" id="3BA76YhVoLM" role="2Oq$k0">
+                <node concept="37vLTw" id="3BA76YhVoLN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="3BA76YhVoLO" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3BA76YhVoLP" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="3BA76YhVoLQ" role="37wK5m">
+                  <ref role="3cqZAo" node="3BA76YhXaEH" resolve="slice6" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="3BA76YhVrPw" role="3cqZAp" />
+          <node concept="3vlDli" id="3BA76YhDy3K" role="3cqZAp">
+            <node concept="2OqwBi" id="3BA76YhDzgr" role="3tpDZA">
+              <node concept="37vLTw" id="3BA76YhDzgs" role="2Oq$k0">
+                <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+              </node>
+              <node concept="liA8E" id="3BA76YhDzgt" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:50smQ1VcK3N" resolve="numberOfSlices" />
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="3BA76YhD$YQ" role="3_9lra">
+              <node concept="Xl_RD" id="3BA76YhD_6O" role="3_1BAH">
+                <property role="Xl_RC" value="Amount of contained slices wrong" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="475Xz0zF4Y_" role="3tpDZB">
+              <property role="3cmrfH" value="3" />
+            </node>
+          </node>
+          <node concept="3vlDli" id="3BA76YhDDHB" role="3cqZAp">
+            <node concept="3cmrfG" id="3BA76YhDDVh" role="3tpDZB">
+              <property role="3cmrfH" value="2" />
+            </node>
+            <node concept="2OqwBi" id="3BA76YhFaQy" role="3tpDZA">
+              <node concept="2YIFZM" id="_Xxt9afncN" role="2Oq$k0">
+                <ref role="37wK5l" to="8rdi:3KgQFIkaiVk" resolve="joinSlices" />
+                <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                <node concept="37vLTw" id="_Xxt9afncO" role="37wK5m">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3BA76YhFbhd" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:50smQ1VcK3N" resolve="numberOfSlices" />
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="3BA76YhDEiD" role="3_9lra">
+              <node concept="Xl_RD" id="3BA76YhDEux" role="3_1BAH">
+                <property role="Xl_RC" value="TemporalValue should contain 1x slides after joining identical slices" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3s$Bmu" id="475Xz0wOL_Q" role="3s_gse">
+        <property role="3s$Bm0" value="TestingJoinSlicesContainingNull" />
+        <node concept="3cqZAl" id="475Xz0wOL_R" role="3clF45" />
+        <node concept="3Tm1VV" id="475Xz0wOL_S" role="1B3o_S" />
+        <node concept="3clFbS" id="475Xz0wOL_T" role="3clF47">
+          <node concept="3clFbF" id="475Xz0wOL_U" role="3cqZAp">
+            <node concept="2OqwBi" id="475Xz0wOL_V" role="3clFbG">
+              <node concept="2OqwBi" id="475Xz0wOL_W" role="2Oq$k0">
+                <node concept="37vLTw" id="475Xz0wOL_X" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="475Xz0wOL_Y" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="475Xz0wOL_Z" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="475Xz0wOLA0" role="37wK5m">
+                  <ref role="3cqZAo" node="x6l$anF22h" resolve="slice1" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="4dF$g$BIPPz" role="3cqZAp">
+            <node concept="2OqwBi" id="4dF$g$BIPP$" role="3clFbG">
+              <node concept="2OqwBi" id="4dF$g$BIPP_" role="2Oq$k0">
+                <node concept="37vLTw" id="4dF$g$BIPPA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="4dF$g$BIPPB" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4dF$g$BIPPC" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="4dF$g$BIPPD" role="37wK5m">
+                  <ref role="3cqZAo" node="x6l$anF22h" resolve="slice1" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="475Xz0wOLA1" role="3cqZAp">
+            <node concept="2OqwBi" id="475Xz0wOLA2" role="3clFbG">
+              <node concept="2OqwBi" id="475Xz0wOLA3" role="2Oq$k0">
+                <node concept="37vLTw" id="475Xz0wOLA4" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="475Xz0wOLA5" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="475Xz0wOLA6" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="10Nm6u" id="475Xz0wOPC9" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="475Xz0wOLA8" role="3cqZAp">
+            <node concept="2OqwBi" id="475Xz0wOLA9" role="3clFbG">
+              <node concept="2OqwBi" id="475Xz0wOLAa" role="2Oq$k0">
+                <node concept="37vLTw" id="475Xz0wOLAb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="475Xz0wOLAc" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="475Xz0wOLAd" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="475Xz0wOLAe" role="37wK5m">
+                  <ref role="3cqZAo" node="3BA76YhXaEH" resolve="slice6" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="475Xz0wOLAf" role="3cqZAp" />
+          <node concept="3vlDli" id="475Xz0wOLAg" role="3cqZAp">
+            <node concept="2OqwBi" id="475Xz0wOLAi" role="3tpDZA">
+              <node concept="37vLTw" id="475Xz0wOLAj" role="2Oq$k0">
+                <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+              </node>
+              <node concept="liA8E" id="475Xz0wOLAk" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:50smQ1VcK3N" resolve="numberOfSlices" />
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="475Xz0wOLAl" role="3_9lra">
+              <node concept="Xl_RD" id="475Xz0wOLAm" role="3_1BAH">
+                <property role="Xl_RC" value="Amount of contained slices wrong" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="475Xz0zDlDK" role="3tpDZB">
+              <property role="3cmrfH" value="3" />
+            </node>
+          </node>
+          <node concept="3vlDli" id="475Xz0wOLAn" role="3cqZAp">
+            <node concept="3cmrfG" id="475Xz0wOLAo" role="3tpDZB">
+              <property role="3cmrfH" value="2" />
+            </node>
+            <node concept="2OqwBi" id="475Xz0wOLAp" role="3tpDZA">
+              <node concept="2YIFZM" id="475Xz0wOLAq" role="2Oq$k0">
+                <ref role="37wK5l" to="8rdi:3KgQFIkaiVk" resolve="joinSlices" />
+                <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                <node concept="37vLTw" id="475Xz0wOLAr" role="37wK5m">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+              </node>
+              <node concept="liA8E" id="475Xz0wOLAs" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:50smQ1VcK3N" resolve="numberOfSlices" />
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="475Xz0wOLAt" role="3_9lra">
+              <node concept="Xl_RD" id="475Xz0wOLAu" role="3_1BAH">
+                <property role="Xl_RC" value="TemporalValue should contain 1x slides after joining identical slices" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3s$Bmu" id="3BA76YhIqYQ" role="3s_gse">
+        <property role="3s$Bm0" value="TestingJoinSlicesWithNull" />
+        <node concept="3cqZAl" id="3BA76YhIqYR" role="3clF45" />
+        <node concept="3Tm1VV" id="3BA76YhIqYS" role="1B3o_S" />
+        <node concept="3clFbS" id="3BA76YhIqYT" role="3clF47">
+          <node concept="3clFbF" id="3BA76YhIIvA" role="3cqZAp">
+            <node concept="2OqwBi" id="3BA76YhIIvB" role="3clFbG">
+              <node concept="2OqwBi" id="3BA76YhIIvC" role="2Oq$k0">
+                <node concept="37vLTw" id="3BA76YhIIvD" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="3BA76YhIIvE" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3BA76YhIIvF" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="3BA76YhIJF2" role="37wK5m">
+                  <ref role="3cqZAo" node="3BA76YhIuEc" resolve="slice5WithNulLValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3BA76YhTouy" role="3cqZAp">
+            <node concept="2OqwBi" id="3BA76YhTouz" role="3clFbG">
+              <node concept="2OqwBi" id="3BA76YhTou$" role="2Oq$k0">
+                <node concept="37vLTw" id="3BA76YhTou_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="3BA76YhTouA" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3BA76YhTouB" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="3BA76YhTouC" role="37wK5m">
+                  <ref role="3cqZAo" node="3BA76YhIuEc" resolve="slice5WithNulLValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3BA76YhVsgE" role="3cqZAp">
+            <node concept="2OqwBi" id="3BA76YhVsgF" role="3clFbG">
+              <node concept="2OqwBi" id="3BA76YhVsgG" role="2Oq$k0">
+                <node concept="37vLTw" id="3BA76YhVsgH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="3BA76YhVsgI" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3BA76YhVsgJ" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="3BA76YhVsgK" role="37wK5m">
+                  <ref role="3cqZAo" node="3BA76YhXaEH" resolve="slice6" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="3BA76YhOkBl" role="3cqZAp" />
+          <node concept="3vlDli" id="3BA76YhII02" role="3cqZAp">
+            <node concept="3cmrfG" id="3BA76YhVtnN" role="3tpDZB">
+              <property role="3cmrfH" value="3" />
+            </node>
+            <node concept="2OqwBi" id="3BA76YhII04" role="3tpDZA">
+              <node concept="37vLTw" id="3BA76YhII05" role="2Oq$k0">
+                <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+              </node>
+              <node concept="liA8E" id="3BA76YhII06" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:50smQ1VcK3N" resolve="numberOfSlices" />
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="3BA76YhII07" role="3_9lra">
+              <node concept="Xl_RD" id="3BA76YhII08" role="3_1BAH">
+                <property role="Xl_RC" value="Amount of contained slices wrong" />
+              </node>
+            </node>
+          </node>
+          <node concept="3vlDli" id="3BA76YhII09" role="3cqZAp">
+            <node concept="3cmrfG" id="3BA76YhII0a" role="3tpDZB">
+              <property role="3cmrfH" value="2" />
+            </node>
+            <node concept="2OqwBi" id="3BA76YhII0b" role="3tpDZA">
+              <node concept="2YIFZM" id="3BA76YhII0c" role="2Oq$k0">
+                <ref role="37wK5l" to="8rdi:3KgQFIkaiVk" resolve="joinSlices" />
+                <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                <node concept="37vLTw" id="3BA76YhII0d" role="37wK5m">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3BA76YhII0e" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:50smQ1VcK3N" resolve="numberOfSlices" />
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="3BA76YhII0f" role="3_9lra">
+              <node concept="Xl_RD" id="3BA76YhII0g" role="3_1BAH">
+                <property role="Xl_RC" value="TemporalValue should contain 1x slides after joining identical slices" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2aEySx" id="3BA76YhYMv5" role="lGtFl">
+          <node concept="19SGf9" id="3BA76YhYMv6" role="2aEySw">
+            <node concept="19SUe$" id="3BA76YhYMv7" role="19SJt6">
+              <property role="19SUeA" value="should not fail with a NPE " />
             </node>
           </node>
         </node>
