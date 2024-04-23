@@ -8017,7 +8017,7 @@
             </node>
             <node concept="3_1$Yv" id="3BA76YhD$YQ" role="3_9lra">
               <node concept="Xl_RD" id="3BA76YhD_6O" role="3_1BAH">
-                <property role="Xl_RC" value="TemporalValue should contain 2x identical slices" />
+                <property role="Xl_RC" value="Amount of contained slices wrong" />
               </node>
             </node>
             <node concept="3cmrfG" id="475Xz0zF4Y_" role="3tpDZB">
@@ -8071,6 +8071,24 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="4dF$g$BIPPz" role="3cqZAp">
+            <node concept="2OqwBi" id="4dF$g$BIPP$" role="3clFbG">
+              <node concept="2OqwBi" id="4dF$g$BIPP_" role="2Oq$k0">
+                <node concept="37vLTw" id="4dF$g$BIPPA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x6l$anF22e" resolve="TT" />
+                </node>
+                <node concept="liA8E" id="4dF$g$BIPPB" role="2OqNvi">
+                  <ref role="37wK5l" to="8rdi:4voqclTDifZ" resolve="slices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4dF$g$BIPPC" role="2OqNvi">
+                <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
+                <node concept="37vLTw" id="4dF$g$BIPPD" role="37wK5m">
+                  <ref role="3cqZAo" node="x6l$anF22h" resolve="slice1" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="475Xz0wOLA1" role="3cqZAp">
             <node concept="2OqwBi" id="475Xz0wOLA2" role="3clFbG">
               <node concept="2OqwBi" id="475Xz0wOLA3" role="2Oq$k0">
@@ -8117,11 +8135,11 @@
             </node>
             <node concept="3_1$Yv" id="475Xz0wOLAl" role="3_9lra">
               <node concept="Xl_RD" id="475Xz0wOLAm" role="3_1BAH">
-                <property role="Xl_RC" value="TemporalValue should contain 2x identical slices" />
+                <property role="Xl_RC" value="Amount of contained slices wrong" />
               </node>
             </node>
             <node concept="3cmrfG" id="475Xz0zDlDK" role="3tpDZB">
-              <property role="3cmrfH" value="2" />
+              <property role="3cmrfH" value="3" />
             </node>
           </node>
           <node concept="3vlDli" id="475Xz0wOLAn" role="3cqZAp">
@@ -8222,7 +8240,7 @@
             </node>
             <node concept="3_1$Yv" id="3BA76YhII07" role="3_9lra">
               <node concept="Xl_RD" id="3BA76YhII08" role="3_1BAH">
-                <property role="Xl_RC" value="TemporalValue should contain 2x identical slices" />
+                <property role="Xl_RC" value="Amount of contained slices wrong" />
               </node>
             </node>
           </node>
