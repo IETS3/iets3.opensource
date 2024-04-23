@@ -746,6 +746,7 @@
     <node concept="CIrOH" id="6EvkZrKSbem" role="_iOnB">
       <property role="TrG5h" value="l" />
       <property role="1o$tow" value="litre" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="6EvkZrKSbgd" resolve="volume" />
     </node>
     <node concept="CIrOH" id="6EvkZrKSbi1" role="_iOnB">
