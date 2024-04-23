@@ -469,7 +469,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="base" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7athFveyQYz" resolve="QuantityReference" />
+      <ref role="20lvS9" node="7athFve_SVK" resolve="QuantityExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="7athFve_UG0">
@@ -657,7 +657,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="base" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="45a4DYZrLy8" resolve="QuantityBaseType" />
+      <ref role="20lvS9" node="69ocqYc6oAT" resolve="QuantityType" />
     </node>
   </node>
   <node concept="1TIwiD" id="45a4DYZtiVD">
@@ -769,7 +769,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="base" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7eOyx9r3kR5" resolve="UnitReference" />
+      <ref role="20lvS9" node="7athFveEYHG" resolve="UnitExpression" />
     </node>
     <node concept="PrWs8" id="15KrVXSF5qx" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqri" resolve="IGroupPower" />
@@ -887,7 +887,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="base" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4RImAbi2ndX" resolve="DimensionReference" />
+      <ref role="20lvS9" node="4RImAbi2k39" resolve="DimensionExpression" />
     </node>
     <node concept="PrWs8" id="u36xDg6fhi" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqri" resolve="IGroupPower" />
