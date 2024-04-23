@@ -2,7 +2,7 @@
 <model ref="r:eec34ba1-5aa9-470e-9ddd-540a67f94f22(test.ts.components.core.tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="-1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
@@ -12,7 +12,6 @@
   </languages>
   <imports>
     <import index="5etr" ref="r:769eaa92-d4cb-4fa9-87e4-269f7f35a1eb(org.iets3.components.core.typesystem)" />
-    <import index="xens" ref="r:e2f731a4-551a-400e-a547-ea954abd0c47(test.iest3.component.attribute.structure)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -37,6 +36,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -100,8 +100,8 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="411710798111762102" name="org.iets3.core.expr.toplevel.structure.AbstractFunctionAdapter" flags="ng" index="q4_pW">
-        <child id="411710798109576791" name="fun" index="qdjUt" />
+      <concept id="336196204780206756" name="org.iets3.core.expr.toplevel.structure.AbstractFunctionLikeAdapter" flags="ng" index="34q58e">
+        <child id="336196204780218355" name="functionLike" index="34q0Xp" />
       </concept>
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
     </language>
@@ -133,6 +133,7 @@
       <concept id="8209493818901074928" name="org.iets3.components.core.structure.InlineComponentInstance" flags="ng" index="2sGezh">
         <child id="8209493818901074929" name="component" index="2sGezg" />
       </concept>
+      <concept id="3788552210011763141" name="org.iets3.components.core.structure.CompFunctionAdapter" flags="ng" index="2AlxnG" />
       <concept id="509610514780564823" name="org.iets3.components.core.structure.EmptySubstructureContent" flags="ng" index="GnyP7" />
       <concept id="509610514780580301" name="org.iets3.components.core.structure.ComponentSubstructure" flags="ng" index="GnABt">
         <child id="509610514780580302" name="contents" index="GnABu" />
@@ -182,7 +183,6 @@
       <concept id="227686178023855820" name="org.iets3.components.core.structure.AbstractConnectorRefTarget" flags="ng" index="1yi36j">
         <reference id="227686178023855923" name="connector" index="1yi31G" />
       </concept>
-      <concept id="3177368305997534653" name="org.iets3.components.core.structure.CompFunctionAdapter_old" flags="ng" index="3zyh8u" />
       <concept id="4217735156746120255" name="org.iets3.components.core.structure.AbstractConnectorBase" flags="ng" index="1O3KJS">
         <child id="4217735156746171148" name="connectorType" index="1O05jb" />
       </concept>
@@ -243,6 +243,7 @@
   </node>
   <node concept="1lH9Xt" id="58cNi02eX0u">
     <property role="TrG5h" value="ConceptSpecificAndContextTypeSpecificAttributes" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6ip4YniacG4" role="1SKRRt">
       <node concept="1i1ALs" id="6ip4YniacG7" role="1qenE9">
         <property role="TrG5h" value="ValidChunkWithoutErrors" />
@@ -410,10 +411,10 @@
       <node concept="H_j2F" id="5L_xiGQ8voO" role="1i1XAe">
         <node concept="H_vQO" id="5L_xiGQ8voP" role="H_jLS" />
       </node>
-      <node concept="3zyh8u" id="7LbZKOmHXBr" role="1i1XAe">
-        <node concept="1aga60" id="7LbZKOmHXBs" role="qdjUt">
+      <node concept="2AlxnG" id="7DfYVno4_g0" role="1i1XAe">
+        <node concept="1aga60" id="7DfYVno4_g1" role="34q0Xp">
           <property role="TrG5h" value="funcInKindA" />
-          <node concept="UmHTt" id="7LbZKOmHXBt" role="1ahQXP" />
+          <node concept="UmHTt" id="7DfYVno4_go" role="1ahQXP" />
         </node>
       </node>
       <node concept="3o2yKq" id="7LbZKOmHOcf" role="1i0K$_" />
@@ -425,10 +426,10 @@
         <node concept="H_vQO" id="5L_xiGQ8voR" role="H_jLS" />
       </node>
       <node concept="1EZ9Mj" id="7LbZKOmHRWh" role="1i0K$_" />
-      <node concept="3zyh8u" id="7LbZKOmHX_l" role="1i1XAe">
-        <node concept="1aga60" id="7LbZKOmHX_m" role="qdjUt">
+      <node concept="2AlxnG" id="7DfYVno4_gU" role="1i1XAe">
+        <node concept="1aga60" id="7DfYVno4_gV" role="34q0Xp">
           <property role="TrG5h" value="funcInKindB" />
-          <node concept="UmHTt" id="7LbZKOmHXB5" role="1ahQXP" />
+          <node concept="UmHTt" id="7DfYVno4_hk" role="1ahQXP" />
         </node>
       </node>
     </node>
@@ -443,6 +444,7 @@
   </node>
   <node concept="1lH9Xt" id="48ZWgAGs_oW">
     <property role="TrG5h" value="AttributeContainerWithContextScopeTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="48ZWgAGs_oX" role="1SKRRt">
       <node concept="1i1ALs" id="48ZWgAGs_p0" role="1qenE9">
         <property role="TrG5h" value="TestCompInstanceRefTarget" />
@@ -462,6 +464,36 @@
               <node concept="pfQqD" id="48ZWgAGwlh3" role="pfQ1b">
                 <property role="pfQqC" value="extCmp" />
               </node>
+            </node>
+            <node concept="1i6xzV" id="7DfYVnlgN68" role="GnABu">
+              <node concept="1i1fwW" id="7DfYVnlgN69" role="MGl3R">
+                <ref role="1i1fwX" node="48ZWgAGs_py" resolve="ExternalRootComp" />
+              </node>
+              <node concept="pfQqD" id="7DfYVnlgN6a" role="pfQ1b">
+                <property role="pfQqC" value="extCmp2" />
+              </node>
+            </node>
+            <node concept="VCwYV" id="7DfYVnlgN0T" role="GnABu">
+              <ref role="paF6x" node="48ZWgAGwg_S" resolve="dummySubortPort" />
+              <ref role="paF6R" node="48ZWgAGwgBf" resolve="dummyGovPort" />
+              <node concept="VCwY8" id="7DfYVnlgN0U" role="VCno0">
+                <ref role="VCwYn" node="48ZWgAGs_vC" resolve="extCmp" />
+              </node>
+              <node concept="VCwY8" id="7DfYVnlgN0V" role="VC6R4">
+                <ref role="VCwYn" node="7DfYVnlgN68" resolve="extCmp2" />
+              </node>
+              <node concept="3IJI2w" id="7DfYVnlgN2l" role="1O05jb" />
+            </node>
+            <node concept="VCwYV" id="7DfYVnlgN7k" role="GnABu">
+              <ref role="paF6x" node="48ZWgAGwg_S" resolve="dummySubortPort" />
+              <ref role="paF6R" node="48ZWgAGwgBf" resolve="dummyGovPort" />
+              <node concept="VCwY8" id="7DfYVnlgN7l" role="VCno0">
+                <ref role="VCwYn" node="7DfYVnlgN68" resolve="extCmp2" />
+              </node>
+              <node concept="VCwY8" id="7DfYVnlgN7m" role="VC6R4">
+                <ref role="VCwYn" node="48ZWgAGs_vC" resolve="extCmp" />
+              </node>
+              <node concept="3IJI2w" id="7DfYVnlgN7n" role="1O05jb" />
             </node>
           </node>
           <node concept="3oth5z" id="48ZWgAGs_wg" role="18DfD7">
@@ -533,6 +565,9 @@
                   <ref role="1BTHP0" node="48ZWgAGs_vC" resolve="extCmp" />
                   <node concept="3KTrbX" id="48ZWgAGwgvX" role="3KTr4d">
                     <ref role="3AHY9a" node="48ZWgAGs_vC" resolve="extCmp" />
+                  </node>
+                  <node concept="3KTrbX" id="7DfYVnlgSYu" role="3KTr4d">
+                    <ref role="3AHY9a" node="7DfYVnlgN68" resolve="extCmp2" />
                   </node>
                 </node>
               </node>
@@ -624,6 +659,7 @@
   </node>
   <node concept="1lH9Xt" id="7LbZKOmHCtv">
     <property role="TrG5h" value="ComponentInstanceScopeCalculation" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7LbZKOmHCtw" role="1SKRRt">
       <node concept="1i1ALs" id="7LbZKOmHCty" role="1qenE9">
         <property role="TrG5h" value="someChunk" />
@@ -746,6 +782,7 @@
   </node>
   <node concept="1lH9Xt" id="77HYM7HSeVg">
     <property role="TrG5h" value="InlineComponents" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="77HYM7HSeVh" role="1SKRRt">
       <node concept="1i1ALs" id="77HYM7HSeVk" role="1qenE9">
         <property role="TrG5h" value="InlineComponents" />

@@ -104,9 +104,6 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -124,7 +121,7 @@
             <node concept="2YIFZM" id="1F1F0IUZB12" role="3clFbG">
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
               <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
-              <node concept="2OqwBi" id="1F1F0IUZB13" role="37wK5m">
+              <node concept="2OqwBi" id="3Q$zA1CE1oZ" role="37wK5m">
                 <node concept="2OqwBi" id="1F1F0IUZB14" role="2Oq$k0">
                   <node concept="2OqwBi" id="1F1F0IUZB15" role="2Oq$k0">
                     <node concept="2rP1CM" id="1F1F0IUZB16" role="2Oq$k0" />
@@ -138,14 +135,14 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="1F1F0IUZB1a" role="2OqNvi">
-                    <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                    <node concept="3TUQnm" id="1F1F0IUZB1b" role="37wK5m">
-                      <ref role="3TV0OU" to="e9k1:cPLa7Fp8FI" resolve="DataTable" />
+                    <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                    <node concept="35c_gC" id="3Q$zA1C_Tzg" role="37wK5m">
+                      <ref role="35c_gD" to="e9k1:cPLa7Fp8FI" resolve="DataTable" />
                     </node>
                   </node>
                 </node>
-                <node concept="v3k3i" id="1F1F0IUZB1c" role="2OqNvi">
-                  <node concept="chp4Y" id="cPLa7Fs40P" role="v3oSu">
+                <node concept="v3k3i" id="3Q$zA1CE1_o" role="2OqNvi">
+                  <node concept="chp4Y" id="3Q$zA1CE1JM" role="v3oSu">
                     <ref role="cht4Q" to="e9k1:cPLa7Fp8FI" resolve="DataTable" />
                   </node>
                 </node>
@@ -166,7 +163,7 @@
             <node concept="2YIFZM" id="cPLa7Fswqk" role="3clFbG">
               <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="cPLa7Fswql" role="37wK5m">
+              <node concept="2OqwBi" id="3Q$zA1CDZZU" role="37wK5m">
                 <node concept="2OqwBi" id="cPLa7Fswqm" role="2Oq$k0">
                   <node concept="2OqwBi" id="cPLa7Fswqn" role="2Oq$k0">
                     <node concept="2rP1CM" id="cPLa7Fswqo" role="2Oq$k0" />
@@ -180,14 +177,14 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="cPLa7Fswqt" role="2OqNvi">
-                    <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                    <node concept="3TUQnm" id="cPLa7Fswqu" role="37wK5m">
-                      <ref role="3TV0OU" to="e9k1:cPLa7Fp8FI" resolve="DataTable" />
+                    <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                    <node concept="35c_gC" id="3Q$zA1C_ST3" role="37wK5m">
+                      <ref role="35c_gD" to="e9k1:cPLa7Fp8FI" resolve="DataTable" />
                     </node>
                   </node>
                 </node>
-                <node concept="v3k3i" id="cPLa7Fswqv" role="2OqNvi">
-                  <node concept="chp4Y" id="cPLa7Fswqw" role="v3oSu">
+                <node concept="v3k3i" id="3Q$zA1CE0fl" role="2OqNvi">
+                  <node concept="chp4Y" id="3Q$zA1CE0m5" role="v3oSu">
                     <ref role="cht4Q" to="e9k1:cPLa7Fp8FI" resolve="DataTable" />
                   </node>
                 </node>

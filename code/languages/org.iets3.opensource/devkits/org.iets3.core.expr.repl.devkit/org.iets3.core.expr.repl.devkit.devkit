@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.core.expr.repl.devkit" uuid="b959c3bf-b068-4828-a862-7a9d895a49d4">
+  <exported-language name="18001c94-33a7-4f68-a7c1-ffddc4b39be1(org.iets3.core.expr.repl)" />
+  <exported-solutions>
+    <exported-solution>bd5d2f0b-399d-4cb7-b981-7a3f9ce7bc78(org.iets3.core.expr.repl.interpreter)</exported-solution>
+    <exported-solution>1157d4c9-6175-4550-96aa-aae0a9fdc06f(org.iets3.core.expr.repl.plugin)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+
