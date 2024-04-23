@@ -6378,11 +6378,8 @@
                   <node concept="3cpWs6" id="7zq8U7uA8aZ" role="3cqZAp">
                     <node concept="1rXfSq" id="7zq8U7wmSXh" role="3cqZAk">
                       <ref role="37wK5l" node="45a4DYZttz_" resolve="simplifyMultAndPow" />
-                      <node concept="1rXfSq" id="7zq8U7uA8Jw" role="37wK5m">
-                        <ref role="37wK5l" node="45a4DYZteD9" resolve="minimize" />
-                        <node concept="37vLTw" id="7zq8U7uA9kM" role="37wK5m">
-                          <ref role="3cqZAo" node="7zq8U7utj65" resolve="base" />
-                        </node>
+                      <node concept="37vLTw" id="2mcR4_vVKjp" role="37wK5m">
+                        <ref role="3cqZAo" node="7zq8U7utj65" resolve="base" />
                       </node>
                     </node>
                   </node>
