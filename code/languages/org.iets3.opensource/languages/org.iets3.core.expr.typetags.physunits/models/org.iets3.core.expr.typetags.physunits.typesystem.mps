@@ -9601,7 +9601,7 @@
     </node>
     <node concept="1YaCAy" id="7i1yFLksiY8" role="1YuTPh">
       <property role="TrG5h" value="unitMul" />
-      <ref role="1YaFvo" to="i3ya:7i1yFLksg8d" resolve="UnitMul" />
+      <ref role="1YaFvo" to="i3ya:7i1yFLksg8d" resolve="UnitMultiplication" />
     </node>
   </node>
   <node concept="1YbPZF" id="7i1yFLkvFCw">

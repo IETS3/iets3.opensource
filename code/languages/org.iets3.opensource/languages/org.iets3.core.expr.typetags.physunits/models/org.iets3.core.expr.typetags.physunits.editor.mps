@@ -3103,7 +3103,7 @@
   </node>
   <node concept="24kQdi" id="7i1yFLkshks">
     <property role="3GE5qa" value="definition.unit" />
-    <ref role="1XX52x" to="i3ya:7i1yFLksg8d" resolve="UnitMul" />
+    <ref role="1XX52x" to="i3ya:7i1yFLksg8d" resolve="UnitMultiplication" />
     <node concept="1WcQYu" id="7i1yFLkshmw" role="2wV5jI">
       <node concept="3EZMnI" id="7i1yFLkshmx" role="1LiK7o">
         <node concept="2iRfu4" id="7i1yFLkshmy" role="2iSdaV" />

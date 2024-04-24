@@ -728,7 +728,7 @@
   <node concept="1TIwiD" id="7i1yFLksg8d">
     <property role="EcuMT" value="8395143721870492173" />
     <property role="3GE5qa" value="definition.unit" />
-    <property role="TrG5h" value="UnitMul" />
+    <property role="TrG5h" value="UnitMultiplication" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="a unit multiplication expression" />
     <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpression" />
