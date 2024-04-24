@@ -17,7 +17,7 @@
       </concept>
       <concept id="5185104661801317038" name="org.iets3.core.expr.typetags.physunits.structure.ValExpression" flags="ng" index="2m5Cep" />
       <concept id="5615525165854719246" name="org.iets3.core.expr.typetags.physunits.structure.Dimension" flags="ng" index="2vTMtG" />
-      <concept id="8395143721870492173" name="org.iets3.core.expr.typetags.physunits.structure.UnitMul" flags="ng" index="wW8yL">
+      <concept id="8395143721870492173" name="org.iets3.core.expr.typetags.physunits.structure.UnitMultiplication" flags="ng" index="wW8yL">
         <child id="8395143721870494462" name="left" index="wW812" />
         <child id="8395143721870495244" name="right" index="wW8iK" />
       </concept>
@@ -259,7 +259,7 @@
     <node concept="_ixoA" id="3NjH4t$iNFx" role="_iOnB" />
     <node concept="CIrOH" id="36kPvG5oSra" role="_iOnB">
       <property role="TrG5h" value="unitless" />
-      <ref role="Rn5ok" node="3xM68GMigWi" resolve="dimensionless" />
+      <ref role="Rn5ok" node="3xM68GMigWi" resolve="unspecified quantity" />
     </node>
     <node concept="_ixoA" id="36kPvG5oSoJ" role="_iOnB" />
   </node>

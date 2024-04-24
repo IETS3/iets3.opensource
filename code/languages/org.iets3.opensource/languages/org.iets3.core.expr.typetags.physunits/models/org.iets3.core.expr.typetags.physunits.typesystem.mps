@@ -8331,12 +8331,12 @@
                             </node>
                             <node concept="2OqwBi" id="4QVp6CWxFqJ" role="37vLTx">
                               <node concept="37vLTw" id="6Yx4TURHND8" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6Yx4TURHND2" resolve="name" />
+                                <ref role="3cqZAo" node="6Yx4TURHND2" resolve="leftName" />
                               </node>
                               <node concept="liA8E" id="4QVp6CWxGpU" role="2OqNvi">
                                 <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String)" resolve="compareTo" />
                                 <node concept="37vLTw" id="6Yx4TURHPE5" role="37wK5m">
-                                  <ref role="3cqZAo" node="6Yx4TURHPDZ" resolve="name" />
+                                  <ref role="3cqZAo" node="6Yx4TURHPDZ" resolve="rightName" />
                                 </node>
                               </node>
                             </node>

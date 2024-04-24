@@ -5659,7 +5659,7 @@
                     </node>
                   </node>
                   <node concept="BsUDl" id="1HYdmFH72$" role="3uHU7B">
-                    <ref role="37wK5l" node="1HYdmFH2Ri" resolve="getStartSymbol" />
+                    <ref role="37wK5l" node="1HYdmFH2Ri" resolve="getStartBracket" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="3tudP__$IR2" role="3uHU7w">

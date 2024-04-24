@@ -105,7 +105,7 @@
         <child id="1741902046316071821" name="type" index="2S7B4z" />
       </concept>
       <concept id="5185104661801317038" name="org.iets3.core.expr.typetags.physunits.structure.ValExpression" flags="ng" index="2m5Cep" />
-      <concept id="8395143721870492173" name="org.iets3.core.expr.typetags.physunits.structure.UnitMul" flags="ng" index="wW8yL">
+      <concept id="8395143721870492173" name="org.iets3.core.expr.typetags.physunits.structure.UnitMultiplication" flags="ng" index="wW8yL">
         <child id="8395143721870494462" name="left" index="wW812" />
         <child id="8395143721870495244" name="right" index="wW8iK" />
       </concept>
@@ -4353,7 +4353,7 @@
         <property role="TrG5h" value="duplicateUnits" />
         <node concept="CIrOH" id="se9FQY_d4G" role="_iOnC">
           <property role="TrG5h" value="m" />
-          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="dimensionless" />
+          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="unspecified quantity" />
           <node concept="7CXmI" id="se9FQY_jZ2" role="lGtFl">
             <node concept="1TM$A" id="se9FQY_Fh3" role="7EUXB">
               <node concept="2PYRI3" id="se9FQY_Fh4" role="3lydEf">
@@ -4364,7 +4364,7 @@
         </node>
         <node concept="CIrOH" id="se9FQY_d4H" role="_iOnC">
           <property role="TrG5h" value="s" />
-          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="dimensionless" />
+          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="unspecified quantity" />
           <node concept="7CXmI" id="se9FQY_M43" role="lGtFl">
             <node concept="1TM$A" id="se9FQYA9oM" role="7EUXB">
               <node concept="2PYRI3" id="se9FQYA9oN" role="3lydEf">
@@ -5808,7 +5808,7 @@
         <node concept="CIrOH" id="1FkCRmRXPlk" role="_iOnC">
           <property role="TrG5h" value="c" />
           <property role="1xMkt3" value="true" />
-          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="dimensionless" />
+          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="unspecified quantity" />
           <node concept="7CXmI" id="1FkCRmRZdWA" role="lGtFl">
             <node concept="29bkU" id="1FkCRmRZe3Z" role="7EUXB">
               <node concept="2PQEqo" id="1FkCRmRZe40" role="3lydCh">
@@ -9443,7 +9443,7 @@
         <node concept="CIrOH" id="EsE2hyiBRT" role="_iOnC">
           <property role="TrG5h" value="myunit" />
           <property role="1xMkt3" value="false" />
-          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="dimensionless" />
+          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="unspecified quantity" />
           <node concept="7CXmI" id="EsE2hyiBST" role="lGtFl">
             <node concept="1TM$A" id="EsE2hyiBTk" role="7EUXB">
               <node concept="2PYRI3" id="EsE2hyiBTl" role="3lydEf">
@@ -9460,7 +9460,7 @@
         <node concept="CIrOH" id="EsE2hyiChM" role="_iOnC">
           <property role="TrG5h" value="myunit2" />
           <property role="1xMkt3" value="true" />
-          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="dimensionless" />
+          <ref role="Rn5ok" to="8ps7:3xM68GMigWi" resolve="unspecified quantity" />
           <node concept="7CXmI" id="EsE2hyiCmR" role="lGtFl">
             <node concept="29bkU" id="EsE2hyiCnm" role="7EUXB">
               <node concept="2PQEqo" id="EsE2hyiCnn" role="3lydCh">
@@ -9715,7 +9715,7 @@
                 <node concept="ZC_QK" id="EsE2hyjkgY" role="2tJFKM">
                   <ref role="2aWVGs" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
                   <node concept="ZC_QK" id="EsE2hyjkgZ" role="2aWVGa">
-                    <ref role="2aWVGs" to="8ps7:3xM68GMigWi" resolve="dimensionless" />
+                    <ref role="2aWVGs" to="8ps7:3xM68GMigWi" resolve="unspecified quantity" />
                   </node>
                 </node>
               </node>
