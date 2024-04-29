@@ -11,6 +11,14 @@
    			</Library>
           </value>
         </entry>
+        <entry key='org.mpsqa.allInOne'>
+          <value>
+            <Library>
+              <option name='name' value='org.mpsqa.allInOne' />
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/org.mpsqa.allInOne' />
+            </Library>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

@@ -2,7 +2,6 @@
 <model ref="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -80,6 +79,9 @@
     <node concept="PrWs8" id="2JXkwhJfSCx" role="PrDN$">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="9MvF2i4gt7" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3jsZ">
     <property role="TrG5h" value="Unit" />
@@ -115,6 +117,9 @@
     </node>
     <node concept="PrWs8" id="3WnwFDbcwDv" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+    <node concept="PrWs8" id="9MvF2i48Ez" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3k4t">
@@ -153,7 +158,7 @@
       <property role="20kJfa" value="unit" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8337440621611297532" />
-      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="Unit" />
+      <ref role="20lvS9" node="7eOyx9r3k3e" resolve="IUnit" />
     </node>
     <node concept="RPilO" id="7cBI1LfYpmP" role="lGtFl">
       <ref role="RPilL" node="7eOyx9r3qFW" resolve="unit" />
