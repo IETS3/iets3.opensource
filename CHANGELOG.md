@@ -19,6 +19,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - Numbers ranges now support exclusive and inclusive intervals.
+- Various small improvements and fixes were made in  `org.iets3.core.expr.typetags.physunits`.
 
 ## March 2024
 
