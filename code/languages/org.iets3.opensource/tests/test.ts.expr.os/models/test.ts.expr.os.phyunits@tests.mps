@@ -708,6 +708,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
         <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
@@ -9427,6 +9431,10 @@
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <property role="TrG5h" value="ErrorMessages" />
     <node concept="1qefOq" id="EsE2hyiAIa" role="1SKRRt">
+      <node concept="15s5l7" id="7CCjMgELbzq" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  SIBaseUnits.unitless (unit) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;unit&quot;;FLAVOUR_RULE_ID=&quot;[r:4095c62d-96cb-40e8-ab55-8cbe7499c2c8(org.iets3.core.expr.typetags.physunits.constraints)/3359996257533797539]&quot;;" />
+        <property role="huDt6" value="The reference  SIBaseUnits.unitless (unit) is out of search scope" />
+      </node>
       <node concept="_iOnV" id="EsE2hyiAI9" role="1qenE9">
         <property role="TrG5h" value="TestLibrary" />
         <node concept="CIrOH" id="EsE2hyfZJe" role="_iOnC">
@@ -9565,6 +9573,87 @@
             </node>
           </node>
         </node>
+        <node concept="2zPypq" id="7CCjMgEyvBD" role="_iOnC">
+          <property role="TrG5h" value="incorrect" />
+          <node concept="30bXRB" id="7CCjMgEyw5a" role="2zPyp_">
+            <property role="30bXRw" value="1" />
+            <node concept="7CXmI" id="7CCjMgEyw$b" role="lGtFl">
+              <node concept="2DdRWr" id="7CCjMgEywHO" role="7EUXB">
+                <node concept="MGsTx" id="7CCjMgEywHP" role="MJxsd">
+                  <ref role="39XzEq" to="t4jv:5aHkq2w4P8w" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2c7tTJ" id="7CCjMgEyvTp" role="2zM23F">
+            <node concept="CIsGf" id="7CCjMgEyw1W" role="2c7tTI">
+              <node concept="CIsvn" id="7CCjMgEyw1V" role="CIi4h">
+                <property role="1xG2w7" value="c" />
+                <ref role="CIi3I" to="8ps7:3xM68GMigWr" resolve="m" />
+              </node>
+            </node>
+            <node concept="mLuIC" id="7CCjMgEyvQS" role="2c7tTw" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="7CCjMgEywQT" role="_iOnC">
+          <property role="TrG5h" value="incorrect2" />
+          <node concept="2c7tTJ" id="7CCjMgEywQY" role="2zM23F">
+            <node concept="mLuIC" id="7CCjMgEywR1" role="2c7tTw" />
+            <node concept="2W5y9F" id="7CCjMgEyxcZ" role="2c7tTI">
+              <node concept="2W5y$k" id="7CCjMgEyxd0" role="2W5ySM">
+                <ref role="2W5z2V" to="8ps7:3xM68GMigWi" resolve="unspecified quantity" />
+              </node>
+            </node>
+          </node>
+          <node concept="1YnStw" id="7CCjMgEyxDj" role="2zPyp_">
+            <node concept="CIsGf" id="7CCjMgEyxDi" role="2c7tTI">
+              <node concept="CIsvn" id="7CCjMgEyxDh" role="CIi4h">
+                <property role="1xG2w7" value="c" />
+                <ref role="CIi3I" to="8ps7:3xM68GMigWr" resolve="m" />
+              </node>
+            </node>
+            <node concept="30bXRB" id="7CCjMgEyxyB" role="1YnStB">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="7CXmI" id="7CCjMgEyxLi" role="lGtFl">
+              <node concept="2DdRWr" id="7CCjMgEyy4d" role="7EUXB">
+                <node concept="MGsTx" id="7CCjMgEyy4e" role="MJxsd">
+                  <ref role="39XzEq" to="t4jv:5aHkq2w4P8w" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="7CCjMgELbGq" role="_iOnC" />
+        <node concept="2zPypq" id="7CCjMgEyybz" role="_iOnC">
+          <property role="TrG5h" value="correct" />
+          <node concept="2c7tTJ" id="7CCjMgEyyb$" role="2zM23F">
+            <node concept="mLuIC" id="7CCjMgEyyb_" role="2c7tTw" />
+            <node concept="CIsGf" id="7CCjMgEDsJY" role="2c7tTI">
+              <node concept="CIsvn" id="7CCjMgEKdYC" role="CIi4h">
+                <ref role="CIi3I" to="8ps7:36kPvG5oSra" resolve="unitless" />
+              </node>
+            </node>
+          </node>
+          <node concept="30bXRB" id="7CCjMgEyybF" role="2zPyp_">
+            <property role="30bXRw" value="1" />
+          </node>
+          <node concept="1z9TsT" id="7CCjMgELbQG" role="lGtFl">
+            <node concept="OjmMv" id="7CCjMgELbQH" role="1w35rA">
+              <node concept="19SGf9" id="7CCjMgELbQI" role="OjmMu">
+                <node concept="19SUe$" id="7CCjMgELbQJ" role="19SJt6">
+                  <property role="19SUeA" value="unitless units are not allowed in libraries but let's ignore the scope error for testing purposes " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="7CXmI" id="7CCjMgELe4L" role="lGtFl">
+            <node concept="7OXhh" id="7CCjMgELedS" role="7EUXB">
+              <property role="GvXf4" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="7CCjMgEywLU" role="_iOnC" />
         <node concept="3GEVxB" id="EsE2hyiAIe" role="3i6evy">
           <ref role="3GEb4d" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
         </node>
