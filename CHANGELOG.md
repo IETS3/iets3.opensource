@@ -11,10 +11,15 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The unnecessary super types of the tuple type were removed and are not necessary anymore.
 
+### Added
+
+- RecordValues can have a customized string representation.
+
 ### Fixed
 
 - Empty-like nodes now automatically select the first code completion entry if there is only one entry.
 - Enum literals now can be compared for equality in the generator.
+- String representation of RecordValues is improved.
 
 ### Changed
 
