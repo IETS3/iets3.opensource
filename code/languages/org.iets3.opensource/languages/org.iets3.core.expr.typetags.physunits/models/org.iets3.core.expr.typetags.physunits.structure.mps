@@ -904,11 +904,6 @@
       <property role="20kJfa" value="dimension" />
       <ref role="20lvS9" node="4RImAbi2nOe" resolve="Dimension" />
     </node>
-    <node concept="1TJgyj" id="u36xDggX7V" role="1TKVEi">
-      <property role="IQ2ns" value="541305080532685307" />
-      <property role="20kJfa" value="node" />
-      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="PrWs8" id="u36xDg6Urr" role="PzmwI">
       <ref role="PrY4T" node="6q45UTyu4OU" resolve="IReference" />
     </node>
