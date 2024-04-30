@@ -2,7 +2,7 @@
 <model ref="r:f6b93d14-1af1-4f84-a11b-cbe2d8c5efff(test.in.expr.os.lambda@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <devkit ref="ec967770-4707-442f-baaf-a8b7bb554717(org.iets3.core.expr.genall.core.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
@@ -92,7 +92,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -194,7 +193,6 @@
   <node concept="_iOnU" id="7cphKbKN3Se">
     <property role="TrG5h" value="doubleLambda" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="2Ss9d8" id="7cphKbKN6I3" role="_iOnB">
       <property role="TrG5h" value="Order" />
       <node concept="2Ss9d7" id="7cphKbKN78D" role="S5Trm">
@@ -616,7 +614,6 @@
   </node>
   <node concept="_iOnU" id="6HHp2WmWc6N">
     <property role="TrG5h" value="lambda" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="2zPypq" id="6HHp2WmWcom" role="_iOnB">
       <property role="TrG5h" value="l1" />
@@ -1383,7 +1380,6 @@
   </node>
   <node concept="_iOnU" id="6HHp2WmWx5q">
     <property role="TrG5h" value="recursionWithLambda" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="2zPypq" id="6HHp2WmWx9C" role="_iOnB">
       <property role="TrG5h" value="plus" />

@@ -9,6 +9,8 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="-1" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
@@ -24,7 +26,8 @@
     <import index="boxz" ref="r:89e950b9-8c66-4fca-a5c0-614e0548d83a(org.iets3.core.expr.math.behavior)" />
     <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
+    <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
+    <import index="1cgy" ref="b804a851-ecf0-4ad4-a0af-ae720b39191a/java:ch.obermuhlner.math.big(org.iets3.core.expr.math.interpreter/)" />
   </imports>
   <registry>
     <language id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods">
@@ -5758,42 +5761,14 @@
                     </node>
                   </node>
                   <node concept="3cpWs6" id="7w1s6DBu1LQ" role="3cqZAp">
-                    <node concept="2OqwBi" id="4pvRh1N9DKS" role="3cqZAk">
-                      <node concept="2ShNRf" id="7w1s6DBu1Mz" role="2Oq$k0">
-                        <node concept="1pGfFk" id="7w1s6DBu5Jd" role="2ShVmc">
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
-                          <node concept="2YIFZM" id="7w1s6DBtYSI" role="37wK5m">
-                            <ref role="37wK5l" to="wyt6:~Math.pow(double,double)" resolve="pow" />
-                            <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-                            <node concept="2OqwBi" id="7w1s6DBtQyu" role="37wK5m">
-                              <node concept="37vLTw" id="7w1s6DBtOTl" role="2Oq$k0">
-                                <ref role="3cqZAo" node="7js_8RCZGA2" resolve="base" />
-                              </node>
-                              <node concept="liA8E" id="7w1s6DBtS01" role="2OqNvi">
-                                <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
-                              </node>
-                            </node>
-                            <node concept="2OqwBi" id="7w1s6DBtZrD" role="37wK5m">
-                              <node concept="37vLTw" id="7w1s6DBtZ9P" role="2Oq$k0">
-                                <ref role="3cqZAo" node="7js_8RD00SQ" resolve="exp" />
-                              </node>
-                              <node concept="liA8E" id="7w1s6DBtZH8" role="2OqNvi">
-                                <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
+                    <node concept="2YIFZM" id="45pzosSjZrK" role="3cqZAk">
+                      <ref role="37wK5l" to="1cgy:~DefaultBigDecimalMath.pow(java.math.BigDecimal,java.math.BigDecimal)" resolve="pow" />
+                      <ref role="1Pybhc" to="1cgy:~DefaultBigDecimalMath" resolve="DefaultBigDecimalMath" />
+                      <node concept="37vLTw" id="45pzosSk0kO" role="37wK5m">
+                        <ref role="3cqZAo" node="7js_8RCZGA2" resolve="base" />
                       </node>
-                      <node concept="liA8E" id="4pvRh1N9Ekb" role="2OqNvi">
-                        <ref role="37wK5l" to="xlxw:~BigDecimal.setScale(int,java.math.RoundingMode)" resolve="setScale" />
-                        <node concept="10M0yZ" id="4pvRh1N9QDF" role="37wK5m">
-                          <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                          <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
-                        </node>
-                        <node concept="Rm8GO" id="4pvRh1Nacwv" role="37wK5m">
-                          <ref role="Rm8GQ" to="xlxw:~RoundingMode.FLOOR" resolve="FLOOR" />
-                          <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
-                        </node>
+                      <node concept="37vLTw" id="45pzosSk0qk" role="37wK5m">
+                        <ref role="3cqZAo" node="7js_8RD00SQ" resolve="exp" />
                       </node>
                     </node>
                   </node>
