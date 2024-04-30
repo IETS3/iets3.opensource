@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -476,10 +476,33 @@
           <node concept="3clFbS" id="4J4oiBBub$w" role="3clF47">
             <node concept="3clFbF" id="4J4oiBBucs0" role="3cqZAp">
               <node concept="2ShNRf" id="4J4oiBBucrW" role="3clFbG">
-                <node concept="HV5vD" id="4J4oiBBudXR" role="2ShVmc">
-                  <ref role="HV5vE" to="2j0k:4O9rw8aCYPg" resolve="EmptyDateRangeValue" />
-                </node>
                 <node concept="raruj" id="4J4oiBBueBP" role="lGtFl" />
+                <node concept="1pGfFk" id="7MYpJaZbVfb" role="2ShVmc">
+                  <ref role="37wK5l" to="2j0k:71iF5NcALUq" resolve="EmptyDateRangeValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="7MYpJaZbVtG" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="mi3w:7MYpJaZ9zRp" resolve="CurrentDateExpr" />
+      <node concept="1Koe21" id="7MYpJaZbVtH" role="1lVwrX">
+        <node concept="3clFb_" id="7MYpJaZbVtI" role="1Koe22">
+          <property role="DiZV1" value="false" />
+          <property role="od$2w" value="false" />
+          <property role="2aFKle" value="false" />
+          <property role="TrG5h" value="foo" />
+          <node concept="3Tm1VV" id="7MYpJaZbVtJ" role="1B3o_S" />
+          <node concept="3cqZAl" id="7MYpJaZbVtK" role="3clF45" />
+          <node concept="3clFbS" id="7MYpJaZbVtL" role="3clF47">
+            <node concept="3clFbF" id="7MYpJaZbVtM" role="3cqZAp">
+              <node concept="2YIFZM" id="7MYpJaZbooO" role="3clFbG">
+                <ref role="37wK5l" to="28m1:~LocalDate.now()" resolve="now" />
+                <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
+                <node concept="raruj" id="7MYpJaZc82W" role="lGtFl" />
               </node>
             </node>
           </node>

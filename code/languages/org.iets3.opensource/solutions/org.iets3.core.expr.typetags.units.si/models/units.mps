@@ -91,7 +91,7 @@
       <property role="TrG5h" value="temperature" />
     </node>
     <node concept="Rn5op" id="1KUmgSFvJUq" role="_iOnB">
-      <property role="TrG5h" value="weight" />
+      <property role="TrG5h" value="mass" />
     </node>
     <node concept="Rn5op" id="1KUmgSFvJUr" role="_iOnB">
       <property role="TrG5h" value="time" />
@@ -110,7 +110,7 @@
     </node>
     <node concept="CIrOH" id="5XaocLWHSS6" role="_iOnB">
       <property role="TrG5h" value="kg" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="5XaocLWHSS7" role="_iOnB">
       <property role="TrG5h" value="mol" />
@@ -864,28 +864,28 @@
       <property role="1WsWdv" value="weight scaled" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fy7C" role="_iOnB">
-      <property role="TrG5h" value="ngramm" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <property role="TrG5h" value="ng" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fye0" role="_iOnB">
-      <property role="TrG5h" value="µgramm" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <property role="TrG5h" value="µg" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5Fy6n" role="_iOnB">
-      <property role="TrG5h" value="mgramm" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <property role="TrG5h" value="mg" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5FxTe" role="_iOnB">
-      <property role="TrG5h" value="gramm" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <property role="TrG5h" value="g" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="CIrOH" id="69HsIy5FyhU" role="_iOnB">
       <property role="TrG5h" value="ton" />
-      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="weight" />
+      <ref role="Rn5ok" node="1KUmgSFvJUq" resolve="mass" />
     </node>
     <node concept="TRoc0" id="69HsIy5Fyjf" role="_iOnB">
       <ref role="27Q$ZQ" node="5XaocLWHSS6" resolve="kg" />
-      <ref role="27Q$ZR" node="69HsIy5FxTe" resolve="gramm" />
+      <ref role="27Q$ZR" node="69HsIy5FxTe" resolve="g" />
       <node concept="27LzZq" id="69HsIy5Fyjh" role="27P04L">
         <node concept="30dDTi" id="69HsIy5GMkW" role="27K$mF">
           <node concept="2m5Cep" id="69HsIy5FykU" role="30dEsF" />
@@ -896,8 +896,8 @@
       </node>
     </node>
     <node concept="TRoc0" id="69HsIy5GWUQ" role="_iOnB">
-      <ref role="27Q$ZQ" node="69HsIy5FxTe" resolve="gramm" />
       <ref role="27Q$ZR" node="5XaocLWHSS6" resolve="kg" />
+      <ref role="27Q$ZQ" node="69HsIy5FxTe" resolve="g" />
       <node concept="27LzZq" id="69HsIy5GWUR" role="27P04L">
         <node concept="30dvO6" id="69HsIy5GX2G" role="27K$mF">
           <node concept="2m5Cep" id="69HsIy5GWUT" role="30dEsF" />
@@ -908,8 +908,8 @@
       </node>
     </node>
     <node concept="TRoc0" id="69HsIy5Fyn9" role="_iOnB">
-      <ref role="27Q$ZR" node="69HsIy5Fy6n" resolve="mgramm" />
-      <ref role="27Q$ZQ" node="69HsIy5FxTe" resolve="gramm" />
+      <ref role="27Q$ZR" node="69HsIy5Fy6n" resolve="mg" />
+      <ref role="27Q$ZQ" node="69HsIy5FxTe" resolve="g" />
       <node concept="27LzZq" id="69HsIy5Fyna" role="27P04L">
         <node concept="30dDTi" id="69HsIy5GMnB" role="27K$mF">
           <node concept="2m5Cep" id="69HsIy5Fynd" role="30dEsF" />
@@ -920,8 +920,8 @@
       </node>
     </node>
     <node concept="TRoc0" id="69HsIy5GXok" role="_iOnB">
-      <ref role="27Q$ZQ" node="69HsIy5Fy6n" resolve="mgramm" />
-      <ref role="27Q$ZR" node="69HsIy5FxTe" resolve="gramm" />
+      <ref role="27Q$ZQ" node="69HsIy5Fy6n" resolve="mg" />
+      <ref role="27Q$ZR" node="69HsIy5FxTe" resolve="g" />
       <node concept="27LzZq" id="69HsIy5GXol" role="27P04L">
         <node concept="30dvO6" id="69HsIy5GXvO" role="27K$mF">
           <node concept="2m5Cep" id="69HsIy5GXon" role="30dEsF" />

@@ -25,7 +25,9 @@
       <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
         <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
       </concept>
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -110,6 +112,9 @@
     </node>
     <node concept="PrWs8" id="60Qa1k_uzVZ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
+    <node concept="PrWs8" id="3Rh3xXbd9Oc" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6xvNSEj6BMb" resolve="IComplexTypeSupportsEquals" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUinsw">
@@ -387,6 +392,9 @@
     <property role="EcuMT" value="8872269265515619803" />
     <property role="R4oN_" value="an existential quantifier (true if at least one is true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+    <node concept="PrWs8" id="7G4S3eSr2T3" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2RfRi">
     <property role="3GE5qa" value="collection" />
@@ -395,6 +403,9 @@
     <property role="EcuMT" value="8872269265518788050" />
     <property role="R4oN_" value="an universal quantifier (true if all elements are true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+    <node concept="PrWs8" id="7G4S3eSr2T0" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2Wbm7">
     <property role="TrG5h" value="SetType" />
@@ -462,6 +473,9 @@
     <ref role="1TJDcQ" node="4_KMC82DFps" resolve="MapLikeType" />
     <node concept="PrWs8" id="60Qa1k_uVII" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
+    <node concept="PrWs8" id="6iWyECKYPfq" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6xvNSEj6BMb" resolve="IComplexTypeSupportsEquals" />
     </node>
     <node concept="1TJgyj" id="7kYh9WszdBR" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1089,6 +1103,9 @@
     <property role="EcuMT" value="444732437356043012" />
     <property role="R4oN_" value="an universal quantifier (true if all elements are true) that passes the element's index into the closure as well" />
     <ref role="1TJDcQ" node="oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
+    <node concept="asaX9" id="7G4S3eT76i8" role="lGtFl">
+      <property role="YLQ7P" value="Use AllOp with an IndexExpr instead" />
+    </node>
   </node>
   <node concept="1TIwiD" id="oG0sI$GQkF">
     <property role="3GE5qa" value="" />
@@ -1106,6 +1123,9 @@
     <property role="EcuMT" value="4481921169623440367" />
     <property role="R4oN_" value="an existential quantifier (true if at least one is true) that passes the element's index into the closure as well." />
     <ref role="1TJDcQ" node="oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
+    <node concept="asaX9" id="7G4S3eT76i_" role="lGtFl">
+      <property role="YLQ7P" value="Use AnyOp with an IndexExpr instead" />
+    </node>
   </node>
   <node concept="1TIwiD" id="lR2RIFOEit">
     <property role="EcuMT" value="393796118209799325" />

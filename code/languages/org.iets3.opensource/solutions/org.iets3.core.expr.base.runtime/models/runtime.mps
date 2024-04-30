@@ -2,11 +2,11 @@
 <model ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
@@ -235,9 +235,14 @@
         <child id="2546654756694997556" name="reference" index="92FcQ" />
         <child id="3106559687488913694" name="line" index="2XjZqd" />
       </concept>
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -933,7 +938,7 @@
               <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
             </node>
             <node concept="liA8E" id="2NHHcg2Kzwb" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:2NHHcg2KrmD" resolve="computerSupertype" />
+              <ref role="37wK5l" to="oq0c:2NHHcg2KrmD" resolve="computeSupertype" />
               <node concept="37vLTw" id="2NHHcg2KzyC" role="37wK5m">
                 <ref role="3cqZAo" node="2NHHcg2KyAZ" resolve="types" />
               </node>
@@ -1012,7 +1017,7 @@
               <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
             </node>
             <node concept="liA8E" id="3f3yNhCT_r4" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:2NHHcg2KrmD" resolve="computerSupertype" />
+              <ref role="37wK5l" to="oq0c:2NHHcg2KrmD" resolve="computeSupertype" />
               <node concept="37vLTw" id="3f3yNhCTG78" role="37wK5m">
                 <ref role="3cqZAo" node="3f3yNhCT_Y4" resolve="types" />
               </node>
@@ -1463,14 +1468,39 @@
                 <node concept="3uibUv" id="3NUSEp5y0uz" role="1tU5fm">
                   <ref role="3uigEE" to="oq0c:3NUSEp5xI6A" resolve="IdentifierConfigurator" />
                 </node>
-                <node concept="2OqwBi" id="3NUSEp5y0Dx" role="33vP2m">
-                  <node concept="2OqwBi" id="3NUSEp5y0Dy" role="2Oq$k0">
-                    <node concept="37vLTw" id="3NUSEp5y0Dz" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3NUSEp5xXz7" resolve="ep" />
+                <node concept="2OqwBi" id="12O03AaWN6D" role="33vP2m">
+                  <node concept="2OqwBi" id="3NUSEp5y0Dx" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3NUSEp5y0Dy" role="2Oq$k0">
+                      <node concept="37vLTw" id="3NUSEp5y0Dz" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3NUSEp5xXz7" resolve="ep" />
+                      </node>
+                      <node concept="SfwO_" id="3NUSEp5y0D$" role="2OqNvi" />
                     </node>
-                    <node concept="SfwO_" id="3NUSEp5y0D$" role="2OqNvi" />
+                    <node concept="2S7cBI" id="12O03AaWMHE" role="2OqNvi">
+                      <node concept="1bVj0M" id="12O03AaWMHF" role="23t8la">
+                        <node concept="3clFbS" id="12O03AaWMHG" role="1bW5cS">
+                          <node concept="3clFbF" id="12O03AaWMHH" role="3cqZAp">
+                            <node concept="2OqwBi" id="12O03AaWMHI" role="3clFbG">
+                              <node concept="37vLTw" id="12O03AaWMHJ" role="2Oq$k0">
+                                <ref role="3cqZAo" node="12O03AaWMHL" resolve="it" />
+                              </node>
+                              <node concept="liA8E" id="12O03AaWMHK" role="2OqNvi">
+                                <ref role="37wK5l" to="oq0c:12O03AaWLhs" resolve="getPriorityLevel" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Rh6nW" id="12O03AaWMHL" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="12O03AaWMHM" role="1tU5fm" />
+                        </node>
+                      </node>
+                      <node concept="1nlBCl" id="12O03AaWMHN" role="2S7zOq">
+                        <property role="3clFbU" value="false" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="1uHKPH" id="3NUSEp5y1kG" role="2OqNvi" />
+                  <node concept="1uHKPH" id="12O03AaWNXb" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -1532,6 +1562,16 @@
         <ref role="3uigEE" to="oq0c:3NUSEp5xI6A" resolve="IdentifierConfigurator" />
       </node>
       <node concept="3Tm1VV" id="3NUSEp5xXzL" role="1B3o_S" />
+      <node concept="P$JXv" id="x6l$aoH31T" role="lGtFl">
+        <node concept="TZ5HA" id="x6l$aoH31U" role="TZ5H$">
+          <node concept="1dT_AC" id="x6l$aoH31V" role="1dT_Ay">
+            <property role="1dT_AB" value="This method will chose from the available Extension Point (EP) implementations the one with the highest priority or fall back to the DefaultIdentifierConfigurator implementation" />
+          </node>
+        </node>
+        <node concept="x79VA" id="x6l$aoH31W" role="3nqlJM">
+          <property role="x79VB" value="IdentifierConfigurator, the EP implementation with the highest priority or the DefaultIdentifierConfigurator as fall back" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="6fmG8CYTWFa" role="jymVt" />
     <node concept="2YIFZL" id="3NUSEp5y9$n" role="jymVt">
@@ -1586,6 +1626,48 @@
       <node concept="3Tm1VV" id="3NUSEp5yd90" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6fmG8CYTYFr" role="jymVt" />
+    <node concept="2YIFZL" id="2TlZyI4PJU1" role="jymVt">
+      <property role="TrG5h" value="reset" />
+      <node concept="3clFbS" id="2TlZyI4PJU4" role="3clF47">
+        <node concept="3clFbF" id="2TlZyI4PK0$" role="3cqZAp">
+          <node concept="37vLTI" id="2TlZyI4PKg6" role="3clFbG">
+            <node concept="10Nm6u" id="2TlZyI4PKjR" role="37vLTx" />
+            <node concept="37vLTw" id="2TlZyI4PK9u" role="37vLTJ">
+              <ref role="3cqZAo" node="3NUSEp5xWmS" resolve="identConfig" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2TlZyI4PJNd" role="1B3o_S" />
+      <node concept="3cqZAl" id="2TlZyI4PJSK" role="3clF45" />
+      <node concept="P$JXv" id="x6l$aoGTbv" role="lGtFl">
+        <node concept="TZ5HA" id="x6l$aoGTbw" role="TZ5H$">
+          <node concept="1dT_AC" id="x6l$aoGTbx" role="1dT_Ay">
+            <property role="1dT_AB" value="This method is only intended for testing purposes!" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="x6l$aoH3dJ" role="TZ5H$">
+          <node concept="1dT_AC" id="x6l$aoH3dK" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="x6l$aoH24_" role="TZ5H$">
+          <node concept="1dT_AC" id="x6l$aoH24A" role="1dT_Ay">
+            <property role="1dT_AB" value="It allows to reset the chosen ExtensionPoint implementation for the EP identifierConfigurator" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="x6l$aoH2dw" role="TZ5H$">
+          <node concept="1dT_AC" id="x6l$aoH2dx" role="1dT_Ay">
+            <property role="1dT_AB" value="For more information see TestingIdentifierConfiguratorEP: " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="x6l$aoH306" role="TZ5H$">
+          <node concept="1dT_AC" id="x6l$aoH307" role="1dT_Ay">
+            <property role="1dT_AB" value="http://127.0.0.1:63320/node?ref=r%3A6a32786e-0823-4465-b671-9705159d21d5%28test.in.expr.os.messages%40tests%29%2F3338854161630853284" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="6fmG8CYTWg2" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3nVyItrYWd7">

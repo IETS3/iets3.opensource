@@ -454,6 +454,7 @@
     <property role="3GE5qa" value="quote" />
     <property role="TrG5h" value="QuotedTermType" />
     <property role="R4oN_" value="a quoted term type" />
+    <property role="34LRSv" value="quoted" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="28$LOSAflsv" role="1TKVEi">
       <property role="IQ2ns" value="2460310434914064159" />

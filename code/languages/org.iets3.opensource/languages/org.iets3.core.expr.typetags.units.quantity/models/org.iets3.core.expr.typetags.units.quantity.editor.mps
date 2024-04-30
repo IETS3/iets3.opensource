@@ -500,8 +500,8 @@
       <node concept="jtDJS" id="3j3yk3guLE3" role="1LiK7o">
         <ref role="1k5W1q" to="u5dy:4M31vJayoGp" resolve="UnitTag" />
         <node concept="1iCGBv" id="3j3yk3guLEf" role="jn6J4">
-          <ref role="1NtTu8" to="a0oj:71Zj$i0ct2e" resolve="quantity" />
           <ref role="1ERwB7" to="u5dy:6iN55ZJbWMT" resolve="deleteUnit" />
+          <ref role="1NtTu8" to="a0oj:71Zj$i0ct2e" resolve="quantity" />
           <node concept="1sVBvm" id="3j3yk3guLEh" role="1sWHZn">
             <node concept="3F0A7n" id="3j3yk3guLEr" role="2wV5jI">
               <property role="1Intyy" value="true" />
