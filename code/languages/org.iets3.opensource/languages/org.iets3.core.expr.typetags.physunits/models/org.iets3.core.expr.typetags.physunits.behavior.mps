@@ -11919,21 +11919,14 @@
                 <node concept="2OqwBi" id="2JXkwhJgnmA" role="33vP2m">
                   <node concept="2OqwBi" id="2JXkwhJgnmB" role="2Oq$k0">
                     <node concept="2OqwBi" id="2JXkwhJgnmC" role="2Oq$k0">
-                      <node concept="2OqwBi" id="2JXkwhJgnmD" role="2Oq$k0">
-                        <node concept="13iPFW" id="2JXkwhJgnmE" role="2Oq$k0" />
-                        <node concept="2Xjw5R" id="2JXkwhJgnmF" role="2OqNvi">
-                          <node concept="1xMEDy" id="2JXkwhJgnmG" role="1xVPHs">
-                            <node concept="chp4Y" id="2JXkwhJgnmH" role="ri$Ld">
-                              <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
                       <node concept="2qgKlT" id="2JXkwhJgnmI" role="2OqNvi">
                         <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
                         <node concept="35c_gC" id="3Q$zA1CCTLv" role="37wK5m">
                           <ref role="35c_gD" to="i3ya:VmEWGR2Mzb" resolve="ConversionRule" />
                         </node>
+                      </node>
+                      <node concept="37vLTw" id="tQsiKdRTNV" role="2Oq$k0">
+                        <ref role="3cqZAo" node="tQsiKdRNNc" resolve="scope" />
                       </node>
                     </node>
                     <node concept="v3k3i" id="2JXkwhJgnmK" role="2OqNvi">
@@ -12356,9 +12349,21 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="tQsiKdRNNc" role="3clF46">
+        <property role="TrG5h" value="scope" />
+        <node concept="3Tqbb2" id="tQsiKdRNNb" role="1tU5fm">
+          <ref role="ehGHo" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="2x0M_l2hX_w" role="13h7CS">
       <property role="TrG5h" value="getImplicitConversionSpecifier" />
+      <node concept="37vLTG" id="tQsiKedju7" role="3clF46">
+        <property role="TrG5h" value="scope" />
+        <node concept="3Tqbb2" id="tQsiKedju8" role="1tU5fm">
+          <ref role="ehGHo" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="2x0M_l2hX_x" role="1B3o_S" />
       <node concept="3clFbS" id="2x0M_l2hX_z" role="3clF47">
         <node concept="3clFbJ" id="2x0M_l2OhNI" role="3cqZAp">
@@ -12389,6 +12394,9 @@
                   <node concept="13iPFW" id="3wrpJuqInDg" role="2Oq$k0" />
                   <node concept="2qgKlT" id="3wrpJuqInDh" role="2OqNvi">
                     <ref role="37wK5l" node="3_TFq$0_vSx" resolve="getApplicableConversionSpecifiers" />
+                    <node concept="37vLTw" id="tQsiKdRYFj" role="37wK5m">
+                      <ref role="3cqZAo" node="tQsiKedju7" resolve="scope" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="3wrpJuqItKF" role="2OqNvi">
@@ -12517,6 +12525,9 @@
                     <node concept="13iPFW" id="3wrpJurTs7e" role="2Oq$k0" />
                     <node concept="2qgKlT" id="3wrpJurTs7f" role="2OqNvi">
                       <ref role="37wK5l" node="3_TFq$0_vSx" resolve="getApplicableConversionSpecifiers" />
+                      <node concept="37vLTw" id="tQsiKdS7JS" role="37wK5m">
+                        <ref role="3cqZAo" node="tQsiKedju7" resolve="scope" />
+                      </node>
                     </node>
                   </node>
                 </node>

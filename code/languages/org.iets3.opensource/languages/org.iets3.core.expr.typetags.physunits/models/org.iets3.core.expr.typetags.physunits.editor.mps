@@ -3516,6 +3516,16 @@
                 <node concept="pncrf" id="2x0M_l2i96i" role="2Oq$k0" />
                 <node concept="2qgKlT" id="2x0M_l2i9TQ" role="2OqNvi">
                   <ref role="37wK5l" to="rppw:2x0M_l2hX_w" resolve="getImplicitConversionSpecifier" />
+                  <node concept="2OqwBi" id="tQsiKedm_o" role="37wK5m">
+                    <node concept="pncrf" id="tQsiKedmix" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="tQsiKedmPo" role="2OqNvi">
+                      <node concept="1xMEDy" id="tQsiKedmPq" role="1xVPHs">
+                        <node concept="chp4Y" id="tQsiKedn0L" role="ri$Ld">
+                          <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="3x8VRR" id="2x0M_l2ianZ" role="2OqNvi" />
