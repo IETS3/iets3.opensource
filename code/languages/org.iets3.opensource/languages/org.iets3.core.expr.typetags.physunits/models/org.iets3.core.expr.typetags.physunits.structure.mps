@@ -116,6 +116,9 @@
     <node concept="PrWs8" id="6q45UTyLsMH" role="PzmwI">
       <ref role="PrY4T" node="6q45UTyLsdG" resolve="IHaveIUnitSpecification" />
     </node>
+    <node concept="PrWs8" id="70JbBC5htSF" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4yaQL1YaUM8" resolve="IHasQualifiedName" />
+    </node>
     <node concept="1TJgyi" id="2hbaSyABN4s" role="1TKVEl">
       <property role="IQ2nx" value="2615231874529702172" />
       <property role="TrG5h" value="scaling" />
