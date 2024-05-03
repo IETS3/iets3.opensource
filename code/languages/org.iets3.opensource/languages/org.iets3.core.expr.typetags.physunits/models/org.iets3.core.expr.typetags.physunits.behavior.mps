@@ -14011,7 +14011,7 @@
               </node>
             </node>
             <node concept="3TrcHB" id="45a4DZ02XoC" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <ref role="3TsBF5" to="i3ya:9M53mFVz1L" resolve="symbol" />
             </node>
           </node>
         </node>
