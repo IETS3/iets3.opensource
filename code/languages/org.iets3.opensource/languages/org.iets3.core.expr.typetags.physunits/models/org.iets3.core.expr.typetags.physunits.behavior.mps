@@ -14907,6 +14907,47 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="70JbBCdAAN5" role="3cqZAp">
+          <node concept="3clFbS" id="70JbBCdAAN7" role="3clFbx">
+            <node concept="3clFbF" id="70JbBCdAGkj" role="3cqZAp">
+              <node concept="37vLTI" id="70JbBCdAHfq" role="3clFbG">
+                <node concept="3clFbT" id="70JbBCdAHnI" role="37vLTx" />
+                <node concept="37vLTw" id="70JbBCdAGkh" role="37vLTJ">
+                  <ref role="3cqZAo" node="3EoIKdtLk4S" resolve="leftIsExponent" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="70JbBCdAEuz" role="3clFbw">
+            <node concept="2OqwBi" id="70JbBCdAFvP" role="3uHU7w">
+              <node concept="2OqwBi" id="70JbBCdAEWT" role="2Oq$k0">
+                <node concept="37vLTw" id="70JbBCdAEGY" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3EoIKdtLm2M" resolve="rightExp" />
+                </node>
+                <node concept="2qgKlT" id="70JbBCdAF8Y" role="2OqNvi">
+                  <ref role="37wK5l" node="1JynhuWslGU" resolve="getExp" />
+                </node>
+              </node>
+              <node concept="liA8E" id="70JbBCdAG59" role="2OqNvi">
+                <ref role="37wK5l" node="5dSoB2LVcf2" resolve="isNegative" />
+              </node>
+            </node>
+            <node concept="1Wc70l" id="70JbBCdACHX" role="3uHU7B">
+              <node concept="2OqwBi" id="70JbBCdABIO" role="3uHU7B">
+                <node concept="37vLTw" id="70JbBCdAB5C" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3EoIKdtHFSj" resolve="leftExp" />
+                </node>
+                <node concept="3x8VRR" id="70JbBCdACcA" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="70JbBCdAD1x" role="3uHU7w">
+                <node concept="37vLTw" id="70JbBCdACSQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3EoIKdtLm2M" resolve="rightExp" />
+                </node>
+                <node concept="3x8VRR" id="70JbBCdADC$" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3EoIKdtLe71" role="3cqZAp">
           <node concept="3cpWsn" id="3EoIKdtLe74" role="3cpWs9">
             <property role="TrG5h" value="topExpr" />
@@ -14958,17 +14999,12 @@
               <ref role="3uigEE" node="5dSoB2LMRlC" resolve="Fraction" />
             </node>
             <node concept="2OqwBi" id="7Mca05moGDF" role="33vP2m">
-              <node concept="2OqwBi" id="7Mca05mrhej" role="2Oq$k0">
-                <node concept="2OqwBi" id="15KrVXSDA5$" role="2Oq$k0">
-                  <node concept="37vLTw" id="15KrVXSD_LN" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3EoIKdtLh$B" resolve="baseExpr" />
-                  </node>
-                  <node concept="2qgKlT" id="15KrVXSDAgn" role="2OqNvi">
-                    <ref role="37wK5l" node="1JynhuWslGU" resolve="getExp" />
-                  </node>
+              <node concept="2OqwBi" id="15KrVXSDA5$" role="2Oq$k0">
+                <node concept="37vLTw" id="15KrVXSD_LN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3EoIKdtLh$B" resolve="baseExpr" />
                 </node>
-                <node concept="liA8E" id="7Mca05mrhQZ" role="2OqNvi">
-                  <ref role="37wK5l" node="5dSoB2LNP7n" resolve="reciprocal" />
+                <node concept="2qgKlT" id="15KrVXSDAgn" role="2OqNvi">
+                  <ref role="37wK5l" node="1JynhuWslGU" resolve="getExp" />
                 </node>
               </node>
               <node concept="liA8E" id="7Mca05moHft" role="2OqNvi">
