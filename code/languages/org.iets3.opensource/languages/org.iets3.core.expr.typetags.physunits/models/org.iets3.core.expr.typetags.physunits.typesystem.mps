@@ -6720,13 +6720,8 @@
                     <node concept="2qgKlT" id="1JynhuWsshT" role="2OqNvi">
                       <ref role="37wK5l" to="rppw:1JynhuWsqnp" resolve="setExp" />
                       <node concept="2OqwBi" id="73cP8DpYQ_w" role="37wK5m">
-                        <node concept="2OqwBi" id="5BsFqGHUS_y" role="2Oq$k0">
-                          <node concept="37vLTw" id="73cP8DpYpUd" role="2Oq$k0">
-                            <ref role="3cqZAo" node="45a4DYZIIhM" resolve="exp" />
-                          </node>
-                          <node concept="liA8E" id="5BsFqGHUU0D" role="2OqNvi">
-                            <ref role="37wK5l" to="rppw:5dSoB2LNP7n" resolve="reciprocal" />
-                          </node>
+                        <node concept="37vLTw" id="73cP8DpYpUd" role="2Oq$k0">
+                          <ref role="3cqZAo" node="45a4DYZIIhM" resolve="exp" />
                         </node>
                         <node concept="liA8E" id="73cP8DpYRTG" role="2OqNvi">
                           <ref role="37wK5l" to="rppw:73cP8DpYBze" resolve="negate" />

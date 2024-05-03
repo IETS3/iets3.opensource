@@ -317,17 +317,12 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="Φ" />
       <node concept="2W5y9F" id="6q45UTzr_nz" role="4gtQf">
-        <node concept="2WfEyl" id="4RImAbhwezK" role="2W5ySM">
-          <node concept="2W5y$k" id="4RImAbhwezL" role="2BJG10">
+        <node concept="2W2IQR" id="70JbBCbZLqd" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCbZLqe" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
           </node>
-          <node concept="2W2HD0" id="4RImAbhwezM" role="2BJJPC">
-            <node concept="2W5y$k" id="4RImAbhwezN" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
-            </node>
-            <node concept="CIsvk" id="4RImAbhwezO" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
+          <node concept="2W5y$k" id="70JbBCbZLqf" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
           </node>
         </node>
       </node>
@@ -337,37 +332,27 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="G" />
       <node concept="2W5y9F" id="6q45UTzr_nD" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_nE" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_nF" role="2BJG10">
+        <node concept="2W2IQR" id="70JbBCc1098" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCc1099" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_nG" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_nH" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigXH" resolve="voltage" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_nI" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
+          <node concept="2W5y$k" id="70JbBCc109a" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigXH" resolve="voltage" />
           </node>
         </node>
       </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigWN" role="_iOnB">
-      <property role="TrG5h" value="absorbed dose" />
+      <property role="TrG5h" value="absorbed dose (of ionizing radiation)" />
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="D" />
       <node concept="2W5y9F" id="6q45UTzr_nJ" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_nK" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_nL" role="2BJG10">
+        <node concept="2W2IQR" id="70JbBCc2cGT" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCc2cGU" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_nM" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_nN" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWn" resolve="mass" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_nO" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
+          <node concept="2W5y$k" id="70JbBCc2cGV" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWn" resolve="mass" />
           </node>
         </node>
       </node>
@@ -377,17 +362,12 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="C" />
       <node concept="2W5y9F" id="6q45UTzr_nP" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_nQ" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_nR" role="2BJG10">
+        <node concept="2W2IQR" id="70JbBCc3pgV" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCc3pgW" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigY7" resolve="electric charge" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_nS" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_nT" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigXH" resolve="voltage" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_nU" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
+          <node concept="2W5y$k" id="70JbBCc3pgX" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigXH" resolve="voltage" />
           </node>
         </node>
       </node>
@@ -397,22 +377,17 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="L" />
       <node concept="2W5y9F" id="6q45UTzr_nV" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_nW" role="2W5ySM">
-          <node concept="2WfEyl" id="6q45UTzr_nX" role="2BJG10">
-            <node concept="2W5y$k" id="6q45UTzr_nY" role="2BJG10">
+        <node concept="2W2IQR" id="69VksCDnM76" role="2W5ySM">
+          <node concept="2WfEyl" id="69VksCDnM77" role="2BJGWR">
+            <node concept="2W5y$k" id="69VksCDnM78" role="2BJG10">
               <ref role="2W5z2V" node="3xM68GMigXH" resolve="voltage" />
             </node>
-            <node concept="2W5y$k" id="6q45UTzr_nZ" role="2BJJPC">
+            <node concept="2W5y$k" id="69VksCDnM79" role="2BJJPC">
               <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
             </node>
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_o0" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_o1" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_o2" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
+          <node concept="2W5y$k" id="69VksCDnM7a" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
           </node>
         </node>
       </node>
@@ -422,42 +397,32 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="B" />
       <node concept="2W5y9F" id="6q45UTzr_o3" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_o4" role="2W5ySM">
-          <node concept="2WfEyl" id="6q45UTzr_o5" role="2BJG10">
-            <node concept="2W5y$k" id="6q45UTzr_o6" role="2BJG10">
+        <node concept="2W2IQR" id="69VksCDoXGb" role="2W5ySM">
+          <node concept="2WfEyl" id="69VksCDoXGc" role="2BJGWR">
+            <node concept="2W5y$k" id="69VksCDoXGd" role="2BJG10">
               <ref role="2W5z2V" node="3xM68GMigXH" resolve="voltage" />
             </node>
-            <node concept="2W5y$k" id="6q45UTzr_o7" role="2BJJPC">
+            <node concept="2W5y$k" id="69VksCDoXGe" role="2BJJPC">
               <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
             </node>
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_o8" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_o9" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_oa" role="DfWIZ">
-              <property role="CIsvl" value="-2" />
-            </node>
+          <node concept="2W5y$k" id="69VksCEl5fD" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
           </node>
         </node>
       </node>
     </node>
     <node concept="Rn5op" id="3xM68GMigXj" role="_iOnB">
-      <property role="TrG5h" value="equivalent dose" />
+      <property role="TrG5h" value="equivalent dose (of ionizing radiation)" />
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="H" />
       <node concept="2W5y9F" id="6q45UTzr_ob" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_oc" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_od" role="2BJG10">
+        <node concept="2W2IQR" id="70JbBCctV_p" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCctV_q" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_oe" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_of" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWn" resolve="mass" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_og" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
+          <node concept="2W5y$k" id="70JbBCctV_r" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWn" resolve="mass" />
           </node>
         </node>
       </node>
@@ -467,17 +432,12 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="R" />
       <node concept="2W5y9F" id="6q45UTzr_oh" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_oi" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_oj" role="2BJG10">
+        <node concept="2W2IQR" id="69GF$eA1yW0" role="2W5ySM">
+          <node concept="2W5y$k" id="69GF$eA1yW1" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigXH" resolve="voltage" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_ok" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_ol" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_om" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
+          <node concept="2W5y$k" id="69GF$eA1yW2" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
           </node>
         </node>
       </node>
@@ -487,17 +447,27 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="p" />
       <node concept="2W5y9F" id="6q45UTzr_on" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_oo" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_op" role="2BJG10">
+        <node concept="2W2IQR" id="70JbBC6Fo_n" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC6GspZ" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
+          </node>
+          <node concept="2W5y$k" id="6q45UTzr_op" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigYl" resolve="force" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_oq" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_or" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_os" role="DfWIZ">
-              <property role="CIsvl" value="-2" />
-            </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC5ttoy" role="_iOnB">
+      <property role="TrG5h" value="stress" />
+      <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="σ" />
+      <node concept="2W5y9F" id="70JbBC5ttoz" role="4gtQf">
+        <node concept="2W2IQR" id="70JbBC6Hxon" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC6Hxoo" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
+          </node>
+          <node concept="2W5y$k" id="70JbBC6Hxop" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigYl" resolve="force" />
           </node>
         </node>
       </node>
@@ -522,17 +492,42 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="V" />
       <node concept="2W5y9F" id="6q45UTzr_ox" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_oy" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_oz" role="2BJG10">
+        <node concept="2W2IQR" id="70JbBCcxua$" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCcxua_" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigYu" resolve="power" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_o$" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_o_" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_oA" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
+          <node concept="2W5y$k" id="70JbBCcxuaA" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC6MUCW" role="_iOnB">
+      <property role="TrG5h" value="electric potential" />
+      <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="Φ" />
+      <node concept="2W5y9F" id="70JbBC6MUCX" role="4gtQf">
+        <node concept="2WfEyl" id="70JbBC6MUCY" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC6P8mN" role="2BJG10">
+            <ref role="2W5z2V" node="6EvkZrMZnPT" resolve="electric field strength" />
+          </node>
+          <node concept="2W5y$k" id="70JbBC6TuqT" role="2BJJPC">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC7kWKu" role="_iOnB">
+      <property role="TrG5h" value="electromotive force" />
+      <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="ε" />
+      <node concept="2W5y9F" id="70JbBC7kWKv" role="4gtQf">
+        <node concept="2W2IQR" id="70JbBC7prp4" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC7rCzs" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigY7" resolve="electric charge" />
+          </node>
+          <node concept="2W5y$k" id="70JbBC7pqZW" role="2BJGWR">
+            <ref role="2W5z2V" node="70JbBC5F9LU" resolve="work" />
           </node>
         </node>
       </node>
@@ -557,17 +552,12 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="Eᵥ" />
       <node concept="2W5y9F" id="6q45UTzr_oF" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_oG" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_oH" role="2BJG10">
-            <ref role="2W5z2V" node="3xM68GMigXO" resolve="luminous flux" />
+        <node concept="2W2IQR" id="70JbBCbXkhZ" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCbYytI" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_oI" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_oJ" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_oK" role="DfWIZ">
-              <property role="CIsvl" value="-2" />
-            </node>
+          <node concept="2W5y$k" id="6q45UTzr_oH" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigXO" resolve="luminous flux" />
           </node>
         </node>
       </node>
@@ -577,17 +567,12 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="z" />
       <node concept="2W5y9F" id="6q45UTzr_oL" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_oM" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_oN" role="2BJG10">
+        <node concept="2W2IQR" id="70JbBCcyE7k" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCcyE7l" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigWk" resolve="amount of substance" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_oO" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_oP" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_oQ" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
+          <node concept="2W5y$k" id="70JbBCcyE7m" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
           </node>
         </node>
       </node>
@@ -595,7 +580,7 @@
     <node concept="Rn5op" id="3xM68GMigY7" role="_iOnB">
       <property role="TrG5h" value="electric charge" />
       <property role="1xQvps" value="true" />
-      <property role="2DB2h4" value="Q" />
+      <property role="2DB2h4" value="q" />
       <node concept="2W5y9F" id="6q45UTzr_oR" role="4gtQf">
         <node concept="2WfEyl" id="6q45UTzr_oS" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_oT" role="2BJJPC">
@@ -621,21 +606,21 @@
         </node>
       </node>
       <node concept="2W5y9F" id="6q45UTzr_oV" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_oW" role="2W5ySM">
-          <node concept="2W2HD0" id="6q45UTzr_oX" role="2BJG10">
-            <node concept="2W5y$k" id="6q45UTzr_oY" role="2BJGmK">
+        <node concept="2W2IQR" id="69VksCDq9hh" role="2W5ySM">
+          <node concept="2W2HD0" id="69VksCDq9hi" role="2BJGWR">
+            <node concept="2W5y$k" id="69VksCDq9hj" role="2BJGmK">
               <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
             </node>
-            <node concept="CIsvk" id="6q45UTzr_oZ" role="DfWIZ">
+            <node concept="CIsvk" id="69VksCDq9hk" role="DfWIZ">
               <property role="CIsvl" value="2" />
             </node>
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_p0" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_p1" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          <node concept="2W2HD0" id="69VksCDq9hf" role="2BJG_9">
+            <node concept="CIsvk" id="69VksCDq9he" role="DfWIZ">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="CIsvk" id="6q45UTzr_p2" role="DfWIZ">
-              <property role="CIsvl" value="-2" />
+            <node concept="2W5y$k" id="69VksCDq9hg" role="2BJGmK">
+              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
             </node>
           </node>
         </node>
@@ -646,21 +631,21 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="F⃗" />
       <node concept="2W5y9F" id="6q45UTzr_p3" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_p4" role="2W5ySM">
-          <node concept="2WfEyl" id="6q45UTzr_p5" role="2BJG10">
-            <node concept="2W5y$k" id="6q45UTzr_p6" role="2BJG10">
+        <node concept="2W2IQR" id="69VksCDrkQn" role="2W5ySM">
+          <node concept="2WfEyl" id="69VksCDrkQo" role="2BJGWR">
+            <node concept="2W5y$k" id="69VksCDrkQp" role="2BJG10">
               <ref role="2W5z2V" node="3xM68GMigWn" resolve="mass" />
             </node>
-            <node concept="2W5y$k" id="6q45UTzr_p7" role="2BJJPC">
+            <node concept="2W5y$k" id="69VksCDrkQq" role="2BJJPC">
               <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
             </node>
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_p8" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_p9" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
+          <node concept="2W2HD0" id="69VksCDrkQl" role="2BJG_9">
+            <node concept="CIsvk" id="69VksCDrkQk" role="DfWIZ">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="CIsvk" id="6q45UTzr_pa" role="DfWIZ">
-              <property role="CIsvl" value="-2" />
+            <node concept="2W5y$k" id="69VksCDrkQm" role="2BJGmK">
+              <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
             </node>
           </node>
         </node>
@@ -671,21 +656,32 @@
       <property role="1xQvps" value="true" />
       <property role="2DB2h4" value="P" />
       <node concept="2W5y9F" id="6q45UTzr_pb" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_pc" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_pd" role="2BJG10">
+        <node concept="2W2IQR" id="69VksCDsxO8" role="2W5ySM">
+          <node concept="2W5y$k" id="69VksCDsxO9" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_pe" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_pf" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_pg" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
+          <node concept="2W5y$k" id="69VksCDsxOa" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
           </node>
         </node>
       </node>
     </node>
+    <node concept="Rn5op" id="70JbBC6eiph" role="_iOnB">
+      <property role="TrG5h" value="radiant flux" />
+      <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="Φ" />
+      <node concept="2W5y9F" id="70JbBC6eipi" role="4gtQf">
+        <node concept="2W2IQR" id="69VksCDtJaE" role="2W5ySM">
+          <node concept="2W5y$k" id="69VksCDtJaF" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
+          </node>
+          <node concept="2W5y$k" id="69VksCDtJaG" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="70JbBC6c9jR" role="_iOnB" />
     <node concept="Rn5op" id="3xM68GMigY_" role="_iOnB">
       <property role="TrG5h" value="energy" />
       <property role="1xQvps" value="true" />
@@ -698,6 +694,31 @@
           <node concept="2W5y$k" id="6q45UTzr_pk" role="2BJJPC">
             <ref role="2W5z2V" node="3xM68GMigYl" resolve="force" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC5F9LU" role="_iOnB">
+      <property role="TrG5h" value="work" />
+      <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="W" />
+      <node concept="2W5y9F" id="70JbBC5F9LV" role="4gtQf">
+        <node concept="2WfEyl" id="70JbBC67Sfg" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC68Wc5" role="2BJJPC">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+          <node concept="2W5y$k" id="70JbBC66O7R" role="2BJG10">
+            <ref role="2W5z2V" node="3xM68GMigYl" resolve="force" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC5GdMI" role="_iOnB">
+      <property role="TrG5h" value="heat" />
+      <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="Q" />
+      <node concept="2W5y9F" id="70JbBC5GdMJ" role="4gtQf">
+        <node concept="2W5y$k" id="70JbBC6b4h2" role="2W5ySM">
+          <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
         </node>
       </node>
     </node>
@@ -1651,17 +1672,12 @@
       <property role="1o$tow" value="radian" />
       <ref role="Rn5ok" node="3xM68GMigYc" resolve="angle" />
       <node concept="CIsGf" id="6q45UTzs0X3" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0X4" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0X5" role="wW812">
+        <node concept="2Wclh2" id="69VksCDuWz$" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDuWz_" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0X6" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0X7" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0X8" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
-            </node>
+          <node concept="CIsvn" id="69VksCDuWzA" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
           </node>
         </node>
       </node>
@@ -1672,20 +1688,20 @@
       <property role="1o$tow" value="steradian" />
       <ref role="Rn5ok" node="3xM68GMigYc" resolve="angle" />
       <node concept="CIsGf" id="6q45UTzs0X9" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Xa" role="CIi4h">
-          <node concept="wWcm2" id="6q45UTzs0Xb" role="wW812">
-            <node concept="CIsvk" id="6q45UTzs0Xc" role="wWd0T">
+        <node concept="2Wclh2" id="69VksCDw9TJ" role="CIi4h">
+          <node concept="wWcm2" id="69VksCDw9TK" role="2Wcl2F">
+            <node concept="CIsvk" id="69VksCDw9TL" role="wWd0T">
               <property role="CIsvl" value="2" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Xd" role="wWd0U">
+            <node concept="CIsvn" id="69VksCDw9TM" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
             </node>
           </node>
-          <node concept="wWcm2" id="6q45UTzs0Xe" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Xf" role="wWd0T">
-              <property role="CIsvl" value="-2" />
+          <node concept="wWcm2" id="69VksCDw9TH" role="2WclXY">
+            <node concept="CIsvk" id="69VksCDw9TG" role="wWd0T">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Xg" role="wWd0U">
+            <node concept="CIsvn" id="69VksCDw9TI" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
             </node>
           </node>
@@ -1699,20 +1715,20 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigYl" resolve="force" />
       <node concept="CIsGf" id="6q45UTzs0Xh" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Xi" role="CIi4h">
-          <node concept="wW8yL" id="6q45UTzs0Xj" role="wW812">
-            <node concept="CIsvn" id="6q45UTzs0Xk" role="wW812">
+        <node concept="2Wclh2" id="69VksCDxnfZ" role="CIi4h">
+          <node concept="wW8yL" id="69VksCDxng0" role="2Wcl2F">
+            <node concept="CIsvn" id="69VksCDxng1" role="wW812">
               <ref role="CIi3I" node="3xM68GMigWt" resolve="kg" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Xl" role="wW8iK">
+            <node concept="CIsvn" id="69VksCDxng2" role="wW8iK">
               <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
             </node>
           </node>
-          <node concept="wWcm2" id="6q45UTzs0Xm" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Xn" role="wWd0T">
-              <property role="CIsvl" value="-2" />
+          <node concept="wWcm2" id="69VksCDxnfX" role="2WclXY">
+            <node concept="CIsvk" id="69VksCDxnfW" role="wWd0T">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Xo" role="wWd0U">
+            <node concept="CIsvn" id="69VksCDxnfY" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
             </node>
           </node>
@@ -1722,19 +1738,41 @@
     <node concept="CIrOH" id="3xM68GMigZf" role="_iOnB">
       <property role="TrG5h" value="Pa" />
       <property role="1xMkt3" value="true" />
-      <property role="1o$tow" value="pascal" />
+      <property role="1o$tow" value="pascal (pressure)" />
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXx" resolve="pressure" />
       <node concept="CIsGf" id="6q45UTzs0Xp" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Xq" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0Xr" role="wW812">
+        <node concept="2Wclh2" id="69VksCDy_Ul" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDy_Um" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigZ6" resolve="N" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0Xs" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Xt" role="wWd0T">
-              <property role="CIsvl" value="-2" />
+          <node concept="wWcm2" id="69VksCDy_Uj" role="2WclXY">
+            <node concept="CIsvk" id="69VksCDy_Ui" role="wWd0T">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Xu" role="wWd0U">
+            <node concept="CIsvn" id="69VksCDy_Uk" role="wWd0U">
+              <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC5wEk4" role="_iOnB">
+      <property role="TrG5h" value="Pa" />
+      <property role="1xMkt3" value="true" />
+      <property role="1o$tow" value="pascal (stress)" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
+      <ref role="Rn5ok" node="70JbBC5ttoy" resolve="stress" />
+      <node concept="CIsGf" id="70JbBC5wEk5" role="4gtQf">
+        <node concept="2Wclh2" id="69VksCDzOEz" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDzOE$" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigZ6" resolve="N" />
+          </node>
+          <node concept="wWcm2" id="69VksCDzOEx" role="2WclXY">
+            <node concept="CIsvk" id="69VksCDzOEw" role="wWd0T">
+              <property role="CIsvl" value="2" />
+            </node>
+            <node concept="CIsvn" id="69VksCDzOEy" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
             </node>
           </node>
@@ -1744,7 +1782,7 @@
     <node concept="CIrOH" id="3xM68GMigZm" role="_iOnB">
       <property role="TrG5h" value="J" />
       <property role="1xMkt3" value="true" />
-      <property role="1o$tow" value="joule" />
+      <property role="1o$tow" value="joule (energy)" />
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigY_" resolve="energy" />
       <node concept="CIsGf" id="6q45UTzs0Xv" role="4gtQf">
@@ -1758,28 +1796,75 @@
         </node>
       </node>
     </node>
-    <node concept="CIrOH" id="3xM68GMigZr" role="_iOnB">
-      <property role="TrG5h" value="W" />
+    <node concept="CIrOH" id="70JbBC5M$rk" role="_iOnB">
+      <property role="TrG5h" value="J" />
       <property role="1xMkt3" value="true" />
-      <property role="1o$tow" value="watt" />
+      <property role="1o$tow" value="joule (work)" />
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
-      <ref role="Rn5ok" node="3xM68GMigYu" resolve="power" />
-      <node concept="CIsGf" id="6q45UTzs0Xz" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0X$" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0X_" role="wW812">
-            <ref role="CIi3I" node="3xM68GMigZm" resolve="J" />
+      <ref role="Rn5ok" node="70JbBC5F9LU" resolve="work" />
+      <node concept="CIsGf" id="70JbBC5M$rl" role="4gtQf">
+        <node concept="wW8yL" id="70JbBC5M$rm" role="CIi4h">
+          <node concept="CIsvn" id="70JbBC5M$rn" role="wW812">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0XA" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0XB" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0XC" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
-            </node>
+          <node concept="CIsvn" id="70JbBC5M$ro" role="wW8iK">
+            <ref role="CIi3I" node="3xM68GMigZ6" resolve="N" />
           </node>
         </node>
       </node>
     </node>
+    <node concept="CIrOH" id="70JbBC5NCZ5" role="_iOnB">
+      <property role="TrG5h" value="J" />
+      <property role="1xMkt3" value="true" />
+      <property role="1o$tow" value="joule (heat)" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
+      <ref role="Rn5ok" node="70JbBC5GdMI" resolve="heat" />
+      <node concept="CIsGf" id="70JbBC5NCZ6" role="4gtQf">
+        <node concept="wW8yL" id="70JbBC5NCZ7" role="CIi4h">
+          <node concept="CIsvn" id="70JbBC5NCZ8" role="wW812">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+          <node concept="CIsvn" id="70JbBC5NCZ9" role="wW8iK">
+            <ref role="CIi3I" node="3xM68GMigZ6" resolve="N" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="3xM68GMigZr" role="_iOnB">
+      <property role="TrG5h" value="W" />
+      <property role="1xMkt3" value="true" />
+      <property role="1o$tow" value="watt (power)" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
+      <ref role="Rn5ok" node="3xM68GMigYu" resolve="power" />
+      <node concept="CIsGf" id="6q45UTzs0Xz" role="4gtQf">
+        <node concept="2Wclh2" id="69VksCD_3tA" role="CIi4h">
+          <node concept="CIsvn" id="69VksCD_3tB" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigZm" resolve="J" />
+          </node>
+          <node concept="CIsvn" id="69VksCD_3tC" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC6iBoM" role="_iOnB">
+      <property role="TrG5h" value="W" />
+      <property role="1xMkt3" value="true" />
+      <property role="1o$tow" value="watt (radiant flux)" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
+      <ref role="Rn5ok" node="70JbBC6eiph" resolve="radiant flux" />
+      <node concept="CIsGf" id="70JbBC6iBoN" role="4gtQf">
+        <node concept="2Wclh2" id="69VksCDAiFZ" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDAiG0" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigZm" resolve="J" />
+          </node>
+          <node concept="CIsvn" id="69VksCDAiG1" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="70JbBC6gtDG" role="_iOnB" />
     <node concept="CIrOH" id="3xM68GMigZy" role="_iOnB">
       <property role="TrG5h" value="C" />
       <property role="1xMkt3" value="true" />
@@ -1800,21 +1885,50 @@
     <node concept="CIrOH" id="3xM68GMigZB" role="_iOnB">
       <property role="TrG5h" value="V" />
       <property role="1xMkt3" value="true" />
-      <property role="1o$tow" value="volt" />
+      <property role="1o$tow" value="volt (voltage)" />
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXH" resolve="voltage" />
       <node concept="CIsGf" id="6q45UTzs0XH" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0XI" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0XJ" role="wW812">
+        <node concept="2Wclh2" id="69VksCDBxW4" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDBxW5" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigZr" resolve="W" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0XK" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0XL" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0XM" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
-            </node>
+          <node concept="CIsvn" id="69VksCDBxW6" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC6VE4N" role="_iOnB">
+      <property role="TrG5h" value="V" />
+      <property role="1xMkt3" value="true" />
+      <property role="1o$tow" value="volt (electric potential)" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
+      <ref role="Rn5ok" node="70JbBC6MUCW" resolve="electric poential" />
+      <node concept="CIsGf" id="70JbBC7emSb" role="4gtQf">
+        <node concept="wW8yL" id="70JbBC7gzjB" role="CIi4h">
+          <node concept="CIsvn" id="70JbBC7iJtR" role="wW8iK">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+          <node concept="CIsvn" id="70JbBC7emSa" role="wW812">
+            <ref role="CIi3I" node="6EvkZrMO9va" resolve="V÷m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC7tQOG" role="_iOnB">
+      <property role="TrG5h" value="V" />
+      <property role="1xMkt3" value="true" />
+      <property role="1o$tow" value="volt (electromotive force)" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
+      <ref role="Rn5ok" node="70JbBC7kWKu" resolve="electromotive force" />
+      <node concept="CIsGf" id="70JbBC7tQOH" role="4gtQf">
+        <node concept="2Wclh2" id="70JbBC7JJ09" role="CIi4h">
+          <node concept="CIsvn" id="70JbBC7LWJV" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigZy" resolve="C" />
+          </node>
+          <node concept="CIsvn" id="70JbBC7Hxcv" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigZm" resolve="J" />
           </node>
         </node>
       </node>
@@ -1826,17 +1940,12 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWU" resolve="electrical capacitance" />
       <node concept="CIsGf" id="6q45UTzs0XN" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0XO" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0XP" role="wW812">
+        <node concept="2Wclh2" id="69VksCDCMei" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDCMej" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigZy" resolve="C" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0XQ" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0XR" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0XS" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigZB" resolve="V" />
-            </node>
+          <node concept="CIsvn" id="69VksCDCMek" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigZB" resolve="V" />
           </node>
         </node>
       </node>
@@ -1848,17 +1957,12 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXq" resolve="electrical resistance" />
       <node concept="CIsGf" id="6q45UTzs0XT" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0XU" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0XV" role="wW812">
+        <node concept="2Wclh2" id="69VksCDE1wR" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDE1wS" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigZB" resolve="V" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0XW" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0XX" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0XY" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
-            </node>
+          <node concept="CIsvn" id="69VksCDE1wT" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
           </node>
         </node>
       </node>
@@ -1870,17 +1974,12 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWG" resolve="electrical conductance" />
       <node concept="CIsGf" id="6q45UTzs0XZ" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Y0" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0Y1" role="wW812">
+        <node concept="2Wclh2" id="69VksCDFgSi" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDFgSj" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0Y2" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Y3" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0Y4" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigZB" resolve="V" />
-            </node>
+          <node concept="CIsvn" id="69VksCDFgSk" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigZB" resolve="V" />
           </node>
         </node>
       </node>
@@ -1892,17 +1991,12 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigW_" resolve="magnetic flux" />
       <node concept="CIsGf" id="6q45UTzs0Y5" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Y6" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0Y7" role="wW812">
+        <node concept="2Wclh2" id="69VksCDGvfs" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDGvft" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigZm" resolve="J" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0Y8" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Y9" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0Ya" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
-            </node>
+          <node concept="CIsvn" id="69VksCDGvfu" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
           </node>
         </node>
       </node>
@@ -1914,20 +2008,20 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXa" resolve="magnetic induction" />
       <node concept="CIsGf" id="6q45UTzs0Yb" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Yc" role="CIi4h">
-          <node concept="wW8yL" id="6q45UTzs0Yd" role="wW812">
-            <node concept="CIsvn" id="6q45UTzs0Ye" role="wW812">
+        <node concept="2Wclh2" id="69VksCDHHHF" role="CIi4h">
+          <node concept="wW8yL" id="69VksCDHHHG" role="2Wcl2F">
+            <node concept="CIsvn" id="69VksCDHHHH" role="wW812">
               <ref role="CIi3I" node="3xM68GMigZB" resolve="V" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Yf" role="wW8iK">
+            <node concept="CIsvn" id="69VksCDHHHI" role="wW8iK">
               <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
             </node>
           </node>
-          <node concept="wWcm2" id="6q45UTzs0Yg" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Yh" role="wWd0T">
-              <property role="CIsvl" value="-2" />
+          <node concept="wWcm2" id="69VksCDHHHD" role="2WclXY">
+            <node concept="CIsvk" id="69VksCDHHHC" role="wWd0T">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Yi" role="wWd0U">
+            <node concept="CIsvn" id="69VksCDHHHE" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
             </node>
           </node>
@@ -1941,22 +2035,17 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigX1" resolve="electrical inductance" />
       <node concept="CIsGf" id="6q45UTzs0Yj" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Yk" role="CIi4h">
-          <node concept="wW8yL" id="6q45UTzs0Yl" role="wW812">
-            <node concept="CIsvn" id="6q45UTzs0Ym" role="wW812">
+        <node concept="2Wclh2" id="69VksCDIWbW" role="CIi4h">
+          <node concept="wW8yL" id="69VksCDIWbX" role="2Wcl2F">
+            <node concept="CIsvn" id="69VksCDIWbY" role="wW812">
               <ref role="CIi3I" node="3xM68GMigZB" resolve="V" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Yn" role="wW8iK">
+            <node concept="CIsvn" id="69VksCDIWbZ" role="wW8iK">
               <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
             </node>
           </node>
-          <node concept="wWcm2" id="6q45UTzs0Yo" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Yp" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0Yq" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
-            </node>
+          <node concept="CIsvn" id="69VksCDIWc0" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
           </node>
         </node>
       </node>
@@ -1985,15 +2074,15 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXT" resolve="illuminance" />
       <node concept="CIsGf" id="6q45UTzs0Yv" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Yw" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0Yx" role="wW812">
+        <node concept="2Wclh2" id="69VksCDKaNg" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDKaNh" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMih0s" resolve="lm" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0Yy" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Yz" role="wWd0T">
-              <property role="CIsvl" value="-2" />
+          <node concept="wWcm2" id="69VksCDKaNe" role="2WclXY">
+            <node concept="CIsvk" id="69VksCDKaNd" role="wWd0T">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Y$" role="wWd0U">
+            <node concept="CIsvn" id="69VksCDKaNf" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
             </node>
           </node>
@@ -2024,17 +2113,12 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigWN" resolve="absorbed dose" />
       <node concept="CIsGf" id="6q45UTzs0YD" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0YE" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0YF" role="wW812">
+        <node concept="2Wclh2" id="69VksCDLpss" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDLpst" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigZm" resolve="J" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0YG" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0YH" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0YI" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWt" resolve="kg" />
-            </node>
+          <node concept="CIsvn" id="69VksCDLpsu" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWt" resolve="kg" />
           </node>
         </node>
       </node>
@@ -2046,17 +2130,12 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigXj" resolve="equivalent dose" />
       <node concept="CIsGf" id="6q45UTzs0YJ" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0YK" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0YL" role="wW812">
+        <node concept="2Wclh2" id="69VksCDMC3X" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDMC3Y" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigZm" resolve="J" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0YM" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0YN" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0YO" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWt" resolve="kg" />
-            </node>
+          <node concept="CIsvn" id="69VksCDMC3Z" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWt" resolve="kg" />
           </node>
         </node>
       </node>
@@ -2068,17 +2147,12 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigY0" resolve="catalytic activity" />
       <node concept="CIsGf" id="6q45UTzs0YP" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0YQ" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0YR" role="wW812">
+        <node concept="2Wclh2" id="69VksCDNQEo" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDNQEp" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigWu" resolve="mol" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0YS" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0YT" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0YU" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
-            </node>
+          <node concept="CIsvn" id="69VksCDNQEq" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
           </node>
         </node>
       </node>
@@ -2093,18 +2167,23 @@
       <property role="TrG5h" value="speed" />
       <property role="2DB2h4" value="v" />
       <node concept="2W5y9F" id="6q45UTzr_pt" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_pu" role="2W5ySM">
-          <node concept="2W2HD0" id="6q45UTzr_pv" role="2BJJPC">
-            <node concept="CIsvk" id="6q45UTzr_pw" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="2W5y$k" id="6q45UTzr_px" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
-            </node>
-          </node>
-          <node concept="2W5y$k" id="6q45UTzr_py" role="2BJG10">
+        <node concept="2W2IQR" id="69VksCDP5gP" role="2W5ySM">
+          <node concept="2W5y$k" id="69VksCDP5gQ" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
           </node>
+          <node concept="2W5y$k" id="69VksCDP5gR" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC4Iuuo" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="2DB2h4" value="v" />
+      <property role="TrG5h" value="velocity" />
+      <node concept="2W5y9F" id="70JbBC56DfJ" role="4gtQf">
+        <node concept="2W5y$k" id="70JbBC56DfK" role="2W5ySM">
+          <ref role="2W5z2V" node="6EvkZrL11H8" resolve="speed" />
         </node>
       </node>
     </node>
@@ -2113,17 +2192,17 @@
       <property role="TrG5h" value="acceleration" />
       <property role="2DB2h4" value="a⃗" />
       <node concept="2W5y9F" id="6q45UTzr_pz" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_p$" role="2W5ySM">
-          <node concept="2W2HD0" id="6q45UTzr_p_" role="2BJJPC">
-            <node concept="CIsvk" id="6q45UTzr_pA" role="DfWIZ">
-              <property role="CIsvl" value="-2" />
+        <node concept="2W2IQR" id="69VksCDQjRU" role="2W5ySM">
+          <node concept="2W5y$k" id="69VksCDQjRV" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+          <node concept="2W2HD0" id="69VksCDQjRS" role="2BJG_9">
+            <node concept="CIsvk" id="69VksCDQjRR" role="DfWIZ">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="2W5y$k" id="6q45UTzr_pB" role="2BJGmK">
+            <node concept="2W5y$k" id="69VksCDQjRT" role="2BJGmK">
               <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
             </node>
-          </node>
-          <node concept="2W5y$k" id="6q45UTzr_pC" role="2BJG10">
-            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
           </node>
         </node>
       </node>
@@ -2133,18 +2212,28 @@
       <property role="TrG5h" value="jerk" />
       <property role="2DB2h4" value="j⃗" />
       <node concept="2W5y9F" id="6q45UTzr_pD" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_pE" role="2W5ySM">
-          <node concept="2W2HD0" id="6q45UTzr_pF" role="2BJJPC">
-            <node concept="CIsvk" id="6q45UTzr_pG" role="DfWIZ">
-              <property role="CIsvl" value="-3" />
+        <node concept="2W2IQR" id="69VksCDRyvK" role="2W5ySM">
+          <node concept="2W5y$k" id="69VksCDRyvL" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+          <node concept="2W2HD0" id="69VksCDRyvI" role="2BJG_9">
+            <node concept="CIsvk" id="69VksCDRyvH" role="DfWIZ">
+              <property role="CIsvl" value="3" />
             </node>
-            <node concept="2W5y$k" id="6q45UTzr_pH" role="2BJGmK">
+            <node concept="2W5y$k" id="69VksCDRyvJ" role="2BJGmK">
               <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
             </node>
           </node>
-          <node concept="2W5y$k" id="6q45UTzr_pI" role="2BJG10">
-            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC7VXcr" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="jolt" />
+      <property role="2DB2h4" value="j⃗" />
+      <node concept="2W5y9F" id="70JbBC7VXcs" role="4gtQf">
+        <node concept="2W5y$k" id="70JbBC7Ycvt" role="2W5ySM">
+          <ref role="2W5z2V" node="6EvkZrL3vn0" resolve="jerk" />
         </node>
       </node>
     </node>
@@ -2153,18 +2242,28 @@
       <property role="TrG5h" value="snap" />
       <property role="2DB2h4" value="s⃗" />
       <node concept="2W5y9F" id="6q45UTzr_pJ" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_pK" role="2W5ySM">
-          <node concept="2W2HD0" id="6q45UTzr_pL" role="2BJJPC">
-            <node concept="CIsvk" id="6q45UTzr_pM" role="DfWIZ">
-              <property role="CIsvl" value="-4" />
+        <node concept="2W2IQR" id="69VksCDSL9t" role="2W5ySM">
+          <node concept="2W5y$k" id="69VksCDSL9u" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+          <node concept="2W2HD0" id="69VksCDSL9r" role="2BJG_9">
+            <node concept="CIsvk" id="69VksCDSL9q" role="DfWIZ">
+              <property role="CIsvl" value="4" />
             </node>
-            <node concept="2W5y$k" id="6q45UTzr_pN" role="2BJGmK">
+            <node concept="2W5y$k" id="69VksCDSL9s" role="2BJGmK">
               <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
             </node>
           </node>
-          <node concept="2W5y$k" id="6q45UTzr_pO" role="2BJG10">
-            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC860M7" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="jounce" />
+      <property role="2DB2h4" value="s⃗" />
+      <node concept="2W5y9F" id="70JbBC860M8" role="4gtQf">
+        <node concept="2W5y$k" id="70JbBC88gyB" role="2W5ySM">
+          <ref role="2W5z2V" node="6EvkZrL3FH6" resolve="snap" />
         </node>
       </node>
     </node>
@@ -2173,17 +2272,12 @@
       <property role="TrG5h" value="angular velocity" />
       <property role="2DB2h4" value="ω" />
       <node concept="2W5y9F" id="6q45UTzr_pP" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_pQ" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_pR" role="2BJG10">
+        <node concept="2W2IQR" id="69VksCDTZP5" role="2W5ySM">
+          <node concept="2W5y$k" id="69VksCDTZP6" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigYc" resolve="angle" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_pS" role="2BJJPC">
-            <node concept="CIsvk" id="6q45UTzr_pT" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="2W5y$k" id="6q45UTzr_pU" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
-            </node>
+          <node concept="2W5y$k" id="69VksCDTZP7" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
           </node>
         </node>
       </node>
@@ -2193,15 +2287,15 @@
       <property role="TrG5h" value="angular acceleration" />
       <property role="2DB2h4" value="ωₐ" />
       <node concept="2W5y9F" id="6q45UTzr_pV" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_pW" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_pX" role="2BJG10">
+        <node concept="2W2IQR" id="69VksCDVewm" role="2W5ySM">
+          <node concept="2W5y$k" id="69VksCDVewn" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigYc" resolve="angle" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_pY" role="2BJJPC">
-            <node concept="CIsvk" id="6q45UTzr_pZ" role="DfWIZ">
-              <property role="CIsvl" value="-2" />
+          <node concept="2W2HD0" id="69VksCDVewk" role="2BJG_9">
+            <node concept="CIsvk" id="69VksCDVewj" role="DfWIZ">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="2W5y$k" id="6q45UTzr_q0" role="2BJGmK">
+            <node concept="2W5y$k" id="69VksCDVewl" role="2BJGmK">
               <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
             </node>
           </node>
@@ -2228,22 +2322,12 @@
       <property role="TrG5h" value="volumetric flow rate" />
       <property role="2DB2h4" value="Q" />
       <node concept="2W5y9F" id="6q45UTzr_q5" role="4gtQf">
-        <node concept="2WfEyl" id="6q45UTzr_q6" role="2W5ySM">
-          <node concept="2W2HD0" id="6q45UTzr_q7" role="2BJJPC">
-            <node concept="CIsvk" id="6q45UTzr_q8" role="DfWIZ">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="2W5y$k" id="6q45UTzr_q9" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
-            </node>
+        <node concept="2W2IQR" id="69VksCDWtc_" role="2W5ySM">
+          <node concept="2W5y$k" id="69VksCEmk5L" role="2BJGWR">
+            <ref role="2W5z2V" node="6EvkZrKSbgd" resolve="volume" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_qa" role="2BJG10">
-            <node concept="CIsvk" id="6q45UTzr_qb" role="DfWIZ">
-              <property role="CIsvl" value="3" />
-            </node>
-            <node concept="2W5y$k" id="6q45UTzr_qc" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
+          <node concept="2W5y$k" id="69VksCDWtcD" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
           </node>
         </node>
       </node>
@@ -2252,41 +2336,53 @@
     <node concept="CIrOH" id="6EvkZrL0D$w" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="m÷s" />
-      <property role="1o$tow" value="metre per second" />
+      <property role="1o$tow" value="metre per second (speed)" />
       <ref role="Rn5ok" node="6EvkZrL11H8" resolve="speed" />
       <node concept="CIsGf" id="6q45UTzs0YV" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0YW" role="CIi4h">
-          <node concept="wWcm2" id="6q45UTzs0YX" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0YY" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0YZ" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
-            </node>
-          </node>
-          <node concept="CIsvn" id="6q45UTzs0Z0" role="wW812">
+        <node concept="2Wclh2" id="69VksCDXFT7" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDXFT8" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+          <node concept="CIsvn" id="69VksCDXFT9" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
           </node>
         </node>
       </node>
     </node>
+    <node concept="CIrOH" id="70JbBC4QW1j" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="m÷s" />
+      <property role="1o$tow" value="metre per second (velocity)" />
+      <ref role="Rn5ok" node="70JbBC4Iuuo" resolve="velocity" />
+      <node concept="CIsGf" id="70JbBC4QW1k" role="4gtQf">
+        <node concept="2Wclh2" id="69VksCDYU_B" role="CIi4h">
+          <node concept="CIsvn" id="69VksCDYU_C" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+          <node concept="CIsvn" id="69VksCDYU_D" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="70JbBC5m4HC" role="_iOnB" />
     <node concept="CIrOH" id="6EvkZrL6aig" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="m÷s²" />
       <property role="1o$tow" value="metre per second squared" />
       <ref role="Rn5ok" node="6EvkZrL3j6r" resolve="acceleration" />
       <node concept="CIsGf" id="6q45UTzs0Z1" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Z2" role="CIi4h">
-          <node concept="wWcm2" id="6q45UTzs0Z3" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Z4" role="wWd0T">
-              <property role="CIsvl" value="-2" />
+        <node concept="2Wclh2" id="69VksCE09ic" role="CIi4h">
+          <node concept="CIsvn" id="69VksCE09id" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+          <node concept="wWcm2" id="69VksCE09ia" role="2WclXY">
+            <node concept="CIsvk" id="69VksCE09i9" role="wWd0T">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Z5" role="wWd0U">
+            <node concept="CIsvn" id="69VksCE09ib" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
             </node>
-          </node>
-          <node concept="CIsvn" id="6q45UTzs0Z6" role="wW812">
-            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
           </node>
         </node>
       </node>
@@ -2294,20 +2390,41 @@
     <node concept="CIrOH" id="6EvkZrL6rgK" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="m÷s³" />
-      <property role="1o$tow" value="metre per second cubed" />
+      <property role="1o$tow" value="metre per second cubed (jerk)" />
       <ref role="Rn5ok" node="6EvkZrL3vn0" resolve="jerk" />
       <node concept="CIsGf" id="6q45UTzs0Z7" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Z8" role="CIi4h">
-          <node concept="wWcm2" id="6q45UTzs0Z9" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Za" role="wWd0T">
-              <property role="CIsvl" value="-3" />
+        <node concept="2Wclh2" id="69VksCE1o06" role="CIi4h">
+          <node concept="CIsvn" id="69VksCE1o07" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+          <node concept="wWcm2" id="69VksCE1o04" role="2WclXY">
+            <node concept="CIsvk" id="69VksCE1o03" role="wWd0T">
+              <property role="CIsvl" value="3" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Zb" role="wWd0U">
+            <node concept="CIsvn" id="69VksCE1o05" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
             </node>
           </node>
-          <node concept="CIsvn" id="6q45UTzs0Zc" role="wW812">
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC7YcT4" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="m÷s³" />
+      <property role="1o$tow" value="metre per second cubed (jolt)" />
+      <ref role="Rn5ok" node="70JbBC7VXcr" resolve="jolt" />
+      <node concept="CIsGf" id="70JbBC7YcT5" role="4gtQf">
+        <node concept="2Wclh2" id="69VksCE2AJk" role="CIi4h">
+          <node concept="CIsvn" id="69VksCE2AJl" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+          <node concept="wWcm2" id="69VksCE2AJi" role="2WclXY">
+            <node concept="CIsvk" id="69VksCE2AJh" role="wWd0T">
+              <property role="CIsvl" value="3" />
+            </node>
+            <node concept="CIsvn" id="69VksCE2AJj" role="wWd0U">
+              <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
+            </node>
           </node>
         </node>
       </node>
@@ -2315,20 +2432,41 @@
     <node concept="CIrOH" id="6EvkZrL6GqJ" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="m÷s⁴" />
-      <property role="1o$tow" value="metre per second to the fourth" />
+      <property role="1o$tow" value="metre per second to the fourth (snap)" />
       <ref role="Rn5ok" node="6EvkZrL3FH6" resolve="snap" />
       <node concept="CIsGf" id="6q45UTzs0Zd" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Ze" role="CIi4h">
-          <node concept="wWcm2" id="6q45UTzs0Zf" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Zg" role="wWd0T">
-              <property role="CIsvl" value="-4" />
+        <node concept="2Wclh2" id="69VksCE3Pwz" role="CIi4h">
+          <node concept="CIsvn" id="69VksCE3Pw$" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+          <node concept="wWcm2" id="69VksCE3Pwx" role="2WclXY">
+            <node concept="CIsvk" id="69VksCE3Pww" role="wWd0T">
+              <property role="CIsvl" value="4" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Zh" role="wWd0U">
+            <node concept="CIsvn" id="69VksCE3Pwy" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
             </node>
           </node>
-          <node concept="CIsvn" id="6q45UTzs0Zi" role="wW812">
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC88gSW" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="m÷s⁴" />
+      <property role="1o$tow" value="metre per second to the fourth (jounce)" />
+      <ref role="Rn5ok" node="70JbBC860M7" resolve="jounce" />
+      <node concept="CIsGf" id="70JbBC88gSX" role="4gtQf">
+        <node concept="2Wclh2" id="69VksCE54ko" role="CIi4h">
+          <node concept="CIsvn" id="69VksCE54kp" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+          <node concept="wWcm2" id="69VksCE54km" role="2WclXY">
+            <node concept="CIsvk" id="69VksCE54kl" role="wWd0T">
+              <property role="CIsvl" value="4" />
+            </node>
+            <node concept="CIsvn" id="69VksCE54kn" role="wWd0U">
+              <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
+            </node>
           </node>
         </node>
       </node>
@@ -2339,17 +2477,12 @@
       <property role="1o$tow" value="radian per second" />
       <ref role="Rn5ok" node="6EvkZrL40tx" resolve="angular velocity" />
       <node concept="CIsGf" id="6q45UTzs0Zj" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Zk" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0Zl" role="wW812">
+        <node concept="2Wclh2" id="69VksCE6j7v" role="CIi4h">
+          <node concept="CIsvn" id="69VksCE6j7w" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigYQ" resolve="rad" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0Zm" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Zn" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0Zo" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
-            </node>
+          <node concept="CIsvn" id="69VksCE6j7x" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
           </node>
         </node>
       </node>
@@ -2360,15 +2493,15 @@
       <property role="1o$tow" value="radian per second squared" />
       <ref role="Rn5ok" node="6EvkZrL4l8w" resolve="angular acceleration" />
       <node concept="CIsGf" id="6q45UTzs0Zp" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Zq" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs0Zr" role="wW812">
+        <node concept="2Wclh2" id="69VksCE7xUm" role="CIi4h">
+          <node concept="CIsvn" id="69VksCE7xUn" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigYQ" resolve="rad" />
           </node>
-          <node concept="wWcm2" id="6q45UTzs0Zs" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Zt" role="wWd0T">
-              <property role="CIsvl" value="-2" />
+          <node concept="wWcm2" id="69VksCE7xUk" role="2WclXY">
+            <node concept="CIsvk" id="69VksCE7xUj" role="wWd0T">
+              <property role="CIsvl" value="2" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0Zu" role="wWd0U">
+            <node concept="CIsvn" id="69VksCE7xUl" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
             </node>
           </node>
@@ -2381,17 +2514,12 @@
       <property role="1o$tow" value="hertz per second" />
       <ref role="Rn5ok" node="6EvkZrL4DPt" resolve="frequency drift" />
       <node concept="CIsGf" id="6q45UTzs0Zv" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0Zw" role="CIi4h">
-          <node concept="wWcm2" id="6q45UTzs0Zx" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0Zy" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0Zz" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
-            </node>
-          </node>
-          <node concept="CIsvn" id="6q45UTzs0Z$" role="wW812">
+        <node concept="2Wclh2" id="69VksCE8KIb" role="CIi4h">
+          <node concept="CIsvn" id="69VksCE8KIc" role="2Wcl2F">
             <ref role="CIi3I" node="3xM68GMigYL" resolve="Hz" />
+          </node>
+          <node concept="CIsvn" id="69VksCE8KId" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
           </node>
         </node>
       </node>
@@ -2402,22 +2530,17 @@
       <property role="1o$tow" value="cubic metre per second" />
       <ref role="Rn5ok" node="6EvkZrLbmU3" resolve="volumetric flow rate" />
       <node concept="CIsGf" id="6q45UTzs0Z_" role="4gtQf">
-        <node concept="wW8yL" id="6q45UTzs0ZA" role="CIi4h">
-          <node concept="wWcm2" id="6q45UTzs0ZB" role="wW8iK">
-            <node concept="CIsvk" id="6q45UTzs0ZC" role="wWd0T">
-              <property role="CIsvl" value="-1" />
-            </node>
-            <node concept="CIsvn" id="6q45UTzs0ZD" role="wWd0U">
-              <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
-            </node>
-          </node>
-          <node concept="wWcm2" id="6q45UTzs0ZE" role="wW812">
-            <node concept="CIsvk" id="6q45UTzs0ZF" role="wWd0T">
+        <node concept="2Wclh2" id="69VksCE9ZxN" role="CIi4h">
+          <node concept="wWcm2" id="69VksCE9ZxO" role="2Wcl2F">
+            <node concept="CIsvk" id="69VksCE9ZxP" role="wWd0T">
               <property role="CIsvl" value="3" />
             </node>
-            <node concept="CIsvn" id="6q45UTzs0ZG" role="wWd0U">
+            <node concept="CIsvn" id="69VksCE9ZxQ" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
             </node>
+          </node>
+          <node concept="CIsvn" id="69VksCE9ZxR" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
           </node>
         </node>
       </node>
@@ -2437,6 +2560,21 @@
             <ref role="2W5z2V" node="3xM68GMigYl" resolve="force" />
           </node>
           <node concept="2W5y$k" id="6q45UTzr_qg" role="2BJJPC">
+            <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC8ik$W" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="impulse" />
+      <property role="2DB2h4" value="Imp" />
+      <node concept="2W5y9F" id="70JbBC8ik$X" role="4gtQf">
+        <node concept="2WfEyl" id="70JbBC8ik$Y" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC8ik$Z" role="2BJG10">
+            <ref role="2W5z2V" node="3xM68GMigYl" resolve="force" />
+          </node>
+          <node concept="2W5y$k" id="70JbBC8ik_0" role="2BJJPC">
             <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
           </node>
         </node>
@@ -2464,15 +2602,30 @@
     </node>
     <node concept="Rn5op" id="6EvkZrLwMAi" role="_iOnB">
       <property role="1xQvps" value="true" />
-      <property role="TrG5h" value="newton-metre" />
-      <property role="2DB2h4" value="N⋅m" />
+      <property role="TrG5h" value="torque" />
+      <property role="2DB2h4" value="τ" />
       <node concept="2W5y9F" id="6q45UTzr_qn" role="4gtQf">
-        <node concept="2W2IQR" id="6q45UTzr_qo" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_qp" role="2BJGWR">
+        <node concept="2WfEyl" id="70JbBC8WpZX" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC97GPO" role="2BJJPC">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+          <node concept="2W5y$k" id="6q45UTzr_qp" role="2BJG10">
             <ref role="2W5z2V" node="3xM68GMigYl" resolve="force" />
           </node>
-          <node concept="2W5y$k" id="6q45UTzr_qq" role="2BJG_9">
-            <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC8uJJT" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="moment of force" />
+      <property role="2DB2h4" value="τ" />
+      <node concept="2W5y9F" id="70JbBC8uJJU" role="4gtQf">
+        <node concept="2WfEyl" id="70JbBC8RT1u" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC98P8r" role="2BJJPC">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+          <node concept="2W5y$k" id="70JbBC8uJJW" role="2BJG10">
+            <ref role="2W5z2V" node="3xM68GMigYl" resolve="force" />
           </node>
         </node>
       </node>
@@ -2482,11 +2635,71 @@
       <property role="TrG5h" value="yank" />
       <property role="2DB2h4" value="Y" />
       <node concept="2W5y9F" id="6q45UTzr_qr" role="4gtQf">
-        <node concept="2W2HD0" id="6q45UTzr_qs" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_qt" role="2BJGmK">
+        <node concept="2W2IQR" id="70JbBC9cery" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC9dmHn" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
+          </node>
+          <node concept="2W5y$k" id="70JbBC9b65x" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigYl" resolve="force" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC8E8T0" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="wave number" />
+      <property role="2DB2h4" value="Y" />
+      <node concept="2W5y9F" id="70JbBC8E8T1" role="4gtQf">
+        <node concept="2W2HD0" id="70JbBC8E8T2" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC8E8T3" role="2BJGmK">
             <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
           </node>
-          <node concept="CIsvk" id="6q45UTzr_qu" role="DfWIZ">
+          <node concept="CIsvk" id="70JbBC8E8T4" role="DfWIZ">
+            <property role="CIsvl" value="-1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC8GrNw" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="optical power" />
+      <property role="2DB2h4" value="Y" />
+      <node concept="2W5y9F" id="70JbBC8GrNx" role="4gtQf">
+        <node concept="2W2HD0" id="70JbBC8GrNy" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC8GrNz" role="2BJGmK">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+          <node concept="CIsvk" id="70JbBC8GrN$" role="DfWIZ">
+            <property role="CIsvl" value="-1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC8IJV2" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="curvature" />
+      <property role="2DB2h4" value="Y" />
+      <node concept="2W5y9F" id="70JbBC8IJV3" role="4gtQf">
+        <node concept="2W2HD0" id="70JbBC8IJV4" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC8IJV5" role="2BJGmK">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+          <node concept="CIsvk" id="70JbBC8IJV6" role="DfWIZ">
+            <property role="CIsvl" value="-1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBC8JTGA" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="spatial frequency" />
+      <property role="2DB2h4" value="Y" />
+      <node concept="2W5y9F" id="70JbBC8JTGB" role="4gtQf">
+        <node concept="2W2HD0" id="70JbBC8JTGC" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC8JTGD" role="2BJGmK">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+          <node concept="CIsvk" id="70JbBC8JTGE" role="DfWIZ">
             <property role="CIsvl" value="-1" />
           </node>
         </node>
@@ -2501,13 +2714,8 @@
           <node concept="2W5y$k" id="6q45UTzr_qx" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigWn" resolve="mass" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_qy" role="2BJG_9">
-            <node concept="2W5y$k" id="6q45UTzr_qz" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_q$" role="DfWIZ">
-              <property role="CIsvl" value="2" />
-            </node>
+          <node concept="2W5y$k" id="69VksCEsEZ7" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
           </node>
         </node>
       </node>
@@ -2538,13 +2746,8 @@
       <property role="2DB2h4" value="v" />
       <node concept="2W5y9F" id="6q45UTzr_qF" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_qG" role="2W5ySM">
-          <node concept="2W2HD0" id="6q45UTzr_qH" role="2BJGWR">
-            <node concept="2W5y$k" id="6q45UTzr_qI" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_qJ" role="DfWIZ">
-              <property role="CIsvl" value="3" />
-            </node>
+          <node concept="2W5y$k" id="69VksCEqdcA" role="2BJGWR">
+            <ref role="2W5z2V" node="6EvkZrKSbgd" resolve="volume" />
           </node>
           <node concept="2W5y$k" id="6q45UTzr_qK" role="2BJG_9">
             <ref role="2W5z2V" node="3xM68GMigWn" resolve="mass" />
@@ -2591,13 +2794,8 @@
           <node concept="2W5y$k" id="6q45UTzr_qV" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_qW" role="2BJG_9">
-            <node concept="2W5y$k" id="6q45UTzr_qX" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_qY" role="DfWIZ">
-              <property role="CIsvl" value="3" />
-            </node>
+          <node concept="2W5y$k" id="69VksCErs5g" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKSbgd" resolve="volume" />
           </node>
         </node>
       </node>
@@ -2617,6 +2815,22 @@
         </node>
       </node>
     </node>
+    <node concept="Rn5op" id="70JbBC9Uq4r" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="stiffness" />
+      <property role="2DB2h4" value="k" />
+      <node concept="2W5y9F" id="70JbBC9Uq4s" role="4gtQf">
+        <node concept="2W2IQR" id="70JbBC9Uq4t" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBC9Uq4u" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigYl" resolve="force" />
+          </node>
+          <node concept="2W5y$k" id="70JbBC9Uq4v" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="70JbBC9Tg$1" role="_iOnB" />
     <node concept="Rn5op" id="6EvkZrLyhZ5" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="heat flux density" />
@@ -2626,13 +2840,23 @@
           <node concept="2W5y$k" id="6q45UTzr_r5" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigYu" resolve="power" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_r6" role="2BJG_9">
-            <node concept="2W5y$k" id="6q45UTzr_r7" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_r8" role="DfWIZ">
-              <property role="CIsvl" value="2" />
-            </node>
+          <node concept="2W5y$k" id="69VksCEbelO" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBCa4Iyj" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="irradiance" />
+      <property role="2DB2h4" value="Eₑ" />
+      <node concept="2W5y9F" id="70JbBCa4Iyk" role="4gtQf">
+        <node concept="2W2IQR" id="70JbBCa4Iyl" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCa5VcW" role="2BJGWR">
+            <ref role="2W5z2V" node="70JbBC6eiph" resolve="radiant flux" />
+          </node>
+          <node concept="2W5y$k" id="69VksCEctaI" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
           </node>
         </node>
       </node>
@@ -2643,16 +2867,31 @@
       <property role="2DB2h4" value="ν" />
       <node concept="2W5y9F" id="6q45UTzr_r9" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_ra" role="2W5ySM">
-          <node concept="2W2HD0" id="6q45UTzr_rb" role="2BJGWR">
-            <node concept="2W5y$k" id="6q45UTzr_rc" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_rd" role="DfWIZ">
-              <property role="CIsvl" value="2" />
-            </node>
+          <node concept="2W5y$k" id="69VksCEtTSv" role="2BJGWR">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
           </node>
           <node concept="2W5y$k" id="6q45UTzr_re" role="2BJG_9">
             <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBCal2j1" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="thermal diffusivity" />
+      <property role="2DB2h4" value="α" />
+      <node concept="2W5y9F" id="70JbBCal2j2" role="4gtQf">
+        <node concept="2W2IQR" id="70JbBCal2j3" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCanoHf" role="2BJGWR">
+            <ref role="2W5z2V" node="6EvkZrNZpHy" resolve="thermal conductivity" />
+          </node>
+          <node concept="2WfEyl" id="70JbBCaJYyq" role="2BJG_9">
+            <node concept="2W5y$k" id="70JbBCaL8P3" role="2BJJPC">
+              <ref role="2W5z2V" node="6EvkZrNXuk1" resolve="specific heat capacity" />
+            </node>
+            <node concept="2W5y$k" id="70JbBCao$hN" role="2BJG10">
+              <ref role="2W5z2V" node="6EvkZrLxx79" resolve="mass density" />
+            </node>
           </node>
         </node>
       </node>
@@ -2715,13 +2954,8 @@
             <node concept="2W5y$k" id="6q45UTzr_rv" role="2BJG10">
               <ref role="2W5z2V" node="3xM68GMigYc" resolve="angle" />
             </node>
-            <node concept="2W2HD0" id="6q45UTzr_rw" role="2BJJPC">
-              <node concept="2W5y$k" id="6q45UTzr_rx" role="2BJGmK">
-                <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-              </node>
-              <node concept="CIsvk" id="6q45UTzr_ry" role="DfWIZ">
-                <property role="CIsvl" value="2" />
-              </node>
+            <node concept="2W5y$k" id="69VksCEv8M0" role="2BJJPC">
+              <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
             </node>
           </node>
         </node>
@@ -2740,13 +2974,8 @@
             <node concept="2W5y$k" id="6q45UTzr_rB" role="2BJG10">
               <ref role="2W5z2V" node="3xM68GMigYc" resolve="angle" />
             </node>
-            <node concept="2W2HD0" id="6q45UTzr_rC" role="2BJJPC">
-              <node concept="2W5y$k" id="6q45UTzr_rD" role="2BJGmK">
-                <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-              </node>
-              <node concept="CIsvk" id="6q45UTzr_rE" role="DfWIZ">
-                <property role="CIsvl" value="3" />
-              </node>
+            <node concept="2W5y$k" id="69VksCEwnFI" role="2BJJPC">
+              <ref role="2W5z2V" node="6EvkZrKSbgd" resolve="volume" />
             </node>
           </node>
         </node>
@@ -2791,13 +3020,8 @@
           <node concept="2W5y$k" id="6q45UTzr_rP" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_rQ" role="2BJG_9">
-            <node concept="2W5y$k" id="6q45UTzr_rR" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_rS" role="DfWIZ">
-              <property role="CIsvl" value="3" />
-            </node>
+          <node concept="2W5y$k" id="69VksCExAAH" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKSbgd" resolve="volume" />
           </node>
         </node>
       </node>
@@ -2811,13 +3035,23 @@
           <node concept="2W5y$k" id="6q45UTzr_rV" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigYu" resolve="power" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_rW" role="2BJG_9">
-            <node concept="2W5y$k" id="6q45UTzr_rX" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_rY" role="DfWIZ">
-              <property role="CIsvl" value="3" />
-            </node>
+          <node concept="2W5y$k" id="69VksCEyPyX" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKSbgd" resolve="volume" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBCaMl_Q" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="power density" />
+      <property role="2DB2h4" value="P/V" />
+      <node concept="2W5y9F" id="70JbBCaMl_R" role="4gtQf">
+        <node concept="2W2IQR" id="70JbBCaMl_S" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCaMl_T" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigYu" resolve="power" />
+          </node>
+          <node concept="2W5y$k" id="70JbBCaOIdt" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKSbgd" resolve="volume" />
           </node>
         </node>
       </node>
@@ -2832,13 +3066,8 @@
             <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
           </node>
           <node concept="2WfEyl" id="6q45UTzr_s2" role="2BJG_9">
-            <node concept="2W2HD0" id="6q45UTzr_s3" role="2BJG10">
-              <node concept="2W5y$k" id="6q45UTzr_s4" role="2BJGmK">
-                <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-              </node>
-              <node concept="CIsvk" id="6q45UTzr_s5" role="DfWIZ">
-                <property role="CIsvl" value="2" />
-              </node>
+            <node concept="2W5y$k" id="69VksCE$4wu" role="2BJG10">
+              <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
             </node>
             <node concept="2W5y$k" id="6q45UTzr_s6" role="2BJJPC">
               <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
@@ -2871,13 +3100,8 @@
           <node concept="2W5y$k" id="6q45UTzr_sd" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_se" role="2BJG_9">
-            <node concept="2W5y$k" id="6q45UTzr_sf" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_sg" role="DfWIZ">
-              <property role="CIsvl" value="2" />
-            </node>
+          <node concept="2W5y$k" id="69VksCE_juc" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
           </node>
         </node>
       </node>
@@ -2891,13 +3115,8 @@
           <node concept="2W5y$k" id="6q45UTzr_sj" role="2BJG10">
             <ref role="2W5z2V" node="3xM68GMigWn" resolve="mass" />
           </node>
-          <node concept="2W2HD0" id="6q45UTzr_sk" role="2BJJPC">
-            <node concept="2W5y$k" id="6q45UTzr_sl" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_sm" role="DfWIZ">
-              <property role="CIsvl" value="2" />
-            </node>
+          <node concept="2W5y$k" id="69VksCEAys7" role="2BJJPC">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
           </node>
         </node>
       </node>
@@ -2998,7 +3217,7 @@
     <node concept="CIrOH" id="6EvkZrLf_iZ" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="N⋅s" />
-      <property role="1o$tow" value="newton-second" />
+      <property role="1o$tow" value="newton-second (momentum)" />
       <ref role="Rn5ok" node="6EvkZrLmub8" resolve="momentum" />
       <node concept="CIsGf" id="6q45UTzs0ZP" role="4gtQf">
         <node concept="wW8yL" id="6q45UTzs0ZQ" role="CIi4h">
@@ -3006,6 +3225,22 @@
             <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
           </node>
           <node concept="CIsvn" id="6q45UTzs0ZS" role="wW812">
+            <ref role="CIi3I" node="3xM68GMigZ6" resolve="N" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC8k_Ol" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="N⋅s" />
+      <property role="1o$tow" value="newton-second (impulse)" />
+      <ref role="Rn5ok" node="70JbBC8ik$W" resolve="impulse" />
+      <node concept="CIsGf" id="70JbBC8k_Om" role="4gtQf">
+        <node concept="wW8yL" id="70JbBC8k_On" role="CIi4h">
+          <node concept="CIsvn" id="70JbBC8k_Oo" role="wW8iK">
+            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
+          </node>
+          <node concept="CIsvn" id="70JbBC8k_Op" role="wW812">
             <ref role="CIi3I" node="3xM68GMigZ6" resolve="N" />
           </node>
         </node>
@@ -3035,14 +3270,30 @@
     <node concept="CIrOH" id="6EvkZrLfEnC" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="N⋅m" />
-      <property role="1o$tow" value="newton-metre" />
+      <property role="1o$tow" value="newton-metre (torque)" />
       <ref role="Rn5ok" node="6EvkZrLwMAi" resolve="newton-metre" />
       <node concept="CIsGf" id="6q45UTzs0ZZ" role="4gtQf">
-        <node concept="2Wclh2" id="6q45UTzs100" role="CIi4h">
-          <node concept="CIsvn" id="6q45UTzs101" role="2WclXY">
-            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
+        <node concept="wW8yL" id="70JbBC90UQ5" role="CIi4h">
+          <node concept="CIsvn" id="70JbBC922Vq" role="wW8iK">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
           </node>
-          <node concept="CIsvn" id="6q45UTzs102" role="2Wcl2F">
+          <node concept="CIsvn" id="6q45UTzs102" role="wW812">
+            <ref role="CIi3I" node="3xM68GMigZ6" resolve="N" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC8_$PT" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="N⋅m" />
+      <property role="1o$tow" value="newton-metre (moment of force)" />
+      <ref role="Rn5ok" node="70JbBC8uJJT" resolve="moment of force" />
+      <node concept="CIsGf" id="70JbBC8_$PU" role="4gtQf">
+        <node concept="wW8yL" id="70JbBC95rcG" role="CIi4h">
+          <node concept="CIsvn" id="70JbBC96zct" role="wW8iK">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+          <node concept="CIsvn" id="70JbBC8_$PX" role="wW812">
             <ref role="CIi3I" node="3xM68GMigZ6" resolve="N" />
           </node>
         </node>
@@ -3050,15 +3301,63 @@
     </node>
     <node concept="CIrOH" id="6EvkZrLfJan" role="_iOnB">
       <property role="1xMkt3" value="true" />
-      <property role="TrG5h" value="N÷s" />
-      <property role="1o$tow" value="newton per second" />
-      <ref role="Rn5ok" node="6EvkZrLx9AS" resolve="yank" />
+      <property role="TrG5h" value="m⁻¹" />
+      <property role="1o$tow" value="newton per second (wave number)" />
+      <ref role="Rn5ok" node="70JbBC8E8T0" resolve="wave number" />
       <node concept="CIsGf" id="6q45UTzs103" role="4gtQf">
-        <node concept="wWcm2" id="6q45UTzs104" role="CIi4h">
-          <node concept="CIsvk" id="6q45UTzs105" role="wWd0T">
+        <node concept="wWcm2" id="70JbBC9x3to" role="CIi4h">
+          <node concept="CIsvk" id="70JbBC9x3tp" role="wWd0T">
             <property role="CIsvl" value="-1" />
           </node>
-          <node concept="CIsvn" id="6q45UTzs106" role="wWd0U">
+          <node concept="CIsvn" id="70JbBC9vToO" role="wWd0U">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC9j3pT" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="m⁻¹" />
+      <property role="1o$tow" value="newton per second (optical power)" />
+      <ref role="Rn5ok" node="70JbBC8GrNw" resolve="optical power" />
+      <node concept="CIsGf" id="70JbBC9j3pU" role="4gtQf">
+        <node concept="wWcm2" id="70JbBC9LiR3" role="CIi4h">
+          <node concept="CIsvk" id="70JbBC9LiR4" role="wWd0T">
+            <property role="CIsvl" value="-1" />
+          </node>
+          <node concept="CIsvn" id="70JbBC9LiR5" role="wWd0U">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC9kdLY" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="m⁻¹" />
+      <property role="1o$tow" value="newton per second (curvature)" />
+      <ref role="Rn5ok" node="70JbBC8IJV2" resolve="curvature" />
+      <node concept="CIsGf" id="70JbBC9kdLZ" role="4gtQf">
+        <node concept="wWcm2" id="70JbBC9MsfE" role="CIi4h">
+          <node concept="CIsvk" id="70JbBC9MsfF" role="wWd0T">
+            <property role="CIsvl" value="-1" />
+          </node>
+          <node concept="CIsvn" id="70JbBC9MsfG" role="wWd0U">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBC9lomP" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="m⁻¹" />
+      <property role="1o$tow" value="newton per second (spatial frequence)" />
+      <ref role="Rn5ok" node="70JbBC8JTGA" resolve="spatial frequency" />
+      <node concept="CIsGf" id="70JbBC9lomQ" role="4gtQf">
+        <node concept="wWcm2" id="70JbBC9N_9u" role="CIi4h">
+          <node concept="CIsvk" id="70JbBC9N_9v" role="wWd0T">
+            <property role="CIsvl" value="-1" />
+          </node>
+          <node concept="CIsvn" id="70JbBC9N_9w" role="wWd0U">
             <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
           </node>
         </node>
@@ -3183,7 +3482,7 @@
     <node concept="CIrOH" id="6EvkZrLfOW_" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="N÷m" />
-      <property role="1o$tow" value="newton per metre" />
+      <property role="1o$tow" value="newton per metre (surface tension)" />
       <ref role="Rn5ok" node="6EvkZrLy9zH" resolve="surface tension" />
       <node concept="CIsGf" id="6q45UTzs10B" role="4gtQf">
         <node concept="2Wclh2" id="6q45UTzs10C" role="CIi4h">
@@ -3196,10 +3495,26 @@
         </node>
       </node>
     </node>
+    <node concept="CIrOH" id="70JbBC9V$B4" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="N÷m" />
+      <property role="1o$tow" value="newton per metre (stiffness)" />
+      <ref role="Rn5ok" node="70JbBC9Uq4r" resolve="stiffness" />
+      <node concept="CIsGf" id="70JbBC9V$B5" role="4gtQf">
+        <node concept="2Wclh2" id="70JbBC9V$B6" role="CIi4h">
+          <node concept="CIsvn" id="70JbBC9V$B7" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigZ6" resolve="N" />
+          </node>
+          <node concept="CIsvn" id="70JbBC9V$B8" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="CIrOH" id="6EvkZrLfP5H" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="W÷m²" />
-      <property role="1o$tow" value="watt per square metre" />
+      <property role="1o$tow" value="watt per square metre (heat flux density)" />
       <ref role="Rn5ok" node="6EvkZrLyhZ5" resolve="heat flux density" />
       <node concept="CIsGf" id="6q45UTzs10F" role="4gtQf">
         <node concept="2Wclh2" id="6q45UTzs10G" role="CIi4h">
@@ -3217,10 +3532,31 @@
         </node>
       </node>
     </node>
+    <node concept="CIrOH" id="70JbBCa75ni" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="W÷m²" />
+      <property role="1o$tow" value="watt per square metre (irradiance)" />
+      <ref role="Rn5ok" node="70JbBCa4Iyj" resolve="irradiance" />
+      <node concept="CIsGf" id="70JbBCa75nj" role="4gtQf">
+        <node concept="2Wclh2" id="70JbBCa75nk" role="CIi4h">
+          <node concept="CIsvn" id="70JbBCa75nl" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigZr" resolve="W" />
+          </node>
+          <node concept="wWcm2" id="70JbBCa75nm" role="2WclXY">
+            <node concept="CIsvk" id="70JbBCa75nn" role="wWd0T">
+              <property role="CIsvl" value="2" />
+            </node>
+            <node concept="CIsvn" id="70JbBCa75no" role="wWd0U">
+              <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="CIrOH" id="6EvkZrLfPeQ" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="m²÷s" />
-      <property role="1o$tow" value="square metre per second" />
+      <property role="1o$tow" value="square metre per second (kinematic viscosity)" />
       <ref role="Rn5ok" node="6EvkZrLyqxV" resolve="kinematic viscosity" />
       <node concept="CIsGf" id="6q45UTzs10L" role="4gtQf">
         <node concept="2Wclh2" id="6q45UTzs10M" role="CIi4h">
@@ -3233,6 +3569,27 @@
             </node>
           </node>
           <node concept="CIsvn" id="6q45UTzs10Q" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBCapJbY" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="m²÷s" />
+      <property role="1o$tow" value="square metre per second (thermal diffusivity)" />
+      <ref role="Rn5ok" node="70JbBCal2j1" resolve="thermal diffusivity" />
+      <node concept="CIsGf" id="70JbBCapJbZ" role="4gtQf">
+        <node concept="2Wclh2" id="70JbBCapJc0" role="CIi4h">
+          <node concept="wWcm2" id="70JbBCapJc1" role="2Wcl2F">
+            <node concept="CIsvk" id="70JbBCapJc2" role="wWd0T">
+              <property role="CIsvl" value="2" />
+            </node>
+            <node concept="CIsvn" id="70JbBCapJc3" role="wWd0U">
+              <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+            </node>
+          </node>
+          <node concept="CIsvn" id="70JbBCapJc4" role="2WclXY">
             <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
           </node>
         </node>
@@ -3394,7 +3751,7 @@
     <node concept="CIrOH" id="6EvkZrLi0OE" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="W÷m³" />
-      <property role="1o$tow" value="watt per cubic metre" />
+      <property role="1o$tow" value="watt per cubic metre (special irradiance)" />
       <ref role="Rn5ok" node="6EvkZrLzF0g" resolve="special irradiance" />
       <node concept="CIsGf" id="6q45UTzs11x" role="4gtQf">
         <node concept="2Wclh2" id="6q45UTzs11y" role="CIi4h">
@@ -3406,6 +3763,27 @@
               <property role="CIsvl" value="3" />
             </node>
             <node concept="CIsvn" id="6q45UTzs11A" role="wWd0U">
+              <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBCaPV10" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="W÷m³" />
+      <property role="1o$tow" value="watt per cubic metre (power density)" />
+      <ref role="Rn5ok" node="70JbBCaMl_Q" resolve="power density" />
+      <node concept="CIsGf" id="70JbBCaPV11" role="4gtQf">
+        <node concept="2Wclh2" id="70JbBCaPV12" role="CIi4h">
+          <node concept="CIsvn" id="70JbBCaPV13" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigZr" resolve="W" />
+          </node>
+          <node concept="wWcm2" id="70JbBCaPV14" role="2WclXY">
+            <node concept="CIsvk" id="70JbBCaPV15" role="wWd0T">
+              <property role="CIsvl" value="3" />
+            </node>
+            <node concept="CIsvn" id="70JbBCaPV16" role="wWd0U">
               <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
             </node>
           </node>
@@ -3908,6 +4286,26 @@
         </node>
       </node>
     </node>
+    <node concept="Rn5op" id="70JbBCbcFa4" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="polarization density" />
+      <property role="2DB2h4" value="P" />
+      <node concept="2W5y9F" id="70JbBCbcFa5" role="4gtQf">
+        <node concept="2W2IQR" id="70JbBCbcFa6" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCbcFa7" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigY7" resolve="electric charge" />
+          </node>
+          <node concept="2W2HD0" id="70JbBCbcFa8" role="2BJG_9">
+            <node concept="2W5y$k" id="70JbBCbcFa9" role="2BJGmK">
+              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+            </node>
+            <node concept="CIsvk" id="70JbBCbcFaa" role="DfWIZ">
+              <property role="CIsvl" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="Rn5op" id="6EvkZrMWK62" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="electric charge density" />
@@ -4023,6 +4421,21 @@
         </node>
       </node>
     </node>
+    <node concept="Rn5op" id="70JbBCbjSzJ" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="magnetic field strength" />
+      <property role="2DB2h4" value="H" />
+      <node concept="2W5y9F" id="70JbBCbjSzK" role="4gtQf">
+        <node concept="2W2IQR" id="70JbBCbjSzL" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCbjSzM" role="2BJGWR">
+            <ref role="2W5z2V" node="3xM68GMigWh" resolve="electric current" />
+          </node>
+          <node concept="2W5y$k" id="70JbBCbjSzN" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="Rn5op" id="6EvkZrN0jt0" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="exposure" />
@@ -4098,13 +4511,8 @@
       <property role="2DB2h4" value="μ" />
       <node concept="2W5y9F" id="6q45UTzr_ud" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_ue" role="2W5ySM">
-          <node concept="2W2HD0" id="6q45UTzr_uf" role="2BJGWR">
-            <node concept="2W5y$k" id="6q45UTzr_ug" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_uh" role="DfWIZ">
-              <property role="CIsvl" value="2" />
-            </node>
+          <node concept="2W5y$k" id="69VksCEBN0v" role="2BJGWR">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
           </node>
           <node concept="2WfEyl" id="6q45UTzr_ui" role="2BJG_9">
             <node concept="2W5y$k" id="6q45UTzr_uj" role="2BJG10">
@@ -4338,7 +4746,7 @@
     <node concept="CIrOH" id="6EvkZrMO9K1" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="A÷m" />
-      <property role="1o$tow" value="ampere per metre" />
+      <property role="1o$tow" value="ampere per metre (magnetization)" />
       <ref role="Rn5ok" node="6EvkZrMZPur" resolve="magnetization" />
       <node concept="CIsGf" id="6q45UTzs13x" role="4gtQf">
         <node concept="2Wclh2" id="6q45UTzs13y" role="CIi4h">
@@ -4346,6 +4754,22 @@
             <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
           </node>
           <node concept="CIsvn" id="6q45UTzs13$" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBCbl6Ny" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="A÷m" />
+      <property role="1o$tow" value="ampere per metre" />
+      <ref role="Rn5ok" node="70JbBCbjSzJ" resolve="magnetic field strength" />
+      <node concept="CIsGf" id="70JbBCbl6Nz" role="4gtQf">
+        <node concept="2Wclh2" id="70JbBCbl6N$" role="CIi4h">
+          <node concept="CIsvn" id="70JbBCbl6N_" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigWw" resolve="A" />
+          </node>
+          <node concept="CIsvn" id="70JbBCbl6NA" role="2WclXY">
             <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
           </node>
         </node>
@@ -4577,13 +5001,8 @@
       <property role="2DB2h4" value="Lᵥ" />
       <node concept="2W5y9F" id="6q45UTzr_uP" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_uQ" role="2W5ySM">
-          <node concept="2W2HD0" id="6q45UTzr_uR" role="2BJG_9">
-            <node concept="2W5y$k" id="6q45UTzr_uS" role="2BJGmK">
-              <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
-            </node>
-            <node concept="CIsvk" id="6q45UTzr_uT" role="DfWIZ">
-              <property role="CIsvl" value="2" />
-            </node>
+          <node concept="2W5y$k" id="69VksCED1ZC" role="2BJG_9">
+            <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
           </node>
           <node concept="2W5y$k" id="6q45UTzr_uU" role="2BJGWR">
             <ref role="2W5z2V" node="3xM68GMigWl" resolve="luminous intensity" />
@@ -4687,8 +5106,8 @@
       <property role="2DB2h4" value="Cₚ" />
       <node concept="2W5y9F" id="6q45UTzr_uZ" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_v0" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_v1" role="2BJGWR">
-            <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
+          <node concept="2W5y$k" id="70JbBCbz_n5" role="2BJGWR">
+            <ref role="2W5z2V" node="70JbBC5GdMI" resolve="heat" />
           </node>
           <node concept="2W5y$k" id="6q45UTzr_v2" role="2BJG_9">
             <ref role="2W5z2V" node="3xM68GMigWm" resolve="thermodynamic temperature" />
@@ -4696,20 +5115,56 @@
         </node>
       </node>
     </node>
+    <node concept="Rn5op" id="70JbBCbx7Tf" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="entropy" />
+      <property role="2DB2h4" value="S" />
+      <node concept="2W5y9F" id="70JbBCbx7Tg" role="4gtQf">
+        <node concept="2W2IQR" id="70JbBCbx7Th" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCbyocw" role="2BJGWR">
+            <ref role="2W5z2V" node="70JbBC5GdMI" resolve="heat" />
+          </node>
+          <node concept="2W5y$k" id="70JbBCbx7Tj" role="2BJG_9">
+            <ref role="2W5z2V" node="3xM68GMigWm" resolve="thermodynamic temperature" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="70JbBCbvUq8" role="_iOnB" />
     <node concept="Rn5op" id="6EvkZrNXuk1" role="_iOnB">
       <property role="1xQvps" value="true" />
       <property role="TrG5h" value="specific heat capacity" />
       <property role="2DB2h4" value="c" />
       <node concept="2W5y9F" id="6q45UTzr_v3" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_v4" role="2W5ySM">
-          <node concept="2W5y$k" id="6q45UTzr_v5" role="2BJGWR">
-            <ref role="2W5z2V" node="3xM68GMigY_" resolve="energy" />
+          <node concept="2W5y$k" id="70JbBCbIxob" role="2BJGWR">
+            <ref role="2W5z2V" node="70JbBC5GdMI" resolve="heat" />
           </node>
           <node concept="2WfEyl" id="6q45UTzr_v6" role="2BJG_9">
             <node concept="2W5y$k" id="6q45UTzr_v7" role="2BJG10">
               <ref role="2W5z2V" node="3xM68GMigWm" resolve="thermodynamic temperature" />
             </node>
             <node concept="2W5y$k" id="6q45UTzr_v8" role="2BJJPC">
+              <ref role="2W5z2V" node="3xM68GMigWn" resolve="mass" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Rn5op" id="70JbBCbJJ1m" role="_iOnB">
+      <property role="1xQvps" value="true" />
+      <property role="TrG5h" value="specific entropy" />
+      <property role="2DB2h4" value="c" />
+      <node concept="2W5y9F" id="70JbBCbJJ1n" role="4gtQf">
+        <node concept="2W2IQR" id="70JbBCbJJ1o" role="2W5ySM">
+          <node concept="2W5y$k" id="70JbBCbJJ1p" role="2BJGWR">
+            <ref role="2W5z2V" node="70JbBC5GdMI" resolve="heat" />
+          </node>
+          <node concept="2WfEyl" id="70JbBCbJJ1q" role="2BJG_9">
+            <node concept="2W5y$k" id="70JbBCbJJ1r" role="2BJG10">
+              <ref role="2W5z2V" node="3xM68GMigWm" resolve="thermodynamic temperature" />
+            </node>
+            <node concept="2W5y$k" id="70JbBCbJJ1s" role="2BJJPC">
               <ref role="2W5z2V" node="3xM68GMigWn" resolve="mass" />
             </node>
           </node>
@@ -4790,7 +5245,7 @@
     <node concept="CIrOH" id="6EvkZrNSOk_" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="J÷K" />
-      <property role="1o$tow" value="joule per kelvin" />
+      <property role="1o$tow" value="joule per kelvin (heat capacity)" />
       <ref role="Rn5ok" node="6EvkZrNXdcc" resolve="heat capacity" />
       <node concept="CIsGf" id="6q45UTzs14B" role="4gtQf">
         <node concept="2Wclh2" id="6q45UTzs14C" role="CIi4h">
@@ -4803,10 +5258,26 @@
         </node>
       </node>
     </node>
+    <node concept="CIrOH" id="70JbBCbCqDR" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="J÷K" />
+      <property role="1o$tow" value="joule per kelvin (entropy)" />
+      <ref role="Rn5ok" node="70JbBCbx7Tf" resolve="entropy" />
+      <node concept="CIsGf" id="70JbBCbCqDS" role="4gtQf">
+        <node concept="2Wclh2" id="70JbBCbCqDT" role="CIi4h">
+          <node concept="CIsvn" id="70JbBCbCqDU" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigZm" resolve="J" />
+          </node>
+          <node concept="CIsvn" id="70JbBCbCqDV" role="2WclXY">
+            <ref role="CIi3I" node="3xM68GMigWv" resolve="K" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="CIrOH" id="6EvkZrNTlg7" role="_iOnB">
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="J÷(K⋅kg)" />
-      <property role="1o$tow" value="joule per kilogram kelvin" />
+      <property role="1o$tow" value="joule per kilogram kelvin (specific heat capacity)" />
       <ref role="Rn5ok" node="6EvkZrNXuk1" resolve="specific heat capacity" />
       <node concept="CIsGf" id="6q45UTzs14F" role="4gtQf">
         <node concept="2Wclh2" id="6q45UTzs14G" role="CIi4h">
@@ -4818,6 +5289,27 @@
               <ref role="CIi3I" node="3xM68GMigWt" resolve="kg" />
             </node>
             <node concept="CIsvn" id="6q45UTzs14K" role="wW812">
+              <ref role="CIi3I" node="3xM68GMigWv" resolve="K" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="70JbBCbOELe" role="_iOnB">
+      <property role="1xMkt3" value="true" />
+      <property role="TrG5h" value="J÷(K⋅kg)" />
+      <property role="1o$tow" value="joule per kilogram kelvin (specific entropy)" />
+      <ref role="Rn5ok" node="70JbBCbJJ1m" resolve="specific entropy" />
+      <node concept="CIsGf" id="70JbBCbOELf" role="4gtQf">
+        <node concept="2Wclh2" id="70JbBCbOELg" role="CIi4h">
+          <node concept="CIsvn" id="70JbBCbOELh" role="2Wcl2F">
+            <ref role="CIi3I" node="3xM68GMigZm" resolve="J" />
+          </node>
+          <node concept="wW8yL" id="70JbBCbOELi" role="2WclXY">
+            <node concept="CIsvn" id="70JbBCbOELj" role="wW8iK">
+              <ref role="CIi3I" node="3xM68GMigWt" resolve="kg" />
+            </node>
+            <node concept="CIsvn" id="70JbBCbOELk" role="wW812">
               <ref role="CIi3I" node="3xM68GMigWv" resolve="K" />
             </node>
           </node>
