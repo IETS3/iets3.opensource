@@ -9321,7 +9321,7 @@
                         <node concept="3cpWs3" id="70JbBCeMA4z" role="3uHU7B">
                           <node concept="3cpWs3" id="6b$yEOTmiRv" role="3uHU7B">
                             <node concept="Xl_RD" id="6b$yEOTmiRz" role="3uHU7B">
-                              <property role="Xl_RC" value="This unit shadows the imported unit " />
+                              <property role="Xl_RC" value="This unit shadows the already defined unit " />
                             </node>
                             <node concept="2OqwBi" id="6b$yEOTmiRw" role="3uHU7w">
                               <node concept="37vLTw" id="6b$yEOTmiRx" role="2Oq$k0">
