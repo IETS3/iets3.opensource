@@ -460,6 +460,7 @@
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1227264722563" name="jetbrains.mps.lang.smodel.structure.EqualsStructurallyExpression" flags="nn" index="2YFouu" />
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
@@ -11050,6 +11051,115 @@
     <node concept="1YaCAy" id="38e9cZk0Avv" role="1YuTPh">
       <property role="TrG5h" value="quantityEmptyType" />
       <ref role="1YaFvo" to="i3ya:45a4DYZtiVD" resolve="QuantityEmptyType" />
+    </node>
+  </node>
+  <node concept="3aFulz" id="69VksCF1azb">
+    <property role="3GE5qa" value="definition.unit" />
+    <property role="TrG5h" value="compare_QuantityEmptyType_Exponent" />
+    <node concept="1YaCAy" id="69VksCF1azc" role="3bfgSz">
+      <property role="TrG5h" value="quantityDivisionType" />
+      <ref role="1YaFvo" to="i3ya:45a4DYZrKZa" resolve="QuantityDivisionType" />
+    </node>
+    <node concept="3clFbS" id="69VksCF1azd" role="2sgrp5">
+      <node concept="3clFbJ" id="69VksCF1fUW" role="3cqZAp">
+        <node concept="3clFbS" id="69VksCF1fUY" role="3clFbx">
+          <node concept="Jncv_" id="69VksCF1gcY" role="3cqZAp">
+            <ref role="JncvD" to="i3ya:45a4DYZTqri" resolve="IGroupPower" />
+            <node concept="2OqwBi" id="69VksCF1gst" role="JncvB">
+              <node concept="1YBJjd" id="69VksCF1gg3" role="2Oq$k0">
+                <ref role="1YBMHb" node="69VksCF1azc" resolve="quantityDivision" />
+              </node>
+              <node concept="2qgKlT" id="69VksCF1gKU" role="2OqNvi">
+                <ref role="37wK5l" to="rppw:1JynhuWrTer" resolve="getDenominator" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="69VksCF1gd2" role="Jncv$">
+              <node concept="3clFbJ" id="69VksCF1hIM" role="3cqZAp">
+                <node concept="1Wc70l" id="69VksCF1jB6" role="3clFbw">
+                  <node concept="17R0WA" id="69VksCF1xV_" role="3uHU7w">
+                    <node concept="10M0yZ" id="69VksCF1ycf" role="3uHU7w">
+                      <ref role="3cqZAo" to="rppw:5dSoB2LTpwy" resolve="ZERO" />
+                      <ref role="1PxDUh" to="rppw:5dSoB2LMRlC" resolve="Fraction" />
+                    </node>
+                    <node concept="2OqwBi" id="69VksCF1keY" role="3uHU7B">
+                      <node concept="2OqwBi" id="69VksCF1jKI" role="2Oq$k0">
+                        <node concept="1YBJjd" id="69VksCF1jGQ" role="2Oq$k0">
+                          <ref role="1YBMHb" node="69VksCF1azg" resolve="quantityExponentType" />
+                        </node>
+                        <node concept="2qgKlT" id="69VksCF1jRn" role="2OqNvi">
+                          <ref role="37wK5l" to="rppw:1JynhuWslGU" resolve="getExp" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="69VksCF1wjd" role="2OqNvi">
+                        <ref role="37wK5l" to="rppw:5dSoB2LNdUE" resolve="add" />
+                        <node concept="2OqwBi" id="69VksCF1wIA" role="37wK5m">
+                          <node concept="Jnkvi" id="69VksCF1wqW" role="2Oq$k0">
+                            <ref role="1M0zk5" node="69VksCF1gd4" resolve="powerDenominator" />
+                          </node>
+                          <node concept="2qgKlT" id="69VksCF1wXx" role="2OqNvi">
+                            <ref role="37wK5l" to="rppw:1JynhuWslGU" resolve="getExp" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2YFouu" id="69VksCF1iP7" role="3uHU7B">
+                    <node concept="2OqwBi" id="69VksCF1i72" role="3uHU7B">
+                      <node concept="1YBJjd" id="69VksCF1hQa" role="2Oq$k0">
+                        <ref role="1YBMHb" node="69VksCF1azg" resolve="quantityExponentType" />
+                      </node>
+                      <node concept="3TrEf2" id="69VksCF1iwr" role="2OqNvi">
+                        <ref role="3Tt5mk" to="i3ya:1JynhuWn4Br" resolve="base" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="69VksCF1j7D" role="3uHU7w">
+                      <node concept="Jnkvi" id="69VksCF1iVz" role="2Oq$k0">
+                        <ref role="1M0zk5" node="69VksCF1gd4" resolve="powerDenominator" />
+                      </node>
+                      <node concept="2qgKlT" id="69VksCF1jnb" role="2OqNvi">
+                        <ref role="37wK5l" to="rppw:1JynhuWs9Jp" resolve="getBase" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="69VksCF1hIO" role="3clFbx">
+                  <node concept="3cpWs6" id="69VksCF1ygW" role="3cqZAp">
+                    <node concept="3clFbT" id="69VksCF1yiO" role="3cqZAk">
+                      <property role="3clFbU" value="true" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="JncvC" id="69VksCF1gd4" role="JncvA">
+              <property role="TrG5h" value="powerDenominator" />
+              <node concept="2jxLKc" id="69VksCF1gd5" role="1tU5fm" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="69VksCF1g13" role="3clFbw">
+          <node concept="2OqwBi" id="69VksCF1g14" role="2Oq$k0">
+            <node concept="1YBJjd" id="69VksCF1g15" role="2Oq$k0">
+              <ref role="1YBMHb" node="69VksCF1azc" resolve="quantityDivision" />
+            </node>
+            <node concept="2qgKlT" id="69VksCF1g16" role="2OqNvi">
+              <ref role="37wK5l" to="rppw:1JynhuWrSSG" resolve="getNumerator" />
+            </node>
+          </node>
+          <node concept="1mIQ4w" id="69VksCF1g17" role="2OqNvi">
+            <node concept="chp4Y" id="69VksCF1g18" role="cj9EA">
+              <ref role="cht4Q" to="i3ya:45a4DYZYSsN" resolve="IGroupNeutral" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs6" id="69VksCF1hAX" role="3cqZAp">
+        <node concept="3clFbT" id="69VksCF1hDv" role="3cqZAk" />
+      </node>
+    </node>
+    <node concept="1YaCAy" id="69VksCF1azg" role="1YuTPh">
+      <property role="TrG5h" value="quantityExponentType" />
+      <ref role="1YaFvo" to="i3ya:45a4DYZrLVu" resolve="QuantityExponentType" />
     </node>
   </node>
 </model>
