@@ -772,7 +772,18 @@
       <property role="TrG5h" value="l" />
       <property role="1o$tow" value="litre" />
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
+      <property role="1xMkt3" value="true" />
       <ref role="Rn5ok" node="6EvkZrKSbgd" resolve="volume" />
+      <node concept="CIsGf" id="7DSb_a23$L8" role="4gtQf">
+        <node concept="wWcm2" id="7DSb_a27Bmi" role="CIi4h">
+          <node concept="CIsvk" id="7DSb_a27Bmj" role="wWd0T">
+            <property role="CIsvl" value="3" />
+          </node>
+          <node concept="CIsvn" id="7DSb_a23$L7" role="wWd0U">
+            <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="CIrOH" id="6EvkZrKSbi1" role="_iOnB">
       <property role="TrG5h" value="t" />
