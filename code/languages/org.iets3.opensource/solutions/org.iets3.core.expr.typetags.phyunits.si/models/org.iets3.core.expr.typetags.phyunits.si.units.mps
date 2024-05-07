@@ -5643,18 +5643,18 @@
     </node>
     <node concept="_ixoA" id="7F14or$gcz4" role="_iOnB" />
     <node concept="CIrOH" id="7F14or$gczd" role="_iOnB">
-      <property role="TrG5h" value="B" />
+      <property role="TrG5h" value="byte" />
       <property role="1o$tow" value="binary byte" />
       <property role="22P1Ek" value="2hbaSyABMZQ/binary" />
       <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
     </node>
     <node concept="CIrOH" id="2Yx91N$tLAX" role="_iOnB">
-      <property role="TrG5h" value="b" />
+      <property role="TrG5h" value="bit" />
       <property role="1o$tow" value="binary bit" />
       <property role="22P1Ek" value="2hbaSyABMZQ/binary" />
       <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
     </node>
-    <node concept="_ixoA" id="14aBVbN56eu" role="_iOnB" />
+    <node concept="_ixoA" id="2liNWkVSxfa" role="_iOnB" />
     <node concept="CIrOH" id="14aBVbN55En" role="_iOnB">
       <property role="TrG5h" value="byte" />
       <property role="1o$tow" value="byte" />
@@ -5667,6 +5667,7 @@
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
     </node>
+    <node concept="_ixoA" id="2liNWkVV20T" role="_iOnB" />
     <node concept="_ixoA" id="14aBVbNnPLO" role="_iOnB" />
     <node concept="TRoc0" id="14aBVbN4A4Q" role="_iOnB">
       <node concept="27LzZq" id="14aBVbN4A4S" role="27P04L">
