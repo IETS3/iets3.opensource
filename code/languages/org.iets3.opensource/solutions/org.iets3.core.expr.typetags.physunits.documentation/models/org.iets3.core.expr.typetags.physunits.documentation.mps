@@ -35,7 +35,7 @@
       </concept>
       <concept id="5185104661801317038" name="org.iets3.core.expr.typetags.physunits.structure.ValExpression" flags="ng" index="2m5Cep" />
       <concept id="5615525165854719246" name="org.iets3.core.expr.typetags.physunits.structure.Dimension" flags="ng" index="2vTMtG" />
-      <concept id="8395143721870492173" name="org.iets3.core.expr.typetags.physunits.structure.UnitMul" flags="ng" index="wW8yL">
+      <concept id="8395143721870492173" name="org.iets3.core.expr.typetags.physunits.structure.UnitMultiplication" flags="ng" index="wW8yL">
         <child id="8395143721870494462" name="left" index="wW812" />
         <child id="8395143721870495244" name="right" index="wW8iK" />
       </concept>
@@ -1400,7 +1400,7 @@
     <node concept="Rn5op" id="3xM68GMigWi" role="_iOnB">
       <property role="TrG5h" value="dimensionless" />
       <property role="1xQvps" value="false" />
-      <property role="2DB2h4" value="1" />
+      <property role="2DB2h4" value="N" />
       <node concept="2vTMtG" id="4RImAbijclJ" role="2vTSSq">
         <property role="TrG5h" value="1" />
       </node>
