@@ -393,6 +393,13 @@
       <ref role="20lvS9" node="7athFveyQjs" resolve="QuantitySpecification" />
       <ref role="20ksaX" node="6q45UTyLsCx" resolve="specification" />
     </node>
+    <node concept="1TJgyj" id="1eut2uU9_A6" role="1TKVEi">
+      <property role="IQ2ns" value="1413695047016536454" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="transformationProperties" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1eut2uU9$qs" resolve="ITransformationProperty" />
+    </node>
     <node concept="1TJgyi" id="7Bmg9Oo3Vr1" role="1TKVEl">
       <property role="IQ2nx" value="8779275567063086785" />
       <property role="TrG5h" value="derived" />
@@ -959,6 +966,65 @@
     <node concept="PrWs8" id="u36xDg6e7n" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZYSsN" resolve="IGroupNeutral" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="1eut2uU9$qs">
+    <property role="EcuMT" value="1413695047016531612" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="ITransformationProperty" />
+  </node>
+  <node concept="1TIwiD" id="1eut2uU9$_R">
+    <property role="EcuMT" value="1413695047016532343" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="Scalar" />
+    <property role="34LRSv" value="scalar" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1eut2uU9$KS" role="PzmwI">
+      <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eut2uU9$Mz">
+    <property role="EcuMT" value="1413695047016533155" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="Vector" />
+    <property role="34LRSv" value="vector" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1eut2uU9$M$" role="PzmwI">
+      <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eut2uU9_pu">
+    <property role="EcuMT" value="1413695047016535646" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="Tensor" />
+    <property role="34LRSv" value="tensor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1eut2uU9_pv" role="PzmwI">
+      <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eut2uWh6mA">
+    <property role="EcuMT" value="1413695047052060070" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="PseudoScalar" />
+    <property role="34LRSv" value="pseudoscalar" />
+    <ref role="1TJDcQ" node="1eut2uU9$_R" resolve="Scalar" />
+  </node>
+  <node concept="1TIwiD" id="1eut2uWEsLQ">
+    <property role="EcuMT" value="1413695047058705526" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="VectorField" />
+    <property role="34LRSv" value="vector field" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1eut2uWEsLR" role="PzmwI">
+      <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eut2uXxsyl">
+    <property role="EcuMT" value="1413695047073122453" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="PseudoVector" />
+    <property role="34LRSv" value="pseudovector" />
+    <ref role="1TJDcQ" node="1eut2uU9$Mz" resolve="Vector" />
   </node>
 </model>
 

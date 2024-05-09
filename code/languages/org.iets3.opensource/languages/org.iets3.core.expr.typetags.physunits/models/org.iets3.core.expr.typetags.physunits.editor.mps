@@ -27,9 +27,6 @@
     <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)" />
     <import index="65nr" ref="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
-    <import index="x0pf" ref="r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)" />
-    <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
-    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -76,6 +73,7 @@
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -2592,6 +2590,17 @@
           </node>
         </node>
       </node>
+      <node concept="3EZMnI" id="1eut2uU9B6y" role="3EZMnx">
+        <node concept="2iRfu4" id="1eut2uU9B6z" role="2iSdaV" />
+        <node concept="3F0ifn" id="1eut2uU9ANe" role="3EZMnx">
+          <property role="3F0ifm" value="Transformation properties" />
+        </node>
+        <node concept="3F2HdR" id="1eut2uU9BJL" role="3EZMnx">
+          <property role="2czwfO" value="," />
+          <ref role="1NtTu8" to="i3ya:1eut2uU9_A6" resolve="transformationProperties" />
+          <node concept="2iRfu4" id="1eut2uU9BJN" role="2czzBx" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7athFve$g6m">
@@ -4318,6 +4327,14 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1eut2uU9$SM">
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <ref role="1XX52x" to="i3ya:1eut2uU9$qs" resolve="ITransformationProperty" />
+    <node concept="PMmxH" id="1eut2uU9$WS" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="Vb9p2" id="1eut2uULP_Y" role="3F10Kt" />
     </node>
   </node>
 </model>

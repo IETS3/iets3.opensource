@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - A new memory prefix for units was implemented (https://en.wikipedia.org/wiki/JEDEC_memory_standards#Unit_prefixes_for_semiconductor_storage_capacity)
+- Quantities now support transformation properties such as scalar or vector, so that you can't incorrectly mix units such as speed (scalar) and velocity (vector).
 
 ### Changed
 
