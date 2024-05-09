@@ -5,6 +5,20 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## May 2024
+
+### Added
+
+- A new memory prefix for units was implemented (https://en.wikipedia.org/wiki/JEDEC_memory_standards#Unit_prefixes_for_semiconductor_storage_capacity)
+
+### Changed
+
+- The name changes to the binary IEC unit prefixes was reversed.
+
+### Fixed
+
+- The prevision loss when converting units in the interpreter was fixed.
+
 ## April 2024
 
 ### Removed
