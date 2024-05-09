@@ -808,8 +808,13 @@
     </node>
     <node concept="25R33" id="2hbaSyABMZQ" role="25R1y">
       <property role="3tVfz5" value="2615231874529701878" />
-      <property role="TrG5h" value="binary" />
-      <property role="1L1pqM" value="binary-scaled" />
+      <property role="TrG5h" value="binary_iec" />
+      <property role="1L1pqM" value="binary-scaled (IEC)" />
+    </node>
+    <node concept="25R33" id="6DczoUSGcZl" role="25R1y">
+      <property role="3tVfz5" value="7659652710373838805" />
+      <property role="TrG5h" value="binary_memory" />
+      <property role="1L1pqM" value="binary-scaled (memory)" />
     </node>
   </node>
   <node concept="1TIwiD" id="14aBVbMOlEH">
