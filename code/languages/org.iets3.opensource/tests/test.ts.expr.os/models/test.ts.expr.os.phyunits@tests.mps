@@ -398,10 +398,6 @@
       <concept id="1919538606560895472" name="org.iets3.core.expr.base.structure.ErrorExpression" flags="ng" index="1i5Bf1">
         <child id="1919538606560895473" name="error" index="1i5Bf0" />
       </concept>
-      <concept id="5955298286257997823" name="org.iets3.core.expr.base.structure.ColonCast" flags="ng" index="1LgZZ2">
-        <child id="5955298286257997833" name="type" index="1LgZ0O" />
-        <child id="5955298286257997830" name="expr" index="1LgZ0V" />
-      </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
@@ -422,9 +418,6 @@
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
       <concept id="4988624180052598016" name="org.iets3.core.expr.tests.structure.RealEqualsTestOp" flags="ng" index="2cNFD2">
         <property id="4988624180052918199" name="decimals" index="2cKlzP" />
-      </concept>
-      <concept id="8219602584783477664" name="org.iets3.core.expr.tests.structure.AbstractTestItem" flags="ng" index="mXNUw">
-        <property id="4770332828445654111" name="isIgnored" index="2xO9KL" />
       </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
@@ -8400,7 +8393,7 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="7Dq0xpBvbKO" role="_iOnB" />
+    <node concept="_ixoA" id="1eut2uTQYG5" role="_iOnB" />
     <node concept="_fkuM" id="7Dq0xpBverD" role="_iOnB">
       <property role="TrG5h" value="implicitConversion" />
       <node concept="_fkuZ" id="7Dq0xpBvgJr" role="_fkp5">
@@ -8469,56 +8462,26 @@
       <node concept="_fkuZ" id="Fhq44envRY" role="_fkp5">
         <node concept="_fku$" id="Fhq44envRZ" role="_fkur" />
         <node concept="30dDZf" id="Fhq44enzl_" role="_fkuY">
-          <node concept="1LgZZ2" id="4HVc87KbOwv" role="30dEs_">
-            <node concept="2c7tTJ" id="4HVc87KbWkl" role="1LgZ0O">
-              <node concept="CIsGf" id="4HVc87Kc08Y" role="2c7tTI">
-                <node concept="CIsvn" id="4HVc87Kc08X" role="CIi4h">
-                  <property role="1xG2w7" value="m" />
-                  <ref role="CIi3I" to="8ps7:3xM68GMigWr" resolve="m" />
-                </node>
-              </node>
-              <node concept="mLuIC" id="4HVc87KbSi8" role="2c7tTw">
-                <node concept="2gteS_" id="4HVc87Kc4bb" role="2gteVg">
-                  <property role="2gteVv" value="inf" />
-                </node>
+          <node concept="1YnStw" id="Fhq44en_ys" role="30dEs_">
+            <node concept="CIsGf" id="Fhq44en_yr" role="2c7tTI">
+              <node concept="CIsvn" id="Fhq44en_yq" role="CIi4h">
+                <property role="1xG2w7" value="m" />
+                <ref role="CIi3I" to="8ps7:3xM68GMigWr" resolve="m" />
               </node>
             </node>
-            <node concept="1YnStw" id="Fhq44en_ys" role="1LgZ0V">
-              <node concept="CIsGf" id="Fhq44en_yr" role="2c7tTI">
-                <node concept="CIsvn" id="Fhq44en_yq" role="CIi4h">
-                  <property role="1xG2w7" value="m" />
-                  <ref role="CIi3I" to="8ps7:3xM68GMigWr" resolve="m" />
-                </node>
-              </node>
-              <node concept="30bXRB" id="Fhq44en$qh" role="1YnStB">
-                <property role="30bXRw" value="1" />
-              </node>
+            <node concept="30bXRB" id="Fhq44en$qh" role="1YnStB">
+              <property role="30bXRw" value="1" />
             </node>
           </node>
-          <node concept="1LgZZ2" id="4HVc87KblO8" role="30dEsF">
-            <node concept="2c7tTJ" id="4HVc87KbGOs" role="1LgZ0O">
-              <node concept="CIsGf" id="4HVc87KbKD5" role="2c7tTI">
-                <node concept="CIsvn" id="4HVc87KbKD4" role="CIi4h">
-                  <property role="1xG2w7" value="c" />
-                  <ref role="CIi3I" to="8ps7:3xM68GMigWr" resolve="m" />
-                </node>
-              </node>
-              <node concept="mLuIC" id="4HVc87KbpD2" role="2c7tTw">
-                <node concept="2gteS_" id="4HVc87Kb_8l" role="2gteVg">
-                  <property role="2gteVv" value="inf" />
-                </node>
+          <node concept="1YnStw" id="Fhq44enygB" role="30dEsF">
+            <node concept="CIsGf" id="Fhq44enygA" role="2c7tTI">
+              <node concept="CIsvn" id="Fhq44enyg_" role="CIi4h">
+                <property role="1xG2w7" value="c" />
+                <ref role="CIi3I" to="8ps7:3xM68GMigWr" resolve="m" />
               </node>
             </node>
-            <node concept="1YnStw" id="Fhq44enygB" role="1LgZ0V">
-              <node concept="CIsGf" id="Fhq44enygA" role="2c7tTI">
-                <node concept="CIsvn" id="Fhq44enyg_" role="CIi4h">
-                  <property role="1xG2w7" value="c" />
-                  <ref role="CIi3I" to="8ps7:3xM68GMigWr" resolve="m" />
-                </node>
-              </node>
-              <node concept="30bXRB" id="Fhq44enxcx" role="1YnStB">
-                <property role="30bXRw" value="1" />
-              </node>
+            <node concept="30bXRB" id="Fhq44enxcx" role="1YnStB">
+              <property role="30bXRw" value="1" />
             </node>
           </node>
         </node>
@@ -8673,17 +8636,9 @@
       </node>
       <node concept="3dYjL0" id="69HsIy5GEuV" role="_fkp5" />
     </node>
+    <node concept="_ixoA" id="1eut2uU7YrA" role="_iOnB" />
     <node concept="_fkuM" id="69HsIy5GLS_" role="_iOnB">
       <property role="TrG5h" value="scalingWeight" />
-      <node concept="1z9TsT" id="3xJU9K0$Z37" role="lGtFl">
-        <node concept="OjmMv" id="3xJU9K0$Z38" role="1w35rA">
-          <node concept="19SGf9" id="3xJU9K0$Z39" role="OjmMu">
-            <node concept="19SUe$" id="3xJU9K0$Z3a" role="19SJt6">
-              <property role="19SUeA" value="TODO: Again the same problem with the conversion on integer level. Can we provide a warning or fix it" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="_fkuZ" id="69HsIy5GLSA" role="_fkp5">
         <node concept="_fku$" id="69HsIy5GLSB" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSC" role="_fkuY">
@@ -8709,7 +8664,15 @@
         </node>
       </node>
       <node concept="_fkuZ" id="69HsIy5GLSJ" role="_fkp5">
-        <property role="2xO9KL" value="true" />
+        <node concept="1z9TsT" id="1eut2uU9kib" role="lGtFl">
+          <node concept="OjmMv" id="1eut2uU9kic" role="1w35rA">
+            <node concept="19SGf9" id="1eut2uU9kid" role="OjmMu">
+              <node concept="19SUe$" id="1eut2uU9kie" role="19SJt6">
+                <property role="19SUeA" value="the first applicable rule is used with the default config which is the conversion declared in this file " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="_fku$" id="69HsIy5GLSK" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSL" role="_fkuY">
           <node concept="1YnStw" id="69HsIy5GU5N" role="30czhm">
@@ -8723,13 +8686,14 @@
             </node>
           </node>
           <node concept="3EXbTZ" id="3eEp8ADckAm" role="1QScD9">
+            <ref role="3EXiBM" to="8ps7:14aBVbNETxk" resolve="conversion_kg1227969439352985692_g1227969439352985693 (any)" />
             <node concept="CIsvn" id="3eEp8ADckAo" role="2qyG0l">
               <ref role="CIi3I" to="8ps7:6EvkZrOLErr" resolve="g" />
             </node>
           </node>
         </node>
         <node concept="30bXRB" id="69HsIy5GLSR" role="_fkuS">
-          <property role="30bXRw" value="1000" />
+          <property role="30bXRw" value="3" />
         </node>
       </node>
       <node concept="_fkuZ" id="1AZ6$Cori3v" role="_fkp5">
