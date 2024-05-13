@@ -46,6 +46,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -2216,6 +2217,30 @@
     </node>
     <node concept="PrWs8" id="6GiZkUz7qWS" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4rXUpRDnHyE">
+    <property role="EcuMT" value="5115501616197195946" />
+    <property role="TrG5h" value="A" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="4rXUpRDqVdy" role="1TKVEi">
+      <property role="IQ2ns" value="5115501616198038370" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="b" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4rXUpRDnIsd" />
+    </node>
+    <node concept="PrWs8" id="4rXUpRDqWI$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4rXUpRDnIsd">
+    <property role="EcuMT" value="5115501616197199629" />
+    <property role="TrG5h" value="B" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="4rXUpRDqUYv" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
   </node>
 </model>
