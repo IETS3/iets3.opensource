@@ -170,6 +170,7 @@
         <reference id="9088900783727405801" name="conversionSpecifier" index="3EXiBM" />
         <child id="3722898584385922204" name="targetUnit" index="2qyG0l" />
       </concept>
+      <concept id="4522244360852125563" name="org.iets3.core.expr.typetags.physunits.structure.AllowNameShadowingAnnotation" flags="ng" index="1MQ8CM" />
       <concept id="4121031889271022213" name="org.iets3.core.expr.typetags.physunits.structure.ConvertExpression" flags="ng" index="1PfFCI">
         <reference id="624957442818227315" name="conversionSpecifier" index="2yhJs8" />
         <child id="1859314401785035444" name="targetUnit" index="3PTUoG" />
@@ -9498,6 +9499,17 @@
             <node concept="1TM$A" id="6b$yEOTmH9y" role="7EUXB">
               <node concept="2PYRI3" id="6b$yEOTmH9z" role="3lydEf">
                 <ref role="39XzEq" to="x0pf:6b$yEOTmiRt" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="CIrOH" id="4iGVAJE9FgW" role="_iOnC">
+          <property role="TrG5h" value="s" />
+          <ref role="Rn5ok" to="8ps7:3xM68GMigWn" resolve="mass" />
+          <node concept="1MQ8CM" id="4iGVAJEggWV" role="lGtFl">
+            <node concept="7CXmI" id="4iGVAJEh9Q5" role="lGtFl">
+              <node concept="7OXhh" id="4iGVAJEhak1" role="7EUXB">
+                <property role="GvXf4" value="true" />
               </node>
             </node>
           </node>
