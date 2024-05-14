@@ -407,13 +407,13 @@
     </node>
     <node concept="2tJIrI" id="HeBpFYvUl" role="jymVt" />
     <node concept="3clFb_" id="HeBpFYvw5" role="jymVt">
-      <property role="TrG5h" value="getNoDimensionSpecifier" />
+      <property role="TrG5h" value="getUnspecifiedQuantifierSpecifier" />
       <node concept="3Tm1VV" id="HeBpFYvw7" role="1B3o_S" />
       <node concept="17QB3L" id="HeBpFYvw8" role="3clF45" />
       <node concept="3clFbS" id="HeBpFYvw9" role="3clF47">
         <node concept="3clFbF" id="HeBpFYvwc" role="3cqZAp">
           <node concept="Xl_RD" id="HeBpFYvwb" role="3clFbG">
-            <property role="Xl_RC" value="dimensionless" />
+            <property role="Xl_RC" value="unspecified quantity" />
           </node>
         </node>
       </node>

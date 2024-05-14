@@ -138,6 +138,9 @@
       <ref role="20lvS9" node="7eOyx9r3k4t" resolve="UnitSpecification" />
       <ref role="20ksaX" node="6q45UTyLsCx" resolve="specification" />
     </node>
+    <node concept="PrWs8" id="70JbBC5htSF" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4yaQL1YaUM8" resolve="IHasQualifiedName" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3k4t">
     <property role="TrG5h" value="UnitSpecification" />
@@ -178,6 +181,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8337440621611297532" />
       <ref role="20lvS9" node="7eOyx9r3k3e" resolve="IUnit" />
+    </node>
+    <node concept="PrWs8" id="4TbR93mDu70" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="3j3yk3guAAl">
@@ -469,7 +475,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="base" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7athFveyQYz" resolve="QuantityReference" />
+      <ref role="20lvS9" node="7athFve_SVK" resolve="QuantityExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="7athFve_UG0">
@@ -657,7 +663,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="base" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="45a4DYZrLy8" resolve="QuantityBaseType" />
+      <ref role="20lvS9" node="69ocqYc6oAT" resolve="QuantityType" />
     </node>
   </node>
   <node concept="1TIwiD" id="45a4DYZtiVD">
@@ -728,7 +734,7 @@
   <node concept="1TIwiD" id="7i1yFLksg8d">
     <property role="EcuMT" value="8395143721870492173" />
     <property role="3GE5qa" value="definition.unit" />
-    <property role="TrG5h" value="UnitMul" />
+    <property role="TrG5h" value="UnitMultiplication" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="a unit multiplication expression" />
     <ref role="1TJDcQ" node="7athFveEYHG" resolve="UnitExpression" />
@@ -769,7 +775,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="base" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7eOyx9r3kR5" resolve="UnitReference" />
+      <ref role="20lvS9" node="7athFveEYHG" resolve="UnitExpression" />
     </node>
     <node concept="PrWs8" id="15KrVXSF5qx" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqri" resolve="IGroupPower" />
@@ -887,7 +893,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="base" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4RImAbi2ndX" resolve="DimensionReference" />
+      <ref role="20lvS9" node="4RImAbi2k39" resolve="DimensionExpression" />
     </node>
     <node concept="PrWs8" id="u36xDg6fhi" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTqri" resolve="IGroupPower" />
@@ -903,11 +909,6 @@
       <property role="IQ2ns" value="5615525165854716798" />
       <property role="20kJfa" value="dimension" />
       <ref role="20lvS9" node="4RImAbi2nOe" resolve="Dimension" />
-    </node>
-    <node concept="1TJgyj" id="u36xDggX7V" role="1TKVEi">
-      <property role="IQ2ns" value="541305080532685307" />
-      <property role="20kJfa" value="node" />
-      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="u36xDg6Urr" role="PzmwI">
       <ref role="PrY4T" node="6q45UTyu4OU" resolve="IReference" />
