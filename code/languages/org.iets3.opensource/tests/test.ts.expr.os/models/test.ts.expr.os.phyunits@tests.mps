@@ -96,6 +96,11 @@
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
+    <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
+      <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ListLiteral" flags="ng" index="3iBYfx">
+        <child id="7554398283339759320" name="elements" index="3iBYfI" />
+      </concept>
+    </language>
     <language id="7ee265bd-5986-4709-86ed-2c6daa33cd8c" name="org.iets3.core.expr.typetags.physunits">
       <concept id="7387055326543332204" name="org.iets3.core.expr.typetags.physunits.structure.IHaveIUnitSpecification" flags="ng" index="4gtj2">
         <child id="7387055326543333921" name="specification" index="4gtQf" />
@@ -9716,6 +9721,29 @@
           <node concept="7CXmI" id="7CCjMgELe4L" role="lGtFl">
             <node concept="7OXhh" id="7CCjMgELedS" role="7EUXB">
               <property role="GvXf4" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="3PJcUY_RgHD" role="_iOnC" />
+        <node concept="2zPypq" id="3PJcUY_Rhkr" role="_iOnC">
+          <property role="TrG5h" value="nestedList" />
+          <node concept="3iBYfx" id="3PJcUY_RiPF" role="2zPyp_">
+            <node concept="3iBYfx" id="3PJcUY_RjjG" role="3iBYfI">
+              <node concept="1YnStw" id="3PJcUY_RkhP" role="3iBYfI">
+                <node concept="CIsGf" id="3PJcUY_RkhO" role="2c7tTI">
+                  <node concept="CIsvn" id="3PJcUY_RkhN" role="CIi4h">
+                    <ref role="CIi3I" to="8ps7:3xM68GMigWt" resolve="kg" />
+                  </node>
+                </node>
+                <node concept="30bXRB" id="3PJcUY_RjLK" role="1YnStB">
+                  <property role="30bXRw" value="1" />
+                </node>
+              </node>
+            </node>
+            <node concept="7CXmI" id="3PJcUY_RkL8" role="lGtFl">
+              <node concept="7OXhh" id="3PJcUY_Rlgm" role="7EUXB">
+                <property role="GvXf4" value="true" />
+              </node>
             </node>
           </node>
         </node>
