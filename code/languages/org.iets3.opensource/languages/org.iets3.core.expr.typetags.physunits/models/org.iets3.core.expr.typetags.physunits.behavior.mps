@@ -17828,7 +17828,7 @@
             </node>
             <node concept="2OqwBi" id="4R4mkotICQv" role="3uHU7w">
               <node concept="1rXfSq" id="4R4mkotICQw" role="2Oq$k0">
-                <ref role="37wK5l" node="4R4mkotICQH" />
+                <ref role="37wK5l" node="4R4mkotICQH" resolve="getUnspecifiedQuantity" />
                 <node concept="37vLTw" id="3_xqmvFWGtH" role="37wK5m">
                   <ref role="3cqZAo" node="3_xqmvFW_cO" resolve="repository" />
                 </node>

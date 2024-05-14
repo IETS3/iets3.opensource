@@ -798,12 +798,12 @@
                     <node concept="3cpWsn" id="76rIOES1tpb" role="3cpWs9">
                       <property role="TrG5h" value="builder" />
                       <node concept="3uibUv" id="76rIOEQAdkU" role="1tU5fm">
-                        <ref role="3uigEE" to="pdwk:~ContainmentContext$Builder" resolve="Builder" />
+                        <ref role="3uigEE" to="pdwk:~ContainmentContext$Builder" resolve="ContainmentContext.Builder" />
                       </node>
                       <node concept="2ShNRf" id="76rIOES1tpc" role="33vP2m">
                         <node concept="1pGfFk" id="76rIOES1tpd" role="2ShVmc">
                           <property role="373rjd" value="true" />
-                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="Builder" />
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
                         </node>
                       </node>
                     </node>
