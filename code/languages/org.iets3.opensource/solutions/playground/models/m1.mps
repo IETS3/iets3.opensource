@@ -81,6 +81,9 @@
         <reference id="1360296727242142914" name="out" index="22x4DC" />
         <child id="1360296727240295912" name="value" index="22E7H2" />
       </concept>
+      <concept id="8219602584783477663" name="org.iets3.core.expr.tests.structure.ConstraintFailedTestItem" flags="ng" index="mXNUv">
+        <child id="8219602584783494093" name="actual" index="mXJVd" />
+      </concept>
       <concept id="1360296727216854050" name="org.iets3.core.expr.tests.structure.AbstractVectorCollection" flags="ng" index="2s0UE8">
         <child id="1360296727216854051" name="vectors" index="2s0UE9" />
         <child id="1360296727229759740" name="producer" index="2tibTm" />
@@ -984,12 +987,10 @@
     </node>
     <node concept="_fkuM" id="6LLJO$x4kYy" role="_iOnB">
       <property role="TrG5h" value="Tests" />
-      <node concept="_fkuZ" id="6LLJO$x4l5_" role="_fkp5">
-        <node concept="_fku$" id="6LLJO$x4l5A" role="_fkur" />
-        <node concept="1af_rf" id="6LLJO$x4l5P" role="_fkuY">
+      <node concept="mXNUv" id="4rDeVpus9hm" role="_fkp5">
+        <node concept="1af_rf" id="6LLJO$x4l5P" role="mXJVd">
           <ref role="1afhQb" node="6LLJO$x4kRa" resolve="f3" />
         </node>
-        <node concept="2vmpnb" id="6LLJO$x4l61" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="3vcWfImhbZd" role="_fkp5">
         <node concept="_fku$" id="3vcWfImhbZe" role="_fkur" />
@@ -1052,8 +1053,8 @@
       <property role="TrG5h" value="g2" />
       <node concept="1af_rf" id="6LLJO$x4mnW" role="1ahQXP">
         <ref role="1afhQb" node="6LLJO$x4lUc" resolve="g1" />
-        <node concept="30bXRB" id="6LLJO$x4mor" role="1afhQ5">
-          <property role="30bXRw" value="5" />
+        <node concept="30bXRB" id="4rDeVpusai3" role="1afhQ5">
+          <property role="30bXRw" value="1" />
         </node>
       </node>
     </node>
@@ -1064,8 +1065,8 @@
         <node concept="1af_rf" id="6LLJO$x4mPZ" role="_fkuY">
           <ref role="1afhQb" node="6LLJO$x4mfC" resolve="g2" />
         </node>
-        <node concept="30bXRB" id="6LLJO$x4mQi" role="_fkuS">
-          <property role="30bXRw" value="1" />
+        <node concept="30bXRB" id="4rDeVpusaPy" role="_fkuS">
+          <property role="30bXRw" value="2" />
         </node>
       </node>
     </node>
