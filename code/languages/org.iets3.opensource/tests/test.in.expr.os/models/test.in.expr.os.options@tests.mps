@@ -2,7 +2,7 @@
 <model ref="r:ea293304-2b79-4cc3-9b45-e3362a713a17(test.in.expr.os.options@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
@@ -157,7 +157,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -300,7 +299,6 @@
   </registry>
   <node concept="_iOnU" id="7u9eNXf5ZVJ">
     <property role="TrG5h" value="option_strings" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="2zPypq" id="7u9eNXf5ZVL" role="_iOnB">
       <property role="TrG5h" value="s" />
@@ -1006,7 +1004,6 @@
   <node concept="_iOnU" id="7u9eNXgpmuL">
     <property role="TrG5h" value="option_records" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="2zPypq" id="7u9eNXgpmuN" role="_iOnB">
       <property role="TrG5h" value="p1" />
       <node concept="2S399m" id="7u9eNXgpmuO" role="2zPyp_">
@@ -1464,7 +1461,6 @@
   </node>
   <node concept="_iOnU" id="7u9eNXj2Iya">
     <property role="TrG5h" value="option_logic" />
-    <property role="2SXJ1i" value="true" />
     <node concept="_fkuM" id="7u9eNXj2Iyc" role="_iOnB">
       <property role="TrG5h" value="logic" />
       <node concept="_fkuZ" id="7u9eNXj2Iyd" role="_fkp5">
@@ -1650,7 +1646,6 @@
   </node>
   <node concept="_iOnU" id="7u9eNXjmWrF">
     <property role="TrG5h" value="option_defaultValues" />
-    <property role="2SXJ1i" value="true" />
     <node concept="1Ws0TD" id="7u9eNXjmWrG" role="_iOnB">
       <property role="1WsWdv" value="complete, compiles, all tests ok" />
     </node>
@@ -1801,7 +1796,6 @@
   </node>
   <node concept="_iOnU" id="40vJDLnkwjz">
     <property role="TrG5h" value="option_binary_arith" />
-    <property role="2SXJ1i" value="true" />
     <node concept="_ixoA" id="40vJDLneDP6" role="_iOnB" />
     <node concept="2zPypq" id="40vJDLneEZE" role="_iOnB">
       <property role="TrG5h" value="n" />
@@ -3038,7 +3032,6 @@
   </node>
   <node concept="_iOnU" id="7u9eNXkkQGv">
     <property role="TrG5h" value="option_base2" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <node concept="1Ws0TD" id="7u9eNXkkQGx" role="_iOnB">
       <property role="1WsWdv" value="expr.base tests which are not supported by c++ interpreter" />
@@ -3334,7 +3327,6 @@
   <node concept="_iOnU" id="7u9eNXjF6xJ">
     <property role="TrG5h" value="option_base" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="2zPypq" id="7u9eNXjF6y8" role="_iOnB">
       <property role="TrG5h" value="constant5" />
       <node concept="30bXRB" id="7u9eNXjF6ya" role="2zPyp_">
@@ -3468,7 +3460,6 @@
   <node concept="_iOnU" id="6HHp2WmWPOB">
     <property role="TrG5h" value="option" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="2zPypq" id="5yJrCoWjtoQ" role="_iOnB">
       <property role="TrG5h" value="noneNone" />
       <node concept="UmHTt" id="5yJrCoWj_rb" role="2zPyp_" />
@@ -4241,12 +4232,16 @@
             <node concept="30bdrU" id="6KhzXd8xA3r" role="Uns6T" />
           </node>
         </node>
-        <node concept="30bdrP" id="6KhzXd8xAdq" role="3iBYfI">
-          <property role="30bdrQ" value="S1" />
+        <node concept="2nD44o" id="7DfYVnlulyY" role="3iBYfI">
+          <node concept="30bdrP" id="6KhzXd8xAdq" role="2nD44t">
+            <property role="30bdrQ" value="S1" />
+          </node>
         </node>
         <node concept="UmHTt" id="6KhzXd8xAgt" role="3iBYfI" />
-        <node concept="30bdrP" id="6KhzXd8xAh6" role="3iBYfI">
-          <property role="30bdrQ" value="S2" />
+        <node concept="2nD44o" id="7DfYVnlulEz" role="3iBYfI">
+          <node concept="30bdrP" id="6KhzXd8xAh6" role="2nD44t">
+            <property role="30bdrQ" value="S2" />
+          </node>
         </node>
       </node>
     </node>
