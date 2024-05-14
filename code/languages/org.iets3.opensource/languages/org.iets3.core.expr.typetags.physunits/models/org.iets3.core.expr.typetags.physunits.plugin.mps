@@ -1364,7 +1364,7 @@
                           <node concept="2qgKlT" id="4qv99Irzo9w" role="2OqNvi">
                             <ref role="37wK5l" to="rppw:3_TFq$0_vSx" resolve="getApplicableConversionSpecifiers" />
                             <node concept="37vLTw" id="tQsiKdSs4Q" role="37wK5m">
-                              <ref role="3cqZAo" node="tQsiKdSs4K" resolve="ancestor" />
+                              <ref role="3cqZAo" node="tQsiKdSs4K" resolve="visibleElementsProvider" />
                             </node>
                           </node>
                         </node>

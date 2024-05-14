@@ -985,7 +985,7 @@
     <property role="3GE5qa" value="group.transformationProperty" />
     <property role="TrG5h" value="Scalar" />
     <property role="34LRSv" value="scalar" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1eut2uU9$KS" role="PzmwI">
       <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
     </node>
@@ -995,7 +995,7 @@
     <property role="3GE5qa" value="group.transformationProperty" />
     <property role="TrG5h" value="Vector" />
     <property role="34LRSv" value="vector" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1eut2uU9$M$" role="PzmwI">
       <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
     </node>
@@ -1005,7 +1005,7 @@
     <property role="3GE5qa" value="group.transformationProperty" />
     <property role="TrG5h" value="Tensor" />
     <property role="34LRSv" value="tensor" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1eut2uU9_pv" role="PzmwI">
       <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
     </node>
@@ -1022,7 +1022,7 @@
     <property role="3GE5qa" value="group.transformationProperty" />
     <property role="TrG5h" value="VectorField" />
     <property role="34LRSv" value="vector field" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1eut2uWEsLR" role="PzmwI">
       <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
     </node>
