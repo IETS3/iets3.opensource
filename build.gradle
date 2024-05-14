@@ -1,5 +1,5 @@
 import de.itemis.mps.gradle.*
-
+import groovy.xml.XmlSlurper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -10,7 +10,7 @@ buildscript {
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.7.288.4ea765f'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.23.1.412.a54f29f'
     }
 }
 
@@ -39,7 +39,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '11_0_11-b1341.60'
+    jbrVersion = '11_0_14_1-b1751.46'
 }
 
 // detect if we are in a CI build
@@ -53,12 +53,12 @@ if (project.hasProperty("forceCI")) {
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 def major = "2021"
-def minor = "1"
+def minor = "3"
 
 // Dependency versions
-ext.mpsVersion = '2021.1.4'
+ext.mpsVersion = '2021.3.5'
 
-def mbeddrVersion = "2021.1+"
+def mbeddrVersion = "2021.3+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -81,12 +81,13 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     if (ciBuild) {
         currentBranch = GitBasedVersioning.gitBranch
 
-        def buildNumber = System.env.BUILD_NUMBER.toInteger()
-        if (currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
+        def buildNumber = System.env.BUILD_COUNTER.toInteger()
+        if (currentBranch.startsWith("maintenance-")) {
             version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
         } else {
-            version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)
-        }
+            def isSnapshot = !(currentBranch.equals("master") || currentBranch.startsWith("datev-loon-staging-") || currentBranch.startsWith("datev-steuer-staging-"))
+            version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber) + (isSnapshot ? "-SNAPSHOT" : "")
+        } 
         println "##teamcity[buildNumber '${version}']"
     } else {
         version = "$major.$minor-SNAPSHOT"
@@ -110,13 +111,14 @@ ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-sn
 ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
 
 
+
 // 'artifacts' is used in the generated ant scripts as build output directory
 ext.artifactsDir = new File(buildDir, 'artifacts')
 ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
 
 
 wrapper {
-    gradleVersion '5.5.1'
+    gradleVersion '8.5'
     distributionType Wrapper.DistributionType.ALL
 }
 
@@ -131,7 +133,7 @@ dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
-    pcollections 'org.pcollections:pcollections:3.1.4'
+    pcollections 'org.pcollections:pcollections:4.0.1'
 }
 
 
@@ -215,6 +217,24 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
     }
 }
 
+task failOnTestError() {
+    description 'evaluate junit result and fail on error'
+    doLast {
+        
+        def juniXml = file('TESTS-TestSuites.xml')
+        if(juniXml.exists()){
+            def junitResult = new XmlSlurper().parse(juniXml)
+            def failures = junitResult.'**'.findAll { it.name() == 'failure' }
+            def errors = junitResult.'**'.findAll { it.name() == 'error' }
+
+            if (failures || errors) {
+                def amount = failures.size() + errors.size()
+                throw new GradleException(amount + " JUnit tests failed. Check the test report for details.")
+            }
+        }
+    }
+}
+buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
@@ -274,7 +294,7 @@ publishing {
                 }
             }
         }
-        if (currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.startsWith("mps")) {
+        if (currentBranch == "master" || currentBranch.startsWith("maintenance") ) {
             maven {
                 name = "GitHubPackages"
                 url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")

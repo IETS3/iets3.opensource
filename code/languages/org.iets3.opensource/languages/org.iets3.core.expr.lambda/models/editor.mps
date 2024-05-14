@@ -5,7 +5,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,6 +17,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -86,6 +87,9 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styles" index="V601i" />
       </concept>
@@ -266,6 +270,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -354,6 +359,11 @@
         <property role="3F0ifm" value="(" />
         <node concept="11LMrY" id="6zmBjqUjH25" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="OXEIz" id="yfp7edvEmE" role="P5bDN">
+          <node concept="UkePV" id="yfp7edvEmF" role="OY2wv">
+            <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" resolve="Type" />
+          </node>
         </node>
       </node>
       <node concept="3F2HdR" id="6zmBjqUjGZy" role="3EZMnx">
@@ -1184,11 +1194,23 @@
         <node concept="3ZlJ5R" id="4qVjx3jYYFO" role="VblUZ">
           <node concept="3clFbS" id="4qVjx3jYYFP" role="2VODD2">
             <node concept="3clFbF" id="4qVjx3jZ2fk" role="3cqZAp">
-              <node concept="2YIFZM" id="4qVjx3jZ2tu" role="3clFbG">
-                <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                <node concept="Xl_RD" id="4qVjx3jZ2_X" role="37wK5m">
-                  <property role="Xl_RC" value="#FF5319" />
+              <node concept="2ShNRf" id="2GzLOsV23Ah" role="3clFbG">
+                <node concept="1pGfFk" id="2GzLOsV24pR" role="2ShVmc">
+                  <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+                  <node concept="2YIFZM" id="4qVjx3jZ2tu" role="37wK5m">
+                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+                    <node concept="Xl_RD" id="4qVjx3jZ2_X" role="37wK5m">
+                      <property role="Xl_RC" value="#FF5319" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="2GzLOsV24x6" role="37wK5m">
+                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+                    <node concept="Xl_RD" id="2GzLOsV24x7" role="37wK5m">
+                      <property role="Xl_RC" value="#FF5319" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

@@ -25,6 +25,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="iwwu" ref="r:2c4d9270-b6d6-44af-aecd-e01a223680db(jetbrains.mps.kernel.model)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1492,16 +1493,35 @@
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="2ShNRf" id="5MZGKPSI3zN" role="33vP2m">
-        <node concept="1pGfFk" id="5MZGKPSI3NM" role="2ShVmc">
-          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
-          <node concept="3cmrfG" id="5MZGKPSI3W0" role="37wK5m">
-            <property role="3cmrfH" value="33" />
+        <node concept="1pGfFk" id="2GzLOsV4_bO" role="2ShVmc">
+          <ref role="37wK5l" to="lzb2:~JBColor.&lt;init&gt;(java.awt.Color,java.awt.Color)" resolve="JBColor" />
+          <node concept="2ShNRf" id="2GzLOsV4_cO" role="37wK5m">
+            <node concept="1pGfFk" id="5MZGKPSI3NM" role="2ShVmc">
+              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+              <node concept="3cmrfG" id="5MZGKPSI3W0" role="37wK5m">
+                <property role="3cmrfH" value="33" />
+              </node>
+              <node concept="3cmrfG" id="5MZGKPSI4eK" role="37wK5m">
+                <property role="3cmrfH" value="122" />
+              </node>
+              <node concept="3cmrfG" id="5MZGKPSI5lr" role="37wK5m">
+                <property role="3cmrfH" value="57" />
+              </node>
+            </node>
           </node>
-          <node concept="3cmrfG" id="5MZGKPSI4eK" role="37wK5m">
-            <property role="3cmrfH" value="122" />
-          </node>
-          <node concept="3cmrfG" id="5MZGKPSI5lr" role="37wK5m">
-            <property role="3cmrfH" value="57" />
+          <node concept="2ShNRf" id="2GzLOsV4_mz" role="37wK5m">
+            <node concept="1pGfFk" id="2GzLOsV4A4_" role="2ShVmc">
+              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+              <node concept="3cmrfG" id="2GzLOsV4Ac2" role="37wK5m">
+                <property role="3cmrfH" value="15" />
+              </node>
+              <node concept="3cmrfG" id="2GzLOsV4AlE" role="37wK5m">
+                <property role="3cmrfH" value="138" />
+              </node>
+              <node concept="3cmrfG" id="2GzLOsV4AEo" role="37wK5m">
+                <property role="3cmrfH" value="48" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

@@ -9,7 +9,7 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -297,7 +297,7 @@
     </node>
     <node concept="2tJIrI" id="2rzAw9UV1UU" role="jymVt" />
     <node concept="3clFb_" id="2rzAw9UV188" role="jymVt">
-      <property role="TrG5h" value="computerSupertype" />
+      <property role="TrG5h" value="computeSupertype" />
       <node concept="37vLTG" id="2rzAw9UV189" role="3clF46">
         <property role="TrG5h" value="types" />
         <node concept="2I9FWS" id="2rzAw9UV18a" role="1tU5fm" />
@@ -352,7 +352,7 @@
           <node concept="3clFbS" id="2rzAw9UVxor" role="3clFbx">
             <node concept="3cpWs6" id="2rzAw9UVxKv" role="3cqZAp">
               <node concept="3nyPlj" id="2rzAw9UV1by" role="3cqZAk">
-                <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computerSupertype" />
+                <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computeSupertype" />
                 <node concept="37vLTw" id="2rzAw9UV1bv" role="37wK5m">
                   <ref role="3cqZAo" node="2rzAw9UV189" resolve="types" />
                 </node>
@@ -499,7 +499,7 @@
                 <property role="TrG5h" value="superBaseType" />
                 <node concept="3Tqbb2" id="2rzAw9V0r9x" role="1tU5fm" />
                 <node concept="3nyPlj" id="2rzAw9V0rwL" role="33vP2m">
-                  <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computerSupertype" />
+                  <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computeSupertype" />
                   <node concept="2OqwBi" id="2rzAw9V0rwM" role="37wK5m">
                     <node concept="37vLTw" id="2rzAw9V0rwN" role="2Oq$k0">
                       <ref role="3cqZAo" node="2rzAw9UYuJV" resolve="typesForUnit" />
@@ -675,7 +675,7 @@
                 <property role="TrG5h" value="nonUnitsSuperType" />
                 <node concept="3Tqbb2" id="66PK8Sylf7L" role="1tU5fm" />
                 <node concept="3nyPlj" id="66PK8Sylfui" role="33vP2m">
-                  <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computerSupertype" />
+                  <ref role="37wK5l" to="9mim:2NHHcg2Ks0y" resolve="computeSupertype" />
                   <node concept="2OqwBi" id="66PK8Sylkev" role="37wK5m">
                     <node concept="37vLTw" id="66PK8SyliUu" role="2Oq$k0">
                       <ref role="3cqZAo" node="2rzAw9UZA6t" resolve="typesWithoutUnitSpec" />
@@ -1168,7 +1168,7 @@
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
               <node concept="Xl_RD" id="69hlyJ6fP5k" role="37wK5m">
-                <property role="Xl_RC" value="The different types \&quot;%s\&quot; cannot be combined. Only types with same unit can be combined." />
+                <property role="Xl_RC" value="The different types \&quot;%s\&quot; are incompatible. Only types with same unit are compatible." />
               </node>
               <node concept="37vLTw" id="69hlyJ6g7p8" role="37wK5m">
                 <ref role="3cqZAo" node="69hlyJ6g7oT" resolve="typesErrorMsg" />

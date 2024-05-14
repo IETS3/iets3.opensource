@@ -2,12 +2,12 @@
 <model ref="r:78e88ebb-2d27-4b89-867f-623c50619338(org.iets3.core.expr.simpleTypes.interpreter.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="cee4aa62-aca9-4f26-9602-75129cd457c9" name="org.iets3.core.expr.dataflow" version="-1" />
   </languages>
   <imports>
@@ -3226,13 +3226,13 @@
                                 </node>
                               </node>
                               <node concept="3cpWs6" id="26cjRACIbgC" role="3cqZAp">
-                                <node concept="2YIFZM" id="26cjRACIbgD" role="3cqZAk">
-                                  <ref role="1Pybhc" to="dj6k:VFjlN6eQjY" resolve="ComparisonHelper" />
-                                  <ref role="37wK5l" to="dj6k:VFjlN6eV5u" resolve="eq" />
-                                  <node concept="37vLTw" id="26cjRACIbgE" role="37wK5m">
+                                <node concept="2YIFZM" id="5s2FNgbzGIJ" role="3cqZAk">
+                                  <ref role="37wK5l" to="dj6k:1EZBwZ4muLD" resolve="equals" />
+                                  <ref role="1Pybhc" to="dj6k:1EZBwZ4mn8E" resolve="EqualsHelper" />
+                                  <node concept="37vLTw" id="5s2FNgbzGIK" role="37wK5m">
                                     <ref role="3cqZAo" node="26cjRACI9sm" resolve="l" />
                                   </node>
-                                  <node concept="37vLTw" id="26cjRACIbgF" role="37wK5m">
+                                  <node concept="37vLTw" id="5s2FNgbzGIL" role="37wK5m">
                                     <ref role="3cqZAo" node="26cjRACIbg_" resolve="r" />
                                   </node>
                                 </node>
@@ -3475,13 +3475,13 @@
                                 </node>
                               </node>
                               <node concept="3cpWs6" id="26cjRACI82c" role="3cqZAp">
-                                <node concept="2YIFZM" id="26cjRACI82d" role="3cqZAk">
-                                  <ref role="1Pybhc" to="dj6k:VFjlN6eQjY" resolve="ComparisonHelper" />
-                                  <ref role="37wK5l" to="dj6k:VFjlN6eX4Y" resolve="ne" />
-                                  <node concept="37vLTw" id="26cjRACI82e" role="37wK5m">
+                                <node concept="2YIFZM" id="5s2FNgbzXgK" role="3cqZAk">
+                                  <ref role="37wK5l" to="dj6k:1EZBwZ4muEF" resolve="notEquals" />
+                                  <ref role="1Pybhc" to="dj6k:1EZBwZ4mn8E" resolve="EqualsHelper" />
+                                  <node concept="37vLTw" id="5s2FNgbzXgL" role="37wK5m">
                                     <ref role="3cqZAo" node="26cjRACI811" resolve="l" />
                                   </node>
-                                  <node concept="37vLTw" id="26cjRACI82f" role="37wK5m">
+                                  <node concept="37vLTw" id="5s2FNgbzXgM" role="37wK5m">
                                     <ref role="3cqZAo" node="26cjRACI826" resolve="r" />
                                   </node>
                                 </node>

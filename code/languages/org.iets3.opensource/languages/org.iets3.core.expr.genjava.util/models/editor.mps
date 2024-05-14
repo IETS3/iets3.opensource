@@ -17,6 +17,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -39,9 +40,11 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -71,6 +74,55 @@
         <property role="3F0ifm" value=")" />
       </node>
       <node concept="l2Vlx" id="5Jw72wdniZa" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2FeCPocaUJ4">
+    <ref role="1XX52x" to="5pht:5Jw72wdnj0e" resolve="KFMultiOr" />
+    <node concept="3EZMnI" id="2FeCPocaUMe" role="2wV5jI">
+      <node concept="PMmxH" id="2FeCPocaUMf" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="2FeCPocaUMg" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F2HdR" id="2FeCPocaUMh" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="5pht:5Jw72wdniYD" resolve="operands" />
+        <node concept="l2Vlx" id="2FeCPocaUMi" role="2czzBx" />
+        <node concept="tppnM" id="2FeCPocaUMj" role="sWeuL">
+          <node concept="11L4FC" id="2FeCPocaUMk" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2FeCPocaUMl" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="2FeCPocaUMm" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2FeCPocbJ5d">
+    <ref role="1XX52x" to="5pht:2FeCPocbIIQ" resolve="KFMaybeNot" />
+    <node concept="3EZMnI" id="2FeCPocbJ8s" role="2wV5jI">
+      <node concept="2iRfu4" id="2FeCPocbJ8t" role="2iSdaV" />
+      <node concept="3F0ifn" id="2FeCPocbJ8n" role="3EZMnx">
+        <property role="3F0ifm" value="maybenot(" />
+      </node>
+      <node concept="3F0A7n" id="2FeCPocbJbH" role="3EZMnx">
+        <ref role="1NtTu8" to="5pht:2FeCPocbIP7" resolve="negate" />
+      </node>
+      <node concept="3F0ifn" id="2FeCPocbJeX" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="3F0ifn" id="2FeCPocbJf7" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F1sOY" id="2FeCPocbJir" role="3EZMnx">
+        <ref role="1NtTu8" to="5pht:2FeCPocbIVp" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="2FeCPocbJlL" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
     </node>
   </node>
 </model>

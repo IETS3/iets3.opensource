@@ -8,8 +8,8 @@
     <use id="be5191a9-3476-47ca-b2a7-a426623add55" name="org.iets3.core.assessment" version="-1" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare" version="-1" />
     <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -150,7 +150,7 @@
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
       <concept id="865293814733114044" name="com.mbeddr.core.base.structure.Assessment" flags="ng" index="3pwaUv">
-        <property id="4423545983997787056" name="lastUdpatedBy" index="2iEaKi" />
+        <property id="4423545983997787056" name="lastUpdatedBy" index="2iEaKi" />
         <property id="4423545983997782838" name="lastUpdatedOn" index="2iEbMk" />
         <child id="671216505796427450" name="summaries" index="q3PPx" />
         <child id="865293814733115677" name="query" index="3pwbkY" />

@@ -10,17 +10,30 @@
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
     <use id="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" name="org.iets3.core.expr.datetime" version="0" />
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
-  <imports />
+  <imports>
+    <import index="3ypn" ref="r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
+        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU">
+        <child id="8489045168660938635" name="warningRef" index="3lydCh" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
         <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
       </concept>
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
+      <concept id="4531408400486526326" name="jetbrains.mps.lang.test.structure.WarningStatementReference" flags="ng" index="2PQEqo" />
+      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -31,12 +44,24 @@
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
     </language>
+    <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
+      <concept id="7554398283339850572" name="org.iets3.core.expr.collections.structure.FirstOp" flags="ng" index="3iB7TU" />
+      <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ListLiteral" flags="ng" index="3iBYfx">
+        <child id="7554398283339759320" name="elements" index="3iBYfI" />
+      </concept>
+    </language>
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="3693790620639876318" name="com.mbeddr.mpsutil.blutil.structure.BLDoc" flags="ng" index="2aEySx">
+        <child id="3693790620639876319" name="text" index="2aEySw" />
+      </concept>
+    </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
       <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
       <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
@@ -239,9 +264,33 @@
             <node concept="OjmMv" id="6N7p0lWyjbG" role="1w35rA">
               <node concept="19SGf9" id="6N7p0lWyjbH" role="OjmMu">
                 <node concept="19SUe$" id="6N7p0lWyjbI" role="19SJt6">
-                  <property role="19SUeA" value="Test binary equality expression with records and temporals. &#10;Since in the temporal language, behavior of the typesystem for the BinaryEqualityExpression isoverridden, the plain case is also tested here.  &#10;" />
+                  <property role="19SUeA" value="Test binary equality expression with records and temporals. &#10;Since in the temporal language, behavior of the typesystem for the BinaryEqualityExpression is overridden, the plain case is also tested here.  &#10;" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="6W4XqNw1HHh" role="_iOnB">
+          <property role="TrG5h" value="date1" />
+          <node concept="1fc2QT" id="6W4XqNw1HNS" role="2zPyp_">
+            <property role="1fc2QW" value="02" />
+            <property role="1fc2QX" value="02" />
+            <property role="1fc2QY" value="2000" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="6belQKqmgEj" role="_iOnB">
+          <property role="TrG5h" value="date1Ref" />
+          <node concept="_emDc" id="6belQKqmgNR" role="2zPyp_">
+            <ref role="_emDf" node="6W4XqNw1HHh" resolve="date1" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="6belQKqmk8l" role="_iOnB">
+          <property role="TrG5h" value="dateList" />
+          <node concept="3iBYfx" id="6belQKqmnyK" role="2zPyp_">
+            <node concept="1fc2QT" id="6belQKqmodb" role="3iBYfI">
+              <property role="1fc2QW" value="01" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QY" value="2000" />
             </node>
           </node>
         </node>
@@ -294,7 +343,11 @@
               <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
             </node>
             <node concept="7CXmI" id="6N7p0lWyiMy" role="lGtFl">
-              <node concept="1TM$A" id="6N7p0lWyiMz" role="7EUXB" />
+              <node concept="1TM$A" id="6belQKqkoVv" role="7EUXB">
+                <node concept="2PYRI3" id="6belQKqkoVw" role="3lydEf">
+                  <ref role="39XzEq" to="3ypn:6xvNSEj8hpl" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -331,12 +384,234 @@
               <ref role="_emDf" node="6N7p0lWuM1Z" resolve="tempPoint" />
             </node>
             <node concept="7CXmI" id="6N7p0lWyiQT" role="lGtFl">
-              <node concept="1TM$A" id="6N7p0lWyiQU" role="7EUXB" />
+              <node concept="1TM$A" id="6belQKqksGW" role="7EUXB">
+                <node concept="2PYRI3" id="6belQKqksGX" role="3lydEf">
+                  <ref role="39XzEq" to="3ypn:6xvNSEj8hpl" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="_ixoA" id="4Uid4MjTKwo" role="_iOnB" />
-        <node concept="_ixoA" id="4Uid4MjTK5W" role="_iOnB" />
+        <node concept="2zPypq" id="6W4XqNw1sFZ" role="_iOnB">
+          <property role="TrG5h" value="uniqueTimeSlices" />
+          <node concept="FfN7I" id="6W4XqNw1sLS" role="2zPyp_">
+            <node concept="FfN7L" id="6W4XqNw1sMc" role="FfN64">
+              <node concept="_emDc" id="6W4XqNw1sMb" role="FfN7M">
+                <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+              </node>
+              <node concept="_emDc" id="6W4XqNw1sMO" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+            </node>
+            <node concept="FfN7L" id="6W4XqNw1sRL" role="FfN64">
+              <node concept="_emDc" id="6W4XqNw1sWW" role="FfN7M">
+                <ref role="_emDf" node="6W4XqNw1HHh" resolve="date1" />
+              </node>
+              <node concept="_emDc" id="6W4XqNw1t1L" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+            </node>
+            <node concept="7CXmI" id="6W4XqNwcz16" role="lGtFl">
+              <node concept="7OXhh" id="6W4XqNwcz6W" role="7EUXB">
+                <property role="GvXf4" value="true" />
+              </node>
+              <node concept="2aEySx" id="6W4XqNwczcM" role="lGtFl">
+                <node concept="19SGf9" id="6W4XqNwczcN" role="2aEySw">
+                  <node concept="19SUe$" id="6W4XqNwczcO" role="19SJt6">
+                    <property role="19SUeA" value="TT with unique dates in slices shows no errors" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="6W4XqNwbQ6a" role="_iOnB">
+          <property role="TrG5h" value="duplicateTimeSlice" />
+          <node concept="FfN7I" id="6W4XqNwbQ6b" role="2zPyp_">
+            <node concept="FfN7L" id="6W4XqNwbQ6c" role="FfN64">
+              <node concept="_emDc" id="6W4XqNwbQ6e" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+              <node concept="1fc2QT" id="5oaaToWWCTk" role="FfN7M">
+                <property role="1fc2QY" value="2013" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+            <node concept="FfN7L" id="6W4XqNwbQ6f" role="FfN64">
+              <node concept="_emDc" id="6W4XqNwbQ6h" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+              <node concept="1fc2QT" id="5oaaToWWP6j" role="FfN7M">
+                <property role="1fc2QY" value="2013" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+                <node concept="7CXmI" id="6belQKqogu1" role="lGtFl">
+                  <node concept="1TM$A" id="6belQKqoh2H" role="7EUXB">
+                    <node concept="2PYRI3" id="6belQKqoh2I" role="3lydEf">
+                      <ref role="39XzEq" to="3ypn:6W4XqNw24fs" />
+                    </node>
+                  </node>
+                  <node concept="2aEySx" id="6belQKqohci" role="lGtFl">
+                    <node concept="19SGf9" id="6belQKqohcj" role="2aEySw">
+                      <node concept="19SUe$" id="6belQKqohck" role="19SJt6">
+                        <property role="19SUeA" value="TT with duplicate point in time; DateLiteral vs DateLiteral " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5oaaToWXX91" role="_iOnB">
+          <property role="TrG5h" value="duplicateTimeSlice2" />
+          <node concept="FfN7I" id="5oaaToWXX92" role="2zPyp_">
+            <node concept="FfN7L" id="5oaaToWXX93" role="FfN64">
+              <node concept="_emDc" id="5oaaToWXX94" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+              <node concept="1fc2QT" id="5oaaToWXXoI" role="FfN7M">
+                <property role="1fc2QY" value="2000" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+            <node concept="FfN7L" id="5oaaToWXX96" role="FfN64">
+              <node concept="_emDc" id="5oaaToWXX97" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+              <node concept="_emDc" id="5oaaToWXX98" role="FfN7M">
+                <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+                <node concept="7CXmI" id="6belQKqohGU" role="lGtFl">
+                  <node concept="1TM$A" id="6belQKqoihA" role="7EUXB">
+                    <node concept="2PYRI3" id="6belQKqoihB" role="3lydEf">
+                      <ref role="39XzEq" to="3ypn:6W4XqNw24fs" />
+                    </node>
+                  </node>
+                  <node concept="2aEySx" id="6belQKqoirr" role="lGtFl">
+                    <node concept="19SGf9" id="6belQKqoirs" role="2aEySw">
+                      <node concept="19SUe$" id="6belQKqoirt" role="19SJt6">
+                        <property role="19SUeA" value="TT with duplicate point in time; DateLiteral vs DateConstantRef" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5oaaToWXMCy" role="_iOnB">
+          <property role="TrG5h" value="duplicateTimeSlice3" />
+          <node concept="FfN7I" id="5oaaToWXMCz" role="2zPyp_">
+            <node concept="FfN7L" id="5oaaToWXMC$" role="FfN64">
+              <node concept="_emDc" id="5oaaToWXMC_" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+              <node concept="_emDc" id="5oaaToWXMXF" role="FfN7M">
+                <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+              </node>
+            </node>
+            <node concept="FfN7L" id="5oaaToWXMCB" role="FfN64">
+              <node concept="_emDc" id="5oaaToWXMCC" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+              <node concept="_emDc" id="5oaaToWXNav" role="FfN7M">
+                <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+                <node concept="7CXmI" id="6belQKqoiIN" role="lGtFl">
+                  <node concept="1TM$A" id="6belQKqojjv" role="7EUXB">
+                    <node concept="2PYRI3" id="6belQKqojjw" role="3lydEf">
+                      <ref role="39XzEq" to="3ypn:6W4XqNw24fs" />
+                    </node>
+                  </node>
+                  <node concept="2aEySx" id="6belQKqojt4" role="lGtFl">
+                    <node concept="19SGf9" id="6belQKqojt5" role="2aEySw">
+                      <node concept="19SUe$" id="6belQKqojt6" role="19SJt6">
+                        <property role="19SUeA" value="TT with duplicate point in time; DateConstantRef vs DateConstantRef" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="6belQKqmhzY" role="_iOnB">
+          <property role="TrG5h" value="duplicateTimeSlice4" />
+          <node concept="FfN7I" id="6belQKqmhzZ" role="2zPyp_">
+            <node concept="FfN7L" id="6belQKqmh$0" role="FfN64">
+              <node concept="_emDc" id="6belQKqmh$1" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+              <node concept="_emDc" id="6belQKqmh$2" role="FfN7M">
+                <ref role="_emDf" node="6W4XqNw1HHh" resolve="date1" />
+              </node>
+            </node>
+            <node concept="FfN7L" id="6belQKqmh$3" role="FfN64">
+              <node concept="_emDc" id="6belQKqmh$4" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+              <node concept="_emDc" id="6belQKqmh$5" role="FfN7M">
+                <ref role="_emDf" node="6belQKqmgEj" resolve="date1Ref" />
+                <node concept="7CXmI" id="6belQKqojKs" role="lGtFl">
+                  <node concept="1TM$A" id="6belQKqokl8" role="7EUXB">
+                    <node concept="2PYRI3" id="6belQKqokl9" role="3lydEf">
+                      <ref role="39XzEq" to="3ypn:6W4XqNw24fs" />
+                    </node>
+                  </node>
+                  <node concept="2aEySx" id="6belQKqokuH" role="lGtFl">
+                    <node concept="19SGf9" id="6belQKqokuI" role="2aEySw">
+                      <node concept="19SUe$" id="6belQKqokuJ" role="19SJt6">
+                        <property role="19SUeA" value="TT with duplicate point in time; DateConstantRef vs DateConstantRef-Ref" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="6belQKqmjyP" role="_iOnB">
+          <property role="TrG5h" value="duplicateTimeSlice5" />
+          <node concept="FfN7I" id="6belQKqmjyQ" role="2zPyp_">
+            <node concept="FfN7L" id="6belQKqmjyR" role="FfN64">
+              <node concept="_emDc" id="6belQKqmjyS" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+              <node concept="_emDc" id="6belQKqmjyT" role="FfN7M">
+                <ref role="_emDf" node="6W4XqNw1HHh" resolve="date1" />
+              </node>
+            </node>
+            <node concept="FfN7L" id="6belQKqmjyU" role="FfN64">
+              <node concept="_emDc" id="6belQKqmjyV" role="FfN7O">
+                <ref role="_emDf" node="6N7p0lWtErk" resolve="point1" />
+              </node>
+              <node concept="wdKpt" id="6belQKqnTYn" role="FfN7M">
+                <node concept="1QScDb" id="6belQKqmkRE" role="30czhm">
+                  <node concept="3iB7TU" id="6belQKqml6$" role="1QScD9" />
+                  <node concept="_emDc" id="6belQKqmjyW" role="30czhm">
+                    <ref role="_emDf" node="6belQKqmk8l" resolve="dateList" />
+                  </node>
+                </node>
+                <node concept="7CXmI" id="6belQKqnUQH" role="lGtFl">
+                  <node concept="29bkU" id="6belQKqnVrp" role="7EUXB">
+                    <node concept="2PQEqo" id="6belQKqnVrq" role="3lydCh">
+                      <ref role="39XzEq" to="3ypn:6belQKqlkmr" />
+                    </node>
+                  </node>
+                  <node concept="2aEySx" id="6belQKqnV_e" role="lGtFl">
+                    <node concept="19SGf9" id="6belQKqnV_f" role="2aEySw">
+                      <node concept="19SUe$" id="6belQKqnV_g" role="19SJt6">
+                        <property role="19SUeA" value="If a reference cannot be unwrapped, the duplicate check doesn't work. The user should be aware of it." />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
