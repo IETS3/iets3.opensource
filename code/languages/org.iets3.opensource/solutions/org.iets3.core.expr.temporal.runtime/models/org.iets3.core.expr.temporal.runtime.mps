@@ -101,7 +101,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -445,7 +445,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4OwGieAzes3" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object)" resolve="indexOf" />
+                <ref role="37wK5l" to="33ny:~ArrayList.indexOf(java.lang.Object)" resolve="indexOf" />
                 <node concept="Xjq3P" id="4OwGieAzfe4" role="37wK5m" />
               </node>
             </node>
@@ -465,7 +465,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4OwGieAzh2z" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+              <ref role="37wK5l" to="33ny:~ArrayList.get(int)" resolve="get" />
               <node concept="3cpWs3" id="6nEpT4GUGmT" role="37wK5m">
                 <node concept="3cmrfG" id="6nEpT4GUGn6" role="3uHU7w">
                   <property role="3cmrfH" value="1" />
@@ -518,7 +518,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4OwGieAzrlu" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object)" resolve="indexOf" />
+                <ref role="37wK5l" to="33ny:~ArrayList.indexOf(java.lang.Object)" resolve="indexOf" />
                 <node concept="Xjq3P" id="4OwGieAzs2s" role="37wK5m" />
               </node>
             </node>
@@ -538,7 +538,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4OwGieAzuGp" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+              <ref role="37wK5l" to="33ny:~ArrayList.get(int)" resolve="get" />
               <node concept="3cpWsd" id="6nEpT4GUHNc" role="37wK5m">
                 <node concept="3cmrfG" id="6nEpT4GUHNp" role="3uHU7w">
                   <property role="3cmrfH" value="1" />
