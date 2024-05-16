@@ -20,6 +20,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - The prevision loss when converting units in the interpreter was fixed.
+- An editor issue in NumberRangeSpec was fixed that also prevented adding a precision to a number type.
 
 ## April 2024
 
