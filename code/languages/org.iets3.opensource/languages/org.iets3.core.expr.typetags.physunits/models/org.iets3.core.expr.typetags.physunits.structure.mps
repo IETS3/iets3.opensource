@@ -23,8 +23,15 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -61,6 +68,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -392,6 +400,13 @@
       <property role="20kJfa" value="specification" />
       <ref role="20lvS9" node="7athFveyQjs" resolve="QuantitySpecification" />
       <ref role="20ksaX" node="6q45UTyLsCx" resolve="specification" />
+    </node>
+    <node concept="1TJgyj" id="1eut2uU9_A6" role="1TKVEi">
+      <property role="IQ2ns" value="1413695047016536454" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="transformationProperties" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1eut2uU9$qs" resolve="ITransformationProperty" />
     </node>
     <node concept="1TJgyi" id="7Bmg9Oo3Vr1" role="1TKVEl">
       <property role="IQ2nx" value="8779275567063086785" />
@@ -808,8 +823,13 @@
     </node>
     <node concept="25R33" id="2hbaSyABMZQ" role="25R1y">
       <property role="3tVfz5" value="2615231874529701878" />
-      <property role="TrG5h" value="binary" />
-      <property role="1L1pqM" value="binary-scaled" />
+      <property role="TrG5h" value="binary_iec" />
+      <property role="1L1pqM" value="binary-scaled (IEC)" />
+    </node>
+    <node concept="25R33" id="6DczoUSGcZl" role="25R1y">
+      <property role="3tVfz5" value="7659652710373838805" />
+      <property role="TrG5h" value="binary_memory" />
+      <property role="1L1pqM" value="binary-scaled (memory)" />
     </node>
   </node>
   <node concept="1TIwiD" id="14aBVbMOlEH">
@@ -953,6 +973,78 @@
     <ref role="1TJDcQ" node="4RImAbi2k39" resolve="DimensionExpression" />
     <node concept="PrWs8" id="u36xDg6e7n" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZYSsN" resolve="IGroupNeutral" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1eut2uU9$qs">
+    <property role="EcuMT" value="1413695047016531612" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="ITransformationProperty" />
+  </node>
+  <node concept="1TIwiD" id="1eut2uU9$_R">
+    <property role="EcuMT" value="1413695047016532343" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="Scalar" />
+    <property role="34LRSv" value="scalar" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1eut2uU9$KS" role="PzmwI">
+      <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eut2uU9$Mz">
+    <property role="EcuMT" value="1413695047016533155" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="Vector" />
+    <property role="34LRSv" value="vector" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1eut2uU9$M$" role="PzmwI">
+      <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eut2uU9_pu">
+    <property role="EcuMT" value="1413695047016535646" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="Tensor" />
+    <property role="34LRSv" value="tensor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1eut2uU9_pv" role="PzmwI">
+      <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eut2uWh6mA">
+    <property role="EcuMT" value="1413695047052060070" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="PseudoScalar" />
+    <property role="34LRSv" value="pseudoscalar" />
+    <ref role="1TJDcQ" node="1eut2uU9$_R" resolve="Scalar" />
+  </node>
+  <node concept="1TIwiD" id="1eut2uWEsLQ">
+    <property role="EcuMT" value="1413695047058705526" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="VectorField" />
+    <property role="34LRSv" value="vector field" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1eut2uWEsLR" role="PzmwI">
+      <ref role="PrY4T" node="1eut2uU9$qs" resolve="ITransformationProperty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eut2uXxsyl">
+    <property role="EcuMT" value="1413695047073122453" />
+    <property role="3GE5qa" value="group.transformationProperty" />
+    <property role="TrG5h" value="PseudoVector" />
+    <property role="34LRSv" value="pseudovector" />
+    <ref role="1TJDcQ" node="1eut2uU9$Mz" resolve="Vector" />
+  </node>
+  <node concept="1TIwiD" id="3V2fk_c6FtV">
+    <property role="EcuMT" value="4522244360852125563" />
+    <property role="3GE5qa" value="definition.unit" />
+    <property role="TrG5h" value="AllowNameShadowingAnnotation" />
+    <property role="34LRSv" value="@allow name shadowing" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3V2fk_c6FEi" role="lGtFl">
+      <property role="Hh88m" value="allowShadowing" />
+      <node concept="trNpa" id="3V2fk_c6FO$" role="EQaZv">
+        <ref role="trN6q" node="7eOyx9r3jsZ" resolve="Unit" />
+      </node>
     </node>
   </node>
 </model>
