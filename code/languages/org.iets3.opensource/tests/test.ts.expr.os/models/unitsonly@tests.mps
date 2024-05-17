@@ -7025,7 +7025,47 @@
             </node>
           </node>
         </node>
-        <node concept="_ixoA" id="69HsIy5F$RG" role="_iOnC" />
+        <node concept="_ixoA" id="4T9mBRTI6Ex" role="_iOnC" />
+        <node concept="CIrOH" id="4T9mBRTI6MU" role="_iOnC">
+          <property role="TrG5h" value="unit1" />
+          <node concept="CIsGf" id="4T9mBRTI6R9" role="CIsG9">
+            <node concept="CIsvn" id="4T9mBRTI6R8" role="CIi4h">
+              <ref role="CIi3I" to="ku0a:5XaocLWHSS4" resolve="m" />
+            </node>
+            <node concept="CIsvn" id="4T9mBRTI6Rf" role="CIi4h">
+              <ref role="CIi3I" to="ku0a:5XaocLWHSS4" resolve="m" />
+            </node>
+            <node concept="CIsvn" id="4T9mBRTI6Rm" role="CIi4h">
+              <ref role="CIi3I" to="ku0a:5XaocLWHSS6" resolve="kg" />
+            </node>
+            <node concept="CIsvn" id="4T9mBRTI6Ru" role="CIi4h">
+              <ref role="CIi3I" to="ku0a:5XaocLWHSS5" resolve="s" />
+            </node>
+            <node concept="3xLA65" id="4T9mBRTI6Wm" role="lGtFl">
+              <property role="TrG5h" value="unitSpec1" />
+            </node>
+          </node>
+        </node>
+        <node concept="CIrOH" id="4T9mBRTI6R_" role="_iOnC">
+          <property role="TrG5h" value="unit2" />
+          <node concept="CIsGf" id="4T9mBRTI6VT" role="CIsG9">
+            <node concept="CIsvn" id="4T9mBRTI6VS" role="CIi4h">
+              <ref role="CIi3I" to="ku0a:5XaocLWHSS5" resolve="s" />
+            </node>
+            <node concept="CIsvn" id="4T9mBRTI6VX" role="CIi4h">
+              <ref role="CIi3I" to="ku0a:5XaocLWHSS4" resolve="m" />
+            </node>
+            <node concept="CIsvn" id="4T9mBRTI6W7" role="CIi4h">
+              <ref role="CIi3I" to="ku0a:5XaocLWHSS6" resolve="kg" />
+            </node>
+            <node concept="CIsvn" id="4T9mBRTI6Wf" role="CIi4h">
+              <ref role="CIi3I" to="ku0a:5XaocLWHSS4" resolve="m" />
+            </node>
+            <node concept="3xLA65" id="4T9mBRTI6Wp" role="lGtFl">
+              <property role="TrG5h" value="unitSpec2" />
+            </node>
+          </node>
+        </node>
         <node concept="_ixoA" id="4T9mBRTBQJv" role="_iOnC" />
       </node>
     </node>
@@ -7131,14 +7171,12 @@
       <property role="TrG5h" value="testComparison" />
       <node concept="3cqZAl" id="4T9mBRTBLQ6" role="3clF45" />
       <node concept="3clFbS" id="4T9mBRTBLQ7" role="3clF47">
-        <node concept="3clFbH" id="4T9mBRTBLXN" role="3cqZAp" />
-        <node concept="3clFbH" id="4T9mBRTBLX_" role="3cqZAp" />
-        <node concept="3vlDli" id="4T9mBRTBLXv" role="3cqZAp">
-          <node concept="3xONca" id="4T9mBRTBWom" role="3tpDZB">
-            <ref role="3xOPvv" node="4T9mBRTCuRe" resolve="k1" />
+        <node concept="3GXo0L" id="4T9mBRTHv6q" role="3cqZAp">
+          <node concept="3xONca" id="4T9mBRTHv6K" role="3tpDZB">
+            <ref role="3xOPvv" node="4T9mBRTI6Wm" resolve="unitSpec1" />
           </node>
-          <node concept="3xONca" id="4T9mBRTBWos" role="3tpDZA">
-            <ref role="3xOPvv" node="4T9mBRTCvcV" resolve="k2" />
+          <node concept="3xONca" id="4T9mBRTHv8f" role="3tpDZA">
+            <ref role="3xOPvv" node="4T9mBRTI6Wp" resolve="unitSpec2" />
           </node>
         </node>
       </node>
