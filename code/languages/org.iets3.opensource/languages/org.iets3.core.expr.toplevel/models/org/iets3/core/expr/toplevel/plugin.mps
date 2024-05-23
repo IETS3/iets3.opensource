@@ -455,7 +455,7 @@
       <property role="TrG5h" value="presenter" />
       <node concept="3Tm6S6" id="3IFv_upFiz0" role="1B3o_S" />
       <node concept="3uibUv" id="3IFv_upHVyD" role="1tU5fm">
-        <ref role="3uigEE" node="3IFv_upJqYO" resolve="IRecordValuePresenter" />
+        <ref role="3uigEE" node="3IFv_upJqYO" resolve="IPresenter" />
       </node>
     </node>
     <node concept="2tJIrI" id="3IFv_upFffk" role="jymVt" />
@@ -2946,13 +2946,13 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3IFv_upJsur" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="763_liNzF66" role="jymVt" />
     <node concept="3Tm1VV" id="3IFv_upHUaW" role="1B3o_S" />
     <node concept="3uibUv" id="3IFv_upJrq0" role="EKbjA">
-      <ref role="3uigEE" node="3IFv_upJqYO" resolve="IRecordValuePresenter" />
+      <ref role="3uigEE" node="3IFv_upJqYO" resolve="IPresenter" />
       <node concept="3uibUv" id="3IFv_upJ_F6" role="11_B2D">
         <ref role="3uigEE" node="7D7uZV2szll" resolve="RecordValue" />
       </node>
@@ -2969,8 +2969,39 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="763_liNzEmx" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+  </node>
+  <node concept="3HP615" id="3IFv_upJqYO">
+    <property role="TrG5h" value="IPresenter" />
+    <node concept="3clFb_" id="763_liNzEd1" role="jymVt">
+      <property role="TrG5h" value="getPriority" />
+      <node concept="3clFbS" id="763_liNzEd4" role="3clF47" />
+      <node concept="3Tm1VV" id="763_liNzEd5" role="1B3o_S" />
+      <node concept="10Oyi0" id="763_liNzEcw" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="3IFv_upJscB" role="jymVt">
+      <property role="TrG5h" value="present" />
+      <node concept="3clFbS" id="3IFv_upJscE" role="3clF47" />
+      <node concept="3Tm1VV" id="3IFv_upJscF" role="1B3o_S" />
+      <node concept="17QB3L" id="3IFv_upJscp" role="3clF45" />
+      <node concept="37vLTG" id="3IFv_upJspr" role="3clF46">
+        <property role="TrG5h" value="aObject" />
+        <node concept="16syzq" id="3IFv_upJ$Y4" role="1tU5fm">
+          <ref role="16sUi3" node="3IFv_upJ$Ro" resolve="T" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="3IFv_upJqYP" role="1B3o_S" />
+    <node concept="16euLQ" id="3IFv_upJ$Ro" role="16eVyc">
+      <property role="TrG5h" value="T" />
+    </node>
+  </node>
+  <node concept="vrV6u" id="763_liNzhTA">
+    <property role="TrG5h" value="RecordValuePresenterExtensionPoint" />
+    <node concept="3uibUv" id="763_liNzhWN" role="luc8K">
+      <ref role="3uigEE" node="3IFv_upJqYO" resolve="IPresenter" />
     </node>
   </node>
   <node concept="312cEu" id="763_liNz_I9">
@@ -3106,37 +3137,6 @@
     </node>
     <node concept="2tJIrI" id="763_liNzKY3" role="jymVt" />
     <node concept="3Tm1VV" id="763_liNz_Ia" role="1B3o_S" />
-  </node>
-  <node concept="3HP615" id="3IFv_upJqYO">
-    <property role="TrG5h" value="IPresenter" />
-    <node concept="3clFb_" id="763_liNzEd1" role="jymVt">
-      <property role="TrG5h" value="getPriority" />
-      <node concept="3clFbS" id="763_liNzEd4" role="3clF47" />
-      <node concept="3Tm1VV" id="763_liNzEd5" role="1B3o_S" />
-      <node concept="10Oyi0" id="763_liNzEcw" role="3clF45" />
-    </node>
-    <node concept="3clFb_" id="3IFv_upJscB" role="jymVt">
-      <property role="TrG5h" value="present" />
-      <node concept="3clFbS" id="3IFv_upJscE" role="3clF47" />
-      <node concept="3Tm1VV" id="3IFv_upJscF" role="1B3o_S" />
-      <node concept="17QB3L" id="3IFv_upJscp" role="3clF45" />
-      <node concept="37vLTG" id="3IFv_upJspr" role="3clF46">
-        <property role="TrG5h" value="aObject" />
-        <node concept="16syzq" id="3IFv_upJ$Y4" role="1tU5fm">
-          <ref role="16sUi3" node="3IFv_upJ$Ro" resolve="T" />
-        </node>
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="3IFv_upJqYP" role="1B3o_S" />
-    <node concept="16euLQ" id="3IFv_upJ$Ro" role="16eVyc">
-      <property role="TrG5h" value="T" />
-    </node>
-  </node>
-  <node concept="vrV6u" id="763_liNzhTA">
-    <property role="TrG5h" value="RecordValuePresenterExtensionPoint" />
-    <node concept="3uibUv" id="763_liNzhWN" role="luc8K">
-      <ref role="3uigEE" node="3IFv_upJqYO" resolve="IPresenter" />
-    </node>
   </node>
 </model>
 
