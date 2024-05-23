@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:68ac91a8-ab55-4011-ba7a-b67f487e2bf8(org.iets3.core.expr.genjava.temporal@generator)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
@@ -5939,17 +5938,20 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="2OqwBi" id="5v52mTe18IG" role="10QFUP">
-                          <node concept="2OqwBi" id="5v52mTe17H8" role="2Oq$k0">
-                            <node concept="37vLTw" id="5v52mTe17eS" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5v52mTe0PlD" resolve="between" />
-                            </node>
-                            <node concept="liA8E" id="5v52mTe18ab" role="2OqNvi">
-                              <ref role="37wK5l" to="8rdi:1Mp62pP1sLf" resolve="firstSlice" />
-                            </node>
+                        <node concept="2OqwBi" id="1fRBlzn8jdV" role="10QFUP">
+                          <node concept="37vLTw" id="1fRBlzn8ij5" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5v52mTe0Pk$" resolve="tv" />
                           </node>
-                          <node concept="liA8E" id="5v52mTe19Dr" role="2OqNvi">
-                            <ref role="37wK5l" to="8rdi:50smQ1VbR0B" resolve="value" />
+                          <node concept="liA8E" id="1fRBlzn8kxE" role="2OqNvi">
+                            <ref role="37wK5l" to="8rdi:50smQ1VeRHr" resolve="valueAt" />
+                            <node concept="2OqwBi" id="1fRBlzn8oJ_" role="37wK5m">
+                              <node concept="37vLTw" id="1fRBlzn8nK8" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5v52mTe0Plz" resolve="range" />
+                              </node>
+                              <node concept="liA8E" id="1fRBlzn8q66" role="2OqNvi">
+                                <ref role="37wK5l" to="2j0k:4voqclTswQa" resolve="begin" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
