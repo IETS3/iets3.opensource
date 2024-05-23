@@ -54,6 +54,7 @@
       <concept id="4303308395523096213" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="ng" index="2DD5aU" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="6702802731807532730" name="canBeAncestor" index="9SGkC" />
         <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
       </concept>
@@ -189,6 +190,10 @@
         <node concept="3clFbH" id="7g8Em6uqDT3" role="3cqZAp" />
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="45LkEBNyapp">
+    <ref role="1M2myG" to="w1hl:4HxogODR$_x" resolve="ITag" />
+    <ref role="1MND4H" to="w1hl:45LkEBNxn3O" resolve="EmptyTag" />
   </node>
 </model>
 

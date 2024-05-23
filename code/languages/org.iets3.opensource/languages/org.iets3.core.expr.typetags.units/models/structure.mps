@@ -2,7 +2,6 @@
 <model ref="r:1eb914ff-b91c-4cbc-93c6-3ecde7821894(org.iets3.core.expr.typetags.units.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -80,6 +79,12 @@
     <node concept="PrWs8" id="2JXkwhJfSCx" role="PrDN$">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="9MvF2i4gt7" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
+    <node concept="PrWs8" id="1th9LVE9Uf5" role="PrDN$">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3jsZ">
     <property role="TrG5h" value="Unit" />
@@ -116,6 +121,9 @@
     <node concept="PrWs8" id="3WnwFDbcwDv" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
+    <node concept="PrWs8" id="9MvF2i48Ez" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3k4t">
     <property role="TrG5h" value="UnitSpecification" />
@@ -143,6 +151,9 @@
     <node concept="PrWs8" id="4CUqBF4xMRo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
+    <node concept="PrWs8" id="1th9LVE9Up9" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
+    </node>
     <node concept="1TJgyj" id="7eOyx9r3qFY" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="exponent" />
@@ -153,7 +164,7 @@
       <property role="20kJfa" value="unit" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8337440621611297532" />
-      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="Unit" />
+      <ref role="20lvS9" node="7eOyx9r3k3e" resolve="IUnit" />
     </node>
     <node concept="RPilO" id="7cBI1LfYpmP" role="lGtFl">
       <ref role="RPilL" node="7eOyx9r3qFW" resolve="unit" />
@@ -167,6 +178,9 @@
     <property role="EcuMT" value="3802033421899426197" />
     <property role="R4oN_" value="a base concept for exponents" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1th9LVE9U9H" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3j3yk3gAgiT">
     <property role="3GE5qa" value="definition.exponent" />
@@ -201,6 +215,9 @@
     <property role="EcuMT" value="624957442818070507" />
     <property role="R4oN_" value="remove the unit" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
+    <node concept="PrWs8" id="1th9LVE9U37" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
+    </node>
   </node>
   <node concept="1TIwiD" id="VmEWGR2Mzb">
     <property role="3GE5qa" value="conversion" />
@@ -239,6 +256,9 @@
     <node concept="PrWs8" id="1fzaMYHwtl5" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
+    <node concept="PrWs8" id="1th9LVE9Twu" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1wGuEUvU$lO">
     <property role="3GE5qa" value="conversion" />
@@ -262,6 +282,9 @@
     </node>
     <node concept="PrWs8" id="1wGuEUw7mQy" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1th9LVE9TEl" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
     </node>
   </node>
   <node concept="1TIwiD" id="3$KQaHc3Aa5">
@@ -293,6 +316,9 @@
     <property role="EcuMT" value="5185104661801317038" />
     <property role="R4oN_" value="an unmodifiable variable" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="1th9LVE9U60" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7SygLIkPJP$">
     <property role="EcuMT" value="9088900783727377764" />
@@ -323,6 +349,9 @@
     <property role="EcuMT" value="9088900783727406010" />
     <property role="3GE5qa" value="conversion" />
     <property role="TrG5h" value="IConvertUnit" />
+    <node concept="PrWs8" id="1th9LVE9TRc" role="PrDN$">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1KUmgSFpwWn">
     <property role="EcuMT" value="2034036099103723287" />
@@ -334,11 +363,17 @@
     <node concept="PrWs8" id="1KUmgSFpIfY" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
+    <node concept="PrWs8" id="1th9LVE9UiQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1KUmgSF_6Qv">
     <property role="EcuMT" value="2034036099106762143" />
     <property role="3GE5qa" value="definition" />
     <property role="TrG5h" value="ISpecification" />
+    <node concept="PrWs8" id="1th9LVE9Udq" role="PrDN$">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
+    </node>
   </node>
 </model>
 

@@ -2,7 +2,7 @@
 <model ref="r:6a32786e-0823-4465-b671-9705159d21d5(test.in.expr.os.messages@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
@@ -189,7 +189,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <reference id="2032654994493517823" name="scoper" index="2HwdWd" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
@@ -284,7 +283,6 @@
         <child id="4026566441518474145" name="args" index="1WPDXT" />
       </concept>
       <concept id="4026566441518284472" name="org.iets3.core.expr.messages.structure.MessageTarget" flags="ng" index="1WPo9w">
-        <property id="5299123466390648616" name="messageValue_DEPRECATED" index="MFfev" />
         <reference id="4026566441518284476" name="message" index="1WPo9$" />
         <child id="4026566441519855930" name="args" index="1WFony" />
       </concept>
@@ -353,7 +351,6 @@
   </registry>
   <node concept="_iOnU" id="3vxfdxbrcas">
     <property role="TrG5h" value="messages" />
-    <property role="2SXJ1i" value="true" />
     <property role="1XBH2A" value="true" />
     <ref role="2HwdWd" node="1CNpG_h50DB" resolve="Data" />
     <node concept="1aga60" id="4AahbtV2zVo" role="_iOnB">
@@ -362,7 +359,6 @@
       <node concept="1aduha" id="4AahbtV2zZB" role="1ahQXP">
         <node concept="1QScDb" id="4AahbtV2$0Y" role="1aduh9">
           <node concept="1WPo9w" id="4AahbtV2$be" role="1QScD9">
-            <property role="MFfev" value="false" />
             <ref role="1WPo9$" node="3vxfdxbrKAj" resolve="m1" />
           </node>
           <node concept="1WPpZc" id="4AahbtV2$0v" role="30czhm">
@@ -423,7 +419,6 @@
               <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
             </node>
             <node concept="1WPo9w" id="4AahbtV2$bB" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="3vxfdxbrKAj" resolve="m1" />
             </node>
           </node>
@@ -447,7 +442,6 @@
               <node concept="NlJPO" id="4AahbtURxg3" role="1QScD9" />
               <node concept="1QScDb" id="4AahbtURx4f" role="30czhm">
                 <node concept="1WPo9w" id="4AahbtURx4g" role="1QScD9">
-                  <property role="MFfev" value="false" />
                   <ref role="1WPo9$" node="3vxfdxbrKAj" resolve="m1" />
                 </node>
                 <node concept="1WPpZc" id="4AahbtURx4h" role="30czhm">
@@ -466,7 +460,6 @@
           <node concept="NjiR8" id="7OtDX6qlCJ2" role="1QScD9" />
           <node concept="1QScDb" id="3vxfdxbs7eB" role="30czhm">
             <node concept="1WPo9w" id="3vxfdxbs7iJ" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="3vxfdxbrKAQ" resolve="m2" />
             </node>
             <node concept="1WPpZc" id="3vxfdxbs7eD" role="30czhm">
@@ -485,7 +478,6 @@
           <node concept="NjiR8" id="7OtDX6qlD1i" role="1QScD9" />
           <node concept="1QScDb" id="3vxfdxbs7f6" role="30czhm">
             <node concept="1WPo9w" id="3vxfdxbs7jj" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="3vxfdxbrKCL" resolve="m3" />
             </node>
             <node concept="1WPpZc" id="3vxfdxbs7f8" role="30czhm">
@@ -582,7 +574,6 @@
           <node concept="MxAYs" id="4AahbtV3fgs" role="1QScD9" />
           <node concept="1QScDb" id="4AahbtV3f1_" role="30czhm">
             <node concept="1WPo9w" id="4AahbtV3f1A" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="3vxfdxbthSx" resolve="m4" />
               <node concept="30bXRB" id="4AahbtV3f1B" role="1WFony">
                 <property role="30bXRw" value="42" />
@@ -620,7 +611,6 @@
             <node concept="MxAYs" id="4AahbtV85bD" role="1QScD9" />
             <node concept="1QScDb" id="4AahbtV85bE" role="30czhm">
               <node concept="1WPo9w" id="4AahbtV85bF" role="1QScD9">
-                <property role="MFfev" value="false" />
                 <ref role="1WPo9$" node="3vxfdxbthSx" resolve="m4" />
                 <node concept="30bXRB" id="4AahbtV85bG" role="1WFony">
                   <property role="30bXRw" value="42" />
@@ -648,7 +638,6 @@
           <node concept="NjiR8" id="4AahbtUNAHD" role="1QScD9" />
           <node concept="1QScDb" id="3vxfdxbtTgw" role="30czhm">
             <node concept="1WPo9w" id="3vxfdxbtTgx" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="3vxfdxbthSE" resolve="m5" />
               <node concept="30bXRB" id="3vxfdxbtTqq" role="1WFony">
                 <property role="30bXRw" value="33" />
@@ -896,7 +885,6 @@
         <node concept="InuEK" id="4AahbtVbbGs" role="I61D1">
           <node concept="1QScDb" id="4AahbtVRMRz" role="2izrR8">
             <node concept="1WPo9w" id="4AahbtVRNhJ" role="1QScD9">
-              <property role="MFfev" value="false" />
               <ref role="1WPo9$" node="4AahbtVRLW6" resolve="xeey" />
               <node concept="XrbUJ" id="4AahbtVRNmn" role="1WFony">
                 <ref role="XrbUP" node="4AahbtVbbGn" resolve="x" />
