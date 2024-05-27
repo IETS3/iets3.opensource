@@ -2012,7 +2012,7 @@
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="volt (electric potential)" />
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
-      <ref role="Rn5ok" node="70JbBC6MUCW" resolve="electric poential" />
+      <ref role="Rn5ok" node="70JbBC6MUCW" resolve="electric potential" />
       <node concept="CIsGf" id="70JbBC7emSb" role="4gtQf">
         <node concept="wW8yL" id="70JbBC7gzjB" role="CIi4h">
           <node concept="CIsvn" id="70JbBC7iJtR" role="wW8iK">
@@ -2219,7 +2219,7 @@
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="gray" />
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
-      <ref role="Rn5ok" node="3xM68GMigWN" resolve="absorbed dose" />
+      <ref role="Rn5ok" node="3xM68GMigWN" resolve="absorbed dose (of ionizing radiation)" />
       <node concept="CIsGf" id="6q45UTzs0YD" role="4gtQf">
         <node concept="2Wclh2" id="69VksCDLpss" role="CIi4h">
           <node concept="CIsvn" id="69VksCDLpst" role="2Wcl2F">
@@ -2236,7 +2236,7 @@
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="sievert" />
       <property role="22P1Ek" value="2hbaSyABMZN/metric" />
-      <ref role="Rn5ok" node="3xM68GMigXj" resolve="equivalent dose" />
+      <ref role="Rn5ok" node="3xM68GMigXj" resolve="equivalent dose (of ionizing radiation)" />
       <node concept="CIsGf" id="6q45UTzs0YJ" role="4gtQf">
         <node concept="2Wclh2" id="69VksCDMC3X" role="CIi4h">
           <node concept="CIsvn" id="69VksCDMC3Y" role="2Wcl2F">
@@ -3097,11 +3097,11 @@
             <ref role="2W5z2V" node="3xM68GMigYu" resolve="power" />
           </node>
           <node concept="2WfEyl" id="6q45UTzr_ru" role="2BJG_9">
-            <node concept="2W5y$k" id="1eut2v7gMvY" role="2BJG10">
-              <ref role="2W5z2V" node="1eut2v4DwTe" resolve="solid angle" />
-            </node>
             <node concept="2W5y$k" id="69VksCEv8M0" role="2BJJPC">
               <ref role="2W5z2V" node="6EvkZrKS7fP" resolve="area" />
+            </node>
+            <node concept="2W5y$k" id="1eut2v7gMvY" role="2BJG10">
+              <ref role="2W5z2V" node="1eut2v4DwTe" resolve="solid angle" />
             </node>
           </node>
         </node>
@@ -3152,7 +3152,7 @@
       <node concept="2W5y9F" id="6q45UTzr_rJ" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_rK" role="2W5ySM">
           <node concept="2W5y$k" id="6q45UTzr_rL" role="2BJGWR">
-            <ref role="2W5z2V" node="3xM68GMigWN" resolve="absorbed dose" />
+            <ref role="2W5z2V" node="3xM68GMigWN" resolve="absorbed dose (of ionizing radiation)" />
           </node>
           <node concept="2W5y$k" id="6q45UTzr_rM" role="2BJG_9">
             <ref role="2W5z2V" node="3xM68GMigWo" resolve="time" />
@@ -3326,11 +3326,11 @@
             <ref role="2W5z2V" node="3xM68GMigYu" resolve="power" />
           </node>
           <node concept="2WfEyl" id="6q45UTzr_sA" role="2BJG_9">
-            <node concept="2W5y$k" id="1eut2v6EDlU" role="2BJG10">
-              <ref role="2W5z2V" node="1eut2v4DwTe" resolve="solid angle" />
-            </node>
             <node concept="2W5y$k" id="6q45UTzr_sC" role="2BJJPC">
               <ref role="2W5z2V" node="3xM68GMigWj" resolve="length" />
+            </node>
+            <node concept="2W5y$k" id="1eut2v6EDlU" role="2BJG10">
+              <ref role="2W5z2V" node="1eut2v4DwTe" resolve="solid angle" />
             </node>
           </node>
         </node>
@@ -3427,7 +3427,7 @@
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="N⋅m" />
       <property role="1o$tow" value="newton-metre (torque)" />
-      <ref role="Rn5ok" node="6EvkZrLwMAi" resolve="newton-metre" />
+      <ref role="Rn5ok" node="6EvkZrLwMAi" resolve="torque" />
       <node concept="CIsGf" id="6q45UTzs0ZZ" role="4gtQf">
         <node concept="wW8yL" id="70JbBC90UQ5" role="CIi4h">
           <node concept="CIsvn" id="70JbBC922Vq" role="wW8iK">
@@ -4120,11 +4120,11 @@
       <property role="2DB2h4" value="Vₘ" />
       <node concept="2W5y9F" id="6q45UTzr_sJ" role="4gtQf">
         <node concept="2W2IQR" id="6q45UTzr_sK" role="2W5ySM">
-          <node concept="2W5y$k" id="1eut2v0nxus" role="2BJGWR">
-            <ref role="2W5z2V" node="6EvkZrKSbgd" resolve="volume" />
-          </node>
           <node concept="2W5y$k" id="6q45UTzr_sO" role="2BJG_9">
             <ref role="2W5z2V" node="3xM68GMigWk" resolve="amount of substance" />
+          </node>
+          <node concept="2W5y$k" id="1eut2v0nxus" role="2BJGWR">
+            <ref role="2W5z2V" node="6EvkZrKSbgd" resolve="volume" />
           </node>
         </node>
       </node>
