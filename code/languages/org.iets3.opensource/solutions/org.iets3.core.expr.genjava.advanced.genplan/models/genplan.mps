@@ -11,9 +11,13 @@
       <concept id="1820634577908471803" name="jetbrains.mps.lang.generator.plan.structure.Plan" flags="ng" index="2VgMpV">
         <child id="1820634577908471815" name="steps" index="2VgMA7" />
       </concept>
+      <concept id="1820634577908471809" name="jetbrains.mps.lang.generator.plan.structure.Checkpoint" flags="ng" index="2VgMA1">
+        <child id="3750601816081740498" name="cpSpec" index="3ps6aC" />
+      </concept>
       <concept id="1820634577908471810" name="jetbrains.mps.lang.generator.plan.structure.Transform" flags="ng" index="2VgMA2">
         <child id="2944629966652439181" name="languages" index="1t_9vn" />
       </concept>
+      <concept id="3750601816081736033" name="jetbrains.mps.lang.generator.plan.structure.InPlaceCheckpointSpec" flags="ng" index="3ps74r" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
@@ -36,6 +40,10 @@
       </node>
     </node>
     <node concept="2VgMA2" id="7bZFIimhGaU" role="2VgMA7">
+      <node concept="2V$Bhx" id="peqCRp_vLm" role="1t_9vn">
+        <property role="2V$B1T" value="f9bb00ab-1f7e-40ab-9ec0-b11e02d84d0f" />
+        <property role="2V$B1Q" value="org.iets3.core.expr.genjava.stringvalidation" />
+      </node>
       <node concept="2V$Bhx" id="DHMrP91qoC" role="1t_9vn">
         <property role="2V$B1T" value="e75207bb-7b13-40bd-b80b-c8fe625c4ee2" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.tests" />
@@ -48,6 +56,13 @@
         <property role="2V$B1T" value="30254c5b-f87e-4bb3-a60a-77a7ec6ed411" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.base" />
       </node>
+    </node>
+    <node concept="2VgMA1" id="1JLBAby$Al6" role="2VgMA7">
+      <node concept="3ps74r" id="1JLBAby$Alp" role="3ps6aC">
+        <property role="TrG5h" value="sync1" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="1JLBAby$AlI" role="2VgMA7">
       <node concept="2V$Bhx" id="DHMrP91qoE" role="1t_9vn">
         <property role="2V$B1T" value="5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.simpleTypes" />
@@ -68,14 +83,17 @@
         <property role="2V$B1T" value="752cf1d3-84d1-4f2b-bbf5-4ef076a62ec7" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.messages" />
       </node>
-      <node concept="2V$Bhx" id="Tm7SWq5JtX" role="1t_9vn">
-        <property role="2V$B1T" value="f9bb00ab-1f7e-40ab-9ec0-b11e02d84d0f" />
-        <property role="2V$B1Q" value="org.iets3.core.expr.genjava.stringvalidation" />
-      </node>
       <node concept="2V$Bhx" id="lH$PuhTIAz" role="1t_9vn">
         <property role="2V$B1T" value="f2abf2a6-552e-4906-ab58-930f9a79aff4" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.contracts" />
       </node>
+    </node>
+    <node concept="2VgMA1" id="1JLBAby$AmE" role="2VgMA7">
+      <node concept="3ps74r" id="1JLBAby$An4" role="3ps6aC">
+        <property role="TrG5h" value="sync2" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="1JLBAby$Ans" role="2VgMA7">
       <node concept="2V$Bhx" id="6ii4I_AaKi7" role="1t_9vn">
         <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
         <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
@@ -87,6 +105,14 @@
       <node concept="2V$Bhx" id="1URTIF$uG6y" role="1t_9vn">
         <property role="2V$B1T" value="f61473f9-130f-42f6-b98d-6c438812c2f6" />
         <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.unitTest" />
+      </node>
+      <node concept="2V$Bhx" id="1JLBAby$AnX" role="1t_9vn">
+        <property role="2V$B1T" value="df345b11-b8c7-4213-ac66-48d2a9b75d88" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguageInternal" />
+      </node>
+      <node concept="2V$Bhx" id="1JLBAby$AoT" role="1t_9vn">
+        <property role="2V$B1T" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage" />
       </node>
     </node>
   </node>
