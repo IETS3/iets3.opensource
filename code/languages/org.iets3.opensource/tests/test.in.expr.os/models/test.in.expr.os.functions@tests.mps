@@ -3124,7 +3124,7 @@
       <node concept="_fkuZ" id="6xL2AU7UEih" role="_fkp5">
         <node concept="_fku$" id="6xL2AU7UEii" role="_fkur" />
         <node concept="1af_rf" id="6xL2AU7UElY" role="_fkuY">
-          <ref role="1afhQb" node="6xL2AU7U_Pi" resolve="test_listFlattening" />
+          <ref role="1afhQb" node="6xL2AU7U_Pi" resolve="test_listFlatteningByAlt" />
           <node concept="3iBYfx" id="6xL2AU7UEmg" role="1afhQ5">
             <node concept="3iBYfx" id="6xL2AU7UEtP" role="3iBYfI">
               <node concept="30bXRB" id="6xL2AU7UE_c" role="3iBYfI">
