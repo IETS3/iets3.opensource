@@ -3903,7 +3903,7 @@
       <property role="1xMkt3" value="true" />
       <property role="TrG5h" value="W÷m³" />
       <property role="1o$tow" value="watt per cubic metre (special irradiance)" />
-      <ref role="Rn5ok" node="6EvkZrLzF0g" resolve="special irradiance" />
+      <ref role="Rn5ok" node="6EvkZrLzF0g" resolve="spectral irradiance" />
       <node concept="CIsGf" id="6q45UTzs11x" role="4gtQf">
         <node concept="2Wclh2" id="6q45UTzs11y" role="CIi4h">
           <node concept="CIsvn" id="6q45UTzs11z" role="2Wcl2F">
@@ -5836,10 +5836,10 @@
         </node>
       </node>
       <node concept="CIsvn" id="2liNWkWnrVB" role="2vOZTa">
-        <ref role="CIi3I" node="7F14or$gczd" resolve="byte" />
+        <ref role="CIi3I" node="7F14or$gczd" resolve="B" />
       </node>
       <node concept="CIsvn" id="2liNWkWns0d" role="2vOYbH">
-        <ref role="CIi3I" node="2Yx91N$tLAX" resolve="bit" />
+        <ref role="CIi3I" node="2Yx91N$tLAX" resolve="b" />
       </node>
     </node>
     <node concept="_ixoA" id="2liNWkWir5P" role="_iOnB" />
@@ -5854,10 +5854,10 @@
         </node>
       </node>
       <node concept="CIsvn" id="2liNWkWns6R" role="2vOZTa">
-        <ref role="CIi3I" node="2Yx91N$tLAX" resolve="bit" />
+        <ref role="CIi3I" node="2Yx91N$tLAX" resolve="b" />
       </node>
       <node concept="CIsvn" id="2liNWkWnsel" role="2vOYbH">
-        <ref role="CIi3I" node="7F14or$gczd" resolve="byte" />
+        <ref role="CIi3I" node="7F14or$gczd" resolve="B" />
       </node>
     </node>
     <node concept="_ixoA" id="FMy9me9y9E" role="_iOnB" />
@@ -5872,10 +5872,10 @@
         </node>
       </node>
       <node concept="CIsvn" id="FMy9mefLvF" role="2vOZTa">
-        <ref role="CIi3I" node="FMy9mdSdEf" resolve="byte" />
+        <ref role="CIi3I" node="FMy9mdSdEf" resolve="B" />
       </node>
       <node concept="CIsvn" id="FMy9megbV6" role="2vOYbH">
-        <ref role="CIi3I" node="FMy9mdSdEg" resolve="bit" />
+        <ref role="CIi3I" node="FMy9mdSdEg" resolve="b" />
       </node>
     </node>
     <node concept="_ixoA" id="FMy9meaM7a" role="_iOnB" />
@@ -5890,10 +5890,10 @@
         </node>
       </node>
       <node concept="CIsvn" id="FMy9mei3NL" role="2vOZTa">
-        <ref role="CIi3I" node="FMy9mdSdEg" resolve="bit" />
+        <ref role="CIi3I" node="FMy9mdSdEg" resolve="b" />
       </node>
       <node concept="CIsvn" id="FMy9mejVGs" role="2vOYbH">
-        <ref role="CIi3I" node="FMy9mdSdEf" resolve="byte" />
+        <ref role="CIi3I" node="FMy9mdSdEf" resolve="B" />
       </node>
     </node>
     <node concept="_ixoA" id="2liNWkWhb2_" role="_iOnB" />
@@ -5908,10 +5908,10 @@
         </node>
       </node>
       <node concept="CIsvn" id="14aBVbN5JeB" role="2vOZTa">
-        <ref role="CIi3I" node="14aBVbN55En" resolve="byte" />
+        <ref role="CIi3I" node="14aBVbN55En" resolve="B" />
       </node>
       <node concept="CIsvn" id="14aBVbNhCkx" role="2vOYbH">
-        <ref role="CIi3I" node="14aBVbN55Ep" resolve="bit" />
+        <ref role="CIi3I" node="14aBVbN55Ep" resolve="b" />
       </node>
     </node>
     <node concept="_ixoA" id="2Yx91N$veEh" role="_iOnB" />
@@ -5926,10 +5926,10 @@
         </node>
       </node>
       <node concept="CIsvn" id="2liNWkWpXE3" role="2vOZTa">
-        <ref role="CIi3I" node="14aBVbN55Ep" resolve="bit" />
+        <ref role="CIi3I" node="14aBVbN55Ep" resolve="b" />
       </node>
       <node concept="CIsvn" id="2liNWkWpXLd" role="2vOYbH">
-        <ref role="CIi3I" node="14aBVbN55En" resolve="byte" />
+        <ref role="CIi3I" node="14aBVbN55En" resolve="B" />
       </node>
     </node>
     <node concept="_ixoA" id="2liNWkWoGzK" role="_iOnB" />
