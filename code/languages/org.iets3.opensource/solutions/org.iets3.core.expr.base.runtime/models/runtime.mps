@@ -238,19 +238,11 @@
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
-      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
-      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
-        <reference id="6832197706140518108" name="param" index="zr_51" />
-      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
-        <property id="8465538089690881934" name="text" index="TUZQ4" />
-        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
-      </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -3371,6 +3363,23 @@
                   </node>
                 </node>
               </node>
+              <node concept="9aQIb" id="26cjRACW3S9" role="9aQIa">
+                <node concept="3clFbS" id="26cjRACW3Sa" role="9aQI4">
+                  <node concept="3clFbF" id="26cjRACVUHN" role="3cqZAp">
+                    <node concept="37vLTI" id="26cjRACVUHO" role="3clFbG">
+                      <node concept="37vLTw" id="26cjRACVUHP" role="37vLTJ">
+                        <ref role="3cqZAo" node="26cjRACVUHk" resolve="handler" />
+                      </node>
+                      <node concept="2OqwBi" id="26cjRACVUHQ" role="37vLTx">
+                        <node concept="37vLTw" id="26cjRACVUHR" role="2Oq$k0">
+                          <ref role="3cqZAo" node="26cjRACVUHy" resolve="handlers" />
+                        </node>
+                        <node concept="1uHKPH" id="26cjRACVUHS" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="22lmx$" id="3NMMaaIDNfU" role="3clFbw">
                 <node concept="3eOVzh" id="3NMMaaIDP5R" role="3uHU7w">
                   <node concept="3cmrfG" id="3NMMaaIDPaX" role="3uHU7w">
@@ -3393,23 +3402,6 @@
                     <ref role="3cqZAo" node="26cjRACVUHy" resolve="handlers" />
                   </node>
                   <node concept="1v1jN8" id="26cjRACW2EZ" role="2OqNvi" />
-                </node>
-              </node>
-              <node concept="9aQIb" id="26cjRACW3S9" role="9aQIa">
-                <node concept="3clFbS" id="26cjRACW3Sa" role="9aQI4">
-                  <node concept="3clFbF" id="26cjRACVUHN" role="3cqZAp">
-                    <node concept="37vLTI" id="26cjRACVUHO" role="3clFbG">
-                      <node concept="37vLTw" id="26cjRACVUHP" role="37vLTJ">
-                        <ref role="3cqZAo" node="26cjRACVUHk" resolve="handler" />
-                      </node>
-                      <node concept="2OqwBi" id="26cjRACVUHQ" role="37vLTx">
-                        <node concept="37vLTw" id="26cjRACVUHR" role="2Oq$k0">
-                          <ref role="3cqZAo" node="26cjRACVUHy" resolve="handlers" />
-                        </node>
-                        <node concept="1uHKPH" id="26cjRACVUHS" role="2OqNvi" />
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
@@ -3455,29 +3447,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3NMMaaIJODO" role="1B3o_S" />
-      <node concept="P$JXv" id="1Y9gOWawczj" role="lGtFl">
-        <node concept="TZ5HA" id="1Y9gOWawczk" role="TZ5H$">
-          <node concept="1dT_AC" id="1Y9gOWawczl" role="1dT_Ay">
-            <property role="1dT_AB" value="This function should be used for testing purposes only. " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="1Y9gOWawc_b" role="TZ5H$">
-          <node concept="1dT_AC" id="1Y9gOWawc_c" role="1dT_Ay">
-            <property role="1dT_AB" value="It is used to programmatically ret the NixHandler in the test NixHandlerShortCircuit." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="1Y9gOWawcBa" role="TZ5H$">
-          <node concept="1dT_AC" id="1Y9gOWawcBb" role="1dT_Ay">
-            <property role="1dT_AB" value="Do not rely on this functionality in production code outside functionality tests." />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="1Y9gOWawczm" role="3nqlJM">
-          <property role="TUZQ4" value="The handler to use temporarily, defined in the test solution." />
-          <node concept="zr_55" id="1Y9gOWawczo" role="zr_5Q">
-            <ref role="zr_51" node="3NMMaaIJODQ" resolve="tmpHandler" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2tJIrI" id="3NMMaaIJGl6" role="jymVt" />
     <node concept="2YIFZL" id="31HAhmC_A$8" role="jymVt">
@@ -3499,23 +3468,6 @@
       </node>
       <node concept="3Tm1VV" id="31HAhmC_Axr" role="1B3o_S" />
       <node concept="3cqZAl" id="31HAhmC_AzD" role="3clF45" />
-      <node concept="P$JXv" id="1Y9gOWawcCP" role="lGtFl">
-        <node concept="TZ5HA" id="1Y9gOWawcDP" role="TZ5H$">
-          <node concept="1dT_AC" id="1Y9gOWawcDQ" role="1dT_Ay">
-            <property role="1dT_AB" value="This function should be used for testing purposes only. " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="1Y9gOWawcDR" role="TZ5H$">
-          <node concept="1dT_AC" id="1Y9gOWawcDS" role="1dT_Ay">
-            <property role="1dT_AB" value="It is used to programmatically reset the NixHandler in the test NixHandlerShortCircuit." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="1Y9gOWawcDT" role="TZ5H$">
-          <node concept="1dT_AC" id="1Y9gOWawcDU" role="1dT_Ay">
-            <property role="1dT_AB" value="Do not rely on this functionality in production code outside functionality tests." />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2tJIrI" id="26cjRACVUI9" role="jymVt" />
     <node concept="3Tm1VV" id="26cjRACVUN4" role="1B3o_S" />
