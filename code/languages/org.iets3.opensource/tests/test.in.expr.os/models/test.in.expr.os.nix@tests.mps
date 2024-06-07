@@ -19,7 +19,7 @@
       </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -30,7 +30,7 @@
       <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
         <child id="606861080870797310" name="expr" index="pf3We" />
       </concept>
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
@@ -43,8 +43,6 @@
       <concept id="5115872837156687891" name="org.iets3.core.expr.base.structure.LessEqualsExpression" flags="ng" index="30d6GI" />
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
-      <concept id="5115872837156724025" name="org.iets3.core.expr.base.structure.LogicalAndExpression" flags="ng" index="30deo4" />
-      <concept id="5115872837156723899" name="org.iets3.core.expr.base.structure.LogicalOrExpression" flags="ng" index="30deu6" />
       <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
       <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
       <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
@@ -145,7 +143,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1855,119 +1853,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="58wi_gLzyXE" role="_iOnB" />
-    <node concept="_fkuM" id="5cmHGck_VLS" role="_iOnB">
-      <property role="TrG5h" value="LogicAndBoolean" />
-      <node concept="_fkuZ" id="5cmHGck_VOa" role="_fkp5">
-        <node concept="_fku$" id="5cmHGck_VOb" role="_fkur" />
-        <node concept="30deo4" id="5cmHGck_YUj" role="_fkuY">
-          <node concept="_emDc" id="5cmHGck_YUA" role="30dEs_">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-          <node concept="2vmpnb" id="5cmHGck_YU9" role="30dEsF" />
-        </node>
-        <node concept="1I1voI" id="5cmHGck_YY8" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="5cmHGck_VOq" role="_fkp5">
-        <node concept="_fku$" id="5cmHGck_VOr" role="_fkur" />
-        <node concept="30deo4" id="5cmHGck_YYu" role="_fkuY">
-          <node concept="2vmpnb" id="5cmHGck_Z1J" role="30dEs_" />
-          <node concept="_emDc" id="5cmHGck_YYl" role="30dEsF">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-        </node>
-        <node concept="1I1voI" id="5cmHGck_Z57" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="5cmHGck_VOP" role="_fkp5">
-        <node concept="_fku$" id="5cmHGck_VOQ" role="_fkur" />
-        <node concept="30deo4" id="5cmHGck_Z5z" role="_fkuY">
-          <node concept="_emDc" id="5cmHGck_Z5Q" role="30dEs_">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-          <node concept="2vmpn$" id="5cmHGck_Z5o" role="30dEsF" />
-        </node>
-        <node concept="1I1voI" id="5cmHGck_Z6h" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="5cmHGck_VPo" role="_fkp5">
-        <node concept="_fku$" id="5cmHGck_VPp" role="_fkur" />
-        <node concept="30deo4" id="5cmHGck_Z6B" role="_fkuY">
-          <node concept="2vmpn$" id="5cmHGck_Zai" role="30dEs_" />
-          <node concept="_emDc" id="5cmHGck_Z6u" role="30dEsF">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-        </node>
-        <node concept="1I1voI" id="5cmHGck_Ze2" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="5cmHGck_VQ3" role="_fkp5">
-        <node concept="_fku$" id="5cmHGck_VQ4" role="_fkur" />
-        <node concept="30deo4" id="5cmHGck_Zes" role="_fkuY">
-          <node concept="_emDc" id="5cmHGck_Zif" role="30dEs_">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-          <node concept="_emDc" id="5cmHGck_Zef" role="30dEsF">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-        </node>
-        <node concept="1I1voI" id="5cmHGck_ZF2" role="_fkuS" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="5cmHGck_VJB" role="_iOnB" />
-    <node concept="_fkuM" id="5cmHGckA0ii" role="_iOnB">
-      <property role="TrG5h" value="LogicOrBoolean" />
-      <node concept="_fkuZ" id="5cmHGck_ZmG" role="_fkp5">
-        <node concept="_fku$" id="5cmHGck_ZmH" role="_fkur" />
-        <node concept="30deu6" id="5cmHGck_Z_W" role="_fkuY">
-          <node concept="_emDc" id="5cmHGck_ZAf" role="30dEs_">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-          <node concept="2vmpnb" id="5cmHGck_Z_M" role="30dEsF" />
-        </node>
-        <node concept="1I1voI" id="5cmHGck_ZJt" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="5cmHGck_ZnV" role="_fkp5">
-        <node concept="_fku$" id="5cmHGck_ZnW" role="_fkur" />
-        <node concept="30deu6" id="5cmHGck_ZMs" role="_fkuY">
-          <node concept="2vmpnb" id="5cmHGck_ZQP" role="30dEs_" />
-          <node concept="_emDc" id="5cmHGck_ZMj" role="30dEsF">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-        </node>
-        <node concept="1I1voI" id="5cmHGck_ZJK" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="5cmHGck_Zpi" role="_fkp5">
-        <node concept="_fku$" id="5cmHGck_Zpj" role="_fkur" />
-        <node concept="30deu6" id="5cmHGck_ZVu" role="_fkuY">
-          <node concept="_emDc" id="5cmHGck_ZVQ" role="30dEs_">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-          <node concept="2vmpn$" id="5cmHGck_ZVk" role="30dEsF" />
-        </node>
-        <node concept="1I1voI" id="5cmHGck_ZLN" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="5cmHGck_ZqL" role="_fkp5">
-        <node concept="_fku$" id="5cmHGck_ZqM" role="_fkur" />
-        <node concept="30deu6" id="5cmHGckA05$" role="_fkuY">
-          <node concept="2vmpn$" id="5cmHGckA0an" role="30dEs_" />
-          <node concept="_emDc" id="5cmHGck_ZWc" role="30dEsF">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-        </node>
-        <node concept="1I1voI" id="5cmHGck_ZM6" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="5cmHGck_Zso" role="_fkp5">
-        <node concept="_fku$" id="5cmHGck_Zsp" role="_fkur" />
-        <node concept="30deu6" id="5cmHGck_Ztx" role="_fkuY">
-          <node concept="_emDc" id="5cmHGck_Zxx" role="30dEs_">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-          <node concept="_emDc" id="5cmHGck_Zto" role="30dEsF">
-            <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-          </node>
-        </node>
-        <node concept="_emDc" id="5cmHGck_Z_$" role="_fkuS">
-          <ref role="_emDf" node="26cjRABTkwo" resolve="nix" />
-        </node>
-      </node>
-    </node>
     <node concept="1Ws0TD" id="58wi_gL$AXA" role="_iOnB">
       <property role="1WsWdv" value="TODO: this should be moved to tuples suite as soon as we support java generation for empty" />
     </node>

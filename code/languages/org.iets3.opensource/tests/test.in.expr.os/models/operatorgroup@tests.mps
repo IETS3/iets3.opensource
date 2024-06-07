@@ -23,7 +23,7 @@
       </concept>
       <concept id="8560722270289800014" name="org.iets3.core.expr.base.structure.PlusTag" flags="ng" index="zEY32" />
       <concept id="8560722270290706287" name="org.iets3.core.expr.base.structure.MulTag" flags="ng" index="zJzjz" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="8006404979729416973" name="org.iets3.core.expr.base.structure.OrTag" flags="ng" index="2BFbn_" />
@@ -71,7 +71,7 @@
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -180,7 +180,7 @@
             <ref role="_emDf" node="1Z72MIc6zOc" resolve="nix" />
           </node>
         </node>
-        <node concept="1I1voI" id="9vzvxuuj$u" role="_fkuS" />
+        <node concept="2vmpn$" id="skNXYt2YZ2" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="1Z72MIc6xWE" role="_fkp5">
         <node concept="_fku$" id="1Z72MIc6xWF" role="_fkur" />
@@ -190,7 +190,7 @@
             <ref role="_emDf" node="1Z72MIc6zOc" resolve="nix" />
           </node>
         </node>
-        <node concept="1I1voI" id="9vzvxuujzP" role="_fkuS" />
+        <node concept="2vmpn$" id="1Z72MIc6$Bp" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="4EEJFuvaWda" role="_fkp5">
         <node concept="_fku$" id="4EEJFuvaWdb" role="_fkur" />
@@ -201,28 +201,6 @@
           <node concept="2vmpnb" id="4EEJFuvb91X" role="30dEsF" />
         </node>
         <node concept="1I1voI" id="4EEJFuvb1SV" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="9vzvxuuiKy" role="_fkp5">
-        <node concept="_fku$" id="9vzvxuuiKz" role="_fkur" />
-        <node concept="30deo4" id="9vzvxuuiLr" role="_fkuY">
-          <node concept="2vmpnb" id="9vzvxuuiN1" role="30dEs_" />
-          <node concept="_emDc" id="9vzvxuuiLi" role="30dEsF">
-            <ref role="_emDf" node="1Z72MIc6zOc" resolve="nix" />
-          </node>
-        </node>
-        <node concept="1I1voI" id="9vzvxuuiOH" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="9vzvxuuj_0" role="_fkp5">
-        <node concept="_fku$" id="9vzvxuuj_1" role="_fkur" />
-        <node concept="30deo4" id="9vzvxuuj_N" role="_fkuY">
-          <node concept="_emDc" id="9vzvxuujBJ" role="30dEs_">
-            <ref role="_emDf" node="1Z72MIc6zOc" resolve="nix" />
-          </node>
-          <node concept="_emDc" id="9vzvxuuj_E" role="30dEsF">
-            <ref role="_emDf" node="1Z72MIc6zOc" resolve="nix" />
-          </node>
-        </node>
-        <node concept="1I1voI" id="9vzvxuujDM" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="6WstIz8H_Uq" role="_iOnB" />
@@ -312,7 +290,7 @@
             <ref role="_emDf" node="1Z72MIc6zOc" resolve="nix" />
           </node>
         </node>
-        <node concept="1I1voI" id="3Kn0W5CyVuL" role="_fkuS" />
+        <node concept="2vmpnb" id="1Z72MIcLNFS" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="4EEJFuvb98G" role="_fkp5">
         <node concept="_fku$" id="4EEJFuvb98H" role="_fkur" />
@@ -324,16 +302,6 @@
         </node>
         <node concept="1I1voI" id="4EEJFuvb99T" role="_fkuS" />
       </node>
-      <node concept="_fkuZ" id="9vzvxuuj1U" role="_fkp5">
-        <node concept="_fku$" id="9vzvxuuj1V" role="_fkur" />
-        <node concept="30deu6" id="9vzvxuuj2B" role="_fkuY">
-          <node concept="2vmpn$" id="9vzvxuuj4r" role="30dEs_" />
-          <node concept="_emDc" id="9vzvxuuj2u" role="30dEsF">
-            <ref role="_emDf" node="1Z72MIc6zOc" resolve="nix" />
-          </node>
-        </node>
-        <node concept="1I1voI" id="3Kn0W5CyVu9" role="_fkuS" />
-      </node>
       <node concept="_fkuZ" id="4EEJFuvb9a1" role="_fkp5">
         <node concept="_fku$" id="4EEJFuvb9a2" role="_fkur" />
         <node concept="30deu6" id="4EEJFuvmDD3" role="_fkuY">
@@ -342,19 +310,7 @@
           </node>
           <node concept="2vmpnb" id="4EEJFuvb9bm" role="30dEs_" />
         </node>
-        <node concept="1I1voI" id="3Kn0W5CyVut" role="_fkuS" />
-      </node>
-      <node concept="_fkuZ" id="3Kn0W5CyVvj" role="_fkp5">
-        <node concept="_fku$" id="3Kn0W5CyVvk" role="_fkur" />
-        <node concept="30deu6" id="3Kn0W5CyVwd" role="_fkuY">
-          <node concept="_emDc" id="3Kn0W5CyVyk" role="30dEs_">
-            <ref role="_emDf" node="1Z72MIc6zOc" resolve="nix" />
-          </node>
-          <node concept="_emDc" id="3Kn0W5CyVw4" role="30dEsF">
-            <ref role="_emDf" node="1Z72MIc6zOc" resolve="nix" />
-          </node>
-        </node>
-        <node concept="1I1voI" id="3Kn0W5CyV$y" role="_fkuS" />
+        <node concept="2vmpnb" id="4EEJFuvb9bJ" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="4EEJFuvb9lq" role="_iOnB" />
