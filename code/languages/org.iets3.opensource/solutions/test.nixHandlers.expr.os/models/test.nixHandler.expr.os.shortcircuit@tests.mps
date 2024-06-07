@@ -6,7 +6,6 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>
@@ -15,7 +14,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
-    <import index="2i99" ref="r:4aec2398-127d-4103-a988-e8ae795c16d8(test.nixHandler.expr.os.shortcircuit)" />
+    <import index="pcso" ref="r:a89ed2c1-7741-4b31-9ae6-3251bea96ba9(org.iets3.core.expr.shortcircuit.plugin)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -37,7 +36,6 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -46,13 +44,6 @@
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
-      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
-        <child id="1197027771414" name="operand" index="2Oq$k0" />
-        <child id="1197027833540" name="operation" index="2OqNvi" />
-      </concept>
-      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
-        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -68,9 +59,6 @@
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
-      </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
-        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -130,10 +118,34 @@
         <child id="5955298286257997830" name="expr" index="1LgZ0V" />
       </concept>
     </language>
+    <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
+      <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
+        <child id="543569365052056368" name="items" index="_fkp5" />
+      </concept>
+      <concept id="543569365052056266" name="org.iets3.core.expr.tests.structure.AssertTestItem" flags="ng" index="_fkuZ">
+        <child id="543569365052056302" name="op" index="_fkur" />
+        <child id="543569365052056269" name="expected" index="_fkuS" />
+        <child id="543569365052056267" name="actual" index="_fkuY" />
+      </concept>
+      <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
+        <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
+        <child id="543569365052711058" name="contents" index="_iOnB" />
+      </concept>
+    </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
       <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
+    </language>
+    <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
+        <child id="7089558164906249715" name="value" index="2zPyp_" />
+      </concept>
+      <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
+        <reference id="543569365051789114" name="constant" index="_emDf" />
+      </concept>
+      <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
@@ -154,6 +166,45 @@
   <node concept="2XOHcx" id="5Dc_HmSXvSC">
     <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
+  <node concept="_iOnU" id="5Dc_HmSYUwu">
+    <property role="1XBH2A" value="true" />
+    <property role="TrG5h" value="NixHandlerDefaultLazy" />
+    <node concept="2zPypq" id="5Dc_HmSYUyh" role="_iOnB">
+      <property role="TrG5h" value="nix" />
+      <node concept="1LgZZ2" id="5Dc_HmSYUyW" role="2zPyp_">
+        <node concept="2vmvy5" id="5Dc_HmSYUz4" role="1LgZ0O" />
+        <node concept="1I1voI" id="5Dc_HmSYUyI" role="1LgZ0V" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="5Dc_HmSYUy6" role="_iOnB" />
+    <node concept="_fkuM" id="5Dc_HmSYUwv" role="_iOnB">
+      <property role="TrG5h" value="nixHandler_logand" />
+      <node concept="_fkuZ" id="5Dc_HmSYUwx" role="_fkp5">
+        <node concept="_fku$" id="5Dc_HmSYUwy" role="_fkur" />
+        <node concept="30deu6" id="3NMMaaIIYql" role="_fkuY">
+          <node concept="_emDc" id="3NMMaaIIYqZ" role="30dEs_">
+            <ref role="_emDf" node="5Dc_HmSYUyh" resolve="nix" />
+          </node>
+          <node concept="2vmpnb" id="5Dc_HmSYUzt" role="30dEsF" />
+        </node>
+        <node concept="_emDc" id="5Dc_HmSYU$j" role="_fkuS">
+          <ref role="_emDf" node="5Dc_HmSYUyh" resolve="nix" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="51olXf4itXu" role="_fkp5">
+        <node concept="_fku$" id="51olXf4itXv" role="_fkur" />
+        <node concept="30deo4" id="51olXf4itYd" role="_fkuY">
+          <node concept="_emDc" id="51olXf4itYw" role="30dEs_">
+            <ref role="_emDf" node="5Dc_HmSYUyh" resolve="nix" />
+          </node>
+          <node concept="2vmpn$" id="51olXf4itY3" role="30dEsF" />
+        </node>
+        <node concept="_emDc" id="3NMMaaIIYpJ" role="_fkuS">
+          <ref role="_emDf" node="5Dc_HmSYUyh" resolve="nix" />
+        </node>
+      </node>
+    </node>
+  </node>
   <node concept="1lH9Xt" id="62nr1ERfbg">
     <property role="TrG5h" value="NixHandlerCanShortCircuit" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
@@ -167,29 +218,22 @@
             <ref role="1Pybhc" to="xfg9:26cjRACVUHi" resolve="NSF" />
             <node concept="2ShNRf" id="3NMMaaIJWdR" role="37wK5m">
               <node concept="HV5vD" id="3NMMaaIJWF5" role="2ShVmc">
-                <ref role="HV5vE" to="2i99:5Dc_HmSYPqL" resolve="ShortCircuitNixHandler" />
+                <ref role="HV5vE" to="pcso:5Dc_HmSYPqL" resolve="ShortCircuitNixHandler" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="55jgfXqmtHt" role="3cqZAp">
-          <node concept="3cpWsn" id="55jgfXqmtHu" role="3cpWs9">
-            <property role="TrG5h" value="evaluate" />
-            <node concept="3uibUv" id="55jgfXqmtFY" role="1tU5fm">
-              <ref role="3uigEE" to="pbu6:4Pi6J8Cccqb" resolve="ValueAndTraceAndEnv" />
+        <node concept="3cpWs8" id="62nr1EUaCG" role="3cqZAp">
+          <node concept="3cpWsn" id="62nr1EUaCH" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="62nr1EUa6I" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
-            <node concept="2OqwBi" id="55jgfXqmtHv" role="33vP2m">
-              <node concept="2ShNRf" id="55jgfXqmtHw" role="2Oq$k0">
-                <node concept="HV5vD" id="55jgfXqmtHx" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
-                </node>
-              </node>
-              <node concept="liA8E" id="55jgfXqmtHy" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:2nydsCfz7eH" resolve="evaluate" />
-                <node concept="3xONca" id="55jgfXqmtHz" role="37wK5m">
-                  <ref role="3xOPvv" node="62nr1ERfhf" resolve="false_empty" />
-                </node>
+            <node concept="2YIFZM" id="62nr1EUaCI" role="33vP2m">
+              <ref role="37wK5l" to="pbu6:3xDNhgd54rl" resolve="evaluate" />
+              <ref role="1Pybhc" to="pbu6:3xDNhgd53E_" resolve="IETS3ExprEvalHelper" />
+              <node concept="3xONca" id="62nr1EUaCJ" role="37wK5m">
+                <ref role="3xOPvv" node="62nr1ERfhf" resolve="false_empty" />
               </node>
             </node>
           </node>
@@ -202,15 +246,10 @@
         </node>
         <node concept="3clFbH" id="3NMMaaIDYun" role="3cqZAp" />
         <node concept="3vlDli" id="3NMMaaIDXsj" role="3cqZAp">
-          <node concept="3clFbT" id="3NMMaaIDXzn" role="3tpDZA" />
-          <node concept="2OqwBi" id="55jgfXqmuAo" role="3tpDZB">
-            <node concept="37vLTw" id="55jgfXqmuvi" role="2Oq$k0">
-              <ref role="3cqZAo" node="55jgfXqmtHu" resolve="evaluate" />
-            </node>
-            <node concept="2OwXpG" id="55jgfXqmuI9" role="2OqNvi">
-              <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
-            </node>
+          <node concept="37vLTw" id="3NMMaaIDXvJ" role="3tpDZB">
+            <ref role="3cqZAo" node="62nr1EUaCH" resolve="result" />
           </node>
+          <node concept="3clFbT" id="3NMMaaIDXzn" role="3tpDZA" />
         </node>
         <node concept="3clFbH" id="62nr1EUbP6" role="3cqZAp" />
       </node>
@@ -225,29 +264,22 @@
             <ref role="1Pybhc" to="xfg9:26cjRACVUHi" resolve="NSF" />
             <node concept="2ShNRf" id="3NMMaaIJX2F" role="37wK5m">
               <node concept="HV5vD" id="3NMMaaIJXwK" role="2ShVmc">
-                <ref role="HV5vE" to="2i99:5Dc_HmSYPqL" resolve="ShortCircuitNixHandler" />
+                <ref role="HV5vE" to="pcso:5Dc_HmSYPqL" resolve="ShortCircuitNixHandler" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="55jgfXqmzrN" role="3cqZAp">
-          <node concept="3cpWsn" id="55jgfXqmzrO" role="3cpWs9">
-            <property role="TrG5h" value="evaluate" />
-            <node concept="3uibUv" id="55jgfXqmzqn" role="1tU5fm">
-              <ref role="3uigEE" to="pbu6:4Pi6J8Cccqb" resolve="ValueAndTraceAndEnv" />
+        <node concept="3cpWs8" id="3NMMaaIE2hO" role="3cqZAp">
+          <node concept="3cpWsn" id="3NMMaaIE2hP" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="3NMMaaIE2hQ" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
-            <node concept="2OqwBi" id="55jgfXqmzrP" role="33vP2m">
-              <node concept="2ShNRf" id="55jgfXqmzrQ" role="2Oq$k0">
-                <node concept="HV5vD" id="55jgfXqmzrR" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
-                </node>
-              </node>
-              <node concept="liA8E" id="55jgfXqmzrS" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:2nydsCfz7eH" resolve="evaluate" />
-                <node concept="3xONca" id="55jgfXqmzrT" role="37wK5m">
-                  <ref role="3xOPvv" node="3NMMaaIE2n4" resolve="true_empty" />
-                </node>
+            <node concept="2YIFZM" id="3NMMaaIE2hR" role="33vP2m">
+              <ref role="1Pybhc" to="pbu6:3xDNhgd53E_" resolve="IETS3ExprEvalHelper" />
+              <ref role="37wK5l" to="pbu6:3xDNhgd54rl" resolve="evaluate" />
+              <node concept="3xONca" id="3NMMaaIE2hS" role="37wK5m">
+                <ref role="3xOPvv" node="3NMMaaIE2n4" resolve="true_empty" />
               </node>
             </node>
           </node>
@@ -260,13 +292,8 @@
         </node>
         <node concept="3clFbH" id="3NMMaaIE2i0" role="3cqZAp" />
         <node concept="3vlDli" id="3NMMaaIE2i1" role="3cqZAp">
-          <node concept="2OqwBi" id="55jgfXqmzGt" role="3tpDZB">
-            <node concept="37vLTw" id="3NMMaaIE2i2" role="2Oq$k0">
-              <ref role="3cqZAo" node="55jgfXqmzrO" resolve="evaluate" />
-            </node>
-            <node concept="2OwXpG" id="55jgfXqm$4o" role="2OqNvi">
-              <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
-            </node>
+          <node concept="37vLTw" id="3NMMaaIE2i2" role="3tpDZB">
+            <ref role="3cqZAo" node="3NMMaaIE2hP" resolve="result" />
           </node>
           <node concept="3clFbT" id="3NMMaaIE2pI" role="3tpDZA">
             <property role="3clFbU" value="true" />
@@ -335,7 +362,7 @@
         <node concept="3cpWs6" id="62nr1ESQgr" role="3cqZAp">
           <node concept="2ShNRf" id="62nr1ESQm_" role="3cqZAk">
             <node concept="HV5vD" id="62nr1ESQE$" role="2ShVmc">
-              <ref role="HV5vE" to="2i99:5Dc_HmSYPqL" resolve="ShortCircuitNixHandler" />
+              <ref role="HV5vE" to="pcso:5Dc_HmSYPqL" resolve="ShortCircuitNixHandler" />
             </node>
           </node>
         </node>

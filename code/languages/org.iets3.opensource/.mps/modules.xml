@@ -55,6 +55,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.process/org.iets3.core.expr.process.mpl" folder="expr.lang-stateful" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.query/org.iets3.core.expr.query.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.repl/org.iets3.core.expr.repl.mpl" folder="expr.lang-core" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.shortcircuit/org.iets3.core.expr.shortcircuit.mpl" folder="expr.plugins" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes.tests/org.iets3.core.expr.simpleTypes.tests.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.statemachines/org.iets3.core.expr.statemachines.mpl" folder="expr.lang-stateful" />

@@ -13737,11 +13737,6 @@
           <ref role="3bR37D" node="4qxhWwxUpQV" resolve="org.iets3.core.expr.shortcircuit" />
         </node>
       </node>
-      <node concept="1SiIV0" id="3MNhq2UOm0z" role="3bR37C">
-        <node concept="3bR9La" id="3MNhq2UOm0$" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:7Kfy9QB6L5O" resolve="jetbrains.mps.lang.extension" />
-        </node>
-      </node>
     </node>
     <node concept="1E1JtA" id="5kwEgmAh8J_" role="3989C9">
       <property role="BnDLt" value="true" />
