@@ -9544,11 +9544,11 @@
                       <property role="Xl_RC" value="This unit shadows the already defined unit " />
                     </node>
                     <node concept="2OqwBi" id="6b$yEOTmiRw" role="3uHU7w">
-                      <node concept="37vLTw" id="6b$yEOTmiRx" role="2Oq$k0">
-                        <ref role="3cqZAo" node="EsE2hyhvJ4" resolve="it" />
-                      </node>
                       <node concept="2qgKlT" id="6b$yEOTmiRy" role="2OqNvi">
                         <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                      </node>
+                      <node concept="37vLTw" id="6b$yEOTmiRx" role="2Oq$k0">
+                        <ref role="3cqZAo" node="EsE2hyhvJ4" resolve="it" />
                       </node>
                     </node>
                   </node>
@@ -11037,44 +11037,6 @@
       <ref role="1YaFvo" to="i3ya:45a4DYZrLVu" resolve="QuantityExponentType" />
     </node>
   </node>
-  <node concept="Q5z_Y" id="3V2fk_c6GqN">
-    <property role="3GE5qa" value="definition.unit" />
-    <property role="TrG5h" value="fix_addAllowNameShadowingAnnotation" />
-    <node concept="Q6JDH" id="3V2fk_c6Gro" role="Q6Id_">
-      <property role="TrG5h" value="unit" />
-      <node concept="3Tqbb2" id="3V2fk_c6Gry" role="Q6QK4">
-        <ref role="ehGHo" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
-      </node>
-    </node>
-    <node concept="Q5ZZ6" id="3V2fk_c6GqO" role="Q6x$H">
-      <node concept="3clFbS" id="3V2fk_c6GqP" role="2VODD2">
-        <node concept="3clFbF" id="3V2fk_ca32d" role="3cqZAp">
-          <node concept="2OqwBi" id="3V2fk_ca4bB" role="3clFbG">
-            <node concept="2OqwBi" id="3V2fk_ca3oG" role="2Oq$k0">
-              <node concept="QwW4i" id="3V2fk_ca32c" role="2Oq$k0">
-                <ref role="QwW4h" node="3V2fk_c6Gro" resolve="unit" />
-              </node>
-              <node concept="3CFZ6_" id="3V2fk_ca3UP" role="2OqNvi">
-                <node concept="3CFYIy" id="3V2fk_ca3Zo" role="3CFYIz">
-                  <ref role="3CFYIx" to="i3ya:3V2fk_c6FtV" resolve="AllowNameShadowingAnnotation" />
-                </node>
-              </node>
-            </node>
-            <node concept="2DeJnY" id="3V2fk_ca4qM" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="QznSV" id="4iGVAJE9IwK" role="QzAvj">
-      <node concept="3clFbS" id="4iGVAJE9IwL" role="2VODD2">
-        <node concept="3clFbF" id="4iGVAJE9IB2" role="3cqZAp">
-          <node concept="Xl_RD" id="4iGVAJE9IB1" role="3clFbG">
-            <property role="Xl_RC" value="Allow Name Shadowing" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1YbPZF" id="76ZhK6XYufT">
     <property role="TrG5h" value="typeof_TaggedExpression" />
     <node concept="3clFbS" id="76ZhK6XYufU" role="18ibNy">
@@ -11464,6 +11426,44 @@
         <node concept="3clFbF" id="53TW5LlpU08" role="3cqZAp">
           <node concept="3clFbT" id="53TW5LlpU07" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="3V2fk_c6GqN">
+    <property role="3GE5qa" value="definition.unit" />
+    <property role="TrG5h" value="fix_addAllowNameShadowingAnnotation" />
+    <node concept="Q6JDH" id="3V2fk_c6Gro" role="Q6Id_">
+      <property role="TrG5h" value="unit" />
+      <node concept="3Tqbb2" id="3V2fk_c6Gry" role="Q6QK4">
+        <ref role="ehGHo" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="3V2fk_c6GqO" role="Q6x$H">
+      <node concept="3clFbS" id="3V2fk_c6GqP" role="2VODD2">
+        <node concept="3clFbF" id="3V2fk_ca32d" role="3cqZAp">
+          <node concept="2OqwBi" id="3V2fk_ca4bB" role="3clFbG">
+            <node concept="2OqwBi" id="3V2fk_ca3oG" role="2Oq$k0">
+              <node concept="QwW4i" id="3V2fk_ca32c" role="2Oq$k0">
+                <ref role="QwW4h" node="3V2fk_c6Gro" resolve="unit" />
+              </node>
+              <node concept="3CFZ6_" id="3V2fk_ca3UP" role="2OqNvi">
+                <node concept="3CFYIy" id="3V2fk_ca3Zo" role="3CFYIz">
+                  <ref role="3CFYIx" to="i3ya:3V2fk_c6FtV" resolve="AllowNameShadowingAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="2DeJnY" id="3V2fk_ca4qM" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="4iGVAJE9IwK" role="QzAvj">
+      <node concept="3clFbS" id="4iGVAJE9IwL" role="2VODD2">
+        <node concept="3clFbF" id="4iGVAJE9IB2" role="3cqZAp">
+          <node concept="Xl_RD" id="4iGVAJE9IB1" role="3clFbG">
+            <property role="Xl_RC" value="Allow Name Shadowing" />
           </node>
         </node>
       </node>
