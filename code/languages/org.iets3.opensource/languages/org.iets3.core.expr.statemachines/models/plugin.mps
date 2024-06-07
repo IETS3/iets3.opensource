@@ -2,11 +2,6 @@
 <model ref="r:b42cba76-0ae4-471b-92c0-7290e4540c95(org.iets3.core.expr.statemachines.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
-    <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
-    <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="-1" />
-    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -326,9 +321,6 @@
       </concept>
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
-    </language>
-    <language id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport">
-      <concept id="1829257266377339186" name="jetbrains.mps.ide.httpsupport.structure.Node_getURLOperation" flags="ng" index="2$mYbS" />
     </language>
   </registry>
   <node concept="312cEu" id="7$TgoCYaVTr">
@@ -4050,11 +4042,12 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="UwUtc3Kab3" role="37wK5m">
-            <node concept="37vLTw" id="UwUtc3K9K7" role="2Oq$k0">
+          <node concept="2YIFZM" id="5_s5$c25L2J" role="37wK5m">
+            <ref role="37wK5l" to="oq0c:1_yOWEXenNM" resolve="getURL" />
+            <ref role="1Pybhc" to="oq0c:3OrGkZCn9ZQ" resolve="URLUtil" />
+            <node concept="37vLTw" id="5_s5$c25L4s" role="37wK5m">
               <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
             </node>
-            <node concept="2$mYbS" id="UwUtc3KbDu" role="2OqNvi" />
           </node>
           <node concept="37vLTw" id="5E2FDFNJ8v_" role="37wK5m">
             <ref role="3cqZAo" node="4_qY3E5j7S5" resolve="context" />
