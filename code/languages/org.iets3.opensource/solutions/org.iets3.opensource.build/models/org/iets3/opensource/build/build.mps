@@ -8579,22 +8579,6 @@
             </node>
           </node>
         </node>
-        <node concept="3rtmxn" id="58EK$VSP4zV" role="3bR31x">
-          <node concept="3LXTmp" id="58EK$VSP4zW" role="3rtmxm">
-            <node concept="398BVA" id="58EK$VSP4zX" role="3LXTmr">
-              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="58EK$VSP4zY" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="58EK$VSP4zZ" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.core.expr.shortcircuit" />
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="58EK$VSP4$1" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7uAdOXh22Xw" role="3989C9">
