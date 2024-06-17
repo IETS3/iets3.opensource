@@ -21,6 +21,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The prevision loss when converting units in the interpreter was fixed.
 - An editor issue in NumberRangeSpec was fixed that also prevented adding a precision to a number type.
+- A layouting issue with the class EndCell was fixed.
 
 ## April 2024
 
