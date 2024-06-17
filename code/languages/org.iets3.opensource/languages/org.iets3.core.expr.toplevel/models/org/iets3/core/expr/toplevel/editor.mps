@@ -4620,22 +4620,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="3AY9Typr_xR" role="3cqZAp">
-            <node concept="2OqwBi" id="3AY9Typr_xS" role="3clFbG">
-              <node concept="1rXfSq" id="3AY9Typr_xT" role="2Oq$k0">
-                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle()" resolve="getStyle" />
-              </node>
-              <node concept="liA8E" id="3AY9Typr_xU" role="2OqNvi">
-                <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
-                <node concept="1Z6Ecs" id="3AY9Typr_xV" role="37wK5m">
-                  <ref role="1Z6EpT" to="z0fb:7lS0O5066uD" resolve="_push-y" />
-                </node>
-                <node concept="3clFbT" id="3AY9Typr_xW" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbH" id="3AY9TypibfP" role="3cqZAp" />
           <node concept="3clFbF" id="68WEpgCCRhE" role="3cqZAp">
             <node concept="1rXfSq" id="68WEpgCCRhF" role="3clFbG">
