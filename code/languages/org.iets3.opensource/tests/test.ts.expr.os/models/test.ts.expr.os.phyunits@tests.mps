@@ -7423,9 +7423,6 @@
             <node concept="3vlDli" id="5dIhu0skkW1" role="3cqZAp">
               <node concept="2OqwBi" id="5dIhu0skkW2" role="3tpDZA">
                 <node concept="2OqwBi" id="5dIhu0skm_l" role="2Oq$k0">
-                  <node concept="3TrEf2" id="5dIhu0skmVf" role="2OqNvi">
-                    <ref role="3Tt5mk" to="i3ya:7eOyx9r3qFW" resolve="unit" />
-                  </node>
                   <node concept="1PxgMI" id="59e2lmicMa0" role="2Oq$k0">
                     <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="59e2lmicMo1" role="3oSUPX">
@@ -7439,6 +7436,9 @@
                         <ref role="1M0zk5" node="5dIhu0skkxZ" resolve="unitExp" />
                       </node>
                     </node>
+                  </node>
+                  <node concept="3TrEf2" id="5dIhu0skmVf" role="2OqNvi">
+                    <ref role="3Tt5mk" to="i3ya:7eOyx9r3qFW" resolve="unit" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="5dIhu0skkW6" role="2OqNvi">
@@ -8669,6 +8669,15 @@
         </node>
       </node>
       <node concept="_fkuZ" id="69HsIy5GLSJ" role="_fkp5">
+        <node concept="1z9TsT" id="1eut2uU9kib" role="lGtFl">
+          <node concept="OjmMv" id="1eut2uU9kic" role="1w35rA">
+            <node concept="19SGf9" id="1eut2uU9kid" role="OjmMu">
+              <node concept="19SUe$" id="1eut2uU9kie" role="19SJt6">
+                <property role="19SUeA" value="the first applicable rule is used with the default config which is the conversion declared in this file " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="_fku$" id="69HsIy5GLSK" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSL" role="_fkuY">
           <node concept="1YnStw" id="69HsIy5GU5N" role="30czhm">
@@ -8690,15 +8699,6 @@
         </node>
         <node concept="30bXRB" id="69HsIy5GLSR" role="_fkuS">
           <property role="30bXRw" value="-3" />
-        </node>
-        <node concept="1z9TsT" id="1eut2uU9kib" role="lGtFl">
-          <node concept="OjmMv" id="1eut2uU9kic" role="1w35rA">
-            <node concept="19SGf9" id="1eut2uU9kid" role="OjmMu">
-              <node concept="19SUe$" id="1eut2uU9kie" role="19SJt6">
-                <property role="19SUeA" value="the first applicable rule is used with the default config which is the conversion declared in this file " />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="_fkuZ" id="1AZ6$Cori3v" role="_fkp5">
@@ -9490,6 +9490,10 @@
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <property role="TrG5h" value="ErrorMessages" />
     <node concept="1qefOq" id="EsE2hyiAIa" role="1SKRRt">
+      <node concept="15s5l7" id="7CCjMgELbzq" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  SIBaseUnits.unitless (unit) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;unit&quot;;FLAVOUR_RULE_ID=&quot;[r:4095c62d-96cb-40e8-ab55-8cbe7499c2c8(org.iets3.core.expr.typetags.physunits.constraints)/3359996257533797539]&quot;;" />
+        <property role="huDt6" value="The reference  SIBaseUnits.unitless (unit) is out of search scope" />
+      </node>
       <node concept="_iOnV" id="EsE2hyiAI9" role="1qenE9">
         <property role="TrG5h" value="TestLibrary" />
         <node concept="CIrOH" id="EsE2hyfZJe" role="_iOnC">
@@ -9639,9 +9643,6 @@
             </node>
           </node>
         </node>
-        <node concept="3GEVxB" id="EsE2hyiAIe" role="3i6evy">
-          <ref role="3GEb4d" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
-        </node>
         <node concept="2zPypq" id="7CCjMgEyvBD" role="_iOnC">
           <property role="TrG5h" value="incorrect" />
           <node concept="30bXRB" id="7CCjMgEyw5a" role="2zPyp_">
@@ -9746,10 +9747,9 @@
           </node>
         </node>
         <node concept="_ixoA" id="7CCjMgEywLU" role="_iOnC" />
-      </node>
-      <node concept="15s5l7" id="7CCjMgELbzq" role="lGtFl">
-        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  SIBaseUnits.unitless (unit) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;unit&quot;;FLAVOUR_RULE_ID=&quot;[r:4095c62d-96cb-40e8-ab55-8cbe7499c2c8(org.iets3.core.expr.typetags.physunits.constraints)/3359996257533797539]&quot;;" />
-        <property role="huDt6" value="The reference  SIBaseUnits.unitless (unit) is out of search scope" />
+        <node concept="3GEVxB" id="EsE2hyiAIe" role="3i6evy">
+          <ref role="3GEb4d" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
+        </node>
       </node>
     </node>
   </node>
