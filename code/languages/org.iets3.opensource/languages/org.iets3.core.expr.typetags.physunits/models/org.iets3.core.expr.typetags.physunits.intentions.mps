@@ -81,7 +81,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -167,7 +167,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -292,16 +292,18 @@
                 </node>
                 <node concept="2pJxcG" id="6EvkZrLma5B" role="2pJxcM">
                   <ref role="2pJxcJ" to="i3ya:7Bmg9Oo3Vr1" resolve="derived" />
-                  <node concept="2OqwBi" id="6EvkZrNIELA" role="28ntcv">
-                    <node concept="2OqwBi" id="6EvkZrNIELB" role="2Oq$k0">
-                      <node concept="37vLTw" id="6EvkZrNIELC" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6EvkZrLlIVF" resolve="newSpecification" />
+                  <node concept="WxPPo" id="2FZhxW1b2Zq" role="28ntcv">
+                    <node concept="2OqwBi" id="6EvkZrNIELA" role="WxPPp">
+                      <node concept="2OqwBi" id="6EvkZrNIELB" role="2Oq$k0">
+                        <node concept="37vLTw" id="6EvkZrNIELC" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6EvkZrLlIVF" resolve="newSpecification" />
+                        </node>
+                        <node concept="3TrEf2" id="6EvkZrNIELD" role="2OqNvi">
+                          <ref role="3Tt5mk" to="i3ya:7athFveyQy5" resolve="specification" />
+                        </node>
                       </node>
-                      <node concept="3TrEf2" id="6EvkZrNIELD" role="2OqNvi">
-                        <ref role="3Tt5mk" to="i3ya:7athFveyQy5" resolve="specification" />
-                      </node>
+                      <node concept="3x8VRR" id="6EvkZrNIELE" role="2OqNvi" />
                     </node>
-                    <node concept="3x8VRR" id="6EvkZrNIELE" role="2OqNvi" />
                   </node>
                 </node>
                 <node concept="2pJxcG" id="6EvkZrLmaM6" role="2pJxcM">
