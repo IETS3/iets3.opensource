@@ -11,8 +11,8 @@
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -4629,22 +4629,6 @@
                   <ref role="1Z6EpT" to="z0fb:7lS0O5066tg" resolve="_grow-y" />
                 </node>
                 <node concept="3clFbT" id="68WEpgCCRhD" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="3AY9Typr_xR" role="3cqZAp">
-            <node concept="2OqwBi" id="3AY9Typr_xS" role="3clFbG">
-              <node concept="1rXfSq" id="3AY9Typr_xT" role="2Oq$k0">
-                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle()" resolve="getStyle" />
-              </node>
-              <node concept="liA8E" id="3AY9Typr_xU" role="2OqNvi">
-                <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
-                <node concept="1Z6Ecs" id="3AY9Typr_xV" role="37wK5m">
-                  <ref role="1Z6EpT" to="z0fb:7lS0O5066uD" resolve="_push-y" />
-                </node>
-                <node concept="3clFbT" id="3AY9Typr_xW" role="37wK5m">
                   <property role="3clFbU" value="true" />
                 </node>
               </node>
