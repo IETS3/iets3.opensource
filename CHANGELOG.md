@@ -18,7 +18,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 - Reduction rule for EnumLiterals can now also be applied for subconcepts
 
-## May 2024
+## June 2024
 
 ### Added
 
