@@ -103,10 +103,8 @@
       </concept>
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="784421273959492578" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_IncludeMenu" flags="ng" index="mvV$s">
-        <child id="784421273959492606" name="nodeFunction" index="mvV$0" />
         <child id="6718020819487784677" name="menuReference" index="A14EM" />
       </concept>
-      <concept id="784421273959493166" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_TargetNode" flags="ig" index="mvVNg" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
@@ -6933,25 +6931,6 @@
   </node>
   <node concept="3ICUPy" id="2urjS20H7rB">
     <ref role="aqKnT" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
-    <node concept="1Qtc8_" id="2urjS20H7rC" role="IW6Ez">
-      <node concept="3cWJ9i" id="2urjS20H7rD" role="1Qtc8$">
-        <node concept="CtIbL" id="2urjS20H7rE" role="CtIbM">
-          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
-        </node>
-      </node>
-      <node concept="mvV$s" id="72b39kzfT$_" role="1Qtc8A">
-        <node concept="mvVNg" id="72b39kzfT$C" role="mvV$0">
-          <node concept="3clFbS" id="72b39kzfT$D" role="2VODD2">
-            <node concept="3clFbF" id="72b39kzfTC1" role="3cqZAp">
-              <node concept="2OqwBi" id="72b39kzfTJY" role="3clFbG">
-                <node concept="1mfA1w" id="72b39kzfTUT" role="2OqNvi" />
-                <node concept="7Obwk" id="72b39kzfTC0" role="2Oq$k0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="22hDWj" id="uuJ7IpZtt1" role="22hAXT" />
     <node concept="1Qtc8_" id="1Va40GREEjv" role="IW6Ez">
       <node concept="3eGOoe" id="1Va40GREEq3" role="1Qtc8$" />
