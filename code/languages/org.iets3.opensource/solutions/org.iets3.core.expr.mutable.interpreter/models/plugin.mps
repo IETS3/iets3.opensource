@@ -79,6 +79,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -1499,7 +1500,7 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3y3z36" id="31BLocd1vbM" role="3clFbw">
+                      <node concept="17QLQc" id="6heyteL2CCO" role="3clFbw">
                         <node concept="2OqwBi" id="31BLocd1ujv" role="3uHU7B">
                           <node concept="37vLTw" id="31BLocd1u31" role="2Oq$k0">
                             <ref role="3cqZAo" node="79jc6YzfDTX" resolve="box" />
