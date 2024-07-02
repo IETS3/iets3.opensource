@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixes
 
 - An issue was fixed where the substitute menu entries of `IDotTarget` were duplicated because two default menus were created.
+- The same issue was fixed for the right transformation menu of `IDotTarget`.
 
 ## May 2024
 
