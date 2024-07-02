@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.iets3.core.expr.base.shared.runtime" uuid="00ca1323-762b-4f39-ab5a-6a6bd602dc4b" moduleVersion="0" compileInMPS="true">
+<solution name="org.iets3.core.expr.base.shared.runtime" uuid="00ca1323-762b-4f39-ab5a-6a6bd602dc4b" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
