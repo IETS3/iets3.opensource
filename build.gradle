@@ -331,6 +331,27 @@ static def addDependency(Object pom, Configuration config) {
 
 }
 
+ext.additionalPomInfo = {
+    licenses {
+        // official SPDX identifier
+        // see https://spdx.org/licenses/ for list
+        license {
+            name = "Apache-2.0"
+            url = "https://www.apache.org/licenses/LICENSE-2.0"
+            comments = "Apache License Version 2.0"
+            distribution = "repo"
+        }
+    }
+    organization {
+        name = "itemis AG"
+        url = "https://www.itemis.com"
+    }
+    scm {
+        tag = GitBasedVersioning.getGitCommitHash()
+        url = "https://github.com/IETS3/iets3.opensource"
+    }
+}
+
 publishing {
     repositories {
         maven {
