@@ -7688,5 +7688,33 @@
     </node>
     <node concept="3Tm1VV" id="Ss0aue3Qrt" role="1B3o_S" />
   </node>
+  <node concept="24kQdi" id="25rRV02o$Gx">
+    <property role="3GE5qa" value="tuples" />
+    <ref role="1XX52x" to="hm2y:25rRV02ooIM" resolve="NCopiesOp" />
+    <node concept="3EZMnI" id="25rRV02oBq3" role="2wV5jI">
+      <node concept="2iRfu4" id="25rRV02oBq4" role="2iSdaV" />
+      <node concept="PMmxH" id="25rRV02oA23" role="3EZMnx">
+        <ref role="PMmxG" node="12bsjhgd0dR" resolve="OpAlias" />
+      </node>
+      <node concept="3F0ifn" id="25rRV02oCH4" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="6zmBjqUjnOY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6zmBjqUjnOZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="25rRV02oE44" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:25rRV02osES" resolve="times" />
+      </node>
+      <node concept="3F0ifn" id="25rRV02oE64" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="25rRV02vnNt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
