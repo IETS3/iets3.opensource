@@ -18,6 +18,7 @@ plugins {
     id 'base'
     id 'maven-publish'
     id "com.github.breadmoirai.github-release" version "2.4.1"
+    id "org.cyclonedx.bom" version "1.8.2"
 }
 
 ext.dependencyRepositories = [
@@ -466,4 +467,15 @@ githubRelease {
 
 tasks.named('githubRelease').configure {
   dependsOn packageDistroWithDependencies
+}
+
+cyclonedxBom {
+    // SBOM destination directory
+    destination = file("build/reports")
+    // The file name for the generated SBOMs (before the file format suffix)
+    outputName = "sbom"
+    // The file format generated, can be xml, json or all for generating both
+    outputFormat = "json"
+    // Don't include license texts in generated SBOMs
+    includeLicenseText = false
 }
