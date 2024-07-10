@@ -503,5 +503,5 @@ cyclonedxBom {
 }
 
 assemble {
-    dependsOn << cyclonedxBom
+    dependsOn('cyclonedxBom')
 }
