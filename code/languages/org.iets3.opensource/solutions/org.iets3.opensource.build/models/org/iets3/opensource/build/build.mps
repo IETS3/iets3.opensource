@@ -8754,6 +8754,11 @@
             <ref role="3bR37D" node="72k3qZIaGXV" resolve="org.iets3.core.expr.tracing.plugin" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5vABvvjT9ZU" role="3bR37C">
+          <node concept="3bR9La" id="5vABvvjT9ZV" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="72k3qZIaGXV" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -8858,6 +8863,26 @@
         <node concept="1SiIV0" id="1qHsIyRg7UQ" role="3bR37C">
           <node concept="3bR9La" id="1qHsIyRg7UR" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5vABvvjTa07" role="3bR37C">
+          <node concept="3bR9La" id="5vABvvjTa08" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5vABvvjTa09" role="3bR37C">
+          <node concept="3bR9La" id="5vABvvjTa0a" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5vABvvjTa0b" role="3bR37C">
+          <node concept="3bR9La" id="5vABvvjTa0c" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:7klUZA6XM5K" resolve="de.slisson.mps.conditionalEditor.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5vABvvjTa0d" role="3bR37C">
+          <node concept="3bR9La" id="5vABvvjTa0e" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
       </node>
