@@ -382,7 +382,7 @@ publishing {
     }
 
     publications {
-        openSource(MavenPublication) {
+        opensource(MavenPublication) {
             groupId group
             artifactId name
             artifact packageLanguages
@@ -394,7 +394,7 @@ publishing {
 
         tests(MavenPublication) {
             groupId 'org.iets3.opensource'
-            artifactId 'tests'
+            artifactId name
             artifact packageTests
 
             addDependency(pom, group, name, project.version, 'zip')
