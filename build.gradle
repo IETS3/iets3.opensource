@@ -381,11 +381,13 @@ publishing {
 
     publications {
         openSource(MavenPublication) {
-            groupId 'org.iets3'
-            artifactId 'opensource'
+            groupId group
+            artifactId name
             artifact packageLanguages
 
             addDependency(pom, configurations.languageLibs)
+
+            pom additionalPomInfo
         }
 
         tests(MavenPublication) {
@@ -393,7 +395,9 @@ publishing {
             artifactId 'tests'
             artifact packageTests
 
-            addDependency(pom, 'org.iets3', 'opensource', project.version, 'zip')
+            addDependency(pom, group, name, project.version, 'zip')
+
+            pom additionalPomInfo
         }
 
         def runtimesDir = new File(artifactsDir, 'org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os')
