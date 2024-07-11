@@ -75,6 +75,11 @@ if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
     ext.mbeddrVersionSelector = mbeddrVersion
 }
 
+// Project group
+group = 'org.iets3'
+
+// Project name cannot be defined here, see settings.gradle#rootProject.name instead
+// name = 'opensource'
 
 // Project version
 if (project.hasProperty('iets3OpenSourceVersion')) {
