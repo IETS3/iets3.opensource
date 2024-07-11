@@ -19,7 +19,6 @@ plugins {
     id 'maven-publish'
     id "com.github.breadmoirai.github-release" version "2.4.1"
     id "org.cyclonedx.bom" version "1.8.2"
-    id "com.dorongold.task-tree" version "4.0.0"
 }
 
 ext.dependencyRepositories = [
