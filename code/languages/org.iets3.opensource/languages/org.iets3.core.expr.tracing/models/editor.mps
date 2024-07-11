@@ -108,9 +108,6 @@
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
-        <property id="1073389577007" name="text" index="3F0ifm" />
-      </concept>
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -482,9 +479,6 @@
             </node>
           </node>
         </node>
-        <node concept="3F0ifn" id="3g9zm40MqdR" role="3EZMnx">
-          <property role="3F0ifm" value="ORIG:" />
-        </node>
         <node concept="2iRkQZ" id="5U8d23QoQxc" role="2iSdaV" />
         <node concept="2R9Tw8" id="5U8d23Qp9cO" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -645,9 +639,6 @@
         </node>
         <node concept="VPM3Z" id="5U8d23Qpo43" role="3F10Kt">
           <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="3g9zm40Mqqx" role="3EZMnx">
-          <property role="3F0ifm" value="ORIG:" />
         </node>
         <node concept="1HlG4h" id="5U8d23Qpo44" role="3EZMnx">
           <ref role="1ERwB7" node="4p7g2DNgDod" resolve="ClickValue" />
