@@ -65,7 +65,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -145,7 +145,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1118,6 +1118,33 @@
             <node concept="1mIQ4w" id="7cphKbLweYP" role="2OqNvi">
               <node concept="chp4Y" id="7cphKbLwffF" role="cj9EA">
                 <ref role="cht4Q" to="hm2y:5r47dOfJ9kS" resolve="InlineTupleType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="25rRV02ojcu">
+    <property role="3GE5qa" value="tuples" />
+    <ref role="1M2myG" to="hm2y:25rRV02oe$f" resolve="ITupleOp" />
+    <node concept="9S07l" id="25rRV02okuJ" role="9Vyp8">
+      <node concept="3clFbS" id="25rRV02okuK" role="2VODD2">
+        <node concept="3clFbF" id="6b_jefnKylm" role="3cqZAp">
+          <node concept="2OqwBi" id="6b_jefnKyln" role="3clFbG">
+            <node concept="1PxgMI" id="6b_jefnKylo" role="2Oq$k0">
+              <node concept="nLn13" id="6b_jefnKylp" role="1m5AlR" />
+              <node concept="chp4Y" id="6b_jefnKyoa" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6b_jefnKylq" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="6b_jefnKylr" role="37wK5m">
+                <ref role="35c_gD" to="hm2y:S$tO8ocniU" resolve="TupleType" />
+              </node>
+              <node concept="3clFbT" id="6b_jefnKyls" role="37wK5m">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>
