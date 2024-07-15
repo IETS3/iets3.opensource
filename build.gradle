@@ -394,10 +394,9 @@ publishing {
 
         tests(MavenPublication) {
             groupId 'org.iets3.opensource'
-            artifactId name
+            artifactId 'tests'
             artifact packageTests
-
-            addDependency(pom, group, name, project.version, 'zip')
+            addDependency(pom, 'org.iets3', 'opensource', project.version, 'zip')
 
             pom additionalPomInfo
         }
