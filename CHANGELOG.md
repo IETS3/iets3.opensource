@@ -11,6 +11,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Tuple types now support a new method `nTimes` to ease initialization of long tuples.
 
+### Fixed
+
+- Tracing editor can be exchanged by customers using editor hints.
+
 ## June 2024
 
 ### Fixed
