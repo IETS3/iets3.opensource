@@ -8870,6 +8870,16 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5vABvvjTa07" role="3bR37C">
+          <node concept="3bR9La" id="5vABvvjTa08" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5vABvvjTa0d" role="3bR37C">
+          <node concept="3bR9La" id="5vABvvjTa0e" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7uAdOXh984A" role="3989C9">

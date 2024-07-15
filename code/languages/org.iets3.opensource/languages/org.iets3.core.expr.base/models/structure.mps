@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
@@ -2217,6 +2216,31 @@
     </node>
     <node concept="PrWs8" id="6GiZkUz7qWS" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="25rRV02ooIM">
+    <property role="EcuMT" value="2403760773179476914" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="TrG5h" value="NCopiesOp" />
+    <property role="34LRSv" value="nTimes" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="25rRV02osES" role="1TKVEi">
+      <property role="IQ2ns" value="2403760773179493048" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="times" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="25rRV02oy5O" role="PzmwI">
+      <ref role="PrY4T" node="25rRV02oe$f" resolve="ITupleOp" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="25rRV02oe$f">
+    <property role="EcuMT" value="2403760773179435279" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="TrG5h" value="ITupleOp" />
+    <node concept="PrWs8" id="25rRV02ohmw" role="PrDN$">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
 </model>
