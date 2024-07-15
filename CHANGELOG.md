@@ -117,6 +117,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - `NumberLiteral` can now be converted to a `BigDecimal` with the method `toBigDecimal`.
+- Uncatched `DateTimeException` during check DateLiteral
+- The type parameter is now used in the Java generation of the FailExpr.
 -  Named based access of result columns of multi decision tables were added. Columns can be referenced by name and coexist with the index based access.
 
 ## December 2023
