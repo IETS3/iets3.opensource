@@ -9195,6 +9195,27 @@
     <node concept="3clFb_" id="3jMXg0bRHEq" role="jymVt">
       <property role="TrG5h" value="addMissingImport" />
       <node concept="3clFbS" id="3jMXg0bRHEt" role="3clF47">
+        <node concept="3clFbJ" id="4wvzrd8LFI8" role="3cqZAp">
+          <node concept="3clFbS" id="4wvzrd8LFIa" role="3clFbx">
+            <node concept="3cpWs6" id="4wvzrd8Olib" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="4wvzrd8NPN6" role="3clFbw">
+            <node concept="10Nm6u" id="4wvzrd8O66N" role="3uHU7w" />
+            <node concept="2OqwBi" id="4wvzrd8NoCE" role="3uHU7B">
+              <node concept="2JrnkZ" id="4wvzrd8N7dB" role="2Oq$k0">
+                <node concept="2OqwBi" id="4wvzrd8MbgF" role="2JrQYb">
+                  <node concept="37vLTw" id="4wvzrd8LUhF" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3jMXg0bRVhi" resolve="node" />
+                  </node>
+                  <node concept="I4A8Y" id="4wvzrd8MtDi" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4wvzrd8N$M8" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3jMXg0bS6pR" role="3cqZAp">
           <node concept="3cpWsn" id="3jMXg0bS6pS" role="3cpWs9">
             <property role="TrG5h" value="imports" />
