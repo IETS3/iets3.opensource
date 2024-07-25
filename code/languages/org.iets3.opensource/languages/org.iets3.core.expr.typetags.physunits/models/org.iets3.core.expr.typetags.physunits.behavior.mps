@@ -17,7 +17,6 @@
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="3" />
     <use id="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" name="org.iets3.core.expr.math" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
-    <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>
     <import index="qlm2" ref="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)" />
@@ -37,13 +36,14 @@
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="65nr" ref="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="x0pf" ref="r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)" />
+    <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
   </imports>
@@ -335,6 +335,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
       <concept id="1178893518978" name="jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" flags="nn" index="1VxSAg" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
@@ -1970,6 +1973,24 @@
         <node concept="3uibUv" id="6rBnJAopD7T" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7JDqwWRX00k" role="13h7CS">
+      <property role="TrG5h" value="quantity" />
+      <ref role="13i0hy" node="7JDqwWRWT0R" resolve="quantity" />
+      <node concept="3Tm1VV" id="7JDqwWRX00l" role="1B3o_S" />
+      <node concept="3clFbS" id="7JDqwWRX00o" role="3clF47">
+        <node concept="3clFbF" id="7JDqwWRX0F2" role="3cqZAp">
+          <node concept="2OqwBi" id="7JDqwWRX15j" role="3clFbG">
+            <node concept="13iPFW" id="7JDqwWRX0F1" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7JDqwWRX23A" role="2OqNvi">
+              <ref role="3Tt5mk" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7JDqwWRX00p" role="3clF45">
+        <ref role="ehGHo" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
       </node>
     </node>
   </node>
@@ -6213,6 +6234,31 @@
           </node>
         </node>
         <node concept="3clFbH" id="2Ux6GHgYavD" role="3cqZAp" />
+        <node concept="3cpWs8" id="4wvzrd4Fadu" role="3cqZAp">
+          <node concept="3cpWsn" id="4wvzrd4Fadv" role="3cpWs9">
+            <property role="TrG5h" value="repository" />
+            <node concept="3uibUv" id="4wvzrd4Fadw" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="4wvzrd4Fdye" role="33vP2m">
+              <node concept="2OqwBi" id="4wvzrd4Fcgl" role="2Oq$k0">
+                <node concept="2YIFZM" id="4wvzrd4FbSN" role="2Oq$k0">
+                  <ref role="37wK5l" to="3a50:~MPSCoreComponents.getInstance()" resolve="getInstance" />
+                  <ref role="1Pybhc" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
+                </node>
+                <node concept="liA8E" id="4wvzrd4Fd3P" role="2OqNvi">
+                  <ref role="37wK5l" to="3a50:~MPSCoreComponents.getPlatform()" resolve="getPlatform" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4wvzrd4Fe1R" role="2OqNvi">
+                <ref role="37wK5l" to="wyuk:~ComponentHost.findComponent(java.lang.Class)" resolve="findComponent" />
+                <node concept="3VsKOn" id="4wvzrd4Fj$z" role="37wK5m">
+                  <ref role="3VsUkX" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3SKdUt" id="4DRdDUoCYK0" role="3cqZAp">
           <node concept="1PaTwC" id="17Nm8oCo8F4" role="1aUNEU">
             <node concept="3oM_SD" id="17Nm8oCo8F5" role="1PaTwD">
@@ -6259,18 +6305,8 @@
             <node concept="2YIFZM" id="3eEp8ACWcQU" role="33vP2m">
               <ref role="37wK5l" node="36kPvG5pbWV" resolve="getUnitLessUnit" />
               <ref role="1Pybhc" node="3xM68GMxWv0" resolve="StandardUnitHelper" />
-              <node concept="2OqwBi" id="3eEp8ACWfpj" role="37wK5m">
-                <node concept="2JrnkZ" id="3eEp8ACWeKq" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3eEp8ACWdyx" role="2JrQYb">
-                    <node concept="37vLTw" id="3eEp8ACWd8h" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6FK1Pb8yBLh" resolve="node" />
-                    </node>
-                    <node concept="I4A8Y" id="3eEp8ACWel3" role="2OqNvi" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="3eEp8ACWgbu" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
-                </node>
+              <node concept="37vLTw" id="4wvzrd4FkA9" role="37wK5m">
+                <ref role="3cqZAo" node="4wvzrd4Fadv" resolve="repository" />
               </node>
             </node>
           </node>
@@ -11768,6 +11804,16 @@
       </node>
       <node concept="3clFbS" id="1KUmgSF_6QS" role="3clF47" />
     </node>
+    <node concept="13i0hz" id="7JDqwWRWT0R" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="quantity" />
+      <node concept="3Tm1VV" id="7JDqwWRWT0S" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7JDqwWRWYh5" role="3clF45">
+        <ref role="ehGHo" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+      </node>
+      <node concept="3clFbS" id="7JDqwWRWT0U" role="3clF47" />
+    </node>
   </node>
   <node concept="13h7C7" id="7SygLIkQlVh">
     <property role="3GE5qa" value="interfaces" />
@@ -16855,6 +16901,29 @@
                             <node concept="2r$n1x" id="6RONOaU6swD" role="2r_Bvh">
                               <ref role="2r$qp6" node="2hbaSyB0ITv" resolve="factor" />
                               <node concept="3cmrfG" id="6RONOaU6swE" role="2r_lH1">
+                                <property role="3cmrfH" value="-6" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="7JDqwWRWD0e" role="3cqZAp">
+                        <node concept="1rXfSq" id="7JDqwWRWD0f" role="3clFbG">
+                          <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
+                          <node concept="Xl_RD" id="7JDqwWRWD0g" role="37wK5m">
+                            <property role="Xl_RC" value="µ" />
+                          </node>
+                          <node concept="2ry78W" id="7JDqwWRWD0h" role="37wK5m">
+                            <ref role="2ryb1Q" node="7i1yFLlKmzB" resolve="DecimalMetricUnitPrefix" />
+                            <node concept="2r$n1x" id="7JDqwWRWD0i" role="2r_Bvh">
+                              <ref role="2r$qp6" node="2hbaSyB0ITt" resolve="name" />
+                              <node concept="Xl_RD" id="7JDqwWRWD0j" role="2r_lH1">
+                                <property role="Xl_RC" value="micro" />
+                              </node>
+                            </node>
+                            <node concept="2r$n1x" id="7JDqwWRWD0k" role="2r_Bvh">
+                              <ref role="2r$qp6" node="2hbaSyB0ITv" resolve="factor" />
+                              <node concept="3cmrfG" id="7JDqwWRWD0l" role="2r_lH1">
                                 <property role="3cmrfH" value="-6" />
                               </node>
                             </node>

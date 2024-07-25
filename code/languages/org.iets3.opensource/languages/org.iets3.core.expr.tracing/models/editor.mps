@@ -57,6 +57,13 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
+        <child id="5944657839000877563" name="hints" index="2ABdcP" />
+      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
+        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
+        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
+      </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -783,6 +790,9 @@
       </node>
     </node>
     <node concept="Rtstu" id="1OitGwf5Zbs" role="6VMZX" />
+    <node concept="2aJ2om" id="3g9zm40OZqi" role="CpUAK">
+      <ref role="2$4xQ3" node="3g9zm40OYvO" resolve="IETS3Tracing" />
+    </node>
   </node>
   <node concept="RtYIR" id="2CFPPn7pH83">
     <property role="Rtri_" value="100" />
@@ -1990,6 +2000,14 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2ABfQD" id="3g9zm40OYvA">
+    <property role="TrG5h" value="TracingHints" />
+    <node concept="2BsEeg" id="3g9zm40OYvO" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="IETS3Tracing" />
+      <property role="2BUmq6" value="Default trace values of nodes [IETS3]" />
     </node>
   </node>
 </model>

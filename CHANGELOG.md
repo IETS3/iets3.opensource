@@ -5,6 +5,30 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## July 2024
+
+### Added
+
+- Tuple types now support a new method `nTimes` to ease initialization of long tuples.
+
+### Fixed
+
+- Tracing editor can be exchanged by customers using editor hints.
+
+## June 2024
+
+### Fixed
+
+- An issue was fixed where the substitute menu entries of `IDotTarget` were duplicated because two default menus were created.
+- The same issue was fixed for the right transformation menu of `IDotTarget`.
+
+## May 2024
+
+### Added
+
+### Changed
+- Reduction rule for EnumLiterals can now also be applied for subconcepts
+
 ## May 2024
 
 ### Added
@@ -21,6 +45,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The prevision loss when converting units in the interpreter was fixed.
 - An editor issue in NumberRangeSpec was fixed that also prevented adding a precision to a number type.
+- A layouting issue with the class EndCell was fixed.
 
 ## April 2024
 

@@ -18,6 +18,7 @@ plugins {
     id 'base'
     id 'maven-publish'
     id "com.github.breadmoirai.github-release" version "2.4.1"
+    id "org.cyclonedx.bom" version "1.8.2"
 }
 
 ext.dependencyRepositories = [
@@ -73,6 +74,11 @@ if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
     ext.mbeddrVersionSelector = mbeddrVersion
 }
 
+// Project group
+group = 'org.iets3'
+
+// Project name cannot be defined here, see settings.gradle#rootProject.name instead
+// name = 'opensource'
 
 // Project version
 if (project.hasProperty('iets3OpenSourceVersion')) {
@@ -327,6 +333,27 @@ static def addDependency(Object pom, Configuration config) {
 
 }
 
+ext.additionalPomInfo = {
+    licenses {
+        // official SPDX identifier
+        // see https://spdx.org/licenses/ for list
+        license {
+            name = "Apache-2.0"
+            url = "https://www.apache.org/licenses/LICENSE-2.0"
+            comments = "Apache License Version 2.0"
+            distribution = "repo"
+        }
+    }
+    organization {
+        name = "itemis AG"
+        url = "https://www.itemis.com"
+    }
+    scm {
+        tag = GitBasedVersioning.getGitCommitHash()
+        url = "https://github.com/IETS3/iets3.opensource"
+    }
+}
+
 publishing {
     repositories {
         maven {
@@ -353,20 +380,23 @@ publishing {
     }
 
     publications {
-        openSource(MavenPublication) {
-            groupId 'org.iets3'
-            artifactId 'opensource'
+        opensource(MavenPublication) {
+            groupId group
+            artifactId name
             artifact packageLanguages
 
             addDependency(pom, configurations.languageLibs)
+
+            pom additionalPomInfo
         }
 
         tests(MavenPublication) {
             groupId 'org.iets3.opensource'
             artifactId 'tests'
             artifact packageTests
-
             addDependency(pom, 'org.iets3', 'opensource', project.version, 'zip')
+
+            pom additionalPomInfo
         }
 
         def runtimesDir = new File(artifactsDir, 'org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os')
@@ -466,4 +496,19 @@ githubRelease {
 
 tasks.named('githubRelease').configure {
   dependsOn packageDistroWithDependencies
+}
+
+cyclonedxBom {
+    // SBOM destination directory
+    destination = file("build/reports")
+    // The file name for the generated SBOMs (before the file format suffix)
+    outputName = "sbom"
+    // The file format generated, can be xml, json or all for generating both
+    outputFormat = "json"
+    // Don't include license texts in generated SBOMs
+    includeLicenseText = false
+}
+
+assemble {
+    dependsOn('cyclonedxBom')
 }
