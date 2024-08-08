@@ -413,6 +413,8 @@ publishing {
                 builtBy buildLanguages
                 classifier 'sources'
             }
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.simpleTypes.runtime'(MavenPublication) {
@@ -428,6 +430,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.datetime.runtime'(MavenPublication) {
@@ -442,6 +446,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.temporal.runtime'(MavenPublication) {
@@ -456,6 +462,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.datetime', 'datetime-runtime', project.version)
+
+            pom additionalPomInfo
         }
     }
 }
