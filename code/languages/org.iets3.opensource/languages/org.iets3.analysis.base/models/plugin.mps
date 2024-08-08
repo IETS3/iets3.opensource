@@ -498,8 +498,6 @@
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
-      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -4463,39 +4461,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1KiZHYfblZr" role="3cqZAp">
-          <node concept="3cpWsn" id="1KiZHYfblZs" role="3cpWs9">
-            <property role="TrG5h" value="model" />
-            <node concept="H_c77" id="1KiZHYfavc8" role="1tU5fm" />
-            <node concept="2OqwBi" id="1KiZHYfc2jM" role="33vP2m">
-              <node concept="2YIFZM" id="1KiZHYfbUlN" role="2Oq$k0">
-                <ref role="37wK5l" to="33ny:~Optional.ofNullable(java.lang.Object)" resolve="ofNullable" />
-                <ref role="1Pybhc" to="33ny:~Optional" resolve="Optional" />
-                <node concept="2OqwBi" id="1KiZHYfblZt" role="37wK5m">
-                  <node concept="37vLTw" id="1KiZHYfblZu" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4t0fbsdpkez" resolve="solvable" />
-                  </node>
-                  <node concept="I4A8Y" id="1KiZHYfblZv" role="2OqNvi" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1KiZHYfc80C" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Optional.orElse(java.lang.Object)" resolve="orElse" />
-                <node concept="2OqwBi" id="1KiZHYfcCgd" role="37wK5m">
-                  <node concept="2OqwBi" id="1KiZHYfctvI" role="2Oq$k0">
-                    <node concept="2OqwBi" id="1KiZHYfcjG0" role="2Oq$k0">
-                      <node concept="37vLTw" id="1KiZHYfceD$" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4t0fbsdpkez" resolve="solvable" />
-                      </node>
-                      <node concept="2yIwOk" id="1KiZHYfco8O" role="2OqNvi" />
-                    </node>
-                    <node concept="FGMqu" id="1KiZHYfcy3N" role="2OqNvi" />
-                  </node>
-                  <node concept="I4A8Y" id="1KiZHYfcJF2" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="4t0fbsdpkeC" role="3cqZAp">
           <node concept="3cpWsn" id="4t0fbsdpkeD" role="3cpWs9">
             <property role="TrG5h" value="repository" />
@@ -4507,8 +4472,11 @@
                 <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
               </node>
               <node concept="2JrnkZ" id="7DfYVnp9Ds6" role="2Oq$k0">
-                <node concept="37vLTw" id="1KiZHYfblZw" role="2JrQYb">
-                  <ref role="3cqZAo" node="1KiZHYfblZs" resolve="model" />
+                <node concept="2OqwBi" id="7DfYVnp9_R_" role="2JrQYb">
+                  <node concept="37vLTw" id="4t0fbsdpkeI" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4t0fbsdpkez" resolve="solvable" />
+                  </node>
+                  <node concept="I4A8Y" id="7DfYVnp9BzZ" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -7736,35 +7704,14 @@
             <node concept="3uibUv" id="2E$J0GolDHK" role="1tU5fm">
               <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
             </node>
-            <node concept="2OqwBi" id="5UWHomOvX_4" role="33vP2m">
-              <node concept="2YIFZM" id="5UWHomOvWIs" role="2Oq$k0">
-                <ref role="37wK5l" to="33ny:~Optional.ofNullable(java.lang.Object)" resolve="ofNullable" />
-                <ref role="1Pybhc" to="33ny:~Optional" resolve="Optional" />
-                <node concept="2OqwBi" id="2E$J0GolDIN" role="37wK5m">
-                  <node concept="2JrnkZ" id="2E$J0GolDIO" role="2Oq$k0">
-                    <node concept="37vLTw" id="2E$J0GolDIP" role="2JrQYb">
-                      <ref role="3cqZAo" node="121_t0FbAui" resolve="solvable" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="2E$J0GolDIQ" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
-                  </node>
+            <node concept="2OqwBi" id="2E$J0GolDIN" role="33vP2m">
+              <node concept="2JrnkZ" id="2E$J0GolDIO" role="2Oq$k0">
+                <node concept="37vLTw" id="2E$J0GolDIP" role="2JrQYb">
+                  <ref role="3cqZAo" node="121_t0FbAui" resolve="solvable" />
                 </node>
               </node>
-              <node concept="liA8E" id="5UWHomOvYRJ" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Optional.orElse(java.lang.Object)" resolve="orElse" />
-                <node concept="2OqwBi" id="5UWHomOw3Q9" role="37wK5m">
-                  <node concept="2OqwBi" id="5UWHomOw2nS" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5UWHomOw168" role="2Oq$k0">
-                      <node concept="37vLTw" id="5UWHomOw0dr" role="2Oq$k0">
-                        <ref role="3cqZAo" node="121_t0FbAui" resolve="solvable" />
-                      </node>
-                      <node concept="2yIwOk" id="5UWHomOw1OY" role="2OqNvi" />
-                    </node>
-                    <node concept="FGMqu" id="5UWHomOw3e6" role="2OqNvi" />
-                  </node>
-                  <node concept="I4A8Y" id="5UWHomOw4OV" role="2OqNvi" />
-                </node>
+              <node concept="liA8E" id="2E$J0GolDIQ" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
               </node>
             </node>
           </node>
