@@ -1606,6 +1606,13 @@
         <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
       </node>
     </node>
+    <node concept="312cEg" id="2BYqfe8oBaY" role="jymVt">
+      <property role="TrG5h" value="repository" />
+      <node concept="3Tm6S6" id="2BYqfe8oBaZ" role="1B3o_S" />
+      <node concept="3uibUv" id="2BYqfe8oBb0" role="1tU5fm">
+        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+      </node>
+    </node>
     <node concept="312cEg" id="7oh4VnTmNrI" role="jymVt">
       <property role="TrG5h" value="messageNode" />
       <node concept="3Tm6S6" id="7oh4VnTmK4j" role="1B3o_S" />
@@ -1624,6 +1631,19 @@
               <node concept="Xjq3P" id="2BYqfe8oBba" role="2Oq$k0" />
               <node concept="2OwXpG" id="2BYqfe8oBbb" role="2OqNvi">
                 <ref role="2Oxat5" node="2BYqfe8oBaV" resolve="st" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BYqfe8oBbc" role="3cqZAp">
+          <node concept="37vLTI" id="2BYqfe8oBbd" role="3clFbG">
+            <node concept="37vLTw" id="2BYqfe8oBbe" role="37vLTx">
+              <ref role="3cqZAo" node="2BYqfe8oBbl" resolve="r" />
+            </node>
+            <node concept="2OqwBi" id="2BYqfe8oBbf" role="37vLTJ">
+              <node concept="Xjq3P" id="2BYqfe8oBbg" role="2Oq$k0" />
+              <node concept="2OwXpG" id="2BYqfe8oBbh" role="2OqNvi">
+                <ref role="2Oxat5" node="2BYqfe8oBaY" resolve="repository" />
               </node>
             </node>
           </node>
@@ -1649,6 +1669,12 @@
           <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
         </node>
       </node>
+      <node concept="37vLTG" id="2BYqfe8oBbl" role="3clF46">
+        <property role="TrG5h" value="r" />
+        <node concept="3uibUv" id="2BYqfe8oBbm" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="7oh4VnTmIra" role="3clF46">
         <property role="TrG5h" value="messageNode" />
         <node concept="3Tqbb2" id="7oh4VnTmIFz" role="1tU5fm" />
@@ -1665,6 +1691,12 @@
             <ref role="zr_51" node="2BYqfe8oBbj" resolve="st" />
           </node>
         </node>
+        <node concept="TUZQ0" id="3NwcubmfHs1" role="3nqlJM">
+          <property role="TUZQ4" value="a repositotry used for starting the write action" />
+          <node concept="zr_55" id="3NwcubmfHs3" role="zr_5Q">
+            <ref role="zr_51" node="2BYqfe8oBbl" resolve="r" />
+          </node>
+        </node>
         <node concept="TUZQ0" id="3NwcubmfHs4" role="3nqlJM">
           <property role="TUZQ4" value="the node where general messages of the solver are highlighted (i.e. general solver failures)" />
           <node concept="zr_55" id="3NwcubmfHs6" role="zr_5Q">
@@ -1673,6 +1705,7 @@
         </node>
       </node>
     </node>
+    <node concept="3Tm1VV" id="2BYqfe8oBbn" role="1B3o_S" />
     <node concept="3uibUv" id="2BYqfe8oBbo" role="EKbjA">
       <ref role="3uigEE" to="82uw:~Supplier" resolve="Supplier" />
       <node concept="3uibUv" id="2BYqfe8oBbp" role="11_B2D">
@@ -4278,6 +4311,7 @@
                   <node concept="37vLTw" id="5BRQP3Sax$g" role="37wK5m">
                     <ref role="3cqZAo" node="4t0fbsdpkeM" resolve="st" />
                   </node>
+                  <node concept="10Nm6u" id="4rs70qOAuwF" role="37wK5m" />
                   <node concept="2OqwBi" id="5BRQP3Sax$i" role="37wK5m">
                     <node concept="37vLTw" id="5BRQP3Sax$j" role="2Oq$k0">
                       <ref role="3cqZAo" node="4t0fbsdpkez" resolve="solvable" />
@@ -4559,6 +4593,7 @@
   <node concept="312cEu" id="2f_Mi5n8FVl">
     <property role="TrG5h" value="SolverReportItem" />
     <property role="3GE5qa" value="AsyncISolvable" />
+    <node concept="3Tm1VV" id="2f_Mi5n8FVm" role="1B3o_S" />
     <node concept="3uibUv" id="2f_Mi5n8Gsd" role="1zkMxy">
       <ref role="3uigEE" to="d6hs:~NodeReportItemBase" resolve="NodeReportItemBase" />
     </node>
@@ -4763,6 +4798,7 @@
     </node>
     <node concept="2tJIrI" id="3K_gMq6RgTa" role="jymVt" />
     <node concept="2tJIrI" id="3K_gMq6RgVp" role="jymVt" />
+    <node concept="3Tm1VV" id="2f_Mi5n7Nep" role="1B3o_S" />
     <node concept="3uibUv" id="2f_Mi5n7NWO" role="1zkMxy">
       <ref role="3uigEE" to="n70j:~BaseEditorChecker" resolve="BaseEditorChecker" />
     </node>
@@ -5429,6 +5465,7 @@
       <node concept="3Tm1VV" id="7S7fpHXZFFi" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="7S7fpHXZAQr" role="jymVt" />
+    <node concept="3Tm1VV" id="7S7fpHXZlVK" role="1B3o_S" />
     <node concept="3UR2Jj" id="5BRQP3SaNlT" role="lGtFl">
       <node concept="TZ5HA" id="5BRQP3SaNlU" role="TZ5H$">
         <node concept="1dT_AC" id="5BRQP3SaNlV" role="1dT_Ay">
@@ -7039,6 +7076,7 @@
     </node>
     <node concept="2tJIrI" id="1ssmHrA8W6Q" role="jymVt" />
     <node concept="2tJIrI" id="6celbXwLMMe" role="jymVt" />
+    <node concept="3Tm1VV" id="2f_Mi5mXmsD" role="1B3o_S" />
     <node concept="3clFb_" id="6celbXwLNaj" role="jymVt">
       <property role="TrG5h" value="hashCode" />
       <node concept="3Tm1VV" id="6celbXwLNak" role="1B3o_S" />
@@ -8258,6 +8296,7 @@
       </node>
       <node concept="3Tm1VV" id="4a_JiLno_lc" role="1B3o_S" />
     </node>
+    <node concept="3Tm1VV" id="4a_JiLnoyxP" role="1B3o_S" />
     <node concept="3UR2Jj" id="5BRQP3SaRMd" role="lGtFl">
       <node concept="TZ5HA" id="5BRQP3SaRMe" role="TZ5H$">
         <node concept="1dT_AC" id="5BRQP3SaRMf" role="1dT_Ay">
