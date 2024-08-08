@@ -270,6 +270,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -691,6 +692,17 @@
             </node>
             <node concept="3clFbT" id="cwnBfE0FNP" role="37wK5m">
               <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="5_3OixJG9d7" role="37wK5m">
+              <node concept="2JrnkZ" id="5_3OixJG8Ye" role="2Oq$k0">
+                <node concept="2OqwBi" id="5_3OixJG897" role="2JrQYb">
+                  <node concept="13iPFW" id="5_3OixJG7N_" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="5_3OixJG8AD" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5_3OixJG9_X" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+              </node>
             </node>
           </node>
         </node>
@@ -1395,6 +1407,17 @@
             </node>
             <node concept="3clFbT" id="cwnBfE0G29" role="37wK5m">
               <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="5_3OixJG9VJ" role="37wK5m">
+              <node concept="2JrnkZ" id="5_3OixJG9VK" role="2Oq$k0">
+                <node concept="2OqwBi" id="5_3OixJG9VL" role="2JrQYb">
+                  <node concept="13iPFW" id="5_3OixJG9VM" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="5_3OixJG9VN" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5_3OixJG9VO" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+              </node>
             </node>
           </node>
         </node>
