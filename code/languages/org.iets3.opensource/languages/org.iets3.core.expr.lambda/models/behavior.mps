@@ -31,6 +31,8 @@
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="sxpq" ref="r:51edfe99-0380-475c-a3e9-1d4425eac12f(org.iets3.core.expr.lambda.plugin)" />
+    <import index="webo" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text.html(JDK/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -90,6 +92,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
+        <child id="1081256993305" name="classType" index="2ZW6by" />
+        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -98,6 +104,10 @@
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -610,6 +620,62 @@
         <node concept="3Tqbb2" id="6NpHfQ5Cb7u" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="6NpHfQ5Cb7v" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3u8VfJfplfS" role="13h7CS">
+      <property role="TrG5h" value="getMap" />
+      <node concept="3Tm1VV" id="3u8VfJfplfT" role="1B3o_S" />
+      <node concept="3rvAFt" id="3u8VfJfpqwp" role="3clF45">
+        <node concept="3Tqbb2" id="3u8VfJfpqBG" role="3rvQeY" />
+        <node concept="3Tqbb2" id="3u8VfJfpqFf" role="3rvSg0" />
+      </node>
+      <node concept="3clFbS" id="3u8VfJfplfV" role="3clF47">
+        <node concept="3clFbJ" id="3u8VfJfpsNd" role="3cqZAp">
+          <node concept="3clFbS" id="3u8VfJfpsNf" role="3clFbx">
+            <node concept="3cpWs6" id="3u8VfJfpxjr" role="3cqZAp">
+              <node concept="10QFUN" id="3u8VfJfpwac" role="3cqZAk">
+                <node concept="3rvAFt" id="3u8VfJfpwhk" role="10QFUM">
+                  <node concept="3Tqbb2" id="3u8VfJfpwnX" role="3rvQeY" />
+                  <node concept="3Tqbb2" id="3u8VfJfpwwv" role="3rvSg0" />
+                </node>
+                <node concept="1eOMI4" id="3u8VfJfpw0_" role="10QFUP">
+                  <node concept="2OqwBi" id="3u8VfJfprtZ" role="1eOMHV">
+                    <node concept="2JrnkZ" id="3u8VfJfpr_H" role="2Oq$k0">
+                      <node concept="13iPFW" id="3u8VfJfpGfx" role="2JrQYb" />
+                    </node>
+                    <node concept="liA8E" id="3u8VfJfprU6" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                      <node concept="10M0yZ" id="3u8VfJfps64" role="37wK5m">
+                        <ref role="3cqZAo" to="sxpq:6ITtBskT0za" resolve="USER_OBJECT_KEY" />
+                        <ref role="1PxDUh" to="sxpq:$yb$20f$a5" resolve="LambdaValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="3u8VfJfptdT" role="3clFbw">
+            <node concept="2OqwBi" id="3u8VfJfpsYt" role="2ZW6bz">
+              <node concept="2JrnkZ" id="3u8VfJfpsYu" role="2Oq$k0">
+                <node concept="13iPFW" id="3u8VfJfpFOV" role="2JrQYb" />
+              </node>
+              <node concept="liA8E" id="3u8VfJfpsYw" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                <node concept="10M0yZ" id="3u8VfJfpsYx" role="37wK5m">
+                  <ref role="3cqZAo" to="sxpq:6ITtBskT0za" resolve="USER_OBJECT_KEY" />
+                  <ref role="1PxDUh" to="sxpq:$yb$20f$a5" resolve="LambdaValue" />
+                </node>
+              </node>
+            </node>
+            <node concept="3uibUv" id="3u8VfJfvFDa" role="2ZW6by">
+              <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3u8VfJfpy7y" role="3cqZAp">
+          <node concept="10Nm6u" id="3u8VfJfpyjR" role="3cqZAk" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="6zmBjqUkS0K">
