@@ -437,9 +437,6 @@
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
-      <concept id="8255774724000586868" name="org.iets3.core.expr.tests.structure.ReportTestItem" flags="ng" index="2F9BGE">
-        <child id="543569365052056267" name="actual" index="_fkuZ" />
-      </concept>
       <concept id="4173623957598806325" name="org.iets3.core.expr.tests.structure.TestItemVectorCollection" flags="ng" index="1jlL7l" />
       <concept id="4173623957598806298" name="org.iets3.core.expr.tests.structure.VectorTestItem" flags="ng" index="1jlL7U">
         <child id="4173623957599346846" name="subject" index="1jbP1Y" />
@@ -21920,124 +21917,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="_iOnU" id="1UBuAPXA6VE">
-    <property role="TrG5h" value="TestSuiteUsingCommented" />
-    <node concept="2zPypq" id="1UBuAPXA6Vi" role="_iOnB">
-      <property role="TrG5h" value="commented_enum" />
-      <node concept="5mhuz" id="1UBuAPXA6Vw" role="2zPyp_">
-        <ref role="5mhpJ" node="4QQXQNDkZhv" resolve="B" />
-        <node concept="7CXmI" id="1UBuAPXA6V8" role="lGtFl">
-          <node concept="39XrGg" id="1UBuAPXA6Vc" role="7EUXB">
-            <node concept="2u4KIi" id="1UBuAPXA6Ve" role="39rjcI">
-              <ref role="39XzEq" to="9dqq:67Y8mp$DO6l" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2zPypq" id="1UBuAPXA6Vm" role="_iOnB">
-      <property role="TrG5h" value="commented_data" />
-      <node concept="1QScDb" id="1UBuAPXA6Vq" role="2zPyp_">
-        <node concept="3CgUdp" id="1UBuAPXA6Vs" role="1QScD9">
-          <ref role="3CgUW3" node="4QQXQNDkZi5" resolve="keyB" />
-        </node>
-        <node concept="3Ch18X" id="1UBuAPXA6Vu" role="30czhm">
-          <ref role="3Ch1V_" node="4QQXQNDkZhT" resolve="data_imp" />
-          <node concept="7CXmI" id="1UBuAPXA6VF" role="lGtFl">
-            <node concept="39XrGg" id="1UBuAPXA6VC" role="7EUXB">
-              <node concept="2u4KIi" id="1UBuAPXA6VH" role="39rjcI">
-                <ref role="39XzEq" to="j68y:cPLa7Fswqh" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="_ixoA" id="1UBuAPXA6Vg" role="_iOnB" />
-    <node concept="_fkuM" id="1UBuAPXA6Vo" role="_iOnB">
-      <property role="TrG5h" value="test_case_using_commented_stuff" />
-      <node concept="2F9BGE" id="1UBuAPXA6VJ" role="_fkp5">
-        <node concept="30cPrO" id="1UBuAPXA6VP" role="_fkuZ">
-          <node concept="_emDc" id="1UBuAPXA6Vy" role="30dEsF">
-            <ref role="_emDf" node="4QQXQNDl37m" resolve="ref_enum_imp" />
-          </node>
-          <node concept="_emDc" id="1UBuAPXA6V$" role="30dEs_">
-            <ref role="_emDf" node="1UBuAPXA6Vi" resolve="commented_enum" />
-          </node>
-        </node>
-      </node>
-      <node concept="2F9BGE" id="1UBuAPXA6VN" role="_fkp5">
-        <node concept="30cPrO" id="1UBuAPXA6Va" role="_fkuZ">
-          <node concept="_emDc" id="1UBuAPXA6VA" role="30dEsF">
-            <ref role="_emDf" node="4QQXQNDl37r" resolve="ref_data_imp" />
-          </node>
-          <node concept="_emDc" id="1UBuAPXA6Vk" role="30dEs_">
-            <ref role="_emDf" node="1UBuAPXA6Vm" resolve="commented_data" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="_ixoA" id="1UBuAPXA6VL" role="_iOnB" />
-  </node>
-  <node concept="_iOnU" id="230lIJVQWI">
-    <property role="TrG5h" value="TestSuiteUsingCommented" />
-    <node concept="2zPypq" id="230lIJWjRd" role="_iOnB">
-      <property role="TrG5h" value="commented_enum" />
-      <node concept="5mhuz" id="230lIJW3UB" role="2zPyp_">
-        <ref role="5mhpJ" node="4QQXQNDkZhv" resolve="B" />
-        <node concept="7CXmI" id="230lIJW3UC" role="lGtFl">
-          <node concept="39XrGg" id="230lIJW3UD" role="7EUXB">
-            <node concept="2u4KIi" id="230lIJW3UE" role="39rjcI">
-              <ref role="39XzEq" to="9dqq:67Y8mp$DO6l" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2zPypq" id="230lIJWjXG" role="_iOnB">
-      <property role="TrG5h" value="commented_data" />
-      <node concept="1QScDb" id="230lIJWbE2" role="2zPyp_">
-        <node concept="3CgUdp" id="230lIJWbE3" role="1QScD9">
-          <ref role="3CgUW3" node="4QQXQNDkZi5" resolve="keyB" />
-        </node>
-        <node concept="3Ch18X" id="230lIJWbE4" role="30czhm">
-          <ref role="3Ch1V_" node="4QQXQNDkZhT" resolve="data_imp" />
-          <node concept="7CXmI" id="230lIJWbGL" role="lGtFl">
-            <node concept="39XrGg" id="230lIJWbOK" role="7EUXB">
-              <node concept="2u4KIi" id="230lIJWbOL" role="39rjcI">
-                <ref role="39XzEq" to="j68y:cPLa7Fswqh" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="_ixoA" id="230lIJWjQa" role="_iOnB" />
-    <node concept="_fkuM" id="230lIJVR1g" role="_iOnB">
-      <property role="TrG5h" value="test_case_using_commented_stuff" />
-      <node concept="2F9BGE" id="230lIJWbwM" role="_fkp5">
-        <node concept="30cPrO" id="230lIJW3Ul" role="_fkuZ">
-          <node concept="_emDc" id="230lIJVR1A" role="30dEsF">
-            <ref role="_emDf" node="4QQXQNDl37m" resolve="ref_enum_imp" />
-          </node>
-          <node concept="_emDc" id="230lIJWjTs" role="30dEs_">
-            <ref role="_emDf" node="230lIJWjRd" resolve="commented_enum" />
-          </node>
-        </node>
-      </node>
-      <node concept="2F9BGE" id="230lIJWbCO" role="_fkp5">
-        <node concept="30cPrO" id="230lIJWbDC" role="_fkuZ">
-          <node concept="_emDc" id="230lIJWbDu" role="30dEsF">
-            <ref role="_emDf" node="4QQXQNDl37r" resolve="ref_data_imp" />
-          </node>
-          <node concept="_emDc" id="230lIJWk1d" role="30dEs_">
-            <ref role="_emDf" node="230lIJWjXG" resolve="commented_data" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="_ixoA" id="230lIJVR1c" role="_iOnB" />
   </node>
 </model>
 
