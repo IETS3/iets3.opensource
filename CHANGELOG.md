@@ -9,8 +9,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
-- TraceExplorer can decorate editors of lambda nodes with their values. 
-
+- The performance of error type propagation (especially in relation to type tags) was improved.
+- TraceExplorer can decorate editors of lambda nodes with their values.
 ## July 2024
 
 ### Added
