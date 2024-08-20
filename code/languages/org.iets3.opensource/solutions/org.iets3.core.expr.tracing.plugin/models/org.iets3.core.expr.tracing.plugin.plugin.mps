@@ -7591,7 +7591,7 @@
           <node concept="3cpWsn" id="7SbG$tCPlHo" role="3cpWs9">
             <property role="TrG5h" value="state" />
             <node concept="3uibUv" id="7SbG$tCPlHm" role="1tU5fm">
-              <ref role="3uigEE" to="zwau:~ConceptEditorHintSettingsComponent$HintsState" resolve="HintsState" />
+              <ref role="3uigEE" to="zwau:~ConceptEditorHintSettingsComponent$HintsState" resolve="ConceptEditorHintSettingsComponent.HintsState" />
             </node>
             <node concept="2OqwBi" id="7SbG$tCPlHp" role="33vP2m">
               <node concept="37vLTw" id="7SbG$tCPlHq" role="2Oq$k0">
