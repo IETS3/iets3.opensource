@@ -11,6 +11,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - TraceExplorer can decorate editors of lambda nodes with their values. 
 - The code completion of the new unit language was improved.
+- The performance of error type propagation (especially in relation to type tags) was improved.
 
 ## July 2024
 
