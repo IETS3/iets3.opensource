@@ -2860,6 +2860,10 @@
   <node concept="1lH9Xt" id="7iQqdOBdOo$">
     <property role="TrG5h" value="LeastCommonSuperTypesWithUnits" />
     <node concept="1qefOq" id="7iQqdOBegTi" role="1SKRRt">
+      <node concept="15s5l7" id="7L68ksb2mgO" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: The different types \&quot;number[1|5.7]{1}&lt;SIUnits.kg&gt;, number[-5|3.34]{2}&lt;SIUnits.cd&gt;\&quot; are incompatible. Only types with same unit are compatible.&quot;;FLAVOUR_RULE_ID=&quot;[r:42a3bc53-29b1-44d6-9767-7c921cef7ba0(org.iets3.core.expr.typetags.typesystem)/7718893141589771813]&quot;;" />
+        <property role="huDt6" value="Error: The different types &quot;number[1|5.7]{1}&lt;SIUnits.kg&gt;, number[-5|3.34]{2}&lt;SIUnits.cd&gt;&quot; are incompatible. Only types with same unit are compatible." />
+      </node>
       <node concept="15s5l7" id="x6NxUzrkGa" role="lGtFl">
         <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node '(instance of JoinType)' cannot be child of node '(instance of OptionType)'&quot;;FLAVOUR_RULE_ID=&quot;[r:9750d418-880f-460d-9880-d67dd111722d(org.iets3.core.expr.base.constraints)/6095949300264944903]&quot;;" />
         <property role="huDt6" value="Node '(instance of JoinType)' cannot be child of node '(instance of OptionType)'" />
