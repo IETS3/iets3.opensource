@@ -7,6 +7,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## August 2024
 
+### Added
+
+- The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
+
 ### Fixed
 
 - The performance of error type propagation (especially in relation to type tags) was improved.
