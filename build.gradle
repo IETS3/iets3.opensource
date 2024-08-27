@@ -40,7 +40,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '17.0.6-b653.34'
+    jbrVersion = '17.0.8.1-b1000.32'
 }
 
 // detect if we are in a CI build
@@ -53,13 +53,13 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
-def major = "2022"
-def minor = "3"
+def major = "2023"
+def minor = "2"
 
 // Dependency versions
-ext.mpsVersion = '2022.3.1'
+ext.mpsVersion = '2023.2.1'
 
-def mbeddrVersion = "2022.3+"
+def mbeddrVersion = "2023.2+"
 
 def mpsQAVersion = major + "." + minor
 
@@ -413,6 +413,8 @@ publishing {
                 builtBy buildLanguages
                 classifier 'sources'
             }
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.simpleTypes.runtime'(MavenPublication) {
@@ -428,6 +430,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.datetime.runtime'(MavenPublication) {
@@ -442,6 +446,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.temporal.runtime'(MavenPublication) {
@@ -456,6 +462,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.datetime', 'datetime-runtime', project.version)
+
+            pom additionalPomInfo
         }
     }
 }
