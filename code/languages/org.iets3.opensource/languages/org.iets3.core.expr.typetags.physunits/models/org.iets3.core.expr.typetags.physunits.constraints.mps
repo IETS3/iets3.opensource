@@ -15,6 +15,11 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" />
     <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)" />
+    <import index="65nr" ref="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
+    <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="qlm2" ref="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)" implicit="true" />
@@ -51,6 +56,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -644,6 +650,47 @@
   <node concept="1M2fIO" id="1KUmgSFvSuo">
     <property role="3GE5qa" value="definition.unit" />
     <ref role="1M2myG" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
+    <node concept="EnEH3" id="3xwfj1iseUc" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="3xwfj1ivqJx" role="EtsB7">
+        <node concept="3clFbS" id="3xwfj1ivqJy" role="2VODD2">
+          <node concept="3clFbJ" id="7amkF1KMrHA" role="3cqZAp">
+            <node concept="3clFbS" id="7amkF1KMrHC" role="3clFbx">
+              <node concept="3cpWs6" id="7amkF1KMtPH" role="3cqZAp">
+                <node concept="2OqwBi" id="3xwfj1ivyIG" role="3cqZAk">
+                  <node concept="2YIFZM" id="3xwfj1ivyvg" role="2Oq$k0">
+                    <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="3xwfj1ivySq" role="2OqNvi">
+                    <ref role="37wK5l" to="65nr:3xwfj1imT4h" resolve="getUnitLessUnitName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="17R0WA" id="7amkF1KMtFP" role="3clFbw">
+              <node concept="Xl_RD" id="7amkF1KMtIz" role="3uHU7w">
+                <property role="Xl_RC" value="unitless" />
+              </node>
+              <node concept="2OqwBi" id="7amkF1KMsaW" role="3uHU7B">
+                <node concept="EsrRn" id="7amkF1KMrIt" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7amkF1KMsMI" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="3xwfj1ivz4w" role="3cqZAp">
+            <node concept="2OqwBi" id="3xwfj1ivAwP" role="3cqZAk">
+              <node concept="EsrRn" id="3xwfj1ivzaR" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3xwfj1ivB96" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1N5Pfh" id="1KUmgSFvSup" role="1Mr941">
       <ref role="1N5Vy1" to="i3ya:1KUmgSFpwWq" resolve="quantity" />
       <node concept="3dgokm" id="1KUmgSFvSut" role="1N6uqs">

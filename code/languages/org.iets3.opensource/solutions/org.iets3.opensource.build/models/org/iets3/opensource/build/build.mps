@@ -2436,6 +2436,16 @@
             <ref role="3bR37D" node="44TucI396gt" resolve="org.iets3.core.expr.base.interpreter" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3xwfj1iIO1s" role="3bR37C">
+          <node concept="3bR9La" id="3xwfj1iIO1t" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3xwfj1iIO1u" role="3bR37C">
+          <node concept="3bR9La" id="3xwfj1iIO1v" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="_I$tx9JvQU" role="2G$12L">
         <property role="BnDLt" value="true" />
