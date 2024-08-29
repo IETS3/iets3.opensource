@@ -40,7 +40,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '17.0.6-b469.82'
+    jbrVersion = '17.0.6-b653.34'
 }
 
 // detect if we are in a CI build
@@ -54,13 +54,12 @@ if (project.hasProperty("forceCI")) {
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 def major = "2022"
-def minor = "2"
+def minor = "3"
 
 // Dependency versions
-ext.mpsVersion = '2022.2.3'
-
-def mbeddrVersion = "2022.2+"
+ext.mpsVersion = '2022.3.1'
 def mpsQAVersion = "$major.$minor+"
+def mbeddrVersion = "2022.3+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can

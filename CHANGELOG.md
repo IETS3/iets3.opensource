@@ -12,13 +12,21 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
 
 ### Fixed
+=======
 
+- The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
+
+### Fixed
+
+- TraceExplorer can decorate editors of lambda nodes with their values. 
+- The code completion of the new unit language was improved.
 - The performance of error type propagation (especially in relation to type tags) was improved.
-- TraceExplorer can decorate editors of lambda nodes with their values.
+
 ## July 2024
 
 ### Added
 
+- Gradle dependency licenses scanning enabled via custom [sbom-utility](https://github.com/CycloneDX/sbom-utility) feature
 - Tuple types now support a new method `nTimes` to ease initialization of long tuples.
 
 ### Fixed
@@ -39,7 +47,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 - Reduction rule for EnumLiterals can now also be applied for subconcepts
 
-## May 2024
+## June 2024
 
 ### Added
 
