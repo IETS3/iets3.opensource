@@ -46,6 +46,9 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="2323553266850475941" name="jetbrains.mps.baseLanguage.structure.IHasModifiers" flags="ng" index="2frcj7">
+        <child id="2323553266850475953" name="modifiers" index="2frcjj" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
@@ -58,6 +61,7 @@
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
+      <concept id="4678410916365116210" name="jetbrains.mps.baseLanguage.structure.DefaultModifier" flags="ng" index="2JFqV2" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -944,6 +948,27 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3wrpJuqrQ2f" role="jymVt" />
+    <node concept="3clFb_" id="3xwfj1imT4h" role="jymVt">
+      <property role="TrG5h" value="getUnitLessUnitName" />
+      <node concept="3clFbS" id="3xwfj1imT4i" role="3clF47">
+        <node concept="3clFbF" id="3xwfj1iEUKU" role="3cqZAp">
+          <node concept="Xl_RD" id="3xwfj1iEUKT" role="3clFbG">
+            <property role="Xl_RC" value="unitless" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3xwfj1imT4j" role="1B3o_S" />
+      <node concept="17QB3L" id="3xwfj1imT4k" role="3clF45" />
+      <node concept="P$JXv" id="3xwfj1imT4l" role="lGtFl">
+        <node concept="TZ5HA" id="3xwfj1imT4m" role="TZ5H$">
+          <node concept="1dT_AC" id="3xwfj1imT4n" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the name used for the unspecified dimension in the UI." />
+          </node>
+        </node>
+      </node>
+      <node concept="2JFqV2" id="3xwfj1iEU_N" role="2frcjj" />
+    </node>
+    <node concept="2tJIrI" id="3xwfj1imSXs" role="jymVt" />
     <node concept="3clFb_" id="3wrpJuqrQh9" role="jymVt">
       <property role="TrG5h" value="implicitConversionIsEnabled" />
       <node concept="3clFbS" id="3wrpJuqrQhc" role="3clF47" />

@@ -7417,13 +7417,13 @@
                   <ref role="1Pybhc" to="jpm3:5U8d23Q17BS" resolve="EditorUpdater" />
                   <ref role="37wK5l" to="jpm3:5U8d23Q18RH" resolve="updateEditors" />
                   <node concept="2OqwBi" id="1ZCJf$ei97H" role="37wK5m">
+                    <node concept="liA8E" id="1ZCJf$eia65" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
+                    </node>
                     <node concept="2JrnkZ" id="1ZCJf$ei97M" role="2Oq$k0">
                       <node concept="37vLTw" id="1ZCJf$ei8c0" role="2JrQYb">
                         <ref role="3cqZAo" node="1ZCJf$ehGT4" resolve="mappedNode" />
                       </node>
-                    </node>
-                    <node concept="liA8E" id="1ZCJf$eia65" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="5U8d23Q1hxT" role="37wK5m">
@@ -7591,7 +7591,7 @@
           <node concept="3cpWsn" id="7SbG$tCPlHo" role="3cpWs9">
             <property role="TrG5h" value="state" />
             <node concept="3uibUv" id="7SbG$tCPlHm" role="1tU5fm">
-              <ref role="3uigEE" to="zwau:~ConceptEditorHintSettingsComponent$HintsState" resolve="HintsState" />
+              <ref role="3uigEE" to="zwau:~ConceptEditorHintSettingsComponent$HintsState" resolve="ConceptEditorHintSettingsComponent.HintsState" />
             </node>
             <node concept="2OqwBi" id="7SbG$tCPlHp" role="33vP2m">
               <node concept="37vLTw" id="7SbG$tCPlHq" role="2Oq$k0">

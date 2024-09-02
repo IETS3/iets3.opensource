@@ -7,10 +7,14 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## August 2024
 
+### Added
+
+- The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
+
 ### Fixed
 
-- TraceExplorer can decorate editors of lambda nodes with their values. 
-
+- The performance of error type propagation (especially in relation to type tags) was improved.
+- TraceExplorer can decorate editors of lambda nodes with their values.
 ## July 2024
 
 ### Added
