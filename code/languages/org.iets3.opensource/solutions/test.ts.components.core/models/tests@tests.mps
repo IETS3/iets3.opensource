@@ -207,7 +207,7 @@
         <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
         <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
         <child id="738815095926774816" name="portLayouts" index="1pap1a" />
       </concept>
       <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
