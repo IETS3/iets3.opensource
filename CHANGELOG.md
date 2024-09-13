@@ -9,7 +9,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixes
 
-- Then precision for number types is now derived from the infinite parts of the range when possible.
+- Then precision for number types is now only derived from the finite bounds of the range. The precision of number[-∞|∞] is now 0.
 
 ## August 2024
 
