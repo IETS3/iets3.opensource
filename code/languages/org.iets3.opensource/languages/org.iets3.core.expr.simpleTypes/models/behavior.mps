@@ -3816,6 +3816,25 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="2WP$sH_bc2L" role="3cqZAp" />
+            <node concept="3clFbJ" id="2WP$sH_bg7a" role="3cqZAp">
+              <node concept="3clFbS" id="2WP$sH_bg7c" role="3clFbx">
+                <node concept="3cpWs6" id="2WP$sH_bp0f" role="3cqZAp">
+                  <node concept="3cmrfG" id="2WP$sH_bKv_" role="3cqZAk">
+                    <property role="3cmrfH" value="-1" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="2WP$sH_blBV" role="3clFbw">
+                <node concept="BsUDl" id="2WP$sH_bnu7" role="3uHU7w">
+                  <ref role="37wK5l" node="2NHHcg2D9Nd" resolve="isPositiveInfinity" />
+                </node>
+                <node concept="BsUDl" id="2WP$sH_bjNG" role="3uHU7B">
+                  <ref role="37wK5l" node="2NHHcg2Dg5B" resolve="isNegativeInfinity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2WP$sH_beEw" role="3cqZAp" />
             <node concept="3clFbJ" id="59R2joRGKln" role="3cqZAp">
               <node concept="3clFbS" id="59R2joRGKlp" role="3clFbx">
                 <node concept="3cpWs6" id="59R2joRH4Mt" role="3cqZAp">
