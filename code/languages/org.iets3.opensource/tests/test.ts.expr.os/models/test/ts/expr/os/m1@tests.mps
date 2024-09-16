@@ -5837,6 +5837,9 @@
               <property role="2gteSR" value="-∞" />
               <property role="2gteSE" value="∞" />
             </node>
+            <node concept="2gteS_" id="2WP$sH_g2GQ" role="2gteVg">
+              <property role="2gteVv" value="0" />
+            </node>
           </node>
         </node>
         <node concept="1aga60" id="12X4Ue62jtM" role="_iOnC">
@@ -5866,6 +5869,9 @@
             <node concept="2gteSX" id="12X4Ue62jtW" role="2gteSx">
               <property role="2gteSR" value="-∞" />
               <property role="2gteSE" value="∞" />
+            </node>
+            <node concept="2gteS_" id="2WP$sH_g2JD" role="2gteVg">
+              <property role="2gteVv" value="0" />
             </node>
           </node>
         </node>
