@@ -7,9 +7,13 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 # September 2024
 
-### Fixes
+### Fixed
 
 - Then precision for number types is now only derived from the finite bounds of the range. The precision of `number[-∞|∞]` is the same as of `number` which is 0.
+
+### Added
+
+- The extension point `IUnitLangConfig` has a new method useSlashInsteadOfDivisionSymbol that allows to replace the "÷" character in unit names with the more common "/" character.
 
 ## August 2024
 

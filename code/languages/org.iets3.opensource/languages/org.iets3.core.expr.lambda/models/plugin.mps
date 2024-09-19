@@ -363,7 +363,7 @@
                 <ref role="3cqZAo" node="$yb$20fE4t" resolve="le" />
               </node>
               <node concept="2qgKlT" id="3u8VfJfq6pn" role="2OqNvi">
-                <ref role="37wK5l" to="5s8v:3u8VfJfplfS" resolve="getMap" />
+                <ref role="37wK5l" to="5s8v:3u8VfJfplfS" resolve="getNodeMapping" />
               </node>
             </node>
             <node concept="37vLTw" id="3u8VfJfq07l" role="37vLTJ">
@@ -392,7 +392,7 @@
                   <ref role="3cqZAo" node="$yb$20fE4t" resolve="le" />
                 </node>
                 <node concept="2qgKlT" id="1ZCJf$ejg$k" role="2OqNvi">
-                  <ref role="37wK5l" to="5s8v:1ZCJf$ej28Z" resolve="putMap" />
+                  <ref role="37wK5l" to="5s8v:1ZCJf$ej28Z" resolve="putNodeMapping" />
                   <node concept="37vLTw" id="1ZCJf$ejhqU" role="37wK5m">
                     <ref role="3cqZAo" node="dsAFRk0GB0" resolve="mapping" />
                   </node>
