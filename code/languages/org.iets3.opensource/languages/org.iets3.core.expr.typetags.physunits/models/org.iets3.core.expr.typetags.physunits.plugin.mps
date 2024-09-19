@@ -55,7 +55,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
@@ -104,7 +104,7 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -152,7 +152,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -169,7 +169,7 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
@@ -355,7 +355,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -967,6 +967,25 @@
         </node>
       </node>
       <node concept="2JFqV2" id="3xwfj1iEU_N" role="2frcjj" />
+    </node>
+    <node concept="2tJIrI" id="7YLtdEiElzJ" role="jymVt" />
+    <node concept="3clFb_" id="7YLtdEiEmwu" role="jymVt">
+      <property role="TrG5h" value="useSlashInsteadOfDivisionSymbol" />
+      <node concept="3clFbS" id="7YLtdEiEmwx" role="3clF47">
+        <node concept="3clFbF" id="7YLtdEiEmXl" role="3cqZAp">
+          <node concept="3clFbT" id="7YLtdEiEmXk" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7YLtdEiEmwy" role="1B3o_S" />
+      <node concept="10P_77" id="7YLtdEiEmfA" role="3clF45" />
+      <node concept="2JFqV2" id="7YLtdEiElLB" role="2frcjj" />
+      <node concept="P$JXv" id="7YLtdEiEn2X" role="lGtFl">
+        <node concept="TZ5HA" id="7YLtdEiEn2Y" role="TZ5H$">
+          <node concept="1dT_AC" id="7YLtdEiEn2Z" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if &quot;/&quot; should be used in unit names instead of &quot;÷&quot;" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3xwfj1imSXs" role="jymVt" />
     <node concept="3clFb_" id="3wrpJuqrQh9" role="jymVt">
