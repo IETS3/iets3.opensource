@@ -22196,7 +22196,7 @@
                 <property role="1XhdNS" value="⁰" />
               </node>
               <node concept="37vLTw" id="TXgXqenLB8" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
           </node>
@@ -22211,7 +22211,7 @@
                 <property role="1XhdNS" value="¹" />
               </node>
               <node concept="37vLTw" id="TXgXqenLBf" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
           </node>
@@ -22226,7 +22226,7 @@
                 <property role="1XhdNS" value="²" />
               </node>
               <node concept="37vLTw" id="TXgXqenLBm" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
           </node>
@@ -22241,7 +22241,7 @@
                 <property role="1XhdNS" value="³" />
               </node>
               <node concept="37vLTw" id="TXgXqenLBt" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
           </node>
@@ -22256,7 +22256,7 @@
                 <property role="1XhdNS" value="⁴" />
               </node>
               <node concept="37vLTw" id="TXgXqenLB$" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
           </node>
@@ -22271,7 +22271,7 @@
                 <property role="1XhdNS" value="⁵" />
               </node>
               <node concept="37vLTw" id="TXgXqenLBF" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
           </node>
@@ -22286,7 +22286,7 @@
                 <property role="1XhdNS" value="⁶" />
               </node>
               <node concept="37vLTw" id="TXgXqenLBM" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
           </node>
@@ -22301,7 +22301,7 @@
                 <property role="1XhdNS" value="⁷" />
               </node>
               <node concept="37vLTw" id="TXgXqenLBT" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
           </node>
@@ -22316,7 +22316,7 @@
                 <property role="1XhdNS" value="⁸" />
               </node>
               <node concept="37vLTw" id="TXgXqenLC0" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
           </node>
@@ -22331,7 +22331,7 @@
                 <property role="1XhdNS" value="⁹" />
               </node>
               <node concept="37vLTw" id="TXgXqenLC7" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
           </node>
@@ -22660,7 +22660,7 @@
                 <property role="1XhdNS" value="ᵅ" />
               </node>
               <node concept="37vLTw" id="TXgXqenLCe" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
             <node concept="2YIFZM" id="TXgXqeY2ak" role="37vLTx">
@@ -22679,7 +22679,7 @@
                 <property role="1XhdNS" value="ᵝ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXh4O" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
             <node concept="2YIFZM" id="TXgXqeYiWd" role="37vLTx">
@@ -22698,7 +22698,7 @@
                 <property role="1XhdNS" value="ᵞ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXhZO" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
             <node concept="2YIFZM" id="TXgXqeYsUc" role="37vLTx">
@@ -22717,7 +22717,7 @@
                 <property role="1XhdNS" value="ᵟ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXim$" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
               </node>
             </node>
             <node concept="2YIFZM" id="TXgXqeYAQ1" role="37vLTx">
@@ -22859,7 +22859,7 @@
                 <property role="1XhdNS" value="₀" />
               </node>
               <node concept="37vLTw" id="TXgXqeWXnc" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZQAt" role="37vLTx">
@@ -22874,7 +22874,7 @@
                 <property role="1XhdNS" value="₁" />
               </node>
               <node concept="37vLTw" id="TXgXqeWYqM" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZQDb" role="37vLTx">
@@ -22889,7 +22889,7 @@
                 <property role="1XhdNS" value="₂" />
               </node>
               <node concept="37vLTw" id="TXgXqeWYBH" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZQFT" role="37vLTx">
@@ -22904,7 +22904,7 @@
                 <property role="1XhdNS" value="₃" />
               </node>
               <node concept="37vLTw" id="TXgXqeWZjO" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZQHM" role="37vLTx">
@@ -22919,7 +22919,7 @@
                 <property role="1XhdNS" value="₄" />
               </node>
               <node concept="37vLTw" id="TXgXqeWZk0" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZQKw" role="37vLTx">
@@ -22934,7 +22934,7 @@
                 <property role="1XhdNS" value="₅" />
               </node>
               <node concept="37vLTw" id="TXgXqeWZLj" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZQNe" role="37vLTx">
@@ -22949,7 +22949,7 @@
                 <property role="1XhdNS" value="₆" />
               </node>
               <node concept="37vLTw" id="TXgXqeWZXm" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZQPW" role="37vLTx">
@@ -22964,7 +22964,7 @@
                 <property role="1XhdNS" value="₇" />
               </node>
               <node concept="37vLTw" id="TXgXqeWZXy" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZR5y" role="37vLTx">
@@ -22979,7 +22979,7 @@
                 <property role="1XhdNS" value="₈" />
               </node>
               <node concept="37vLTw" id="TXgXqeX0au" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZR8g" role="37vLTx">
@@ -22994,7 +22994,7 @@
                 <property role="1XhdNS" value="₉" />
               </node>
               <node concept="37vLTw" id="TXgXqeX0mS" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZRaY" role="37vLTx">
@@ -23040,7 +23040,7 @@
                 <property role="1XhdNS" value="ₐ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXbwX" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZRLC" role="37vLTx">
@@ -23055,7 +23055,7 @@
                 <property role="1XhdNS" value="ₑ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXc3f" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZRNx" role="37vLTx">
@@ -23070,7 +23070,7 @@
                 <property role="1XhdNS" value="ₕ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXc3r" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZRPq" role="37vLTx">
@@ -23085,7 +23085,7 @@
                 <property role="1XhdNS" value="ᵢ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXc3B" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZRRj" role="37vLTx">
@@ -23100,7 +23100,7 @@
                 <property role="1XhdNS" value="ⱼ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXc3N" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZRTc" role="37vLTx">
@@ -23115,7 +23115,7 @@
                 <property role="1XhdNS" value="ₖ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXc3Z" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZRV5" role="37vLTx">
@@ -23130,7 +23130,7 @@
                 <property role="1XhdNS" value="ₗ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXcXb" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZRWY" role="37vLTx">
@@ -23145,7 +23145,7 @@
                 <property role="1XhdNS" value="ₘ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXdbY" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZRYR" role="37vLTx">
@@ -23160,7 +23160,7 @@
                 <property role="1XhdNS" value="ₙ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXdca" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZS0K" role="37vLTx">
@@ -23175,7 +23175,7 @@
                 <property role="1XhdNS" value="ₒ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXdcm" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZS2D" role="37vLTx">
@@ -23190,7 +23190,7 @@
                 <property role="1XhdNS" value="ₚ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXdcy" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZS4y" role="37vLTx">
@@ -23205,7 +23205,7 @@
                 <property role="1XhdNS" value="ᵣ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXdcI" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZS6r" role="37vLTx">
@@ -23220,7 +23220,7 @@
                 <property role="1XhdNS" value="ₛ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXdcU" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZS8k" role="37vLTx">
@@ -23235,7 +23235,7 @@
                 <property role="1XhdNS" value="ₜ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXdd6" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZSad" role="37vLTx">
@@ -23250,7 +23250,7 @@
                 <property role="1XhdNS" value="ᵤ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXddi" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZSc6" role="37vLTx">
@@ -23265,7 +23265,7 @@
                 <property role="1XhdNS" value="ᵥ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXddu" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZSdZ" role="37vLTx">
@@ -23280,7 +23280,7 @@
                 <property role="1XhdNS" value="ₓ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXddE" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="Xl_RD" id="TXgXqeZSfS" role="37vLTx">
@@ -23295,7 +23295,7 @@
                 <property role="1XhdNS" value="ᵦ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXddQ" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="2YIFZM" id="TXgXqeZZ4_" role="37vLTx">
@@ -23314,7 +23314,7 @@
                 <property role="1XhdNS" value="ᵧ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXde2" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="2YIFZM" id="TXgXqf092Q" role="37vLTx">
@@ -23333,7 +23333,7 @@
                 <property role="1XhdNS" value="ᵨ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXdee" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="2YIFZM" id="TXgXqf0iYX" role="37vLTx">
@@ -23352,7 +23352,7 @@
                 <property role="1XhdNS" value="ᵩ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXdeq" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="2YIFZM" id="TXgXqf0sV7" role="37vLTx">
@@ -23371,7 +23371,7 @@
                 <property role="1XhdNS" value="ᵪ" />
               </node>
               <node concept="37vLTw" id="TXgXqeXdn$" role="3ElQJh">
-                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptNumberMapping" />
+                <ref role="3cqZAo" node="TXgXqeWVSs" resolve="subScriptMapping" />
               </node>
             </node>
             <node concept="2YIFZM" id="TXgXqf0ARj" role="37vLTx">
@@ -23394,7 +23394,7 @@
                 <property role="Xl_RC" value="÷" />
               </node>
               <node concept="37vLTw" id="TXgXqd59w2" role="3ElQJh">
-                <ref role="3cqZAo" node="WySbq1M6uf" resolve="nameReplacements" />
+                <ref role="3cqZAo" node="WySbq1M6uf" resolve="specialReplacements" />
               </node>
             </node>
           </node>
@@ -23407,7 +23407,7 @@
                 <property role="Xl_RC" value="⋅" />
               </node>
               <node concept="37vLTw" id="TXgXqd59w8" role="3ElQJh">
-                <ref role="3cqZAo" node="WySbq1M6uf" resolve="nameReplacements" />
+                <ref role="3cqZAo" node="WySbq1M6uf" resolve="specialReplacements" />
               </node>
             </node>
           </node>
@@ -23422,7 +23422,7 @@
                 <property role="Xl_RC" value="μ" />
               </node>
               <node concept="37vLTw" id="TXgXqd778u" role="3ElQJh">
-                <ref role="3cqZAo" node="WySbq1M6uf" resolve="nameReplacements" />
+                <ref role="3cqZAo" node="WySbq1M6uf" resolve="specialReplacements" />
               </node>
             </node>
           </node>
@@ -23437,7 +23437,7 @@
                 <property role="Xl_RC" value="µ" />
               </node>
               <node concept="37vLTw" id="TXgXqd7d6m" role="3ElQJh">
-                <ref role="3cqZAo" node="WySbq1M6uf" resolve="nameReplacements" />
+                <ref role="3cqZAo" node="WySbq1M6uf" resolve="specialReplacements" />
               </node>
             </node>
           </node>
@@ -23593,7 +23593,7 @@
                           <ref role="3cqZAo" node="TXgXqelo4L" resolve="c" />
                         </node>
                         <node concept="37vLTw" id="TXgXqelurX" role="3ElQJh">
-                          <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                          <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
                         </node>
                       </node>
                     </node>
@@ -23602,7 +23602,7 @@
               </node>
               <node concept="2OqwBi" id="TXgXqelrJS" role="3clFbw">
                 <node concept="37vLTw" id="TXgXqelrlx" role="2Oq$k0">
-                  <ref role="3cqZAo" node="TXgXqekvbx" resolve="numberMapping" />
+                  <ref role="3cqZAo" node="TXgXqekvbx" resolve="superScriptMapping" />
                 </node>
                 <node concept="2Nt0df" id="TXgXqelso5" role="2OqNvi">
                   <node concept="37vLTw" id="TXgXqelsuX" role="38cxEo">
@@ -23740,13 +23740,13 @@
                       <node concept="37vLTI" id="TXgXqf0Mr3" role="3clFbG">
                         <node concept="3clFbT" id="TXgXqf0Mr4" role="37vLTx" />
                         <node concept="37vLTw" id="TXgXqf0Mr5" role="37vLTJ">
-                          <ref role="3cqZAo" node="TXgXqf0MqC" resolve="needsCaret" />
+                          <ref role="3cqZAo" node="TXgXqf0MqC" resolve="needsUnderScore" />
                         </node>
                       </node>
                     </node>
                   </node>
                   <node concept="37vLTw" id="TXgXqf0Mr6" role="3clFbw">
-                    <ref role="3cqZAo" node="TXgXqf0MqC" resolve="needsCaret" />
+                    <ref role="3cqZAo" node="TXgXqf0MqC" resolve="needsUnderScore" />
                   </node>
                 </node>
                 <node concept="3clFbF" id="TXgXqf0Mr7" role="3cqZAp">
@@ -23855,7 +23855,7 @@
               </node>
               <node concept="Rm8GO" id="TXgXqfDWje" role="37wK5m">
                 <ref role="Rm8GQ" to="25x5:~Normalizer$Form.NFD" resolve="NFD" />
-                <ref role="1Px2BO" to="25x5:~Normalizer$Form" resolve="Form" />
+                <ref role="1Px2BO" to="25x5:~Normalizer$Form" resolve="Normalizer.Form" />
               </node>
             </node>
             <node concept="liA8E" id="TXgXqfDYlB" role="2OqNvi">
@@ -23886,7 +23886,7 @@
             <property role="TrG5h" value="result" />
             <node concept="17QB3L" id="3txiG6nDahr" role="1tU5fm" />
             <node concept="1rXfSq" id="TXgXqfE1yW" role="33vP2m">
-              <ref role="37wK5l" node="TXgXqfDTRo" resolve="replaceSpecialCharacters" />
+              <ref role="37wK5l" node="TXgXqfDTRo" resolve="removeAccents" />
               <node concept="2YIFZM" id="TXgXqdIWul" role="37wK5m">
                 <ref role="37wK5l" node="TXgXqdzCxH" resolve="toGreeklish" />
                 <ref role="1Pybhc" node="TXgXqdzCkF" resolve="Greeklish" />
@@ -23943,7 +23943,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="TXgXqd59wk" role="2Oq$k0">
-              <ref role="3cqZAo" node="WySbq1M6uf" resolve="nameReplacements" />
+              <ref role="3cqZAo" node="WySbq1M6uf" resolve="specialReplacements" />
             </node>
           </node>
         </node>
