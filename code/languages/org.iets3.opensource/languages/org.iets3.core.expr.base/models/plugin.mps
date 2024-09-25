@@ -1230,7 +1230,20 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="2q0DACtJfgT" role="jymVt" />
+    <node concept="2tJIrI" id="5Ys_ngSn6GE" role="jymVt" />
+    <node concept="3clFb_" id="5Ys_ngSn72Q" role="jymVt">
+      <property role="TrG5h" value="allowHexadecimalNumbers" />
+      <node concept="3clFbS" id="5Ys_ngSn72R" role="3clF47">
+        <node concept="3clFbF" id="5Ys_ngSn9YX" role="3cqZAp">
+          <node concept="3clFbT" id="5Ys_ngSn9YW" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5Ys_ngSn72W" role="1B3o_S" />
+      <node concept="10P_77" id="5Ys_ngSn72X" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="5Ys_ngSn6GF" role="jymVt" />
     <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
   </node>
   <node concept="vrV6u" id="WieAE6FJqt">

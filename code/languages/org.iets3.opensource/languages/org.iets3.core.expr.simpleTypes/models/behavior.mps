@@ -9,6 +9,8 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,7 +25,15 @@
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -737,6 +747,41 @@
       <node concept="37vLTG" id="4rZeNQ6OgzZ" role="3clF46">
         <property role="TrG5h" value="val" />
         <node concept="17QB3L" id="4rZeNQ6OgzY" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5Ys_ngSnFbJ" role="13h7CS">
+      <property role="TrG5h" value="isValidNumber" />
+      <node concept="3Tm1VV" id="5Ys_ngSnFbK" role="1B3o_S" />
+      <node concept="10P_77" id="5Ys_ngSnFc3" role="3clF45" />
+      <node concept="3clFbS" id="5Ys_ngSnFbM" role="3clF47">
+        <node concept="3clFbF" id="5Ys_ngSnKpl" role="3cqZAp">
+          <node concept="22lmx$" id="5Ys_ngSnL6C" role="3clFbG">
+            <node concept="BsUDl" id="5Ys_ngSnL8a" role="3uHU7w">
+              <ref role="37wK5l" node="4rZeNQ6Og7j" resolve="isReal" />
+              <node concept="37vLTw" id="5Ys_ngSnL9u" role="37wK5m">
+                <ref role="3cqZAo" node="5Ys_ngSnFdA" resolve="val" />
+              </node>
+            </node>
+            <node concept="22lmx$" id="5Ys_ngSnKYw" role="3uHU7B">
+              <node concept="BsUDl" id="5Ys_ngSnKpk" role="3uHU7B">
+                <ref role="37wK5l" node="4rZeNQ6OfoS" resolve="isZero" />
+                <node concept="37vLTw" id="5Ys_ngSnL0n" role="37wK5m">
+                  <ref role="3cqZAo" node="5Ys_ngSnFdA" resolve="val" />
+                </node>
+              </node>
+              <node concept="BsUDl" id="5Ys_ngSnKZr" role="3uHU7w">
+                <ref role="37wK5l" node="4rZeNQ6Og4r" resolve="isInteger" />
+                <node concept="37vLTw" id="5Ys_ngSnL5w" role="37wK5m">
+                  <ref role="3cqZAo" node="5Ys_ngSnFdA" resolve="val" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5Ys_ngSnFdA" role="3clF46">
+        <property role="TrG5h" value="val" />
+        <node concept="17QB3L" id="5Ys_ngSnFd_" role="1tU5fm" />
       </node>
     </node>
     <node concept="13i0hz" id="uGVYUijgRw" role="13h7CS">

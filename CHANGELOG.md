@@ -14,6 +14,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - The extension point `IUnitLangConfig` has a new method useSlashInsteadOfDivisionSymbol that allows to replace the "÷" character in unit names with the more common "/" character.
+- Number literals, collection size specifications and number range specifications now support entering numbers in hexadecimal format. This feature can be deactived through PrimitiveTypeMapper#allowHexadecimalNumbers.
+- Collection size and number range specifications now initialize with an infinite range by default. Setting the min and max field therefore is equal to setting them to infinity.
 
 ## August 2024
 
