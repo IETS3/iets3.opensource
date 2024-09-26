@@ -2019,7 +2019,7 @@
             <ref role="CIi3I" node="3xM68GMigWr" resolve="m" />
           </node>
           <node concept="CIsvn" id="70JbBC7emSa" role="wW812">
-            <ref role="CIi3I" node="6EvkZrMO9va" resolve="V/m" />
+            <ref role="CIi3I" node="6EvkZrMO9va" resolve="V÷m" />
           </node>
         </node>
       </node>

@@ -221,8 +221,8 @@
       <property role="TrG5h" value="d" />
       <node concept="30bXRB" id="6UIgoJyLHru" role="2zPyp_">
         <property role="30bXRw" value="255" />
-        <node concept="1BKJs_" id="6UIgoJyLHI5" role="lGtFl">
-          <property role="1BKJsB" value="0xFF" />
+        <node concept="1BKJs_" id="5g$$9d75T3y" role="lGtFl">
+          <property role="1BKJsB" value="0xff" />
           <property role="1ZkCLY" value="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
           <property role="1ZkyNJ" value="5115872837157054173" />
         </node>
