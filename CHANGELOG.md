@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Then precision for number types is now only derived from the finite bounds of the range. The precision of `number[-∞|∞]` is the same as of `number` which is 0.
+- Tuple types where all elements have the same type can now be used interchangeable with list types.
 
 ### Added
 
