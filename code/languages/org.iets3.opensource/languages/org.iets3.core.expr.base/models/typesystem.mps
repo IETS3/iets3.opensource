@@ -354,6 +354,7 @@
       <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
         <property id="1206359757216" name="checkOnly" index="3wDh2S" />
+        <child id="1180447237840" name="errorString" index="3o8Qv2" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
         <child id="1174662598553" name="nodeToCheck" index="1ZmcU8" />
@@ -6895,6 +6896,31 @@
                     </node>
                     <node concept="2qgKlT" id="5aHkq2w8ZPP" role="2OqNvi">
                       <ref role="37wK5l" to="pbu6:5aHkq2w4m8L" resolve="getNodeFromWhichToDeriveType" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="ZYPG76weuL" role="3o8Qv2">
+                    <node concept="1YBJjd" id="ZYPG76weld" role="2Oq$k0">
+                      <ref role="1YBMHb" node="5aHkq2w4PM6" resolve="iot" />
+                    </node>
+                    <node concept="2qgKlT" id="ZYPG76wf3K" role="2OqNvi">
+                      <ref role="37wK5l" to="pbu6:ZYPG76w9Fc" resolve="getErrorMessage" />
+                      <node concept="2OqwBi" id="ZYPG76wfk0" role="37wK5m">
+                        <node concept="1YBJjd" id="ZYPG76wf8f" role="2Oq$k0">
+                          <ref role="1YBMHb" node="5aHkq2w4PM6" resolve="iot" />
+                        </node>
+                        <node concept="3TrEf2" id="ZYPG76wg9h" role="2OqNvi">
+                          <ref role="3Tt5mk" to="hm2y:69zaTr1EKHX" resolve="type" />
+                        </node>
+                      </node>
+                      <node concept="1PxgMI" id="ZYPG76wgE7" role="37wK5m">
+                        <property role="1BlNFB" value="true" />
+                        <node concept="chp4Y" id="ZYPG76wgHc" role="3oSUPX">
+                          <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                        </node>
+                        <node concept="2X3wrD" id="ZYPG76wgfp" role="1m5AlR">
+                          <ref role="2X3Bk0" node="46cplYwOkUY" resolve="sub" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

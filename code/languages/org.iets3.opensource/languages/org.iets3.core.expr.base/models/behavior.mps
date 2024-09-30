@@ -436,6 +436,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -7702,6 +7703,47 @@
       </node>
       <node concept="A3Dl8" id="Om1N8VbyAH" role="3clF45">
         <node concept="3Tqbb2" id="Om1N8VbyAI" role="A3Ik2" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="ZYPG76w9Fc" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getErrorMessage" />
+      <node concept="3Tm1VV" id="ZYPG76w9Fd" role="1B3o_S" />
+      <node concept="17QB3L" id="ZYPG76w9OB" role="3clF45" />
+      <node concept="3clFbS" id="ZYPG76w9Ff" role="3clF47">
+        <node concept="3clFbF" id="ZYPG76Liks" role="3cqZAp">
+          <node concept="2YIFZM" id="ZYPG76LilO" role="3clFbG">
+            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+            <node concept="Xl_RD" id="ZYPG76LisT" role="37wK5m">
+              <property role="Xl_RC" value="expected ‹%s› but found ‹%s" />
+            </node>
+            <node concept="2OqwBi" id="ZYPG76Ljll" role="37wK5m">
+              <node concept="37vLTw" id="ZYPG76LiZG" role="2Oq$k0">
+                <ref role="3cqZAo" node="ZYPG76w9Y2" resolve="expectedType" />
+              </node>
+              <node concept="2Iv5rx" id="ZYPG76Lj_n" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="ZYPG76Lkf1" role="37wK5m">
+              <node concept="37vLTw" id="ZYPG76LjWj" role="2Oq$k0">
+                <ref role="3cqZAo" node="ZYPG76wazA" resolve="actualType" />
+              </node>
+              <node concept="2Iv5rx" id="ZYPG76Lk_X" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="ZYPG76w9Y2" role="3clF46">
+        <property role="TrG5h" value="expectedType" />
+        <node concept="3Tqbb2" id="ZYPG76w9Y1" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="ZYPG76wazA" role="3clF46">
+        <property role="TrG5h" value="actualType" />
+        <node concept="3Tqbb2" id="ZYPG76waHy" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
       </node>
     </node>
   </node>
