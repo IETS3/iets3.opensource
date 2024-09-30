@@ -2243,5 +2243,9 @@
       <ref role="PrY4T" node="25rRV02oe$f" resolve="ITupleOp" />
     </node>
   </node>
+  <node concept="PlHQZ" id="3eH6BL2TJIw">
+    <property role="EcuMT" value="3723661587905969056" />
+    <property role="TrG5h" value="IAssignable" />
+  </node>
 </model>
 
