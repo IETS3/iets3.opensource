@@ -3240,7 +3240,7 @@
     <node concept="3EZMnI" id="S$tO8ocnjq" role="2wV5jI">
       <node concept="2iRfu4" id="S$tO8ocnjr" role="2iSdaV" />
       <node concept="3F0ifn" id="S$tO8ocnjn" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
+        <property role="3F0ifm" value="(" />
         <node concept="11LMrY" id="S$tO8ocnmb" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3262,7 +3262,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="S$tO8ocnmj" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
+        <property role="3F0ifm" value=")" />
         <node concept="11L4FC" id="S$tO8ocnnF" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3275,7 +3275,7 @@
     <node concept="3EZMnI" id="S$tO8ocnpU" role="2wV5jI">
       <node concept="2iRfu4" id="S$tO8ocnpV" role="2iSdaV" />
       <node concept="3F0ifn" id="S$tO8ocnpR" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
+        <property role="3F0ifm" value="(" />
         <node concept="11LMrY" id="S$tO8ocnuh" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3292,7 +3292,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="S$tO8ocnr_" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
+        <property role="3F0ifm" value=")" />
         <node concept="11L4FC" id="S$tO8ocnsY" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
