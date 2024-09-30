@@ -127,9 +127,6 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -839,31 +836,6 @@
               </node>
             </node>
           </node>
-          <node concept="3cpWs8" id="68wLGjpEizP" role="3cqZAp">
-            <node concept="3cpWsn" id="68wLGjpEizQ" role="3cpWs9">
-              <property role="TrG5h" value="repository" />
-              <node concept="3uibUv" id="68wLGjpEizR" role="1tU5fm">
-                <ref role="3uigEE" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-              </node>
-              <node concept="2OqwBi" id="68wLGjpEizS" role="33vP2m">
-                <node concept="2OqwBi" id="68wLGjpEizT" role="2Oq$k0">
-                  <node concept="2YIFZM" id="68wLGjpEizU" role="2Oq$k0">
-                    <ref role="37wK5l" to="3a50:~MPSCoreComponents.getInstance()" resolve="getInstance" />
-                    <ref role="1Pybhc" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
-                  </node>
-                  <node concept="liA8E" id="68wLGjpEizV" role="2OqNvi">
-                    <ref role="37wK5l" to="3a50:~MPSCoreComponents.getPlatform()" resolve="getPlatform" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="68wLGjpEizW" role="2OqNvi">
-                  <ref role="37wK5l" to="wyuk:~ComponentHost.findComponent(java.lang.Class)" resolve="findComponent" />
-                  <node concept="3VsKOn" id="68wLGjpEizX" role="37wK5m">
-                    <ref role="3VsUkX" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="68wLGjpCHz_" role="3cqZAp">
             <node concept="3cpWsn" id="68wLGjpCHzA" role="3cpWs9">
               <property role="TrG5h" value="property" />
@@ -901,26 +873,24 @@
                     <node concept="37vLTw" id="68wLGjpCH8t" role="37wK5m">
                       <ref role="3cqZAo" node="68wLGjpCHzA" resolve="property" />
                     </node>
-                    <node concept="37vLTw" id="68wLGjpCH8u" role="37wK5m">
-                      <ref role="3cqZAo" node="68wLGjpEizQ" resolve="repository" />
-                    </node>
                   </node>
                 </node>
               </node>
             </node>
             <node concept="22lmx$" id="6Dm6IDqkI1l" role="3clFbw">
+              <node concept="2OqwBi" id="5R0SiiHcBLB" role="3uHU7w">
+                <node concept="1Wqviy" id="5R0SiiHcBcq" role="2Oq$k0" />
+                <node concept="liA8E" id="5R0SiiHcCg9" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                  <node concept="10M0yZ" id="5R0SiiHc$dY" role="37wK5m">
+                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                    <ref role="3cqZAo" to="oq0c:2NHHcg2FYHt" resolve="POSINF" />
+                  </node>
+                </node>
+              </node>
               <node concept="2OqwBi" id="6Dm6IDqkR4V" role="3uHU7B">
                 <node concept="1Wqviy" id="6Dm6IDqkI48" role="2Oq$k0" />
                 <node concept="17RlXB" id="6Dm6IDqkRwt" role="2OqNvi" />
-              </node>
-              <node concept="2OqwBi" id="3tudP___r2$" role="3uHU7w">
-                <node concept="1Wqviy" id="3tudP___qHm" role="2Oq$k0" />
-                <node concept="liA8E" id="3tudP___rtO" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                  <node concept="Xl_RD" id="3tudP___rtU" role="37wK5m">
-                    <property role="Xl_RC" value="inf" />
-                  </node>
-                </node>
               </node>
             </node>
             <node concept="9aQIb" id="6QsMU1GXAiS" role="9aQIa">
@@ -944,9 +914,6 @@
                       <node concept="37vLTw" id="68wLGjpCIeE" role="37wK5m">
                         <ref role="3cqZAo" node="68wLGjpCHzA" resolve="property" />
                       </node>
-                      <node concept="37vLTw" id="68wLGjpCIeF" role="37wK5m">
-                        <ref role="3cqZAo" node="68wLGjpEizQ" resolve="repository" />
-                      </node>
                     </node>
                   </node>
                 </node>
@@ -968,9 +935,6 @@
                           <ref role="3cqZAo" node="68wLGjpCHzA" resolve="property" />
                         </node>
                         <node concept="1Wqviy" id="6QsMU1GWX7r" role="37wK5m" />
-                        <node concept="37vLTw" id="6QsMU1GWX7s" role="37wK5m">
-                          <ref role="3cqZAo" node="68wLGjpEizQ" resolve="repository" />
-                        </node>
                       </node>
                     </node>
                   </node>
@@ -1135,31 +1099,6 @@
               </node>
             </node>
           </node>
-          <node concept="3cpWs8" id="68wLGjpu3zt" role="3cqZAp">
-            <node concept="3cpWsn" id="6UIgoJyHKrr" role="3cpWs9">
-              <property role="TrG5h" value="repository" />
-              <node concept="3uibUv" id="6UIgoJyHKlX" role="1tU5fm">
-                <ref role="3uigEE" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-              </node>
-              <node concept="2OqwBi" id="6UIgoJyHKrs" role="33vP2m">
-                <node concept="2OqwBi" id="6UIgoJyHKrt" role="2Oq$k0">
-                  <node concept="2YIFZM" id="6UIgoJyHKru" role="2Oq$k0">
-                    <ref role="37wK5l" to="3a50:~MPSCoreComponents.getInstance()" resolve="getInstance" />
-                    <ref role="1Pybhc" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
-                  </node>
-                  <node concept="liA8E" id="6UIgoJyHKrv" role="2OqNvi">
-                    <ref role="37wK5l" to="3a50:~MPSCoreComponents.getPlatform()" resolve="getPlatform" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="6UIgoJyHKrw" role="2OqNvi">
-                  <ref role="37wK5l" to="wyuk:~ComponentHost.findComponent(java.lang.Class)" resolve="findComponent" />
-                  <node concept="3VsKOn" id="6UIgoJyHKrx" role="37wK5m">
-                    <ref role="3VsUkX" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="68wLGjpu5ZX" role="3cqZAp">
             <node concept="3cpWsn" id="68wLGjpu5ZY" role="3cpWs9">
               <property role="TrG5h" value="property" />
@@ -1197,9 +1136,6 @@
                     <node concept="37vLTw" id="68wLGjpCGYp" role="37wK5m">
                       <ref role="3cqZAo" node="68wLGjpu5ZY" resolve="property" />
                     </node>
-                    <node concept="37vLTw" id="68wLGjp$OI1" role="37wK5m">
-                      <ref role="3cqZAo" node="6UIgoJyHKrr" resolve="repository" />
-                    </node>
                   </node>
                 </node>
               </node>
@@ -1236,9 +1172,6 @@
                           <ref role="3cqZAo" node="68wLGjpu5ZY" resolve="property" />
                         </node>
                         <node concept="1Wqviy" id="6QsMU1GXBKu" role="37wK5m" />
-                        <node concept="37vLTw" id="6QsMU1GXBKv" role="37wK5m">
-                          <ref role="3cqZAo" node="6UIgoJyHKrr" resolve="repository" />
-                        </node>
                       </node>
                     </node>
                   </node>
@@ -1303,9 +1236,6 @@
                       <ref role="37wK5l" to="pbu6:6UIgoJyGK__" resolve="removeHexValue" />
                       <node concept="37vLTw" id="68wLGjpu601" role="37wK5m">
                         <ref role="3cqZAo" node="68wLGjpu5ZY" resolve="property" />
-                      </node>
-                      <node concept="37vLTw" id="6UIgoJyGXsZ" role="37wK5m">
-                        <ref role="3cqZAo" node="6UIgoJyHKrr" resolve="repository" />
                       </node>
                     </node>
                   </node>

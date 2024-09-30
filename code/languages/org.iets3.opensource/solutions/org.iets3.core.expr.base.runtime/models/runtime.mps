@@ -3544,9 +3544,6 @@
                     <ref role="37wK5l" to="g51k:~PropertyAccessor.getProperty()" resolve="getProperty" />
                   </node>
                 </node>
-                <node concept="1rXfSq" id="6UIgoJyEqOv" role="37wK5m">
-                  <ref role="37wK5l" to="g51k:~PropertyAccessor.getRepository()" resolve="getRepository" />
-                </node>
               </node>
             </node>
           </node>

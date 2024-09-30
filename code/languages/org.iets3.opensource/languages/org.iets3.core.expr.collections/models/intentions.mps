@@ -10,14 +10,10 @@
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
-      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -27,7 +23,6 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -790,12 +785,6 @@
                     <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
                     <ref role="355D3u" to="700h:19PglA20qXK" resolve="max" />
                   </node>
-                  <node concept="2OqwBi" id="65S0ZNFKldM" role="37wK5m">
-                    <node concept="1XNTG" id="65S0ZNFKldN" role="2Oq$k0" />
-                    <node concept="liA8E" id="65S0ZNFKldO" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                    </node>
-                  </node>
                 </node>
               </node>
               <node concept="3x8VRR" id="65S0ZNFKldP" role="2OqNvi" />
@@ -821,12 +810,6 @@
                   <ref role="3TsBF5" to="700h:19PglA20qXK" resolve="max" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="65S0ZNFKle0" role="37wK5m">
-                <node concept="1XNTG" id="65S0ZNFKle1" role="2Oq$k0" />
-                <node concept="liA8E" id="65S0ZNFKle2" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -847,12 +830,6 @@
                 <node concept="355D3s" id="65S0ZNFKleb" role="37wK5m">
                   <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
                   <ref role="355D3u" to="700h:19PglA20qXK" resolve="max" />
-                </node>
-                <node concept="2OqwBi" id="65S0ZNFKlec" role="37wK5m">
-                  <node concept="1XNTG" id="65S0ZNFKled" role="2Oq$k0" />
-                  <node concept="liA8E" id="65S0ZNFKlee" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                  </node>
                 </node>
               </node>
             </node>
@@ -923,12 +900,6 @@
                     <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
                     <ref role="355D3u" to="700h:19PglA20qXJ" resolve="min" />
                   </node>
-                  <node concept="2OqwBi" id="65S0ZNFKd4H" role="37wK5m">
-                    <node concept="1XNTG" id="65S0ZNFKd4I" role="2Oq$k0" />
-                    <node concept="liA8E" id="65S0ZNFKd4J" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                    </node>
-                  </node>
                 </node>
               </node>
               <node concept="3x8VRR" id="65S0ZNFKd4K" role="2OqNvi" />
@@ -954,12 +925,6 @@
                   <ref role="3TsBF5" to="700h:19PglA20qXJ" resolve="min" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="65S0ZNFKkka" role="37wK5m">
-                <node concept="1XNTG" id="65S0ZNFKkkb" role="2Oq$k0" />
-                <node concept="liA8E" id="65S0ZNFKkkc" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -980,12 +945,6 @@
                 <node concept="355D3s" id="65S0ZNFKdTg" role="37wK5m">
                   <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
                   <ref role="355D3u" to="700h:19PglA20qXJ" resolve="min" />
-                </node>
-                <node concept="2OqwBi" id="65S0ZNFKdTh" role="37wK5m">
-                  <node concept="1XNTG" id="65S0ZNFKdTi" role="2Oq$k0" />
-                  <node concept="liA8E" id="65S0ZNFKdTj" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                  </node>
                 </node>
               </node>
             </node>

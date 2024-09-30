@@ -16,7 +16,6 @@
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -39,7 +38,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -1024,12 +1022,6 @@
                     <ref role="355D3t" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                     <ref role="355D3u" to="5qo5:4rZeNQ6Oert" resolve="value" />
                   </node>
-                  <node concept="2OqwBi" id="65S0ZNFGo0D" role="37wK5m">
-                    <node concept="1XNTG" id="65S0ZNFGnCt" role="2Oq$k0" />
-                    <node concept="liA8E" id="65S0ZNFGo8L" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                    </node>
-                  </node>
                 </node>
               </node>
               <node concept="3x8VRR" id="65S0ZNFGoyX" role="2OqNvi" />
@@ -1055,12 +1047,6 @@
                   <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="65S0ZNFGr5Z" role="37wK5m">
-                <node concept="1XNTG" id="65S0ZNFGr60" role="2Oq$k0" />
-                <node concept="liA8E" id="65S0ZNFGr61" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1081,12 +1067,6 @@
                 <node concept="355D3s" id="65S0ZNFIh5$" role="37wK5m">
                   <ref role="355D3t" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                   <ref role="355D3u" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                </node>
-                <node concept="2OqwBi" id="65S0ZNFIh5_" role="37wK5m">
-                  <node concept="1XNTG" id="65S0ZNFIh5A" role="2Oq$k0" />
-                  <node concept="liA8E" id="65S0ZNFIh5B" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                  </node>
                 </node>
               </node>
             </node>
@@ -1142,12 +1122,6 @@
                     <ref role="355D3t" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
                     <ref role="355D3u" to="5qo5:19PglA20qXJ" resolve="min" />
                   </node>
-                  <node concept="2OqwBi" id="65S0ZNFKd4H" role="37wK5m">
-                    <node concept="1XNTG" id="65S0ZNFKd4I" role="2Oq$k0" />
-                    <node concept="liA8E" id="65S0ZNFKd4J" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                    </node>
-                  </node>
                 </node>
               </node>
               <node concept="3x8VRR" id="65S0ZNFKd4K" role="2OqNvi" />
@@ -1173,12 +1147,6 @@
                   <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="65S0ZNFKkka" role="37wK5m">
-                <node concept="1XNTG" id="65S0ZNFKkkb" role="2Oq$k0" />
-                <node concept="liA8E" id="65S0ZNFKkkc" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1199,12 +1167,6 @@
                 <node concept="355D3s" id="65S0ZNFKdTg" role="37wK5m">
                   <ref role="355D3t" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
                   <ref role="355D3u" to="5qo5:19PglA20qXJ" resolve="min" />
-                </node>
-                <node concept="2OqwBi" id="65S0ZNFKdTh" role="37wK5m">
-                  <node concept="1XNTG" id="65S0ZNFKdTi" role="2Oq$k0" />
-                  <node concept="liA8E" id="65S0ZNFKdTj" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                  </node>
                 </node>
               </node>
             </node>
@@ -1275,12 +1237,6 @@
                     <ref role="355D3t" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
                     <ref role="355D3u" to="5qo5:19PglA20qXK" resolve="max" />
                   </node>
-                  <node concept="2OqwBi" id="65S0ZNFKldM" role="37wK5m">
-                    <node concept="1XNTG" id="65S0ZNFKldN" role="2Oq$k0" />
-                    <node concept="liA8E" id="65S0ZNFKldO" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                    </node>
-                  </node>
                 </node>
               </node>
               <node concept="3x8VRR" id="65S0ZNFKldP" role="2OqNvi" />
@@ -1306,12 +1262,6 @@
                   <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="65S0ZNFKle0" role="37wK5m">
-                <node concept="1XNTG" id="65S0ZNFKle1" role="2Oq$k0" />
-                <node concept="liA8E" id="65S0ZNFKle2" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1332,12 +1282,6 @@
                 <node concept="355D3s" id="65S0ZNFKleb" role="37wK5m">
                   <ref role="355D3t" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
                   <ref role="355D3u" to="5qo5:19PglA20qXK" resolve="max" />
-                </node>
-                <node concept="2OqwBi" id="65S0ZNFKlec" role="37wK5m">
-                  <node concept="1XNTG" id="65S0ZNFKled" role="2Oq$k0" />
-                  <node concept="liA8E" id="65S0ZNFKlee" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                  </node>
                 </node>
               </node>
             </node>
