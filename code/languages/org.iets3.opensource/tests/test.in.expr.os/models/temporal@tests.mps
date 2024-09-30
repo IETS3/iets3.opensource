@@ -179,7 +179,6 @@
         <child id="7849560302565679725" name="thenPart" index="39w5ZG" />
       </concept>
       <concept id="5955298286257997823" name="org.iets3.core.expr.base.structure.ColonCast" flags="ng" index="1LgZZ2">
-        <child id="5955298286257997833" name="type" index="1LgZ0O" />
         <child id="5955298286257997830" name="expr" index="1LgZ0V" />
       </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
@@ -3941,13 +3940,13 @@
         <node concept="1QScDb" id="6C2wkq7nYlK" role="_fkuS">
           <node concept="1LgZZ2" id="6C2wkq7o13U" role="30czhm">
             <property role="0Rz4W" value="-1045382878" />
-            <node concept="Ffn_D" id="6C2wkq7o15d" role="1LgZ0O">
-              <node concept="mLuIC" id="6C2wkq7o17p" role="Ffn_E" />
-            </node>
             <node concept="YnbI1" id="6C2wkq7nYlL" role="1LgZ0V">
               <node concept="30bXRB" id="6C2wkq7nYmV" role="YnbId">
                 <property role="30bXRw" value="0" />
               </node>
+            </node>
+            <node concept="Ffn_D" id="6C2wkq7o15d" role="2S399n">
+              <node concept="mLuIC" id="6C2wkq7o17p" role="Ffn_E" />
             </node>
           </node>
           <node concept="3Hitp_" id="6C2wkq7nYlN" role="1QScD9">
@@ -3985,13 +3984,13 @@
           <node concept="1QScDb" id="vVoQWC3Fvg" role="30czhm">
             <node concept="1LgZZ2" id="vVoQWC3Fvh" role="30czhm">
               <property role="0Rz4W" value="581304145" />
-              <node concept="Ffn_D" id="vVoQWC3Fvi" role="1LgZ0O">
-                <node concept="mLuIC" id="vVoQWC3Fvj" role="Ffn_E" />
-              </node>
               <node concept="YnbI1" id="vVoQWC3Fvk" role="1LgZ0V">
                 <node concept="30bXRB" id="vVoQWC3Fvl" role="YnbId">
                   <property role="30bXRw" value="0" />
                 </node>
+              </node>
+              <node concept="Ffn_D" id="vVoQWC3Fvi" role="2S399n">
+                <node concept="mLuIC" id="vVoQWC3Fvj" role="Ffn_E" />
               </node>
             </node>
             <node concept="3Hitp_" id="vVoQWC3Fvm" role="1QScD9">

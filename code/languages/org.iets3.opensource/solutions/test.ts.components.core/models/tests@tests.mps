@@ -4,10 +4,10 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="-1" />
+    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="9" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute" version="-1" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="2" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="3" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports>
@@ -55,6 +55,9 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
+      </concept>
       <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt" />
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
@@ -128,7 +131,6 @@
       </concept>
       <concept id="229512757699544987" name="org.iets3.components.core.structure.Parameter" flags="ng" index="pdmcS">
         <child id="229512757699544992" name="defaultValue" index="pdmc3" />
-        <child id="229512757699544990" name="type" index="pdmcX" />
       </concept>
       <concept id="8209493818901074928" name="org.iets3.components.core.structure.InlineComponentInstance" flags="ng" index="2sGezh">
         <child id="8209493818901074929" name="component" index="2sGezg" />
@@ -279,7 +281,7 @@
           <node concept="H_j2F" id="6ip4YniacGl" role="1i1XAe">
             <node concept="pdmcS" id="3QX5db_DWGo" role="H_jLS">
               <property role="TrG5h" value="someParam" />
-              <node concept="mLuIC" id="3QX5db_DWKq" role="pdmcX" />
+              <node concept="mLuIC" id="3QX5db_DWKq" role="2S399n" />
             </node>
           </node>
           <node concept="3oewWw" id="3QX5db_ykt_" role="18DfD7" />
@@ -799,7 +801,7 @@
             </node>
             <node concept="pdmcS" id="AamzMu0_kN" role="H_jLS">
               <property role="TrG5h" value="param" />
-              <node concept="mLuIC" id="AamzMu0_kY" role="pdmcX" />
+              <node concept="mLuIC" id="AamzMu0_kY" role="2S399n" />
             </node>
           </node>
         </node>
@@ -809,10 +811,10 @@
           <node concept="H_j2F" id="5gz2b$a9sF2" role="1i1XAe">
             <node concept="pdmcS" id="5gz2b$a9sG6" role="H_jLS">
               <property role="TrG5h" value="parentParam" />
-              <node concept="mLuIC" id="AamzMtZ_90" role="pdmcX" />
               <node concept="30bXRB" id="AamzMu2NTP" role="pdmc3">
                 <property role="30bXRw" value="11" />
               </node>
+              <node concept="mLuIC" id="AamzMtZ_90" role="2S399n" />
             </node>
           </node>
           <node concept="GnABt" id="77HYM7HSeV$" role="1i1XAe">
@@ -823,7 +825,6 @@
                 <node concept="H_j2F" id="3PhTX5cY6Ds" role="1i1XAe">
                   <node concept="pdmcS" id="4VHfdEqdRsI" role="H_jLS">
                     <property role="TrG5h" value="siblingParam" />
-                    <node concept="mLuIC" id="4VHfdEqdRsV" role="pdmcX" />
                     <node concept="30dDZf" id="2eSxbVAk9PV" role="pdmc3">
                       <node concept="18Ww8V" id="4VHfdEqevBV" role="30dEsF">
                         <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
@@ -832,6 +833,7 @@
                         <property role="30bXRw" value="1" />
                       </node>
                     </node>
+                    <node concept="mLuIC" id="4VHfdEqdRsV" role="2S399n" />
                   </node>
                   <node concept="1i7wMI" id="3PhTX5cY6DE" role="IJpy$">
                     <node concept="3o1koB" id="3PhTX5cY6DD" role="1aMMyH" />
@@ -849,7 +851,6 @@
                       <node concept="H_j2F" id="4VHfdEqevLY" role="1i1XAe">
                         <node concept="pdmcS" id="4VHfdEqevMb" role="H_jLS">
                           <property role="TrG5h" value="nestedInlineParam" />
-                          <node concept="mLuIC" id="4VHfdEqevMo" role="pdmcX" />
                           <node concept="30dDZf" id="2eSxbVAk9f$" role="pdmc3">
                             <node concept="18Ww8V" id="4VHfdEqevN4" role="30dEsF">
                               <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
@@ -858,6 +859,7 @@
                               <ref role="18Ww8U" node="4VHfdEqdRsI" resolve="siblingParam" />
                             </node>
                           </node>
+                          <node concept="mLuIC" id="4VHfdEqevMo" role="2S399n" />
                         </node>
                       </node>
                     </node>
@@ -872,7 +874,6 @@
                 <node concept="H_j2F" id="77HYM7HCYNm" role="1i1XAe">
                   <node concept="pdmcS" id="77HYM7HCYNt" role="H_jLS">
                     <property role="TrG5h" value="testParam" />
-                    <node concept="mLuIC" id="77HYM7HShMo" role="pdmcX" />
                     <node concept="30dDTi" id="4VHfdEqdQME" role="pdmc3">
                       <node concept="18Ww8V" id="4VHfdEqe$FO" role="30dEsF">
                         <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
@@ -881,6 +882,7 @@
                         <property role="30bXRw" value="2" />
                       </node>
                     </node>
+                    <node concept="mLuIC" id="77HYM7HShMo" role="2S399n" />
                   </node>
                   <node concept="1i7wMI" id="3PhTX5cY6BN" role="IJo7D">
                     <node concept="3o5llK" id="3PhTX5cY6BM" role="1aMMyH" />
