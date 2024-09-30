@@ -7367,7 +7367,7 @@
       <node concept="3clFbS" id="6JZACDWHFU_" role="3clF47">
         <node concept="3cpWs6" id="6JZACDWHpuT" role="3cqZAp">
           <node concept="Xl_RD" id="6JZACDWHpuU" role="3cqZAk">
-            <property role="Xl_RC" value="Cyclic record structures have to use an opt&lt;Record&gt; in at least one member (to break the containment cycle)." />
+            <property role="Xl_RC" value="cyclic record structures have to use an opt&lt;Record&gt; in at least one member to break the containment cycle" />
           </node>
         </node>
       </node>

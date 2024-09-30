@@ -14,6 +14,8 @@
     <import index="dnkk" ref="r:c7dec76d-437e-4f48-9d01-3857e3cf30e6(org.iets3.core.expr.adt.behavior)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -71,6 +73,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -366,14 +369,35 @@
       </node>
       <node concept="3clFbJ" id="28$LOSBLqlh" role="3cqZAp">
         <node concept="3clFbS" id="28$LOSBLqlj" role="3clFbx">
+          <node concept="3cpWs8" id="3eH6BL3WD0Z" role="3cqZAp">
+            <node concept="3cpWsn" id="3eH6BL3WD10" role="3cpWs9">
+              <property role="TrG5h" value="expectedCount" />
+              <node concept="10Oyi0" id="3eH6BL3WCTv" role="1tU5fm" />
+              <node concept="2OqwBi" id="3eH6BL3WD11" role="33vP2m">
+                <node concept="37vLTw" id="3eH6BL3WD12" role="2Oq$k0">
+                  <ref role="3cqZAo" node="28$LOSBJVqe" resolve="cons" />
+                </node>
+                <node concept="2qgKlT" id="3eH6BL3WD13" role="2OqNvi">
+                  <ref role="37wK5l" to="dnkk:28$LOSBLtmr" resolve="declatedNumberOfArgs" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbJ" id="28$LOSBLt2R" role="3cqZAp">
             <node concept="3clFbS" id="28$LOSBLt2S" role="3clFbx">
               <node concept="2MkqsV" id="28$LOSBLt2T" role="3cqZAp">
-                <node concept="Xl_RD" id="28$LOSBLt2U" role="2MkJ7o">
-                  <property role="Xl_RC" value="wrong number of args" />
-                </node>
                 <node concept="1YBJjd" id="28$LOSBLt2V" role="1urrMF">
                   <ref role="1YBMHb" node="5a_u3OyMT93" resolve="term" />
+                </node>
+                <node concept="2YIFZM" id="3eH6BL4c3wf" role="2MkJ7o">
+                  <ref role="37wK5l" to="gdgh:3eH6BL4bSMj" resolve="notMatchingArgumentLengthMessage" />
+                  <ref role="1Pybhc" to="gdgh:3eH6BL4bSKS" resolve="ErrorCheckingUtil" />
+                  <node concept="37vLTw" id="3eH6BL4c3wp" role="37wK5m">
+                    <ref role="3cqZAo" node="3eH6BL3WD10" resolve="expectedCount" />
+                  </node>
+                  <node concept="37vLTw" id="3eH6BL4c3Az" role="37wK5m">
+                    <ref role="3cqZAo" node="28$LOSBJLCs" resolve="actualCount" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="28$LOSBLt2W" role="3cqZAp" />
@@ -382,13 +406,8 @@
               <node concept="37vLTw" id="28$LOSBLt31" role="3uHU7B">
                 <ref role="3cqZAo" node="28$LOSBJLCs" resolve="actualCount" />
               </node>
-              <node concept="2OqwBi" id="28$LOSBLt2Y" role="3uHU7w">
-                <node concept="37vLTw" id="28$LOSBLt2Z" role="2Oq$k0">
-                  <ref role="3cqZAo" node="28$LOSBJVqe" resolve="cons" />
-                </node>
-                <node concept="2qgKlT" id="28$LOSBLv96" role="2OqNvi">
-                  <ref role="37wK5l" to="dnkk:28$LOSBLtmr" resolve="declatedNumberOfArgs" />
-                </node>
+              <node concept="37vLTw" id="3eH6BL3WD14" role="3uHU7w">
+                <ref role="3cqZAo" node="3eH6BL3WD10" resolve="declatedNumberOfArgs" />
               </node>
             </node>
           </node>
@@ -429,13 +448,32 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="3eH6BL3WMps" role="3cqZAp">
+              <node concept="3cpWsn" id="3eH6BL3WMpt" role="3cpWs9">
+                <property role="TrG5h" value="expectedCount" />
+                <node concept="10Oyi0" id="3eH6BL3WMnG" role="1tU5fm" />
+                <node concept="2OqwBi" id="3eH6BL3WMpu" role="33vP2m">
+                  <node concept="37vLTw" id="3eH6BL3WMpv" role="2Oq$k0">
+                    <ref role="3cqZAo" node="28$LOSBJVqe" resolve="cons" />
+                  </node>
+                  <node concept="2qgKlT" id="3eH6BL3WMpw" role="2OqNvi">
+                    <ref role="37wK5l" to="dnkk:28$LOSBJ3iM" resolve="maxNumberOfArgs" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="28$LOSBJUFt" role="3cqZAp">
               <node concept="3clFbS" id="28$LOSBJUFv" role="3clFbx">
                 <node concept="3clFbJ" id="28$LOSBJYj7" role="3cqZAp">
                   <node concept="3clFbS" id="28$LOSBJYj8" role="3clFbx">
                     <node concept="2MkqsV" id="28$LOSBJYj9" role="3cqZAp">
-                      <node concept="Xl_RD" id="28$LOSBJYja" role="2MkJ7o">
-                        <property role="Xl_RC" value="too many arguments" />
+                      <node concept="3cpWs3" id="3eH6BL3WMhQ" role="2MkJ7o">
+                        <node concept="37vLTw" id="3eH6BL3WMvE" role="3uHU7w">
+                          <ref role="3cqZAo" node="3eH6BL3WMpt" resolve="expectedCount" />
+                        </node>
+                        <node concept="Xl_RD" id="28$LOSBJYja" role="3uHU7B">
+                          <property role="Xl_RC" value="too many arguments, expected " />
+                        </node>
                       </node>
                       <node concept="1YBJjd" id="28$LOSBJYjb" role="1urrMF">
                         <ref role="1YBMHb" node="5a_u3OyMT93" resolve="term" />
@@ -447,13 +485,8 @@
                     <node concept="37vLTw" id="28$LOSBJYjh" role="3uHU7B">
                       <ref role="3cqZAo" node="28$LOSBJLCs" resolve="actualCount" />
                     </node>
-                    <node concept="2OqwBi" id="28$LOSBJYje" role="3uHU7w">
-                      <node concept="37vLTw" id="28$LOSBJYjf" role="2Oq$k0">
-                        <ref role="3cqZAo" node="28$LOSBJVqe" resolve="cons" />
-                      </node>
-                      <node concept="2qgKlT" id="28$LOSBJYSM" role="2OqNvi">
-                        <ref role="37wK5l" to="dnkk:28$LOSBJ3iM" resolve="maxNumberOfArgs" />
-                      </node>
+                    <node concept="37vLTw" id="3eH6BL3WMpx" role="3uHU7w">
+                      <ref role="3cqZAo" node="3eH6BL3WMpt" resolve="maxNumberOfArgs" />
                     </node>
                   </node>
                 </node>
@@ -462,13 +495,8 @@
                 <node concept="3cmrfG" id="28$LOSBJYeE" role="3uHU7w">
                   <property role="3cmrfH" value="-1" />
                 </node>
-                <node concept="2OqwBi" id="28$LOSBJWZH" role="3uHU7B">
-                  <node concept="37vLTw" id="28$LOSBJWOM" role="2Oq$k0">
-                    <ref role="3cqZAo" node="28$LOSBJVqe" resolve="cons" />
-                  </node>
-                  <node concept="2qgKlT" id="28$LOSBJXjv" role="2OqNvi">
-                    <ref role="37wK5l" to="dnkk:28$LOSBJ3iM" resolve="maxNumberOfArgs" />
-                  </node>
+                <node concept="37vLTw" id="3eH6BL3WMpy" role="3uHU7B">
+                  <ref role="3cqZAo" node="3eH6BL3WMpt" resolve="maxNumberOfArgs" />
                 </node>
               </node>
             </node>

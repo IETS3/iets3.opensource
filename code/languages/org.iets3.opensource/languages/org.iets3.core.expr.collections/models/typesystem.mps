@@ -58,6 +58,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -496,7 +497,7 @@
                           </node>
                           <node concept="3cpWs3" id="TcaAhOJ3xK" role="2MkJ7o">
                             <node concept="Xl_RD" id="TcaAhOJ4bz" role="3uHU7B">
-                              <property role="Xl_RC" value="Incompatible element types – " />
+                              <property role="Xl_RC" value="incompatible element types: " />
                             </node>
                             <node concept="2OqwBi" id="TcaAhODq_G" role="3uHU7w">
                               <node concept="Jnkvi" id="TcaAhODqaP" role="2Oq$k0">
@@ -1465,7 +1466,7 @@
                           <node concept="3clFbS" id="2Qbt$1tTX8x" role="3clFbx">
                             <node concept="2MkqsV" id="2Qbt$1tTX8y" role="3cqZAp">
                               <node concept="Xl_RD" id="2Qbt$1tTX8z" role="2MkJ7o">
-                                <property role="Xl_RC" value="Boolean expression expected" />
+                                <property role="Xl_RC" value="logical expression expected" />
                               </node>
                               <node concept="2OqwBi" id="4pyjK6aQkVV" role="1urrMF">
                                 <node concept="1YBJjd" id="2Qbt$1tTX8_" role="2Oq$k0">
@@ -1526,7 +1527,7 @@
               <node concept="3clFbS" id="6zmBjqUm1nQ" role="9aQI4">
                 <node concept="2MkqsV" id="6zmBjqUm1nR" role="3cqZAp">
                   <node concept="Xl_RD" id="6zmBjqUm1nS" role="2MkJ7o">
-                    <property role="Xl_RC" value="Function type expected" />
+                    <property role="Xl_RC" value="function type expected" />
                   </node>
                   <node concept="1YBJjd" id="6zmBjqUm2jh" role="1urrMF">
                     <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
@@ -2010,7 +2011,7 @@
                               </node>
                             </node>
                             <node concept="Xl_RD" id="TcaAhOJ7h3" role="3uHU7B">
-                              <property role="Xl_RC" value="No common supertype found:" />
+                              <property role="Xl_RC" value="no common supertype found:" />
                             </node>
                           </node>
                         </node>
@@ -3939,7 +3940,7 @@
         <node concept="3clFbS" id="7SZA7Ud$27N" role="3clFbx">
           <node concept="2MkqsV" id="7SZA7Ud$2Ic" role="3cqZAp">
             <node concept="Xl_RD" id="7SZA7Ud$2IB" role="2MkJ7o">
-              <property role="Xl_RC" value="foreach requires the lambda expression to have an effect" />
+              <property role="Xl_RC" value="the lambda expression must have an effect" />
             </node>
             <node concept="1YBJjd" id="7SZA7Ud$2Jt" role="1urrMF">
               <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
@@ -3978,6 +3979,15 @@
     <node concept="3clFbS" id="2dOqIOtK1Ai" role="18ibNy">
       <node concept="nvevp" id="2dOqIOtJZaQ" role="3cqZAp">
         <node concept="3clFbS" id="2dOqIOtJZaU" role="nvhr_">
+          <node concept="3cpWs8" id="3eH6BL47dDs" role="3cqZAp">
+            <node concept="3cpWsn" id="3eH6BL47dDv" role="3cpWs9">
+              <property role="TrG5h" value="errorMessage" />
+              <node concept="17QB3L" id="3eH6BL47dDq" role="1tU5fm" />
+              <node concept="Xl_RD" id="3eH6BL47dD$" role="33vP2m">
+                <property role="Xl_RC" value="a nested collection of collections is expected" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbJ" id="2dOqIOtJZCU" role="3cqZAp">
             <node concept="2OqwBi" id="2dOqIOtJZKV" role="3clFbw">
               <node concept="2X3wrD" id="2dOqIOtJZD9" role="2Oq$k0">
@@ -4044,11 +4054,11 @@
                 <node concept="9aQIb" id="2dOqIOtK1qX" role="9aQIa">
                   <node concept="3clFbS" id="2dOqIOtK1qY" role="9aQI4">
                     <node concept="2MkqsV" id="2dOqIOtK1zk" role="3cqZAp">
-                      <node concept="Xl_RD" id="2dOqIOtK1zl" role="2MkJ7o">
-                        <property role="Xl_RC" value="collection&lt;collection&lt;T&gt;&gt; is expected" />
-                      </node>
                       <node concept="1YBJjd" id="2dOqIOtK28H" role="1urrMF">
                         <ref role="1YBMHb" node="2dOqIOtK1Az" resolve="flattenOp" />
+                      </node>
+                      <node concept="37vLTw" id="3eH6BL47e1h" role="2MkJ7o">
+                        <ref role="3cqZAo" node="3eH6BL47dDv" resolve="errorMessage" />
                       </node>
                     </node>
                   </node>
@@ -4058,11 +4068,11 @@
             <node concept="9aQIb" id="2dOqIOtK00C" role="9aQIa">
               <node concept="3clFbS" id="2dOqIOtK00D" role="9aQI4">
                 <node concept="2MkqsV" id="2dOqIOtK05i" role="3cqZAp">
-                  <node concept="Xl_RD" id="2dOqIOtK05r" role="2MkJ7o">
-                    <property role="Xl_RC" value="collection&lt;collection&lt;T&gt;&gt; is expected" />
-                  </node>
                   <node concept="1YBJjd" id="2dOqIOtK29X" role="1urrMF">
                     <ref role="1YBMHb" node="2dOqIOtK1Az" resolve="flattenOp" />
+                  </node>
+                  <node concept="37vLTw" id="3eH6BL47e69" role="2MkJ7o">
+                    <ref role="3cqZAo" node="3eH6BL47dDv" resolve="errorMessage" />
                   </node>
                 </node>
               </node>
@@ -4424,7 +4434,7 @@
         <node concept="3clFbS" id="$lfQMoehBS" role="3clFbx">
           <node concept="2MkqsV" id="$lfQMoei$6" role="3cqZAp">
             <node concept="Xl_RD" id="$lfQMoei$l" role="2MkJ7o">
-              <property role="Xl_RC" value="max must be &gt;= min" />
+              <property role="Xl_RC" value="the maximum value must be greater or equal to the minimum value" />
             </node>
             <node concept="1YBJjd" id="$lfQMoei_3" role="1urrMF">
               <ref role="1YBMHb" node="$lfQMoeh5L" resolve="csc" />
@@ -5682,7 +5692,7 @@
                   <node concept="3clFbS" id="1mDdTGUR_4" role="9aQI4">
                     <node concept="2MkqsV" id="1mDdTGURXJ" role="3cqZAp">
                       <node concept="Xl_RD" id="1mDdTGURY1" role="2MkJ7o">
-                        <property role="Xl_RC" value="two-element tuples are required to build a map" />
+                        <property role="Xl_RC" value="elements must be two-element tuples" />
                       </node>
                       <node concept="1YBJjd" id="1mDdTGURYQ" role="1urrMF">
                         <ref role="1YBMHb" node="1mDdTGU99y" resolve="amo" />
@@ -5706,7 +5716,7 @@
               <node concept="3clFbS" id="1mDdTGUS3M" role="9aQI4">
                 <node concept="2MkqsV" id="1mDdTGUSdr" role="3cqZAp">
                   <node concept="Xl_RD" id="1mDdTGUSds" role="2MkJ7o">
-                    <property role="Xl_RC" value="can only be used with collections of two-element tuples" />
+                    <property role="Xl_RC" value="operation is only permitted with collections of two-element tuples" />
                   </node>
                   <node concept="1YBJjd" id="1mDdTGUSdt" role="1urrMF">
                     <ref role="1YBMHb" node="1mDdTGU99y" resolve="amo" />
@@ -5804,7 +5814,7 @@
                           <ref role="2pJxcJ" to="tpd4:hfSilrU" resolve="errorText" />
                           <node concept="WxPPo" id="uuJ7IpZtuz" role="28ntcv">
                             <node concept="Xl_RD" id="6IBT1wUeIpF" role="WxPPp">
-                              <property role="Xl_RC" value="Not a map!" />
+                              <property role="Xl_RC" value="not a map" />
                             </node>
                           </node>
                         </node>
@@ -5961,7 +5971,7 @@
                           <ref role="2pJxcJ" to="tpd4:hfSilrU" resolve="errorText" />
                           <node concept="WxPPo" id="uuJ7IpZtu$" role="28ntcv">
                             <node concept="Xl_RD" id="6IBT1wUeGKR" role="WxPPp">
-                              <property role="Xl_RC" value="Not a map!" />
+                              <property role="Xl_RC" value="not a map" />
                             </node>
                           </node>
                         </node>
@@ -6204,7 +6214,7 @@
                           <node concept="3clFbS" id="oG0sI$Hift" role="3clFbx">
                             <node concept="2MkqsV" id="oG0sI$Hifu" role="3cqZAp">
                               <node concept="Xl_RD" id="oG0sI$Hify" role="2MkJ7o">
-                                <property role="Xl_RC" value="Boolean expression expected" />
+                                <property role="Xl_RC" value="logical expression expected" />
                               </node>
                               <node concept="2OqwBi" id="oG0sI$Hifv" role="1urrMF">
                                 <node concept="1YBJjd" id="oG0sI$Hifw" role="2Oq$k0">
@@ -6265,7 +6275,7 @@
               <node concept="3clFbS" id="oG0sI$HifN" role="9aQI4">
                 <node concept="2MkqsV" id="oG0sI$HifO" role="3cqZAp">
                   <node concept="Xl_RD" id="oG0sI$HifP" role="2MkJ7o">
-                    <property role="Xl_RC" value="Function type expected" />
+                    <property role="Xl_RC" value="function type expected" />
                   </node>
                   <node concept="1YBJjd" id="oG0sI$HifQ" role="1urrMF">
                     <ref role="1YBMHb" node="oG0sI$Hib7" resolve="op" />

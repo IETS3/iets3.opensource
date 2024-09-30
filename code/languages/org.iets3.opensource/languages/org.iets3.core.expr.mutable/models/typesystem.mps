@@ -12,6 +12,7 @@
     <import index="n9sl" ref="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)" />
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" implicit="true" />
@@ -47,6 +48,7 @@
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -77,7 +79,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -416,7 +417,7 @@
                 <node concept="3clFbS" id="69ODpXSSzdi" role="3clFbx">
                   <node concept="a7r0C" id="69ODpXSSoqa" role="3cqZAp">
                     <node concept="Xl_RD" id="69ODpXSSoqT" role="a7wSD">
-                      <property role="Xl_RC" value="The expression is using an invalid subtype. Add an explicit type to the box declaration to fix it." />
+                      <property role="Xl_RC" value="The expression is using an invalid subtype. Add an explicit type to the box declaration" />
                     </node>
                     <node concept="2OqwBi" id="69ODpXSSHu_" role="1urrMF">
                       <node concept="1YBJjd" id="69ODpXSSoqx" role="2Oq$k0">
@@ -1024,20 +1025,51 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3cpWs8" id="3eH6BL4cTN$" role="3cqZAp">
+                          <node concept="3cpWsn" id="3eH6BL4cTN_" role="3cpWs9">
+                            <property role="TrG5h" value="actualSize" />
+                            <node concept="10Oyi0" id="3eH6BL4cSXb" role="1tU5fm" />
+                            <node concept="2OqwBi" id="3eH6BL4cTNA" role="33vP2m">
+                              <node concept="2OqwBi" id="3eH6BL4cTNB" role="2Oq$k0">
+                                <node concept="1YBJjd" id="3eH6BL4cTNC" role="2Oq$k0">
+                                  <ref role="1YBMHb" node="7WFhXJlV9Z9" resolve="ict" />
+                                </node>
+                                <node concept="3Tsc0h" id="3eH6BL4cTND" role="2OqNvi">
+                                  <ref role="3TtcxE" to="8lgj:Z4fkwzaHUu" resolve="args" />
+                                </node>
+                              </node>
+                              <node concept="34oBXx" id="3eH6BL4cTNE" role="2OqNvi" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWs8" id="3eH6BL4cU8n" role="3cqZAp">
+                          <node concept="3cpWsn" id="3eH6BL4cU8o" role="3cpWs9">
+                            <property role="TrG5h" value="expectedSize" />
+                            <node concept="10Oyi0" id="3eH6BL4cU7u" role="1tU5fm" />
+                            <node concept="2OqwBi" id="3eH6BL4cU8p" role="33vP2m">
+                              <node concept="2OqwBi" id="3eH6BL4cU8q" role="2Oq$k0">
+                                <node concept="37vLTw" id="3eH6BL4cU8r" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="Z4fkwzaLeJ" resolve="cmd" />
+                                </node>
+                                <node concept="2OwXpG" id="3eH6BL4cU8s" role="2OqNvi">
+                                  <ref role="2Oxat5" to="n9sl:Z4fkwzapSg" resolve="arguments" />
+                                </node>
+                              </node>
+                              <node concept="34oBXx" id="3eH6BL4cU8t" role="2OqNvi" />
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3clFbJ" id="Z4fkwzaKpG" role="3cqZAp">
                           <node concept="3clFbS" id="Z4fkwzaKpI" role="3clFbx">
                             <node concept="2MkqsV" id="Z4fkwzaYO8" role="3cqZAp">
-                              <node concept="3cpWs3" id="Z4fkwzaZ6j" role="2MkJ7o">
-                                <node concept="Xl_RD" id="Z4fkwzaYOn" role="3uHU7B">
-                                  <property role="Xl_RC" value="wrong number of args; expecting " />
+                              <node concept="2YIFZM" id="3eH6BL4cUDN" role="2MkJ7o">
+                                <ref role="37wK5l" to="gdgh:3eH6BL4bSMj" resolve="notMatchingArgumentLengthMessage" />
+                                <ref role="1Pybhc" to="gdgh:3eH6BL4bSKS" resolve="ErrorCheckingUtil" />
+                                <node concept="37vLTw" id="3eH6BL4cVLy" role="37wK5m">
+                                  <ref role="3cqZAo" node="3eH6BL4cU8o" resolve="expectedSize" />
                                 </node>
-                                <node concept="2OqwBi" id="Z4fkwzb2_Z" role="3uHU7w">
-                                  <node concept="37vLTw" id="Z4fkwzb22P" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="Z4fkwzaLeJ" resolve="cmd" />
-                                  </node>
-                                  <node concept="2OwXpG" id="Z4fkwzb2Pu" role="2OqNvi">
-                                    <ref role="2Oxat5" to="n9sl:Z4fkwzapSg" resolve="arguments" />
-                                  </node>
+                                <node concept="37vLTw" id="3eH6BL4cW3V" role="37wK5m">
+                                  <ref role="3cqZAo" node="3eH6BL4cTN_" resolve="actualSize" />
                                 </node>
                               </node>
                               <node concept="1YBJjd" id="Z4fkwzb1oN" role="1urrMF">
@@ -1046,27 +1078,11 @@
                             </node>
                           </node>
                           <node concept="3y3z36" id="Z4fkwzaWbX" role="3clFbw">
-                            <node concept="2OqwBi" id="Z4fkwzaXY_" role="3uHU7w">
-                              <node concept="2OqwBi" id="Z4fkwzaWIv" role="2Oq$k0">
-                                <node concept="37vLTw" id="Z4fkwzaWrR" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="Z4fkwzaLeJ" resolve="cmd" />
-                                </node>
-                                <node concept="2OwXpG" id="Z4fkwzaWTp" role="2OqNvi">
-                                  <ref role="2Oxat5" to="n9sl:Z4fkwzapSg" resolve="arguments" />
-                                </node>
-                              </node>
-                              <node concept="34oBXx" id="Z4fkwzaYDI" role="2OqNvi" />
+                            <node concept="37vLTw" id="3eH6BL4cU8u" role="3uHU7w">
+                              <ref role="3cqZAo" node="3eH6BL4cU8o" resolve="i" />
                             </node>
-                            <node concept="2OqwBi" id="Z4fkwzaScM" role="3uHU7B">
-                              <node concept="2OqwBi" id="Z4fkwzaK$I" role="2Oq$k0">
-                                <node concept="1YBJjd" id="Z4fkwzaKpP" role="2Oq$k0">
-                                  <ref role="1YBMHb" node="7WFhXJlV9Z9" resolve="ict" />
-                                </node>
-                                <node concept="3Tsc0h" id="Z4fkwzaLpB" role="2OqNvi">
-                                  <ref role="3TtcxE" to="8lgj:Z4fkwzaHUu" resolve="args" />
-                                </node>
-                              </node>
-                              <node concept="34oBXx" id="Z4fkwzaTUg" role="2OqNvi" />
+                            <node concept="37vLTw" id="3eH6BL4cTNF" role="3uHU7B">
+                              <ref role="3cqZAo" node="3eH6BL4cTN_" resolve="i" />
                             </node>
                           </node>
                           <node concept="9aQIb" id="Z4fkwzb7oW" role="9aQIa">
@@ -1376,7 +1392,7 @@
         <node concept="3clFbS" id="7bd8pkl7yhY" role="3clFbx">
           <node concept="2MkqsV" id="7bd8pkl7yhZ" role="3cqZAp">
             <node concept="Xl_RD" id="7bd8pkl7yi0" role="2MkJ7o">
-              <property role="Xl_RC" value="not an interactor type" />
+              <property role="Xl_RC" value="interactor type expected" />
             </node>
             <node concept="1YBJjd" id="7bd8pkl9T7T" role="1urrMF">
               <ref role="1YBMHb" node="7bd8pkl7v08" resolve="lt" />
@@ -1418,7 +1434,7 @@
         <node concept="3clFbS" id="7bd8pkl7wXX" role="3clFbx">
           <node concept="2MkqsV" id="7bd8pkl7xST" role="3cqZAp">
             <node concept="Xl_RD" id="7bd8pkl7xT5" role="2MkJ7o">
-              <property role="Xl_RC" value="not an interactor type" />
+              <property role="Xl_RC" value="expression must be of type ‹interactor›" />
             </node>
             <node concept="1YBJjd" id="7bd8pkl7xTU" role="1urrMF">
               <ref role="1YBMHb" node="7bd8pkl9Mf3" resolve="le" />

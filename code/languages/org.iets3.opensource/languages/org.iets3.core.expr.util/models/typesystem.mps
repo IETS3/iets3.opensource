@@ -54,6 +54,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -499,72 +500,55 @@
             <node concept="3clFbS" id="3DYDRw0N_iZ" role="2LFqv$">
               <node concept="3clFbJ" id="3DYDRw0N_ui" role="3cqZAp">
                 <node concept="3clFbS" id="3DYDRw0N_uj" role="3clFbx">
-                  <node concept="2MkqsV" id="3DYDRw0NEvC" role="3cqZAp">
-                    <node concept="3cpWs3" id="3DYDRw0NFFQ" role="2MkJ7o">
-                      <node concept="Xl_RD" id="3DYDRw0NFFT" role="3uHU7w">
-                        <property role="Xl_RC" value=")" />
-                      </node>
-                      <node concept="3cpWs3" id="3DYDRw0NFaC" role="3uHU7B">
-                        <node concept="3cpWs3" id="3DYDRw0NES1" role="3uHU7B">
-                          <node concept="3cpWs3" id="3DYDRw0NEyH" role="3uHU7B">
-                            <node concept="Xl_RD" id="3DYDRw0NEvR" role="3uHU7B">
-                              <property role="Xl_RC" value="no value for (" />
-                            </node>
-                            <node concept="2OqwBi" id="3DYDRw0NE_9" role="3uHU7w">
-                              <node concept="2GrUjf" id="3DYDRw0NEyK" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="3DYDRw0N_bE" resolve="c" />
-                              </node>
-                              <node concept="2bSWHS" id="3DYDRw0NEFS" role="2OqNvi" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="3DYDRw0NES4" role="3uHU7w">
-                            <property role="Xl_RC" value="," />
-                          </node>
+                  <node concept="3cpWs8" id="3eH6BL4fmLX" role="3cqZAp">
+                    <node concept="3cpWsn" id="3eH6BL4fmM0" role="3cpWs9">
+                      <property role="TrG5h" value="errorMessage" />
+                      <node concept="17QB3L" id="3eH6BL4fmLV" role="1tU5fm" />
+                      <node concept="3cpWs3" id="3eH6BL4fmM8" role="33vP2m">
+                        <node concept="Xl_RD" id="3eH6BL4fmM9" role="3uHU7w">
+                          <property role="Xl_RC" value=")" />
                         </node>
-                        <node concept="2OqwBi" id="3DYDRw0NFkB" role="3uHU7w">
-                          <node concept="2GrUjf" id="3DYDRw0NFf6" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="3DYDRw0N_iY" resolve="r" />
+                        <node concept="3cpWs3" id="3eH6BL4fmMa" role="3uHU7B">
+                          <node concept="3cpWs3" id="3eH6BL4fmMb" role="3uHU7B">
+                            <node concept="3cpWs3" id="3eH6BL4fmMc" role="3uHU7B">
+                              <node concept="Xl_RD" id="3eH6BL4fmMd" role="3uHU7B">
+                                <property role="Xl_RC" value="no value for (" />
+                              </node>
+                              <node concept="2OqwBi" id="3eH6BL4fmMe" role="3uHU7w">
+                                <node concept="2GrUjf" id="3eH6BL4fmMf" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="3DYDRw0N_bE" resolve="c" />
+                                </node>
+                                <node concept="2bSWHS" id="3eH6BL4fmMg" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="3eH6BL4fmMh" role="3uHU7w">
+                              <property role="Xl_RC" value="," />
+                            </node>
                           </node>
-                          <node concept="2bSWHS" id="3DYDRw0NFtH" role="2OqNvi" />
+                          <node concept="2OqwBi" id="3eH6BL4fmMi" role="3uHU7w">
+                            <node concept="2GrUjf" id="3eH6BL4fmMj" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="3DYDRw0N_iY" resolve="r" />
+                            </node>
+                            <node concept="2bSWHS" id="3eH6BL4fmMk" role="2OqNvi" />
+                          </node>
                         </node>
                       </node>
                     </node>
+                  </node>
+                  <node concept="2MkqsV" id="3DYDRw0NEvC" role="3cqZAp">
                     <node concept="2GrUjf" id="3DYDRw0NFMD" role="1urrMF">
                       <ref role="2Gs0qQ" node="3DYDRw0N_bE" resolve="c" />
                     </node>
+                    <node concept="37vLTw" id="3eH6BL4fmTI" role="2MkJ7o">
+                      <ref role="3cqZAo" node="3eH6BL4fmM0" resolve="errorMessage" />
+                    </node>
                   </node>
                   <node concept="2MkqsV" id="3DYDRw0NFSC" role="3cqZAp">
-                    <node concept="3cpWs3" id="3DYDRw0NFSD" role="2MkJ7o">
-                      <node concept="Xl_RD" id="3DYDRw0NFSE" role="3uHU7w">
-                        <property role="Xl_RC" value=")" />
-                      </node>
-                      <node concept="3cpWs3" id="3DYDRw0NFSF" role="3uHU7B">
-                        <node concept="3cpWs3" id="3DYDRw0NFSG" role="3uHU7B">
-                          <node concept="3cpWs3" id="3DYDRw0NFSH" role="3uHU7B">
-                            <node concept="Xl_RD" id="3DYDRw0NFSI" role="3uHU7B">
-                              <property role="Xl_RC" value="no value for (" />
-                            </node>
-                            <node concept="2OqwBi" id="3DYDRw0NFSJ" role="3uHU7w">
-                              <node concept="2GrUjf" id="3DYDRw0NFSK" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="3DYDRw0N_bE" resolve="c" />
-                              </node>
-                              <node concept="2bSWHS" id="3DYDRw0NFSL" role="2OqNvi" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="3DYDRw0NFSM" role="3uHU7w">
-                            <property role="Xl_RC" value="," />
-                          </node>
-                        </node>
-                        <node concept="2OqwBi" id="3DYDRw0NFSN" role="3uHU7w">
-                          <node concept="2GrUjf" id="3DYDRw0NFSO" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="3DYDRw0N_iY" resolve="r" />
-                          </node>
-                          <node concept="2bSWHS" id="3DYDRw0NFSP" role="2OqNvi" />
-                        </node>
-                      </node>
-                    </node>
                     <node concept="2GrUjf" id="3DYDRw0NFVq" role="1urrMF">
                       <ref role="2Gs0qQ" node="3DYDRw0N_iY" resolve="r" />
+                    </node>
+                    <node concept="37vLTw" id="3eH6BL4fn5l" role="2MkJ7o">
+                      <ref role="3cqZAo" node="3eH6BL4fmM0" resolve="errorMessage" />
                     </node>
                   </node>
                 </node>
@@ -1387,7 +1371,7 @@
         <node concept="3clFbS" id="8XWEtejB0B" role="3clFbx">
           <node concept="2MkqsV" id="8XWEtejDSb" role="3cqZAp">
             <node concept="Xl_RD" id="8XWEtejDSn" role="2MkJ7o">
-              <property role="Xl_RC" value="wrong order; first all queries, then all results" />
+              <property role="Xl_RC" value="wrong order: first declare all queries then all results" />
             </node>
             <node concept="1YBJjd" id="8XWEtejDXT" role="1urrMF">
               <ref role="1YBMHb" node="8XWEtejAYn" resolve="rcd" />
@@ -1844,7 +1828,7 @@
         <node concept="3clFbS" id="q825N8QwYy" role="3clFbx">
           <node concept="a7r0C" id="q825N8QEZx" role="3cqZAp">
             <node concept="Xl_RD" id="q825N8QEZN" role="a7wSD">
-              <property role="Xl_RC" value="Decisiontable with only one row. Consider using if instead. " />
+              <property role="Xl_RC" value="Decision table with only one row. Consider using an if expression instead " />
             </node>
             <node concept="2OqwBi" id="q825N8QWlE" role="1urrMF">
               <node concept="2OqwBi" id="q825N8QTL5" role="2Oq$k0">
@@ -1880,7 +1864,7 @@
         <node concept="3clFbS" id="5aYM8itbFQu" role="3clFbx">
           <node concept="2MkqsV" id="5aYM8itc26_" role="3cqZAp">
             <node concept="Xl_RD" id="5aYM8itc26R" role="2MkJ7o">
-              <property role="Xl_RC" value="Only one default row allowed per Decisiontable. " />
+              <property role="Xl_RC" value="only one default row allowed table" />
             </node>
             <node concept="1YBJjd" id="5aYM8itc2bk" role="1urrMF">
               <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
@@ -2258,7 +2242,7 @@
             <node concept="3clFbS" id="60neiTeACme" role="3clFbx">
               <node concept="2MkqsV" id="60neiTeANff" role="3cqZAp">
                 <node concept="Xl_RD" id="60neiTeANfr" role="2MkJ7o">
-                  <property role="Xl_RC" value="Column has already been bound to a value" />
+                  <property role="Xl_RC" value="column has already been bound to a value" />
                 </node>
                 <node concept="2GrUjf" id="60neiTeANgG" role="1urrMF">
                   <ref role="2Gs0qQ" node="60neiTeAB$h" resolve="binding" />
@@ -2346,7 +2330,7 @@
             <node concept="3clFbS" id="60neiTeB940" role="3clFbx">
               <node concept="2MkqsV" id="60neiTeBf$b" role="3cqZAp">
                 <node concept="Xl_RD" id="60neiTeBf$n" role="2MkJ7o">
-                  <property role="Xl_RC" value="Column has already been bound to a value" />
+                  <property role="Xl_RC" value="column has already been bound to a value" />
                 </node>
                 <node concept="2GrUjf" id="60neiTeBf_c" role="1urrMF">
                   <ref role="2Gs0qQ" node="60neiTeB8Dt" resolve="binding" />
@@ -2381,7 +2365,7 @@
         <node concept="3clFbS" id="60neiTeBmQB" role="3clFbx">
           <node concept="2MkqsV" id="60neiTeBC4d" role="3cqZAp">
             <node concept="Xl_RD" id="60neiTeBC4s" role="2MkJ7o">
-              <property role="Xl_RC" value="Not all Columns have a value" />
+              <property role="Xl_RC" value="not all columns have a value" />
             </node>
             <node concept="1YBJjd" id="60neiTeBC6_" role="1urrMF">
               <ref role="1YBMHb" node="60neiTeB8Cn" resolve="tableCallExpression" />
