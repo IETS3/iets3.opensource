@@ -33,6 +33,7 @@
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -5955,6 +5956,34 @@
       <node concept="3Tqbb2" id="5r47dOg5DlG" role="3clF45">
         <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3eH6BL4fX3H">
+    <property role="3GE5qa" value="multidectab" />
+    <ref role="13h7C2" to="kfo3:6OunYCfi$ob" resolve="RangeValueExpr" />
+    <node concept="13hLZK" id="3eH6BL4fX3I" role="13h7CW">
+      <node concept="3clFbS" id="3eH6BL4fX3J" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3eH6BL4fZuh" role="13h7CS">
+      <property role="TrG5h" value="getPresentation" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="3eH6BL4fZui" role="1B3o_S" />
+      <node concept="3clFbS" id="3eH6BL4fZuy" role="3clF47">
+        <node concept="3clFbF" id="3eH6BL4fZF9" role="3cqZAp">
+          <node concept="2OqwBi" id="3eH6BL4g0np" role="3clFbG">
+            <node concept="2OqwBi" id="3eH6BL4fZUe" role="2Oq$k0">
+              <node concept="13iPFW" id="3eH6BL4fZF4" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3eH6BL4g0b9" role="2OqNvi">
+                <ref role="3Tt5mk" to="kfo3:6OunYCfi$oc" resolve="range" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="3eH6BL4g0_F" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3eH6BL4fZuz" role="3clF45" />
     </node>
   </node>
 </model>
