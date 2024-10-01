@@ -1079,10 +1079,10 @@
                           </node>
                           <node concept="3y3z36" id="Z4fkwzaWbX" role="3clFbw">
                             <node concept="37vLTw" id="3eH6BL4cU8u" role="3uHU7w">
-                              <ref role="3cqZAo" node="3eH6BL4cU8o" resolve="i" />
+                              <ref role="3cqZAo" node="3eH6BL4cU8o" resolve="expectedSize" />
                             </node>
                             <node concept="37vLTw" id="3eH6BL4cTNF" role="3uHU7B">
-                              <ref role="3cqZAo" node="3eH6BL4cTN_" resolve="i" />
+                              <ref role="3cqZAo" node="3eH6BL4cTN_" resolve="actualSize" />
                             </node>
                           </node>
                           <node concept="9aQIb" id="Z4fkwzb7oW" role="9aQIa">

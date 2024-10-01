@@ -407,7 +407,7 @@
                 <ref role="3cqZAo" node="28$LOSBJLCs" resolve="actualCount" />
               </node>
               <node concept="37vLTw" id="3eH6BL3WD14" role="3uHU7w">
-                <ref role="3cqZAo" node="3eH6BL3WD10" resolve="declatedNumberOfArgs" />
+                <ref role="3cqZAo" node="3eH6BL3WD10" resolve="expectedCount" />
               </node>
             </node>
           </node>
@@ -486,7 +486,7 @@
                       <ref role="3cqZAo" node="28$LOSBJLCs" resolve="actualCount" />
                     </node>
                     <node concept="37vLTw" id="3eH6BL3WMpx" role="3uHU7w">
-                      <ref role="3cqZAo" node="3eH6BL3WMpt" resolve="maxNumberOfArgs" />
+                      <ref role="3cqZAo" node="3eH6BL3WMpt" resolve="expectedCount" />
                     </node>
                   </node>
                 </node>
@@ -496,7 +496,7 @@
                   <property role="3cmrfH" value="-1" />
                 </node>
                 <node concept="37vLTw" id="3eH6BL3WMpy" role="3uHU7B">
-                  <ref role="3cqZAo" node="3eH6BL3WMpt" resolve="maxNumberOfArgs" />
+                  <ref role="3cqZAo" node="3eH6BL3WMpt" resolve="expectedCount" />
                 </node>
               </node>
             </node>

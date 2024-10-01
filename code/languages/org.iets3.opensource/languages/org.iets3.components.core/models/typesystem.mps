@@ -485,7 +485,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="3eH6BL3WcyR" role="2MkJ7o">
-              <ref role="37wK5l" to="wyt6:~String.format(java.util.Locale,java.lang.String,java.lang.Object...)" resolve="format" />
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <node concept="Xl_RD" id="3eH6BL3WcyS" role="37wK5m">
                 <property role="Xl_RC" value="cannot connect ‹%s› to itself" />

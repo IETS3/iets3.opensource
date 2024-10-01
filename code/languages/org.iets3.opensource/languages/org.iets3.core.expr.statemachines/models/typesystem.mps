@@ -253,10 +253,10 @@
         </node>
         <node concept="3y3z36" id="1mDdTGaZJJ" role="3clFbw">
           <node concept="37vLTw" id="3eH6BL4dj50" role="3uHU7w">
-            <ref role="3cqZAo" node="3eH6BL4dj4W" resolve="i" />
+            <ref role="3cqZAo" node="3eH6BL4dj4W" resolve="expectedSize" />
           </node>
           <node concept="37vLTw" id="3eH6BL4dj9O" role="3uHU7B">
-            <ref role="3cqZAo" node="3eH6BL4dj9I" resolve="i" />
+            <ref role="3cqZAo" node="3eH6BL4dj9I" resolve="actualSize" />
           </node>
         </node>
         <node concept="9aQIb" id="1mDdTGbiDg" role="9aQIa">
@@ -397,10 +397,10 @@
             </node>
             <node concept="3y3z36" id="aPhVmWU8ej" role="3clFbw">
               <node concept="37vLTw" id="3eH6BL4dlbe" role="3uHU7w">
-                <ref role="3cqZAo" node="3eH6BL4dlb8" resolve="i" />
+                <ref role="3cqZAo" node="3eH6BL4dlb8" resolve="actualSize" />
               </node>
               <node concept="37vLTw" id="3eH6BL4dl2Z" role="3uHU7B">
-                <ref role="3cqZAo" node="3eH6BL4dl2R" resolve="i" />
+                <ref role="3cqZAo" node="3eH6BL4dl2R" resolve="expectedSize" />
               </node>
             </node>
             <node concept="9aQIb" id="aPhVmWUhcD" role="9aQIa">

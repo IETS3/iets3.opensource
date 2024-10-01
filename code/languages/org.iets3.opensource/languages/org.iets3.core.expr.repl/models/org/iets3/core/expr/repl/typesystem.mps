@@ -902,7 +902,7 @@
                       <property role="TrG5h" value="elementSupertype" />
                       <node concept="3Tqbb2" id="2NHHcg2MxT1" role="1tU5fm" />
                       <node concept="2YIFZM" id="3eH6BL4AqqM" role="33vP2m">
-                        <ref role="37wK5l" to="t4jv:3eH6BL4$D3W" resolve="calcCommonTypeCore" />
+                        <ref role="37wK5l" to="t4jv:3LAzj3xx1f6" resolve="calcCommonTypeCore" />
                         <ref role="1Pybhc" to="t4jv:12WRc28WG_m" resolve="TypingHelper" />
                         <node concept="37vLTw" id="3eH6BL4AqqN" role="37wK5m">
                           <ref role="3cqZAo" node="5aHkq2w3YD$" resolve="types" />
@@ -1878,10 +1878,10 @@
         </node>
         <node concept="3clFbC" id="4YhD5cZp6pa" role="3clFbw">
           <node concept="37vLTw" id="3eH6BL4d5C0" role="3uHU7w">
-            <ref role="3cqZAo" node="3eH6BL4d5BQ" resolve="i" />
+            <ref role="3cqZAo" node="3eH6BL4d5BQ" resolve="expectedSize" />
           </node>
           <node concept="37vLTw" id="3eH6BL4d5PE" role="3uHU7B">
-            <ref role="3cqZAo" node="3eH6BL4d5PA" resolve="i" />
+            <ref role="3cqZAo" node="3eH6BL4d5PA" resolve="actualSize" />
           </node>
         </node>
         <node concept="9aQIb" id="4YhD5cZph2G" role="9aQIa">

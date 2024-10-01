@@ -2423,7 +2423,7 @@
                   <property role="Xl_RC" value="for each exponent only one expression allowed, but " />
                 </node>
                 <node concept="37vLTw" id="3iWt5efMyLg" role="3uHU7w">
-                  <ref role="3cqZAo" node="3iWt5efMpzi" resolve="nonUnniqueExponent" />
+                  <ref role="3cqZAo" node="3iWt5efMpzi" resolve="nonUniqueExponent" />
                 </node>
               </node>
             </node>
@@ -2435,7 +2435,7 @@
         </node>
         <node concept="2OqwBi" id="3iWt5efMvP8" role="3clFbw">
           <node concept="37vLTw" id="3iWt5efMpzl" role="2Oq$k0">
-            <ref role="3cqZAo" node="3iWt5efMpzi" resolve="nonUnniqueExponent" />
+            <ref role="3cqZAo" node="3iWt5efMpzi" resolve="nonUniqueExponent" />
           </node>
           <node concept="17RvpY" id="3iWt5efMxjt" role="2OqNvi" />
         </node>

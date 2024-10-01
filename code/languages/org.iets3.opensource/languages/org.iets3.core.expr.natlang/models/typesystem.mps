@@ -278,10 +278,10 @@
         </node>
         <node concept="3y3z36" id="49WTic8gyr6" role="3clFbw">
           <node concept="37vLTw" id="3eH6BL4cZ$E" role="3uHU7w">
-            <ref role="3cqZAo" node="3eH6BL4cZ$w" resolve="i" />
+            <ref role="3cqZAo" node="3eH6BL4cZ$w" resolve="expectedSize" />
           </node>
           <node concept="37vLTw" id="3eH6BL4cZt7" role="3uHU7B">
-            <ref role="3cqZAo" node="3eH6BL4cZt1" resolve="i" />
+            <ref role="3cqZAo" node="3eH6BL4cZt1" resolve="actualSize" />
           </node>
         </node>
         <node concept="9aQIb" id="49WTic8gDnv" role="9aQIa">
