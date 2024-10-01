@@ -92,9 +92,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -168,7 +166,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
@@ -904,21 +901,13 @@
                     <node concept="3cpWsn" id="2NHHcg2MxT6" role="3cpWs9">
                       <property role="TrG5h" value="elementSupertype" />
                       <node concept="3Tqbb2" id="2NHHcg2MxT1" role="1tU5fm" />
-                      <node concept="2YIFZM" id="5wDe8wA6zsA" role="33vP2m">
-                        <ref role="37wK5l" to="xfg9:2NHHcg2KyAX" resolve="computeSupertype" />
-                        <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-                        <node concept="37vLTw" id="2NHHcg2MxT8" role="37wK5m">
+                      <node concept="2YIFZM" id="3eH6BL4AqqM" role="33vP2m">
+                        <ref role="37wK5l" to="t4jv:3eH6BL4$D3W" resolve="calcCommonTypeCore" />
+                        <ref role="1Pybhc" to="t4jv:12WRc28WG_m" resolve="TypingHelper" />
+                        <node concept="37vLTw" id="3eH6BL4AqqN" role="37wK5m">
                           <ref role="3cqZAo" node="5aHkq2w3YD$" resolve="types" />
                         </node>
-                        <node concept="3clFbT" id="2NHHcg2MxT9" role="37wK5m">
-                          <property role="3clFbU" value="false" />
-                        </node>
-                        <node concept="2OqwBi" id="2NHHcg2MxTa" role="37wK5m">
-                          <node concept="2QUAEa" id="2NHHcg2MxTb" role="2Oq$k0" />
-                          <node concept="liA8E" id="2NHHcg2MxTc" role="2OqNvi">
-                            <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
-                          </node>
-                        </node>
+                        <node concept="3clFbT" id="3eH6BL4AqqO" role="37wK5m" />
                       </node>
                     </node>
                   </node>
@@ -932,17 +921,12 @@
                         <node concept="1YBJjd" id="TcaAhODrtH" role="1urrMF">
                           <ref role="1YBMHb" node="5avmkTFlBXd" resolve="re" />
                         </node>
-                        <node concept="3cpWs3" id="TcaAhOJ8Y$" role="2MkJ7o">
-                          <node concept="2OqwBi" id="TcaAhODq_G" role="3uHU7w">
-                            <node concept="Jnkvi" id="TcaAhODqaP" role="2Oq$k0">
-                              <ref role="1M0zk5" node="TcaAhODpap" resolve="errorType" />
-                            </node>
-                            <node concept="3TrcHB" id="TcaAhODr7d" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpd4:hfSilrU" resolve="errorText" />
-                            </node>
+                        <node concept="2OqwBi" id="TcaAhODq_G" role="2MkJ7o">
+                          <node concept="Jnkvi" id="TcaAhODqaP" role="2Oq$k0">
+                            <ref role="1M0zk5" node="TcaAhODpap" resolve="errorType" />
                           </node>
-                          <node concept="Xl_RD" id="TcaAhOJ7h3" role="3uHU7B">
-                            <property role="Xl_RC" value="no common supertype found: " />
+                          <node concept="3TrcHB" id="TcaAhODr7d" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpd4:hfSilrU" resolve="errorText" />
                           </node>
                         </node>
                       </node>

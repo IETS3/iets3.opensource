@@ -17,6 +17,7 @@
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="8q4f" ref="r:2c0153cb-f6d9-49f3-b0fe-e4f726698ef0(org.iets3.core.expr.collections.behavior)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
     <import index="1jcu" ref="r:729fa0c7-b4e4-42b1-acfe-71017c020a49(org.iets3.analysis.base.behavior)" implicit="true" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" implicit="true" />
@@ -467,15 +468,13 @@
                         <property role="TrG5h" value="elementSupertype" />
                         <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="7rdMSLlpzv3" role="1tU5fm" />
-                        <node concept="2YIFZM" id="7rdMSLlpzv4" role="33vP2m">
-                          <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                        <node concept="2YIFZM" id="5z7iOw3P$D" role="33vP2m">
                           <ref role="37wK5l" to="xfg9:2NHHcg2KyAX" resolve="computeSupertype" />
-                          <node concept="37vLTw" id="7rdMSLlpzv5" role="37wK5m">
+                          <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                          <node concept="37vLTw" id="5z7iOw3PRY" role="37wK5m">
                             <ref role="3cqZAo" node="7rdMSLlpzwr" resolve="types" />
                           </node>
-                          <node concept="3clFbT" id="7rdMSLlpzv6" role="37wK5m">
-                            <property role="3clFbU" value="false" />
-                          </node>
+                          <node concept="3clFbT" id="5z7iOw3Qza" role="37wK5m" />
                           <node concept="2OqwBi" id="7rdMSLlpzv7" role="37wK5m">
                             <node concept="2QUAEa" id="7rdMSLlpzv8" role="2Oq$k0" />
                             <node concept="liA8E" id="7rdMSLlpzv9" role="2OqNvi">
@@ -1972,23 +1971,15 @@
                       <node concept="3cpWsn" id="2ufoZQJ05rA" role="3cpWs9">
                         <property role="TrG5h" value="elementSupertype" />
                         <property role="3TUv4t" value="true" />
-                        <node concept="2YIFZM" id="5wDe8wA6zs$" role="33vP2m">
-                          <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-                          <ref role="37wK5l" to="xfg9:2NHHcg2KyAX" resolve="computeSupertype" />
-                          <node concept="37vLTw" id="2ufoZQJ05rD" role="37wK5m">
+                        <node concept="3Tqbb2" id="2ufoZQJ05rB" role="1tU5fm" />
+                        <node concept="2YIFZM" id="3eH6BL4Apwc" role="33vP2m">
+                          <ref role="37wK5l" to="t4jv:3eH6BL4$D3W" resolve="calcCommonTypeCore" />
+                          <ref role="1Pybhc" to="t4jv:12WRc28WG_m" resolve="TypingHelper" />
+                          <node concept="37vLTw" id="3eH6BL4Apwd" role="37wK5m">
                             <ref role="3cqZAo" node="2ufoZQJ05sr" resolve="types" />
                           </node>
-                          <node concept="3clFbT" id="2ufoZQJ05rE" role="37wK5m">
-                            <property role="3clFbU" value="false" />
-                          </node>
-                          <node concept="2OqwBi" id="2ufoZQJ05rF" role="37wK5m">
-                            <node concept="2QUAEa" id="2ufoZQJ05rG" role="2Oq$k0" />
-                            <node concept="liA8E" id="2ufoZQJ05rH" role="2OqNvi">
-                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
-                            </node>
-                          </node>
+                          <node concept="3clFbT" id="3eH6BL4Apwe" role="37wK5m" />
                         </node>
-                        <node concept="3Tqbb2" id="2ufoZQJ05rB" role="1tU5fm" />
                       </node>
                     </node>
                     <node concept="Jncv_" id="TcaAhOIN_j" role="3cqZAp">
@@ -2001,17 +1992,12 @@
                           <node concept="1YBJjd" id="TcaAhOIN_n" role="1urrMF">
                             <ref role="1YBMHb" node="7GwCuf2WbPx" resolve="literal" />
                           </node>
-                          <node concept="3cpWs3" id="TcaAhOJ6Rx" role="2MkJ7o">
-                            <node concept="2OqwBi" id="TcaAhOIN_o" role="3uHU7w">
-                              <node concept="Jnkvi" id="TcaAhOIN_p" role="2Oq$k0">
-                                <ref role="1M0zk5" node="TcaAhOIN_s" resolve="errorType" />
-                              </node>
-                              <node concept="3TrcHB" id="TcaAhOIN_q" role="2OqNvi">
-                                <ref role="3TsBF5" to="tpd4:hfSilrU" resolve="errorText" />
-                              </node>
+                          <node concept="2OqwBi" id="TcaAhOIN_o" role="2MkJ7o">
+                            <node concept="Jnkvi" id="TcaAhOIN_p" role="2Oq$k0">
+                              <ref role="1M0zk5" node="TcaAhOIN_s" resolve="errorType" />
                             </node>
-                            <node concept="Xl_RD" id="TcaAhOJ7h3" role="3uHU7B">
-                              <property role="Xl_RC" value="no common supertype found:" />
+                            <node concept="3TrcHB" id="TcaAhOIN_q" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpd4:hfSilrU" resolve="errorText" />
                             </node>
                           </node>
                         </node>
