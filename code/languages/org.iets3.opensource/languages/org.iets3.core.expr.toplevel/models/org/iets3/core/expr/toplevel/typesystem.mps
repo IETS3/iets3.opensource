@@ -4413,5 +4413,36 @@
       <ref role="1YaFvo" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5QvrxSgK6Qt">
+    <property role="TrG5h" value="typeof_Typedef" />
+    <property role="3GE5qa" value="typedef" />
+    <node concept="3clFbS" id="5QvrxSgK6Qu" role="18ibNy">
+      <node concept="1Z5TYs" id="5QvrxSgK7ks" role="3cqZAp">
+        <node concept="mw_s8" id="5QvrxSgK7kC" role="1ZfhKB">
+          <node concept="1Z2H0r" id="5QvrxSgK7k$" role="mwGJk">
+            <node concept="2OqwBi" id="5QvrxSgK7FY" role="1Z2MuG">
+              <node concept="1YBJjd" id="5QvrxSgK7kQ" role="2Oq$k0">
+                <ref role="1YBMHb" node="5QvrxSgK6Qw" resolve="typedef" />
+              </node>
+              <node concept="3TrEf2" id="5QvrxSgK8yv" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:6HHp2WngtTF" resolve="originalType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5QvrxSgK7kv" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5QvrxSgK6Su" role="mwGJk">
+            <node concept="1YBJjd" id="5QvrxSgK6Ul" role="1Z2MuG">
+              <ref role="1YBMHb" node="5QvrxSgK6Qw" resolve="typedef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5QvrxSgK6Qw" role="1YuTPh">
+      <property role="TrG5h" value="typedef" />
+      <ref role="1YaFvo" to="yv47:6HHp2WngtTC" resolve="Typedef" />
+    </node>
+  </node>
 </model>
 
