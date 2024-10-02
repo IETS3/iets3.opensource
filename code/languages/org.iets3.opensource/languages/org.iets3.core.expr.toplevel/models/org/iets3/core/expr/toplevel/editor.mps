@@ -2967,7 +2967,7 @@
       <node concept="2iRfu4" id="7cphKbLhAKW" role="2iSdaV" />
       <node concept="3F0ifn" id="7cphKbLawOi" role="3EZMnx">
         <property role="3F0ifm" value="record" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         <node concept="OXEIz" id="yfp7edvEmI" role="P5bDN">
           <node concept="UkePV" id="yfp7edvEmJ" role="OY2wv">
             <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" resolve="Type" />
