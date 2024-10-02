@@ -188,11 +188,23 @@
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
+      </concept>
+      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
+        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
+      </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
       </concept>
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1859,6 +1871,58 @@
         </node>
       </node>
       <node concept="17QB3L" id="1VqmZU7iMYV" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="41vYFO2K_gs">
+    <property role="3GE5qa" value="rat" />
+    <ref role="13h7C2" to="1qv1:5mz5Tt_h1dJ" resolve="RationalType" />
+    <node concept="13hLZK" id="41vYFO2K_gt" role="13h7CW">
+      <node concept="3clFbS" id="41vYFO2K_gu" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="41vYFO2K_gJ" role="13h7CS">
+      <property role="TrG5h" value="createDefaultVarExpr" />
+      <ref role="13i0hy" to="pbu6:60Qa1k_nI2O" resolve="createDefaultVarExpr" />
+      <node concept="3Tm1VV" id="41vYFO2K_gK" role="1B3o_S" />
+      <node concept="3clFbS" id="41vYFO2K_gN" role="3clF47">
+        <node concept="3clFbF" id="41vYFO2K_wP" role="3cqZAp">
+          <node concept="2pJPEk" id="41vYFO2K_wN" role="3clFbG">
+            <node concept="2pJPED" id="41vYFO2K_wO" role="2pJPEn">
+              <ref role="2pJxaS" to="1qv1:4iu6t1eAWP6" resolve="FractionExpression" />
+              <node concept="2pIpSj" id="41vYFO2K_Ab" role="2pJxcM">
+                <ref role="2pIpSl" to="1qv1:4iu6t1eAWP7" resolve="numerator" />
+                <node concept="2pJPED" id="41vYFO2K_Do" role="28nt2d">
+                  <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
+                  <node concept="2pJxcG" id="41vYFO2K_G_" role="2pJxcM">
+                    <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                    <node concept="WxPPo" id="41vYFO2KA7a" role="28ntcv">
+                      <node concept="Xl_RD" id="41vYFO2KA79" role="WxPPp">
+                        <property role="Xl_RC" value="0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2pIpSj" id="41vYFO2KA7F" role="2pJxcM">
+                <ref role="2pIpSl" to="1qv1:4iu6t1eAWPa" resolve="denominator" />
+                <node concept="2pJPED" id="41vYFO2KAaE" role="28nt2d">
+                  <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
+                  <node concept="2pJxcG" id="41vYFO2KAdR" role="2pJxcM">
+                    <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                    <node concept="WxPPo" id="41vYFO2KAec" role="28ntcv">
+                      <node concept="Xl_RD" id="41vYFO2KAeb" role="WxPPp">
+                        <property role="Xl_RC" value="1" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="41vYFO2K_gO" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      </node>
     </node>
   </node>
 </model>
