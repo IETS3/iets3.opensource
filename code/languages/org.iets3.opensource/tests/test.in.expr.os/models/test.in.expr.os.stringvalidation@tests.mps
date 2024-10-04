@@ -58,6 +58,9 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_">
+        <child id="6932772747669876273" name="type" index="15qgo$" />
+      </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
@@ -3316,6 +3319,19 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="41vYFO3dQCA" role="_iOnB" />
+    <node concept="_fkuM" id="41vYFO3dQCE" role="_iOnB">
+      <property role="TrG5h" value="defaultValues" />
+      <node concept="_fkuZ" id="41vYFO3dQCH" role="_fkp5">
+        <node concept="_fku$" id="41vYFO3dQCI" role="_fkur" />
+        <node concept="15qgo_" id="41vYFO3dQCP" role="_fkuY">
+          <node concept="1afqwn" id="41vYFO3dQCY" role="15qgo$" />
+        </node>
+        <node concept="2L0563" id="41vYFO3dQD8" role="_fkuS">
+          <node concept="30bdrP" id="41vYFO3dQV6" role="2L6No8" />
         </node>
       </node>
     </node>

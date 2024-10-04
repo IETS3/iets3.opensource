@@ -1223,7 +1223,7 @@
       <node concept="2iRfu4" id="55lPkJGZxpa" role="2iSdaV" />
       <node concept="3F0ifn" id="55lPkJGZxp3" role="3EZMnx">
         <property role="3F0ifm" value="lookup" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         <node concept="OXEIz" id="yfp7edvEmO" role="P5bDN">
           <node concept="UkePV" id="yfp7edvEmP" role="OY2wv">
             <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" resolve="Type" />
