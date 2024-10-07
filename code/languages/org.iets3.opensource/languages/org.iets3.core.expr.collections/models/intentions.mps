@@ -137,7 +137,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -764,7 +763,7 @@
   </node>
   <node concept="2S6QgY" id="65S0ZNFKldA">
     <property role="3GE5qa" value="collection" />
-    <property role="TrG5h" value="toggleCollectionSIzeHexMaxValue" />
+    <property role="TrG5h" value="toggleCollectionSizeHexMaxValue" />
     <ref role="2ZfgGC" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
     <node concept="2S6ZIM" id="65S0ZNFKldB" role="2ZfVej">
       <node concept="3clFbS" id="65S0ZNFKldC" role="2VODD2">
@@ -776,18 +775,15 @@
             <node concept="Xl_RD" id="65S0ZNFKldG" role="3K4GZi">
               <property role="Xl_RC" value="Convert Maximum to Hexadecimal Value" />
             </node>
-            <node concept="2OqwBi" id="65S0ZNFKldH" role="3K4Cdx">
-              <node concept="2OqwBi" id="65S0ZNFKldI" role="2Oq$k0">
-                <node concept="2Sf5sV" id="65S0ZNFKldJ" role="2Oq$k0" />
-                <node concept="2qgKlT" id="65S0ZNFKldK" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:2KEzU_jNnNP" resolve="getHexValueForAttribute" />
-                  <node concept="355D3s" id="65S0ZNFKldL" role="37wK5m">
-                    <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
-                    <ref role="355D3u" to="700h:19PglA20qXK" resolve="max" />
-                  </node>
+            <node concept="2OqwBi" id="65S0ZNFKldI" role="3K4Cdx">
+              <node concept="2Sf5sV" id="65S0ZNFKldJ" role="2Oq$k0" />
+              <node concept="2qgKlT" id="65S0ZNFKldK" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:5JKfLQ8i_uc" resolve="hasHexValue" />
+                <node concept="355D3s" id="65S0ZNFKldL" role="37wK5m">
+                  <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
+                  <ref role="355D3u" to="700h:19PglA20qXK" resolve="max" />
                 </node>
               </node>
-              <node concept="3x8VRR" id="65S0ZNFKldP" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -817,24 +813,6 @@
     </node>
     <node concept="2SaL7w" id="65S0ZNFKle3" role="2ZfVeh">
       <node concept="3clFbS" id="65S0ZNFKle4" role="2VODD2">
-        <node concept="3cpWs8" id="65S0ZNFKle5" role="3cqZAp">
-          <node concept="3cpWsn" id="65S0ZNFKle6" role="3cpWs9">
-            <property role="TrG5h" value="hexValue" />
-            <node concept="3Tqbb2" id="65S0ZNFKle7" role="1tU5fm">
-              <ref role="ehGHo" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
-            </node>
-            <node concept="2OqwBi" id="65S0ZNFKle8" role="33vP2m">
-              <node concept="2Sf5sV" id="65S0ZNFKle9" role="2Oq$k0" />
-              <node concept="2qgKlT" id="65S0ZNFKlea" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:2KEzU_jNnNP" resolve="getHexValueForAttribute" />
-                <node concept="355D3s" id="65S0ZNFKleb" role="37wK5m">
-                  <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
-                  <ref role="355D3u" to="700h:19PglA20qXK" resolve="max" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="65S0ZNFKlef" role="3cqZAp">
           <node concept="3clFbS" id="65S0ZNFKleg" role="3clFbx">
             <node concept="3cpWs6" id="65S0ZNFKleh" role="3cqZAp">
@@ -843,11 +821,15 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="65S0ZNFKlej" role="3clFbw">
-            <node concept="37vLTw" id="65S0ZNFKlek" role="2Oq$k0">
-              <ref role="3cqZAo" node="65S0ZNFKle6" resolve="hexValue" />
+          <node concept="2OqwBi" id="5JKfLQ8iGDa" role="3clFbw">
+            <node concept="2Sf5sV" id="5JKfLQ8iGp2" role="2Oq$k0" />
+            <node concept="2qgKlT" id="5JKfLQ8iH8Y" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5JKfLQ8i_uc" resolve="hasHexValue" />
+              <node concept="355D3s" id="5JKfLQ8iHb4" role="37wK5m">
+                <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
+                <ref role="355D3u" to="700h:19PglA20qXK" resolve="max" />
+              </node>
             </node>
-            <node concept="3x8VRR" id="65S0ZNFKlel" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbH" id="65S0ZNFKlem" role="3cqZAp" />
@@ -891,18 +873,15 @@
             <node concept="Xl_RD" id="65S0ZNFKd4B" role="3K4GZi">
               <property role="Xl_RC" value="Convert Minimum to Hexadecimal Value" />
             </node>
-            <node concept="2OqwBi" id="65S0ZNFKd4C" role="3K4Cdx">
-              <node concept="2OqwBi" id="65S0ZNFKd4D" role="2Oq$k0">
-                <node concept="2Sf5sV" id="65S0ZNFKd4E" role="2Oq$k0" />
-                <node concept="2qgKlT" id="65S0ZNFKd4F" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:2KEzU_jNnNP" resolve="getHexValueForAttribute" />
-                  <node concept="355D3s" id="65S0ZNFKd4G" role="37wK5m">
-                    <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
-                    <ref role="355D3u" to="700h:19PglA20qXJ" resolve="min" />
-                  </node>
+            <node concept="2OqwBi" id="65S0ZNFKd4D" role="3K4Cdx">
+              <node concept="2Sf5sV" id="65S0ZNFKd4E" role="2Oq$k0" />
+              <node concept="2qgKlT" id="65S0ZNFKd4F" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:5JKfLQ8i_uc" resolve="hasHexValue" />
+                <node concept="355D3s" id="65S0ZNFKd4G" role="37wK5m">
+                  <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
+                  <ref role="355D3u" to="700h:19PglA20qXJ" resolve="min" />
                 </node>
               </node>
-              <node concept="3x8VRR" id="65S0ZNFKd4K" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -932,24 +911,6 @@
     </node>
     <node concept="2SaL7w" id="65S0ZNFKiJ9" role="2ZfVeh">
       <node concept="3clFbS" id="65S0ZNFKiJa" role="2VODD2">
-        <node concept="3cpWs8" id="65S0ZNFKdTa" role="3cqZAp">
-          <node concept="3cpWsn" id="65S0ZNFKdTb" role="3cpWs9">
-            <property role="TrG5h" value="hexValue" />
-            <node concept="3Tqbb2" id="65S0ZNFKdTc" role="1tU5fm">
-              <ref role="ehGHo" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
-            </node>
-            <node concept="2OqwBi" id="65S0ZNFKdTd" role="33vP2m">
-              <node concept="2Sf5sV" id="65S0ZNFKdTe" role="2Oq$k0" />
-              <node concept="2qgKlT" id="65S0ZNFKdTf" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:2KEzU_jNnNP" resolve="getHexValueForAttribute" />
-                <node concept="355D3s" id="65S0ZNFKdTg" role="37wK5m">
-                  <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
-                  <ref role="355D3u" to="700h:19PglA20qXJ" resolve="min" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="65S0ZNFKdTk" role="3cqZAp">
           <node concept="3clFbS" id="65S0ZNFKdTl" role="3clFbx">
             <node concept="3cpWs6" id="65S0ZNFKdTm" role="3cqZAp">
@@ -958,11 +919,15 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="65S0ZNFKdTo" role="3clFbw">
-            <node concept="37vLTw" id="65S0ZNFKdTp" role="2Oq$k0">
-              <ref role="3cqZAo" node="65S0ZNFKdTb" resolve="hexValue" />
+          <node concept="2OqwBi" id="5JKfLQ8iHLt" role="3clFbw">
+            <node concept="2Sf5sV" id="5JKfLQ8iHLu" role="2Oq$k0" />
+            <node concept="2qgKlT" id="5JKfLQ8iHLv" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5JKfLQ8i_uc" resolve="hasHexValue" />
+              <node concept="355D3s" id="5JKfLQ8iHLw" role="37wK5m">
+                <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
+                <ref role="355D3u" to="700h:19PglA20qXJ" resolve="min" />
+              </node>
             </node>
-            <node concept="3x8VRR" id="65S0ZNFKdTq" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbH" id="65S0ZNFKdTr" role="3cqZAp" />

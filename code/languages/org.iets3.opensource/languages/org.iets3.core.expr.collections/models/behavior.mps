@@ -220,6 +220,10 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -3166,10 +3170,17 @@
                   <node concept="Xl_RD" id="3tudP__$HH8" role="3uHU7B">
                     <property role="Xl_RC" value="[" />
                   </node>
-                  <node concept="2OqwBi" id="3tudP__$Ik7" role="3uHU7w">
-                    <node concept="13iPFW" id="3tudP__$I7m" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="3tudP__$Iqi" role="2OqNvi">
-                      <ref role="3TsBF5" to="700h:19PglA20qXJ" resolve="min" />
+                  <node concept="BsUDl" id="5JKfLQ8is0C" role="3uHU7w">
+                    <ref role="37wK5l" to="pbu6:5JKfLQ8iqvP" resolve="getHexOrDefault" />
+                    <node concept="355D3s" id="5JKfLQ8is34" role="37wK5m">
+                      <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
+                      <ref role="355D3u" to="700h:19PglA20qXJ" resolve="min" />
+                    </node>
+                    <node concept="2OqwBi" id="5JKfLQ8iso0" role="37wK5m">
+                      <node concept="13iPFW" id="5JKfLQ8is5E" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="5JKfLQ8isAV" role="2OqNvi">
+                        <ref role="3TsBF5" to="700h:19PglA20qXJ" resolve="min" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -3177,10 +3188,17 @@
                   <property role="Xl_RC" value="|" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="3tudP__$JAY" role="3uHU7w">
-                <node concept="13iPFW" id="3tudP__$Jrq" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3tudP__$JNf" role="2OqNvi">
-                  <ref role="3TsBF5" to="700h:19PglA20qXK" resolve="max" />
+              <node concept="BsUDl" id="5JKfLQ8it3b" role="3uHU7w">
+                <ref role="37wK5l" to="pbu6:5JKfLQ8iqvP" resolve="getHexOrDefault" />
+                <node concept="355D3s" id="5JKfLQ8it3c" role="37wK5m">
+                  <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
+                  <ref role="355D3u" to="700h:19PglA20qXK" resolve="max" />
+                </node>
+                <node concept="2OqwBi" id="5JKfLQ8it3d" role="37wK5m">
+                  <node concept="13iPFW" id="5JKfLQ8it3e" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5JKfLQ8it3f" role="2OqNvi">
+                    <ref role="3TsBF5" to="700h:19PglA20qXK" resolve="max" />
+                  </node>
                 </node>
               </node>
             </node>
