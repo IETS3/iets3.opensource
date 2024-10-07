@@ -99,9 +99,7 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
-      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_">
-        <child id="6932772747669876273" name="type_old" index="15qgo$" />
-      </concept>
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_" />
       <concept id="7849560302565679722" name="org.iets3.core.expr.base.structure.IfExpression" flags="ng" index="39w5ZF">
         <child id="606861080870797304" name="elseSection" index="pf3W8" />
         <child id="7849560302565679723" name="condition" index="39w5ZE" />
@@ -4952,7 +4950,7 @@
       <node concept="_fkuZ" id="41vYFO31vCu" role="_fkp5">
         <node concept="_fku$" id="41vYFO31vCv" role="_fkur" />
         <node concept="15qgo_" id="41vYFO31vCD" role="_fkuY">
-          <node concept="Unsod" id="41vYFO31vCM" role="15qgo$" />
+          <node concept="Unsod" id="41vYFO31vCM" role="2S399n" />
         </node>
         <node concept="UmHTt" id="41vYFO31vCX" role="_fkuS" />
       </node>

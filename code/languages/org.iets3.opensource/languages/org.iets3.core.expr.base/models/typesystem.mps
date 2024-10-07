@@ -5611,12 +5611,14 @@
                   <ref role="2pJxaS" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
                   <node concept="2pJxcG" id="3eH6BL4pycP" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpd4:hfSilrU" resolve="errorText" />
-                    <node concept="3cpWs3" id="3eH6BL4kdiL" role="28ntcv">
-                      <node concept="37vLTw" id="3eH6BL4qKk_" role="3uHU7w">
-                        <ref role="3cqZAo" node="3eH6BL4qKkm" resolve="typeInfo" />
-                      </node>
-                      <node concept="Xl_RD" id="3eH6BL4kcJZ" role="3uHU7B">
-                        <property role="Xl_RC" value="no common supertypes found for " />
+                    <node concept="WxPPo" id="3JdLLkOF4CO" role="28ntcv">
+                      <node concept="3cpWs3" id="3eH6BL4kdiL" role="WxPPp">
+                        <node concept="37vLTw" id="3eH6BL4qKk_" role="3uHU7w">
+                          <ref role="3cqZAo" node="3eH6BL4qKkm" resolve="typeInfo" />
+                        </node>
+                        <node concept="Xl_RD" id="3eH6BL4kcJZ" role="3uHU7B">
+                          <property role="Xl_RC" value="no common supertypes found for " />
+                        </node>
                       </node>
                     </node>
                   </node>

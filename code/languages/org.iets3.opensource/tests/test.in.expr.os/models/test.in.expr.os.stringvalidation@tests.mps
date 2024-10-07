@@ -44,6 +44,9 @@
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
+      </concept>
       <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
         <child id="5115872837157187954" name="expr" index="30bsDf" />
       </concept>
@@ -58,9 +61,7 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
-      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_">
-        <child id="6932772747669876273" name="type_old" index="15qgo$" />
-      </concept>
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_" />
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
@@ -3328,7 +3329,7 @@
       <node concept="_fkuZ" id="41vYFO3dQCH" role="_fkp5">
         <node concept="_fku$" id="41vYFO3dQCI" role="_fkur" />
         <node concept="15qgo_" id="41vYFO3dQCP" role="_fkuY">
-          <node concept="1afqwn" id="41vYFO3dQCY" role="15qgo$" />
+          <node concept="1afqwn" id="41vYFO3dQCY" role="2S399n" />
         </node>
         <node concept="2L0563" id="41vYFO3dQD8" role="_fkuS">
           <node concept="30bdrP" id="41vYFO3dQV6" role="2L6No8" />

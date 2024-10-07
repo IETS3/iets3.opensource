@@ -318,9 +318,7 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
-      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_">
-        <child id="6932772747669876273" name="type_old" index="15qgo$" />
-      </concept>
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_" />
       <concept id="7849560302565679722" name="org.iets3.core.expr.base.structure.IfExpression" flags="ng" index="39w5ZF">
         <child id="606861080870797304" name="elseSection" index="pf3W8" />
         <child id="7849560302565679723" name="condition" index="39w5ZE" />
@@ -17683,7 +17681,7 @@
       <node concept="_fkuZ" id="60Qa1k_r2kx" role="_fkp5">
         <node concept="_fku$" id="60Qa1k_r2ky" role="_fkur" />
         <node concept="15qgo_" id="60Qa1k_s1UT" role="_fkuY">
-          <node concept="GZN9E" id="41vYFO3dLGr" role="15qgo$" />
+          <node concept="GZN9E" id="41vYFO3dLGr" role="2S399n" />
         </node>
         <node concept="GZN9F" id="41vYFO3dLH4" role="_fkuS" />
       </node>

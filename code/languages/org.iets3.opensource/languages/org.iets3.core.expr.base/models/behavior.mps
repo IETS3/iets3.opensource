@@ -10437,7 +10437,7 @@
               <ref role="JncvD" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
               <node concept="2OqwBi" id="41vYFO2JkoL" role="JncvB">
                 <node concept="2GrUjf" id="41vYFO2JkoM" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="41vYFO2JkoC" resolve="member" />
+                  <ref role="2Gs0qQ" node="41vYFO2JkoC" resolve="type" />
                 </node>
                 <node concept="3JvlWi" id="41vYFO2JpG0" role="2OqNvi" />
               </node>
@@ -10453,7 +10453,7 @@
                       </node>
                     </node>
                     <node concept="37vLTw" id="41vYFO2JkoU" role="37vLTJ">
-                      <ref role="3cqZAo" node="41vYFO2JkoF" resolve="memberExpression" />
+                      <ref role="3cqZAo" node="41vYFO2JkoF" resolve="typeExpression" />
                     </node>
                   </node>
                 </node>
@@ -10475,7 +10475,7 @@
                 </node>
                 <node concept="TSZUe" id="41vYFO2Jkp2" role="2OqNvi">
                   <node concept="37vLTw" id="41vYFO2Jkp3" role="25WWJ7">
-                    <ref role="3cqZAo" node="41vYFO2JkoF" resolve="memberExpression" />
+                    <ref role="3cqZAo" node="41vYFO2JkoF" resolve="typeExpression" />
                   </node>
                 </node>
               </node>
