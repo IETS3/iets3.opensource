@@ -469,6 +469,9 @@
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
       </concept>
@@ -28262,6 +28265,78 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="6mBw0A_sUtS" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="copyHexValue" />
+      <node concept="3Tm1VV" id="6mBw0A_sUtT" role="1B3o_S" />
+      <node concept="3cqZAl" id="6mBw0A_sUQi" role="3clF45" />
+      <node concept="3clFbS" id="6mBw0A_sUtV" role="3clF47">
+        <node concept="3cpWs8" id="6mBw0A_sWCG" role="3cqZAp">
+          <node concept="3cpWsn" id="6mBw0A_sWCH" role="3cpWs9">
+            <property role="TrG5h" value="hexValue" />
+            <node concept="3Tqbb2" id="6mBw0A_sWAC" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
+            </node>
+            <node concept="BsUDl" id="6mBw0A_sWCI" role="33vP2m">
+              <ref role="37wK5l" node="2KEzU_jNnNP" resolve="getHexValue" />
+              <node concept="37vLTw" id="6mBw0A_sWHP" role="37wK5m">
+                <ref role="3cqZAo" node="6mBw0A_sV18" resolve="fromProperty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6mBw0A_sV7I" role="3cqZAp">
+          <node concept="3clFbS" id="6mBw0A_sV7K" role="3clFbx">
+            <node concept="3clFbF" id="6mBw0A_sVF_" role="3cqZAp">
+              <node concept="2OqwBi" id="6mBw0A_sVQn" role="3clFbG">
+                <node concept="37vLTw" id="6mBw0A_sVFz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6mBw0A_sWM1" resolve="target" />
+                </node>
+                <node concept="2qgKlT" id="6mBw0A_sW1Z" role="2OqNvi">
+                  <ref role="37wK5l" node="6QsMU1GWQsW" resolve="setHexValue" />
+                  <node concept="37vLTw" id="6mBw0A_sWq6" role="37wK5m">
+                    <ref role="3cqZAo" node="6mBw0A_sWnA" resolve="toProperty" />
+                  </node>
+                  <node concept="2OqwBi" id="6mBw0A_sY2q" role="37wK5m">
+                    <node concept="37vLTw" id="6mBw0A_sWCK" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6mBw0A_sWCH" resolve="hexValue" />
+                    </node>
+                    <node concept="3TrcHB" id="6mBw0A_sYkt" role="2OqNvi">
+                      <ref role="3TsBF5" to="hm2y:5Ys_ngSnA9j" resolve="value" />
+                    </node>
+                  </node>
+                  <node concept="3clFbT" id="6mBw0A_sYne" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6mBw0A_sX6Z" role="3clFbw">
+            <node concept="37vLTw" id="6mBw0A_sWTP" role="2Oq$k0">
+              <ref role="3cqZAo" node="6mBw0A_sWCH" resolve="hexValue" />
+            </node>
+            <node concept="3x8VRR" id="6mBw0A_sXnz" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6mBw0A_sV18" role="3clF46">
+        <property role="TrG5h" value="fromProperty" />
+        <node concept="3uibUv" id="6mBw0A_sV17" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6mBw0A_sWnA" role="3clF46">
+        <property role="TrG5h" value="toProperty" />
+        <node concept="3uibUv" id="6mBw0A_sWnB" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6mBw0A_sWM1" role="3clF46">
+        <property role="TrG5h" value="target" />
+        <node concept="3Tqbb2" id="6mBw0A_sVsj" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="5JKfLQ8iqvP" role="13h7CS">
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getHexValueOrDefault" />
@@ -28331,13 +28406,14 @@
       <node concept="3clFbS" id="5JKfLQ9g2r8" role="3clF47">
         <node concept="3clFbF" id="5JKfLQ9g2Yd" role="3cqZAp">
           <node concept="BsUDl" id="5JKfLQ9g2Yc" role="3clFbG">
-            <ref role="37wK5l" node="6QsMU1GWQsW" resolve="updateHexValue" />
+            <ref role="37wK5l" node="6QsMU1GWQsW" resolve="setHexValue" />
             <node concept="37vLTw" id="5JKfLQ9g2YP" role="37wK5m">
               <ref role="3cqZAo" node="5JKfLQ9g2Wm" resolve="property" />
             </node>
-            <node concept="Xl_RD" id="5JKfLQ9m23T" role="37wK5m">
-              <property role="Xl_RC" value="0x0" />
+            <node concept="BsUDl" id="6mBw0A$JawT" role="37wK5m">
+              <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
             </node>
+            <node concept="3clFbT" id="4YiHwWVLX_u" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -28357,43 +28433,30 @@
           <node concept="3clFbS" id="65S0ZNFEQv4" role="3clFbx">
             <node concept="3clFbF" id="65S0ZNFESqu" role="3cqZAp">
               <node concept="BsUDl" id="65S0ZNFESqt" role="3clFbG">
-                <ref role="37wK5l" node="6QsMU1GWQsW" resolve="updateHexValue" />
+                <ref role="37wK5l" node="6QsMU1GWQsW" resolve="setHexValue" />
                 <node concept="37vLTw" id="65S0ZNFEWUH" role="37wK5m">
                   <ref role="3cqZAo" node="65S0ZNFEQ1t" resolve="property" />
                 </node>
-                <node concept="3cpWs3" id="65S0ZNFIOwQ" role="37wK5m">
-                  <node concept="BsUDl" id="5JKfLQ9g4$$" role="3uHU7B">
-                    <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
-                  </node>
-                  <node concept="2OqwBi" id="65S0ZNFILqE" role="3uHU7w">
-                    <node concept="2ShNRf" id="65S0ZNFIkfn" role="2Oq$k0">
-                      <node concept="1pGfFk" id="65S0ZNFIKIj" role="2ShVmc">
-                        <property role="373rjd" value="true" />
-                        <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
-                        <node concept="37vLTw" id="65S0ZNFIKVi" role="37wK5m">
-                          <ref role="3cqZAo" node="65S0ZNFEU2J" resolve="value" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="65S0ZNFILMR" role="2OqNvi">
-                      <ref role="37wK5l" to="xlxw:~BigInteger.toString(int)" resolve="toString" />
-                      <node concept="3cmrfG" id="65S0ZNFILQI" role="37wK5m">
-                        <property role="3cmrfH" value="16" />
-                      </node>
-                    </node>
-                  </node>
+                <node concept="37vLTw" id="4YiHwWVOno2" role="37wK5m">
+                  <ref role="3cqZAo" node="65S0ZNFEU2J" resolve="decimalValue" />
+                </node>
+                <node concept="3clFbT" id="4YiHwWVOnPU" role="37wK5m">
+                  <property role="3clFbU" value="true" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="9aQIb" id="65S0ZNFEUmf" role="9aQIa">
             <node concept="3clFbS" id="65S0ZNFEUmg" role="9aQI4">
-              <node concept="3clFbF" id="65S0ZNFEWc7" role="3cqZAp">
-                <node concept="BsUDl" id="65S0ZNFEWc6" role="3clFbG">
-                  <ref role="37wK5l" node="6UIgoJyGK__" resolve="removeHexValue" />
-                  <node concept="37vLTw" id="65S0ZNFEWlC" role="37wK5m">
-                    <ref role="3cqZAo" node="65S0ZNFEQ1t" resolve="property" />
+              <node concept="3clFbF" id="4YiHwWVBPD1" role="3cqZAp">
+                <node concept="2OqwBi" id="4YiHwWVBQYm" role="3clFbG">
+                  <node concept="BsUDl" id="4YiHwWVBPCZ" role="2Oq$k0">
+                    <ref role="37wK5l" node="2KEzU_jNnNP" resolve="getHexValue" />
+                    <node concept="37vLTw" id="4YiHwWVBQKD" role="37wK5m">
+                      <ref role="3cqZAo" node="65S0ZNFEQ1t" resolve="property" />
+                    </node>
                   </node>
+                  <node concept="3YRAZt" id="4YiHwWVBRmt" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -28415,13 +28478,13 @@
         </node>
       </node>
       <node concept="37vLTG" id="65S0ZNFEU2J" role="3clF46">
-        <property role="TrG5h" value="value" />
+        <property role="TrG5h" value="decimalValue" />
         <node concept="17QB3L" id="65S0ZNFEUcm" role="1tU5fm" />
       </node>
     </node>
     <node concept="13i0hz" id="6QsMU1GWQsW" role="13h7CS">
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="updateHexValue" />
+      <property role="TrG5h" value="setHexValue" />
       <node concept="3Tm1VV" id="6QsMU1GWQsX" role="1B3o_S" />
       <node concept="3clFbS" id="6QsMU1GWQsZ" role="3clF47">
         <node concept="3cpWs8" id="6QsMU1GSdaJ" role="3cqZAp">
@@ -28439,6 +28502,98 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6mBw0A_0EoW" role="3cqZAp">
+          <node concept="3clFbS" id="6mBw0A_0EoY" role="3clFbx">
+            <node concept="3clFbF" id="6mBw0A_0GSI" role="3cqZAp">
+              <node concept="37vLTI" id="6mBw0A_4LwQ" role="3clFbG">
+                <node concept="2OqwBi" id="6mBw0A_0H6H" role="37vLTJ">
+                  <node concept="37vLTw" id="6mBw0A_0GSG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6QsMU1GSdaK" resolve="hexValue" />
+                  </node>
+                  <node concept="3TrcHB" id="6mBw0A_4KOW" role="2OqNvi">
+                    <ref role="3TsBF5" to="hm2y:5Ys_ngSnA9j" resolve="value" />
+                  </node>
+                </node>
+                <node concept="BsUDl" id="6mBw0A_4MLP" role="37vLTx">
+                  <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="6mBw0A_0Jhd" role="3cqZAp">
+              <node concept="37vLTw" id="6mBw0A_4N5c" role="3cqZAk">
+                <ref role="3cqZAo" node="6QsMU1GSdaK" resolve="hexValue" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="6mBw0A_hnvi" role="3clFbw">
+            <node concept="2OqwBi" id="6mBw0A_0I8G" role="3uHU7w">
+              <node concept="2OqwBi" id="6mBw0A_0G8k" role="2Oq$k0">
+                <node concept="37vLTw" id="6mBw0A_0Ft3" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6QsMU1GSdaK" resolve="hexValue" />
+                </node>
+                <node concept="3TrcHB" id="6mBw0A_0HyT" role="2OqNvi">
+                  <ref role="3TsBF5" to="hm2y:5Ys_ngSnA9j" resolve="value" />
+                </node>
+              </node>
+              <node concept="17RlXB" id="6mBw0A_0IIB" role="2OqNvi" />
+            </node>
+            <node concept="17R0WA" id="6mBw0A_0Fga" role="3uHU7B">
+              <node concept="37vLTw" id="6mBw0A_0E_M" role="3uHU7B">
+                <ref role="3cqZAo" node="6QsMU1GWS2K" resolve="value" />
+              </node>
+              <node concept="2OqwBi" id="6mBw0A_2ubL" role="3uHU7w">
+                <node concept="BsUDl" id="6mBw0A_2tyn" role="2Oq$k0">
+                  <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
+                </node>
+                <node concept="liA8E" id="6mBw0A_2uKw" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
+                  <node concept="3cmrfG" id="6mBw0A_2ydR" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="6mBw0A_2zwb" role="37wK5m">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4YiHwWVM1Iq" role="3cqZAp">
+          <node concept="3clFbS" id="4YiHwWVM1Is" role="3clFbx">
+            <node concept="3clFbF" id="4YiHwWVM2rH" role="3cqZAp">
+              <node concept="37vLTI" id="4YiHwWVM3cj" role="3clFbG">
+                <node concept="37vLTw" id="4YiHwWVM2rF" role="37vLTJ">
+                  <ref role="3cqZAo" node="6QsMU1GWS2K" resolve="value" />
+                </node>
+                <node concept="3cpWs3" id="4YiHwWVOmg1" role="37vLTx">
+                  <node concept="BsUDl" id="4YiHwWVOmIH" role="3uHU7B">
+                    <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
+                  </node>
+                  <node concept="2OqwBi" id="4YiHwWVM3cm" role="3uHU7w">
+                    <node concept="2ShNRf" id="4YiHwWVM3cn" role="2Oq$k0">
+                      <node concept="1pGfFk" id="4YiHwWVM3co" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+                        <node concept="37vLTw" id="4YiHwWVM3cp" role="37wK5m">
+                          <ref role="3cqZAo" node="6QsMU1GWS2K" resolve="value" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="4YiHwWVM3cq" role="2OqNvi">
+                      <ref role="37wK5l" to="xlxw:~BigInteger.toString(int)" resolve="toString" />
+                      <node concept="3cmrfG" id="4YiHwWVM3cr" role="37wK5m">
+                        <property role="3cmrfH" value="16" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="4YiHwWVM2cf" role="3clFbw">
+            <ref role="3cqZAo" node="4YiHwWVLXby" resolve="isDecimal" />
           </node>
         </node>
         <node concept="3clFbJ" id="6QsMU1GSgfa" role="3cqZAp">
@@ -28536,107 +28691,12 @@
         <property role="TrG5h" value="value" />
         <node concept="17QB3L" id="6QsMU1GWSbr" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="4YiHwWVLXby" role="3clF46">
+        <property role="TrG5h" value="isDecimal" />
+        <node concept="10P_77" id="4YiHwWVLXkz" role="1tU5fm" />
+      </node>
       <node concept="3Tqbb2" id="6QsMU1GWWd$" role="3clF45">
         <ref role="ehGHo" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="6cBhYjwFGVK" role="13h7CS">
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="updateHexValueOrProperty" />
-      <node concept="3Tm1VV" id="6cBhYjwFGVL" role="1B3o_S" />
-      <node concept="3cqZAl" id="6cBhYjwFHAk" role="3clF45" />
-      <node concept="3clFbS" id="6cBhYjwFGVN" role="3clF47">
-        <node concept="3cpWs8" id="6cBhYjwFNp5" role="3cqZAp">
-          <node concept="3cpWsn" id="6cBhYjwFNp8" role="3cpWs9">
-            <property role="TrG5h" value="hasHex" />
-            <node concept="10P_77" id="6cBhYjwFNp3" role="1tU5fm" />
-            <node concept="BsUDl" id="6cBhYjwFNq$" role="33vP2m">
-              <ref role="37wK5l" node="5JKfLQ8i_uc" resolve="hasHexValue" />
-              <node concept="37vLTw" id="6cBhYjwFNsx" role="37wK5m">
-                <ref role="3cqZAo" node="6cBhYjwFHS0" resolve="property" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6cBhYjwFMD4" role="3cqZAp">
-          <node concept="2YIFZM" id="6cBhYjwFMDF" role="3clFbG">
-            <ref role="37wK5l" to="i8bi:2O_ty0xXSDm" resolve="assign" />
-            <ref role="1Pybhc" to="i8bi:5IkW5anFfnn" resolve="SPropertyOperations" />
-            <node concept="13iPFW" id="6cBhYjwFME8" role="37wK5m" />
-            <node concept="37vLTw" id="6cBhYjwFMKV" role="37wK5m">
-              <ref role="3cqZAo" node="6cBhYjwFHS0" resolve="property" />
-            </node>
-            <node concept="37vLTw" id="6cBhYjwFMT6" role="37wK5m">
-              <ref role="3cqZAo" node="6cBhYjwFHSS" resolve="value" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="6cBhYjwHfj9" role="3cqZAp">
-          <node concept="3clFbS" id="6cBhYjwHfjb" role="3clFbx">
-            <node concept="3clFbF" id="6cBhYjwHfmu" role="3cqZAp">
-              <node concept="BsUDl" id="6cBhYjwFNAa" role="3clFbG">
-                <ref role="37wK5l" node="65S0ZNFEOvc" resolve="toggleHexValue" />
-                <node concept="37vLTw" id="6cBhYjwFNDw" role="37wK5m">
-                  <ref role="3cqZAo" node="6cBhYjwFHS0" resolve="property" />
-                </node>
-                <node concept="37vLTw" id="6cBhYjwFNDB" role="37wK5m">
-                  <ref role="3cqZAo" node="6cBhYjwFHSS" resolve="value" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="37vLTw" id="6cBhYjwHfkR" role="3clFbw">
-            <ref role="3cqZAo" node="6cBhYjwFNp8" resolve="hasHex" />
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="6cBhYjwFHS0" role="3clF46">
-        <property role="TrG5h" value="property" />
-        <node concept="3uibUv" id="6cBhYjwFHRZ" role="1tU5fm">
-          <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="6cBhYjwFHSS" role="3clF46">
-        <property role="TrG5h" value="value" />
-        <node concept="17QB3L" id="6cBhYjwFI0A" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="6UIgoJyGK__" role="13h7CS">
-      <property role="TrG5h" value="removeHexValue" />
-      <node concept="37vLTG" id="6UIgoJyGKM$" role="3clF46">
-        <property role="TrG5h" value="property" />
-        <node concept="3uibUv" id="6UIgoJyGKM_" role="1tU5fm">
-          <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="6UIgoJyGK_A" role="1B3o_S" />
-      <node concept="3cqZAl" id="6UIgoJyGKM2" role="3clF45" />
-      <node concept="3clFbS" id="6UIgoJyGK_C" role="3clF47">
-        <node concept="3cpWs8" id="6UIgoJyGKN8" role="3cqZAp">
-          <node concept="3cpWsn" id="6UIgoJyGKN9" role="3cpWs9">
-            <property role="TrG5h" value="hexValue" />
-            <node concept="3Tqbb2" id="6UIgoJyGKNa" role="1tU5fm">
-              <ref role="ehGHo" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
-            </node>
-            <node concept="2OqwBi" id="6UIgoJyGKNb" role="33vP2m">
-              <node concept="13iPFW" id="6UIgoJyGKNc" role="2Oq$k0" />
-              <node concept="2qgKlT" id="6UIgoJyGKNd" role="2OqNvi">
-                <ref role="37wK5l" node="2KEzU_jNnNP" resolve="getHexValue" />
-                <node concept="37vLTw" id="6UIgoJyGKNe" role="37wK5m">
-                  <ref role="3cqZAo" node="6UIgoJyGKM$" resolve="property" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6UIgoJyGKSa" role="3cqZAp">
-          <node concept="2OqwBi" id="6UIgoJyGL4q" role="3clFbG">
-            <node concept="37vLTw" id="6UIgoJyGKS8" role="2Oq$k0">
-              <ref role="3cqZAo" node="6UIgoJyGKN9" resolve="hexValue" />
-            </node>
-            <node concept="3YRAZt" id="6UIgoJyGLkf" role="2OqNvi" />
-          </node>
-        </node>
       </node>
     </node>
   </node>
@@ -28727,6 +28787,35 @@
       <property role="TrG5h" value="toNumber" />
       <node concept="3Tm1VV" id="5Ys_ngSnY$D" role="1B3o_S" />
       <node concept="3clFbS" id="5Ys_ngSnY$F" role="3clF47">
+        <node concept="3clFbJ" id="4YiHwWVKaeE" role="3cqZAp">
+          <node concept="3clFbS" id="4YiHwWVKaeG" role="3clFbx">
+            <node concept="3cpWs6" id="4YiHwWVKbYa" role="3cqZAp">
+              <node concept="2YIFZM" id="4YiHwWVKzp_" role="3cqZAk">
+                <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
+                <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
+                <node concept="3cmrfG" id="4YiHwWVKzzB" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17R0WA" id="4YiHwWVKbDQ" role="3clFbw">
+            <node concept="2OqwBi" id="4YiHwWVKayC" role="3uHU7B">
+              <node concept="13iPFW" id="4YiHwWVKaeJ" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4YiHwWVKaVG" role="2OqNvi">
+                <ref role="3TsBF5" to="hm2y:5Ys_ngSnA9j" resolve="value" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6mBw0A_4GF1" role="3uHU7w">
+              <node concept="35c_gC" id="6mBw0A_4FOH" role="2Oq$k0">
+                <ref role="35c_gD" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
+              </node>
+              <node concept="2qgKlT" id="6mBw0A_4H8u" role="2OqNvi">
+                <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="5g$$9d79ayC" role="3cqZAp">
           <node concept="3clFbS" id="5g$$9d79ayE" role="3clFbx">
             <node concept="3cpWs6" id="5g$$9d79Dc_" role="3cqZAp">
@@ -28820,6 +28909,28 @@
           <node concept="3clFbC" id="1drMthgvsS7" role="3clFbw">
             <node concept="10Nm6u" id="1drMthgvxGk" role="3uHU7w" />
             <node concept="37vLTw" id="1drMthgvn_W" role="3uHU7B">
+              <ref role="3cqZAo" node="5Ys_ngSnCCF" resolve="val" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4YiHwWVDDZl" role="3cqZAp">
+          <node concept="3clFbS" id="4YiHwWVDDZn" role="3clFbx">
+            <node concept="3cpWs6" id="4YiHwWVDH95" role="3cqZAp">
+              <node concept="3clFbT" id="4YiHwWVDH9c" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="17R0WA" id="4YiHwWVDG1S" role="3clFbw">
+            <node concept="2OqwBi" id="4YiHwWVDGA$" role="3uHU7w">
+              <node concept="35c_gC" id="4YiHwWVDG2Q" role="2Oq$k0">
+                <ref role="35c_gD" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
+              </node>
+              <node concept="2qgKlT" id="4YiHwWVDGUQ" role="2OqNvi">
+                <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="4YiHwWVDFyZ" role="3uHU7B">
               <ref role="3cqZAo" node="5Ys_ngSnCCF" resolve="val" />
             </node>
           </node>

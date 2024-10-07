@@ -584,7 +584,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5JKfLQ8akXn" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:65S0ZNFEOvc" resolve="toggleHexValue" />
+                  <ref role="37wK5l" to="pbu6:6QsMU1GWQsW" resolve="setHexValue" />
                   <node concept="355D3s" id="5JKfLQ8axYo" role="37wK5m">
                     <ref role="355D3t" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
                     <ref role="355D3u" to="5qo5:19PglA20qXJ" resolve="min" />
@@ -602,6 +602,9 @@
                       <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
                     </node>
                   </node>
+                  <node concept="3clFbT" id="4YiHwWVMHTK" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -616,7 +619,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5JKfLQ8cydp" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:65S0ZNFEOvc" resolve="toggleHexValue" />
+                  <ref role="37wK5l" to="pbu6:6QsMU1GWQsW" resolve="setHexValue" />
                   <node concept="355D3s" id="5JKfLQ8cydq" role="37wK5m">
                     <ref role="355D3t" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
                     <ref role="355D3u" to="5qo5:19PglA20qXK" resolve="max" />
@@ -633,6 +636,9 @@
                     <node concept="3TrcHB" id="5JKfLQ8d50C" role="2OqNvi">
                       <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
                     </node>
+                  </node>
+                  <node concept="3clFbT" id="4YiHwWVN4WE" role="37wK5m">
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
@@ -893,7 +899,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5JKfLQ8fFE5" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:65S0ZNFEOvc" resolve="toggleHexValue" />
+                  <ref role="37wK5l" to="pbu6:6QsMU1GWQsW" resolve="setHexValue" />
                   <node concept="355D3s" id="5JKfLQ8fFE6" role="37wK5m">
                     <ref role="355D3t" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
                     <ref role="355D3u" to="5qo5:19PglA20qXJ" resolve="min" />
@@ -910,6 +916,9 @@
                     <node concept="3TrcHB" id="5JKfLQ8fFEb" role="2OqNvi">
                       <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
                     </node>
+                  </node>
+                  <node concept="3clFbT" id="4YiHwWVNypV" role="37wK5m">
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
@@ -932,7 +941,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5JKfLQ8gAuS" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:65S0ZNFEOvc" resolve="toggleHexValue" />
+                  <ref role="37wK5l" to="pbu6:6QsMU1GWQsW" resolve="setHexValue" />
                   <node concept="355D3s" id="5JKfLQ8gAuT" role="37wK5m">
                     <ref role="355D3t" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
                     <ref role="355D3u" to="5qo5:19PglA20qXK" resolve="max" />
@@ -949,6 +958,9 @@
                     <node concept="3TrcHB" id="5JKfLQ8gAuY" role="2OqNvi">
                       <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
                     </node>
+                  </node>
+                  <node concept="3clFbT" id="4YiHwWVO6nd" role="37wK5m">
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
