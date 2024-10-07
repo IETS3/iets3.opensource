@@ -1235,9 +1235,7 @@
       <property role="TrG5h" value="allowHexadecimalNumbers" />
       <node concept="3clFbS" id="5Ys_ngSn72R" role="3clF47">
         <node concept="3clFbF" id="5Ys_ngSn9YX" role="3cqZAp">
-          <node concept="3clFbT" id="5Ys_ngSn9YW" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
+          <node concept="3clFbT" id="5Ys_ngSn9YW" role="3clFbG" />
         </node>
       </node>
       <node concept="3Tm1VV" id="5Ys_ngSn72W" role="1B3o_S" />
