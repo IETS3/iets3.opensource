@@ -2,7 +2,7 @@
 <model ref="r:84f8cd40-0164-44eb-acf9-1b79e378eb7a(test.ts.expr.os.LeastCommonSuperType@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="3" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="2" />
@@ -29,6 +29,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -195,6 +196,7 @@
   </registry>
   <node concept="1lH9Xt" id="7$68VCkh_0f">
     <property role="TrG5h" value="LeastCommonSuperType" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5FFsEXIecet" role="1SKRRt">
       <node concept="15s5l7" id="1e46OlHj8ce" role="lGtFl">
         <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node '(instance of JoinType)' cannot be child of node '(instance of NodeTypeCheckOperation)'&quot;;FLAVOUR_RULE_ID=&quot;[r:9750d418-880f-460d-9880-d67dd111722d(org.iets3.core.expr.base.constraints)/6095949300264944903]&quot;;" />
@@ -2859,6 +2861,7 @@
   </node>
   <node concept="1lH9Xt" id="7iQqdOBdOo$">
     <property role="TrG5h" value="LeastCommonSuperTypesWithUnits" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7iQqdOBegTi" role="1SKRRt">
       <node concept="15s5l7" id="7L68ksb2mgO" role="lGtFl">
         <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: The different types \&quot;number[1|5.7]{1}&lt;SIUnits.kg&gt;, number[-5|3.34]{2}&lt;SIUnits.cd&gt;\&quot; are incompatible. Only types with same unit are compatible.&quot;;FLAVOUR_RULE_ID=&quot;[r:42a3bc53-29b1-44d6-9767-7c921cef7ba0(org.iets3.core.expr.typetags.typesystem)/7718893141589771813]&quot;;" />
