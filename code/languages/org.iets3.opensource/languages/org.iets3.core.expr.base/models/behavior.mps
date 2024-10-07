@@ -48,6 +48,7 @@
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -28537,6 +28538,67 @@
       </node>
       <node concept="3Tqbb2" id="6QsMU1GWWd$" role="3clF45">
         <ref role="ehGHo" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6cBhYjwFGVK" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="updateHexValueOrProperty" />
+      <node concept="3Tm1VV" id="6cBhYjwFGVL" role="1B3o_S" />
+      <node concept="3cqZAl" id="6cBhYjwFHAk" role="3clF45" />
+      <node concept="3clFbS" id="6cBhYjwFGVN" role="3clF47">
+        <node concept="3cpWs8" id="6cBhYjwFNp5" role="3cqZAp">
+          <node concept="3cpWsn" id="6cBhYjwFNp8" role="3cpWs9">
+            <property role="TrG5h" value="hasHex" />
+            <node concept="10P_77" id="6cBhYjwFNp3" role="1tU5fm" />
+            <node concept="BsUDl" id="6cBhYjwFNq$" role="33vP2m">
+              <ref role="37wK5l" node="5JKfLQ8i_uc" resolve="hasHexValue" />
+              <node concept="37vLTw" id="6cBhYjwFNsx" role="37wK5m">
+                <ref role="3cqZAo" node="6cBhYjwFHS0" resolve="property" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6cBhYjwFMD4" role="3cqZAp">
+          <node concept="2YIFZM" id="6cBhYjwFMDF" role="3clFbG">
+            <ref role="37wK5l" to="i8bi:2O_ty0xXSDm" resolve="assign" />
+            <ref role="1Pybhc" to="i8bi:5IkW5anFfnn" resolve="SPropertyOperations" />
+            <node concept="13iPFW" id="6cBhYjwFME8" role="37wK5m" />
+            <node concept="37vLTw" id="6cBhYjwFMKV" role="37wK5m">
+              <ref role="3cqZAo" node="6cBhYjwFHS0" resolve="property" />
+            </node>
+            <node concept="37vLTw" id="6cBhYjwFMT6" role="37wK5m">
+              <ref role="3cqZAo" node="6cBhYjwFHSS" resolve="value" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6cBhYjwHfj9" role="3cqZAp">
+          <node concept="3clFbS" id="6cBhYjwHfjb" role="3clFbx">
+            <node concept="3clFbF" id="6cBhYjwHfmu" role="3cqZAp">
+              <node concept="BsUDl" id="6cBhYjwFNAa" role="3clFbG">
+                <ref role="37wK5l" node="65S0ZNFEOvc" resolve="toggleHexValue" />
+                <node concept="37vLTw" id="6cBhYjwFNDw" role="37wK5m">
+                  <ref role="3cqZAo" node="6cBhYjwFHS0" resolve="property" />
+                </node>
+                <node concept="37vLTw" id="6cBhYjwFNDB" role="37wK5m">
+                  <ref role="3cqZAo" node="6cBhYjwFHSS" resolve="value" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="6cBhYjwHfkR" role="3clFbw">
+            <ref role="3cqZAo" node="6cBhYjwFNp8" resolve="hasHex" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6cBhYjwFHS0" role="3clF46">
+        <property role="TrG5h" value="property" />
+        <node concept="3uibUv" id="6cBhYjwFHRZ" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6cBhYjwFHSS" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="17QB3L" id="6cBhYjwFI0A" role="1tU5fm" />
       </node>
     </node>
     <node concept="13i0hz" id="6UIgoJyGK__" role="13h7CS">
