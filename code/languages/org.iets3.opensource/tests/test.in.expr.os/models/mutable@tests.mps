@@ -318,7 +318,9 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
-      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_" />
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_">
+        <child id="6932772747669876273" name="type_old" index="15qgo$" />
+      </concept>
       <concept id="7849560302565679722" name="org.iets3.core.expr.base.structure.IfExpression" flags="ng" index="39w5ZF">
         <child id="606861080870797304" name="elseSection" index="pf3W8" />
         <child id="7849560302565679723" name="condition" index="39w5ZE" />
@@ -17671,6 +17673,21 @@
       </node>
     </node>
     <node concept="_ixoA" id="4qTaF_EiOUy" role="_iOnB" />
+  </node>
+  <node concept="_iOnU" id="2YQA$NZ_Myo">
+    <property role="1XBH2A" value="true" />
+    <property role="TrG5h" value="partyDefaultValues" />
+    <property role="3GE5qa" value="interact" />
+    <node concept="_fkuM" id="60Qa1k_r2ku" role="_iOnB">
+      <property role="TrG5h" value="defaultValues" />
+      <node concept="_fkuZ" id="60Qa1k_r2kx" role="_fkp5">
+        <node concept="_fku$" id="60Qa1k_r2ky" role="_fkur" />
+        <node concept="15qgo_" id="60Qa1k_s1UT" role="_fkuY">
+          <node concept="GZN9E" id="41vYFO3dLGr" role="15qgo$" />
+        </node>
+        <node concept="GZN9F" id="41vYFO3dLH4" role="_fkuS" />
+      </node>
+    </node>
   </node>
 </model>
 

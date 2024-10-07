@@ -560,6 +560,9 @@
     <property role="EcuMT" value="2807135271607940261" />
     <property role="R4oN_" value="a type representing nothing (in the context of options)" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="41vYFO2Jfdh" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="UN2ftLUxmN">
     <property role="3GE5qa" value="option" />
@@ -678,6 +681,9 @@
     <node concept="PrWs8" id="1Ez$z58LP6j" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
     </node>
+    <node concept="PrWs8" id="41vYFO2JfSF" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1Ez$z58L7Jd">
     <property role="3GE5qa" value="error.types" />
@@ -706,6 +712,9 @@
     </node>
     <node concept="PrWs8" id="1Ez$z58LP6m" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
+    </node>
+    <node concept="PrWs8" id="41vYFO2NXJA" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
   </node>
   <node concept="PlHQZ" id="1Ez$z58LP6f">
@@ -1100,13 +1109,16 @@
       <property role="IQ2ns" value="1019070541450015931" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="41vYFO2JhGQ" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="S$tO8ocnpq">
     <property role="TrG5h" value="TupleValue" />
+    <property role="34LRSv" value="(" />
     <property role="3GE5qa" value="tuples" />
     <property role="EcuMT" value="1019070541450016346" />
     <property role="R4oN_" value="a n-ary tuple value" />
-    <property role="34LRSv" value="(" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="4qVjx3kr2pf" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -1796,9 +1808,6 @@
     <node concept="PrWs8" id="1w6$bvvCL6b" role="PzmwI">
       <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     </node>
-    <node concept="PrWs8" id="3eH6BL3k262" role="PzmwI">
-      <ref role="PrY4T" node="68xoVn7qAL8" resolve="ITyped" />
-    </node>
     <node concept="1TJgyj" id="5a_u3OzTCw6" role="1TKVEi">
       <property role="IQ2ns" value="5955298286257997830" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1814,6 +1823,9 @@
       <node concept="asaX9" id="3eH6BL3k26e" role="lGtFl">
         <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
       </node>
+    </node>
+    <node concept="PrWs8" id="3eH6BL3k262" role="PzmwI">
+      <ref role="PrY4T" node="68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="5bEkIpehgUq">
@@ -2171,6 +2183,9 @@
     <property role="34LRSv" value="emptytype" />
     <property role="R4oN_" value="an empty type" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="41vYFO2_l63" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="PlHQZ" id="MNXm1ElbHo">
     <property role="EcuMT" value="915344943735946072" />
@@ -2213,6 +2228,9 @@
       <property role="20kJfa" value="decl" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5r47dOfJ8Ur" resolve="ITupleDeclaration" />
+    </node>
+    <node concept="PrWs8" id="41vYFO2GtZt" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="6GiZkUz7qWO">
