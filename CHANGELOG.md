@@ -18,6 +18,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Record literals are automatically initialized based on their type.
 - Record literals now show the referenced members of the record declaration.
+- Tuples can use parenthesis instead of brackets for their presentation. To use the new presentation, overwrite PrimitiveTypeMapper#useParenthesisInsteadOfBracketsForTuples in the extension point.
 
 ## September 2024
 

@@ -466,6 +466,9 @@
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
       </concept>
@@ -10135,13 +10138,7 @@
       <node concept="3clFbS" id="6ovbtsiVc$8" role="3clF47">
         <node concept="3clFbF" id="6ovbtsiVcHI" role="3cqZAp">
           <node concept="3cpWs3" id="6ovbtsiVgzQ" role="3clFbG">
-            <node concept="Xl_RD" id="6ovbtsiVgzT" role="3uHU7w">
-              <property role="Xl_RC" value=")" />
-            </node>
             <node concept="3cpWs3" id="5PO5RrJnIc9" role="3uHU7B">
-              <node concept="Xl_RD" id="5PO5RrJnIcc" role="3uHU7B">
-                <property role="Xl_RC" value="(" />
-              </node>
               <node concept="2OqwBi" id="5PO5RrJqWXA" role="3uHU7w">
                 <node concept="2OqwBi" id="6ovbtsiVdnM" role="2Oq$k0">
                   <node concept="2OqwBi" id="6ovbtsiVcK8" role="2Oq$k0">
@@ -10177,11 +10174,61 @@
                   </node>
                 </node>
               </node>
+              <node concept="BsUDl" id="1DSLxNDLR9g" role="3uHU7B">
+                <ref role="37wK5l" node="1DSLxNDLNPn" resolve="getOpeningTag" />
+              </node>
+            </node>
+            <node concept="BsUDl" id="1DSLxNDLR_c" role="3uHU7w">
+              <ref role="37wK5l" node="1DSLxNDLPWK" resolve="getCloseningTag" />
             </node>
           </node>
         </node>
       </node>
       <node concept="17QB3L" id="6ovbtsiVc$9" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1DSLxNDLNPn" role="13h7CS">
+      <property role="TrG5h" value="getOpeningTag" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="1DSLxNDLNPo" role="1B3o_S" />
+      <node concept="17QB3L" id="1DSLxNDLP$T" role="3clF45" />
+      <node concept="3clFbS" id="1DSLxNDLNPq" role="3clF47">
+        <node concept="3clFbF" id="1DSLxNDLPQO" role="3cqZAp">
+          <node concept="3K4zz7" id="1DSLxNDLHm5" role="3clFbG">
+            <node concept="Xl_RD" id="1DSLxNDLHsP" role="3K4E3e">
+              <property role="Xl_RC" value="(" />
+            </node>
+            <node concept="Xl_RD" id="1DSLxNDLHCe" role="3K4GZi">
+              <property role="Xl_RC" value="[" />
+            </node>
+            <node concept="2YIFZM" id="1DSLxNDLFRy" role="3K4Cdx">
+              <ref role="37wK5l" to="xfg9:1DSLxNDLgVH" resolve="useParenthesisInsteadOfBracketsForTuples" />
+              <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1DSLxNDLPWK" role="13h7CS">
+      <property role="TrG5h" value="getCloseningTag" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="1DSLxNDLPWL" role="1B3o_S" />
+      <node concept="17QB3L" id="1DSLxNDLQJF" role="3clF45" />
+      <node concept="3clFbS" id="1DSLxNDLPWN" role="3clF47">
+        <node concept="3clFbF" id="1DSLxNDLQXL" role="3cqZAp">
+          <node concept="3K4zz7" id="1DSLxNDLHRt" role="3clFbG">
+            <node concept="Xl_RD" id="1DSLxNDLHRu" role="3K4E3e">
+              <property role="Xl_RC" value=")" />
+            </node>
+            <node concept="Xl_RD" id="1DSLxNDLHRv" role="3K4GZi">
+              <property role="Xl_RC" value="]" />
+            </node>
+            <node concept="2YIFZM" id="1DSLxNDLHRw" role="3K4Cdx">
+              <ref role="37wK5l" to="xfg9:1DSLxNDLgVH" resolve="useParenthesisInsteadOfBracketsForTuples" />
+              <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="5L2mTKmB19i" role="13h7CS">
       <property role="TrG5h" value="isSameAs" />
@@ -10514,13 +10561,7 @@
       <node concept="3clFbS" id="S$tO8ocQNX" role="3clF47">
         <node concept="3clFbF" id="S$tO8ocQOp" role="3cqZAp">
           <node concept="3cpWs3" id="HywGhj89Hc" role="3clFbG">
-            <node concept="Xl_RD" id="HywGhj89Hf" role="3uHU7w">
-              <property role="Xl_RC" value=")" />
-            </node>
             <node concept="3cpWs3" id="HywGhj89fh" role="3uHU7B">
-              <node concept="Xl_RD" id="S$tO8ocQOo" role="3uHU7B">
-                <property role="Xl_RC" value="(" />
-              </node>
               <node concept="BsUDl" id="HywGhj89fv" role="3uHU7w">
                 <ref role="37wK5l" node="HywGhj7zY_" resolve="commaSeparatedRR" />
                 <node concept="2OqwBi" id="HywGhj89ko" role="37wK5m">
@@ -10529,6 +10570,22 @@
                     <ref role="3TtcxE" to="hm2y:S$tO8ocnpr" resolve="values" />
                   </node>
                 </node>
+              </node>
+              <node concept="2OqwBi" id="1DSLxNDWzRS" role="3uHU7B">
+                <node concept="35c_gC" id="1DSLxNDWzot" role="2Oq$k0">
+                  <ref role="35c_gD" to="hm2y:S$tO8ocniU" resolve="TupleType" />
+                </node>
+                <node concept="2qgKlT" id="1DSLxNDW$lZ" role="2OqNvi">
+                  <ref role="37wK5l" node="1DSLxNDLNPn" resolve="getOpeningTag" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1DSLxNDW$Qq" role="3uHU7w">
+              <node concept="35c_gC" id="1DSLxNDW$Qr" role="2Oq$k0">
+                <ref role="35c_gD" to="hm2y:S$tO8ocniU" resolve="TupleType" />
+              </node>
+              <node concept="2qgKlT" id="1DSLxNDW$Qs" role="2OqNvi">
+                <ref role="37wK5l" node="1DSLxNDLPWK" resolve="getCloseningTag" />
               </node>
             </node>
           </node>
