@@ -48,6 +48,9 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_">
+        <child id="6932772747669876273" name="type" index="15qgo$" />
+      </concept>
       <concept id="2527679671886479690" name="org.iets3.core.expr.base.structure.TupleAccessExpr" flags="ng" index="3nOhSe">
         <property id="2527679671886575030" name="index" index="3nOAFM" />
         <child id="2527679671886479717" name="tuple" index="3nOhSx" />
@@ -681,6 +684,34 @@
         <node concept="2vmpnb" id="3aItn4K2ftb" role="_fkuS" />
       </node>
     </node>
+    <node concept="_ixoA" id="41vYFO3dyVf" role="_iOnB" />
+    <node concept="_fkuM" id="60Qa1k_r2ku" role="_iOnB">
+      <property role="TrG5h" value="defaultValues" />
+      <node concept="_fkuZ" id="60Qa1k_Hy$q" role="_fkp5">
+        <node concept="_fku$" id="60Qa1k_HyCu" role="_fkur" />
+        <node concept="15qgo_" id="60Qa1k_Hy$s" role="_fkuY">
+          <node concept="m5gfS" id="41vYFO3dxVD" role="15qgo$">
+            <node concept="30bXR$" id="41vYFO3dxVU" role="m5gfT" />
+            <node concept="30bdrU" id="41vYFO3dxWb" role="m5gfT" />
+            <node concept="m5gfS" id="41vYFO3dxWv" role="m5gfT">
+              <node concept="30bXR$" id="41vYFO3dxW$" role="m5gfT" />
+            </node>
+          </node>
+        </node>
+        <node concept="m5g4o" id="41vYFO3dxX2" role="_fkuS">
+          <node concept="30bXRB" id="41vYFO3dxX9" role="m5g4p">
+            <property role="30bXRw" value="0" />
+          </node>
+          <node concept="30bdrP" id="41vYFO3dxX_" role="m5g4p" />
+          <node concept="m5g4o" id="41vYFO3dxYM" role="m5g4p">
+            <node concept="30bXRB" id="41vYFO3dxZk" role="m5g4p">
+              <property role="30bXRw" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="41vYFO3dyVh" role="_iOnB" />
   </node>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
     <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />

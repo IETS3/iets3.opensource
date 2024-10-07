@@ -9,10 +9,10 @@
   <imports>
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="l462" ref="r:d6904536-4de8-40ba-b54e-09fcdfe1b62a(org.iets3.core.expr.temporal.structure)" implicit="true" />
+    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" implicit="true" />
-    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="x8ug" ref="r:761e0f2a-4ffc-4d74-83bd-c6255a04ca73(org.iets3.core.expr.temporal.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -197,9 +197,7 @@
       <node concept="2iRfu4" id="50smQ1V8izN" role="2iSdaV" />
       <node concept="3F0ifn" id="3wXkdMVKDGG" role="3EZMnx">
         <property role="3F0ifm" value="TT" />
-        <node concept="Vb9p2" id="3wXkdMVKDHa" role="3F10Kt">
-          <property role="Vbekb" value="g1_k_vY/BOLD" />
-        </node>
+        <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         <node concept="OXEIz" id="yfp7edvEmM" role="P5bDN">
           <node concept="UkePV" id="yfp7edvEmN" role="OY2wv">
             <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" resolve="Type" />

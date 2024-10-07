@@ -11896,6 +11896,7 @@
     <ref role="1XX52x" to="w9y2:1WAg9TzeHcu" resolve="GenericPortType" />
     <node concept="3F0ifn" id="1WAg9TzeHdn" role="2wV5jI">
       <property role="3F0ifm" value="port" />
+      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
     </node>
   </node>
   <node concept="24kQdi" id="1WAg9TyYver">
@@ -12015,6 +12016,7 @@
       <node concept="2iRfu4" id="1WAg9Tzrz6K" role="2iSdaV" />
       <node concept="3F0ifn" id="1WAg9Tzrz6G" role="3EZMnx">
         <property role="3F0ifm" value="port&lt;" />
+        <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         <node concept="11LMrY" id="1WAg9Tzrz8T" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

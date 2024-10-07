@@ -174,6 +174,9 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_">
+        <child id="6932772747669876273" name="type" index="15qgo$" />
+      </concept>
       <concept id="7849560302565679722" name="org.iets3.core.expr.base.structure.IfExpression" flags="ng" index="39w5ZF">
         <child id="606861080870797304" name="elseSection" index="pf3W8" />
         <child id="7849560302565679723" name="condition" index="39w5ZE" />
@@ -2964,6 +2967,21 @@
           <node concept="_emDc" id="7k6A8WfjRuH" role="3iBYfI">
             <ref role="_emDf" node="FLl_um3huz" resolve="s1" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="41vYFO3dVHK" role="_iOnB" />
+    <node concept="_fkuM" id="41vYFO3e2pa" role="_iOnB">
+      <property role="TrG5h" value="defaultValues" />
+      <node concept="_fkuZ" id="41vYFO3e5J2" role="_fkp5">
+        <node concept="_fku$" id="41vYFO3e5J3" role="_fkur" />
+        <node concept="15qgo_" id="41vYFO3e5Ja" role="_fkuY">
+          <node concept="Ffn_D" id="41vYFO3e5Jj" role="15qgo$">
+            <node concept="30bXR$" id="41vYFO3e5JC" role="Ffn_E" />
+          </node>
+        </node>
+        <node concept="FfN7I" id="41vYFO3e5JX" role="_fkuS">
+          <node concept="30bXR$" id="41vYFO3e5Kb" role="1GaMO7" />
         </node>
       </node>
     </node>

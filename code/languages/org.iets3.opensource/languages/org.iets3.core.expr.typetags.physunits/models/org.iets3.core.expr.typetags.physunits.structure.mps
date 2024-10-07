@@ -590,6 +590,9 @@
     <node concept="PrWs8" id="45a4DYZTszf" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
     </node>
+    <node concept="PrWs8" id="41vYFO2MPjy" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="45a4DYZrKZa">
     <property role="EcuMT" value="4704593238062731210" />
