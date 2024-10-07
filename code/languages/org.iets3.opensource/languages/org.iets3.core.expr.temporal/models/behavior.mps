@@ -113,6 +113,22 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
+      </concept>
+    </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
@@ -134,7 +150,9 @@
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -272,6 +290,40 @@
         </node>
       </node>
       <node concept="10P_77" id="7k6A8Wfr4F7" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="41vYFO2MdxG" role="13h7CS">
+      <property role="TrG5h" value="createDefaultVarExpr" />
+      <ref role="13i0hy" to="pbu6:60Qa1k_nI2O" resolve="createDefaultVarExpr" />
+      <node concept="3Tm1VV" id="41vYFO2MdxH" role="1B3o_S" />
+      <node concept="3clFbS" id="41vYFO2MdxK" role="3clF47">
+        <node concept="3clFbF" id="41vYFO2Obyt" role="3cqZAp">
+          <node concept="2pJPEk" id="41vYFO2MdzC" role="3clFbG">
+            <node concept="2pJPED" id="41vYFO2MdzD" role="2pJPEn">
+              <ref role="2pJxaS" to="l462:50smQ1V8QEe" resolve="TemporalLiteral" />
+              <node concept="2pIpSj" id="41vYFO2MdV0" role="2pJxcM">
+                <ref role="2pIpSl" to="l462:7SY$c$i5rRe" resolve="typeConstraint" />
+                <node concept="36biLy" id="41vYFO2MdY3" role="28nt2d">
+                  <node concept="1PxgMI" id="41vYFO2OcLT" role="36biLW">
+                    <property role="1BlNFB" value="true" />
+                    <node concept="chp4Y" id="41vYFO2OcNe" role="3oSUPX">
+                      <ref role="cht4Q" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+                    </node>
+                    <node concept="2OqwBi" id="41vYFO2ObLL" role="1m5AlR">
+                      <node concept="13iPFW" id="41vYFO2ObyV" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="41vYFO2Oc86" role="2OqNvi">
+                        <ref role="3Tt5mk" to="l462:50smQ1V8i8a" resolve="baseType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="41vYFO2MdxL" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="50smQ1VdacN">

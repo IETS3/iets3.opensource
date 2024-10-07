@@ -8,7 +8,7 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="3" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="2" />
     <use id="f003a0fe-c140-41d7-a145-ea42368e581c" name="org.iets3.core.expr.stringvalidation" version="0" />
     <devkit ref="33eb240b-05aa-417a-b719-386d26df80b8(org.iets3.core.expr.genall.advanced.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
@@ -57,6 +57,9 @@
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
+      </concept>
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_">
+        <child id="6932772747669876273" name="type" index="15qgo$" />
       </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
@@ -3316,6 +3319,19 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="41vYFO3dQCA" role="_iOnB" />
+    <node concept="_fkuM" id="41vYFO3dQCE" role="_iOnB">
+      <property role="TrG5h" value="defaultValues" />
+      <node concept="_fkuZ" id="41vYFO3dQCH" role="_fkp5">
+        <node concept="_fku$" id="41vYFO3dQCI" role="_fkur" />
+        <node concept="15qgo_" id="41vYFO3dQCP" role="_fkuY">
+          <node concept="1afqwn" id="41vYFO3dQCY" role="15qgo$" />
+        </node>
+        <node concept="2L0563" id="41vYFO3dQD8" role="_fkuS">
+          <node concept="30bdrP" id="41vYFO3dQV6" role="2L6No8" />
         </node>
       </node>
     </node>

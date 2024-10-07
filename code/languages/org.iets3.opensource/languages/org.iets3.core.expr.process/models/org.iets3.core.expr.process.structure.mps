@@ -186,6 +186,9 @@
     <property role="34LRSv" value="party" />
     <property role="R4oN_" value="a party type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="41vYFO2KBJk" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="Z4fkwzeKWz">
     <property role="EcuMT" value="1136100386042220323" />
