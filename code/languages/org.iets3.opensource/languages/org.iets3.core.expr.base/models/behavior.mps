@@ -27935,6 +27935,19 @@
   <node concept="13h7C7" id="2KEzU_jNnNy">
     <property role="3GE5qa" value="numeric.number" />
     <ref role="13h7C2" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
+    <node concept="13i0hz" id="5JKfLQ9g2ZR" role="13h7CS">
+      <property role="TrG5h" value="getHexPrefix" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="5JKfLQ9g2ZS" role="1B3o_S" />
+      <node concept="3clFbS" id="5JKfLQ9g2ZU" role="3clF47">
+        <node concept="3clFbF" id="5JKfLQ9g3Tr" role="3cqZAp">
+          <node concept="Xl_RD" id="5JKfLQ9g3Tq" role="3clFbG">
+            <property role="Xl_RC" value="0x" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5JKfLQ9g3R6" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="2KEzU_jNnNz" role="13h7CW">
       <node concept="3clFbS" id="2KEzU_jNnN$" role="2VODD2" />
     </node>
@@ -28054,7 +28067,7 @@
               <ref role="ehGHo" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
             </node>
             <node concept="BsUDl" id="5JKfLQ84log" role="33vP2m">
-              <ref role="37wK5l" node="2KEzU_jNnNP" resolve="getHexValueForAttribute" />
+              <ref role="37wK5l" node="2KEzU_jNnNP" resolve="getHexValue" />
               <node concept="37vLTw" id="5JKfLQ8irrY" role="37wK5m">
                 <ref role="3cqZAo" node="5JKfLQ8ir2s" resolve="property" />
               </node>
@@ -28084,11 +28097,36 @@
             <node concept="3clFbS" id="5JKfLQ84lti" role="9aQI4">
               <node concept="3cpWs6" id="5JKfLQ84luH" role="3cqZAp">
                 <node concept="37vLTw" id="5JKfLQ8irFR" role="3cqZAk">
-                  <ref role="3cqZAo" node="5JKfLQ8ir2K" resolve="defaul" />
+                  <ref role="3cqZAo" node="5JKfLQ8ir2K" resolve="defaultValue" />
                 </node>
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5JKfLQ9g2r5" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="initHexValueWithDefault" />
+      <node concept="3Tm1VV" id="5JKfLQ9g2r6" role="1B3o_S" />
+      <node concept="3cqZAl" id="5JKfLQ9g2Uh" role="3clF45" />
+      <node concept="3clFbS" id="5JKfLQ9g2r8" role="3clF47">
+        <node concept="3clFbF" id="5JKfLQ9g2Yd" role="3cqZAp">
+          <node concept="BsUDl" id="5JKfLQ9g2Yc" role="3clFbG">
+            <ref role="37wK5l" node="6QsMU1GWQsW" resolve="updateHexValue" />
+            <node concept="37vLTw" id="5JKfLQ9g2YP" role="37wK5m">
+              <ref role="3cqZAo" node="5JKfLQ9g2Wm" resolve="property" />
+            </node>
+            <node concept="Xl_RD" id="5JKfLQ9m23T" role="37wK5m">
+              <property role="Xl_RC" value="0x0" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5JKfLQ9g2Wm" role="3clF46">
+        <property role="TrG5h" value="property" />
+        <node concept="3uibUv" id="5JKfLQ9g2Wl" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
         </node>
       </node>
     </node>
@@ -28106,8 +28144,8 @@
                   <ref role="3cqZAo" node="65S0ZNFEQ1t" resolve="property" />
                 </node>
                 <node concept="3cpWs3" id="65S0ZNFIOwQ" role="37wK5m">
-                  <node concept="Xl_RD" id="65S0ZNFIOwT" role="3uHU7B">
-                    <property role="Xl_RC" value="0x" />
+                  <node concept="BsUDl" id="5JKfLQ9g4$$" role="3uHU7B">
+                    <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
                   </node>
                   <node concept="2OqwBi" id="65S0ZNFILqE" role="3uHU7w">
                     <node concept="2ShNRf" id="65S0ZNFIkfn" role="2Oq$k0">
@@ -28177,7 +28215,7 @@
             <node concept="2OqwBi" id="6QsMU1GSdaL" role="33vP2m">
               <node concept="13iPFW" id="6QsMU1GWQTQ" role="2Oq$k0" />
               <node concept="2qgKlT" id="6QsMU1GSdaN" role="2OqNvi">
-                <ref role="37wK5l" node="2KEzU_jNnNP" resolve="getHexValueForAttribute" />
+                <ref role="37wK5l" node="2KEzU_jNnNP" resolve="getHexValue" />
                 <node concept="37vLTw" id="6QsMU1GWRS5" role="37wK5m">
                   <ref role="3cqZAo" node="6QsMU1GWR2o" resolve="property" />
                 </node>
@@ -28304,7 +28342,7 @@
             <node concept="2OqwBi" id="6UIgoJyGKNb" role="33vP2m">
               <node concept="13iPFW" id="6UIgoJyGKNc" role="2Oq$k0" />
               <node concept="2qgKlT" id="6UIgoJyGKNd" role="2OqNvi">
-                <ref role="37wK5l" node="2KEzU_jNnNP" resolve="getHexValueForAttribute" />
+                <ref role="37wK5l" node="2KEzU_jNnNP" resolve="getHexValue" />
                 <node concept="37vLTw" id="6UIgoJyGKNe" role="37wK5m">
                   <ref role="3cqZAo" node="6UIgoJyGKM$" resolve="property" />
                 </node>

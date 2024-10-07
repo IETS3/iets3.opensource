@@ -3619,7 +3619,7 @@
                 <ref role="3cqZAo" node="6UIgoJyDpXA" resolve="node" />
               </node>
               <node concept="2qgKlT" id="6UIgoJyDVLx" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:2KEzU_jNnNP" resolve="getHexValueForAttribute" />
+                <ref role="37wK5l" to="pbu6:2KEzU_jNnNP" resolve="getHexValue" />
                 <node concept="2OqwBi" id="68wLGjpJgfF" role="37wK5m">
                   <node concept="Xjq3P" id="68wLGjpJfSe" role="2Oq$k0" />
                   <node concept="liA8E" id="68wLGjpJgAA" role="2OqNvi">

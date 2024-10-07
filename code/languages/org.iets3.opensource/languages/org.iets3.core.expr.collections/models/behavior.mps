@@ -3171,7 +3171,7 @@
                     <property role="Xl_RC" value="[" />
                   </node>
                   <node concept="BsUDl" id="5JKfLQ8is0C" role="3uHU7w">
-                    <ref role="37wK5l" to="pbu6:5JKfLQ8iqvP" resolve="getHexOrDefault" />
+                    <ref role="37wK5l" to="pbu6:5JKfLQ8iqvP" resolve="getHexValueOrDefault" />
                     <node concept="355D3s" id="5JKfLQ8is34" role="37wK5m">
                       <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
                       <ref role="355D3u" to="700h:19PglA20qXJ" resolve="min" />
@@ -3189,7 +3189,7 @@
                 </node>
               </node>
               <node concept="BsUDl" id="5JKfLQ8it3b" role="3uHU7w">
-                <ref role="37wK5l" to="pbu6:5JKfLQ8iqvP" resolve="getHexOrDefault" />
+                <ref role="37wK5l" to="pbu6:5JKfLQ8iqvP" resolve="getHexValueOrDefault" />
                 <node concept="355D3s" id="5JKfLQ8it3c" role="37wK5m">
                   <ref role="355D3t" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
                   <ref role="355D3u" to="700h:19PglA20qXK" resolve="max" />
