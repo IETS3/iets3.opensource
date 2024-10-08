@@ -93,6 +93,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -270,6 +273,9 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -314,6 +320,10 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1225621920911" name="jetbrains.mps.baseLanguage.collections.structure.InsertElementOperation" flags="nn" index="1sK_Qi">
+        <child id="1225621943565" name="element" index="1sKFgg" />
+        <child id="1225621960341" name="index" index="1sKJu8" />
+      </concept>
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -705,14 +715,23 @@
                         <node concept="3Tqbb2" id="55lPkJGKBxL" role="1tU5fm">
                           <ref role="ehGHo" to="8qwc:55lPkJGLB68" resolve="LookupTableHeader" />
                         </node>
-                        <node concept="2OqwBi" id="55lPkJGKBxO" role="33vP2m">
-                          <node concept="2OqwBi" id="55lPkJGKBxP" role="2Oq$k0">
-                            <node concept="2r2w_c" id="55lPkJGKBxQ" role="2Oq$k0" />
-                            <node concept="3Tsc0h" id="55lPkJGKBxR" role="2OqNvi">
+                        <node concept="2OqwBi" id="74LepNSa0mK" role="33vP2m">
+                          <node concept="2OqwBi" id="74LepNS9XMx" role="2Oq$k0">
+                            <node concept="2r2w_c" id="74LepNS9X7m" role="2Oq$k0" />
+                            <node concept="3Tsc0h" id="74LepNS9YqF" role="2OqNvi">
                               <ref role="3TtcxE" to="8qwc:55lPkJGHmp6" resolve="rows" />
                             </node>
                           </node>
-                          <node concept="WFELt" id="55lPkJGKBxS" role="2OqNvi" />
+                          <node concept="1sK_Qi" id="74LepNSa2$s" role="2OqNvi">
+                            <node concept="10bopy" id="74LepNSa2Cq" role="1sKJu8" />
+                            <node concept="2ShNRf" id="74LepNSapdF" role="1sKFgg">
+                              <node concept="3zrR0B" id="74LepNSapZM" role="2ShVmc">
+                                <node concept="3Tqbb2" id="74LepNSapZO" role="3zrR0E">
+                                  <ref role="ehGHo" to="8qwc:55lPkJGLB68" resolve="LookupTableHeader" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -730,10 +749,10 @@
                         <node concept="3clFbF" id="55lPkJGKFDJ" role="3cqZAp">
                           <node concept="2OqwBi" id="55lPkJGKIwk" role="3clFbG">
                             <node concept="2OqwBi" id="55lPkJGKFPT" role="2Oq$k0">
-                              <node concept="2r2w_c" id="55lPkJGKFDI" role="2Oq$k0" />
                               <node concept="3Tsc0h" id="55lPkJGKLS7" role="2OqNvi">
                                 <ref role="3TtcxE" to="8qwc:55lPkJGINeh" resolve="cells" />
                               </node>
+                              <node concept="2r2w_c" id="55lPkJGKFDI" role="2Oq$k0" />
                             </node>
                             <node concept="TSZUe" id="55lPkJGKQA9" role="2OqNvi">
                               <node concept="2pJPEk" id="55lPkJGKR1H" role="25WWJ7">
@@ -907,10 +926,10 @@
                           <node concept="3clFbF" id="55lPkJGO3wG" role="3cqZAp">
                             <node concept="2OqwBi" id="55lPkJGO3wH" role="3clFbG">
                               <node concept="2OqwBi" id="55lPkJGO3wI" role="2Oq$k0">
-                                <node concept="2r2w_c" id="55lPkJGO3wJ" role="2Oq$k0" />
                                 <node concept="3Tsc0h" id="55lPkJGO3wK" role="2OqNvi">
                                   <ref role="3TtcxE" to="8qwc:55lPkJGINeh" resolve="cells" />
                                 </node>
+                                <node concept="2r2w_c" id="55lPkJGO3wJ" role="2Oq$k0" />
                               </node>
                               <node concept="TSZUe" id="55lPkJGO3wL" role="2OqNvi">
                                 <node concept="2pJPEk" id="55lPkJGO3wM" role="25WWJ7">
