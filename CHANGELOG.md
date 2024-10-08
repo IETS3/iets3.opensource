@@ -11,11 +11,14 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The interpreter of the `success` expression was fixed.
 - Custom Java exceptions have now a `equals` and `hashCode` implementation so that they can be compared in tests.
+- Error messages and checks were improved.
+- More error messages are now shown when the supertype can't be calculated.
 
 ### Added
 
 - Record literals are automatically initialized based on their type.
 - Record literals now show the referenced members of the record declaration.
+- Tuples can use parenthesis instead of brackets for their presentation. To use the new presentation, overwrite PrimitiveTypeMapper#useParenthesisInsteadOfBracketsForTuples in the extension point.
 
 ## September 2024
 

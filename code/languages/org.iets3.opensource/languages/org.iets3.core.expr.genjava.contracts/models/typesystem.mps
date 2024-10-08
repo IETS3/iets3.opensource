@@ -131,7 +131,7 @@
         <node concept="3clFbS" id="lH$PuiWwy2" role="3clFbx">
           <node concept="2MkqsV" id="lH$PuiWzzc" role="3cqZAp">
             <node concept="Xl_RD" id="lH$PuiWz_k" role="2MkJ7o">
-              <property role="Xl_RC" value="Must be used inside a check statement with a value" />
+              <property role="Xl_RC" value="must be used inside a check statement with a value" />
             </node>
             <node concept="1YBJjd" id="lH$PuiWzAx" role="1urrMF">
               <ref role="1YBMHb" node="lH$Puh$T_B" resolve="contractSubject" />

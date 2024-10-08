@@ -15,6 +15,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -459,9 +462,14 @@
     <node concept="1TJgyj" id="28$LOSAflsv" role="1TKVEi">
       <property role="IQ2ns" value="2460310434914064159" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="3eH6BL3kbdn" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="3eH6BL3kbdb" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="28$LOSAeeCX">
@@ -531,9 +539,14 @@
     <node concept="1TJgyj" id="28$LOSBqa1l" role="1TKVEi">
       <property role="IQ2ns" value="2460310434922396361" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="3eH6BL3k25F" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="3eH6BL3k25v" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="28$LOSBCtT$">
@@ -550,9 +563,14 @@
     <node concept="1TJgyj" id="28$LOSBCugO" role="1TKVEi">
       <property role="IQ2ns" value="2460310434937431092" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="3eH6BL3iHsJ" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="3eH6BL3iHsz" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="28$LOSBF$h3">

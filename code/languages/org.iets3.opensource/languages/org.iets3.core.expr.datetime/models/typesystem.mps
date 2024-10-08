@@ -488,7 +488,7 @@
                   </node>
                 </node>
                 <node concept="Xl_RD" id="26CArgTZmTm" role="3uHU7B">
-                  <property role="Xl_RC" value="Invalid Date Literal: " />
+                  <property role="Xl_RC" value="invalid date literal: " />
                 </node>
               </node>
               <node concept="1YBJjd" id="26CArgTZo2l" role="1urrMF">

@@ -155,7 +155,7 @@
         <node concept="3clFbS" id="6TDynbfeKnl" role="3clFbx">
           <node concept="2MkqsV" id="6TDynbfeKHx" role="3cqZAp">
             <node concept="Xl_RD" id="6TDynbfeKHK" role="2MkJ7o">
-              <property role="Xl_RC" value="Requires mandatory attributes" />
+              <property role="Xl_RC" value="requires mandatory attributes" />
             </node>
             <node concept="1YBJjd" id="6TDynbfeKJg" role="1urrMF">
               <ref role="1YBMHb" node="6TDynbfeC95" resolve="iAttributed" />
@@ -225,7 +225,7 @@
           </node>
         </node>
         <node concept="Xl_RD" id="4fgA7QrBWoi" role="2MkJ7o">
-          <property role="Xl_RC" value="Context is not valid" />
+          <property role="Xl_RC" value="context is not valid" />
         </node>
         <node concept="2OqwBi" id="4fgA7QrBW$G" role="1urrMF">
           <node concept="1YBJjd" id="4fgA7QrBWsH" role="2Oq$k0">

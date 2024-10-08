@@ -209,7 +209,7 @@
         <node concept="3clFbS" id="6KviS2JpKoQ" role="3clFbx">
           <node concept="Dpp1Q" id="6KviS2JpLzM" role="3cqZAp">
             <node concept="Xl_RD" id="6KviS2JpLzO" role="Dpw9R">
-              <property role="Xl_RC" value="you don't need quotes unless you want to match quotes." />
+              <property role="Xl_RC" value="quotes are not needed unless quotes need to be matched" />
             </node>
             <node concept="1YBJjd" id="6KviS2JpL$P" role="1urrMF">
               <ref role="1YBMHb" node="6KviS2JpKoH" resolve="ssem" />
@@ -221,7 +221,7 @@
         <node concept="3clFbS" id="BVrsO9UU8Z" role="3clFbx">
           <node concept="Dpp1Q" id="BVrsO9UU90" role="3cqZAp">
             <node concept="Xl_RD" id="BVrsO9UU91" role="Dpw9R">
-              <property role="Xl_RC" value="make sure you escape the backslash (\\\\) if you want to match the backslash." />
+              <property role="Xl_RC" value="escape the backslash (\\\\) to match the backslash" />
             </node>
             <node concept="1YBJjd" id="BVrsO9UU92" role="1urrMF">
               <ref role="1YBMHb" node="6KviS2JpKoH" resolve="ssem" />

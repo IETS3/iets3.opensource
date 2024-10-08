@@ -2093,10 +2093,6 @@
           <ref role="2I9WkF" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
         </node>
       </node>
-      <node concept="37vLTG" id="1PW6P0ZLhfU" role="3clF46">
-        <property role="TrG5h" value="goToInfinity" />
-        <node concept="10P_77" id="1PW6P0ZLhfV" role="1tU5fm" />
-      </node>
       <node concept="3clFbS" id="1PW6P0ZLhen" role="3clF47">
         <node concept="3cpWs8" id="1PW6P0ZLheo" role="3cqZAp">
           <node concept="3cpWsn" id="1PW6P0ZLhep" role="3cpWs9">
@@ -2307,6 +2303,10 @@
             <ref role="3cqZAo" node="1PW6P0ZLhep" resolve="res" />
           </node>
         </node>
+      </node>
+      <node concept="37vLTG" id="1PW6P0ZLhfU" role="3clF46">
+        <property role="TrG5h" value="goToInfinity" />
+        <node concept="10P_77" id="1PW6P0ZLhfV" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="1G7Ce6w8Mz$" role="jymVt" />

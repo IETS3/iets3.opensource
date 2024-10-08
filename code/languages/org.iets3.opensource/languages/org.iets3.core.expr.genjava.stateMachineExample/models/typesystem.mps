@@ -6,6 +6,7 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="44fz" ref="r:93558715-ee8d-4b41-af94-bc16c022d73d(org.iets3.core.expr.genjava.stateMachineExample.structure)" implicit="true" />
   </imports>
   <registry>
@@ -66,7 +67,7 @@
                 <ref role="1YBMHb" node="4NM7IHyE2aA" resolve="eventArg" />
               </node>
               <node concept="3TrEf2" id="4NM7IHyE2XA" role="2OqNvi">
-                <ref role="3Tt5mk" to="44fz:4NM7IHyCGh1" resolve="type" />
+                <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
               </node>
             </node>
           </node>

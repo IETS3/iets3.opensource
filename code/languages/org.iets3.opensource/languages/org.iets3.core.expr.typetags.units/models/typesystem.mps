@@ -713,7 +713,7 @@
         <node concept="3clFbS" id="5XaocLWKnzZ" role="3clFbx">
           <node concept="2MkqsV" id="5XaocLWKnE0" role="3cqZAp">
             <node concept="Xl_RD" id="5XaocLWKnEi" role="2MkJ7o">
-              <property role="Xl_RC" value="There is no unit to strip" />
+              <property role="Xl_RC" value="no unit to strip" />
             </node>
             <node concept="1YBJjd" id="5XaocLWKnEU" role="1urrMF">
               <ref role="1YBMHb" node="5XaocLWKjTW" resolve="expression" />
@@ -1028,7 +1028,7 @@
                 <node concept="3clFbS" id="20xYXnqtdaw" role="3clFbx">
                   <node concept="2MkqsV" id="20xYXnqtdG8" role="3cqZAp">
                     <node concept="Xl_RD" id="20xYXnqtdGq" role="2MkJ7o">
-                      <property role="Xl_RC" value="The conversion expression's unit and the rule's target unit do not match" />
+                      <property role="Xl_RC" value="the conversion expression's unit and the rule's target unit do not match" />
                     </node>
                     <node concept="2OqwBi" id="20xYXnqtdR3" role="1urrMF">
                       <node concept="1YBJjd" id="1wGuEUvYEHj" role="2Oq$k0">
@@ -1186,7 +1186,7 @@
                   <node concept="3clFbS" id="25BDdv8anlu" role="3clFbx">
                     <node concept="2MkqsV" id="20xYXnqti6M" role="3cqZAp">
                       <node concept="Xl_RD" id="20xYXnqtiV$" role="2MkJ7o">
-                        <property role="Xl_RC" value="A lazy conversion expression must not have a type with unit" />
+                        <property role="Xl_RC" value="a lazy conversion expression must not have a type with unit" />
                       </node>
                       <node concept="2OqwBi" id="20xYXnqtibs" role="1urrMF">
                         <node concept="1YBJjd" id="1wGuEUvYGm$" role="2Oq$k0">
@@ -1585,7 +1585,7 @@
                     <node concept="3clFbS" id="4HIG6OSDhs4" role="3clFbx">
                       <node concept="2MkqsV" id="4HIG6OSDiqj" role="3cqZAp">
                         <node concept="Xl_RD" id="4HIG6OSDiqC" role="2MkJ7o">
-                          <property role="Xl_RC" value="More restrictive type is used in the conversion specifier!" />
+                          <property role="Xl_RC" value="more restrictive type is used in the conversion specifier!" />
                         </node>
                         <node concept="2GrUjf" id="4HIG6OSDiwd" role="1urrMF">
                           <ref role="2Gs0qQ" node="4HIG6OSCNE$" resolve="convertExpression" />
@@ -1641,7 +1641,7 @@
             <node concept="3clFbS" id="3FpaOZK603A" role="3clFbx">
               <node concept="2MkqsV" id="3FpaOZK63Tb" role="3cqZAp">
                 <node concept="Xl_RD" id="3FpaOZK63Tq" role="2MkJ7o">
-                  <property role="Xl_RC" value="A conversion formula is not allowed to consist of a val expression only" />
+                  <property role="Xl_RC" value="a conversion formula is not allowed to consist of a val expression only" />
                 </node>
                 <node concept="2OqwBi" id="3FpaOZK649h" role="1urrMF">
                   <node concept="1YBJjd" id="3FpaOZK6408" role="2Oq$k0">
@@ -2933,7 +2933,7 @@
           </node>
         </node>
         <node concept="Xl_RD" id="1JTgXSYRpdE" role="2MkJ7o">
-          <property role="Xl_RC" value="A log expression is not allowed to have units!" />
+          <property role="Xl_RC" value="A log expression is not allowed to have units" />
         </node>
         <node concept="2OqwBi" id="1JTgXSYRpBf" role="1urrMF">
           <node concept="1YBJjd" id="1JTgXSYRpl5" role="2Oq$k0">
@@ -3143,7 +3143,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="6q$NxWf15Xj" role="2MkJ7o">
-              <property role="Xl_RC" value="A power expression is only allowed to have units if the exponent is a number type in the range of int" />
+              <property role="Xl_RC" value="a power expression is only allowed to have units if the exponent is a number type in the range of int" />
             </node>
             <node concept="2OqwBi" id="6q$NxWf66U6" role="1urrMF">
               <node concept="1YBJjd" id="6q$NxWf16Dx" role="2Oq$k0">
@@ -3201,7 +3201,7 @@
           </node>
         </node>
         <node concept="Xl_RD" id="6q$NxWeKf03" role="2MkJ7o">
-          <property role="Xl_RC" value="A product loop expression is not allowed to have units!" />
+          <property role="Xl_RC" value="a product loop expression is not allowed to have units" />
         </node>
         <node concept="2OqwBi" id="6q$NxWeKf04" role="1urrMF">
           <node concept="1YBJjd" id="6q$NxWeKf05" role="2Oq$k0">
@@ -3283,7 +3283,7 @@
           <node concept="3clFbS" id="yGiRIEW2SQ" role="3clFbx">
             <node concept="2MkqsV" id="yGiRIEWkAm" role="3cqZAp">
               <node concept="Xl_RD" id="yGiRIEWkAF" role="2MkJ7o">
-                <property role="Xl_RC" value="No matching conversion specifier can be found" />
+                <property role="Xl_RC" value="no matching conversion specifier found" />
               </node>
               <node concept="37vLTw" id="6rhVuibSIyU" role="1urrMF">
                 <ref role="3cqZAo" node="7SygLIkQEBm" resolve="iConvertUnit" />
@@ -3508,7 +3508,7 @@
             <node concept="3clFbS" id="12tdV5AgivU" role="3eOfB_">
               <node concept="2MkqsV" id="12tdV5AgRtU" role="3cqZAp">
                 <node concept="Xl_RD" id="12tdV5AgRu3" role="2MkJ7o">
-                  <property role="Xl_RC" value="The conversion specifier must be set" />
+                  <property role="Xl_RC" value="the conversion specifier must be set" />
                 </node>
                 <node concept="37vLTw" id="7SygLIkRCsA" role="1urrMF">
                   <ref role="3cqZAo" node="7SygLIkRCsw" resolve="convertExpression" />
@@ -3700,7 +3700,7 @@
                   <node concept="3clFbS" id="yGiRIEVxwW" role="3clFbx">
                     <node concept="2MkqsV" id="yGiRIEVxwX" role="3cqZAp">
                       <node concept="Xl_RD" id="yGiRIEVxwY" role="2MkJ7o">
-                        <property role="Xl_RC" value="Expression must evaluate to an annotated type with the defined source unit!" />
+                        <property role="Xl_RC" value="expression must evaluate to an annotated type with the defined source unit" />
                       </node>
                       <node concept="37vLTw" id="7SygLIkRCsC" role="1urrMF">
                         <ref role="3cqZAo" node="7SygLIkRCsw" resolve="convertExpression" />
@@ -4912,7 +4912,7 @@
           </node>
           <node concept="2MkqsV" id="3vbD2Cjzjw1" role="3cqZAp">
             <node concept="Xl_RD" id="3vbD2Cjzjwd" role="2MkJ7o">
-              <property role="Xl_RC" value="The TypeDef is already defined using a Unit, so units are not applicable here" />
+              <property role="Xl_RC" value="The type definition is already defined using a unit so units are not applicable here" />
             </node>
             <node concept="2OqwBi" id="3vbD2CjzjG$" role="1urrMF">
               <node concept="1YBJjd" id="3vbD2Cjzjz0" role="2Oq$k0">

@@ -16,10 +16,10 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="v0r8" ref="r:8ef260d4-7762-457a-8d33-23916aa626ab(org.iets3.core.expr.adt.structure)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dnkk" ref="r:c7dec76d-437e-4f48-9d01-3857e3cf30e6(org.iets3.core.expr.adt.behavior)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -1439,7 +1439,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="28$LOSAflsY" role="3EZMnx">
-        <ref role="1NtTu8" to="v0r8:28$LOSAflsv" resolve="type" />
+        <ref role="1NtTu8" to="hm2y:7D7uZV2iYAD" resolve="type" />
       </node>
       <node concept="3F0ifn" id="28$LOSAfltf" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
@@ -1544,7 +1544,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="28$LOSBqa1R" role="3EZMnx">
-        <ref role="1NtTu8" to="v0r8:28$LOSBqa1l" resolve="type" />
+        <ref role="1NtTu8" to="hm2y:7D7uZV2iYAD" resolve="type" />
       </node>
       <node concept="3F0ifn" id="28$LOSBqa1S" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
@@ -1560,7 +1560,7 @@
       <node concept="2iRfu4" id="28$LOSBF$UU" role="2iSdaV" />
       <node concept="1kIj98" id="28$LOSBCuhk" role="3EZMnx">
         <node concept="3F1sOY" id="28$LOSBCuhq" role="1kIj9b">
-          <ref role="1NtTu8" to="v0r8:28$LOSBCugO" resolve="type" />
+          <ref role="1NtTu8" to="hm2y:7D7uZV2iYAD" resolve="type" />
         </node>
         <node concept="uPpia" id="2zRMcT4P_fU" role="1djCvC">
           <node concept="3clFbS" id="2zRMcT4P_fV" role="2VODD2">

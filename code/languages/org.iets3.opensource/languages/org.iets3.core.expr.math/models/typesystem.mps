@@ -1676,7 +1676,7 @@
                 <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                 <node concept="Xl_RD" id="6q$NxWgd7y4" role="37wK5m">
-                  <property role="Xl_RC" value="Cannot infer type for %s. Reason: The inner type %s is not supported." />
+                  <property role="Xl_RC" value="Cannot infer type for ‹%s›: The inner type ‹%s› is not supported." />
                 </node>
                 <node concept="2OqwBi" id="6q$NxWgeLb4" role="37wK5m">
                   <node concept="2OqwBi" id="6q$NxWgeKJz" role="2Oq$k0">
@@ -1910,7 +1910,7 @@
         <node concept="3clFbS" id="4wFKMWZT8xJ" role="3clFbx">
           <node concept="2MkqsV" id="4wFKMWZTa2S" role="3cqZAp">
             <node concept="Xl_RD" id="4wFKMWZTa37" role="2MkJ7o">
-              <property role="Xl_RC" value="Expression cannot be part of a Polynom!" />
+              <property role="Xl_RC" value="expression cannot be part of a polynomial" />
             </node>
             <node concept="37vLTw" id="4wFKMWZTa3i" role="1urrMF">
               <ref role="3cqZAo" node="4wFKMWZT52a" resolve="wronExpression" />
@@ -1930,7 +1930,7 @@
         <node concept="3clFbS" id="3C0hCYc013c" role="3clFbx">
           <node concept="2MkqsV" id="3C0hCYc01Bl" role="3cqZAp">
             <node concept="Xl_RD" id="3C0hCYc01B$" role="2MkJ7o">
-              <property role="Xl_RC" value="Only univariate polynoms supported!" />
+              <property role="Xl_RC" value="only univariate polynomials are supported" />
             </node>
             <node concept="1y4W85" id="3C0hCYc0fUg" role="1urrMF">
               <node concept="3cmrfG" id="3C0hCYc0gjt" role="1y58nS">
@@ -2000,7 +2000,7 @@
                 </node>
               </node>
               <node concept="Xl_RD" id="3C0hCYbRU7y" role="3uHU7B">
-                <property role="Xl_RC" value="Only variable allowed as base but was " />
+                <property role="Xl_RC" value="expected variable as base, got expression " />
               </node>
             </node>
             <node concept="2OqwBi" id="3C0hCYbSImZ" role="1urrMF">
@@ -2087,7 +2087,7 @@
         <node concept="3clFbS" id="3C0hCYbUeTo" role="3clFbx">
           <node concept="2MkqsV" id="3C0hCYbSBh5" role="3cqZAp">
             <node concept="Xl_RD" id="3C0hCYbSBix" role="2MkJ7o">
-              <property role="Xl_RC" value="Only numbers allowed in exponent!!" />
+              <property role="Xl_RC" value="only numbers allowed in exponent" />
             </node>
             <node concept="2OqwBi" id="3C0hCYbSIHt" role="1urrMF">
               <node concept="37vLTw" id="3C0hCYbSBiG" role="2Oq$k0">
@@ -2208,7 +2208,7 @@
         <node concept="3clFbS" id="3C0hCYbUfuW" role="3clFbx">
           <node concept="2MkqsV" id="3C0hCYbT4PK" role="3cqZAp">
             <node concept="Xl_RD" id="3C0hCYbT4Sf" role="2MkJ7o">
-              <property role="Xl_RC" value="Exponent cannot be real!" />
+              <property role="Xl_RC" value="exponent cannot be of type ‹real›" />
             </node>
             <node concept="2OqwBi" id="3C0hCYbT54b" role="1urrMF">
               <node concept="37vLTw" id="3C0hCYbT4Tb" role="2Oq$k0">
@@ -2286,7 +2286,7 @@
         <node concept="3clFbS" id="3C0hCYbUEL3" role="3clFbx">
           <node concept="2MkqsV" id="3C0hCYbUG6_" role="3cqZAp">
             <node concept="Xl_RD" id="3C0hCYbUGlg" role="2MkJ7o">
-              <property role="Xl_RC" value="Left operand must be a NumberLiteral and right operand must be a variable!" />
+              <property role="Xl_RC" value="left operand must be a number and right operand a variable" />
             </node>
             <node concept="37vLTw" id="3C0hCYbUGlr" role="1urrMF">
               <ref role="3cqZAo" node="3C0hCYbUC03" resolve="malformedMulExpression" />
@@ -2382,7 +2382,7 @@
         <node concept="3clFbS" id="3C0hCYbVGlZ" role="3clFbx">
           <node concept="2MkqsV" id="3C0hCYbVHaU" role="3cqZAp">
             <node concept="Xl_RD" id="3C0hCYbVHeF" role="2MkJ7o">
-              <property role="Xl_RC" value="Plus must refer to at least one variable!" />
+              <property role="Xl_RC" value="plus expressions must refer to at least one variable" />
             </node>
             <node concept="37vLTw" id="3C0hCYbVHeQ" role="1urrMF">
               <ref role="3cqZAo" node="3C0hCYbVFGF" resolve="plusExpressionCannotConsistOnlyOfNumberLiterals" />
@@ -2400,7 +2400,7 @@
       <node concept="3clFbH" id="3C0hCYbXEpA" role="3cqZAp" />
       <node concept="3cpWs8" id="3iWt5efMpzh" role="3cqZAp">
         <node concept="3cpWsn" id="3iWt5efMpzi" role="3cpWs9">
-          <property role="TrG5h" value="nonUnniqueExponent" />
+          <property role="TrG5h" value="nonUniqueExponent" />
           <node concept="17QB3L" id="3iWt5efMoZj" role="1tU5fm" />
           <node concept="2YIFZM" id="3iWt5efMpzj" role="33vP2m">
             <ref role="37wK5l" to="7xqi:3iWt5efLe7m" resolve="isExponentOfPowExpressionNonUnique" />
@@ -2420,10 +2420,10 @@
               </node>
               <node concept="3cpWs3" id="3iWt5efMxFi" role="3uHU7B">
                 <node concept="Xl_RD" id="3iWt5efLsBh" role="3uHU7B">
-                  <property role="Xl_RC" value="For each exponent only one expression allowed, but " />
+                  <property role="Xl_RC" value="for each exponent only one expression allowed, but " />
                 </node>
                 <node concept="37vLTw" id="3iWt5efMyLg" role="3uHU7w">
-                  <ref role="3cqZAo" node="3iWt5efMpzi" resolve="nonUnniqueExponent" />
+                  <ref role="3cqZAo" node="3iWt5efMpzi" resolve="nonUniqueExponent" />
                 </node>
               </node>
             </node>
@@ -2435,7 +2435,7 @@
         </node>
         <node concept="2OqwBi" id="3iWt5efMvP8" role="3clFbw">
           <node concept="37vLTw" id="3iWt5efMpzl" role="2Oq$k0">
-            <ref role="3cqZAo" node="3iWt5efMpzi" resolve="nonUnniqueExponent" />
+            <ref role="3cqZAo" node="3iWt5efMpzi" resolve="nonUniqueExponent" />
           </node>
           <node concept="17RvpY" id="3iWt5efMxjt" role="2OqNvi" />
         </node>

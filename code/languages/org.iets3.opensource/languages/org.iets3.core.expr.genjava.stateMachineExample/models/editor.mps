@@ -7,6 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="44fz" ref="r:93558715-ee8d-4b41-af94-bc16c022d73d(org.iets3.core.expr.genjava.stateMachineExample.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -232,7 +233,7 @@
       </node>
       <node concept="1kIj98" id="4NM7IHyCReH" role="3EZMnx">
         <node concept="3F1sOY" id="4NM7IHyCReS" role="1kIj9b">
-          <ref role="1NtTu8" to="44fz:4NM7IHyCGh1" resolve="type" />
+          <ref role="1NtTu8" to="hm2y:7D7uZV2iYAD" resolve="type" />
         </node>
         <node concept="uPpia" id="2zRMcT4P_hy" role="1djCvC">
           <node concept="3clFbS" id="2zRMcT4P_hz" role="2VODD2">

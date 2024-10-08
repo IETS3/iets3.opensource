@@ -11,8 +11,9 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="w1hl" ref="r:04b74a30-84ff-4d44-89e3-8084278f9c79(org.iets3.core.expr.typetags.structure)" implicit="true" />
     <import index="n0mj" ref="r:8218afdf-a485-4479-86a0-78900b96a4dd(org.iets3.core.expr.typetags.bindingtime.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="iy3m" ref="r:1c658055-0fdc-45f4-8442-9bac78d96a2f(org.iets3.core.expr.typetags.bindingtime.behavior)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
@@ -74,7 +75,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -557,58 +557,53 @@
       <node concept="3clFbJ" id="35Mye9KtpIC" role="3cqZAp">
         <node concept="3clFbS" id="35Mye9KtpIE" role="3clFbx">
           <node concept="2MkqsV" id="35Mye9KtDXA" role="3cqZAp">
-            <node concept="3cpWs3" id="35Mye9KtGMJ" role="2MkJ7o">
-              <node concept="2OqwBi" id="35Mye9KtHPf" role="3uHU7w">
-                <node concept="2OqwBi" id="35Mye9KtHcm" role="2Oq$k0">
-                  <node concept="1PxgMI" id="6OaC6FaHNAq" role="2Oq$k0">
-                    <node concept="chp4Y" id="6OaC6FaHNLw" role="3oSUPX">
-                      <ref role="cht4Q" to="n0mj:1SyV1pw9yQo" resolve="BTtag" />
-                    </node>
-                    <node concept="37vLTw" id="35Mye9KtGY3" role="1m5AlR">
-                      <ref role="3cqZAo" node="6OaC6FaQ5dG" resolve="subTag" />
-                    </node>
-                  </node>
-                  <node concept="3TrEf2" id="35Mye9KtH$d" role="2OqNvi">
-                    <ref role="3Tt5mk" to="n0mj:1SyV1pw9Cpe" resolve="bindingtime" />
-                  </node>
-                </node>
-                <node concept="3TrcHB" id="35Mye9KtIiO" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
-              </node>
-              <node concept="3cpWs3" id="35Mye9KtG9A" role="3uHU7B">
-                <node concept="3cpWs3" id="35Mye9KtEhu" role="3uHU7B">
-                  <node concept="Xl_RD" id="35Mye9KtDXX" role="3uHU7B">
-                    <property role="Xl_RC" value="Computation stage " />
-                  </node>
-                  <node concept="2OqwBi" id="35Mye9KtFeT" role="3uHU7w">
-                    <node concept="2OqwBi" id="35Mye9KtEvT" role="2Oq$k0">
-                      <node concept="1PxgMI" id="6OaC6FaHMRA" role="2Oq$k0">
-                        <node concept="chp4Y" id="6OaC6FaHMZk" role="3oSUPX">
-                          <ref role="cht4Q" to="n0mj:1SyV1pw9yQo" resolve="BTtag" />
-                        </node>
-                        <node concept="37vLTw" id="35Mye9KtEhS" role="1m5AlR">
-                          <ref role="3cqZAo" node="6OaC6FaQ9ch" resolve="supTag" />
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="35Mye9KtEJE" role="2OqNvi">
-                        <ref role="3Tt5mk" to="n0mj:1SyV1pw9Cpe" resolve="bindingtime" />
-                      </node>
-                    </node>
-                    <node concept="3TrcHB" id="35Mye9KtFIT" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="35Mye9KtGkK" role="3uHU7w">
-                  <property role="Xl_RC" value=" is earlier than " />
-                </node>
-              </node>
-            </node>
             <node concept="2OqwBi" id="35Mye9Kun0p" role="1urrMF">
               <node concept="3622Ei" id="35Mye9KulSU" role="2Oq$k0" />
               <node concept="liA8E" id="35Mye9Kuozl" role="2OqNvi">
                 <ref role="37wK5l" to="u78q:~EquationInfo.getNodeWithError()" resolve="getNodeWithError" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="3eH6BL4eMLh" role="2MkJ7o">
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <node concept="Xl_RD" id="3eH6BL4eMLK" role="37wK5m">
+                <property role="Xl_RC" value="computation stage ‹%s› is earlier than ‹%s›" />
+              </node>
+              <node concept="2OqwBi" id="3eH6BL4eN1N" role="37wK5m">
+                <node concept="2OqwBi" id="3eH6BL4eN1O" role="2Oq$k0">
+                  <node concept="1PxgMI" id="3eH6BL4eN1P" role="2Oq$k0">
+                    <node concept="chp4Y" id="3eH6BL4eN1Q" role="3oSUPX">
+                      <ref role="cht4Q" to="n0mj:1SyV1pw9yQo" resolve="BTtag" />
+                    </node>
+                    <node concept="37vLTw" id="3eH6BL4eN1R" role="1m5AlR">
+                      <ref role="3cqZAo" node="6OaC6FaQ9ch" resolve="supTag" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="3eH6BL4eN1S" role="2OqNvi">
+                    <ref role="3Tt5mk" to="n0mj:1SyV1pw9Cpe" resolve="bindingtime" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="3eH6BL4eN1T" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3eH6BL4eNjf" role="37wK5m">
+                <node concept="2OqwBi" id="3eH6BL4eNjg" role="2Oq$k0">
+                  <node concept="1PxgMI" id="3eH6BL4eNjh" role="2Oq$k0">
+                    <node concept="chp4Y" id="3eH6BL4eNji" role="3oSUPX">
+                      <ref role="cht4Q" to="n0mj:1SyV1pw9yQo" resolve="BTtag" />
+                    </node>
+                    <node concept="37vLTw" id="3eH6BL4eNjj" role="1m5AlR">
+                      <ref role="3cqZAo" node="6OaC6FaQ5dG" resolve="subTag" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="3eH6BL4eNjk" role="2OqNvi">
+                    <ref role="3Tt5mk" to="n0mj:1SyV1pw9Cpe" resolve="bindingtime" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="3eH6BL4eNjl" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
             </node>
           </node>
@@ -719,7 +714,7 @@
         <node concept="3clFbS" id="1CvMCa_oYty" role="3clFbx">
           <node concept="2MkqsV" id="1CvMCa_oZmt" role="3cqZAp">
             <node concept="Xl_RD" id="1CvMCa_oZmD" role="2MkJ7o">
-              <property role="Xl_RC" value="Computation Class involved in Cycle. Please remove." />
+              <property role="Xl_RC" value="computation class involved in cycle" />
             </node>
             <node concept="1YBJjd" id="1CvMCa_oZoO" role="1urrMF">
               <ref role="1YBMHb" node="1CvMCa_pqT6" resolve="btGroup" />
@@ -748,7 +743,7 @@
         <node concept="3clFbS" id="1CvMCa_prKG" role="3clFbx">
           <node concept="2MkqsV" id="1CvMCa_psCS" role="3cqZAp">
             <node concept="Xl_RD" id="1CvMCa_psD4" role="2MkJ7o">
-              <property role="Xl_RC" value="Computation Stage involved in cycle. Please remove." />
+              <property role="Xl_RC" value="computation stage involved in cycle" />
             </node>
             <node concept="1YBJjd" id="1CvMCa_psEn" role="1urrMF">
               <ref role="1YBMHb" node="1CvMCa_prKA" resolve="btDeclaration" />

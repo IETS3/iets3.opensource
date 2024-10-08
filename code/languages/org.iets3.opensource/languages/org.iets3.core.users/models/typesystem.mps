@@ -135,10 +135,16 @@
       </node>
       <node concept="3clFbJ" id="76PiIP0IhKj" role="3cqZAp">
         <node concept="3clFbS" id="76PiIP0IhKl" role="3clFbx">
-          <node concept="2Mj0R9" id="7mG7sQPpj_f" role="3cqZAp">
-            <node concept="Xl_RD" id="7mG7sQPpjJw" role="2MkJ7o">
-              <property role="Xl_RC" value="invalid email address" />
+          <node concept="3cpWs8" id="3eH6BL4fNNW" role="3cqZAp">
+            <node concept="3cpWsn" id="3eH6BL4fNNZ" role="3cpWs9">
+              <property role="TrG5h" value="errorMessage" />
+              <node concept="17QB3L" id="3eH6BL4fNNU" role="1tU5fm" />
+              <node concept="Xl_RD" id="3eH6BL4fNQt" role="33vP2m">
+                <property role="Xl_RC" value="invalid email address" />
+              </node>
             </node>
+          </node>
+          <node concept="2Mj0R9" id="7mG7sQPpj_f" role="3cqZAp">
             <node concept="2OqwBi" id="7mG7sQPpjCh" role="2MkoU_">
               <node concept="37vLTw" id="7mG7sQPpj_L" role="2Oq$k0">
                 <ref role="3cqZAo" node="7mG7sQPpj$6" resolve="m" />
@@ -153,11 +159,11 @@
             <node concept="1YBJjd" id="7mG7sQPpjQN" role="1urrMF">
               <ref role="1YBMHb" node="7mG7sQPpjqD" resolve="user" />
             </node>
+            <node concept="37vLTw" id="3eH6BL4fNSD" role="2MkJ7o">
+              <ref role="3cqZAo" node="3eH6BL4fNNZ" resolve="errorMessage" />
+            </node>
           </node>
           <node concept="2Mj0R9" id="7mG7sQPpjNb" role="3cqZAp">
-            <node concept="Xl_RD" id="7mG7sQPpjNd" role="2MkJ7o">
-              <property role="Xl_RC" value="invalid email address" />
-            </node>
             <node concept="2OqwBi" id="7mG7sQPpjNe" role="2MkoU_">
               <node concept="37vLTw" id="7mG7sQPpjNf" role="2Oq$k0">
                 <ref role="3cqZAo" node="7mG7sQPpj$6" resolve="m" />
@@ -171,6 +177,9 @@
             </node>
             <node concept="1YBJjd" id="7mG7sQPpjRU" role="1urrMF">
               <ref role="1YBMHb" node="7mG7sQPpjqD" resolve="user" />
+            </node>
+            <node concept="37vLTw" id="3eH6BL4fNWJ" role="2MkJ7o">
+              <ref role="3cqZAo" node="3eH6BL4fNNZ" resolve="errorMessage" />
             </node>
           </node>
         </node>

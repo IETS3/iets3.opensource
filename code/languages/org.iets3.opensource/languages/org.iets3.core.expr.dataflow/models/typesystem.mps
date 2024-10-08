@@ -9,6 +9,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="gx5r" ref="r:a9ed28db-11a2-453b-b8cd-4dbf2ae73280(org.iets3.core.expr.dataflow.structure)" />
     <import index="b4m9" ref="r:f73fffcc-e6a1-406e-b40b-65eaaa19bd69(org.iets3.core.expr.dataflow.behavior)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -30,6 +31,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -57,7 +61,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -311,26 +314,23 @@
             </node>
             <node concept="3clFbS" id="5Q9FzcI52yv" role="3clFbx">
               <node concept="2MkqsV" id="5Q9FzcI57x6" role="3cqZAp">
-                <node concept="3cpWs3" id="5Q9FzcI59IA" role="2MkJ7o">
-                  <node concept="3cpWs3" id="5Q9FzcI59mR" role="3uHU7B">
-                    <node concept="Xl_RD" id="5Q9FzcI57xl" role="3uHU7B">
-                      <property role="Xl_RC" value="port " />
-                    </node>
-                    <node concept="2OqwBi" id="1br4Vy9osc" role="3uHU7w">
-                      <node concept="2GrUjf" id="1br4Vy9osd" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="5Q9FzcI51Vf" resolve="op" />
-                      </node>
-                      <node concept="2qgKlT" id="1br4Vy9ose" role="2OqNvi">
-                        <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="5Q9FzcI5aor" role="3uHU7w">
-                    <property role="Xl_RC" value=" must be connected" />
-                  </node>
-                </node>
                 <node concept="2GrUjf" id="5Q9FzcI5bU4" role="1urrMF">
                   <ref role="2Gs0qQ" node="5Q9FzcI51Vf" resolve="op" />
+                </node>
+                <node concept="2YIFZM" id="3eH6BL47ngh" role="2MkJ7o">
+                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                  <node concept="Xl_RD" id="3eH6BL47ngw" role="37wK5m">
+                    <property role="Xl_RC" value="port ‹%s› must be connected" />
+                  </node>
+                  <node concept="2OqwBi" id="3eH6BL47nDx" role="37wK5m">
+                    <node concept="2GrUjf" id="3eH6BL47nDy" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="5Q9FzcI51Vf" resolve="op" />
+                    </node>
+                    <node concept="2qgKlT" id="3eH6BL47nDz" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -425,26 +425,23 @@
             </node>
             <node concept="3clFbS" id="5Q9FzcI6mW3" role="3clFbx">
               <node concept="2MkqsV" id="5Q9FzcI6uA$" role="3cqZAp">
-                <node concept="3cpWs3" id="5Q9FzcI6wsS" role="2MkJ7o">
-                  <node concept="Xl_RD" id="5Q9FzcI6wsV" role="3uHU7w">
-                    <property role="Xl_RC" value=" not connected" />
-                  </node>
-                  <node concept="3cpWs3" id="5Q9FzcI6uRV" role="3uHU7B">
-                    <node concept="Xl_RD" id="5Q9FzcI6uAN" role="3uHU7B">
-                      <property role="Xl_RC" value="port " />
-                    </node>
-                    <node concept="2OqwBi" id="5Q9FzcI6v8a" role="3uHU7w">
-                      <node concept="2GrUjf" id="5Q9FzcI6uRY" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="5Q9FzcI6hAn" resolve="p" />
-                      </node>
-                      <node concept="3TrcHB" id="5Q9FzcI6vGL" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="1YBJjd" id="5Q9FzcI6yc1" role="1urrMF">
                   <ref role="1YBMHb" node="5Q9FzcI6hvL" resolve="i" />
+                </node>
+                <node concept="2YIFZM" id="3eH6BL47pkH" role="2MkJ7o">
+                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                  <node concept="Xl_RD" id="3eH6BL47pkI" role="37wK5m">
+                    <property role="Xl_RC" value="port ‹%s› not connected" />
+                  </node>
+                  <node concept="2OqwBi" id="3eH6BL47pTg" role="37wK5m">
+                    <node concept="2GrUjf" id="3eH6BL47ps_" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="5Q9FzcI6hAn" resolve="p" />
+                    </node>
+                    <node concept="3TrcHB" id="3eH6BL47qq9" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -465,21 +462,23 @@
         </node>
         <node concept="3clFbS" id="2vkvJYSSd64" role="2LFqv$">
           <node concept="2MkqsV" id="2vkvJYSSdI0" role="3cqZAp">
-            <node concept="3cpWs3" id="2vkvJYSSdZI" role="2MkJ7o">
-              <node concept="2OqwBi" id="1br4Vy9osW" role="3uHU7w">
-                <node concept="2GrUjf" id="1br4Vy9osX" role="2Oq$k0">
+            <node concept="1YBJjd" id="2vkvJYSSe0c" role="1urrMF">
+              <ref role="1YBMHb" node="5Q9FzcI6hvL" resolve="i" />
+            </node>
+            <node concept="2YIFZM" id="3eH6BL47qPk" role="2MkJ7o">
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <node concept="Xl_RD" id="3eH6BL47qPl" role="37wK5m">
+                <property role="Xl_RC" value="missing parameter value for ‹%s›" />
+              </node>
+              <node concept="2OqwBi" id="3eH6BL47rFt" role="37wK5m">
+                <node concept="2GrUjf" id="3eH6BL47rfr" role="2Oq$k0">
                   <ref role="2Gs0qQ" node="2vkvJYSSd60" resolve="p" />
                 </node>
-                <node concept="2qgKlT" id="1br4Vy9osY" role="2OqNvi">
+                <node concept="2qgKlT" id="3eH6BL47s45" role="2OqNvi">
                   <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                 </node>
               </node>
-              <node concept="Xl_RD" id="2vkvJYSSdIc" role="3uHU7B">
-                <property role="Xl_RC" value="missing parameter value for " />
-              </node>
-            </node>
-            <node concept="1YBJjd" id="2vkvJYSSe0c" role="1urrMF">
-              <ref role="1YBMHb" node="5Q9FzcI6hvL" resolve="i" />
             </node>
           </node>
         </node>
@@ -637,7 +636,7 @@
             <node concept="3clFbS" id="2vkvJYT22C4" role="3clFbx">
               <node concept="2MkqsV" id="2vkvJYT280e" role="3cqZAp">
                 <node concept="Xl_RD" id="2vkvJYT280t" role="2MkJ7o">
-                  <property role="Xl_RC" value="port already has a value defined; cannot connect to it" />
+                  <property role="Xl_RC" value="The port has already a value defined. Cannot connect to it" />
                 </node>
                 <node concept="1YBJjd" id="2vkvJYT280X" role="1urrMF">
                   <ref role="1YBMHb" node="2vkvJYSX4AF" resolve="c" />
