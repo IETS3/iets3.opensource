@@ -2769,7 +2769,7 @@
           <node concept="3cpWsn" id="7obiejCzImH" role="3cpWs9">
             <property role="TrG5h" value="coverage" />
             <node concept="3uibUv" id="7obiejCzImI" role="1tU5fm">
-              <ref role="3uigEE" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+              <ref role="3uigEE" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
             </node>
             <node concept="2ShNRf" id="7obiejCzImJ" role="33vP2m">
               <node concept="1pGfFk" id="7LZDtvhxUZ5" role="2ShVmc">
