@@ -11,6 +11,7 @@
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -133,6 +134,9 @@
     <node concept="PrWs8" id="7aRvJQE8DD0" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7aRvJQE8BE8" resolve="INeverAllowDot" />
     </node>
+    <node concept="PrWs8" id="2KEzU_jNk92" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6Oetc">
     <property role="3GE5qa" value="numeric" />
@@ -199,6 +203,9 @@
       <property role="IQ2nx" value="30954369053895121" />
       <property role="TrG5h" value="excludeMax" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="2KEzU_jNk7E" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
     </node>
   </node>
   <node concept="1TIwiD" id="78hTg1$P0UC">
