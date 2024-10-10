@@ -52,9 +52,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
-        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
-      </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
@@ -1353,7 +1350,7 @@
             </node>
             <node concept="2ZW3vV" id="3FKUaHrUJB0" role="3uHU7w">
               <node concept="3uibUv" id="3FKUaHrUJB1" role="2ZW6by">
-                <ref role="3uigEE" to="xk6s:ub9nkyOIeW" resolve="EvalResult" />
+                <ref role="3uigEE" to="xk6s:7LZDtvgGNLS" resolve="IEvalResult" />
               </node>
               <node concept="37vLTw" id="3FKUaHrUJB2" role="2ZW6bz">
                 <ref role="3cqZAo" node="3FKUaHrUJAQ" resolve="lastResult" />
@@ -1374,12 +1371,12 @@
                         <ref role="3cqZAo" node="3FKUaHrUJAQ" resolve="lastResult" />
                       </node>
                       <node concept="3uibUv" id="3FKUaHrUJBb" role="10QFUM">
-                        <ref role="3uigEE" to="xk6s:ub9nkyOIeW" resolve="EvalResult" />
+                        <ref role="3uigEE" to="xk6s:7LZDtvgGNLS" resolve="IEvalResult" />
                       </node>
                     </node>
                   </node>
-                  <node concept="2OwXpG" id="3FKUaHrUJBc" role="2OqNvi">
-                    <ref role="2Oxat5" to="xk6s:ub9nkyOIfp" resolve="actual" />
+                  <node concept="liA8E" id="7LZDtvgNuhn" role="2OqNvi">
+                    <ref role="37wK5l" to="xk6s:7LZDtvgGPnG" resolve="getActual" />
                   </node>
                 </node>
               </node>

@@ -444,7 +444,7 @@
     <ref role="13h7C2" to="4kwy:3R3AIvuMXwK" resolve="ICanStoreCheckResult" />
     <node concept="13i0hz" id="3R3AIvum$_6" role="13h7CS">
       <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
+      <property role="13i0it" value="true" />
       <property role="TrG5h" value="userObjectKey" />
       <node concept="3Tm1VV" id="3R3AIvum$_7" role="1B3o_S" />
       <node concept="3clFbS" id="3R3AIvum$_8" role="3clF47">
@@ -458,7 +458,7 @@
     </node>
     <node concept="13i0hz" id="3R3AIvuq5Dp" role="13h7CS">
       <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
+      <property role="13i0it" value="true" />
       <property role="TrG5h" value="storeLastResult" />
       <node concept="3Tm1VV" id="3R3AIvuq5Dq" role="1B3o_S" />
       <node concept="3clFbS" id="3R3AIvuq5Dr" role="3clF47">
@@ -528,6 +528,7 @@
     </node>
     <node concept="13i0hz" id="5yiuuzNYbce" role="13h7CS">
       <property role="TrG5h" value="deleteLastResult" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="5yiuuzNYbcf" role="1B3o_S" />
       <node concept="3uibUv" id="5yiuuzNYczd" role="3clF45">
         <ref role="3uigEE" node="5zG5$Lyex1G" resolve="IResult" />
@@ -580,7 +581,7 @@
     </node>
     <node concept="13i0hz" id="3R3AIvumwpO" role="13h7CS">
       <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
+      <property role="13i0it" value="true" />
       <property role="TrG5h" value="hasExistingResult" />
       <node concept="3Tm1VV" id="3R3AIvumwpP" role="1B3o_S" />
       <node concept="3clFbS" id="3R3AIvumwpQ" role="3clF47">
