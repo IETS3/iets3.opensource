@@ -37,6 +37,9 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
+      <concept id="7485977462274819189" name="jetbrains.mps.baseLanguage.structure.FormatOperation" flags="ng" index="2cAKMz">
+        <child id="7485977462274819664" name="arguments" index="2cAKU6" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -2245,8 +2248,20 @@
                         <node concept="2pJxcG" id="7ZvWWnqJ_Mh" role="2pJxcM">
                           <ref role="2pJxcJ" to="tpd4:hfSilrU" resolve="errorText" />
                           <node concept="WxPPo" id="uuJ7IpZtue" role="28ntcv">
-                            <node concept="Xl_RD" id="7ZvWWnqJ_MA" role="WxPPp">
-                              <property role="Xl_RC" value="invalid type" />
+                            <node concept="2OqwBi" id="1WkavjU2uqo" role="WxPPp">
+                              <node concept="Xl_RD" id="7ZvWWnqJ_MA" role="2Oq$k0">
+                                <property role="Xl_RC" value="not evalutable expression type ‹%s›" />
+                              </node>
+                              <node concept="2cAKMz" id="1WkavjU2uNn" role="2OqNvi">
+                                <node concept="2OqwBi" id="1WkavjU2uUY" role="2cAKU6">
+                                  <node concept="2X3wrD" id="1WkavjU2uNG" role="2Oq$k0">
+                                    <ref role="2X3Bk0" node="2rOWEwsF5Bt" resolve="exprType" />
+                                  </node>
+                                  <node concept="2qgKlT" id="1WkavjU2v3H" role="2OqNvi">
+                                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                                  </node>
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -6970,14 +6985,8 @@
                           <ref role="3Tt5mk" to="hm2y:69zaTr1EKHX" resolve="type" />
                         </node>
                       </node>
-                      <node concept="1PxgMI" id="ZYPG76wgE7" role="37wK5m">
-                        <property role="1BlNFB" value="true" />
-                        <node concept="chp4Y" id="ZYPG76wgHc" role="3oSUPX">
-                          <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
-                        </node>
-                        <node concept="2X3wrD" id="ZYPG76wgfp" role="1m5AlR">
-                          <ref role="2X3Bk0" node="46cplYwOkUY" resolve="sub" />
-                        </node>
+                      <node concept="2X3wrD" id="ZYPG76wgfp" role="37wK5m">
+                        <ref role="2X3Bk0" node="46cplYwOkUY" resolve="sub" />
                       </node>
                     </node>
                   </node>

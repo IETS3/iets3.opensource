@@ -7761,7 +7761,7 @@
             <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
             <node concept="Xl_RD" id="ZYPG76LisT" role="37wK5m">
-              <property role="Xl_RC" value="expected ‹%s› but found ‹%s" />
+              <property role="Xl_RC" value="expected ‹%s› but found ‹%s›" />
             </node>
             <node concept="2OqwBi" id="ZYPG76Ljll" role="37wK5m">
               <node concept="37vLTw" id="ZYPG76LiZG" role="2Oq$k0">
@@ -7786,9 +7786,7 @@
       </node>
       <node concept="37vLTG" id="ZYPG76wazA" role="3clF46">
         <property role="TrG5h" value="actualType" />
-        <node concept="3Tqbb2" id="ZYPG76waHy" role="1tU5fm">
-          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
-        </node>
+        <node concept="3Tqbb2" id="ZYPG76waHy" role="1tU5fm" />
       </node>
     </node>
   </node>
