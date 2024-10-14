@@ -401,7 +401,7 @@
         <node concept="3clFbS" id="4IV0h47EbEl" role="3clFbx">
           <node concept="2MkqsV" id="4IV0h47EjUH" role="3cqZAp">
             <node concept="Xl_RD" id="4IV0h47EjUT" role="2MkJ7o">
-              <property role="Xl_RC" value="party or collection&lt;party&gt; required" />
+              <property role="Xl_RC" value="party or collection of parties required" />
             </node>
             <node concept="2OqwBi" id="4IV0h47Ek4t" role="1urrMF">
               <node concept="1YBJjd" id="4IV0h47EjVI" role="2Oq$k0">
@@ -588,7 +588,7 @@
             <node concept="3clFbS" id="4IV0h48oSQ7" role="3clFbx">
               <node concept="2MkqsV" id="4IV0h48oSQ8" role="3cqZAp">
                 <node concept="Xl_RD" id="4IV0h48oSQ9" role="2MkJ7o">
-                  <property role="Xl_RC" value="expecting a (ordered!) list of parties" />
+                  <property role="Xl_RC" value="expecting an ordered list of parties" />
                 </node>
                 <node concept="2OqwBi" id="4IV0h48oSQa" role="1urrMF">
                   <node concept="1YBJjd" id="4IV0h48oSQb" role="2Oq$k0">
@@ -774,7 +774,7 @@
         <node concept="3clFbS" id="31HpwbwEDRo" role="3clFbx">
           <node concept="2MkqsV" id="31HpwbwEETI" role="3cqZAp">
             <node concept="Xl_RD" id="31HpwbwEETO" role="2MkJ7o">
-              <property role="Xl_RC" value="currently cannot be used inside a lambda" />
+              <property role="Xl_RC" value="cannot be used inside a lambda" />
             </node>
             <node concept="1YBJjd" id="31HpwbwEEUr" role="1urrMF">
               <ref role="1YBMHb" node="31HpwbwEDRc" resolve="whis" />
