@@ -7739,7 +7739,7 @@
           <node concept="3clFbC" id="2a_JeWFLt3g" role="3clFbw">
             <node concept="10Nm6u" id="2a_JeWFLu5p" role="3uHU7w" />
             <node concept="37vLTw" id="2a_JeWFLsiP" role="3uHU7B">
-              <ref role="3cqZAo" node="2a_JeWFLo38" resolve="lambdaExpression" />
+              <ref role="3cqZAo" node="2a_JeWFLo38" resolve="lambdaNode" />
             </node>
           </node>
         </node>
@@ -7849,7 +7849,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2a_JeWFLjVj" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
