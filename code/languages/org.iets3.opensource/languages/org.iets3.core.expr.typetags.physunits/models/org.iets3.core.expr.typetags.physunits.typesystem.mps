@@ -10296,7 +10296,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="6DZ9unUUAds" role="3uHU7w">
-              <ref role="3cqZAo" node="6DZ9unUUuFe" resolve="kgReference" />
+              <ref role="3cqZAo" node="6DZ9unUUuFe" resolve="kgPointer" />
             </node>
           </node>
           <node concept="17R0WA" id="6DZ9unUM6PL" role="3uHU7B">
