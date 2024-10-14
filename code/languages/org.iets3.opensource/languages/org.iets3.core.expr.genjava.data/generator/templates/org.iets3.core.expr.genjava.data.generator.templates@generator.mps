@@ -11,10 +11,10 @@
     <import index="xb03" ref="r:3598adf1-0d9f-4287-9dde-a97b034e31fe(org.iets3.core.expr.genjava.data.structure)" />
     <import index="e9k1" ref="r:00903dee-f0b0-48de-9335-7cb3f90ae462(org.iets3.core.expr.data.structure)" />
     <import index="rw5i" ref="r:4243557f-1c7a-4d6b-953a-807576e4bee7(org.iets3.core.expr.genjava.base@generator)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -372,7 +372,7 @@
                   <node concept="3clFbF" id="6wzrxL2VRdt" role="3cqZAp">
                     <node concept="2OqwBi" id="6wzrxL2VRdo" role="3clFbG">
                       <node concept="3TrEf2" id="6wzrxL2VRdr" role="2OqNvi">
-                        <ref role="3Tt5mk" to="e9k1:cPLa7FpbAi" resolve="type" />
+                        <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
                       </node>
                       <node concept="30H73N" id="6wzrxL2VRds" role="2Oq$k0" />
                     </node>
@@ -454,7 +454,7 @@
                     <node concept="3clFbF" id="6wzrxL2VTMu" role="3cqZAp">
                       <node concept="2OqwBi" id="6wzrxL2VTMp" role="3clFbG">
                         <node concept="3TrEf2" id="6wzrxL2VTMs" role="2OqNvi">
-                          <ref role="3Tt5mk" to="e9k1:cPLa7FpbAi" resolve="type" />
+                          <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
                         </node>
                         <node concept="30H73N" id="6wzrxL2VTMt" role="2Oq$k0" />
                       </node>
@@ -668,7 +668,7 @@
                             <node concept="2OqwBi" id="4NOdIlYzkMU" role="3clFbG">
                               <node concept="30H73N" id="4NOdIlYzkMW" role="2Oq$k0" />
                               <node concept="3TrEf2" id="4NOdIlYzkMY" role="2OqNvi">
-                                <ref role="3Tt5mk" to="e9k1:cPLa7FpbAi" resolve="type" />
+                                <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
                               </node>
                             </node>
                           </node>

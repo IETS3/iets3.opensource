@@ -4,8 +4,8 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
-    <use id="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" name="org.iets3.core.expr.data" version="1" />
+    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="3" />
+    <use id="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" name="org.iets3.core.expr.data" version="2" />
     <devkit ref="33eb240b-05aa-417a-b719-386d26df80b8(org.iets3.core.expr.genall.advanced.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
@@ -18,6 +18,9 @@
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
+      </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
@@ -96,9 +99,7 @@
         <child id="231307155597477158" name="dataCols" index="3Ckg67" />
         <child id="231307155597655796" name="rows" index="3CkFDl" />
       </concept>
-      <concept id="231307155597471414" name="org.iets3.core.expr.data.structure.DataColDef" flags="ng" index="3CkmCn">
-        <child id="231307155597474194" name="type" index="3CknON" />
-      </concept>
+      <concept id="231307155597471414" name="org.iets3.core.expr.data.structure.DataColDef" flags="ng" index="3CkmCn" />
     </language>
   </registry>
   <node concept="2XOHcx" id="6wzrxL2ZwEE">
@@ -113,11 +114,11 @@
       <property role="sAwqe" value="true" />
       <node concept="3CkmCn" id="6wzrxL2VwCX" role="3Ckg67">
         <property role="TrG5h" value="val1" />
-        <node concept="30bXR$" id="6wzrxL2VwCW" role="3CknON" />
+        <node concept="30bXR$" id="6wzrxL2VwCW" role="2S399n" />
       </node>
       <node concept="3CkmCn" id="6wzrxL2VwCZ" role="3Ckg67">
         <property role="TrG5h" value="val2" />
-        <node concept="30bXR$" id="6wzrxL2VwCY" role="3CknON" />
+        <node concept="30bXR$" id="6wzrxL2VwCY" role="2S399n" />
       </node>
       <node concept="3CkeKC" id="6wzrxL2VwD2" role="3CkFDl">
         <property role="TrG5h" value="keyA" />

@@ -133,7 +133,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -246,7 +246,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1619,7 +1619,7 @@
                   <node concept="2OqwBi" id="46cplYy531I" role="2Oq$k0">
                     <node concept="oxGPV" id="46cplYy531J" role="2Oq$k0" />
                     <node concept="3TrEf2" id="46cplYy531K" role="2OqNvi">
-                      <ref role="3Tt5mk" to="5qo5:46cplYy1TD0" resolve="type" />
+                      <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
                     </node>
                   </node>
                   <node concept="3JvlWi" id="46cplYy531L" role="2OqNvi" />

@@ -66,7 +66,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1363,12 +1363,17 @@
     <node concept="1TJgyj" id="78hTg1$nXEV" role="1TKVEi">
       <property role="IQ2ns" value="8219602584774630075" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="3eH6BL3kbeI" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="69JueU2EnvQ" role="PzmwI">
       <ref role="PrY4T" node="69JueU2zshL" resolve="ISSItValueRef" />
+    </node>
+    <node concept="PrWs8" id="3eH6BL3kben" role="PzmwI">
+      <ref role="PrY4T" node="68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="PlHQZ" id="53cOfDpcBb9">
@@ -1656,9 +1661,14 @@
     <node concept="1TJgyj" id="60Qa1k_nMSL" role="1TKVEi">
       <property role="IQ2ns" value="6932772747669876273" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="3eH6BL3k2aj" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="3eH6BL3k2a7" role="PzmwI">
+      <ref role="PrY4T" node="68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="PlHQZ" id="60Qa1k_nI2f">
@@ -1808,9 +1818,14 @@
     <node concept="1TJgyj" id="5a_u3OzTCw9" role="1TKVEi">
       <property role="IQ2ns" value="5955298286257997833" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="3eH6BL3k26e" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="3eH6BL3k262" role="PzmwI">
+      <ref role="PrY4T" node="68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="5bEkIpehgUq">
@@ -2236,6 +2251,14 @@
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
+  <node concept="PlHQZ" id="25rRV02oe$f">
+    <property role="EcuMT" value="2403760773179435279" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="TrG5h" value="ITupleOp" />
+    <node concept="PrWs8" id="25rRV02ohmw" role="PrDN$">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="25rRV02ooIM">
     <property role="EcuMT" value="2403760773179476914" />
     <property role="3GE5qa" value="tuples" />
@@ -2253,13 +2276,9 @@
       <ref role="PrY4T" node="25rRV02oe$f" resolve="ITupleOp" />
     </node>
   </node>
-  <node concept="PlHQZ" id="25rRV02oe$f">
-    <property role="EcuMT" value="2403760773179435279" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="ITupleOp" />
-    <node concept="PrWs8" id="25rRV02ohmw" role="PrDN$">
-      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
-    </node>
+  <node concept="PlHQZ" id="3eH6BL2TJIw">
+    <property role="EcuMT" value="3723661587905969056" />
+    <property role="TrG5h" value="IAssignable" />
   </node>
 </model>
 

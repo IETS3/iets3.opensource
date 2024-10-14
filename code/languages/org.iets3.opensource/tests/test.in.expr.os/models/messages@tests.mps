@@ -2,9 +2,9 @@
 <model ref="r:6a32786e-0823-4465-b671-9705159d21d5(test.in.expr.os.messages@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
+    <use id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>
@@ -266,7 +266,6 @@
         <property id="6912784008700543198" name="errorID" index="1KtYiK" />
       </concept>
       <concept id="4026566441520550140" name="org.iets3.core.expr.messages.structure.TypeCoercion" flags="ng" index="1WHAK$">
-        <child id="4026566441520550141" name="type" index="1WHAK_" />
         <child id="4026566441520550144" name="expr" index="1WHARo" />
       </concept>
       <concept id="4026566441521058530" name="org.iets3.core.expr.messages.structure.CoercionIt" flags="ng" index="1WJySU" />
@@ -1032,9 +1031,6 @@
   <node concept="1WOfUn" id="3vxfdxbret3">
     <property role="TrG5h" value="Messages" />
     <node concept="1WHAK$" id="1CNpG_h8dxe" role="1WI1Xj">
-      <node concept="2Ss9cW" id="1CNpG_h8dxd" role="1WHAK_">
-        <ref role="2Ss9cX" node="1CNpG_h50DD" resolve="Point" />
-      </node>
       <node concept="30dDZf" id="1CNpG_h8dDg" role="1WHARo">
         <node concept="30dDZf" id="1CNpG_h8dDh" role="30dEsF">
           <node concept="30dDZf" id="1CNpG_h8dDi" role="30dEsF">
@@ -1059,16 +1055,19 @@
           <node concept="1WJySU" id="1CNpG_h8dEv" role="30czhm" />
         </node>
       </node>
+      <node concept="2Ss9cW" id="1CNpG_h8dxd" role="2S399n">
+        <ref role="2Ss9cX" node="1CNpG_h50DD" resolve="Point" />
+      </node>
     </node>
     <node concept="1WHAK$" id="1CNpG_h8Fcw" role="1WI1Xj">
-      <node concept="1WbbFT" id="1CNpG_h8Fi3" role="1WHAK_">
-        <ref role="1WbbFS" node="1CNpG_h8F0D" resolve="money" />
-      </node>
       <node concept="30dDZf" id="1CNpG_h8FlF" role="1WHARo">
         <node concept="30bdrP" id="1CNpG_h8FlS" role="30dEs_">
           <property role="30bdrQ" value=" EUR" />
         </node>
         <node concept="1WJySU" id="1CNpG_h8Fkk" role="30dEsF" />
+      </node>
+      <node concept="1WbbFT" id="1CNpG_h8Fi3" role="2S399n">
+        <ref role="1WbbFS" node="1CNpG_h8F0D" resolve="money" />
       </node>
     </node>
     <node concept="1WOOD3" id="3vxfdxbrKAj" role="1WOfUI">

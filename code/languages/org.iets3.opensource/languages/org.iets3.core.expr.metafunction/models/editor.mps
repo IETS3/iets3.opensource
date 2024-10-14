@@ -9,6 +9,7 @@
   <imports>
     <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -304,7 +305,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5cK3QOc9j2P" role="3EZMnx">
-        <ref role="1NtTu8" to="s7zn:5cK3QOc9hNe" resolve="type" />
+        <ref role="1NtTu8" to="hm2y:7D7uZV2iYAD" resolve="type" />
       </node>
       <node concept="l2Vlx" id="5cK3QOc9iBq" role="2iSdaV" />
     </node>

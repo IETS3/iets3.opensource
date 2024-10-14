@@ -163,7 +163,7 @@
         <node concept="3clFbS" id="1sudaVNqWTZ" role="3clFbx">
           <node concept="2MkqsV" id="1sudaVNr1sM" role="3cqZAp">
             <node concept="Xl_RD" id="1sudaVNr1tm" role="2MkJ7o">
-              <property role="Xl_RC" value="no screenshot-path found in this model" />
+              <property role="Xl_RC" value="no screenshot path found in this model" />
             </node>
             <node concept="1YBJjd" id="1sudaVNr1u5" role="1urrMF">
               <ref role="1YBMHb" node="1sudaVNqWjW" resolve="frame" />

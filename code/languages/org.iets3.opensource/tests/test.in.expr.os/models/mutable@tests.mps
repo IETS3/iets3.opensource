@@ -175,7 +175,7 @@
         <child id="8694548031077660261" name="typeConstraint" index="ynoGV" />
       </concept>
       <concept id="8872269265518788050" name="org.iets3.core.expr.collections.structure.AllOp" flags="ng" index="2TZ5KL" />
-      <concept id="5291952221900249273" name="org.iets3.core.expr.collections.structure.IListOneArgOp" flags="ng" index="1bLd8V">
+      <concept id="5291952221900249273" name="org.iets3.core.expr.collections.structure.IListOneArgOp" flags="ngI" index="1bLd8V">
         <child id="527291771311128762" name="arg" index="26Ft6C" />
       </concept>
       <concept id="5291952221899372124" name="org.iets3.core.expr.collections.structure.MapLikeType" flags="ng" index="1bPBNu">
@@ -187,7 +187,7 @@
       </concept>
       <concept id="7757419675876255273" name="org.iets3.core.expr.collections.structure.MapKeysOp" flags="ng" index="1hBg8L" />
       <concept id="7757419675876240958" name="org.iets3.core.expr.collections.structure.MapValuesOp" flags="ng" index="1hBkCA" />
-      <concept id="7757419675865128281" name="org.iets3.core.expr.collections.structure.IMapOneArgOp" flags="ng" index="1idJ_1">
+      <concept id="7757419675865128281" name="org.iets3.core.expr.collections.structure.IMapOneArgOp" flags="ngI" index="1idJ_1">
         <child id="7757419675865128346" name="arg" index="1idJA2" />
       </concept>
       <concept id="7554398283340640412" name="org.iets3.core.expr.collections.structure.MapOp" flags="ng" index="3iw6QE" />
@@ -224,10 +224,10 @@
       <concept id="9097157441620016186" name="org.iets3.core.expr.collections.structure.ForeachOp" flags="ng" index="3NG6h4" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
-      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
+      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ngI" index="pfQq$">
         <child id="229512757698888936" name="optionalName" index="pfQ1b" />
       </concept>
       <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
@@ -261,10 +261,10 @@
         <reference id="7089558164910719191" name="try" index="2zAAH1" />
       </concept>
       <concept id="7089558164908491660" name="org.iets3.core.expr.base.structure.EmptyExpression" flags="ng" index="2zH6wq" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
-      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
@@ -274,7 +274,7 @@
         <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
       <concept id="867786408877811180" name="org.iets3.core.expr.base.structure.Postcondition" flags="ng" index="I61F8" />
-      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ng" index="I61I7">
+      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
         <child id="867786408877811042" name="contract" index="I61D6" />
       </concept>
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
@@ -318,9 +318,7 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
-      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_">
-        <child id="6932772747669876273" name="type" index="15qgo$" />
-      </concept>
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_" />
       <concept id="7849560302565679722" name="org.iets3.core.expr.base.structure.IfExpression" flags="ng" index="39w5ZF">
         <child id="606861080870797304" name="elseSection" index="pf3W8" />
         <child id="7849560302565679723" name="condition" index="39w5ZE" />
@@ -457,7 +455,7 @@
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
       </concept>
-      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
+      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ngI" index="S5Q1W">
         <child id="602952467877562565" name="members" index="S5Trm" />
       </concept>
       <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
@@ -547,7 +545,7 @@
         <child id="5456956546147356870" name="count" index="1co17n" />
       </concept>
       <concept id="5456956546137040126" name="org.iets3.core.expr.mutable.structure.ThrowInterceptor" flags="ng" index="1cxEnJ" />
-      <concept id="5456956546136473372" name="org.iets3.core.expr.mutable.structure.IInterceptorContainer" flags="ng" index="1czZSd">
+      <concept id="5456956546136473372" name="org.iets3.core.expr.mutable.structure.IInterceptorContainer" flags="ngI" index="1czZSd">
         <child id="5456956546136477250" name="interceptors" index="1czwXj" />
       </concept>
       <concept id="5456956546137624418" name="org.iets3.core.expr.mutable.structure.ContextArgValue" flags="ng" index="1cZoTN">
@@ -597,7 +595,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -607,15 +605,13 @@
       </concept>
     </language>
     <language id="711a16d7-99e8-4e1d-b20c-99c0b7309cd8" name="org.iets3.core.expr.metafunction">
-      <concept id="5994308065059740875" name="org.iets3.core.expr.metafunction.structure.MetaFunctionArgument" flags="ng" index="1v5heA">
-        <child id="5994308065059740878" name="type" index="1v5hez" />
-      </concept>
+      <concept id="5994308065059740875" name="org.iets3.core.expr.metafunction.structure.MetaFunctionArgument" flags="ng" index="1v5heA" />
       <concept id="5994308065059739152" name="org.iets3.core.expr.metafunction.structure.MetaFunction" flags="ng" index="1v5h_X">
         <child id="5994308065059740880" name="body" index="1v5heX" />
         <child id="5994308065059740883" name="args" index="1v5heY" />
         <child id="5994308065059743871" name="type" index="1v5isi" />
       </concept>
-      <concept id="5994308065059776299" name="org.iets3.core.expr.metafunction.structure.IMetaFunctionContext" flags="ng" index="1v5qx6">
+      <concept id="5994308065059776299" name="org.iets3.core.expr.metafunction.structure.IMetaFunctionContext" flags="ngI" index="1v5qx6">
         <child id="5994308065059799377" name="function" index="1v5wSW" />
       </concept>
       <concept id="5994308065068956525" name="org.iets3.core.expr.metafunction.structure.MetaFunArgRef" flags="ng" index="1vwrg0">
@@ -639,11 +635,11 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
         <property id="2861782275883660525" name="ext" index="1HeIcW" />
         <child id="3880322347437217307" name="effect" index="28QfE6" />
         <child id="4790956042240100927" name="args" index="1ahQWs" />
@@ -661,7 +657,7 @@
         <child id="7554398283340318471" name="args" index="3ix9CL" />
       </concept>
       <concept id="7554398283340318478" name="org.iets3.core.expr.lambda.structure.LambdaArg" flags="ng" index="3ix9CS" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
       <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60">
@@ -8557,7 +8553,7 @@
           <node concept="2vmvy5" id="3iESbJsi1fN" role="1v5isi" />
           <node concept="1v5heA" id="3iESbJsi1fR" role="1v5heY">
             <property role="TrG5h" value="voted" />
-            <node concept="2TO1h$" id="3iESbJsi1fP" role="1v5hez">
+            <node concept="2TO1h$" id="3iESbJsi1fP" role="2S399n">
               <node concept="GZN9E" id="3iESbJsi1fQ" role="3iBWmK" />
             </node>
           </node>
@@ -9305,7 +9301,7 @@
       <property role="TrG5h" value="nobids" />
       <property role="0Rz4W" value="-1687669941" />
       <node concept="15qgo_" id="60Qa1k_I53A" role="2zPyp_">
-        <node concept="1DGDPD" id="2uo6UInPsEb" role="15qgo$">
+        <node concept="1DGDPD" id="2uo6UInPsEb" role="2S399n">
           <node concept="GZN9E" id="2uo6UInPtUI" role="1DGDPC" />
           <node concept="1WbbFT" id="2uo6UInPvaZ" role="1DGDPA">
             <ref role="1WbbFS" node="3N4k0eSHK0s" resolve="bid" />
@@ -9317,7 +9313,7 @@
       <property role="TrG5h" value="nopendings" />
       <property role="0Rz4W" value="-814489490" />
       <node concept="15qgo_" id="60Qa1k_I67I" role="2zPyp_">
-        <node concept="1DGDPD" id="2uo6UInPxpZ" role="15qgo$">
+        <node concept="1DGDPD" id="2uo6UInPxpZ" role="2S399n">
           <node concept="GZN9E" id="2uo6UInPyyb" role="1DGDPC" />
           <node concept="2EWGYO" id="2uo6UInPzE7" role="1DGDPA">
             <ref role="2EWGYF" node="71HHyJ2r2nl" resolve="AccessControl" />
@@ -17498,7 +17494,7 @@
         <node concept="1QScDb" id="60Qa1k_HNfI" role="_fkuY">
           <node concept="3sQ2Ir" id="60Qa1k_HNlV" role="1QScD9" />
           <node concept="15qgo_" id="60Qa1k_Hzy7" role="30czhm">
-            <node concept="3sNe5_" id="60Qa1k_Hz$m" role="15qgo$">
+            <node concept="3sNe5_" id="60Qa1k_Hz$m" role="2S399n">
               <node concept="30bXR$" id="60Qa1k_Hz$I" role="3sNe5$" />
             </node>
           </node>
@@ -17529,7 +17525,7 @@
         <node concept="1QScDb" id="3sNJH54Z_aO" role="_fkuY">
           <node concept="3sQ2Ir" id="3sNJH54Z_aP" role="1QScD9" />
           <node concept="15qgo_" id="3sNJH54Z_aQ" role="30czhm">
-            <node concept="3sNe5_" id="3sNJH54Z_aR" role="15qgo$">
+            <node concept="3sNe5_" id="3sNJH54Z_aR" role="2S399n">
               <node concept="30bdrU" id="3sNJH54Z_hh" role="3sNe5$" />
             </node>
           </node>
@@ -17541,7 +17537,7 @@
         <node concept="1QScDb" id="3sNJH54Z_cN" role="_fkuY">
           <node concept="3sQ2Ir" id="3sNJH54Z_cO" role="1QScD9" />
           <node concept="15qgo_" id="3sNJH54Z_cP" role="30czhm">
-            <node concept="3sNe5_" id="3sNJH54Z_cQ" role="15qgo$">
+            <node concept="3sNe5_" id="3sNJH54Z_cQ" role="2S399n">
               <node concept="mLuIC" id="3sNJH54Z_hT" role="3sNe5$" />
             </node>
           </node>
@@ -17555,7 +17551,7 @@
         <node concept="1QScDb" id="3sNJH54Z_fm" role="_fkuY">
           <node concept="3sQ2Ir" id="3sNJH54Z_fn" role="1QScD9" />
           <node concept="15qgo_" id="3sNJH54Z_fo" role="30czhm">
-            <node concept="3sNe5_" id="3sNJH54Z_fp" role="15qgo$">
+            <node concept="3sNe5_" id="3sNJH54Z_fp" role="2S399n">
               <node concept="30bXLL" id="3sNJH54Z_q3" role="3sNe5$" />
             </node>
           </node>
@@ -17567,7 +17563,7 @@
       <node concept="_fkuZ" id="3sNJH54ZB91" role="_fkp5">
         <node concept="_fku$" id="3sNJH54ZB92" role="_fkur" />
         <node concept="15qgo_" id="3sNJH54ZBan" role="_fkuY">
-          <node concept="30bXLL" id="3sNJH54ZBa$" role="15qgo$" />
+          <node concept="30bXLL" id="3sNJH54ZBa$" role="2S399n" />
         </node>
         <node concept="30bXRB" id="3sNJH54ZBaL" role="_fkuS">
           <property role="30bXRw" value="0" />
@@ -17576,7 +17572,7 @@
       <node concept="_fkuZ" id="3sNJH54ZBGa" role="_fkp5">
         <node concept="_fku$" id="3sNJH54ZBGb" role="_fkur" />
         <node concept="15qgo_" id="3sNJH54ZBHE" role="_fkuY">
-          <node concept="5mh7t" id="3sNJH54ZBHR" role="15qgo$">
+          <node concept="5mh7t" id="3sNJH54ZBHR" role="2S399n">
             <ref role="5mh6l" node="3sNJH54ZBrX" resolve="Dummy1" />
           </node>
         </node>
@@ -17587,7 +17583,7 @@
       <node concept="_fkuZ" id="3sNJH54ZC9z" role="_fkp5">
         <node concept="_fku$" id="3sNJH54ZC9$" role="_fkur" />
         <node concept="15qgo_" id="3sNJH54ZCbb" role="_fkuY">
-          <node concept="1DGDPD" id="3sNJH54ZCbo" role="15qgo$">
+          <node concept="1DGDPD" id="3sNJH54ZCbo" role="2S399n">
             <node concept="30bXR$" id="3sNJH54ZCbT" role="1bPNon" />
             <node concept="30bdrU" id="3sNJH54ZCcg" role="1bPNsv" />
             <node concept="30bXR$" id="3JZRUPdr4B0" role="1DGDPC" />
@@ -17606,7 +17602,7 @@
         <node concept="1QScDb" id="3sNJH551KAL" role="_fkuY">
           <node concept="3sQ2Ir" id="3sNJH551KFu" role="1QScD9" />
           <node concept="15qgo_" id="3sNJH551K_1" role="30czhm">
-            <node concept="3sNe5_" id="3sNJH551K_e" role="15qgo$">
+            <node concept="3sNe5_" id="3sNJH551K_e" role="2S399n">
               <node concept="3iBYCm" id="3sNJH551K_z" role="3sNe5$">
                 <node concept="30bdrU" id="3sNJH551KAb" role="3iBWmK" />
               </node>
@@ -17624,7 +17620,7 @@
         <node concept="1QScDb" id="3sNJH553n3j" role="_fkuY">
           <node concept="3sQ2Ir" id="3sNJH553n4M" role="1QScD9" />
           <node concept="15qgo_" id="3sNJH551KV2" role="30czhm">
-            <node concept="3sNe5_" id="3sNJH551KVf" role="15qgo$">
+            <node concept="3sNe5_" id="3sNJH551KVf" role="2S399n">
               <node concept="2TO1h$" id="3sNJH551KV$" role="3sNe5$">
                 <node concept="30bXR$" id="3sNJH551KXR" role="3iBWmK" />
               </node>
@@ -17642,7 +17638,7 @@
         <node concept="1QScDb" id="3sNJH553ndN" role="_fkuY">
           <node concept="3sQ2Ir" id="3sNJH553nf9" role="1QScD9" />
           <node concept="15qgo_" id="3sNJH551L8Y" role="30czhm">
-            <node concept="3sNe5_" id="3sNJH551L9b" role="15qgo$">
+            <node concept="3sNe5_" id="3sNJH551L9b" role="2S399n">
               <node concept="1DGDPD" id="3sNJH551L9w" role="3sNe5$">
                 <node concept="30bdrU" id="3JZRUPdr4HE" role="1DGDPC" />
                 <node concept="30bXR$" id="3JZRUPdr4Kx" role="1DGDPA" />
@@ -17662,7 +17658,7 @@
         <node concept="1QScDb" id="3sNJH553mV7" role="_fkuY">
           <node concept="3sQ2Ir" id="3sNJH553mVZ" role="1QScD9" />
           <node concept="15qgo_" id="3sNJH553mUi" role="30czhm">
-            <node concept="3sNe5_" id="3sNJH553mUv" role="15qgo$">
+            <node concept="3sNe5_" id="3sNJH553mUv" role="2S399n">
               <node concept="5mh7t" id="3sNJH553mUO" role="3sNe5$">
                 <ref role="5mh6l" node="3sNJH54ZBrX" resolve="Dummy1" />
               </node>
@@ -17685,7 +17681,7 @@
       <node concept="_fkuZ" id="60Qa1k_r2kx" role="_fkp5">
         <node concept="_fku$" id="60Qa1k_r2ky" role="_fkur" />
         <node concept="15qgo_" id="60Qa1k_s1UT" role="_fkuY">
-          <node concept="GZN9E" id="41vYFO3dLGr" role="15qgo$" />
+          <node concept="GZN9E" id="41vYFO3dLGr" role="2S399n" />
         </node>
         <node concept="GZN9F" id="41vYFO3dLH4" role="_fkuS" />
       </node>

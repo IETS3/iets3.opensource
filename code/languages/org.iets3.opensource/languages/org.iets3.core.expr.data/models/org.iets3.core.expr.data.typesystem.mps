@@ -306,7 +306,7 @@
                 <ref role="1YBMHb" node="cPLa7Fpgzf" resolve="c" />
               </node>
               <node concept="3TrEf2" id="cPLa7Fphne" role="2OqNvi">
-                <ref role="3Tt5mk" to="e9k1:cPLa7FpbAi" resolve="type" />
+                <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
               </node>
             </node>
           </node>
@@ -373,7 +373,7 @@
                         </node>
                       </node>
                       <node concept="Xl_RD" id="4PRpvcZvCrf" role="2MkJ7o">
-                        <property role="Xl_RC" value="Only literals are allowed in data tables that support look ups" />
+                        <property role="Xl_RC" value="only literals are allowed in data tables that support lookups" />
                       </node>
                       <node concept="2OqwBi" id="4PRpvcZw7qS" role="1urrMF">
                         <node concept="37vLTw" id="4PRpvcZvD72" role="2Oq$k0">
@@ -402,7 +402,7 @@
               <ref role="1YBMHb" node="cPLa7FrPf0" resolve="dataTable" />
             </node>
             <node concept="Xl_RD" id="7F9023_N69s" role="2MkJ7o">
-              <property role="Xl_RC" value="Default lookup columns are only supported when using lookup" />
+              <property role="Xl_RC" value="default lookup columns are only supported when using lookup" />
             </node>
           </node>
         </node>
@@ -554,7 +554,7 @@
                                 <node concept="3clFbS" id="2KRUNf1mOcw" role="1bW5cS">
                                   <node concept="2MkqsV" id="2KRUNf1mOp9" role="3cqZAp">
                                     <node concept="Xl_RD" id="2KRUNf1mOvi" role="2MkJ7o">
-                                      <property role="Xl_RC" value="only one empty input value per column is allowed." />
+                                      <property role="Xl_RC" value="only one empty input value per column is allowed" />
                                     </node>
                                     <node concept="37vLTw" id="2KRUNf1mR8t" role="1urrMF">
                                       <ref role="3cqZAo" node="4z0AnX8177W" resolve="def" />
@@ -654,7 +654,7 @@
         <node concept="3clFbS" id="cPLa7FsJRU" role="3clFbx">
           <node concept="2MkqsV" id="cPLa7FsL3b" role="3cqZAp">
             <node concept="Xl_RD" id="cPLa7FsL3t" role="2MkJ7o">
-              <property role="Xl_RC" value="must be used on the left side of a dot" />
+              <property role="Xl_RC" value="must be used on the left side of a dot expression" />
             </node>
             <node concept="1YBJjd" id="cPLa7FsLiF" role="1urrMF">
               <ref role="1YBMHb" node="cPLa7FsJJ0" resolve="ds" />
@@ -921,7 +921,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="2SzGbCMNJdr" role="2OqNvi">
-                <ref role="3Tt5mk" to="e9k1:cPLa7FpbAi" resolve="type" />
+                <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
               </node>
             </node>
           </node>
@@ -994,7 +994,7 @@
           </node>
         </node>
         <node concept="Xl_RD" id="2SzGbCMLVZH" role="2MkJ7o">
-          <property role="Xl_RC" value="Data Table doesn't allow look ups." />
+          <property role="Xl_RC" value="the table doesn't allow lookups" />
         </node>
         <node concept="1YBJjd" id="2SzGbCMLXsI" role="1urrMF">
           <ref role="1YBMHb" node="2SzGbCMLSpS" resolve="dataTableLookUp" />
@@ -1013,7 +1013,7 @@
         <node concept="3clFbS" id="7F9023_KIi1" role="3clFbx">
           <node concept="2MkqsV" id="7F9023_KKPN" role="3cqZAp">
             <node concept="Xl_RD" id="7F9023_KKQ2" role="2MkJ7o">
-              <property role="Xl_RC" value="no default look up column defined on the data table, must specify a column for the look up" />
+              <property role="Xl_RC" value="No default lookup column defined on the table. Specify a column for the lookup" />
             </node>
             <node concept="1YBJjd" id="7F9023_KKSp" role="1urrMF">
               <ref role="1YBMHb" node="2SzGbCMLSpS" resolve="dataTableLookUp" />
