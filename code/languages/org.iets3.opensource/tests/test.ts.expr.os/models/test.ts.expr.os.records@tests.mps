@@ -391,6 +391,7 @@
   </node>
   <node concept="1lH9Xt" id="4Ab6HDmqyCz">
     <property role="TrG5h" value="RecordValueTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="4Ab6HDmumD4" role="1SKRRt">
       <node concept="2Ss9d8" id="4Ab6HDmumD9" role="1qenE9">
         <property role="TrG5h" value="myRecord" />
