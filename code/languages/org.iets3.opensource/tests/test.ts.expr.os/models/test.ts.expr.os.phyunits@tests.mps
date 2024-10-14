@@ -15,8 +15,8 @@
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>
@@ -8687,6 +8687,15 @@
         </node>
       </node>
       <node concept="_fkuZ" id="69HsIy5GLSJ" role="_fkp5">
+        <node concept="1z9TsT" id="1eut2uU9kib" role="lGtFl">
+          <node concept="OjmMv" id="1eut2uU9kic" role="1w35rA">
+            <node concept="19SGf9" id="1eut2uU9kid" role="OjmMu">
+              <node concept="19SUe$" id="1eut2uU9kie" role="19SJt6">
+                <property role="19SUeA" value="the first applicable rule is used with the default config which is the conversion declared in this file " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="_fku$" id="69HsIy5GLSK" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSL" role="_fkuY">
           <node concept="1YnStw" id="69HsIy5GU5N" role="30czhm">
@@ -8708,15 +8717,6 @@
         </node>
         <node concept="30bXRB" id="69HsIy5GLSR" role="_fkuS">
           <property role="30bXRw" value="-3" />
-        </node>
-        <node concept="1z9TsT" id="1eut2uU9kib" role="lGtFl">
-          <node concept="OjmMv" id="1eut2uU9kic" role="1w35rA">
-            <node concept="19SGf9" id="1eut2uU9kid" role="OjmMu">
-              <node concept="19SUe$" id="1eut2uU9kie" role="19SJt6">
-                <property role="19SUeA" value="the first applicable rule is used with the default config which is the conversion declared in this file " />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="_fkuZ" id="1AZ6$Cori3v" role="_fkp5">

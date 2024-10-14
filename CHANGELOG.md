@@ -5,13 +5,23 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
-## August 2024
+## October 2024
 
 ### Fixed
 
-- TraceExplorer can decorate editors of lambda nodes with their values. 
-- The code completion of the new unit language was improved.
+- The end cells of table rows of all tables where improved and now all support delete and insert actions.
+
+## August 2024
+
+### Added
+
+- The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
+
+### Fixed
+
 - The performance of error type propagation (especially in relation to type tags) was improved.
+- TraceExplorer can decorate editors of lambda nodes with their values.
+- The code completion of the new unit language was improved.
 
 ## July 2024
 
