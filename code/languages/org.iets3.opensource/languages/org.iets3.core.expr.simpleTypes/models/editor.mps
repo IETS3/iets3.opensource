@@ -484,7 +484,7 @@
               </node>
               <node concept="OXEIz" id="68wLGjpsV2Y" role="P5bDN">
                 <node concept="UkePV" id="68wLGjpsV2Z" role="OY2wv">
-                  <ref role="Ul1FP" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
+                  <ref role="Ul1FP" to="hm2y:6sdnDbSla17" resolve="Expression" />
                 </node>
               </node>
             </node>
