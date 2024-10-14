@@ -13,6 +13,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Custom Java exceptions have now a `equals` and `hashCode` implementation so that they can be compared in tests.
 - Error messages and checks were improved.
 - More error messages are now shown when the supertype can't be calculated.
+- The end cells of table rows of all tables where improved and now all support delete and insert actions.
 
 ### Added
 
@@ -38,13 +39,12 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
 
 ### Fixed
-=======
 
 - The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
 
 ### Fixed
 
-- TraceExplorer can decorate editors of lambda nodes with their values. 
+- TraceExplorer can decorate editors of lambda nodes with their values.
 - The code completion of the new unit language was improved.
 - The performance of error type propagation (especially in relation to type tags) was improved.
 
