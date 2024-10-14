@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="3" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="6" />
     <devkit ref="ec967770-4707-442f-baaf-a8b7bb554717(org.iets3.core.expr.genall.core.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
@@ -55,9 +55,7 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
-      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_">
-        <child id="6932772747669876273" name="type" index="15qgo$" />
-      </concept>
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_" />
       <concept id="6889545856364470865" name="org.iets3.core.expr.base.structure.HexValue" flags="ng" index="1BKJs_">
         <property id="6889545856364470867" name="value" index="1BKJsB" />
         <property id="3182514044103336774" name="propertyNodeID" index="1ZkyNJ" />
@@ -2150,7 +2148,7 @@
       <node concept="_fkuZ" id="2KEzU_jyzEH" role="_fkp5">
         <node concept="_fku$" id="2KEzU_jyzEI" role="_fkur" />
         <node concept="15qgo_" id="2KEzU_jyzI6" role="_fkuY">
-          <node concept="mLuIC" id="2KEzU_jyzLt" role="15qgo$">
+          <node concept="mLuIC" id="2KEzU_jyzLt" role="2S399n">
             <node concept="2gteSW" id="2KEzU_jHVOe" role="2gteSx">
               <property role="2gteSQ" value="-1" />
               <property role="2gteSD" value="100" />
