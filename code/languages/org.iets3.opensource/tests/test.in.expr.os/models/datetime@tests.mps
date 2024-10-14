@@ -45,6 +45,9 @@
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
+      </concept>
       <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt" />
       <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
         <child id="5115872837157187954" name="expr" index="30bsDf" />
@@ -69,6 +72,7 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
+      <concept id="6932772747669876272" name="org.iets3.core.expr.base.structure.DefaultValueExpression" flags="ng" index="15qgo_" />
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
@@ -9098,6 +9102,28 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="41vYFO3dE3X" role="_iOnB" />
+    <node concept="_fkuM" id="60Qa1k_r2ku" role="_iOnB">
+      <property role="TrG5h" value="defaultValues" />
+      <node concept="_fkuZ" id="60Qa1k_Hy$q" role="_fkp5">
+        <node concept="_fku$" id="60Qa1k_HyCu" role="_fkur" />
+        <node concept="15qgo_" id="60Qa1k_Hy$s" role="_fkuY">
+          <node concept="2psGzg" id="41vYFO3dE6A" role="2S399n" />
+        </node>
+        <node concept="2ptY_Q" id="41vYFO3dE6N" role="_fkuS">
+          <node concept="30bXRB" id="41vYFO3dE83" role="2ptY_P">
+            <property role="30bXRw" value="00" />
+          </node>
+          <node concept="30bXRB" id="41vYFO3dE8b" role="2ptY_O">
+            <property role="30bXRw" value="00" />
+          </node>
+          <node concept="30bXRB" id="41vYFO3dE8h" role="2pvsHg">
+            <property role="30bXRw" value="00" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="41vYFO3dE3Z" role="_iOnB" />
   </node>
 </model>
 

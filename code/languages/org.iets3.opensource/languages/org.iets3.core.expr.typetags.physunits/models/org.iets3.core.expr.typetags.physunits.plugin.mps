@@ -968,6 +968,25 @@
       </node>
       <node concept="2JFqV2" id="3xwfj1iEU_N" role="2frcjj" />
     </node>
+    <node concept="2tJIrI" id="7YLtdEiElzJ" role="jymVt" />
+    <node concept="3clFb_" id="7YLtdEiEmwu" role="jymVt">
+      <property role="TrG5h" value="useSlashInsteadOfDivisionSymbol" />
+      <node concept="3clFbS" id="7YLtdEiEmwx" role="3clF47">
+        <node concept="3clFbF" id="7YLtdEiEmXl" role="3cqZAp">
+          <node concept="3clFbT" id="7YLtdEiEmXk" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7YLtdEiEmwy" role="1B3o_S" />
+      <node concept="10P_77" id="7YLtdEiEmfA" role="3clF45" />
+      <node concept="2JFqV2" id="7YLtdEiElLB" role="2frcjj" />
+      <node concept="P$JXv" id="7YLtdEiEn2X" role="lGtFl">
+        <node concept="TZ5HA" id="7YLtdEiEn2Y" role="TZ5H$">
+          <node concept="1dT_AC" id="7YLtdEiEn2Z" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if &quot;/&quot; should be used in unit names instead of &quot;÷&quot;" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="3xwfj1imSXs" role="jymVt" />
     <node concept="3clFb_" id="3wrpJuqrQh9" role="jymVt">
       <property role="TrG5h" value="implicitConversionIsEnabled" />

@@ -9,7 +9,28 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
+- The interpreter of the `success` expression was fixed.
+- Custom Java exceptions have now a `equals` and `hashCode` implementation so that they can be compared in tests.
+- Error messages and checks were improved.
+- More error messages are now shown when the supertype can't be calculated.
 - The end cells of table rows of all tables where improved and now all support delete and insert actions.
+
+### Added
+
+- Record literals are automatically initialized based on their type.
+- Record literals now show the referenced members of the record declaration.
+- Tuples can use parenthesis instead of brackets for their presentation. To use the new presentation, overwrite PrimitiveTypeMapper#useParenthesisInsteadOfBracketsForTuples in the extension point.
+
+## September 2024
+
+### Fixed
+
+- Then precision for number types is now only derived from the finite bounds of the range. The precision of `number[-∞|∞]` is the same as of `number` which is 0.
+- Tuple types where all elements have the same type can now be used interchangeable with list types.
+
+### Added
+
+- The extension point `IUnitLangConfig` has a new method useSlashInsteadOfDivisionSymbol that allows to replace the "÷" character in unit names with the more common "/" character.
 
 ## August 2024
 
@@ -19,9 +40,13 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
-- The performance of error type propagation (especially in relation to type tags) was improved.
+- The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
+
+### Fixed
+
 - TraceExplorer can decorate editors of lambda nodes with their values.
 - The code completion of the new unit language was improved.
+- The performance of error type propagation (especially in relation to type tags) was improved.
 
 ## July 2024
 

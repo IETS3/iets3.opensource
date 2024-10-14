@@ -56,6 +56,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -680,12 +681,55 @@
               </node>
             </node>
           </node>
-          <node concept="3cpWs6" id="3xwfj1ivz4w" role="3cqZAp">
-            <node concept="2OqwBi" id="3xwfj1ivAwP" role="3cqZAk">
-              <node concept="EsrRn" id="3xwfj1ivzaR" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3xwfj1ivB96" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+          <node concept="3cpWs8" id="7YLtdEiHQuU" role="3cqZAp">
+            <node concept="3cpWsn" id="7YLtdEiHQuX" role="3cpWs9">
+              <property role="TrG5h" value="name" />
+              <node concept="17QB3L" id="7YLtdEiHQuS" role="1tU5fm" />
+              <node concept="2OqwBi" id="7YLtdEiHR0P" role="33vP2m">
+                <node concept="EsrRn" id="7YLtdEiHQz9" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7YLtdEiHRCB" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="7YLtdEiHMZb" role="3cqZAp">
+            <node concept="3clFbS" id="7YLtdEiHMZd" role="3clFbx">
+              <node concept="3clFbF" id="7YLtdEiHS2Z" role="3cqZAp">
+                <node concept="37vLTI" id="7YLtdEiHT6x" role="3clFbG">
+                  <node concept="2OqwBi" id="7YLtdEiHTxM" role="37vLTx">
+                    <node concept="37vLTw" id="7YLtdEiHTq5" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7YLtdEiHQuX" resolve="name" />
+                    </node>
+                    <node concept="liA8E" id="7YLtdEiHTWN" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+                      <node concept="Xl_RD" id="7YLtdEiHU0o" role="37wK5m">
+                        <property role="Xl_RC" value="÷" />
+                      </node>
+                      <node concept="Xl_RD" id="7YLtdEiHUPp" role="37wK5m">
+                        <property role="Xl_RC" value="/" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7YLtdEiHS2Y" role="37vLTJ">
+                    <ref role="3cqZAo" node="7YLtdEiHQuX" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7YLtdEiHNcS" role="3clFbw">
+              <node concept="2YIFZM" id="7YLtdEiHN4g" role="2Oq$k0">
+                <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+              </node>
+              <node concept="liA8E" id="7YLtdEiHNlQ" role="2OqNvi">
+                <ref role="37wK5l" to="65nr:7YLtdEiEmwu" resolve="useSlashInsteadOfDivisionSymbol" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="3xwfj1ivz4w" role="3cqZAp">
+            <node concept="37vLTw" id="7YLtdEiHRYu" role="3cqZAk">
+              <ref role="3cqZAo" node="7YLtdEiHQuX" resolve="name" />
             </node>
           </node>
         </node>

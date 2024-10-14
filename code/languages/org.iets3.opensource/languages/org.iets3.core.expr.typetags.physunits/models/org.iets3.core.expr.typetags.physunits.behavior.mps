@@ -14,7 +14,7 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
     <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="0" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="3" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="6" />
     <use id="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" name="org.iets3.core.expr.math" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
@@ -14032,6 +14032,23 @@
         <node concept="3uibUv" id="u36xDfAXov" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="41vYFO2MP_s" role="13h7CS">
+      <property role="TrG5h" value="createDefaultVarExpr" />
+      <ref role="13i0hy" to="pbu6:60Qa1k_nI2O" resolve="createDefaultVarExpr" />
+      <node concept="3Tm1VV" id="41vYFO2MP_t" role="1B3o_S" />
+      <node concept="3clFbS" id="41vYFO2MP_w" role="3clF47">
+        <node concept="3clFbF" id="41vYFO2MPAp" role="3cqZAp">
+          <node concept="2pJPEk" id="41vYFO2MPAn" role="3clFbG">
+            <node concept="2pJPED" id="41vYFO2MPAo" role="2pJPEn">
+              <ref role="2pJxaS" to="i3ya:45a4DYZtiVD" resolve="QuantityEmptyType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="41vYFO2MP_x" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
       </node>
     </node>
   </node>
