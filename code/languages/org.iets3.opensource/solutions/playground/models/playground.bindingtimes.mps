@@ -4,7 +4,7 @@
   <languages>
     <use id="9c3cc6fb-ae5e-46d1-ace2-1e08bb47d03d" name="org.iets3.core.expr.typetags.bindingtime" version="0" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="2" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="3" />
   </languages>
   <imports />
   <registry>

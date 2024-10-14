@@ -3,11 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="2" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="3" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
-    <use id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages" version="0" />
+    <use id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages" version="1" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
-    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
+    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="3" />
     <devkit ref="33eb240b-05aa-417a-b719-386d26df80b8(org.iets3.core.expr.genall.advanced.devkit)" />
   </languages>
   <imports />
@@ -158,7 +158,6 @@
         <property id="6912784008700543198" name="errorID" index="1KtYiK" />
       </concept>
       <concept id="4026566441520550140" name="org.iets3.core.expr.messages.structure.TypeCoercion" flags="ng" index="1WHAK$">
-        <child id="4026566441520550141" name="type" index="1WHAK_" />
         <child id="4026566441520550144" name="expr" index="1WHARo" />
       </concept>
       <concept id="4026566441521058530" name="org.iets3.core.expr.messages.structure.CoercionIt" flags="ng" index="1WJySU" />
@@ -782,9 +781,6 @@
   <node concept="1WOfUn" id="3vxfdxbret3">
     <property role="TrG5h" value="Messages" />
     <node concept="1WHAK$" id="1CNpG_h8dxe" role="1WI1Xj">
-      <node concept="2Ss9cW" id="1CNpG_h8dxd" role="1WHAK_">
-        <ref role="2Ss9cX" node="1CNpG_h50DD" resolve="Point" />
-      </node>
       <node concept="30dDZf" id="1CNpG_h8dDg" role="1WHARo">
         <node concept="30dDZf" id="1CNpG_h8dDh" role="30dEsF">
           <node concept="30dDZf" id="1CNpG_h8dDi" role="30dEsF">
@@ -809,16 +805,19 @@
           <node concept="1WJySU" id="1CNpG_h8dEv" role="30czhm" />
         </node>
       </node>
+      <node concept="2Ss9cW" id="1CNpG_h8dxd" role="2S399n">
+        <ref role="2Ss9cX" node="1CNpG_h50DD" resolve="Point" />
+      </node>
     </node>
     <node concept="1WHAK$" id="1CNpG_h8Fcw" role="1WI1Xj">
-      <node concept="1WbbFT" id="1CNpG_h8Fi3" role="1WHAK_">
-        <ref role="1WbbFS" node="1CNpG_h8F0D" resolve="money" />
-      </node>
       <node concept="30dDZf" id="1CNpG_h8FlF" role="1WHARo">
         <node concept="30bdrP" id="1CNpG_h8FlS" role="30dEs_">
           <property role="30bdrQ" value=" EUR" />
         </node>
         <node concept="1WJySU" id="1CNpG_h8Fkk" role="30dEsF" />
+      </node>
+      <node concept="1WbbFT" id="1CNpG_h8Fi3" role="2S399n">
+        <ref role="1WbbFS" node="1CNpG_h8F0D" resolve="money" />
       </node>
     </node>
     <node concept="1WOOD3" id="3vxfdxbrKAj" role="1WOfUI">

@@ -1281,6 +1281,7 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5Ys_ngSn6GE" role="jymVt" />
+    <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
     <node concept="3clFb_" id="5Ys_ngSn72Q" role="jymVt">
       <property role="TrG5h" value="allowHexadecimalNumbers" />
       <node concept="3clFbS" id="5Ys_ngSn72R" role="3clF47">
@@ -1292,7 +1293,16 @@
       <node concept="10P_77" id="5Ys_ngSn72X" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="5Ys_ngSn6GF" role="jymVt" />
-    <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
+    <node concept="3clFb_" id="1DSLxNDLebJ" role="jymVt">
+      <property role="TrG5h" value="useParenthesisInsteadOfBracketsForTuples" />
+      <node concept="3clFbS" id="1DSLxNDLebM" role="3clF47">
+        <node concept="3clFbF" id="1DSLxNDLeUd" role="3cqZAp">
+          <node concept="3clFbT" id="1DSLxNDLeUc" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1DSLxNDLbg7" role="1B3o_S" />
+      <node concept="10P_77" id="1DSLxNDLe7n" role="3clF45" />
+    </node>
   </node>
   <node concept="vrV6u" id="WieAE6FJqt">
     <property role="TrG5h" value="primitiveTypeMapper" />

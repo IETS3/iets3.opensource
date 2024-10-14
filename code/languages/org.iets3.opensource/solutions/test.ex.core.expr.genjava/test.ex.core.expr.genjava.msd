@@ -33,7 +33,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:db8bd035-3f51-41d8-8fed-954c202d18be:org.iets3.analysis.base" version="0" />
     <language slang="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" version="0" />
-    <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="3" />
+    <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="6" />
     <language slang="l:2f7e2e35-6e74-4c43-9fa5-2465d68f5996:org.iets3.core.expr.collections" version="5" />
     <language slang="l:30254c5b-f87e-4bb3-a60a-77a7ec6ed411:org.iets3.core.expr.genjava.base" version="0" />
     <language slang="l:f2abf2a6-552e-4906-ab58-930f9a79aff4:org.iets3.core.expr.genjava.contracts" version="0" />
@@ -46,13 +46,13 @@
     <language slang="l:e75207bb-7b13-40bd-b80b-c8fe625c4ee2:org.iets3.core.expr.genjava.tests" version="0" />
     <language slang="l:ddeeec5e-aa31-4c44-bc40-319cd452626e:org.iets3.core.expr.genjava.toplevel" version="0" />
     <language slang="l:15d858db-2d21-4ae9-90c4-f595086d0bdf:org.iets3.core.expr.genjava.util" version="0" />
-    <language slang="l:9464fa06-5ab9-409b-9274-64ab29588457:org.iets3.core.expr.lambda" version="1" />
-    <language slang="l:553a35c5-ccd6-40ba-9923-5e3b354d0c76:org.iets3.core.expr.messages" version="0" />
+    <language slang="l:9464fa06-5ab9-409b-9274-64ab29588457:org.iets3.core.expr.lambda" version="2" />
+    <language slang="l:553a35c5-ccd6-40ba-9923-5e3b354d0c76:org.iets3.core.expr.messages" version="1" />
     <language slang="l:f3eafff0-30d2-46d6-9150-f0f3b880ce27:org.iets3.core.expr.path" version="0" />
-    <language slang="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" version="2" />
+    <language slang="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" version="3" />
     <language slang="l:d441fba0-f46b-43cd-b723-dad7b65da615:org.iets3.core.expr.tests" version="1" />
     <language slang="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" version="4" />
-    <language slang="l:8bb1251e-eae5-47ab-9843-33adfae8edaa:org.iets3.core.expr.util" version="2" />
+    <language slang="l:8bb1251e-eae5-47ab-9843-33adfae8edaa:org.iets3.core.expr.util" version="3" />
   </languageVersions>
   <dependencyVersions>
     <module reference="a37d732b-a361-4dba-bc6f-f8e645007559(org.iets3.core.expr.genjava.advanced.genplan)" version="0" />

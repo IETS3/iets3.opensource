@@ -233,7 +233,7 @@
                   </node>
                 </node>
                 <node concept="2pIpSj" id="cPLa7FriZ6" role="2pJxcM">
-                  <ref role="2pIpSl" to="e9k1:cPLa7FpbAi" resolve="type" />
+                  <ref role="2pIpSl" to="hm2y:7D7uZV2iYAD" resolve="type" />
                   <node concept="36biLy" id="cPLa7FriZ7" role="28nt2d">
                     <node concept="2YIFZM" id="cPLa7FriZ8" role="36biLW">
                       <ref role="37wK5l" to="xfg9:4kor_v$1qpx" resolve="createGenericIntegerType" />
@@ -263,7 +263,7 @@
                   </node>
                 </node>
                 <node concept="2pIpSj" id="cPLa7FrjO8" role="2pJxcM">
-                  <ref role="2pIpSl" to="e9k1:cPLa7FpbAi" resolve="type" />
+                  <ref role="2pIpSl" to="hm2y:7D7uZV2iYAD" resolve="type" />
                   <node concept="36biLy" id="cPLa7FrjO9" role="28nt2d">
                     <node concept="2YIFZM" id="cPLa7FrjOa" role="36biLW">
                       <ref role="37wK5l" to="xfg9:4kor_v$1qpx" resolve="createGenericIntegerType" />

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
@@ -1316,6 +1317,23 @@
       </node>
       <node concept="3Tm1VV" id="5Ys_ngSnp$m" role="1B3o_S" />
       <node concept="10P_77" id="5Ys_ngSnp$n" role="3clF45" />
+    </node>
+    <node concept="2YIFZL" id="1DSLxNDLgVH" role="jymVt">
+      <property role="TrG5h" value="useParenthesisInsteadOfBracketsForTuples" />
+      <node concept="3clFbS" id="1DSLxNDLgVI" role="3clF47">
+        <node concept="3clFbF" id="1DSLxNDLgVJ" role="3cqZAp">
+          <node concept="2OqwBi" id="1DSLxNDLgVK" role="3clFbG">
+            <node concept="1rXfSq" id="1DSLxNDLgVL" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
+            </node>
+            <node concept="liA8E" id="1DSLxNDLgVM" role="2OqNvi">
+              <ref role="37wK5l" to="oq0c:1DSLxNDLebJ" resolve="useParenthesisInsteadOfBracketsForTuples" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1DSLxNDLgVN" role="3clF45" />
+      <node concept="3Tm1VV" id="1DSLxNDLgVO" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="2Qbt$1tTQb0" role="jymVt" />
     <node concept="3Tm1VV" id="2Qbt$1tTQaI" role="1B3o_S" />

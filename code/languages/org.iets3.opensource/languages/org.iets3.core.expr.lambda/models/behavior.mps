@@ -265,6 +265,7 @@
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -2959,7 +2960,7 @@
                     <node concept="2pJPED" id="6o_i6Gx8Cil" role="28nt2d">
                       <ref role="2pJxaS" to="hm2y:78hTg1$943h" resolve="ImplicitValidityValExpr" />
                       <node concept="2pIpSj" id="6o_i6Gx8Ci$" role="2pJxcM">
-                        <ref role="2pIpSl" to="hm2y:78hTg1$nXEV" resolve="type" />
+                        <ref role="2pIpSl" to="hm2y:7D7uZV2iYAD" resolve="type" />
                         <node concept="36biLy" id="6o_i6Gx8CiS" role="28nt2d">
                           <node concept="1PxgMI" id="6o_i6Gx8DYO" role="36biLW">
                             <node concept="chp4Y" id="6o_i6Gx8DZU" role="3oSUPX">
@@ -3347,6 +3348,53 @@
       </node>
       <node concept="3Tqbb2" id="5aHkq2w4mOu" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="ZYPG76BgMp" role="13h7CS">
+      <property role="TrG5h" value="getErrorMessage" />
+      <ref role="13i0hy" to="pbu6:ZYPG76w9Fc" resolve="getErrorMessage" />
+      <node concept="3Tm1VV" id="ZYPG76BgMq" role="1B3o_S" />
+      <node concept="3clFbS" id="ZYPG76BgMH" role="3clF47">
+        <node concept="3clFbF" id="ZYPG76Bhmg" role="3cqZAp">
+          <node concept="2YIFZM" id="ZYPG76Bhnd" role="3clFbG">
+            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+            <node concept="Xl_RD" id="ZYPG76BhnU" role="37wK5m">
+              <property role="Xl_RC" value="Type mismatch in assignment to ‹%s›. Expected type ‹%s› but got ‹%s›." />
+            </node>
+            <node concept="2OqwBi" id="ZYPG76Bixq" role="37wK5m">
+              <node concept="13iPFW" id="ZYPG76BhRC" role="2Oq$k0" />
+              <node concept="3TrcHB" id="ZYPG76BkI6" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="ZYPG76Bl$v" role="37wK5m">
+              <node concept="37vLTw" id="ZYPG76Blni" role="2Oq$k0">
+                <ref role="3cqZAo" node="ZYPG76BgMI" resolve="expectedType" />
+              </node>
+              <node concept="2Iv5rx" id="ZYPG76BlQc" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="ZYPG76Bmin" role="37wK5m">
+              <node concept="37vLTw" id="ZYPG76Bm4H" role="2Oq$k0">
+                <ref role="3cqZAo" node="ZYPG76BgMK" resolve="actualType" />
+              </node>
+              <node concept="2Iv5rx" id="ZYPG76Bm$g" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="ZYPG76BgMI" role="3clF46">
+        <property role="TrG5h" value="expectedType" />
+        <node concept="3Tqbb2" id="ZYPG76BgMJ" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="ZYPG76BgMK" role="3clF46">
+        <property role="TrG5h" value="actualType" />
+        <node concept="3Tqbb2" id="ZYPG76BgML" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="ZYPG76BgMM" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="1XjPJYAwN7m" role="13h7CS">
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
@@ -3721,7 +3769,7 @@
                             <node concept="2pJPED" id="6o_i6Gx7WvN" role="28nt2d">
                               <ref role="2pJxaS" to="hm2y:78hTg1$943h" resolve="ImplicitValidityValExpr" />
                               <node concept="2pIpSj" id="6o_i6Gx7WU2" role="2pJxcM">
-                                <ref role="2pIpSl" to="hm2y:78hTg1$nXEV" resolve="type" />
+                                <ref role="2pIpSl" to="hm2y:7D7uZV2iYAD" resolve="type" />
                                 <node concept="36biLy" id="6o_i6Gx7XdR" role="28nt2d">
                                   <node concept="1PxgMI" id="6o_i6Gx7YWs" role="36biLW">
                                     <node concept="chp4Y" id="6o_i6Gx7Z0r" role="3oSUPX">
@@ -4512,7 +4560,7 @@
                 <node concept="2OqwBi" id="22hm_0$6GJU" role="2Oq$k0">
                   <node concept="13iPFW" id="22hm_0$6GGE" role="2Oq$k0" />
                   <node concept="3TrEf2" id="22hm_0$6GQF" role="2OqNvi">
-                    <ref role="3Tt5mk" to="zzzn:22hm_0$0c7L" resolve="type" />
+                    <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="22hm_0$6Hh$" role="2OqNvi">
@@ -5579,6 +5627,53 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="1VmWkC0$enO" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="ZYPG76Nzqh" role="13h7CS">
+      <property role="TrG5h" value="getErrorMessage" />
+      <ref role="13i0hy" to="pbu6:ZYPG76w9Fc" resolve="getErrorMessage" />
+      <node concept="3Tm1VV" id="ZYPG76Nzqi" role="1B3o_S" />
+      <node concept="3clFbS" id="ZYPG76Nzqj" role="3clF47">
+        <node concept="3clFbF" id="ZYPG76Nzqk" role="3cqZAp">
+          <node concept="2YIFZM" id="ZYPG76Nzql" role="3clFbG">
+            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+            <node concept="Xl_RD" id="ZYPG76Nzqm" role="37wK5m">
+              <property role="Xl_RC" value="Type mismatch in assignment to ‹%s›. Expected type ‹%s› but got ‹%s›" />
+            </node>
+            <node concept="2OqwBi" id="ZYPG76Nzqn" role="37wK5m">
+              <node concept="13iPFW" id="ZYPG76Nzqo" role="2Oq$k0" />
+              <node concept="3TrcHB" id="ZYPG76Nzqp" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="ZYPG76Nzqq" role="37wK5m">
+              <node concept="37vLTw" id="ZYPG76Nzqr" role="2Oq$k0">
+                <ref role="3cqZAo" node="ZYPG76Nzqw" resolve="expectedType" />
+              </node>
+              <node concept="2Iv5rx" id="ZYPG76Nzqs" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="ZYPG76Nzqt" role="37wK5m">
+              <node concept="37vLTw" id="ZYPG76Nzqu" role="2Oq$k0">
+                <ref role="3cqZAo" node="ZYPG76Nzqy" resolve="actualType" />
+              </node>
+              <node concept="2Iv5rx" id="ZYPG76Nzqv" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="ZYPG76Nzqw" role="3clF46">
+        <property role="TrG5h" value="expectedType" />
+        <node concept="3Tqbb2" id="ZYPG76Nzqx" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="ZYPG76Nzqy" role="3clF46">
+        <property role="TrG5h" value="actualType" />
+        <node concept="3Tqbb2" id="ZYPG76Nzqz" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="ZYPG76Nzq$" role="3clF45" />
     </node>
     <node concept="13i0hz" id="1VmWkC0HIbb" role="13h7CS">
       <property role="13i0iv" value="false" />
