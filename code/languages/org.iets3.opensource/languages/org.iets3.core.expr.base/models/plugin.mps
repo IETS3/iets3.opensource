@@ -993,6 +993,31 @@
         <node concept="17QB3L" id="3p6$WoErLfy" role="1tU5fm" />
       </node>
     </node>
+    <node concept="3clFb_" id="5JKfLQ870IQ" role="jymVt">
+      <property role="TrG5h" value="createIntegerType" />
+      <node concept="3Tqbb2" id="5JKfLQ870IR" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+      <node concept="3Tm1VV" id="5JKfLQ870IS" role="1B3o_S" />
+      <node concept="3clFbS" id="5JKfLQ870IT" role="3clF47">
+        <node concept="3clFbF" id="5JKfLQ8731k" role="3cqZAp">
+          <node concept="1rXfSq" id="5JKfLQ8731j" role="3clFbG">
+            <ref role="37wK5l" node="2Qbt$1tSx20" resolve="createIntegerType" />
+            <node concept="37vLTw" id="5JKfLQ873sD" role="37wK5m">
+              <ref role="3cqZAo" node="5JKfLQ870IU" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5JKfLQ870IU" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="17QB3L" id="5JKfLQ870IV" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5JKfLQ86V3X" role="3clF46">
+        <property role="TrG5h" value="isHexadecimal" />
+        <node concept="10P_77" id="5JKfLQ86V46" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3clFb_" id="4kor_v$1eBp" role="jymVt">
       <property role="TrG5h" value="createGenericIntegerType" />
       <property role="1EzhhJ" value="true" />
@@ -1017,6 +1042,31 @@
       <node concept="37vLTG" id="5HLmk5GD8hb" role="3clF46">
         <property role="TrG5h" value="max" />
         <node concept="17QB3L" id="5HLmk5GD8hc" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5JKfLQ8ecRT" role="jymVt">
+      <property role="TrG5h" value="createIntegerType" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="3Tqbb2" id="5JKfLQ8ecRU" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+      <node concept="3Tm1VV" id="5JKfLQ8ecRV" role="1B3o_S" />
+      <node concept="3clFbS" id="5JKfLQ8ecRW" role="3clF47" />
+      <node concept="37vLTG" id="5JKfLQ8ecRX" role="3clF46">
+        <property role="TrG5h" value="min" />
+        <node concept="17QB3L" id="5JKfLQ8ecRY" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5JKfLQ8ed3s" role="3clF46">
+        <property role="TrG5h" value="minIsHexadecimal" />
+        <node concept="10P_77" id="5JKfLQ8ed3t" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5JKfLQ8ecRZ" role="3clF46">
+        <property role="TrG5h" value="max" />
+        <node concept="17QB3L" id="5JKfLQ8ecS0" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5JKfLQ8edgC" role="3clF46">
+        <property role="TrG5h" value="maxIsHexadecimal" />
+        <node concept="10P_77" id="5JKfLQ8edgD" role="1tU5fm" />
       </node>
     </node>
     <node concept="3clFb_" id="2Qbt$1tSx2j" role="jymVt">
@@ -1230,7 +1280,19 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="2q0DACtJfgT" role="jymVt" />
+    <node concept="2tJIrI" id="5Ys_ngSn6GE" role="jymVt" />
+    <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
+    <node concept="3clFb_" id="5Ys_ngSn72Q" role="jymVt">
+      <property role="TrG5h" value="allowHexadecimalNumbers" />
+      <node concept="3clFbS" id="5Ys_ngSn72R" role="3clF47">
+        <node concept="3clFbF" id="5Ys_ngSn9YX" role="3cqZAp">
+          <node concept="3clFbT" id="5Ys_ngSn9YW" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5Ys_ngSn72W" role="1B3o_S" />
+      <node concept="10P_77" id="5Ys_ngSn72X" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="5Ys_ngSn6GF" role="jymVt" />
     <node concept="3clFb_" id="1DSLxNDLebJ" role="jymVt">
       <property role="TrG5h" value="useParenthesisInsteadOfBracketsForTuples" />
       <node concept="3clFbS" id="1DSLxNDLebM" role="3clF47">
@@ -1241,7 +1303,6 @@
       <node concept="3Tm1VV" id="1DSLxNDLbg7" role="1B3o_S" />
       <node concept="10P_77" id="1DSLxNDLe7n" role="3clF45" />
     </node>
-    <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
   </node>
   <node concept="vrV6u" id="WieAE6FJqt">
     <property role="TrG5h" value="primitiveTypeMapper" />
