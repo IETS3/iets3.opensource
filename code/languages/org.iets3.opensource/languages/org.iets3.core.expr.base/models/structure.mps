@@ -23,12 +23,16 @@
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -2274,6 +2278,42 @@
     </node>
     <node concept="PrWs8" id="25rRV02oy5O" role="PzmwI">
       <ref role="PrY4T" node="25rRV02oe$f" resolve="ITupleOp" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2KEzU_jNj4j">
+    <property role="EcuMT" value="3182514044108878099" />
+    <property role="3GE5qa" value="numeric.number" />
+    <property role="TrG5h" value="ISupportHexValues" />
+  </node>
+  <node concept="1TIwiD" id="5Ys_ngSnA9h">
+    <property role="EcuMT" value="6889545856364470865" />
+    <property role="3GE5qa" value="numeric" />
+    <property role="TrG5h" value="HexValue" />
+    <property role="34LRSv" value="hexadecimal value" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="5Ys_ngSnA9j" role="1TKVEl">
+      <property role="IQ2nx" value="6889545856364470867" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2KEzU_ju0fn" role="1TKVEl">
+      <property role="IQ2nx" value="3182514044103295959" />
+      <property role="TrG5h" value="propertyModelUID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2KEzU_juad6" role="1TKVEl">
+      <property role="IQ2nx" value="3182514044103336774" />
+      <property role="TrG5h" value="propertyNodeID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="5Ys_ngSnA9i" role="lGtFl">
+      <property role="Hh88m" value="hexValue" />
+      <node concept="tn0Fv" id="5Ys_ngSpzKg" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+      <node concept="trNpa" id="5Ys_ngSpFL7" role="EQaZv">
+        <ref role="trN6q" node="2KEzU_jNj4j" resolve="ISupportHexValues" />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="3eH6BL2TJIw">

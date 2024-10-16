@@ -31,22 +31,17 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - The extension point `IUnitLangConfig` has a new method useSlashInsteadOfDivisionSymbol that allows to replace the "÷" character in unit names with the more common "/" character.
+- Number literals, collection size specifications and number range specifications now support entering numbers in hexadecimal format. This feature can be activated through PrimitiveTypeMapper#allowHexadecimalNumbers.
+- Collection size and number range specifications now initialize with an infinite range by default. Setting the min and max field therefore is equal to setting them to infinity.
 
 ## August 2024
-
-### Added
-
-- The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
-
-### Fixed
-
-- The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
 
 ### Fixed
 
 - TraceExplorer can decorate editors of lambda nodes with their values.
 - The code completion of the new unit language was improved.
 - The performance of error type propagation (especially in relation to type tags) was improved.
+- The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
 
 ## July 2024
 
