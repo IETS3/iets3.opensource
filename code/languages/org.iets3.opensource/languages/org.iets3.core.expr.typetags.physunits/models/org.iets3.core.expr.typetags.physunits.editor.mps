@@ -1225,6 +1225,29 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
+    <node concept="14StLt" id="1NEOJAXeMiJ" role="V601i">
+      <property role="TrG5h" value="QuantityTag" />
+      <node concept="VechU" id="1NEOJAXeMiK" role="3F10Kt">
+        <node concept="3ZlJ5R" id="1NEOJAXeMiL" role="VblUZ">
+          <node concept="3clFbS" id="1NEOJAXeMiM" role="2VODD2">
+            <node concept="3clFbF" id="1NEOJAXeMiN" role="3cqZAp">
+              <node concept="2OqwBi" id="1NEOJAXeMiO" role="3clFbG">
+                <node concept="10M0yZ" id="1NEOJAXj7Tb" role="2Oq$k0">
+                  <ref role="3cqZAo" to="itrz:2CEi94emCnI" resolve="KEYWORD" />
+                  <ref role="1PxDUh" to="itrz:4tRpPVPUEa3" resolve="IETS3Colors" />
+                </node>
+                <node concept="liA8E" id="1NEOJAXj87N" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Color.brighter()" resolve="brighter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="VPRnO" id="1NEOJAXeMiR" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
     <node concept="14StLt" id="40jlwCD4vEL" role="V601i">
       <property role="TrG5h" value="UnitRelatedDefinition" />
       <node concept="VechU" id="4M31vJayoGq" role="3F10Kt">
@@ -2887,6 +2910,7 @@
     <ref role="1XX52x" to="i3ya:7athFveyQYz" resolve="QuantityReference" />
     <node concept="1iCGBv" id="7athFve$gND" role="2wV5jI">
       <ref role="1NtTu8" to="i3ya:7athFveyRoc" resolve="quantity" />
+      <ref role="1k5W1q" node="1NEOJAXeMiJ" resolve="QuantityTag" />
       <node concept="1sVBvm" id="7athFve$gNF" role="1sWHZn">
         <node concept="3F0A7n" id="7athFve$gRQ" role="2wV5jI">
           <property role="1Intyy" value="true" />
