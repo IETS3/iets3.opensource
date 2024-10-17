@@ -2446,6 +2446,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6vKAeHgyBBz" role="3bR37C">
+          <node concept="3bR9La" id="6vKAeHgyBB$" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="_I$tx9JvQU" role="2G$12L">
         <property role="BnDLt" value="true" />

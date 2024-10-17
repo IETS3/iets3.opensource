@@ -9,6 +9,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
+- The compatibility check of quantities of the physical unit language was improved.
 - The interpreter of the `success` expression was fixed.
 - Custom Java exceptions have now a `equals` and `hashCode` implementation so that they can be compared in tests.
 - Error messages and checks were improved.
