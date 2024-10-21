@@ -1613,6 +1613,11 @@
           <property role="3clFbU" value="true" />
         </node>
       </node>
+      <node concept="QsSxf" id="3x8VOVHlimr" role="Qtgdg">
+        <property role="TrG5h" value="Cancelled" />
+        <ref role="37wK5l" node="57dmM_UsWB$" resolve="MessageType" />
+        <node concept="3clFbT" id="3x8VOVHlims" role="37wK5m" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="5zG5$LyyJpW">
