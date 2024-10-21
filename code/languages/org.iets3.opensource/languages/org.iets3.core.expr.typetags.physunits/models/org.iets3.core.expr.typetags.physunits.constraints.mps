@@ -955,5 +955,24 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3$mUAASO3lK">
+    <property role="3GE5qa" value="group.dimension" />
+    <ref role="1M2myG" to="i3ya:4RImAbi2ndX" resolve="DimensionReference" />
+    <node concept="EnEH3" id="3$mUAASO3p9" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="3$mUAASO3qQ" role="EtsB7">
+        <node concept="3clFbS" id="3$mUAASO3qR" role="2VODD2">
+          <node concept="3clFbF" id="3$mUAASO3zS" role="3cqZAp">
+            <node concept="2OqwBi" id="3$mUAASO5JL" role="3clFbG">
+              <node concept="EsrRn" id="3$mUAASO5ol" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3$mUAASO65p" role="2OqNvi">
+                <ref role="37wK5l" to="rppw:6Yx4TURG_yz" resolve="getName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
