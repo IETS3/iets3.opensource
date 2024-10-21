@@ -13230,6 +13230,9 @@
         <node concept="L2wRC" id="IJ8MgPZlMe" role="39821P">
           <ref role="L2wRA" node="IJ8MgPVKAO" resolve="test.org.iets3.analysis.base" />
         </node>
+        <node concept="L2wRC" id="IJ8MgQ3Y9s" role="39821P">
+          <ref role="L2wRA" node="IJ8MgPVKMG" resolve="test.org.iets3.analysis.base.solvable" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />

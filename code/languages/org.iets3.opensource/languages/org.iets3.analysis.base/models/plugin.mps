@@ -1988,7 +1988,7 @@
       <node concept="z59LJ" id="7S7fpHY16_V" role="lGtFl">
         <node concept="TZ5HA" id="7S7fpHY16_W" role="TZ5H$">
           <node concept="1dT_AC" id="7S7fpHY16_X" role="1dT_Ay">
-            <property role="1dT_AB" value="Queue solver results which have been obtained asynchronously" />
+            <property role="1dT_AB" value="Queue solver results which have been obtained asynchronously in order to propagate to the UI" />
           </node>
         </node>
       </node>
