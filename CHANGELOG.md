@@ -15,6 +15,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Error messages and checks were improved.
 - More error messages are now shown when the supertype can't be calculated.
 - The end cells of table rows of all tables where improved and now all support delete and insert actions.
+- Quantities are not allowed in tagged types anymore.
+- Units with same quantities are now checked if they can be (implicitely) converted between each other.
 
 ### Added
 
