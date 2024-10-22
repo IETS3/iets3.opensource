@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
+      </concept>
       <concept id="867786408877811036" name="org.iets3.core.expr.base.structure.ContractItem" flags="ng" index="I61DS">
         <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
@@ -32,9 +35,7 @@
       <concept id="5544528087567483818" name="org.iets3.core.expr.genjava.stateMachineExample.structure.State" flags="ng" index="IkdP1">
         <child id="5544528087567483891" name="transitions" index="IkdOo" />
       </concept>
-      <concept id="5544528087567483823" name="org.iets3.core.expr.genjava.stateMachineExample.structure.EventArg" flags="ng" index="IkdP4">
-        <child id="5544528087567483969" name="type" index="IkdEE" />
-      </concept>
+      <concept id="5544528087567483823" name="org.iets3.core.expr.genjava.stateMachineExample.structure.EventArg" flags="ng" index="IkdP4" />
       <concept id="5544528087567483822" name="org.iets3.core.expr.genjava.stateMachineExample.structure.EventRef" flags="ng" index="IkdP5">
         <reference id="5544528087567483904" name="event" index="IkdFF" />
         <child id="5544528087567483906" name="constraints" index="IkdFD" />
@@ -91,7 +92,7 @@
       <property role="TrG5h" value="PressButton" />
       <node concept="IkdP4" id="4NM7IHyE28I" role="IkdOu">
         <property role="TrG5h" value="time" />
-        <node concept="mLuIC" id="4NM7IHyE28O" role="IkdEE" />
+        <node concept="mLuIC" id="4NM7IHyE28O" role="2S399n" />
       </node>
     </node>
   </node>

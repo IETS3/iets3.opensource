@@ -3105,6 +3105,9 @@
             </node>
             <node concept="34jXtK" id="5avmkTFbPr1" role="2OqNvi">
               <node concept="3cpWs3" id="5avmkTFbRVZ" role="25WWJ7">
+                <node concept="37vLTw" id="5avmkTFbRWb" role="3uHU7w">
+                  <ref role="3cqZAo" node="5avmkTFbHM4" resolve="row" />
+                </node>
                 <node concept="17qRlL" id="5avmkTFbQbl" role="3uHU7B">
                   <node concept="37vLTw" id="5avmkTFbPwy" role="3uHU7B">
                     <ref role="3cqZAo" node="5avmkTFbHLG" resolve="col" />
@@ -3115,9 +3118,6 @@
                       <ref role="3TsBF5" to="wtll:5avmkTF$G24" resolve="NUM_ROWS" />
                     </node>
                   </node>
-                </node>
-                <node concept="37vLTw" id="5avmkTFbRWb" role="3uHU7w">
-                  <ref role="3cqZAo" node="5avmkTFbHM4" resolve="row" />
                 </node>
               </node>
             </node>

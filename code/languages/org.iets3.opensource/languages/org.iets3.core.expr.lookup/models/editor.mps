@@ -18,8 +18,8 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
-    <import index="6dpw" ref="r:ea653f2d-c829-4182-b311-a544ef1f4c1f(de.slisson.mps.tables.runtime.gridmodel)" />
     <import index="sse1" ref="r:caea7020-da0a-4ba8-aff6-69334bbc9e02(de.slisson.mps.tables.runtime.simplegrid)" />
+    <import index="6dpw" ref="r:ea653f2d-c829-4182-b311-a544ef1f4c1f(de.slisson.mps.tables.runtime.gridmodel)" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -717,10 +717,10 @@
                         </node>
                         <node concept="2OqwBi" id="74LepNSa0mK" role="33vP2m">
                           <node concept="2OqwBi" id="74LepNS9XMx" role="2Oq$k0">
-                            <node concept="2r2w_c" id="74LepNS9X7m" role="2Oq$k0" />
                             <node concept="3Tsc0h" id="74LepNS9YqF" role="2OqNvi">
                               <ref role="3TtcxE" to="8qwc:55lPkJGHmp6" resolve="rows" />
                             </node>
+                            <node concept="2r2w_c" id="74LepNS9X7m" role="2Oq$k0" />
                           </node>
                           <node concept="1sK_Qi" id="74LepNSa2$s" role="2OqNvi">
                             <node concept="10bopy" id="74LepNSa2Cq" role="1sKJu8" />
@@ -749,10 +749,10 @@
                         <node concept="3clFbF" id="55lPkJGKFDJ" role="3cqZAp">
                           <node concept="2OqwBi" id="55lPkJGKIwk" role="3clFbG">
                             <node concept="2OqwBi" id="55lPkJGKFPT" role="2Oq$k0">
+                              <node concept="2r2w_c" id="55lPkJGKFDI" role="2Oq$k0" />
                               <node concept="3Tsc0h" id="55lPkJGKLS7" role="2OqNvi">
                                 <ref role="3TtcxE" to="8qwc:55lPkJGINeh" resolve="cells" />
                               </node>
-                              <node concept="2r2w_c" id="55lPkJGKFDI" role="2Oq$k0" />
                             </node>
                             <node concept="TSZUe" id="55lPkJGKQA9" role="2OqNvi">
                               <node concept="2pJPEk" id="55lPkJGKR1H" role="25WWJ7">
@@ -926,10 +926,10 @@
                           <node concept="3clFbF" id="55lPkJGO3wG" role="3cqZAp">
                             <node concept="2OqwBi" id="55lPkJGO3wH" role="3clFbG">
                               <node concept="2OqwBi" id="55lPkJGO3wI" role="2Oq$k0">
+                                <node concept="2r2w_c" id="55lPkJGO3wJ" role="2Oq$k0" />
                                 <node concept="3Tsc0h" id="55lPkJGO3wK" role="2OqNvi">
                                   <ref role="3TtcxE" to="8qwc:55lPkJGINeh" resolve="cells" />
                                 </node>
-                                <node concept="2r2w_c" id="55lPkJGO3wJ" role="2Oq$k0" />
                               </node>
                               <node concept="TSZUe" id="55lPkJGO3wL" role="2OqNvi">
                                 <node concept="2pJPEk" id="55lPkJGO3wM" role="25WWJ7">
@@ -1243,7 +1243,7 @@
       <node concept="2iRfu4" id="55lPkJGZxpa" role="2iSdaV" />
       <node concept="3F0ifn" id="55lPkJGZxp3" role="3EZMnx">
         <property role="3F0ifm" value="lookup" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         <node concept="OXEIz" id="yfp7edvEmO" role="P5bDN">
           <node concept="UkePV" id="yfp7edvEmP" role="OY2wv">
             <ref role="Ul1FP" to="hm2y:6sdnDbSlaok" resolve="Type" />
