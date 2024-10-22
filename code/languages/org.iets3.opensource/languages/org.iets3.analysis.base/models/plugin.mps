@@ -2281,6 +2281,12 @@
             <ref role="zr_51" node="5BRQP3Rlktv" resolve="timeout" />
           </node>
         </node>
+        <node concept="TUZQ0" id="6mS76k2V6ij" role="3nqlJM">
+          <property role="TUZQ4" value="sould errors be highlighted" />
+          <node concept="zr_55" id="6mS76k2V9mn" role="zr_5Q">
+            <ref role="zr_51" node="cwnBfDZaz8" resolve="messaging" />
+          </node>
+        </node>
         <node concept="x79VA" id="3NwcubmggFP" role="3nqlJM">
           <property role="x79VB" value="result of callable " />
         </node>
@@ -2531,6 +2537,12 @@
           <property role="TUZQ4" value="max run time" />
           <node concept="zr_55" id="5BRQP3S9FGX" role="zr_5Q">
             <ref role="zr_51" node="5BRQP3RlZ28" resolve="timeout" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6mS76k2VHwW" role="3nqlJM">
+          <property role="TUZQ4" value="sould errors be highlighted" />
+          <node concept="zr_55" id="6mS76k2VHwX" role="zr_5Q">
+            <ref role="zr_51" node="cwnBfE0cjf" resolve="messaging" />
           </node>
         </node>
         <node concept="x79VA" id="5BRQP3S9FGY" role="3nqlJM">
@@ -2869,6 +2881,18 @@
           <property role="TUZQ4" value="max run time" />
           <node concept="zr_55" id="1VsTyb1M33x" role="zr_5Q">
             <ref role="zr_51" node="1VsTyb1M33f" resolve="timeout" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6mS76k2VQXg" role="3nqlJM">
+          <property role="TUZQ4" value="sould errors be highlighted" />
+          <node concept="zr_55" id="6mS76k2VQXh" role="zr_5Q">
+            <ref role="zr_51" node="1VsTyb1M33h" resolve="messaging" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6mS76k2VUxm" role="3nqlJM">
+          <property role="TUZQ4" value="Around-Environment where SolverTask creation is run" />
+          <node concept="zr_55" id="6mS76k2VXYf" role="zr_5Q">
+            <ref role="zr_51" node="1VsTyb1M33j" resolve="execEnv" />
           </node>
         </node>
         <node concept="x79VA" id="1VsTyb1M33y" role="3nqlJM">
