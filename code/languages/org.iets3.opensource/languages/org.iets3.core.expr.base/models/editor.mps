@@ -6133,12 +6133,12 @@
                 <node concept="17QB3L" id="3TIaSh$jOMV" role="1tU5fm" />
                 <node concept="2OqwBi" id="3TIaSh$jOMW" role="33vP2m">
                   <node concept="2YIFZM" id="3TIaSh$jOMX" role="2Oq$k0">
-                    <ref role="37wK5l" to="pbu6:5DizcGOb6ar" resolve="getNodeCoverage" />
+                    <ref role="37wK5l" to="pbu6:7LZDtvhyLVv" resolve="getNodeCoverage" />
                     <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                     <node concept="pncrf" id="3TIaSh$jOMY" role="37wK5m" />
                   </node>
                   <node concept="liA8E" id="3TIaSh$jOMZ" role="2OqNvi">
-                    <ref role="37wK5l" to="pbu6:5DizcGO8Hdr" resolve="getStatus" />
+                    <ref role="37wK5l" to="pbu6:7LZDtvhDKIP" resolve="getStatus" />
                   </node>
                 </node>
               </node>
