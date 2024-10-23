@@ -1014,6 +1014,39 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="I2wguiD5W3" role="jymVt" />
+    <node concept="2tJIrI" id="I2wguiD5W4" role="jymVt" />
+    <node concept="3clFb_" id="I2wguiD6iJ" role="jymVt">
+      <property role="TrG5h" value="implicitConversionIsEnabledAt" />
+      <node concept="3clFbS" id="I2wguiD6iM" role="3clF47">
+        <node concept="3clFbF" id="I2wguiFp$T" role="3cqZAp">
+          <node concept="3clFbT" id="I2wguiFp$S" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="I2wguiD6iN" role="1B3o_S" />
+      <node concept="10P_77" id="I2wguiD6dy" role="3clF45" />
+      <node concept="2JFqV2" id="I2wguiD72$" role="2frcjj" />
+      <node concept="37vLTG" id="Fcab4PWbpT" role="3clF46">
+        <property role="TrG5h" value="taggedExpression" />
+        <node concept="3Tqbb2" id="Fcab4PWbpS" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="Fcab4PWdfX" role="lGtFl">
+        <node concept="TZ5HA" id="Fcab4PWdfY" role="TZ5H$">
+          <node concept="1dT_AC" id="Fcab4PWdfZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if implicit conversions are enabled for a specific tagged expression. A use case could be, for example," />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="Fcab4PWejs" role="TZ5H$">
+          <node concept="1dT_AC" id="Fcab4PWejt" role="1dT_Ay">
+            <property role="1dT_AB" value="to activate them if they are part of a binary expression." />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="HeBpG0vQy" role="jymVt" />
     <node concept="3clFb_" id="HeBpG0y2X" role="jymVt">
       <property role="TrG5h" value="getExponentComparator" />
@@ -1925,12 +1958,23 @@
                 </node>
                 <node concept="3clFbH" id="3wrpJuqrXCP" role="3cqZAp" />
               </node>
-              <node concept="2OqwBi" id="3wrpJuqrXTH" role="3clFbw">
-                <node concept="37vLTw" id="3wrpJuqrXEO" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3wrpJuqrXpi" resolve="config" />
+              <node concept="1Wc70l" id="I2wguiCjQp" role="3clFbw">
+                <node concept="2OqwBi" id="3wrpJuqrXTH" role="3uHU7B">
+                  <node concept="37vLTw" id="3wrpJuqrXEO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3wrpJuqrXpi" resolve="config" />
+                  </node>
+                  <node concept="liA8E" id="3wrpJuqrY9F" role="2OqNvi">
+                    <ref role="37wK5l" node="3wrpJuqrQh9" resolve="implicitConversionIsEnabled" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="3wrpJuqrY9F" role="2OqNvi">
-                  <ref role="37wK5l" node="3wrpJuqrQh9" resolve="implicitConversionIsEnabled" />
+                <node concept="2OqwBi" id="I2wguiDabN" role="3uHU7w">
+                  <node concept="37vLTw" id="I2wguiDabO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3wrpJuqrXpi" resolve="config" />
+                  </node>
+                  <node concept="liA8E" id="I2wguiDabP" role="2OqNvi">
+                    <ref role="37wK5l" node="I2wguiD6iJ" resolve="implicitConversionIsEnabledAt" />
+                    <node concept="oxGPV" id="Fcab4PWfAp" role="37wK5m" />
+                  </node>
                 </node>
               </node>
             </node>
