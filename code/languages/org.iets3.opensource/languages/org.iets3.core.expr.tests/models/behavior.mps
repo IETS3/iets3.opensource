@@ -8777,10 +8777,10 @@
                       <node concept="17QB3L" id="7fsCTt5Wyg3" role="1tU5fm" />
                       <node concept="2OqwBi" id="7fsCTt5Wygg" role="33vP2m">
                         <node concept="liA8E" id="7fsCTt5Wygh" role="2OqNvi">
-                          <ref role="37wK5l" to="pbu6:5DizcGO8Hdr" resolve="getStatus" />
+                          <ref role="37wK5l" to="pbu6:7LZDtvhDKIP" resolve="getStatus" />
                         </node>
                         <node concept="2YIFZM" id="7fsCTt5Wygi" role="2Oq$k0">
-                          <ref role="37wK5l" to="pbu6:5DizcGOb6ar" resolve="getNodeCoverage" />
+                          <ref role="37wK5l" to="pbu6:7LZDtvhyLVv" resolve="getNodeCoverage" />
                           <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                           <node concept="37vLTw" id="7fsCTt5Wygj" role="37wK5m">
                             <ref role="3cqZAo" node="4z0AnX817f$" resolve="it" />
