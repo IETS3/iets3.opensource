@@ -7,6 +7,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## October 2024
 
+### Changed
+
+- When the generator tests are not available (e.g. not generated), the interpreter tests are executed instead.
+
 ### Fixed
 
 - The interpreter of the `success` expression was fixed.

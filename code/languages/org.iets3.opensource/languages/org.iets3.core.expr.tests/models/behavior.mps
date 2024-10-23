@@ -64,6 +64,8 @@
     <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
+    <import index="3qmy" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.classloading(MPS.Core/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -2632,28 +2634,91 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="ljKHDcIgfm" role="3cqZAp">
-              <node concept="3cpWs3" id="ljKHDcIgfo" role="3cqZAk">
-                <node concept="3cpWs3" id="ljKHDcIgfp" role="3uHU7B">
-                  <node concept="Xl_RD" id="ljKHDcIgfq" role="3uHU7w">
-                    <property role="Xl_RC" value="." />
-                  </node>
-                  <node concept="2OqwBi" id="ljKHDcIgfr" role="3uHU7B">
-                    <node concept="2OqwBi" id="ljKHDcIgfs" role="2Oq$k0">
-                      <node concept="37vLTw" id="ljKHDcIgft" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2_tP28kjNF9" resolve="mo" />
+            <node concept="3cpWs8" id="ib70fppmDR" role="3cqZAp">
+              <node concept="3cpWsn" id="ib70fppmDS" role="3cpWs9">
+                <property role="TrG5h" value="generatorTest" />
+                <node concept="17QB3L" id="ib70fppkps" role="1tU5fm" />
+                <node concept="3cpWs3" id="ib70fppmDT" role="33vP2m">
+                  <node concept="3cpWs3" id="ib70fppmDU" role="3uHU7B">
+                    <node concept="Xl_RD" id="ib70fppmDV" role="3uHU7w">
+                      <property role="Xl_RC" value="." />
+                    </node>
+                    <node concept="2OqwBi" id="ib70fppmDW" role="3uHU7B">
+                      <node concept="2OqwBi" id="ib70fppmDX" role="2Oq$k0">
+                        <node concept="37vLTw" id="ib70fppmDY" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2_tP28kjNF9" resolve="mo" />
+                        </node>
+                        <node concept="liA8E" id="ib70fppmDZ" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                        </node>
                       </node>
-                      <node concept="liA8E" id="ljKHDcIgfu" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                      <node concept="liA8E" id="ib70fppmE0" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="ljKHDcIgfv" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                  </node>
+                  <node concept="BsUDl" id="ib70fppmE1" role="3uHU7w">
+                    <ref role="37wK5l" node="6VjyfUYe5Ll" resolve="getSimpleClassNameForGenerator" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="ib70fppr2x" role="3cqZAp">
+              <node concept="3cpWsn" id="ib70fppr2y" role="3cpWs9">
+                <property role="TrG5h" value="module" />
+                <node concept="3uibUv" id="ib70fppr2z" role="1tU5fm">
+                  <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
+                </node>
+                <node concept="1eOMI4" id="ib70fpptfs" role="33vP2m">
+                  <node concept="10QFUN" id="ib70fpptfp" role="1eOMHV">
+                    <node concept="3uibUv" id="ib70fpptfu" role="10QFUM">
+                      <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
+                    </node>
+                    <node concept="2OqwBi" id="ib70fppvNs" role="10QFUP">
+                      <node concept="2JrnkZ" id="ib70fppvAq" role="2Oq$k0">
+                        <node concept="2OqwBi" id="ib70fppu5Q" role="2JrQYb">
+                          <node concept="13iPFW" id="ib70fpptmu" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="ib70fppv2s" role="2OqNvi" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="ib70fppw0Y" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+                      </node>
                     </node>
                   </node>
                 </node>
-                <node concept="BsUDl" id="ljKHDcIhkR" role="3uHU7w">
-                  <ref role="37wK5l" node="6VjyfUYe5Ll" resolve="getSimpleClassNameForGenerator" />
+              </node>
+            </node>
+            <node concept="3J1_TO" id="ib70fppyOc" role="3cqZAp">
+              <node concept="3uVAMA" id="ib70fppyXn" role="1zxBo5">
+                <node concept="XOnhg" id="ib70fppyXo" role="1zc67B">
+                  <property role="TrG5h" value="ex" />
+                  <node concept="nSUau" id="ib70fppyXp" role="1tU5fm">
+                    <node concept="3uibUv" id="ib70fppz$j" role="nSUat">
+                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="ib70fppyXq" role="1zc67A" />
+              </node>
+              <node concept="3clFbS" id="ib70fppyOe" role="1zxBo7">
+                <node concept="3clFbF" id="ib70fpp$lV" role="3cqZAp">
+                  <node concept="2OqwBi" id="ib70fppy7Q" role="3clFbG">
+                    <node concept="37vLTw" id="ib70fppxJl" role="2Oq$k0">
+                      <ref role="3cqZAo" node="ib70fppr2y" resolve="module" />
+                    </node>
+                    <node concept="liA8E" id="ib70fppynL" role="2OqNvi">
+                      <ref role="37wK5l" to="j8aq:~ReloadableModule.getClass(java.lang.String)" resolve="getClass" />
+                      <node concept="37vLTw" id="ib70fpp$UG" role="37wK5m">
+                        <ref role="3cqZAo" node="ib70fppmDS" resolve="generatorTest" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="ljKHDcIgfm" role="3cqZAp">
+                  <node concept="37vLTw" id="ib70fppmE2" role="3cqZAk">
+                    <ref role="3cqZAo" node="ib70fppmDS" resolve="generatorTest" />
+                  </node>
                 </node>
               </node>
             </node>
