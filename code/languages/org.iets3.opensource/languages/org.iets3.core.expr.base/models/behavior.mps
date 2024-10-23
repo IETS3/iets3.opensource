@@ -108,7 +108,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
@@ -186,7 +186,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
@@ -263,7 +263,7 @@
         <child id="1154542793668" name="componentType" index="3g7fb8" />
         <child id="1154542803372" name="initValue" index="3g7hyw" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -296,7 +296,7 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -540,7 +540,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
@@ -584,7 +584,7 @@
         <property id="1174558315290" name="start" index="1T8p8b" />
         <property id="1174558317822" name="end" index="1T8pRJ" />
       </concept>
-      <concept id="1174653354106" name="jetbrains.mps.baseLanguage.regexp.structure.RegexpUsingConstruction" flags="ng" index="1YMW5F">
+      <concept id="1174653354106" name="jetbrains.mps.baseLanguage.regexp.structure.RegexpUsingConstruction" flags="ngI" index="1YMW5F">
         <child id="1174653387388" name="regexp" index="1YN4dH" />
       </concept>
     </language>
@@ -15266,7 +15266,7 @@
         <node concept="3Tm1VV" id="6SpoPQgawRX" role="1B3o_S" />
         <node concept="3clFbS" id="6SpoPQgawRY" role="3clF47">
           <node concept="XkiVB" id="7YuIrXzNR0r" role="3cqZAp">
-            <ref role="37wK5l" node="7YuIrXzKmU5" resolve="ConceptDataBase" />
+            <ref role="37wK5l" node="7YuIrXzKmU5" resolve="DefaultCoverageAnalyzerBase.ConceptDataBase" />
             <node concept="37vLTw" id="7YuIrXzNYHy" role="37wK5m">
               <ref role="3cqZAo" node="6SpoPQgax$N" resolve="ccc" />
             </node>
@@ -15279,7 +15279,7 @@
       </node>
       <node concept="3Tm1VV" id="6SpoPQg9mRn" role="1B3o_S" />
       <node concept="3uibUv" id="7YuIrXzNmJg" role="1zkMxy">
-        <ref role="3uigEE" node="7YuIrXzKmTN" resolve="ConceptDataBase" />
+        <ref role="3uigEE" node="7YuIrXzKmTN" resolve="DefaultCoverageAnalyzerBase.ConceptDataBase" />
       </node>
     </node>
     <node concept="2tJIrI" id="RaqQlV6fTl" role="jymVt" />
@@ -15292,7 +15292,7 @@
         <node concept="3Tm1VV" id="RaqQlV6s4W" role="1B3o_S" />
         <node concept="3clFbS" id="RaqQlV6s4X" role="3clF47">
           <node concept="XkiVB" id="7YuIrXzOTbT" role="3cqZAp">
-            <ref role="37wK5l" node="7YuIrXzKmYk" resolve="ValueCoverageBase" />
+            <ref role="37wK5l" node="7YuIrXzKmYk" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
             <node concept="37vLTw" id="7YuIrXzP2xm" role="37wK5m">
               <ref role="3cqZAo" node="RaqQlV6sdo" resolve="n" />
             </node>
@@ -15324,7 +15324,7 @@
         <node concept="3Tm1VV" id="RaqQlVG$24" role="1B3o_S" />
         <node concept="3clFbS" id="RaqQlVG$25" role="3clF47">
           <node concept="XkiVB" id="7YuIrXzPIbr" role="3cqZAp">
-            <ref role="37wK5l" node="7YuIrXzKmYC" resolve="ValueCoverageBase" />
+            <ref role="37wK5l" node="7YuIrXzKmYC" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
             <node concept="37vLTw" id="7YuIrXzPRrR" role="37wK5m">
               <ref role="3cqZAo" node="RaqQlVG$2e" resolve="n" />
             </node>
@@ -15366,7 +15366,7 @@
       </node>
       <node concept="3Tm1VV" id="RaqQlV6qe7" role="1B3o_S" />
       <node concept="3uibUv" id="7YuIrXzOnSB" role="1zkMxy">
-        <ref role="3uigEE" node="7YuIrXzKmY1" resolve="ValueCoverageBase" />
+        <ref role="3uigEE" node="7YuIrXzKmY1" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
       </node>
     </node>
     <node concept="2tJIrI" id="RaqQlV6oQW" role="jymVt" />
@@ -15375,7 +15375,7 @@
       <property role="TrG5h" value="ValueStatistics" />
       <node concept="3Tm1VV" id="RaqQlV6ml0" role="1B3o_S" />
       <node concept="3uibUv" id="7YuIrXzQx9E" role="1zkMxy">
-        <ref role="3uigEE" node="7YuIrXzKn11" resolve="ValueStatisticsBase" />
+        <ref role="3uigEE" node="7YuIrXzKn11" resolve="DefaultCoverageAnalyzerBase.ValueStatisticsBase" />
       </node>
     </node>
     <node concept="2tJIrI" id="6SpoPQg9mrX" role="jymVt" />
@@ -15388,7 +15388,7 @@
         <node concept="3cqZAl" id="5DizcGO8CHb" role="3clF45" />
         <node concept="3clFbS" id="5DizcGO8CHd" role="3clF47">
           <node concept="XkiVB" id="7YuIrXzRIL4" role="3cqZAp">
-            <ref role="37wK5l" node="7YuIrXzKn2u" resolve="NodeCoverageBase" />
+            <ref role="37wK5l" node="7YuIrXzKn2u" resolve="DefaultCoverageAnalyzerBase.NodeCoverageBase" />
             <node concept="37vLTw" id="7YuIrXzRT42" role="37wK5m">
               <ref role="3cqZAo" node="5DizcGO8CRn" resolve="node" />
             </node>
@@ -15405,7 +15405,7 @@
         <node concept="3cqZAl" id="1ly2$GYoSMo" role="3clF45" />
         <node concept="3clFbS" id="1ly2$GYoSMp" role="3clF47">
           <node concept="XkiVB" id="7YuIrXzSkgv" role="3cqZAp">
-            <ref role="37wK5l" node="7YuIrXzKn2F" resolve="NodeCoverageBase" />
+            <ref role="37wK5l" node="7YuIrXzKn2F" resolve="DefaultCoverageAnalyzerBase.NodeCoverageBase" />
             <node concept="37vLTw" id="7YuIrXzStfo" role="37wK5m">
               <ref role="3cqZAo" node="1ly2$GYoSMx" resolve="node" />
             </node>
@@ -15427,12 +15427,12 @@
       <node concept="2tJIrI" id="7YuIrX$55Qy" role="jymVt" />
       <node concept="3Tm1VV" id="5DizcGO8vjU" role="1B3o_S" />
       <node concept="3uibUv" id="7YuIrXzRf99" role="1zkMxy">
-        <ref role="3uigEE" node="7YuIrXzKn2l" resolve="NodeCoverageBase" />
+        <ref role="3uigEE" node="7YuIrXzKn2l" resolve="DefaultCoverageAnalyzerBase.NodeCoverageBase" />
       </node>
       <node concept="3clFb_" id="7YuIrX$52lO" role="jymVt">
         <property role="TrG5h" value="getNodeCoverage" />
         <node concept="3uibUv" id="7YuIrX$52lT" role="3clF45">
-          <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+          <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
         </node>
         <node concept="37vLTG" id="7YuIrX$52lU" role="3clF46">
           <property role="TrG5h" value="node" />
@@ -15457,7 +15457,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrX$52m0" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrX$5dwi" role="jymVt" />
@@ -15484,7 +15484,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrX$52mf" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="3clFb_" id="7YuIrX$52mj" role="jymVt">
@@ -15510,7 +15510,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrX$52mu" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
     </node>
@@ -15525,7 +15525,7 @@
       <property role="TrG5h" value="getAllConceptsStatus" />
       <node concept="A3Dl8" id="7YuIrX$9Mqz" role="3clF45">
         <node concept="3uibUv" id="7YuIrX$9Mq$" role="A3Ik2">
-          <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+          <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
         </node>
       </node>
       <node concept="3Tm1VV" id="7YuIrX$9Mq_" role="1B3o_S" />
@@ -15580,7 +15580,7 @@
                     <node concept="3cpWsn" id="7YuIrX$aQFa" role="3cpWs9">
                       <property role="TrG5h" value="ccc" />
                       <node concept="3uibUv" id="7YuIrX$aQFb" role="1tU5fm">
-                        <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+                        <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
                       </node>
                       <node concept="1rXfSq" id="7YuIrX$aQFc" role="33vP2m">
                         <ref role="37wK5l" node="7YuIrX$a0f8" resolve="getVisitedConcepts" />
@@ -15601,7 +15601,7 @@
                       <node concept="3cpWs6" id="7YuIrX$aQFj" role="3cqZAp">
                         <node concept="2ShNRf" id="7YuIrX$aQFk" role="3cqZAk">
                           <node concept="1pGfFk" id="7YuIrX$aQFl" role="2ShVmc">
-                            <ref role="37wK5l" node="6SpoPQgawRU" resolve="ConceptData" />
+                            <ref role="37wK5l" node="6SpoPQgawRU" resolve="DefaultCoverageAnalyzer.ConceptData" />
                             <node concept="37vLTw" id="7YuIrX$aQFm" role="37wK5m">
                               <ref role="3cqZAo" node="7YuIrX$aQFp" resolve="it" />
                             </node>
@@ -15671,7 +15671,7 @@
       </node>
       <node concept="3Tm1VV" id="7ezRWqurjRv" role="1B3o_S" />
       <node concept="2AHcQZ" id="7LZDtvig1bu" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="1WlYLwX3_J$" role="jymVt" />
@@ -15719,7 +15719,7 @@
       </node>
       <node concept="3Tm1VV" id="7ezRWquti5e" role="1B3o_S" />
       <node concept="2AHcQZ" id="7LZDtvigiWr" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="1WlYLwX45KN" role="jymVt" />
@@ -15767,7 +15767,7 @@
       </node>
       <node concept="3Tm1VV" id="7ezRWquu7Vg" role="1B3o_S" />
       <node concept="2AHcQZ" id="7LZDtvigu61" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="1WlYLwX49$7" role="jymVt" />
@@ -15815,7 +15815,7 @@
       </node>
       <node concept="3Tm1VV" id="7ezRWquuwki" role="1B3o_S" />
       <node concept="2AHcQZ" id="7LZDtvigCRp" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrX$bcTM" role="jymVt" />
@@ -16506,7 +16506,7 @@
       <property role="2aFKle" value="false" />
       <node concept="A3Dl8" id="6SpoPQgazRm" role="3clF45">
         <node concept="3uibUv" id="6SpoPQga$h8" role="A3Ik2">
-          <ref role="3uigEE" node="6SpoPQg9mRm" resolve="ConceptData" />
+          <ref role="3uigEE" node="6SpoPQg9mRm" resolve="DefaultCoverageAnalyzer.ConceptData" />
         </node>
       </node>
       <node concept="3clFbS" id="4_qY3E69a_G" role="3clF47">
@@ -16518,7 +16518,7 @@
             </node>
             <node concept="A3Dl8" id="7LZDtvhPMcO" role="10QFUM">
               <node concept="3uibUv" id="7LZDtvhPPO8" role="A3Ik2">
-                <ref role="3uigEE" node="6SpoPQg9mRm" resolve="ConceptData" />
+                <ref role="3uigEE" node="6SpoPQg9mRm" resolve="DefaultCoverageAnalyzer.ConceptData" />
               </node>
             </node>
           </node>
@@ -16560,7 +16560,7 @@
             </node>
             <node concept="A3Dl8" id="7LZDtvhQlsB" role="10QFUM">
               <node concept="3uibUv" id="7LZDtvhQvSh" role="A3Ik2">
-                <ref role="3uigEE" node="6SpoPQg9mRm" resolve="ConceptData" />
+                <ref role="3uigEE" node="6SpoPQg9mRm" resolve="DefaultCoverageAnalyzer.ConceptData" />
               </node>
             </node>
           </node>
@@ -16569,7 +16569,7 @@
       <node concept="3Tm1VV" id="18$bUx5ztem" role="1B3o_S" />
       <node concept="A3Dl8" id="18$bUx5zten" role="3clF45">
         <node concept="3uibUv" id="18$bUx5zteo" role="A3Ik2">
-          <ref role="3uigEE" node="6SpoPQg9mRm" resolve="ConceptData" />
+          <ref role="3uigEE" node="6SpoPQg9mRm" resolve="DefaultCoverageAnalyzer.ConceptData" />
         </node>
       </node>
       <node concept="2AHcQZ" id="7LZDtvi21_W" role="2AJF6D">
@@ -16690,14 +16690,14 @@
               </node>
             </node>
             <node concept="3uibUv" id="7LZDtvhRGUj" role="10QFUM">
-              <ref role="3uigEE" node="5DizcGO8zjw" resolve="NodeCoverage" />
+              <ref role="3uigEE" node="5DizcGO8zjw" resolve="DefaultCoverageAnalyzer.NodeCoverage" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="5DizcGO8nEg" role="1B3o_S" />
       <node concept="3uibUv" id="5DizcGOb63l" role="3clF45">
-        <ref role="3uigEE" node="5DizcGO8zjw" resolve="NodeCoverage" />
+        <ref role="3uigEE" node="5DizcGO8zjw" resolve="DefaultCoverageAnalyzer.NodeCoverage" />
       </node>
       <node concept="37vLTG" id="5DizcGObaqQ" role="3clF46">
         <property role="TrG5h" value="node" />
@@ -17121,13 +17121,13 @@
               <ref role="1Pybhc" node="7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
             </node>
             <node concept="3uibUv" id="7LZDtvhU9RK" role="10QFUM">
-              <ref role="3uigEE" node="RaqQlV6mkZ" resolve="ValueStatistics" />
+              <ref role="3uigEE" node="RaqQlV6mkZ" resolve="DefaultCoverageAnalyzer.ValueStatistics" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3uibUv" id="RaqQlVa4FJ" role="3clF45">
-        <ref role="3uigEE" node="RaqQlV6mkZ" resolve="ValueStatistics" />
+        <ref role="3uigEE" node="RaqQlV6mkZ" resolve="DefaultCoverageAnalyzer.ValueStatistics" />
       </node>
       <node concept="3Tm1VV" id="RaqQlVa4FK" role="1B3o_S" />
       <node concept="2AHcQZ" id="7LZDtvi4PBK" role="2AJF6D">
@@ -20754,7 +20754,7 @@
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
       <node concept="2AHcQZ" id="7LZDtvhnYvd" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
       <node concept="z59LJ" id="7LZDtvhnYva" role="lGtFl">
         <node concept="TZ5HI" id="7LZDtvhnYvb" role="3nqlJM">
@@ -20786,7 +20786,7 @@
         <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
       </node>
       <node concept="2AHcQZ" id="7LZDtvhobJY" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
       <node concept="z59LJ" id="7LZDtvhobJV" role="lGtFl">
         <node concept="TZ5HI" id="7LZDtvhobJW" role="3nqlJM">
@@ -20990,7 +20990,7 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
       <node concept="2AHcQZ" id="7LZDtvhohcA" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="7LZDtvhnY3r" role="jymVt">
@@ -21014,7 +21014,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="7LZDtvhoh2$" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3uibUv" id="7LZDtvhnXVU" role="EKbjA">
@@ -21725,7 +21725,7 @@
         <ref role="3uigEE" to="2ahs:7F2vPZ3KyDX" resolve="IEnvironment" />
       </node>
       <node concept="2AHcQZ" id="7LZDtvhtE16" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="2ns1RQROeAX" role="jymVt">
@@ -21748,7 +21748,7 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
       <node concept="2AHcQZ" id="7LZDtvhtE7h" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="4Pi6J8Cccq$" role="jymVt" />
@@ -25931,7 +25931,7 @@
         <node concept="37vLTG" id="7LZDtvhF5Hl" role="3clF46">
           <property role="TrG5h" value="analyzer" />
           <node concept="3uibUv" id="7LZDtvhF5Hm" role="1tU5fm">
-            <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IValueCoverage" />
+            <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IDefaultCoverageAnalyzer.IValueCoverage" />
           </node>
         </node>
         <node concept="3Tm1VV" id="7LZDtvhF5Hn" role="1B3o_S" />
@@ -25943,7 +25943,7 @@
         <node concept="A3Dl8" id="7LZDtvhF5Hz" role="3clF45">
           <node concept="3qUE_q" id="7LZDtvj3s3H" role="A3Ik2">
             <node concept="3uibUv" id="7LZDtvj3t2p" role="3qUE_r">
-              <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IValueCoverage" />
+              <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IDefaultCoverageAnalyzer.IValueCoverage" />
             </node>
           </node>
         </node>
@@ -26032,12 +26032,12 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="7LZDtvh_doz" role="1B3o_S" />
       <node concept="3uibUv" id="7LZDtviNeTL" role="1tU5fm">
-        <ref role="3uigEE" node="7LZDtviN4PC" resolve="InstanceHolder" />
+        <ref role="3uigEE" node="7LZDtviN4PC" resolve="IDefaultCoverageAnalyzer.InstanceHolder" />
       </node>
       <node concept="2ShNRf" id="7LZDtviNmnF" role="33vP2m">
         <node concept="HV5vD" id="7LZDtviNxe6" role="2ShVmc">
           <property role="373rjd" value="true" />
-          <ref role="HV5vE" node="7LZDtviN4PC" resolve="InstanceHolder" />
+          <ref role="HV5vE" node="7LZDtviN4PC" resolve="IDefaultCoverageAnalyzer.InstanceHolder" />
         </node>
       </node>
     </node>
@@ -26145,7 +26145,7 @@
         <node concept="3clFbF" id="7LZDtvhyLN8" role="3cqZAp">
           <node concept="2OqwBi" id="7LZDtvhyLN9" role="3clFbG">
             <node concept="liA8E" id="7LZDtvhyLNa" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyLNX" />
+              <ref role="37wK5l" node="7LZDtvhyLNX" resolve="setupValueStatistics" />
             </node>
             <node concept="2OqwBi" id="7LZDtviNVGX" role="2Oq$k0">
               <node concept="37vLTw" id="7LZDtviNVHP" role="2Oq$k0">
@@ -26205,7 +26205,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyLS$" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyLSC" />
+              <ref role="37wK5l" node="7LZDtvhyLSC" resolve="getAllConcepts" />
             </node>
           </node>
         </node>
@@ -26232,7 +26232,7 @@
       <node concept="A3Dl8" id="7LZDtvhyLTz" role="3clF45">
         <node concept="3qUE_q" id="7LZDtviVMW0" role="A3Ik2">
           <node concept="3uibUv" id="7LZDtviVOM9" role="3qUE_r">
-            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
           </node>
         </node>
       </node>
@@ -26256,7 +26256,7 @@
       <node concept="A3Dl8" id="7LZDtvhyLU3" role="3clF45">
         <node concept="3qUE_q" id="7LZDtviVPHF" role="A3Ik2">
           <node concept="3uibUv" id="7LZDtviVPHG" role="3qUE_r">
-            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
           </node>
         </node>
       </node>
@@ -26275,7 +26275,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyLUd" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyLUh" />
+              <ref role="37wK5l" node="7LZDtvhyLUh" resolve="getAllConceptsStatus" />
             </node>
           </node>
         </node>
@@ -26284,7 +26284,7 @@
       <node concept="A3Dl8" id="7LZDtvhyLUf" role="3clF45">
         <node concept="3qUE_q" id="7LZDtviVQzo" role="A3Ik2">
           <node concept="3uibUv" id="7LZDtviVQzp" role="3qUE_r">
-            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
           </node>
         </node>
       </node>
@@ -26295,7 +26295,7 @@
       <node concept="A3Dl8" id="7LZDtvhyLUG" role="3clF45">
         <node concept="3qUE_q" id="7LZDtviVRya" role="A3Ik2">
           <node concept="3uibUv" id="7LZDtviVRyb" role="3qUE_r">
-            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
           </node>
         </node>
       </node>
@@ -26314,7 +26314,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyLUQ" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyLUV" />
+              <ref role="37wK5l" node="7LZDtvhyLUV" resolve="getAllCoveredNodes" />
             </node>
           </node>
         </node>
@@ -26345,7 +26345,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyLVb" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyLVh" />
+              <ref role="37wK5l" node="7LZDtvhyLVh" resolve="hasNodeCoverageEx" />
               <node concept="37vLTw" id="7LZDtvhyLVc" role="37wK5m">
                 <ref role="3cqZAo" node="7LZDtvhyLVf" resolve="node" />
               </node>
@@ -26389,7 +26389,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyLV$" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyLVE" />
+              <ref role="37wK5l" node="7LZDtvhyLVE" resolve="getNodeCoverageEx" />
               <node concept="37vLTw" id="7LZDtvhyLV_" role="37wK5m">
                 <ref role="3cqZAo" node="7LZDtvhyLVC" resolve="node" />
               </node>
@@ -26399,7 +26399,7 @@
       </node>
       <node concept="3Tm1VV" id="7LZDtvhyLVA" role="1B3o_S" />
       <node concept="3uibUv" id="7LZDtvhyLVB" role="3clF45">
-        <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+        <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
       </node>
       <node concept="37vLTG" id="7LZDtvhyLVC" role="3clF46">
         <property role="TrG5h" value="node" />
@@ -26416,7 +26416,7 @@
       <property role="TrG5h" value="getNodeCoverageEx" />
       <node concept="3clFbS" id="7LZDtvhyLVF" role="3clF47" />
       <node concept="3uibUv" id="7LZDtvhyLWT" role="3clF45">
-        <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+        <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
       </node>
       <node concept="37vLTG" id="7LZDtvhyLWU" role="3clF46">
         <property role="TrG5h" value="node" />
@@ -26575,7 +26575,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyLZG" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyLZM" />
+              <ref role="37wK5l" node="7LZDtvhyLZM" resolve="visitNodeEx" />
               <node concept="37vLTw" id="7LZDtvhyLZH" role="37wK5m">
                 <ref role="3cqZAo" node="7LZDtvhyLZK" resolve="node" />
               </node>
@@ -26618,7 +26618,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyM07" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyM0d" />
+              <ref role="37wK5l" node="7LZDtvhyM0d" resolve="registerLanguageEx" />
               <node concept="37vLTw" id="7LZDtvhyM08" role="37wK5m">
                 <ref role="3cqZAo" node="7LZDtvhyM0b" resolve="l" />
               </node>
@@ -26665,7 +26665,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyM0v" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyM0_" />
+              <ref role="37wK5l" node="7LZDtvhyM0_" resolve="registerIgnoredConceptEx" />
               <node concept="37vLTw" id="7LZDtvhyM0w" role="37wK5m">
                 <ref role="3cqZAo" node="7LZDtvhyM0z" resolve="c" />
               </node>
@@ -26708,7 +26708,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyM0R" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyM0X" />
+              <ref role="37wK5l" node="7LZDtvhyM0X" resolve="registerMeasuredConceptEx" />
               <node concept="37vLTw" id="7LZDtvhyM0S" role="37wK5m">
                 <ref role="3cqZAo" node="7LZDtvhyM0V" resolve="c" />
               </node>
@@ -26751,7 +26751,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyM1f" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyM1l" />
+              <ref role="37wK5l" node="7LZDtvhyM1l" resolve="isInInterestingContextEx" />
               <node concept="37vLTw" id="7LZDtvhyM1g" role="37wK5m">
                 <ref role="3cqZAo" node="7LZDtvhyM1j" resolve="n" />
               </node>
@@ -26794,7 +26794,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyM1T" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyM1Z" />
+              <ref role="37wK5l" node="7LZDtvhyM1Z" resolve="isInterestingConceptEx" />
               <node concept="37vLTw" id="7LZDtvhyM1U" role="37wK5m">
                 <ref role="3cqZAo" node="7LZDtvhyM1X" resolve="n" />
               </node>
@@ -26838,13 +26838,13 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyM2J" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyM2M" />
+              <ref role="37wK5l" node="7LZDtvhyM2M" resolve="getValueStatisticsEx" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3uibUv" id="7LZDtvhyM2K" role="3clF45">
-        <ref role="3uigEE" node="7LZDtvhE6RD" resolve="IValueStatistics" />
+        <ref role="3uigEE" node="7LZDtvhE6RD" resolve="IDefaultCoverageAnalyzer.IValueStatistics" />
       </node>
       <node concept="3Tm1VV" id="7LZDtvhyM2L" role="1B3o_S" />
     </node>
@@ -26852,7 +26852,7 @@
       <property role="TrG5h" value="getValueStatisticsEx" />
       <node concept="3clFbS" id="7LZDtvhyM2N" role="3clF47" />
       <node concept="3uibUv" id="7LZDtvhyM2Q" role="3clF45">
-        <ref role="3uigEE" node="7LZDtvhE6RD" resolve="IValueStatistics" />
+        <ref role="3uigEE" node="7LZDtvhE6RD" resolve="IDefaultCoverageAnalyzer.IValueStatistics" />
       </node>
       <node concept="3Tm1VV" id="7LZDtvhyM2R" role="1B3o_S" />
     </node>
@@ -26869,7 +26869,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyM2Z" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyM35" />
+              <ref role="37wK5l" node="7LZDtvhyM35" resolve="isIgnoredEx" />
               <node concept="37vLTw" id="7LZDtvhyM30" role="37wK5m">
                 <ref role="3cqZAo" node="7LZDtvhyM33" resolve="n" />
               </node>
@@ -26913,7 +26913,7 @@
               <ref role="37wK5l" node="7LZDtvhyLNC" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7LZDtvhyM3D" role="2OqNvi">
-              <ref role="37wK5l" node="7LZDtvhyM3G" />
+              <ref role="37wK5l" node="7LZDtvhyM3G" resolve="hasDataEx" />
             </node>
           </node>
         </node>
@@ -27152,7 +27152,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKmUR" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKmUS" role="jymVt" />
@@ -27171,7 +27171,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKmV1" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKmV2" role="jymVt" />
@@ -27217,7 +27217,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKmVn" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKmVo" role="jymVt" />
@@ -27281,7 +27281,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKmVR" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKmVS" role="jymVt" />
@@ -27352,7 +27352,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKmWm" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKmWn" role="jymVt" />
@@ -27399,7 +27399,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKmWE" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKmWF" role="jymVt" />
@@ -27420,7 +27420,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKmWO" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKmWP" role="jymVt" />
@@ -27470,7 +27470,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKmXd" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKmXe" role="jymVt" />
@@ -27588,7 +27588,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKmXY" role="1B3o_S" />
       <node concept="3uibUv" id="7YuIrXzKmXZ" role="EKbjA">
-        <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+        <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKmY0" role="jymVt" />
@@ -27776,7 +27776,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKmZi" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKmZj" role="jymVt" />
@@ -27822,7 +27822,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKmZA" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKmZB" role="jymVt" />
@@ -27892,7 +27892,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKn04" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKn05" role="jymVt" />
@@ -27924,7 +27924,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKn0k" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKn0l" role="jymVt" />
@@ -27996,12 +27996,12 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKn0O" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKn0P" role="1B3o_S" />
       <node concept="3uibUv" id="7YuIrXzKn0Q" role="EKbjA">
-        <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IValueCoverage" />
+        <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IDefaultCoverageAnalyzer.IValueCoverage" />
       </node>
       <node concept="3clFb_" id="7YuIrXzKn0R" role="jymVt">
         <property role="TrG5h" value="getValue" />
@@ -28020,7 +28020,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKn0Z" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
     </node>
@@ -28039,7 +28039,7 @@
             <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
           <node concept="3uibUv" id="7YuIrXzKn16" role="3rvSg0">
-            <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IValueCoverage" />
+            <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IDefaultCoverageAnalyzer.IValueCoverage" />
           </node>
         </node>
         <node concept="2ShNRf" id="7YuIrXzKn17" role="33vP2m">
@@ -28048,7 +28048,7 @@
               <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
             <node concept="3uibUv" id="7YuIrXzKn1a" role="3rHtpV">
-              <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IValueCoverage" />
+              <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IDefaultCoverageAnalyzer.IValueCoverage" />
             </node>
           </node>
         </node>
@@ -28065,7 +28065,7 @@
             <node concept="3cpWsn" id="7YuIrXzKn1g" role="3cpWs9">
               <property role="TrG5h" value="s" />
               <node concept="3uibUv" id="7YuIrXzKn1h" role="1tU5fm">
-                <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IValueCoverage" />
+                <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IDefaultCoverageAnalyzer.IValueCoverage" />
               </node>
               <node concept="3EllGN" id="7YuIrXzKn1i" role="33vP2m">
                 <node concept="37vLTw" id="7YuIrXzKn1j" role="3ElVtu">
@@ -28114,7 +28114,7 @@
         </node>
         <node concept="3Tm1VV" id="7YuIrXzKn1$" role="1B3o_S" />
         <node concept="2AHcQZ" id="7YuIrXzKn1_" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKn1A" role="jymVt" />
@@ -28149,12 +28149,12 @@
         <node concept="37vLTG" id="7YuIrXzKn1M" role="3clF46">
           <property role="TrG5h" value="analyzer" />
           <node concept="3uibUv" id="7YuIrXzKn1N" role="1tU5fm">
-            <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IValueCoverage" />
+            <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IDefaultCoverageAnalyzer.IValueCoverage" />
           </node>
         </node>
         <node concept="3Tm1VV" id="7YuIrXzKn1O" role="1B3o_S" />
         <node concept="2AHcQZ" id="7YuIrXzKn1P" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKn1Q" role="jymVt" />
@@ -28175,7 +28175,7 @@
               </node>
               <node concept="UnYns" id="7YuIrXzKn21" role="2OqNvi">
                 <node concept="3uibUv" id="7YuIrXzKn22" role="UnYnz">
-                  <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IValueCoverage" />
+                  <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IDefaultCoverageAnalyzer.IValueCoverage" />
                 </node>
               </node>
             </node>
@@ -28183,11 +28183,11 @@
         </node>
         <node concept="A3Dl8" id="7YuIrXzKn23" role="3clF45">
           <node concept="3uibUv" id="7YuIrXzKn24" role="A3Ik2">
-            <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IValueCoverage" />
+            <ref role="3uigEE" node="7LZDtvhFiTx" resolve="IDefaultCoverageAnalyzer.IValueCoverage" />
           </node>
         </node>
         <node concept="2AHcQZ" id="7YuIrXzKn25" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKn26" role="jymVt" />
@@ -28213,12 +28213,12 @@
         <node concept="10P_77" id="7YuIrXzKn2f" role="3clF45" />
         <node concept="3Tm1VV" id="7YuIrXzKn2g" role="1B3o_S" />
         <node concept="2AHcQZ" id="7YuIrXzKn2h" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKn2i" role="1B3o_S" />
       <node concept="3uibUv" id="7YuIrXzKn2j" role="EKbjA">
-        <ref role="3uigEE" node="7LZDtvhE6RD" resolve="IValueStatistics" />
+        <ref role="3uigEE" node="7LZDtvhE6RD" resolve="IDefaultCoverageAnalyzer.IValueStatistics" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKn2k" role="jymVt" />
@@ -28341,10 +28341,10 @@
                         <node concept="3cpWsn" id="7YuIrXzKn3f" role="3cpWs9">
                           <property role="TrG5h" value="childCoverage" />
                           <node concept="3uibUv" id="7YuIrXzKn3g" role="1tU5fm">
-                            <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+                            <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
                           </node>
                           <node concept="1rXfSq" id="7YuIrXzL00f" role="33vP2m">
-                            <ref role="37wK5l" node="7YuIrX$11qc" resolve="getNodeCoverageEx" />
+                            <ref role="37wK5l" node="7YuIrX$11qc" resolve="getNodeCoverage" />
                             <node concept="37vLTw" id="7YuIrXzL6nF" role="37wK5m">
                               <ref role="3cqZAo" node="7YuIrXzKn3p" resolve="it" />
                             </node>
@@ -28407,7 +28407,7 @@
         <node concept="3Tm1VV" id="7YuIrXzKn3B" role="1B3o_S" />
         <node concept="10Oyi0" id="7YuIrXzKn3C" role="3clF45" />
         <node concept="2AHcQZ" id="7YuIrXzKn3D" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrX$0ONs" role="jymVt" />
@@ -28424,7 +28424,7 @@
           </node>
         </node>
         <node concept="3uibUv" id="7YuIrX$11rr" role="3clF45">
-          <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+          <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
         </node>
         <node concept="37vLTG" id="7YuIrX$11rs" role="3clF46">
           <property role="TrG5h" value="node" />
@@ -28533,13 +28533,13 @@
                               <node concept="3clFbF" id="7YuIrXzKn4o" role="3cqZAp">
                                 <node concept="22lmx$" id="7YuIrXzKn4p" role="3clFbG">
                                   <node concept="1rXfSq" id="7YuIrXzKn4q" role="3uHU7w">
-                                    <ref role="37wK5l" node="7YuIrX$3C_j" resolve="isNodePartiallyCoveredEx" />
+                                    <ref role="37wK5l" node="7YuIrX$3C_j" resolve="isNodePartiallyCovered" />
                                     <node concept="37vLTw" id="7YuIrXzKn4r" role="37wK5m">
                                       <ref role="3cqZAo" node="7YuIrXzKn4u" resolve="it" />
                                     </node>
                                   </node>
                                   <node concept="1rXfSq" id="7YuIrXzKn4s" role="3uHU7B">
-                                    <ref role="37wK5l" node="7YuIrX$2wTM" resolve="isNodeCoveredEx" />
+                                    <ref role="37wK5l" node="7YuIrX$2wTM" resolve="isNodeCovered" />
                                     <node concept="37vLTw" id="7YuIrXzKn4t" role="37wK5m">
                                       <ref role="3cqZAo" node="7YuIrXzKn4u" resolve="it" />
                                     </node>
@@ -28589,7 +28589,7 @@
         <node concept="3Tm1VV" id="7YuIrXzKn4F" role="1B3o_S" />
         <node concept="10Oyi0" id="7YuIrXzKn4G" role="3clF45" />
         <node concept="2AHcQZ" id="7YuIrXzKn4H" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrX$2kTp" role="jymVt" />
@@ -28804,10 +28804,10 @@
                       <node concept="3cpWsn" id="7YuIrXzKn5S" role="3cpWs9">
                         <property role="TrG5h" value="childCoverage" />
                         <node concept="3uibUv" id="7YuIrXzKn5T" role="1tU5fm">
-                          <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+                          <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
                         </node>
                         <node concept="1rXfSq" id="7YuIrXzKn5U" role="33vP2m">
-                          <ref role="37wK5l" node="7YuIrX$11qc" resolve="getNodeCoverageEx" />
+                          <ref role="37wK5l" node="7YuIrX$11qc" resolve="getNodeCoverage" />
                           <node concept="37vLTw" id="7YuIrXzKn5V" role="37wK5m">
                             <ref role="3cqZAo" node="7YuIrXzKn69" resolve="it" />
                           </node>
@@ -28879,7 +28879,7 @@
         <node concept="3Tm1VV" id="7YuIrXzKn6k" role="1B3o_S" />
         <node concept="17QB3L" id="7YuIrXzKn6l" role="3clF45" />
         <node concept="2AHcQZ" id="7YuIrXzKn6m" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7YuIrXzKn6n" role="jymVt" />
@@ -28902,12 +28902,12 @@
         <node concept="3Tm1VV" id="7YuIrXzKn6u" role="1B3o_S" />
         <node concept="3Tqbb2" id="7YuIrXzKn6v" role="3clF45" />
         <node concept="2AHcQZ" id="7YuIrXzKn6w" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKn6x" role="1B3o_S" />
       <node concept="3uibUv" id="7YuIrXzKn6y" role="EKbjA">
-        <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+        <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKn6D" role="jymVt" />
@@ -28928,14 +28928,14 @@
       <node concept="3rvAFt" id="7YuIrXzKn6M" role="1tU5fm">
         <node concept="3bZ5Sz" id="7YuIrXzKn6N" role="3rvQeY" />
         <node concept="3uibUv" id="7YuIrXzKn6O" role="3rvSg0">
-          <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+          <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
         </node>
       </node>
       <node concept="2ShNRf" id="7YuIrXzKn6P" role="33vP2m">
         <node concept="3rGOSV" id="7YuIrXzKn6Q" role="2ShVmc">
           <node concept="3bZ5Sz" id="7YuIrXzKn6R" role="3rHrn6" />
           <node concept="3uibUv" id="7YuIrXzKn6S" role="3rHtpV">
-            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
           </node>
         </node>
       </node>
@@ -28986,7 +28986,7 @@
       <node concept="3rvAFt" id="7YuIrXzKn7g" role="1tU5fm">
         <node concept="3Tqbb2" id="7YuIrXzKn7h" role="3rvQeY" />
         <node concept="3uibUv" id="7YuIrXzKn7i" role="3rvSg0">
-          <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+          <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
         </node>
       </node>
       <node concept="3Tm6S6" id="7YuIrXzKn7j" role="1B3o_S" />
@@ -28994,7 +28994,7 @@
         <node concept="3rGOSV" id="7YuIrXzKn7l" role="2ShVmc">
           <node concept="3Tqbb2" id="7YuIrXzKn7m" role="3rHrn6" />
           <node concept="3uibUv" id="7YuIrXzKn7n" role="3rHtpV">
-            <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+            <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
           </node>
         </node>
       </node>
@@ -29002,12 +29002,12 @@
     <node concept="312cEg" id="7YuIrXzKn7o" role="jymVt">
       <property role="TrG5h" value="statistics" />
       <node concept="3uibUv" id="7YuIrXzKn7p" role="1tU5fm">
-        <ref role="3uigEE" node="7LZDtvhE6RD" resolve="IValueStatistics" />
+        <ref role="3uigEE" node="7LZDtvhE6RD" resolve="IDefaultCoverageAnalyzer.IValueStatistics" />
       </node>
       <node concept="3Tm6S6" id="7YuIrXzKn7q" role="1B3o_S" />
       <node concept="2ShNRf" id="7YuIrXzKn7r" role="33vP2m">
         <node concept="HV5vD" id="7YuIrXzKn7s" role="2ShVmc">
-          <ref role="HV5vE" node="7YuIrXzKn11" resolve="ValueStatisticsBase" />
+          <ref role="HV5vE" node="7YuIrXzKn11" resolve="DefaultCoverageAnalyzerBase.ValueStatisticsBase" />
         </node>
       </node>
     </node>
@@ -29090,7 +29090,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="7YuIrX$5SR_" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrX$6frb" role="jymVt" />
@@ -29111,7 +29111,7 @@
         <node concept="3clFbF" id="7YuIrXzKn7P" role="3cqZAp">
           <node concept="2OqwBi" id="7YuIrXzKn7Q" role="3clFbG">
             <node concept="1rXfSq" id="7YuIrXzKn7R" role="2Oq$k0">
-              <ref role="37wK5l" node="7YuIrXzKn7W" />
+              <ref role="37wK5l" node="7YuIrXzKn7W" resolve="getConceptData" />
               <node concept="37vLTw" id="7YuIrXzKn7S" role="37wK5m">
                 <ref role="3cqZAo" node="7YuIrXzKn7L" resolve="ccc" />
               </node>
@@ -29138,7 +29138,7 @@
           <node concept="3cpWsn" id="7YuIrXzKn7Z" role="3cpWs9">
             <property role="TrG5h" value="data" />
             <node concept="3uibUv" id="7YuIrXzKn80" role="1tU5fm">
-              <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+              <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
             </node>
             <node concept="3EllGN" id="7YuIrXzKn81" role="33vP2m">
               <node concept="37vLTw" id="7YuIrXzKn82" role="3ElVtu">
@@ -29156,7 +29156,7 @@
               <node concept="37vLTI" id="7YuIrXzKn87" role="3clFbG">
                 <node concept="2ShNRf" id="7YuIrXzKn88" role="37vLTx">
                   <node concept="1pGfFk" id="7YuIrXzKn89" role="2ShVmc">
-                    <ref role="37wK5l" node="7YuIrXzKmU5" resolve="ConceptData" />
+                    <ref role="37wK5l" node="7YuIrXzKmU5" resolve="DefaultCoverageAnalyzerBase.ConceptDataBase" />
                     <node concept="37vLTw" id="7YuIrXzKn8a" role="37wK5m">
                       <ref role="3cqZAo" node="7YuIrXzKn8p" resolve="ccc" />
                     </node>
@@ -29198,7 +29198,7 @@
       </node>
       <node concept="3Tm6S6" id="7YuIrXzKn8n" role="1B3o_S" />
       <node concept="3uibUv" id="7YuIrXzKn8o" role="3clF45">
-        <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+        <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
       </node>
       <node concept="37vLTG" id="7YuIrXzKn8p" role="3clF46">
         <property role="TrG5h" value="ccc" />
@@ -29237,7 +29237,7 @@
           <node concept="3cpWsn" id="7YuIrXzKn8D" role="3cpWs9">
             <property role="TrG5h" value="data" />
             <node concept="3uibUv" id="7YuIrXzKn8E" role="1tU5fm">
-              <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+              <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
             </node>
             <node concept="1rXfSq" id="7YuIrXzKn8F" role="33vP2m">
               <ref role="37wK5l" node="7YuIrXzKn7W" resolve="getConceptData" />
@@ -29366,7 +29366,7 @@
               <ref role="37wK5l" node="7LZDtvhF5Ha" resolve="registerAnalyzer" />
               <node concept="2ShNRf" id="7YuIrXzKn9u" role="37wK5m">
                 <node concept="1pGfFk" id="7YuIrXzKn9v" role="2ShVmc">
-                  <ref role="37wK5l" node="7YuIrXzKmYk" resolve="ValueCoverage" />
+                  <ref role="37wK5l" node="7YuIrXzKmYk" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
                   <node concept="Xl_RD" id="7YuIrXzKn9w" role="37wK5m">
                     <property role="Xl_RC" value="integer.min" />
                   </node>
@@ -29432,7 +29432,7 @@
               <ref role="37wK5l" node="7LZDtvhF5Ha" resolve="registerAnalyzer" />
               <node concept="2ShNRf" id="7YuIrXzKn9S" role="37wK5m">
                 <node concept="1pGfFk" id="7YuIrXzKn9T" role="2ShVmc">
-                  <ref role="37wK5l" node="7YuIrXzKmYk" resolve="ValueCoverage" />
+                  <ref role="37wK5l" node="7YuIrXzKmYk" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
                   <node concept="Xl_RD" id="7YuIrXzKn9U" role="37wK5m">
                     <property role="Xl_RC" value="integer.max" />
                   </node>
@@ -29498,7 +29498,7 @@
               <ref role="37wK5l" node="7LZDtvhF5Ha" resolve="registerAnalyzer" />
               <node concept="2ShNRf" id="7YuIrXzKnai" role="37wK5m">
                 <node concept="1pGfFk" id="7YuIrXzKnaj" role="2ShVmc">
-                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="ValueCoverage" />
+                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
                   <node concept="Xl_RD" id="7YuIrXzKnak" role="37wK5m">
                     <property role="Xl_RC" value="integer.zero" />
                   </node>
@@ -29573,7 +29573,7 @@
               <ref role="37wK5l" node="7LZDtvhF5Ha" resolve="registerAnalyzer" />
               <node concept="2ShNRf" id="7YuIrXzKnaJ" role="37wK5m">
                 <node concept="1pGfFk" id="7YuIrXzKnaK" role="2ShVmc">
-                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="ValueCoverage" />
+                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
                   <node concept="Xl_RD" id="7YuIrXzKnaL" role="37wK5m">
                     <property role="Xl_RC" value="integer.one" />
                   </node>
@@ -29648,7 +29648,7 @@
               <ref role="37wK5l" node="7LZDtvhF5Ha" resolve="registerAnalyzer" />
               <node concept="2ShNRf" id="7YuIrXzKnbc" role="37wK5m">
                 <node concept="1pGfFk" id="7YuIrXzKnbd" role="2ShVmc">
-                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="ValueCoverage" />
+                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
                   <node concept="Xl_RD" id="7YuIrXzKnbe" role="37wK5m">
                     <property role="Xl_RC" value="integer.minusOne" />
                   </node>
@@ -29728,7 +29728,7 @@
               <ref role="37wK5l" node="7LZDtvhF5Ha" resolve="registerAnalyzer" />
               <node concept="2ShNRf" id="7YuIrXzKnbG" role="37wK5m">
                 <node concept="1pGfFk" id="7YuIrXzKnbH" role="2ShVmc">
-                  <ref role="37wK5l" node="7YuIrXzKmYk" resolve="ValueCoverage" />
+                  <ref role="37wK5l" node="7YuIrXzKmYk" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
                   <node concept="Xl_RD" id="7YuIrXzKnbI" role="37wK5m">
                     <property role="Xl_RC" value="decimal.min" />
                   </node>
@@ -29794,7 +29794,7 @@
               <ref role="37wK5l" node="7LZDtvhF5Ha" resolve="registerAnalyzer" />
               <node concept="2ShNRf" id="7YuIrXzKnc6" role="37wK5m">
                 <node concept="1pGfFk" id="7YuIrXzKnc7" role="2ShVmc">
-                  <ref role="37wK5l" node="7YuIrXzKmYk" resolve="ValueCoverage" />
+                  <ref role="37wK5l" node="7YuIrXzKmYk" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
                   <node concept="Xl_RD" id="7YuIrXzKnc8" role="37wK5m">
                     <property role="Xl_RC" value="decimal.max" />
                   </node>
@@ -29860,7 +29860,7 @@
               <ref role="37wK5l" node="7LZDtvhF5Ha" resolve="registerAnalyzer" />
               <node concept="2ShNRf" id="7YuIrXzKncw" role="37wK5m">
                 <node concept="1pGfFk" id="7YuIrXzKncx" role="2ShVmc">
-                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="ValueCoverage" />
+                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
                   <node concept="Xl_RD" id="7YuIrXzKncy" role="37wK5m">
                     <property role="Xl_RC" value="decimal.zero" />
                   </node>
@@ -29935,7 +29935,7 @@
               <ref role="37wK5l" node="7LZDtvhF5Ha" resolve="registerAnalyzer" />
               <node concept="2ShNRf" id="7YuIrXzKncX" role="37wK5m">
                 <node concept="1pGfFk" id="7YuIrXzKncY" role="2ShVmc">
-                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="ValueCoverage" />
+                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
                   <node concept="Xl_RD" id="7YuIrXzKncZ" role="37wK5m">
                     <property role="Xl_RC" value="decimal.one" />
                   </node>
@@ -30010,7 +30010,7 @@
               <ref role="37wK5l" node="7LZDtvhF5Ha" resolve="registerAnalyzer" />
               <node concept="2ShNRf" id="7YuIrXzKndq" role="37wK5m">
                 <node concept="1pGfFk" id="7YuIrXzKndr" role="2ShVmc">
-                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="ValueCoverage" />
+                  <ref role="37wK5l" node="7YuIrXzKmYC" resolve="DefaultCoverageAnalyzerBase.ValueCoverageBase" />
                   <node concept="Xl_RD" id="7YuIrXzKnds" role="37wK5m">
                     <property role="Xl_RC" value="decimal.minusOne" />
                   </node>
@@ -30084,7 +30084,7 @@
       <node concept="3cqZAl" id="7YuIrXzKndP" role="3clF45" />
       <node concept="3Tm1VV" id="7YuIrXzKndQ" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKndR" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKndS" role="jymVt" />
@@ -30211,7 +30211,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKneK" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKneL" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKneM" role="jymVt" />
@@ -30243,7 +30243,7 @@
               </node>
             </node>
             <node concept="1rXfSq" id="7YuIrXzKnf1" role="2Oq$k0">
-              <ref role="37wK5l" node="7YuIrXzKnf7" />
+              <ref role="37wK5l" node="7YuIrXzKnf7" resolve="getAllConceptsStatus" />
             </node>
           </node>
         </node>
@@ -30251,13 +30251,13 @@
       <node concept="A3Dl8" id="7YuIrXzKnf2" role="3clF45">
         <node concept="3qUE_q" id="7YuIrX$9z8R" role="A3Ik2">
           <node concept="3uibUv" id="7YuIrX$9z8S" role="3qUE_r">
-            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnf4" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnf5" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnf6" role="jymVt" />
@@ -30276,7 +30276,7 @@
                     <node concept="3cpWsn" id="7YuIrXzKnfg" role="3cpWs9">
                       <property role="TrG5h" value="ccc" />
                       <node concept="3uibUv" id="7YuIrXzKnfh" role="1tU5fm">
-                        <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+                        <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
                       </node>
                       <node concept="1rXfSq" id="7YuIrX$a0fc" role="33vP2m">
                         <ref role="37wK5l" node="7YuIrX$a0f8" resolve="getVisitedConcepts" />
@@ -30297,7 +30297,7 @@
                       <node concept="3cpWs6" id="7YuIrXzKnfq" role="3cqZAp">
                         <node concept="2ShNRf" id="7YuIrXzKnfr" role="3cqZAk">
                           <node concept="1pGfFk" id="7YuIrXzKnfs" role="2ShVmc">
-                            <ref role="37wK5l" node="7YuIrXzKmU5" resolve="ConceptData" />
+                            <ref role="37wK5l" node="7YuIrXzKmU5" resolve="DefaultCoverageAnalyzerBase.ConceptDataBase" />
                             <node concept="37vLTw" id="7YuIrXzKnft" role="37wK5m">
                               <ref role="3cqZAo" node="7YuIrXzKnfw" resolve="it" />
                             </node>
@@ -30324,20 +30324,20 @@
       <node concept="A3Dl8" id="7YuIrXzKnfy" role="3clF45">
         <node concept="3qUE_q" id="7YuIrX_gA$w" role="A3Ik2">
           <node concept="3uibUv" id="7YuIrX_gA$x" role="3qUE_r">
-            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+            <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnf$" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnf_" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="7YuIrX$a0f8" role="jymVt">
       <property role="TrG5h" value="getVisitedConcepts" />
       <node concept="3Tmbuc" id="7YuIrX$a0f9" role="1B3o_S" />
       <node concept="3uibUv" id="7YuIrX$a0fa" role="3clF45">
-        <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IConceptData" />
+        <ref role="3uigEE" node="7LZDtvhAkNE" resolve="IDefaultCoverageAnalyzer.IConceptData" />
       </node>
       <node concept="37vLTG" id="7YuIrX$9ZXt" role="3clF46">
         <property role="TrG5h" value="concept" />
@@ -30347,7 +30347,7 @@
         <node concept="3cpWs6" id="7YuIrX$9ZXp" role="3cqZAp">
           <node concept="3EllGN" id="7YuIrX$9ZXq" role="3cqZAk">
             <node concept="37vLTw" id="7YuIrX$a0f6" role="3ElVtu">
-              <ref role="3cqZAo" node="7YuIrX$9ZXt" resolve="it" />
+              <ref role="3cqZAo" node="7YuIrX$9ZXt" resolve="concept" />
             </node>
             <node concept="37vLTw" id="7YuIrX$9ZXs" role="3ElQJh">
               <ref role="3cqZAo" node="7YuIrXzKn6L" resolve="visitedConcepts" />
@@ -30374,7 +30374,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnfJ" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnfK" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnfL" role="jymVt" />
@@ -30405,7 +30405,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnfY" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnfZ" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKng0" role="jymVt" />
@@ -30416,7 +30416,7 @@
           <node concept="3cpWsn" id="7YuIrXzKng4" role="3cpWs9">
             <property role="TrG5h" value="coverageData" />
             <node concept="3uibUv" id="7YuIrXzKng5" role="1tU5fm">
-              <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+              <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
             </node>
             <node concept="3EllGN" id="7YuIrXzKng6" role="33vP2m">
               <node concept="37vLTw" id="7YuIrXzKng7" role="3ElVtu">
@@ -30476,7 +30476,7 @@
                   <node concept="37vLTI" id="7YuIrXzKngs" role="3clFbG">
                     <node concept="2ShNRf" id="7YuIrXzKngt" role="37vLTx">
                       <node concept="1pGfFk" id="7YuIrXzKngu" role="2ShVmc">
-                        <ref role="37wK5l" node="7YuIrXzKn2u" resolve="NodeCoverage" />
+                        <ref role="37wK5l" node="7YuIrXzKn2u" resolve="DefaultCoverageAnalyzerBase.NodeCoverageBase" />
                         <node concept="37vLTw" id="7YuIrXzKngv" role="37wK5m">
                           <ref role="3cqZAo" node="7YuIrXzKnhh" resolve="node" />
                         </node>
@@ -30533,7 +30533,7 @@
                       </node>
                       <node concept="2ShNRf" id="7YuIrXzKngQ" role="37vLTx">
                         <node concept="1pGfFk" id="7YuIrXzKngR" role="2ShVmc">
-                          <ref role="37wK5l" node="7YuIrXzKn2F" resolve="NodeCoverage" />
+                          <ref role="37wK5l" node="7YuIrXzKn2F" resolve="DefaultCoverageAnalyzerBase.NodeCoverageBase" />
                           <node concept="37vLTw" id="7YuIrXzKngS" role="37wK5m">
                             <ref role="3cqZAo" node="7YuIrXzKnhh" resolve="node" />
                           </node>
@@ -30603,7 +30603,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="7YuIrXzKnhg" role="3clF45">
-        <ref role="3uigEE" node="7LZDtvhBRIw" resolve="INodeCoverage" />
+        <ref role="3uigEE" node="7LZDtvhBRIw" resolve="IDefaultCoverageAnalyzer.INodeCoverage" />
       </node>
       <node concept="37vLTG" id="7YuIrXzKnhh" role="3clF46">
         <property role="TrG5h" value="node" />
@@ -30617,7 +30617,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="2AHcQZ" id="7YuIrXzKnhm" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnhn" role="jymVt" />
@@ -30665,7 +30665,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnhD" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnhE" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnhF" role="jymVt" />
@@ -30713,7 +30713,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnhX" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnhY" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnhZ" role="jymVt" />
@@ -30761,7 +30761,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnih" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnii" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnij" role="jymVt" />
@@ -30772,7 +30772,7 @@
           <node concept="37vLTI" id="7YuIrXzKnin" role="3clFbG">
             <node concept="2ShNRf" id="7YuIrXzKnio" role="37vLTx">
               <node concept="1pGfFk" id="7YuIrXzKnip" role="2ShVmc">
-                <ref role="37wK5l" node="7YuIrXzKn2u" resolve="NodeCoverage" />
+                <ref role="37wK5l" node="7YuIrXzKn2u" resolve="DefaultCoverageAnalyzerBase.NodeCoverageBase" />
                 <node concept="37vLTw" id="7YuIrXzKniq" role="37wK5m">
                   <ref role="3cqZAo" node="7YuIrXzKniv" resolve="node" />
                 </node>
@@ -30799,7 +30799,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKniy" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKniz" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKni$" role="jymVt" />
@@ -30831,7 +30831,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKniK" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKniL" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKniM" role="jymVt" />
@@ -30861,7 +30861,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKniY" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKniZ" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnj0" role="jymVt" />
@@ -30891,7 +30891,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnjc" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnjd" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnje" role="jymVt" />
@@ -30907,7 +30907,7 @@
             </node>
           </node>
           <node concept="1rXfSq" id="7YuIrXzKnjl" role="3clFbw">
-            <ref role="37wK5l" node="7YuIrXzKnjF" />
+            <ref role="37wK5l" node="7YuIrXzKnjF" resolve="isInterestingConceptEx" />
             <node concept="37vLTw" id="7YuIrXzKnjm" role="37wK5m">
               <ref role="3cqZAo" node="7YuIrXzKnj_" resolve="n" />
             </node>
@@ -30926,7 +30926,7 @@
                 <node concept="3clFbS" id="7YuIrXzKnju" role="1bW5cS">
                   <node concept="3clFbF" id="7YuIrXzKnjv" role="3cqZAp">
                     <node concept="1rXfSq" id="7YuIrXzKnjw" role="3clFbG">
-                      <ref role="37wK5l" node="7YuIrXzKnjF" />
+                      <ref role="37wK5l" node="7YuIrXzKnjF" resolve="isInterestingConceptEx" />
                       <node concept="37vLTw" id="7YuIrXzKnjx" role="37wK5m">
                         <ref role="3cqZAo" node="7YuIrXzKnjy" resolve="it" />
                       </node>
@@ -30952,7 +30952,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnjC" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnjD" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnjE" role="jymVt" />
@@ -31047,7 +31047,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnkk" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnkl" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnkm" role="jymVt" />
@@ -31061,11 +31061,11 @@
         </node>
       </node>
       <node concept="3uibUv" id="7YuIrXzKnkr" role="3clF45">
-        <ref role="3uigEE" node="7LZDtvhE6RD" resolve="IValueStatistics" />
+        <ref role="3uigEE" node="7LZDtvhE6RD" resolve="IDefaultCoverageAnalyzer.IValueStatistics" />
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnks" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnkt" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnku" role="jymVt" />
@@ -31132,7 +31132,7 @@
       </node>
       <node concept="3Tm1VV" id="7YuIrXzKnkW" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnkX" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnkY" role="jymVt" />
@@ -31163,7 +31163,7 @@
       <node concept="10P_77" id="7YuIrXzKnla" role="3clF45" />
       <node concept="3Tm1VV" id="7YuIrXzKnlb" role="1B3o_S" />
       <node concept="2AHcQZ" id="7YuIrXzKnlc" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnld" role="jymVt" />
@@ -31233,7 +31233,7 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
       <node concept="2AHcQZ" id="7YuIrXzKnlG" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnlH" role="jymVt" />
@@ -31268,7 +31268,7 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
       <node concept="2AHcQZ" id="7YuIrXzKnlV" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKnlW" role="jymVt" />
@@ -31305,7 +31305,7 @@
         </node>
         <node concept="3clFbF" id="7YuIrXzKnmc" role="3cqZAp">
           <node concept="1rXfSq" id="7YuIrXzKnmd" role="3clFbG">
-            <ref role="37wK5l" node="7YuIrXzKnn9" />
+            <ref role="37wK5l" node="7YuIrXzKnn9" resolve="recordValueStatisticEx" />
             <node concept="37vLTw" id="7YuIrXzKnme" role="37wK5m">
               <ref role="3cqZAo" node="7YuIrXzKnm3" resolve="evaluatedValue" />
             </node>
@@ -31606,7 +31606,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="7YuIrXzKnol" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YuIrXzKmTM" role="jymVt" />
