@@ -4,10 +4,10 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="-1" />
+    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="9" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute" version="-1" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="2" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="3" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports>
@@ -28,7 +28,7 @@
         <reference id="5449224527592117654" name="checkingReference" index="1BTHP0" />
         <child id="3655334166513314307" name="nodes" index="3KTr4d" />
       </concept>
-      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ngI" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
@@ -47,7 +47,7 @@
       </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
+      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ngI" index="pfQq$">
         <child id="229512757698888936" name="optionalName" index="pfQ1b" />
       </concept>
       <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
@@ -55,6 +55,9 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
+      </concept>
       <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt" />
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
@@ -88,10 +91,10 @@
       <concept id="806329106163335739" name="org.iets3.core.attributes.structure.AttributeContainer" flags="ng" index="33R2CR">
         <child id="806329106163335756" name="nestedAttributes" index="33R2D0" />
       </concept>
-      <concept id="4388710048722005709" name="org.iets3.core.attributes.structure.IAttributed" flags="ng" index="18DfD4">
+      <concept id="4388710048722005709" name="org.iets3.core.attributes.structure.IAttributed" flags="ngI" index="18DfD4">
         <child id="4388710048722005710" name="attributes" index="18DfD7" />
       </concept>
-      <concept id="4886573260946228671" name="org.iets3.core.attributes.structure.IAttributeWithContext" flags="ng" index="3ojXR2">
+      <concept id="4886573260946228671" name="org.iets3.core.attributes.structure.IAttributeWithContext" flags="ngI" index="3ojXR2">
         <child id="4886573260946228672" name="ctx" index="3ojXQX" />
       </concept>
       <concept id="4886573260947348600" name="org.iets3.core.attributes.structure.EmptyAttribute" flags="ng" index="3oocg5" />
@@ -128,7 +131,6 @@
       </concept>
       <concept id="229512757699544987" name="org.iets3.components.core.structure.Parameter" flags="ng" index="pdmcS">
         <child id="229512757699544992" name="defaultValue" index="pdmc3" />
-        <child id="229512757699544990" name="type" index="pdmcX" />
       </concept>
       <concept id="8209493818901074928" name="org.iets3.components.core.structure.InlineComponentInstance" flags="ng" index="2sGezh">
         <child id="8209493818901074929" name="component" index="2sGezg" />
@@ -164,7 +166,7 @@
         <reference id="7804632404593436655" name="ref" index="1i1fwX" />
       </concept>
       <concept id="7804632404593342574" name="org.iets3.components.core.structure.EmptyComponentsChunkContent" flags="ng" index="1i1AuW" />
-      <concept id="7804632404593342035" name="org.iets3.components.core.structure.IComponentsChunkContent" flags="ng" index="1i1AA1">
+      <concept id="7804632404593342035" name="org.iets3.components.core.structure.IComponentsChunkContent" flags="ngI" index="1i1AA1">
         <property id="6142232665969969516" name="public" index="13Nl5X" />
       </concept>
       <concept id="7804632404593341326" name="org.iets3.components.core.structure.ComponentsChunk" flags="ng" index="1i1ALs">
@@ -197,7 +199,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -233,7 +235,7 @@
       <concept id="4773799153887154601" name="test.iest3.component.attribute.structure.TestConnectorType" flags="ng" index="3IJI2w" />
     </language>
     <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
     </language>
@@ -279,7 +281,7 @@
           <node concept="H_j2F" id="6ip4YniacGl" role="1i1XAe">
             <node concept="pdmcS" id="3QX5db_DWGo" role="H_jLS">
               <property role="TrG5h" value="someParam" />
-              <node concept="mLuIC" id="3QX5db_DWKq" role="pdmcX" />
+              <node concept="mLuIC" id="3QX5db_DWKq" role="2S399n" />
             </node>
           </node>
           <node concept="3oewWw" id="3QX5db_ykt_" role="18DfD7" />
@@ -799,7 +801,7 @@
             </node>
             <node concept="pdmcS" id="AamzMu0_kN" role="H_jLS">
               <property role="TrG5h" value="param" />
-              <node concept="mLuIC" id="AamzMu0_kY" role="pdmcX" />
+              <node concept="mLuIC" id="AamzMu0_kY" role="2S399n" />
             </node>
           </node>
         </node>
@@ -809,10 +811,10 @@
           <node concept="H_j2F" id="5gz2b$a9sF2" role="1i1XAe">
             <node concept="pdmcS" id="5gz2b$a9sG6" role="H_jLS">
               <property role="TrG5h" value="parentParam" />
-              <node concept="mLuIC" id="AamzMtZ_90" role="pdmcX" />
               <node concept="30bXRB" id="AamzMu2NTP" role="pdmc3">
                 <property role="30bXRw" value="11" />
               </node>
+              <node concept="mLuIC" id="AamzMtZ_90" role="2S399n" />
             </node>
           </node>
           <node concept="GnABt" id="77HYM7HSeV$" role="1i1XAe">
@@ -823,7 +825,6 @@
                 <node concept="H_j2F" id="3PhTX5cY6Ds" role="1i1XAe">
                   <node concept="pdmcS" id="4VHfdEqdRsI" role="H_jLS">
                     <property role="TrG5h" value="siblingParam" />
-                    <node concept="mLuIC" id="4VHfdEqdRsV" role="pdmcX" />
                     <node concept="30dDZf" id="2eSxbVAk9PV" role="pdmc3">
                       <node concept="18Ww8V" id="4VHfdEqevBV" role="30dEsF">
                         <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
@@ -832,6 +833,7 @@
                         <property role="30bXRw" value="1" />
                       </node>
                     </node>
+                    <node concept="mLuIC" id="4VHfdEqdRsV" role="2S399n" />
                   </node>
                   <node concept="1i7wMI" id="3PhTX5cY6DE" role="IJpy$">
                     <node concept="3o1koB" id="3PhTX5cY6DD" role="1aMMyH" />
@@ -849,7 +851,6 @@
                       <node concept="H_j2F" id="4VHfdEqevLY" role="1i1XAe">
                         <node concept="pdmcS" id="4VHfdEqevMb" role="H_jLS">
                           <property role="TrG5h" value="nestedInlineParam" />
-                          <node concept="mLuIC" id="4VHfdEqevMo" role="pdmcX" />
                           <node concept="30dDZf" id="2eSxbVAk9f$" role="pdmc3">
                             <node concept="18Ww8V" id="4VHfdEqevN4" role="30dEsF">
                               <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
@@ -858,6 +859,7 @@
                               <ref role="18Ww8U" node="4VHfdEqdRsI" resolve="siblingParam" />
                             </node>
                           </node>
+                          <node concept="mLuIC" id="4VHfdEqevMo" role="2S399n" />
                         </node>
                       </node>
                     </node>
@@ -872,7 +874,6 @@
                 <node concept="H_j2F" id="77HYM7HCYNm" role="1i1XAe">
                   <node concept="pdmcS" id="77HYM7HCYNt" role="H_jLS">
                     <property role="TrG5h" value="testParam" />
-                    <node concept="mLuIC" id="77HYM7HShMo" role="pdmcX" />
                     <node concept="30dDTi" id="4VHfdEqdQME" role="pdmc3">
                       <node concept="18Ww8V" id="4VHfdEqe$FO" role="30dEsF">
                         <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
@@ -881,6 +882,7 @@
                         <property role="30bXRw" value="2" />
                       </node>
                     </node>
+                    <node concept="mLuIC" id="77HYM7HShMo" role="2S399n" />
                   </node>
                   <node concept="1i7wMI" id="3PhTX5cY6BN" role="IJo7D">
                     <node concept="3o5llK" id="3PhTX5cY6BM" role="1aMMyH" />

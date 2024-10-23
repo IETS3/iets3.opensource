@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="tuf9" ref="r:7f8b53fb-2dfc-4e51-940a-0573ffa4389c(org.iets3.glossary.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="d2dp" ref="r:0aa8695b-11e3-4073-96f4-8de933b07e8c(org.iets3.glossary.behavior)" implicit="true" />
   </imports>
@@ -25,6 +26,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -47,7 +51,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -57,6 +60,7 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -207,35 +211,6 @@
           <node concept="3clFbJ" id="6zaFu4oSdrF" role="3cqZAp">
             <node concept="3clFbS" id="6zaFu4oSdrH" role="3clFbx">
               <node concept="a7r0C" id="6zaFu4oSj3_" role="3cqZAp">
-                <node concept="3cpWs3" id="6zaFu4oSj76" role="a7wSD">
-                  <node concept="2OqwBi" id="6zaFu4oSjae" role="3uHU7w">
-                    <node concept="37vLTw" id="6zaFu4oSj7d" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6zaFu4oSdoU" resolve="other" />
-                    </node>
-                    <node concept="3TrcHB" id="6zaFu4oSjg0" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
-                  </node>
-                  <node concept="3cpWs3" id="6zaFu4oSmDU" role="3uHU7B">
-                    <node concept="Xl_RD" id="6zaFu4oSmDX" role="3uHU7w">
-                      <property role="Xl_RC" value=" back reference in " />
-                    </node>
-                    <node concept="3cpWs3" id="6zaFu4oSlM1" role="3uHU7B">
-                      <node concept="Xl_RD" id="6zaFu4oSj47" role="3uHU7B">
-                        <property role="Xl_RC" value="There should be " />
-                      </node>
-                      <node concept="2OqwBi" id="6zaFu4oSmeK" role="3uHU7w">
-                        <node concept="2OqwBi" id="6zaFu4oSlOG" role="2Oq$k0">
-                          <node concept="1YBJjd" id="6zaFu4oSlM8" role="2Oq$k0">
-                            <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
-                          </node>
-                          <node concept="2yIwOk" id="6zaFu4oSm3A" role="2OqNvi" />
-                        </node>
-                        <node concept="3n3YKJ" id="6zaFu4oSmrr" role="2OqNvi" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="1YBJjd" id="6zaFu4oSjj1" role="1urrMF">
                   <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
                 </node>
@@ -254,37 +229,32 @@
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="a7r0C" id="6zaFu4oSjkE" role="3cqZAp">
-                <node concept="3cpWs3" id="6zaFu4oSkTV" role="a7wSD">
-                  <node concept="2OqwBi" id="6zaFu4oSl8E" role="3uHU7w">
-                    <node concept="37vLTw" id="6zaFu4oSl27" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6zaFu4oShsv" resolve="currentTerm" />
+                <node concept="2YIFZM" id="3eH6BL4fPCi" role="a7wSD">
+                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                  <node concept="Xl_RD" id="3eH6BL4fPCj" role="37wK5m">
+                    <property role="Xl_RC" value="There should be a ‹%s› back reference in ‹%s›" />
+                  </node>
+                  <node concept="2OqwBi" id="3eH6BL4fRL2" role="37wK5m">
+                    <node concept="2OqwBi" id="3eH6BL4fPZ9" role="2Oq$k0">
+                      <node concept="1YBJjd" id="3eH6BL4fPLj" role="2Oq$k0">
+                        <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
+                      </node>
+                      <node concept="2yIwOk" id="3eH6BL4fQIe" role="2OqNvi" />
                     </node>
-                    <node concept="3TrcHB" id="6zaFu4oSlwK" role="2OqNvi">
+                    <node concept="3n3YKJ" id="3eH6BL4fSdy" role="2OqNvi" />
+                  </node>
+                  <node concept="2OqwBi" id="3eH6BL4fTcL" role="37wK5m">
+                    <node concept="37vLTw" id="3eH6BL4fST9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6zaFu4oSdoU" resolve="other" />
+                    </node>
+                    <node concept="3TrcHB" id="3eH6BL4fT_O" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
-                  <node concept="3cpWs3" id="6zaFu4oSjkG" role="3uHU7B">
-                    <node concept="3cpWs3" id="6zaFu4oSj_0" role="3uHU7B">
-                      <node concept="2OqwBi" id="6zaFu4oSk1K" role="3uHU7w">
-                        <node concept="2OqwBi" id="6zaFu4oSjGc" role="2Oq$k0">
-                          <node concept="1YBJjd" id="6zaFu4oSjDE" role="2Oq$k0">
-                            <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
-                          </node>
-                          <node concept="2yIwOk" id="6zaFu4oSjRa" role="2OqNvi" />
-                        </node>
-                        <node concept="3n3YKJ" id="6zaFu4oSkdQ" role="2OqNvi" />
-                      </node>
-                      <node concept="Xl_RD" id="6zaFu4oSjkK" role="3uHU7B">
-                        <property role="Xl_RC" value="There should be an attribute of type " />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="6zaFu4oSktn" role="3uHU7w">
-                      <property role="Xl_RC" value=" that points to " />
-                    </node>
-                  </node>
                 </node>
+              </node>
+              <node concept="a7r0C" id="6zaFu4oSjkE" role="3cqZAp">
                 <node concept="37vLTw" id="6zaFu4oSn1F" role="1urrMF">
                   <ref role="3cqZAo" node="6zaFu4oSdoU" resolve="other" />
                 </node>
@@ -300,6 +270,30 @@
                     <ref role="QkamJ" node="6zaFu4oSv2T" resolve="theOneThatMissesIt" />
                     <node concept="37vLTw" id="6zaFu4oSxO9" role="3CoRuB">
                       <ref role="3cqZAo" node="6zaFu4oSdoU" resolve="other" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="3eH6BL4fUjQ" role="a7wSD">
+                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                  <node concept="Xl_RD" id="3eH6BL4fUrI" role="37wK5m">
+                    <property role="Xl_RC" value="There should be an attribute of type ‹%s› that points to ‹%s›" />
+                  </node>
+                  <node concept="2OqwBi" id="3eH6BL4fUDF" role="37wK5m">
+                    <node concept="2OqwBi" id="3eH6BL4fUDG" role="2Oq$k0">
+                      <node concept="1YBJjd" id="3eH6BL4fUDH" role="2Oq$k0">
+                        <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
+                      </node>
+                      <node concept="2yIwOk" id="3eH6BL4fUDI" role="2OqNvi" />
+                    </node>
+                    <node concept="3n3YKJ" id="3eH6BL4fUDJ" role="2OqNvi" />
+                  </node>
+                  <node concept="2OqwBi" id="3eH6BL4fUQ5" role="37wK5m">
+                    <node concept="37vLTw" id="3eH6BL4fUEZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6zaFu4oShsv" resolve="currentTerm" />
+                    </node>
+                    <node concept="3TrcHB" id="3eH6BL4fV7r" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
                 </node>

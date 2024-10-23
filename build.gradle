@@ -57,11 +57,10 @@ def major = "2023"
 def minor = "2"
 
 // Dependency versions
-
 ext.mpsVersion = '2023.2.1'
-def mpsQAVersion = "$major.$minor+"
-def mbeddrVersion = "2023.2+"
 
+def mbeddrVersion = "2023.2+"
+def mpsQAVersion = "$major.$minor+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can

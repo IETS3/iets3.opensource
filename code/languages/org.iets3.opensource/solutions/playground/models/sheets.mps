@@ -2,7 +2,7 @@
 <model ref="r:c26f3707-1ecb-413e-ba84-cd641318e760(playground.sheets)">
   <persistence version="9" />
   <languages>
-    <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="0" />
+    <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="1" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports />
@@ -201,7 +201,6 @@
       </concept>
       <concept id="4139771920858269574" name="org.iets3.core.expr.repl.structure.CellConstraintIt" flags="ng" index="3g_UGA" />
       <concept id="4139771920858263103" name="org.iets3.core.expr.repl.structure.CellConstraint" flags="ng" index="3g_Wav">
-        <child id="4139771920858263104" name="type" index="3g_Wbw" />
         <child id="4139771920858263106" name="constraint" index="3g_Wby" />
       </concept>
       <concept id="4139771920862372717" name="org.iets3.core.expr.repl.structure.FontBoldStyle" flags="ng" index="3jk0Zd" />
@@ -3393,33 +3392,33 @@
           </node>
           <node concept="33c$z$" id="7HzLUeHBcfT" role="33dGG4">
             <node concept="3g_Wav" id="7HzLUeHCOiC" role="3g_T$e">
-              <node concept="mLuIC" id="7HzLUeHCOnv" role="3g_Wbw">
-                <node concept="2gteSW" id="7HzLUeHCOnD" role="2gteSx">
-                  <property role="2gteSQ" value="0" />
-                  <property role="2gteSD" value="10" />
-                </node>
-              </node>
               <node concept="30d7iD" id="7HzLUeHCOoI" role="3g_Wby">
                 <node concept="330lDZ" id="7HzLUeHCOp9" role="30dEs_">
                   <property role="TF9X8" value="d" />
                 </node>
                 <node concept="3g_UGA" id="7HzLUeHCOou" role="30dEsF" />
               </node>
-            </node>
-          </node>
-          <node concept="33c$z$" id="7HzLUeHBcfU" role="33dGG4">
-            <node concept="3g_Wav" id="7HzLUeHEgXd" role="3g_T$e">
-              <node concept="mLuIC" id="7HzLUeHEgXc" role="3g_Wbw">
-                <node concept="2gteSW" id="7HzLUeHEgXQ" role="2gteSx">
+              <node concept="mLuIC" id="7HzLUeHCOnv" role="2S399n">
+                <node concept="2gteSW" id="7HzLUeHCOnD" role="2gteSx">
                   <property role="2gteSQ" value="0" />
                   <property role="2gteSD" value="10" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="33c$z$" id="7HzLUeHBcfU" role="33dGG4">
+            <node concept="3g_Wav" id="7HzLUeHEgXd" role="3g_T$e">
               <node concept="30d6GI" id="7HzLUeHEh1i" role="3g_Wby">
                 <node concept="330lDZ" id="7HzLUeHEh2n" role="30dEs_">
                   <property role="TF9X8" value="u" />
                 </node>
                 <node concept="3g_UGA" id="7HzLUeHEh0n" role="30dEsF" />
+              </node>
+              <node concept="mLuIC" id="7HzLUeHEgXc" role="2S399n">
+                <node concept="2gteSW" id="7HzLUeHEgXQ" role="2gteSx">
+                  <property role="2gteSQ" value="0" />
+                  <property role="2gteSD" value="10" />
+                </node>
               </node>
             </node>
           </node>
@@ -3500,17 +3499,17 @@
           </node>
           <node concept="33c$z$" id="4ssCghWx0UX" role="33dGG4">
             <node concept="3g_Wav" id="4ssCghWx0UY" role="3g_T$e">
-              <node concept="mLuIC" id="4ssCghWx0UZ" role="3g_Wbw">
-                <node concept="2gteSW" id="4ssCghWx0V0" role="2gteSx">
-                  <property role="2gteSQ" value="0" />
-                  <property role="2gteSD" value="10" />
-                </node>
-              </node>
               <node concept="30d7iD" id="4ssCghWx0V1" role="3g_Wby">
                 <node concept="330lDZ" id="4ssCghWx0V2" role="30dEs_">
                   <property role="TF9X8" value="d" />
                 </node>
                 <node concept="3g_UGA" id="4ssCghWx0V3" role="30dEsF" />
+              </node>
+              <node concept="mLuIC" id="4ssCghWx0UZ" role="2S399n">
+                <node concept="2gteSW" id="4ssCghWx0V0" role="2gteSx">
+                  <property role="2gteSQ" value="0" />
+                  <property role="2gteSD" value="10" />
+                </node>
               </node>
             </node>
             <node concept="30bXRB" id="4ssCghWx0Z_" role="33cOLO">
@@ -3519,17 +3518,17 @@
           </node>
           <node concept="33c$z$" id="4ssCghWx0V4" role="33dGG4">
             <node concept="3g_Wav" id="4ssCghWx0V5" role="3g_T$e">
-              <node concept="mLuIC" id="4ssCghWx0V6" role="3g_Wbw">
-                <node concept="2gteSW" id="4ssCghWx0V7" role="2gteSx">
-                  <property role="2gteSQ" value="0" />
-                  <property role="2gteSD" value="10" />
-                </node>
-              </node>
               <node concept="30d6GI" id="4ssCghWx0V8" role="3g_Wby">
                 <node concept="330lDZ" id="4ssCghWx0V9" role="30dEs_">
                   <property role="TF9X8" value="u" />
                 </node>
                 <node concept="3g_UGA" id="4ssCghWx0Va" role="30dEsF" />
+              </node>
+              <node concept="mLuIC" id="4ssCghWx0V6" role="2S399n">
+                <node concept="2gteSW" id="4ssCghWx0V7" role="2gteSx">
+                  <property role="2gteSQ" value="0" />
+                  <property role="2gteSD" value="10" />
+                </node>
               </node>
             </node>
             <node concept="30bXRB" id="4ssCghWx12o" role="33cOLO">
@@ -3615,17 +3614,17 @@
           </node>
           <node concept="33c$z$" id="7HzLUeHEiEn" role="33dGG4">
             <node concept="3g_Wav" id="7HzLUeHEiEo" role="3g_T$e">
-              <node concept="mLuIC" id="7HzLUeHEiEp" role="3g_Wbw">
-                <node concept="2gteSW" id="7HzLUeHEiEq" role="2gteSx">
-                  <property role="2gteSQ" value="0" />
-                  <property role="2gteSD" value="10" />
-                </node>
-              </node>
               <node concept="30d7iD" id="7HzLUeHEiEr" role="3g_Wby">
                 <node concept="330lDZ" id="7HzLUeHEiEs" role="30dEs_">
                   <property role="TF9X8" value="d" />
                 </node>
                 <node concept="3g_UGA" id="7HzLUeHEiEt" role="30dEsF" />
+              </node>
+              <node concept="mLuIC" id="7HzLUeHEiEp" role="2S399n">
+                <node concept="2gteSW" id="7HzLUeHEiEq" role="2gteSx">
+                  <property role="2gteSQ" value="0" />
+                  <property role="2gteSD" value="10" />
+                </node>
               </node>
             </node>
             <node concept="30bXRB" id="7HzLUeHEiIo" role="33cOLO">
@@ -3634,17 +3633,17 @@
           </node>
           <node concept="33c$z$" id="7HzLUeHEiEu" role="33dGG4">
             <node concept="3g_Wav" id="7HzLUeHEiEv" role="3g_T$e">
-              <node concept="mLuIC" id="7HzLUeHEiEw" role="3g_Wbw">
-                <node concept="2gteSW" id="7HzLUeHEiEx" role="2gteSx">
-                  <property role="2gteSQ" value="0" />
-                  <property role="2gteSD" value="10" />
-                </node>
-              </node>
               <node concept="30d6GI" id="7HzLUeHEiEy" role="3g_Wby">
                 <node concept="330lDZ" id="7HzLUeHEiEz" role="30dEs_">
                   <property role="TF9X8" value="u" />
                 </node>
                 <node concept="3g_UGA" id="7HzLUeHEiE$" role="30dEsF" />
+              </node>
+              <node concept="mLuIC" id="7HzLUeHEiEw" role="2S399n">
+                <node concept="2gteSW" id="7HzLUeHEiEx" role="2gteSx">
+                  <property role="2gteSQ" value="0" />
+                  <property role="2gteSD" value="10" />
+                </node>
               </node>
             </node>
             <node concept="30bXRB" id="7HzLUeHEiKO" role="33cOLO">
@@ -3730,17 +3729,17 @@
           </node>
           <node concept="33c$z$" id="7HzLUeHENDe" role="33dGG4">
             <node concept="3g_Wav" id="7HzLUeHENDf" role="3g_T$e">
-              <node concept="mLuIC" id="7HzLUeHENDg" role="3g_Wbw">
-                <node concept="2gteSW" id="7HzLUeHENDh" role="2gteSx">
-                  <property role="2gteSQ" value="0" />
-                  <property role="2gteSD" value="10" />
-                </node>
-              </node>
               <node concept="30d7iD" id="7HzLUeHENDi" role="3g_Wby">
                 <node concept="330lDZ" id="7HzLUeHENDj" role="30dEs_">
                   <property role="TF9X8" value="d" />
                 </node>
                 <node concept="3g_UGA" id="7HzLUeHENDk" role="30dEsF" />
+              </node>
+              <node concept="mLuIC" id="7HzLUeHENDg" role="2S399n">
+                <node concept="2gteSW" id="7HzLUeHENDh" role="2gteSx">
+                  <property role="2gteSQ" value="0" />
+                  <property role="2gteSD" value="10" />
+                </node>
               </node>
             </node>
             <node concept="30bXRB" id="7HzLUeHENHB" role="33cOLO">
@@ -3749,17 +3748,17 @@
           </node>
           <node concept="33c$z$" id="7HzLUeHENDl" role="33dGG4">
             <node concept="3g_Wav" id="7HzLUeHENDm" role="3g_T$e">
-              <node concept="mLuIC" id="7HzLUeHENDn" role="3g_Wbw">
-                <node concept="2gteSW" id="7HzLUeHENDo" role="2gteSx">
-                  <property role="2gteSQ" value="0" />
-                  <property role="2gteSD" value="10" />
-                </node>
-              </node>
               <node concept="30d6GI" id="7HzLUeHENDp" role="3g_Wby">
                 <node concept="330lDZ" id="7HzLUeHENDq" role="30dEs_">
                   <property role="TF9X8" value="u" />
                 </node>
                 <node concept="3g_UGA" id="7HzLUeHENDr" role="30dEsF" />
+              </node>
+              <node concept="mLuIC" id="7HzLUeHENDn" role="2S399n">
+                <node concept="2gteSW" id="7HzLUeHENDo" role="2gteSx">
+                  <property role="2gteSQ" value="0" />
+                  <property role="2gteSD" value="10" />
+                </node>
               </node>
             </node>
             <node concept="30bXRB" id="7HzLUeHEOkA" role="33cOLO">

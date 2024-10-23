@@ -97,7 +97,6 @@
         <child id="3281846772293355657" name="expectedType" index="1KhrV9" />
       </concept>
       <concept id="5955298286257997823" name="org.iets3.core.expr.base.structure.ColonCast" flags="ng" index="1LgZZ2">
-        <child id="5955298286257997833" name="type" index="1LgZ0O" />
         <child id="5955298286257997830" name="expr" index="1LgZ0V" />
       </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
@@ -460,14 +459,14 @@
           <property role="30bXRw" value="5" />
         </node>
         <node concept="1LgZZ2" id="620LAS5Pf2G" role="_fkuY">
-          <node concept="mLuIC" id="620LAS5Pf3m" role="1LgZ0O">
+          <node concept="30bXRB" id="620LAS5Pf2q" role="1LgZ0V">
+            <property role="30bXRw" value="5" />
+          </node>
+          <node concept="mLuIC" id="620LAS5Pf3m" role="2S399n">
             <node concept="2gteSW" id="mhgVwx41el" role="2gteSx">
               <property role="2gteSQ" value="5" />
               <property role="2gteSD" value="5" />
             </node>
-          </node>
-          <node concept="30bXRB" id="620LAS5Pf2q" role="1LgZ0V">
-            <property role="30bXRw" value="5" />
           </node>
         </node>
       </node>
@@ -483,11 +482,11 @@
       </node>
       <node concept="mXNUv" id="620LAS5Pf3x" role="_fkp5">
         <node concept="1LgZZ2" id="620LAS5Pf7C" role="mXJVd">
-          <node concept="1WbbFT" id="620LAS5Pf8i" role="1LgZ0O">
-            <ref role="1WbbFS" node="6iJ_gQCf1rx" resolve="oneTwoOrThree" />
-          </node>
           <node concept="30bXRB" id="620LAS5Pf4l" role="1LgZ0V">
             <property role="30bXRw" value="5" />
+          </node>
+          <node concept="1WbbFT" id="620LAS5Pf8i" role="2S399n">
+            <ref role="1WbbFS" node="6iJ_gQCf1rx" resolve="oneTwoOrThree" />
           </node>
         </node>
       </node>
