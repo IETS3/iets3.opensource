@@ -9,6 +9,7 @@
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" />
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" implicit="true" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -111,7 +112,7 @@
           <node concept="3cpWsn" id="7wjZwvOaSeT" role="3cpWs9">
             <property role="TrG5h" value="executeTest" />
             <node concept="3uibUv" id="7wjZwvOaSeP" role="1tU5fm">
-              <ref role="3uigEE" to="xk6s:ub9nkyOIeW" resolve="EvalResult" />
+              <ref role="3uigEE" to="xk6s:7LZDtvgGNLS" resolve="IEvalResult" />
             </node>
             <node concept="2OqwBi" id="7wjZwvOaSeU" role="33vP2m">
               <node concept="37vLTw" id="7wjZwvOaSeV" role="2Oq$k0">
@@ -133,7 +134,7 @@
                       <ref role="3cqZAo" node="7wjZwvOaSeT" resolve="executeTest" />
                     </node>
                     <node concept="liA8E" id="7wjZwvOaTQc" role="2OqNvi">
-                      <ref role="37wK5l" to="xk6s:ub9nkyPUM2" resolve="getErrorMessage" />
+                      <ref role="37wK5l" to="xk6s:7LZDtvgPNBR" resolve="getErrorMessage" />
                     </node>
                   </node>
                   <node concept="liA8E" id="2LEfNl_JZko" role="2OqNvi">
@@ -149,7 +150,7 @@
                 <ref role="3cqZAo" node="7wjZwvOaSeT" resolve="executeTest" />
               </node>
               <node concept="liA8E" id="7wjZwvOaToa" role="2OqNvi">
-                <ref role="37wK5l" to="xk6s:ub9nkyPULV" resolve="isOk" />
+                <ref role="37wK5l" to="gdgh:5zG5$Lyex2e" resolve="isOk" />
               </node>
             </node>
           </node>

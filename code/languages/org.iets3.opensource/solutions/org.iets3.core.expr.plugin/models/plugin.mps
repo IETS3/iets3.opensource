@@ -2451,8 +2451,8 @@
         </node>
         <node concept="3clFbF" id="1m$qA_Y$P3O" role="3cqZAp">
           <node concept="2YIFZM" id="1m$qA_Y_fqV" role="3clFbG">
-            <ref role="37wK5l" to="pbu6:1m$qA_Y$USd" resolve="hasData" />
-            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+            <ref role="37wK5l" to="pbu6:7LZDtvhyM3$" resolve="hasData" />
+            <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
           </node>
         </node>
       </node>
