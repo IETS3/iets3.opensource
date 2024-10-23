@@ -6013,12 +6013,8 @@
                     <node concept="2OqwBi" id="ijdpu3iMyn" role="2Oq$k0">
                       <node concept="liA8E" id="ijdpu3iN3s" role="2OqNvi">
                         <ref role="37wK5l" to="xlxw:~BigDecimal.multiply(java.math.BigDecimal)" resolve="multiply" />
-                        <node concept="2YIFZM" id="ijdpu3iOM3" role="37wK5m">
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(double)" resolve="valueOf" />
-                          <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-                          <node concept="37vLTw" id="ijdpu3iPlv" role="37wK5m">
-                            <ref role="3cqZAo" node="ijdpu3aPss" resolve="value" />
-                          </node>
+                        <node concept="37vLTw" id="57Dr2jFHtj7" role="37wK5m">
+                          <ref role="3cqZAo" node="ijdpu3aPss" resolve="value" />
                         </node>
                       </node>
                       <node concept="2ShNRf" id="ijdpu3jihm" role="2Oq$k0">
@@ -6074,12 +6070,8 @@
                     <node concept="2OqwBi" id="ijdpu3j93U" role="2Oq$k0">
                       <node concept="liA8E" id="ijdpu3j93Z" role="2OqNvi">
                         <ref role="37wK5l" to="xlxw:~BigDecimal.multiply(java.math.BigDecimal)" resolve="multiply" />
-                        <node concept="2YIFZM" id="ijdpu3j940" role="37wK5m">
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(double)" resolve="valueOf" />
-                          <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-                          <node concept="37vLTw" id="ijdpu3j941" role="37wK5m">
-                            <ref role="3cqZAo" node="ijdpu3aPss" resolve="value" />
-                          </node>
+                        <node concept="37vLTw" id="57Dr2jFHtuQ" role="37wK5m">
+                          <ref role="3cqZAo" node="ijdpu3aPss" resolve="value" />
                         </node>
                       </node>
                       <node concept="2ShNRf" id="ijdpu3jl8U" role="2Oq$k0">
@@ -6110,7 +6102,9 @@
       </node>
       <node concept="37vLTG" id="ijdpu3aPss" role="3clF46">
         <property role="TrG5h" value="value" />
-        <node concept="10P55v" id="ijdpu3iPKH" role="1tU5fm" />
+        <node concept="3uibUv" id="57Dr2jFHsJZ" role="1tU5fm">
+          <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+        </node>
       </node>
     </node>
   </node>
