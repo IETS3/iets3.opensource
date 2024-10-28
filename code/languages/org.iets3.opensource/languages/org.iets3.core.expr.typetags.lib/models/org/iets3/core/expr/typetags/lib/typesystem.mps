@@ -109,6 +109,7 @@
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
+      <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -146,23 +147,23 @@
   <node concept="1YbPZF" id="1xEzHAktRKd">
     <property role="TrG5h" value="typeof_TaintExpression" />
     <node concept="3clFbS" id="1xEzHAktRKe" role="18ibNy">
-      <node concept="1Z5TYs" id="6KxoTHgIOLy" role="3cqZAp">
-        <node concept="mw_s8" id="6KxoTHgIPW8" role="1ZfhKB">
-          <node concept="2YIFZM" id="5wDe8wA6zrO" role="mwGJk">
-            <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
-            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="6KxoTHgIOL_" role="1ZfhK$">
-          <node concept="1Z2H0r" id="6KxoTHgIOv9" role="mwGJk">
-            <node concept="2OqwBi" id="6KxoTHgIO$H" role="1Z2MuG">
-              <node concept="1YBJjd" id="6KxoTHgIOxQ" role="2Oq$k0">
+      <node concept="1ZobV4" id="hTGlT9G23K" role="3cqZAp">
+        <node concept="mw_s8" id="hTGlT9G23O" role="1ZfhK$">
+          <node concept="1Z2H0r" id="hTGlT9G23P" role="mwGJk">
+            <node concept="2OqwBi" id="hTGlT9G23Q" role="1Z2MuG">
+              <node concept="1YBJjd" id="hTGlT9G23R" role="2Oq$k0">
                 <ref role="1YBMHb" node="1xEzHAktRKg" resolve="expression" />
               </node>
-              <node concept="3TrEf2" id="6KxoTHgIOHD" role="2OqNvi">
+              <node concept="3TrEf2" id="hTGlT9G23S" role="2OqNvi">
                 <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="hTGlT9G23M" role="1ZfhKB">
+          <node concept="2YIFZM" id="hTGlT9G23N" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
           </node>
         </node>
       </node>
