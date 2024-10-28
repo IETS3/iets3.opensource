@@ -4107,16 +4107,10 @@
     <property role="TrG5h" value="selectAllTraceNodeInCurrentTrace" />
     <property role="2uzpH1" value="Trace: select all traces of this node" />
     <property role="3GE5qa" value="actions" />
-    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="4yQfyMjvYR8" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4yQfyMjvYR9" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="4yQfyMjvYRa" role="1NuT2Z">
-      <property role="TrG5h" value="mpsProject" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
-      <node concept="1oajcY" id="4yQfyMjvYRb" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="4yQfyMjvYRc" role="1NuT2Z">
       <property role="TrG5h" value="someNode" />
@@ -4221,7 +4215,6 @@
     <property role="TrG5h" value="selectNextTraceNodeAndInspectSource" />
     <property role="2uzpH1" value="Trace: select next trace and inspect source" />
     <property role="3GE5qa" value="actions" />
-    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="2JfTTG8itTU" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -4327,7 +4320,6 @@
     <property role="TrG5h" value="selectNextTraceNodeInCurrentTrace" />
     <property role="2uzpH1" value="Trace: select next trace of this node" />
     <property role="3GE5qa" value="actions" />
-    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="4yQfyMjrpAi" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
