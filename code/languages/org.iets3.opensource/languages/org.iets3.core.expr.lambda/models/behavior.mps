@@ -3383,9 +3383,7 @@
       </node>
       <node concept="37vLTG" id="ZYPG76BgMI" role="3clF46">
         <property role="TrG5h" value="expectedType" />
-        <node concept="3Tqbb2" id="ZYPG76BgMJ" role="1tU5fm">
-          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
-        </node>
+        <node concept="3Tqbb2" id="ZYPG76BgMJ" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="ZYPG76BgMK" role="3clF46">
         <property role="TrG5h" value="actualType" />
@@ -5663,15 +5661,11 @@
       </node>
       <node concept="37vLTG" id="ZYPG76Nzqw" role="3clF46">
         <property role="TrG5h" value="expectedType" />
-        <node concept="3Tqbb2" id="ZYPG76Nzqx" role="1tU5fm">
-          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
-        </node>
+        <node concept="3Tqbb2" id="ZYPG76Nzqx" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="ZYPG76Nzqy" role="3clF46">
         <property role="TrG5h" value="actualType" />
-        <node concept="3Tqbb2" id="ZYPG76Nzqz" role="1tU5fm">
-          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
-        </node>
+        <node concept="3Tqbb2" id="ZYPG76Nzqz" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="ZYPG76Nzq$" role="3clF45" />
     </node>
