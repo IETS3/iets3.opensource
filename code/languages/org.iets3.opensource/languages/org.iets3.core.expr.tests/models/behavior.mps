@@ -353,6 +353,12 @@
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
         <child id="4705942098322609813" name="member" index="21noJM" />
@@ -2699,7 +2705,24 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbS" id="ib70fppyXq" role="1zc67A" />
+                <node concept="3clFbS" id="ib70fppyXq" role="1zc67A">
+                  <node concept="RRSsy" id="7_oyLBUXCuv" role="3cqZAp">
+                    <property role="RRSoG" value="gZ5fh_4/error" />
+                    <node concept="3cpWs3" id="7_oyLBUXGCZ" role="RRSoy">
+                      <node concept="Xl_RD" id="7_oyLBUXGD2" role="3uHU7w">
+                        <property role="Xl_RC" value=" couldn't be loaded" />
+                      </node>
+                      <node concept="3cpWs3" id="7_oyLBUXDRj" role="3uHU7B">
+                        <node concept="Xl_RD" id="7_oyLBUXCux" role="3uHU7B">
+                          <property role="Xl_RC" value="Generator test " />
+                        </node>
+                        <node concept="37vLTw" id="7_oyLBUXFOL" role="3uHU7w">
+                          <ref role="3cqZAo" node="ib70fppmDS" resolve="generatorTest" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="3clFbS" id="ib70fppyOe" role="1zxBo7">
                 <node concept="3clFbF" id="ib70fpp$lV" role="3cqZAp">
