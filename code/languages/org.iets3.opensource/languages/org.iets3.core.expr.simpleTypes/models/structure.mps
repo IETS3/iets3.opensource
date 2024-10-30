@@ -158,12 +158,6 @@
     <property role="EcuMT" value="5115872837157252551" />
     <property role="R4oN_" value="a sequence of characters type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
-    <node concept="1TJgyj" id="7J8ctKuJsiI" role="1TKVEi">
-      <property role="IQ2ns" value="8919433883485586606" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="constraint" />
-      <ref role="20lvS9" to="tpfo:h5OC6VX" resolve="Regexp" />
-    </node>
     <node concept="PrWs8" id="60Qa1k_vswP" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
@@ -516,6 +510,21 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2xPWNWpoRmG">
+    <property role="TrG5h" value="StringTypeWithConstraint" />
+    <property role="34LRSv" value="string" />
+    <property role="3GE5qa" value="string" />
+    <property role="EcuMT" value="2915503786126701996" />
+    <property role="R4oN_" value="a sequence of characters type with a constraint" />
+    <ref role="1TJDcQ" node="4rZeNQ6OYR7" resolve="StringType" />
+    <node concept="1TJgyj" id="2xPWNWprAOp" role="1TKVEi">
+      <property role="IQ2ns" value="8919433883485586606" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="constraint" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpfo:h5OC6VX" resolve="Regexp" />
     </node>
   </node>
 </model>

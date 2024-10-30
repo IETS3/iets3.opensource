@@ -7101,6 +7101,7 @@
     <property role="TrG5h" value="SwitchPrimitiveType" />
     <ref role="phYkn" to="rw5i:10wUh3ORqUF" resolve="Type" />
     <node concept="3aamgX" id="2bLbgty8Z8R" role="3aUrZf">
+      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="5qo5:4rZeNQ6OYR7" resolve="StringType" />
       <node concept="1Koe21" id="2oTl_D$0r$1" role="1lVwrX">
         <node concept="3clFb_" id="2oTl_D$0r$h" role="1Koe22">
