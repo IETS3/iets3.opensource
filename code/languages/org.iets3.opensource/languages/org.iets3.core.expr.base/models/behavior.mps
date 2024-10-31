@@ -624,7 +624,6 @@
         <child id="1237731803878" name="copyFrom" index="I$8f6" />
       </concept>
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1205679737078" name="jetbrains.mps.baseLanguage.collections.structure.SortOperation" flags="nn" index="2S7cBI">
         <child id="1205679832066" name="ascending" index="2S7zOq" />
       </concept>
@@ -28528,7 +28527,7 @@
                       <property role="TrG5h" value="propertyRef" />
                       <node concept="2OqwBi" id="2KEzU_jBvMO" role="33vP2m">
                         <node concept="37vLTw" id="2KEzU_jBvMP" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2KEzU_jBsdZ" resolve="it" />
+                          <ref role="3cqZAo" node="2bNJU1c5jbr" resolve="it" />
                         </node>
                         <node concept="2qgKlT" id="2KEzU_jBvMQ" role="2OqNvi">
                           <ref role="37wK5l" node="2KEzU_ju41e" resolve="getPropertyReference" />
@@ -28555,9 +28554,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="2KEzU_jBsdZ" role="1bW2Oz">
+                <node concept="gl6BB" id="2bNJU1c5jbr" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="2KEzU_jBse0" role="1tU5fm" />
+                  <node concept="2jxLKc" id="2bNJU1c5jbs" role="1tU5fm" />
                 </node>
               </node>
             </node>
