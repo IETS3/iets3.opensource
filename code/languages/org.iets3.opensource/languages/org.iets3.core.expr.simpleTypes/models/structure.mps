@@ -12,6 +12,7 @@
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="tpfo" ref="r:00000000-0000-4000-0000-011c89590518(jetbrains.mps.baseLanguage.regexp.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -509,6 +510,21 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2xPWNWpoRmG">
+    <property role="TrG5h" value="StringTypeWithConstraint" />
+    <property role="34LRSv" value="string" />
+    <property role="3GE5qa" value="string" />
+    <property role="EcuMT" value="2915503786126701996" />
+    <property role="R4oN_" value="a sequence of characters type with a constraint" />
+    <ref role="1TJDcQ" node="4rZeNQ6OYR7" resolve="StringType" />
+    <node concept="1TJgyj" id="2xPWNWprAOp" role="1TKVEi">
+      <property role="IQ2ns" value="8919433883485586606" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="constraint" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpfo:h5OC6VX" resolve="Regexp" />
     </node>
   </node>
 </model>
