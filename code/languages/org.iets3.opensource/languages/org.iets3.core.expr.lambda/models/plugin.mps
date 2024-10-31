@@ -1071,8 +1071,8 @@
                           <node concept="3clFbS" id="dsAFRk6CI7" role="1bW5cS">
                             <node concept="3clFbJ" id="dsAFRk6Dl3" role="3cqZAp">
                               <node concept="2YIFZM" id="dsAFRk6Epl" role="3clFbw">
-                                <ref role="37wK5l" to="pbu6:1WlYLwX3McV" resolve="isNodeCovered" />
-                                <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                                <ref role="37wK5l" to="pbu6:7LZDtvhyLWZ" resolve="isNodeCovered" />
+                                <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                                 <node concept="2OqwBi" id="dsAFRk6FhD" role="37wK5m">
                                   <node concept="37vLTw" id="dsAFRk6ESX" role="2Oq$k0">
                                     <ref role="3cqZAo" node="1xunj8akv$b" resolve="mapping" />
@@ -1166,8 +1166,8 @@
                       </node>
                     </node>
                     <node concept="2YIFZM" id="230vOq3ig5I" role="3clFbw">
-                      <ref role="37wK5l" to="pbu6:1WlYLwX3McV" resolve="isNodeCovered" />
-                      <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                      <ref role="37wK5l" to="pbu6:7LZDtvhyLWZ" resolve="isNodeCovered" />
+                      <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                       <node concept="37vLTw" id="230vOq3ig5J" role="37wK5m">
                         <ref role="3cqZAo" node="1xunj8akv$9" resolve="descendant" />
                       </node>

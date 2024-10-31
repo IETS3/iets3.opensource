@@ -3826,8 +3826,8 @@
                     <node concept="3clFbS" id="3$EgSSxSMHY" role="1bW5cS">
                       <node concept="3clFbF" id="3$EgSSxSMHZ" role="3cqZAp">
                         <node concept="2YIFZM" id="3$EgSSxSMI0" role="3clFbG">
-                          <ref role="37wK5l" to="pbu6:1WlYLwX1YJg" resolve="hasNodeCoverage" />
-                          <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                          <ref role="37wK5l" to="pbu6:7LZDtvhyLV6" resolve="hasNodeCoverage" />
+                          <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                           <node concept="37vLTw" id="3$EgSSxSMI1" role="37wK5m">
                             <ref role="3cqZAo" node="4z0AnX8176x" resolve="it" />
                           </node>
@@ -3886,8 +3886,8 @@
             </node>
             <node concept="3fqX7Q" id="3$EgSSxSOF_" role="3uHU7w">
               <node concept="2YIFZM" id="3$EgSSxSOFA" role="3fr31v">
-                <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-                <ref role="37wK5l" to="pbu6:1WlYLwX1YJg" resolve="hasNodeCoverage" />
+                <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
+                <ref role="37wK5l" to="pbu6:7LZDtvhyLV6" resolve="hasNodeCoverage" />
                 <node concept="pncrf" id="3$EgSSxSOFB" role="37wK5m" />
               </node>
             </node>
@@ -3902,8 +3902,8 @@
             </node>
             <node concept="3fqX7Q" id="2udM7u9cReh" role="3eO9$A">
               <node concept="2YIFZM" id="2udM7u9cRej" role="3fr31v">
-                <ref role="37wK5l" to="pbu6:1WlYLwX1YJg" resolve="hasNodeCoverage" />
-                <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                <ref role="37wK5l" to="pbu6:7LZDtvhyLV6" resolve="hasNodeCoverage" />
+                <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                 <node concept="pncrf" id="2udM7u9cRek" role="37wK5m" />
               </node>
             </node>
@@ -4034,8 +4034,8 @@
                     <node concept="3clFbF" id="Om1N8U05qh" role="3cqZAp">
                       <node concept="22lmx$" id="Om1N8UbllL" role="3clFbG">
                         <node concept="2YIFZM" id="Om1N8UbkHT" role="3uHU7w">
-                          <ref role="37wK5l" to="pbu6:1WlYLwX3YKL" resolve="isNodeNotCovered" />
-                          <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                          <ref role="37wK5l" to="pbu6:7LZDtvhyLYH" resolve="isNodeNotCovered" />
+                          <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                           <node concept="37vLTw" id="Om1N8UbkHU" role="37wK5m">
                             <ref role="3cqZAo" node="4z0AnX8176B" resolve="it" />
                           </node>
@@ -4137,8 +4137,8 @@
                 <ref role="3cqZAo" node="5aYhgyhZp46" resolve="topLevelNode" />
               </node>
               <node concept="2YIFZM" id="7RUjcsXhQXs" role="3uHU7w">
-                <ref role="37wK5l" to="pbu6:1WlYLwX3YKL" resolve="isNodeNotCovered" />
-                <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                <ref role="37wK5l" to="pbu6:7LZDtvhyLYH" resolve="isNodeNotCovered" />
+                <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                 <node concept="pncrf" id="7RUjcsXhQXt" role="37wK5m" />
               </node>
             </node>
@@ -4285,8 +4285,8 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="1WlYLwX5dHS" role="3clFbw">
-                  <ref role="37wK5l" to="pbu6:1WlYLwX3McV" resolve="isNodeCovered" />
-                  <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                  <ref role="37wK5l" to="pbu6:7LZDtvhyLWZ" resolve="isNodeCovered" />
+                  <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                   <node concept="pncrf" id="1WlYLwX5dOD" role="37wK5m" />
                 </node>
               </node>
@@ -4309,8 +4309,8 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="1WlYLwX5e5Y" role="3clFbw">
-                  <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-                  <ref role="37wK5l" to="pbu6:1WlYLwX3UOV" resolve="isNodePartiallyCovered" />
+                  <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
+                  <ref role="37wK5l" to="pbu6:7LZDtvhyLXP" resolve="isNodePartiallyCovered" />
                   <node concept="pncrf" id="1WlYLwX5e5Z" role="37wK5m" />
                 </node>
               </node>
@@ -4334,14 +4334,14 @@
                 </node>
                 <node concept="22lmx$" id="3$EgSSxV3uA" role="3clFbw">
                   <node concept="2YIFZM" id="1WlYLwX5elY" role="3uHU7B">
-                    <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-                    <ref role="37wK5l" to="pbu6:1WlYLwX3YKL" resolve="isNodeNotCovered" />
+                    <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
+                    <ref role="37wK5l" to="pbu6:7LZDtvhyLYH" resolve="isNodeNotCovered" />
                     <node concept="pncrf" id="1WlYLwX5elZ" role="37wK5m" />
                   </node>
                   <node concept="3fqX7Q" id="3$EgSSxV3Rx" role="3uHU7w">
                     <node concept="2YIFZM" id="3$EgSSxV3Rz" role="3fr31v">
-                      <ref role="37wK5l" to="pbu6:1WlYLwX1YJg" resolve="hasNodeCoverage" />
-                      <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                      <ref role="37wK5l" to="pbu6:7LZDtvhyLV6" resolve="hasNodeCoverage" />
+                      <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                       <node concept="pncrf" id="3$EgSSxV3R$" role="37wK5m" />
                     </node>
                   </node>
@@ -4457,8 +4457,8 @@
                       </node>
                     </node>
                     <node concept="2YIFZM" id="7MlD5PwD$_V" role="3clFbw">
-                      <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-                      <ref role="37wK5l" to="pbu6:1WlYLwX3YKL" resolve="isNodeNotCovered" />
+                      <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
+                      <ref role="37wK5l" to="pbu6:7LZDtvhyLYH" resolve="isNodeNotCovered" />
                       <node concept="pncrf" id="7MlD5PwD$_W" role="37wK5m" />
                     </node>
                     <node concept="3eNFk2" id="43wAXFoL43k" role="3eNLev">
@@ -4553,8 +4553,8 @@
                         </node>
                       </node>
                       <node concept="2YIFZM" id="43wAXFoL4AI" role="3eO9$A">
-                        <ref role="37wK5l" to="pbu6:1WlYLwX3McV" resolve="isNodeCovered" />
-                        <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                        <ref role="37wK5l" to="pbu6:7LZDtvhyLWZ" resolve="isNodeCovered" />
+                        <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                         <node concept="pncrf" id="43wAXFoL4AJ" role="37wK5m" />
                       </node>
                     </node>
@@ -6177,8 +6177,8 @@
               </node>
               <node concept="3fqX7Q" id="3L1$CQuppL2" role="3clFbw">
                 <node concept="2YIFZM" id="3L1$CQuppL4" role="3fr31v">
-                  <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-                  <ref role="37wK5l" to="pbu6:3L1$CQt_Nrm" resolve="isInInterestingContext" />
+                  <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
+                  <ref role="37wK5l" to="pbu6:7LZDtvhyM1a" resolve="isInInterestingContext" />
                   <node concept="pncrf" id="3L1$CQuppL5" role="37wK5m" />
                 </node>
               </node>
@@ -6190,8 +6190,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="3TIaSh_4nw1" role="3clFbw">
-                <ref role="37wK5l" to="pbu6:3TIaSh_44c0" resolve="isIgnored" />
-                <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                <ref role="37wK5l" to="pbu6:7LZDtvhyM2U" resolve="isIgnored" />
+                <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                 <node concept="pncrf" id="3TIaSh_4nDV" role="37wK5m" />
               </node>
             </node>
@@ -6202,12 +6202,12 @@
                 <node concept="17QB3L" id="3TIaSh$jOMV" role="1tU5fm" />
                 <node concept="2OqwBi" id="3TIaSh$jOMW" role="33vP2m">
                   <node concept="2YIFZM" id="3TIaSh$jOMX" role="2Oq$k0">
-                    <ref role="37wK5l" to="pbu6:5DizcGOb6ar" resolve="getNodeCoverage" />
-                    <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                    <ref role="37wK5l" to="pbu6:7LZDtvhyLVv" resolve="getNodeCoverage" />
+                    <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                     <node concept="pncrf" id="3TIaSh$jOMY" role="37wK5m" />
                   </node>
                   <node concept="liA8E" id="3TIaSh$jOMZ" role="2OqNvi">
-                    <ref role="37wK5l" to="pbu6:5DizcGO8Hdr" resolve="getStatus" />
+                    <ref role="37wK5l" to="pbu6:7LZDtvhDKIP" resolve="getStatus" />
                   </node>
                 </node>
               </node>
@@ -6215,9 +6215,9 @@
             <node concept="3clFbJ" id="3TIaSh$tbAx" role="3cqZAp">
               <node concept="3clFbS" id="3TIaSh$tbAz" role="3clFbx">
                 <node concept="3cpWs6" id="3TIaSh$fnsN" role="3cqZAp">
-                  <node concept="10M0yZ" id="3TIaSh$oXtB" role="3cqZAk">
-                    <ref role="3cqZAo" to="pbu6:3TIaSh$oHVE" resolve="CODE_COVERED_COLOR" />
-                    <ref role="1PxDUh" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                  <node concept="10M0yZ" id="7LZDtvhXjs6" role="3cqZAk">
+                    <ref role="3cqZAo" to="pbu6:7LZDtvhKJP4" resolve="CODE_COVERED_COLOR" />
+                    <ref role="1PxDUh" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                   </node>
                 </node>
               </node>
@@ -6227,18 +6227,18 @@
                 </node>
                 <node concept="liA8E" id="3TIaSh$tc_7" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
-                  <node concept="10M0yZ" id="3TIaSh$tcJM" role="37wK5m">
-                    <ref role="1PxDUh" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-                    <ref role="3cqZAo" to="pbu6:18$bUx5wb58" resolve="COVERED" />
+                  <node concept="10M0yZ" id="7LZDtvhXjWC" role="37wK5m">
+                    <ref role="3cqZAo" to="pbu6:7LZDtvhKJMi" resolve="COVERED" />
+                    <ref role="1PxDUh" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                   </node>
                 </node>
               </node>
               <node concept="3eNFk2" id="3TIaSh$tdm5" role="3eNLev">
                 <node concept="3clFbS" id="3TIaSh$tdm7" role="3eOfB_">
                   <node concept="3cpWs6" id="3TIaSh$fnD3" role="3cqZAp">
-                    <node concept="10M0yZ" id="3TIaSh$oXCR" role="3cqZAk">
-                      <ref role="3cqZAo" to="pbu6:3TIaSh$oHVw" resolve="CODE_PARTIAL_COLOR" />
-                      <ref role="1PxDUh" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                    <node concept="10M0yZ" id="7LZDtvhXks6" role="3cqZAk">
+                      <ref role="3cqZAo" to="pbu6:7LZDtvhKJPm" resolve="CODE_PARTIAL_COLOR" />
+                      <ref role="1PxDUh" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                     </node>
                   </node>
                 </node>
@@ -6248,9 +6248,9 @@
                   </node>
                   <node concept="liA8E" id="3TIaSh$tduR" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
-                    <node concept="10M0yZ" id="3TIaSh$tdGQ" role="37wK5m">
-                      <ref role="3cqZAo" to="pbu6:18$bUx5wdqa" resolve="PARTIAL" />
-                      <ref role="1PxDUh" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                    <node concept="10M0yZ" id="7LZDtvhXkTK" role="37wK5m">
+                      <ref role="3cqZAo" to="pbu6:7LZDtvhKJMq" resolve="PARTIAL" />
+                      <ref role="1PxDUh" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                     </node>
                   </node>
                 </node>
@@ -6258,9 +6258,9 @@
               <node concept="9aQIb" id="3TIaSh$ted6" role="9aQIa">
                 <node concept="3clFbS" id="3TIaSh$ted7" role="9aQI4">
                   <node concept="3cpWs6" id="3TIaSh$fqyx" role="3cqZAp">
-                    <node concept="10M0yZ" id="3TIaSh$oXO7" role="3cqZAk">
-                      <ref role="3cqZAo" to="pbu6:3TIaSh$oHV_" resolve="CODE_MISSING_COLOR" />
-                      <ref role="1PxDUh" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                    <node concept="10M0yZ" id="7LZDtvhXlm2" role="3cqZAk">
+                      <ref role="3cqZAo" to="pbu6:7LZDtvhKJPd" resolve="CODE_MISSING_COLOR" />
+                      <ref role="1PxDUh" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                     </node>
                   </node>
                 </node>
@@ -6463,8 +6463,8 @@
       <node concept="3clFbS" id="43wAXFpMhuS" role="3clF47">
         <node concept="3clFbJ" id="43wAXFpMibn" role="3cqZAp">
           <node concept="2YIFZM" id="43wAXFpMij0" role="3clFbw">
-            <ref role="37wK5l" to="pbu6:1WlYLwX3McV" resolve="isNodeCovered" />
-            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+            <ref role="37wK5l" to="pbu6:7LZDtvhyLWZ" resolve="isNodeCovered" />
+            <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
             <node concept="37vLTw" id="43wAXFpMilS" role="37wK5m">
               <ref role="3cqZAo" node="43wAXFpMi6x" resolve="node" />
             </node>
@@ -6672,8 +6672,8 @@
                   <node concept="3clFbS" id="2B_XTD71cjU" role="1bW5cS">
                     <node concept="3clFbF" id="2B_XTD71cpY" role="3cqZAp">
                       <node concept="2YIFZM" id="2B_XTD71cVL" role="3clFbG">
-                        <ref role="37wK5l" to="pbu6:1WlYLwX3YKL" resolve="isNodeNotCovered" />
-                        <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                        <ref role="37wK5l" to="pbu6:7LZDtvhyLYH" resolve="isNodeNotCovered" />
+                        <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
                         <node concept="37vLTw" id="2B_XTD72PHq" role="37wK5m">
                           <ref role="3cqZAo" node="4z0AnX8176F" resolve="it" />
                         </node>
@@ -6688,8 +6688,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="2B_XTD717r8" role="3uHU7B">
-              <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-              <ref role="37wK5l" to="pbu6:1WlYLwX3YKL" resolve="isNodeNotCovered" />
+              <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
+              <ref role="37wK5l" to="pbu6:7LZDtvhyLYH" resolve="isNodeNotCovered" />
               <node concept="37vLTw" id="43wAXFpMsJH" role="37wK5m">
                 <ref role="3cqZAo" node="43wAXFpMrOa" resolve="node" />
               </node>
@@ -7791,55 +7791,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="2KEzU_jECqA">
-    <property role="3GE5qa" value="numeric" />
-    <ref role="1XX52x" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
-    <node concept="2SsqMj" id="2KEzU_jGitL" role="2wV5jI" />
-  </node>
-  <node concept="22mcaB" id="5JKfLQ96phH">
-    <property role="3GE5qa" value="numeric.number" />
-    <ref role="aqKnT" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
-    <node concept="22hDWg" id="5JKfLQ96phI" role="22hAXT">
-      <property role="TrG5h" value="IncompleteHexValue" />
-    </node>
-    <node concept="3eGOop" id="5JKfLQ96phJ" role="3ft7WO">
-      <ref role="3EoQqy" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
-      <node concept="ucgPf" id="5JKfLQ96phK" role="3aKz83">
-        <node concept="3clFbS" id="5JKfLQ96phL" role="2VODD2">
-          <node concept="3clFbF" id="5JKfLQ9jxMo" role="3cqZAp">
-            <node concept="1yR$tW" id="5JKfLQ9jxMn" role="3clFbG" />
-          </node>
-        </node>
-      </node>
-      <node concept="16NfWO" id="5JKfLQ96pMh" role="upBLP">
-        <node concept="uGdhv" id="5JKfLQ9g5jk" role="16NeZM">
-          <node concept="3clFbS" id="5JKfLQ9g5jm" role="2VODD2">
-            <node concept="3clFbF" id="5JKfLQ9g5rG" role="3cqZAp">
-              <node concept="2OqwBi" id="5JKfLQ9g60n" role="3clFbG">
-                <node concept="35c_gC" id="5JKfLQ9g5rF" role="2Oq$k0">
-                  <ref role="35c_gD" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
-                </node>
-                <node concept="2qgKlT" id="5JKfLQ9g6qa" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:5JKfLQ9g2ZR" resolve="getHexPrefix" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="16NL0t" id="5JKfLQ96pVZ" role="upBLP">
-        <node concept="2h3Zct" id="5JKfLQ96q9C" role="16NL0q">
-          <property role="2h4Kg1" value="hexadecimal literal" />
-        </node>
-      </node>
-    </node>
-    <node concept="3VyMlK" id="5JKfLQ96pVk" role="3ft7WO" />
-  </node>
-  <node concept="22mcaB" id="68wLGjptyli">
-    <property role="3GE5qa" value="numeric" />
-    <ref role="aqKnT" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
-    <node concept="22hDWj" id="68wLGjptylj" role="22hAXT" />
-  </node>
   <node concept="22mcaB" id="1DSLxNDQ1bz">
     <property role="3GE5qa" value="tuples" />
     <ref role="aqKnT" to="hm2y:S$tO8ocnpq" resolve="TupleValue" />
@@ -7945,6 +7896,55 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="24kQdi" id="2KEzU_jECqA">
+    <property role="3GE5qa" value="numeric" />
+    <ref role="1XX52x" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
+    <node concept="2SsqMj" id="2KEzU_jGitL" role="2wV5jI" />
+  </node>
+  <node concept="22mcaB" id="5JKfLQ96phH">
+    <property role="3GE5qa" value="numeric.number" />
+    <ref role="aqKnT" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
+    <node concept="22hDWg" id="5JKfLQ96phI" role="22hAXT">
+      <property role="TrG5h" value="IncompleteHexValue" />
+    </node>
+    <node concept="3eGOop" id="5JKfLQ96phJ" role="3ft7WO">
+      <ref role="3EoQqy" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
+      <node concept="ucgPf" id="5JKfLQ96phK" role="3aKz83">
+        <node concept="3clFbS" id="5JKfLQ96phL" role="2VODD2">
+          <node concept="3clFbF" id="5JKfLQ9jxMo" role="3cqZAp">
+            <node concept="1yR$tW" id="5JKfLQ9jxMn" role="3clFbG" />
+          </node>
+        </node>
+      </node>
+      <node concept="16NfWO" id="5JKfLQ96pMh" role="upBLP">
+        <node concept="uGdhv" id="5JKfLQ9g5jk" role="16NeZM">
+          <node concept="3clFbS" id="5JKfLQ9g5jm" role="2VODD2">
+            <node concept="3clFbF" id="5JKfLQ9g5rG" role="3cqZAp">
+              <node concept="2OqwBi" id="5JKfLQ9g60n" role="3clFbG">
+                <node concept="35c_gC" id="5JKfLQ9g5rF" role="2Oq$k0">
+                  <ref role="35c_gD" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
+                </node>
+                <node concept="2qgKlT" id="5JKfLQ9g6qa" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:5JKfLQ9g2ZR" resolve="getHexPrefix" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="16NL0t" id="5JKfLQ96pVZ" role="upBLP">
+        <node concept="2h3Zct" id="5JKfLQ96q9C" role="16NL0q">
+          <property role="2h4Kg1" value="hexadecimal literal" />
+        </node>
+      </node>
+    </node>
+    <node concept="3VyMlK" id="5JKfLQ96pVk" role="3ft7WO" />
+  </node>
+  <node concept="22mcaB" id="68wLGjptyli">
+    <property role="3GE5qa" value="numeric" />
+    <ref role="aqKnT" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
+    <node concept="22hDWj" id="68wLGjptylj" role="22hAXT" />
   </node>
 </model>
 

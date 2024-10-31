@@ -225,9 +225,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
-        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
-      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -9109,8 +9106,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OwXpG" id="2x0M_l2MIIH" role="2OqNvi">
-                <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
+              <node concept="liA8E" id="7LZDtvhojhg" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:7LZDtvhnY37" resolve="getValue" />
               </node>
             </node>
           </node>
@@ -9171,8 +9168,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OwXpG" id="2x0M_l2MK4k" role="2OqNvi">
-                <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
+              <node concept="liA8E" id="7LZDtvhoEIX" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:7LZDtvhnY37" resolve="getValue" />
               </node>
             </node>
           </node>
@@ -9233,8 +9230,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OwXpG" id="2x0M_l2MKgh" role="2OqNvi">
-                <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
+              <node concept="liA8E" id="7LZDtvhoELZ" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:7LZDtvhnY37" resolve="getValue" />
               </node>
             </node>
           </node>
@@ -9295,8 +9292,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OwXpG" id="2x0M_l2MKs1" role="2OqNvi">
-                <ref role="2Oxat5" to="pbu6:7lHetQyBz3x" resolve="value" />
+              <node concept="liA8E" id="7LZDtvhoEOQ" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:7LZDtvhnY37" resolve="getValue" />
               </node>
             </node>
           </node>
