@@ -9,6 +9,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
+- Type calculation for implicit conversions in the physunit language was improved.
+- Number types have trailing zeros stripped in their ranges after type calculations for divisions.
 - The compatibility check of quantities of the physical unit language was improved.
 - The interpreter of the `success` expression was fixed.
 - Custom Java exceptions have now a `equals` and `hashCode` implementation so that they can be compared in tests.
@@ -23,6 +25,11 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Record literals are automatically initialized based on their type.
 - Record literals now show the referenced members of the record declaration.
 - Tuples can use parenthesis instead of brackets for their presentation. To use the new presentation, overwrite PrimitiveTypeMapper#useParenthesisInsteadOfBracketsForTuples in the extension point.
+- Implicit conversions can now be deactivated conditionally in the physunit language.
+
+### Changed
+
+- The `noConvert` expressions in the physunit language doesn't strip the unit anymore. Use the `stripUnit` expression for that. 
 
 ## September 2024
 
