@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:9dbbba98-10eb-4541-87eb-0b6e6386b68c(org.iets3.core.expr.data.editor)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
@@ -1045,7 +1044,7 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F1sOY" id="cPLa7FqmyJ" role="3EZMnx">
-        <ref role="1NtTu8" to="e9k1:cPLa7FpbAi" resolve="type" />
+        <ref role="1NtTu8" to="hm2y:7D7uZV2iYAD" resolve="type" />
       </node>
       <node concept="2iRfu4" id="cPLa7FqmpM" role="2iSdaV" />
     </node>
