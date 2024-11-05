@@ -57,7 +57,7 @@ def major = "2022"
 def minor = "2"
 
 // Dependency versions
-ext.mpsVersion = '2022.2.3'
+ext.mpsVersion = '2022.2.4'
 
 def mbeddrVersion = "2022.2+"
 def mpsQAVersion = "$major.$minor+"
