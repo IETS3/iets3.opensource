@@ -6605,6 +6605,84 @@
           <property role="pfQqC" value="timespan2" />
         </node>
       </node>
+      <node concept="_fkuZ" id="3fu9FvasmkH" role="_fkp5">
+        <node concept="_fku$" id="3fu9FvasmkF" role="_fkur" />
+        <node concept="1QScDb" id="3fu9FvasmkD" role="_fkuY">
+          <node concept="3$AVBo" id="3fu9FvasmkB" role="1QScD9" />
+          <node concept="3iBYfx" id="3fu9Fvasmk_" role="30czhm">
+            <node concept="1QScDb" id="3fu9Fvasmkr" role="3iBYfI">
+              <node concept="2oxMaX" id="3fu9Fvasmkp" role="1QScD9">
+                <node concept="1fc2QT" id="3fu9Fvasmkn" role="2oxMaW">
+                  <property role="1fc2QY" value="2023" />
+                  <property role="1fc2QX" value="01" />
+                  <property role="1fc2QW" value="01" />
+                </node>
+              </node>
+              <node concept="1fc2QT" id="3fu9Fvasmkl" role="30czhm">
+                <property role="1fc2QY" value="2021" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="3fu9Fvasmkz" role="3iBYfI">
+              <node concept="2oxMaX" id="3fu9Fvasmkx" role="1QScD9">
+                <node concept="1fc2QT" id="3fu9Fvasmkv" role="2oxMaW">
+                  <property role="1fc2QY" value="2022" />
+                  <property role="1fc2QX" value="01" />
+                  <property role="1fc2QW" value="01" />
+                </node>
+              </node>
+              <node concept="1fc2QT" id="3fu9Fvasmkt" role="30czhm">
+                <property role="1fc2QY" value="2021" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pfQqD" id="3fu9Fvasmkj" role="pfQ1b">
+          <property role="pfQqC" value="timespan3" />
+        </node>
+        <node concept="3iBYfx" id="3fu9Fvasmkh" role="_fkuS">
+          <node concept="1QScDb" id="3fu9Fvasmkf" role="3iBYfI">
+            <node concept="2oxMaX" id="3fu9Fvasml1" role="1QScD9">
+              <node concept="1fc2QT" id="3fu9FvasmkZ" role="2oxMaW">
+                <property role="1fc2QY" value="2022" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+            <node concept="1fc2QT" id="3fu9FvasmkX" role="30czhm">
+              <property role="1fc2QY" value="2021" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="3fu9FvasmkV" role="3iBYfI">
+            <node concept="2oxMaX" id="3fu9FvasmkT" role="1QScD9">
+              <node concept="1fc2QT" id="3fu9FvarfgA" role="2oxMaW">
+                <property role="1fc2QY" value="2023" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+            <node concept="1fc2QT" id="3fu9FvasmkR" role="30czhm">
+              <property role="1fc2QY" value="2021" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+          </node>
+        </node>
+        <node concept="1z9TsT" id="3fu9FvasmkP" role="lGtFl">
+          <node concept="OjmMv" id="3fu9FvasmkN" role="1w35rA">
+            <node concept="19SGf9" id="3fu9FvasmkL" role="OjmMu">
+              <node concept="19SUe$" id="3fu9FvasmkJ" role="19SJt6">
+                <property role="19SUeA" value="start date identical --&gt; use end date fpr comparison and sorting " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3dYjL0" id="6vUyz1ySMi$" role="_fkp5" />
       <node concept="_fkuZ" id="6vUyz1ySMi_" role="_fkp5">
         <node concept="_fku$" id="6vUyz1ySMiA" role="_fkur" />
