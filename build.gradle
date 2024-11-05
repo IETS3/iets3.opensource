@@ -57,6 +57,7 @@ def major = "2023"
 def minor = "2"
 
 // Dependency versions
+
 ext.mpsVersion = '2023.2.1'
 
 def mbeddrVersion = "2023.2+"
