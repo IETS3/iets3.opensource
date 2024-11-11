@@ -3057,10 +3057,10 @@
                         <node concept="2XshWL" id="1JTgXSYONbI" role="2OqNvi">
                           <ref role="2WH_rO" node="1JTgXSYOKDT" resolve="createFractionalExponent" />
                           <node concept="Xl_RD" id="1JTgXSYONAS" role="2XxRq1">
-                            <property role="Xl_RC" value="3" />
+                            <property role="Xl_RC" value="-3" />
                           </node>
                           <node concept="Xl_RD" id="1JTgXSYONBY" role="2XxRq1">
-                            <property role="Xl_RC" value="-2" />
+                            <property role="Xl_RC" value="2" />
                           </node>
                         </node>
                       </node>

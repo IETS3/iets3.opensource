@@ -856,6 +856,9 @@
     <node concept="PrWs8" id="6q45UTyu5RD" role="PrDN$">
       <ref role="PrY4T" node="45a4DYZTqxY" resolve="IGroupBase" />
     </node>
+    <node concept="PrWs8" id="3$mUAASO3eZ" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6q45UTyLsdG">
     <property role="EcuMT" value="7387055326543332204" />
