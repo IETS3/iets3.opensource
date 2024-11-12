@@ -1026,7 +1026,7 @@
   </node>
   <node concept="2S6QgY" id="4Xe8Fxr0BHJ">
     <property role="3GE5qa" value="function" />
-    <property role="TrG5h" value="inlineAll2" />
+    <property role="TrG5h" value="inlineAll" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="4Xe8Fxr0BHK" role="2ZfVej">
       <node concept="3clFbS" id="4Xe8Fxr0BHL" role="2VODD2">
