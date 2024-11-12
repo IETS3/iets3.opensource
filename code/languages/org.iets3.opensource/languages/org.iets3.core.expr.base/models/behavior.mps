@@ -23731,7 +23731,7 @@
                 <ref role="3cqZAo" node="7KDVkAEsa9N" resolve="rightTypeParameters" />
               </node>
               <node concept="liA8E" id="7KDVkAEshtb" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
               </node>
             </node>
             <node concept="2OqwBi" id="7KDVkAErYMZ" role="3uHU7B">
@@ -23739,7 +23739,7 @@
                 <ref role="3cqZAo" node="7KDVkAErVEc" resolve="leftTypeParameters" />
               </node>
               <node concept="liA8E" id="7KDVkAEs2OT" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
               </node>
             </node>
           </node>
