@@ -86,7 +86,7 @@
     </language>
   </registry>
   <node concept="jA7cl" id="4ptnK4jesjN">
-    <property role="3GE5qa" value="record.builde" />
+    <property role="3GE5qa" value="record.builder" />
     <ref role="1M2myG" to="yv47:4ptnK4jbqZj" resolve="BuilderExpression" />
     <node concept="j_Nyg" id="4ptnK4jesjX" role="j$A37">
       <ref role="j_u2Y" to="yv47:4ptnK4jbqZt" resolve="adapted" />

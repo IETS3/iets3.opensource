@@ -17,6 +17,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -32,6 +33,7 @@
   <node concept="1TIwiD" id="5Beavy1md5j">
     <property role="EcuMT" value="6471155861876691283" />
     <property role="TrG5h" value="TracerIconConcept" />
+    <property role="R4oN_" value="a tracer icon" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="5Beavy1md5k" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/traceDefault.png" />
@@ -40,6 +42,7 @@
   <node concept="1TIwiD" id="5d4VabvUrnQ">
     <property role="EcuMT" value="6000180787849836022" />
     <property role="TrG5h" value="GhostIconConcept" />
+    <property role="R4oN_" value="a ghost icon" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="5d4VabvUrnR" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/ghost.png" />

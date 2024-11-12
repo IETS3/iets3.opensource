@@ -1357,6 +1357,31 @@
         <ref role="ehGHo" to="b0gq:1KUmgSF_6Qv" resolve="ISpecification" />
       </node>
     </node>
+    <node concept="13i0hz" id="3WnwFDbcwIE" role="13h7CS">
+      <property role="TrG5h" value="getDescriptionText" />
+      <ref role="13i0hy" to="tpcu:69Qfsw3IqwE" resolve="getDescriptionText" />
+      <node concept="3Tm1VV" id="3WnwFDbcwIF" role="1B3o_S" />
+      <node concept="3clFbS" id="3WnwFDbcwIM" role="3clF47">
+        <node concept="3clFbF" id="3WnwFDbcwXO" role="3cqZAp">
+          <node concept="2OqwBi" id="3WnwFDbcXQk" role="3clFbG">
+            <node concept="2OqwBi" id="3WnwFDbcxhT" role="2Oq$k0">
+              <node concept="13iPFW" id="3WnwFDbcwXN" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3WnwFDbcXsB" role="2OqNvi">
+                <ref role="3Tt5mk" to="b0gq:1KUmgSFpwWq" resolve="dimension" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="3WnwFDbcYu1" role="2OqNvi">
+              <ref role="37wK5l" to="hwgx:4yaQL1YaUNL" resolve="getQualifiedName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3WnwFDbcwIN" role="3clF46">
+        <property role="TrG5h" value="reference" />
+        <node concept="3Tqbb2" id="3WnwFDbcwIO" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="3WnwFDbcwIP" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="6Mx2Tmonp$n">
     <property role="3GE5qa" value="definition" />

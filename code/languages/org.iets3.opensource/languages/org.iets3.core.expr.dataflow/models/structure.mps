@@ -61,6 +61,7 @@
     <property role="EcuMT" value="5733544478072990084" />
     <property role="TrG5h" value="ExprBlock" />
     <property role="34LRSv" value="block" />
+    <property role="R4oN_" value="a block declaration" />
     <ref role="1TJDcQ" node="4YhD5cZsmDq" resolve="Block" />
     <node concept="PrWs8" id="4YhD5cZsmDl" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
@@ -76,6 +77,7 @@
     <property role="EcuMT" value="5733544478072990112" />
     <property role="TrG5h" value="InPort" />
     <property role="3GE5qa" value="ports" />
+    <property role="R4oN_" value="an incoming port" />
     <ref role="1TJDcQ" node="4YhD5cZsmEb" resolve="Port" />
   </node>
   <node concept="1TIwiD" id="4YhD5cZsmDq">
@@ -83,7 +85,7 @@
     <property role="TrG5h" value="Block" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a base block for dataflow" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3_milxHKEYT" role="1TKVEl">
       <property role="IQ2nx" value="4131570352306433977" />
@@ -122,6 +124,7 @@
     <property role="EcuMT" value="5733544478072990301" />
     <property role="TrG5h" value="CompositeBlock" />
     <property role="34LRSv" value="composite block" />
+    <property role="R4oN_" value="a block composing other blocks" />
     <ref role="1TJDcQ" node="4YhD5cZsmDq" resolve="Block" />
     <node concept="1TJgyj" id="4YhD5cZsmDu" role="1TKVEi">
       <property role="IQ2ns" value="5733544478072990302" />
@@ -144,6 +147,7 @@
   <node concept="1TIwiD" id="4YhD5cZsmDx">
     <property role="EcuMT" value="5733544478072990305" />
     <property role="TrG5h" value="Instance" />
+    <property role="R4oN_" value="an instance of a block" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_milxHISdW" role="1TKVEi">
       <property role="IQ2ns" value="4131570352305963900" />
@@ -165,6 +169,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="ports" />
+    <property role="R4oN_" value="a base concept for ports" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4YhD5cZsmAx" role="1TKVEi">
       <property role="IQ2ns" value="5733544478072990113" />
@@ -180,6 +185,7 @@
     <property role="EcuMT" value="5733544478072990511" />
     <property role="TrG5h" value="OutPort" />
     <property role="3GE5qa" value="ports" />
+    <property role="R4oN_" value="an outgoing port" />
     <ref role="1TJDcQ" node="4YhD5cZsmEb" resolve="Port" />
     <node concept="1TJgyj" id="2vkvJYT213x" role="1TKVEi">
       <property role="IQ2ns" value="2870058499327922401" />
@@ -192,6 +198,7 @@
     <property role="EcuMT" value="5733544478072990915" />
     <property role="TrG5h" value="InportRef" />
     <property role="3GE5qa" value="ports" />
+    <property role="R4oN_" value="a reference to an incoming port" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4YhD5cZsmN4" role="1TKVEi">
       <property role="IQ2ns" value="5733544478072990916" />
@@ -204,6 +211,7 @@
     <property role="EcuMT" value="4131570352305494547" />
     <property role="TrG5h" value="OutportValue" />
     <property role="3GE5qa" value="ports" />
+    <property role="R4oN_" value="an outgoing value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_milxHH5Cy" role="1TKVEi">
       <property role="IQ2ns" value="4131570352305494562" />
@@ -223,6 +231,7 @@
     <property role="EcuMT" value="4131570352307197047" />
     <property role="TrG5h" value="Connector" />
     <property role="3GE5qa" value="conn" />
+    <property role="R4oN_" value="a connector between two end points" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_milxHNHd1" role="1TKVEi">
       <property role="IQ2ns" value="4131570352307229505" />
@@ -245,6 +254,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="conn" />
+    <property role="R4oN_" value="a base endpoint referencing a port" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_milxHN_sA" role="1TKVEi">
       <property role="IQ2ns" value="4131570352307197734" />
@@ -257,12 +267,14 @@
     <property role="EcuMT" value="4131570352307197505" />
     <property role="3GE5qa" value="conn" />
     <property role="TrG5h" value="OutsideEndpoint" />
+    <property role="R4oN_" value="an outside endpoint" />
     <ref role="1TJDcQ" node="3_milxHN_ls" resolve="Endpoint" />
   </node>
   <node concept="1TIwiD" id="3_milxHN_sC">
     <property role="EcuMT" value="4131570352307197736" />
     <property role="3GE5qa" value="conn" />
     <property role="TrG5h" value="InsideEndpoint" />
+    <property role="R4oN_" value="an inside endpoint" />
     <ref role="1TJDcQ" node="3_milxHN_ls" resolve="Endpoint" />
     <node concept="1TJgyj" id="25FwWcCKeIL" role="1TKVEi">
       <property role="IQ2ns" value="2408163299985255345" />
@@ -274,6 +286,7 @@
   <node concept="1TIwiD" id="5Q9FzcI8h1p">
     <property role="EcuMT" value="6740109852177141849" />
     <property role="TrG5h" value="BlockParameter" />
+    <property role="R4oN_" value="a block parameter" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2vkvJYT8fls" role="1TKVEi">
       <property role="IQ2ns" value="2870058499329553756" />
@@ -288,6 +301,7 @@
   <node concept="1TIwiD" id="2vkvJYSMWJ7">
     <property role="EcuMT" value="2870058499323972551" />
     <property role="TrG5h" value="ParamRef" />
+    <property role="R4oN_" value="a reference to a block parameter" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="2vkvJYSMWJA" role="1TKVEi">
       <property role="IQ2ns" value="2870058499323972582" />
@@ -299,6 +313,7 @@
   <node concept="1TIwiD" id="2vkvJYSQEv$">
     <property role="EcuMT" value="2870058499324946404" />
     <property role="TrG5h" value="ParamValue" />
+    <property role="R4oN_" value="a block parameter value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2vkvJYSQEw9" role="1TKVEi">
       <property role="IQ2ns" value="2870058499324946441" />
@@ -317,7 +332,7 @@
   <node concept="1TIwiD" id="2vkvJYT6dDU">
     <property role="EcuMT" value="2870058499329022586" />
     <property role="TrG5h" value="BlockCallExpr" />
-    <property role="R4oN_" value="invoke block as if it were a function" />
+    <property role="R4oN_" value="invoke a block as if it was a function" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="2vkvJYT6dHx" role="1TKVEi">
       <property role="IQ2ns" value="2870058499329022817" />

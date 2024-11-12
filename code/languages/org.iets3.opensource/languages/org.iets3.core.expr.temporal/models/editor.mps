@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -56,6 +56,7 @@
       </concept>
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -101,6 +102,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -120,6 +124,7 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
@@ -132,6 +137,9 @@
       <concept id="6856661361479732075" name="com.mbeddr.mpsutil.grammarcells.structure.InlineActionMapCell" flags="ng" index="130CD5">
         <child id="6856661361479798957" name="actions" index="130p63" />
         <child id="6856661361479732085" name="cell" index="130CDr" />
+      </concept>
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ng" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -237,6 +245,39 @@
           <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
+      <node concept="_tjkj" id="2ues9dMV_Tf" role="3EZMnx">
+        <node concept="3EZMnI" id="7yDflTqUNIW" role="_tjki">
+          <node concept="3F0ifn" id="7yDflTqUNJ3" role="3EZMnx">
+            <property role="3F0ifm" value="&lt;" />
+            <node concept="11L4FC" id="7UPMhn0Rt17" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="11LMrY" id="7yDflTqUNNB" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="7yDflTqUNJ9" role="3EZMnx">
+            <property role="1$x2rV" value="type" />
+            <ref role="1NtTu8" to="l462:7SY$c$i5rRe" resolve="typeConstraint" />
+          </node>
+          <node concept="3F0ifn" id="7yDflTqUNJh" role="3EZMnx">
+            <property role="3F0ifm" value="&gt;" />
+            <node concept="11L4FC" id="7yDflTqUNPL" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="7yDflTqUNIZ" role="2iSdaV" />
+        </node>
+        <node concept="uPpia" id="7UPMhn0TeXM" role="1djCvC">
+          <node concept="3clFbS" id="7UPMhn0TeXN" role="2VODD2">
+            <node concept="3clFbF" id="7UPMhn0Tf2n" role="3cqZAp">
+              <node concept="Xl_RD" id="7UPMhn0Tf2m" role="3clFbG">
+                <property role="Xl_RC" value="an optional type constraint" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F2HdR" id="50smQ1V8QP8" role="3EZMnx">
         <ref role="1NtTu8" to="l462:50smQ1V8QF$" resolve="slices" />
         <node concept="2EHx9g" id="50smQ1V8QPt" role="2czzBx" />
@@ -287,6 +328,15 @@
       <node concept="_tjkj" id="4t4tOuDdk50" role="3EZMnx">
         <node concept="3F1sOY" id="4t4tOuDdk5c" role="_tjki">
           <ref role="1NtTu8" to="l462:50smQ1VexVQ" resolve="time" />
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqQj$" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqQj_" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqQjE" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqQjD" role="3clFbG">
+                <property role="Xl_RC" value="a time expression for the value at operation" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="130CD5" id="12bsjhgb3wr" role="3EZMnx">
@@ -368,6 +418,15 @@
       <node concept="_tjkj" id="4t4tOuDdaem" role="3EZMnx">
         <node concept="3F1sOY" id="4t4tOuDdasu" role="_tjki">
           <ref role="1NtTu8" to="l462:3nGzaxUBq4G" resolve="fromTime" />
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqPR4" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqPR5" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqPRa" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqPR9" role="3clFbG">
+                <property role="Xl_RC" value="a from time expression for the spread values operation" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="130CD5" id="12bsjhgaDJc" role="3EZMnx">
@@ -489,6 +548,15 @@
         <node concept="3F1sOY" id="12bsjhg8w8m" role="_tjki">
           <ref role="1NtTu8" to="l462:3nGzaxUt$2$" resolve="time" />
         </node>
+        <node concept="uPpia" id="1ZlHRbgqOMW" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqOMX" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqONk" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqONj" role="3clFbG">
+                <property role="Xl_RC" value="a time expression for the after operation" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="130CD5" id="12bsjhg8w8n" role="3EZMnx">
         <node concept="130t_x" id="12bsjhg8w8o" role="130p63">
@@ -563,6 +631,15 @@
         <node concept="3F1sOY" id="12bsjhg8wqf" role="_tjki">
           <ref role="1NtTu8" to="l462:3nGzaxUyXFf" resolve="time" />
         </node>
+        <node concept="uPpia" id="1ZlHRbgqP6s" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqP6t" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqP6O" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqP6N" role="3clFbG">
+                <property role="Xl_RC" value="a time expression for the before operation" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="130CD5" id="12bsjhg8wqg" role="3EZMnx">
         <node concept="130t_x" id="12bsjhg8wqh" role="130p63">
@@ -636,6 +713,15 @@
       <node concept="_tjkj" id="4t4tOuDd8Tx" role="3EZMnx">
         <node concept="3F1sOY" id="4t4tOuDd8TM" role="_tjki">
           <ref role="1NtTu8" to="l462:3nGzaxUzMDW" resolve="from" />
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqPkK" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqPkL" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqPkQ" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqPkP" role="3clFbG">
+                <property role="Xl_RC" value="a time expression for the between operation" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="130CD5" id="12bsjhg9qAN" role="3EZMnx">
@@ -755,6 +841,15 @@
       <node concept="_tjkj" id="2OjHwrkiLG9" role="3EZMnx">
         <node concept="3F1sOY" id="1Mp62pP0HBq" role="_tjki">
           <ref role="1NtTu8" to="l462:1Mp62pP0G9A" resolve="daterange" />
+        </node>
+        <node concept="uPpia" id="1ZlHRbgqPuX" role="1djCvC">
+          <node concept="3clFbS" id="1ZlHRbgqPuY" role="2VODD2">
+            <node concept="3clFbF" id="1ZlHRbgqPvl" role="3cqZAp">
+              <node concept="Xl_RD" id="1ZlHRbgqPvk" role="3clFbG">
+                <property role="Xl_RC" value="a date range for the reduce operation" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="130CD5" id="12bsjhg8x1J" role="3EZMnx">

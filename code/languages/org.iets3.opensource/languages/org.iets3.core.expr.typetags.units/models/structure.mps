@@ -92,7 +92,7 @@
     <property role="TrG5h" value="Unit" />
     <property role="3GE5qa" value="definition" />
     <property role="34LRSv" value="unit" />
-    <property role="R4oN_" value="Unit Definition" />
+    <property role="R4oN_" value="a unit definition" />
     <property role="EcuMT" value="8337440621611267903" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1KUmgSFpwWq" role="1TKVEi">
@@ -120,11 +120,15 @@
     <node concept="PrWs8" id="5XaocLWHGMu" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
+    <node concept="PrWs8" id="3WnwFDbcwDv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3k4t">
     <property role="TrG5h" value="UnitSpecification" />
     <property role="3GE5qa" value="definition" />
     <property role="EcuMT" value="8337440621611270429" />
+    <property role="R4oN_" value="a unit specification" />
     <ref role="1TJDcQ" to="w1hl:1RcasK0SmZc" resolve="UnaryTag" />
     <node concept="1TJgyj" id="7eOyx9r3qG3" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -141,6 +145,7 @@
     <property role="TrG5h" value="UnitReference" />
     <property role="3GE5qa" value="definition" />
     <property role="EcuMT" value="8337440621611273669" />
+    <property role="R4oN_" value="a reference to an unit" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4CUqBF4xMRo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
@@ -167,12 +172,14 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="3802033421899426197" />
+    <property role="R4oN_" value="a base concept for exponents" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3j3yk3gAgiT">
     <property role="3GE5qa" value="definition.exponent" />
     <property role="TrG5h" value="FractionalExponent" />
     <property role="EcuMT" value="3802033421901431993" />
+    <property role="R4oN_" value="a fractional exponent" />
     <ref role="1TJDcQ" node="3j3yk3guAAl" resolve="Exponent" />
     <node concept="1TJgyj" id="3j3yk3gAnBu" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -186,6 +193,7 @@
     <property role="TrG5h" value="IntegerExponent" />
     <property role="3GE5qa" value="definition.exponent" />
     <property role="EcuMT" value="8337440621611273670" />
+    <property role="R4oN_" value="an integer exponent" />
     <ref role="1TJDcQ" node="3j3yk3guAAl" resolve="Exponent" />
     <node concept="1TJgyi" id="7eOyx9r3kR7" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -197,6 +205,7 @@
     <property role="TrG5h" value="InferredAttribute" />
     <property role="3GE5qa" value="definition.meta" />
     <property role="EcuMT" value="385804577579859935" />
+    <property role="R4oN_" value="an inferred node attribute" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="lqDNwvnvZG" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -216,6 +225,7 @@
     <property role="TrG5h" value="InferredSubstitution" />
     <property role="3GE5qa" value="definition.meta" />
     <property role="EcuMT" value="385804577579859894" />
+    <property role="R4oN_" value="an inferred substituion" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="lqDNwvnvZo" role="1TKVEi">
       <property role="20kJfa" value="metaUnit" />
@@ -234,6 +244,7 @@
     <property role="TrG5h" value="MetaUnit" />
     <property role="3GE5qa" value="definition.meta" />
     <property role="EcuMT" value="8337440621613064925" />
+    <property role="R4oN_" value="a meta unit" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2Ux6GHgTOwT" role="PzmwI">
       <ref role="PrY4T" node="7eOyx9r3k3e" resolve="IUnit" />
@@ -244,13 +255,14 @@
     <property role="TrG5h" value="StripUnitExpression" />
     <property role="34LRSv" value="stripunit" />
     <property role="EcuMT" value="624957442818070507" />
+    <property role="R4oN_" value="remove the unit" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
   </node>
   <node concept="1TIwiD" id="VmEWGR2Mzb">
     <property role="3GE5qa" value="conversion" />
     <property role="TrG5h" value="ConversionRule" />
     <property role="34LRSv" value="conversion rule" />
-    <property role="R4oN_" value="Conversion Rule Between Two Units" />
+    <property role="R4oN_" value="a conversion rule between two units" />
     <property role="EcuMT" value="1069230850837260491" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1wGuEUvY7Iv" role="1TKVEi">
@@ -289,6 +301,7 @@
     <property role="TrG5h" value="ConversionSpecifier" />
     <property role="34LRSv" value="conversion specifier" />
     <property role="EcuMT" value="1741902046311368052" />
+    <property role="R4oN_" value="a conversion specifier" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1wGuEUvVzW5" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -312,6 +325,7 @@
     <property role="TrG5h" value="ConvertExpression" />
     <property role="34LRSv" value="convert" />
     <property role="EcuMT" value="4121031889271022213" />
+    <property role="R4oN_" value="convert to a target unit" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="3$KQaHc3HJG" role="1TKVEi">
       <property role="20kJfa" value="targetUnit" />
@@ -333,6 +347,7 @@
     <property role="3GE5qa" value="conversion" />
     <property role="34LRSv" value="val" />
     <property role="EcuMT" value="5185104661801317038" />
+    <property role="R4oN_" value="an unmodifiable variable" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="7SygLIkPJP$">
@@ -340,6 +355,7 @@
     <property role="3GE5qa" value="conversion" />
     <property role="TrG5h" value="ConvertToTarget" />
     <property role="34LRSv" value="convertTo" />
+    <property role="R4oN_" value="convert to a target unit" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7SygLIkPQFC" role="1TKVEi">
       <property role="20kJfa" value="targetUnit" />
@@ -369,6 +385,7 @@
     <property role="3GE5qa" value="definition" />
     <property role="TrG5h" value="Quantity" />
     <property role="34LRSv" value="quantity" />
+    <property role="R4oN_" value="a quantity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1KUmgSFpIfY" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />

@@ -24,6 +24,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -66,6 +67,7 @@
     <property role="EcuMT" value="5955298286239339288" />
     <property role="TrG5h" value="AlgebraicDeclaration" />
     <property role="34LRSv" value="algebraic" />
+    <property role="R4oN_" value="an algebraic data type declaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5a_u3OyMttX" role="1TKVEi">
       <property role="IQ2ns" value="5955298286239340413" />
@@ -85,6 +87,7 @@
     <property role="EcuMT" value="5955298286239340412" />
     <property role="TrG5h" value="AlgebraicConstructor" />
     <property role="34LRSv" value="|" />
+    <property role="R4oN_" value="an algebraic constructor" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5a_u3OzNkkU" role="1TKVEl">
       <property role="IQ2nx" value="5955298286256342330" />
@@ -127,6 +130,7 @@
   <node concept="1TIwiD" id="5a_u3OyMvaf">
     <property role="EcuMT" value="5955298286239347343" />
     <property role="TrG5h" value="AlgebraicType" />
+    <property role="R4oN_" value="an algebraic type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="5a_u3OyMvag" role="1TKVEi">
       <property role="IQ2ns" value="5955298286239347344" />
@@ -138,6 +142,7 @@
   <node concept="1TIwiD" id="5a_u3OyM_sl">
     <property role="EcuMT" value="5955298286239373077" />
     <property role="TrG5h" value="AlgebraicConstructorType" />
+    <property role="R4oN_" value="an algebraic constructor" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="5a_u3OyM_ss" role="1TKVEi">
       <property role="IQ2ns" value="5955298286239373084" />
@@ -150,6 +155,7 @@
     <property role="EcuMT" value="5955298286239452388" />
     <property role="TrG5h" value="AlgebraicTerm" />
     <property role="34LRSv" value="$" />
+    <property role="R4oN_" value="an algebraic term" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5a_u3OyMSQm" role="1TKVEi">
       <property role="IQ2ns" value="5955298286239452566" />
@@ -170,6 +176,7 @@
     <property role="EcuMT" value="5955298286240284081" />
     <property role="TrG5h" value="AlgebraicArgAccess" />
     <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="an algebraic argument access expression" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="1TJgyi" id="5a_u3OyQ3QS" role="1TKVEl">
       <property role="IQ2nx" value="5955298286240284088" />
@@ -181,6 +188,7 @@
     <property role="EcuMT" value="5955298286240874960" />
     <property role="TrG5h" value="MatchExpr" />
     <property role="34LRSv" value="match" />
+    <property role="R4oN_" value="match an expression through cases" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5a_u3OySk7n" role="1TKVEi">
       <property role="IQ2ns" value="5955298286240874967" />
@@ -207,6 +215,7 @@
     <property role="EcuMT" value="5955298286240875029" />
     <property role="TrG5h" value="MatchCase" />
     <property role="34LRSv" value="case" />
+    <property role="R4oN_" value="a case for matching an algebraic expression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5a_u3OySk8s" role="1TKVEi">
       <property role="IQ2ns" value="5955298286240875036" />
@@ -239,6 +248,7 @@
     <property role="EcuMT" value="5955298286240956410" />
     <property role="TrG5h" value="WildcardExpr" />
     <property role="34LRSv" value="_" />
+    <property role="R4oN_" value="a wildcard for pattern matching" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="5a_u3OyYLg5" role="PzmwI">
       <ref role="PrY4T" node="5a_u3OyYLfP" resolve="IWildcard" />
@@ -248,11 +258,13 @@
     <property role="EcuMT" value="5955298286241219628" />
     <property role="TrG5h" value="CaseItExpr" />
     <property role="34LRSv" value="it" />
+    <property role="R4oN_" value="a variable that references the pattern in a match case" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="5a_u3OyUzm8">
     <property role="EcuMT" value="5955298286241461640" />
     <property role="TrG5h" value="NameAnnotation" />
+    <property role="R4oN_" value="an annotation for naming expressions" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="5a_u3OyUzmi" role="lGtFl">
       <property role="Hh88m" value="name" />
@@ -267,6 +279,7 @@
   <node concept="1TIwiD" id="5a_u3OyVzbv">
     <property role="EcuMT" value="5955298286241723103" />
     <property role="TrG5h" value="NameAnnotationRefExpr" />
+    <property role="R4oN_" value="a reference to a name annotation" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5a_u3OyVzbD" role="1TKVEi">
       <property role="IQ2ns" value="5955298286241723113" />
@@ -279,6 +292,7 @@
     <property role="EcuMT" value="5955298286242567074" />
     <property role="TrG5h" value="NameExpr" />
     <property role="34LRSv" value="@" />
+    <property role="R4oN_" value="a name expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="5a_u3OyYP6t" role="PzmwI">
       <ref role="PrY4T" node="5a_u3OyYP6g" resolve="INamedSlot" />
@@ -301,6 +315,7 @@
   <node concept="1TIwiD" id="5a_u3Oz3q2f">
     <property role="EcuMT" value="5955298286243782799" />
     <property role="TrG5h" value="NameExprRefExpr" />
+    <property role="R4oN_" value="a reference to a name expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5a_u3Oz3q2j" role="1TKVEi">
       <property role="IQ2ns" value="5955298286243782803" />
@@ -313,6 +328,7 @@
     <property role="EcuMT" value="5955298286244245705" />
     <property role="TrG5h" value="CaseCondition" />
     <property role="34LRSv" value="if" />
+    <property role="R4oN_" value="an if condition in a matching case" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5a_u3Oz5b3p" role="1TKVEi">
       <property role="IQ2ns" value="5955298286244245721" />
@@ -327,6 +343,7 @@
     <property role="TrG5h" value="TraverseExpr" />
     <property role="3GE5qa" value="traverse" />
     <property role="34LRSv" value="traverse" />
+    <property role="R4oN_" value="a traverse expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5a_u3Ozlhbv" role="1TKVEi">
       <property role="IQ2ns" value="5955298286248465119" />
@@ -349,6 +366,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="traverse" />
+    <property role="R4oN_" value="a base concept for traversal strategies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5a_u3Ozlhai">
@@ -356,6 +374,7 @@
     <property role="3GE5qa" value="traverse" />
     <property role="TrG5h" value="TraversalTopDown" />
     <property role="34LRSv" value="top-down" />
+    <property role="R4oN_" value="a top-down traversal strategy" />
     <ref role="1TJDcQ" node="5a_u3Ozlha5" resolve="TraversalStrategy" />
   </node>
   <node concept="1TIwiD" id="5a_u3Ozlhaw">
@@ -363,24 +382,28 @@
     <property role="3GE5qa" value="traverse" />
     <property role="TrG5h" value="TraversalBottomUp" />
     <property role="34LRSv" value="bottom-up" />
+    <property role="R4oN_" value="a bottom-up traversal strategy" />
     <ref role="1TJDcQ" node="5a_u3Ozlha5" resolve="TraversalStrategy" />
   </node>
   <node concept="1TIwiD" id="5a_u3Ozm4Y3">
     <property role="EcuMT" value="5955298286248677251" />
     <property role="TrG5h" value="GenericAlgebraicType" />
     <property role="34LRSv" value="algebraic" />
+    <property role="R4oN_" value="a generic algebraic type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="5a_u3OzRz1z">
     <property role="EcuMT" value="5955298286257451107" />
     <property role="TrG5h" value="AnyType" />
     <property role="34LRSv" value="any" />
+    <property role="R4oN_" value="an algebraic any type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="5a_u3OzYsEy">
     <property role="EcuMT" value="5955298286259260066" />
     <property role="TrG5h" value="AllComponentsExpr" />
     <property role="34LRSv" value="*" />
+    <property role="R4oN_" value="get all components" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="7aipPVpFzdB">
@@ -388,6 +411,7 @@
     <property role="TrG5h" value="LocDotTarget" />
     <property role="34LRSv" value="loc" />
     <property role="3GE5qa" value="dot" />
+    <property role="R4oN_" value="get the path of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
   </node>
   <node concept="1TIwiD" id="7aipPVpLOlr">
@@ -396,6 +420,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="dot" />
+    <property role="R4oN_" value="a base concept for algebraic operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7aipPVpLOls" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -406,6 +431,7 @@
     <property role="TrG5h" value="SrcDotTarget" />
     <property role="34LRSv" value="src" />
     <property role="3GE5qa" value="dot" />
+    <property role="R4oN_" value="get the source of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
   </node>
   <node concept="1TIwiD" id="28$LOSAcnmu">
@@ -413,6 +439,7 @@
     <property role="TrG5h" value="QuoteExpression" />
     <property role="34LRSv" value="quote" />
     <property role="3GE5qa" value="quote" />
+    <property role="R4oN_" value="a quote expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="28$LOSAcnmv" role="1TKVEi">
       <property role="IQ2ns" value="2460310434913285535" />
@@ -426,6 +453,7 @@
     <property role="EcuMT" value="2460310434913285643" />
     <property role="3GE5qa" value="quote" />
     <property role="TrG5h" value="QuotedTermType" />
+    <property role="R4oN_" value="a quoted term type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="28$LOSAflsv" role="1TKVEi">
       <property role="IQ2ns" value="2460310434914064159" />
@@ -440,6 +468,7 @@
     <property role="3GE5qa" value="quote" />
     <property role="TrG5h" value="UnquoteExpression" />
     <property role="34LRSv" value="unquote" />
+    <property role="R4oN_" value="an unquote expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="28$LOSAeeCY" role="1TKVEi">
       <property role="IQ2ns" value="2460310434913774142" />
@@ -454,6 +483,7 @@
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="ReplaceWith" />
     <property role="34LRSv" value="replaceWith" />
+    <property role="R4oN_" value="replace with a new algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
     <node concept="1TJgyj" id="28$LOSAJ7F9" role="1TKVEi">
       <property role="IQ2ns" value="2460310434922396361" />
@@ -468,6 +498,7 @@
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="Copy" />
     <property role="34LRSv" value="copy" />
+    <property role="R4oN_" value="make a copy of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
     <node concept="PrWs8" id="6z5WYdPcNAn" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6z5WYdPcLnz" resolve="IContextTypedOp" />
@@ -478,6 +509,7 @@
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="Size" />
     <property role="34LRSv" value="size" />
+    <property role="R4oN_" value="get the size of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
   </node>
   <node concept="1TIwiD" id="28$LOSBq9bH">
@@ -485,6 +517,7 @@
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="Parent" />
     <property role="34LRSv" value="parent" />
+    <property role="R4oN_" value="get the parent of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
   </node>
   <node concept="1TIwiD" id="28$LOSBqa1k">
@@ -492,6 +525,7 @@
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="Ancestor" />
     <property role="34LRSv" value="ancestor" />
+    <property role="R4oN_" value="get the ancestor of the algebraic expression" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
     <node concept="1TJgyj" id="28$LOSBqa1l" role="1TKVEi">
       <property role="IQ2ns" value="2460310434922396361" />
@@ -504,6 +538,7 @@
   <node concept="1TIwiD" id="28$LOSBCtT$">
     <property role="EcuMT" value="2460310434937429604" />
     <property role="TrG5h" value="AlgebraicConstructorArg" />
+    <property role="R4oN_" value="an algebraic constructor argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="28$LOSBF$hC" role="1TKVEi">
       <property role="IQ2ns" value="2460310434938242152" />
@@ -523,6 +558,7 @@
     <property role="EcuMT" value="2460310434938242115" />
     <property role="TrG5h" value="Multi" />
     <property role="34LRSv" value="*" />
+    <property role="R4oN_" value="a multi argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

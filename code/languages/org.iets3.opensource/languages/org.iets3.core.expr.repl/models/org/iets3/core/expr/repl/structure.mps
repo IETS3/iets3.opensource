@@ -22,6 +22,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -63,6 +64,7 @@
     <property role="EcuMT" value="1240669143552786952" />
     <property role="TrG5h" value="REPL" />
     <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="a read–eval–print loop (REPL), also called interactive toplevel shell" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="3FexrMiPJGa" role="1TKVEi">
       <property role="IQ2ns" value="4237471344366123786" />
@@ -105,6 +107,7 @@
     <property role="EcuMT" value="1240669143552786953" />
     <property role="TrG5h" value="DefaultEntry" />
     <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="an entry in the REPL" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="14RJwd1g88t" role="1TKVEi">
       <property role="IQ2ns" value="1240669143552786973" />
@@ -153,6 +156,7 @@
   <node concept="1TIwiD" id="2HpFPvT9Hfx">
     <property role="EcuMT" value="3123720608935236577" />
     <property role="TrG5h" value="ReplEntryRef" />
+    <property role="R4oN_" value="a reference to a REPL entry" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="2HpFPvT9Hfy" role="1TKVEi">
       <property role="IQ2ns" value="3123720608935236578" />
@@ -167,6 +171,7 @@
   <node concept="1TIwiD" id="5nEyPbMpXef">
     <property role="EcuMT" value="6190913826144637839" />
     <property role="TrG5h" value="ReplEntryRefByName" />
+    <property role="R4oN_" value="a reference to a REPL entry by name" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5nEyPbMpXeg" role="1TKVEi">
       <property role="IQ2ns" value="3123720608935236578" />
@@ -183,6 +188,7 @@
     <property role="3GE5qa" value="sheet.style" />
     <property role="TrG5h" value="LeftBorderCellStyle" />
     <property role="34LRSv" value="left border" />
+    <property role="R4oN_" value="width of the cell's left border (in pixel)" />
     <ref role="1TJDcQ" node="5avmkTFQoU0" resolve="BorderCellStyle" />
   </node>
   <node concept="1TIwiD" id="5avmkTFQoV9">
@@ -190,6 +196,7 @@
     <property role="3GE5qa" value="sheet.style" />
     <property role="TrG5h" value="BottomBorderCellStyle" />
     <property role="34LRSv" value="bottom border" />
+    <property role="R4oN_" value="width of the cell's bottom border (in pixel)" />
     <ref role="1TJDcQ" node="5avmkTFQoU0" resolve="BorderCellStyle" />
   </node>
   <node concept="1TIwiD" id="5avmkTFQoVa">
@@ -197,6 +204,7 @@
     <property role="3GE5qa" value="sheet.style" />
     <property role="TrG5h" value="RightBorderCellStyle" />
     <property role="34LRSv" value="right border" />
+    <property role="R4oN_" value="width of the cell's right border (in pixel)" />
     <ref role="1TJDcQ" node="5avmkTFQoU0" resolve="BorderCellStyle" />
   </node>
   <node concept="1TIwiD" id="7HzLUeHESCI">
@@ -204,6 +212,7 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="QuoteExpr" />
     <property role="34LRSv" value="quote" />
+    <property role="R4oN_" value="evaluate a referenced cell" />
     <ref role="1TJDcQ" node="5avmkTFl_wR" resolve="AbstractSheetExpr" />
     <node concept="1TJgyj" id="7HzLUeHESCJ" role="1TKVEi">
       <property role="IQ2ns" value="8891169595166788143" />
@@ -219,6 +228,7 @@
     <property role="TrG5h" value="BorderCellStyle" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base style for borders" />
     <ref role="1TJDcQ" node="5avmkTFQoTZ" resolve="CellStyle" />
     <node concept="1TJgyi" id="5avmkTFQoU1" role="1TKVEl">
       <property role="IQ2nx" value="5953575425758826113" />
@@ -230,6 +240,7 @@
     <property role="EcuMT" value="4139771920858263103" />
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="CellConstraint" />
+    <property role="R4oN_" value="a cell constraint" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_Nra3DTaT0" role="1TKVEi">
       <property role="IQ2ns" value="4139771920858263104" />
@@ -250,6 +261,7 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="SheetTestItem" />
     <property role="34LRSv" value="sheet" />
+    <property role="R4oN_" value="a spreadsheet for tests" />
     <ref role="1TJDcQ" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1TJgyi" id="5avmkTFIjNS" role="1TKVEl">
       <property role="IQ2nx" value="5953575425756708088" />
@@ -273,12 +285,14 @@
     <property role="3GE5qa" value="sheet.style" />
     <property role="TrG5h" value="TopBorderCellStyle" />
     <property role="34LRSv" value="top border" />
+    <property role="R4oN_" value="width of the cell's top border (in pixel)" />
     <ref role="1TJDcQ" node="5avmkTFQoU0" resolve="BorderCellStyle" />
   </node>
   <node concept="1TIwiD" id="4YhD5cZkcH6">
     <property role="EcuMT" value="5733544478070852422" />
     <property role="3GE5qa" value="sheet.range" />
     <property role="TrG5h" value="AbstractRangeExpr" />
+    <property role="R4oN_" value="an abstract range expression" />
     <ref role="1TJDcQ" node="5avmkTFl_wR" resolve="AbstractSheetExpr" />
     <node concept="1TJgyj" id="4YhD5cZkcH7" role="1TKVEi">
       <property role="IQ2ns" value="5733544478070852423" />
@@ -300,6 +314,7 @@
     <property role="TrG5h" value="Sheet" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="sheet" />
+    <property role="R4oN_" value="a spreadsheet" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5xEoEMrnaAC" role="1TKVEi">
       <property role="IQ2ns" value="6371013116349426088" />
@@ -354,6 +369,7 @@
     <property role="TrG5h" value="AbstractCellRef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base expression for cell references" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3pIANU$T$6B" role="1TKVEi">
       <property role="IQ2ns" value="3922243018843111847" />
@@ -374,6 +390,7 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="LabelExpression" />
     <property role="34LRSv" value="'" />
+    <property role="R4oN_" value="add a label to a cell" />
     <ref role="1TJDcQ" node="5avmkTFl_wR" resolve="AbstractSheetExpr" />
     <node concept="1TJgyi" id="5avmkTFTZQ$" role="1TKVEl">
       <property role="IQ2nx" value="5953575425759772068" />
@@ -385,6 +402,7 @@
     <property role="EcuMT" value="6371013116349131336" />
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="Cell" />
+    <property role="R4oN_" value="a cell representing an optional value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_Nra3DTfmI" role="1TKVEi">
       <property role="IQ2ns" value="4139771920858281390" />
@@ -444,6 +462,7 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="SheetType" />
     <property role="34LRSv" value="sheet" />
+    <property role="R4oN_" value="a spreadsheet type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="3_Nra3E2xkj" role="1TKVEi">
       <property role="IQ2ns" value="4139771920860714259" />
@@ -456,6 +475,7 @@
     <property role="EcuMT" value="6371013116352759184" />
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="CellArg" />
+    <property role="R4oN_" value="an optionally typed cell argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5xEoEMrzSmx" role="1TKVEi">
       <property role="IQ2ns" value="6371013116352759201" />
@@ -473,6 +493,7 @@
     <property role="TrG5h" value="FontStyle" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base style for fonts" />
     <ref role="1TJDcQ" node="5avmkTFQoTZ" resolve="CellStyle" />
   </node>
   <node concept="1TIwiD" id="5avmkTFl_ut">
@@ -480,12 +501,14 @@
     <property role="3GE5qa" value="sheet.range" />
     <property role="TrG5h" value="MakeListExpr" />
     <property role="34LRSv" value="makeList" />
+    <property role="R4oN_" value="create a list from a range of values" />
     <ref role="1TJDcQ" node="4YhD5cZkcH6" resolve="AbstractRangeExpr" />
   </node>
   <node concept="1TIwiD" id="5xEoEMrAqE3">
     <property role="EcuMT" value="6371013116353424003" />
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="CellArgRef" />
+    <property role="R4oN_" value="a reference to a cell argument" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5xEoEMrAqE4" role="1TKVEi">
       <property role="IQ2ns" value="6371013116353424004" />
@@ -499,6 +522,7 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="SheetEmbedExpr" />
     <property role="34LRSv" value="sheet" />
+    <property role="R4oN_" value="a spreadsheet" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3_Nra3E6OTO" role="1TKVEi">
       <property role="IQ2ns" value="4139771920861843060" />
@@ -527,12 +551,14 @@
     <property role="3GE5qa" value="sheet.style" />
     <property role="TrG5h" value="FontBoldStyle" />
     <property role="34LRSv" value="font-bold" />
+    <property role="R4oN_" value="bold font inside the cell" />
     <ref role="1TJDcQ" node="3_Nra3E8QdD" resolve="FontStyle" />
   </node>
   <node concept="1TIwiD" id="3pIANU_3n4Z">
     <property role="EcuMT" value="3922243018845679935" />
     <property role="3GE5qa" value="sheet.finders" />
     <property role="TrG5h" value="NamedSheetFinder" />
+    <property role="R4oN_" value="a named sheet finder" />
     <ref role="1TJDcQ" node="3pIANU$T$67" resolve="AbstractSheetFinder" />
     <node concept="1TJgyj" id="3pIANU_3n5s" role="1TKVEi">
       <property role="IQ2ns" value="3922243018845679964" />
@@ -546,6 +572,7 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="TopLevelSheet" />
     <property role="34LRSv" value="sheet" />
+    <property role="R4oN_" value="a spreadsheet" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3_Nra3E2xlU" role="1TKVEi">
       <property role="IQ2ns" value="4139771920860714362" />
@@ -572,12 +599,14 @@
     <property role="EcuMT" value="5953575425750226999" />
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="AbstractSheetExpr" />
+    <property role="R4oN_" value="an abstract sheet expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="5xEoEMrvqJa">
     <property role="EcuMT" value="6371013116351589322" />
     <property role="3GE5qa" value="sheet.ref" />
     <property role="TrG5h" value="NamedCellRef" />
+    <property role="R4oN_" value="reference a cell by label" />
     <ref role="1TJDcQ" node="5xEoEMrDSEO" resolve="AbstractCellRef" />
     <node concept="1TJgyj" id="5xEoEMrvqJb" role="1TKVEi">
       <property role="IQ2ns" value="6371013116351589323" />
@@ -591,6 +620,7 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="CellConstraintIt" />
     <property role="34LRSv" value="it" />
+    <property role="R4oN_" value="an expression that refers to the cell constraint itself" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="3pIANU$T$67">
@@ -599,6 +629,7 @@
     <property role="TrG5h" value="AbstractSheetFinder" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base concept for sheet finders" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5avmkTFQoTZ">
@@ -607,6 +638,7 @@
     <property role="TrG5h" value="CellStyle" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="a base style for cells" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5xEoEMrqNzj">
@@ -614,6 +646,7 @@
     <property role="3GE5qa" value="sheet.ref" />
     <property role="TrG5h" value="CoordCellRef" />
     <property role="34LRSv" value="$" />
+    <property role="R4oN_" value="reference a cell by coordinate" />
     <ref role="1TJDcQ" node="5xEoEMrDSEO" resolve="AbstractCellRef" />
     <node concept="1TJgyi" id="5avmkTFcWo6" role="1TKVEl">
       <property role="IQ2nx" value="5953575425747961350" />
@@ -626,6 +659,7 @@
     <property role="3GE5qa" value="sheet.finders" />
     <property role="TrG5h" value="UpwardsSheetFinder" />
     <property role="34LRSv" value=".." />
+    <property role="R4oN_" value="a finder looking for the next ancestor sheet" />
     <ref role="1TJDcQ" node="3pIANU$T$67" resolve="AbstractSheetFinder" />
   </node>
   <node concept="1TIwiD" id="4YhD5cZo8Ks">
@@ -633,6 +667,7 @@
     <property role="3GE5qa" value="sheet.range" />
     <property role="TrG5h" value="MakeRecordExpr" />
     <property role="34LRSv" value="makeRecord" />
+    <property role="R4oN_" value="create a record from a range of values" />
     <ref role="1TJDcQ" node="4YhD5cZkcH6" resolve="AbstractRangeExpr" />
     <node concept="1TJgyj" id="4YhD5cZo8Kt" role="1TKVEi">
       <property role="IQ2ns" value="5733544478071884829" />
@@ -646,6 +681,7 @@
     <property role="EcuMT" value="6371013116350760968" />
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="CellLabel" />
+    <property role="R4oN_" value="a label for a cell" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5xEoEMrsgwi" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
