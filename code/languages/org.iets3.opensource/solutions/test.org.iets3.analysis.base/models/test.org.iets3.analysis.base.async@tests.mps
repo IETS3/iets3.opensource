@@ -581,13 +581,13 @@
             <property role="TrG5h" value="messageTypes" />
             <node concept="3vKaQO" id="IJ8MgQ1VTB" role="1tU5fm">
               <node concept="3uibUv" id="IJ8MgQ1VTD" role="3O5elw">
-                <ref role="3uigEE" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
+                <ref role="3uigEE" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
               </node>
             </node>
             <node concept="2ShNRf" id="IJ8MgQ26C5" role="33vP2m">
               <node concept="2Jqq0_" id="IJ8MgQ29xT" role="2ShVmc">
                 <node concept="3uibUv" id="IJ8MgQ2aCo" role="HW$YZ">
-                  <ref role="3uigEE" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
+                  <ref role="3uigEE" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
                 </node>
               </node>
             </node>
@@ -662,7 +662,7 @@
             <node concept="3clFbF" id="3x8VOVHnKfP" role="3cqZAp">
               <node concept="2OqwBi" id="3x8VOVHnN9D" role="3clFbG">
                 <node concept="37vLTw" id="3x8VOVHnKfN" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3x8VOVHnBeZ" resolve="messaeTypes" />
+                  <ref role="3cqZAo" node="3x8VOVHnBeZ" resolve="messageTypes" />
                 </node>
                 <node concept="TSZUe" id="IJ8MgQ1ZVD" role="2OqNvi">
                   <node concept="2OqwBi" id="IJ8MgQ21_y" role="25WWJ7">
@@ -727,7 +727,7 @@
             </node>
             <node concept="Rm8GO" id="IJ8MgQ2oqn" role="37wK5m">
               <ref role="Rm8GQ" to="gdgh:57dmM_Ut0$Q" resolve="OK" />
-              <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
+              <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
             </node>
           </node>
         </node>
@@ -830,7 +830,7 @@
             </node>
             <node concept="Rm8GO" id="IJ8MgQ3anj" role="37wK5m">
               <ref role="Rm8GQ" to="gdgh:3x8VOVHlimr" resolve="Cancelled" />
-              <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
+              <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
             </node>
           </node>
         </node>
@@ -1105,7 +1105,7 @@
                                   <property role="2bfB8j" value="true" />
                                   <property role="373rjd" value="true" />
                                   <ref role="1Y3XeK" to="5zyv:~Callable" resolve="Callable" />
-                                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                                   <node concept="3Tm1VV" id="41hdHndooQq" role="1B3o_S" />
                                   <node concept="3clFb_" id="41hdHndooQB" role="jymVt">
                                     <property role="TrG5h" value="call" />
@@ -1145,7 +1145,7 @@
                                       </node>
                                     </node>
                                     <node concept="2AHcQZ" id="41hdHndooQI" role="2AJF6D">
-                                      <ref role="2AI5Lk" to="wyt6:~Override" />
+                                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                                     </node>
                                     <node concept="3uibUv" id="41hdHndoxtF" role="3clF45">
                                       <ref role="3uigEE" to="5zyv:~CompletableFuture" resolve="CompletableFuture" />
@@ -1869,7 +1869,7 @@
       <node concept="37vLTG" id="6pPfAzJCx3B" role="3clF46">
         <property role="TrG5h" value="execEnv" />
         <node concept="3uibUv" id="6pPfAzJCy4R" role="1tU5fm">
-          <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="ExecEnv" />
+          <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
         </node>
       </node>
     </node>
@@ -1915,7 +1915,7 @@
             <node concept="3vlDli" id="cGZnm4Okxx" role="3cqZAp">
               <node concept="Rm8GO" id="cGZnm4Okxy" role="3tpDZB">
                 <ref role="Rm8GQ" to="gdgh:57dmM_Ut0$Q" resolve="OK" />
-                <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
+                <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
               </node>
               <node concept="2OqwBi" id="cGZnm4Okxz" role="3tpDZA">
                 <node concept="2GrUjf" id="cGZnm4Okx$" role="2Oq$k0">
@@ -1927,7 +1927,7 @@
               </node>
               <node concept="3_1$Yv" id="cGZnm4OkxA" role="3_9lra">
                 <node concept="37vLTw" id="cGZnm4OkxB" role="3_1BAH">
-                  <ref role="3cqZAo" node="cGZnm4Okxq" resolve="errmSg" />
+                  <ref role="3cqZAo" node="cGZnm4Okxq" resolve="errMsg" />
                 </node>
               </node>
             </node>

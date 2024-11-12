@@ -1336,7 +1336,7 @@
         <ref role="3uigEE" node="5zG5$LyyJpW" resolve="AbstractResultDescription" />
       </node>
       <node concept="2AHcQZ" id="7wEqFvbObn6" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
         <node concept="2B6LJw" id="7wEqFvbObCu" role="2B76xF">
           <ref role="2B6OnR" to="wyt6:~Deprecated.since()" resolve="since" />
           <node concept="Xl_RD" id="7wEqFvbObEm" role="2B70Vg">
@@ -1618,7 +1618,7 @@
       </node>
       <node concept="QsSxf" id="3x8VOVHlimr" role="Qtgdg">
         <property role="TrG5h" value="Cancelled" />
-        <ref role="37wK5l" node="57dmM_UsWB$" resolve="MessageType" />
+        <ref role="37wK5l" node="57dmM_UsWB$" resolve="IResult.MessageType" />
         <node concept="3clFbT" id="3x8VOVHlims" role="37wK5m" />
       </node>
     </node>
