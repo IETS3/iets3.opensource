@@ -4430,25 +4430,32 @@
                           <node concept="2OqwBi" id="2udM7u8DyDz" role="2Oq$k0">
                             <node concept="1Q80Hy" id="2udM7u8Dyyp" role="2Oq$k0" />
                             <node concept="liA8E" id="2udM7u8DyTs" role="2OqNvi">
-                              <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                              <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
                             </node>
                           </node>
                           <node concept="liA8E" id="2udM7u8D$2q" role="2OqNvi">
-                            <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
+                            <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
                             <node concept="10M0yZ" id="2udM7u8DtRl" role="37wK5m">
                               <ref role="3cqZAo" to="5ueo:~StyleAttributes.BACKGROUND_COLOR" resolve="BACKGROUND_COLOR" />
                               <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
                             </node>
                             <node concept="2OqwBi" id="2udM7u8D$LR" role="37wK5m">
-                              <node concept="2YIFZM" id="3Ib5UJg3U6x" role="2Oq$k0">
-                                <ref role="37wK5l" to="hox0:~StyleRegistry.getInstance():jetbrains.mps.openapi.editor.style.StyleRegistry" resolve="getInstance" />
-                                <ref role="1Pybhc" to="hox0:~StyleRegistry" resolve="StyleRegistry" />
-                              </node>
                               <node concept="liA8E" id="2udM7u8D_4p" role="2OqNvi">
-                                <ref role="37wK5l" to="hox0:~StyleRegistry.getSimpleColor(java.awt.Color):java.awt.Color" resolve="getSimpleColor" />
+                                <ref role="37wK5l" to="hox0:~StyleRegistry.getSimpleColor(java.awt.Color)" resolve="getSimpleColor" />
                                 <node concept="10M0yZ" id="43wAXFpM$oS" role="37wK5m">
                                   <ref role="1PxDUh" node="43wAXFpMhrw" resolve="CoverageEditorUtils" />
                                   <ref role="3cqZAo" node="43wAXFpMyT7" resolve="NOT_COVERED_BG_COLOR" />
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="6LC1q0pjLnm" role="2Oq$k0">
+                                <node concept="2OqwBi" id="6LC1q0pjK8i" role="2Oq$k0">
+                                  <node concept="1Q80Hx" id="6LC1q0pjJTA" role="2Oq$k0" />
+                                  <node concept="liA8E" id="6LC1q0pjKOP" role="2OqNvi">
+                                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="6LC1q0pjM9U" role="2OqNvi">
+                                  <ref role="37wK5l" to="cj4x:~EditorComponent.getStyleRegistry()" resolve="getStyleRegistry" />
                                 </node>
                               </node>
                             </node>
@@ -4526,25 +4533,32 @@
                             <node concept="2OqwBi" id="43wAXFoL5Qn" role="2Oq$k0">
                               <node concept="1Q80Hy" id="43wAXFoL5Qo" role="2Oq$k0" />
                               <node concept="liA8E" id="43wAXFoL5Qp" role="2OqNvi">
-                                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
                               </node>
                             </node>
                             <node concept="liA8E" id="43wAXFoL5Qq" role="2OqNvi">
-                              <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
+                              <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
                               <node concept="10M0yZ" id="43wAXFoL5Qr" role="37wK5m">
                                 <ref role="3cqZAo" to="5ueo:~StyleAttributes.BACKGROUND_COLOR" resolve="BACKGROUND_COLOR" />
                                 <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
                               </node>
                               <node concept="2OqwBi" id="43wAXFoL5Qs" role="37wK5m">
-                                <node concept="2YIFZM" id="43wAXFoL5Qt" role="2Oq$k0">
-                                  <ref role="37wK5l" to="hox0:~StyleRegistry.getInstance():jetbrains.mps.openapi.editor.style.StyleRegistry" resolve="getInstance" />
-                                  <ref role="1Pybhc" to="hox0:~StyleRegistry" resolve="StyleRegistry" />
-                                </node>
                                 <node concept="liA8E" id="43wAXFoL5Qu" role="2OqNvi">
-                                  <ref role="37wK5l" to="hox0:~StyleRegistry.getSimpleColor(java.awt.Color):java.awt.Color" resolve="getSimpleColor" />
+                                  <ref role="37wK5l" to="hox0:~StyleRegistry.getSimpleColor(java.awt.Color)" resolve="getSimpleColor" />
                                   <node concept="10M0yZ" id="43wAXFpM_sv" role="37wK5m">
                                     <ref role="1PxDUh" node="43wAXFpMhrw" resolve="CoverageEditorUtils" />
                                     <ref role="3cqZAo" node="43wAXFpMzmM" resolve="COVERED_AND_NOT_INCLUDED_BG_COLOR" />
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="6LC1q0pjNJM" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="6LC1q0pjNJN" role="2Oq$k0">
+                                    <node concept="1Q80Hx" id="6LC1q0pjNJO" role="2Oq$k0" />
+                                    <node concept="liA8E" id="6LC1q0pjNJP" role="2OqNvi">
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="6LC1q0pjNJQ" role="2OqNvi">
+                                    <ref role="37wK5l" to="cj4x:~EditorComponent.getStyleRegistry()" resolve="getStyleRegistry" />
                                   </node>
                                 </node>
                               </node>
