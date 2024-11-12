@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/TestExecutionPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.advanced.devkit/org.iets3.core.expr.advanced.devkit.devkit" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.base.devkit/org.iets3.core.expr.base.devkit.devkit" folder="expr.lang-core" />
