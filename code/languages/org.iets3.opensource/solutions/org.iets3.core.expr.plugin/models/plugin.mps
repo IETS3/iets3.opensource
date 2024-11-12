@@ -67,6 +67,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -1316,6 +1317,7 @@
   <node concept="tC5Ba" id="2ufoZQISzNZ">
     <property role="3GE5qa" value="inspect" />
     <property role="TrG5h" value="valueInspector" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="2ufoZQISzOa" role="ftER_">
       <node concept="2a7GMi" id="2ufoZQISzP1" role="ftvYc" />
       <node concept="tCFHf" id="2ufoZQISzOe" role="ftvYc">
@@ -1511,6 +1513,7 @@
   <node concept="tC5Ba" id="XC2si3iCtF">
     <property role="3GE5qa" value="testExecution" />
     <property role="TrG5h" value="TestExecution" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="XC2si3iC_5" role="2f5YQi">
       <ref role="tU$_T" to="tprs:6gEJNBIezVz" resolve="MPSRunMenu" />
     </node>
@@ -2233,6 +2236,7 @@
   <node concept="tC5Ba" id="3TIaSh$E6vz">
     <property role="3GE5qa" value="cov" />
     <property role="TrG5h" value="coverageGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="3TIaSh$E6vC" role="ftER_">
       <node concept="2a7GMi" id="3TIaSh$E6vG" role="ftvYc" />
       <node concept="tCFHf" id="3TIaSh$E6vO" role="ftvYc">

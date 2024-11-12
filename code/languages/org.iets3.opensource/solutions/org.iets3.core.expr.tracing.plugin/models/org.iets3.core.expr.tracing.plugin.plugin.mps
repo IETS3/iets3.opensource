@@ -114,6 +114,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -4508,6 +4509,7 @@
   <node concept="tC5Ba" id="4fb2DFBg_F1">
     <property role="TrG5h" value="showTracerGroup" />
     <property role="3GE5qa" value="actions" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="4fb2DFBg_F3" role="ftER_">
       <node concept="2a7GMi" id="4fb2DFBg_F6" role="ftvYc" />
       <node concept="tCFHf" id="4fb2DFBg_Fb" role="ftvYc">
