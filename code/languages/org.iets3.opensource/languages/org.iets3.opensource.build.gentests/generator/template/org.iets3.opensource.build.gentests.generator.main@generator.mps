@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c2c27329-2aa8-44ec-9833-000b664dd0b2(main@generator)">
+<model ref="r:c2c27329-2aa8-44ec-9833-000b664dd0b2(org.iets3.opensource.build.gentests.generator.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="-1" />
