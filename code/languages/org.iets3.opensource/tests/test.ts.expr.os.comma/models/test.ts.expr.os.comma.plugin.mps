@@ -339,20 +339,6 @@
       <node concept="10P_77" id="1t_lOkU9gAI" role="3clF45" />
       <node concept="3Tm1VV" id="1t_lOkU9gAJ" role="1B3o_S" />
       <node concept="3clFbS" id="1t_lOkU9gAO" role="3clF47">
-        <node concept="3clFbF" id="1t_lOkUnMaP" role="3cqZAp">
-          <node concept="2OqwBi" id="1t_lOkUnMaM" role="3clFbG">
-            <node concept="10M0yZ" id="1t_lOkUnMaN" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" />
-            </node>
-            <node concept="liA8E" id="1t_lOkUnMaO" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="Xl_RD" id="1t_lOkUnMwv" role="37wK5m">
-                <property role="Xl_RC" value="useCommaInsteadOfDotForDecimals" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="1t_lOkU9h3u" role="3cqZAp">
           <node concept="3clFbT" id="1t_lOkU9h3t" role="3clFbG">
             <property role="3clFbU" value="true" />
