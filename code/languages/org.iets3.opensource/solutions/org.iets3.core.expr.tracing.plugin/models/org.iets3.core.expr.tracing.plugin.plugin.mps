@@ -3727,6 +3727,10 @@
           </node>
         </node>
         <node concept="3cpWs8" id="kZqQ80bex$" role="3cqZAp">
+          <node concept="15s5l7" id="1NX6wtRS_nF" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: type tool&lt;TraceExplorer&gt; is not comparable with jetbrains.mps.ide.tools.BaseTabbedProjectTool&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/6469607165247478858]&quot;;" />
+            <property role="huDt6" value="Error: type tool&lt;TraceExplorer&gt; is not comparable with jetbrains.mps.ide.tools.BaseTabbedProjectTool" />
+          </node>
           <node concept="15s5l7" id="kZqQ80o$Y_" role="lGtFl">
             <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  BaseTabbedProjectTool (classifier) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;classifier&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)/6836281137582643069]&quot;;" />
             <property role="huDt6" value="The reference  BaseTabbedProjectTool (classifier) is out of search scope" />
