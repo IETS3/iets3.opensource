@@ -42,8 +42,8 @@
     <import index="n0yb" ref="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)" />
     <import index="ym7l" ref="r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
-    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" implicit="true" />
@@ -754,6 +754,9 @@
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -30551,6 +30554,143 @@
             </node>
             <node concept="3uibUv" id="1t_lOkToHix" role="3$Qgvv">
               <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5CKJX636DJ8">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="numberRangeSpec" />
+    <node concept="1LZb2c" id="5CKJX636Eh9" role="1SL9yI">
+      <property role="TrG5h" value="timesX" />
+      <node concept="3cqZAl" id="5CKJX636Eha" role="3clF45" />
+      <node concept="3clFbS" id="5CKJX636Ehe" role="3clF47">
+        <node concept="3clFbF" id="5CKJX636Fd9" role="3cqZAp">
+          <node concept="2OqwBi" id="5CKJX636E$5" role="3clFbG">
+            <node concept="3xONca" id="5CKJX636EsC" role="2Oq$k0">
+              <ref role="3xOPvv" node="5CKJX636EoT" resolve="rangeX" />
+            </node>
+            <node concept="2qgKlT" id="5CKJX636EPC" role="2OqNvi">
+              <ref role="37wK5l" to="b1h1:ijdpu3aPf0" resolve="times" />
+              <node concept="2YIFZM" id="5CKJX63745W" role="37wK5m">
+                <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
+                <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                <node concept="3cmrfG" id="5CKJX63746P" role="37wK5m">
+                  <property role="3cmrfH" value="2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5CKJX636Em2" role="3cqZAp">
+          <node concept="Xl_RD" id="5CKJX636Fq4" role="3tpDZB">
+            <property role="Xl_RC" value="-20.6" />
+          </node>
+          <node concept="2OqwBi" id="5CKJX636FCt" role="3tpDZA">
+            <node concept="3xONca" id="5CKJX636Fxc" role="2Oq$k0">
+              <ref role="3xOPvv" node="5CKJX636EoT" resolve="rangeX" />
+            </node>
+            <node concept="3TrcHB" id="5CKJX636FVy" role="2OqNvi">
+              <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5CKJX636FWD" role="3cqZAp">
+          <node concept="Xl_RD" id="5CKJX636FWE" role="3tpDZB">
+            <property role="Xl_RC" value="22.8" />
+          </node>
+          <node concept="2OqwBi" id="5CKJX636FWF" role="3tpDZA">
+            <node concept="3xONca" id="5CKJX636FWG" role="2Oq$k0">
+              <ref role="3xOPvv" node="5CKJX636EoT" resolve="rangeX" />
+            </node>
+            <node concept="3TrcHB" id="5CKJX636FWH" role="2OqNvi">
+              <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5CKJX6370s1" role="1SL9yI">
+      <property role="TrG5h" value="timesY" />
+      <node concept="3cqZAl" id="5CKJX6370s2" role="3clF45" />
+      <node concept="3clFbS" id="5CKJX6370s3" role="3clF47">
+        <node concept="3clFbF" id="5CKJX6370s4" role="3cqZAp">
+          <node concept="2OqwBi" id="5CKJX6370s5" role="3clFbG">
+            <node concept="3xONca" id="5CKJX6370s6" role="2Oq$k0">
+              <ref role="3xOPvv" node="5CKJX6370lq" resolve="rangeY" />
+            </node>
+            <node concept="2qgKlT" id="5CKJX6370s7" role="2OqNvi">
+              <ref role="37wK5l" to="b1h1:ijdpu3aPf0" resolve="times" />
+              <node concept="2YIFZM" id="5CKJX6375Ru" role="37wK5m">
+                <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
+                <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                <node concept="3cmrfG" id="5CKJX6375Rv" role="37wK5m">
+                  <property role="3cmrfH" value="2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5CKJX6370s9" role="3cqZAp">
+          <node concept="Xl_RD" id="5CKJX6370sa" role="3tpDZB">
+            <property role="Xl_RC" value="-20.6" />
+          </node>
+          <node concept="2OqwBi" id="5CKJX6370sb" role="3tpDZA">
+            <node concept="3xONca" id="5CKJX6370sc" role="2Oq$k0">
+              <ref role="3xOPvv" node="5CKJX6370lq" resolve="rangeY" />
+            </node>
+            <node concept="3TrcHB" id="5CKJX6370sd" role="2OqNvi">
+              <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5CKJX6370se" role="3cqZAp">
+          <node concept="Xl_RD" id="5CKJX6370sf" role="3tpDZB">
+            <property role="Xl_RC" value="22.8" />
+          </node>
+          <node concept="2OqwBi" id="5CKJX6370sg" role="3tpDZA">
+            <node concept="3xONca" id="5CKJX6370sh" role="2Oq$k0">
+              <ref role="3xOPvv" node="5CKJX6370lq" resolve="rangeY" />
+            </node>
+            <node concept="3TrcHB" id="5CKJX6370si" role="2OqNvi">
+              <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5CKJX636DX6" role="1SKRRt">
+      <node concept="_iOnV" id="5CKJX636DXz" role="1qenE9">
+        <property role="TrG5h" value="NumberRangeSpec" />
+        <node concept="2zPypq" id="5CKJX636E1x" role="_iOnC">
+          <property role="TrG5h" value="x" />
+          <node concept="30bXRB" id="5CKJX636Ecx" role="2zPyp_">
+            <property role="30bXRw" value="5.1" />
+          </node>
+          <node concept="mLuIC" id="5CKJX636E69" role="2zM23F">
+            <node concept="2gteSX" id="5CKJX636E6k" role="2gteSx">
+              <property role="2gteSR" value="-10.3" />
+              <property role="2gteSE" value="11.4" />
+              <node concept="3xLA65" id="5CKJX636EoT" role="lGtFl">
+                <property role="TrG5h" value="rangeX" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5CKJX6370lm" role="_iOnC">
+          <property role="TrG5h" value="y" />
+          <node concept="30bXRB" id="5CKJX6370ln" role="2zPyp_">
+            <property role="30bXRw" value="5.1000" />
+          </node>
+          <node concept="mLuIC" id="5CKJX6370lo" role="2zM23F">
+            <node concept="2gteSX" id="5CKJX6370lp" role="2gteSx">
+              <property role="2gteSR" value="-10.3000" />
+              <property role="2gteSE" value="11.4000" />
+              <node concept="3xLA65" id="5CKJX6370lq" role="lGtFl">
+                <property role="TrG5h" value="rangeY" />
+              </node>
             </node>
           </node>
         </node>
