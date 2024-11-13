@@ -3387,9 +3387,7 @@
       </node>
       <node concept="37vLTG" id="ZYPG76BgMK" role="3clF46">
         <property role="TrG5h" value="actualType" />
-        <node concept="3Tqbb2" id="ZYPG76BgML" role="1tU5fm">
-          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
-        </node>
+        <node concept="3Tqbb2" id="ZYPG76BgML" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="ZYPG76BgMM" role="3clF45" />
     </node>
