@@ -53,6 +53,7 @@
         <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
         <property id="927724900262033862" name="copyResources" index="2_Ic$B" />
         <property id="6998860900671147996" name="javaLevel" index="TZNOO" />
+        <property id="2059109515400425365" name="compiler" index="3fwGa$" />
       </concept>
       <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
         <child id="2750015747481074432" name="path" index="2HvfZ0" />
@@ -244,6 +245,12 @@
             <property role="2Ry0Am" value="mps" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="54z1GEkRtvK" role="1l3spd">
+      <property role="TrG5h" value="idea_home" />
+      <node concept="398BVA" id="54z1GEkRtxq" role="398pKh">
+        <ref role="398BVh" node="5wLtKNeSRPo" resolve="mps.home" />
       </node>
     </node>
     <node concept="398rNT" id="5wLtKNeTaqD" role="1l3spd">
@@ -476,6 +483,7 @@
       <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <property role="2_Ic$B" value="true" />
+      <property role="3fwGa$" value="IntelliJ" />
     </node>
     <node concept="1wNqPr" id="3gmMi5swRKS" role="3989C9">
       <property role="1wNuhe" value="true" />
@@ -13208,6 +13216,7 @@
       <property role="TZNOO" value="1.8" />
       <property role="2_Ic$B" value="true" />
       <property role="2_Ic$$" value="true" />
+      <property role="3fwGa$" value="IntelliJ" />
     </node>
     <node concept="398rNT" id="1Y5vs7yKdR8" role="1l3spd">
       <property role="TrG5h" value="iets3.github.opensource.home" />
@@ -13230,6 +13239,12 @@
             <property role="2Ry0Am" value="mps" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="54z1GEkRtz3" role="1l3spd">
+      <property role="TrG5h" value="idea_home" />
+      <node concept="398BVA" id="54z1GEkRtz4" role="398pKh">
+        <ref role="398BVh" node="OJuIQp_qpo" resolve="mps.home" />
       </node>
     </node>
     <node concept="398rNT" id="OJuIQp$deE" role="1l3spd">
