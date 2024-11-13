@@ -4153,6 +4153,32 @@
     </node>
     <node concept="2ScWuX" id="4yQfyMjvYRu" role="tmbBb">
       <node concept="3clFbS" id="4yQfyMjvYRv" role="2VODD2">
+        <node concept="3SKdUt" id="3vMcUQhmNQI" role="3cqZAp">
+          <node concept="1PaTwC" id="3vMcUQhmNQJ" role="1aUNEU">
+            <node concept="3oM_SD" id="3vMcUQhmNQK" role="1PaTwD">
+              <property role="3oM_SC" value="otherwise" />
+            </node>
+            <node concept="3oM_SD" id="3vMcUQhmNQL" role="1PaTwD">
+              <property role="3oM_SC" value="TraceExplorer.getSelectedTab()" />
+            </node>
+            <node concept="3oM_SD" id="3vMcUQhmNQM" role="1PaTwD">
+              <property role="3oM_SC" value="fails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3vMcUQhmNQN" role="3cqZAp">
+          <node concept="3clFbS" id="3vMcUQhmNQO" role="3clFbx">
+            <node concept="3cpWs6" id="3vMcUQhmNQP" role="3cqZAp">
+              <node concept="3clFbT" id="3vMcUQhmNQQ" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="3vMcUQhmNQR" role="3clFbw">
+            <node concept="2YIFZM" id="3vMcUQhmNQS" role="3fr31v">
+              <ref role="37wK5l" to="3a50:~ThreadUtils.isInEDT()" resolve="isInEDT" />
+              <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="4yQfyMjvYRw" role="3cqZAp">
           <node concept="3clFbS" id="4yQfyMjvYRx" role="3clFbx">
             <node concept="3cpWs6" id="4yQfyMjvYRy" role="3cqZAp">
@@ -4394,6 +4420,32 @@
     </node>
     <node concept="2ScWuX" id="4yQfyMjrpCK" role="tmbBb">
       <node concept="3clFbS" id="4yQfyMjrpCL" role="2VODD2">
+        <node concept="3SKdUt" id="3vMcUQhmO50" role="3cqZAp">
+          <node concept="1PaTwC" id="3vMcUQhmO51" role="1aUNEU">
+            <node concept="3oM_SD" id="3vMcUQhmO52" role="1PaTwD">
+              <property role="3oM_SC" value="otherwise" />
+            </node>
+            <node concept="3oM_SD" id="3vMcUQhmO53" role="1PaTwD">
+              <property role="3oM_SC" value="TraceExplorer.getSelectedTab()" />
+            </node>
+            <node concept="3oM_SD" id="3vMcUQhmO54" role="1PaTwD">
+              <property role="3oM_SC" value="fails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3vMcUQhmO55" role="3cqZAp">
+          <node concept="3clFbS" id="3vMcUQhmO56" role="3clFbx">
+            <node concept="3cpWs6" id="3vMcUQhmO57" role="3cqZAp">
+              <node concept="3clFbT" id="3vMcUQhmO58" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="3vMcUQhmO59" role="3clFbw">
+            <node concept="2YIFZM" id="3vMcUQhmO5a" role="3fr31v">
+              <ref role="37wK5l" to="3a50:~ThreadUtils.isInEDT()" resolve="isInEDT" />
+              <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="4yQfyMjrIDd" role="3cqZAp">
           <node concept="3clFbS" id="4yQfyMjrIDf" role="3clFbx">
             <node concept="3cpWs6" id="4yQfyMjrJHj" role="3cqZAp">
