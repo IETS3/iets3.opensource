@@ -238,9 +238,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="8356039341262087992" name="line" index="1aUNEU" />
-      </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="5911591654125800684" name="com.mbeddr.mpsutil.blutil.structure.HexadecimalRegex" flags="ng" index="2bnNQ_">
@@ -877,14 +874,6 @@
     <language id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path">
       <concept id="7814222126786013807" name="org.iets3.core.expr.path.structure.PathElement" flags="ng" index="3o_JK">
         <reference id="7814222126786013810" name="member" index="3o_JH" />
-      </concept>
-    </language>
-    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
-        <property id="155656958578482949" name="value" index="3oM_SC" />
-      </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
-        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
@@ -29129,22 +29118,6 @@
       <property role="TrG5h" value="min" />
       <node concept="3cqZAl" id="1t_lOkSWw_X" role="3clF45" />
       <node concept="3clFbS" id="1t_lOkSWw_Y" role="3clF47">
-        <node concept="3SKdUt" id="1t_lOkTETEH" role="3cqZAp">
-          <node concept="1PaTwC" id="1t_lOkTETEI" role="1aUNEU">
-            <node concept="3oM_SD" id="1t_lOkTEUVP" role="1PaTwD">
-              <property role="3oM_SC" value="TODO" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEUVQ" role="1PaTwD">
-              <property role="3oM_SC" value="inconsistent" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEUVR" role="1PaTwD">
-              <property role="3oM_SC" value="with" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEUVS" role="1PaTwD">
-              <property role="3oM_SC" value="max()" />
-            </node>
-          </node>
-        </node>
         <node concept="3vlDli" id="1t_lOkSWw_Z" role="3cqZAp">
           <node concept="10M0yZ" id="1t_lOkT5IVc" role="3tpDZB">
             <ref role="3cqZAo" to="oq0c:2NHHcg2FYHt" resolve="POSINF" />
@@ -29581,24 +29554,7 @@
       <property role="TrG5h" value="max" />
       <node concept="3cqZAl" id="1t_lOkSFkPG" role="3clF45" />
       <node concept="3clFbS" id="1t_lOkSFkPH" role="3clF47">
-        <node concept="3SKdUt" id="1t_lOkTEWoT" role="3cqZAp">
-          <node concept="1PaTwC" id="1t_lOkTEWoU" role="1aUNEU">
-            <node concept="3oM_SD" id="1t_lOkTEXDe" role="1PaTwD">
-              <property role="3oM_SC" value="TODO" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEXDf" role="1PaTwD">
-              <property role="3oM_SC" value="inconsistent" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEXDg" role="1PaTwD">
-              <property role="3oM_SC" value="with" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEXDh" role="1PaTwD">
-              <property role="3oM_SC" value="min()" />
-            </node>
-          </node>
-        </node>
         <node concept="3vlDli" id="1t_lOkSJ5tK" role="3cqZAp">
-          <node concept="10Nm6u" id="1t_lOkSQVg7" role="3tpDZB" />
           <node concept="2YIFZM" id="1t_lOkSFzlB" role="3tpDZA">
             <ref role="37wK5l" to="oq0c:2NHHcg2FPgZ" resolve="max" />
             <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
@@ -29610,6 +29566,10 @@
               <ref role="3cqZAo" to="oq0c:2NHHcg2FVhN" resolve="NEGINF" />
               <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
             </node>
+          </node>
+          <node concept="10M0yZ" id="5CKJX63e66l" role="3tpDZB">
+            <ref role="3cqZAo" to="oq0c:2NHHcg2FVhN" resolve="NEGINF" />
+            <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
           </node>
         </node>
         <node concept="3vlDli" id="1t_lOkSJ6wT" role="3cqZAp">
