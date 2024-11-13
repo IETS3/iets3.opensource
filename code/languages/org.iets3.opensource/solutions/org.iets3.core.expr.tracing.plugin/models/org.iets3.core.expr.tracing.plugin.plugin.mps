@@ -72,6 +72,7 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="zwau" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.hintsSettings(MPS.Editor/)" />
     <import index="stm0" ref="r:e2d5029d-edd9-44e0-9764-dc3ac8433eaf(org.iets3.core.expr.tracing.editor)" />
+    <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" implicit="true" />
   </imports>
@@ -4258,6 +4259,32 @@
     </node>
     <node concept="2ScWuX" id="2JfTTG8itUg" role="tmbBb">
       <node concept="3clFbS" id="2JfTTG8itUh" role="2VODD2">
+        <node concept="3SKdUt" id="wvJGn6fFGw" role="3cqZAp">
+          <node concept="1PaTwC" id="wvJGn6fFGx" role="1aUNEU">
+            <node concept="3oM_SD" id="wvJGn6fFJv" role="1PaTwD">
+              <property role="3oM_SC" value="otherwise" />
+            </node>
+            <node concept="3oM_SD" id="wvJGn6fFKC" role="1PaTwD">
+              <property role="3oM_SC" value="TraceExplorer.getSelectedTab()" />
+            </node>
+            <node concept="3oM_SD" id="wvJGn6fFPh" role="1PaTwD">
+              <property role="3oM_SC" value="fails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="wvJGn66YLx" role="3cqZAp">
+          <node concept="3clFbS" id="wvJGn66YLz" role="3clFbx">
+            <node concept="3cpWs6" id="wvJGn670Sn" role="3cqZAp">
+              <node concept="3clFbT" id="wvJGn670VN" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="wvJGn670yg" role="3clFbw">
+            <node concept="2YIFZM" id="wvJGn670yi" role="3fr31v">
+              <ref role="37wK5l" to="3a50:~ThreadUtils.isInEDT()" resolve="isInEDT" />
+              <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="2JfTTG8itUi" role="3cqZAp">
           <node concept="3clFbS" id="2JfTTG8itUj" role="3clFbx">
             <node concept="3cpWs6" id="2JfTTG8itUk" role="3cqZAp">
