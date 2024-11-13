@@ -12,7 +12,6 @@
   </facets>
   <dependencies>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">32190be6-23f7-4e17-aad4-fb739bb3569f(org.iets3.core.expr.doc)</dependency>
     <dependency reexport="false">d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)</dependency>
   </dependencies>

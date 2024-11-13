@@ -32,7 +32,6 @@
         <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
         <dependency reexport="false">3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-        <dependency reexport="false">fbba5118-5fc6-49ff-9c3b-0b4469830440(org.iets3.core.expr.mutable)</dependency>
         <dependency reexport="false">336cc7f4-18d3-473b-81a1-d8df1c0ad27a(org.iets3.core.expr.genjava.toplevel.rt)</dependency>
         <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
         <dependency reexport="false">b76a0f63-5959-456b-993a-c796cc0d0c13(org.iets3.core.expr.base.collections.stubs)</dependency>
@@ -108,8 +107,6 @@
         <module reference="26a1be67-8b63-4e59-b200-8e35002e091e(org.iets3.core.expr.genjava.toplevel#1899408283182158123)" version="0" />
         <module reference="336cc7f4-18d3-473b-81a1-d8df1c0ad27a(org.iets3.core.expr.genjava.toplevel.rt)" version="0" />
         <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="1" />
-        <module reference="711a16d7-99e8-4e1d-b20c-99c0b7309cd8(org.iets3.core.expr.metafunction)" version="1" />
-        <module reference="fbba5118-5fc6-49ff-9c3b-0b4469830440(org.iets3.core.expr.mutable)" version="1" />
         <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
         <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="2" />
         <module reference="52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)" version="0" />

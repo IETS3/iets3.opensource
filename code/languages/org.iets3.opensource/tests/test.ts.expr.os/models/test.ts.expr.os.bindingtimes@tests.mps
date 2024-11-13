@@ -11,7 +11,6 @@
   </languages>
   <imports>
     <import index="vpej" ref="r:ce959c43-f7e7-403d-86e3-006997995d4c(org.iets3.core.expr.typetags.bindingtime.typesystem)" />
-    <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">

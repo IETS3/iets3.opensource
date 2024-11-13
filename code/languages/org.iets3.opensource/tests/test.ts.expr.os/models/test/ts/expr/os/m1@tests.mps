@@ -31,14 +31,11 @@
     <import index="byea" ref="r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)" />
     <import index="rpit" ref="r:e29c70b2-feb7-465e-9534-7fdb395635c2(org.iets3.core.expr.data.typesystem)" />
     <import index="2e51" ref="r:e3651d26-951a-4ffc-9443-e8b8de452a77(org.iets3.core.expr.simpleTypes.constraints)" />
-    <import index="9dqq" ref="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)" />
-    <import index="j68y" ref="r:d01b97ee-eb54-4b3c-b85e-f72b7435869b(org.iets3.core.expr.data.constraints)" />
     <import index="yjde" ref="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" />
     <import index="bg10" ref="r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)" />
     <import index="iyw" ref="r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)" />
-    <import index="n0yb" ref="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)" />
     <import index="ym7l" ref="r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
