@@ -3109,23 +3109,23 @@
             <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
           </node>
         </node>
-        <node concept="1X3_iC" id="1t_lOkTt9UM" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3$NI$W" id="1t_lOkTltYY" role="8Wnug">
-            <node concept="3clFbF" id="1t_lOkTltYZ" role="3$Oloe">
-              <node concept="2YIFZM" id="1t_lOkTlF7v" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:2NHHcg2EXov" resolve="less" />
-                <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <node concept="10Nm6u" id="1t_lOkTlF7w" role="37wK5m" />
-                <node concept="Xl_RD" id="1t_lOkTlF7x" role="37wK5m">
-                  <property role="Xl_RC" value="1" />
-                </node>
+        <node concept="3$NI$W" id="1t_lOkTltYY" role="3cqZAp">
+          <node concept="3clFbF" id="1t_lOkTltYZ" role="3$Oloe">
+            <node concept="15s5l7" id="5CKJX63k6II" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Argument might be null&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4235809288654203516]&quot;;" />
+              <property role="huDt6" value="Warning: Argument might be null" />
+            </node>
+            <node concept="2YIFZM" id="1t_lOkTlF7v" role="3clFbG">
+              <ref role="37wK5l" to="oq0c:2NHHcg2EXov" resolve="less" />
+              <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="10Nm6u" id="1t_lOkTlF7w" role="37wK5m" />
+              <node concept="Xl_RD" id="1t_lOkTlF7x" role="37wK5m">
+                <property role="Xl_RC" value="1" />
               </node>
             </node>
-            <node concept="3uibUv" id="1t_lOkTltZ3" role="3$Qgvv">
-              <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
-            </node>
+          </node>
+          <node concept="3uibUv" id="1t_lOkTltZ3" role="3$Qgvv">
+            <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
           </node>
         </node>
       </node>
@@ -3436,42 +3436,42 @@
           </node>
         </node>
         <node concept="3clFbH" id="1t_lOkTlMU7" role="3cqZAp" />
-        <node concept="1X3_iC" id="1t_lOkTvkDM" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3$NI$W" id="1t_lOkTlMU8" role="8Wnug">
-            <node concept="3clFbF" id="1t_lOkTlMU9" role="3$Oloe">
-              <node concept="2YIFZM" id="1t_lOkTlVE6" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:2NHHcg2F41V" resolve="lessOrEqual" />
-                <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <node concept="Xl_RD" id="1t_lOkTlVE7" role="37wK5m">
-                  <property role="Xl_RC" value="1" />
-                </node>
-                <node concept="10Nm6u" id="1t_lOkTlVE8" role="37wK5m" />
-              </node>
+        <node concept="3$NI$W" id="1t_lOkTlMU8" role="3cqZAp">
+          <node concept="3clFbF" id="1t_lOkTlMU9" role="3$Oloe">
+            <node concept="15s5l7" id="5CKJX63kfJn" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Argument might be null&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4235809288654203516]&quot;;" />
+              <property role="huDt6" value="Warning: Argument might be null" />
             </node>
-            <node concept="3uibUv" id="1t_lOkTlMUd" role="3$Qgvv">
-              <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
+            <node concept="2YIFZM" id="1t_lOkTlVE6" role="3clFbG">
+              <ref role="37wK5l" to="oq0c:2NHHcg2F41V" resolve="lessOrEq" />
+              <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="Xl_RD" id="1t_lOkTlVE7" role="37wK5m">
+                <property role="Xl_RC" value="1" />
+              </node>
+              <node concept="10Nm6u" id="1t_lOkTlVE8" role="37wK5m" />
             </node>
           </node>
+          <node concept="3uibUv" id="1t_lOkTlMUd" role="3$Qgvv">
+            <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
+          </node>
         </node>
-        <node concept="1X3_iC" id="1t_lOkTwmo9" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3$NI$W" id="1t_lOkTlMUe" role="8Wnug">
-            <node concept="3clFbF" id="1t_lOkTlMUf" role="3$Oloe">
-              <node concept="2YIFZM" id="1t_lOkTm3UB" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:2NHHcg2F41V" resolve="lessOrEqual" />
-                <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <node concept="10Nm6u" id="1t_lOkTm3UC" role="37wK5m" />
-                <node concept="Xl_RD" id="1t_lOkTm3UD" role="37wK5m">
-                  <property role="Xl_RC" value="1" />
-                </node>
+        <node concept="3$NI$W" id="1t_lOkTlMUe" role="3cqZAp">
+          <node concept="3clFbF" id="1t_lOkTlMUf" role="3$Oloe">
+            <node concept="15s5l7" id="5CKJX63kgjD" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Argument might be null&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4235809288654203516]&quot;;" />
+              <property role="huDt6" value="Warning: Argument might be null" />
+            </node>
+            <node concept="2YIFZM" id="1t_lOkTm3UB" role="3clFbG">
+              <ref role="37wK5l" to="oq0c:2NHHcg2F41V" resolve="lessOrEq" />
+              <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="10Nm6u" id="1t_lOkTm3UC" role="37wK5m" />
+              <node concept="Xl_RD" id="1t_lOkTm3UD" role="37wK5m">
+                <property role="Xl_RC" value="1" />
               </node>
             </node>
-            <node concept="3uibUv" id="1t_lOkTlMUj" role="3$Qgvv">
-              <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
-            </node>
+          </node>
+          <node concept="3uibUv" id="1t_lOkTlMUj" role="3$Qgvv">
+            <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
           </node>
         </node>
       </node>
@@ -3830,42 +3830,42 @@
           </node>
         </node>
         <node concept="3clFbH" id="1t_lOkTmbJf" role="3cqZAp" />
-        <node concept="1X3_iC" id="1t_lOkTy8os" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3$NI$W" id="1t_lOkTmbJg" role="8Wnug">
-            <node concept="3clFbF" id="1t_lOkTmbJh" role="3$Oloe">
-              <node concept="2YIFZM" id="1t_lOkTmk$Y" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:29BBztTV3iV" resolve="equals" />
-                <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <node concept="Xl_RD" id="1t_lOkTmk$Z" role="37wK5m">
-                  <property role="Xl_RC" value="1" />
-                </node>
-                <node concept="10Nm6u" id="1t_lOkTmk_0" role="37wK5m" />
-              </node>
+        <node concept="3$NI$W" id="1t_lOkTmbJg" role="3cqZAp">
+          <node concept="3clFbF" id="1t_lOkTmbJh" role="3$Oloe">
+            <node concept="15s5l7" id="5CKJX63kpve" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Argument might be null&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4235809288654203516]&quot;;" />
+              <property role="huDt6" value="Warning: Argument might be null" />
             </node>
-            <node concept="3uibUv" id="1t_lOkTmbJl" role="3$Qgvv">
-              <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
+            <node concept="2YIFZM" id="1t_lOkTmk$Y" role="3clFbG">
+              <ref role="37wK5l" to="oq0c:29BBztTV3iV" resolve="equals" />
+              <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="Xl_RD" id="1t_lOkTmk$Z" role="37wK5m">
+                <property role="Xl_RC" value="1" />
+              </node>
+              <node concept="10Nm6u" id="1t_lOkTmk_0" role="37wK5m" />
             </node>
           </node>
+          <node concept="3uibUv" id="1t_lOkTmbJl" role="3$Qgvv">
+            <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
+          </node>
         </node>
-        <node concept="1X3_iC" id="1t_lOkTzhSQ" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3$NI$W" id="1t_lOkTmbJm" role="8Wnug">
-            <node concept="3clFbF" id="1t_lOkTmbJn" role="3$Oloe">
-              <node concept="2YIFZM" id="1t_lOkTmsG4" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:29BBztTV3iV" resolve="equals" />
-                <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <node concept="10Nm6u" id="1t_lOkTmsG5" role="37wK5m" />
-                <node concept="Xl_RD" id="1t_lOkTmsG6" role="37wK5m">
-                  <property role="Xl_RC" value="1" />
-                </node>
+        <node concept="3$NI$W" id="1t_lOkTmbJm" role="3cqZAp">
+          <node concept="3clFbF" id="1t_lOkTmbJn" role="3$Oloe">
+            <node concept="15s5l7" id="5CKJX63kq7C" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Argument might be null&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4235809288654203516]&quot;;" />
+              <property role="huDt6" value="Warning: Argument might be null" />
+            </node>
+            <node concept="2YIFZM" id="1t_lOkTmsG4" role="3clFbG">
+              <ref role="37wK5l" to="oq0c:29BBztTV3iV" resolve="equals" />
+              <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="10Nm6u" id="1t_lOkTmsG5" role="37wK5m" />
+              <node concept="Xl_RD" id="1t_lOkTmsG6" role="37wK5m">
+                <property role="Xl_RC" value="1" />
               </node>
             </node>
-            <node concept="3uibUv" id="1t_lOkTmbJr" role="3$Qgvv">
-              <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
-            </node>
+          </node>
+          <node concept="3uibUv" id="1t_lOkTmbJr" role="3$Qgvv">
+            <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
           </node>
         </node>
       </node>
@@ -4190,23 +4190,23 @@
           </node>
         </node>
         <node concept="3clFbH" id="1t_lOkTm$ze" role="3cqZAp" />
-        <node concept="1X3_iC" id="1t_lOkT$q68" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3$NI$W" id="1t_lOkTm$zf" role="8Wnug">
-            <node concept="3clFbF" id="1t_lOkTm$zg" role="3$Oloe">
-              <node concept="2YIFZM" id="1t_lOkTmHd6" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:2NHHcg2F9Vw" resolve="greaterOrEqual" />
-                <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <node concept="Xl_RD" id="1t_lOkTmHd7" role="37wK5m">
-                  <property role="Xl_RC" value="1" />
-                </node>
-                <node concept="10Nm6u" id="1t_lOkTmHd8" role="37wK5m" />
+        <node concept="3$NI$W" id="1t_lOkTm$zf" role="3cqZAp">
+          <node concept="3clFbF" id="1t_lOkTm$zg" role="3$Oloe">
+            <node concept="15s5l7" id="5CKJX63kzzF" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Argument might be null&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4235809288654203516]&quot;;" />
+              <property role="huDt6" value="Warning: Argument might be null" />
+            </node>
+            <node concept="2YIFZM" id="1t_lOkTmHd6" role="3clFbG">
+              <ref role="37wK5l" to="oq0c:2NHHcg2F9Vw" resolve="greaterOrEqual" />
+              <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="Xl_RD" id="1t_lOkTmHd7" role="37wK5m">
+                <property role="Xl_RC" value="1" />
               </node>
+              <node concept="10Nm6u" id="1t_lOkTmHd8" role="37wK5m" />
             </node>
-            <node concept="3uibUv" id="1t_lOkTm$zk" role="3$Qgvv">
-              <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
-            </node>
+          </node>
+          <node concept="3uibUv" id="1t_lOkTm$zk" role="3$Qgvv">
+            <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
           </node>
         </node>
         <node concept="3$NI$W" id="1t_lOkTm$zl" role="3cqZAp">
@@ -4558,23 +4558,23 @@
           </node>
         </node>
         <node concept="3clFbH" id="1t_lOkTmXh3" role="3cqZAp" />
-        <node concept="1X3_iC" id="1t_lOkTAOx0" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3$NI$W" id="1t_lOkTmXh4" role="8Wnug">
-            <node concept="3clFbF" id="1t_lOkTmXh5" role="3$Oloe">
-              <node concept="2YIFZM" id="1t_lOkTn5No" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:2NHHcg2F6z3" resolve="greater" />
-                <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <node concept="Xl_RD" id="1t_lOkTn5Np" role="37wK5m">
-                  <property role="Xl_RC" value="1" />
-                </node>
-                <node concept="10Nm6u" id="1t_lOkTn5Nq" role="37wK5m" />
+        <node concept="3$NI$W" id="1t_lOkTmXh4" role="3cqZAp">
+          <node concept="3clFbF" id="1t_lOkTmXh5" role="3$Oloe">
+            <node concept="15s5l7" id="5CKJX63kGGK" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Argument might be null&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4235809288654203516]&quot;;" />
+              <property role="huDt6" value="Warning: Argument might be null" />
+            </node>
+            <node concept="2YIFZM" id="1t_lOkTn5No" role="3clFbG">
+              <ref role="37wK5l" to="oq0c:2NHHcg2F6z3" resolve="greater" />
+              <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="Xl_RD" id="1t_lOkTn5Np" role="37wK5m">
+                <property role="Xl_RC" value="1" />
               </node>
+              <node concept="10Nm6u" id="1t_lOkTn5Nq" role="37wK5m" />
             </node>
-            <node concept="3uibUv" id="1t_lOkTmXh9" role="3$Qgvv">
-              <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
-            </node>
+          </node>
+          <node concept="3uibUv" id="1t_lOkTmXh9" role="3$Qgvv">
+            <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
           </node>
         </node>
         <node concept="3$NI$W" id="1t_lOkTmXha" role="3cqZAp">
@@ -4602,22 +4602,6 @@
       <property role="TrG5h" value="min" />
       <node concept="3cqZAl" id="1t_lOkSWw_X" role="3clF45" />
       <node concept="3clFbS" id="1t_lOkSWw_Y" role="3clF47">
-        <node concept="3SKdUt" id="1t_lOkTETEH" role="3cqZAp">
-          <node concept="1PaTwC" id="1t_lOkTETEI" role="1aUNEU">
-            <node concept="3oM_SD" id="1t_lOkTEUVP" role="1PaTwD">
-              <property role="3oM_SC" value="TODO" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEUVQ" role="1PaTwD">
-              <property role="3oM_SC" value="inconsistent" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEUVR" role="1PaTwD">
-              <property role="3oM_SC" value="with" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEUVS" role="1PaTwD">
-              <property role="3oM_SC" value="max()" />
-            </node>
-          </node>
-        </node>
         <node concept="3vlDli" id="1t_lOkSWw_Z" role="3cqZAp">
           <node concept="10M0yZ" id="1t_lOkT5IVc" role="3tpDZB">
             <ref role="3cqZAo" to="oq0c:2NHHcg2FYHt" resolve="POSINF" />
@@ -5054,24 +5038,11 @@
       <property role="TrG5h" value="max" />
       <node concept="3cqZAl" id="1t_lOkSFkPG" role="3clF45" />
       <node concept="3clFbS" id="1t_lOkSFkPH" role="3clF47">
-        <node concept="3SKdUt" id="1t_lOkTEWoT" role="3cqZAp">
-          <node concept="1PaTwC" id="1t_lOkTEWoU" role="1aUNEU">
-            <node concept="3oM_SD" id="1t_lOkTEXDe" role="1PaTwD">
-              <property role="3oM_SC" value="TODO" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEXDf" role="1PaTwD">
-              <property role="3oM_SC" value="inconsistent" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEXDg" role="1PaTwD">
-              <property role="3oM_SC" value="with" />
-            </node>
-            <node concept="3oM_SD" id="1t_lOkTEXDh" role="1PaTwD">
-              <property role="3oM_SC" value="min()" />
-            </node>
-          </node>
-        </node>
         <node concept="3vlDli" id="1t_lOkSJ5tK" role="3cqZAp">
-          <node concept="10Nm6u" id="1t_lOkSQVg7" role="3tpDZB" />
+          <node concept="10M0yZ" id="5CKJX63kP$G" role="3tpDZB">
+            <ref role="3cqZAo" to="oq0c:2NHHcg2FVhN" resolve="NEGINF" />
+            <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+          </node>
           <node concept="2YIFZM" id="1t_lOkSFzlB" role="3tpDZA">
             <ref role="37wK5l" to="oq0c:2NHHcg2FPgZ" resolve="max" />
             <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
@@ -5719,20 +5690,20 @@
           </node>
         </node>
         <node concept="3clFbH" id="1t_lOkTot7X" role="3cqZAp" />
-        <node concept="1X3_iC" id="1t_lOkTCI2p" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3$NI$W" id="1t_lOkTot7Y" role="8Wnug">
-            <node concept="3clFbF" id="1t_lOkTot7Z" role="3$Oloe">
-              <node concept="2YIFZM" id="1t_lOkTo_nN" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:6W9pdfOfpYl" resolve="isPosInf" />
-                <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <node concept="10Nm6u" id="1t_lOkTo_nO" role="37wK5m" />
-              </node>
+        <node concept="3$NI$W" id="1t_lOkTot7Y" role="3cqZAp">
+          <node concept="3clFbF" id="1t_lOkTot7Z" role="3$Oloe">
+            <node concept="15s5l7" id="5CKJX63l8uz" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Argument might be null&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4235809288654203516]&quot;;" />
+              <property role="huDt6" value="Warning: Argument might be null" />
             </node>
-            <node concept="3uibUv" id="1t_lOkTot82" role="3$Qgvv">
-              <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
+            <node concept="2YIFZM" id="1t_lOkTo_nN" role="3clFbG">
+              <ref role="37wK5l" to="oq0c:6W9pdfOfpYl" resolve="isPosInf" />
+              <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="10Nm6u" id="1t_lOkTo_nO" role="37wK5m" />
             </node>
+          </node>
+          <node concept="3uibUv" id="1t_lOkTot82" role="3$Qgvv">
+            <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
           </node>
         </node>
       </node>
@@ -5838,20 +5809,20 @@
           </node>
         </node>
         <node concept="3clFbH" id="1t_lOkToHis" role="3cqZAp" />
-        <node concept="1X3_iC" id="1t_lOkTDJeZ" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3$NI$W" id="1t_lOkToHit" role="8Wnug">
-            <node concept="3clFbF" id="1t_lOkToHiu" role="3$Oloe">
-              <node concept="2YIFZM" id="1t_lOkToQ$h" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:1YvLuAXO50" resolve="isNegInf" />
-                <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                <node concept="10Nm6u" id="1t_lOkToQ$i" role="37wK5m" />
-              </node>
+        <node concept="3$NI$W" id="1t_lOkToHit" role="3cqZAp">
+          <node concept="3clFbF" id="1t_lOkToHiu" role="3$Oloe">
+            <node concept="15s5l7" id="5CKJX63lgRX" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Argument might be null&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4235809288654203516]&quot;;" />
+              <property role="huDt6" value="Warning: Argument might be null" />
             </node>
-            <node concept="3uibUv" id="1t_lOkToHix" role="3$Qgvv">
-              <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
+            <node concept="2YIFZM" id="1t_lOkToQ$h" role="3clFbG">
+              <ref role="37wK5l" to="oq0c:1YvLuAXO50" resolve="isNegInf" />
+              <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+              <node concept="10Nm6u" id="1t_lOkToQ$i" role="37wK5m" />
             </node>
+          </node>
+          <node concept="3uibUv" id="1t_lOkToHix" role="3$Qgvv">
+            <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
           </node>
         </node>
       </node>
