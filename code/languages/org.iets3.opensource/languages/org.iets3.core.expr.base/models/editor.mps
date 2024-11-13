@@ -43,9 +43,6 @@
     <import index="q4oi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellActions(MPS.Editor/)" />
     <import index="av1m" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.style(MPS.Editor/)" />
     <import index="fulz" ref="r:6f792c44-2a5d-40e8-9f05-33f7d4ae26ec(jetbrains.mps.editor.runtime.completion)" />
-    <import index="u59o" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.menus.transformation(MPS.Editor/)" />
-    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -4440,16 +4437,16 @@
                               <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
                             </node>
                             <node concept="2OqwBi" id="2udM7u8D$LR" role="37wK5m">
+                              <node concept="2YIFZM" id="3Ib5UJg3U6x" role="2Oq$k0">
+                                <ref role="37wK5l" to="hox0:~StyleRegistry.getInstance()" resolve="getInstance" />
+                                <ref role="1Pybhc" to="hox0:~StyleRegistry" resolve="StyleRegistry" />
+                              </node>
                               <node concept="liA8E" id="2udM7u8D_4p" role="2OqNvi">
                                 <ref role="37wK5l" to="hox0:~StyleRegistry.getSimpleColor(java.awt.Color)" resolve="getSimpleColor" />
                                 <node concept="10M0yZ" id="43wAXFpM$oS" role="37wK5m">
                                   <ref role="1PxDUh" node="43wAXFpMhrw" resolve="CoverageEditorUtils" />
                                   <ref role="3cqZAo" node="43wAXFpMyT7" resolve="NOT_COVERED_BG_COLOR" />
                                 </node>
-                              </node>
-                              <node concept="2YIFZM" id="3Ib5UJg3U6x" role="2Oq$k0">
-                                <ref role="37wK5l" to="hox0:~StyleRegistry.getInstance()" resolve="getInstance" />
-                                <ref role="1Pybhc" to="hox0:~StyleRegistry" resolve="StyleRegistry" />
                               </node>
                             </node>
                           </node>
@@ -4536,16 +4533,16 @@
                                 <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
                               </node>
                               <node concept="2OqwBi" id="43wAXFoL5Qs" role="37wK5m">
+                                <node concept="2YIFZM" id="43wAXFoL5Qt" role="2Oq$k0">
+                                  <ref role="37wK5l" to="hox0:~StyleRegistry.getInstance()" resolve="getInstance" />
+                                  <ref role="1Pybhc" to="hox0:~StyleRegistry" resolve="StyleRegistry" />
+                                </node>
                                 <node concept="liA8E" id="43wAXFoL5Qu" role="2OqNvi">
                                   <ref role="37wK5l" to="hox0:~StyleRegistry.getSimpleColor(java.awt.Color)" resolve="getSimpleColor" />
                                   <node concept="10M0yZ" id="43wAXFpM_sv" role="37wK5m">
                                     <ref role="1PxDUh" node="43wAXFpMhrw" resolve="CoverageEditorUtils" />
                                     <ref role="3cqZAo" node="43wAXFpMzmM" resolve="COVERED_AND_NOT_INCLUDED_BG_COLOR" />
                                   </node>
-                                </node>
-                                <node concept="2YIFZM" id="43wAXFoL5Qt" role="2Oq$k0">
-                                  <ref role="37wK5l" to="hox0:~StyleRegistry.getInstance()" resolve="getInstance" />
-                                  <ref role="1Pybhc" to="hox0:~StyleRegistry" resolve="StyleRegistry" />
                                 </node>
                               </node>
                             </node>
