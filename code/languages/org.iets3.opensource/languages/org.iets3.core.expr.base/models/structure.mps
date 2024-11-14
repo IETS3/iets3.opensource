@@ -1748,7 +1748,7 @@
   </node>
   <node concept="1TIwiD" id="2ufoZQIKHqp">
     <property role="EcuMT" value="2850607030358693529" />
-    <property role="TrG5h" value="SimpleExpressionValueInspector" />
+    <property role="TrG5h" value="SimpleValueInspector" />
     <property role="R4oN_" value="an inspector for simple expression values" />
     <ref role="1TJDcQ" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
     <node concept="1TJgyi" id="6a3SqxOqxli" role="1TKVEl">
@@ -2285,6 +2285,10 @@
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="ISupportHexValues" />
   </node>
+  <node concept="PlHQZ" id="3eH6BL2TJIw">
+    <property role="EcuMT" value="3723661587905969056" />
+    <property role="TrG5h" value="IAssignable" />
+  </node>
   <node concept="1TIwiD" id="5Ys_ngSnA9h">
     <property role="EcuMT" value="6889545856364470865" />
     <property role="3GE5qa" value="numeric" />
@@ -2315,10 +2319,6 @@
         <ref role="trN6q" node="2KEzU_jNj4j" resolve="ISupportHexValues" />
       </node>
     </node>
-  </node>
-  <node concept="PlHQZ" id="3eH6BL2TJIw">
-    <property role="EcuMT" value="3723661587905969056" />
-    <property role="TrG5h" value="IAssignable" />
   </node>
 </model>
 
