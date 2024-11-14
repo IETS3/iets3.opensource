@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -16,6 +17,7 @@
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
+    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -50,6 +52,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -1051,6 +1056,21 @@
     </node>
     <node concept="2SaL7w" id="65S0ZNFIgIr" role="2ZfVeh">
       <node concept="3clFbS" id="65S0ZNFIgIs" role="2VODD2">
+        <node concept="3clFbJ" id="7NAAzNNnujE" role="3cqZAp">
+          <node concept="3clFbS" id="7NAAzNNnujG" role="3clFbx">
+            <node concept="3cpWs6" id="7NAAzNNnuq_" role="3cqZAp">
+              <node concept="3clFbT" id="7NAAzNNnuqQ" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="7NAAzNNnun3" role="3clFbw">
+            <node concept="2YIFZM" id="j1$XMeJ6wo" role="3fr31v">
+              <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
+              <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+              <node concept="2Sf5sV" id="j1$XMeJ6QL" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7NAAzNNnuhL" role="3cqZAp" />
         <node concept="3clFbJ" id="65S0ZNFIhcM" role="3cqZAp">
           <node concept="3clFbS" id="65S0ZNFIhcO" role="3clFbx">
             <node concept="3cpWs6" id="65S0ZNFIhH9" role="3cqZAp">

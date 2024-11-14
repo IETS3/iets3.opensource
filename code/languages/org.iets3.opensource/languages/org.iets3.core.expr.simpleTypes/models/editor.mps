@@ -21,6 +21,7 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
@@ -30,7 +31,6 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -584,9 +584,10 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2YIFZM" id="1drMthg0Wmd" role="3clFbw">
-                    <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+                  <node concept="2YIFZM" id="j1$XMeH_$S" role="3clFbw">
+                    <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                    <node concept="pncrf" id="j1$XMeH_Dr" role="37wK5m" />
                   </node>
                 </node>
                 <node concept="3clFbF" id="6UIgoJyDnhy" role="3cqZAp">
@@ -1014,9 +1015,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2YIFZM" id="1drMthg1$Ia" role="3clFbw">
-                <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+              <node concept="2YIFZM" id="j1$XMeHAnh" role="3clFbw">
+                <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                 <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                <node concept="pncrf" id="j1$XMeHAsc" role="37wK5m" />
               </node>
             </node>
             <node concept="3clFbF" id="68wLGjp$Gg7" role="3cqZAp">
@@ -1169,9 +1171,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2YIFZM" id="1drMthg1zDw" role="3clFbw">
-                <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+              <node concept="2YIFZM" id="j1$XMeHAyn" role="3clFbw">
+                <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                 <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                <node concept="pncrf" id="j1$XMeHABi" role="37wK5m" />
               </node>
             </node>
             <node concept="3clFbF" id="68wLGjp$GON" role="3cqZAp">
