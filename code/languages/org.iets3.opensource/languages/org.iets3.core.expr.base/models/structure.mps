@@ -70,7 +70,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1748,7 +1748,7 @@
   </node>
   <node concept="1TIwiD" id="2ufoZQIKHqp">
     <property role="EcuMT" value="2850607030358693529" />
-    <property role="TrG5h" value="SimpleExpressionValueInspector" />
+    <property role="TrG5h" value="SimpleValueInspector" />
     <property role="R4oN_" value="an inspector for simple expression values" />
     <ref role="1TJDcQ" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
     <node concept="1TJgyi" id="6a3SqxOqxli" role="1TKVEl">
