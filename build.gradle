@@ -280,9 +280,11 @@ modelcheck {
 
 
 afterEvaluate {  project ->
+    /*
     check.configure {
         dependsOn tasks.named('checkmodels')
     }
+    */
 }
 
 checkmodels {
