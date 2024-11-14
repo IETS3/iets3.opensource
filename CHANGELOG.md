@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## November 2024
+
+### Fixed
+
+- Hexadecimal attributes are now better visible in the diff view.
+
 ## October 2024
 
 ### Fixed
@@ -170,6 +176,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - `NumberLiteral` can now be converted to a `BigDecimal` with the method `toBigDecimal`.
+- Uncatched `DateTimeException` during check DateLiteral
+- The type parameter is now used in the Java generation of the FailExpr.
 -  Named based access of result columns of multi decision tables were added. Columns can be referenced by name and coexist with the index based access.
 
 ## December 2023
