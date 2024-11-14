@@ -7911,7 +7911,44 @@
   <node concept="24kQdi" id="2KEzU_jECqA">
     <property role="3GE5qa" value="numeric" />
     <ref role="1XX52x" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
-    <node concept="2SsqMj" id="2KEzU_jGitL" role="2wV5jI" />
+    <node concept="3EZMnI" id="6fDAI2XnWnF" role="2wV5jI">
+      <node concept="3F0ifn" id="6fDAI2XnWnH" role="3EZMnx">
+        <property role="3F0ifm" value="@hex value" />
+        <ref role="1k5W1q" to="itrz:3_9S6lia_no" resolve="iets3PassiveText" />
+        <node concept="pkWqt" id="6fDAI2XriW1" role="pqm2j">
+          <node concept="3clFbS" id="6fDAI2XriW2" role="2VODD2">
+            <node concept="3clFbF" id="6fDAI2Xs3qH" role="3cqZAp">
+              <node concept="2OqwBi" id="6fDAI2XsbtB" role="3clFbG">
+                <node concept="2OqwBi" id="6fDAI2Xs5Wp" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6fDAI2Xs4db" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6fDAI2Xs3KQ" role="2Oq$k0">
+                      <node concept="1Q80Hx" id="6fDAI2Xs3qG" role="2Oq$k0" />
+                      <node concept="liA8E" id="6fDAI2Xs43o" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6fDAI2Xs4ur" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6fDAI2Xs9Yy" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6fDAI2Xsdxe" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
+                  <node concept="Xl_RD" id="6fDAI2Xsdxh" role="37wK5m">
+                    <property role="Xl_RC" value="jetbrains.mps.vcs" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="6fDAI2Xv1ec" role="2iSdaV" />
+      <node concept="2SsqMj" id="2KEzU_jGitL" role="3EZMnx" />
+    </node>
   </node>
   <node concept="22mcaB" id="5JKfLQ96phH">
     <property role="3GE5qa" value="numeric.number" />
