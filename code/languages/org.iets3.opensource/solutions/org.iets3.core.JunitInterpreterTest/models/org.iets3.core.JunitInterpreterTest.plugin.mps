@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:52c49891-65a1-45a5-a86b-4a7aa1e6c12e(org.iets2.JunitInterpreterTest.plugin)">
+<model ref="r:52c49891-65a1-45a5-a86b-4a7aa1e6c12e(org.iets3.core.JunitInterpreterTest.plugin)">
   <persistence version="9" />
   <languages>
     <use id="22e72e4c-0f69-46ce-8403-6750153aa615" name="jetbrains.mps.execution.configurations" version="2" />
