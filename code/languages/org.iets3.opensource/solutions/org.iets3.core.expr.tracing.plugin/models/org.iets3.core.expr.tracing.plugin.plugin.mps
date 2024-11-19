@@ -72,6 +72,7 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="zwau" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.hintsSettings(MPS.Editor/)" />
     <import index="stm0" ref="r:e2d5029d-edd9-44e0-9764-dc3ac8433eaf(org.iets3.core.expr.tracing.editor)" />
+    <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" implicit="true" />
   </imports>
@@ -4107,7 +4108,6 @@
     <property role="TrG5h" value="selectAllTraceNodeInCurrentTrace" />
     <property role="2uzpH1" value="Trace: select all traces of this node" />
     <property role="3GE5qa" value="actions" />
-    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="4yQfyMjvYR8" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -4216,7 +4216,6 @@
     <property role="TrG5h" value="selectNextTraceNodeAndInspectSource" />
     <property role="2uzpH1" value="Trace: select next trace and inspect source" />
     <property role="3GE5qa" value="actions" />
-    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="2JfTTG8itTU" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -4322,7 +4321,6 @@
     <property role="TrG5h" value="selectNextTraceNodeInCurrentTrace" />
     <property role="2uzpH1" value="Trace: select next trace of this node" />
     <property role="3GE5qa" value="actions" />
-    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="4yQfyMjrpAi" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
