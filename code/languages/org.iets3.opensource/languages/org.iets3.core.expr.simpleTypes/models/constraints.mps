@@ -114,7 +114,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -226,7 +226,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -251,9 +251,10 @@
                       <node concept="1Wqviy" id="5$96D5xR1ZH" role="37wK5m" />
                     </node>
                   </node>
-                  <node concept="2YIFZM" id="1drMthgv8mu" role="3uHU7B">
-                    <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+                  <node concept="2YIFZM" id="j1$XMeHtO6" role="3uHU7B">
+                    <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                    <node concept="EsrRn" id="j1$XMeJ364" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -391,9 +392,10 @@
                   <ref role="35c_gD" to="hm2y:5Ys_ngSnA9h" resolve="HexValue" />
                 </node>
               </node>
-              <node concept="2YIFZM" id="1drMthg13Vg" role="3uHU7B">
-                <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+              <node concept="2YIFZM" id="j1$XMeHwFC" role="3uHU7B">
+                <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                 <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                <node concept="EsrRn" id="j1$XMeHxb6" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -759,9 +761,10 @@
                     <ref role="3cqZAo" node="6QsMU1GXDub" resolve="hexConcept" />
                   </node>
                 </node>
-                <node concept="2YIFZM" id="1drMthg0Wmd" role="3uHU7B">
-                  <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+                <node concept="2YIFZM" id="j1$XMeHyRM" role="3uHU7B">
+                  <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                   <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                  <node concept="EsrRn" id="j1$XMeHyWW" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -828,9 +831,10 @@
                       <node concept="1Wqviy" id="6QsMU1GXq9w" role="37wK5m" />
                     </node>
                   </node>
-                  <node concept="2YIFZM" id="5WDn9aTqWwC" role="3uHU7w">
-                    <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+                  <node concept="2YIFZM" id="j1$XMeHzra" role="3uHU7w">
+                    <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                    <node concept="EsrRn" id="j1$XMeHzU3" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -1047,9 +1051,10 @@
                     <ref role="3cqZAo" node="68wLGjp$PAR" resolve="hexConcept" />
                   </node>
                 </node>
-                <node concept="2YIFZM" id="6mBw0A_6xhQ" role="3uHU7B">
-                  <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+                <node concept="2YIFZM" id="j1$XMeH$2S" role="3uHU7B">
+                  <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                   <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                  <node concept="EsrRn" id="j1$XMeH$82" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -1116,9 +1121,10 @@
                       <node concept="1Wqviy" id="6QsMU1GXpok" role="37wK5m" />
                     </node>
                   </node>
-                  <node concept="2YIFZM" id="1drMthgxuWe" role="3uHU7B">
-                    <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+                  <node concept="2YIFZM" id="j1$XMeH$fu" role="3uHU7B">
+                    <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                    <node concept="EsrRn" id="j1$XMeH$mC" role="37wK5m" />
                   </node>
                 </node>
               </node>

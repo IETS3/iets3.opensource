@@ -1324,6 +1324,24 @@
       <node concept="3Tm1VV" id="5Ys_ngSn72W" role="1B3o_S" />
       <node concept="10P_77" id="5Ys_ngSn72X" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="CR1XcAuT6c" role="jymVt" />
+    <node concept="3clFb_" id="CR1XcAuTxl" role="jymVt">
+      <property role="TrG5h" value="filterHexadecimalSupportingNodes" />
+      <node concept="3clFbS" id="CR1XcAuTxm" role="3clF47">
+        <node concept="3clFbF" id="CR1XcAvbzH" role="3cqZAp">
+          <node concept="3clFbT" id="CR1XcAvbzG" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="CR1XcAuTxp" role="1B3o_S" />
+      <node concept="10P_77" id="CR1XcAuTxq" role="3clF45" />
+      <node concept="37vLTG" id="CR1XcAuW1g" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="CR1XcAuW1f" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="CR1XcAuTjT" role="jymVt" />
     <node concept="2tJIrI" id="5Ys_ngSn6GF" role="jymVt" />
     <node concept="3clFb_" id="1DSLxNDLebJ" role="jymVt">
       <property role="TrG5h" value="useParenthesisInsteadOfBracketsForTuples" />

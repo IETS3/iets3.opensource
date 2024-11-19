@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -1062,9 +1063,10 @@
             </node>
           </node>
           <node concept="3fqX7Q" id="7NAAzNNnun3" role="3clFbw">
-            <node concept="2YIFZM" id="7NAAzNNnun5" role="3fr31v">
-              <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+            <node concept="2YIFZM" id="j1$XMeJ6wo" role="3fr31v">
+              <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
               <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+              <node concept="2Sf5sV" id="j1$XMeJ6QL" role="37wK5m" />
             </node>
           </node>
         </node>
