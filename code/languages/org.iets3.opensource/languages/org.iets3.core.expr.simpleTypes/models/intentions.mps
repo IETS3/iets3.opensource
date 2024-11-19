@@ -99,7 +99,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -213,7 +213,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1154,6 +1154,21 @@
     </node>
     <node concept="2SaL7w" id="65S0ZNFKiJ9" role="2ZfVeh">
       <node concept="3clFbS" id="65S0ZNFKiJa" role="2VODD2">
+        <node concept="3clFbJ" id="FxpyC$Blcy" role="3cqZAp">
+          <node concept="3clFbS" id="FxpyC$Blcz" role="3clFbx">
+            <node concept="3cpWs6" id="FxpyC$Blc$" role="3cqZAp">
+              <node concept="3clFbT" id="FxpyC$Blc_" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="FxpyC$BlcA" role="3clFbw">
+            <node concept="2YIFZM" id="FxpyC$BlcB" role="3fr31v">
+              <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
+              <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+              <node concept="2Sf5sV" id="FxpyC$BlcC" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="FxpyC$Blb2" role="3cqZAp" />
         <node concept="3clFbJ" id="65S0ZNFKdTk" role="3cqZAp">
           <node concept="3clFbS" id="65S0ZNFKdTl" role="3clFbx">
             <node concept="3cpWs6" id="65S0ZNFKdTm" role="3cqZAp">
@@ -1252,6 +1267,21 @@
     </node>
     <node concept="2SaL7w" id="65S0ZNFKle3" role="2ZfVeh">
       <node concept="3clFbS" id="65S0ZNFKle4" role="2VODD2">
+        <node concept="3clFbJ" id="FxpyC$Bj_e" role="3cqZAp">
+          <node concept="3clFbS" id="FxpyC$Bj_f" role="3clFbx">
+            <node concept="3cpWs6" id="FxpyC$Bj_g" role="3cqZAp">
+              <node concept="3clFbT" id="FxpyC$Bj_h" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="FxpyC$Bj_i" role="3clFbw">
+            <node concept="2YIFZM" id="FxpyC$Bj_j" role="3fr31v">
+              <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
+              <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+              <node concept="2Sf5sV" id="FxpyC$Bj_k" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="FxpyC$Bjzo" role="3cqZAp" />
         <node concept="3clFbJ" id="5JKfLQ8iJPm" role="3cqZAp">
           <node concept="3clFbS" id="5JKfLQ8iJPn" role="3clFbx">
             <node concept="3cpWs6" id="5JKfLQ8iJPo" role="3cqZAp">
