@@ -94,7 +94,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -221,7 +221,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -738,9 +738,10 @@
                       <node concept="1Wqviy" id="6QsMU1GXpok" role="37wK5m" />
                     </node>
                   </node>
-                  <node concept="2YIFZM" id="1drMthgyoUJ" role="3uHU7B">
-                    <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+                  <node concept="2YIFZM" id="j1$XMexE8y" role="3uHU7B">
+                    <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                    <node concept="EsrRn" id="j1$XMexEeW" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -944,9 +945,10 @@
                     <ref role="3cqZAo" node="5Ys_ngSoNsa" resolve="hexConcept" />
                   </node>
                 </node>
-                <node concept="2YIFZM" id="6mBw0A_6Huf" role="3uHU7B">
-                  <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+                <node concept="2YIFZM" id="j1$XMexDfT" role="3uHU7B">
+                  <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                   <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                  <node concept="EsrRn" id="j1$XMexDRT" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -1016,9 +1018,10 @@
                       <node concept="1Wqviy" id="6QsMU1GSycK" role="37wK5m" />
                     </node>
                   </node>
-                  <node concept="2YIFZM" id="5WDn9aTqY$r" role="3uHU7B">
-                    <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+                  <node concept="2YIFZM" id="j1$XMexEno" role="3uHU7B">
+                    <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                    <node concept="EsrRn" id="j1$XMexERA" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -1222,9 +1225,10 @@
                     <ref role="3cqZAo" node="6QsMU1GXBJR" resolve="hexConcept" />
                   </node>
                 </node>
-                <node concept="2YIFZM" id="6mBw0A_6xhQ" role="3uHU7B">
-                  <ref role="37wK5l" to="xfg9:5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+                <node concept="2YIFZM" id="j1$XMexF0f" role="3uHU7B">
+                  <ref role="37wK5l" to="xfg9:CR1XcAv3uo" resolve="areHexadecimalNumbersSupported" />
                   <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                  <node concept="EsrRn" id="j1$XMexFrP" role="37wK5m" />
                 </node>
               </node>
             </node>

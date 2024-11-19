@@ -51,7 +51,7 @@
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
         <child id="1188214630783" name="value" index="2B76xF" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1188214545140" name="jetbrains.mps.baseLanguage.structure.AnnotationInstanceValue" flags="ng" index="2B6LJw">
@@ -119,7 +119,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
@@ -185,7 +185,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -212,7 +212,7 @@
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -312,7 +312,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1349,6 +1349,37 @@
       <node concept="3Tm1VV" id="5Ys_ngSnp$m" role="1B3o_S" />
       <node concept="10P_77" id="5Ys_ngSnp$n" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="CR1XcAuYp3" role="jymVt" />
+    <node concept="2YIFZL" id="CR1XcAv3uo" role="jymVt">
+      <property role="TrG5h" value="areHexadecimalNumbersSupported" />
+      <node concept="3clFbS" id="CR1XcAv3ur" role="3clF47">
+        <node concept="3clFbF" id="CR1XcAv6_d" role="3cqZAp">
+          <node concept="1Wc70l" id="CR1XcAv7Y1" role="3clFbG">
+            <node concept="2OqwBi" id="CR1XcAv8V3" role="3uHU7w">
+              <node concept="1rXfSq" id="CR1XcAv8ne" role="2Oq$k0">
+                <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
+              </node>
+              <node concept="liA8E" id="CR1XcAv9Nr" role="2OqNvi">
+                <ref role="37wK5l" to="oq0c:CR1XcAuTxl" resolve="filterHexSupportingNodes" />
+                <node concept="37vLTw" id="j1$XMexB82" role="37wK5m">
+                  <ref role="3cqZAo" node="CR1XcAv4ps" resolve="node" />
+                </node>
+              </node>
+            </node>
+            <node concept="1rXfSq" id="CR1XcAv6_c" role="3uHU7B">
+              <ref role="37wK5l" node="5Ys_ngSnp$h" resolve="allowHexadecimalNumbers" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="CR1XcAv1lt" role="1B3o_S" />
+      <node concept="10P_77" id="CR1XcAv39B" role="3clF45" />
+      <node concept="37vLTG" id="CR1XcAv4ps" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="CR1XcAv4pr" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="CR1XcAuZVx" role="jymVt" />
     <node concept="2YIFZL" id="1DSLxNDLgVH" role="jymVt">
       <property role="TrG5h" value="useParenthesisInsteadOfBracketsForTuples" />
       <node concept="3clFbS" id="1DSLxNDLgVI" role="3clF47">
