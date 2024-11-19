@@ -498,7 +498,7 @@
                                   <node concept="2PDubS" id="IJ8MgQ1MY5" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~Thread.sleep(long)" resolve="sleep" />
                                     <node concept="3cmrfG" id="IJ8MgQ1NOZ" role="37wK5m">
-                                      <property role="3cmrfH" value="10" />
+                                      <property role="3cmrfH" value="50" />
                                     </node>
                                   </node>
                                 </node>
