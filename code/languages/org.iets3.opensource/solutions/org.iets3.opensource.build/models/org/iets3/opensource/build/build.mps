@@ -515,9 +515,6 @@
       <node concept="m$_yC" id="5wLtKNeT8ww" role="m$_yJ">
         <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
       </node>
-      <node concept="m$_yC" id="4C8CrwW7i1C" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4iIKqJTZ5I8" resolve="de.q60.shadowmodels" />
-      </node>
       <node concept="m$_yC" id="6rBfBe1Xaps" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
       </node>
@@ -7389,11 +7386,6 @@
         <node concept="1SiIV0" id="7PpEEHv1E$o" role="3bR37C">
           <node concept="3bR9La" id="7PpEEHv1E$p" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7PpEEHv1E$q" role="3bR37C">
-          <node concept="3bR9La" id="7PpEEHv1E$r" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7oVDYnclR8f" resolve="io.netty" />
           </node>
         </node>
         <node concept="1SiIV0" id="jqB9Ud$EY1" role="3bR37C">
