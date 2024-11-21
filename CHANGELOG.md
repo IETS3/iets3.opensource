@@ -11,9 +11,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Hexadecimal attributes are now better visible in the diff view.
 
-### Changes
+### Changed
 
 - It is now possible to customize where hex values are enabled. With PrimitiveTypeMapper#filterHexadecimalSupportingNodes you can now enable/disable them for specific nodes.
+- The units B and b were renamed to Byte and bit to avoid confusion.
 
 ## October 2024
 
