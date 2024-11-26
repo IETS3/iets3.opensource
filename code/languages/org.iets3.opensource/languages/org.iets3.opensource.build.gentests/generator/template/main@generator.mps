@@ -334,6 +334,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
@@ -392,6 +393,7 @@
   </registry>
   <node concept="13MO4I" id="3I_AWKAl90q">
     <property role="TrG5h" value="reduce_RunKernelFGeneratedTests" />
+    <property role="3GE5qa" value="generatorTests" />
     <ref role="3gUMe" to="dc1n:3ZBI8AwcMjV" resolve="RunKernelFGeneratedTests" />
     <node concept="1l3spW" id="16twgkTapco" role="13RCb5">
       <property role="TrG5h" value="_project" />
@@ -2591,6 +2593,7 @@
   </node>
   <node concept="13MO4I" id="7a5Ko4x$u8K">
     <property role="TrG5h" value="reduce_CustomRunnerAspect" />
+    <property role="3GE5qa" value="runnerAspect" />
     <ref role="3gUMe" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
     <node concept="1l3spW" id="3BExUgsKgFP" role="13RCb5">
       <property role="TrG5h" value="_project" />
@@ -2942,12 +2945,7 @@
                                     <node concept="1iwH7S" id="7ro1ZztzfsV" role="37wK5m" />
                                   </node>
                                 </node>
-                                <node concept="2OqwBi" id="4zlO3QT9DTw" role="2Oq$k0">
-                                  <node concept="30H73N" id="4zlO3QT9DTx" role="2Oq$k0" />
-                                  <node concept="3TrEf2" id="4zlO3QT9DTJ" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="dc1n:7Lttyc2SIcb" resolve="path" />
-                                  </node>
-                                </node>
+                                <node concept="30H73N" id="4zlO3QT9DTx" role="2Oq$k0" />
                               </node>
                             </node>
                           </node>
@@ -2955,18 +2953,15 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="1W57fq" id="7a5Ko4x_75f" role="lGtFl">
-                    <node concept="3IZrLx" id="7a5Ko4x_75g" role="3IZSJc">
-                      <node concept="3clFbS" id="7a5Ko4x_75h" role="2VODD2">
-                        <node concept="3clFbF" id="7a5Ko4x_7W7" role="3cqZAp">
-                          <node concept="2OqwBi" id="7a5Ko4x_8V2" role="3clFbG">
-                            <node concept="2OqwBi" id="7a5Ko4x_8gS" role="2Oq$k0">
-                              <node concept="30H73N" id="7a5Ko4x_7W6" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="7a5Ko4x_8AW" role="2OqNvi">
-                                <ref role="3Tt5mk" to="dc1n:7Lttyc2SIcb" resolve="path" />
-                              </node>
+                  <node concept="1WS0z7" id="7a5Ko4xUhZu" role="lGtFl">
+                    <node concept="3JmXsc" id="7a5Ko4xUhZv" role="3Jn$fo">
+                      <node concept="3clFbS" id="7a5Ko4xUhZw" role="2VODD2">
+                        <node concept="3clFbF" id="7a5Ko4xUilx" role="3cqZAp">
+                          <node concept="2OqwBi" id="7a5Ko4xUiLD" role="3clFbG">
+                            <node concept="30H73N" id="7a5Ko4xUilw" role="2Oq$k0" />
+                            <node concept="3Tsc0h" id="7a5Ko4xUjdd" role="2OqNvi">
+                              <ref role="3TtcxE" to="dc1n:7Lttyc2SIcb" resolve="realtivePaths" />
                             </node>
-                            <node concept="3x8VRR" id="7a5Ko4x_9z9" role="2OqNvi" />
                           </node>
                         </node>
                       </node>

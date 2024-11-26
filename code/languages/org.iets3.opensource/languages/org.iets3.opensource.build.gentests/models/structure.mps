@@ -38,6 +38,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -48,6 +51,7 @@
     <property role="TrG5h" value="RunKernelFGeneratedTests" />
     <property role="34LRSv" value="run kernelf generated tests" />
     <property role="R4oN_" value="run the tests for a module" />
+    <property role="3GE5qa" value="generatorTests" />
     <ref role="1TJDcQ" to="3ior:34DbxDwRlgt" resolve="BuildAspect" />
     <node concept="1TJgyj" id="3ZBI8AwcMjW" role="1TKVEi">
       <property role="IQ2ns" value="4604852045247358204" />
@@ -65,6 +69,7 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="R4oN_" value="a dependency to a build script module" />
+    <property role="3GE5qa" value="generatorTests" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="16twgkTjtsg" role="1TKVEi">
       <property role="IQ2ns" value="1269312529424570128" />
@@ -77,11 +82,26 @@
     <property role="EcuMT" value="8961448726281507188" />
     <property role="TrG5h" value="CustomRunnerAspect" />
     <property role="34LRSv" value="run code on steroids" />
+    <property role="3GE5qa" value="runnerAspect" />
     <ref role="1TJDcQ" to="as3y:3BExUgsK89Y" resolve="BuildSolutionRunnerAspect" />
+    <node concept="1TJgyj" id="7a5Ko4xUCFT" role="1TKVEi">
+      <property role="IQ2ns" value="8252214652590263033" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="requiredModelDirectory" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7a5Ko4xUBAC" resolve="RequiredModelDirectory" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7a5Ko4xUBAC">
+    <property role="EcuMT" value="8252214652590258600" />
+    <property role="3GE5qa" value="runnerAspect" />
+    <property role="TrG5h" value="RequiredModelDirectory" />
+    <property role="34LRSv" value="path" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="7Lttyc2SIcb" role="1TKVEi">
       <property role="IQ2ns" value="8961448726281511691" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="path" />
+      <property role="20kJfa" value="realtivePaths" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3ior:6qcrfIJFdKY" resolve="BuildSourcePath" />
     </node>

@@ -20,8 +20,11 @@
       <concept id="4604852045247358203" name="org.iets3.opensource.build.gentests.structure.RunKernelFGeneratedTests" flags="ng" index="2vP9LM">
         <reference id="4604852045247358204" name="testModules" index="2vP9LP" />
       </concept>
+      <concept id="8252214652590258600" name="org.iets3.opensource.build.gentests.structure.RequiredModelDirectory" flags="ng" index="1jrVwD">
+        <child id="8961448726281511691" name="realtivePaths" index="1YJTkC" />
+      </concept>
       <concept id="8961448726281507188" name="org.iets3.opensource.build.gentests.structure.CustomRunnerAspect" flags="ng" index="1YJUtn">
-        <child id="8961448726281511691" name="path" index="1YJTkC" />
+        <child id="8252214652590263033" name="requiredModelDirectory" index="1jrOHS" />
       </concept>
     </language>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -14879,12 +14882,31 @@
     <node concept="1YJUtn" id="7Lttyc2Ti3W" role="1hWBAP">
       <property role="3MWwXZ" value="MainClass" />
       <ref role="30Vec$" node="7OQaAJRCS6v" resolve="org.iets3.core.InterpreterTestExecutor" />
-      <node concept="398BVA" id="7Lttyc2W9kv" role="1YJTkC">
-        <ref role="398BVh" node="7OQaAJRI74_" resolve="iets3.lang.opensource" />
-        <node concept="2Ry0Ak" id="7Lttyc2W9rm" role="iGT6I">
-          <property role="2Ry0Am" value="tests" />
-          <node concept="2Ry0Ak" id="7Lttyc2W9yd" role="2Ry0An">
-            <property role="2Ry0Am" value="test.in.expr.os" />
+      <node concept="1jrVwD" id="7a5Ko4xVVug" role="1jrOHS">
+        <node concept="398BVA" id="7a5Ko4xVVxH" role="1YJTkC">
+          <ref role="398BVh" node="7OQaAJRI74_" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="7a5Ko4xVVC_" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="7a5Ko4xVVG3" role="2Ry0An">
+              <property role="2Ry0Am" value="test.in.expr.os" />
+              <node concept="2Ry0Ak" id="7a5Ko4xVVMU" role="2Ry0An">
+                <property role="2Ry0Am" value="models" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1jrVwD" id="7a5Ko4y0E6f" role="1jrOHS">
+        <node concept="398BVA" id="7a5Ko4y0E6o" role="1YJTkC">
+          <ref role="398BVh" node="7OQaAJRI74_" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="7a5Ko4y0E6p" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="7a5Ko4y0E9T" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ts.expr.os" />
+              <node concept="2Ry0Ak" id="7a5Ko4y0Edl" role="2Ry0An">
+                <property role="2Ry0Am" value="models" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

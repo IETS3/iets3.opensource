@@ -207,6 +207,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -224,6 +227,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="79dWhRIaSWz">
+    <property role="3GE5qa" value="generatorTests" />
     <ref role="13h7C2" to="dc1n:3ZBI8AwcMjV" resolve="RunKernelFGeneratedTests" />
     <node concept="13i0hz" id="6Fs_Z9I$Bez" role="13h7CS">
       <property role="TrG5h" value="getGentestsRtSolutionName" />
@@ -955,6 +959,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7Lttyc2SHJQ">
+    <property role="3GE5qa" value="runnerAspect" />
     <ref role="13h7C2" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
     <node concept="13hLZK" id="7Lttyc2SHJR" role="13h7CW">
       <node concept="3clFbS" id="7Lttyc2SHJS" role="2VODD2" />

@@ -11,6 +11,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="as3y" ref="r:0f2b4a26-93a1-4327-97ef-ca91b7a4cf5e(jetbrains.mps.build.mps.runner.structure)" implicit="true" />
     <import index="tos2" ref="r:19e846e2-aa6a-48a9-8367-2a1eda2709e7(jetbrains.mps.build.mps.runner.behavior)" implicit="true" />
+    <import index="ot6o" ref="r:1267752b-a233-4432-a848-3e68e0ea0db1(jetbrains.mps.build.workflow.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -29,9 +30,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
-        <reference id="6718020819487620874" name="menu" index="A1WHt" />
-      </concept>
+      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -39,6 +38,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -52,7 +52,7 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -121,8 +121,14 @@
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="3ZBI8AwcMko">
+    <property role="3GE5qa" value="generatorTests" />
     <ref role="1XX52x" to="dc1n:3ZBI8AwcMjV" resolve="RunKernelFGeneratedTests" />
     <node concept="3EZMnI" id="3ZBI8AwcMkq" role="2wV5jI">
       <node concept="l2Vlx" id="3ZBI8AwcMkr" role="2iSdaV" />
@@ -140,6 +146,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="16twgkTjtsG">
+    <property role="3GE5qa" value="generatorTests" />
     <ref role="1XX52x" to="dc1n:16twgkTjtn5" resolve="GeneratedTestsDependency_Module" />
     <node concept="1iCGBv" id="16twgkTjtsI" role="2wV5jI">
       <ref role="1NtTu8" to="dc1n:16twgkTjtsg" resolve="module" />
@@ -152,6 +159,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7Lttyc2SJEJ">
+    <property role="3GE5qa" value="runnerAspect" />
     <ref role="1XX52x" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
     <node concept="3EZMnI" id="3BExUgsK8pL" role="2wV5jI">
       <node concept="3F0ifn" id="3BExUgsK8pS" role="3EZMnx">
@@ -246,14 +254,12 @@
         <node concept="3EZMnI" id="7Lttyc2SMx4" role="3EZMnx">
           <node concept="3XFhqQ" id="7Lttyc2SMx5" role="3EZMnx" />
           <node concept="3F0ifn" id="7Lttyc2SMx6" role="3EZMnx">
-            <property role="3F0ifm" value="additional resources to load from:" />
+            <property role="3F0ifm" value="additional models to load:" />
             <ref role="1k5W1q" to="o2va:16Vg0jOctJb" resolve="projectPartKeyword" />
           </node>
-          <node concept="3F1sOY" id="7Lttyc2Tx93" role="3EZMnx">
-            <ref role="1NtTu8" to="dc1n:7Lttyc2SIcb" resolve="path" />
-            <node concept="A1WHu" id="7Lttyc2UjkJ" role="3vIgyS">
-              <ref role="A1WHt" to="o2va:1wEcoXjJDhB" resolve="transform_CompositePath_BuildSourcePath" />
-            </node>
+          <node concept="3F2HdR" id="7a5Ko4xUfkK" role="3EZMnx">
+            <ref role="1NtTu8" to="dc1n:7a5Ko4xUCFT" resolve="requiredModelDirectory" />
+            <node concept="2EHx9g" id="7a5Ko4xUfvk" role="2czzBx" />
           </node>
           <node concept="2iRfu4" id="7Lttyc2SMx9" role="2iSdaV" />
         </node>
@@ -337,6 +343,23 @@
           <ref role="1NtTu8" to="as3y:1XKmunHw_qq" resolve="classSimpleName" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7a5Ko4xUDd7">
+    <property role="3GE5qa" value="runnerAspect" />
+    <ref role="1XX52x" to="dc1n:7a5Ko4xUBAC" resolve="RequiredModelDirectory" />
+    <node concept="3EZMnI" id="7a5Ko4xVg37" role="2wV5jI">
+      <node concept="3F0ifn" id="7a5Ko4xVEAt" role="3EZMnx">
+        <property role="3F0ifm" value="path" />
+        <ref role="1k5W1q" to="ot6o:hwW5xkg" resolve="keyword" />
+        <node concept="VPxyj" id="7a5Ko4xVEVQ" role="3F10Kt" />
+      </node>
+      <node concept="3F1sOY" id="7a5Ko4xVge7" role="3EZMnx">
+        <ref role="1NtTu8" to="dc1n:7Lttyc2SIcb" resolve="realtivePaths" />
+        <ref role="1ERwB7" to="o2va:z2ICeMRNZ6" resolve="delete_BuildStringPart" />
+      </node>
+      <node concept="3F0ifn" id="7a5Ko4y0ymD" role="3EZMnx" />
+      <node concept="2iRfu4" id="7a5Ko4xVg3a" role="2iSdaV" />
     </node>
   </node>
 </model>
