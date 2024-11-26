@@ -93,6 +93,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -359,7 +362,20 @@
                   </node>
                   <node concept="ANE8D" id="wLSoj1u2hB" role="2OqNvi" />
                 </node>
+                <node concept="3clFbT" id="3ViSmQmuiov" role="37wK5m">
+                  <property role="3clFbU" value="true" />
+                </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3ViSmQmuFWj" role="3cqZAp">
+          <node concept="2OqwBi" id="3ViSmQmuGjc" role="3clFbG">
+            <node concept="37vLTw" id="3ViSmQmuFWh" role="2Oq$k0">
+              <ref role="3cqZAo" node="wLSoj1u2hv" resolve="executor" />
+            </node>
+            <node concept="liA8E" id="3ViSmQmuGDH" role="2OqNvi">
+              <ref role="37wK5l" to="d6jk:6UkhXJgKy3g" resolve="init" />
             </node>
           </node>
         </node>
