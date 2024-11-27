@@ -415,6 +415,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -14499,6 +14500,87 @@
     <node concept="2tJIrI" id="4rDeVputMVM" role="jymVt" />
     <node concept="2tJIrI" id="1_yOWEXeo3y" role="jymVt" />
     <node concept="3Tm1VV" id="3OrGkZCn9ZR" role="1B3o_S" />
+  </node>
+  <node concept="3HP615" id="4do2HCUdCMu">
+    <property role="3GE5qa" value="substitutionCustomization" />
+    <property role="TrG5h" value="SubstitutionCustomizer" />
+    <node concept="3clFb_" id="4do2HCUdE1k" role="jymVt">
+      <property role="TrG5h" value="filterExpression" />
+      <node concept="3clFbS" id="4do2HCUdE1n" role="3clF47" />
+      <node concept="3Tm1VV" id="4do2HCUdE1o" role="1B3o_S" />
+      <node concept="10P_77" id="4do2HCUdE15" role="3clF45" />
+      <node concept="37vLTG" id="4do2HCUdEvE" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="4do2HCUdEvD" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4do2HCUdEwG" role="3clF46">
+        <property role="TrG5h" value="parentNode" />
+        <node concept="3Tqbb2" id="4do2HCUdEFs" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4do2HCUdEJQ" role="3clF46">
+        <property role="TrG5h" value="currentTargetNode" />
+        <node concept="3Tqbb2" id="4do2HCUdERT" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4do2HCUdEZj" role="3clF46">
+        <property role="TrG5h" value="link" />
+        <node concept="3uibUv" id="4do2HCUdF$q" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4do2HCUdF_C" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="4do2HCUdFTl" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4do2HCUdFU$" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="4do2HCUdGiE" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4do2HCUdCMv" role="1B3o_S" />
+    <node concept="3clFb_" id="4do2HCUnoyQ" role="jymVt">
+      <property role="TrG5h" value="filterToplevelExprContent" />
+      <node concept="3clFbS" id="4do2HCUnoyR" role="3clF47" />
+      <node concept="3Tm1VV" id="4do2HCUnoyS" role="1B3o_S" />
+      <node concept="10P_77" id="4do2HCUnoyT" role="3clF45" />
+      <node concept="37vLTG" id="4do2HCUnoyU" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="4do2HCUnoyV" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4do2HCUnoyW" role="3clF46">
+        <property role="TrG5h" value="parentNode" />
+        <node concept="3Tqbb2" id="4do2HCUnoyX" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4do2HCUnoyY" role="3clF46">
+        <property role="TrG5h" value="currentTargetNode" />
+        <node concept="3Tqbb2" id="4do2HCUnoyZ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4do2HCUnoz0" role="3clF46">
+        <property role="TrG5h" value="link" />
+        <node concept="3uibUv" id="4do2HCUnoz1" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4do2HCUnoz2" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="4do2HCUnoz3" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4do2HCUnoz4" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="4do2HCUnoz5" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4do2HCUnokH" role="jymVt" />
+  </node>
+  <node concept="vrV6u" id="4do2HCUdCLZ">
+    <property role="TrG5h" value="substitutionCustomization" />
+    <property role="3GE5qa" value="substitutionCustomization" />
+    <node concept="3uibUv" id="4do2HCUdGLe" role="luc8K">
+      <ref role="3uigEE" node="4do2HCUdCMu" resolve="SubstitutionCustomizer" />
+    </node>
   </node>
 </model>
 

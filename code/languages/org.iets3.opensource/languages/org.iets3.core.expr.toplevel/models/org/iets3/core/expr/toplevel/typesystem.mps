@@ -2,8 +2,8 @@
 <model ref="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -736,11 +736,11 @@
           </node>
         </node>
         <node concept="3y3z36" id="49WTic8gyr6" role="3clFbw">
-          <node concept="37vLTw" id="3eH6BL4eAN2" role="3uHU7w">
-            <ref role="3cqZAo" node="3eH6BL4eAMS" resolve="expectedSize" />
-          </node>
           <node concept="37vLTw" id="3eH6BL4eAWw" role="3uHU7B">
             <ref role="3cqZAo" node="3eH6BL4eAWq" resolve="actualSize" />
+          </node>
+          <node concept="37vLTw" id="3eH6BL4eAN2" role="3uHU7w">
+            <ref role="3cqZAo" node="3eH6BL4eAMS" resolve="expectedSize" />
           </node>
         </node>
         <node concept="9aQIb" id="49WTic8gDnv" role="9aQIa">
@@ -1075,11 +1075,11 @@
                   </node>
                 </node>
                 <node concept="3y3z36" id="7D7uZV2o8Jt" role="3clFbw">
-                  <node concept="37vLTw" id="3eH6BL4eF4s" role="3uHU7w">
-                    <ref role="3cqZAo" node="3eH6BL4eF4o" resolve="expectedSize" />
-                  </node>
                   <node concept="37vLTw" id="3eH6BL4eG1G" role="3uHU7B">
                     <ref role="3cqZAo" node="3eH6BL4eG1C" resolve="actualSize" />
+                  </node>
+                  <node concept="37vLTw" id="3eH6BL4eF4s" role="3uHU7w">
+                    <ref role="3cqZAo" node="3eH6BL4eF4o" resolve="expectedSize" />
                   </node>
                 </node>
                 <node concept="9aQIb" id="7D7uZV2p37r" role="9aQIa">
@@ -1173,11 +1173,11 @@
                         </node>
                       </node>
                       <node concept="3eOVzh" id="7D7uZV2p3fj" role="1Dwp0S">
-                        <node concept="37vLTw" id="3eH6BL4eG1H" role="3uHU7w">
-                          <ref role="3cqZAo" node="3eH6BL4eG1C" resolve="actualSize" />
-                        </node>
                         <node concept="37vLTw" id="7D7uZV2p38T" role="3uHU7B">
                           <ref role="3cqZAo" node="7D7uZV2p38e" resolve="i" />
+                        </node>
+                        <node concept="37vLTw" id="3eH6BL4eG1H" role="3uHU7w">
+                          <ref role="3cqZAo" node="3eH6BL4eG1C" resolve="actualSize" />
                         </node>
                       </node>
                       <node concept="3uNrnE" id="7D7uZV2p54a" role="1Dwrff">
@@ -2332,6 +2332,9 @@
         <node concept="3clFbS" id="RIvadv3a$u" role="3clFbx">
           <node concept="2MkqsV" id="RIvadv3hzr" role="3cqZAp">
             <node concept="3cpWs3" id="RIvadv3hLX" role="2MkJ7o">
+              <node concept="Xl_RD" id="RIvadv3hzE" role="3uHU7B">
+                <property role="Xl_RC" value="cycle between elements detected: " />
+              </node>
               <node concept="2OqwBi" id="3eH6BL4et7_" role="3uHU7w">
                 <node concept="2OqwBi" id="3eH6BL4er3C" role="2Oq$k0">
                   <node concept="37vLTw" id="RIvadv3hMj" role="2Oq$k0">
@@ -2363,9 +2366,6 @@
                     <property role="Xl_RC" value=", " />
                   </node>
                 </node>
-              </node>
-              <node concept="Xl_RD" id="RIvadv3hzE" role="3uHU7B">
-                <property role="Xl_RC" value="cycle between elements detected: " />
               </node>
             </node>
             <node concept="1YBJjd" id="2Fd5B1gx_s7" role="1urrMF">

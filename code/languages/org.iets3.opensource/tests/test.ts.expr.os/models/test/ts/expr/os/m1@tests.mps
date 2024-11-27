@@ -10671,7 +10671,7 @@
       <node concept="_iOnV" id="3gKGtj9bXxZ" role="1qenE9">
         <property role="TrG5h" value="enums" />
         <node concept="1Ws0TD" id="3gKGtj9bXy2" role="_iOnC">
-          <property role="1WsWdv" value="Regular Enums" />
+          <property role="1WsWdv" value="Regular Enums3" />
         </node>
         <node concept="_ixoA" id="3gKGtj9bXy3" role="_iOnC" />
         <node concept="5mgZ8" id="3gKGtj9bXy4" role="_iOnC">
@@ -10731,23 +10731,6 @@
           </node>
         </node>
         <node concept="_ixoA" id="3gKGtj9bXyu" role="_iOnC" />
-        <node concept="2zPypq" id="3gKGtj9bXyv" role="_iOnC">
-          <property role="TrG5h" value="isSomeOceanBlue1" />
-          <node concept="2vmvy5" id="3gKGtj9bXyw" role="2zM23F" />
-          <node concept="1QScDb" id="3gKGtj9bXyx" role="2zPyp_">
-            <node concept="2JjPkS" id="3gKGtj9bXyy" role="1QScD9">
-              <ref role="2Jt$xV" node="3gKGtj9bXy7" resolve="blue" />
-            </node>
-            <node concept="2nD44o" id="3gKGtj9bXyz" role="30czhm">
-              <node concept="_emDc" id="3gKGtj9bXy$" role="2nD44t">
-                <ref role="_emDf" node="3gKGtj9bXyd" resolve="ocean" />
-              </node>
-            </node>
-            <node concept="7CXmI" id="5IOlOc8Lw1a" role="lGtFl">
-              <node concept="2DdRWr" id="5IOlOc8Lw1b" role="7EUXB" />
-            </node>
-          </node>
-        </node>
         <node concept="2zPypq" id="3gKGtj9bXyB" role="_iOnC">
           <property role="TrG5h" value="isSomeOceanBlu2e" />
           <node concept="Uns6S" id="3gKGtj9bXyC" role="2zM23F">
