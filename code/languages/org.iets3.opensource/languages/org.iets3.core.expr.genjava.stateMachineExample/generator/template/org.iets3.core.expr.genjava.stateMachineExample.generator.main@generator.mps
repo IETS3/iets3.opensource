@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c2a21f6e-a5f1-4b58-a3ee-b8e6d3a7d37e(main@generator)">
+<model ref="r:c2a21f6e-a5f1-4b58-a3ee-b8e6d3a7d37e(org.iets3.core.expr.genjava.stateMachineExample.generator.main@generator)">
   <persistence version="9" />
   <languages>
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
