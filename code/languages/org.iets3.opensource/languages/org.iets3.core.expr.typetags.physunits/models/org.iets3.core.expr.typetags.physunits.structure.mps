@@ -825,6 +825,16 @@
       <property role="TrG5h" value="metric" />
       <property role="1L1pqM" value="metric-scaled" />
     </node>
+    <node concept="25R33" id="4zqoYUyQ7z3" role="25R1y">
+      <property role="3tVfz5" value="5249618192239196355" />
+      <property role="TrG5h" value="metric_positive" />
+      <property role="1L1pqM" value="metric-scaled (positive)" />
+    </node>
+    <node concept="25R33" id="4zqoYUyQ7z4" role="25R1y">
+      <property role="3tVfz5" value="5249618192239196356" />
+      <property role="TrG5h" value="metric_negative" />
+      <property role="1L1pqM" value="metric-scaled (negative)" />
+    </node>
     <node concept="25R33" id="2hbaSyABMZQ" role="25R1y">
       <property role="3tVfz5" value="2615231874529701878" />
       <property role="TrG5h" value="binary_iec" />
