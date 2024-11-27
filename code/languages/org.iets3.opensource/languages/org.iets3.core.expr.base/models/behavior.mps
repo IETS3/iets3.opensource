@@ -28883,29 +28883,94 @@
         </node>
         <node concept="3clFbJ" id="4YiHwWVM1Iq" role="3cqZAp">
           <node concept="3clFbS" id="4YiHwWVM1Is" role="3clFbx">
-            <node concept="3clFbF" id="4YiHwWVM2rH" role="3cqZAp">
-              <node concept="37vLTI" id="4YiHwWVM3cj" role="3clFbG">
-                <node concept="37vLTw" id="4YiHwWVM2rF" role="37vLTJ">
-                  <ref role="3cqZAo" node="6QsMU1GWS2K" resolve="value" />
+            <node concept="3cpWs8" id="4gPFP6uBVkH" role="3cqZAp">
+              <node concept="3cpWsn" id="4gPFP6uBVkI" role="3cpWs9">
+                <property role="TrG5h" value="integerValue" />
+                <node concept="3uibUv" id="4gPFP6uBR2q" role="1tU5fm">
+                  <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
                 </node>
-                <node concept="3cpWs3" id="4YiHwWVOmg1" role="37vLTx">
-                  <node concept="BsUDl" id="4YiHwWVOmIH" role="3uHU7B">
-                    <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
+                <node concept="2ShNRf" id="4gPFP6uBVkJ" role="33vP2m">
+                  <node concept="1pGfFk" id="4gPFP6uBVkK" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+                    <node concept="37vLTw" id="4gPFP6uBVkL" role="37wK5m">
+                      <ref role="3cqZAo" node="6QsMU1GWS2K" resolve="value" />
+                    </node>
                   </node>
-                  <node concept="2OqwBi" id="4YiHwWVM3cm" role="3uHU7w">
-                    <node concept="2ShNRf" id="4YiHwWVM3cn" role="2Oq$k0">
-                      <node concept="1pGfFk" id="4YiHwWVM3co" role="2ShVmc">
-                        <property role="373rjd" value="true" />
-                        <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
-                        <node concept="37vLTw" id="4YiHwWVM3cp" role="37wK5m">
-                          <ref role="3cqZAo" node="6QsMU1GWS2K" resolve="value" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4gPFP6uBWFz" role="3cqZAp">
+              <node concept="3clFbS" id="4gPFP6uBWF_" role="3clFbx">
+                <node concept="3clFbF" id="4YiHwWVM2rH" role="3cqZAp">
+                  <node concept="37vLTI" id="4YiHwWVM3cj" role="3clFbG">
+                    <node concept="37vLTw" id="4YiHwWVM2rF" role="37vLTJ">
+                      <ref role="3cqZAo" node="6QsMU1GWS2K" resolve="value" />
+                    </node>
+                    <node concept="3cpWs3" id="4YiHwWVOmg1" role="37vLTx">
+                      <node concept="BsUDl" id="4YiHwWVOmIH" role="3uHU7B">
+                        <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
+                      </node>
+                      <node concept="2OqwBi" id="4YiHwWVM3cm" role="3uHU7w">
+                        <node concept="37vLTw" id="4gPFP6uBVkM" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4gPFP6uBVkI" resolve="integer" />
+                        </node>
+                        <node concept="liA8E" id="4YiHwWVM3cq" role="2OqNvi">
+                          <ref role="37wK5l" to="xlxw:~BigInteger.toString(int)" resolve="toString" />
+                          <node concept="3cmrfG" id="4YiHwWVM3cr" role="37wK5m">
+                            <property role="3cmrfH" value="16" />
+                          </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="liA8E" id="4YiHwWVM3cq" role="2OqNvi">
-                      <ref role="37wK5l" to="xlxw:~BigInteger.toString(int)" resolve="toString" />
-                      <node concept="3cmrfG" id="4YiHwWVM3cr" role="37wK5m">
-                        <property role="3cmrfH" value="16" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2d3UOw" id="4gPFP6uC1fl" role="3clFbw">
+                <node concept="3cmrfG" id="4gPFP6uC1Rc" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="2OqwBi" id="4gPFP6uBX$5" role="3uHU7B">
+                  <node concept="37vLTw" id="4gPFP6uBWV$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4gPFP6uBVkI" resolve="integerValue" />
+                  </node>
+                  <node concept="liA8E" id="4gPFP6uBYwi" role="2OqNvi">
+                    <ref role="37wK5l" to="xlxw:~BigInteger.signum()" resolve="signum" />
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="4gPFP6uC31A" role="9aQIa">
+                <node concept="3clFbS" id="4gPFP6uC31B" role="9aQI4">
+                  <node concept="3clFbF" id="4gPFP6uC3in" role="3cqZAp">
+                    <node concept="37vLTI" id="4gPFP6uC3io" role="3clFbG">
+                      <node concept="37vLTw" id="4gPFP6uC3ip" role="37vLTJ">
+                        <ref role="3cqZAo" node="6QsMU1GWS2K" resolve="value" />
+                      </node>
+                      <node concept="3cpWs3" id="4gPFP6uC3iq" role="37vLTx">
+                        <node concept="3cpWs3" id="4gPFP6uC3_S" role="3uHU7B">
+                          <node concept="Xl_RD" id="4gPFP6uC3_V" role="3uHU7B">
+                            <property role="Xl_RC" value="-" />
+                          </node>
+                          <node concept="BsUDl" id="4gPFP6uC3ir" role="3uHU7w">
+                            <ref role="37wK5l" node="5JKfLQ9g2ZR" resolve="getHexPrefix" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="4gPFP6uC3is" role="3uHU7w">
+                          <node concept="2OqwBi" id="4gPFP6uC4sc" role="2Oq$k0">
+                            <node concept="37vLTw" id="4gPFP6uC3it" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4gPFP6uBVkI" resolve="integerValue" />
+                            </node>
+                            <node concept="liA8E" id="4gPFP6uC52g" role="2OqNvi">
+                              <ref role="37wK5l" to="xlxw:~BigInteger.abs()" resolve="abs" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="4gPFP6uC3iu" role="2OqNvi">
+                            <ref role="37wK5l" to="xlxw:~BigInteger.toString(int)" resolve="toString" />
+                            <node concept="3cmrfG" id="4gPFP6uC3iv" role="37wK5m">
+                              <property role="3cmrfH" value="16" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
