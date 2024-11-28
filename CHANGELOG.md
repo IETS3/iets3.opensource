@@ -12,9 +12,13 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Hexadecimal attributes are now better visible in the diff view.
 - Negative decimal values are now correctly converted to hexadecimal values.
 
-### Changes
+### Changed
 
 - It is now possible to customize where hex values are enabled. With PrimitiveTypeMapper#filterHexadecimalSupportingNodes you can now enable/disable them for specific nodes.
+
+### Added
+
+- If two quantities are compatible but implicit conversions are not enabled, this check can now be disabled through setting `IUnitLangConfig#allowMixingUnitPrefixesWithoutConversions` to true for the `PhysUnitLangConfig` extension point.
 
 ## October 2024
 
