@@ -116,7 +116,6 @@ ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRe
 
 // 'artifacts' is used in the generated ant scripts as build output directory
 ext.artifactsDir = new File(buildDir, 'artifacts')
-ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
 
 
 wrapper {
@@ -198,7 +197,6 @@ def defaultScriptArgs = [
         'mps.home'                          : resolveMps.destinationDir,
         'iets3.github.opensource.home'      : rootDir,
         'build.dir'                         : buildDir,
-        'mps.generator.skipUnmodifiedModels': incrementalBuild,
         'version'                           : version
 ]
 if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
