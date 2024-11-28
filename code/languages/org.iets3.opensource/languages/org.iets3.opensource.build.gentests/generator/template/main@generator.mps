@@ -304,6 +304,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
@@ -2958,9 +2961,14 @@
                       <node concept="3clFbS" id="7a5Ko4xUhZw" role="2VODD2">
                         <node concept="3clFbF" id="7a5Ko4xUilx" role="3cqZAp">
                           <node concept="2OqwBi" id="7a5Ko4xUiLD" role="3clFbG">
-                            <node concept="30H73N" id="7a5Ko4xUilw" role="2Oq$k0" />
-                            <node concept="3Tsc0h" id="7a5Ko4xUjdd" role="2OqNvi">
-                              <ref role="3TtcxE" to="dc1n:7Lttyc2SIcb" resolve="realtivePaths" />
+                            <node concept="2OqwBi" id="4gBl0l68DO9" role="2Oq$k0">
+                              <node concept="30H73N" id="7a5Ko4xUilw" role="2Oq$k0" />
+                              <node concept="3Tsc0h" id="4gBl0l68E6R" role="2OqNvi">
+                                <ref role="3TtcxE" to="dc1n:7a5Ko4xUCFT" resolve="requiredModelDirectory" />
+                              </node>
+                            </node>
+                            <node concept="13MTOL" id="4gBl0l68GEl" role="2OqNvi">
+                              <ref role="13MTZf" to="dc1n:7Lttyc2SIcb" resolve="realtivePaths" />
                             </node>
                           </node>
                         </node>
