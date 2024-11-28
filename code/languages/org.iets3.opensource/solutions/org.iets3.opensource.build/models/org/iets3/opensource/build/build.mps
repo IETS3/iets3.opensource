@@ -973,6 +973,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7HO$d5zo0ZM" role="3bR37C">
+          <node concept="3bR9La" id="7HO$d5zo0ZN" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5wLtKNeSWz5" role="3989C9">
