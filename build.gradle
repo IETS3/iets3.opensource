@@ -231,7 +231,7 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
                 classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
                 classpath: configurations.junitAnt.asPath)
         ant.junitreport {
-            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml', excludes: 'tmp/**')
             report(format: 'frames', todir: "$buildDir/junitreport")
         }
         ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
