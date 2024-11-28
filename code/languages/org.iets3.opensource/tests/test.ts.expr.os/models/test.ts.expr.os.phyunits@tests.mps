@@ -5133,6 +5133,9 @@
         <node concept="3GEVxB" id="3wrpJuuALAm" role="3i6evy">
           <ref role="3GEb4d" to="8ps7:3xM68GMigWy" resolve="SIDerivedUnits" />
         </node>
+        <node concept="3GEVxB" id="xExe$xkHsR" role="3i6evy">
+          <ref role="3GEb4d" to="8ps7:ZkGd2yKlml" resolve="UnitsOfInformationMetric" />
+        </node>
         <node concept="2zPypq" id="76ZhK6XZhug" role="_iOnC">
           <property role="TrG5h" value="a" />
           <node concept="30dDZf" id="5XaocLWH3Zw" role="2zPyp_">
@@ -7550,7 +7553,7 @@
   <node concept="_iOnU" id="69HsIy5Gyat">
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="UnitScaledTest" />
-    <ref role="2HwdWd" to="8ps7:3xM68GMigWy" resolve="SIDerivedUnits" />
+    <ref role="2HwdWd" to="8ps7:xExe$xoFsp" resolve="UnitsOfInformation" />
     <node concept="TRoc0" id="3wrpJuuk0j9" role="_iOnB">
       <property role="2yp$z_" value="true" />
       <property role="2yEn8j" value="0" />
@@ -10842,7 +10845,7 @@
       <node concept="_iOnV" id="42$mjgfjmPA" role="1qenE9">
         <property role="TrG5h" value="MyLibrary" />
         <node concept="3GEVxB" id="42$mjgfjn1p" role="3i6evy">
-          <ref role="3GEb4d" to="8ps7:3xM68GMigWy" resolve="SIDerivedUnits" />
+          <ref role="3GEb4d" to="8ps7:xExe$xoFsp" resolve="UnitsOfInformation" />
         </node>
         <node concept="2zPypq" id="42$mjgfjn7j" role="_iOnC">
           <property role="TrG5h" value="allReferences" />
@@ -12045,6 +12048,9 @@
         <node concept="3GEVxB" id="1NEOJAVgxQk" role="3i6evy">
           <ref role="3GEb4d" node="1NEOJAVfc5u" resolve="ImperialUnits" />
         </node>
+        <node concept="3GEVxB" id="xExe$xp6Rb" role="3i6evy">
+          <ref role="3GEb4d" to="8ps7:xExe$xoFsp" resolve="UnitsOfInformation" />
+        </node>
         <node concept="CIrOH" id="kS03ZnkM4V" role="_iOnC">
           <property role="TrG5h" value="mi" />
           <property role="1o$tow" value="mile" />
@@ -12809,6 +12815,9 @@
         <property role="TrG5h" value="QuantityPrefixComparable" />
         <node concept="3GEVxB" id="1NEOJAV_EBe" role="3i6evy">
           <ref role="3GEb4d" node="1NEOJAVfc5u" resolve="ImperialUnits" />
+        </node>
+        <node concept="3GEVxB" id="xExe$xqT6O" role="3i6evy">
+          <ref role="3GEb4d" to="8ps7:xExe$xoFsp" resolve="UnitsOfInformation" />
         </node>
         <node concept="2zPypq" id="1NEOJAV_EBh" role="_iOnC">
           <property role="TrG5h" value="milliMeter2Meter" />
@@ -13857,7 +13866,7 @@
       <node concept="_iOnU" id="57Dr2jFef0Y" role="1qenE9">
         <property role="1XBH2A" value="true" />
         <property role="TrG5h" value="UnitScaledTest" />
-        <ref role="2HwdWd" to="8ps7:3xM68GMigWy" resolve="SIDerivedUnits" />
+        <ref role="2HwdWd" to="8ps7:xExe$xoFsp" resolve="UnitsOfInformation" />
         <node concept="TRoc0" id="57Dr2jFef0Z" role="_iOnB">
           <property role="2yp$z_" value="true" />
           <property role="2yEn8j" value="0" />

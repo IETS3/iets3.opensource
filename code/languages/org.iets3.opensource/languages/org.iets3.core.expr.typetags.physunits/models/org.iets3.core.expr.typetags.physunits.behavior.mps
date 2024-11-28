@@ -681,6 +681,7 @@
         <child id="1240424397093" name="keyType" index="3f3zw5" />
         <child id="1240424402756" name="valueType" index="3f3$T$" />
       </concept>
+      <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1201872418428" name="jetbrains.mps.baseLanguage.collections.structure.GetKeysOperation" flags="nn" index="3lbrtF" />
       <concept id="1178286324487" name="jetbrains.mps.baseLanguage.collections.structure.SortDirection" flags="nn" index="1nlBCl" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
@@ -17280,7 +17281,7 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="3xM68GM$9PV" role="jymVt" />
+    <node concept="2tJIrI" id="xExe$wOoey" role="jymVt" />
     <node concept="2YIFZL" id="3xM68GM$9Ox" role="jymVt">
       <property role="TrG5h" value="getSIUnitsDerivedAndScaledLibrary" />
       <node concept="3clFbS" id="3xM68GM$9Oy" role="3clF47">
@@ -17312,6 +17313,210 @@
       <node concept="37vLTG" id="3xM68GM$9OH" role="3clF46">
         <property role="TrG5h" value="repository" />
         <node concept="3uibUv" id="3xM68GM$9OI" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="xExe$x2rIf" role="jymVt" />
+    <node concept="2YIFZL" id="xExe$wODTx" role="jymVt">
+      <property role="TrG5h" value="getUnitsOfInformationMetricLibrary" />
+      <node concept="3clFbS" id="xExe$wODTy" role="3clF47">
+        <node concept="3clFbF" id="xExe$wXXUO" role="3cqZAp">
+          <node concept="2OqwBi" id="xExe$wXXUQ" role="3clFbG">
+            <node concept="Vyspw" id="xExe$wXXUK" role="2OqNvi">
+              <node concept="37vLTw" id="xExe$wXXUM" role="Vysub">
+                <ref role="3cqZAo" node="xExe$wODTH" resolve="repository" />
+              </node>
+            </node>
+            <node concept="2tJFMh" id="xExe$wXXUW" role="2Oq$k0">
+              <node concept="1dCxOE" id="xExe$wXXUY" role="2tJFKM">
+                <property role="2OI7jA" value="1140731015761843605" />
+                <node concept="1dCxOl" id="xExe$wXXUS" role="2OI7jE">
+                  <property role="1XweGQ" value="r:4134cae9-4017-4808-bf1c-768cb21cb9ea" />
+                  <node concept="1j_P7g" id="xExe$wXXUU" role="1j$8Uc">
+                    <property role="1j_P7h" value="org.iets3.core.expr.typetags.phyunits.si.units" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="xExe$wODTF" role="1B3o_S" />
+      <node concept="3Tqbb2" id="xExe$wODTG" role="3clF45">
+        <ref role="ehGHo" to="yv47:ub9nkyK62f" resolve="Library" />
+      </node>
+      <node concept="37vLTG" id="xExe$wODTH" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="xExe$wODTI" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="xExe$wWtbJ" role="jymVt" />
+    <node concept="2YIFZL" id="xExe$wOpJv" role="jymVt">
+      <property role="TrG5h" value="getUnitsOfInformationIECLibrary" />
+      <node concept="3clFbS" id="xExe$wOpJw" role="3clF47">
+        <node concept="3clFbF" id="xExe$wOpJx" role="3cqZAp">
+          <node concept="2OqwBi" id="xExe$wOpJy" role="3clFbG">
+            <node concept="Vyspw" id="xExe$wOpJz" role="2OqNvi">
+              <node concept="37vLTw" id="xExe$wOpJ$" role="Vysub">
+                <ref role="3cqZAo" node="xExe$wOpJF" resolve="repository" />
+              </node>
+            </node>
+            <node concept="2tJFMh" id="xExe$wOpJ_" role="2Oq$k0">
+              <node concept="1dCxOE" id="xExe$wOpJA" role="2tJFKM">
+                <property role="2OI7jA" value="1140731015761843608" />
+                <node concept="1dCxOl" id="xExe$wOpJB" role="2OI7jE">
+                  <property role="1XweGQ" value="r:4134cae9-4017-4808-bf1c-768cb21cb9ea" />
+                  <node concept="1j_P7g" id="xExe$wOpJC" role="1j$8Uc">
+                    <property role="1j_P7h" value="org.iets3.core.expr.typetags.phyunits.si.units" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="xExe$wOpJD" role="1B3o_S" />
+      <node concept="3Tqbb2" id="xExe$wOpJE" role="3clF45">
+        <ref role="ehGHo" to="yv47:ub9nkyK62f" resolve="Library" />
+      </node>
+      <node concept="37vLTG" id="xExe$wOpJF" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="xExe$wOpJG" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="xExe$wOoez" role="jymVt" />
+    <node concept="2YIFZL" id="xExe$wO$Om" role="jymVt">
+      <property role="TrG5h" value="getUnitsOfInformationJEDECLibrary" />
+      <node concept="3clFbS" id="xExe$wO$On" role="3clF47">
+        <node concept="3clFbF" id="xExe$wO$Oo" role="3cqZAp">
+          <node concept="2OqwBi" id="xExe$wO$Op" role="3clFbG">
+            <node concept="Vyspw" id="xExe$wO$Oq" role="2OqNvi">
+              <node concept="37vLTw" id="xExe$wO$Or" role="Vysub">
+                <ref role="3cqZAo" node="xExe$wO$Oy" resolve="repository" />
+              </node>
+            </node>
+            <node concept="2tJFMh" id="xExe$wO$Os" role="2Oq$k0">
+              <node concept="1dCxOE" id="xExe$wO$Ot" role="2tJFKM">
+                <property role="2OI7jA" value="1140731015761843610" />
+                <node concept="1dCxOl" id="xExe$wO$Ou" role="2OI7jE">
+                  <property role="1XweGQ" value="r:4134cae9-4017-4808-bf1c-768cb21cb9ea" />
+                  <node concept="1j_P7g" id="xExe$wO$Ov" role="1j$8Uc">
+                    <property role="1j_P7h" value="org.iets3.core.expr.typetags.phyunits.si.units" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="xExe$wO$Ow" role="1B3o_S" />
+      <node concept="3Tqbb2" id="xExe$wO$Ox" role="3clF45">
+        <ref role="ehGHo" to="yv47:ub9nkyK62f" resolve="Library" />
+      </node>
+      <node concept="37vLTG" id="xExe$wO$Oy" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="xExe$wO$Oz" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="xExe$x1xXJ" role="jymVt" />
+    <node concept="2YIFZL" id="xExe$x1AxM" role="jymVt">
+      <property role="TrG5h" value="getAllAdditionalLibraries" />
+      <node concept="3clFbS" id="xExe$x1AxP" role="3clF47">
+        <node concept="3cpWs8" id="xExe$x1CvK" role="3cqZAp">
+          <node concept="3cpWsn" id="xExe$x1CvN" role="3cpWs9">
+            <property role="TrG5h" value="libraries" />
+            <node concept="2I9FWS" id="xExe$x1CvJ" role="1tU5fm">
+              <ref role="2I9WkF" to="yv47:ub9nkyK62f" resolve="Library" />
+            </node>
+            <node concept="2ShNRf" id="xExe$x1EVh" role="33vP2m">
+              <node concept="2T8Vx0" id="xExe$x1Pxc" role="2ShVmc">
+                <node concept="2I9FWS" id="xExe$x1Pxe" role="2T96Bj">
+                  <ref role="2I9WkF" to="yv47:ub9nkyK62f" resolve="Library" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="xExe$x1SPp" role="3cqZAp">
+          <node concept="2OqwBi" id="xExe$x1YEc" role="3clFbG">
+            <node concept="37vLTw" id="xExe$x1SPn" role="2Oq$k0">
+              <ref role="3cqZAo" node="xExe$x1CvN" resolve="libraries" />
+            </node>
+            <node concept="TSZUe" id="xExe$x286l" role="2OqNvi">
+              <node concept="1rXfSq" id="xExe$x2wvu" role="25WWJ7">
+                <ref role="37wK5l" node="3xM68GM$9Ox" resolve="getSIUnitsDerivedAndScaledLibrary" />
+                <node concept="37vLTw" id="xExe$x2zzk" role="37wK5m">
+                  <ref role="3cqZAo" node="xExe$x2xq9" resolve="repository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="xExe$x2$xL" role="3cqZAp">
+          <node concept="2OqwBi" id="xExe$x2$xM" role="3clFbG">
+            <node concept="37vLTw" id="xExe$x2$xN" role="2Oq$k0">
+              <ref role="3cqZAo" node="xExe$x1CvN" resolve="libraries" />
+            </node>
+            <node concept="TSZUe" id="xExe$x2$xO" role="2OqNvi">
+              <node concept="1rXfSq" id="xExe$x2$xP" role="25WWJ7">
+                <ref role="37wK5l" node="xExe$wODTx" resolve="getUnitsOfInformationMetricLibrary" />
+                <node concept="37vLTw" id="xExe$x2$xQ" role="37wK5m">
+                  <ref role="3cqZAo" node="xExe$x2xq9" resolve="repository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="xExe$x2_MJ" role="3cqZAp">
+          <node concept="2OqwBi" id="xExe$x2_MK" role="3clFbG">
+            <node concept="37vLTw" id="xExe$x2_ML" role="2Oq$k0">
+              <ref role="3cqZAo" node="xExe$x1CvN" resolve="libraries" />
+            </node>
+            <node concept="TSZUe" id="xExe$x2_MM" role="2OqNvi">
+              <node concept="1rXfSq" id="xExe$x2_MN" role="25WWJ7">
+                <ref role="37wK5l" node="xExe$wOpJv" resolve="getUnitsOfInformationIECLibrary" />
+                <node concept="37vLTw" id="xExe$x2_MO" role="37wK5m">
+                  <ref role="3cqZAo" node="xExe$x2xq9" resolve="repository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="xExe$x2BmO" role="3cqZAp">
+          <node concept="2OqwBi" id="xExe$x2BmP" role="3clFbG">
+            <node concept="37vLTw" id="xExe$x2BmQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="xExe$x1CvN" resolve="libraries" />
+            </node>
+            <node concept="TSZUe" id="xExe$x2BmR" role="2OqNvi">
+              <node concept="1rXfSq" id="xExe$x2BmS" role="25WWJ7">
+                <ref role="37wK5l" node="xExe$wO$Om" resolve="getUnitsOfInformationJEDECLibrary" />
+                <node concept="37vLTw" id="xExe$x2BmT" role="37wK5m">
+                  <ref role="3cqZAo" node="xExe$x2xq9" resolve="repository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="xExe$x1SdR" role="3cqZAp">
+          <node concept="37vLTw" id="xExe$x1SdP" role="3clFbG">
+            <ref role="3cqZAo" node="xExe$x1CvN" resolve="libraries" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="xExe$x1zIG" role="1B3o_S" />
+      <node concept="2I9FWS" id="xExe$x1_uJ" role="3clF45">
+        <ref role="2I9WkF" to="yv47:ub9nkyK62f" resolve="Library" />
+      </node>
+      <node concept="37vLTG" id="xExe$x2xq9" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="xExe$x2xq8" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
@@ -17370,21 +17575,38 @@
               <ref role="3cqZAo" node="7GkQwTaI4E7" resolve="quantities" />
             </node>
             <node concept="X8dFx" id="7GkQwTaIkM0" role="2OqNvi">
-              <node concept="2OqwBi" id="7GkQwTaIkM1" role="25WWJ7">
-                <node concept="2OqwBi" id="7GkQwTaIkM2" role="2Oq$k0">
-                  <node concept="1rXfSq" id="7GkQwTaIkM3" role="2Oq$k0">
-                    <ref role="37wK5l" node="3xM68GM$9Ox" resolve="getSIUnitsDerivedAndScaledLibrary" />
-                    <node concept="37vLTw" id="7GkQwTaIkM4" role="37wK5m">
-                      <ref role="3cqZAo" node="3xM68GM$ShD" resolve="repository" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="7GkQwTaIkM5" role="2OqNvi">
-                    <ref role="3TtcxE" to="yv47:ub9nkyK62i" resolve="contents" />
+              <node concept="2OqwBi" id="xExe$x2R4p" role="25WWJ7">
+                <node concept="1rXfSq" id="7GkQwTaIkM3" role="2Oq$k0">
+                  <ref role="37wK5l" node="xExe$x1AxM" resolve="getAllAdditionalLibraries" />
+                  <node concept="37vLTw" id="7GkQwTaIkM4" role="37wK5m">
+                    <ref role="3cqZAo" node="3xM68GM$ShD" resolve="repository" />
                   </node>
                 </node>
-                <node concept="v3k3i" id="7GkQwTaIkM6" role="2OqNvi">
-                  <node concept="chp4Y" id="7GkQwTaIkM7" role="v3oSu">
-                    <ref role="cht4Q" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                <node concept="3goQfb" id="xExe$x33yJ" role="2OqNvi">
+                  <node concept="1bVj0M" id="xExe$x33yL" role="23t8la">
+                    <node concept="3clFbS" id="xExe$x33yM" role="1bW5cS">
+                      <node concept="3clFbF" id="xExe$x35zI" role="3cqZAp">
+                        <node concept="2OqwBi" id="xExe$x3hKy" role="3clFbG">
+                          <node concept="2OqwBi" id="xExe$x36lr" role="2Oq$k0">
+                            <node concept="37vLTw" id="xExe$x35zH" role="2Oq$k0">
+                              <ref role="3cqZAo" node="xExe$x33yN" resolve="it" />
+                            </node>
+                            <node concept="3Tsc0h" id="xExe$x39nX" role="2OqNvi">
+                              <ref role="3TtcxE" to="yv47:ub9nkyK62i" resolve="contents" />
+                            </node>
+                          </node>
+                          <node concept="v3k3i" id="xExe$x3o5q" role="2OqNvi">
+                            <node concept="chp4Y" id="xExe$x3t7P" role="v3oSu">
+                              <ref role="cht4Q" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="xExe$x33yN" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="xExe$x33yO" role="1tU5fm" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -17464,21 +17686,38 @@
               <ref role="3cqZAo" node="7GkQwTaItQ9" resolve="rules" />
             </node>
             <node concept="X8dFx" id="7GkQwTaIJq1" role="2OqNvi">
-              <node concept="2OqwBi" id="7GkQwTaIJq2" role="25WWJ7">
-                <node concept="2OqwBi" id="7GkQwTaIJq3" role="2Oq$k0">
-                  <node concept="1rXfSq" id="7GkQwTaIJq4" role="2Oq$k0">
-                    <ref role="37wK5l" node="3xM68GM$9Ox" resolve="getSIUnitsDerivedAndScaledLibrary" />
-                    <node concept="37vLTw" id="7GkQwTaIJq5" role="37wK5m">
-                      <ref role="3cqZAo" node="7GkQwTaw3j5" resolve="repository" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="7GkQwTaIJq6" role="2OqNvi">
-                    <ref role="3TtcxE" to="yv47:ub9nkyK62i" resolve="contents" />
+              <node concept="2OqwBi" id="xExe$x3OYZ" role="25WWJ7">
+                <node concept="1rXfSq" id="7GkQwTaIJq4" role="2Oq$k0">
+                  <ref role="37wK5l" node="xExe$x1AxM" resolve="getAllAdditionalLibraries" />
+                  <node concept="37vLTw" id="7GkQwTaIJq5" role="37wK5m">
+                    <ref role="3cqZAo" node="7GkQwTaw3j5" resolve="repository" />
                   </node>
                 </node>
-                <node concept="v3k3i" id="7GkQwTaIJq7" role="2OqNvi">
-                  <node concept="chp4Y" id="7GkQwTaIJq8" role="v3oSu">
-                    <ref role="cht4Q" to="i3ya:VmEWGR2Mzb" resolve="ConversionRule" />
+                <node concept="3goQfb" id="xExe$x57Gq" role="2OqNvi">
+                  <node concept="1bVj0M" id="xExe$x57Gs" role="23t8la">
+                    <node concept="3clFbS" id="xExe$x57Gt" role="1bW5cS">
+                      <node concept="3clFbF" id="xExe$x57Gu" role="3cqZAp">
+                        <node concept="2OqwBi" id="xExe$x57Gv" role="3clFbG">
+                          <node concept="2OqwBi" id="xExe$x57Gw" role="2Oq$k0">
+                            <node concept="37vLTw" id="xExe$x57Gx" role="2Oq$k0">
+                              <ref role="3cqZAo" node="xExe$x57G_" resolve="it" />
+                            </node>
+                            <node concept="3Tsc0h" id="xExe$x57Gy" role="2OqNvi">
+                              <ref role="3TtcxE" to="yv47:ub9nkyK62i" resolve="contents" />
+                            </node>
+                          </node>
+                          <node concept="v3k3i" id="xExe$x57Gz" role="2OqNvi">
+                            <node concept="chp4Y" id="xExe$x57G$" role="v3oSu">
+                              <ref role="cht4Q" to="i3ya:VmEWGR2Mzb" resolve="ConversionRule" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="xExe$x57G_" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="xExe$x57GA" role="1tU5fm" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -17560,21 +17799,38 @@
                   <ref role="3cqZAo" node="2hjX6q5dNeD" resolve="units" />
                 </node>
                 <node concept="X8dFx" id="2hjX6q5dNeZ" role="2OqNvi">
-                  <node concept="2OqwBi" id="2hjX6q5dNf0" role="25WWJ7">
-                    <node concept="2OqwBi" id="2hjX6q5dNf1" role="2Oq$k0">
-                      <node concept="1rXfSq" id="2hjX6q5dNf2" role="2Oq$k0">
-                        <ref role="37wK5l" node="3xM68GM$9Ox" resolve="getSIUnitsDerivedAndScaledLibrary" />
-                        <node concept="37vLTw" id="2hjX6q5dNf3" role="37wK5m">
-                          <ref role="3cqZAo" node="2hjX6q5dNff" resolve="repository" />
-                        </node>
-                      </node>
-                      <node concept="3Tsc0h" id="2hjX6q5dNf4" role="2OqNvi">
-                        <ref role="3TtcxE" to="yv47:ub9nkyK62i" resolve="contents" />
+                  <node concept="2OqwBi" id="xExe$x5nN0" role="25WWJ7">
+                    <node concept="1rXfSq" id="2hjX6q5dNf2" role="2Oq$k0">
+                      <ref role="37wK5l" node="xExe$x1AxM" resolve="getAllAdditionalLibraries" />
+                      <node concept="37vLTw" id="2hjX6q5dNf3" role="37wK5m">
+                        <ref role="3cqZAo" node="2hjX6q5dNff" resolve="repository" />
                       </node>
                     </node>
-                    <node concept="v3k3i" id="2hjX6q5dNf5" role="2OqNvi">
-                      <node concept="chp4Y" id="2hjX6q5dNf6" role="v3oSu">
-                        <ref role="cht4Q" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
+                    <node concept="3goQfb" id="xExe$x6jxp" role="2OqNvi">
+                      <node concept="1bVj0M" id="xExe$x6jxr" role="23t8la">
+                        <node concept="3clFbS" id="xExe$x6jxs" role="1bW5cS">
+                          <node concept="3clFbF" id="xExe$x6jxt" role="3cqZAp">
+                            <node concept="2OqwBi" id="xExe$x6jxu" role="3clFbG">
+                              <node concept="2OqwBi" id="xExe$x6jxv" role="2Oq$k0">
+                                <node concept="37vLTw" id="xExe$x6jxw" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="xExe$x6jx$" resolve="it" />
+                                </node>
+                                <node concept="3Tsc0h" id="xExe$x6jxx" role="2OqNvi">
+                                  <ref role="3TtcxE" to="yv47:ub9nkyK62i" resolve="contents" />
+                                </node>
+                              </node>
+                              <node concept="v3k3i" id="xExe$x6jxy" role="2OqNvi">
+                                <node concept="chp4Y" id="xExe$x6jxz" role="v3oSu">
+                                  <ref role="cht4Q" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Rh6nW" id="xExe$x6jx$" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="xExe$x6jx_" role="1tU5fm" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -17599,7 +17855,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2hjX6q5dNfd" role="3clF46">
-        <property role="TrG5h" value="includeDerived" />
+        <property role="TrG5h" value="includeDerivedAndAdditional" />
         <node concept="10P_77" id="2hjX6q5dNfe" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="2hjX6q5dNff" role="3clF46">

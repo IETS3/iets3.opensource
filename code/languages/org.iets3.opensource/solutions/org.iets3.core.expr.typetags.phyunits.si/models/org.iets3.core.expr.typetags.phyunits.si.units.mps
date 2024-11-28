@@ -5861,42 +5861,18 @@
         <ref role="CIi3I" node="3xM68GMigWs" resolve="s" />
       </node>
     </node>
-    <node concept="_ixoA" id="2Yx91N$uiqk" role="_iOnB" />
-    <node concept="1Ws0TD" id="2Yx91N$uADE" role="_iOnB">
-      <property role="1WsWdv" value="Digital information" />
+    <node concept="_ixoA" id="ZkGd2zsDJK" role="_iOnB" />
+    <node concept="1Ws0TD" id="ZkGd2zu6gr" role="_iOnB">
+      <property role="1WsWdv" value="Other Quantities" />
     </node>
-    <node concept="_ixoA" id="2Yx91N$uUMr" role="_iOnB" />
+    <node concept="_ixoA" id="2Yx91N$uiqk" role="_iOnB" />
     <node concept="Rn5op" id="7F14or$gcr1" role="_iOnB">
       <property role="TrG5h" value="digital information" />
       <node concept="2DI3Pg" id="1eut2v1LoK8" role="2DI2Qx" />
     </node>
-    <node concept="_ixoA" id="7F14or$gcz4" role="_iOnB" />
-    <node concept="CIrOH" id="7F14or$gczd" role="_iOnB">
-      <property role="TrG5h" value="byte" />
-      <property role="1o$tow" value="binary byte" />
-      <property role="22P1Ek" value="2hbaSyABMZQ/binary" />
-      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
-    </node>
-    <node concept="CIrOH" id="2Yx91N$tLAX" role="_iOnB">
-      <property role="TrG5h" value="bit" />
-      <property role="1o$tow" value="binary bit" />
-      <property role="22P1Ek" value="2hbaSyABMZQ/binary" />
-      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
-    </node>
-    <node concept="_ixoA" id="FMy9mdVliQ" role="_iOnB" />
-    <node concept="CIrOH" id="FMy9mdSdEf" role="_iOnB">
-      <property role="TrG5h" value="byte" />
-      <property role="1o$tow" value="binary memory byte" />
-      <property role="22P1Ek" value="6DczoUSGcZl/binary_memory" />
-      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
-    </node>
-    <node concept="CIrOH" id="FMy9mdSdEg" role="_iOnB">
-      <property role="TrG5h" value="bit" />
-      <property role="1o$tow" value="binary memory bit" />
-      <property role="22P1Ek" value="6DczoUSGcZl/binary_memory" />
-      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
-    </node>
-    <node concept="_ixoA" id="2liNWkVSxfa" role="_iOnB" />
+  </node>
+  <node concept="_iOnU" id="ZkGd2yKlml">
+    <property role="TrG5h" value="UnitsOfInformationMetric" />
     <node concept="CIrOH" id="14aBVbN55En" role="_iOnB">
       <property role="TrG5h" value="byte" />
       <property role="1o$tow" value="byte" />
@@ -5909,80 +5885,7 @@
       <property role="22P1Ek" value="4zqoYUyQ7z3/metric_positive" />
       <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
     </node>
-    <node concept="_ixoA" id="2liNWkVV20T" role="_iOnB" />
-    <node concept="_ixoA" id="14aBVbNnPLO" role="_iOnB" />
-    <node concept="TRoc0" id="14aBVbN4A4Q" role="_iOnB">
-      <property role="2yp$z_" value="true" />
-      <node concept="27LzZq" id="14aBVbN4A4S" role="27P04L">
-        <node concept="30dDTi" id="14aBVbN4Ue_" role="27K$mF">
-          <node concept="30bXRB" id="3skHlWrr9$I" role="30dEs_">
-            <property role="30bXRw" value="8" />
-          </node>
-          <node concept="2m5Cep" id="14aBVbN4U9V" role="30dEsF" />
-        </node>
-      </node>
-      <node concept="CIsvn" id="2liNWkWnrVB" role="2vOZTa">
-        <ref role="CIi3I" node="7F14or$gczd" resolve="B" />
-      </node>
-      <node concept="CIsvn" id="2liNWkWns0d" role="2vOYbH">
-        <ref role="CIi3I" node="2Yx91N$tLAX" resolve="b" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="2liNWkWir5P" role="_iOnB" />
-    <node concept="TRoc0" id="2liNWkWkUVZ" role="_iOnB">
-      <property role="2yp$z_" value="true" />
-      <node concept="27LzZq" id="2liNWkWkUW0" role="27P04L">
-        <node concept="30dvO6" id="2liNWkWnskZ" role="27K$mF">
-          <node concept="2m5Cep" id="2liNWkWkUW3" role="30dEsF" />
-          <node concept="30bXRB" id="2liNWkWkUW2" role="30dEs_">
-            <property role="30bXRw" value="8" />
-          </node>
-        </node>
-      </node>
-      <node concept="CIsvn" id="2liNWkWns6R" role="2vOZTa">
-        <ref role="CIi3I" node="2Yx91N$tLAX" resolve="b" />
-      </node>
-      <node concept="CIsvn" id="2liNWkWnsel" role="2vOYbH">
-        <ref role="CIi3I" node="7F14or$gczd" resolve="B" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="FMy9me9y9E" role="_iOnB" />
-    <node concept="TRoc0" id="FMy9meaM73" role="_iOnB">
-      <property role="2yp$z_" value="true" />
-      <node concept="27LzZq" id="FMy9meaM74" role="27P04L">
-        <node concept="30dDTi" id="FMy9meaM75" role="27K$mF">
-          <node concept="30bXRB" id="FMy9meaM76" role="30dEs_">
-            <property role="30bXRw" value="8" />
-          </node>
-          <node concept="2m5Cep" id="FMy9meaM77" role="30dEsF" />
-        </node>
-      </node>
-      <node concept="CIsvn" id="FMy9mefLvF" role="2vOZTa">
-        <ref role="CIi3I" node="FMy9mdSdEf" resolve="B" />
-      </node>
-      <node concept="CIsvn" id="FMy9megbV6" role="2vOYbH">
-        <ref role="CIi3I" node="FMy9mdSdEg" resolve="b" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="FMy9meaM7a" role="_iOnB" />
-    <node concept="TRoc0" id="FMy9meaM7b" role="_iOnB">
-      <property role="2yp$z_" value="true" />
-      <node concept="27LzZq" id="FMy9meaM7c" role="27P04L">
-        <node concept="30dvO6" id="FMy9meaM7d" role="27K$mF">
-          <node concept="2m5Cep" id="FMy9meaM7e" role="30dEsF" />
-          <node concept="30bXRB" id="FMy9meaM7f" role="30dEs_">
-            <property role="30bXRw" value="8" />
-          </node>
-        </node>
-      </node>
-      <node concept="CIsvn" id="FMy9mei3NL" role="2vOZTa">
-        <ref role="CIi3I" node="FMy9mdSdEg" resolve="b" />
-      </node>
-      <node concept="CIsvn" id="FMy9mejVGs" role="2vOYbH">
-        <ref role="CIi3I" node="FMy9mdSdEf" resolve="B" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="2liNWkWhb2_" role="_iOnB" />
+    <node concept="_ixoA" id="ZkGd2z_cH$" role="_iOnB" />
     <node concept="TRoc0" id="14aBVbN5r6V" role="_iOnB">
       <property role="2yp$z_" value="true" />
       <node concept="27LzZq" id="14aBVbN5r6W" role="27P04L">
@@ -5994,10 +5897,10 @@
         </node>
       </node>
       <node concept="CIsvn" id="14aBVbN5JeB" role="2vOZTa">
-        <ref role="CIi3I" node="14aBVbN55En" resolve="B" />
+        <ref role="CIi3I" node="14aBVbN55En" resolve="byte" />
       </node>
       <node concept="CIsvn" id="14aBVbNhCkx" role="2vOYbH">
-        <ref role="CIi3I" node="14aBVbN55Ep" resolve="b" />
+        <ref role="CIi3I" node="14aBVbN55Ep" resolve="bit" />
       </node>
     </node>
     <node concept="_ixoA" id="2Yx91N$veEh" role="_iOnB" />
@@ -6012,13 +5915,142 @@
         </node>
       </node>
       <node concept="CIsvn" id="2liNWkWpXE3" role="2vOZTa">
-        <ref role="CIi3I" node="14aBVbN55Ep" resolve="b" />
+        <ref role="CIi3I" node="14aBVbN55Ep" resolve="bit" />
       </node>
       <node concept="CIsvn" id="2liNWkWpXLd" role="2vOYbH">
-        <ref role="CIi3I" node="14aBVbN55En" resolve="B" />
+        <ref role="CIi3I" node="14aBVbN55En" resolve="byte" />
       </node>
     </node>
-    <node concept="_ixoA" id="2liNWkWoGzK" role="_iOnB" />
+    <node concept="3GEVxB" id="ZkGd2z_bdf" role="3i6evy">
+      <ref role="3GEb4d" node="3xM68GMigWy" resolve="SIDerivedUnits" />
+    </node>
+  </node>
+  <node concept="_iOnU" id="ZkGd2yKlmo">
+    <property role="TrG5h" value="UnitsOfInformationIEC" />
+    <node concept="3GEVxB" id="ZkGd2z1qWB" role="3i6evy">
+      <ref role="3GEb4d" node="3xM68GMigWy" resolve="SIDerivedUnits" />
+    </node>
+    <node concept="CIrOH" id="7F14or$gczd" role="_iOnB">
+      <property role="TrG5h" value="byte" />
+      <property role="1o$tow" value="binary byte" />
+      <property role="22P1Ek" value="2hbaSyABMZQ/binary" />
+      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
+    </node>
+    <node concept="CIrOH" id="2Yx91N$tLAX" role="_iOnB">
+      <property role="TrG5h" value="bit" />
+      <property role="1o$tow" value="binary bit" />
+      <property role="22P1Ek" value="2hbaSyABMZQ/binary" />
+      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
+    </node>
+    <node concept="_ixoA" id="ZkGd2zpC$j" role="_iOnB" />
+    <node concept="TRoc0" id="14aBVbN4A4Q" role="_iOnB">
+      <property role="2yp$z_" value="true" />
+      <node concept="27LzZq" id="14aBVbN4A4S" role="27P04L">
+        <node concept="30dDTi" id="14aBVbN4Ue_" role="27K$mF">
+          <node concept="30bXRB" id="3skHlWrr9$I" role="30dEs_">
+            <property role="30bXRw" value="8" />
+          </node>
+          <node concept="2m5Cep" id="14aBVbN4U9V" role="30dEsF" />
+        </node>
+      </node>
+      <node concept="CIsvn" id="2liNWkWnrVB" role="2vOZTa">
+        <ref role="CIi3I" node="7F14or$gczd" resolve="byte" />
+      </node>
+      <node concept="CIsvn" id="2liNWkWns0d" role="2vOYbH">
+        <ref role="CIi3I" node="2Yx91N$tLAX" resolve="bit" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="2liNWkWir5P" role="_iOnB" />
+    <node concept="TRoc0" id="2liNWkWkUVZ" role="_iOnB">
+      <property role="2yp$z_" value="true" />
+      <node concept="27LzZq" id="2liNWkWkUW0" role="27P04L">
+        <node concept="30dvO6" id="2liNWkWnskZ" role="27K$mF">
+          <node concept="2m5Cep" id="2liNWkWkUW3" role="30dEsF" />
+          <node concept="30bXRB" id="2liNWkWkUW2" role="30dEs_">
+            <property role="30bXRw" value="8" />
+          </node>
+        </node>
+      </node>
+      <node concept="CIsvn" id="2liNWkWns6R" role="2vOZTa">
+        <ref role="CIi3I" node="2Yx91N$tLAX" resolve="bit" />
+      </node>
+      <node concept="CIsvn" id="2liNWkWnsel" role="2vOYbH">
+        <ref role="CIi3I" node="7F14or$gczd" resolve="byte" />
+      </node>
+    </node>
+  </node>
+  <node concept="_iOnU" id="ZkGd2yKlmq">
+    <property role="TrG5h" value="UnitsOfInformationJEDEC" />
+    <node concept="3GEVxB" id="ZkGd2z1qWD" role="3i6evy">
+      <ref role="3GEb4d" node="3xM68GMigWy" resolve="SIDerivedUnits" />
+    </node>
+    <node concept="CIrOH" id="FMy9mdSdEf" role="_iOnB">
+      <property role="TrG5h" value="byte" />
+      <property role="1o$tow" value="binary memory byte" />
+      <property role="22P1Ek" value="6DczoUSGcZl/binary_memory" />
+      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
+    </node>
+    <node concept="CIrOH" id="FMy9mdSdEg" role="_iOnB">
+      <property role="TrG5h" value="bit" />
+      <property role="1o$tow" value="binary memory bit" />
+      <property role="22P1Ek" value="6DczoUSGcZl/binary_memory" />
+      <ref role="Rn5ok" node="7F14or$gcr1" resolve="digital information" />
+    </node>
+    <node concept="_ixoA" id="ZkGd2z_9Hs" role="_iOnB" />
+    <node concept="TRoc0" id="FMy9meaM73" role="_iOnB">
+      <property role="2yp$z_" value="true" />
+      <node concept="27LzZq" id="FMy9meaM74" role="27P04L">
+        <node concept="30dDTi" id="FMy9meaM75" role="27K$mF">
+          <node concept="30bXRB" id="FMy9meaM76" role="30dEs_">
+            <property role="30bXRw" value="8" />
+          </node>
+          <node concept="2m5Cep" id="FMy9meaM77" role="30dEsF" />
+        </node>
+      </node>
+      <node concept="CIsvn" id="FMy9mefLvF" role="2vOZTa">
+        <ref role="CIi3I" node="FMy9mdSdEf" resolve="byte" />
+      </node>
+      <node concept="CIsvn" id="FMy9megbV6" role="2vOYbH">
+        <ref role="CIi3I" node="FMy9mdSdEg" resolve="bit" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="FMy9meaM7a" role="_iOnB" />
+    <node concept="TRoc0" id="FMy9meaM7b" role="_iOnB">
+      <property role="2yp$z_" value="true" />
+      <node concept="27LzZq" id="FMy9meaM7c" role="27P04L">
+        <node concept="30dvO6" id="FMy9meaM7d" role="27K$mF">
+          <node concept="2m5Cep" id="FMy9meaM7e" role="30dEsF" />
+          <node concept="30bXRB" id="FMy9meaM7f" role="30dEs_">
+            <property role="30bXRw" value="8" />
+          </node>
+        </node>
+      </node>
+      <node concept="CIsvn" id="FMy9mei3NL" role="2vOZTa">
+        <ref role="CIi3I" node="FMy9mdSdEg" resolve="bit" />
+      </node>
+      <node concept="CIsvn" id="FMy9mejVGs" role="2vOYbH">
+        <ref role="CIi3I" node="FMy9mdSdEf" resolve="byte" />
+      </node>
+    </node>
+  </node>
+  <node concept="_iOnU" id="xExe$xoFsp">
+    <property role="TrG5h" value="UnitsOfInformation" />
+    <node concept="3GEVxB" id="xExe$xuL60" role="3i6evy">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" node="3xM68GMigWy" resolve="SIDerivedUnits" />
+    </node>
+    <node concept="3GEVxB" id="xExe$xoFsr" role="3i6evy">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" node="ZkGd2yKlmo" resolve="UnitsOfInformationIEC" />
+    </node>
+    <node concept="3GEVxB" id="xExe$xoFst" role="3i6evy">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" node="ZkGd2yKlmq" resolve="UnitsOfInformationJEDEC" />
+    </node>
+    <node concept="3GEVxB" id="xExe$xoFsw" role="3i6evy">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" node="ZkGd2yKlml" resolve="UnitsOfInformationMetric" />
+    </node>
   </node>
 </model>
 
