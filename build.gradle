@@ -226,7 +226,7 @@ task buildLanguages(type: BuildLanguages, dependsOn: prebuild) {
 
 task execTestsByInterpreter(type: TestLanguages, dependsOn: buildLanguages) {
     script "$buildDir/scripts/build-testInterpreter.xml"
-    targets "build"
+    targets "generate","build"
     doLast {
         ant.taskdef(name: 'junitInterpreterReport',
                 classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
