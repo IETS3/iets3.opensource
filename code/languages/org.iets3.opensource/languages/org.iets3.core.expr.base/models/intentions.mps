@@ -2516,7 +2516,7 @@
   </node>
   <node concept="2S6QgY" id="2ufoZQIOVi8">
     <property role="TrG5h" value="attachValueInspector" />
-    <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="2ufoZQIOVi9" role="2ZfVej">
       <node concept="3clFbS" id="2ufoZQIOVia" role="2VODD2">
         <node concept="3clFbF" id="2ufoZQIOYep" role="3cqZAp">
@@ -2539,7 +2539,7 @@
               </node>
             </node>
             <node concept="zfrQC" id="2ufoZQIP0LY" role="2OqNvi">
-              <ref role="1A9B2P" to="hm2y:2ufoZQIKHqp" resolve="SimpleExpressionValueInspector" />
+              <ref role="1A9B2P" to="hm2y:2ufoZQIKHqp" resolve="SimpleValueInspector" />
             </node>
           </node>
         </node>

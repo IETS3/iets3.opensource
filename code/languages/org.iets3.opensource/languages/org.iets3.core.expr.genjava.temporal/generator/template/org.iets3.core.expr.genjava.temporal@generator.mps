@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:68ac91a8-ab55-4011-ba7a-b67f487e2bf8(org.iets3.core.expr.genjava.temporal@generator)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
@@ -3949,7 +3950,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7DfYVnk6Umo" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+                    <ref role="37wK5l" to="8rdi:475Xz0wPGET" resolve="add" />
                     <node concept="2ShNRf" id="2T4w_AkFNxb" role="37wK5m">
                       <node concept="1pGfFk" id="2T4w_AkFNFY" role="2ShVmc">
                         <ref role="37wK5l" to="8rdi:50smQ1VbaTB" resolve="SliceValue" />

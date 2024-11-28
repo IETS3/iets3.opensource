@@ -662,6 +662,9 @@
     <property role="3GE5qa" value="time" />
     <property role="R4oN_" value="hours, minutes and seconds" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="41vYFO2KqeT" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3HiHZey9lU5">
     <property role="EcuMT" value="4274681253353315973" />

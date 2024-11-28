@@ -11,9 +11,13 @@
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -45,6 +49,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -133,6 +138,9 @@
     <node concept="PrWs8" id="7aRvJQE8DD0" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7aRvJQE8BE8" resolve="INeverAllowDot" />
     </node>
+    <node concept="PrWs8" id="2KEzU_jNk92" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6Oetc">
     <property role="3GE5qa" value="numeric" />
@@ -199,6 +207,9 @@
       <property role="IQ2nx" value="30954369053895121" />
       <property role="TrG5h" value="excludeMax" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="2KEzU_jNk7E" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:2KEzU_jNj4j" resolve="ISupportHexValues" />
     </node>
   </node>
   <node concept="1TIwiD" id="78hTg1$P0UC">
@@ -309,12 +320,17 @@
     <node concept="PrWs8" id="4qVjx3kqTOO" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="3eH6BL3k6kg" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
+    </node>
     <node concept="1TJgyj" id="46cplYy1TD0" role="1TKVEi">
       <property role="IQ2ns" value="4723261570619513408" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="3eH6BL3k6ks" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="46cplYy1TAM" role="1TKVEi">
       <property role="IQ2ns" value="4723261570619513266" />

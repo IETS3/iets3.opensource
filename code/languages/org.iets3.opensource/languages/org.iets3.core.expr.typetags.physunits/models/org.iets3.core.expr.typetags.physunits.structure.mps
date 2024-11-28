@@ -2,6 +2,7 @@
 <model ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -589,6 +590,9 @@
     <node concept="PrWs8" id="45a4DYZTszf" role="PzmwI">
       <ref role="PrY4T" node="45a4DYZTq2h" resolve="IGroupLike" />
     </node>
+    <node concept="PrWs8" id="41vYFO2MPjy" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="45a4DYZrKZa">
     <property role="EcuMT" value="4704593238062731210" />
@@ -851,6 +855,9 @@
     <property role="TrG5h" value="IReference" />
     <node concept="PrWs8" id="6q45UTyu5RD" role="PrDN$">
       <ref role="PrY4T" node="45a4DYZTqxY" resolve="IGroupBase" />
+    </node>
+    <node concept="PrWs8" id="3$mUAASO3eZ" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="6q45UTyLsdG">

@@ -5,6 +5,64 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## November 2024
+
+### Fixed
+
+- Hexadecimal attributes are now better visible in the diff view.
+
+### Changes
+
+- It is now possible to customize where hex values are enabled. With PrimitiveTypeMapper#filterHexadecimalSupportingNodes you can now enable/disable them for specific nodes.
+
+## October 2024
+
+### Fixed
+
+- Type calculation for implicit conversions in the physunit language was improved.
+- Number types have trailing zeros stripped in their ranges after type calculations for divisions.
+- The compatibility check of quantities of the physical unit language was improved.
+- The interpreter of the `success` expression was fixed.
+- Custom Java exceptions have now a `equals` and `hashCode` implementation so that they can be compared in tests.
+- Error messages and checks were improved.
+- More error messages are now shown when the supertype can't be calculated.
+- The end cells of table rows of all tables where improved and now all support delete and insert actions.
+- Quantities are not allowed in tagged types anymore.
+- Units with same quantities are now checked if they can be (implicitely) converted between each other.
+
+### Added
+
+- Record literals are automatically initialized based on their type.
+- Record literals now show the referenced members of the record declaration.
+- Tuples can use parenthesis instead of brackets for their presentation. To use the new presentation, overwrite PrimitiveTypeMapper#useParenthesisInsteadOfBracketsForTuples in the extension point.
+- Implicit conversions can now be deactivated conditionally in the physunit language.
+
+### Changed
+
+- The `noConvert` expressions in the physunit language doesn't strip the unit anymore. Use the `stripUnit` expression for that. 
+
+## September 2024
+
+### Fixed
+
+- Then precision for number types is now only derived from the finite bounds of the range. The precision of `number[-∞|∞]` is the same as of `number` which is 0.
+- Tuple types where all elements have the same type can now be used interchangeable with list types.
+
+### Added
+
+- The extension point `IUnitLangConfig` has a new method useSlashInsteadOfDivisionSymbol that allows to replace the "÷" character in unit names with the more common "/" character.
+- Number literals, collection size specifications and number range specifications now support entering numbers in hexadecimal format. This feature can be activated through PrimitiveTypeMapper#allowHexadecimalNumbers.
+- Collection size and number range specifications now initialize with an infinite range by default. Setting the min and max field therefore is equal to setting them to infinity.
+
+## August 2024
+
+### Fixed
+
+- TraceExplorer can decorate editors of lambda nodes with their values.
+- The code completion of the new unit language was improved.
+- The performance of error type propagation (especially in relation to type tags) was improved.
+- The name of the unitless unit can now be customized through the `PhysUnitLangConfig` extension point.
+
 ## July 2024
 
 ### Added

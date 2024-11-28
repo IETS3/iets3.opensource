@@ -26,6 +26,13 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -38,6 +45,10 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
@@ -151,6 +162,15 @@
   <node concept="18kY7G" id="55lPkJGFLUM">
     <property role="TrG5h" value="check_LookupTable" />
     <node concept="3clFbS" id="55lPkJGFLUN" role="18ibNy">
+      <node concept="3cpWs8" id="3eH6BL4aUDc" role="3cqZAp">
+        <node concept="3cpWsn" id="3eH6BL4aUDf" role="3cpWs9">
+          <property role="TrG5h" value="errorMessage" />
+          <node concept="17QB3L" id="3eH6BL4aUDa" role="1tU5fm" />
+          <node concept="Xl_RD" id="55lPkJGG1Vw" role="33vP2m">
+            <property role="Xl_RC" value="type must have distinct, separate values (be discrete)" />
+          </node>
+        </node>
+      </node>
       <node concept="2Mj0R9" id="55lPkJGFLUT" role="3cqZAp">
         <node concept="2OqwBi" id="55lPkJGG11i" role="2MkoU_">
           <node concept="2OqwBi" id="55lPkJGG09c" role="2Oq$k0">
@@ -165,9 +185,6 @@
             <ref role="37wK5l" to="pbu6:8XWEtesn15" resolve="isDiscrete" />
           </node>
         </node>
-        <node concept="Xl_RD" id="55lPkJGG1Vw" role="2MkJ7o">
-          <property role="Xl_RC" value="type must be discrete" />
-        </node>
         <node concept="2OqwBi" id="55lPkJGG2rE" role="1urrMF">
           <node concept="1YBJjd" id="55lPkJGG28r" role="2Oq$k0">
             <ref role="1YBMHb" node="55lPkJGFLUP" resolve="lookupTable" />
@@ -175,6 +192,9 @@
           <node concept="3TrEf2" id="55lPkJGG31_" role="2OqNvi">
             <ref role="3Tt5mk" to="8qwc:55lPkJGFLTi" resolve="rowType" />
           </node>
+        </node>
+        <node concept="37vLTw" id="3eH6BL4aUFb" role="2MkJ7o">
+          <ref role="3cqZAo" node="3eH6BL4aUDf" resolve="errorMessage" />
         </node>
       </node>
       <node concept="2Mj0R9" id="55lPkJGG1te" role="3cqZAp">
@@ -191,9 +211,6 @@
             <ref role="37wK5l" to="pbu6:8XWEtesn15" resolve="isDiscrete" />
           </node>
         </node>
-        <node concept="Xl_RD" id="55lPkJGG249" role="2MkJ7o">
-          <property role="Xl_RC" value="type must be discrete" />
-        </node>
         <node concept="2OqwBi" id="55lPkJGG34P" role="1urrMF">
           <node concept="1YBJjd" id="55lPkJGG34Q" role="2Oq$k0">
             <ref role="1YBMHb" node="55lPkJGFLUP" resolve="lookupTable" />
@@ -201,6 +218,9 @@
           <node concept="3TrEf2" id="55lPkJGG3Ev" role="2OqNvi">
             <ref role="3Tt5mk" to="8qwc:55lPkJGFLTn" resolve="colType" />
           </node>
+        </node>
+        <node concept="37vLTw" id="3eH6BL4aUG3" role="2MkJ7o">
+          <ref role="3cqZAo" node="3eH6BL4aUDf" resolve="errorMessage" />
         </node>
       </node>
     </node>

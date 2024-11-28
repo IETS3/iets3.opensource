@@ -12,7 +12,7 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare" version="-1" />
-    <use id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt" version="-1" />
+    <use id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt" version="3" />
     <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="-1" />
     <use id="be679007-4312-4db1-9ac0-ab7dfbe66a74" name="org.iets3.core.expr.typetags.units.quantity" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -30,10 +30,11 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="63ih" ref="r:8b224ec5-7a3e-45b9-8341-eb73ff942246(org.iets3.core.expr.math.typesystem)" />
     <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
-    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="cp9o" ref="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="dntf" ref="r:5d67260e-ef2e-4f51-9a4f-b005e241d989(org.iets3.core.expr.typetags.units.behavior)" />
+    <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -2267,10 +2268,10 @@
               </node>
             </node>
             <node concept="2vmpnb" id="5aYM8it4awK" role="30dEsF" />
-            <node concept="7CXmI" id="5IOlOc8A8cN" role="lGtFl">
-              <node concept="1TM$A" id="5IOlOc8A8cO" role="7EUXB">
-                <node concept="2PYRI3" id="5IOlOc8A8cP" role="3lydEf">
-                  <ref role="39XzEq" to="eppz:6Gv16DNE4o_" />
+            <node concept="7CXmI" id="TrLxV$C5Ft" role="lGtFl">
+              <node concept="1TM$A" id="TrLxV$C8ea" role="7EUXB">
+                <node concept="2PYRI3" id="TrLxV$C8eb" role="3lydEf">
+                  <ref role="39XzEq" to="t4jv:2ck7OjOLa0b" />
                 </node>
               </node>
             </node>
@@ -2290,10 +2291,10 @@
               </node>
             </node>
             <node concept="2vmpnb" id="5aYM8it4cGP" role="30dEsF" />
-            <node concept="7CXmI" id="5IOlOc8Aaza" role="lGtFl">
-              <node concept="1TM$A" id="5IOlOc8Aazb" role="7EUXB">
-                <node concept="2PYRI3" id="5IOlOc8Aazc" role="3lydEf">
-                  <ref role="39XzEq" to="eppz:6Gv16DNE4o_" />
+            <node concept="7CXmI" id="TrLxV$C8k7" role="lGtFl">
+              <node concept="1TM$A" id="TrLxV$CaQO" role="7EUXB">
+                <node concept="2PYRI3" id="TrLxV$CaQP" role="3lydEf">
+                  <ref role="39XzEq" to="t4jv:7KDVkAEtIWe" />
                 </node>
               </node>
             </node>
@@ -3054,10 +3055,10 @@
                         <node concept="2XshWL" id="1JTgXSYONbI" role="2OqNvi">
                           <ref role="2WH_rO" node="1JTgXSYOKDT" resolve="createFractionalExponent" />
                           <node concept="Xl_RD" id="1JTgXSYONAS" role="2XxRq1">
-                            <property role="Xl_RC" value="3" />
+                            <property role="Xl_RC" value="-3" />
                           </node>
                           <node concept="Xl_RD" id="1JTgXSYONBY" role="2XxRq1">
-                            <property role="Xl_RC" value="-2" />
+                            <property role="Xl_RC" value="2" />
                           </node>
                         </node>
                       </node>
@@ -7355,6 +7356,27 @@
       <node concept="3dYjL0" id="69HsIy5GLTf" role="_fkp5" />
     </node>
   </node>
+  <node concept="_iOnV" id="7DfYVnlgZTZ">
+    <property role="TrG5h" value="Quanities" />
+    <node concept="Rn5op" id="1KUmgSFvJZN" role="_iOnC">
+      <property role="TrG5h" value="millimetre" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJZO" role="_iOnC">
+      <property role="TrG5h" value="acceleration" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJZP" role="_iOnC">
+      <property role="TrG5h" value="metre per second" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJZQ" role="_iOnC">
+      <property role="TrG5h" value="centimetre" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJZR" role="_iOnC">
+      <property role="TrG5h" value="percent" />
+    </node>
+    <node concept="Rn5op" id="1KUmgSFvJZS" role="_iOnC">
+      <property role="TrG5h" value="decimetre" />
+    </node>
+  </node>
   <node concept="_iOnV" id="2UZH4PMT5or">
     <property role="TrG5h" value="duplicateUnits" />
     <node concept="CIrOH" id="2UZH4PMT5ot" role="_iOnC">
@@ -7486,27 +7508,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="_iOnV" id="7DfYVnlgZTZ">
-    <property role="TrG5h" value="Quanities" />
-    <node concept="Rn5op" id="1KUmgSFvJZN" role="_iOnC">
-      <property role="TrG5h" value="millimetre" />
-    </node>
-    <node concept="Rn5op" id="1KUmgSFvJZO" role="_iOnC">
-      <property role="TrG5h" value="acceleration" />
-    </node>
-    <node concept="Rn5op" id="1KUmgSFvJZP" role="_iOnC">
-      <property role="TrG5h" value="metre per second" />
-    </node>
-    <node concept="Rn5op" id="1KUmgSFvJZQ" role="_iOnC">
-      <property role="TrG5h" value="centimetre" />
-    </node>
-    <node concept="Rn5op" id="1KUmgSFvJZR" role="_iOnC">
-      <property role="TrG5h" value="percent" />
-    </node>
-    <node concept="Rn5op" id="1KUmgSFvJZS" role="_iOnC">
-      <property role="TrG5h" value="decimetre" />
     </node>
   </node>
   <node concept="1lH9Xt" id="31BxekZWy2w">

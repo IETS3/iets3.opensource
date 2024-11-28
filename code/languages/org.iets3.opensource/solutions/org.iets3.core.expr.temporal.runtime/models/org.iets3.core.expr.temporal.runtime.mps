@@ -446,7 +446,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4OwGieAzes3" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object)" resolve="indexOf" />
+                <ref role="37wK5l" to="33ny:~ArrayList.indexOf(java.lang.Object)" resolve="indexOf" />
                 <node concept="Xjq3P" id="4OwGieAzfe4" role="37wK5m" />
               </node>
             </node>
@@ -466,7 +466,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4OwGieAzh2z" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+              <ref role="37wK5l" to="33ny:~ArrayList.get(int)" resolve="get" />
               <node concept="3cpWs3" id="6nEpT4GUGmT" role="37wK5m">
                 <node concept="3cmrfG" id="6nEpT4GUGn6" role="3uHU7w">
                   <property role="3cmrfH" value="1" />
@@ -519,7 +519,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4OwGieAzrlu" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object)" resolve="indexOf" />
+                <ref role="37wK5l" to="33ny:~ArrayList.indexOf(java.lang.Object)" resolve="indexOf" />
                 <node concept="Xjq3P" id="4OwGieAzs2s" role="37wK5m" />
               </node>
             </node>
@@ -539,7 +539,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4OwGieAzuGp" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+              <ref role="37wK5l" to="33ny:~ArrayList.get(int)" resolve="get" />
               <node concept="3cpWsd" id="6nEpT4GUHNc" role="37wK5m">
                 <node concept="3cmrfG" id="6nEpT4GUHNp" role="3uHU7w">
                   <property role="3cmrfH" value="1" />
