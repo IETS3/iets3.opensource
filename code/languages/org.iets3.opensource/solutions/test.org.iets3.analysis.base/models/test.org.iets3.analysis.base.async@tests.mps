@@ -1977,6 +1977,9 @@
         <property role="TrG5h" value="execEnv" />
         <node concept="3uibUv" id="6pPfAzJCy4R" role="1tU5fm">
           <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
+          <node concept="3uibUv" id="1r9MCA8zsCO" role="11_B2D">
+            <ref role="3uigEE" to="hnhi:3x8VOVHeBE$" resolve="ITask" />
+          </node>
         </node>
       </node>
     </node>
