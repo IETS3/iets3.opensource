@@ -596,7 +596,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -7626,7 +7629,7 @@
             <node concept="2ShNRf" id="4jkbLB63NMM" role="33vP2m">
               <node concept="Tc6Ow" id="4jkbLB63NMA" role="2ShVmc">
                 <node concept="3Tqbb2" id="4jkbLB63NMB" role="HW$YZ">
-                  <ref role="ehGHo" to="i3ya:7eOyx9r3kR5" resolve="UnitReference" />
+                  <ref role="ehGHo" to="i3ya:7athFveEYHG" resolve="UnitExpression" />
                 </node>
               </node>
             </node>
@@ -9164,18 +9167,16 @@
                 <ref role="3Tt5mk" to="i3ya:7eOyx9r3qG3" resolve="specification" />
               </node>
             </node>
-            <node concept="1PxgMI" id="YaFIdpOyRE" role="37vLTx">
-              <property role="1BlNFB" value="true" />
-              <node concept="chp4Y" id="YaFIdpOBIc" role="3oSUPX">
-                <ref role="cht4Q" to="i3ya:7athFveEYHG" resolve="UnitExpression" />
-              </node>
-              <node concept="1rXfSq" id="7dduDjLgU0m" role="1m5AlR">
-                <ref role="37wK5l" node="7dduDjL8xAO" resolve="createUnitMultiplication" />
-                <node concept="37vLTw" id="7dduDjLgXlK" role="37wK5m">
-                  <ref role="3cqZAo" node="6q$NxWeYcv3" resolve="unitRefs" />
-                </node>
+            <node concept="1rXfSq" id="7dduDjLgU0m" role="37vLTx">
+              <ref role="37wK5l" node="7dduDjL8xAO" resolve="createUnitMultiplication" />
+              <node concept="37vLTw" id="7dduDjLgXlK" role="37wK5m">
+                <ref role="3cqZAo" node="6q$NxWeYcv3" resolve="unitRefs" />
               </node>
             </node>
+          </node>
+          <node concept="15s5l7" id="4esM_INBtf_" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+            <property role="huDt6" value="all typesystem messages" />
           </node>
         </node>
         <node concept="3cpWs6" id="6q$NxWeYcvl" role="3cqZAp">
