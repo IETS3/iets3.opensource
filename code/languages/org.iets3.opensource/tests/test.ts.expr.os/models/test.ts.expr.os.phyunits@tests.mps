@@ -9607,6 +9607,35 @@
           </node>
         </node>
         <node concept="_ixoA" id="7F14or$fHlD" role="_iOnC" />
+        <node concept="2zPypq" id="2xkb_2HNX$X" role="_iOnC">
+          <property role="TrG5h" value="bitMixing" />
+          <node concept="1YnStw" id="2xkb_2HO4WC" role="2zPyp_">
+            <node concept="CIsGf" id="2xkb_2HO4WB" role="2c7tTI">
+              <node concept="CIsvn" id="2xkb_2HO4WA" role="CIi4h">
+                <ref role="CIi3I" to="8ps7:2Yx91N$tLAX" resolve="bit" />
+              </node>
+            </node>
+            <node concept="30bXRB" id="2xkb_2HO3ZQ" role="1YnStB">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="7CXmI" id="2xkb_2HVCle" role="lGtFl">
+              <node concept="1TM$A" id="2xkb_2HVDU1" role="7EUXB">
+                <node concept="2PYRI3" id="2xkb_2HVDU2" role="3lydEf">
+                  <ref role="39XzEq" to="x0pf:6qDtanU0Ksh" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2c7tTJ" id="2xkb_2HO2bB" role="2zM23F">
+            <node concept="CIsGf" id="2xkb_2HO35y" role="2c7tTI">
+              <node concept="CIsvn" id="2xkb_2HO35x" role="CIi4h">
+                <ref role="CIi3I" to="8ps7:14aBVbN55Ep" resolve="bit" />
+              </node>
+            </node>
+            <node concept="mLuIC" id="2xkb_2HO1hU" role="2c7tTw" />
+          </node>
+        </node>
+        <node concept="_ixoA" id="2xkb_2HNSNf" role="_iOnC" />
         <node concept="CIrOH" id="7F14or$fHoz" role="_iOnC">
           <property role="TrG5h" value="mUnit" />
           <property role="22P1Ek" value="2hbaSyABMZN/metric" />
@@ -9786,6 +9815,12 @@
         <node concept="_ixoA" id="7CCjMgEywLU" role="_iOnC" />
         <node concept="3GEVxB" id="EsE2hyiAIe" role="3i6evy">
           <ref role="3GEb4d" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
+        </node>
+        <node concept="3GEVxB" id="2xkb_2HNTIj" role="3i6evy">
+          <ref role="3GEb4d" to="8ps7:ZkGd2yKlmo" resolve="UnitsOfInformationIEC" />
+        </node>
+        <node concept="3GEVxB" id="2xkb_2HNVBI" role="3i6evy">
+          <ref role="3GEb4d" to="8ps7:ZkGd2yKlml" resolve="UnitsOfInformationMetric" />
         </node>
       </node>
     </node>
