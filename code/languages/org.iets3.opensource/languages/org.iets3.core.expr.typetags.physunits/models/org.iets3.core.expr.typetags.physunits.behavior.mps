@@ -9676,6 +9676,22 @@
     <node concept="2YIFZL" id="5X7HQPSGcOs" role="jymVt">
       <property role="TrG5h" value="createConversionSpecifierForPrefixedUnitReferences" />
       <node concept="3clFbS" id="5X7HQPSGcOv" role="3clF47">
+        <node concept="3cpWs8" id="2UCp54UXT_G" role="3cqZAp">
+          <node concept="3cpWsn" id="2UCp54UXT_H" role="3cpWs9">
+            <property role="TrG5h" value="expression" />
+            <node concept="3Tqbb2" id="2UCp54UXG55" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+            </node>
+            <node concept="2OqwBi" id="2UCp54UXT_I" role="33vP2m">
+              <node concept="37vLTw" id="2UCp54UXT_J" role="2Oq$k0">
+                <ref role="3cqZAo" node="5X7HQPSGCgW" resolve="convertUnit" />
+              </node>
+              <node concept="2qgKlT" id="2UCp54UXT_K" role="2OqNvi">
+                <ref role="37wK5l" node="7SygLIkQnGn" resolve="getExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4P6r3pewrDc" role="3cqZAp">
           <node concept="3cpWsn" id="4P6r3pewrDd" role="3cpWs9">
             <property role="TrG5h" value="typeChecking" />
@@ -9686,13 +9702,8 @@
               <node concept="1pGfFk" id="4P6r3pewrDg" role="2ShVmc">
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
-                <node concept="2OqwBi" id="4P6r3pewtH5" role="37wK5m">
-                  <node concept="37vLTw" id="4P6r3pewtH6" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5X7HQPSGCgW" resolve="convertUnit" />
-                  </node>
-                  <node concept="2qgKlT" id="4P6r3pewtH7" role="2OqNvi">
-                    <ref role="37wK5l" node="7SygLIkQnGn" resolve="getExpression" />
-                  </node>
+                <node concept="37vLTw" id="2UCp54UXT_L" role="37wK5m">
+                  <ref role="3cqZAo" node="2UCp54UXT_H" resolve="expression" />
                 </node>
                 <node concept="2OqwBi" id="4P6r3pewrDk" role="37wK5m">
                   <node concept="2QUAEa" id="4P6r3pewrDl" role="2Oq$k0" />
@@ -9714,8 +9725,11 @@
               <ref role="3cqZAo" node="4P6r3pewrDd" resolve="typeChecking" />
             </node>
             <node concept="liA8E" id="4P6r3pewrDw" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkRoot(boolean)" resolve="checkRoot" />
-              <node concept="3clFbT" id="4P6r3pewrDx" role="37wK5m" />
+              <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkIfNotChecked(org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="checkIfNotChecked" />
+              <node concept="37vLTw" id="2UCp54UY6uD" role="37wK5m">
+                <ref role="3cqZAo" node="2UCp54UXT_H" resolve="expression" />
+              </node>
+              <node concept="3clFbT" id="2UCp54UYdBY" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -9729,13 +9743,8 @@
               </node>
               <node concept="liA8E" id="4P6r3pewrDB" role="2OqNvi">
                 <ref role="37wK5l" to="u78q:~TypeCheckingContext.typeOf(org.jetbrains.mps.openapi.model.SNode)" resolve="typeOf" />
-                <node concept="2OqwBi" id="4P6r3pewuaR" role="37wK5m">
-                  <node concept="37vLTw" id="4P6r3pewuaS" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5X7HQPSGCgW" resolve="convertUnit" />
-                  </node>
-                  <node concept="2qgKlT" id="4P6r3pewuaT" role="2OqNvi">
-                    <ref role="37wK5l" node="7SygLIkQnGn" resolve="getExpression" />
-                  </node>
+                <node concept="37vLTw" id="2UCp54UXT_M" role="37wK5m">
+                  <ref role="3cqZAo" node="2UCp54UXT_H" resolve="expression" />
                 </node>
               </node>
             </node>
@@ -10750,7 +10759,20 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5X7HQPSCcpp" role="3cqZAp" />
+        <node concept="3cpWs8" id="2UCp54UW3Fx" role="3cqZAp">
+          <node concept="3cpWsn" id="2UCp54UW3Fy" role="3cpWs9">
+            <property role="TrG5h" value="expression" />
+            <node concept="3Tqbb2" id="2UCp54UW32n" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+            </node>
+            <node concept="2OqwBi" id="2UCp54UW3Fz" role="33vP2m">
+              <node concept="13iPFW" id="2UCp54UW3F$" role="2Oq$k0" />
+              <node concept="2qgKlT" id="2UCp54UW3F_" role="2OqNvi">
+                <ref role="37wK5l" node="7SygLIkQnGn" resolve="getExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="3_TFq$0_vSL" role="3cqZAp">
           <node concept="3clFbS" id="3_TFq$0_vSM" role="3clFbx">
             <node concept="3cpWs8" id="5pqsPq42MOm" role="3cqZAp">
@@ -10763,11 +10785,8 @@
                   <node concept="1pGfFk" id="5pqsPq4jsma" role="2ShVmc">
                     <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
-                    <node concept="2OqwBi" id="5pqsPq4m$Ct" role="37wK5m">
-                      <node concept="13iPFW" id="5pqsPq4m$Cu" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="5pqsPq4m$Cv" role="2OqNvi">
-                        <ref role="37wK5l" node="7SygLIkQnGn" resolve="getExpression" />
-                      </node>
+                    <node concept="37vLTw" id="2UCp54UW3FA" role="37wK5m">
+                      <ref role="3cqZAo" node="2UCp54UW3Fy" resolve="expression" />
                     </node>
                     <node concept="2OqwBi" id="5pqsPq4jvSq" role="37wK5m">
                       <node concept="2QUAEa" id="5pqsPq4jvDn" role="2Oq$k0" />
@@ -10789,8 +10808,11 @@
                   <ref role="3cqZAo" node="5pqsPq42MOn" resolve="typeChecking" />
                 </node>
                 <node concept="liA8E" id="5pqsPq4t7Z4" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkRoot(boolean)" resolve="checkRoot" />
-                  <node concept="3clFbT" id="5pqsPq4t9oT" role="37wK5m" />
+                  <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkIfNotChecked(org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="checkIfNotChecked" />
+                  <node concept="37vLTw" id="2UCp54UW8Hx" role="37wK5m">
+                    <ref role="3cqZAo" node="2UCp54UW3Fy" resolve="expression" />
+                  </node>
+                  <node concept="3clFbT" id="2UCp54UWbnN" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -10804,11 +10826,8 @@
                   </node>
                   <node concept="liA8E" id="5pqsPq4my1P" role="2OqNvi">
                     <ref role="37wK5l" to="u78q:~TypeCheckingContext.typeOf(org.jetbrains.mps.openapi.model.SNode)" resolve="typeOf" />
-                    <node concept="2OqwBi" id="5X7HQPSJuZk" role="37wK5m">
-                      <node concept="13iPFW" id="5X7HQPSJuZl" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="5X7HQPSJuZm" role="2OqNvi">
-                        <ref role="37wK5l" node="7SygLIkQnGn" resolve="getExpression" />
-                      </node>
+                    <node concept="37vLTw" id="2UCp54UW3FC" role="37wK5m">
+                      <ref role="3cqZAo" node="2UCp54UW3Fy" resolve="expression" />
                     </node>
                   </node>
                 </node>
@@ -11353,10 +11372,10 @@
               </node>
             </node>
             <node concept="3y3z36" id="3_TFq$0_wG$" role="3uHU7B">
-              <node concept="BsUDl" id="7SygLIkQp_g" role="3uHU7B">
-                <ref role="37wK5l" node="7SygLIkQnGn" resolve="getExpression" />
-              </node>
               <node concept="10Nm6u" id="3_TFq$0_wHn" role="3uHU7w" />
+              <node concept="37vLTw" id="2UCp54UW6iD" role="3uHU7B">
+                <ref role="3cqZAo" node="2UCp54UW3Fy" resolve="expression" />
+              </node>
             </node>
           </node>
         </node>
