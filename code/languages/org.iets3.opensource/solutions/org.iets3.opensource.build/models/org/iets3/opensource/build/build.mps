@@ -14857,9 +14857,8 @@
     </node>
     <node concept="55IIr" id="7OQaAJRI72Q" role="auvoZ" />
     <node concept="1l3spV" id="7OQaAJRI72R" role="1l3spN">
-      <node concept="m$_wl" id="5loVtKO0X_7" role="39821P">
-        <ref role="m_rDy" node="5loVtKO0krH" resolve="testExecutor" />
-        <node concept="pUk6x" id="5loVtKO0X_b" role="pUk7w" />
+      <node concept="L2wRC" id="1ZA6TCD6pKL" role="39821P">
+        <ref role="L2wRA" node="7OQaAJRCS6v" resolve="org.iets3.core.InterpreterTestExecutor" />
       </node>
     </node>
     <node concept="3b7kt6" id="7OQaAJRI73q" role="10PD9s" />
@@ -14882,30 +14881,24 @@
     <node concept="1YJUtn" id="7Lttyc2Ti3W" role="1hWBAP">
       <property role="3MWwXZ" value="MainClass" />
       <ref role="30Vec$" node="7OQaAJRCS6v" resolve="org.iets3.core.InterpreterTestExecutor" />
-      <node concept="1jrVwD" id="7a5Ko4xVVug" role="1jrOHS">
-        <node concept="398BVA" id="7a5Ko4xVVxH" role="1YJTkC">
+      <node concept="1jrVwD" id="1ZA6TCD6Jnl" role="1jrOHS">
+        <node concept="398BVA" id="1ZA6TCD6JnO" role="1YJTkC">
           <ref role="398BVh" node="7OQaAJRI74_" resolve="iets3.lang.opensource" />
-          <node concept="2Ry0Ak" id="7a5Ko4xVVC_" role="iGT6I">
+          <node concept="2Ry0Ak" id="1ZA6TCDaDGd" role="iGT6I">
             <property role="2Ry0Am" value="tests" />
-            <node concept="2Ry0Ak" id="7a5Ko4xVVG3" role="2Ry0An">
+            <node concept="2Ry0Ak" id="1ZA6TCDaDGi" role="2Ry0An">
               <property role="2Ry0Am" value="test.in.expr.os" />
-              <node concept="2Ry0Ak" id="7a5Ko4xVVMU" role="2Ry0An">
-                <property role="2Ry0Am" value="models" />
-              </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="1jrVwD" id="7a5Ko4y0E6f" role="1jrOHS">
-        <node concept="398BVA" id="7a5Ko4y0E6o" role="1YJTkC">
+        <node concept="398BVA" id="1ZA6TCD6JnY" role="1YJTkC">
           <ref role="398BVh" node="7OQaAJRI74_" resolve="iets3.lang.opensource" />
-          <node concept="2Ry0Ak" id="7a5Ko4y0E6p" role="iGT6I">
+          <node concept="2Ry0Ak" id="1ZA6TCDaDGk" role="iGT6I">
             <property role="2Ry0Am" value="tests" />
-            <node concept="2Ry0Ak" id="7a5Ko4y0E9T" role="2Ry0An">
+            <node concept="2Ry0Ak" id="1ZA6TCDaDGp" role="2Ry0An">
               <property role="2Ry0Am" value="test.ts.expr.os" />
-              <node concept="2Ry0Ak" id="7a5Ko4y0Edl" role="2Ry0An">
-                <property role="2Ry0Am" value="models" />
-              </node>
             </node>
           </node>
         </node>
@@ -14920,30 +14913,6 @@
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="8" />
       <property role="3Ej$Sc" value="true" />
-    </node>
-    <node concept="m$_wf" id="5loVtKO0krH" role="3989C9">
-      <property role="m$_wk" value="org.iets3.InterpreterTestExecutor" />
-      <node concept="3_J27D" id="5loVtKO0krJ" role="m$_yQ">
-        <node concept="3Mxwew" id="5loVtKO0ksn" role="3MwsjC">
-          <property role="3MwjfP" value="org.iets3.InterpreterTestExecutor" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="5loVtKO0krL" role="m_cZH">
-        <node concept="3Mxwew" id="5loVtKO0kuV" role="3MwsjC">
-          <property role="3MwjfP" value="org.iets3.InterpreterTestExecutor" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="5loVtKO0krN" role="m$_w8">
-        <node concept="3Mxwey" id="5loVtKO0ku5" role="3MwsjC">
-          <ref role="3Mxwex" node="2I_jb36R5Ye" resolve="version" />
-        </node>
-      </node>
-      <node concept="m$_yC" id="5loVtKO0ksl" role="m$_yJ">
-        <ref role="m$_y1" node="5loVtKNYW0J" resolve="org.iets3.core.JUnitInterpreterTest" />
-      </node>
-      <node concept="m$f5U" id="5loVtKO0kuX" role="m$_yh">
-        <ref role="m$f5T" node="5loVtKO0ksX" resolve="testExecutor" />
-      </node>
     </node>
     <node concept="2G$12M" id="5loVtKO0ksX" role="3989C9">
       <property role="TrG5h" value="org.iets3.InterpreterTestExecutor" />
