@@ -197,6 +197,7 @@ task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageL
 def defaultScriptArgs = [
         'mps.home'                          : resolveMps.destinationDir,
         'iets3.github.opensource.home'      : rootDir,
+        'mps.test.project.path'             : "${rootDir}/code/languages/org.iets3.opensource",
         'build.dir'                         : buildDir,
         'mps.generator.skipUnmodifiedModels': incrementalBuild,
         'version'                           : version

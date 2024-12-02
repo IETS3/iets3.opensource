@@ -30,6 +30,7 @@
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
         <child id="1688667350638517006" name="compressArgs" index="XX84c" />
         <child id="3609768169816292377" name="jvmArgs" index="1psgkv" />
+        <child id="7978162869575635130" name="projectPath" index="1RZ71A" />
       </concept>
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
@@ -14109,6 +14110,9 @@
           <node concept="3Mxwew" id="1DM13Xaw8ZX" role="3MwsjC">
             <property role="3MwjfP" value="-Xss2048k -Xmx2048m" />
           </node>
+        </node>
+        <node concept="398BVA" id="71RLIEFHzg5" role="1RZ71A">
+          <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         </node>
       </node>
       <node concept="22LTRM" id="OJuIQp_hdf" role="22LTRK">

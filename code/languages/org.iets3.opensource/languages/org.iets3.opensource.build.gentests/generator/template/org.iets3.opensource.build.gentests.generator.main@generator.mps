@@ -2390,6 +2390,22 @@
                     </node>
                   </node>
                 </node>
+                <node concept="2pNNFK" id="3pajOvjI3r" role="3o6s8t">
+                  <property role="2pNNFO" value="sysproperty" />
+                  <property role="qg3DV" value="true" />
+                  <node concept="2pNUuL" id="3pajOvjJqf" role="2pNNFR">
+                    <property role="2pNUuO" value="key" />
+                    <node concept="2pMdtt" id="3pajOvjJqg" role="2pMdts">
+                      <property role="2pMdty" value="mps.test.project.path" />
+                    </node>
+                  </node>
+                  <node concept="2pNUuL" id="3pajOvjJr2" role="2pNNFR">
+                    <property role="2pNUuO" value="value" />
+                    <node concept="2pMdtt" id="3pajOvjJr3" role="2pMdts">
+                      <property role="2pMdty" value="${basedir}" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3o6iSG" id="4mAIL6pn14P" role="3o6s8t" />
                 <node concept="2pNNFK" id="16twgkTaVbz" role="3o6s8t">
                   <property role="qg3DV" value="true" />
