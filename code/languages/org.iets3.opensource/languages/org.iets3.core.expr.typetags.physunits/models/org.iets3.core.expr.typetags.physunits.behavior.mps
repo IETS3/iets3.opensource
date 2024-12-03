@@ -13118,23 +13118,6 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="41vYFO2MP_s" role="13h7CS">
-      <property role="TrG5h" value="createDefaultVarExpr" />
-      <ref role="13i0hy" to="pbu6:60Qa1k_nI2O" resolve="createDefaultVarExpr" />
-      <node concept="3Tm1VV" id="41vYFO2MP_t" role="1B3o_S" />
-      <node concept="3clFbS" id="41vYFO2MP_w" role="3clF47">
-        <node concept="3clFbF" id="41vYFO2MPAp" role="3cqZAp">
-          <node concept="2pJPEk" id="41vYFO2MPAn" role="3clFbG">
-            <node concept="2pJPED" id="41vYFO2MPAo" role="2pJPEn">
-              <ref role="2pJxaS" to="i3ya:45a4DYZtiVD" resolve="QuantityEmptyType" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="41vYFO2MP_x" role="3clF45">
-        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
-      </node>
-    </node>
   </node>
   <node concept="13h7C7" id="45a4DZ02V_e">
     <property role="3GE5qa" value="group.typesystem" />
