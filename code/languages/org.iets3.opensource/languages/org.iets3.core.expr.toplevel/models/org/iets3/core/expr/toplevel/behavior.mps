@@ -4689,9 +4689,7 @@
       </node>
       <node concept="37vLTG" id="ZYPG76NAqj" role="3clF46">
         <property role="TrG5h" value="expectedType" />
-        <node concept="3Tqbb2" id="ZYPG76NAqk" role="1tU5fm">
-          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
-        </node>
+        <node concept="3Tqbb2" id="ZYPG76NAqk" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="ZYPG76NAql" role="3clF46">
         <property role="TrG5h" value="actualType" />
