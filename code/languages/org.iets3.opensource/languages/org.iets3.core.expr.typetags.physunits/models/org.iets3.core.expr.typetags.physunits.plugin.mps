@@ -1048,6 +1048,36 @@
       </node>
     </node>
     <node concept="2tJIrI" id="HeBpG0vQy" role="jymVt" />
+    <node concept="3clFb_" id="77DmBXAD1A5" role="jymVt">
+      <property role="TrG5h" value="allowMixingCompatibleQuantitiesWithoutConversions" />
+      <node concept="3clFbS" id="77DmBXAD1A8" role="3clF47">
+        <node concept="3clFbF" id="77DmBXAD2la" role="3cqZAp">
+          <node concept="3clFbT" id="77DmBXAD2l9" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="77DmBXAD1A9" role="1B3o_S" />
+      <node concept="10P_77" id="77DmBXAD16M" role="3clF45" />
+      <node concept="2JFqV2" id="77DmBXAD1VJ" role="2frcjj" />
+      <node concept="P$JXv" id="5zjZVctiSA$" role="lGtFl">
+        <node concept="TZ5HA" id="5zjZVctiSA_" role="TZ5H$">
+          <node concept="1dT_AC" id="5zjZVctiSAA" role="1dT_Ay">
+            <property role="1dT_AB" value="Allows compatible unit specifications (e.g. different prefix than expected) without implicit conversions being enabled." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5zjZVctiTT4" role="TZ5H$">
+          <node concept="1dT_AC" id="5zjZVctiTT5" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5zjZVctiTYG" role="TZ5H$">
+          <node concept="1dT_AC" id="5zjZVctiTYH" role="1dT_Ay">
+            <property role="1dT_AB" value="Introduced to support the new, stricter unit compatibility check without forcing activation of the implicit conversions." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="77DmBXAD1ms" role="jymVt" />
+    <node concept="2tJIrI" id="77DmBXAD1rE" role="jymVt" />
     <node concept="3clFb_" id="HeBpG0y2X" role="jymVt">
       <property role="TrG5h" value="getExponentComparator" />
       <node concept="3clFbS" id="HeBpG0y30" role="3clF47" />
@@ -1062,11 +1092,6 @@
         <node concept="TZ5HA" id="HeBpG2jhY" role="TZ5H$">
           <node concept="1dT_AC" id="HeBpG2jhZ" role="1dT_Ay">
             <property role="1dT_AB" value="Returns the comparator used to order exponents in group-like expressions e.g. quantity and unit specification expression." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="HeBpG2jsq" role="TZ5H$">
-          <node concept="1dT_AC" id="HeBpG2jsr" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
           </node>
         </node>
       </node>
