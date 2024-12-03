@@ -3484,7 +3484,7 @@
       </node>
     </node>
     <node concept="312cEg" id="6UkhXJgMtw9" role="jymVt">
-      <property role="TrG5h" value="wrapper" />
+      <property role="TrG5h" value="wrappers" />
       <node concept="3Tm6S6" id="6UkhXJgMqva" role="1B3o_S" />
       <node concept="_YKpA" id="6UkhXJgMsWw" role="1tU5fm">
         <node concept="3uibUv" id="6UkhXJgMtoq" role="_ZDj9">
@@ -3628,7 +3628,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="3ZOWdXPxqTZ" role="3clF46">
-        <property role="TrG5h" value="wrapper" />
+        <property role="TrG5h" value="wrappers" />
         <node concept="_YKpA" id="6UkhXJgMiUO" role="1tU5fm">
           <node concept="3uibUv" id="6UkhXJgMiUP" role="_ZDj9">
             <ref role="3uigEE" to="sfqd:56tRMpP_ej7" resolve="ITestNodeWrapper" />
@@ -13741,6 +13741,12 @@
                   <node concept="3clFbF" id="4gBl0l5KD$w" role="3cqZAp">
                     <node concept="3fqX7Q" id="4gBl0l5KE98" role="3clFbG">
                       <node concept="2OqwBi" id="4gBl0l5KE9a" role="3fr31v">
+                        <node concept="liA8E" id="4gBl0l5KE9h" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="isInstanceOfConcept" />
+                          <node concept="37vLTw" id="4gBl0l5KE9i" role="37wK5m">
+                            <ref role="3cqZAo" node="4gBl0l5JoUN" resolve="givenConcept" />
+                          </node>
+                        </node>
                         <node concept="2OqwBi" id="4gBl0l5KE9b" role="2Oq$k0">
                           <node concept="2OqwBi" id="4gBl0l5KE9c" role="2Oq$k0">
                             <node concept="37vLTw" id="4gBl0l5KE9d" role="2Oq$k0">
@@ -13755,12 +13761,6 @@
                             <node concept="37vLTw" id="4gBl0l5KE9g" role="37wK5m">
                               <ref role="3cqZAo" node="4gBl0l5JAtr" resolve="repo" />
                             </node>
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="4gBl0l5KE9h" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="isInstanceOfConcept" />
-                          <node concept="37vLTw" id="4gBl0l5KE9i" role="37wK5m">
-                            <ref role="3cqZAo" node="4gBl0l5JoUN" resolve="givenConcept" />
                           </node>
                         </node>
                       </node>
