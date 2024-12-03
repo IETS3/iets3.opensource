@@ -10,11 +10,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="5338017450510309031" name="org.iets3.core.expr.base.structure.AndTag" flags="ng" index="2s_agL" />
       <concept id="5338017450510303355" name="org.iets3.core.expr.base.structure.OperatorGroup" flags="ng" index="2s_bbH">
@@ -76,9 +71,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2XOHcx" id="6WstIz8wNvC">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
-  </node>
   <node concept="_iOnU" id="6WstIz8wNvD">
     <property role="TrG5h" value="logicalgroups" />
     <property role="1XBH2A" value="true" />
