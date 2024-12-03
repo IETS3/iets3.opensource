@@ -785,7 +785,7 @@
       </node>
     </node>
     <node concept="m$_wf" id="5loVtKNYW0J" role="3989C9">
-      <property role="m$_wk" value="org.iets3.core.JUnitInterpreterTest" />
+      <property role="m$_wk" value="org.iets3.core.junit.interpreter.run.configuration" />
       <node concept="m$_yC" id="5loVtKNZ01s" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5CFKsRWVb8B" resolve="jetbrains.mps.execution.configurations" />
       </node>
@@ -794,12 +794,12 @@
       </node>
       <node concept="3_J27D" id="5loVtKNYW0L" role="m$_yQ">
         <node concept="3Mxwew" id="5loVtKNYXdK" role="3MwsjC">
-          <property role="3MwjfP" value="org.iets3.core.JUnitInterpreterTest" />
+          <property role="3MwjfP" value="org.iets3.core.junit.interpreter.run.configuration" />
         </node>
       </node>
       <node concept="3_J27D" id="5loVtKNYW0N" role="m_cZH">
         <node concept="3Mxwew" id="5loVtKNYXdM" role="3MwsjC">
-          <property role="3MwjfP" value="org.iets3.core.JUnitInterpreterTest" />
+          <property role="3MwjfP" value="org.iets3.core.junit.interpretertest.runner" />
         </node>
       </node>
       <node concept="3_J27D" id="5loVtKNYW0P" role="m$_w8">
@@ -839,19 +839,19 @@
       </node>
     </node>
     <node concept="2G$12M" id="5loVtKNYYlW" role="3989C9">
-      <property role="TrG5h" value="org.iets3.core.JUnitInterpreterTest" />
+      <property role="TrG5h" value="org.iets3.core.junit.interpreter.run.configuration" />
       <node concept="1E1JtA" id="5loVtKNYZtf" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="org.iets3.core.JunitInterpreterTest" />
+        <property role="TrG5h" value="org.iets3.core.junit.interpreter.run.configuration" />
         <property role="3LESm3" value="bacb5ddc-bd96-4d54-a76e-63aeb598f7fb" />
         <node concept="398BVA" id="5loVtKNYZuV" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="5loVtKNYZxt" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="5loVtKNYZza" role="2Ry0An">
-              <property role="2Ry0Am" value="org.iets3.core.JunitInterpreterTest" />
-              <node concept="2Ry0Ak" id="5loVtKNYZ$R" role="2Ry0An">
-                <property role="2Ry0Am" value="org.iets3.core.JunitInterpreterTest.msd" />
+              <property role="2Ry0Am" value="org.iets3.core.junit.interpreter.run.configuration" />
+              <node concept="2Ry0Ak" id="2MB0tF9EQlJ" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.junit.interpreter.run.configuration.msd" />
               </node>
             </node>
           </node>
@@ -937,20 +937,20 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="5loVtKNYZAn" role="1HemKq">
-            <node concept="398BVA" id="5loVtKNYZAb" role="3LXTmr">
+          <node concept="3LXTmp" id="2MB0tF9EQoP" role="1HemKq">
+            <node concept="398BVA" id="2MB0tF9EQoE" role="3LXTmr">
               <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="5loVtKNYZAc" role="iGT6I">
+              <node concept="2Ry0Ak" id="2MB0tF9EQoF" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="5loVtKNYZAd" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.core.JunitInterpreterTest" />
-                  <node concept="2Ry0Ak" id="5loVtKNYZAe" role="2Ry0An">
+                <node concept="2Ry0Ak" id="2MB0tF9EQoG" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.junit.interpreter.run.configuration" />
+                  <node concept="2Ry0Ak" id="2MB0tF9EQoH" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="5loVtKNYZAo" role="3LXTna">
+            <node concept="3qWCbU" id="2MB0tF9EQoQ" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
