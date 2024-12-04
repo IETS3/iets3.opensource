@@ -7,7 +7,7 @@
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
   </languages>
   <imports>
     <import index="6w03" ref="r:2b6823f7-1c48-47b9-9a41-e04ac80f7887(test.org.iets3.analysis.base.solvable.structure)" />
@@ -191,6 +191,7 @@
       <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -279,7 +280,6 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="7125221305512719026" name="jetbrains.mps.baseLanguage.collections.structure.CollectionType" flags="in" index="3vKaQO" />
@@ -389,7 +389,7 @@
           <node concept="3cpWsn" id="6N$E81BfJHE" role="3cpWs9">
             <property role="TrG5h" value="execEnv2" />
             <node concept="3uibUv" id="6N$E81BfJHF" role="1tU5fm">
-              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="IExecEnv" />
+              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
               <node concept="3vKaQO" id="6N$E81BfJHG" role="11_B2D">
                 <node concept="3uibUv" id="6N$E81BfJHH" role="3O5elw">
                   <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
@@ -1059,7 +1059,7 @@
           <node concept="3cpWsn" id="6N$E81BfzTa" role="3cpWs9">
             <property role="TrG5h" value="execEnv2" />
             <node concept="3uibUv" id="6N$E81BfzTb" role="1tU5fm">
-              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="IExecEnv" />
+              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
               <node concept="3vKaQO" id="6N$E81BfzTc" role="11_B2D">
                 <node concept="3uibUv" id="6N$E81BfzTd" role="3O5elw">
                   <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
@@ -1188,7 +1188,7 @@
                                           <ref role="37wK5l" to="hnhi:1VsTyb1M2Zc" resolve="submitISolvable" />
                                           <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
                                           <node concept="37vLTw" id="41hdHndnUr9" role="37wK5m">
-                                            <ref role="3cqZAo" node="41hdHndnUrn" resolve="sol" />
+                                            <ref role="3cqZAo" node="1i3h3A16n4P" />
                                           </node>
                                           <node concept="1bVj0M" id="41hdHndnUra" role="37wK5m">
                                             <node concept="37vLTG" id="41hdHndnUrb" role="1bW2Oz">
@@ -1245,10 +1245,10 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="41hdHndnUrn" role="1bW2Oz">
+                    <node concept="gl6BB" id="1i3h3A16n4P" role="1bW2Oz">
                       <property role="TrG5h" value="sol" />
                       <property role="3TUv4t" value="true" />
-                      <node concept="2jxLKc" id="41hdHndnUro" role="1tU5fm" />
+                      <node concept="2jxLKc" id="1i3h3A16n4Q" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
@@ -1286,7 +1286,7 @@
                             <node concept="3cpWs6" id="41hdHndpp_C" role="3cqZAp">
                               <node concept="2OqwBi" id="41hdHndpp_D" role="3cqZAk">
                                 <node concept="37vLTw" id="41hdHndpp_E" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="41hdHndpp_Z" resolve="it" />
+                                  <ref role="3cqZAo" node="1i3h3A16n4R" />
                                 </node>
                                 <node concept="liA8E" id="41hdHndpp_F" role="2OqNvi">
                                   <ref role="37wK5l" to="5zyv:~Future.get(long,java.util.concurrent.TimeUnit)" resolve="get" />
@@ -1339,9 +1339,9 @@
                           <node concept="10Nm6u" id="41hdHndpp_Y" role="3clFbG" />
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="41hdHndpp_Z" role="1bW2Oz">
+                      <node concept="gl6BB" id="1i3h3A16n4R" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="41hdHndppA0" role="1tU5fm" />
+                        <node concept="2jxLKc" id="1i3h3A16n4S" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -1907,7 +1907,7 @@
           <node concept="3cpWsn" id="_TaQix32NO" role="3cpWs9">
             <property role="TrG5h" value="execEnv2" />
             <node concept="3uibUv" id="_TaQix31$v" role="1tU5fm">
-              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="IExecEnv" />
+              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
               <node concept="3vKaQO" id="_TaQix3b6e" role="11_B2D">
                 <node concept="3uibUv" id="_TaQix3b6f" role="3O5elw">
                   <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />

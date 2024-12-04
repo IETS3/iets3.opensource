@@ -2546,10 +2546,10 @@
               <ref role="3cqZAo" node="1VsTyb1NCFx" resolve="messaging" />
             </node>
             <node concept="37vLTw" id="1VsTyb1NCFo" role="37wK5m">
-              <ref role="3cqZAo" node="1VsTyb1NCFz" resolve="execEnv" />
+              <ref role="3cqZAo" node="1VsTyb1NCFz" resolve="solverCreationEnv" />
             </node>
             <node concept="37vLTw" id="_TaQix3DF1" role="37wK5m">
-              <ref role="3cqZAo" node="_TaQix3_0K" resolve="execEnv2" />
+              <ref role="3cqZAo" node="_TaQix3_0K" resolve="solverRunEnv" />
             </node>
           </node>
         </node>
@@ -2584,7 +2584,7 @@
       <node concept="37vLTG" id="1VsTyb1NCFz" role="3clF46">
         <property role="TrG5h" value="solverCreationEnv" />
         <node concept="3uibUv" id="6pPfAzJAd9C" role="1tU5fm">
-          <ref role="3uigEE" node="6pPfAzJt_YX" resolve="IExecEnv" />
+          <ref role="3uigEE" node="6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
           <node concept="3uibUv" id="6pPfAzJAd9D" role="11_B2D">
             <ref role="3uigEE" node="3x8VOVHeBE$" resolve="ITask" />
           </node>
@@ -2593,7 +2593,7 @@
       <node concept="37vLTG" id="_TaQix3_0K" role="3clF46">
         <property role="TrG5h" value="solverRunEnv" />
         <node concept="3uibUv" id="_TaQix3_0L" role="1tU5fm">
-          <ref role="3uigEE" node="6pPfAzJt_YX" resolve="IExecEnv" />
+          <ref role="3uigEE" node="6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
           <node concept="3vKaQO" id="_TaQix3_0M" role="11_B2D">
             <node concept="3uibUv" id="_TaQix3_0N" role="3O5elw">
               <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
@@ -2739,7 +2739,7 @@
             <node concept="1rXfSq" id="IJ8MgQfWHs" role="33vP2m">
               <ref role="37wK5l" node="IJ8MgQekrX" resolve="scheduleTaskCreation" />
               <node concept="37vLTw" id="IJ8MgQeks3" role="37wK5m">
-                <ref role="3cqZAo" node="1VsTyb1M33j" resolve="execEnv" />
+                <ref role="3cqZAo" node="1VsTyb1M33j" resolve="solverCreationEnv" />
               </node>
               <node concept="37vLTw" id="IJ8MgQeks4" role="37wK5m">
                 <ref role="3cqZAo" node="1VsTyb1M2ZA" resolve="solvableJob" />
@@ -2784,7 +2784,7 @@
                       <node concept="1rXfSq" id="6mS76k2TW2s" role="2Oq$k0">
                         <ref role="37wK5l" node="5s4vWCDj51r" resolve="runSolverTask" />
                         <node concept="37vLTw" id="_TaQix1RHG" role="37wK5m">
-                          <ref role="3cqZAo" node="_TaQix1M$G" resolve="execEnvTaskRunning" />
+                          <ref role="3cqZAo" node="_TaQix1M$G" resolve="solverRunEnv" />
                         </node>
                         <node concept="37vLTw" id="6mS76k2RYBH" role="37wK5m">
                           <ref role="3cqZAo" node="IJ8MgQdNa0" resolve="statusUpdater" />
@@ -2857,7 +2857,7 @@
         <node concept="TUZQ0" id="6mS76k2VUxm" role="3nqlJM">
           <property role="TUZQ4" value="Around-Environment where SolverTask creation is run" />
           <node concept="zr_55" id="6mS76k2VXYf" role="zr_5Q">
-            <ref role="zr_51" node="1VsTyb1M33j" resolve="execEnv" />
+            <ref role="zr_51" node="1VsTyb1M33j" resolve="solverCreationEnv" />
           </node>
         </node>
         <node concept="x79VA" id="1VsTyb1M33y" role="3nqlJM">
@@ -2904,7 +2904,7 @@
         <property role="TrG5h" value="solverRunEnv" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="_TaQix1M$H" role="1tU5fm">
-          <ref role="3uigEE" node="6pPfAzJt_YX" resolve="IExecEnv" />
+          <ref role="3uigEE" node="6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
           <node concept="3vKaQO" id="_TaQix2WVV" role="11_B2D">
             <node concept="3uibUv" id="_TaQix2WVW" role="3O5elw">
               <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
@@ -3916,7 +3916,7 @@
                 </node>
                 <node concept="2OqwBi" id="2UhbGc_SkW0" role="33vP2m">
                   <node concept="37vLTw" id="2UhbGc_ShK7" role="2Oq$k0">
-                    <ref role="3cqZAo" node="_TaQix1UTw" resolve="env" />
+                    <ref role="3cqZAo" node="_TaQix1UTw" resolve="solverRunEnv" />
                   </node>
                   <node concept="liA8E" id="2UhbGc_SnTW" role="2OqNvi">
                     <ref role="37wK5l" node="6pPfAzJtIEf" resolve="runWithin" />
@@ -4090,7 +4090,7 @@
       <node concept="37vLTG" id="_TaQix1UTw" role="3clF46">
         <property role="TrG5h" value="solverRunEnv" />
         <node concept="3uibUv" id="_TaQix1UTx" role="1tU5fm">
-          <ref role="3uigEE" node="6pPfAzJt_YX" resolve="IExecEnv" />
+          <ref role="3uigEE" node="6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
           <node concept="3vKaQO" id="_TaQix2feJ" role="11_B2D">
             <node concept="3uibUv" id="_TaQix2feK" role="3O5elw">
               <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
@@ -4430,7 +4430,7 @@
               <node concept="1Y3b0j" id="_TaQix1vcq" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <property role="373rjd" value="true" />
-                <ref role="1Y3XeK" node="6pPfAzJt_YX" resolve="IExecEnv" />
+                <ref role="1Y3XeK" node="6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <node concept="3Tm1VV" id="_TaQix1vcr" role="1B3o_S" />
                 <node concept="16syzq" id="_TaQix1vcs" role="2Ghqu4">
@@ -4475,7 +4475,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="_TaQix1vcD" role="3clF45">
-        <ref role="3uigEE" node="6pPfAzJt_YX" resolve="IExecEnv" />
+        <ref role="3uigEE" node="6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
         <node concept="16syzq" id="_TaQix1vcE" role="11_B2D">
           <ref role="16sUi3" node="_TaQix1vcG" resolve="Y" />
         </node>
@@ -4498,7 +4498,7 @@
       <property role="TrG5h" value="readAccess" />
       <node concept="3Tm6S6" id="4RQUD6b0lNA" role="1B3o_S" />
       <node concept="3uibUv" id="4RQUD6b0lNB" role="3clF45">
-        <ref role="3uigEE" node="6pPfAzJt_YX" resolve="IExecEnv" />
+        <ref role="3uigEE" node="6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
         <node concept="3vKaQO" id="4RQUD6b0lNC" role="11_B2D">
           <node concept="3uibUv" id="4RQUD6b0lND" role="3O5elw">
             <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
@@ -4515,7 +4515,7 @@
           <node concept="3cpWsn" id="4RQUD6b0lMU" role="3cpWs9">
             <property role="TrG5h" value="solverRunEnv" />
             <node concept="3uibUv" id="4RQUD6b0lMV" role="1tU5fm">
-              <ref role="3uigEE" node="6pPfAzJt_YX" resolve="IExecEnv" />
+              <ref role="3uigEE" node="6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
               <node concept="3vKaQO" id="4RQUD6b0lMW" role="11_B2D">
                 <node concept="3uibUv" id="4RQUD6b0lMX" role="3O5elw">
                   <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
@@ -4561,7 +4561,7 @@
       <property role="TrG5h" value="writeAccess" />
       <node concept="3Tm6S6" id="4RQUD6b3pHO" role="1B3o_S" />
       <node concept="3uibUv" id="4RQUD6b3pHP" role="3clF45">
-        <ref role="3uigEE" node="6pPfAzJt_YX" resolve="IExecEnv" />
+        <ref role="3uigEE" node="6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
         <node concept="3uibUv" id="4RQUD6b3pHQ" role="11_B2D">
           <ref role="3uigEE" node="3x8VOVHeBE$" resolve="ITask" />
         </node>
