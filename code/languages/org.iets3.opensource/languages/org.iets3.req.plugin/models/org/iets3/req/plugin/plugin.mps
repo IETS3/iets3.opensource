@@ -211,6 +211,8 @@
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <reference id="8309912865649284888" name="extends" index="14aYEx" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
+        <child id="5782973724855443006" name="icon" index="37b278" />
+        <child id="4600337039047025779" name="label" index="3GFWDq" />
       </concept>
       <concept id="8309912865649636002" name="com.mbeddr.mpsutil.projectview.structure.QueryElementReference" flags="ng" index="14b0Wr">
         <reference id="8309912865649636121" name="element" index="14b0Uw" />
@@ -1790,6 +1792,21 @@
           <node concept="14b0Wr" id="7GPsQwLQJ0d" role="37wK5m">
             <ref role="14b0Uw" node="1ognOHjyj2a" resolve="requirementsModule" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Xl_RD" id="6N2unLuYpbe" role="3GFWDq">
+      <property role="Xl_RC" value="Requirements" />
+    </node>
+    <node concept="2OqwBi" id="6N2unLuYq6O" role="37b278">
+      <node concept="2YIFZM" id="6N2unLuYq6P" role="2Oq$k0">
+        <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
+        <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+      </node>
+      <node concept="liA8E" id="6N2unLuYq6Q" role="2OqNvi">
+        <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
+        <node concept="35c_gC" id="6N2unLuYszf" role="37wK5m">
+          <ref role="35c_gD" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
         </node>
       </node>
     </node>
