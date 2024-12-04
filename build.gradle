@@ -224,6 +224,7 @@ task buildLanguages(type: BuildLanguages, dependsOn: prebuild) {
     script "$buildDir/scripts/build-languages.xml"
 }
 
+
 task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
     script "$buildDir/scripts/build-tests.xml"
     doLast {

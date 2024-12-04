@@ -1722,7 +1722,7 @@
   </node>
   <node concept="1TIwiD" id="2ufoZQIKHqp">
     <property role="EcuMT" value="2850607030358693529" />
-    <property role="TrG5h" value="SimpleExpressionValueInspector" />
+    <property role="TrG5h" value="SimpleValueInspector" />
     <property role="R4oN_" value="an inspector for simple expression values" />
     <ref role="1TJDcQ" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
     <node concept="1TJgyi" id="6a3SqxOqxli" role="1TKVEl">
@@ -2218,6 +2218,14 @@
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
+  <node concept="PlHQZ" id="25rRV02oe$f">
+    <property role="EcuMT" value="2403760773179435279" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="TrG5h" value="ITupleOp" />
+    <node concept="PrWs8" id="25rRV02ohmw" role="PrDN$">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="25rRV02ooIM">
     <property role="EcuMT" value="2403760773179476914" />
     <property role="3GE5qa" value="tuples" />
@@ -2233,14 +2241,6 @@
     </node>
     <node concept="PrWs8" id="25rRV02oy5O" role="PzmwI">
       <ref role="PrY4T" node="25rRV02oe$f" resolve="ITupleOp" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="25rRV02oe$f">
-    <property role="EcuMT" value="2403760773179435279" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="ITupleOp" />
-    <node concept="PrWs8" id="25rRV02ohmw" role="PrDN$">
-      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
 </model>
