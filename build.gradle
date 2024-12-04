@@ -40,7 +40,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '17.0.6-b653.34'
+    jbrVersion = '17.0.8.1-b1000.32'
 }
 
 // detect if we are in a CI build
@@ -53,14 +53,14 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
-def major = "2022"
-def minor = "3"
+def major = "2023"
+def minor = "2"
 
 // Dependency versions
 
-ext.mpsVersion = '2022.3.3'
+ext.mpsVersion = '2023.2.1'
 
-def mbeddrVersion = "2022.3+"
+def mbeddrVersion = "2023.2+"
 def mpsQAVersion = "$major.$minor+"
 
 // if building a against a special branch from mbeddr is required add the name here
@@ -116,7 +116,6 @@ ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRe
 
 // 'artifacts' is used in the generated ant scripts as build output directory
 ext.artifactsDir = new File(buildDir, 'artifacts')
-ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
 
 
 wrapper {
@@ -197,8 +196,8 @@ task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageL
 def defaultScriptArgs = [
         'mps.home'                          : resolveMps.destinationDir,
         'iets3.github.opensource.home'      : rootDir,
+        'build.jna.library.path'            : new File(resolveMps.destinationDir, "lib/jna/${System.getProperty('os.arch')}"),
         'build.dir'                         : buildDir,
-        'mps.generator.skipUnmodifiedModels': incrementalBuild,
         'version'                           : version
 ]
 if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
@@ -232,7 +231,7 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
                 classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
                 classpath: configurations.junitAnt.asPath)
         ant.junitreport {
-            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml', excludes: 'tmp/**')
             report(format: 'frames', todir: "$buildDir/junitreport")
         }
         ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
@@ -413,6 +412,8 @@ publishing {
                 builtBy buildLanguages
                 classifier 'sources'
             }
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.simpleTypes.runtime'(MavenPublication) {
@@ -428,6 +429,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.datetime.runtime'(MavenPublication) {
@@ -442,6 +445,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.temporal.runtime'(MavenPublication) {
@@ -456,6 +461,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.datetime', 'datetime-runtime', project.version)
+
+            pom additionalPomInfo
         }
     }
 }

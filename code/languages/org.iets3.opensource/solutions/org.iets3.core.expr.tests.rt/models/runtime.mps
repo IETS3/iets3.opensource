@@ -9,6 +9,7 @@
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" />
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" implicit="true" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -52,7 +53,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -64,7 +65,7 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
@@ -77,7 +78,7 @@
       <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
         <child id="1172073511101" name="message" index="3_1BAH" />
       </concept>
-      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ng" index="3_9gw8">
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ngI" index="3_9gw8">
         <child id="1172075534298" name="message" index="3_9lra" />
       </concept>
     </language>
@@ -88,7 +89,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -111,7 +112,7 @@
           <node concept="3cpWsn" id="7wjZwvOaSeT" role="3cpWs9">
             <property role="TrG5h" value="executeTest" />
             <node concept="3uibUv" id="7wjZwvOaSeP" role="1tU5fm">
-              <ref role="3uigEE" to="xk6s:ub9nkyOIeW" resolve="EvalResult" />
+              <ref role="3uigEE" to="xk6s:7LZDtvgGNLS" resolve="IEvalResult" />
             </node>
             <node concept="2OqwBi" id="7wjZwvOaSeU" role="33vP2m">
               <node concept="37vLTw" id="7wjZwvOaSeV" role="2Oq$k0">
@@ -133,7 +134,7 @@
                       <ref role="3cqZAo" node="7wjZwvOaSeT" resolve="executeTest" />
                     </node>
                     <node concept="liA8E" id="7wjZwvOaTQc" role="2OqNvi">
-                      <ref role="37wK5l" to="xk6s:ub9nkyPUM2" resolve="getErrorMessage" />
+                      <ref role="37wK5l" to="xk6s:7LZDtvgPNBR" resolve="getErrorMessage" />
                     </node>
                   </node>
                   <node concept="liA8E" id="2LEfNl_JZko" role="2OqNvi">
@@ -149,7 +150,7 @@
                 <ref role="3cqZAo" node="7wjZwvOaSeT" resolve="executeTest" />
               </node>
               <node concept="liA8E" id="7wjZwvOaToa" role="2OqNvi">
-                <ref role="37wK5l" to="xk6s:ub9nkyPULV" resolve="isOk" />
+                <ref role="37wK5l" to="gdgh:5zG5$Lyex2e" resolve="isOk" />
               </node>
             </node>
           </node>

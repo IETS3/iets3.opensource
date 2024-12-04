@@ -23,7 +23,7 @@
       </concept>
       <concept id="8560722270289800014" name="org.iets3.core.expr.base.structure.PlusTag" flags="ng" index="zEY32" />
       <concept id="8560722270290706287" name="org.iets3.core.expr.base.structure.MulTag" flags="ng" index="zJzjz" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="8006404979729416973" name="org.iets3.core.expr.base.structure.OrTag" flags="ng" index="2BFbn_" />
@@ -71,7 +71,7 @@
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -184,13 +184,13 @@
       </node>
       <node concept="_fkuZ" id="1Z72MIc6xWE" role="_fkp5">
         <node concept="_fku$" id="1Z72MIc6xWF" role="_fkur" />
-        <node concept="2vmpn$" id="1Z72MIc6$Bp" role="_fkuS" />
         <node concept="30deo4" id="4EEJFuvaWf4" role="_fkuY">
           <node concept="2vmpn$" id="1Z72MIctSOG" role="30dEsF" />
           <node concept="_emDc" id="4EEJFuvaWbp" role="30dEs_">
             <ref role="_emDf" node="1Z72MIc6zOc" resolve="nix" />
           </node>
         </node>
+        <node concept="2vmpn$" id="1Z72MIc6$Bp" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="4EEJFuvaWda" role="_fkp5">
         <node concept="_fku$" id="4EEJFuvaWdb" role="_fkur" />
