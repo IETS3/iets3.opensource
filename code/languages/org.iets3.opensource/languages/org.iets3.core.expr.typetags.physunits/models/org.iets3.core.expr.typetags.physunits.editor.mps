@@ -2465,14 +2465,13 @@
                       <node concept="liA8E" id="4dsOSthqJzd" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                         <node concept="2OqwBi" id="4dsOSthr4cu" role="37wK5m">
-                          <node concept="2OqwBi" id="4dsOSthr2SI" role="2Oq$k0">
-                            <node concept="2ZBlsa" id="4dsOSthr0_4" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="4dsOSthr3KS" role="2OqNvi">
-                              <ref role="3TsBF5" to="i3ya:2hbaSyABN4s" resolve="scaling" />
-                            </node>
-                          </node>
                           <node concept="liA8E" id="4dsOSthr4DB" role="2OqNvi">
                             <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
+                          </node>
+                          <node concept="2YIFZM" id="4zqoYUCgk0L" role="2Oq$k0">
+                            <ref role="37wK5l" to="rppw:4zqoYUCdlDz" resolve="getScaling" />
+                            <ref role="1Pybhc" to="rppw:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                            <node concept="2ZBlsa" id="4zqoYUCjkkJ" role="37wK5m" />
                           </node>
                         </node>
                       </node>
