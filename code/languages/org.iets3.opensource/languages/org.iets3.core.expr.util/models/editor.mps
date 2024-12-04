@@ -5,8 +5,8 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
@@ -2859,7 +2859,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="8XWEtdZOCK" role="3EZMnx">
-        <ref role="1NtTu8" to="kfo3:8XWEtdX_Yo" resolve="type" />
+        <ref role="1NtTu8" to="hm2y:7D7uZV2iYAD" resolve="type" />
       </node>
     </node>
   </node>
@@ -3233,6 +3233,7 @@
         <node concept="3F0A7n" id="7EKPeIStrS2" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         </node>
       </node>
     </node>
@@ -3272,7 +3273,6 @@
     <property role="TrG5h" value="actualTable" />
     <ref role="1XX52x" to="kfo3:7FuUjk_57Bw" resolve="IMultiDecTab" />
     <node concept="3EZMnI" id="2d3TE9dT$LB" role="2wV5jI">
-      <node concept="2iRfu4" id="2d3TE9ezQcY" role="2iSdaV" />
       <node concept="3ZSo5i" id="4Cb98czUl3S" role="3EZMnx">
         <node concept="3VJUX5" id="4Cb98czUloh" role="3ZZHOD">
           <node concept="3clFbS" id="4Cb98czUloi" role="2VODD2">
@@ -3922,6 +3922,7 @@
           </node>
         </node>
       </node>
+      <node concept="2iRfu4" id="2d3TE9ezQcY" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1yFVafcItV$">
