@@ -25,6 +25,7 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -115,6 +116,9 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -279,9 +283,6 @@
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -341,32 +342,8 @@
     <property role="280Iao" value="true" />
     <property role="280Iaj" value="true" />
     <property role="3aPfAI" value="6" />
-    <node concept="2OqwBi" id="6b_jefnVuY0" role="37b278">
-      <node concept="liA8E" id="6b_jefnVvpI" role="2OqNvi">
-        <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
-        <node concept="35c_gC" id="6b_jefnVutB" role="37wK5m">
-          <ref role="35c_gD" to="4kwy:6LfBX8Ym0Cy" resolve="IETS3DummyIcon16" />
-        </node>
-      </node>
-      <node concept="2YIFZM" id="7qOtjYQNQiE" role="2Oq$k0">
-        <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-        <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
-      </node>
-    </node>
     <node concept="14aYG3" id="6LfBX8YgRgl" role="14aYEy">
       <property role="TrG5h" value="specModel" />
-      <node concept="2OqwBi" id="6b_jefnVvy0" role="3actZa">
-        <node concept="2YIFZM" id="7qOtjYQNOzs" role="2Oq$k0">
-          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
-          <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-        </node>
-        <node concept="liA8E" id="6b_jefnVvy5" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
-          <node concept="35c_gC" id="6b_jefnVvy6" role="37wK5m">
-            <ref role="35c_gD" to="4kwy:6LfBX8Ym0Cy" resolve="IETS3DummyIcon16" />
-          </node>
-        </node>
-      </node>
       <node concept="14aYG3" id="1ognOHjyj2a" role="1DVp44">
         <property role="TrG5h" value="root" />
         <property role="38sH__" value="true" />
@@ -409,9 +386,17 @@
         </node>
         <node concept="LkI2h" id="6LfBX8YgShT" role="2OqNvi" />
       </node>
+      <node concept="10M0yZ" id="2YjHLMdmRwI" role="3actZa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Nodes.Static" resolve="Static" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Nodes" resolve="Nodes" />
+      </node>
     </node>
     <node concept="Xl_RD" id="1ognOHjyJzW" role="3GFWDq">
       <property role="Xl_RC" value="Specification" />
+    </node>
+    <node concept="10M0yZ" id="2YjHLMdmRrd" role="37b278">
+      <ref role="3cqZAo" to="z2i8:~AllIcons$Nodes.Static" resolve="Static" />
+      <ref role="1PxDUh" to="z2i8:~AllIcons$Nodes" resolve="Nodes" />
     </node>
   </node>
   <node concept="312cEu" id="1ognOHjymxr">
