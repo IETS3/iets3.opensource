@@ -6002,8 +6002,10 @@
                     <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="ijdpu3j8Dk" role="37vLTx">
-                  <node concept="2OqwBi" id="ijdpu3j86E" role="2Oq$k0">
+                <node concept="2YIFZM" id="5CKJX639W2d" role="37vLTx">
+                  <ref role="37wK5l" to="oq0c:1t_lOkS0tRA" resolve="toPlainString" />
+                  <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="2OqwBi" id="ijdpu3j86E" role="37wK5m">
                     <node concept="2OqwBi" id="ijdpu3iMyn" role="2Oq$k0">
                       <node concept="liA8E" id="ijdpu3iN3s" role="2OqNvi">
                         <ref role="37wK5l" to="xlxw:~BigDecimal.multiply(java.math.BigDecimal)" resolve="multiply" />
@@ -6011,15 +6013,13 @@
                           <ref role="3cqZAo" node="ijdpu3aPss" resolve="value" />
                         </node>
                       </node>
-                      <node concept="2ShNRf" id="ijdpu3jihm" role="2Oq$k0">
-                        <node concept="1pGfFk" id="ijdpu3jjnB" role="2ShVmc">
-                          <property role="373rjd" value="true" />
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
-                          <node concept="2OqwBi" id="ijdpu3jk8f" role="37wK5m">
-                            <node concept="13iPFW" id="ijdpu3jjtO" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="ijdpu3jkqb" role="2OqNvi">
-                              <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
-                            </node>
+                      <node concept="2YIFZM" id="5CKJX63a4XU" role="2Oq$k0">
+                        <ref role="37wK5l" to="oq0c:1t_lOkRf4yU" resolve="asBigDecimal" />
+                        <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                        <node concept="2OqwBi" id="5CKJX63a4XV" role="37wK5m">
+                          <node concept="13iPFW" id="5CKJX63a4XW" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="5CKJX63a4XX" role="2OqNvi">
+                            <ref role="3TsBF5" to="5qo5:19PglA20qXJ" resolve="min" />
                           </node>
                         </node>
                       </node>
@@ -6027,9 +6027,6 @@
                     <node concept="liA8E" id="ijdpu3j8Ak" role="2OqNvi">
                       <ref role="37wK5l" to="xlxw:~BigDecimal.stripTrailingZeros()" resolve="stripTrailingZeros" />
                     </node>
-                  </node>
-                  <node concept="liA8E" id="ijdpu3j8P0" role="2OqNvi">
-                    <ref role="37wK5l" to="xlxw:~BigDecimal.toPlainString()" resolve="toPlainString" />
                   </node>
                 </node>
               </node>
@@ -6059,34 +6056,31 @@
                     <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="ijdpu3j93S" role="37vLTx">
-                  <node concept="2OqwBi" id="ijdpu3j93T" role="2Oq$k0">
-                    <node concept="2OqwBi" id="ijdpu3j93U" role="2Oq$k0">
-                      <node concept="liA8E" id="ijdpu3j93Z" role="2OqNvi">
+                <node concept="2YIFZM" id="5CKJX639Ycp" role="37vLTx">
+                  <ref role="37wK5l" to="oq0c:1t_lOkS0tRA" resolve="toPlainString" />
+                  <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                  <node concept="2OqwBi" id="5CKJX639Ycq" role="37wK5m">
+                    <node concept="2OqwBi" id="5CKJX639Ycr" role="2Oq$k0">
+                      <node concept="liA8E" id="5CKJX639Ycs" role="2OqNvi">
                         <ref role="37wK5l" to="xlxw:~BigDecimal.multiply(java.math.BigDecimal)" resolve="multiply" />
-                        <node concept="37vLTw" id="57Dr2jFHtuQ" role="37wK5m">
+                        <node concept="37vLTw" id="5CKJX639Yct" role="37wK5m">
                           <ref role="3cqZAo" node="ijdpu3aPss" resolve="value" />
                         </node>
                       </node>
-                      <node concept="2ShNRf" id="ijdpu3jl8U" role="2Oq$k0">
-                        <node concept="1pGfFk" id="ijdpu3jl8V" role="2ShVmc">
-                          <property role="373rjd" value="true" />
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
-                          <node concept="2OqwBi" id="ijdpu3jl8W" role="37wK5m">
-                            <node concept="13iPFW" id="ijdpu3jl8X" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="ijdpu3jl8Y" role="2OqNvi">
-                              <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
-                            </node>
+                      <node concept="2YIFZM" id="5CKJX63a6RR" role="2Oq$k0">
+                        <ref role="37wK5l" to="oq0c:1t_lOkRf4yU" resolve="asBigDecimal" />
+                        <ref role="1Pybhc" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                        <node concept="2OqwBi" id="5CKJX63a6RS" role="37wK5m">
+                          <node concept="13iPFW" id="5CKJX63a6RT" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="5CKJX63a6RU" role="2OqNvi">
+                            <ref role="3TsBF5" to="5qo5:19PglA20qXK" resolve="max" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="liA8E" id="ijdpu3j942" role="2OqNvi">
+                    <node concept="liA8E" id="5CKJX639Ycz" role="2OqNvi">
                       <ref role="37wK5l" to="xlxw:~BigDecimal.stripTrailingZeros()" resolve="stripTrailingZeros" />
                     </node>
-                  </node>
-                  <node concept="liA8E" id="ijdpu3j943" role="2OqNvi">
-                    <ref role="37wK5l" to="xlxw:~BigDecimal.toPlainString()" resolve="toPlainString" />
                   </node>
                 </node>
               </node>
