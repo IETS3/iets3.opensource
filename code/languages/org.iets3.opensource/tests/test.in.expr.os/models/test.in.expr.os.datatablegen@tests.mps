@@ -11,11 +11,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
       <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
@@ -102,9 +97,6 @@
       <concept id="231307155597471414" name="org.iets3.core.expr.data.structure.DataColDef" flags="ng" index="3CkmCn" />
     </language>
   </registry>
-  <node concept="2XOHcx" id="6wzrxL2ZwEE">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
-  </node>
   <node concept="_iOnU" id="28$LOSAPZOM">
     <property role="TrG5h" value="TestsForDataTableGenerator" />
     <property role="1XBH2A" value="true" />
