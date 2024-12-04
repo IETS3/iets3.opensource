@@ -136,6 +136,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.units.interpreter/org.iets3.core.expr.typetags.units.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.units.si/org.iets3.core.expr.typetags.units.si.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.util.interpreter/org.iets3.core.expr.util.interpreter.msd" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.junit.interpreter.run.configuration/org.iets3.core.junit.interpreter.run.configuration.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build.gentests.rt/org.iets3.opensource.build.gentests.rt.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
