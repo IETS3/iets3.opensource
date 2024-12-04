@@ -61,7 +61,6 @@
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
           <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
           <language id="l:3600cb0a-44dd-4a5b-9968-22924406419e:jetbrains.mps.build.mps.tests" />
-          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
           <language id="l:9d000fbd-bdca-4a46-b39b-c5ba9e79b38c:org.iets3.opensource.build.gentests" />
         </uses>
         <classpath>
@@ -123,7 +122,6 @@
       <settings refid="m2m-0" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.build" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build" />
-      <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
@@ -331,7 +329,6 @@
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.jar" />
