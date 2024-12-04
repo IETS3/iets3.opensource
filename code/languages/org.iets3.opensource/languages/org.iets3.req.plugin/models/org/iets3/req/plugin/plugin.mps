@@ -2229,7 +2229,7 @@
   <node concept="vrV6u" id="WieAE6FJqt">
     <property role="TrG5h" value="requirements" />
     <node concept="3uibUv" id="2Qbt$1tSq3A" role="luc8K">
-      <ref role="3uigEE" node="2Qbt$1tSnqh" />
+      <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="RequirementsConfig" />
     </node>
   </node>
   <node concept="312cEu" id="2Qbt$1tSnqh">

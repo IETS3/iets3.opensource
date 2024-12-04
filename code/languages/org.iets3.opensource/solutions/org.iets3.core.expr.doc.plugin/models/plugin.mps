@@ -391,7 +391,7 @@
     </node>
     <node concept="10M0yZ" id="57UOyezQO8k" role="37b278">
       <ref role="3cqZAo" to="z2i8:~AllIcons$Gutter.Bookmark" resolve="Bookmark" />
-      <ref role="1PxDUh" to="z2i8:~AllIcons$Gutter" resolve="Gutter" />
+      <ref role="1PxDUh" to="z2i8:~AllIcons$Gutter" resolve="AllIcons.Gutter" />
     </node>
     <node concept="2Sg_IR" id="3HwHK4HQc$U" role="3GFWDq">
       <node concept="1bVj0M" id="3HwHK4HQc$V" role="2SgG2M">
@@ -574,7 +574,7 @@
   <node concept="vrV6u" id="WieAE6FJqt">
     <property role="TrG5h" value="bookmark" />
     <node concept="3uibUv" id="2Qbt$1tSq3A" role="luc8K">
-      <ref role="3uigEE" node="2Qbt$1tSnqh" />
+      <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="BookmarkConfig" />
     </node>
   </node>
   <node concept="312cEu" id="2Qbt$1tSnqh">

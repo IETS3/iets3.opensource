@@ -1188,7 +1188,7 @@
                                           <ref role="37wK5l" to="hnhi:1VsTyb1M2Zc" resolve="submitISolvable" />
                                           <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
                                           <node concept="37vLTw" id="41hdHndnUr9" role="37wK5m">
-                                            <ref role="3cqZAo" node="1i3h3A16n4P" />
+                                            <ref role="3cqZAo" node="1i3h3A16n4P" resolve="sol" />
                                           </node>
                                           <node concept="1bVj0M" id="41hdHndnUra" role="37wK5m">
                                             <node concept="37vLTG" id="41hdHndnUrb" role="1bW2Oz">
@@ -1286,7 +1286,7 @@
                             <node concept="3cpWs6" id="41hdHndpp_C" role="3cqZAp">
                               <node concept="2OqwBi" id="41hdHndpp_D" role="3cqZAk">
                                 <node concept="37vLTw" id="41hdHndpp_E" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="1i3h3A16n4R" />
+                                  <ref role="3cqZAo" node="1i3h3A16n4R" resolve="it" />
                                 </node>
                                 <node concept="liA8E" id="41hdHndpp_F" role="2OqNvi">
                                   <ref role="37wK5l" to="5zyv:~Future.get(long,java.util.concurrent.TimeUnit)" resolve="get" />
