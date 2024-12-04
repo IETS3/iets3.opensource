@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Hexadecimal attributes are now better visible in the diff view.
+- Negative decimal values are now correctly converted to hexadecimal values.
 
 ### Changed
 
