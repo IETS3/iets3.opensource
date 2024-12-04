@@ -70,7 +70,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -2285,10 +2285,6 @@
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="ISupportHexValues" />
   </node>
-  <node concept="PlHQZ" id="3eH6BL2TJIw">
-    <property role="EcuMT" value="3723661587905969056" />
-    <property role="TrG5h" value="IAssignable" />
-  </node>
   <node concept="1TIwiD" id="5Ys_ngSnA9h">
     <property role="EcuMT" value="6889545856364470865" />
     <property role="3GE5qa" value="numeric" />
@@ -2319,6 +2315,10 @@
         <ref role="trN6q" node="2KEzU_jNj4j" resolve="ISupportHexValues" />
       </node>
     </node>
+  </node>
+  <node concept="PlHQZ" id="3eH6BL2TJIw">
+    <property role="EcuMT" value="3723661587905969056" />
+    <property role="TrG5h" value="IAssignable" />
   </node>
 </model>
 

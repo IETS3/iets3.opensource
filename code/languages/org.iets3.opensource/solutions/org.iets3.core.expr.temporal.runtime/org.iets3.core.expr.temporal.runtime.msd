@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.iets3.core.expr.temporal.runtime" uuid="17ecc6b6-d106-4b60-87a9-3fde52f92301" moduleVersion="0" compileInMPS="true">
+<solution name="org.iets3.core.expr.temporal.runtime" uuid="17ecc6b6-d106-4b60-87a9-3fde52f92301" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">957f018c-4561-4081-9ad3-b8618bf1160d(org.iets3.core.expr.datetime.runtime)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
