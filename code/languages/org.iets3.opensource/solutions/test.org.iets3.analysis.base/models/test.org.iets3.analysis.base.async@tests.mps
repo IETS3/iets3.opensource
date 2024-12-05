@@ -7,7 +7,7 @@
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
   </languages>
   <imports>
     <import index="6w03" ref="r:2b6823f7-1c48-47b9-9a41-e04ac80f7887(test.org.iets3.analysis.base.solvable.structure)" />
@@ -47,7 +47,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -87,7 +87,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -137,7 +137,7 @@
         <child id="1160998896846" name="condition" index="1gVkn0" />
         <child id="1160998916832" name="message" index="1gVpfI" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
         <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
@@ -161,7 +161,7 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
@@ -196,7 +196,7 @@
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
       <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
@@ -229,7 +229,7 @@
       <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
         <child id="1172073511101" name="message" index="3_1BAH" />
       </concept>
-      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ngI" index="3_9gw8">
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ng" index="3_9gw8">
         <child id="1172075534298" name="message" index="3_9lra" />
       </concept>
     </language>
@@ -248,7 +248,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -284,7 +284,6 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="7125221305512719026" name="jetbrains.mps.baseLanguage.collections.structure.CollectionType" flags="in" index="3vKaQO" />
@@ -328,14 +327,14 @@
             <node concept="3clFbS" id="5IHOL7Z7Rb7" role="1bW5cS">
               <node concept="3clFbF" id="5IHOL7Z4FSU" role="3cqZAp">
                 <node concept="2OqwBi" id="6N$E81Bh6qB" role="3clFbG">
+                  <node concept="2JrnkZ" id="6N$E81Bh5mS" role="2Oq$k0">
+                    <node concept="1jGwE1" id="5IHOL7Z4FSS" role="2JrQYb" />
+                  </node>
                   <node concept="liA8E" id="6N$E81Bh7ER" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode)" resolve="addRootNode" />
                     <node concept="37vLTw" id="6N$E81Bh8Bn" role="37wK5m">
                       <ref role="3cqZAo" node="5IHOL7Z2M5R" resolve="solvable" />
                     </node>
-                  </node>
-                  <node concept="2JrnkZ" id="6N$E81Bh5mS" role="2Oq$k0">
-                    <node concept="1jGwE1" id="5IHOL7Z4FSS" role="2JrQYb" />
                   </node>
                 </node>
               </node>
@@ -394,7 +393,7 @@
           <node concept="3cpWsn" id="6N$E81BfJHE" role="3cpWs9">
             <property role="TrG5h" value="execEnv2" />
             <node concept="3uibUv" id="6N$E81BfJHF" role="1tU5fm">
-              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="IExecEnv" />
+              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
               <node concept="3vKaQO" id="6N$E81BfJHG" role="11_B2D">
                 <node concept="3uibUv" id="6N$E81BfJHH" role="3O5elw">
                   <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
@@ -1063,14 +1062,14 @@
                 <node concept="3clFbS" id="31tKzg5hvgu" role="2LFqv$">
                   <node concept="3clFbF" id="6N$E81BgGuC" role="3cqZAp">
                     <node concept="2OqwBi" id="6N$E81BgJeX" role="3clFbG">
+                      <node concept="2JrnkZ" id="6N$E81BgHR$" role="2Oq$k0">
+                        <node concept="1jGwE1" id="6N$E81BgGuA" role="2JrQYb" />
+                      </node>
                       <node concept="liA8E" id="6N$E81BgKRM" role="2OqNvi">
                         <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode)" resolve="addRootNode" />
                         <node concept="2GrUjf" id="6N$E81BgMev" role="37wK5m">
                           <ref role="2Gs0qQ" node="31tKzg5hvgq" resolve="solvable" />
                         </node>
-                      </node>
-                      <node concept="2JrnkZ" id="6N$E81BgHR$" role="2Oq$k0">
-                        <node concept="1jGwE1" id="6N$E81BgGuA" role="2JrQYb" />
                       </node>
                     </node>
                   </node>
@@ -1079,11 +1078,11 @@
             </node>
           </node>
           <node concept="2OqwBi" id="6N$E81Bg_Bl" role="ukAjM">
-            <node concept="liA8E" id="6N$E81BgB6Z" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
-            </node>
             <node concept="2JrnkZ" id="6N$E81Bg$dw" role="2Oq$k0">
               <node concept="1jGwE1" id="31tKzg5h$1h" role="2JrQYb" />
+            </node>
+            <node concept="liA8E" id="6N$E81BgB6Z" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -1114,7 +1113,7 @@
           <node concept="3cpWsn" id="6N$E81BfzTa" role="3cpWs9">
             <property role="TrG5h" value="execEnv2" />
             <node concept="3uibUv" id="6N$E81BfzTb" role="1tU5fm">
-              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="IExecEnv" />
+              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
               <node concept="3vKaQO" id="6N$E81BfzTc" role="11_B2D">
                 <node concept="3uibUv" id="6N$E81BfzTd" role="3O5elw">
                   <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
@@ -1243,7 +1242,7 @@
                                           <ref role="37wK5l" to="hnhi:1VsTyb1M2Zc" resolve="submitISolvable" />
                                           <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
                                           <node concept="37vLTw" id="41hdHndnUr9" role="37wK5m">
-                                            <ref role="3cqZAo" node="41hdHndnUrn" resolve="sol" />
+                                            <ref role="3cqZAo" node="1i3h3A16n4P" />
                                           </node>
                                           <node concept="1bVj0M" id="41hdHndnUra" role="37wK5m">
                                             <node concept="37vLTG" id="41hdHndnUrb" role="1bW2Oz">
@@ -1300,10 +1299,10 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="41hdHndnUrn" role="1bW2Oz">
+                    <node concept="gl6BB" id="1i3h3A16n4P" role="1bW2Oz">
                       <property role="TrG5h" value="sol" />
                       <property role="3TUv4t" value="true" />
-                      <node concept="2jxLKc" id="41hdHndnUro" role="1tU5fm" />
+                      <node concept="2jxLKc" id="1i3h3A16n4Q" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
@@ -1341,7 +1340,7 @@
                             <node concept="3cpWs6" id="41hdHndpp_C" role="3cqZAp">
                               <node concept="2OqwBi" id="41hdHndpp_D" role="3cqZAk">
                                 <node concept="37vLTw" id="41hdHndpp_E" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="41hdHndpp_Z" resolve="it" />
+                                  <ref role="3cqZAo" node="1i3h3A16n4R" />
                                 </node>
                                 <node concept="liA8E" id="41hdHndpp_F" role="2OqNvi">
                                   <ref role="37wK5l" to="5zyv:~Future.get(long,java.util.concurrent.TimeUnit)" resolve="get" />
@@ -1394,9 +1393,9 @@
                           <node concept="10Nm6u" id="41hdHndpp_Y" role="3clFbG" />
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="41hdHndpp_Z" role="1bW2Oz">
+                      <node concept="gl6BB" id="1i3h3A16n4R" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="41hdHndppA0" role="1tU5fm" />
+                        <node concept="2jxLKc" id="1i3h3A16n4S" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -1991,14 +1990,14 @@
             <node concept="3clFbS" id="cGZnm4NVG3" role="1bW5cS">
               <node concept="3clFbF" id="cGZnm4NVG4" role="3cqZAp">
                 <node concept="2OqwBi" id="6N$E81BgWIr" role="3clFbG">
+                  <node concept="2JrnkZ" id="6N$E81BgTzu" role="2Oq$k0">
+                    <node concept="1jGwE1" id="cGZnm4NVG6" role="2JrQYb" />
+                  </node>
                   <node concept="liA8E" id="6N$E81BgXZ9" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode)" resolve="addRootNode" />
                     <node concept="37vLTw" id="6N$E81BgYXp" role="37wK5m">
                       <ref role="3cqZAo" node="cGZnm4NVFU" resolve="solvable" />
                     </node>
-                  </node>
-                  <node concept="2JrnkZ" id="6N$E81BgTzu" role="2Oq$k0">
-                    <node concept="1jGwE1" id="cGZnm4NVG6" role="2JrQYb" />
                   </node>
                 </node>
               </node>
@@ -2015,7 +2014,7 @@
           <node concept="3cpWsn" id="_TaQix32NO" role="3cpWs9">
             <property role="TrG5h" value="execEnv2" />
             <node concept="3uibUv" id="_TaQix31$v" role="1tU5fm">
-              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="IExecEnv" />
+              <ref role="3uigEE" to="hnhi:6pPfAzJt_YX" resolve="AsyncSolverTaskExecutor.IExecEnv" />
               <node concept="3vKaQO" id="_TaQix3b6e" role="11_B2D">
                 <node concept="3uibUv" id="_TaQix3b6f" role="3O5elw">
                   <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />

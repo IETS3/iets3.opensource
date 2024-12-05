@@ -25831,7 +25831,7 @@
                       </node>
                       <node concept="2OqwBi" id="4YiHwWVM3cm" role="3uHU7w">
                         <node concept="37vLTw" id="4gPFP6uBVkM" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4gPFP6uBVkI" resolve="integer" />
+                          <ref role="3cqZAo" node="4gPFP6uBVkI" resolve="integerValue" />
                         </node>
                         <node concept="liA8E" id="4YiHwWVM3cq" role="2OqNvi">
                           <ref role="37wK5l" to="xlxw:~BigInteger.toString(int)" resolve="toString" />

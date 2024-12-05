@@ -15,6 +15,14 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 
 - It is now possible to customize where hex values are enabled. With PrimitiveTypeMapper#filterHexadecimalSupportingNodes you can now enable/disable them for specific nodes.
+- The physical units B and b were renamed to byte and bit to avoid confusion.
+- Breaking change: The units of digital information were split into 3 different libraries: UnitsOfInformationIEC, UnitsOfInformationJEDEC, UnitsOfInformationMetric. They are still considered part of the derived units.
+
+### Added 
+
+- Physical units now also support metric scaling for only the positive and negative prefixes. Scaling can also be overwritten for units by overwritten `IUnitLangConfig#getOverwrittenScaling` for the extension point `PhysUnitLangConfig`.
+- Execution of Test by Interpreter can be done without generation and compilation.
+
 
 ### Added
 
