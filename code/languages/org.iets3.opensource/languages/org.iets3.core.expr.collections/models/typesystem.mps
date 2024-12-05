@@ -427,6 +427,28 @@
                                 </node>
                               </node>
                             </node>
+                            <node concept="2pIpSj" id="H70Sn$rR_C" role="2pJxcM">
+                              <ref role="2pIpSl" to="700h:3tudP__pYOT" resolve="sizeConstraint" />
+                              <node concept="2pJPED" id="H70Sn$rRBY" role="28nt2d">
+                                <ref role="2pJxaS" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
+                                <node concept="2pJxcG" id="H70Sn$rRC_" role="2pJxcM">
+                                  <ref role="2pJxcJ" to="700h:19PglA20qXJ" resolve="min" />
+                                  <node concept="WxPPo" id="H70Sn$rREq" role="28ntcv">
+                                    <node concept="Xl_RD" id="H70Sn$rREp" role="WxPPp">
+                                      <property role="Xl_RC" value="0" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2pJxcG" id="H70Sn$rRFh" role="2pJxcM">
+                                  <ref role="2pJxcJ" to="700h:19PglA20qXK" resolve="max" />
+                                  <node concept="WxPPo" id="H70Sn$rRFy" role="28ntcv">
+                                    <node concept="Xl_RD" id="H70Sn$rRFx" role="WxPPp">
+                                      <property role="Xl_RC" value="0" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
