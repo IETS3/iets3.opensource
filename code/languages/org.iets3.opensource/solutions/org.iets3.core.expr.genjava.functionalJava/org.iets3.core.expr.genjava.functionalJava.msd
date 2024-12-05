@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.iets3.core.expr.genjava.functionalJava" uuid="708a03ad-8699-43c9-821a-6cd00b68e9f8" moduleVersion="0" compileInMPS="true">
+<solution name="org.iets3.core.expr.genjava.functionalJava" uuid="708a03ad-8699-43c9-821a-6cd00b68e9f8" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="lib/functionaljava_1.8-4.8-SNAPSHOT.jar" />
@@ -8,12 +8,9 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/functionaljava_1.8-4.8-SNAPSHOT.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/functionaljava_1.8-4.8-SNAPSHOT.jar" />
-  </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
