@@ -5,8 +5,8 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="0" />
-    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
-    <use id="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" name="org.iets3.core.expr.data" version="1" />
+    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="3" />
+    <use id="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" name="org.iets3.core.expr.data" version="2" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
     <devkit ref="ffc660b2-672c-4f91-9291-8426ed4e58de(org.iets3.core.expr.genjava.advanced.devkit)" />
   </languages>
@@ -26,6 +26,9 @@
       <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
+      </concept>
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
@@ -118,9 +121,7 @@
         <child id="231307155597477158" name="dataCols" index="3Ckg67" />
         <child id="231307155597655796" name="rows" index="3CkFDl" />
       </concept>
-      <concept id="231307155597471414" name="org.iets3.core.expr.data.structure.DataColDef" flags="ng" index="3CkmCn">
-        <child id="231307155597474194" name="type" index="3CknON" />
-      </concept>
+      <concept id="231307155597471414" name="org.iets3.core.expr.data.structure.DataColDef" flags="ng" index="3CkmCn" />
     </language>
   </registry>
   <node concept="2XOHcx" id="cPLa7FqXwt">
@@ -134,11 +135,11 @@
       <property role="sAwqe" value="true" />
       <node concept="3CkmCn" id="cPLa7FroL6" role="3Ckg67">
         <property role="TrG5h" value="val1" />
-        <node concept="30bXR$" id="cPLa7FroL5" role="3CknON" />
+        <node concept="30bXR$" id="cPLa7FroL5" role="2S399n" />
       </node>
       <node concept="3CkmCn" id="cPLa7FroL8" role="3Ckg67">
         <property role="TrG5h" value="val2" />
-        <node concept="30bXR$" id="cPLa7FroL7" role="3CknON" />
+        <node concept="30bXR$" id="cPLa7FroL7" role="2S399n" />
       </node>
       <node concept="3CkeKC" id="cPLa7FroLb" role="3CkFDl">
         <property role="TrG5h" value="keyA" />
@@ -192,11 +193,11 @@
       <property role="sAwqe" value="true" />
       <node concept="3CkmCn" id="7F9023_N8E$" role="3Ckg67">
         <property role="TrG5h" value="val1" />
-        <node concept="30bXR$" id="7F9023_N8Ez" role="3CknON" />
+        <node concept="30bXR$" id="7F9023_N8Ez" role="2S399n" />
       </node>
       <node concept="3CkmCn" id="7F9023_N8EA" role="3Ckg67">
         <property role="TrG5h" value="val2" />
-        <node concept="30bXR$" id="7F9023_N8E_" role="3CknON" />
+        <node concept="30bXR$" id="7F9023_N8E_" role="2S399n" />
       </node>
       <node concept="3CkeKC" id="7F9023_N8ED" role="3CkFDl">
         <property role="TrG5h" value="keyA" />
@@ -529,11 +530,11 @@
       <property role="TrG5h" value="TableWithEmpties" />
       <node concept="3CkmCn" id="7MYpJaZ9rEb" role="3Ckg67">
         <property role="TrG5h" value="val1" />
-        <node concept="30bXR$" id="7MYpJaZ9rEa" role="3CknON" />
+        <node concept="30bXR$" id="7MYpJaZ9rEa" role="2S399n" />
       </node>
       <node concept="3CkmCn" id="7MYpJaZ9rEd" role="3Ckg67">
         <property role="TrG5h" value="val2" />
-        <node concept="30bXR$" id="7MYpJaZ9rEc" role="3CknON" />
+        <node concept="30bXR$" id="7MYpJaZ9rEc" role="2S399n" />
       </node>
       <node concept="3CkeKC" id="7MYpJaZ9rEg" role="3CkFDl">
         <property role="TrG5h" value="keyA" />

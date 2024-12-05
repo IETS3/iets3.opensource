@@ -2234,5 +2234,28 @@
       <node concept="17QB3L" id="5hiN5PlcsJq" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="41vYFO2KBJl">
+    <ref role="13h7C2" to="7y2b:Z4fkwzeKWy" resolve="PartyType" />
+    <node concept="13hLZK" id="41vYFO2KBJm" role="13h7CW">
+      <node concept="3clFbS" id="41vYFO2KBJn" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="41vYFO2KBJC" role="13h7CS">
+      <property role="TrG5h" value="createDefaultVarExpr" />
+      <ref role="13i0hy" to="pbu6:60Qa1k_nI2O" resolve="createDefaultVarExpr" />
+      <node concept="3Tm1VV" id="41vYFO2KBJD" role="1B3o_S" />
+      <node concept="3clFbS" id="41vYFO2KBJG" role="3clF47">
+        <node concept="3clFbF" id="41vYFO2KBK1" role="3cqZAp">
+          <node concept="2pJPEk" id="41vYFO2KBJZ" role="3clFbG">
+            <node concept="2pJPED" id="41vYFO2KBK0" role="2pJPEn">
+              <ref role="2pJxaS" to="7y2b:Z4fkwzeKWz" resolve="PartyLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="41vYFO2KBJH" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -308,7 +308,7 @@
           </node>
         </node>
         <node concept="1amXfx" id="620LAS5PQG6" role="1am$gN">
-          <ref role="1amXd5" to="hm2y:2ufoZQIKHqp" resolve="SimpleExpressionValueInspector" />
+          <ref role="1amXd5" to="hm2y:2ufoZQIKHqp" resolve="SimpleValueInspector" />
           <node concept="1z9TsT" id="620LAS5PQGZ" role="lGtFl">
             <node concept="OjmMv" id="620LAS5PQH0" role="1w35rA">
               <node concept="19SGf9" id="620LAS5PQH1" role="OjmMu">
@@ -3666,7 +3666,7 @@
           <ref role="1amXd5" to="yv47:6JZACDWOa9c" resolve="ReferenceableFlag" />
         </node>
         <node concept="1amXfx" id="1yEri41yK3C" role="1am$gN">
-          <ref role="1amXd5" to="hm2y:2ufoZQIKHqp" resolve="SimpleExpressionValueInspector" />
+          <ref role="1amXd5" to="hm2y:2ufoZQIKHqp" resolve="SimpleValueInspector" />
           <node concept="1z9TsT" id="1yEri41yKgy" role="lGtFl">
             <node concept="OjmMv" id="1yEri41yKgz" role="1w35rA">
               <node concept="19SGf9" id="1yEri41yKg$" role="OjmMu">

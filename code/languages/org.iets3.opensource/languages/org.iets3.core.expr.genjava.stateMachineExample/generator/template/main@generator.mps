@@ -8,9 +8,9 @@
     <import index="44fz" ref="r:93558715-ee8d-4b41-af94-bc16c022d73d(org.iets3.core.expr.genjava.stateMachineExample.structure)" />
     <import index="3xse" ref="r:df8c8cfe-6ded-4712-b12b-d009ae7da92b(org.iets3.core.expr.genjava.stateMachineExample.runtime)" />
     <import index="rw5i" ref="r:4243557f-1c7a-4d6b-953a-807576e4bee7(org.iets3.core.expr.genjava.base@generator)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -758,7 +758,7 @@
                       <node concept="3clFbF" id="4NM7IHyGCUe" role="3cqZAp">
                         <node concept="2OqwBi" id="4NM7IHyGCU9" role="3clFbG">
                           <node concept="3TrEf2" id="4NM7IHyGCUc" role="2OqNvi">
-                            <ref role="3Tt5mk" to="44fz:4NM7IHyCGh1" resolve="type" />
+                            <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
                           </node>
                           <node concept="30H73N" id="4NM7IHyGCUd" role="2Oq$k0" />
                         </node>
@@ -776,7 +776,7 @@
                           <node concept="3clFbF" id="4NM7IHyGFeF" role="3cqZAp">
                             <node concept="2OqwBi" id="4NM7IHyGFeA" role="3clFbG">
                               <node concept="3TrEf2" id="4NM7IHyGFeD" role="2OqNvi">
-                                <ref role="3Tt5mk" to="44fz:4NM7IHyCGh1" resolve="type" />
+                                <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
                               </node>
                               <node concept="30H73N" id="4NM7IHyGFeE" role="2Oq$k0" />
                             </node>
