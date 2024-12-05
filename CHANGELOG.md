@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## December 2024
+
+- Empty list literals now have automatically the length constraint 0.
+- Lists of lists now derive the correct size. 
+
 ## November 2024
 
 ### Fixed
