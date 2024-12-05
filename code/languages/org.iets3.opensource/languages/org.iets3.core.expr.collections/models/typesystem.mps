@@ -7129,7 +7129,7 @@
                       <node concept="2OqwBi" id="5S6DjSR_oMw" role="37wK5m">
                         <node concept="2OqwBi" id="5S6DjSR_oMx" role="2Oq$k0">
                           <node concept="2GrUjf" id="5S6DjSR_oMy" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="5S6DjSR_oMi" resolve="collectionType" />
+                            <ref role="2Gs0qQ" node="5S6DjSR_oMi" resolve="type" />
                           </node>
                           <node concept="3TrEf2" id="5S6DjSR_oMz" role="2OqNvi">
                             <ref role="3Tt5mk" to="700h:3tudP__pYOT" resolve="sizeConstraint" />
@@ -7176,7 +7176,7 @@
                       <node concept="2OqwBi" id="5S6DjSR_oMM" role="37wK5m">
                         <node concept="2OqwBi" id="5S6DjSR_oMN" role="2Oq$k0">
                           <node concept="2GrUjf" id="5S6DjSR_oMO" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="5S6DjSR_oMi" resolve="collectionType" />
+                            <ref role="2Gs0qQ" node="5S6DjSR_oMi" resolve="type" />
                           </node>
                           <node concept="3TrEf2" id="5S6DjSR_oMP" role="2OqNvi">
                             <ref role="3Tt5mk" to="700h:3tudP__pYOT" resolve="sizeConstraint" />

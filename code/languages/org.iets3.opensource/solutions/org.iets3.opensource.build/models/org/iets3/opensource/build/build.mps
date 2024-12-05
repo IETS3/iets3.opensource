@@ -360,7 +360,7 @@
     </node>
     <node concept="1l3spV" id="5wLtKNeSRRM" role="1l3spN">
       <node concept="m$_wl" id="5loVtKO1B0A" role="39821P">
-        <ref role="m_rDy" node="5loVtKNYW0J" resolve="org.iets3.core.JUnitInterpreterTest" />
+        <ref role="m_rDy" node="5loVtKNYW0J" resolve="org.iets3.core.junit.interpreter.run.configuration" />
         <node concept="pUk6x" id="5loVtKO1B35" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="7$nPgK7znh$" role="39821P">
