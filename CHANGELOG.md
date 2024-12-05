@@ -27,6 +27,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added 
 
 - Physical units now also support metric scaling for only the positive and negative prefixes. Scaling can also be overwritten for units by overwritten `IUnitLangConfig#getOverwrittenScaling` for the extension point `PhysUnitLangConfig`.
+- Execution of Test by Interpreter can be done without generation and compilation.
+
 
 ### Added
 
