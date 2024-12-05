@@ -43,6 +43,7 @@
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="7651593722933768974" name="jetbrains.mps.lang.editor.structure.MaxWidthStyleClassItem" flags="ln" index="nf9zX">
@@ -539,7 +540,7 @@
           </node>
         </node>
       </node>
-      <node concept="l2Vlx" id="1ASK_HedIv7" role="2iSdaV" />
+      <node concept="2iRfu4" id="2tlTgwgaOWK" role="2iSdaV" />
     </node>
   </node>
   <node concept="V5hpn" id="6zaFu4oPQsa">
@@ -825,7 +826,7 @@
           </node>
         </node>
       </node>
-      <node concept="l2Vlx" id="1ASK_HedIv9" role="2iSdaV" />
+      <node concept="2iRfu4" id="2tlTgwgaP8J" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="6zaFu4oRD8s" role="CpUAK">
       <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />

@@ -252,6 +252,9 @@
       <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.SimpleInsertFunction" flags="ig" index="1XI84t" />
       <concept id="8877288515760224565" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_index" flags="ng" index="1XI8ZE" />
     </language>
+    <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
+      <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
+    </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
@@ -999,6 +1002,9 @@
   <node concept="24kQdi" id="5a_u3OySk8U">
     <ref role="1XX52x" to="v0r8:5a_u3OySk8l" resolve="MatchCase" />
     <node concept="3EZMnI" id="5a_u3OySk95" role="2wV5jI">
+      <node concept="1QQdxR" id="2tlTgwes_Ls" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
       <node concept="3F1sOY" id="5a_u3OySk9c" role="3EZMnx">
         <ref role="1NtTu8" to="v0r8:5a_u3OySk8s" resolve="pattern" />
       </node>
@@ -1048,7 +1054,7 @@
       <node concept="3F1sOY" id="5a_u3OySk9q" role="3EZMnx">
         <ref role="1NtTu8" to="v0r8:5a_u3OySk8u" resolve="result" />
       </node>
-      <node concept="l2Vlx" id="1ASK_HedIsy" role="2iSdaV" />
+      <node concept="2iRfu4" id="2tlTgwet$IZ" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="5a_u3OySC0q">

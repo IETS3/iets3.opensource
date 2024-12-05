@@ -12,6 +12,7 @@
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -521,6 +522,9 @@
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
+    </language>
+    <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
+      <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
       <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
@@ -1446,7 +1450,7 @@
             </node>
           </node>
         </node>
-        <node concept="l2Vlx" id="1ASK_HedItw" role="2iSdaV" />
+        <node concept="2iRfu4" id="2tlTgwg5x0n" role="2iSdaV" />
       </node>
       <node concept="PMmxH" id="2x0M_l2ibai" role="3EZMnx">
         <ref role="PMmxG" node="2x0M_l2iaKJ" resolve="ImplicitConversionSpecifier" />
@@ -4066,7 +4070,10 @@
           </node>
         </node>
       </node>
-      <node concept="l2Vlx" id="1ASK_HedItL" role="2iSdaV" />
+      <node concept="2iRfu4" id="2tlTgwg5xes" role="2iSdaV" />
+      <node concept="1QQdxR" id="2tlTgwg8MP3" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
   <node concept="22mcaB" id="15KrVXSF0u_">

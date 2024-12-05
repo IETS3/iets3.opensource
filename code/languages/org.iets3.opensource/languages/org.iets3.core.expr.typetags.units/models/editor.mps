@@ -50,6 +50,7 @@
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="6089045305654894367" name="jetbrains.mps.lang.editor.structure.SubstituteMenuReference_Named" flags="ng" index="2kknPI">
         <reference id="6089045305654944382" name="menu" index="2kkw0f" />
@@ -964,7 +965,7 @@
             </node>
           </node>
         </node>
-        <node concept="l2Vlx" id="1ASK_HedIu5" role="2iSdaV" />
+        <node concept="2iRfu4" id="2tlTgwgaOy1" role="2iSdaV" />
       </node>
     </node>
     <node concept="3EZMnI" id="3$KQaHc3BIh" role="2wV5jI">
