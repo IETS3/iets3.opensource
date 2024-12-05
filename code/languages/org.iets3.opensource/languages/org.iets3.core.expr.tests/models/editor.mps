@@ -444,6 +444,7 @@
       <concept id="4682418030828844314" name="de.itemis.mps.editor.celllayout.structure.HorzontalLineWidthStyle" flags="lg" index="2T_bXT" />
       <concept id="4682418030828725523" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineCell" flags="ng" index="2T_mXK" />
       <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
+      <concept id="2728748097294684357" name="de.itemis.mps.editor.celllayout.structure.OverflowXStyle" flags="lg" index="3T6UkE" />
       <concept id="2728748097294192922" name="de.itemis.mps.editor.celllayout.structure.IntegerStyle" flags="lg" index="3To2jP">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
@@ -4542,6 +4543,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="3T6UkE" id="4_VVT2YkLMp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>
