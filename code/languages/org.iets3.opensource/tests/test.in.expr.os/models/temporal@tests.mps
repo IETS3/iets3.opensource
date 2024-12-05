@@ -18,11 +18,6 @@
     <import index="8rdi" ref="r:f17e1021-3869-4fe5-b3c7-0b2a9149a478(org.iets3.core.expr.temporal.runtime)" />
   </imports>
   <registry>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
         <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
@@ -502,9 +497,6 @@
       <concept id="7554398283340826520" name="org.iets3.core.expr.lambda.structure.ShortLambdaItExpression" flags="ng" index="3izPEI" />
     </language>
   </registry>
-  <node concept="2XOHcx" id="7aRvJQEr9o9">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
-  </node>
   <node concept="_iOnU" id="7aRvJQErc4N">
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="TemporalTests" />
