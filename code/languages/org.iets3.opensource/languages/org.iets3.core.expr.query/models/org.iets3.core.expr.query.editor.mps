@@ -20,6 +20,7 @@
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -231,7 +232,7 @@
           </node>
         </node>
       </node>
-      <node concept="l2Vlx" id="1ASK_HedIsH" role="2iSdaV" />
+      <node concept="2iRfu4" id="1OEjBB5GrGS" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="5QDPRL$oUJj">
