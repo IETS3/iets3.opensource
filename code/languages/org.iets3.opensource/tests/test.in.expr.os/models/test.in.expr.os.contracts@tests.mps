@@ -50,7 +50,7 @@
       <concept id="4931785860342338319" name="org.iets3.core.expr.collections.structure.FoldLeftOp" flags="ng" index="1XzICj" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -69,10 +69,10 @@
         <child id="606861080870797310" name="expr" index="pf3We" />
       </concept>
       <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
-      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
@@ -84,7 +84,7 @@
       </concept>
       <concept id="867786408877811037" name="org.iets3.core.expr.base.structure.Precondition" flags="ng" index="I61DT" />
       <concept id="867786408877811180" name="org.iets3.core.expr.base.structure.Postcondition" flags="ng" index="I61F8" />
-      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
+      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ng" index="I61I7">
         <child id="867786408877811042" name="contract" index="I61D6" />
       </concept>
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
@@ -123,6 +123,9 @@
       <concept id="8219602584783477663" name="org.iets3.core.expr.tests.structure.ConstraintFailedTestItem" flags="ng" index="mXNUv">
         <property id="5974682372640371252" name="errmsg" index="xVyv2" />
         <child id="8219602584783494093" name="actual" index="mXJVd" />
+      </concept>
+      <concept id="8219602584783477664" name="org.iets3.core.expr.tests.structure.AbstractTestItem" flags="ng" index="mXNUw">
+        <property id="4770332828445654111" name="isIgnored" index="2xO9KL" />
       </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
@@ -196,7 +199,7 @@
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
       </concept>
-      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ngI" index="S5Q1W">
+      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
         <child id="602952467877562565" name="members" index="S5Trm" />
       </concept>
       <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
@@ -230,7 +233,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -254,11 +257,11 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
@@ -271,7 +274,7 @@
         <child id="7554398283340318471" name="args" index="3ix9CL" />
       </concept>
       <concept id="7554398283340318478" name="org.iets3.core.expr.lambda.structure.LambdaArg" flags="ng" index="3ix9CS" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
       <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60">
@@ -1890,6 +1893,76 @@
         </node>
       </node>
     </node>
+    <node concept="1aga60" id="poYlhVsFzQ" role="_iOnB">
+      <property role="TrG5h" value="brotherAges4WithoutProject" />
+      <node concept="1ahQXy" id="poYlhVsFzR" role="1ahQWs">
+        <property role="TrG5h" value="p" />
+        <node concept="2Ss9cW" id="poYlhVsFzS" role="3ix9CU">
+          <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+        </node>
+      </node>
+      <node concept="I61D5" id="poYlhVsFzT" role="I61D6">
+        <node concept="I61DT" id="poYlhVsFzU" role="I61D1">
+          <node concept="1aduha" id="poYlhVsFzV" role="I61DU">
+            <node concept="1adJid" id="poYlhVsFzW" role="1aduh9">
+              <property role="TrG5h" value="brothers" />
+              <node concept="1QScDb" id="poYlhVsFzX" role="1adJii">
+                <node concept="3izCyS" id="poYlhVsFzY" role="1QScD9">
+                  <node concept="3izI60" id="poYlhVsFzZ" role="3iAY4F">
+                    <node concept="1QScDb" id="poYlhVsF$0" role="3izI61">
+                      <node concept="2JjPkS" id="poYlhVsF$1" role="1QScD9">
+                        <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                      </node>
+                      <node concept="1QScDb" id="poYlhVsF$2" role="30czhm">
+                        <node concept="3o_JK" id="poYlhVsF$3" role="1QScD9">
+                          <ref role="3o_JH" node="5ipapt3EfF2" resolve="gender" />
+                        </node>
+                        <node concept="3izPEI" id="poYlhVsF$4" role="30czhm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1QScDb" id="poYlhVsF$5" role="30czhm">
+                  <node concept="3o_JK" id="poYlhVsF$6" role="1QScD9">
+                    <ref role="3o_JH" node="5ipapt3EfFa" resolve="siblings" />
+                  </node>
+                  <node concept="1afdae" id="poYlhVsF$7" role="30czhm">
+                    <ref role="1afue_" node="poYlhVsFzR" resolve="p" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2vmpnb" id="poYlhVsF$8" role="1aduh9" />
+          </node>
+        </node>
+        <node concept="I61F8" id="poYlhVsF$9" role="I61D1">
+          <node concept="30cPrO" id="poYlhVsF$a" role="I61DU">
+            <node concept="1QScDb" id="poYlhVsF$b" role="30dEs_">
+              <node concept="3iB8M5" id="poYlhVsF$c" role="1QScD9" />
+              <node concept="1adzI2" id="poYlhVsF$d" role="30czhm">
+                <ref role="1adwt6" node="poYlhVsFzW" resolve="brothers" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="poYlhVsF$e" role="30dEsF">
+              <node concept="3iB8M5" id="poYlhVsF$f" role="1QScD9" />
+              <node concept="Ic2ui" id="poYlhVsF$g" role="30czhm" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1adzI2" id="poYlhVsF$r" role="1ahQXP">
+        <ref role="1adwt6" node="poYlhVsFzW" resolve="brothers" />
+      </node>
+      <node concept="1z9TsT" id="poYlhVthLh" role="lGtFl">
+        <node concept="OjmMv" id="poYlhVthLi" role="1w35rA">
+          <node concept="19SGf9" id="poYlhVthLj" role="OjmMu">
+            <node concept="19SUe$" id="poYlhVthLk" role="19SJt6">
+              <property role="19SUeA" value="TODO: toSet doesn't work with .project" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="5ipapt3Ef$h" role="_iOnB" />
     <node concept="_ixoA" id="4C_RnzgrFyb" role="_iOnB" />
     <node concept="_fkuM" id="5ipapt3EZp9" role="_iOnB">
@@ -2062,7 +2135,7 @@
           <node concept="1QScDb" id="7hc$_$DuRLJ" role="30czhm">
             <node concept="2Scpw_" id="7hc$_$DuWoX" role="1QScD9" />
             <node concept="1af_rf" id="7hc$_$DuPCT" role="30czhm">
-              <ref role="1afhQb" node="5ipapt3EfHe" resolve="brotherAges4" />
+              <ref role="1afhQb" node="poYlhVsFzQ" resolve="brotherAges4WithoutProject" />
               <node concept="_emDc" id="7hc$_$DuPDC" role="1afhQ5">
                 <ref role="_emDf" node="5ipapt3Ejin" resolve="p1" />
               </node>
@@ -2071,7 +2144,7 @@
           <node concept="3iB8M5" id="7hc$_$DvcQM" role="1QScD9" />
         </node>
         <node concept="30bXRB" id="7hc$_$DvhBY" role="_fkuS">
-          <property role="30bXRw" value="2" />
+          <property role="30bXRw" value="1" />
         </node>
       </node>
       <node concept="_fkuZ" id="7hc$_$DvBMT" role="_fkp5">
@@ -2485,6 +2558,7 @@
         <node concept="2vmpnb" id="7aUGNm5JbO9" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="7aUGNm5Jhw5" role="_fkp5">
+        <property role="2xO9KL" value="true" />
         <node concept="_fku$" id="7aUGNm5Jhw6" role="_fkur" />
         <node concept="1QScDb" id="7aUGNm5JBwZ" role="_fkuY">
           <node concept="3iB8M5" id="7aUGNm5JM_E" role="1QScD9" />
@@ -2496,7 +2570,7 @@
           </node>
         </node>
         <node concept="30bXRB" id="7aUGNm5JRVf" role="_fkuS">
-          <property role="30bXRw" value="2" />
+          <property role="30bXRw" value="1" />
         </node>
       </node>
       <node concept="_fkuZ" id="7aUGNm5JXHm" role="_fkp5">
@@ -2956,6 +3030,7 @@
         <node concept="2vmpnb" id="7aUGNm6X0RH" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="7aUGNm6QQNk" role="_fkp5">
+        <property role="2xO9KL" value="true" />
         <node concept="_fku$" id="7aUGNm6QQNl" role="_fkur" />
         <node concept="1aduha" id="7aUGNm6QQNm" role="_fkuY">
           <node concept="1adJid" id="7aUGNm6QQNn" role="1aduh9">
@@ -3002,7 +3077,7 @@
           </node>
         </node>
         <node concept="30bXRB" id="7aUGNm6X0RV" role="_fkuS">
-          <property role="30bXRw" value="2" />
+          <property role="30bXRw" value="1" />
         </node>
       </node>
       <node concept="_fkuZ" id="7aUGNm6YbNj" role="_fkp5">
