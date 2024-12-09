@@ -39,8 +39,8 @@
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" />
     <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)" />
     <import index="65nr" ref="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -8706,6 +8706,15 @@
         </node>
       </node>
       <node concept="_fkuZ" id="69HsIy5GLSJ" role="_fkp5">
+        <node concept="1z9TsT" id="1eut2uU9kib" role="lGtFl">
+          <node concept="OjmMv" id="1eut2uU9kic" role="1w35rA">
+            <node concept="19SGf9" id="1eut2uU9kid" role="OjmMu">
+              <node concept="19SUe$" id="1eut2uU9kie" role="19SJt6">
+                <property role="19SUeA" value="the first applicable rule is used with the default config which is the conversion declared in this file " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="_fku$" id="69HsIy5GLSK" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSL" role="_fkuY">
           <node concept="1YnStw" id="69HsIy5GU5N" role="30czhm">
@@ -8727,15 +8736,6 @@
         </node>
         <node concept="30bXRB" id="69HsIy5GLSR" role="_fkuS">
           <property role="30bXRw" value="-3" />
-        </node>
-        <node concept="1z9TsT" id="1eut2uU9kib" role="lGtFl">
-          <node concept="OjmMv" id="1eut2uU9kic" role="1w35rA">
-            <node concept="19SGf9" id="1eut2uU9kid" role="OjmMu">
-              <node concept="19SUe$" id="1eut2uU9kie" role="19SJt6">
-                <property role="19SUeA" value="the first applicable rule is used with the default config which is the conversion declared in this file " />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="_fkuZ" id="1AZ6$Cori3v" role="_fkp5">
@@ -12009,9 +12009,6 @@
         <node concept="3GEVxB" id="1NEOJAVgxQk" role="3i6evy">
           <ref role="3GEb4d" node="1NEOJAVfc5u" resolve="ImperialUnits" />
         </node>
-        <node concept="3GEVxB" id="xExe$xp6Rb" role="3i6evy">
-          <ref role="3GEb4d" to="8ps7:xExe$xoFsp" resolve="UnitsOfInformation" />
-        </node>
         <node concept="CIrOH" id="kS03ZnkM4V" role="_iOnC">
           <property role="TrG5h" value="mi" />
           <property role="1o$tow" value="mile" />
@@ -12769,6 +12766,9 @@
             <property role="GvXf4" value="true" />
           </node>
         </node>
+        <node concept="3GEVxB" id="xExe$xp6Rb" role="3i6evy">
+          <ref role="3GEb4d" to="8ps7:xExe$xoFsp" resolve="UnitsOfInformation" />
+        </node>
       </node>
     </node>
     <node concept="1qefOq" id="1NEOJAV_EBc" role="1SKRRt">
@@ -12776,9 +12776,6 @@
         <property role="TrG5h" value="QuantityPrefixComparable" />
         <node concept="3GEVxB" id="1NEOJAV_EBe" role="3i6evy">
           <ref role="3GEb4d" node="1NEOJAVfc5u" resolve="ImperialUnits" />
-        </node>
-        <node concept="3GEVxB" id="xExe$xqT6O" role="3i6evy">
-          <ref role="3GEb4d" to="8ps7:xExe$xoFsp" resolve="UnitsOfInformation" />
         </node>
         <node concept="2zPypq" id="1NEOJAV_EBh" role="_iOnC">
           <property role="TrG5h" value="milliMeter2Meter" />
@@ -13007,6 +13004,9 @@
           <node concept="7OXhh" id="1NEOJAV_EEJ" role="7EUXB">
             <property role="GvXf4" value="true" />
           </node>
+        </node>
+        <node concept="3GEVxB" id="xExe$xqT6O" role="3i6evy">
+          <ref role="3GEb4d" to="8ps7:xExe$xoFsp" resolve="UnitsOfInformation" />
         </node>
       </node>
     </node>
