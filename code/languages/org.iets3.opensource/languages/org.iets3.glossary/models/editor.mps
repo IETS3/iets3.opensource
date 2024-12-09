@@ -132,7 +132,6 @@
       <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
         <child id="1950447826683828796" name="target" index="3XvnJa" />
       </concept>
-      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -448,7 +447,6 @@
           </node>
         </node>
       </node>
-      <node concept="3XFhqQ" id="6zaFu4oPQtv" role="3EZMnx" />
       <node concept="3EZMnI" id="6zaFu4oR3K0" role="3EZMnx">
         <node concept="2iRkQZ" id="6zaFu4oR3K1" role="2iSdaV" />
         <node concept="3EZMnI" id="6zaFu4oQXDJ" role="3EZMnx">
@@ -748,8 +746,6 @@
           </node>
         </node>
       </node>
-      <node concept="3XFhqQ" id="6zaFu4oRD5C" role="3EZMnx" />
-      <node concept="3XFhqQ" id="6zaFu4oRDjm" role="3EZMnx" />
       <node concept="3EZMnI" id="6zaFu4oRD5D" role="3EZMnx">
         <node concept="2iRkQZ" id="6zaFu4oRD5E" role="2iSdaV" />
         <node concept="3EZMnI" id="6zaFu4oRD5Q" role="3EZMnx">
@@ -935,7 +931,6 @@
           </node>
         </node>
       </node>
-      <node concept="3XFhqQ" id="6zaFu4oSBtZ" role="3EZMnx" />
       <node concept="1iCGBv" id="6zaFu4oSB5v" role="3EZMnx">
         <ref role="1NtTu8" to="tuf9:6zaFu4oSAXF" resolve="term" />
         <node concept="1sVBvm" id="6zaFu4oSB5x" role="1sWHZn">
@@ -977,11 +972,9 @@
         </node>
         <node concept="l2Vlx" id="1ASK_HedIvc" role="2iSdaV" />
       </node>
-      <node concept="3XFhqQ" id="6zaFu4oTqA2" role="3EZMnx" />
       <node concept="3F0ifn" id="6zaFu4oSBpY" role="3EZMnx">
         <property role="3F0ifm" value="|" />
       </node>
-      <node concept="3XFhqQ" id="6zaFu4oSBy0" role="3EZMnx" />
       <node concept="1HlG4h" id="6zaFu4oS_c9" role="3EZMnx">
         <node concept="1HfYo3" id="6zaFu4oS_cb" role="1HlULh">
           <node concept="3TQlhw" id="6zaFu4oS_cd" role="1Hhtcw">

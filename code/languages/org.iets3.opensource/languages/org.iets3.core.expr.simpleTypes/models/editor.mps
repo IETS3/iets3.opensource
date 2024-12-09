@@ -183,7 +183,6 @@
       <concept id="1950447826686048995" name="jetbrains.mps.lang.editor.structure.UnapplyStyle" flags="lg" index="3XB9Gl">
         <child id="1950447826686049051" name="target" index="3XB9FH" />
       </concept>
-      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -1455,7 +1454,6 @@
       <node concept="3F1sOY" id="4eVSC65NNBo" role="3EZMnx">
         <ref role="1NtTu8" to="5qo5:4eVSC65JA4Q" resolve="expr" />
       </node>
-      <node concept="3XFhqQ" id="4eVSC65NPCu" role="3EZMnx" />
       <node concept="1HlG4h" id="4eVSC65NNCC" role="3EZMnx">
         <node concept="1HfYo3" id="4eVSC65NNCE" role="1HlULh">
           <node concept="3TQlhw" id="4eVSC65NNCG" role="1Hhtcw">
@@ -1480,7 +1478,6 @@
         <property role="39s7Ar" value="true" />
         <ref role="1NtTu8" to="5qo5:4eVSC65JA4S" resolve="lower" />
       </node>
-      <node concept="3XFhqQ" id="4eVSC65NPAV" role="3EZMnx" />
       <node concept="1HlG4h" id="4eVSC65NPiG" role="3EZMnx">
         <node concept="1HfYo3" id="4eVSC65NPiH" role="1HlULh">
           <node concept="3TQlhw" id="4eVSC65NPiI" role="1Hhtcw">
