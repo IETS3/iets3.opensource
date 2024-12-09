@@ -236,7 +236,6 @@
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
-      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -524,6 +523,7 @@
       <concept id="4682418030828844315" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineColorStyle" flags="lg" index="2T_bXS" />
       <concept id="4682418030828844314" name="de.itemis.mps.editor.celllayout.structure.HorzontalLineWidthStyle" flags="lg" index="2T_bXT" />
       <concept id="4682418030828725523" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineCell" flags="ng" index="2T_mXK" />
+      <concept id="2728748097294412051" name="de.itemis.mps.editor.celllayout.structure.PushXStyle" flags="lg" index="3T7XNW" />
       <concept id="2728748097294192922" name="de.itemis.mps.editor.celllayout.structure.IntegerStyle" flags="lg" index="3To2jP">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
@@ -1356,14 +1356,13 @@
             </node>
           </node>
         </node>
-        <node concept="3XFhqQ" id="7nsgDAXznVR" role="3EZMnx" />
-        <node concept="3XFhqQ" id="7nsgDAXznWo" role="3EZMnx" />
-        <node concept="3XFhqQ" id="7nsgDAXznWT" role="3EZMnx" />
-        <node concept="3XFhqQ" id="7nsgDAXznXr" role="3EZMnx" />
-        <node concept="3XFhqQ" id="7nsgDAXznXY" role="3EZMnx" />
-        <node concept="3XFhqQ" id="7nsgDAX$QF1" role="3EZMnx" />
-        <node concept="3XFhqQ" id="7nsgDAX$QFF" role="3EZMnx" />
-        <node concept="3XFhqQ" id="7nsgDAX$QGm" role="3EZMnx" />
+        <node concept="3F0ifn" id="2tlTgwelJbu" role="3EZMnx">
+          <property role="3F0ifm" value="" />
+          <node concept="VPM3Z" id="2tlTgwelJfS" role="3F10Kt" />
+          <node concept="3T7XNW" id="2tlTgwegFXM" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
         <node concept="3EZMnI" id="7nsgDAX$QE7" role="3EZMnx">
           <node concept="3F0ifn" id="7nsgDAX$QEW" role="3EZMnx">
             <property role="3F0ifm" value="imports" />

@@ -600,6 +600,7 @@
       <concept id="4682418030828844315" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineColorStyle" flags="lg" index="2T_bXS" />
       <concept id="4682418030828844314" name="de.itemis.mps.editor.celllayout.structure.HorzontalLineWidthStyle" flags="lg" index="2T_bXT" />
       <concept id="4682418030828725523" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineCell" flags="ng" index="2T_mXK" />
+      <concept id="2728748097294412051" name="de.itemis.mps.editor.celllayout.structure.PushXStyle" flags="lg" index="3T7XNW" />
       <concept id="2728748097294192922" name="de.itemis.mps.editor.celllayout.structure.IntegerStyle" flags="lg" index="3To2jP">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
@@ -3078,8 +3079,13 @@
             </node>
           </node>
         </node>
-        <node concept="3XFhqQ" id="5VEHrQcW_$E" role="3EZMnx" />
-        <node concept="3XFhqQ" id="5VEHrQcW__u" role="3EZMnx" />
+        <node concept="3F0ifn" id="2tlTgwfAI5X" role="3EZMnx">
+          <property role="3F0ifm" value="" />
+          <node concept="VPM3Z" id="2tlTgwelJfS" role="3F10Kt" />
+          <node concept="3T7XNW" id="2tlTgwegFXM" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
         <node concept="3EZMnI" id="5VEHrQcYPrQ" role="3EZMnx">
           <node concept="VPM3Z" id="5VEHrQcYPrS" role="3F10Kt">
             <property role="VOm3f" value="false" />
@@ -3103,8 +3109,6 @@
           </node>
           <node concept="2iRkQZ" id="5VEHrQcYPrV" role="2iSdaV" />
         </node>
-        <node concept="3XFhqQ" id="5VEHrQcW_Af" role="3EZMnx" />
-        <node concept="3XFhqQ" id="5VEHrQcW_B2" role="3EZMnx" />
         <node concept="3F0ifn" id="5VEHrQcW_CQ" role="3EZMnx">
           <property role="3F0ifm" value="imports:" />
         </node>
