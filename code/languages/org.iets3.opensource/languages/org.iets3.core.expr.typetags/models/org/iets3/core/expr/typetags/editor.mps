@@ -43,7 +43,6 @@
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -743,7 +742,6 @@
   <node concept="24kQdi" id="2Ux6GHgZDR6">
     <ref role="1XX52x" to="w1hl:2Ux6GHgZDQF" resolve="TaggedExpression" />
     <node concept="3EZMnI" id="Fhq44ej0LB" role="2wV5jI">
-      <node concept="2iRfu4" id="Fhq44ej0LC" role="2iSdaV" />
       <node concept="3EZMnI" id="7eOyx9r3D2r" role="3EZMnx">
         <node concept="3F0ifn" id="3wrpJuuGygQ" role="3EZMnx">
           <property role="3F0ifm" value="[" />
@@ -932,6 +930,7 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="l2Vlx" id="1ASK_HedIt6" role="2iSdaV" />
     </node>
   </node>
   <node concept="3INDKC" id="3cUcim$6q3Z">

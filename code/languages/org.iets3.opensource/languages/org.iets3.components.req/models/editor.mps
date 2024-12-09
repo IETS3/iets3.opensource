@@ -24,8 +24,8 @@
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -159,7 +159,7 @@
             </node>
           </node>
         </node>
-        <node concept="2iRfu4" id="cJpacq5XBF" role="2iSdaV" />
+        <node concept="l2Vlx" id="1ASK_HedIzs" role="2iSdaV" />
       </node>
       <node concept="gc7cB" id="cJpacq6vPB" role="3EZMnx">
         <node concept="3VJUX4" id="cJpacq6vPC" role="3YsKMw">

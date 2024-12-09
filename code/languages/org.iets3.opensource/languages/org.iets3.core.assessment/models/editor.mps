@@ -20,6 +20,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -273,7 +274,7 @@
         <ref role="1NtTu8" to="330h:5ZLQMNq2g6M" resolve="traceTargets" />
         <node concept="2iRfu4" id="5ZLQMNq2kcu" role="2czzBx" />
       </node>
-      <node concept="2iRfu4" id="5ZLQMNq2iky" role="2iSdaV" />
+      <node concept="l2Vlx" id="1ASK_HedI_5" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="5ZLQMNq2l6u">
@@ -330,7 +331,7 @@
       <node concept="3F1sOY" id="5ZLQMNq2laq" role="3EZMnx">
         <ref role="1NtTu8" to="330h:5ZLQMNq2hPN" resolve="scope" />
       </node>
-      <node concept="2iRfu4" id="5ZLQMNq2l6z" role="2iSdaV" />
+      <node concept="l2Vlx" id="1ASK_HedI_6" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1lUgLJUk$sf">
@@ -397,14 +398,13 @@
       <node concept="3F1sOY" id="378sigX35nl" role="3EZMnx">
         <ref role="1NtTu8" to="330h:378sigX35lr" resolve="scope" />
       </node>
-      <node concept="2iRfu4" id="378sigX35m4" role="2iSdaV" />
+      <node concept="l2Vlx" id="1ASK_HedI_7" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="378sigX4OUJ">
     <property role="3GE5qa" value="result" />
     <ref role="1XX52x" to="330h:378sigX3YpU" resolve="UntracedResult" />
     <node concept="3EZMnI" id="378sigX4OV4" role="2wV5jI">
-      <node concept="2iRfu4" id="378sigX4OV7" role="2iSdaV" />
       <node concept="1iCGBv" id="6_Ift$_CY$T" role="3EZMnx">
         <ref role="1NtTu8" to="330h:378sigX3YpV" resolve="element" />
         <node concept="1sVBvm" id="6_Ift$_CY$U" role="1sWHZn">
@@ -445,6 +445,7 @@
           </node>
         </node>
       </node>
+      <node concept="l2Vlx" id="1ASK_HedI_8" role="2iSdaV" />
     </node>
   </node>
 </model>

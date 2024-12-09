@@ -11,7 +11,7 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -34,7 +34,6 @@
   <node concept="24kQdi" id="1bwJEEfG$Fd">
     <ref role="1XX52x" to="q6b8:1bwJEEfGu9F" resolve="RandomVectorProducer" />
     <node concept="3EZMnI" id="1bwJEEfG$Gr" role="2wV5jI">
-      <node concept="2iRfu4" id="1bwJEEfG$Gs" role="2iSdaV" />
       <node concept="3F0ifn" id="1bwJEEfG$Gn" role="3EZMnx">
         <property role="3F0ifm" value="random" />
       </node>
@@ -47,15 +46,16 @@
       <node concept="3F0A7n" id="4o7_AWgGUm5" role="3EZMnx">
         <ref role="1NtTu8" to="q6b8:4o7_AWgGUlO" resolve="onlyInteresing" />
       </node>
+      <node concept="l2Vlx" id="1ASK_HedIzq" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="u9itSZOLZW">
     <ref role="1XX52x" to="q6b8:u9itSZOLXL" resolve="EqClassProducer" />
     <node concept="3EZMnI" id="u9itSZOM07" role="2wV5jI">
-      <node concept="2iRfu4" id="u9itSZOM08" role="2iSdaV" />
       <node concept="3F0ifn" id="u9itSZOM09" role="3EZMnx">
         <property role="3F0ifm" value="eqclass" />
       </node>
+      <node concept="l2Vlx" id="1ASK_HedIzr" role="2iSdaV" />
     </node>
   </node>
 </model>
