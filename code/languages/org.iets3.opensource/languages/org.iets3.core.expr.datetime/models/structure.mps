@@ -42,7 +42,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -437,7 +437,7 @@
     <property role="3GE5qa" value="range.rel" />
     <property role="TrG5h" value="ContainsRangeRelOp" />
     <property role="34LRSv" value="contains" />
-    <property role="R4oN_" value="check that the date range contains another date range" />
+    <property role="R4oN_" value="check that the date range contains another date or date range" />
     <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
   </node>
   <node concept="1TIwiD" id="7khFtBHyG$z">
