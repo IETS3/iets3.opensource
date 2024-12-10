@@ -6716,19 +6716,9 @@
             <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4SmV64V67$S" role="3bR37C">
-          <node concept="3bR9La" id="4SmV64V67$T" role="1SiIV1">
-            <ref role="3bR37D" node="3qKzW8QxJyw" resolve="org.iets3.core.expr.base.shared.runtime" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5s2FNgb$bxc" role="3bR37C">
           <node concept="3bR9La" id="5s2FNgb$bxd" role="1SiIV1">
             <ref role="3bR37D" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3BA76Yi2vu3" role="3bR37C">
-          <node concept="3bR9La" id="3BA76Yi2vu4" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
           </node>
         </node>
       </node>
@@ -7641,11 +7631,6 @@
         <node concept="1SiIV0" id="7ohnJTZM_qs" role="3bR37C">
           <node concept="3bR9La" id="7ohnJTZM_qt" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3qkjbZn808a" resolve="jetbrains.mps.lang.constraints.rules.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6cBhYjwIHaU" role="3bR37C">
-          <node concept="3bR9La" id="6cBhYjwIHaV" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
           </node>
         </node>
       </node>
