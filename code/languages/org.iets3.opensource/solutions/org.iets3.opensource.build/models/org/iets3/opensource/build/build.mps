@@ -2953,35 +2953,6 @@
             <ref role="1Busuk" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
           </node>
         </node>
-        <node concept="1yeLz9" id="2utoDiy1jRY" role="1TViLv">
-          <property role="TrG5h" value="org.iets3.core.expr.typetags.bindingtime.generator" />
-          <property role="3LESm3" value="e40bdaec-341f-4ec6-ba10-02efdcf680a8" />
-          <node concept="1BupzO" id="2utoDiy1jSc" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="2utoDiy1jSd" role="1HemKq">
-              <node concept="398BVA" id="2utoDiy1jRZ" role="3LXTmr">
-                <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-                <node concept="2Ry0Ak" id="2utoDiy1jS0" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="2utoDiy1jS1" role="2Ry0An">
-                    <property role="2Ry0Am" value="org.iets3.core.expr.typetags.bindingtime" />
-                    <node concept="2Ry0Ak" id="2utoDiy1jS2" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="2utoDiy1jS3" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="2utoDiy1jSe" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="4sMZ8GEaS9$" role="3bR37C">
           <node concept="3bR9La" id="4sMZ8GEaS9_" role="1SiIV1">
             <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
