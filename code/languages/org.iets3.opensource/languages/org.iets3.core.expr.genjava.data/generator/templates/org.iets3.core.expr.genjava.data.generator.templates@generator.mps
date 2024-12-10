@@ -1722,9 +1722,7 @@
                 <ref role="3uigEE" node="6wzrxL2VEMH" resolve="Dummy.TableEntry" />
               </node>
               <node concept="3Tm1VV" id="6wzrxL32ajv" role="1B3o_S" />
-              <node concept="3cmrfG" id="6wzrxL31N6a" role="33vP2m">
-                <property role="3cmrfH" value="10" />
-              </node>
+              <node concept="10Nm6u" id="1NX6wtRSeOF" role="33vP2m" />
             </node>
             <node concept="3clFb_" id="6wzrxL31RzI" role="jymVt">
               <property role="TrG5h" value="is" />
