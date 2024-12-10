@@ -734,7 +734,6 @@
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1171391069720" name="jetbrains.mps.baseLanguage.collections.structure.GetIndexOfOperation" flags="nn" index="2WmjW8" />
@@ -5209,7 +5208,7 @@
                               <node concept="3clFbF" id="3ToB$MLMJAG" role="3cqZAp">
                                 <node concept="2OqwBi" id="3ToB$MLMJAH" role="3clFbG">
                                   <node concept="37vLTw" id="3ToB$MLMJAI" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="3ToB$MLMJAK" resolve="it" />
+                                    <ref role="3cqZAo" node="4EP4zG6XtME" resolve="it" />
                                   </node>
                                   <node concept="liA8E" id="3ToB$MLMJAJ" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
@@ -5217,9 +5216,9 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="Rh6nW" id="3ToB$MLMJAK" role="1bW2Oz">
+                            <node concept="gl6BB" id="4EP4zG6XtME" role="1bW2Oz">
                               <property role="TrG5h" value="it" />
-                              <node concept="2jxLKc" id="3ToB$MLMJAL" role="1tU5fm" />
+                              <node concept="2jxLKc" id="4EP4zG6XtMF" role="1tU5fm" />
                             </node>
                           </node>
                         </node>
@@ -5319,7 +5318,7 @@
                                       <node concept="1eOMI4" id="3ToB$MLOV9F" role="2Oq$k0">
                                         <node concept="10QFUN" id="3ToB$MLOV9E" role="1eOMHV">
                                           <node concept="37vLTw" id="3ToB$MLOV9D" role="10QFUP">
-                                            <ref role="3cqZAo" node="3ToB$MLnjjD" resolve="it" />
+                                            <ref role="3cqZAo" node="4EP4zG6XtMG" resolve="it" />
                                           </node>
                                           <node concept="3uibUv" id="3ToB$MLOV9C" role="10QFUM">
                                             <ref role="3uigEE" to="xfg9:3ToB$MLORO4" resolve="ICustomStringForValueInspector" />
@@ -5337,14 +5336,14 @@
                                     <ref role="3uigEE" to="xfg9:3ToB$MLORO4" resolve="ICustomStringForValueInspector" />
                                   </node>
                                   <node concept="37vLTw" id="3ToB$MLOTZg" role="2ZW6bz">
-                                    <ref role="3cqZAo" node="3ToB$MLnjjD" resolve="it" />
+                                    <ref role="3cqZAo" node="4EP4zG6XtMG" resolve="it" />
                                   </node>
                                 </node>
                               </node>
                               <node concept="3clFbF" id="3ToB$MLnjjN" role="3cqZAp">
                                 <node concept="2OqwBi" id="3ToB$MLnjsx" role="3clFbG">
                                   <node concept="37vLTw" id="3ToB$MLnjjM" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="3ToB$MLnjjD" resolve="it" />
+                                    <ref role="3cqZAo" node="4EP4zG6XtMG" resolve="it" />
                                   </node>
                                   <node concept="liA8E" id="3ToB$MLnjAv" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
@@ -5352,9 +5351,9 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="Rh6nW" id="3ToB$MLnjjD" role="1bW2Oz">
+                            <node concept="gl6BB" id="4EP4zG6XtMG" role="1bW2Oz">
                               <property role="TrG5h" value="it" />
-                              <node concept="2jxLKc" id="3ToB$MLnjjE" role="1tU5fm" />
+                              <node concept="2jxLKc" id="4EP4zG6XtMH" role="1tU5fm" />
                             </node>
                           </node>
                         </node>

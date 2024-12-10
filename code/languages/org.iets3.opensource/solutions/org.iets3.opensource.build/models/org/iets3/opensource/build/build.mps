@@ -14111,6 +14111,22 @@
           </node>
         </node>
       </node>
+      <node concept="3rtmxn" id="4EP4zG6XFP5" role="3bR31x">
+        <node concept="3LXTmp" id="4EP4zG6XFP6" role="3rtmxm">
+          <node concept="3qWCbU" id="4EP4zG6XFP7" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="4EP4zG6XFP8" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="4EP4zG6XFP9" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="4EP4zG6XFPa" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ts.expr.os.comma" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="5kwEgmAh8J_" role="3989C9">
       <property role="BnDLt" value="true" />
@@ -14471,6 +14487,22 @@
       <node concept="1SiIV0" id="IJ8MgPVKYz" role="3bR37C">
         <node concept="3bR9La" id="IJ8MgPVKY$" role="1SiIV1">
           <ref role="3bR37D" node="IJ8MgPVKMG" resolve="test.org.iets3.analysis.base.solvable" />
+        </node>
+      </node>
+      <node concept="3rtmxn" id="4EP4zG6XFPc" role="3bR31x">
+        <node concept="3LXTmp" id="4EP4zG6XFPd" role="3rtmxm">
+          <node concept="3qWCbU" id="4EP4zG6XFPe" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="4EP4zG6XFPf" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="4EP4zG6XFPg" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="4EP4zG6XFPh" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.analysis.base" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
