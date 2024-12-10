@@ -3726,6 +3726,10 @@
           </node>
         </node>
         <node concept="3cpWs8" id="kZqQ80bex$" role="3cqZAp">
+          <node concept="15s5l7" id="1NX6wtRS_nF" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: type tool&lt;TraceExplorer&gt; is not comparable with jetbrains.mps.ide.tools.BaseTabbedProjectTool&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/6469607165247478858]&quot;;" />
+            <property role="huDt6" value="Error: type tool&lt;TraceExplorer&gt; is not comparable with jetbrains.mps.ide.tools.BaseTabbedProjectTool" />
+          </node>
           <node concept="15s5l7" id="kZqQ80o$Y_" role="lGtFl">
             <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  BaseTabbedProjectTool (classifier) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;classifier&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)/6836281137582643069]&quot;;" />
             <property role="huDt6" value="The reference  BaseTabbedProjectTool (classifier) is out of search scope" />
@@ -4210,6 +4214,11 @@
     <node concept="1QGGSu" id="4ciuUydNRXF" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/traceShowAll.png" />
     </node>
+    <node concept="1DS2jV" id="4EP4zG6Xi0S" role="1NuT2Z">
+      <property role="TrG5h" value="frame" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.FRAME" resolve="FRAME" />
+      <node concept="1oajcY" id="4EP4zG6Xi0T" role="1oa70y" />
+    </node>
   </node>
   <node concept="sE7Ow" id="2JfTTG8itTT">
     <property role="TrG5h" value="selectNextTraceNodeAndInspectSource" />
@@ -4314,6 +4323,11 @@
     </node>
     <node concept="1QGGSu" id="2JfTTG8itUG" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/traceShowOne.png" />
+    </node>
+    <node concept="1DS2jV" id="4EP4zG6XiRL" role="1NuT2Z">
+      <property role="TrG5h" value="frame" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.FRAME" resolve="FRAME" />
+      <node concept="1oajcY" id="4EP4zG6XiRM" role="1oa70y" />
     </node>
   </node>
   <node concept="sE7Ow" id="4yQfyMjrpAh">
@@ -4422,6 +4436,11 @@
     </node>
     <node concept="1QGGSu" id="4ciuUydNRCn" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/traceShowOne.png" />
+    </node>
+    <node concept="1DS2jV" id="4EP4zG6Xkaw" role="1NuT2Z">
+      <property role="TrG5h" value="frame" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.FRAME" resolve="FRAME" />
+      <node concept="1oajcY" id="4EP4zG6Xkax" role="1oa70y" />
     </node>
   </node>
   <node concept="sE7Ow" id="5ipapt3lw0T">

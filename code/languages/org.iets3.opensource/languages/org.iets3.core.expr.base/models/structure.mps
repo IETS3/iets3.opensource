@@ -3,8 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -2205,15 +2203,6 @@
     <property role="EcuMT" value="7520958096812440715" />
     <property role="TrG5h" value="IComplexTypeSupportsEquals" />
   </node>
-  <node concept="PlHQZ" id="6wzrxL38hak">
-    <property role="EcuMT" value="7503962471793758868" />
-    <property role="TrG5h" value="IPreferredProposalContext" />
-  </node>
-  <node concept="PlHQZ" id="5r47dOfJ8Ur">
-    <property role="TrG5h" value="ITupleDeclaration" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="EcuMT" value="6252153918474456730" />
-  </node>
   <node concept="PlHQZ" id="5r47dOfJ8UC">
     <property role="TrG5h" value="ITupleMemberDeclaration" />
     <property role="3GE5qa" value="tuples" />
@@ -2222,20 +2211,27 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5r47dOfJ9kS">
-    <property role="EcuMT" value="6252153918474458424" />
+  <node concept="1TIwiD" id="25rRV02ooIM">
+    <property role="EcuMT" value="2403760773179476914" />
     <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="InlineTupleType" />
-    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
-    <node concept="1TJgyj" id="5r47dOfJ9kT" role="1TKVEi">
-      <property role="IQ2ns" value="6252153918474458425" />
-      <property role="20kJfa" value="decl" />
+    <property role="TrG5h" value="NCopiesOp" />
+    <property role="34LRSv" value="nTimes" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="25rRV02osES" role="1TKVEi">
+      <property role="IQ2ns" value="2403760773179493048" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="times" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5r47dOfJ8Ur" resolve="ITupleDeclaration" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
-    <node concept="PrWs8" id="41vYFO2GtZt" role="PzmwI">
-      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    <node concept="PrWs8" id="25rRV02oy5O" role="PzmwI">
+      <ref role="PrY4T" node="25rRV02oe$f" resolve="ITupleOp" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5r47dOfJ8Ur">
+    <property role="TrG5h" value="ITupleDeclaration" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="EcuMT" value="6252153918474456730" />
   </node>
   <node concept="1TIwiD" id="6GiZkUz7qWO">
     <property role="EcuMT" value="7715507625824988980" />
@@ -2263,27 +2259,33 @@
       <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
-  <node concept="1TIwiD" id="25rRV02ooIM">
-    <property role="EcuMT" value="2403760773179476914" />
+  <node concept="PlHQZ" id="6wzrxL38hak">
+    <property role="EcuMT" value="7503962471793758868" />
+    <property role="TrG5h" value="IPreferredProposalContext" />
+  </node>
+  <node concept="1TIwiD" id="5r47dOfJ9kS">
+    <property role="EcuMT" value="6252153918474458424" />
     <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="NCopiesOp" />
-    <property role="34LRSv" value="nTimes" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="25rRV02osES" role="1TKVEi">
-      <property role="IQ2ns" value="2403760773179493048" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="times" />
+    <property role="TrG5h" value="InlineTupleType" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="5r47dOfJ9kT" role="1TKVEi">
+      <property role="IQ2ns" value="6252153918474458425" />
+      <property role="20kJfa" value="decl" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <ref role="20lvS9" node="5r47dOfJ8Ur" resolve="ITupleDeclaration" />
     </node>
-    <node concept="PrWs8" id="25rRV02oy5O" role="PzmwI">
-      <ref role="PrY4T" node="25rRV02oe$f" resolve="ITupleOp" />
+    <node concept="PrWs8" id="41vYFO2GtZt" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
   </node>
   <node concept="PlHQZ" id="2KEzU_jNj4j">
     <property role="EcuMT" value="3182514044108878099" />
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="ISupportHexValues" />
+  </node>
+  <node concept="PlHQZ" id="3eH6BL2TJIw">
+    <property role="EcuMT" value="3723661587905969056" />
+    <property role="TrG5h" value="IAssignable" />
   </node>
   <node concept="1TIwiD" id="5Ys_ngSnA9h">
     <property role="EcuMT" value="6889545856364470865" />
@@ -2315,10 +2317,6 @@
         <ref role="trN6q" node="2KEzU_jNj4j" resolve="ISupportHexValues" />
       </node>
     </node>
-  </node>
-  <node concept="PlHQZ" id="3eH6BL2TJIw">
-    <property role="EcuMT" value="3723661587905969056" />
-    <property role="TrG5h" value="IAssignable" />
   </node>
 </model>
 

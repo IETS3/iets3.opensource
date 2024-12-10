@@ -167,7 +167,7 @@
     </language>
   </registry>
   <node concept="1lH9Xt" id="1t_lOkRnMfg">
-    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <property role="TrG5h" value="commaInfHelperTest" />
     <node concept="1LZb2c" id="1t_lOkRBkih" role="1SL9yI">
       <property role="TrG5h" value="negate" />
@@ -5667,7 +5667,7 @@
   </node>
   <node concept="1lH9Xt" id="1t_lOkRegEA">
     <property role="TrG5h" value="commaRealTests" />
-    <property role="3DII0k" value="2hh8MJdVwqU/read" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="1t_lOkRencU" role="1SL9yI">
       <property role="TrG5h" value="asdf" />
       <node concept="3cqZAl" id="1t_lOkRencV" role="3clF45" />

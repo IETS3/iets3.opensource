@@ -10,6 +10,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 
 - All custom views are deactivated by default. You can enable each of them through their own extension point: components explorer (`components` extension point), specification explorer (`spec` extension point), requirements explorer (`requirements` extension point), bookmark explorer (`bookmark` extension point).
+- Empty list literals now have automatically the length constraint 0.
+- Lists of lists now derive the correct size.
 
 ## November 2024
 
@@ -208,7 +210,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - The `index` expression in collections operations now works correctly in nested expressions in the interpreter and generator.
-- Generation of nested short lambda expression now use the correct type for "it" as a variable.
+- Generation of nested short lambda expression now uses the correct type for "it" as a variable.
 - Collections: The index expression now works with collection types in the generator.
 
 ### Added
@@ -242,6 +244,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
+- `SliceValue` can now correctly be checked for equality: `SliceValue.equals()` and `SliceValue.hashCode()` are overwritten.
+- `TemporalValue.hashCode()` was overwritten, thus `equals` and `hashCode()` are in sync now.
 - Generation of nested short lambda expression now use the correct type for "it" as a variable.
 
 ## September 2023
