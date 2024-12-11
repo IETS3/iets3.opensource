@@ -254,6 +254,7 @@
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -410,7 +411,6 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -1169,7 +1169,7 @@
                             <node concept="3fqX7Q" id="1eTp1AxLPF8" role="3clFbG">
                               <node concept="2OqwBi" id="1eTp1AxLPF9" role="3fr31v">
                                 <node concept="37vLTw" id="1eTp1AxLPFa" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="1eTp1AxLPFc" resolve="it" />
+                                  <ref role="3cqZAo" node="4z0AnX817bu" resolve="it" />
                                 </node>
                                 <node concept="liA8E" id="1eTp1AxLPFb" role="2OqNvi">
                                   <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
@@ -1178,9 +1178,9 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="Rh6nW" id="1eTp1AxLPFc" role="1bW2Oz">
+                        <node concept="gl6BB" id="4z0AnX817bu" role="1bW2Oz">
                           <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="1eTp1AxLPFd" role="1tU5fm" />
+                          <node concept="2jxLKc" id="4z0AnX817bv" role="1tU5fm" />
                         </node>
                       </node>
                     </node>
@@ -1198,7 +1198,7 @@
                             </node>
                             <node concept="2OqwBi" id="1eTp1AxLPFl" role="3uHU7B">
                               <node concept="37vLTw" id="1eTp1AxLPFm" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1eTp1AxLPFo" resolve="it" />
+                                <ref role="3cqZAo" node="4z0AnX817bw" resolve="it" />
                               </node>
                               <node concept="liA8E" id="1eTp1AxLPFn" role="2OqNvi">
                                 <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage()" resolve="getLanguage" />
@@ -1207,9 +1207,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="1eTp1AxLPFo" role="1bW2Oz">
+                      <node concept="gl6BB" id="4z0AnX817bw" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="1eTp1AxLPFp" role="1tU5fm" />
+                        <node concept="2jxLKc" id="4z0AnX817bx" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -1390,7 +1390,7 @@
                                 <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="isSubConceptOf" />
                                 <node concept="2OqwBi" id="61R9vA3NxDQ" role="37wK5m">
                                   <node concept="37vLTw" id="61R9vA3NxDR" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="61R9vA3NxDT" resolve="it" />
+                                    <ref role="3cqZAo" node="4z0AnX817by" resolve="it" />
                                   </node>
                                   <node concept="liA8E" id="61R9vA3NxDS" role="2OqNvi">
                                     <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
@@ -1400,9 +1400,9 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="Rh6nW" id="61R9vA3NxDT" role="1bW2Oz">
+                        <node concept="gl6BB" id="4z0AnX817by" role="1bW2Oz">
                           <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="61R9vA3NxDU" role="1tU5fm" />
+                          <node concept="2jxLKc" id="4z0AnX817bz" role="1tU5fm" />
                         </node>
                       </node>
                     </node>

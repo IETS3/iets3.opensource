@@ -16,11 +16,11 @@
   </imports>
   <registry>
     <language id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace">
-      <concept id="2117670517801950028" name="org.iets3.core.trace.structure.ITraceTargetProvider" flags="ng" index="2Dx65h">
+      <concept id="2117670517801950028" name="org.iets3.core.trace.structure.ITraceTargetProvider" flags="ngI" index="2Dx65h">
         <reference id="2117670517801950029" name="traceTarget" index="2Dx65g" />
       </concept>
       <concept id="2117670517801951066" name="org.iets3.core.trace.structure.NamedTargetProvider" flags="ng" index="2Dx6l7" />
-      <concept id="2117670517801898047" name="org.iets3.core.trace.structure.ITrace" flags="ng" index="2DxiCy">
+      <concept id="2117670517801898047" name="org.iets3.core.trace.structure.ITrace" flags="ngI" index="2DxiCy">
         <child id="2117670517801898058" name="traceTarget" index="2DxiDn" />
         <child id="2117670517801898048" name="traceKind" index="2DxiDt" />
       </concept>
@@ -34,10 +34,10 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
     </language>
     <language id="583939be-ded0-4735-a055-a74f8477fc34" name="org.iets3.core.attributes">
-      <concept id="4388710048722005709" name="org.iets3.core.attributes.structure.IAttributed" flags="ng" index="18DfD4">
+      <concept id="4388710048722005709" name="org.iets3.core.attributes.structure.IAttributed" flags="ngI" index="18DfD4">
         <child id="4388710048722005710" name="attributes" index="18DfD7" />
       </concept>
-      <concept id="1970998948978453245" name="org.iets3.core.attributes.structure.IValueAttribute" flags="ng" index="3PRgZ$">
+      <concept id="1970998948978453245" name="org.iets3.core.attributes.structure.IValueAttribute" flags="ngI" index="3PRgZ$">
         <child id="1970998948979996854" name="value" index="3PL9QJ" />
       </concept>
     </language>
@@ -77,7 +77,7 @@
       </concept>
       <concept id="596856272727148586" name="org.iets3.components.core.structure.EmptyComponentInterfaceContent" flags="ng" index="H_vQO" />
       <concept id="7804632404593342574" name="org.iets3.components.core.structure.EmptyComponentsChunkContent" flags="ng" index="1i1AuW" />
-      <concept id="7804632404593342035" name="org.iets3.components.core.structure.IComponentsChunkContent" flags="ng" index="1i1AA1">
+      <concept id="7804632404593342035" name="org.iets3.components.core.structure.IComponentsChunkContent" flags="ngI" index="1i1AA1">
         <property id="6142232665969969516" name="public" index="13Nl5X" />
       </concept>
       <concept id="7804632404593341326" name="org.iets3.components.core.structure.ComponentsChunk" flags="ng" index="1i1ALs">
@@ -104,7 +104,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
