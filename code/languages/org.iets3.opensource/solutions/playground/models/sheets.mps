@@ -7,11 +7,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="5585772046594451299" name="org.iets3.core.expr.collections.structure.SumOp" flags="ng" index="2$5g5R" />
       <concept id="8872269265515619803" name="org.iets3.core.expr.collections.structure.AnyOp" flags="ng" index="2Tz0gS" />
@@ -3478,7 +3473,7 @@
           <property role="TrG5h" value="sheet1519374909779" />
           <property role="3m1v9o" value="false" />
           <property role="TCVZL" value="true" />
-          <ref role="3m6S2j" node="7HzLUeHBcfQ" resolve="adder2" />
+          <ref role="3m6S2j" node="7HzLUeHBcfQ" resolve="sheet1519374909779" />
           <node concept="33c$z$" id="4ssCghWx0UR" role="33dGG4">
             <property role="3mSvU8" value="true" />
             <property role="3gEyWN" value="true" />
@@ -3593,7 +3588,7 @@
           <property role="TrG5h" value="sheet1519374909779" />
           <property role="3m1v9o" value="false" />
           <property role="TCVZL" value="true" />
-          <ref role="3m6S2j" node="7HzLUeHBcfQ" resolve="adder2" />
+          <ref role="3m6S2j" node="7HzLUeHBcfQ" resolve="sheet1519374909779" />
           <node concept="33c$z$" id="7HzLUeHEiEi" role="33dGG4">
             <property role="3mSvU8" value="true" />
             <property role="3gEyWN" value="true" />
@@ -3708,7 +3703,7 @@
           <property role="TrG5h" value="sheet1519374909779" />
           <property role="3m1v9o" value="false" />
           <property role="TCVZL" value="true" />
-          <ref role="3m6S2j" node="7HzLUeHBcfQ" resolve="adder2" />
+          <ref role="3m6S2j" node="7HzLUeHBcfQ" resolve="sheet1519374909779" />
           <node concept="33c$z$" id="7HzLUeHEND9" role="33dGG4">
             <property role="3mSvU8" value="true" />
             <property role="3gEyWN" value="true" />
@@ -3985,9 +3980,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2XOHcx" id="4rZeNQ6M9GV">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
 </model>
 

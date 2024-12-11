@@ -60,6 +60,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
       <concept id="1203088046679" name="jetbrains.mps.lang.plugin.structure.ActionInstance" flags="ng" index="tCFHf">
@@ -1950,6 +1951,7 @@
   <node concept="tC5Ba" id="1ognOHj$4ol">
     <property role="TrG5h" value="reqActions" />
     <property role="3GE5qa" value="actions" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="1ognOHj$4p0" role="ftER_">
       <node concept="tCFHf" id="6LfBX8Yg6GI" role="ftvYc">
         <ref role="tCJdB" node="6LfBX8Yg60R" resolve="DeleteRequirement" />
@@ -2232,35 +2234,6 @@
       <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="RequirementsConfig" />
     </node>
   </node>
-  <node concept="312cEu" id="2Qbt$1tSnqh">
-    <property role="TrG5h" value="RequirementsConfig" />
-    <property role="1sVAO0" value="true" />
-    <node concept="2tJIrI" id="2Qbt$1tSq4w" role="jymVt" />
-    <node concept="3clFb_" id="2Qbt$1tSwXM" role="jymVt">
-      <property role="TrG5h" value="getPriorityLevel" />
-      <node concept="10Oyi0" id="2Qbt$1tSx7l" role="3clF45" />
-      <node concept="3Tm1VV" id="2Qbt$1tSwXP" role="1B3o_S" />
-      <node concept="3clFbS" id="2Qbt$1tSwXQ" role="3clF47">
-        <node concept="3clFbF" id="3HwHK4HNSfC" role="3cqZAp">
-          <node concept="3cmrfG" id="3HwHK4HNSfB" role="3clFbG">
-            <property role="3cmrfH" value="0" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3HwHK4HNNrr" role="jymVt" />
-    <node concept="3clFb_" id="3HwHK4HNRzU" role="jymVt">
-      <property role="TrG5h" value="activateRequirementsExplorer" />
-      <node concept="3clFbS" id="3HwHK4HNRzX" role="3clF47">
-        <node concept="3clFbF" id="3HwHK4HNRR6" role="3cqZAp">
-          <node concept="3clFbT" id="3HwHK4HNRR5" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="3HwHK4HNNLD" role="1B3o_S" />
-      <node concept="10P_77" id="3HwHK4HNQMn" role="3clF45" />
-    </node>
-    <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
-  </node>
   <node concept="312cEu" id="4qv99IrBkzE">
     <property role="TrG5h" value="RequirementsConfigHelper" />
     <node concept="2YIFZL" id="4qv99IrBnzk" role="jymVt">
@@ -2333,6 +2306,35 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="4qv99IrBkzF" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="2Qbt$1tSnqh">
+    <property role="TrG5h" value="RequirementsConfig" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="2Qbt$1tSq4w" role="jymVt" />
+    <node concept="3clFb_" id="2Qbt$1tSwXM" role="jymVt">
+      <property role="TrG5h" value="getPriorityLevel" />
+      <node concept="10Oyi0" id="2Qbt$1tSx7l" role="3clF45" />
+      <node concept="3Tm1VV" id="2Qbt$1tSwXP" role="1B3o_S" />
+      <node concept="3clFbS" id="2Qbt$1tSwXQ" role="3clF47">
+        <node concept="3clFbF" id="3HwHK4HNSfC" role="3cqZAp">
+          <node concept="3cmrfG" id="3HwHK4HNSfB" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3HwHK4HNNrr" role="jymVt" />
+    <node concept="3clFb_" id="3HwHK4HNRzU" role="jymVt">
+      <property role="TrG5h" value="activateRequirementsExplorer" />
+      <node concept="3clFbS" id="3HwHK4HNRzX" role="3clF47">
+        <node concept="3clFbF" id="3HwHK4HNRR6" role="3cqZAp">
+          <node concept="3clFbT" id="3HwHK4HNRR5" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3HwHK4HNNLD" role="1B3o_S" />
+      <node concept="10P_77" id="3HwHK4HNQMn" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
   </node>
 </model>
 
