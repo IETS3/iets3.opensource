@@ -12,6 +12,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - All custom views are deactivated by default. You can enable each of them through their own extension point: components explorer (`components` extension point), specification explorer (`spec` extension point), requirements explorer (`requirements` extension point), bookmark explorer (`bookmark` extension point).
 - Empty list literals now have automatically the length constraint 0.
 - Lists of lists now derive the correct size.
+- The line wrapping ability of some concepts was improved.
 
 ## November 2024
 
