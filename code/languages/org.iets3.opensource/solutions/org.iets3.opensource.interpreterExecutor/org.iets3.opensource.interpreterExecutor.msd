@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.iets3.opensource.TestExecutorByInterpreter" uuid="26c41006-651b-45a4-aced-69694c3d5234" moduleVersion="0">
+<solution name="org.iets3.opensource.interpreterExecutor" uuid="26c41006-651b-45a4-aced-69694c3d5234" moduleVersion="0">
   <models>
     <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet compile="mps" classes="mps" ext="no" type="java">
+    <facet compile="mps" classes="mps" ext="yes" type="java">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -81,7 +81,7 @@
     <module reference="d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)" version="0" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
     <module reference="bacb5ddc-bd96-4d54-a76e-63aeb598f7fb(org.iets3.core.junit.interpreter.run.configuration)" version="0" />
-    <module reference="26c41006-651b-45a4-aced-69694c3d5234(org.iets3.opensource.TestExecutorByInterpreter)" version="0" />
+    <module reference="26c41006-651b-45a4-aced-69694c3d5234(org.iets3.opensource.interpreterExecutor)" version="0" />
     <module reference="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" version="0" />
   </dependencyVersions>
 </solution>
