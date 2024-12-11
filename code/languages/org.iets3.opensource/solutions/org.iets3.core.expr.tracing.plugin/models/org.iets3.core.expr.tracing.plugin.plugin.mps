@@ -4216,6 +4216,11 @@
     <node concept="1QGGSu" id="4ciuUydNRXF" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/traceShowAll.png" />
     </node>
+    <node concept="1DS2jV" id="4EP4zG6Xi0S" role="1NuT2Z">
+      <property role="TrG5h" value="frame" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.FRAME" resolve="FRAME" />
+      <node concept="1oajcY" id="4EP4zG6Xi0T" role="1oa70y" />
+    </node>
   </node>
   <node concept="sE7Ow" id="2JfTTG8itTT">
     <property role="TrG5h" value="selectNextTraceNodeAndInspectSource" />
@@ -4320,6 +4325,11 @@
     </node>
     <node concept="1QGGSu" id="2JfTTG8itUG" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/traceShowOne.png" />
+    </node>
+    <node concept="1DS2jV" id="4EP4zG6XiRL" role="1NuT2Z">
+      <property role="TrG5h" value="frame" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.FRAME" resolve="FRAME" />
+      <node concept="1oajcY" id="4EP4zG6XiRM" role="1oa70y" />
     </node>
   </node>
   <node concept="sE7Ow" id="4yQfyMjrpAh">
@@ -4428,6 +4438,11 @@
     </node>
     <node concept="1QGGSu" id="4ciuUydNRCn" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/traceShowOne.png" />
+    </node>
+    <node concept="1DS2jV" id="4EP4zG6Xkaw" role="1NuT2Z">
+      <property role="TrG5h" value="frame" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.FRAME" resolve="FRAME" />
+      <node concept="1oajcY" id="4EP4zG6Xkax" role="1oa70y" />
     </node>
   </node>
   <node concept="sE7Ow" id="5ipapt3lw0T">

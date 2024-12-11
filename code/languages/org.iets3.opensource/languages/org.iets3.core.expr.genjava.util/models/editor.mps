@@ -17,7 +17,6 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -41,7 +40,7 @@
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
-      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
@@ -104,7 +103,6 @@
   <node concept="24kQdi" id="2FeCPocbJ5d">
     <ref role="1XX52x" to="5pht:2FeCPocbIIQ" resolve="KFMaybeNot" />
     <node concept="3EZMnI" id="2FeCPocbJ8s" role="2wV5jI">
-      <node concept="2iRfu4" id="2FeCPocbJ8t" role="2iSdaV" />
       <node concept="3F0ifn" id="2FeCPocbJ8n" role="3EZMnx">
         <property role="3F0ifm" value="maybenot(" />
       </node>
@@ -123,6 +121,7 @@
       <node concept="3F0ifn" id="2FeCPocbJlL" role="3EZMnx">
         <property role="3F0ifm" value=")" />
       </node>
+      <node concept="l2Vlx" id="1ASK_HedIt3" role="2iSdaV" />
     </node>
   </node>
 </model>
