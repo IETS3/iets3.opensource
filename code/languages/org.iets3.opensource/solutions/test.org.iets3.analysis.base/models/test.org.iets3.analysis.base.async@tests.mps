@@ -28,6 +28,7 @@
       <concept id="1225469856668" name="jetbrains.mps.lang.test.structure.ModelExpression" flags="nn" index="1jGwE1" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -298,6 +299,7 @@
   <node concept="1lH9Xt" id="7wEqFvbNs9F">
     <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <property role="TrG5h" value="TestCancellation" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="5IHOL7Z1RAX" role="1SL9yI">
       <property role="TrG5h" value="checkForCancelledTasks" />
       <node concept="3cqZAl" id="5IHOL7Z1RAY" role="3clF45" />
@@ -976,6 +978,7 @@
   <node concept="1lH9Xt" id="7Ne8N_$sCzc">
     <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <property role="TrG5h" value="TestAsyncMultiThreads" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="7Ne8N_$sCzj" role="1SL9yI">
       <property role="TrG5h" value="multiThread" />
       <node concept="3cqZAl" id="7Ne8N_$sCzk" role="3clF45" />
@@ -1644,6 +1647,7 @@
   <node concept="1lH9Xt" id="cGZnm4NRlz">
     <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <property role="TrG5h" value="TestAsyncFromSingleThread" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="cGZnm4NRl$" role="1SL9yI">
       <property role="TrG5h" value="singleThread" />
       <node concept="3cqZAl" id="cGZnm4NRl_" role="3clF45" />

@@ -45,6 +45,7 @@
     <language slang="l:b4d28e19-7d2d-47e9-943e-3a41f97a0e52:com.mbeddr.mpsutil.plantuml.node" version="0" />
     <language slang="l:3eada220-3310-4fd3-b794-ff924add7d8a:com.mbeddr.mpsutil.smodule" version="0" />
     <language slang="l:3819ba36-98f4-49ac-b779-34f3a458c09b:com.mbeddr.mpsutil.varscope" version="0" />
+    <language slang="l:1919c723-b60b-4592-9318-9ce96d91da44:de.itemis.mps.editor.celllayout" version="0" />
     <language slang="l:e359e0a2-368a-4c40-ae2a-e5a09f9cfd58:de.itemis.mps.editor.math.notations" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:52733268-be24-4f5f-ab84-a73b7c0c03b0:de.slisson.mps.richtext.customcell" version="0" />
