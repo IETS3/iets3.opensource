@@ -19897,6 +19897,94 @@
             </node>
           </node>
         </node>
+        <node concept="3CkkTf" id="6fcFGANR5t9" role="_iOnC">
+          <property role="TrG5h" value="inferredTypes" />
+          <node concept="3CkmCn" id="6fcFGANR5tb" role="3Ckg67">
+            <property role="TrG5h" value="ints" />
+            <node concept="7CXmI" id="6fcFGANXA3V" role="lGtFl">
+              <node concept="30Omv" id="6fcFGANXA9x" role="7EUXB">
+                <node concept="mLuIC" id="6fcFGANXAf8" role="31d$z" />
+              </node>
+            </node>
+          </node>
+          <node concept="3CkmCn" id="6fcFGANR5td" role="3Ckg67">
+            <property role="TrG5h" value="reals" />
+            <node concept="7CXmI" id="6fcFGANXAgS" role="lGtFl">
+              <node concept="30Omv" id="6fcFGANXA_P" role="7EUXB">
+                <node concept="mLuIC" id="6fcFGANXAGK" role="31d$z">
+                  <node concept="2gteS_" id="6fcFGANXAJ9" role="2gteVg">
+                    <property role="2gteVv" value="inf" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3CkeKC" id="6fcFGANR5tg" role="3CkFDl">
+            <property role="TrG5h" value="keyA" />
+            <node concept="3CkgUp" id="6fcFGANR5th" role="3Ckg_R">
+              <ref role="3Ckhev" node="6fcFGANR5tb" resolve="val1" />
+              <node concept="30bXRB" id="6fcFGANR5te" role="3CkirI">
+                <property role="30bXRw" value="1" />
+              </node>
+            </node>
+            <node concept="3CkgUp" id="6fcFGANR5ti" role="3Ckg_R">
+              <ref role="3Ckhev" node="6fcFGANR5td" resolve="val2" />
+              <node concept="30bXRB" id="6fcFGANR5tf" role="3CkirI">
+                <property role="30bXRw" value="2.2" />
+              </node>
+            </node>
+            <node concept="3CkgUp" id="6fcFGANR5Dy" role="3Ckg_R">
+              <ref role="3Ckhev" node="6fcFGANR5C_" resolve="strings" />
+              <node concept="30bdrP" id="6fcFGANR5Dx" role="3CkirI">
+                <property role="30bdrQ" value="a" />
+              </node>
+            </node>
+          </node>
+          <node concept="3CkeKC" id="6fcFGANR5tl" role="3CkFDl">
+            <property role="TrG5h" value="keyB" />
+            <node concept="3CkgUp" id="6fcFGANR5tm" role="3Ckg_R">
+              <ref role="3Ckhev" node="6fcFGANR5tb" resolve="val1" />
+              <node concept="30bXRB" id="6fcFGANR5tj" role="3CkirI">
+                <property role="30bXRw" value="3" />
+              </node>
+            </node>
+            <node concept="3CkgUp" id="6fcFGANR5tn" role="3Ckg_R">
+              <ref role="3Ckhev" node="6fcFGANR5td" resolve="val2" />
+              <node concept="30bXRB" id="6fcFGANR5tk" role="3CkirI">
+                <property role="30bXRw" value="3" />
+              </node>
+            </node>
+            <node concept="3CkgUp" id="6fcFGANR5Em" role="3Ckg_R">
+              <ref role="3Ckhev" node="6fcFGANR5C_" resolve="strings" />
+              <node concept="30bdrP" id="6fcFGANR5El" role="3CkirI">
+                <property role="30bdrQ" value="b" />
+              </node>
+            </node>
+          </node>
+          <node concept="3CkmCn" id="6fcFGANR5C_" role="3Ckg67">
+            <property role="TrG5h" value="strings" />
+            <node concept="7CXmI" id="6fcFGANXAWO" role="lGtFl">
+              <node concept="30Omv" id="6fcFGANXB1Z" role="7EUXB">
+                <node concept="30bdrU" id="6fcFGANXB8s" role="31d$z" />
+              </node>
+            </node>
+          </node>
+          <node concept="3CkeKC" id="6fcFGANSdZC" role="3CkFDl">
+            <property role="TrG5h" value="keyC" />
+            <node concept="3CkgUp" id="6fcFGANSebm" role="3Ckg_R">
+              <ref role="3Ckhev" node="6fcFGANR5tb" resolve="ints" />
+              <node concept="30bXRB" id="6fcFGANSebl" role="3CkirI">
+                <property role="30bXRw" value="5" />
+              </node>
+            </node>
+            <node concept="3CkgUp" id="6fcFGANSegh" role="3Ckg_R">
+              <ref role="3Ckhev" node="6fcFGANR5td" resolve="reals" />
+              <node concept="30bXRB" id="6fcFGANSegg" role="3CkirI">
+                <property role="30bXRw" value="0.1" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
