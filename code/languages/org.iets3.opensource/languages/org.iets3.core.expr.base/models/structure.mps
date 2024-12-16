@@ -2320,5 +2320,16 @@
     <property role="EcuMT" value="3723661587905969056" />
     <property role="TrG5h" value="IAssignable" />
   </node>
+  <node concept="PlHQZ" id="3G_qVqIw4zo">
+    <property role="EcuMT" value="4261931054731905240" />
+    <property role="TrG5h" value="IContainExpressionParam" />
+    <node concept="1TJgyj" id="3G_qVqIw4zp" role="1TKVEi">
+      <property role="IQ2ns" value="4261931054731905241" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
