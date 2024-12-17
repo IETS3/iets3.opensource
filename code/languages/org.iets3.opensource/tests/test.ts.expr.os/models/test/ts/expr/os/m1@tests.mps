@@ -150,9 +150,6 @@
         <child id="8872269265520081294" name="elements" index="2TO1xH" />
       </concept>
       <concept id="2554784455264825928" name="org.iets3.core.expr.collections.structure.FlattenOp" flags="ng" index="YMTy_" />
-      <concept id="5291952221900249273" name="org.iets3.core.expr.collections.structure.IListOneArgOp" flags="ngI" index="1bLd8V">
-        <child id="527291771311128762" name="arg" index="26Ft6C" />
-      </concept>
       <concept id="7554398283340640412" name="org.iets3.core.expr.collections.structure.MapOp" flags="ng" index="3iw6QE" />
       <concept id="7554398283340715406" name="org.iets3.core.expr.collections.structure.WhereOp" flags="ng" index="3izCyS" />
       <concept id="7554398283340004826" name="org.iets3.core.expr.collections.structure.AtOp" flags="ng" index="3iAU3G" />
@@ -3323,7 +3320,7 @@
           <property role="TrG5h" value="invalidListAdding" />
           <node concept="1QScDb" id="2ufoZQJ1Y8E" role="2zPyp_">
             <node concept="2iGZtc" id="2ufoZQJ1Y8F" role="1QScD9">
-              <node concept="30bXRB" id="2ufoZQJ1Y8G" role="26Ft6C">
+              <node concept="30bXRB" id="2ufoZQJ1Y8G" role="2lDidJ">
                 <property role="30bXRw" value="4" />
                 <node concept="7CXmI" id="2ufoZQJ5SMF" role="lGtFl">
                   <node concept="1TM$A" id="2ufoZQJ5SMG" role="7EUXB" />
@@ -3396,7 +3393,7 @@
           <property role="TrG5h" value="restrictedList1With" />
           <node concept="1QScDb" id="7DfYVnkkeDt" role="2zPyp_">
             <node concept="2iGZtc" id="7DfYVnkkeDu" role="1QScD9">
-              <node concept="30bXRB" id="7DfYVnkkeDv" role="26Ft6C">
+              <node concept="30bXRB" id="7DfYVnkkeDv" role="2lDidJ">
                 <property role="30bXRw" value="7" />
                 <node concept="7CXmI" id="7DfYVnkkeDw" role="lGtFl">
                   <node concept="1TM$A" id="7DfYVnkkeDx" role="7EUXB" />

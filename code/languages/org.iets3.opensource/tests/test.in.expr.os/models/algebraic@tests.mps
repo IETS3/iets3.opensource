@@ -24,9 +24,6 @@
         <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
       </concept>
       <concept id="8872269265511400449" name="org.iets3.core.expr.collections.structure.DistinctOp" flags="ng" index="2Tjeny" />
-      <concept id="5291952221900249273" name="org.iets3.core.expr.collections.structure.IListOneArgOp" flags="ngI" index="1bLd8V">
-        <child id="527291771311128762" name="arg" index="26Ft6C" />
-      </concept>
       <concept id="7554398283340640412" name="org.iets3.core.expr.collections.structure.MapOp" flags="ng" index="3iw6QE" />
       <concept id="7554398283340020764" name="org.iets3.core.expr.collections.structure.OneArgCollectionOp" flags="ng" index="3iAY4E">
         <child id="7554398283340020765" name="arg" index="3iAY4F" />
@@ -2507,7 +2504,7 @@
               <node concept="3sPC8h" id="28$LOSAaMPV" role="1QScD9">
                 <node concept="1QScDb" id="28$LOSAaMPW" role="3sPC8l">
                   <node concept="2iGZtc" id="28$LOSAaMPX" role="1QScD9">
-                    <node concept="2S399m" id="28$LOSAaMPY" role="26Ft6C">
+                    <node concept="2S399m" id="28$LOSAaMPY" role="2lDidJ">
                       <node concept="2Ss9cW" id="28$LOSAaMPZ" role="2S399n">
                         <ref role="2Ss9cX" node="28$LOSAaC_i" resolve="WorkMonth" />
                       </node>
