@@ -208,9 +208,7 @@
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
-      <concept id="8237981399438528802" name="org.iets3.core.expr.lambda.structure.AssertExpr" flags="ng" index="3hB25d">
-        <child id="8237981399438528812" name="expr" index="3hB253" />
-      </concept>
+      <concept id="8237981399438528802" name="org.iets3.core.expr.lambda.structure.AssertExpr" flags="ng" index="3hB25d" />
       <concept id="7554398283340370581" name="org.iets3.core.expr.lambda.structure.LambdaArgRef" flags="ng" index="3ix4Yz">
         <reference id="7554398283340370582" name="arg" index="3ix4Yw" />
       </concept>
@@ -956,7 +954,7 @@
     <node concept="1aga60" id="6LLJO$x4kqh" role="_iOnB">
       <property role="TrG5h" value="f1" />
       <node concept="3hB25d" id="6LLJO$xx$3D" role="1ahQXP">
-        <node concept="2vmpn$" id="6LLJO$xx$4d" role="3hB253" />
+        <node concept="2vmpn$" id="6LLJO$xx$4d" role="2lDidJ" />
       </node>
     </node>
     <node concept="1aga60" id="6LLJO$x4kCS" role="_iOnB">
