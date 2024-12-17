@@ -173,9 +173,7 @@
       </concept>
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
       <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt" />
-      <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
-        <child id="5115872837157187954" name="expr" index="30bsDf" />
-      </concept>
+      <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy" />
       <concept id="5115872837156855227" name="org.iets3.core.expr.base.structure.UnaryMinusExpression" flags="ng" index="30cIq6" />
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
       <concept id="5115872837156687889" name="org.iets3.core.expr.base.structure.GreaterEqualsExpression" flags="ng" index="30d6GG" />
@@ -664,7 +662,7 @@
             <ref role="1WbbFS" node="6c5DzbxTGx4" resolve="list3" />
           </node>
           <node concept="30bsCy" id="620LAS5PwT5" role="2lDidJ">
-            <node concept="1QScDb" id="620LAS5PwSS" role="30bsDf">
+            <node concept="1QScDb" id="620LAS5PwSS" role="2lDidJ">
               <node concept="2iGZtc" id="620LAS5PwST" role="1QScD9">
                 <node concept="30bXRB" id="620LAS5PwSU" role="26Ft6C">
                   <property role="30bXRw" value="4" />
