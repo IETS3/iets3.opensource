@@ -46,6 +46,9 @@
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="3829047245309363370" name="org.iets3.core.expr.base.structure.OptionOrExpression" flags="ng" index="21Ysq4" />
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
         <child id="606861080870797310" name="expr" index="pf3We" />
       </concept>
@@ -58,9 +61,6 @@
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
         <child id="867786408877811045" name="items" index="I61D1" />
-      </concept>
-      <concept id="867786408877811036" name="org.iets3.core.expr.base.structure.ContractItem" flags="ng" index="I61DS">
-        <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
       <concept id="867786408877811180" name="org.iets3.core.expr.base.structure.Postcondition" flags="ng" index="I61F8" />
       <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
@@ -3408,7 +3408,7 @@
       <node concept="mLuIC" id="7u9eNXjF6yU" role="1WbbD4" />
       <node concept="I61D5" id="7u9eNXjF6yV" role="I61D6">
         <node concept="InuEK" id="7u9eNXjF6yW" role="I61D1">
-          <node concept="1QScDb" id="7u9eNXjF6yX" role="I61DU">
+          <node concept="1QScDb" id="7u9eNXjF6yX" role="2lDidJ">
             <node concept="QCKKy" id="7u9eNXjF6yY" role="30czhm" />
             <node concept="1kPOiQ" id="7u9eNXjF6yZ" role="1QScD9">
               <node concept="30bXRB" id="7u9eNXjF6z0" role="1kPOiZ">
@@ -4141,7 +4141,7 @@
       <property role="TrG5h" value="dontGiveMeAnInt" />
       <node concept="I61D5" id="mhgVww5BqI" role="I61D6">
         <node concept="I61F8" id="mhgVww5CoD" role="I61D1">
-          <node concept="30cPrO" id="mhgVww5CRp" role="I61DU">
+          <node concept="30cPrO" id="mhgVww5CRp" role="2lDidJ">
             <node concept="30bXRB" id="mhgVww5CVU" role="30dEs_">
               <property role="30bXRw" value="20" />
             </node>

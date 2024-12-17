@@ -33,6 +33,9 @@
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
       </concept>
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="5974679004769488538" name="org.iets3.core.expr.base.structure.SuccessExpression" flags="ng" index="sFPLW">
         <child id="5974679004769488545" name="expr" index="sFPL7" />
       </concept>
@@ -51,9 +54,6 @@
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
         <child id="867786408877811045" name="items" index="I61D1" />
-      </concept>
-      <concept id="867786408877811036" name="org.iets3.core.expr.base.structure.ContractItem" flags="ng" index="I61DS">
-        <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
       <concept id="867786408877811180" name="org.iets3.core.expr.base.structure.Postcondition" flags="ng" index="I61F8" />
       <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
@@ -262,7 +262,7 @@
       <property role="TrG5h" value="tryComplete" />
       <node concept="I61D5" id="3u_sHMe4U_l" role="I61D6">
         <node concept="I61F8" id="3u_sHMe4YHW" role="I61D1">
-          <node concept="30cPrO" id="3u_sHMe51vV" role="I61DU">
+          <node concept="30cPrO" id="3u_sHMe51vV" role="2lDidJ">
             <node concept="Ic2ui" id="3u_sHMe4YIz" role="30dEsF" />
             <node concept="2fGnzi" id="3u_sHMdW_h8" role="30dEs_">
               <node concept="2fGnzd" id="3u_sHMdW_ha" role="2fGnxs">
@@ -507,7 +507,7 @@
       <property role="TrG5h" value="attempParamFunc" />
       <node concept="I61D5" id="mhgVwxcBji" role="I61D6">
         <node concept="I61F8" id="mhgVwxcCg5" role="I61D1">
-          <node concept="30cPrO" id="mhgVwxcCQB" role="I61DU">
+          <node concept="30cPrO" id="mhgVwxcCQB" role="2lDidJ">
             <node concept="Ic2ui" id="mhgVwxcCgv" role="30dEsF" />
             <node concept="2Yz4FG" id="mhgVwxcD9E" role="30dEs_">
               <node concept="2YtBXV" id="mhgVwxcD9F" role="2YtBNa">

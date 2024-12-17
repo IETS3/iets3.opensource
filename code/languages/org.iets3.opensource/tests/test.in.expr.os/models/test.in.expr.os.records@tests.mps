@@ -69,6 +69,9 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="7782108600712067692" name="org.iets3.core.expr.base.structure.DeRefTarget" flags="ng" index="n2Y3A" />
       <concept id="7782108600709141067" name="org.iets3.core.expr.base.structure.MakeRefTarget" flags="ng" index="ne4z1" />
       <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
@@ -80,9 +83,6 @@
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
         <child id="867786408877811045" name="items" index="I61D1" />
-      </concept>
-      <concept id="867786408877811036" name="org.iets3.core.expr.base.structure.ContractItem" flags="ng" index="I61DS">
-        <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
       <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
         <child id="867786408877811042" name="contract" index="I61D6" />
@@ -881,7 +881,7 @@
       </node>
       <node concept="I61D5" id="1QYdL39GftW" role="I61D6">
         <node concept="InuEK" id="1QYdL39Gfub" role="I61D1">
-          <node concept="30d7iD" id="1QYdL39Gfup" role="I61DU">
+          <node concept="30d7iD" id="1QYdL39Gfup" role="2lDidJ">
             <node concept="XrbUJ" id="1QYdL39GfuV" role="30dEs_">
               <ref role="XrbUP" node="1QYdL39GfsY" resolve="from" />
             </node>
@@ -1079,7 +1079,7 @@
         <node concept="mLuIC" id="5YygIlbp1k1" role="2S399n" />
         <node concept="I61D5" id="5YygIlbp1Av" role="I61D6">
           <node concept="InuEK" id="5YygIlbp1B7" role="I61D1">
-            <node concept="30d7iD" id="7baKnR5qShS" role="I61DU">
+            <node concept="30d7iD" id="7baKnR5qShS" role="2lDidJ">
               <node concept="XrbUJ" id="5YygIlbp1B6" role="30dEsF">
                 <ref role="XrbUP" node="5YygIlbp1jM" resolve="x" />
               </node>
@@ -1096,7 +1096,7 @@
       </node>
       <node concept="I61D5" id="5YygIlbp1_b" role="I61D6">
         <node concept="InuEK" id="5YygIlbp1_l" role="I61D1">
-          <node concept="30d7iD" id="5YygIlbp1_G" role="I61DU">
+          <node concept="30d7iD" id="5YygIlbp1_G" role="2lDidJ">
             <node concept="XrbUJ" id="5YygIlbp1_L" role="30dEs_">
               <ref role="XrbUP" node="5YygIlbp1kq" resolve="y" />
             </node>

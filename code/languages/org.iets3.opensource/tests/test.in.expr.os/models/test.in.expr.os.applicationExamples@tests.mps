@@ -24,6 +24,9 @@
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
       </concept>
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -32,9 +35,6 @@
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
         <child id="867786408877811045" name="items" index="I61D1" />
-      </concept>
-      <concept id="867786408877811036" name="org.iets3.core.expr.base.structure.ContractItem" flags="ng" index="I61DS">
-        <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
       <concept id="867786408877811180" name="org.iets3.core.expr.base.structure.Postcondition" flags="ng" index="I61F8" />
       <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
@@ -237,7 +237,7 @@
       <property role="TrG5h" value="FtoC" />
       <node concept="I61D5" id="78zh7PnstBq" role="I61D6">
         <node concept="I61F8" id="78zh7Pnsu7M" role="I61D1">
-          <node concept="30cPrO" id="78zh7PnsuUz" role="I61DU">
+          <node concept="30cPrO" id="78zh7PnsuUz" role="2lDidJ">
             <node concept="Ic2ui" id="78zh7PnsuaU" role="30dEsF" />
             <node concept="3zyZNN" id="78zh7Pnsvag" role="30dEs_">
               <node concept="1MaffS" id="78zh7Pnsvai" role="3zyZNH">

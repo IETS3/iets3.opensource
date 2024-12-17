@@ -33,6 +33,9 @@
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
       </concept>
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
         <child id="606861080870797310" name="expr" index="pf3We" />
       </concept>
@@ -41,9 +44,6 @@
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
         <child id="867786408877811045" name="items" index="I61D1" />
-      </concept>
-      <concept id="867786408877811036" name="org.iets3.core.expr.base.structure.ContractItem" flags="ng" index="I61DS">
-        <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
       <concept id="867786408877811180" name="org.iets3.core.expr.base.structure.Postcondition" flags="ng" index="I61F8" />
       <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
@@ -164,7 +164,7 @@
       <property role="TrG5h" value="alt1ParamA" />
       <node concept="I61D5" id="4cBRAFdmnic" role="I61D6">
         <node concept="I61F8" id="4cBRAFdmnFB" role="I61D1">
-          <node concept="1DgDcz" id="4cBRAFdmnYM" role="I61DU">
+          <node concept="1DgDcz" id="4cBRAFdmnYM" role="2lDidJ">
             <node concept="Ic2ui" id="4cBRAFdmo4r" role="30dEs_" />
             <node concept="30bsCy" id="4cBRAFdmnFX" role="30dEsF">
               <node concept="30cPrO" id="4cBRAFdmnIx" role="30bsDf">
@@ -212,7 +212,7 @@
       <property role="TrG5h" value="alt1ParamB" />
       <node concept="I61D5" id="4cBRAFdmobc" role="I61D6">
         <node concept="I61F8" id="4cBRAFdmozV" role="I61D1">
-          <node concept="1DgDcz" id="4cBRAFdmoMI" role="I61DU">
+          <node concept="1DgDcz" id="4cBRAFdmoMI" role="2lDidJ">
             <node concept="Ic2ui" id="4cBRAFdmoQC" role="30dEs_" />
             <node concept="30bsCy" id="4cBRAFdmo$f" role="30dEsF">
               <node concept="30cPrO" id="4cBRAFdmo_V" role="30bsDf">
@@ -285,7 +285,7 @@
       <property role="TrG5h" value="alt2ParamA" />
       <node concept="I61D5" id="78zh7PnpKao" role="I61D6">
         <node concept="I61F8" id="78zh7PnpKE5" role="I61D1">
-          <node concept="30cPrO" id="78zh7PnpFrh" role="I61DU">
+          <node concept="30cPrO" id="78zh7PnpFrh" role="2lDidJ">
             <node concept="Ic2ui" id="78zh7PnpF3p" role="30dEsF" />
             <node concept="2fGnzi" id="78zh7PnpFB$" role="30dEs_">
               <node concept="2fGnzd" id="78zh7PnpFB_" role="2fGnxs">
@@ -359,7 +359,7 @@
       <property role="TrG5h" value="alt2ParamB" />
       <node concept="I61D5" id="4cBRAFdmqpG" role="I61D6">
         <node concept="I61F8" id="4cBRAFdmqO2" role="I61D1">
-          <node concept="30cPrO" id="4cBRAFdmrWH" role="I61DU">
+          <node concept="30cPrO" id="4cBRAFdmrWH" role="2lDidJ">
             <node concept="39w5ZF" id="4cBRAFdmrZT" role="30dEs_">
               <node concept="pf3Wd" id="4cBRAFdmrZU" role="pf3W8">
                 <node concept="30bXRB" id="4cBRAFdmsjg" role="pf3We">

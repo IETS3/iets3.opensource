@@ -130,6 +130,9 @@
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
       </concept>
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="411710798114972602" name="org.iets3.core.expr.base.structure.FailExpr" flags="ng" index="qoPdK">
         <child id="411710798114972606" name="message" index="qoPdO" />
       </concept>
@@ -141,7 +144,6 @@
       </concept>
       <concept id="867786408877811036" name="org.iets3.core.expr.base.structure.ContractItem" flags="ng" index="I61DS">
         <child id="6541611649051509994" name="err" index="2izrR8" />
-        <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
       <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
         <child id="867786408877811042" name="contract" index="I61D6" />
@@ -844,7 +846,7 @@
               <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
             </node>
           </node>
-          <node concept="30cPrO" id="4AahbtV9ESH" role="I61DU">
+          <node concept="30cPrO" id="4AahbtV9ESH" role="2lDidJ">
             <node concept="XrbUJ" id="4AahbtV9ETe" role="30dEs_">
               <ref role="XrbUP" node="4AahbtV9ERL" resolve="y" />
             </node>
@@ -870,7 +872,7 @@
             <node concept="30bdrP" id="4AahbtVkiIf" role="2izrR8">
               <property role="30bdrQ" value="y kleiner 100" />
             </node>
-            <node concept="30d6GJ" id="4AahbtVkiEq" role="I61DU">
+            <node concept="30d6GJ" id="4AahbtVkiEq" role="2lDidJ">
               <node concept="30bXRB" id="4AahbtVkiEx" role="30dEs_">
                 <property role="30bXRw" value="100" />
               </node>
@@ -897,7 +899,7 @@
               <ref role="1WPpZZ" node="4AahbtVRLs6" resolve="InlineMessages" />
             </node>
           </node>
-          <node concept="30cPrO" id="4AahbtVbbGw" role="I61DU">
+          <node concept="30cPrO" id="4AahbtVbbGw" role="2lDidJ">
             <node concept="XrbUJ" id="4AahbtVbbGx" role="30dEs_">
               <ref role="XrbUP" node="4AahbtVbbGp" resolve="y" />
             </node>
