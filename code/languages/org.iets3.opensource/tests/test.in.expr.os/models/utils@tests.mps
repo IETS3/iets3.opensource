@@ -111,9 +111,7 @@
         <child id="8435714728544598572" name="value" index="2ovXvP" />
       </concept>
       <concept id="8435714728543612222" name="org.iets3.core.expr.base.structure.AlwaysValue" flags="ng" index="2ojG3B" />
-      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
-        <child id="606861080870797310" name="expr" index="pf3We" />
-      </concept>
+      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd" />
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -3455,7 +3453,7 @@
           <node concept="30dDZf" id="44yGPKl4leZ" role="30dEs_">
             <node concept="39w5ZF" id="44yGPKl4lfz" role="30dEs_">
               <node concept="pf3Wd" id="44yGPKl4lf$" role="pf3W8">
-                <node concept="30bdrP" id="44yGPKl9oc8" role="pf3We">
+                <node concept="30bdrP" id="44yGPKl9oc8" role="2lDidJ">
                   <property role="30bdrQ" value="ELSE" />
                 </node>
               </node>

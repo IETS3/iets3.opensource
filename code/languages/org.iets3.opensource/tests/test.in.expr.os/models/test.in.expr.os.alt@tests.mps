@@ -36,9 +36,7 @@
       <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
-      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
-        <child id="606861080870797310" name="expr" index="pf3We" />
-      </concept>
+      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd" />
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -359,7 +357,7 @@
           <node concept="30cPrO" id="4cBRAFdmrWH" role="2lDidJ">
             <node concept="39w5ZF" id="4cBRAFdmrZT" role="30dEs_">
               <node concept="pf3Wd" id="4cBRAFdmrZU" role="pf3W8">
-                <node concept="30bXRB" id="4cBRAFdmsjg" role="pf3We">
+                <node concept="30bXRB" id="4cBRAFdmsjg" role="2lDidJ">
                   <property role="30bXRw" value="2" />
                 </node>
               </node>

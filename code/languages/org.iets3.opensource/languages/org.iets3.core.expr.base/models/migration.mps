@@ -468,7 +468,7 @@
                 <ref role="3cqZAo" node="4RIBqpW0P9j" resolve="elseSection" />
               </node>
               <node concept="3TrEf2" id="4RIBqpW0P9x" role="2OqNvi">
-                <ref role="3Tt5mk" to="hm2y:xG0f0hk3ZY" resolve="expr" />
+                <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
               </node>
             </node>
           </node>
@@ -566,7 +566,7 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="4RIBqpW1mPu" role="2OqNvi">
-                      <ref role="3Tt5mk" to="hm2y:xG0f0hk3ZY" resolve="expr" />
+                      <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
                     </node>
                   </node>
                 </node>
@@ -584,7 +584,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="4RIBqpW1l98" role="2OqNvi">
-                <ref role="3Tt5mk" to="hm2y:xG0f0hk3ZY" resolve="expr" />
+                <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
               </node>
             </node>
             <node concept="1mIQ4w" id="4RIBqpW1iff" role="2OqNvi">
@@ -14562,6 +14562,90 @@
             <property role="2x4o5l" value="true" />
             <property role="2x4n5l" value="wdoogxd8gnvc" />
             <node concept="2V$Bhx" id="7xcRpYLQhTM" role="2x4n5j">
+              <property role="2V$B1T" value="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.base" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="W$Crc" id="7xcRpYLWD7D">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="18" />
+    <property role="TrG5h" value="Update References: expr-&gt;expr" />
+    <node concept="1w76tK" id="7xcRpYLWD7E" role="1w76sc">
+      <node concept="1w76tN" id="7xcRpYLWD7F" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="7xcRpYLWD7G" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="7xcRpYLWD7H" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="7xcRpYLWD7I" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="7xcRpYLWD7J" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="7xcRpYLWD7L" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="7xcRpYLWD7C" role="hSBgu">
+        <property role="2pBcoG" value="606861080870797310" />
+        <property role="2pBcow" value="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+        <property role="2pBc3U" value="expr" />
+      </node>
+      <node concept="2pBcaW" id="7xcRpYLWD7K" role="hSBgs">
+        <property role="2pBcoG" value="4261931054731905241" />
+        <property role="2pBcow" value="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+        <property role="2pBc3U" value="expr" />
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="7xcRpYLWD7M">
+    <property role="Z5qvQ" value="20" />
+    <property role="TrG5h" value="Migrate_MoveLinkUp_20" />
+    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <node concept="Z4OXk" id="7xcRpYLWD7X" role="Z5rET">
+      <node concept="2pBcaW" id="7xcRpYLWD7V" role="Z5P1v">
+        <property role="2pBcoG" value="606861080870797310" />
+        <property role="2pBcow" value="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+        <property role="2pBc3U" value="expr_old" />
+      </node>
+      <node concept="2pBcaW" id="7xcRpYLWD7W" role="Z5P1t">
+        <property role="2pBcoG" value="4261931054731905241" />
+        <property role="2pBcow" value="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+        <property role="2pBc3U" value="expr" />
+      </node>
+      <node concept="7a1rN" id="7xcRpYLWD7U" role="7agGg">
+        <node concept="HUanS" id="7xcRpYLWD7O" role="HTpAE">
+          <property role="HUanP" value="expr_old" />
+          <property role="HUanQ" value="4lzearu5ov0e" />
+          <node concept="2x4n5u" id="7xcRpYLWD7P" role="HUanR">
+            <property role="2x4mPI" value="IfElseSection" />
+            <property role="2x4n5l" value="4lzearu5ov0d" />
+            <node concept="2V$Bhx" id="7xcRpYLWD7Q" role="2x4n5j">
+              <property role="2V$B1T" value="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.base" />
+            </node>
+          </node>
+        </node>
+        <node concept="HUanS" id="7xcRpYLWD7R" role="HTpAD">
+          <property role="HUanP" value="expr" />
+          <property role="HUanQ" value="wdoogxd8gnvd" />
+          <node concept="2x4n5u" id="7xcRpYLWD7S" role="HUanR">
+            <property role="2x4mPI" value="IContainExpressionParam" />
+            <property role="2x4o5l" value="true" />
+            <property role="2x4n5l" value="wdoogxd8gnvc" />
+            <node concept="2V$Bhx" id="7xcRpYLWD7T" role="2x4n5j">
               <property role="2V$B1T" value="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" />
               <property role="2V$B1Q" value="org.iets3.core.expr.base" />
             </node>
