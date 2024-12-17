@@ -16,6 +16,9 @@
     <import index="4o98" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.platform(MPS.Core/)" />
     <import index="sfqd" ref="r:63a75970-913d-4a7b-99e2-8ca72ff6f509(jetbrains.mps.baseLanguage.unitTest.execution.client)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="mmaq" ref="f647e48e-4568-4f4c-b48a-1546492c6a2e/java:org.jdom(org.jdom/)" />
+    <import index="rzt1" ref="r:128708be-e37c-484b-b372-892904c802d9(jetbrains.mps.tool.builder.unittest)" />
+    <import index="se19" ref="f647e48e-4568-4f4c-b48a-1546492c6a2e/java:org.jdom.output(org.jdom/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -40,6 +43,7 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -64,6 +68,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -196,6 +201,16 @@
   <node concept="312cEu" id="4u2ErA3hWZB">
     <property role="TrG5h" value="MainClass" />
     <node concept="2tJIrI" id="4u2ErA3icD4" role="jymVt" />
+    <node concept="Wx3nA" id="7Z6s7w42Qyk" role="jymVt">
+      <property role="TrG5h" value="myReportsFile" />
+      <node concept="17QB3L" id="3PMiOKDWLJX" role="1tU5fm" />
+      <node concept="3Tm6S6" id="3PMiOKDWJuL" role="1B3o_S" />
+      <node concept="Xl_RD" id="3PMiOKDWNJV" role="33vP2m">
+        <property role="Xl_RC" value="/home/mgronover/Projects/Datev/iets3.opensource/build/TEST-InterpreterTestSuites.xml" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7Z6s7w42B7N" role="jymVt" />
+    <node concept="2tJIrI" id="7Z6s7w42A0l" role="jymVt" />
     <node concept="2YIFZL" id="7OQaAJRI6Fx" role="jymVt">
       <property role="TrG5h" value="mpsMain" />
       <node concept="3clFbS" id="7OQaAJRI6F$" role="3clF47">
@@ -537,6 +552,22 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="6Bg9Ew20FmU" role="3cqZAp">
+          <node concept="3cpWsn" id="6Bg9Ew20FmV" role="3cpWs9">
+            <property role="TrG5h" value="reporter" />
+            <node concept="3uibUv" id="6Bg9Ew20Bys" role="1tU5fm">
+              <ref role="3uigEE" to="d6jk:7Z6s7w3Pe1o" resolve="InterpreterXMLTestReporter" />
+            </node>
+            <node concept="2ShNRf" id="6Bg9Ew20FmW" role="33vP2m">
+              <node concept="1pGfFk" id="6Bg9Ew20FmX" role="2ShVmc">
+                <ref role="37wK5l" to="d6jk:2doG_VG7M0C" resolve="InterpreterXMLTestReporter" />
+                <node concept="Xl_RD" id="VT_taQoykn" role="37wK5m">
+                  <property role="Xl_RC" value="Interpreter Tests" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4giJe8qrJcd" role="3cqZAp">
           <node concept="3cpWsn" id="4giJe8qrJce" role="3cpWs9">
             <property role="TrG5h" value="executor" />
@@ -559,6 +590,9 @@
                 <node concept="3clFbT" id="4giJe8qrJcl" role="37wK5m">
                   <property role="3clFbU" value="true" />
                 </node>
+                <node concept="37vLTw" id="7Z6s7w45dN5" role="37wK5m">
+                  <ref role="3cqZAo" node="6Bg9Ew20FmV" resolve="reporter" />
+                </node>
               </node>
             </node>
           </node>
@@ -580,6 +614,25 @@
             </node>
             <node concept="liA8E" id="4giJe8qrNFR" role="2OqNvi">
               <ref role="37wK5l" to="d6jk:3ZOWdXPxqO9" resolve="execute" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4MenVKna5Nk" role="3cqZAp">
+          <node concept="2OqwBi" id="4MenVKnab2c" role="3clFbG">
+            <node concept="37vLTw" id="4MenVKna5Ni" role="2Oq$k0">
+              <ref role="3cqZAo" node="6Bg9Ew20FmV" resolve="reporter" />
+            </node>
+            <node concept="liA8E" id="4MenVKnacXA" role="2OqNvi">
+              <ref role="37wK5l" to="d6jk:63re9eR752H" resolve="writeToFile" />
+              <node concept="2ShNRf" id="3hBC0mRPfUe" role="37wK5m">
+                <node concept="1pGfFk" id="3hBC0mRPfUf" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                  <node concept="37vLTw" id="4MenVKnaOdF" role="37wK5m">
+                    <ref role="3cqZAo" node="7Z6s7w42Qyk" resolve="myReportsFile" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
