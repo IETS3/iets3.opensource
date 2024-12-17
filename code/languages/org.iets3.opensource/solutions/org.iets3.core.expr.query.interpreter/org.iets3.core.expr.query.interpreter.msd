@@ -66,7 +66,7 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="1" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
-    <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="13" />
+    <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="14" />
     <module reference="b76a0f63-5959-456b-993a-c796cc0d0c13(org.iets3.core.expr.base.collections.stubs)" version="0" />
     <module reference="711a16d7-99e8-4e1d-b20c-99c0b7309cd8(org.iets3.core.expr.metafunction)" version="1" />
     <module reference="10e056b2-49fd-40ca-8b64-de69c81163ac(org.iets3.core.expr.query)" version="0" />

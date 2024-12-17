@@ -40,15 +40,16 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="1019070541450016346" name="org.iets3.core.expr.base.structure.TupleValue" flags="ng" index="m5g4o">
         <child id="1019070541450016347" name="values" index="m5g4p" />
       </concept>
       <concept id="1019070541450015930" name="org.iets3.core.expr.base.structure.TupleType" flags="ng" index="m5gfS">
         <child id="1019070541450015931" name="elementTypes" index="m5gfT" />
       </concept>
-      <concept id="2403760773179476914" name="org.iets3.core.expr.base.structure.NCopiesOp" flags="ng" index="ze_g2">
-        <child id="2403760773179493048" name="times" index="zexk8" />
-      </concept>
+      <concept id="2403760773179476914" name="org.iets3.core.expr.base.structure.NCopiesOp" flags="ng" index="ze_g2" />
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -152,7 +153,7 @@
       <property role="TrG5h" value="nCopies1" />
       <node concept="1QScDb" id="5a86BD1bm5d" role="2zPyp_">
         <node concept="ze_g2" id="5a86BD1bm5e" role="1QScD9">
-          <node concept="30bXRB" id="5a86BD1bm5f" role="zexk8">
+          <node concept="30bXRB" id="5a86BD1bm5f" role="2lDidJ">
             <property role="30bXRw" value="0" />
           </node>
         </node>
@@ -182,7 +183,7 @@
       <property role="TrG5h" value="nCopies2" />
       <node concept="1QScDb" id="5a86BD1bm8k" role="2zPyp_">
         <node concept="ze_g2" id="5a86BD1bm8l" role="1QScD9">
-          <node concept="30bXRB" id="5a86BD1bm8m" role="zexk8">
+          <node concept="30bXRB" id="5a86BD1bm8m" role="2lDidJ">
             <property role="30bXRw" value="-1" />
           </node>
         </node>
@@ -208,7 +209,7 @@
       <property role="TrG5h" value="nCopies3" />
       <node concept="1QScDb" id="ijyib_kqCs" role="2zPyp_">
         <node concept="ze_g2" id="ijyib_kqE0" role="1QScD9">
-          <node concept="30dDZf" id="xNPLfwAb9" role="zexk8">
+          <node concept="30dDZf" id="xNPLfwAb9" role="2lDidJ">
             <node concept="30bXRB" id="xNPLfwAbu" role="30dEs_">
               <property role="30bXRw" value="2" />
             </node>
@@ -271,7 +272,7 @@
           </node>
         </node>
         <node concept="ze_g2" id="25rRV02v9Zh" role="1QScD9">
-          <node concept="30bXRB" id="3cDaBeIjnx9" role="zexk8">
+          <node concept="30bXRB" id="3cDaBeIjnx9" role="2lDidJ">
             <property role="30bXRw" value="20" />
           </node>
         </node>
