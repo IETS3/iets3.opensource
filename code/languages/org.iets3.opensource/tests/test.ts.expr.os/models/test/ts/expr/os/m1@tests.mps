@@ -131,9 +131,6 @@
       </concept>
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
-      <concept id="527291771330968213" name="org.iets3.core.expr.collections.structure.ISetOneArgOp" flags="ngI" index="24uAI7">
-        <child id="527291771330969242" name="arg" index="24uAY8" />
-      </concept>
       <concept id="1330041117646892901" name="org.iets3.core.expr.collections.structure.CollectionSizeSpec" flags="ng" index="2gteSW">
         <property id="1330041117646892912" name="max" index="2gteSD" />
         <property id="1330041117646892911" name="min" index="2gteSQ" />
@@ -3270,7 +3267,7 @@
           <property role="TrG5h" value="invalidSetAdding" />
           <node concept="1QScDb" id="2ufoZQJ5MjI" role="2zPyp_">
             <node concept="2iGxMk" id="2ufoZQJ5MjJ" role="1QScD9">
-              <node concept="30bXRB" id="2ufoZQJ5MjK" role="24uAY8">
+              <node concept="30bXRB" id="2ufoZQJ5MjK" role="2lDidJ">
                 <property role="30bXRw" value="4" />
                 <node concept="7CXmI" id="2ufoZQJ6Fue" role="lGtFl">
                   <node concept="1TM$A" id="2ufoZQJ6Fuf" role="7EUXB" />
