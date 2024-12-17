@@ -131,7 +131,6 @@
       </concept>
       <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
       <concept id="7089558164909884363" name="org.iets3.core.expr.base.structure.TryErrorClause" flags="ng" index="2zzUxt">
-        <child id="7089558164909884398" name="expr" index="2zzUxS" />
         <child id="7089558164910923907" name="errorLiteral" index="2zBOGl" />
       </concept>
       <concept id="7089558164910719190" name="org.iets3.core.expr.base.structure.SuccessValueExpr" flags="ng" index="2zAAH0">
@@ -3019,7 +3018,7 @@
           <node concept="1i17NB" id="7ZoBx3xGAJl" role="2zBOGl">
             <property role="TrG5h" value="A" />
           </node>
-          <node concept="30bdrP" id="7ZoBx3xGAJm" role="2zzUxS">
+          <node concept="30bdrP" id="7ZoBx3xGAJm" role="2lDidJ">
             <property role="30bdrQ" value="A" />
           </node>
         </node>
@@ -3047,7 +3046,7 @@
             </node>
           </node>
           <node concept="2zzUxt" id="7ZoBx3xDPJU" role="2zzUPl">
-            <node concept="30bdrP" id="7ZoBx3xDPK8" role="2zzUxS">
+            <node concept="30bdrP" id="7ZoBx3xDPK8" role="2lDidJ">
               <property role="30bdrQ" value="Z" />
             </node>
           </node>
@@ -3121,7 +3120,7 @@
             <node concept="2vmpn$" id="7ZoBx3xvqAO" role="1afhQ5" />
           </node>
           <node concept="2zzUxt" id="7ZoBx3xvqAP" role="2zzUPl">
-            <node concept="30bXRB" id="7ZoBx3xvqAQ" role="2zzUxS">
+            <node concept="30bXRB" id="7ZoBx3xvqAQ" role="2lDidJ">
               <property role="30bXRw" value="30" />
             </node>
           </node>

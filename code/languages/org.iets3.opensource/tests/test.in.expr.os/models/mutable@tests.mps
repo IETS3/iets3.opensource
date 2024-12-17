@@ -257,7 +257,6 @@
         <child id="606861080870797310" name="expr" index="pf3We" />
       </concept>
       <concept id="7089558164909884363" name="org.iets3.core.expr.base.structure.TryErrorClause" flags="ng" index="2zzUxt">
-        <child id="7089558164909884398" name="expr" index="2zzUxS" />
         <child id="7089558164910923907" name="errorLiteral" index="2zBOGl" />
       </concept>
       <concept id="7089558164910719190" name="org.iets3.core.expr.base.structure.SuccessValueExpr" flags="ng" index="2zAAH0">
@@ -1450,7 +1449,7 @@
             <ref role="1afhQb" node="3GdqffC8Oui" resolve="tryTx1" />
           </node>
           <node concept="2zzUxt" id="79jc6YzqHH0" role="2zzUPl">
-            <node concept="30bdrP" id="79jc6YzqVGi" role="2zzUxS">
+            <node concept="30bdrP" id="79jc6YzqVGi" role="2lDidJ">
               <property role="30bdrQ" value="failed" />
             </node>
           </node>
@@ -1471,7 +1470,7 @@
             <ref role="1afhQb" node="79jc6Yz2MHH" resolve="tryTx3" />
           </node>
           <node concept="2zzUxt" id="79jc6YzsiiQ" role="2zzUPl">
-            <node concept="30bdrP" id="79jc6YzsiiR" role="2zzUxS">
+            <node concept="30bdrP" id="79jc6YzsiiR" role="2lDidJ">
               <property role="30bdrQ" value="failed" />
             </node>
           </node>
@@ -3060,7 +3059,7 @@
             <node concept="1i17NB" id="3ni3WidId91" role="2zBOGl">
               <property role="TrG5h" value="failed" />
             </node>
-            <node concept="30bXRB" id="3ni3WidItC5" role="2zzUxS">
+            <node concept="30bXRB" id="3ni3WidItC5" role="2lDidJ">
               <property role="30bXRw" value="0" />
             </node>
           </node>
