@@ -61,9 +61,6 @@
         <child id="8694548031077660261" name="typeConstraint" index="ynoGV" />
         <child id="8872269265520081294" name="elements" index="2TO1xH" />
       </concept>
-      <concept id="7757419675865128281" name="org.iets3.core.expr.collections.structure.IMapOneArgOp" flags="ngI" index="1idJ_1">
-        <child id="7757419675865128346" name="arg" index="1idJA2" />
-      </concept>
       <concept id="7554398283340715406" name="org.iets3.core.expr.collections.structure.WhereOp" flags="ng" index="3izCyS" />
       <concept id="7554398283340004826" name="org.iets3.core.expr.collections.structure.AtOp" flags="ng" index="3iAU3G" />
       <concept id="7554398283340020764" name="org.iets3.core.expr.collections.structure.OneArgCollectionOp" flags="ng" index="3iAY4E">
@@ -2680,7 +2677,7 @@
           </node>
           <node concept="1QScDb" id="1QYdL38_JZY" role="2lDidJ">
             <node concept="1DFusj" id="1QYdL38_K2h" role="1QScD9">
-              <node concept="1DGDZQ" id="1QYdL38_K6h" role="1idJA2">
+              <node concept="1DGDZQ" id="1QYdL38_K6h" role="2lDidJ">
                 <node concept="30bXRB" id="1QYdL38_K9n" role="1DGDZN">
                   <property role="30bXRw" value="3" />
                 </node>
@@ -2701,7 +2698,7 @@
       <node concept="mXNUv" id="1QYdL38_$KT" role="_fkp5">
         <node concept="1QScDb" id="1QYdL38_JWg" role="mXJVd">
           <node concept="1DFusj" id="1QYdL38_JXp" role="1QScD9">
-            <node concept="1DGDZQ" id="1QYdL38_OJt" role="1idJA2">
+            <node concept="1DGDZQ" id="1QYdL38_OJt" role="2lDidJ">
               <node concept="30bXRB" id="1QYdL38_OEO" role="1DGDZP">
                 <property role="30bXRw" value="7" />
               </node>
@@ -2718,7 +2715,7 @@
       <node concept="mXNUv" id="1QYdL38_Tpa" role="_fkp5">
         <node concept="1QScDb" id="1QYdL38_Tpb" role="mXJVd">
           <node concept="1DFusj" id="1QYdL38_Tpc" role="1QScD9">
-            <node concept="1DGDZQ" id="1QYdL38_Tpd" role="1idJA2">
+            <node concept="1DGDZQ" id="1QYdL38_Tpd" role="2lDidJ">
               <node concept="30bXRB" id="1QYdL38_Tpe" role="1DGDZP">
                 <property role="30bXRw" value="3" />
               </node>

@@ -91,7 +91,7 @@
         <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
         <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="20" />
         <module reference="b76a0f63-5959-456b-993a-c796cc0d0c13(org.iets3.core.expr.base.collections.stubs)" version="0" />
-        <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="7" />
+        <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="8" />
         <module reference="4517af98-2eaa-4f19-a962-92df60010094(org.iets3.core.expr.genjava.base#8286534136181746510)" version="0" />
         <module reference="f9bb00ab-1f7e-40ab-9ec0-b11e02d84d0f(org.iets3.core.expr.genjava.stringvalidation)" version="0" />
         <module reference="d85c5d10-6e20-44f3-ad58-69f2c1a9a039(org.iets3.core.expr.genjava.stringvalidation.generator)" version="0" />
