@@ -597,9 +597,7 @@
       </concept>
       <concept id="4274681253355571175" name="org.iets3.core.expr.datetime.structure.HoursDeltaLiteral" flags="ng" index="2p5n0k" />
       <concept id="4274681253355754899" name="org.iets3.core.expr.datetime.structure.HoursDeltaType" flags="ng" index="2p629w" />
-      <concept id="3885635233759216659" name="org.iets3.core.expr.datetime.structure.YearRangeLiteral" flags="ng" index="1f6kyV">
-        <child id="3885635233759216660" name="year" index="1f6kyW" />
-      </concept>
+      <concept id="3885635233759216659" name="org.iets3.core.expr.datetime.structure.YearRangeLiteral" flags="ng" index="1f6kyV" />
       <concept id="3885635233757569297" name="org.iets3.core.expr.datetime.structure.DateLiteral" flags="ng" index="1fc2QT">
         <property id="3885635233757569300" name="dd" index="1fc2QW" />
         <property id="3885635233757569301" name="mm" index="1fc2QX" />
@@ -18710,7 +18708,7 @@
         <node concept="2zPypq" id="7aRvJQE4Ttl" role="_iOnC">
           <property role="TrG5h" value="y2018" />
           <node concept="1f6kyV" id="7aRvJQE4TKv" role="2zPyp_">
-            <node concept="30bXRB" id="7aRvJQE4TLm" role="1f6kyW">
+            <node concept="30bXRB" id="7aRvJQE4TLm" role="2lDidJ">
               <property role="30bXRw" value="2018" />
             </node>
           </node>
@@ -18718,7 +18716,7 @@
         <node concept="2zPypq" id="7aRvJQE4TLW" role="_iOnC">
           <property role="TrG5h" value="y2017" />
           <node concept="1f6kyV" id="7aRvJQE4TLX" role="2zPyp_">
-            <node concept="30bXRB" id="7aRvJQE4TLY" role="1f6kyW">
+            <node concept="30bXRB" id="7aRvJQE4TLY" role="2lDidJ">
               <property role="30bXRw" value="2017" />
             </node>
           </node>
