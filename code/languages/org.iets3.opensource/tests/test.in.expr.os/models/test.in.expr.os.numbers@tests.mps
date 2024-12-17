@@ -17,7 +17,6 @@
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="8219602584757553931" name="org.iets3.core.expr.base.structure.CheckTypeConstraintsExpr" flags="ng" index="hiESb">
-        <child id="8219602584757553932" name="expr" index="hiESc" />
         <child id="8219602584757553934" name="tp" index="hiESe" />
       </concept>
       <concept id="8219602584758209317" name="org.iets3.core.expr.base.structure.OkTarget" flags="ng" index="htaS_" />
@@ -1984,7 +1983,7 @@
             <node concept="1WbbFT" id="1IomA9weZX8" role="hiESe">
               <ref role="1WbbFS" node="1IomA9waU6k" resolve="BP0" />
             </node>
-            <node concept="3zyZNN" id="1IomA9w8k_G" role="hiESc">
+            <node concept="3zyZNN" id="1IomA9w8k_G" role="2lDidJ">
               <node concept="30bXRB" id="1IomA9w8k_I" role="3zyZNI">
                 <property role="30bXRw" value="200.00" />
               </node>
