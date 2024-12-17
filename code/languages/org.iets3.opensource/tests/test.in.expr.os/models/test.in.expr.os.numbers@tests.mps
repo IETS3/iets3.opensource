@@ -164,9 +164,7 @@
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
       </concept>
-      <concept id="4790956042241053102" name="org.iets3.core.expr.lambda.structure.ValExpression" flags="ng" index="1adJid">
-        <child id="4790956042241053105" name="expr" index="1adJii" />
-      </concept>
+      <concept id="4790956042241053102" name="org.iets3.core.expr.lambda.structure.ValExpression" flags="ng" index="1adJid" />
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
@@ -2038,14 +2036,14 @@
         <node concept="1aduha" id="4voDClGxd98" role="_fkuY">
           <node concept="1adJid" id="1IomA9wzjQ4" role="1aduh9">
             <property role="TrG5h" value="blub" />
-            <node concept="30bXRB" id="1IomA9wzjSF" role="1adJii">
-              <property role="30bXRw" value="40" />
-            </node>
             <node concept="mLuIC" id="1IomA9wzjQL" role="2zM23F">
               <node concept="2gteSW" id="1IomA9wzjQZ" role="2gteSx">
                 <property role="2gteSQ" value="40" />
                 <property role="2gteSD" value="100" />
               </node>
+            </node>
+            <node concept="30bXRB" id="1IomA9wzjSF" role="2lDidJ">
+              <property role="30bXRw" value="40" />
             </node>
           </node>
         </node>
@@ -2063,13 +2061,13 @@
           <node concept="1aduha" id="1IomA9wzlhB" role="2lDidJ">
             <node concept="1adJid" id="1IomA9wzlhC" role="1aduh9">
               <property role="TrG5h" value="blub" />
-              <node concept="30bXRB" id="1IomA9wzlhD" role="1adJii">
-                <property role="30bXRw" value="40.000" />
-              </node>
               <node concept="mLuIC" id="1IomA9wzlhE" role="2zM23F">
                 <node concept="2gteS_" id="1IomA9wznjz" role="2gteVg">
                   <property role="2gteVv" value="3" />
                 </node>
+              </node>
+              <node concept="30bXRB" id="1IomA9wzlhD" role="2lDidJ">
+                <property role="30bXRw" value="40.000" />
               </node>
             </node>
           </node>

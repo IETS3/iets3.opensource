@@ -365,9 +365,7 @@
       <concept id="4790956042241105569" name="org.iets3.core.expr.lambda.structure.ValRef" flags="ng" index="1adzI2">
         <reference id="4790956042241106533" name="val" index="1adwt6" />
       </concept>
-      <concept id="4790956042241053102" name="org.iets3.core.expr.lambda.structure.ValExpression" flags="ng" index="1adJid">
-        <child id="4790956042241053105" name="expr" index="1adJij" />
-      </concept>
+      <concept id="4790956042241053102" name="org.iets3.core.expr.lambda.structure.ValExpression" flags="ng" index="1adJid" />
       <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
@@ -457,7 +455,7 @@
           <node concept="1aduha" id="5gz1ElML$61" role="1ahQXP">
             <node concept="1adJid" id="5gz1ElML$8A" role="1aduh9">
               <property role="TrG5h" value="tuple" />
-              <node concept="m5g4o" id="5gz1ElML$8Y" role="1adJij">
+              <node concept="m5g4o" id="5gz1ElML$8Y" role="2lDidJ">
                 <node concept="30bXRB" id="5gz1ElML$9b" role="m5g4p">
                   <property role="30bXRw" value="0" />
                 </node>
@@ -578,23 +576,6 @@
         <node concept="1aduha" id="5Jw72wdrQDQ" role="gfFT$">
           <node concept="1adJid" id="5Jw72wdrQDR" role="1aduh9">
             <property role="TrG5h" value="c1" />
-            <node concept="30bdrP" id="5Jw72wdrQDS" role="1adJij">
-              <property role="30bdrQ" value="column1" />
-              <node concept="29HgVG" id="5Jw72wdrQDT" role="lGtFl">
-                <node concept="3NFfHV" id="5Jw72wdrQDU" role="3NFExx">
-                  <node concept="3clFbS" id="5Jw72wdrQDV" role="2VODD2">
-                    <node concept="3clFbF" id="5Jw72wdrQDW" role="3cqZAp">
-                      <node concept="2OqwBi" id="5Jw72wdrQDX" role="3clFbG">
-                        <node concept="3TrEf2" id="5Jw72wdrQDY" role="2OqNvi">
-                          <ref role="3Tt5mk" to="kfo3:8XWEtdX_Yh" resolve="expr" />
-                        </node>
-                        <node concept="30H73N" id="5Jw72wdrQDZ" role="2Oq$k0" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="1WS0z7" id="5Jw72wdrQE0" role="lGtFl">
               <ref role="2rW$FS" node="5Jw72wdpH6K" resolve="QueryColDefValue" />
               <node concept="3JmXsc" id="5Jw72wdrQE1" role="3Jn$fo">
@@ -622,6 +603,23 @@
                         <node concept="Xl_RD" id="5Jw72wdrQEe" role="2piZGb">
                           <property role="Xl_RC" value="column" />
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="30bdrP" id="5Jw72wdrQDS" role="2lDidJ">
+              <property role="30bdrQ" value="column1" />
+              <node concept="29HgVG" id="5Jw72wdrQDT" role="lGtFl">
+                <node concept="3NFfHV" id="5Jw72wdrQDU" role="3NFExx">
+                  <node concept="3clFbS" id="5Jw72wdrQDV" role="2VODD2">
+                    <node concept="3clFbF" id="5Jw72wdrQDW" role="3cqZAp">
+                      <node concept="2OqwBi" id="5Jw72wdrQDX" role="3clFbG">
+                        <node concept="3TrEf2" id="5Jw72wdrQDY" role="2OqNvi">
+                          <ref role="3Tt5mk" to="kfo3:8XWEtdX_Yh" resolve="expr" />
+                        </node>
+                        <node concept="30H73N" id="5Jw72wdrQDZ" role="2Oq$k0" />
                       </node>
                     </node>
                   </node>
