@@ -58,9 +58,7 @@
         <child id="867786408877811042" name="contract" index="I61D6" />
       </concept>
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
-      <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.IsSomeExpression" flags="ng" index="UmaEC">
-        <child id="2807135271608145921" name="expr" index="UmaED" />
-      </concept>
+      <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.IsSomeExpression" flags="ng" index="UmaEC" />
       <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt">
         <child id="8355348994405084500" name="optionalBaseType" index="y6CjK" />
       </concept>
@@ -381,12 +379,12 @@
       <node concept="39w5ZF" id="4qTaF_Elo7q" role="1ahQXP">
         <node concept="30deo4" id="4qTaF_Elo7r" role="39w5ZE">
           <node concept="UmaEC" id="4qTaF_Elo7s" role="30dEsF">
-            <node concept="1afdae" id="4qTaF_Elo7t" role="UmaED">
+            <node concept="1afdae" id="4qTaF_Elo7t" role="2lDidJ">
               <ref role="1afue_" node="4qTaF_Elo7_" resolve="x" />
             </node>
           </node>
           <node concept="UmaEC" id="4qTaF_Elo7u" role="30dEs_">
-            <node concept="1afdae" id="4qTaF_Elo7v" role="UmaED">
+            <node concept="1afdae" id="4qTaF_Elo7v" role="2lDidJ">
               <ref role="1afue_" node="4qTaF_Elo7C" resolve="y" />
             </node>
           </node>
@@ -420,14 +418,14 @@
       <property role="TrG5h" value="testCall" />
       <node concept="39w5ZF" id="4qTaF_Elo7G" role="1ahQXP">
         <node concept="UmaEC" id="4qTaF_Elo7H" role="39w5ZE">
-          <node concept="1af_rf" id="4qTaF_Elo7I" role="UmaED">
+          <node concept="pfQqD" id="4qTaF_Elo7K" role="pfQ1b">
+            <property role="pfQqC" value="v" />
+          </node>
+          <node concept="1af_rf" id="4qTaF_Elo7I" role="2lDidJ">
             <ref role="1afhQb" node="4qTaF_Elo7O" resolve="optionize" />
             <node concept="30bXRB" id="4qTaF_Elo7J" role="1afhQ5">
               <property role="30bXRw" value="10" />
             </node>
-          </node>
-          <node concept="pfQqD" id="4qTaF_Elo7K" role="pfQ1b">
-            <property role="pfQqC" value="v" />
           </node>
         </node>
         <node concept="1ZmhP4" id="4qTaF_Elo7L" role="39w5ZG">

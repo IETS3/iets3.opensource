@@ -80,9 +80,7 @@
       <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
-      <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.IsSomeExpression" flags="ng" index="UmaEC">
-        <child id="2807135271608145921" name="expr" index="UmaED" />
-      </concept>
+      <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.IsSomeExpression" flags="ng" index="UmaEC" />
       <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt" />
       <concept id="2807135271607939856" name="org.iets3.core.expr.base.structure.OptionType" flags="ng" index="Uns6S">
         <child id="2807135271607939857" name="baseType" index="Uns6T" />
@@ -1993,12 +1991,12 @@
               </node>
             </node>
             <node concept="UmaEC" id="28$LOSBuBp7" role="39w5ZE">
-              <node concept="1af_rf" id="28$LOSBuBp8" role="UmaED">
-                <ref role="1afhQb" node="28$LOSBYfx9" resolve="bind" />
-                <node concept="1KgZKh" id="28$LOSBuBp9" role="1afhQ5" />
-              </node>
               <node concept="pfQqD" id="28$LOSBuBpa" role="pfQ1b">
                 <property role="pfQqC" value="constant" />
+              </node>
+              <node concept="1af_rf" id="28$LOSBuBp8" role="2lDidJ">
+                <ref role="1afhQb" node="28$LOSBYfx9" resolve="bind" />
+                <node concept="1KgZKh" id="28$LOSBuBp9" role="1afhQ5" />
               </node>
             </node>
             <node concept="1Kvkmc" id="28$LOSBuD2s" role="39w5ZG">
@@ -2838,12 +2836,12 @@
               </node>
             </node>
             <node concept="UmaEC" id="28$LOSC10hc" role="39w5ZE">
-              <node concept="1af_rf" id="28$LOSC10hd" role="UmaED">
-                <ref role="1afhQb" node="28$LOSC0HYs" resolve="binding" />
-                <node concept="1KgZKh" id="28$LOSC10he" role="1afhQ5" />
-              </node>
               <node concept="pfQqD" id="28$LOSC10hf" role="pfQ1b">
                 <property role="pfQqC" value="constant" />
+              </node>
+              <node concept="1af_rf" id="28$LOSC10hd" role="2lDidJ">
+                <ref role="1afhQb" node="28$LOSC0HYs" resolve="binding" />
+                <node concept="1KgZKh" id="28$LOSC10he" role="1afhQ5" />
               </node>
             </node>
             <node concept="1Kvkmc" id="28$LOSC10hg" role="39w5ZG">
@@ -3000,12 +2998,12 @@
               </node>
             </node>
             <node concept="UmaEC" id="28$LOSC5wkP" role="39w5ZE">
-              <node concept="1af_rf" id="28$LOSC507R" role="UmaED">
-                <ref role="1afhQb" node="28$LOSC0HYs" resolve="binding" />
-                <node concept="1KgZKh" id="28$LOSC50Wq" role="1afhQ5" />
-              </node>
               <node concept="pfQqD" id="28$LOSC5I46" role="pfQ1b">
                 <property role="pfQqC" value="const" />
+              </node>
+              <node concept="1af_rf" id="28$LOSC507R" role="2lDidJ">
+                <ref role="1afhQb" node="28$LOSC0HYs" resolve="binding" />
+                <node concept="1KgZKh" id="28$LOSC50Wq" role="1afhQ5" />
               </node>
             </node>
             <node concept="1af_rf" id="28$LOSC5JGm" role="39w5ZG">
@@ -3232,7 +3230,7 @@
           <node concept="1LGszO" id="28$LOSC74OI" role="1LGsye">
             <node concept="30czhn" id="28$LOSC75Fz" role="2lDidJ">
               <node concept="UmaEC" id="28$LOSC75F$" role="30czhm">
-                <node concept="1af_rf" id="28$LOSC75F_" role="UmaED">
+                <node concept="1af_rf" id="28$LOSC75F_" role="2lDidJ">
                   <ref role="1afhQb" node="28$LOSC0HYs" resolve="binding" />
                   <node concept="1KgZKh" id="28$LOSC75FA" role="1afhQ5" />
                 </node>
@@ -4375,7 +4373,7 @@
         <node concept="_fku$" id="7aipPVqhCZH" role="_fkur" />
         <node concept="2vmpnb" id="28$LOSA9WK3" role="_fkuS" />
         <node concept="UmaEC" id="28$LOSA9WJp" role="_fkuY">
-          <node concept="1af_rf" id="7aipPVqhDFh" role="UmaED">
+          <node concept="1af_rf" id="7aipPVqhDFh" role="2lDidJ">
             <property role="0Rz4W" value="748522205" />
             <ref role="1afhQb" node="7aipPVpAfNw" resolve="check" />
             <node concept="_emDc" id="7aipPVqhEWC" role="1afhQ5">
@@ -4388,7 +4386,7 @@
         <node concept="_fku$" id="28$LOSAa0Jc" role="_fkur" />
         <node concept="2vmpn$" id="28$LOSAa2HT" role="_fkuS" />
         <node concept="UmaEC" id="28$LOSAa0Je" role="_fkuY">
-          <node concept="1af_rf" id="28$LOSAa0Jf" role="UmaED">
+          <node concept="1af_rf" id="28$LOSAa0Jf" role="2lDidJ">
             <property role="0Rz4W" value="547223638" />
             <ref role="1afhQb" node="7aipPVpAfNw" resolve="check" />
             <node concept="1Kvkmc" id="28$LOSAa0K8" role="1afhQ5">
@@ -4404,7 +4402,7 @@
         <node concept="_fku$" id="28$LOSAa2I1" role="_fkur" />
         <node concept="2vmpnb" id="28$LOSAa3pi" role="_fkuS" />
         <node concept="UmaEC" id="28$LOSAa2I3" role="_fkuY">
-          <node concept="1af_rf" id="28$LOSAa2I4" role="UmaED">
+          <node concept="1af_rf" id="28$LOSAa2I4" role="2lDidJ">
             <property role="0Rz4W" value="1780831277" />
             <ref role="1afhQb" node="7aipPVpAfNw" resolve="check" />
             <node concept="1Kvkmc" id="28$LOSAa2I5" role="1afhQ5">
@@ -4705,16 +4703,16 @@
                     </node>
                   </node>
                   <node concept="UmaEC" id="7aipPVpLwmu" role="39w5ZE">
-                    <node concept="1af_rf" id="7aipPVpBE7A" role="UmaED">
+                    <node concept="pfQqD" id="7aipPVpLx4e" role="pfQ1b">
+                      <property role="pfQqC" value="err" />
+                    </node>
+                    <node concept="1af_rf" id="7aipPVpBE7A" role="2lDidJ">
                       <property role="0Rz4W" value="-323731003" />
                       <ref role="1afhQb" node="7aipPVpAfNw" resolve="check" />
                       <node concept="1LgZZ2" id="7aipPVpBE7B" role="1afhQ5">
                         <node concept="3izPEI" id="7aipPVpBE7D" role="1LgZ0V" />
                         <node concept="1LZjuY" id="28$LOSC6A4U" role="2S399n" />
                       </node>
-                    </node>
-                    <node concept="pfQqD" id="7aipPVpLx4e" role="pfQ1b">
-                      <property role="pfQqC" value="err" />
                     </node>
                   </node>
                 </node>
