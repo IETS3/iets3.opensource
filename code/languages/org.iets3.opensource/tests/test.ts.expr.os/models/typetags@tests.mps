@@ -56,7 +56,6 @@
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
       <concept id="3281846772293355652" name="org.iets3.core.expr.base.structure.CastExpression" flags="ng" index="1KhrV4">
-        <child id="2396718651941969300" name="expr" index="12NKtY" />
         <child id="3281846772293355657" name="expectedType" index="1KhrV9" />
       </concept>
     </language>
@@ -481,12 +480,12 @@
         <node concept="2zPypq" id="TUBgQ0FR7K" role="_iOnB">
           <property role="TrG5h" value="secret" />
           <node concept="1KhrV4" id="TUBgQ0FR7L" role="2zPyp_">
-            <node concept="30bdrP" id="TUBgQ0FR7M" role="12NKtY">
-              <property role="30bdrQ" value="HelloROT13" />
-            </node>
             <node concept="2c7tTJ" id="1ha4WVLA8mw" role="1KhrV9">
               <node concept="2ePKH5" id="1ha4WVLA8pS" role="2c7tTI" />
               <node concept="30bdrU" id="1ha4WVLA8jx" role="2c7tTw" />
+            </node>
+            <node concept="30bdrP" id="TUBgQ0FR7M" role="2lDidJ">
+              <property role="30bdrQ" value="HelloROT13" />
             </node>
           </node>
           <node concept="2c7tTJ" id="1ha4WVLA8ao" role="2zM23F">

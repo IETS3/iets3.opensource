@@ -55,7 +55,6 @@
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
       <concept id="3281846772293355652" name="org.iets3.core.expr.base.structure.CastExpression" flags="ng" index="1KhrV4">
-        <child id="2396718651941969300" name="expr" index="12NKtY" />
         <child id="3281846772293355657" name="expectedType" index="1KhrV9" />
       </concept>
       <concept id="5955298286257997823" name="org.iets3.core.expr.base.structure.ColonCast" flags="ng" index="1LgZZ2">
@@ -397,16 +396,16 @@
             </node>
           </node>
           <node concept="1KhrV4" id="5ElkanPNlNH" role="2fGnzA">
-            <node concept="1QScDb" id="5ElkanPNlNI" role="12NKtY">
+            <node concept="1WbbFT" id="5ElkanPNlNL" role="1KhrV9">
+              <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
+            </node>
+            <node concept="1QScDb" id="5ElkanPNlNI" role="2lDidJ">
               <node concept="3o_JK" id="5ElkanPNlNJ" role="1QScD9">
                 <ref role="3o_JH" node="5ElkanPNlNr" resolve="value" />
               </node>
               <node concept="1afdae" id="5ElkanPNlNK" role="2lDidJ">
                 <ref role="1afue_" node="5ElkanPNlNz" resolve="this" />
               </node>
-            </node>
-            <node concept="1WbbFT" id="5ElkanPNlNL" role="1KhrV9">
-              <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
             </node>
           </node>
         </node>

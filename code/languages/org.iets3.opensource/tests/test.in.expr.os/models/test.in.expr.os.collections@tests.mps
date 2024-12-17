@@ -202,7 +202,6 @@
         <child id="2245119349904068814" name="min" index="1eiLjD" />
       </concept>
       <concept id="3281846772293355652" name="org.iets3.core.expr.base.structure.CastExpression" flags="ng" index="1KhrV4">
-        <child id="2396718651941969300" name="expr" index="12NKtY" />
         <child id="3281846772293355657" name="expectedType" index="1KhrV9" />
       </concept>
       <concept id="5955298286257997823" name="org.iets3.core.expr.base.structure.ColonCast" flags="ng" index="1LgZZ2">
@@ -626,7 +625,10 @@
       <node concept="mXNUv" id="6c5Dzby0QBG" role="_fkp5">
         <node concept="1KhrV4" id="6c5Dzby4FKI" role="mXJVd">
           <property role="0Rz4W" value="1127189347" />
-          <node concept="1QScDb" id="6c5Dzby4FKx" role="12NKtY">
+          <node concept="1WbbFT" id="6c5Dzby4Gvo" role="1KhrV9">
+            <ref role="1WbbFS" node="6c5DzbxTGx4" resolve="list3" />
+          </node>
+          <node concept="1QScDb" id="6c5Dzby4FKx" role="2lDidJ">
             <node concept="2iGZtc" id="6c5Dzby4FKy" role="1QScD9">
               <node concept="30bXRB" id="6c5Dzby4FKz" role="26Ft6C">
                 <property role="30bXRw" value="4" />
@@ -656,9 +658,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="1WbbFT" id="6c5Dzby4Gvo" role="1KhrV9">
-            <ref role="1WbbFS" node="6c5DzbxTGx4" resolve="list3" />
           </node>
         </node>
       </node>
