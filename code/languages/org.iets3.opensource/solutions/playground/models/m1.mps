@@ -13,9 +13,6 @@
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="7554398283340640412" name="org.iets3.core.expr.collections.structure.MapOp" flags="ng" index="3iw6QE" />
-      <concept id="7554398283340020764" name="org.iets3.core.expr.collections.structure.OneArgCollectionOp" flags="ng" index="3iAY4E">
-        <child id="7554398283340020765" name="arg" index="3iAY4F" />
-      </concept>
       <concept id="7554398283339850572" name="org.iets3.core.expr.collections.structure.FirstOp" flags="ng" index="3iB7TU" />
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
@@ -1629,7 +1626,7 @@
         <node concept="_fku$" id="3yVmeSjL7od" role="_fkur" />
         <node concept="1QScDb" id="3yVmeSjL7oe" role="_fkuY">
           <node concept="3iw6QE" id="3yVmeSjL7of" role="1QScD9">
-            <node concept="3ix9CK" id="3yVmeSjL7og" role="3iAY4F">
+            <node concept="3ix9CK" id="3yVmeSjL7og" role="2lDidJ">
               <node concept="30dDZf" id="3yVmeSjL7oh" role="3ix9pP">
                 <node concept="1af_rf" id="3yVmeSjL7oi" role="30dEs_">
                   <ref role="1afhQb" node="3yVmeSjL7n7" resolve="ZIP" />
@@ -1671,7 +1668,7 @@
         <node concept="_fku$" id="3yVmeSjL7ou" role="_fkur" />
         <node concept="1QScDb" id="3yVmeSjL7ov" role="_fkuY">
           <node concept="3iw6QE" id="3yVmeSjL7ow" role="1QScD9">
-            <node concept="3izI60" id="3yVmeSjL7ox" role="3iAY4F">
+            <node concept="3izI60" id="3yVmeSjL7ox" role="2lDidJ">
               <node concept="30dDZf" id="3yVmeSjL7oy" role="3izI61">
                 <node concept="1af_rf" id="3yVmeSjL7oz" role="30dEs_">
                   <ref role="1afhQb" node="3yVmeSjL7n7" resolve="ZIP" />

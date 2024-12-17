@@ -31,9 +31,6 @@
       <concept id="8872269265511400449" name="org.iets3.core.expr.collections.structure.DistinctOp" flags="ng" index="2Tjeny" />
       <concept id="8872269265518788050" name="org.iets3.core.expr.collections.structure.AllOp" flags="ng" index="2TZ5KL" />
       <concept id="7554398283340715406" name="org.iets3.core.expr.collections.structure.WhereOp" flags="ng" index="3izCyS" />
-      <concept id="7554398283340020764" name="org.iets3.core.expr.collections.structure.OneArgCollectionOp" flags="ng" index="3iAY4E">
-        <child id="7554398283340020765" name="arg" index="3iAY4F" />
-      </concept>
       <concept id="7554398283339796915" name="org.iets3.core.expr.collections.structure.SizeOp" flags="ng" index="3iB8M5" />
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
@@ -2265,7 +2262,7 @@
           <node concept="3iB8M5" id="7aRvJQErcbB" role="1QScD9" />
           <node concept="1QScDb" id="7aRvJQErcbC" role="2lDidJ">
             <node concept="3izCyS" id="7aRvJQErcdy" role="1QScD9">
-              <node concept="3izI60" id="7aRvJQErcdM" role="3iAY4F">
+              <node concept="3izI60" id="7aRvJQErcdM" role="2lDidJ">
                 <node concept="30cPrO" id="7aRvJQErcdP" role="3izI61">
                   <node concept="3izPEI" id="7aRvJQErcdT" role="30dEsF" />
                   <node concept="30bXRB" id="7aRvJQErcdU" role="30dEs_">
@@ -2289,7 +2286,7 @@
           <node concept="3iB8M5" id="7aRvJQErcbD" role="1QScD9" />
           <node concept="1QScDb" id="7aRvJQErcbE" role="2lDidJ">
             <node concept="3izCyS" id="7aRvJQErcd$" role="1QScD9">
-              <node concept="3izI60" id="7aRvJQErcdN" role="3iAY4F">
+              <node concept="3izI60" id="7aRvJQErcdN" role="2lDidJ">
                 <node concept="30cPrO" id="7aRvJQErcdQ" role="3izI61">
                   <node concept="3izPEI" id="7aRvJQErcdV" role="30dEsF" />
                   <node concept="30bXRB" id="7aRvJQErcdW" role="30dEs_">
@@ -2377,7 +2374,7 @@
         <node concept="_fku$" id="7aRvJQErc9b" role="_fkur" />
         <node concept="1QScDb" id="7aRvJQErc9c" role="_fkuY">
           <node concept="2TZ5KL" id="7aRvJQErcbN" role="1QScD9">
-            <node concept="3izI60" id="7aRvJQErcdC" role="3iAY4F">
+            <node concept="3izI60" id="7aRvJQErcdC" role="2lDidJ">
               <node concept="30cPrO" id="7aRvJQErcdO" role="3izI61">
                 <node concept="30bXRB" id="7aRvJQErcdR" role="30dEs_">
                   <property role="30bXRw" value="30" />
