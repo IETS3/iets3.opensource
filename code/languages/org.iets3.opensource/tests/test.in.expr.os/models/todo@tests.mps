@@ -154,9 +154,7 @@
         <child id="867786408877811042" name="contract" index="I61D6" />
       </concept>
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
-      <concept id="5299123466398246930" name="org.iets3.core.expr.base.structure.InlineMessage" flags="ng" index="M4eM_">
-        <child id="5299123466398246931" name="text" index="M4eM$" />
-      </concept>
+      <concept id="5299123466398246930" name="org.iets3.core.expr.base.structure.InlineMessage" flags="ng" index="M4eM_" />
       <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt" />
       <concept id="2807135271607939856" name="org.iets3.core.expr.base.structure.OptionType" flags="ng" index="Uns6S">
         <child id="2807135271607939857" name="baseType" index="Uns6T" />
@@ -557,7 +555,7 @@
       <node concept="I61D5" id="4AahbtVE2_v" role="I61D6">
         <node concept="InuEK" id="4AahbtVE2_w" role="I61D1">
           <node concept="M4eM_" id="4AahbtVEh0P" role="2izrR8">
-            <node concept="30bdrP" id="4AahbtVEh1X" role="M4eM$">
+            <node concept="30bdrP" id="4AahbtVEh1X" role="2lDidJ">
               <property role="30bdrQ" value="must be &gt; 30" />
             </node>
           </node>
