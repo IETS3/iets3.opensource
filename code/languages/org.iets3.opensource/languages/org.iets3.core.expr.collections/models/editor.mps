@@ -21,7 +21,7 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -724,7 +724,7 @@
       <node concept="3EZMnI" id="54HsVvNUXeB" role="1LiK7o">
         <node concept="1kIj98" id="54HsVvNUXeI" role="3EZMnx">
           <node concept="3F1sOY" id="54HsVvNUXeO" role="1kIj9b">
-            <ref role="1NtTu8" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+            <ref role="1NtTu8" to="hm2y:3G_qVqIw4zp" resolve="expr" />
           </node>
           <node concept="2e7140" id="6HHp2Wnfd$i" role="2e1Fq_">
             <node concept="3clFbS" id="6HHp2Wnfd$j" role="2VODD2">
