@@ -170,9 +170,7 @@
       <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
-      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60">
-        <child id="7554398283340741815" name="expression" index="3izI61" />
-      </concept>
+      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60" />
       <concept id="7554398283340826520" name="org.iets3.core.expr.lambda.structure.ShortLambdaItExpression" flags="ng" index="3izPEI" />
     </language>
   </registry>
@@ -232,7 +230,7 @@
           <node concept="1QScDb" id="4Uid4MjTKwL" role="2zPyp_">
             <node concept="3HlNAc" id="4Uid4MjTKwM" role="1QScD9">
               <node concept="3izI60" id="4Uid4MjTLlY" role="3HlNA8">
-                <node concept="3izPEI" id="4Uid4MjTLlZ" role="3izI61" />
+                <node concept="3izPEI" id="4Uid4MjTLlZ" role="2lDidJ" />
               </node>
               <node concept="7CXmI" id="4Uid4MjZbOY" role="lGtFl">
                 <node concept="7OXhh" id="4Uid4MjZbVh" role="7EUXB">

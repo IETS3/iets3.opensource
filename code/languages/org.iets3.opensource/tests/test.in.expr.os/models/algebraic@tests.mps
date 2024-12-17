@@ -311,9 +311,7 @@
       <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
-      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60">
-        <child id="7554398283340741815" name="expression" index="3izI61" />
-      </concept>
+      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60" />
       <concept id="7554398283340826520" name="org.iets3.core.expr.lambda.structure.ShortLambdaItExpression" flags="ng" index="3izPEI" />
     </language>
   </registry>
@@ -1629,7 +1627,7 @@
               <node concept="1QScDb" id="28$LOSC0sGT" role="1afhQ5">
                 <node concept="3iw6QE" id="28$LOSC0tf5" role="1QScD9">
                   <node concept="3izI60" id="28$LOSC0tf6" role="2lDidJ">
-                    <node concept="1Kvkmc" id="28$LOSC0CeI" role="3izI61">
+                    <node concept="1Kvkmc" id="28$LOSC0CeI" role="2lDidJ">
                       <property role="1Kvkm5" value="0" />
                       <node concept="3izPEI" id="28$LOSC0zT9" role="2lDidJ" />
                     </node>
@@ -1775,7 +1773,7 @@
         <node concept="1QScDb" id="28$LOSAL5pq" role="1aduh9">
           <node concept="3iw6QE" id="28$LOSAL5KA" role="1QScD9">
             <node concept="3izI60" id="28$LOSAL5KB" role="2lDidJ">
-              <node concept="1QScDb" id="28$LOSAL6vI" role="3izI61">
+              <node concept="1QScDb" id="28$LOSAL6vI" role="2lDidJ">
                 <node concept="4Aba2" id="28$LOSAL6Q7" role="1QScD9">
                   <node concept="1af_rf" id="28$LOSAL72f" role="2lDidJ">
                     <ref role="1afhQb" node="28$LOSAKdIL" resolve="optimization" />
@@ -1827,7 +1825,7 @@
         <node concept="1QScDb" id="28$LOSAQ3Sf" role="1aduh9">
           <node concept="3iw6QE" id="28$LOSAQ3Sg" role="1QScD9">
             <node concept="3izI60" id="28$LOSAQ3Sh" role="2lDidJ">
-              <node concept="1QScDb" id="28$LOSAQ3Si" role="3izI61">
+              <node concept="1QScDb" id="28$LOSAQ3Si" role="2lDidJ">
                 <node concept="4Aba2" id="28$LOSAQ3Sj" role="1QScD9">
                   <node concept="1af_rf" id="28$LOSAQ3Sk" role="2lDidJ">
                     <ref role="1afhQb" node="28$LOSAQ6il" resolve="desugaring" />
@@ -3192,7 +3190,7 @@
               <node concept="1QScDb" id="28$LOSC15Uu" role="1afhQ5">
                 <node concept="3iw6QE" id="28$LOSC15Uv" role="1QScD9">
                   <node concept="3izI60" id="28$LOSC15Uw" role="2lDidJ">
-                    <node concept="1Kvkmc" id="28$LOSC15Ux" role="3izI61">
+                    <node concept="1Kvkmc" id="28$LOSC15Ux" role="2lDidJ">
                       <property role="1Kvkm5" value="0" />
                       <node concept="3izPEI" id="28$LOSC15Uy" role="2lDidJ" />
                     </node>
@@ -4617,7 +4615,7 @@
         <node concept="1QScDb" id="28$LOSCdpla" role="1aduh9">
           <node concept="3iw6QE" id="28$LOSCdplb" role="1QScD9">
             <node concept="3izI60" id="28$LOSCdplc" role="2lDidJ">
-              <node concept="1QScDb" id="28$LOSCdpld" role="3izI61">
+              <node concept="1QScDb" id="28$LOSCdpld" role="2lDidJ">
                 <node concept="4Aba2" id="28$LOSCdple" role="1QScD9">
                   <node concept="1af_rf" id="28$LOSCdplf" role="2lDidJ">
                     <ref role="1afhQb" node="28$LOSC10h1" resolve="desugaring" />
@@ -4663,7 +4661,7 @@
         <node concept="1QScDb" id="7aipPVpBunX" role="2lDidJ">
           <node concept="3iw6QE" id="7aipPVpBunY" role="1QScD9">
             <node concept="3izI60" id="7aipPVpBunZ" role="2lDidJ">
-              <node concept="1aduha" id="7aipPVpBE7_" role="3izI61">
+              <node concept="1aduha" id="7aipPVpBE7_" role="2lDidJ">
                 <node concept="39w5ZF" id="7aipPVpBKvu" role="1aduh9">
                   <node concept="pf3Wd" id="7aipPVpBKvv" role="pf3W8">
                     <node concept="UmHTt" id="7aipPVpBNME" role="2lDidJ" />

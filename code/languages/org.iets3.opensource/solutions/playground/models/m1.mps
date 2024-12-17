@@ -222,9 +222,7 @@
       <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
-      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60">
-        <child id="7554398283340741815" name="expression" index="3izI61" />
-      </concept>
+      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60" />
       <concept id="7554398283340826520" name="org.iets3.core.expr.lambda.structure.ShortLambdaItExpression" flags="ng" index="3izPEI" />
     </language>
   </registry>
@@ -1667,7 +1665,7 @@
         <node concept="1QScDb" id="3yVmeSjL7ov" role="_fkuY">
           <node concept="3iw6QE" id="3yVmeSjL7ow" role="1QScD9">
             <node concept="3izI60" id="3yVmeSjL7ox" role="2lDidJ">
-              <node concept="30dDZf" id="3yVmeSjL7oy" role="3izI61">
+              <node concept="30dDZf" id="3yVmeSjL7oy" role="2lDidJ">
                 <node concept="1af_rf" id="3yVmeSjL7oz" role="30dEs_">
                   <ref role="1afhQb" node="3yVmeSjL7n7" resolve="ZIP" />
                 </node>

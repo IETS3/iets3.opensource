@@ -257,9 +257,7 @@
       <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
-      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60">
-        <child id="7554398283340741815" name="expression" index="3izI61" />
-      </concept>
+      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60" />
       <concept id="7554398283340826520" name="org.iets3.core.expr.lambda.structure.ShortLambdaItExpression" flags="ng" index="3izPEI" />
     </language>
   </registry>
@@ -1071,7 +1069,7 @@
       <node concept="1QScDb" id="5avmkTFo1kI" role="33cOLO">
         <node concept="3izCyS" id="5avmkTFo1VU" role="1QScD9">
           <node concept="3izI60" id="5avmkTFo1VV" role="2lDidJ">
-            <node concept="30d6GG" id="5avmkTFo22A" role="3izI61">
+            <node concept="30d6GG" id="5avmkTFo22A" role="2lDidJ">
               <node concept="30bXRB" id="5avmkTFo27a" role="30dEs_">
                 <property role="30bXRw" value="2" />
               </node>
@@ -2132,7 +2130,7 @@
             <node concept="1QScDb" id="48DDwlwSf$a" role="33cOLO">
               <node concept="3iw6QE" id="48DDwlwSfEe" role="1QScD9">
                 <node concept="3izI60" id="48DDwlwSfEf" role="2lDidJ">
-                  <node concept="1lsf3i" id="48DDwlwSfOk" role="3izI61">
+                  <node concept="1lsf3i" id="48DDwlwSfOk" role="2lDidJ">
                     <node concept="1lseON" id="48DDwlwSfSO" role="1lsf3s">
                       <node concept="2Ss9cW" id="48DDwlwSfSM" role="1lseOX">
                         <ref role="2Ss9cX" node="5avmkTFV7r3" resolve="SalaryReport" />
@@ -2425,7 +2423,7 @@
                     <node concept="1QScDb" id="4ssCghWwAGN" role="3ix9pP">
                       <node concept="2Tz0gS" id="4ssCghWwAGO" role="1QScD9">
                         <node concept="3izI60" id="4ssCghWwAGP" role="2lDidJ">
-                          <node concept="30cPrO" id="4ssCghWwDCO" role="3izI61">
+                          <node concept="30cPrO" id="4ssCghWwDCO" role="2lDidJ">
                             <node concept="335W_A" id="4ssCghWwDU6" role="30dEs_">
                               <ref role="335W_B" node="7HzLUeHFRfm" resolve="my" />
                               <node concept="3ix4Yz" id="4ssCghWwEbI" role="33LUdS">

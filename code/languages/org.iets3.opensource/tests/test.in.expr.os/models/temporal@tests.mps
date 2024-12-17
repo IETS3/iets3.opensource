@@ -485,9 +485,7 @@
       <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
-      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60">
-        <child id="7554398283340741815" name="expression" index="3izI61" />
-      </concept>
+      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60" />
       <concept id="7554398283340826520" name="org.iets3.core.expr.lambda.structure.ShortLambdaItExpression" flags="ng" index="3izPEI" />
     </language>
   </registry>
@@ -2261,7 +2259,7 @@
           <node concept="1QScDb" id="7aRvJQErcbC" role="2lDidJ">
             <node concept="3izCyS" id="7aRvJQErcdy" role="1QScD9">
               <node concept="3izI60" id="7aRvJQErcdM" role="2lDidJ">
-                <node concept="30cPrO" id="7aRvJQErcdP" role="3izI61">
+                <node concept="30cPrO" id="7aRvJQErcdP" role="2lDidJ">
                   <node concept="3izPEI" id="7aRvJQErcdT" role="30dEsF" />
                   <node concept="30bXRB" id="7aRvJQErcdU" role="30dEs_">
                     <property role="30bXRw" value="20" />
@@ -2285,7 +2283,7 @@
           <node concept="1QScDb" id="7aRvJQErcbE" role="2lDidJ">
             <node concept="3izCyS" id="7aRvJQErcd$" role="1QScD9">
               <node concept="3izI60" id="7aRvJQErcdN" role="2lDidJ">
-                <node concept="30cPrO" id="7aRvJQErcdQ" role="3izI61">
+                <node concept="30cPrO" id="7aRvJQErcdQ" role="2lDidJ">
                   <node concept="3izPEI" id="7aRvJQErcdV" role="30dEsF" />
                   <node concept="30bXRB" id="7aRvJQErcdW" role="30dEs_">
                     <property role="30bXRw" value="30" />
@@ -2373,7 +2371,7 @@
         <node concept="1QScDb" id="7aRvJQErc9c" role="_fkuY">
           <node concept="2TZ5KL" id="7aRvJQErcbN" role="1QScD9">
             <node concept="3izI60" id="7aRvJQErcdC" role="2lDidJ">
-              <node concept="30cPrO" id="7aRvJQErcdO" role="3izI61">
+              <node concept="30cPrO" id="7aRvJQErcdO" role="2lDidJ">
                 <node concept="30bXRB" id="7aRvJQErcdR" role="30dEs_">
                   <property role="30bXRw" value="30" />
                 </node>
