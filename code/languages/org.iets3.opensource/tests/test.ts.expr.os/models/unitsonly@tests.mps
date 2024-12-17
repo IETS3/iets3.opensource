@@ -288,9 +288,7 @@
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
-      <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV">
-        <child id="6481804410367607232" name="expr" index="2YtBW4" />
-      </concept>
+      <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV" />
       <concept id="6481804410366698223" name="org.iets3.core.expr.base.structure.AttemptType" flags="ng" index="2Yx5KF">
         <child id="1206081519718117779" name="successType" index="2oiIPj" />
         <child id="1206081519718117781" name="errorLiterals" index="2oiIPl" />
@@ -4667,7 +4665,7 @@
           <property role="TrG5h" value="tryWithoutUnit" />
           <node concept="2Yz4FG" id="66PK8SyukUu" role="2zPyp_">
             <node concept="2YtBXV" id="66PK8SyukUv" role="2YtBNa">
-              <node concept="2zAAH0" id="66PK8SyukUw" role="2YtBW4">
+              <node concept="2zAAH0" id="66PK8SyukUw" role="2lDidJ">
                 <ref role="2zAAH1" node="66PK8SyukUu" resolve="result" />
               </node>
             </node>
@@ -4784,7 +4782,7 @@
           <property role="TrG5h" value="tryWithUnit" />
           <node concept="2Yz4FG" id="66PK8SytIQP" role="2zPyp_">
             <node concept="2YtBXV" id="66PK8SytIQQ" role="2YtBNa">
-              <node concept="2zAAH0" id="66PK8SytJbu" role="2YtBW4">
+              <node concept="2zAAH0" id="66PK8SytJbu" role="2lDidJ">
                 <ref role="2zAAH1" node="66PK8SytIQP" resolve="result" />
               </node>
             </node>

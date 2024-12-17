@@ -344,9 +344,7 @@
         <child id="2807135271607939857" name="baseType" index="Uns6T" />
       </concept>
       <concept id="195141004745644975" name="org.iets3.core.expr.base.structure.AssignmentExpr" flags="ng" index="2YjPKq" />
-      <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV">
-        <child id="6481804410367607232" name="expr" index="2YtBW4" />
-      </concept>
+      <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV" />
       <concept id="6481804410366698223" name="org.iets3.core.expr.base.structure.AttemptType" flags="ng" index="2Yx5KF">
         <child id="1206081519718117779" name="successType" index="2oiIPj" />
         <child id="1206081519718117781" name="errorLiterals" index="2oiIPl" />
@@ -1992,7 +1990,7 @@
           <node concept="2Yz4FG" id="5aHkq2w38P6" role="2zPyp_">
             <property role="3MFFyI" value="false" />
             <node concept="2YtBXV" id="5aHkq2w38P7" role="2YtBNa">
-              <node concept="2zAAH0" id="7ZvWWnqN13a" role="2YtBW4">
+              <node concept="2zAAH0" id="7ZvWWnqN13a" role="2lDidJ">
                 <ref role="2zAAH1" node="5aHkq2w38P6" resolve="result" />
               </node>
             </node>
@@ -2023,7 +2021,7 @@
           <node concept="2Yz4FG" id="5aHkq2wawG_" role="2zPyp_">
             <property role="3MFFyI" value="false" />
             <node concept="2YtBXV" id="5aHkq2wawGA" role="2YtBNa">
-              <node concept="2zAAH0" id="7ZvWWnqN0Sl" role="2YtBW4">
+              <node concept="2zAAH0" id="7ZvWWnqN0Sl" role="2lDidJ">
                 <ref role="2zAAH1" node="5aHkq2wawG_" resolve="result" />
               </node>
             </node>
@@ -2055,7 +2053,7 @@
           <node concept="2Yz4FG" id="5aHkq2waxI7" role="2zPyp_">
             <property role="3MFFyI" value="true" />
             <node concept="2YtBXV" id="5aHkq2waxI8" role="2YtBNa">
-              <node concept="2zAAH0" id="7ZvWWnqN1ds" role="2YtBW4">
+              <node concept="2zAAH0" id="7ZvWWnqN1ds" role="2lDidJ">
                 <ref role="2zAAH1" node="5aHkq2waxI7" resolve="result" />
               </node>
             </node>
@@ -10607,7 +10605,7 @@
               <node concept="UmHTt" id="6HHp2WmO_ze" role="2lDidJ" />
             </node>
             <node concept="2YtBXV" id="6HHp2WmO_z7" role="2YtBNa">
-              <node concept="2zAAH0" id="5aHkq2w38NA" role="2YtBW4">
+              <node concept="2zAAH0" id="5aHkq2w38NA" role="2lDidJ">
                 <ref role="2zAAH1" node="6HHp2WmO_z6" resolve="result" />
               </node>
             </node>

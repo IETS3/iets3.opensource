@@ -285,9 +285,7 @@
         <child id="2807135271607939857" name="baseType" index="Uns6T" />
       </concept>
       <concept id="195141004745644975" name="org.iets3.core.expr.base.structure.AssignmentExpr" flags="ng" index="2YjPKq" />
-      <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV">
-        <child id="6481804410367607232" name="expr" index="2YtBW4" />
-      </concept>
+      <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV" />
       <concept id="6481804410366698223" name="org.iets3.core.expr.base.structure.AttemptType" flags="ng" index="2Yx5KF">
         <child id="1206081519718117779" name="successType" index="2oiIPj" />
         <child id="1206081519718117781" name="errorLiterals" index="2oiIPl" />
@@ -1440,7 +1438,7 @@
       <node concept="_fkuZ" id="79jc6Yzq3Cp" role="_fkp5">
         <node concept="2Yz4FG" id="79jc6Yzq3EF" role="_fkuY">
           <node concept="2YtBXV" id="79jc6Yzq3EG" role="2YtBNa">
-            <node concept="2zAAH0" id="79jc6Yztzd3" role="2YtBW4">
+            <node concept="2zAAH0" id="79jc6Yztzd3" role="2lDidJ">
               <ref role="2zAAH1" node="79jc6Yzq3EF" resolve="result" />
             </node>
           </node>
@@ -1461,7 +1459,7 @@
       <node concept="_fkuZ" id="79jc6YzsiiI" role="_fkp5">
         <node concept="2Yz4FG" id="79jc6YzsiiM" role="_fkuY">
           <node concept="2YtBXV" id="79jc6YzsiiN" role="2YtBNa">
-            <node concept="30bdrP" id="79jc6YzsiiO" role="2YtBW4">
+            <node concept="30bdrP" id="79jc6YzsiiO" role="2lDidJ">
               <property role="30bdrQ" value="ok" />
             </node>
           </node>
@@ -3044,7 +3042,7 @@
         <node concept="2Yz4FG" id="3ni3WidGMF_" role="1aduh9">
           <property role="3MFFyI" value="true" />
           <node concept="2YtBXV" id="3ni3WidGMFA" role="2YtBNa">
-            <node concept="1QScDb" id="3ni3WidGRtW" role="2YtBW4">
+            <node concept="1QScDb" id="3ni3WidGRtW" role="2lDidJ">
               <node concept="3sQ2Ir" id="3ni3WidGRIj" role="1QScD9" />
               <node concept="_emDc" id="3ni3WidGRdw" role="30czhm">
                 <ref role="_emDf" node="3ni3WidGutB" resolve="boxed10" />

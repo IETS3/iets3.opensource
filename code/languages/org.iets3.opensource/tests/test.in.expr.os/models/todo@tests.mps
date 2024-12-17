@@ -162,9 +162,7 @@
         <child id="2807135271607939857" name="baseType" index="Uns6T" />
       </concept>
       <concept id="195141004745644975" name="org.iets3.core.expr.base.structure.AssignmentExpr" flags="ng" index="2YjPKq" />
-      <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV">
-        <child id="6481804410367607232" name="expr" index="2YtBW4" />
-      </concept>
+      <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV" />
       <concept id="6481804410366698223" name="org.iets3.core.expr.base.structure.AttemptType" flags="ng" index="2Yx5KF">
         <child id="1206081519718117779" name="successType" index="2oiIPj" />
         <child id="1206081519718117781" name="errorLiterals" index="2oiIPl" />
@@ -3000,7 +2998,7 @@
       <node concept="2Yz4FG" id="7ZoBx3xGAJe" role="1ahQXP">
         <property role="3MFFyI" value="false" />
         <node concept="2YtBXV" id="7ZoBx3xGAJf" role="2YtBNa">
-          <node concept="2zAAH0" id="7ZoBx3xGAJg" role="2YtBW4">
+          <node concept="2zAAH0" id="7ZoBx3xGAJg" role="2lDidJ">
             <ref role="2zAAH1" node="7ZoBx3xGAJe" resolve="payload" />
           </node>
         </node>
@@ -3034,7 +3032,7 @@
         <node concept="_fku$" id="7ZoBx3xDhzN" role="_fkur" />
         <node concept="2Yz4FG" id="7ZoBx3xDn$2" role="_fkuY">
           <node concept="2YtBXV" id="7ZoBx3xDn$3" role="2YtBNa">
-            <node concept="30bdrP" id="7ZoBx3xDDBO" role="2YtBW4">
+            <node concept="30bdrP" id="7ZoBx3xDDBO" role="2lDidJ">
               <property role="30bdrQ" value="nope" />
             </node>
           </node>
@@ -3110,7 +3108,7 @@
         <node concept="_fku$" id="7ZoBx3xvqAJ" role="_fkur" />
         <node concept="2Yz4FG" id="7ZoBx3xvqAK" role="_fkuY">
           <node concept="2YtBXV" id="7ZoBx3xvqAL" role="2YtBNa">
-            <node concept="30bXRB" id="7ZoBx3xvqAM" role="2YtBW4">
+            <node concept="30bXRB" id="7ZoBx3xvqAM" role="2lDidJ">
               <property role="30bXRw" value="10" />
             </node>
           </node>
