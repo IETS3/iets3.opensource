@@ -153,9 +153,7 @@
         <child id="4944417823362108743" name="numerator" index="a1tin" />
         <child id="4944417823362108746" name="denominator" index="a1tiq" />
       </concept>
-      <concept id="4944417823362107289" name="org.iets3.core.expr.math.structure.AbsExpression" flags="ng" index="a1tT9">
-        <child id="4944417823362159067" name="expr" index="a0Cwb" />
-      </concept>
+      <concept id="4944417823362107289" name="org.iets3.core.expr.math.structure.AbsExpression" flags="ng" index="a1tT9" />
       <concept id="4944417823362115312" name="org.iets3.core.expr.math.structure.MathLoopExpr" flags="ng" index="a1vWw">
         <child id="971707942815410149" name="lower" index="39z1js" />
         <child id="971707942815429390" name="varType" index="39z40R" />
@@ -1671,7 +1669,7 @@
           <ref role="1afue_" node="M7eZQAnckY" resolve="eps" />
         </node>
         <node concept="a1tT9" id="M7eZQAwJtf" role="30dEsF">
-          <node concept="30dvUo" id="27$4JRbPOvR" role="a0Cwb">
+          <node concept="30dvUo" id="27$4JRbPOvR" role="2lDidJ">
             <node concept="1afdae" id="M7eZQAwJti" role="30dEsF">
               <ref role="1afue_" node="M7eZQAnc_N" resolve="expected" />
             </node>
