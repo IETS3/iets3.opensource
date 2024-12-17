@@ -172,9 +172,7 @@
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
     </language>
     <language id="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" name="org.iets3.core.expr.datetime">
-      <concept id="6663978461012306615" name="org.iets3.core.expr.datetime.structure.UpToOp" flags="ng" index="31hYH">
-        <child id="6663978461012303432" name="date" index="31iHi" />
-      </concept>
+      <concept id="6663978461012306615" name="org.iets3.core.expr.datetime.structure.UpToOp" flags="ng" index="31hYH" />
       <concept id="6663978461012297758" name="org.iets3.core.expr.datetime.structure.FromOp" flags="ng" index="31jO4" />
       <concept id="4639078008936503744" name="org.iets3.core.expr.datetime.structure.EmptyRangeLiteral" flags="ng" index="27Bs$u" />
       <concept id="6891143932407154959" name="org.iets3.core.expr.datetime.structure.YearValue" flags="ng" index="k_sJE" />
@@ -4757,7 +4755,7 @@
         <node concept="_fku$" id="5LVdhDvx4r_" role="_fkur" />
         <node concept="1QScDb" id="5LVdhDvx4rA" role="_fkuY">
           <node concept="31hYH" id="5LVdhDvx4va" role="1QScD9">
-            <node concept="1fc2QT" id="5LVdhDvx4rC" role="31iHi">
+            <node concept="1fc2QT" id="5LVdhDvx4rC" role="2lDidJ">
               <property role="1fc2QY" value="2020" />
               <property role="1fc2QX" value="06" />
               <property role="1fc2QW" value="01" />
@@ -4786,7 +4784,7 @@
         <node concept="_fku$" id="5LVdhDvx4xY" role="_fkur" />
         <node concept="1QScDb" id="5LVdhDvx4xZ" role="_fkuY">
           <node concept="31hYH" id="5LVdhDvx4y0" role="1QScD9">
-            <node concept="1fc2QT" id="5LVdhDvx4y1" role="31iHi">
+            <node concept="1fc2QT" id="5LVdhDvx4y1" role="2lDidJ">
               <property role="1fc2QY" value="2010" />
               <property role="1fc2QX" value="01" />
               <property role="1fc2QW" value="01" />
@@ -4836,7 +4834,7 @@
         <node concept="_fku$" id="5LVdhDvxnVO" role="_fkur" />
         <node concept="1QScDb" id="5LVdhDvxnVP" role="_fkuY">
           <node concept="31hYH" id="5LVdhDvxnZh" role="1QScD9">
-            <node concept="1fc2QT" id="5LVdhDvxo5k" role="31iHi">
+            <node concept="1fc2QT" id="5LVdhDvxo5k" role="2lDidJ">
               <property role="1fc2QY" value="2021" />
               <property role="1fc2QX" value="02" />
               <property role="1fc2QW" value="01" />
