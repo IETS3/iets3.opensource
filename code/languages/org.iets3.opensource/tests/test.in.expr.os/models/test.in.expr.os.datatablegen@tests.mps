@@ -17,6 +17,9 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
       <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
@@ -76,7 +79,6 @@
       </concept>
       <concept id="512624657163648898" name="org.iets3.core.expr.data.structure.DataTableLookUp" flags="ng" index="3AhkFE">
         <child id="8847603084240729054" name="col" index="2v6bfY" />
-        <child id="512624657163648903" name="arg" index="3AhkFJ" />
       </concept>
       <concept id="231307155598475891" name="org.iets3.core.expr.data.structure.DataColOp" flags="ng" index="3Cgsri">
         <reference id="231307155598477016" name="col" index="3Cgs9T" />
@@ -241,11 +243,11 @@
           <node concept="wdKpt" id="6wzrxL2ZEif" role="30czhm">
             <node concept="1QScDb" id="6wzrxL2ZDlK" role="30czhm">
               <node concept="3AhkFE" id="6wzrxL2ZDnq" role="1QScD9">
-                <node concept="30bXRB" id="6wzrxL2ZDRX" role="3AhkFJ">
-                  <property role="30bXRw" value="3" />
-                </node>
                 <node concept="2v6aBJ" id="6wzrxL2ZDEO" role="2v6bfY">
                   <ref role="2v6aBK" node="6wzrxL2VwCX" resolve="val1" />
+                </node>
+                <node concept="30bXRB" id="6wzrxL2ZDRX" role="2lDidJ">
+                  <property role="30bXRw" value="3" />
                 </node>
               </node>
               <node concept="3Ch18X" id="6wzrxL2ZDk7" role="30czhm">
