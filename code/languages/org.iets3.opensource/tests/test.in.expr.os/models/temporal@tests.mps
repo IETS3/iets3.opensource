@@ -277,7 +277,6 @@
       <concept id="4880743667108569396" name="org.iets3.core.expr.simpleTypes.structure.BoundsExpression" flags="ng" index="361oeP">
         <child id="4880743667108569400" name="lower" index="361oeT" />
         <child id="4880743667108569403" name="upper" index="361oeU" />
-        <child id="4723261570619513266" name="expr" index="3zyZNH" />
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
@@ -3906,14 +3905,14 @@
           </node>
         </node>
         <node concept="361oeP" id="vVoQWCcEz2" role="3ix9pP">
-          <node concept="3ix4Yz" id="vVoQWCcEz3" role="3zyZNH">
-            <ref role="3ix4Yw" node="vVoQWC6BNX" resolve="it" />
-          </node>
           <node concept="30bXRB" id="vVoQWCcEz4" role="361oeT">
             <property role="30bXRw" value="0.00" />
           </node>
           <node concept="30bXRB" id="vVoQWCcEz5" role="361oeU">
             <property role="30bXRw" value="150.00" />
+          </node>
+          <node concept="3ix4Yz" id="vVoQWCcEz3" role="2lDidJ">
+            <ref role="3ix4Yw" node="vVoQWC6BNX" resolve="it" />
           </node>
         </node>
       </node>
