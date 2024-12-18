@@ -83,9 +83,7 @@
       <concept id="8293738266739942474" name="org.iets3.core.expr.simpleTypes.structure.StringInterpolationExpr" flags="ng" index="2206d8">
         <child id="8293738266739942475" name="text" index="2206d9" />
       </concept>
-      <concept id="8293738266739943650" name="org.iets3.core.expr.simpleTypes.structure.InterpolExprWord" flags="ng" index="2206Zw">
-        <child id="8293738266739943651" name="expr" index="2206Zx" />
-      </concept>
+      <concept id="8293738266739943650" name="org.iets3.core.expr.simpleTypes.structure.InterpolExprWord" flags="ng" index="2206Zw" />
       <concept id="1330041117646892901" name="org.iets3.core.expr.simpleTypes.structure.NumberRangeSpec" flags="ng" index="2gteSW">
         <property id="1330041117646892912" name="max" index="2gteSD" />
         <property id="1330041117646892911" name="min" index="2gteSQ" />
@@ -915,7 +913,7 @@
             <property role="19SUeA" value="Here" />
           </node>
           <node concept="2206Zw" id="7cphKbL9fti" role="19SJt6">
-            <node concept="_emDc" id="7cphKbL9ftA" role="2206Zx">
+            <node concept="_emDc" id="7cphKbL9ftA" role="2lDidJ">
               <ref role="_emDf" node="7k$Bvd3eTmz" resolve="a" />
             </node>
           </node>
@@ -933,7 +931,7 @@
             <property role="19SUeA" value="  with some   space   upfront" />
           </node>
           <node concept="2206Zw" id="39iG6BG5RM8" role="19SJt6">
-            <node concept="_emDc" id="39iG6BG5RMv" role="2206Zx">
+            <node concept="_emDc" id="39iG6BG5RMv" role="2lDidJ">
               <ref role="_emDf" node="7k$Bvd3eTmz" resolve="a" />
             </node>
           </node>
@@ -949,7 +947,7 @@
         <node concept="19SGf9" id="39iG6BG5UQa" role="2206d9">
           <node concept="19SUe$" id="39iG6BG5UQt" role="19SJt6" />
           <node concept="2206Zw" id="39iG6BG5UQq" role="19SJt6">
-            <node concept="_emDc" id="39iG6BG5UQN" role="2206Zx">
+            <node concept="_emDc" id="39iG6BG5UQN" role="2lDidJ">
               <ref role="_emDf" node="7k$Bvd3eTmz" resolve="a" />
             </node>
           </node>
@@ -967,7 +965,7 @@
             <property role="19SUeA" value="at the end" />
           </node>
           <node concept="2206Zw" id="39iG6BG5Vm_" role="19SJt6">
-            <node concept="_emDc" id="39iG6BG5VmW" role="2206Zx">
+            <node concept="_emDc" id="39iG6BG5VmW" role="2lDidJ">
               <ref role="_emDf" node="7k$Bvd3eTmz" resolve="a" />
             </node>
           </node>
@@ -981,7 +979,7 @@
         <node concept="19SGf9" id="39iG6BGyHPw" role="2206d9">
           <node concept="19SUe$" id="39iG6BGyHPP" role="19SJt6" />
           <node concept="2206Zw" id="39iG6BGyHPM" role="19SJt6">
-            <node concept="30dDZf" id="39iG6BGyHRC" role="2206Zx">
+            <node concept="30dDZf" id="39iG6BGyHRC" role="2lDidJ">
               <node concept="_emDc" id="39iG6BGyHSc" role="30dEs_">
                 <ref role="_emDf" node="39iG6BG60iG" resolve="g" />
               </node>
@@ -1002,13 +1000,13 @@
             <property role="19SUeA" value="  with deliberate" />
           </node>
           <node concept="2206Zw" id="IYj_dZsOrO" role="19SJt6">
-            <node concept="_emDc" id="IYj_dZsOrP" role="2206Zx">
+            <node concept="_emDc" id="IYj_dZsOrP" role="2lDidJ">
               <ref role="_emDf" node="39iG6BG5ZL9" resolve="f" />
             </node>
           </node>
           <node concept="19SUe$" id="IYj_dZsPwk" role="19SJt6" />
           <node concept="2206Zw" id="IYj_dZsPwg" role="19SJt6">
-            <node concept="_emDc" id="IYj_dZsPx5" role="2206Zx">
+            <node concept="_emDc" id="IYj_dZsPx5" role="2lDidJ">
               <ref role="_emDf" node="39iG6BG60iG" resolve="g" />
             </node>
           </node>

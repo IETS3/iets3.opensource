@@ -150,9 +150,7 @@
       <concept id="8293738266739942474" name="org.iets3.core.expr.simpleTypes.structure.StringInterpolationExpr" flags="ng" index="2206d8">
         <child id="8293738266739942475" name="text" index="2206d9" />
       </concept>
-      <concept id="8293738266739943650" name="org.iets3.core.expr.simpleTypes.structure.InterpolExprWord" flags="ng" index="2206Zw">
-        <child id="8293738266739943651" name="expr" index="2206Zx" />
-      </concept>
+      <concept id="8293738266739943650" name="org.iets3.core.expr.simpleTypes.structure.InterpolExprWord" flags="ng" index="2206Zw" />
       <concept id="1330041117646892924" name="org.iets3.core.expr.simpleTypes.structure.NumberPrecSpec" flags="ng" index="2gteS_">
         <property id="1330041117646892934" name="prec" index="2gteVv" />
       </concept>
@@ -2208,7 +2206,7 @@
                     <property role="19SUeA" value="The author" />
                   </node>
                   <node concept="2206Zw" id="4ptnK4ii2NU" role="19SJt6">
-                    <node concept="1QScDb" id="4ptnK4ii2PL" role="2206Zx">
+                    <node concept="1QScDb" id="4ptnK4ii2PL" role="2lDidJ">
                       <node concept="22r_EY" id="4ptnK4ii3ur" role="1QScD9">
                         <property role="TrG5h" value="author" />
                       </node>
@@ -2219,7 +2217,7 @@
                     <property role="19SUeA" value="has published in" />
                   </node>
                   <node concept="2206Zw" id="4ptnK4ii4L2" role="19SJt6">
-                    <node concept="1QScDb" id="4ptnK4ipC$O" role="2206Zx">
+                    <node concept="1QScDb" id="4ptnK4ipC$O" role="2lDidJ">
                       <node concept="1k5sNT" id="4ptnK4ipDhL" role="1QScD9">
                         <node concept="30bdrP" id="4ptnK4ipDYH" role="2lDidJ">
                           <property role="30bdrQ" value=", " />
