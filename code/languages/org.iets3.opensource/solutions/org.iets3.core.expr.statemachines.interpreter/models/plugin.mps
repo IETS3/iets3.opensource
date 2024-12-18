@@ -15,6 +15,7 @@
     <import index="8ors" ref="r:b42cba76-0ae4-471b-92c0-7290e4540c95(org.iets3.core.expr.statemachines.plugin)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="u5a1" ref="r:fbe318af-2afe-4858-8d66-a206b7f47bc8(org.iets3.core.expr.mutable.interpreter.plugin)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -439,7 +440,7 @@
       <ref role="qq9wM" to="19m5:7$TgoCYhZdt" resolve="Action" />
       <node concept="3vetai" id="7$TgoCYm4rP" role="3vQZUl">
         <node concept="rqRoa" id="7$TgoCYm4s3" role="3vdyny">
-          <ref role="rqRob" to="19m5:7$TgoCYhZdu" resolve="expr" />
+          <ref role="rqRob" to="hm2y:3G_qVqIw4zp" resolve="expr" />
         </node>
       </node>
     </node>
