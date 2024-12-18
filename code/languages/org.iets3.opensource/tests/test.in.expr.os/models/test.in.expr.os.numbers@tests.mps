@@ -70,9 +70,7 @@
       <concept id="4988624180052598016" name="org.iets3.core.expr.tests.structure.RealEqualsTestOp" flags="ng" index="2cNFD2">
         <property id="4988624180052918199" name="decimals" index="2cKlzP" />
       </concept>
-      <concept id="1801842150043102459" name="org.iets3.core.expr.tests.structure.OptExpression" flags="ng" index="2nD44o">
-        <child id="1801842150043102462" name="expr" index="2nD44t" />
-      </concept>
+      <concept id="1801842150043102459" name="org.iets3.core.expr.tests.structure.OptExpression" flags="ng" index="2nD44o" />
       <concept id="1801842150043820356" name="org.iets3.core.expr.tests.structure.NoneExpr" flags="ng" index="2nGkMB" />
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
@@ -1350,7 +1348,7 @@
         <node concept="_fku$" id="1$1rueeFPKW" role="_fkur" />
         <node concept="30dDZf" id="1$1rueeFPLW" role="_fkuY">
           <node concept="2nD44o" id="7$ajNzjL5sB" role="30dEsF">
-            <node concept="30bdrP" id="7$ajNzjL6rZ" role="2nD44t">
+            <node concept="30bdrP" id="7$ajNzjL6rZ" role="2lDidJ">
               <property role="30bdrQ" value="Hallo" />
             </node>
           </node>
@@ -1383,7 +1381,7 @@
             <property role="30bXRw" value="1" />
           </node>
           <node concept="2nD44o" id="1$1rueeKK3o" role="30dEsF">
-            <node concept="30bXRB" id="1$1rueeKK3p" role="2nD44t">
+            <node concept="30bXRB" id="1$1rueeKK3p" role="2lDidJ">
               <property role="30bXRw" value="5" />
             </node>
           </node>
@@ -1403,7 +1401,7 @@
               <property role="30bXRw" value="2" />
             </node>
             <node concept="2nD44o" id="1$1rueeFRSk" role="30dEsF">
-              <node concept="30bXRB" id="1$1rueeFRSl" role="2nD44t">
+              <node concept="30bXRB" id="1$1rueeFRSl" role="2lDidJ">
                 <property role="30bXRw" value="5" />
               </node>
             </node>

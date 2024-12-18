@@ -412,9 +412,7 @@
       <concept id="8219602584783477663" name="org.iets3.core.expr.tests.structure.ConstraintFailedTestItem" flags="ng" index="mXNUv">
         <child id="8219602584783494093" name="actual" index="mXJVd" />
       </concept>
-      <concept id="1801842150043102459" name="org.iets3.core.expr.tests.structure.OptExpression" flags="ng" index="2nD44o">
-        <child id="1801842150043102462" name="expr" index="2nD44t" />
-      </concept>
+      <concept id="1801842150043102459" name="org.iets3.core.expr.tests.structure.OptExpression" flags="ng" index="2nD44o" />
       <concept id="1360296727216854050" name="org.iets3.core.expr.tests.structure.AbstractVectorCollection" flags="ng" index="2s0UE8">
         <child id="1360296727216854051" name="vectors" index="2s0UE9" />
         <child id="1360296727229759740" name="producer" index="2tibTm" />
@@ -10994,7 +10992,7 @@
               <node concept="2DdRWr" id="5IOlOc8Lw1b" role="7EUXB" />
             </node>
             <node concept="2nD44o" id="3gKGtj9bXyz" role="2lDidJ">
-              <node concept="_emDc" id="3gKGtj9bXy$" role="2nD44t">
+              <node concept="_emDc" id="3gKGtj9bXy$" role="2lDidJ">
                 <ref role="_emDf" node="3gKGtj9bXyd" resolve="ocean" />
               </node>
             </node>
@@ -11010,7 +11008,7 @@
               <ref role="2Jt$xV" node="3gKGtj9bXy7" resolve="blue" />
             </node>
             <node concept="2nD44o" id="3gKGtj9bXyG" role="2lDidJ">
-              <node concept="_emDc" id="3gKGtj9bXyH" role="2nD44t">
+              <node concept="_emDc" id="3gKGtj9bXyH" role="2lDidJ">
                 <ref role="_emDf" node="3gKGtj9bXyd" resolve="ocean" />
               </node>
             </node>
