@@ -62,9 +62,7 @@
       <concept id="1801842150043102459" name="org.iets3.core.expr.tests.structure.OptExpression" flags="ng" index="2nD44o">
         <child id="1801842150043102462" name="expr" index="2nD44t" />
       </concept>
-      <concept id="1801842150043820356" name="org.iets3.core.expr.tests.structure.NoneExpr" flags="ng" index="2nGkMB">
-        <child id="1801842150043820375" name="expr" index="2nGkMO" />
-      </concept>
+      <concept id="1801842150043820356" name="org.iets3.core.expr.tests.structure.NoneExpr" flags="ng" index="2nGkMB" />
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -896,7 +894,7 @@
         <node concept="1QScDb" id="5WNmJ7E5JKz" role="_fkuY">
           <node concept="1uMQU5" id="5WNmJ7E5JL4" role="1QScD9" />
           <node concept="2nGkMB" id="5WNmJ7E3u7E" role="2lDidJ">
-            <node concept="30bdrP" id="5WNmJ7E3u7Q" role="2nGkMO">
+            <node concept="30bdrP" id="5WNmJ7E3u7Q" role="2lDidJ">
               <property role="30bdrQ" value="Hello" />
             </node>
           </node>
