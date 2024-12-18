@@ -476,7 +476,6 @@
       </concept>
       <concept id="4944417823362156001" name="org.iets3.core.expr.math.structure.SumExpression" flags="ng" index="a0DKL" />
       <concept id="4944417823362113527" name="org.iets3.core.expr.math.structure.LogExpression" flags="ng" index="a1soB">
-        <child id="4944417823362160996" name="expr" index="a0C2O" />
         <child id="4944417823362113528" name="logOf" index="a1soC" />
       </concept>
       <concept id="4944417823362108742" name="org.iets3.core.expr.math.structure.FractionExpression" flags="ng" index="a1tim">
@@ -4015,16 +4014,16 @@
         <node concept="2zPypq" id="1JTgXSYRCyL" role="_iOnC">
           <property role="TrG5h" value="logWithoutUnit" />
           <node concept="a1soB" id="1JTgXSYRCAs" role="2zPyp_">
-            <node concept="30dDZf" id="1JTgXSYRCFe" role="a0C2O">
+            <node concept="30bXRB" id="1JTgXSYRCAQ" role="a1soC">
+              <property role="30bXRw" value="10" />
+            </node>
+            <node concept="30dDZf" id="1JTgXSYRCFe" role="2lDidJ">
               <node concept="30bXRB" id="1JTgXSYRCGg" role="30dEs_">
                 <property role="30bXRw" value="5" />
               </node>
               <node concept="30bXRB" id="1JTgXSYRCBw" role="30dEsF">
                 <property role="30bXRw" value="5" />
               </node>
-            </node>
-            <node concept="30bXRB" id="1JTgXSYRCAQ" role="a1soC">
-              <property role="30bXRw" value="10" />
             </node>
           </node>
         </node>
@@ -5316,7 +5315,10 @@
         <node concept="2zPypq" id="1JTgXSYRxg7" role="_iOnC">
           <property role="TrG5h" value="logExpression" />
           <node concept="a1soB" id="1JTgXSYRxia" role="2zPyp_">
-            <node concept="1YnStw" id="1JTgXSYRCqr" role="a0C2O">
+            <node concept="30bXRB" id="1JTgXSYRxi$" role="a1soC">
+              <property role="30bXRw" value="10" />
+            </node>
+            <node concept="1YnStw" id="1JTgXSYRCqr" role="2lDidJ">
               <node concept="CIsGf" id="1JTgXSYRCqk" role="2c7tTI">
                 <node concept="CIsvn" id="1JTgXSYRCql" role="CIi4h">
                   <ref role="CIi3I" to="ku0a:5XaocLWHSS5" resolve="s" />
@@ -5328,9 +5330,6 @@
               <node concept="7CXmI" id="1JTgXSYRCs6" role="lGtFl">
                 <node concept="1TM$A" id="1JTgXSYRCuc" role="7EUXB" />
               </node>
-            </node>
-            <node concept="30bXRB" id="1JTgXSYRxi$" role="a1soC">
-              <property role="30bXRw" value="10" />
             </node>
           </node>
         </node>
