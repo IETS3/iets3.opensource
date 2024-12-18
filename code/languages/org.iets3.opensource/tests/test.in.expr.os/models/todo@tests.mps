@@ -367,9 +367,7 @@
       <concept id="2222228766293363750" name="org.iets3.core.expr.lambda.structure.LocalVarRef" flags="ng" index="uhfPG">
         <reference id="2222228766293363778" name="var" index="uhfO8" />
       </concept>
-      <concept id="2222228766292974329" name="org.iets3.core.expr.lambda.structure.LocalVarDeclExpr" flags="ng" index="umIIN">
-        <child id="4790956042241053105" name="expr" index="1adJii" />
-      </concept>
+      <concept id="2222228766292974329" name="org.iets3.core.expr.lambda.structure.LocalVarDeclExpr" flags="ng" index="umIIN" />
       <concept id="867786408880429238" name="org.iets3.core.expr.lambda.structure.FunResExpr" flags="ng" index="Ic2ui" />
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
@@ -2486,13 +2484,13 @@
       <node concept="1aduha" id="1VmWkC0GRed" role="1ahQXP">
         <node concept="umIIN" id="1VmWkC0GRee" role="1aduh9">
           <property role="TrG5h" value="x" />
-          <node concept="1afdae" id="1VmWkC0GRef" role="1adJii">
+          <node concept="1afdae" id="1VmWkC0GRef" role="2lDidJ">
             <ref role="1afue_" node="1VmWkC0GRe_" resolve="a" />
           </node>
         </node>
         <node concept="umIIN" id="1VmWkC0GReg" role="1aduh9">
           <property role="TrG5h" value="y" />
-          <node concept="1afdae" id="1VmWkC0GRei" role="1adJii">
+          <node concept="1afdae" id="1VmWkC0GRei" role="2lDidJ">
             <ref role="1afue_" node="1VmWkC0GReB" resolve="b" />
           </node>
         </node>

@@ -119,9 +119,7 @@
       <concept id="2222228766293363750" name="org.iets3.core.expr.lambda.structure.LocalVarRef" flags="ng" index="uhfPG">
         <reference id="2222228766293363778" name="var" index="uhfO8" />
       </concept>
-      <concept id="2222228766292974329" name="org.iets3.core.expr.lambda.structure.LocalVarDeclExpr" flags="ng" index="umIIN">
-        <child id="4790956042241053105" name="expr" index="1adJii" />
-      </concept>
+      <concept id="2222228766292974329" name="org.iets3.core.expr.lambda.structure.LocalVarDeclExpr" flags="ng" index="umIIN" />
       <concept id="867786408880429238" name="org.iets3.core.expr.lambda.structure.FunResExpr" flags="ng" index="Ic2ui" />
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
@@ -831,10 +829,10 @@
       <node concept="1aduha" id="44yGPKm6YQq" role="1ahQXP">
         <node concept="umIIN" id="44yGPKm6YQB" role="1aduh9">
           <property role="TrG5h" value="z" />
-          <node concept="30bXRB" id="44yGPKm6YRs" role="1adJii">
+          <node concept="mLuIC" id="44yGPKm6YR9" role="2zM23F" />
+          <node concept="30bXRB" id="44yGPKm6YRs" role="2lDidJ">
             <property role="30bXRw" value="0" />
           </node>
-          <node concept="mLuIC" id="44yGPKm6YR9" role="2zM23F" />
         </node>
         <node concept="2fGnzi" id="44yGPKm6YSR" role="1aduh9">
           <node concept="2fGnzd" id="44yGPKm6YSS" role="2fGnxs">

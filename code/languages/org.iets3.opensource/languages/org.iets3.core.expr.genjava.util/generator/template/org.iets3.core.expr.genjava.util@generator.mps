@@ -356,9 +356,7 @@
       <concept id="2222228766293363750" name="org.iets3.core.expr.lambda.structure.LocalVarRef" flags="ng" index="uhfPG">
         <reference id="2222228766293363778" name="var" index="uhfO8" />
       </concept>
-      <concept id="2222228766292974329" name="org.iets3.core.expr.lambda.structure.LocalVarDeclExpr" flags="ng" index="umIIN">
-        <child id="4790956042241053105" name="expr" index="1adJii" />
-      </concept>
+      <concept id="2222228766292974329" name="org.iets3.core.expr.lambda.structure.LocalVarDeclExpr" flags="ng" index="umIIN" />
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
       </concept>
@@ -1668,7 +1666,7 @@
           <node concept="1aduha" id="6hYPZtwvmyq" role="1ahQXP">
             <node concept="umIIN" id="6hYPZtwvmy_" role="1aduh9">
               <property role="TrG5h" value="xyz" />
-              <node concept="30bdrP" id="6hYPZtwvmDG" role="1adJii">
+              <node concept="30bdrP" id="6hYPZtwvmDG" role="2lDidJ">
                 <property role="30bdrQ" value="42" />
               </node>
             </node>

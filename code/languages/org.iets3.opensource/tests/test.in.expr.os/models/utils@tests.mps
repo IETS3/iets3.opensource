@@ -217,9 +217,7 @@
       <concept id="2222228766293363750" name="org.iets3.core.expr.lambda.structure.LocalVarRef" flags="ng" index="uhfPG">
         <reference id="2222228766293363778" name="var" index="uhfO8" />
       </concept>
-      <concept id="2222228766292974329" name="org.iets3.core.expr.lambda.structure.LocalVarDeclExpr" flags="ng" index="umIIN">
-        <child id="4790956042241053105" name="expr" index="1adJii" />
-      </concept>
+      <concept id="2222228766292974329" name="org.iets3.core.expr.lambda.structure.LocalVarDeclExpr" flags="ng" index="umIIN" />
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
       </concept>
@@ -984,10 +982,10 @@
       <node concept="1aduha" id="6OunYCeYb5R" role="1ahQXP">
         <node concept="umIIN" id="6OunYCeYb65" role="1aduh9">
           <property role="TrG5h" value="t1" />
-          <node concept="30bXRB" id="6OunYCeYb6q" role="1adJii">
+          <node concept="mLuIC" id="6OunYCeYc9u" role="2zM23F" />
+          <node concept="30bXRB" id="6OunYCeYb6q" role="2lDidJ">
             <property role="30bXRw" value="0" />
           </node>
-          <node concept="mLuIC" id="6OunYCeYc9u" role="2zM23F" />
         </node>
         <node concept="1fMURV" id="6OunYCf3taX" role="1aduh9">
           <property role="0Rz4W" value="-555229566" />
@@ -3375,10 +3373,10 @@
       <node concept="1aduha" id="6hYPZtwvBul" role="1ahQXP">
         <node concept="umIIN" id="6hYPZtwvBuy" role="1aduh9">
           <property role="TrG5h" value="x" />
-          <node concept="30bXRB" id="6hYPZtwvBuR" role="1adJii">
+          <node concept="mLuIC" id="6hYPZtwvBPB" role="2zM23F" />
+          <node concept="30bXRB" id="6hYPZtwvBuR" role="2lDidJ">
             <property role="30bXRw" value="0" />
           </node>
-          <node concept="mLuIC" id="6hYPZtwvBPB" role="2zM23F" />
         </node>
         <node concept="1fMURV" id="6hYPZtwvBwC" role="1aduh9">
           <property role="0Rz4W" value="510191847" />
@@ -3434,7 +3432,7 @@
       <node concept="1aduha" id="44yGPKl4lcr" role="1ahQXP">
         <node concept="umIIN" id="44yGPKl4lcC" role="1aduh9">
           <property role="TrG5h" value="x" />
-          <node concept="30bdrP" id="44yGPKl4lcZ" role="1adJii">
+          <node concept="30bdrP" id="44yGPKl4lcZ" role="2lDidJ">
             <property role="30bdrQ" value="hello" />
           </node>
         </node>
