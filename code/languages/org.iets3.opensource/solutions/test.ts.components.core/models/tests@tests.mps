@@ -127,7 +127,6 @@
       </concept>
       <concept id="5661183028474304615" name="org.iets3.components.core.structure.ParameterValue" flags="ng" index="ifHuv">
         <reference id="5661183028474304622" name="param" index="ifHum" />
-        <child id="5661183028474304616" name="value" index="ifHug" />
       </concept>
       <concept id="229512757699544987" name="org.iets3.components.core.structure.Parameter" flags="ng" index="pdmcS">
         <child id="229512757699544992" name="defaultValue" index="pdmc3" />
@@ -900,7 +899,7 @@
               </node>
               <node concept="ifHuv" id="AamzMu0_lJ" role="MGlrR">
                 <ref role="ifHum" node="AamzMu0_kN" resolve="param" />
-                <node concept="18Ww8V" id="AamzMu0_m0" role="ifHug">
+                <node concept="18Ww8V" id="AamzMu0_m0" role="2lDidJ">
                   <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
                 </node>
               </node>
