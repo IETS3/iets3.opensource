@@ -2408,5 +2408,12 @@
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="PlHQZ" id="1azguFQNaDo">
+    <property role="EcuMT" value="1342989591305300568" />
+    <property role="TrG5h" value="IContainAssignableExpression" />
+    <node concept="PrWs8" id="1azguFQNaDp" role="PrDN$">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
+    </node>
+  </node>
 </model>
 
