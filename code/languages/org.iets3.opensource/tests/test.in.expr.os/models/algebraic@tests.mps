@@ -274,9 +274,7 @@
       <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.BoxUpdateTarget" flags="ng" index="3sPC8h">
         <child id="4255172619711277798" name="value" index="3sPC8l" />
       </concept>
-      <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H">
-        <child id="4255172619710740514" name="value" index="3sRH3h" />
-      </concept>
+      <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2386,7 +2384,7 @@
       <property role="TrG5h" value="monthsWorked" />
       <property role="0Rz4W" value="-510759924" />
       <node concept="3sRH3H" id="28$LOSAaG3E" role="2zPyp_">
-        <node concept="3iBYfx" id="28$LOSAaG3Z" role="3sRH3h">
+        <node concept="3iBYfx" id="28$LOSAaG3Z" role="2lDidJ">
           <node concept="ygwf7" id="28$LOSAaG4c" role="ygBzB">
             <node concept="2Ss9cW" id="28$LOSAaG4J" role="ygwf4">
               <ref role="2Ss9cX" node="28$LOSAaC_i" resolve="WorkMonth" />

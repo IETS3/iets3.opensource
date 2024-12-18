@@ -682,9 +682,7 @@
         <child id="4255172619711277798" name="value" index="3sPC8l" />
       </concept>
       <concept id="4255172619710841704" name="org.iets3.core.expr.mutable.structure.BoxValueTarget" flags="ng" index="3sQ2Ir" />
-      <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H">
-        <child id="4255172619710740514" name="value" index="3sRH3h" />
-      </concept>
+      <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H" />
       <concept id="3795092733479561024" name="org.iets3.core.expr.mutable.structure.NowExpression" flags="ng" index="3C7svV" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
@@ -11289,7 +11287,7 @@
         <node concept="2zPypq" id="3i3CWWtziew" role="_iOnC">
           <property role="TrG5h" value="globalcounter" />
           <node concept="3sRH3H" id="3i3CWWtziiO" role="2zPyp_">
-            <node concept="30bXRB" id="3i3CWWtzij3" role="3sRH3h">
+            <node concept="30bXRB" id="3i3CWWtzij3" role="2lDidJ">
               <property role="30bXRw" value="10" />
             </node>
           </node>
@@ -11376,7 +11374,7 @@
         <node concept="2zPypq" id="3ni3WiedEJH" role="_iOnC">
           <property role="TrG5h" value="state" />
           <node concept="3sRH3H" id="3ni3WiedEKr" role="2zPyp_">
-            <node concept="30bXRB" id="3ni3WiedEKK" role="3sRH3h">
+            <node concept="30bXRB" id="3ni3WiedEKK" role="2lDidJ">
               <property role="30bXRw" value="10" />
             </node>
           </node>
