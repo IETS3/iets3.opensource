@@ -74,7 +74,7 @@
     <module reference="f003a0fe-c140-41d7-a145-ea42368e581c(org.iets3.core.expr.stringvalidation)" version="0" />
     <module reference="ad2cd2ae-226c-4046-9241-9790f9c3a35e(org.iets3.core.expr.stringvalidation.interpreter)" version="0" />
     <module reference="f38b69a3-1d33-4f9b-84e0-ac1095df2998(org.iets3.core.expr.stringvalidation.runtime)" version="0" />
-    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
+    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="3" />
   </dependencyVersions>
 </solution>
 

@@ -111,7 +111,7 @@
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="6" />
     <module reference="7bcf9284-ca29-484f-a3b3-2855bdd813ad(org.iets3.core.expr.simpleTypes.tests)" version="0" />
     <module reference="d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)" version="4" />
-    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
+    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="3" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)</extendedLanguage>

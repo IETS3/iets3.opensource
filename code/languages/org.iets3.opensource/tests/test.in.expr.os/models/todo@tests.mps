@@ -251,9 +251,7 @@
       <concept id="8293738266741050660" name="org.iets3.core.expr.toplevel.structure.ProjectOp" flags="ng" index="22cOCA">
         <child id="8293738266741050730" name="members" index="22cODC" />
       </concept>
-      <concept id="8293738266741050664" name="org.iets3.core.expr.toplevel.structure.ProjectMember" flags="ng" index="22cOCE">
-        <child id="8293738266741050670" name="expr" index="22cOCG" />
-      </concept>
+      <concept id="8293738266741050664" name="org.iets3.core.expr.toplevel.structure.ProjectMember" flags="ng" index="22cOCE" />
       <concept id="8293738266741050575" name="org.iets3.core.expr.toplevel.structure.InlineRecordType" flags="ng" index="22cOJd">
         <child id="5070313213707306521" name="members" index="1kCL$o" />
       </concept>
@@ -1020,7 +1018,7 @@
         <node concept="22cOCA" id="5ipapt3EfHE" role="1QScD9">
           <node concept="22cOCE" id="5ipapt3EfHF" role="22cODC">
             <property role="TrG5h" value="name" />
-            <node concept="1QScDb" id="5ipapt3EfHG" role="22cOCG">
+            <node concept="1QScDb" id="5ipapt3EfHG" role="2lDidJ">
               <node concept="3o_JK" id="5ipapt3EfHH" role="1QScD9">
                 <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
               </node>
@@ -1029,7 +1027,7 @@
           </node>
           <node concept="22cOCE" id="5ipapt3EfHJ" role="22cODC">
             <property role="TrG5h" value="age" />
-            <node concept="1QScDb" id="5ipapt3EfHK" role="22cOCG">
+            <node concept="1QScDb" id="5ipapt3EfHK" role="2lDidJ">
               <node concept="3o_JK" id="5ipapt3EfHL" role="1QScD9">
                 <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
               </node>
@@ -1226,7 +1224,7 @@
         <node concept="22cOCA" id="7aUGNm6u1fs" role="1QScD9">
           <node concept="22cOCE" id="7aUGNm6ubkE" role="22cODC">
             <property role="TrG5h" value="name" />
-            <node concept="1QScDb" id="7aUGNm6u_Z$" role="22cOCG">
+            <node concept="1QScDb" id="7aUGNm6u_Z$" role="2lDidJ">
               <node concept="3o_JK" id="6V3iu1dkYqT" role="1QScD9">
                 <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
               </node>
@@ -1235,7 +1233,7 @@
           </node>
           <node concept="22cOCE" id="7aUGNm6uKtL" role="22cODC">
             <property role="TrG5h" value="age" />
-            <node concept="1QScDb" id="7aUGNm6vaPr" role="22cOCG">
+            <node concept="1QScDb" id="7aUGNm6vaPr" role="2lDidJ">
               <node concept="3o_JK" id="7aUGNm6vkX3" role="1QScD9">
                 <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
               </node>
@@ -1421,7 +1419,7 @@
               <node concept="22cOCA" id="7aUGNm6QNQv" role="1QScD9">
                 <node concept="22cOCE" id="7aUGNm6QNQw" role="22cODC">
                   <property role="TrG5h" value="name" />
-                  <node concept="1QScDb" id="7aUGNm6QNQx" role="22cOCG">
+                  <node concept="1QScDb" id="7aUGNm6QNQx" role="2lDidJ">
                     <node concept="3o_JK" id="6V3iu1dr6J7" role="1QScD9">
                       <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
                     </node>
@@ -1430,7 +1428,7 @@
                 </node>
                 <node concept="22cOCE" id="7aUGNm6QNQ$" role="22cODC">
                   <property role="TrG5h" value="age" />
-                  <node concept="1QScDb" id="7aUGNm6QNQ_" role="22cOCG">
+                  <node concept="1QScDb" id="7aUGNm6QNQ_" role="2lDidJ">
                     <node concept="3o_JK" id="6V3iu1dqG7a" role="1QScD9">
                       <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
                     </node>
@@ -1479,7 +1477,7 @@
               <node concept="22cOCA" id="7aUGNm6QOqT" role="1QScD9">
                 <node concept="22cOCE" id="7aUGNm6QOqU" role="22cODC">
                   <property role="TrG5h" value="name" />
-                  <node concept="1QScDb" id="7aUGNm6QOqV" role="22cOCG">
+                  <node concept="1QScDb" id="7aUGNm6QOqV" role="2lDidJ">
                     <node concept="3o_JK" id="6V3iu1dos6H" role="1QScD9">
                       <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
                     </node>
@@ -1488,7 +1486,7 @@
                 </node>
                 <node concept="22cOCE" id="7aUGNm6QOqY" role="22cODC">
                   <property role="TrG5h" value="age" />
-                  <node concept="1QScDb" id="7aUGNm6QOqZ" role="22cOCG">
+                  <node concept="1QScDb" id="7aUGNm6QOqZ" role="2lDidJ">
                     <node concept="3o_JK" id="6V3iu1dpLqR" role="1QScD9">
                       <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
                     </node>
@@ -1537,7 +1535,7 @@
               <node concept="22cOCA" id="7aUGNm6QOZZ" role="1QScD9">
                 <node concept="22cOCE" id="7aUGNm6QP00" role="22cODC">
                   <property role="TrG5h" value="name" />
-                  <node concept="1QScDb" id="7aUGNm6QP01" role="22cOCG">
+                  <node concept="1QScDb" id="7aUGNm6QP01" role="2lDidJ">
                     <node concept="3o_JK" id="7aUGNm6QP02" role="1QScD9">
                       <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
                     </node>
@@ -1546,7 +1544,7 @@
                 </node>
                 <node concept="22cOCE" id="7aUGNm6QP04" role="22cODC">
                   <property role="TrG5h" value="age" />
-                  <node concept="1QScDb" id="7aUGNm6QP05" role="22cOCG">
+                  <node concept="1QScDb" id="7aUGNm6QP05" role="2lDidJ">
                     <node concept="3o_JK" id="6V3iu1dqs52" role="1QScD9">
                       <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
                     </node>
@@ -1597,7 +1595,7 @@
               <node concept="22cOCA" id="7aUGNm74G1L" role="1QScD9">
                 <node concept="22cOCE" id="7aUGNm74G1M" role="22cODC">
                   <property role="TrG5h" value="name" />
-                  <node concept="1QScDb" id="7aUGNm74G1N" role="22cOCG">
+                  <node concept="1QScDb" id="7aUGNm74G1N" role="2lDidJ">
                     <node concept="3o_JK" id="6V3iu1dnfEy" role="1QScD9">
                       <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
                     </node>
@@ -1606,7 +1604,7 @@
                 </node>
                 <node concept="22cOCE" id="7aUGNm74G1Q" role="22cODC">
                   <property role="TrG5h" value="age" />
-                  <node concept="1QScDb" id="7aUGNm74G1R" role="22cOCG">
+                  <node concept="1QScDb" id="7aUGNm74G1R" role="2lDidJ">
                     <node concept="3o_JK" id="6V3iu1dnLsC" role="1QScD9">
                       <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
                     </node>
@@ -1665,7 +1663,7 @@
               <node concept="22cOCA" id="7aUGNm79m_k" role="1QScD9">
                 <node concept="22cOCE" id="7aUGNm79m_l" role="22cODC">
                   <property role="TrG5h" value="name" />
-                  <node concept="1QScDb" id="7aUGNm79m_m" role="22cOCG">
+                  <node concept="1QScDb" id="7aUGNm79m_m" role="2lDidJ">
                     <node concept="3o_JK" id="6V3iu1dpfCL" role="1QScD9">
                       <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
                     </node>
@@ -1674,7 +1672,7 @@
                 </node>
                 <node concept="22cOCE" id="7aUGNm79m_p" role="22cODC">
                   <property role="TrG5h" value="age" />
-                  <node concept="1QScDb" id="7aUGNm79m_q" role="22cOCG">
+                  <node concept="1QScDb" id="7aUGNm79m_q" role="2lDidJ">
                     <node concept="3o_JK" id="6V3iu1dmXU$" role="1QScD9">
                       <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
                     </node>
