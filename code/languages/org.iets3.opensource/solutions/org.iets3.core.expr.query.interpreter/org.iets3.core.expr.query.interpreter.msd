@@ -69,7 +69,7 @@
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="20" />
     <module reference="b76a0f63-5959-456b-993a-c796cc0d0c13(org.iets3.core.expr.base.collections.stubs)" version="0" />
     <module reference="711a16d7-99e8-4e1d-b20c-99c0b7309cd8(org.iets3.core.expr.metafunction)" version="1" />
-    <module reference="10e056b2-49fd-40ca-8b64-de69c81163ac(org.iets3.core.expr.query)" version="0" />
+    <module reference="10e056b2-49fd-40ca-8b64-de69c81163ac(org.iets3.core.expr.query)" version="1" />
     <module reference="559a13ae-59fa-4b70-a9f1-3ea16a0e218f(org.iets3.core.expr.query.interpreter)" version="0" />
   </dependencyVersions>
 </solution>
