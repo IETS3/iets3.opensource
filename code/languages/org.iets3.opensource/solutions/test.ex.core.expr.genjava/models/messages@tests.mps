@@ -153,9 +153,7 @@
       <concept id="4026566441520293026" name="org.iets3.core.expr.messages.structure.ErrorKind" flags="ng" index="1WG_xU">
         <property id="6912784008700543198" name="errorID" index="1KtYiK" />
       </concept>
-      <concept id="4026566441520550140" name="org.iets3.core.expr.messages.structure.TypeCoercion" flags="ng" index="1WHAK$">
-        <child id="4026566441520550144" name="expr" index="1WHARo" />
-      </concept>
+      <concept id="4026566441520550140" name="org.iets3.core.expr.messages.structure.TypeCoercion" flags="ng" index="1WHAK$" />
       <concept id="4026566441521058530" name="org.iets3.core.expr.messages.structure.CoercionIt" flags="ng" index="1WJySU" />
       <concept id="4026566441518088795" name="org.iets3.core.expr.messages.structure.Group" flags="ng" index="1WOfU3" />
       <concept id="4026566441518088787" name="org.iets3.core.expr.messages.structure.IMessageNamespace" flags="ngI" index="1WOfUb">
@@ -777,7 +775,10 @@
   <node concept="1WOfUn" id="3vxfdxbret3">
     <property role="TrG5h" value="Messages" />
     <node concept="1WHAK$" id="1CNpG_h8dxe" role="1WI1Xj">
-      <node concept="30dDZf" id="1CNpG_h8dDg" role="1WHARo">
+      <node concept="2Ss9cW" id="1CNpG_h8dxd" role="2S399n">
+        <ref role="2Ss9cX" node="1CNpG_h50DD" resolve="Point" />
+      </node>
+      <node concept="30dDZf" id="1CNpG_h8dDg" role="2lDidJ">
         <node concept="30dDZf" id="1CNpG_h8dDh" role="30dEsF">
           <node concept="30dDZf" id="1CNpG_h8dDi" role="30dEsF">
             <node concept="30bdrP" id="1CNpG_h8dDj" role="30dEsF">
@@ -801,19 +802,16 @@
           <node concept="1WJySU" id="1CNpG_h8dEv" role="2lDidJ" />
         </node>
       </node>
-      <node concept="2Ss9cW" id="1CNpG_h8dxd" role="2S399n">
-        <ref role="2Ss9cX" node="1CNpG_h50DD" resolve="Point" />
-      </node>
     </node>
     <node concept="1WHAK$" id="1CNpG_h8Fcw" role="1WI1Xj">
-      <node concept="30dDZf" id="1CNpG_h8FlF" role="1WHARo">
+      <node concept="1WbbFT" id="1CNpG_h8Fi3" role="2S399n">
+        <ref role="1WbbFS" node="1CNpG_h8F0D" resolve="money" />
+      </node>
+      <node concept="30dDZf" id="1CNpG_h8FlF" role="2lDidJ">
         <node concept="30bdrP" id="1CNpG_h8FlS" role="30dEs_">
           <property role="30bdrQ" value=" EUR" />
         </node>
         <node concept="1WJySU" id="1CNpG_h8Fkk" role="30dEsF" />
-      </node>
-      <node concept="1WbbFT" id="1CNpG_h8Fi3" role="2S399n">
-        <ref role="1WbbFS" node="1CNpG_h8F0D" resolve="money" />
       </node>
     </node>
     <node concept="1WOOD3" id="3vxfdxbrKAj" role="1WOfUI">

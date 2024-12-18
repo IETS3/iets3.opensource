@@ -565,5 +565,89 @@
       </node>
     </node>
   </node>
+  <node concept="W$Crc" id="1azguFQPiSf">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="2" />
+    <property role="TrG5h" value="Update References: expr-&gt;expr" />
+    <node concept="1w76tK" id="1azguFQPiSg" role="1w76sc">
+      <node concept="1w76tN" id="1azguFQPiSh" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="1azguFQPiSi" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="1azguFQPiSj" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="1azguFQPiSk" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="1azguFQPiSl" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="1azguFQPiSn" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="1azguFQPiSe" role="hSBgu">
+        <property role="2pBcoG" value="4026566441520550144" />
+        <property role="2pBcow" value="r:1a11ce0d-cf54-4682-9b8a-ab4ee15fc129(org.iets3.core.expr.messages.structure)" />
+        <property role="2pBc3U" value="expr" />
+      </node>
+      <node concept="2pBcaW" id="1azguFQPiSm" role="hSBgs">
+        <property role="2pBcoG" value="4261931054731905241" />
+        <property role="2pBcow" value="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+        <property role="2pBc3U" value="expr" />
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="1azguFQPiSo">
+    <property role="Z5qvQ" value="1" />
+    <property role="TrG5h" value="Migrate_MoveLinkUp_1" />
+    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <node concept="Z4OXk" id="1azguFQPiSz" role="Z5rET">
+      <node concept="2pBcaW" id="1azguFQPiSx" role="Z5P1v">
+        <property role="2pBcoG" value="4026566441520550144" />
+        <property role="2pBcow" value="r:1a11ce0d-cf54-4682-9b8a-ab4ee15fc129(org.iets3.core.expr.messages.structure)" />
+        <property role="2pBc3U" value="expr_old" />
+      </node>
+      <node concept="2pBcaW" id="1azguFQPiSy" role="Z5P1t">
+        <property role="2pBcoG" value="4261931054731905241" />
+        <property role="2pBcow" value="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+        <property role="2pBc3U" value="expr" />
+      </node>
+      <node concept="7a1rN" id="1azguFQPiSw" role="7agGg">
+        <node concept="HUanS" id="1azguFQPiSq" role="HTpAE">
+          <property role="HUanP" value="expr_old" />
+          <property role="HUanQ" value="ulb6oeqong1s" />
+          <node concept="2x4n5u" id="1azguFQPiSr" role="HUanR">
+            <property role="2x4mPI" value="TypeCoercion" />
+            <property role="2x4n5l" value="ulb6oeqong1o" />
+            <node concept="2V$Bhx" id="1azguFQPiSs" role="2x4n5j">
+              <property role="2V$B1T" value="553a35c5-ccd6-40ba-9923-5e3b354d0c76" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.messages" />
+            </node>
+          </node>
+        </node>
+        <node concept="HUanS" id="1azguFQPiSt" role="HTpAD">
+          <property role="HUanP" value="expr" />
+          <property role="HUanQ" value="wdoogxd8gnvd" />
+          <node concept="2x4n5u" id="1azguFQPiSu" role="HUanR">
+            <property role="2x4mPI" value="IContainExpressionParam" />
+            <property role="2x4o5l" value="true" />
+            <property role="2x4n5l" value="wdoogxd8gnvc" />
+            <node concept="2V$Bhx" id="1azguFQPiSv" role="2x4n5j">
+              <property role="2V$B1T" value="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.base" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
