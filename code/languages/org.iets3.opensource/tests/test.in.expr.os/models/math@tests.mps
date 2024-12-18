@@ -144,9 +144,7 @@
       <concept id="4944417823362146628" name="org.iets3.core.expr.math.structure.PowerExpression" flags="ng" index="a0Byk">
         <child id="5098456557379673903" name="exponent" index="2zCggm" />
       </concept>
-      <concept id="4944417823362158056" name="org.iets3.core.expr.math.structure.SqrtExpression" flags="ng" index="a0DgS">
-        <child id="4944417823362162236" name="expr" index="a0CvG" />
-      </concept>
+      <concept id="4944417823362158056" name="org.iets3.core.expr.math.structure.SqrtExpression" flags="ng" index="a0DgS" />
       <concept id="4944417823362156001" name="org.iets3.core.expr.math.structure.SumExpression" flags="ng" index="a0DKL" />
       <concept id="4944417823362108742" name="org.iets3.core.expr.math.structure.FractionExpression" flags="ng" index="a1tim">
         <child id="4944417823362108743" name="numerator" index="a1tin" />
@@ -1579,7 +1577,7 @@
       <property role="TrG5h" value="hypotenuseLength" />
       <property role="0Rz4W" value="912349499" />
       <node concept="a0DgS" id="642_vmCWuHM" role="1ahQXP">
-        <node concept="30dDZf" id="642_vmCWuMo" role="a0CvG">
+        <node concept="30dDZf" id="642_vmCWuMo" role="2lDidJ">
           <node concept="a0Byk" id="642_vmCWuOg" role="30dEs_">
             <node concept="30bXRB" id="642_vmCWuSw" role="2zCggm">
               <property role="30bXRw" value="2" />
@@ -1619,7 +1617,7 @@
         <node concept="mLuIC" id="642_vmCZqdO" role="3ix9CU" />
       </node>
       <node concept="a0DgS" id="642_vmCZqZB" role="1ahQXP">
-        <node concept="30dDZf" id="642_vmCZr4F" role="a0CvG">
+        <node concept="30dDZf" id="642_vmCZr4F" role="2lDidJ">
           <node concept="a0Byk" id="642_vmCZr6w" role="30dEs_">
             <node concept="30bXRB" id="642_vmCZra8" role="2zCggm">
               <property role="30bXRw" value="2" />
