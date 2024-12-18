@@ -66,7 +66,7 @@
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="20" />
     <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="11" />
-    <module reference="cee4aa62-aca9-4f26-9602-75129cd457c9(org.iets3.core.expr.dataflow)" version="0" />
+    <module reference="cee4aa62-aca9-4f26-9602-75129cd457c9(org.iets3.core.expr.dataflow)" version="1" />
     <module reference="3a79aca0-f4b1-40f1-a3e9-259162afa77b(org.iets3.core.expr.dataflow.interpreter)" version="0" />
     <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="5" />
     <module reference="8ba65567-1c8a-4983-beb8-0482324d7e44(org.iets3.core.expr.lambda.interpreter)" version="0" />
