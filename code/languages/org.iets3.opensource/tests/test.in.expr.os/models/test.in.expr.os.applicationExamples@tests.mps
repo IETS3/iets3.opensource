@@ -100,9 +100,7 @@
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
-      <concept id="4723261570619513260" name="org.iets3.core.expr.simpleTypes.structure.LimitExpression" flags="ng" index="3zyZNN">
-        <child id="4723261570619513266" name="expr" index="3zyZNH" />
-      </concept>
+      <concept id="4723261570619513260" name="org.iets3.core.expr.simpleTypes.structure.LimitExpression" flags="ng" index="3zyZNN" />
       <concept id="8825352096209507273" name="org.iets3.core.expr.simpleTypes.structure.TruncateRoundingMode" flags="ng" index="1Mae4K" />
       <concept id="8825352096209502465" name="org.iets3.core.expr.simpleTypes.structure.ConvertPrecisionNumberExpression" flags="ng" index="1MaffS">
         <property id="8825352096209722453" name="targetPrecision" index="1MbqUG" />
@@ -231,7 +229,10 @@
           <node concept="30cPrO" id="78zh7PnsuUz" role="2lDidJ">
             <node concept="Ic2ui" id="78zh7PnsuaU" role="30dEsF" />
             <node concept="3zyZNN" id="78zh7Pnsvag" role="30dEs_">
-              <node concept="1MaffS" id="78zh7Pnsvai" role="3zyZNH">
+              <node concept="1WbbFT" id="78zh7Pnsvah" role="2S399n">
+                <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
+              </node>
+              <node concept="1MaffS" id="78zh7Pnsvai" role="2lDidJ">
                 <property role="1MbqUG" value="1" />
                 <node concept="1Mae4K" id="78zh7Pnsvaj" role="1Maf3p" />
                 <node concept="30dvO6" id="78zh7Pnsvak" role="2lDidJ">
@@ -255,15 +256,15 @@
                   </node>
                 </node>
               </node>
-              <node concept="1WbbFT" id="78zh7Pnsvah" role="2S399n">
-                <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
-              </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="3zyZNN" id="5ElkanPPgTJ" role="1ahQXP">
-        <node concept="1MaffS" id="7Wa2sv4cbNN" role="3zyZNH">
+        <node concept="1WbbFT" id="5ElkanPPmAB" role="2S399n">
+          <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
+        </node>
+        <node concept="1MaffS" id="7Wa2sv4cbNN" role="2lDidJ">
           <property role="1MbqUG" value="1" />
           <node concept="1Mae4K" id="7Wa2sv4cbNO" role="1Maf3p" />
           <node concept="30dvO6" id="7Wa2sv4cbNP" role="2lDidJ">
@@ -286,9 +287,6 @@
               <property role="30bXRw" value="9" />
             </node>
           </node>
-        </node>
-        <node concept="1WbbFT" id="5ElkanPPmAB" role="2S399n">
-          <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
         </node>
       </node>
       <node concept="1ahQXy" id="5ElkanPNlNg" role="1ahQWs">
