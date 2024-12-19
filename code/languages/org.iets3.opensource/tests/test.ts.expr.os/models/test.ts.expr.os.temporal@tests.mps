@@ -125,9 +125,7 @@
         <child id="5772589292323039890" name="pointInTime" index="FfN7M" />
         <child id="5772589292323039892" name="value" index="FfN7O" />
       </concept>
-      <concept id="5177002969018979140" name="org.iets3.core.expr.temporal.structure.AlwaysExpression" flags="ng" index="YnbI1">
-        <child id="5177002969018979144" name="value" index="YnbId" />
-      </concept>
+      <concept id="5177002969018979140" name="org.iets3.core.expr.temporal.structure.AlwaysExpression" flags="ng" index="YnbI1" />
       <concept id="7638810057891338019" name="org.iets3.core.expr.temporal.structure.WithSliceOp" flags="ng" index="3Hitp_">
         <child id="7638810057891338020" name="slice" index="3Hitpy" />
       </concept>
@@ -195,7 +193,7 @@
               </node>
             </node>
             <node concept="YnbI1" id="6C2wkq7iJx8" role="2lDidJ">
-              <node concept="2vmpn$" id="6C2wkq7iJxt" role="YnbId" />
+              <node concept="2vmpn$" id="6C2wkq7iJxt" role="2lDidJ" />
             </node>
           </node>
         </node>
