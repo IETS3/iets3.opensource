@@ -131,9 +131,7 @@
         <child id="1925389232535425913" name="right" index="1h6CwR" />
         <child id="1925389232535425911" name="left" index="1h6CwT" />
       </concept>
-      <concept id="6723982381150106591" name="org.iets3.core.expr.tests.structure.ContainsString" flags="ng" index="3_fT66">
-        <child id="6723982381150106625" name="text" index="3_fTpo" />
-      </concept>
+      <concept id="6723982381150106591" name="org.iets3.core.expr.tests.structure.ContainsString" flags="ng" index="3_fT66" />
       <concept id="6723982381143750170" name="org.iets3.core.expr.tests.structure.AssertThatTestItem" flags="ng" index="3_nDh3">
         <child id="6723982381143776833" name="matcher" index="3_nNKo" />
         <child id="6723982381143776835" name="value" index="3_nNKq" />
@@ -820,7 +818,7 @@
         </node>
         <node concept="3_vHme" id="5Pgo_ASz3wr" role="3_nNKo">
           <node concept="3_fT66" id="5Pgo_ASz3wC" role="3_bYPF">
-            <node concept="30bdrP" id="5Pgo_ASz3wQ" role="3_fTpo">
+            <node concept="30bdrP" id="5Pgo_ASz3wQ" role="2lDidJ">
               <property role="30bdrQ" value="to &gt; from" />
             </node>
           </node>
@@ -841,12 +839,12 @@
         <node concept="3_vHme" id="1vVFmkXH7wH" role="3_nNKo">
           <node concept="1h6CxO" id="1vVFmkXH8l9" role="3_bYPF">
             <node concept="3_fT66" id="1vVFmkXH95l" role="1h6CwR">
-              <node concept="30bdrP" id="1vVFmkXH97s" role="3_fTpo">
+              <node concept="30bdrP" id="1vVFmkXH97s" role="2lDidJ">
                 <property role="30bdrQ" value="&gt; from" />
               </node>
             </node>
             <node concept="3_fT66" id="1vVFmkXH7wI" role="1h6CwT">
-              <node concept="30bdrP" id="1vVFmkXH7wJ" role="3_fTpo">
+              <node concept="30bdrP" id="1vVFmkXH7wJ" role="2lDidJ">
                 <property role="30bdrQ" value="to" />
               </node>
             </node>
