@@ -123,9 +123,7 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
@@ -555,29 +553,29 @@
     <node concept="_ixoA" id="4qTaF_Elpqx" role="_iOnB" />
     <node concept="2zPypq" id="4qTaF_Elpqy" role="_iOnB">
       <property role="TrG5h" value="s1" />
-      <node concept="30bdrP" id="4qTaF_Elpqz" role="2zPyp_">
-        <property role="30bdrQ" value="hello" />
-      </node>
       <node concept="1WbbFT" id="4qTaF_Elpq$" role="2zM23F">
         <ref role="1WbbFS" node="4qTaF_Elpqt" resolve="str" />
+      </node>
+      <node concept="30bdrP" id="4qTaF_Elpqz" role="2lDidJ">
+        <property role="30bdrQ" value="hello" />
       </node>
     </node>
     <node concept="2zPypq" id="4qTaF_Elpq_" role="_iOnB">
       <property role="TrG5h" value="s2" />
-      <node concept="30bXRB" id="4qTaF_ElpqA" role="2zPyp_">
-        <property role="30bXRw" value="5" />
-      </node>
       <node concept="1WbbFT" id="4qTaF_ElpqB" role="2zM23F">
         <ref role="1WbbFS" node="4qTaF_Elpqv" resolve="num" />
+      </node>
+      <node concept="30bXRB" id="4qTaF_ElpqA" role="2lDidJ">
+        <property role="30bXRw" value="5" />
       </node>
     </node>
     <node concept="2zPypq" id="4qTaF_ElpqC" role="_iOnB">
       <property role="TrG5h" value="s3" />
-      <node concept="30bXRB" id="4qTaF_ElpqD" role="2zPyp_">
-        <property role="30bXRw" value="10" />
-      </node>
       <node concept="1WbbFT" id="4qTaF_ElpqE" role="2zM23F">
         <ref role="1WbbFS" node="4qTaF_Elpqv" resolve="num" />
+      </node>
+      <node concept="30bXRB" id="4qTaF_ElpqD" role="2lDidJ">
+        <property role="30bXRw" value="10" />
       </node>
     </node>
     <node concept="_ixoA" id="4qTaF_ElpqF" role="_iOnB" />

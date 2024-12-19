@@ -165,9 +165,7 @@
       <concept id="7061117989422577349" name="org.iets3.core.expr.toplevel.structure.EnumLiteralRef" flags="ng" index="5mhuz">
         <reference id="7061117989422577417" name="literal" index="5mhpJ" />
       </concept>
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
@@ -2640,7 +2638,7 @@
     <node concept="_ixoA" id="1c6hIxyYjkm" role="_iOnB" />
     <node concept="2zPypq" id="1c6hIxyYshT" role="_iOnB">
       <property role="TrG5h" value="res1" />
-      <node concept="1af_rf" id="1c6hIxyYsMg" role="2zPyp_">
+      <node concept="1af_rf" id="1c6hIxyYsMg" role="2lDidJ">
         <ref role="1afhQb" node="1c6hIxyYixT" resolve="simpleMulteResults" />
         <node concept="2vmpnb" id="1c6hIxyYsM_" role="1afhQ5" />
         <node concept="30bXRB" id="1c6hIxyYsQr" role="1afhQ5">
@@ -2650,7 +2648,7 @@
     </node>
     <node concept="2zPypq" id="1c6hIxyYxZW" role="_iOnB">
       <property role="TrG5h" value="res2" />
-      <node concept="1af_rf" id="1c6hIxyYxZX" role="2zPyp_">
+      <node concept="1af_rf" id="1c6hIxyYxZX" role="2lDidJ">
         <ref role="1afhQb" node="1c6hIxyYixT" resolve="simpleMulteResults" />
         <node concept="2vmpn$" id="1c6hIxyYyz0" role="1afhQ5" />
         <node concept="30bXRB" id="1c6hIxyYxZZ" role="1afhQ5">
@@ -2664,7 +2662,7 @@
       <node concept="3iBYCm" id="3mhgBZpg6ma" role="2zM23F">
         <node concept="2vmvy5" id="3mhgBZpmU$l" role="3iBWmK" />
       </node>
-      <node concept="1QScDb" id="3mhgBZpg70y" role="2zPyp_">
+      <node concept="1QScDb" id="3mhgBZpg70y" role="2lDidJ">
         <node concept="383P9U" id="3mhgBZpg70z" role="1QScD9">
           <ref role="383OOP" node="1c6hIxyYj9N" resolve="r1" />
         </node>

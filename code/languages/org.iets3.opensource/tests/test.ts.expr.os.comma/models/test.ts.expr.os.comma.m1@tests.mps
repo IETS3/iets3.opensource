@@ -123,9 +123,7 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnU">
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -5678,31 +5676,36 @@
         <property role="TrG5h" value="commaRealTests" />
         <node concept="2zPypq" id="1t_lOkRegED" role="_iOnB">
           <property role="TrG5h" value="a" />
-          <node concept="30bXRB" id="1t_lOkRegEE" role="2zPyp_">
-            <property role="30bXRw" value="10,3" />
-          </node>
           <node concept="mLuIC" id="1t_lOkRegEF" role="2zM23F">
             <node concept="2gteS_" id="1t_lOkRegEG" role="2gteVg">
               <property role="2gteVv" value="1" />
             </node>
           </node>
+          <node concept="30bXRB" id="1t_lOkRegEE" role="2lDidJ">
+            <property role="30bXRw" value="10,3" />
+          </node>
         </node>
         <node concept="2zPypq" id="1t_lOkRegEH" role="_iOnB">
           <property role="TrG5h" value="g" />
-          <node concept="30cIq6" id="1t_lOkRegEI" role="2zPyp_">
-            <node concept="30bXRB" id="1t_lOkRegEJ" role="2lDidJ">
-              <property role="30bXRw" value="10,3" />
-            </node>
-          </node>
           <node concept="mLuIC" id="1t_lOkRegEK" role="2zM23F">
             <node concept="2gteS_" id="1t_lOkRegEL" role="2gteVg">
               <property role="2gteVv" value="1" />
             </node>
           </node>
+          <node concept="30cIq6" id="1t_lOkRegEI" role="2lDidJ">
+            <node concept="30bXRB" id="1t_lOkRegEJ" role="2lDidJ">
+              <property role="30bXRw" value="10,3" />
+            </node>
+          </node>
         </node>
         <node concept="2zPypq" id="1t_lOkRegEM" role="_iOnB">
           <property role="TrG5h" value="b" />
-          <node concept="30dDZf" id="1t_lOkRegEN" role="2zPyp_">
+          <node concept="mLuIC" id="1t_lOkRegEQ" role="2zM23F">
+            <node concept="2gteS_" id="1t_lOkRegER" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+          <node concept="30dDZf" id="1t_lOkRegEN" role="2lDidJ">
             <node concept="30bXRB" id="1t_lOkRegEO" role="30dEs_">
               <property role="30bXRw" value="10,33" />
             </node>
@@ -5710,22 +5713,9 @@
               <property role="30bXRw" value="10,33" />
             </node>
           </node>
-          <node concept="mLuIC" id="1t_lOkRegEQ" role="2zM23F">
-            <node concept="2gteS_" id="1t_lOkRegER" role="2gteVg">
-              <property role="2gteVv" value="2" />
-            </node>
-          </node>
         </node>
         <node concept="2zPypq" id="1t_lOkRegES" role="_iOnB">
           <property role="TrG5h" value="e" />
-          <node concept="30dvO6" id="1t_lOkRegET" role="2zPyp_">
-            <node concept="30bXRB" id="1t_lOkRegEU" role="30dEsF">
-              <property role="30bXRw" value="10,3" />
-            </node>
-            <node concept="30bXRB" id="1t_lOkRegEV" role="30dEs_">
-              <property role="30bXRw" value="10,3" />
-            </node>
-          </node>
           <node concept="mLuIC" id="1t_lOkRegEW" role="2zM23F">
             <node concept="2gteSW" id="1t_lOkRegEX" role="2gteSx">
               <property role="2gteSQ" value="1,0000000000" />
@@ -5733,6 +5723,14 @@
             </node>
             <node concept="2gteS_" id="1t_lOkRegEY" role="2gteVg">
               <property role="2gteVv" value="inf" />
+            </node>
+          </node>
+          <node concept="30dvO6" id="1t_lOkRegET" role="2lDidJ">
+            <node concept="30bXRB" id="1t_lOkRegEU" role="30dEsF">
+              <property role="30bXRw" value="10,3" />
+            </node>
+            <node concept="30bXRB" id="1t_lOkRegEV" role="30dEs_">
+              <property role="30bXRw" value="10,3" />
             </node>
           </node>
         </node>
@@ -5870,9 +5868,6 @@
         <property role="TrG5h" value="NumberRangeSpec" />
         <node concept="2zPypq" id="5CKJX6372R6" role="_iOnB">
           <property role="TrG5h" value="x" />
-          <node concept="30bXRB" id="5CKJX6372R7" role="2zPyp_">
-            <property role="30bXRw" value="5,1" />
-          </node>
           <node concept="mLuIC" id="5CKJX6372R8" role="2zM23F">
             <node concept="2gteSW" id="5CKJX6372R9" role="2gteSx">
               <property role="2gteSQ" value="-10,3" />
@@ -5882,12 +5877,12 @@
               </node>
             </node>
           </node>
+          <node concept="30bXRB" id="5CKJX6372R7" role="2lDidJ">
+            <property role="30bXRw" value="5,1" />
+          </node>
         </node>
         <node concept="2zPypq" id="5CKJX6373$N" role="_iOnB">
           <property role="TrG5h" value="y" />
-          <node concept="30bXRB" id="5CKJX6373$O" role="2zPyp_">
-            <property role="30bXRw" value="5,1000" />
-          </node>
           <node concept="mLuIC" id="5CKJX6373$P" role="2zM23F">
             <node concept="2gteSW" id="5CKJX6373$Q" role="2gteSx">
               <property role="2gteSQ" value="-10,3000" />
@@ -5896,6 +5891,9 @@
                 <property role="TrG5h" value="rangeY" />
               </node>
             </node>
+          </node>
+          <node concept="30bXRB" id="5CKJX6373$O" role="2lDidJ">
+            <property role="30bXRw" value="5,1000" />
           </node>
         </node>
       </node>

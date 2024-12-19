@@ -71,9 +71,7 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
@@ -889,7 +887,7 @@
     <property role="TrG5h" value="SheetsAsExpression" />
     <node concept="2zPypq" id="JV9IWPTHFH" role="_iOnB">
       <property role="TrG5h" value="twentyThree" />
-      <node concept="yNhXg" id="JV9IWPTHGa" role="2zPyp_">
+      <node concept="yNhXg" id="JV9IWPTHGa" role="2lDidJ">
         <property role="yNhEn" value="3" />
         <property role="yNhEm" value="3" />
         <node concept="33cATB" id="JV9IWPTHGn" role="yNhII">

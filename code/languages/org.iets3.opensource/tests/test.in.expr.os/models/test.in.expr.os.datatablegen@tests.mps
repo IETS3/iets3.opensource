@@ -51,9 +51,7 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
@@ -153,7 +151,7 @@
     <node concept="_ixoA" id="6wzrxL2VwCK" role="_iOnB" />
     <node concept="2zPypq" id="6wzrxL2WvUo" role="_iOnB">
       <property role="TrG5h" value="aRow" />
-      <node concept="1QScDb" id="6wzrxL2Ww1I" role="2zPyp_">
+      <node concept="1QScDb" id="6wzrxL2Ww1I" role="2lDidJ">
         <node concept="3CgUdp" id="6wzrxL2Ww3p" role="1QScD9">
           <ref role="3CgUW3" node="6wzrxL2VwD2" resolve="keyA" />
         </node>
@@ -164,7 +162,7 @@
     </node>
     <node concept="2zPypq" id="6wzrxL2Ww5n" role="_iOnB">
       <property role="TrG5h" value="number1" />
-      <node concept="1QScDb" id="6wzrxL2Ww8c" role="2zPyp_">
+      <node concept="1QScDb" id="6wzrxL2Ww8c" role="2lDidJ">
         <node concept="3Cgsri" id="6wzrxL2Wwac" role="1QScD9">
           <ref role="3Cgs9T" node="6wzrxL2VwCX" resolve="val1" />
         </node>

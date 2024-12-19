@@ -31,6 +31,11 @@
         <child id="9215841044170409457" name="target" index="1vQNHF" />
       </concept>
     </language>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
+    </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
@@ -38,9 +43,7 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="3788552209995580872" name="org.iets3.core.expr.toplevel.structure.AbstractToplevelExprAdapter" flags="ng" index="2_nm7x">
         <child id="3788552209995588099" name="toplevelExprContent" index="2_nkoE" />
       </concept>
@@ -99,7 +102,7 @@
       <node concept="2_pmBu" id="_aJC6nSg2a" role="1i1XAe">
         <node concept="2zPypq" id="_aJC6nSg2b" role="2_nkoE">
           <property role="TrG5h" value="constant" />
-          <node concept="30bdrP" id="_aJC6nSg4c" role="2zPyp_">
+          <node concept="30bdrP" id="_aJC6nSg4c" role="2lDidJ">
             <property role="30bdrQ" value="myConstant" />
           </node>
         </node>

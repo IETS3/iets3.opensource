@@ -118,9 +118,7 @@
       <concept id="7061117989422577349" name="org.iets3.core.expr.toplevel.structure.EnumLiteralRef" flags="ng" index="5mhuz">
         <reference id="7061117989422577417" name="literal" index="5mhpJ" />
       </concept>
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
@@ -472,7 +470,16 @@
     <node concept="_ixoA" id="5ElkanPNlO1" role="_iOnB" />
     <node concept="2zPypq" id="5ElkanPNlO2" role="_iOnB">
       <property role="TrG5h" value="someDataFromUI" />
-      <node concept="2S399m" id="5ElkanPNlO3" role="2zPyp_">
+      <node concept="1z9TsT" id="5ElkanPOqz5" role="lGtFl">
+        <node concept="OjmMv" id="5ElkanPOqz6" role="1w35rA">
+          <node concept="19SGf9" id="5ElkanPOqz7" role="OjmMu">
+            <node concept="19SUe$" id="5ElkanPOqz8" role="19SJt6">
+              <property role="19SUeA" value="as an example, we assume this value delivers a temperature from the UI.&#10;It uses a TempFromUI record instance and specifies Fahrenheit in this case." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2S399m" id="5ElkanPNlO3" role="2lDidJ">
         <node concept="30bXRB" id="5ElkanPNlO4" role="2S399l">
           <property role="30bXRw" value="100.0" />
         </node>
@@ -483,27 +490,10 @@
           <ref role="2Ss9cX" node="5ElkanPNlNq" resolve="TempFromUI" />
         </node>
       </node>
-      <node concept="1z9TsT" id="5ElkanPOqz5" role="lGtFl">
-        <node concept="OjmMv" id="5ElkanPOqz6" role="1w35rA">
-          <node concept="19SGf9" id="5ElkanPOqz7" role="OjmMu">
-            <node concept="19SUe$" id="5ElkanPOqz8" role="19SJt6">
-              <property role="19SUeA" value="as an example, we assume this value delivers a temperature from the UI.&#10;It uses a TempFromUI record instance and specifies Fahrenheit in this case." />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="_ixoA" id="5ElkanPNlO7" role="_iOnB" />
     <node concept="2zPypq" id="5ElkanPNlO8" role="_iOnB">
       <property role="TrG5h" value="anTempValueInTheStatemachine" />
-      <node concept="1QScDb" id="5ElkanPNlO9" role="2zPyp_">
-        <node concept="1He9k6" id="5ElkanPNlOa" role="1QScD9">
-          <ref role="1He9kT" node="5ElkanPNlNy" resolve="toC" />
-        </node>
-        <node concept="_emDc" id="5ElkanPNlOb" role="2lDidJ">
-          <ref role="_emDf" node="5ElkanPNlO2" resolve="someDataFromUI" />
-        </node>
-      </node>
       <node concept="1WbbFT" id="5ElkanPNlOc" role="2zM23F">
         <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
       </node>
@@ -516,6 +506,14 @@
           </node>
         </node>
       </node>
+      <node concept="1QScDb" id="5ElkanPNlO9" role="2lDidJ">
+        <node concept="1He9k6" id="5ElkanPNlOa" role="1QScD9">
+          <ref role="1He9kT" node="5ElkanPNlNy" resolve="toC" />
+        </node>
+        <node concept="_emDc" id="5ElkanPNlOb" role="2lDidJ">
+          <ref role="_emDf" node="5ElkanPNlO2" resolve="someDataFromUI" />
+        </node>
+      </node>
     </node>
     <node concept="_ixoA" id="5ElkanPNlOd" role="_iOnB" />
     <node concept="_ixoA" id="5ElkanPNlOe" role="_iOnB" />
@@ -526,11 +524,11 @@
     <node concept="_ixoA" id="5ElkanPNlOg" role="_iOnB" />
     <node concept="2zPypq" id="5ElkanPNoot" role="_iOnB">
       <property role="TrG5h" value="validTempInF" />
-      <node concept="30bXRB" id="5ElkanPNos4" role="2zPyp_">
-        <property role="30bXRw" value="100.0" />
-      </node>
       <node concept="1WbbFT" id="5ElkanPNorK" role="2zM23F">
         <ref role="1WbbFS" node="5ElkanPNlMX" resolve="tempInF" />
+      </node>
+      <node concept="30bXRB" id="5ElkanPNos4" role="2lDidJ">
+        <property role="30bXRw" value="100.0" />
       </node>
     </node>
     <node concept="_fkuM" id="5ElkanPNpm2" role="_iOnB">

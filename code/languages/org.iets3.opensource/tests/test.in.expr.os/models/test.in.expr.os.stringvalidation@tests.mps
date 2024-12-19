@@ -104,9 +104,7 @@
       <concept id="5994308065090560488" name="org.iets3.core.expr.simpleTypes.structure.StringLengthTarget" flags="ng" index="1uMQU5" />
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
@@ -229,7 +227,7 @@
     <node concept="2zPypq" id="6KviS2JbEGx" role="_iOnB">
       <property role="TrG5h" value="ok" />
       <property role="0Rz4W" value="895570438" />
-      <node concept="3iBYfx" id="6KviS2JbEIF" role="2zPyp_">
+      <node concept="3iBYfx" id="6KviS2JbEIF" role="2lDidJ">
         <node concept="ygwf7" id="6KviS2JbEIG" role="ygBzB">
           <node concept="30bdrU" id="6KviS2JbEIH" role="ygwf4" />
         </node>

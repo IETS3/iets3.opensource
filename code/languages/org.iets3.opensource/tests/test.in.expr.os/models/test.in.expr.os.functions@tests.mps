@@ -124,9 +124,7 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
@@ -181,7 +179,7 @@
     <property role="1XBH2A" value="true" />
     <node concept="2zPypq" id="1EIbarJ$BYs" role="_iOnB">
       <property role="TrG5h" value="constantNumber" />
-      <node concept="30bXRB" id="1EIbarJ$WE2" role="2zPyp_">
+      <node concept="30bXRB" id="1EIbarJ$WE2" role="2lDidJ">
         <property role="30bXRw" value="9" />
       </node>
     </node>
@@ -1176,17 +1174,17 @@
     <node concept="_ixoA" id="7b6J31DljlU" role="_iOnB" />
     <node concept="2zPypq" id="4ORV4yldp5k" role="_iOnB">
       <property role="TrG5h" value="tuple" />
-      <node concept="m5g4o" id="4ORV4yldp5l" role="2zPyp_">
+      <node concept="m5gfS" id="4ORV4yldp5o" role="2zM23F">
+        <node concept="mLuIC" id="4ORV4yldp5p" role="m5gfT" />
+        <node concept="mLuIC" id="4ORV4yldp5q" role="m5gfT" />
+      </node>
+      <node concept="m5g4o" id="4ORV4yldp5l" role="2lDidJ">
         <node concept="30bXRB" id="4ORV4yldp5m" role="m5g4p">
           <property role="30bXRw" value="1" />
         </node>
         <node concept="30bXRB" id="4ORV4yldp5n" role="m5g4p">
           <property role="30bXRw" value="2" />
         </node>
-      </node>
-      <node concept="m5gfS" id="4ORV4yldp5o" role="2zM23F">
-        <node concept="mLuIC" id="4ORV4yldp5p" role="m5gfT" />
-        <node concept="mLuIC" id="4ORV4yldp5q" role="m5gfT" />
       </node>
     </node>
     <node concept="_ixoA" id="4ORV4yldp5r" role="_iOnB" />
