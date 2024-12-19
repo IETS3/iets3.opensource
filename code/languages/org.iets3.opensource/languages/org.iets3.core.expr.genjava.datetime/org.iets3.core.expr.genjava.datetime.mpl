@@ -99,7 +99,7 @@
         <module reference="4517af98-2eaa-4f19-a962-92df60010094(org.iets3.core.expr.genjava.base#8286534136181746510)" version="0" />
         <module reference="cc59a077-028a-42b0-ad86-6a1d71258691(org.iets3.core.expr.genjava.datetime)" version="0" />
         <module reference="f314a104-248f-482a-ab1d-fff6741cd2ee(org.iets3.core.expr.genjava.datetime#01)" version="0" />
-        <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="7" />
+        <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="8" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>

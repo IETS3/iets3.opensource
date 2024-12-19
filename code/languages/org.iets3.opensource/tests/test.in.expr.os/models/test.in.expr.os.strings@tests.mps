@@ -100,9 +100,7 @@
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
-      <concept id="5971688866943282227" name="org.iets3.core.expr.simpleTypes.structure.StringEndsWithTarget" flags="ng" index="35$9Xh">
-        <child id="5971688866943282229" name="value" index="35$9Xn" />
-      </concept>
+      <concept id="5971688866943282227" name="org.iets3.core.expr.simpleTypes.structure.StringEndsWithTarget" flags="ng" index="35$9Xh" />
       <concept id="842813880843519728" name="org.iets3.core.expr.simpleTypes.structure.StringContainsTarget" flags="ng" index="1gK00M" />
       <concept id="5994308065090560488" name="org.iets3.core.expr.simpleTypes.structure.StringLengthTarget" flags="ng" index="1uMQU5" />
     </language>
@@ -476,7 +474,7 @@
         <node concept="_fku$" id="7qOtjYQPGxr" role="_fkur" />
         <node concept="1QScDb" id="7qOtjYQPGxs" role="_fkuY">
           <node concept="35$9Xh" id="4wq65th4$qc" role="1QScD9">
-            <node concept="30bdrP" id="4wq65th4$qF" role="35$9Xn">
+            <node concept="30bdrP" id="4wq65th4$qF" role="2lDidJ">
               <property role="30bdrQ" value="o" />
             </node>
           </node>
@@ -490,7 +488,7 @@
         <node concept="_fku$" id="7qOtjYQPGxy" role="_fkur" />
         <node concept="1QScDb" id="7qOtjYQPGxz" role="_fkuY">
           <node concept="35$9Xh" id="4wq65th4$rc" role="1QScD9">
-            <node concept="30bdrP" id="4wq65th4$rF" role="35$9Xn">
+            <node concept="30bdrP" id="4wq65th4$rF" role="2lDidJ">
               <property role="30bdrQ" value="lo" />
             </node>
           </node>
@@ -504,7 +502,7 @@
         <node concept="_fku$" id="7qOtjYQPGxD" role="_fkur" />
         <node concept="1QScDb" id="7qOtjYQPGxE" role="_fkuY">
           <node concept="35$9Xh" id="4wq65th4$st" role="1QScD9">
-            <node concept="30bdrP" id="4wq65th4$sW" role="35$9Xn">
+            <node concept="30bdrP" id="4wq65th4$sW" role="2lDidJ">
               <property role="30bdrQ" value="hello" />
             </node>
           </node>
@@ -518,7 +516,7 @@
         <node concept="_fku$" id="7qOtjYQPGxK" role="_fkur" />
         <node concept="1QScDb" id="7qOtjYQPGxL" role="_fkuY">
           <node concept="35$9Xh" id="4wq65th4$uI" role="1QScD9">
-            <node concept="30bdrP" id="4wq65th4$vd" role="35$9Xn">
+            <node concept="30bdrP" id="4wq65th4$vd" role="2lDidJ">
               <property role="30bdrQ" value="x" />
             </node>
           </node>
@@ -532,7 +530,7 @@
         <node concept="_fku$" id="7qOtjYQPGxR" role="_fkur" />
         <node concept="1QScDb" id="7qOtjYQPGxS" role="_fkuY">
           <node concept="35$9Xh" id="4wq65th4$tI" role="1QScD9">
-            <node concept="30bdrP" id="4wq65th4$ud" role="35$9Xn" />
+            <node concept="30bdrP" id="4wq65th4$ud" role="2lDidJ" />
           </node>
           <node concept="30bdrP" id="7qOtjYQPGxV" role="2lDidJ">
             <property role="30bdrQ" value="hello" />
@@ -544,7 +542,7 @@
         <node concept="_fku$" id="7qOtjYQPGxY" role="_fkur" />
         <node concept="1QScDb" id="7qOtjYQPGxZ" role="_fkuY">
           <node concept="35$9Xh" id="4wq65th4$vI" role="1QScD9">
-            <node concept="30bdrP" id="4wq65th4$wg" role="35$9Xn" />
+            <node concept="30bdrP" id="4wq65th4$wg" role="2lDidJ" />
           </node>
           <node concept="30bdrP" id="7qOtjYQPGy2" role="2lDidJ" />
         </node>
@@ -554,7 +552,7 @@
         <node concept="_fku$" id="7qOtjYQPGy5" role="_fkur" />
         <node concept="1QScDb" id="7qOtjYQPGy6" role="_fkuY">
           <node concept="35$9Xh" id="4wq65th4$wL" role="1QScD9">
-            <node concept="30bdrP" id="4wq65th4$xg" role="35$9Xn">
+            <node concept="30bdrP" id="4wq65th4$xg" role="2lDidJ">
               <property role="30bdrQ" value="false" />
             </node>
           </node>
