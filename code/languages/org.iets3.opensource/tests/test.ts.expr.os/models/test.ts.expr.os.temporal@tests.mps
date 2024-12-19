@@ -129,9 +129,7 @@
       <concept id="7638810057891338019" name="org.iets3.core.expr.temporal.structure.WithSliceOp" flags="ng" index="3Hitp_">
         <child id="7638810057891338020" name="slice" index="3Hitpy" />
       </concept>
-      <concept id="7638810057892018378" name="org.iets3.core.expr.temporal.structure.MapSlicesOp" flags="ng" index="3HlNAc">
-        <child id="7638810057892018382" name="arg" index="3HlNA8" />
-      </concept>
+      <concept id="7638810057892018378" name="org.iets3.core.expr.temporal.structure.MapSlicesOp" flags="ng" index="3HlNAc" />
     </language>
     <language id="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" name="org.iets3.core.expr.datetime">
       <concept id="3885635233757569297" name="org.iets3.core.expr.datetime.structure.DateLiteral" flags="ng" index="1fc2QT">
@@ -202,18 +200,18 @@
           <property role="0Rz4W" value="117774038" />
           <node concept="1QScDb" id="6C2wkq7nLII" role="2zPyp_">
             <node concept="3HlNAc" id="6C2wkq7nLIJ" role="1QScD9">
-              <node concept="3ix9CK" id="1oDsV1UhdNe" role="3HlNA8">
+              <node concept="7CXmI" id="4Uid4MjZc3j" role="lGtFl">
+                <node concept="7OXhh" id="4Uid4MjZcb6" role="7EUXB">
+                  <property role="GvXf4" value="true" />
+                </node>
+              </node>
+              <node concept="3ix9CK" id="1oDsV1UhdNe" role="2lDidJ">
                 <node concept="3ix9CS" id="1oDsV1UhdNf" role="3ix9CL">
                   <property role="TrG5h" value="it" />
                   <node concept="2vmvy5" id="1oDsV1Uhed8" role="3ix9CU" />
                 </node>
                 <node concept="3ix4Yz" id="4Uid4MjTLwe" role="3ix9pP">
                   <ref role="3ix4Yw" node="1oDsV1UhdNf" resolve="it" />
-                </node>
-              </node>
-              <node concept="7CXmI" id="4Uid4MjZc3j" role="lGtFl">
-                <node concept="7OXhh" id="4Uid4MjZcb6" role="7EUXB">
-                  <property role="GvXf4" value="true" />
                 </node>
               </node>
             </node>
@@ -227,13 +225,13 @@
           <property role="0Rz4W" value="117774038" />
           <node concept="1QScDb" id="4Uid4MjTKwL" role="2zPyp_">
             <node concept="3HlNAc" id="4Uid4MjTKwM" role="1QScD9">
-              <node concept="3izI60" id="4Uid4MjTLlY" role="3HlNA8">
-                <node concept="3izPEI" id="4Uid4MjTLlZ" role="2lDidJ" />
-              </node>
               <node concept="7CXmI" id="4Uid4MjZbOY" role="lGtFl">
                 <node concept="7OXhh" id="4Uid4MjZbVh" role="7EUXB">
                   <property role="GvXf4" value="true" />
                 </node>
+              </node>
+              <node concept="3izI60" id="4Uid4MjTLlY" role="2lDidJ">
+                <node concept="3izPEI" id="4Uid4MjTLlZ" role="2lDidJ" />
               </node>
             </node>
             <node concept="_emDc" id="4Uid4MjTL96" role="2lDidJ">
