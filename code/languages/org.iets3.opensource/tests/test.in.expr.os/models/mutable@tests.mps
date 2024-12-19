@@ -142,9 +142,7 @@
       </concept>
       <concept id="5456956546145095925" name="org.iets3.core.expr.process.structure.AnySenderExpr" flags="ng" index="1c0T7$" />
       <concept id="5456956546144118168" name="org.iets3.core.expr.process.structure.SenderContextArg" flags="ng" index="1c4Ei9" />
-      <concept id="5456956546144052360" name="org.iets3.core.expr.process.structure.SenderPartyInterceptor" flags="ng" index="1c4Ump">
-        <child id="5456956546144052394" name="party" index="1c4UmV" />
-      </concept>
+      <concept id="5456956546144052360" name="org.iets3.core.expr.process.structure.SenderPartyInterceptor" flags="ng" index="1c4Ump" />
       <concept id="3795092733472134813" name="org.iets3.core.expr.process.structure.CustomDecProc" flags="ng" index="3CVNoA" />
       <concept id="24388123196707940" name="org.iets3.core.expr.process.structure.MajorityDecProc" flags="ng" index="1FHB2U" />
     </language>
@@ -9625,7 +9623,7 @@
             </node>
           </node>
           <node concept="1c4Ump" id="71HHyJ2t6qU" role="1czwXj">
-            <node concept="2YgRg0" id="71HHyJ2t6TD" role="1c4UmV">
+            <node concept="2YgRg0" id="71HHyJ2t6TD" role="2lDidJ">
               <ref role="2YgRg3" node="71HHyJ2r5Xl" resolve="players" />
             </node>
           </node>
@@ -9641,7 +9639,7 @@
           </node>
         </node>
         <node concept="1c4Ump" id="71HHyJ2rl4$" role="1czwXj">
-          <node concept="1c0T7$" id="71HHyJ2rl4H" role="1c4UmV" />
+          <node concept="1c0T7$" id="71HHyJ2rl4H" role="2lDidJ" />
         </node>
       </node>
       <node concept="17qw2z" id="3N4k0eSI0TP" role="17tHGx" />
@@ -9769,7 +9767,7 @@
           </node>
         </node>
         <node concept="1c4Ump" id="5mZZgpx31if" role="1czwXj">
-          <node concept="2YgRg0" id="5mZZgpx32li" role="1c4UmV">
+          <node concept="2YgRg0" id="5mZZgpx32li" role="2lDidJ">
             <ref role="2YgRg3" node="71HHyJ2r5Xl" resolve="players" />
           </node>
         </node>
@@ -14663,7 +14661,7 @@
           </node>
         </node>
         <node concept="1c4Ump" id="4IV0h47I8vB" role="1czwXj">
-          <node concept="1c0T7$" id="4IV0h47IisZ" role="1c4UmV" />
+          <node concept="1c0T7$" id="4IV0h47IisZ" role="2lDidJ" />
         </node>
       </node>
       <node concept="17qw2z" id="4IV0h47E8Lt" role="17tHGx" />
@@ -14714,7 +14712,7 @@
           </node>
         </node>
         <node concept="1c4Ump" id="4IV0h47FKXv" role="1czwXj">
-          <node concept="1QScDb" id="4IV0h47FLzl" role="1c4UmV">
+          <node concept="1QScDb" id="4IV0h47FLzl" role="2lDidJ">
             <node concept="GRK4H" id="4IV0h47FMEs" role="1QScD9">
               <property role="2EMntM" value="registeredParties" />
             </node>

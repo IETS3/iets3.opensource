@@ -40,6 +40,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -266,14 +267,17 @@
       <property role="IQ2ns" value="5456956546144052394" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="party" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      <ref role="20ksaX" to="hm2y:3G_qVqIw4zp" resolve="expr" />
     </node>
     <node concept="PrWs8" id="4IV0h47Eaif" role="PzmwI">
       <ref role="PrY4T" to="8lgj:4IV0h47deUA" resolve="IInterceptor" />
     </node>
     <node concept="PrWs8" id="4IV0h47FOnf" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="PrWs8" id="2hueze4K81V" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
   <node concept="1TIwiD" id="4IV0h47Eqmo">
