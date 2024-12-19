@@ -113,7 +113,7 @@
         <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
         <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="9" />
         <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="4" />
-        <module reference="8bb1251e-eae5-47ab-9843-33adfae8edaa(org.iets3.core.expr.util)" version="5" />
+        <module reference="8bb1251e-eae5-47ab-9843-33adfae8edaa(org.iets3.core.expr.util)" version="6" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
