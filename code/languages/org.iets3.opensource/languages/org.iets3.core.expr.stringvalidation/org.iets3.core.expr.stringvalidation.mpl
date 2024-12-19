@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.iets3.core.expr.stringvalidation" uuid="f003a0fe-c140-41d7-a145-ea42368e581c" languageVersion="0" moduleVersion="0">
+<language namespace="org.iets3.core.expr.stringvalidation" uuid="f003a0fe-c140-41d7-a145-ea42368e581c" languageVersion="1" moduleVersion="1">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -39,6 +39,7 @@
     <language slang="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" version="0" />
     <language slang="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" version="14" />
     <language slang="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" version="0" />
+    <language slang="l:9882f4ad-1955-46fe-8269-94189e5dbbf2:jetbrains.mps.lang.migration.util" version="0" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" version="2" />
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="5" />
@@ -98,7 +99,7 @@
     <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="5" />
     <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="9" />
-    <module reference="f003a0fe-c140-41d7-a145-ea42368e581c(org.iets3.core.expr.stringvalidation)" version="0" />
+    <module reference="f003a0fe-c140-41d7-a145-ea42368e581c(org.iets3.core.expr.stringvalidation)" version="1" />
     <module reference="f38b69a3-1d33-4f9b-84e0-ac1095df2998(org.iets3.core.expr.stringvalidation.runtime)" version="0" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="3" />
   </dependencyVersions>
