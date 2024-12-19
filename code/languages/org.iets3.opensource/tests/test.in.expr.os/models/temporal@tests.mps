@@ -359,7 +359,6 @@
         <child id="7638810057892018382" name="arg" index="3HlNA8" />
       </concept>
       <concept id="3955961678040440589" name="org.iets3.core.expr.temporal.structure.DefaultSliceValueExpr" flags="ng" index="3MjJ$y">
-        <child id="3955961678040440590" name="value" index="3MjJ$x" />
         <child id="3955961678040440592" name="body" index="3MjJ$Z" />
       </concept>
     </language>
@@ -3454,7 +3453,7 @@
               <ref role="_emDf" node="7aRvJQF08tS" resolve="x1" />
             </node>
           </node>
-          <node concept="30bXRB" id="7kKHzWbPmQv" role="3MjJ$x">
+          <node concept="30bXRB" id="7kKHzWbPmQv" role="2lDidJ">
             <property role="30bXRw" value="0" />
           </node>
         </node>
@@ -3472,9 +3471,6 @@
           </node>
         </node>
         <node concept="3MjJ$y" id="3rApyZ4GdRd" role="_fkuY">
-          <node concept="30bXRB" id="3rApyZ4GdRe" role="3MjJ$x">
-            <property role="30bXRw" value="10" />
-          </node>
           <node concept="30dDZf" id="3rApyZ4GdRf" role="3MjJ$Z">
             <node concept="_emDc" id="3rApyZ4GdRg" role="30dEs_">
               <ref role="_emDf" node="7aRvJQF08tN" resolve="x2" />
@@ -3482,6 +3478,9 @@
             <node concept="_emDc" id="3rApyZ4GdRh" role="30dEsF">
               <ref role="_emDf" node="7aRvJQF08tS" resolve="x1" />
             </node>
+          </node>
+          <node concept="30bXRB" id="3rApyZ4GdRe" role="2lDidJ">
+            <property role="30bXRw" value="10" />
           </node>
         </node>
       </node>
@@ -3498,9 +3497,6 @@
           </node>
         </node>
         <node concept="3MjJ$y" id="3rApyZ4Gim0" role="_fkuY">
-          <node concept="30bXRB" id="3rApyZ4Gim1" role="3MjJ$x">
-            <property role="30bXRw" value="10" />
-          </node>
           <node concept="30dDZf" id="3rApyZ4Giq_" role="3MjJ$Z">
             <node concept="30dDZf" id="3rApyZ4GiqA" role="30dEsF">
               <node concept="_emDc" id="3rApyZ4Gim4" role="30dEsF">
@@ -3513,6 +3509,9 @@
             <node concept="_emDc" id="3rApyZ4GjBi" role="30dEs_">
               <ref role="_emDf" node="7aRvJQF08tN" resolve="x2" />
             </node>
+          </node>
+          <node concept="30bXRB" id="3rApyZ4Gim1" role="2lDidJ">
+            <property role="30bXRw" value="10" />
           </node>
         </node>
       </node>
@@ -3529,9 +3528,6 @@
           </node>
         </node>
         <node concept="3MjJ$y" id="3rApyZ4Gnml" role="_fkuY">
-          <node concept="30bXRB" id="3rApyZ4Gnmm" role="3MjJ$x">
-            <property role="30bXRw" value="10" />
-          </node>
           <node concept="30dDZf" id="3rApyZ4Gnmn" role="3MjJ$Z">
             <node concept="30dDZf" id="3rApyZ4Gnmo" role="30dEsF">
               <node concept="_emDc" id="3rApyZ4Gnmp" role="30dEsF">
@@ -3544,6 +3540,9 @@
             <node concept="30bXRB" id="3rApyZ4GnsT" role="30dEs_">
               <property role="30bXRw" value="2" />
             </node>
+          </node>
+          <node concept="30bXRB" id="3rApyZ4Gnmm" role="2lDidJ">
+            <property role="30bXRw" value="10" />
           </node>
         </node>
       </node>
