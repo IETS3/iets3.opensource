@@ -63,7 +63,6 @@
       </concept>
       <concept id="8853770331926288886" name="org.iets3.core.expr.util.structure.TopLevelTableValueSpec" flags="ng" index="1vxj33">
         <reference id="8853770331926288887" name="col" index="1vxj32" />
-        <child id="8853770331926288890" name="value" index="1vxj3f" />
       </concept>
       <concept id="8853770331926288879" name="org.iets3.core.expr.util.structure.TableCallExpression" flags="ng" index="1vxj3q">
         <child id="8853770331932198877" name="target" index="1vqeVC" />
@@ -775,7 +774,7 @@
         <node concept="32c3HZ" id="7EKPeISWxsI" role="1QScD9">
           <node concept="1vxj33" id="7EKPeISWy5o" role="32cvuH">
             <ref role="1vxj32" node="7FuUjk_bFh9" resolve="color" />
-            <node concept="5mhuz" id="7EKPeISWy6a" role="1vxj3f">
+            <node concept="5mhuz" id="7EKPeISWy6a" role="2lDidJ">
               <ref role="5mhpJ" node="8XWEtevIUl" resolve="GREEN" />
             </node>
           </node>
@@ -792,13 +791,13 @@
         <node concept="1vxj3q" id="7FuUjk_qFsQ" role="_fkuY">
           <node concept="1vxj33" id="7FuUjk_qFt3" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFha" resolve="n" />
-            <node concept="30bXRB" id="7FuUjk_qFtU" role="1vxj3f">
+            <node concept="30bXRB" id="7FuUjk_qFtU" role="2lDidJ">
               <property role="30bXRw" value="1" />
             </node>
           </node>
           <node concept="1vxj33" id="7FuUjk_qFwl" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFh9" resolve="color" />
-            <node concept="5mhuz" id="7FuUjk_qFxY" role="1vxj3f">
+            <node concept="5mhuz" id="7FuUjk_qFxY" role="2lDidJ">
               <ref role="5mhpJ" node="8XWEtevIUl" resolve="GREEN" />
             </node>
           </node>
@@ -820,13 +819,13 @@
         <node concept="1vxj3q" id="7FuUjk_xWAp" role="_fkuY">
           <node concept="1vxj33" id="7FuUjk_xWA_" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFha" resolve="n" />
-            <node concept="30bXRB" id="7FuUjk_xWBy" role="1vxj3f">
+            <node concept="30bXRB" id="7FuUjk_xWBy" role="2lDidJ">
               <property role="30bXRw" value="0" />
             </node>
           </node>
           <node concept="1vxj33" id="7FuUjk_xXg1" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFh9" resolve="color" />
-            <node concept="5mhuz" id="7FuUjk_xXRx" role="1vxj3f">
+            <node concept="5mhuz" id="7FuUjk_xXRx" role="2lDidJ">
               <ref role="5mhpJ" node="8XWEtevIUl" resolve="GREEN" />
             </node>
           </node>
@@ -848,13 +847,13 @@
         <node concept="1vxj3q" id="7FuUjk_xYzW" role="_fkuY">
           <node concept="1vxj33" id="7FuUjk_xYI8" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFha" resolve="n" />
-            <node concept="30bXRB" id="7FuUjk_xYJd" role="1vxj3f">
+            <node concept="30bXRB" id="7FuUjk_xYJd" role="2lDidJ">
               <property role="30bXRw" value="3" />
             </node>
           </node>
           <node concept="1vxj33" id="7FuUjk_xYMx" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFh9" resolve="color" />
-            <node concept="5mhuz" id="7FuUjk_xZqh" role="1vxj3f">
+            <node concept="5mhuz" id="7FuUjk_xZqh" role="2lDidJ">
               <ref role="5mhpJ" node="8XWEtevIUc" resolve="RED" />
             </node>
           </node>
@@ -876,13 +875,13 @@
         <node concept="1vxj3q" id="7FuUjk_y0PT" role="_fkuY">
           <node concept="1vxj33" id="7FuUjk_y0Q5" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFha" resolve="n" />
-            <node concept="30bXRB" id="7FuUjk_y0Ri" role="1vxj3f">
+            <node concept="30bXRB" id="7FuUjk_y0Ri" role="2lDidJ">
               <property role="30bXRw" value="8" />
             </node>
           </node>
           <node concept="1vxj33" id="7FuUjk_y0V3" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFh9" resolve="color" />
-            <node concept="5mhuz" id="7FuUjk_y1z5" role="1vxj3f">
+            <node concept="5mhuz" id="7FuUjk_y1z5" role="2lDidJ">
               <ref role="5mhpJ" node="8XWEtevIUc" resolve="RED" />
             </node>
           </node>
@@ -904,13 +903,13 @@
         <node concept="1vxj3q" id="7FuUjk_y2mn" role="_fkuY">
           <node concept="1vxj33" id="7FuUjk_y2mz" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFha" resolve="n" />
-            <node concept="30bXRB" id="7FuUjk_y2nS" role="1vxj3f">
+            <node concept="30bXRB" id="7FuUjk_y2nS" role="2lDidJ">
               <property role="30bXRw" value="4" />
             </node>
           </node>
           <node concept="1vxj33" id="7FuUjk_y2s6" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFh9" resolve="color" />
-            <node concept="5mhuz" id="7FuUjk_y2E0" role="1vxj3f">
+            <node concept="5mhuz" id="7FuUjk_y2E0" role="2lDidJ">
               <ref role="5mhpJ" node="8XWEtevIUg" resolve="BLUE" />
             </node>
           </node>
@@ -943,7 +942,7 @@
           </node>
           <node concept="1vxj33" id="7EKPeISWyQg" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFha" resolve="n" />
-            <node concept="30bXRB" id="7EKPeISWyUs" role="1vxj3f">
+            <node concept="30bXRB" id="7EKPeISWyUs" role="2lDidJ">
               <property role="30bXRw" value="1" />
             </node>
           </node>
@@ -965,7 +964,7 @@
           </node>
           <node concept="1vxj33" id="7EKPeISW$sq" role="1vwJml">
             <ref role="1vxj32" node="7FuUjk_bFha" resolve="n" />
-            <node concept="30bXRB" id="7EKPeISW$wR" role="1vxj3f">
+            <node concept="30bXRB" id="7EKPeISW$wR" role="2lDidJ">
               <property role="30bXRw" value="0" />
             </node>
           </node>
