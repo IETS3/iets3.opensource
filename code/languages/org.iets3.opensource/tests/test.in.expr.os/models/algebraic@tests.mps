@@ -269,9 +269,7 @@
     </language>
     <language id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable">
       <concept id="4255172619715417408" name="org.iets3.core.expr.mutable.structure.UpdateItExpression" flags="ng" index="3j5BQN" />
-      <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.BoxUpdateTarget" flags="ng" index="3sPC8h">
-        <child id="4255172619711277798" name="value" index="3sPC8l" />
-      </concept>
+      <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.BoxUpdateTarget" flags="ng" index="3sPC8h" />
       <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -2491,7 +2489,7 @@
           <node concept="1aduha" id="28$LOSAaMPT" role="1Kh3Cz">
             <node concept="1QScDb" id="28$LOSAaMPU" role="1aduh9">
               <node concept="3sPC8h" id="28$LOSAaMPV" role="1QScD9">
-                <node concept="1QScDb" id="28$LOSAaMPW" role="3sPC8l">
+                <node concept="1QScDb" id="28$LOSAaMPW" role="2lDidJ">
                   <node concept="2iGZtc" id="28$LOSAaMPX" role="1QScD9">
                     <node concept="2S399m" id="28$LOSAaMPY" role="2lDidJ">
                       <node concept="2Ss9cW" id="28$LOSAaMPZ" role="2S399n">
