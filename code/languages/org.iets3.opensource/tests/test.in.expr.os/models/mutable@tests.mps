@@ -496,9 +496,7 @@
       <concept id="1136100386040134757" name="org.iets3.core.expr.mutable.structure.InteractorValueTarget" flags="ng" index="GRK4H">
         <property id="9163496876327186602" name="value" index="2EMntM" />
       </concept>
-      <concept id="3487973603071598058" name="org.iets3.core.expr.mutable.structure.UpdateCurrencyCheck" flags="ng" index="Xo_xD">
-        <child id="3487973603071598059" name="oldValue" index="Xo_xC" />
-      </concept>
+      <concept id="3487973603071598058" name="org.iets3.core.expr.mutable.structure.UpdateCurrencyCheck" flags="ng" index="Xo_xD" />
       <concept id="5456956546145366256" name="org.iets3.core.expr.mutable.structure.WithContextExpression" flags="ng" index="1c1V7x">
         <child id="5456956546145366257" name="contextValues" index="1c1V7w" />
         <child id="5456956546145366259" name="expr" index="1c1V7y" />
@@ -15231,7 +15229,7 @@
         <node concept="1QScDb" id="31BLocd6UVC" role="1aduh9">
           <node concept="3sPC8h" id="31BLocd6UVD" role="1QScD9">
             <node concept="Xo_xD" id="31BLocd6Vzy" role="Xo_xA">
-              <node concept="1adzI2" id="31BLocd6VAt" role="Xo_xC">
+              <node concept="1adzI2" id="31BLocd6VAt" role="2lDidJ">
                 <ref role="1adwt6" node="31BLocd6UV$" resolve="x" />
               </node>
             </node>
@@ -15285,7 +15283,7 @@
         <node concept="1QScDb" id="31BLocd6WiV" role="1aduh9">
           <node concept="3sPC8h" id="31BLocd6WiW" role="1QScD9">
             <node concept="Xo_xD" id="31BLocd6Wj0" role="Xo_xA">
-              <node concept="1adzI2" id="31BLocd6Wj1" role="Xo_xC">
+              <node concept="1adzI2" id="31BLocd6Wj1" role="2lDidJ">
                 <ref role="1adwt6" node="31BLocd6WiR" resolve="x" />
               </node>
             </node>
@@ -15339,7 +15337,7 @@
         <node concept="1QScDb" id="6heyteL1qjE" role="1aduh9">
           <node concept="3sPC8h" id="6heyteL1qjF" role="1QScD9">
             <node concept="Xo_xD" id="6heyteL1qjJ" role="Xo_xA">
-              <node concept="30bXRB" id="6heyteL1r5C" role="Xo_xC">
+              <node concept="30bXRB" id="6heyteL1r5C" role="2lDidJ">
                 <property role="30bXRw" value="12" />
               </node>
             </node>
@@ -15534,7 +15532,7 @@
           <node concept="1QScDb" id="31BLocd75iZ" role="1aduh9">
             <node concept="3sPC8h" id="31BLocd75pd" role="1QScD9">
               <node concept="Xo_xD" id="31BLocd76uc" role="Xo_xA">
-                <node concept="1adzI2" id="31BLocd76_Z" role="Xo_xC">
+                <node concept="1adzI2" id="31BLocd76_Z" role="2lDidJ">
                   <ref role="1adwt6" node="31BLocd73Vb" resolve="v1" />
                 </node>
               </node>
@@ -15554,7 +15552,7 @@
           <node concept="1QScDb" id="31BLocd76A6" role="1aduh9">
             <node concept="3sPC8h" id="31BLocd76A7" role="1QScD9">
               <node concept="Xo_xD" id="31BLocd76Ab" role="Xo_xA">
-                <node concept="1adzI2" id="31BLocd77ce" role="Xo_xC">
+                <node concept="1adzI2" id="31BLocd77ce" role="2lDidJ">
                   <ref role="1adwt6" node="31BLocd74$$" resolve="v2" />
                 </node>
               </node>
