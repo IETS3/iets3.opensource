@@ -92,9 +92,7 @@
       <concept id="7971844778467001950" name="org.iets3.core.expr.simpleTypes.structure.OtherwiseLiteral" flags="ng" index="2fHqz8" />
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
-      <concept id="5880303268806840041" name="org.iets3.core.expr.simpleTypes.structure.StringStartsWithTarget" flags="ng" index="2_lWp3">
-        <child id="842813880843519732" name="value" index="1gK00Q" />
-      </concept>
+      <concept id="5880303268806840041" name="org.iets3.core.expr.simpleTypes.structure.StringStartsWithTarget" flags="ng" index="2_lWp3" />
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
       </concept>
@@ -1138,7 +1136,7 @@
               </node>
               <node concept="1QScDb" id="2LaXqmXwVT6" role="30dEsF">
                 <node concept="2_lWp3" id="2LaXqmXwVUn" role="1QScD9">
-                  <node concept="30bdrP" id="2LaXqmXwVVt" role="1gK00Q">
+                  <node concept="30bdrP" id="2LaXqmXwVVt" role="2lDidJ">
                     <property role="30bdrQ" value="III." />
                   </node>
                 </node>
@@ -1154,7 +1152,7 @@
           <node concept="2fGnzd" id="2LaXqmXwW5S" role="2fGnxs">
             <node concept="1QScDb" id="2LaXqmXwW5Z" role="2fGnzS">
               <node concept="2_lWp3" id="2LaXqmXwW60" role="1QScD9">
-                <node concept="30bdrP" id="2LaXqmXwW61" role="1gK00Q">
+                <node concept="30bdrP" id="2LaXqmXwW61" role="2lDidJ">
                   <property role="30bdrQ" value="MMM-Str" />
                 </node>
               </node>
