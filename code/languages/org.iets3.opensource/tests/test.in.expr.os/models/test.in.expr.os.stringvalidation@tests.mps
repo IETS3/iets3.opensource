@@ -102,9 +102,7 @@
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
-      <concept id="842813880843519728" name="org.iets3.core.expr.simpleTypes.structure.StringContainsTarget" flags="ng" index="1gK00M">
-        <child id="842813880843519732" name="value" index="1gK00R" />
-      </concept>
+      <concept id="842813880843519728" name="org.iets3.core.expr.simpleTypes.structure.StringContainsTarget" flags="ng" index="1gK00M" />
       <concept id="5994308065090560488" name="org.iets3.core.expr.simpleTypes.structure.StringLengthTarget" flags="ng" index="1uMQU5" />
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
@@ -1888,7 +1886,7 @@
             <node concept="30deu6" id="3dTPcTRNk_w" role="30dEsF">
               <node concept="1QScDb" id="3dTPcTRNk_x" role="30dEsF">
                 <node concept="1gK00M" id="3dTPcTRNkyx" role="1QScD9">
-                  <node concept="30bdrP" id="3dTPcTRNkz1" role="1gK00R">
+                  <node concept="30bdrP" id="3dTPcTRNkz1" role="2lDidJ">
                     <property role="30bdrQ" value=" -" />
                   </node>
                 </node>
@@ -1898,7 +1896,7 @@
               </node>
               <node concept="1QScDb" id="3dTPcTRNk_y" role="30dEs_">
                 <node concept="1gK00M" id="3dTPcTRNk$x" role="1QScD9">
-                  <node concept="30bdrP" id="3dTPcTRNk$y" role="1gK00R">
+                  <node concept="30bdrP" id="3dTPcTRNk$y" role="2lDidJ">
                     <property role="30bdrQ" value="- " />
                   </node>
                 </node>
@@ -1909,7 +1907,7 @@
             </node>
             <node concept="1QScDb" id="3dTPcTRNky3" role="30dEs_">
               <node concept="1gK00M" id="3dTPcTRNkAu" role="1QScD9">
-                <node concept="30bdrP" id="3dTPcTRNkAv" role="1gK00R">
+                <node concept="30bdrP" id="3dTPcTRNkAv" role="2lDidJ">
                   <property role="30bdrQ" value=" - " />
                 </node>
               </node>
