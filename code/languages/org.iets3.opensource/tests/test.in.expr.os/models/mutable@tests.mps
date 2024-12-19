@@ -568,7 +568,6 @@
     <language id="711a16d7-99e8-4e1d-b20c-99c0b7309cd8" name="org.iets3.core.expr.metafunction">
       <concept id="5994308065059740875" name="org.iets3.core.expr.metafunction.structure.MetaFunctionArgument" flags="ng" index="1v5heA" />
       <concept id="5994308065059739152" name="org.iets3.core.expr.metafunction.structure.MetaFunction" flags="ng" index="1v5h_X">
-        <child id="5994308065059740880" name="body" index="1v5heX" />
         <child id="5994308065059740883" name="args" index="1v5heY" />
         <child id="5994308065059743871" name="type" index="1v5isi" />
       </concept>
@@ -8512,7 +8511,7 @@
               <node concept="GZN9E" id="3iESbJsi1fQ" role="3iBWmK" />
             </node>
           </node>
-          <node concept="1QScDb" id="3iESbJsi1qn" role="1v5heX">
+          <node concept="1QScDb" id="3iESbJsi1qn" role="2lDidJ">
             <node concept="2TI7Wt" id="3iESbJsi1DD" role="1QScD9">
               <node concept="_emDc" id="3iESbJsi1EE" role="2lDidJ">
                 <ref role="_emDf" node="Z4fkwzeNX$" resolve="markus" />
