@@ -41,9 +41,9 @@
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="s2qo" ref="r:ab4665d9-6baf-4005-b8e4-87240839fe18(org.iets3.core.expr.math.interpreter.plugin)" />
     <import index="1cgy" ref="b804a851-ecf0-4ad4-a0af-ae720b39191a/java:ch.obermuhlner.math.big(org.iets3.core.expr.math.interpreter/)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -82,7 +82,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -130,7 +130,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
@@ -196,7 +196,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -223,7 +223,7 @@
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4">
         <child id="9056323058805176516" name="loopLabelReference" index="2mV7Oi" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -553,7 +553,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
@@ -4837,11 +4837,11 @@
                       <ref role="ehGHo" to="i3ya:VmEWGR2Mzb" resolve="ConversionRule" />
                     </node>
                     <node concept="2OqwBi" id="14E_CIO1rx0" role="33vP2m">
-                      <node concept="37vLTw" id="14E_CIO1rx1" role="2Oq$k0">
-                        <ref role="3cqZAo" node="124bbdDBCIf" resolve="finalConversionSpecifier" />
-                      </node>
                       <node concept="2qgKlT" id="14E_CIO1rx2" role="2OqNvi">
                         <ref role="37wK5l" to="rppw:1wGuEUvYk55" resolve="getConversionRule" />
+                      </node>
+                      <node concept="37vLTw" id="14E_CIO1rx1" role="2Oq$k0">
+                        <ref role="3cqZAo" node="124bbdDBCIf" resolve="finalConversionSpecifier" />
                       </node>
                     </node>
                   </node>
@@ -12382,6 +12382,9 @@
                     <ref role="3uigEE" to="rppw:2hbaSyB0HRN" resolve="AbstractUnitPrefix" />
                   </node>
                   <node concept="2OqwBi" id="1eut2uTTmMn" role="33vP2m">
+                    <node concept="37vLTw" id="ijdpu3bl3R" role="2Oq$k0">
+                      <ref role="3cqZAo" node="ijdpu3bl3M" resolve="manager" />
+                    </node>
                     <node concept="liA8E" id="1eut2uTTmMs" role="2OqNvi">
                       <ref role="37wK5l" to="rppw:6RONOaU4oEU" resolve="findPrefix" />
                       <node concept="2OqwBi" id="1eut2uTTmMt" role="37wK5m">
@@ -12392,9 +12395,6 @@
                           <ref role="3TsBF5" to="i3ya:7Bmg9OopAyq" resolve="prefix" />
                         </node>
                       </node>
-                    </node>
-                    <node concept="37vLTw" id="ijdpu3bl3R" role="2Oq$k0">
-                      <ref role="3cqZAo" node="ijdpu3bl3M" resolve="manager" />
                     </node>
                   </node>
                 </node>
@@ -12986,6 +12986,49 @@
               </node>
             </node>
           </node>
+          <node concept="3eNFk2" id="6qDtanTTjMM" role="3eNLev">
+            <node concept="3clFbS" id="6qDtanTTjMR" role="3eOfB_">
+              <node concept="3cpWs6" id="6qDtanU0Dyw" role="3cqZAp">
+                <node concept="2YIFZM" id="6qDtanTTjMU" role="3cqZAk">
+                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                  <node concept="Xl_RD" id="6qDtanTTjMV" role="37wK5m">
+                    <property role="Xl_RC" value="the quantities ‹%s› and ‹%s› are compatible but implicit conversions are disabled" />
+                  </node>
+                  <node concept="37vLTw" id="2xkb_2HR_tJ" role="37wK5m">
+                    <ref role="3cqZAo" node="2xkb_2HRkVE" resolve="subName" />
+                  </node>
+                  <node concept="37vLTw" id="2xkb_2HR_YW" role="37wK5m">
+                    <ref role="3cqZAo" node="2xkb_2HRmQL" resolve="supName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="77DmBXADDB4" role="3eO9$A">
+              <node concept="3fqX7Q" id="6qDtanTTjMN" role="3uHU7B">
+                <node concept="2OqwBi" id="6qDtanTTjMO" role="3fr31v">
+                  <node concept="2YIFZM" id="6qDtanTTjMP" role="2Oq$k0">
+                    <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="6qDtanTTjMQ" role="2OqNvi">
+                    <ref role="37wK5l" to="65nr:3wrpJuqrQh9" resolve="implicitConversionIsEnabled" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="77DmBXADIaK" role="3uHU7w">
+                <node concept="2OqwBi" id="77DmBXADIaM" role="3fr31v">
+                  <node concept="2YIFZM" id="77DmBXADIaN" role="2Oq$k0">
+                    <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="77DmBXADIaO" role="2OqNvi">
+                    <ref role="37wK5l" to="65nr:77DmBXAD1A5" resolve="allowMixingCompatibleQuantitiesWithoutConversions" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="1Wc70l" id="1ccGBAwDzrJ" role="3clFbw">
             <node concept="3fqX7Q" id="O$qsZ6vjiD" role="3uHU7B">
               <node concept="2OqwBi" id="O$qsZ6vjiE" role="3fr31v">
@@ -13021,49 +13064,6 @@
                 </node>
               </node>
               <node concept="1v1jN8" id="6qDtanTTjML" role="2OqNvi" />
-            </node>
-          </node>
-          <node concept="3eNFk2" id="6qDtanTTjMM" role="3eNLev">
-            <node concept="1Wc70l" id="77DmBXADDB4" role="3eO9$A">
-              <node concept="3fqX7Q" id="6qDtanTTjMN" role="3uHU7B">
-                <node concept="2OqwBi" id="6qDtanTTjMO" role="3fr31v">
-                  <node concept="2YIFZM" id="6qDtanTTjMP" role="2Oq$k0">
-                    <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
-                    <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
-                  </node>
-                  <node concept="liA8E" id="6qDtanTTjMQ" role="2OqNvi">
-                    <ref role="37wK5l" to="65nr:3wrpJuqrQh9" resolve="implicitConversionIsEnabled" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3fqX7Q" id="77DmBXADIaK" role="3uHU7w">
-                <node concept="2OqwBi" id="77DmBXADIaM" role="3fr31v">
-                  <node concept="2YIFZM" id="77DmBXADIaN" role="2Oq$k0">
-                    <ref role="37wK5l" to="65nr:4qv99IrBnzk" resolve="getConfig" />
-                    <ref role="1Pybhc" to="65nr:4qv99IrBkzE" resolve="PhysUnitLangConfigHelper" />
-                  </node>
-                  <node concept="liA8E" id="77DmBXADIaO" role="2OqNvi">
-                    <ref role="37wK5l" to="65nr:77DmBXAD1A5" resolve="allowMixingCompatibleQuantitiesWithoutConversions" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="6qDtanTTjMR" role="3eOfB_">
-              <node concept="3cpWs6" id="6qDtanU0Dyw" role="3cqZAp">
-                <node concept="2YIFZM" id="6qDtanTTjMU" role="3cqZAk">
-                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
-                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                  <node concept="Xl_RD" id="6qDtanTTjMV" role="37wK5m">
-                    <property role="Xl_RC" value="the quantities ‹%s› and ‹%s› are compatible but implicit conversions are disabled" />
-                  </node>
-                  <node concept="37vLTw" id="2xkb_2HR_tJ" role="37wK5m">
-                    <ref role="3cqZAo" node="2xkb_2HRkVE" resolve="subName" />
-                  </node>
-                  <node concept="37vLTw" id="2xkb_2HR_YW" role="37wK5m">
-                    <ref role="3cqZAo" node="2xkb_2HRmQL" resolve="supName" />
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
