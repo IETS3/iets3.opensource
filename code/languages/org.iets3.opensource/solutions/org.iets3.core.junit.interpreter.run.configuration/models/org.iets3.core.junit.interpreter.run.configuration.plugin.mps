@@ -81,6 +81,7 @@
     <import index="cvlm" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.runner(JUnit/)" />
     <import index="k76n" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.runner.notification(JUnit/)" />
     <import index="34h4" ref="r:263b648a-3e00-426c-ab4b-ba47ccd788c9(jetbrains.mps.baselanguage.unitTest.execution.launcher)" />
+    <import index="lxc5" ref="r:b25f8540-4e18-427d-a8ac-60f947a3fbc1(jetbrains.mps.baselanguage.unitTest.execution)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
   </imports>
   <registry>
@@ -3518,7 +3519,7 @@
       <property role="TrG5h" value="myOutStream" />
       <node concept="3Tm6S6" id="4UL3Yhl8wmM" role="1B3o_S" />
       <node concept="3uibUv" id="4UL3Yhl8wmN" role="1tU5fm">
-        <ref role="3uigEE" to="4l68:56tRMpP_bCe" resolve="CommandOutputStream" />
+        <ref role="3uigEE" to="34h4:56tRMpP_bCe" resolve="CommandOutputStream" />
       </node>
     </node>
     <node concept="312cEg" id="4UL3Yhl8wmO" role="jymVt">
@@ -3527,7 +3528,7 @@
       <property role="TrG5h" value="myErrStream" />
       <node concept="3Tm6S6" id="4UL3Yhl8wmP" role="1B3o_S" />
       <node concept="3uibUv" id="4UL3Yhl8wmQ" role="1tU5fm">
-        <ref role="3uigEE" to="4l68:56tRMpP_bCe" resolve="CommandOutputStream" />
+        <ref role="3uigEE" to="34h4:56tRMpP_bCe" resolve="CommandOutputStream" />
       </node>
     </node>
     <node concept="312cEg" id="3ViSmQm9jEN" role="jymVt">
@@ -4365,7 +4366,7 @@
             </node>
             <node concept="2ShNRf" id="2zLV6oy87UN" role="37vLTx">
               <node concept="1pGfFk" id="2zLV6oy87UO" role="2ShVmc">
-                <ref role="37wK5l" to="4l68:56tRMpP_bCf" resolve="CommandOutputStream" />
+                <ref role="37wK5l" to="34h4:56tRMpP_bCf" />
                 <node concept="10M0yZ" id="2zLV6oy87UP" role="37wK5m">
                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
@@ -4381,7 +4382,7 @@
             </node>
             <node concept="2ShNRf" id="2zLV6oy87UV" role="37vLTx">
               <node concept="1pGfFk" id="2zLV6oy87UW" role="2ShVmc">
-                <ref role="37wK5l" to="4l68:56tRMpP_bCf" resolve="CommandOutputStream" />
+                <ref role="37wK5l" to="34h4:56tRMpP_bCf" />
                 <node concept="10M0yZ" id="2zLV6oy87UX" role="37wK5m">
                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
@@ -4465,7 +4466,7 @@
                     <ref role="3cqZAo" node="4UL3Yhl8wmL" resolve="myOutStream" />
                   </node>
                   <node concept="liA8E" id="6WFPrF9RnA6" role="2OqNvi">
-                    <ref role="37wK5l" to="4l68:6WFPrF9QUVY" resolve="getOldStream" />
+                    <ref role="37wK5l" to="34h4:6WFPrF9QUVY" resolve="getOldStream" />
                   </node>
                 </node>
               </node>
@@ -4479,7 +4480,7 @@
                     <ref role="3cqZAo" node="4UL3Yhl8wmO" resolve="myErrStream" />
                   </node>
                   <node concept="liA8E" id="2KIjP932xMU" role="2OqNvi">
-                    <ref role="37wK5l" to="4l68:6WFPrF9QUVY" resolve="getOldStream" />
+                    <ref role="37wK5l" to="34h4:6WFPrF9QUVY" resolve="getOldStream" />
                   </node>
                 </node>
               </node>
@@ -12917,7 +12918,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="56tRMpP_bxA" role="1B3o_S" />
       <node concept="3uibUv" id="56tRMpP_bxB" role="1tU5fm">
-        <ref role="3uigEE" to="4l68:56tRMpP_bCe" resolve="CommandOutputStream" />
+        <ref role="3uigEE" to="34h4:56tRMpP_bCe" resolve="CommandOutputStream" />
       </node>
     </node>
     <node concept="2tJIrI" id="5d37arGB$Ts" role="jymVt" />
@@ -12939,7 +12940,7 @@
       <node concept="37vLTG" id="56tRMpP_bxR" role="3clF46">
         <property role="TrG5h" value="out" />
         <node concept="3uibUv" id="56tRMpP_bxS" role="1tU5fm">
-          <ref role="3uigEE" to="4l68:56tRMpP_bCe" resolve="CommandOutputStream" />
+          <ref role="3uigEE" to="34h4:56tRMpP_bCe" resolve="CommandOutputStream" />
         </node>
       </node>
     </node>
@@ -12997,8 +12998,8 @@
           <node concept="1rXfSq" id="7uaFES0cB89" role="3clFbG">
             <ref role="37wK5l" node="56tRMpP_bzv" resolve="printSyncToken" />
             <node concept="10M0yZ" id="7uaFES0cLfn" role="37wK5m">
-              <ref role="3cqZAo" to="tpnd:2Zbjobgnloc" resolve="START_TESTRUN" />
-              <ref role="1PxDUh" to="tpnd:1zHDQsywvgL" resolve="TestEventMessage" />
+              <ref role="3cqZAo" to="lxc5:2Zbjobgnloc" resolve="START_TESTRUN" />
+              <ref role="1PxDUh" to="lxc5:1zHDQsywvgL" resolve="TestEventMessage" />
             </node>
             <node concept="37vLTw" id="7uaFES0cEzD" role="37wK5m">
               <ref role="3cqZAo" node="7uaFES0czFy" resolve="description" />
@@ -13061,8 +13062,8 @@
           <node concept="1rXfSq" id="7uaFES0cB34" role="3clFbG">
             <ref role="37wK5l" node="56tRMpP_bzv" resolve="printSyncToken" />
             <node concept="10M0yZ" id="7uaFES0cLgc" role="37wK5m">
-              <ref role="3cqZAo" to="tpnd:2Zbjobgnlt2" resolve="FINISH_TESTRUN" />
-              <ref role="1PxDUh" to="tpnd:1zHDQsywvgL" resolve="TestEventMessage" />
+              <ref role="3cqZAo" to="lxc5:2Zbjobgnlt2" resolve="FINISH_TESTRUN" />
+              <ref role="1PxDUh" to="lxc5:1zHDQsywvgL" resolve="TestEventMessage" />
             </node>
             <node concept="37vLTw" id="7uaFES0cG3G" role="37wK5m">
               <ref role="3cqZAo" node="7uaFES0cG3B" resolve="fakeDescription" />
@@ -13100,8 +13101,8 @@
           <node concept="1rXfSq" id="7uaFES0cBbS" role="3clFbG">
             <ref role="37wK5l" node="56tRMpP_bzv" resolve="printSyncToken" />
             <node concept="10M0yZ" id="31Rnc32c5rJ" role="37wK5m">
-              <ref role="1PxDUh" to="tpnd:1zHDQsywvgL" resolve="TestEventMessage" />
-              <ref role="3cqZAo" to="tpnd:1zHDQsywvlu" resolve="FINISH_TEST" />
+              <ref role="1PxDUh" to="lxc5:1zHDQsywvgL" resolve="TestEventMessage" />
+              <ref role="3cqZAo" to="lxc5:1zHDQsywvlu" resolve="FINISH_TEST" />
             </node>
             <node concept="37vLTw" id="2BHiRxgm_jj" role="37wK5m">
               <ref role="3cqZAo" node="56tRMpP_bxZ" resolve="description" />
@@ -13128,9 +13129,9 @@
         <node concept="3clFbF" id="56tRMpP_byk" role="3cqZAp">
           <node concept="1rXfSq" id="7uaFES0cBgj" role="3clFbG">
             <ref role="37wK5l" node="56tRMpP_bzv" resolve="printSyncToken" />
-            <node concept="10M0yZ" id="31Rnc32c5oz" role="37wK5m">
-              <ref role="1PxDUh" to="tpnd:1zHDQsywvgL" resolve="TestEventMessage" />
-              <ref role="3cqZAo" to="tpnd:1zHDQsywvly" resolve="FAILURE_TEST_BEGIN" />
+            <node concept="10M0yZ" id="6W_1$4Blj5J" role="37wK5m">
+              <ref role="3cqZAo" to="lxc5:1zHDQsywvly" resolve="FAILURE_TEST_BEGIN" />
+              <ref role="1PxDUh" to="lxc5:1zHDQsywvgL" resolve="TestEventMessage" />
             </node>
             <node concept="2OqwBi" id="3ViSmQmj_TX" role="37wK5m">
               <node concept="37vLTw" id="2BHiRxgmNCO" role="2Oq$k0">
@@ -13230,9 +13231,9 @@
               <node concept="3clFbF" id="3ViSmQmsqNF" role="3cqZAp">
                 <node concept="1rXfSq" id="3ViSmQmsqNG" role="3clFbG">
                   <ref role="37wK5l" node="56tRMpP_bzv" resolve="printSyncToken" />
-                  <node concept="10M0yZ" id="3ViSmQmsqNH" role="37wK5m">
-                    <ref role="1PxDUh" to="tpnd:1zHDQsywvgL" resolve="TestEventMessage" />
-                    <ref role="3cqZAo" to="tpnd:1zHDQsywvly" resolve="FAILURE_TEST_BEGIN" />
+                  <node concept="10M0yZ" id="6W_1$4Blj68" role="37wK5m">
+                    <ref role="3cqZAo" to="lxc5:1zHDQsywvly" resolve="FAILURE_TEST_BEGIN" />
+                    <ref role="1PxDUh" to="lxc5:1zHDQsywvgL" resolve="TestEventMessage" />
                   </node>
                   <node concept="37vLTw" id="3ViSmQmt9LG" role="37wK5m">
                     <ref role="3cqZAo" node="3ViSmQmsHyn" resolve="description" />
@@ -13283,9 +13284,9 @@
         <node concept="3clFbF" id="56tRMpP_byP" role="3cqZAp">
           <node concept="1rXfSq" id="7uaFES0cBkg" role="3clFbG">
             <ref role="37wK5l" node="56tRMpP_bzv" resolve="printSyncToken" />
-            <node concept="10M0yZ" id="31Rnc32c5m2" role="37wK5m">
-              <ref role="1PxDUh" to="tpnd:1zHDQsywvgL" resolve="TestEventMessage" />
-              <ref role="3cqZAo" to="tpnd:1zHDQsywvlE" resolve="ASSUMPTION_FAILURE_TEST_PREFIX" />
+            <node concept="10M0yZ" id="6W_1$4Blj4Y" role="37wK5m">
+              <ref role="3cqZAo" to="lxc5:1zHDQsywvlE" resolve="ASSUMPTION_FAILURE_TEST_PREFIX" />
+              <ref role="1PxDUh" to="lxc5:1zHDQsywvgL" resolve="TestEventMessage" />
             </node>
             <node concept="2OqwBi" id="56tRMpP_byU" role="37wK5m">
               <node concept="37vLTw" id="2BHiRxgm8_0" role="2Oq$k0">
@@ -13322,9 +13323,9 @@
         <node concept="3clFbF" id="5d37arGBqg5" role="3cqZAp">
           <node concept="1rXfSq" id="7uaFES0cBo4" role="3clFbG">
             <ref role="37wK5l" node="56tRMpP_bzv" resolve="printSyncToken" />
-            <node concept="10M0yZ" id="31Rnc32c5jH" role="37wK5m">
-              <ref role="1PxDUh" to="tpnd:1zHDQsywvgL" resolve="TestEventMessage" />
-              <ref role="3cqZAo" to="tpnd:5d37arGBotJ" resolve="IGNORE_FAILURE_TEST_PREFIX" />
+            <node concept="10M0yZ" id="6W_1$4Blj6x" role="37wK5m">
+              <ref role="3cqZAo" to="lxc5:5d37arGBotJ" resolve="IGNORE_FAILURE_TEST_PREFIX" />
+              <ref role="1PxDUh" to="lxc5:1zHDQsywvgL" resolve="TestEventMessage" />
             </node>
             <node concept="37vLTw" id="5d37arGBqgb" role="37wK5m">
               <ref role="3cqZAo" node="5d37arGBqg2" resolve="description" />
@@ -13357,8 +13358,8 @@
           <node concept="1rXfSq" id="4hiugqyzhK9" role="3clFbG">
             <ref role="37wK5l" node="56tRMpP_bzv" resolve="printSyncToken" />
             <node concept="10M0yZ" id="31Rnc32c5w2" role="37wK5m">
-              <ref role="1PxDUh" to="tpnd:1zHDQsywvgL" resolve="TestEventMessage" />
-              <ref role="3cqZAo" to="tpnd:1zHDQsywvlq" resolve="START_TEST" />
+              <ref role="1PxDUh" to="lxc5:1zHDQsywvgL" resolve="TestEventMessage" />
+              <ref role="3cqZAo" to="lxc5:1zHDQsywvlq" resolve="START_TEST" />
             </node>
             <node concept="37vLTw" id="2BHiRxgm_5v" role="37wK5m">
               <ref role="3cqZAo" node="56tRMpP_bzj" resolve="description" />
@@ -13566,7 +13567,7 @@
                   <ref role="3cqZAo" node="56tRMpP_bx_" resolve="myOutput" />
                 </node>
                 <node concept="liA8E" id="56tRMpP_bzU" role="2OqNvi">
-                  <ref role="37wK5l" to="4l68:56tRMpP_bEb" resolve="writeCommand" />
+                  <ref role="37wK5l" to="34h4:56tRMpP_bEb" resolve="writeCommand" />
                   <node concept="2OqwBi" id="1zHDQsywvln" role="37wK5m">
                     <node concept="37vLTw" id="3GM_nagTtUS" role="2Oq$k0">
                       <ref role="3cqZAo" node="1zHDQsywvkv" resolve="builder" />
@@ -13584,7 +13585,7 @@
                   <ref role="3cqZAo" node="56tRMpP_bx_" resolve="myOutput" />
                 </node>
                 <node concept="liA8E" id="56tRMpP_bzZ" role="2OqNvi">
-                  <ref role="37wK5l" to="4l68:56tRMpP_bEL" resolve="flushSafe" />
+                  <ref role="37wK5l" to="34h4:56tRMpP_bEL" resolve="flushSafe" />
                 </node>
               </node>
             </node>
