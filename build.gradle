@@ -231,7 +231,7 @@ task execTestsByInterpreter(type: TestLanguages, dependsOn: buildLanguages) {
         ant.taskdef(name: 'junitInterpreterReport',
                 classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
                 classpath: configurations.junitAnt.asPath)
-        ant.junitInterpreterReport(toDir: "$buildDir", toFile: "TEST-InterpreterTestSuites.xml") {
+        ant.junitInterpreterReport(toDir: "$buildDir") {
             fileset(dir: "$buildDir", includes: '**/TEST-InterpreterTestSuites.xml')
             report(format: 'frames', todir: "$buildDir/junitInterpreterReport")
         }
