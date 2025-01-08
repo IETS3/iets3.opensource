@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -20,6 +19,7 @@
         <reference id="4604852045247358204" name="testModules" index="2vP9LP" />
       </concept>
       <concept id="8961448726281507188" name="org.iets3.opensource.build.gentests.structure.CustomRunnerAspect" flags="ng" index="1YJUtn">
+        <child id="3609768169816292377" name="jvmArgs" index="1psgkv" />
         <child id="8961448726281511691" name="path" index="1YJTkC" />
       </concept>
     </language>
@@ -33,7 +33,7 @@
       </concept>
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
         <child id="1688667350638517006" name="compressArgs" index="XX84c" />
-        <child id="3609768169816292377" name="jvmArgs" index="1psgkv" />
+        <child id="3609768169816292377" name="jvmArgs" index="1psgkw" />
       </concept>
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
@@ -14415,7 +14415,7 @@
             <property role="3MwjfP" value="true" />
           </node>
         </node>
-        <node concept="NbPM2" id="1DM13XazKfA" role="1psgkv">
+        <node concept="NbPM2" id="1DM13XazKfA" role="1psgkw">
           <node concept="3Mxwew" id="1DM13Xaw8ZX" role="3MwsjC">
             <property role="3MwjfP" value="-Xss2048k -Xmx2048m" />
           </node>
@@ -15488,9 +15488,14 @@
         </node>
       </node>
     </node>
-    <node concept="1YJUtn" id="7Lttyc2Ti3W" role="1hWBAP">
+    <node concept="1YJUtn" id="5iD3V$BSj$n" role="1hWBAP">
       <property role="3MWwXZ" value="MainClass" />
       <ref role="30Vec$" node="5jJR9m7XASm" resolve="org.iets3.opensource.interpreterExecutor" />
+      <node concept="NbPM2" id="5iD3V$BSj$B" role="1psgkv">
+        <node concept="3Mxwew" id="5iD3V$BSj$A" role="3MwsjC">
+          <property role="3MwjfP" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5071" />
+        </node>
+      </node>
       <node concept="398BVA" id="7Lttyc2W9kv" role="1YJTkC">
         <ref role="398BVh" node="7OQaAJRI74_" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="7Lttyc2W9rm" role="iGT6I">
