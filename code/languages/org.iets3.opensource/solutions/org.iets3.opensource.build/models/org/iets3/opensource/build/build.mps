@@ -1004,15 +1004,14 @@
             <ref role="3bR37D" to="ffeo:2Oogzg3vg0R" resolve="jetbrains.mps.baseLanguage.unitTest.platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="30Z3a1Q6ZyP" role="3bR37C">
-          <node concept="3bR9La" id="30Z3a1Q6ZyQ" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:4Hc8TwAmyoE" resolve="jetbrains.mps.tool.builder" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7Z6s7w3P36v" role="3bR37C">
           <node concept="3bR9La" id="7Z6s7w3P36w" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2AdTqXIhpqs" role="3bR37C">
+          <node concept="3bR9La" id="2AdTqXIhpqt" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
           </node>
         </node>
       </node>
@@ -15285,6 +15284,24 @@
     <node concept="2igEWh" id="wLSoj1MVqs" role="1hWBAP">
       <property role="3UIfUI" value="4096" />
     </node>
+    <node concept="1YJUtn" id="5iD3V$BSj$n" role="1hWBAP">
+      <property role="3MWwXZ" value="MainClass" />
+      <ref role="30Vec$" node="5jJR9m7XASm" resolve="org.iets3.opensource.interpreterExecutor" />
+      <node concept="NbPM2" id="5iD3V$BSj$B" role="1psgkv">
+        <node concept="3Mxwew" id="5iD3V$BSj$A" role="3MwsjC">
+          <property role="3MwjfP" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5071" />
+        </node>
+      </node>
+      <node concept="398BVA" id="7Lttyc2W9kv" role="1YJTkC">
+        <ref role="398BVh" node="7OQaAJRI74_" resolve="iets3.lang.opensource" />
+        <node concept="2Ry0Ak" id="7Lttyc2W9rm" role="iGT6I">
+          <property role="2Ry0Am" value="tests" />
+          <node concept="2Ry0Ak" id="7Lttyc2W9yd" role="2Ry0An">
+            <property role="2Ry0Am" value="test.in.expr.os" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="10PD9b" id="2U5AnekTBPu" role="10PD9s" />
     <node concept="2sgV4H" id="2U5AnekTBPz" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
@@ -15484,24 +15501,6 @@
         <node concept="1SiIV0" id="4MenVKn1A0r" role="3bR37C">
           <node concept="3bR9La" id="4MenVKn1A0s" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YJUtn" id="5iD3V$BSj$n" role="1hWBAP">
-      <property role="3MWwXZ" value="MainClass" />
-      <ref role="30Vec$" node="5jJR9m7XASm" resolve="org.iets3.opensource.interpreterExecutor" />
-      <node concept="NbPM2" id="5iD3V$BSj$B" role="1psgkv">
-        <node concept="3Mxwew" id="5iD3V$BSj$A" role="3MwsjC">
-          <property role="3MwjfP" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5071" />
-        </node>
-      </node>
-      <node concept="398BVA" id="7Lttyc2W9kv" role="1YJTkC">
-        <ref role="398BVh" node="7OQaAJRI74_" resolve="iets3.lang.opensource" />
-        <node concept="2Ry0Ak" id="7Lttyc2W9rm" role="iGT6I">
-          <property role="2Ry0Am" value="tests" />
-          <node concept="2Ry0Ak" id="7Lttyc2W9yd" role="2Ry0An">
-            <property role="2Ry0Am" value="test.in.expr.os" />
           </node>
         </node>
       </node>

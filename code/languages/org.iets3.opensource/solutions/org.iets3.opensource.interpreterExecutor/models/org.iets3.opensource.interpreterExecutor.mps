@@ -16,9 +16,7 @@
     <import index="4o98" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.platform(MPS.Core/)" />
     <import index="sfqd" ref="r:63a75970-913d-4a7b-99e2-8ca72ff6f509(jetbrains.mps.baseLanguage.unitTest.execution.client)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="mmaq" ref="f647e48e-4568-4f4c-b48a-1546492c6a2e/java:org.jdom(org.jdom/)" />
-    <import index="rzt1" ref="r:128708be-e37c-484b-b372-892904c802d9(jetbrains.mps.tool.builder.unittest)" />
-    <import index="se19" ref="f647e48e-4568-4f4c-b48a-1546492c6a2e/java:org.jdom.output(org.jdom/)" />
+    <import index="707k" ref="r:3b363c34-a1ec-4ae6-92cc-95c0273ad0c2(xml4JUnit)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -89,9 +87,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -556,14 +552,11 @@
           <node concept="3cpWsn" id="6Bg9Ew20FmV" role="3cpWs9">
             <property role="TrG5h" value="reporter" />
             <node concept="3uibUv" id="6Bg9Ew20Bys" role="1tU5fm">
-              <ref role="3uigEE" to="d6jk:7Z6s7w3Pe1o" resolve="InterpreterXMLTestReporter" />
+              <ref role="3uigEE" to="707k:5ZZgOa8NuRo" resolve="InterpreterTestReporter" />
             </node>
             <node concept="2ShNRf" id="6Bg9Ew20FmW" role="33vP2m">
               <node concept="1pGfFk" id="6Bg9Ew20FmX" role="2ShVmc">
-                <ref role="37wK5l" to="d6jk:2doG_VG7M0C" resolve="InterpreterXMLTestReporter" />
-                <node concept="Xl_RD" id="VT_taQoykn" role="37wK5m">
-                  <property role="Xl_RC" value="Interpreter Tests" />
-                </node>
+                <ref role="37wK5l" to="707k:5ZZgOa8NzgO" resolve="InterpreterTestReporter" />
               </node>
             </node>
           </node>
@@ -587,9 +580,7 @@
                   </node>
                   <node concept="ANE8D" id="4giJe8qrJck" role="2OqNvi" />
                 </node>
-                <node concept="3clFbT" id="4giJe8qrJcl" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
+                <node concept="3clFbT" id="4giJe8qrJcl" role="37wK5m" />
                 <node concept="37vLTw" id="7Z6s7w45dN5" role="37wK5m">
                   <ref role="3cqZAo" node="6Bg9Ew20FmV" resolve="reporter" />
                 </node>
@@ -617,18 +608,56 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7OLH2_zDM5g" role="3cqZAp">
+          <node concept="2OqwBi" id="7OLH2_zDOha" role="3clFbG">
+            <node concept="10M0yZ" id="7OLH2_zDMQQ" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7OLH2_zDQnF" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="Xl_RD" id="7OLH2_zDTpt" role="37wK5m">
+                <property role="Xl_RC" value="Test execution done. Writing XML Test Report now." />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4MenVKna5Nk" role="3cqZAp">
           <node concept="2OqwBi" id="4MenVKnab2c" role="3clFbG">
             <node concept="37vLTw" id="4MenVKna5Ni" role="2Oq$k0">
               <ref role="3cqZAo" node="6Bg9Ew20FmV" resolve="reporter" />
             </node>
             <node concept="liA8E" id="4MenVKnacXA" role="2OqNvi">
-              <ref role="37wK5l" to="d6jk:63re9eR752H" resolve="writeToFile" />
+              <ref role="37wK5l" to="707k:5ZZgOa8NuV7" resolve="writeToFile" />
               <node concept="2ShNRf" id="3hBC0mRPfUe" role="37wK5m">
                 <node concept="1pGfFk" id="3hBC0mRPfUf" role="2ShVmc">
                   <property role="373rjd" value="true" />
                   <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                   <node concept="37vLTw" id="4MenVKnaOdF" role="37wK5m">
+                    <ref role="3cqZAo" node="7Z6s7w42Qyk" resolve="myReportsFile" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7OLH2_zEhmi" role="3cqZAp">
+          <node concept="2OqwBi" id="7OLH2_zEhmj" role="3clFbG">
+            <node concept="10M0yZ" id="7OLH2_zEhmk" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7OLH2_zEhml" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="7OLH2_zEzUu" role="37wK5m">
+                <node concept="Xl_RD" id="7OLH2_zEzUJ" role="3uHU7w">
+                  <property role="Xl_RC" value="'" />
+                </node>
+                <node concept="3cpWs3" id="7OLH2_zEwfp" role="3uHU7B">
+                  <node concept="Xl_RD" id="7OLH2_zEhmm" role="3uHU7B">
+                    <property role="Xl_RC" value="XML Test Report was written to: '" />
+                  </node>
+                  <node concept="37vLTw" id="7OLH2_zEx0v" role="3uHU7w">
                     <ref role="3cqZAo" node="7Z6s7w42Qyk" resolve="myReportsFile" />
                   </node>
                 </node>
