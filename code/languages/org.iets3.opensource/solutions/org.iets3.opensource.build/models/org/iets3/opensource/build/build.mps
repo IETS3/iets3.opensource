@@ -1004,15 +1004,14 @@
             <ref role="3bR37D" to="ffeo:2Oogzg3vg0R" resolve="jetbrains.mps.baseLanguage.unitTest.platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="30Z3a1Q6ZyP" role="3bR37C">
-          <node concept="3bR9La" id="30Z3a1Q6ZyQ" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:4Hc8TwAmyoE" resolve="jetbrains.mps.tool.builder" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7Z6s7w3P36v" role="3bR37C">
           <node concept="3bR9La" id="7Z6s7w3P36w" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2AdTqXIhpqs" role="3bR37C">
+          <node concept="3bR9La" id="2AdTqXIhpqt" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
           </node>
         </node>
       </node>
