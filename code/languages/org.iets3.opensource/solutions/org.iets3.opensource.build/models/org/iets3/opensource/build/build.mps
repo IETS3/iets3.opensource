@@ -15288,8 +15288,8 @@
       <property role="3MWwXZ" value="MainClass" />
       <ref role="30Vec$" node="5jJR9m7XASm" resolve="org.iets3.opensource.interpreterExecutor" />
       <node concept="NbPM2" id="5iD3V$BSj$B" role="1psgkv">
-        <node concept="3Mxwew" id="5iD3V$BSj$A" role="3MwsjC">
-          <property role="3MwjfP" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5071" />
+        <node concept="3Mxwew" id="yHjyt5yb1m" role="3MwsjC">
+          <property role="3MwjfP" value="-Xss2048k -Xmx4096m -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5071" />
         </node>
       </node>
       <node concept="398BVA" id="7Lttyc2W9kv" role="1YJTkC">
