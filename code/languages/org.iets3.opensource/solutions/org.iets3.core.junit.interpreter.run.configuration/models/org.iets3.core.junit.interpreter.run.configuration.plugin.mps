@@ -4195,7 +4195,7 @@
         <node concept="3clFbF" id="6Bg9Ew1ZzeA" role="3cqZAp">
           <node concept="2OqwBi" id="63re9eQYCZi" role="3clFbG">
             <node concept="37vLTw" id="63re9eQYCZj" role="2Oq$k0">
-              <ref role="3cqZAo" node="3hBC0mRNSRj" resolve="reporterFactory" />
+              <ref role="3cqZAo" node="3hBC0mRNSRj" resolve="reporter" />
             </node>
             <node concept="liA8E" id="63re9eQYCZk" role="2OqNvi">
               <ref role="37wK5l" to="707k:6Bg9Ew1Yx_S" resolve="testSuiteStarted" />

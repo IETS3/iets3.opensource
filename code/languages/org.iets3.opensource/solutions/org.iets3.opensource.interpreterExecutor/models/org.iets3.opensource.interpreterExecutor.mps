@@ -202,7 +202,7 @@
       <node concept="17QB3L" id="3PMiOKDWLJX" role="1tU5fm" />
       <node concept="3Tm6S6" id="3PMiOKDWJuL" role="1B3o_S" />
       <node concept="Xl_RD" id="3PMiOKDWNJV" role="33vP2m">
-        <property role="Xl_RC" value="/home/mgronover/Projects/Datev/iets3.opensource/build/TEST-InterpreterTestSuites.xml" />
+        <property role="Xl_RC" value="/home/mgronover/Projects/Datev/iets3.opensource/build/InterpreterTestSuites.xml" />
       </node>
     </node>
     <node concept="2tJIrI" id="7Z6s7w42B7N" role="jymVt" />
