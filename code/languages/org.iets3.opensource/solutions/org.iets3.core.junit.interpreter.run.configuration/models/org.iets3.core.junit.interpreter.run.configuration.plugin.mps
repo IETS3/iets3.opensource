@@ -4195,7 +4195,7 @@
         <node concept="3clFbF" id="6Bg9Ew1ZzeA" role="3cqZAp">
           <node concept="2OqwBi" id="63re9eQYCZi" role="3clFbG">
             <node concept="37vLTw" id="63re9eQYCZj" role="2Oq$k0">
-              <ref role="3cqZAo" node="3hBC0mRNSRj" resolve="reporterFactory" />
+              <ref role="3cqZAo" node="3hBC0mRNSRj" resolve="reporter" />
             </node>
             <node concept="liA8E" id="63re9eQYCZk" role="2OqNvi">
               <ref role="37wK5l" to="707k:6Bg9Ew1Yx_S" resolve="testSuiteStarted" />
@@ -4466,29 +4466,6 @@
                   </node>
                   <node concept="3clFbJ" id="1ZjgyFGBkRJ" role="3cqZAp">
                     <node concept="3clFbS" id="1ZjgyFGBkRK" role="3clFbx">
-                      <node concept="3clFbF" id="3ViSmQmtmdR" role="3cqZAp">
-                        <node concept="2OqwBi" id="3ViSmQmtnsn" role="3clFbG">
-                          <node concept="37vLTw" id="3ViSmQmtmdP" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3ViSmQmi268" resolve="runListener" />
-                          </node>
-                          <node concept="liA8E" id="3ViSmQmtrA1" role="2OqNvi">
-                            <ref role="37wK5l" node="3ViSmQmsqN_" resolve="testFailureForEvalResult" />
-                            <node concept="37vLTw" id="3ViSmQmtu3t" role="37wK5m">
-                              <ref role="3cqZAo" node="3ViSmQmb0ZY" resolve="testDescription" />
-                            </node>
-                            <node concept="37vLTw" id="3ViSmQmtxlc" role="37wK5m">
-                              <ref role="3cqZAo" node="1ZjgyFGBkRl" resolve="testResult" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="1ZjgyFGBkRQ" role="3cqZAp">
-                        <node concept="3uNrnE" id="1ZjgyFGBkRR" role="3clFbG">
-                          <node concept="37vLTw" id="1ZjgyFGBkRS" role="2$L3a6">
-                            <ref role="3cqZAo" node="6UkhXJgOoXx" resolve="myFailureCount" />
-                          </node>
-                        </node>
-                      </node>
                       <node concept="1X3_iC" id="4eVkykfRV5f" role="lGtFl">
                         <property role="3V$3am" value="statement" />
                         <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -4537,6 +4514,29 @@
                                 </node>
                               </node>
                             </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="3ViSmQmtmdR" role="3cqZAp">
+                        <node concept="2OqwBi" id="3ViSmQmtnsn" role="3clFbG">
+                          <node concept="37vLTw" id="3ViSmQmtmdP" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3ViSmQmi268" resolve="runListener" />
+                          </node>
+                          <node concept="liA8E" id="3ViSmQmtrA1" role="2OqNvi">
+                            <ref role="37wK5l" node="3ViSmQmsqN_" resolve="testFailureForEvalResult" />
+                            <node concept="37vLTw" id="3ViSmQmtu3t" role="37wK5m">
+                              <ref role="3cqZAo" node="3ViSmQmb0ZY" resolve="testDescription" />
+                            </node>
+                            <node concept="37vLTw" id="3ViSmQmtxlc" role="37wK5m">
+                              <ref role="3cqZAo" node="1ZjgyFGBkRl" resolve="testResult" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="1ZjgyFGBkRQ" role="3cqZAp">
+                        <node concept="3uNrnE" id="1ZjgyFGBkRR" role="3clFbG">
+                          <node concept="37vLTw" id="1ZjgyFGBkRS" role="2$L3a6">
+                            <ref role="3cqZAo" node="6UkhXJgOoXx" resolve="myFailureCount" />
                           </node>
                         </node>
                       </node>
@@ -13718,11 +13718,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7wORwlIHyUm" role="3cqZAp">
-          <node concept="1rXfSq" id="7wORwlIHyUk" role="3clFbG">
-            <ref role="37wK5l" node="4e85Rl_q8Gl" resolve="flush" />
-          </node>
-        </node>
         <node concept="1X3_iC" id="1DCOeq7g7YQ" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -13744,6 +13739,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7wORwlIHyUm" role="3cqZAp">
+          <node concept="1rXfSq" id="7wORwlIHyUk" role="3clFbG">
+            <ref role="37wK5l" node="4e85Rl_q8Gl" resolve="flush" />
           </node>
         </node>
       </node>

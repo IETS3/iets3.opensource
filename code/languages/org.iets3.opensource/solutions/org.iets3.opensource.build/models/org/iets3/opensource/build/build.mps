@@ -1004,11 +1004,6 @@
             <ref role="3bR37D" to="ffeo:2Oogzg3vg0R" resolve="jetbrains.mps.baseLanguage.unitTest.platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7Z6s7w3P36v" role="3bR37C">
-          <node concept="3bR9La" id="7Z6s7w3P36w" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2AdTqXIhpqs" role="3bR37C">
           <node concept="3bR9La" id="2AdTqXIhpqt" role="1SiIV1">
             <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
@@ -15289,7 +15284,7 @@
       <ref role="30Vec$" node="5jJR9m7XASm" resolve="org.iets3.opensource.interpreterExecutor" />
       <node concept="NbPM2" id="5iD3V$BSj$B" role="1psgkv">
         <node concept="3Mxwew" id="yHjyt5yb1m" role="3MwsjC">
-          <property role="3MwjfP" value="-Xss2048k -Xmx4096m -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5071" />
+          <property role="3MwjfP" value="-Xss2048k -Xmx4096m " />
         </node>
       </node>
       <node concept="398BVA" id="7Lttyc2W9kv" role="1YJTkC">
