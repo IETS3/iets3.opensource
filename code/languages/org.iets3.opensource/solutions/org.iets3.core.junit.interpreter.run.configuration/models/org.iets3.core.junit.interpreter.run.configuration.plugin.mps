@@ -3556,14 +3556,6 @@
         <ref role="3uigEE" node="77hRUeKhvqy" resolve="InterpreterRunListener" />
       </node>
     </node>
-    <node concept="312cEg" id="3PMiOKDWLM_" role="jymVt">
-      <property role="TrG5h" value="myReportsFile" />
-      <node concept="3Tm6S6" id="3PMiOKDWJuL" role="1B3o_S" />
-      <node concept="17QB3L" id="3PMiOKDWLJX" role="1tU5fm" />
-      <node concept="Xl_RD" id="3PMiOKDWNJV" role="33vP2m">
-        <property role="Xl_RC" value="/home/mgronover/Projects/Datev/iets3.opensource/build/TEST-InterpreterTestSuites.xml" />
-      </node>
-    </node>
     <node concept="312cEg" id="3hBC0mRNSRj" role="jymVt">
       <property role="TrG5h" value="reporter" />
       <node concept="3Tm6S6" id="3hBC0mRNPBr" role="1B3o_S" />
@@ -5155,18 +5147,9 @@
         <ref role="3uigEE" to="707k:7Z6s7w45fwn" resolve="IInterpreterTestReporter" />
       </node>
       <node concept="2ShNRf" id="7CgTGgJZSWm" role="33vP2m">
-        <node concept="HV5vD" id="5ZZgOa8Nx3j" role="2ShVmc">
-          <property role="373rjd" value="true" />
-          <ref role="HV5vE" to="707k:5ZZgOa8NuRo" resolve="InterpreterTestReporter" />
+        <node concept="1pGfFk" id="6mKf5uiH5EL" role="2ShVmc">
+          <ref role="37wK5l" to="707k:5ZZgOa8NzgO" resolve="InterpreterTestReporter" />
         </node>
-      </node>
-    </node>
-    <node concept="Wx3nA" id="7Z6s7w42Qyk" role="jymVt">
-      <property role="TrG5h" value="myReportsFile" />
-      <node concept="17QB3L" id="7CgTGgK0S5m" role="1tU5fm" />
-      <node concept="3Tm6S6" id="7CgTGgK0S5n" role="1B3o_S" />
-      <node concept="Xl_RD" id="7CgTGgK0S5o" role="33vP2m">
-        <property role="Xl_RC" value="/home/mgronover/Projects/Datev/iets3.opensource/build/TEST-InterpreterTestSuites.xml" />
       </node>
     </node>
     <node concept="2tJIrI" id="5iYlssmVZrZ" role="jymVt" />
@@ -6647,25 +6630,6 @@
             </node>
             <node concept="liA8E" id="2A5UIbg6KDE" role="2OqNvi">
               <ref role="37wK5l" to="ic9i:2A5UIbg6Ezp" resolve="reset" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7CgTGgK0Kh8" role="3cqZAp">
-          <node concept="2OqwBi" id="7CgTGgK0Mxm" role="3clFbG">
-            <node concept="37vLTw" id="7CgTGgK0Kh6" role="2Oq$k0">
-              <ref role="3cqZAo" node="7CgTGgJZQ2G" resolve="reporter" />
-            </node>
-            <node concept="liA8E" id="7CgTGgK0N_o" role="2OqNvi">
-              <ref role="37wK5l" to="707k:63re9eQZBk1" resolve="writeToFile" />
-              <node concept="2ShNRf" id="3hBC0mRPfUe" role="37wK5m">
-                <node concept="1pGfFk" id="3hBC0mRPfUf" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                  <node concept="37vLTw" id="7CgTGgK14Cq" role="37wK5m">
-                    <ref role="3cqZAo" node="7Z6s7w42Qyk" resolve="myReportsFile" />
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
