@@ -7,11 +7,11 @@
   <imports />
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
-      </concept>
-      <concept id="867786408877811036" name="org.iets3.core.expr.base.structure.ContractItem" flags="ng" index="I61DS">
-        <child id="867786408877811038" name="expr" index="I61DU" />
       </concept>
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
@@ -67,7 +67,7 @@
         <node concept="IkdP5" id="4NM7IHyE28T" role="IkdOs">
           <ref role="IkdFF" node="4NM7IHyE28F" resolve="PressButton" />
           <node concept="InuEK" id="4NM7IHyE296" role="IkdFD">
-            <node concept="30d6GJ" id="4NM7IHyE29y" role="I61DU">
+            <node concept="30d6GJ" id="4NM7IHyE29y" role="2lDidJ">
               <node concept="30bXRB" id="4NM7IHyE29C" role="30dEs_">
                 <property role="30bXRw" value="5" />
               </node>
