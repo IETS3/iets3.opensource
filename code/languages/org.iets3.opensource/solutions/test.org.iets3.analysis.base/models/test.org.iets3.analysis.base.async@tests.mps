@@ -656,13 +656,13 @@
             <property role="TrG5h" value="messageTypes" />
             <node concept="3vKaQO" id="IJ8MgQ1VTB" role="1tU5fm">
               <node concept="3uibUv" id="IJ8MgQ1VTD" role="3O5elw">
-                <ref role="3uigEE" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
+                <ref role="3uigEE" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
               </node>
             </node>
             <node concept="2ShNRf" id="IJ8MgQ26C5" role="33vP2m">
               <node concept="2Jqq0_" id="IJ8MgQ29xT" role="2ShVmc">
                 <node concept="3uibUv" id="IJ8MgQ2aCo" role="HW$YZ">
-                  <ref role="3uigEE" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
+                  <ref role="3uigEE" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
                 </node>
               </node>
             </node>
@@ -802,7 +802,7 @@
             </node>
             <node concept="Rm8GO" id="IJ8MgQ2oqn" role="37wK5m">
               <ref role="Rm8GQ" to="gdgh:57dmM_Ut0$Q" resolve="OK" />
-              <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
+              <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
             </node>
           </node>
         </node>
@@ -905,7 +905,7 @@
             </node>
             <node concept="Rm8GO" id="IJ8MgQ3anj" role="37wK5m">
               <ref role="Rm8GQ" to="gdgh:3x8VOVHlimr" resolve="Cancelled" />
-              <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
+              <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
             </node>
           </node>
         </node>

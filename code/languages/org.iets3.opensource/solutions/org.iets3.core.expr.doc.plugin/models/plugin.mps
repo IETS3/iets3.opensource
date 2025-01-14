@@ -389,6 +389,10 @@
         <property role="3clFbU" value="true" />
       </node>
     </node>
+    <node concept="10M0yZ" id="57UOyezQO8k" role="37b278">
+      <ref role="3cqZAo" to="z2i8:~AllIcons$Gutter.Bookmark" resolve="Bookmark" />
+      <ref role="1PxDUh" to="z2i8:~AllIcons$Gutter" resolve="AllIcons.Gutter" />
+    </node>
     <node concept="2Sg_IR" id="3HwHK4HQc$U" role="3GFWDq">
       <node concept="1bVj0M" id="3HwHK4HQc$V" role="2SgG2M">
         <node concept="3clFbS" id="3HwHK4HQc$W" role="1bW5cS">
@@ -438,10 +442,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="10M0yZ" id="57UOyezQO8k" role="37b278">
-      <ref role="3cqZAo" to="z2i8:~AllIcons$Gutter.Bookmark" resolve="Bookmark" />
-      <ref role="1PxDUh" to="z2i8:~AllIcons$Gutter" resolve="AllIcons.Gutter" />
     </node>
   </node>
   <node concept="312cEu" id="2m0pXWMTjv">
@@ -571,6 +571,41 @@
     <node concept="2tJIrI" id="2m0pXWMTkn" role="jymVt" />
     <node concept="3Tm1VV" id="2m0pXWMTjw" role="1B3o_S" />
   </node>
+  <node concept="vrV6u" id="WieAE6FJqt">
+    <property role="TrG5h" value="bookmark" />
+    <node concept="3uibUv" id="2Qbt$1tSq3A" role="luc8K">
+      <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="BookmarkConfig" />
+    </node>
+  </node>
+  <node concept="312cEu" id="2Qbt$1tSnqh">
+    <property role="TrG5h" value="BookmarkConfig" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="2Qbt$1tSq4w" role="jymVt" />
+    <node concept="3clFb_" id="2Qbt$1tSwXM" role="jymVt">
+      <property role="TrG5h" value="getPriorityLevel" />
+      <node concept="10Oyi0" id="2Qbt$1tSx7l" role="3clF45" />
+      <node concept="3Tm1VV" id="2Qbt$1tSwXP" role="1B3o_S" />
+      <node concept="3clFbS" id="2Qbt$1tSwXQ" role="3clF47">
+        <node concept="3clFbF" id="3HwHK4HNSfC" role="3cqZAp">
+          <node concept="3cmrfG" id="3HwHK4HNSfB" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3HwHK4HNNrr" role="jymVt" />
+    <node concept="3clFb_" id="3HwHK4HNRzU" role="jymVt">
+      <property role="TrG5h" value="activateBookmarkExplorer" />
+      <node concept="3clFbS" id="3HwHK4HNRzX" role="3clF47">
+        <node concept="3clFbF" id="3HwHK4HNRR6" role="3cqZAp">
+          <node concept="3clFbT" id="3HwHK4HNRR5" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3HwHK4HNNLD" role="1B3o_S" />
+      <node concept="10P_77" id="3HwHK4HNQMn" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
+  </node>
   <node concept="312cEu" id="4qv99IrBkzE">
     <property role="TrG5h" value="BookmarkConfigHelper" />
     <node concept="2YIFZL" id="4qv99IrBnzk" role="jymVt">
@@ -643,41 +678,6 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="4qv99IrBkzF" role="1B3o_S" />
-  </node>
-  <node concept="vrV6u" id="WieAE6FJqt">
-    <property role="TrG5h" value="bookmark" />
-    <node concept="3uibUv" id="2Qbt$1tSq3A" role="luc8K">
-      <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="BookmarkConfig" />
-    </node>
-  </node>
-  <node concept="312cEu" id="2Qbt$1tSnqh">
-    <property role="TrG5h" value="BookmarkConfig" />
-    <property role="1sVAO0" value="true" />
-    <node concept="2tJIrI" id="2Qbt$1tSq4w" role="jymVt" />
-    <node concept="3clFb_" id="2Qbt$1tSwXM" role="jymVt">
-      <property role="TrG5h" value="getPriorityLevel" />
-      <node concept="10Oyi0" id="2Qbt$1tSx7l" role="3clF45" />
-      <node concept="3Tm1VV" id="2Qbt$1tSwXP" role="1B3o_S" />
-      <node concept="3clFbS" id="2Qbt$1tSwXQ" role="3clF47">
-        <node concept="3clFbF" id="3HwHK4HNSfC" role="3cqZAp">
-          <node concept="3cmrfG" id="3HwHK4HNSfB" role="3clFbG">
-            <property role="3cmrfH" value="0" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3HwHK4HNNrr" role="jymVt" />
-    <node concept="3clFb_" id="3HwHK4HNRzU" role="jymVt">
-      <property role="TrG5h" value="activateBookmarkExplorer" />
-      <node concept="3clFbS" id="3HwHK4HNRzX" role="3clF47">
-        <node concept="3clFbF" id="3HwHK4HNRR6" role="3cqZAp">
-          <node concept="3clFbT" id="3HwHK4HNRR5" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="3HwHK4HNNLD" role="1B3o_S" />
-      <node concept="10P_77" id="3HwHK4HNQMn" role="3clF45" />
-    </node>
-    <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
   </node>
 </model>
 

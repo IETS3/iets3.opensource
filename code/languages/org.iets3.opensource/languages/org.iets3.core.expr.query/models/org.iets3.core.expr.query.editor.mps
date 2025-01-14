@@ -9,6 +9,7 @@
   <imports>
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="ysgh" ref="r:9ed37aa3-295d-400f-9a08-9c363b19e30b(org.iets3.core.expr.query.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" implicit="true" />
@@ -247,7 +248,7 @@
     <ref role="1XX52x" to="ysgh:5QDPRL$pwTW" resolve="QuerySource" />
     <node concept="3EZMnI" id="5QDPRL$qt3f" role="2wV5jI">
       <node concept="3F1sOY" id="5QDPRL$pxse" role="3EZMnx">
-        <ref role="1NtTu8" to="ysgh:5QDPRL$px4h" resolve="expr" />
+        <ref role="1NtTu8" to="hm2y:3G_qVqIw4zp" resolve="expr" />
       </node>
       <node concept="l2Vlx" id="1ASK_HedIsN" role="2iSdaV" />
     </node>
