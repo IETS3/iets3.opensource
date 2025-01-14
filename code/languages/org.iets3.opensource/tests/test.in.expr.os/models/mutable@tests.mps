@@ -88,11 +88,6 @@
         <reference id="24388123200566265" name="param" index="1GjhsB" />
       </concept>
     </language>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util">
       <concept id="4214990435115877128" name="org.iets3.core.expr.util.structure.DecTab" flags="ng" index="UJIhK">
         <child id="4214990435115877193" name="contents" index="UJIgL" />
@@ -203,10 +198,10 @@
       <concept id="9097157441620016186" name="org.iets3.core.expr.collections.structure.ForeachOp" flags="ng" index="3NG6h4" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
-      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ngI" index="pfQq$">
+      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
         <child id="229512757698888936" name="optionalName" index="pfQ1b" />
       </concept>
       <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
@@ -222,7 +217,7 @@
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
       </concept>
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="1019070541450016346" name="org.iets3.core.expr.base.structure.TupleValue" flags="ng" index="m5g4o">
@@ -240,17 +235,17 @@
         <reference id="7089558164910719191" name="try" index="2zAAH1" />
       </concept>
       <concept id="7089558164908491660" name="org.iets3.core.expr.base.structure.EmptyExpression" flags="ng" index="2zH6wq" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
-      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
         <child id="867786408877811045" name="items" index="I61D1" />
       </concept>
       <concept id="867786408877811180" name="org.iets3.core.expr.base.structure.Postcondition" flags="ng" index="I61F8" />
-      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
+      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ng" index="I61I7">
         <child id="867786408877811042" name="contract" index="I61D6" />
       </concept>
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
@@ -416,7 +411,7 @@
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
       </concept>
-      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ngI" index="S5Q1W">
+      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
         <child id="602952467877562565" name="members" index="S5Trm" />
       </concept>
       <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
@@ -504,7 +499,7 @@
         <child id="5456956546147356870" name="count" index="1co17n" />
       </concept>
       <concept id="5456956546137040126" name="org.iets3.core.expr.mutable.structure.ThrowInterceptor" flags="ng" index="1cxEnJ" />
-      <concept id="5456956546136473372" name="org.iets3.core.expr.mutable.structure.IInterceptorContainer" flags="ngI" index="1czZSd">
+      <concept id="5456956546136473372" name="org.iets3.core.expr.mutable.structure.IInterceptorContainer" flags="ng" index="1czZSd">
         <child id="5456956546136477250" name="interceptors" index="1czwXj" />
       </concept>
       <concept id="5456956546137624418" name="org.iets3.core.expr.mutable.structure.ContextArgValue" flags="ng" index="1cZoTN">
@@ -546,7 +541,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -561,7 +556,7 @@
         <child id="5994308065059740883" name="args" index="1v5heY" />
         <child id="5994308065059743871" name="type" index="1v5isi" />
       </concept>
-      <concept id="5994308065059776299" name="org.iets3.core.expr.metafunction.structure.IMetaFunctionContext" flags="ngI" index="1v5qx6">
+      <concept id="5994308065059776299" name="org.iets3.core.expr.metafunction.structure.IMetaFunctionContext" flags="ng" index="1v5qx6">
         <child id="5994308065059799377" name="function" index="1v5wSW" />
       </concept>
       <concept id="5994308065068956525" name="org.iets3.core.expr.metafunction.structure.MetaFunArgRef" flags="ng" index="1vwrg0">
@@ -583,11 +578,11 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
         <property id="2861782275883660525" name="ext" index="1HeIcW" />
         <child id="3880322347437217307" name="effect" index="28QfE6" />
         <child id="4790956042240100927" name="args" index="1ahQWs" />
@@ -603,7 +598,7 @@
         <child id="7554398283340318471" name="args" index="3ix9CL" />
       </concept>
       <concept id="7554398283340318478" name="org.iets3.core.expr.lambda.structure.LambdaArg" flags="ng" index="3ix9CS" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
       <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60" />
@@ -2373,9 +2368,6 @@
     </node>
     <node concept="_ixoA" id="4IV0h48dZXj" role="_iOnB" />
     <node concept="_ixoA" id="4IV0h48e00O" role="_iOnB" />
-  </node>
-  <node concept="2XOHcx" id="4rZeNQ6M9GV">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
   <node concept="_iOnU" id="35BERWyOOpU">
     <property role="TrG5h" value="mutable_globals" />
