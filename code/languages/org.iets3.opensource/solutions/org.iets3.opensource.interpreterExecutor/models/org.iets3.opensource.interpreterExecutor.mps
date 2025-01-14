@@ -17,6 +17,8 @@
     <import index="sfqd" ref="r:63a75970-913d-4a7b-99e2-8ca72ff6f509(jetbrains.mps.baseLanguage.unitTest.execution.client)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="707k" ref="r:3b363c34-a1ec-4ae6-92cc-95c0273ad0c2(xml4JUnit)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -67,6 +69,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -113,6 +116,7 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -197,14 +201,6 @@
   <node concept="312cEu" id="4u2ErA3hWZB">
     <property role="TrG5h" value="MainClass" />
     <node concept="2tJIrI" id="4u2ErA3icD4" role="jymVt" />
-    <node concept="Wx3nA" id="7Z6s7w42Qyk" role="jymVt">
-      <property role="TrG5h" value="myReportsPath" />
-      <node concept="17QB3L" id="3PMiOKDWLJX" role="1tU5fm" />
-      <node concept="3Tm6S6" id="3PMiOKDWJuL" role="1B3o_S" />
-      <node concept="Xl_RD" id="3PMiOKDWNJV" role="33vP2m">
-        <property role="Xl_RC" value="/home/mgronover/Projects/Datev/iets3.opensource/build/generatedXMLs" />
-      </node>
-    </node>
     <node concept="Wx3nA" id="6mKf5uiO_TY" role="jymVt">
       <property role="TrG5h" value="myReportsFilenamePrefix" />
       <node concept="17QB3L" id="6mKf5uiO_TZ" role="1tU5fm" />
@@ -213,7 +209,15 @@
         <property role="Xl_RC" value="InterpreterTestSuite" />
       </node>
     </node>
-    <node concept="2tJIrI" id="7Z6s7w42B7N" role="jymVt" />
+    <node concept="Wx3nA" id="2s5RXbi0ues" role="jymVt">
+      <property role="TrG5h" value="outputPathMacro" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="2s5RXbi0rUr" role="1B3o_S" />
+      <node concept="17QB3L" id="2s5RXbi0udc" role="1tU5fm" />
+      <node concept="Xl_RD" id="2s5RXbi0vKp" role="33vP2m">
+        <property role="Xl_RC" value="iets3.interpreter.output" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="7Z6s7w42A0l" role="jymVt" />
     <node concept="2YIFZL" id="7OQaAJRI6Fx" role="jymVt">
       <property role="TrG5h" value="mpsMain" />
@@ -298,6 +302,148 @@
             <node concept="10Nm6u" id="4iotRn3ufRf" role="3uHU7w" />
             <node concept="37vLTw" id="4iotRn3uea1" role="3uHU7B">
               <ref role="3cqZAo" node="4iotRn3tV$N" resolve="repo" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2s5RXbhZ1Lg" role="3cqZAp">
+          <node concept="3cpWsn" id="2s5RXbhZ1Lh" role="3cpWs9">
+            <property role="TrG5h" value="pathMacros" />
+            <node concept="3uibUv" id="2s5RXbhYZ7f" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~PathMacros" resolve="PathMacros" />
+            </node>
+            <node concept="2OqwBi" id="2s5RXbhZ1Li" role="33vP2m">
+              <node concept="37vLTw" id="2s5RXbhZ1Lj" role="2Oq$k0">
+                <ref role="3cqZAo" node="4iotRn3sMrM" resolve="platform" />
+              </node>
+              <node concept="liA8E" id="2s5RXbhZ1Lk" role="2OqNvi">
+                <ref role="37wK5l" to="wyuk:~ComponentHost.findComponent(java.lang.Class)" resolve="findComponent" />
+                <node concept="3VsKOn" id="2s5RXbhZ1Ll" role="37wK5m">
+                  <ref role="3VsUkX" to="z1c3:~PathMacros" resolve="PathMacros" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2s5RXbhZH0x" role="3cqZAp">
+          <node concept="3cpWsn" id="2s5RXbhZH0y" role="3cpWs9">
+            <property role="TrG5h" value="macroNames" />
+            <node concept="3uibUv" id="2s5RXbhZGmt" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+              <node concept="3uibUv" id="2s5RXbhZGmw" role="11_B2D">
+                <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2s5RXbhZH0z" role="33vP2m">
+              <node concept="37vLTw" id="2s5RXbhZH0$" role="2Oq$k0">
+                <ref role="3cqZAo" node="2s5RXbhZ1Lh" resolve="pathMacros" />
+              </node>
+              <node concept="liA8E" id="2s5RXbhZH0_" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~PathMacros.getNames()" resolve="getNames" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2s5RXbhZxtS" role="3cqZAp">
+          <node concept="3clFbS" id="2s5RXbhZxtU" role="3clFbx">
+            <node concept="3clFbF" id="2s5RXbhZQi1" role="3cqZAp">
+              <node concept="2OqwBi" id="2s5RXbhZVDv" role="3clFbG">
+                <node concept="10M0yZ" id="2s5RXbhZU8c" role="2Oq$k0">
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                </node>
+                <node concept="liA8E" id="2s5RXbhZX3c" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                  <node concept="3cpWs3" id="2s5RXbi0Ce3" role="37wK5m">
+                    <node concept="Xl_RD" id="2s5RXbi0_oq" role="3uHU7w">
+                      <property role="Xl_RC" value="' in MPS/File/Settings../Path Variables" />
+                    </node>
+                    <node concept="3cpWs3" id="2s5RXbi0_oi" role="3uHU7B">
+                      <node concept="Xl_RD" id="2s5RXbi0_oo" role="3uHU7B">
+                        <property role="Xl_RC" value="You need to specify '" />
+                      </node>
+                      <node concept="37vLTw" id="2s5RXbi0DgD" role="3uHU7w">
+                        <ref role="3cqZAo" node="2s5RXbi0ues" resolve="outputPathMacro" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="2s5RXbhZOI$" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="2s5RXbhZEno" role="3clFbw">
+            <node concept="2OqwBi" id="2s5RXbhZEnq" role="3fr31v">
+              <node concept="37vLTw" id="2s5RXbhZH0B" role="2Oq$k0">
+                <ref role="3cqZAo" node="2s5RXbhZH0y" resolve="names" />
+              </node>
+              <node concept="liA8E" id="2s5RXbhZEnu" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object)" resolve="contains" />
+                <node concept="37vLTw" id="2s5RXbi0zJN" role="37wK5m">
+                  <ref role="3cqZAo" node="2s5RXbi0ues" resolve="outputPathMacro" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4wJSUZQh0eE" role="3cqZAp">
+          <node concept="3cpWsn" id="4wJSUZQh0eF" role="3cpWs9">
+            <property role="TrG5h" value="evaluationOutputPath" />
+            <node concept="17QB3L" id="4wJSUZQgZwB" role="1tU5fm" />
+            <node concept="2OqwBi" id="2s5RXbi0n_K" role="33vP2m">
+              <node concept="37vLTw" id="2s5RXbi0mBx" role="2Oq$k0">
+                <ref role="3cqZAo" node="2s5RXbhZ1Lh" resolve="pathMacros" />
+              </node>
+              <node concept="liA8E" id="2s5RXbi0oIO" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String)" resolve="getValue" />
+                <node concept="37vLTw" id="2s5RXbi0Hvz" role="37wK5m">
+                  <ref role="3cqZAo" node="2s5RXbi0ues" resolve="outputPathMacro" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5n6kXNmda6Z" role="3cqZAp">
+          <node concept="3clFbS" id="5n6kXNmda71" role="3clFbx">
+            <node concept="3clFbF" id="2s5RXbi0J$b" role="3cqZAp">
+              <node concept="2OqwBi" id="2s5RXbi0J$c" role="3clFbG">
+                <node concept="10M0yZ" id="2s5RXbi0J$d" role="2Oq$k0">
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                </node>
+                <node concept="liA8E" id="2s5RXbi0J$e" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                  <node concept="3cpWs3" id="2s5RXbi0J$f" role="37wK5m">
+                    <node concept="Xl_RD" id="2s5RXbi0J$g" role="3uHU7w">
+                      <property role="Xl_RC" value="' in MPS/File/Settings../Path Variables must not be empty!" />
+                    </node>
+                    <node concept="3cpWs3" id="2s5RXbi0J$h" role="3uHU7B">
+                      <node concept="Xl_RD" id="2s5RXbi0J$i" role="3uHU7B">
+                        <property role="Xl_RC" value="The path variable'" />
+                      </node>
+                      <node concept="37vLTw" id="2s5RXbi0J$j" role="3uHU7w">
+                        <ref role="3cqZAo" node="2s5RXbi0ues" resolve="outputPathMacro" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="2s5RXbi1gsv" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="5A2JhVS$lWf" role="3clFbw">
+            <node concept="2OqwBi" id="2s5RXbi1bcd" role="3uHU7B">
+              <node concept="2OqwBi" id="2s5RXbi13xg" role="2Oq$k0">
+                <node concept="37vLTw" id="5n6kXNmdaTb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4wJSUZQh0eF" resolve="evaluationOutputPath" />
+                </node>
+                <node concept="17S1cR" id="2s5RXbi16CO" role="2OqNvi" />
+              </node>
+              <node concept="liA8E" id="2s5RXbi1cwz" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="4wJSUZQhaCF" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
             </node>
           </node>
         </node>
@@ -623,8 +769,8 @@
             </node>
             <node concept="liA8E" id="4MenVKnacXA" role="2OqNvi">
               <ref role="37wK5l" to="707k:5ZZgOa8NuV7" resolve="writeToFile" />
-              <node concept="37vLTw" id="6mKf5uiODub" role="37wK5m">
-                <ref role="3cqZAo" node="7Z6s7w42Qyk" resolve="myReportsPath" />
+              <node concept="37vLTw" id="5n6kXNmdBBy" role="37wK5m">
+                <ref role="3cqZAo" node="4wJSUZQh0eF" resolve="evaluationOutputPath" />
               </node>
               <node concept="37vLTw" id="6mKf5uiDj2C" role="37wK5m">
                 <ref role="3cqZAo" node="6mKf5uiO_TY" resolve="myReportsFilenamePrefix" />
@@ -642,7 +788,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="wLSoj0Xw8F" role="jymVt" />
     <node concept="2tJIrI" id="wLSoj1nZ_O" role="jymVt" />
     <node concept="2YIFZL" id="wLSoj1gwVb" role="jymVt">
       <property role="TrG5h" value="getTestItemContainers" />
@@ -770,7 +915,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="4iotRn3gA9M" role="jymVt" />
     <node concept="2tJIrI" id="4u2ErA3hWZS" role="jymVt" />
     <node concept="3Tm1VV" id="4u2ErA3hWZC" role="1B3o_S" />
   </node>
