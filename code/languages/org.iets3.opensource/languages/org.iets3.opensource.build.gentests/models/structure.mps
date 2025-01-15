@@ -85,11 +85,29 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3ior:6qcrfIJFdKY" resolve="BuildSourcePath" />
     </node>
+    <node concept="1TJgyj" id="5eJiSDhv9db" role="1TKVEi">
+      <property role="IQ2ns" value="6030121483517072203" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="outputPath" />
+      <ref role="20lvS9" node="5eJiSDhG$wd" resolve="BuildMacroRef" />
+    </node>
     <node concept="1TJgyj" id="38ougpFqnKp" role="1TKVEi">
       <property role="IQ2ns" value="3609768169816292377" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="jvmArgs" />
       <ref role="20lvS9" to="3ior:3NagsOfThPf" resolve="BuildString" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5eJiSDhG$wd">
+    <property role="EcuMT" value="6030121483520591885" />
+    <property role="TrG5h" value="BuildMacroRef" />
+    <property role="34LRSv" value="output directory" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="5eJiSDhG$we" role="1TKVEi">
+      <property role="IQ2ns" value="6030121483520591886" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ior:6qcrfIJFt02" resolve="BuildFolderMacro" />
     </node>
   </node>
 </model>
