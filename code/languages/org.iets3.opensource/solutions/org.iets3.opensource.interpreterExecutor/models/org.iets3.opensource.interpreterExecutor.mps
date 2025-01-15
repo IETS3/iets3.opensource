@@ -20,7 +20,9 @@
     <import index="707k" ref="r:3b363c34-a1ec-4ae6-92cc-95c0273ad0c2(xml4JUnit)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="dc1n" ref="r:2ce4b587-5587-43f7-8005-e3fb84f231b0(org.iets3.opensource.build.gentests.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -146,6 +148,7 @@
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
         <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
         <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
@@ -158,6 +161,10 @@
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -352,23 +359,74 @@
             <node concept="RRSsy" id="3xNo32qTJC4" role="3cqZAp">
               <property role="RRSoG" value="gZ5fh_4/error" />
               <node concept="3cpWs3" id="2s5RXbi0Ce3" role="RRSoy">
-                <node concept="Xl_RD" id="2s5RXbi0_oq" role="3uHU7w">
-                  <property role="Xl_RC" value="' in MPS/File/Settings../Path Variables" />
-                </node>
                 <node concept="3cpWs3" id="2s5RXbi0_oi" role="3uHU7B">
                   <node concept="Xl_RD" id="2s5RXbi0_oo" role="3uHU7B">
-                    <property role="Xl_RC" value="You need to specify '" />
+                    <property role="Xl_RC" value="1. You need to specify '" />
                   </node>
                   <node concept="37vLTw" id="3xNo32qTMSZ" role="3uHU7w">
                     <ref role="3cqZAo" node="2s5RXbi0ues" resolve="outputPathMacro" />
                   </node>
+                </node>
+                <node concept="Xl_RD" id="5eJiSDhMkPn" role="3uHU7w">
+                  <property role="Xl_RC" value="' in the macros of your build script." />
+                </node>
+              </node>
+              <node concept="2ShNRf" id="5eJiSDhMUhZ" role="RRSow">
+                <node concept="1pGfFk" id="5eJiSDhN7B4" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;()" resolve="IllegalArgumentException" />
+                </node>
+              </node>
+            </node>
+            <node concept="RRSsy" id="5eJiSDhNk6l" role="3cqZAp">
+              <property role="RRSoG" value="gZ5fh_4/error" />
+              <node concept="3cpWs3" id="5eJiSDhNk6m" role="RRSoy">
+                <node concept="2OqwBi" id="5eJiSDhNk6n" role="3uHU7w">
+                  <node concept="35c_gC" id="5eJiSDhNk6o" role="2Oq$k0">
+                    <ref role="35c_gD" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
+                  </node>
+                  <node concept="liA8E" id="5eJiSDhNk6p" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="5eJiSDhNk6q" role="3uHU7B">
+                  <node concept="3cpWs3" id="5eJiSDhNk6r" role="3uHU7B">
+                    <node concept="3cpWs3" id="5eJiSDhNk6s" role="3uHU7B">
+                      <node concept="3cpWs3" id="5eJiSDhNk6t" role="3uHU7B">
+                        <node concept="Xl_RD" id="5eJiSDhNk6u" role="3uHU7B">
+                          <property role="Xl_RC" value="2. You need to refer the macro '" />
+                        </node>
+                        <node concept="37vLTw" id="5eJiSDhNk6v" role="3uHU7w">
+                          <ref role="3cqZAo" node="2s5RXbi0ues" resolve="outputPathMacro" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="5eJiSDhNk6w" role="3uHU7w">
+                        <property role="Xl_RC" value="' in the " />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="5eJiSDhNk6x" role="3uHU7w">
+                      <node concept="35c_gC" id="5eJiSDhNk6y" role="2Oq$k0">
+                        <ref role="35c_gD" to="dc1n:5eJiSDhG$wd" resolve="BuildMacroRef" />
+                      </node>
+                      <node concept="3n3YKJ" id="5eJiSDhNk6z" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="5eJiSDhNk6$" role="3uHU7w">
+                    <property role="Xl_RC" value=" within " />
+                  </node>
+                </node>
+              </node>
+              <node concept="2ShNRf" id="5eJiSDhNk6_" role="RRSow">
+                <node concept="1pGfFk" id="5eJiSDhNk6A" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;()" resolve="IllegalArgumentException" />
                 </node>
               </node>
             </node>
             <node concept="RRSsy" id="5eJiSDhlaVz" role="3cqZAp">
               <property role="RRSoG" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="5eJiSDhlaVB" role="RRSoy">
-                <property role="Xl_RC" value="\tFound macros:" />
+                <property role="Xl_RC" value="\tCurrently found macros:" />
               </node>
             </node>
             <node concept="3clFbF" id="5eJiSDhg43o" role="3cqZAp">
@@ -437,9 +495,9 @@
           <node concept="3clFbS" id="5n6kXNmda71" role="3clFbx">
             <node concept="RRSsy" id="3xNo32qTPUy" role="3cqZAp">
               <property role="RRSoG" value="gZ5fh_4/error" />
-              <node concept="3cpWs3" id="2s5RXbi0J$f" role="RRSoy">
-                <node concept="Xl_RD" id="2s5RXbi0J$g" role="3uHU7w">
-                  <property role="Xl_RC" value="' in MPS/File/Settings../Path Variables must not be empty!" />
+              <node concept="3cpWs3" id="5eJiSDhNbA9" role="RRSoy">
+                <node concept="Xl_RD" id="5eJiSDhNcl5" role="3uHU7w">
+                  <property role="Xl_RC" value=" must contain a legal path" />
                 </node>
                 <node concept="3cpWs3" id="2s5RXbi0J$h" role="3uHU7B">
                   <node concept="Xl_RD" id="2s5RXbi0J$i" role="3uHU7B">

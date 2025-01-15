@@ -15,10 +15,14 @@
   </imports>
   <registry>
     <language id="9d000fbd-bdca-4a46-b39b-c5ba9e79b38c" name="org.iets3.opensource.build.gentests">
+      <concept id="6030121483520591885" name="org.iets3.opensource.build.gentests.structure.BuildMacroRef" flags="ng" index="27ge7">
+        <reference id="6030121483520591886" name="ref" index="27ge4" />
+      </concept>
       <concept id="4604852045247358203" name="org.iets3.opensource.build.gentests.structure.RunKernelFGeneratedTests" flags="ng" index="2vP9LM">
         <reference id="4604852045247358204" name="testModules" index="2vP9LP" />
       </concept>
       <concept id="8961448726281507188" name="org.iets3.opensource.build.gentests.structure.CustomRunnerAspect" flags="ng" index="1YJUtn">
+        <child id="6030121483517072203" name="outputPath" index="2OXz1" />
         <child id="3609768169816292377" name="jvmArgs" index="1psgkv" />
         <child id="8961448726281511691" name="path" index="1YJTkC" />
       </concept>
@@ -15301,6 +15305,9 @@
           </node>
         </node>
       </node>
+      <node concept="27ge7" id="5eJiSDhM50y" role="2OXz1">
+        <ref role="27ge4" node="5eJiSDhwOUy" resolve="iets3.interpreterExecutor.genPath" />
+      </node>
     </node>
     <node concept="10PD9b" id="2U5AnekTBPu" role="10PD9s" />
     <node concept="2sgV4H" id="2U5AnekTBPz" role="1l3spa">
@@ -15380,13 +15387,13 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="7C9J_PY1CSN" role="1l3spd">
+    <node concept="398rNT" id="5eJiSDhwOUy" role="1l3spd">
       <property role="TrG5h" value="iets3.interpreterExecutor.genPath" />
-      <node concept="398BVA" id="7C9J_PY1Imm" role="398pKh">
+      <node concept="398BVA" id="5eJiSDhwOUz" role="398pKh">
         <ref role="398BVh" node="7OQaAJRI74t" resolve="iets3.github.opensource.home" />
-        <node concept="2Ry0Ak" id="7C9J_PY1Imp" role="iGT6I">
+        <node concept="2Ry0Ak" id="5eJiSDhwOU$" role="iGT6I">
           <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="7C9J_PY1Ims" role="2Ry0An">
+          <node concept="2Ry0Ak" id="5eJiSDhwOU_" role="2Ry0An">
             <property role="2Ry0Am" value="generatedXMLs" />
           </node>
         </node>
@@ -15505,14 +15512,9 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="4MenVKn1A0p" role="3bR37C">
-          <node concept="3bR9La" id="4MenVKn1A0q" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:4Hc8TwAmyoE" resolve="jetbrains.mps.tool.builder" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4MenVKn1A0r" role="3bR37C">
-          <node concept="3bR9La" id="4MenVKn1A0s" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
+        <node concept="1SiIV0" id="5eJiSDhOfKj" role="3bR37C">
+          <node concept="3bR9La" id="5eJiSDhOfKk" role="1SiIV1">
+            <ref role="3bR37D" node="3ZBI8Aw30tK" resolve="org.iets3.opensource.build.gentests" />
           </node>
         </node>
       </node>
