@@ -64,6 +64,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Record literals now show the referenced members of the record declaration.
 - Tuples can use parenthesis instead of brackets for their presentation. To use the new presentation, overwrite PrimitiveTypeMapper#useParenthesisInsteadOfBracketsForTuples in the extension point.
 - Implicit conversions can now be deactivated conditionally in the physunit language.
+- String type with constraints that is given by a regular expression.
 
 ### Changed
 
