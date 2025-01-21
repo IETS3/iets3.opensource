@@ -2690,6 +2690,24 @@
                 </node>
               </node>
             </node>
+            <node concept="2Vbh7Z" id="6DrRQvKqVFa" role="2VaTZU">
+              <node concept="2pNNFK" id="6DrRQvKqZPC" role="2Vbh7K">
+                <property role="2pNNFO" value="property" />
+                <property role="qg3DV" value="true" />
+                <node concept="2pNUuL" id="6DrRQvKqZSW" role="2pNNFR">
+                  <property role="2pNUuO" value="name" />
+                  <node concept="2pMdtt" id="6DrRQvKqZSX" role="2pMdts">
+                    <property role="2pMdty" value="build.jna.library.path" />
+                  </node>
+                </node>
+                <node concept="2pNUuL" id="6DrRQvKqZWh" role="2pNNFR">
+                  <property role="2pNUuO" value="location" />
+                  <node concept="2pMdtt" id="6DrRQvKqZWi" role="2pMdts">
+                    <property role="2pMdty" value="${artifacts.mps}/lib/jna" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="2VaTY3" id="5eJiSDhB5oI" role="2VaTZU" />
             <node concept="2Vbh7Z" id="3BExUgsKUkr" role="2VaTZU">
               <node concept="2pNNFK" id="3BExUgsKUuU" role="2Vbh7K">
@@ -3248,6 +3266,16 @@
                       <property role="2pNUuO" value="value" />
                       <node concept="2pMdtt" id="o7F7WgLMD3" role="2pMdts">
                         <property role="2pMdty" value="-Didea.system.path=${build.mps.system.path}" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pNNFK" id="6OON6YVXP4c" role="3o6s8t">
+                    <property role="qg3DV" value="true" />
+                    <property role="2pNNFO" value="arg" />
+                    <node concept="2pNUuL" id="6OON6YVXP4d" role="2pNNFR">
+                      <property role="2pNUuO" value="value" />
+                      <node concept="2pMdtt" id="6OON6YVXP4e" role="2pMdts">
+                        <property role="2pMdty" value="-Djna.boot.library.path=${build.jna.library.path}" />
                       </node>
                     </node>
                   </node>

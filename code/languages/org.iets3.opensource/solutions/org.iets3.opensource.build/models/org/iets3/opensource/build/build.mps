@@ -15295,7 +15295,7 @@
       <ref role="30Vec$" node="5jJR9m7XASm" resolve="org.iets3.opensource.interpreterExecutor" />
       <node concept="NbPM2" id="5iD3V$BSj$B" role="1psgkv">
         <node concept="3Mxwew" id="yHjyt5yb1m" role="3MwsjC">
-          <property role="3MwjfP" value="-Xss2048k -Xmx4096m " />
+          <property role="3MwjfP" value="-Xss2048k -Xmx4096m -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5072" />
         </node>
       </node>
       <node concept="398BVA" id="7Lttyc2W9kv" role="1YJTkC">
@@ -15380,15 +15380,6 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="7OQaAJRI74I" role="1l3spd">
-      <property role="TrG5h" value="dependencies.mbeddr.platform" />
-      <node concept="398BVA" id="7OQaAJRI74J" role="398pKh">
-        <ref role="398BVh" node="7OQaAJRI74E" resolve="dependencies.root" />
-        <node concept="2Ry0Ak" id="7OQaAJRI74K" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
-        </node>
-      </node>
-    </node>
     <node concept="55IIr" id="7OQaAJRI72Q" role="auvoZ" />
     <node concept="1l3spV" id="7OQaAJRI72R" role="1l3spN">
       <node concept="m$_wl" id="5loVtKO0X_7" role="39821P">
@@ -15398,10 +15389,13 @@
     </node>
     <node concept="3b7kt6" id="7OQaAJRI73q" role="10PD9s" />
     <node concept="_l39y" id="7OQaAJRI72U" role="10PD9s" />
-    <node concept="2sgV4H" id="2U5AnekTjUj" role="1l3spa">
+    <node concept="2sgV4H" id="5XBogrkSN6B" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
-      <node concept="398BVA" id="2U5AnekTjVb" role="2JcizS">
-        <ref role="398BVh" node="7OQaAJRI74I" resolve="dependencies.mbeddr.platform" />
+      <node concept="398BVA" id="5XBogrkSN6C" role="2JcizS">
+        <ref role="398BVh" node="7OQaAJRI74E" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="5XBogrkSN6D" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="2U5Anele3Kt" role="1l3spa">
@@ -15519,6 +15513,12 @@
             <property role="2Ry0Am" value="generatedXMLs" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="5XBogrkSN6F" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.iets3.github.opensource.home" />
+      <node concept="398BVA" id="5XBogrkSN6G" role="398pKh">
+        <ref role="398BVh" node="7OQaAJRI74t" resolve="iets3.github.opensource.home" />
       </node>
     </node>
   </node>
