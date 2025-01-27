@@ -31,6 +31,7 @@
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">4517af98-2eaa-4f19-a962-92df60010094(org.iets3.core.expr.genjava.base#8286534136181746510)</dependency>
         <dependency reexport="false">cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</dependency>
+        <dependency reexport="true">646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -107,6 +108,7 @@
   </generators>
   <dependencies>
     <dependency reexport="false" scope="generate-into">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+    <dependency reexport="true">646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -152,6 +154,7 @@
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="752cf1d3-84d1-4f2b-bbf5-4ef076a62ec7(org.iets3.core.expr.genjava.messages)" version="0" />
+    <module reference="646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)" version="0" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)</dependency>

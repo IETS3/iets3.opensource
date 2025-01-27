@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="org.iets3.core.expr.genjava.tests" uuid="e75207bb-7b13-40bd-b80b-c8fe625c4ee2" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -30,7 +30,7 @@
         <dependency reexport="false">d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)</dependency>
         <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
         <dependency reexport="false">4517af98-2eaa-4f19-a962-92df60010094(org.iets3.core.expr.genjava.base#8286534136181746510)</dependency>
-        <dependency reexport="false">68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)</dependency>
+        <dependency reexport="true">68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)</dependency>
         <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
       </dependencies>
@@ -119,6 +119,7 @@
     <dependency reexport="false" scope="generate-into">fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)</dependency>
     <dependency reexport="false" scope="generate-into">83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)</dependency>
     <dependency reexport="false" scope="generate-into">f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</dependency>
+    <dependency reexport="true">68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -178,6 +179,7 @@
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="e75207bb-7b13-40bd-b80b-c8fe625c4ee2(org.iets3.core.expr.genjava.tests)" version="0" />
+    <module reference="68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)" version="0" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)</dependency>
