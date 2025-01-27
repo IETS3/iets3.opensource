@@ -619,9 +619,6 @@
       <node concept="l2Vlx" id="6zaFu4oQfro" role="2iSdaV" />
       <node concept="3F0ifn" id="6zaFu4oQfrt" role="3EZMnx">
         <property role="3F0ifm" value="|" />
-        <node concept="11L4FC" id="6zaFu4oQfsr" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="11LMrY" id="6zaFu4oQfu8" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

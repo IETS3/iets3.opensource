@@ -4,10 +4,10 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
+    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="6" />
     <use id="9c3cc6fb-ae5e-46d1-ace2-1e08bb47d03d" name="org.iets3.core.expr.typetags.bindingtime" version="0" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="3" />
-    <use id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags" version="0" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="10" />
+    <use id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags" version="1" />
   </languages>
   <imports>
     <import index="vpej" ref="r:ce959c43-f7e7-403d-86e3-006997995d4c(org.iets3.core.expr.typetags.bindingtime.typesystem)" />
@@ -20,7 +20,7 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
-      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ngI" index="2u4UPC">
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
@@ -33,7 +33,10 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
@@ -57,9 +60,7 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
@@ -103,7 +104,7 @@
       <concept id="1759375669591494838" name="org.iets3.core.expr.typetags.structure.TaggedType" flags="ng" index="2c7tTJ">
         <child id="1759375669591494841" name="baseType" index="2c7tTw" />
       </concept>
-      <concept id="8196347919645043518" name="org.iets3.core.expr.typetags.structure.IWithTags" flags="ngI" index="3ciMKZ">
+      <concept id="8196347919645043518" name="org.iets3.core.expr.typetags.structure.IWithTags" flags="ng" index="3ciMKZ">
         <child id="1759375669591494839" name="tags" index="2c7tTI" />
       </concept>
     </language>
@@ -111,7 +112,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -142,7 +143,7 @@
               <ref role="1Y16Do" node="2ahKK8qZGjt" resolve="A" />
             </node>
           </node>
-          <node concept="30bXRB" id="2ahKK8qLggi" role="2zPyp_">
+          <node concept="30bXRB" id="2ahKK8qLggi" role="2lDidJ">
             <property role="30bXRw" value="1" />
           </node>
         </node>
@@ -154,7 +155,7 @@
               <ref role="1Y16Do" node="2ahKK8qZGjC" resolve="B" />
             </node>
           </node>
-          <node concept="30bXRB" id="2ahKK8qZGzR" role="2zPyp_">
+          <node concept="30bXRB" id="2ahKK8qZGzR" role="2lDidJ">
             <property role="30bXRw" value="1" />
           </node>
         </node>
@@ -162,21 +163,6 @@
         <node concept="_ixoA" id="2ahKK8qZGG9" role="_iOnB" />
         <node concept="2zPypq" id="2ahKK8qZGt4" role="_iOnB">
           <property role="TrG5h" value="sum" />
-          <node concept="30dDZf" id="2ahKK8qZGvh" role="2zPyp_">
-            <node concept="_emDc" id="2ahKK8qZGwA" role="30dEs_">
-              <ref role="_emDf" node="2ahKK8qZGq_" resolve="inB" />
-            </node>
-            <node concept="_emDc" id="2ahKK8qZGuu" role="30dEsF">
-              <ref role="_emDf" node="2ahKK8qLge8" resolve="inA" />
-            </node>
-            <node concept="7CXmI" id="3u7gghFPaBE" role="lGtFl">
-              <node concept="1TM$A" id="3u7gghFPaYF" role="7EUXB">
-                <node concept="2PYRI3" id="3u7gghFPaYG" role="3lydEf">
-                  <ref role="39XzEq" to="vpej:35Mye9KtDXA" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="2c7tTJ" id="2ahKK8qZGu3" role="2zM23F">
             <node concept="mLuIC" id="2ahKK8qZGu4" role="2c7tTw" />
             <node concept="1Y1c6e" id="2ahKK8qZGu5" role="2c7tTI">
@@ -188,6 +174,21 @@
               <node concept="19SGf9" id="2ahKK8qZGGC" role="OjmMu">
                 <node concept="19SUe$" id="2ahKK8qZGGD" role="19SJt6">
                   <property role="19SUeA" value="The actual value of inA and inB do not matter here.&#10;The crux is that inB is in a stage later than A and thus this should&#10;give a type error" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="30dDZf" id="2ahKK8qZGvh" role="2lDidJ">
+            <node concept="_emDc" id="2ahKK8qZGwA" role="30dEs_">
+              <ref role="_emDf" node="2ahKK8qZGq_" resolve="inB" />
+            </node>
+            <node concept="_emDc" id="2ahKK8qZGuu" role="30dEsF">
+              <ref role="_emDf" node="2ahKK8qLge8" resolve="inA" />
+            </node>
+            <node concept="7CXmI" id="3u7gghFPaBE" role="lGtFl">
+              <node concept="1TM$A" id="3u7gghFPaYF" role="7EUXB">
+                <node concept="2PYRI3" id="3u7gghFPaYG" role="3lydEf">
+                  <ref role="39XzEq" to="vpej:35Mye9KtDXA" />
                 </node>
               </node>
             </node>
@@ -231,7 +232,7 @@
               <ref role="1Y16Do" node="2ahKK8qZGOW" resolve="First1" />
             </node>
           </node>
-          <node concept="30bXRB" id="2ahKK8qZGVt" role="2zPyp_">
+          <node concept="30bXRB" id="2ahKK8qZGVt" role="2lDidJ">
             <property role="30bXRw" value="1" />
           </node>
         </node>
@@ -243,28 +244,13 @@
               <ref role="1Y16Do" node="2ahKK8qZGTh" resolve="Second1" />
             </node>
           </node>
-          <node concept="30bXRB" id="2ahKK8qZGVy" role="2zPyp_">
+          <node concept="30bXRB" id="2ahKK8qZGVy" role="2lDidJ">
             <property role="30bXRw" value="1" />
           </node>
         </node>
         <node concept="_ixoA" id="2ahKK8qZH4E" role="_iOnB" />
         <node concept="2zPypq" id="2ahKK8qZH6n" role="_iOnB">
           <property role="TrG5h" value="sum2" />
-          <node concept="30dDZf" id="2ahKK8qZH9g" role="2zPyp_">
-            <node concept="_emDc" id="2ahKK8qZHa_" role="30dEs_">
-              <ref role="_emDf" node="2ahKK8qZGVu" resolve="inSecond" />
-            </node>
-            <node concept="_emDc" id="2ahKK8qZH8s" role="30dEsF">
-              <ref role="_emDf" node="2ahKK8qZGVp" resolve="inFirst" />
-            </node>
-            <node concept="7CXmI" id="3u7gghFPb6p" role="lGtFl">
-              <node concept="1TM$A" id="3u7gghFPbsy" role="7EUXB">
-                <node concept="2PYRI3" id="3u7gghFPbsz" role="3lydEf">
-                  <ref role="39XzEq" to="vpej:35Mye9KtDXA" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="2c7tTJ" id="2ahKK8qZH7v" role="2zM23F">
             <node concept="mLuIC" id="2ahKK8qZH7w" role="2c7tTw" />
             <node concept="1Y1c6e" id="2ahKK8qZH87" role="2c7tTI">
@@ -276,6 +262,21 @@
               <node concept="19SGf9" id="2ahKK8r1Ng5" role="OjmMu">
                 <node concept="19SUe$" id="2ahKK8r1Ng6" role="19SJt6">
                   <property role="19SUeA" value="computation group orderings should trigger an error too" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="30dDZf" id="2ahKK8qZH9g" role="2lDidJ">
+            <node concept="_emDc" id="2ahKK8qZHa_" role="30dEs_">
+              <ref role="_emDf" node="2ahKK8qZGVu" resolve="inSecond" />
+            </node>
+            <node concept="_emDc" id="2ahKK8qZH8s" role="30dEsF">
+              <ref role="_emDf" node="2ahKK8qZGVp" resolve="inFirst" />
+            </node>
+            <node concept="7CXmI" id="3u7gghFPb6p" role="lGtFl">
+              <node concept="1TM$A" id="3u7gghFPbsy" role="7EUXB">
+                <node concept="2PYRI3" id="3u7gghFPbsz" role="3lydEf">
+                  <ref role="39XzEq" to="vpej:35Mye9KtDXA" />
                 </node>
               </node>
             </node>
@@ -309,7 +310,7 @@
               <ref role="1Y16Do" node="2ahKK8r1Nrr" resolve="Group1" />
             </node>
           </node>
-          <node concept="30bXRB" id="2ahKK8r1N$c" role="2zPyp_">
+          <node concept="30bXRB" id="2ahKK8r1N$c" role="2lDidJ">
             <property role="30bXRw" value="1" />
           </node>
         </node>
@@ -321,28 +322,13 @@
               <ref role="1Y16Do" node="2ahKK8r1NtQ" resolve="Group2" />
             </node>
           </node>
-          <node concept="30bXRB" id="2ahKK8r1NBt" role="2zPyp_">
+          <node concept="30bXRB" id="2ahKK8r1NBt" role="2lDidJ">
             <property role="30bXRw" value="1" />
           </node>
         </node>
         <node concept="_ixoA" id="2ahKK8r1NF9" role="_iOnB" />
         <node concept="2zPypq" id="2ahKK8r1NHS" role="_iOnB">
           <property role="TrG5h" value="sum3" />
-          <node concept="30dDZf" id="2ahKK8r1NLv" role="2zPyp_">
-            <node concept="_emDc" id="2ahKK8r1NMO" role="30dEs_">
-              <ref role="_emDf" node="2ahKK8r1NBp" resolve="y" />
-            </node>
-            <node concept="_emDc" id="2ahKK8r1NKF" role="30dEsF">
-              <ref role="_emDf" node="2ahKK8r1Nxq" resolve="x" />
-            </node>
-            <node concept="7CXmI" id="3u7gghFPb$q" role="lGtFl">
-              <node concept="1TM$A" id="3u7gghFPbVr" role="7EUXB">
-                <node concept="2PYRI3" id="3u7gghFPbVs" role="3lydEf">
-                  <ref role="39XzEq" to="vpej:35Mye9KtDXA" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="2c7tTJ" id="2ahKK8r1NJX" role="2zM23F">
             <node concept="mLuIC" id="2ahKK8r1NJY" role="2c7tTw" />
             <node concept="1Y1c6e" id="2ahKK8r1NJZ" role="2c7tTI">
@@ -354,6 +340,21 @@
               <node concept="19SGf9" id="2ahKK8r1NZt" role="OjmMu">
                 <node concept="19SUe$" id="2ahKK8r1NZu" role="19SJt6">
                   <property role="19SUeA" value="computations within groups are ordered too" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="30dDZf" id="2ahKK8r1NLv" role="2lDidJ">
+            <node concept="_emDc" id="2ahKK8r1NMO" role="30dEs_">
+              <ref role="_emDf" node="2ahKK8r1NBp" resolve="y" />
+            </node>
+            <node concept="_emDc" id="2ahKK8r1NKF" role="30dEsF">
+              <ref role="_emDf" node="2ahKK8r1Nxq" resolve="x" />
+            </node>
+            <node concept="7CXmI" id="3u7gghFPb$q" role="lGtFl">
+              <node concept="1TM$A" id="3u7gghFPbVr" role="7EUXB">
+                <node concept="2PYRI3" id="3u7gghFPbVs" role="3lydEf">
+                  <ref role="39XzEq" to="vpej:35Mye9KtDXA" />
                 </node>
               </node>
             </node>

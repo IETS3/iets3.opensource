@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:da55d8c4-8189-4ee0-9cbe-92f7143eed21(org.iets3.core.expr.util.editor)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
@@ -1646,7 +1645,7 @@
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
       </node>
       <node concept="3F1sOY" id="22hm_0z9LcP" role="3EZMnx">
-        <ref role="1NtTu8" to="kfo3:22hm_0z9Lca" resolve="expression" />
+        <ref role="1NtTu8" to="hm2y:3G_qVqIw4zp" resolve="expr" />
       </node>
       <node concept="3F2HdR" id="22hm_0z9LcX" role="3EZMnx">
         <ref role="1NtTu8" to="kfo3:22hm_0z9Lcc" resolve="ranges" />
@@ -2869,7 +2868,7 @@
     <ref role="1XX52x" to="kfo3:8XWEtdX_Xw" resolve="QueryColDef" />
     <node concept="1kIj98" id="8XWEtdZOA9" role="2wV5jI">
       <node concept="3F1sOY" id="8XWEtdZOAf" role="1kIj9b">
-        <ref role="1NtTu8" to="kfo3:8XWEtdX_Yh" resolve="expr" />
+        <ref role="1NtTu8" to="hm2y:3G_qVqIw4zp" resolve="expr" />
       </node>
     </node>
   </node>
