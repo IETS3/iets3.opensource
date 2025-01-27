@@ -7,6 +7,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## January 2025
 
+### Added
+
+- Added a language to accommodate variability management concepts and features. Initially it provides only an Interface to mark variation points.
+
 ### Fixed
 
 - The copy and pasting of existing nodes was slightly improved.
