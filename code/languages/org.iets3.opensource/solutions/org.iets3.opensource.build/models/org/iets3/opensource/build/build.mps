@@ -854,6 +854,9 @@
     </node>
     <node concept="m$_wf" id="7B3y$vlfXKC" role="3989C9">
       <property role="m$_wk" value="org.iets3.variability.os" />
+      <node concept="m$_yC" id="4G1C74S34LO" role="m$_yJ">
+        <ref role="m$_y1" node="5wLtKNeSRRD" resolve="org.iets3.core.os" />
+      </node>
       <node concept="3_J27D" id="7B3y$vlfXKD" role="m$_yQ">
         <node concept="3Mxwew" id="7B3y$vlfXKE" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.variability.os" />
@@ -13392,33 +13395,9 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="7B3y$vlfYF8" role="1TViLv">
-          <property role="TrG5h" value="org.iets3.variability.artifacts.base.generator" />
-          <property role="3LESm3" value="93f1edbc-6eee-44d3-9ca2-bdd8c76a4c0a" />
-          <node concept="1BupzO" id="7B3y$vlfYFm" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="7B3y$vlfYFn" role="1HemKq">
-              <node concept="398BVA" id="7B3y$vlfYF9" role="3LXTmr">
-                <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-                <node concept="2Ry0Ak" id="7B3y$vlfYFa" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="7B3y$vlfYFb" role="2Ry0An">
-                    <property role="2Ry0Am" value="org.iets3.variability.artifacts.base" />
-                    <node concept="2Ry0Ak" id="7B3y$vlfYFc" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="7B3y$vlfYFd" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="7B3y$vlfYFo" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
+        <node concept="1SiIV0" id="4G1C74S33ta" role="3bR37C">
+          <node concept="3bR9La" id="4G1C74S33tb" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
       </node>
