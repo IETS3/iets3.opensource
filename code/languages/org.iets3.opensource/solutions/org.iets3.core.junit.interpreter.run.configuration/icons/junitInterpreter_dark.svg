@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.2"
+   width="5.02mm"
+   height="5.02mm"
+   viewBox="0 0 502 502"
+   preserveAspectRatio="xMidYMid"
+   fill-rule="evenodd"
+   stroke-width="28.222"
+   stroke-linejoin="round"
+   xml:space="preserve"
+   id="svg773"
+   xmlns="http://www.w3.org/2000/svg">
+ <defs
+   class="ClipPathGroup"
+   id="defs692"><clipPath
+     id="presentation_clip_path"
+     clipPathUnits="userSpaceOnUse">
+   <rect
+   x="0"
+   y="0"
+   width="502"
+   height="502"
+   id="rect686" />
+  </clipPath></defs>
+ <defs
+   class="TextShapeIndex"
+   id="defs696" />
+ <defs
+   class="EmbeddedBulletChars"
+   id="defs728" />
+ 
+ <g
+   class="SlideGroup"
+   id="g771">
+  <g
+   id="g769">
+   <g
+   id="container-id1">
+    <g
+   id="id1"
+   class="Slide"
+   clip-path="url(#presentation_clip_path)">
+     <g
+   class="Page"
+   id="g765">
+      <g
+   class="com.sun.star.drawing.ClosedBezierShape"
+   id="g740">
+       <g
+   id="id3">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="71"
+   y="116"
+   width="141"
+   height="265"
+   id="rect735" />
+        <path
+   fill="#773d00"
+   stroke="none"
+   d="m 76,257 c -6,-6 -6,-11 0,-17 L 183,122 c 10,-10 28,-4 28,11 v 230 c 0,15 -18,22 -28,11 z"
+   id="path737" />
+       </g>
+      </g>
+      <g
+   class="com.sun.star.drawing.ClosedBezierShape"
+   id="g747">
+       <g
+   id="id4">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="58"
+   y="103"
+   width="167"
+   height="291"
+   id="rect742" />
+        <path
+   fill="none"
+   stroke="#ff8000"
+   stroke-width="26"
+   stroke-linejoin="miter"
+   stroke-linecap="round"
+   d="m 76,257 c -6,-6 -6,-11 0,-17 L 183,122 c 10,-10 28,-4 28,11 v 230 c 0,15 -18,22 -28,11 z"
+   id="path744" />
+       </g>
+      </g>
+      <g
+   class="com.sun.star.drawing.ClosedBezierShape"
+   id="g754">
+       <g
+   id="id5">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="285"
+   y="116"
+   width="141"
+   height="265"
+   id="rect749" />
+        <path
+   fill="#f2fcf3"
+   stroke="none"
+   d="m 421,240 c 5,6 5,10 0,16 L 313,374 c -10,11 -28,4 -28,-11 V 133 c 0,-15 18,-22 28,-11 z"
+   id="path751" />
+       </g>
+      </g>
+      <g
+   class="com.sun.star.drawing.ClosedBezierShape"
+   id="g763">
+       <g
+   id="id6">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="272"
+   y="103"
+   width="167"
+   height="291"
+   id="rect756" />
+        <path
+   fill="#02417f"
+   stroke="none"
+   d="m 421,240 c 5,6 5,10 0,16 L 313,374 c -10,11 -28,4 -28,-11 V 133 c 0,-15 18,-22 28,-11 z"
+   id="path758" />
+        <path
+   fill="none"
+   stroke="#157be7"
+   stroke-width="26"
+   stroke-linejoin="miter"
+   stroke-linecap="round"
+   d="m 421,240 c 5,6 5,10 0,16 L 313,374 c -10,11 -28,4 -28,-11 V 133 c 0,-15 18,-22 28,-11 z"
+   id="path760" />
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
