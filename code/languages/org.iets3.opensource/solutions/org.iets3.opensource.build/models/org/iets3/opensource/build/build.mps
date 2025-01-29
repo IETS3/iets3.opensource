@@ -15283,6 +15283,9 @@
       <node concept="m$_yC" id="5OevlZn_uSu" role="m$_yJ">
         <ref role="m$_y1" node="64GCIgM55Fn" resolve="org.iets3.build.os" />
       </node>
+      <node concept="m$_yC" id="EtmSfDs6EV" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5CFKsRWRuFN" resolve="jetbrains.mps.debugger.api" />
+      </node>
       <node concept="m$f5U" id="5loVtKO0kuX" role="m$_yh">
         <ref role="m$f5T" node="5loVtKO0ksX" resolve="testExecutor" />
       </node>
