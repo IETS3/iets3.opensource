@@ -33,7 +33,6 @@
     <import index="ic9i" ref="r:8aafee6a-4721-443e-8020-e8986ed3f25a(jetbrains.mps.execution.configurations.implementation.plugin.plugin)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="9mrk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.executors(MPS.IDEA/)" />
@@ -81,6 +80,7 @@
     <import index="cvlm" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.runner(JUnit/)" />
     <import index="k76n" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.runner.notification(JUnit/)" />
     <import index="34h4" ref="r:263b648a-3e00-426c-ab4b-ba47ccd788c9(jetbrains.mps.baselanguage.unitTest.execution.launcher)" />
+    <import index="jpm3" ref="r:e3e5593b-dfcd-4a2e-b10f-f1ed4a43f093(org.iets3.core.expr.plugin.plugin)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1997,6 +1997,29 @@
     <node concept="2w4N4h" id="5gyVhZ1888J" role="2w4N4r">
       <node concept="2w4N5O" id="5gyVhZ1888K" role="30xZXv">
         <node concept="3clFbS" id="5gyVhZ1888L" role="2VODD2">
+          <node concept="3cpWs8" id="5NSThJeAnjr" role="3cqZAp">
+            <node concept="3cpWsn" id="5NSThJeAnjs" role="3cpWs9">
+              <property role="TrG5h" value="savedExecutionMode" />
+              <node concept="3uibUv" id="5NSThJeAnbt" role="1tU5fm">
+                <ref role="3uigEE" to="jpm3:5rUl2R7KDH5" resolve="ExecutionModePreference" />
+              </node>
+              <node concept="2YIFZM" id="5NSThJeAnjt" role="33vP2m">
+                <ref role="37wK5l" to="jpm3:5rUl2R7Ka3V" resolve="getExecutionMode" />
+                <ref role="1Pybhc" to="jpm3:5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="5NSThJeAl9l" role="3cqZAp">
+            <node concept="2YIFZM" id="5NSThJeAl9m" role="3clFbG">
+              <ref role="37wK5l" to="jpm3:5rUl2R7KxIX" resolve="setExecutionMode" />
+              <ref role="1Pybhc" to="jpm3:5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+              <node concept="Rm8GO" id="5NSThJeAl9n" role="37wK5m">
+                <ref role="Rm8GQ" to="jpm3:5rUl2R7KDTl" resolve="INTERPRETER" />
+                <ref role="1Px2BO" to="jpm3:5rUl2R7KDH5" resolve="ExecutionModePreference" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="5NSThJeCIN3" role="3cqZAp" />
           <node concept="3SKdUt" id="9n1CQGeqoj" role="3cqZAp">
             <node concept="1PaTwC" id="ATZLwXofhY" role="1aUNEU">
               <node concept="3oM_SD" id="ATZLwXofhZ" role="1PaTwD">
@@ -2155,6 +2178,15 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbF" id="5NSThJeAuQ$" role="3cqZAp">
+                    <node concept="2YIFZM" id="5NSThJeAuQ_" role="3clFbG">
+                      <ref role="37wK5l" to="jpm3:5rUl2R7KxIX" resolve="setExecutionMode" />
+                      <ref role="1Pybhc" to="jpm3:5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+                      <node concept="37vLTw" id="5NSThJeAyjz" role="37wK5m">
+                        <ref role="3cqZAo" node="5NSThJeAnjs" resolve="savedExecutionMode" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3cpWs6" id="5gyVhZ1888W" role="3cqZAp">
                     <node concept="10Nm6u" id="5gyVhZ1888X" role="3cqZAk" />
                   </node>
@@ -2179,6 +2211,15 @@
           </node>
           <node concept="3clFbJ" id="5gyVhZ1889d" role="3cqZAp">
             <node concept="3clFbS" id="5gyVhZ1889e" role="3clFbx">
+              <node concept="3clFbF" id="5NSThJeCLU9" role="3cqZAp">
+                <node concept="2YIFZM" id="5NSThJeCLUa" role="3clFbG">
+                  <ref role="37wK5l" to="jpm3:5rUl2R7KxIX" resolve="setExecutionMode" />
+                  <ref role="1Pybhc" to="jpm3:5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+                  <node concept="37vLTw" id="5NSThJeCLUb" role="37wK5m">
+                    <ref role="3cqZAo" node="5NSThJeAnjs" resolve="savedExecutionMode" />
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs6" id="5gyVhZ1889f" role="3cqZAp">
                 <node concept="10Nm6u" id="5gyVhZ1889g" role="3cqZAk" />
               </node>
@@ -2208,6 +2249,15 @@
           </node>
           <node concept="3clFbJ" id="5gyVhZ1889q" role="3cqZAp">
             <node concept="3clFbS" id="5gyVhZ1889r" role="3clFbx">
+              <node concept="3clFbF" id="5NSThJeCMlp" role="3cqZAp">
+                <node concept="2YIFZM" id="5NSThJeCMlq" role="3clFbG">
+                  <ref role="37wK5l" to="jpm3:5rUl2R7KxIX" resolve="setExecutionMode" />
+                  <ref role="1Pybhc" to="jpm3:5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+                  <node concept="37vLTw" id="5NSThJeCMlr" role="37wK5m">
+                    <ref role="3cqZAo" node="5NSThJeAnjs" resolve="savedExecutionMode" />
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs6" id="5gyVhZ1889s" role="3cqZAp">
                 <node concept="10Nm6u" id="5gyVhZ1889t" role="3cqZAk" />
               </node>
@@ -2232,7 +2282,7 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="5gyVhZ1889B" role="3cqZAp" />
+          <node concept="3clFbH" id="5NSThJeBkTW" role="3cqZAp" />
           <node concept="3cpWs8" id="7l2brEKZzaX" role="3cqZAp">
             <node concept="3cpWsn" id="7l2brEKZzaY" role="3cpWs9">
               <property role="TrG5h" value="name" />
@@ -2244,6 +2294,15 @@
                 <node concept="liA8E" id="40J2CKBnHJ4" role="2OqNvi">
                   <ref role="37wK5l" to="sfqd:56tRMpP_ejv" resolve="getName" />
                 </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="5NSThJeCMPh" role="3cqZAp">
+            <node concept="2YIFZM" id="5NSThJeCMPi" role="3clFbG">
+              <ref role="37wK5l" to="jpm3:5rUl2R7KxIX" resolve="setExecutionMode" />
+              <ref role="1Pybhc" to="jpm3:5rUl2R7JYML" resolve="TestExecutionWorkspaceSetting" />
+              <node concept="37vLTw" id="5NSThJeCMPj" role="37wK5m">
+                <ref role="3cqZAo" node="5NSThJeAnjs" resolve="savedExecutionMode" />
               </node>
             </node>
           </node>
@@ -2276,7 +2335,7 @@
                     </node>
                     <node concept="3cpWs3" id="3J5chVy6TeN" role="3uHU7B">
                       <node concept="Xl_RD" id="3J5chVy6TeT" role="3uHU7B">
-                        <property role="Xl_RC" value="Interpreter on'" />
+                        <property role="Xl_RC" value="Interpreter on '" />
                       </node>
                       <node concept="37vLTw" id="3J5chVy6TZI" role="3uHU7w">
                         <ref role="3cqZAo" node="7l2brEKZzaY" resolve="name" />
