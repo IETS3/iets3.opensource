@@ -79,6 +79,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.opensource.build.gentests/org.iets3.opensource.build.gentests.mpl" folder="_build" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.artifacts.base/org.iets3.variability.artifacts.base.mpl" folder="variability" />
       <modulePath path="$PROJECT_DIR$/languages/test.iest3.component.attribute/test.iest3.component.attribute.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/test.org.iets3.analysis.base.solvable/test.org.iets3.analysis.base.solvable.mpl" folder="analysis.test" />
       <modulePath path="$PROJECT_DIR$/languages/test.ts.expr.os.nix/test.ts.expr.os.nix.mpl" folder="expr.tests" />
