@@ -30,11 +30,13 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -43,6 +45,7 @@
     <import index="fulz" ref="r:6f792c44-2a5d-40e8-9f05-33f7d4ae26ec(jetbrains.mps.editor.runtime.completion)" implicit="true" />
     <import index="av1m" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.style(MPS.Editor/)" implicit="true" />
     <import index="w1hl" ref="r:04b74a30-84ff-4d44-89e3-8084278f9c79(org.iets3.core.expr.typetags.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -134,12 +137,18 @@
       </concept>
       <concept id="7250830207897895678" name="jetbrains.mps.lang.editor.structure.CompletionCustomizationConceptCreatingSpecificator" flags="ng" index="KNhPm" />
       <concept id="8449131619432941427" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Super" flags="ng" index="L$LW2" />
+      <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
+        <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styles" index="V601i" />
       </concept>
@@ -263,6 +272,7 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -1004,9 +1014,8 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="69uDFDbfr0t" role="3EZMnx">
-        <property role="3F0ifm" value="unit" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      <node concept="PMmxH" id="1znK7yZd$ct" role="3EZMnx">
+        <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="TopLevelExprContentAlias" />
       </node>
       <node concept="3F0A7n" id="7eOyx9r3k5O" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1276,6 +1285,11 @@
         <node concept="11LMrY" id="6TeNRL7Ze_r" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="OXEIz" id="1znK7yZdE6P" role="P5bDN">
+          <node concept="UkePV" id="1znK7yZdE8R" role="OY2wv">
+            <ref role="Ul1FP" to="hm2y:6sdnDbSla17" resolve="Expression" />
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="y826GHGEL7" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1355,9 +1369,8 @@
             </node>
           </node>
         </node>
-        <node concept="3F0ifn" id="1NpnWezQFsD" role="3EZMnx">
-          <property role="3F0ifm" value="conversion" />
-          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="PMmxH" id="4MeRni3CEIn" role="3EZMnx">
+          <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="ITopLevelExprContentAlias" />
         </node>
         <node concept="3F1sOY" id="4UAQJ87M0_e" role="3EZMnx">
           <ref role="1NtTu8" to="i3ya:6EvkZrPjaQW" resolve="sourceUnit" />
@@ -1479,6 +1492,11 @@
             </node>
           </node>
         </node>
+        <node concept="OXEIz" id="1znK7yZdqOU" role="P5bDN">
+          <node concept="UkePV" id="1znK7yZdqRC" role="OY2wv">
+            <ref role="Ul1FP" to="hm2y:6sdnDbSla17" resolve="Expression" />
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="y826GHGBpM" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1539,9 +1557,8 @@
     <ref role="1XX52x" to="i3ya:4vPcjvhSVaI" resolve="ValExpression" />
     <node concept="3EZMnI" id="25BDdv85eYW" role="2wV5jI">
       <node concept="l2Vlx" id="25BDdv85fJJ" role="2iSdaV" />
-      <node concept="3F0ifn" id="4vPcjvhSVb8" role="3EZMnx">
-        <property role="3F0ifm" value="val" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      <node concept="PMmxH" id="1znK7yZdvtc" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZhztN" resolve="ExpressionKeywordAlias" />
       </node>
       <node concept="1HlG4h" id="25BDdv85oNe" role="3EZMnx">
         <ref role="1k5W1q" node="4M31vJayoGp" resolve="UnitTag" />
@@ -1653,9 +1670,8 @@
     <property role="3GE5qa" value="definition.conversion" />
     <ref role="1XX52x" to="i3ya:7SygLIkPJP$" resolve="ConvertToTarget" />
     <node concept="3EZMnI" id="7SygLIkPQOx" role="2wV5jI">
-      <node concept="PMmxH" id="7SygLIkPQOE" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      <node concept="PMmxH" id="1znK7yZdr5N" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="7SygLIkPQOJ" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2590,6 +2606,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="OXEIz" id="6bCTfmNe20u" role="P5bDN">
+          <node concept="UkePV" id="6bCTfmNe22K" role="OY2wv">
+            <ref role="Ul1FP" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
           </node>
         </node>
       </node>
@@ -4402,6 +4423,11 @@
         <ref role="1ERwB7" node="1YBYCQ0Ts8S" resolve="ConvertExpression_ActionMap" />
         <node concept="11LMrY" id="14aBVbMOu4l" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="OXEIz" id="1znK7yZdr$O" role="P5bDN">
+          <node concept="UkePV" id="1znK7yZdrAQ" role="OY2wv">
+            <ref role="Ul1FP" to="hm2y:6sdnDbSla17" resolve="Expression" />
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="14aBVbMOu4t" role="3EZMnx">

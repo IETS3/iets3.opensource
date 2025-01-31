@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="n0mj" ref="r:8218afdf-a485-4479-86a0-78900b96a4dd(org.iets3.core.expr.typetags.bindingtime.structure)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="iy3m" ref="r:1c658055-0fdc-45f4-8442-9bac78d96a2f(org.iets3.core.expr.typetags.bindingtime.behavior)" implicit="true" />
   </imports>
@@ -136,8 +136,8 @@
         <property role="ZjSer" value="initial" />
         <ref role="1NtTu8" to="n0mj:2tub4U558ns" resolve="initial" />
       </node>
-      <node concept="PMmxH" id="1SyV1pw98kS" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="4MeRni3AcnS" role="3EZMnx">
+        <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="ITopLevelExprContentAlias" />
       </node>
       <node concept="3F0A7n" id="2tub4U54K1E" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -259,8 +259,8 @@
         <property role="ZjSer" value="initial" />
         <ref role="1NtTu8" to="n0mj:5XGFpL9THzj" resolve="initial" />
       </node>
-      <node concept="3F0ifn" id="13eh33rvtdr" role="3EZMnx">
-        <property role="3F0ifm" value="computation class" />
+      <node concept="PMmxH" id="4MeRni3AbKu" role="3EZMnx">
+        <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="ITopLevelExprContentAlias" />
       </node>
       <node concept="3F0A7n" id="13eh33ruPOD" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

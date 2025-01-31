@@ -16,8 +16,9 @@
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="34lm" ref="r:04cb519f-2059-4c60-9414-918c7823fd79(org.iets3.core.expr.doc.structure)" implicit="true" />
-    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
+    <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="srqo" ref="r:5957d4c9-cc37-4d16-870b-eb83bcfdff2c(org.iets3.core.expr.doc.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -48,6 +49,9 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -260,9 +264,8 @@
       <property role="S$Qs1" value="true" />
       <node concept="2iRkQZ" id="1sudaVNnKrb" role="2iSdaV" />
       <node concept="3EZMnI" id="1sudaVNnKqP" role="3EZMnx">
-        <node concept="3F0ifn" id="1sudaVNnKpR" role="3EZMnx">
-          <property role="3F0ifm" value="frame" />
-          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="PMmxH" id="4MeRni3CTbV" role="3EZMnx">
+          <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="ITopLevelExprContentAlias" />
         </node>
         <node concept="3F0A7n" id="1sudaVNnKr4" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -577,9 +580,8 @@
     <node concept="3EZMnI" id="1JOtRcapYu3" role="2wV5jI">
       <node concept="2iRkQZ" id="1JOtRcapYu4" role="2iSdaV" />
       <node concept="3EZMnI" id="1sudaVNqvmh" role="3EZMnx">
-        <node concept="3F0ifn" id="1sudaVNqvmr" role="3EZMnx">
-          <property role="3F0ifm" value="screenshot-path" />
-          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="PMmxH" id="1znK7yZdcjw" role="3EZMnx">
+          <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="TopLevelExprContentAlias" />
         </node>
         <node concept="3F1sOY" id="1JOtRcapYu$" role="3EZMnx">
           <ref role="1NtTu8" to="34lm:1JOtRcapYu0" resolve="path" />
@@ -757,9 +759,8 @@
   <node concept="24kQdi" id="4vZ65iK7gAZ">
     <ref role="1XX52x" to="34lm:4vZ65iK7gAp" resolve="Bookmark" />
     <node concept="3EZMnI" id="4vZ65iK7gBb" role="2wV5jI">
-      <node concept="3F0ifn" id="4vZ65iK7gB7" role="3EZMnx">
-        <property role="3F0ifm" value="bookmark" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      <node concept="PMmxH" id="1znK7yZdbFD" role="3EZMnx">
+        <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="TopLevelExprContentAlias" />
       </node>
       <node concept="3F0A7n" id="4vZ65iK7hp5" role="3EZMnx">
         <ref role="1NtTu8" to="34lm:4vZ65iK7hoR" resolve="label" />
@@ -821,9 +822,8 @@
     <node concept="3EZMnI" id="5OzSgxea3Dq" role="2wV5jI">
       <node concept="2iRkQZ" id="5OzSgxea3Dr" role="2iSdaV" />
       <node concept="3EZMnI" id="5OzSgxea3DB" role="3EZMnx">
-        <node concept="3F0ifn" id="5OzSgxea3Dm" role="3EZMnx">
-          <property role="3F0ifm" value="example-solution:" />
-          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="PMmxH" id="4MeRni3CR5p" role="3EZMnx">
+          <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="ITopLevelExprContentAlias" />
         </node>
         <node concept="3F0ifn" id="5OzSgxeamY3" role="3EZMnx">
           <property role="3F0ifm" value="show" />
