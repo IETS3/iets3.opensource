@@ -1017,6 +1017,11 @@
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6CrOUarkeTK" role="3bR37C">
+          <node concept="3bR9La" id="6CrOUarkeTL" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:4Hbnsm4OhEo" resolve="com.mbeddr.mpsutil.editor.querylist.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5wLtKNeSWz5" role="3989C9">
@@ -12949,11 +12954,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="4u2ErA3vynJ" role="3bR37C">
-          <node concept="3bR9La" id="4u2ErA3vynK" role="1SiIV1">
-            <ref role="3bR37D" node="3ZBI8Aw30tK" resolve="org.iets3.opensource.build.gentests" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="3ZBI8Aw30tK" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -15283,11 +15283,14 @@
       <node concept="m$_yC" id="5OevlZn_uSu" role="m$_yJ">
         <ref role="m$_y1" node="64GCIgM55Fn" resolve="org.iets3.build.os" />
       </node>
+      <node concept="m$f5U" id="5loVtKO0kuX" role="m$_yh">
+        <ref role="m$f5T" node="5loVtKO0ksX" resolve="testExecutor" />
+      </node>
       <node concept="m$_yC" id="EtmSfDs6EV" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5CFKsRWRuFN" resolve="jetbrains.mps.debugger.api" />
       </node>
-      <node concept="m$f5U" id="5loVtKO0kuX" role="m$_yh">
-        <ref role="m$f5T" node="5loVtKO0ksX" resolve="testExecutor" />
+      <node concept="m$_yC" id="2nzIB3keEnN" role="m$_yJ">
+        <ref role="m$_y1" node="7uAdOXh24Lz" resolve="org.iets3.core.expr.devkits" />
       </node>
     </node>
     <node concept="2igEWh" id="wLSoj1MVqs" role="1hWBAP">
