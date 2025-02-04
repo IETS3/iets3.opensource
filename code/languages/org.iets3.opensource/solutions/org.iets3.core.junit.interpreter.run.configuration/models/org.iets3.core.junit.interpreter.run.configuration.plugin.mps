@@ -81,6 +81,7 @@
     <import index="k76n" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.runner.notification(JUnit/)" />
     <import index="34h4" ref="r:263b648a-3e00-426c-ab4b-ba47ccd788c9(jetbrains.mps.baselanguage.unitTest.execution.launcher)" />
     <import index="jpm3" ref="r:e3e5593b-dfcd-4a2e-b10f-f1ed4a43f093(org.iets3.core.expr.plugin.plugin)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
   </imports>
   <registry>
@@ -96,7 +97,7 @@
     </language>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
+        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -353,6 +354,11 @@
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -1052,7 +1058,44 @@
   <node concept="3wDVqV" id="2a_WN0NEddp">
     <property role="TrG5h" value="JUnit Interpreter Test" />
     <node concept="1QGGSu" id="4rA9Dd$P7z0" role="1bitO_">
-      <property role="1iqoE4" value="${module}/icons/junitInterpreter.svg" />
+      <node concept="3K4zz7" id="6M_gms_KP4n" role="3xaMm5">
+        <node concept="2YIFZM" id="6M_gms_KPXb" role="3K4Cdx">
+          <ref role="37wK5l" to="g1qu:~StartupUiUtil.isUnderDarcula()" resolve="isUnderDarcula" />
+          <ref role="1Pybhc" to="g1qu:~StartupUiUtil" resolve="StartupUiUtil" />
+        </node>
+        <node concept="2OqwBi" id="12N1PkCTdL1" role="3K4GZi">
+          <node concept="10M0yZ" id="12N1PkCTdD0" role="2Oq$k0">
+            <ref role="3cqZAo" to="9w4s:~IconUtil.INSTANCE" resolve="INSTANCE" />
+            <ref role="1PxDUh" to="9w4s:~IconUtil" resolve="IconUtil" />
+          </node>
+          <node concept="2PDubS" id="12N1PkCTe8N" role="2OqNvi">
+            <ref role="37wK5l" to="9w4s:~IconUtil.darker(javax.swing.Icon,int)" resolve="darker" />
+            <node concept="10M0yZ" id="4rA9Dd$Pgjt" role="37wK5m">
+              <ref role="1PxDUh" to="z2i8:~AllIcons$RunConfigurations" resolve="RunConfigurations" />
+              <ref role="3cqZAo" to="z2i8:~AllIcons$RunConfigurations.Junit" resolve="Junit" />
+            </node>
+            <node concept="3cmrfG" id="1eaPpAAFpy$" role="37wK5m">
+              <property role="3cmrfH" value="4" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="6M_gms_KQ5e" role="3K4E3e">
+          <node concept="10M0yZ" id="6M_gms_KQ5f" role="2Oq$k0">
+            <ref role="3cqZAo" to="9w4s:~IconUtil.INSTANCE" resolve="INSTANCE" />
+            <ref role="1PxDUh" to="9w4s:~IconUtil" resolve="IconUtil" />
+          </node>
+          <node concept="2PDubS" id="6M_gms_KQ5g" role="2OqNvi">
+            <ref role="37wK5l" to="9w4s:~IconUtil.brighter(javax.swing.Icon,int)" resolve="brighter" />
+            <node concept="10M0yZ" id="6M_gms_KQ5h" role="37wK5m">
+              <ref role="1PxDUh" to="z2i8:~AllIcons$RunConfigurations" resolve="RunConfigurations" />
+              <ref role="3cqZAo" to="z2i8:~AllIcons$RunConfigurations.Junit" resolve="Junit" />
+            </node>
+            <node concept="3cmrfG" id="6M_gms_KQ5i" role="37wK5m">
+              <property role="3cmrfH" value="10" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="RBi3j" id="2XSAFHXWCQI">
