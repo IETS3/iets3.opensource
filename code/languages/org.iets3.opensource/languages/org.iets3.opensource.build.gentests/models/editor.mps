@@ -29,9 +29,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
-        <reference id="6718020819487620874" name="menu" index="A1WHt" />
-      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -53,9 +50,6 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
-      </concept>
-      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -304,11 +298,9 @@
             <property role="3F0ifm" value="additional resources to load from:" />
             <ref role="1k5W1q" to="o2va:16Vg0jOctJb" resolve="projectPartKeyword" />
           </node>
-          <node concept="3F1sOY" id="7Lttyc2Tx93" role="3EZMnx">
+          <node concept="3F2HdR" id="5oK6FmqdDvb" role="3EZMnx">
             <ref role="1NtTu8" to="dc1n:7Lttyc2SIcb" resolve="path" />
-            <node concept="A1WHu" id="7Lttyc2UjkJ" role="3vIgyS">
-              <ref role="A1WHt" to="o2va:1wEcoXjJDhB" resolve="transform_CompositePath_BuildSourcePath" />
-            </node>
+            <node concept="2iRkQZ" id="5oK6FmqeLsG" role="2czzBx" />
           </node>
           <node concept="2iRfu4" id="7Lttyc2SMx9" role="2iSdaV" />
         </node>
