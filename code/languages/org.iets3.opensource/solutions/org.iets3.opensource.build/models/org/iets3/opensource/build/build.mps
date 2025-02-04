@@ -1107,6 +1107,11 @@
             <ref role="3bR37D" to="ffeo:465rK6MmPl5" resolve="jetbrains.mps.baselanguage.unitTest.launcher" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5NSThJeBPrW" role="3bR37C">
+          <node concept="3bR9La" id="5NSThJeBPrX" role="1SiIV1">
+            <ref role="3bR37D" node="3FexrMiSOe$" resolve="org.iets3.core.expr.plugin" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5wLtKNeSWz5" role="3989C9">
