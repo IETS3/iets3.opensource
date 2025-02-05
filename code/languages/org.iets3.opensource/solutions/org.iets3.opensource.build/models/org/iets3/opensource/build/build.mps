@@ -1002,11 +1002,6 @@
             <ref role="3bR37D" to="ffeo:465rK6MmPl5" resolve="jetbrains.mps.baselanguage.unitTest.launcher" />
           </node>
         </node>
-        <node concept="1SiIV0" id="30Z3a1Q6ZyN" role="3bR37C">
-          <node concept="3bR9La" id="30Z3a1Q6ZyO" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:2Oogzg3vg0R" resolve="jetbrains.mps.baseLanguage.unitTest.platform" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2AdTqXIhpqs" role="3bR37C">
           <node concept="3bR9La" id="2AdTqXIhpqt" role="1SiIV1">
             <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
@@ -1017,9 +1012,9 @@
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6CrOUarkeTK" role="3bR37C">
-          <node concept="3bR9La" id="6CrOUarkeTL" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:4Hbnsm4OhEo" resolve="com.mbeddr.mpsutil.editor.querylist.runtime" />
+        <node concept="1SiIV0" id="62vWlLjnoXC" role="3bR37C">
+          <node concept="3bR9La" id="62vWlLjnoXD" role="1SiIV1">
+            <ref role="3bR37D" node="3ZBI8Aw30tK" resolve="org.iets3.opensource.build.gentests" />
           </node>
         </node>
       </node>
