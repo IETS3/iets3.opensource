@@ -270,6 +270,7 @@
     <property role="3GE5qa" value="machine" />
     <property role="TrG5h" value="Guard" />
     <property role="R4oN_" value="a guard that must be true to trigger a transition" />
+    <property role="34LRSv" value="[" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7$TgoCYiJiz" role="1TKVEi">
       <property role="IQ2ns" value="8735085014268179619" />

@@ -244,6 +244,7 @@
     <property role="EcuMT" value="4026566441519573428" />
     <property role="TrG5h" value="NamespaceType" />
     <property role="R4oN_" value="a namespace type" />
+    <property role="34LRSv" value="namespace" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="3vxfdxbi77u" role="1TKVEi">
       <property role="IQ2ns" value="4026566441519575518" />

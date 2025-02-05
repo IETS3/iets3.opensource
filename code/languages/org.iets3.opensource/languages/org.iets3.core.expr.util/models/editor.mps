@@ -44,6 +44,7 @@
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" />
     <import index="6dpw" ref="r:ea653f2d-c829-4182-b311-a544ef1f4c1f(de.slisson.mps.tables.runtime.gridmodel)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="epcs" ref="b33d119e-196d-4497-977c-5c167b21fe33/r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -76,11 +77,17 @@
       </concept>
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
+      <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
+        <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
@@ -147,6 +154,7 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -1641,9 +1649,8 @@
     <property role="3GE5qa" value="range" />
     <ref role="1XX52x" to="kfo3:22hm_0z9Lc9" resolve="SplitExpression" />
     <node concept="3EZMnI" id="22hm_0z9LcG" role="2wV5jI">
-      <node concept="3F0ifn" id="5aHkq2wi3KB" role="3EZMnx">
-        <property role="3F0ifm" value="split" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      <node concept="PMmxH" id="1znK7yZedtV" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZhztN" resolve="ExpressionKeywordAlias" />
       </node>
       <node concept="3F1sOY" id="22hm_0z9LcP" role="3EZMnx">
         <ref role="1NtTu8" to="hm2y:3G_qVqIw4zp" resolve="expr" />
@@ -1671,6 +1678,11 @@
       <node concept="3EZMnI" id="22hm_0zjCQd" role="3EZMnx">
         <node concept="PMmxH" id="22hm_0zjCQx" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+          <node concept="OXEIz" id="1znK7yZedlP" role="P5bDN">
+            <node concept="UkePV" id="1znK7yZedlQ" role="OY2wv">
+              <ref role="Ul1FP" to="kfo3:1tPb0nsmVBp" resolve="RangeSpecifier" />
+            </node>
+          </node>
         </node>
         <node concept="3F1sOY" id="22hm_0zjCQp" role="3EZMnx">
           <ref role="1NtTu8" to="kfo3:22hm_0zjCPL" resolve="bound" />
@@ -2381,6 +2393,11 @@
     <node concept="3EZMnI" id="1tPb0nsnb7N" role="2wV5jI">
       <node concept="3F0ifn" id="6OunYCfjLSJ" role="3EZMnx">
         <property role="3F0ifm" value="in" />
+        <node concept="OXEIz" id="1znK7yZed7G" role="P5bDN">
+          <node concept="UkePV" id="1znK7yZed9I" role="OY2wv">
+            <ref role="Ul1FP" to="kfo3:1tPb0nsmVBp" resolve="RangeSpecifier" />
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="1tPb0nsnb83" role="3EZMnx">
         <ref role="1NtTu8" to="kfo3:1tPb0nsnb7k" resolve="lower" />
@@ -3243,8 +3260,8 @@
     <property role="3GE5qa" value="multidectab.toplevel" />
     <ref role="1XX52x" to="kfo3:7EKPeISweYk" resolve="BindColOp" />
     <node concept="3EZMnI" id="7EKPeISwidi" role="2wV5jI">
-      <node concept="PMmxH" id="7EKPeISyyKB" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="1znK7yZectN" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="7EKPeISwidv" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -3941,13 +3958,8 @@
         <node concept="VPM3Z" id="1yFVafcIur5" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="3F0ifn" id="1yFVafcIurl" role="3EZMnx">
-          <property role="3F0ifm" value="decision" />
-          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
-        </node>
-        <node concept="3F0ifn" id="1yFVafcIurx" role="3EZMnx">
-          <property role="3F0ifm" value="table" />
-          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="PMmxH" id="4MeRni3D402" role="3EZMnx">
+          <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="ITopLevelExprContentAlias" />
         </node>
         <node concept="3F0A7n" id="1yFVafcIurN" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

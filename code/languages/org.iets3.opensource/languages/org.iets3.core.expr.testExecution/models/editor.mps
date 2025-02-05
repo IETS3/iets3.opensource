@@ -56,7 +56,7 @@
       <node concept="2iRkQZ" id="3SkjTN1LTw7" role="2iSdaV" />
       <node concept="3EZMnI" id="3SkjTN1LTwc" role="3EZMnx">
         <node concept="3F0ifn" id="3SkjTN1LTw3" role="3EZMnx">
-          <property role="3F0ifm" value="Test Execution Preferences: " />
+          <property role="3F0ifm" value="test execution preferences: " />
         </node>
         <node concept="3F0A7n" id="3SkjTN1LTwp" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -65,7 +65,7 @@
       </node>
       <node concept="3EZMnI" id="3SkjTN1LTwJ" role="3EZMnx">
         <node concept="3F0ifn" id="3SkjTN1LTwD" role="3EZMnx">
-          <property role="3F0ifm" value="Execution Mode: " />
+          <property role="3F0ifm" value="execution mode: " />
         </node>
         <node concept="3F1sOY" id="3SkjTN1LTwW" role="3EZMnx">
           <ref role="1NtTu8" to="6yn5:3SkjTN1LTtQ" resolve="executionMode" />

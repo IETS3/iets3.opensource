@@ -5463,5 +5463,18 @@
       <ref role="1YaFvo" to="5qo5:2xPWNWpoRmG" resolve="StringTypeWithConstraint" />
     </node>
   </node>
+  <node concept="35pCF_" id="6bCTfmNbwu2">
+    <property role="3GE5qa" value="string" />
+    <property role="TrG5h" value="stringComparableWithstringTypeWithConstraint" />
+    <node concept="1YaCAy" id="6bCTfmNbwu3" role="35pZ6h">
+      <property role="TrG5h" value="stringTypeWithConstraint" />
+      <ref role="1YaFvo" to="5qo5:2xPWNWpoRmG" resolve="StringTypeWithConstraint" />
+    </node>
+    <node concept="3clFbS" id="6bCTfmNbwu4" role="2sgrp5" />
+    <node concept="1YaCAy" id="6bCTfmNbwvk" role="1YuTPh">
+      <property role="TrG5h" value="stringType" />
+      <ref role="1YaFvo" to="5qo5:4rZeNQ6OYR7" resolve="StringType" />
+    </node>
+  </node>
 </model>
 

@@ -39,7 +39,7 @@
   <node concept="1TIwiD" id="7DMIV6UAjuN">
     <property role="EcuMT" value="8823320991986431923" />
     <property role="TrG5h" value="NixType" />
-    <property role="34LRSv" value="nix type" />
+    <property role="34LRSv" value="nix" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
 </model>
