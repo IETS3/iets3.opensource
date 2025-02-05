@@ -1071,7 +1071,7 @@
           <node concept="2PDubS" id="12N1PkCTe8N" role="2OqNvi">
             <ref role="37wK5l" to="9w4s:~IconUtil.darker(javax.swing.Icon,int)" resolve="darker" />
             <node concept="10M0yZ" id="4rA9Dd$Pgjt" role="37wK5m">
-              <ref role="1PxDUh" to="z2i8:~AllIcons$RunConfigurations" resolve="RunConfigurations" />
+              <ref role="1PxDUh" to="z2i8:~AllIcons$RunConfigurations" resolve="AllIcons.RunConfigurations" />
               <ref role="3cqZAo" to="z2i8:~AllIcons$RunConfigurations.Junit" resolve="Junit" />
             </node>
             <node concept="3cmrfG" id="1eaPpAAFpy$" role="37wK5m">
@@ -1087,7 +1087,7 @@
           <node concept="2PDubS" id="6M_gms_KQ5g" role="2OqNvi">
             <ref role="37wK5l" to="9w4s:~IconUtil.brighter(javax.swing.Icon,int)" resolve="brighter" />
             <node concept="10M0yZ" id="6M_gms_KQ5h" role="37wK5m">
-              <ref role="1PxDUh" to="z2i8:~AllIcons$RunConfigurations" resolve="RunConfigurations" />
+              <ref role="1PxDUh" to="z2i8:~AllIcons$RunConfigurations" resolve="AllIcons.RunConfigurations" />
               <ref role="3cqZAo" to="z2i8:~AllIcons$RunConfigurations.Junit" resolve="Junit" />
             </node>
             <node concept="3cmrfG" id="6M_gms_KQ5i" role="37wK5m">
@@ -5453,7 +5453,7 @@
                       </node>
                     </node>
                     <node concept="2AHcQZ" id="7NpvTwehJb4" role="2AJF6D">
-                      <ref role="2AI5Lk" to="wyt6:~Override" />
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
                 </node>
