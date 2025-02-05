@@ -9059,7 +9059,8 @@
     </node>
   </node>
   <node concept="312cEu" id="5oK6Fmqm$Nt">
-    <property role="TrG5h" value="TestExecutorConfig" />
+    <property role="TrG5h" value="TestExecutorConfigForCommandLine" />
+    <node concept="2tJIrI" id="62vWlLjtsGh" role="jymVt" />
     <node concept="Wx3nA" id="5oK6Fmqm_m$" role="jymVt">
       <property role="TrG5h" value="myReportsFilenamePrefix" />
       <node concept="17QB3L" id="5oK6Fmqm_m_" role="1tU5fm" />
@@ -9077,7 +9078,35 @@
         <property role="Xl_RC" value="iets3.interpreterExecutor.genPath" />
       </node>
     </node>
-    <node concept="2tJIrI" id="5oK6FmqmKuL" role="jymVt" />
+    <node concept="Wx3nA" id="62vWlLjtnVF" role="jymVt">
+      <property role="TrG5h" value="listener" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="62vWlLjtnCU" role="1B3o_S" />
+      <node concept="3uibUv" id="62vWlLjtnMF" role="1tU5fm">
+        <ref role="3uigEE" to="d6jk:62vWlLjsxjc" resolve="IInterpreterRunListener" />
+      </node>
+      <node concept="2ShNRf" id="62vWlLjto5C" role="33vP2m">
+        <node concept="HV5vD" id="62vWlLjtrr9" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="HV5vE" to="d6jk:62vWlLjs6QF" resolve="NullRunListener" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="62vWlLjtrSe" role="jymVt">
+      <property role="TrG5h" value="reporter" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="62vWlLjtrAT" role="1B3o_S" />
+      <node concept="3uibUv" id="62vWlLjtrOv" role="1tU5fm">
+        <ref role="3uigEE" node="7Z6s7w45fwn" resolve="IInterpreterTestReporter" />
+      </node>
+      <node concept="2ShNRf" id="62vWlLjts2m" role="33vP2m">
+        <node concept="1pGfFk" id="62vWlLjtspi" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="37wK5l" node="5ZZgOa8NzgO" resolve="InterpreterTestReporter" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="62vWlLjtstV" role="jymVt" />
     <node concept="3clFb_" id="5oK6FmqmMyK" role="jymVt">
       <property role="TrG5h" value="getOutputPathMacroName" />
       <node concept="3clFbS" id="5oK6FmqmMyM" role="3clF47">
@@ -9107,6 +9136,40 @@
     <node concept="3uibUv" id="62vWlLjj9TO" role="EKbjA">
       <ref role="3uigEE" node="62vWlLjj9H5" />
     </node>
+    <node concept="3clFb_" id="62vWlLjtmHp" role="jymVt">
+      <property role="TrG5h" value="getListener" />
+      <node concept="3Tm1VV" id="62vWlLjtmHr" role="1B3o_S" />
+      <node concept="3uibUv" id="62vWlLjtmHs" role="3clF45">
+        <ref role="3uigEE" to="d6jk:62vWlLjsxjc" resolve="IInterpreterRunListener" />
+      </node>
+      <node concept="3clFbS" id="62vWlLjtmHt" role="3clF47">
+        <node concept="3clFbF" id="62vWlLjtmHw" role="3cqZAp">
+          <node concept="37vLTw" id="62vWlLjtrx6" role="3clFbG">
+            <ref role="3cqZAo" node="62vWlLjtnVF" resolve="listener" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="62vWlLjtmHu" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="62vWlLjtmHx" role="jymVt">
+      <property role="TrG5h" value="getReporter" />
+      <node concept="3Tm1VV" id="62vWlLjtmHz" role="1B3o_S" />
+      <node concept="3uibUv" id="62vWlLjtmH$" role="3clF45">
+        <ref role="3uigEE" node="7Z6s7w45fwn" resolve="IInterpreterTestReporter" />
+      </node>
+      <node concept="3clFbS" id="62vWlLjtmH_" role="3clF47">
+        <node concept="3clFbF" id="62vWlLjtmHC" role="3cqZAp">
+          <node concept="37vLTw" id="62vWlLjts_0" role="3clFbG">
+            <ref role="3cqZAo" node="62vWlLjtrSe" resolve="reporter" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="62vWlLjtmHA" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
   </node>
   <node concept="3HP615" id="62vWlLjj9H5">
     <property role="TrG5h" value="ICustomRunnerConfig" />
@@ -9121,6 +9184,22 @@
       <node concept="3clFbS" id="62vWlLjj9N1" role="3clF47" />
       <node concept="3Tm1VV" id="62vWlLjj9N4" role="1B3o_S" />
       <node concept="17QB3L" id="62vWlLjj9N5" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="62vWlLjteWI" role="jymVt">
+      <property role="TrG5h" value="getListener" />
+      <node concept="3clFbS" id="62vWlLjteWL" role="3clF47" />
+      <node concept="3Tm1VV" id="62vWlLjteWM" role="1B3o_S" />
+      <node concept="3uibUv" id="62vWlLjteW2" role="3clF45">
+        <ref role="3uigEE" to="d6jk:62vWlLjsxjc" resolve="IInterpreterRunListener" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="62vWlLjteZL" role="jymVt">
+      <property role="TrG5h" value="getReporter" />
+      <node concept="3clFbS" id="62vWlLjteZO" role="3clF47" />
+      <node concept="3Tm1VV" id="62vWlLjteZP" role="1B3o_S" />
+      <node concept="3uibUv" id="62vWlLjteYO" role="3clF45">
+        <ref role="3uigEE" node="7Z6s7w45fwn" resolve="IInterpreterTestReporter" />
+      </node>
     </node>
     <node concept="3Tm1VV" id="62vWlLjj9H6" role="1B3o_S" />
   </node>
@@ -9635,19 +9714,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="5oK6FmqmcK9" role="3cqZAp">
-          <node concept="3cpWsn" id="5oK6FmqmcKa" role="3cpWs9">
-            <property role="TrG5h" value="reporter" />
-            <node concept="3uibUv" id="5oK6FmqmcKb" role="1tU5fm">
-              <ref role="3uigEE" node="5ZZgOa8NuRo" resolve="InterpreterTestReporter" />
-            </node>
-            <node concept="2ShNRf" id="5oK6FmqmcKc" role="33vP2m">
-              <node concept="1pGfFk" id="5oK6FmqmcKd" role="2ShVmc">
-                <ref role="37wK5l" node="5ZZgOa8NzgO" resolve="InterpreterTestReporter" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5oK6FmqmcKe" role="3cqZAp">
           <node concept="3cpWsn" id="5oK6FmqmcKf" role="3cpWs9">
             <property role="TrG5h" value="executor" />
@@ -9667,9 +9733,8 @@
                   </node>
                   <node concept="ANE8D" id="5oK6FmqmcKm" role="2OqNvi" />
                 </node>
-                <node concept="3clFbT" id="5oK6FmqmcKn" role="37wK5m" />
-                <node concept="37vLTw" id="5oK6FmqmcKo" role="37wK5m">
-                  <ref role="3cqZAo" node="5oK6FmqmcKa" resolve="reporter" />
+                <node concept="37vLTw" id="62vWlLjxheN" role="37wK5m">
+                  <ref role="3cqZAo" node="62vWlLjxdXJ" resolve="config" />
                 </node>
               </node>
             </node>
@@ -9697,20 +9762,25 @@
         </node>
         <node concept="3clFbF" id="5oK6FmqmcKx" role="3cqZAp">
           <node concept="2OqwBi" id="5oK6FmqmcKy" role="3clFbG">
-            <node concept="37vLTw" id="5oK6FmqmcKz" role="2Oq$k0">
-              <ref role="3cqZAo" node="5oK6FmqmcKa" resolve="reporter" />
+            <node concept="2OqwBi" id="62vWlLjyiRL" role="2Oq$k0">
+              <node concept="37vLTw" id="5oK6FmqmcKz" role="2Oq$k0">
+                <ref role="3cqZAo" node="62vWlLjxdXJ" resolve="config" />
+              </node>
+              <node concept="liA8E" id="62vWlLjylCd" role="2OqNvi">
+                <ref role="37wK5l" node="62vWlLjteZL" resolve="getReporter" />
+              </node>
             </node>
             <node concept="liA8E" id="5oK6FmqmcK$" role="2OqNvi">
-              <ref role="37wK5l" node="5ZZgOa8NuV7" resolve="writeToFiles" />
+              <ref role="37wK5l" node="63re9eQZBk1" resolve="writeToFiles" />
               <node concept="37vLTw" id="5oK6FmqmcK_" role="37wK5m">
                 <ref role="3cqZAo" node="5oK6Fmqp206" resolve="evaluationOutputPath" />
               </node>
               <node concept="2OqwBi" id="5oK6FmqnAEw" role="37wK5m">
                 <node concept="37vLTw" id="5oK6FmqmcKA" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5oK6FmqmUMC" resolve="config" />
+                  <ref role="3cqZAo" node="62vWlLjxdXJ" resolve="config" />
                 </node>
                 <node concept="liA8E" id="5oK6FmqnBjV" role="2OqNvi">
-                  <ref role="37wK5l" node="5oK6FmqmLS7" resolve="getReportFileNamePrefix" />
+                  <ref role="37wK5l" node="62vWlLjj9N0" resolve="getReportFileNamePrefix" />
                 </node>
               </node>
             </node>
@@ -9725,6 +9795,12 @@
           <node concept="3uibUv" id="24QgRt7mub6" role="A3Ik2">
             <ref role="3uigEE" to="sfqd:56tRMpP_ej7" resolve="ITestNodeWrapper" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="62vWlLjxdXJ" role="3clF46">
+        <property role="TrG5h" value="config" />
+        <node concept="3uibUv" id="62vWlLjxgyO" role="1tU5fm">
+          <ref role="3uigEE" node="62vWlLjj9H5" resolve="ICustomRunnerConfig" />
         </node>
       </node>
     </node>
@@ -9857,6 +9933,118 @@
     </node>
     <node concept="2tJIrI" id="5oK6Fmqm6C0" role="jymVt" />
     <node concept="3Tm1VV" id="5oK6Fmqm2ym" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="62vWlLjtsLN">
+    <property role="TrG5h" value="TestExecutorConfigForIDE" />
+    <node concept="2tJIrI" id="62vWlLjtsLO" role="jymVt" />
+    <node concept="Wx3nA" id="62vWlLjtsLP" role="jymVt">
+      <property role="TrG5h" value="myReportsFilenamePrefix" />
+      <node concept="17QB3L" id="62vWlLjtsLQ" role="1tU5fm" />
+      <node concept="3Tm6S6" id="62vWlLjtsLR" role="1B3o_S" />
+      <node concept="Xl_RD" id="62vWlLjtsLS" role="33vP2m">
+        <property role="Xl_RC" value="InterpreterTestSuite" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="62vWlLjtsLT" role="jymVt">
+      <property role="TrG5h" value="outputPathMacro" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="62vWlLjtsLU" role="1B3o_S" />
+      <node concept="17QB3L" id="62vWlLjtsLV" role="1tU5fm" />
+      <node concept="Xl_RD" id="62vWlLjtsLW" role="33vP2m">
+        <property role="Xl_RC" value="iets3.interpreterExecutor.genPath" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="62vWlLjtsLX" role="jymVt">
+      <property role="TrG5h" value="listener" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="62vWlLjtsLY" role="1B3o_S" />
+      <node concept="3uibUv" id="62vWlLjtsLZ" role="1tU5fm">
+        <ref role="3uigEE" to="d6jk:62vWlLjsxjc" resolve="IInterpreterRunListener" />
+      </node>
+      <node concept="2ShNRf" id="62vWlLjtsM0" role="33vP2m">
+        <node concept="HV5vD" id="62vWlLjx4oU" role="2ShVmc">
+          <ref role="HV5vE" to="d6jk:77hRUeKhvqy" resolve="InterpreterRunListener" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="62vWlLjtsM2" role="jymVt">
+      <property role="TrG5h" value="reporter" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="62vWlLjtsM3" role="1B3o_S" />
+      <node concept="3uibUv" id="62vWlLjtsM4" role="1tU5fm">
+        <ref role="3uigEE" node="7Z6s7w45fwn" resolve="IInterpreterTestReporter" />
+      </node>
+      <node concept="2ShNRf" id="62vWlLjtsM5" role="33vP2m">
+        <node concept="HV5vD" id="62vWlLjttam" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="HV5vE" node="7Z6s7w45Gac" resolve="NullXMLReporter" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="62vWlLjtsM7" role="jymVt" />
+    <node concept="3clFb_" id="62vWlLjtsM8" role="jymVt">
+      <property role="TrG5h" value="getOutputPathMacroName" />
+      <node concept="3clFbS" id="62vWlLjtsM9" role="3clF47">
+        <node concept="3cpWs6" id="62vWlLjtsMa" role="3cqZAp">
+          <node concept="37vLTw" id="62vWlLjtsMb" role="3cqZAk">
+            <ref role="3cqZAo" node="62vWlLjtsLT" resolve="outputPathMacro" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="62vWlLjtsMc" role="3clF45" />
+      <node concept="3Tm1VV" id="62vWlLjtsMd" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="62vWlLjtsMe" role="jymVt" />
+    <node concept="3clFb_" id="62vWlLjtsMf" role="jymVt">
+      <property role="TrG5h" value="getReportFileNamePrefix" />
+      <node concept="3clFbS" id="62vWlLjtsMg" role="3clF47">
+        <node concept="3cpWs6" id="62vWlLjtsMh" role="3cqZAp">
+          <node concept="37vLTw" id="62vWlLjtsMi" role="3cqZAk">
+            <ref role="3cqZAo" node="62vWlLjtsLP" resolve="myReportsFilenamePrefix" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="62vWlLjtsMj" role="1B3o_S" />
+      <node concept="17QB3L" id="62vWlLjtsMk" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="62vWlLjtsMl" role="1B3o_S" />
+    <node concept="3uibUv" id="62vWlLjtsMm" role="EKbjA">
+      <ref role="3uigEE" node="62vWlLjj9H5" />
+    </node>
+    <node concept="3clFb_" id="62vWlLjtsMn" role="jymVt">
+      <property role="TrG5h" value="getListener" />
+      <node concept="3Tm1VV" id="62vWlLjtsMo" role="1B3o_S" />
+      <node concept="3uibUv" id="62vWlLjtsMp" role="3clF45">
+        <ref role="3uigEE" to="d6jk:62vWlLjsxjc" resolve="IInterpreterRunListener" />
+      </node>
+      <node concept="3clFbS" id="62vWlLjtsMq" role="3clF47">
+        <node concept="3clFbF" id="62vWlLjtsMr" role="3cqZAp">
+          <node concept="37vLTw" id="62vWlLjtsMs" role="3clFbG">
+            <ref role="3cqZAo" node="62vWlLjtsLX" resolve="listener" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="62vWlLjtsMt" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="62vWlLjtsMu" role="jymVt">
+      <property role="TrG5h" value="getReporter" />
+      <node concept="3Tm1VV" id="62vWlLjtsMv" role="1B3o_S" />
+      <node concept="3uibUv" id="62vWlLjtsMw" role="3clF45">
+        <ref role="3uigEE" node="7Z6s7w45fwn" resolve="IInterpreterTestReporter" />
+      </node>
+      <node concept="3clFbS" id="62vWlLjtsMx" role="3clF47">
+        <node concept="3clFbF" id="62vWlLjtsMy" role="3cqZAp">
+          <node concept="37vLTw" id="62vWlLjtsMz" role="3clFbG">
+            <ref role="3cqZAo" node="62vWlLjtsM2" resolve="reporter" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="62vWlLjtsM$" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
   </node>
 </model>
 

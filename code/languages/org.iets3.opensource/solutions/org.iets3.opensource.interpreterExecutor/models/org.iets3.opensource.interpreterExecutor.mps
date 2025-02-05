@@ -179,6 +179,12 @@
                   <node concept="37vLTw" id="24QgRt7nmIS" role="37wK5m">
                     <ref role="3cqZAo" node="24QgRt7nmAW" resolve="testableNodes" />
                   </node>
+                  <node concept="2ShNRf" id="62vWlLjxhVY" role="37wK5m">
+                    <node concept="HV5vD" id="62vWlLjxi8l" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="HV5vE" to="707k:5oK6Fmqm$Nt" resolve="TestExecutorConfigForCommandLine" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
