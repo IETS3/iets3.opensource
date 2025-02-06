@@ -169,6 +169,11 @@ This package includes all things related to tracing. More info: [page 27 debugge
 | org.iets3.core.trace | It implements trace attributes (can be for example used in components). |
 | org.iets3.core.test | It is a language for trace testing. |
 
+### variability
+| Name  | Description |
+| ------------- | ------------- |
+| org.iets3.variability.artifacts.base | This language contains basic concepts and interfaces related to variability. |
+
 ## Devkits
 
 The following devkits are available:
