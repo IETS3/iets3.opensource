@@ -5315,16 +5315,15 @@
                 <node concept="37vLTw" id="2qFJdjDD6zl" role="37wK5m">
                   <ref role="3cqZAo" node="2qFJdjDD4Df" resolve="wrapper" />
                 </node>
-                <node concept="37vLTw" id="5NSThJepym2" role="37wK5m">
-                  <ref role="3cqZAo" node="78MxLJAHuiW" resolve="myTestProcessRunState" />
-                </node>
                 <node concept="2ShNRf" id="62vWlLjwTGv" role="37wK5m">
                   <node concept="HV5vD" id="62vWlLjx1Yr" role="2ShVmc">
                     <property role="373rjd" value="true" />
                     <ref role="HV5vE" to="707k:62vWlLjtsLN" resolve="TestExecutorConfigForIDE" />
                   </node>
                 </node>
-                <node concept="3clFbT" id="3ViSmQmuggn" role="37wK5m" />
+                <node concept="37vLTw" id="449GR6dRK0f" role="37wK5m">
+                  <ref role="3cqZAo" node="78MxLJAHuiW" resolve="myTestProcessRunState" />
+                </node>
               </node>
             </node>
           </node>
@@ -13212,7 +13211,6 @@
     <property role="TrG5h" value="InterpreterRunListener" />
     <node concept="312cEg" id="56tRMpP_bx_" role="jymVt">
       <property role="TrG5h" value="myOutput" />
-      <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="56tRMpP_bxA" role="1B3o_S" />
       <node concept="3uibUv" id="56tRMpP_bxB" role="1tU5fm">
         <ref role="3uigEE" to="4l68:56tRMpP_bCe" resolve="CommandOutputStream" />
