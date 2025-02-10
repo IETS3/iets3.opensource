@@ -5252,25 +5252,6 @@
                     <ref role="37wK5l" to="707k:62vWlLjHO0G" resolve="TestExecutorConfigForIDE" />
                     <node concept="1bVj0M" id="62vWlLjJ4w_" role="37wK5m">
                       <node concept="3clFbS" id="62vWlLjJ4wF" role="1bW5cS">
-                        <node concept="2xdQw9" id="62vWlLjW1VU" role="3cqZAp">
-                          <property role="2xdLsb" value="h1akgim/info" />
-                          <node concept="3cpWs3" id="62vWlLjW4PM" role="9lYJi">
-                            <node concept="2OqwBi" id="62vWlLjWb_f" role="3uHU7w">
-                              <node concept="2OqwBi" id="62vWlLjW83E" role="2Oq$k0">
-                                <node concept="37vLTw" id="62vWlLjW6uD" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="78MxLJAHuiW" resolve="myTestProcessRunState" />
-                                </node>
-                                <node concept="liA8E" id="62vWlLjW9Kq" role="2OqNvi">
-                                  <ref role="37wK5l" to="ic9i:2A5UIbg69nv" resolve="get" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="62vWlLjWe76" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Enum.name()" resolve="name" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="62vWlLjW1VW" role="3uHU7B" />
-                          </node>
-                        </node>
                         <node concept="3cpWs6" id="62vWlLjJ5x6" role="3cqZAp">
                           <node concept="2OqwBi" id="62vWlLjJ5x7" role="3cqZAk">
                             <node concept="37vLTw" id="62vWlLjJ5x8" role="2Oq$k0">
