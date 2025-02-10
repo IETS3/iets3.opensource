@@ -217,7 +217,7 @@
         <node concept="TUZQ0" id="7B3y$vlfQc4" role="3nqlJM">
           <property role="TUZQ4" value="is any node in a language" />
           <node concept="zr_55" id="7B3y$vlfQc6" role="zr_5Q">
-            <ref role="zr_51" node="7B3y$vlfJ17" resolve="node" />
+            <ref role="zr_51" node="7B3y$vlfJ17" resolve="queriedNode" />
           </node>
         </node>
         <node concept="x79VA" id="7B3y$vlfQc7" role="3nqlJM">

@@ -47,6 +47,7 @@
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
+    <import index="ciba" ref="r:11b7cdb2-cc58-456e-bb9a-ce45b78edd2f(jetbrains.mps.ide.httpsupport.runtime.base)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -22364,8 +22365,8 @@
                               </node>
                             </node>
                             <node concept="2YIFZM" id="5_s5$c25A$E" role="3uHU7w">
-                              <ref role="37wK5l" to="oq0c:1_yOWEXenNM" resolve="getURL" />
-                              <ref role="1Pybhc" to="oq0c:3OrGkZCn9ZQ" resolve="URLUtil" />
+                              <ref role="37wK5l" to="ciba:1_yOWEXenNM" resolve="getURL" />
+                              <ref role="1Pybhc" to="ciba:3OrGkZCn9ZQ" resolve="HttpSupportUtil" />
                               <node concept="13iPFW" id="5_s5$c25AQP" role="37wK5m" />
                             </node>
                           </node>
