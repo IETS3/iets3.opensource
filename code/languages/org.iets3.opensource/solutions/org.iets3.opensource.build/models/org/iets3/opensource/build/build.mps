@@ -15350,15 +15350,15 @@
     <property role="2DA0ip" value="../../../../../build/scripts" />
     <property role="turDy" value="build-testInterpreter.xml" />
     <node concept="m$_wf" id="5loVtKO0krH" role="3989C9">
-      <property role="m$_wk" value="testExecutor" />
+      <property role="m$_wk" value="org.iets3.opensource.interpreterExecutor" />
       <node concept="3_J27D" id="5loVtKO0krJ" role="m$_yQ">
         <node concept="3Mxwew" id="5loVtKO0ksn" role="3MwsjC">
-          <property role="3MwjfP" value="testExecutor" />
+          <property role="3MwjfP" value="org.iets3.opensource.interpreterExecutor" />
         </node>
       </node>
       <node concept="3_J27D" id="5loVtKO0krL" role="m_cZH">
         <node concept="3Mxwew" id="5loVtKO0kuV" role="3MwsjC">
-          <property role="3MwjfP" value="testExecutor" />
+          <property role="3MwjfP" value="org.iets3.opensource.interpreterExecutor" />
         </node>
       </node>
       <node concept="3_J27D" id="5loVtKO0krN" role="m$_w8">
@@ -15503,7 +15503,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="5loVtKO0ksX" role="3989C9">
-      <property role="TrG5h" value="testExecutor" />
+      <property role="TrG5h" value="iets3.opensource.interpreterExecutor" />
       <node concept="1E1JtA" id="5jJR9m7XASm" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.opensource.interpreterExecutor" />
