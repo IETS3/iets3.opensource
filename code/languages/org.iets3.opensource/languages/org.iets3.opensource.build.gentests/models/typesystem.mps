@@ -233,7 +233,7 @@
     </language>
   </registry>
   <node concept="18kY7G" id="3R4s7SZjW5J">
-    <property role="TrG5h" value="check_CustomRunnerAspect" />
+    <property role="TrG5h" value="check_CustomRunnerAspectPlugInForMissingDevKits" />
     <node concept="2XrIbr" id="3R4s7SZE4Cm" role="2p_Lja">
       <property role="TrG5h" value="getDevKistFromIdeaPlugin" />
       <node concept="3clFbS" id="3R4s7SZE4Co" role="3clF47">

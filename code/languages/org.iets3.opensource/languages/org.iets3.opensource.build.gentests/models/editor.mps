@@ -154,7 +154,7 @@
     <ref role="1XX52x" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
     <node concept="3EZMnI" id="3BExUgsK8pL" role="2wV5jI">
       <node concept="3F0ifn" id="3BExUgsK8pS" role="3EZMnx">
-        <property role="3F0ifm" value="run interpreter code on solution" />
+        <property role="3F0ifm" value="interpret test in solution" />
         <ref role="1k5W1q" to="o2va:16Vg0jOctJb" resolve="projectPartKeyword" />
       </node>
       <node concept="l2Vlx" id="3BExUgsK8pO" role="2iSdaV" />
