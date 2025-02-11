@@ -9,7 +9,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 
-- Evaluation of test cases by interpreter can be executed from command line 
+- a new approach to run interpreter test case from command line (and inside MPS) directly without invoking JUnit code generation  
 
 ## January 2025
 
