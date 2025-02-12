@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## Februar 2025
+
+### Added
+
+- a new approach to run interpreter test case from command line (and inside MPS) directly without invoking JUnit code generation  
+
 ## January 2025
 
 ### Added
