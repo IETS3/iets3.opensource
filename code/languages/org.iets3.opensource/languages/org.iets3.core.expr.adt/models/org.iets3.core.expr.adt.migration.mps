@@ -114,7 +114,7 @@
   <node concept="Z5qvL" id="3eH6BL3iHsI">
     <property role="Z5qvQ" value="0" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_0" />
-    <property role="1AQGQl" value="Move link `type` to concept `ITyped`" />
+    <property role="1AQGQl" value="Move link `type` from concept `AlgebraicConstructorArg` to concept `ITyped`" />
     <node concept="Z4OXk" id="3eH6BL3iHsT" role="Z5rET">
       <node concept="2pBcaW" id="3eH6BL3iHsR" role="Z5P1v">
         <property role="2pBcoG" value="2460310434937431092" />
@@ -198,7 +198,7 @@
   <node concept="Z5qvL" id="3eH6BL3k25E">
     <property role="Z5qvQ" value="1" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_1" />
-    <property role="1AQGQl" value="Move link `type` to concept `ITyped`" />
+    <property role="1AQGQl" value="Move link `type` from concept `Ancestor` to concept `ITyped`" />
     <node concept="Z4OXk" id="3eH6BL3k25P" role="Z5rET">
       <node concept="2pBcaW" id="3eH6BL3k25N" role="Z5P1v">
         <property role="2pBcoG" value="2460310434933678165" />
@@ -282,7 +282,7 @@
   <node concept="Z5qvL" id="3eH6BL3kbdm">
     <property role="Z5qvQ" value="2" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_2" />
-    <property role="1AQGQl" value="Move link `type` to concept `ITyped`" />
+    <property role="1AQGQl" value="Move link `type` from concept `QuotedTermType` to concept `ITyped`" />
     <node concept="Z4OXk" id="3eH6BL3kbdx" role="Z5rET">
       <node concept="2pBcaW" id="3eH6BL3kbdv" role="Z5P1v">
         <property role="2pBcoG" value="2460310434914064159" />
@@ -366,7 +366,7 @@
   <node concept="Z5qvL" id="7xcRpYKHgcS">
     <property role="Z5qvQ" value="3" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_3" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `ReplaceWith` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="7xcRpYKHgd3" role="Z5rET">
       <node concept="2pBcaW" id="7xcRpYKHgd1" role="Z5P1v">
         <property role="2pBcoG" value="2460310434922396361" />
@@ -450,7 +450,7 @@
   <node concept="Z5qvL" id="7xcRpYKJcFF">
     <property role="Z5qvQ" value="4" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_4" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `UnquoteExpression` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="7xcRpYKJcFQ" role="Z5rET">
       <node concept="2pBcaW" id="7xcRpYKJcFO" role="Z5P1v">
         <property role="2pBcoG" value="2460310434913774142" />
@@ -534,7 +534,7 @@
   <node concept="Z5qvL" id="7xcRpYKKZID">
     <property role="Z5qvQ" value="5" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_5" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `TraverseExpr` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="7xcRpYKKZIO" role="Z5rET">
       <node concept="2pBcaW" id="7xcRpYKKZIM" role="Z5P1v">
         <property role="2pBcoG" value="5955298286248465119" />
@@ -614,7 +614,7 @@
   <node concept="Z5qvL" id="7xcRpYKMSc7">
     <property role="Z5qvQ" value="6" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_6" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `CaseCondition` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="7xcRpYKMSci" role="Z5rET">
       <node concept="2pBcaW" id="7xcRpYKMScg" role="Z5P1v">
         <property role="2pBcoG" value="5955298286244245721" />
@@ -698,7 +698,7 @@
   <node concept="Z5qvL" id="7xcRpYKNvCv">
     <property role="Z5qvQ" value="7" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_7" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `MatchExpr` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="7xcRpYKNvCE" role="Z5rET">
       <node concept="2pBcaW" id="7xcRpYKNvCC" role="Z5P1v">
         <property role="2pBcoG" value="5955298286240874967" />
