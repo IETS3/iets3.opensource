@@ -670,7 +670,7 @@
   <node concept="1TIwiD" id="1$1rueeDiNV">
     <property role="EcuMT" value="1801842150043102459" />
     <property role="TrG5h" value="OptExpression" />
-    <property role="34LRSv" value="some&lt;..&gt;" />
+    <property role="34LRSv" value="some" />
     <property role="3GE5qa" value="opt" />
     <property role="R4oN_" value="wrap a value in an option container" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
@@ -694,7 +694,7 @@
     <property role="EcuMT" value="1801842150043820356" />
     <property role="3GE5qa" value="opt" />
     <property role="TrG5h" value="NoneExpr" />
-    <property role="34LRSv" value="none&lt;..&gt;" />
+    <property role="34LRSv" value="none" />
     <property role="R4oN_" value="create a none value (of a given type)" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="1$1rueeG25n" role="1TKVEi">

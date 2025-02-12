@@ -719,7 +719,7 @@
   <node concept="1TIwiD" id="1Ez$z58L7JG">
     <property role="3GE5qa" value="error.types" />
     <property role="TrG5h" value="SpecificErrorType" />
-    <property role="34LRSv" value="error[" />
+    <property role="34LRSv" value="error" />
     <property role="EcuMT" value="1919538606561852396" />
     <property role="R4oN_" value="a particular error literal" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />

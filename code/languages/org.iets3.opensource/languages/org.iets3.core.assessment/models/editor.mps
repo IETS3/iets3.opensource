@@ -10,6 +10,7 @@
     <import index="330h" ref="r:23d7e401-548b-485c-bdf1-c060e259073c(org.iets3.core.assessment.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -25,6 +26,12 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
+        <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -39,8 +46,12 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -282,23 +293,20 @@
     <node concept="3EZMnI" id="5ZLQMNq2l6w" role="2wV5jI">
       <node concept="3F0ifn" id="5ZLQMNq2l6B" role="3EZMnx">
         <property role="3F0ifm" value="generic trace query" />
-      </node>
-      <node concept="3F0ifn" id="5ZLQMNq2l6V" role="3EZMnx">
-        <property role="3F0ifm" value="kind&lt;" />
-        <node concept="11LMrY" id="5ZLQMNq7BlE" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+        <node concept="OXEIz" id="4MeRni499VS" role="P5bDN">
+          <node concept="UkePV" id="4MeRni499VT" role="OY2wv">
+            <ref role="Ul1FP" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+          </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="5ZLQMNq2l6V" role="3EZMnx">
+        <property role="3F0ifm" value="of kind" />
+      </node>
       <node concept="3F1sOY" id="5ZLQMNq2l7d" role="3EZMnx">
+        <property role="1$x2rV" value="no kind" />
         <ref role="1NtTu8" to="330h:5ZLQMNq2hPP" resolve="traceKind" />
         <node concept="VechU" id="1SeAacxoe9D" role="3F10Kt">
           <property role="Vb096" value="g1_qRwE/darkGreen" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="5ZLQMNq2l7p" role="3EZMnx">
-        <property role="3F0ifm" value="&gt;" />
-        <node concept="11L4FC" id="5ZLQMNq7BpT" role="3F10Kt">
-          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="5ZLQMNq2l7B" role="3EZMnx">
@@ -364,6 +372,11 @@
     <node concept="3EZMnI" id="378sigX35m1" role="2wV5jI">
       <node concept="3F0ifn" id="378sigX35ma" role="3EZMnx">
         <property role="3F0ifm" value="elements like" />
+        <node concept="OXEIz" id="4MeRni45Kdq" role="P5bDN">
+          <node concept="UkePV" id="4MeRni45Kfs" role="OY2wv">
+            <ref role="Ul1FP" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+          </node>
+        </node>
       </node>
       <node concept="1iCGBv" id="378sigX4UXW" role="3EZMnx">
         <ref role="1NtTu8" to="330h:378sigX35lt" resolve="like" />

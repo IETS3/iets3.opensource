@@ -1157,6 +1157,7 @@
     <property role="TrG5h" value="PortTypeSpecificPortType" />
     <property role="EcuMT" value="2244552513307947405" />
     <property role="R4oN_" value="a port type of a specific port type" />
+    <property role="34LRSv" value="port" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="1WAg9Tzrz6g" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
