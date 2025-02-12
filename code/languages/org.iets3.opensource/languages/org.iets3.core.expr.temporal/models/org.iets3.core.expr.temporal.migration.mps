@@ -32511,7 +32511,7 @@
   <node concept="Z5qvL" id="2hueze4NYHn">
     <property role="Z5qvQ" value="0" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_0" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `AlwaysExpression` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="2hueze4NYHy" role="Z5rET">
       <node concept="2pBcaW" id="2hueze4NYHw" role="Z5P1v">
         <property role="2pBcoG" value="5177002969018979144" />
@@ -32591,7 +32591,7 @@
   <node concept="Z5qvL" id="2hueze4O8Gh">
     <property role="Z5qvQ" value="1" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_1" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `DefaultSliceValueExpr` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="2hueze4O8Gs" role="Z5rET">
       <node concept="2pBcaW" id="2hueze4O8Gq" role="Z5P1v">
         <property role="2pBcoG" value="3955961678040440590" />
@@ -32671,7 +32671,7 @@
   <node concept="Z5qvL" id="2hueze4Olzb">
     <property role="Z5qvQ" value="2" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_2" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `MapSlicesOp` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="2hueze4Olzm" role="Z5rET">
       <node concept="2pBcaW" id="2hueze4Olzk" role="Z5P1v">
         <property role="2pBcoG" value="7638810057892018382" />

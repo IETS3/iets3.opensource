@@ -524,7 +524,7 @@
   <node concept="Z5qvL" id="3eH6BL3k661">
     <property role="Z5qvQ" value="0" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_0" />
-    <property role="1AQGQl" value="Move link `type` to concept `ITyped`" />
+    <property role="1AQGQl" value="Move link `type` from concept `TypeCoercion` to concept `ITyped`" />
     <node concept="Z4OXk" id="3eH6BL3k66c" role="Z5rET">
       <node concept="2pBcaW" id="3eH6BL3k66a" role="Z5P1v">
         <property role="2pBcoG" value="4026566441520550141" />
@@ -608,7 +608,7 @@
   <node concept="Z5qvL" id="1azguFQPiSo">
     <property role="Z5qvQ" value="1" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_1" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `TypeCoercion` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="1azguFQPiSz" role="Z5rET">
       <node concept="2pBcaW" id="1azguFQPiSx" role="Z5P1v">
         <property role="2pBcoG" value="4026566441520550144" />
@@ -688,7 +688,7 @@
   <node concept="Z5qvL" id="2hueze4HV9O">
     <property role="Z5qvQ" value="2" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_2" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `MessageDefinition` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="2hueze4HV9Z" role="Z5rET">
       <node concept="2pBcaW" id="2hueze4HV9X" role="Z5P1v">
         <property role="2pBcoG" value="4026566441518440950" />

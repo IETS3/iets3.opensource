@@ -114,7 +114,7 @@
   <node concept="Z5qvL" id="7f0hX5P6zWg">
     <property role="Z5qvQ" value="0" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_0" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `Action` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="7f0hX5P6zWr" role="Z5rET">
       <node concept="2pBcaW" id="7f0hX5P6zWp" role="Z5P1v">
         <property role="2pBcoG" value="8735085014267982686" />
@@ -198,7 +198,7 @@
   <node concept="Z5qvL" id="7f0hX5P7D8p">
     <property role="Z5qvQ" value="1" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_1" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `Guard` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="7f0hX5P7D8$" role="Z5rET">
       <node concept="2pBcaW" id="7f0hX5P7D8y" role="Z5P1v">
         <property role="2pBcoG" value="8735085014268179619" />
@@ -282,7 +282,7 @@
   <node concept="Z5qvL" id="1azguFQQjv$">
     <property role="Z5qvQ" value="2" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_2" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `StatemachineQuery` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="1azguFQQjvJ" role="Z5rET">
       <node concept="2pBcaW" id="1azguFQQjvH" role="Z5P1v">
         <property role="2pBcoG" value="5460220530820977921" />
@@ -362,7 +362,7 @@
   <node concept="Z5qvL" id="2hueze4NuXj">
     <property role="Z5qvQ" value="3" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_3" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `StatemachineVar` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="2hueze4NuXu" role="Z5rET">
       <node concept="2pBcaW" id="2hueze4NuXs" role="Z5P1v">
         <property role="2pBcoG" value="195141004745041161" />

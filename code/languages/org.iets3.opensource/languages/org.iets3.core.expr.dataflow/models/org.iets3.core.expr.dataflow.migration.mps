@@ -111,7 +111,7 @@
   <node concept="Z5qvL" id="1azguFR1MK6">
     <property role="Z5qvQ" value="0" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_0" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `OutportValue` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="1azguFR1MKh" role="Z5rET">
       <node concept="2pBcaW" id="1azguFR1MKf" role="Z5P1v">
         <property role="2pBcoG" value="4131570352305494562" />
@@ -191,7 +191,7 @@
   <node concept="Z5qvL" id="2hueze4Htsm">
     <property role="Z5qvQ" value="1" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_1" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `ParamValue` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="2hueze4Htsx" role="Z5rET">
       <node concept="2pBcaW" id="2hueze4Htsv" role="Z5P1v">
         <property role="2pBcoG" value="2870058499324946441" />
