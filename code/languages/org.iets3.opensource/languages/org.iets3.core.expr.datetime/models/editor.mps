@@ -12,6 +12,7 @@
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -151,10 +152,10 @@
     <property role="3GE5qa" value="date" />
     <ref role="1XX52x" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
     <node concept="3EZMnI" id="3nGzaxURa4M" role="2wV5jI">
-      <node concept="3F0ifn" id="3nGzaxURa5a" role="3EZMnx">
-        <property role="3F0ifm" value="/" />
+      <node concept="PMmxH" id="1znK7yZd9Uw" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZ9Z0K" resolve="ExpressionAlias" />
         <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
-        <node concept="11LMrY" id="3nGzaxURa5c" role="3F10Kt">
+        <node concept="11LMrY" id="4MeRni3eewM" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -184,9 +185,15 @@
     <property role="3GE5qa" value="range.literals" />
     <ref role="1XX52x" to="mi3w:3nGzaxUXsgj" resolve="YearRangeLiteral" />
     <node concept="3EZMnI" id="3nGzaxUXsgM" role="2wV5jI">
-      <node concept="3F0ifn" id="3nGzaxUXsgK" role="3EZMnx">
-        <property role="3F0ifm" value="year[" />
-        <node concept="11LMrY" id="3nGzaxUXsgU" role="3F10Kt">
+      <node concept="PMmxH" id="1znK7yZdaAV" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZ9Z0K" resolve="ExpressionAlias" />
+      </node>
+      <node concept="3F0ifn" id="4MeRni4kkQ3" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="4MeRni4kkU7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="4MeRni4kkWa" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -213,9 +220,18 @@
     <property role="3GE5qa" value="range.literals" />
     <ref role="1XX52x" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
     <node concept="3EZMnI" id="1Mp62pP0lNt" role="2wV5jI">
-      <node concept="3F0ifn" id="1Mp62pP0lNv" role="3EZMnx">
-        <property role="3F0ifm" value="month[" />
-        <node concept="11LMrY" id="1Mp62pP0lNw" role="3F10Kt">
+      <node concept="PMmxH" id="1znK7yZdakL" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZ9Z0K" resolve="ExpressionAlias" />
+        <node concept="11LMrY" id="4MeRni3efDo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4MeRni4jwrY" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="4MeRni4jww2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="4MeRni4jwy5" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -304,8 +320,8 @@
     <property role="3GE5qa" value="date" />
     <ref role="1XX52x" to="mi3w:7khFtBHlNKe" resolve="MakeDate" />
     <node concept="3EZMnI" id="7khFtBHlNKQ" role="2wV5jI">
-      <node concept="PMmxH" id="4MwjAOTSmU5" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="1znK7yZda4A" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZ9Z0K" resolve="ExpressionAlias" />
       </node>
       <node concept="3F0ifn" id="7khFtBHlNKZ" role="3EZMnx">
         <property role="3F0ifm" value="/" />
@@ -340,8 +356,8 @@
     <property role="3GE5qa" value="range.rel" />
     <ref role="1XX52x" to="mi3w:7khFtBHyEjM" resolve="AbstractRangeRelOp" />
     <node concept="3EZMnI" id="7khFtBHyEki" role="2wV5jI">
-      <node concept="PMmxH" id="7khFtBHyEkg" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="1znK7yZdaGZ" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="7khFtBHyEkr" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -368,8 +384,8 @@
     <property role="3GE5qa" value="date.op" />
     <ref role="1XX52x" to="mi3w:7khFtBH_CX$" resolve="UntilOp" />
     <node concept="3EZMnI" id="7khFtBH_CY5" role="2wV5jI">
-      <node concept="3F0ifn" id="7khFtBH_CY2" role="3EZMnx">
-        <property role="3F0ifm" value="until" />
+      <node concept="PMmxH" id="1znK7yZd9Go" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="7khFtBH_CYe" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -453,8 +469,8 @@
     <property role="3GE5qa" value="range.rel" />
     <ref role="1XX52x" to="mi3w:4O9rw8aD7_O" resolve="IntersectRangeOp" />
     <node concept="3EZMnI" id="4O9rw8aD8cV" role="2wV5jI">
-      <node concept="PMmxH" id="4O9rw8aD8cX" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="1znK7yZdaN3" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="4O9rw8aD8cY" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -495,8 +511,8 @@
     <property role="3GE5qa" value="date.earlylate" />
     <ref role="1XX52x" to="mi3w:1RwPUjzgk0y" resolve="AbstractEarliestLastestExpression" />
     <node concept="3EZMnI" id="1RwPUjzgk14" role="2wV5jI">
-      <node concept="PMmxH" id="1RwPUjzgk11" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="1znK7yZd9wh" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZ9Z0K" resolve="ExpressionAlias" />
       </node>
       <node concept="3F0ifn" id="1RwPUjzgk1j" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -538,8 +554,8 @@
     <property role="3GE5qa" value="range.cut" />
     <ref role="1XX52x" to="mi3w:5LVdhDvvwwu" resolve="FromOp" />
     <node concept="3EZMnI" id="5LVdhDvvxTB" role="2wV5jI">
-      <node concept="3F0ifn" id="5LVdhDvvxTI" role="3EZMnx">
-        <property role="3F0ifm" value="from" />
+      <node concept="PMmxH" id="1znK7yZdaaE" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="5LVdhDvvxTO" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -566,8 +582,8 @@
     <property role="3GE5qa" value="range.cut" />
     <ref role="1XX52x" to="mi3w:5LVdhDvvyER" resolve="UpToOp" />
     <node concept="3EZMnI" id="5LVdhDvvyFm" role="2wV5jI">
-      <node concept="3F0ifn" id="5LVdhDvvyFn" role="3EZMnx">
-        <property role="3F0ifm" value="upto" />
+      <node concept="PMmxH" id="1znK7yZdaeH" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="5LVdhDvvyFq" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -609,10 +625,10 @@
     <property role="3GE5qa" value="time" />
     <ref role="1XX52x" to="mi3w:3HiHZey9lUa" resolve="TimeLiteral" />
     <node concept="3EZMnI" id="3HiHZey9pdy" role="2wV5jI">
-      <node concept="3F0ifn" id="3HiHZey9pdz" role="3EZMnx">
-        <property role="3F0ifm" value="\" />
+      <node concept="PMmxH" id="1znK7yZdbtw" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZ9Z0K" resolve="ExpressionAlias" />
         <ref role="1k5W1q" node="2GzLOsV0qKA" resolve="defaultDateColor" />
-        <node concept="11LMrY" id="3HiHZey9pd$" role="3F10Kt">
+        <node concept="11LMrY" id="4MeRni3efZ_" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -660,8 +676,8 @@
     <property role="3GE5qa" value="time" />
     <ref role="1XX52x" to="mi3w:3HiHZey9lU5" resolve="MakeTime" />
     <node concept="3EZMnI" id="3HiHZeyanOW" role="2wV5jI">
-      <node concept="PMmxH" id="3HiHZeyanOY" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="1znK7yZdbns" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZ9Z0K" resolve="ExpressionAlias" />
       </node>
       <node concept="3F0ifn" id="3HiHZeyanOZ" role="3EZMnx">
         <property role="3F0ifm" value="\" />
@@ -714,9 +730,12 @@
     <property role="3GE5qa" value="time" />
     <ref role="1XX52x" to="mi3w:3HiHZeyb5sw" resolve="HourRangeLiteral" />
     <node concept="3EZMnI" id="3HiHZeyb5u3" role="2wV5jI">
-      <node concept="3F0ifn" id="3HiHZeyb5u5" role="3EZMnx">
-        <property role="3F0ifm" value="hour[" />
-        <node concept="11LMrY" id="3HiHZeyb5u6" role="3F10Kt">
+      <node concept="PMmxH" id="1znK7yZdbfn" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZ9Z0K" resolve="ExpressionAlias" />
+      </node>
+      <node concept="3F0ifn" id="1znK7yZdb3e" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="1znK7yZdb9j" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
