@@ -922,6 +922,7 @@
     <property role="TrG5h" value="InlineRecordType" />
     <property role="EcuMT" value="8293738266741050575" />
     <property role="R4oN_" value="an inline record type" />
+    <property role="34LRSv" value="record" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="4ptnK4iZ$op" role="1TKVEi">
       <property role="IQ2ns" value="5070313213707306521" />
