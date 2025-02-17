@@ -25,6 +25,7 @@
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="boxz" ref="r:89e950b9-8c66-4fca-a5c0-614e0548d83a(org.iets3.core.expr.math.behavior)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -52,9 +53,6 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
-        <property id="1186403771423" name="style" index="Vbekb" />
-      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -912,8 +910,8 @@
     <property role="3GE5qa" value="rat" />
     <ref role="1XX52x" to="1qv1:5mz5Tt_jL63" resolve="ToDecimalTarget" />
     <node concept="3EZMnI" id="5mz5Tt_jL6A" role="2wV5jI">
-      <node concept="PMmxH" id="1VqmZU7jneu" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="1znK7yZdd1m" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
       </node>
       <node concept="3F0ifn" id="5mz5Tt_jL6N" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1033,8 +1031,8 @@
     <property role="3GE5qa" value="rat" />
     <ref role="1XX52x" to="1qv1:5mz5Tt_ip39" resolve="RatExpr" />
     <node concept="3EZMnI" id="5mz5Tt_ip3C" role="2wV5jI">
-      <node concept="3F0ifn" id="5mz5Tt_ip3_" role="3EZMnx">
-        <property role="3F0ifm" value="rat" />
+      <node concept="PMmxH" id="1znK7yZdcTh" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZhztN" resolve="ExpressionKeywordAlias" />
       </node>
       <node concept="3F0ifn" id="5mz5Tt_ip3L" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1061,11 +1059,8 @@
     <property role="3GE5qa" value="trigonometric" />
     <ref role="1XX52x" to="1qv1:M7eZQBbV1s" resolve="TrigonometricExpression" />
     <node concept="3EZMnI" id="M7eZQBbq72" role="2wV5jI">
-      <node concept="PMmxH" id="M7eZQBbq7o" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <node concept="Vb9p2" id="1EoaTAz6smr" role="3F10Kt">
-          <property role="Vbekb" value="g1_kEg4/ITALIC" />
-        </node>
+      <node concept="PMmxH" id="1znK7yZdd7q" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZhztN" resolve="ExpressionKeywordAlias" />
       </node>
       <node concept="3F0ifn" id="M7eZQBbq75" role="3EZMnx">
         <property role="3F0ifm" value="(" />

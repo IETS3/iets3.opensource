@@ -87,7 +87,7 @@
   </node>
   <node concept="1TIwiD" id="sflsE7peCK">
     <property role="TrG5h" value="StorePatientData" />
-    <property role="34LRSv" value="db-store" />
+    <property role="34LRSv" value="db-store*" />
     <property role="EcuMT" value="508719611259447856" />
     <property role="R4oN_" value="store the patient data" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
