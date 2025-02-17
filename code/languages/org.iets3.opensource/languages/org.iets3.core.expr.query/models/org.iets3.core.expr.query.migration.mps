@@ -114,7 +114,7 @@
   <node concept="Z5qvL" id="7f0hX5P0zfp">
     <property role="Z5qvQ" value="0" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_0" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `QuerySource` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="7f0hX5P0zf$" role="Z5rET">
       <node concept="2pBcaW" id="7f0hX5P0zfy" role="Z5P1v">
         <property role="2pBcoG" value="6749162445851726097" />

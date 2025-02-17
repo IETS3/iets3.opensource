@@ -18,6 +18,7 @@
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="ciba" ref="r:11b7cdb2-cc58-456e-bb9a-ce45b78edd2f(jetbrains.mps.ide.httpsupport.runtime.base)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
@@ -4043,8 +4044,8 @@
             </node>
           </node>
           <node concept="2YIFZM" id="5_s5$c25L2J" role="37wK5m">
-            <ref role="37wK5l" to="oq0c:1_yOWEXenNM" resolve="getURL" />
-            <ref role="1Pybhc" to="oq0c:3OrGkZCn9ZQ" resolve="URLUtil" />
+            <ref role="37wK5l" to="ciba:1_yOWEXenNM" resolve="getURL" />
+            <ref role="1Pybhc" to="ciba:3OrGkZCn9ZQ" resolve="HttpSupportUtil" />
             <node concept="37vLTw" id="5_s5$c25L4s" role="37wK5m">
               <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
             </node>
