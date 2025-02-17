@@ -14,6 +14,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="ciba" ref="r:11b7cdb2-cc58-456e-bb9a-ce45b78edd2f(jetbrains.mps.ide.httpsupport.runtime.base)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" implicit="true" />
   </imports>
@@ -834,8 +835,8 @@
               <property role="Xl_RC" value="&lt;node not in model&gt;" />
             </node>
             <node concept="2YIFZM" id="5_s5$c25L2J" role="3K4E3e">
-              <ref role="37wK5l" to="oq0c:1_yOWEXenNM" resolve="getURL" />
-              <ref role="1Pybhc" to="oq0c:3OrGkZCn9ZQ" resolve="URLUtil" />
+              <ref role="37wK5l" to="ciba:1_yOWEXenNM" resolve="getURL" />
+              <ref role="1Pybhc" to="ciba:3OrGkZCn9ZQ" resolve="HttpSupportUtil" />
               <node concept="37vLTw" id="5_s5$c25L4s" role="37wK5m">
                 <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
               </node>
@@ -4891,8 +4892,8 @@
               <property role="Xl_RC" value="&lt;node not in model&gt;" />
             </node>
             <node concept="2YIFZM" id="5_s5$c25KtI" role="3K4E3e">
-              <ref role="37wK5l" to="oq0c:1_yOWEXenNM" resolve="getURL" />
-              <ref role="1Pybhc" to="oq0c:3OrGkZCn9ZQ" resolve="URLUtil" />
+              <ref role="37wK5l" to="ciba:1_yOWEXenNM" resolve="getURL" />
+              <ref role="1Pybhc" to="ciba:3OrGkZCn9ZQ" resolve="HttpSupportUtil" />
               <node concept="37vLTw" id="5_s5$c25KvO" role="37wK5m">
                 <ref role="3cqZAo" node="31BLocd1sMa" resolve="nodeWithError" />
               </node>

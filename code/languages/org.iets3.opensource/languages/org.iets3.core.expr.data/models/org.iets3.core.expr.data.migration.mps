@@ -429,7 +429,7 @@
   <node concept="Z5qvL" id="3eH6BL3k5uV">
     <property role="Z5qvQ" value="1" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_1" />
-    <property role="1AQGQl" value="Move link `type` to concept `ITyped`" />
+    <property role="1AQGQl" value="Move link `type` from concept `DataColDef` to concept `ITyped`" />
     <node concept="Z4OXk" id="3eH6BL3k5v6" role="Z5rET">
       <node concept="2pBcaW" id="3eH6BL3k5v4" role="Z5P1v">
         <property role="2pBcoG" value="231307155597474194" />
@@ -509,7 +509,7 @@
   <node concept="Z5qvL" id="7xcRpYKGZMm">
     <property role="Z5qvQ" value="2" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_2" />
-    <property role="1AQGQl" value="Move link `expr` to concept `IContainExpressionParam`" />
+    <property role="1AQGQl" value="Move link `expr` from concept `DataTableLookUp` to concept `IContainExpressionParam`" />
     <node concept="Z4OXk" id="7xcRpYKGZMx" role="Z5rET">
       <node concept="2pBcaW" id="7xcRpYKGZMv" role="Z5P1v">
         <property role="2pBcoG" value="512624657163648903" />
