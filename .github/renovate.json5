@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "packageRules": [
+    // Rules are evaluated top to bottom, all matching rules are applied
+    {
+      // Disable major and minor updates of MPS libraries and MPS (e.g. 2024.1 -> 2024.3)
+      "matchPackageNames": [
+        "com.jetbrains:mps",
+        "org.mpsqa:all-in-one",
+        "com.mbeddr:platform"
+      ],
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
+    },
+
+    // Disallow mps-gradle-plugin v2
+    {
+      "matchPackageNames": ["de.itemis.mps:mps-gradle-plugin"],
+      "allowedVersions": "!/^2\\./"
+    }
+  ],
+}
