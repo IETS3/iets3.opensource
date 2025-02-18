@@ -60,7 +60,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
@@ -76,7 +76,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -276,16 +276,6 @@
               <ref role="3bR37D" to="ffeo:7pdFgzxlDoA" resolve="jetbrains.mps.build" />
             </node>
           </node>
-          <node concept="1SiIV0" id="3ZBI8Aw7aet" role="3bR37C">
-            <node concept="3bR9La" id="3ZBI8Aw7aeu" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="3ZBI8Aw7aev" role="3bR37C">
-            <node concept="3bR9La" id="3ZBI8Aw7aew" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:7pdFgzxlDoI" resolve="jetbrains.mps.build.workflow" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="6D$R_XpdMC3" role="3bR37C">
             <node concept="3bR9La" id="6D$R_XpdMC4" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:7pdFgzxlDoP" resolve="jetbrains.mps.build.mps" />
@@ -405,25 +395,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6Fs_Z9Iz5RP" role="3bR37C">
-          <node concept="1BurEX" id="6Fs_Z9Iz5RQ" role="1SiIV1">
-            <node concept="398BVA" id="6Fs_Z9Iz5RC" role="1BurEY">
-              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="6Fs_Z9Iz5RD" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6Fs_Z9Iz5RE" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.opensource.build.gentests.rt" />
-                  <node concept="2Ry0Ak" id="6Fs_Z9Iz5RF" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6Fs_Z9Iz5RG" role="2Ry0An">
-                      <property role="2Ry0Am" value="takari-cpsuite-1.2.7.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1BupzO" id="1RMC8GHIDdb" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -457,6 +428,25 @@
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="7759dYaYs1d" role="2Ry0An">
                   <property role="2Ry0Am" value="org.iets3.opensource.build.gentests.rt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67tIbohRuGz" role="3bR37C">
+          <node concept="1BurEX" id="67tIbohRuG$" role="1SiIV1">
+            <node concept="398BVA" id="67tIbohRuGm" role="1BurEY">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="67tIbohRuGn" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67tIbohRuGo" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.opensource.build.gentests.rt" />
+                  <node concept="2Ry0Ak" id="67tIbohRuGp" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="67tIbohRuGq" role="2Ry0An">
+                      <property role="2Ry0Am" value="takari-cpsuite-1.2.7.jar" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

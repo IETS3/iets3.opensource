@@ -62,6 +62,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -70,7 +71,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -319,12 +320,17 @@
     <node concept="PrWs8" id="4qVjx3kr33_" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="7xcRpYLzLOY" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
+    </node>
     <node concept="1TJgyj" id="4rZeNQ6NgXF" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <property role="IQ2ns" value="5115872837156802411" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYLzLQR" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6NgXE">
@@ -357,16 +363,21 @@
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4rZeNQ6OJ5M" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <property role="IQ2ns" value="5115872837157187954" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYM3vxd" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="4OgAv3N4pT7" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
     <node concept="PrWs8" id="4qVjx3kqWlm" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="PrWs8" id="7xcRpYM3vx1" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
   <node concept="1TIwiD" id="1k3knzd4P65">
@@ -611,10 +622,12 @@
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="2rOWEwsF5w1" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <property role="IQ2ns" value="2807135271608145921" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYLmA0U" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="5ye9uPrilKY" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
@@ -627,6 +640,9 @@
     </node>
     <node concept="PrWs8" id="37t_e$LIDTN" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
+    <node concept="PrWs8" id="7xcRpYLmA0I" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WsvduW">
@@ -703,7 +719,7 @@
   <node concept="1TIwiD" id="1Ez$z58L7JG">
     <property role="3GE5qa" value="error.types" />
     <property role="TrG5h" value="SpecificErrorType" />
-    <property role="34LRSv" value="error[" />
+    <property role="34LRSv" value="error" />
     <property role="EcuMT" value="1919538606561852396" />
     <property role="R4oN_" value="a particular error literal" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
@@ -765,10 +781,12 @@
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5BNZGjBvVh4" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <property role="IQ2ns" value="6481804410367226948" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYLa09E" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="5BNZGjBxo8e" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -799,6 +817,9 @@
     <node concept="PrWs8" id="6GySMNjTi4j" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="7xcRpYLa09u" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
+    </node>
     <node concept="1TJgyi" id="5aHkq2w0Y$e" role="1TKVEl">
       <property role="TrG5h" value="complete" />
       <property role="IQ2nx" value="5957507632402262286" />
@@ -814,10 +835,15 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5BNZGjBxo70" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <property role="IQ2ns" value="6481804410367607232" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYLfHSk" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="7xcRpYLfHS8" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1EKHW">
@@ -858,12 +884,17 @@
     <node concept="PrWs8" id="6GySMNjToJa" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="7xcRpYL4mdL" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
+    </node>
     <node concept="1TJgyj" id="69zaTr1V8fI" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <property role="IQ2ns" value="7089558164909884398" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYL4mdX" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="69zaTr1Z623" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -910,12 +941,17 @@
     <node concept="PrWs8" id="61iSwn4O5AZ" role="PzmwI">
       <ref role="PrY4T" node="5GL30CqMVEV" resolve="ISSConstrainedValue" />
     </node>
+    <node concept="PrWs8" id="7xcRpYLJU2F" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
+    </node>
     <node concept="1TJgyj" id="252QIDzztQk" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <property role="IQ2ns" value="2396718651941969300" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYLJU2S" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="2Qbt$1tNGy9" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1008,12 +1044,17 @@
     <node concept="PrWs8" id="4v5hZndi2Ow" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="7xcRpYKPyDM" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
+    </node>
     <node concept="1TJgyj" id="KaZMgy4Ilu" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <property role="IQ2ns" value="867786408877811038" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYKPyDY" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="5F8uib8hsjE" role="1TKVEi">
       <property role="IQ2ns" value="6541611649051509994" />
@@ -1307,12 +1348,17 @@
     <node concept="PrWs8" id="4qVjx3kqEWM" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="7xcRpYLEjUr" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
+    </node>
     <node concept="1TJgyj" id="78hTg1zmOGc" role="1TKVEi">
       <property role="IQ2ns" value="8219602584757553932" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYLEjUB" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="78hTg1zmOGe" role="1TKVEi">
       <property role="IQ2ns" value="8219602584757553934" />
@@ -1636,12 +1682,17 @@
     <node concept="1TJgyj" id="4Pi6J8BVsYO" role="1TKVEi">
       <property role="IQ2ns" value="5571545316365029300" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYLszc8" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="4Pi6J8BVttJ" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="PrWs8" id="7xcRpYLszbW" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
   <node concept="1TIwiD" id="4Pi6J8BU_Ri">
@@ -1725,9 +1776,14 @@
     <node concept="1TJgyj" id="xG0f0hk3ZY" role="1TKVEi">
       <property role="IQ2ns" value="606861080870797310" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYLWD7N" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="7xcRpYLWD7B" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
   <node concept="1TIwiD" id="79jc6Yz3CVd">
@@ -1815,9 +1871,11 @@
     <node concept="1TJgyj" id="5a_u3OzTCw6" role="1TKVEi">
       <property role="IQ2ns" value="5955298286257997830" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYLQhTG" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="5a_u3OzTCw9" role="1TKVEi">
       <property role="IQ2ns" value="5955298286257997833" />
@@ -1831,6 +1889,9 @@
     <node concept="PrWs8" id="3eH6BL3k262" role="PzmwI">
       <ref role="PrY4T" node="68xoVn7qAL8" resolve="ITyped" />
     </node>
+    <node concept="PrWs8" id="7xcRpYLQhTw" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5bEkIpehgUq">
     <property role="EcuMT" value="5974679004769488538" />
@@ -1842,9 +1903,14 @@
     <node concept="1TJgyj" id="5bEkIpehgUx" role="1TKVEi">
       <property role="IQ2ns" value="5974679004769488545" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYKYTl6" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="7xcRpYKYTkU" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
   <node concept="PlHQZ" id="7aRvJQE8BE8">
@@ -1969,8 +2035,11 @@
       <property role="IQ2ns" value="5299123466398246931" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="text" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <ref role="20ksaX" node="3G_qVqIw4zp" resolve="expr" />
+    </node>
+    <node concept="PrWs8" id="7xcRpYLlwRi" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
   <node concept="PlHQZ" id="_kNv2PXITO">
@@ -2113,9 +2182,14 @@
     <node concept="1TJgyj" id="7khFtBHnQPX" role="1TKVEi">
       <property role="IQ2ns" value="8435714728543612285" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="expr_old" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="7xcRpYKUWzN" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="7xcRpYKUWzB" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
   <node concept="PlHQZ" id="7KDVkAEm18o">
@@ -2273,21 +2347,20 @@
       <property role="IQ2ns" value="2403760773179493048" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="times" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <ref role="20ksaX" node="3G_qVqIw4zp" resolve="expr" />
     </node>
     <node concept="PrWs8" id="25rRV02oy5O" role="PzmwI">
       <ref role="PrY4T" node="25rRV02oe$f" resolve="ITupleOp" />
+    </node>
+    <node concept="PrWs8" id="7xcRpYLyv0_" role="PzmwI">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
   <node concept="PlHQZ" id="2KEzU_jNj4j">
     <property role="EcuMT" value="3182514044108878099" />
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="ISupportHexValues" />
-  </node>
-  <node concept="PlHQZ" id="3eH6BL2TJIw">
-    <property role="EcuMT" value="3723661587905969056" />
-    <property role="TrG5h" value="IAssignable" />
   </node>
   <node concept="1TIwiD" id="5Ys_ngSnA9h">
     <property role="EcuMT" value="6889545856364470865" />
@@ -2318,6 +2391,28 @@
       <node concept="trNpa" id="5Ys_ngSpFL7" role="EQaZv">
         <ref role="trN6q" node="2KEzU_jNj4j" resolve="ISupportHexValues" />
       </node>
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3eH6BL2TJIw">
+    <property role="EcuMT" value="3723661587905969056" />
+    <property role="TrG5h" value="IAssignable" />
+  </node>
+  <node concept="PlHQZ" id="3G_qVqIw4zo">
+    <property role="EcuMT" value="4261931054731905240" />
+    <property role="TrG5h" value="IContainExpressionParam" />
+    <node concept="1TJgyj" id="3G_qVqIw4zp" role="1TKVEi">
+      <property role="IQ2ns" value="4261931054731905241" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1azguFQNaDo">
+    <property role="EcuMT" value="1342989591305300568" />
+    <property role="TrG5h" value="IContainAssignableExpression" />
+    <node concept="PrWs8" id="1azguFQNaDp" role="PrDN$">
+      <ref role="PrY4T" node="3G_qVqIw4zo" resolve="IContainExpressionParam" />
     </node>
   </node>
 </model>
