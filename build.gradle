@@ -21,17 +21,9 @@ plugins {
     id "org.cyclonedx.bom" version "1.8.2"
 }
 
-ext.dependencyRepositories = [
-    'https://artifacts.itemis.cloud/repository/maven-mps/'
-]
-
 repositories {
-    // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
-    // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
-    for (repoUrl in project.dependencyRepositories) {
-        maven {
-            url repoUrl
-        }
+    maven {
+        url 'https://artifacts.itemis.cloud/repository/maven-mps/'
     }
     mavenCentral()
 }
@@ -59,9 +51,7 @@ def minor = "1"
 // Dependency versions
 
 ext.mpsVersion = '2024.1.1'
-
-def mbeddrVersion = "2024.1+"
-def mpsQAVersion = "$major.$minor+"
+def mpsQAVersion = "2024.1.952.3aa34aa"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -69,11 +59,12 @@ def mpsQAVersion = "$major.$minor+"
 def mbeddrBranch = ""
 def currentBranch = ""
 
-
-if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
-    ext.mbeddrVersionSelector = "${mbeddrBranch.replace("/", "-")}.${mbeddrVersion}"
-} else {
-    ext.mbeddrVersionSelector = mbeddrVersion
+if (!project.hasProperty('mbeddrVersion')) {
+    if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
+        ext.mbeddrVersion = "${mbeddrBranch.replace("/", "-")}.${major}.${minor}.+"
+    } else {
+        ext.mbeddrVersion = "2024.1.25185.dffcb5d"
+    }
 }
 
 // Project group
@@ -95,17 +86,12 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
         } else {
             def isSnapshot = !(currentBranch.equals("master") || currentBranch.startsWith("datev-loon-staging-") || currentBranch.startsWith("datev-steuer-staging-"))
             version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber) + (isSnapshot ? "-SNAPSHOT" : "")
-        } 
+        }
         println "##teamcity[buildNumber '${version}']"
     } else {
         version = "$major.$minor-SNAPSHOT"
         println "Local build detected, version will be $version"
     }
-}
-
-if (project.hasProperty("mbeddrVersion")) {
-    logger.log(LogLevel.WARN, "mbeddr version externally overwritten to $ext.mbeddrVersion")
-    ext.mbeddrVersionSelector = ext.mbeddrVersion
 }
 
 ext.releaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
@@ -134,7 +120,7 @@ configurations {
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
-    languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
+    languageLibs "com.mbeddr:platform:$mbeddrVersion"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
     pcollections 'org.pcollections:pcollections:4.0.1'
     bigMath 'ch.obermuhlner:big-math:2.3.2'
@@ -243,7 +229,7 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
 task failOnTestError() {
     description 'evaluate junit result and fail on error'
     doLast {
-        
+
         def juniXml = file('TESTS-TestSuites.xml')
         if(juniXml.exists()){
             def junitResult = new XmlSlurper().parse(juniXml)
