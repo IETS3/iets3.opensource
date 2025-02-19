@@ -581,6 +581,9 @@
       <node concept="m$_yC" id="OJe_lRZz3b" role="m$_yJ">
         <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
       </node>
+      <node concept="m$_yC" id="22RcmJOM4FQ" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:hCVXosGNJH" />
+      </node>
       <node concept="m$_yC" id="4C8CrwW7i1C" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4iIKqJTZ5I8" resolve="de.q60.shadowmodels" />
       </node>
