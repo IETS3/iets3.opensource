@@ -1020,16 +1020,16 @@
       <property role="TrG5h" value="devkit.org.iets3.hardwarecomponents" />
       <node concept="3LEwk6" id="zRHsdSP_gO" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="org.iets3.hardwarecomponents" />
+        <property role="TrG5h" value="org.iets3.components.hardware.devkit" />
         <property role="3LESm3" value="81923f47-8fdd-4466-bb24-6346a8ef0a42" />
         <node concept="398BVA" id="zRHsdSP_um" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="zRHsdSP_wj" role="iGT6I">
             <property role="2Ry0Am" value="devkits" />
             <node concept="2Ry0Ak" id="zRHsdSP_yw" role="2Ry0An">
-              <property role="2Ry0Am" value="org.iets3.hardwarecomponents" />
-              <node concept="2Ry0Ak" id="6Ojs33FLy5c" role="2Ry0An">
-                <property role="2Ry0Am" value="org.iets3.hardwarecomponents.devkit" />
+              <property role="2Ry0Am" value="org.iets3.components.hardware.devkit" />
+              <node concept="2Ry0Ak" id="6oGL_waqbEp" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.components.hardware.devkit.devkit" />
               </node>
             </node>
           </node>
@@ -1037,8 +1037,8 @@
         <node concept="3LEDTy" id="zRHsdSP_AR" role="3LEDUa">
           <ref role="3LEDTV" node="2qK410x4551" resolve="org.iets3.components.hardware" />
         </node>
-        <node concept="3LEz8M" id="zRHsdSU88_" role="3LEz9a">
-          <ref role="3LEz8N" node="5wLtKNeSRQ_" resolve="org.iets3.components" />
+        <node concept="3LEz8M" id="4xIulZ2RYgt" role="3LEz9a">
+          <ref role="3LEz8N" node="5wLtKNeSRQ_" resolve="org.iets3.components.devkit" />
         </node>
       </node>
     </node>
@@ -1146,16 +1146,16 @@
       <property role="TrG5h" value="devkit.org.iets3.components" />
       <node concept="3LEwk6" id="5wLtKNeSRQ_" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="org.iets3.components" />
-        <property role="3LESm3" value="92281519-0dc3-4f52-9563-0a743a8fbf26" />
+        <property role="TrG5h" value="org.iets3.components.devkit" />
+        <property role="3LESm3" value="903db50e-99bf-4552-9b9f-0c8c5d7a9d09" />
         <node concept="398BVA" id="5wLtKNeTaL5" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="5wLtKNeTaLa" role="iGT6I">
             <property role="2Ry0Am" value="devkits" />
             <node concept="2Ry0Ak" id="5wLtKNeTaLb" role="2Ry0An">
-              <property role="2Ry0Am" value="org.iets3.components" />
-              <node concept="2Ry0Ak" id="6Ojs33FLy6Q" role="2Ry0An">
-                <property role="2Ry0Am" value="org.iets3.components.devkit" />
+              <property role="2Ry0Am" value="org.iets3.components.devkit" />
+              <node concept="2Ry0Ak" id="4xIulZ2RXPb" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.components.devkit.devkit" />
               </node>
             </node>
           </node>
@@ -1181,28 +1181,28 @@
       </node>
       <node concept="3LEwk6" id="5wLtKNeSRR3" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="org.iets3.functionalcomponenets" />
+        <property role="TrG5h" value="org.iets3.components.functional.devkit" />
         <property role="3LESm3" value="14b54709-6e21-4520-8f63-0e7cc8084a7d" />
         <node concept="398BVA" id="5wLtKNeTaMQ" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="5wLtKNeTaMV" role="iGT6I">
             <property role="2Ry0Am" value="devkits" />
             <node concept="2Ry0Ak" id="5wLtKNeTaMW" role="2Ry0An">
-              <property role="2Ry0Am" value="org.iets3.functionalcomponenets" />
-              <node concept="2Ry0Ak" id="6Ojs33FLy8w" role="2Ry0An">
-                <property role="2Ry0Am" value="org.iets3.functionalcomponenets.devkit" />
+              <property role="2Ry0Am" value="org.iets3.components.functional.devkit" />
+              <node concept="2Ry0Ak" id="6oGL_waqbej" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.components.functional.devkit.devkit" />
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3LEz8M" id="5wLtKNeT3u5" role="3LEz9a">
-          <ref role="3LEz8N" node="5wLtKNeSRQ_" resolve="org.iets3.components" />
         </node>
         <node concept="3LEDTy" id="5wLtKNeT3u6" role="3LEDUa">
           <ref role="3LEDTV" node="4dUR79id490" resolve="org.iets3.components.functional" />
         </node>
         <node concept="3LEDTy" id="5wLtKNeT3u7" role="3LEDUa">
           <ref role="3LEDTV" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
+        </node>
+        <node concept="3LEz8M" id="4xIulZ2RYgD" role="3LEz9a">
+          <ref role="3LEz8N" node="5wLtKNeSRQ_" resolve="org.iets3.components.devkit" />
         </node>
       </node>
     </node>
