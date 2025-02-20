@@ -7,6 +7,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## Feburary 2025
 
+### Added
+
+- a new approach to run interpreter test case from command line (and inside MPS) directly without invoking JUnit code generation
+
 ### Fixed
 
 - Strings are not comparable with strings with constraints.
