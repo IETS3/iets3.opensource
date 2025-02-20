@@ -13572,8 +13572,8 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="10M0yZ" id="2gng9$EB4wD" role="2Oq$k0">
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                  <node concept="10M0yZ" id="3sgpXex4ZbI" role="2Oq$k0">
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                   </node>
                 </node>
