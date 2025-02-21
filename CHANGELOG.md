@@ -7,6 +7,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## Feburary 2025
 
+### Added
+
+- Move languages org.iets3.protocol.transport, org.iets3.components.functional, org.iets3.components.hardware, org.iets3.components.toplevel.adapter, org.iets3.core.mapping, and org.iets3.safety.attributes from iets3.core to iets3.os
+
 ### Fixed
 
 - Strings are not comparable with strings with constraints.
