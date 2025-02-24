@@ -15427,15 +15427,24 @@
       <ref role="30Vec$" node="5jJR9m7XASm" resolve="org.iets3.opensource.interpreterExecutor" />
       <node concept="NbPM2" id="5iD3V$BSj$B" role="1psgkv">
         <node concept="3Mxwew" id="yHjyt5yb1m" role="3MwsjC">
-          <property role="3MwjfP" value="-Xss2048k -Xmx4096m -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5072" />
+          <property role="3MwjfP" value="-Xss2048k -Xmx4096m" />
+        </node>
+      </node>
+      <node concept="398BVA" id="392I_bd5EXG" role="1YJTkC">
+        <ref role="398BVh" node="7OQaAJRI74_" resolve="iets3.lang.opensource" />
+        <node concept="2Ry0Ak" id="392I_bd5EXH" role="iGT6I">
+          <property role="2Ry0Am" value="tests" />
+          <node concept="2Ry0Ak" id="392I_bd5EXI" role="2Ry0An">
+            <property role="2Ry0Am" value="test.in.expr.os" />
+          </node>
         </node>
       </node>
       <node concept="398BVA" id="7Lttyc2W9kv" role="1YJTkC">
         <ref role="398BVh" node="7OQaAJRI74_" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="7Lttyc2W9rm" role="iGT6I">
           <property role="2Ry0Am" value="tests" />
-          <node concept="2Ry0Ak" id="7Lttyc2W9yd" role="2Ry0An">
-            <property role="2Ry0Am" value="test.in.expr.os" />
+          <node concept="2Ry0Ak" id="392I_bda7Q0" role="2Ry0An">
+            <property role="2Ry0Am" value="test.ts.expr.os" />
           </node>
         </node>
       </node>
