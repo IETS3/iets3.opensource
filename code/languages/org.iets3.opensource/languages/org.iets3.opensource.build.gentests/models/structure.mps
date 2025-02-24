@@ -102,7 +102,7 @@
     <property role="EcuMT" value="6030121483520591885" />
     <property role="TrG5h" value="BuildMacroRef" />
     <property role="34LRSv" value="output directory" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5eJiSDhG$we" role="1TKVEi">
       <property role="IQ2ns" value="6030121483520591886" />
       <property role="20kJfa" value="ref" />

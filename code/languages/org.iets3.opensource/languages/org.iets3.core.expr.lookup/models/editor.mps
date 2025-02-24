@@ -325,7 +325,7 @@
     <ref role="1XX52x" to="8qwc:55lPkJGFLaQ" resolve="LookupTable" />
     <node concept="3EZMnI" id="55lPkJGG4A_" role="2wV5jI">
       <node concept="PMmxH" id="1znK7yZdc$o" role="3EZMnx">
-        <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="TopLevelExprContentAlias" />
+        <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="ITopLevelExprContentAlias" />
       </node>
       <node concept="3F0A7n" id="55lPkJGG5aw" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

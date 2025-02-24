@@ -208,7 +208,7 @@
                   <ref role="3cqZAo" node="4iotRn3sMrM" resolve="platform" />
                 </node>
                 <node concept="37vLTw" id="62vWlLjOD43" role="37wK5m">
-                  <ref role="3cqZAo" node="62vWlLjOD40" resolve="line" />
+                  <ref role="3cqZAo" node="62vWlLjOD40" resolve="config" />
                 </node>
               </node>
             </node>
@@ -240,12 +240,12 @@
                   <ref role="3cqZAo" node="5oK6FmqnYwv" resolve="executor" />
                 </node>
                 <node concept="liA8E" id="5oK6FmqnZLe" role="2OqNvi">
-                  <ref role="37wK5l" to="707k:5oK6FmqmcH8" resolve="scanForModelsAndExecuteTestsByInterpreter" />
+                  <ref role="37wK5l" to="707k:5oK6FmqmcH8" resolve="executeTestsByInterpreter" />
                   <node concept="37vLTw" id="24QgRt7nmIS" role="37wK5m">
                     <ref role="3cqZAo" node="24QgRt7nmAW" resolve="testableNodes" />
                   </node>
                   <node concept="37vLTw" id="62vWlLjOD44" role="37wK5m">
-                    <ref role="3cqZAo" node="62vWlLjOD40" resolve="line" />
+                    <ref role="3cqZAo" node="62vWlLjOD40" resolve="config" />
                   </node>
                 </node>
               </node>

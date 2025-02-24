@@ -3379,7 +3379,7 @@
                                 <node concept="2OqwBi" id="yHjyt5xH6o" role="33vP2m">
                                   <node concept="2ShNRf" id="yHjyt5xH6p" role="2Oq$k0">
                                     <node concept="1pGfFk" id="yHjyt5xH6q" role="2ShVmc">
-                                      <ref role="37wK5l" to="o3n2:5DY7s5F2Pa1" resolve="MacroContext" />
+                                      <ref role="37wK5l" to="o3n2:5DY7s5F2Pa1" resolve="MacroHelper.MacroContext" />
                                       <node concept="37vLTw" id="yHjyt5xH6r" role="37wK5m">
                                         <ref role="3cqZAo" node="yHjyt5xH6e" resolve="project" />
                                       </node>
@@ -3845,7 +3845,7 @@
                             <node concept="2OqwBi" id="7QNcMbqvuUc" role="2Oq$k0">
                               <node concept="2ShNRf" id="7QNcMbqvsxR" role="2Oq$k0">
                                 <node concept="1pGfFk" id="6tUicD6zinZ" role="2ShVmc">
-                                  <ref role="37wK5l" to="tken:1BCLQMpCXII" resolve="ModuleDependenciesOptions" />
+                                  <ref role="37wK5l" to="tken:1BCLQMpCXII" resolve="MPSModulesClosure.ModuleDependenciesOptions" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="7QNcMbqvuYc" role="2OqNvi">
@@ -3901,7 +3901,7 @@
     <node concept="3aamgX" id="7a5Ko4x$qFF" role="3aUrZf">
       <ref role="30HIoZ" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
       <node concept="j$656" id="7a5Ko4x$u8M" role="1lVwrX">
-        <ref role="v9R2y" node="7a5Ko4x$u8K" resolve="case_CustomRunnerAspect" />
+        <ref role="v9R2y" node="7a5Ko4x$u8K" resolve="reduce_CustomRunnerAspect" />
       </node>
     </node>
   </node>

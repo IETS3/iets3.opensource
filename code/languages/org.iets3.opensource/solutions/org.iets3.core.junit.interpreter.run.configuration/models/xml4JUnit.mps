@@ -7410,7 +7410,7 @@
       </node>
       <node concept="3clFbS" id="6mKf5uiI6JB" role="3clF47" />
       <node concept="2AHcQZ" id="6mKf5uiI6JC" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
@@ -7624,14 +7624,14 @@
       <property role="TrG5h" value="currentSuite" />
       <node concept="3Tm6S6" id="5ZZgOa8N$xN" role="1B3o_S" />
       <node concept="3uibUv" id="5ZZgOa8N$Jv" role="1tU5fm">
-        <ref role="3uigEE" node="3AK4C1hvvZu" resolve="MySuite" />
+        <ref role="3uigEE" node="3AK4C1hvvZu" resolve="InterpreterTestReporter.MySuite" />
       </node>
     </node>
     <node concept="312cEg" id="5ZZgOa8N_I0" role="jymVt">
       <property role="TrG5h" value="currentCase" />
       <node concept="3Tm6S6" id="5ZZgOa8N_l_" role="1B3o_S" />
       <node concept="3uibUv" id="5ZZgOa8N_zh" role="1tU5fm">
-        <ref role="3uigEE" node="3AK4C1hvJ01" resolve="MyCase" />
+        <ref role="3uigEE" node="3AK4C1hvJ01" resolve="InterpreterTestReporter.MyCase" />
       </node>
     </node>
     <node concept="2tJIrI" id="5ZZgOa8N_VH" role="jymVt" />
@@ -7665,7 +7665,7 @@
       <node concept="3cqZAl" id="5ZZgOa8NuT_" role="3clF45" />
       <node concept="3clFbS" id="5ZZgOa8NuTB" role="3clF47" />
       <node concept="2AHcQZ" id="5ZZgOa8NuTC" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="5ZZgOa8NuTD" role="jymVt">
@@ -7685,7 +7685,7 @@
           <node concept="37vLTI" id="5ZZgOa8NCOh" role="3clFbG">
             <node concept="2ShNRf" id="5ZZgOa8ND5k" role="37vLTx">
               <node concept="1pGfFk" id="3AK4C1hw4CK" role="2ShVmc">
-                <ref role="37wK5l" node="3AK4C1hvX_a" resolve="Suite" />
+                <ref role="37wK5l" node="3AK4C1hvX_a" resolve="InterpreterTestReporter.MySuite" />
               </node>
             </node>
             <node concept="37vLTw" id="5ZZgOa8NCst" role="37vLTJ">
@@ -7833,7 +7833,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="5ZZgOa8NuTM" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="5ZZgOa8NuTN" role="jymVt">
@@ -7932,7 +7932,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="5ZZgOa8NuTW" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="5ZZgOa8NuTX" role="jymVt">
@@ -7954,7 +7954,7 @@
           <node concept="37vLTI" id="5ZZgOa8NOIv" role="3clFbG">
             <node concept="2ShNRf" id="5ZZgOa8NP3H" role="37vLTx">
               <node concept="1pGfFk" id="3AK4C1hwFhf" role="2ShVmc">
-                <ref role="37wK5l" node="3AK4C1hvUKJ" resolve="MyCase" />
+                <ref role="37wK5l" node="3AK4C1hvUKJ" resolve="InterpreterTestReporter.MyCase" />
                 <node concept="37vLTw" id="3AK4C1hwHGR" role="37wK5m">
                   <ref role="3cqZAo" node="5ZZgOa8N$Ue" resolve="currentSuite" />
                 </node>
@@ -8030,7 +8030,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="5ZZgOa8NuU6" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="5ZZgOa8NuU7" role="jymVt">
@@ -8060,7 +8060,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="5ZZgOa8NuUg" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="5ZZgOa8NuUh" role="jymVt">
@@ -8145,7 +8145,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="5ZZgOa8NuUu" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="5ZZgOa8NuUv" role="jymVt">
@@ -8169,7 +8169,7 @@
       </node>
       <node concept="3clFbS" id="5ZZgOa8NuUD" role="3clF47" />
       <node concept="2AHcQZ" id="5ZZgOa8NuUE" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="5ZZgOa8NuUF" role="jymVt">
@@ -8193,7 +8193,7 @@
       </node>
       <node concept="3clFbS" id="5ZZgOa8NuUP" role="3clF47" />
       <node concept="2AHcQZ" id="5ZZgOa8NuUQ" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="5ZZgOa8NuUR" role="jymVt">
@@ -8208,7 +8208,7 @@
       </node>
       <node concept="3clFbS" id="5ZZgOa8NuUX" role="3clF47" />
       <node concept="2AHcQZ" id="5ZZgOa8NuUY" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="5ZZgOa8NuUZ" role="jymVt">
@@ -8223,7 +8223,7 @@
       </node>
       <node concept="3clFbS" id="5ZZgOa8NuV5" role="3clF47" />
       <node concept="2AHcQZ" id="5ZZgOa8NuV6" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="5ZZgOa8NuV7" role="jymVt">
@@ -8377,7 +8377,7 @@
                       <node concept="1pGfFk" id="6mKf5uiDutY" role="2ShVmc">
                         <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                         <node concept="37vLTw" id="6mKf5uiGwLZ" role="37wK5m">
-                          <ref role="3cqZAo" node="6mKf5uiGwLL" resolve="string" />
+                          <ref role="3cqZAo" node="6mKf5uiGwLL" resolve="filename" />
                         </node>
                       </node>
                     </node>
@@ -8521,7 +8521,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="5ZZgOa8NuVe" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="2doG_VG7M8M" role="jymVt">
@@ -8942,7 +8942,7 @@
       <node concept="312cEg" id="3AK4C1hvTQG" role="jymVt">
         <property role="TrG5h" value="parent" />
         <node concept="3uibUv" id="3AK4C1hvTrF" role="1tU5fm">
-          <ref role="3uigEE" node="3AK4C1hvvZu" resolve="Suite" />
+          <ref role="3uigEE" node="3AK4C1hvvZu" resolve="InterpreterTestReporter.MySuite" />
         </node>
       </node>
       <node concept="312cEg" id="3AK4C1hySxj" role="jymVt">
@@ -8990,7 +8990,7 @@
         <node concept="37vLTG" id="3AK4C1hvVdU" role="3clF46">
           <property role="TrG5h" value="parent" />
           <node concept="3uibUv" id="3AK4C1hvVdT" role="1tU5fm">
-            <ref role="3uigEE" node="3AK4C1hvvZu" resolve="Suite" />
+            <ref role="3uigEE" node="3AK4C1hvvZu" resolve="InterpreterTestReporter.MySuite" />
           </node>
         </node>
       </node>
@@ -9179,7 +9179,7 @@
     </node>
     <node concept="3Tm1VV" id="5oK6Fmqm$Nu" role="1B3o_S" />
     <node concept="3uibUv" id="62vWlLjj9TO" role="EKbjA">
-      <ref role="3uigEE" node="62vWlLjj9H5" />
+      <ref role="3uigEE" node="62vWlLjj9H5" resolve="ICustomRunnerConfig" />
     </node>
     <node concept="3clFb_" id="62vWlLjtmHp" role="jymVt">
       <property role="TrG5h" value="getListener" />
@@ -9195,7 +9195,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="62vWlLjtmHu" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="62vWlLjtmHx" role="jymVt">
@@ -9212,7 +9212,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="62vWlLjtmHA" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="62vWlLjJ9JQ" role="jymVt">
@@ -9225,7 +9225,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="62vWlLjJ9JV" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="62vWlLjOElz" role="jymVt">
@@ -9258,7 +9258,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="62vWlLjOElG" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="62vWlLjOJPG" role="jymVt">
@@ -9282,7 +9282,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="62vWlLjOJPN" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="62vWlLjOJPO" role="jymVt">
@@ -9300,7 +9300,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="62vWlLjOJPT" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
@@ -9379,7 +9379,7 @@
       <property role="TrG5h" value="config" />
       <node concept="3Tm6S6" id="5oK6FmqmTSo" role="1B3o_S" />
       <node concept="3uibUv" id="5oK6FmqmUHS" role="1tU5fm">
-        <ref role="3uigEE" node="5oK6Fmqm$Nt" resolve="TestExecutorConfig" />
+        <ref role="3uigEE" node="5oK6Fmqm$Nt" resolve="TestExecutorConfigForCommandLine" />
       </node>
     </node>
     <node concept="312cEg" id="5oK6FmqngKE" role="jymVt">
@@ -9415,7 +9415,7 @@
       <node concept="37vLTG" id="5oK6Fmqnd$Q" role="3clF46">
         <property role="TrG5h" value="config" />
         <node concept="3uibUv" id="5oK6Fmqnd$R" role="1tU5fm">
-          <ref role="3uigEE" node="5oK6Fmqm$Nt" resolve="TestExecutorConfig" />
+          <ref role="3uigEE" node="5oK6Fmqm$Nt" resolve="TestExecutorConfigForCommandLine" />
         </node>
         <node concept="2AHcQZ" id="5oK6Fmqnd$S" role="2AJF6D">
           <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
@@ -10174,12 +10174,12 @@
         <node concept="3clFbF" id="62vWlLjI1GA" role="3cqZAp">
           <node concept="37vLTI" id="62vWlLjI2OV" role="3clFbG">
             <node concept="37vLTw" id="62vWlLjI2Y_" role="37vLTx">
-              <ref role="3cqZAo" node="62vWlLjI0KG" resolve="runState" />
+              <ref role="3cqZAo" node="62vWlLjI0KG" resolve="termiateRequestedFunction" />
             </node>
             <node concept="2OqwBi" id="62vWlLjI1PA" role="37vLTJ">
               <node concept="Xjq3P" id="62vWlLjI1G_" role="2Oq$k0" />
               <node concept="2OwXpG" id="62vWlLjI2d5" role="2OqNvi">
-                <ref role="2Oxat5" node="62vWlLjI1fJ" resolve="runState" />
+                <ref role="2Oxat5" node="62vWlLjI1fJ" resolve="terminateRequestedFunction" />
               </node>
             </node>
           </node>
@@ -10219,7 +10219,7 @@
     </node>
     <node concept="3Tm1VV" id="62vWlLjtsMl" role="1B3o_S" />
     <node concept="3uibUv" id="62vWlLjtsMm" role="EKbjA">
-      <ref role="3uigEE" node="62vWlLjj9H5" />
+      <ref role="3uigEE" node="62vWlLjj9H5" resolve="ICustomRunnerConfig" />
     </node>
     <node concept="3clFb_" id="62vWlLjtsMn" role="jymVt">
       <property role="TrG5h" value="getListener" />
@@ -10235,7 +10235,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="62vWlLjtsMt" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="62vWlLjtsMu" role="jymVt">
@@ -10252,7 +10252,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="62vWlLjtsM$" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="62vWlLjIc76" role="jymVt">
@@ -10269,7 +10269,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="62vWlLjIc7b" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="62vWlLjOIi4" role="jymVt">
@@ -10286,7 +10286,7 @@
       </node>
       <node concept="3clFbS" id="62vWlLjOIic" role="3clF47" />
       <node concept="2AHcQZ" id="62vWlLjOIid" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="62vWlLjOIie" role="jymVt">
@@ -10305,7 +10305,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="62vWlLjOIil" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="62vWlLjOIim" role="jymVt">
@@ -10314,7 +10314,7 @@
       <node concept="3cqZAl" id="62vWlLjOIip" role="3clF45" />
       <node concept="3clFbS" id="62vWlLjOIiq" role="3clF47" />
       <node concept="2AHcQZ" id="62vWlLjOIir" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>

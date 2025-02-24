@@ -15404,13 +15404,13 @@
         </node>
       </node>
       <node concept="m$_yC" id="5loVtKO0ksl" role="m$_yJ">
-        <ref role="m$_y1" node="5loVtKNYW0J" resolve="org.iets3.core.JUnitInterpreterTest" />
+        <ref role="m$_y1" node="5loVtKNYW0J" resolve="org.iets3.core.junit.interpreter.run.configuration" />
       </node>
       <node concept="m$_yC" id="5OevlZn_uSu" role="m$_yJ">
         <ref role="m$_y1" node="64GCIgM55Fn" resolve="org.iets3.build.os" />
       </node>
       <node concept="m$f5U" id="5loVtKO0kuX" role="m$_yh">
-        <ref role="m$f5T" node="5loVtKO0ksX" resolve="testExecutor" />
+        <ref role="m$f5T" node="5loVtKO0ksX" resolve="iets3.opensource.interpreterExecutor" />
       </node>
       <node concept="m$_yC" id="EtmSfDs6EV" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5CFKsRWRuFN" resolve="jetbrains.mps.debugger.api" />
@@ -15515,7 +15515,7 @@
     <node concept="55IIr" id="7OQaAJRI72Q" role="auvoZ" />
     <node concept="1l3spV" id="7OQaAJRI72R" role="1l3spN">
       <node concept="m$_wl" id="5loVtKO0X_7" role="39821P">
-        <ref role="m_rDy" node="5loVtKO0krH" resolve="testExecutor" />
+        <ref role="m_rDy" node="5loVtKO0krH" resolve="org.iets3.opensource.interpreterExecutor" />
         <node concept="pUk6x" id="5loVtKO0X_b" role="pUk7w" />
       </node>
     </node>
