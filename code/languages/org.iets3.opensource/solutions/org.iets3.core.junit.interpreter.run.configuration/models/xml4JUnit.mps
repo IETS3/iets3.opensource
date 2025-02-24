@@ -387,7 +387,7 @@
     <node concept="3UR2Jj" id="5ZZgOa8J6un" role="lGtFl">
       <node concept="TZ5HA" id="5ZZgOa8J6ux" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J6uy" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Java-Klasse für anonymous complex type." />
+          <property role="1dT_AB" value="&lt;p&gt;Java class für anonymous complex type." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J6uz" role="TZ5H$">
@@ -397,7 +397,7 @@
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J6u_" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J6uA" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist." />
+          <property role="1dT_AB" value="&lt;p&gt;The following schema fragment specifies the expected content contained in this class." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J6uB" role="TZ5H$">
@@ -2023,7 +2023,7 @@
     <node concept="3UR2Jj" id="5ZZgOa8J68B" role="lGtFl">
       <node concept="TZ5HA" id="5ZZgOa8J68K" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J68L" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Java-Klasse für anonymous complex type." />
+          <property role="1dT_AB" value="&lt;p&gt;Java class für anonymous complex type." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J68M" role="TZ5H$">
@@ -2033,7 +2033,7 @@
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J68O" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J68P" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist." />
+          <property role="1dT_AB" value="&lt;p&gt;The following schema fragment specifies the expected content contained in this class." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J68Q" role="TZ5H$">
@@ -2501,7 +2501,7 @@
     <node concept="3UR2Jj" id="5ZZgOa8J6bP" role="lGtFl">
       <node concept="TZ5HA" id="5ZZgOa8J6bY" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J6bZ" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Java-Klasse für anonymous complex type." />
+          <property role="1dT_AB" value="&lt;p&gt;Java class for anonymous complex type." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J6c0" role="TZ5H$">
@@ -2511,7 +2511,7 @@
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J6c2" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J6c3" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist." />
+          <property role="1dT_AB" value="&lt;p&gt;The following schema fragment specifies the expected content contained in this class" />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J6c4" role="TZ5H$">
@@ -2991,7 +2991,7 @@
     <node concept="3UR2Jj" id="5ZZgOa8J5WZ" role="lGtFl">
       <node concept="TZ5HA" id="5ZZgOa8J5Xa" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J5Xb" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Java-Klasse für anonymous complex type." />
+          <property role="1dT_AB" value="&lt;p&gt;Java class for anonymous complex type." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J5Xc" role="TZ5H$">
@@ -3001,7 +3001,7 @@
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J5Xe" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J5Xf" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist." />
+          <property role="1dT_AB" value="&lt;p&gt;The following schema fragment specifies the expected content contained in this class." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J5Xg" role="TZ5H$">
@@ -4541,7 +4541,7 @@
     <node concept="3UR2Jj" id="5ZZgOa8J6kc" role="lGtFl">
       <node concept="TZ5HA" id="5ZZgOa8J6kn" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J6ko" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Java-Klasse für anonymous complex type." />
+          <property role="1dT_AB" value="&lt;p&gt;Java class for anonymous complex type." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J6kp" role="TZ5H$">
@@ -4551,7 +4551,7 @@
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J6kr" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J6ks" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist." />
+          <property role="1dT_AB" value="&lt;p&gt;The following schema fragment specifies the expected content contained in this class." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J6kt" role="TZ5H$">
@@ -6581,7 +6581,7 @@
     <node concept="3UR2Jj" id="5ZZgOa8J63p" role="lGtFl">
       <node concept="TZ5HA" id="5ZZgOa8J63z" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J63$" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Java-Klasse für anonymous complex type." />
+          <property role="1dT_AB" value="&lt;p&gt;Java class für anonymous complex type." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J63_" role="TZ5H$">
@@ -6591,7 +6591,7 @@
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J63B" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J63C" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist." />
+          <property role="1dT_AB" value="&lt;p&gt;The following schema fragment specifies the expected content contained in this class." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J63D" role="TZ5H$">
@@ -6869,7 +6869,7 @@
     <node concept="3UR2Jj" id="5ZZgOa8J65M" role="lGtFl">
       <node concept="TZ5HA" id="5ZZgOa8J65U" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J65V" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Java-Klasse für anonymous complex type." />
+          <property role="1dT_AB" value="&lt;p&gt;Java class for anonymous complex type." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J65W" role="TZ5H$">
@@ -6879,7 +6879,7 @@
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J65Y" role="TZ5H$">
         <node concept="1dT_AC" id="5ZZgOa8J65Z" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist." />
+          <property role="1dT_AB" value="&lt;p&gt;The following schema fragment specifies the expected content contained in this class." />
         </node>
       </node>
       <node concept="TZ5HA" id="5ZZgOa8J660" role="TZ5H$">
