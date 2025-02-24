@@ -6,6 +6,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="4o98" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.platform(MPS.Core/)" />
@@ -92,6 +93,18 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+    </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
         <property id="2034914114981261751" name="severity" index="RRSoG" />
@@ -105,6 +118,9 @@
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -181,8 +197,8 @@
             </node>
             <node concept="liA8E" id="62vWlLjOUUM" role="2OqNvi">
               <ref role="37wK5l" to="707k:62vWlLjOElz" resolve="put" />
-              <node concept="10M0yZ" id="62vWlLjP5FH" role="37wK5m">
-                <ref role="3cqZAo" to="707k:62vWlLjP38L" resolve="keyCustomRunnerAspect" />
+              <node concept="10M0yZ" id="392I_bdse5T" role="37wK5m">
+                <ref role="3cqZAo" to="707k:62vWlLjP3sF" resolve="keyBuildMacroRef" />
                 <ref role="1PxDUh" to="707k:5oK6Fmqm$Nt" resolve="TestExecutorConfigForCommandLine" />
               </node>
               <node concept="2OqwBi" id="5oK6FmqoqBo" role="37wK5m">
@@ -272,6 +288,23 @@
     </node>
     <node concept="2tJIrI" id="wLSoj1nZ_O" role="jymVt" />
     <node concept="3Tm1VV" id="4u2ErA3hWZC" role="1B3o_S" />
+    <node concept="3UR2Jj" id="392I_bds4Vu" role="lGtFl">
+      <node concept="TZ5HA" id="392I_bds4Vv" role="TZ5H$">
+        <node concept="1dT_AC" id="392I_bds4Vw" role="1dT_Ay">
+          <property role="1dT_AB" value="This is an application entry point that can be used for interpreting tests." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="392I_bds5W1" role="TZ5H$">
+        <node concept="1dT_AC" id="392I_bds5W2" role="1dT_Ay">
+          <property role="1dT_AB" value="It is called directly by the mps-runner plugin used in a build script." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="392I_bdsaAX" role="TZ5H$">
+        <node concept="1dT_AC" id="392I_bdsaAY" role="1dT_Ay">
+          <property role="1dT_AB" value="In this special case, by the CustomRunnerAspect that is derived from that build aspect." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
