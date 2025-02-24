@@ -163,8 +163,8 @@
       </node>
     </node>
   </node>
-  <node concept="2XOHcx" id="1k3knzd6_JG">
-    <property role="2XOHcw" value="${iets3.github.core.home}/code/languages/org.iets3.core" />
+  <node concept="2XOHcx" id="4rZeNQ6M9GV">
+    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
 </model>
 
