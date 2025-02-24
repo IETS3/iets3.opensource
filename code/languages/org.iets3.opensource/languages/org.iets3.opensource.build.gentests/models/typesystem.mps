@@ -153,6 +153,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -757,19 +758,12 @@
             <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
           </node>
           <node concept="2OqwBi" id="3R4s7SZkc$Z" role="33vP2m">
-            <node concept="2OqwBi" id="3R4s7SZkc_0" role="2Oq$k0">
-              <node concept="2OqwBi" id="3R4s7SZkc_1" role="2Oq$k0">
-                <node concept="liA8E" id="3R4s7SZkc_2" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getContainingRoot()" resolve="getContainingRoot" />
+            <node concept="2JrnkZ" id="392I_bcW8wi" role="2Oq$k0">
+              <node concept="2OqwBi" id="3R4s7SZkc_1" role="2JrQYb">
+                <node concept="1YBJjd" id="3R4s7SZkc_4" role="2Oq$k0">
+                  <ref role="1YBMHb" node="3R4s7SZjW5M" resolve="customRunnerAspect" />
                 </node>
-                <node concept="2JrnkZ" id="3R4s7SZkc_3" role="2Oq$k0">
-                  <node concept="1YBJjd" id="3R4s7SZkc_4" role="2JrQYb">
-                    <ref role="1YBMHb" node="3R4s7SZjW5M" resolve="customRunnerAspect" />
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="3R4s7SZkc_5" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+                <node concept="I4A8Y" id="392I_bcW5U_" role="2OqNvi" />
               </node>
             </node>
             <node concept="liA8E" id="3R4s7SZkc_6" role="2OqNvi">
