@@ -1605,7 +1605,7 @@
     <ref role="1XX52x" to="w9y2:6LfBX8YlosD" resolve="ComponentInstance" />
     <node concept="3EZMnI" id="6LfBX8Ylotb" role="2wV5jI">
       <node concept="PMmxH" id="4MeRni2HsBy" role="3EZMnx">
-        <ref role="PMmxG" node="4MeRni2HpkZ" resolve="ISubstructureContentAlias" />
+        <ref role="PMmxG" node="4MeRni2HpkZ" resolve="ISubstructureContentKeywordAlias" />
       </node>
       <node concept="PMmxH" id="4A8SzOVg3Nv" role="3EZMnx">
         <ref role="PMmxG" to="ir4w:4A8SzOVasuR" resolve="summary" />
@@ -1715,7 +1715,7 @@
     <ref role="1XX52x" to="w9y2:7Zvsa54vnWq" resolve="AssemblyConnector" />
     <node concept="3EZMnI" id="7Zvsa54vwrw" role="2wV5jI">
       <node concept="PMmxH" id="4MeRni2HqtC" role="3EZMnx">
-        <ref role="PMmxG" node="4MeRni2HpkZ" resolve="ISubstructureContentAlias" />
+        <ref role="PMmxG" node="4MeRni2HpkZ" resolve="ISubstructureContentKeywordAlias" />
       </node>
       <node concept="PMmxH" id="4A8SzOVg3Cw" role="3EZMnx">
         <ref role="PMmxG" to="ir4w:4A8SzOVasuR" resolve="summary" />
@@ -9120,7 +9120,7 @@
     <node concept="3EZMnI" id="cJpacq1V_2" role="2wV5jI">
       <node concept="l2Vlx" id="cJpacq1V_3" role="2iSdaV" />
       <node concept="PMmxH" id="4MeRni2HBl7" role="3EZMnx">
-        <ref role="PMmxG" node="4MeRni2HpkZ" resolve="ISubstructureContentAlias" />
+        <ref role="PMmxG" node="4MeRni2HpkZ" resolve="ISubstructureContentKeywordAlias" />
       </node>
       <node concept="PMmxH" id="4A8SzOVg3TG" role="3EZMnx">
         <ref role="PMmxG" to="ir4w:4A8SzOVasuR" resolve="summary" />
@@ -9448,7 +9448,7 @@
     <node concept="3EZMnI" id="cJpacq2_pm" role="2wV5jI">
       <node concept="l2Vlx" id="cJpacq2_pn" role="2iSdaV" />
       <node concept="PMmxH" id="4MeRni2H$LI" role="3EZMnx">
-        <ref role="PMmxG" node="4MeRni2HpkZ" resolve="ISubstructureContentAlias" />
+        <ref role="PMmxG" node="4MeRni2HpkZ" resolve="ISubstructureContentKeywordAlias" />
       </node>
       <node concept="PMmxH" id="4A8SzOVg3Tg" role="3EZMnx">
         <ref role="PMmxG" to="ir4w:4A8SzOVasuR" resolve="summary" />
@@ -12627,7 +12627,7 @@
     <node concept="3EZMnI" id="1yY6_Uj8oYK" role="2wV5jI">
       <node concept="l2Vlx" id="1yY6_Uj8oYL" role="2iSdaV" />
       <node concept="PMmxH" id="4MeRni2Hy6w" role="3EZMnx">
-        <ref role="PMmxG" node="4MeRni2HpkZ" resolve="ISubstructureContentAlias" />
+        <ref role="PMmxG" node="4MeRni2HpkZ" resolve="ISubstructureContentKeywordAlias" />
       </node>
       <node concept="PMmxH" id="1yY6_Uj8oYN" role="3EZMnx">
         <ref role="PMmxG" to="ir4w:4A8SzOVasuR" resolve="summary" />
