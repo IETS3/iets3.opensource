@@ -225,6 +225,21 @@ task buildLanguages(type: BuildLanguages, dependsOn: prebuild) {
     script "$buildDir/scripts/build-languages.xml"
 }
 
+task execTestsByInterpreter(type: TestLanguages, dependsOn: buildLanguages) {
+    script "$buildDir/scripts/build-testInterpreter.xml"
+    targets "generate","build"
+    doLast {
+        ant.taskdef(name: 'junitInterpreterReport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.junitAnt.asPath)
+        ant.junitInterpreterReport(toDir: "$buildDir", tofile: "AggregatedInterpreterTestSuites.xml") {
+            fileset(dir: "$buildDir", includes: '**/InterpreterTestSuite*.xml', excludes: 'tmp/**')
+            report(format: 'frames', todir: "$buildDir/junitInterpreterReport" )
+        }
+        ant.echo("JUnit Interpreter report placed into $buildDir/junitInterpreterReport/index.html")
+    }
+}
+
 
 task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
     script "$buildDir/scripts/build-tests.xml"
