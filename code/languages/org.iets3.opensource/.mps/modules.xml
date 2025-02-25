@@ -93,6 +93,7 @@
       <modulePath path="$PROJECT_DIR$/languages/test.org.iets3.core.trace/test.org.iets3.core.trace.mpl" folder="trace" />
       <modulePath path="$PROJECT_DIR$/languages/test.ts.expr.os.nix/test.ts.expr.os.nix.mpl" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/languages/test.ts.expr.os.validNameConcept/test.ts.expr.os.validNameConcept.mpl" folder="expr.tests" />
+      <modulePath path="$PROJECT_DIR$/solutions/InterpreterTestExecutor/InterpreterTestExecutor.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.interpreter/org.iets3.components.core.interpreter.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.sandbox/org.iets3.components.core.sandbox.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.adt.interpreter/org.iets3.core.expr.adt.interpreter.msd" folder="expr.lang-advanced" />
@@ -151,6 +152,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build.gentests.rt/org.iets3.opensource.build.gentests.rt.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.interpreterExecutor/org.iets3.opensource.interpreterExecutor.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.linters/org.iets3.opensource.linters.msd" folder="linters" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.components.functional/test.components.functional.msd" folder="comp.tests" />
