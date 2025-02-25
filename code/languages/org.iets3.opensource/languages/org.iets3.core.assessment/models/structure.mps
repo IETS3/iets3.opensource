@@ -76,6 +76,7 @@
     <property role="EcuMT" value="6913547888673489335" />
     <property role="TrG5h" value="GenericTraceQuery" />
     <property role="R4oN_" value="a generic trace query" />
+    <property role="34LRSv" value="generic trace query" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="5ZLQMNq2hPS" role="1TKVEi">
       <property role="IQ2ns" value="6913547888673496440" />

@@ -114,7 +114,7 @@
   <node concept="Z5qvL" id="3eH6BL3k6jW">
     <property role="Z5qvQ" value="0" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_0" />
-    <property role="1AQGQl" value="Move link `type` to concept `ITyped`" />
+    <property role="1AQGQl" value="Move link `type` from concept `CellConstraint` to concept `ITyped`" />
     <node concept="Z4OXk" id="3eH6BL3k6k7" role="Z5rET">
       <node concept="2pBcaW" id="3eH6BL3k6k5" role="Z5P1v">
         <property role="2pBcoG" value="4139771920858263104" />

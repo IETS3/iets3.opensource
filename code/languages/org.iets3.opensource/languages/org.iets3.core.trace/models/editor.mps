@@ -17,6 +17,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -52,7 +53,6 @@
   <node concept="24kQdi" id="1PzuxQOTQDq">
     <ref role="1XX52x" to="ci3w:1PzuxQOT$Zy" resolve="TraceAttributeValue" />
     <node concept="3EZMnI" id="1PzuxQOVQNI" role="2wV5jI">
-      <node concept="2iRfu4" id="1PzuxQOVQNJ" role="2iSdaV" />
       <node concept="3F1sOY" id="1PzuxQOVQO8" role="3EZMnx">
         <property role="1$x2rV" value="&lt;trace kind&gt;" />
         <ref role="1NtTu8" to="ci3w:1PzuxQOT_10" resolve="traceKind" />
@@ -65,6 +65,7 @@
         <ref role="1NtTu8" to="ci3w:1PzuxQOT_1a" resolve="traceTarget" />
         <node concept="2iRfu4" id="1PzuxQOVQPi" role="2czzBx" />
       </node>
+      <node concept="l2Vlx" id="1ASK_HedI_4" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1PzuxQOVzGS">

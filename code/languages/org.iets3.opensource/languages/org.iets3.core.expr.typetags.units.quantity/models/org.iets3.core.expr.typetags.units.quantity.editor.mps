@@ -35,7 +35,6 @@
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="6089045305654894366" name="jetbrains.mps.lang.editor.structure.SubstituteMenuReference_Default" flags="ng" index="2kknPJ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="784421273959492578" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_IncludeMenu" flags="ng" index="mvV$s">
@@ -453,7 +452,6 @@
             </node>
           </node>
           <node concept="3EZMnI" id="76ZhK6Y0Pn1" role="3EZMnx">
-            <node concept="2iRfu4" id="76ZhK6Y0Pn2" role="2iSdaV" />
             <node concept="3F1sOY" id="76ZhK6Y0Pn3" role="3EZMnx">
               <property role="2ru_X1" value="true" />
               <ref role="1k5W1q" to="u5dy:4M31vJayoGp" resolve="UnitTag" />
@@ -493,6 +491,7 @@
                 </node>
               </node>
             </node>
+            <node concept="l2Vlx" id="1ASK_HedIt4" role="2iSdaV" />
           </node>
           <node concept="l2Vlx" id="76ZhK6Y0Pm$" role="2iSdaV" />
         </node>
@@ -527,7 +526,6 @@
           </node>
         </node>
         <node concept="3EZMnI" id="3j3yk3g$lOk" role="jn6J3">
-          <node concept="2iRfu4" id="29E2s0GIWel" role="2iSdaV" />
           <node concept="3F1sOY" id="3j3yk3guLEv" role="3EZMnx">
             <property role="2ru_X1" value="true" />
             <ref role="1k5W1q" to="u5dy:4M31vJayoGp" resolve="UnitTag" />
@@ -567,6 +565,7 @@
               </node>
             </node>
           </node>
+          <node concept="l2Vlx" id="1ASK_HedIt5" role="2iSdaV" />
         </node>
         <node concept="3tD6jV" id="29E2s0GJxa5" role="3F10Kt">
           <ref role="3tD7wE" to="19h7:5BPceOKdmR0" resolve="side-tranformation-helper-cells" />

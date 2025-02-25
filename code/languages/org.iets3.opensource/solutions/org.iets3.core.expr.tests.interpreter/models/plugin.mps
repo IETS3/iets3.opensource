@@ -16,6 +16,7 @@
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
     <import index="vzlu" ref="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)" />
     <import index="4k19" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.hamcrest(JUnit/)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -165,7 +166,7 @@
       <ref role="qq9wM" to="av4b:5kGo$yLJ0E1" resolve="ForceCastExpr" />
       <node concept="3vetai" id="5kGo$yLJa7m" role="3vQZUl">
         <node concept="rqRoa" id="5kGo$yLJa7$" role="3vdyny">
-          <ref role="rqRob" to="av4b:5kGo$yLJ8lv" resolve="expr" />
+          <ref role="rqRob" to="hm2y:3G_qVqIw4zp" resolve="expr" />
         </node>
       </node>
     </node>
@@ -174,7 +175,7 @@
       <ref role="qq9wM" to="av4b:3GdqffBS$Mm" resolve="MuteEffect" />
       <node concept="3vetai" id="3GdqffBSBUF" role="3vQZUl">
         <node concept="rqRoa" id="3GdqffBSBUT" role="3vdyny">
-          <ref role="rqRob" to="av4b:3GdqffBS$Mq" resolve="expr" />
+          <ref role="rqRob" to="hm2y:3G_qVqIw4zp" resolve="expr" />
         </node>
       </node>
     </node>
@@ -194,7 +195,7 @@
       <ref role="qq9wM" to="av4b:1$1rueeDiNV" resolve="OptExpression" />
       <node concept="3vetai" id="1$1rueeDpIz" role="3vQZUl">
         <node concept="rqRoa" id="1$1rueeDpIL" role="3vdyny">
-          <ref role="rqRob" to="av4b:1$1rueeDiNY" resolve="expr" />
+          <ref role="rqRob" to="hm2y:3G_qVqIw4zp" resolve="expr" />
         </node>
       </node>
     </node>

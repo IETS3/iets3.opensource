@@ -4852,24 +4852,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="3clFb_" id="4O9rw8aCZcA" role="jymVt">
-      <property role="TrG5h" value="finalize" />
-      <node concept="3Tmbuc" id="4O9rw8aCZcB" role="1B3o_S" />
-      <node concept="3cqZAl" id="4O9rw8aCZcD" role="3clF45" />
-      <node concept="3uibUv" id="4O9rw8aCZcE" role="Sfmx6">
-        <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
-      </node>
-      <node concept="3clFbS" id="4O9rw8aCZcF" role="3clF47">
-        <node concept="3clFbF" id="4O9rw8aCZcI" role="3cqZAp">
-          <node concept="3nyPlj" id="4O9rw8aCZcH" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Object.finalize()" resolve="finalize" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="4O9rw8aCZcG" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
     <node concept="3uibUv" id="5RpnrChOM$w" role="EKbjA">
       <ref role="3uigEE" to="ppzb:3nVyItrYNyp" resolve="INixValue" />
     </node>

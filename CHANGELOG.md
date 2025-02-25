@@ -5,6 +5,28 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## Feburary 2025
+
+### Added
+
+- a new approach to run interpreter test case from command line (and inside MPS) directly without invoking JUnit code generation
+
+### Fixed
+
+- Strings are not comparable with strings with constraints.
+- The usability of editors (code completion menu, color) was improved.
+
+## January 2025
+
+### Added
+
+- Added a language to accommodate variability management concepts and features. Initially it provides only an Interface to mark variation points.
+
+### Fixed
+
+- The copy and pasting of existing nodes was slightly improved.
+- NPE in `ISolvableMonitorNotification#projectOpen` ([#1202](https://github.com/IETS3/iets3.opensource/issues/1202)).
+
 ## December 2024
 
 ### Changed
@@ -12,6 +34,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - All custom views are deactivated by default. You can enable each of them through their own extension point: components explorer (`components` extension point), specification explorer (`spec` extension point), requirements explorer (`requirements` extension point), bookmark explorer (`bookmark` extension point).
 - Empty list literals now have automatically the length constraint 0.
 - Lists of lists now derive the correct size.
+- The line wrapping ability of some concepts was improved.
 
 ## November 2024
 

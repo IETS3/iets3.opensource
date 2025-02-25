@@ -14,12 +14,12 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="qlm2" ref="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -43,7 +43,6 @@
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -620,7 +619,7 @@
                   <node concept="1P9Npp" id="4jkbLB5Qqc_" role="2OqNvi">
                     <node concept="2OqwBi" id="4jkbLB5QqcA" role="1P9ThW">
                       <node concept="3TrEf2" id="76ZhK6XSU7h" role="2OqNvi">
-                        <ref role="3Tt5mk" to="w1hl:2Ux6GHgZDQG" resolve="expr" />
+                        <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
                       </node>
                       <node concept="37vLTw" id="5dNVOCG0Esh" role="2Oq$k0">
                         <ref role="3cqZAo" node="5dNVOCG0DsT" resolve="taggedExpr" />
@@ -785,7 +784,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="7eOyx9r3D2y" role="3EZMnx">
-          <ref role="1NtTu8" to="w1hl:2Ux6GHgZDQG" resolve="expr" />
+          <ref role="1NtTu8" to="hm2y:3G_qVqIw4zp" resolve="expr" />
         </node>
         <node concept="3F0ifn" id="3wrpJuuGymz" role="3EZMnx">
           <property role="3F0ifm" value="]" />
@@ -931,7 +930,7 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="2iRfu4" id="Fhq44ej0LC" role="2iSdaV" />
+      <node concept="l2Vlx" id="1ASK_HedIt6" role="2iSdaV" />
     </node>
   </node>
   <node concept="3INDKC" id="3cUcim$6q3Z">
@@ -989,11 +988,11 @@
             </node>
             <node concept="3cpWs6" id="3cUcim$6q4O" role="3cqZAp">
               <node concept="1Wc70l" id="3cUcim$6q4P" role="3cqZAk">
-                <node concept="37vLTw" id="3cUcim$6q4Q" role="3uHU7w">
-                  <ref role="3cqZAo" node="3cUcim$6q4p" resolve="c2" />
-                </node>
                 <node concept="37vLTw" id="3cUcim$6q4R" role="3uHU7B">
                   <ref role="3cqZAo" node="3cUcim$6q4e" resolve="c1" />
+                </node>
+                <node concept="37vLTw" id="3cUcim$6q4Q" role="3uHU7w">
+                  <ref role="3cqZAo" node="3cUcim$6q4p" resolve="c2" />
                 </node>
               </node>
             </node>
@@ -1176,7 +1175,7 @@
                         <ref role="3cqZAo" node="76ZhK6XVna9" resolve="expression" />
                       </node>
                       <node concept="3TrEf2" id="76ZhK6XVnDn" role="2OqNvi">
-                        <ref role="3Tt5mk" to="w1hl:2Ux6GHgZDQG" resolve="expr" />
+                        <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
                       </node>
                     </node>
                   </node>
