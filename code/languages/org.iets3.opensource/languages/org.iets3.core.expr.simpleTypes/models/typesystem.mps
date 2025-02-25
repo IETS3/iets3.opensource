@@ -3,8 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
-    <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -17,7 +15,6 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="tpfo" ref="r:00000000-0000-4000-0000-011c89590518(jetbrains.mps.baseLanguage.regexp.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -3763,7 +3760,7 @@
                   <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
                 </node>
                 <node concept="3TrEf2" id="7DTWJ$8l0zB" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5qo5:7DTWJ$8kg5h" resolve="expr" />
+                  <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
                 </node>
               </node>
               <node concept="3JvlWi" id="7DTWJ$8l122" role="2OqNvi" />
@@ -3785,7 +3782,7 @@
                 <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
               </node>
               <node concept="3TrEf2" id="7DTWJ$8l1Zx" role="2OqNvi">
-                <ref role="3Tt5mk" to="5qo5:7DTWJ$8kg5h" resolve="expr" />
+                <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
               </node>
             </node>
           </node>
@@ -3808,7 +3805,7 @@
                         <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
                       </node>
                       <node concept="3TrEf2" id="7Wa2sv40qpb" role="2OqNvi">
-                        <ref role="3Tt5mk" to="5qo5:7DTWJ$8kg5h" resolve="expr" />
+                        <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
                       </node>
                     </node>
                     <node concept="3JvlWi" id="7Wa2sv40qpc" role="2OqNvi" />
@@ -4016,7 +4013,7 @@
               <ref role="1YBMHb" node="7DTWJ$8lreh" resolve="ce" />
             </node>
             <node concept="3TrEf2" id="7DTWJ$8lr$f" role="2OqNvi">
-              <ref role="3Tt5mk" to="5qo5:7DTWJ$8kg5h" resolve="expr" />
+              <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
             </node>
           </node>
         </node>
@@ -4045,7 +4042,7 @@
                 <ref role="1YBMHb" node="46cplYy1TGI" resolve="lee" />
               </node>
               <node concept="3TrEf2" id="46cplYy24dF" role="2OqNvi">
-                <ref role="3Tt5mk" to="5qo5:46cplYy1TAM" resolve="expr" />
+                <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
               </node>
             </node>
             <node concept="3JvlWi" id="46cplYy24dG" role="2OqNvi" />
@@ -4092,7 +4089,7 @@
                 <ref role="1YBMHb" node="46cplYy1TGI" resolve="lee" />
               </node>
               <node concept="3TrEf2" id="46cplYy1TH4" role="2OqNvi">
-                <ref role="3Tt5mk" to="5qo5:46cplYy1TAM" resolve="expr" />
+                <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
               </node>
             </node>
           </node>
@@ -4169,7 +4166,7 @@
                             <ref role="1YBMHb" node="46cplYy1TGI" resolve="lee" />
                           </node>
                           <node concept="3TrEf2" id="46cplYy29tk" role="2OqNvi">
-                            <ref role="3Tt5mk" to="5qo5:46cplYy1TAM" resolve="expr" />
+                            <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
                           </node>
                         </node>
                       </node>
@@ -4603,7 +4600,7 @@
                 <ref role="1YBMHb" node="7cphKbL6khF" resolve="eiw" />
               </node>
               <node concept="3TrEf2" id="7cphKbL6kNK" role="2OqNvi">
-                <ref role="3Tt5mk" to="5qo5:7cphKbL6izz" resolve="expr" />
+                <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
               </node>
             </node>
           </node>
@@ -4938,7 +4935,7 @@
               <ref role="1YBMHb" node="vVoQWC58sV" resolve="be" />
             </node>
             <node concept="3TrEf2" id="vVoQWC59AQ" role="2OqNvi">
-              <ref role="3Tt5mk" to="5qo5:4eVSC65JA4Q" resolve="expr" />
+              <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
             </node>
           </node>
         </node>
@@ -5461,6 +5458,19 @@
     <node concept="1YaCAy" id="2xPWNWpD3Pt" role="1YuTPh">
       <property role="TrG5h" value="stringTypeWithConstraint" />
       <ref role="1YaFvo" to="5qo5:2xPWNWpoRmG" resolve="StringTypeWithConstraint" />
+    </node>
+  </node>
+  <node concept="35pCF_" id="6bCTfmNbwu2">
+    <property role="3GE5qa" value="string" />
+    <property role="TrG5h" value="stringComparableWithstringTypeWithConstraint" />
+    <node concept="1YaCAy" id="6bCTfmNbwu3" role="35pZ6h">
+      <property role="TrG5h" value="stringTypeWithConstraint" />
+      <ref role="1YaFvo" to="5qo5:2xPWNWpoRmG" resolve="StringTypeWithConstraint" />
+    </node>
+    <node concept="3clFbS" id="6bCTfmNbwu4" role="2sgrp5" />
+    <node concept="1YaCAy" id="6bCTfmNbwvk" role="1YuTPh">
+      <property role="TrG5h" value="stringType" />
+      <ref role="1YaFvo" to="5qo5:4rZeNQ6OYR7" resolve="StringType" />
     </node>
   </node>
 </model>

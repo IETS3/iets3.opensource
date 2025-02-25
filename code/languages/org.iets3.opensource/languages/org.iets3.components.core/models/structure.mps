@@ -67,6 +67,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -494,9 +495,9 @@
     <node concept="1TJgyj" id="4UgzZxsF_xC" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="5661183028474304616" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      <ref role="20ksaX" to="hm2y:3G_qVqIw4zp" resolve="expr" />
     </node>
     <node concept="1TJgyj" id="4UgzZxsF_xI" role="1TKVEi">
       <property role="20kJfa" value="param" />
@@ -506,6 +507,9 @@
     </node>
     <node concept="PrWs8" id="3eH6BL38J5Z" role="PzmwI">
       <ref role="PrY4T" to="hm2y:3eH6BL2TJIw" resolve="IAssignable" />
+    </node>
+    <node concept="PrWs8" id="1azguFQUQ7L" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:1azguFQNaDo" resolve="IContainAssignableExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="3NBP8_O5tqM">
@@ -1153,6 +1157,7 @@
     <property role="TrG5h" value="PortTypeSpecificPortType" />
     <property role="EcuMT" value="2244552513307947405" />
     <property role="R4oN_" value="a port type of a specific port type" />
+    <property role="34LRSv" value="port" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="1WAg9Tzrz6g" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

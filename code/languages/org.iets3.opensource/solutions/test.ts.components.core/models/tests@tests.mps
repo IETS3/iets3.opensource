@@ -4,10 +4,10 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="9" />
+    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="10" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute" version="-1" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="3" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="10" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports>
@@ -55,13 +55,13 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt" />
-      <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
-        <child id="5115872837156802411" name="expr" index="30czhm" />
-      </concept>
       <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
@@ -127,7 +127,6 @@
       </concept>
       <concept id="5661183028474304615" name="org.iets3.components.core.structure.ParameterValue" flags="ng" index="ifHuv">
         <reference id="5661183028474304622" name="param" index="ifHum" />
-        <child id="5661183028474304616" name="value" index="ifHug" />
       </concept>
       <concept id="229512757699544987" name="org.iets3.components.core.structure.Parameter" flags="ng" index="pdmcS">
         <child id="229512757699544992" name="defaultValue" index="pdmc3" />
@@ -297,7 +296,7 @@
                   <node concept="1WbEdM" id="3QX5db_EbJy" role="1QScD9">
                     <ref role="1WbEdL" node="3QX5db_E96a" resolve="port2" />
                   </node>
-                  <node concept="3o4LXa" id="3QX5db_EbIx" role="30czhm" />
+                  <node concept="3o4LXa" id="3QX5db_EbIx" role="2lDidJ" />
                 </node>
               </node>
             </node>
@@ -305,7 +304,7 @@
               <node concept="1Wfe8y" id="3QX5db_ykx6" role="1QScD9">
                 <ref role="1Wfe8x" node="3QX5db_ykw8" resolve="CP2" />
               </node>
-              <node concept="3o4LXa" id="3QX5db_yktP" role="30czhm" />
+              <node concept="3o4LXa" id="3QX5db_yktP" role="2lDidJ" />
             </node>
           </node>
           <node concept="3oth5z" id="3QX5db_HRuf" role="18DfD7">
@@ -316,11 +315,11 @@
               <node concept="1Wfe8y" id="3QX5db_HRxx" role="1QScD9">
                 <ref role="1Wfe8x" node="3QX5db_HRpW" resolve="CP3" />
               </node>
-              <node concept="1QScDb" id="3QX5db_HRv1" role="30czhm">
+              <node concept="1QScDb" id="3QX5db_HRv1" role="2lDidJ">
                 <node concept="1Wfe8y" id="3QX5db_HRvL" role="1QScD9">
                   <ref role="1Wfe8x" node="3QX5db_ykw8" resolve="CP2" />
                 </node>
-                <node concept="3o4LXa" id="3QX5db_HRud" role="30czhm" />
+                <node concept="3o4LXa" id="3QX5db_HRud" role="2lDidJ" />
               </node>
             </node>
           </node>
@@ -516,7 +515,7 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3o4LXa" id="48ZWgAGwgy2" role="30czhm" />
+                  <node concept="3o4LXa" id="48ZWgAGwgy2" role="2lDidJ" />
                 </node>
               </node>
               <node concept="3oth5z" id="48ZWgAGwgFo" role="33R2D0">
@@ -536,7 +535,7 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3o4LXa" id="48ZWgAGwgFm" role="30czhm" />
+                  <node concept="3o4LXa" id="48ZWgAGwgFm" role="2lDidJ" />
                 </node>
               </node>
               <node concept="3oth5z" id="48ZWgAGwljX" role="33R2D0">
@@ -556,7 +555,7 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3o4LXa" id="48ZWgAGwljV" role="30czhm" />
+                  <node concept="3o4LXa" id="48ZWgAGwljV" role="2lDidJ" />
                 </node>
               </node>
             </node>
@@ -573,7 +572,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="3o4LXa" id="48ZWgAGs_we" role="30czhm" />
+              <node concept="3o4LXa" id="48ZWgAGs_we" role="2lDidJ" />
             </node>
           </node>
         </node>
@@ -900,7 +899,7 @@
               </node>
               <node concept="ifHuv" id="AamzMu0_lJ" role="MGlrR">
                 <ref role="ifHum" node="AamzMu0_kN" resolve="param" />
-                <node concept="18Ww8V" id="AamzMu0_m0" role="ifHug">
+                <node concept="18Ww8V" id="AamzMu0_m0" role="2lDidJ">
                   <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
                 </node>
               </node>
