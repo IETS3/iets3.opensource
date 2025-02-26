@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - a new approach to run interpreter test case from command line (and inside MPS) directly without invoking JUnit code generation
+- Added EmptyType to Pluggable Type Facade (PTF). If your language has some kind of _NixType_, you should override `PrimitiveTypeMapper.isEmptyType()` to recognize your _NixType_.
 
 ### Fixed
 
