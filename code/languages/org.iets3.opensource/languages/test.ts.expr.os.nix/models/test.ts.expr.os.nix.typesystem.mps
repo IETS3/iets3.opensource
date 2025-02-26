@@ -8,7 +8,6 @@
   <imports>
     <import index="eddd" ref="r:76654092-7126-4d48-8113-566c63e58f87(test.ts.expr.os.nix.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
-    <import index="6rhc" ref="f:diff_diff_model_0#r:ca8aadc0-6e3c-46b0-b047-1d58cf243066(test.ts.expr.os.nix.typesystem@diff_model_0)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -115,13 +114,13 @@
       <node concept="1Z5TYs" id="7DMIV6UAjMC" role="3cqZAp">
         <node concept="mw_s8" id="7DMIV6UAjNd" role="1ZfhKB">
           <node concept="1YBJjd" id="7DMIV6UAjNb" role="mwGJk">
-            <ref role="1YBMHb" to="6rhc:7DMIV6UAjzn" resolve="nixType" />
+            <ref role="1YBMHb" node="7DMIV6UAjzn" resolve="nixType" />
           </node>
         </node>
         <node concept="mw_s8" id="7DMIV6UAjMF" role="1ZfhK$">
           <node concept="1Z2H0r" id="7DMIV6UAjAd" role="mwGJk">
             <node concept="1YBJjd" id="7DMIV6UAjCz" role="1Z2MuG">
-              <ref role="1YBMHb" to="6rhc:7DMIV6UAjzn" resolve="nixType" />
+              <ref role="1YBMHb" node="7DMIV6UAjzn" resolve="nixType" />
             </node>
           </node>
         </node>
