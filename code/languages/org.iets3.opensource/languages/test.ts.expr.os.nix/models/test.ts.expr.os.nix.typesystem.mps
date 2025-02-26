@@ -8,9 +8,13 @@
   <imports>
     <import index="eddd" ref="r:76654092-7126-4d48-8113-566c63e58f87(test.ts.expr.os.nix.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="6rhc" ref="f:diff_diff_model_0#r:ca8aadc0-6e3c-46b0-b047-1d58cf243066(test.ts.expr.os.nix.typesystem@diff_model_0)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -35,6 +39,9 @@
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
+      </concept>
+      <concept id="6405009306797516074" name="jetbrains.mps.lang.typesystem.structure.SubstituteTypeRule" flags="ig" index="3qnSWH">
+        <child id="7323318266641100480" name="body" index="3hT0BD" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -86,19 +93,35 @@
       <ref role="1YaFvo" to="eddd:7DMIV6UA9Ve" resolve="NixLiteral" />
     </node>
   </node>
+  <node concept="3qnSWH" id="1$atYL2BipY">
+    <property role="TrG5h" value="substituteType_NixType" />
+    <node concept="3clFbS" id="1$atYL2BipZ" role="3hT0BD">
+      <node concept="3clFbF" id="1$atYL2Biqq" role="3cqZAp">
+        <node concept="2pJPEk" id="1$atYL2Biqo" role="3clFbG">
+          <node concept="2pJPED" id="1$atYL2Biqp" role="2pJPEn">
+            <ref role="2pJxaS" to="hm2y:3tcv7J0pmjC" resolve="EmptyType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1$atYL2Biq1" role="1YuTPh">
+      <property role="TrG5h" value="nixType" />
+      <ref role="1YaFvo" to="eddd:7DMIV6UAjuN" resolve="NixType" />
+    </node>
+  </node>
   <node concept="1YbPZF" id="7DMIV6UAjzk">
     <property role="TrG5h" value="typeof_NixType" />
     <node concept="3clFbS" id="7DMIV6UAjzl" role="18ibNy">
       <node concept="1Z5TYs" id="7DMIV6UAjMC" role="3cqZAp">
         <node concept="mw_s8" id="7DMIV6UAjNd" role="1ZfhKB">
           <node concept="1YBJjd" id="7DMIV6UAjNb" role="mwGJk">
-            <ref role="1YBMHb" node="7DMIV6UAjzn" resolve="nixType" />
+            <ref role="1YBMHb" to="6rhc:7DMIV6UAjzn" resolve="nixType" />
           </node>
         </node>
         <node concept="mw_s8" id="7DMIV6UAjMF" role="1ZfhK$">
           <node concept="1Z2H0r" id="7DMIV6UAjAd" role="mwGJk">
             <node concept="1YBJjd" id="7DMIV6UAjCz" role="1Z2MuG">
-              <ref role="1YBMHb" node="7DMIV6UAjzn" resolve="nixType" />
+              <ref role="1YBMHb" to="6rhc:7DMIV6UAjzn" resolve="nixType" />
             </node>
           </node>
         </node>
