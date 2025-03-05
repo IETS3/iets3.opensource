@@ -3623,6 +3623,11 @@
             <ref role="3bR37D" node="3qKzW8QxJyw" resolve="org.iets3.core.expr.base.shared.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4X7jg4xF$FY" role="3bR37C">
+          <node concept="3bR9La" id="4X7jg4xF$FZ" role="1SiIV1">
+            <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6JPXQMQs0pX" role="2G$12L">
         <property role="BnDLt" value="true" />
