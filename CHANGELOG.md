@@ -9,8 +9,11 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 
+- Move languages org.iets3.protocol.transport, org.iets3.components.functional, org.iets3.components.hardware, org.iets3.components.toplevel.adapter, org.iets3.core.mapping, and org.iets3.safety.attributes from iets3.core to iets3.os
+
 - a new approach to run interpreter test case from command line (and inside MPS) directly without invoking JUnit code generation
 - Added EmptyType to Pluggable Type Facade (PTF). If your language has some kind of _NixType_, you should override `PrimitiveTypeMapper.isEmptyType()` to recognize your _NixType_.
+
 
 ### Fixed
 
