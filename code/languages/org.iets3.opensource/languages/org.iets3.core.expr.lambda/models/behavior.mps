@@ -1750,7 +1750,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="5s__jxCq8Sv" role="13h7CS">
-      <property role="TrG5h" value="putLamdaArg" />
+      <property role="TrG5h" value="putLambdaArg" />
       <node concept="3Tm1VV" id="5s__jxCq8Sw" role="1B3o_S" />
       <node concept="3cqZAl" id="5s__jxCq8Sx" role="3clF45" />
       <node concept="3clFbS" id="5s__jxCq8Sy" role="3clF47">
@@ -1780,7 +1780,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="5s__jxCqcBE" role="13h7CS">
-      <property role="TrG5h" value="getLamdaArg" />
+      <property role="TrG5h" value="getLambdaArg" />
       <node concept="3Tm1VV" id="5s__jxCqcBF" role="1B3o_S" />
       <node concept="3clFbS" id="5s__jxCqcBH" role="3clF47">
         <node concept="3clFbF" id="5s__jxCqcBI" role="3cqZAp">
@@ -1812,7 +1812,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="XbOhLk5ekn" role="13h7CS">
-      <property role="TrG5h" value="putLamda" />
+      <property role="TrG5h" value="putLambda" />
       <node concept="3Tm1VV" id="XbOhLk5eko" role="1B3o_S" />
       <node concept="3cqZAl" id="XbOhLk5ekp" role="3clF45" />
       <node concept="3clFbS" id="XbOhLk5ekq" role="3clF47">
@@ -1842,7 +1842,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="XbOhLk5ek9" role="13h7CS">
-      <property role="TrG5h" value="getLamda" />
+      <property role="TrG5h" value="getLambda" />
       <node concept="3Tm1VV" id="XbOhLk5eka" role="1B3o_S" />
       <node concept="3clFbS" id="XbOhLk5ekb" role="3clF47">
         <node concept="3clFbF" id="XbOhLk5ekc" role="3cqZAp">
