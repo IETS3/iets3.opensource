@@ -1811,6 +1811,68 @@
         <ref role="ehGHo" to="zzzn:6zmBjqUkwse" resolve="LambdaArg" />
       </node>
     </node>
+    <node concept="13i0hz" id="XbOhLk5ekn" role="13h7CS">
+      <property role="TrG5h" value="putLamda" />
+      <node concept="3Tm1VV" id="XbOhLk5eko" role="1B3o_S" />
+      <node concept="3cqZAl" id="XbOhLk5ekp" role="3clF45" />
+      <node concept="3clFbS" id="XbOhLk5ekq" role="3clF47">
+        <node concept="3clFbF" id="XbOhLk5ekr" role="3cqZAp">
+          <node concept="2OqwBi" id="XbOhLk5eks" role="3clFbG">
+            <node concept="2JrnkZ" id="XbOhLk5ekt" role="2Oq$k0">
+              <node concept="13iPFW" id="XbOhLk5eku" role="2JrQYb" />
+            </node>
+            <node concept="liA8E" id="XbOhLk5ekv" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
+              <node concept="10M0yZ" id="XbOhLk5fLj" role="37wK5m">
+                <ref role="3cqZAo" to="sxpq:XbOhLk4Bsh" resolve="USER_OBJECT_KEY_LAMBDA" />
+                <ref role="1PxDUh" to="sxpq:5s__jxCoQMv" resolve="ShortLambdaValue" />
+              </node>
+              <node concept="37vLTw" id="XbOhLk5ekx" role="37wK5m">
+                <ref role="3cqZAo" node="XbOhLk5eky" resolve="lambdaArg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="XbOhLk5eky" role="3clF46">
+        <property role="TrG5h" value="lambdaArg" />
+        <node concept="3Tqbb2" id="XbOhLk5ekz" role="1tU5fm">
+          <ref role="ehGHo" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="XbOhLk5ek9" role="13h7CS">
+      <property role="TrG5h" value="getLamda" />
+      <node concept="3Tm1VV" id="XbOhLk5eka" role="1B3o_S" />
+      <node concept="3clFbS" id="XbOhLk5ekb" role="3clF47">
+        <node concept="3clFbF" id="XbOhLk5ekc" role="3cqZAp">
+          <node concept="1eOMI4" id="XbOhLk5ekd" role="3clFbG">
+            <node concept="10QFUN" id="XbOhLk5eke" role="1eOMHV">
+              <node concept="3Tqbb2" id="XbOhLk5ekf" role="10QFUM">
+                <ref role="ehGHo" to="zzzn:6zmBjqUkwse" resolve="LambdaArg" />
+              </node>
+              <node concept="1eOMI4" id="XbOhLk5ekg" role="10QFUP">
+                <node concept="2OqwBi" id="XbOhLk5ekh" role="1eOMHV">
+                  <node concept="2JrnkZ" id="XbOhLk5eki" role="2Oq$k0">
+                    <node concept="13iPFW" id="XbOhLk5ekj" role="2JrQYb" />
+                  </node>
+                  <node concept="liA8E" id="XbOhLk5ekk" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                    <node concept="10M0yZ" id="XbOhLk5gsG" role="37wK5m">
+                      <ref role="3cqZAo" to="sxpq:XbOhLk4Bsh" resolve="USER_OBJECT_KEY_LAMBDA" />
+                      <ref role="1PxDUh" to="sxpq:5s__jxCoQMv" resolve="ShortLambdaValue" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="XbOhLk5ekm" role="3clF45">
+        <ref role="ehGHo" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
+      </node>
+    </node>
     <node concept="13i0hz" id="5s__jxDLZVE" role="13h7CS">
       <property role="TrG5h" value="getNodeMapping" />
       <node concept="3Tm1VV" id="5s__jxDLZVF" role="1B3o_S" />
