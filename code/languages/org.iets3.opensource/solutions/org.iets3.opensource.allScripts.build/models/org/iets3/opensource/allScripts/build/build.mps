@@ -226,11 +226,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="4u2ErA3vypv" role="3bR37C">
-          <node concept="3bR9La" id="4u2ErA3vypw" role="1SiIV1">
-            <ref role="3bR37D" node="3ZBI8Aw30tK" resolve="org.iets3.opensource.build.gentests" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="3ZBI8Aw30tK" role="2G$12L">
         <property role="BnDLt" value="true" />

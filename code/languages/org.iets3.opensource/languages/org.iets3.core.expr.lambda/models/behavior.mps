@@ -1749,6 +1749,220 @@
         <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
       </node>
     </node>
+    <node concept="13i0hz" id="5s__jxCq8Sv" role="13h7CS">
+      <property role="TrG5h" value="putLambdaArg" />
+      <node concept="3Tm1VV" id="5s__jxCq8Sw" role="1B3o_S" />
+      <node concept="3cqZAl" id="5s__jxCq8Sx" role="3clF45" />
+      <node concept="3clFbS" id="5s__jxCq8Sy" role="3clF47">
+        <node concept="3clFbF" id="5s__jxCq8Sz" role="3cqZAp">
+          <node concept="2OqwBi" id="5s__jxCq8S$" role="3clFbG">
+            <node concept="2JrnkZ" id="5s__jxCq8S_" role="2Oq$k0">
+              <node concept="13iPFW" id="5s__jxCq8SA" role="2JrQYb" />
+            </node>
+            <node concept="liA8E" id="5s__jxCq8SB" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
+              <node concept="10M0yZ" id="5s__jxCqbTx" role="37wK5m">
+                <ref role="3cqZAo" to="sxpq:5s__jxCpjNV" resolve="USER_OBJECT_KEY_LAMBDAARG" />
+                <ref role="1PxDUh" to="sxpq:5s__jxCoQMv" resolve="ShortLambdaValue" />
+              </node>
+              <node concept="37vLTw" id="5s__jxCq8SD" role="37wK5m">
+                <ref role="3cqZAo" node="5s__jxCqaIo" resolve="lambdaArg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5s__jxCqaIo" role="3clF46">
+        <property role="TrG5h" value="lambdaArg" />
+        <node concept="3Tqbb2" id="5s__jxCqaIn" role="1tU5fm">
+          <ref role="ehGHo" to="zzzn:6zmBjqUkwse" resolve="LambdaArg" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5s__jxCqcBE" role="13h7CS">
+      <property role="TrG5h" value="getLambdaArg" />
+      <node concept="3Tm1VV" id="5s__jxCqcBF" role="1B3o_S" />
+      <node concept="3clFbS" id="5s__jxCqcBH" role="3clF47">
+        <node concept="3clFbF" id="5s__jxCqcBI" role="3cqZAp">
+          <node concept="1eOMI4" id="5s__jxCqhoK" role="3clFbG">
+            <node concept="10QFUN" id="5s__jxCqhoH" role="1eOMHV">
+              <node concept="3Tqbb2" id="5s__jxCqhwO" role="10QFUM">
+                <ref role="ehGHo" to="zzzn:6zmBjqUkwse" resolve="LambdaArg" />
+              </node>
+              <node concept="1eOMI4" id="5s__jxCqhcE" role="10QFUP">
+                <node concept="2OqwBi" id="5s__jxCqcBJ" role="1eOMHV">
+                  <node concept="2JrnkZ" id="5s__jxCqcBK" role="2Oq$k0">
+                    <node concept="13iPFW" id="5s__jxCqcBL" role="2JrQYb" />
+                  </node>
+                  <node concept="liA8E" id="5s__jxCqcBM" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                    <node concept="10M0yZ" id="5s__jxCqcBN" role="37wK5m">
+                      <ref role="3cqZAo" to="sxpq:5s__jxCpjNV" resolve="USER_OBJECT_KEY_LAMBDAARG" />
+                      <ref role="1PxDUh" to="sxpq:5s__jxCoQMv" resolve="ShortLambdaValue" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5s__jxCqcBQ" role="3clF45">
+        <ref role="ehGHo" to="zzzn:6zmBjqUkwse" resolve="LambdaArg" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="XbOhLk5ekn" role="13h7CS">
+      <property role="TrG5h" value="putLambda" />
+      <node concept="3Tm1VV" id="XbOhLk5eko" role="1B3o_S" />
+      <node concept="3cqZAl" id="XbOhLk5ekp" role="3clF45" />
+      <node concept="3clFbS" id="XbOhLk5ekq" role="3clF47">
+        <node concept="3clFbF" id="XbOhLk5ekr" role="3cqZAp">
+          <node concept="2OqwBi" id="XbOhLk5eks" role="3clFbG">
+            <node concept="2JrnkZ" id="XbOhLk5ekt" role="2Oq$k0">
+              <node concept="13iPFW" id="XbOhLk5eku" role="2JrQYb" />
+            </node>
+            <node concept="liA8E" id="XbOhLk5ekv" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
+              <node concept="10M0yZ" id="XbOhLk5fLj" role="37wK5m">
+                <ref role="3cqZAo" to="sxpq:XbOhLk4Bsh" resolve="USER_OBJECT_KEY_LAMBDA" />
+                <ref role="1PxDUh" to="sxpq:5s__jxCoQMv" resolve="ShortLambdaValue" />
+              </node>
+              <node concept="37vLTw" id="XbOhLk5ekx" role="37wK5m">
+                <ref role="3cqZAo" node="XbOhLk5eky" resolve="lambdaArg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="XbOhLk5eky" role="3clF46">
+        <property role="TrG5h" value="lambdaArg" />
+        <node concept="3Tqbb2" id="XbOhLk5ekz" role="1tU5fm">
+          <ref role="ehGHo" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="XbOhLk5ek9" role="13h7CS">
+      <property role="TrG5h" value="getLambda" />
+      <node concept="3Tm1VV" id="XbOhLk5eka" role="1B3o_S" />
+      <node concept="3clFbS" id="XbOhLk5ekb" role="3clF47">
+        <node concept="3clFbF" id="XbOhLk5ekc" role="3cqZAp">
+          <node concept="1eOMI4" id="XbOhLk5ekd" role="3clFbG">
+            <node concept="10QFUN" id="XbOhLk5eke" role="1eOMHV">
+              <node concept="3Tqbb2" id="XbOhLk5ekf" role="10QFUM">
+                <ref role="ehGHo" to="zzzn:6zmBjqUkwse" resolve="LambdaArg" />
+              </node>
+              <node concept="1eOMI4" id="XbOhLk5ekg" role="10QFUP">
+                <node concept="2OqwBi" id="XbOhLk5ekh" role="1eOMHV">
+                  <node concept="2JrnkZ" id="XbOhLk5eki" role="2Oq$k0">
+                    <node concept="13iPFW" id="XbOhLk5ekj" role="2JrQYb" />
+                  </node>
+                  <node concept="liA8E" id="XbOhLk5ekk" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                    <node concept="10M0yZ" id="XbOhLk5gsG" role="37wK5m">
+                      <ref role="3cqZAo" to="sxpq:XbOhLk4Bsh" resolve="USER_OBJECT_KEY_LAMBDA" />
+                      <ref role="1PxDUh" to="sxpq:5s__jxCoQMv" resolve="ShortLambdaValue" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="XbOhLk5ekm" role="3clF45">
+        <ref role="ehGHo" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5s__jxDLZVE" role="13h7CS">
+      <property role="TrG5h" value="getNodeMapping" />
+      <node concept="3Tm1VV" id="5s__jxDLZVF" role="1B3o_S" />
+      <node concept="3rvAFt" id="5s__jxDLZVG" role="3clF45">
+        <node concept="3Tqbb2" id="5s__jxDLZVH" role="3rvQeY" />
+        <node concept="3Tqbb2" id="5s__jxDLZVI" role="3rvSg0" />
+      </node>
+      <node concept="3clFbS" id="5s__jxDLZVJ" role="3clF47">
+        <node concept="3clFbJ" id="5s__jxDLZVK" role="3cqZAp">
+          <node concept="3clFbS" id="5s__jxDLZVL" role="3clFbx">
+            <node concept="3cpWs6" id="5s__jxDLZVM" role="3cqZAp">
+              <node concept="10QFUN" id="5s__jxDLZVN" role="3cqZAk">
+                <node concept="3rvAFt" id="5s__jxDLZVO" role="10QFUM">
+                  <node concept="3Tqbb2" id="5s__jxDLZVP" role="3rvQeY" />
+                  <node concept="3Tqbb2" id="5s__jxDLZVQ" role="3rvSg0" />
+                </node>
+                <node concept="1eOMI4" id="5s__jxDLZVR" role="10QFUP">
+                  <node concept="2OqwBi" id="5s__jxDLZVS" role="1eOMHV">
+                    <node concept="2JrnkZ" id="5s__jxDLZVT" role="2Oq$k0">
+                      <node concept="13iPFW" id="5s__jxDLZVU" role="2JrQYb" />
+                    </node>
+                    <node concept="liA8E" id="5s__jxDLZVV" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                      <node concept="10M0yZ" id="5s__jxDLZVW" role="37wK5m">
+                        <ref role="3cqZAo" to="sxpq:6ITtBskT0za" resolve="USER_OBJECT_KEY" />
+                        <ref role="1PxDUh" to="sxpq:$yb$20f$a5" resolve="LambdaValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="5s__jxDLZVX" role="3clFbw">
+            <node concept="2OqwBi" id="5s__jxDLZVY" role="2ZW6bz">
+              <node concept="2JrnkZ" id="5s__jxDLZVZ" role="2Oq$k0">
+                <node concept="13iPFW" id="5s__jxDLZW0" role="2JrQYb" />
+              </node>
+              <node concept="liA8E" id="5s__jxDLZW1" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                <node concept="10M0yZ" id="5s__jxDLZW2" role="37wK5m">
+                  <ref role="3cqZAo" to="sxpq:6ITtBskT0za" resolve="USER_OBJECT_KEY" />
+                  <ref role="1PxDUh" to="sxpq:$yb$20f$a5" resolve="LambdaValue" />
+                </node>
+              </node>
+            </node>
+            <node concept="3uibUv" id="5s__jxDLZW3" role="2ZW6by">
+              <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5s__jxDLZW4" role="3cqZAp">
+          <node concept="10Nm6u" id="5s__jxDLZW5" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5s__jxDLZW6" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5s__jxDLZW7" role="13h7CS">
+      <property role="TrG5h" value="putNodeMapping" />
+      <node concept="3Tm1VV" id="5s__jxDLZW8" role="1B3o_S" />
+      <node concept="3cqZAl" id="5s__jxDLZW9" role="3clF45" />
+      <node concept="3clFbS" id="5s__jxDLZWa" role="3clF47">
+        <node concept="3clFbF" id="5s__jxDLZWb" role="3cqZAp">
+          <node concept="2OqwBi" id="5s__jxDLZWc" role="3clFbG">
+            <node concept="2JrnkZ" id="5s__jxDLZWd" role="2Oq$k0">
+              <node concept="13iPFW" id="5s__jxDLZWe" role="2JrQYb" />
+            </node>
+            <node concept="liA8E" id="5s__jxDLZWf" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
+              <node concept="10M0yZ" id="5s__jxDLZWg" role="37wK5m">
+                <ref role="3cqZAo" to="sxpq:6ITtBskT0za" resolve="USER_OBJECT_KEY" />
+                <ref role="1PxDUh" to="sxpq:$yb$20f$a5" resolve="LambdaValue" />
+              </node>
+              <node concept="37vLTw" id="5s__jxDLZWh" role="37wK5m">
+                <ref role="3cqZAo" node="5s__jxDLZWi" resolve="map" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5s__jxDLZWi" role="3clF46">
+        <property role="TrG5h" value="map" />
+        <node concept="3rvAFt" id="5s__jxDLZWj" role="1tU5fm">
+          <node concept="3Tqbb2" id="5s__jxDLZWk" role="3rvQeY" />
+          <node concept="3Tqbb2" id="5s__jxDLZWl" role="3rvSg0" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="6zmBjqUm7On" role="13h7CW">
       <node concept="3clFbS" id="6zmBjqUm7Oo" role="2VODD2">
         <node concept="3clFbF" id="7SZA7UeM0l2" role="3cqZAp">

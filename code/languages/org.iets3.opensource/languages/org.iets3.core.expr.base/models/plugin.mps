@@ -1119,6 +1119,15 @@
       <node concept="3Tm1VV" id="2Qbt$1tSx2G" role="1B3o_S" />
       <node concept="3clFbS" id="2Qbt$1tSx2H" role="3clF47" />
     </node>
+    <node concept="3clFb_" id="1$atYL2NvF5" role="jymVt">
+      <property role="TrG5h" value="createEmptyType" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="3Tqbb2" id="1$atYL2NvF6" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+      <node concept="3Tm1VV" id="1$atYL2NvF7" role="1B3o_S" />
+      <node concept="3clFbS" id="1$atYL2NvF8" role="3clF47" />
+    </node>
     <node concept="3clFb_" id="3tudP__T$3q" role="jymVt">
       <property role="TrG5h" value="createNumberLiteral" />
       <property role="1EzhhJ" value="true" />
@@ -1296,6 +1305,43 @@
         <node concept="3Tqbb2" id="2q0DACtKs0o" role="1tU5fm" />
       </node>
       <node concept="3Tm1VV" id="2q0DACtKs0c" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="1$atYL2Myu6" role="jymVt" />
+    <node concept="3clFb_" id="1$atYL2M_8d" role="jymVt">
+      <property role="TrG5h" value="isEmptyType" />
+      <node concept="3clFbS" id="1$atYL2M_8g" role="3clF47">
+        <node concept="3clFbF" id="1$atYL2Nwo1" role="3cqZAp">
+          <node concept="2OqwBi" id="1$atYL2Nwo2" role="3clFbG">
+            <node concept="2OqwBi" id="1$atYL2Nwo3" role="2Oq$k0">
+              <node concept="2YIFZM" id="1$atYL2Nwo4" role="2Oq$k0">
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
+              </node>
+              <node concept="liA8E" id="1$atYL2Nwo5" role="2OqNvi">
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1$atYL2Nwo6" role="2OqNvi">
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
+              <node concept="37vLTw" id="1$atYL2Nwo7" role="37wK5m">
+                <ref role="3cqZAo" node="1$atYL2M_AZ" resolve="type" />
+              </node>
+              <node concept="2YIFZM" id="1$atYL2N$yE" role="37wK5m">
+                <ref role="37wK5l" to="xfg9:1$atYL2Nr$T" resolve="createEmptyType" />
+                <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1$atYL2Mzcw" role="1B3o_S" />
+      <node concept="10P_77" id="1$atYL2M_6r" role="3clF45" />
+      <node concept="37vLTG" id="1$atYL2M_AZ" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3Tqbb2" id="1$atYL2M_AY" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="2q0DACtJfg1" role="jymVt" />
     <node concept="3clFb_" id="2oUyrt$Q$EB" role="jymVt">
