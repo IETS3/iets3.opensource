@@ -1,0 +1,42 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "packageRules": [
+    // Rules are evaluated top to bottom, all matching rules are applied
+
+    {
+      "matchPackageNames": [
+        "com.jetbrains:mps",
+        "org.mpsqa:all-in-one",
+        "com.mbeddr:platform"
+      ],
+
+      // Update patch versions (2024.1.x -> 2024.1.y) separately from minor.
+      "separateMinorPatch": true,
+
+      // Commit hashes containing 'a' or 'b' are interpreted by Gradle/Renovate as 'alpha' or 'beta' versions,
+      // and Renovate would normally refuse to update to them. In our case they are stable versions.
+      "ignoreUnstable": false
+    },
+
+    {
+      // Disable major and minor updates of MPS libraries and MPS (e.g. 2024.1 -> 2024.3). Leave patch updates enabled
+      // thanks to the previous rule.
+      "matchPackageNames": [
+        "com.jetbrains:mps",
+        "org.mpsqa:all-in-one",
+        "com.mbeddr:platform"
+      ],
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
+    },
+
+    // Disallow mps-gradle-plugin v2
+    {
+      "matchPackageNames": ["de.itemis.mps:mps-gradle-plugin"],
+      "allowedVersions": "!/^2\\./"
+    }
+  ],
+}
