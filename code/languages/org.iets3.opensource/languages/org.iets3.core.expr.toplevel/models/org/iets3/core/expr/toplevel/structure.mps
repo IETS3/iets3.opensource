@@ -852,12 +852,6 @@
     <property role="34LRSv" value="referenceable" />
     <property role="R4oN_" value="define a record as referenceable" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6JZACDWRoq1" role="1TKVEi">
-      <property role="IQ2ns" value="7782108600710563457" />
-      <property role="20kJfa" value="idMember" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7cphKbKnKRF">
     <property role="EcuMT" value="8293738266727747051" />
