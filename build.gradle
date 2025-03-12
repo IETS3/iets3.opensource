@@ -103,12 +103,6 @@ ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRe
 // 'artifacts' is used in the generated ant scripts as build output directory
 ext.artifactsDir = new File(buildDir, 'artifacts')
 
-
-wrapper {
-    gradleVersion '8.0.2'
-    distributionType Wrapper.DistributionType.ALL
-}
-
 configurations {
     mps
     languageLibs
