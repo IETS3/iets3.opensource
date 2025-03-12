@@ -6537,7 +6537,7 @@
               <property role="30bXRw" value="2.34e-16" />
             </node>
             <node concept="30bXRB" id="6nL1QEfBrTF" role="30dEs_">
-              <property role="30bXRw" value="9.e+25" />
+              <property role="30bXRw" value="9.0e+25" />
             </node>
           </node>
         </node>
