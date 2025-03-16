@@ -115,7 +115,7 @@ dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
-    junitAnt 'org.apache.ant:ant-junit:1.10.6'
+    junitAnt 'org.apache.ant:ant-junit:1.10.15'
     pcollections 'org.pcollections:pcollections:4.0.1'
     bigMath 'ch.obermuhlner:big-math:2.3.2'
 }
