@@ -63,7 +63,7 @@ if (!project.hasProperty('mbeddrVersion')) {
     if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
         ext.mbeddrVersion = "${mbeddrBranch.replace("/", "-")}.${major}.${minor}.+"
     } else {
-        ext.mbeddrVersion = "2024.1.25185.dffcb5d"
+        ext.mbeddrVersion = "2024.1.25253.ccb451a"
     }
 }
 
