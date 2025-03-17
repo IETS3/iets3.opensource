@@ -113,10 +113,13 @@ ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-sn
 ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
 
 
+def buildDirPath(pathUnderBuildDir) {
+    project.layout.buildDirectory.dir(pathUnderBuildDir).get().asFile
+}
 
 // 'artifacts' is used in the generated ant scripts as build output directory
-ext.artifactsDir = new File(buildDir, 'artifacts')
-
+ext.artifactsDir = buildDirPath('artifacts')
+ext.reportsDir = buildDirPath('reports')
 
 wrapper {
     gradleVersion '8.0.2'
@@ -304,10 +307,14 @@ checkmodels {
     dependsOn(resolveMps)
 }
 
-task packageLanguages(type: Zip, dependsOn: buildLanguages) {
+task packageLanguages(type: Zip, dependsOn: [buildLanguages, cyclonedxBom]) {
     archiveBaseName = 'org.iets3.opensource'
-    from artifactsDir
-    include 'org.iets3.opensource/**'
+    from(artifactsDir) {
+        include 'org.iets3.opensource/**'
+    }
+    from(reportsDir) {
+        include 'sbom.json'
+    }
 }
 
 task packageTests(type: Zip, dependsOn: buildAndRunTests) {
@@ -525,15 +532,11 @@ tasks.named('githubRelease').configure {
 
 cyclonedxBom {
     // SBOM destination directory
-    destination = file("build/reports")
+    destination = reportsDir
     // The file name for the generated SBOMs (before the file format suffix)
     outputName = "sbom"
     // The file format generated, can be xml, json or all for generating both
     outputFormat = "json"
     // Don't include license texts in generated SBOMs
     includeLicenseText = false
-}
-
-assemble {
-    dependsOn('cyclonedxBom')
 }
