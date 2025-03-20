@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.components.functional.devkit" uuid="14b54709-6e21-4520-8f63-0e7cc8084a7d">
+  <exported-language name="25797606-3fb6-47b8-bc3c-b4384df7da44(org.iets3.components.functional)" />
+  <exported-language name="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" />
+  <extendedDevKits>
+    <extendedDevKit>903db50e-99bf-4552-9b9f-0c8c5d7a9d09(org.iets3.components.devkit)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+
