@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="test.org.iets3.core.trace" uuid="9eff3336-14d7-46c5-afe1-dcbad13c14c3" languageVersion="0" moduleVersion="0">
+<language namespace="org.iets3.core.trace.test" uuid="9eff3336-14d7-46c5-afe1-dcbad13c14c3" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -92,7 +92,7 @@
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="20" />
     <module reference="7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)" version="0" />
-    <module reference="9eff3336-14d7-46c5-afe1-dcbad13c14c3(test.org.iets3.core.trace)" version="0" />
+    <module reference="9eff3336-14d7-46c5-afe1-dcbad13c14c3(org.iets3.core.trace.test)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)</extendedLanguage>

@@ -7,20 +7,15 @@
   </languages>
   <imports />
   <registry>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="5585772046594451299" name="org.iets3.core.expr.collections.structure.SumOp" flags="ng" index="2$5g5R" />
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd" />
-      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
@@ -144,7 +139,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -152,16 +147,16 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
     </language>
@@ -323,9 +318,6 @@
     </node>
     <node concept="_ixoA" id="JV9IWPRy82" role="_iOnB" />
     <node concept="_ixoA" id="JV9IWPRy84" role="_iOnB" />
-  </node>
-  <node concept="2XOHcx" id="JV9IWPRy8W">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
   <node concept="_iOnU" id="JV9IWPRyTJ">
     <property role="1XBH2A" value="true" />
@@ -1118,7 +1110,7 @@
           <property role="TrG5h" value="sheet1521052290656" />
           <property role="3m1v9o" value="false" />
           <property role="TCVZL" value="true" />
-          <ref role="3m6S2j" node="2DnmbxUKT9l" resolve="SimpleNumberCalculator" />
+          <ref role="3m6S2j" node="2DnmbxUKT9l" resolve="sheet1521052290656" />
           <node concept="33c$z$" id="56SqGtkUE3S" role="33dGG4">
             <node concept="TuajH" id="56SqGtkUE3T" role="33cOLO">
               <property role="TuajE" value="First Number:" />
@@ -1261,7 +1253,7 @@
           <property role="TrG5h" value="sheet1521052290656" />
           <property role="3m1v9o" value="false" />
           <property role="TCVZL" value="true" />
-          <ref role="3m6S2j" node="2DnmbxUKT9l" resolve="SimpleNumberCalculator" />
+          <ref role="3m6S2j" node="2DnmbxUKT9l" resolve="sheet1521052290656" />
           <node concept="33c$z$" id="56SqGtkR1Gh" role="33dGG4">
             <node concept="TuajH" id="56SqGtkR1Gi" role="33cOLO">
               <property role="TuajE" value="First Number" />
@@ -1410,7 +1402,7 @@
           <property role="TrG5h" value="sheet1521052290656" />
           <property role="3m1v9o" value="false" />
           <property role="TCVZL" value="true" />
-          <ref role="3m6S2j" node="2DnmbxUKT9l" resolve="SimpleNumberCalculator" />
+          <ref role="3m6S2j" node="2DnmbxUKT9l" resolve="sheet1521052290656" />
           <node concept="33c$z$" id="56SqGtkUE$v" role="33dGG4">
             <node concept="TuajH" id="56SqGtkUE$w" role="33cOLO">
               <property role="TuajE" value="First Number" />
