@@ -6,6 +6,7 @@
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
     <use id="9d000fbd-bdca-4a46-b39b-c5ba9e79b38c" name="org.iets3.opensource.build.gentests" version="0" />
+    <use id="427a473d-5177-432c-9905-bcbceb71b996" name="jetbrains.mps.build.mps.runner" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -14579,7 +14580,7 @@
     </node>
     <node concept="1E1JtD" id="1oxkC6pg3$7" role="3989C9">
       <property role="BnDLt" value="true" />
-      <property role="TrG5h" value="test.org.iets3.core.trace" />
+      <property role="TrG5h" value="org.iets3.core.trace.test" />
       <property role="3LESm3" value="9eff3336-14d7-46c5-afe1-dcbad13c14c3" />
       <node concept="398BVA" id="1oxkC6pg3_Q" role="3LF7KH">
         <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
@@ -14623,6 +14624,22 @@
       <node concept="1SiIV0" id="1oxkC6pg3Fj" role="3bR37C">
         <node concept="1Busua" id="1oxkC6pg3Fk" role="1SiIV1">
           <ref role="1Busuk" node="1PzuxQOTPCe" resolve="org.iets3.core.trace" />
+        </node>
+      </node>
+      <node concept="3rtmxn" id="7lYRHvCebgO" role="3bR31x">
+        <node concept="3LXTmp" id="7lYRHvCebgP" role="3rtmxm">
+          <node concept="398BVA" id="7lYRHvCebgQ" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="7lYRHvCebgR" role="iGT6I">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="7lYRHvCebgS" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.core.trace" />
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="7lYRHvCebgU" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
         </node>
       </node>
     </node>
