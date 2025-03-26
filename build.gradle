@@ -96,7 +96,7 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
         } else {
             def isSnapshot = !(currentBranch.equals("master") || currentBranch.startsWith("datev-loon-staging-") || currentBranch.startsWith("datev-steuer-staging-"))
             version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber) + (isSnapshot ? "-SNAPSHOT" : "")
-        } 
+        }
         println "##teamcity[buildNumber '${version}']"
     } else {
         version = "$major.$minor-SNAPSHOT"
