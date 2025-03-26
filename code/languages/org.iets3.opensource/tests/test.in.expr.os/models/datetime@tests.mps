@@ -2,7 +2,7 @@
 <model ref="r:55f7f54b-9ace-4846-b63e-350652706af1(test.in.expr.os.datetime@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <devkit ref="ce1cf8e2-ad23-4a29-b20d-ca13a97e194f(org.iets3.core.expr.advanced.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
@@ -96,7 +96,6 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -326,7 +325,6 @@
   <node concept="_iOnU" id="26CArgU5oFZ">
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="date" />
-    <property role="2SXJ1i" value="true" />
     <node concept="2zPypq" id="26CArgU3lPZ" role="_iOnB">
       <property role="TrG5h" value="feb_1_2017" />
       <property role="0Rz4W" value="579282025" />
@@ -6605,6 +6603,84 @@
         </node>
         <node concept="pfQqD" id="6vUyz1ySMiz" role="pfQ1b">
           <property role="pfQqC" value="timespan2" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="3fu9FvasmkH" role="_fkp5">
+        <node concept="_fku$" id="3fu9FvasmkF" role="_fkur" />
+        <node concept="1QScDb" id="3fu9FvasmkD" role="_fkuY">
+          <node concept="3$AVBo" id="3fu9FvasmkB" role="1QScD9" />
+          <node concept="3iBYfx" id="3fu9Fvasmk_" role="30czhm">
+            <node concept="1QScDb" id="3fu9Fvasmkr" role="3iBYfI">
+              <node concept="2oxMaX" id="3fu9Fvasmkp" role="1QScD9">
+                <node concept="1fc2QT" id="3fu9Fvasmkn" role="2oxMaW">
+                  <property role="1fc2QY" value="2023" />
+                  <property role="1fc2QX" value="01" />
+                  <property role="1fc2QW" value="01" />
+                </node>
+              </node>
+              <node concept="1fc2QT" id="3fu9Fvasmkl" role="30czhm">
+                <property role="1fc2QY" value="2021" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="3fu9Fvasmkz" role="3iBYfI">
+              <node concept="2oxMaX" id="3fu9Fvasmkx" role="1QScD9">
+                <node concept="1fc2QT" id="3fu9Fvasmkv" role="2oxMaW">
+                  <property role="1fc2QY" value="2022" />
+                  <property role="1fc2QX" value="01" />
+                  <property role="1fc2QW" value="01" />
+                </node>
+              </node>
+              <node concept="1fc2QT" id="3fu9Fvasmkt" role="30czhm">
+                <property role="1fc2QY" value="2021" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pfQqD" id="3fu9Fvasmkj" role="pfQ1b">
+          <property role="pfQqC" value="timespan3" />
+        </node>
+        <node concept="3iBYfx" id="3fu9Fvasmkh" role="_fkuS">
+          <node concept="1QScDb" id="3fu9Fvasmkf" role="3iBYfI">
+            <node concept="2oxMaX" id="3fu9Fvasml1" role="1QScD9">
+              <node concept="1fc2QT" id="3fu9FvasmkZ" role="2oxMaW">
+                <property role="1fc2QY" value="2022" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+            <node concept="1fc2QT" id="3fu9FvasmkX" role="30czhm">
+              <property role="1fc2QY" value="2021" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="3fu9FvasmkV" role="3iBYfI">
+            <node concept="2oxMaX" id="3fu9FvasmkT" role="1QScD9">
+              <node concept="1fc2QT" id="3fu9FvarfgA" role="2oxMaW">
+                <property role="1fc2QY" value="2023" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+            <node concept="1fc2QT" id="3fu9FvasmkR" role="30czhm">
+              <property role="1fc2QY" value="2021" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+          </node>
+        </node>
+        <node concept="1z9TsT" id="3fu9FvasmkP" role="lGtFl">
+          <node concept="OjmMv" id="3fu9FvasmkN" role="1w35rA">
+            <node concept="19SGf9" id="3fu9FvasmkL" role="OjmMu">
+              <node concept="19SUe$" id="3fu9FvasmkJ" role="19SJt6">
+                <property role="19SUeA" value="start date identical --&gt; use end date fpr comparison and sorting " />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3dYjL0" id="6vUyz1ySMi$" role="_fkp5" />

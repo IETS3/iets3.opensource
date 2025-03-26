@@ -25,6 +25,7 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
+    <import index="90j9" ref="r:f2db22e1-5ffd-4b44-94b1-21c00f016390(org.iets3.core.expr.tracing.plugin.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="epcs" ref="b33d119e-196d-4497-977c-5c167b21fe33/r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.editor)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
@@ -55,6 +56,13 @@
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
+        <child id="5944657839000877563" name="hints" index="2ABdcP" />
+      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
+        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
+        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
@@ -782,6 +790,9 @@
       </node>
     </node>
     <node concept="Rtstu" id="1OitGwf5Zbs" role="6VMZX" />
+    <node concept="2aJ2om" id="3g9zm40OZqi" role="CpUAK">
+      <ref role="2$4xQ3" node="3g9zm40OYvO" resolve="IETS3Tracing" />
+    </node>
   </node>
   <node concept="RtYIR" id="2CFPPn7pH83">
     <property role="Rtri_" value="100" />
@@ -1700,9 +1711,9 @@
                 </node>
                 <node concept="liA8E" id="1_8vgjd6ar5" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
-                  <node concept="10M0yZ" id="1_8vgjd6br7" role="37wK5m">
-                    <ref role="3cqZAo" to="jpm3:7IhZGc$zknx" resolve="COLORIZE_CODE" />
-                    <ref role="1PxDUh" to="jpm3:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
+                  <node concept="10M0yZ" id="7uAdOXgXOQE" role="37wK5m">
+                    <ref role="3cqZAo" to="90j9:7IhZGc$zknx" resolve="COLORIZE_CODE" />
+                    <ref role="1PxDUh" to="90j9:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
                   </node>
                 </node>
               </node>
@@ -1800,9 +1811,9 @@
                   </node>
                   <node concept="liA8E" id="5U8d23QfV7o" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
-                    <node concept="10M0yZ" id="7IhZGc$AiEK" role="37wK5m">
-                      <ref role="3cqZAo" to="jpm3:7IhZGc$zknx" resolve="COLORIZE_CODE" />
-                      <ref role="1PxDUh" to="jpm3:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
+                    <node concept="10M0yZ" id="7uAdOXh1lbu" role="37wK5m">
+                      <ref role="3cqZAo" to="90j9:7IhZGc$zknx" resolve="COLORIZE_CODE" />
+                      <ref role="1PxDUh" to="90j9:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
                     </node>
                   </node>
                 </node>
@@ -1896,9 +1907,9 @@
                             </node>
                             <node concept="liA8E" id="5U8d23QlQhh" role="2OqNvi">
                               <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
-                              <node concept="10M0yZ" id="7IhZGc$AiVx" role="37wK5m">
-                                <ref role="1PxDUh" to="jpm3:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
-                                <ref role="3cqZAo" to="jpm3:7IhZGc$zknx" resolve="COLORIZE_CODE" />
+                              <node concept="10M0yZ" id="7uAdOXh1e0F" role="37wK5m">
+                                <ref role="3cqZAo" to="90j9:7IhZGc$zknx" resolve="COLORIZE_CODE" />
+                                <ref role="1PxDUh" to="90j9:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
                               </node>
                             </node>
                           </node>
@@ -1989,6 +2000,14 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2ABfQD" id="3g9zm40OYvA">
+    <property role="TrG5h" value="TracingHints" />
+    <node concept="2BsEeg" id="3g9zm40OYvO" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="IETS3Tracing" />
+      <property role="2BUmq6" value="Default trace values of nodes [IETS3]" />
     </node>
   </node>
 </model>
