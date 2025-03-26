@@ -12,7 +12,6 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -147,7 +146,6 @@
   <node concept="24kQdi" id="sflsE7peFn">
     <ref role="1XX52x" to="f3o0:sflsE7peCK" resolve="StorePatientData" />
     <node concept="3EZMnI" id="sflsE7peFs" role="2wV5jI">
-      <node concept="2iRfu4" id="sflsE7peFt" role="2iSdaV" />
       <node concept="3F0ifn" id="sflsE7peFp" role="3EZMnx">
         <property role="3F0ifm" value="db-store*" />
       </node>
@@ -211,6 +209,7 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="l2Vlx" id="1ASK_HedIsS" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="sflsE7piEi">
