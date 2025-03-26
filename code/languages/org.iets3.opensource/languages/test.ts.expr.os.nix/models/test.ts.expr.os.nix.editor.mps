@@ -9,6 +9,7 @@
   <imports>
     <import index="eddd" ref="r:76654092-7126-4d48-8113-566c63e58f87(test.ts.expr.os.nix.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -28,6 +29,12 @@
     <ref role="1XX52x" to="eddd:7DMIV6UA9Ve" resolve="NixLiteral" />
     <node concept="PMmxH" id="7DMIV6UAa55" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6bCTfmNc$h0">
+    <ref role="1XX52x" to="eddd:7DMIV6UAjuN" resolve="NixType" />
+    <node concept="PMmxH" id="6bCTfmNc$l4" role="2wV5jI">
+      <ref role="PMmxG" to="buwp:4MeRni2GLvj" resolve="TypeAlias" />
     </node>
   </node>
 </model>
