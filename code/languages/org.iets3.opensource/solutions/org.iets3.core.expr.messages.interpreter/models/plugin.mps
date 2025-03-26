@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
@@ -82,7 +82,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -164,7 +164,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -217,7 +217,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="4AahbtV39TH" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                    <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
                   </node>
                 </node>
                 <node concept="TvHiN" id="4AahbtV39TI" role="3ElQJh" />
@@ -252,7 +252,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="4AahbtURe9d" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                    <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
                   </node>
                 </node>
                 <node concept="TvHiN" id="4AahbtURe9e" role="3ElQJh" />
@@ -287,7 +287,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="4AahbtURbKi" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                    <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
                   </node>
                 </node>
                 <node concept="TvHiN" id="4AahbtURbKj" role="3ElQJh" />
@@ -482,7 +482,7 @@
       <ref role="qq9wM" to="kelk:3vxfdxblP3W" resolve="TypeCoercion" />
       <node concept="3vetai" id="1CNpG_h8z$B" role="3vQZUl">
         <node concept="rqRoa" id="1CNpG_h8z$R" role="3vdyny">
-          <ref role="rqRob" to="kelk:3vxfdxblP40" resolve="expr" />
+          <ref role="rqRob" to="hm2y:3G_qVqIw4zp" resolve="expr" />
         </node>
       </node>
     </node>

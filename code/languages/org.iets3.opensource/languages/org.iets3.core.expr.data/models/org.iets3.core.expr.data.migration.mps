@@ -5,7 +5,7 @@
     <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="2" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="2" />
     <use id="9882f4ad-1955-46fe-8269-94189e5dbbf2" name="jetbrains.mps.lang.migration.util" version="0" />
     <devkit ref="2787ae0c-1f54-4fbf-b0b7-caf2b5beecbc(jetbrains.mps.devkit.aspect.migration)" />
@@ -62,7 +62,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -71,12 +71,13 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -155,7 +156,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -213,7 +214,6 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
   </registry>
@@ -291,7 +291,7 @@
                           <node concept="2OqwBi" id="2OsjbbtceDo" role="3clFbG">
                             <node concept="2OqwBi" id="2Osjbbtce0F" role="2Oq$k0">
                               <node concept="37vLTw" id="2OsjbbtcdCh" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2Osjbbtcdx8" resolve="it" />
+                                <ref role="3cqZAo" node="4z0AnX81780" resolve="it" />
                               </node>
                               <node concept="3TrEf2" id="2OsjbbtcemI" role="2OqNvi">
                                 <ref role="3Tt5mk" to="e9k1:stdmzxm7Y5" resolve="col_old" />
@@ -301,9 +301,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="2Osjbbtcdx8" role="1bW2Oz">
+                      <node concept="gl6BB" id="4z0AnX81780" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="2Osjbbtcdx9" role="1tU5fm" />
+                        <node concept="2jxLKc" id="4z0AnX81781" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -321,7 +321,7 @@
                                 <node concept="36biLy" id="2Osjbbtchld" role="28nt2d">
                                   <node concept="2OqwBi" id="2OsjbbtchMu" role="36biLW">
                                     <node concept="37vLTw" id="2Osjbbtchqb" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="2OsjbbtcfM_" resolve="it" />
+                                      <ref role="3cqZAo" node="4z0AnX81782" resolve="it" />
                                     </node>
                                     <node concept="3TrEf2" id="2Osjbbtcif2" role="2OqNvi">
                                       <ref role="3Tt5mk" to="e9k1:stdmzxm7Y5" resolve="col_old" />
@@ -333,7 +333,7 @@
                           </node>
                           <node concept="2OqwBi" id="2Osjbbtcg59" role="37vLTJ">
                             <node concept="37vLTw" id="2OsjbbtcfRF" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2OsjbbtcfM_" resolve="it" />
+                              <ref role="3cqZAo" node="4z0AnX81782" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="2Osjbbtcg$o" role="2OqNvi">
                               <ref role="3Tt5mk" to="e9k1:7F9023_Orfu" resolve="col" />
@@ -346,7 +346,7 @@
                           <node concept="10Nm6u" id="2OsjbbtcjPM" role="37vLTx" />
                           <node concept="2OqwBi" id="2OsjbbtcivV" role="37vLTJ">
                             <node concept="37vLTw" id="2Osjbbtcis9" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2OsjbbtcfM_" resolve="it" />
+                              <ref role="3cqZAo" node="4z0AnX81782" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="2Osjbbtcj3e" role="2OqNvi">
                               <ref role="3Tt5mk" to="e9k1:stdmzxm7Y5" resolve="col_old" />
@@ -355,9 +355,9 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="2OsjbbtcfM_" role="1bW2Oz">
+                    <node concept="gl6BB" id="4z0AnX81782" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="2OsjbbtcfMA" role="1tU5fm" />
+                      <node concept="2jxLKc" id="4z0AnX81783" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
@@ -429,7 +429,7 @@
   <node concept="Z5qvL" id="3eH6BL3k5uV">
     <property role="Z5qvQ" value="1" />
     <property role="TrG5h" value="Migrate_MoveLinkUp_1" />
-    <property role="1AQGQl" value="Move link `type` to concept `ITyped`" />
+    <property role="1AQGQl" value="Move link `type` from concept `DataColDef` to concept `ITyped`" />
     <node concept="Z4OXk" id="3eH6BL3k5v6" role="Z5rET">
       <node concept="2pBcaW" id="3eH6BL3k5v4" role="Z5P1v">
         <property role="2pBcoG" value="231307155597474194" />
@@ -462,6 +462,86 @@
             <property role="2x4o5l" value="true" />
             <property role="2x4n5l" value="1hq0bdm6y50lk" />
             <node concept="2V$Bhx" id="3eH6BL3k5v2" role="2x4n5j">
+              <property role="2V$B1T" value="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.base" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="W$Crc" id="7xcRpYKGZMe">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="1" />
+    <property role="TrG5h" value="Update References: expr-&gt;expr" />
+    <node concept="1w76tK" id="7xcRpYKGZMf" role="1w76sc">
+      <node concept="1w76tN" id="7xcRpYKGZMg" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="7xcRpYKGZMh" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="7xcRpYKGZMi" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="7xcRpYKGZMj" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="7xcRpYKGZMl" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="7xcRpYKGZMd" role="hSBgu">
+        <property role="2pBcoG" value="512624657163648903" />
+        <property role="2pBcow" value="r:00903dee-f0b0-48de-9335-7cb3f90ae462(org.iets3.core.expr.data.structure)" />
+        <property role="2pBc3U" value="expr" />
+      </node>
+      <node concept="2pBcaW" id="7xcRpYKGZMk" role="hSBgs">
+        <property role="2pBcoG" value="4261931054731905241" />
+        <property role="2pBcow" value="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+        <property role="2pBc3U" value="expr" />
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="7xcRpYKGZMm">
+    <property role="Z5qvQ" value="2" />
+    <property role="TrG5h" value="Migrate_MoveLinkUp_2" />
+    <property role="1AQGQl" value="Move link `expr` from concept `DataTableLookUp` to concept `IContainExpressionParam`" />
+    <node concept="Z4OXk" id="7xcRpYKGZMx" role="Z5rET">
+      <node concept="2pBcaW" id="7xcRpYKGZMv" role="Z5P1v">
+        <property role="2pBcoG" value="512624657163648903" />
+        <property role="2pBcow" value="r:00903dee-f0b0-48de-9335-7cb3f90ae462(org.iets3.core.expr.data.structure)" />
+        <property role="2pBc3U" value="expr_old" />
+      </node>
+      <node concept="2pBcaW" id="7xcRpYKGZMw" role="Z5P1t">
+        <property role="2pBcoG" value="4261931054731905241" />
+        <property role="2pBcow" value="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+        <property role="2pBc3U" value="expr" />
+      </node>
+      <node concept="7a1rN" id="7xcRpYKGZMu" role="7agGg">
+        <node concept="HUanS" id="7xcRpYKGZMo" role="HTpAE">
+          <property role="HUanP" value="expr_old" />
+          <property role="HUanQ" value="3w7i9wfmt7yf" />
+          <node concept="2x4n5u" id="7xcRpYKGZMp" role="HUanR">
+            <property role="2x4mPI" value="DataTableLookUp" />
+            <property role="2x4n5l" value="3w7i9wfmt7ya" />
+            <node concept="2V$Bhx" id="7xcRpYKGZMq" role="2x4n5j">
+              <property role="2V$B1T" value="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.data" />
+            </node>
+          </node>
+        </node>
+        <node concept="HUanS" id="7xcRpYKGZMr" role="HTpAD">
+          <property role="HUanP" value="expr" />
+          <property role="HUanQ" value="wdoogxd8gnvd" />
+          <node concept="2x4n5u" id="7xcRpYKGZMs" role="HUanR">
+            <property role="2x4mPI" value="IContainExpressionParam" />
+            <property role="2x4o5l" value="true" />
+            <property role="2x4n5l" value="wdoogxd8gnvc" />
+            <node concept="2V$Bhx" id="7xcRpYKGZMt" role="2x4n5j">
               <property role="2V$B1T" value="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" />
               <property role="2V$B1Q" value="org.iets3.core.expr.base" />
             </node>

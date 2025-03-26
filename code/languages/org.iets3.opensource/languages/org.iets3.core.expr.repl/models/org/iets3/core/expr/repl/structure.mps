@@ -59,7 +59,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -69,6 +69,7 @@
     <property role="TrG5h" value="REPL" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="a read–eval–print loop (REPL), also called interactive toplevel shell" />
+    <property role="34LRSv" value="repl" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="3FexrMiPJGa" role="1TKVEi">
       <property role="IQ2ns" value="4237471344366123786" />

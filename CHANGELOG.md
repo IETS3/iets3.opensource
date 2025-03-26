@@ -5,10 +5,39 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## Feburary 2025
+
+### Added
+
+- Move languages org.iets3.protocol.transport, org.iets3.components.functional, org.iets3.components.hardware, org.iets3.components.toplevel.adapter, org.iets3.core.mapping, and org.iets3.safety.attributes from iets3.core to iets3.os
+
+- a new approach to run interpreter test case from command line (and inside MPS) directly without invoking JUnit code generation
+- Added EmptyType to Pluggable Type Facade (PTF). If your language has some kind of _NixType_, you should override `PrimitiveTypeMapper.isEmptyType()` to recognize your _NixType_.
+
+
+### Fixed
+
+- Strings are not comparable with strings with constraints.
+- The usability of editors (code completion menu, color) was improved.
+
+## January 2025
+
+### Added
+
+- Added a language to accommodate variability management concepts and features. Initially it provides only an Interface to mark variation points.
+
+### Fixed
+
+- The copy and pasting of existing nodes was slightly improved.
+- NPE in `ISolvableMonitorNotification#projectOpen` ([#1202](https://github.com/IETS3/iets3.opensource/issues/1202)).
+
 ## December 2024
 
 ### Changed
 
+- All custom views are deactivated by default. You can enable each of them through their own extension point: components explorer (`components` extension point), specification explorer (`spec` extension point), requirements explorer (`requirements` extension point), bookmark explorer (`bookmark` extension point).
+- Empty list literals now have automatically the length constraint 0.
+- Lists of lists now derive the correct size.
 - The line wrapping ability of some concepts was improved.
 
 ## November 2024
@@ -29,6 +58,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Physical units now also support metric scaling for only the positive and negative prefixes. Scaling can also be overwritten for units by overwritten `IUnitLangConfig#getOverwrittenScaling` for the extension point `PhysUnitLangConfig`.
 - Execution of Test by Interpreter can be done without generation and compilation.
 
+
+### Added
+
+- If two quantities are compatible but implicit conversions are not enabled, this check can now be disabled through setting `IUnitLangConfig#allowMixingUnitPrefixesWithoutConversions` to true for the `PhysUnitLangConfig` extension point.
 
 ## October 2024
 
@@ -195,6 +228,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - `NumberLiteral` can now be converted to a `BigDecimal` with the method `toBigDecimal`.
+- Uncatched `DateTimeException` during check DateLiteral
+- The type parameter is now used in the Java generation of the FailExpr.
 -  Named based access of result columns of multi decision tables were added. Columns can be referenced by name and coexist with the index based access.
 
 ## December 2023

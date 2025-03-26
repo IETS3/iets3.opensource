@@ -5,8 +5,9 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
   </languages>
   <imports>
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="f3o0" ref="r:1c0a8177-746c-4e40-aabd-b06f37e1ab08(org.iets3.core.expr.typetags.lib.structure)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -15,6 +16,9 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -44,7 +48,7 @@
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
-      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
@@ -57,8 +61,8 @@
     <ref role="1XX52x" to="f3o0:1xEzHAktQh6" resolve="ReadDataFromURLExpression" />
     <node concept="3EZMnI" id="1xEzHAktRFh" role="2wV5jI">
       <node concept="l2Vlx" id="1xEzHAktRFi" role="2iSdaV" />
-      <node concept="3F0ifn" id="1xEzHAktRFe" role="3EZMnx">
-        <property role="3F0ifm" value="read-from-url*" />
+      <node concept="PMmxH" id="1znK7yZdoXA" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZhztN" resolve="ExpressionKeywordAlias" />
       </node>
       <node concept="3F0ifn" id="1xEzHAktRFq" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -70,7 +74,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="1xEzHAktRFy" role="3EZMnx">
-        <ref role="1NtTu8" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+        <ref role="1NtTu8" to="hm2y:3G_qVqIw4zp" resolve="expr" />
       </node>
       <node concept="3F0ifn" id="1xEzHAktRFG" role="3EZMnx">
         <property role="3F0ifm" value="]" />
@@ -84,14 +88,17 @@
     <ref role="1XX52x" to="f3o0:6KxoTHgIT1B" resolve="SanitizeExpression" />
     <node concept="3EZMnI" id="6KxoTHgIT25" role="2wV5jI">
       <node concept="l2Vlx" id="6KxoTHgIT26" role="2iSdaV" />
-      <node concept="3F0ifn" id="6KxoTHgIT22" role="3EZMnx">
-        <property role="3F0ifm" value="sanitize[" />
-        <node concept="11LMrY" id="6KxoTHgJaRy" role="3F10Kt">
+      <node concept="PMmxH" id="1znK7yZdpdN" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZhztN" resolve="ExpressionKeywordAlias" />
+      </node>
+      <node concept="3F0ifn" id="1znK7yZdp5G" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="1znK7yZdp9K" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F1sOY" id="6KxoTHgIT2m" role="3EZMnx">
-        <ref role="1NtTu8" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+        <ref role="1NtTu8" to="hm2y:3G_qVqIw4zp" resolve="expr" />
       </node>
       <node concept="3F0ifn" id="6KxoTHgIT2e" role="3EZMnx">
         <property role="3F0ifm" value="]" />
@@ -105,14 +112,17 @@
     <ref role="1XX52x" to="f3o0:sflsE7kWAQ" resolve="TaintExpression" />
     <node concept="3EZMnI" id="sflsE7kWBq" role="2wV5jI">
       <node concept="l2Vlx" id="sflsE7kWBr" role="2iSdaV" />
-      <node concept="3F0ifn" id="sflsE7kWBs" role="3EZMnx">
-        <property role="3F0ifm" value="taint[" />
-        <node concept="11LMrY" id="sflsE7kWBt" role="3F10Kt">
+      <node concept="PMmxH" id="1znK7yZdpKa" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZhztN" resolve="ExpressionKeywordAlias" />
+      </node>
+      <node concept="3F0ifn" id="1znK7yZdpy0" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="1znK7yZdpC5" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F1sOY" id="sflsE7kWBu" role="3EZMnx">
-        <ref role="1NtTu8" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+        <ref role="1NtTu8" to="hm2y:3G_qVqIw4zp" resolve="expr" />
       </node>
       <node concept="3F0ifn" id="sflsE7kWBv" role="3EZMnx">
         <property role="3F0ifm" value="]" />
@@ -126,14 +136,17 @@
     <ref role="1XX52x" to="f3o0:sflsE7lp9_" resolve="EffectExpression" />
     <node concept="3EZMnI" id="sflsE7lpa0" role="2wV5jI">
       <node concept="l2Vlx" id="sflsE7lpa1" role="2iSdaV" />
-      <node concept="3F0ifn" id="sflsE7lpa2" role="3EZMnx">
-        <property role="3F0ifm" value="effect*[" />
-        <node concept="11LMrY" id="sflsE7lpa3" role="3F10Kt">
+      <node concept="PMmxH" id="1znK7yZdoPx" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZhztN" resolve="ExpressionKeywordAlias" />
+      </node>
+      <node concept="3F0ifn" id="1znK7yZdoDo" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="1znK7yZdoJt" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F1sOY" id="sflsE7lpa4" role="3EZMnx">
-        <ref role="1NtTu8" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+        <ref role="1NtTu8" to="hm2y:3G_qVqIw4zp" resolve="expr" />
       </node>
       <node concept="3F0ifn" id="sflsE7lpa5" role="3EZMnx">
         <property role="3F0ifm" value="]" />
@@ -146,8 +159,8 @@
   <node concept="24kQdi" id="sflsE7peFn">
     <ref role="1XX52x" to="f3o0:sflsE7peCK" resolve="StorePatientData" />
     <node concept="3EZMnI" id="sflsE7peFs" role="2wV5jI">
-      <node concept="3F0ifn" id="sflsE7peFp" role="3EZMnx">
-        <property role="3F0ifm" value="db-store*" />
+      <node concept="PMmxH" id="1znK7yZdprV" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:1znK7yZhztN" resolve="ExpressionKeywordAlias" />
       </node>
       <node concept="3F0ifn" id="sflsE7peF_" role="3EZMnx">
         <property role="3F0ifm" value="[" />

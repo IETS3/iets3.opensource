@@ -34,7 +34,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -76,6 +76,7 @@
     <property role="EcuMT" value="6913547888673489335" />
     <property role="TrG5h" value="GenericTraceQuery" />
     <property role="R4oN_" value="a generic trace query" />
+    <property role="34LRSv" value="generic trace query" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="5ZLQMNq2hPS" role="1TKVEi">
       <property role="IQ2ns" value="6913547888673496440" />

@@ -21,7 +21,8 @@ We take care of porting changes done in older supported MPS versions to the newe
 For details see [wiki](https://github.com/IETS3/iets3.opensource/wiki/Supported-MPS-Versions).
 
 ### What MPS versions are currently supported? 
-- MPS 2022.3 (branch: [master](https://github.com/IETS3/iets3.opensource/tree/master)) 
+- MPS 2023.2 (branch: [master](https://github.com/IETS3/iets3.opensource/tree/master)) 
+- MPS 2022.3 (branch: [maintenance/mps20223](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20223)) 
 - MPS 2022.2 (branch: [maintenance/mps20222](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20222)) 
 - MPS 2021.3 (branch: [maintenance/mps20213](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20213)) 
 - MPS 2021.2 (branch: [maintenance/mps20212](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20212)) 
@@ -54,6 +55,7 @@ The project is separated into the following virtual packages:
 | [build-languages.xml](http://127.0.0.1:63320/node?ref=r%3Ac3d6ae0c-8b10-477f-a3e9-5dc8700ceb13%28org.iets3.opensource.build.build%29%2F6354991446090808661) | This ant script contains all languages and generates the finished zip file. |
 | [build-distro.xml](http://127.0.0.1:63320/node?ref=r%3Ac3d6ae0c-8b10-477f-a3e9-5dc8700ceb13%28org.iets3.opensource.build.build%29%2F8098566576010865830) | This ant script combines the files from the mbeddr platform with the files from the previous script. |
 | [build-tests.xml](http://127.0.0.1:63320/node?ref=r%3Ac3d6ae0c-8b10-477f-a3e9-5dc8700ceb13%28org.iets3.opensource.build.build%29%2F950113207300454071) | This ant script contains all the test languages and solutions and also runs the KernelF generated tests as part of the build. This is achieved by including an instance of [RunKernelFGeneratedTests](http://127.0.0.1:63320/node?ref=r%3A2ce4b587-5587-43f7-8005-e3fb84f231b0%28org.iets3.opensource.build.gentests.structure%29%2F4604852045247358203). |
+| [build-testInterpreter.xml](http://127.0.0.1:63320/node?ref=r%3Ac3d6ae0c-8b10-477f-a3e9-5dc8700ceb13%28org.iets3.opensource.build.build%29%2F9022445546689294517) | This ant script generates and builds all project components to run the interpreter on test cases, without generating code for the tests. All test cases (specified per solution [here](http://127.0.0.1:63320/node?ref=r%3Ac3d6ae0c-8b10-477f-a3e9-5dc8700ceb13%28org.iets3.opensource.build.build%29%2F8961448726282409247)), are not generated but directly run using the interpreter.|  
 
 ### analysis
 | Name  | Description |
@@ -167,6 +169,11 @@ This package includes all things related to tracing. More info: [page 27 debugge
 | test.iets3.core.tracequery | It contains trace tests. |
 | org.iets3.core.trace | It implements trace attributes (can be for example used in components). |
 | org.iets3.core.test | It is a language for trace testing. |
+
+### variability
+| Name  | Description |
+| ------------- | ------------- |
+| org.iets3.variability.artifacts.base | This language contains basic concepts and interfaces related to variability. |
 
 ## Devkits
 
