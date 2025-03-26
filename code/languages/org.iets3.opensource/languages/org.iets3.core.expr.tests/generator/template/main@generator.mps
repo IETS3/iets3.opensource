@@ -292,14 +292,14 @@
       </node>
       <node concept="2ShNRf" id="5Vv2MCkyVeg" role="33vP2m">
         <node concept="1pGfFk" id="5Vv2MCkyVeh" role="2ShVmc">
-          <ref role="37wK5l" to="tp6m:4dqLDEYYHvm" />
+          <ref role="37wK5l" to="tp6m:4dqLDEYYHvm" resolve="TestParametersCacheExtension" />
           <node concept="2OqwBi" id="6US8dKoUjLt" role="37wK5m">
             <node concept="2OqwBi" id="6US8dKoUiaJ" role="2Oq$k0">
               <node concept="2OqwBi" id="6US8dKoUhnW" role="2Oq$k0">
                 <node concept="2OqwBi" id="6US8dKoUgEq" role="2Oq$k0">
                   <node concept="2ShNRf" id="6US8dKoUfqM" role="2Oq$k0">
                     <node concept="1pGfFk" id="6US8dKoUflU" role="2ShVmc">
-                      <ref role="37wK5l" to="tp6m:6US8dKoOF6n" />
+                      <ref role="37wK5l" to="tp6m:6US8dKoOF6n" resolve="TestParametersCacheBuilder" />
                       <node concept="3VsKOn" id="4dqLDEZ0kE$" role="37wK5m">
                         <ref role="3VsUkX" node="21ieoTcCJQ7" resolve="MPSTestCase" />
                       </node>

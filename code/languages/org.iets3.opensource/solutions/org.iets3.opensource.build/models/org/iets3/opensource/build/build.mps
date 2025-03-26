@@ -563,7 +563,7 @@
         <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
       <node concept="m$_yC" id="2MtffYR1LIf" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:1JaUSFUm4G_" />
+        <ref role="m$_y1" to="ffeo:1JaUSFUm4G_" resolve="jetbrains.mps.editor.contextActions" />
       </node>
       <node concept="m$_yC" id="6rBfBe1Xr41" role="m$_yJ">
         <ref role="m$_y1" to="al5i:6rBfBe1XaAA" resolve="com.mbeddr.mpsutil.contextactions" />
@@ -600,6 +600,9 @@
       <node concept="m$_yC" id="6rBfBe1X9Za" role="m$_yJ">
         <ref role="m$_y1" to="al5i:6rBfBe1WRMd" resolve="com.mbeddr.mpsutil.varscope" />
       </node>
+      <node concept="m$_yC" id="6P$y2mK3ucL" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:77YfcvOMg42" resolve="de.itemis.mps.compare" />
+      </node>
       <node concept="m$_yC" id="OJe_lRZz8U" role="m$_yJ">
         <ref role="m$_y1" to="90a9:7klUZA6XM5S" resolve="de.slisson.mps.conditionalEditor" />
       </node>
@@ -619,7 +622,7 @@
         <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
       </node>
       <node concept="m$_yC" id="22RcmJOM4FQ" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:hCVXosGNJH" />
+        <ref role="m$_y1" to="90a9:hCVXosGNJH" resolve="com.mbeddr.mpsutil.modellisteners" />
       </node>
       <node concept="m$_yC" id="4C8CrwW7i1C" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4iIKqJTZ5I8" resolve="de.q60.shadowmodels" />
@@ -905,7 +908,7 @@
         <ref role="m$f5T" node="408CVmKBaLA" resolve="iets3.req.os.devkit" />
       </node>
       <node concept="m$_yC" id="2MtffYR5Ene" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:1JaUSFUm4G_" />
+        <ref role="m$_y1" to="ffeo:1JaUSFUm4G_" resolve="jetbrains.mps.editor.contextActions" />
       </node>
       <node concept="m$_yC" id="5wLtKNeT2TH" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />

@@ -100,6 +100,8 @@
         <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="11" />
         <module reference="272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.collections.rt)" version="0" />
         <module reference="4517af98-2eaa-4f19-a962-92df60010094(org.iets3.core.expr.genjava.base#8286534136181746510)" version="0" />
+        <module reference="3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)" version="0" />
+        <module reference="646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)" version="0" />
         <module reference="5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40(org.iets3.core.expr.genjava.simpleTypes)" version="0" />
         <module reference="0ab6f947-2451-4a3a-80a3-33b77e399874(org.iets3.core.expr.genjava.simpleTypes#8286534136182342700)" version="0" />
         <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="5" />
