@@ -152,9 +152,6 @@
         <child id="2807135271607939857" name="baseType" index="Uns6T" />
       </concept>
       <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy" />
-      <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
-        <child id="5115872837156802411" name="expr_old" index="30czhm" />
-      </concept>
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
       <concept id="5115872837156761034" name="org.iets3.core.expr.base.structure.NotEqualsExpression" flags="ng" index="30cPrR" />
       <concept id="5115872837156687889" name="org.iets3.core.expr.base.structure.GreaterEqualsExpression" flags="ng" index="30d6GG" />
@@ -283,9 +280,7 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
@@ -492,15 +487,6 @@
   <node concept="_iOnU" id="7aRvJQErc4N">
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="TemporalTests" />
-    <node concept="2zPypq" id="1fRBlzmWEl5" role="_iOnB">
-      <property role="TrG5h" value="beforeDate0" />
-      <property role="0Rz4W" value="579632180" />
-      <node concept="1fc2QT" id="1fRBlzmWEl6" role="2zPyp_">
-        <property role="1fc2QY" value="1999" />
-        <property role="1fc2QX" value="01" />
-        <property role="1fc2QW" value="31" />
-      </node>
-    </node>
     <node concept="2zPypq" id="7aRvJQErc4O" role="_iOnB">
       <property role="TrG5h" value="date0" />
       <property role="0Rz4W" value="579632180" />
@@ -4510,56 +4496,6 @@
         </node>
       </node>
       <node concept="3dYjL0" id="46fmv66pL1O" role="_fkp5" />
-    </node>
-    <node concept="_ixoA" id="1fRBlzmZo7o" role="_iOnB" />
-    <node concept="2zPypq" id="1fRBlzmZoNF" role="_iOnB">
-      <property role="TrG5h" value="toReduce2" />
-      <property role="0Rz4W" value="1419291713" />
-      <node concept="FfN7I" id="1fRBlzmZoNG" role="2zPyp_">
-        <node concept="FfN7L" id="1fRBlzn1LYy" role="FfN64">
-          <node concept="1fc2QT" id="1fRBlzn1LYz" role="FfN7M">
-            <property role="1fc2QY" value="2000" />
-            <property role="1fc2QX" value="02" />
-            <property role="1fc2QW" value="02" />
-          </node>
-          <node concept="30bXRB" id="1fRBlzn1M8e" role="FfN7O">
-            <property role="30bXRw" value="100" />
-          </node>
-        </node>
-        <node concept="FfN7L" id="1fRBlzmZoNQ" role="FfN64">
-          <node concept="1fc2QT" id="1fRBlzmZoNR" role="FfN7M">
-            <property role="1fc2QY" value="2000" />
-            <property role="1fc2QX" value="06" />
-            <property role="1fc2QW" value="01" />
-          </node>
-          <node concept="30bXRB" id="1fRBlzmZoNS" role="FfN7O">
-            <property role="30bXRw" value="220.00" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="_ixoA" id="1fRBlzmZotx" role="_iOnB" />
-    <node concept="2zPypq" id="1fRBlzmZqf8" role="_iOnB">
-      <property role="TrG5h" value="reduceBeforeFirstSlice" />
-      <property role="0Rz4W" value="1328046909" />
-      <node concept="1QScDb" id="1fRBlzmZqf9" role="2zPyp_">
-        <node concept="1DAXCi" id="1fRBlzmZqfa" role="1QScD9">
-          <node concept="1DAXD4" id="1fRBlzmZqfb" role="1DAXD6" />
-          <node concept="1DA4ig" id="1fRBlzmZqfc" role="1DAXD0">
-            <property role="2eV8ZZ" value="02" />
-            <property role="2eV9xE" value="2000" />
-            <node concept="30bXRB" id="1fRBlzmZqfd" role="1DA4ih">
-              <property role="30bXRw" value="2004" />
-            </node>
-            <node concept="30bXRB" id="1fRBlzmZqfe" role="1DA4iq">
-              <property role="30bXRw" value="1" />
-            </node>
-          </node>
-        </node>
-        <node concept="_emDc" id="1fRBlzmZqff" role="30czhm">
-          <ref role="_emDf" node="1fRBlzmZoNF" resolve="toReduce2" />
-        </node>
-      </node>
     </node>
     <node concept="_ixoA" id="1fRBlzmZpyx" role="_iOnB" />
     <node concept="_ixoA" id="7SY$c$iii7R" role="_iOnB" />
