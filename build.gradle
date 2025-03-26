@@ -260,6 +260,14 @@ task failOnTestError() {
 buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
 
+tasks.register('migrate') {
+
+}
+
+tasks.register('remigrate') {
+
+}
+
 apply plugin: 'modelcheck'
 
 File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
