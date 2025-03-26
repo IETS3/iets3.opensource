@@ -1,4 +1,7 @@
 import de.itemis.mps.gradle.*
+import de.itemis.mps.gradle.tasks.MpsMigrate
+import de.itemis.mps.gradle.tasks.Remigrate
+import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 import groovy.xml.XmlSlurper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -9,21 +12,28 @@ buildscript {
     repositories {
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
-    dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.29.1.1.d7f2744'
-    }
 }
 
 plugins {
     id 'base'
     id 'maven-publish'
+    id 'de.itemis.mps.gradle.common' version '1.29.+'
+    id 'de.itemis.mps.gradle.launcher' version '2.5.2.+'
     id "com.github.breadmoirai.github-release" version "2.4.1"
     id "org.cyclonedx.bom" version "1.8.2"
 }
 
+ext.dependencyRepositories = [
+    'https://artifacts.itemis.cloud/repository/maven-mps/'
+]
+
 repositories {
-    maven {
-        url 'https://artifacts.itemis.cloud/repository/maven-mps/'
+    // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
+    // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+        }
     }
     mavenCentral()
 }
@@ -86,7 +96,7 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
         } else {
             def isSnapshot = !(currentBranch.equals("master") || currentBranch.startsWith("datev-loon-staging-") || currentBranch.startsWith("datev-steuer-staging-"))
             version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber) + (isSnapshot ? "-SNAPSHOT" : "")
-        }
+        } 
         println "##teamcity[buildNumber '${version}']"
     } else {
         version = "$major.$minor-SNAPSHOT"
@@ -105,6 +115,7 @@ ext.artifactsDir = new File(buildDir, 'artifacts')
 
 configurations {
     mps
+    rerunMigrationsBackend
     languageLibs
     junitAnt
     pcollections // Synced to org.iets3.core.expr.base.collections.stubs/lib
@@ -113,6 +124,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
+    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.0.5.+")
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
     junitAnt 'org.apache.ant:ant-junit:1.10.15'
@@ -171,6 +183,8 @@ task resolveBigMath(type: Sync) {
 }
 
 task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs, resolvePcollections, resolveBigMath])
+
+ext.mpsHomeDir = resolveMps.destinationDir
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
@@ -254,6 +268,39 @@ task failOnTestError() {
 }
 buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
+
+tasks.register('migrate', MpsMigrate) {
+    dependsOn(resolveMps, 'resolveMpsForModelcheck', 'downloadJbr', 'buildLanguages', 'buildAndRunTests')
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+
+    haltOnPrecheckFailure = false
+    haltOnDependencyError = true
+
+    mpsHome = mpsHomeDir
+
+    projectDirectories.from('code/languages/org.iets3.opensource')
+    folderMacros['iets3.github.opensource.home'] = rootProject.layout.projectDirectory
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins'))
+
+    maxHeapSize = '4G'
+}
+
+tasks.register('remigrate', Remigrate) {
+    mustRunAfter('migrate')
+    mustRunAfter('buildLanguages', 'buildAndRunTests')
+
+    dependsOn(resolveMps, 'resolveMpsForModelcheck','downloadJbr')
+
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+
+    mpsHome = mpsHomeDir
+    projectDirectories.from('code/languages/org.iets3.opensource')
+    folderMacros['iets3.github.opensource.home'] = rootProject.layout.projectDirectory
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins'))
+    maxHeapSize = '4G'
+}
 
 apply plugin: 'modelcheck'
 
