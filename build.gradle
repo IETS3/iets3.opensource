@@ -237,6 +237,14 @@ task failOnTestError() {
 buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
 
+tasks.register('migrate') {
+
+}
+
+tasks.register('remigrate') {
+
+}
+
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     archiveBaseName = 'org.iets3.opensource'
     from artifactsDir
