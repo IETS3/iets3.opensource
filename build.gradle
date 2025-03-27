@@ -320,7 +320,7 @@ File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
 def pluginsList = []
 
 modelcheck {
-    projectLocation =  new File("$projectDir/code")
+    projectLocation = new File("$projectDir/code/languages/org.iets3.opensource")
     mpsLocation = new File("$buildDir/mps")
     plugins = pluginsList
     mpsConfig = configurations.mps
