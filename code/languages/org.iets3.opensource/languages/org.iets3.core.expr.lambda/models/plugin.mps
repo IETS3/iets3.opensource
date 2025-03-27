@@ -2595,7 +2595,7 @@
                 <ref role="3cqZAo" node="3fi3fTlpKtC" resolve="le" />
               </node>
               <node concept="2qgKlT" id="XbOhLk5$Ln" role="2OqNvi">
-                <ref role="37wK5l" to="5s8v:XbOhLk5ek9" resolve="getLamda" />
+                <ref role="37wK5l" to="5s8v:XbOhLk5ek9" resolve="getLambda" />
               </node>
             </node>
             <node concept="37vLTw" id="XbOhLk5rQE" role="37vLTJ">
@@ -2674,7 +2674,7 @@
                   <ref role="3cqZAo" node="3fi3fTlpKtC" resolve="le" />
                 </node>
                 <node concept="2qgKlT" id="XbOhLk5SI_" role="2OqNvi">
-                  <ref role="37wK5l" to="5s8v:XbOhLk5ekn" resolve="putLamda" />
+                  <ref role="37wK5l" to="5s8v:XbOhLk5ekn" resolve="putLambda" />
                   <node concept="37vLTw" id="XbOhLk5TWD" role="37wK5m">
                     <ref role="3cqZAo" node="3fi3fTlpKto" resolve="lambda" />
                   </node>
@@ -2700,7 +2700,7 @@
                 <ref role="3cqZAo" node="3fi3fTlpKtC" resolve="le" />
               </node>
               <node concept="2qgKlT" id="5s__jxCqyeA" role="2OqNvi">
-                <ref role="37wK5l" to="5s8v:5s__jxCqcBE" resolve="getLamdaArg" />
+                <ref role="37wK5l" to="5s8v:5s__jxCqcBE" resolve="getLambdaArg" />
               </node>
             </node>
           </node>
@@ -2733,7 +2733,7 @@
                   <ref role="3cqZAo" node="3fi3fTlpKtC" resolve="le" />
                 </node>
                 <node concept="2qgKlT" id="5s__jxCqZgn" role="2OqNvi">
-                  <ref role="37wK5l" to="5s8v:5s__jxCq8Sv" resolve="putLamdaArg" />
+                  <ref role="37wK5l" to="5s8v:5s__jxCq8Sv" resolve="putLambdaArg" />
                   <node concept="37vLTw" id="5s__jxCr0ql" role="37wK5m">
                     <ref role="3cqZAo" node="5s__jxCqyez" resolve="lambdaArg" />
                   </node>
@@ -3313,7 +3313,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3fi3fTmWUT9" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="3fi3fTlpKwH" role="jymVt" />
@@ -3650,7 +3650,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3fi3fTmWYbt" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="5s__jxCoR7u" role="jymVt" />
