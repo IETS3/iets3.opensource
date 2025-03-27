@@ -10,7 +10,6 @@
   <exported-language name="64e79176-30a1-4836-821c-bf62ff6c6091(org.iets3.core.expr.natlang)" />
   <exported-language name="4621d3e3-b8a3-4bbe-b7ac-234b6e2d1d68(org.iets3.core.expr.temporal)" />
   <exported-language name="5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)" />
-  <exported-language name="2c8e8304-72f7-4e6a-853a-ac0616a47569(org.iets3.core.expr.typetags.lib)" />
   <exported-language name="cb91a38e-738a-4811-a96d-448d08f526fa(org.iets3.core.expr.typetags.units)" />
   <exported-language name="8bb1251e-eae5-47ab-9843-33adfae8edaa(org.iets3.core.expr.util)" />
   <exported-language name="cee4aa62-aca9-4f26-9602-75129cd457c9(org.iets3.core.expr.dataflow)" />
@@ -25,7 +24,6 @@
     <exported-solution>2bd330e3-1cae-4049-bed7-7d39e93cece4(org.iets3.core.expr.messages.interpreter)</exported-solution>
     <exported-solution>efafd749-49c6-482f-8a14-68061c57dd08(org.iets3.core.expr.natlang.interpreter)</exported-solution>
     <exported-solution>06aa4a64-087b-49de-99ac-5bfea95ff839(org.iets3.core.expr.temporal.interpreter)</exported-solution>
-    <exported-solution>b4ec5624-2e67-4a4e-9ece-34bcbf966115(org.iets3.core.expr.typetags.lib.interpreter)</exported-solution>
     <exported-solution>1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)</exported-solution>
     <exported-solution>4289e037-cc03-4bfe-bf89-2db268aec73a(org.iets3.core.expr.util.interpreter)</exported-solution>
     <exported-solution>e29ad049-74f8-4f02-9561-62d7477f822a(org.iets3.core.expr.doc.plugin)</exported-solution>
