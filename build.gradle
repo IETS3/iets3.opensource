@@ -332,11 +332,13 @@ modelcheck {
     maxHeap = "4G"
 }
 
+/*
 afterEvaluate {  project ->
     check.configure {
         dependsOn tasks.named('checkmodels')
     }
 }
+*/
 
 checkmodels {
     dependsOn(resolveMps)
