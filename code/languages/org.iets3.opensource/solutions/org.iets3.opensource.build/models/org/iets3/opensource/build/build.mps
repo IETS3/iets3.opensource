@@ -174,6 +174,7 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
+        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -11630,6 +11631,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.expr.genjava.functionalJava" />
         <property role="3LESm3" value="708a03ad-8699-43c9-821a-6cd00b68e9f8" />
+        <property role="2GAjPV" value="true" />
         <node concept="398BVA" id="26tZ$Z4rvHD" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="26tZ$Z4rwC$" role="iGT6I">
@@ -11638,25 +11640,6 @@
               <property role="2Ry0Am" value="org.iets3.core.expr.genjava.functionalJava" />
               <node concept="2Ry0Ak" id="26tZ$Z4rzpn" role="2Ry0An">
                 <property role="2Ry0Am" value="org.iets3.core.expr.genjava.functionalJava.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="26tZ$Z4t4Ep" role="3bR37C">
-          <node concept="1BurEX" id="26tZ$Z4t4Eq" role="1SiIV1">
-            <node concept="398BVA" id="26tZ$Z4t4Ec" role="1BurEY">
-              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="26tZ$Z4t4Ed" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="26tZ$Z4t4Ee" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.core.expr.genjava.functionalJava" />
-                  <node concept="2Ry0Ak" id="26tZ$Z4t4Ef" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="26tZ$Z4t4Eg" role="2Ry0An">
-                      <property role="2Ry0Am" value="functionaljava_1.8-4.8-SNAPSHOT.jar" />
-                    </node>
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -11677,6 +11660,25 @@
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="ojgKi0VVoV" role="2Ry0An">
                   <property role="2Ry0Am" value="org.iets3.core.expr.genjava.functionalJava" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5C16jUTWDRL" role="3bR37C">
+          <node concept="1BurEX" id="5C16jUTWDRM" role="1SiIV1">
+            <node concept="398BVA" id="5C16jUTWDR$" role="1BurEY">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="5C16jUTWDR_" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5C16jUTWDRA" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.genjava.functionalJava" />
+                  <node concept="2Ry0Ak" id="5C16jUTWDRB" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5C16jUTWDRC" role="2Ry0An">
+                      <property role="2Ry0Am" value="functionaljava.jar" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -13977,6 +13979,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.opensource.build.gentests.rt" />
         <property role="3LESm3" value="e70ad515-8ff0-4a50-8cb4-41406f14e348" />
+        <property role="2GAjPV" value="true" />
         <node concept="398BVA" id="3ZBI8Awh4x5" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="3ZBI8Awh4x6" role="iGT6I">
@@ -13999,18 +14002,18 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6Fs_Z9Iz7W6" role="3bR37C">
-          <node concept="1BurEX" id="6Fs_Z9Iz7W7" role="1SiIV1">
-            <node concept="398BVA" id="6Fs_Z9Iz7VT" role="1BurEY">
+        <node concept="1SiIV0" id="5C16jUTWDWe" role="3bR37C">
+          <node concept="1BurEX" id="5C16jUTWDWf" role="1SiIV1">
+            <node concept="398BVA" id="5C16jUTWDW1" role="1BurEY">
               <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="6Fs_Z9Iz7VU" role="iGT6I">
+              <node concept="2Ry0Ak" id="5C16jUTWDW2" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6Fs_Z9Iz7VV" role="2Ry0An">
+                <node concept="2Ry0Ak" id="5C16jUTWDW3" role="2Ry0An">
                   <property role="2Ry0Am" value="org.iets3.opensource.build.gentests.rt" />
-                  <node concept="2Ry0Ak" id="6Fs_Z9Iz7VW" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5C16jUTWDW4" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6Fs_Z9Iz7VX" role="2Ry0An">
-                      <property role="2Ry0Am" value="takari-cpsuite-1.2.7.jar" />
+                    <node concept="2Ry0Ak" id="5C16jUTWDW5" role="2Ry0An">
+                      <property role="2Ry0Am" value="takari-cpsuite.jar" />
                     </node>
                   </node>
                 </node>

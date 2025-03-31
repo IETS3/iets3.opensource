@@ -130,8 +130,6 @@ configurations {
     mps
     languageLibs
     junitAnt
-    pcollections // Synced to org.iets3.core.expr.base.collections.stubs/lib
-    bigMath // Synced to org.iets3.core.expr.math.interpreter/lib
 }
 
 dependencies {
@@ -139,8 +137,48 @@ dependencies {
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
-    pcollections 'org.pcollections:pcollections:4.0.1'
-    bigMath 'ch.obermuhlner:big-math:2.3.2'
+}
+
+def bundledDeps = [
+        ['pcollections', 'org.pcollections:pcollections:4.0.1', 'org.iets3.core.expr.base.collections.stubs'],
+        ['bigMath', 'ch.obermuhlner:big-math:2.3.2', 'org.iets3.core.expr.math.interpreter'],
+        ['functionalJava', 'org.functionaljava:functionaljava:4.8.1', 'org.iets3.core.expr.genjava.functionalJava'],
+        ['cpsSuite', 'io.takari.junit:takari-cpsuite:1.2.7', 'org.iets3.opensource.build.gentests.rt', 'takari-cpsuite.jar']
+]
+
+bundledDeps.each { bundledDep ->
+    def depName = bundledDep[0] + '_bundled'
+    def depNotation = bundledDep[1]
+    def bundledSolutionName = bundledDep[2]
+    // in case a dependency has a broken artifact name, e.g. w/o extension
+    def jarNameOverride = bundledDep[3]
+
+    configurations {
+        create(depName)
+    }
+    dependencies {
+        add(depName, depNotation) {
+            transitive = false
+        }
+    }
+    tasks.create("resolve_$depName", Sync.class) {
+        from configurations.getByName(depName)
+        into file("code/languages/org.iets3.opensource/solutions/$bundledSolutionName/lib")
+
+        // Strip version numbers from file names
+        rename { filename ->
+            def ra = configurations.getByName(depName).resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+            String finalName
+            if (jarNameOverride != null) {
+                finalName = jarNameOverride
+            } else if (ra.classifier != null) {
+                finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
+            } else {
+                finalName = "${ra.name}.${ra.extension}"
+            }
+            return finalName
+        }
+    }
 }
 
 
@@ -159,41 +197,8 @@ task resolveLanguageLibs(type: Sync) {
     into "$buildDir/dependencies"
 }
 
-task resolvePcollections(type: Sync) {
-    from configurations.pcollections
-    into file('code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.base.collections.stubs/lib')
-
-    // Strip version numbers from file names
-    rename { filename ->
-        def ra = configurations.pcollections.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
-        String finalName
-        if (ra.classifier != null) {
-            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
-        } else {
-            finalName = "${ra.name}.${ra.extension}"
-        }
-        return finalName
-    }
-}
-
-task resolveBigMath(type: Sync) {
-    from configurations.bigMath
-    into file('code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.math.interpreter/lib')
-
-    // Strip version numbers from file names
-    rename { filename ->
-        def ra = configurations.bigMath.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
-        String finalName
-        if (ra.classifier != null) {
-            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
-        } else {
-            finalName = "${ra.name}.${ra.extension}"
-        }
-        return finalName
-    }
-}
-
-task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs, resolvePcollections, resolveBigMath])
+task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs])
+resolveDependencies.dependsOn << tasks.findAll {it.name.endsWith('_bundled') }
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
