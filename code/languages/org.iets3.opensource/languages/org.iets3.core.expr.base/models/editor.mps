@@ -745,7 +745,6 @@
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1171391069720" name="jetbrains.mps.baseLanguage.collections.structure.GetIndexOfOperation" flags="nn" index="2WmjW8" />
@@ -7874,7 +7873,7 @@
                     <node concept="3clFbF" id="4do2HCUfOOT" role="3cqZAp">
                       <node concept="2OqwBi" id="4do2HCUfPbL" role="3clFbG">
                         <node concept="37vLTw" id="4do2HCUfP9C" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4do2HCUfOHy" resolve="it" />
+                          <ref role="3cqZAo" node="65OmFvuVZM0" resolve="it" />
                         </node>
                         <node concept="liA8E" id="4do2HCUfPsp" role="2OqNvi">
                           <ref role="37wK5l" to="oq0c:4do2HCUdE1k" resolve="filterExpression" />
@@ -7888,9 +7887,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="Rh6nW" id="4do2HCUfOHy" role="1bW2Oz">
+                  <node concept="gl6BB" id="65OmFvuVZM0" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4do2HCUfOHz" role="1tU5fm" />
+                    <node concept="2jxLKc" id="65OmFvuVZM1" role="1tU5fm" />
                   </node>
                 </node>
               </node>

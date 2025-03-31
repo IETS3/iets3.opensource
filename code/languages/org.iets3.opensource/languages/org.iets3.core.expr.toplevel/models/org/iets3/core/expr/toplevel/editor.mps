@@ -740,7 +740,6 @@
         <child id="1235573187520" name="singletonValue" index="2HTEbv" />
       </concept>
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
@@ -5821,7 +5820,7 @@
                     <node concept="3clFbF" id="4do2HCUfOOT" role="3cqZAp">
                       <node concept="2OqwBi" id="4do2HCUfPbL" role="3clFbG">
                         <node concept="37vLTw" id="4do2HCUfP9C" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4do2HCUfOHy" resolve="it" />
+                          <ref role="3cqZAo" node="65OmFvuW7hs" resolve="it" />
                         </node>
                         <node concept="liA8E" id="4do2HCUfPsp" role="2OqNvi">
                           <ref role="37wK5l" to="oq0c:4do2HCUnoyQ" resolve="filterToplevelExprContent" />
@@ -5835,9 +5834,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="Rh6nW" id="4do2HCUfOHy" role="1bW2Oz">
+                  <node concept="gl6BB" id="65OmFvuW7hs" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4do2HCUfOHz" role="1tU5fm" />
+                    <node concept="2jxLKc" id="65OmFvuW7ht" role="1tU5fm" />
                   </node>
                 </node>
               </node>
