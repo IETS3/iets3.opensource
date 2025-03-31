@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
@@ -882,8 +883,7 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="5qf1oe$zdF8" role="jymVt" />
-    <node concept="2tJIrI" id="5qf1oe$zeNt" role="jymVt" />
+    <node concept="2tJIrI" id="5_6o5C8$zvB" role="jymVt" />
     <node concept="3clFb_" id="5qf1oe$zfpT" role="jymVt">
       <property role="TrG5h" value="hashCode" />
       <node concept="3Tm1VV" id="5qf1oe$zfpU" role="1B3o_S" />

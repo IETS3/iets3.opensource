@@ -75,6 +75,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="1158700664498" name="jetbrains.mps.lang.actions.structure.NodeFactories" flags="ng" index="37WguZ">
@@ -429,12 +432,14 @@
                         <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                         <node concept="2pJxcG" id="1ikTdkW7bH5" role="2pJxcM">
                           <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                          <node concept="2OqwBi" id="1ikTdkW6RBA" role="28ntcv">
-                            <node concept="Jnkvi" id="1ikTdkW6RBB" role="2Oq$k0">
-                              <ref role="1M0zk5" node="1ikTdkW6RBG" resolve="stringLiteral" />
-                            </node>
-                            <node concept="3TrcHB" id="1ikTdkW755V" role="2OqNvi">
-                              <ref role="3TsBF5" to="5qo5:4rZeNQ6OYRb" resolve="value" />
+                          <node concept="WxPPo" id="65GPZhBZf1o" role="28ntcv">
+                            <node concept="2OqwBi" id="1ikTdkW6RBA" role="WxPPp">
+                              <node concept="Jnkvi" id="1ikTdkW6RBB" role="2Oq$k0">
+                                <ref role="1M0zk5" node="1ikTdkW6RBG" resolve="stringLiteral" />
+                              </node>
+                              <node concept="3TrcHB" id="1ikTdkW755V" role="2OqNvi">
+                                <ref role="3TsBF5" to="5qo5:4rZeNQ6OYRb" resolve="value" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -471,9 +476,11 @@
                         <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                         <node concept="2pJxcG" id="1ikTdkW73vp" role="2pJxcM">
                           <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                          <node concept="2OqwBi" id="1ikTdkW6REe" role="28ntcv">
-                            <node concept="1r4N5L" id="1ikTdkW6REf" role="2Oq$k0" />
-                            <node concept="2Iv5rx" id="1ikTdkW6REg" role="2OqNvi" />
+                          <node concept="WxPPo" id="65GPZhBZf1p" role="28ntcv">
+                            <node concept="2OqwBi" id="1ikTdkW6REe" role="WxPPp">
+                              <node concept="1r4N5L" id="1ikTdkW6REf" role="2Oq$k0" />
+                              <node concept="2Iv5rx" id="1ikTdkW6REg" role="2OqNvi" />
+                            </node>
                           </node>
                         </node>
                       </node>

@@ -32,6 +32,8 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="dj6k" ref="r:59d52af6-663b-49dc-8980-30d79b8dffa1(org.iets3.core.expr.simpleTypes.runtime)" />
+    <import index="qt06" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.builder(org.apache.commons/)" />
+    <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
@@ -9797,6 +9799,92 @@
           <node concept="3cqZAl" id="6XE8Bc$gE1B" role="3clF45" />
         </node>
         <node concept="2tJIrI" id="6XE8Bc$gE2n" role="jymVt" />
+        <node concept="3clFb_" id="2Ccm6Yq_2Qr" role="jymVt">
+          <property role="TrG5h" value="hashCode" />
+          <node concept="3clFbS" id="2Ccm6Yq_2Qu" role="3clF47">
+            <node concept="3cpWs8" id="2Ccm6YqAETf" role="3cqZAp">
+              <node concept="3cpWsn" id="2Ccm6YqAETg" role="3cpWs9">
+                <property role="TrG5h" value="builder" />
+                <node concept="3uibUv" id="2Ccm6YqA$dE" role="1tU5fm">
+                  <ref role="3uigEE" to="qt06:~HashCodeBuilder" resolve="HashCodeBuilder" />
+                </node>
+                <node concept="2ShNRf" id="2Ccm6YqAETh" role="33vP2m">
+                  <node concept="1pGfFk" id="2Ccm6YqAETi" role="2ShVmc">
+                    <ref role="37wK5l" to="qt06:~HashCodeBuilder.&lt;init&gt;(int,int)" resolve="HashCodeBuilder" />
+                    <node concept="3cmrfG" id="2Ccm6YqAETj" role="37wK5m">
+                      <property role="3cmrfH" value="17" />
+                    </node>
+                    <node concept="3cmrfG" id="2Ccm6YqAETk" role="37wK5m">
+                      <property role="3cmrfH" value="37" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2Ccm6YqFlk$" role="3cqZAp">
+              <node concept="2OqwBi" id="2Ccm6YqFyjP" role="3clFbG">
+                <node concept="37vLTw" id="2Ccm6YqFlky" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2Ccm6YqAETg" resolve="builder" />
+                </node>
+                <node concept="liA8E" id="2Ccm6YqFEIS" role="2OqNvi">
+                  <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object)" resolve="append" />
+                  <node concept="2OqwBi" id="6c9kQIS96Rz" role="37wK5m">
+                    <node concept="Xjq3P" id="6c9kQIS96R$" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="6c9kQIS96R_" role="2OqNvi">
+                      <ref role="2Oxat5" node="6XE8Bc$gDWa" resolve="i" />
+                      <node concept="1ZhdrF" id="6c9kQIS96RA" role="lGtFl">
+                        <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1197029447546/1197029500499" />
+                        <property role="2qtEX8" value="fieldDeclaration" />
+                        <node concept="3$xsQk" id="6c9kQIS96RB" role="3$ytzL">
+                          <node concept="3clFbS" id="6c9kQIS96RC" role="2VODD2">
+                            <node concept="3clFbF" id="6c9kQIS96RD" role="3cqZAp">
+                              <node concept="2OqwBi" id="6c9kQIS96RE" role="3clFbG">
+                                <node concept="30H73N" id="6c9kQIS96RF" role="2Oq$k0" />
+                                <node concept="3TrcHB" id="6c9kQIS96RG" role="2OqNvi">
+                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1WS0z7" id="2Ccm6YqGuIY" role="lGtFl">
+                <node concept="3JmXsc" id="2Ccm6YqGuIZ" role="3Jn$fo">
+                  <node concept="3clFbS" id="2Ccm6YqGuJ0" role="2VODD2">
+                    <node concept="3clFbF" id="6c9kQIS69tf" role="3cqZAp">
+                      <node concept="2OqwBi" id="6c9kQIS6iFJ" role="3clFbG">
+                        <node concept="30H73N" id="6c9kQIS69te" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="6c9kQIS6z7P" role="2OqNvi">
+                          <ref role="37wK5l" to="nu60:58eyHuUgYVm" resolve="nonEmptyMembers" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="6c9kQISfwrN" role="3cqZAp">
+              <node concept="2OqwBi" id="6c9kQIS9_pX" role="3cqZAk">
+                <node concept="37vLTw" id="6c9kQIS9tjo" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2Ccm6YqAETg" resolve="builder" />
+                </node>
+                <node concept="liA8E" id="6c9kQIS9I6o" role="2OqNvi">
+                  <ref role="37wK5l" to="qt06:~HashCodeBuilder.hashCode()" resolve="hashCode" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tm1VV" id="2Ccm6Yq$F6D" role="1B3o_S" />
+          <node concept="10Oyi0" id="2Ccm6Yq$RB5" role="3clF45" />
+          <node concept="2AHcQZ" id="6c9kQIS9Q1S" role="2AJF6D">
+            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+          </node>
+        </node>
+        <node concept="2tJIrI" id="2Ccm6Yq$jPR" role="jymVt" />
         <node concept="3clFb_" id="6XE8Bc$gE2o" role="jymVt">
           <property role="1EzhhJ" value="false" />
           <property role="TrG5h" value="equals" />
