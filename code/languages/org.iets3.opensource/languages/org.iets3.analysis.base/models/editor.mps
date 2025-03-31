@@ -5,7 +5,6 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -20,7 +19,6 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
@@ -202,7 +200,6 @@
               <property role="VOm3f" value="true" />
             </node>
           </node>
-          <node concept="2iRfu4" id="2GQBRFCFw0_" role="2iSdaV" />
           <node concept="pkWqt" id="2ZalWa8IziB" role="pqm2j">
             <node concept="3clFbS" id="2ZalWa8IziC" role="2VODD2">
               <node concept="3clFbF" id="2ZalWa8IzpN" role="3cqZAp">
@@ -220,6 +217,7 @@
               </node>
             </node>
           </node>
+          <node concept="l2Vlx" id="1ASK_Hec6P6" role="2iSdaV" />
         </node>
       </node>
       <node concept="2SsqMj" id="3DYDRw0WRuq" role="3EZMnx">

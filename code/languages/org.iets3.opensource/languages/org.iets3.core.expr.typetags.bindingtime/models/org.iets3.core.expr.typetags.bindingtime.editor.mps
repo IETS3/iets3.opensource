@@ -3,13 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="n0mj" ref="r:8218afdf-a485-4479-86a0-78900b96a4dd(org.iets3.core.expr.typetags.bindingtime.structure)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="iy3m" ref="r:1c658055-0fdc-45f4-8442-9bac78d96a2f(org.iets3.core.expr.typetags.bindingtime.behavior)" implicit="true" />
   </imports>
@@ -21,7 +20,7 @@
       </concept>
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -132,30 +131,28 @@
   <node concept="24kQdi" id="2tub4U54K1C">
     <ref role="1XX52x" to="n0mj:2tub4U54J$L" resolve="BTDeclaration" />
     <node concept="3EZMnI" id="2tub4U558n4" role="2wV5jI">
-      <node concept="2iRfu4" id="2tub4U558n5" role="2iSdaV" />
       <node concept="1kHk_G" id="2tub4U558nn" role="3EZMnx">
         <property role="ZjSer" value="initial" />
         <ref role="1NtTu8" to="n0mj:2tub4U558ns" resolve="initial" />
       </node>
-      <node concept="PMmxH" id="1SyV1pw98kS" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="PMmxH" id="4MeRni3AcnS" role="3EZMnx">
+        <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="ITopLevelExprContentAlias" />
       </node>
       <node concept="3F0A7n" id="2tub4U54K1E" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="_tjkj" id="13eh33rv6Ys" role="3EZMnx">
         <node concept="3EZMnI" id="13eh33rvixT" role="_tjki">
-          <node concept="2iRfu4" id="13eh33rvixU" role="2iSdaV" />
           <node concept="3F0ifn" id="13eh33rviy2" role="3EZMnx">
             <property role="3F0ifm" value=":" />
           </node>
           <node concept="3F1sOY" id="1YvM8qoU5iM" role="3EZMnx">
             <ref role="1NtTu8" to="n0mj:1YvM8qoU5bg" resolve="group" />
           </node>
+          <node concept="l2Vlx" id="1ASK_HedI_a" role="2iSdaV" />
         </node>
       </node>
       <node concept="3EZMnI" id="1SyV1pw9flw" role="3EZMnx">
-        <node concept="2iRfu4" id="1SyV1pw9flx" role="2iSdaV" />
         <node concept="3F0ifn" id="1YvM8qoUBqA" role="3EZMnx">
           <property role="3F0ifm" value="after:" />
         </node>
@@ -176,7 +173,9 @@
             </node>
           </node>
         </node>
+        <node concept="l2Vlx" id="1ASK_HedI_b" role="2iSdaV" />
       </node>
+      <node concept="l2Vlx" id="1ASK_HedI_9" role="2iSdaV" />
     </node>
   </node>
   <node concept="PKFIW" id="2tub4U558nu">
@@ -255,19 +254,17 @@
   <node concept="24kQdi" id="13eh33ruPOk">
     <ref role="1XX52x" to="n0mj:13eh33ruPNR" resolve="BTGroup" />
     <node concept="3EZMnI" id="13eh33ruPOm" role="2wV5jI">
-      <node concept="2iRfu4" id="13eh33ruPOn" role="2iSdaV" />
       <node concept="1kHk_G" id="5XGFpL9THzr" role="3EZMnx">
         <property role="ZjSer" value="initial" />
         <ref role="1NtTu8" to="n0mj:5XGFpL9THzj" resolve="initial" />
       </node>
-      <node concept="3F0ifn" id="13eh33rvtdr" role="3EZMnx">
-        <property role="3F0ifm" value="computation class" />
+      <node concept="PMmxH" id="4MeRni3AbKu" role="3EZMnx">
+        <ref role="PMmxG" to="m999:1znK7yZd5ns" resolve="ITopLevelExprContentAlias" />
       </node>
       <node concept="3F0A7n" id="13eh33ruPOD" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3EZMnI" id="5XGFpL9UL7x" role="3EZMnx">
-        <node concept="2iRfu4" id="5XGFpL9UL7y" role="2iSdaV" />
         <node concept="3F0ifn" id="5XGFpL9UL7E" role="3EZMnx">
           <property role="3F0ifm" value="after:" />
         </node>
@@ -288,7 +285,9 @@
             </node>
           </node>
         </node>
+        <node concept="l2Vlx" id="1ASK_HedI_d" role="2iSdaV" />
       </node>
+      <node concept="l2Vlx" id="1ASK_HedI_c" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1YvM8qoUtPr">
@@ -318,7 +317,6 @@
   <node concept="24kQdi" id="2ahKK8qLgk_">
     <ref role="1XX52x" to="n0mj:1YvM8qoUB$9" resolve="BTDeclarationRef" />
     <node concept="3EZMnI" id="2ahKK8qLgkB" role="2wV5jI">
-      <node concept="2iRfu4" id="2ahKK8qLgkC" role="2iSdaV" />
       <node concept="1iCGBv" id="2ahKK8qLgkH" role="3EZMnx">
         <ref role="1NtTu8" to="n0mj:1YvM8qoUB$a" resolve="stage" />
         <node concept="1sVBvm" id="2ahKK8qLgkJ" role="1sWHZn">
@@ -328,6 +326,7 @@
           </node>
         </node>
       </node>
+      <node concept="l2Vlx" id="1ASK_HedI_e" role="2iSdaV" />
     </node>
   </node>
 </model>
