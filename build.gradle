@@ -307,7 +307,7 @@ modelcheck {
     maxHeap = "4G"
 }
 
-/*
+
 afterEvaluate {  project ->
     /*
     check.configure {
@@ -315,7 +315,7 @@ afterEvaluate {  project ->
     }
     */
 }
-*/
+
 
 checkmodels {
     dependsOn(resolveMps)
