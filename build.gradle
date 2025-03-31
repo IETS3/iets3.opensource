@@ -124,7 +124,7 @@ ext.artifactsDir = buildDirPath('artifacts')
 ext.reportsDir = buildDirPath('reports')
 
 wrapper {
-    gradleVersion '8.0.2'
+    gradleVersion '8.13'
     distributionType Wrapper.DistributionType.ALL
 }
 
