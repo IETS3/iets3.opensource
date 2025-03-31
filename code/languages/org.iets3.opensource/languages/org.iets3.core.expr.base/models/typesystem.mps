@@ -1872,15 +1872,6 @@
       <property role="TrG5h" value="de" />
       <ref role="1YaFvo" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
     </node>
-    <node concept="bXqS6" id="6zaFu4oPM0o" role="ujSXK">
-      <node concept="3clFbS" id="6zaFu4oPM0p" role="2VODD2">
-        <node concept="3clFbF" id="6zaFu4oPM1r" role="3cqZAp">
-          <node concept="3clFbT" id="6zaFu4oPM1q" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1YbPZF" id="5ScITQbnltW">
     <property role="TrG5h" value="typeof_UnaryExpression" />
