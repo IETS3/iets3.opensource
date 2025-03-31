@@ -9,6 +9,7 @@
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="tests" />
   </facets>
   <dependencies>
     <dependency reexport="false">5a0fae25-8093-498f-81fe-3b264864819a(test.org.iets3.analysis.base.solvable)</dependency>
