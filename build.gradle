@@ -2,6 +2,7 @@ import de.itemis.mps.gradle.*
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
 import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
+import groovy.transform.TupleConstructor
 import groovy.xml.XmlSlurper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -143,38 +144,52 @@ dependencies {
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
 }
 
+@TupleConstructor
+class BundledDep {
+    String name
+    List<String> entries
+    String libSolutionName
+    Closure configClosure = { transitive = false }
+    // in case a legacy dependency has a broken artifact name, e.g. w/o extension
+    String jarNameOverride
+    String getConfigName() {
+        name + '_bundled'
+    }
+    String getResolveTaskName() {
+        'resolve_' + this.configName
+    }
+    BundledDep overrideArtifactName(String artifactName) {
+        this.jarNameOverride = artifactName
+        this
+    }
+}
+
 def bundledDeps = [
-        ['pcollections', 'org.pcollections:pcollections:4.0.1', 'org.iets3.core.expr.base.collections.stubs'],
-        ['bigMath', 'ch.obermuhlner:big-math:2.3.2', 'org.iets3.core.expr.math.interpreter'],
-        ['functionalJava', 'org.functionaljava:functionaljava:4.8.1', 'org.iets3.core.expr.genjava.functionalJava'],
-        ['cpsSuite', 'io.takari.junit:takari-cpsuite:1.2.7', 'org.iets3.opensource.build.gentests.rt', 'takari-cpsuite.jar']
+        new BundledDep('pcollections', ['org.pcollections:pcollections:4.0.1'], 'org.iets3.core.expr.base.collections.stubs'),
+        new BundledDep('bigMath', ['ch.obermuhlner:big-math:2.3.2'], 'org.iets3.core.expr.math.interpreter'),
+        new BundledDep('functionalJava', ['org.functionaljava:functionaljava:4.8.1'], 'org.iets3.core.expr.genjava.functionalJava'),
+        new BundledDep('cpsSuite', ['io.takari.junit:takari-cpsuite:1.2.7'], 'org.iets3.opensource.build.gentests.rt').overrideArtifactName('takari-cpsuite.jar')
 ]
 
-bundledDeps.each { bundledDep ->
-    def depName = bundledDep[0] + '_bundled'
-    def depNotation = bundledDep[1]
-    def bundledSolutionName = bundledDep[2]
-    // in case a dependency has a broken artifact name, e.g. w/o extension
-    def jarNameOverride = bundledDep[3]
-
+bundledDeps.each { dep ->
     configurations {
-        create(depName)
+        create(dep.configName)
     }
     dependencies {
-        add(depName, depNotation) {
-            transitive = false
+        dep.entries.each {entry ->
+            add(dep.configName, entry, dep.configClosure)
         }
     }
-    tasks.create("resolve_$depName", Sync.class) {
-        from configurations.getByName(depName)
-        into file("code/languages/org.iets3.opensource/solutions/$bundledSolutionName/lib")
+    tasks.create(dep.resolveTaskName, Sync.class) {
+        from configurations.getByName(dep.configName)
+        into file("code/languages/org.iets3.opensource/solutions/${dep.libSolutionName}/lib")
 
         // Strip version numbers from file names
         rename { filename ->
-            def ra = configurations.getByName(depName).resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+            def ra = configurations.getByName(dep.configName).resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
             String finalName
-            if (jarNameOverride != null) {
-                finalName = jarNameOverride
+            if (dep.jarNameOverride != null) {
+                finalName = dep.jarNameOverride
             } else if (ra.classifier != null) {
                 finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
             } else {
@@ -202,7 +217,7 @@ task resolveLanguageLibs(type: Sync) {
 }
 
 task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs])
-resolveDependencies.dependsOn << tasks.findAll {it.name.endsWith('_bundled') }
+resolveDependencies.dependsOn << bundledDeps.collect {it.resolveTaskName }
 
 ext.mpsHomeDir = resolveMps.destinationDir
 
