@@ -47,7 +47,7 @@ def minor = "1"
 // Dependency versions
 
 ext.mpsVersion = '2024.1.2'
-ext.mpsQAVersion = "2024.1.1000.0c9288f"
+ext.mpsQAVersion = "2024.1.1022.300f07a"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
