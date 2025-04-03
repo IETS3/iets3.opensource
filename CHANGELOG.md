@@ -10,7 +10,6 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - An issue with conflicting rules for overloaded operation types with rational types was fixed.
-- Number types in scientific format e.g. 1e10 now require a number before "e". Numbers like "e-5" are not valid anymore because it caused exceptions in other parts of the code base.
 - The interpreter of the lookup tables was fixed.
 - The syntax of optional names in assert statements was improved.
 - A stack overflow related to success types was fixed.
