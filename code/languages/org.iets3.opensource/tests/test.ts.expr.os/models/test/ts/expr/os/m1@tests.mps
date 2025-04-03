@@ -7889,6 +7889,39 @@
             </node>
           </node>
         </node>
+        <node concept="3GXo0L" id="BOGSiZtgam" role="3cqZAp">
+          <node concept="2YIFZM" id="BOGSiZtgan" role="3tpDZA">
+            <ref role="37wK5l" to="h60k:BOGSiZ4hx_" resolve="migrateNumber" />
+            <ref role="1Pybhc" to="h60k:BOGSiZ4e0a" resolve="ScientificNumberMigrationHelper" />
+            <node concept="2c44tf" id="BOGSiZtgao" role="37wK5m">
+              <node concept="30bXRB" id="BOGSiZtgap" role="2c44tc">
+                <property role="30bXRw" value="10." />
+              </node>
+            </node>
+          </node>
+          <node concept="2c44tf" id="BOGSiZtgaq" role="3tpDZB">
+            <node concept="30bXRB" id="BOGSiZtgar" role="2c44tc">
+              <property role="30bXRw" value="10." />
+            </node>
+          </node>
+        </node>
+        <node concept="3GXo0L" id="BOGSiZtgas" role="3cqZAp">
+          <node concept="2YIFZM" id="BOGSiZtgat" role="3tpDZA">
+            <ref role="37wK5l" to="h60k:BOGSiZ4hx_" resolve="migrateNumber" />
+            <ref role="1Pybhc" to="h60k:BOGSiZ4e0a" resolve="ScientificNumberMigrationHelper" />
+            <node concept="2c44tf" id="BOGSiZtgau" role="37wK5m">
+              <node concept="30bXRB" id="BOGSiZtgav" role="2c44tc">
+                <property role="30bXRw" value="-10." />
+              </node>
+            </node>
+          </node>
+          <node concept="2c44tf" id="BOGSiZtgaw" role="3tpDZB">
+            <node concept="30bXRB" id="BOGSiZtgax" role="2c44tc">
+              <property role="30bXRw" value="-10." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="BOGSiZtgaf" role="3cqZAp" />
         <node concept="3GXo0L" id="BOGSiZgDyG" role="3cqZAp">
           <node concept="2c44tf" id="BOGSiZgDyH" role="3tpDZB">
             <node concept="30bXRB" id="BOGSiZgEFX" role="2c44tc">
