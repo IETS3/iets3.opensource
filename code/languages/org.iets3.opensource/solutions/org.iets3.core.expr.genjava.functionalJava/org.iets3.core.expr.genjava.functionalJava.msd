@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.iets3.core.expr.genjava.functionalJava" uuid="708a03ad-8699-43c9-821a-6cd00b68e9f8" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/functionaljava_1.8-4.8-SNAPSHOT.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="functionaljava.jar" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="ext" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/functionaljava_1.8-4.8-SNAPSHOT.jar" />
+      <library location="${module}/lib/functionaljava.jar" />
     </facet>
   </facets>
   <dependencies>
