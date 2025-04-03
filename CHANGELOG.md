@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## April 2025
+
+### Fixed
+
+- Number literals in scientific format e.g. 1e10 now require a number before "e". Numbers like "e-5" are not valid anymore because it caused exceptions in other parts of the code base.
+
 ## March 2025
 
 ### Fixed
