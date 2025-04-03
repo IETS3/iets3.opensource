@@ -7738,7 +7738,7 @@
             <ref role="1Pybhc" to="h60k:BOGSiZ4e0a" resolve="ScientificNumberMigrationHelper" />
             <node concept="2c44tf" id="BOGSiZ4Hnd" role="37wK5m">
               <node concept="30bXRB" id="BOGSiZ4Hne" role="2c44tc">
-                <property role="30bXRw" value="e5" />
+                <property role="30bXRw" value="0e5" />
               </node>
             </node>
           </node>
@@ -7754,7 +7754,7 @@
             <ref role="1Pybhc" to="h60k:BOGSiZ4e0a" resolve="ScientificNumberMigrationHelper" />
             <node concept="2c44tf" id="BOGSiZ4HtR" role="37wK5m">
               <node concept="30bXRB" id="BOGSiZ4HJa" role="2c44tc">
-                <property role="30bXRw" value="-e5" />
+                <property role="30bXRw" value="-0e5" />
               </node>
             </node>
           </node>
@@ -7770,7 +7770,7 @@
             <ref role="1Pybhc" to="h60k:BOGSiZ4e0a" resolve="ScientificNumberMigrationHelper" />
             <node concept="2c44tf" id="BOGSiZ4HCL" role="37wK5m">
               <node concept="30bXRB" id="BOGSiZ4HJR" role="2c44tc">
-                <property role="30bXRw" value=".e5" />
+                <property role="30bXRw" value=".0e5" />
               </node>
             </node>
           </node>
@@ -7786,7 +7786,7 @@
             <ref role="1Pybhc" to="h60k:BOGSiZ4e0a" resolve="ScientificNumberMigrationHelper" />
             <node concept="2c44tf" id="BOGSiZ4HDb" role="37wK5m">
               <node concept="30bXRB" id="BOGSiZ4HK_" role="2c44tc">
-                <property role="30bXRw" value="-.e5" />
+                <property role="30bXRw" value="-.0e5" />
               </node>
             </node>
           </node>
@@ -7802,7 +7802,7 @@
             <ref role="1Pybhc" to="h60k:BOGSiZ4e0a" resolve="ScientificNumberMigrationHelper" />
             <node concept="2c44tf" id="BOGSiZ4HDe" role="37wK5m">
               <node concept="30bXRB" id="BOGSiZ4HLk" role="2c44tc">
-                <property role="30bXRw" value="123.e5" />
+                <property role="30bXRw" value="123.0e5" />
               </node>
             </node>
           </node>
@@ -7818,7 +7818,7 @@
             <ref role="1Pybhc" to="h60k:BOGSiZ4e0a" resolve="ScientificNumberMigrationHelper" />
             <node concept="2c44tf" id="BOGSiZ4HDh" role="37wK5m">
               <node concept="30bXRB" id="BOGSiZ4HM4" role="2c44tc">
-                <property role="30bXRw" value="-123.e5" />
+                <property role="30bXRw" value="-123.0e5" />
               </node>
             </node>
           </node>
