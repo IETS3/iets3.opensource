@@ -508,9 +508,7 @@
       <concept id="7061117989422577349" name="org.iets3.core.expr.toplevel.structure.EnumLiteralRef" flags="ng" index="5mhuz">
         <reference id="7061117989422577417" name="literal" index="5mhpJ" />
       </concept>
-      <concept id="7782108600709718604" name="org.iets3.core.expr.toplevel.structure.ReferenceableFlag" flags="ng" index="nbNz6">
-        <reference id="7782108600710563457" name="idMember" index="n8xKb" />
-      </concept>
+      <concept id="7782108600709718604" name="org.iets3.core.expr.toplevel.structure.ReferenceableFlag" flags="ng" index="nbNz6" />
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
@@ -8067,13 +8065,11 @@
         <node concept="_ixoA" id="5ipapt3L2vC" role="_iOnC" />
         <node concept="2Ss9d8" id="6JZACDWLWUk" role="_iOnC">
           <property role="TrG5h" value="Person" />
-          <node concept="nbNz6" id="5ipapt3KcT$" role="nbNzx">
-            <ref role="n8xKb" node="6JZACDWLWUz" resolve="name" />
-          </node>
           <node concept="2Ss9d7" id="6JZACDWLWUz" role="S5Trm">
             <property role="TrG5h" value="name" />
             <node concept="30bdrU" id="6JZACDWLWUO" role="2S399n" />
           </node>
+          <node concept="nbNz6" id="39MbPJmNimh" role="nbNzx" />
         </node>
         <node concept="_ixoA" id="6JZACDWVuJI" role="_iOnC" />
         <node concept="2zPypq" id="6JZACDWVuMh" role="_iOnC">
@@ -8194,9 +8190,7 @@
             <property role="TrG5h" value="name" />
             <node concept="30bdrU" id="6JZACDWQIn5" role="2S399n" />
           </node>
-          <node concept="nbNz6" id="6JZACDWQIng" role="nbNzx">
-            <ref role="n8xKb" node="6JZACDWQImS" resolve="name" />
-          </node>
+          <node concept="nbNz6" id="39MbPJmNitU" role="nbNzx" />
         </node>
         <node concept="2zPypq" id="6JZACDWRnSI" role="_iOnC">
           <property role="TrG5h" value="c1" />
