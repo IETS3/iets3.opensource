@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="test.org.iets3.core.trace" uuid="9eff3336-14d7-46c5-afe1-dcbad13c14c3" languageVersion="0" moduleVersion="0">
+<language namespace="org.iets3.core.trace.test" uuid="9eff3336-14d7-46c5-afe1-dcbad13c14c3" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -69,7 +69,6 @@
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
     <module reference="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" version="0" />
-    <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
@@ -92,7 +91,7 @@
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="20" />
     <module reference="7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)" version="0" />
-    <module reference="9eff3336-14d7-46c5-afe1-dcbad13c14c3(test.org.iets3.core.trace)" version="0" />
+    <module reference="9eff3336-14d7-46c5-afe1-dcbad13c14c3(org.iets3.core.trace.test)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)</extendedLanguage>
