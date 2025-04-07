@@ -3760,7 +3760,7 @@
             </node>
             <node concept="2ShNRf" id="2zLV6oy87UN" role="37vLTx">
               <node concept="1pGfFk" id="2zLV6oy87UO" role="2ShVmc">
-                <ref role="37wK5l" to="34h4:56tRMpP_bCf" />
+                <ref role="37wK5l" to="34h4:56tRMpP_bCf" resolve="CommandOutputStream" />
                 <node concept="10M0yZ" id="2zLV6oy87UP" role="37wK5m">
                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
@@ -3776,7 +3776,7 @@
             </node>
             <node concept="2ShNRf" id="2zLV6oy87UV" role="37vLTx">
               <node concept="1pGfFk" id="2zLV6oy87UW" role="2ShVmc">
-                <ref role="37wK5l" to="34h4:56tRMpP_bCf" />
+                <ref role="37wK5l" to="34h4:56tRMpP_bCf" resolve="CommandOutputStream" />
                 <node concept="10M0yZ" id="2zLV6oy87UX" role="37wK5m">
                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />

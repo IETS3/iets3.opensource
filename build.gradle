@@ -1,22 +1,17 @@
 import de.itemis.mps.gradle.*
+import de.itemis.mps.gradle.tasks.MpsMigrate
+import de.itemis.mps.gradle.tasks.Remigrate
+import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 import groovy.xml.XmlSlurper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
-//will pull the groovy classes/types from nexus to the classpath
-buildscript {
-    repositories {
-        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
-    }
-    dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.29.1.1.d7f2744'
-    }
-}
-
 plugins {
     id 'base'
     id 'maven-publish'
+    id 'de.itemis.mps.gradle.common' version '1.29.+'
+    id 'de.itemis.mps.gradle.launcher' version '2.5.2.+'
     id "com.github.breadmoirai.github-release" version "2.4.1"
     id "org.cyclonedx.bom" version "2.2.0"
 }
@@ -25,6 +20,7 @@ repositories {
     maven {
         url 'https://artifacts.itemis.cloud/repository/maven-mps/'
     }
+
     mavenCentral()
 }
 
@@ -51,7 +47,7 @@ def minor = "1"
 // Dependency versions
 
 ext.mpsVersion = '2024.1.2'
-ext.mpsQAVersion = "2024.1.952.3aa34aa"
+ext.mpsQAVersion = "2024.1.1022.300f07a"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -63,7 +59,7 @@ if (!project.hasProperty('mbeddrVersion')) {
     if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
         ext.mbeddrVersion = "${mbeddrBranch.replace("/", "-")}.${major}.${minor}.+"
     } else {
-        ext.mbeddrVersion = "2024.1.25253.ccb451a"
+        ext.mbeddrVersion = "2024.1.25305.dff1a9a"
     }
 }
 
@@ -105,6 +101,7 @@ ext.artifactsDir = new File(buildDir, 'artifacts')
 
 configurations {
     mps
+    rerunMigrationsBackend
     languageLibs
     junitAnt
     pcollections // Synced to org.iets3.core.expr.base.collections.stubs/lib
@@ -113,10 +110,11 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
+    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.2.0.+")
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
-    junitAnt 'org.apache.ant:ant-junit:1.10.6'
-    pcollections 'org.pcollections:pcollections:4.0.1'
+    junitAnt 'org.apache.ant:ant-junit:1.10.15'
+    pcollections 'org.pcollections:pcollections:4.0.2'
     bigMath 'ch.obermuhlner:big-math:2.3.2'
 }
 
@@ -171,6 +169,8 @@ task resolveBigMath(type: Sync) {
 }
 
 task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs, resolvePcollections, resolveBigMath])
+
+ext.mpsHomeDir = resolveMps.destinationDir
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
@@ -255,6 +255,39 @@ task failOnTestError() {
 buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
 
+tasks.register('migrate', MpsMigrate) {
+    dependsOn(resolveMps, 'resolveMpsForModelcheck', 'downloadJbr', 'buildLanguages', 'buildAndRunTests')
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+
+    haltOnPrecheckFailure = false
+    haltOnDependencyError = true
+
+    mpsHome = mpsHomeDir
+
+    projectDirectories.from('code/languages/org.iets3.opensource')
+    folderMacros['iets3.github.opensource.home'] = rootProject.layout.projectDirectory
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins'))
+
+    maxHeapSize = '4G'
+}
+
+tasks.register('remigrate', Remigrate) {
+    mustRunAfter('migrate')
+    mustRunAfter('buildLanguages', 'buildAndRunTests')
+
+    dependsOn(resolveMps, 'resolveMpsForModelcheck','downloadJbr')
+
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+
+    mpsHome = mpsHomeDir
+    projectDirectories.from('code/languages/org.iets3.opensource')
+    folderMacros['iets3.github.opensource.home'] = rootProject.layout.projectDirectory
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins'))
+    maxHeapSize = '4G'
+}
+
 apply plugin: 'modelcheck'
 
 File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
@@ -262,7 +295,7 @@ File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
 def pluginsList = []
 
 modelcheck {
-    projectLocation =  new File("$projectDir/code")
+    projectLocation = new File("$projectDir/code/languages/org.iets3.opensource")
     mpsLocation = new File("$buildDir/mps")
     plugins = pluginsList
     mpsConfig = configurations.mps
@@ -282,6 +315,7 @@ afterEvaluate {  project ->
     }
     */
 }
+
 
 checkmodels {
     dependsOn(resolveMps)

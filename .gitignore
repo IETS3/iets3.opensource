@@ -51,6 +51,7 @@ code/languages/*/build.properties
 code/languages/*/TEST*.xml
 code/languages/org.iets3.core/build/tmp
 .mps-caches
+*.iml
 
 # -----------------------------------------------------------
 # GRADLE
