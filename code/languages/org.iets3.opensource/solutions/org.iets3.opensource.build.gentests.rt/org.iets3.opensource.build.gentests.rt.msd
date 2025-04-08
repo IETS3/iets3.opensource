@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.iets3.opensource.build.gentests.rt" uuid="e70ad515-8ff0-4a50-8cb4-41406f14e348" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib/takari-cpsuite-1.2.7.jar!/" type="java_classes">
-      <sourceRoot location="." />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="takari-cpsuite.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/takari-cpsuite-1.2.7.jar" />
+      <library location="${module}/lib/takari-cpsuite.jar" />
     </facet>
   </facets>
   <dependencies>

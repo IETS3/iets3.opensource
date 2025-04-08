@@ -162,7 +162,7 @@
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-references.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.opensource.build.gentests.rt" />
-        <fileset file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/lib/takari-cpsuite-1.2.7.jar" />
+        <fileset file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/lib/takari-cpsuite.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
       </classpath>
@@ -324,7 +324,7 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/lib/takari-cpsuite-1.2.7.jar" />
+        <fileset file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/lib/takari-cpsuite.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
       </classpath>
     </javac>
