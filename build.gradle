@@ -261,7 +261,7 @@ tasks.register('migrate', MpsMigrate) {
     javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
     haltOnPrecheckFailure = false
-    haltOnDependencyError = true
+    haltOnDependencyError = false
 
     mpsHome = mpsHomeDir
     mpsVersion = "$mpsVersion"
