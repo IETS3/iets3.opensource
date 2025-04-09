@@ -1,6 +1,7 @@
 import de.itemis.mps.gradle.*
 import de.itemis.mps.gradle.tasks.*
 import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
+import groovy.transform.TupleConstructor
 import groovy.xml.XmlSlurper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -94,17 +95,24 @@ ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-sn
 ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
 
 
+def buildDirPath(pathUnderBuildDir) {
+    project.layout.buildDirectory.dir(pathUnderBuildDir).get().asFile
+}
 
 // 'artifacts' is used in the generated ant scripts as build output directory
-ext.artifactsDir = new File(buildDir, 'artifacts')
+ext.artifactsDir = buildDirPath('artifacts')
+ext.reportsDir = buildDirPath('reports')
+
+wrapper {
+    gradleVersion '8.13'
+    distributionType Wrapper.DistributionType.ALL
+}
 
 configurations {
     mps
     rerunMigrationsBackend
     languageLibs
     junitAnt
-    pcollections // Synced to org.iets3.core.expr.base.collections.stubs/lib
-    bigMath // Synced to org.iets3.core.expr.math.interpreter/lib
 }
 
 dependencies {
@@ -115,8 +123,62 @@ dependencies {
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
     junitAnt 'org.apache.ant:ant-junit:1.10.15'
-    pcollections 'org.pcollections:pcollections:4.0.2'
-    bigMath 'ch.obermuhlner:big-math:2.3.2'
+}
+
+@TupleConstructor
+class BundledDep {
+    String name
+    List<String> entries
+    String libSolutionName
+    Closure configClosure = { transitive = false }
+    // in case a legacy dependency has a broken artifact name, e.g. w/o extension
+    String jarNameOverride
+    String getConfigName() {
+        name + '_bundled'
+    }
+    String getResolveTaskName() {
+        'resolve_' + this.configName
+    }
+    BundledDep overrideArtifactName(String artifactName) {
+        this.jarNameOverride = artifactName
+        this
+    }
+}
+
+def bundledDeps = [
+        new BundledDep('pcollections', ['org.pcollections:pcollections:4.0.2'], 'org.iets3.core.expr.base.collections.stubs'),
+        new BundledDep('bigMath', ['ch.obermuhlner:big-math:2.3.2'], 'org.iets3.core.expr.math.interpreter'),
+        new BundledDep('functionalJava', ['org.functionaljava:functionaljava:5.0'], 'org.iets3.core.expr.genjava.functionalJava'),
+        new BundledDep('cpsSuite', ['io.takari.junit:takari-cpsuite:1.2.7'], 'org.iets3.opensource.build.gentests.rt').overrideArtifactName('takari-cpsuite.jar')
+]
+
+bundledDeps.each { dep ->
+    configurations {
+        create(dep.configName)
+    }
+    dependencies {
+        dep.entries.each {entry ->
+            add(dep.configName, entry, dep.configClosure)
+        }
+    }
+    tasks.create(dep.resolveTaskName, Sync.class) {
+        from configurations.getByName(dep.configName)
+        into file("code/languages/org.iets3.opensource/solutions/${dep.libSolutionName}/lib")
+
+        // Strip version numbers from file names
+        rename { filename ->
+            def ra = configurations.getByName(dep.configName).resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+            String finalName
+            if (dep.jarNameOverride != null) {
+                finalName = dep.jarNameOverride
+            } else if (ra.classifier != null) {
+                finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
+            } else {
+                finalName = "${ra.name}.${ra.extension}"
+            }
+            return finalName
+        }
+    }
 }
 
 
@@ -135,41 +197,8 @@ task resolveLanguageLibs(type: Sync) {
     into "$buildDir/dependencies"
 }
 
-task resolvePcollections(type: Sync) {
-    from configurations.pcollections
-    into file('code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.base.collections.stubs/lib')
-
-    // Strip version numbers from file names
-    rename { filename ->
-        def ra = configurations.pcollections.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
-        String finalName
-        if (ra.classifier != null) {
-            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
-        } else {
-            finalName = "${ra.name}.${ra.extension}"
-        }
-        return finalName
-    }
-}
-
-task resolveBigMath(type: Sync) {
-    from configurations.bigMath
-    into file('code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.math.interpreter/lib')
-
-    // Strip version numbers from file names
-    rename { filename ->
-        def ra = configurations.bigMath.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
-        String finalName
-        if (ra.classifier != null) {
-            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
-        } else {
-            finalName = "${ra.name}.${ra.extension}"
-        }
-        return finalName
-    }
-}
-
-task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs, resolvePcollections, resolveBigMath])
+task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs])
+resolveDependencies.dependsOn << bundledDeps.collect {it.resolveTaskName }
 
 ext.mpsHomeDir = resolveMps.destinationDir
 
@@ -318,10 +347,14 @@ afterEvaluate {  project ->
 }
 
 
-task packageLanguages(type: Zip, dependsOn: buildLanguages) {
+task packageLanguages(type: Zip, dependsOn: [buildLanguages, cyclonedxBom]) {
     archiveBaseName = 'org.iets3.opensource'
-    from artifactsDir
-    include 'org.iets3.opensource/**'
+    from(artifactsDir) {
+        include 'org.iets3.opensource/**'
+    }
+    from(reportsDir) {
+        include 'sbom.json'
+    }
 }
 
 task packageTests(type: Zip, dependsOn: buildAndRunTests) {
@@ -539,15 +572,11 @@ tasks.named('githubRelease').configure {
 
 cyclonedxBom {
     // SBOM destination directory
-    destination = file("build/reports")
+    destination = reportsDir
     // The file name for the generated SBOMs (before the file format suffix)
     outputName = "sbom"
     // The file format generated, can be xml, json or all for generating both
     outputFormat = "json"
     // Don't include license texts in generated SBOMs
     includeLicenseText = false
-}
-
-assemble {
-    dependsOn('cyclonedxBom')
 }
