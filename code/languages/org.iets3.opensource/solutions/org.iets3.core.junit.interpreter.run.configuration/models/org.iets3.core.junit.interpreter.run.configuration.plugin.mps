@@ -1177,6 +1177,24 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="44O3PhML2Eh" role="3cqZAp">
+          <node concept="3cpWsn" id="44O3PhML2Ei" role="3cpWs9">
+            <property role="TrG5h" value="setting" />
+            <node concept="3uibUv" id="44O3PhML2fm" role="1tU5fm">
+              <ref role="3uigEE" node="ZtVdBYQzsv" resolve="AutoResetTestExecutionWorkspaceSetting" />
+            </node>
+            <node concept="2ShNRf" id="44O3PhML2Ej" role="33vP2m">
+              <node concept="1pGfFk" id="44O3PhML2Ek" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" node="ZtVdBYQF_S" resolve="AutoResetTestExecutionWorkspaceSetting" />
+                <node concept="Rm8GO" id="44O3PhML2El" role="37wK5m">
+                  <ref role="Rm8GQ" to="jpm3:5rUl2R7KDTl" resolve="INTERPRETER" />
+                  <ref role="1Px2BO" to="jpm3:5rUl2R7KDH5" resolve="ExecutionModePreference" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="5gyVhZ1884n" role="3cqZAp">
           <node concept="3cpWsn" id="5gyVhZ1884o" role="3cpWs9">
             <property role="TrG5h" value="testNodes" />
@@ -1195,6 +1213,16 @@
               <node concept="3uibUv" id="xK0$touePC" role="_ZDj9">
                 <ref role="3uigEE" to="sfqd:56tRMpP_ej7" resolve="ITestNodeWrapper" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="44O3PhML7lJ" role="3cqZAp">
+          <node concept="2OqwBi" id="44O3PhML9ju" role="3clFbG">
+            <node concept="37vLTw" id="44O3PhML7lH" role="2Oq$k0">
+              <ref role="3cqZAo" node="44O3PhML2Ei" resolve="setting" />
+            </node>
+            <node concept="liA8E" id="44O3PhMLawj" role="2OqNvi">
+              <ref role="37wK5l" node="44O3PhMLhs4" resolve="done" />
             </node>
           </node>
         </node>
@@ -1331,10 +1359,6 @@
           </node>
         </node>
         <node concept="3cpWs8" id="6UkhXJgJFlc" role="3cqZAp">
-          <node concept="15s5l7" id="724B1NtpwmZ" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: uncaught exceptions: ExecutionException&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4460871289557914789]&quot;;" />
-            <property role="huDt6" value="Error: uncaught exceptions: ExecutionException" />
-          </node>
           <node concept="3cpWsn" id="6UkhXJgJFld" role="3cpWs9">
             <property role="TrG5h" value="processHandler" />
             <node concept="3uibUv" id="6UkhXJgJEZf" role="1tU5fm">
@@ -1348,6 +1372,10 @@
                 <ref role="37wK5l" to="ic9i:1b7CZFPOU0w" resolve="execute" />
               </node>
             </node>
+          </node>
+          <node concept="15s5l7" id="724B1NtpwmZ" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: uncaught exceptions: ExecutionException&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4460871289557914789]&quot;;" />
+            <property role="huDt6" value="Error: uncaught exceptions: ExecutionException" />
           </node>
         </node>
         <node concept="3clFbH" id="1ZjgyFGdaWJ" role="3cqZAp" />
@@ -14452,17 +14480,6 @@
       <node concept="3cqZAl" id="ZtVdBYQF_U" role="3clF45" />
       <node concept="3Tm1VV" id="ZtVdBYQF_V" role="1B3o_S" />
       <node concept="3clFbS" id="ZtVdBYQF_W" role="3clF47">
-        <node concept="2xdQw9" id="ZtVdBYOo1N" role="3cqZAp">
-          <property role="2xdLsb" value="h1akgim/info" />
-          <node concept="3cpWs3" id="ZtVdBYOqyI" role="9lYJi">
-            <node concept="37vLTw" id="ZtVdBYOqWX" role="3uHU7w">
-              <ref role="3cqZAo" node="ZtVdBYQGTK" resolve="modeDuringExistence" />
-            </node>
-            <node concept="Xl_RD" id="ZtVdBYOo1P" role="3uHU7B">
-              <property role="Xl_RC" value="switch ExecMode:" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="ZtVdBYQIvr" role="3cqZAp">
           <node concept="37vLTI" id="ZtVdBYQJU0" role="3clFbG">
             <node concept="2YIFZM" id="ZtVdBYQLlN" role="37vLTx">
@@ -14503,17 +14520,6 @@
         <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
       <node concept="3clFbS" id="ZtVdBYQA8b" role="3clF47">
-        <node concept="2xdQw9" id="ZtVdBYP2C0" role="3cqZAp">
-          <property role="2xdLsb" value="h1akgim/info" />
-          <node concept="3cpWs3" id="ZtVdBYP2C1" role="9lYJi">
-            <node concept="Xl_RD" id="ZtVdBYP2C3" role="3uHU7B">
-              <property role="Xl_RC" value="set back ExecMode:" />
-            </node>
-            <node concept="37vLTw" id="ZtVdBYP3el" role="3uHU7w">
-              <ref role="3cqZAo" node="ZtVdBYQD5p" resolve="mode" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="ZtVdBYQR1h" role="3cqZAp">
           <node concept="2YIFZM" id="ZtVdBYQR1i" role="3clFbG">
             <ref role="37wK5l" to="jpm3:5rUl2R7KxIX" resolve="setExecutionMode" />
@@ -14527,6 +14533,34 @@
       <node concept="2AHcQZ" id="ZtVdBYQA8c" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+    <node concept="2tJIrI" id="44O3PhMLmJ2" role="jymVt" />
+    <node concept="3clFb_" id="44O3PhMLhs4" role="jymVt">
+      <property role="TrG5h" value="done" />
+      <node concept="3clFbS" id="44O3PhMLhs7" role="3clF47">
+        <node concept="3J1_TO" id="44O3PhMLl9n" role="3cqZAp">
+          <node concept="3uVAMA" id="44O3PhMLlig" role="1zxBo5">
+            <node concept="XOnhg" id="44O3PhMLlih" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="44O3PhMLlii" role="1tU5fm">
+                <node concept="3uibUv" id="44O3PhMLlKk" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="44O3PhMLlij" role="1zc67A" />
+          </node>
+          <node concept="3clFbS" id="44O3PhMLl9o" role="1zxBo7">
+            <node concept="3clFbF" id="44O3PhMLmCm" role="3cqZAp">
+              <node concept="1rXfSq" id="44O3PhMLmCl" role="3clFbG">
+                <ref role="37wK5l" node="ZtVdBYQA86" resolve="close" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="44O3PhMLd_P" role="1B3o_S" />
+      <node concept="3cqZAl" id="44O3PhMLhmZ" role="3clF45" />
     </node>
   </node>
 </model>
