@@ -293,7 +293,6 @@ tasks.register('migrate', MpsMigrate) {
     haltOnDependencyError = false
 
     mpsHome = mpsHomeDir
-    mpsVersion = "$mpsVersion"
 
     projectDirectories.from('code/languages/org.iets3.opensource')
     folderMacros['iets3.github.opensource.home'] = rootProject.layout.projectDirectory
@@ -312,7 +311,6 @@ tasks.register('remigrate', Remigrate) {
     javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
     mpsHome = mpsHomeDir
-    mpsVersion = "$mpsVersion"
     projectDirectories.from('code/languages/org.iets3.opensource')
     folderMacros['iets3.github.opensource.home'] = rootProject.layout.projectDirectory
 
@@ -327,7 +325,6 @@ def pluginsList = []
 tasks.register('modelcheck', MpsCheck) {
     projectLocation = new File("$projectDir/code/languages/org.iets3.opensource")
     mpsLocation = new File("$buildDir/mps")
-    mpsVersion = "$mpsVersion"
     plugins = pluginsList
     mpsConfig = configurations.mps
     macros = [new Macro("iets3.github.opensource.home", "$projectDir")]
