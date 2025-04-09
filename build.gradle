@@ -320,19 +320,18 @@ tasks.register('remigrate', Remigrate) {
 
 File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
 
-def pluginsList = []
+tasks.register('checkmodels', MpsCheck) {
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
-tasks.register('modelcheck', MpsCheck) {
     projectLocation = new File("$projectDir/code/languages/org.iets3.opensource")
-    mpsLocation = new File("$buildDir/mps")
-    plugins = pluginsList
-    mpsConfig = configurations.mps
-    macros = [new Macro("iets3.github.opensource.home", "$projectDir")]
+    mpsHome = new File("$buildDir/mps")
+    pluginRoots.add(mpsHome.dir('plugins'))
+    folderMacros.put("iets3.github.opensource.home", layout.projectDirectory)
     junitFile = modelcheckresult
     junitFormat = "message"
-    errorNoFail = true
+    ignoreFailures = true
     debug = false
-    maxHeap = "4G"
+    maxHeapSize = "4G"
 }
 
 afterEvaluate {  project ->
