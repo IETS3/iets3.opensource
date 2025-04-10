@@ -14390,6 +14390,9 @@
         <node concept="L2wRC" id="7K$Mm86tjry" role="39821P">
           <ref role="L2wRA" node="7K$Mm86tjeJ" resolve="test.iets3.core.tracequery" />
         </node>
+        <node concept="L2wRC" id="3F6B64FaYH3" role="39821P">
+          <ref role="L2wRA" node="1oxkC6pg3$7" resolve="org.iets3.core.trace.test" />
+        </node>
         <node concept="L2wRC" id="2i81Z9BQeRa" role="39821P">
           <ref role="L2wRA" node="2i81Z9BQeAe" resolve="test.iets3.safety.attributes" />
         </node>
