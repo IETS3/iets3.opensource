@@ -60,6 +60,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
       <concept id="1203088046679" name="jetbrains.mps.lang.plugin.structure.ActionInstance" flags="ng" index="tCFHf">
@@ -1950,6 +1951,7 @@
   <node concept="tC5Ba" id="1ognOHj$4ol">
     <property role="TrG5h" value="reqActions" />
     <property role="3GE5qa" value="actions" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="1ognOHj$4p0" role="ftER_">
       <node concept="tCFHf" id="6LfBX8Yg6GI" role="ftvYc">
         <ref role="tCJdB" node="6LfBX8Yg60R" resolve="DeleteRequirement" />
