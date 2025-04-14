@@ -220,3 +220,7 @@ If that happens, some migrations were not executed in the project. Run `./gradle
 - Windows Powershell: `Get-Clipboard | ForEach-Object { $_ -replace '^.{13}', '' } | git apply`
 - Linux solution 1: `xclip -o | sed 's/^.\{13\}//' | git apply`
 - Linux solution 2: `xsel --clipboard --output | sed 's/^.\{13\}//' | git apply`
+
+## Automatic Updating Of Dependencies
+
+The [Renovate](https://docs.renovatebot.com/) bot updates the dependencies automatically for the master branch or optionally other branches and creates PRs for those changes. The configuration can be found at [renovate.json5](https://github.com/IETS3/iets3.opensource/blob/master/.github/renovate.json5). The documentation for the configuration can be found at https://docs.renovatebot.com/configuration-options/.
