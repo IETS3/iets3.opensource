@@ -37,7 +37,7 @@
     <language slang="l:711a16d7-99e8-4e1d-b20c-99c0b7309cd8:org.iets3.core.expr.metafunction" version="2" />
     <language slang="l:fbba5118-5fc6-49ff-9c3b-0b4469830440:org.iets3.core.expr.mutable" version="8" />
     <language slang="l:f3eafff0-30d2-46d6-9150-f0f3b880ce27:org.iets3.core.expr.path" version="0" />
-    <language slang="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" version="10" />
+    <language slang="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" version="11" />
     <language slang="l:cd87ddab-6434-448e-a011-1e1c898de18e:org.iets3.core.expr.statemachines" version="4" />
     <language slang="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" version="6" />
     <language slang="l:3c910f62-7ca9-45f3-a98a-c6239acaa8f1:test.iest3.component.attribute" version="0" />
