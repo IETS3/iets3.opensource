@@ -72,7 +72,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -852,12 +852,6 @@
     <property role="34LRSv" value="referenceable" />
     <property role="R4oN_" value="define a record as referenceable" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6JZACDWRoq1" role="1TKVEi">
-      <property role="IQ2ns" value="7782108600710563457" />
-      <property role="20kJfa" value="idMember" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7cphKbKnKRF">
     <property role="EcuMT" value="8293738266727747051" />
@@ -959,6 +953,9 @@
     <node concept="PrWs8" id="5YygIlbfTZp" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="1azguFQRCFq" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:1azguFQNaDo" resolve="IContainAssignableExpression" />
+    </node>
     <node concept="1TJgyj" id="7cphKbLawOI" role="1TKVEi">
       <property role="IQ2ns" value="8293738266741050670" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -967,9 +964,6 @@
       <node concept="asaX9" id="1azguFQRCFA" role="lGtFl">
         <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.IContainExpressionParam&quot;" />
       </node>
-    </node>
-    <node concept="PrWs8" id="1azguFQRCFq" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:1azguFQNaDo" resolve="IContainAssignableExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="7cphKbLg8An">

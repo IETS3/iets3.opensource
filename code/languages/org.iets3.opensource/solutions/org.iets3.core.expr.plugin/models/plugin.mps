@@ -68,6 +68,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -1317,6 +1318,7 @@
   <node concept="tC5Ba" id="2ufoZQISzNZ">
     <property role="3GE5qa" value="inspect" />
     <property role="TrG5h" value="valueInspector" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="2ufoZQISzOa" role="ftER_">
       <node concept="2a7GMi" id="2ufoZQISzP1" role="ftvYc" />
       <node concept="tCFHf" id="2ufoZQISzOe" role="ftvYc">
@@ -1510,6 +1512,7 @@
   <node concept="tC5Ba" id="XC2si3iCtF">
     <property role="3GE5qa" value="testExecution" />
     <property role="TrG5h" value="TestExecution" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="XC2si3iC_5" role="2f5YQi">
       <ref role="tU$_T" to="tprs:6gEJNBIezVz" resolve="MPSRunMenu" />
     </node>
@@ -1684,6 +1687,21 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbJ" id="4CHZigGk5zM" role="3cqZAp">
+                    <node concept="3clFbS" id="4CHZigGk5zO" role="3clFbx">
+                      <node concept="3cpWs6" id="4CHZigGkb7k" role="3cqZAp">
+                        <node concept="3clFbT" id="4CHZigGkbE7" role="3cqZAk" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="4CHZigGk7a3" role="3clFbw">
+                      <node concept="37vLTw" id="4CHZigGk5UX" role="2Oq$k0">
+                        <ref role="3cqZAo" node="57VdFqPmOkv" resolve="projectModules" />
+                      </node>
+                      <node concept="liA8E" id="4CHZigGkagU" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3cpWs8" id="6pNCASbIAyC" role="3cqZAp">
                     <node concept="3cpWsn" id="6pNCASbIAyD" role="3cpWs9">
                       <property role="TrG5h" value="tec" />
@@ -1830,6 +1848,21 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbJ" id="4CHZigGkcXR" role="3cqZAp">
+                    <node concept="3clFbS" id="4CHZigGkcXT" role="3clFbx">
+                      <node concept="3cpWs6" id="4CHZigGkhjW" role="3cqZAp">
+                        <node concept="3clFbT" id="4CHZigGkhu9" role="3cqZAk" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="4CHZigGkeR9" role="3clFbw">
+                      <node concept="37vLTw" id="4CHZigGkd_s" role="2Oq$k0">
+                        <ref role="3cqZAo" node="57VdFqPmRIL" resolve="projectModules" />
+                      </node>
+                      <node concept="liA8E" id="4CHZigGkgqV" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3cpWs8" id="6pNCASbIHtz" role="3cqZAp">
                     <node concept="3cpWsn" id="6pNCASbIHt$" role="3cpWs9">
                       <property role="TrG5h" value="tec" />
@@ -1874,6 +1907,28 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4ye5wdhZeRq" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4a2JLGT$tgc" role="jymVt" />
+    <node concept="3clFb_" id="4a2JLGT$skV" role="jymVt">
+      <property role="TrG5h" value="getActionUpdateThread" />
+      <node concept="3Tm1VV" id="4a2JLGT$skW" role="1B3o_S" />
+      <node concept="2AHcQZ" id="4a2JLGT$skY" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="4a2JLGT$skZ" role="3clF45">
+        <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+      </node>
+      <node concept="3clFbS" id="4a2JLGT$sl2" role="3clF47">
+        <node concept="3clFbF" id="4a2JLGT$ufi" role="3cqZAp">
+          <node concept="Rm8GO" id="4a2JLGT$uB4" role="3clFbG">
+            <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+            <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4a2JLGT$sl3" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
@@ -2183,10 +2238,34 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="4a2JLGT$wOf" role="jymVt" />
+    <node concept="3clFb_" id="4a2JLGT$xhx" role="jymVt">
+      <property role="TrG5h" value="getActionUpdateThread" />
+      <node concept="3Tm1VV" id="4a2JLGT$xhy" role="1B3o_S" />
+      <node concept="2AHcQZ" id="4a2JLGT$xhz" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="4a2JLGT$xh$" role="3clF45">
+        <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+      </node>
+      <node concept="3clFbS" id="4a2JLGT$xh_" role="3clF47">
+        <node concept="3clFbF" id="4a2JLGT$xhA" role="3cqZAp">
+          <node concept="Rm8GO" id="4a2JLGT$xhB" role="3clFbG">
+            <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+            <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4a2JLGT$xhC" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4a2JLGT$wOg" role="jymVt" />
   </node>
   <node concept="tC5Ba" id="3TIaSh$E6vz">
     <property role="3GE5qa" value="cov" />
     <property role="TrG5h" value="coverageGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="3TIaSh$E6vC" role="ftER_">
       <node concept="2a7GMi" id="3TIaSh$E6vG" role="ftvYc" />
       <node concept="tCFHf" id="3TIaSh$E6vO" role="ftvYc">
@@ -2551,6 +2630,29 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="4a2JLGT$vqk" role="jymVt" />
+    <node concept="3clFb_" id="4a2JLGT$vNh" role="jymVt">
+      <property role="TrG5h" value="getActionUpdateThread" />
+      <node concept="3Tm1VV" id="4a2JLGT$vNi" role="1B3o_S" />
+      <node concept="2AHcQZ" id="4a2JLGT$vNj" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="4a2JLGT$vNk" role="3clF45">
+        <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+      </node>
+      <node concept="3clFbS" id="4a2JLGT$vNl" role="3clF47">
+        <node concept="3clFbF" id="4a2JLGT$vNm" role="3cqZAp">
+          <node concept="Rm8GO" id="4a2JLGT$vNn" role="3clFbG">
+            <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+            <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4a2JLGT$vNo" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4a2JLGT$vIE" role="jymVt" />
   </node>
   <node concept="312cEu" id="5rUl2R7JYML">
     <property role="3GE5qa" value="testExecution" />
@@ -2790,6 +2892,28 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="4a2JLGT$ya8" role="jymVt" />
+    <node concept="3clFb_" id="4a2JLGT$yuv" role="jymVt">
+      <property role="TrG5h" value="getActionUpdateThread" />
+      <node concept="3Tm1VV" id="4a2JLGT$yuw" role="1B3o_S" />
+      <node concept="2AHcQZ" id="4a2JLGT$yux" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="4a2JLGT$yuy" role="3clF45">
+        <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+      </node>
+      <node concept="3clFbS" id="4a2JLGT$yuz" role="3clF47">
+        <node concept="3clFbF" id="4a2JLGT$yu$" role="3cqZAp">
+          <node concept="Rm8GO" id="4a2JLGT$yu_" role="3clFbG">
+            <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+            <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4a2JLGT$yuA" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5rUl2R7NKQt">
     <property role="3GE5qa" value="testExecution" />
@@ -2878,6 +3002,28 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="5rUl2R7NKR6" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4a2JLGT$z8t" role="jymVt" />
+    <node concept="3clFb_" id="4a2JLGT$zcS" role="jymVt">
+      <property role="TrG5h" value="getActionUpdateThread" />
+      <node concept="3Tm1VV" id="4a2JLGT$zcT" role="1B3o_S" />
+      <node concept="2AHcQZ" id="4a2JLGT$zcU" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="4a2JLGT$zcV" role="3clF45">
+        <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+      </node>
+      <node concept="3clFbS" id="4a2JLGT$zcW" role="3clF47">
+        <node concept="3clFbF" id="4a2JLGT$zcX" role="3cqZAp">
+          <node concept="Rm8GO" id="4a2JLGT$zcY" role="3clFbG">
+            <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+            <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4a2JLGT$zcZ" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>

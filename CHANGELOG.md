@@ -5,6 +5,28 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## April 2025
+
+### Fixed
+
+- Number literals in scientific format e.g. 1e10 now require a number before "e". Numbers like "e-5" are not valid anymore because it caused exceptions in other parts of the code base.
+
+## March 2025
+
+### Fixed
+
+- An issue with conflicting rules for overloaded operation types with rational types was fixed.
+- The interpreter of the lookup tables was fixed.
+- The syntax of optional names in assert statements was improved.
+- A stack overflow related to success types was fixed.
+- Invalid value and constrained failed test items now show why tests fail.
+- An exception related to generator vs interpreter selection for tests was fixed.
+
+### Removed
+
+- The demo language `org.iets3.core.expr.typetags.lib` was removed.
+- The unused field `ReferenceableFlag#idMember` was removed.
+
 ## Feburary 2025
 
 ### Added
