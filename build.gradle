@@ -63,7 +63,7 @@ def minor = "2"
 
 ext.mpsVersion = '2023.2.2'
 
-def mbeddrVersion = "2023.2+"
+def mbeddrVersion = "$major.$minor+"
 def mpsQAVersion = "$major.$minor+"
 
 // if building a against a special branch from mbeddr is required add the name here
@@ -374,6 +374,7 @@ task packageLanguages(type: Zip, dependsOn: [buildLanguages, cyclonedxBom]) {
     }
     from(reportsDir) {
         include 'sbom.json'
+        into 'org.iets3.opensource'
     }
 }
 
