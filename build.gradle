@@ -47,8 +47,9 @@ def minor = "1"
 
 // Dependency versions
 
-ext.mpsVersion = '2024.1.2'
-ext.mpsQAVersion = "2024.1.1022.300f07a"
+ext.mpsVersion = '2024.1.3'
+
+def mpsQAVersion = "$major.$minor+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -58,9 +59,9 @@ def currentBranch = ""
 
 if (!project.hasProperty('mbeddrVersion')) {
     if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
-        ext.mbeddrVersion = "${mbeddrBranch.replace("/", "-")}.${major}.${minor}.+"
+        ext.mbeddrVersion = "${mbeddrBranch.replace("/", "-")}.$major.$minor+"
     } else {
-        ext.mbeddrVersion = "2024.1.25305.dff1a9a"
+        ext.mbeddrVersion = "$major.$minor+"
     }
 }
 
