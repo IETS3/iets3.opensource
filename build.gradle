@@ -350,6 +350,7 @@ task packageLanguages(type: Zip, dependsOn: [buildLanguages, cyclonedxBom]) {
     }
     from(reportsDir) {
         include 'sbom.json'
+        into 'org.iets3.opensource'
     }
 }
 
