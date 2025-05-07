@@ -1,6 +1,5 @@
 import de.itemis.mps.gradle.*
-import de.itemis.mps.gradle.tasks.MpsMigrate
-import de.itemis.mps.gradle.tasks.Remigrate
+import de.itemis.mps.gradle.tasks.*
 import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 import groovy.transform.TupleConstructor
 import groovy.xml.XmlSlurper
@@ -29,7 +28,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download
 downloadJbr {
-    jbrVersion = '17.0.11-b1207.30'
+    jbrVersion = '21.0.5-b631.16'
 }
 
 // detect if we are in a CI build
@@ -42,14 +41,16 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
-def major = "2024"
-def minor = "1"
+def major = "9999"
+def minor = "9"
 
 // Dependency versions
 
-ext.mpsVersion = '2024.1.3'
 
+
+ext.mpsVersion = "251.23774.234"
 def mpsQAVersion = "$major.$minor+"
+
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -118,7 +119,9 @@ configurations {
 }
 
 dependencies {
-    mps "com.jetbrains:mps:$mpsVersion"
+    // For a release version of MPS, use this dependency:
+    //mps "com.jetbrains:mps:$mpsBuild"
+    mps "com.jetbrains.mps:mps-prerelease:$mpsVersion"
     rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.2.0.+")
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
@@ -286,11 +289,11 @@ buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
 
 tasks.register('migrate', MpsMigrate) {
-    dependsOn(resolveMps, 'resolveMpsForModelcheck', 'downloadJbr', 'buildLanguages', 'buildAndRunTests')
+    dependsOn(resolveMps, 'downloadJbr', 'buildLanguages', 'buildAndRunTests')
     javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
     haltOnPrecheckFailure = false
-    haltOnDependencyError = true
+    haltOnDependencyError = false
 
     mpsHome = mpsHomeDir
 
@@ -306,7 +309,7 @@ tasks.register('remigrate', Remigrate) {
     mustRunAfter('migrate')
     mustRunAfter('buildLanguages', 'buildAndRunTests')
 
-    dependsOn(resolveMps, 'resolveMpsForModelcheck','downloadJbr')
+    dependsOn(resolveMps,'downloadJbr')
 
     javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
@@ -318,25 +321,21 @@ tasks.register('remigrate', Remigrate) {
     maxHeapSize = '4G'
 }
 
-apply plugin: 'modelcheck'
-
 File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
 
-def pluginsList = []
+tasks.register('checkmodels', MpsCheck) {
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
-modelcheck {
     projectLocation = new File("$projectDir/code/languages/org.iets3.opensource")
-    mpsLocation = new File("$buildDir/mps")
-    plugins = pluginsList
-    mpsConfig = configurations.mps
-    macros = [new Macro("iets3.github.opensource.home", "$projectDir")]
+    mpsHome = new File("$buildDir/mps")
+    pluginRoots.add(mpsHome.dir('plugins'))
+    folderMacros.put("iets3.github.opensource.home", layout.projectDirectory)
     junitFile = modelcheckresult
     junitFormat = "message"
-    errorNoFail = true
+    ignoreFailures = true
     debug = false
-    maxHeap = "4G"
+    maxHeapSize = "4G"
 }
-
 
 afterEvaluate {  project ->
     /*
@@ -346,10 +345,6 @@ afterEvaluate {  project ->
     */
 }
 
-
-checkmodels {
-    dependsOn(resolveMps)
-}
 
 task packageLanguages(type: Zip, dependsOn: [buildLanguages, cyclonedxBom]) {
     archiveBaseName = 'org.iets3.opensource'
