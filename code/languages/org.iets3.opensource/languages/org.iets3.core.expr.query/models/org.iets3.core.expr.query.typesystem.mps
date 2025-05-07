@@ -38,6 +38,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -488,10 +489,16 @@
           </node>
         </node>
         <node concept="3clFbS" id="5QDPRL$y1i9" role="3clFbx">
-          <node concept="2MkqsV" id="5QDPRL$y4c8" role="3cqZAp">
-            <node concept="Xl_RD" id="5QDPRL$y4cn" role="2MkJ7o">
-              <property role="Xl_RC" value="transform and group cannot be used together" />
+          <node concept="3cpWs8" id="3eH6BL4d1xi" role="3cqZAp">
+            <node concept="3cpWsn" id="3eH6BL4d1xl" role="3cpWs9">
+              <property role="TrG5h" value="errorMessage" />
+              <node concept="17QB3L" id="3eH6BL4d1xg" role="1tU5fm" />
+              <node concept="Xl_RD" id="5QDPRL$y4cn" role="33vP2m">
+                <property role="Xl_RC" value="transform and group cannot be used together" />
+              </node>
             </node>
+          </node>
+          <node concept="2MkqsV" id="5QDPRL$y4c8" role="3cqZAp">
             <node concept="2OqwBi" id="5QDPRL$yqwA" role="1urrMF">
               <node concept="1YBJjd" id="5QDPRL$y4xz" role="2Oq$k0">
                 <ref role="1YBMHb" node="5QDPRL$y19o" resolve="qe" />
@@ -500,11 +507,11 @@
                 <ref role="3Tt5mk" to="ysgh:5QDPRL$x5n_" resolve="group" />
               </node>
             </node>
+            <node concept="37vLTw" id="3eH6BL4d1BC" role="2MkJ7o">
+              <ref role="3cqZAo" node="3eH6BL4d1xl" resolve="errorMessage" />
+            </node>
           </node>
           <node concept="2MkqsV" id="5QDPRL$yqSD" role="3cqZAp">
-            <node concept="Xl_RD" id="5QDPRL$yqSE" role="2MkJ7o">
-              <property role="Xl_RC" value="transform and group cannot be used together" />
-            </node>
             <node concept="2OqwBi" id="5QDPRL$yqSF" role="1urrMF">
               <node concept="1YBJjd" id="5QDPRL$yqSG" role="2Oq$k0">
                 <ref role="1YBMHb" node="5QDPRL$y19o" resolve="qe" />
@@ -512,6 +519,9 @@
               <node concept="3TrEf2" id="5QDPRL$yrgz" role="2OqNvi">
                 <ref role="3Tt5mk" to="ysgh:5QDPRL$qmK4" resolve="transform" />
               </node>
+            </node>
+            <node concept="37vLTw" id="3eH6BL4d1C2" role="2MkJ7o">
+              <ref role="3cqZAo" node="3eH6BL4d1xl" resolve="errorMessage" />
             </node>
           </node>
         </node>

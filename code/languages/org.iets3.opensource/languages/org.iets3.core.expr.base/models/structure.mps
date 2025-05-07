@@ -23,12 +23,16 @@
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -560,6 +564,9 @@
     <property role="EcuMT" value="2807135271607940261" />
     <property role="R4oN_" value="a type representing nothing (in the context of options)" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="41vYFO2Jfdh" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="UN2ftLUxmN">
     <property role="3GE5qa" value="option" />
@@ -678,6 +685,9 @@
     <node concept="PrWs8" id="1Ez$z58LP6j" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
     </node>
+    <node concept="PrWs8" id="41vYFO2JfSF" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1Ez$z58L7Jd">
     <property role="3GE5qa" value="error.types" />
@@ -706,6 +716,9 @@
     </node>
     <node concept="PrWs8" id="1Ez$z58LP6m" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
+    </node>
+    <node concept="PrWs8" id="41vYFO2NXJA" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
   </node>
   <node concept="PlHQZ" id="1Ez$z58LP6f">
@@ -1100,6 +1113,9 @@
       <property role="IQ2ns" value="1019070541450015931" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="41vYFO2JhGQ" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="S$tO8ocnpq">
     <property role="TrG5h" value="TupleValue" />
@@ -1351,12 +1367,17 @@
     <node concept="1TJgyj" id="78hTg1$nXEV" role="1TKVEi">
       <property role="IQ2ns" value="8219602584774630075" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="3eH6BL3kbeI" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="69JueU2EnvQ" role="PzmwI">
       <ref role="PrY4T" node="69JueU2zshL" resolve="ISSItValueRef" />
+    </node>
+    <node concept="PrWs8" id="3eH6BL3kben" role="PzmwI">
+      <ref role="PrY4T" node="68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="PlHQZ" id="53cOfDpcBb9">
@@ -1644,9 +1665,14 @@
     <node concept="1TJgyj" id="60Qa1k_nMSL" role="1TKVEi">
       <property role="IQ2ns" value="6932772747669876273" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="3eH6BL3k2aj" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="3eH6BL3k2a7" role="PzmwI">
+      <ref role="PrY4T" node="68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="PlHQZ" id="60Qa1k_nI2f">
@@ -1796,9 +1822,14 @@
     <node concept="1TJgyj" id="5a_u3OzTCw9" role="1TKVEi">
       <property role="IQ2ns" value="5955298286257997833" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="3eH6BL3k26e" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="3eH6BL3k262" role="PzmwI">
+      <ref role="PrY4T" node="68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="5bEkIpehgUq">
@@ -2156,6 +2187,9 @@
     <property role="34LRSv" value="emptytype" />
     <property role="R4oN_" value="an empty type" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="41vYFO2_l63" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="PlHQZ" id="MNXm1ElbHo">
     <property role="EcuMT" value="915344943735946072" />
@@ -2171,6 +2205,15 @@
     <property role="EcuMT" value="7520958096812440715" />
     <property role="TrG5h" value="IComplexTypeSupportsEquals" />
   </node>
+  <node concept="PlHQZ" id="6wzrxL38hak">
+    <property role="EcuMT" value="7503962471793758868" />
+    <property role="TrG5h" value="IPreferredProposalContext" />
+  </node>
+  <node concept="PlHQZ" id="5r47dOfJ8Ur">
+    <property role="TrG5h" value="ITupleDeclaration" />
+    <property role="3GE5qa" value="tuples" />
+    <property role="EcuMT" value="6252153918474456730" />
+  </node>
   <node concept="PlHQZ" id="5r47dOfJ8UC">
     <property role="TrG5h" value="ITupleMemberDeclaration" />
     <property role="3GE5qa" value="tuples" />
@@ -2179,27 +2222,20 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="25rRV02ooIM">
-    <property role="EcuMT" value="2403760773179476914" />
+  <node concept="1TIwiD" id="5r47dOfJ9kS">
+    <property role="EcuMT" value="6252153918474458424" />
     <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="NCopiesOp" />
-    <property role="34LRSv" value="nTimes" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="25rRV02osES" role="1TKVEi">
-      <property role="IQ2ns" value="2403760773179493048" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="times" />
+    <property role="TrG5h" value="InlineTupleType" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="5r47dOfJ9kT" role="1TKVEi">
+      <property role="IQ2ns" value="6252153918474458425" />
+      <property role="20kJfa" value="decl" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <ref role="20lvS9" node="5r47dOfJ8Ur" resolve="ITupleDeclaration" />
     </node>
-    <node concept="PrWs8" id="25rRV02oy5O" role="PzmwI">
-      <ref role="PrY4T" node="25rRV02oe$f" resolve="ITupleOp" />
+    <node concept="PrWs8" id="41vYFO2GtZt" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="5r47dOfJ8Ur">
-    <property role="TrG5h" value="ITupleDeclaration" />
-    <property role="3GE5qa" value="tuples" />
-    <property role="EcuMT" value="6252153918474456730" />
   </node>
   <node concept="1TIwiD" id="6GiZkUz7qWO">
     <property role="EcuMT" value="7715507625824988980" />
@@ -2227,20 +2263,61 @@
       <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
-  <node concept="PlHQZ" id="6wzrxL38hak">
-    <property role="EcuMT" value="7503962471793758868" />
-    <property role="TrG5h" value="IPreferredProposalContext" />
-  </node>
-  <node concept="1TIwiD" id="5r47dOfJ9kS">
-    <property role="EcuMT" value="6252153918474458424" />
+  <node concept="1TIwiD" id="25rRV02ooIM">
+    <property role="EcuMT" value="2403760773179476914" />
     <property role="3GE5qa" value="tuples" />
-    <property role="TrG5h" value="InlineTupleType" />
-    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
-    <node concept="1TJgyj" id="5r47dOfJ9kT" role="1TKVEi">
-      <property role="IQ2ns" value="6252153918474458425" />
-      <property role="20kJfa" value="decl" />
+    <property role="TrG5h" value="NCopiesOp" />
+    <property role="34LRSv" value="nTimes" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="25rRV02osES" role="1TKVEi">
+      <property role="IQ2ns" value="2403760773179493048" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="times" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5r47dOfJ8Ur" resolve="ITupleDeclaration" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="25rRV02oy5O" role="PzmwI">
+      <ref role="PrY4T" node="25rRV02oe$f" resolve="ITupleOp" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2KEzU_jNj4j">
+    <property role="EcuMT" value="3182514044108878099" />
+    <property role="3GE5qa" value="numeric.number" />
+    <property role="TrG5h" value="ISupportHexValues" />
+  </node>
+  <node concept="PlHQZ" id="3eH6BL2TJIw">
+    <property role="EcuMT" value="3723661587905969056" />
+    <property role="TrG5h" value="IAssignable" />
+  </node>
+  <node concept="1TIwiD" id="5Ys_ngSnA9h">
+    <property role="EcuMT" value="6889545856364470865" />
+    <property role="3GE5qa" value="numeric" />
+    <property role="TrG5h" value="HexValue" />
+    <property role="34LRSv" value="hexadecimal value" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="5Ys_ngSnA9j" role="1TKVEl">
+      <property role="IQ2nx" value="6889545856364470867" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2KEzU_ju0fn" role="1TKVEl">
+      <property role="IQ2nx" value="3182514044103295959" />
+      <property role="TrG5h" value="propertyModelUID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2KEzU_juad6" role="1TKVEl">
+      <property role="IQ2nx" value="3182514044103336774" />
+      <property role="TrG5h" value="propertyNodeID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="5Ys_ngSnA9i" role="lGtFl">
+      <property role="Hh88m" value="hexValue" />
+      <node concept="tn0Fv" id="5Ys_ngSpzKg" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+      <node concept="trNpa" id="5Ys_ngSpFL7" role="EQaZv">
+        <ref role="trN6q" node="2KEzU_jNj4j" resolve="ISupportHexValues" />
+      </node>
     </node>
   </node>
 </model>

@@ -292,16 +292,18 @@
                 </node>
                 <node concept="2pJxcG" id="6EvkZrLma5B" role="2pJxcM">
                   <ref role="2pJxcJ" to="i3ya:7Bmg9Oo3Vr1" resolve="derived" />
-                  <node concept="2OqwBi" id="6EvkZrNIELA" role="28ntcv">
-                    <node concept="2OqwBi" id="6EvkZrNIELB" role="2Oq$k0">
-                      <node concept="37vLTw" id="6EvkZrNIELC" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6EvkZrLlIVF" resolve="newSpecification" />
+                  <node concept="WxPPo" id="3JdLLkOFaIY" role="28ntcv">
+                    <node concept="2OqwBi" id="6EvkZrNIELA" role="WxPPp">
+                      <node concept="2OqwBi" id="6EvkZrNIELB" role="2Oq$k0">
+                        <node concept="37vLTw" id="6EvkZrNIELC" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6EvkZrLlIVF" resolve="newSpecification" />
+                        </node>
+                        <node concept="3TrEf2" id="6EvkZrNIELD" role="2OqNvi">
+                          <ref role="3Tt5mk" to="i3ya:7athFveyQy5" resolve="specification" />
+                        </node>
                       </node>
-                      <node concept="3TrEf2" id="6EvkZrNIELD" role="2OqNvi">
-                        <ref role="3Tt5mk" to="i3ya:7athFveyQy5" resolve="specification" />
-                      </node>
+                      <node concept="3x8VRR" id="6EvkZrNIELE" role="2OqNvi" />
                     </node>
-                    <node concept="3x8VRR" id="6EvkZrNIELE" role="2OqNvi" />
                   </node>
                 </node>
                 <node concept="2pJxcG" id="6EvkZrLmaM6" role="2pJxcM">

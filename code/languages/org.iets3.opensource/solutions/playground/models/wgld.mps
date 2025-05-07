@@ -2,7 +2,7 @@
 <model ref="r:e79a89ea-18bd-43a3-a4a6-fdfa93b98a51(playground.wgld)">
   <persistence version="9" />
   <languages>
-    <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="0" />
+    <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="1" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports />
@@ -18,6 +18,9 @@
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
         <child id="606861080870797310" name="expr" index="pf3We" />
+      </concept>
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
@@ -128,7 +131,6 @@
       </concept>
       <concept id="4139771920858269574" name="org.iets3.core.expr.repl.structure.CellConstraintIt" flags="ng" index="3g_UGA" />
       <concept id="4139771920858263103" name="org.iets3.core.expr.repl.structure.CellConstraint" flags="ng" index="3g_Wav">
-        <child id="4139771920858263104" name="type" index="3g_Wbw" />
         <child id="4139771920858263106" name="constraint" index="3g_Wby" />
       </concept>
       <concept id="4139771920862372717" name="org.iets3.core.expr.repl.structure.FontBoldStyle" flags="ng" index="3jk0Zd" />
@@ -1002,7 +1004,7 @@
               <property role="ThHvf" value="3" />
             </node>
             <node concept="3g_Wav" id="56SqGtkR0Qm" role="3g_T$e">
-              <node concept="mLuIC" id="56SqGtkR0Ql" role="3g_Wbw" />
+              <node concept="mLuIC" id="56SqGtkR0Ql" role="2S399n" />
             </node>
           </node>
           <node concept="33c$z$" id="2DnmbxUKT9s" role="33dGG4">
@@ -1011,13 +1013,13 @@
               <property role="ThHvf" value="3" />
             </node>
             <node concept="3g_Wav" id="56SqGtkR0SF" role="3g_T$e">
-              <node concept="mLuIC" id="56SqGtkR0SE" role="3g_Wbw" />
               <node concept="30cPrR" id="56SqGtkR0VG" role="3g_Wby">
                 <node concept="30bXRB" id="56SqGtkR0Xn" role="30dEs_">
                   <property role="30bXRw" value="0" />
                 </node>
                 <node concept="3g_UGA" id="56SqGtkR0Ub" role="30dEsF" />
               </node>
+              <node concept="mLuIC" id="56SqGtkR0SE" role="2S399n" />
             </node>
           </node>
           <node concept="33c$z$" id="2DnmbxUKT9t" role="33dGG4">
@@ -1141,7 +1143,7 @@
             <property role="3gEyWN" value="false" />
             <property role="yKB1$" value="false" />
             <node concept="3g_Wav" id="JV9IWPU78r" role="3g_T$e">
-              <node concept="mLuIC" id="JV9IWPU78s" role="3g_Wbw" />
+              <node concept="mLuIC" id="JV9IWPU78s" role="2S399n" />
             </node>
             <node concept="ThHu4" id="JV9IWPU78t" role="ThHu5">
               <property role="ThHvf" value="3" />
@@ -1152,13 +1154,13 @@
             <property role="3gEyWN" value="false" />
             <property role="yKB1$" value="false" />
             <node concept="3g_Wav" id="JV9IWPU78u" role="3g_T$e">
-              <node concept="mLuIC" id="JV9IWPU78v" role="3g_Wbw" />
               <node concept="30cPrR" id="JV9IWPU78w" role="3g_Wby">
                 <node concept="30bXRB" id="JV9IWPU78x" role="30dEs_">
                   <property role="30bXRw" value="0" />
                 </node>
                 <node concept="3g_UGA" id="JV9IWPU78y" role="30dEsF" />
               </node>
+              <node concept="mLuIC" id="JV9IWPU78v" role="2S399n" />
             </node>
             <node concept="ThHu4" id="JV9IWPU78z" role="ThHu5">
               <property role="ThHvf" value="3" />
@@ -1287,7 +1289,7 @@
               <property role="30bXRw" value="5" />
             </node>
             <node concept="3g_Wav" id="JV9IWPUgNc" role="3g_T$e">
-              <node concept="mLuIC" id="JV9IWPUgNd" role="3g_Wbw" />
+              <node concept="mLuIC" id="JV9IWPUgNd" role="2S399n" />
             </node>
             <node concept="ThHu4" id="JV9IWPUgNe" role="ThHu5">
               <property role="ThHvf" value="3" />
@@ -1301,13 +1303,13 @@
               <property role="30bXRw" value="5" />
             </node>
             <node concept="3g_Wav" id="JV9IWPUgNf" role="3g_T$e">
-              <node concept="mLuIC" id="JV9IWPUgNg" role="3g_Wbw" />
               <node concept="30cPrR" id="JV9IWPUgNh" role="3g_Wby">
                 <node concept="30bXRB" id="JV9IWPUgNi" role="30dEs_">
                   <property role="30bXRw" value="0" />
                 </node>
                 <node concept="3g_UGA" id="JV9IWPUgNj" role="30dEsF" />
               </node>
+              <node concept="mLuIC" id="JV9IWPUgNg" role="2S399n" />
             </node>
             <node concept="ThHu4" id="JV9IWPUgNk" role="ThHu5">
               <property role="ThHvf" value="3" />
@@ -1436,7 +1438,7 @@
               <property role="30bXRw" value="7" />
             </node>
             <node concept="3g_Wav" id="JV9IWPUsp_" role="3g_T$e">
-              <node concept="mLuIC" id="JV9IWPUspA" role="3g_Wbw" />
+              <node concept="mLuIC" id="JV9IWPUspA" role="2S399n" />
             </node>
             <node concept="ThHu4" id="JV9IWPUspB" role="ThHu5">
               <property role="ThHvf" value="3" />
@@ -1450,13 +1452,13 @@
               <property role="30bXRw" value="12" />
             </node>
             <node concept="3g_Wav" id="JV9IWPUspC" role="3g_T$e">
-              <node concept="mLuIC" id="JV9IWPUspD" role="3g_Wbw" />
               <node concept="30cPrR" id="JV9IWPUspE" role="3g_Wby">
                 <node concept="30bXRB" id="JV9IWPUspF" role="30dEs_">
                   <property role="30bXRw" value="0" />
                 </node>
                 <node concept="3g_UGA" id="JV9IWPUspG" role="30dEsF" />
               </node>
+              <node concept="mLuIC" id="JV9IWPUspD" role="2S399n" />
             </node>
             <node concept="ThHu4" id="JV9IWPUspH" role="ThHu5">
               <property role="ThHvf" value="3" />
