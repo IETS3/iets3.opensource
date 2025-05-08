@@ -514,7 +514,7 @@
         <node concept="pUk6x" id="1D8fMMrKjdR" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="3NHTh2QYZqh" role="39821P">
-        <ref role="m_rDy" node="3NHTh2QYZdS" resolve="org.iets3.safety" />
+        <ref role="m_rDy" node="3NHTh2QYZdS" resolve="org.iets3.safety.os" />
         <node concept="pUk6x" id="3NHTh2QYZtd" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="1PzuxQOWHfM" role="39821P">
@@ -14228,7 +14228,7 @@
         </node>
       </node>
       <node concept="m$f5U" id="3NHTh2QYZlB" role="m$_yh">
-        <ref role="m$f5T" node="3NHTh2QYYvQ" resolve="org.iets3.safety" />
+        <ref role="m$f5T" node="3NHTh2QYYvQ" resolve="org.iets3.safety.os" />
       </node>
       <node concept="m$_yC" id="3NHTh2QZ0aB" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeSRRD" resolve="org.iets3.core.os" />
