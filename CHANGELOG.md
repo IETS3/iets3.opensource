@@ -12,6 +12,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Plugin org.iets3.safety was renamed to org.iets3.safety.os fixing the name collision with a plugin in org.iets3.core 
 
 - A NullPointerException was fixed for cases where a node implementing IValidNamedConcept had no name.
+- When calculating the supertype of number types, the precision is now correctly set to infinite when one of the types has an infinite precision.
 
 ## April 2025
 
