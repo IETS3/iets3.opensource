@@ -680,22 +680,11 @@
       <property role="TrG5h" value="runManuallyAsync" />
       <node concept="3Tm1VV" id="7QODtLvTFn$" role="1B3o_S" />
       <node concept="3clFbS" id="7QODtLvTFnA" role="3clF47">
-        <node concept="3clFbF" id="7QODtLvTGsE" role="3cqZAp">
-          <node concept="2YIFZM" id="7QODtLvTGNW" role="3clFbG">
-            <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
-            <ref role="37wK5l" to="hnhi:3hn7H_$lmns" resolve="submitISolvable" />
-            <node concept="13iPFW" id="7QODtLvTGNX" role="37wK5m" />
-            <node concept="2OqwBi" id="5BRQP3RmK2b" role="37wK5m">
-              <node concept="Rm8GO" id="5BRQP3RmJB5" role="2Oq$k0">
-                <ref role="Rm8GQ" to="dzyv:~ChronoUnit.FOREVER" resolve="FOREVER" />
-                <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
-              </node>
-              <node concept="liA8E" id="5BRQP3RmKNp" role="2OqNvi">
-                <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration()" resolve="getDuration" />
-              </node>
-            </node>
-            <node concept="3clFbT" id="cwnBfE0FNP" role="37wK5m">
-              <property role="3clFbU" value="true" />
+        <node concept="3clFbF" id="75Ean$HroIU" role="3cqZAp">
+          <node concept="2OqwBi" id="75Ean$Hrp29" role="3clFbG">
+            <node concept="13iPFW" id="75Ean$HroIS" role="2Oq$k0" />
+            <node concept="2qgKlT" id="75Ean$HrpNg" role="2OqNvi">
+              <ref role="37wK5l" node="3NwcubmnBQ5" resolve="runSolverAsync" />
             </node>
           </node>
         </node>
