@@ -9,6 +9,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
+- Plugin org.iets3.safety was renamed to org.iets3.safety.os fixing the name collision with a plugin in org.iets3.core 
+
 - A NullPointerException was fixed for cases where a node implementing IValidNamedConcept had no name.
 
 ## April 2025
