@@ -722,7 +722,7 @@
                           <node concept="1rXfSq" id="75Ean$HoLXO" role="3clFbG">
                             <ref role="37wK5l" node="75Ean$HowQa" resolve="isRelevant" />
                             <node concept="37vLTw" id="75Ean$HowQd" role="37wK5m">
-                              <ref role="3cqZAo" node="75Ean$Ho0te" resolve="it" />
+                              <ref role="3cqZAo" node="75Ean$Ho0te" resolve="stf" />
                             </node>
                             <node concept="37vLTw" id="75Ean$HowQe" role="37wK5m">
                               <ref role="3cqZAo" node="75Ean$HgQqa" resolve="superConceptsAll" />
@@ -795,7 +795,7 @@
             <node concept="liA8E" id="2s2qa7R0NkR" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="37vLTw" id="75Ean$Hps6Y" role="37wK5m">
-                <ref role="3cqZAo" node="75Ean$Hps6S" resolve="string" />
+                <ref role="3cqZAo" node="75Ean$Hps6S" resolve="msg" />
               </node>
             </node>
           </node>
