@@ -11,6 +11,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - A NullPointerException was fixed for cases where a node implementing IValidNamedConcept had no name.
 - When calculating the supertype of number types, the precision is now correctly set to infinite when one of the types has an infinite precision.
+- The primitiveTypeMapper extension supports a new method `PrimitiveTypeMapper#useStringConstraints` that can be set to false to disable string types with constraints and go back to regular string types.
 
 ## April 2025
 
