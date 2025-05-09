@@ -189,6 +189,11 @@
       </concept>
       <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
     </language>
+    <language id="5a0fae25-8093-498f-81fe-3b264864819a" name="test.org.iets3.analysis.base.solvable">
+      <concept id="8658850571204308155" name="test.org.iets3.analysis.base.solvable.structure.DummyISolvable" flags="ng" index="2NY4oc">
+        <property id="8658850571204311506" name="sleepTime" index="2NY5d_" />
+      </concept>
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -2307,6 +2312,33 @@
       <node concept="3Tm1VV" id="3x8VOVH8uqj" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="3x8VOVH1smh" role="1B3o_S" />
+  </node>
+  <node concept="2NY4oc" id="2qZCmtwohm7">
+    <property role="2NY5d_" value="506" />
+  </node>
+  <node concept="2NY4oc" id="2qZCmtwohm8">
+    <property role="2NY5d_" value="957" />
+  </node>
+  <node concept="2NY4oc" id="2qZCmtwohma">
+    <property role="2NY5d_" value="921" />
+  </node>
+  <node concept="2NY4oc" id="2qZCmtwohmp">
+    <property role="2NY5d_" value="654" />
+  </node>
+  <node concept="2NY4oc" id="2qZCmtwohmr">
+    <property role="2NY5d_" value="339" />
+  </node>
+  <node concept="2NY4oc" id="2qZCmtwohms">
+    <property role="2NY5d_" value="680" />
+  </node>
+  <node concept="2NY4oc" id="2qZCmtwohmu">
+    <property role="2NY5d_" value="989" />
+  </node>
+  <node concept="2NY4oc" id="2qZCmtwohmx">
+    <property role="2NY5d_" value="869" />
+  </node>
+  <node concept="2NY4oc" id="2qZCmtwohmy">
+    <property role="2NY5d_" value="262" />
   </node>
 </model>
 
