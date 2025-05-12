@@ -1000,6 +1000,9 @@
                   <node concept="37vLTw" id="2qZCmtwlFVG" role="37wK5m">
                     <ref role="3cqZAo" node="4aAsKjbyLlB" resolve="samePrio" />
                   </node>
+                  <node concept="37vLTw" id="7Vgw$ZVCtN9" role="37wK5m">
+                    <ref role="3cqZAo" node="75Ean$HgQqa" resolve="superConceptsAll" />
+                  </node>
                 </node>
                 <node concept="liA8E" id="4aAsKjbRmO4" role="2OqNvi">
                   <ref role="37wK5l" node="7rOSrvnIT4g" resolve="createSolverTask" />
@@ -1104,14 +1107,6 @@
       <node concept="3uibUv" id="2qZCmtwlFVF" role="3clF45">
         <ref role="3uigEE" node="7rOSrvnISX_" resolve="SolverTaskFactory" />
       </node>
-      <node concept="37vLTG" id="2qZCmtwlFV$" role="3clF46">
-        <property role="TrG5h" value="samePrio" />
-        <node concept="_YKpA" id="2qZCmtwlFV_" role="1tU5fm">
-          <node concept="3uibUv" id="2qZCmtwlFVA" role="_ZDj9">
-            <ref role="3uigEE" node="7rOSrvnISX_" resolve="SolverTaskFactory" />
-          </node>
-        </node>
-      </node>
       <node concept="3clFbS" id="2qZCmtwlFUW" role="3clF47">
         <node concept="3cpWs6" id="2qZCmtwlFUX" role="3cqZAp">
           <node concept="1eOMI4" id="2qZCmtwlFUY" role="3cqZAk">
@@ -1134,12 +1129,13 @@
                               </node>
                               <node concept="1rXfSq" id="2qZCmtwlFVa" role="37wK5m">
                                 <ref role="37wK5l" node="2qZCmtwiDKj" resolve="mostSpecializedConcept" />
-                                <node concept="2OqwBi" id="2qZCmtwlFVb" role="37wK5m">
-                                  <node concept="37vLTw" id="2qZCmtwlFVc" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="2qZCmtwlFVe" resolve="stf" />
+                                <node concept="1rXfSq" id="7Vgw$ZVCYhy" role="37wK5m">
+                                  <ref role="37wK5l" node="4aAsKjb$M37" resolve="relevantConcepts" />
+                                  <node concept="37vLTw" id="7Vgw$ZVD27n" role="37wK5m">
+                                    <ref role="3cqZAo" node="7Vgw$ZVCxdk" resolve="superConceptsAll" />
                                   </node>
-                                  <node concept="liA8E" id="2qZCmtwlFVd" role="2OqNvi">
-                                    <ref role="37wK5l" node="7rOSrvnJ4j5" resolve="applicableConcepts" />
+                                  <node concept="37vLTw" id="7Vgw$ZVDhC5" role="37wK5m">
+                                    <ref role="3cqZAo" node="2qZCmtwlFVe" resolve="stf" />
                                   </node>
                                 </node>
                               </node>
@@ -1220,6 +1216,21 @@
           <property role="x79VB" value=" " />
         </node>
       </node>
+      <node concept="37vLTG" id="2qZCmtwlFV$" role="3clF46">
+        <property role="TrG5h" value="samePrio" />
+        <node concept="_YKpA" id="2qZCmtwlFV_" role="1tU5fm">
+          <node concept="3uibUv" id="2qZCmtwlFVA" role="_ZDj9">
+            <ref role="3uigEE" node="7rOSrvnISX_" resolve="SolverTaskFactory" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7Vgw$ZVCxdk" role="3clF46">
+        <property role="TrG5h" value="superConceptsAll" />
+        <node concept="3uibUv" id="7Vgw$ZVCxdl" role="1tU5fm">
+          <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+          <node concept="3bZ5Sz" id="7Vgw$ZVCxdm" role="11_B2D" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="2qZCmtwl6bK" role="jymVt" />
     <node concept="2YIFZL" id="2qZCmtwiDKj" role="jymVt">
@@ -1284,8 +1295,7 @@
         <node concept="3clFbF" id="75Ean$HowPR" role="3cqZAp">
           <node concept="3fqX7Q" id="75Ean$HowPS" role="3clFbG">
             <node concept="2OqwBi" id="75Ean$HowPT" role="3fr31v">
-              <node concept="2YIFZM" id="4aAsKjb$M3d" role="2Oq$k0">
-                <ref role="1Pybhc" node="7rOSrvnISp9" resolve="STF" />
+              <node concept="1rXfSq" id="7Vgw$ZVAPUC" role="2Oq$k0">
                 <ref role="37wK5l" node="4aAsKjb$M37" resolve="relevantConcepts" />
                 <node concept="37vLTw" id="4aAsKjb$M3b" role="37wK5m">
                   <ref role="3cqZAo" node="75Ean$HowQ3" resolve="superConceptsAll" />
@@ -1312,7 +1322,7 @@
       <node concept="37vLTG" id="4aAsKjb$M2Y" role="3clF46">
         <property role="TrG5h" value="superConceptsAll" />
         <node concept="3uibUv" id="4aAsKjb$M2Z" role="1tU5fm">
-          <ref role="3uigEE" to="33ny:~HashSet" resolve="HashSet" />
+          <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
           <node concept="3bZ5Sz" id="4aAsKjb$M30" role="11_B2D" />
         </node>
       </node>

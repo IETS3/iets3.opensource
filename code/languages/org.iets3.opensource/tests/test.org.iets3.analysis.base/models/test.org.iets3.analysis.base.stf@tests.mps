@@ -44,6 +44,7 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -256,6 +257,144 @@
             <property role="3cmrfH" value="0" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7Vgw$ZVF89$" role="1SL9yI">
+      <property role="TrG5h" value="ensureThatSolverTaskFactoryForUnrelatedConceptIsChosen" />
+      <node concept="3cqZAl" id="7Vgw$ZVF89_" role="3clF45" />
+      <node concept="3clFbS" id="7Vgw$ZVF89D" role="3clF47">
+        <node concept="3cpWs8" id="7Vgw$ZVF8ah" role="3cqZAp">
+          <node concept="3cpWsn" id="7Vgw$ZVF8ai" role="3cpWs9">
+            <property role="TrG5h" value="task" />
+            <node concept="3Tqbb2" id="7Vgw$ZVF8aj" role="1tU5fm">
+              <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
+            </node>
+            <node concept="2YIFZM" id="7Vgw$ZVF8ak" role="33vP2m">
+              <ref role="37wK5l" to="hnhi:7rOSrvnISxp" resolve="createSolverTask" />
+              <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+              <node concept="2pJPEk" id="7Vgw$ZVFomX" role="37wK5m">
+                <node concept="2pJPED" id="7Vgw$ZVFomY" role="2pJPEn">
+                  <ref role="2pJxaS" to="6w03:7Vgw$ZVEZE6" resolve="Unrelated" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="7Vgw$ZVF8an" role="37wK5m">
+                <property role="Xl_RC" value="dummy" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7Vgw$ZVF8gr" role="3cqZAp" />
+        <node concept="2Hmddi" id="7Vgw$ZVF8hm" role="3cqZAp">
+          <node concept="37vLTw" id="7Vgw$ZVF8hn" role="2Hmdds">
+            <ref role="3cqZAo" node="7Vgw$ZVF8ai" resolve="task" />
+          </node>
+        </node>
+        <node concept="3vwNmj" id="7Vgw$ZVF8ho" role="3cqZAp">
+          <node concept="2OqwBi" id="7Vgw$ZVF8hp" role="3vwVQn">
+            <node concept="37vLTw" id="7Vgw$ZVF8hq" role="2Oq$k0">
+              <ref role="3cqZAo" node="7Vgw$ZVF8ai" resolve="task" />
+            </node>
+            <node concept="1mIQ4w" id="7Vgw$ZVF8hr" role="2OqNvi">
+              <node concept="chp4Y" id="7Vgw$ZVF8hs" role="cj9EA">
+                <ref role="cht4Q" to="6w03:7wEqFvbO3UV" resolve="DummySolverTask" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7Vgw$ZVF8ht" role="3cqZAp">
+          <node concept="1PaTwC" id="7Vgw$ZVF8hu" role="1aUNEU">
+            <node concept="3oM_SD" id="7Vgw$ZVF8hv" role="1PaTwD">
+              <property role="3oM_SC" value="'Factory1'" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hw" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hx" role="1PaTwD">
+              <property role="3oM_SC" value="'Factory2'" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hy" role="1PaTwD">
+              <property role="3oM_SC" value="create" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hz" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8h$" role="1PaTwD">
+              <property role="3oM_SC" value="'DummySolverTask'," />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8h_" role="1PaTwD">
+              <property role="3oM_SC" value="but" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hA" role="1PaTwD">
+              <property role="3oM_SC" value="'Factory2'" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hB" role="1PaTwD">
+              <property role="3oM_SC" value="must" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hC" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hD" role="1PaTwD">
+              <property role="3oM_SC" value="chosen." />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hE" role="1PaTwD">
+              <property role="3oM_SC" value="This" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hF" role="1PaTwD">
+              <property role="3oM_SC" value="can" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hG" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hH" role="1PaTwD">
+              <property role="3oM_SC" value="determined" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hI" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hJ" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7Vgw$ZVF8hK" role="3cqZAp">
+          <node concept="1PaTwC" id="7Vgw$ZVF8hL" role="1aUNEU">
+            <node concept="3oM_SD" id="7Vgw$ZVF8hM" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hN" role="1PaTwD">
+              <property role="3oM_SC" value="sets" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hO" role="1PaTwD">
+              <property role="3oM_SC" value="'sleepTime'" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hP" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="7Vgw$ZVF8hQ" role="1PaTwD">
+              <property role="3oM_SC" value="'0'" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="7Vgw$ZVF8hR" role="3cqZAp">
+          <node concept="2OqwBi" id="7Vgw$ZVF8hS" role="3tpDZA">
+            <node concept="1PxgMI" id="7Vgw$ZVF8hT" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="7Vgw$ZVF8hU" role="3oSUPX">
+                <ref role="cht4Q" to="6w03:7wEqFvbO3UV" resolve="DummySolverTask" />
+              </node>
+              <node concept="37vLTw" id="7Vgw$ZVF8hV" role="1m5AlR">
+                <ref role="3cqZAo" node="7Vgw$ZVF8ai" resolve="task" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="7Vgw$ZVF8hW" role="2OqNvi">
+              <ref role="3TsBF5" to="6w03:7wEqFvbO5ba" resolve="sleepTime" />
+            </node>
+          </node>
+          <node concept="3cmrfG" id="7Vgw$ZVF8hX" role="3tpDZB">
+            <property role="3cmrfH" value="1234" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="7Vgw$ZVF8gs" role="3cqZAp" />
       </node>
     </node>
   </node>
