@@ -2,6 +2,7 @@
 <model ref="r:2b6823f7-1c48-47b9-9a41-e04ac80f7887(test.org.iets3.analysis.base.solvable.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -59,7 +60,7 @@
   <node concept="1TIwiD" id="2qZCmtwh4V7">
     <property role="EcuMT" value="2792127759361789639" />
     <property role="TrG5h" value="H1Dummy" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2qZCmtwh4V8">
     <property role="EcuMT" value="2792127759361789640" />
