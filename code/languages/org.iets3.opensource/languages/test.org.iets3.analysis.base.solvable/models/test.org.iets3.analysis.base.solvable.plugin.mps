@@ -38,11 +38,18 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
       </concept>
       <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
@@ -205,6 +212,22 @@
         <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
+    <node concept="3clFb_" id="1mChDufikj4" role="jymVt">
+      <property role="TrG5h" value="priority" />
+      <node concept="10Oyi0" id="1mChDufikj5" role="3clF45" />
+      <node concept="3Tm1VV" id="1mChDufikj6" role="1B3o_S" />
+      <node concept="3clFbS" id="1mChDufikjf" role="3clF47">
+        <node concept="3clFbF" id="1mChDufivX4" role="3cqZAp">
+          <node concept="10M0yZ" id="1mChDufix0r" role="3clFbG">
+            <ref role="3cqZAo" to="wyt6:~Integer.MIN_VALUE" resolve="MIN_VALUE" />
+            <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1mChDufikjg" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="4aAsKjbTtyK">
     <property role="TrG5h" value="Factory2" />
@@ -275,6 +298,22 @@
       </node>
       <node concept="2AHcQZ" id="4aAsKjbTtz8" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="1mChDufiBBF" role="jymVt">
+      <property role="TrG5h" value="priority" />
+      <node concept="10Oyi0" id="1mChDufiBBG" role="3clF45" />
+      <node concept="3Tm1VV" id="1mChDufiBBH" role="1B3o_S" />
+      <node concept="3clFbS" id="1mChDufiBBQ" role="3clF47">
+        <node concept="3clFbF" id="1mChDufiIaB" role="3cqZAp">
+          <node concept="10M0yZ" id="1mChDufiIaC" role="3clFbG">
+            <ref role="3cqZAo" to="wyt6:~Integer.MIN_VALUE" resolve="MIN_VALUE" />
+            <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1mChDufiBBR" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
   </node>
