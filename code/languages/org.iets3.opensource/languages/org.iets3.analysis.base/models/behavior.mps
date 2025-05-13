@@ -239,6 +239,9 @@
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
+        <child id="2667874559098216723" name="text" index="3HnX3l" />
+      </concept>
       <concept id="2217234381367530212" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocReference" flags="ng" index="VXe08">
         <reference id="2217234381367530213" name="classifier" index="VXe09" />
       </concept>
@@ -338,11 +341,31 @@
     <property role="3GE5qa" value="adapter" />
     <ref role="13h7C2" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     <node concept="13i0hz" id="4pkidg67Lgb" role="13h7CS">
-      <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="createSolverTask" />
       <node concept="3Tm1VV" id="4pkidg67Lgc" role="1B3o_S" />
-      <node concept="3clFbS" id="4pkidg67Lgd" role="3clF47" />
+      <node concept="3clFbS" id="4pkidg67Lgd" role="3clF47">
+        <node concept="3clFbF" id="75lF9T6uCV8" role="3cqZAp">
+          <node concept="2YIFZM" id="75lF9T6uDgz" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:7rOSrvnISxp" resolve="createSolverTask" />
+            <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+            <node concept="13iPFW" id="75lF9T6uDwb" role="37wK5m" />
+            <node concept="2OqwBi" id="75lF9T6uIwD" role="37wK5m">
+              <node concept="2OqwBi" id="75lF9T6uG5Y" role="2Oq$k0">
+                <node concept="2JrnkZ" id="75lF9T6uFzN" role="2Oq$k0">
+                  <node concept="13iPFW" id="75lF9T6uDPb" role="2JrQYb" />
+                </node>
+                <node concept="liA8E" id="75lF9T6uGnD" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="liA8E" id="75lF9T6uKtt" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Class.toString()" resolve="toString" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3Tqbb2" id="4pkidg67Lgj" role="3clF45">
         <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
       </node>
@@ -680,21 +703,21 @@
       <property role="TrG5h" value="runManuallyAsync" />
       <node concept="3Tm1VV" id="7QODtLvTFn$" role="1B3o_S" />
       <node concept="3clFbS" id="7QODtLvTFnA" role="3clF47">
-        <node concept="3clFbF" id="7QODtLvTGsE" role="3cqZAp">
-          <node concept="2YIFZM" id="7QODtLvTGNW" role="3clFbG">
-            <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
+        <node concept="3clFbF" id="75Ean$HroIU" role="3cqZAp">
+          <node concept="2YIFZM" id="4aAsKjbunKK" role="3clFbG">
             <ref role="37wK5l" to="hnhi:3hn7H_$lmns" resolve="submitISolvable" />
-            <node concept="13iPFW" id="7QODtLvTGNX" role="37wK5m" />
-            <node concept="2OqwBi" id="5BRQP3RmK2b" role="37wK5m">
-              <node concept="Rm8GO" id="5BRQP3RmJB5" role="2Oq$k0">
+            <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
+            <node concept="13iPFW" id="4aAsKjbunKL" role="37wK5m" />
+            <node concept="2OqwBi" id="4aAsKjbunKM" role="37wK5m">
+              <node concept="Rm8GO" id="4aAsKjbunKN" role="2Oq$k0">
                 <ref role="Rm8GQ" to="dzyv:~ChronoUnit.FOREVER" resolve="FOREVER" />
                 <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
               </node>
-              <node concept="liA8E" id="5BRQP3RmKNp" role="2OqNvi">
+              <node concept="liA8E" id="4aAsKjbunKO" role="2OqNvi">
                 <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration()" resolve="getDuration" />
               </node>
             </node>
-            <node concept="3clFbT" id="cwnBfE0FNP" role="37wK5m">
+            <node concept="3clFbT" id="4aAsKjbunKP" role="37wK5m">
               <property role="3clFbU" value="true" />
             </node>
           </node>
@@ -1384,22 +1407,11 @@
       <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="3NwcubmnBQ6" role="1B3o_S" />
       <node concept="3clFbS" id="3NwcubmnBQ8" role="3clF47">
-        <node concept="3clFbF" id="3NwcubmnCHl" role="3cqZAp">
-          <node concept="2YIFZM" id="_TaQix4Zs1" role="3clFbG">
-            <ref role="37wK5l" to="hnhi:3hn7H_$lmns" resolve="submitISolvable" />
-            <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
-            <node concept="13iPFW" id="_TaQix4Zs2" role="37wK5m" />
-            <node concept="2OqwBi" id="_TaQix4Zs3" role="37wK5m">
-              <node concept="Rm8GO" id="_TaQix4Zs4" role="2Oq$k0">
-                <ref role="Rm8GQ" to="dzyv:~ChronoUnit.FOREVER" resolve="FOREVER" />
-                <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
-              </node>
-              <node concept="liA8E" id="_TaQix4Zs5" role="2OqNvi">
-                <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration()" resolve="getDuration" />
-              </node>
-            </node>
-            <node concept="3clFbT" id="_TaQix4Zs6" role="37wK5m">
-              <property role="3clFbU" value="true" />
+        <node concept="3clFbF" id="4aAsKjbuonM" role="3cqZAp">
+          <node concept="2OqwBi" id="4aAsKjbuoLt" role="3clFbG">
+            <node concept="13iPFW" id="4aAsKjbuonL" role="2Oq$k0" />
+            <node concept="2qgKlT" id="4aAsKjbuqOi" role="2OqNvi">
+              <ref role="37wK5l" node="7QODtLvTFnz" resolve="runManuallyAsync" />
             </node>
           </node>
         </node>
@@ -1410,6 +1422,9 @@
             <property role="1dT_AB" value="Runs the solver asynchronously. Error messages are automatically propagated after the run to the ISolvable." />
           </node>
         </node>
+        <node concept="TZ5HI" id="4aAsKjbuqXB" role="3nqlJM">
+          <node concept="TZ5HA" id="4aAsKjbuqXC" role="3HnX3l" />
+        </node>
       </node>
       <node concept="3uibUv" id="3NwcubmnCWl" role="3clF45">
         <ref role="3uigEE" to="5zyv:~CompletableFuture" resolve="CompletableFuture" />
@@ -1419,6 +1434,9 @@
             <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
           </node>
         </node>
+      </node>
+      <node concept="2AHcQZ" id="4aAsKjbuqXD" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="13i0hz" id="6pPfAzJBwWe" role="13h7CS">
