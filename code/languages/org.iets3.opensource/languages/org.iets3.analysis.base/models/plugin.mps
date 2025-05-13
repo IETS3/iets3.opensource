@@ -801,7 +801,7 @@
                 <node concept="2OqwBi" id="75lF9T6hxxZ" role="33vP2m">
                   <node concept="2OqwBi" id="75lF9T6hxy0" role="2Oq$k0">
                     <node concept="37vLTw" id="75lF9T6hxy1" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5d7fNZ6g6cu" resolve="sortable" />
+                      <ref role="3cqZAo" node="5d7fNZ6g6cu" resolve="sortableSTFs" />
                     </node>
                     <node concept="liA8E" id="75lF9T6hxy2" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~Collection.stream()" resolve="stream" />
@@ -1023,7 +1023,7 @@
           <node concept="1rXfSq" id="75lF9T6pA2J" role="3cqZAk">
             <ref role="37wK5l" node="2qZCmtwiDKj" resolve="mostSpecializedConcept" />
             <node concept="1rXfSq" id="75lF9T6pA2K" role="37wK5m">
-              <ref role="37wK5l" node="4aAsKjb$M37" resolve="relevantConcepts" />
+              <ref role="37wK5l" node="4aAsKjb$M37" resolve="relevantConceptsForSTF" />
               <node concept="1rXfSq" id="75lF9T6pA2L" role="37wK5m">
                 <ref role="37wK5l" node="75lF9T6owAg" resolve="superConceptsOf" />
                 <node concept="37vLTw" id="75lF9T6pA2S" role="37wK5m">
@@ -1317,7 +1317,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="75lF9T6u_cu" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="2tJIrI" id="5d7fNZ697dz" role="jymVt" />
@@ -1471,7 +1471,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="5d7fNZ69S4j" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
         <node concept="P$JXv" id="75lF9T6mq0k" role="lGtFl">
           <node concept="TZ5HA" id="75lF9T6mzRb" role="TZ5H$">
