@@ -58,7 +58,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -152,9 +152,6 @@
     <node concept="PrWs8" id="4CUqBF4xMRo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
-    <node concept="PrWs8" id="1th9LVE9Up9" role="PzmwI">
-      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
-    </node>
     <node concept="1TJgyj" id="7eOyx9r3qFY" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="exponent" />
@@ -169,6 +166,9 @@
     </node>
     <node concept="RPilO" id="7cBI1LfYpmP" role="lGtFl">
       <ref role="RPilL" node="7eOyx9r3qFW" resolve="unit" />
+    </node>
+    <node concept="PrWs8" id="1th9LVE9Up9" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
     </node>
   </node>
   <node concept="1TIwiD" id="3j3yk3guAAl">

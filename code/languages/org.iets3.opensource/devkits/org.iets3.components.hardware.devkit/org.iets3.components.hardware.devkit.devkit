@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.components.hardware.devkit" uuid="81923f47-8fdd-4466-bb24-6346a8ef0a42">
+  <exported-language name="c35abfa8-0db0-4d42-bb3f-f46112aeb888(org.iets3.components.hardware)" />
+  <extendedDevKits>
+    <extendedDevKit>903db50e-99bf-4552-9b9f-0c8c5d7a9d09(org.iets3.components.devkit)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+

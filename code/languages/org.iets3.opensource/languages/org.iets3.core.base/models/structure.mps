@@ -19,6 +19,13 @@
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -51,7 +58,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -184,6 +191,27 @@
     <property role="TrG5h" value="IControlAdvancedFeatures" />
     <node concept="t5JxF" id="7DfYVnmtpx_" role="lGtFl">
       <property role="t5JxN" value="Only works for root nodes." />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7z6TQkzL3oZ">
+    <property role="EcuMT" value="8702897751517836863" />
+    <property role="TrG5h" value="OriginalNodeInfo" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="2uZcAeY8Zhf" role="1TKVEl">
+      <property role="TrG5h" value="nodeId" />
+      <property role="IQ2nx" value="2864063292004103247" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2uZcAeY8Zh3" role="1TKVEl">
+      <property role="TrG5h" value="modelRef" />
+      <property role="IQ2nx" value="2864063292004103235" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="7z6TQkzL3p0" role="lGtFl">
+      <property role="Hh88m" value="originalNode" />
+      <node concept="trNpa" id="7z6TQkzLtmc" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
     </node>
   </node>
 </model>

@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
@@ -145,7 +145,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -243,6 +243,7 @@
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -287,7 +288,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -332,7 +333,6 @@
         <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1178286324487" name="jetbrains.mps.baseLanguage.collections.structure.SortDirection" flags="nn" index="1nlBCl" />
@@ -4180,24 +4180,24 @@
                                 <node concept="3clFbF" id="36hsHVfkcR7" role="3cqZAp">
                                   <node concept="2OqwBi" id="36hsHVfkd3J" role="3clFbG">
                                     <node concept="37vLTw" id="36hsHVfkcR6" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="36hsHVfkcEo" resolve="a" />
+                                      <ref role="3cqZAo" node="4z0AnX817mY" resolve="a" />
                                     </node>
                                     <node concept="liA8E" id="36hsHVfkdwB" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~Comparable.compareTo(java.lang.Object)" resolve="compareTo" />
                                       <node concept="37vLTw" id="36hsHVfke4a" role="37wK5m">
-                                        <ref role="3cqZAo" node="36hsHVfkcEq" resolve="b" />
+                                        <ref role="3cqZAo" node="4z0AnX817n0" resolve="b" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="36hsHVfkcEo" role="1bW2Oz">
+                              <node concept="gl6BB" id="4z0AnX817mY" role="1bW2Oz">
                                 <property role="TrG5h" value="a" />
-                                <node concept="2jxLKc" id="36hsHVfkcEp" role="1tU5fm" />
+                                <node concept="2jxLKc" id="4z0AnX817mZ" role="1tU5fm" />
                               </node>
-                              <node concept="Rh6nW" id="36hsHVfkcEq" role="1bW2Oz">
+                              <node concept="gl6BB" id="4z0AnX817n0" role="1bW2Oz">
                                 <property role="TrG5h" value="b" />
-                                <node concept="2jxLKc" id="36hsHVfkcEr" role="1tU5fm" />
+                                <node concept="2jxLKc" id="4z0AnX817n1" role="1tU5fm" />
                               </node>
                             </node>
                             <node concept="1nlBCl" id="36hsHVfkcEs" role="2Dq5b$">
@@ -4247,24 +4247,24 @@
                                   <node concept="3clFbF" id="36hsHVfke_N" role="3cqZAp">
                                     <node concept="2OqwBi" id="36hsHVfkeL2" role="3clFbG">
                                       <node concept="37vLTw" id="36hsHVfke_M" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="36hsHVfkepp" resolve="a" />
+                                        <ref role="3cqZAo" node="4z0AnX817n2" resolve="a" />
                                       </node>
                                       <node concept="liA8E" id="36hsHVfkf4a" role="2OqNvi">
                                         <ref role="37wK5l" to="wyt6:~Comparable.compareTo(java.lang.Object)" resolve="compareTo" />
                                         <node concept="37vLTw" id="36hsHVfkfBS" role="37wK5m">
-                                          <ref role="3cqZAo" node="36hsHVfkepr" resolve="b" />
+                                          <ref role="3cqZAo" node="4z0AnX817n4" resolve="b" />
                                         </node>
                                       </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="Rh6nW" id="36hsHVfkepp" role="1bW2Oz">
+                                <node concept="gl6BB" id="4z0AnX817n2" role="1bW2Oz">
                                   <property role="TrG5h" value="a" />
-                                  <node concept="2jxLKc" id="36hsHVfkepq" role="1tU5fm" />
+                                  <node concept="2jxLKc" id="4z0AnX817n3" role="1tU5fm" />
                                 </node>
-                                <node concept="Rh6nW" id="36hsHVfkepr" role="1bW2Oz">
+                                <node concept="gl6BB" id="4z0AnX817n4" role="1bW2Oz">
                                   <property role="TrG5h" value="b" />
-                                  <node concept="2jxLKc" id="36hsHVfkeps" role="1tU5fm" />
+                                  <node concept="2jxLKc" id="4z0AnX817n5" role="1tU5fm" />
                                 </node>
                               </node>
                               <node concept="1nlBCl" id="36hsHVfmg1U" role="2Dq5b$" />
@@ -5858,7 +5858,7 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="rqRoa" id="7kYh9WsShcd" role="33vP2m">
-                  <ref role="rqRob" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                  <ref role="rqRob" to="hm2y:3G_qVqIw4zp" resolve="expr" />
                 </node>
               </node>
             </node>
@@ -8176,39 +8176,13 @@
                 <ref role="3cqZAo" node="v9lBEVhxa7" resolve="l" />
               </node>
             </node>
-            <node concept="3cpWs8" id="v9lBEVhxag" role="3cqZAp">
-              <node concept="3cpWsn" id="v9lBEVhxah" role="3cpWs9">
-                <property role="TrG5h" value="res" />
-                <node concept="3uibUv" id="6bG6MAFDJ_z" role="1tU5fm">
-                  <ref role="3uigEE" to="j10v:~PSet" resolve="PSet" />
-                </node>
-                <node concept="2YIFZM" id="6bG6MAFDJB$" role="33vP2m">
-                  <ref role="37wK5l" to="j10v:~Empty.set()" resolve="set" />
-                  <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="v9lBEVhxak" role="3cqZAp">
-              <node concept="37vLTI" id="v9lBEVhxal" role="3clFbG">
-                <node concept="2OqwBi" id="v9lBEVhxam" role="37vLTx">
-                  <node concept="37vLTw" id="v9lBEVhxan" role="2Oq$k0">
-                    <ref role="3cqZAo" node="v9lBEVhxah" resolve="res" />
-                  </node>
-                  <node concept="liA8E" id="v9lBEVhxao" role="2OqNvi">
-                    <ref role="37wK5l" to="j10v:~PSet.plusAll(java.util.Collection)" resolve="plusAll" />
-                    <node concept="37vLTw" id="v9lBEVhxap" role="37wK5m">
-                      <ref role="3cqZAo" node="v9lBEVhxa7" resolve="l" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTw" id="v9lBEVhxaq" role="37vLTJ">
-                  <ref role="3cqZAo" node="v9lBEVhxah" resolve="res" />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs6" id="v9lBEVhxar" role="3cqZAp">
-              <node concept="37vLTw" id="v9lBEVhxas" role="3cqZAk">
-                <ref role="3cqZAo" node="v9lBEVhxah" resolve="res" />
+              <node concept="2YIFZM" id="5_6o5C8HOWP" role="3cqZAk">
+                <ref role="37wK5l" to="j10v:~HashTreePSet.from(java.util.Collection)" resolve="from" />
+                <ref role="1Pybhc" to="j10v:~HashTreePSet" resolve="HashTreePSet" />
+                <node concept="37vLTw" id="5_6o5C8HOWQ" role="37wK5m">
+                  <ref role="3cqZAo" node="v9lBEVhxa7" resolve="l" />
+                </node>
               </node>
             </node>
           </node>

@@ -1,4 +1,8 @@
 import de.itemis.mps.gradle.*
+import de.itemis.mps.gradle.tasks.MpsMigrate
+import de.itemis.mps.gradle.tasks.Remigrate
+import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
+import groovy.transform.TupleConstructor
 import groovy.xml.XmlSlurper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -9,16 +13,15 @@ buildscript {
     repositories {
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
-    dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.23.1.412.a54f29f'
-    }
 }
 
 plugins {
     id 'base'
     id 'maven-publish'
+    id 'de.itemis.mps.gradle.common' version '1.29.+'
+    id 'de.itemis.mps.gradle.launcher' version '2.5.2.+'
     id "com.github.breadmoirai.github-release" version "2.4.1"
-    id "org.cyclonedx.bom" version "1.8.2"
+    id "org.cyclonedx.bom" version "2.2.0"
 }
 
 ext.dependencyRepositories = [
@@ -40,7 +43,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download version
 downloadJbr {
-    jbrVersion = '17.0.6-b653.34'
+    jbrVersion = '17.0.8.1-b1000.32'
 }
 
 // detect if we are in a CI build
@@ -53,14 +56,14 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
-def major = "2022"
-def minor = "3"
+def major = "2023"
+def minor = "2"
 
 // Dependency versions
 
-ext.mpsVersion = '2022.3.3'
+ext.mpsVersion = '2023.2.2'
 
-def mbeddrVersion = "2022.3+"
+def mbeddrVersion = "$major.$minor+"
 def mpsQAVersion = "$major.$minor+"
 
 // if building a against a special branch from mbeddr is required add the name here
@@ -113,32 +116,88 @@ ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-sn
 ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
 
 
+def buildDirPath(pathUnderBuildDir) {
+    project.layout.buildDirectory.dir(pathUnderBuildDir).get().asFile
+}
 
 // 'artifacts' is used in the generated ant scripts as build output directory
-ext.artifactsDir = new File(buildDir, 'artifacts')
-ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
-
+ext.artifactsDir = buildDirPath('artifacts')
+ext.reportsDir = buildDirPath('reports')
 
 wrapper {
-    gradleVersion '8.0.2'
+    gradleVersion '8.13'
     distributionType Wrapper.DistributionType.ALL
 }
 
 configurations {
     mps
+    rerunMigrationsBackend
     languageLibs
     junitAnt
-    pcollections // Synced to org.iets3.core.expr.base.collections.stubs/lib
-    bigMath // Synced to org.iets3.core.expr.math.interpreter/lib
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
+    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.0.5.+")
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
-    pcollections 'org.pcollections:pcollections:4.0.1'
-    bigMath 'ch.obermuhlner:big-math:2.3.2'
+}
+
+@TupleConstructor
+class BundledDep {
+    String name
+    List<String> entries
+    String libSolutionName
+    Closure configClosure = { transitive = false }
+    // in case a legacy dependency has a broken artifact name, e.g. w/o extension
+    String jarNameOverride
+    String getConfigName() {
+        name + '_bundled'
+    }
+    String getResolveTaskName() {
+        'resolve_' + this.configName
+    }
+    BundledDep overrideArtifactName(String artifactName) {
+        this.jarNameOverride = artifactName
+        this
+    }
+}
+
+def bundledDeps = [
+        new BundledDep('pcollections', ['org.pcollections:pcollections:4.0.1'], 'org.iets3.core.expr.base.collections.stubs'),
+        new BundledDep('bigMath', ['ch.obermuhlner:big-math:2.3.2'], 'org.iets3.core.expr.math.interpreter'),
+        new BundledDep('functionalJava', ['org.functionaljava:functionaljava:4.8.1'], 'org.iets3.core.expr.genjava.functionalJava'),
+        new BundledDep('cpsSuite', ['io.takari.junit:takari-cpsuite:1.2.7'], 'org.iets3.opensource.build.gentests.rt').overrideArtifactName('takari-cpsuite.jar')
+]
+
+bundledDeps.each { dep ->
+    configurations {
+        create(dep.configName)
+    }
+    dependencies {
+        dep.entries.each {entry ->
+            add(dep.configName, entry, dep.configClosure)
+        }
+    }
+    tasks.create(dep.resolveTaskName, Sync.class) {
+        from configurations.getByName(dep.configName)
+        into file("code/languages/org.iets3.opensource/solutions/${dep.libSolutionName}/lib")
+
+        // Strip version numbers from file names
+        rename { filename ->
+            def ra = configurations.getByName(dep.configName).resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+            String finalName
+            if (dep.jarNameOverride != null) {
+                finalName = dep.jarNameOverride
+            } else if (ra.classifier != null) {
+                finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
+            } else {
+                finalName = "${ra.name}.${ra.extension}"
+            }
+            return finalName
+        }
+    }
 }
 
 
@@ -157,48 +216,17 @@ task resolveLanguageLibs(type: Sync) {
     into "$buildDir/dependencies"
 }
 
-task resolvePcollections(type: Sync) {
-    from configurations.pcollections
-    into file('code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.base.collections.stubs/lib')
+task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs])
+resolveDependencies.dependsOn << bundledDeps.collect {it.resolveTaskName }
 
-    // Strip version numbers from file names
-    rename { filename ->
-        def ra = configurations.pcollections.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
-        String finalName
-        if (ra.classifier != null) {
-            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
-        } else {
-            finalName = "${ra.name}.${ra.extension}"
-        }
-        return finalName
-    }
-}
-
-task resolveBigMath(type: Sync) {
-    from configurations.bigMath
-    into file('code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.math.interpreter/lib')
-
-    // Strip version numbers from file names
-    rename { filename ->
-        def ra = configurations.bigMath.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
-        String finalName
-        if (ra.classifier != null) {
-            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
-        } else {
-            finalName = "${ra.name}.${ra.extension}"
-        }
-        return finalName
-    }
-}
-
-task resolveDependencies(dependsOn: ['downloadJbr', resolveMps, resolveLanguageLibs, resolvePcollections, resolveBigMath])
+ext.mpsHomeDir = resolveMps.destinationDir
 
 // Default arguments for ant scripts
 def defaultScriptArgs = [
         'mps.home'                          : resolveMps.destinationDir,
         'iets3.github.opensource.home'      : rootDir,
+        'build.jna.library.path'            : new File(resolveMps.destinationDir, "lib/jna/${System.getProperty('os.arch')}"),
         'build.dir'                         : buildDir,
-        'mps.generator.skipUnmodifiedModels': incrementalBuild,
         'version'                           : version
 ]
 if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
@@ -225,6 +253,21 @@ task buildLanguages(type: BuildLanguages, dependsOn: prebuild) {
     script "$buildDir/scripts/build-languages.xml"
 }
 
+task execTestsByInterpreter(type: TestLanguages, dependsOn: buildLanguages) {
+    script "$buildDir/scripts/build-testInterpreter.xml"
+    targets "generate","build"
+    doLast {
+        ant.taskdef(name: 'junitInterpreterReport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.junitAnt.asPath)
+        ant.junitInterpreterReport(toDir: "$buildDir", tofile: "AggregatedInterpreterTestSuites.xml") {
+            fileset(dir: "$buildDir", includes: '**/InterpreterTestSuite*.xml', excludes: 'tmp/**')
+            report(format: 'frames', todir: "$buildDir/junitInterpreterReport" )
+        }
+        ant.echo("JUnit Interpreter report placed into $buildDir/junitInterpreterReport/index.html")
+    }
+}
+
 
 task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
     script "$buildDir/scripts/build-tests.xml"
@@ -233,7 +276,7 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
                 classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
                 classpath: configurations.junitAnt.asPath)
         ant.junitreport {
-            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml', excludes: 'tmp/**')
             report(format: 'frames', todir: "$buildDir/junitreport")
         }
         ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
@@ -260,12 +303,37 @@ task failOnTestError() {
 buildAndRunTests.configure { finalizedBy failOnTestError }
 check.dependsOn buildAndRunTests
 
-tasks.register('migrate') {
+tasks.register('migrate', MpsMigrate) {
+    dependsOn(resolveMps, 'resolveMpsForModelcheck', 'downloadJbr', 'buildLanguages', 'buildAndRunTests')
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
+    haltOnPrecheckFailure = false
+    haltOnDependencyError = true
+
+    mpsHome = mpsHomeDir
+
+    projectDirectories.from('code/languages/org.iets3.opensource')
+    folderMacros['iets3.github.opensource.home'] = rootProject.layout.projectDirectory
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins'))
+
+    maxHeapSize = '4G'
 }
 
-tasks.register('remigrate') {
+tasks.register('remigrate', Remigrate) {
+    mustRunAfter('migrate')
+    mustRunAfter('buildLanguages', 'buildAndRunTests')
 
+    dependsOn(resolveMps, 'resolveMpsForModelcheck','downloadJbr')
+
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+
+    mpsHome = mpsHomeDir
+    projectDirectories.from('code/languages/org.iets3.opensource')
+    folderMacros['iets3.github.opensource.home'] = rootProject.layout.projectDirectory
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins'))
+    maxHeapSize = '4G'
 }
 
 apply plugin: 'modelcheck'
@@ -275,7 +343,7 @@ File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
 def pluginsList = []
 
 modelcheck {
-    projectLocation =  new File("$projectDir/code")
+    projectLocation = new File("$projectDir/code/languages/org.iets3.opensource")
     mpsLocation = new File("$buildDir/mps")
     plugins = pluginsList
     mpsConfig = configurations.mps
@@ -287,21 +355,27 @@ modelcheck {
     maxHeap = "4G"
 }
 
-
+/*
 afterEvaluate {  project ->
     check.configure {
         dependsOn tasks.named('checkmodels')
     }
 }
+*/
 
 checkmodels {
     dependsOn(resolveMps)
 }
 
-task packageLanguages(type: Zip, dependsOn: buildLanguages) {
+task packageLanguages(type: Zip, dependsOn: [buildLanguages, cyclonedxBom]) {
     archiveBaseName = 'org.iets3.opensource'
-    from artifactsDir
-    include 'org.iets3.opensource/**'
+    from(artifactsDir) {
+        include 'org.iets3.opensource/**'
+    }
+    from(reportsDir) {
+        include 'sbom.json'
+        into 'org.iets3.opensource'
+    }
 }
 
 task packageTests(type: Zip, dependsOn: buildAndRunTests) {
@@ -422,6 +496,8 @@ publishing {
                 builtBy buildLanguages
                 classifier 'sources'
             }
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.simpleTypes.runtime'(MavenPublication) {
@@ -437,6 +513,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.datetime.runtime'(MavenPublication) {
@@ -451,6 +529,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
+
+            pom additionalPomInfo
         }
 
         'org.iets3.core.expr.temporal.runtime'(MavenPublication) {
@@ -465,6 +545,8 @@ publishing {
             }
 
             addDependency(pom, 'org.iets3.core.expr.datetime', 'datetime-runtime', project.version)
+
+            pom additionalPomInfo
         }
     }
 }
@@ -511,15 +593,11 @@ tasks.named('githubRelease').configure {
 
 cyclonedxBom {
     // SBOM destination directory
-    destination = file("build/reports")
+    destination = reportsDir
     // The file name for the generated SBOMs (before the file format suffix)
     outputName = "sbom"
     // The file format generated, can be xml, json or all for generating both
     outputFormat = "json"
     // Don't include license texts in generated SBOMs
     includeLicenseText = false
-}
-
-assemble {
-    dependsOn('cyclonedxBom')
 }
