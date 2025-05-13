@@ -341,11 +341,31 @@
     <property role="3GE5qa" value="adapter" />
     <ref role="13h7C2" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     <node concept="13i0hz" id="4pkidg67Lgb" role="13h7CS">
-      <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="createSolverTask" />
       <node concept="3Tm1VV" id="4pkidg67Lgc" role="1B3o_S" />
-      <node concept="3clFbS" id="4pkidg67Lgd" role="3clF47" />
+      <node concept="3clFbS" id="4pkidg67Lgd" role="3clF47">
+        <node concept="3clFbF" id="75lF9T6uCV8" role="3cqZAp">
+          <node concept="2YIFZM" id="75lF9T6uDgz" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:7rOSrvnISxp" resolve="createSolverTask" />
+            <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+            <node concept="13iPFW" id="75lF9T6uDwb" role="37wK5m" />
+            <node concept="2OqwBi" id="75lF9T6uIwD" role="37wK5m">
+              <node concept="2OqwBi" id="75lF9T6uG5Y" role="2Oq$k0">
+                <node concept="2JrnkZ" id="75lF9T6uFzN" role="2Oq$k0">
+                  <node concept="13iPFW" id="75lF9T6uDPb" role="2JrQYb" />
+                </node>
+                <node concept="liA8E" id="75lF9T6uGnD" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="liA8E" id="75lF9T6uKtt" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Class.toString()" resolve="toString" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3Tqbb2" id="4pkidg67Lgj" role="3clF45">
         <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
       </node>
