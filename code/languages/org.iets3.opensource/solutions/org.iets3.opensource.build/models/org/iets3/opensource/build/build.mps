@@ -14661,6 +14661,21 @@
           </node>
         </node>
       </node>
+      <node concept="1SiIV0" id="4aAsKjbTJHl" role="3bR37C">
+        <node concept="3bR9La" id="4aAsKjbTJHm" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="4aAsKjbTNo$" role="3bR37C">
+        <node concept="3bR9La" id="4aAsKjbTNo_" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:7klUZA6XM5Q" resolve="de.slisson.mps.conditionalEditor" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="4aAsKjbTNoS" role="3bR37C">
+        <node concept="1Busua" id="4aAsKjbTNoT" role="1SiIV1">
+          <ref role="1Busuk" to="90a9:7klUZA6XM5Q" resolve="de.slisson.mps.conditionalEditor" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtD" id="6HOb1cDNJ3a" role="3989C9">
       <property role="BnDLt" value="true" />
