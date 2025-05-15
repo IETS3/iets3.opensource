@@ -27,7 +27,7 @@ repositories {
 
 apply plugin: 'download-jbr'
 
-// configure jbr download
+// configure jbr download version
 downloadJbr {
     jbrVersion = '17.0.11-b1207.30'
 }
