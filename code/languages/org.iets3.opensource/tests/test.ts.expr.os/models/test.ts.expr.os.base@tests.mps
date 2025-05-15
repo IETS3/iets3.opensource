@@ -206,7 +206,7 @@
                       <property role="2gteSD" value="∞" />
                     </node>
                     <node concept="2gteS_" id="S9ITXNmIOs" role="2gteVg">
-                      <property role="2gteVv" value="0" />
+                      <property role="2gteVv" value="inf" />
                     </node>
                   </node>
                 </node>
