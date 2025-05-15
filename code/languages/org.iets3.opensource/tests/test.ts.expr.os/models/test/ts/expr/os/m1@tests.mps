@@ -41,6 +41,8 @@
     <import index="ym7l" ref="r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="h60k" ref="r:2ef874f0-eb83-423c-afd2-f0c0921489b8(org.iets3.core.expr.simpleTypes.migration)" />
+    <import index="1ka" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking(MPS.Core/)" />
+    <import index="cp9o" ref="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)" />
     <import index="n0yb" ref="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
@@ -51,6 +53,8 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="2325284917965760583" name="jetbrains.mps.lang.test.structure.BeforeTestsMethod" flags="ig" index="0EjCn" />
+      <concept id="2325284917965760584" name="jetbrains.mps.lang.test.structure.AfterTestsMethod" flags="ig" index="0EjCo" />
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
         <child id="8489045168660938517" name="errorRef" index="3lydEf" />
       </concept>
@@ -91,6 +95,8 @@
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
+        <child id="2325284917965993569" name="beforeTests" index="0EEgL" />
+        <child id="2325284917965993580" name="afterTests" index="0EEgW" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -174,6 +180,9 @@
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -32116,6 +32125,75 @@
           <node concept="m5gfS" id="1$atYL2B6pK" role="2zM23F">
             <node concept="30bXR$" id="1$atYL2B6pL" role="m5gfT" />
             <node concept="30bXR$" id="1$atYL2B6pM" role="m5gfT" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3iqDEt4GRQk">
+    <property role="TrG5h" value="stringConstraintsDisabled" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <node concept="1qefOq" id="3iqDEt4NJtm" role="1SKRRt">
+      <node concept="2zPypq" id="3iqDEt4NJZR" role="1qenE9">
+        <property role="TrG5h" value="a" />
+        <node concept="30bdrP" id="3iqDEt4NK0_" role="2lDidJ">
+          <property role="30bdrQ" value="hello" />
+        </node>
+        <node concept="L5Cqj" id="3iqDEt4NK05" role="2zM23F">
+          <node concept="1ZmeGV" id="3iqDEt4NK0l" role="1_tvlM">
+            <ref role="1ZmksB" node="45$ooctvHpr" resolve="hello" />
+          </node>
+          <node concept="7CXmI" id="3iqDEt4NZLV" role="lGtFl">
+            <node concept="39XrGg" id="3iqDEt4NZVN" role="7EUXB">
+              <node concept="2u4KIi" id="3iqDEt4NZVO" role="39rjcI">
+                <ref role="39XzEq" to="2e51:2Jw_Kdf9LHa" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3iqDEt4LZP7" role="1SL9yI">
+      <property role="TrG5h" value="typeCalculation" />
+      <node concept="3cqZAl" id="3iqDEt4LZP8" role="3clF45" />
+      <node concept="3clFbS" id="3iqDEt4LZPc" role="3clF47">
+        <node concept="3GXo0L" id="3iqDEt4M1bt" role="3cqZAp">
+          <node concept="2c44tf" id="3iqDEt4M1fP" role="3tpDZB">
+            <node concept="30bdrU" id="3iqDEt4M1h8" role="2c44tc" />
+          </node>
+          <node concept="2OqwBi" id="3iqDEt4M0vu" role="3tpDZA">
+            <node concept="2YIFZM" id="3iqDEt4M01Z" role="2Oq$k0">
+              <ref role="37wK5l" to="1ka:~TypecheckingFacade.getFromContext()" resolve="getFromContext" />
+              <ref role="1Pybhc" to="1ka:~TypecheckingFacade" resolve="TypecheckingFacade" />
+            </node>
+            <node concept="liA8E" id="3iqDEt4M10q" role="2OqNvi">
+              <ref role="37wK5l" to="1ka:~TypecheckingFacade.getTypeOf(org.jetbrains.mps.openapi.model.SNode)" resolve="getTypeOf" />
+              <node concept="2c44tf" id="3iqDEt4M11a" role="37wK5m">
+                <node concept="30bdrP" id="3iqDEt4M12_" role="2c44tc">
+                  <property role="30bdrQ" value="Test" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0EjCn" id="3iqDEt4I49k" role="0EEgL">
+      <node concept="3clFbS" id="3iqDEt4I49l" role="2VODD2">
+        <node concept="3clFbF" id="3iqDEt4I4fl" role="3cqZAp">
+          <node concept="2YIFZM" id="3iqDEt4I4l1" role="3clFbG">
+            <ref role="37wK5l" to="cp9o:1t_lOkUhm8p" resolve="enable" />
+            <ref role="1Pybhc" to="cp9o:3p6$WoErNuK" resolve="TestStringConstraintsPrimitiveTypeMapper" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0EjCo" id="3iqDEt4I4nf" role="0EEgW">
+      <node concept="3clFbS" id="3iqDEt4I4ng" role="2VODD2">
+        <node concept="3clFbF" id="3iqDEt4I4u4" role="3cqZAp">
+          <node concept="2YIFZM" id="3iqDEt4I4$4" role="3clFbG">
+            <ref role="37wK5l" to="cp9o:1t_lOkUhhqx" resolve="disable" />
+            <ref role="1Pybhc" to="cp9o:3p6$WoErNuK" resolve="TestStringConstraintsPrimitiveTypeMapper" />
           </node>
         </node>
       </node>
