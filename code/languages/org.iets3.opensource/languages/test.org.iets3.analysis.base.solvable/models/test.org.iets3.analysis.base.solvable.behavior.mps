@@ -92,6 +92,9 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -415,6 +418,37 @@
         <node concept="1dT_AC" id="IJ8MgQbNo8" role="1dT_Ay">
           <property role="1dT_AB" value="Make sure that this class is not entered by different threads" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7Vgw$ZVF8xz">
+    <ref role="13h7C2" to="6w03:7Vgw$ZVEZE6" resolve="Unrelated" />
+    <node concept="13hLZK" id="7Vgw$ZVF8x$" role="13h7CW">
+      <node concept="3clFbS" id="7Vgw$ZVF8x_" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7Vgw$ZVF8xQ" role="13h7CS">
+      <property role="TrG5h" value="createSolverTask" />
+      <ref role="13i0hy" to="1jcu:4pkidg67Lgb" resolve="createSolverTask" />
+      <node concept="3Tm1VV" id="7Vgw$ZVF8xR" role="1B3o_S" />
+      <node concept="3clFbS" id="7Vgw$ZVF8y1" role="3clF47">
+        <node concept="3clFbF" id="7Vgw$ZVF8NR" role="3cqZAp">
+          <node concept="2pJPEk" id="7Vgw$ZVF8NS" role="3clFbG">
+            <node concept="2pJPED" id="7Vgw$ZVF8NT" role="2pJPEn">
+              <ref role="2pJxaS" to="6w03:7wEqFvbO3UV" resolve="DummySolverTask" />
+              <node concept="2pJxcG" id="7Vgw$ZVF8NU" role="2pJxcM">
+                <ref role="2pJxcJ" to="6w03:7wEqFvbO5ba" resolve="sleepTime" />
+                <node concept="WxPPo" id="7Vgw$ZVF8NV" role="28ntcv">
+                  <node concept="3cmrfG" id="7Vgw$ZVF8Yo" role="WxPPp">
+                    <property role="3cmrfH" value="1234" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7Vgw$ZVF8y2" role="3clF45">
+        <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
       </node>
     </node>
   </node>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:222193f8-4aed-4fb3-bab5-cdd01f18a238(test.org.iets3.core.trace.editor)">
+<model ref="r:222193f8-4aed-4fb3-bab5-cdd01f18a238(org.iets3.core.trace.test.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="526v" ref="r:8b2ef249-d63b-431d-88b4-15db954286d8(test.org.iets3.core.trace.structure)" implicit="true" />
+    <import index="526v" ref="r:8b2ef249-d63b-431d-88b4-15db954286d8(org.iets3.core.trace.test.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

@@ -520,7 +520,7 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
     <language id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles">
-      <concept id="8170319964140884845" name="com.mbeddr.mpsutil.userstyles.structure.UserConfigurable" flags="ng" index="1Ex9Rl">
+      <concept id="8170319964140884845" name="com.mbeddr.mpsutil.userstyles.structure.UserStyle" flags="ng" index="1Ex9Rl">
         <property id="1454515498906154959" name="displayText" index="34HCRG" />
       </concept>
     </language>
@@ -989,11 +989,6 @@
           </node>
         </node>
       </node>
-      <node concept="2T_mXK" id="4MeRni2Gk7t" role="3EZMnx">
-        <node concept="2T_bXS" id="4MeRni2Gksc" role="3F10Kt">
-          <property role="Vb096" value="fLJRk5_/gray" />
-        </node>
-      </node>
       <node concept="1HlG4h" id="2TZO3Dbv6Kd" role="AHCbl">
         <ref role="1k5W1q" to="z726:2TZO3DbviIs" resolve="structure" />
         <node concept="1HfYo3" id="2TZO3Dbv6Ke" role="1HlULh">
@@ -1036,6 +1031,11 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="2T_mXK" id="4MeRni2Gk7t" role="3EZMnx">
+        <node concept="2T_bXS" id="4MeRni2Gksc" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
         </node>
       </node>
     </node>
