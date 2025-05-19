@@ -246,9 +246,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -1945,9 +1942,10 @@
       <node concept="1eYWM2" id="2xPWNWp$vnN" role="3EZMnx">
         <node concept="1eYwpX" id="2xPWNWp$vnO" role="1eYxym">
           <node concept="3clFbS" id="2xPWNWp$vnP" role="2VODD2">
-            <node concept="3clFbF" id="2xPWNWp$MrS" role="3cqZAp">
-              <node concept="3clFbT" id="2xPWNWp$MrR" role="3clFbG">
-                <property role="3clFbU" value="true" />
+            <node concept="3clFbF" id="2Jw_KdeVc6N" role="3cqZAp">
+              <node concept="2YIFZM" id="2Jw_KdeW0$u" role="3clFbG">
+                <ref role="37wK5l" to="xfg9:2Jw_KdeVcY2" resolve="useStringConstraints" />
+                <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
               </node>
             </node>
           </node>
