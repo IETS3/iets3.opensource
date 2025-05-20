@@ -1007,7 +1007,7 @@
         </node>
       </node>
       <node concept="m$_yB" id="7B3y$vlfYcO" role="m$_yh">
-        <ref role="m$_yA" node="7B3y$vlfY21" resolve="org.iets3.variability.artifacts.base" />
+        <ref role="m$_yA" node="7B3y$vlfY21" resolve="org.iets3.variability.artifacts.vanguard" />
       </node>
     </node>
     <node concept="m$_wf" id="2qK410x44K4" role="3989C9">
