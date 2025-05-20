@@ -14196,8 +14196,8 @@
               <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
               <node concept="2Ry0Ak" id="5lyt3iujJ9W" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5lyt3iujJbA" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.variability.artifacts.base" />
+                <node concept="2Ry0Ak" id="7cnLyJJwQYP" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.variability.artifacts.vanguard" />
                 </node>
               </node>
             </node>
