@@ -7,6 +7,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## May 2025
 
+### Changed
+
+- The language org.iets3.variability.artifacts.base was temporarily renamed to org.iets3.variability.artifacts.vanguard.
+
 ### Fixed
 
 - Plugin org.iets3.safety was renamed to org.iets3.safety.os fixing the name collision with a plugin in org.iets3.core 
