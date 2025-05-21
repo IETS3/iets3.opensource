@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1696fe6e-226e-4158-a6f2-3b9fa1ea7a02(org.iets3.variability.artifacts.base.structure)">
+<model ref="r:1696fe6e-226e-4158-a6f2-3b9fa1ea7a02(org.iets3.variability.artifacts.vanguard.structure)">
   <persistence version="9" />
   <languages>
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />

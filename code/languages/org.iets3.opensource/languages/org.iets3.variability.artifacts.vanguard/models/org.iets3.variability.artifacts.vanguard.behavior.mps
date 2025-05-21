@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b827b941-aa66-4f79-b830-0e73f1e33465(org.iets3.variability.artifacts.base.behavior)">
+<model ref="r:b827b941-aa66-4f79-b830-0e73f1e33465(org.iets3.variability.artifacts.vanguard.behavior)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -10,7 +10,7 @@
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="7c17" ref="r:1696fe6e-226e-4158-a6f2-3b9fa1ea7a02(org.iets3.variability.artifacts.base.structure)" implicit="true" />
+    <import index="7c17" ref="r:1696fe6e-226e-4158-a6f2-3b9fa1ea7a02(org.iets3.variability.artifacts.vanguard.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>

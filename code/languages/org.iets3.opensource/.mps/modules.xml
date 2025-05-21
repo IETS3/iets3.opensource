@@ -86,7 +86,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.safety.attributes/org.iets3.safety.attributes.mpl" folder="safety" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.artifacts.base/org.iets3.variability.artifacts.base.mpl" folder="variability" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.artifacts.vanguard/org.iets3.variability.artifacts.vanguard.mpl" folder="variability" />
       <modulePath path="$PROJECT_DIR$/languages/test.iest3.component.attribute/test.iest3.component.attribute.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/test.org.iets3.analysis.base.solvable/test.org.iets3.analysis.base.solvable.mpl" folder="analysis.tests" />
       <modulePath path="$PROJECT_DIR$/languages/test.org.iets3.core.trace/test.org.iets3.core.trace.mpl" folder="trace" />

@@ -1007,7 +1007,7 @@
         </node>
       </node>
       <node concept="m$_yB" id="7B3y$vlfYcO" role="m$_yh">
-        <ref role="m$_yA" node="7B3y$vlfY21" resolve="org.iets3.variability.artifacts.base" />
+        <ref role="m$_yA" node="7B3y$vlfY21" resolve="org.iets3.variability.artifacts.vanguard" />
       </node>
     </node>
     <node concept="m$_wf" id="2qK410x44K4" role="3989C9">
@@ -14151,16 +14151,16 @@
       <property role="TrG5h" value="org.iets3.variability.os" />
       <node concept="1E1JtD" id="7B3y$vlfY21" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="org.iets3.variability.artifacts.base" />
+        <property role="TrG5h" value="org.iets3.variability.artifacts.vanguard" />
         <property role="3LESm3" value="c6ff3b3b-aff6-455e-9637-7955ccbfec22" />
         <node concept="398BVA" id="7B3y$vlfY3H" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="7B3y$vlfY71" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="7B3y$vlfY8G" role="2Ry0An">
-              <property role="2Ry0Am" value="org.iets3.variability.artifacts.base" />
-              <node concept="2Ry0Ak" id="7B3y$vlfYbb" role="2Ry0An">
-                <property role="2Ry0Am" value="org.iets3.variability.artifacts.base.mpl" />
+              <property role="2Ry0Am" value="org.iets3.variability.artifacts.vanguard" />
+              <node concept="2Ry0Ak" id="1TJmaFV9UK3" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.variability.artifacts.vanguard.mpl" />
               </node>
             </node>
           </node>
@@ -14169,20 +14169,20 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="7B3y$vlfYF6" role="1HemKq">
-            <node concept="398BVA" id="7B3y$vlfYEU" role="3LXTmr">
+          <node concept="3LXTmp" id="1TJmaFV9V9N" role="1HemKq">
+            <node concept="398BVA" id="1TJmaFV9V9C" role="3LXTmr">
               <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="7B3y$vlfYEV" role="iGT6I">
+              <node concept="2Ry0Ak" id="1TJmaFV9V9D" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="7B3y$vlfYEW" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.variability.artifacts.base" />
-                  <node concept="2Ry0Ak" id="7B3y$vlfYEX" role="2Ry0An">
+                <node concept="2Ry0Ak" id="1TJmaFV9V9E" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.variability.artifacts.vanguard" />
+                  <node concept="2Ry0Ak" id="1TJmaFV9V9F" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="7B3y$vlfYF7" role="3LXTna">
+            <node concept="3qWCbU" id="1TJmaFV9V9O" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -14196,8 +14196,8 @@
               <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
               <node concept="2Ry0Ak" id="5lyt3iujJ9W" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5lyt3iujJbA" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.variability.artifacts.base" />
+                <node concept="2Ry0Ak" id="7cnLyJJwQYP" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.variability.artifacts.vanguard" />
                 </node>
               </node>
             </node>
