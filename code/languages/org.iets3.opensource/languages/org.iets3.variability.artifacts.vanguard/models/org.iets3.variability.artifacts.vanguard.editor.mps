@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ae7587ce-907a-4ce4-8ca3-402eaab2817d(org.iets3.variability.artifacts.base.editor)">
+<model ref="r:ae7587ce-907a-4ce4-8ca3-402eaab2817d(org.iets3.variability.artifacts.vanguard.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
