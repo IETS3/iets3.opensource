@@ -28,7 +28,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download version
 downloadJbr {
-    jbrVersion = '21.0.5-b631.16'
+    jbrVersion = '21.0.6-b895.109'
 }
 
 // detect if we are in a CI build
@@ -48,7 +48,7 @@ def minor = "9"
 
 
 
-ext.mpsVersion = "251.23774.234"
+ext.mpsVersion = "251.25410.10152"
 def mpsQAVersion = "$major.$minor+"
 
 
