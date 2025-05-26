@@ -41,16 +41,15 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
-def major = "9999"
-def minor = "9"
+def major = '2025'
+def minor = '1'
+def bugfix = ''
 
 // Dependency versions
 
+ext.mpsVersion = "$major.$minor" + (bugfix ? ".$bugfix" : '')
 
-
-ext.mpsVersion = "251.25410.10152"
 def mpsQAVersion = "$major.$minor+"
-
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -119,9 +118,7 @@ configurations {
 }
 
 dependencies {
-    // For a release version of MPS, use this dependency:
-    //mps "com.jetbrains:mps:$mpsBuild"
-    mps "com.jetbrains.mps:mps-prerelease:$mpsVersion"
+    mps "com.jetbrains:mps:$mpsVersion"
     rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.2.0.+")
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
