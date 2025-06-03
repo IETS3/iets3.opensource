@@ -576,4 +576,8 @@ cyclonedxBom {
     outputFormat = "json"
     // Don't include license texts in generated SBOMs
     includeLicenseText = false
+    // Include runtime only deps (bundled libs, language libs, mps)
+    def runtimeConfigs = bundledDeps.collect {it.configName }
+    runtimeConfigs.addAll([configurations.mps.name, configurations.languageLibs.name])
+    includeConfigs = runtimeConfigs
 }
