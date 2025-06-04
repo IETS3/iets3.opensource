@@ -10723,7 +10723,7 @@
               <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <node concept="Xl_RD" id="3eH6BL4f9p7" role="37wK5m">
-                <property role="Xl_RC" value="‹%s› is not a valid metric prefix" />
+                <property role="Xl_RC" value="‹%s› is not a valid unit prefix" />
               </node>
               <node concept="2OqwBi" id="3eH6BL4f9AO" role="37wK5m">
                 <node concept="1YBJjd" id="3eH6BL4f9AP" role="2Oq$k0">
