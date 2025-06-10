@@ -89,6 +89,7 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
+        <property id="2928402740576877067" name="javaCode" index="3vZFNd" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -403,6 +404,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.opensource.build.gentests.rt" />
         <property role="3LESm3" value="e70ad515-8ff0-4a50-8cb4-41406f14e348" />
+        <property role="3vZFNd" value="3kCd1ud3JDD/compile_ext" />
         <node concept="398BVA" id="3ZBI8Awh4x5" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="3ZBI8Awh4x6" role="iGT6I">
@@ -463,18 +465,18 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="67tIbohRuGz" role="3bR37C">
-          <node concept="1BurEX" id="67tIbohRuG$" role="1SiIV1">
-            <node concept="398BVA" id="67tIbohRuGm" role="1BurEY">
+        <node concept="1SiIV0" id="5C16jUTWDYH" role="3bR37C">
+          <node concept="1BurEX" id="5C16jUTWDYI" role="1SiIV1">
+            <node concept="398BVA" id="5C16jUTWDYw" role="1BurEY">
               <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="67tIbohRuGn" role="iGT6I">
+              <node concept="2Ry0Ak" id="5C16jUTWDYx" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="67tIbohRuGo" role="2Ry0An">
+                <node concept="2Ry0Ak" id="5C16jUTWDYy" role="2Ry0An">
                   <property role="2Ry0Am" value="org.iets3.opensource.build.gentests.rt" />
-                  <node concept="2Ry0Ak" id="67tIbohRuGp" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5C16jUTWDYz" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="67tIbohRuGq" role="2Ry0An">
-                      <property role="2Ry0Am" value="takari-cpsuite-1.2.7.jar" />
+                    <node concept="2Ry0Ak" id="5C16jUTWDY$" role="2Ry0An">
+                      <property role="2Ry0Am" value="takari-cpsuite.jar" />
                     </node>
                   </node>
                 </node>

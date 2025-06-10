@@ -81,7 +81,7 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
-      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
+      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.GroupAnnotation" flags="ng" index="1SWQZ3">
         <property id="5846558918537400330" name="label" index="1SWRpm" />
       </concept>
     </language>
@@ -581,7 +581,7 @@
                 <node concept="2OqwBi" id="7nsgDAXwnkb" role="10QFUP">
                   <node concept="71T_Y" id="7nsgDAXwnkc" role="2Oq$k0" />
                   <node concept="liA8E" id="7nsgDAXwnkd" role="2OqNvi">
-                    <ref role="37wK5l" to="b8lf:~AbstractMultipleSelection.getSelectedNodes()" resolve="getSelectedNodes" />
+                    <ref role="37wK5l" to="b8lf:~NodeRangeSelection.getSelectedNodes()" resolve="getSelectedNodes" />
                   </node>
                 </node>
                 <node concept="2I9FWS" id="7nsgDAXwnka" role="10QFUM">
@@ -715,7 +715,7 @@
             <node concept="2OqwBi" id="7nsgDAXwlQh" role="33vP2m">
               <node concept="71T_Y" id="7nsgDAXwlQi" role="2Oq$k0" />
               <node concept="liA8E" id="7nsgDAXwlQj" role="2OqNvi">
-                <ref role="37wK5l" to="b8lf:~AbstractMultipleSelection.getSelectedNodes()" resolve="getSelectedNodes" />
+                <ref role="37wK5l" to="b8lf:~NodeRangeSelection.getSelectedNodes()" resolve="getSelectedNodes" />
               </node>
             </node>
           </node>

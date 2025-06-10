@@ -4,14 +4,14 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib/takari-cpsuite-1.2.7.jar!/" type="java_classes">
-      <sourceRoot location="." />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="takari-cpsuite.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/takari-cpsuite-1.2.7.jar" />
+      <library location="${module}/lib/takari-cpsuite.jar" />
     </facet>
   </facets>
   <dependencies>

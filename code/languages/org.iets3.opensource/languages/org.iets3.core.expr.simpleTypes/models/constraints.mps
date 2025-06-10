@@ -1354,5 +1354,19 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="2Jw_Kdf9LH9">
+    <property role="3GE5qa" value="string" />
+    <ref role="1M2myG" to="5qo5:2xPWNWpoRmG" resolve="StringTypeWithConstraint" />
+    <node concept="9S07l" id="2Jw_Kdf9LHa" role="9Vyp8">
+      <node concept="3clFbS" id="2Jw_Kdf9LHb" role="2VODD2">
+        <node concept="3clFbF" id="2Jw_Kdf9LUR" role="3cqZAp">
+          <node concept="2YIFZM" id="2Jw_Kdf9LXS" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:2Jw_KdeVcY2" resolve="useStringConstraints" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

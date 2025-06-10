@@ -5,6 +5,26 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## June 2025
+
+### Changed
+
+- Published SBOM contains dependencies only from runtime configurations
+
+## May 2025
+
+### Changed
+
+- The language org.iets3.variability.artifacts.base was temporarily renamed to org.iets3.variability.artifacts.vanguard.
+
+### Fixed
+
+- Plugin org.iets3.safety was renamed to org.iets3.safety.os fixing the name collision with a plugin in org.iets3.core 
+
+- A NullPointerException was fixed for cases where a node implementing IValidNamedConcept had no name.
+- When calculating the supertype of number types, the precision is now correctly set to infinite when one of the types has an infinite precision.
+- The primitiveTypeMapper extension supports a new method `PrimitiveTypeMapper#useStringConstraints` that can be set to false to disable string types with constraints and go back to regular string types.
+
 ## April 2025
 
 ### Fixed
