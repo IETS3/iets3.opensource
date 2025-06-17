@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.iets3.variability.artifacts.base" uuid="c6ff3b3b-aff6-455e-9637-7955ccbfec22" languageVersion="0" moduleVersion="0">
+<language namespace="org.iets3.variability.artifacts.vanguard" uuid="c6ff3b3b-aff6-455e-9637-7955ccbfec22" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -73,7 +73,7 @@
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="1" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="20" />
-    <module reference="c6ff3b3b-aff6-455e-9637-7955ccbfec22(org.iets3.variability.artifacts.base)" version="0" />
+    <module reference="c6ff3b3b-aff6-455e-9637-7955ccbfec22(org.iets3.variability.artifacts.vanguard)" version="0" />
   </dependencyVersions>
   <extendedLanguages />
 </language>
