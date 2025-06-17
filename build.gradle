@@ -28,7 +28,7 @@ apply plugin: 'download-jbr'
 
 // configure jbr download version
 downloadJbr {
-    jbrVersion = '21.0.5-b631.16'
+    jbrVersion = '21.0.6-b895.109'
 }
 
 // detect if we are in a CI build
@@ -48,7 +48,7 @@ def minor = "9"
 
 
 
-ext.mpsVersion = "251.23774.234"
+ext.mpsVersion = "251.25410.10228"
 def mpsQAVersion = "$major.$minor+"
 
 
@@ -122,7 +122,7 @@ dependencies {
     // For a release version of MPS, use this dependency:
     //mps "com.jetbrains:mps:$mpsBuild"
     mps "com.jetbrains.mps:mps-prerelease:$mpsVersion"
-    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.2.0.+")
+    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.3.0.+")
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
     junitAnt 'org.apache.ant:ant-junit:1.10.15'
@@ -579,4 +579,8 @@ cyclonedxBom {
     outputFormat = "json"
     // Don't include license texts in generated SBOMs
     includeLicenseText = false
+    // Include runtime only deps (bundled libs, language libs, mps)
+    def runtimeConfigs = bundledDeps.collect {it.configName }
+    runtimeConfigs.addAll([configurations.mps.name, configurations.languageLibs.name])
+    includeConfigs = runtimeConfigs
 }
