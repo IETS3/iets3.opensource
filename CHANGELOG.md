@@ -10,6 +10,12 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 
 - Published SBOM contains dependencies only from runtime configurations
+- To avoid confusion, `U+03BC μ GREEK SMALL LETTER MU` is no longer recognized as the 'micro' unit prefix, only
+  `U+00B5 µ MICRO SIGN` is. Although technically considered 'legacy', the micro sign is the character produced by macOS
+  and Windows keyboard layouts when pressing `AltGr/Option+M`.
+
+  An [enhancement script](http://127.0.0.1:63320/node?ref=r%3A531014dc-62ca-45fa-b1c2-cf992369440b%28org.iets3.core.expr.typetags.physunits.scripts%29%2F6252521573649140294)
+  is provided to replace 'mu' with 'micro sign'.
 
 ## May 2025
 
