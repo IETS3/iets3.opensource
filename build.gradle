@@ -122,7 +122,7 @@ dependencies {
     // For a release version of MPS, use this dependency:
     //mps "com.jetbrains:mps:$mpsBuild"
     mps "com.jetbrains.mps:mps-prerelease:$mpsVersion"
-    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.2.0.+")
+    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.3.0.+")
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
     junitAnt 'org.apache.ant:ant-junit:1.10.15'
