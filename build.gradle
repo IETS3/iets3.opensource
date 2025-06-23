@@ -11,9 +11,9 @@ plugins {
     id 'base'
     id 'maven-publish'
     id 'de.itemis.mps.gradle.common' version '1.29.+'
-    id 'de.itemis.mps.gradle.launcher' version '2.5.2.+'
+    id 'de.itemis.mps.gradle.launcher' version '2.6.1.+'
     id "com.github.breadmoirai.github-release" version "2.5.2"
-    id "org.cyclonedx.bom" version "2.2.0"
+    id "org.cyclonedx.bom" version "2.3.1"
 }
 
 repositories {
@@ -48,7 +48,7 @@ def minor = "9"
 
 
 
-ext.mpsVersion = "251.25410.10228"
+ext.mpsVersion = "252.18003.90"
 def mpsQAVersion = "$major.$minor+"
 
 
