@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.variability.base.devkit" uuid="30ece186-fcb4-43d3-ac47-0764d3d00f5d">
+  <exported-language name="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" />
+  <exported-language name="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" />
+  <exported-language name="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" />
+  <exported-language name="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" />
+  <exported-language name="9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)" />
+  <exported-language name="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" />
+  <exported-language name="71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)" />
+  <exported-language name="f0883503-8eaa-4bc8-8846-eb63220ab1dd(org.iets3.variability.artifacts.base)" />
+  <exported-language name="9914d82b-ab8a-44d1-9c65-9f2954c3b4df(org.iets3.variability.artifacts.typesystem)" />
+  <exported-language name="bad8e421-fc94-4104-8c1e-6fc9d2dccf07(org.iets3.variability.artifacts.baseline)" />
+  <exported-language name="c6ff3b3b-aff6-455e-9637-7955ccbfec22(org.iets3.variability.artifacts.vanguard)" />
+  <exported-solutions>
+    <exported-solution>332e8d5e-8c0f-4177-b870-cc27072befb9(org.iets3.variability.base.ide)</exported-solution>
+    <exported-solution>f7909506-a68f-4575-8f79-ef5e0e0ae091(org.iets3.variability.artifacts.typesystem.runtime)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+

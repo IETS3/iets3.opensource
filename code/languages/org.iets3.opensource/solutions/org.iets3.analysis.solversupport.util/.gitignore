@@ -1,0 +1,4 @@
+# native libraries in this solution, will be created during build
+*.dll
+*.so
+*.dylib

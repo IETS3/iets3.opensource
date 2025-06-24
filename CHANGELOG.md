@@ -7,6 +7,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## June 2025
 
+### Added
+
+- Added languages and solution for basic variability. Those modules were moved from IETS3-Core Projec.
+
 ### Changed
 
 - Published SBOM contains dependencies only from runtime configurations
