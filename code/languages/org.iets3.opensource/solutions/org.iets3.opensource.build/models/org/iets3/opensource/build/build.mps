@@ -159,9 +159,6 @@
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
-      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
-        <reference id="6592112598314499037" name="target" index="m$_yA" />
-      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -1162,6 +1159,15 @@
       <node concept="m$_yC" id="4G1C74S34LO" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeSRRD" resolve="org.iets3.core.os" />
       </node>
+      <node concept="m$_yC" id="7yHH$DDpO3f" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:3Ol24ijlxoL" />
+      </node>
+      <node concept="m$_yC" id="7yHH$DDpOeo" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:3lcj7hzsuXf" />
+      </node>
+      <node concept="m$_yC" id="7yHH$DDpOn9" role="m$_yJ">
+        <ref role="m$_y1" node="7yHH$DDoBdm" />
+      </node>
       <node concept="3_J27D" id="7B3y$vlfXKD" role="m$_yQ">
         <node concept="3Mxwew" id="7B3y$vlfXKE" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.variability.os" />
@@ -1177,8 +1183,8 @@
           <property role="3MwjfP" value="org.iets3.variability.os" />
         </node>
       </node>
-      <node concept="m$_yB" id="7B3y$vlfYcO" role="m$_yh">
-        <ref role="m$_yA" node="7B3y$vlfY21" resolve="org.iets3.variability.artifacts.vanguard" />
+      <node concept="m$f5U" id="7yHH$DDpNST" role="m$_yh">
+        <ref role="m$f5T" node="7B3y$vlfXUD" resolve="org.iets3.variability.os" />
       </node>
       <node concept="m$f5U" id="7yHH$DDpJeL" role="m$_yh">
         <ref role="m$f5T" node="7yHH$DDowpI" resolve="org.iets3.variability.base.devkit" />
@@ -2292,6 +2298,9 @@
         </node>
         <node concept="3LEDTM" id="7yHH$DDpHR6" role="3LEDUa">
           <ref role="3LEDTN" node="7yHH$DDpG7t" resolve="org.iets3.variability.base.ide" />
+        </node>
+        <node concept="3LEDTy" id="7yHH$DDpOFw" role="3LEDUa">
+          <ref role="3LEDTV" node="7B3y$vlfY21" resolve="org.iets3.variability.artifacts.vanguard" />
         </node>
       </node>
     </node>
