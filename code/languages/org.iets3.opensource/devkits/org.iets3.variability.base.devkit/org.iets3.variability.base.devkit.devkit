@@ -8,8 +8,11 @@
   <exported-language name="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" />
   <exported-language name="71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)" />
   <exported-language name="f0883503-8eaa-4bc8-8846-eb63220ab1dd(org.iets3.variability.artifacts.base)" />
+  <exported-language name="9914d82b-ab8a-44d1-9c65-9f2954c3b4df(org.iets3.variability.artifacts.typesystem)" />
+  <exported-language name="bad8e421-fc94-4104-8c1e-6fc9d2dccf07(org.iets3.variability.artifacts.baseline)" />
   <exported-solutions>
     <exported-solution>332e8d5e-8c0f-4177-b870-cc27072befb9(org.iets3.variability.base.ide)</exported-solution>
+    <exported-solution>f7909506-a68f-4575-8f79-ef5e0e0ae091(org.iets3.variability.artifacts.typesystem.runtime)</exported-solution>
   </exported-solutions>
 </dev-kit>
 
