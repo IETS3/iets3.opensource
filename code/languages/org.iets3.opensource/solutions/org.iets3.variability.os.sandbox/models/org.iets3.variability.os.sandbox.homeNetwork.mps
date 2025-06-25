@@ -3,6 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="true" />
   <languages>
+    <use id="9b66c5c9-38bf-4315-a96f-9f4e212c69cb" name="org.iets3.variability.base" version="0" />
     <devkit ref="30ece186-fcb4-43d3-ac47-0764d3d00f5d(org.iets3.variability.base.devkit)" />
   </languages>
   <imports />
@@ -99,7 +100,6 @@
       <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
-      <concept id="3989254429232912648" name="org.iets3.variability.featuremodel.base.structure.EmptyVariabilityContent_old" flags="ng" index="12i7jd" />
       <concept id="3989254429232883574" name="org.iets3.variability.featuremodel.base.structure.VariabilityModelChunk_old" flags="ng" index="12icEN">
         <child id="3989254429232890937" name="contents_old" index="12i2BY" />
       </concept>
@@ -128,7 +128,7 @@
   </registry>
   <node concept="12icEM" id="7oSKjSJ25cu">
     <property role="TrG5h" value="HomeNetworkFeatures" />
-    <node concept="12i7jd" id="7oSKjSJ25cv" role="12i2BY" />
+    <node concept="12i7jc" id="7oSKjSJ25cv" role="12i2BY" />
     <node concept="12iwZl" id="19VDUSODbI5" role="12i2BX">
       <property role="bVyBI" value="-2114197766" />
       <property role="0Rz4W" value="881601232" />
@@ -183,7 +183,7 @@
             <node concept="30deu6" id="4eA6KATjt7v" role="30dEsF">
               <node concept="1QScDb" id="4eA6KATjt7w" role="30dEsF">
                 <node concept="21mTOb" id="4eA6KATjt1w" role="1QScD9">
-                  <ref role="21mTOu" node="4eA6KATjrrF" />
+                  <ref role="21mTOu" node="4eA6KATjrrF" resolve="V110" />
                 </node>
                 <node concept="21nZkD" id="4eA6KATjsZj" role="2lDidJ">
                   <ref role="21nZkZ" node="4eA6KATjrsa" resolve="power" />
@@ -191,7 +191,7 @@
               </node>
               <node concept="1QScDb" id="4eA6KATjt7x" role="30dEs_">
                 <node concept="21mTOb" id="4eA6KATjt6n" role="1QScD9">
-                  <ref role="21mTOu" node="4eA6KATjrs3" />
+                  <ref role="21mTOu" node="4eA6KATjrs3" resolve="V115" />
                 </node>
                 <node concept="21nZkD" id="4eA6KATjt40" role="2lDidJ">
                   <ref role="21nZkZ" node="4eA6KATjrsa" resolve="power" />
@@ -210,7 +210,7 @@
         </node>
         <node concept="12iSMG" id="4eA6KATjrsa" role="12iwVe">
           <property role="TrG5h" value="power" />
-          <ref role="12iSMH" node="4eA6KATjrpg" />
+          <ref role="12iSMH" node="4eA6KATjrpg" resolve="Power" />
         </node>
       </node>
     </node>
@@ -270,7 +270,7 @@
   </node>
   <node concept="12icEM" id="7oSKjSJ2nP$">
     <property role="TrG5h" value="Configurations" />
-    <node concept="12i7jd" id="7oSKjSJ2nP_" role="12i2BY" />
+    <node concept="12i7jc" id="7oSKjSJ2nP_" role="12i2BY" />
     <node concept="rqKB5" id="7oSKjSJ2z24" role="12i2BX">
       <property role="26YOJW" value="" />
       <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
