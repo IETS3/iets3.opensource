@@ -54,6 +54,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -62,6 +63,10 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -87,14 +92,24 @@
       <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
         <child id="1171981057159" name="condition" index="3vwVQn" />
       </concept>
+      <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
+        <child id="1172073511101" name="message" index="3_1BAH" />
+      </concept>
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ngI" index="3_9gw8">
+        <child id="1172075534298" name="message" index="3_9lra" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -154,6 +169,11 @@
           <node concept="37vLTw" id="4aAsKjbTWE0" role="2Hmdds">
             <ref role="3cqZAo" node="4aAsKjbTWA7" resolve="task" />
           </node>
+          <node concept="3_1$Yv" id="r27GJjCF67" role="3_9lra">
+            <node concept="Xl_RD" id="r27GJjCFgC" role="3_1BAH">
+              <property role="Xl_RC" value="Task must not be null" />
+            </node>
+          </node>
         </node>
         <node concept="3vwNmj" id="4aAsKjbU5HC" role="3cqZAp">
           <node concept="2OqwBi" id="4aAsKjbU5Pz" role="3vwVQn">
@@ -163,6 +183,29 @@
             <node concept="1mIQ4w" id="4aAsKjbU64c" role="2OqNvi">
               <node concept="chp4Y" id="4aAsKjbU670" role="cj9EA">
                 <ref role="cht4Q" to="6w03:7wEqFvbO3UV" resolve="DummySolverTask" />
+              </node>
+            </node>
+          </node>
+          <node concept="3_1$Yv" id="r27GJjCFzq" role="3_9lra">
+            <node concept="3cpWs3" id="r27GJjCK4Z" role="3_1BAH">
+              <node concept="2OqwBi" id="r27GJjCKCC" role="3uHU7w">
+                <node concept="37vLTw" id="r27GJjCKwO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4aAsKjbTWA7" resolve="task" />
+                </node>
+                <node concept="2yIwOk" id="r27GJjCLcO" role="2OqNvi" />
+              </node>
+              <node concept="3cpWs3" id="r27GJjCJh_" role="3uHU7B">
+                <node concept="3cpWs3" id="r27GJjCIcS" role="3uHU7B">
+                  <node concept="Xl_RD" id="r27GJjCFJ3" role="3uHU7B">
+                    <property role="Xl_RC" value="Task is not " />
+                  </node>
+                  <node concept="35c_gC" id="r27GJjCIee" role="3uHU7w">
+                    <ref role="35c_gD" to="6w03:7wEqFvbO3UV" resolve="DummySolverTask" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="r27GJjCJj5" role="3uHU7w">
+                  <property role="Xl_RC" value=" but " />
+                </node>
               </node>
             </node>
           </node>
@@ -325,6 +368,11 @@
           <node concept="3cmrfG" id="7_IBAC_PA$1" role="3tpDZB">
             <property role="3cmrfH" value="0" />
           </node>
+          <node concept="3_1$Yv" id="r27GJjCLeG" role="3_9lra">
+            <node concept="Xl_RD" id="r27GJjCLEK" role="3_1BAH">
+              <property role="Xl_RC" value="Sleep time wrong" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -357,6 +405,11 @@
           <node concept="37vLTw" id="7Vgw$ZVF8hn" role="2Hmdds">
             <ref role="3cqZAo" node="7Vgw$ZVF8ai" resolve="task" />
           </node>
+          <node concept="3_1$Yv" id="r27GJjCN0Y" role="3_9lra">
+            <node concept="Xl_RD" id="r27GJjCNbu" role="3_1BAH">
+              <property role="Xl_RC" value="Task must not be null" />
+            </node>
+          </node>
         </node>
         <node concept="3vwNmj" id="7Vgw$ZVF8ho" role="3cqZAp">
           <node concept="2OqwBi" id="7Vgw$ZVF8hp" role="3vwVQn">
@@ -366,6 +419,29 @@
             <node concept="1mIQ4w" id="7Vgw$ZVF8hr" role="2OqNvi">
               <node concept="chp4Y" id="7Vgw$ZVF8hs" role="cj9EA">
                 <ref role="cht4Q" to="6w03:7wEqFvbO3UV" resolve="DummySolverTask" />
+              </node>
+            </node>
+          </node>
+          <node concept="3_1$Yv" id="r27GJjCNcH" role="3_9lra">
+            <node concept="3cpWs3" id="r27GJjCNnd" role="3_1BAH">
+              <node concept="2OqwBi" id="r27GJjCNne" role="3uHU7w">
+                <node concept="37vLTw" id="r27GJjCNnf" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7Vgw$ZVF8ai" resolve="task" />
+                </node>
+                <node concept="2yIwOk" id="r27GJjCNng" role="2OqNvi" />
+              </node>
+              <node concept="3cpWs3" id="r27GJjCNnh" role="3uHU7B">
+                <node concept="3cpWs3" id="r27GJjCNni" role="3uHU7B">
+                  <node concept="Xl_RD" id="r27GJjCNnj" role="3uHU7B">
+                    <property role="Xl_RC" value="Task is not " />
+                  </node>
+                  <node concept="35c_gC" id="r27GJjCNnk" role="3uHU7w">
+                    <ref role="35c_gD" to="6w03:7wEqFvbO3UV" resolve="DummySolverTask" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="r27GJjCNnl" role="3uHU7w">
+                  <property role="Xl_RC" value=" but " />
+                </node>
               </node>
             </node>
           </node>
@@ -427,6 +503,11 @@
           </node>
           <node concept="3cmrfG" id="7Vgw$ZVF8hX" role="3tpDZB">
             <property role="3cmrfH" value="1234" />
+          </node>
+          <node concept="3_1$Yv" id="r27GJjCP9x" role="3_9lra">
+            <node concept="Xl_RD" id="r27GJjCP$s" role="3_1BAH">
+              <property role="Xl_RC" value="Sleep time wrong" />
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="7Vgw$ZVF8gs" role="3cqZAp" />
