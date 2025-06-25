@@ -165,6 +165,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.linters/org.iets3.opensource.linters.msd" folder="linters" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.variability.artifacts.typesystem.runtime/org.iets3.variability.artifacts.typesystem.runtime.msd" folder="variability" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.variability.base.ide/org.iets3.variability.base.ide.msd" folder="variability" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.variability.os.sandbox/org.iets3.variability.os.sandbox.msd" folder="variability" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.components.functional/test.components.functional.msd" folder="comp.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core.expr.genjava/test.ex.core.expr.genjava.msd" folder="expr.tests" />
