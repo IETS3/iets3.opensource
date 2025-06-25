@@ -872,7 +872,7 @@
         <node concept="398BVA" id="7yHH$DDoENw" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="7yHH$DDoEQK" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
+            <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="7yHH$DDpuOC" role="2Ry0An">
               <property role="2Ry0Am" value="org.iets3.contextfilter.plugin" />
               <node concept="2Ry0Ak" id="7yHH$DDpuXr" role="2Ry0An">
@@ -919,7 +919,7 @@
             <node concept="398BVA" id="7yHH$DDpv0Z" role="3LXTmr">
               <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
               <node concept="2Ry0Ak" id="7yHH$DDpv10" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
+                <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="7yHH$DDpv11" role="2Ry0An">
                   <property role="2Ry0Am" value="org.iets3.contextfilter.plugin" />
                   <node concept="2Ry0Ak" id="7yHH$DDpv12" role="2Ry0An">

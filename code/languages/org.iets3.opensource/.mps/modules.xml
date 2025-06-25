@@ -28,7 +28,6 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.plugin/org.iets3.components.plugin.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.req/org.iets3.components.req.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.toplevel.adapter/org.iets3.components.toplevel.adapter.mpl" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.contextfilter.plugin/org.iets3.contextfilter.plugin.msd" folder="contextfilter" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.contextfilter/org.iets3.contextfilter.mpl" folder="contextfilter" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.assessment/org.iets3.core.assessment.mpl" folder="assessmt" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />
@@ -106,6 +105,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.util/org.iets3.analysis.solversupport.util.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.interpreter/org.iets3.components.core.interpreter.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.sandbox/org.iets3.components.core.sandbox.msd" folder="comp" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.contextfilter.plugin/org.iets3.contextfilter.plugin.msd" folder="contextfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.adt.interpreter/org.iets3.core.expr.adt.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.base.collections.stubs/org.iets3.core.expr.base.collections.stubs.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.base.interpreter/org.iets3.core.expr.base.interpreter.msd" folder="expr.lang-core" />
