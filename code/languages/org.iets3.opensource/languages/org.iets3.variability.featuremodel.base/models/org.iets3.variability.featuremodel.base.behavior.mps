@@ -414,9 +414,7 @@
       <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
         <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
       </concept>
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
-        <reference id="1139877738879" name="concept" index="1A0vxQ" />
-      </concept>
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
@@ -579,21 +577,7 @@
     <property role="3GE5qa" value="_deprecated.chunk" />
     <ref role="13h7C2" to="s6b7:3tsFshP56tQ" resolve="VariabilityModelChunk_old" />
     <node concept="13hLZK" id="3tsFshP56xr" role="13h7CW">
-      <node concept="3clFbS" id="3tsFshP56xs" role="2VODD2">
-        <node concept="3clFbF" id="3tsFshP5xOK" role="3cqZAp">
-          <node concept="2OqwBi" id="3tsFshP5yEZ" role="3clFbG">
-            <node concept="2OqwBi" id="3tsFshP5y0A" role="2Oq$k0">
-              <node concept="13iPFW" id="3tsFshP5xOJ" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="3tsFshP5yev" role="2OqNvi">
-                <ref role="3TtcxE" to="s6b7:3tsFshP58gT" resolve="contents_old" />
-              </node>
-            </node>
-            <node concept="WFELt" id="3tsFshP5zQh" role="2OqNvi">
-              <ref role="1A0vxQ" to="s6b7:3tsFshP5d$8" resolve="EmptyVariabilityContent_old" />
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="3tsFshP56xs" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="3tsFshP56xt" role="13h7CS">
       <property role="TrG5h" value="chunkDependencies" />
