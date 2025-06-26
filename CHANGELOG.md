@@ -9,7 +9,11 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 
-- Added languages and solution for basic variability. Those modules were moved from IETS3-Core Projec.
+- Added languages and solution for basic variability, moved from IETS3-Core project. The following modules were added:
+  - variability: `org.iets3.variability.*` (6 languages, 2 solutions)
+  - variability devkit: `org.iets3.variability.base.devkit`
+  - analysis support: `org.iets3.analysis.logic.operator`, `org.iets3.analysis.solversupport.util`
+  - contextfilter for UI: `org.iets3.contextfilter`, `org.iets3.contextfilter.plugin`
 
 ### Changed
 
