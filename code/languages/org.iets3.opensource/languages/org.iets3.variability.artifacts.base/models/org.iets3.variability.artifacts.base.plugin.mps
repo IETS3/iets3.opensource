@@ -12764,7 +12764,7 @@
     <node concept="2tJIrI" id="3iSvY0PFJ5e" role="jymVt" />
     <node concept="2tJIrI" id="7G$l9GLtlq_" role="jymVt" />
     <node concept="312cEg" id="7G$l9GLtpLG" role="jymVt">
-      <property role="TrG5h" value="componentNotStaticReferenced" />
+      <property role="TrG5h" value="componentStaticReferenced" />
       <node concept="3uibUv" id="7G$l9GLAjnb" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
         <node concept="3Tqbb2" id="7G$l9GLAjuJ" role="11_B2D" />
@@ -12773,6 +12773,7 @@
         <ref role="37wK5l" to="3o3z:~Sets.newHashSet()" resolve="newHashSet" />
         <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
       </node>
+      <node concept="3Tm1VV" id="7sILs7vCf1E" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6pRB3UnFsDg" role="jymVt" />
     <node concept="2tJIrI" id="3iSvY0PFTmx" role="jymVt" />
