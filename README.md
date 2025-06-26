@@ -74,7 +74,7 @@ The project is separated into the following virtual packages:
 | ------------- | ------------- |
 | org.iets3.core.assessment | It contains an [AssessmentQuery](http://127.0.0.1:63320/node?ref=r%3Af7764ca4-8c75-4049-922b-08516400a727%28com.mbeddr.core.base.structure%29%2F865293814733115675) to find [untraced elements](http://127.0.0.1:63320/node?ref=r%3A23d7e401-548b-485c-bdf1-c060e259073c%28org.iets3.core.assessment.structure%29%2F3587241503657463099). It can be used inside an instance of [Assessment](http://127.0.0.1:63320/node?ref=r%3Af7764ca4-8c75-4049-922b-08516400a727%28com.mbeddr.core.base.structure%29%2F865293814733114044) inside an [AssessmentContainer](http://127.0.0.1:63320/node?ref=r%3Af7764ca4-8c75-4049-922b-08516400a727%28com.mbeddr.core.base.structure%29%2F865293814733114043). It also contains a [generic trace query](http://127.0.0.1:63320/node?ref=r%3A23d7e401-548b-485c-bdf1-c060e259073c%28org.iets3.core.assessment.structure%29%2F6913547888673489335) to find traced elements. |
 
-### comp (component)
+### contextfilter
 
 | Name  | Description |
 | ------------- | ------------- |
