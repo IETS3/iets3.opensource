@@ -1,1 +1,0 @@
-Folder for images, used by documentation aspect.
