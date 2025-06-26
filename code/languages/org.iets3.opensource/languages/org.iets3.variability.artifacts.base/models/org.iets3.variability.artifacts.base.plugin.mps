@@ -13319,7 +13319,7 @@
                 <node concept="2OqwBi" id="7G$l9GLD5VH" role="37wK5m">
                   <node concept="Xjq3P" id="7G$l9GLD5VI" role="2Oq$k0" />
                   <node concept="2OwXpG" id="7G$l9GLD5VJ" role="2OqNvi">
-                    <ref role="2Oxat5" node="7G$l9GLtpLG" resolve="componentNotStaticReferenced" />
+                    <ref role="2Oxat5" node="7G$l9GLtpLG" resolve="componentStaticReferenced" />
                   </node>
                 </node>
               </node>
@@ -13331,7 +13331,7 @@
             <node concept="2OqwBi" id="7G$l9GLCW__" role="2Oq$k0">
               <node concept="Xjq3P" id="7G$l9GLCUPL" role="2Oq$k0" />
               <node concept="2OwXpG" id="7G$l9GLCYj_" role="2OqNvi">
-                <ref role="2Oxat5" node="7G$l9GLtpLG" resolve="componentNotStaticReferenced" />
+                <ref role="2Oxat5" node="7G$l9GLtpLG" resolve="componentStaticReferenced" />
               </node>
             </node>
             <node concept="liA8E" id="7G$l9GLD4w2" role="2OqNvi">
