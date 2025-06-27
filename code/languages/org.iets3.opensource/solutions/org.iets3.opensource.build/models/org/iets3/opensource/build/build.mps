@@ -803,6 +803,12 @@
       <node concept="m$f5U" id="7yHH$DDpvEt" role="m$_yh">
         <ref role="m$f5T" node="7yHH$DDoDlc" resolve="org.iets3.contextfilter" />
       </node>
+      <node concept="m$_yC" id="2PfwZmv9jN1" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
+      </node>
+      <node concept="m$_yC" id="2PfwZmv9ojo" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:hCVXosGNJH" resolve="com.mbeddr.mpsutil.modellisteners" />
+      </node>
       <node concept="m$_yC" id="7yHH$DDpwFq" role="m$_yJ">
         <ref role="m$_y1" to="al5i:64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
       </node>
