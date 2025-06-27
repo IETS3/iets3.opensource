@@ -214,9 +214,8 @@
       <node concept="3Tm1VV" id="1mChDufikj6" role="1B3o_S" />
       <node concept="3clFbS" id="1mChDufikjf" role="3clF47">
         <node concept="3clFbF" id="1mChDufivX4" role="3cqZAp">
-          <node concept="10M0yZ" id="1mChDufix0r" role="3clFbG">
-            <ref role="3cqZAo" to="wyt6:~Integer.MIN_VALUE" resolve="MIN_VALUE" />
-            <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+          <node concept="3cmrfG" id="3hhKUUE_$MX" role="3clFbG">
+            <property role="3cmrfH" value="-999999998" />
           </node>
         </node>
       </node>
@@ -299,9 +298,8 @@
       <node concept="3Tm1VV" id="1mChDufiBBH" role="1B3o_S" />
       <node concept="3clFbS" id="1mChDufiBBQ" role="3clF47">
         <node concept="3clFbF" id="1mChDufiIaB" role="3cqZAp">
-          <node concept="10M0yZ" id="1mChDufiIaC" role="3clFbG">
-            <ref role="3cqZAo" to="wyt6:~Integer.MIN_VALUE" resolve="MIN_VALUE" />
-            <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+          <node concept="3cmrfG" id="3hhKUUE_wCS" role="3clFbG">
+            <property role="3cmrfH" value="-999999998" />
           </node>
         </node>
       </node>
