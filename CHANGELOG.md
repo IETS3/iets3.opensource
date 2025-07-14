@@ -5,9 +5,35 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## June 2025
+
+### Added
+
+- Added languages and solution for basic variability, moved from IETS3-Core project. The following modules were added:
+  - variability: `org.iets3.variability.*` (6 languages, 2 solutions)
+  - variability devkit: `org.iets3.variability.base.devkit`
+  - analysis support: `org.iets3.analysis.logic.operator`, `org.iets3.analysis.solversupport.util`
+  - contextfilter for UI: `org.iets3.contextfilter`, `org.iets3.contextfilter.plugin`
+
+### Changed
+
+- Published SBOM contains dependencies only from runtime configurations
+- To avoid confusion, `U+03BC μ GREEK SMALL LETTER MU` is no longer recognized as the 'micro' unit prefix, only
+  `U+00B5 µ MICRO SIGN` is. Although technically considered 'legacy', the micro sign is the character produced by macOS
+  and Windows keyboard layouts when pressing `AltGr/Option+M`.
+
+  An [enhancement script](http://127.0.0.1:63320/node?ref=r%3A531014dc-62ca-45fa-b1c2-cf992369440b%28org.iets3.core.expr.typetags.physunits.scripts%29%2F6252521573649140294)
+  is provided to replace 'mu' with 'micro sign'.
+
 ## May 2025
 
+### Changed
+
+- The language org.iets3.variability.artifacts.base was temporarily renamed to org.iets3.variability.artifacts.vanguard.
+
 ### Fixed
+
+- Plugin org.iets3.safety was renamed to org.iets3.safety.os fixing the name collision with a plugin in org.iets3.core 
 
 - A NullPointerException was fixed for cases where a node implementing IValidNamedConcept had no name.
 - When calculating the supertype of number types, the precision is now correctly set to infinite when one of the types has an infinite precision.
