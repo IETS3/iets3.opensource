@@ -2255,12 +2255,22 @@
     <node concept="3EZMnI" id="18$bUx5b5aH" role="2wV5jI">
       <node concept="l2Vlx" id="18$bUx5b5aI" role="2iSdaV" />
       <node concept="3F0ifn" id="18$bUx5b5aD" role="3EZMnx">
-        <property role="3F0ifm" value="coverage" />
+        <property role="3F0ifm" value="ratio" />
       </node>
       <node concept="3F0A7n" id="18$bUx5b5aW" role="3EZMnx">
         <ref role="1NtTu8" to="av4b:18$bUx5b57P" resolve="coverageRatio" />
       </node>
       <node concept="3F0ifn" id="18$bUx5b5b9" role="3EZMnx">
+        <property role="3F0ifm" value="%" />
+      </node>
+      <node concept="3F0ifn" id="3GrH8102FQr" role="3EZMnx" />
+      <node concept="3F0ifn" id="3GrH80ZVnsZ" role="3EZMnx">
+        <property role="3F0ifm" value="threshold" />
+      </node>
+      <node concept="3F0A7n" id="3GrH80ZVnwS" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:3GrH80ZVmzh" resolve="coverageThreshold" />
+      </node>
+      <node concept="3F0ifn" id="3GrH812ZHzP" role="3EZMnx">
         <property role="3F0ifm" value="%" />
       </node>
     </node>
