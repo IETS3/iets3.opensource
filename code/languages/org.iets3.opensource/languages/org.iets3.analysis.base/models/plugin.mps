@@ -5146,17 +5146,56 @@
     </node>
     <node concept="2uRRBT" id="2f_Mi5n7Ldo" role="2uRRB$">
       <node concept="3clFbS" id="2f_Mi5n7Ldp" role="2VODD2">
-        <node concept="3clFbF" id="2F3xlwaQIEB" role="3cqZAp">
-          <node concept="2OqwBi" id="2F3xlwaQIE$" role="3clFbG">
-            <node concept="10M0yZ" id="2F3xlwaQIE_" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" />
+        <node concept="3SKdUt" id="2F3xlwaS1ih" role="3cqZAp">
+          <node concept="1PaTwC" id="2F3xlwaS1ii" role="1aUNEU">
+            <node concept="3oM_SD" id="2F3xlwaS1ij" role="1PaTwD">
+              <property role="3oM_SC" value="Keep" />
             </node>
-            <node concept="liA8E" id="2F3xlwaQIEA" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="Xl_RD" id="2F3xlwaQIK7" role="37wK5m">
-                <property role="Xl_RC" value="-------&gt; SolverCheck" />
-              </node>
+            <node concept="3oM_SD" id="2F3xlwaS1wk" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1wF" role="1PaTwD">
+              <property role="3oM_SC" value="code" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1x5" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1xt" role="1PaTwD">
+              <property role="3oM_SC" value="order" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1xS" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1yg" role="1PaTwD">
+              <property role="3oM_SC" value="enable" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1yG" role="1PaTwD">
+              <property role="3oM_SC" value="error" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1z7" role="1PaTwD">
+              <property role="3oM_SC" value="highlightning" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1$i" role="1PaTwD">
+              <property role="3oM_SC" value="stemming" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1_4" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2F3xlwaS1Kg" role="3cqZAp">
+          <node concept="1PaTwC" id="2F3xlwaS1Kh" role="1aUNEU">
+            <node concept="3oM_SD" id="2F3xlwaS1MW" role="1PaTwD">
+              <property role="3oM_SC" value="errors" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1Nq" role="1PaTwD">
+              <property role="3oM_SC" value="detected" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1OP" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1Pd" role="1PaTwD">
+              <property role="3oM_SC" value="'ISolvable'" />
             </node>
           </node>
         </node>
