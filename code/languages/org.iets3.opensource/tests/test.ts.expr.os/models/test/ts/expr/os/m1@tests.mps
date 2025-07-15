@@ -19,7 +19,7 @@
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="b80fab4e-53f2-409c-81d8-3475855e0e42" name="test.ts.expr.os.nix" version="0" />
-    <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare" version="0" />
+    <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>
@@ -672,8 +672,8 @@
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
-    <language id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare">
-      <concept id="756135271275943220" name="com.mbeddr.mpsutil.compare.structure.AssertNodeEquals" flags="ng" index="3GXo0L" />
+    <language id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare">
+      <concept id="756135271275943220" name="de.itemis.mps.compare.structure.AssertNodeEquals" flags="ng" index="3GXo0L" />
     </language>
     <language id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable">
       <concept id="4255172619715417408" name="org.iets3.core.expr.mutable.structure.UpdateItExpression" flags="ng" index="3j5BQN" />
@@ -18704,9 +18704,7 @@
       <node concept="_iOnV" id="3N4k0eSJKEP" role="1qenE9">
         <property role="TrG5h" value="options" />
         <node concept="7CXmI" id="3N4k0eSJKJc" role="lGtFl">
-          <node concept="7OXhh" id="3N4k0eSJKJd" role="7EUXB">
-            <property role="G7GLP" value="true" />
-          </node>
+          <node concept="7OXhh" id="3N4k0eSJKJd" role="7EUXB" />
         </node>
         <node concept="2zPypq" id="3N4k0eSJPou" role="_iOnC">
           <property role="TrG5h" value="x" />
@@ -18867,6 +18865,23 @@
           <node concept="wdKpt" id="2$mkTNp$YhK" role="2lDidJ">
             <node concept="_emDc" id="24Fec41hnmE" role="2lDidJ">
               <ref role="_emDf" node="3N4k0eSJPou" resolve="x" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="6rS$_kMYE5Q" role="_iOnC">
+          <property role="TrG5h" value="xDeOptedTwice" />
+          <node concept="wdKpt" id="6rS$_kMYGUP" role="2lDidJ">
+            <node concept="wdKpt" id="6rS$_kMYH78" role="2lDidJ">
+              <node concept="_emDc" id="6rS$_kMYGUt" role="2lDidJ">
+                <ref role="_emDf" node="3N4k0eSJPou" resolve="x" />
+              </node>
+            </node>
+            <node concept="7CXmI" id="4OZmL8HJRId" role="lGtFl">
+              <node concept="29bkU" id="4OZmL8HJS8e" role="7EUXB">
+                <node concept="2PQEqo" id="4OZmL8HJS8f" role="3lydCh">
+                  <ref role="39XzEq" to="t4jv:6rS$_kMQ2Ju" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
