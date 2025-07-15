@@ -276,6 +276,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1766949807893567867" name="jetbrains.mps.lang.typesystem.structure.OverridesConceptFunction" flags="ig" index="bXqS6" />
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
@@ -11143,6 +11146,47 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="3eH6BL2UU3s" role="1B3o_S" />
+  </node>
+  <node concept="18kY7G" id="6rS$_kMPZL2">
+    <property role="TrG5h" value="check_BangOp" />
+    <node concept="3clFbS" id="6rS$_kMPZL3" role="18ibNy">
+      <node concept="3clFbJ" id="6rS$_kMQ0WU" role="3cqZAp">
+        <node concept="3fqX7Q" id="6rS$_kMQ2_Q" role="3clFbw">
+          <node concept="2OqwBi" id="6rS$_kMQ2_S" role="3fr31v">
+            <node concept="2OqwBi" id="6rS$_kMQ2_T" role="2Oq$k0">
+              <node concept="2OqwBi" id="6rS$_kMQ2_U" role="2Oq$k0">
+                <node concept="1YBJjd" id="6rS$_kMQ2_V" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6rS$_kMPZL5" resolve="bangOp" />
+                </node>
+                <node concept="3TrEf2" id="6rS$_kMQ2_W" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:3G_qVqIw4zp" resolve="expr" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="6rS$_kMQ2_X" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="6rS$_kMQ2_Y" role="2OqNvi">
+              <node concept="chp4Y" id="6rS$_kMQ2_Z" role="cj9EA">
+                <ref role="cht4Q" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6rS$_kMQ0WW" role="3clFbx">
+          <node concept="a7r0C" id="6rS$_kMQ2Ju" role="3cqZAp">
+            <node concept="Xl_RD" id="6rS$_kMQ2JB" role="a7wSD">
+              <property role="Xl_RC" value="Bang operator applied for an expression of a non-option type" />
+            </node>
+            <node concept="1YBJjd" id="6rS$_kMQ2UR" role="1urrMF">
+              <ref role="1YBMHb" node="6rS$_kMPZL5" resolve="bangOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6rS$_kMPZL5" role="1YuTPh">
+      <property role="TrG5h" value="bangOp" />
+      <ref role="1YaFvo" to="hm2y:24Fec4173Us" resolve="BangOp" />
+    </node>
   </node>
 </model>
 
