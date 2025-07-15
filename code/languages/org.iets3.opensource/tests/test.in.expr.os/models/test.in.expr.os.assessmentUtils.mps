@@ -510,10 +510,10 @@
         <node concept="3vwNmj" id="3GrH80ZVxwz" role="3cqZAp">
           <node concept="2d3UOw" id="3GrH80ZVzPm" role="3vwVQn">
             <node concept="37vLTw" id="3GrH80ZV_M1" role="3uHU7w">
-              <ref role="3cqZAo" node="3GrH80ZV$1B" resolve="caverageThreshold" />
+              <ref role="3cqZAo" node="3GrH80ZV$1B" resolve="minThreshold" />
             </node>
             <node concept="37vLTw" id="3GrH80ZVxJf" role="3uHU7B">
-              <ref role="3cqZAo" node="3GrH80ZcoP5" resolve="coverageRatioNew" />
+              <ref role="3cqZAo" node="3GrH80ZcoP5" resolve="coverageRatio" />
             </node>
           </node>
           <node concept="3_1$Yv" id="3GrH810ruW9" role="3_9lra">
