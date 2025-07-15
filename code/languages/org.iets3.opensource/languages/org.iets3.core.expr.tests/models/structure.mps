@@ -427,6 +427,11 @@
       <property role="TrG5h" value="coverageRatio" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="3GrH80ZVmzh" role="1TKVEl">
+      <property role="IQ2nx" value="4259196335530272977" />
+      <property role="TrG5h" value="coverageThreshold" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4XlPKep95_T">
     <property role="EcuMT" value="5716711712470882681" />
