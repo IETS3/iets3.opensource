@@ -63,13 +63,11 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -95,6 +93,9 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -166,6 +167,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -374,32 +383,87 @@
     <node concept="3clFb_" id="3GrH80ZhwJl" role="jymVt">
       <property role="TrG5h" value="checkCoverage" />
       <node concept="3clFbS" id="3GrH80ZhwJo" role="3clF47">
-        <node concept="3cpWs8" id="3GrH80ZcoON" role="3cqZAp">
-          <node concept="3cpWsn" id="3GrH80ZcoOO" role="3cpWs9">
-            <property role="TrG5h" value="coverageRatioOld" />
-            <node concept="10Oyi0" id="3GrH80ZcoOP" role="1tU5fm" />
-            <node concept="2OqwBi" id="3GrH80ZcoOQ" role="33vP2m">
-              <node concept="2OqwBi" id="3GrH80ZcoOR" role="2Oq$k0">
-                <node concept="2OqwBi" id="3GrH80ZcoOS" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3GrH80ZcoOT" role="2Oq$k0">
-                    <node concept="37vLTw" id="3GrH80ZcoOU" role="2Oq$k0">
+        <node concept="3cpWs8" id="3GrH80ZV$1A" role="3cqZAp">
+          <node concept="3cpWsn" id="3GrH80ZV$1B" role="3cpWs9">
+            <property role="TrG5h" value="minThreshold" />
+            <node concept="10Oyi0" id="3GrH80ZV$1C" role="1tU5fm" />
+            <node concept="2OqwBi" id="3GrH80ZV$1D" role="33vP2m">
+              <node concept="2OqwBi" id="3GrH80ZV$1E" role="2Oq$k0">
+                <node concept="2OqwBi" id="3GrH80ZV$1F" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3GrH80ZV$1G" role="2Oq$k0">
+                    <node concept="37vLTw" id="3GrH80ZV$1H" role="2Oq$k0">
                       <ref role="3cqZAo" node="3GrH80ZhwMn" resolve="assessment" />
                     </node>
-                    <node concept="3Tsc0h" id="3GrH80ZcoOV" role="2OqNvi">
+                    <node concept="3Tsc0h" id="3GrH80ZV$1I" role="2OqNvi">
                       <ref role="3TtcxE" to="vs0r:_gCXGjnZUU" resolve="summaries" />
                     </node>
                   </node>
-                  <node concept="v3k3i" id="3GrH80ZcoOW" role="2OqNvi">
-                    <node concept="chp4Y" id="3GrH80ZcoOX" role="v3oSu">
+                  <node concept="v3k3i" id="3GrH80ZV$1J" role="2OqNvi">
+                    <node concept="chp4Y" id="3GrH80ZV$1K" role="v3oSu">
                       <ref role="cht4Q" to="av4b:18$bUx5b55w" resolve="InterpreterCoverageAssSummary" />
                     </node>
                   </node>
                 </node>
-                <node concept="1uHKPH" id="3GrH80ZcoOY" role="2OqNvi" />
+                <node concept="1uHKPH" id="3GrH80ZV$1L" role="2OqNvi" />
               </node>
-              <node concept="3TrcHB" id="3GrH80ZcoOZ" role="2OqNvi">
-                <ref role="3TsBF5" to="av4b:18$bUx5b57P" resolve="coverageRatio" />
+              <node concept="3TrcHB" id="3GrH80ZV$1M" role="2OqNvi">
+                <ref role="3TsBF5" to="av4b:3GrH80ZVmzh" resolve="coverageThreshold" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3GrH812qhZU" role="3cqZAp">
+          <node concept="1PaTwC" id="3GrH812qhZV" role="1aUNEU">
+            <node concept="3oM_SD" id="3GrH812qi98" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi99" role="1PaTwD">
+              <property role="3oM_SC" value="need" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9a" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9b" role="1PaTwD">
+              <property role="3oM_SC" value="get" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9c" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9d" role="1PaTwD">
+              <property role="3oM_SC" value="threshold" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9e" role="1PaTwD">
+              <property role="3oM_SC" value="before" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9f" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9g" role="1PaTwD">
+              <property role="3oM_SC" value="update," />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9h" role="1PaTwD">
+              <property role="3oM_SC" value="otherwise" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9i" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9j" role="1PaTwD">
+              <property role="3oM_SC" value="value" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9k" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9l" role="1PaTwD">
+              <property role="3oM_SC" value="lost" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9m" role="1PaTwD">
+              <property role="3oM_SC" value="due" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9n" role="1PaTwD">
+              <property role="3oM_SC" value="to:" />
+            </node>
+            <node concept="3oM_SD" id="3GrH812qi9p" role="1PaTwD">
+              <property role="3oM_SC" value="http://127.0.0.1:63320/node?ref=r%3Afd2980c8-676c-4b19-b524-18c70e02f8b7%28com.mbeddr.core.base.behavior%29%2F6657644269294788388" />
             </node>
           </node>
         </node>
@@ -415,7 +479,7 @@
         </node>
         <node concept="3cpWs8" id="3GrH80ZcoP4" role="3cqZAp">
           <node concept="3cpWsn" id="3GrH80ZcoP5" role="3cpWs9">
-            <property role="TrG5h" value="coverageRatioNew" />
+            <property role="TrG5h" value="coverageRatio" />
             <node concept="10Oyi0" id="3GrH80ZcoP6" role="1tU5fm" />
             <node concept="2OqwBi" id="3GrH80ZcoP7" role="33vP2m">
               <node concept="2OqwBi" id="3GrH80ZcoP8" role="2Oq$k0">
@@ -442,33 +506,44 @@
             </node>
           </node>
         </node>
-        <node concept="3vwNmj" id="3GrH80ZcoPi" role="3cqZAp">
-          <node concept="2d3UOw" id="3GrH80ZcoPj" role="3vwVQn">
-            <node concept="37vLTw" id="3GrH80ZcoPk" role="3uHU7B">
-              <ref role="3cqZAo" node="3GrH80ZcoOO" resolve="coverageRatioOld" />
+        <node concept="3clFbH" id="3GrH80ZVAoF" role="3cqZAp" />
+        <node concept="3vwNmj" id="3GrH80ZVxwz" role="3cqZAp">
+          <node concept="2d3UOw" id="3GrH80ZVzPm" role="3vwVQn">
+            <node concept="37vLTw" id="3GrH80ZV_M1" role="3uHU7w">
+              <ref role="3cqZAo" node="3GrH80ZV$1B" resolve="caverageThreshold" />
             </node>
-            <node concept="37vLTw" id="3GrH80ZcoPl" role="3uHU7w">
+            <node concept="37vLTw" id="3GrH80ZVxJf" role="3uHU7B">
               <ref role="3cqZAo" node="3GrH80ZcoP5" resolve="coverageRatioNew" />
             </node>
           </node>
-          <node concept="3_1$Yv" id="3GrH80ZcoPm" role="3_9lra">
-            <node concept="Xl_RD" id="3GrH80ZcoPn" role="3_1BAH">
-              <property role="Xl_RC" value="Current Ratio is lower then old one" />
-            </node>
-          </node>
-        </node>
-        <node concept="3vwNmj" id="3GrH80ZcoPo" role="3cqZAp">
-          <node concept="2d3UOw" id="3GrH80ZcoPp" role="3vwVQn">
-            <node concept="37vLTw" id="3GrH80ZcoPq" role="3uHU7B">
-              <ref role="3cqZAo" node="3GrH80ZcoOO" resolve="coverageRatioOld" />
-            </node>
-            <node concept="3cmrfG" id="3GrH80ZcoPr" role="3uHU7w">
-              <property role="3cmrfH" value="60" />
-            </node>
-          </node>
-          <node concept="3_1$Yv" id="3GrH80ZcoPs" role="3_9lra">
-            <node concept="Xl_RD" id="3GrH80ZcoPt" role="3_1BAH">
-              <property role="Xl_RC" value="Ratio needs to be higher then 60" />
+          <node concept="3_1$Yv" id="3GrH810ruW9" role="3_9lra">
+            <node concept="3cpWs3" id="3GrH811hyyh" role="3_1BAH">
+              <node concept="Xl_RD" id="3GrH811hyyD" role="3uHU7w">
+                <property role="Xl_RC" value="%" />
+              </node>
+              <node concept="3cpWs3" id="3GrH811hueI" role="3uHU7B">
+                <node concept="3cpWs3" id="3GrH811hoMl" role="3uHU7B">
+                  <node concept="3cpWs3" id="3GrH811htlx" role="3uHU7B">
+                    <node concept="Xl_RD" id="3GrH811htlT" role="3uHU7w">
+                      <property role="Xl_RC" value="%" />
+                    </node>
+                    <node concept="3cpWs3" id="3GrH811hpEK" role="3uHU7B">
+                      <node concept="Xl_RD" id="3GrH811hoMr" role="3uHU7B">
+                        <property role="Xl_RC" value="Coverage ratio:" />
+                      </node>
+                      <node concept="37vLTw" id="3GrH811hrjG" role="3uHU7w">
+                        <ref role="3cqZAo" node="3GrH80ZcoP5" resolve="coverageRatio" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="3GrH811hueO" role="3uHU7w">
+                    <property role="Xl_RC" value=" lower then minimum threshold" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="3GrH811hvi0" role="3uHU7w">
+                  <ref role="3cqZAo" node="3GrH80ZV$1B" resolve="minThreshold" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
