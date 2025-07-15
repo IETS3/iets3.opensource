@@ -3975,10 +3975,19 @@
         </node>
         <node concept="3clFbF" id="5af9jCuTGIN" role="3cqZAp">
           <node concept="2OqwBi" id="5af9jCuTHfg" role="3clFbG">
-            <node concept="2ShNRf" id="5af9jCuTGIJ" role="2Oq$k0">
-              <node concept="HV5vD" id="5af9jCuTHaF" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+            <node concept="2OqwBi" id="RnCcjkcqZZ" role="2Oq$k0">
+              <node concept="2ShNRf" id="5af9jCuTGIJ" role="2Oq$k0">
+                <node concept="HV5vD" id="5af9jCuTHaF" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="RnCcjkcrj8" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:2nydsCfw1oG" resolve="withCoverAnalyzer" />
+                <node concept="2YIFZM" id="RnCcjkcrj9" role="37wK5m">
+                  <ref role="37wK5l" to="pbu6:7LZDtvhWVCM" resolve="newInstance" />
+                  <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
+                </node>
               </node>
             </node>
             <node concept="liA8E" id="5af9jCuTHpJ" role="2OqNvi">
@@ -4287,16 +4296,25 @@
           <node concept="3clFbS" id="4KZjPKUdF$2" role="3clFbx">
             <node concept="3clFbF" id="5af9jCuTJT3" role="3cqZAp">
               <node concept="2OqwBi" id="5af9jCuTLaw" role="3clFbG">
-                <node concept="2OqwBi" id="5af9jCuTMzC" role="2Oq$k0">
-                  <node concept="2ShNRf" id="5af9jCuTJSZ" role="2Oq$k0">
-                    <node concept="HV5vD" id="5af9jCuTKGX" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                <node concept="2OqwBi" id="RnCcjkoFd9" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5af9jCuTMzC" role="2Oq$k0">
+                    <node concept="liA8E" id="5af9jCuTN0B" role="2OqNvi">
+                      <ref role="37wK5l" to="pbu6:2nydsCfvLxS" resolve="withComputationTrace" />
+                      <node concept="3clFbT" id="5af9jCuTN0E" role="37wK5m" />
+                    </node>
+                    <node concept="2ShNRf" id="5af9jCuTJSZ" role="2Oq$k0">
+                      <node concept="HV5vD" id="5af9jCuTKGX" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                      </node>
                     </node>
                   </node>
-                  <node concept="liA8E" id="5af9jCuTN0B" role="2OqNvi">
-                    <ref role="37wK5l" to="pbu6:2nydsCfvLxS" resolve="withComputationTrace" />
-                    <node concept="3clFbT" id="5af9jCuTN0E" role="37wK5m" />
+                  <node concept="liA8E" id="RnCcjkoGxr" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:2nydsCfw1oG" resolve="withCoverAnalyzer" />
+                    <node concept="2YIFZM" id="RnCcjkoGxs" role="37wK5m">
+                      <ref role="37wK5l" to="pbu6:7LZDtvhWVCM" resolve="newInstance" />
+                      <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
+                    </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="5af9jCuTLD4" role="2OqNvi">
@@ -10522,16 +10540,25 @@
                       <ref role="3cqZAo" node="4945UtSiwdl" resolve="actualVal" />
                     </node>
                     <node concept="2OqwBi" id="5af9jCuTXkX" role="37vLTx">
-                      <node concept="2OqwBi" id="5af9jCuTVYl" role="2Oq$k0">
-                        <node concept="2ShNRf" id="5af9jCuTUiF" role="2Oq$k0">
-                          <node concept="HV5vD" id="5af9jCuTVkD" role="2ShVmc">
-                            <property role="373rjd" value="true" />
-                            <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                      <node concept="2OqwBi" id="RnCcjkcAEU" role="2Oq$k0">
+                        <node concept="2OqwBi" id="5af9jCuTVYl" role="2Oq$k0">
+                          <node concept="2ShNRf" id="5af9jCuTUiF" role="2Oq$k0">
+                            <node concept="HV5vD" id="5af9jCuTVkD" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="5af9jCuTWEk" role="2OqNvi">
+                            <ref role="37wK5l" to="pbu6:2nydsCfvLxS" resolve="withComputationTrace" />
+                            <node concept="3clFbT" id="5af9jCuTWEn" role="37wK5m" />
                           </node>
                         </node>
-                        <node concept="liA8E" id="5af9jCuTWEk" role="2OqNvi">
-                          <ref role="37wK5l" to="pbu6:2nydsCfvLxS" resolve="withComputationTrace" />
-                          <node concept="3clFbT" id="5af9jCuTWEn" role="37wK5m" />
+                        <node concept="liA8E" id="RnCcjkcFdI" role="2OqNvi">
+                          <ref role="37wK5l" to="pbu6:2nydsCfw1oG" resolve="withCoverAnalyzer" />
+                          <node concept="2YIFZM" id="RnCcjkcMM0" role="37wK5m">
+                            <ref role="37wK5l" to="pbu6:7LZDtvhWVCM" resolve="newInstance" />
+                            <ref role="1Pybhc" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
+                          </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="5af9jCuTY0S" role="2OqNvi">
