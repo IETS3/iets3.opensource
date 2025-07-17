@@ -5143,21 +5143,65 @@
       <node concept="3uibUv" id="2f_Mi5n7QvR" role="1tU5fm">
         <ref role="3uigEE" node="2f_Mi5n7Neo" resolve="SolverChecker" />
       </node>
+      <node concept="2ShNRf" id="4R78VpRSw3P" role="33vP2m">
+        <node concept="HV5vD" id="4R78VpRTkc_" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="HV5vE" node="2f_Mi5n7Neo" resolve="SolverChecker" />
+        </node>
+      </node>
     </node>
     <node concept="2uRRBT" id="2f_Mi5n7Ldo" role="2uRRB$">
       <node concept="3clFbS" id="2f_Mi5n7Ldp" role="2VODD2">
-        <node concept="3clFbF" id="2f_Mi5n7QNu" role="3cqZAp">
-          <node concept="37vLTI" id="2f_Mi5n7Rqk" role="3clFbG">
-            <node concept="2ShNRf" id="2f_Mi5n7RqO" role="37vLTx">
-              <node concept="HV5vD" id="2f_Mi5n7RW1" role="2ShVmc">
-                <ref role="HV5vE" node="2f_Mi5n7Neo" resolve="SolverChecker" />
-              </node>
+        <node concept="3SKdUt" id="2F3xlwaS1ih" role="3cqZAp">
+          <node concept="1PaTwC" id="2F3xlwaS1ii" role="1aUNEU">
+            <node concept="3oM_SD" id="2F3xlwaS1ij" role="1PaTwD">
+              <property role="3oM_SC" value="Keep" />
             </node>
-            <node concept="2OqwBi" id="2f_Mi5n7QXY" role="37vLTJ">
-              <node concept="2WthIp" id="2f_Mi5n7QNs" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="2f_Mi5n7R9u" role="2OqNvi">
-                <ref role="2WH_rO" node="2f_Mi5n7Q1c" resolve="checker" />
-              </node>
+            <node concept="3oM_SD" id="2F3xlwaS1wk" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1wF" role="1PaTwD">
+              <property role="3oM_SC" value="code" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1x5" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1xt" role="1PaTwD">
+              <property role="3oM_SC" value="order" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1xS" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1yg" role="1PaTwD">
+              <property role="3oM_SC" value="enable" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1yG" role="1PaTwD">
+              <property role="3oM_SC" value="error" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1z7" role="1PaTwD">
+              <property role="3oM_SC" value="highlightning" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1$i" role="1PaTwD">
+              <property role="3oM_SC" value="stemming" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1_4" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2F3xlwaS1Kg" role="3cqZAp">
+          <node concept="1PaTwC" id="2F3xlwaS1Kh" role="1aUNEU">
+            <node concept="3oM_SD" id="2F3xlwaS1MW" role="1PaTwD">
+              <property role="3oM_SC" value="errors" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1Nq" role="1PaTwD">
+              <property role="3oM_SC" value="detected" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1OP" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="2F3xlwaS1Pd" role="1PaTwD">
+              <property role="3oM_SC" value="'ISolvable'" />
             </node>
           </node>
         </node>
@@ -5244,6 +5288,7 @@
   <node concept="312cEu" id="2f_Mi5n7Neo">
     <property role="TrG5h" value="SolverChecker" />
     <property role="3GE5qa" value="AsyncISolvable" />
+    <node concept="2tJIrI" id="50SLpTeALIK" role="jymVt" />
     <node concept="312cEg" id="5lWcBwKPvxe" role="jymVt">
       <property role="TrG5h" value="changeCounts" />
       <node concept="3Tm6S6" id="5lWcBwKPvxf" role="1B3o_S" />
@@ -5268,13 +5313,14 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3K_gMq6RgTa" role="jymVt" />
-    <node concept="2tJIrI" id="3K_gMq6RgVp" role="jymVt" />
+    <node concept="2tJIrI" id="50SLpTeARat" role="jymVt" />
     <node concept="3Tm1VV" id="2f_Mi5n7Nep" role="1B3o_S" />
     <node concept="3uibUv" id="2f_Mi5n7NWO" role="1zkMxy">
       <ref role="3uigEE" to="n70j:~BaseEditorChecker" resolve="BaseEditorChecker" />
     </node>
     <node concept="3clFb_" id="2f_Mi5n7O6a" role="jymVt">
       <property role="TrG5h" value="needsUpdate" />
+      <property role="od$2w" value="true" />
       <node concept="3Tm1VV" id="2f_Mi5n7O6b" role="1B3o_S" />
       <node concept="10P_77" id="2f_Mi5n7O6d" role="3clF45" />
       <node concept="37vLTG" id="2f_Mi5n7O6e" role="3clF46">
