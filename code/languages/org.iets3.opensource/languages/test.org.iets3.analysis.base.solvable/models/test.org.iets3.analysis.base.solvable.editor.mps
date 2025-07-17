@@ -27,8 +27,14 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="1fRru3DubJi">
+    <property role="3GE5qa" value="test.highlighter" />
     <ref role="1XX52x" to="6w03:1fRru3DubfE" resolve="UITestSolvable" />
     <node concept="3EZMnI" id="1fRru3DubJm" role="2wV5jI">
       <node concept="2iRfu4" id="1fRru3DubJn" role="2iSdaV" />

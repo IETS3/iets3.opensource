@@ -181,6 +181,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -189,6 +190,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="7wEqFvbO4F7">
+    <property role="3GE5qa" value="test.solvertaskfactory" />
     <ref role="13h7C2" to="6w03:7wEqFvbO3UV" resolve="DummySolverTask" />
     <node concept="13hLZK" id="7wEqFvbO4F8" role="13h7CW">
       <node concept="3clFbS" id="7wEqFvbO4F9" role="2VODD2" />
@@ -323,6 +325,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7wEqFvbOzp$">
+    <property role="3GE5qa" value="test.solvertaskfactory" />
     <ref role="13h7C2" to="6w03:7wEqFvbOyMV" resolve="DummyISolvable" />
     <node concept="13hLZK" id="7wEqFvbOzp_" role="13h7CW">
       <node concept="3clFbS" id="7wEqFvbOzpA" role="2VODD2" />
@@ -432,6 +435,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7Vgw$ZVF8xz">
+    <property role="3GE5qa" value="test.solvertaskfactory" />
     <ref role="13h7C2" to="6w03:7Vgw$ZVEZE6" resolve="Unrelated" />
     <node concept="13hLZK" id="7Vgw$ZVF8x$" role="13h7CW">
       <node concept="3clFbS" id="7Vgw$ZVF8x_" role="2VODD2" />
@@ -463,6 +467,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1fRru3Du4P9">
+    <property role="3GE5qa" value="test.highlighter" />
     <ref role="13h7C2" to="6w03:1fRru3Du4P8" resolve="UITestSolverTask" />
     <node concept="13hLZK" id="1fRru3Du4Pa" role="13h7CW">
       <node concept="3clFbS" id="1fRru3Du4Pb" role="2VODD2" />
@@ -535,6 +540,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1fRru3DubfG">
+    <property role="3GE5qa" value="test.highlighter" />
     <ref role="13h7C2" to="6w03:1fRru3DubfE" resolve="UITestSolvable" />
     <node concept="13hLZK" id="1fRru3DubfH" role="13h7CW">
       <node concept="3clFbS" id="1fRru3DubfI" role="2VODD2" />

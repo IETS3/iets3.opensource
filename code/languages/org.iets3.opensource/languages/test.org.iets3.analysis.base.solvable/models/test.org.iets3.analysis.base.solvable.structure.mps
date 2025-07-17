@@ -35,6 +35,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -43,6 +46,7 @@
   <node concept="1TIwiD" id="7wEqFvbO3UV">
     <property role="EcuMT" value="8658850571204181691" />
     <property role="TrG5h" value="DummySolverTask" />
+    <property role="3GE5qa" value="test.solvertaskfactory" />
     <ref role="1TJDcQ" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
     <node concept="1TJgyi" id="7wEqFvbO5ba" role="1TKVEl">
       <property role="IQ2nx" value="8658850571204186826" />
@@ -53,6 +57,7 @@
   <node concept="1TIwiD" id="7wEqFvbOyMV">
     <property role="EcuMT" value="8658850571204308155" />
     <property role="TrG5h" value="DummyISolvable" />
+    <property role="3GE5qa" value="test.solvertaskfactory" />
     <ref role="1TJDcQ" node="2qZCmtwh4Va" resolve="H4Dummy" />
     <node concept="1TJgyi" id="7wEqFvbOzBi" role="1TKVEl">
       <property role="IQ2nx" value="8658850571204311506" />
@@ -66,26 +71,31 @@
   <node concept="1TIwiD" id="2qZCmtwh4V7">
     <property role="EcuMT" value="2792127759361789639" />
     <property role="TrG5h" value="H1Dummy" />
+    <property role="3GE5qa" value="test.solvertaskfactory" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2qZCmtwh4V8">
     <property role="EcuMT" value="2792127759361789640" />
     <property role="TrG5h" value="H2Dummy" />
+    <property role="3GE5qa" value="test.solvertaskfactory" />
     <ref role="1TJDcQ" node="2qZCmtwh4V7" resolve="H1Dummy" />
   </node>
   <node concept="1TIwiD" id="2qZCmtwh4V9">
     <property role="EcuMT" value="2792127759361789641" />
     <property role="TrG5h" value="H3Dummy" />
+    <property role="3GE5qa" value="test.solvertaskfactory" />
     <ref role="1TJDcQ" node="2qZCmtwh4V8" resolve="H2Dummy" />
   </node>
   <node concept="1TIwiD" id="2qZCmtwh4Va">
     <property role="EcuMT" value="2792127759361789642" />
     <property role="TrG5h" value="H4Dummy" />
+    <property role="3GE5qa" value="test.solvertaskfactory" />
     <ref role="1TJDcQ" node="2qZCmtwh4V9" resolve="H3Dummy" />
   </node>
   <node concept="1TIwiD" id="7Vgw$ZVEZE6">
     <property role="EcuMT" value="9137946923971115654" />
     <property role="TrG5h" value="Unrelated" />
+    <property role="3GE5qa" value="test.solvertaskfactory" />
     <node concept="PrWs8" id="7Vgw$ZVF8xy" role="PzmwI">
       <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     </node>
@@ -93,6 +103,7 @@
   <node concept="1TIwiD" id="1fRru3Du4P8">
     <property role="EcuMT" value="1438739418725240136" />
     <property role="TrG5h" value="UITestSolverTask" />
+    <property role="3GE5qa" value="test.highlighter" />
     <ref role="1TJDcQ" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
     <node concept="1TJgyj" id="32V3Yf$VOIg" role="1TKVEi">
       <property role="IQ2ns" value="3511417805938314128" />
@@ -105,6 +116,7 @@
     <property role="EcuMT" value="1438739418725266410" />
     <property role="TrG5h" value="UITestSolvable" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="test.highlighter" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1fRru3DubfF" role="PzmwI">
       <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
