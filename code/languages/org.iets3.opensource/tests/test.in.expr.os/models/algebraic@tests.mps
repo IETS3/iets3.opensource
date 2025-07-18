@@ -11,7 +11,16 @@
     <devkit ref="ce1cf8e2-ad23-4a29-b20d-ca13a97e194f(org.iets3.core.expr.advanced.devkit)" />
     <devkit ref="b2a65b84-7ec9-404f-8602-f16394bb1d98(org.iets3.core.expr.stateful.devkit)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
+    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
+    <import index="v0r8" ref="r:8ef260d4-7762-457a-8d33-23916aa626ab(org.iets3.core.expr.adt.structure)" implicit="true" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
@@ -141,7 +150,33 @@
       <concept id="8255774724000586868" name="org.iets3.core.expr.tests.structure.ReportTestItem" flags="ng" index="2F9BGE">
         <child id="543569365052056267" name="actual" index="_fkuZ" />
       </concept>
+      <concept id="4137027550727647612" name="org.iets3.core.expr.tests.structure.LanguageRef" flags="ng" index="1aipRv">
+        <child id="4137027550727647984" name="lang" index="1aipTj" />
+      </concept>
+      <concept id="4137027550728847170" name="org.iets3.core.expr.tests.structure.IgnoredConcept" flags="ng" index="1amXfx">
+        <reference id="4137027550728847334" name="concept" index="1amXd5" />
+      </concept>
+      <concept id="4137027550720478450" name="org.iets3.core.expr.tests.structure.InterpreterCoverageAssQuery" flags="ng" index="1bQQ1h" />
+      <concept id="4137027550720482705" name="org.iets3.core.expr.tests.structure.InterpreterCoverageAssResult" flags="ng" index="1bQR4M">
+        <property id="4137027550720484225" name="comment" index="1bQOWy" />
+        <reference id="4137027550720483094" name="concept" index="1bQReP" />
+      </concept>
       <concept id="5285810042889815162" name="org.iets3.core.expr.tests.structure.EmptyTestItem" flags="ng" index="3dYjL0" />
+      <concept id="5716711712470882681" name="org.iets3.core.expr.tests.structure.AbstractCoverageQuery" flags="ng" index="3msoTU">
+        <child id="4137027550727662489" name="languages" index="1aissU" />
+        <child id="4137027550729731592" name="scope" index="1al_aF" />
+        <child id="4137027550728939664" name="ignoredConcepts" index="1am$gN" />
+      </concept>
+      <concept id="1307222191605829984" name="org.iets3.core.expr.tests.structure.InterpreterCoverageAssSummary" flags="ng" index="1n27V8">
+        <property id="1307222191605830133" name="coverageRatio" index="1n27Tt" />
+      </concept>
+      <concept id="993724751390561556" name="org.iets3.core.expr.tests.structure.InterpreterValueStat" flags="ng" index="1QVVTL">
+        <property id="993724751390561557" name="label" index="1QVVTK" />
+        <property id="993724751390561559" name="value" index="1QVVTM" />
+      </concept>
+      <concept id="993724751390561555" name="org.iets3.core.expr.tests.structure.InterpreterValueSummary" flags="ng" index="1QVVTQ">
+        <child id="993724751390561646" name="valueStats" index="1QVVSb" />
+      </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7971844778467001950" name="org.iets3.core.expr.simpleTypes.structure.OtherwiseLiteral" flags="ng" index="2fHqz8" />
@@ -258,8 +293,31 @@
       <concept id="5955298286248677251" name="org.iets3.core.expr.adt.structure.GenericAlgebraicType" flags="ng" index="1LZjuY" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8490595898229124557" name="com.mbeddr.core.base.structure.CurrentModelScope" flags="ng" index="28wkCQ" />
+      <concept id="671216505796623802" name="com.mbeddr.core.base.structure.DefaultAssessmentSummary" flags="ng" index="qc_Tx">
+        <property id="671216505796623807" name="newlyAdded" index="qc_T$" />
+        <property id="671216505796623806" name="ok" index="qc_T_" />
+        <property id="671216505796623805" name="totalCount" index="qc_TA" />
+      </concept>
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="865293814733114043" name="com.mbeddr.core.base.structure.AssessmentContainer" flags="ng" index="3pwaUo">
+        <child id="865293814733114045" name="assessments" index="3pwaUu" />
+      </concept>
+      <concept id="865293814733114044" name="com.mbeddr.core.base.structure.Assessment" flags="ng" index="3pwaUv">
+        <property id="4423545983997787056" name="lastUpdatedBy" index="2iEaKi" />
+        <property id="4423545983997782838" name="lastUpdatedOn" index="2iEbMk" />
+        <property id="8691429746170824734" name="sorted" index="1Ema5g" />
+        <child id="671216505796427450" name="summaries" index="q3PPx" />
+        <child id="865293814733115677" name="query" index="3pwbkY" />
+        <child id="865293814733118687" name="results" index="3pwbzW" />
+      </concept>
+      <concept id="865293814733118686" name="com.mbeddr.core.base.structure.AssessmentResultEntry" flags="ng" index="3pwbzX">
+        <property id="6619757161337247129" name="lastFound" index="3J1cY9" />
+        <property id="2711621784018180488" name="isNew" index="1OfcgH" />
+        <child id="865293814733133843" name="result" index="3pwfKK" />
+        <child id="6619757161337461931" name="comment" index="3J00qV" />
       </concept>
       <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
         <child id="4052432714772608243" name="text" index="1w35rA" />
@@ -269,6 +327,12 @@
       <concept id="4255172619715417408" name="org.iets3.core.expr.mutable.structure.UpdateItExpression" flags="ng" index="3j5BQN" />
       <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.BoxUpdateTarget" flags="ng" index="3sPC8h" />
       <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H" />
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -5148,6 +5212,572 @@
   </node>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
     <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
+  </node>
+  <node concept="3pwaUo" id="3MHhZL0CVjV">
+    <property role="TrG5h" value="InterpreterCoverageForAlgebraic" />
+    <node concept="3pwaUv" id="3MHhZL0CVjW" role="3pwaUu">
+      <property role="TrG5h" value="InterpreterCoverage" />
+      <property role="1Ema5g" value="true" />
+      <property role="2iEbMk" value="1752568114065" />
+      <property role="2iEaKi" value="arimer" />
+      <node concept="1bQQ1h" id="3MHhZL0CVv9" role="3pwbkY">
+        <node concept="1amXfx" id="RnCcjkviXq" role="1am$gN">
+          <ref role="1amXd5" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+        <node concept="28wkCQ" id="3MHhZL0CVva" role="1al_aF" />
+        <node concept="1aipRv" id="6bUn_ThMGB0" role="1aissU">
+          <node concept="2V$Bhx" id="6bUn_ThNpQF" role="1aipTj">
+            <property role="2V$B1T" value="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" />
+            <property role="2V$B1Q" value="org.iets3.core.expr.adt" />
+          </node>
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_I" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_J" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_K" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_L" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9$2" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:28$LOSAJ7nc" resolve="ReplaceWith" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$U" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$V" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$W" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$X" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zP" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:28$LOSALaA2" resolve="Copy" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_M" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_N" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_O" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_P" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9$3" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:28$LOSAMCgX" resolve="Size" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_y" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_z" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_$" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9__" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zZ" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:28$LOSBq9bH" resolve="Parent" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$E" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$F" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$G" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$H" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zL" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:28$LOSBqa1k" resolve="Ancestor" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_2" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_3" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_4" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_5" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zR" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:7aipPVpFzdB" resolve="LocDotTarget" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_Q" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_R" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_S" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_T" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9$4" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:7aipPVpLOAL" resolve="SrcDotTarget" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_A" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_B" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_C" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_D" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9$0" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:28$LOSAcnmu" resolve="QuoteExpression" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_E" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_F" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_G" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_H" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9$1" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:28$LOSAcnob" resolve="QuotedTermType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9A6" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9A7" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9A8" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9A9" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9$8" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:28$LOSAeeCX" resolve="UnquoteExpression" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9A2" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9A3" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9A4" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9A5" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9$7" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3Ozlh9S" resolve="TraverseExpr" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_Y" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_Z" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9A0" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9A1" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9$6" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:5a_u3Ozlhai" resolve="TraversalTopDown" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_U" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_V" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_W" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_X" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9$5" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:5a_u3Ozlhaw" resolve="TraversalBottomUp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$i" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$j" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$k" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$l" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zF" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_e" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_f" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_g" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_h" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zU" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:28$LOSBF$h3" resolve="Multi" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$q" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$r" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$s" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$t" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zH" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:5a_u3OyMtco" resolve="AlgebraicDeclaration" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$e" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$f" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$g" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$h" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zE" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:5a_u3OyMttW" resolve="AlgebraicConstructor" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$y" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$z" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$$" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$_" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zJ" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3OyMvaf" resolve="AlgebraicType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$m" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$n" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$o" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$p" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zG" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$u" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$v" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$w" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$x" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zI" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$a" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$b" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$c" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$d" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zD" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_a" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_b" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_c" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_d" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zT" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3OySk7g" resolve="MatchExpr" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_6" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_7" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_8" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_9" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zS" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3OySk8l" resolve="MatchCase" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9Aa" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9Ab" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9Ac" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9Ad" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9$9" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:5a_u3OySBZU" resolve="WildcardExpr" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$Q" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$R" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$S" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$T" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zO" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3OyTCgG" resolve="CaseItExpr" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_i" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_j" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_k" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_l" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zV" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:5a_u3OyUzm8" resolve="NameAnnotation" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_m" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_n" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_o" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_p" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zW" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3OyVzbv" resolve="NameAnnotationRefExpr" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_q" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_r" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_s" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_t" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zX" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:5a_u3OyYLey" resolve="NameExpr" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9_u" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114028" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9_v" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_w" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_x" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zY" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3Oz3q2f" resolve="NameExprRefExpr" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$M" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$N" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$O" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$P" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zN" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3Oz5b39" resolve="CaseCondition" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$Y" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$Z" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9_0" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9_1" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zQ" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$I" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$J" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$K" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$L" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zM" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="v0r8:5a_u3OzRz1z" resolve="AnyType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="RnCcjku9$A" role="3pwbzW">
+        <property role="3J1cY9" value="1752568114027" />
+        <property role="1OfcgH" value="true" />
+        <node concept="OjmMv" id="RnCcjku9$B" role="3J00qV">
+          <node concept="19SGf9" id="RnCcjku9$C" role="OjmMu">
+            <node concept="19SUe$" id="RnCcjku9$D" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+        <node concept="1bQR4M" id="RnCcjku9zK" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="v0r8:5a_u3OzYsEy" resolve="AllComponentsExpr" />
+        </node>
+      </node>
+      <node concept="qc_Tx" id="RnCcjkuk2j" role="q3PPx">
+        <property role="qc_TA" value="33" />
+        <property role="qc_T$" value="33" />
+        <property role="qc_T_" value="0" />
+      </node>
+      <node concept="1QVVTQ" id="RnCcjkuk2k" role="q3PPx">
+        <node concept="1QVVTL" id="RnCcjkuk2l" role="1QVVSb">
+          <property role="1QVVTK" value="decimal.max" />
+          <property role="1QVVTM" value="&lt;no value&gt;" />
+        </node>
+        <node concept="1QVVTL" id="RnCcjkuk2m" role="1QVVSb">
+          <property role="1QVVTK" value="decimal.min" />
+          <property role="1QVVTM" value="&lt;no value&gt;" />
+        </node>
+        <node concept="1QVVTL" id="RnCcjkuk2n" role="1QVVSb">
+          <property role="1QVVTK" value="decimal.zero" />
+          <property role="1QVVTM" value="&lt;no value&gt;" />
+        </node>
+        <node concept="1QVVTL" id="RnCcjkuk2o" role="1QVVSb">
+          <property role="1QVVTK" value="integer.zero" />
+          <property role="1QVVTM" value="true" />
+        </node>
+        <node concept="1QVVTL" id="RnCcjkuk2p" role="1QVVSb">
+          <property role="1QVVTK" value="integer.max" />
+          <property role="1QVVTM" value="99" />
+        </node>
+        <node concept="1QVVTL" id="RnCcjkuk2q" role="1QVVSb">
+          <property role="1QVVTK" value="decimal.minusOne" />
+          <property role="1QVVTM" value="&lt;no value&gt;" />
+        </node>
+        <node concept="1QVVTL" id="RnCcjkuk2r" role="1QVVSb">
+          <property role="1QVVTK" value="integer.one" />
+          <property role="1QVVTM" value="true" />
+        </node>
+        <node concept="1QVVTL" id="RnCcjkuk2s" role="1QVVSb">
+          <property role="1QVVTK" value="integer.minusOne" />
+          <property role="1QVVTM" value="true" />
+        </node>
+        <node concept="1QVVTL" id="RnCcjkuk2t" role="1QVVSb">
+          <property role="1QVVTK" value="decimal.one" />
+          <property role="1QVVTM" value="&lt;no value&gt;" />
+        </node>
+        <node concept="1QVVTL" id="RnCcjkuk2u" role="1QVVSb">
+          <property role="1QVVTK" value="integer.min" />
+          <property role="1QVVTM" value="0" />
+        </node>
+      </node>
+      <node concept="1n27V8" id="RnCcjkuk2i" role="q3PPx">
+        <property role="1n27Tt" value="61" />
+      </node>
+    </node>
   </node>
 </model>
 
