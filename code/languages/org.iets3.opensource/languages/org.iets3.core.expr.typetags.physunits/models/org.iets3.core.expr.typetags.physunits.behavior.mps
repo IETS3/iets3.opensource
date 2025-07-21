@@ -9806,18 +9806,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="5zjZVctioiE" role="3cqZAp">
-          <node concept="3cpWsn" id="5zjZVctioiF" role="3cpWs9">
-            <property role="TrG5h" value="classLoaderManager" />
-            <node concept="3uibUv" id="5zjZVctiaXu" role="1tU5fm">
-              <ref role="3uigEE" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
-            </node>
-            <node concept="2YIFZM" id="5zjZVctioiG" role="33vP2m">
-              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance()" resolve="getInstance" />
-              <ref role="1Pybhc" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="4P6r3pewrDc" role="3cqZAp">
           <node concept="3cpWsn" id="4P6r3pewrDd" role="3cpWs9">
             <property role="TrG5h" value="typeChecking" />
@@ -9827,7 +9815,7 @@
             <node concept="2ShNRf" id="4P6r3pewrDf" role="33vP2m">
               <node concept="1pGfFk" id="4P6r3pewrDg" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
+                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.smodel.language.LanguageRegistry)" resolve="IncrementalTypecheckingContext" />
                 <node concept="37vLTw" id="2UCp54UXT_L" role="37wK5m">
                   <ref role="3cqZAo" node="2UCp54UXT_H" resolve="expression" />
                 </node>
@@ -9837,9 +9825,7 @@
                     <ref role="37wK5l" to="u78q:~TypeChecker.getTypeCheckerHelper()" resolve="getTypeCheckerHelper" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="5zjZVctioiH" role="37wK5m">
-                  <ref role="3cqZAo" node="5zjZVctioiF" resolve="classLoaderManager" />
-                </node>
+                <node concept="10Nm6u" id="7ah6lNIVIzX" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -11023,18 +11009,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="5zjZVcthJ9j" role="3cqZAp">
-              <node concept="3cpWsn" id="5zjZVcthJ9k" role="3cpWs9">
-                <property role="TrG5h" value="classLoaderManager" />
-                <node concept="3uibUv" id="5zjZVcthFgf" role="1tU5fm">
-                  <ref role="3uigEE" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
-                </node>
-                <node concept="2YIFZM" id="5zjZVcthJ9l" role="33vP2m">
-                  <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance()" resolve="getInstance" />
-                  <ref role="1Pybhc" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="5pqsPq42MOm" role="3cqZAp">
               <node concept="3cpWsn" id="5pqsPq42MOn" role="3cpWs9">
                 <property role="TrG5h" value="typeChecking" />
@@ -11044,7 +11018,7 @@
                 <node concept="2ShNRf" id="5pqsPq42Nt4" role="33vP2m">
                   <node concept="1pGfFk" id="5pqsPq4jsma" role="2ShVmc">
                     <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
+                    <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.smodel.language.LanguageRegistry)" resolve="IncrementalTypecheckingContext" />
                     <node concept="37vLTw" id="2UCp54UW3FA" role="37wK5m">
                       <ref role="3cqZAo" node="2UCp54UW3Fy" resolve="expression" />
                     </node>
@@ -11054,9 +11028,7 @@
                         <ref role="37wK5l" to="u78q:~TypeChecker.getTypeCheckerHelper()" resolve="getTypeCheckerHelper" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="5zjZVcthJ9m" role="37wK5m">
-                      <ref role="3cqZAo" node="5zjZVcthJ9k" resolve="classLoaderManager" />
-                    </node>
+                    <node concept="10Nm6u" id="7ah6lNIVk5p" role="37wK5m" />
                   </node>
                 </node>
               </node>
