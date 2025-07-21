@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+
+## July 2025
+
+### Fixed
+
+- Expressions of ShortLambdas are now correctly updated and used for interpretation after they are changed
+
 ## June 2025
 
 ### Added
@@ -24,6 +31,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
   An [enhancement script](http://127.0.0.1:63320/node?ref=r%3A531014dc-62ca-45fa-b1c2-cf992369440b%28org.iets3.core.expr.typetags.physunits.scripts%29%2F6252521573649140294)
   is provided to replace 'mu' with 'micro sign'.
+
 
 ## May 2025
 
