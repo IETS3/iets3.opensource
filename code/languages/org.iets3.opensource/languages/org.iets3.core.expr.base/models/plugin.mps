@@ -1397,6 +1397,19 @@
       <node concept="3Tm1VV" id="1DSLxNDLbg7" role="1B3o_S" />
       <node concept="10P_77" id="1DSLxNDLe7n" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="2Jw_KdeTWNN" role="jymVt" />
+    <node concept="3clFb_" id="2Jw_KdeUfi2" role="jymVt">
+      <property role="TrG5h" value="useStringConstraints" />
+      <node concept="3clFbS" id="2Jw_KdeUfi5" role="3clF47">
+        <node concept="3clFbF" id="2Jw_KdeUg5M" role="3cqZAp">
+          <node concept="3clFbT" id="2Jw_Kdf7Hq2" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2Jw_KdeUc0n" role="1B3o_S" />
+      <node concept="10P_77" id="2Jw_KdeUfgb" role="3clF45" />
+    </node>
   </node>
   <node concept="vrV6u" id="WieAE6FJqt">
     <property role="TrG5h" value="primitiveTypeMapper" />

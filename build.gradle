@@ -41,7 +41,7 @@ repositories {
 
 apply plugin: 'download-jbr'
 
-// configure jbr download
+// configure jbr download version
 downloadJbr {
     jbrVersion = '17.0.8.1-b1000.32'
 }
@@ -61,7 +61,7 @@ def minor = "2"
 
 // Dependency versions
 
-ext.mpsVersion = '2023.2.2'
+ext.mpsVersion = '2023.2.3'
 
 def mbeddrVersion = "$major.$minor+"
 def mpsQAVersion = "$major.$minor+"
