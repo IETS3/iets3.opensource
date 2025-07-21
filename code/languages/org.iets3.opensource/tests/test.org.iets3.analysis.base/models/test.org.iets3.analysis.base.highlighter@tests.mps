@@ -302,7 +302,7 @@
             <node concept="3cpWsn" id="7Jl8lPgRqi8" role="3cpWs9">
               <property role="TrG5h" value="updateResult" />
               <node concept="3uibUv" id="7Jl8lPgRqhB" role="1tU5fm">
-                <ref role="3uigEE" to="n70j:~UpdateResult$Completed" resolve="Completed" />
+                <ref role="3uigEE" to="n70j:~UpdateResult$Completed" resolve="UpdateResult.Completed" />
               </node>
               <node concept="10QFUN" id="7Jl8lPgRsXU" role="33vP2m">
                 <node concept="3uibUv" id="7Jl8lPgRt1G" role="10QFUM">
