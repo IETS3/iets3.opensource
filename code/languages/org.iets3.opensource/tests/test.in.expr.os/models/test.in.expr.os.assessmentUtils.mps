@@ -419,7 +419,7 @@
             <node concept="10Oyi0" id="3GrH80ZV$1C" role="1tU5fm" />
             <node concept="2OqwBi" id="3GrH80ZV$1D" role="33vP2m">
               <node concept="37vLTw" id="m6kRveNlwI" role="2Oq$k0">
-                <ref role="3cqZAo" node="m6kRveNlw_" resolve="node" />
+                <ref role="3cqZAo" node="m6kRveNlw_" resolve="summary" />
               </node>
               <node concept="3TrcHB" id="3GrH80ZV$1M" role="2OqNvi">
                 <ref role="3TsBF5" to="av4b:3GrH80ZVmzh" resolve="coverageThreshold" />
@@ -498,7 +498,7 @@
             <node concept="10Oyi0" id="3GrH80ZcoP6" role="1tU5fm" />
             <node concept="2OqwBi" id="3GrH80ZcoP7" role="33vP2m">
               <node concept="37vLTw" id="m6kRveNlwJ" role="2Oq$k0">
-                <ref role="3cqZAo" node="m6kRveNlw_" resolve="node" />
+                <ref role="3cqZAo" node="m6kRveNlw_" resolve="summary" />
               </node>
               <node concept="3TrcHB" id="3GrH80ZcoPg" role="2OqNvi">
                 <ref role="3TsBF5" to="av4b:18$bUx5b57P" resolve="coverageRatio" />
@@ -510,7 +510,7 @@
         <node concept="3vwNmj" id="3GrH80ZVxwz" role="3cqZAp">
           <node concept="2d3UOw" id="3GrH80ZVzPm" role="3vwVQn">
             <node concept="37vLTw" id="3GrH80ZV_M1" role="3uHU7w">
-              <ref role="3cqZAo" node="3GrH80ZV$1B" resolve="minThreshold" />
+              <ref role="3cqZAo" node="3GrH80ZV$1B" resolve="minThresholdOld" />
             </node>
             <node concept="37vLTw" id="3GrH80ZVxJf" role="3uHU7B">
               <ref role="3cqZAo" node="3GrH80ZcoP5" resolve="coverageRatio" />
@@ -546,7 +546,7 @@
                       </node>
                     </node>
                     <node concept="37vLTw" id="3GrH811hvi0" role="3uHU7w">
-                      <ref role="3cqZAo" node="3GrH80ZV$1B" resolve="minThreshold" />
+                      <ref role="3cqZAo" node="3GrH80ZV$1B" resolve="minThresholdOld" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="3GrH811hyyD" role="3uHU7w">
