@@ -19,13 +19,16 @@
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.repl.devkit/org.iets3.core.expr.repl.devkit.devkit" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.stateful.devkit/org.iets3.core.expr.stateful.devkit.devkit" folder="expr.lang-stateful" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.req/org.iets3.req.devkit" folder="req" />
+      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.variability.base.devkit/org.iets3.variability.base.devkit.devkit" folder="variability" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.base/org.iets3.analysis.base.mpl" folder="analysis" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.logic.operator/org.iets3.analysis.logic.operator.mpl" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.core/org.iets3.components.core.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.functional/org.iets3.components.functional.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.hardware/org.iets3.components.hardware.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.plugin/org.iets3.components.plugin.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.req/org.iets3.components.req.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.toplevel.adapter/org.iets3.components.toplevel.adapter.mpl" folder="comp" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.contextfilter/org.iets3.contextfilter.mpl" folder="contextfilter" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.assessment/org.iets3.core.assessment.mpl" folder="assessmt" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core" />
@@ -86,15 +89,23 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.safety.attributes/org.iets3.safety.attributes.mpl" folder="safety" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.artifacts.base/org.iets3.variability.artifacts.base.mpl" folder="variability" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.artifacts.base/org.iets3.variability.artifacts.base.mpl" folder="variability.artifacts" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.artifacts.baseline/org.iets3.variability.artifacts.baseline.mpl" folder="variability.artifacts" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.artifacts.typesystem/org.iets3.variability.artifacts.typesystem.mpl" folder="variability.artifacts" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.artifacts.vanguard/org.iets3.variability.artifacts.vanguard.mpl" folder="variability.artifacts" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.base/org.iets3.variability.base.mpl" folder="variability.modeling" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.configuration.base/org.iets3.variability.configuration.base.mpl" folder="variability.modeling" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.variability.featuremodel.base/org.iets3.variability.featuremodel.base.mpl" folder="variability.modeling" />
       <modulePath path="$PROJECT_DIR$/languages/test.iest3.component.attribute/test.iest3.component.attribute.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/test.org.iets3.analysis.base.solvable/test.org.iets3.analysis.base.solvable.mpl" folder="analysis.tests" />
       <modulePath path="$PROJECT_DIR$/languages/test.org.iets3.core.trace/test.org.iets3.core.trace.mpl" folder="trace" />
       <modulePath path="$PROJECT_DIR$/languages/test.ts.expr.os.nix/test.ts.expr.os.nix.mpl" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/languages/test.ts.expr.os.validNameConcept/test.ts.expr.os.validNameConcept.mpl" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/solutions/InterpreterTestExecutor/InterpreterTestExecutor.msd" folder="_build" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.util/org.iets3.analysis.solversupport.util.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.interpreter/org.iets3.components.core.interpreter.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.sandbox/org.iets3.components.core.sandbox.msd" folder="comp" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.contextfilter.plugin/org.iets3.contextfilter.plugin.msd" folder="contextfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.adt.interpreter/org.iets3.core.expr.adt.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.base.collections.stubs/org.iets3.core.expr.base.collections.stubs.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.base.interpreter/org.iets3.core.expr.base.interpreter.msd" folder="expr.lang-core" />
@@ -152,6 +163,9 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.interpreterExecutor/org.iets3.opensource.interpreterExecutor.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.linters/org.iets3.opensource.linters.msd" folder="linters" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.variability.artifacts.typesystem.runtime/org.iets3.variability.artifacts.typesystem.runtime.msd" folder="variability.artifacts" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.variability.base.ide/org.iets3.variability.base.ide.msd" folder="variability.ide" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.variability.os.sandbox/org.iets3.variability.os.sandbox.msd" folder="variability" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.components.functional/test.components.functional.msd" folder="comp.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core.expr.genjava/test.ex.core.expr.genjava.msd" folder="expr.tests" />
