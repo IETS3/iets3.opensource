@@ -6362,7 +6362,7 @@
       <node concept="3Tm1VV" id="79xAwvWZJzV" role="1B3o_S" />
       <node concept="3clFbS" id="79xAwvWZJzW" role="3clF47">
         <node concept="1VxSAg" id="79xAwvX0nME" role="3cqZAp">
-          <ref role="37wK5l" node="79xAwvX08$1" />
+          <ref role="37wK5l" node="79xAwvX08$1" resolve="SkeletonTreeGraphCreator" />
           <node concept="3clFbT" id="79xAwvX0nXy" role="37wK5m">
             <property role="3clFbU" value="true" />
           </node>
@@ -6377,12 +6377,12 @@
         <node concept="3clFbF" id="79xAwvX0cv$" role="3cqZAp">
           <node concept="37vLTI" id="79xAwvX0f60" role="3clFbG">
             <node concept="37vLTw" id="79xAwvX0fc1" role="37vLTx">
-              <ref role="3cqZAo" node="79xAwvX0clC" resolve="showVarExprs" />
+              <ref role="3cqZAo" node="79xAwvX0clC" resolve="showVarExpressions" />
             </node>
             <node concept="2OqwBi" id="79xAwvX0cZK" role="37vLTJ">
               <node concept="Xjq3P" id="79xAwvX0cvz" role="2Oq$k0" />
               <node concept="2OwXpG" id="79xAwvX0dsF" role="2OqNvi">
-                <ref role="2Oxat5" node="79xAwvWZCsH" resolve="showVarExpressions" />
+                <ref role="2Oxat5" node="79xAwvWZCsH" resolve="showVarExprs" />
               </node>
             </node>
           </node>
@@ -9242,7 +9242,7 @@
             </node>
             <node concept="TSZUe" id="79xAwvWg7LO" role="2OqNvi">
               <node concept="37vLTw" id="79xAwvWgcrP" role="25WWJ7">
-                <ref role="3cqZAo" node="79xAwvWfnNj" resolve="expr150" />
+                <ref role="3cqZAo" node="79xAwvWfnNj" resolve="varExpr" />
               </node>
             </node>
           </node>
@@ -11738,7 +11738,7 @@
           <node concept="2OqwBi" id="220xVKplgek" role="3clFbG">
             <node concept="2ShNRf" id="220xVKpleE7" role="2Oq$k0">
               <node concept="1pGfFk" id="79xAww20Joj" role="2ShVmc">
-                <ref role="37wK5l" node="79xAwvX08$1" />
+                <ref role="37wK5l" node="79xAwvX08$1" resolve="SkeletonTreeGraphCreator" />
                 <node concept="3clFbT" id="79xAww20KCg" role="37wK5m">
                   <property role="3clFbU" value="true" />
                 </node>
@@ -12191,7 +12191,7 @@
                 <node concept="2OqwBi" id="79xAwvWL37v" role="33vP2m">
                   <node concept="2OqwBi" id="79xAwvWL37w" role="2Oq$k0">
                     <node concept="2GrUjf" id="79xAwvWL37x" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="3Dih4JjExJc" resolve="skeletonEnvironmentNext" />
+                      <ref role="2Gs0qQ" node="3Dih4JjExJc" resolve="skelEnvNext" />
                     </node>
                     <node concept="liA8E" id="79xAwvWL37y" role="2OqNvi">
                       <ref role="37wK5l" node="6MkAeDP83Yn" resolve="skeleton" />
@@ -12213,7 +12213,7 @@
                           <ref role="37wK5l" node="3Dw9_kcJ2gt" resolve="createSkelRec" />
                           <node concept="2OqwBi" id="Wdqhnhq1Dx" role="37wK5m">
                             <node concept="2GrUjf" id="WdqhnhpZv_" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="3Dih4JjExJc" resolve="skeletonEnvironmentNext" />
+                              <ref role="2Gs0qQ" node="3Dih4JjExJc" resolve="skelEnvNext" />
                             </node>
                             <node concept="liA8E" id="Wdqhnhq5Ey" role="2OqNvi">
                               <ref role="37wK5l" node="WdqhnhpkVC" resolve="sameFor" />
@@ -12247,7 +12247,7 @@
                     <ref role="37wK5l" node="79xAwvWtUWg" resolve="relevantChildren" />
                     <node concept="2OqwBi" id="3Dih4JkpJOs" role="37wK5m">
                       <node concept="2GrUjf" id="3Dih4JkpGBB" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="3Dih4JjExJc" resolve="skeletonEnvironmentNext" />
+                        <ref role="2Gs0qQ" node="3Dih4JjExJc" resolve="skelEnvNext" />
                       </node>
                       <node concept="liA8E" id="3Dih4JkpNVv" role="2OqNvi">
                         <ref role="37wK5l" node="6MkAeDP84j4" resolve="node" />
@@ -18550,7 +18550,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="79xAwvWubni" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
         <node concept="2B6LJw" id="79xAwvWuguG" role="2B76xF">
           <ref role="2B6OnR" to="wyt6:~Deprecated.since()" resolve="since" />
           <node concept="Xl_RD" id="79xAwvWugwx" role="2B70Vg">
@@ -18864,7 +18864,7 @@
         <node concept="TUZQ0" id="79xAwvWugy0" role="3nqlJM">
           <property role="TUZQ4" value="a set of nodes which will be skipped if found among the children" />
           <node concept="zr_55" id="79xAwvWugy2" role="zr_5Q">
-            <ref role="zr_51" node="79xAwvWu0yd" resolve="skip" />
+            <ref role="zr_51" node="79xAwvWu0yd" resolve="toBeSkipped" />
           </node>
         </node>
         <node concept="x79VA" id="79xAwvWugy3" role="3nqlJM">
