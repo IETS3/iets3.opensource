@@ -10,6 +10,11 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Expressions of ShortLambdas are now correctly updated and used for interpretation after they are changed
+- API for coverage calculation and restored original functionality. Coverage is now calculated during interpreter execution
+- Duplicated colors for PARTIAL and IGNORED 
+
+### Added
+- CI tests for InterpreterCoverageAssQuery which make use use the calculated coverage data
 
 ## May 2025
 

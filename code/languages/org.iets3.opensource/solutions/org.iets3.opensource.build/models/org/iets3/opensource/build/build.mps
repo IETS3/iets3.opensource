@@ -15200,6 +15200,31 @@
           <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
         </node>
       </node>
+      <node concept="1SiIV0" id="3GrH80Zd3XV" role="3bR37C">
+        <node concept="3bR9La" id="3GrH80Zd3XW" role="1SiIV1">
+          <ref role="3bR37D" node="ub9nkyRnyj" resolve="org.iets3.core.expr.tests" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3GrH80Zd3XX" role="3bR37C">
+        <node concept="3bR9La" id="3GrH80Zd3XY" role="1SiIV1">
+          <ref role="3bR37D" node="5a_u3OzLedQ" resolve="org.iets3.core.expr.adt" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3GrH80ZB_ri" role="3bR37C">
+        <node concept="3bR9La" id="3GrH80ZB_rj" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3GrH80ZB_rk" role="3bR37C">
+        <node concept="3bR9La" id="3GrH80ZB_rl" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3GrH80ZB_rm" role="3bR37C">
+        <node concept="3bR9La" id="3GrH80ZB_rn" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="7YuIrXB5Sn0" role="3989C9">
       <property role="BnDLt" value="true" />
