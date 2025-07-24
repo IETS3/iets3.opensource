@@ -16,6 +16,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 - CI tests for InterpreterCoverageAssQuery which make use use the calculated coverage data
+- Solver: Add test infrastructure to ensure that errors computed by any solver are converted to editor messages properly.
 - Variability: APIs for FilterParams (configuration of filter&instantiate process) and skeleton tree data structure were extended
 
 
