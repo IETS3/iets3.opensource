@@ -16,6 +16,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 - CI tests for InterpreterCoverageAssQuery which make use use the calculated coverage data
+- Variability: APIs for FilterParams (configuration of filter&instantiate process) and skeleton tree data structure were extended
+
 
 ## June 2025
 
