@@ -15965,6 +15965,19 @@
         <ref role="3uigEE" node="5oQ9aLiCrv8" resolve="ICopyLogic" />
       </node>
     </node>
+    <node concept="2RhdJD" id="79xAww2$nyV" role="jymVt">
+      <property role="2RkwnN" value="varExprReplacer" />
+      <node concept="3Tm1VV" id="79xAww2$nyW" role="1B3o_S" />
+      <node concept="2RoN1w" id="79xAww2$nyX" role="2RnVtd">
+        <node concept="3wEZqW" id="79xAww2$nyY" role="3wFrgM" />
+        <node concept="3xqBd$" id="79xAww2$nyZ" role="3xrYvX">
+          <node concept="3Tm1VV" id="79xAww2$nz0" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="79xAww2$nz1" role="2RkE6I">
+        <ref role="3uigEE" node="79xAww2$jCK" resolve="IVarExprReplacer" />
+      </node>
+    </node>
     <node concept="2RhdJD" id="79xAww0hfVy" role="jymVt">
       <property role="2RkwnN" value="issueCollector" />
       <node concept="3Tm1VV" id="79xAww0hfVz" role="1B3o_S" />
@@ -16280,6 +16293,19 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="79xAww2$p4t" role="3cqZAp">
+            <node concept="37vLTI" id="79xAww2$qr8" role="3clFbG">
+              <node concept="10Nm6u" id="79xAww2$qUl" role="37vLTx" />
+              <node concept="2OqwBi" id="79xAww2$pq1" role="37vLTJ">
+                <node concept="37vLTw" id="79xAww2$p4r" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7x1s9KPfECN" resolve="fp" />
+                </node>
+                <node concept="2S8uIT" id="79xAww2$pMG" role="2OqNvi">
+                  <ref role="2S8YL0" node="79xAww2$nyV" resolve="varExprReplacer" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="79xAww0j4NJ" role="3cqZAp">
             <node concept="37vLTI" id="79xAww0j5Qe" role="3clFbG">
               <node concept="10Nm6u" id="79xAww0qRZs" role="37vLTx" />
@@ -16525,6 +16551,39 @@
         <node concept="3Tm1VV" id="7x1s9KPg0w8" role="1B3o_S" />
         <node concept="3uibUv" id="7x1s9KPg0w9" role="3clF45">
           <ref role="3uigEE" node="7x1s9KPfbMx" resolve="FilterParams.Builder" />
+        </node>
+      </node>
+      <node concept="3clFb_" id="79xAww2$srY" role="jymVt">
+        <property role="TrG5h" value="setVarExprReplacer" />
+        <node concept="3clFbS" id="79xAww2$ss1" role="3clF47">
+          <node concept="3clFbF" id="79xAww2$tFk" role="3cqZAp">
+            <node concept="37vLTI" id="79xAww2$vDm" role="3clFbG">
+              <node concept="37vLTw" id="79xAww2$woJ" role="37vLTx">
+                <ref role="3cqZAo" node="79xAww2$sZY" resolve="pVarExprReplacer" />
+              </node>
+              <node concept="2OqwBi" id="79xAww2$uaH" role="37vLTJ">
+                <node concept="37vLTw" id="79xAww2$tFj" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7x1s9KPfECN" resolve="fp" />
+                </node>
+                <node concept="2S8uIT" id="79xAww2$uOw" role="2OqNvi">
+                  <ref role="2S8YL0" node="79xAww2$nyV" resolve="varExprReplacer" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="79xAww2$xxL" role="3cqZAp">
+            <node concept="Xjq3P" id="79xAww2$xxJ" role="3clFbG" />
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="79xAww2$rHP" role="1B3o_S" />
+        <node concept="3uibUv" id="79xAww2$snO" role="3clF45">
+          <ref role="3uigEE" node="7x1s9KPfbMx" resolve="FilterParams.Builder" />
+        </node>
+        <node concept="37vLTG" id="79xAww2$sZY" role="3clF46">
+          <property role="TrG5h" value="pVarExprReplacer" />
+          <node concept="3uibUv" id="79xAww2$sZX" role="1tU5fm">
+            <ref role="3uigEE" node="79xAww2$jCK" resolve="IVarExprReplacer" />
+          </node>
         </node>
       </node>
       <node concept="3clFb_" id="79xAww0hs4h" role="jymVt">
@@ -16807,6 +16866,110 @@
       <node concept="A3Dl8" id="79xAww0du86" role="3clF45">
         <node concept="3uibUv" id="79xAww0dKhK" role="A3Ik2">
           <ref role="3uigEE" node="79xAww0fFxW" resolve="FilteringError" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3HP615" id="79xAww2$jCK">
+    <property role="3GE5qa" value="filtering" />
+    <property role="TrG5h" value="IVarExprReplacer" />
+    <node concept="2tJIrI" id="79xAww2$jDl" role="jymVt" />
+    <node concept="3clFb_" id="79xAww2$jHn" role="jymVt">
+      <property role="TrG5h" value="replace" />
+      <node concept="3clFbS" id="79xAww2$jHq" role="3clF47" />
+      <node concept="3Tm1VV" id="79xAww2$jHr" role="1B3o_S" />
+      <node concept="A3Dl8" id="79xAww2LV$v" role="3clF45">
+        <node concept="3Tqbb2" id="79xAww2LVDo" role="A3Ik2">
+          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="79xAww2$jLv" role="3clF46">
+        <property role="TrG5h" value="old2new" />
+        <node concept="3rvAFt" id="79xAww2$jLs" role="1tU5fm">
+          <node concept="3Tqbb2" id="79xAww2$jS7" role="3rvQeY">
+            <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+          </node>
+          <node concept="3Tqbb2" id="79xAww2$jZR" role="3rvSg0">
+            <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="79xAww2$k6J" role="3clF46">
+        <property role="TrG5h" value="invalid" />
+        <node concept="3vKaQO" id="79xAww31zSG" role="1tU5fm">
+          <node concept="3Tqbb2" id="79xAww31zSI" role="3O5elw">
+            <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="79xAww2RXif" role="lGtFl">
+        <node concept="TZ5HA" id="79xAww2RXig" role="TZ5H$">
+          <node concept="1dT_AC" id="79xAww2RXih" role="1dT_Ay">
+            <property role="1dT_AB" value="Replace a set of 150% expressions. The scope of the set is always a skeleton node." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="79xAww2S9vv" role="TZ5H$">
+          <node concept="1dT_AC" id="79xAww2S9vw" role="1dT_Ay">
+            <property role="1dT_AB" value="So each call to this method will contain all 150% expressions in the AST of this skeleton node," />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="79xAww2Sa0n" role="TZ5H$">
+          <node concept="1dT_AC" id="79xAww2Sa0o" role="1dT_Ay">
+            <property role="1dT_AB" value="including logical children. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="79xAww2Sa9Z" role="TZ5H$">
+          <node concept="1dT_AC" id="79xAww2Saa0" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="79xAww2SabR" role="TZ5H$">
+          <node concept="1dT_AC" id="79xAww2SabS" role="1dT_Ay">
+            <property role="1dT_AB" value="The union(old2new.keys, invalid) consists of all 150% expressions found in the skeleton node's scope." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="79xAww2SbTV" role="TZ5H$">
+          <node concept="1dT_AC" id="79xAww2SbTW" role="1dT_Ay">
+            <property role="1dT_AB" value="Note that some expressions of that union might be part of the same Expression sub-AST." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="79xAww2RXii" role="3nqlJM">
+          <property role="TUZQ4" value="map from 150% expressions to evaluated 100% expressions" />
+          <node concept="zr_55" id="79xAww2RXik" role="zr_5Q">
+            <ref role="zr_51" node="79xAww2$jLv" resolve="old2new" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="79xAww2RXil" role="3nqlJM">
+          <property role="TUZQ4" value="150% expressions which could not be evaluated" />
+          <node concept="zr_55" id="79xAww2RXin" role="zr_5Q">
+            <ref role="zr_51" node="79xAww2$k6J" resolve="invalid" />
+          </node>
+        </node>
+        <node concept="x79VA" id="79xAww2RXio" role="3nqlJM">
+          <property role="x79VB" value="remaining 150% expressions from the invalid-list" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="79xAww2$jCL" role="1B3o_S" />
+    <node concept="3UR2Jj" id="79xAww2RJY4" role="lGtFl">
+      <node concept="TZ5HA" id="79xAww2RJY5" role="TZ5H$">
+        <node concept="1dT_AC" id="79xAww2RJY6" role="1dT_Ay">
+          <property role="1dT_AB" value="Interface used by the filterIntantiator to evaluate 150% expressions and replace them " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="79xAww2RWhH" role="TZ5H$">
+        <node concept="1dT_AC" id="79xAww2RWhI" role="1dT_Ay">
+          <property role="1dT_AB" value="by a 100% expression representing the value specific for the given configuration." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="79xAww2RWFa" role="TZ5H$">
+        <node concept="1dT_AC" id="79xAww2RWFb" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="79xAww2RWH8" role="TZ5H$">
+        <node concept="1dT_AC" id="79xAww2RWH9" role="1dT_Ay">
+          <property role="1dT_AB" value="The basic filterInstantiator does not support this, so the interface is never called there." />
         </node>
       </node>
     </node>
