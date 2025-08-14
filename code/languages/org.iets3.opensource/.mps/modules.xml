@@ -176,8 +176,11 @@
       <modulePath path="$PROJECT_DIR$/tests/test.in.expr.os/test.in.expr.os.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.node.expr.os/test.node.expr.os.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.analysis.base/test.org.iets3.analysis.base.msd" folder="analysis.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.common.base/test.org.iets3.common.base.msd" folder="variability.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.core.comments/test.org.iets3.core.comments.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.protocol.transport/test.org.iets3.protocol.transport.msd" folder="comp.protocols" />
+      <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.variability.configuration.base/test.org.iets3.variability.configuration.base.msd" folder="variability.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.variability.featuremodel.base/test.org.iets3.variability.featuremodel.base.msd" folder="variability.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.components.core/test.ts.components.core.msd" folder="comp.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.components.hardware/test.ts.components.hardware.msd" folder="comp.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.expr.os.comma/test.ts.expr.os.comma.msd" folder="expr.tests" />
