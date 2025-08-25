@@ -17159,6 +17159,7 @@
       <property role="BnDLt" value="true" />
       <property role="TrG5h" value="test.org.iets3.variability.configuration.base" />
       <property role="3LESm3" value="69c0c18f-9200-46ca-96d1-e564692dce0c" />
+      <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
       <node concept="398BVA" id="7tVUji9MfMe" role="3LF7KH">
         <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="7tVUji9MfMh" role="iGT6I">
@@ -17234,6 +17235,7 @@
       <property role="BnDLt" value="true" />
       <property role="TrG5h" value="test.org.iets3.variability.featuremodel.base" />
       <property role="3LESm3" value="d09d86d3-0476-4f57-a9bf-aab3e36e3aee" />
+      <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
       <node concept="398BVA" id="7tVUji9MfSu" role="3LF7KH">
         <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="7tVUji9MfSv" role="iGT6I">
@@ -17751,6 +17753,12 @@
       </node>
       <node concept="22LTRM" id="IJ8MgPZlN9" role="22LTRK">
         <ref role="22LTRN" node="IJ8MgPVKAO" resolve="test.org.iets3.analysis.base" />
+      </node>
+      <node concept="22LTRM" id="1WrO9kaEJAm" role="22LTRK">
+        <ref role="22LTRN" node="7tVUji9MfMb" resolve="test.org.iets3.variability.configuration.base" />
+      </node>
+      <node concept="22LTRM" id="1WrO9kaEJAp" role="22LTRK">
+        <ref role="22LTRN" node="7tVUji9MfSt" resolve="test.org.iets3.variability.featuremodel.base" />
       </node>
     </node>
     <node concept="2vP9LM" id="3ZBI8Awdbww" role="1hWBAP">
