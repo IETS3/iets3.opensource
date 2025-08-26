@@ -979,7 +979,7 @@
         <node concept="3clFbH" id="5AZoYkHriPZ" role="3cqZAp" />
         <node concept="3clFbF" id="6sc6iZadBob" role="3cqZAp">
           <node concept="1rXfSq" id="6sc6iZadBo9" role="3clFbG">
-            <ref role="37wK5l" node="sM5CfQYPXx" resolve="apply100Percent" />
+            <ref role="37wK5l" node="sM5CfQYPXx" resolve="filterVariability" />
             <node concept="37vLTw" id="jgfPnJ59iD" role="37wK5m">
               <ref role="3cqZAo" node="3fjVuHAGqw5" resolve="hpiInClone" />
             </node>
@@ -1037,7 +1037,7 @@
               <ref role="37wK5l" to="eagd:4lHDM39EP3K" resolve="filterInPlace" />
               <node concept="2OqwBi" id="5bEmt06B6qp" role="37wK5m">
                 <node concept="37vLTw" id="5bEmt06B4pY" role="2Oq$k0">
-                  <ref role="3cqZAo" node="sM5CfQYPXz" resolve="hpci" />
+                  <ref role="3cqZAo" node="sM5CfQYPXz" resolve="baselineItem" />
                 </node>
                 <node concept="2qgKlT" id="5bEmt06B8jI" role="2OqNvi">
                   <ref role="37wK5l" to="s50z:5bEmt06_eiH" resolve="filteringParameters" />
