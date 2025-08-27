@@ -18,9 +18,6 @@
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -226,9 +223,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2XOHcx" id="3jXl0WzZ1kN">
-    <property role="2XOHcw" value="${iets3.github.core.home}/code/languages/org.iets3.core" />
   </node>
   <node concept="1lH9Xt" id="3eg222GrGLa">
     <property role="TrG5h" value="CycleDetection_ErrorConfig" />
