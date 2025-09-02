@@ -5,7 +5,30 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+
+## July 2025
+
+### Fixed
+
+- Expressions of ShortLambdas are now correctly updated and used for interpretation after they are changed
+- API for coverage calculation and restored original functionality. Coverage is now calculated during interpreter execution
+- Duplicated colors for PARTIAL and IGNORED 
+
+### Added
+- CI tests for InterpreterCoverageAssQuery which make use use the calculated coverage data
+- Solver: Add test infrastructure to ensure that errors computed by any solver are converted to editor messages properly.
+- Variability: APIs for FilterParams (configuration of filter&instantiate process) and skeleton tree data structure were extended
+
+
 ## June 2025
+
+### Added
+
+- Added languages and solution for basic variability, moved from IETS3-Core project. The following modules were added:
+  - variability: `org.iets3.variability.*` (6 languages, 2 solutions)
+  - variability devkit: `org.iets3.variability.base.devkit`
+  - analysis support: `org.iets3.analysis.logic.operator`, `org.iets3.analysis.solversupport.util`
+  - contextfilter for UI: `org.iets3.contextfilter`, `org.iets3.contextfilter.plugin`
 
 ### Changed
 
@@ -16,6 +39,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
   An [enhancement script](http://127.0.0.1:63320/node?ref=r%3A531014dc-62ca-45fa-b1c2-cf992369440b%28org.iets3.core.expr.typetags.physunits.scripts%29%2F6252521573649140294)
   is provided to replace 'mu' with 'micro sign'.
+
 
 ## May 2025
 

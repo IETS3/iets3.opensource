@@ -29,6 +29,7 @@ cell-screenshots/
 # -----------------------------------------------------------
 .idea
 workspace.xml
+.ideaconfig
 
 # -----------------------------------------------------------
 # JUNIT
@@ -45,6 +46,7 @@ classes_gen
 source_gen
 source_gen.caches
 test_gen
+doc_gen
 test_gen.caches
 code/languages/*/*.iws
 code/languages/*/build.properties
@@ -52,6 +54,7 @@ code/languages/*/TEST*.xml
 code/languages/org.iets3.core/build/tmp
 .mps-caches
 *.iml
+.mpsconfig
 
 # -----------------------------------------------------------
 # GRADLE

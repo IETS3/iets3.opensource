@@ -11,8 +11,8 @@ plugins {
     id 'base'
     id 'maven-publish'
     id 'de.itemis.mps.gradle.common' version '1.29.+'
-    id 'de.itemis.mps.gradle.launcher' version '2.6.1.+'
     id "com.github.breadmoirai.github-release" version "2.5.2"
+    id 'de.itemis.mps.gradle.launcher' version '2.7.0.+'
     id "org.cyclonedx.bom" version "2.3.1"
 }
 
@@ -48,7 +48,7 @@ def minor = "9"
 
 
 
-ext.mpsVersion = "252.18003.129"
+ext.mpsVersion = "252.18003.155"
 def mpsQAVersion = "$major.$minor+"
 
 
@@ -149,7 +149,7 @@ class BundledDep {
 }
 
 def bundledDeps = [
-        new BundledDep('pcollections', ['org.pcollections:pcollections:4.0.2'], 'org.iets3.core.expr.base.collections.stubs'),
+        new BundledDep('pcollections', ['org.pcollections:pcollections:5.0.0'], 'org.iets3.core.expr.base.collections.stubs'),
         new BundledDep('bigMath', ['ch.obermuhlner:big-math:2.3.2'], 'org.iets3.core.expr.math.interpreter'),
         new BundledDep('functionalJava', ['org.functionaljava:functionaljava:5.0'], 'org.iets3.core.expr.genjava.functionalJava'),
         new BundledDep('cpsSuite', ['io.takari.junit:takari-cpsuite:1.2.7'], 'org.iets3.opensource.build.gentests.rt').overrideArtifactName('takari-cpsuite.jar')

@@ -14,7 +14,6 @@
     <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
     <import index="6w03" ref="r:2b6823f7-1c48-47b9-9a41-e04ac80f7887(test.org.iets3.analysis.base.solvable.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -214,9 +213,8 @@
       <node concept="3Tm1VV" id="1mChDufikj6" role="1B3o_S" />
       <node concept="3clFbS" id="1mChDufikjf" role="3clF47">
         <node concept="3clFbF" id="1mChDufivX4" role="3cqZAp">
-          <node concept="10M0yZ" id="1mChDufix0r" role="3clFbG">
-            <ref role="3cqZAo" to="wyt6:~Integer.MIN_VALUE" resolve="MIN_VALUE" />
-            <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+          <node concept="3cmrfG" id="3hhKUUE_$MX" role="3clFbG">
+            <property role="3cmrfH" value="-999999998" />
           </node>
         </node>
       </node>
@@ -299,9 +297,8 @@
       <node concept="3Tm1VV" id="1mChDufiBBH" role="1B3o_S" />
       <node concept="3clFbS" id="1mChDufiBBQ" role="3clF47">
         <node concept="3clFbF" id="1mChDufiIaB" role="3cqZAp">
-          <node concept="10M0yZ" id="1mChDufiIaC" role="3clFbG">
-            <ref role="3cqZAo" to="wyt6:~Integer.MIN_VALUE" resolve="MIN_VALUE" />
-            <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+          <node concept="3cmrfG" id="3hhKUUE_wCS" role="3clFbG">
+            <property role="3cmrfH" value="-999999998" />
           </node>
         </node>
       </node>

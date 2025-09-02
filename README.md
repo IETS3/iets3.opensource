@@ -26,6 +26,7 @@ For details, see the [wiki](https://github.com/IETS3/iets3.opensource/wiki/Suppo
 | MPS version | Nexus | branch |
 | --------------- | --------------- | --------------- |
 | Master | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/org/iets3/opensource/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/latest)](https://artifacts.itemis.cloud/#browse/browse:maven-mps:org%2Fiets3%2Fopensource) | [master](https://github.com/IETS3/iets3.opensource/tree/master) |
+| 2025.1 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/org/iets3/opensource/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2025.1')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:org%2Fiets3%2Fopensource) | [maintenance/mps20251](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20251) | [maintenance/mps20251](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20251) |
 | 2024.1 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/org/iets3/opensource/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2024.1')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:org%2Fiets3%2Fopensource) | [maintenance/mps20241](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20241) | [maintenance/mps20241](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20241) |
 | 2023.2 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/org/iets3/opensource/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2023.2')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:org%2Fiets3%2Fopensource) | [maintenance/mps20232](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20232) | [maintenance/mps20232](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20232) |
 | 2022.3 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/org/iets3/opensource/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2022.3')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:org%2Fiets3%2Fopensource) | [maintenance/mps20223](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20223) | [maintenance/mps20223](https://github.com/IETS3/iets3.opensource/tree/maintenance/mps20223) |
@@ -62,14 +63,25 @@ The project is separated into the following virtual packages:
 
 ### analysis
 
-| Name  | Description |
+| Name | Description |
 | ------------- | ------------- |
-| org.iets3.analysis.base | This language contains basic concepts and interfaces and a plugin solution related to solvers. |
+| test.org.iets3.analysis.base | Test for solver supoprt. |
+| test.org.iets3.analysis.base.solvable | Language used in the tests. |
+| org.iets3.analysis.solversupport.util | Supporting classes for analysis with solver. |
+| org.iets3.analysis.base |  This language contains basic concepts and interfaces and a plugin solution related to solvers. |
+| org.iets3.analysis.logic.operator | This language provide operators to build model checking rules. | 
 
 ### assessment
 | Name  | Description |
 | ------------- | ------------- |
 | org.iets3.core.assessment | It contains an [AssessmentQuery](http://127.0.0.1:63320/node?ref=r%3Af7764ca4-8c75-4049-922b-08516400a727%28com.mbeddr.core.base.structure%29%2F865293814733115675) to find [untraced elements](http://127.0.0.1:63320/node?ref=r%3A23d7e401-548b-485c-bdf1-c060e259073c%28org.iets3.core.assessment.structure%29%2F3587241503657463099). It can be used inside an instance of [Assessment](http://127.0.0.1:63320/node?ref=r%3Af7764ca4-8c75-4049-922b-08516400a727%28com.mbeddr.core.base.structure%29%2F865293814733114044) inside an [AssessmentContainer](http://127.0.0.1:63320/node?ref=r%3Af7764ca4-8c75-4049-922b-08516400a727%28com.mbeddr.core.base.structure%29%2F865293814733114043). It also contains a [generic trace query](http://127.0.0.1:63320/node?ref=r%3A23d7e401-548b-485c-bdf1-c060e259073c%28org.iets3.core.assessment.structure%29%2F6913547888673489335) to find traced elements. |
+
+### contextfilter
+
+| Name  | Description |
+| ------------- | ------------- |
+| org.iets3.contextfilter.plugin | This solution provide the plugin suport for the context filtering. |
+| org.iets3.contextfilter | This language allows for selecting references (aka instances) of selected nodes in a projection . |
 
 ### comp (component)
 
@@ -188,7 +200,17 @@ This package includes all things related to tracing ([KernelF reference: page 27
 ### variability
 | Name  | Description |
 | ------------- | ------------- |
-| org.iets3.variability.artifacts.base | This language contains basic concepts and interfaces related to variability. |
+| org.iets3.variability.artifacts.typesystem.runtime | Runtime classes and interfaces to support org.iets3.variability.artifacts.typesystem. |
+| org.iets3.variability.artifacts.base               | This language contains basic concepts and interfaces related to variation point in artifacts. |
+| org.iets3.variability.artifacts.baseline           | This language allows for removing variability from artifacts (baselining). |
+| org.iets3.variability.artifacts.typesystem         | This language provide support for verification of artifact with variability. |
+| org.iets3.variability.artifacts.vanguard           | This language contains basic concepts and interfaces related to variation point in artifacts. NOTE: It will be merged into org.iets3.variability.artifacts.base. |
+| org.iets3.variability.base.ide                     | This solution provides contribution to the IDE, e.g the visualisation of SkeletonTree used by variability algorithms as datas structure. |
+| org.iets3.variability.base                         | This language contains common concepts to support feature models, configuraions and artifacts. |
+| org.iets3.variability.configuration.base           | This language allows for defining configurations of feature models. | 
+| org.iets3.variability.featuremodel.base            | This language allows for modeling feature models. |
+| org.iets3.variability.os.sandbox                   | This sandbox contains some variability modeling examples. |
+| org.iets3.variability.base.devkit                  | This devkit exposes all basic variability functionalities. |
 
 ## Devkits
 
