@@ -35,9 +35,6 @@
         <property id="1932269937152561478" name="useLabelSelection" index="OXtK3" />
         <property id="1229432188737" name="isLastPosition" index="ZRATv" />
       </concept>
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
       <concept id="4239542196496927193" name="jetbrains.mps.lang.test.structure.MPSActionReference" flags="ng" index="1iFQzN">
         <reference id="4239542196496929559" name="action" index="1iFR8X" />
       </concept>
@@ -1556,9 +1553,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2XOHcx" id="3jXl0WzZ1kN">
-    <property role="2XOHcw" value="${iets3.github.core.home}/code/languages/org.iets3.core" />
   </node>
 </model>
 
