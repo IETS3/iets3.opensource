@@ -20,7 +20,7 @@ plugins {
     id 'maven-publish'
     id 'de.itemis.mps.gradle.common' version '1.29.+'
     id 'de.itemis.mps.gradle.launcher' version '2.5.2.+'
-    id "com.github.breadmoirai.github-release" version "2.4.1"
+    id "com.github.breadmoirai.github-release" version "2.5.2"
     id "org.cyclonedx.bom" version "2.2.0"
 }
 
@@ -588,6 +588,7 @@ githubRelease {
 }
 
 tasks.named('githubRelease').configure {
+  description 'Publish the artifacts to GitHub as releases'
   dependsOn packageDistroWithDependencies
 }
 
