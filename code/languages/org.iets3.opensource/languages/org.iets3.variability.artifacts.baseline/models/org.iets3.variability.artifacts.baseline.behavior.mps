@@ -17,9 +17,14 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="i05g" ref="r:211c2313-6a94-46b9-b5b0-2442332ff5ac(org.iets3.variability.artifacts.base.behavior)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="4ndm" ref="r:a9fe59d7-0b4f-42b0-925a-71cc04f93df1(org.iets3.variability.configuration.base.structure)" />
+    <import index="hpe4" ref="r:f2970992-e26d-4370-b625-3d51e8af7e7f(org.iets3.variability.artifacts.baseline.plugin)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -46,8 +51,14 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -75,6 +86,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -92,6 +104,10 @@
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -108,6 +124,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
       <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
         <reference id="6832197706140518108" name="param" index="zr_51" />
@@ -409,6 +428,105 @@
           <node concept="zr_55" id="1xsXReQWwa1" role="zr_5Q">
             <ref role="zr_51" node="1xsXReQTvNY" resolve="filteredModels" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5bEmt06_eiH" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="filteringParameters" />
+      <node concept="3Tm1VV" id="5bEmt06_eiI" role="1B3o_S" />
+      <node concept="3uibUv" id="5bEmt06_eXm" role="3clF45">
+        <ref role="3uigEE" to="eagd:7xQHGgVP0D3" resolve="FilterParams" />
+      </node>
+      <node concept="3clFbS" id="5bEmt06_eiK" role="3clF47">
+        <node concept="3cpWs8" id="5bEmt06_ULN" role="3cqZAp">
+          <node concept="3cpWsn" id="5o9wjw0aRgp" role="3cpWs9">
+            <property role="TrG5h" value="ivaaMaybe" />
+            <node concept="3uibUv" id="5o9wjw0aQHh" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~Optional" resolve="Optional" />
+              <node concept="3Tqbb2" id="5o9wjw0aQHk" role="11_B2D">
+                <ref role="ehGHo" to="i9mv:75FdNyOGCTb" resolve="IVariabilityAwareArtifact" />
+              </node>
+            </node>
+            <node concept="BsUDl" id="5bEmt06_Zmy" role="33vP2m">
+              <ref role="37wK5l" node="5o9wjw02jJe" resolve="ivaa" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5bEmt06A1qf" role="3cqZAp">
+          <node concept="3clFbS" id="5bEmt06A1qh" role="3clFbx">
+            <node concept="3cpWs6" id="5bEmt06A5B6" role="3cqZAp">
+              <node concept="2OqwBi" id="5bEmt06A5B7" role="3cqZAk">
+                <node concept="2YIFZM" id="5bEmt06A5B8" role="2Oq$k0">
+                  <ref role="37wK5l" to="eagd:23GXxyebEdY" resolve="builder" />
+                  <ref role="1Pybhc" to="eagd:7xQHGgVP0D3" resolve="FilterParams" />
+                  <node concept="2OqwBi" id="5bEmt06A7Gw" role="37wK5m">
+                    <node concept="37vLTw" id="5bEmt06A5B9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5o9wjw0aRgp" resolve="ivaaMaybe" />
+                    </node>
+                    <node concept="liA8E" id="5bEmt06A8tR" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Optional.get()" resolve="get" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="5bEmt06A5Ba" role="37wK5m">
+                    <node concept="13iPFW" id="5bEmt06A5Bb" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5bEmt06A5Bc" role="2OqNvi">
+                      <ref role="3Tt5mk" to="oe8b:4VcV5lH5FF_" resolve="configuration" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="5bEmt06A5Bd" role="2OqNvi">
+                  <ref role="37wK5l" to="eagd:7x1s9KPkt3d" resolve="build" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5bEmt06A3C$" role="3clFbw">
+            <node concept="37vLTw" id="5bEmt06A2tq" role="2Oq$k0">
+              <ref role="3cqZAo" node="5o9wjw0aRgp" resolve="ivaaMaybe" />
+            </node>
+            <node concept="liA8E" id="5bEmt06A4wD" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Optional.isPresent()" resolve="isPresent" />
+            </node>
+          </node>
+        </node>
+        <node concept="YS8fn" id="5o9wjw03uTM" role="3cqZAp">
+          <node concept="2ShNRf" id="5o9wjw03vJq" role="YScLw">
+            <node concept="1pGfFk" id="5o9wjw03DT$" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+              <node concept="3cpWs3" id="5o9wjw03Hg3" role="37wK5m">
+                <node concept="2OqwBi" id="5o9wjw03Kgx" role="3uHU7w">
+                  <node concept="2OqwBi" id="5o9wjw03IMf" role="2Oq$k0">
+                    <node concept="13iPFW" id="5bEmt06AbEC" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5o9wjw03JDQ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="oe8b:4VcV5lH5FF$" resolve="artifact" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="5o9wjw03KUj" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="5o9wjw03ELQ" role="3uHU7B">
+                  <property role="Xl_RC" value="No IVariabilityAwareArtifact found for " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="5bEmt06Ai82" role="lGtFl">
+        <node concept="TZ5HA" id="5bEmt06Ai83" role="TZ5H$">
+          <node concept="1dT_AC" id="5bEmt06Ai84" role="1dT_Ay">
+            <property role="1dT_AB" value="Setup filtering parameters to be used during base line." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5bEmt06Aj88" role="TZ5H$">
+          <node concept="1dT_AC" id="5bEmt06Aj89" role="1dT_Ay">
+            <property role="1dT_AB" value="If the method is not overwritten default parameters will be used." />
+          </node>
+        </node>
+        <node concept="x79VA" id="5bEmt06Ai85" role="3nqlJM">
+          <property role="x79VB" value="an instance of FilterParams used to configure baselining for this item" />
         </node>
       </node>
     </node>
