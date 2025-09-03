@@ -552,7 +552,7 @@
     <property role="3GE5qa" value="configuration" />
     <ref role="1XX52x" to="4ndm:30ECcbtLqSm" resolve="FeatureAttributeAssignment" />
     <node concept="3EZMnI" id="30ECcbtMAOC" role="2wV5jI">
-      <ref role="1ERwB7" node="5Jgfx7e$Mhu" resolve="preventDeletionAndCreation" />
+      <ref role="1ERwB7" node="5Jgfx7e$Mhu" resolve="RestrictDeletionAndCreation" />
       <node concept="2iRfu4" id="30ECcbtMAOD" role="2iSdaV" />
       <node concept="1iCGBv" id="30ECcbtMAOs" role="3EZMnx">
         <ref role="1NtTu8" to="4ndm:30ECcbtMzQ8" resolve="attribute" />
@@ -665,7 +665,7 @@
           </node>
         </node>
         <node concept="3EZMnI" id="67408HOpQGH" role="1QoVPY">
-          <ref role="1ERwB7" node="5Jgfx7e$Mhu" resolve="preventDeletionAndCreation" />
+          <ref role="1ERwB7" node="5Jgfx7e$Mhu" resolve="RestrictDeletionAndCreation" />
           <node concept="2iRfu4" id="67408HOpQGI" role="2iSdaV" />
           <node concept="1QoScp" id="67408HOpQGJ" role="3EZMnx">
             <property role="1QpmdY" value="true" />
@@ -1512,7 +1512,7 @@
           </node>
           <node concept="1QoScp" id="4sIK4NcotJf" role="3EZMnx">
             <property role="1QpmdY" value="true" />
-            <ref role="1ERwB7" node="2nkP8exxPEo" resolve="FeatureConfigDeletionAndInsertion" />
+            <ref role="1ERwB7" node="2nkP8exxPEo" resolve="RestrictDeletion" />
             <node concept="3F0ifn" id="4sIK4NcouvT" role="1QoS34">
               <property role="3F0ifm" value="M" />
               <node concept="VechU" id="4sIK4Ncouw6" role="3F10Kt">
@@ -1749,7 +1749,7 @@
           <node concept="1iCGBv" id="5NPKd17BMm7" role="3EZMnx">
             <property role="1$x2rV" value="&lt;no feature&gt;" />
             <ref role="1NtTu8" to="4ndm:5NPKd17BG$u" resolve="targetFeature" />
-            <ref role="1ERwB7" node="2nkP8exxPEo" resolve="FeatureConfigDeletionAndInsertion" />
+            <ref role="1ERwB7" node="2nkP8exxPEo" resolve="RestrictDeletion" />
             <node concept="VPxyj" id="4J0_cdCk_0o" role="3F10Kt" />
             <node concept="VQ3r3" id="5Jgfx7dLhU1" role="3F10Kt">
               <node concept="1d0yFN" id="5Jgfx7dLhU5" role="1mkY_M">
@@ -1795,7 +1795,7 @@
             </node>
           </node>
           <node concept="3EZMnI" id="2EGoW4QORIe" role="3EZMnx">
-            <ref role="1ERwB7" node="2nkP8exxPEo" resolve="FeatureConfigDeletionAndInsertion" />
+            <ref role="1ERwB7" node="2nkP8exxPEo" resolve="RestrictDeletion" />
             <node concept="VPM3Z" id="2EGoW4QORIg" role="3F10Kt">
               <property role="VOm3f" value="false" />
             </node>
@@ -1944,7 +1944,7 @@
             </node>
           </node>
           <node concept="3EZMnI" id="5n0Aw5nf$aZ" role="3EZMnx">
-            <ref role="1ERwB7" node="2nkP8exxPEo" resolve="FeatureConfigDeletionAndInsertion" />
+            <ref role="1ERwB7" node="2nkP8exxPEo" resolve="RestrictDeletion" />
             <node concept="3gTLQM" id="5n0Aw5n7FX3" role="3EZMnx">
               <node concept="3Fmcul" id="5n0Aw5n7FX5" role="3FoqZy">
                 <node concept="3clFbS" id="5n0Aw5n7FX7" role="2VODD2">
@@ -2103,7 +2103,7 @@
         <node concept="3EZMnI" id="2EGoW4QHN8B" role="3EZMnx">
           <node concept="3F1sOY" id="5NPKd17BOKu" role="3EZMnx">
             <ref role="1NtTu8" to="4ndm:5NPKd17BOJ8" resolve="content" />
-            <ref role="1ERwB7" node="1lcLMGyB4pb" resolve="preventDeletionCreationAndCompletion" />
+            <ref role="1ERwB7" node="1lcLMGyB4pb" resolve="RestrictDeletionCreationAndCompletion" />
           </node>
           <node concept="l2Vlx" id="2EGoW4QLiVW" role="2iSdaV" />
         </node>
@@ -3062,7 +3062,7 @@
         </node>
         <node concept="1iCGBv" id="5n0Aw5lQu5H" role="3EZMnx">
           <ref role="1NtTu8" to="4ndm:5NPKd17BG$u" resolve="targetFeature" />
-          <ref role="1ERwB7" node="2nkP8exxPEo" resolve="FeatureConfigDeletionAndInsertion" />
+          <ref role="1ERwB7" node="2nkP8exxPEo" resolve="RestrictDeletion" />
           <node concept="1sVBvm" id="5n0Aw5lQu5J" role="1sWHZn">
             <node concept="3F0A7n" id="5n0Aw5lQu5Q" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -3086,10 +3086,10 @@
         </node>
         <node concept="3F0ifn" id="5n0Aw5lQu6l" role="3EZMnx">
           <property role="3F0ifm" value="::" />
-          <ref role="1ERwB7" node="2nkP8exxPEo" resolve="FeatureConfigDeletionAndInsertion" />
+          <ref role="1ERwB7" node="2nkP8exxPEo" resolve="RestrictDeletion" />
         </node>
         <node concept="1HlG4h" id="5n0Aw5lQNT9" role="3EZMnx">
-          <ref role="1ERwB7" node="2nkP8exxPEo" resolve="FeatureConfigDeletionAndInsertion" />
+          <ref role="1ERwB7" node="2nkP8exxPEo" resolve="RestrictDeletion" />
           <node concept="1HfYo3" id="5n0Aw5lQNTb" role="1HlULh">
             <node concept="3TQlhw" id="5n0Aw5lQNTd" role="1Hhtcw">
               <node concept="3clFbS" id="5n0Aw5lQNTf" role="2VODD2">
@@ -3381,7 +3381,7 @@
         <node concept="3EZMnI" id="2EGoW4R3pHq" role="3EZMnx">
           <node concept="l2Vlx" id="2EGoW4R3pHr" role="2iSdaV" />
           <node concept="3F1sOY" id="5n0Aw5lQWsk" role="3EZMnx">
-            <ref role="1ERwB7" node="1lcLMGyB4pb" resolve="preventDeletionCreationAndCompletion" />
+            <ref role="1ERwB7" node="1lcLMGyB4pb" resolve="RestrictDeletionCreationAndCompletion" />
             <ref role="1NtTu8" to="4ndm:5NPKd17BOJ8" resolve="content" />
           </node>
         </node>
@@ -3495,7 +3495,7 @@
         <node concept="2iRfu4" id="2EGoW4QD9CJ" role="2iSdaV" />
         <node concept="3F2HdR" id="2EGoW4QBJE3" role="3EZMnx">
           <ref role="1NtTu8" to="4ndm:30ECcbtLqSj" resolve="attributeAssignments" />
-          <ref role="1ERwB7" node="5Jgfx7e$Mhu" resolve="preventDeletionAndCreation" />
+          <ref role="1ERwB7" node="5Jgfx7e$Mhu" resolve="RestrictDeletionAndCreation" />
           <node concept="2iRkQZ" id="2EGoW4QBJE5" role="2czzBx" />
         </node>
       </node>
@@ -3515,7 +3515,7 @@
               <node concept="3F2HdR" id="4AcsKn4ZOdF" role="3EZMnx">
                 <ref role="1NtTu8" to="4ndm:5NPKd17BG$q" resolve="subfeatureConfigurations" />
                 <ref role="APP_o" to="r4b4:7zJMcSxj$uX" resolve="preventDeletion" />
-                <ref role="1ERwB7" node="1lcLMGyB4pb" resolve="preventDeletionCreationAndCompletion" />
+                <ref role="1ERwB7" node="1lcLMGyB4pb" resolve="RestrictDeletionCreationAndCompletion" />
                 <node concept="2iRkQZ" id="4AcsKn4ZOdI" role="2czzBx" />
                 <node concept="VPM3Z" id="4AcsKn4ZOdJ" role="3F10Kt">
                   <property role="VOm3f" value="false" />
