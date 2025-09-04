@@ -16,7 +16,6 @@
     <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
     <dependency reexport="false">c6420b75-4569-420d-aaf7-9bc590ad7b2a(de.itemis.mps.comparator)</dependency>
     <dependency reexport="false">c1fcd3e0-0603-4035-834f-14c6337eec24(test.org.iets3.common.base)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
