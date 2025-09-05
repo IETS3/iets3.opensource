@@ -6,6 +6,13 @@ Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelo
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
 
+## September 2025
+
+### Fixed
+
+- Variability: In the configuration editor, pressing Return/Enter anywhere will create an empty line after the configuration. Pressing Shift-Return/Enter on the header line of a configuration will create an empty line before the configuration.
+
+
 ## July 2025
 
 ### Fixed
