@@ -15,6 +15,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 - CI tests for InterpreterCoverageAssQuery which make use use the calculated coverage data
+- Warning for BangOp in case type is not OptionType
 
 ## May 2025
 
