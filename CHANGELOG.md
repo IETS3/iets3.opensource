@@ -6,6 +6,13 @@ Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelo
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
 
+## September 2025
+
+### Fixed
+
+- Variability: In the configuration editor, pressing Return/Enter anywhere will create an empty line after the configuration. Pressing Shift-Return/Enter on the header line of a configuration will create an empty line before the configuration.
+
+
 ## July 2025
 
 ### Fixed
@@ -18,6 +25,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - CI tests for InterpreterCoverageAssQuery which make use use the calculated coverage data
 - Solver: Add test infrastructure to ensure that errors computed by any solver are converted to editor messages properly.
 - Variability: APIs for FilterParams (configuration of filter&instantiate process) and skeleton tree data structure were extended
+- Warning for BangOp in case type is not OptionType
 
 
 ## June 2025
