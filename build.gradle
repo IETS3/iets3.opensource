@@ -11,9 +11,9 @@ plugins {
     id 'base'
     id 'maven-publish'
     id 'de.itemis.mps.gradle.common' version '1.29.+'
-    id 'de.itemis.mps.gradle.launcher' version '2.5.2.+'
-    id "com.github.breadmoirai.github-release" version "2.4.1"
-    id "org.cyclonedx.bom" version "2.2.0"
+    id "com.github.breadmoirai.github-release" version "2.5.2"
+    id 'de.itemis.mps.gradle.launcher' version '2.7.0.+'
+    id "org.cyclonedx.bom" version "2.3.1"
 }
 
 repositories {
@@ -41,15 +41,16 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
-def major = '2025'
-def minor = '1'
-def bugfix = ''
+def major = "9999"
+def minor = "9"
 
 // Dependency versions
 
-ext.mpsVersion = "$major.$minor" + (bugfix ? ".$bugfix" : '')
 
+
+ext.mpsVersion = "252.18003.155"
 def mpsQAVersion = "$major.$minor+"
+
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -118,8 +119,10 @@ configurations {
 }
 
 dependencies {
-    mps "com.jetbrains:mps:$mpsVersion"
-    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.2.0.+")
+    // For a release version of MPS, use this dependency:
+    //mps "com.jetbrains:mps:$mpsBuild"
+    mps "com.jetbrains.mps:mps-prerelease:$mpsVersion"
+    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.3.0.+")
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
     junitAnt 'org.apache.ant:ant-junit:1.10.15'
@@ -146,7 +149,7 @@ class BundledDep {
 }
 
 def bundledDeps = [
-        new BundledDep('pcollections', ['org.pcollections:pcollections:4.0.2'], 'org.iets3.core.expr.base.collections.stubs'),
+        new BundledDep('pcollections', ['org.pcollections:pcollections:5.0.0'], 'org.iets3.core.expr.base.collections.stubs'),
         new BundledDep('bigMath', ['ch.obermuhlner:big-math:2.3.2'], 'org.iets3.core.expr.math.interpreter'),
         new BundledDep('functionalJava', ['org.functionaljava:functionaljava:5.0'], 'org.iets3.core.expr.genjava.functionalJava'),
         new BundledDep('cpsSuite', ['io.takari.junit:takari-cpsuite:1.2.7'], 'org.iets3.opensource.build.gentests.rt').overrideArtifactName('takari-cpsuite.jar')
@@ -539,7 +542,7 @@ defaultTasks 'buildLanguages'
 } */
 
 def currentDate = LocalDate.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-// def prCommitsList = "${-> listMergedPRs().readLines().collect { line -> "- $line"}.join("\n")}"
+//def prCommitsList = "${-> listMergedPRs().readLines().collect { line -> "- $line"}.join("\n")}"
 def langLibDeps = project.configurations.languageLibs.resolvedConfiguration.lenientConfiguration.allModuleDependencies
 def depsList = langLibDeps.collect {"- `${it.moduleGroup}:${it.moduleName}` : `${it.moduleVersion}`"}.join("\n")
 def releaseNotes = """Automated Nighly build from ${currentDate}.
