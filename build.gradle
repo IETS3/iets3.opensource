@@ -547,8 +547,6 @@ def langLibDeps = project.configurations.languageLibs.resolvedConfiguration.leni
 def depsList = langLibDeps.collect {"- `${it.moduleGroup}:${it.moduleName}` : `${it.moduleVersion}`"}.join("\n")
 def releaseNotes = """Automated Nighly build from ${currentDate}.
 
-
-
 Includes dependencies:
 ${depsList}
 """
