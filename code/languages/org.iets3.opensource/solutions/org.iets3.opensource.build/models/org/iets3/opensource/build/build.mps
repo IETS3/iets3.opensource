@@ -3452,6 +3452,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="12YYiosfmzJ" role="3bR37C">
+          <node concept="3bR9La" id="12YYiosfmzK" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L5j" resolve="jetbrains.mps.lang.editor.table.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI3cjuN" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -6039,6 +6044,11 @@
             <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
           </node>
         </node>
+        <node concept="1SiIV0" id="12YYiosfmCh" role="3bR37C">
+          <node concept="3bR9La" id="12YYiosfmCi" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396fH" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -7741,6 +7751,11 @@
         <node concept="1SiIV0" id="38mO9wfO5nN" role="3bR37C">
           <node concept="3bR9La" id="38mO9wfO5nO" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="12YYiosfmFr" role="3bR37C">
+          <node concept="3bR9La" id="12YYiosfmFs" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
           </node>
         </node>
       </node>
@@ -13869,7 +13884,6 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.opensource.build.gentests.rt" />
         <property role="3LESm3" value="e70ad515-8ff0-4a50-8cb4-41406f14e348" />
-        <property role="2GAjPV" value="true" />
         <node concept="398BVA" id="3ZBI8Awh4x5" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="3ZBI8Awh4x6" role="iGT6I">

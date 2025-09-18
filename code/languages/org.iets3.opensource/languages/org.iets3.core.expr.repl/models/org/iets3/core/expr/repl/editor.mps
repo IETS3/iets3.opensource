@@ -35,6 +35,8 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="hm5v" ref="r:3d8b4628-659e-4af1-a607-3cc893005b62(de.slisson.mps.tables.runtime.cells)" />
+    <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
+    <import index="9p8b" ref="r:2a738fcb-23b4-4d1d-9f52-870528559e28(de.slisson.mps.tables.runtime.selection)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
@@ -138,6 +140,15 @@
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
       </concept>
+      <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
+        <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
+        <child id="1139535219969" name="item" index="1h_SK8" />
+      </concept>
+      <concept id="1139535280617" name="jetbrains.mps.lang.editor.structure.CellActionMapItem" flags="lg" index="1hA7zw">
+        <property id="1139535298778" name="actionId" index="1hAc7j" />
+        <child id="1139535280620" name="executeFunction" index="1hA7z_" />
+      </concept>
+      <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -166,6 +177,7 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
@@ -2739,6 +2751,7 @@
           <property role="S$Qs1" value="true" />
           <node concept="2iRkQZ" id="5avmkTFF3Yw" role="2iSdaV" />
           <node concept="2rfBfz" id="5xEoEMrm0V5" role="3EZMnx">
+            <ref role="1ERwB7" node="12YYiorZkao" resolve="Sheet" />
             <node concept="3wJMKP" id="5xEoEMrm0WQ" role="2rf8GZ">
               <node concept="3clFbS" id="5xEoEMrm0WS" role="2VODD2">
                 <node concept="3cpWs8" id="5xEoEMrq6ad" role="3cqZAp">
@@ -7100,6 +7113,184 @@
       </node>
       <node concept="2AHcQZ" id="74LepNSpI17" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="12YYiorZkao">
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="Sheet" />
+    <ref role="1h_SK9" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+    <node concept="1hA7zw" id="12YYiosep9o" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="12YYiosep9p" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiosep9q" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiosep9r" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiosep9s" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiosep9t" role="1tU5fm">
+                <ref role="3uigEE" to="9p8b:6Y0V2RJgPcd" resolve="TableRangeSelection" />
+              </node>
+              <node concept="0kSF2" id="12YYiosep9u" role="33vP2m">
+                <node concept="3uibUv" id="12YYiosep9v" role="0kSFW">
+                  <ref role="3uigEE" to="9p8b:6Y0V2RJgPcd" resolve="TableRangeSelection" />
+                </node>
+                <node concept="2OqwBi" id="12YYiosep9w" role="0kSFX">
+                  <node concept="2OqwBi" id="12YYiosep9x" role="2Oq$k0">
+                    <node concept="1Q80Hx" id="12YYiosep9y" role="2Oq$k0" />
+                    <node concept="liA8E" id="12YYiosep9z" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="12YYiosep9$" role="2OqNvi">
+                    <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiosep9_" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiosep9A" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiosep9B" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiosep9C" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiosep9s" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiosep9D" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiosep9E" role="3uHU7B">
+                <property role="Xl_RC" value="###Delete sheet table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiorO9Q3" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBih/copy_action_id" />
+      <node concept="1hAIg9" id="12YYiorO9Q4" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiorO9Q5" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiorTfrP" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiorTfrQ" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiorTfr4" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiorTfrR" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiorTfrS" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiorTfrT" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiorTfrU" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiorTfrV" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiorO9Qo" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiorTgu5" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiorTgP5" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiorTgv1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiorTfrQ" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiorTgX4" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiorO9Qq" role="3uHU7B">
+                <property role="Xl_RC" value="###Copy sheet table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiorXRXL" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBii/cut_action_id" />
+      <node concept="1hAIg9" id="12YYiorXRXM" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiorXRXN" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiorXSm4" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiorXSm5" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiorXSm6" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiorXSm7" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiorXSm8" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiorXSm9" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiorXSma" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiorXSmb" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiorXSmc" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiorXSmd" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiorXSme" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiorXSmf" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiorXSm5" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiorXSmg" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiorXSmh" role="3uHU7B">
+                <property role="Xl_RC" value="###Cut sheet table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiorXRYI" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBij/paste_action_id" />
+      <node concept="1hAIg9" id="12YYiorXRYJ" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiorXRYK" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiorXSrD" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiorXSrE" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiorXSrF" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiorXSrG" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiorXSrH" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiorXSrI" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiorXSrJ" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiorXSrK" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiorXSrL" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiorXSrM" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiorXSrN" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiorXSrO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiorXSrE" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiorXSrP" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiorXSrQ" role="3uHU7B">
+                <property role="Xl_RC" value="###Paste sheet table:" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

@@ -146,12 +146,6 @@
             <property role="30bXRw" value="1" />
           </node>
         </node>
-        <node concept="3CkgUp" id="cPLa7FroLd" role="3Ckg_R">
-          <ref role="3Ckhev" node="cPLa7FroL8" resolve="val2" />
-          <node concept="30bXRB" id="cPLa7FroLa" role="3CkirI">
-            <property role="30bXRw" value="2" />
-          </node>
-        </node>
       </node>
       <node concept="3CkeKC" id="cPLa7FroLg" role="3CkFDl">
         <property role="TrG5h" value="keyB" />
@@ -161,24 +155,12 @@
             <property role="30bXRw" value="3" />
           </node>
         </node>
-        <node concept="3CkgUp" id="cPLa7FroLi" role="3Ckg_R">
-          <ref role="3Ckhev" node="cPLa7FroL8" resolve="val2" />
-          <node concept="30bXRB" id="cPLa7FroLf" role="3CkirI">
-            <property role="30bXRw" value="3" />
-          </node>
-        </node>
       </node>
       <node concept="3CkeKC" id="cPLa7FrCQt" role="3CkFDl">
         <property role="TrG5h" value="keyC" />
         <node concept="3CkgUp" id="cPLa7FrCZw" role="3Ckg_R">
           <ref role="3Ckhev" node="cPLa7FroL6" resolve="val1" />
           <node concept="30bXRB" id="cPLa7FrCZv" role="3CkirI">
-            <property role="30bXRw" value="12" />
-          </node>
-        </node>
-        <node concept="3CkgUp" id="cPLa7FrODM" role="3Ckg_R">
-          <ref role="3Ckhev" node="cPLa7FroL8" resolve="val2" />
-          <node concept="30bXRB" id="cPLa7FrODL" role="3CkirI">
             <property role="30bXRw" value="12" />
           </node>
         </node>

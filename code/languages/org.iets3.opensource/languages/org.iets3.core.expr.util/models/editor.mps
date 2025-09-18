@@ -42,7 +42,9 @@
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
+    <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="9p8b" ref="r:2a738fcb-23b4-4d1d-9f52-870528559e28(de.slisson.mps.tables.runtime.selection)" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="epcs" ref="b33d119e-196d-4497-977c-5c167b21fe33/r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.editor)" implicit="true" />
@@ -176,6 +178,7 @@
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
+      <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
@@ -184,6 +187,10 @@
       <concept id="1176809959526" name="jetbrains.mps.lang.editor.structure.QueryFunction_Color" flags="in" index="3ZlJ5R" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
+        <child id="1224071154657" name="classifierType" index="0kSFW" />
+        <child id="1224071154656" name="expression" index="0kSFX" />
+      </concept>
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -329,7 +336,7 @@
       </concept>
     </language>
     <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell">
-      <concept id="1161622981231" name="de.slisson.mps.richtext.customcell.structure.ConceptFunctionParameter_cell" flags="nn" index="1Q80Hx" />
+      <concept id="1161622981231" name="de.slisson.mps.richtext.customcell.structure.ConceptFunctionParameter_cell" flags="nn" index="1Q80Hy" />
       <concept id="1176749715029" name="de.slisson.mps.richtext.customcell.structure.QueryFunction_Cell" flags="in" index="3VJUX5" />
       <concept id="2490242408670732052" name="de.slisson.mps.richtext.customcell.structure.CellModel_CustomFactory" flags="ng" index="3ZSo5i">
         <child id="1073389446424" name="childCellModel" index="3EZMny" />
@@ -482,6 +489,12 @@
       <concept id="8843513109886180753" name="de.slisson.mps.tables.structure.TableCellQuerySharedInit" flags="ig" index="3NZen0" />
       <concept id="8843513109886034258" name="de.slisson.mps.tables.structure.SharedVariableReference" flags="ng" index="3NZx$3">
         <reference id="8843513109886034259" name="variableDeclaration" index="3NZx$2" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -690,8 +703,8 @@
                     <node concept="2YIFZM" id="5yPljRXMfh0" role="2Oq$k0">
                       <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
                       <ref role="37wK5l" to="f4zo:~CellTraversalUtil.iterateTree(jetbrains.mps.openapi.editor.cells.EditorCell,jetbrains.mps.openapi.editor.cells.EditorCell,boolean)" resolve="iterateTree" />
-                      <node concept="1Q80Hx" id="5yPljRXMfh1" role="37wK5m" />
-                      <node concept="1Q80Hx" id="5yPljRXMfh2" role="37wK5m" />
+                      <node concept="1Q80Hy" id="5yPljRXMfh1" role="37wK5m" />
+                      <node concept="1Q80Hy" id="5yPljRXMfh2" role="37wK5m" />
                       <node concept="3clFbT" id="5yPljRXMfh3" role="37wK5m">
                         <property role="3clFbU" value="true" />
                       </node>
@@ -763,11 +776,12 @@
                 </node>
               </node>
               <node concept="3clFbF" id="5yPljRXMlnA" role="3cqZAp">
-                <node concept="1Q80Hx" id="5yPljRXMln_" role="3clFbG" />
+                <node concept="1Q80Hy" id="5yPljRXMln_" role="3clFbG" />
               </node>
             </node>
           </node>
           <node concept="2rfBfz" id="6VI$CV8cQX5" role="3EZMny">
+            <ref role="1ERwB7" node="12YYios5HtQ" resolve="DecTab" />
             <node concept="1g0IQG" id="Nuz63eZkR2" role="1geGt4">
               <node concept="2R9Tw8" id="Nuz63eZo5N" role="3F10Kt">
                 <property role="VOm3f" value="true" />
@@ -3337,8 +3351,8 @@
                   <node concept="2YIFZM" id="4Cb98czUzUz" role="2Oq$k0">
                     <ref role="37wK5l" to="f4zo:~CellTraversalUtil.iterateTree(jetbrains.mps.openapi.editor.cells.EditorCell,jetbrains.mps.openapi.editor.cells.EditorCell,boolean)" resolve="iterateTree" />
                     <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
-                    <node concept="1Q80Hx" id="4Cb98czUzU$" role="37wK5m" />
-                    <node concept="1Q80Hx" id="4Cb98czUzU_" role="37wK5m" />
+                    <node concept="1Q80Hy" id="4Cb98czUzU$" role="37wK5m" />
+                    <node concept="1Q80Hy" id="4Cb98czUzU_" role="37wK5m" />
                     <node concept="3clFbT" id="4Cb98czUzUA" role="37wK5m">
                       <property role="3clFbU" value="true" />
                     </node>
@@ -3410,12 +3424,13 @@
               </node>
             </node>
             <node concept="3clFbF" id="4Cb98czUzV0" role="3cqZAp">
-              <node concept="1Q80Hx" id="4Cb98czUzV1" role="3clFbG" />
+              <node concept="1Q80Hy" id="4Cb98czUzV1" role="3clFbG" />
             </node>
           </node>
         </node>
         <node concept="3EZMnI" id="264ij5$S4n3" role="3EZMny">
           <node concept="2rfBfz" id="7WrYb3emAZX" role="3EZMnx">
+            <ref role="1ERwB7" node="12YYiosbeWL" resolve="IMultiDecTab" />
             <node concept="2reCLu" id="7WrYb3epq7$" role="2rf8GZ">
               <node concept="2reSaE" id="7WrYb3eptoX" role="2reCL6">
                 <ref role="2reCK$" to="kfo3:7FuUjk_57K$" resolve="rows" />
@@ -4138,6 +4153,362 @@
                 <node concept="3TrcHB" id="2FeCPoc7NZJ" role="2OqNvi">
                   <ref role="3TsBF5" to="kfo3:2FeCPobcUL$" resolve="negate" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="12YYios5HtQ">
+    <property role="3GE5qa" value="dectab" />
+    <property role="TrG5h" value="DecTab" />
+    <ref role="1h_SK9" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
+    <node concept="1hA7zw" id="12YYiosepE_" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="12YYiosepEA" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiosepEB" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiosepEC" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiosepED" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiosepEE" role="1tU5fm">
+                <ref role="3uigEE" to="9p8b:6Y0V2RJgPcd" resolve="TableRangeSelection" />
+              </node>
+              <node concept="0kSF2" id="12YYiosepEF" role="33vP2m">
+                <node concept="3uibUv" id="12YYiosepEG" role="0kSFW">
+                  <ref role="3uigEE" to="9p8b:6Y0V2RJgPcd" resolve="TableRangeSelection" />
+                </node>
+                <node concept="2OqwBi" id="12YYiosepEH" role="0kSFX">
+                  <node concept="2OqwBi" id="12YYiosepEI" role="2Oq$k0">
+                    <node concept="1Q80Hx" id="12YYiosepEJ" role="2Oq$k0" />
+                    <node concept="liA8E" id="12YYiosepEK" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="12YYiosepEL" role="2OqNvi">
+                    <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiosepEM" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiosepEN" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiosepEO" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiosepEP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiosepED" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiosepEQ" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiosepER" role="3uHU7B">
+                <property role="Xl_RC" value="###Delete dectab table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiorO9Q3" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBih/copy_action_id" />
+      <node concept="1hAIg9" id="12YYiorO9Q4" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiorO9Q5" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiorTfrP" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiorTfrQ" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiorTfr4" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiorTfrR" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiorTfrS" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiorTfrT" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiorTfrU" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiorTfrV" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiorO9Qo" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiorTgu5" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiorTgP5" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiorTgv1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiorTfrQ" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiorTgX4" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiorO9Qq" role="3uHU7B">
+                <property role="Xl_RC" value="###Copy dectab table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiorXRXL" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBii/cut_action_id" />
+      <node concept="1hAIg9" id="12YYiorXRXM" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiorXRXN" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiorXSm4" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiorXSm5" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiorXSm6" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiorXSm7" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiorXSm8" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiorXSm9" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiorXSma" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiorXSmb" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiorXSmc" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiorXSmd" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiorXSme" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiorXSmf" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiorXSm5" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiorXSmg" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiorXSmh" role="3uHU7B">
+                <property role="Xl_RC" value="###Cut dectab table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiorXRYI" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBij/paste_action_id" />
+      <node concept="1hAIg9" id="12YYiorXRYJ" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiorXRYK" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiorXSrD" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiorXSrE" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiorXSrF" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiorXSrG" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiorXSrH" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiorXSrI" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiorXSrJ" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiorXSrK" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiorXSrL" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiorXSrM" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiorXSrN" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiorXSrO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiorXSrE" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiorXSrP" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiorXSrQ" role="3uHU7B">
+                <property role="Xl_RC" value="###Paste lookup table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="12YYiosbeWL">
+    <property role="3GE5qa" value="multidectab.expr" />
+    <property role="TrG5h" value="IMultiDecTab" />
+    <ref role="1h_SK9" to="kfo3:7FuUjk_57Bw" resolve="IMultiDecTab" />
+    <node concept="1hA7zw" id="12YYiosep9o" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="12YYiosep9p" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiosep9q" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiosep9r" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiosep9s" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiosep9t" role="1tU5fm">
+                <ref role="3uigEE" to="9p8b:6Y0V2RJgPcd" resolve="TableRangeSelection" />
+              </node>
+              <node concept="0kSF2" id="12YYiosep9u" role="33vP2m">
+                <node concept="3uibUv" id="12YYiosep9v" role="0kSFW">
+                  <ref role="3uigEE" to="9p8b:6Y0V2RJgPcd" resolve="TableRangeSelection" />
+                </node>
+                <node concept="2OqwBi" id="12YYiosep9w" role="0kSFX">
+                  <node concept="2OqwBi" id="12YYiosep9x" role="2Oq$k0">
+                    <node concept="1Q80Hx" id="12YYiosep9y" role="2Oq$k0" />
+                    <node concept="liA8E" id="12YYiosep9z" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="12YYiosep9$" role="2OqNvi">
+                    <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiosep9_" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiosep9A" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiosep9B" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiosep9C" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiosep9s" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiosep9D" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiosep9E" role="3uHU7B">
+                <property role="Xl_RC" value="###Delete multidectab table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiosbf28" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBih/copy_action_id" />
+      <node concept="1hAIg9" id="12YYiosbf29" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiosbf2a" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiosbf2b" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiosbf2c" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiosbf2d" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiosbf2e" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiosbf2f" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiosbf2g" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiosbf2h" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiosbf2i" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiosbf2j" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiosbf2k" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiosbf2l" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiosbf2m" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiosbf2c" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiosbf2n" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiosbf2o" role="3uHU7B">
+                <property role="Xl_RC" value="###Copy multidectab table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiosbf2p" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBii/cut_action_id" />
+      <node concept="1hAIg9" id="12YYiosbf2q" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiosbf2r" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiosbf2s" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiosbf2t" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiosbf2u" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiosbf2v" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiosbf2w" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiosbf2x" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiosbf2y" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiosbf2z" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiosbf2$" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiosbf2_" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiosbf2A" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiosbf2B" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiosbf2t" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiosbf2C" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiosbf2D" role="3uHU7B">
+                <property role="Xl_RC" value="###Cut multidectab table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiosbf2E" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBij/paste_action_id" />
+      <node concept="1hAIg9" id="12YYiosbf2F" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiosbf2G" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiosbf2H" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiosbf2I" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiosbf2J" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiosbf2K" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiosbf2L" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiosbf2M" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiosbf2N" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiosbf2O" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiosbf2P" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiosbf2Q" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiosbf2R" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiosbf2S" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiosbf2I" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiosbf2T" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiosbf2U" role="3uHU7B">
+                <property role="Xl_RC" value="###Paste multidectab table:" />
               </node>
             </node>
           </node>

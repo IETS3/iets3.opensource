@@ -20,9 +20,13 @@
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="6dpw" ref="r:ea653f2d-c829-4182-b311-a544ef1f4c1f(de.slisson.mps.tables.runtime.gridmodel)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+    <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="9p8b" ref="r:2a738fcb-23b4-4d1d-9f52-870528559e28(de.slisson.mps.tables.runtime.selection)" />
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -41,6 +45,15 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
+        <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
+        <child id="1139535219969" name="item" index="1h_SK8" />
+      </concept>
+      <concept id="1139535280617" name="jetbrains.mps.lang.editor.structure.CellActionMapItem" flags="lg" index="1hA7zw">
+        <property id="1139535298778" name="actionId" index="1hAc7j" />
+        <child id="1139535280620" name="executeFunction" index="1hA7z_" />
+      </concept>
+      <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -48,6 +61,9 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -61,11 +77,16 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
+        <child id="1224071154657" name="classifierType" index="0kSFW" />
+        <child id="1224071154656" name="expression" index="0kSFX" />
+      </concept>
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -135,6 +156,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -179,7 +201,7 @@
       </concept>
     </language>
     <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell">
-      <concept id="1161622981231" name="de.slisson.mps.richtext.customcell.structure.ConceptFunctionParameter_cell" flags="nn" index="1Q80Hx" />
+      <concept id="1161622981231" name="de.slisson.mps.richtext.customcell.structure.ConceptFunctionParameter_cell" flags="nn" index="1Q80Hy" />
       <concept id="1176749715029" name="de.slisson.mps.richtext.customcell.structure.QueryFunction_Cell" flags="in" index="3VJUX4" />
       <concept id="2490242408670732052" name="de.slisson.mps.richtext.customcell.structure.CellModel_CustomFactory" flags="ng" index="3ZSo5i">
         <child id="1073389446424" name="childCellModel" index="3EZMny" />
@@ -261,6 +283,12 @@
       <concept id="1515263624310660132" name="de.slisson.mps.tables.structure.HeaderQuery_Delete" flags="ig" index="3x7d0o" />
       <concept id="6466068411884348300" name="de.slisson.mps.tables.structure.EditorCellHeader" flags="ng" index="1A0rlU">
         <child id="6466068411884348445" name="editorCell" index="1A0rbF" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -358,6 +386,7 @@
       </node>
       <node concept="3ZSo5i" id="5yPljRXSMMd" role="3EZMnx">
         <node concept="2rfBfz" id="55lPkJGG5bm" role="3EZMny">
+          <ref role="1ERwB7" node="12YYiorYEkI" resolve="LookupTable" />
           <node concept="2reCLu" id="55lPkJGGb3R" role="2rf8GZ">
             <node concept="2reCLk" id="55lPkJGGflD" role="2reCL6">
               <node concept="2r731s" id="55lPkJGGaL4" role="2reCL6">
@@ -1127,8 +1156,8 @@
                   <node concept="2YIFZM" id="5yPljRXMfh0" role="2Oq$k0">
                     <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
                     <ref role="37wK5l" to="f4zo:~CellTraversalUtil.iterateTree(jetbrains.mps.openapi.editor.cells.EditorCell,jetbrains.mps.openapi.editor.cells.EditorCell,boolean)" resolve="iterateTree" />
-                    <node concept="1Q80Hx" id="5yPljRXMfh1" role="37wK5m" />
-                    <node concept="1Q80Hx" id="5yPljRXMfh2" role="37wK5m" />
+                    <node concept="1Q80Hy" id="5yPljRXMfh1" role="37wK5m" />
+                    <node concept="1Q80Hy" id="5yPljRXMfh2" role="37wK5m" />
                     <node concept="3clFbT" id="5yPljRXMfh3" role="37wK5m">
                       <property role="3clFbU" value="true" />
                     </node>
@@ -1200,7 +1229,7 @@
               </node>
             </node>
             <node concept="3clFbF" id="5yPljRXMlnA" role="3cqZAp">
-              <node concept="1Q80Hx" id="5yPljRXMln_" role="3clFbG" />
+              <node concept="1Q80Hy" id="5yPljRXMln_" role="3clFbG" />
             </node>
           </node>
         </node>
@@ -1320,6 +1349,183 @@
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="3F0ifn" id="6dXnuBU76jD" role="2wV5jI">
       <property role="3F0ifm" value="Workaround to fix contributions to BaseConcept generated by grammarCells." />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="12YYiorYEkI">
+    <property role="TrG5h" value="LookupTable" />
+    <ref role="1h_SK9" to="8qwc:55lPkJGFLaQ" resolve="LookupTable" />
+    <node concept="1hA7zw" id="12YYiosep9o" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="12YYiosep9p" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiosep9q" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiosep9r" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiosep9s" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiosep9t" role="1tU5fm">
+                <ref role="3uigEE" to="9p8b:6Y0V2RJgPcd" resolve="TableRangeSelection" />
+              </node>
+              <node concept="0kSF2" id="12YYiosep9u" role="33vP2m">
+                <node concept="3uibUv" id="12YYiosep9v" role="0kSFW">
+                  <ref role="3uigEE" to="9p8b:6Y0V2RJgPcd" resolve="TableRangeSelection" />
+                </node>
+                <node concept="2OqwBi" id="12YYiosep9w" role="0kSFX">
+                  <node concept="2OqwBi" id="12YYiosep9x" role="2Oq$k0">
+                    <node concept="1Q80Hx" id="12YYiosep9y" role="2Oq$k0" />
+                    <node concept="liA8E" id="12YYiosep9z" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="12YYiosep9$" role="2OqNvi">
+                    <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiosep9_" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiosep9A" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiosep9B" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiosep9C" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiosep9s" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiosep9D" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiosep9E" role="3uHU7B">
+                <property role="Xl_RC" value="###Delete lookup table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiorO9Q3" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBih/copy_action_id" />
+      <node concept="1hAIg9" id="12YYiorO9Q4" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiorO9Q5" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiorTfrP" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiorTfrQ" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiorTfr4" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiorTfrR" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiorTfrS" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiorTfrT" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiorTfrU" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiorTfrV" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiorO9Qo" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiorTgu5" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiorTgP5" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiorTgv1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiorTfrQ" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiorTgX4" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiorO9Qq" role="3uHU7B">
+                <property role="Xl_RC" value="###Copy lookup table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiorXRXL" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBii/cut_action_id" />
+      <node concept="1hAIg9" id="12YYiorXRXM" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiorXRXN" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiorXSm4" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiorXSm5" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiorXSm6" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiorXSm7" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiorXSm8" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiorXSm9" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiorXSma" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiorXSmb" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiorXSmc" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiorXSmd" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiorXSme" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiorXSmf" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiorXSm5" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiorXSmg" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiorXSmh" role="3uHU7B">
+                <property role="Xl_RC" value="###Cut lookup table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="12YYiorXRYI" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABBij/paste_action_id" />
+      <node concept="1hAIg9" id="12YYiorXRYJ" role="1hA7z_">
+        <node concept="3clFbS" id="12YYiorXRYK" role="2VODD2">
+          <node concept="3cpWs8" id="12YYiorXSrD" role="3cqZAp">
+            <node concept="3cpWsn" id="12YYiorXSrE" role="3cpWs9">
+              <property role="TrG5h" value="selection" />
+              <node concept="3uibUv" id="12YYiorXSrF" role="1tU5fm">
+                <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+              </node>
+              <node concept="2OqwBi" id="12YYiorXSrG" role="33vP2m">
+                <node concept="2OqwBi" id="12YYiorXSrH" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="12YYiorXSrI" role="2Oq$k0" />
+                  <node concept="liA8E" id="12YYiorXSrJ" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="12YYiorXSrK" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="RRSsy" id="12YYiorXSrL" role="3cqZAp">
+            <property role="RRSoG" value="gZ5fh_4/error" />
+            <node concept="3cpWs3" id="12YYiorXSrM" role="RRSoy">
+              <node concept="2OqwBi" id="12YYiorXSrN" role="3uHU7w">
+                <node concept="37vLTw" id="12YYiorXSrO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="12YYiorXSrE" resolve="selection" />
+                </node>
+                <node concept="liA8E" id="12YYiorXSrP" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="12YYiorXSrQ" role="3uHU7B">
+                <property role="Xl_RC" value="###Paste lookup table:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
