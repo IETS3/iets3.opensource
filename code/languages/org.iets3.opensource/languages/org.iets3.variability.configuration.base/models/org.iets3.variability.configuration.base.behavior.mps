@@ -1242,8 +1242,8 @@
                 <ref role="37wK5l" node="6SMbav4Irm1" resolve="configurationRoot" />
               </node>
             </node>
-            <node concept="2qgKlT" id="6tuBwY6S72J" role="2OqNvi">
-              <ref role="37wK5l" to="1jcu:3NwcubmnBQ5" resolve="runSolverAsync" />
+            <node concept="2qgKlT" id="1OonrpW$_kz" role="2OqNvi">
+              <ref role="37wK5l" to="1jcu:7QODtLvTFnz" resolve="runManuallyAsync" />
             </node>
           </node>
         </node>
@@ -5074,6 +5074,30 @@
         <node concept="3uibUv" id="2l0SF9__exw" role="11_B2D">
           <ref role="3uigEE" to="33ny:~List" resolve="List" />
           <node concept="3uibUv" id="2l0SF9__exx" role="11_B2D">
+            <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1OonrpWrKwH" role="13h7CS">
+      <property role="TrG5h" value="runManuallyAsync" />
+      <ref role="13i0hy" to="1jcu:7QODtLvTFnz" resolve="runManuallyAsync" />
+      <node concept="3Tm1VV" id="1OonrpWrKwI" role="1B3o_S" />
+      <node concept="3clFbS" id="1OonrpWrKwU" role="3clF47">
+        <node concept="3clFbF" id="1OonrpWrVQr" role="3cqZAp">
+          <node concept="2OqwBi" id="1OonrpWrWhs" role="3clFbG">
+            <node concept="13iPFW" id="1OonrpWrVQm" role="2Oq$k0" />
+            <node concept="2qgKlT" id="1OonrpWrXEp" role="2OqNvi">
+              <ref role="37wK5l" node="2tL1yL1z_3M" resolve="solverResultsAsync" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="1OonrpWrKwV" role="3clF45">
+        <ref role="3uigEE" to="5zyv:~CompletableFuture" resolve="CompletableFuture" />
+        <node concept="3uibUv" id="1OonrpWrKwW" role="11_B2D">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="1OonrpWrKwX" role="11_B2D">
             <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
           </node>
         </node>
@@ -15254,12 +15278,12 @@
         <node concept="3clFbJ" id="5cx1lEoFsLD" role="3cqZAp">
           <node concept="3clFbS" id="5cx1lEoFsLE" role="3clFbx">
             <node concept="3clFbF" id="5cx1lEoFsLF" role="3cqZAp">
-              <node concept="2OqwBi" id="5cx1lEoFsLG" role="3clFbG">
+              <node concept="2OqwBi" id="1OonrpW$Au3" role="3clFbG">
                 <node concept="37vLTw" id="5cx1lEoFsLH" role="2Oq$k0">
                   <ref role="3cqZAo" node="5cx1lEoFsM2" resolve="config" />
                 </node>
-                <node concept="2qgKlT" id="6tuBwY6LK6k" role="2OqNvi">
-                  <ref role="37wK5l" to="1jcu:3NwcubmnBQ5" resolve="runSolverAsync" />
+                <node concept="2qgKlT" id="1OonrpW$Bdl" role="2OqNvi">
+                  <ref role="37wK5l" to="1jcu:7QODtLvTFnz" resolve="runManuallyAsync" />
                 </node>
               </node>
             </node>
@@ -16031,8 +16055,8 @@
             <node concept="37vLTw" id="1gnhaEd8tWO" role="2Oq$k0">
               <ref role="3cqZAo" node="1gnhaEd8izs" resolve="config" />
             </node>
-            <node concept="2qgKlT" id="1gnhaEd8tWP" role="2OqNvi">
-              <ref role="37wK5l" to="1jcu:3NwcubmnBQ5" resolve="runSolverAsync" />
+            <node concept="2qgKlT" id="1OonrpW$C2k" role="2OqNvi">
+              <ref role="37wK5l" to="1jcu:7QODtLvTFnz" resolve="runManuallyAsync" />
             </node>
           </node>
         </node>

@@ -439,8 +439,8 @@
                           <ref role="37wK5l" to="lte6:6SMbav4Irm1" resolve="configurationRoot" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="6tuBwY6XkEG" role="2OqNvi">
-                        <ref role="37wK5l" to="1jcu:3NwcubmnBQ5" resolve="runSolverAsync" />
+                      <node concept="2qgKlT" id="1OonrpW$Bdl" role="2OqNvi">
+                        <ref role="37wK5l" to="1jcu:7QODtLvTFnz" resolve="runManuallyAsync" />
                       </node>
                     </node>
                   </node>
