@@ -10505,7 +10505,7 @@
                       </node>
                       <node concept="2OqwBi" id="5$7ebOs7Sx7" role="33vP2m">
                         <node concept="37vLTw" id="5$7ebOs871q" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5$7ebOs871l" resolve="map" />
+                          <ref role="3cqZAo" node="5$7ebOs871l" resolve="afc2FixedValue" />
                         </node>
                         <node concept="liA8E" id="5$7ebOs7Sxc" role="2OqNvi">
                           <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
