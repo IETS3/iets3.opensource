@@ -5611,7 +5611,7 @@
       <node concept="3clFbS" id="4oS6BnMeey$" role="3clF47">
         <node concept="3clFbF" id="4oS6BnMegGX" role="3cqZAp">
           <node concept="1rXfSq" id="4oS6BnMegGW" role="3clFbG">
-            <ref role="37wK5l" node="4oS6BnMfzqu" resolve="appendNodes" />
+            <ref role="37wK5l" node="4oS6BnMfzqu" resolve="appendWithSpace" />
             <node concept="37vLTw" id="4oS6BnMegT2" role="37wK5m">
               <ref role="3cqZAo" node="4oS6BnMegqE" resolve="nodes" />
             </node>
@@ -5670,7 +5670,7 @@
       <node concept="3clFbS" id="4oS6BnMeBiS" role="3clF47">
         <node concept="3clFbF" id="4oS6BnMeBiT" role="3cqZAp">
           <node concept="1rXfSq" id="4oS6BnMeBiU" role="3clFbG">
-            <ref role="37wK5l" node="4oS6BnMfzqu" resolve="appendNodes" />
+            <ref role="37wK5l" node="4oS6BnMfzqu" resolve="appendWithSpace" />
             <node concept="37vLTw" id="4oS6BnMeBiV" role="37wK5m">
               <ref role="3cqZAo" node="4oS6BnMeBiZ" resolve="nodes" />
             </node>
@@ -5858,7 +5858,7 @@
             <ref role="37wK5l" to="kpbf:~TextAreaImpl.append(java.lang.CharSequence)" resolve="append" />
             <node concept="2OqwBi" id="4oS6BnMgGxc" role="37wK5m">
               <node concept="37vLTw" id="4oS6BnMgGxd" role="2Oq$k0">
-                <ref role="3cqZAo" node="4oS6BnMgGxj" resolve="node" />
+                <ref role="3cqZAo" node="4oS6BnMgGxj" resolve="enumMember" />
               </node>
               <node concept="liA8E" id="4oS6BnMgLHO" role="2OqNvi">
                 <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
@@ -5915,7 +5915,7 @@
       <node concept="3clFbS" id="4oS6BnMdvcH" role="3clF47">
         <node concept="3clFbF" id="4oS6BnMemO5" role="3cqZAp">
           <node concept="1rXfSq" id="4oS6BnMemO3" role="3clFbG">
-            <ref role="37wK5l" node="4oS6BnMehtj" resolve="appenList" />
+            <ref role="37wK5l" node="4oS6BnMehtj" resolve="appendList" />
             <node concept="2OqwBi" id="4oS6BnMeosg" role="37wK5m">
               <node concept="37vLTw" id="4oS6BnMen8b" role="2Oq$k0">
                 <ref role="3cqZAo" node="4oS6BnMdvit" resolve="nodes" />
@@ -5978,7 +5978,7 @@
         </node>
         <node concept="3clFbF" id="4oS6BnMfICE" role="3cqZAp">
           <node concept="1rXfSq" id="4oS6BnMfICC" role="3clFbG">
-            <ref role="37wK5l" node="4oS6BnMdvcE" resolve="appendNodes" />
+            <ref role="37wK5l" node="4oS6BnMdvcE" resolve="append" />
             <node concept="37vLTw" id="4oS6BnMfJc1" role="37wK5m">
               <ref role="3cqZAo" node="4oS6BnMfzqK" resolve="nodes" />
             </node>
@@ -6152,7 +6152,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4oS6BnMUIdT" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>

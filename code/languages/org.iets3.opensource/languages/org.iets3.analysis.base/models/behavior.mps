@@ -1556,7 +1556,7 @@
         <node concept="3clFbF" id="4oS6BnMfkeX" role="3cqZAp">
           <node concept="2OqwBi" id="4oS6BnMfkyQ" role="3clFbG">
             <node concept="37vLTw" id="4oS6BnMfkeV" role="2Oq$k0">
-              <ref role="3cqZAo" node="4oS6BnMfgFl" resolve="representation" />
+              <ref role="3cqZAo" node="4oS6BnMfgFl" resolve="text" />
             </node>
             <node concept="liA8E" id="4oS6BnMfkVv" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextAreaImpl.append(java.lang.CharSequence)" resolve="append" />
@@ -1569,7 +1569,7 @@
         <node concept="3clFbF" id="4oS6BnMgE_V" role="3cqZAp">
           <node concept="2OqwBi" id="4oS6BnMgEUO" role="3clFbG">
             <node concept="37vLTw" id="4oS6BnMgE_T" role="2Oq$k0">
-              <ref role="3cqZAo" node="4oS6BnMfgFl" resolve="representation" />
+              <ref role="3cqZAo" node="4oS6BnMfgFl" resolve="text" />
             </node>
             <node concept="liA8E" id="4oS6BnMgFmw" role="2OqNvi">
               <ref role="37wK5l" to="xfg9:4oS6BnMgQjs" resolve="appendWithSpace" />
@@ -1676,7 +1676,7 @@
         <node concept="3clFbF" id="4oS6BnMdlA3" role="3cqZAp">
           <node concept="2OqwBi" id="4oS6BnMdmE0" role="3clFbG">
             <node concept="37vLTw" id="4oS6BnMdlA1" role="2Oq$k0">
-              <ref role="3cqZAo" node="4oS6BnMcKyR" resolve="presentation" />
+              <ref role="3cqZAo" node="4oS6BnMcKyR" resolve="text" />
             </node>
             <node concept="liA8E" id="4oS6BnMdn4D" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextAreaImpl.append(java.lang.CharSequence)" resolve="append" />
@@ -1689,10 +1689,10 @@
         <node concept="3clFbF" id="4oS6BnMdnOn" role="3cqZAp">
           <node concept="2OqwBi" id="4oS6BnMdoIl" role="3clFbG">
             <node concept="37vLTw" id="4oS6BnMdnOl" role="2Oq$k0">
-              <ref role="3cqZAo" node="4oS6BnMcKyR" resolve="presentation" />
+              <ref role="3cqZAo" node="4oS6BnMcKyR" resolve="text" />
             </node>
             <node concept="liA8E" id="4oS6BnMdW2n" role="2OqNvi">
-              <ref role="37wK5l" to="xfg9:4oS6BnMeeyx" resolve="appendNodesVertically" />
+              <ref role="37wK5l" to="xfg9:4oS6BnMeeyx" resolve="appendVertically" />
               <node concept="2OqwBi" id="4oS6BnMdWvC" role="37wK5m">
                 <node concept="13iPFW" id="4oS6BnMdW6k" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="4oS6BnMdWP_" role="2OqNvi">
@@ -1705,7 +1705,7 @@
         <node concept="3clFbF" id="4oS6BnMaH9B" role="3cqZAp">
           <node concept="2OqwBi" id="4oS6BnMaHrn" role="3clFbG">
             <node concept="37vLTw" id="4oS6BnMaH9_" role="2Oq$k0">
-              <ref role="3cqZAo" node="4oS6BnMcKyR" resolve="presentation" />
+              <ref role="3cqZAo" node="4oS6BnMcKyR" resolve="text" />
             </node>
             <node concept="liA8E" id="4oS6BnMaH$3" role="2OqNvi">
               <ref role="37wK5l" to="xfg9:4oS6BnMUIdM" resolve="toString" />
