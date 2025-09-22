@@ -9,7 +9,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## September 2025
 
 ### Fixed
-
+- 'AssignmentCause' is made read-only.
+- Remove calls to deprecated method 'runSolverAsync' of 'ISolvable'.
+- Code structure refactoring of methos 'needsUpdateToSolverResult' of 'ConfiguratonSolverFacade'.
 - Variability: In the configuration editor, pressing Return/Enter anywhere will create an empty line after the configuration. Pressing Shift-Return/Enter on the header line of a configuration will create an empty line before the configuration.
 
 
