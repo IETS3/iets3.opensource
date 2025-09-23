@@ -1353,70 +1353,6 @@
       <property role="1SWRpm" value="VARIABILITY" />
     </node>
   </node>
-  <node concept="2S6QgY" id="5Bs7u20H4KQ">
-    <property role="3GE5qa" value="configuration" />
-    <property role="TrG5h" value="AttributeSetDefaultValue" />
-    <ref role="2ZfgGC" to="4ndm:30ECcbtLqSm" resolve="FeatureAttributeAssignment" />
-    <node concept="2S6ZIM" id="5Bs7u20H4KR" role="2ZfVej">
-      <node concept="3clFbS" id="5Bs7u20H4KS" role="2VODD2">
-        <node concept="3clFbF" id="5Bs7u20H4UF" role="3cqZAp">
-          <node concept="Xl_RD" id="5Bs7u20H4UE" role="3clFbG">
-            <property role="Xl_RC" value="Set Default Value Explicitly" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="5Bs7u20H4KT" role="2ZfgGD">
-      <node concept="3clFbS" id="5Bs7u20H4KU" role="2VODD2">
-        <node concept="3clFbF" id="5Bs7u20H8_L" role="3cqZAp">
-          <node concept="2OqwBi" id="5Bs7u20H9hx" role="3clFbG">
-            <node concept="2OqwBi" id="5Bs7u20H8Hv" role="2Oq$k0">
-              <node concept="2Sf5sV" id="5Bs7u20H8_K" role="2Oq$k0" />
-              <node concept="3TrEf2" id="5Bs7u20H8X6" role="2OqNvi">
-                <ref role="3Tt5mk" to="4ndm:30ECcbtOuaE" resolve="value" />
-              </node>
-            </node>
-            <node concept="2oxUTD" id="5Bs7u20H9Nv" role="2OqNvi">
-              <node concept="2OqwBi" id="5Bs7u20Hetf" role="2oxUTC">
-                <node concept="2OqwBi" id="5Bs7u20HdVb" role="2Oq$k0">
-                  <node concept="2Sf5sV" id="5Bs7u20HdL3" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="5Bs7u20He79" role="2OqNvi">
-                    <ref role="3Tt5mk" to="4ndm:30ECcbtMzQ8" resolve="attribute" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="3rysoRwsVMy" role="2OqNvi">
-                  <ref role="37wK5l" to="zccc:3rysoRwsNOP" resolve="defaultValue" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="5Bs7u20H9Qs" role="2ZfVeh">
-      <node concept="3clFbS" id="5Bs7u20H9Qt" role="2VODD2">
-        <node concept="3clFbF" id="5Bs7u20Ha0J" role="3cqZAp">
-          <node concept="2OqwBi" id="5Bs7u20HcBk" role="3clFbG">
-            <node concept="2OqwBi" id="5Bs7u20Hb13" role="2Oq$k0">
-              <node concept="2OqwBi" id="5Bs7u20HadQ" role="2Oq$k0">
-                <node concept="2Sf5sV" id="5Bs7u20Ha0I" role="2Oq$k0" />
-                <node concept="3TrEf2" id="5Bs7u20Hask" role="2OqNvi">
-                  <ref role="3Tt5mk" to="4ndm:30ECcbtMzQ8" resolve="attribute" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="3rysoRwsVVJ" role="2OqNvi">
-                <ref role="37wK5l" to="zccc:3rysoRwsNOP" resolve="defaultValue" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="5Bs7u20Hdtq" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1SWQZ3" id="5Bs7u20QY_1" role="lGtFl">
-      <property role="1SWRpm" value="VARIABILITY" />
-    </node>
-  </node>
   <node concept="2S6QgY" id="7VwzhOKx__2">
     <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="extractConfiguration" />
@@ -3284,6 +3220,7 @@
   <node concept="2S6QgY" id="AA5ncHGzfC">
     <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="setManualAssignmentCause" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="4ndm:30ECcbtLqSm" resolve="FeatureAttributeAssignment" />
     <node concept="2S6ZIM" id="AA5ncHGzfD" role="2ZfVej">
       <node concept="3clFbS" id="AA5ncHGzfE" role="2VODD2">
