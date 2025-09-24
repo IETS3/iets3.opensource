@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
+- Updated API for build.gentests and junit.interpreter.run.configuration
 - Variability: In the configuration editor, pressing Return/Enter anywhere will create an empty line after the configuration. Pressing Shift-Return/Enter on the header line of a configuration will create an empty line before the configuration.
 
 ### Removed
