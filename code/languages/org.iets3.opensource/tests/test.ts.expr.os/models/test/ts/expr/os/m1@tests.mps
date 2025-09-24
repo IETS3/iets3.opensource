@@ -41,8 +41,8 @@
     <import index="ym7l" ref="r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="h60k" ref="r:2ef874f0-eb83-423c-afd2-f0c0921489b8(org.iets3.core.expr.simpleTypes.migration)" />
-    <import index="1ka" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking(MPS.Core/)" />
     <import index="cp9o" ref="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)" />
+    <import index="1ka" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking(MPS.Core/)" />
     <import index="n0yb" ref="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
@@ -18698,9 +18698,7 @@
       <node concept="_iOnV" id="3N4k0eSJKEP" role="1qenE9">
         <property role="TrG5h" value="options" />
         <node concept="7CXmI" id="3N4k0eSJKJc" role="lGtFl">
-          <node concept="7OXhh" id="3N4k0eSJKJd" role="7EUXB">
-            <property role="G7GLP" value="true" />
-          </node>
+          <node concept="7OXhh" id="3N4k0eSJKJd" role="7EUXB" />
         </node>
         <node concept="2zPypq" id="3N4k0eSJPou" role="_iOnC">
           <property role="TrG5h" value="x" />
@@ -18861,6 +18859,23 @@
           <node concept="wdKpt" id="2$mkTNp$YhK" role="2lDidJ">
             <node concept="_emDc" id="24Fec41hnmE" role="2lDidJ">
               <ref role="_emDf" node="3N4k0eSJPou" resolve="x" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="6rS$_kMYE5Q" role="_iOnC">
+          <property role="TrG5h" value="xDeOptedTwice" />
+          <node concept="wdKpt" id="6rS$_kMYGUP" role="2lDidJ">
+            <node concept="wdKpt" id="6rS$_kMYH78" role="2lDidJ">
+              <node concept="_emDc" id="6rS$_kMYGUt" role="2lDidJ">
+                <ref role="_emDf" node="3N4k0eSJPou" resolve="x" />
+              </node>
+            </node>
+            <node concept="7CXmI" id="4OZmL8HJRId" role="lGtFl">
+              <node concept="29bkU" id="4OZmL8HJS8e" role="7EUXB">
+                <node concept="2PQEqo" id="4OZmL8HJS8f" role="3lydCh">
+                  <ref role="39XzEq" to="t4jv:6rS$_kMQ2Ju" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
