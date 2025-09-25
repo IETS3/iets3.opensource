@@ -9810,6 +9810,24 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3cpWs8" id="3_LUYfjwH3j" role="3cqZAp">
+                        <node concept="3cpWsn" id="3_LUYfjuLpx" role="3cpWs9">
+                          <property role="TrG5h" value="tnf" />
+                          <property role="3TUv4t" value="true" />
+                          <node concept="3uibUv" id="3_LUYfjuLpy" role="1tU5fm">
+                            <ref role="3uigEE" to="sfqd:1KnTQt4Oin6" resolve="TestNodeWrapperFactory" />
+                          </node>
+                          <node concept="2ShNRf" id="3_LUYfjuLpz" role="33vP2m">
+                            <node concept="1pGfFk" id="3_LUYfjuLp$" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="sfqd:2xHx_dl$Sv9" resolve="TestNodeWrapperFactory" />
+                              <node concept="37vLTw" id="3_LUYfjwL2Z" role="37wK5m">
+                                <ref role="3cqZAo" node="5oK6FmqngKE" resolve="platform" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3clFbF" id="wLSoj1uVlg" role="3cqZAp">
                         <node concept="2OqwBi" id="wLSoj1uXhZ" role="3clFbG">
                           <node concept="2OqwBi" id="wLSoj1uWad" role="2Oq$k0">
@@ -9829,11 +9847,15 @@
                                     <node concept="37vLTw" id="wLSoj1uZnZ" role="37vLTJ">
                                       <ref role="3cqZAo" node="wLSoj1u$_s" resolve="wrapper" />
                                     </node>
-                                    <node concept="2YIFZM" id="wLSoj1u$_u" role="37vLTx">
-                                      <ref role="37wK5l" to="sfqd:1KnTQt4Oin7" resolve="tryToWrap" />
-                                      <ref role="1Pybhc" to="sfqd:1KnTQt4Oin6" resolve="TestNodeWrapperFactory" />
-                                      <node concept="37vLTw" id="wLSoj1u$_v" role="37wK5m">
-                                        <ref role="3cqZAo" node="5oK6FmqmcJj" resolve="it" />
+                                    <node concept="2OqwBi" id="3_LUYfjwQQH" role="37vLTx">
+                                      <node concept="37vLTw" id="3_LUYfjwQQI" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="3_LUYfjuLpx" resolve="tnf" />
+                                      </node>
+                                      <node concept="liA8E" id="3_LUYfjwQQJ" role="2OqNvi">
+                                        <ref role="37wK5l" to="sfqd:2lMuMRTPps6" resolve="tryToWrap" />
+                                        <node concept="37vLTw" id="3_LUYfjwQQK" role="37wK5m">
+                                          <ref role="3cqZAo" node="5oK6FmqmcJj" resolve="it" />
+                                        </node>
                                       </node>
                                     </node>
                                   </node>

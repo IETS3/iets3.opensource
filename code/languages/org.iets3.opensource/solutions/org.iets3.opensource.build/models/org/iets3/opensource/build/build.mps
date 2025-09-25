@@ -7674,6 +7674,11 @@
             <ref role="3bR37D" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="10g7rYE2eLx" role="3bR37C">
+          <node concept="3bR9La" id="10g7rYE2eLy" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396fH" role="2G$12L">
         <property role="BnDLt" value="true" />
