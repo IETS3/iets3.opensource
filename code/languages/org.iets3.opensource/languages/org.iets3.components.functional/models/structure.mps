@@ -2,7 +2,7 @@
 <model ref="r:9e305a48-41d6-450d-b02f-7d9ad145eac2(org.iets3.components.functional.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -28,6 +28,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n">
@@ -1394,6 +1395,18 @@
           <property role="3PKj8l" value="000000" />
         </node>
       </node>
+      <node concept="1irR9n" id="2Vv3RHRsECQ" role="2rmM5M">
+        <property role="1irPjQ" value="1ng4Vf3UMuc/medium" />
+        <node concept="3PKj8D" id="2Vv3RHRsECR" role="3PKjn_">
+          <property role="3PKj8l" value="ffe570" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2Vv3RHRsECS" role="2rmM5M">
+        <property role="1irPi9" value="S" />
+        <node concept="3PKj8D" id="2Vv3RHRsECT" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="4iVHBBBal6r">
@@ -1417,6 +1430,18 @@
           <property role="3PKj8l" value="000000" />
         </node>
       </node>
+      <node concept="1irR9n" id="2Vv3RHRsECU" role="2rmM5M">
+        <property role="1irPjQ" value="1ng4Vf3UMuc/medium" />
+        <node concept="3PKj8D" id="2Vv3RHRsECV" role="3PKjn_">
+          <property role="3PKj8l" value="8370ff" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2Vv3RHRsECW" role="2rmM5M">
+        <property role="1irPi9" value="R" />
+        <node concept="3PKj8D" id="2Vv3RHRsECX" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="4iVHBBBf6Bw">
@@ -1437,6 +1462,18 @@
       <node concept="1irPie" id="4ZqgQ$WxTXZ" role="1irR9h">
         <property role="1irPi9" value="R" />
         <node concept="3PKj8D" id="4ZqgQ$WxTY6" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="2Vv3RHRsECY" role="2rmM5M">
+        <property role="1irPjQ" value="1ng4Vf3UMuc/medium" />
+        <node concept="3PKj8D" id="2Vv3RHRsECZ" role="3PKjn_">
+          <property role="3PKj8l" value="B590C6" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2Vv3RHRsED0" role="2rmM5M">
+        <property role="1irPi9" value="R" />
+        <node concept="3PKj8D" id="2Vv3RHRsED1" role="3PKjny">
           <property role="3PKj8l" value="000000" />
         </node>
       </node>

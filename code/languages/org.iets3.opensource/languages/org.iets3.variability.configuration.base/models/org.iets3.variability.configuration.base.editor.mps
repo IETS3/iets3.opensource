@@ -98,6 +98,9 @@
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
       </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -656,11 +659,8 @@
                 </node>
               </node>
             </node>
-            <node concept="3F0A7n" id="zJQZm7$hC4" role="1QoVPY">
-              <ref role="1NtTu8" to="4ndm:zJQZm7Q2Fm" resolve="assignmentCause" />
-              <node concept="VechU" id="67408HOpX3w" role="3F10Kt">
-                <property role="Vb096" value="hGRnIZc/lightBlue" />
-              </node>
+            <node concept="PMmxH" id="fgtKqAw$65" role="1QoVPY">
+              <ref role="PMmxG" node="fgtKqAsHZd" resolve="AssignmentCauseEditor" />
             </node>
           </node>
         </node>
@@ -727,11 +727,8 @@
                     <property role="VOm3f" value="true" />
                   </node>
                 </node>
-                <node concept="3F0A7n" id="zJQZm87vi4" role="3EZMnx">
-                  <ref role="1NtTu8" to="4ndm:zJQZm7Q2Fm" resolve="assignmentCause" />
-                  <node concept="VechU" id="zJQZm87vib" role="3F10Kt">
-                    <property role="Vb096" value="hGRnIZc/lightBlue" />
-                  </node>
+                <node concept="PMmxH" id="fgtKqAw$lS" role="3EZMnx">
+                  <ref role="PMmxG" node="fgtKqAsHZd" resolve="AssignmentCauseEditor" />
                 </node>
               </node>
               <node concept="3EZMnI" id="zJQZm8svLE" role="1QoS34">
@@ -747,11 +744,8 @@
                     <property role="VOm3f" value="true" />
                   </node>
                 </node>
-                <node concept="3F0A7n" id="zJQZm8sw3F" role="3EZMnx">
-                  <ref role="1NtTu8" to="4ndm:zJQZm7Q2Fm" resolve="assignmentCause" />
-                  <node concept="VechU" id="zJQZm8sw3G" role="3F10Kt">
-                    <property role="Vb096" value="hGRnIZc/lightBlue" />
-                  </node>
+                <node concept="PMmxH" id="fgtKqAw$lR" role="3EZMnx">
+                  <ref role="PMmxG" node="fgtKqAsHZd" resolve="AssignmentCauseEditor" />
                 </node>
               </node>
             </node>
@@ -768,11 +762,8 @@
                   <property role="VOm3f" value="true" />
                 </node>
               </node>
-              <node concept="3F0A7n" id="zJQZm8swpY" role="3EZMnx">
-                <ref role="1NtTu8" to="4ndm:zJQZm7Q2Fm" resolve="assignmentCause" />
-                <node concept="VechU" id="zJQZm8swpZ" role="3F10Kt">
-                  <property role="Vb096" value="hGRnIZc/lightBlue" />
-                </node>
+              <node concept="PMmxH" id="fgtKqAw$lQ" role="3EZMnx">
+                <ref role="PMmxG" node="fgtKqAsHZd" resolve="AssignmentCauseEditor" />
               </node>
             </node>
           </node>
@@ -2244,8 +2235,8 @@
                   <ref role="37wK5l" to="lte6:6SMbav4Irm1" resolve="configurationRoot" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="6tuBwY6Xl$8" role="2OqNvi">
-                <ref role="37wK5l" to="1jcu:3NwcubmnBQ5" resolve="runSolverAsync" />
+              <node concept="2qgKlT" id="1OonrpW$Qu6" role="2OqNvi">
+                <ref role="37wK5l" to="1jcu:7QODtLvTFnz" resolve="runManuallyAsync" />
               </node>
             </node>
           </node>
@@ -3679,8 +3670,8 @@
                 <node concept="37vLTw" id="7PDiqB3$ty8" role="2Oq$k0">
                   <ref role="3cqZAo" node="7PDiqB3$txT" resolve="fmc" />
                 </node>
-                <node concept="2qgKlT" id="6tuBwY6Xlay" role="2OqNvi">
-                  <ref role="37wK5l" to="1jcu:3NwcubmnBQ5" resolve="runSolverAsync" />
+                <node concept="2qgKlT" id="1OonrpW$Bdl" role="2OqNvi">
+                  <ref role="37wK5l" to="1jcu:7QODtLvTFnz" resolve="runManuallyAsync" />
                 </node>
               </node>
             </node>
@@ -4031,6 +4022,20 @@
       <property role="1hAc7j" value="7P1WhNABBik/paste_before_action_id" />
       <node concept="1hAIg9" id="1lcLMGyB4tP" role="1hA7z_">
         <node concept="3clFbS" id="1lcLMGyB4tQ" role="2VODD2" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="fgtKqAsHZd">
+    <property role="TrG5h" value="AssignmentCauseEditor" />
+    <ref role="1XX52x" to="4ndm:30ECcbtLqSm" resolve="FeatureAttributeAssignment" />
+    <node concept="3F0A7n" id="fgtKqAsHZf" role="2wV5jI">
+      <property role="1Intyy" value="true" />
+      <ref role="1NtTu8" to="4ndm:zJQZm7Q2Fm" resolve="assignmentCause" />
+      <node concept="VechU" id="fgtKqAsJCM" role="3F10Kt">
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
+      </node>
+      <node concept="xShMh" id="fgtKqA$5_r" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>
