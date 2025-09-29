@@ -155,6 +155,7 @@
     <dependency reexport="false">cbb71b24-470d-4374-b77c-ebd0d3b3bb27(org.iets3.core.expr.plugin)</dependency>
     <dependency reexport="false">34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)</dependency>
     <dependency reexport="false">52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)</dependency>
+    <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3b3dc28-fee3-49e1-a46e-685e96389094:com.mbeddr.mpsutil.bldoc" version="0" />
