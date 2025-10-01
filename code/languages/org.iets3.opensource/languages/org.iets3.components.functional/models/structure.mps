@@ -153,6 +153,7 @@
     <property role="TrG5h" value="DataItemPortType" />
     <property role="3GE5qa" value="data" />
     <property role="EcuMT" value="7804632404593474274" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="63szzhgR20q" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="constraint" />

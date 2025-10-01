@@ -430,6 +430,7 @@
   <node concept="1TIwiD" id="3dTPcTTh7Np">
     <property role="EcuMT" value="3709229751379197145" />
     <property role="TrG5h" value="ValidateStringResultType" />
+    <property role="34LRSv" value="stringvalidationresult" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="41vYFO2KF5R" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />

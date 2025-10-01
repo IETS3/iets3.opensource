@@ -11,6 +11,7 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -100,6 +101,7 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -336,6 +338,48 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="4oS6BnNI_LH" role="13h7CS">
+      <property role="TrG5h" value="getPresentation" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="4oS6BnNI_M8" role="1B3o_S" />
+      <node concept="3clFbS" id="4oS6BnNI_M9" role="3clF47">
+        <node concept="3clFbF" id="4oS6BnNI_Th" role="3cqZAp">
+          <node concept="3cpWs3" id="4oS6BnNIEoj" role="3clFbG">
+            <node concept="2OqwBi" id="4oS6BnNIFGS" role="3uHU7w">
+              <node concept="2OqwBi" id="4oS6BnNIEN$" role="2Oq$k0">
+                <node concept="13iPFW" id="4oS6BnNIEpk" role="2Oq$k0" />
+                <node concept="1mfA1w" id="4oS6BnNIF1I" role="2OqNvi" />
+              </node>
+              <node concept="2qgKlT" id="4oS6BnNIGcg" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="4oS6BnNICr7" role="3uHU7B">
+              <node concept="3cpWs3" id="4oS6BnNIB9n" role="3uHU7B">
+                <node concept="Xl_RD" id="4oS6BnNI_Tg" role="3uHU7B">
+                  <property role="Xl_RC" value="@syntax{" />
+                </node>
+                <node concept="2OqwBi" id="4oS6BnNIBUg" role="3uHU7w">
+                  <node concept="2OqwBi" id="4oS6BnNIBzy" role="2Oq$k0">
+                    <node concept="13iPFW" id="4oS6BnNIB9L" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="4oS6BnNIBL8" role="2OqNvi">
+                      <ref role="3Tt5mk" to="1xa4:1u1U5lETVju" resolve="syntax" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="4oS6BnNIC5A" role="2OqNvi">
+                    <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="4oS6BnNICrY" role="3uHU7w">
+                <property role="Xl_RC" value="}\n" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4oS6BnNI_Ma" role="3clF45" />
     </node>
   </node>
 </model>
