@@ -11,7 +11,7 @@ import java.time.format.FormatStyle
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
-        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
+        maven { url = 'https://artifacts.itemis.cloud/repository/maven-mps/' }
     }
 }
 
@@ -33,7 +33,7 @@ repositories {
     // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
     for (repoUrl in project.dependencyRepositories) {
         maven {
-            url repoUrl
+            url = repoUrl
         }
     }
     mavenCentral()
@@ -125,8 +125,8 @@ ext.artifactsDir = buildDirPath('artifacts')
 ext.reportsDir = buildDirPath('reports')
 
 wrapper {
-    gradleVersion '8.13'
-    distributionType Wrapper.DistributionType.ALL
+    gradleVersion = '8.13'
+    distributionType = Wrapper.DistributionType.ALL
 }
 
 configurations {
@@ -235,26 +235,26 @@ if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
 ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
-ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = project.configurations.junitAnt.fileCollection { true }
+ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = project.configurations.junitAnt.getIncoming().files
 afterEvaluate {
     project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
 }
 
 task buildAllScripts(type: BuildLanguages, dependsOn: resolveDependencies) {
-    script "$buildDir/scripts/build-allScripts.xml"
+    script = "$buildDir/scripts/build-allScripts.xml"
 }
 
 task prebuild(type: BuildLanguages, dependsOn: buildAllScripts) {
-    script "$buildDir/scripts/prebuild.xml"
+    script = "$buildDir/scripts/prebuild.xml"
     targets "clean", "generate"
 }
 
 task buildLanguages(type: BuildLanguages, dependsOn: prebuild) {
-    script "$buildDir/scripts/build-languages.xml"
+    script = "$buildDir/scripts/build-languages.xml"
 }
 
 task execTestsByInterpreter(type: TestLanguages, dependsOn: buildLanguages) {
-    script "$buildDir/scripts/build-testInterpreter.xml"
+    script = "$buildDir/scripts/build-testInterpreter.xml"
     targets "generate","build"
     doLast {
         ant.taskdef(name: 'junitInterpreterReport',
@@ -270,7 +270,7 @@ task execTestsByInterpreter(type: TestLanguages, dependsOn: buildLanguages) {
 
 
 task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
-    script "$buildDir/scripts/build-tests.xml"
+    script = "$buildDir/scripts/build-tests.xml"
     doLast {
         ant.taskdef(name: 'junitreport',
                 classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
@@ -284,7 +284,7 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
 }
 
 task failOnTestError() {
-    description 'evaluate junit result and fail on error'
+    description = 'evaluate junit result and fail on error'
     doLast {
         
         def juniXml = file('TESTS-TestSuites.xml')
@@ -385,7 +385,7 @@ task packageTests(type: Zip, dependsOn: buildAndRunTests) {
 }
 
 task buildDistroWithDependencies(type: RunAntScript, dependsOn: buildLanguages) {
-    script "$buildDir/scripts/build-distro.xml"
+    script = "$buildDir/scripts/build-distro.xml"
     targets 'clean', 'assemble'
 }
 
@@ -466,8 +466,8 @@ publishing {
 
     publications {
         opensource(MavenPublication) {
-            groupId group
-            artifactId name
+            groupId = group
+            artifactId = name
             artifact packageLanguages
 
             addDependency(pom, configurations.languageLibs)
@@ -476,8 +476,8 @@ publishing {
         }
 
         tests(MavenPublication) {
-            groupId 'org.iets3.opensource'
-            artifactId 'tests'
+            groupId = 'org.iets3.opensource'
+            artifactId = 'tests'
             artifact packageTests
             addDependency(pom, 'org.iets3', 'opensource', project.version, 'zip')
 
@@ -487,14 +487,14 @@ publishing {
         def runtimesDir = new File(artifactsDir, 'org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os')
 
         'org.iets3.core.expr.base.shared.runtime'(MavenPublication) {
-            groupId 'org.iets3.core.expr.base.shared'
-            artifactId 'shared-runtime'
+            groupId = 'org.iets3.core.expr.base.shared'
+            artifactId = 'shared-runtime'
             artifact(new File(runtimesDir, 'org.iets3.core.expr.base.shared.runtime.jar')) {
                 builtBy buildLanguages
             }
             artifact(new File(runtimesDir, 'org.iets3.core.expr.base.shared.runtime-src.jar')) {
                 builtBy buildLanguages
-                classifier 'sources'
+                classifier = 'sources'
             }
 
             pom additionalPomInfo
@@ -502,14 +502,14 @@ publishing {
 
         'org.iets3.core.expr.simpleTypes.runtime'(MavenPublication) {
             // GitHub Packages refuse uppercase artifactId (not sure about groupId) so use lower case here
-            groupId 'org.iets3.core.expr.simpletypes'
-            artifactId 'simpletypes-runtime'
+            groupId = 'org.iets3.core.expr.simpletypes'
+            artifactId = 'simpletypes-runtime'
             artifact(new File(runtimesDir, 'org.iets3.core.expr.simpleTypes.runtime.jar')) {
                 builtBy buildLanguages
             }
             artifact(new File(runtimesDir, 'org.iets3.core.expr.simpleTypes.runtime-src.jar')) {
                 builtBy buildLanguages
-                classifier 'sources'
+                classifier = 'sources'
             }
 
             addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
@@ -518,14 +518,14 @@ publishing {
         }
 
         'org.iets3.core.expr.datetime.runtime'(MavenPublication) {
-            groupId 'org.iets3.core.expr.datetime'
-            artifactId 'datetime-runtime'
+            groupId = 'org.iets3.core.expr.datetime'
+            artifactId = 'datetime-runtime'
             artifact(new File(runtimesDir, 'org.iets3.core.expr.datetime.runtime.jar')) {
                 builtBy buildLanguages
             }
             artifact(new File(runtimesDir, 'org.iets3.core.expr.datetime.runtime-src.jar')) {
                 builtBy buildLanguages
-                classifier 'sources'
+                classifier = 'sources'
             }
 
             addDependency(pom, 'org.iets3.core.expr.base.shared', 'shared-runtime', project.version)
@@ -534,14 +534,14 @@ publishing {
         }
 
         'org.iets3.core.expr.temporal.runtime'(MavenPublication) {
-            groupId 'org.iets3.core.expr.temporal'
-            artifactId 'temporal-runtime'
+            groupId = 'org.iets3.core.expr.temporal'
+            artifactId = 'temporal-runtime'
             artifact(new File(runtimesDir, 'org.iets3.core.expr.temporal.runtime.jar')) {
                 builtBy buildLanguages
             }
             artifact(new File(runtimesDir, 'org.iets3.core.expr.temporal.runtime-src.jar')) {
                 builtBy buildLanguages
-                classifier 'sources'
+                classifier = 'sources'
             }
 
             addDependency(pom, 'org.iets3.core.expr.datetime', 'datetime-runtime', project.version)
