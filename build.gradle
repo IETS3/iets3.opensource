@@ -8,13 +8,6 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
-//will pull the groovy classes/types from nexus to the classpath
-buildscript {
-    repositories {
-        maven { url = 'https://artifacts.itemis.cloud/repository/maven-mps/' }
-    }
-}
-
 plugins {
     id 'base'
     id 'maven-publish'
