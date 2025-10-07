@@ -6246,8 +6246,14 @@
         <node concept="3clFbJ" id="62RvBIbuhtp" role="3cqZAp">
           <node concept="3clFbS" id="62RvBIbuhtq" role="3clFbx">
             <node concept="3cpWs6" id="4wse97wCg2x" role="3cqZAp">
-              <node concept="BsUDl" id="4wse97wCg2w" role="3cqZAk">
-                <ref role="37wK5l" node="4wse97wCg2r" resolve="skipSolverRunInfo" />
+              <node concept="BsUDl" id="7WsNHxjpm$n" role="3cqZAk">
+                <ref role="37wK5l" node="7WsNHxjlUA1" resolve="skipSolverRunInfoAux" />
+                <node concept="Xl_RD" id="7WsNHxjpm$o" role="37wK5m">
+                  <property role="Xl_RC" value="Async solver execution is blocked by complete-flag" />
+                </node>
+                <node concept="Xl_RD" id="7WsNHxjpm$p" role="37wK5m">
+                  <property role="Xl_RC" value="Check already running" />
+                </node>
               </node>
             </node>
           </node>
@@ -6256,6 +6262,70 @@
               <node concept="13iPFW" id="62RvBIbuhtB" role="2Oq$k0" />
               <node concept="3TrcHB" id="62RvBIbuhtC" role="2OqNvi">
                 <ref role="3TsBF5" to="4ndm:49ZhMclDeUT" resolve="complete" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7WsNHxjnADZ" role="3cqZAp" />
+        <node concept="3SKdUt" id="7WsNHxjnCy7" role="3cqZAp">
+          <node concept="1PaTwC" id="7WsNHxjnCy8" role="1aUNEU">
+            <node concept="3oM_SD" id="7WsNHxjnCy9" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD4R" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD4T" role="1PaTwD">
+              <property role="3oM_SC" value="root" />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD5a" role="1PaTwD">
+              <property role="3oM_SC" value="feature" />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD5r" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD5s" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD5t" role="1PaTwD">
+              <property role="3oM_SC" value="selected," />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD5I" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD5J" role="1PaTwD">
+              <property role="3oM_SC" value="configuration" />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD5K" role="1PaTwD">
+              <property role="3oM_SC" value="cannot" />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD5L" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="7WsNHxjnD5M" role="1PaTwD">
+              <property role="3oM_SC" value="solved" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7WsNHxjn9eX" role="3cqZAp">
+          <node concept="3clFbS" id="7WsNHxjn9eY" role="3clFbx">
+            <node concept="3cpWs6" id="7WsNHxjn9eZ" role="3cqZAp">
+              <node concept="BsUDl" id="7WsNHxjpykP" role="3cqZAk">
+                <ref role="37wK5l" node="7WsNHxjlUA1" resolve="skipSolverRunInfoAux" />
+                <node concept="Xl_RD" id="7WsNHxjpykQ" role="37wK5m">
+                  <property role="Xl_RC" value="Async solver execution is blocked because configuration is inconsistent" />
+                </node>
+                <node concept="Xl_RD" id="7WsNHxjpykR" role="37wK5m">
+                  <property role="Xl_RC" value="Inconsistent configuration" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="7WsNHxjn9f2" role="3clFbw">
+            <node concept="2OqwBi" id="7WsNHxjn9f3" role="3fr31v">
+              <node concept="13iPFW" id="7WsNHxjn9f4" role="2Oq$k0" />
+              <node concept="2qgKlT" id="7WsNHxjn9f5" role="2OqNvi">
+                <ref role="37wK5l" node="79zES$XKwaU" resolve="isSelected" />
               </node>
             </node>
           </node>
@@ -7279,54 +7349,67 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="4wse97wCg2r" role="13h7CS">
+    <node concept="13i0hz" id="7WsNHxjlUA1" role="13h7CS">
       <property role="TrG5h" value="skipSolverRunInfo" />
-      <node concept="3Tm6S6" id="4wse97wCg2s" role="1B3o_S" />
-      <node concept="3uibUv" id="4wse97wCg2t" role="3clF45">
-        <ref role="3uigEE" to="5zyv:~CompletableFuture" resolve="CompletableFuture" />
-        <node concept="3uibUv" id="4wse97wCg2u" role="11_B2D">
-          <ref role="3uigEE" to="33ny:~List" resolve="List" />
-          <node concept="3uibUv" id="4wse97wCg2v" role="11_B2D">
-            <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
+      <node concept="3Tm6S6" id="7WsNHxjm6W7" role="1B3o_S" />
+      <node concept="3clFbS" id="7WsNHxjlUA4" role="3clF47">
+        <node concept="RRSsy" id="7WsNHxjm7ki" role="3cqZAp">
+          <node concept="37vLTw" id="7WsNHxjpaVO" role="RRSoy">
+            <ref role="3cqZAo" node="7WsNHxjm7iM" resolve="msg1" />
           </node>
         </node>
-      </node>
-      <node concept="3clFbS" id="4wse97wCg29" role="3clF47">
-        <node concept="RRSsy" id="4wse97wCg2a" role="3cqZAp">
-          <node concept="Xl_RD" id="4wse97wCg2b" role="RRSoy">
-            <property role="Xl_RC" value="Async solver execution is blocked by complete-flag" />
-          </node>
-        </node>
-        <node concept="3cpWs6" id="4wse97wCg2c" role="3cqZAp">
-          <node concept="2YIFZM" id="4wse97wCg2d" role="3cqZAk">
+        <node concept="3cpWs6" id="7WsNHxjm7kk" role="3cqZAp">
+          <node concept="2YIFZM" id="7WsNHxjm7kl" role="3cqZAk">
             <ref role="37wK5l" to="5zyv:~CompletableFuture.completedFuture(java.lang.Object)" resolve="completedFuture" />
             <ref role="1Pybhc" to="5zyv:~CompletableFuture" resolve="CompletableFuture" />
-            <node concept="2YIFZM" id="4wse97wCg2e" role="37wK5m">
+            <node concept="2YIFZM" id="7WsNHxjm7km" role="37wK5m">
               <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
               <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-              <node concept="2YIFZM" id="5EF7XxJbmP4" role="37wK5m">
+              <node concept="2YIFZM" id="7WsNHxjm7kn" role="37wK5m">
                 <ref role="37wK5l" to="gdgh:2esy_3orpPr" resolve="make" />
                 <ref role="1Pybhc" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
-                <node concept="Rm8GO" id="5EF7XxJbmP5" role="37wK5m">
+                <node concept="Rm8GO" id="7WsNHxjm7ko" role="37wK5m">
                   <ref role="Rm8GQ" to="gdgh:57dmM_UsCk4" resolve="Info" />
-                  <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
+                  <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
                 </node>
-                <node concept="Xl_RD" id="5EF7XxJbmP6" role="37wK5m">
-                  <property role="Xl_RC" value="Skipping: Check already running" />
+                <node concept="3cpWs3" id="7WsNHxjpgk3" role="37wK5m">
+                  <node concept="37vLTw" id="7WsNHxjphll" role="3uHU7w">
+                    <ref role="3cqZAo" node="7WsNHxjm7jo" resolve="msg2" />
+                  </node>
+                  <node concept="Xl_RD" id="7WsNHxjpcxY" role="3uHU7B">
+                    <property role="Xl_RC" value="Skipping: " />
+                  </node>
                 </node>
-                <node concept="2YIFZM" id="5EF7XxJbmP7" role="37wK5m">
+                <node concept="2YIFZM" id="7WsNHxjm7kq" role="37wK5m">
                   <ref role="37wK5l" to="33ny:~Collections.emptyList()" resolve="emptyList" />
                   <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-                  <node concept="3Tqbb2" id="5EF7XxJbmP8" role="3PaCim" />
+                  <node concept="3Tqbb2" id="7WsNHxjm7kr" role="3PaCim" />
                 </node>
-                <node concept="10Nm6u" id="5EF7XxJbmP9" role="37wK5m" />
+                <node concept="10Nm6u" id="7WsNHxjm7ks" role="37wK5m" />
               </node>
-              <node concept="3uibUv" id="4wse97wCg2k" role="3PaCim">
+              <node concept="3uibUv" id="7WsNHxjm7kt" role="3PaCim">
                 <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
               </node>
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3uibUv" id="7WsNHxjm6Wp" role="3clF45">
+        <ref role="3uigEE" to="5zyv:~CompletableFuture" resolve="CompletableFuture" />
+        <node concept="3uibUv" id="7WsNHxjm6Wq" role="11_B2D">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="7WsNHxjm6Wr" role="11_B2D">
+            <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7WsNHxjm7iM" role="3clF46">
+        <property role="TrG5h" value="msg1" />
+        <node concept="17QB3L" id="7WsNHxjm7iL" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7WsNHxjm7jo" role="3clF46">
+        <property role="TrG5h" value="msg2" />
+        <node concept="17QB3L" id="7WsNHxjm7jG" role="1tU5fm" />
       </node>
     </node>
     <node concept="13i0hz" id="1VDhrxM$80W" role="13h7CS">
