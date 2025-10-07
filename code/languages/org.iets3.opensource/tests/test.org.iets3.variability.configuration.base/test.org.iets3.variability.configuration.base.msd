@@ -51,7 +51,7 @@
     <language slang="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" version="11" />
     <language slang="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" version="6" />
     <language slang="l:9b66c5c9-38bf-4315-a96f-9f4e212c69cb:org.iets3.variability.base" version="0" />
-    <language slang="l:71226ee2-bbc4-45d2-a41d-20b97237156c:org.iets3.variability.configuration.base" version="1" />
+    <language slang="l:71226ee2-bbc4-45d2-a41d-20b97237156c:org.iets3.variability.configuration.base" version="2" />
     <language slang="l:165f1d05-2506-4544-895e-1424f54166ec:org.iets3.variability.featuremodel.base" version="24" />
   </languageVersions>
   <dependencyVersions>
