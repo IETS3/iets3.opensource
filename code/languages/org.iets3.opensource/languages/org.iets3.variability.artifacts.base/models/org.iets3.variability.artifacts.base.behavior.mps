@@ -19401,7 +19401,7 @@
                 <node concept="2ShNRf" id="5zD5ovlZJr_" role="37wK5m">
                   <node concept="1pGfFk" id="5zD5ovlZJrA" role="2ShVmc">
                     <property role="373rjd" value="true" />
-                    <ref role="37wK5l" node="5zD5ovlOfUg" />
+                    <ref role="37wK5l" node="5zD5ovlOfUg" resolve="ReferenceResolved" />
                     <node concept="37vLTw" id="5zD5ovlZJrB" role="37wK5m">
                       <ref role="3cqZAo" node="6EGd7Wxz2j" resolve="ref" />
                     </node>
@@ -21792,7 +21792,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2VCmq785I2C" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="13hLZK" id="2BZZUn12rpM" role="13h7CW">
