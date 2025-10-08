@@ -21669,7 +21669,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="1dm_BztJgP7" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="13i0hz" id="2BZZUn1TtlC" role="13h7CS">
