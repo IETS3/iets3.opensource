@@ -3251,7 +3251,7 @@
         <node concept="3clFbS" id="x8tpS_NsQ_" role="3clFbx">
           <node concept="2MkqsV" id="x8tpS_NwyQ" role="3cqZAp">
             <node concept="Xl_RD" id="x8tpS_Nwzb" role="2MkJ7o">
-              <property role="Xl_RC" value="must not be 0" />
+              <property role="Xl_RC" value="Upper bound must not be 0" />
             </node>
             <node concept="2ODE4t" id="x8tpS_Nw$_" role="1urrC5">
               <ref role="2ODJFN" to="874t:x8tpS_w3Qp" resolve="upperBound" />
@@ -3284,7 +3284,7 @@
             <node concept="3clFbS" id="x8tpS_Nx86" role="3clFbx">
               <node concept="2MkqsV" id="x8tpS_NxyL" role="3cqZAp">
                 <node concept="Xl_RD" id="x8tpS_NxyM" role="2MkJ7o">
-                  <property role="Xl_RC" value="lower bound must be smaller then upper bound" />
+                  <property role="Xl_RC" value="Lower bound must be smaller then upper bound" />
                 </node>
                 <node concept="1YBJjd" id="x8tpS_NxyN" role="1urrMF">
                   <ref role="1YBMHb" node="x8tpS_NosR" resolve="cardinality" />
