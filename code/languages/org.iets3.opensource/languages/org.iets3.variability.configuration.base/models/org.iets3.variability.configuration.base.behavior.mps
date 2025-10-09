@@ -6303,7 +6303,7 @@
           <node concept="3clFbS" id="62RvBIbuhtq" role="3clFbx">
             <node concept="3cpWs6" id="4wse97wCg2x" role="3cqZAp">
               <node concept="BsUDl" id="7WsNHxjpm$n" role="3cqZAk">
-                <ref role="37wK5l" node="7WsNHxjlUA1" resolve="skipSolverRunInfoAux" />
+                <ref role="37wK5l" node="7WsNHxjlUA1" resolve="skipSolverRunInfo" />
                 <node concept="Xl_RD" id="7WsNHxjpm$o" role="37wK5m">
                   <property role="Xl_RC" value="Async solver execution is blocked by complete-flag" />
                 </node>
@@ -6367,7 +6367,7 @@
           <node concept="3clFbS" id="7WsNHxjn9eY" role="3clFbx">
             <node concept="3cpWs6" id="7WsNHxjn9eZ" role="3cqZAp">
               <node concept="BsUDl" id="7WsNHxjpykP" role="3cqZAk">
-                <ref role="37wK5l" node="7WsNHxjlUA1" resolve="skipSolverRunInfoAux" />
+                <ref role="37wK5l" node="7WsNHxjlUA1" resolve="skipSolverRunInfo" />
                 <node concept="Xl_RD" id="7WsNHxjpykQ" role="37wK5m">
                   <property role="Xl_RC" value="Async solver execution is blocked because configuration is inconsistent" />
                 </node>
@@ -7423,7 +7423,7 @@
                 <ref role="1Pybhc" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
                 <node concept="Rm8GO" id="7WsNHxjm7ko" role="37wK5m">
                   <ref role="Rm8GQ" to="gdgh:57dmM_UsCk4" resolve="Info" />
-                  <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="MessageType" />
+                  <ref role="1Px2BO" to="gdgh:57dmM_Us_jZ" resolve="IResult.MessageType" />
                 </node>
                 <node concept="3cpWs3" id="7WsNHxjpgk3" role="37wK5m">
                   <node concept="37vLTw" id="7WsNHxjphll" role="3uHU7w">

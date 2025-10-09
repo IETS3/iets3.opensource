@@ -2916,7 +2916,7 @@
       <node concept="2Mj0R9" id="4JH_WefdAEc" role="3cqZAp">
         <node concept="2OqwBi" id="4JH_WefdC8F" role="2MkoU_">
           <node concept="37vLTw" id="61z6J8WxuC6" role="2Oq$k0">
-            <ref role="3cqZAo" node="61z6J8WxuC0" resolve="cardinality" />
+            <ref role="3cqZAo" node="61z6J8WxuC0" resolve="card" />
           </node>
           <node concept="3x8VRR" id="4JH_WefdCm5" role="2OqNvi" />
         </node>
@@ -4524,7 +4524,7 @@
                           <property role="Xl_RC" value="Inconsistent reference to cardinality feature, use quickfix to repair" />
                         </node>
                         <node concept="2GrUjf" id="61z6J8Wu5k1" role="1urrMF">
-                          <ref role="2Gs0qQ" node="61z6J8WtRbi" resolve="f" />
+                          <ref role="2Gs0qQ" node="61z6J8WtRbi" resolve="sc" />
                         </node>
                         <node concept="3Cnw8n" id="61z6J8Wu5WQ" role="1urrFz">
                           <ref role="QpYPw" node="61z6J8Wu65N" resolve="fix_InconsistentFeatureConfig" />
@@ -4632,7 +4632,7 @@
                             </node>
                             <node concept="2OqwBi" id="7WsNHxjz_me" role="33vP2m">
                               <node concept="37vLTw" id="61z6J8WqFnN" role="2Oq$k0">
-                                <ref role="3cqZAo" node="61z6J8WqFnI" resolve="subfeatureConfigurations" />
+                                <ref role="3cqZAo" node="61z6J8WqFnI" resolve="subConfigs" />
                               </node>
                               <node concept="3zZkjj" id="7WsNHxjz_mi" role="2OqNvi">
                                 <node concept="1bVj0M" id="7WsNHxjz_mj" role="23t8la">
@@ -4792,7 +4792,7 @@
         </node>
         <node concept="2OqwBi" id="61z6J8Wo75D" role="3clFbw">
           <node concept="37vLTw" id="61z6J8WqFnO" role="2Oq$k0">
-            <ref role="3cqZAo" node="61z6J8WqFnI" resolve="subfeatureConfigurations" />
+            <ref role="3cqZAo" node="61z6J8WqFnI" resolve="subConfigs" />
           </node>
           <node concept="3GX2aA" id="61z6J8WofFR" role="2OqNvi" />
         </node>
@@ -4892,7 +4892,7 @@
                     <ref role="QwW4h" node="61z6J8Wu65O" resolve="fc" />
                   </node>
                   <node concept="3TrEf2" id="61z6J8Wu666" role="2OqNvi">
-                    <ref role="3Tt5mk" to="4ndm:5NPKd17BG$u" />
+                    <ref role="3Tt5mk" to="4ndm:5NPKd17BG$u" resolve="targetFeature" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="61z6J8Wu667" role="2OqNvi">
