@@ -7,26 +7,16 @@ import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
 import groovy.util.Node
-import org.apache.maven.Maven
-import org.gradle.kotlin.dsl.accessors.runtime.addDependencyTo
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 import java.util.Locale
-
-//will pull the groovy classes/types from nexus to the classpath
-buildscript {
-    repositories {
-        maven("https://artifacts.itemis.cloud/repository/maven-mps/")
-    }
-}
 
 plugins {
     base
     `maven-publish`
     id("de.itemis.mps.gradle.common") version "1.29.+"
     id("de.itemis.mps.gradle.launcher") version "2.5.2+"
-
     id("com.github.breadmoirai.github-release") version "2.4.1"
     id("org.cyclonedx.bom") version "2.2.0"
     id("download-jbr") version "1.29.3+"
@@ -38,23 +28,17 @@ repositories {
     mavenCentral()
 }
 
-downloadJbr {
-    jbrVersion = "17.0.8.1-b1000.32"
-}
-
-val ciBuild by extra(project.hasProperty("forceCI"))
-if (!project.hasProperty("forceCI")) {
-    //on teamcity we are in a CI build
-    ext["ci"] = project.hasProperty("teamcity")
-}
-val forceLocal = project.hasProperty("forceLocalDependencies")
+val mps: Configuration by configurations.creating
+val rerunMigrationsBackend: Configuration by configurations.creating
+val languageLibs: Configuration by configurations.creating
+val junitAnt: Configuration by configurations.creating
 
 val major = "2023"
 val minor = "2"
 
 // Dependency versions
 val mpsVersion by extra("2023.2.3")
-val defaultMbeddrVersion by extra("$major.$minor+")
+val defaultMbeddrVersion = "$major.$minor+"
 val mpsQAVersion = "$major.$minor+"
 
 // if building a against a special branch from mbeddr is required add the name here
@@ -71,6 +55,29 @@ val mbeddrVersion by extra {
     }
 }
 
+dependencies {
+    mps("com.jetbrains:mps:$mpsVersion")
+    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.0.5.+")
+    languageLibs("org.mpsqa:all-in-one:$mpsQAVersion")
+    languageLibs("com.mbeddr:platform:$mbeddrVersion")
+    junitAnt("org.apache.ant:ant-junit:1.10.6")
+}
+
+tasks.wrapper {
+    gradleVersion = "8.13"
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+downloadJbr {
+    jbrVersion = "17.0.8.1-b1000.32"
+}
+
+val ciBuild by extra(project.hasProperty("forceCI"))
+if (!project.hasProperty("forceCI")) {
+    //on teamcity we are in a CI build
+    ext["ci"] = project.hasProperty("teamcity")
+}
+
 group = "org.iets3"
 
 // Project version
@@ -85,7 +92,7 @@ if (project.hasProperty("iets3OpenSourceVersion")) {
             version = "$major.$minor.$buildNumber.${GitBasedVersioning.getGitShortCommitHash()}"
         } else {
             val isSnapshot =
-                !(currentBranch.equals("master") || currentBranch.startsWith("datev-loon-staging-") || currentBranch.startsWith(
+                !(currentBranch == "master" || currentBranch.startsWith("datev-loon-staging-") || currentBranch.startsWith(
                     "datev-steuer-staging-"
                 ))
             version = GitBasedVersioning.getVersionWithCount(
@@ -101,34 +108,9 @@ if (project.hasProperty("iets3OpenSourceVersion")) {
     }
 }
 
-val publishingRepository by extra {
-    val releaseRepository = "https://artifacts.itemis.cloud/repository/maven-mps-releases/"
-    val snapshotRepository = "https://artifacts.itemis.cloud/repository/maven-mps-snapshots"
-    return@extra if (version.toString().endsWith("-SNAPSHOT")) snapshotRepository else releaseRepository
-}
-
-fun buildDirPath(pathUnderBuildDir: String): File = project.layout.buildDirectory.dir(pathUnderBuildDir).get().asFile
-
-val artifactsDir by extra(buildDirPath("artifacts"))
-val reportsDir by extra(buildDirPath("reports"))
-
-tasks.wrapper {
-    gradleVersion = "8.13"
-    distributionType = Wrapper.DistributionType.ALL
-}
-
-val mps by configurations.creating
-val rerunMigrationsBackend by configurations.creating
-val languageLibs by configurations.creating
-val junitAnt by configurations.creating
-
-dependencies {
-    mps("com.jetbrains:mps:$mpsVersion")
-    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.0.5.+")
-    languageLibs("org.mpsqa:all-in-one:$mpsQAVersion")
-    languageLibs("com.mbeddr:platform:$mbeddrVersion")
-    junitAnt("org.apache.ant:ant-junit:1.10.6")
-}
+val mpsHomeDir by extra(layout.buildDirectory.dir("mps").get())
+val artifactsDir by extra(project.layout.buildDirectory.dir("artifacts").get())
+val reportsDir by extra(project.layout.buildDirectory.dir("reports").get())
 
 data class BundledDep(
     val name: String,
@@ -190,8 +172,6 @@ for (dep in bundledDependencies) {
         }
     }
 }
-
-val mpsHomeDir by extra(layout.buildDirectory.dir("mps").get())
 
 val resolveMPS by tasks.registering(Sync::class) {
     dependsOn(mps)
@@ -347,7 +327,7 @@ modelcheck {
     debug = false
     maxHeap = "4G"
 }
-tasks.checkmodels { dependsOn(resolveMPS)}
+tasks.checkmodels { dependsOn(resolveMPS) }
 
 val packageLanguages by tasks.registering(Zip::class) {
     dependsOn(buildLanguages, tasks.cyclonedxBom)
@@ -379,15 +359,12 @@ val packageDistroWithDependencies by tasks.registering(Zip::class) {
     include("org.iets3.opensource.distro/**")
 }
 
-tasks.assemble {
-    dependsOn(packageLanguages, packageTests)
-}
-
 fun MavenPom.addDependency(configuration: Configuration) {
     configuration.resolvedConfiguration.firstLevelModuleDependencies.forEach {
         addDependency(it.moduleGroup, it.moduleName, it.moduleVersion, it.moduleArtifacts.first().type)
     }
 }
+
 fun MavenPom.addDependency(moduleGroup: String, moduleName: String, moduleVersion: String, type: String? = null) {
     withXml {
         val root = asNode()
@@ -425,6 +402,10 @@ fun MavenPom.includeAdditionalInfo() {
 publishing {
     repositories {
         maven {
+            val publishingRepository = if (version.toString().endsWith("-SNAPSHOT"))
+                "https://artifacts.itemis.cloud/repository/maven-mps-snapshots"
+            else
+                "https://artifacts.itemis.cloud/repository/maven-mps-releases/"
             url = uri(publishingRepository)
             if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
                 credentials {
@@ -561,7 +542,7 @@ tasks.githubRelease {
 
 tasks.cyclonedxBom {
     // SBOM destination directory
-    destination.set(reportsDir)
+    destination.set(reportsDir.asFile)
     // The file name for the generated SBOMs (before the file format suffix)
     outputName.set("sbom")
     // The file format generated, can be xml, json or all for generating both
