@@ -11,6 +11,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The renderReadable/getPresentation implementations were improved and are now equivalent in all concepts.
 
+### Added
+
+- Data tables, binary and multi-criteria decision tables now support deletion, copying and pasting when multiple cells are selected with the mouse. 
+
 ## July 2025
 
 ### Fixed
