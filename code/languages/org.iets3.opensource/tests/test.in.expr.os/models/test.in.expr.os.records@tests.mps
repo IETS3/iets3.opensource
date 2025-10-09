@@ -11,9 +11,9 @@
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="7obj" ref="r:c3404ca7-2556-4517-b7d5-ec378ad78058(test.in.expr.os.assessmentUtils)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" />
+    <import index="7obj" ref="r:c3404ca7-2556-4517-b7d5-ec378ad78058(test.in.expr.os.assessmentUtils)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
@@ -21,9 +21,6 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
@@ -1957,9 +1954,6 @@
       <node concept="3dYjL0" id="7k6A8WftUml" role="_fkp5" />
     </node>
     <node concept="_ixoA" id="4ptnK4jeq01" role="_iOnB" />
-  </node>
-  <node concept="2XOHcx" id="4rZeNQ6M9GV">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
   <node concept="_iOnU" id="7cphKbLeYOb">
     <property role="TrG5h" value="projection" />
@@ -4152,6 +4146,9 @@
       <property role="TrG5h" value="testing" />
       <node concept="_fkuZ" id="7cphKbKu$_U" role="_fkp5">
         <node concept="_fku$" id="7cphKbKu$_V" role="_fkur" />
+        <node concept="_emDc" id="7cphKbKu$YL" role="_fkuY">
+          <ref role="_emDf" node="7cphKbKqXjT" resolve="keys" />
+        </node>
         <node concept="3iBYfx" id="7cphKbKu$Zf" role="_fkuS">
           <node concept="30bdrP" id="7cphKbKuA9R" role="3iBYfI">
             <property role="30bdrQ" value="Markus" />
@@ -4159,9 +4156,6 @@
           <node concept="30bdrP" id="7cphKbKuAiT" role="3iBYfI">
             <property role="30bdrQ" value="Peter" />
           </node>
-        </node>
-        <node concept="_emDc" id="7cphKbKu$YL" role="_fkuY">
-          <ref role="_emDf" node="7cphKbKqXjT" resolve="keys" />
         </node>
       </node>
       <node concept="_fkuZ" id="7cphKbKztl8" role="_fkp5">

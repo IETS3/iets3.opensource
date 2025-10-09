@@ -16,9 +16,6 @@
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="2325284917965760583" name="jetbrains.mps.lang.test.structure.BeforeTestsMethod" flags="ig" index="0EjCn" />
       <concept id="2325284917965760584" name="jetbrains.mps.lang.test.structure.AfterTestsMethod" flags="ig" index="0EjCo" />
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="2325284917965993569" name="beforeTests" index="0EEgL" />
@@ -377,7 +374,7 @@
     <node concept="_fkuM" id="3vxfdxbrKI$" role="_iOnB">
       <property role="TrG5h" value="MessageEval" />
       <node concept="_fkuZ" id="3vxfdxbrKIC" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="3vxfdxbrKID" role="_fkur" />
         <node concept="1QScDb" id="4AahbtVJY8p" role="_fkuY">
           <node concept="1gK00M" id="4AahbtVJY9Q" role="1QScD9">
@@ -399,7 +396,7 @@
         <node concept="2vmpnb" id="4AahbtVJYcx" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="4AahbtV2$by" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="4AahbtV2$bz" role="_fkur" />
         <node concept="1QScDb" id="4AahbtV9T4t" role="_fkuY">
           <node concept="NjiR8" id="4AahbtV9T5k" role="1QScD9" />
@@ -417,7 +414,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="4AahbtURx4b" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="4AahbtURx4c" role="_fkur" />
         <node concept="1QScDb" id="4AahbtVJYuT" role="_fkuY">
           <node concept="1gK00M" id="4AahbtVJYwm" role="1QScD9">
@@ -443,7 +440,7 @@
         <node concept="2vmpnb" id="4AahbtVJYz1" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="3vxfdxbs7e_" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="3vxfdxbs7eA" role="_fkur" />
         <node concept="1QScDb" id="7OtDX6qlCxe" role="_fkuY">
           <node concept="NjiR8" id="7OtDX6qlCJ2" role="1QScD9" />
@@ -461,7 +458,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="3vxfdxbs7f4" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="3vxfdxbs7f5" role="_fkur" />
         <node concept="1QScDb" id="7OtDX6qlCNu" role="_fkuY">
           <node concept="NjiR8" id="7OtDX6qlD1i" role="1QScD9" />
@@ -479,7 +476,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="3vxfdxbs7fJ" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="3vxfdxbs7fK" role="_fkur" />
         <node concept="1QScDb" id="7OtDX6qlDC1" role="_fkuY">
           <node concept="NjiR8" id="7OtDX6qlEbf" role="1QScD9" />
@@ -505,7 +502,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="3vxfdxbs7gA" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="3vxfdxbs7gB" role="_fkur" />
         <node concept="1QScDb" id="7OtDX6qlEbV" role="_fkuY">
           <node concept="NjiR8" id="7OtDX6qlEIz" role="1QScD9" />
@@ -531,7 +528,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="3vxfdxbtTgB" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="3vxfdxbtTgC" role="_fkur" />
         <node concept="1QScDb" id="7OtDX6qlEJi" role="_fkuY">
           <node concept="NjiR8" id="7OtDX6qlFyY" role="1QScD9" />
@@ -557,7 +554,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="4AahbtV3f1x" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="4AahbtV3f1y" role="_fkur" />
         <node concept="1QScDb" id="4AahbtV3f1z" role="_fkuY">
           <node concept="MxAYs" id="4AahbtV3fgs" role="1QScD9" />
@@ -590,7 +587,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="4AahbtV85bA" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="4AahbtV85bB" role="_fkur" />
         <node concept="2yLE0X" id="4AahbtV85h0" role="_fkuY">
           <node concept="30bdrP" id="4AahbtV85lW" role="2yLE0W">
@@ -621,7 +618,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="3vxfdxbtTgu" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="3vxfdxbtTgv" role="_fkur" />
         <node concept="1QScDb" id="4AahbtUNAG7" role="_fkuY">
           <node concept="NjiR8" id="4AahbtUNAHD" role="1QScD9" />
@@ -647,7 +644,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="3vxfdxburJ8" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="3vxfdxburJ9" role="_fkur" />
         <node concept="1QScDb" id="7OtDX6qlFIZ" role="_fkuY">
           <node concept="NjiR8" id="7OtDX6qlGRv" role="1QScD9" />
@@ -679,7 +676,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="5ZJ96SJBsQF" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="5ZJ96SJBsQG" role="_fkur" />
         <node concept="1QScDb" id="7OtDX6qlI0O" role="_fkuY">
           <node concept="NjiR8" id="7OtDX6qlIos" role="1QScD9" />
@@ -702,7 +699,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="5ZJ96SJBtgw" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="5ZJ96SJBtgx" role="_fkur" />
         <node concept="1QScDb" id="7OtDX6qlIB0" role="_fkuY">
           <node concept="NjiR8" id="7OtDX6qlIYC" role="1QScD9" />
@@ -729,7 +726,7 @@
     <node concept="_fkuM" id="1CNpG_h8fKm" role="_iOnB">
       <property role="TrG5h" value="Coercions" />
       <node concept="_fkuZ" id="1CNpG_h8fN8" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="1CNpG_h8fN9" role="_fkur" />
         <node concept="1QScDb" id="7OtDX6qlJi5" role="_fkuY">
           <node concept="NjiR8" id="7OtDX6qlKUd" role="1QScD9" />
@@ -758,7 +755,7 @@
         </node>
       </node>
       <node concept="_fkuZ" id="1CNpG_h8Ft_" role="_fkp5">
-        <property role="3sVy9A" value="true" />
+        <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="1CNpG_h8FtA" role="_fkur" />
         <node concept="1QScDb" id="7OtDX6qlKVP" role="_fkuY">
           <node concept="NjiR8" id="7OtDX6qlLC9" role="1QScD9" />
@@ -1013,9 +1010,6 @@
     <node concept="_ixoA" id="4AahbtVkebP" role="_iOnB" />
     <node concept="_ixoA" id="4AahbtVkefb" role="_iOnB" />
     <node concept="_ixoA" id="4AahbtVbkzw" role="_iOnB" />
-  </node>
-  <node concept="2XOHcx" id="3vxfdxbrceL">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
   <node concept="1WOfUn" id="3vxfdxbret3">
     <property role="TrG5h" value="Messages" />

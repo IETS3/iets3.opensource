@@ -11,11 +11,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
       <concept id="8219602584783477664" name="org.iets3.core.expr.tests.structure.AbstractTestItem" flags="ng" index="mXNUw">
         <property id="4770332828445654111" name="isIgnored" index="2xO9KL" />
@@ -45,9 +40,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2XOHcx" id="48NC6VzWiYe">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
-  </node>
   <node concept="_iOnU" id="48NC6VzWjct">
     <property role="TrG5h" value="ignoredTests" />
     <property role="1XBH2A" value="true" />
