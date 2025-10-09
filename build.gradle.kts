@@ -6,6 +6,7 @@ import de.itemis.mps.gradle.TestLanguages
 import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
+import groovy.time.BaseDuration
 import groovy.util.Node
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -32,6 +33,10 @@ val mps: Configuration by configurations.creating
 val rerunMigrationsBackend: Configuration by configurations.creating
 val languageLibs: Configuration by configurations.creating
 val junitAnt: Configuration by configurations.creating
+val pcollections: Configuration by configurations.creating
+val bigMath: Configuration by configurations.creating
+val functionalJava: Configuration by configurations.creating
+val cpsSuite: Configuration by configurations.creating
 
 val major = "2023"
 val minor = "2"
@@ -61,6 +66,12 @@ dependencies {
     languageLibs("org.mpsqa:all-in-one:$mpsQAVersion")
     languageLibs("com.mbeddr:platform:$mbeddrVersion")
     junitAnt("org.apache.ant:ant-junit:1.10.6")
+
+    //Bundled dependencies
+    pcollections("org.pcollections:pcollections:4.0.1") { isTransitive = true}
+    bigMath("ch.obermuhlner:big-math:2.3.2") { isTransitive = true}
+    functionalJava("org.functionaljava:functionaljava:4.8.1") { isTransitive = true}
+    cpsSuite("io.takari.junit:takari-cpsuite:1.2.7") { isTransitive = true}
 }
 
 tasks.wrapper {
@@ -112,58 +123,26 @@ val mpsHomeDir by extra(layout.buildDirectory.dir("mps").get())
 val artifactsDir by extra(project.layout.buildDirectory.dir("artifacts").get())
 val reportsDir by extra(project.layout.buildDirectory.dir("reports").get())
 
-data class BundledDep(
-    val name: String,
-    val entries: List<String>,
-    val libSolutionName: String,
-    val jarNameOverride: String? = null
-) {
-    val configName get() = name + "_bundled"
-    val resolveTaskName get() = "resolve_$configName"
-}
-
-val bundledDependencies = listOf(
-    BundledDep(
-        name = "pcollections",
-        entries = listOf("org.pcollections:pcollections:4.0.1"),
-        libSolutionName = "org.iets3.core.expr.base.collections.stubs"
-    ),
-    BundledDep(
-        name = "bigMath",
-        entries = listOf("ch.obermuhlner:big-math:2.3.2"),
-        libSolutionName = "org.iets3.core.expr.math.interpreter"
-    ),
-    BundledDep(
-        name = "functionalJava",
-        entries = listOf("org.functionaljava:functionaljava:4.8.1"),
-        libSolutionName = "org.iets3.core.expr.genjava.functionalJava"
-    ),
-    BundledDep(
-        name = "cpsSuite",
-        entries = listOf("io.takari.junit:takari-cpsuite:1.2.7"),
-        libSolutionName = "org.iets3.opensource.build.gentests.rt",
-        jarNameOverride = "takari-cpsuite.jar"
-    ),
+val bundledDependencyResolveTasks = listOf(
+    pcollections.registerTaskToResolveBundledDependency("org.iets3.core.expr.base.collections.stubs"),
+    bigMath.registerTaskToResolveBundledDependency("org.iets3.core.expr.math.interpreter"),
+    functionalJava.registerTaskToResolveBundledDependency("org.iets3.core.expr.genjava.functionalJava"),
+    cpsSuite.registerTaskToResolveBundledDependency("org.iets3.opensource.build.gentests.rt", "takari-cpsuite.jar")
 )
 
-for (dep in bundledDependencies) {
-    configurations.create(dep.configName)
-    dependencies {
-        for (entry in dep.entries) {
-            add(dep.configName, entry) { isTransitive = true }
-        }
-    }
-    tasks.register<Sync>(dep.resolveTaskName) {
-        from(configurations.getByName(dep.configName))
-        into(file("code/languages/org.iets3.opensource/solutions/${dep.libSolutionName}/lib"))
+fun Configuration.registerTaskToResolveBundledDependency(libSolutionName: String, jarNameOverride: String? = null) : TaskProvider<Sync> {
+    val configName = "${this@registerTaskToResolveBundledDependency.name}_bundled"
+    return tasks.register<Sync>("resolve_$configName") {
+        from(this@registerTaskToResolveBundledDependency)
+        into(file("code/languages/org.iets3.opensource/solutions/$libSolutionName/lib"))
 
         // Strip version numbers from file names
         rename { filename ->
             val resolvedArtifact = checkNotNull(
-                configurations.getByName(dep.configName).resolvedConfiguration.resolvedArtifacts
+                configurations.getByName(configName).resolvedConfiguration.resolvedArtifacts
                     .find { resolvedArtifact: ResolvedArtifact -> resolvedArtifact.file.name == filename })
 
-            return@rename dep.jarNameOverride
+            return@rename jarNameOverride
                 ?: if (resolvedArtifact.classifier != null) {
                     "${resolvedArtifact.name}-${resolvedArtifact.classifier}.${resolvedArtifact.extension}"
                 } else {
@@ -186,7 +165,7 @@ val resolveLanguageLibs by tasks.registering(Sync::class) {
 
 val resolveDependencies by tasks.registering {
     dependsOn(downloadJbr, resolveMPS, resolveLanguageLibs)
-    bundledDependencies.map { it.resolveTaskName }.forEach { dependsOn(it) }
+    bundledDependencyResolveTasks.forEach { dependsOn(it) }
 }
 
 // Default arguments for ant scripts
