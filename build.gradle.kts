@@ -6,8 +6,8 @@ import de.itemis.mps.gradle.TestLanguages
 import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
-import groovy.time.BaseDuration
 import groovy.util.Node
+import org.gradle.api.internal.artifacts.result.DefaultResolvedDependencyResult
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -16,12 +16,12 @@ import java.util.Locale
 plugins {
     base
     `maven-publish`
-    id("de.itemis.mps.gradle.common") version "1.29.+"
-    id("de.itemis.mps.gradle.launcher") version "2.5.2+"
-    id("com.github.breadmoirai.github-release") version "2.4.1"
-    id("org.cyclonedx.bom") version "2.2.0"
-    id("download-jbr") version "1.29.3+"
-    id("modelcheck") version "1.29.3+"
+    alias(libs.plugins.mpsCommon)
+    alias(libs.plugins.mpsLauncher)
+    alias(libs.plugins.githubRelease)
+    alias(libs.plugins.cyclonedxBom)
+    alias(libs.plugins.downloadJbr)
+    alias(libs.plugins.modelcheck)
 }
 
 repositories {
@@ -41,10 +41,7 @@ val cpsSuite: Configuration by configurations.creating
 val major = "2023"
 val minor = "2"
 
-// Dependency versions
-val mpsVersion by extra("2023.2.3")
 val defaultMbeddrVersion = "$major.$minor+"
-val mpsQAVersion = "$major.$minor+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -61,26 +58,26 @@ val mbeddrVersion by extra {
 }
 
 dependencies {
-    mps("com.jetbrains:mps:$mpsVersion")
-    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.0.5.+")
-    languageLibs("org.mpsqa:all-in-one:$mpsQAVersion")
-    languageLibs("com.mbeddr:platform:$mbeddrVersion")
-    junitAnt("org.apache.ant:ant-junit:1.10.6")
+    mps(libs.mps)
+    rerunMigrationsBackend(libs.remigrate)
+    languageLibs(libs.mpsQaAllInOne)
+    languageLibs(libs.mbeddrPlatform)
+    junitAnt(libs.antJunit)
 
     //Bundled dependencies
-    pcollections("org.pcollections:pcollections:4.0.1") { isTransitive = true}
-    bigMath("ch.obermuhlner:big-math:2.3.2") { isTransitive = true}
-    functionalJava("org.functionaljava:functionaljava:4.8.1") { isTransitive = true}
-    cpsSuite("io.takari.junit:takari-cpsuite:1.2.7") { isTransitive = true}
+    pcollections(libs.pcollections) { isTransitive = true }
+    bigMath(libs.bigMath) { isTransitive = true }
+    functionalJava(libs.functionalJava) { isTransitive = true }
+    cpsSuite(libs.cpsSuite) { isTransitive = true }
 }
 
 tasks.wrapper {
-    gradleVersion = "8.13"
+    gradleVersion = libs.versions.gradle.get()
     distributionType = Wrapper.DistributionType.ALL
 }
 
 downloadJbr {
-    jbrVersion = "17.0.8.1-b1000.32"
+    jbrVersion = libs.versions.jbr.get()
 }
 
 val ciBuild by extra(project.hasProperty("forceCI"))
@@ -131,11 +128,11 @@ val bundledDependencyResolveTasks = listOf(
 )
 
 fun Configuration.registerTaskToResolveBundledDependency(libSolutionName: String, jarNameOverride: String? = null) : TaskProvider<Sync> {
-    val configName = "${this@registerTaskToResolveBundledDependency.name}_bundled"
+    val configName = this@registerTaskToResolveBundledDependency.name
     return tasks.register<Sync>("resolve_$configName") {
         from(this@registerTaskToResolveBundledDependency)
         into(file("code/languages/org.iets3.opensource/solutions/$libSolutionName/lib"))
-
+        duplicatesStrategy = DuplicatesStrategy.WARN
         // Strip version numbers from file names
         rename { filename ->
             val resolvedArtifact = checkNotNull(
@@ -164,7 +161,7 @@ val resolveLanguageLibs by tasks.registering(Sync::class) {
 }
 
 val resolveDependencies by tasks.registering {
-    dependsOn(downloadJbr, resolveMPS, resolveLanguageLibs)
+    dependsOn(tasks.downloadJbr, resolveMPS, resolveLanguageLibs)
     bundledDependencyResolveTasks.forEach { dependsOn(it) }
 }
 
@@ -177,36 +174,34 @@ val defaultScriptArgs = mutableMapOf(
     "version" to version,
 )
 
-if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
+if (gradle.startParameter.logLevel != LogLevel.LIFECYCLE) {
     defaultScriptArgs["mps.ant.log"] = gradle.startParameter.logLevel.toString().lowercase(Locale.getDefault())
 }
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D$it.key=$it.value" }
-ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = junitAnt.incoming.files
+extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D$it.key=$it.value" }
+extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = junitAnt.incoming.files
+
 afterEvaluate {
-    project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] =
-        tasks.getByName("downloadJbr").property("javaExecutable")
+    extra["itemis.mps.gradle.ant.defaultJavaExecutable"] =
+        tasks.downloadJbr.get().javaExecutable
 }
 
 val buildAllScripts by tasks.registering(BuildLanguages::class) {
-    dependsOn(resolveDependencies)
-    script = "${layout.buildDirectory}/scripts/build-allScripts.xml"
+    script = layout.buildDirectory.file("scripts/build-allScripts.xml")
 }
 
 val prebuild by tasks.registering(BuildLanguages::class) {
-    dependsOn(buildAllScripts)
-    script = "${layout.buildDirectory}/scripts/prebuild.xml"
+    script = layout.buildDirectory.file("scripts/prebuild.xml")
     targets("clean", "generate")
 }
 
 val buildLanguages by tasks.registering(BuildLanguages::class) {
-    dependsOn(prebuild)
-    script = "${layout.buildDirectory}/scripts/build-languages.xml"
+    script = layout.buildDirectory.file("scripts/build-languages.xml")
 }
 
 val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
-    script = "${layout.buildDirectory}/scripts/build-testInterpreter.xml"
+    script = layout.buildDirectory.file("scripts/build-testInterpreter.xml")
     targets("generate", "build")
     doLast {
         ant.withGroovyBuilder {
@@ -225,7 +220,7 @@ val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
 }
 
 val buildAndRunTests by tasks.registering(TestLanguages::class) {
-    script = "${layout.buildDirectory}/scripts/build-tests.xml"
+    script = layout.buildDirectory.file("/scripts/build-tests.xml")
     finalizedBy(failOnTestError)
     doLast {
         ant.withGroovyBuilder {
@@ -269,6 +264,10 @@ val failOnTestError by tasks.registering(TestLanguages::class) {
 
 tasks.check {
     dependsOn(buildAndRunTests)
+}
+
+tasks.assemble {
+    dependsOn(packageLanguages, packageTests)
 }
 
 val migrate by tasks.registering(MpsMigrate::class) {
