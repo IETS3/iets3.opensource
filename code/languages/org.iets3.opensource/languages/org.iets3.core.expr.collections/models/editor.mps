@@ -524,7 +524,7 @@
                 <node concept="1eOMI4" id="qeznuD1Ph3" role="3uHU7w">
                   <node concept="3eOSWO" id="qeznuD0jD$" role="1eOMHV">
                     <node concept="37vLTw" id="qeznuD1TxU" role="3uHU7w">
-                      <ref role="3cqZAo" node="qeznuD1TxS" resolve="i" />
+                      <ref role="3cqZAo" node="qeznuD1TxS" resolve="THRESHOLD_FOR_NEW_LINES" />
                     </node>
                     <node concept="2OqwBi" id="qeznuD0cQJ" role="3uHU7B">
                       <node concept="2OqwBi" id="qeznuD07QZ" role="2Oq$k0">
