@@ -3,11 +3,9 @@ import de.itemis.mps.gradle.GitBasedVersioning
 import de.itemis.mps.gradle.Macro
 import de.itemis.mps.gradle.RunAntScript
 import de.itemis.mps.gradle.TestLanguages
-import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
 import groovy.util.Node
-import org.gradle.api.internal.artifacts.result.DefaultResolvedDependencyResult
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -80,11 +78,7 @@ downloadJbr {
     jbrVersion = libs.versions.jbr.get()
 }
 
-val ciBuild by extra(project.hasProperty("forceCI"))
-if (!project.hasProperty("forceCI")) {
-    //on teamcity we are in a CI build
-    ext["ci"] = project.hasProperty("teamcity")
-}
+val ciBuild by extra(project.hasProperty("forceCI") || project.hasProperty("teamcity"))
 
 group = "org.iets3"
 
@@ -94,8 +88,7 @@ if (project.hasProperty("iets3OpenSourceVersion")) {
 } else {
     if (ciBuild) {
         currentBranch = GitBasedVersioning.getGitBranch()
-
-        val buildNumber = checkNotNull(System.getenv()["BUILD_COUNTER"]?.toInt()) { "env BUILD_COUNTER not found" }
+        val buildNumber = checkNotNull(System.getenv("BUILD_COUNTER")?.toInt()) { "env BUILD_COUNTER not found" }
         if (currentBranch.startsWith("maintenance-")) {
             version = "$major.$minor.$buildNumber.${GitBasedVersioning.getGitShortCommitHash()}"
         } else {
@@ -129,10 +122,10 @@ val bundledDependencyResolveTasks = listOf(
 
 fun Configuration.registerTaskToResolveBundledDependency(libSolutionName: String, jarNameOverride: String? = null) : TaskProvider<Sync> {
     val configName = this@registerTaskToResolveBundledDependency.name
-    return tasks.register<Sync>("resolve_$configName") {
+    return tasks.register<Sync>("resolve_${configName}_bundled") {
         from(this@registerTaskToResolveBundledDependency)
         into(file("code/languages/org.iets3.opensource/solutions/$libSolutionName/lib"))
-        duplicatesStrategy = DuplicatesStrategy.WARN
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
         // Strip version numbers from file names
         rename { filename ->
             val resolvedArtifact = checkNotNull(
@@ -167,10 +160,10 @@ val resolveDependencies by tasks.registering {
 
 // Default arguments for ant scripts
 val defaultScriptArgs = mutableMapOf(
-    "mps.home" to mpsHomeDir,
+    "mps.home" to mpsHomeDir.asFile,
     "iets3.github.opensource.home" to rootDir,
-    "build.jna.library.path" to file(mpsHomeDir).resolve("lib/jna/${System.getProperty("os.arch")}"),
-    "build.dir" to layout.buildDirectory,
+    "build.jna.library.path" to mpsHomeDir.file("lib/jna/${System.getProperty("os.arch")}"),
+    "build.dir" to layout.buildDirectory.asFile,
     "version" to version,
 )
 
@@ -179,7 +172,7 @@ if (gradle.startParameter.logLevel != LogLevel.LIFECYCLE) {
 }
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D$it.key=$it.value" }
+extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
 extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = junitAnt.incoming.files
 
 afterEvaluate {
@@ -188,15 +181,18 @@ afterEvaluate {
 }
 
 val buildAllScripts by tasks.registering(BuildLanguages::class) {
+    dependsOn( resolveDependencies)
     script = layout.buildDirectory.file("scripts/build-allScripts.xml")
 }
 
 val prebuild by tasks.registering(BuildLanguages::class) {
+    dependsOn(buildAllScripts)
     script = layout.buildDirectory.file("scripts/prebuild.xml")
     targets("clean", "generate")
 }
 
 val buildLanguages by tasks.registering(BuildLanguages::class) {
+    dependsOn(prebuild)
     script = layout.buildDirectory.file("scripts/build-languages.xml")
 }
 
@@ -220,7 +216,8 @@ val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
 }
 
 val buildAndRunTests by tasks.registering(TestLanguages::class) {
-    script = layout.buildDirectory.file("/scripts/build-tests.xml")
+    dependsOn(buildAllScripts)
+    script = layout.buildDirectory.file("scripts/build-tests.xml")
     finalizedBy(failOnTestError)
     doLast {
         ant.withGroovyBuilder {
@@ -272,7 +269,7 @@ tasks.assemble {
 
 val migrate by tasks.registering(MpsMigrate::class) {
     dependsOn(resolveMPS, "resolveForModelcheck", tasks.downloadJbr, buildLanguages, buildAndRunTests)
-    javaLauncher.set(tasks.named<DownloadJbrForPlatform>("downloadJbr").map { it.javaLauncher.get() })
+    javaLauncher.set(tasks.downloadJbr.get().javaLauncher.get())
     haltOnPrecheckFailure.set(false)
     haltOnDependencyError.set(false)
     mpsHome.set(mpsHomeDir)
@@ -285,7 +282,7 @@ val migrate by tasks.registering(MpsMigrate::class) {
 val remigrate by tasks.registering(Remigrate::class) {
     mustRunAfter(migrate, buildLanguages, buildAndRunTests)
     dependsOn(resolveMPS, "resolveMpsForModelcheck", tasks.downloadJbr)
-    javaLauncher.set(tasks.named<DownloadJbrForPlatform>("downloadJbr").map { it.javaLauncher.get() })
+    javaLauncher.set(tasks.downloadJbr.get().javaLauncher.get())
     mpsHome.set(mpsHomeDir)
     projectDirectories.from("code/languages/org.iets3.opensource")
     folderMacros.put("iets3.github.opensource.home", rootProject.layout.projectDirectory)
