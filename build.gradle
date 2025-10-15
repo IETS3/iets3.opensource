@@ -48,7 +48,7 @@ def minor = "9"
 
 
 
-ext.mpsVersion = "252.26199.10457"
+ext.mpsVersion = "252.26199.10458"
 def mpsQAVersion = "$major.$minor+"
 
 
