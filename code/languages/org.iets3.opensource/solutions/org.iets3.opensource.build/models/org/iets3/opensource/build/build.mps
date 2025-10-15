@@ -2085,6 +2085,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="61z6J8WMoxE" role="3bR37C">
+          <node concept="3bR9La" id="61z6J8WMoxF" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7yHH$DDpBOh" role="2G$12L">
         <property role="BnDLt" value="true" />
