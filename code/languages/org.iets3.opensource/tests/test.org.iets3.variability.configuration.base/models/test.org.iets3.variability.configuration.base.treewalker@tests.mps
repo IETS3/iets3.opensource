@@ -7,7 +7,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="9b66c5c9-38bf-4315-a96f-9f4e212c69cb" name="org.iets3.variability.base" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="1" />
+    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base" version="24" />
   </languages>
@@ -328,10 +328,9 @@
           </node>
         </node>
         <node concept="rqKB5" id="2T39iK2dksg" role="12i2BX">
-          <property role="bVyBI" value="381825434" />
+          <property role="bVyBI" value="-888844210" />
           <property role="TrG5h" value="A_Selected" />
           <property role="0Rz4W" value="-853604365" />
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <property role="1nQUAq" value="true" />
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
