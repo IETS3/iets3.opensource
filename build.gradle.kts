@@ -6,6 +6,7 @@ import de.itemis.mps.gradle.TestLanguages
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
 import groovy.util.Node
+import groovy.util.NodeList
 import groovy.xml.XmlSlurper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -343,7 +344,7 @@ fun MavenPom.addDependency(configuration: Configuration) {
 fun MavenPom.addDependency(moduleGroup: String, moduleName: String, moduleVersion: String, type: String? = null) {
     withXml {
         val root = asNode()
-        val dependencies = root.get("dependencies") as? Node ?: root.appendNode("dependencies")
+        val dependencies = (root.get("dependencies") as? NodeList)?.getOrNull(0) as Node? ?: root.appendNode("dependencies")
         dependencies.appendNode("dependency").apply {
             appendNode("groupId", moduleGroup)
             appendNode("artifactId", moduleName)
