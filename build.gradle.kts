@@ -162,8 +162,8 @@ val resolveDependencies by tasks.registering {
 val defaultScriptArgs = mutableMapOf(
     "mps.home" to mpsHomeDir.asFile,
     "iets3.github.opensource.home" to rootDir,
-    "build.jna.library.path" to mpsHomeDir.file("lib/jna/${System.getProperty("os.arch")}"),
-    "build.dir" to layout.buildDirectory.asFile,
+    "build.jna.library.path" to mpsHomeDir.file("lib/jna/${System.getProperty("os.arch")}").asFile,
+    "build.dir" to layout.buildDirectory.get().asFile,
     "version" to version,
 )
 
