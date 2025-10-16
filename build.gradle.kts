@@ -228,16 +228,16 @@ val buildAndRunTests by tasks.registering(TestLanguages::class) {
             )
             "junitreport" {
                 "fileset"(
-                    "dir" to "${layout.buildDirectory}",
+                    "dir" to "${layout.buildDirectory.get()}",
                     "includes" to "**/TEST*.xml",
                     "excludes" to "tmp/**"
                 )
                 "report"(
                     "format" to "frames",
-                    "todir" to "${layout.buildDirectory}/junitreport"
+                    "todir" to "${layout.buildDirectory.get()}/junitreport"
                 )
             }
-            "echo"("JUnit report placed into ${layout.buildDirectory}/junitreport/index.html")
+            "echo"("JUnit report placed into ${layout.buildDirectory.get()}/junitreport/index.html")
         }
     }
 }
