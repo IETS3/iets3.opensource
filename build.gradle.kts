@@ -63,7 +63,7 @@ dependencies {
     languageLibs(libs.mbeddrPlatform)
     junitAnt(libs.antJunit)
 
-    //Bundled dependencies
+    // Bundled dependencies
     pcollections(libs.pcollections) { isTransitive = true }
     bigMath(libs.bigMath) { isTransitive = true }
     functionalJava(libs.functionalJava) { isTransitive = true }
@@ -267,7 +267,7 @@ tasks.assemble {
 }
 
 val migrate by tasks.registering(MpsMigrate::class) {
-    dependsOn(resolveMPS, "resolveForModelcheck", tasks.downloadJbr, buildLanguages, buildAndRunTests)
+    dependsOn(resolveMPS, "resolveMpsForModelcheck", tasks.downloadJbr, buildLanguages, buildAndRunTests)
     javaLauncher.set(tasks.downloadJbr.get().javaLauncher.get())
     haltOnPrecheckFailure.set(false)
     haltOnDependencyError.set(false)
@@ -301,6 +301,7 @@ modelcheck {
     debug = false
     maxHeap = "4G"
 }
+
 tasks.checkmodels { dependsOn(resolveMPS) }
 
 val packageLanguages by tasks.registering(Zip::class) {
