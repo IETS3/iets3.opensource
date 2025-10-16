@@ -38,25 +38,6 @@ val bigMath: Configuration by configurations.creating
 val functionalJava: Configuration by configurations.creating
 val cpsSuite: Configuration by configurations.creating
 
-val major = "2023"
-val minor = "2"
-
-val defaultMbeddrVersion = "$major.$minor+"
-
-// if building a against a special branch from mbeddr is required add the name here
-// the name is enough no trailing "." is required, also the plain name from git can
-// be used here. No need to convert "/" the script will take care of that.
-val mbeddrBranch = ""
-var currentBranch = ""
-
-val mbeddrVersion by extra {
-    if (!mbeddrBranch.isBlank()) {
-        return@extra "${mbeddrBranch.replace("/", "-")}.${defaultMbeddrVersion}"
-    } else {
-        return@extra defaultMbeddrVersion
-    }
-}
-
 dependencies {
     mps(libs.mps)
     rerunMigrationsBackend(libs.remigrate)
@@ -81,34 +62,29 @@ downloadJbr {
 }
 
 val ciBuild by extra(project.hasProperty("forceCI") || project.hasProperty("teamcity"))
+val branch: String = GitBasedVersioning.getGitBranch()
 
 group = "org.iets3"
 
-// Project version
-if (project.hasProperty("iets3OpenSourceVersion")) {
-    version = project.properties["iets3OpenSourceVersion"].toString()
-} else {
-    if (ciBuild) {
-        currentBranch = GitBasedVersioning.getGitBranch()
-        val buildNumber = checkNotNull(System.getenv("BUILD_COUNTER")?.toInt()) { "env BUILD_COUNTER not found" }
-        if (currentBranch.startsWith("maintenance-")) {
-            version = "$major.$minor.$buildNumber.${GitBasedVersioning.getGitShortCommitHash()}"
-        } else {
-            val isSnapshot =
-                !(currentBranch == "master" || currentBranch.startsWith("datev-loon-staging-") || currentBranch.startsWith(
-                    "datev-steuer-staging-"
-                ))
-            version = GitBasedVersioning.getVersionWithCount(
-                major,
-                minor,
-                buildNumber
-            ) + (if (isSnapshot) "-SNAPSHOT" else "")
-        }
-        print("##teamcity[buildNumber '${version}']")
-    } else {
-        version = "$major.$minor-SNAPSHOT"
-        print("Local build detected, version will be $version")
-    }
+version = calculateVersion().also {
+    if (ciBuild) print("##teamcity[buildNumber '$it']")
+    else print("Local build detected, version will be '$it'")
+}
+
+fun calculateVersion(): String {
+    val major = libs.versions.mpsMajorMinor.get().substringBefore(".")
+    val minor = libs.versions.mpsMajorMinor.get().substringAfter(".").substringBefore("+")
+    if (!ciBuild) return "$major.$minor-SNAPSHOT"
+
+    val buildNumber =
+        checkNotNull(System.getenv("BUILD_COUNTER")?.toIntOrNull()) { "env BUILD_COUNTER not found or not a valid int" }
+    if (branch.startsWith("maintenance-"))
+        return "$major.$minor.$buildNumber.${GitBasedVersioning.getGitShortCommitHash()}"
+
+    val isSnapshot =
+        !(branch == "master" || branch.startsWith("datev-loon-staging-") || branch.startsWith("datev-steuer-staging-"))
+    val baseVersion = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)
+    return if (isSnapshot) "$baseVersion-SNAPSHOT" else baseVersion
 }
 
 val mpsHomeDir by extra(layout.buildDirectory.dir("mps").get())
@@ -122,7 +98,10 @@ val bundledDependencyResolveTasks = listOf(
     cpsSuite.registerTaskToResolveBundledDependency("org.iets3.opensource.build.gentests.rt", "takari-cpsuite.jar")
 )
 
-fun Configuration.registerTaskToResolveBundledDependency(libSolutionName: String, jarNameOverride: String? = null) : TaskProvider<Sync> {
+fun Configuration.registerTaskToResolveBundledDependency(
+    libSolutionName: String,
+    jarNameOverride: String? = null
+): TaskProvider<Sync> {
     val configName = this@registerTaskToResolveBundledDependency.name
     return tasks.register<Sync>("resolve_${configName}_bundled") {
         from(this@registerTaskToResolveBundledDependency)
@@ -178,12 +157,11 @@ extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${
 extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = junitAnt.incoming.files
 
 afterEvaluate {
-    extra["itemis.mps.gradle.ant.defaultJavaExecutable"] =
-        tasks.downloadJbr.get().javaExecutable
+    extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.downloadJbr.get().javaExecutable
 }
 
 val buildAllScripts by tasks.registering(BuildLanguages::class) {
-    dependsOn( resolveDependencies)
+    dependsOn(resolveDependencies)
     script = layout.buildDirectory.file("scripts/build-allScripts.xml")
 }
 
@@ -209,7 +187,11 @@ val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
                 "classpath" to junitAnt.asPath
             )
             "junitInterpreterReport"("toDir" to "${layout.buildDirectory.get()}") {
-                "fileset"("dir" to "${layout.buildDirectory.get()}", "includes" to "**/InterpreterTestSuite*.xml", "excludes" to "tmp/**")
+                "fileset"(
+                    "dir" to "${layout.buildDirectory.get()}",
+                    "includes" to "**/InterpreterTestSuite*.xml",
+                    "excludes" to "tmp/**"
+                )
                 "report"("format" to "frames", "todir" to "${layout.buildDirectory.get()}/junitInterpreterReport")
             }
             "echo"("JUnit Interpreter report placed into ${layout.buildDirectory.get()}/junitInterpreterReport/index.html")
@@ -251,7 +233,9 @@ val failOnTestError by tasks.registering {
         if (junitXml.exists()) {
             val junitResult = XmlSlurper().parse(junitXml)
             val testSuites = junitResult.childNodes().asSequence().map { it as groovy.xml.slurpersupport.Node }
-            val errorsAndFailures = testSuites.sumOf { it.attributes()["errors"].toString().toInt() + it.attributes()["failures"].toString().toInt() }
+            val errorsAndFailures = testSuites.sumOf {
+                it.attributes()["errors"].toString().toInt() + it.attributes()["failures"].toString().toInt()
+            }
             if (errorsAndFailures > 0) {
                 throw GradleException("$errorsAndFailures JUnit tests failed. Check the report for details.")
             }
@@ -344,7 +328,8 @@ fun MavenPom.addDependency(configuration: Configuration) {
 fun MavenPom.addDependency(moduleGroup: String, moduleName: String, moduleVersion: String, type: String? = null) {
     withXml {
         val root = asNode()
-        val dependencies = (root.get("dependencies") as? NodeList)?.getOrNull(0) as Node? ?: root.appendNode("dependencies")
+        val dependencies =
+            (root.get("dependencies") as? NodeList)?.getOrNull(0) as Node? ?: root.appendNode("dependencies")
         dependencies.appendNode("dependency").apply {
             appendNode("groupId", moduleGroup)
             appendNode("artifactId", moduleName)
@@ -390,7 +375,7 @@ publishing {
                 }
             }
         }
-        if (currentBranch == "master" || currentBranch.startsWith("maintenance")) {
+        if (branch == "master" || branch.startsWith("maintenance")) {
             maven {
                 name = "GitHubPackages"
                 url = uri("https://maven.pkg.github.com/IETS3/iets3.opensource")

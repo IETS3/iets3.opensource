@@ -1,6 +1,9 @@
 [versions]
 mpsVersion = "2023.2.3"
 mpsMajorMinor = "2023.2+"
+# if you want to build against a specific mbeddr branch, prepend it here with a dot.
+# NOTE: instances of '/' in the branch name need to be replaced by '-'
+# example: mbeddrVersion="feature-my_new_feature.2023.2+"
 mbeddrVersion = "2023.2+"
 
 gradle = "8.13"
