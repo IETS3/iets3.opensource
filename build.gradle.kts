@@ -6,6 +6,7 @@ import de.itemis.mps.gradle.TestLanguages
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
 import groovy.util.Node
+import groovy.xml.XmlSlurper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -206,11 +207,11 @@ val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
                 "classname" to "org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator",
                 "classpath" to junitAnt.asPath
             )
-            "junitInterpreterReport"("toDir" to "${layout.buildDirectory}") {
-                "fileset"("dir" to "${layout.buildDirectory}", "includes" to "**/InterpreterTestSuite*.xml", "excludes")
-                "report"("format" to "frames", "todir" to "${layout.buildDirectory}/junitInterpreterReport")
+            "junitInterpreterReport"("toDir" to "${layout.buildDirectory.get()}") {
+                "fileset"("dir" to "${layout.buildDirectory.get()}", "includes" to "**/InterpreterTestSuite*.xml", "excludes" to "tmp/**")
+                "report"("format" to "frames", "todir" to "${layout.buildDirectory.get()}/junitInterpreterReport")
             }
-            "echo"("JUnit Interpreter report placed into ${layout.buildDirectory}/junitInterpreterReport/index.html")
+            "echo"("JUnit Interpreter report placed into ${layout.buildDirectory.get()}/junitInterpreterReport/index.html")
         }
     }
 }
@@ -242,20 +243,18 @@ val buildAndRunTests by tasks.registering(TestLanguages::class) {
     }
 }
 
-val failOnTestError by tasks.registering(TestLanguages::class) {
+val failOnTestError by tasks.registering {
     description = "evaluate junit result and fail on error"
     doLast {
-        // TODO
-//        def juniXml = file('TESTS-TestSuites.xml')
-//        if(juniXml.exists()){
-//            def junitResult = new XmlSlurper().parse(juniXml)
-//            def failures = junitResult.'**'.findAll { it.name() == 'failure' }
-//            def errors = junitResult.'**'.findAll { it.name() == 'error' }
-//
-//            if (failures || errors) {
-//                def amount = failures.size() + errors.size()
-//                throw new GradleException(amount + " JUnit tests failed. Check the test report for details.")
-//            }
+        val junitXml = file("TESTS-TestSuites.xml")
+        if (junitXml.exists()) {
+            val junitResult = XmlSlurper().parse(junitXml)
+            val testSuites = junitResult.childNodes().asSequence().map { it as groovy.xml.slurpersupport.Node }
+            val errorsAndFailures = testSuites.sumOf { it.attributes()["errors"].toString().toInt() + it.attributes()["failures"].toString().toInt() }
+            if (errorsAndFailures > 0) {
+                throw GradleException("$errorsAndFailures JUnit tests failed. Check the report for details.")
+            }
+        }
     }
 }
 
