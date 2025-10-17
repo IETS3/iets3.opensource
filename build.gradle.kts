@@ -248,6 +248,10 @@ tasks.check {
 }
 
 tasks.assemble {
+    dependsOn(buildLanguages)
+}
+
+tasks.build {
     dependsOn(packageLanguages, packageTests)
 }
 
