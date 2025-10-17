@@ -258,7 +258,7 @@ tasks.build {
 
 val migrate by tasks.registering(MpsMigrate::class) {
     dependsOn(resolveMPS, "resolveMpsForModelcheck", tasks.downloadJbr, buildLanguages, buildAndRunTests)
-    javaLauncher.set(tasks.downloadJbr.get().javaLauncher.get())
+    javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
     haltOnPrecheckFailure.set(false)
     haltOnDependencyError.set(false)
     mpsHome.set(mpsHomeDir)
@@ -271,7 +271,7 @@ val migrate by tasks.registering(MpsMigrate::class) {
 val remigrate by tasks.registering(Remigrate::class) {
     mustRunAfter(migrate, buildLanguages, buildAndRunTests)
     dependsOn(resolveMPS, "resolveMpsForModelcheck", tasks.downloadJbr)
-    javaLauncher.set(tasks.downloadJbr.get().javaLauncher.get())
+    javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
     mpsHome.set(mpsHomeDir)
     projectDirectories.from("code/languages/org.iets3.opensource")
     folderMacros.put("iets3.github.opensource.home", rootProject.layout.projectDirectory)
