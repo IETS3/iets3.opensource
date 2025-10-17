@@ -13,7 +13,7 @@ plugins {
     id 'de.itemis.mps.gradle.common' version '1.29.+'
     id "com.github.breadmoirai.github-release" version "2.5.2"
     id 'de.itemis.mps.gradle.launcher' version '2.7.0.+'
-    id "org.cyclonedx.bom" version "2.4.1"
+    id "org.cyclonedx.bom" version "3.0.0"
 }
 
 repositories {
@@ -567,13 +567,11 @@ tasks.named('githubRelease').configure {
   dependsOn packageDistroWithDependencies
 }
 
-cyclonedxBom {
-    // SBOM destination directory
-    destination = reportsDir
-    // The file name for the generated SBOMs (before the file format suffix)
-    outputName = "sbom"
-    // The file format generated, can be xml, json or all for generating both
-    outputFormat = "json"
+cyclonedxDirectBom {
+    //  destination directory and format
+    jsonOutput = file("build/reports/sbom.json")
+    // Generate only JSON format
+    xmlOutput.unsetConvention()
     // Don't include license texts in generated SBOMs
     includeLicenseText = false
     // Include runtime only deps (bundled libs, language libs, mps)
