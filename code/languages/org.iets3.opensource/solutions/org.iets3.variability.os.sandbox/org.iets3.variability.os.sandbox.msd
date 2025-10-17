@@ -42,7 +42,7 @@
     <language slang="l:9914d82b-ab8a-44d1-9c65-9f2954c3b4df:org.iets3.variability.artifacts.typesystem" version="0" />
     <language slang="l:c6ff3b3b-aff6-455e-9637-7955ccbfec22:org.iets3.variability.artifacts.vanguard" version="0" />
     <language slang="l:9b66c5c9-38bf-4315-a96f-9f4e212c69cb:org.iets3.variability.base" version="0" />
-    <language slang="l:71226ee2-bbc4-45d2-a41d-20b97237156c:org.iets3.variability.configuration.base" version="1" />
+    <language slang="l:71226ee2-bbc4-45d2-a41d-20b97237156c:org.iets3.variability.configuration.base" version="2" />
     <language slang="l:165f1d05-2506-4544-895e-1424f54166ec:org.iets3.variability.featuremodel.base" version="24" />
   </languageVersions>
   <dependencyVersions>
