@@ -252,10 +252,6 @@ tasks.assemble {
     dependsOn(buildLanguages)
 }
 
-tasks.build {
-    dependsOn(packageLanguages, packageTests)
-}
-
 val migrate by tasks.registering(MpsMigrate::class) {
     dependsOn(resolveMPS, "resolveMpsForModelcheck", tasks.downloadJbr, buildLanguages, buildAndRunTests)
     javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
