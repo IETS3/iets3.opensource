@@ -162,7 +162,7 @@ afterEvaluate {
 
 val buildAllScripts by tasks.registering(BuildLanguages::class) {
     dependsOn(resolveDependencies)
-    script = layout.buildDirectory.file("scripts/build-allScripts.xml")
+    script = rootDir.resolve("build-allScripts.xml")
 }
 
 val prebuild by tasks.registering(BuildLanguages::class) {
