@@ -1,11 +1,11 @@
 pluginManagement {
     repositories {
-        maven { url = 'https://artifacts.itemis.cloud/repository/maven-mps' }
+        maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps") }
 
         // Need to manually include the default Gradle plugin portal repository when overriding the defaults.
         gradlePluginPortal()
     }
 }
 
-rootProject.name = 'opensource'
+rootProject.name = "opensource"
 
