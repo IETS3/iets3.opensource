@@ -477,7 +477,7 @@ publishing {
     }
 }
 
-defaultTasks.add(buildLanguages.name)
+defaultTasks.add(tasks.assemble.name)
 
 githubRelease {
     owner("IETS3")
