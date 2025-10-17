@@ -488,7 +488,7 @@ githubRelease {
         }
     body {
         """
-            Automated Nighly build from ${currentDate}.
+            Automated Nightly build from ${currentDate}.
             //
             //Includes dependencies:
             //${dependencyList}
