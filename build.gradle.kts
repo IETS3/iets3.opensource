@@ -67,8 +67,8 @@ val branch: String = GitBasedVersioning.getGitBranch()
 group = "org.iets3"
 
 version = calculateVersion().also {
-    if (ciBuild) print("##teamcity[buildNumber '$it']")
-    else print("Local build detected, version will be '$it'")
+    if (ciBuild) logger.lifecycle( "##teamcity[buildNumber '$it']")
+    else logger.lifecycle( "Local build detected, version will be '$it'")
 }
 
 fun calculateVersion(): String {
