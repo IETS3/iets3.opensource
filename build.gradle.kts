@@ -90,6 +90,7 @@ fun calculateVersion(): String {
 val mpsHomeDir by extra(layout.buildDirectory.dir("mps").get())
 val artifactsDir by extra(project.layout.buildDirectory.dir("artifacts").get())
 val reportsDir by extra(project.layout.buildDirectory.dir("reports").get())
+val scriptsDir by extra(project.layout.buildDirectory.dir("scripts").get())
 
 val bundledDependencyResolveTasks = listOf(
     pcollections.registerTaskToResolveBundledDependency("org.iets3.core.expr.base.collections.stubs"),
@@ -167,17 +168,17 @@ val buildAllScripts by tasks.registering(BuildLanguages::class) {
 
 val prebuild by tasks.registering(BuildLanguages::class) {
     dependsOn(buildAllScripts)
-    script = layout.buildDirectory.file("scripts/prebuild.xml")
+    script = scriptsDir.file("prebuild.xml")
     targets("clean", "generate")
 }
 
 val buildLanguages by tasks.registering(BuildLanguages::class) {
     dependsOn(prebuild)
-    script = layout.buildDirectory.file("scripts/build-languages.xml")
+    script = scriptsDir.file("build-languages.xml")
 }
 
 val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
-    script = layout.buildDirectory.file("scripts/build-testInterpreter.xml")
+    script = scriptsDir.file("build-testInterpreter.xml")
     targets("generate", "build")
     doLast {
         ant.withGroovyBuilder {
@@ -201,7 +202,7 @@ val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
 
 val buildAndRunTests by tasks.registering(TestLanguages::class) {
     dependsOn(buildAllScripts)
-    script = layout.buildDirectory.file("scripts/build-tests.xml")
+    script = scriptsDir.file("build-tests.xml")
     finalizedBy(failOnTestError)
     doLast {
         ant.withGroovyBuilder {
@@ -313,7 +314,7 @@ val packageTests by tasks.registering(Zip::class) {
 
 val buildDistroWithDependencies by tasks.registering(RunAntScript::class) {
     dependsOn(buildLanguages)
-    script = "${layout.buildDirectory}/scripts/build-distro.xml"
+    script = scriptsDir.file("build-distro.xml")
     targets("clean", "assemble")
 }
 
