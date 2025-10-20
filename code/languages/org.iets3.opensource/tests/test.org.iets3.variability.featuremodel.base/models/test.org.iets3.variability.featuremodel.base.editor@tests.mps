@@ -7,7 +7,7 @@
     <use id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base" version="24" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="11" />
-    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="1" />
+    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="2" />
   </languages>
   <imports>
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
@@ -118,7 +118,6 @@
       </concept>
       <concept id="6698472021570799901" name="org.iets3.variability.configuration.base.structure.FeatureConfiguration" flags="ng" index="rqKBd" />
       <concept id="3470763221645494592" name="org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration" flags="ng" index="3HwiA2">
-        <property id="5939066662398655707" name="selectionState" index="3BMj5M" />
         <reference id="6698472021570799902" name="targetFeature" index="rqKBe" />
         <child id="6698472021570833352" name="content" index="rqCGo" />
       </concept>
@@ -1331,10 +1330,9 @@
         </node>
         <node concept="12i7jc" id="3PTkJkrZRlq" role="12i2BX" />
         <node concept="rqKB5" id="3PTkJkrZRBY" role="12i2BX">
-          <property role="bVyBI" value="1422122463" />
+          <property role="bVyBI" value="1714952233" />
           <property role="0Rz4W" value="1079073039" />
           <property role="TrG5h" value="CM" />
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <property role="1nQUAq" value="true" />
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
