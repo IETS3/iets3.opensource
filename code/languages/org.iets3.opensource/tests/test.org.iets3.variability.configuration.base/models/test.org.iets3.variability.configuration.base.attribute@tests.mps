@@ -7,7 +7,7 @@
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
     <use id="9b66c5c9-38bf-4315-a96f-9f4e212c69cb" name="org.iets3.variability.base" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="1" />
+    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="2" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="11" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base" version="24" />
@@ -262,9 +262,8 @@
         </node>
         <node concept="rqKB5" id="5Bs7u20Lu9S" role="12i2BX">
           <property role="TrG5h" value="C" />
-          <property role="bVyBI" value="-1492940446" />
+          <property role="bVyBI" value="677625375" />
           <property role="0Rz4W" value="1359676397" />
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <property role="1nQUAq" value="true" />
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
@@ -491,10 +490,9 @@
         <node concept="12i7jc" id="wgC742Rk3D" role="12i2BX" />
         <node concept="12i7jc" id="wgC742Rk3E" role="12i2BX" />
         <node concept="rqKB5" id="wgC742RsNu" role="12i2BX">
-          <property role="bVyBI" value="1433282111" />
+          <property role="bVyBI" value="528085365" />
           <property role="TrG5h" value="CD1" />
           <property role="0Rz4W" value="555628347" />
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <property role="1nQUAq" value="true" />
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
@@ -516,10 +514,9 @@
         </node>
         <node concept="12i7jc" id="wgC742Rk3G" role="12i2BX" />
         <node concept="rqKB5" id="wgC742RLYB" role="12i2BX">
-          <property role="bVyBI" value="1388429969" />
+          <property role="bVyBI" value="-2044816459" />
           <property role="TrG5h" value="CD2" />
           <property role="0Rz4W" value="302909158" />
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <property role="1nQUAq" value="true" />
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
@@ -545,10 +542,9 @@
         </node>
         <node concept="12i7jc" id="wgC742RHKE" role="12i2BX" />
         <node concept="rqKB5" id="wgC742Roxp" role="12i2BX">
-          <property role="bVyBI" value="679918876" />
+          <property role="bVyBI" value="-2004934926" />
           <property role="TrG5h" value="CC" />
           <property role="0Rz4W" value="724928382" />
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <property role="1nQUAq" value="true" />
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />

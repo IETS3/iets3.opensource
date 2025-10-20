@@ -7,7 +7,7 @@
     <use id="9b66c5c9-38bf-4315-a96f-9f4e212c69cb" name="org.iets3.variability.base" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
-    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="1" />
+    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="2" />
     <use id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base" version="24" />
   </languages>
   <imports>
@@ -53,7 +53,6 @@
         <property id="4791626744558055097" name="complete" index="1nQUAq" />
       </concept>
       <concept id="3470763221645494592" name="org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration" flags="ng" index="3HwiA2">
-        <property id="5939066662398655707" name="selectionState" index="3BMj5M" />
         <reference id="6698472021570799902" name="targetFeature" index="rqKBe" />
         <child id="6698472021570833352" name="content" index="rqCGo" />
       </concept>
@@ -116,9 +115,8 @@
         </node>
         <node concept="12i7jc" id="47BSdD61b1H" role="12i2BX" />
         <node concept="rqKB5" id="47BSdD61b1Q" role="12i2BX">
-          <property role="bVyBI" value="-631727554" />
+          <property role="bVyBI" value="951960976" />
           <property role="TrG5h" value="SomeConfiguration" />
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <property role="1nQUAq" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="573354694" />
@@ -158,9 +156,8 @@
         </node>
         <node concept="12i7jc" id="4hVICRIxRiD" role="12i2BX" />
         <node concept="rqKB5" id="4hVICRIxRiE" role="12i2BX">
-          <property role="bVyBI" value="-631727554" />
+          <property role="bVyBI" value="951960976" />
           <property role="TrG5h" value="SomeConfiguration" />
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <property role="1nQUAq" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="573354694" />
