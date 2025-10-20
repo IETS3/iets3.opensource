@@ -89,6 +89,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n">
@@ -8643,6 +8644,15 @@
               <property role="3PKj8l" value="000000" />
             </node>
           </node>
+          <node concept="1irR9n" id="2Vv3RHRsECA" role="2rmM5M">
+            <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
+            <node concept="3PKj8D" id="2Vv3RHRsECB" role="3PKjn_">
+              <property role="3PKj8l" value="9900cc" />
+            </node>
+            <node concept="3PKj8D" id="2Vv3RHRsECC" role="3PKjnB">
+              <property role="3PKj8l" value="000000" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3cmrfG" id="3ZjG_AI1y47" role="37wK5m">
@@ -8658,6 +8668,12 @@
           <node concept="1irR9n" id="wj7bQpzB7w" role="1irR9h">
             <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
             <node concept="3PKj8D" id="wj7bQpzB7A" role="3PKjn_">
+              <property role="3PKj8l" value="ff150f" />
+            </node>
+          </node>
+          <node concept="1irR9n" id="2Vv3RHRsECD" role="2rmM5M">
+            <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
+            <node concept="3PKj8D" id="2Vv3RHRsECE" role="3PKjn_">
               <property role="3PKj8l" value="ff150f" />
             </node>
           </node>
@@ -8680,6 +8696,12 @@
               <property role="3PKj8l" value="fa6400" />
             </node>
           </node>
+          <node concept="1irR9n" id="2Vv3RHRsECF" role="2rmM5M">
+            <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
+            <node concept="3PKj8D" id="2Vv3RHRsECG" role="3PKjn_">
+              <property role="3PKj8l" value="fa6400" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3cmrfG" id="7nY0qu7LGdD" role="37wK5m">
@@ -8695,6 +8717,12 @@
           <node concept="1irR9n" id="121_t0FesQZ" role="1irR9h">
             <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
             <node concept="3PKj8D" id="121_t0FesR0" role="3PKjn_">
+              <property role="3PKj8l" value="14b005" />
+            </node>
+          </node>
+          <node concept="1irR9n" id="2Vv3RHRsECH" role="2rmM5M">
+            <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
+            <node concept="3PKj8D" id="2Vv3RHRsECI" role="3PKjn_">
               <property role="3PKj8l" value="14b005" />
             </node>
           </node>
@@ -8716,6 +8744,12 @@
               <property role="3PKj8l" value="e86cd4" />
             </node>
           </node>
+          <node concept="1irR9n" id="2Vv3RHRsECJ" role="2rmM5M">
+            <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
+            <node concept="3PKj8D" id="2Vv3RHRsECK" role="3PKjn_">
+              <property role="3PKj8l" value="e86cd4" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3cmrfG" id="7nY0qu7LIFl" role="37wK5m">
@@ -8731,6 +8765,12 @@
           <node concept="1irR9n" id="121_t0Feox6" role="1irR9h">
             <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
             <node concept="3PKj8D" id="121_t0Feoxb" role="3PKjn_">
+              <property role="3PKj8l" value="ffaa11" />
+            </node>
+          </node>
+          <node concept="1irR9n" id="2Vv3RHRsECL" role="2rmM5M">
+            <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
+            <node concept="3PKj8D" id="2Vv3RHRsECM" role="3PKjn_">
               <property role="3PKj8l" value="ffaa11" />
             </node>
           </node>
