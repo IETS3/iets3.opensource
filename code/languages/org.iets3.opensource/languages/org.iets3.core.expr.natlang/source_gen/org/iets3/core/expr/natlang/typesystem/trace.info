@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="9,0,21,0" name="org.iets3.core.expr.natlang.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:bdb5c130-3f2d-4741-b8aa-76ccc2ea69e5(org.iets3.core.expr.natlang.typesystem)/1693890388431462076">
+    <file name="TypesystemDescriptor.java">
+      <node id="1693890388431462076" at="15,5,16,107" concept="6" />
+      <node id="1693890388431462076" at="16,107,17,55" concept="2" />
+      <node id="1693890388431462076" at="14,5,18,5" concept="0" />
+      <scope id="1693890388431462076" at="15,5,17,55">
+        <var name="nonTypesystemRule" id="1693890388431462076" />
+      </scope>
+    </file>
+    <file name="check_NaturalLangageCallSyntax_NonTypesystemRule.java">
+      <node id="1693890388431466207" at="24,137,25,121" concept="6" />
+      <node id="1693890388431463513" at="26,69,27,64" concept="6" />
+      <node id="1693890388431463513" at="27,64,28,258" concept="6" />
+      <node id="1693890388431462076" at="31,50,32,41" concept="7" />
+      <node id="1693890388431462076" at="34,68,35,102" concept="7" />
+      <node id="1693890388431462076" at="37,30,38,17" concept="7" />
+      <node id="1693890388431462076" at="42,0,43,0" concept="8" trace="IFunctionLike$t6" />
+      <node id="1693890388431462076" at="43,0,44,0" concept="8" trace="NatLangCallSyntax$tE" />
+      <node id="1693890388431462076" at="47,0,48,0" concept="8" trace="ext$atYv" />
+      <node id="1693890388431462076" at="22,0,24,0" concept="1" trace="check_NaturalLangageCallSyntax_NonTypesystemRule#()V" />
+      <node id="1693890388431462076" at="31,0,34,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1693890388431462076" at="34,0,37,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1693890388431462076" at="37,0,40,0" concept="5" trace="overrides#()Z" />
+      <node id="1693890388431463513" at="25,121,29,5" concept="4" />
+      <node id="1693890388431462076" at="24,0,31,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1693890388431462076" at="22,61,22,61" />
+      <scope id="1693890388431462076" at="31,50,32,41" />
+      <scope id="1693890388431462076" at="34,68,35,102" />
+      <scope id="1693890388431462076" at="37,30,38,17" />
+      <scope id="1693890388431462076" at="22,0,24,0" />
+      <scope id="1693890388431463513" at="26,69,28,258">
+        <var name="_reporter_2309309498" id="1693890388431463513" />
+        <var name="errorTarget" id="1693890388431463513" />
+      </scope>
+      <scope id="1693890388431462076" at="31,0,34,0" />
+      <scope id="1693890388431462076" at="34,0,37,0">
+        <var name="argument" id="1693890388431462076" />
+      </scope>
+      <scope id="1693890388431462076" at="37,0,40,0" />
+      <scope id="1693890388431462077" at="24,137,29,5">
+        <var name="funLike" id="1693890388431466208" />
+      </scope>
+      <scope id="1693890388431462076" at="24,0,31,0">
+        <var name="naturalLangageCallSyntax" id="1693890388431462076" />
+        <var name="status" id="1693890388431462076" />
+        <var name="typeCheckingContext" id="1693890388431462076" />
+      </scope>
+      <unit id="1693890388431462076" at="46,0,49,0" name="org.iets3.core.expr.natlang.typesystem.check_NaturalLangageCallSyntax_NonTypesystemRule$PROPS" />
+      <unit id="1693890388431462076" at="41,0,45,0" name="org.iets3.core.expr.natlang.typesystem.check_NaturalLangageCallSyntax_NonTypesystemRule$CONCEPTS" />
+      <unit id="1693890388431462076" at="21,0,50,0" name="org.iets3.core.expr.natlang.typesystem.check_NaturalLangageCallSyntax_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:bdb5c130-3f2d-4741-b8aa-76ccc2ea69e5(org.iets3.core.expr.natlang.typesystem)/1693890388432167286">
+    <file name="TypesystemDescriptor.java">
+      <node id="1693890388432167286" at="11,5,12,91" concept="6" />
+      <node id="1693890388432167286" at="12,91,13,47" concept="2" />
+      <node id="1693890388432167286" at="10,33,14,5" concept="0" />
+      <scope id="1693890388432167286" at="11,5,13,47">
+        <var name="inferenceRule" id="1693890388432167286" />
+      </scope>
+    </file>
+    <file name="typeof_NatLangFunctionCall_InferenceRule.java">
+      <node id="4790956042240522600" at="28,5,29,46" concept="6" />
+      <node id="4790956042240522600" at="29,46,30,204" concept="6" />
+      <node id="4790956042240522600" at="30,204,31,434" concept="2" />
+      <node id="3723661587927791424" at="32,5,33,103" concept="6" />
+      <node id="3723661587927791903" at="33,103,34,155" concept="6" />
+      <node id="4790956042240563024" at="36,7,37,66" concept="6" />
+      <node id="4790956042240563024" at="37,66,38,290" concept="6" />
+      <node id="4790956042240550888" at="42,9,43,47" concept="6" />
+      <node id="4790956042240550888" at="43,47,44,208" concept="6" />
+      <node id="4790956042240550888" at="44,208,45,582" concept="2" />
+      <node id="1693890388432167286" at="50,50,51,43" concept="7" />
+      <node id="1693890388432167286" at="53,68,54,102" concept="7" />
+      <node id="1693890388432167286" at="56,30,57,17" concept="7" />
+      <node id="1693890388432167286" at="61,0,62,0" concept="8" trace="extFun$6wA$" />
+      <node id="1693890388432167286" at="62,0,63,0" concept="8" trace="args$U5u9" />
+      <node id="1693890388432167286" at="63,0,64,0" concept="8" trace="args$XOIh" />
+      <node id="1693890388432167286" at="67,0,68,0" concept="8" trace="NatLangFunctionCall$wE" />
+      <node id="1693890388432167286" at="25,0,27,0" concept="1" trace="typeof_NatLangFunctionCall_InferenceRule#()V" />
+      <node id="1693890388432167286" at="50,0,53,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1693890388432167286" at="53,0,56,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1693890388432167286" at="56,0,59,0" concept="5" trace="overrides#()Z" />
+      <node id="4790956042240563024" at="35,37,39,7" concept="0" />
+      <node id="4790956042240522600" at="27,117,32,5" concept="0" />
+      <node id="4790956042240550888" at="41,97,46,9" concept="0" />
+      <node id="4790956042240550182" at="40,12,47,7" concept="3" />
+      <node id="4790956042240562655" at="40,10,48,5" concept="0" />
+      <node id="4790956042240522992" at="34,155,48,5" concept="4" />
+      <node id="1693890388432167286" at="27,0,50,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1693890388432167286" at="25,53,25,53" />
+      <scope id="1693890388432167286" at="50,50,51,43" />
+      <scope id="1693890388432167286" at="53,68,54,102" />
+      <scope id="1693890388432167286" at="56,30,57,17" />
+      <scope id="1693890388432167286" at="25,0,27,0" />
+      <scope id="4790956042240563024" at="36,7,38,290">
+        <var name="_reporter_2309309498" id="4790956042240563024" />
+        <var name="errorTarget" id="4790956042240563024" />
+      </scope>
+      <scope id="4790956042240522600" at="28,5,31,434">
+        <var name="_info_12389875345" id="4790956042240522600" />
+        <var name="_nodeToCheck_1029348928467" id="4790956042240522600" />
+      </scope>
+      <scope id="4790956042240550888" at="42,9,45,582">
+        <var name="_info_12389875345" id="4790956042240550888" />
+        <var name="_nodeToCheck_1029348928467" id="4790956042240550888" />
+      </scope>
+      <scope id="1693890388432167286" at="50,0,53,0" />
+      <scope id="1693890388432167286" at="53,0,56,0">
+        <var name="argument" id="1693890388432167286" />
+      </scope>
+      <scope id="1693890388432167286" at="56,0,59,0" />
+      <scope id="4790956042240522994" at="35,37,39,7" />
+      <scope id="4790956042240550186" at="41,97,46,9" />
+      <scope id="4790956042240550182" at="40,12,47,7">
+        <var name="a" id="4790956042240550184" />
+      </scope>
+      <scope id="4790956042240562656" at="40,12,47,7" />
+      <scope id="1693890388432167287" at="27,117,48,5">
+        <var name="actualSize" id="3723661587927791425" />
+        <var name="expectedSize" id="3723661587927791904" />
+      </scope>
+      <scope id="1693890388432167286" at="27,0,50,0">
+        <var name="nlfc" id="1693890388432167286" />
+        <var name="status" id="1693890388432167286" />
+        <var name="typeCheckingContext" id="1693890388432167286" />
+      </scope>
+      <unit id="1693890388432167286" at="66,0,69,0" name="org.iets3.core.expr.natlang.typesystem.typeof_NatLangFunctionCall_InferenceRule$CONCEPTS" />
+      <unit id="1693890388432167286" at="60,0,65,0" name="org.iets3.core.expr.natlang.typesystem.typeof_NatLangFunctionCall_InferenceRule$LINKS" />
+      <unit id="1693890388432167286" at="24,0,70,0" name="org.iets3.core.expr.natlang.typesystem.typeof_NatLangFunctionCall_InferenceRule" />
+    </file>
+  </root>
+</debug-info>
+

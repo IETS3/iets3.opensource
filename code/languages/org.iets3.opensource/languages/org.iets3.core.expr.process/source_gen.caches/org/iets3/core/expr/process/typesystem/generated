@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="fhr4aynpnmkx4m1no44f7ili8vwo6s">
+  <files names="TypesystemDescriptor.java:check_SenderPartyInterceptor_NonTypesystemRule.java:check_TakeTurnsInterceptor_NonTypesystemRule.java:check_WhoIsNextExpr_NonTypesystemRule.java:typeof_AnySenderExpr_InferenceRule.java:typeof_MultipartyAbstractDecision_InferenceRule.java:typeof_PartyLiteral_InferenceRule.java:typeof_Process_InferenceRule.java:typeof_RunProcess_InferenceRule.java:typeof_SenderContextArg_InferenceRule.java:typeof_SenderPartyInterceptor_InferenceRule.java:typeof_WhoIsNextExpr_InferenceRule.java" />
+</product>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="bjaokaeug72ukn878a15slprnfefmg">
+  <files names="CommonBaseUtil.java:ConfigFixedValues.java:ConfigurationScopeProvider.java:ConfigurationSolverBase.java:ConfigurationSolverBaseExtension.java:ConfigurationSolverFacade.java:ExtensionDescriptor.java:FMCTraversal.java:FeatureAttributeAssignmentUtil.java:FeatureModelConfigurationConstraintsUtil.java:FeatureModelConfigurationScoping.java:FeatureModelIncludeUtil.java:FeatureModelNixHandler.java:FeatureModelNixHandlerExtension.java:FeatureNix.java:FeatureSelectionStateUtil.java:FixAdaptToExtendedFMC.java:IConfigurationSolver.java:ListenerUtil.java" />
+</product>
+

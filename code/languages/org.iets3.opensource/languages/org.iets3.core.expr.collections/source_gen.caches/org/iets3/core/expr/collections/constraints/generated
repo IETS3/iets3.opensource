@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-euu2jfy3qvb53qmm1sky8ccxed3q4ez">
+  <files names="AbstractStringListJoiner_Constraints.java:AsMapOp_Constraints.java:AsSingletonList_Constraints.java:CollectionSizeSpec_Constraints.java:CollectionType_Constraints.java:ConstraintsAspectDescriptor.java:ICollectionOp_Constraints.java:IListOneArgOp_Constraints.java:IMapOneArgOp_Constraints.java:IOrderedCollectionOp_Constraints.java:ISetOneArgOp_Constraints.java:IndexExpr_Constraints.java:ListInsertOp_Constraints.java:ListPickOp_Constraints.java:MapKeysOp_Constraints.java:MapSizeOp_Constraints.java:MapValuesOp_Constraints.java:MaxOp_Constraints.java:MinOp_Constraints.java:SimpleSortOp_Constraints.java:SumOp_Constraints.java:UpToTarget_Constraints.java" />
+</product>
+

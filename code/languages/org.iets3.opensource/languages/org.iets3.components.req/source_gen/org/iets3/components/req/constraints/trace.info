@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,32,0" name="org.iets3.components.req.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:4f316eec-6fb7-47d8-b0d7-03d93d7f7f75(org.iets3.components.req.constraints)/229512757699527943">
+    <file name="ComponentsParagraph_Constraints.java">
+      <node id="229512757699527943" at="16,93,17,56" concept="5" />
+      <node id="229512757699527944" at="17,56,18,30" concept="1" />
+      <node id="229512757699527944" at="22,53,23,60" concept="5" />
+      <node id="229512757699527988" at="26,40,27,103" concept="3" />
+      <node id="229512757699527943" at="32,0,33,0" concept="4" trace="ComponentsParagraph$HZ" />
+      <node id="229512757699527943" at="36,0,37,0" concept="4" trace="name$MnvL" />
+      <node id="229512757699527944" at="22,0,25,0" concept="0" trace="Name_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="229512757699527943" at="16,0,20,0" concept="0" trace="ComponentsParagraph_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="229512757699527944" at="25,0,29,0" concept="2" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="229512757699527944" at="22,53,23,60" />
+      <scope id="229512757699527947" at="26,40,27,103" />
+      <scope id="229512757699527943" at="16,93,18,30" />
+      <scope id="229512757699527944" at="22,0,25,0">
+        <var name="container" id="229512757699527944" />
+      </scope>
+      <scope id="229512757699527943" at="16,0,20,0">
+        <var name="initContext" id="229512757699527943" />
+      </scope>
+      <scope id="229512757699527944" at="25,0,29,0">
+        <var name="node" id="229512757699527944" />
+      </scope>
+      <unit id="229512757699527943" at="31,0,34,0" name="org.iets3.components.req.constraints.ComponentsParagraph_Constraints$CONCEPTS" />
+      <unit id="229512757699527943" at="35,0,38,0" name="org.iets3.components.req.constraints.ComponentsParagraph_Constraints$PROPS" />
+      <unit id="229512757699527944" at="21,0,30,0" name="org.iets3.components.req.constraints.ComponentsParagraph_Constraints$Name_PD" />
+      <unit id="229512757699527943" at="15,0,39,0" name="org.iets3.components.req.constraints.ComponentsParagraph_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

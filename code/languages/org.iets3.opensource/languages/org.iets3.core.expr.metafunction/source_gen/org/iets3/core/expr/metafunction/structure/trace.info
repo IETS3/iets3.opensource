@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,57,0" name="org.iets3.core.expr.metafunction.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,34,0" name="org.iets3.core.expr.metafunction.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="15,0,108,0" name="org.iets3.core.expr.metafunction.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)/5994308065059739152">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5994308065059739152" at="14,0,15,0" concept="1" trace="props_MetaFunction" />
+      <node id="5994308065059739152" at="37,41,38,76" concept="3" />
+      <node id="5994308065059739152" at="38,76,39,43" concept="0" />
+      <node id="5994308065059739152" at="39,43,40,46" concept="0" />
+      <node id="5994308065059739152" at="40,46,41,44" concept="0" />
+      <node id="5994308065059739152" at="42,9,43,34" concept="4" />
+      <node id="5994308065059739152" at="36,46,42,9" concept="2" />
+      <scope id="5994308065059739152" at="37,41,41,44">
+        <var name="cpb" id="5994308065059739152" />
+      </scope>
+      <scope id="5994308065059739152" at="36,46,43,34" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5994308065059739152" at="14,0,15,0" concept="6" trace="MetaFunction" />
+      <node id="5994308065059739152" at="20,52,21,51" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5994308065059739152" at="18,0,19,0" concept="1" trace="myConceptMetaFunction" />
+      <node id="5994308065059739152" at="50,46,51,37" concept="4" />
+      <node id="5994308065059739152" at="83,70,84,179" concept="3" />
+      <node id="5994308065059739152" at="84,179,85,34" concept="0" />
+      <node id="5994308065059739152" at="85,34,86,75" concept="0" />
+      <node id="5994308065059739152" at="86,75,87,76" concept="0" />
+      <node id="5994308065059739152" at="87,76,88,119" concept="0" />
+      <node id="5994308065059739152" at="88,119,89,17" concept="0" />
+      <node id="5434768545131920932" at="89,17,90,117" concept="0" />
+      <node id="5994308065059740883" at="90,117,91,196" concept="0" />
+      <node id="5994308065059740880" at="91,196,92,292" concept="0" />
+      <node id="5994308065059743871" at="92,292,93,197" concept="0" />
+      <node id="3795092733472307119" at="93,197,94,199" concept="0" />
+      <node id="5994308065059739152" at="94,199,95,22" concept="4" />
+      <node id="5994308065059739152" at="83,0,97,0" concept="7" trace="createDescriptorForMetaFunction#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5994308065059739152" at="50,46,51,37" />
+      <scope id="5994308065059739152" at="83,70,95,22">
+        <var name="b" id="5994308065059739152" />
+      </scope>
+      <scope id="5994308065059739152" at="83,0,97,0" />
+    </file>
+  </root>
+  <root nodeRef="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)/5994308065059740875">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5994308065059740875" at="15,0,16,0" concept="1" trace="props_MetaFunctionArgument" />
+      <node id="5994308065059740875" at="45,49,46,137" concept="3" />
+      <node id="5994308065059740878" at="46,137,47,68" concept="0" />
+      <node id="5994308065059740875" at="47,68,48,52" concept="0" />
+      <node id="5994308065059740875" at="48,52,49,35" concept="0" />
+      <node id="5994308065059740875" at="49,35,50,52" concept="0" />
+      <node id="5994308065059740875" at="51,9,52,42" concept="4" />
+      <node id="5994308065059740875" at="44,54,51,9" concept="2" />
+      <scope id="5994308065059740875" at="45,49,50,52">
+        <var name="cpb" id="5994308065059740875" />
+      </scope>
+      <scope id="5994308065059740875" at="44,54,52,42" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5994308065059740875" at="15,0,16,0" concept="6" trace="MetaFunctionArgument" />
+      <node id="5994308065059740875" at="21,51,22,59" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5994308065059740875" at="19,0,20,0" concept="1" trace="myConceptMetaFunctionArgument" />
+      <node id="5994308065059740875" at="52,54,53,45" concept="4" />
+      <node id="5994308065059740875" at="97,78,98,187" concept="3" />
+      <node id="5994308065059740875" at="98,187,99,34" concept="0" />
+      <node id="5994308065059740875" at="99,34,100,75" concept="0" />
+      <node id="5994308065059740875" at="100,75,101,76" concept="0" />
+      <node id="5994308065059740875" at="101,76,102,119" concept="0" />
+      <node id="5994308065059740875" at="102,119,103,17" concept="0" />
+      <node id="5994308065059740878" at="103,17,104,201" concept="0" />
+      <node id="5994308065059740875" at="104,201,105,22" concept="4" />
+      <node id="5994308065059740875" at="97,0,107,0" concept="7" trace="createDescriptorForMetaFunctionArgument#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5994308065059740875" at="52,54,53,45" />
+      <scope id="5994308065059740875" at="97,78,105,22">
+        <var name="b" id="5994308065059740875" />
+      </scope>
+      <scope id="5994308065059740875" at="97,0,107,0" />
+    </file>
+  </root>
+  <root nodeRef="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)/5994308065059776299">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5994308065059776299" at="12,0,13,0" concept="1" trace="props_IMetaFunctionContext" />
+      <node id="5994308065059776299" at="23,49,24,76" concept="3" />
+      <node id="5994308065059776299" at="24,76,25,52" concept="0" />
+      <node id="5994308065059776299" at="26,9,27,42" concept="4" />
+      <node id="5994308065059776299" at="22,54,26,9" concept="2" />
+      <scope id="5994308065059776299" at="23,49,25,52">
+        <var name="cpb" id="5994308065059776299" />
+      </scope>
+      <scope id="5994308065059776299" at="22,54,27,42" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5994308065059776299" at="12,0,13,0" concept="6" trace="IMetaFunctionContext" />
+      <node id="5994308065059776299" at="18,116,19,59" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5994308065059776299" at="16,0,17,0" concept="1" trace="myConceptIMetaFunctionContext" />
+      <node id="5994308065059776299" at="46,54,47,45" concept="4" />
+      <node id="5994308065059776299" at="64,78,65,187" concept="3" />
+      <node id="5994308065059776299" at="65,187,66,19" concept="0" />
+      <node id="5994308065059776299" at="66,19,67,76" concept="0" />
+      <node id="5994308065059776299" at="67,76,68,119" concept="0" />
+      <node id="5994308065059776299" at="68,119,69,17" concept="0" />
+      <node id="5994308065059799377" at="69,17,70,201" concept="0" />
+      <node id="5994308065059776299" at="70,201,71,22" concept="4" />
+      <node id="5994308065059776299" at="64,0,73,0" concept="7" trace="createDescriptorForIMetaFunctionContext#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5994308065059776299" at="46,54,47,45" />
+      <scope id="5994308065059776299" at="64,78,71,22">
+        <var name="b" id="5994308065059776299" />
+      </scope>
+      <scope id="5994308065059776299" at="64,0,73,0" />
+    </file>
+  </root>
+  <root nodeRef="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)/5994308065068956525">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5994308065068956525" at="13,0,14,0" concept="1" trace="props_MetaFunArgRef" />
+      <node id="5994308065068956525" at="29,42,30,76" concept="3" />
+      <node id="5994308065068956525" at="30,76,31,67" concept="0" />
+      <node id="5994308065068956525" at="31,67,32,137" concept="0" />
+      <node id="5994308065068956525" at="32,137,33,45" concept="0" />
+      <node id="5994308065068956525" at="34,9,35,35" concept="4" />
+      <node id="5994308065068956525" at="28,47,34,9" concept="2" />
+      <scope id="5994308065068956525" at="29,42,33,45">
+        <var name="cpb" id="5994308065068956525" />
+      </scope>
+      <scope id="5994308065068956525" at="28,47,35,35" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5994308065068956525" at="13,0,14,0" concept="6" trace="MetaFunArgRef" />
+      <node id="5994308065068956525" at="19,59,20,52" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5994308065068956525" at="17,0,18,0" concept="1" trace="myConceptMetaFunArgRef" />
+      <node id="5994308065068956525" at="48,47,49,38" concept="4" />
+      <node id="5994308065068956525" at="73,71,74,180" concept="3" />
+      <node id="5994308065068956525" at="74,180,75,34" concept="0" />
+      <node id="5994308065068956525" at="75,34,76,61" concept="5" />
+      <node id="5994308065068956525" at="76,61,77,76" concept="0" />
+      <node id="5994308065068956525" at="77,76,78,119" concept="0" />
+      <node id="5994308065068956525" at="78,119,79,17" concept="0" />
+      <node id="5994308065068956526" at="79,17,80,167" concept="0" />
+      <node id="5994308065068956525" at="80,167,81,22" concept="4" />
+      <node id="5994308065068956525" at="73,0,83,0" concept="7" trace="createDescriptorForMetaFunArgRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5994308065068956525" at="48,47,49,38" />
+      <scope id="5994308065068956525" at="73,71,81,22">
+        <var name="b" id="5994308065068956525" />
+      </scope>
+      <scope id="5994308065068956525" at="73,0,83,0" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,36,0" name="org.iets3.core.attributes.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:cdcfcbad-3fb2-4e7b-8895-cfa34f1f7e10(org.iets3.core.attributes.constraints)/3166685969326785778">
+    <file name="IValueAttribute_Constraints.java">
+      <node id="3166685969326785778" at="11,89,12,52" concept="2" />
+      <node id="3166685969326785778" at="16,0,17,0" concept="1" trace="IValueAttribute$$D" />
+      <node id="3166685969326785778" at="11,0,14,0" concept="0" trace="IValueAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3166685969326785778" at="11,89,12,52" />
+      <scope id="3166685969326785778" at="11,0,14,0">
+        <var name="initContext" id="3166685969326785778" />
+      </scope>
+      <unit id="3166685969326785778" at="15,0,18,0" name="org.iets3.core.attributes.constraints.IValueAttribute_Constraints$CONCEPTS" />
+      <unit id="3166685969326785778" at="10,0,19,0" name="org.iets3.core.attributes.constraints.IValueAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:cdcfcbad-3fb2-4e7b-8895-cfa34f1f7e10(org.iets3.core.attributes.constraints)/4886573260948279586">
+    <file name="IAttributeWithContext_Constraints.java">
+      <node id="4886573260948279586" at="11,95,12,58" concept="2" />
+      <node id="4886573260948279586" at="16,0,17,0" concept="1" trace="IAttributeWithContext$pC" />
+      <node id="4886573260948279586" at="11,0,14,0" concept="0" trace="IAttributeWithContext_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="4886573260948279586" at="11,95,12,58" />
+      <scope id="4886573260948279586" at="11,0,14,0">
+        <var name="initContext" id="4886573260948279586" />
+      </scope>
+      <unit id="4886573260948279586" at="15,0,18,0" name="org.iets3.core.attributes.constraints.IAttributeWithContext_Constraints$CONCEPTS" />
+      <unit id="4886573260948279586" at="10,0,19,0" name="org.iets3.core.attributes.constraints.IAttributeWithContext_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:cdcfcbad-3fb2-4e7b-8895-cfa34f1f7e10(org.iets3.core.attributes.constraints)/806329106163276584">
+    <file name="AttributeContainerWithContext_Constraints.java">
+      <node id="806329106163276584" at="11,103,12,66" concept="2" />
+      <node id="806329106163276584" at="16,0,17,0" concept="1" trace="AttributeContainerWithContext$Wa" />
+      <node id="806329106163276584" at="11,0,14,0" concept="0" trace="AttributeContainerWithContext_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="806329106163276584" at="11,103,12,66" />
+      <scope id="806329106163276584" at="11,0,14,0">
+        <var name="initContext" id="806329106163276584" />
+      </scope>
+      <unit id="806329106163276584" at="15,0,18,0" name="org.iets3.core.attributes.constraints.AttributeContainerWithContext_Constraints$CONCEPTS" />
+      <unit id="806329106163276584" at="10,0,19,0" name="org.iets3.core.attributes.constraints.AttributeContainerWithContext_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

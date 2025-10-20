@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="5bd2i6m7k96qavv36o9kczd1gpccrxb">
+  <files names="AbstractTraceExplorerAction.java:Disposables.java:DisposeDisposables_ProjectPluginPart.java:EditorUpdater.java:ExecutionModePreference.java:Generator.java:GeneratorWorkspace.java:ITraceExplorerAction.java:IconContainer.java:Interpreter.java:InterpreterValueHighlighter.java:InterpreterWorkspace.java:NoPreferenceWorkspace.java:Plugin_ApplicationPlugin.java:Plugin_ProjectPlugin.java:ShowCoverage_Action.java:TestExecutionSettings.java:TestExecutionWorkspaceSetting.java:TestExecution_ActionGroup.java:_Adapters.java:addValueInspector_Action.java:clearValuesInspector_Action.java:coverageGroup_ActionGroup.java:deleteValuesInspectors_Action.java:valueInspector_ActionGroup.java" />
+</product>
+

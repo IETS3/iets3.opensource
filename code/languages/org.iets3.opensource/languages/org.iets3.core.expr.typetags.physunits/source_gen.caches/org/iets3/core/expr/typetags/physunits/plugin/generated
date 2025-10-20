@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-csn69c21blhhxkxgff7sze1a4th4of2">
+  <files names="DefaultPhysUnitLangConfig.java:DefaultPhysUnitLangConfigExtension.java:ExprPhysUnitInterpreter_extension.java:ExtensionDescriptor.java:IUnitLangConfig.java:InterpreterExprPhysUnitInterpreter.java:PhysUnitInterpreterHelper.java:PhysUnitLangConfigHelper.java:PhysUnitTypeHelper.java:UnitTypesPrimitiveTypeMapperHelper.java" />
+</product>
+

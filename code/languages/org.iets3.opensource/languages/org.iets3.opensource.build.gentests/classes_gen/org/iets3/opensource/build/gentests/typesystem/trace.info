@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="org.iets3.opensource.build.gentests.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:4cb2316b-1997-488d-96e2-a0f658b31925(org.iets3.opensource.build.gentests.typesystem)/4450806019279274351">
+    <file name="TypesystemDescriptor.java">
+      <node id="4450806019279274351" at="10,5,11,124" concept="6" />
+      <node id="4450806019279274351" at="11,124,12,55" concept="2" />
+      <node id="4450806019279274351" at="9,33,13,5" concept="0" />
+      <scope id="4450806019279274351" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="4450806019279274351" />
+      </scope>
+    </file>
+    <file name="check_CustomRunnerAspectPlugInForMissingDevKits_NonTypesystemRule.java">
+      <node id="6210493253422139377" at="43,131,44,573" concept="6" />
+      <node id="6210493253422193836" at="45,35,46,579" concept="2" />
+      <node id="6210493253422213331" at="48,35,49,13" concept="7" />
+      <node id="6210493253422213591" at="50,5,51,0" concept="9" />
+      <node id="4450806019283055993" at="51,0,52,131" concept="6" />
+      <node id="4450806019284807394" at="52,131,53,0" concept="9" />
+      <node id="4450806019284441470" at="53,0,54,122" concept="6" />
+      <node id="4450806019279341885" at="54,122,55,84" concept="6" />
+      <node id="6210493253422357993" at="55,84,56,0" concept="9" />
+      <node id="6210493253422433152" at="56,0,57,50" concept="6" />
+      <node id="6210493253422984836" at="57,50,58,230" concept="6" />
+      <node id="6210493253423026341" at="58,230,59,0" concept="9" />
+      <node id="3621661915147712117" at="59,0,60,146" concept="8" />
+      <node id="4450806019284537280" at="63,98,64,104" concept="2" />
+      <node id="4450806019284488467" at="65,9,66,116" concept="2" />
+      <node id="6210493253422573895" at="68,5,69,0" concept="9" />
+      <node id="6210493253423856001" at="69,0,70,146" concept="6" />
+      <node id="3757886318248457646" at="72,7,73,66" concept="6" />
+      <node id="3757886318248457646" at="73,66,74,306" concept="6" />
+      <node id="4450806019284615783" at="76,7,77,0" concept="9" />
+      <node id="4450806019279274351" at="79,50,80,42" concept="7" />
+      <node id="4450806019279274351" at="82,68,83,102" concept="7" />
+      <node id="4450806019285188792" at="85,78,86,77" concept="6" />
+      <node id="4450806019285137578" at="86,77,87,340" concept="6" />
+      <node id="4450806019285264175" at="88,49,89,178" concept="2" />
+      <node id="4450806019285328815" at="90,5,91,348" concept="2" />
+      <node id="3757886318247622634" at="91,348,92,446" concept="2" />
+      <node id="4450806019285383785" at="92,446,93,18" concept="7" />
+      <node id="4450806019279274351" at="95,30,96,17" concept="7" />
+      <node id="4450806019279274351" at="100,0,101,0" concept="10" trace="BuildProject$ae" />
+      <node id="4450806019279274351" at="101,0,102,0" concept="10" trace="BuildMps_IdeaPlugin$po" />
+      <node id="4450806019279274351" at="102,0,103,0" concept="10" trace="BuildMps_IdeaPluginModule$rY" />
+      <node id="4450806019279274351" at="103,0,104,0" concept="10" trace="BuildMps_IdeaPluginGroup$_R" />
+      <node id="4450806019279274351" at="104,0,105,0" concept="10" trace="CustomRunnerAspect$eN" />
+      <node id="4450806019279274351" at="105,0,106,0" concept="10" trace="BuildMps_DevKit$jc" />
+      <node id="4450806019279274351" at="109,0,110,0" concept="10" trace="parts$mGDj" />
+      <node id="4450806019279274351" at="110,0,111,0" concept="10" trace="content$9T6D" />
+      <node id="4450806019279274351" at="111,0,112,0" concept="10" trace="target$ccfo" />
+      <node id="4450806019279274351" at="112,0,113,0" concept="10" trace="solution$MOiH" />
+      <node id="4450806019279274351" at="113,0,114,0" concept="10" trace="group$qLbS" />
+      <node id="4450806019279274351" at="114,0,115,0" concept="10" trace="modules$JlQo" />
+      <node id="4450806019279274351" at="115,0,116,0" concept="10" trace="path$yl1Q" />
+      <node id="4450806019279274351" at="116,0,117,0" concept="10" trace="dependencies$9_ak" />
+      <node id="4450806019279274351" at="117,0,118,0" concept="10" trace="target$cxAi" />
+      <node id="4450806019279274351" at="121,0,122,0" concept="10" trace="name$MnvL" />
+      <node id="4450806019279274351" at="41,0,43,0" concept="1" trace="check_CustomRunnerAspectPlugInForMissingDevKits_NonTypesystemRule#()V" />
+      <node id="6210493253422180133" at="44,573,47,5" concept="4" />
+      <node id="6210493253422205326" at="47,5,50,5" concept="4" />
+      <node id="4450806019284483330" at="62,115,65,9" concept="4" />
+      <node id="4450806019279274351" at="79,0,82,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4450806019279274351" at="82,0,85,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4450806019285145327" at="87,340,90,5" concept="4" />
+      <node id="4450806019279274351" at="95,0,98,0" concept="5" trace="overrides#()Z" />
+      <node id="3757886318248457646" at="71,172,75,7" concept="0" />
+      <node id="4450806019283402328" at="61,223,67,7" concept="3" />
+      <node id="4450806019283591674" at="70,146,76,7" concept="2" />
+      <node id="4450806019279374707" at="60,146,68,5" concept="3" />
+      <node id="4450806019285076502" at="85,0,95,0" concept="5" trace="_additional_getDevKistFromIdeaPlugin#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="4450806019279274351" at="43,0,79,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4450806019279274351" at="41,78,41,78" />
+      <scope id="6210493253422180135" at="45,35,46,579" />
+      <scope id="6210493253422205328" at="48,35,49,13" />
+      <scope id="4450806019284483332" at="63,98,64,104" />
+      <scope id="4450806019279274351" at="79,50,80,42" />
+      <scope id="4450806019279274351" at="82,68,83,102" />
+      <scope id="4450806019285145329" at="88,49,89,178" />
+      <scope id="4450806019279274351" at="95,30,96,17" />
+      <scope id="4450806019279274351" at="41,0,43,0" />
+      <scope id="3757886318248457646" at="72,7,74,306">
+        <var name="_reporter_2309309498" id="3757886318248457646" />
+        <var name="errorTarget" id="3757886318248457646" />
+      </scope>
+      <scope id="4450806019279274351" at="79,0,82,0" />
+      <scope id="4450806019279274351" at="82,0,85,0">
+        <var name="argument" id="4450806019279274351" />
+      </scope>
+      <scope id="4450806019279274351" at="95,0,98,0" />
+      <scope id="4450806019283402334" at="62,115,66,116" />
+      <scope id="4450806019284114924" at="71,172,75,7" />
+      <scope id="4450806019279374713" at="61,223,67,7" />
+      <scope id="4450806019283402328" at="61,223,67,7">
+        <var name="devkit" id="4450806019283402330" />
+      </scope>
+      <scope id="4450806019279374707" at="60,146,68,5">
+        <var name="model" id="4450806019279374709" />
+      </scope>
+      <scope id="4450806019285076504" at="85,78,93,18">
+        <var name="retval" id="4450806019285188795" />
+        <var name="seq" id="4450806019285137579" />
+      </scope>
+      <scope id="4450806019285076502" at="85,0,95,0">
+        <var name="ideaPlugIn" id="4450806019285083045" />
+      </scope>
+      <scope id="4450806019279274352" at="43,131,77,0">
+        <var name="devKitNames" id="6210493253423856002" />
+        <var name="devKitsDenoted" id="4450806019283055994" />
+        <var name="devkit2model" id="4450806019284441473" />
+        <var name="ideaPlugIn" id="6210493253422139378" />
+        <var name="moduleNames" id="6210493253422984837" />
+        <var name="modules" id="6210493253422433153" />
+        <var name="repo" id="4450806019279341886" />
+      </scope>
+      <scope id="4450806019279274351" at="43,0,79,0">
+        <var name="customRunnerAspect" id="4450806019279274351" />
+        <var name="status" id="4450806019279274351" />
+        <var name="typeCheckingContext" id="4450806019279274351" />
+      </scope>
+      <unit id="4450806019279274351" at="120,0,123,0" name="org.iets3.opensource.build.gentests.typesystem.check_CustomRunnerAspectPlugInForMissingDevKits_NonTypesystemRule$PROPS" />
+      <unit id="4450806019279274351" at="99,0,107,0" name="org.iets3.opensource.build.gentests.typesystem.check_CustomRunnerAspectPlugInForMissingDevKits_NonTypesystemRule$CONCEPTS" />
+      <unit id="4450806019279274351" at="108,0,119,0" name="org.iets3.opensource.build.gentests.typesystem.check_CustomRunnerAspectPlugInForMissingDevKits_NonTypesystemRule$LINKS" />
+      <unit id="4450806019279274351" at="40,0,124,0" name="org.iets3.opensource.build.gentests.typesystem.check_CustomRunnerAspectPlugInForMissingDevKits_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

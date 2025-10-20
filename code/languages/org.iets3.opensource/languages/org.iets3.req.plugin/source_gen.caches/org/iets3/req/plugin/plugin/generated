@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-3nbfskvdrzhsn3dpn9n3uv2o1247tj5">
+  <files names="AddChildRequirement_Action.java:AddSiblingRequirement_Action.java:ContextActionsDescriptor.java:DeleteRequirement_Action.java:ExtensionDescriptor.java:Group_requirementsAsTablesDetails_ActionGroup.java:Group_requirementsAsTables_ActionGroup.java:Helper.java:IconContainer.java:NewModuleOnModel_Action.java:NewReqActionInModule_Action.java:Plugin_ApplicationPlugin.java:ProjectViewDescriptor.java:RequirementsConfig.java:RequirementsConfigHelper.java:RequirementsExplorerHelper.java:TogglerequirementsAsTables.java:TogglerequirementsAsTablesDetails.java:reqActions_ActionGroup.java" />
+</product>
+

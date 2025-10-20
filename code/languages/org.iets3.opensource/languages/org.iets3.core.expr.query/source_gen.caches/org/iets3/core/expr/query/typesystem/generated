@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="4mkhdhjahy1d5q29ve70a8bjzxhxq">
+  <files names="TypesystemDescriptor.java:check_QueryExpr_NonTypesystemRule.java:typeof_QueryExpr_InferenceRule.java:typeof_QueryGroup_InferenceRule.java:typeof_QuerySource_InferenceRule.java:typeof_QueryTransform_InferenceRule.java" />
+</product>
+

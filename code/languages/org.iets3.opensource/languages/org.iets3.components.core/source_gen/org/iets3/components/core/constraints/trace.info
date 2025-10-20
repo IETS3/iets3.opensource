@@ -1,0 +1,2072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,114,0" name="org.iets3.components.core.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/1514143479005589391">
+    <file name="EmptyComponentsChunkContent_Constraints.java">
+      <node id="1514143479005589391" at="16,101,17,64" concept="12" />
+      <node id="1514143479005589392" at="17,64,18,30" concept="2" />
+      <node id="1514143479005589392" at="22,53,23,60" concept="12" />
+      <node id="1514143479005589468" at="26,40,27,63" concept="7" />
+      <node id="1514143479005589391" at="32,0,33,0" concept="10" trace="EmptyComponentsChunkContent$LO" />
+      <node id="1514143479005589391" at="36,0,37,0" concept="10" trace="name$MnvL" />
+      <node id="1514143479005589392" at="22,0,25,0" concept="1" trace="Name_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="1514143479005589391" at="16,0,20,0" concept="1" trace="EmptyComponentsChunkContent_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="1514143479005589392" at="25,0,29,0" concept="5" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="1514143479005589392" at="22,53,23,60" />
+      <scope id="1514143479005589395" at="26,40,27,63" />
+      <scope id="1514143479005589391" at="16,101,18,30" />
+      <scope id="1514143479005589392" at="22,0,25,0">
+        <var name="container" id="1514143479005589392" />
+      </scope>
+      <scope id="1514143479005589391" at="16,0,20,0">
+        <var name="initContext" id="1514143479005589391" />
+      </scope>
+      <scope id="1514143479005589392" at="25,0,29,0">
+        <var name="node" id="1514143479005589392" />
+      </scope>
+      <unit id="1514143479005589391" at="31,0,34,0" name="org.iets3.components.core.constraints.EmptyComponentsChunkContent_Constraints$CONCEPTS" />
+      <unit id="1514143479005589391" at="35,0,38,0" name="org.iets3.components.core.constraints.EmptyComponentsChunkContent_Constraints$PROPS" />
+      <unit id="1514143479005589392" at="21,0,30,0" name="org.iets3.components.core.constraints.EmptyComponentsChunkContent_Constraints$Name_PD" />
+      <unit id="1514143479005589391" at="15,0,39,0" name="org.iets3.components.core.constraints.EmptyComponentsChunkContent_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/1782891495982998118">
+    <file name="DelegateConnector_Constraints.java">
+      <node id="1782891495982998118" at="31,91,32,54" concept="12" />
+      <node id="1782891495982998119" at="32,54,33,26" concept="2" />
+      <node id="1782891495983004020" at="33,26,34,26" concept="2" />
+      <node id="1782891495982998119" at="38,54,39,58" concept="12" />
+      <node id="1782891495982998119" at="42,114,43,18" concept="7" />
+      <node id="1782891495982998759" at="46,117,47,206" concept="2" />
+      <node id="1782891495982998119" at="54,61,55,138" concept="7" />
+      <node id="1928011281873128333" at="58,78,59,145" concept="6" />
+      <node id="1928011281873128343" at="60,26,61,36" concept="7" />
+      <node id="1928011281873128348" at="62,11,63,274" concept="7" />
+      <node id="1782891495983004020" at="69,54,70,57" concept="12" />
+      <node id="1782891495983004020" at="73,114,74,18" concept="7" />
+      <node id="1782891495983007731" at="77,117,78,206" concept="2" />
+      <node id="1782891495983004020" at="85,61,86,138" concept="7" />
+      <node id="1928011281873128597" at="89,78,90,369" concept="7" />
+      <node id="1782891495982998118" at="97,0,98,0" concept="10" trace="DelegateConnector$uB" />
+      <node id="1782891495982998118" at="98,0,99,0" concept="10" trace="Component$gR" />
+      <node id="1782891495982998118" at="102,0,103,0" concept="10" trace="sourcePort$lhQu" />
+      <node id="1782891495982998118" at="103,0,104,0" concept="10" trace="connectorType$8zQx" />
+      <node id="1782891495982998118" at="104,0,105,0" concept="10" trace="type$5Gl6" />
+      <node id="1782891495982998118" at="105,0,106,0" concept="10" trace="sourceInstance$lh9r" />
+      <node id="1782891495982998118" at="106,0,107,0" concept="10" trace="ref$H$FL" />
+      <node id="1782891495982998118" at="107,0,108,0" concept="10" trace="outerPort$lnWS" />
+      <node id="1782891495982998118" at="108,0,109,0" concept="10" trace="category$WD4l" />
+      <node id="1782891495982998119" at="38,0,41,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="1928011281873128341" at="59,145,62,11" concept="4" />
+      <node id="1782891495983004020" at="69,0,72,0" concept="1" trace="RD2#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="1782891495982998119" at="41,0,45,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1782891495982998119" at="45,0,49,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1782891495982998119" at="53,0,57,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="1782891495983004020" at="72,0,76,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1782891495983004020" at="76,0,80,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1782891495983004020" at="84,0,88,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="1782891495983004020" at="88,0,92,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="1782891495982998118" at="31,0,36,0" concept="1" trace="DelegateConnector_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="1782891495982998119" at="57,0,65,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="1782891495983004020" at="82,54,92,8" concept="7" />
+      <node id="1782891495982998119" at="51,54,65,8" concept="7" />
+      <node id="1782891495983004020" at="80,0,94,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="1782891495982998119" at="49,0,67,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="1782891495982998119" at="38,54,39,58" />
+      <scope id="1782891495982998119" at="42,114,43,18" />
+      <scope id="1782891495982998746" at="46,117,47,206" />
+      <scope id="1782891495982998119" at="54,61,55,138" />
+      <scope id="1928011281873128342" at="60,26,61,36" />
+      <scope id="1782891495983004020" at="69,54,70,57" />
+      <scope id="1782891495983004020" at="73,114,74,18" />
+      <scope id="1782891495983007013" at="77,117,78,206" />
+      <scope id="1782891495983004020" at="85,61,86,138" />
+      <scope id="1782891495983004020" at="89,78,90,369" />
+      <scope id="1782891495982998118" at="31,91,34,26" />
+      <scope id="1782891495982998119" at="38,0,41,0">
+        <var name="container" id="1782891495982998119" />
+      </scope>
+      <scope id="1782891495983004020" at="69,0,72,0">
+        <var name="container" id="1782891495983004020" />
+      </scope>
+      <scope id="1782891495982998119" at="41,0,45,0">
+        <var name="newReferentNode" id="1782891495982998119" />
+        <var name="oldReferentNode" id="1782891495982998119" />
+        <var name="referenceNode" id="1782891495982998119" />
+      </scope>
+      <scope id="1782891495982998119" at="45,0,49,0">
+        <var name="newReferentNode" id="1782891495982998119" />
+        <var name="oldReferentNode" id="1782891495982998119" />
+        <var name="referenceNode" id="1782891495982998119" />
+      </scope>
+      <scope id="1782891495982998119" at="53,0,57,0" />
+      <scope id="1782891495983004020" at="72,0,76,0">
+        <var name="newReferentNode" id="1782891495983004020" />
+        <var name="oldReferentNode" id="1782891495983004020" />
+        <var name="referenceNode" id="1782891495983004020" />
+      </scope>
+      <scope id="1782891495983004020" at="76,0,80,0">
+        <var name="newReferentNode" id="1782891495983004020" />
+        <var name="oldReferentNode" id="1782891495983004020" />
+        <var name="referenceNode" id="1782891495983004020" />
+      </scope>
+      <scope id="1782891495983004020" at="84,0,88,0" />
+      <scope id="1782891495983004020" at="88,0,92,0">
+        <var name="_context" id="1782891495983004020" />
+      </scope>
+      <scope id="1782891495982998118" at="31,0,36,0">
+        <var name="initContext" id="1782891495982998118" />
+      </scope>
+      <scope id="1782891495982998119" at="58,78,63,274">
+        <var name="i" id="1928011281873128334" />
+      </scope>
+      <scope id="1782891495982998119" at="57,0,65,0">
+        <var name="_context" id="1782891495982998119" />
+      </scope>
+      <scope id="1782891495983004020" at="82,54,92,8" />
+      <scope id="1782891495982998119" at="51,54,65,8" />
+      <scope id="1782891495983004020" at="80,0,94,0" />
+      <scope id="1782891495982998119" at="49,0,67,0" />
+      <unit id="1782891495982998118" at="96,0,100,0" name="org.iets3.components.core.constraints.DelegateConnector_Constraints$CONCEPTS" />
+      <unit id="1782891495983004020" at="83,17,92,7" name="org.iets3.components.core.constraints.DelegateConnector_Constraints$RD2$1" />
+      <unit id="1782891495982998118" at="101,0,110,0" name="org.iets3.components.core.constraints.DelegateConnector_Constraints$LINKS" />
+      <unit id="1782891495982998119" at="52,17,65,7" name="org.iets3.components.core.constraints.DelegateConnector_Constraints$RD1$1" />
+      <unit id="1782891495983004020" at="68,0,95,0" name="org.iets3.components.core.constraints.DelegateConnector_Constraints$RD2" />
+      <unit id="1782891495982998119" at="37,0,68,0" name="org.iets3.components.core.constraints.DelegateConnector_Constraints$RD1" />
+      <unit id="1782891495982998118" at="30,0,111,0" name="org.iets3.components.core.constraints.DelegateConnector_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/2244552513300329406">
+    <file name="ThisComponentExpr_Constraints.java">
+      <node id="2244552513300329406" at="21,91,22,54" concept="12" />
+      <node id="2244552513300329406" at="25,127,26,128" concept="6" />
+      <node id="2244552513300329406" at="26,128,27,0" concept="9" />
+      <node id="2244552513300329406" at="28,55,29,71" concept="2" />
+      <node id="2244552513300329406" at="30,9,31,0" concept="9" />
+      <node id="2244552513300329406" at="31,0,32,22" concept="7" />
+      <node id="7126186526844781696" at="37,128,38,101" concept="7" />
+      <node id="2244552513300329406" at="40,0,41,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="2244552513300329406" at="43,0,44,0" concept="10" trace="ThisComponentExpr$$T" />
+      <node id="2244552513300329406" at="44,0,45,0" concept="10" trace="Component$gR" />
+      <node id="2244552513300329406" at="27,0,30,9" concept="4" />
+      <node id="2244552513300329406" at="37,0,40,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="2244552513300329406" at="24,0,34,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="2244552513300329406" at="22,54,34,7" concept="2" />
+      <node id="2244552513300329406" at="21,0,36,0" concept="1" trace="ThisComponentExpr_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="2244552513300329406" at="28,55,29,71" />
+      <scope id="7126186526844781695" at="37,128,38,101" />
+      <scope id="2244552513300329406" at="37,0,40,0">
+        <var name="childConcept" id="2244552513300329406" />
+        <var name="link" id="2244552513300329406" />
+        <var name="node" id="2244552513300329406" />
+        <var name="parentNode" id="2244552513300329406" />
+      </scope>
+      <scope id="2244552513300329406" at="25,127,32,22">
+        <var name="result" id="2244552513300329406" />
+      </scope>
+      <scope id="2244552513300329406" at="24,0,34,0">
+        <var name="checkingNodeContext" id="2244552513300329406" />
+        <var name="context" id="2244552513300329406" />
+      </scope>
+      <scope id="2244552513300329406" at="21,91,34,7" />
+      <scope id="2244552513300329406" at="21,0,36,0">
+        <var name="initContext" id="2244552513300329406" />
+      </scope>
+      <unit id="2244552513300329406" at="42,0,46,0" name="org.iets3.components.core.constraints.ThisComponentExpr_Constraints$CONCEPTS" />
+      <unit id="2244552513300329406" at="23,32,34,5" name="org.iets3.components.core.constraints.ThisComponentExpr_Constraints$1" />
+      <unit id="2244552513300329406" at="20,0,47,0" name="org.iets3.components.core.constraints.ThisComponentExpr_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/2244552513301308466">
+    <file name="PortRefTarget_Constraints.java">
+      <node id="2244552513301308466" at="34,87,35,50" concept="12" />
+      <node id="2244552513301312842" at="35,50,36,26" concept="2" />
+      <node id="2244552513301308466" at="39,127,40,128" concept="6" />
+      <node id="2244552513301308466" at="40,128,41,0" concept="9" />
+      <node id="2244552513301308466" at="42,55,43,71" concept="2" />
+      <node id="2244552513301308466" at="44,9,45,0" concept="9" />
+      <node id="2244552513301308466" at="45,0,46,22" concept="7" />
+      <node id="2244552513301312842" at="52,54,53,53" concept="12" />
+      <node id="2244552513301312842" at="60,61,61,138" concept="7" />
+      <node id="1928011281873130984" at="64,78,65,554" concept="7" />
+      <node id="7126186526844781683" at="70,128,71,219" concept="7" />
+      <node id="2244552513301308466" at="73,0,74,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="2244552513301308466" at="76,0,77,0" concept="10" trace="PortRefTarget$3o" />
+      <node id="2244552513301308466" at="77,0,78,0" concept="10" trace="DotExpression$jp" />
+      <node id="2244552513301308466" at="78,0,79,0" concept="10" trace="ComponentType$zO" />
+      <node id="2244552513301308466" at="82,0,83,0" concept="10" trace="port$wzZX" />
+      <node id="2244552513301308466" at="83,0,84,0" concept="10" trace="expr$CW3E" />
+      <node id="2244552513301308466" at="84,0,85,0" concept="10" trace="component$SVvs" />
+      <node id="2244552513301308466" at="41,0,44,9" concept="4" />
+      <node id="2244552513301312842" at="52,0,55,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="2244552513301308466" at="70,0,73,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="2244552513301312842" at="59,0,63,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2244552513301312842" at="63,0,67,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="2244552513301308466" at="38,0,48,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="2244552513301312842" at="57,54,67,8" concept="7" />
+      <node id="2244552513301308466" at="36,26,48,7" concept="2" />
+      <node id="2244552513301312842" at="55,0,69,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2244552513301308466" at="34,0,50,0" concept="1" trace="PortRefTarget_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="2244552513301308466" at="42,55,43,71" />
+      <scope id="2244552513301312842" at="52,54,53,53" />
+      <scope id="2244552513301312842" at="60,61,61,138" />
+      <scope id="2244552513301312842" at="64,78,65,554" />
+      <scope id="7126186526844781682" at="70,128,71,219" />
+      <scope id="2244552513301312842" at="52,0,55,0">
+        <var name="container" id="2244552513301312842" />
+      </scope>
+      <scope id="2244552513301308466" at="70,0,73,0">
+        <var name="childConcept" id="2244552513301308466" />
+        <var name="link" id="2244552513301308466" />
+        <var name="node" id="2244552513301308466" />
+        <var name="parentNode" id="2244552513301308466" />
+      </scope>
+      <scope id="2244552513301312842" at="59,0,63,0" />
+      <scope id="2244552513301312842" at="63,0,67,0">
+        <var name="_context" id="2244552513301312842" />
+      </scope>
+      <scope id="2244552513301308466" at="39,127,46,22">
+        <var name="result" id="2244552513301308466" />
+      </scope>
+      <scope id="2244552513301308466" at="38,0,48,0">
+        <var name="checkingNodeContext" id="2244552513301308466" />
+        <var name="context" id="2244552513301308466" />
+      </scope>
+      <scope id="2244552513301312842" at="57,54,67,8" />
+      <scope id="2244552513301308466" at="34,87,48,7" />
+      <scope id="2244552513301312842" at="55,0,69,0" />
+      <scope id="2244552513301308466" at="34,0,50,0">
+        <var name="initContext" id="2244552513301308466" />
+      </scope>
+      <unit id="2244552513301308466" at="75,0,80,0" name="org.iets3.components.core.constraints.PortRefTarget_Constraints$CONCEPTS" />
+      <unit id="2244552513301308466" at="81,0,86,0" name="org.iets3.components.core.constraints.PortRefTarget_Constraints$LINKS" />
+      <unit id="2244552513301312842" at="58,17,67,7" name="org.iets3.components.core.constraints.PortRefTarget_Constraints$RD1$1" />
+      <unit id="2244552513301308466" at="37,32,48,5" name="org.iets3.components.core.constraints.PortRefTarget_Constraints$1" />
+      <unit id="2244552513301312842" at="51,0,70,0" name="org.iets3.components.core.constraints.PortRefTarget_Constraints$RD1" />
+      <unit id="2244552513301308466" at="33,0,87,0" name="org.iets3.components.core.constraints.PortRefTarget_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/2244552513302471423">
+    <file name="ComponentInstanceRefTarget_Constraints.java">
+      <node id="2244552513302471423" at="33,100,34,63" concept="12" />
+      <node id="2244552513302475120" at="34,63,35,26" concept="2" />
+      <node id="2244552513302471423" at="38,127,39,128" concept="6" />
+      <node id="2244552513302471423" at="39,128,40,0" concept="9" />
+      <node id="2244552513302471423" at="41,55,42,71" concept="2" />
+      <node id="2244552513302471423" at="43,9,44,0" concept="9" />
+      <node id="2244552513302471423" at="44,0,45,22" concept="7" />
+      <node id="2244552513302475120" at="51,54,52,57" concept="12" />
+      <node id="2244552513302475120" at="59,61,60,138" concept="7" />
+      <node id="1928011281873129526" at="63,78,64,540" concept="7" />
+      <node id="7126186526844781789" at="69,128,70,219" concept="7" />
+      <node id="2244552513302471423" at="72,0,73,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="2244552513302471423" at="75,0,76,0" concept="10" trace="ComponentInstanceRefTarget$76" />
+      <node id="2244552513302471423" at="76,0,77,0" concept="10" trace="DotExpression$jp" />
+      <node id="2244552513302471423" at="77,0,78,0" concept="10" trace="ComponentType$zO" />
+      <node id="2244552513302471423" at="78,0,79,0" concept="10" trace="ComponentInstance$7c" />
+      <node id="2244552513302471423" at="82,0,83,0" concept="10" trace="instance$l_QX" />
+      <node id="2244552513302471423" at="83,0,84,0" concept="10" trace="expr$CW3E" />
+      <node id="2244552513302471423" at="84,0,85,0" concept="10" trace="component$SVvs" />
+      <node id="2244552513302471423" at="40,0,43,9" concept="4" />
+      <node id="2244552513302475120" at="51,0,54,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="2244552513302471423" at="69,0,72,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="2244552513302475120" at="58,0,62,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2244552513302475120" at="62,0,66,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="2244552513302471423" at="37,0,47,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="2244552513302475120" at="56,54,66,8" concept="7" />
+      <node id="2244552513302471423" at="35,26,47,7" concept="2" />
+      <node id="2244552513302475120" at="54,0,68,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2244552513302471423" at="33,0,49,0" concept="1" trace="ComponentInstanceRefTarget_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="2244552513302471423" at="41,55,42,71" />
+      <scope id="2244552513302475120" at="51,54,52,57" />
+      <scope id="2244552513302475120" at="59,61,60,138" />
+      <scope id="2244552513302475120" at="63,78,64,540" />
+      <scope id="7126186526844781788" at="69,128,70,219" />
+      <scope id="2244552513302475120" at="51,0,54,0">
+        <var name="container" id="2244552513302475120" />
+      </scope>
+      <scope id="2244552513302471423" at="69,0,72,0">
+        <var name="childConcept" id="2244552513302471423" />
+        <var name="link" id="2244552513302471423" />
+        <var name="node" id="2244552513302471423" />
+        <var name="parentNode" id="2244552513302471423" />
+      </scope>
+      <scope id="2244552513302475120" at="58,0,62,0" />
+      <scope id="2244552513302475120" at="62,0,66,0">
+        <var name="_context" id="2244552513302475120" />
+      </scope>
+      <scope id="2244552513302471423" at="38,127,45,22">
+        <var name="result" id="2244552513302471423" />
+      </scope>
+      <scope id="2244552513302471423" at="37,0,47,0">
+        <var name="checkingNodeContext" id="2244552513302471423" />
+        <var name="context" id="2244552513302471423" />
+      </scope>
+      <scope id="2244552513302475120" at="56,54,66,8" />
+      <scope id="2244552513302471423" at="33,100,47,7" />
+      <scope id="2244552513302475120" at="54,0,68,0" />
+      <scope id="2244552513302471423" at="33,0,49,0">
+        <var name="initContext" id="2244552513302471423" />
+      </scope>
+      <unit id="2244552513302471423" at="81,0,86,0" name="org.iets3.components.core.constraints.ComponentInstanceRefTarget_Constraints$LINKS" />
+      <unit id="2244552513302471423" at="74,0,80,0" name="org.iets3.components.core.constraints.ComponentInstanceRefTarget_Constraints$CONCEPTS" />
+      <unit id="2244552513302475120" at="57,17,66,7" name="org.iets3.components.core.constraints.ComponentInstanceRefTarget_Constraints$RD1$1" />
+      <unit id="2244552513302471423" at="36,32,47,5" name="org.iets3.components.core.constraints.ComponentInstanceRefTarget_Constraints$1" />
+      <unit id="2244552513302475120" at="50,0,69,0" name="org.iets3.components.core.constraints.ComponentInstanceRefTarget_Constraints$RD1" />
+      <unit id="2244552513302471423" at="32,0,87,0" name="org.iets3.components.core.constraints.ComponentInstanceRefTarget_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/2244552513306489994">
+    <file name="AbstractPortsTarget_Constraints.java">
+      <node id="2244552513306489994" at="22,93,23,56" concept="12" />
+      <node id="2244552513306489994" at="26,127,27,128" concept="6" />
+      <node id="2244552513306489994" at="27,128,28,0" concept="9" />
+      <node id="2244552513306489994" at="29,55,30,71" concept="2" />
+      <node id="2244552513306489994" at="31,9,32,0" concept="9" />
+      <node id="2244552513306489994" at="32,0,33,22" concept="7" />
+      <node id="7126186526844781656" at="38,128,39,194" concept="7" />
+      <node id="2244552513306489994" at="41,0,42,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="2244552513306489994" at="44,0,45,0" concept="10" trace="AbstractPortsTarget$DF" />
+      <node id="2244552513306489994" at="45,0,46,0" concept="10" trace="DotExpression$jp" />
+      <node id="2244552513306489994" at="46,0,47,0" concept="10" trace="ComponentType$zO" />
+      <node id="2244552513306489994" at="28,0,31,9" concept="4" />
+      <node id="2244552513306489994" at="38,0,41,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="2244552513306489994" at="25,0,35,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="2244552513306489994" at="23,56,35,7" concept="2" />
+      <node id="2244552513306489994" at="22,0,37,0" concept="1" trace="AbstractPortsTarget_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="2244552513306489994" at="29,55,30,71" />
+      <scope id="7126186526844781655" at="38,128,39,194" />
+      <scope id="2244552513306489994" at="38,0,41,0">
+        <var name="childConcept" id="2244552513306489994" />
+        <var name="link" id="2244552513306489994" />
+        <var name="node" id="2244552513306489994" />
+        <var name="parentNode" id="2244552513306489994" />
+      </scope>
+      <scope id="2244552513306489994" at="26,127,33,22">
+        <var name="result" id="2244552513306489994" />
+      </scope>
+      <scope id="2244552513306489994" at="25,0,35,0">
+        <var name="checkingNodeContext" id="2244552513306489994" />
+        <var name="context" id="2244552513306489994" />
+      </scope>
+      <scope id="2244552513306489994" at="22,93,35,7" />
+      <scope id="2244552513306489994" at="22,0,37,0">
+        <var name="initContext" id="2244552513306489994" />
+      </scope>
+      <unit id="2244552513306489994" at="43,0,48,0" name="org.iets3.components.core.constraints.AbstractPortsTarget_Constraints$CONCEPTS" />
+      <unit id="2244552513306489994" at="24,32,35,5" name="org.iets3.components.core.constraints.AbstractPortsTarget_Constraints$1" />
+      <unit id="2244552513306489994" at="21,0,49,0" name="org.iets3.components.core.constraints.AbstractPortsTarget_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/2244552513309646227">
+    <file name="AbstractInstancesTarget_Constraints.java">
+      <node id="2244552513309646227" at="22,97,23,60" concept="12" />
+      <node id="2244552513309646227" at="26,127,27,128" concept="6" />
+      <node id="2244552513309646227" at="27,128,28,0" concept="9" />
+      <node id="2244552513309646227" at="29,55,30,71" concept="2" />
+      <node id="2244552513309646227" at="31,9,32,0" concept="9" />
+      <node id="2244552513309646227" at="32,0,33,22" concept="7" />
+      <node id="7126186526844781646" at="38,128,39,194" concept="7" />
+      <node id="2244552513309646227" at="41,0,42,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="2244552513309646227" at="44,0,45,0" concept="10" trace="AbstractInstancesTarget$Wc" />
+      <node id="2244552513309646227" at="45,0,46,0" concept="10" trace="DotExpression$jp" />
+      <node id="2244552513309646227" at="46,0,47,0" concept="10" trace="ComponentType$zO" />
+      <node id="2244552513309646227" at="28,0,31,9" concept="4" />
+      <node id="2244552513309646227" at="38,0,41,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="2244552513309646227" at="25,0,35,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="2244552513309646227" at="23,60,35,7" concept="2" />
+      <node id="2244552513309646227" at="22,0,37,0" concept="1" trace="AbstractInstancesTarget_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="2244552513309646227" at="29,55,30,71" />
+      <scope id="7126186526844781645" at="38,128,39,194" />
+      <scope id="2244552513309646227" at="38,0,41,0">
+        <var name="childConcept" id="2244552513309646227" />
+        <var name="link" id="2244552513309646227" />
+        <var name="node" id="2244552513309646227" />
+        <var name="parentNode" id="2244552513309646227" />
+      </scope>
+      <scope id="2244552513309646227" at="26,127,33,22">
+        <var name="result" id="2244552513309646227" />
+      </scope>
+      <scope id="2244552513309646227" at="25,0,35,0">
+        <var name="checkingNodeContext" id="2244552513309646227" />
+        <var name="context" id="2244552513309646227" />
+      </scope>
+      <scope id="2244552513309646227" at="22,97,35,7" />
+      <scope id="2244552513309646227" at="22,0,37,0">
+        <var name="initContext" id="2244552513309646227" />
+      </scope>
+      <unit id="2244552513309646227" at="43,0,48,0" name="org.iets3.components.core.constraints.AbstractInstancesTarget_Constraints$CONCEPTS" />
+      <unit id="2244552513309646227" at="24,32,35,5" name="org.iets3.components.core.constraints.AbstractInstancesTarget_Constraints$1" />
+      <unit id="2244552513309646227" at="21,0,49,0" name="org.iets3.components.core.constraints.AbstractInstancesTarget_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/2245119349897983607">
+    <file name="IConceptSpecificAttribute_Constraints.java">
+      <node id="2245119349897983607" at="27,99,28,62" concept="12" />
+      <node id="2245119349897983607" at="31,127,32,128" concept="6" />
+      <node id="2245119349897983607" at="32,128,33,0" concept="9" />
+      <node id="2245119349897983607" at="34,55,35,71" concept="2" />
+      <node id="2245119349897983607" at="36,9,37,0" concept="9" />
+      <node id="2245119349897983607" at="37,0,38,22" concept="7" />
+      <node id="4448734902939361275" at="43,128,44,200" concept="6" />
+      <node id="4448734902939372260" at="44,200,45,0" concept="9" />
+      <node id="7248846953024048561" at="45,0,46,119" concept="6" />
+      <node id="4448734902939169033" at="47,36,48,129" concept="6" />
+      <node id="4448734902939169039" at="48,129,49,89" concept="6" />
+      <node id="4448734902939180151" at="49,89,50,0" concept="9" />
+      <node id="4448734902939173585" at="51,7,52,50" concept="6" />
+      <node id="7248846953024064067" at="53,89,54,93" concept="8" />
+      <node id="4448734902939389437" at="54,93,55,57" concept="8" />
+      <node id="7690377372959566512" at="55,57,56,161" concept="6" />
+      <node id="4448734902939381201" at="56,161,57,291" concept="7" />
+      <node id="4448734902939149273" at="61,83,62,100" concept="8" />
+      <node id="4448734902939149282" at="63,90,64,20" concept="7" />
+      <node id="7248846953025030159" at="66,5,67,17" concept="7" />
+      <node id="2245119349897983607" at="69,0,70,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="2245119349897983607" at="72,0,73,0" concept="10" trace="IConceptSpecificAttribute$8H" />
+      <node id="2245119349897983607" at="73,0,74,0" concept="10" trace="IContextTypeProvider$Ib" />
+      <node id="2245119349897983607" at="74,0,75,0" concept="10" trace="ITypeWithTarget$mU" />
+      <node id="2245119349897983607" at="33,0,36,9" concept="4" />
+      <node id="4448734902939149280" at="62,100,65,7" concept="4" />
+      <node id="4448734902939173585" at="52,50,58,9" concept="4" />
+      <node id="4448734902939149267" at="60,5,66,5" concept="3" />
+      <node id="4448734902939173585" at="50,0,59,7" concept="0" />
+      <node id="2245119349897983607" at="30,0,40,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="2245119349897983607" at="28,62,40,7" concept="2" />
+      <node id="7248846953024048570" at="46,119,60,5" concept="4" />
+      <node id="2245119349897983607" at="27,0,42,0" concept="1" trace="IConceptSpecificAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="2245119349897983607" at="43,0,69,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <scope id="2245119349897983607" at="34,55,35,71" />
+      <scope id="4448734902939149281" at="63,90,64,20" />
+      <scope id="4448734902939173587" at="53,89,57,291">
+        <var name="targetConcept" id="7690377372959566513" />
+      </scope>
+      <scope id="4448734902939149269" at="61,83,65,7" />
+      <scope id="4448734902939149267" at="60,5,66,5">
+        <var name="allowed" id="4448734902939149268" />
+      </scope>
+      <scope id="2245119349897983607" at="31,127,38,22">
+        <var name="result" id="2245119349897983607" />
+      </scope>
+      <scope id="4448734902939173585" at="51,7,58,9">
+        <var name="itypeWithTarget" id="4448734902939173585" />
+      </scope>
+      <scope id="2245119349897983607" at="30,0,40,0">
+        <var name="checkingNodeContext" id="2245119349897983607" />
+        <var name="context" id="2245119349897983607" />
+      </scope>
+      <scope id="7248846953024048571" at="47,36,59,7">
+        <var name="contextType" id="4448734902939169040" />
+        <var name="contextTypeNode" id="4448734902939169034" />
+      </scope>
+      <scope id="2245119349897983607" at="27,99,40,7" />
+      <scope id="2245119349897983607" at="27,0,42,0">
+        <var name="initContext" id="2245119349897983607" />
+      </scope>
+      <scope id="7126186526844781801" at="43,128,67,17">
+        <var name="canBeUsedUnderParents" id="4448734902939361276" />
+        <var name="ctxTypeProvider" id="7248846953024048562" />
+      </scope>
+      <scope id="2245119349897983607" at="43,0,69,0">
+        <var name="childConcept" id="2245119349897983607" />
+        <var name="link" id="2245119349897983607" />
+        <var name="node" id="2245119349897983607" />
+        <var name="parentNode" id="2245119349897983607" />
+      </scope>
+      <unit id="2245119349897983607" at="71,0,76,0" name="org.iets3.components.core.constraints.IConceptSpecificAttribute_Constraints$CONCEPTS" />
+      <unit id="2245119349897983607" at="29,32,40,5" name="org.iets3.components.core.constraints.IConceptSpecificAttribute_Constraints$1" />
+      <unit id="2245119349897983607" at="26,0,77,0" name="org.iets3.components.core.constraints.IConceptSpecificAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/229512757698222158">
+    <file name="AssemblyConnector_Constraints.java">
+      <node id="229512757698222158" at="29,91,30,54" concept="12" />
+      <node id="229512757698222192" at="30,54,31,26" concept="2" />
+      <node id="229512757698225173" at="31,26,32,26" concept="2" />
+      <node id="229512757698222192" at="36,54,37,58" concept="12" />
+      <node id="229512757698222192" at="40,114,41,18" concept="7" />
+      <node id="5487983292192957327" at="44,117,45,206" concept="2" />
+      <node id="229512757698222192" at="52,61,53,137" concept="7" />
+      <node id="1928011281873130804" at="56,78,57,145" concept="6" />
+      <node id="1928011281873130814" at="58,26,59,36" concept="7" />
+      <node id="1928011281873130819" at="60,11,61,135" concept="7" />
+      <node id="229512757698225173" at="67,54,68,58" concept="12" />
+      <node id="229512757698225173" at="71,114,72,18" concept="7" />
+      <node id="5487983292192962708" at="75,117,76,206" concept="2" />
+      <node id="229512757698225173" at="83,61,84,137" concept="7" />
+      <node id="1928011281873130876" at="87,78,88,145" concept="6" />
+      <node id="1928011281873130886" at="89,26,90,36" concept="7" />
+      <node id="1928011281873130891" at="91,11,92,339" concept="7" />
+      <node id="229512757698222158" at="99,0,100,0" concept="10" trace="AssemblyConnector$qU" />
+      <node id="229512757698222158" at="103,0,104,0" concept="10" trace="sourcePort$ZLvQ" />
+      <node id="229512757698222158" at="104,0,105,0" concept="10" trace="connectorType$8zQx" />
+      <node id="229512757698222158" at="105,0,106,0" concept="10" trace="type$5Gl6" />
+      <node id="229512757698222158" at="106,0,107,0" concept="10" trace="sourceInstance$LjmV" />
+      <node id="229512757698222158" at="107,0,108,0" concept="10" trace="ref$H$FL" />
+      <node id="229512757698222158" at="108,0,109,0" concept="10" trace="targetPort$ZZ$M" />
+      <node id="229512757698222158" at="109,0,110,0" concept="10" trace="targetInstance$RipR" />
+      <node id="229512757698222158" at="110,0,111,0" concept="10" trace="category$WD4l" />
+      <node id="229512757698222192" at="36,0,39,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="1928011281873130812" at="57,145,60,11" concept="4" />
+      <node id="229512757698225173" at="67,0,70,0" concept="1" trace="RD2#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="1928011281873130884" at="88,145,91,11" concept="4" />
+      <node id="229512757698222192" at="39,0,43,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="229512757698222192" at="43,0,47,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="229512757698222192" at="51,0,55,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="229512757698225173" at="70,0,74,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="229512757698225173" at="74,0,78,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="229512757698225173" at="82,0,86,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="229512757698222158" at="29,0,34,0" concept="1" trace="AssemblyConnector_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="229512757698222192" at="55,0,63,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="229512757698225173" at="86,0,94,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="229512757698222192" at="49,54,63,8" concept="7" />
+      <node id="229512757698225173" at="80,54,94,8" concept="7" />
+      <node id="229512757698222192" at="47,0,65,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="229512757698225173" at="78,0,96,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="229512757698222192" at="36,54,37,58" />
+      <scope id="229512757698222192" at="40,114,41,18" />
+      <scope id="5487983292192956898" at="44,117,45,206" />
+      <scope id="229512757698222192" at="52,61,53,137" />
+      <scope id="1928011281873130813" at="58,26,59,36" />
+      <scope id="229512757698225173" at="67,54,68,58" />
+      <scope id="229512757698225173" at="71,114,72,18" />
+      <scope id="5487983292192962506" at="75,117,76,206" />
+      <scope id="229512757698225173" at="83,61,84,137" />
+      <scope id="1928011281873130885" at="89,26,90,36" />
+      <scope id="229512757698222158" at="29,91,32,26" />
+      <scope id="229512757698222192" at="36,0,39,0">
+        <var name="container" id="229512757698222192" />
+      </scope>
+      <scope id="229512757698225173" at="67,0,70,0">
+        <var name="container" id="229512757698225173" />
+      </scope>
+      <scope id="229512757698222192" at="39,0,43,0">
+        <var name="newReferentNode" id="229512757698222192" />
+        <var name="oldReferentNode" id="229512757698222192" />
+        <var name="referenceNode" id="229512757698222192" />
+      </scope>
+      <scope id="229512757698222192" at="43,0,47,0">
+        <var name="newReferentNode" id="229512757698222192" />
+        <var name="oldReferentNode" id="229512757698222192" />
+        <var name="referenceNode" id="229512757698222192" />
+      </scope>
+      <scope id="229512757698222192" at="51,0,55,0" />
+      <scope id="229512757698225173" at="70,0,74,0">
+        <var name="newReferentNode" id="229512757698225173" />
+        <var name="oldReferentNode" id="229512757698225173" />
+        <var name="referenceNode" id="229512757698225173" />
+      </scope>
+      <scope id="229512757698225173" at="74,0,78,0">
+        <var name="newReferentNode" id="229512757698225173" />
+        <var name="oldReferentNode" id="229512757698225173" />
+        <var name="referenceNode" id="229512757698225173" />
+      </scope>
+      <scope id="229512757698225173" at="82,0,86,0" />
+      <scope id="229512757698222158" at="29,0,34,0">
+        <var name="initContext" id="229512757698222158" />
+      </scope>
+      <scope id="229512757698222192" at="56,78,61,135">
+        <var name="i" id="1928011281873130805" />
+      </scope>
+      <scope id="229512757698225173" at="87,78,92,339">
+        <var name="i" id="1928011281873130877" />
+      </scope>
+      <scope id="229512757698222192" at="55,0,63,0">
+        <var name="_context" id="229512757698222192" />
+      </scope>
+      <scope id="229512757698225173" at="86,0,94,0">
+        <var name="_context" id="229512757698225173" />
+      </scope>
+      <scope id="229512757698222192" at="49,54,63,8" />
+      <scope id="229512757698225173" at="80,54,94,8" />
+      <scope id="229512757698222192" at="47,0,65,0" />
+      <scope id="229512757698225173" at="78,0,96,0" />
+      <unit id="229512757698222158" at="98,0,101,0" name="org.iets3.components.core.constraints.AssemblyConnector_Constraints$CONCEPTS" />
+      <unit id="229512757698222158" at="102,0,112,0" name="org.iets3.components.core.constraints.AssemblyConnector_Constraints$LINKS" />
+      <unit id="229512757698222192" at="50,17,63,7" name="org.iets3.components.core.constraints.AssemblyConnector_Constraints$RD1$1" />
+      <unit id="229512757698225173" at="81,17,94,7" name="org.iets3.components.core.constraints.AssemblyConnector_Constraints$RD2$1" />
+      <unit id="229512757698222192" at="35,0,66,0" name="org.iets3.components.core.constraints.AssemblyConnector_Constraints$RD1" />
+      <unit id="229512757698225173" at="66,0,97,0" name="org.iets3.components.core.constraints.AssemblyConnector_Constraints$RD2" />
+      <unit id="229512757698222158" at="28,0,113,0" name="org.iets3.components.core.constraints.AssemblyConnector_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/229512757698345526">
+    <file name="ImportConnector_Constraints.java">
+      <node id="229512757698345526" at="37,89,38,52" concept="12" />
+      <node id="229512757698345536" at="38,52,39,26" concept="2" />
+      <node id="229512757698349829" at="39,26,40,26" concept="2" />
+      <node id="229512757698345526" at="43,127,44,128" concept="6" />
+      <node id="229512757698345526" at="44,128,45,0" concept="9" />
+      <node id="229512757698345526" at="46,55,47,71" concept="2" />
+      <node id="229512757698345526" at="48,9,49,0" concept="9" />
+      <node id="229512757698345526" at="49,0,50,22" concept="7" />
+      <node id="229512757698345536" at="56,54,57,57" concept="12" />
+      <node id="229512757698345536" at="60,114,61,18" concept="7" />
+      <node id="5487983292192967395" at="64,117,65,206" concept="2" />
+      <node id="229512757698345536" at="72,61,73,137" concept="7" />
+      <node id="1928011281873129147" at="76,78,77,375" concept="7" />
+      <node id="229512757698349829" at="83,54,84,58" concept="12" />
+      <node id="229512757698349829" at="87,114,88,18" concept="7" />
+      <node id="5487983292192967665" at="91,117,92,206" concept="2" />
+      <node id="229512757698349829" at="99,61,100,137" concept="7" />
+      <node id="1928011281873129416" at="103,78,104,145" concept="6" />
+      <node id="1928011281873129426" at="105,26,106,36" concept="7" />
+      <node id="1928011281873129431" at="107,11,108,295" concept="7" />
+      <node id="7126186526844781844" at="113,128,114,190" concept="7" />
+      <node id="229512757698345526" at="116,0,117,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="229512757698345526" at="119,0,120,0" concept="10" trace="ImportConnector$8o" />
+      <node id="229512757698345526" at="120,0,121,0" concept="10" trace="Component$gR" />
+      <node id="229512757698345526" at="124,0,125,0" concept="10" trace="outerPort$3H4p" />
+      <node id="229512757698345526" at="125,0,126,0" concept="10" trace="connectorType$8zQx" />
+      <node id="229512757698345526" at="126,0,127,0" concept="10" trace="type$5Gl6" />
+      <node id="229512757698345526" at="127,0,128,0" concept="10" trace="category$WD4l" />
+      <node id="229512757698345526" at="128,0,129,0" concept="10" trace="targetPort$ZxZ9" />
+      <node id="229512757698345526" at="129,0,130,0" concept="10" trace="targetInstance$ZsmL" />
+      <node id="229512757698345526" at="130,0,131,0" concept="10" trace="ref$H$FL" />
+      <node id="229512757698345526" at="45,0,48,9" concept="4" />
+      <node id="229512757698345536" at="56,0,59,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="229512757698349829" at="83,0,86,0" concept="1" trace="RD2#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="1928011281873129424" at="104,145,107,11" concept="4" />
+      <node id="229512757698345526" at="113,0,116,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="229512757698345536" at="59,0,63,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="229512757698345536" at="63,0,67,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="229512757698345536" at="71,0,75,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="229512757698345536" at="75,0,79,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="229512757698349829" at="86,0,90,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="229512757698349829" at="90,0,94,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="229512757698349829" at="98,0,102,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="229512757698349829" at="102,0,110,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="229512757698345526" at="42,0,52,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="229512757698345536" at="69,54,79,8" concept="7" />
+      <node id="229512757698345526" at="40,26,52,7" concept="2" />
+      <node id="229512757698345536" at="67,0,81,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="229512757698349829" at="96,54,110,8" concept="7" />
+      <node id="229512757698345526" at="37,0,54,0" concept="1" trace="ImportConnector_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="229512757698349829" at="94,0,112,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="229512757698345526" at="46,55,47,71" />
+      <scope id="229512757698345536" at="56,54,57,57" />
+      <scope id="229512757698345536" at="60,114,61,18" />
+      <scope id="5487983292192967281" at="64,117,65,206" />
+      <scope id="229512757698345536" at="72,61,73,137" />
+      <scope id="229512757698345536" at="76,78,77,375" />
+      <scope id="229512757698349829" at="83,54,84,58" />
+      <scope id="229512757698349829" at="87,114,88,18" />
+      <scope id="5487983292192967461" at="91,117,92,206" />
+      <scope id="229512757698349829" at="99,61,100,137" />
+      <scope id="1928011281873129425" at="105,26,106,36" />
+      <scope id="7126186526844781843" at="113,128,114,190" />
+      <scope id="229512757698345536" at="56,0,59,0">
+        <var name="container" id="229512757698345536" />
+      </scope>
+      <scope id="229512757698349829" at="83,0,86,0">
+        <var name="container" id="229512757698349829" />
+      </scope>
+      <scope id="229512757698345526" at="113,0,116,0">
+        <var name="childConcept" id="229512757698345526" />
+        <var name="link" id="229512757698345526" />
+        <var name="node" id="229512757698345526" />
+        <var name="parentNode" id="229512757698345526" />
+      </scope>
+      <scope id="229512757698345536" at="59,0,63,0">
+        <var name="newReferentNode" id="229512757698345536" />
+        <var name="oldReferentNode" id="229512757698345536" />
+        <var name="referenceNode" id="229512757698345536" />
+      </scope>
+      <scope id="229512757698345536" at="63,0,67,0">
+        <var name="newReferentNode" id="229512757698345536" />
+        <var name="oldReferentNode" id="229512757698345536" />
+        <var name="referenceNode" id="229512757698345536" />
+      </scope>
+      <scope id="229512757698345536" at="71,0,75,0" />
+      <scope id="229512757698345536" at="75,0,79,0">
+        <var name="_context" id="229512757698345536" />
+      </scope>
+      <scope id="229512757698349829" at="86,0,90,0">
+        <var name="newReferentNode" id="229512757698349829" />
+        <var name="oldReferentNode" id="229512757698349829" />
+        <var name="referenceNode" id="229512757698349829" />
+      </scope>
+      <scope id="229512757698349829" at="90,0,94,0">
+        <var name="newReferentNode" id="229512757698349829" />
+        <var name="oldReferentNode" id="229512757698349829" />
+        <var name="referenceNode" id="229512757698349829" />
+      </scope>
+      <scope id="229512757698349829" at="98,0,102,0" />
+      <scope id="229512757698349829" at="103,78,108,295">
+        <var name="i" id="1928011281873129417" />
+      </scope>
+      <scope id="229512757698345526" at="43,127,50,22">
+        <var name="result" id="229512757698345526" />
+      </scope>
+      <scope id="229512757698349829" at="102,0,110,0">
+        <var name="_context" id="229512757698349829" />
+      </scope>
+      <scope id="229512757698345526" at="42,0,52,0">
+        <var name="checkingNodeContext" id="229512757698345526" />
+        <var name="context" id="229512757698345526" />
+      </scope>
+      <scope id="229512757698345536" at="69,54,79,8" />
+      <scope id="229512757698345536" at="67,0,81,0" />
+      <scope id="229512757698349829" at="96,54,110,8" />
+      <scope id="229512757698345526" at="37,89,52,7" />
+      <scope id="229512757698345526" at="37,0,54,0">
+        <var name="initContext" id="229512757698345526" />
+      </scope>
+      <scope id="229512757698349829" at="94,0,112,0" />
+      <unit id="229512757698345526" at="118,0,122,0" name="org.iets3.components.core.constraints.ImportConnector_Constraints$CONCEPTS" />
+      <unit id="229512757698345536" at="70,17,79,7" name="org.iets3.components.core.constraints.ImportConnector_Constraints$RD1$1" />
+      <unit id="229512757698345526" at="123,0,132,0" name="org.iets3.components.core.constraints.ImportConnector_Constraints$LINKS" />
+      <unit id="229512757698345526" at="41,32,52,5" name="org.iets3.components.core.constraints.ImportConnector_Constraints$1" />
+      <unit id="229512757698349829" at="97,17,110,7" name="org.iets3.components.core.constraints.ImportConnector_Constraints$RD2$1" />
+      <unit id="229512757698345536" at="55,0,82,0" name="org.iets3.components.core.constraints.ImportConnector_Constraints$RD1" />
+      <unit id="229512757698349829" at="82,0,113,0" name="org.iets3.components.core.constraints.ImportConnector_Constraints$RD2" />
+      <unit id="229512757698345526" at="36,0,133,0" name="org.iets3.components.core.constraints.ImportConnector_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/229512757698517521">
+    <file name="ExportConnector_Constraints.java">
+      <node id="229512757698517521" at="37,89,38,52" concept="12" />
+      <node id="229512757698517561" at="38,52,39,26" concept="2" />
+      <node id="229512757698517546" at="39,26,40,26" concept="2" />
+      <node id="229512757698517521" at="43,127,44,128" concept="6" />
+      <node id="229512757698517521" at="44,128,45,0" concept="9" />
+      <node id="229512757698517521" at="46,55,47,71" concept="2" />
+      <node id="229512757698517521" at="48,9,49,0" concept="9" />
+      <node id="229512757698517521" at="49,0,50,22" concept="7" />
+      <node id="229512757698517561" at="56,54,57,58" concept="12" />
+      <node id="229512757698517561" at="60,114,61,18" concept="7" />
+      <node id="5487983292192964582" at="64,117,65,206" concept="2" />
+      <node id="229512757698517561" at="72,61,73,137" concept="7" />
+      <node id="1928011281873128768" at="76,78,77,145" concept="6" />
+      <node id="1928011281873128778" at="78,26,79,36" concept="7" />
+      <node id="1928011281873128783" at="80,11,81,302" concept="7" />
+      <node id="229512757698517546" at="87,54,88,57" concept="12" />
+      <node id="229512757698517546" at="91,114,92,18" concept="7" />
+      <node id="5487983292192965869" at="95,117,96,206" concept="2" />
+      <node id="229512757698517546" at="103,61,104,137" concept="7" />
+      <node id="1928011281873128976" at="107,78,108,369" concept="7" />
+      <node id="7126186526844781882" at="113,128,114,190" concept="7" />
+      <node id="229512757698517521" at="116,0,117,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="229512757698517521" at="119,0,120,0" concept="10" trace="ExportConnector$hw" />
+      <node id="229512757698517521" at="120,0,121,0" concept="10" trace="Component$gR" />
+      <node id="229512757698517521" at="124,0,125,0" concept="10" trace="sourcePort$fgej" />
+      <node id="229512757698517521" at="125,0,126,0" concept="10" trace="connectorType$8zQx" />
+      <node id="229512757698517521" at="126,0,127,0" concept="10" trace="type$5Gl6" />
+      <node id="229512757698517521" at="127,0,128,0" concept="10" trace="sourceInstance$fa_V" />
+      <node id="229512757698517521" at="128,0,129,0" concept="10" trace="ref$H$FL" />
+      <node id="229512757698517521" at="129,0,130,0" concept="10" trace="category$WD4l" />
+      <node id="229512757698517521" at="130,0,131,0" concept="10" trace="outerPort$ffZi" />
+      <node id="229512757698517521" at="45,0,48,9" concept="4" />
+      <node id="229512757698517561" at="56,0,59,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="1928011281873128776" at="77,145,80,11" concept="4" />
+      <node id="229512757698517546" at="87,0,90,0" concept="1" trace="RD2#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="229512757698517521" at="113,0,116,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="229512757698517561" at="59,0,63,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="229512757698517561" at="63,0,67,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="229512757698517561" at="71,0,75,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="229512757698517546" at="90,0,94,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="229512757698517546" at="94,0,98,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="229512757698517546" at="102,0,106,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="229512757698517546" at="106,0,110,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="229512757698517561" at="75,0,83,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="229512757698517521" at="42,0,52,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="229512757698517546" at="100,54,110,8" concept="7" />
+      <node id="229512757698517521" at="40,26,52,7" concept="2" />
+      <node id="229512757698517561" at="69,54,83,8" concept="7" />
+      <node id="229512757698517546" at="98,0,112,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="229512757698517521" at="37,0,54,0" concept="1" trace="ExportConnector_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="229512757698517561" at="67,0,85,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="229512757698517521" at="46,55,47,71" />
+      <scope id="229512757698517561" at="56,54,57,58" />
+      <scope id="229512757698517561" at="60,114,61,18" />
+      <scope id="5487983292192964152" at="64,117,65,206" />
+      <scope id="229512757698517561" at="72,61,73,137" />
+      <scope id="1928011281873128777" at="78,26,79,36" />
+      <scope id="229512757698517546" at="87,54,88,57" />
+      <scope id="229512757698517546" at="91,114,92,18" />
+      <scope id="5487983292192965737" at="95,117,96,206" />
+      <scope id="229512757698517546" at="103,61,104,137" />
+      <scope id="229512757698517546" at="107,78,108,369" />
+      <scope id="7126186526844781881" at="113,128,114,190" />
+      <scope id="229512757698517561" at="56,0,59,0">
+        <var name="container" id="229512757698517561" />
+      </scope>
+      <scope id="229512757698517546" at="87,0,90,0">
+        <var name="container" id="229512757698517546" />
+      </scope>
+      <scope id="229512757698517521" at="113,0,116,0">
+        <var name="childConcept" id="229512757698517521" />
+        <var name="link" id="229512757698517521" />
+        <var name="node" id="229512757698517521" />
+        <var name="parentNode" id="229512757698517521" />
+      </scope>
+      <scope id="229512757698517561" at="59,0,63,0">
+        <var name="newReferentNode" id="229512757698517561" />
+        <var name="oldReferentNode" id="229512757698517561" />
+        <var name="referenceNode" id="229512757698517561" />
+      </scope>
+      <scope id="229512757698517561" at="63,0,67,0">
+        <var name="newReferentNode" id="229512757698517561" />
+        <var name="oldReferentNode" id="229512757698517561" />
+        <var name="referenceNode" id="229512757698517561" />
+      </scope>
+      <scope id="229512757698517561" at="71,0,75,0" />
+      <scope id="229512757698517546" at="90,0,94,0">
+        <var name="newReferentNode" id="229512757698517546" />
+        <var name="oldReferentNode" id="229512757698517546" />
+        <var name="referenceNode" id="229512757698517546" />
+      </scope>
+      <scope id="229512757698517546" at="94,0,98,0">
+        <var name="newReferentNode" id="229512757698517546" />
+        <var name="oldReferentNode" id="229512757698517546" />
+        <var name="referenceNode" id="229512757698517546" />
+      </scope>
+      <scope id="229512757698517546" at="102,0,106,0" />
+      <scope id="229512757698517546" at="106,0,110,0">
+        <var name="_context" id="229512757698517546" />
+      </scope>
+      <scope id="229512757698517561" at="76,78,81,302">
+        <var name="i" id="1928011281873128769" />
+      </scope>
+      <scope id="229512757698517521" at="43,127,50,22">
+        <var name="result" id="229512757698517521" />
+      </scope>
+      <scope id="229512757698517561" at="75,0,83,0">
+        <var name="_context" id="229512757698517561" />
+      </scope>
+      <scope id="229512757698517521" at="42,0,52,0">
+        <var name="checkingNodeContext" id="229512757698517521" />
+        <var name="context" id="229512757698517521" />
+      </scope>
+      <scope id="229512757698517546" at="100,54,110,8" />
+      <scope id="229512757698517561" at="69,54,83,8" />
+      <scope id="229512757698517546" at="98,0,112,0" />
+      <scope id="229512757698517521" at="37,89,52,7" />
+      <scope id="229512757698517521" at="37,0,54,0">
+        <var name="initContext" id="229512757698517521" />
+      </scope>
+      <scope id="229512757698517561" at="67,0,85,0" />
+      <unit id="229512757698517521" at="118,0,122,0" name="org.iets3.components.core.constraints.ExportConnector_Constraints$CONCEPTS" />
+      <unit id="229512757698517546" at="101,17,110,7" name="org.iets3.components.core.constraints.ExportConnector_Constraints$RD2$1" />
+      <unit id="229512757698517521" at="123,0,132,0" name="org.iets3.components.core.constraints.ExportConnector_Constraints$LINKS" />
+      <unit id="229512757698517521" at="41,32,52,5" name="org.iets3.components.core.constraints.ExportConnector_Constraints$1" />
+      <unit id="229512757698517561" at="70,17,83,7" name="org.iets3.components.core.constraints.ExportConnector_Constraints$RD1$1" />
+      <unit id="229512757698517546" at="86,0,113,0" name="org.iets3.components.core.constraints.ExportConnector_Constraints$RD2" />
+      <unit id="229512757698517561" at="55,0,86,0" name="org.iets3.components.core.constraints.ExportConnector_Constraints$RD1" />
+      <unit id="229512757698517521" at="36,0,133,0" name="org.iets3.components.core.constraints.ExportConnector_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/3177368305997873889">
+    <file name="CompFunctionAdapter_old_Constraints.java">
+      <node id="3177368305997873889" at="18,97,19,60" concept="12" />
+      <node id="3177368305997947911" at="19,60,20,30" concept="2" />
+      <node id="3177368305997947911" at="24,53,25,60" concept="12" />
+      <node id="3177368305997948454" at="28,40,29,109" concept="7" />
+      <node id="3177368305997873889" at="34,0,35,0" concept="10" trace="CompFunctionAdapter_old$L8" />
+      <node id="3177368305997873889" at="38,0,39,0" concept="10" trace="name$MnvL" />
+      <node id="3177368305997873889" at="42,0,43,0" concept="10" trace="fun$NLoa" />
+      <node id="3177368305997947911" at="24,0,27,0" concept="1" trace="Name_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="3177368305997873889" at="18,0,22,0" concept="1" trace="CompFunctionAdapter_old_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="3177368305997947911" at="27,0,31,0" concept="5" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="3177368305997947911" at="24,53,25,60" />
+      <scope id="3177368305997947917" at="28,40,29,109" />
+      <scope id="3177368305997873889" at="18,97,20,30" />
+      <scope id="3177368305997947911" at="24,0,27,0">
+        <var name="container" id="3177368305997947911" />
+      </scope>
+      <scope id="3177368305997873889" at="18,0,22,0">
+        <var name="initContext" id="3177368305997873889" />
+      </scope>
+      <scope id="3177368305997947911" at="27,0,31,0">
+        <var name="node" id="3177368305997947911" />
+      </scope>
+      <unit id="3177368305997873889" at="33,0,36,0" name="org.iets3.components.core.constraints.CompFunctionAdapter_old_Constraints$CONCEPTS" />
+      <unit id="3177368305997873889" at="37,0,40,0" name="org.iets3.components.core.constraints.CompFunctionAdapter_old_Constraints$PROPS" />
+      <unit id="3177368305997873889" at="41,0,44,0" name="org.iets3.components.core.constraints.CompFunctionAdapter_old_Constraints$LINKS" />
+      <unit id="3177368305997947911" at="23,0,32,0" name="org.iets3.components.core.constraints.CompFunctionAdapter_old_Constraints$Name_PD" />
+      <unit id="3177368305997873889" at="17,0,45,0" name="org.iets3.components.core.constraints.CompFunctionAdapter_old_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/3294196384194057763">
+    <file name="InlineComponentInstance_Constraints.java">
+      <node id="3294196384194057763" at="18,97,19,60" concept="12" />
+      <node id="3294196384194057764" at="19,60,20,30" concept="2" />
+      <node id="3294196384194057764" at="24,53,25,60" concept="12" />
+      <node id="3294196384194058307" at="28,40,29,115" concept="7" />
+      <node id="3294196384194057763" at="34,0,35,0" concept="10" trace="InlineComponentInstance$S$" />
+      <node id="3294196384194057763" at="38,0,39,0" concept="10" trace="name$MnvL" />
+      <node id="3294196384194057763" at="42,0,43,0" concept="10" trace="component$Du7V" />
+      <node id="3294196384194057764" at="24,0,27,0" concept="1" trace="Name_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="3294196384194057763" at="18,0,22,0" concept="1" trace="InlineComponentInstance_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="3294196384194057764" at="27,0,31,0" concept="5" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="3294196384194057764" at="24,53,25,60" />
+      <scope id="3294196384194057768" at="28,40,29,115" />
+      <scope id="3294196384194057763" at="18,97,20,30" />
+      <scope id="3294196384194057764" at="24,0,27,0">
+        <var name="container" id="3294196384194057764" />
+      </scope>
+      <scope id="3294196384194057763" at="18,0,22,0">
+        <var name="initContext" id="3294196384194057763" />
+      </scope>
+      <scope id="3294196384194057764" at="27,0,31,0">
+        <var name="node" id="3294196384194057764" />
+      </scope>
+      <unit id="3294196384194057763" at="33,0,36,0" name="org.iets3.components.core.constraints.InlineComponentInstance_Constraints$CONCEPTS" />
+      <unit id="3294196384194057763" at="37,0,40,0" name="org.iets3.components.core.constraints.InlineComponentInstance_Constraints$PROPS" />
+      <unit id="3294196384194057763" at="41,0,44,0" name="org.iets3.components.core.constraints.InlineComponentInstance_Constraints$LINKS" />
+      <unit id="3294196384194057764" at="23,0,32,0" name="org.iets3.components.core.constraints.InlineComponentInstance_Constraints$Name_PD" />
+      <unit id="3294196384194057763" at="17,0,45,0" name="org.iets3.components.core.constraints.InlineComponentInstance_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/3294196384196703961">
+    <file name="InlineInstanceRefTarget_Constraints.java">
+      <node id="3294196384196703961" at="33,97,34,60" concept="12" />
+      <node id="3294196384196708809" at="34,60,35,26" concept="2" />
+      <node id="3294196384196703961" at="38,127,39,128" concept="6" />
+      <node id="3294196384196703961" at="39,128,40,0" concept="9" />
+      <node id="3294196384196703961" at="41,55,42,71" concept="2" />
+      <node id="3294196384196703961" at="43,9,44,0" concept="9" />
+      <node id="3294196384196703961" at="44,0,45,22" concept="7" />
+      <node id="3294196384196708809" at="51,54,52,57" concept="12" />
+      <node id="3294196384196708809" at="59,61,60,138" concept="7" />
+      <node id="3294196384196708814" at="63,78,64,546" concept="7" />
+      <node id="3294196384196707617" at="69,128,70,219" concept="7" />
+      <node id="3294196384196703961" at="72,0,73,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="3294196384196703961" at="75,0,76,0" concept="10" trace="InlineInstanceRefTarget$C3" />
+      <node id="3294196384196703961" at="76,0,77,0" concept="10" trace="DotExpression$jp" />
+      <node id="3294196384196703961" at="77,0,78,0" concept="10" trace="ComponentType$zO" />
+      <node id="3294196384196703961" at="78,0,79,0" concept="10" trace="InlineComponentInstance$S$" />
+      <node id="3294196384196703961" at="82,0,83,0" concept="10" trace="instance$N30j" />
+      <node id="3294196384196703961" at="83,0,84,0" concept="10" trace="expr$CW3E" />
+      <node id="3294196384196703961" at="84,0,85,0" concept="10" trace="component$SVvs" />
+      <node id="3294196384196703961" at="40,0,43,9" concept="4" />
+      <node id="3294196384196708809" at="51,0,54,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="3294196384196703961" at="69,0,72,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="3294196384196708809" at="58,0,62,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="3294196384196708809" at="62,0,66,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="3294196384196703961" at="37,0,47,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="3294196384196708809" at="56,54,66,8" concept="7" />
+      <node id="3294196384196703961" at="35,26,47,7" concept="2" />
+      <node id="3294196384196708809" at="54,0,68,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3294196384196703961" at="33,0,49,0" concept="1" trace="InlineInstanceRefTarget_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3294196384196703961" at="41,55,42,71" />
+      <scope id="3294196384196708809" at="51,54,52,57" />
+      <scope id="3294196384196708809" at="59,61,60,138" />
+      <scope id="3294196384196708809" at="63,78,64,546" />
+      <scope id="3294196384196707616" at="69,128,70,219" />
+      <scope id="3294196384196708809" at="51,0,54,0">
+        <var name="container" id="3294196384196708809" />
+      </scope>
+      <scope id="3294196384196703961" at="69,0,72,0">
+        <var name="childConcept" id="3294196384196703961" />
+        <var name="link" id="3294196384196703961" />
+        <var name="node" id="3294196384196703961" />
+        <var name="parentNode" id="3294196384196703961" />
+      </scope>
+      <scope id="3294196384196708809" at="58,0,62,0" />
+      <scope id="3294196384196708809" at="62,0,66,0">
+        <var name="_context" id="3294196384196708809" />
+      </scope>
+      <scope id="3294196384196703961" at="38,127,45,22">
+        <var name="result" id="3294196384196703961" />
+      </scope>
+      <scope id="3294196384196703961" at="37,0,47,0">
+        <var name="checkingNodeContext" id="3294196384196703961" />
+        <var name="context" id="3294196384196703961" />
+      </scope>
+      <scope id="3294196384196708809" at="56,54,66,8" />
+      <scope id="3294196384196703961" at="33,97,47,7" />
+      <scope id="3294196384196708809" at="54,0,68,0" />
+      <scope id="3294196384196703961" at="33,0,49,0">
+        <var name="initContext" id="3294196384196703961" />
+      </scope>
+      <unit id="3294196384196703961" at="81,0,86,0" name="org.iets3.components.core.constraints.InlineInstanceRefTarget_Constraints$LINKS" />
+      <unit id="3294196384196703961" at="74,0,80,0" name="org.iets3.components.core.constraints.InlineInstanceRefTarget_Constraints$CONCEPTS" />
+      <unit id="3294196384196708809" at="57,17,66,7" name="org.iets3.components.core.constraints.InlineInstanceRefTarget_Constraints$RD1$1" />
+      <unit id="3294196384196703961" at="36,32,47,5" name="org.iets3.components.core.constraints.InlineInstanceRefTarget_Constraints$1" />
+      <unit id="3294196384196708809" at="50,0,69,0" name="org.iets3.components.core.constraints.InlineInstanceRefTarget_Constraints$RD1" />
+      <unit id="3294196384196703961" at="32,0,87,0" name="org.iets3.components.core.constraints.InlineInstanceRefTarget_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/3523817923956092318">
+    <file name="ComponentInterface_Constraints.java">
+      <node id="3523817923956092318" at="22,92,23,55" concept="12" />
+      <node id="3523817923956092318" at="26,127,27,128" concept="6" />
+      <node id="3523817923956092318" at="27,128,28,0" concept="9" />
+      <node id="3523817923956092318" at="29,55,30,71" concept="2" />
+      <node id="3523817923956092318" at="31,9,32,0" concept="9" />
+      <node id="3523817923956092318" at="32,0,33,22" concept="7" />
+      <node id="7126186526844781666" at="38,128,39,190" concept="7" />
+      <node id="3523817923956092318" at="41,0,42,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="3523817923956092318" at="44,0,45,0" concept="10" trace="ComponentInterface$x0" />
+      <node id="3523817923956092318" at="45,0,46,0" concept="10" trace="Component$gR" />
+      <node id="3523817923956092318" at="28,0,31,9" concept="4" />
+      <node id="3523817923956092318" at="38,0,41,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="3523817923956092318" at="25,0,35,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="3523817923956092318" at="23,55,35,7" concept="2" />
+      <node id="3523817923956092318" at="22,0,37,0" concept="1" trace="ComponentInterface_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3523817923956092318" at="29,55,30,71" />
+      <scope id="7126186526844781665" at="38,128,39,190" />
+      <scope id="3523817923956092318" at="38,0,41,0">
+        <var name="childConcept" id="3523817923956092318" />
+        <var name="link" id="3523817923956092318" />
+        <var name="node" id="3523817923956092318" />
+        <var name="parentNode" id="3523817923956092318" />
+      </scope>
+      <scope id="3523817923956092318" at="26,127,33,22">
+        <var name="result" id="3523817923956092318" />
+      </scope>
+      <scope id="3523817923956092318" at="25,0,35,0">
+        <var name="checkingNodeContext" id="3523817923956092318" />
+        <var name="context" id="3523817923956092318" />
+      </scope>
+      <scope id="3523817923956092318" at="22,92,35,7" />
+      <scope id="3523817923956092318" at="22,0,37,0">
+        <var name="initContext" id="3523817923956092318" />
+      </scope>
+      <unit id="3523817923956092318" at="43,0,47,0" name="org.iets3.components.core.constraints.ComponentInterface_Constraints$CONCEPTS" />
+      <unit id="3523817923956092318" at="24,32,35,5" name="org.iets3.components.core.constraints.ComponentInterface_Constraints$1" />
+      <unit id="3523817923956092318" at="21,0,48,0" name="org.iets3.components.core.constraints.ComponentInterface_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/3523817923957202306">
+    <file name="SimpleBehavior_Constraints.java">
+      <node id="3523817923957202306" at="22,88,23,51" concept="12" />
+      <node id="3523817923957202306" at="26,127,27,128" concept="6" />
+      <node id="3523817923957202306" at="27,128,28,0" concept="9" />
+      <node id="3523817923957202306" at="29,55,30,71" concept="2" />
+      <node id="3523817923957202306" at="31,9,32,0" concept="9" />
+      <node id="3523817923957202306" at="32,0,33,22" concept="7" />
+      <node id="7126186526844781707" at="38,128,39,190" concept="7" />
+      <node id="3523817923957202306" at="41,0,42,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="3523817923957202306" at="44,0,45,0" concept="10" trace="SimpleBehavior$jv" />
+      <node id="3523817923957202306" at="45,0,46,0" concept="10" trace="Component$gR" />
+      <node id="3523817923957202306" at="28,0,31,9" concept="4" />
+      <node id="3523817923957202306" at="38,0,41,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="3523817923957202306" at="25,0,35,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="3523817923957202306" at="23,51,35,7" concept="2" />
+      <node id="3523817923957202306" at="22,0,37,0" concept="1" trace="SimpleBehavior_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3523817923957202306" at="29,55,30,71" />
+      <scope id="7126186526844781706" at="38,128,39,190" />
+      <scope id="3523817923957202306" at="38,0,41,0">
+        <var name="childConcept" id="3523817923957202306" />
+        <var name="link" id="3523817923957202306" />
+        <var name="node" id="3523817923957202306" />
+        <var name="parentNode" id="3523817923957202306" />
+      </scope>
+      <scope id="3523817923957202306" at="26,127,33,22">
+        <var name="result" id="3523817923957202306" />
+      </scope>
+      <scope id="3523817923957202306" at="25,0,35,0">
+        <var name="checkingNodeContext" id="3523817923957202306" />
+        <var name="context" id="3523817923957202306" />
+      </scope>
+      <scope id="3523817923957202306" at="22,88,35,7" />
+      <scope id="3523817923957202306" at="22,0,37,0">
+        <var name="initContext" id="3523817923957202306" />
+      </scope>
+      <unit id="3523817923957202306" at="43,0,47,0" name="org.iets3.components.core.constraints.SimpleBehavior_Constraints$CONCEPTS" />
+      <unit id="3523817923957202306" at="24,32,35,5" name="org.iets3.components.core.constraints.SimpleBehavior_Constraints$1" />
+      <unit id="3523817923957202306" at="21,0,48,0" name="org.iets3.components.core.constraints.SimpleBehavior_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/3523817923957551786">
+    <file name="Variable_Constraints.java">
+      <node id="3523817923957551786" at="22,82,23,45" concept="12" />
+      <node id="3523817923957551786" at="26,127,27,128" concept="6" />
+      <node id="3523817923957551786" at="27,128,28,0" concept="9" />
+      <node id="3523817923957551786" at="29,55,30,71" concept="2" />
+      <node id="3523817923957551786" at="31,9,32,0" concept="9" />
+      <node id="3523817923957551786" at="32,0,33,22" concept="7" />
+      <node id="7126186526844781724" at="38,128,39,190" concept="7" />
+      <node id="3523817923957551786" at="41,0,42,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="3523817923957551786" at="44,0,45,0" concept="10" trace="Variable$8V" />
+      <node id="3523817923957551786" at="45,0,46,0" concept="10" trace="Component$gR" />
+      <node id="3523817923957551786" at="28,0,31,9" concept="4" />
+      <node id="3523817923957551786" at="38,0,41,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="3523817923957551786" at="25,0,35,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="3523817923957551786" at="23,45,35,7" concept="2" />
+      <node id="3523817923957551786" at="22,0,37,0" concept="1" trace="Variable_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3523817923957551786" at="29,55,30,71" />
+      <scope id="7126186526844781723" at="38,128,39,190" />
+      <scope id="3523817923957551786" at="38,0,41,0">
+        <var name="childConcept" id="3523817923957551786" />
+        <var name="link" id="3523817923957551786" />
+        <var name="node" id="3523817923957551786" />
+        <var name="parentNode" id="3523817923957551786" />
+      </scope>
+      <scope id="3523817923957551786" at="26,127,33,22">
+        <var name="result" id="3523817923957551786" />
+      </scope>
+      <scope id="3523817923957551786" at="25,0,35,0">
+        <var name="checkingNodeContext" id="3523817923957551786" />
+        <var name="context" id="3523817923957551786" />
+      </scope>
+      <scope id="3523817923957551786" at="22,82,35,7" />
+      <scope id="3523817923957551786" at="22,0,37,0">
+        <var name="initContext" id="3523817923957551786" />
+      </scope>
+      <unit id="3523817923957551786" at="43,0,47,0" name="org.iets3.components.core.constraints.Variable_Constraints$CONCEPTS" />
+      <unit id="3523817923957551786" at="24,32,35,5" name="org.iets3.components.core.constraints.Variable_Constraints$1" />
+      <unit id="3523817923957551786" at="21,0,48,0" name="org.iets3.components.core.constraints.Variable_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/3788552209998204428">
+    <file name="CompConstantAdapter_Constraints.java">
+      <node id="3788552209998204428" at="27,93,28,56" concept="12" />
+      <node id="3788552209998205508" at="28,56,29,30" concept="2" />
+      <node id="3788552209998204428" at="32,128,33,133" concept="6" />
+      <node id="3788552209998204428" at="33,133,34,0" concept="9" />
+      <node id="3788552209998204428" at="35,55,36,72" concept="2" />
+      <node id="3788552209998204428" at="37,9,38,0" concept="9" />
+      <node id="3788552209998204428" at="38,0,39,22" concept="7" />
+      <node id="3788552209998205508" at="45,53,46,60" concept="12" />
+      <node id="3788552209998206339" at="49,40,50,125" concept="7" />
+      <node id="3788552209998905367" at="54,30,55,18" concept="7" />
+      <node id="3788552209998907625" at="58,77,59,21" concept="7" />
+      <node id="3788552209998909129" at="61,5,62,16" concept="7" />
+      <node id="3788552209998204428" at="64,0,65,0" concept="10" trace="canBeParentBreakingPoint" />
+      <node id="3788552209998204428" at="67,0,68,0" concept="10" trace="CompConstantAdapter$_G" />
+      <node id="3788552209998204428" at="68,0,69,0" concept="10" trace="Constant$5s" />
+      <node id="3788552209998204428" at="72,0,73,0" concept="10" trace="name$MnvL" />
+      <node id="3788552209998204428" at="76,0,77,0" concept="10" trace="toplevelExprContent$igxr" />
+      <node id="3788552209998204428" at="34,0,37,9" concept="4" />
+      <node id="3788552209998205508" at="45,0,48,0" concept="1" trace="Name_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="3788552209998899680" at="53,128,56,5" concept="4" />
+      <node id="3788552209998895513" at="57,63,60,7" concept="4" />
+      <node id="3788552209998205508" at="48,0,52,0" concept="5" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="3788552209998886970" at="56,5,61,5" concept="4" />
+      <node id="3788552209998204428" at="31,0,41,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="3788552209998204428" at="53,0,64,0" concept="11" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="3788552209998204428" at="29,30,41,7" concept="2" />
+      <node id="3788552209998204428" at="27,0,43,0" concept="1" trace="CompConstantAdapter_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3788552209998204428" at="35,55,36,72" />
+      <scope id="3788552209998205508" at="45,53,46,60" />
+      <scope id="3788552209998205788" at="49,40,50,125" />
+      <scope id="3788552209998899682" at="54,30,55,18" />
+      <scope id="3788552209998895515" at="58,77,59,21" />
+      <scope id="3788552209998205508" at="45,0,48,0">
+        <var name="container" id="3788552209998205508" />
+      </scope>
+      <scope id="3788552209998886972" at="57,63,60,7" />
+      <scope id="3788552209998205508" at="48,0,52,0">
+        <var name="node" id="3788552209998205508" />
+      </scope>
+      <scope id="3788552209998204428" at="32,128,39,22">
+        <var name="result" id="3788552209998204428" />
+      </scope>
+      <scope id="3788552209998884508" at="53,128,62,16" />
+      <scope id="3788552209998204428" at="31,0,41,0">
+        <var name="checkingNodeContext" id="3788552209998204428" />
+        <var name="context" id="3788552209998204428" />
+      </scope>
+      <scope id="3788552209998204428" at="53,0,64,0">
+        <var name="childConcept" id="3788552209998204428" />
+        <var name="childNode" id="3788552209998204428" />
+        <var name="link" id="3788552209998204428" />
+        <var name="node" id="3788552209998204428" />
+      </scope>
+      <scope id="3788552209998204428" at="27,93,41,7" />
+      <scope id="3788552209998204428" at="27,0,43,0">
+        <var name="initContext" id="3788552209998204428" />
+      </scope>
+      <unit id="3788552209998204428" at="71,0,74,0" name="org.iets3.components.core.constraints.CompConstantAdapter_Constraints$PROPS" />
+      <unit id="3788552209998204428" at="75,0,78,0" name="org.iets3.components.core.constraints.CompConstantAdapter_Constraints$LINKS" />
+      <unit id="3788552209998204428" at="66,0,70,0" name="org.iets3.components.core.constraints.CompConstantAdapter_Constraints$CONCEPTS" />
+      <unit id="3788552209998205508" at="44,0,53,0" name="org.iets3.components.core.constraints.CompConstantAdapter_Constraints$Name_PD" />
+      <unit id="3788552209998204428" at="30,23,41,5" name="org.iets3.components.core.constraints.CompConstantAdapter_Constraints$1" />
+      <unit id="3788552209998204428" at="26,0,79,0" name="org.iets3.components.core.constraints.CompConstantAdapter_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/3788552210010232327">
+    <file name="CompStateMachineAdapter_Constraints.java">
+      <node id="3788552210010232327" at="27,97,28,60" concept="12" />
+      <node id="3788552210010240261" at="28,60,29,30" concept="2" />
+      <node id="3788552210010232327" at="32,128,33,133" concept="6" />
+      <node id="3788552210010232327" at="33,133,34,0" concept="9" />
+      <node id="3788552210010232327" at="35,55,36,72" concept="2" />
+      <node id="3788552210010232327" at="37,9,38,0" concept="9" />
+      <node id="3788552210010232327" at="38,0,39,22" concept="7" />
+      <node id="3788552210010240261" at="45,53,46,60" concept="12" />
+      <node id="3788552210010241706" at="49,40,50,125" concept="7" />
+      <node id="3788552210010232805" at="54,30,55,18" concept="7" />
+      <node id="3788552210010232822" at="58,81,59,21" concept="7" />
+      <node id="3788552210010234544" at="61,5,62,16" concept="7" />
+      <node id="3788552210010232327" at="64,0,65,0" concept="10" trace="canBeParentBreakingPoint" />
+      <node id="3788552210010232327" at="67,0,68,0" concept="10" trace="CompStateMachineAdapter$QH" />
+      <node id="3788552210010232327" at="68,0,69,0" concept="10" trace="StateMachine$He" />
+      <node id="3788552210010232327" at="72,0,73,0" concept="10" trace="name$MnvL" />
+      <node id="3788552210010232327" at="76,0,77,0" concept="10" trace="toplevelExprContent$igxr" />
+      <node id="3788552210010232327" at="34,0,37,9" concept="4" />
+      <node id="3788552210010240261" at="45,0,48,0" concept="1" trace="Name_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="3788552210010232803" at="53,128,56,5" concept="4" />
+      <node id="3788552210010232815" at="57,63,60,7" concept="4" />
+      <node id="3788552210010240261" at="48,0,52,0" concept="5" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="3788552210010232810" at="56,5,61,5" concept="4" />
+      <node id="3788552210010232327" at="31,0,41,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="3788552210010232327" at="53,0,64,0" concept="11" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="3788552210010232327" at="29,30,41,7" concept="2" />
+      <node id="3788552210010232327" at="27,0,43,0" concept="1" trace="CompStateMachineAdapter_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3788552210010232327" at="35,55,36,72" />
+      <scope id="3788552210010240261" at="45,53,46,60" />
+      <scope id="3788552210010241155" at="49,40,50,125" />
+      <scope id="3788552210010232804" at="54,30,55,18" />
+      <scope id="3788552210010232821" at="58,81,59,21" />
+      <scope id="3788552210010240261" at="45,0,48,0">
+        <var name="container" id="3788552210010240261" />
+      </scope>
+      <scope id="3788552210010232814" at="57,63,60,7" />
+      <scope id="3788552210010240261" at="48,0,52,0">
+        <var name="node" id="3788552210010240261" />
+      </scope>
+      <scope id="3788552210010232327" at="32,128,39,22">
+        <var name="result" id="3788552210010232327" />
+      </scope>
+      <scope id="3788552210010232335" at="53,128,62,16" />
+      <scope id="3788552210010232327" at="31,0,41,0">
+        <var name="checkingNodeContext" id="3788552210010232327" />
+        <var name="context" id="3788552210010232327" />
+      </scope>
+      <scope id="3788552210010232327" at="53,0,64,0">
+        <var name="childConcept" id="3788552210010232327" />
+        <var name="childNode" id="3788552210010232327" />
+        <var name="link" id="3788552210010232327" />
+        <var name="node" id="3788552210010232327" />
+      </scope>
+      <scope id="3788552210010232327" at="27,97,41,7" />
+      <scope id="3788552210010232327" at="27,0,43,0">
+        <var name="initContext" id="3788552210010232327" />
+      </scope>
+      <unit id="3788552210010232327" at="71,0,74,0" name="org.iets3.components.core.constraints.CompStateMachineAdapter_Constraints$PROPS" />
+      <unit id="3788552210010232327" at="75,0,78,0" name="org.iets3.components.core.constraints.CompStateMachineAdapter_Constraints$LINKS" />
+      <unit id="3788552210010232327" at="66,0,70,0" name="org.iets3.components.core.constraints.CompStateMachineAdapter_Constraints$CONCEPTS" />
+      <unit id="3788552210010240261" at="44,0,53,0" name="org.iets3.components.core.constraints.CompStateMachineAdapter_Constraints$Name_PD" />
+      <unit id="3788552210010232327" at="30,23,41,5" name="org.iets3.components.core.constraints.CompStateMachineAdapter_Constraints$1" />
+      <unit id="3788552210010232327" at="26,0,79,0" name="org.iets3.components.core.constraints.CompStateMachineAdapter_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/3788552210011763156">
+    <file name="CompFunctionAdapter_Constraints.java">
+      <node id="3788552210011763156" at="27,93,28,56" concept="12" />
+      <node id="3788552210011763163" at="28,56,29,30" concept="2" />
+      <node id="3788552210011763156" at="32,128,33,133" concept="6" />
+      <node id="3788552210011763156" at="33,133,34,0" concept="9" />
+      <node id="3788552210011763156" at="35,55,36,72" concept="2" />
+      <node id="3788552210011763156" at="37,9,38,0" concept="9" />
+      <node id="3788552210011763156" at="38,0,39,22" concept="7" />
+      <node id="3788552210011763163" at="45,53,46,60" concept="12" />
+      <node id="3788552210011767212" at="49,40,50,118" concept="7" />
+      <node id="3788552210011763637" at="54,30,55,18" concept="7" />
+      <node id="3788552210011763654" at="58,77,59,21" concept="7" />
+      <node id="3788552210011763656" at="61,5,62,16" concept="7" />
+      <node id="3788552210011763156" at="64,0,65,0" concept="10" trace="canBeParentBreakingPoint" />
+      <node id="3788552210011763156" at="67,0,68,0" concept="10" trace="CompFunctionAdapter$XP" />
+      <node id="3788552210011763156" at="68,0,69,0" concept="10" trace="Function$iC" />
+      <node id="3788552210011763156" at="72,0,73,0" concept="10" trace="name$MnvL" />
+      <node id="3788552210011763156" at="76,0,77,0" concept="10" trace="functionLike$1qr0" />
+      <node id="3788552210011763156" at="34,0,37,9" concept="4" />
+      <node id="3788552210011763163" at="45,0,48,0" concept="1" trace="Name_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="3788552210011763635" at="53,128,56,5" concept="4" />
+      <node id="3788552210011763647" at="57,56,60,7" concept="4" />
+      <node id="3788552210011763163" at="48,0,52,0" concept="5" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="3788552210011763642" at="56,5,61,5" concept="4" />
+      <node id="3788552210011763156" at="31,0,41,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="3788552210011763156" at="53,0,64,0" concept="11" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="3788552210011763156" at="29,30,41,7" concept="2" />
+      <node id="3788552210011763156" at="27,0,43,0" concept="1" trace="CompFunctionAdapter_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3788552210011763156" at="35,55,36,72" />
+      <scope id="3788552210011763163" at="45,53,46,60" />
+      <scope id="3788552210011766662" at="49,40,50,118" />
+      <scope id="3788552210011763636" at="54,30,55,18" />
+      <scope id="3788552210011763653" at="58,77,59,21" />
+      <scope id="3788552210011763163" at="45,0,48,0">
+        <var name="container" id="3788552210011763163" />
+      </scope>
+      <scope id="3788552210011763646" at="57,56,60,7" />
+      <scope id="3788552210011763163" at="48,0,52,0">
+        <var name="node" id="3788552210011763163" />
+      </scope>
+      <scope id="3788552210011763156" at="32,128,39,22">
+        <var name="result" id="3788552210011763156" />
+      </scope>
+      <scope id="3788552210011763167" at="53,128,62,16" />
+      <scope id="3788552210011763156" at="31,0,41,0">
+        <var name="checkingNodeContext" id="3788552210011763156" />
+        <var name="context" id="3788552210011763156" />
+      </scope>
+      <scope id="3788552210011763156" at="53,0,64,0">
+        <var name="childConcept" id="3788552210011763156" />
+        <var name="childNode" id="3788552210011763156" />
+        <var name="link" id="3788552210011763156" />
+        <var name="node" id="3788552210011763156" />
+      </scope>
+      <scope id="3788552210011763156" at="27,93,41,7" />
+      <scope id="3788552210011763156" at="27,0,43,0">
+        <var name="initContext" id="3788552210011763156" />
+      </scope>
+      <unit id="3788552210011763156" at="71,0,74,0" name="org.iets3.components.core.constraints.CompFunctionAdapter_Constraints$PROPS" />
+      <unit id="3788552210011763156" at="75,0,78,0" name="org.iets3.components.core.constraints.CompFunctionAdapter_Constraints$LINKS" />
+      <unit id="3788552210011763156" at="66,0,70,0" name="org.iets3.components.core.constraints.CompFunctionAdapter_Constraints$CONCEPTS" />
+      <unit id="3788552210011763163" at="44,0,53,0" name="org.iets3.components.core.constraints.CompFunctionAdapter_Constraints$Name_PD" />
+      <unit id="3788552210011763156" at="30,23,41,5" name="org.iets3.components.core.constraints.CompFunctionAdapter_Constraints$1" />
+      <unit id="3788552210011763156" at="26,0,79,0" name="org.iets3.components.core.constraints.CompFunctionAdapter_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/3829509942130191024">
+    <file name="InstanceRefExpr_Constraints.java">
+      <node id="3829509942130191024" at="33,89,34,52" concept="12" />
+      <node id="3829509942130194965" at="34,52,35,26" concept="2" />
+      <node id="3829509942130191024" at="38,127,39,128" concept="6" />
+      <node id="3829509942130191024" at="39,128,40,0" concept="9" />
+      <node id="3829509942130191024" at="41,55,42,71" concept="2" />
+      <node id="3829509942130191024" at="43,9,44,0" concept="9" />
+      <node id="3829509942130191024" at="44,0,45,22" concept="7" />
+      <node id="3829509942130194965" at="51,54,52,57" concept="12" />
+      <node id="3829509942130194965" at="59,61,60,138" concept="7" />
+      <node id="1928011281873127859" at="63,78,64,370" concept="7" />
+      <node id="7126186526844781872" at="69,128,70,109" concept="7" />
+      <node id="3829509942130191024" at="72,0,73,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="3829509942130191024" at="75,0,76,0" concept="10" trace="InstanceRefExpr$em" />
+      <node id="3829509942130191024" at="76,0,77,0" concept="10" trace="IComponentContext$5H" />
+      <node id="3829509942130191024" at="77,0,78,0" concept="10" trace="AbstractComponentInstanceBase$QW" />
+      <node id="3829509942130191024" at="81,0,82,0" concept="10" trace="instance$m90V" />
+      <node id="3829509942130191024" at="40,0,43,9" concept="4" />
+      <node id="3829509942130194965" at="51,0,54,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="3829509942130191024" at="69,0,72,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="3829509942130194965" at="58,0,62,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="3829509942130194965" at="62,0,66,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="3829509942130191024" at="37,0,47,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="3829509942130194965" at="56,54,66,8" concept="7" />
+      <node id="3829509942130191024" at="35,26,47,7" concept="2" />
+      <node id="3829509942130194965" at="54,0,68,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3829509942130191024" at="33,0,49,0" concept="1" trace="InstanceRefExpr_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3829509942130191024" at="41,55,42,71" />
+      <scope id="3829509942130194965" at="51,54,52,57" />
+      <scope id="3829509942130194965" at="59,61,60,138" />
+      <scope id="3829509942130194965" at="63,78,64,370" />
+      <scope id="7126186526844781871" at="69,128,70,109" />
+      <scope id="3829509942130194965" at="51,0,54,0">
+        <var name="container" id="3829509942130194965" />
+      </scope>
+      <scope id="3829509942130191024" at="69,0,72,0">
+        <var name="childConcept" id="3829509942130191024" />
+        <var name="link" id="3829509942130191024" />
+        <var name="node" id="3829509942130191024" />
+        <var name="parentNode" id="3829509942130191024" />
+      </scope>
+      <scope id="3829509942130194965" at="58,0,62,0" />
+      <scope id="3829509942130194965" at="62,0,66,0">
+        <var name="_context" id="3829509942130194965" />
+      </scope>
+      <scope id="3829509942130191024" at="38,127,45,22">
+        <var name="result" id="3829509942130191024" />
+      </scope>
+      <scope id="3829509942130191024" at="37,0,47,0">
+        <var name="checkingNodeContext" id="3829509942130191024" />
+        <var name="context" id="3829509942130191024" />
+      </scope>
+      <scope id="3829509942130194965" at="56,54,66,8" />
+      <scope id="3829509942130191024" at="33,89,47,7" />
+      <scope id="3829509942130194965" at="54,0,68,0" />
+      <scope id="3829509942130191024" at="33,0,49,0">
+        <var name="initContext" id="3829509942130191024" />
+      </scope>
+      <unit id="3829509942130191024" at="80,0,83,0" name="org.iets3.components.core.constraints.InstanceRefExpr_Constraints$LINKS" />
+      <unit id="3829509942130191024" at="74,0,79,0" name="org.iets3.components.core.constraints.InstanceRefExpr_Constraints$CONCEPTS" />
+      <unit id="3829509942130194965" at="57,17,66,7" name="org.iets3.components.core.constraints.InstanceRefExpr_Constraints$RD1$1" />
+      <unit id="3829509942130191024" at="36,32,47,5" name="org.iets3.components.core.constraints.InstanceRefExpr_Constraints$1" />
+      <unit id="3829509942130194965" at="50,0,69,0" name="org.iets3.components.core.constraints.InstanceRefExpr_Constraints$RD1" />
+      <unit id="3829509942130191024" at="32,0,84,0" name="org.iets3.components.core.constraints.InstanceRefExpr_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/4649601490453122184">
+    <file name="PortRefExpr_Constraints.java">
+      <node id="4649601490453122184" at="21,85,22,48" concept="12" />
+      <node id="4649601490453122184" at="25,127,26,128" concept="6" />
+      <node id="4649601490453122184" at="26,128,27,0" concept="9" />
+      <node id="4649601490453122184" at="28,55,29,71" concept="2" />
+      <node id="4649601490453122184" at="30,9,31,0" concept="9" />
+      <node id="4649601490453122184" at="31,0,32,22" concept="7" />
+      <node id="7126186526844781778" at="37,128,38,108" concept="7" />
+      <node id="4649601490453122184" at="40,0,41,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="4649601490453122184" at="43,0,44,0" concept="10" trace="PortRefExpr$$C" />
+      <node id="4649601490453122184" at="44,0,45,0" concept="10" trace="AbstractBehavior$wn" />
+      <node id="4649601490453122184" at="27,0,30,9" concept="4" />
+      <node id="4649601490453122184" at="37,0,40,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="4649601490453122184" at="24,0,34,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="4649601490453122184" at="22,48,34,7" concept="2" />
+      <node id="4649601490453122184" at="21,0,36,0" concept="1" trace="PortRefExpr_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="4649601490453122184" at="28,55,29,71" />
+      <scope id="7126186526844781777" at="37,128,38,108" />
+      <scope id="4649601490453122184" at="37,0,40,0">
+        <var name="childConcept" id="4649601490453122184" />
+        <var name="link" id="4649601490453122184" />
+        <var name="node" id="4649601490453122184" />
+        <var name="parentNode" id="4649601490453122184" />
+      </scope>
+      <scope id="4649601490453122184" at="25,127,32,22">
+        <var name="result" id="4649601490453122184" />
+      </scope>
+      <scope id="4649601490453122184" at="24,0,34,0">
+        <var name="checkingNodeContext" id="4649601490453122184" />
+        <var name="context" id="4649601490453122184" />
+      </scope>
+      <scope id="4649601490453122184" at="21,85,34,7" />
+      <scope id="4649601490453122184" at="21,0,36,0">
+        <var name="initContext" id="4649601490453122184" />
+      </scope>
+      <unit id="4649601490453122184" at="42,0,46,0" name="org.iets3.components.core.constraints.PortRefExpr_Constraints$CONCEPTS" />
+      <unit id="4649601490453122184" at="23,32,34,5" name="org.iets3.components.core.constraints.PortRefExpr_Constraints$1" />
+      <unit id="4649601490453122184" at="20,0,47,0" name="org.iets3.components.core.constraints.PortRefExpr_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/4667323109760072733">
+    <file name="ComponentRefExpr_Constraints.java">
+      <node id="4667323109760072733" at="25,90,26,53" concept="12" />
+      <node id="4667323109760072734" at="26,53,27,26" concept="2" />
+      <node id="4667323109760072734" at="31,54,32,58" concept="12" />
+      <node id="4667323109760072734" at="39,61,40,138" concept="7" />
+      <node id="1928011281873130329" at="43,78,44,330" concept="7" />
+      <node id="4667323109760072733" at="51,0,52,0" concept="10" trace="ComponentRefExpr$ll" />
+      <node id="4667323109760072733" at="52,0,53,0" concept="10" trace="IVisibleElementProvider$$O" />
+      <node id="4667323109760072733" at="53,0,54,0" concept="10" trace="Component$gR" />
+      <node id="4667323109760072733" at="57,0,58,0" concept="10" trace="component$Fcwr" />
+      <node id="4667323109760072734" at="31,0,34,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4667323109760072733" at="25,0,29,0" concept="1" trace="ComponentRefExpr_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="4667323109760072734" at="38,0,42,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4667323109760072734" at="42,0,46,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4667323109760072734" at="36,54,46,8" concept="7" />
+      <node id="4667323109760072734" at="34,0,48,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="4667323109760072734" at="31,54,32,58" />
+      <scope id="4667323109760072734" at="39,61,40,138" />
+      <scope id="4667323109760072734" at="43,78,44,330" />
+      <scope id="4667323109760072733" at="25,90,27,26" />
+      <scope id="4667323109760072734" at="31,0,34,0">
+        <var name="container" id="4667323109760072734" />
+      </scope>
+      <scope id="4667323109760072733" at="25,0,29,0">
+        <var name="initContext" id="4667323109760072733" />
+      </scope>
+      <scope id="4667323109760072734" at="38,0,42,0" />
+      <scope id="4667323109760072734" at="42,0,46,0">
+        <var name="_context" id="4667323109760072734" />
+      </scope>
+      <scope id="4667323109760072734" at="36,54,46,8" />
+      <scope id="4667323109760072734" at="34,0,48,0" />
+      <unit id="4667323109760072733" at="56,0,59,0" name="org.iets3.components.core.constraints.ComponentRefExpr_Constraints$LINKS" />
+      <unit id="4667323109760072733" at="50,0,55,0" name="org.iets3.components.core.constraints.ComponentRefExpr_Constraints$CONCEPTS" />
+      <unit id="4667323109760072734" at="37,17,46,7" name="org.iets3.components.core.constraints.ComponentRefExpr_Constraints$RD1$1" />
+      <unit id="4667323109760072734" at="30,0,49,0" name="org.iets3.components.core.constraints.ComponentRefExpr_Constraints$RD1" />
+      <unit id="4667323109760072733" at="24,0,60,0" name="org.iets3.components.core.constraints.ComponentRefExpr_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5298733714214576455">
+    <file name="IAssemblyConnectorAttribute_Constraints.java">
+      <node id="5298733714214576455" at="11,101,12,64" concept="12" />
+      <node id="5298733714214576455" at="16,0,17,0" concept="10" trace="IAssemblyConnectorAttribute$U0" />
+      <node id="5298733714214576455" at="11,0,14,0" concept="1" trace="IAssemblyConnectorAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5298733714214576455" at="11,101,12,64" />
+      <scope id="5298733714214576455" at="11,0,14,0">
+        <var name="initContext" id="5298733714214576455" />
+      </scope>
+      <unit id="5298733714214576455" at="15,0,18,0" name="org.iets3.components.core.constraints.IAssemblyConnectorAttribute_Constraints$CONCEPTS" />
+      <unit id="5298733714214576455" at="10,0,19,0" name="org.iets3.components.core.constraints.IAssemblyConnectorAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5298733714214577269">
+    <file name="IComponentAttribute_Constraints.java">
+      <node id="5298733714214577269" at="11,93,12,56" concept="12" />
+      <node id="5298733714214577269" at="16,0,17,0" concept="10" trace="IComponentAttribute$N7" />
+      <node id="5298733714214577269" at="11,0,14,0" concept="1" trace="IComponentAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5298733714214577269" at="11,93,12,56" />
+      <scope id="5298733714214577269" at="11,0,14,0">
+        <var name="initContext" id="5298733714214577269" />
+      </scope>
+      <unit id="5298733714214577269" at="15,0,18,0" name="org.iets3.components.core.constraints.IComponentAttribute_Constraints$CONCEPTS" />
+      <unit id="5298733714214577269" at="10,0,19,0" name="org.iets3.components.core.constraints.IComponentAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5298733714214577700">
+    <file name="IConnectorAttribute_Constraints.java">
+      <node id="5298733714214577700" at="11,93,12,56" concept="12" />
+      <node id="5298733714214577700" at="16,0,17,0" concept="10" trace="IConnectorAttribute$fy" />
+      <node id="5298733714214577700" at="11,0,14,0" concept="1" trace="IConnectorAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5298733714214577700" at="11,93,12,56" />
+      <scope id="5298733714214577700" at="11,0,14,0">
+        <var name="initContext" id="5298733714214577700" />
+      </scope>
+      <unit id="5298733714214577700" at="15,0,18,0" name="org.iets3.components.core.constraints.IConnectorAttribute_Constraints$CONCEPTS" />
+      <unit id="5298733714214577700" at="10,0,19,0" name="org.iets3.components.core.constraints.IConnectorAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5298733714214578874">
+    <file name="IExportConnectorAttribute_Constraints.java">
+      <node id="5298733714214578874" at="11,99,12,62" concept="12" />
+      <node id="5298733714214578874" at="16,0,17,0" concept="10" trace="IExportConnectorAttribute$AZ" />
+      <node id="5298733714214578874" at="11,0,14,0" concept="1" trace="IExportConnectorAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5298733714214578874" at="11,99,12,62" />
+      <scope id="5298733714214578874" at="11,0,14,0">
+        <var name="initContext" id="5298733714214578874" />
+      </scope>
+      <unit id="5298733714214578874" at="15,0,18,0" name="org.iets3.components.core.constraints.IExportConnectorAttribute_Constraints$CONCEPTS" />
+      <unit id="5298733714214578874" at="10,0,19,0" name="org.iets3.components.core.constraints.IExportConnectorAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5298733714214579646">
+    <file name="IImportConnectorAttribute_Constraints.java">
+      <node id="5298733714214579646" at="11,99,12,62" concept="12" />
+      <node id="5298733714214579646" at="16,0,17,0" concept="10" trace="IImportConnectorAttribute$5$" />
+      <node id="5298733714214579646" at="11,0,14,0" concept="1" trace="IImportConnectorAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5298733714214579646" at="11,99,12,62" />
+      <scope id="5298733714214579646" at="11,0,14,0">
+        <var name="initContext" id="5298733714214579646" />
+      </scope>
+      <unit id="5298733714214579646" at="15,0,18,0" name="org.iets3.components.core.constraints.IImportConnectorAttribute_Constraints$CONCEPTS" />
+      <unit id="5298733714214579646" at="10,0,19,0" name="org.iets3.components.core.constraints.IImportConnectorAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5298733714214580252">
+    <file name="IInstanceAttribute_Constraints.java">
+      <node id="5298733714214580252" at="11,92,12,55" concept="12" />
+      <node id="5298733714214580252" at="16,0,17,0" concept="10" trace="IInstanceAttribute$15" />
+      <node id="5298733714214580252" at="11,0,14,0" concept="1" trace="IInstanceAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5298733714214580252" at="11,92,12,55" />
+      <scope id="5298733714214580252" at="11,0,14,0">
+        <var name="initContext" id="5298733714214580252" />
+      </scope>
+      <unit id="5298733714214580252" at="15,0,18,0" name="org.iets3.components.core.constraints.IInstanceAttribute_Constraints$CONCEPTS" />
+      <unit id="5298733714214580252" at="10,0,19,0" name="org.iets3.components.core.constraints.IInstanceAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5298733714214580658">
+    <file name="IParameterAttribute_Constraints.java">
+      <node id="5298733714214580658" at="11,93,12,56" concept="12" />
+      <node id="5298733714214580658" at="16,0,17,0" concept="10" trace="IParameterAttribute$dU" />
+      <node id="5298733714214580658" at="11,0,14,0" concept="1" trace="IParameterAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5298733714214580658" at="11,93,12,56" />
+      <scope id="5298733714214580658" at="11,0,14,0">
+        <var name="initContext" id="5298733714214580658" />
+      </scope>
+      <unit id="5298733714214580658" at="15,0,18,0" name="org.iets3.components.core.constraints.IParameterAttribute_Constraints$CONCEPTS" />
+      <unit id="5298733714214580658" at="10,0,19,0" name="org.iets3.components.core.constraints.IParameterAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5298733714214581128">
+    <file name="IPortAttribute_Constraints.java">
+      <node id="5298733714214581128" at="11,88,12,51" concept="12" />
+      <node id="5298733714214581128" at="16,0,17,0" concept="10" trace="IPortAttribute$Px" />
+      <node id="5298733714214581128" at="11,0,14,0" concept="1" trace="IPortAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5298733714214581128" at="11,88,12,51" />
+      <scope id="5298733714214581128" at="11,0,14,0">
+        <var name="initContext" id="5298733714214581128" />
+      </scope>
+      <unit id="5298733714214581128" at="15,0,18,0" name="org.iets3.components.core.constraints.IPortAttribute_Constraints$CONCEPTS" />
+      <unit id="5298733714214581128" at="10,0,19,0" name="org.iets3.components.core.constraints.IPortAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5298733714214581713">
+    <file name="IPortTypeAttribute_Constraints.java">
+      <node id="5298733714214581713" at="11,92,12,55" concept="12" />
+      <node id="5298733714214581713" at="16,0,17,0" concept="10" trace="IPortTypeAttribute$y3" />
+      <node id="5298733714214581713" at="11,0,14,0" concept="1" trace="IPortTypeAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5298733714214581713" at="11,92,12,55" />
+      <scope id="5298733714214581713" at="11,0,14,0">
+        <var name="initContext" id="5298733714214581713" />
+      </scope>
+      <unit id="5298733714214581713" at="15,0,18,0" name="org.iets3.components.core.constraints.IPortTypeAttribute_Constraints$CONCEPTS" />
+      <unit id="5298733714214581713" at="10,0,19,0" name="org.iets3.components.core.constraints.IPortTypeAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5579057590951068530">
+    <file name="Parameter_Constraints.java">
+      <node id="5579057590951068530" at="11,83,12,46" concept="12" />
+      <node id="5579057590951068530" at="16,0,17,0" concept="10" trace="Parameter$HZ" />
+      <node id="5579057590951068530" at="11,0,14,0" concept="1" trace="Parameter_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5579057590951068530" at="11,83,12,46" />
+      <scope id="5579057590951068530" at="11,0,14,0">
+        <var name="initContext" id="5579057590951068530" />
+      </scope>
+      <unit id="5579057590951068530" at="15,0,18,0" name="org.iets3.components.core.constraints.Parameter_Constraints$CONCEPTS" />
+      <unit id="5579057590951068530" at="10,0,19,0" name="org.iets3.components.core.constraints.Parameter_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/5661183028474580238">
+    <file name="ParameterValue_Constraints.java">
+      <node id="5661183028474580238" at="26,88,27,51" concept="12" />
+      <node id="4388710048718641594" at="27,51,28,26" concept="2" />
+      <node id="4388710048718641594" at="32,54,33,54" concept="12" />
+      <node id="4388710048718641594" at="40,61,41,138" concept="7" />
+      <node id="1928011281873127608" at="44,78,45,468" concept="7" />
+      <node id="5661183028474580238" at="52,0,53,0" concept="10" trace="ParameterValue$DI" />
+      <node id="5661183028474580238" at="53,0,54,0" concept="10" trace="AbstractComponentInstanceBase$QW" />
+      <node id="5661183028474580238" at="57,0,58,0" concept="10" trace="param$5X2m" />
+      <node id="4388710048718641594" at="32,0,35,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="5661183028474580238" at="26,0,30,0" concept="1" trace="ParameterValue_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="4388710048718641594" at="39,0,43,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4388710048718641594" at="43,0,47,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4388710048718641594" at="37,54,47,8" concept="7" />
+      <node id="4388710048718641594" at="35,0,49,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="4388710048718641594" at="32,54,33,54" />
+      <scope id="4388710048718641594" at="40,61,41,138" />
+      <scope id="4388710048718641594" at="44,78,45,468" />
+      <scope id="5661183028474580238" at="26,88,28,26" />
+      <scope id="4388710048718641594" at="32,0,35,0">
+        <var name="container" id="4388710048718641594" />
+      </scope>
+      <scope id="5661183028474580238" at="26,0,30,0">
+        <var name="initContext" id="5661183028474580238" />
+      </scope>
+      <scope id="4388710048718641594" at="39,0,43,0" />
+      <scope id="4388710048718641594" at="43,0,47,0">
+        <var name="_context" id="4388710048718641594" />
+      </scope>
+      <scope id="4388710048718641594" at="37,54,47,8" />
+      <scope id="4388710048718641594" at="35,0,49,0" />
+      <unit id="5661183028474580238" at="56,0,59,0" name="org.iets3.components.core.constraints.ParameterValue_Constraints$LINKS" />
+      <unit id="5661183028474580238" at="51,0,55,0" name="org.iets3.components.core.constraints.ParameterValue_Constraints$CONCEPTS" />
+      <unit id="4388710048718641594" at="38,17,47,7" name="org.iets3.components.core.constraints.ParameterValue_Constraints$RD1$1" />
+      <unit id="4388710048718641594" at="31,0,50,0" name="org.iets3.components.core.constraints.ParameterValue_Constraints$RD1" />
+      <unit id="5661183028474580238" at="25,0,60,0" name="org.iets3.components.core.constraints.ParameterValue_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/596856272729882201">
+    <file name="Component_Constraints.java">
+      <node id="596856272729882201" at="23,83,24,46" concept="12" />
+      <node id="596856272729882201" at="27,128,28,133" concept="6" />
+      <node id="596856272729882201" at="28,133,29,0" concept="9" />
+      <node id="596856272729882201" at="30,55,31,72" concept="2" />
+      <node id="596856272729882201" at="32,9,33,0" concept="9" />
+      <node id="596856272729882201" at="33,0,34,22" concept="7" />
+      <node id="7126186526844781743" at="40,28,41,36" concept="8" />
+      <node id="7126186526844781750" at="42,128,43,95" concept="7" />
+      <node id="7126186526844781761" at="45,62,46,98" concept="7" />
+      <node id="7126186526844781770" at="48,5,49,16" concept="7" />
+      <node id="596856272729882201" at="51,0,52,0" concept="10" trace="canBeParentBreakingPoint" />
+      <node id="596856272729882201" at="54,0,55,0" concept="10" trace="Component$gR" />
+      <node id="596856272729882201" at="55,0,56,0" concept="10" trace="AbstractComponentInterface$Jr" />
+      <node id="596856272729882201" at="56,0,57,0" concept="10" trace="ComponentSubstructure$oB" />
+      <node id="596856272729882201" at="29,0,32,9" concept="4" />
+      <node id="7126186526844781745" at="41,36,44,7" concept="4" />
+      <node id="7126186526844781756" at="44,7,47,7" concept="4" />
+      <node id="7126186526844781741" at="39,128,48,5" concept="4" />
+      <node id="596856272729882201" at="26,0,36,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="596856272729882201" at="24,46,36,7" concept="2" />
+      <node id="596856272729882201" at="39,0,51,0" concept="11" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="596856272729882201" at="23,0,38,0" concept="1" trace="Component_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="596856272729882201" at="30,55,31,72" />
+      <scope id="7126186526844781749" at="42,128,43,95" />
+      <scope id="7126186526844781760" at="45,62,46,98" />
+      <scope id="596856272729882201" at="27,128,34,22">
+        <var name="result" id="596856272729882201" />
+      </scope>
+      <scope id="7126186526844781742" at="40,28,47,7" />
+      <scope id="596856272729882201" at="26,0,36,0">
+        <var name="checkingNodeContext" id="596856272729882201" />
+        <var name="context" id="596856272729882201" />
+      </scope>
+      <scope id="7126186526844781740" at="39,128,49,16" />
+      <scope id="596856272729882201" at="39,0,51,0">
+        <var name="childConcept" id="596856272729882201" />
+        <var name="childNode" id="596856272729882201" />
+        <var name="link" id="596856272729882201" />
+        <var name="node" id="596856272729882201" />
+      </scope>
+      <scope id="596856272729882201" at="23,83,36,7" />
+      <scope id="596856272729882201" at="23,0,38,0">
+        <var name="initContext" id="596856272729882201" />
+      </scope>
+      <unit id="596856272729882201" at="53,0,58,0" name="org.iets3.components.core.constraints.Component_Constraints$CONCEPTS" />
+      <unit id="596856272729882201" at="25,23,36,5" name="org.iets3.components.core.constraints.Component_Constraints$1" />
+      <unit id="596856272729882201" at="22,0,59,0" name="org.iets3.components.core.constraints.Component_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/6425176197858611390">
+    <file name="AbstractConnectorRefTarget_Constraints.java">
+      <node id="6425176197858611390" at="33,100,34,63" concept="12" />
+      <node id="6425176197858615415" at="34,63,35,26" concept="2" />
+      <node id="6425176197858611390" at="38,127,39,128" concept="6" />
+      <node id="6425176197858611390" at="39,128,40,0" concept="9" />
+      <node id="6425176197858611390" at="41,55,42,71" concept="2" />
+      <node id="6425176197858611390" at="43,9,44,0" concept="9" />
+      <node id="6425176197858611390" at="44,0,45,22" concept="7" />
+      <node id="6425176197858615415" at="51,54,52,58" concept="12" />
+      <node id="6425176197858615415" at="59,61,60,138" concept="7" />
+      <node id="6425176197858617359" at="63,78,64,544" concept="7" />
+      <node id="6425176197858611850" at="69,128,70,219" concept="7" />
+      <node id="6425176197858611390" at="72,0,73,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="6425176197858611390" at="75,0,76,0" concept="10" trace="AbstractConnectorRefTarget$H2" />
+      <node id="6425176197858611390" at="76,0,77,0" concept="10" trace="DotExpression$jp" />
+      <node id="6425176197858611390" at="77,0,78,0" concept="10" trace="ComponentType$zO" />
+      <node id="6425176197858611390" at="78,0,79,0" concept="10" trace="AbstractConnectorBase$kt" />
+      <node id="6425176197858611390" at="82,0,83,0" concept="10" trace="connector$9qiY" />
+      <node id="6425176197858611390" at="83,0,84,0" concept="10" trace="expr$CW3E" />
+      <node id="6425176197858611390" at="84,0,85,0" concept="10" trace="component$SVvs" />
+      <node id="6425176197858611390" at="40,0,43,9" concept="4" />
+      <node id="6425176197858615415" at="51,0,54,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="6425176197858611390" at="69,0,72,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="6425176197858615415" at="58,0,62,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="6425176197858615415" at="62,0,66,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="6425176197858611390" at="37,0,47,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="6425176197858615415" at="56,54,66,8" concept="7" />
+      <node id="6425176197858611390" at="35,26,47,7" concept="2" />
+      <node id="6425176197858615415" at="54,0,68,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="6425176197858611390" at="33,0,49,0" concept="1" trace="AbstractConnectorRefTarget_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="6425176197858611390" at="41,55,42,71" />
+      <scope id="6425176197858615415" at="51,54,52,58" />
+      <scope id="6425176197858615415" at="59,61,60,138" />
+      <scope id="6425176197858615415" at="63,78,64,544" />
+      <scope id="6425176197858611392" at="69,128,70,219" />
+      <scope id="6425176197858615415" at="51,0,54,0">
+        <var name="container" id="6425176197858615415" />
+      </scope>
+      <scope id="6425176197858611390" at="69,0,72,0">
+        <var name="childConcept" id="6425176197858611390" />
+        <var name="link" id="6425176197858611390" />
+        <var name="node" id="6425176197858611390" />
+        <var name="parentNode" id="6425176197858611390" />
+      </scope>
+      <scope id="6425176197858615415" at="58,0,62,0" />
+      <scope id="6425176197858615415" at="62,0,66,0">
+        <var name="_context" id="6425176197858615415" />
+      </scope>
+      <scope id="6425176197858611390" at="38,127,45,22">
+        <var name="result" id="6425176197858611390" />
+      </scope>
+      <scope id="6425176197858611390" at="37,0,47,0">
+        <var name="checkingNodeContext" id="6425176197858611390" />
+        <var name="context" id="6425176197858611390" />
+      </scope>
+      <scope id="6425176197858615415" at="56,54,66,8" />
+      <scope id="6425176197858611390" at="33,100,47,7" />
+      <scope id="6425176197858615415" at="54,0,68,0" />
+      <scope id="6425176197858611390" at="33,0,49,0">
+        <var name="initContext" id="6425176197858611390" />
+      </scope>
+      <unit id="6425176197858611390" at="81,0,86,0" name="org.iets3.components.core.constraints.AbstractConnectorRefTarget_Constraints$LINKS" />
+      <unit id="6425176197858611390" at="74,0,80,0" name="org.iets3.components.core.constraints.AbstractConnectorRefTarget_Constraints$CONCEPTS" />
+      <unit id="6425176197858615415" at="57,17,66,7" name="org.iets3.components.core.constraints.AbstractConnectorRefTarget_Constraints$RD1$1" />
+      <unit id="6425176197858611390" at="36,32,47,5" name="org.iets3.components.core.constraints.AbstractConnectorRefTarget_Constraints$1" />
+      <unit id="6425176197858615415" at="50,0,69,0" name="org.iets3.components.core.constraints.AbstractConnectorRefTarget_Constraints$RD1" />
+      <unit id="6425176197858611390" at="32,0,87,0" name="org.iets3.components.core.constraints.AbstractConnectorRefTarget_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/7804632404593469939">
+    <file name="ComponentRef_Constraints.java">
+      <node id="7804632404593469939" at="26,86,27,49" concept="12" />
+      <node id="7804632404593469940" at="27,49,28,26" concept="2" />
+      <node id="7804632404593469940" at="32,54,33,52" concept="12" />
+      <node id="7804632404593469940" at="40,61,41,138" concept="7" />
+      <node id="1928011281873129853" at="44,78,45,470" concept="7" />
+      <node id="7804632404593469939" at="52,0,53,0" concept="10" trace="ComponentRef$BR" />
+      <node id="7804632404593469939" at="53,0,54,0" concept="10" trace="IVisibleElementProvider$$O" />
+      <node id="7804632404593469939" at="54,0,55,0" concept="10" trace="Component$gR" />
+      <node id="7804632404593469939" at="58,0,59,0" concept="10" trace="ref$KPLr" />
+      <node id="7804632404593469940" at="32,0,35,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7804632404593469939" at="26,0,30,0" concept="1" trace="ComponentRef_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="7804632404593469940" at="39,0,43,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7804632404593469940" at="43,0,47,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7804632404593469940" at="37,54,47,8" concept="7" />
+      <node id="7804632404593469940" at="35,0,49,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="7804632404593469940" at="32,54,33,52" />
+      <scope id="7804632404593469940" at="40,61,41,138" />
+      <scope id="7804632404593469940" at="44,78,45,470" />
+      <scope id="7804632404593469939" at="26,86,28,26" />
+      <scope id="7804632404593469940" at="32,0,35,0">
+        <var name="container" id="7804632404593469940" />
+      </scope>
+      <scope id="7804632404593469939" at="26,0,30,0">
+        <var name="initContext" id="7804632404593469939" />
+      </scope>
+      <scope id="7804632404593469940" at="39,0,43,0" />
+      <scope id="7804632404593469940" at="43,0,47,0">
+        <var name="_context" id="7804632404593469940" />
+      </scope>
+      <scope id="7804632404593469940" at="37,54,47,8" />
+      <scope id="7804632404593469940" at="35,0,49,0" />
+      <unit id="7804632404593469939" at="57,0,60,0" name="org.iets3.components.core.constraints.ComponentRef_Constraints$LINKS" />
+      <unit id="7804632404593469939" at="51,0,56,0" name="org.iets3.components.core.constraints.ComponentRef_Constraints$CONCEPTS" />
+      <unit id="7804632404593469940" at="38,17,47,7" name="org.iets3.components.core.constraints.ComponentRef_Constraints$RD1$1" />
+      <unit id="7804632404593469940" at="31,0,50,0" name="org.iets3.components.core.constraints.ComponentRef_Constraints$RD1" />
+      <unit id="7804632404593469939" at="25,0,61,0" name="org.iets3.components.core.constraints.ComponentRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/7804632404593887177">
+    <file name="Port_Constraints.java">
+      <node id="7804632404593887177" at="11,78,12,41" concept="12" />
+      <node id="7804632404593887177" at="16,0,17,0" concept="10" trace="Port$gs" />
+      <node id="7804632404593887177" at="11,0,14,0" concept="1" trace="Port_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="7804632404593887177" at="11,78,12,41" />
+      <scope id="7804632404593887177" at="11,0,14,0">
+        <var name="initContext" id="7804632404593887177" />
+      </scope>
+      <unit id="7804632404593887177" at="15,0,18,0" name="org.iets3.components.core.constraints.Port_Constraints$CONCEPTS" />
+      <unit id="7804632404593887177" at="10,0,19,0" name="org.iets3.components.core.constraints.Port_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/8133465492372620">
+    <file name="IKindSpecificAttribute_Constraints.java">
+      <node id="8133465492372620" at="29,96,30,59" concept="12" />
+      <node id="8133465492372620" at="33,127,34,128" concept="6" />
+      <node id="8133465492372620" at="34,128,35,0" concept="9" />
+      <node id="8133465492372620" at="36,55,37,71" concept="2" />
+      <node id="8133465492372620" at="38,9,39,0" concept="9" />
+      <node id="8133465492372620" at="39,0,40,22" concept="7" />
+      <node id="8133465492489319" at="45,128,46,45" concept="8" />
+      <node id="8133465492374796" at="46,45,47,119" concept="6" />
+      <node id="8133465492374807" at="48,36,49,129" concept="6" />
+      <node id="8133465492374813" at="49,129,50,89" concept="6" />
+      <node id="8133465492374819" at="50,89,51,0" concept="9" />
+      <node id="8133465492374820" at="52,7,53,50" concept="6" />
+      <node id="7075247037629739510" at="54,89,55,109" concept="6" />
+      <node id="7075247037629807409" at="55,109,56,68" concept="8" />
+      <node id="7075247037629809726" at="56,68,57,66" concept="8" />
+      <node id="7075247037629813764" at="57,66,58,109" concept="6" />
+      <node id="7075247037629876848" at="59,38,60,115" concept="6" />
+      <node id="7075247037630105518" at="60,115,61,307" concept="6" />
+      <node id="7690377372959691708" at="61,307,62,83" concept="6" />
+      <node id="7690377372959731051" at="62,83,63,0" concept="9" />
+      <node id="7075247037629878259" at="63,0,64,287" concept="7" />
+      <node id="7075247037629896996" at="68,5,69,0" concept="9" />
+      <node id="7075247037629724380" at="69,0,70,75" concept="8" />
+      <node id="7075247037629897346" at="70,75,71,107" concept="6" />
+      <node id="7075247037629897357" at="72,32,73,109" concept="6" />
+      <node id="7075247037629897363" at="73,109,74,244" concept="7" />
+      <node id="7075247037629726912" at="75,5,76,17" concept="7" />
+      <node id="8133465492372620" at="78,0,79,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="8133465492372620" at="81,0,82,0" concept="10" trace="IKindSpecificAttribute$ly" />
+      <node id="8133465492372620" at="82,0,83,0" concept="10" trace="IContextTypeProvider$Ib" />
+      <node id="8133465492372620" at="83,0,84,0" concept="10" trace="ITypeWithTarget$mU" />
+      <node id="8133465492372620" at="84,0,85,0" concept="10" trace="IKindContext$DQ" />
+      <node id="8133465492372620" at="35,0,38,9" concept="4" />
+      <node id="7075247037629897355" at="71,107,75,5" concept="4" />
+      <node id="7075247037629791286" at="58,109,65,11" concept="4" />
+      <node id="8133465492372620" at="32,0,42,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="8133465492372620" at="30,59,42,7" concept="2" />
+      <node id="8133465492374820" at="53,50,66,9" concept="4" />
+      <node id="8133465492372620" at="29,0,44,0" concept="1" trace="IKindSpecificAttribute_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="8133465492374820" at="51,0,67,7" concept="0" />
+      <node id="8133465492374805" at="47,119,68,5" concept="4" />
+      <node id="8133465492372620" at="45,0,78,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <scope id="8133465492372620" at="36,55,37,71" />
+      <scope id="7075247037629897356" at="72,32,74,244">
+        <var name="specifiedKind" id="7075247037629897358" />
+      </scope>
+      <scope id="7075247037629791288" at="59,38,64,287">
+        <var name="allowedKindConcepts" id="7075247037630105519" />
+        <var name="kindConcept" id="7690377372959691709" />
+        <var name="specifiedKind" id="7075247037629876849" />
+      </scope>
+      <scope id="8133465492372620" at="33,127,40,22">
+        <var name="result" id="8133465492372620" />
+      </scope>
+      <scope id="8133465492372620" at="32,0,42,0">
+        <var name="checkingNodeContext" id="8133465492372620" />
+        <var name="context" id="8133465492372620" />
+      </scope>
+      <scope id="8133465492374822" at="54,89,65,11">
+        <var name="kindContext" id="7075247037629813765" />
+        <var name="target" id="7075247037629739511" />
+      </scope>
+      <scope id="8133465492372620" at="29,96,42,7" />
+      <scope id="8133465492374820" at="52,7,66,9">
+        <var name="itypeWithTarget" id="8133465492374820" />
+      </scope>
+      <scope id="8133465492372620" at="29,0,44,0">
+        <var name="initContext" id="8133465492372620" />
+      </scope>
+      <scope id="8133465492374806" at="48,36,67,7">
+        <var name="contextType" id="8133465492374814" />
+        <var name="contextTypeNode" id="8133465492374808" />
+      </scope>
+      <scope id="8133465492372625" at="45,128,76,17">
+        <var name="ctxTypeProvider" id="8133465492374797" />
+        <var name="kindContext" id="7075247037629897347" />
+      </scope>
+      <scope id="8133465492372620" at="45,0,78,0">
+        <var name="childConcept" id="8133465492372620" />
+        <var name="link" id="8133465492372620" />
+        <var name="node" id="8133465492372620" />
+        <var name="parentNode" id="8133465492372620" />
+      </scope>
+      <unit id="8133465492372620" at="80,0,86,0" name="org.iets3.components.core.constraints.IKindSpecificAttribute_Constraints$CONCEPTS" />
+      <unit id="8133465492372620" at="31,32,42,5" name="org.iets3.components.core.constraints.IKindSpecificAttribute_Constraints$1" />
+      <unit id="8133465492372620" at="28,0,87,0" name="org.iets3.components.core.constraints.IKindSpecificAttribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/8421912158722965149">
+    <file name="ParamRef_Constraints.java">
+      <node id="8421912158722965149" at="34,82,35,45" concept="12" />
+      <node id="8421912158722965150" at="35,45,36,26" concept="2" />
+      <node id="8421912158722965149" at="39,127,40,128" concept="6" />
+      <node id="8421912158722965149" at="40,128,41,0" concept="9" />
+      <node id="8421912158722965149" at="42,55,43,71" concept="2" />
+      <node id="8421912158722965149" at="44,9,45,0" concept="9" />
+      <node id="8421912158722965149" at="45,0,46,22" concept="7" />
+      <node id="8421912158722965150" at="52,54,53,54" concept="12" />
+      <node id="8421912158722965150" at="60,61,61,138" concept="7" />
+      <node id="1928011281873131229" at="64,78,65,150" concept="6" />
+      <node id="2573953142484839422" at="65,150,66,125" concept="6" />
+      <node id="2573953142484889686" at="66,125,67,64" concept="8" />
+      <node id="2573953142484870759" at="67,64,68,338" concept="6" />
+      <node id="1928011281873131247" at="68,338,69,348" concept="7" />
+      <node id="7126186526844781861" at="74,128,75,101" concept="7" />
+      <node id="8421912158722965149" at="77,0,78,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="8421912158722965149" at="80,0,81,0" concept="10" trace="ParamRef$Pq" />
+      <node id="8421912158722965149" at="81,0,82,0" concept="10" trace="IVisibleElementProvider$$O" />
+      <node id="8421912158722965149" at="82,0,83,0" concept="10" trace="Parameter$HZ" />
+      <node id="8421912158722965149" at="83,0,84,0" concept="10" trace="ISingleSymbolRef$yW" />
+      <node id="8421912158722965149" at="84,0,85,0" concept="10" trace="Component$gR" />
+      <node id="8421912158722965149" at="88,0,89,0" concept="10" trace="param$OsyV" />
+      <node id="8421912158722965149" at="41,0,44,9" concept="4" />
+      <node id="8421912158722965150" at="52,0,55,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8421912158722965149" at="74,0,77,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="8421912158722965150" at="59,0,63,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="8421912158722965150" at="63,0,71,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="8421912158722965149" at="38,0,48,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="8421912158722965149" at="36,26,48,7" concept="2" />
+      <node id="8421912158722965150" at="57,54,71,8" concept="7" />
+      <node id="8421912158722965149" at="34,0,50,0" concept="1" trace="ParamRef_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="8421912158722965150" at="55,0,73,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="8421912158722965149" at="42,55,43,71" />
+      <scope id="8421912158722965150" at="52,54,53,54" />
+      <scope id="8421912158722965150" at="60,61,61,138" />
+      <scope id="7126186526844781860" at="74,128,75,101" />
+      <scope id="8421912158722965150" at="52,0,55,0">
+        <var name="container" id="8421912158722965150" />
+      </scope>
+      <scope id="8421912158722965149" at="74,0,77,0">
+        <var name="childConcept" id="8421912158722965149" />
+        <var name="link" id="8421912158722965149" />
+        <var name="node" id="8421912158722965149" />
+        <var name="parentNode" id="8421912158722965149" />
+      </scope>
+      <scope id="8421912158722965150" at="59,0,63,0" />
+      <scope id="8421912158722965150" at="64,78,69,348">
+        <var name="allExceptParentParam" id="2573953142484870760" />
+        <var name="parentParam" id="2573953142484839423" />
+        <var name="visibleElementProvider" id="1928011281873131230" />
+      </scope>
+      <scope id="8421912158722965149" at="39,127,46,22">
+        <var name="result" id="8421912158722965149" />
+      </scope>
+      <scope id="8421912158722965150" at="63,0,71,0">
+        <var name="_context" id="8421912158722965150" />
+      </scope>
+      <scope id="8421912158722965149" at="38,0,48,0">
+        <var name="checkingNodeContext" id="8421912158722965149" />
+        <var name="context" id="8421912158722965149" />
+      </scope>
+      <scope id="8421912158722965149" at="34,82,48,7" />
+      <scope id="8421912158722965150" at="57,54,71,8" />
+      <scope id="8421912158722965149" at="34,0,50,0">
+        <var name="initContext" id="8421912158722965149" />
+      </scope>
+      <scope id="8421912158722965150" at="55,0,73,0" />
+      <unit id="8421912158722965149" at="87,0,90,0" name="org.iets3.components.core.constraints.ParamRef_Constraints$LINKS" />
+      <unit id="8421912158722965149" at="79,0,86,0" name="org.iets3.components.core.constraints.ParamRef_Constraints$CONCEPTS" />
+      <unit id="8421912158722965149" at="37,32,48,5" name="org.iets3.components.core.constraints.ParamRef_Constraints$1" />
+      <unit id="8421912158722965150" at="58,17,71,7" name="org.iets3.components.core.constraints.ParamRef_Constraints$RD1$1" />
+      <unit id="8421912158722965150" at="51,0,74,0" name="org.iets3.components.core.constraints.ParamRef_Constraints$RD1" />
+      <unit id="8421912158722965149" at="33,0,91,0" name="org.iets3.components.core.constraints.ParamRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/8434481698272645064">
+    <file name="VarRef_Constraints.java">
+      <node id="8434481698272645064" at="25,80,26,43" concept="12" />
+      <node id="8434481698272645131" at="26,43,27,26" concept="2" />
+      <node id="8434481698272645131" at="31,54,32,52" concept="12" />
+      <node id="8434481698272645131" at="39,61,40,138" concept="7" />
+      <node id="1928011281873128102" at="43,78,44,244" concept="7" />
+      <node id="8434481698272645064" at="51,0,52,0" concept="10" trace="VarRef$bk" />
+      <node id="8434481698272645064" at="52,0,53,0" concept="10" trace="Component$gR" />
+      <node id="8434481698272645064" at="53,0,54,0" concept="10" trace="Variable$8V" />
+      <node id="8434481698272645064" at="57,0,58,0" concept="10" trace="var$UTug" />
+      <node id="8434481698272645064" at="58,0,59,0" concept="10" trace="contents$i4tX" />
+      <node id="8434481698272645131" at="31,0,34,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8434481698272645064" at="25,0,29,0" concept="1" trace="VarRef_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="8434481698272645131" at="38,0,42,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="8434481698272645131" at="42,0,46,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="8434481698272645131" at="36,54,46,8" concept="7" />
+      <node id="8434481698272645131" at="34,0,48,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="8434481698272645131" at="31,54,32,52" />
+      <scope id="8434481698272645131" at="39,61,40,138" />
+      <scope id="8434481698272645131" at="43,78,44,244" />
+      <scope id="8434481698272645064" at="25,80,27,26" />
+      <scope id="8434481698272645131" at="31,0,34,0">
+        <var name="container" id="8434481698272645131" />
+      </scope>
+      <scope id="8434481698272645064" at="25,0,29,0">
+        <var name="initContext" id="8434481698272645064" />
+      </scope>
+      <scope id="8434481698272645131" at="38,0,42,0" />
+      <scope id="8434481698272645131" at="42,0,46,0">
+        <var name="_context" id="8434481698272645131" />
+      </scope>
+      <scope id="8434481698272645131" at="36,54,46,8" />
+      <scope id="8434481698272645131" at="34,0,48,0" />
+      <unit id="8434481698272645064" at="56,0,60,0" name="org.iets3.components.core.constraints.VarRef_Constraints$LINKS" />
+      <unit id="8434481698272645064" at="50,0,55,0" name="org.iets3.components.core.constraints.VarRef_Constraints$CONCEPTS" />
+      <unit id="8434481698272645131" at="37,17,46,7" name="org.iets3.components.core.constraints.VarRef_Constraints$RD1$1" />
+      <unit id="8434481698272645131" at="30,0,49,0" name="org.iets3.components.core.constraints.VarRef_Constraints$RD1" />
+      <unit id="8434481698272645064" at="24,0,61,0" name="org.iets3.components.core.constraints.VarRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)/9214207200564476430">
+    <file name="InstanceRef_Constraints.java">
+      <node id="9214207200564476430" at="24,85,25,48" concept="12" />
+      <node id="9214207200564476443" at="25,48,26,26" concept="2" />
+      <node id="9214207200564476443" at="30,54,31,52" concept="12" />
+      <node id="9214207200564476443" at="38,61,39,138" concept="7" />
+      <node id="1928011281873130580" at="42,78,43,283" concept="7" />
+      <node id="9214207200564476430" at="50,0,51,0" concept="10" trace="InstanceRef$Gm" />
+      <node id="9214207200564476430" at="51,0,52,0" concept="10" trace="Component$gR" />
+      <node id="9214207200564476430" at="52,0,53,0" concept="10" trace="AbstractComponentInstanceBase$QW" />
+      <node id="9214207200564476430" at="56,0,57,0" concept="10" trace="ref$H$FL" />
+      <node id="9214207200564476443" at="30,0,33,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="9214207200564476430" at="24,0,28,0" concept="1" trace="InstanceRef_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="9214207200564476443" at="37,0,41,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="9214207200564476443" at="41,0,45,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="9214207200564476443" at="35,54,45,8" concept="7" />
+      <node id="9214207200564476443" at="33,0,47,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="9214207200564476443" at="30,54,31,52" />
+      <scope id="9214207200564476443" at="38,61,39,138" />
+      <scope id="9214207200564476443" at="42,78,43,283" />
+      <scope id="9214207200564476430" at="24,85,26,26" />
+      <scope id="9214207200564476443" at="30,0,33,0">
+        <var name="container" id="9214207200564476443" />
+      </scope>
+      <scope id="9214207200564476430" at="24,0,28,0">
+        <var name="initContext" id="9214207200564476430" />
+      </scope>
+      <scope id="9214207200564476443" at="37,0,41,0" />
+      <scope id="9214207200564476443" at="41,0,45,0">
+        <var name="_context" id="9214207200564476443" />
+      </scope>
+      <scope id="9214207200564476443" at="35,54,45,8" />
+      <scope id="9214207200564476443" at="33,0,47,0" />
+      <unit id="9214207200564476430" at="55,0,58,0" name="org.iets3.components.core.constraints.InstanceRef_Constraints$LINKS" />
+      <unit id="9214207200564476430" at="49,0,54,0" name="org.iets3.components.core.constraints.InstanceRef_Constraints$CONCEPTS" />
+      <unit id="9214207200564476443" at="36,17,45,7" name="org.iets3.components.core.constraints.InstanceRef_Constraints$RD1$1" />
+      <unit id="9214207200564476443" at="29,0,48,0" name="org.iets3.components.core.constraints.InstanceRef_Constraints$RD1" />
+      <unit id="9214207200564476430" at="23,0,59,0" name="org.iets3.components.core.constraints.InstanceRef_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

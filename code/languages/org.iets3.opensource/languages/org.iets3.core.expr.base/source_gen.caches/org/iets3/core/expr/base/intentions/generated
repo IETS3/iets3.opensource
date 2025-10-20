@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-2mj3c6v10aga0hfeqlllj3phjfyz1wy">
+  <files names="CommandWithMessage.java:ConstraintHelper.java:IntentionsDescriptor.java:IntroduceReveal_Intention.java:UnwrapOption_Intention.java:Unwrap_Intention.java:addCondition_Intention.java:addErrorMessage_Intention.java:addGenericErrorClause_Intention.java:addInvariant_Intention.java:addPlainConstraint_Intention.java:addPostcondition_Intention.java:addPrecondition_Intention.java:attachReductionInspector_Intention.java:attachValueInspector_Intention.java:deriveType_Intention.java:excludeLower_Intention.java:excludeUpper_Intention.java:includeLower_Intention.java:includeUpper_Intention.java:makeRefType_Intention.java:pullDownTypeIntoCast_Intention.java:simplifyType_Intention.java:syncSpecificErrorClauses_Intention.java:wrapWithAlt_Intention.java:wrapWithIfSome_Intention.java:wrapWithIf_Intention.java:wrapWithOption_Intention.java:wrapWithParens_Intention.java:wrapWithTry_Intention.java" />
+</product>
+

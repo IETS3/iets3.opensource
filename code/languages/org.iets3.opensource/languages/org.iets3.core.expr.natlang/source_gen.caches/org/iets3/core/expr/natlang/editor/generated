@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="7okjl9nxanrpj50p785df894v8eyj9y">
+  <files names="EditorAspectDescriptorImpl.java:NatLangArgument_Editor.java:NatLangArgument_EditorBuilder_a.java:NatLangArgument_SubstituteMenu.java:NatLangCallSyntax_Editor.java:NatLangCallSyntax_EditorBuilder_a.java:NatLangColors.java:NatLangFunctionArgRef_Editor.java:NatLangFunctionArgRef_EditorBuilder_a.java:NatLangFunctionArgRef_SmartReference.java:NatLangFunctionArgRef_SubstituteMenu.java:NatLangFunctionCall_Editor.java:NatLangFunctionCall_EditorBuilder_a.java:NatLangFunctionCall_SmartReference.java:NatLangFunctionCall_SubstituteMenu.java:PresentationProviders.java:SingleChildCellProvider.java:TemplateCallCellProvider.java:syntax.java" />
+</product>
+

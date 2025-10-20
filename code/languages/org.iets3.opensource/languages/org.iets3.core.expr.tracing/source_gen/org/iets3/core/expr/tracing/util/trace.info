@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:a42949a2-5b5a-42d4-8ed5-e3108c4163c7(org.iets3.core.expr.tracing.util)/187275547139561407">
+    <file name="TracingValue.java">
+      <node id="187275547139589209" at="8,0,9,0" concept="2" trace="renderedValue" />
+      <node id="5064086857068444548" at="9,0,10,0" concept="2" trace="value" />
+      <node id="187275547139564476" at="11,0,12,0" concept="5" trace="USER_OBJECT_KEY" />
+      <node id="187275547139590426" at="13,71,14,39" concept="1" />
+      <node id="5064086857068445163" at="14,39,15,23" concept="1" />
+      <node id="187275547139564745" at="18,70,19,47" concept="1" />
+      <node id="187275547139790390" at="22,46,23,20" concept="1" />
+      <node id="187275547139578255" at="26,52,27,66" concept="3" />
+      <node id="1752553975993423519" at="27,66,28,37" concept="4" />
+      <node id="1752553975993423817" at="32,49,33,29" concept="4" />
+      <node id="187275547139564627" at="18,0,21,0" concept="6" trace="set#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/tracing/util/TracingValue;)V" />
+      <node id="187275547139785869" at="22,0,25,0" concept="6" trace="unset#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="187275547139586684" at="32,0,35,0" concept="6" trace="isSet#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="187275547139590101" at="13,0,17,0" concept="0" trace="TracingValue#(Ljava/lang/String;Ljava/lang/Object;)V" />
+      <node id="187275547139568732" at="26,0,30,0" concept="6" trace="get#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/expr/tracing/util/TracingValue;" />
+      <scope id="187275547139564630" at="18,70,19,47" />
+      <scope id="187275547139785872" at="22,46,23,20" />
+      <scope id="187275547139586687" at="32,49,33,29" />
+      <scope id="187275547139590104" at="13,71,15,23" />
+      <scope id="187275547139568735" at="26,52,28,37">
+        <var name="userObject" id="187275547139578256" />
+      </scope>
+      <scope id="187275547139564627" at="18,0,21,0">
+        <var name="node" id="187275547139564655" />
+        <var name="value" id="187275547139564675" />
+      </scope>
+      <scope id="187275547139785869" at="22,0,25,0">
+        <var name="node" id="187275547139786330" />
+      </scope>
+      <scope id="187275547139586684" at="32,0,35,0">
+        <var name="node" id="187275547139586926" />
+      </scope>
+      <scope id="187275547139590101" at="13,0,17,0">
+        <var name="renderedValue" id="187275547139590385" />
+        <var name="value" id="5064086857068443691" />
+      </scope>
+      <scope id="187275547139568732" at="26,0,30,0">
+        <var name="node" id="187275547139568901" />
+      </scope>
+      <unit id="187275547139561407" at="7,0,36,0" name="org.iets3.core.expr.tracing.util.TracingValue" />
+    </file>
+  </root>
+  <root nodeRef="r:a42949a2-5b5a-42d4-8ed5-e3108c4163c7(org.iets3.core.expr.tracing.util)/25870125863434350">
+    <file name="TracingConstants.java">
+      <node id="25870125863434424" at="10,0,11,0" concept="5" trace="DEBUGGER_COLOR" />
+      <node id="6608914488352456742" at="11,0,12,0" concept="5" trace="DEBUGGER_COLOR_LIGHT" />
+      <unit id="25870125863434350" at="9,0,13,0" name="org.iets3.core.expr.tracing.util.TracingConstants" />
+    </file>
+  </root>
+</debug-info>
+

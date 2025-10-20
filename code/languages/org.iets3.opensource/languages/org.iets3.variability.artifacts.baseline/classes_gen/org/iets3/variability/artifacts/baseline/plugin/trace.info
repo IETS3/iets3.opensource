@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1160998861373:jetbrains.mps.baseLanguage.structure.AssertStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:f2970992-e26d-4370-b625-3d51e8af7e7f(org.iets3.variability.artifacts.baseline.plugin)/5017851247829713058">
+    <file name="ModuleClonerFacade.java">
+      <node id="5017851247829749079" at="19,0,20,0" concept="3" trace="nameSuffix" />
+      <node id="2742791848409896346" at="20,0,21,0" concept="3" trace="myModuleOriginal" />
+      <node id="760049304605426498" at="21,0,22,0" concept="3" trace="myProject" />
+      <node id="2729157578428845406" at="22,0,23,0" concept="3" trace="myVirtualFolder" />
+      <node id="7650435763716707466" at="25,47,26,40" concept="7" />
+      <node id="7650435763716707474" at="28,47,29,40" concept="7" />
+      <node id="7650435763716707476" at="30,5,31,16" concept="7" />
+      <node id="2113660467281233286" at="34,80,35,70" concept="6" />
+      <node id="2113660467281185065" at="35,70,36,116" concept="6" />
+      <node id="2113660467281160302" at="36,116,37,0" concept="9" />
+      <node id="7435578985096777201" at="37,0,38,128" concept="6" />
+      <node id="2113660467280955619" at="38,128,39,0" concept="9" />
+      <node id="4512160021353798719" at="39,0,40,141" concept="7" />
+      <node id="5017851247829750084" at="43,117,44,33" concept="2" />
+      <node id="2742791848409912312" at="44,33,45,39" concept="2" />
+      <node id="2113660467281529111" at="45,39,46,29" concept="2" />
+      <node id="2113660467281671779" at="46,29,47,41" concept="2" />
+      <node id="5678173081849666051" at="47,41,48,0" concept="9" />
+      <node id="5678173081849666742" at="48,0,49,86" concept="0" />
+      <node id="7650435763716707460" at="24,33,27,5" concept="4" />
+      <node id="7650435763716707468" at="27,5,30,5" concept="4" />
+      <node id="2742791848409854231" at="34,0,42,0" concept="5" trace="copyClone#()Ljava/util/Optional;" />
+      <node id="5017851247829736084" at="43,0,51,0" concept="1" trace="ModuleClonerFacade#(Ljetbrains/mps/project/MPSProject;Ljava/lang/String;Ljetbrains/mps/project/AbstractModule;Ljava/lang/String;)V" />
+      <node id="2742791848409846483" at="24,0,33,0" concept="5" trace="getExtension#()Ljava/lang/String;" />
+      <scope id="7650435763716707465" at="25,47,26,40" />
+      <scope id="7650435763716707473" at="28,47,29,40" />
+      <scope id="2742791848409854235" at="34,80,40,141">
+        <var name="moduleName" id="2113660467281233287" />
+        <var name="newModuleLoc" id="2113660467281185066" />
+        <var name="newModuleLocationFile" id="7435578985096777202" />
+      </scope>
+      <scope id="5017851247829736088" at="43,117,49,86" />
+      <scope id="2742791848409846487" at="24,33,31,16" />
+      <scope id="2742791848409854231" at="34,0,42,0" />
+      <scope id="5017851247829736084" at="43,0,51,0">
+        <var name="nameSuffix" id="5017851247829747401" />
+        <var name="origModule" id="5017851247829737399" />
+        <var name="project" id="5017851247829736739" />
+        <var name="virtualFolder" id="5017851247829737167" />
+      </scope>
+      <scope id="2742791848409846483" at="24,0,33,0" />
+      <unit id="5017851247829713058" at="17,0,52,0" name="org.iets3.variability.artifacts.baseline.plugin.ModuleClonerFacade" />
+    </file>
+  </root>
+  <root nodeRef="r:f2970992-e26d-4370-b625-3d51e8af7e7f(org.iets3.variability.artifacts.baseline.plugin)/5678173081850848102">
+    <file name="VariantBaselineUtil.java">
+      <node id="1063309962544304203" at="30,188,31,92" concept="8" />
+      <node id="1063309962544294521" at="31,92,32,18" concept="2" />
+      <node id="1063309962544305204" at="32,18,33,0" concept="9" />
+      <node id="1063309962544307413" at="33,0,34,19" concept="8" />
+      <node id="4512160021353838291" at="34,19,35,101" concept="6" />
+      <node id="4512160021353841391" at="35,101,36,69" concept="6" />
+      <node id="1063309962544308319" at="36,69,37,0" concept="9" />
+      <node id="1063309962544310018" at="37,0,38,31" concept="8" />
+      <node id="4512160021353841406" at="40,49,41,25" concept="2" />
+      <node id="4512160021353844959" at="43,7,44,24" concept="7" />
+      <node id="518501663140998846" at="47,73,48,51" concept="6" />
+      <node id="518501663141017909" at="48,51,49,36" concept="6" />
+      <node id="518501663141031059" at="49,36,50,158" concept="6" />
+      <node id="518501663141038017" at="50,158,51,0" concept="9" />
+      <node id="6466997425888121181" at="51,0,52,40" concept="8" />
+      <node id="518501663141040383" at="52,40,53,158" concept="0" />
+      <node id="518501663141088039" at="54,65,55,13" concept="7" />
+      <node id="518501663141100137" at="56,5,57,86" concept="6" />
+      <node id="3734590111316289540" at="57,86,58,181" concept="6" />
+      <node id="3734590111317641412" at="58,181,59,152" concept="0" />
+      <node id="6466997425888111999" at="59,152,60,0" concept="9" />
+      <node id="7425337578673829387" at="60,0,61,45" concept="2" />
+      <node id="1755550031129476983" at="61,45,62,0" concept="9" />
+      <node id="1755550031129486377" at="62,0,63,100" concept="2" />
+      <node id="9069065777945573965" at="66,85,67,173" concept="2" />
+      <node id="1535916728968756783" at="67,173,68,43" concept="2" />
+      <node id="5974686605659832230" at="71,75,72,56" concept="2" />
+      <node id="6199628439575469862" at="72,56,73,0" concept="9" />
+      <node id="5974686605659884048" at="73,0,74,39" concept="2" />
+      <node id="6466997425888034487" at="74,39,75,0" concept="9" />
+      <node id="5974686605659922169" at="75,0,76,47" concept="2" />
+      <node id="5974686605659995507" at="79,79,80,167" concept="2" />
+      <node id="5974686605659930926" at="83,71,84,167" concept="2" />
+      <node id="5974686605659832194" at="87,88,88,262" concept="2" />
+      <node id="5678173081850848102" at="92,0,93,0" concept="10" trace="VariantBaselineConfig$KI" />
+      <node id="5678173081850848102" at="93,0,94,0" concept="10" trace="IVariantBaselineConfigItem$SB" />
+      <node id="5678173081850848102" at="94,0,95,0" concept="10" trace="IVariabilityContainer$Cw" />
+      <node id="5678173081850848102" at="95,0,96,0" concept="10" trace="IVariabilityAwareArtifact$qo" />
+      <node id="5678173081850848102" at="99,0,100,0" concept="10" trace="items$dN3Z" />
+      <node id="4512160021353841402" at="40,0,43,0" concept="5" trace="accept#(Ljetbrains/mps/project/AbstractModule;)V" />
+      <node id="518501663141081815" at="53,158,56,5" concept="4" />
+      <node id="5974686605659922164" at="79,0,82,0" concept="11" trace="removeAnyVariantBaselineConfigs#(Ljava/util/List;)V" />
+      <node id="5974686605659884043" at="83,0,86,0" concept="11" trace="removeVariabilityModels#(Ljava/util/List;)V" />
+      <node id="5974686605659832225" at="87,0,90,0" concept="11" trace="removeRemainingVariabilityAwareArtifacts#(Ljava/util/List;)V" />
+      <node id="518501663141224289" at="66,0,70,0" concept="11" trace="filterVariability#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/List;)V" />
+      <node id="4512160021353841398" at="38,31,43,7" concept="2" />
+      <node id="7425337578673670688" at="71,0,78,0" concept="11" trace="removeUnconsideredArtifacts#(Ljava/util/List;)V" />
+      <node id="4512160021353836513" at="30,0,46,0" concept="11" trace="cloneThenFilter#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/project/MPSProject;Ljava/lang/String;Ljetbrains/mps/project/AbstractModule;Ljava/lang/String;)Ljava/util/Optional;" />
+      <node id="5678173081850856366" at="47,0,65,0" concept="11" trace="run#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/project/AbstractModule;)V" />
+      <scope id="4512160021353841405" at="40,49,41,25" />
+      <scope id="518501663141081817" at="54,65,55,13" />
+      <scope id="5974686605659922132" at="79,79,80,167" />
+      <scope id="5974686605659884001" at="83,71,84,167" />
+      <scope id="5974686605659832193" at="87,88,88,262" />
+      <scope id="518501663141224295" at="66,85,68,43" />
+      <scope id="4512160021353841402" at="40,0,43,0">
+        <var name="module" id="4512160021353841402" />
+      </scope>
+      <scope id="5974686605659922164" at="79,0,82,0">
+        <var name="allModels" id="5974686605659922156" />
+      </scope>
+      <scope id="5974686605659884043" at="83,0,86,0">
+        <var name="allModels" id="5974686605659884037" />
+      </scope>
+      <scope id="5974686605659832225" at="87,0,90,0">
+        <var name="allModels" id="5974686605659832219" />
+      </scope>
+      <scope id="518501663141224289" at="66,0,70,0">
+        <var name="allModels" id="3798926886625871882" />
+        <var name="baselineItem" id="518501663141224291" />
+      </scope>
+      <scope id="7425337578673670598" at="71,75,76,47" />
+      <scope id="7425337578673670688" at="71,0,78,0">
+        <var name="allModels" id="7425337578673670680" />
+      </scope>
+      <scope id="4512160021353836521" at="30,188,44,24">
+        <var name="clonedModule" id="4512160021353841392" />
+        <var name="moduleCloner" id="4512160021353838292" />
+      </scope>
+      <scope id="4512160021353836513" at="30,0,46,0">
+        <var name="hpi" id="7425337578673805812" />
+        <var name="module" id="4512160021353836914" />
+        <var name="project" id="4512160021353836515" />
+        <var name="suffix" id="4512160021353836983" />
+        <var name="virtualFolder" id="4512160021353836517" />
+      </scope>
+      <scope id="5678173081850856372" at="47,73,63,100">
+        <var name="allModels" id="518501663141017910" />
+        <var name="hpiInClone" id="3734590111316289541" />
+        <var name="hundredPercentConfig" id="518501663141100138" />
+        <var name="hundredPercentConfigs" id="518501663141031060" />
+        <var name="models" id="518501663140998847" />
+      </scope>
+      <scope id="5678173081850856366" at="47,0,65,0">
+        <var name="clonedModule" id="5678173081850856368" />
+        <var name="hpi" id="7425337578673821357" />
+      </scope>
+      <unit id="5678173081850848102" at="98,0,101,0" name="org.iets3.variability.artifacts.baseline.plugin.VariantBaselineUtil$LINKS" />
+      <unit id="4512160021353841402" at="39,31,43,5" name="org.iets3.variability.artifacts.baseline.plugin.VariantBaselineUtil$1" />
+      <unit id="5678173081850848102" at="91,0,97,0" name="org.iets3.variability.artifacts.baseline.plugin.VariantBaselineUtil$CONCEPTS" />
+      <unit id="5678173081850848102" at="28,0,102,0" name="org.iets3.variability.artifacts.baseline.plugin.VariantBaselineUtil" />
+    </file>
+  </root>
+</debug-info>
+

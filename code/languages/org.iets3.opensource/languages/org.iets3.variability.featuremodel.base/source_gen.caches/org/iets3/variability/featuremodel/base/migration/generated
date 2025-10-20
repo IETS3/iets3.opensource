@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="adlyir7x2ymtqrlqjh2qdgp5sy4aoua">
+  <files names="AddAssignmentType.java:AddNameToFeatureModel.java:FMCHash.java:FMHashInConfig.java:FeatureDecTabContent2VarPoint.java:Migrate_MoveConcept_13.java:Migrate_MoveConceptsAndDataTypes_12.java:Migrate_MoveConceptsAndDataTypes_23.java:Migrate_MoveConcepts_14.java:Migrate_MoveConcepts_22.java:MigrationDescriptor.java:RemoveAutoset.java:UpdateConfigurationHash.java:XORMandatoryInternalFalse.java:remove_autoComplete.java:remove_migrated_fmc.java:remove_showHorizontal_FM.java:remove_upperbound_old.java" />
+</product>
+

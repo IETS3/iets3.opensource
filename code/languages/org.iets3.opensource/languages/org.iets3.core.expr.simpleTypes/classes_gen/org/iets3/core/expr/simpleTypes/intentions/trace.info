@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="18,0,112,0" name="org.iets3.core.expr.simpleTypes.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/3209299898989139551">
+    <file name="IntentionsDescriptor.java">
+      <node id="3209299898989139551" at="51,47,52,70" concept="2" />
+      <node id="3209299898989139551" at="98,36,99,56" concept="2" />
+    </file>
+    <file name="wrapWithPrecisionConversion_Intention.java">
+      <node id="3209299898989139551" at="30,0,31,0" concept="3" trace="myCachedExecutable" />
+      <node id="3209299898989139551" at="32,50,33,157" concept="11" />
+      <node id="3209299898989139551" at="37,35,38,41" concept="7" />
+      <node id="3209299898989139551" at="42,35,43,17" concept="7" />
+      <node id="3209299898989139551" at="47,37,48,105" concept="2" />
+      <node id="3209299898989139551" at="49,5,50,30" concept="7" />
+      <node id="3209299898989139553" at="57,87,58,70" concept="7" />
+      <node id="3209299898989176196" at="62,78,63,223" concept="6" />
+      <node id="3209299898989176290" at="63,223,64,86" concept="2" />
+      <node id="3209299898989182603" at="64,86,65,69" concept="2" />
+      <node id="3209299898989181091" at="65,69,66,52" concept="2" />
+      <node id="3209299898989189080" at="66,52,67,133" concept="2" />
+      <node id="3209299898989139551" at="72,55,73,21" concept="7" />
+      <node id="3209299898989139551" at="74,7,75,18" concept="7" />
+      <node id="3209299898989140120" at="78,93,79,290" concept="7" />
+      <node id="3209299898989139551" at="84,48,85,56" concept="7" />
+      <node id="3209299898989139551" at="91,0,92,0" concept="9" trace="expr$CW3E" />
+      <node id="3209299898989139551" at="95,0,96,0" concept="9" trace="targetPrecision$Fj_c" />
+      <node id="3209299898989139551" at="99,0,100,0" concept="9" trace="NumberType$n" />
+      <node id="3209299898989139551" at="53,0,55,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="3209299898989139551" at="32,0,35,0" concept="1" trace="wrapWithPrecisionConversion_Intention#()V" />
+      <node id="3209299898989139551" at="46,99,49,5" concept="4" />
+      <node id="3209299898989139551" at="71,86,74,7" concept="4" />
+      <node id="3209299898989139551" at="78,0,81,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3209299898989139551" at="36,0,40,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="3209299898989139551" at="41,0,45,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="3209299898989139551" at="56,0,60,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="3209299898989139551" at="83,0,87,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="3209299898989139551" at="46,0,52,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="3209299898989139551" at="70,0,77,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3209299898989139551" at="61,0,69,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="3209299898989139551" at="53,38,53,38" />
+      <scope id="3209299898989139551" at="32,50,33,157" />
+      <scope id="3209299898989139551" at="37,35,38,41" />
+      <scope id="3209299898989139551" at="42,35,43,17" />
+      <scope id="3209299898989139551" at="47,37,48,105" />
+      <scope id="3209299898989139553" at="57,87,58,70" />
+      <scope id="3209299898989139551" at="72,55,73,21" />
+      <scope id="3209299898989169636" at="78,93,79,290" />
+      <scope id="3209299898989139551" at="84,48,85,56" />
+      <scope id="3209299898989139551" at="53,0,55,0" />
+      <scope id="3209299898989139551" at="32,0,35,0" />
+      <scope id="3209299898989139551" at="78,0,81,0">
+        <var name="editorContext" id="3209299898989139551" />
+        <var name="node" id="3209299898989139551" />
+      </scope>
+      <scope id="3209299898989139551" at="36,0,40,0" />
+      <scope id="3209299898989139551" at="41,0,45,0" />
+      <scope id="3209299898989139551" at="46,99,50,30" />
+      <scope id="3209299898989139551" at="56,0,60,0">
+        <var name="editorContext" id="3209299898989139551" />
+        <var name="node" id="3209299898989139551" />
+      </scope>
+      <scope id="3209299898989139551" at="71,86,75,18" />
+      <scope id="3209299898989139551" at="83,0,87,0" />
+      <scope id="3209299898989139555" at="62,78,67,133">
+        <var name="res" id="3209299898989176197" />
+      </scope>
+      <scope id="3209299898989139551" at="46,0,52,0">
+        <var name="context" id="3209299898989139551" />
+        <var name="node" id="3209299898989139551" />
+      </scope>
+      <scope id="3209299898989139551" at="70,0,77,0">
+        <var name="editorContext" id="3209299898989139551" />
+        <var name="node" id="3209299898989139551" />
+      </scope>
+      <scope id="3209299898989139551" at="61,0,69,0">
+        <var name="editorContext" id="3209299898989139551" />
+        <var name="node" id="3209299898989139551" />
+      </scope>
+      <unit id="3209299898989139551" at="90,0,93,0" name="org.iets3.core.expr.simpleTypes.intentions.wrapWithPrecisionConversion_Intention$LINKS" />
+      <unit id="3209299898989139551" at="94,0,97,0" name="org.iets3.core.expr.simpleTypes.intentions.wrapWithPrecisionConversion_Intention$PROPS" />
+      <unit id="3209299898989139551" at="98,0,101,0" name="org.iets3.core.expr.simpleTypes.intentions.wrapWithPrecisionConversion_Intention$CONCEPTS" />
+      <unit id="3209299898989139551" at="52,0,89,0" name="org.iets3.core.expr.simpleTypes.intentions.wrapWithPrecisionConversion_Intention$IntentionImplementation" />
+      <unit id="3209299898989139551" at="29,0,102,0" name="org.iets3.core.expr.simpleTypes.intentions.wrapWithPrecisionConversion_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/3220811986924913313">
+    <file name="IntentionsDescriptor.java">
+      <node id="3220811986924913313" at="72,47,73,59" concept="2" />
+      <node id="3220811986924913313" at="102,41,103,45" concept="2" />
+    </file>
+    <file name="toggleExcludeMin_Intention.java">
+      <node id="3220811986924913313" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
+      <node id="3220811986924913313" at="23,39,24,157" concept="11" />
+      <node id="3220811986924913313" at="28,35,29,30" concept="7" />
+      <node id="3220811986924913313" at="33,35,34,17" concept="7" />
+      <node id="3220811986924913313" at="38,37,39,105" concept="2" />
+      <node id="3220811986924913313" at="40,5,41,30" concept="7" />
+      <node id="3220811986925030324" at="48,87,49,122" concept="7" />
+      <node id="3220811986925039039" at="53,78,54,126" concept="2" />
+      <node id="3220811986924913313" at="58,86,59,18" concept="7" />
+      <node id="3220811986924913313" at="65,48,66,45" concept="7" />
+      <node id="3220811986924913313" at="72,0,73,0" concept="9" trace="excludeMin$z1dD" />
+      <node id="3220811986924913313" at="44,0,46,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="3220811986924913313" at="23,0,26,0" concept="1" trace="toggleExcludeMin_Intention#()V" />
+      <node id="3220811986924913313" at="37,99,40,5" concept="4" />
+      <node id="3220811986924913313" at="27,0,31,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="3220811986924913313" at="32,0,36,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="3220811986924913313" at="47,0,51,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="3220811986924913313" at="52,0,56,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3220811986924913313" at="57,0,61,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3220811986924913313" at="64,0,68,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="3220811986924913313" at="37,0,43,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <scope id="3220811986924913313" at="44,38,44,38" />
+      <scope id="3220811986924913313" at="23,39,24,157" />
+      <scope id="3220811986924913313" at="28,35,29,30" />
+      <scope id="3220811986924913313" at="33,35,34,17" />
+      <scope id="3220811986924913313" at="38,37,39,105" />
+      <scope id="3220811986924913315" at="48,87,49,122" />
+      <scope id="3220811986924913317" at="53,78,54,126" />
+      <scope id="3220811986924913313" at="58,86,59,18" />
+      <scope id="3220811986924913313" at="65,48,66,45" />
+      <scope id="3220811986924913313" at="44,0,46,0" />
+      <scope id="3220811986924913313" at="23,0,26,0" />
+      <scope id="3220811986924913313" at="27,0,31,0" />
+      <scope id="3220811986924913313" at="32,0,36,0" />
+      <scope id="3220811986924913313" at="37,99,41,30" />
+      <scope id="3220811986924913313" at="47,0,51,0">
+        <var name="editorContext" id="3220811986924913313" />
+        <var name="node" id="3220811986924913313" />
+      </scope>
+      <scope id="3220811986924913313" at="52,0,56,0">
+        <var name="editorContext" id="3220811986924913313" />
+        <var name="node" id="3220811986924913313" />
+      </scope>
+      <scope id="3220811986924913313" at="57,0,61,0">
+        <var name="editorContext" id="3220811986924913313" />
+        <var name="node" id="3220811986924913313" />
+      </scope>
+      <scope id="3220811986924913313" at="64,0,68,0" />
+      <scope id="3220811986924913313" at="37,0,43,0">
+        <var name="context" id="3220811986924913313" />
+        <var name="node" id="3220811986924913313" />
+      </scope>
+      <unit id="3220811986924913313" at="71,0,74,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleExcludeMin_Intention$PROPS" />
+      <unit id="3220811986924913313" at="43,0,70,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleExcludeMin_Intention$IntentionImplementation" />
+      <unit id="3220811986924913313" at="20,0,75,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleExcludeMin_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/3220811986925040968">
+    <file name="IntentionsDescriptor.java">
+      <node id="3220811986925040968" at="73,59,74,59" concept="2" />
+      <node id="3220811986925040968" at="103,45,104,45" concept="2" />
+    </file>
+    <file name="toggleExcludeMax_Intention.java">
+      <node id="3220811986925040968" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
+      <node id="3220811986925040968" at="23,39,24,157" concept="11" />
+      <node id="3220811986925040968" at="28,35,29,30" concept="7" />
+      <node id="3220811986925040968" at="33,35,34,17" concept="7" />
+      <node id="3220811986925040968" at="38,37,39,105" concept="2" />
+      <node id="3220811986925040968" at="40,5,41,30" concept="7" />
+      <node id="3220811986925040971" at="48,87,49,122" concept="7" />
+      <node id="3220811986925040983" at="53,78,54,126" concept="2" />
+      <node id="3220811986925040968" at="58,86,59,18" concept="7" />
+      <node id="3220811986925040968" at="65,48,66,45" concept="7" />
+      <node id="3220811986925040968" at="72,0,73,0" concept="9" trace="excludeMax$cVA4" />
+      <node id="3220811986925040968" at="44,0,46,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="3220811986925040968" at="23,0,26,0" concept="1" trace="toggleExcludeMax_Intention#()V" />
+      <node id="3220811986925040968" at="37,99,40,5" concept="4" />
+      <node id="3220811986925040968" at="27,0,31,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="3220811986925040968" at="32,0,36,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="3220811986925040968" at="47,0,51,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="3220811986925040968" at="52,0,56,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3220811986925040968" at="57,0,61,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3220811986925040968" at="64,0,68,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="3220811986925040968" at="37,0,43,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <scope id="3220811986925040968" at="44,38,44,38" />
+      <scope id="3220811986925040968" at="23,39,24,157" />
+      <scope id="3220811986925040968" at="28,35,29,30" />
+      <scope id="3220811986925040968" at="33,35,34,17" />
+      <scope id="3220811986925040968" at="38,37,39,105" />
+      <scope id="3220811986925040970" at="48,87,49,122" />
+      <scope id="3220811986925040982" at="53,78,54,126" />
+      <scope id="3220811986925040968" at="58,86,59,18" />
+      <scope id="3220811986925040968" at="65,48,66,45" />
+      <scope id="3220811986925040968" at="44,0,46,0" />
+      <scope id="3220811986925040968" at="23,0,26,0" />
+      <scope id="3220811986925040968" at="27,0,31,0" />
+      <scope id="3220811986925040968" at="32,0,36,0" />
+      <scope id="3220811986925040968" at="37,99,41,30" />
+      <scope id="3220811986925040968" at="47,0,51,0">
+        <var name="editorContext" id="3220811986925040968" />
+        <var name="node" id="3220811986925040968" />
+      </scope>
+      <scope id="3220811986925040968" at="52,0,56,0">
+        <var name="editorContext" id="3220811986925040968" />
+        <var name="node" id="3220811986925040968" />
+      </scope>
+      <scope id="3220811986925040968" at="57,0,61,0">
+        <var name="editorContext" id="3220811986925040968" />
+        <var name="node" id="3220811986925040968" />
+      </scope>
+      <scope id="3220811986925040968" at="64,0,68,0" />
+      <scope id="3220811986925040968" at="37,0,43,0">
+        <var name="context" id="3220811986925040968" />
+        <var name="node" id="3220811986925040968" />
+      </scope>
+      <unit id="3220811986925040968" at="71,0,74,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleExcludeMax_Intention$PROPS" />
+      <unit id="3220811986925040968" at="43,0,70,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleExcludeMax_Intention$IntentionImplementation" />
+      <unit id="3220811986925040968" at="20,0,75,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleExcludeMax_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/3314379818047315216">
+    <file name="IntentionsDescriptor.java">
+      <node id="3314379818047315216" at="82,47,83,51" concept="2" />
+      <node id="3314379818047315216" at="96,53,97,37" concept="2" />
+    </file>
+    <file name="addRange_Intention.java">
+      <node id="3314379818047315216" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
+      <node id="3314379818047315216" at="23,31,24,157" concept="11" />
+      <node id="3314379818047315216" at="28,35,29,22" concept="7" />
+      <node id="3314379818047315216" at="33,35,34,17" concept="7" />
+      <node id="3314379818047315216" at="38,37,39,105" concept="2" />
+      <node id="3314379818047315216" at="40,5,41,30" concept="7" />
+      <node id="3314379818047321454" at="48,87,49,25" concept="7" />
+      <node id="3314379818047331541" at="53,78,54,64" concept="2" />
+      <node id="3314379818047315216" at="59,55,60,21" concept="7" />
+      <node id="3314379818047315216" at="61,7,62,18" concept="7" />
+      <node id="3314379818047322469" at="65,93,66,71" concept="7" />
+      <node id="3314379818047315216" at="71,48,72,37" concept="7" />
+      <node id="3314379818047315216" at="78,0,79,0" concept="9" trace="range$RnOa" />
+      <node id="3314379818047315216" at="44,0,46,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="3314379818047315216" at="23,0,26,0" concept="1" trace="addRange_Intention#()V" />
+      <node id="3314379818047315216" at="37,99,40,5" concept="4" />
+      <node id="3314379818047315216" at="58,86,61,7" concept="4" />
+      <node id="3314379818047315216" at="65,0,68,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3314379818047315216" at="27,0,31,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="3314379818047315216" at="32,0,36,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="3314379818047315216" at="47,0,51,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="3314379818047315216" at="52,0,56,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3314379818047315216" at="70,0,74,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="3314379818047315216" at="37,0,43,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="3314379818047315216" at="57,0,64,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <scope id="3314379818047315216" at="44,38,44,38" />
+      <scope id="3314379818047315216" at="23,31,24,157" />
+      <scope id="3314379818047315216" at="28,35,29,22" />
+      <scope id="3314379818047315216" at="33,35,34,17" />
+      <scope id="3314379818047315216" at="38,37,39,105" />
+      <scope id="3314379818047315218" at="48,87,49,25" />
+      <scope id="3314379818047315220" at="53,78,54,64" />
+      <scope id="3314379818047315216" at="59,55,60,21" />
+      <scope id="3314379818047322007" at="65,93,66,71" />
+      <scope id="3314379818047315216" at="71,48,72,37" />
+      <scope id="3314379818047315216" at="44,0,46,0" />
+      <scope id="3314379818047315216" at="23,0,26,0" />
+      <scope id="3314379818047315216" at="65,0,68,0">
+        <var name="editorContext" id="3314379818047315216" />
+        <var name="node" id="3314379818047315216" />
+      </scope>
+      <scope id="3314379818047315216" at="27,0,31,0" />
+      <scope id="3314379818047315216" at="32,0,36,0" />
+      <scope id="3314379818047315216" at="37,99,41,30" />
+      <scope id="3314379818047315216" at="47,0,51,0">
+        <var name="editorContext" id="3314379818047315216" />
+        <var name="node" id="3314379818047315216" />
+      </scope>
+      <scope id="3314379818047315216" at="52,0,56,0">
+        <var name="editorContext" id="3314379818047315216" />
+        <var name="node" id="3314379818047315216" />
+      </scope>
+      <scope id="3314379818047315216" at="58,86,62,18" />
+      <scope id="3314379818047315216" at="70,0,74,0" />
+      <scope id="3314379818047315216" at="37,0,43,0">
+        <var name="context" id="3314379818047315216" />
+        <var name="node" id="3314379818047315216" />
+      </scope>
+      <scope id="3314379818047315216" at="57,0,64,0">
+        <var name="editorContext" id="3314379818047315216" />
+        <var name="node" id="3314379818047315216" />
+      </scope>
+      <unit id="3314379818047315216" at="77,0,80,0" name="org.iets3.core.expr.simpleTypes.intentions.addRange_Intention$LINKS" />
+      <unit id="3314379818047315216" at="43,0,76,0" name="org.iets3.core.expr.simpleTypes.intentions.addRange_Intention$IntentionImplementation" />
+      <unit id="3314379818047315216" at="20,0,81,0" name="org.iets3.core.expr.simpleTypes.intentions.addRange_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/3314379818047334427">
+    <file name="IntentionsDescriptor.java">
+      <node id="3314379818047334427" at="83,51,84,50" concept="2" />
+      <node id="3314379818047334427" at="97,37,98,36" concept="2" />
+    </file>
+    <file name="addPrec_Intention.java">
+      <node id="3314379818047334427" at="23,0,24,0" concept="3" trace="myCachedExecutable" />
+      <node id="3314379818047334427" at="25,30,26,157" concept="11" />
+      <node id="3314379818047334427" at="30,35,31,21" concept="7" />
+      <node id="3314379818047334427" at="35,35,36,17" concept="7" />
+      <node id="3314379818047334427" at="40,37,41,105" concept="2" />
+      <node id="3314379818047334427" at="42,5,43,30" concept="7" />
+      <node id="3314379818047335028" at="50,87,51,29" concept="7" />
+      <node id="3314379818047346297" at="55,78,56,73" concept="6" />
+      <node id="9154139946169952820" at="56,73,57,89" concept="2" />
+      <node id="9154139946169949478" at="58,108,59,178" concept="2" />
+      <node id="3314379818047334427" at="65,55,66,21" concept="7" />
+      <node id="3314379818047334427" at="67,7,68,18" concept="7" />
+      <node id="3314379818047338215" at="71,93,72,70" concept="7" />
+      <node id="3314379818047334427" at="77,48,78,36" concept="7" />
+      <node id="3314379818047334427" at="84,0,85,0" concept="9" trace="prec$RwIK" />
+      <node id="3314379818047334427" at="46,0,48,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="3314379818047334427" at="25,0,28,0" concept="1" trace="addPrec_Intention#()V" />
+      <node id="3314379818047334427" at="39,99,42,5" concept="4" />
+      <node id="3314379818047360498" at="57,89,60,7" concept="4" />
+      <node id="3314379818047334427" at="64,86,67,7" concept="4" />
+      <node id="3314379818047334427" at="71,0,74,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3314379818047334427" at="29,0,33,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="3314379818047334427" at="34,0,38,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="3314379818047334427" at="49,0,53,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="3314379818047334427" at="76,0,80,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="3314379818047334427" at="39,0,45,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="3314379818047334427" at="63,0,70,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3314379818047334427" at="54,0,62,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="3314379818047334427" at="46,38,46,38" />
+      <scope id="3314379818047334427" at="25,30,26,157" />
+      <scope id="3314379818047334427" at="30,35,31,21" />
+      <scope id="3314379818047334427" at="35,35,36,17" />
+      <scope id="3314379818047334427" at="40,37,41,105" />
+      <scope id="3314379818047334429" at="50,87,51,29" />
+      <scope id="3314379818047360500" at="58,108,59,178" />
+      <scope id="3314379818047334427" at="65,55,66,21" />
+      <scope id="3314379818047337753" at="71,93,72,70" />
+      <scope id="3314379818047334427" at="77,48,78,36" />
+      <scope id="3314379818047334427" at="46,0,48,0" />
+      <scope id="3314379818047334427" at="25,0,28,0" />
+      <scope id="3314379818047334427" at="71,0,74,0">
+        <var name="editorContext" id="3314379818047334427" />
+        <var name="node" id="3314379818047334427" />
+      </scope>
+      <scope id="3314379818047334427" at="29,0,33,0" />
+      <scope id="3314379818047334427" at="34,0,38,0" />
+      <scope id="3314379818047334427" at="39,99,43,30" />
+      <scope id="3314379818047334427" at="49,0,53,0">
+        <var name="editorContext" id="3314379818047334427" />
+        <var name="node" id="3314379818047334427" />
+      </scope>
+      <scope id="3314379818047334427" at="64,86,68,18" />
+      <scope id="3314379818047334427" at="76,0,80,0" />
+      <scope id="3314379818047334431" at="55,78,60,7">
+        <var name="p" id="3314379818047346298" />
+      </scope>
+      <scope id="3314379818047334427" at="39,0,45,0">
+        <var name="context" id="3314379818047334427" />
+        <var name="node" id="3314379818047334427" />
+      </scope>
+      <scope id="3314379818047334427" at="63,0,70,0">
+        <var name="editorContext" id="3314379818047334427" />
+        <var name="node" id="3314379818047334427" />
+      </scope>
+      <scope id="3314379818047334427" at="54,0,62,0">
+        <var name="editorContext" id="3314379818047334427" />
+        <var name="node" id="3314379818047334427" />
+      </scope>
+      <unit id="3314379818047334427" at="83,0,86,0" name="org.iets3.core.expr.simpleTypes.intentions.addPrec_Intention$LINKS" />
+      <unit id="3314379818047334427" at="45,0,82,0" name="org.iets3.core.expr.simpleTypes.intentions.addPrec_Intention$IntentionImplementation" />
+      <unit id="3314379818047334427" at="22,0,87,0" name="org.iets3.core.expr.simpleTypes.intentions.addPrec_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/4095553279640250754">
+    <file name="IntentionsDescriptor.java">
+      <node id="4095553279640250754" at="44,47,45,60" concept="2" />
+      <node id="4095553279640250754" at="99,56,100,46" concept="2" />
+    </file>
+    <file name="makeLimitFromCast_Intention.java">
+      <node id="4095553279640250754" at="23,0,24,0" concept="3" trace="myCachedExecutable" />
+      <node id="4095553279640250754" at="25,40,26,156" concept="11" />
+      <node id="4095553279640250754" at="30,35,31,31" concept="7" />
+      <node id="4095553279640250754" at="35,35,36,17" concept="7" />
+      <node id="4095553279640250754" at="40,37,41,105" concept="2" />
+      <node id="4095553279640250754" at="42,5,43,30" concept="7" />
+      <node id="4095553279640250756" at="50,87,51,59" concept="7" />
+      <node id="4095553279640258869" at="55,78,56,205" concept="6" />
+      <node id="4095553279640260560" at="56,205,57,111" concept="2" />
+      <node id="4095553279640266443" at="57,111,58,103" concept="2" />
+      <node id="4095553279640259068" at="58,103,59,51" concept="2" />
+      <node id="4095553279640250754" at="63,86,64,18" concept="7" />
+      <node id="4095553279640250754" at="70,48,71,46" concept="7" />
+      <node id="4095553279640250754" at="77,0,78,0" concept="9" trace="type$EhVN" />
+      <node id="4095553279640250754" at="78,0,79,0" concept="9" trace="expectedType$SdFI" />
+      <node id="4095553279640250754" at="79,0,80,0" concept="9" trace="expr$CW3E" />
+      <node id="4095553279640250754" at="46,0,48,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="4095553279640250754" at="25,0,28,0" concept="1" trace="makeLimitFromCast_Intention#()V" />
+      <node id="4095553279640250754" at="39,99,42,5" concept="4" />
+      <node id="4095553279640250754" at="29,0,33,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="4095553279640250754" at="34,0,38,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="4095553279640250754" at="49,0,53,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="4095553279640250754" at="62,0,66,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="4095553279640250754" at="69,0,73,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="4095553279640250754" at="39,0,45,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="4095553279640250754" at="54,0,61,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="4095553279640250754" at="46,38,46,38" />
+      <scope id="4095553279640250754" at="25,40,26,156" />
+      <scope id="4095553279640250754" at="30,35,31,31" />
+      <scope id="4095553279640250754" at="35,35,36,17" />
+      <scope id="4095553279640250754" at="40,37,41,105" />
+      <scope id="4095553279640250756" at="50,87,51,59" />
+      <scope id="4095553279640250754" at="63,86,64,18" />
+      <scope id="4095553279640250754" at="70,48,71,46" />
+      <scope id="4095553279640250754" at="46,0,48,0" />
+      <scope id="4095553279640250754" at="25,0,28,0" />
+      <scope id="4095553279640250754" at="29,0,33,0" />
+      <scope id="4095553279640250754" at="34,0,38,0" />
+      <scope id="4095553279640250754" at="39,99,43,30" />
+      <scope id="4095553279640250754" at="49,0,53,0">
+        <var name="editorContext" id="4095553279640250754" />
+        <var name="node" id="4095553279640250754" />
+      </scope>
+      <scope id="4095553279640250758" at="55,78,59,51">
+        <var name="le" id="4095553279640258870" />
+      </scope>
+      <scope id="4095553279640250754" at="62,0,66,0">
+        <var name="editorContext" id="4095553279640250754" />
+        <var name="node" id="4095553279640250754" />
+      </scope>
+      <scope id="4095553279640250754" at="69,0,73,0" />
+      <scope id="4095553279640250754" at="39,0,45,0">
+        <var name="context" id="4095553279640250754" />
+        <var name="node" id="4095553279640250754" />
+      </scope>
+      <scope id="4095553279640250754" at="54,0,61,0">
+        <var name="editorContext" id="4095553279640250754" />
+        <var name="node" id="4095553279640250754" />
+      </scope>
+      <unit id="4095553279640250754" at="76,0,81,0" name="org.iets3.core.expr.simpleTypes.intentions.makeLimitFromCast_Intention$LINKS" />
+      <unit id="4095553279640250754" at="45,0,75,0" name="org.iets3.core.expr.simpleTypes.intentions.makeLimitFromCast_Intention$IntentionImplementation" />
+      <unit id="4095553279640250754" at="22,0,82,0" name="org.iets3.core.expr.simpleTypes.intentions.makeLimitFromCast_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/7023368003705196013">
+    <file name="IntentionsDescriptor.java">
+      <node id="7023368003705196013" at="65,47,66,63" concept="2" />
+      <node id="7023368003705196013" at="104,45,105,49" concept="2" />
+    </file>
+    <file name="toggleNumberHexValue_Intention.java">
+      <node id="7023368003705196013" at="24,0,25,0" concept="3" trace="myCachedExecutable" />
+      <node id="7023368003705196013" at="26,43,27,157" concept="11" />
+      <node id="7023368003705196013" at="31,35,32,34" concept="7" />
+      <node id="7023368003705196013" at="36,35,37,17" concept="7" />
+      <node id="7023368003705196013" at="41,37,42,105" concept="2" />
+      <node id="7023368003705196013" at="43,5,44,30" concept="7" />
+      <node id="7023368003705196489" at="51,87,52,182" concept="7" />
+      <node id="7023368003705217148" at="56,78,57,159" concept="2" />
+      <node id="7023368003705196013" at="62,55,63,21" concept="7" />
+      <node id="7023368003705196013" at="64,7,65,18" concept="7" />
+      <node id="9000050491918247589" at="69,56,70,21" concept="7" />
+      <node id="9000050491918247025" at="71,7,72,0" concept="8" />
+      <node id="7023368003705707337" at="73,117,74,20" concept="7" />
+      <node id="7023368003705707352" at="75,7,76,0" concept="8" />
+      <node id="7023368003705707606" at="76,0,77,92" concept="7" />
+      <node id="7023368003705196013" at="82,48,83,49" concept="7" />
+      <node id="7023368003705196013" at="89,0,90,0" concept="9" trace="value$iWTK" />
+      <node id="7023368003705196013" at="47,0,49,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="7023368003705196013" at="26,0,29,0" concept="1" trace="toggleNumberHexValue_Intention#()V" />
+      <node id="7023368003705196013" at="40,99,43,5" concept="4" />
+      <node id="7023368003705196013" at="61,86,64,7" concept="4" />
+      <node id="9000050491918247146" at="68,93,71,7" concept="4" />
+      <node id="7023368003705705266" at="72,0,75,7" concept="4" />
+      <node id="7023368003705196013" at="30,0,34,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="7023368003705196013" at="35,0,39,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="7023368003705196013" at="50,0,54,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="7023368003705196013" at="55,0,59,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="7023368003705196013" at="81,0,85,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="7023368003705196013" at="40,0,46,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="7023368003705196013" at="60,0,67,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="7023368003705196013" at="68,0,79,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <scope id="7023368003705196013" at="47,38,47,38" />
+      <scope id="7023368003705196013" at="26,43,27,157" />
+      <scope id="7023368003705196013" at="31,35,32,34" />
+      <scope id="7023368003705196013" at="36,35,37,17" />
+      <scope id="7023368003705196013" at="41,37,42,105" />
+      <scope id="7023368003705196015" at="51,87,52,182" />
+      <scope id="7023368003705196017" at="56,78,57,159" />
+      <scope id="7023368003705196013" at="62,55,63,21" />
+      <scope id="9000050491918247148" at="69,56,70,21" />
+      <scope id="7023368003705705268" at="73,117,74,20" />
+      <scope id="7023368003705196013" at="82,48,83,49" />
+      <scope id="7023368003705196013" at="47,0,49,0" />
+      <scope id="7023368003705196013" at="26,0,29,0" />
+      <scope id="7023368003705196013" at="30,0,34,0" />
+      <scope id="7023368003705196013" at="35,0,39,0" />
+      <scope id="7023368003705196013" at="40,99,44,30" />
+      <scope id="7023368003705196013" at="50,0,54,0">
+        <var name="editorContext" id="7023368003705196013" />
+        <var name="node" id="7023368003705196013" />
+      </scope>
+      <scope id="7023368003705196013" at="55,0,59,0">
+        <var name="editorContext" id="7023368003705196013" />
+        <var name="node" id="7023368003705196013" />
+      </scope>
+      <scope id="7023368003705196013" at="61,86,65,18" />
+      <scope id="7023368003705196013" at="81,0,85,0" />
+      <scope id="7023368003705196013" at="40,0,46,0">
+        <var name="context" id="7023368003705196013" />
+        <var name="node" id="7023368003705196013" />
+      </scope>
+      <scope id="7023368003705196013" at="60,0,67,0">
+        <var name="editorContext" id="7023368003705196013" />
+        <var name="node" id="7023368003705196013" />
+      </scope>
+      <scope id="7023368003705703324" at="68,93,77,92" />
+      <scope id="7023368003705196013" at="68,0,79,0">
+        <var name="editorContext" id="7023368003705196013" />
+        <var name="node" id="7023368003705196013" />
+      </scope>
+      <unit id="7023368003705196013" at="88,0,91,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberHexValue_Intention$PROPS" />
+      <unit id="7023368003705196013" at="46,0,87,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberHexValue_Intention$IntentionImplementation" />
+      <unit id="7023368003705196013" at="23,0,92,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberHexValue_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/7023368003706206137">
+    <file name="IntentionsDescriptor.java">
+      <node id="7023368003706206137" at="74,59,75,71" concept="2" />
+      <node id="7023368003706206137" at="105,49,106,57" concept="2" />
+    </file>
+    <file name="toggleNumberRangeHexMinValue_Intention.java">
+      <node id="7023368003706206137" at="26,0,27,0" concept="3" trace="myCachedExecutable" />
+      <node id="7023368003706206137" at="28,51,29,157" concept="11" />
+      <node id="7023368003706206137" at="33,35,34,42" concept="7" />
+      <node id="7023368003706206137" at="38,35,39,17" concept="7" />
+      <node id="7023368003706206137" at="43,37,44,105" concept="2" />
+      <node id="7023368003706206137" at="45,5,46,30" concept="7" />
+      <node id="7023368003706212643" at="53,87,54,196" concept="7" />
+      <node id="7023368003706242306" at="58,78,59,155" concept="2" />
+      <node id="7023368003706206137" at="64,55,65,21" concept="7" />
+      <node id="7023368003706206137" at="66,7,67,18" concept="7" />
+      <node id="784020141328126756" at="71,56,72,21" concept="7" />
+      <node id="784020141328126658" at="73,7,74,0" concept="8" />
+      <node id="7023368003706216022" at="75,115,76,20" concept="7" />
+      <node id="7023368003706216027" at="77,7,78,0" concept="8" />
+      <node id="7023368003706218493" at="78,0,79,173" concept="7" />
+      <node id="7023368003706206137" at="84,48,85,57" concept="7" />
+      <node id="7023368003706225500" at="89,68,90,73" concept="6" />
+      <node id="7023368003706225500" at="90,73,91,41" concept="2" />
+      <node id="7023368003706225500" at="91,41,92,26" concept="7" />
+      <node id="7023368003706206137" at="96,0,97,0" concept="9" trace="min$7OOG" />
+      <node id="7023368003706206137" at="97,0,98,0" concept="9" trace="value$iWTK" />
+      <node id="7023368003706206137" at="101,0,102,0" concept="9" trace="NumberLiteral$wE" />
+      <node id="7023368003706206137" at="49,0,51,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="7023368003706206137" at="28,0,31,0" concept="1" trace="toggleNumberRangeHexMinValue_Intention#()V" />
+      <node id="7023368003706206137" at="42,99,45,5" concept="4" />
+      <node id="7023368003706206137" at="63,86,66,7" concept="4" />
+      <node id="784020141328126754" at="70,93,73,7" concept="4" />
+      <node id="7023368003706216020" at="74,0,77,7" concept="4" />
+      <node id="7023368003706206137" at="32,0,36,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="7023368003706206137" at="37,0,41,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="7023368003706206137" at="52,0,56,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="7023368003706206137" at="57,0,61,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="7023368003706206137" at="83,0,87,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="7023368003706225500" at="89,0,94,0" concept="10" trace="createNumberLiteral_uo2zcd_a0e0a#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7023368003706206137" at="42,0,48,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="7023368003706206137" at="62,0,69,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="7023368003706206137" at="70,0,81,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <scope id="7023368003706206137" at="49,38,49,38" />
+      <scope id="7023368003706206137" at="28,51,29,157" />
+      <scope id="7023368003706206137" at="33,35,34,42" />
+      <scope id="7023368003706206137" at="38,35,39,17" />
+      <scope id="7023368003706206137" at="43,37,44,105" />
+      <scope id="7023368003706206139" at="53,87,54,196" />
+      <scope id="7023368003706206141" at="58,78,59,155" />
+      <scope id="7023368003706206137" at="64,55,65,21" />
+      <scope id="784020141328126755" at="71,56,72,21" />
+      <scope id="7023368003706216021" at="75,115,76,20" />
+      <scope id="7023368003706206137" at="84,48,85,57" />
+      <scope id="7023368003706206137" at="49,0,51,0" />
+      <scope id="7023368003706206137" at="28,0,31,0" />
+      <scope id="7023368003706225500" at="89,68,92,26">
+        <var name="n0" id="7023368003706225500" />
+      </scope>
+      <scope id="7023368003706206137" at="32,0,36,0" />
+      <scope id="7023368003706206137" at="37,0,41,0" />
+      <scope id="7023368003706206137" at="42,99,46,30" />
+      <scope id="7023368003706206137" at="52,0,56,0">
+        <var name="editorContext" id="7023368003706206137" />
+        <var name="node" id="7023368003706206137" />
+      </scope>
+      <scope id="7023368003706206137" at="57,0,61,0">
+        <var name="editorContext" id="7023368003706206137" />
+        <var name="node" id="7023368003706206137" />
+      </scope>
+      <scope id="7023368003706206137" at="63,86,67,18" />
+      <scope id="7023368003706206137" at="83,0,87,0" />
+      <scope id="7023368003706225500" at="89,0,94,0">
+        <var name="p0" id="7023368003706225500" />
+      </scope>
+      <scope id="7023368003706206137" at="42,0,48,0">
+        <var name="context" id="7023368003706206137" />
+        <var name="node" id="7023368003706206137" />
+      </scope>
+      <scope id="7023368003706206137" at="62,0,69,0">
+        <var name="editorContext" id="7023368003706206137" />
+        <var name="node" id="7023368003706206137" />
+      </scope>
+      <scope id="7023368003706235850" at="70,93,79,173" />
+      <scope id="7023368003706206137" at="70,0,81,0">
+        <var name="editorContext" id="7023368003706206137" />
+        <var name="node" id="7023368003706206137" />
+      </scope>
+      <unit id="7023368003706206137" at="100,0,103,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberRangeHexMinValue_Intention$CONCEPTS" />
+      <unit id="7023368003706206137" at="95,0,99,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberRangeHexMinValue_Intention$PROPS" />
+      <unit id="7023368003706206137" at="48,0,89,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberRangeHexMinValue_Intention$IntentionImplementation" />
+      <unit id="7023368003706206137" at="25,0,104,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberRangeHexMinValue_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/7023368003706245990">
+    <file name="IntentionsDescriptor.java">
+      <node id="7023368003706245990" at="75,71,76,71" concept="2" />
+      <node id="7023368003706245990" at="106,57,107,58" concept="2" />
+    </file>
+    <file name="toggleNumberRangeHexMaxValue_Intention.java">
+      <node id="7023368003706245990" at="26,0,27,0" concept="3" trace="myCachedExecutable" />
+      <node id="7023368003706245990" at="28,51,29,157" concept="11" />
+      <node id="7023368003706245990" at="33,35,34,42" concept="7" />
+      <node id="7023368003706245990" at="38,35,39,17" concept="7" />
+      <node id="7023368003706245990" at="43,37,44,105" concept="2" />
+      <node id="7023368003706245990" at="45,5,46,30" concept="7" />
+      <node id="7023368003706245993" at="53,87,54,196" concept="7" />
+      <node id="7023368003706246008" at="58,78,59,155" concept="2" />
+      <node id="7023368003706245990" at="64,55,65,21" concept="7" />
+      <node id="7023368003706245990" at="66,7,67,18" concept="7" />
+      <node id="784020141328120144" at="71,56,72,21" concept="7" />
+      <node id="784020141328120024" at="73,7,74,0" concept="8" />
+      <node id="6624864447935216984" at="75,115,76,20" concept="7" />
+      <node id="7023368003706246038" at="77,7,78,0" concept="8" />
+      <node id="7023368003706246039" at="78,0,79,173" concept="7" />
+      <node id="7023368003706245990" at="84,48,85,57" concept="7" />
+      <node id="7023368003706246042" at="89,68,90,73" concept="6" />
+      <node id="7023368003706246042" at="90,73,91,41" concept="2" />
+      <node id="7023368003706246042" at="91,41,92,26" concept="7" />
+      <node id="7023368003706245990" at="96,0,97,0" concept="9" trace="max$7P3H" />
+      <node id="7023368003706245990" at="97,0,98,0" concept="9" trace="value$iWTK" />
+      <node id="7023368003706245990" at="101,0,102,0" concept="9" trace="NumberLiteral$wE" />
+      <node id="7023368003706245990" at="49,0,51,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="7023368003706245990" at="28,0,31,0" concept="1" trace="toggleNumberRangeHexMaxValue_Intention#()V" />
+      <node id="7023368003706245990" at="42,99,45,5" concept="4" />
+      <node id="7023368003706245990" at="63,86,66,7" concept="4" />
+      <node id="784020141328120142" at="70,93,73,7" concept="4" />
+      <node id="6624864447935216982" at="74,0,77,7" concept="4" />
+      <node id="7023368003706245990" at="32,0,36,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="7023368003706245990" at="37,0,41,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="7023368003706245990" at="52,0,56,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="7023368003706245990" at="57,0,61,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="7023368003706245990" at="83,0,87,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="7023368003706246042" at="89,0,94,0" concept="10" trace="createNumberLiteral_9u9zes_a0e0a#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7023368003706245990" at="42,0,48,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="7023368003706245990" at="62,0,69,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="7023368003706245990" at="70,0,81,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <scope id="7023368003706245990" at="49,38,49,38" />
+      <scope id="7023368003706245990" at="28,51,29,157" />
+      <scope id="7023368003706245990" at="33,35,34,42" />
+      <scope id="7023368003706245990" at="38,35,39,17" />
+      <scope id="7023368003706245990" at="43,37,44,105" />
+      <scope id="7023368003706245992" at="53,87,54,196" />
+      <scope id="7023368003706246007" at="58,78,59,155" />
+      <scope id="7023368003706245990" at="64,55,65,21" />
+      <scope id="784020141328120143" at="71,56,72,21" />
+      <scope id="6624864447935216983" at="75,115,76,20" />
+      <scope id="7023368003706245990" at="84,48,85,57" />
+      <scope id="7023368003706245990" at="49,0,51,0" />
+      <scope id="7023368003706245990" at="28,0,31,0" />
+      <scope id="7023368003706246042" at="89,68,92,26">
+        <var name="n0" id="7023368003706246042" />
+      </scope>
+      <scope id="7023368003706245990" at="32,0,36,0" />
+      <scope id="7023368003706245990" at="37,0,41,0" />
+      <scope id="7023368003706245990" at="42,99,46,30" />
+      <scope id="7023368003706245990" at="52,0,56,0">
+        <var name="editorContext" id="7023368003706245990" />
+        <var name="node" id="7023368003706245990" />
+      </scope>
+      <scope id="7023368003706245990" at="57,0,61,0">
+        <var name="editorContext" id="7023368003706245990" />
+        <var name="node" id="7023368003706245990" />
+      </scope>
+      <scope id="7023368003706245990" at="63,86,67,18" />
+      <scope id="7023368003706245990" at="83,0,87,0" />
+      <scope id="7023368003706246042" at="89,0,94,0">
+        <var name="p0" id="7023368003706246042" />
+      </scope>
+      <scope id="7023368003706245990" at="42,0,48,0">
+        <var name="context" id="7023368003706245990" />
+        <var name="node" id="7023368003706245990" />
+      </scope>
+      <scope id="7023368003706245990" at="62,0,69,0">
+        <var name="editorContext" id="7023368003706245990" />
+        <var name="node" id="7023368003706245990" />
+      </scope>
+      <scope id="7023368003706246020" at="70,93,79,173" />
+      <scope id="7023368003706245990" at="70,0,81,0">
+        <var name="editorContext" id="7023368003706245990" />
+        <var name="node" id="7023368003706245990" />
+      </scope>
+      <unit id="7023368003706245990" at="100,0,103,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberRangeHexMaxValue_Intention$CONCEPTS" />
+      <unit id="7023368003706245990" at="95,0,99,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberRangeHexMaxValue_Intention$PROPS" />
+      <unit id="7023368003706245990" at="48,0,89,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberRangeHexMaxValue_Intention$IntentionImplementation" />
+      <unit id="7023368003706245990" at="25,0,104,0" name="org.iets3.core.expr.simpleTypes.intentions.toggleNumberRangeHexMaxValue_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/9142018459486645396">
+    <file name="IntentionsDescriptor.java">
+      <node id="9142018459486645396" at="58,47,59,56" concept="2" />
+      <node id="9142018459486645396" at="100,46,101,42" concept="2" />
+    </file>
+    <file name="changeIntoAlt_Intention.java">
+      <node id="9142018459486645396" at="24,0,25,0" concept="3" trace="myCachedExecutable" />
+      <node id="9142018459486645396" at="26,36,27,157" concept="11" />
+      <node id="9142018459486645396" at="31,35,32,27" concept="7" />
+      <node id="9142018459486645396" at="36,35,37,17" concept="7" />
+      <node id="9142018459486645396" at="41,37,42,105" concept="2" />
+      <node id="9142018459486645396" at="43,5,44,30" concept="7" />
+      <node id="9142018459486645398" at="51,87,52,56" concept="7" />
+      <node id="9142018459486666178" at="56,78,57,301" concept="2" />
+      <node id="9142018459486645396" at="62,55,63,21" concept="7" />
+      <node id="9142018459486645396" at="64,7,65,18" concept="7" />
+      <node id="1923966000599915563" at="68,93,69,79" concept="7" />
+      <node id="9142018459486645396" at="74,48,75,42" concept="7" />
+      <node id="9142018459486667942" at="79,97,80,82" concept="6" />
+      <node id="9142018459486667942" at="81,5,82,89" concept="6" />
+      <node id="9142018459486667942" at="82,89,83,78" concept="2" />
+      <node id="9142018459486667942" at="83,78,84,78" concept="2" />
+      <node id="9142018459486667942" at="84,78,85,68" concept="6" />
+      <node id="9142018459486667942" at="85,68,86,70" concept="2" />
+      <node id="9142018459486667942" at="86,70,87,78" concept="2" />
+      <node id="9142018459486667942" at="88,5,89,26" concept="7" />
+      <node id="9142018459486645396" at="93,0,94,0" concept="9" trace="condition$bVqa" />
+      <node id="9142018459486645396" at="94,0,95,0" concept="9" trace="thenPart$bVSc" />
+      <node id="9142018459486645396" at="95,0,96,0" concept="9" trace="elseSection$kbJ$" />
+      <node id="9142018459486645396" at="96,0,97,0" concept="9" trace="expr$CW3E" />
+      <node id="9142018459486645396" at="97,0,98,0" concept="9" trace="alternatives$_UE0" />
+      <node id="9142018459486645396" at="98,0,99,0" concept="9" trace="when$ywD6" />
+      <node id="9142018459486645396" at="99,0,100,0" concept="9" trace="then$yx78" />
+      <node id="9142018459486645396" at="103,0,104,0" concept="9" trace="AlternativesExpression$be" />
+      <node id="9142018459486645396" at="104,0,105,0" concept="9" trace="AltOption$OS" />
+      <node id="9142018459486645396" at="105,0,106,0" concept="9" trace="Expression$D_" />
+      <node id="9142018459486645396" at="106,0,107,0" concept="9" trace="OtherwiseLiteral$Cj" />
+      <node id="9142018459486645396" at="47,0,49,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="9142018459486645396" at="26,0,29,0" concept="1" trace="changeIntoAlt_Intention#()V" />
+      <node id="9142018459486645396" at="40,99,43,5" concept="4" />
+      <node id="9142018459486645396" at="61,86,64,7" concept="4" />
+      <node id="9142018459486645396" at="68,0,71,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="9142018459486645396" at="30,0,34,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="9142018459486645396" at="35,0,39,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="9142018459486645396" at="50,0,54,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="9142018459486645396" at="55,0,59,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="9142018459486645396" at="73,0,77,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="9142018459486645396" at="40,0,46,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="9142018459486645396" at="60,0,67,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="9142018459486667942" at="80,82,88,5" concept="0" />
+      <node id="9142018459486667942" at="79,0,91,0" concept="10" trace="createAlternativesExpression_83il64_a0a0a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="9142018459486645396" at="47,38,47,38" />
+      <scope id="9142018459486645396" at="26,36,27,157" />
+      <scope id="9142018459486645396" at="31,35,32,27" />
+      <scope id="9142018459486645396" at="36,35,37,17" />
+      <scope id="9142018459486645396" at="41,37,42,105" />
+      <scope id="9142018459486645398" at="51,87,52,56" />
+      <scope id="9142018459486645400" at="56,78,57,301" />
+      <scope id="9142018459486645396" at="62,55,63,21" />
+      <scope id="1923966000599914813" at="68,93,69,79" />
+      <scope id="9142018459486645396" at="74,48,75,42" />
+      <scope id="9142018459486645396" at="47,0,49,0" />
+      <scope id="9142018459486645396" at="26,0,29,0" />
+      <scope id="9142018459486645396" at="68,0,71,0">
+        <var name="editorContext" id="9142018459486645396" />
+        <var name="node" id="9142018459486645396" />
+      </scope>
+      <scope id="9142018459486645396" at="30,0,34,0" />
+      <scope id="9142018459486645396" at="35,0,39,0" />
+      <scope id="9142018459486645396" at="40,99,44,30" />
+      <scope id="9142018459486645396" at="50,0,54,0">
+        <var name="editorContext" id="9142018459486645396" />
+        <var name="node" id="9142018459486645396" />
+      </scope>
+      <scope id="9142018459486645396" at="55,0,59,0">
+        <var name="editorContext" id="9142018459486645396" />
+        <var name="node" id="9142018459486645396" />
+      </scope>
+      <scope id="9142018459486645396" at="61,86,65,18" />
+      <scope id="9142018459486645396" at="73,0,77,0" />
+      <scope id="9142018459486645396" at="40,0,46,0">
+        <var name="context" id="9142018459486645396" />
+        <var name="node" id="9142018459486645396" />
+      </scope>
+      <scope id="9142018459486667942" at="81,5,87,78">
+        <var name="n1" id="9142018459486667942" />
+        <var name="n2" id="9142018459486667942" />
+      </scope>
+      <scope id="9142018459486645396" at="60,0,67,0">
+        <var name="editorContext" id="9142018459486645396" />
+        <var name="node" id="9142018459486645396" />
+      </scope>
+      <scope id="9142018459486667942" at="79,97,89,26">
+        <var name="n0" id="9142018459486667942" />
+      </scope>
+      <scope id="9142018459486667942" at="79,0,91,0">
+        <var name="p0" id="9142018459486667942" />
+        <var name="p1" id="9142018459486667942" />
+        <var name="p2" id="9142018459486667942" />
+      </scope>
+      <unit id="9142018459486645396" at="102,0,108,0" name="org.iets3.core.expr.simpleTypes.intentions.changeIntoAlt_Intention$CONCEPTS" />
+      <unit id="9142018459486645396" at="92,0,101,0" name="org.iets3.core.expr.simpleTypes.intentions.changeIntoAlt_Intention$LINKS" />
+      <unit id="9142018459486645396" at="46,0,79,0" name="org.iets3.core.expr.simpleTypes.intentions.changeIntoAlt_Intention$IntentionImplementation" />
+      <unit id="9142018459486645396" at="23,0,109,0" name="org.iets3.core.expr.simpleTypes.intentions.changeIntoAlt_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/9142018459486681249">
+    <file name="IntentionsDescriptor.java">
+      <node id="9142018459486681249" at="37,47,38,55" concept="2" />
+      <node id="9142018459486681249" at="101,42,102,41" concept="2" />
+    </file>
+    <file name="changeIntoIf_Intention.java">
+      <node id="9142018459486681249" at="25,0,26,0" concept="3" trace="myCachedExecutable" />
+      <node id="9142018459486681249" at="27,35,28,157" concept="11" />
+      <node id="9142018459486681249" at="32,35,33,26" concept="7" />
+      <node id="9142018459486681249" at="37,35,38,17" concept="7" />
+      <node id="9142018459486681249" at="42,37,43,105" concept="2" />
+      <node id="9142018459486681249" at="44,5,45,30" concept="7" />
+      <node id="9142018459486681251" at="52,87,53,72" concept="7" />
+      <node id="9142018459486837696" at="57,78,58,238" concept="6" />
+      <node id="9142018459486843500" at="58,238,59,232" concept="6" />
+      <node id="9142018459486685813" at="59,232,60,252" concept="2" />
+      <node id="9142018459486681249" at="65,55,66,21" concept="7" />
+      <node id="9142018459486681249" at="67,7,68,18" concept="7" />
+      <node id="9142018459486690307" at="71,93,72,313" concept="7" />
+      <node id="9142018459486681249" at="77,48,78,41" concept="7" />
+      <node id="9142018459486688596" at="82,87,83,72" concept="6" />
+      <node id="9142018459486688596" at="83,72,84,81" concept="2" />
+      <node id="9142018459486688596" at="84,81,85,80" concept="2" />
+      <node id="9142018459486688596" at="86,5,87,92" concept="6" />
+      <node id="9142018459486688596" at="87,92,88,78" concept="2" />
+      <node id="9142018459486688596" at="89,5,90,26" concept="7" />
+      <node id="9142018459486681249" at="94,0,95,0" concept="9" trace="alternatives$_UE0" />
+      <node id="9142018459486681249" at="95,0,96,0" concept="9" trace="when$ywD6" />
+      <node id="9142018459486681249" at="96,0,97,0" concept="9" trace="then$yx78" />
+      <node id="9142018459486681249" at="97,0,98,0" concept="9" trace="condition$bVqa" />
+      <node id="9142018459486681249" at="98,0,99,0" concept="9" trace="thenPart$bVSc" />
+      <node id="9142018459486681249" at="99,0,100,0" concept="9" trace="elseSection$kbJ$" />
+      <node id="9142018459486681249" at="100,0,101,0" concept="9" trace="expr$CW3E" />
+      <node id="9142018459486681249" at="104,0,105,0" concept="9" trace="OtherwiseLiteral$Cj" />
+      <node id="9142018459486681249" at="105,0,106,0" concept="9" trace="IfExpression$6$" />
+      <node id="9142018459486681249" at="106,0,107,0" concept="9" trace="Expression$D_" />
+      <node id="9142018459486681249" at="107,0,108,0" concept="9" trace="IfElseSection$B4" />
+      <node id="9142018459486681249" at="48,0,50,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="9142018459486681249" at="27,0,30,0" concept="1" trace="changeIntoIf_Intention#()V" />
+      <node id="9142018459486681249" at="41,99,44,5" concept="4" />
+      <node id="9142018459486681249" at="64,86,67,7" concept="4" />
+      <node id="9142018459486681249" at="71,0,74,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="9142018459486681249" at="31,0,35,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="9142018459486681249" at="36,0,40,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="9142018459486681249" at="51,0,55,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="9142018459486681249" at="76,0,80,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="9142018459486688596" at="85,80,89,5" concept="0" />
+      <node id="9142018459486681249" at="41,0,47,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="9142018459486681249" at="56,0,62,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="9142018459486681249" at="63,0,70,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="9142018459486688596" at="82,0,92,0" concept="10" trace="createIfExpression_wc88mu_a0a2a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="9142018459486681249" at="48,38,48,38" />
+      <scope id="9142018459486681249" at="27,35,28,157" />
+      <scope id="9142018459486681249" at="32,35,33,26" />
+      <scope id="9142018459486681249" at="37,35,38,17" />
+      <scope id="9142018459486681249" at="42,37,43,105" />
+      <scope id="9142018459486681251" at="52,87,53,72" />
+      <scope id="9142018459486681249" at="65,55,66,21" />
+      <scope id="9142018459486689539" at="71,93,72,313" />
+      <scope id="9142018459486681249" at="77,48,78,41" />
+      <scope id="9142018459486681249" at="48,0,50,0" />
+      <scope id="9142018459486688596" at="86,5,88,78">
+        <var name="n1" id="9142018459486688596" />
+      </scope>
+      <scope id="9142018459486681249" at="27,0,30,0" />
+      <scope id="9142018459486681255" at="57,78,60,252">
+        <var name="nonOtherwise" id="9142018459486837697" />
+        <var name="otherwise" id="9142018459486843501" />
+      </scope>
+      <scope id="9142018459486681249" at="71,0,74,0">
+        <var name="editorContext" id="9142018459486681249" />
+        <var name="node" id="9142018459486681249" />
+      </scope>
+      <scope id="9142018459486681249" at="31,0,35,0" />
+      <scope id="9142018459486681249" at="36,0,40,0" />
+      <scope id="9142018459486681249" at="41,99,45,30" />
+      <scope id="9142018459486681249" at="51,0,55,0">
+        <var name="editorContext" id="9142018459486681249" />
+        <var name="node" id="9142018459486681249" />
+      </scope>
+      <scope id="9142018459486681249" at="64,86,68,18" />
+      <scope id="9142018459486681249" at="76,0,80,0" />
+      <scope id="9142018459486681249" at="41,0,47,0">
+        <var name="context" id="9142018459486681249" />
+        <var name="node" id="9142018459486681249" />
+      </scope>
+      <scope id="9142018459486681249" at="56,0,62,0">
+        <var name="editorContext" id="9142018459486681249" />
+        <var name="node" id="9142018459486681249" />
+      </scope>
+      <scope id="9142018459486681249" at="63,0,70,0">
+        <var name="editorContext" id="9142018459486681249" />
+        <var name="node" id="9142018459486681249" />
+      </scope>
+      <scope id="9142018459486688596" at="82,87,90,26">
+        <var name="n0" id="9142018459486688596" />
+      </scope>
+      <scope id="9142018459486688596" at="82,0,92,0">
+        <var name="p0" id="9142018459486688596" />
+        <var name="p1" id="9142018459486688596" />
+        <var name="p2" id="9142018459486688596" />
+      </scope>
+      <unit id="9142018459486681249" at="103,0,109,0" name="org.iets3.core.expr.simpleTypes.intentions.changeIntoIf_Intention$CONCEPTS" />
+      <unit id="9142018459486681249" at="93,0,102,0" name="org.iets3.core.expr.simpleTypes.intentions.changeIntoIf_Intention$LINKS" />
+      <unit id="9142018459486681249" at="47,0,82,0" name="org.iets3.core.expr.simpleTypes.intentions.changeIntoIf_Intention$IntentionImplementation" />
+      <unit id="9142018459486681249" at="24,0,110,0" name="org.iets3.core.expr.simpleTypes.intentions.changeIntoIf_Intention" />
+    </file>
+  </root>
+</debug-info>
+
