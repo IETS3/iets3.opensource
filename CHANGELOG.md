@@ -5,12 +5,29 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## October 2025
+
+### Added
+- Variability: Some changes regarding variant configurations:
+  - A check has been added for duplicate names of configurations in the same container.
+  - Configurations might become inconsistent due to errors during manual conflict merges. A couple of model checks have been added to detect this. Additionally, there are quickfixes to fix such errors.
+  - The internal storage of configurations has changed, this requires a language migration. Note that after the execution of the migration, extended configurations must be adapted via intention to their changed base configuration.
+- A VCS merge hint has been added for the `__hash` property (e.g., for variant configurations). This avoids merge conflicts which cannot be resolved manually anyway (in those cases, the hash value has to be recomputed anyway).
+
+### Fixed
+- Improved the readability of lists by enforcing a new line when a threshold of three elements per list is exeeded.
+
+
 ## September 2025
+
+### Added
+- Data tables, binary and multi-criteria decision tables now support deletion, copying and pasting when multiple cells are selected with the mouse.
 
 ### Fixed
 - The renderReadable/getPresentation implementations were improved and are now equivalent in all concepts.
 - Variability: For feature attributes, the inspector in the configuration editor shows the current value of the attribute and what caused this value (manual input by user, default, forced by tool, etc). This assignment cause is read-only now. An intention is added to manually set it to 'manual' state.
 - Variability: In the configuration editor, pressing Return/Enter anywhere will create an empty line after the configuration. Pressing Shift-Return/Enter on the header line of a configuration will create an empty line before the configuration.
+
 
 ## July 2025
 
