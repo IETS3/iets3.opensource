@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="org.iets3.core.expr.util" uuid="8bb1251e-eae5-47ab-9843-33adfae8edaa" languageVersion="7" moduleVersion="7">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
