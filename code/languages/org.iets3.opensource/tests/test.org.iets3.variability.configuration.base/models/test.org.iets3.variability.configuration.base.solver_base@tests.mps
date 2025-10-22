@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="9b66c5c9-38bf-4315-a96f-9f4e212c69cb" name="org.iets3.variability.base" version="0" />
-    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="1" />
+    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base" version="24" />
@@ -139,7 +139,6 @@
       </concept>
       <concept id="6698472021570799901" name="org.iets3.variability.configuration.base.structure.FeatureConfiguration" flags="ng" index="rqKBd" />
       <concept id="3470763221645494592" name="org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration" flags="ng" index="3HwiA2">
-        <property id="5939066662398655707" name="selectionState" index="3BMj5M" />
         <reference id="6698472021570799902" name="targetFeature" index="rqKBe" />
         <child id="6698472021570833352" name="content" index="rqCGo" />
       </concept>
@@ -541,8 +540,7 @@
         <node concept="12i7jc" id="4XfgEhEe6vH" role="12i2BX" />
         <node concept="rqKB5" id="4XfgEhEe6vJ" role="12i2BX">
           <property role="26YOJW" value="" />
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <property role="bVyBI" value="-333840544" />
+          <property role="bVyBI" value="-1422576550" />
           <property role="bROok" value="112496978" />
           <property role="1n_0Gn" value="true" />
           <property role="TrG5h" value="CM" />
@@ -623,8 +621,7 @@
         </node>
         <node concept="rqKB5" id="3scZu9zdPJO" role="12i2BX">
           <property role="26YOJW" value="" />
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <property role="bVyBI" value="122959918" />
+          <property role="bVyBI" value="-902869209" />
           <property role="bROok" value="0" />
           <property role="1nQUAq" value="true" />
           <property role="TrG5h" value="CM" />
