@@ -15,6 +15,7 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -271,6 +272,7 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -2745,6 +2747,141 @@
     <node concept="1YaCAy" id="5crSXLvPjt" role="1YuTPh">
       <property role="TrG5h" value="dte" />
       <ref role="1YaFvo" to="kfo3:3DYDRw0K4cf" resolve="DecTabExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7BAjciMR9qa">
+    <property role="TrG5h" value="check_DecTabOtherswiseDefault" />
+    <property role="3GE5qa" value="dectab" />
+    <node concept="3clFbS" id="7BAjciMR9qb" role="18ibNy">
+      <node concept="3clFbJ" id="7BAjciN49$e" role="3cqZAp">
+        <node concept="3clFbS" id="7BAjciN49$g" role="3clFbx">
+          <node concept="3clFbF" id="7BAjciN4bOJ" role="3cqZAp">
+            <node concept="2OqwBi" id="7BAjciN4q5o" role="3clFbG">
+              <node concept="2OqwBi" id="7BAjciN4bOL" role="2Oq$k0">
+                <node concept="2OqwBi" id="7BAjciN4bOM" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7BAjciN4bON" role="2Oq$k0">
+                    <node concept="1YBJjd" id="7BAjciN4bOO" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7BAjciMR9r7" resolve="decTab" />
+                    </node>
+                    <node concept="3Tsc0h" id="7BAjciN4bOP" role="2OqNvi">
+                      <ref role="3TtcxE" to="kfo3:3DYDRw0K4d4" resolve="colHeaders" />
+                    </node>
+                  </node>
+                  <node concept="13MTOL" id="7BAjciN4bOQ" role="2OqNvi">
+                    <ref role="13MTZf" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="7BAjciN4ps_" role="2OqNvi">
+                  <node concept="chp4Y" id="7BAjciN4pwt" role="v3oSu">
+                    <ref role="cht4Q" to="5qo5:6UxFDrx50pu" resolve="OtherwiseLiteral" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2es0OD" id="7BAjciN4Bgw" role="2OqNvi">
+                <node concept="1bVj0M" id="7BAjciN4Bgy" role="23t8la">
+                  <node concept="3clFbS" id="7BAjciN4Bgz" role="1bW5cS">
+                    <node concept="a7r0C" id="7BAjciN4Bg$" role="3cqZAp">
+                      <node concept="Xl_RD" id="7BAjciN4Bg_" role="a7wSD">
+                        <property role="Xl_RC" value="Otherwise column will take precedence over the default value!" />
+                      </node>
+                      <node concept="37vLTw" id="7BAjciN4BgA" role="1urrMF">
+                        <ref role="3cqZAo" node="7BAjciN4BgB" resolve="it" />
+                      </node>
+                    </node>
+                    <node concept="a7r0C" id="7BAjciN51hA" role="3cqZAp">
+                      <node concept="Xl_RD" id="7BAjciN51jW" role="a7wSD">
+                        <property role="Xl_RC" value="Otherwise of column/row will take precedence over this default value" />
+                      </node>
+                      <node concept="2OqwBi" id="7BAjciN52lC" role="1urrMF">
+                        <node concept="1YBJjd" id="7BAjciN51XO" role="2Oq$k0">
+                          <ref role="1YBMHb" node="7BAjciMR9r7" resolve="decTab" />
+                        </node>
+                        <node concept="3TrEf2" id="7BAjciN53a$" role="2OqNvi">
+                          <ref role="3Tt5mk" to="kfo3:3DYDRw0NJeI" resolve="default" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gl6BB" id="7BAjciN4BgB" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="7BAjciN4BgC" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7BAjciN4N0a" role="3cqZAp">
+            <node concept="2OqwBi" id="7BAjciN4N0b" role="3clFbG">
+              <node concept="2OqwBi" id="7BAjciN4N0c" role="2Oq$k0">
+                <node concept="2OqwBi" id="7BAjciN4N0d" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7BAjciN4N0e" role="2Oq$k0">
+                    <node concept="1YBJjd" id="7BAjciN4N0f" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7BAjciMR9r7" resolve="decTab" />
+                    </node>
+                    <node concept="3Tsc0h" id="7BAjciN4N0g" role="2OqNvi">
+                      <ref role="3TtcxE" to="kfo3:3DYDRw0K4d1" />
+                    </node>
+                  </node>
+                  <node concept="13MTOL" id="7BAjciN4N0h" role="2OqNvi">
+                    <ref role="13MTZf" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="7BAjciN4N0i" role="2OqNvi">
+                  <node concept="chp4Y" id="7BAjciN4N0j" role="v3oSu">
+                    <ref role="cht4Q" to="5qo5:6UxFDrx50pu" resolve="OtherwiseLiteral" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2es0OD" id="7BAjciN4N0k" role="2OqNvi">
+                <node concept="1bVj0M" id="7BAjciN4N0l" role="23t8la">
+                  <node concept="3clFbS" id="7BAjciN4N0m" role="1bW5cS">
+                    <node concept="a7r0C" id="7BAjciN4N0n" role="3cqZAp">
+                      <node concept="Xl_RD" id="7BAjciN4N0o" role="a7wSD">
+                        <property role="Xl_RC" value="Otherwise row will take precedence over the default value!" />
+                      </node>
+                      <node concept="37vLTw" id="7BAjciN4N0p" role="1urrMF">
+                        <ref role="3cqZAo" node="7BAjciN4N0q" resolve="it" />
+                      </node>
+                    </node>
+                    <node concept="a7r0C" id="7BAjciN53B$" role="3cqZAp">
+                      <node concept="Xl_RD" id="7BAjciN53B_" role="a7wSD">
+                        <property role="Xl_RC" value="Otherwise of column/row will take precedence over this default value" />
+                      </node>
+                      <node concept="2OqwBi" id="7BAjciN53BA" role="1urrMF">
+                        <node concept="1YBJjd" id="7BAjciN53BB" role="2Oq$k0">
+                          <ref role="1YBMHb" node="7BAjciMR9r7" resolve="decTab" />
+                        </node>
+                        <node concept="3TrEf2" id="7BAjciN53BC" role="2OqNvi">
+                          <ref role="3Tt5mk" to="kfo3:3DYDRw0NJeI" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gl6BB" id="7BAjciN4N0q" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="7BAjciN4N0r" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="7BAjciN4bkd" role="3clFbw">
+          <node concept="2OqwBi" id="7BAjciN4abb" role="2Oq$k0">
+            <node concept="1YBJjd" id="7BAjciN49Ob" role="2Oq$k0">
+              <ref role="1YBMHb" node="7BAjciMR9r7" resolve="decTab" />
+            </node>
+            <node concept="3TrEf2" id="7BAjciN4b05" role="2OqNvi">
+              <ref role="3Tt5mk" to="kfo3:3DYDRw0NJeI" resolve="default" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="7BAjciN4bH2" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7BAjciMR9r7" role="1YuTPh">
+      <property role="TrG5h" value="decTab" />
+      <ref role="1YaFvo" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
     </node>
   </node>
 </model>
