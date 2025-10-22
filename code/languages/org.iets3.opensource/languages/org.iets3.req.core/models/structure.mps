@@ -9,6 +9,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="s8pm" ref="r:1a263161-b47f-4c8c-8169-e2033bd674f4(com.mbeddr.mpsutil.editor.displayControl.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cayy" ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)" implicit="true" />
   </imports>
@@ -82,6 +83,11 @@
     <node concept="1QGGSu" id="4llm6dDjViS" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/reqchunk.png" />
     </node>
+    <node concept="1TJgyi" id="4zL1IiCSr1P" role="1TKVEl">
+      <property role="IQ2nx" value="5255989819273752693" />
+      <property role="TrG5h" value="hideEmptyChildReqsSection" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4tXyFaWwpmI">
     <property role="TrG5h" value="AbstractRequirement" />
@@ -121,6 +127,9 @@
     </node>
     <node concept="PrWs8" id="4tXyFaWxW_j" role="PzmwI">
       <ref role="PrY4T" node="4tXyFaWxW_f" resolve="IReqContainer" />
+    </node>
+    <node concept="PrWs8" id="4zL1IiCWyBW" role="PzmwI">
+      <ref role="PrY4T" to="s8pm:54QlSGoaifp" resolve="ICanHide" />
     </node>
     <node concept="1TJgyj" id="4tXyFaWy3Jw" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -319,7 +328,7 @@
     <property role="TrG5h" value="RelKindConflicts" />
     <property role="34LRSv" value="conflicts with" />
     <property role="EcuMT" value="6906000695315637437" />
-    <property role="R4oN_" value="a conflict with relation kind" />
+    <property role="R4oN_" value="a &quot;conflicts with&quot; relation kind" />
     <ref role="1TJDcQ" node="5Zn2KFQSUik" resolve="RelationKind" />
   </node>
   <node concept="1TIwiD" id="5Zn2KFQSUqC">
@@ -384,6 +393,14 @@
   <node concept="PlHQZ" id="4OH$Ti$mobC">
     <property role="EcuMT" value="5561263381494203112" />
     <property role="TrG5h" value="IReqContextLabelProvider" />
+  </node>
+  <node concept="1TIwiD" id="4zL1IiCVfJB">
+    <property role="EcuMT" value="5255989819274492903" />
+    <property role="3GE5qa" value="rel" />
+    <property role="TrG5h" value="RelKindRequires" />
+    <property role="34LRSv" value="requires" />
+    <property role="R4oN_" value="a &quot;requires&quot; relation kind" />
+    <ref role="1TJDcQ" node="5Zn2KFQSUik" resolve="RelationKind" />
   </node>
 </model>
 
