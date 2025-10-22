@@ -13,6 +13,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
   - Configurations might become inconsistent due to errors during manual conflict merges. A couple of model checks have been added to detect this. Additionally, there are quickfixes to fix such errors.
   - The internal storage of configurations has changed, this requires a language migration. Note that after the execution of the migration, extended configurations must be adapted via intention to their changed base configuration.
 - A VCS merge hint has been added for the `__hash` property (e.g., for variant configurations). This avoids merge conflicts which cannot be resolved manually anyway (in those cases, the hash value has to be recomputed anyway).
+- A DecTab bug not respecting the default value was fixed and a corresponding warning was added to warn users which default value takes precedence
 
 ### Fixed
 - Improved the readability of lists by enforcing a new line when a threshold of three elements per list is exeeded.
