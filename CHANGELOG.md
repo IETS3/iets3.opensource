@@ -13,6 +13,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
   - Configurations might become inconsistent due to errors during manual conflict merges. A couple of model checks have been added to detect this. Additionally, there are quickfixes to fix such errors.
   - The internal storage of configurations has changed, this requires a language migration. Note that after the execution of the migration, extended configurations must be adapted via intention to their changed base configuration.
 - A VCS merge hint has been added for the `__hash` property (e.g., for variant configurations). This avoids merge conflicts which cannot be resolved manually anyway (in those cases, the hash value has to be recomputed anyway).
+- Requirements modeling (language `org.iets3.req.core`)
+  - It now supports a "requires" relation, which can express that a requirement needs other requirements as a precondition.
+  - The requirements chunk provides a flag "hide empty child requirements sections" (in the inspector). If selected, the flag hides empty child requirements sections in the tabular requirements view.
+  - Some additional internal changes (e.g., implementation of `ICanHide` interface, needed for variability support).
 
 ### Fixed
 - Improved the readability of lists by enforcing a new line when a threshold of three elements per list is exeeded.

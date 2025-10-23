@@ -769,6 +769,9 @@
       <node concept="m$_yC" id="3HtH8S1CeZC" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeT2TB" resolve="org.iets3.req.os" />
       </node>
+      <node concept="m$_yC" id="4zL1IiCXS9J" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:3Ol24ijlxoL" resolve="com.mbeddr.mpsutil.editor.displayControl" />
+      </node>
       <node concept="m$_yC" id="35CkgbOeHKL" role="m$_yJ">
         <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
       </node>
@@ -1121,6 +1124,9 @@
       </node>
       <node concept="m$_yC" id="5wLtKNeT97z" role="m$_yJ">
         <ref role="m$_y1" to="al5i:7tNo_gxoK8h" resolve="com.mbeddr.doc" />
+      </node>
+      <node concept="m$_yC" id="4zL1IiCXSbo" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:3Ol24ijlxoL" resolve="com.mbeddr.mpsutil.editor.displayControl" />
       </node>
       <node concept="m$_yC" id="5wLtKNeT9bv" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeSRRD" resolve="org.iets3.core.os" />
@@ -15262,6 +15268,11 @@
             <node concept="3qWCbU" id="1RMC8GHEx2C" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4zL1IiCXS25" role="3bR37C">
+          <node concept="3bR9La" id="4zL1IiCXS26" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:3uPnK4iE1MQ" resolve="com.mbeddr.mpsutil.editor.displayControl" />
           </node>
         </node>
       </node>
