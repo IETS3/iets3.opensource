@@ -2819,7 +2819,7 @@
                       <ref role="1YBMHb" node="7BAjciMR9r7" resolve="decTab" />
                     </node>
                     <node concept="3Tsc0h" id="7BAjciN4N0g" role="2OqNvi">
-                      <ref role="3TtcxE" to="kfo3:3DYDRw0K4d1" />
+                      <ref role="3TtcxE" to="kfo3:3DYDRw0K4d1" resolve="rowHeaders" />
                     </node>
                   </node>
                   <node concept="13MTOL" id="7BAjciN4N0h" role="2OqNvi">
@@ -2852,7 +2852,7 @@
                           <ref role="1YBMHb" node="7BAjciMR9r7" resolve="decTab" />
                         </node>
                         <node concept="3TrEf2" id="7BAjciN53BC" role="2OqNvi">
-                          <ref role="3Tt5mk" to="kfo3:3DYDRw0NJeI" />
+                          <ref role="3Tt5mk" to="kfo3:3DYDRw0NJeI" resolve="default" />
                         </node>
                       </node>
                     </node>
