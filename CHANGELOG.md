@@ -7,6 +7,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## October 2025
 
+### Added
+
+- A new intention is available to split kernelF StringLiterals into concatenation parts
+
 ### Fixed
 - A DecTab bug not respecting the default value was fixed and a corresponding warning was added to warn users which default value takes precedence
 
