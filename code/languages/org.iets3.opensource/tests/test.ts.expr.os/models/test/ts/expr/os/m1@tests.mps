@@ -55,6 +55,7 @@
     <import index="7a0s" ref="r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="sse1" ref="r:caea7020-da0a-4ba8-aff6-69334bbc9e02(de.slisson.mps.tables.runtime.simplegrid)" />
+    <import index="tg9b" ref="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -98,6 +99,18 @@
       <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr">
         <child id="4649457259824818099" name="equationRef" index="MJxsd" />
       </concept>
+      <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
+        <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
+        <child id="3143335925185262981" name="testNodeResult" index="25YQFr" />
+        <child id="1229187755283" name="code" index="LjaKd" />
+      </concept>
+      <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
+        <property id="6268941039745498163" name="selectionStart" index="p6zMq" />
+        <property id="6268941039745498165" name="selectionEnd" index="p6zMs" />
+        <property id="1229194968596" name="caretPosition" index="LIFWa" />
+        <property id="1229194968595" name="cellId" index="LIFWd" />
+        <property id="1932269937152561478" name="useLabelSelection" index="OXtK3" />
+      </concept>
       <concept id="4649457259824807647" name="jetbrains.mps.lang.test.structure.TypesystemEquationReference" flags="ng" index="MGsTx" />
       <concept id="4531408400486526326" name="jetbrains.mps.lang.test.structure.WarningStatementReference" flags="ng" index="2PQEqo" />
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
@@ -127,6 +140,9 @@
         <reference id="1210674534086" name="declaration" index="3xOPvv" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+      <concept id="1225989773458" name="jetbrains.mps.lang.test.structure.InvokeIntentionStatement" flags="nn" index="1MFPAf">
+        <reference id="1225989811227" name="intention" index="1MFYO6" />
+      </concept>
     </language>
     <language id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util">
       <concept id="4214990435115877128" name="org.iets3.core.expr.util.structure.DecTab" flags="ng" index="UJIhK">
@@ -992,6 +1008,7 @@
   <node concept="1lH9Xt" id="7k$Bvd3eSU8">
     <property role="TrG5h" value="stringTests" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="3GE5qa" value="strings" />
     <node concept="1qefOq" id="7k$Bvd3eSUO" role="1SKRRt">
       <node concept="_iOnV" id="7Z_pmaBAG8j" role="1qenE9">
         <property role="TrG5h" value="stringTests" />
@@ -25887,6 +25904,7 @@
   <node concept="1lH9Xt" id="3OxSopfZQZs">
     <property role="TrG5h" value="stringConstraintsTests" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="3GE5qa" value="strings" />
     <node concept="1qefOq" id="3OxSopfZQZt" role="1SKRRt">
       <node concept="_iOnV" id="3OxSopfZQZu" role="1qenE9">
         <property role="TrG5h" value="stringConstraintsTests" />
@@ -35260,6 +35278,7 @@
   <node concept="1lH9Xt" id="3iqDEt4GRQk">
     <property role="TrG5h" value="stringConstraintsDisabled" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="3GE5qa" value="strings" />
     <node concept="1qefOq" id="3iqDEt4NJtm" role="1SKRRt">
       <node concept="2zPypq" id="3iqDEt4NJZR" role="1qenE9">
         <property role="TrG5h" value="a" />
@@ -36793,6 +36812,51 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5sOQrHN5MEm">
+    <property role="3GE5qa" value="strings" />
+    <property role="TrG5h" value="SplitStringIntoConcatenationIntention" />
+    <node concept="1qefOq" id="5sOQrHN5NcW" role="25YQCW">
+      <node concept="_iOnV" id="5sOQrHN5Nfr" role="1qenE9">
+        <property role="TrG5h" value="strings" />
+        <node concept="2zPypq" id="5sOQrHN5NMB" role="_iOnC">
+          <property role="TrG5h" value="str" />
+          <node concept="30bdrP" id="5sOQrHN5R9g" role="2lDidJ">
+            <property role="30bdrQ" value="Split me!" />
+            <node concept="LIFWc" id="5sOQrHN5Sts" role="lGtFl">
+              <property role="LIFWa" value="5" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="5" />
+              <property role="p6zMs" value="5" />
+              <property role="LIFWd" value="property_value" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5sOQrHN5Ngc" role="_iOnC" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="5sOQrHN5RYo" role="25YQFr">
+      <node concept="_iOnV" id="5sOQrHN5S0B" role="1qenE9">
+        <property role="TrG5h" value="strings" />
+        <node concept="2zPypq" id="5sOQrHN5S0C" role="_iOnC">
+          <property role="TrG5h" value="str" />
+          <node concept="30dDZf" id="5sOQrHN5S6p" role="2lDidJ">
+            <node concept="30bdrP" id="5sOQrHN5S6q" role="30dEsF">
+              <property role="30bdrQ" value="Split" />
+            </node>
+            <node concept="30bdrP" id="5sOQrHN5S6r" role="30dEs_">
+              <property role="30bdrQ" value=" me!" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5sOQrHN5S0E" role="_iOnC" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="5sOQrHN5SOz" role="LjaKd">
+      <node concept="1MFPAf" id="5sOQrHN5SOy" role="3cqZAp">
+        <ref role="1MFYO6" to="tg9b:2wqTDZJZvwg" resolve="SplitStringIntoConcatenation" />
       </node>
     </node>
   </node>
