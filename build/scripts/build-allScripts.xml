@@ -27,7 +27,7 @@
   <property name="com.mbeddr.platform.minor.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.minor.version}" />
   <property name="com.mbeddr.platform.build" value="${import.com.mbeddr.platform.com.mbeddr.platform.build}" />
   <property name="com.mbeddr.platform.mbeddr.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.mbeddr.version}" />
-  <property name="de.itemis.mps.extensions.versionNumber" value="${import.com.mbeddr.platform.de.itemis.mps.extensions.versionNumber}" />
+  <property name="de.itemis.mps.extensions.version" value="${import.com.mbeddr.platform.de.itemis.mps.extensions.version}" />
   <property name="com.mbeddr.mpsutil.actionsfilter.major.version" value="${import.com.mbeddr.platform.com.mbeddr.mpsutil.actionsfilter.major.version}" />
   <property name="com.mbeddr.mpsutil.actionsfilter.minor.version" value="${import.com.mbeddr.platform.com.mbeddr.mpsutil.actionsfilter.minor.version}" />
   <property name="com.mbeddr.mpsutil.actionsfilter.build" value="${import.com.mbeddr.platform.com.mbeddr.mpsutil.actionsfilter.build}" />
