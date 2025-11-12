@@ -134,16 +134,11 @@ class BundledDep {
     String libSolutionName
     Closure configClosure = { transitive = false }
     // in case a legacy dependency has a broken artifact name, e.g. w/o extension
-    String jarNameOverride
     String getConfigName() {
         name + '_bundled'
     }
     String getResolveTaskName() {
         'resolve_' + this.configName
-    }
-    BundledDep overrideArtifactName(String artifactName) {
-        this.jarNameOverride = artifactName
-        this
     }
 }
 
@@ -151,7 +146,7 @@ def bundledDeps = [
         new BundledDep('pcollections', ['org.pcollections:pcollections:4.0.2'], 'org.iets3.core.expr.base.collections.stubs'),
         new BundledDep('bigMath', ['ch.obermuhlner:big-math:2.3.2'], 'org.iets3.core.expr.math.interpreter'),
         new BundledDep('functionalJava', ['org.functionaljava:functionaljava:5.0'], 'org.iets3.core.expr.genjava.functionalJava'),
-        new BundledDep('cpsSuite', ['io.takari.junit:takari-cpsuite:1.2.7'], 'org.iets3.opensource.build.gentests.rt').overrideArtifactName('takari-cpsuite.jar')
+        new BundledDep('cpsSuite', ['io.takari.junit:takari-cpsuite:1.2.7@jar'], 'org.iets3.opensource.build.gentests.rt')
 ]
 
 bundledDeps.each { dep ->
@@ -171,9 +166,7 @@ bundledDeps.each { dep ->
         rename { filename ->
             def ra = configurations.getByName(dep.configName).resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
             String finalName
-            if (dep.jarNameOverride != null) {
-                finalName = dep.jarNameOverride
-            } else if (ra.classifier != null) {
+            if (ra.classifier != null) {
                 finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
             } else {
                 finalName = "${ra.name}.${ra.extension}"
