@@ -383,7 +383,7 @@ task packageDistroWithDependencies(type: Zip, dependsOn: buildDistroWithDependen
 
 assemble.dependsOn packageLanguages, packageTests
 
-static def addDependency(Object pom, Object groupId, Object artifactId, Object version, Object type = null) {
+static def addDependency(Object pom, Object groupId, Object artifactId, Object version, Object type = null, String scope = null) {
     pom.withXml { XmlProvider prov ->
         Node root = prov.asNode()
         Node deps = root.dependencies[0] ?: root.appendNode("dependencies")
@@ -394,14 +394,16 @@ static def addDependency(Object pom, Object groupId, Object artifactId, Object v
         if (type != null) {
             dep.appendNode("type", type)
         }
+        if (scope != null) {
+            dep.appendNode("scope", scope)
+        }
     }
 }
 
-static def addDependency(Object pom, Configuration config) {
+static def addDependency(MavenPom pom, Configuration config, String scope = null) {
     config.resolvedConfiguration.firstLevelModuleDependencies.each {
-        addDependency(pom, it.moduleGroup, it.moduleName, it.moduleVersion, it.moduleArtifacts[0].type)
+        addDependency(pom, it.moduleGroup, it.moduleName, it.moduleVersion, it.moduleArtifacts[0].type, scope)
     }
-
 }
 
 ext.additionalPomInfo = {
@@ -422,6 +424,12 @@ ext.additionalPomInfo = {
     scm {
         tag = GitBasedVersioning.getGitCommitHash()
         url = "https://github.com/IETS3/iets3.opensource"
+    }
+}
+
+ext.addBundledDependencies = { MavenPom pom ->
+    bundledDeps.each {
+        addDependency(pom, configurations[it.configName], 'provided')
     }
 }
 
@@ -457,6 +465,8 @@ publishing {
             artifact packageLanguages
 
             addDependency(pom, configurations.languageLibs)
+
+            pom addBundledDependencies
 
             pom additionalPomInfo
         }

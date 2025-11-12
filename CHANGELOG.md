@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## November 2025
+
+### Added
+- The Maven POM now contains all bundled JARs as dependencies with `provided` scope to help with automated license and
+  vulnerability scanning.
+
 ## October 2025
 
 ### Added
