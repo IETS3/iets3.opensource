@@ -246,6 +246,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -273,6 +276,9 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
@@ -417,6 +423,7 @@
     <node concept="1WcQYu" id="D5oLwMtua0" role="2wV5jI">
       <node concept="2ElW$n" id="D5oLwMtuay" role="2El2Yn" />
       <node concept="3EZMnI" id="53_W9lll902" role="1LiK7o">
+        <node concept="l2Vlx" id="1ASK_HedIsT" role="2iSdaV" />
         <node concept="1kIj98" id="1Ia5rYltMfn" role="3EZMnx">
           <node concept="315t4" id="6uFWVHJRvzf" role="31dnY">
             <node concept="3clFbS" id="6uFWVHJRvzg" role="2VODD2">
@@ -521,24 +528,27 @@
             </node>
             <node concept="3VJUX4" id="6QsMU1GUYNg" role="3ZZHOD">
               <node concept="3clFbS" id="6QsMU1GUYNh" role="2VODD2">
-                <node concept="3cpWs8" id="6QsMU1GUYS0" role="3cqZAp">
-                  <node concept="3cpWsn" id="6QsMU1GUYS1" role="3cpWs9">
-                    <property role="TrG5h" value="propCell" />
-                    <node concept="3uibUv" id="6QsMU1GUYS2" role="1tU5fm">
-                      <ref role="3uigEE" to="g51k:~EditorCell_Property" resolve="EditorCell_Property" />
-                    </node>
-                    <node concept="1eOMI4" id="6QsMU1GUYUC" role="33vP2m">
-                      <node concept="10QFUN" id="6QsMU1GUYU_" role="1eOMHV">
-                        <node concept="3uibUv" id="6QsMU1GUYUE" role="10QFUM">
-                          <ref role="3uigEE" to="g51k:~EditorCell_Property" resolve="EditorCell_Property" />
-                        </node>
-                        <node concept="1Q80Hy" id="6QsMU1GUYVk" role="10QFUP" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3clFbJ" id="1drMthg17uD" role="3cqZAp">
                   <node concept="3clFbS" id="1drMthg17uF" role="3clFbx">
+                    <node concept="3cpWs8" id="6QsMU1GUYS0" role="3cqZAp">
+                      <node concept="3cpWsn" id="6QsMU1GUYS1" role="3cpWs9">
+                        <property role="TrG5h" value="propCell" />
+                        <node concept="3uibUv" id="6QsMU1GUYS2" role="1tU5fm">
+                          <ref role="3uigEE" to="g51k:~EditorCell_Property" resolve="EditorCell_Property" />
+                        </node>
+                        <node concept="2YIFZM" id="1BN5MJwdEtO" role="33vP2m">
+                          <ref role="37wK5l" to="g51k:~CellFinderUtil.findChildByClass(jetbrains.mps.openapi.editor.cells.EditorCell,java.lang.Class,boolean)" resolve="findChildByClass" />
+                          <ref role="1Pybhc" to="g51k:~CellFinderUtil" resolve="CellFinderUtil" />
+                          <node concept="1Q80Hy" id="1BN5MJwdE_0" role="37wK5m" />
+                          <node concept="3VsKOn" id="1BN5MJwdF55" role="37wK5m">
+                            <ref role="3VsUkX" to="g51k:~EditorCell_Property" resolve="EditorCell_Property" />
+                          </node>
+                          <node concept="3clFbT" id="1BN5MJwdFxl" role="37wK5m">
+                            <property role="3clFbU" value="true" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3cpWs8" id="6UIgoJyD6uX" role="3cqZAp">
                       <node concept="3cpWsn" id="6UIgoJyD6uY" role="3cpWs9">
                         <property role="TrG5h" value="modelAccessor" />
@@ -622,15 +632,12 @@
                   </node>
                 </node>
                 <node concept="3clFbF" id="6UIgoJyDnhy" role="3cqZAp">
-                  <node concept="37vLTw" id="6UIgoJyDnhw" role="3clFbG">
-                    <ref role="3cqZAo" node="6QsMU1GUYS1" resolve="propCell" />
-                  </node>
+                  <node concept="1Q80Hy" id="2wgSHIAAcB1" role="3clFbG" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="l2Vlx" id="1ASK_HedIsT" role="2iSdaV" />
       </node>
     </node>
   </node>
