@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## November 2025
+
+### Fixed
+- A bug was fixed that caused the editor of NumberLiteral to break if a property macro was used for its value.
+
 ## October 2025
 
 ### Added
@@ -22,7 +27,6 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 - Improved the readability of lists by enforcing a new line when a threshold of three elements per list is exeeded.
 - A DecTab bug not respecting the default value was fixed and a corresponding warning was added to warn users which default value takes precedence
-
 
 ## September 2025
 
