@@ -1428,7 +1428,7 @@
         <ref role="CIi3I" node="3xM68GMigWt" resolve="kg" />
       </node>
       <node concept="CIsvn" id="1bJsYf594GJ" role="2vOYbH">
-        <property role="1xG2w7" value="μ" />
+        <property role="1xG2w7" value="µ" />
         <ref role="CIi3I" node="6EvkZrOLErr" resolve="g" />
       </node>
     </node>

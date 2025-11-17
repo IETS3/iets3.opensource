@@ -46,6 +46,7 @@ classes_gen
 source_gen
 source_gen.caches
 test_gen
+doc_gen
 test_gen.caches
 code/languages/*/*.iws
 code/languages/*/build.properties
