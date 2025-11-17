@@ -63,7 +63,6 @@
     <import index="ni7b" ref="r:4eccaee4-b7d0-4cbb-8118-879d68e60625(org.iets3.analysis.solversupport.util.plugin)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
     <import index="s8pm" ref="r:1a263161-b47f-4c8c-8169-e2033bd674f4(com.mbeddr.mpsutil.editor.displayControl.structure)" implicit="true" />
-    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -11309,7 +11308,7 @@
             <node concept="2OqwBi" id="3EDARhubiUt" role="37vLTx">
               <node concept="2OqwBi" id="3EDARhubiUu" role="2Oq$k0">
                 <node concept="liA8E" id="3EDARhubiUx" role="2OqNvi">
-                  <ref role="37wK5l" to="1m72:~ComponentManager.getMessageBus()" resolve="getMessageBus" />
+                  <ref role="37wK5l" to="4nm9:~Project.getMessageBus()" resolve="getMessageBus" />
                 </node>
                 <node concept="37vLTw" id="1uALGt3sJ3K" role="2Oq$k0">
                   <ref role="3cqZAo" node="3EDARhubiUl" resolve="project" />

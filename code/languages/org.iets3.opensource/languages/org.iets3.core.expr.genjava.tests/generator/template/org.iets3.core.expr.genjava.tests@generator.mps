@@ -623,7 +623,7 @@
       <node concept="gft3U" id="1vVFmkXGS1s" role="1lVwrX">
         <node concept="2YIFZM" id="1vVFmkXGWmK" role="gfFT$">
           <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
-          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher,org.hamcrest.Matcher)" resolve="allOf" />
+          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher...)" resolve="allOf" />
           <node concept="2YIFZM" id="1vVFmkXGYF4" role="37wK5m">
             <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
             <ref role="37wK5l" to="4k19:~CoreMatchers.anything()" resolve="anything" />
