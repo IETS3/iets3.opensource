@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,28,0" name="org.iets3.core.expr.process.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:a8c00eda-2822-45fe-ac14-3290d70b7063(org.iets3.core.expr.process.actions)/1483061781794207861">
+    <file name="ProcessFactories.java">
+      <node id="1483061781794207882" at="20,7,21,41" concept="4" />
+      <node id="1483061781794208024" at="22,92,23,141" concept="1" />
+      <node id="1483061781794217326" at="23,141,24,183" concept="1" />
+      <node id="1483061781794243308" at="24,183,25,125" concept="1" />
+      <node id="1483061781794249837" at="25,125,26,129" concept="1" />
+      <node id="1483061781794269768" at="26,129,27,125" concept="1" />
+      <node id="1483061781794277458" at="27,125,28,121" concept="1" />
+      <node id="1483061781794207861" at="35,0,36,0" concept="5" trace="MultipartyAbstractDecision$jj" />
+      <node id="1483061781794207861" at="39,0,40,0" concept="5" trace="dynamicParties$jJKL" />
+      <node id="1483061781794207861" at="40,0,41,0" concept="5" trace="sealable$izVO" />
+      <node id="1483061781794207861" at="44,0,45,0" concept="5" trace="parties$GCIW" />
+      <node id="1483061781794207861" at="45,0,46,0" concept="5" trace="procedure$FNg1" />
+      <node id="1483061781794207861" at="46,0,47,0" concept="5" trace="timeLimit$E_5m" />
+      <node id="1483061781794207861" at="47,0,48,0" concept="5" trace="turnout$hghB" />
+      <node id="1483061781794207882" at="21,41,29,9" concept="2" />
+      <node id="1483061781794207882" at="19,102,30,7" concept="0" />
+      <node id="1483061781794207863" at="19,0,32,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1483061781794207884" at="22,92,28,121" />
+      <scope id="1483061781794207882" at="20,7,29,9">
+        <var name="oldNode" id="1483061781794207882" />
+      </scope>
+      <scope id="1483061781794207863" at="19,102,30,7" />
+      <scope id="1483061781794207863" at="19,0,32,0">
+        <var name="enclosingNode" id="1483061781794207863" />
+        <var name="index" id="1483061781794207863" />
+        <var name="model" id="1483061781794207863" />
+        <var name="newNode" id="1483061781794207863" />
+        <var name="sampleNode" id="1483061781794207863" />
+      </scope>
+      <unit id="1483061781794207861" at="34,0,37,0" name="org.iets3.core.expr.process.actions.ProcessFactories$CONCEPTS" />
+      <unit id="1483061781794207861" at="38,0,42,0" name="org.iets3.core.expr.process.actions.ProcessFactories$PROPS" />
+      <unit id="1483061781794207861" at="43,0,49,0" name="org.iets3.core.expr.process.actions.ProcessFactories$LINKS" />
+      <unit id="1483061781794207863" at="18,0,33,0" name="org.iets3.core.expr.process.actions.ProcessFactories$NodeFactory_1483061781794207863" />
+      <unit id="1483061781794207861" at="17,0,50,0" name="org.iets3.core.expr.process.actions.ProcessFactories" />
+    </file>
+  </root>
+</debug-info>
+

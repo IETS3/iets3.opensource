@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,58,0" name="org.iets3.core.expr.natlang.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,34,0" name="org.iets3.core.expr.natlang.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,99,0" name="org.iets3.core.expr.natlang.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:06bd0391-fd29-4009-9874-96c572597ae1(org.iets3.core.expr.natlang.structure)/1693890388431451161">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1693890388431451161" at="13,0,14,0" concept="1" trace="props_NatLangCallSyntax" />
+      <node id="1693890388431451161" at="31,46,32,76" concept="3" />
+      <node id="1693890388431451161" at="32,76,33,64" concept="0" />
+      <node id="1693890388431451161" at="33,64,34,51" concept="0" />
+      <node id="1693890388431451161" at="34,51,35,49" concept="0" />
+      <node id="1693890388431451161" at="36,9,37,39" concept="4" />
+      <node id="1693890388431451161" at="30,51,36,9" concept="2" />
+      <scope id="1693890388431451161" at="31,46,35,49">
+        <var name="cpb" id="1693890388431451161" />
+      </scope>
+      <scope id="1693890388431451161" at="30,51,37,39" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1693890388431451161" at="13,0,14,0" concept="6" trace="NatLangCallSyntax" />
+      <node id="1693890388431451161" at="19,54,20,56" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1693890388431451161" at="16,0,17,0" concept="1" trace="myConceptNatLangCallSyntax" />
+      <node id="1693890388431451161" at="44,51,45,42" concept="4" />
+      <node id="1693890388431451161" at="69,75,70,179" concept="3" />
+      <node id="1693890388431451161" at="70,179,71,34" concept="0" />
+      <node id="1693890388431451161" at="71,34,72,63" concept="5" />
+      <node id="1693890388431451161" at="72,63,73,76" concept="0" />
+      <node id="1693890388431451161" at="73,76,74,114" concept="0" />
+      <node id="1693890388431451161" at="74,114,75,17" concept="0" />
+      <node id="1693890388431451358" at="75,17,76,200" concept="0" />
+      <node id="1693890388431451161" at="76,200,77,22" concept="4" />
+      <node id="1693890388431451161" at="69,0,79,0" concept="7" trace="createDescriptorForNatLangCallSyntax#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1693890388431451161" at="44,51,45,42" />
+      <scope id="1693890388431451161" at="69,75,77,22">
+        <var name="b" id="1693890388431451161" />
+      </scope>
+      <scope id="1693890388431451161" at="69,0,79,0" />
+    </file>
+  </root>
+  <root nodeRef="r:06bd0391-fd29-4009-9874-96c572597ae1(org.iets3.core.expr.natlang.structure)/1693890388432028841">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1693890388432028841" at="14,0,15,0" concept="1" trace="props_NatLangFunctionArgRef" />
+      <node id="1693890388432028841" at="39,50,40,76" concept="3" />
+      <node id="1693890388432028841" at="40,76,41,62" concept="0" />
+      <node id="1693890388432028841" at="41,62,42,139" concept="0" />
+      <node id="1693890388432028841" at="42,139,43,53" concept="0" />
+      <node id="1693890388432028841" at="44,9,45,43" concept="4" />
+      <node id="1693890388432028841" at="38,55,44,9" concept="2" />
+      <scope id="1693890388432028841" at="39,50,43,53">
+        <var name="cpb" id="1693890388432028841" />
+      </scope>
+      <scope id="1693890388432028841" at="38,55,45,43" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1693890388432028841" at="14,0,15,0" concept="6" trace="NatLangFunctionArgRef" />
+      <node id="1693890388432028841" at="20,56,21,60" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1693890388432028841" at="17,0,18,0" concept="1" trace="myConceptNatLangFunctionArgRef" />
+      <node id="1693890388432028841" at="46,55,47,46" concept="4" />
+      <node id="1693890388432028841" at="79,79,80,183" concept="3" />
+      <node id="1693890388432028841" at="80,183,81,34" concept="0" />
+      <node id="1693890388432028841" at="81,34,82,76" concept="0" />
+      <node id="1693890388432028841" at="82,76,83,114" concept="0" />
+      <node id="1693890388432028841" at="83,114,84,17" concept="0" />
+      <node id="1693890388432028859" at="84,17,85,169" concept="0" />
+      <node id="1693890388432028841" at="85,169,86,22" concept="4" />
+      <node id="1693890388432028841" at="79,0,88,0" concept="7" trace="createDescriptorForNatLangFunctionArgRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1693890388432028841" at="46,55,47,46" />
+      <scope id="1693890388432028841" at="79,79,86,22">
+        <var name="b" id="1693890388432028841" />
+      </scope>
+      <scope id="1693890388432028841" at="79,0,88,0" />
+    </file>
+  </root>
+  <root nodeRef="r:06bd0391-fd29-4009-9874-96c572597ae1(org.iets3.core.expr.natlang.structure)/1693890388432147692">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1693890388432147692" at="15,0,16,0" concept="1" trace="props_NatLangFunctionCall" />
+      <node id="1693890388432147692" at="47,48,48,76" concept="3" />
+      <node id="1693890388432147692" at="48,76,49,62" concept="0" />
+      <node id="1693890388432147692" at="49,62,50,140" concept="0" />
+      <node id="1693890388432147692" at="50,140,51,51" concept="0" />
+      <node id="1693890388432147692" at="52,9,53,41" concept="4" />
+      <node id="1693890388432147692" at="46,53,52,9" concept="2" />
+      <scope id="1693890388432147692" at="47,48,51,51">
+        <var name="cpb" id="1693890388432147692" />
+      </scope>
+      <scope id="1693890388432147692" at="46,53,53,41" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1693890388432147692" at="15,0,16,0" concept="6" trace="NatLangFunctionCall" />
+      <node id="1693890388432147692" at="21,60,22,58" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1693890388432147692" at="18,0,19,0" concept="1" trace="myConceptNatLangFunctionCall" />
+      <node id="1693890388432147692" at="48,53,49,44" concept="4" />
+      <node id="1693890388432147692" at="88,77,89,181" concept="3" />
+      <node id="1693890388432147692" at="89,181,90,34" concept="0" />
+      <node id="1693890388432147692" at="90,34,91,76" concept="0" />
+      <node id="1693890388432147692" at="91,76,92,114" concept="0" />
+      <node id="1693890388432147692" at="92,114,93,17" concept="0" />
+      <node id="2861782275883762408" at="93,17,94,170" concept="0" />
+      <node id="2861782275883807063" at="94,170,95,196" concept="0" />
+      <node id="1693890388432147692" at="95,196,96,22" concept="4" />
+      <node id="1693890388432147692" at="88,0,98,0" concept="7" trace="createDescriptorForNatLangFunctionCall#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1693890388432147692" at="48,53,49,44" />
+      <scope id="1693890388432147692" at="88,77,96,22">
+        <var name="b" id="1693890388432147692" />
+      </scope>
+      <scope id="1693890388432147692" at="88,0,98,0" />
+    </file>
+  </root>
+  <root nodeRef="r:06bd0391-fd29-4009-9874-96c572597ae1(org.iets3.core.expr.natlang.structure)/1693890388432984452">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1693890388432984452" at="12,0,13,0" concept="1" trace="props_NatLangArgument" />
+      <node id="1693890388432984452" at="23,44,24,76" concept="3" />
+      <node id="1693890388432984452" at="24,76,25,55" concept="0" />
+      <node id="1693890388432984452" at="25,55,26,139" concept="0" />
+      <node id="1693890388432984452" at="26,139,27,47" concept="0" />
+      <node id="1693890388432984452" at="28,9,29,37" concept="4" />
+      <node id="1693890388432984452" at="22,49,28,9" concept="2" />
+      <scope id="1693890388432984452" at="23,44,27,47">
+        <var name="cpb" id="1693890388432984452" />
+      </scope>
+      <scope id="1693890388432984452" at="22,49,29,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1693890388432984452" at="12,0,13,0" concept="6" trace="NatLangArgument" />
+      <node id="1693890388432984452" at="18,116,19,54" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1693890388432984452" at="15,0,16,0" concept="1" trace="myConceptNatLangArgument" />
+      <node id="1693890388432984452" at="42,49,43,40" concept="4" />
+      <node id="1693890388432984452" at="60,73,61,177" concept="3" />
+      <node id="1693890388432984452" at="61,177,62,34" concept="0" />
+      <node id="1693890388432984452" at="62,34,63,114" concept="0" />
+      <node id="1693890388432984452" at="63,114,64,17" concept="0" />
+      <node id="1693890388432984474" at="64,17,65,169" concept="0" />
+      <node id="1693890388432984468" at="65,169,66,199" concept="0" />
+      <node id="1693890388432984452" at="66,199,67,22" concept="4" />
+      <node id="1693890388432984452" at="60,0,69,0" concept="7" trace="createDescriptorForNatLangArgument#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1693890388432984452" at="42,49,43,40" />
+      <scope id="1693890388432984452" at="60,73,67,22">
+        <var name="b" id="1693890388432984452" />
+      </scope>
+      <scope id="1693890388432984452" at="60,0,69,0" />
+    </file>
+  </root>
+</debug-info>
+

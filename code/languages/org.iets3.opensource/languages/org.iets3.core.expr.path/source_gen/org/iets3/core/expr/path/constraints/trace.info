@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="org.iets3.core.expr.path.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:1802571d-3258-41a4-a766-b8a21e92e113(org.iets3.core.expr.path.constraints)/7814222126786014544">
+    <file name="PathElement_Constraints.java">
+      <node id="7814222126786014544" at="37,36,38,35" concept="9" />
+      <node id="7814222126786014544" at="45,127,46,128" concept="4" />
+      <node id="7814222126786014544" at="46,128,47,0" concept="6" />
+      <node id="7814222126786014544" at="48,55,49,71" concept="1" />
+      <node id="7814222126786014544" at="50,9,51,0" concept="6" />
+      <node id="7814222126786014544" at="51,0,52,22" concept="5" />
+      <node id="7814222126786014545" at="64,63,65,139" concept="5" />
+      <node id="1928011281873135126" at="68,80,69,289" concept="4" />
+      <node id="1928011281873135138" at="70,83,71,181" concept="5" />
+      <node id="1928011281873135150" at="72,266,73,296" concept="5" />
+      <node id="1928011281873135175" at="74,84,75,278" concept="5" />
+      <node id="7782108600711649514" at="76,81,77,275" concept="5" />
+      <node id="1928011281873135189" at="78,13,79,36" concept="5" />
+      <node id="7814222126786014544" at="83,6,84,131" concept="4" />
+      <node id="7814222126786014545" at="84,131,85,42" concept="1" />
+      <node id="7814222126786014544" at="85,42,86,22" concept="5" />
+      <node id="7126186526844791889" at="88,128,89,165" concept="4" />
+      <node id="7126186526844791900" at="90,75,91,18" concept="5" />
+      <node id="7126186526844791908" at="93,70,94,142" concept="4" />
+      <node id="7126186526844791917" at="95,84,96,20" concept="5" />
+      <node id="7126186526844791929" at="99,66,100,119" concept="4" />
+      <node id="7126186526844791938" at="101,84,102,20" concept="5" />
+      <node id="7782108600711638737" at="105,69,106,122" concept="4" />
+      <node id="7782108600711638747" at="107,84,108,20" concept="5" />
+      <node id="7126186526844791948" at="110,5,111,17" concept="5" />
+      <node id="7814222126786014544" at="113,0,114,0" concept="7" trace="canBeChildBreakingPoint" />
+      <node id="7814222126786014544" at="116,0,117,0" concept="7" trace="PathElement$sr" />
+      <node id="7814222126786014544" at="117,0,118,0" concept="7" trace="DotExpression$jp" />
+      <node id="7814222126786014544" at="118,0,119,0" concept="7" trace="ICanHaveMembersType$1s" />
+      <node id="7814222126786014544" at="119,0,120,0" concept="7" trace="IHasBaseType$GU" />
+      <node id="7814222126786014544" at="120,0,121,0" concept="7" trace="ReferenceType$sW" />
+      <node id="7814222126786014544" at="121,0,122,0" concept="7" trace="OptionType$eU" />
+      <node id="7814222126786014544" at="122,0,123,0" concept="7" trace="CollectionType$kS" />
+      <node id="7814222126786014544" at="126,0,127,0" concept="7" trace="member$d1yc" />
+      <node id="7814222126786014544" at="127,0,128,0" concept="7" trace="expr$CW3E" />
+      <node id="7814222126786014544" at="128,0,129,0" concept="7" trace="baseType$M6Aa" />
+      <node id="7814222126786014544" at="129,0,130,0" concept="7" trace="baseType$Cv_a" />
+      <node id="7814222126786014544" at="37,0,40,0" concept="0" trace="PathElement_Constraints#()V" />
+      <node id="7814222126786014544" at="47,0,50,9" concept="2" />
+      <node id="7126186526844791898" at="89,165,92,5" concept="2" />
+      <node id="7126186526844791915" at="94,142,97,7" concept="2" />
+      <node id="7126186526844791936" at="100,119,103,7" concept="2" />
+      <node id="7782108600711638745" at="106,122,109,7" concept="2" />
+      <node id="7814222126786014545" at="63,0,67,0" concept="3" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7126186526844791906" at="92,5,98,5" concept="2" />
+      <node id="7126186526844791927" at="98,5,104,5" concept="2" />
+      <node id="7782108600711638735" at="104,5,110,5" concept="2" />
+      <node id="1928011281873135136" at="69,289,78,13" concept="2" />
+      <node id="7814222126786014544" at="44,0,54,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="7814222126786014544" at="42,103,54,6" concept="5" />
+      <node id="7814222126786014545" at="67,0,81,0" concept="3" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7814222126786014544" at="41,0,56,0" concept="3" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <node id="7814222126786014545" at="61,56,81,10" concept="5" />
+      <node id="7814222126786014545" at="59,0,83,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7814222126786014544" at="88,0,113,0" concept="8" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="7814222126786014545" at="57,90,83,6" concept="4" />
+      <node id="7814222126786014544" at="56,0,88,0" concept="3" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7814222126786014544" at="37,36,38,35" />
+      <scope id="7814222126786014544" at="48,55,49,71" />
+      <scope id="7814222126786014545" at="64,63,65,139" />
+      <scope id="1928011281873135137" at="70,83,71,181" />
+      <scope id="1928011281873135149" at="72,266,73,296" />
+      <scope id="1928011281873135174" at="74,84,75,278" />
+      <scope id="7782108600711649513" at="76,81,77,275" />
+      <scope id="7126186526844791899" at="90,75,91,18" />
+      <scope id="7126186526844791916" at="95,84,96,20" />
+      <scope id="7126186526844791937" at="101,84,102,20" />
+      <scope id="7782108600711638746" at="107,84,108,20" />
+      <scope id="7814222126786014544" at="37,0,40,0" />
+      <scope id="7814222126786014545" at="63,0,67,0" />
+      <scope id="7126186526844791907" at="93,70,97,7">
+        <var name="baseType" id="7126186526844791909" />
+      </scope>
+      <scope id="7126186526844791928" at="99,66,103,7">
+        <var name="baseType" id="7126186526844791930" />
+      </scope>
+      <scope id="7782108600711638736" at="105,69,109,7">
+        <var name="baseType" id="7782108600711638738" />
+      </scope>
+      <scope id="7814222126786014544" at="45,127,52,22">
+        <var name="result" id="7814222126786014544" />
+      </scope>
+      <scope id="7814222126786014544" at="44,0,54,0">
+        <var name="checkingNodeContext" id="7814222126786014544" />
+        <var name="context" id="7814222126786014544" />
+      </scope>
+      <scope id="7814222126786014545" at="68,80,79,36">
+        <var name="t" id="1928011281873135127" />
+      </scope>
+      <scope id="7814222126786014544" at="42,103,54,6" />
+      <scope id="7814222126786014545" at="67,0,81,0">
+        <var name="_context" id="7814222126786014545" />
+      </scope>
+      <scope id="7814222126786014544" at="41,0,56,0" />
+      <scope id="7814222126786014545" at="61,56,81,10" />
+      <scope id="7126186526844791888" at="88,128,111,17">
+        <var name="t" id="7126186526844791890" />
+      </scope>
+      <scope id="7814222126786014545" at="59,0,83,0" />
+      <scope id="7814222126786014544" at="88,0,113,0">
+        <var name="childConcept" id="7814222126786014544" />
+        <var name="link" id="7814222126786014544" />
+        <var name="node" id="7814222126786014544" />
+        <var name="parentNode" id="7814222126786014544" />
+      </scope>
+      <scope id="7814222126786014544" at="57,90,86,22">
+        <var name="d0" id="7814222126786014545" />
+        <var name="references" id="7814222126786014544" />
+      </scope>
+      <scope id="7814222126786014544" at="56,0,88,0" />
+      <unit id="7814222126786014544" at="125,0,131,0" name="org.iets3.core.expr.path.constraints.PathElement_Constraints$LINKS" />
+      <unit id="7814222126786014544" at="115,0,124,0" name="org.iets3.core.expr.path.constraints.PathElement_Constraints$CONCEPTS" />
+      <unit id="7814222126786014544" at="43,15,54,5" name="org.iets3.core.expr.path.constraints.PathElement_Constraints$1" />
+      <unit id="7814222126786014545" at="62,19,81,9" name="org.iets3.core.expr.path.constraints.PathElement_Constraints$2$1" />
+      <unit id="7814222126786014545" at="58,48,83,5" name="org.iets3.core.expr.path.constraints.PathElement_Constraints$2" />
+      <unit id="7814222126786014544" at="36,0,132,0" name="org.iets3.core.expr.path.constraints.PathElement_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

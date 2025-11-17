@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="4z701965eqp1bcy67lz918u2uaoyrul">
+  <files names="ConversionRule_SetMode_Intention.java:ConvertIGroupDivToMul_Intention.java:ConvertIGroupMultiplyToDiv_Intention.java:CreateQuantityForUnit_Intention.java:IntentionsDescriptor.java:SimplifyFraction_Intention.java:SimplifyGroup_Intention.java:SwitchMultiplicationOrder_Intention.java" />
+</product>
+

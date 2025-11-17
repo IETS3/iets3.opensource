@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-afdo7d5atmhnhsuozgs04m1dqkhx6ue">
+  <files names="CallInliner.java:ContextActionsDescriptor.java:DefaultRecordValuePresenter.java:EnumLiteral.java:ExtensionDescriptor.java:GroupValue.java:IPresenter.java:InlineRecordConstants.java:ProceedVal.java:RecordIsComparable.java:RecordIsComparableDefault.java:RecordIsComparableDefault_extension.java:RecordValue.java:RecordValuePresenterAccess.java" />
+</product>
+

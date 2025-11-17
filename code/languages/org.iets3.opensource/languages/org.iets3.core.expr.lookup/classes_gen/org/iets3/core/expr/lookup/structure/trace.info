@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,76,0" name="org.iets3.core.expr.lookup.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,38,0" name="org.iets3.core.expr.lookup.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,134,0" name="org.iets3.core.expr.lookup.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:89836ac9-c7df-418e-b4c8-0585f39cfaee(org.iets3.core.expr.lookup.structure)/5860825012162728630">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5860825012162728630" at="12,0,13,0" concept="1" trace="props_LookupTable" />
+      <node id="5860825012162728630" at="25,40,26,76" concept="3" />
+      <node id="5860825012162728630" at="26,76,27,42" concept="0" />
+      <node id="5860825012162728630" at="27,42,28,35" concept="0" />
+      <node id="5860825012162728630" at="28,35,29,43" concept="0" />
+      <node id="5860825012162728630" at="30,9,31,33" concept="4" />
+      <node id="5860825012162728630" at="24,45,30,9" concept="2" />
+      <scope id="5860825012162728630" at="25,40,29,43">
+        <var name="cpb" id="5860825012162728630" />
+      </scope>
+      <scope id="5860825012162728630" at="24,45,31,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5860825012162728630" at="12,0,13,0" concept="6" trace="LookupTable" />
+      <node id="5860825012162728630" at="20,115,21,50" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5860825012162728630" at="15,0,16,0" concept="1" trace="myConceptLookupTable" />
+      <node id="5860825012162728630" at="44,45,45,36" concept="4" />
+      <node id="5860825012162728630" at="66,69,67,171" concept="3" />
+      <node id="5860825012162728630" at="67,171,68,34" concept="0" />
+      <node id="5860825012162728630" at="68,34,69,76" concept="0" />
+      <node id="5860825012162728630" at="69,76,70,113" concept="0" />
+      <node id="5860825012162728630" at="70,113,71,17" concept="0" />
+      <node id="5860825012162731602" at="71,17,72,201" concept="0" />
+      <node id="5860825012162731607" at="72,201,73,201" concept="0" />
+      <node id="5860825012162731660" at="73,201,74,203" concept="0" />
+      <node id="5860825012162833454" at="74,203,75,196" concept="0" />
+      <node id="5860825012163143238" at="75,196,76,196" concept="0" />
+      <node id="5860825012163523473" at="76,196,77,196" concept="0" />
+      <node id="5860825012162728630" at="77,196,78,22" concept="0" />
+      <node id="5860825012162728630" at="78,22,79,22" concept="4" />
+      <node id="5860825012162728630" at="66,0,81,0" concept="7" trace="createDescriptorForLookupTable#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5860825012162728630" at="44,45,45,36" />
+      <scope id="5860825012162728630" at="66,69,79,22">
+        <var name="b" id="5860825012162728630" />
+      </scope>
+      <scope id="5860825012162728630" at="66,0,81,0" />
+    </file>
+  </root>
+  <root nodeRef="r:89836ac9-c7df-418e-b4c8-0585f39cfaee(org.iets3.core.expr.lookup.structure)/5860825012163523163">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5860825012163523163" at="13,0,14,0" concept="1" trace="props_LookupTableCell" />
+      <node id="5860825012163523163" at="33,44,34,76" concept="3" />
+      <node id="5860825012163523163" at="34,76,35,53" concept="0" />
+      <node id="5860825012163523163" at="35,53,36,49" concept="0" />
+      <node id="5860825012163523163" at="36,49,37,47" concept="0" />
+      <node id="5860825012163523163" at="38,9,39,37" concept="4" />
+      <node id="5860825012163523163" at="32,49,38,9" concept="2" />
+      <scope id="5860825012163523163" at="33,44,37,47">
+        <var name="cpb" id="5860825012163523163" />
+      </scope>
+      <scope id="5860825012163523163" at="32,49,39,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5860825012163523163" at="13,0,14,0" concept="6" trace="LookupTableCell" />
+      <node id="5860825012163523163" at="21,50,22,54" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5860825012163523163" at="16,0,17,0" concept="1" trace="myConceptLookupTableCell" />
+      <node id="5860825012163523163" at="46,49,47,40" concept="4" />
+      <node id="5860825012163523163" at="81,73,82,175" concept="3" />
+      <node id="5860825012163523163" at="82,175,83,34" concept="0" />
+      <node id="5860825012163523163" at="83,34,84,113" concept="0" />
+      <node id="5860825012163523163" at="84,113,85,17" concept="0" />
+      <node id="5860825012163523283" at="85,17,86,166" concept="0" />
+      <node id="5860825012163523292" at="86,166,87,166" concept="0" />
+      <node id="5860825012163523278" at="87,166,88,197" concept="0" />
+      <node id="5860825012163523163" at="88,197,89,22" concept="4" />
+      <node id="5860825012163523163" at="81,0,91,0" concept="7" trace="createDescriptorForLookupTableCell#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5860825012163523163" at="46,49,47,40" />
+      <scope id="5860825012163523163" at="81,73,89,22">
+        <var name="b" id="5860825012163523163" />
+      </scope>
+      <scope id="5860825012163523163" at="81,0,91,0" />
+    </file>
+  </root>
+  <root nodeRef="r:89836ac9-c7df-418e-b4c8-0585f39cfaee(org.iets3.core.expr.lookup.structure)/5860825012164260232">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5860825012164260232" at="14,0,15,0" concept="1" trace="props_LookupTableHeader" />
+      <node id="5860825012164260232" at="41,46,42,76" concept="3" />
+      <node id="5860825012164260232" at="42,76,43,60" concept="0" />
+      <node id="5860825012164260232" at="43,60,44,51" concept="0" />
+      <node id="5860825012164260232" at="44,51,45,49" concept="0" />
+      <node id="5860825012164260232" at="46,9,47,39" concept="4" />
+      <node id="5860825012164260232" at="40,51,46,9" concept="2" />
+      <scope id="5860825012164260232" at="41,46,45,49">
+        <var name="cpb" id="5860825012164260232" />
+      </scope>
+      <scope id="5860825012164260232" at="40,51,47,39" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5860825012164260232" at="14,0,15,0" concept="6" trace="LookupTableHeader" />
+      <node id="5860825012164260232" at="22,54,23,56" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5860825012164260232" at="17,0,18,0" concept="1" trace="myConceptLookupTableHeader" />
+      <node id="5860825012164260232" at="48,51,49,42" concept="4" />
+      <node id="5860825012164260232" at="91,75,92,177" concept="3" />
+      <node id="5860825012164260232" at="92,177,93,34" concept="0" />
+      <node id="5860825012164260232" at="93,34,94,113" concept="0" />
+      <node id="5860825012164260232" at="94,113,95,17" concept="0" />
+      <node id="5860825012164260365" at="95,17,96,197" concept="0" />
+      <node id="5860825012164260232" at="96,197,97,22" concept="4" />
+      <node id="5860825012164260232" at="91,0,99,0" concept="7" trace="createDescriptorForLookupTableHeader#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5860825012164260232" at="48,51,49,42" />
+      <scope id="5860825012164260232" at="91,75,97,22">
+        <var name="b" id="5860825012164260232" />
+      </scope>
+      <scope id="5860825012164260232" at="91,0,99,0" />
+    </file>
+  </root>
+  <root nodeRef="r:89836ac9-c7df-418e-b4c8-0585f39cfaee(org.iets3.core.expr.lookup.structure)/5860825012167904587">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5860825012167904587" at="16,0,17,0" concept="1" trace="props_LookupTableType" />
+      <node id="5860825012167904587" at="57,44,58,76" concept="3" />
+      <node id="5860825012167904587" at="58,76,59,47" concept="0" />
+      <node id="5860825012167904587" at="59,47,60,40" concept="0" />
+      <node id="5860825012167904587" at="60,40,61,47" concept="0" />
+      <node id="5860825012167904587" at="62,9,63,37" concept="4" />
+      <node id="5860825012167904587" at="56,49,62,9" concept="2" />
+      <scope id="5860825012167904587" at="57,44,61,47">
+        <var name="cpb" id="5860825012167904587" />
+      </scope>
+      <scope id="5860825012167904587" at="56,49,63,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5860825012167904587" at="16,0,17,0" concept="6" trace="LookupTableType" />
+      <node id="5860825012167904587" at="24,53,25,54" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5860825012167904587" at="19,0,20,0" concept="1" trace="myConceptLookupTableType" />
+      <node id="5860825012167904587" at="52,49,53,40" concept="4" />
+      <node id="5860825012167904587" at="109,73,110,175" concept="3" />
+      <node id="5860825012167904587" at="110,175,111,34" concept="0" />
+      <node id="5860825012167904587" at="111,34,112,55" concept="5" />
+      <node id="5860825012167904587" at="112,55,113,76" concept="0" />
+      <node id="5860825012167904587" at="113,76,114,113" concept="0" />
+      <node id="5860825012167904587" at="114,113,115,17" concept="0" />
+      <node id="5860825012167906763" at="115,17,116,201" concept="0" />
+      <node id="5860825012167906768" at="116,201,117,201" concept="0" />
+      <node id="5860825012167906777" at="117,201,118,201" concept="0" />
+      <node id="5860825012167904587" at="118,201,119,22" concept="0" />
+      <node id="5860825012167904587" at="119,22,120,22" concept="4" />
+      <node id="5860825012167904587" at="109,0,122,0" concept="7" trace="createDescriptorForLookupTableType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5860825012167904587" at="52,49,53,40" />
+      <scope id="5860825012167904587" at="109,73,120,22">
+        <var name="b" id="5860825012167904587" />
+      </scope>
+      <scope id="5860825012167904587" at="109,0,122,0" />
+    </file>
+  </root>
+  <root nodeRef="r:89836ac9-c7df-418e-b4c8-0585f39cfaee(org.iets3.core.expr.lookup.structure)/5860825012168429198">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5860825012168429198" at="17,0,18,0" concept="1" trace="props_LookupTarget" />
+      <node id="5860825012168429198" at="65,41,66,76" concept="3" />
+      <node id="5860825012168429198" at="66,76,67,59" concept="0" />
+      <node id="5860825012168429198" at="67,59,68,40" concept="0" />
+      <node id="5860825012168429198" at="68,40,69,44" concept="0" />
+      <node id="5860825012168429198" at="70,9,71,34" concept="4" />
+      <node id="5860825012168429198" at="64,46,70,9" concept="2" />
+      <scope id="5860825012168429198" at="65,41,69,44">
+        <var name="cpb" id="5860825012168429198" />
+      </scope>
+      <scope id="5860825012168429198" at="64,46,71,34" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5860825012168429198" at="17,0,18,0" concept="6" trace="LookupTarget" />
+      <node id="5860825012168429198" at="25,54,26,51" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5860825012168429198" at="20,0,21,0" concept="1" trace="myConceptLookupTarget" />
+      <node id="5860825012168429198" at="54,46,55,37" concept="4" />
+      <node id="5860825012168429198" at="122,70,123,172" concept="3" />
+      <node id="5860825012168429198" at="123,172,124,34" concept="0" />
+      <node id="5860825012168429198" at="124,34,125,76" concept="0" />
+      <node id="5860825012168429198" at="125,76,126,113" concept="0" />
+      <node id="5860825012168429198" at="126,113,127,17" concept="0" />
+      <node id="5860825012168430592" at="127,17,128,200" concept="0" />
+      <node id="5860825012168430730" at="128,200,129,200" concept="0" />
+      <node id="5860825012168429198" at="129,200,130,22" concept="0" />
+      <node id="5860825012168429198" at="130,22,131,22" concept="4" />
+      <node id="5860825012168429198" at="122,0,133,0" concept="7" trace="createDescriptorForLookupTarget#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5860825012168429198" at="54,46,55,37" />
+      <scope id="5860825012168429198" at="122,70,131,22">
+        <var name="b" id="5860825012168429198" />
+      </scope>
+      <scope id="5860825012168429198" at="122,0,133,0" />
+    </file>
+  </root>
+  <root nodeRef="r:89836ac9-c7df-418e-b4c8-0585f39cfaee(org.iets3.core.expr.lookup.structure)/5860825012168681163">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5860825012168681163" at="15,0,16,0" concept="1" trace="props_LookupTableRef" />
+      <node id="5860825012168681163" at="49,43,50,76" concept="3" />
+      <node id="5860825012168681163" at="50,76,51,57" concept="0" />
+      <node id="5860825012168681163" at="51,57,52,138" concept="0" />
+      <node id="5860825012168681163" at="52,138,53,46" concept="0" />
+      <node id="5860825012168681163" at="54,9,55,36" concept="4" />
+      <node id="5860825012168681163" at="48,48,54,9" concept="2" />
+      <scope id="5860825012168681163" at="49,43,53,46">
+        <var name="cpb" id="5860825012168681163" />
+      </scope>
+      <scope id="5860825012168681163" at="48,48,55,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5860825012168681163" at="15,0,16,0" concept="6" trace="LookupTableRef" />
+      <node id="5860825012168681163" at="23,56,24,53" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5860825012168681163" at="18,0,19,0" concept="1" trace="myConceptLookupTableRef" />
+      <node id="5860825012168681163" at="50,48,51,39" concept="4" />
+      <node id="5860825012168681163" at="99,72,100,174" concept="3" />
+      <node id="5860825012168681163" at="100,174,101,34" concept="0" />
+      <node id="5860825012168681163" at="101,34,102,61" concept="5" />
+      <node id="5860825012168681163" at="102,61,103,76" concept="0" />
+      <node id="5860825012168681163" at="103,76,104,113" concept="0" />
+      <node id="5860825012168681163" at="104,113,105,17" concept="0" />
+      <node id="5860825012168681363" at="105,17,106,168" concept="0" />
+      <node id="5860825012168681163" at="106,168,107,22" concept="4" />
+      <node id="5860825012168681163" at="99,0,109,0" concept="7" trace="createDescriptorForLookupTableRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5860825012168681163" at="50,48,51,39" />
+      <scope id="5860825012168681163" at="99,72,107,22">
+        <var name="b" id="5860825012168681163" />
+      </scope>
+      <scope id="5860825012168681163" at="99,0,109,0" />
+    </file>
+  </root>
+</debug-info>
+

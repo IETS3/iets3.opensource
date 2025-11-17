@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-b6yib5dkravb20sawxoe2e5re8rrpon">
+  <files names="TypesystemDescriptor.java:check_LookupTable_NonTypesystemRule.java:typeof_LookupTableRef_InferenceRule.java:typeof_LookupTable_InferenceRule.java:typeof_LookupTarget_InferenceRule.java" />
+</product>
+

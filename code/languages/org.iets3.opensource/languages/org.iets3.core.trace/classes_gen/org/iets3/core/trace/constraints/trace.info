@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="org.iets3.core.trace.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:ddcd6ddf-0912-41ff-95f9-427940f981c1(org.iets3.core.trace.constraints)/596856272726854611">
+    <file name="ITraceTargetProvider_Constraints.java">
+      <node id="596856272726854611" at="27,45,28,44" concept="6" />
+      <node id="596856272726854612" at="39,63,40,134" concept="4" />
+      <node id="1928011281873140950" at="43,80,44,339" concept="4" />
+      <node id="596856272726854611" at="48,6,49,131" concept="3" />
+      <node id="596856272726854612" at="49,131,50,42" concept="1" />
+      <node id="596856272726854611" at="50,42,51,22" concept="4" />
+      <node id="596856272726854611" at="55,0,56,0" concept="5" trace="ITraceTargetProvider$zD" />
+      <node id="596856272726854611" at="56,0,57,0" concept="5" trace="ITrace$ef" />
+      <node id="596856272726854611" at="60,0,61,0" concept="5" trace="traceTarget$Q_qM" />
+      <node id="596856272726854611" at="61,0,62,0" concept="5" trace="traceKind$_UHM" />
+      <node id="596856272726854611" at="27,0,30,0" concept="0" trace="ITraceTargetProvider_Constraints#()V" />
+      <node id="596856272726854612" at="38,0,42,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="596856272726854612" at="42,0,46,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="596856272726854612" at="36,56,46,10" concept="4" />
+      <node id="596856272726854612" at="34,0,48,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="596856272726854612" at="32,90,48,6" concept="3" />
+      <node id="596856272726854611" at="31,0,53,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="596856272726854611" at="27,45,28,44" />
+      <scope id="596856272726854612" at="39,63,40,134" />
+      <scope id="596856272726854612" at="43,80,44,339" />
+      <scope id="596856272726854611" at="27,0,30,0" />
+      <scope id="596856272726854612" at="38,0,42,0" />
+      <scope id="596856272726854612" at="42,0,46,0">
+        <var name="_context" id="596856272726854612" />
+      </scope>
+      <scope id="596856272726854612" at="36,56,46,10" />
+      <scope id="596856272726854612" at="34,0,48,0" />
+      <scope id="596856272726854611" at="32,90,51,22">
+        <var name="d0" id="596856272726854612" />
+        <var name="references" id="596856272726854611" />
+      </scope>
+      <scope id="596856272726854611" at="31,0,53,0" />
+      <unit id="596856272726854611" at="54,0,58,0" name="org.iets3.core.trace.constraints.ITraceTargetProvider_Constraints$CONCEPTS" />
+      <unit id="596856272726854611" at="59,0,63,0" name="org.iets3.core.trace.constraints.ITraceTargetProvider_Constraints$LINKS" />
+      <unit id="596856272726854612" at="37,19,46,9" name="org.iets3.core.trace.constraints.ITraceTargetProvider_Constraints$1$1" />
+      <unit id="596856272726854612" at="33,48,48,5" name="org.iets3.core.trace.constraints.ITraceTargetProvider_Constraints$1" />
+      <unit id="596856272726854611" at="26,0,64,0" name="org.iets3.core.trace.constraints.ITraceTargetProvider_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

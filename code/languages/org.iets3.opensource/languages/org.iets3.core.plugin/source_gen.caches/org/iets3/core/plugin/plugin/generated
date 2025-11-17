@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-8tl2jor3fmexfmx088dfu4zy1ad2e1a">
+  <files names="CommandWithMessage.java:ExtensionDescriptor.java:IconContainer.java:ManuallyTriggeredAnalysesGroup_ActionGroup.java:Plugin_ApplicationPlugin.java:ProjectViewDescriptor.java:SpecConfig.java:SpecConfigHelper.java:SpecExplorerHelper.java:runAllManuallyOnModel_Action.java:runAllManuallyOnRoot_Action.java:runEval_KeymapChanges.java:runManuallyModel_ActionGroup.java:runManuallyOnContainer_Action.java:runManuallyOnNode_Action.java:runManuallyRootMenu_ActionGroup.java" />
+</product>
+

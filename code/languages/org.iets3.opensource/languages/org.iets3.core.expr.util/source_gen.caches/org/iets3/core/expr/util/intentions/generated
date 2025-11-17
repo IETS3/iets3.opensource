@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="31weprs60sidvt262ogdd4zw1ioyrml">
+  <files names="ClipboardHelper.java:IntentionsDescriptor.java:MultiDectabPasteHelper.java:TIH.java:addChildren_Intention.java:addColumnLeftDectab_Intention.java:addColumnLeftMultiResult_Intention.java:addColumnLeftMulti_Intention.java:addColumnRightDectab_Intention.java:addColumnRightMultiResult_Intention.java:addColumnRightMulti_Intention.java:addDefault_Intention.java:addGroup_Intention.java:addRowAboveDectab_Intention.java:addRowAboveMulti_Intention.java:addRowBelowDectab_Intention.java:addRowBelowMulti_Intention.java:addXPredef_Intention.java:addYPredef_Intention.java:convertAltToMultiDecTab_Intention.java:deleteColDectab_Intention.java:deleteColMulti_Intention.java:deleteRowDectab_Intention.java:deleteRowMulti_Intention.java:negate_Intention.java:pasteIntoRowExpr_Intention.java:pasteIntoRow_Intention.java:pasteIntoTableExpr_Intention.java:pasteIntoTable_Intention.java:removeGroup_Intention.java:splitAbove_Intention.java:switchOrientation_Intention.java:toggleOrientation_Intention.java" />
+</product>
+

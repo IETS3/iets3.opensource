@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/3751132065236767060:jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="8,0,13,0" name="org.iets3.components.functional.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:4eacb7af-6e28-46ae-a760-031f778faad7(org.iets3.components.functional.plugin)/2235579912369389787">
+    <file name="AutoConnectionType.java">
+      <node id="2235579912370304039" at="31,0,32,0" concept="4" trace="_icon" />
+      <node id="2235579912369416081" at="32,0,33,0" concept="4" trace="_sourcePortCategory" />
+      <node id="2235579912369416094" at="34,79,35,16" concept="14" />
+      <node id="2235579912370311238" at="35,16,36,17" concept="3" />
+      <node id="2235579912369416102" at="36,17,37,45" concept="3" />
+      <node id="2235579912369416158" at="41,90,42,290" concept="9" />
+      <node id="2235579912370418913" at="46,25,47,17" concept="9" />
+      <node id="2235579912369416764" at="51,38,52,17" concept="9" />
+      <node id="2235579912369800237" at="55,0,56,0" concept="7" trace="getPortType#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2235579912369416209" at="57,89,58,256" concept="8" />
+      <node id="2235579912369416224" at="58,256,59,166" concept="8" />
+      <node id="2235579912369416235" at="59,166,60,213" concept="8" />
+      <node id="2235579912369416246" at="60,213,61,133" concept="8" />
+      <node id="2235579912369416263" at="62,31,63,130" concept="3" />
+      <node id="2235579912369416273" at="63,130,64,148" concept="3" />
+      <node id="2235579912369416286" at="65,5,66,80" concept="3" />
+      <node id="2235579912369416292" at="66,80,67,0" concept="11" />
+      <node id="2235579912369416293" at="67,0,68,34" concept="8" />
+      <node id="2235579912369416297" at="68,34,69,88" concept="8" />
+      <node id="2235579912369416308" at="69,88,70,0" concept="11" />
+      <node id="2235579912369416318" at="72,37,73,135" concept="3" />
+      <node id="2235579912369416328" at="74,7,75,40" concept="3" />
+      <node id="2235579912369416332" at="76,5,77,37" concept="8" />
+      <node id="2235579912369416340" at="78,75,79,285" concept="3" />
+      <node id="2235579912369416354" at="79,285,80,40" concept="3" />
+      <node id="2235579912369416358" at="80,40,81,30" concept="3" />
+      <node id="2235579912369416670" at="85,131,86,62" concept="3" />
+      <node id="2235579912369416675" at="86,62,87,117" concept="8" />
+      <node id="4026427567708374616" at="88,34,89,129" concept="10" />
+      <node id="2235579912369416685" at="89,129,90,416" concept="8" />
+      <node id="2235579912369416716" at="91,44,92,81" concept="3" />
+      <node id="2235579912369416727" at="94,5,95,21" concept="9" />
+      <node id="2235579912369416443" at="98,163,99,73" concept="8" />
+      <node id="2235579912369416454" at="99,73,100,0" concept="11" />
+      <node id="5961697167167816887" at="100,0,101,113" concept="8" />
+      <node id="5961697167167823806" at="101,113,102,117" concept="8" />
+      <node id="5961697167167803605" at="102,117,103,188" concept="3" />
+      <node id="5961697167167811592" at="103,188,104,194" concept="3" />
+      <node id="2235579912369416455" at="104,194,105,130" concept="3" />
+      <node id="2235579912369416466" at="105,130,106,126" concept="3" />
+      <node id="2235579912369416477" at="106,126,107,0" concept="11" />
+      <node id="2235579912369416480" at="108,29,109,108" concept="8" />
+      <node id="5961697167168956648" at="109,108,110,220" concept="8" />
+      <node id="5961697167168956920" at="110,220,111,121" concept="3" />
+      <node id="2235579912369416488" at="111,121,112,110" concept="3" />
+      <node id="2235579912369416565" at="113,36,114,106" concept="8" />
+      <node id="5961697167168962588" at="114,106,115,220" concept="8" />
+      <node id="5961697167168962736" at="115,220,116,121" concept="3" />
+      <node id="2235579912369416573" at="116,121,117,110" concept="3" />
+      <node id="2235579912369416519" at="118,12,119,108" concept="8" />
+      <node id="5961697167168966223" at="119,108,120,234" concept="8" />
+      <node id="5961697167168966399" at="120,234,121,125" concept="3" />
+      <node id="2235579912369416527" at="121,125,122,112" concept="3" />
+      <node id="2235579912369416601" at="123,5,124,0" concept="11" />
+      <node id="2235579912369416602" at="124,0,125,18" concept="9" />
+      <node id="2235579912369416635" at="129,129,130,57" concept="3" />
+      <node id="2235579912369416640" at="131,7,132,35" concept="8" />
+      <node id="2235579912369416643" at="133,96,134,251" concept="3" />
+      <node id="2235579912369416658" at="137,5,138,23" concept="9" />
+      <node id="2235579912369416300" at="141,67,142,64" concept="8" />
+      <node id="2235579912369416300" at="142,64,143,75" concept="3" />
+      <node id="2235579912369416300" at="143,75,144,82" concept="3" />
+      <node id="2235579912369416300" at="144,82,145,26" concept="9" />
+      <node id="2235579912369416446" at="147,67,148,64" concept="8" />
+      <node id="2235579912369416446" at="148,64,149,75" concept="3" />
+      <node id="2235579912369416446" at="149,75,150,82" concept="3" />
+      <node id="2235579912369416446" at="150,82,151,26" concept="9" />
+      <node id="5961697167168956650" at="153,100,154,75" concept="8" />
+      <node id="5961697167168956650" at="154,75,155,89" concept="3" />
+      <node id="5961697167168956650" at="156,5,157,93" concept="8" />
+      <node id="5961697167168956650" at="157,93,158,48" concept="3" />
+      <node id="5961697167168956650" at="159,5,160,53" concept="3" />
+      <node id="5961697167168956650" at="160,53,161,52" concept="3" />
+      <node id="5961697167168956650" at="161,52,162,26" concept="9" />
+      <node id="5961697167168966225" at="164,114,165,77" concept="8" />
+      <node id="5961697167168966225" at="165,77,166,89" concept="3" />
+      <node id="5961697167168966225" at="167,5,168,93" concept="8" />
+      <node id="5961697167168966225" at="168,93,169,48" concept="3" />
+      <node id="5961697167168966225" at="170,5,171,53" concept="3" />
+      <node id="5961697167168966225" at="172,5,173,93" concept="8" />
+      <node id="5961697167168966225" at="173,93,174,48" concept="3" />
+      <node id="5961697167168966225" at="175,5,176,53" concept="3" />
+      <node id="5961697167168966225" at="176,53,177,26" concept="9" />
+      <node id="5961697167168962590" at="179,102,180,75" concept="8" />
+      <node id="5961697167168962590" at="180,75,181,89" concept="3" />
+      <node id="5961697167168962590" at="181,89,182,52" concept="3" />
+      <node id="5961697167168962590" at="183,5,184,93" concept="8" />
+      <node id="5961697167168962590" at="184,93,185,48" concept="3" />
+      <node id="5961697167168962590" at="186,5,187,53" concept="3" />
+      <node id="5961697167168962590" at="187,53,188,26" concept="9" />
+      <node id="2235579912369389787" at="192,0,193,0" concept="12" trace="AbstractComponentInstanceBase$QW" />
+      <node id="2235579912369389787" at="193,0,194,0" concept="12" trace="ComponentSubstructure$oB" />
+      <node id="2235579912369389787" at="194,0,195,0" concept="12" trace="Component$gR" />
+      <node id="2235579912369389787" at="195,0,196,0" concept="12" trace="Port$gs" />
+      <node id="2235579912369389787" at="196,0,197,0" concept="12" trace="ExportConnector$hw" />
+      <node id="2235579912369389787" at="197,0,198,0" concept="12" trace="AssemblyConnector$qU" />
+      <node id="2235579912369389787" at="198,0,199,0" concept="12" trace="ImportConnector$8o" />
+      <node id="2235579912369389787" at="199,0,200,0" concept="12" trace="IPortType$DL" />
+      <node id="2235579912369389787" at="200,0,201,0" concept="12" trace="PortCategory$Wm" />
+      <node id="2235579912369389787" at="201,0,202,0" concept="12" trace="IConnectorType$F7" />
+      <node id="2235579912369389787" at="202,0,203,0" concept="12" trace="InstanceRef$Gm" />
+      <node id="2235579912369389787" at="206,0,207,0" concept="12" trace="type$5Gl6" />
+      <node id="2235579912369389787" at="207,0,208,0" concept="12" trace="contents$7e9r" />
+      <node id="2235579912369389787" at="208,0,209,0" concept="12" trace="contents$i4tX" />
+      <node id="2235579912369389787" at="209,0,210,0" concept="12" trace="category$WD4l" />
+      <node id="2235579912369389787" at="210,0,211,0" concept="12" trace="connectorType$8zQx" />
+      <node id="2235579912369389787" at="211,0,212,0" concept="12" trace="sourceInstance$fa_V" />
+      <node id="2235579912369389787" at="212,0,213,0" concept="12" trace="ref$H$FL" />
+      <node id="2235579912369389787" at="213,0,214,0" concept="12" trace="sourcePort$fgej" />
+      <node id="2235579912369389787" at="214,0,215,0" concept="12" trace="outerPort$ffZi" />
+      <node id="2235579912369389787" at="215,0,216,0" concept="12" trace="sourceInstance$LjmV" />
+      <node id="2235579912369389787" at="216,0,217,0" concept="12" trace="sourcePort$ZLvQ" />
+      <node id="2235579912369389787" at="217,0,218,0" concept="12" trace="targetInstance$RipR" />
+      <node id="2235579912369389787" at="218,0,219,0" concept="12" trace="targetPort$ZZ$M" />
+      <node id="2235579912369389787" at="219,0,220,0" concept="12" trace="outerPort$3H4p" />
+      <node id="2235579912369389787" at="220,0,221,0" concept="12" trace="targetInstance$ZsmL" />
+      <node id="2235579912369389787" at="221,0,222,0" concept="12" trace="targetPort$ZxZ9" />
+      <node id="2235579912369416313" at="71,69,74,7" concept="6" />
+      <node id="2235579912369416714" at="90,416,93,7" concept="6" />
+      <node id="2235579912369416640" at="132,35,135,9" concept="6" />
+      <node id="2235579912369416146" at="40,0,44,0" concept="7" trace="canCreate#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="2235579912369416739" at="45,0,49,0" concept="7" trace="getIcon#()Ljavax/swing/Icon;" />
+      <node id="2235579912369416760" at="50,0,54,0" concept="7" trace="showContextButton#()Z" />
+      <node id="2235579912369416261" at="61,133,65,5" concept="6" />
+      <node id="5961697167168956650" at="155,89,159,5" concept="1" />
+      <node id="5961697167168966225" at="166,89,170,5" concept="1" />
+      <node id="5961697167168966225" at="171,53,175,5" concept="1" />
+      <node id="5961697167168962590" at="182,52,186,5" concept="1" />
+      <node id="2235579912369416085" at="34,0,39,0" concept="2" trace="AutoConnectionType#(Ljava/lang/String;Ljavax/swing/Icon;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2235579912369416336" at="77,37,82,5" concept="5" />
+      <node id="2235579912369416517" at="118,10,123,5" concept="1" />
+      <node id="2235579912369416309" at="70,0,76,5" concept="5" />
+      <node id="2235579912369416640" at="130,57,136,7" concept="1" />
+      <node id="2235579912369416300" at="141,0,147,0" concept="13" trace="createPort_egjn7_a0i0n#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2235579912369416446" at="147,0,153,0" concept="13" trace="createPort_egjn7_a0a0r#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2235579912369416683" at="87,117,94,5" concept="6" />
+      <node id="2235579912369416621" at="128,100,137,5" concept="5" />
+      <node id="5961697167168956650" at="153,0,164,0" concept="13" trace="createExportConnector_egjn7_a0b0j0r#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5961697167168962590" at="179,0,190,0" concept="13" trace="createImportConnector_egjn7_a0b0a9a71#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2235579912369416668" at="85,0,97,0" concept="7" trace="calculateHierarchy#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Iterable;Ljava/util/List;)Ljava/util/List;" />
+      <node id="2235579912369416619" at="128,0,140,0" concept="7" trace="getDeepComponentContent#(Ljava/lang/Iterable;Ljava/util/List;)Ljava/util/List;" />
+      <node id="5961697167168966225" at="164,0,179,0" concept="13" trace="createAssemblyConnector_egjn7_a0b0a9a71#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2235579912369416478" at="107,0,123,5" concept="6" />
+      <node id="2235579912369416181" at="57,0,84,0" concept="7" trace="doCreate#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="2235579912369416441" at="98,0,127,0" concept="7" trace="addPortsAndConnection#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ZZ)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2235579912369416157" at="41,90,42,290" />
+      <scope id="2235579912369416743" at="46,25,47,17" />
+      <scope id="2235579912369416763" at="51,38,52,17" />
+      <scope id="2235579912369800237" at="55,0,56,0" />
+      <scope id="2235579912369416317" at="72,37,73,135" />
+      <scope id="2235579912369416715" at="91,44,92,81" />
+      <scope id="2235579912369416642" at="133,96,134,251" />
+      <scope id="2235579912369416262" at="62,31,64,148" />
+      <scope id="5961697167168956650" at="156,5,158,48">
+        <var name="n1" id="5961697167168956650" />
+      </scope>
+      <scope id="5961697167168966225" at="167,5,169,48">
+        <var name="n1" id="5961697167168966225" />
+      </scope>
+      <scope id="5961697167168966225" at="172,5,174,48">
+        <var name="n2" id="5961697167168966225" />
+      </scope>
+      <scope id="5961697167168962590" at="183,5,185,48">
+        <var name="n1" id="5961697167168962590" />
+      </scope>
+      <scope id="2235579912369416093" at="34,79,37,45" />
+      <scope id="2235579912369416339" at="78,75,81,30" />
+      <scope id="2235579912369416146" at="40,0,44,0">
+        <var name="fromNode" id="2235579912369416147" />
+        <var name="fromPort" id="2235579912369416149" />
+        <var name="toNode" id="2235579912369416151" />
+        <var name="toPort" id="2235579912369416153" />
+      </scope>
+      <scope id="2235579912369416739" at="45,0,49,0" />
+      <scope id="2235579912369416760" at="50,0,54,0" />
+      <scope id="2235579912369416312" at="71,69,75,40" />
+      <scope id="2235579912369416479" at="108,29,112,110">
+        <var name="exportConnector" id="5961697167168956649" />
+        <var name="ss" id="2235579912369416481" />
+      </scope>
+      <scope id="2235579912369416564" at="113,36,117,110">
+        <var name="importConnector" id="5961697167168962589" />
+        <var name="ss" id="2235579912369416566" />
+      </scope>
+      <scope id="2235579912369416518" at="118,12,122,112">
+        <var name="assemblyConnector" id="5961697167168966224" />
+        <var name="ss" id="2235579912369416520" />
+      </scope>
+      <scope id="2235579912369416640" at="131,7,135,9">
+        <var name="instance" id="2235579912369416640" />
+      </scope>
+      <scope id="2235579912369416300" at="141,67,145,26">
+        <var name="n0" id="2235579912369416300" />
+      </scope>
+      <scope id="2235579912369416446" at="147,67,151,26">
+        <var name="n0" id="2235579912369416446" />
+      </scope>
+      <scope id="2235579912369416085" at="34,0,39,0">
+        <var name="icon" id="2235579912370293895" />
+        <var name="name" id="2235579912369416086" />
+        <var name="sourcePortCategory" id="2235579912369416090" />
+      </scope>
+      <scope id="2235579912369416336" at="77,37,82,5">
+        <var name="interim_toNode" id="2235579912369416337" />
+      </scope>
+      <scope id="2235579912369416684" at="88,34,93,7">
+        <var name="parentComponentInstance" id="2235579912369416686" />
+      </scope>
+      <scope id="2235579912369416309" at="70,0,76,5">
+        <var name="interim_toNode" id="2235579912369416310" />
+      </scope>
+      <scope id="2235579912369416300" at="141,0,147,0">
+        <var name="p0" id="2235579912369416300" />
+        <var name="p1" id="2235579912369416300" />
+      </scope>
+      <scope id="2235579912369416446" at="147,0,153,0">
+        <var name="p0" id="2235579912369416446" />
+        <var name="p1" id="2235579912369416446" />
+      </scope>
+      <scope id="2235579912369416634" at="129,129,136,7" />
+      <scope id="2235579912369416621" at="128,100,137,5">
+        <var name="ele" id="2235579912369416622" />
+      </scope>
+      <scope id="5961697167168956650" at="153,100,162,26">
+        <var name="n0" id="5961697167168956650" />
+      </scope>
+      <scope id="5961697167168962590" at="179,102,188,26">
+        <var name="n0" id="5961697167168962590" />
+      </scope>
+      <scope id="2235579912369416669" at="85,131,95,21">
+        <var name="parentComponent" id="2235579912369416676" />
+      </scope>
+      <scope id="2235579912369416620" at="128,100,138,23" />
+      <scope id="5961697167168956650" at="153,0,164,0">
+        <var name="p0" id="5961697167168956650" />
+        <var name="p1" id="5961697167168956650" />
+        <var name="p2" id="5961697167168956650" />
+        <var name="p3" id="5961697167168956650" />
+      </scope>
+      <scope id="5961697167168962590" at="179,0,190,0">
+        <var name="p0" id="5961697167168962590" />
+        <var name="p1" id="5961697167168962590" />
+        <var name="p2" id="5961697167168962590" />
+        <var name="p3" id="5961697167168962590" />
+      </scope>
+      <scope id="2235579912369416668" at="85,0,97,0">
+        <var name="baseInstance" id="2235579912369416730" />
+        <var name="contextInstances" id="2235579912369416732" />
+        <var name="hierarchy" id="2235579912369416735" />
+      </scope>
+      <scope id="2235579912369416619" at="128,0,140,0">
+        <var name="deepContent" id="2235579912369416665" />
+        <var name="structures" id="2235579912369416662" />
+      </scope>
+      <scope id="5961697167168966225" at="164,114,177,26">
+        <var name="n0" id="5961697167168966225" />
+      </scope>
+      <scope id="5961697167168966225" at="164,0,179,0">
+        <var name="p0" id="5961697167168966225" />
+        <var name="p1" id="5961697167168966225" />
+        <var name="p2" id="5961697167168966225" />
+        <var name="p3" id="5961697167168966225" />
+        <var name="p4" id="5961697167168966225" />
+      </scope>
+      <scope id="2235579912369416192" at="57,89,82,5">
+        <var name="commonParent" id="2235579912369416247" />
+        <var name="contextInstances" id="2235579912369416210" />
+        <var name="hierarchyDn" id="2235579912369416236" />
+        <var name="hierarchyUp" id="2235579912369416225" />
+        <var name="importConnection" id="2235579912369416333" />
+        <var name="interim_fromNode" id="2235579912369416294" />
+        <var name="interim_fromPort" id="2235579912369416298" />
+      </scope>
+      <scope id="2235579912369416181" at="57,0,84,0">
+        <var name="fromNode" id="2235579912369416182" />
+        <var name="fromPort" id="2235579912369416184" />
+        <var name="toNode" id="2235579912369416186" />
+        <var name="toPort" id="2235579912369416188" />
+      </scope>
+      <scope id="2235579912369416442" at="98,163,125,18">
+        <var name="fromComponent" id="5961697167167823807" />
+        <var name="toComponent" id="5961697167167816888" />
+        <var name="toPort" id="2235579912369416444" />
+      </scope>
+      <scope id="2235579912369416441" at="98,0,127,0">
+        <var name="fromNode" id="2235579912369416606" />
+        <var name="fromPort" id="2235579912369416608" />
+        <var name="isExportConnection" id="2235579912369416614" />
+        <var name="isImportConnection" id="2235579912369416616" />
+        <var name="toNode" id="2235579912369416610" />
+        <var name="toPortCategory" id="2235579912369416612" />
+      </scope>
+      <unit id="2235579912369389787" at="191,0,204,0" name="org.iets3.components.functional.plugin.AutoConnectionType$CONCEPTS" />
+      <unit id="2235579912369389787" at="205,0,223,0" name="org.iets3.components.functional.plugin.AutoConnectionType$LINKS" />
+      <unit id="2235579912369389787" at="30,0,224,0" name="org.iets3.components.functional.plugin.AutoConnectionType" />
+    </file>
+  </root>
+  <root nodeRef="r:4eacb7af-6e28-46ae-a760-031f778faad7(org.iets3.components.functional.plugin)/4447013645446188331">
+    <file name="newItemsPaletteEntries.java">
+      <node id="4447013645446188331" at="44,35,45,78" concept="14" />
+      <node id="8465735925571889165" at="50,0,51,0" concept="4" trace="portCategory" />
+      <node id="8465735925574258314" at="51,0,52,0" concept="4" trace="parentComponent" />
+      <node id="8465735925574396129" at="52,0,53,0" concept="4" trace="portTargetConcept" />
+      <node id="8465735925574435642" at="53,0,54,0" concept="4" trace="substituteInfoFactory" />
+      <node id="8465735925575606180" at="54,0,55,0" concept="4" trace="categoryString" />
+      <node id="8465735925571893162" at="55,159,56,39" concept="3" />
+      <node id="8465735925574265139" at="56,39,57,45" concept="3" />
+      <node id="8465735925574423175" at="57,45,58,49" concept="3" />
+      <node id="8465735925574427613" at="58,49,59,57" concept="3" />
+      <node id="8465735925575609760" at="59,57,60,174" concept="3" />
+      <node id="2738918084014572624" at="64,27,65,70" concept="9" />
+      <node id="4447013645446228347" at="69,29,70,47" concept="9" />
+      <node id="4447013645446228354" at="74,48,75,30" concept="9" />
+      <node id="8465735925574274620" at="78,0,79,0" concept="7" trace="createPortType#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7055464025033001088" at="81,28,82,196" concept="8" />
+      <node id="342234303328454803" at="86,132,87,169" concept="8" />
+      <node id="8465735925574404222" at="87,169,88,0" concept="11" />
+      <node id="8465735925574482514" at="88,0,89,186" concept="8" />
+      <node id="8465735925575555810" at="90,13,91,61" concept="8" />
+      <node id="8465735925575583216" at="93,104,94,233" concept="3" />
+      <node id="8465735925574459355" at="97,13,98,0" concept="11" />
+      <node id="4447013645446228400" at="98,0,99,83" concept="3" />
+      <node id="4447013645446228409" at="99,83,100,0" concept="11" />
+      <node id="4447013645446228410" at="100,0,101,180" concept="8" />
+      <node id="5961697167167752899" at="101,180,102,202" concept="3" />
+      <node id="4447013645446228422" at="102,202,103,136" concept="3" />
+      <node id="7055464025033001159" at="104,13,105,0" concept="11" />
+      <node id="7055464025033001160" at="105,0,106,63" concept="9" />
+      <node id="7055464025033001165" at="108,9,109,83" concept="3" />
+      <node id="4447013645446228433" at="109,83,110,18" concept="9" />
+      <node id="4447013645446235035" at="116,59,117,238" concept="9" />
+      <node id="4853109711960861437" at="119,102,120,37" concept="8" />
+      <node id="8517957167768801798" at="121,84,122,103" concept="3" />
+      <node id="8517957167768801816" at="123,99,124,180" concept="3" />
+      <node id="8517957167768801827" at="125,16,126,79" concept="9" />
+      <node id="4853109711960872265" at="127,9,128,101" concept="8" />
+      <node id="4853109711961488695" at="128,101,129,98" concept="8" />
+      <node id="8465735925574581391" at="132,59,133,127" concept="9" />
+      <node id="4853109711961506266" at="135,12,136,69" concept="3" />
+      <node id="8465735925574647573" at="140,59,141,135" concept="9" />
+      <node id="4853109711961513362" at="143,12,144,72" concept="3" />
+      <node id="4853109711961528475" at="145,9,146,50" concept="9" />
+      <node id="4447013645446228413" at="150,81,151,64" concept="8" />
+      <node id="4447013645446228413" at="151,64,152,75" concept="3" />
+      <node id="4447013645446228413" at="152,75,153,82" concept="3" />
+      <node id="4447013645446228413" at="153,82,154,26" concept="9" />
+      <node id="8465735925574581389" at="156,84,157,76" concept="8" />
+      <node id="8465735925574581389" at="157,76,158,45" concept="3" />
+      <node id="8465735925574581389" at="158,45,159,26" concept="9" />
+      <node id="8465735925574647571" at="161,83,162,75" concept="8" />
+      <node id="8465735925574647571" at="162,75,163,50" concept="3" />
+      <node id="8465735925574647571" at="163,50,164,26" concept="9" />
+      <node id="4853109711962115546" at="166,52,167,40" concept="9" />
+      <node id="4447013645446188331" at="171,0,172,0" concept="12" trace="Port$gs" />
+      <node id="4447013645446188331" at="172,0,173,0" concept="12" trace="INamedConcept$Kd" />
+      <node id="4447013645446188331" at="173,0,174,0" concept="12" trace="AbstractComponentInstanceBase$QW" />
+      <node id="4447013645446188331" at="174,0,175,0" concept="12" trace="ComponentSubstructure$oB" />
+      <node id="4447013645446188331" at="175,0,176,0" concept="12" trace="Component$gR" />
+      <node id="4447013645446188331" at="176,0,177,0" concept="12" trace="DataItem$8n" />
+      <node id="4447013645446188331" at="177,0,178,0" concept="12" trace="DataPortCategory$ZY" />
+      <node id="4447013645446188331" at="178,0,179,0" concept="12" trace="ServiceDefinition$6o" />
+      <node id="4447013645446188331" at="179,0,180,0" concept="12" trace="ServicePortCategory$ts" />
+      <node id="4447013645446188331" at="180,0,181,0" concept="12" trace="IPortType$DL" />
+      <node id="4447013645446188331" at="181,0,182,0" concept="12" trace="PortCategory$Wm" />
+      <node id="4447013645446188331" at="182,0,183,0" concept="12" trace="DataItemPortType$kW" />
+      <node id="4447013645446188331" at="183,0,184,0" concept="12" trace="ServicePortType$Rm" />
+      <node id="4447013645446188331" at="187,0,188,0" concept="12" trace="name$MnvL" />
+      <node id="4447013645446188331" at="191,0,192,0" concept="12" trace="type$5Gl6" />
+      <node id="4447013645446188331" at="192,0,193,0" concept="12" trace="category$WD4l" />
+      <node id="4447013645446188331" at="193,0,194,0" concept="12" trace="ref$oSw" />
+      <node id="4447013645446188331" at="194,0,195,0" concept="12" trace="service$D09C" />
+      <node id="8517957167768801825" at="125,14,127,9" concept="1" />
+      <node id="4447013645446188331" at="44,0,47,0" concept="2" trace="newItemsPaletteEntries#()V" />
+      <node id="4853109711962097264" at="92,96,95,17" concept="6" />
+      <node id="4447013645446224682" at="116,0,119,0" concept="7" trace="appliesFor#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="8465735925574303244" at="132,0,135,0" concept="7" trace="createPortType#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8465735925574626581" at="140,0,143,0" concept="7" trace="createPortType#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4853109711962115546" at="166,0,169,0" concept="13" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="4447013645446228332" at="63,0,67,0" concept="7" trace="getIcon#()Ljavax/swing/Icon;" />
+      <node id="4447013645446228342" at="68,0,72,0" concept="7" trace="getText#()Ljava/lang/String;" />
+      <node id="4447013645446228349" at="73,0,77,0" concept="7" trace="getOutputConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8465735925575555810" at="91,61,96,15" concept="6" />
+      <node id="4447013645446228325" at="130,135,135,12" concept="8" />
+      <node id="3976863426690823376" at="138,144,143,12" concept="8" />
+      <node id="8465735925574581389" at="156,0,161,0" concept="13" trace="createDataItemPortType_7rtihm_a0a0a0a0a0e0b0a0a0g#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8465735925574647571" at="161,0,166,0" concept="13" trace="createServicePortType_7rtihm_a0a0a0a0a0f0b0a0a0g#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4447013645446228413" at="150,0,156,0" concept="13" trace="createPort_7rtihm_a0h0a0a0a0a0a0b0p4#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8465735925571890734" at="55,0,62,0" concept="2" trace="NewPortPaletteEntry#(Lorg/jetbrains/mps/openapi/language/SConcept;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lde/itemis/mps/editor/diagram/runtime/substitute/SubstituteInfoFactory;)V" />
+      <node id="8517957167768801796" at="120,37,127,9" concept="6" />
+      <node id="8465735925575555810" at="89,186,97,13" concept="1" />
+      <node id="4853109711961458205" at="129,98,137,9" concept="6" />
+      <node id="4853109711961473900" at="137,9,145,9" concept="6" />
+      <node id="7055464025033001130" at="85,89,104,13" concept="3" />
+      <node id="7055464025033001122" at="84,0,108,0" concept="7" trace="onChosen#(Lorg/jetbrains/mps/openapi/language/SConcept;Z)Lcom/intellij/openapi/ui/popup/PopupStep;" />
+      <node id="7055464025033001111" at="82,196,108,9" concept="8" />
+      <node id="4447013645446224690" at="119,0,148,0" concept="7" trace="getEntries#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/Iterable;" />
+      <node id="4447013645446228356" at="80,0,112,0" concept="7" trace="execute#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4447013645446203138" at="114,47,148,6" concept="9" />
+      <node id="4447013645446188337" at="114,0,150,0" concept="0" trace="get#()Lde/itemis/mps/editor/diagram/runtime/model/IPaletteEntryExtensionProvider;" />
+      <scope id="4447013645446188331" at="44,35,45,78" />
+      <scope id="4447013645446228336" at="64,27,65,70" />
+      <scope id="4447013645446228346" at="69,29,70,47" />
+      <scope id="4447013645446228353" at="74,48,75,30" />
+      <scope id="8465735925574274620" at="78,0,79,0">
+        <var name="portTarget" id="8465735925574277185" />
+      </scope>
+      <scope id="4853109711962097266" at="93,104,94,233" />
+      <scope id="4447013645446224688" at="116,59,117,238" />
+      <scope id="8517957167768801797" at="121,84,122,103" />
+      <scope id="8517957167768801815" at="123,99,124,180" />
+      <scope id="8517957167768801826" at="125,16,126,79" />
+      <scope id="8465735925574303250" at="132,59,133,127" />
+      <scope id="8465735925574626587" at="140,59,141,135" />
+      <scope id="4853109711962115546" at="166,52,167,40" />
+      <scope id="4447013645446188331" at="44,0,47,0" />
+      <scope id="8465735925575555814" at="92,96,95,17" />
+      <scope id="4447013645446224682" at="116,0,119,0">
+        <var name="concept" id="4447013645446224686" />
+      </scope>
+      <scope id="8465735925574303244" at="132,0,135,0">
+        <var name="portTarget" id="8465735925574303248" />
+      </scope>
+      <scope id="8465735925574626581" at="140,0,143,0">
+        <var name="portTarget" id="8465735925574626585" />
+      </scope>
+      <scope id="8465735925574581389" at="156,84,159,26">
+        <var name="n0" id="8465735925574581389" />
+      </scope>
+      <scope id="8465735925574647571" at="161,83,164,26">
+        <var name="n0" id="8465735925574647571" />
+      </scope>
+      <scope id="4853109711962115546" at="166,0,169,0">
+        <var name="str" id="4853109711962115546" />
+      </scope>
+      <scope id="4447013645446228332" at="63,0,67,0" />
+      <scope id="4447013645446228342" at="68,0,72,0" />
+      <scope id="4447013645446228349" at="73,0,77,0" />
+      <scope id="4447013645446228413" at="150,81,154,26">
+        <var name="n0" id="4447013645446228413" />
+      </scope>
+      <scope id="8465735925571890737" at="55,159,60,174" />
+      <scope id="8465735925574581389" at="156,0,161,0">
+        <var name="p0" id="8465735925574581389" />
+      </scope>
+      <scope id="8465735925574647571" at="161,0,166,0">
+        <var name="p0" id="8465735925574647571" />
+      </scope>
+      <scope id="8465735925575555810" at="90,13,96,15">
+        <var name="namedNewPortTarget" id="8465735925575555810" />
+      </scope>
+      <scope id="4853109711961458207" at="130,135,136,69">
+        <var name="newDataPortEntry" id="4447013645446228326" />
+      </scope>
+      <scope id="4853109711961473902" at="138,144,144,72">
+        <var name="newServicePortEntry" id="3976863426690823377" />
+      </scope>
+      <scope id="4447013645446228413" at="150,0,156,0">
+        <var name="p0" id="4447013645446228413" />
+        <var name="p1" id="4447013645446228413" />
+      </scope>
+      <scope id="8465735925571890734" at="55,0,62,0">
+        <var name="parentComponent" id="8465735925574253908" />
+        <var name="portCategory" id="8465735925571891380" />
+        <var name="portTargetConcept" id="8465735925574386530" />
+        <var name="substituteInfoFactory" id="8465735925574413121" />
+      </scope>
+      <scope id="7055464025033001132" at="86,132,103,136">
+        <var name="applicablePortTargetConcept" id="342234303328454804" />
+        <var name="newPortTarget" id="8465735925574482515" />
+        <var name="port" id="4447013645446228411" />
+      </scope>
+      <scope id="7055464025033001129" at="85,89,106,63" />
+      <scope id="7055464025033001122" at="84,0,108,0">
+        <var name="finalChoice" id="7055464025033001127" />
+        <var name="selectedCategory" id="7055464025033001125" />
+      </scope>
+      <scope id="4447013645446224697" at="119,102,146,50">
+        <var name="parentComponent" id="4853109711960861438" />
+        <var name="result" id="4853109711961488698" />
+        <var name="substituteInfoFactory" id="4853109711960872266" />
+      </scope>
+      <scope id="4447013645446228360" at="81,28,110,18">
+        <var name="portsPopup" id="7055464025033001112" />
+        <var name="subConcepts" id="7055464025033001089" />
+      </scope>
+      <scope id="4447013645446224690" at="119,0,148,0">
+        <var name="editorContext" id="342234303327825615" />
+        <var name="node" id="4447013645446224695" />
+      </scope>
+      <scope id="4447013645446228356" at="80,0,112,0" />
+      <scope id="4447013645446188341" at="114,47,148,6" />
+      <scope id="4447013645446188337" at="114,0,150,0" />
+      <unit id="4447013645446188331" at="186,0,189,0" name="org.iets3.components.functional.plugin.newItemsPaletteEntries$PROPS" />
+      <unit id="8465735925574303242" at="131,47,135,11" name="org.iets3.components.functional.plugin.newItemsPaletteEntries$1$1" />
+      <unit id="8465735925574626579" at="139,50,143,11" name="org.iets3.components.functional.plugin.newItemsPaletteEntries$1$2" />
+      <unit id="4447013645446188331" at="190,0,196,0" name="org.iets3.components.functional.plugin.newItemsPaletteEntries$LINKS" />
+      <unit id="4447013645446188331" at="170,0,185,0" name="org.iets3.components.functional.plugin.newItemsPaletteEntries$CONCEPTS" />
+      <unit id="7055464025033001119" at="83,78,108,7" name="org.iets3.components.functional.plugin.newItemsPaletteEntries$NewPortPaletteEntry$1" />
+      <unit id="4447013645446224680" at="115,15,148,5" name="org.iets3.components.functional.plugin.newItemsPaletteEntries$1" />
+      <unit id="8465735925571883393" at="49,0,113,0" name="org.iets3.components.functional.plugin.newItemsPaletteEntries$NewPortPaletteEntry" />
+      <unit id="4447013645446188331" at="43,0,197,0" name="org.iets3.components.functional.plugin.newItemsPaletteEntries" />
+    </file>
+  </root>
+  <root nodeRef="r:4eacb7af-6e28-46ae-a760-031f778faad7(org.iets3.components.functional.plugin)/4853109711964089542">
+    <file name="portsCreatingAssemblyConnectorsConnectionTypes.java">
+      <node id="4853109711964089542" at="28,59,29,81" concept="14" />
+      <node id="2235579912369780928" at="34,0,35,0" concept="4" trace="_portType" />
+      <node id="4853109711964556254" at="36,99,37,68" concept="14" />
+      <node id="2235579912369785252" at="37,68,38,27" concept="3" />
+      <node id="2235579912369685672" at="41,86,42,51" concept="3" />
+      <node id="2235579912369809872" at="46,32,47,23" concept="9" />
+      <node id="2235579912370341379" at="52,54,53,61" concept="8" />
+      <node id="998995195013675359" at="53,61,54,65" concept="10" />
+      <node id="2235579912370336209" at="54,65,55,282" concept="3" />
+      <node id="2235579912370344812" at="55,282,56,24" concept="9" />
+      <node id="1924890691633493832" at="62,70,63,132" concept="9" />
+      <node id="7960080612131743365" at="65,107,66,301" concept="8" />
+      <node id="5480416882753654929" at="66,301,67,302" concept="8" />
+      <node id="4853109711964603620" at="67,302,68,321" concept="8" />
+      <node id="6533924485119575277" at="68,321,69,310" concept="9" />
+      <node id="4853109711964594286" at="73,83,74,76" concept="8" />
+      <node id="4853109711964594286" at="74,76,75,45" concept="3" />
+      <node id="4853109711964594286" at="75,45,76,26" concept="9" />
+      <node id="4853109711964601775" at="78,79,79,80" concept="8" />
+      <node id="4853109711964601775" at="79,80,80,26" concept="9" />
+      <node id="4853109711964613558" at="82,83,83,75" concept="8" />
+      <node id="4853109711964613558" at="83,75,84,50" concept="3" />
+      <node id="4853109711964613558" at="84,50,85,26" concept="9" />
+      <node id="4853109711964613563" at="87,76,88,76" concept="8" />
+      <node id="4853109711964613563" at="88,76,89,26" concept="9" />
+      <node id="4853109711964089542" at="93,0,94,0" concept="12" trace="ComponentSubstructure$oB" />
+      <node id="4853109711964089542" at="94,0,95,0" concept="12" trace="IVisibleElementProvider$$O" />
+      <node id="4853109711964089542" at="95,0,96,0" concept="12" trace="DataItem$8n" />
+      <node id="4853109711964089542" at="96,0,97,0" concept="12" trace="ServiceDefinition$6o" />
+      <node id="4853109711964089542" at="97,0,98,0" concept="12" trace="DataItemPortType$kW" />
+      <node id="4853109711964089542" at="98,0,99,0" concept="12" trace="ProducesPortCategory$f1" />
+      <node id="4853109711964089542" at="99,0,100,0" concept="12" trace="ServicePortType$Rm" />
+      <node id="4853109711964089542" at="100,0,101,0" concept="12" trace="UsesPortCategory$Yt" />
+      <node id="4853109711964089542" at="104,0,105,0" concept="12" trace="name$MnvL" />
+      <node id="4853109711964089542" at="108,0,109,0" concept="12" trace="ref$oSw" />
+      <node id="4853109711964089542" at="109,0,110,0" concept="12" trace="service$D09C" />
+      <node id="4853109711964089542" at="28,0,31,0" concept="2" trace="portsCreatingAssemblyConnectorsConnectionTypes#()V" />
+      <node id="5480416882753654966" at="41,0,44,0" concept="7" trace="create#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="1924890691633467112" at="62,0,65,0" concept="7" trace="appliesFor#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="4853109711964541174" at="36,0,40,0" concept="2" trace="PortsCreatingAutoConnectionType#(Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2235579912369805196" at="45,0,49,0" concept="7" trace="getPortType#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4853109711964601775" at="78,0,82,0" concept="13" trace="createProducesPortCategory_nnx36a_c0a0a0a0a1a1a0a0a8#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4853109711964613563" at="87,0,91,0" concept="13" trace="createUsesPortCategory_nnx36a_c0a0a0a0a0d0b0a0a0i#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4853109711964594286" at="73,0,78,0" concept="13" trace="createDataItemPortType_nnx36a_b0a0a0a0a1a1a0a0a8#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4853109711964613558" at="82,0,87,0" concept="13" trace="createServicePortType_nnx36a_b0a0a0a0a0d0b0a0a0i#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2235579912370333955" at="52,0,58,0" concept="13" trace="getIcon#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljavax/swing/Icon;" />
+      <node id="1924890691633467120" at="65,0,71,0" concept="7" trace="getConnectionTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/Iterable;" />
+      <node id="1924890691633351526" at="60,50,71,6" concept="9" />
+      <node id="4853109711964089548" at="60,0,73,0" concept="0" trace="get#()Lde/itemis/mps/editor/diagram/runtime/model/IConnectionTypesExtensionProvider;" />
+      <scope id="4853109711964089542" at="28,59,29,81" />
+      <scope id="5480416882753654979" at="41,86,42,51" />
+      <scope id="2235579912369805200" at="46,32,47,23" />
+      <scope id="1924890691633467118" at="62,70,63,132" />
+      <scope id="4853109711964541177" at="36,99,38,27" />
+      <scope id="4853109711964601775" at="78,79,80,26">
+        <var name="n0" id="4853109711964601775" />
+      </scope>
+      <scope id="4853109711964613563" at="87,76,89,26">
+        <var name="n0" id="4853109711964613563" />
+      </scope>
+      <scope id="4853109711964089542" at="28,0,31,0" />
+      <scope id="5480416882753654966" at="41,0,44,0">
+        <var name="fromNode" id="5480416882753654967" />
+        <var name="fromPort" id="5480416882753654969" />
+        <var name="toNode" id="5480416882753654971" />
+        <var name="toPort" id="5480416882753654973" />
+      </scope>
+      <scope id="1924890691633467112" at="62,0,65,0">
+        <var name="diagramNodeConcept" id="1924890691633467116" />
+      </scope>
+      <scope id="4853109711964594286" at="73,83,76,26">
+        <var name="n0" id="4853109711964594286" />
+      </scope>
+      <scope id="4853109711964613558" at="82,83,85,26">
+        <var name="n0" id="4853109711964613558" />
+      </scope>
+      <scope id="4853109711964541174" at="36,0,40,0">
+        <var name="name" id="4853109711964553036" />
+        <var name="portType" id="4853109711964541273" />
+        <var name="sourcePortCategory" id="4853109711964541282" />
+      </scope>
+      <scope id="2235579912369805196" at="45,0,49,0" />
+      <scope id="2235579912370333958" at="52,54,56,24">
+        <var name="icon" id="2235579912370341380" />
+      </scope>
+      <scope id="1924890691633467127" at="65,107,69,310">
+        <var name="dataItems" id="7960080612131743366" />
+        <var name="result" id="5480416882753654930" />
+        <var name="serviceDefs" id="4853109711964603621" />
+      </scope>
+      <scope id="4853109711964601775" at="78,0,82,0" />
+      <scope id="4853109711964613563" at="87,0,91,0" />
+      <scope id="4853109711964594286" at="73,0,78,0">
+        <var name="p0" id="4853109711964594286" />
+      </scope>
+      <scope id="4853109711964613558" at="82,0,87,0">
+        <var name="p0" id="4853109711964613558" />
+      </scope>
+      <scope id="2235579912370333955" at="52,0,58,0">
+        <var name="portType" id="2235579912370338821" />
+      </scope>
+      <scope id="1924890691633467120" at="65,0,71,0">
+        <var name="diagramNode" id="1924890691633467125" />
+        <var name="editorContext" id="4853109711965326574" />
+      </scope>
+      <scope id="4853109711964089552" at="60,50,71,6" />
+      <scope id="4853109711964089548" at="60,0,73,0" />
+      <unit id="4853109711964089542" at="103,0,106,0" name="org.iets3.components.functional.plugin.portsCreatingAssemblyConnectorsConnectionTypes$PROPS" />
+      <unit id="4853109711964089542" at="107,0,111,0" name="org.iets3.components.functional.plugin.portsCreatingAssemblyConnectorsConnectionTypes$LINKS" />
+      <unit id="2235579912370391554" at="51,0,59,0" name="org.iets3.components.functional.plugin.portsCreatingAssemblyConnectorsConnectionTypes$IconHelper" />
+      <unit id="1924890691633467110" at="61,15,71,5" name="org.iets3.components.functional.plugin.portsCreatingAssemblyConnectorsConnectionTypes$1" />
+      <unit id="4853109711964089542" at="92,0,102,0" name="org.iets3.components.functional.plugin.portsCreatingAssemblyConnectorsConnectionTypes$CONCEPTS" />
+      <unit id="4853109711964533829" at="33,0,50,0" name="org.iets3.components.functional.plugin.portsCreatingAssemblyConnectorsConnectionTypes$PortsCreatingAutoConnectionType" />
+      <unit id="4853109711964089542" at="27,0,112,0" name="org.iets3.components.functional.plugin.portsCreatingAssemblyConnectorsConnectionTypes" />
+    </file>
+  </root>
+  <root nodeRef="r:4eacb7af-6e28-46ae-a760-031f778faad7(org.iets3.components.functional.plugin)/5480416882759602699">
+    <file name="portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes.java">
+      <node id="5480416882759602699" at="32,70,33,81" concept="14" />
+      <node id="2235579912369757739" at="38,0,39,0" concept="4" trace="_portTargetConcept" />
+      <node id="2235579912369757745" at="39,0,40,0" concept="4" trace="_categoryString" />
+      <node id="2235579912369757748" at="40,0,41,0" concept="4" trace="_substituteInfoFactory" />
+      <node id="2235579912369851754" at="41,0,42,0" concept="4" trace="_portType" />
+      <node id="2235579912369724118" at="43,171,44,77" concept="14" />
+      <node id="2235579912369758848" at="44,77,45,45" concept="3" />
+      <node id="2235579912369758885" at="45,45,46,53" concept="3" />
+      <node id="2235579912369758922" at="46,53,47,112" concept="3" />
+      <node id="2235579912369758792" at="47,112,48,0" concept="11" />
+      <node id="2235579912369929068" at="51,86,52,106" concept="8" />
+      <node id="2235579912369929076" at="52,106,53,103" concept="8" />
+      <node id="2235579912369929084" at="53,103,54,165" concept="8" />
+      <node id="2235579912369929092" at="54,165,55,180" concept="8" />
+      <node id="2235579912369929105" at="56,7,57,55" concept="8" />
+      <node id="2235579912369929110" at="59,98,60,231" concept="3" />
+      <node id="2235579912369929142" at="63,7,64,138" concept="3" />
+      <node id="2235579912369953248" at="64,138,65,48" concept="3" />
+      <node id="2235579912369964344" at="65,48,66,0" concept="11" />
+      <node id="2235579912369724138" at="66,0,67,51" concept="3" />
+      <node id="2235579912369972824" at="71,32,72,23" concept="9" />
+      <node id="2235579912369731306" at="75,0,76,0" concept="7" trace="createPortType#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2235579912370442146" at="79,74,80,61" concept="8" />
+      <node id="2235579912370442149" at="80,61,81,203" concept="3" />
+      <node id="2235579912370442159" at="81,203,82,24" concept="9" />
+      <node id="4853109711964864179" at="88,70,89,132" concept="9" />
+      <node id="4853109711964864191" at="91,107,92,96" concept="8" />
+      <node id="4853109711965351898" at="92,96,93,108" concept="8" />
+      <node id="4853109711965071727" at="97,59,98,128" concept="9" />
+      <node id="4853109711965089904" at="105,59,106,136" concept="9" />
+      <node id="4853109711964864196" at="109,9,110,22" concept="9" />
+      <node id="4853109711965071725" at="114,85,115,76" concept="8" />
+      <node id="4853109711965071725" at="115,76,116,45" concept="3" />
+      <node id="4853109711965071725" at="116,45,117,26" concept="9" />
+      <node id="4853109711965103102" at="119,78,120,80" concept="8" />
+      <node id="4853109711965103102" at="120,80,121,26" concept="9" />
+      <node id="4853109711965089905" at="123,84,124,75" concept="8" />
+      <node id="4853109711965089905" at="124,75,125,50" concept="3" />
+      <node id="4853109711965089905" at="125,50,126,26" concept="9" />
+      <node id="4853109711965111012" at="128,74,129,76" concept="8" />
+      <node id="4853109711965111012" at="129,76,130,26" concept="9" />
+      <node id="2235579912369929139" at="132,52,133,40" concept="9" />
+      <node id="5480416882759602699" at="137,0,138,0" concept="12" trace="ComponentSubstructure$oB" />
+      <node id="5480416882759602699" at="138,0,139,0" concept="12" trace="Component$gR" />
+      <node id="5480416882759602699" at="139,0,140,0" concept="12" trace="INamedConcept$Kd" />
+      <node id="5480416882759602699" at="140,0,141,0" concept="12" trace="DataItem$8n" />
+      <node id="5480416882759602699" at="141,0,142,0" concept="12" trace="ServiceDefinition$6o" />
+      <node id="5480416882759602699" at="142,0,143,0" concept="12" trace="DataItemPortType$kW" />
+      <node id="5480416882759602699" at="143,0,144,0" concept="12" trace="ProducesPortCategory$f1" />
+      <node id="5480416882759602699" at="144,0,145,0" concept="12" trace="ServicePortType$Rm" />
+      <node id="5480416882759602699" at="145,0,146,0" concept="12" trace="UsesPortCategory$Yt" />
+      <node id="5480416882759602699" at="149,0,150,0" concept="12" trace="name$MnvL" />
+      <node id="5480416882759602699" at="153,0,154,0" concept="12" trace="ref$oSw" />
+      <node id="5480416882759602699" at="154,0,155,0" concept="12" trace="service$D09C" />
+      <node id="5480416882759602699" at="32,0,35,0" concept="2" trace="portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes#()V" />
+      <node id="2235579912369929108" at="58,90,61,11" concept="6" />
+      <node id="4853109711964864173" at="88,0,91,0" concept="7" trace="appliesFor#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="2235579912369929139" at="132,0,135,0" concept="13" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="2235579912369820793" at="70,0,74,0" concept="7" trace="getPortType#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4853109711965062849" at="96,0,100,0" concept="7" trace="createPortType#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4853109711965089898" at="104,0,108,0" concept="7" trace="createPortType#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4853109711965103102" at="119,0,123,0" concept="13" trace="createProducesPortCategory_ix726j_b0a0a0a0c0b0a0a0i#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4853109711965111012" at="128,0,132,0" concept="13" trace="createUsesPortCategory_ix726j_b0a0a0a0d0b0a0a0i#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2235579912369929105" at="57,55,62,9" concept="6" />
+      <node id="2235579912370442144" at="79,0,84,0" concept="13" trace="getIcon#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Ljavax/swing/Icon;" />
+      <node id="4853109711965071725" at="114,0,119,0" concept="13" trace="createDataItemPortType_ix726j_a0a0a0a0a0a2a1a0a0a8#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4853109711965089905" at="123,0,128,0" concept="13" trace="createServicePortType_ix726j_a0a0a0a0a0a3a1a0a0a8#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5480416882753660296" at="94,201,100,13" concept="3" />
+      <node id="4853109711965084464" at="102,210,108,13" concept="3" />
+      <node id="2235579912369724109" at="43,0,50,0" concept="2" trace="PortsAndTypeCreatingAutoConnectionType#(Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lde/itemis/mps/editor/diagram/runtime/substitute/SubstituteInfoFactory;)V" />
+      <node id="2235579912369929105" at="55,180,63,7" concept="1" />
+      <node id="4853109711965816142" at="93,108,101,9" concept="6" />
+      <node id="4853109711965892662" at="101,9,109,9" concept="6" />
+      <node id="2235579912369724126" at="51,0,69,0" concept="7" trace="create#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="4853109711964864184" at="91,0,112,0" concept="7" trace="getConnectionTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/Iterable;" />
+      <node id="4853109711964864168" at="86,50,112,6" concept="9" />
+      <node id="5480416882759602705" at="86,0,114,0" concept="0" trace="get#()Lde/itemis/mps/editor/diagram/runtime/model/IConnectionTypesExtensionProvider;" />
+      <scope id="5480416882759602699" at="32,70,33,81" />
+      <scope id="2235579912369929109" at="59,98,60,231" />
+      <scope id="2235579912369820797" at="71,32,72,23" />
+      <scope id="2235579912369731306" at="75,0,76,0">
+        <var name="portTarget" id="2235579912369731310" />
+      </scope>
+      <scope id="4853109711964864178" at="88,70,89,132" />
+      <scope id="4853109711965062855" at="97,59,98,128" />
+      <scope id="4853109711965089903" at="105,59,106,136" />
+      <scope id="2235579912369929139" at="132,52,133,40" />
+      <scope id="4853109711965103102" at="119,78,121,26">
+        <var name="n0" id="4853109711965103102" />
+      </scope>
+      <scope id="4853109711965111012" at="128,74,130,26">
+        <var name="n0" id="4853109711965111012" />
+      </scope>
+      <scope id="5480416882759602699" at="32,0,35,0" />
+      <scope id="2235579912369929107" at="58,90,61,11" />
+      <scope id="2235579912370442145" at="79,74,82,24">
+        <var name="icon" id="2235579912370442147" />
+      </scope>
+      <scope id="4853109711964864173" at="88,0,91,0">
+        <var name="diagramNodeConcept" id="4853109711964864176" />
+      </scope>
+      <scope id="4853109711965071725" at="114,85,117,26">
+        <var name="n0" id="4853109711965071725" />
+      </scope>
+      <scope id="4853109711965089905" at="123,84,126,26">
+        <var name="n0" id="4853109711965089905" />
+      </scope>
+      <scope id="2235579912369929139" at="132,0,135,0">
+        <var name="str" id="2235579912369929139" />
+      </scope>
+      <scope id="2235579912369820793" at="70,0,74,0" />
+      <scope id="4853109711965062849" at="96,0,100,0">
+        <var name="portTarget" id="4853109711965062853" />
+      </scope>
+      <scope id="4853109711965089898" at="104,0,108,0">
+        <var name="portTarget" id="4853109711965089901" />
+      </scope>
+      <scope id="4853109711965103102" at="119,0,123,0" />
+      <scope id="4853109711965111012" at="128,0,132,0" />
+      <scope id="2235579912369724117" at="43,171,48,0" />
+      <scope id="2235579912370442144" at="79,0,84,0">
+        <var name="portTargetConcept" id="2235579912370442163" />
+      </scope>
+      <scope id="4853109711965071725" at="114,0,119,0">
+        <var name="p0" id="4853109711965071725" />
+      </scope>
+      <scope id="4853109711965089905" at="123,0,128,0">
+        <var name="p0" id="4853109711965089905" />
+      </scope>
+      <scope id="2235579912369929105" at="56,7,62,9">
+        <var name="namedNewPortTarget" id="2235579912369929105" />
+      </scope>
+      <scope id="4853109711965816144" at="94,201,100,13" />
+      <scope id="4853109711965892664" at="102,210,108,13" />
+      <scope id="2235579912369724109" at="43,0,50,0">
+        <var name="name" id="2235579912369750171" />
+        <var name="portTargetConcept" id="2235579912369750175" />
+        <var name="sourcePortCategory" id="2235579912369750173" />
+        <var name="substituteInfoFactory" id="2235579912369750177" />
+      </scope>
+      <scope id="2235579912369724137" at="51,86,67,51">
+        <var name="applicablePortTargetConcept" id="2235579912369929085" />
+        <var name="newPortTarget" id="2235579912369929093" />
+        <var name="parentComponent" id="2235579912369929077" />
+        <var name="ss" id="2235579912369929069" />
+      </scope>
+      <scope id="2235579912369724126" at="51,0,69,0">
+        <var name="fromNode" id="2235579912369724127" />
+        <var name="fromPort" id="2235579912369724129" />
+        <var name="toNode" id="2235579912369724131" />
+        <var name="toPort" id="2235579912369724133" />
+      </scope>
+      <scope id="4853109711964864190" at="91,107,110,22">
+        <var name="result" id="4853109711964864192" />
+        <var name="substituteInfoFactory" id="4853109711965351899" />
+      </scope>
+      <scope id="4853109711964864184" at="91,0,112,0">
+        <var name="diagramNode" id="4853109711964864188" />
+        <var name="editorContext" id="4853109711965325691" />
+      </scope>
+      <scope id="5480416882759602709" at="86,50,112,6" />
+      <scope id="5480416882759602705" at="86,0,114,0" />
+      <unit id="5480416882759602699" at="148,0,151,0" name="org.iets3.components.functional.plugin.portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes$PROPS" />
+      <unit id="5480416882759602699" at="152,0,156,0" name="org.iets3.components.functional.plugin.portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes$LINKS" />
+      <unit id="4853109711965062847" at="95,55,100,11" name="org.iets3.components.functional.plugin.portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes$1$1" />
+      <unit id="4853109711965089896" at="103,55,108,11" name="org.iets3.components.functional.plugin.portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes$1$2" />
+      <unit id="2235579912370442143" at="78,0,85,0" name="org.iets3.components.functional.plugin.portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes$IconHelper" />
+      <unit id="5480416882759602699" at="136,0,147,0" name="org.iets3.components.functional.plugin.portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes$CONCEPTS" />
+      <unit id="4853109711964864171" at="87,15,112,5" name="org.iets3.components.functional.plugin.portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes$1" />
+      <unit id="2235579912369724108" at="37,0,77,0" name="org.iets3.components.functional.plugin.portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes$PortsAndTypeCreatingAutoConnectionType" />
+      <unit id="5480416882759602699" at="31,0,157,0" name="org.iets3.components.functional.plugin.portsAndPortTypeCreatingAssemblyConnectorsConnectionTypes" />
+    </file>
+  </root>
+  <root nodeRef="r:4eacb7af-6e28-46ae-a760-031f778faad7(org.iets3.components.functional.plugin)/9051847868913528259">
+    <file name="PortCategoryPopupStep.java">
+      <node id="7477049102798028948" at="17,59,18,51" concept="14" />
+      <node id="9051847868914196677" at="24,44,25,50" concept="9" />
+      <node id="7055464025032931018" at="30,48,31,61" concept="8" />
+      <node id="7055464025032927221" at="31,61,32,179" concept="3" />
+      <node id="7055464025032942793" at="32,179,33,24" concept="9" />
+      <node id="9051847868913625599" at="17,0,20,0" concept="2" trace="PortCategoryPopupStep#(Ljava/util/List;)V" />
+      <node id="9051847868914194273" at="22,0,27,0" concept="7" trace="getTextFor#(Lorg/jetbrains/mps/openapi/language/SConcept;)Ljava/lang/String;" />
+      <node id="9051847868914200032" at="29,0,35,0" concept="7" trace="getIconFor#(Lorg/jetbrains/mps/openapi/language/SConcept;)Ljavax/swing/Icon;" />
+      <scope id="9051847868913625603" at="17,59,18,51" />
+      <scope id="9051847868914194281" at="24,44,25,50" />
+      <scope id="9051847868913625599" at="17,0,20,0">
+        <var name="categories" id="9051847868913626130" />
+      </scope>
+      <scope id="9051847868914200039" at="30,48,33,24">
+        <var name="result" id="7055464025032931019" />
+      </scope>
+      <scope id="9051847868914194273" at="22,0,27,0">
+        <var name="value" id="9051847868914194278" />
+      </scope>
+      <scope id="9051847868914200032" at="29,0,35,0">
+        <var name="value" id="9051847868914200036" />
+      </scope>
+      <unit id="9051847868913528259" at="15,0,36,0" name="org.iets3.components.functional.plugin.PortCategoryPopupStep" />
+    </file>
+  </root>
+  <root nodeRef="r:4eacb7af-6e28-46ae-a760-031f778faad7(org.iets3.components.functional.plugin)/9051847868920296051">
+    <file name="dataItemsPaletteEntries.java">
+      <node id="9051847868920296051" at="44,36,45,78" concept="14" />
+      <node id="8465735925573277395" at="50,0,51,0" concept="4" trace="portCategory" />
+      <node id="8465735925573316873" at="51,0,52,0" concept="4" trace="portType" />
+      <node id="8465735925573339964" at="52,0,53,0" concept="4" trace="parentComponent" />
+      <node id="8465735925573293881" at="53,91,54,39" concept="3" />
+      <node id="8465735925573496135" at="54,39,55,31" concept="3" />
+      <node id="8465735925573500324" at="55,31,56,45" concept="3" />
+      <node id="2738918084014593732" at="58,27,59,135" concept="9" />
+      <node id="7960080612131756766" at="63,29,64,92" concept="9" />
+      <node id="7960080612131756775" at="68,48,69,30" concept="9" />
+      <node id="9051847868913463297" at="73,28,74,0" concept="11" />
+      <node id="9051847868913557499" at="74,0,75,196" concept="8" />
+      <node id="7960080612131756782" at="79,132,80,134" concept="8" />
+      <node id="5961697167161362100" at="80,134,81,202" concept="3" />
+      <node id="7960080612131756792" at="81,202,82,136" concept="3" />
+      <node id="9051847868915965684" at="83,13,84,0" concept="11" />
+      <node id="9051847868914236449" at="84,0,85,63" concept="9" />
+      <node id="9051847868914211327" at="87,9,88,83" concept="3" />
+      <node id="9051847868915964535" at="88,83,89,18" concept="9" />
+      <node id="7960080612131756806" at="92,35,93,143" concept="9" />
+      <node id="9051847868920350686" at="99,59,100,238" concept="9" />
+      <node id="8517957167768729139" at="102,96,103,75" concept="8" />
+      <node id="8517957167768735058" at="104,84,105,104" concept="3" />
+      <node id="8517957167768750490" at="106,99,107,181" concept="3" />
+      <node id="8517957167768739420" at="108,16,109,79" concept="9" />
+      <node id="8465735925573393437" at="110,9,111,480" concept="8" />
+      <node id="8465735925573405366" at="111,480,112,499" concept="8" />
+      <node id="7960080612133219588" at="112,499,113,95" concept="9" />
+      <node id="7960080612131756785" at="117,81,118,64" concept="8" />
+      <node id="7960080612131756785" at="118,64,119,75" concept="3" />
+      <node id="7960080612131756785" at="119,75,120,82" concept="3" />
+      <node id="7960080612131756785" at="120,82,121,26" concept="9" />
+      <node id="8465735925573393448" at="123,83,124,76" concept="8" />
+      <node id="8465735925573393448" at="124,76,125,45" concept="3" />
+      <node id="8465735925573393448" at="125,45,126,26" concept="9" />
+      <node id="8465735925573405378" at="128,82,129,75" concept="8" />
+      <node id="8465735925573405378" at="129,75,130,50" concept="3" />
+      <node id="8465735925573405378" at="130,50,131,26" concept="9" />
+      <node id="9051847868920296051" at="135,0,136,0" concept="12" trace="Port$gs" />
+      <node id="9051847868920296051" at="136,0,137,0" concept="12" trace="Chunk$sT" />
+      <node id="9051847868920296051" at="137,0,138,0" concept="12" trace="ComponentSubstructure$oB" />
+      <node id="9051847868920296051" at="138,0,139,0" concept="12" trace="AbstractComponentInstanceBase$QW" />
+      <node id="9051847868920296051" at="139,0,140,0" concept="12" trace="Component$gR" />
+      <node id="9051847868920296051" at="140,0,141,0" concept="12" trace="IVisibleElementProvider$$O" />
+      <node id="9051847868920296051" at="141,0,142,0" concept="12" trace="DataItem$8n" />
+      <node id="9051847868920296051" at="142,0,143,0" concept="12" trace="DataPortCategory$ZY" />
+      <node id="9051847868920296051" at="143,0,144,0" concept="12" trace="ServiceDefinition$6o" />
+      <node id="9051847868920296051" at="144,0,145,0" concept="12" trace="ServicePortCategory$ts" />
+      <node id="9051847868920296051" at="145,0,146,0" concept="12" trace="IPortType$DL" />
+      <node id="9051847868920296051" at="146,0,147,0" concept="12" trace="PortCategory$Wm" />
+      <node id="9051847868920296051" at="147,0,148,0" concept="12" trace="DataItemPortType$kW" />
+      <node id="9051847868920296051" at="148,0,149,0" concept="12" trace="ServicePortType$Rm" />
+      <node id="9051847868920296051" at="152,0,153,0" concept="12" trace="name$MnvL" />
+      <node id="9051847868920296051" at="156,0,157,0" concept="12" trace="type$5Gl6" />
+      <node id="9051847868920296051" at="157,0,158,0" concept="12" trace="category$WD4l" />
+      <node id="9051847868920296051" at="158,0,159,0" concept="12" trace="ref$oSw" />
+      <node id="9051847868920296051" at="159,0,160,0" concept="12" trace="service$D09C" />
+      <node id="8517957167768737408" at="108,14,110,9" concept="1" />
+      <node id="9051847868920296051" at="44,0,47,0" concept="2" trace="dataItemsPaletteEntries#()V" />
+      <node id="7960080612131756754" at="58,0,61,0" concept="7" trace="getIcon#()Ljavax/swing/Icon;" />
+      <node id="7960080612131756802" at="92,0,95,0" concept="7" trace="getFolderName#()Ljava/lang/String;" />
+      <node id="9051847868920333516" at="99,0,102,0" concept="7" trace="appliesFor#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7960080612131756762" at="62,0,66,0" concept="7" trace="getText#()Ljava/lang/String;" />
+      <node id="7960080612131756771" at="67,0,71,0" concept="7" trace="getOutputConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8465735925573285608" at="53,0,58,0" concept="2" trace="PortPaletteEntry#(Lorg/jetbrains/mps/openapi/language/SConcept;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9051847868916427655" at="78,89,83,13" concept="3" />
+      <node id="8465735925573393448" at="123,0,128,0" concept="13" trace="createDataItemPortType_76196d_b0a0a0a0a2a1a0a0a6#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8465735925573405378" at="128,0,133,0" concept="13" trace="createServicePortType_76196d_b0a0a0a0a3a1a0a0a6#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7960080612131756785" at="117,0,123,0" concept="13" trace="createPort_76196d_a0a0a0a0a0a0a0c0k4#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8517957167768681394" at="103,75,110,9" concept="6" />
+      <node id="9051847868914236441" at="77,0,87,0" concept="7" trace="onChosen#(Lorg/jetbrains/mps/openapi/language/SConcept;Z)Lcom/intellij/openapi/ui/popup/PopupStep;" />
+      <node id="9051847868914236431" at="75,196,87,9" concept="8" />
+      <node id="9051847868920333524" at="102,0,115,0" concept="7" trace="getEntries#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/Iterable;" />
+      <node id="9051847868920331071" at="97,47,115,6" concept="9" />
+      <node id="7960080612131756778" at="72,0,91,0" concept="7" trace="execute#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="9051847868920296057" at="97,0,117,0" concept="0" trace="get#()Lde/itemis/mps/editor/diagram/runtime/model/IPaletteEntryExtensionProvider;" />
+      <scope id="9051847868920296051" at="44,36,45,78" />
+      <scope id="7960080612131756757" at="58,27,59,135" />
+      <scope id="7960080612131756765" at="63,29,64,92" />
+      <scope id="7960080612131756774" at="68,48,69,30" />
+      <scope id="7960080612131756805" at="92,35,93,143" />
+      <scope id="9051847868920333522" at="99,59,100,238" />
+      <scope id="8517957167768681396" at="104,84,105,104" />
+      <scope id="8517957167768725705" at="106,99,107,181" />
+      <scope id="8517957167768737409" at="108,16,109,79" />
+      <scope id="9051847868920296051" at="44,0,47,0" />
+      <scope id="8465735925573285611" at="53,91,56,45" />
+      <scope id="7960080612131756754" at="58,0,61,0" />
+      <scope id="9051847868916427659" at="79,132,82,136">
+        <var name="port" id="7960080612131756783" />
+      </scope>
+      <scope id="7960080612131756802" at="92,0,95,0" />
+      <scope id="9051847868920333516" at="99,0,102,0">
+        <var name="concept" id="9051847868920333520" />
+      </scope>
+      <scope id="8465735925573393448" at="123,83,126,26">
+        <var name="n0" id="8465735925573393448" />
+      </scope>
+      <scope id="8465735925573405378" at="128,82,131,26">
+        <var name="n0" id="8465735925573405378" />
+      </scope>
+      <scope id="7960080612131756762" at="62,0,66,0" />
+      <scope id="7960080612131756771" at="67,0,71,0" />
+      <scope id="7960080612131756785" at="117,81,121,26">
+        <var name="n0" id="7960080612131756785" />
+      </scope>
+      <scope id="8465735925573285608" at="53,0,58,0">
+        <var name="parentComponent" id="8465735925573343461" />
+        <var name="portCategory" id="8465735925573287734" />
+        <var name="portType" id="8465735925573309391" />
+      </scope>
+      <scope id="8465735925573393448" at="123,0,128,0">
+        <var name="p0" id="8465735925573393448" />
+      </scope>
+      <scope id="8465735925573405378" at="128,0,133,0">
+        <var name="p0" id="8465735925573405378" />
+      </scope>
+      <scope id="7960080612131756785" at="117,0,123,0">
+        <var name="p0" id="7960080612131756785" />
+        <var name="p1" id="7960080612131756785" />
+      </scope>
+      <scope id="9051847868914236448" at="78,89,85,63" />
+      <scope id="9051847868914236441" at="77,0,87,0">
+        <var name="finalChoice" id="9051847868914236446" />
+        <var name="selectedCategory" id="9051847868914236444" />
+      </scope>
+      <scope id="9051847868920333531" at="102,96,113,95">
+        <var name="dataItemPorts" id="8465735925573393438" />
+        <var name="servicePorts" id="8465735925573405367" />
+        <var name="targetComp" id="8517957167768729140" />
+      </scope>
+      <scope id="9051847868920333524" at="102,0,115,0">
+        <var name="editorContext" id="342234303327815863" />
+        <var name="node" id="9051847868920333529" />
+      </scope>
+      <scope id="7960080612131756781" at="73,28,89,18">
+        <var name="portsPopup" id="9051847868914236432" />
+        <var name="subConcepts" id="9051847868913557500" />
+      </scope>
+      <scope id="9051847868920296061" at="97,47,115,6" />
+      <scope id="7960080612131756778" at="72,0,91,0" />
+      <scope id="9051847868920296057" at="97,0,117,0" />
+      <unit id="9051847868920296051" at="151,0,154,0" name="org.iets3.components.functional.plugin.dataItemsPaletteEntries$PROPS" />
+      <unit id="9051847868920296051" at="155,0,161,0" name="org.iets3.components.functional.plugin.dataItemsPaletteEntries$LINKS" />
+      <unit id="9051847868914236438" at="76,78,87,7" name="org.iets3.components.functional.plugin.dataItemsPaletteEntries$PortPaletteEntry$1" />
+      <unit id="9051847868920296051" at="134,0,150,0" name="org.iets3.components.functional.plugin.dataItemsPaletteEntries$CONCEPTS" />
+      <unit id="9051847868920333514" at="98,15,115,5" name="org.iets3.components.functional.plugin.dataItemsPaletteEntries$1" />
+      <unit id="8465735925573237317" at="49,0,96,0" name="org.iets3.components.functional.plugin.dataItemsPaletteEntries$PortPaletteEntry" />
+      <unit id="9051847868920296051" at="43,0,162,0" name="org.iets3.components.functional.plugin.dataItemsPaletteEntries" />
+    </file>
+  </root>
+</debug-info>
+

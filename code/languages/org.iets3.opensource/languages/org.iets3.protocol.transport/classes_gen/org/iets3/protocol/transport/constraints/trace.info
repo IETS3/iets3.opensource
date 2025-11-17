@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,37,0" name="org.iets3.protocol.transport.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:a094b17e-57e7-4abf-aa71-468cc3ad1e03(org.iets3.protocol.transport.constraints)/3124623705571122347">
+    <file name="ProtocolLibraryRef_Constraints.java">
+      <node id="3124623705571122347" at="29,43,30,42" concept="11" />
+      <node id="3124623705571122352" at="41,63,42,142" concept="6" />
+      <node id="4509355657361842944" at="45,80,46,333" concept="5" />
+      <node id="4509355657361843840" at="46,333,47,0" concept="8" />
+      <node id="4509355657361878645" at="47,0,48,26" concept="7" />
+      <node id="4509355657361867927" at="48,26,49,142" concept="5" />
+      <node id="1928011281873985174" at="49,142,50,126" concept="6" />
+      <node id="3124623705571122347" at="54,6,55,131" concept="5" />
+      <node id="3124623705571122352" at="55,131,56,42" concept="2" />
+      <node id="3124623705571122347" at="56,42,57,22" concept="6" />
+      <node id="3124623705571122347" at="61,0,62,0" concept="9" trace="ProtocolLibraryRef$sG" />
+      <node id="3124623705571122347" at="62,0,63,0" concept="9" trace="IVisibleElementProvider$$O" />
+      <node id="3124623705571122347" at="63,0,64,0" concept="9" trace="ProtocolMapCatalog$xA" />
+      <node id="3124623705571122347" at="64,0,65,0" concept="9" trace="IProtocolMapContainer$IA" />
+      <node id="3124623705571122347" at="68,0,69,0" concept="9" trace="lib$PkvN" />
+      <node id="3124623705571122347" at="29,0,32,0" concept="1" trace="ProtocolLibraryRef_Constraints#()V" />
+      <node id="3124623705571122352" at="40,0,44,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="3124623705571122352" at="44,0,52,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="3124623705571122352" at="38,56,52,10" concept="6" />
+      <node id="3124623705571122352" at="36,0,54,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3124623705571122352" at="34,90,54,6" concept="5" />
+      <node id="3124623705571122347" at="33,0,59,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="3124623705571122347" at="29,43,30,42" />
+      <scope id="3124623705571122352" at="41,63,42,142" />
+      <scope id="3124623705571122347" at="29,0,32,0" />
+      <scope id="3124623705571122352" at="40,0,44,0" />
+      <scope id="3124623705571122352" at="45,80,50,126">
+        <var name="ancestor" id="4509355657361867928" />
+        <var name="seq" id="4509355657361842945" />
+      </scope>
+      <scope id="3124623705571122352" at="44,0,52,0">
+        <var name="_context" id="3124623705571122352" />
+      </scope>
+      <scope id="3124623705571122352" at="38,56,52,10" />
+      <scope id="3124623705571122352" at="36,0,54,0" />
+      <scope id="3124623705571122347" at="34,90,57,22">
+        <var name="d0" id="3124623705571122352" />
+        <var name="references" id="3124623705571122347" />
+      </scope>
+      <scope id="3124623705571122347" at="33,0,59,0" />
+      <unit id="3124623705571122347" at="67,0,70,0" name="org.iets3.protocol.transport.constraints.ProtocolLibraryRef_Constraints$LINKS" />
+      <unit id="3124623705571122347" at="60,0,66,0" name="org.iets3.protocol.transport.constraints.ProtocolLibraryRef_Constraints$CONCEPTS" />
+      <unit id="3124623705571122352" at="39,19,52,9" name="org.iets3.protocol.transport.constraints.ProtocolLibraryRef_Constraints$1$1" />
+      <unit id="3124623705571122352" at="35,48,54,5" name="org.iets3.protocol.transport.constraints.ProtocolLibraryRef_Constraints$1" />
+      <unit id="3124623705571122347" at="28,0,71,0" name="org.iets3.protocol.transport.constraints.ProtocolLibraryRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a094b17e-57e7-4abf-aa71-468cc3ad1e03(org.iets3.protocol.transport.constraints)/3124623705571461665">
+    <file name="ProtocolMapSection_Constraints.java">
+      <node id="3124623705571461665" at="22,43,23,42" concept="11" />
+      <node id="3124623705571461665" at="30,127,31,128" concept="5" />
+      <node id="3124623705571461665" at="31,128,32,0" concept="8" />
+      <node id="3124623705571461665" at="33,55,34,71" concept="2" />
+      <node id="3124623705571461665" at="35,9,36,0" concept="8" />
+      <node id="3124623705571461665" at="36,0,37,22" concept="6" />
+      <node id="8027619142969916668" at="42,81,43,33" concept="7" />
+      <node id="8027619142969916675" at="44,27,45,213" concept="5" />
+      <node id="8027619142969916688" at="46,59,47,23" concept="6" />
+      <node id="8027619142969916695" at="48,16,49,22" concept="6" />
+      <node id="8027619142969916699" at="51,14,52,20" concept="6" />
+      <node id="8027619142969916705" at="54,5,55,17" concept="6" />
+      <node id="3124623705571461665" at="57,0,58,0" concept="9" trace="canBeChildBreakingPoint" />
+      <node id="3124623705571461665" at="60,0,61,0" concept="9" trace="ProtocolMapSection$35" />
+      <node id="3124623705571461665" at="61,0,62,0" concept="9" trace="MappingContainer$hD" />
+      <node id="3124623705571461665" at="65,0,66,0" concept="9" trace="mappingContent$6V2z" />
+      <node id="8027619142969916693" at="48,14,50,9" concept="0" />
+      <node id="8027619142969916697" at="51,12,53,7" concept="0" />
+      <node id="3124623705571461665" at="22,0,25,0" concept="1" trace="ProtocolMapSection_Constraints#()V" />
+      <node id="3124623705571461665" at="32,0,35,9" concept="3" />
+      <node id="8027619142969916686" at="45,213,50,9" concept="3" />
+      <node id="3124623705571461665" at="29,0,39,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="8027619142969916670" at="43,33,53,7" concept="3" />
+      <node id="3124623705571461665" at="27,103,39,6" concept="6" />
+      <node id="8027619142969916666" at="41,128,54,5" concept="3" />
+      <node id="3124623705571461665" at="26,0,41,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <node id="3124623705571461665" at="41,0,57,0" concept="10" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <scope id="3124623705571461665" at="22,43,23,42" />
+      <scope id="3124623705571461665" at="33,55,34,71" />
+      <scope id="8027619142969916687" at="46,59,47,23" />
+      <scope id="8027619142969916694" at="48,16,49,22" />
+      <scope id="8027619142969916698" at="51,14,52,20" />
+      <scope id="3124623705571461665" at="22,0,25,0" />
+      <scope id="8027619142969916674" at="44,27,50,9">
+        <var name="sections" id="8027619142969916676" />
+      </scope>
+      <scope id="3124623705571461665" at="30,127,37,22">
+        <var name="result" id="3124623705571461665" />
+      </scope>
+      <scope id="3124623705571461665" at="29,0,39,0">
+        <var name="checkingNodeContext" id="3124623705571461665" />
+        <var name="context" id="3124623705571461665" />
+      </scope>
+      <scope id="8027619142969916667" at="42,81,53,7" />
+      <scope id="3124623705571461665" at="27,103,39,6" />
+      <scope id="8027619142969916665" at="41,128,55,17" />
+      <scope id="3124623705571461665" at="26,0,41,0" />
+      <scope id="3124623705571461665" at="41,0,57,0">
+        <var name="childConcept" id="3124623705571461665" />
+        <var name="link" id="3124623705571461665" />
+        <var name="node" id="3124623705571461665" />
+        <var name="parentNode" id="3124623705571461665" />
+      </scope>
+      <unit id="3124623705571461665" at="64,0,67,0" name="org.iets3.protocol.transport.constraints.ProtocolMapSection_Constraints$LINKS" />
+      <unit id="3124623705571461665" at="59,0,63,0" name="org.iets3.protocol.transport.constraints.ProtocolMapSection_Constraints$CONCEPTS" />
+      <unit id="3124623705571461665" at="28,15,39,5" name="org.iets3.protocol.transport.constraints.ProtocolMapSection_Constraints$1" />
+      <unit id="3124623705571461665" at="21,0,68,0" name="org.iets3.protocol.transport.constraints.ProtocolMapSection_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a094b17e-57e7-4abf-aa71-468cc3ad1e03(org.iets3.protocol.transport.constraints)/7015533061432427140">
+    <file name="ProtocolMap_Constraints.java">
+      <node id="7015533061432427140" at="24,36,25,35" concept="11" />
+      <node id="7015533061432427140" at="32,130,33,161" concept="5" />
+      <node id="7015533061432427140" at="33,161,34,0" concept="8" />
+      <node id="7015533061432427140" at="35,55,36,70" concept="2" />
+      <node id="7015533061432427140" at="37,9,38,0" concept="8" />
+      <node id="7015533061432427140" at="38,0,39,22" concept="6" />
+      <node id="7015533061432441908" at="44,119,45,116" concept="5" />
+      <node id="7015533061432460655" at="45,116,46,353" concept="6" />
+      <node id="7015533061432461691" at="47,5,48,0" concept="8" />
+      <node id="7015533061432462779" at="48,0,49,16" concept="6" />
+      <node id="7015533061432427140" at="51,0,52,0" concept="9" trace="canBeRootBreakingPoint" />
+      <node id="7015533061432427140" at="54,0,55,0" concept="9" trace="ProtocolMap$j3" />
+      <node id="7015533061432427140" at="55,0,56,0" concept="9" trace="ISpecificMapContext$f8" />
+      <node id="7015533061432427140" at="24,0,27,0" concept="1" trace="ProtocolMap_Constraints#()V" />
+      <node id="7015533061432427140" at="34,0,37,9" concept="3" />
+      <node id="7015533061432427600" at="43,149,47,5" concept="3" />
+      <node id="7015533061432427140" at="43,0,51,0" concept="10" trace="staticCanBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="7015533061432427140" at="31,0,41,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeAncestor;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="7015533061432427140" at="29,109,41,6" concept="6" />
+      <node id="7015533061432427140" at="28,0,43,0" concept="4" trace="calculateCanBeAncestorConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="7015533061432427140" at="24,36,25,35" />
+      <scope id="7015533061432427140" at="35,55,36,70" />
+      <scope id="7015533061432427602" at="44,119,46,353">
+        <var name="contextSpecific" id="7015533061432441909" />
+      </scope>
+      <scope id="7015533061432427140" at="24,0,27,0" />
+      <scope id="7015533061433964196" at="43,149,49,16" />
+      <scope id="7015533061432427140" at="32,130,39,22">
+        <var name="result" id="7015533061432427140" />
+      </scope>
+      <scope id="7015533061432427140" at="43,0,51,0">
+        <var name="childConcept" id="7015533061432427140" />
+        <var name="childNode" id="7015533061432427140" />
+        <var name="link" id="7015533061432427140" />
+        <var name="node" id="7015533061432427140" />
+        <var name="parentNode" id="7015533061432427140" />
+      </scope>
+      <scope id="7015533061432427140" at="31,0,41,0">
+        <var name="checkingNodeContext" id="7015533061432427140" />
+        <var name="context" id="7015533061432427140" />
+      </scope>
+      <scope id="7015533061432427140" at="29,109,41,6" />
+      <scope id="7015533061432427140" at="28,0,43,0" />
+      <unit id="7015533061432427140" at="53,0,57,0" name="org.iets3.protocol.transport.constraints.ProtocolMap_Constraints$CONCEPTS" />
+      <unit id="7015533061432427140" at="30,15,41,5" name="org.iets3.protocol.transport.constraints.ProtocolMap_Constraints$1" />
+      <unit id="7015533061432427140" at="23,0,58,0" name="org.iets3.protocol.transport.constraints.ProtocolMap_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a094b17e-57e7-4abf-aa71-468cc3ad1e03(org.iets3.protocol.transport.constraints)/7772536663219447034">
+    <file name="ProtocolMapRef_Constraints.java">
+      <node id="7772536663219447034" at="26,39,27,38" concept="11" />
+      <node id="7772536663219447184" at="38,63,39,142" concept="6" />
+      <node id="1928011281873984679" at="42,80,43,337" concept="6" />
+      <node id="7772536663219447034" at="47,6,48,131" concept="5" />
+      <node id="7772536663219447184" at="48,131,49,42" concept="2" />
+      <node id="7772536663219447034" at="49,42,50,22" concept="6" />
+      <node id="7772536663219447034" at="54,0,55,0" concept="9" trace="ProtocolMapRef$tE" />
+      <node id="7772536663219447034" at="55,0,56,0" concept="9" trace="IVisibleElementProvider$$O" />
+      <node id="7772536663219447034" at="56,0,57,0" concept="9" trace="ProtocolMap$j3" />
+      <node id="7772536663219447034" at="60,0,61,0" concept="9" trace="protocolMapRef$$B4D" />
+      <node id="7772536663219447034" at="26,0,29,0" concept="1" trace="ProtocolMapRef_Constraints#()V" />
+      <node id="7772536663219447184" at="37,0,41,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7772536663219447184" at="41,0,45,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7772536663219447184" at="35,56,45,10" concept="6" />
+      <node id="7772536663219447184" at="33,0,47,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7772536663219447184" at="31,90,47,6" concept="5" />
+      <node id="7772536663219447034" at="30,0,52,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7772536663219447034" at="26,39,27,38" />
+      <scope id="7772536663219447184" at="38,63,39,142" />
+      <scope id="7772536663219447184" at="42,80,43,337" />
+      <scope id="7772536663219447034" at="26,0,29,0" />
+      <scope id="7772536663219447184" at="37,0,41,0" />
+      <scope id="7772536663219447184" at="41,0,45,0">
+        <var name="_context" id="7772536663219447184" />
+      </scope>
+      <scope id="7772536663219447184" at="35,56,45,10" />
+      <scope id="7772536663219447184" at="33,0,47,0" />
+      <scope id="7772536663219447034" at="31,90,50,22">
+        <var name="d0" id="7772536663219447184" />
+        <var name="references" id="7772536663219447034" />
+      </scope>
+      <scope id="7772536663219447034" at="30,0,52,0" />
+      <unit id="7772536663219447034" at="59,0,62,0" name="org.iets3.protocol.transport.constraints.ProtocolMapRef_Constraints$LINKS" />
+      <unit id="7772536663219447034" at="53,0,58,0" name="org.iets3.protocol.transport.constraints.ProtocolMapRef_Constraints$CONCEPTS" />
+      <unit id="7772536663219447184" at="36,19,45,9" name="org.iets3.protocol.transport.constraints.ProtocolMapRef_Constraints$1$1" />
+      <unit id="7772536663219447184" at="32,48,47,5" name="org.iets3.protocol.transport.constraints.ProtocolMapRef_Constraints$1" />
+      <unit id="7772536663219447034" at="25,0,63,0" name="org.iets3.protocol.transport.constraints.ProtocolMapRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:a094b17e-57e7-4abf-aa71-468cc3ad1e03(org.iets3.protocol.transport.constraints)/7992633464163104818">
+    <file name="InterfaceTarget_Constraints.java">
+      <node id="7992633464163104818" at="26,40,27,39" concept="11" />
+      <node id="7992633464163104819" at="38,63,39,142" concept="6" />
+      <node id="1928011281873984942" at="42,80,43,333" concept="6" />
+      <node id="7992633464163104818" at="47,6,48,131" concept="5" />
+      <node id="7992633464163104819" at="48,131,49,42" concept="2" />
+      <node id="7992633464163104818" at="49,42,50,22" concept="6" />
+      <node id="7992633464163104818" at="54,0,55,0" concept="9" trace="InterfaceTarget$Fi" />
+      <node id="7992633464163104818" at="55,0,56,0" concept="9" trace="IVisibleElementProvider$$O" />
+      <node id="7992633464163104818" at="56,0,57,0" concept="9" trace="Interface$Ny" />
+      <node id="7992633464163104818" at="60,0,61,0" concept="9" trace="mpInterface$y8gh" />
+      <node id="7992633464163104818" at="26,0,29,0" concept="1" trace="InterfaceTarget_Constraints#()V" />
+      <node id="7992633464163104819" at="37,0,41,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7992633464163104819" at="41,0,45,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7992633464163104819" at="35,56,45,10" concept="6" />
+      <node id="7992633464163104819" at="33,0,47,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7992633464163104819" at="31,90,47,6" concept="5" />
+      <node id="7992633464163104818" at="30,0,52,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7992633464163104818" at="26,40,27,39" />
+      <scope id="7992633464163104819" at="38,63,39,142" />
+      <scope id="7992633464163104819" at="42,80,43,333" />
+      <scope id="7992633464163104818" at="26,0,29,0" />
+      <scope id="7992633464163104819" at="37,0,41,0" />
+      <scope id="7992633464163104819" at="41,0,45,0">
+        <var name="_context" id="7992633464163104819" />
+      </scope>
+      <scope id="7992633464163104819" at="35,56,45,10" />
+      <scope id="7992633464163104819" at="33,0,47,0" />
+      <scope id="7992633464163104818" at="31,90,50,22">
+        <var name="d0" id="7992633464163104819" />
+        <var name="references" id="7992633464163104818" />
+      </scope>
+      <scope id="7992633464163104818" at="30,0,52,0" />
+      <unit id="7992633464163104818" at="59,0,62,0" name="org.iets3.protocol.transport.constraints.InterfaceTarget_Constraints$LINKS" />
+      <unit id="7992633464163104818" at="53,0,58,0" name="org.iets3.protocol.transport.constraints.InterfaceTarget_Constraints$CONCEPTS" />
+      <unit id="7992633464163104819" at="36,19,45,9" name="org.iets3.protocol.transport.constraints.InterfaceTarget_Constraints$1$1" />
+      <unit id="7992633464163104819" at="32,48,47,5" name="org.iets3.protocol.transport.constraints.InterfaceTarget_Constraints$1" />
+      <unit id="7992633464163104818" at="25,0,63,0" name="org.iets3.protocol.transport.constraints.InterfaceTarget_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

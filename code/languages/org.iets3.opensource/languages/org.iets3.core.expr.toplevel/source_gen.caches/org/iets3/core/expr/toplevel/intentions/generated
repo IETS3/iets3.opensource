@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="30yt0h1tawkqap0wlb8h00zxhuxvlqt">
+  <files names="AddComparisonOrder_Intention.java:InlineAll_Intention.java:Inline_Intention.java:IntentionsDescriptor.java:TurnIntoValue_Intention.java:addSetterForMandatorFields_Intention.java:assignDefaultsWhereAvailable_Intention.java:extractGlobalValue_Intention.java:extractTypeDef_Intention.java:transformIntoConstant_Intention.java:transformIntoFunction_Intention.java" />
+</product>
+

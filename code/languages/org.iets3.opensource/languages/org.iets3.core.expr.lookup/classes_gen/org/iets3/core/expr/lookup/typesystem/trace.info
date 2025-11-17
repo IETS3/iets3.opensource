@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="9,0,29,0" name="org.iets3.core.expr.lookup.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)/1678583990202535665">
+    <file name="TypesystemDescriptor.java">
+      <node id="1678583990202535665" at="15,5,16,86" concept="6" />
+      <node id="1678583990202535665" at="16,86,17,47" concept="2" />
+      <node id="1678583990202535665" at="14,5,18,5" concept="0" />
+      <scope id="1678583990202535665" at="15,5,17,47">
+        <var name="inferenceRule" id="1678583990202535665" />
+      </scope>
+    </file>
+    <file name="typeof_LookupTableRef_InferenceRule.java">
+      <node id="1678583990202536406" at="21,5,22,56" concept="6" />
+      <node id="1678583990202536406" at="22,56,23,203" concept="6" />
+      <node id="1678583990202536406" at="23,203,24,441" concept="2" />
+      <node id="1678583990202535665" at="27,50,28,37" concept="7" />
+      <node id="1678583990202535665" at="30,68,31,102" concept="7" />
+      <node id="1678583990202535665" at="33,30,34,17" concept="7" />
+      <node id="1678583990202535665" at="38,0,39,0" concept="9" trace="table$PWmI" />
+      <node id="1678583990202535665" at="42,0,43,0" concept="9" trace="LookupTableRef$J" />
+      <node id="1678583990202535665" at="18,0,20,0" concept="1" trace="typeof_LookupTableRef_InferenceRule#()V" />
+      <node id="1678583990202535665" at="27,0,30,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1678583990202535665" at="30,0,33,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1678583990202535665" at="33,0,36,0" concept="5" trace="overrides#()Z" />
+      <node id="1678583990202536406" at="20,127,25,5" concept="0" />
+      <node id="1678583990202535665" at="20,0,27,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1678583990202535665" at="18,48,18,48" />
+      <scope id="1678583990202535665" at="27,50,28,37" />
+      <scope id="1678583990202535665" at="30,68,31,102" />
+      <scope id="1678583990202535665" at="33,30,34,17" />
+      <scope id="1678583990202535665" at="18,0,20,0" />
+      <scope id="1678583990202536406" at="21,5,24,441">
+        <var name="_info_12389875345" id="1678583990202536406" />
+        <var name="_nodeToCheck_1029348928467" id="1678583990202536406" />
+      </scope>
+      <scope id="1678583990202535665" at="27,0,30,0" />
+      <scope id="1678583990202535665" at="30,0,33,0">
+        <var name="argument" id="1678583990202535665" />
+      </scope>
+      <scope id="1678583990202535665" at="33,0,36,0" />
+      <scope id="1678583990202535666" at="20,127,25,5" />
+      <scope id="1678583990202535665" at="20,0,27,0">
+        <var name="lookupTableRef" id="1678583990202535665" />
+        <var name="status" id="1678583990202535665" />
+        <var name="typeCheckingContext" id="1678583990202535665" />
+      </scope>
+      <unit id="1678583990202535665" at="37,0,40,0" name="org.iets3.core.expr.lookup.typesystem.typeof_LookupTableRef_InferenceRule$LINKS" />
+      <unit id="1678583990202535665" at="41,0,44,0" name="org.iets3.core.expr.lookup.typesystem.typeof_LookupTableRef_InferenceRule$CONCEPTS" />
+      <unit id="1678583990202535665" at="17,0,45,0" name="org.iets3.core.expr.lookup.typesystem.typeof_LookupTableRef_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)/5860825012162731698">
+    <file name="TypesystemDescriptor.java">
+      <node id="5860825012162731698" at="23,5,24,94" concept="6" />
+      <node id="5860825012162731698" at="24,94,25,55" concept="2" />
+      <node id="5860825012162731698" at="22,5,26,5" concept="0" />
+      <scope id="5860825012162731698" at="23,5,25,55">
+        <var name="nonTypesystemRule" id="5860825012162731698" />
+      </scope>
+    </file>
+    <file name="check_LookupTable_NonTypesystemRule.java">
+      <node id="3723661587927247436" at="23,124,24,83" concept="6" />
+      <node id="5860825012162731705" at="25,139,26,64" concept="6" />
+      <node id="5860825012162731705" at="26,64,27,277" concept="6" />
+      <node id="5860825012162795342" at="29,139,30,64" concept="6" />
+      <node id="5860825012162795342" at="30,64,31,277" concept="6" />
+      <node id="5860825012162731698" at="34,50,35,35" concept="7" />
+      <node id="5860825012162731698" at="37,68,38,102" concept="7" />
+      <node id="5860825012162731698" at="40,30,41,17" concept="7" />
+      <node id="5860825012162731698" at="45,0,46,0" concept="9" trace="rowType$zr7p" />
+      <node id="5860825012162731698" at="46,0,47,0" concept="9" trace="colType$zsiu" />
+      <node id="5860825012162731698" at="50,0,51,0" concept="9" trace="LookupTable$$Y" />
+      <node id="5860825012162731698" at="21,0,23,0" concept="1" trace="check_LookupTable_NonTypesystemRule#()V" />
+      <node id="5860825012162731698" at="34,0,37,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5860825012162731698" at="37,0,40,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5860825012162731698" at="40,0,43,0" concept="5" trace="overrides#()Z" />
+      <node id="5860825012162731705" at="24,83,28,5" concept="4" />
+      <node id="5860825012162795342" at="28,5,32,5" concept="4" />
+      <node id="5860825012162731698" at="23,0,34,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5860825012162731698" at="21,48,21,48" />
+      <scope id="5860825012162731698" at="34,50,35,35" />
+      <scope id="5860825012162731698" at="37,68,38,102" />
+      <scope id="5860825012162731698" at="40,30,41,17" />
+      <scope id="5860825012162731698" at="21,0,23,0" />
+      <scope id="5860825012162731705" at="25,139,27,277">
+        <var name="_reporter_2309309498" id="5860825012162731705" />
+        <var name="errorTarget" id="5860825012162731705" />
+      </scope>
+      <scope id="5860825012162795342" at="29,139,31,277">
+        <var name="_reporter_2309309498" id="5860825012162795342" />
+        <var name="errorTarget" id="5860825012162795342" />
+      </scope>
+      <scope id="5860825012162731698" at="34,0,37,0" />
+      <scope id="5860825012162731698" at="37,0,40,0">
+        <var name="argument" id="5860825012162731698" />
+      </scope>
+      <scope id="5860825012162731698" at="40,0,43,0" />
+      <scope id="5860825012162731699" at="23,124,32,5">
+        <var name="errorMessage" id="3723661587927247439" />
+      </scope>
+      <scope id="5860825012162731698" at="23,0,34,0">
+        <var name="lookupTable" id="5860825012162731698" />
+        <var name="status" id="5860825012162731698" />
+        <var name="typeCheckingContext" id="5860825012162731698" />
+      </scope>
+      <unit id="5860825012162731698" at="49,0,52,0" name="org.iets3.core.expr.lookup.typesystem.check_LookupTable_NonTypesystemRule$CONCEPTS" />
+      <unit id="5860825012162731698" at="44,0,48,0" name="org.iets3.core.expr.lookup.typesystem.check_LookupTable_NonTypesystemRule$LINKS" />
+      <unit id="5860825012162731698" at="20,0,53,0" name="org.iets3.core.expr.lookup.typesystem.check_LookupTable_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)/5860825012165093915">
+    <file name="TypesystemDescriptor.java">
+      <node id="5860825012165093915" at="11,5,12,83" concept="6" />
+      <node id="5860825012165093915" at="12,83,13,47" concept="2" />
+      <node id="5860825012165093915" at="10,33,14,5" concept="0" />
+      <scope id="5860825012165093915" at="11,5,13,47">
+        <var name="inferenceRule" id="5860825012165093915" />
+      </scope>
+    </file>
+    <file name="typeof_LookupTable_InferenceRule.java">
+      <node id="5860825012165094626" at="23,124,24,109" concept="6" />
+      <node id="5860825012165094640" at="24,109,25,0" concept="8" />
+      <node id="5860825012165116673" at="27,7,28,90" concept="6" />
+      <node id="5860825012165116673" at="28,90,29,205" concept="6" />
+      <node id="5860825012165116673" at="29,205,30,465" concept="2" />
+      <node id="5860825012165125543" at="34,7,35,90" concept="6" />
+      <node id="5860825012165125543" at="35,90,36,205" concept="6" />
+      <node id="5860825012165125543" at="36,205,37,465" concept="2" />
+      <node id="5860825012165130976" at="39,5,40,0" concept="8" />
+      <node id="5860825012167826505" at="44,11,45,109" concept="6" />
+      <node id="5860825012167826505" at="45,109,46,209" concept="6" />
+      <node id="5860825012167826505" at="46,209,47,460" concept="2" />
+      <node id="5860825012167828910" at="51,9,52,93" concept="6" />
+      <node id="5860825012167828910" at="52,93,53,207" concept="6" />
+      <node id="5860825012167828910" at="53,207,54,351" concept="2" />
+      <node id="5860825012165110651" at="57,5,58,0" concept="8" />
+      <node id="5860825012165110808" at="58,0,59,0" concept="8" />
+      <node id="5860825012165110969" at="59,0,60,0" concept="8" />
+      <node id="1678583990201701742" at="62,7,63,119" concept="6" />
+      <node id="5860825012165095634" at="65,11,66,59" concept="6" />
+      <node id="5860825012165095634" at="66,59,67,209" concept="6" />
+      <node id="5860825012165095634" at="67,209,68,566" concept="2" />
+      <node id="5860825012168335486" at="73,7,74,55" concept="6" />
+      <node id="5860825012168335486" at="74,55,75,205" concept="6" />
+      <node id="5860825012168335486" at="75,205,76,548" concept="2" />
+      <node id="5860825012165106488" at="79,9,80,107" concept="6" />
+      <node id="5860825012165106488" at="80,107,81,207" concept="6" />
+      <node id="5860825012165106488" at="81,207,82,382" concept="2" />
+      <node id="5860825012165093915" at="87,50,88,35" concept="7" />
+      <node id="5860825012165093915" at="90,68,91,102" concept="7" />
+      <node id="5860825012165093915" at="93,30,94,17" concept="7" />
+      <node id="5860825012168317224" at="96,102,97,74" concept="6" />
+      <node id="5860825012168317224" at="97,74,98,73" concept="2" />
+      <node id="5860825012168317224" at="98,73,99,73" concept="2" />
+      <node id="5860825012168317224" at="99,73,100,73" concept="2" />
+      <node id="5860825012168317224" at="100,73,101,26" concept="7" />
+      <node id="5860825012168335488" at="103,96,104,74" concept="6" />
+      <node id="5860825012168335488" at="104,74,105,73" concept="2" />
+      <node id="5860825012168335488" at="105,73,106,73" concept="2" />
+      <node id="5860825012168335488" at="106,73,107,73" concept="2" />
+      <node id="5860825012168335488" at="107,73,108,26" concept="7" />
+      <node id="5860825012165093915" at="112,0,113,0" concept="9" trace="val$aKTd" />
+      <node id="5860825012165093915" at="113,0,114,0" concept="9" trace="colType$zsiu" />
+      <node id="5860825012165093915" at="114,0,115,0" concept="9" trace="cols$JETh" />
+      <node id="5860825012165093915" at="115,0,116,0" concept="9" trace="rowType$zr7p" />
+      <node id="5860825012165093915" at="116,0,117,0" concept="9" trace="rows$D1mY" />
+      <node id="5860825012165093915" at="117,0,118,0" concept="9" trace="resultType$$6ih" />
+      <node id="5860825012165093915" at="118,0,119,0" concept="9" trace="val$ayFh" />
+      <node id="5860825012165093915" at="119,0,120,0" concept="9" trace="cells$u$1L" />
+      <node id="5860825012165093915" at="120,0,121,0" concept="9" trace="rowType$77La" />
+      <node id="5860825012165093915" at="121,0,122,0" concept="9" trace="colType$78Wf" />
+      <node id="5860825012165093915" at="122,0,123,0" concept="9" trace="resType$7fYH" />
+      <node id="5860825012165093915" at="126,0,127,0" concept="9" trace="Type$WK" />
+      <node id="5860825012165093915" at="127,0,128,0" concept="9" trace="LookupTable$$Y" />
+      <node id="5860825012165093915" at="128,0,129,0" concept="9" trace="LookupTableType$o" />
+      <node id="5860825012165093915" at="21,0,23,0" concept="1" trace="typeof_LookupTable_InferenceRule#()V" />
+      <node id="5860825012165093915" at="87,0,90,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5860825012165093915" at="90,0,93,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5860825012165093915" at="93,0,96,0" concept="5" trace="overrides#()Z" />
+      <node id="5860825012165116673" at="26,104,31,7" concept="0" />
+      <node id="5860825012165125543" at="33,104,38,7" concept="0" />
+      <node id="5860825012167826505" at="43,63,48,11" concept="0" />
+      <node id="5860825012167828910" at="50,14,55,9" concept="0" />
+      <node id="5860825012165095634" at="64,68,69,11" concept="0" />
+      <node id="5860825012168335486" at="72,12,77,7" concept="0" />
+      <node id="5860825012165106488" at="78,61,83,9" concept="0" />
+      <node id="5860825012167828069" at="50,12,56,7" concept="0" />
+      <node id="5860825012165111442" at="25,0,32,5" concept="3" />
+      <node id="5860825012165125537" at="32,5,39,5" concept="3" />
+      <node id="5860825012167826505" at="42,84,49,9" concept="4" />
+      <node id="1678583990201701742" at="63,119,70,129" concept="2" />
+      <node id="5860825012165106488" at="77,7,84,7" concept="4" />
+      <node id="5860825012168317224" at="96,0,103,0" concept="10" trace="createLookupTableType_u8k8v2_a1a0c0a0b0a1a0a9a1#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5860825012168335488" at="103,0,110,0" concept="10" trace="createLookupTableType_u8k8v2_a1a0c0a0a9a1#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1678583990201701742" at="61,82,71,7" concept="0" />
+      <node id="5860825012165102305" at="72,10,85,5" concept="0" />
+      <node id="5860825012167812597" at="41,106,56,7" concept="4" />
+      <node id="5860825012165131582" at="40,0,57,5" concept="3" />
+      <node id="5860825012165095822" at="60,0,85,5" concept="4" />
+      <node id="5860825012165093915" at="23,0,87,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5860825012165093915" at="21,45,21,45" />
+      <scope id="5860825012165093915" at="87,50,88,35" />
+      <scope id="5860825012165093915" at="90,68,91,102" />
+      <scope id="5860825012165093915" at="93,30,94,17" />
+      <scope id="5860825012165093915" at="21,0,23,0" />
+      <scope id="5860825012165116673" at="27,7,30,465">
+        <var name="_info_12389875345" id="5860825012165116673" />
+        <var name="_nodeToCheck_1029348928467" id="5860825012165116673" />
+      </scope>
+      <scope id="5860825012165125543" at="34,7,37,465">
+        <var name="_info_12389875345" id="5860825012165125543" />
+        <var name="_nodeToCheck_1029348928467" id="5860825012165125543" />
+      </scope>
+      <scope id="5860825012167826505" at="44,11,47,460">
+        <var name="_info_12389875345" id="5860825012167826505" />
+        <var name="_nodeToCheck_1029348928467" id="5860825012167826505" />
+      </scope>
+      <scope id="5860825012167828910" at="51,9,54,351">
+        <var name="_info_12389875345" id="5860825012167828910" />
+        <var name="_nodeToCheck_1029348928467" id="5860825012167828910" />
+      </scope>
+      <scope id="5860825012165095634" at="65,11,68,566">
+        <var name="_info_12389875345" id="5860825012165095634" />
+        <var name="_nodeToCheck_1029348928467" id="5860825012165095634" />
+      </scope>
+      <scope id="5860825012168335486" at="73,7,76,548">
+        <var name="_info_12389875345" id="5860825012168335486" />
+        <var name="_nodeToCheck_1029348928467" id="5860825012168335486" />
+      </scope>
+      <scope id="5860825012165106488" at="79,9,82,382">
+        <var name="_info_12389875345" id="5860825012165106488" />
+        <var name="_nodeToCheck_1029348928467" id="5860825012165106488" />
+      </scope>
+      <scope id="5860825012165093915" at="87,0,90,0" />
+      <scope id="5860825012165093915" at="90,0,93,0">
+        <var name="argument" id="5860825012165093915" />
+      </scope>
+      <scope id="5860825012165093915" at="93,0,96,0" />
+      <scope id="5860825012165111448" at="26,104,31,7" />
+      <scope id="5860825012165125542" at="33,104,38,7" />
+      <scope id="5860825012167826505" at="43,63,48,11" />
+      <scope id="5860825012167828070" at="50,14,55,9" />
+      <scope id="1678583990201701744" at="64,68,69,11" />
+      <scope id="5860825012165106488" at="78,61,83,9" />
+      <scope id="5860825012168317224" at="96,102,101,26">
+        <var name="n0" id="5860825012168317224" />
+      </scope>
+      <scope id="5860825012168335488" at="103,96,108,26">
+        <var name="n0" id="5860825012168335488" />
+      </scope>
+      <scope id="5860825012165111442" at="25,0,32,5">
+        <var name="col" id="5860825012165111444" />
+      </scope>
+      <scope id="5860825012165125537" at="32,5,39,5">
+        <var name="row" id="5860825012165125538" />
+      </scope>
+      <scope id="5860825012167812599" at="42,84,49,9" />
+      <scope id="5860825012168317224" at="96,0,103,0">
+        <var name="p0" id="5860825012168317224" />
+        <var name="p1" id="5860825012168317224" />
+        <var name="p2" id="5860825012168317224" />
+      </scope>
+      <scope id="5860825012168335488" at="103,0,110,0">
+        <var name="p0" id="5860825012168335488" />
+        <var name="p1" id="5860825012168335488" />
+        <var name="p2" id="5860825012168335488" />
+      </scope>
+      <scope id="1678583990201701742" at="62,7,70,129">
+        <var name="concreteResultType" id="1678583990201701742" />
+      </scope>
+      <scope id="5860825012165095824" at="61,82,71,7" />
+      <scope id="5860825012165102306" at="72,12,84,7" />
+      <scope id="5860825012165131588" at="41,106,56,7" />
+      <scope id="5860825012165131582" at="40,0,57,5">
+        <var name="cell" id="5860825012165131584" />
+      </scope>
+      <scope id="5860825012165093916" at="23,124,85,5">
+        <var name="resultType_typevar_5860825012165094626" id="5860825012165094626" />
+      </scope>
+      <scope id="5860825012165093915" at="23,0,87,0">
+        <var name="lookupTable" id="5860825012165093915" />
+        <var name="status" id="5860825012165093915" />
+        <var name="typeCheckingContext" id="5860825012165093915" />
+      </scope>
+      <unit id="5860825012165093915" at="125,0,130,0" name="org.iets3.core.expr.lookup.typesystem.typeof_LookupTable_InferenceRule$CONCEPTS" />
+      <unit id="5860825012165093915" at="111,0,124,0" name="org.iets3.core.expr.lookup.typesystem.typeof_LookupTable_InferenceRule$LINKS" />
+      <unit id="5860825012165093915" at="20,0,131,0" name="org.iets3.core.expr.lookup.typesystem.typeof_LookupTable_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)/5860825012168455949">
+    <file name="TypesystemDescriptor.java">
+      <node id="5860825012168455949" at="19,5,20,84" concept="6" />
+      <node id="5860825012168455949" at="20,84,21,47" concept="2" />
+      <node id="5860825012168455949" at="18,5,22,5" concept="0" />
+      <scope id="5860825012168455949" at="19,5,21,47">
+        <var name="inferenceRule" id="5860825012168455949" />
+      </scope>
+    </file>
+    <file name="typeof_LookupTarget_InferenceRule.java">
+      <node id="5860825012168456382" at="22,5,23,295" concept="6" />
+      <node id="5860825012168464128" at="25,9,26,58" concept="6" />
+      <node id="5860825012168464128" at="26,58,27,207" concept="6" />
+      <node id="5860825012168464128" at="27,207,28,411" concept="2" />
+      <node id="5860825012168455949" at="33,50,34,36" concept="7" />
+      <node id="5860825012168455949" at="36,68,37,102" concept="7" />
+      <node id="5860825012168455949" at="39,30,40,17" concept="7" />
+      <node id="5860825012168455949" at="44,0,45,0" concept="9" trace="DotExpression$jp" />
+      <node id="5860825012168455949" at="45,0,46,0" concept="9" trace="LookupTableType$o" />
+      <node id="5860825012168455949" at="46,0,47,0" concept="9" trace="LookupTarget$Rp" />
+      <node id="5860825012168455949" at="50,0,51,0" concept="9" trace="expr$CW3E" />
+      <node id="5860825012168455949" at="51,0,52,0" concept="9" trace="resType$7fYH" />
+      <node id="5860825012168455949" at="19,0,21,0" concept="1" trace="typeof_LookupTarget_InferenceRule#()V" />
+      <node id="5860825012168455949" at="33,0,36,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5860825012168455949" at="36,0,39,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5860825012168455949" at="39,0,42,0" concept="5" trace="overrides#()Z" />
+      <node id="5860825012168464128" at="24,51,29,9" concept="0" />
+      <node id="5860825012168456382" at="23,295,30,127" concept="2" />
+      <node id="5860825012168456382" at="21,125,31,5" concept="0" />
+      <node id="5860825012168455949" at="21,0,33,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5860825012168455949" at="19,46,19,46" />
+      <scope id="5860825012168455949" at="33,50,34,36" />
+      <scope id="5860825012168455949" at="36,68,37,102" />
+      <scope id="5860825012168455949" at="39,30,40,17" />
+      <scope id="5860825012168455949" at="19,0,21,0" />
+      <scope id="5860825012168464128" at="25,9,28,411">
+        <var name="_info_12389875345" id="5860825012168464128" />
+        <var name="_nodeToCheck_1029348928467" id="5860825012168464128" />
+      </scope>
+      <scope id="5860825012168455949" at="33,0,36,0" />
+      <scope id="5860825012168455949" at="36,0,39,0">
+        <var name="argument" id="5860825012168455949" />
+      </scope>
+      <scope id="5860825012168455949" at="39,0,42,0" />
+      <scope id="5860825012168456384" at="24,51,29,9" />
+      <scope id="5860825012168456382" at="22,5,30,127">
+        <var name="ltt" id="5860825012168456382" />
+      </scope>
+      <scope id="5860825012168455950" at="21,125,31,5" />
+      <scope id="5860825012168455949" at="21,0,33,0">
+        <var name="lookupTarget" id="5860825012168455949" />
+        <var name="status" id="5860825012168455949" />
+        <var name="typeCheckingContext" id="5860825012168455949" />
+      </scope>
+      <unit id="5860825012168455949" at="49,0,53,0" name="org.iets3.core.expr.lookup.typesystem.typeof_LookupTarget_InferenceRule$LINKS" />
+      <unit id="5860825012168455949" at="43,0,48,0" name="org.iets3.core.expr.lookup.typesystem.typeof_LookupTarget_InferenceRule$CONCEPTS" />
+      <unit id="5860825012168455949" at="18,0,54,0" name="org.iets3.core.expr.lookup.typesystem.typeof_LookupTarget_InferenceRule" />
+    </file>
+  </root>
+</debug-info>
+

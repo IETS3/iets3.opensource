@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,38,0" name="org.iets3.core.expr.lambda.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:fc2e7331-1a4e-4486-852e-d38f5011bce0(org.iets3.core.expr.lambda.actions)/1483061781792570150">
+    <file name="LambdaFactories.java">
+      <node id="1483061781792570154" at="22,7,23,41" concept="4" />
+      <node id="1483061781793374258" at="24,75,25,120" concept="1" />
+      <node id="1483061781792570216" at="25,120,26,115" concept="1" />
+      <node id="1483061781793258767" at="33,7,34,41" concept="4" />
+      <node id="1483061781793258770" at="35,79,36,123" concept="1" />
+      <node id="1483061781793262935" at="36,123,37,177" concept="1" />
+      <node id="1483061781793319156" at="44,7,45,41" concept="4" />
+      <node id="1483061781793360638" at="46,79,47,115" concept="1" />
+      <node id="1483061781793319159" at="47,115,48,119" concept="1" />
+      <node id="1483061781793319167" at="48,119,49,177" concept="1" />
+      <node id="1483061781793338871" at="49,177,50,115" concept="1" />
+      <node id="1483061781793347045" at="50,115,51,119" concept="1" />
+      <node id="1483061781793432213" at="58,7,59,41" concept="4" />
+      <node id="1483061781793432275" at="60,78,61,113" concept="1" />
+      <node id="6659604735287055737" at="68,7,69,41" concept="4" />
+      <node id="6659604735287057824" at="70,81,71,191" concept="1" />
+      <node id="6659604735287086005" at="72,83,73,50" concept="4" />
+      <node id="6659604735287086005" at="73,50,74,0" concept="5" />
+      <node id="6659604735287087598" at="74,0,75,121" concept="1" />
+      <node id="1483061781799228912" at="82,7,83,48" concept="4" />
+      <node id="1483061781799228915" at="84,83,85,84" concept="1" />
+      <node id="1483061781792570150" at="92,0,93,0" concept="6" trace="IArgument$7x" />
+      <node id="1483061781792570150" at="93,0,94,0" concept="6" trace="IFunctionCall$zN" />
+      <node id="1483061781792570150" at="94,0,95,0" concept="6" trace="IFunctionLike$t6" />
+      <node id="1483061781792570150" at="95,0,96,0" concept="6" trace="IFunctionRef$yK" />
+      <node id="1483061781792570150" at="96,0,97,0" concept="6" trace="BlockExpression$cH" />
+      <node id="1483061781792570150" at="97,0,98,0" concept="6" trace="Expression$D_" />
+      <node id="1483061781792570150" at="101,0,102,0" concept="6" trace="name$MnvL" />
+      <node id="1483061781792570150" at="102,0,103,0" concept="6" trace="ext$atYv" />
+      <node id="1483061781792570150" at="106,0,107,0" concept="6" trace="type$8xXf" />
+      <node id="1483061781792570150" at="107,0,108,0" concept="6" trace="function$xJRS" />
+      <node id="1483061781792570150" at="108,0,109,0" concept="6" trace="args$xJpQ" />
+      <node id="1483061781792570150" at="109,0,110,0" concept="6" trace="type$1eya" />
+      <node id="1483061781792570150" at="110,0,111,0" concept="6" trace="args$XOIh" />
+      <node id="1483061781792570150" at="111,0,112,0" concept="6" trace="body$Y8TB" />
+      <node id="1483061781792570150" at="112,0,113,0" concept="6" trace="effect$2Wvu" />
+      <node id="1483061781792570150" at="113,0,114,0" concept="6" trace="fun$DJ6H" />
+      <node id="1483061781792570150" at="114,0,115,0" concept="6" trace="expressions$2$5d" />
+      <node id="1483061781792570150" at="115,0,116,0" concept="6" trace="expression$T2aj" />
+      <node id="1483061781793432213" at="59,41,62,9" concept="2" />
+      <node id="1483061781799228912" at="83,48,86,9" concept="2" />
+      <node id="1483061781792570154" at="23,41,27,9" concept="2" />
+      <node id="1483061781793258767" at="34,41,38,9" concept="2" />
+      <node id="1483061781793432213" at="57,102,63,7" concept="0" />
+      <node id="1483061781799228912" at="81,102,87,7" concept="0" />
+      <node id="1483061781792570154" at="21,102,28,7" concept="0" />
+      <node id="1483061781793258767" at="32,102,39,7" concept="0" />
+      <node id="1483061781793319156" at="45,41,52,9" concept="2" />
+      <node id="6659604735287055737" at="69,41,76,9" concept="2" />
+      <node id="1483061781793431747" at="57,0,65,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781799228692" at="81,0,89,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781792570151" at="21,0,30,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781793258764" at="32,0,41,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781793319156" at="43,102,53,7" concept="0" />
+      <node id="6659604735287055737" at="67,102,77,7" concept="0" />
+      <node id="1483061781793319153" at="43,0,55,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781799149020" at="67,0,79,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1483061781793432215" at="60,78,61,113" />
+      <scope id="6659604735287055741" at="70,81,71,191" />
+      <scope id="1483061781799228914" at="84,83,85,84" />
+      <scope id="1483061781792570156" at="24,75,26,115" />
+      <scope id="1483061781793258769" at="35,79,37,177" />
+      <scope id="6659604735287086005" at="72,83,75,121">
+        <var name="expressionNode" id="6659604735287086005" />
+      </scope>
+      <scope id="1483061781793432213" at="58,7,62,9">
+        <var name="oldNode" id="1483061781793432213" />
+      </scope>
+      <scope id="1483061781799228912" at="82,7,86,9">
+        <var name="expressionNode" id="1483061781799228912" />
+      </scope>
+      <scope id="1483061781792570154" at="22,7,27,9">
+        <var name="oldNode" id="1483061781792570154" />
+      </scope>
+      <scope id="1483061781793258767" at="33,7,38,9">
+        <var name="oldNode" id="1483061781793258767" />
+      </scope>
+      <scope id="1483061781793319158" at="46,79,51,119" />
+      <scope id="1483061781793431747" at="57,102,63,7" />
+      <scope id="1483061781799228692" at="81,102,87,7" />
+      <scope id="1483061781792570151" at="21,102,28,7" />
+      <scope id="1483061781793258764" at="32,102,39,7" />
+      <scope id="1483061781793319156" at="44,7,52,9">
+        <var name="oldNode" id="1483061781793319156" />
+      </scope>
+      <scope id="1483061781793431747" at="57,0,65,0">
+        <var name="enclosingNode" id="1483061781793431747" />
+        <var name="index" id="1483061781793431747" />
+        <var name="model" id="1483061781793431747" />
+        <var name="newNode" id="1483061781793431747" />
+        <var name="sampleNode" id="1483061781793431747" />
+      </scope>
+      <scope id="6659604735287055737" at="68,7,76,9">
+        <var name="oldNode" id="6659604735287055737" />
+      </scope>
+      <scope id="1483061781799228692" at="81,0,89,0">
+        <var name="enclosingNode" id="1483061781799228692" />
+        <var name="index" id="1483061781799228692" />
+        <var name="model" id="1483061781799228692" />
+        <var name="newNode" id="1483061781799228692" />
+        <var name="sampleNode" id="1483061781799228692" />
+      </scope>
+      <scope id="1483061781792570151" at="21,0,30,0">
+        <var name="enclosingNode" id="1483061781792570151" />
+        <var name="index" id="1483061781792570151" />
+        <var name="model" id="1483061781792570151" />
+        <var name="newNode" id="1483061781792570151" />
+        <var name="sampleNode" id="1483061781792570151" />
+      </scope>
+      <scope id="1483061781793258764" at="32,0,41,0">
+        <var name="enclosingNode" id="1483061781793258764" />
+        <var name="index" id="1483061781793258764" />
+        <var name="model" id="1483061781793258764" />
+        <var name="newNode" id="1483061781793258764" />
+        <var name="sampleNode" id="1483061781793258764" />
+      </scope>
+      <scope id="1483061781793319153" at="43,102,53,7" />
+      <scope id="1483061781799149020" at="67,102,77,7" />
+      <scope id="1483061781793319153" at="43,0,55,0">
+        <var name="enclosingNode" id="1483061781793319153" />
+        <var name="index" id="1483061781793319153" />
+        <var name="model" id="1483061781793319153" />
+        <var name="newNode" id="1483061781793319153" />
+        <var name="sampleNode" id="1483061781793319153" />
+      </scope>
+      <scope id="1483061781799149020" at="67,0,79,0">
+        <var name="enclosingNode" id="1483061781799149020" />
+        <var name="index" id="1483061781799149020" />
+        <var name="model" id="1483061781799149020" />
+        <var name="newNode" id="1483061781799149020" />
+        <var name="sampleNode" id="1483061781799149020" />
+      </scope>
+      <unit id="1483061781792570150" at="100,0,104,0" name="org.iets3.core.expr.lambda.actions.LambdaFactories$PROPS" />
+      <unit id="1483061781792570150" at="91,0,99,0" name="org.iets3.core.expr.lambda.actions.LambdaFactories$CONCEPTS" />
+      <unit id="1483061781793431747" at="56,0,66,0" name="org.iets3.core.expr.lambda.actions.LambdaFactories$NodeFactory_1483061781793431747" />
+      <unit id="1483061781799228692" at="80,0,90,0" name="org.iets3.core.expr.lambda.actions.LambdaFactories$NodeFactory_1483061781799228692" />
+      <unit id="1483061781792570151" at="20,0,31,0" name="org.iets3.core.expr.lambda.actions.LambdaFactories$NodeFactory_1483061781792570151" />
+      <unit id="1483061781793258764" at="31,0,42,0" name="org.iets3.core.expr.lambda.actions.LambdaFactories$NodeFactory_1483061781793258764" />
+      <unit id="1483061781792570150" at="105,0,117,0" name="org.iets3.core.expr.lambda.actions.LambdaFactories$LINKS" />
+      <unit id="1483061781793319153" at="42,0,56,0" name="org.iets3.core.expr.lambda.actions.LambdaFactories$NodeFactory_1483061781793319153" />
+      <unit id="1483061781799149020" at="66,0,80,0" name="org.iets3.core.expr.lambda.actions.LambdaFactories$NodeFactory_1483061781799149020" />
+      <unit id="1483061781792570150" at="19,0,118,0" name="org.iets3.core.expr.lambda.actions.LambdaFactories" />
+    </file>
+  </root>
+</debug-info>
+
