@@ -5998,7 +5998,10 @@
             <node concept="3clFbJ" id="3TIaSh_4mRE" role="3cqZAp">
               <node concept="3clFbS" id="3TIaSh_4mRG" role="3clFbx">
                 <node concept="3cpWs6" id="3TIaSh_4nNT" role="3cqZAp">
-                  <node concept="10Nm6u" id="3L1$CQukxob" role="3cqZAk" />
+                  <node concept="10M0yZ" id="zNMCYS0E$H" role="3cqZAk">
+                    <ref role="3cqZAo" to="pbu6:7LZDtvhKJPv" resolve="CODE_IGNORE" />
+                    <ref role="1PxDUh" to="pbu6:7LZDtvhy76p" resolve="IDefaultCoverageAnalyzer" />
+                  </node>
                 </node>
               </node>
               <node concept="2YIFZM" id="3TIaSh_4nw1" role="3clFbw">
