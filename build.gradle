@@ -134,16 +134,11 @@ class BundledDep {
     String libSolutionName
     Closure configClosure = { transitive = false }
     // in case a legacy dependency has a broken artifact name, e.g. w/o extension
-    String jarNameOverride
     String getConfigName() {
         name + '_bundled'
     }
     String getResolveTaskName() {
         'resolve_' + this.configName
-    }
-    BundledDep overrideArtifactName(String artifactName) {
-        this.jarNameOverride = artifactName
-        this
     }
 }
 
@@ -151,7 +146,7 @@ def bundledDeps = [
         new BundledDep('pcollections', ['org.pcollections:pcollections:4.0.2'], 'org.iets3.core.expr.base.collections.stubs'),
         new BundledDep('bigMath', ['ch.obermuhlner:big-math:2.3.2'], 'org.iets3.core.expr.math.interpreter'),
         new BundledDep('functionalJava', ['org.functionaljava:functionaljava:5.0'], 'org.iets3.core.expr.genjava.functionalJava'),
-        new BundledDep('cpsSuite', ['io.takari.junit:takari-cpsuite:1.2.7'], 'org.iets3.opensource.build.gentests.rt').overrideArtifactName('takari-cpsuite.jar')
+        new BundledDep('cpsSuite', ['io.takari.junit:takari-cpsuite:1.2.7@jar'], 'org.iets3.opensource.build.gentests.rt')
 ]
 
 bundledDeps.each { dep ->
@@ -171,9 +166,7 @@ bundledDeps.each { dep ->
         rename { filename ->
             def ra = configurations.getByName(dep.configName).resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
             String finalName
-            if (dep.jarNameOverride != null) {
-                finalName = dep.jarNameOverride
-            } else if (ra.classifier != null) {
+            if (ra.classifier != null) {
                 finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
             } else {
                 finalName = "${ra.name}.${ra.extension}"
@@ -383,7 +376,7 @@ task packageDistroWithDependencies(type: Zip, dependsOn: buildDistroWithDependen
 
 assemble.dependsOn packageLanguages, packageTests
 
-static def addDependency(Object pom, Object groupId, Object artifactId, Object version, Object type = null) {
+static def addDependency(Object pom, Object groupId, Object artifactId, Object version, Object type = null, String scope = null) {
     pom.withXml { XmlProvider prov ->
         Node root = prov.asNode()
         Node deps = root.dependencies[0] ?: root.appendNode("dependencies")
@@ -394,14 +387,16 @@ static def addDependency(Object pom, Object groupId, Object artifactId, Object v
         if (type != null) {
             dep.appendNode("type", type)
         }
+        if (scope != null) {
+            dep.appendNode("scope", scope)
+        }
     }
 }
 
-static def addDependency(Object pom, Configuration config) {
+static def addDependency(MavenPom pom, Configuration config, String scope = null) {
     config.resolvedConfiguration.firstLevelModuleDependencies.each {
-        addDependency(pom, it.moduleGroup, it.moduleName, it.moduleVersion, it.moduleArtifacts[0].type)
+        addDependency(pom, it.moduleGroup, it.moduleName, it.moduleVersion, it.moduleArtifacts[0].type, scope)
     }
-
 }
 
 ext.additionalPomInfo = {
@@ -422,6 +417,12 @@ ext.additionalPomInfo = {
     scm {
         tag = GitBasedVersioning.getGitCommitHash()
         url = "https://github.com/IETS3/iets3.opensource"
+    }
+}
+
+ext.addBundledDependencies = { MavenPom pom ->
+    bundledDeps.each {
+        addDependency(pom, configurations[it.configName], 'provided')
     }
 }
 
@@ -457,6 +458,8 @@ publishing {
             artifact packageLanguages
 
             addDependency(pom, configurations.languageLibs)
+
+            pom addBundledDependencies
 
             pom additionalPomInfo
         }
