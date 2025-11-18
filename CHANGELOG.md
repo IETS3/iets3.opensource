@@ -32,6 +32,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 - Improved the readability of lists by enforcing a new line when a threshold of three elements per list is exeeded.
 - A DecTab bug not respecting the default value was fixed and a corresponding warning was added to warn users which default value takes precedence
+- Ignored concepts of the coverage analyzer are now colored with IGNORED_COLOR.
 
 ## September 2025
 
