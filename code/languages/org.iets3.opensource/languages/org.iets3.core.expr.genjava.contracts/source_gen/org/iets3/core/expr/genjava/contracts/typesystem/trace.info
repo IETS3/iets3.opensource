@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="org.iets3.core.expr.genjava.contracts.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:6e891f22-232d-4aba-9618-8bcf61dfb15e(org.iets3.core.expr.genjava.contracts.typesystem)/391130746964908388">
+    <file name="TypesystemDescriptor.java">
+      <node id="391130746964908388" at="10,5,11,87" concept="5" />
+      <node id="391130746964908388" at="11,87,12,47" concept="2" />
+      <node id="391130746964908388" at="9,33,13,5" concept="0" />
+      <scope id="391130746964908388" at="10,5,12,47">
+        <var name="inferenceRule" id="391130746964908388" />
+      </scope>
+    </file>
+    <file name="typeof_ContractSubject_InferenceRule.java">
+      <node id="391130746987873153" at="24,128,25,118" concept="5" />
+      <node id="391130746987886796" at="27,7,28,66" concept="5" />
+      <node id="391130746987886796" at="28,66,29,286" concept="5" />
+      <node id="391130746964908972" at="32,7,33,59" concept="5" />
+      <node id="391130746964908972" at="33,59,34,215" concept="5" />
+      <node id="391130746964908972" at="34,215,35,463" concept="2" />
+      <node id="391130746964908388" at="39,50,40,39" concept="6" />
+      <node id="391130746964908388" at="42,68,43,102" concept="6" />
+      <node id="391130746964908388" at="45,30,46,17" concept="6" />
+      <node id="391130746964908388" at="50,0,51,0" concept="7" trace="CheckStatement$eg" />
+      <node id="391130746964908388" at="51,0,52,0" concept="7" trace="ContractSubject$9h" />
+      <node id="391130746964908388" at="55,0,56,0" concept="7" trace="value$7NAf" />
+      <node id="391130746964908388" at="22,0,24,0" concept="1" trace="typeof_ContractSubject_InferenceRule#()V" />
+      <node id="391130746964908388" at="39,0,42,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="391130746964908388" at="42,0,45,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="391130746964908388" at="45,0,48,0" concept="4" trace="overrides#()Z" />
+      <node id="391130746987886796" at="26,78,30,7" concept="0" />
+      <node id="391130746964908972" at="31,12,36,7" concept="0" />
+      <node id="391130746987887070" at="31,10,37,5" concept="0" />
+      <node id="391130746987874432" at="25,118,37,5" concept="3" />
+      <node id="391130746964908388" at="24,0,39,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="391130746964908388" at="22,49,22,49" />
+      <scope id="391130746964908388" at="39,50,40,39" />
+      <scope id="391130746964908388" at="42,68,43,102" />
+      <scope id="391130746964908388" at="45,30,46,17" />
+      <scope id="391130746964908388" at="22,0,24,0" />
+      <scope id="391130746987886796" at="27,7,29,286">
+        <var name="_reporter_2309309498" id="391130746987886796" />
+        <var name="errorTarget" id="391130746987886796" />
+      </scope>
+      <scope id="391130746964908972" at="32,7,35,463">
+        <var name="_info_12389875345" id="391130746964908972" />
+        <var name="_nodeToCheck_1029348928467" id="391130746964908972" />
+      </scope>
+      <scope id="391130746964908388" at="39,0,42,0" />
+      <scope id="391130746964908388" at="42,0,45,0">
+        <var name="argument" id="391130746964908388" />
+      </scope>
+      <scope id="391130746964908388" at="45,0,48,0" />
+      <scope id="391130746987874434" at="26,78,30,7" />
+      <scope id="391130746987887071" at="31,12,36,7" />
+      <scope id="391130746964908389" at="24,128,37,5">
+        <var name="checkStatement" id="391130746987873154" />
+      </scope>
+      <scope id="391130746964908388" at="24,0,39,0">
+        <var name="contractSubject" id="391130746964908388" />
+        <var name="status" id="391130746964908388" />
+        <var name="typeCheckingContext" id="391130746964908388" />
+      </scope>
+      <unit id="391130746964908388" at="54,0,57,0" name="org.iets3.core.expr.genjava.contracts.typesystem.typeof_ContractSubject_InferenceRule$LINKS" />
+      <unit id="391130746964908388" at="49,0,53,0" name="org.iets3.core.expr.genjava.contracts.typesystem.typeof_ContractSubject_InferenceRule$CONCEPTS" />
+      <unit id="391130746964908388" at="21,0,58,0" name="org.iets3.core.expr.genjava.contracts.typesystem.typeof_ContractSubject_InferenceRule" />
+    </file>
+  </root>
+</debug-info>
+

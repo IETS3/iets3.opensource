@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="1s1epys8lyg8upmna6hb983dt9y81sm">
+  <files names="Base_ApplicationPlugin.java:DefaultIETS3VariabilitySettings.java:DotExpressionUtil.java:EditorUtils.java:EvalConstants.java:ExpressionListUtil.java:ExtensionDescriptor.java:FeatureModelScopeProvider.java:FeatureModelTraversal.java:FeatureShape.java:FeatureTreeNodeUtil.java:Group_RootConstraintsAcrossModel_ActionGroup.java:IETS3VariabilitySettings.java:ToggleRootConstraintsAcrossModel.java" />
+</product>
+

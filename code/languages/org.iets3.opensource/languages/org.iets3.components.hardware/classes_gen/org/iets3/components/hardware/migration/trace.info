@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="MigrationDescriptor.java">
+      <unit at="11,0,17,0" name="org.iets3.components.hardware.migration.MigrationDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c1a21a30-79ef-4785-a2b8-c0ab6807f7f9(org.iets3.components.hardware.migration)/4042857247280561147">
+    <file name="migrateEmptyComponentInterfaceContentInPorts.java">
+      <node id="4042857247280561147" at="26,0,27,0" concept="2" trace="description" />
+      <node id="4042857247280561147" at="27,30,28,23" concept="7" />
+      <node id="4042857247280561147" at="31,33,32,16" concept="7" />
+      <node id="4042857247280561147" at="34,41,35,17" concept="1" />
+      <node id="4042857247280561147" at="35,17,36,16" concept="7" />
+      <node id="4042857247280715473" at="39,38,40,221" concept="6" />
+      <node id="4042857247280722600" at="40,221,41,38" concept="8" />
+      <node id="4042857247280571634" at="41,38,42,89" concept="1" />
+      <node id="4042857247280797465" at="47,5,48,64" concept="6" />
+      <node id="4042857247280797465" at="48,64,49,90" concept="6" />
+      <node id="4042857247280797465" at="49,90,50,63" concept="6" />
+      <node id="4042857247280870222" at="50,63,51,329" concept="6" />
+      <node id="4042857247281113334" at="51,329,52,0" concept="9" />
+      <node id="4042857247280878612" at="55,38,56,99" concept="7" />
+      <node id="4042857247280561147" at="62,50,63,150" concept="7" />
+      <node id="4042857247280561147" at="68,0,69,0" concept="10" trace="HardwareComponentInterface$Ag" />
+      <node id="4042857247280561147" at="69,0,70,0" concept="10" trace="EmptyComponentInterfaceContent$zC" />
+      <node id="4042857247280561147" at="73,0,74,0" concept="10" trace="ports$WHrM" />
+      <node id="4042857247280561147" at="27,0,30,0" concept="5" trace="getCaption#()Ljava/lang/String;" />
+      <node id="4042857247280878608" at="55,0,58,0" concept="5" trace="getMessage#()Ljava/lang/String;" />
+      <node id="4042857247280561147" at="62,0,65,0" concept="5" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="4042857247280561147" at="30,0,34,0" concept="5" trace="isRerunnable#()Z" />
+      <node id="4042857247280561147" at="34,0,38,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4042857247280565818" at="38,42,43,5" concept="3" />
+      <node id="4042857247280878603" at="53,86,58,10" concept="7" />
+      <node id="4042857247280561147" at="38,0,45,0" concept="5" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="4042857247280878596" at="52,0,59,9" concept="7" />
+      <node id="4042857247280797465" at="46,45,60,5" concept="0" />
+      <node id="4042857247280561147" at="45,0,62,0" concept="5" trace="check#(Lorg/jetbrains/mps/openapi/module/SModule;)Ljava/lang/Iterable;" />
+      <scope id="4042857247280561147" at="27,30,28,23" />
+      <scope id="4042857247280561147" at="31,33,32,16" />
+      <scope id="4042857247280878611" at="55,38,56,99" />
+      <scope id="4042857247280561147" at="62,50,63,150" />
+      <scope id="4042857247280561147" at="34,41,36,16" />
+      <scope id="4042857247280561147" at="27,0,30,0" />
+      <scope id="4042857247280565821" at="39,38,42,89">
+        <var name="emptyLines" id="4042857247280715474" />
+      </scope>
+      <scope id="4042857247280878608" at="55,0,58,0" />
+      <scope id="4042857247280561147" at="62,0,65,0" />
+      <scope id="4042857247280561147" at="30,0,34,0" />
+      <scope id="4042857247280561147" at="34,0,38,0">
+        <var name="m" id="4042857247280561147" />
+      </scope>
+      <scope id="4042857247280561147" at="38,42,43,5" />
+      <scope id="4042857247280565818" at="38,42,43,5">
+        <var name="mdl" id="4042857247280565819" />
+      </scope>
+      <scope id="4042857247280878602" at="53,86,58,10" />
+      <scope id="4042857247280561147" at="38,0,45,0">
+        <var name="m" id="4042857247280561147" />
+      </scope>
+      <scope id="4042857247280797465" at="47,5,59,9">
+        <var name="context" id="4042857247280797465" />
+        <var name="notMigratedEmptyLines" id="4042857247280870223" />
+        <var name="scope_eqpmmh_a0f" id="4042857247280797465" />
+        <var name="scope_eqpmmh_a0f_0" id="4042857247280797465" />
+      </scope>
+      <scope id="4042857247280561147" at="46,45,60,5" />
+      <scope id="4042857247280561147" at="45,0,62,0">
+        <var name="m" id="4042857247280561147" />
+      </scope>
+      <unit id="4042857247280561147" at="72,0,75,0" name="org.iets3.components.hardware.migration.migrateEmptyComponentInterfaceContentInPorts$LINKS" />
+      <unit id="4042857247280878606" at="54,19,58,9" name="org.iets3.components.hardware.migration.migrateEmptyComponentInterfaceContentInPorts$1" />
+      <unit id="4042857247280561147" at="67,0,71,0" name="org.iets3.components.hardware.migration.migrateEmptyComponentInterfaceContentInPorts$CONCEPTS" />
+      <unit id="4042857247280561147" at="25,0,76,0" name="org.iets3.components.hardware.migration.migrateEmptyComponentInterfaceContentInPorts" />
+    </file>
+  </root>
+  <root nodeRef="r:c1a21a30-79ef-4785-a2b8-c0ab6807f7f9(org.iets3.components.hardware.migration)/6522174570290537870">
+    <file name="migrateBusWirings.java">
+      <node id="6522174570290537870" at="21,0,22,0" concept="2" trace="description" />
+      <node id="6522174570290537870" at="22,30,23,23" concept="7" />
+      <node id="6522174570290537870" at="26,33,27,16" concept="7" />
+      <node id="6522174570290537870" at="29,41,30,17" concept="1" />
+      <node id="6522174570290537870" at="30,17,31,16" concept="7" />
+      <node id="6522174570290572666" at="35,179,36,0" concept="9" />
+      <node id="6522174570290580317" at="36,0,37,125" concept="6" />
+      <node id="6522174570290592685" at="37,125,38,216" concept="6" />
+      <node id="6522174570290585562" at="38,216,39,77" concept="1" />
+      <node id="6522174570290613602" at="39,77,40,0" concept="9" />
+      <node id="6522174570290615425" at="40,0,41,88" concept="1" />
+      <node id="6522174570290537870" at="45,50,46,150" concept="7" />
+      <node id="6522174570290537870" at="50,0,51,0" concept="10" trace="WireConnector$hh" />
+      <node id="6522174570290537870" at="54,0,55,0" concept="10" trace="targetBus$Ov8Q" />
+      <node id="6522174570290537870" at="55,0,56,0" concept="10" trace="ref$ewMO" />
+      <node id="6522174570290537870" at="56,0,57,0" concept="10" trace="wireTarget$WCE5" />
+      <node id="6522174570290537870" at="22,0,25,0" concept="5" trace="getCaption#()Ljava/lang/String;" />
+      <node id="6522174570290537870" at="45,0,48,0" concept="5" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="6522174570290537870" at="25,0,29,0" concept="5" trace="isRerunnable#()Z" />
+      <node id="6522174570290537870" at="29,0,33,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6522174570290541116" at="34,38,42,9" concept="1" />
+      <node id="2109381463401939561" at="33,42,43,5" concept="3" />
+      <node id="6522174570290537870" at="33,0,45,0" concept="5" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="6522174570290537870" at="22,30,23,23" />
+      <scope id="6522174570290537870" at="26,33,27,16" />
+      <scope id="6522174570290537870" at="45,50,46,150" />
+      <scope id="6522174570290537870" at="29,41,31,16" />
+      <scope id="6522174570290537870" at="22,0,25,0" />
+      <scope id="6522174570290537870" at="45,0,48,0" />
+      <scope id="6522174570290537870" at="25,0,29,0" />
+      <scope id="6522174570290537870" at="29,0,33,0">
+        <var name="m" id="6522174570290537870" />
+      </scope>
+      <scope id="6522174570290572539" at="35,179,41,88">
+        <var name="busInstanceRef" id="6522174570290592688" />
+        <var name="refedInstance" id="6522174570290580318" />
+      </scope>
+      <scope id="2109381463401939564" at="34,38,42,9" />
+      <scope id="2109381463401939561" at="33,42,43,5">
+        <var name="mdl" id="2109381463401939562" />
+      </scope>
+      <scope id="6522174570290537870" at="33,42,43,5" />
+      <scope id="6522174570290537870" at="33,0,45,0">
+        <var name="m" id="6522174570290537870" />
+      </scope>
+      <unit id="6522174570290537870" at="49,0,52,0" name="org.iets3.components.hardware.migration.migrateBusWirings$CONCEPTS" />
+      <unit id="6522174570290537870" at="53,0,58,0" name="org.iets3.components.hardware.migration.migrateBusWirings$LINKS" />
+      <unit id="6522174570290537870" at="20,0,59,0" name="org.iets3.components.hardware.migration.migrateBusWirings" />
+    </file>
+  </root>
+  <root nodeRef="r:c1a21a30-79ef-4785-a2b8-c0ab6807f7f9(org.iets3.components.hardware.migration)/740684451358548118">
+    <file name="WrireConnector.java">
+      <node id="740684451358548118" at="20,0,21,0" concept="2" trace="description" />
+      <node id="740684451358548118" at="21,30,22,23" concept="7" />
+      <node id="740684451358548118" at="25,33,26,17" concept="7" />
+      <node id="740684451358548118" at="28,41,29,17" concept="1" />
+      <node id="740684451358548118" at="29,17,30,16" concept="7" />
+      <node id="740684451358570948" at="33,38,34,409" concept="1" />
+      <node id="740684451358548118" at="37,50,38,150" concept="7" />
+      <node id="740684451358548118" at="42,0,43,0" concept="10" trace="WireConnector$hh" />
+      <node id="740684451358548118" at="46,0,47,0" concept="10" trace="connectorType$8zQx" />
+      <node id="740684451358548118" at="47,0,48,0" concept="10" trace="sourcePort$mT3n" />
+      <node id="740684451358548118" at="48,0,49,0" concept="10" trace="type$5Gl6" />
+      <node id="740684451358548118" at="21,0,24,0" concept="5" trace="getCaption#()Ljava/lang/String;" />
+      <node id="740684451358555644" at="32,42,35,5" concept="3" />
+      <node id="740684451358548118" at="37,0,40,0" concept="5" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="740684451358548118" at="24,0,28,0" concept="5" trace="isRerunnable#()Z" />
+      <node id="740684451358548118" at="28,0,32,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="740684451358548118" at="32,0,37,0" concept="5" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="740684451358548118" at="21,30,22,23" />
+      <scope id="740684451358548118" at="25,33,26,17" />
+      <scope id="740684451358555647" at="33,38,34,409" />
+      <scope id="740684451358548118" at="37,50,38,150" />
+      <scope id="740684451358548118" at="28,41,30,16" />
+      <scope id="740684451358548118" at="21,0,24,0" />
+      <scope id="740684451358548118" at="32,42,35,5" />
+      <scope id="740684451358555644" at="32,42,35,5">
+        <var name="mdl" id="740684451358555645" />
+      </scope>
+      <scope id="740684451358548118" at="37,0,40,0" />
+      <scope id="740684451358548118" at="24,0,28,0" />
+      <scope id="740684451358548118" at="28,0,32,0">
+        <var name="m" id="740684451358548118" />
+      </scope>
+      <scope id="740684451358548118" at="32,0,37,0">
+        <var name="m" id="740684451358548118" />
+      </scope>
+      <unit id="740684451358548118" at="41,0,44,0" name="org.iets3.components.hardware.migration.WrireConnector$CONCEPTS" />
+      <unit id="740684451358548118" at="45,0,50,0" name="org.iets3.components.hardware.migration.WrireConnector$LINKS" />
+      <unit id="740684451358548118" at="19,0,51,0" name="org.iets3.components.hardware.migration.WrireConnector" />
+    </file>
+  </root>
+  <root nodeRef="r:c1a21a30-79ef-4785-a2b8-c0ab6807f7f9(org.iets3.components.hardware.migration)/8941163450323034183">
+    <file name="migrateBuskinds.java">
+      <node id="8941163450323034183" at="30,0,31,0" concept="2" trace="description" />
+      <node id="8941163450323034183" at="31,30,32,23" concept="7" />
+      <node id="8941163450323034183" at="35,33,36,16" concept="7" />
+      <node id="8941163450323034183" at="38,41,39,17" concept="1" />
+      <node id="8941163450323034183" at="39,17,40,16" concept="7" />
+      <node id="8941163450323101636" at="43,38,44,224" concept="6" />
+      <node id="8941163450323044319" at="44,224,45,33" concept="8" />
+      <node id="8941163450323110920" at="47,60,48,27" concept="8" />
+      <node id="8941163450323112888" at="49,90,50,68" concept="1" />
+      <node id="8941163450323131135" at="58,5,59,64" concept="6" />
+      <node id="8941163450323131135" at="59,64,60,90" concept="6" />
+      <node id="8941163450323131135" at="60,90,61,63" concept="6" />
+      <node id="8941163450323148065" at="61,63,62,288" concept="6" />
+      <node id="8941163450323253624" at="62,288,63,0" concept="9" />
+      <node id="8941163450323193928" at="66,38,67,134" concept="7" />
+      <node id="8941163450323034183" at="73,50,74,150" concept="7" />
+      <node id="8941163450323034183" at="79,0,80,0" concept="10" trace="Component$gR" />
+      <node id="8941163450323034183" at="80,0,81,0" concept="10" trace="BusKind$f0" />
+      <node id="8941163450323034183" at="84,0,85,0" concept="10" trace="kind$8cnO" />
+      <node id="8941163450323034183" at="88,0,89,0" concept="10" trace="name$MnvL" />
+      <node id="8941163450323034183" at="31,0,34,0" concept="5" trace="getCaption#()Ljava/lang/String;" />
+      <node id="8941163450323107228" at="48,27,51,11" concept="4" />
+      <node id="8941163450323192293" at="66,0,69,0" concept="5" trace="getMessage#()Ljava/lang/String;" />
+      <node id="8941163450323034183" at="73,0,76,0" concept="5" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="8941163450323034183" at="34,0,38,0" concept="5" trace="isRerunnable#()Z" />
+      <node id="8941163450323034183" at="38,0,42,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8941163450323152610" at="64,88,69,10" concept="7" />
+      <node id="8941163450324789331" at="46,69,52,9" concept="4" />
+      <node id="8941163450323149431" at="63,0,70,9" concept="7" />
+      <node id="8941163450323044321" at="45,33,53,9" concept="1" />
+      <node id="8941163450323044299" at="42,42,54,5" concept="3" />
+      <node id="8941163450323034183" at="42,0,56,0" concept="5" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="8941163450323131135" at="57,45,71,5" concept="0" />
+      <node id="8941163450323034183" at="56,0,73,0" concept="5" trace="check#(Lorg/jetbrains/mps/openapi/module/SModule;)Ljava/lang/Iterable;" />
+      <scope id="8941163450323034183" at="31,30,32,23" />
+      <scope id="8941163450323034183" at="35,33,36,16" />
+      <scope id="8941163450323107230" at="49,90,50,68" />
+      <scope id="8941163450323192297" at="66,38,67,134" />
+      <scope id="8941163450323034183" at="73,50,74,150" />
+      <scope id="8941163450323034183" at="38,41,40,16" />
+      <scope id="8941163450323034183" at="31,0,34,0" />
+      <scope id="8941163450323192293" at="66,0,69,0" />
+      <scope id="8941163450323034183" at="73,0,76,0" />
+      <scope id="8941163450323034183" at="34,0,38,0" />
+      <scope id="8941163450323034183" at="38,0,42,0">
+        <var name="m" id="8941163450323034183" />
+      </scope>
+      <scope id="8941163450324789333" at="47,60,51,11" />
+      <scope id="8941163450323152034" at="64,88,69,10" />
+      <scope id="8941163450323044326" at="46,69,52,9" />
+      <scope id="8941163450323044305" at="43,38,53,9">
+        <var name="buskindComps" id="8941163450323101637" />
+      </scope>
+      <scope id="8941163450323034183" at="42,42,54,5" />
+      <scope id="8941163450323044299" at="42,42,54,5">
+        <var name="mdl" id="8941163450323044300" />
+      </scope>
+      <scope id="8941163450323131135" at="58,5,70,9">
+        <var name="context" id="8941163450323131135" />
+        <var name="notMigratedBudKindComps" id="8941163450323148066" />
+        <var name="scope_musyj9_a0f" id="8941163450323131135" />
+        <var name="scope_musyj9_a0f_0" id="8941163450323131135" />
+      </scope>
+      <scope id="8941163450323034183" at="42,0,56,0">
+        <var name="m" id="8941163450323034183" />
+      </scope>
+      <scope id="8941163450323034183" at="57,45,71,5" />
+      <scope id="8941163450323034183" at="56,0,73,0">
+        <var name="m" id="8941163450323034183" />
+      </scope>
+      <unit id="8941163450323034183" at="83,0,86,0" name="org.iets3.components.hardware.migration.migrateBuskinds$LINKS" />
+      <unit id="8941163450323034183" at="87,0,90,0" name="org.iets3.components.hardware.migration.migrateBuskinds$PROPS" />
+      <unit id="8941163450323192291" at="65,19,69,9" name="org.iets3.components.hardware.migration.migrateBuskinds$1" />
+      <unit id="8941163450323034183" at="78,0,82,0" name="org.iets3.components.hardware.migration.migrateBuskinds$CONCEPTS" />
+      <unit id="8941163450323034183" at="29,0,91,0" name="org.iets3.components.hardware.migration.migrateBuskinds" />
+    </file>
+  </root>
+</debug-info>
+

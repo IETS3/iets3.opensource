@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="MigrationDescriptor.java">
+      <unit at="11,0,17,0" name="org.iets3.protocol.transport.migration.MigrationDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:2b87dcdb-a007-48b5-bb81-565c2b5e0d11(org.iets3.protocol.transport.migration)/4382927200846210364">
+    <file name="protocolLangRefactorings.java">
+      <node id="4382927200846210364" at="21,0,22,0" concept="1" trace="description" />
+      <node id="4382927200846210364" at="22,30,23,23" concept="6" />
+      <node id="4382927200846210364" at="26,33,27,17" concept="6" />
+      <node id="4382927200846210364" at="29,41,30,17" concept="0" />
+      <node id="4382927200846210364" at="30,17,31,16" concept="6" />
+      <node id="4382927200846886480" at="34,40,35,28" concept="7" />
+      <node id="4382927200846519217" at="35,28,36,276" concept="0" />
+      <node id="4382927200846917615" at="36,276,37,28" concept="7" />
+      <node id="4382927200847198077" at="39,88,40,41" concept="0" />
+      <node id="4382927200847215751" at="40,41,41,113" concept="0" />
+      <node id="4382927200847252314" at="42,86,43,68" concept="5" />
+      <node id="4382927200847270454" at="43,68,44,92" concept="5" />
+      <node id="4382927200847276066" at="44,92,45,166" concept="0" />
+      <node id="4382927200847192605" at="46,9,47,0" concept="8" />
+      <node id="4382927200846210364" at="51,50,52,149" concept="6" />
+      <node id="4382927200847383921" at="55,85,56,75" concept="5" />
+      <node id="4382927200847383921" at="56,75,57,80" concept="0" />
+      <node id="4382927200847383921" at="57,80,58,26" concept="6" />
+      <node id="4382927200846210364" at="62,0,63,0" concept="9" trace="ProtocolMapSection$35" />
+      <node id="4382927200846210364" at="63,0,64,0" concept="9" trace="ProtocolMapCatalog$xA" />
+      <node id="4382927200846210364" at="64,0,65,0" concept="9" trace="EmptyProtocolMapContainerContent$BB" />
+      <node id="4382927200846210364" at="65,0,66,0" concept="9" trace="EmptyProtocolCatalogContent$bJ" />
+      <node id="4382927200846210364" at="66,0,67,0" concept="9" trace="IncludeProtocolMap$Di" />
+      <node id="4382927200846210364" at="67,0,68,0" concept="9" trace="IncludeProtocol$L_" />
+      <node id="4382927200846210364" at="68,0,69,0" concept="9" trace="IProtocolMapRef$Xd" />
+      <node id="4382927200846210364" at="72,0,73,0" concept="9" trace="content$tnjl" />
+      <node id="4382927200846210364" at="73,0,74,0" concept="9" trace="content_old$s3Be" />
+      <node id="4382927200846210364" at="74,0,75,0" concept="9" trace="content_old$$hIe" />
+      <node id="4382927200846210364" at="75,0,76,0" concept="9" trace="protocolMap$iGeG" />
+      <node id="4382927200846210364" at="76,0,77,0" concept="9" trace="ref$pS4B" />
+      <node id="4382927200846210364" at="22,0,25,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="4382927200846210364" at="51,0,54,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="4382927200846210364" at="25,0,29,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="4382927200846210364" at="29,0,33,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4382927200847383921" at="55,0,60,0" concept="10" trace="createIncludeProtocol_7n81v0_a0a2a0a0a0a0a0a0d0a0g#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4382927200847194228" at="38,227,46,9" concept="3" />
+      <node id="4382927200846888432" at="37,28,48,10" concept="0" />
+      <node id="4382927200846216811" at="33,42,49,5" concept="2" />
+      <node id="4382927200846210364" at="33,0,51,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="4382927200846210364" at="22,30,23,23" />
+      <scope id="4382927200846210364" at="26,33,27,17" />
+      <scope id="4382927200846210364" at="51,50,52,149" />
+      <scope id="4382927200846210364" at="29,41,31,16" />
+      <scope id="4382927200847194230" at="39,88,41,113" />
+      <scope id="4382927200846210364" at="22,0,25,0" />
+      <scope id="4382927200847238112" at="42,86,45,166">
+        <var name="oldInclude" id="4382927200847252315" />
+        <var name="protocolMap" id="4382927200847270455" />
+      </scope>
+      <scope id="4382927200846210364" at="51,0,54,0" />
+      <scope id="4382927200847383921" at="55,85,58,26">
+        <var name="n0" id="4382927200847383921" />
+      </scope>
+      <scope id="4382927200846210364" at="25,0,29,0" />
+      <scope id="4382927200846210364" at="29,0,33,0">
+        <var name="m" id="4382927200846210364" />
+      </scope>
+      <scope id="4382927200847383921" at="55,0,60,0">
+        <var name="p0" id="4382927200847383921" />
+      </scope>
+      <scope id="4382927200847191631" at="38,227,47,0" />
+      <scope id="4382927200846216814" at="34,40,48,10" />
+      <scope id="4382927200846210364" at="33,42,49,5" />
+      <scope id="4382927200846216811" at="33,42,49,5">
+        <var name="model" id="4382927200846216812" />
+      </scope>
+      <scope id="4382927200846210364" at="33,0,51,0">
+        <var name="m" id="4382927200846210364" />
+      </scope>
+      <unit id="4382927200846210364" at="71,0,78,0" name="org.iets3.protocol.transport.migration.protocolLangRefactorings$LINKS" />
+      <unit id="4382927200846210364" at="61,0,70,0" name="org.iets3.protocol.transport.migration.protocolLangRefactorings$CONCEPTS" />
+      <unit id="4382927200846210364" at="20,0,79,0" name="org.iets3.protocol.transport.migration.protocolLangRefactorings" />
+    </file>
+  </root>
+</debug-info>
+

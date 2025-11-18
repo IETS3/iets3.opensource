@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="14,0,34,0" name="org.iets3.core.expr.statemachines.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:766e80f8-9c77-41b5-baea-7658f393fd31(org.iets3.core.expr.statemachines.actions)/1483061781794362580">
+    <file name="StatemachineFactories.java">
+      <node id="1483061781794362600" at="17,7,18,41" concept="4" />
+      <node id="1483061781794363023" at="19,84,20,119" concept="1" />
+      <node id="1483061781794369015" at="20,119,21,117" concept="1" />
+      <node id="1483061781794374642" at="21,117,22,119" concept="1" />
+      <node id="1483061781794362580" at="29,0,30,0" concept="6" trace="AbstractTransition$ZK" />
+      <node id="1483061781794362580" at="33,0,34,0" concept="6" trace="action$aEUh" />
+      <node id="1483061781794362580" at="34,0,35,0" concept="6" trace="guard$axcj" />
+      <node id="1483061781794362580" at="35,0,36,0" concept="6" trace="target$3GhT" />
+      <node id="1483061781794362600" at="18,41,23,9" concept="2" />
+      <node id="1483061781794362600" at="16,102,24,7" concept="0" />
+      <node id="1483061781794362581" at="16,0,26,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1483061781794362602" at="19,84,22,119" />
+      <scope id="1483061781794362600" at="17,7,23,9">
+        <var name="oldNode" id="1483061781794362600" />
+      </scope>
+      <scope id="1483061781794362581" at="16,102,24,7" />
+      <scope id="1483061781794362581" at="16,0,26,0">
+        <var name="enclosingNode" id="1483061781794362581" />
+        <var name="index" id="1483061781794362581" />
+        <var name="model" id="1483061781794362581" />
+        <var name="newNode" id="1483061781794362581" />
+        <var name="sampleNode" id="1483061781794362581" />
+      </scope>
+      <unit id="1483061781794362580" at="28,0,31,0" name="org.iets3.core.expr.statemachines.actions.StatemachineFactories$CONCEPTS" />
+      <unit id="1483061781794362580" at="32,0,37,0" name="org.iets3.core.expr.statemachines.actions.StatemachineFactories$LINKS" />
+      <unit id="1483061781794362581" at="15,0,27,0" name="org.iets3.core.expr.statemachines.actions.StatemachineFactories$NodeFactory_1483061781794362581" />
+      <unit id="1483061781794362580" at="14,0,38,0" name="org.iets3.core.expr.statemachines.actions.StatemachineFactories" />
+    </file>
+  </root>
+  <root nodeRef="r:766e80f8-9c77-41b5-baea-7658f393fd31(org.iets3.core.expr.statemachines.actions)/4270802518595220039">
+    <file name="pasteFun_PasteWrapper_0.java">
+      <node id="4270802518595220128" at="16,46,17,32" concept="5" />
+      <node id="4270802518595220128" at="20,46,21,34" concept="5" />
+      <node id="4270802518595221334" at="24,39,25,55" concept="5" />
+      <node id="4270802518595221326" at="27,66,28,72" concept="4" />
+      <node id="4270802518595221326" at="28,72,29,73" concept="1" />
+      <node id="4270802518595221326" at="29,73,30,26" concept="5" />
+      <node id="4270802518595220128" at="34,0,35,0" concept="6" trace="Function$iC" />
+      <node id="4270802518595220128" at="35,0,36,0" concept="6" trace="ISMContent$o7" />
+      <node id="4270802518595220128" at="36,0,37,0" concept="6" trace="SMFunAdapter$L6" />
+      <node id="4270802518595220128" at="40,0,41,0" concept="6" trace="fun$NLoa" />
+      <node id="4270802518595220128" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4270802518595220128" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4270802518595220128" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4270802518595221326" at="27,0,32,0" concept="7" trace="createSMFunAdapter_a2dud2_a0a0a#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="4270802518595220128" at="16,46,17,32" />
+      <scope id="4270802518595220128" at="20,46,21,34" />
+      <scope id="4270802518595220130" at="24,39,25,55" />
+      <scope id="4270802518595221326" at="27,66,30,26">
+        <var name="n0" id="4270802518595221326" />
+      </scope>
+      <scope id="4270802518595220128" at="15,0,19,0" />
+      <scope id="4270802518595220128" at="19,0,23,0" />
+      <scope id="4270802518595220128" at="23,0,27,0">
+        <var name="sourceNode" id="4270802518595220128" />
+      </scope>
+      <scope id="4270802518595221326" at="27,0,32,0">
+        <var name="p0" id="4270802518595221326" />
+      </scope>
+      <unit id="4270802518595220128" at="39,0,42,0" name="org.iets3.core.expr.statemachines.actions.pasteFun_PasteWrapper_0$LINKS" />
+      <unit id="4270802518595220128" at="33,0,38,0" name="org.iets3.core.expr.statemachines.actions.pasteFun_PasteWrapper_0$CONCEPTS" />
+      <unit id="4270802518595220128" at="14,0,43,0" name="org.iets3.core.expr.statemachines.actions.pasteFun_PasteWrapper_0" />
+    </file>
+    <file name="pasteFun_PasteWrapper_1.java">
+      <node id="4270802518595286737" at="16,46,17,36" concept="5" />
+      <node id="4270802518595286737" at="20,46,21,44" concept="5" />
+      <node id="4270802518595288939" at="24,39,25,65" concept="5" />
+      <node id="4270802518595286737" at="29,0,30,0" concept="6" trace="SMFunAdapter$L6" />
+      <node id="4270802518595286737" at="30,0,31,0" concept="6" trace="IToplevelExprContent$AI" />
+      <node id="4270802518595286737" at="34,0,35,0" concept="6" trace="fun$NLoa" />
+      <node id="4270802518595286737" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4270802518595286737" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4270802518595286737" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="4270802518595286737" at="16,46,17,36" />
+      <scope id="4270802518595286737" at="20,46,21,44" />
+      <scope id="4270802518595286739" at="24,39,25,65" />
+      <scope id="4270802518595286737" at="15,0,19,0" />
+      <scope id="4270802518595286737" at="19,0,23,0" />
+      <scope id="4270802518595286737" at="23,0,27,0">
+        <var name="sourceNode" id="4270802518595286737" />
+      </scope>
+      <unit id="4270802518595286737" at="33,0,36,0" name="org.iets3.core.expr.statemachines.actions.pasteFun_PasteWrapper_1$LINKS" />
+      <unit id="4270802518595286737" at="28,0,32,0" name="org.iets3.core.expr.statemachines.actions.pasteFun_PasteWrapper_1$CONCEPTS" />
+      <unit id="4270802518595286737" at="14,0,37,0" name="org.iets3.core.expr.statemachines.actions.pasteFun_PasteWrapper_1" />
+    </file>
+  </root>
+</debug-info>
+

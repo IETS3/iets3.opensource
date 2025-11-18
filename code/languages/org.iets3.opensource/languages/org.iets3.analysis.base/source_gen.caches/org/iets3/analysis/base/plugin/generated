@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="6nilysmrdux02py7r52zhlalwsdqfgd">
+  <files names="AsyncSolverTaskExecutor.java:AsyncUtil.java:Base_ProjectPlugin.java:CancelableSupplier.java:CancelledTask.java:ExecOnPooledThreadInWriteAccess.java:ExtensionDescriptor.java:ISolvableMonitorNotification.java:ISolvableMonitorWidget.java:ISolvableMonitor_ProjectPluginPart.java:ISolvablePanel.java:ISolvableTaskStatus.java:ITask.java:IconContainer.java:MessageBuffer.java:MessageUI.java:PopupPanel.java:STF.java:SolverChecker.java:SolverException.java:SolverNotInvokedResult.java:SolverReportItem.java:SolverTaskCreator.java:SolverTaskFactory.java:SolverTaskWrapper.java:SolverTimeoutException.java:TaskCreationException.java:TaskEntity.java:TaskEntityRenderer.java:TextIcon_1.png:TextIcon_2.png:TextIcon_3.png:TextIcon_4.png:TextIcon_5.png:TextIcon_7.png:TypecheckingSolverTask_ProjectPluginPart.java" />
+</product>
+

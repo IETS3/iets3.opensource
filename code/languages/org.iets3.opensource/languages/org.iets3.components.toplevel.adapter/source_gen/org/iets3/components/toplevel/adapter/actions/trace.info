@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="14,0,26,0" name="org.iets3.components.toplevel.adapter.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:4b988d2a-3602-4076-b500-46a147495999(org.iets3.components.toplevel.adapter.actions)/2355528386933108324">
+    <file name="wrapTopLevelContent_PasteWrapper_0.java">
+      <node id="2355528386933108398" at="16,46,17,44" concept="3" />
+      <node id="2355528386933108398" at="20,46,21,47" concept="3" />
+      <node id="2355528386933109127" at="24,39,25,58" concept="3" />
+      <node id="2355528386933109125" at="27,69,28,75" concept="2" />
+      <node id="2355528386933109125" at="28,75,29,89" concept="0" />
+      <node id="2355528386933109125" at="29,89,30,26" concept="3" />
+      <node id="2355528386933108398" at="34,0,35,0" concept="4" trace="IToplevelExprContent$AI" />
+      <node id="2355528386933108398" at="35,0,36,0" concept="4" trace="IComponentsChunkContent$uO" />
+      <node id="2355528386933108398" at="36,0,37,0" concept="4" trace="TopLevelAdapter$F9" />
+      <node id="2355528386933108398" at="40,0,41,0" concept="4" trace="adapted$2EX5" />
+      <node id="2355528386933108398" at="15,0,19,0" concept="1" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2355528386933108398" at="19,0,23,0" concept="1" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2355528386933108398" at="23,0,27,0" concept="1" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2355528386933109125" at="27,0,32,0" concept="5" trace="createTopLevelAdapter_pbvihc_a0a0a#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2355528386933108398" at="16,46,17,44" />
+      <scope id="2355528386933108398" at="20,46,21,47" />
+      <scope id="2355528386933108400" at="24,39,25,58" />
+      <scope id="2355528386933109125" at="27,69,30,26">
+        <var name="n0" id="2355528386933109125" />
+      </scope>
+      <scope id="2355528386933108398" at="15,0,19,0" />
+      <scope id="2355528386933108398" at="19,0,23,0" />
+      <scope id="2355528386933108398" at="23,0,27,0">
+        <var name="sourceNode" id="2355528386933108398" />
+      </scope>
+      <scope id="2355528386933109125" at="27,0,32,0">
+        <var name="p0" id="2355528386933109125" />
+      </scope>
+      <unit id="2355528386933108398" at="39,0,42,0" name="org.iets3.components.toplevel.adapter.actions.wrapTopLevelContent_PasteWrapper_0$LINKS" />
+      <unit id="2355528386933108398" at="33,0,38,0" name="org.iets3.components.toplevel.adapter.actions.wrapTopLevelContent_PasteWrapper_0$CONCEPTS" />
+      <unit id="2355528386933108398" at="14,0,43,0" name="org.iets3.components.toplevel.adapter.actions.wrapTopLevelContent_PasteWrapper_0" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="19zu4i6a2d1c0ttqujbtm9yr0ivaljt">
+  <files names="AbstractRequirement__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:DefaultRequirement__BehaviorDescriptor.java:IReqContainer__BehaviorDescriptor.java:IReqContextLabelProvider__BehaviorDescriptor.java:IReqRefCtx__BehaviorDescriptor.java:IRequirementsRelation__BehaviorDescriptor.java:PlainReqRefWord__BehaviorDescriptor.java:RequirementsChunk__BehaviorDescriptor.java:StateAccepted__BehaviorDescriptor.java:StateDone__BehaviorDescriptor.java:StateNew__BehaviorDescriptor.java:State__BehaviorDescriptor.java" />
+</product>
+

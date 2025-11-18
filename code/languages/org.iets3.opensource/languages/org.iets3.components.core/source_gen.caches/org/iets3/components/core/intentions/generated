@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="7epyv9kynd7fblmlyd9j7nr53wp892r">
+  <files names="IntentionsDescriptor.java:addExprTest_Intention.java:addSubstructure_Intention.java:autowireAll_Intention.java:autowireInstance_Intention.java:moveComponentToChunk_Intention.java:togglePublic_Intention.java:toggleShowNestedStructure.java" />
+</product>
+

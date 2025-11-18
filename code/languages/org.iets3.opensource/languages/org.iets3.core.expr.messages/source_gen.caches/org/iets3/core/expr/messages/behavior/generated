@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-82a3rrd80cdctmzniykf8qggivjcek0">
+  <files names="BehaviorAspectDescriptor.java:CoercionIt__BehaviorDescriptor.java:ErrorKind__BehaviorDescriptor.java:GroupTarget__BehaviorDescriptor.java:Group__BehaviorDescriptor.java:IMessageNamespace__BehaviorDescriptor.java:MessageArgRef__BehaviorDescriptor.java:MessageArg__BehaviorDescriptor.java:MessageContainer__BehaviorDescriptor.java:MessageDefinition__BehaviorDescriptor.java:MessageKind__BehaviorDescriptor.java:MessageNamespaceRef__BehaviorDescriptor.java:MessageTarget__BehaviorDescriptor.java:MessageValueOp__BehaviorDescriptor.java:WarningKind__BehaviorDescriptor.java" />
+</product>
+

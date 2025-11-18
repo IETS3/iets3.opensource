@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1178893518978:jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root nodeRef="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)/4274681253356338441">
+    <file name="TimeDeltaValue.java">
+      <node id="4274681253356338444" at="12,0,13,0" concept="3" trace="hours" />
+      <node id="4274681253356338447" at="13,0,14,0" concept="3" trace="minutes" />
+      <node id="4274681253356338450" at="14,0,15,0" concept="3" trace="seconds" />
+      <node id="4274681253356338461" at="16,83,17,23" concept="2" />
+      <node id="4274681253356338467" at="17,23,18,27" concept="2" />
+      <node id="4274681253356338473" at="18,27,19,27" concept="2" />
+      <node id="4274681253356338498" at="23,25,24,49" concept="7" />
+      <node id="4274681253356338519" at="29,46,30,19" concept="7" />
+      <node id="4274681253356338521" at="31,5,32,0" concept="9" />
+      <node id="4274681253356338522" at="32,0,33,51" concept="6" />
+      <node id="4274681253356338528" at="33,51,34,0" concept="9" />
+      <node id="4274681253356338529" at="34,0,35,118" concept="7" />
+      <node id="4274681253356338571" at="39,28,40,47" concept="6" />
+      <node id="4274681253356338578" at="41,27,42,44" concept="2" />
+      <node id="4274681253356338588" at="43,5,44,0" concept="9" />
+      <node id="4274681253356338593" at="46,32,47,27" concept="2" />
+      <node id="4274681253356338603" at="48,7,49,48" concept="2" />
+      <node id="4274681253356338613" at="50,5,51,0" concept="9" />
+      <node id="4274681253356338618" at="53,32,54,27" concept="2" />
+      <node id="4274681253356338628" at="55,7,56,48" concept="2" />
+      <node id="4274681253356338663" at="57,5,58,0" concept="9" />
+      <node id="4274681253356338666" at="59,31,60,20" concept="8" />
+      <node id="4274681253356338670" at="60,20,61,25" concept="2" />
+      <node id="4274681253356338680" at="62,5,63,0" concept="9" />
+      <node id="4274681253356338681" at="63,0,64,29" concept="7" />
+      <node id="4274681253356338689" at="67,47,68,37" concept="7" />
+      <node id="4274681253356338700" at="70,50,71,24" concept="7" />
+      <node id="4274681253356474879" at="74,32,75,115" concept="7" />
+      <node id="4274681253356338734" at="78,42,79,35" concept="7" />
+      <node id="4274681253356338746" at="82,49,83,36" concept="7" />
+      <node id="4274681253356338758" at="86,34,87,82" concept="7" />
+      <node id="4274681253356338778" at="90,52,91,125" concept="7" />
+      <node id="4274681253356338820" at="94,53,95,140" concept="7" />
+      <node id="4274681253356338862" at="98,57,99,106" concept="7" />
+      <node id="4274681253356338888" at="102,54,103,100" concept="7" />
+      <node id="4274681253356338939" at="108,80,109,24" concept="7" />
+      <node id="4274681253356338965" at="111,80,112,26" concept="7" />
+      <node id="4274681253356338991" at="114,80,115,26" concept="7" />
+      <node id="4274681253356339021" at="116,5,117,109" concept="14" />
+      <node id="4274681253356339032" at="120,0,121,0" concept="10" trace="ZERO" />
+      <node id="4274681253356339040" at="122,58,123,71" concept="7" />
+      <node id="4274681253356339054" at="126,62,127,73" concept="7" />
+      <node id="4274681253356339068" at="130,62,131,73" concept="7" />
+      <node id="7492452870508084577" at="136,46,137,60" concept="6" />
+      <node id="7492452870508248531" at="137,60,138,0" concept="9" />
+      <node id="7492452870508084574" at="139,31,140,29" concept="7" />
+      <node id="7492452870508264647" at="141,5,142,0" concept="9" />
+      <node id="7492452870508084555" at="142,0,143,67" concept="6" />
+      <node id="7492452870508296025" at="143,67,144,0" concept="9" />
+      <node id="7492452870508084552" at="145,34,146,32" concept="7" />
+      <node id="7492452870508296072" at="147,5,148,0" concept="9" />
+      <node id="7492452870508084534" at="148,0,149,67" concept="6" />
+      <node id="7492452870508165568" at="149,67,150,0" concept="9" />
+      <node id="7492452870508084613" at="150,0,151,30" concept="7" />
+      <node id="4274681253356338512" at="28,40,31,5" concept="4" />
+      <node id="4274681253356338576" at="40,47,43,5" concept="4" />
+      <node id="4274681253356338591" at="45,29,48,7" concept="4" />
+      <node id="4274681253356338616" at="52,29,55,7" concept="4" />
+      <node id="4274681253356338687" at="67,0,70,0" concept="11" trace="isZero#(Ljava/math/BigInteger;)Z" />
+      <node id="4274681253356338698" at="70,0,73,0" concept="11" trace="isNonZero#(Ljava/math/BigInteger;)Z" />
+      <node id="4274681253356469613" at="74,0,77,0" concept="5" trace="toDuration#()Ljava/time/Duration;" />
+      <node id="4274681253356338732" at="78,0,81,0" concept="5" trace="addTo#(Ljava/time/LocalTime;)Ljava/time/LocalTime;" />
+      <node id="4274681253356338744" at="82,0,85,0" concept="5" trace="subtractFrom#(Ljava/time/LocalTime;)Ljava/time/LocalTime;" />
+      <node id="4274681253356338756" at="86,0,89,0" concept="5" trace="negate#()Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;" />
+      <node id="4274681253356338776" at="90,0,93,0" concept="5" trace="plus#(Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;)Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;" />
+      <node id="4274681253356338818" at="94,0,97,0" concept="5" trace="minus#(Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;)Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;" />
+      <node id="4274681253356338860" at="98,0,101,0" concept="5" trace="multipliedBy#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;" />
+      <node id="4274681253356338886" at="102,0,105,0" concept="5" trace="dividedBy#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;" />
+      <node id="4274681253356338917" at="107,32,110,5" concept="4" />
+      <node id="4274681253356338943" at="110,5,113,5" concept="4" />
+      <node id="4274681253356338969" at="113,5,116,5" concept="4" />
+      <node id="4274681253356339038" at="122,0,125,0" concept="11" trace="ofHours#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;" />
+      <node id="4274681253356339052" at="126,0,129,0" concept="11" trace="ofMinutes#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;" />
+      <node id="4274681253356339066" at="130,0,133,0" concept="11" trace="ofSeconds#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;" />
+      <node id="7492452870508084569" at="138,0,141,5" concept="4" />
+      <node id="7492452870508084547" at="144,0,147,5" concept="4" />
+      <node id="4274681253356338494" at="22,0,26,0" concept="5" trace="hashCode#()I" />
+      <node id="4274681253356338664" at="58,0,62,5" concept="4" />
+      <node id="4274681253356338457" at="16,0,21,0" concept="1" trace="TimeDeltaValue#(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V" />
+      <node id="4274681253356338589" at="44,0,50,5" concept="4" />
+      <node id="4274681253356338614" at="51,0,57,5" concept="4" />
+      <node id="4274681253356338506" at="27,0,37,0" concept="5" trace="equals#(Ljava/lang/Object;)Z" />
+      <node id="4274681253356338913" at="107,0,119,0" concept="5" trace="toNumber#()Ljava/math/BigInteger;" />
+      <node id="7492452870508048998" at="135,0,153,0" concept="5" trace="compareTo#(Lorg/iets3/core/expr/datetime/runtime/TimeDeltaValue;)I" />
+      <node id="4274681253356338567" at="38,0,66,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="4274681253356338497" at="23,25,24,49" />
+      <scope id="4274681253356338518" at="29,46,30,19" />
+      <scope id="4274681253356338577" at="41,27,42,44" />
+      <scope id="4274681253356338592" at="46,32,47,27" />
+      <scope id="4274681253356338617" at="53,32,54,27" />
+      <scope id="4274681253356338688" at="67,47,68,37" />
+      <scope id="4274681253356338699" at="70,50,71,24" />
+      <scope id="4274681253356469616" at="74,32,75,115" />
+      <scope id="4274681253356338733" at="78,42,79,35" />
+      <scope id="4274681253356338745" at="82,49,83,36" />
+      <scope id="4274681253356338757" at="86,34,87,82" />
+      <scope id="4274681253356338777" at="90,52,91,125" />
+      <scope id="4274681253356338819" at="94,53,95,140" />
+      <scope id="4274681253356338861" at="98,57,99,106" />
+      <scope id="4274681253356338887" at="102,54,103,100" />
+      <scope id="4274681253356338938" at="108,80,109,24" />
+      <scope id="4274681253356338964" at="111,80,112,26" />
+      <scope id="4274681253356338990" at="114,80,115,26" />
+      <scope id="4274681253356339039" at="122,58,123,71" />
+      <scope id="4274681253356339053" at="126,62,127,73" />
+      <scope id="4274681253356339067" at="130,62,131,73" />
+      <scope id="7492452870508084573" at="139,31,140,29" />
+      <scope id="7492452870508084551" at="145,34,146,32" />
+      <scope id="4274681253356338665" at="59,31,61,25" />
+      <scope id="4274681253356338460" at="16,83,19,27" />
+      <scope id="4274681253356338687" at="67,0,70,0">
+        <var name="n" id="4274681253356338696" />
+      </scope>
+      <scope id="4274681253356338698" at="70,0,73,0">
+        <var name="n" id="4274681253356338706" />
+      </scope>
+      <scope id="4274681253356469613" at="74,0,77,0" />
+      <scope id="4274681253356338732" at="78,0,81,0">
+        <var name="time" id="4274681253356338741" />
+      </scope>
+      <scope id="4274681253356338744" at="82,0,85,0">
+        <var name="date" id="4274681253356338753" />
+      </scope>
+      <scope id="4274681253356338756" at="86,0,89,0" />
+      <scope id="4274681253356338776" at="90,0,93,0">
+        <var name="delta" id="4274681253356338815" />
+      </scope>
+      <scope id="4274681253356338818" at="94,0,97,0">
+        <var name="delta" id="4274681253356338857" />
+      </scope>
+      <scope id="4274681253356338860" at="98,0,101,0">
+        <var name="factor" id="4274681253356338883" />
+      </scope>
+      <scope id="4274681253356338886" at="102,0,105,0">
+        <var name="factor" id="4274681253356338909" />
+      </scope>
+      <scope id="4274681253356339038" at="122,0,125,0">
+        <var name="hours" id="4274681253356339049" />
+      </scope>
+      <scope id="4274681253356339052" at="126,0,129,0">
+        <var name="minutes" id="4274681253356339063" />
+      </scope>
+      <scope id="4274681253356339066" at="130,0,133,0">
+        <var name="seconds" id="4274681253356339077" />
+      </scope>
+      <scope id="4274681253356338494" at="22,0,26,0" />
+      <scope id="4274681253356338590" at="45,29,49,48" />
+      <scope id="4274681253356338615" at="52,29,56,48" />
+      <scope id="4274681253356338457" at="16,0,21,0">
+        <var name="hours" id="4274681253356338485" />
+        <var name="minutes" id="4274681253356338487" />
+        <var name="seconds" id="4274681253356338489" />
+      </scope>
+      <scope id="4274681253356338511" at="28,40,35,118">
+        <var name="other" id="4274681253356338523" />
+      </scope>
+      <scope id="4274681253356338506" at="27,0,37,0">
+        <var name="object" id="4274681253356338509" />
+      </scope>
+      <scope id="4274681253356338916" at="107,32,117,109" />
+      <scope id="4274681253356338913" at="107,0,119,0" />
+      <scope id="7492452870508049005" at="136,46,151,30">
+        <var name="hoursComparison" id="7492452870508084578" />
+        <var name="minutesComparision" id="7492452870508084556" />
+        <var name="secondsComparision" id="7492452870508084535" />
+      </scope>
+      <scope id="7492452870508048998" at="135,0,153,0">
+        <var name="value" id="7492452870508049002" />
+      </scope>
+      <scope id="4274681253356338570" at="39,28,64,29">
+        <var name="result" id="4274681253356338572" />
+      </scope>
+      <scope id="4274681253356338567" at="38,0,66,0" />
+      <unit id="4274681253356338441" at="10,0,154,0" name="org.iets3.core.expr.datetime.runtime.TimeDeltaValue" />
+    </file>
+  </root>
+  <root nodeRef="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)/5177002969017736598">
+    <file name="DiscreteDateRangeValue.java">
+      <node id="2425357398686168900" at="19,0,20,0" concept="3" trace="begin" />
+      <node id="4867881026680450432" at="20,0,21,0" concept="3" trace="unit" />
+      <node id="6347439425534473682" at="21,0,22,0" concept="3" trace="count" />
+      <node id="6347439425534501875" at="23,69,24,25" concept="13" />
+      <node id="6347439425534477514" at="27,80,28,23" concept="2" />
+      <node id="6347439425534477520" at="28,23,29,21" concept="2" />
+      <node id="6347439425534503438" at="29,21,30,23" concept="2" />
+      <node id="4867881026680403849" at="33,28,34,17" concept="7" />
+      <node id="6347439425534130354" at="38,51,39,27" concept="7" />
+      <node id="6347439425534177413" at="40,5,41,62" concept="7" />
+      <node id="3628760092697429854" at="44,30,45,16" concept="7" />
+      <node id="4867881026680455962" at="49,37,50,18" concept="7" />
+      <node id="4867881026680485321" at="51,5,52,76" concept="7" />
+      <node id="4867881026680513954" at="55,40,56,77" concept="7" />
+      <node id="4867881026680834584" at="59,40,60,33" concept="7" />
+      <node id="4867881026681099275" at="63,38,64,73" concept="7" />
+      <node id="4867881026680744852" at="67,56,68,26" concept="2" />
+      <node id="4867881026680753076" at="68,26,69,43" concept="7" />
+      <node id="4867881026680778648" at="71,58,72,26" concept="2" />
+      <node id="4867881026680778651" at="72,26,73,43" concept="7" />
+      <node id="4867881026680783106" at="76,55,77,26" concept="2" />
+      <node id="4867881026680783109" at="77,26,78,44" concept="7" />
+      <node id="4867881026680999586" at="83,21,84,24" concept="7" />
+      <node id="4867881026681010531" at="86,25,87,45" concept="7" />
+      <node id="4867881026681036781" at="89,26,90,76" concept="7" />
+      <node id="4867881026681093684" at="91,5,92,60" concept="7" />
+      <node id="4867881026680693901" at="96,80,97,132" concept="14" />
+      <node id="4867881026680816221" at="101,0,102,0" concept="10" trace="GLOBAL" />
+      <node id="4867881026680812512" at="103,49,104,18" concept="7" />
+      <node id="4867881026680537395" at="107,52,108,79" concept="7" />
+      <node id="4867881026681159846" at="111,60,112,37" concept="7" />
+      <node id="4867881026681143116" at="114,67,115,77" concept="7" />
+      <node id="6347439425534041078" at="118,29,119,52" concept="7" />
+      <node id="6347439425534063064" at="122,33,123,64" concept="7" />
+      <node id="6347439425534087893" at="126,34,127,65" concept="7" />
+      <node id="7492452870508421066" at="131,54,132,62" concept="6" />
+      <node id="7492452870508437409" at="132,62,133,0" concept="9" />
+      <node id="7492452870508456252" at="134,31,135,29" concept="7" />
+      <node id="7492452870508466398" at="136,5,137,0" concept="9" />
+      <node id="7492452870508466441" at="137,0,138,58" concept="6" />
+      <node id="7492452870508484254" at="138,58,139,0" concept="9" />
+      <node id="7492452870508487196" at="139,0,140,25" concept="7" />
+      <node id="4867881026680470364" at="23,0,26,0" concept="1" trace="DiscreteDateRangeValue#(Ljava/time/LocalDate;Ljava/time/temporal/TemporalUnit;)V" />
+      <node id="5177002969017748874" at="33,0,36,0" concept="5" trace="begin#()Ljava/time/LocalDate;" />
+      <node id="6347439425534024951" at="37,26,40,5" concept="4" />
+      <node id="3628760092697425970" at="44,0,47,0" concept="5" trace="unit#()Ljava/time/temporal/TemporalUnit;" />
+      <node id="4867881026680454751" at="48,40,51,5" concept="4" />
+      <node id="8266215269007704947" at="55,0,58,0" concept="5" trace="prev#()Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;" />
+      <node id="6705156381600287655" at="59,0,62,0" concept="5" trace="year#()Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;" />
+      <node id="7343796015602639753" at="63,0,66,0" concept="5" trace="durationInDays#()Ljava/math/BigInteger;" />
+      <node id="4867881026680998103" at="82,28,85,5" concept="4" />
+      <node id="4867881026681006992" at="85,5,88,5" concept="4" />
+      <node id="4867881026681033327" at="88,5,91,5" concept="4" />
+      <node id="4867881026680686588" at="95,61,98,5" concept="4" />
+      <node id="4867881026680809962" at="103,0,106,0" concept="11" trace="global#()Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;" />
+      <node id="4867881026680828027" at="107,0,110,0" concept="11" trace="year#(I)Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;" />
+      <node id="4867881026680870360" at="111,0,114,0" concept="11" trace="month#(II)Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;" />
+      <node id="4867881026681143108" at="114,0,117,0" concept="11" trace="month#(Ljava/time/YearMonth;)Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;" />
+      <node id="6347439425534037217" at="118,0,121,0" concept="5" trace="isGlobal#()Z" />
+      <node id="6347439425534059166" at="122,0,125,0" concept="5" trace="isSingleYear#()Z" />
+      <node id="6347439425534083958" at="126,0,129,0" concept="5" trace="isSingleMonth#()Z" />
+      <node id="7492452870508441375" at="133,0,136,5" concept="4" />
+      <node id="174346208832053344" at="67,0,71,0" concept="5" trace="isEqual#(Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;)Z" />
+      <node id="174346208832052530" at="71,0,75,0" concept="5" trace="isGreater#(Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;)Z" />
+      <node id="174346208832054209" at="76,0,80,0" concept="5" trace="isLess#(Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;)Z" />
+      <node id="6347439425534477510" at="27,0,32,0" concept="1" trace="DiscreteDateRangeValue#(Ljava/time/LocalDate;Ljava/time/temporal/TemporalUnit;I)V" />
+      <node id="4867881026680601519" at="95,0,100,0" concept="5" trace="ensureSameType#(Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;)V" />
+      <node id="5177002969017775703" at="37,0,43,0" concept="5" trace="end#()Ljava/time/LocalDate;" />
+      <node id="8266215269007231584" at="48,0,54,0" concept="5" trace="next#()Lorg/iets3/core/expr/datetime/runtime/DiscreteDateRangeValue;" />
+      <node id="7492452870505755157" at="130,0,142,0" concept="5" trace="compareTo#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)I" />
+      <node id="3049545032564640859" at="81,0,94,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="4867881026680470368" at="23,69,24,25" />
+      <scope id="5177002969017748878" at="33,28,34,17" />
+      <scope id="6347439425534024953" at="38,51,39,27" />
+      <scope id="3628760092697425973" at="44,30,45,16" />
+      <scope id="4867881026680454753" at="49,37,50,18" />
+      <scope id="8266215269007704950" at="55,40,56,77" />
+      <scope id="6705156381600287658" at="59,40,60,33" />
+      <scope id="7343796015602639757" at="63,38,64,73" />
+      <scope id="4867881026680998105" at="83,21,84,24" />
+      <scope id="4867881026681006994" at="86,25,87,45" />
+      <scope id="4867881026681033329" at="89,26,90,76" />
+      <scope id="4867881026680686590" at="96,80,97,132" />
+      <scope id="4867881026680809965" at="103,49,104,18" />
+      <scope id="4867881026680828030" at="107,52,108,79" />
+      <scope id="4867881026680870363" at="111,60,112,37" />
+      <scope id="4867881026681143109" at="114,67,115,77" />
+      <scope id="6347439425534037220" at="118,29,119,52" />
+      <scope id="6347439425534059169" at="122,33,123,64" />
+      <scope id="6347439425534083961" at="126,34,127,65" />
+      <scope id="7492452870508441377" at="134,31,135,29" />
+      <scope id="174346208832053345" at="67,56,69,43" />
+      <scope id="174346208832052533" at="71,58,73,43" />
+      <scope id="174346208832054210" at="76,55,78,44" />
+      <scope id="4867881026680470364" at="23,0,26,0">
+        <var name="begin" id="4867881026680470371" />
+        <var name="unit" id="4867881026680470395" />
+      </scope>
+      <scope id="6347439425534477513" at="27,80,30,23" />
+      <scope id="5177002969017748874" at="33,0,36,0" />
+      <scope id="3628760092697425970" at="44,0,47,0" />
+      <scope id="8266215269007704947" at="55,0,58,0" />
+      <scope id="6705156381600287655" at="59,0,62,0" />
+      <scope id="7343796015602639753" at="63,0,66,0" />
+      <scope id="4867881026680601520" at="95,61,98,5" />
+      <scope id="4867881026680809962" at="103,0,106,0" />
+      <scope id="4867881026680828027" at="107,0,110,0">
+        <var name="y" id="4867881026680830629" />
+      </scope>
+      <scope id="4867881026680870360" at="111,0,114,0">
+        <var name="m" id="4867881026680873420" />
+        <var name="y" id="4867881026680873001" />
+      </scope>
+      <scope id="4867881026681143108" at="114,0,117,0">
+        <var name="yearMonth" id="4867881026681143129" />
+      </scope>
+      <scope id="6347439425534037217" at="118,0,121,0" />
+      <scope id="6347439425534059166" at="122,0,125,0" />
+      <scope id="6347439425534083958" at="126,0,129,0" />
+      <scope id="5177002969017775706" at="37,26,41,62" />
+      <scope id="8266215269007231587" at="48,40,52,76" />
+      <scope id="174346208832053344" at="67,0,71,0">
+        <var name="other" id="174346208832053348" />
+      </scope>
+      <scope id="174346208832052530" at="71,0,75,0">
+        <var name="other" id="174346208832053139" />
+      </scope>
+      <scope id="174346208832054209" at="76,0,80,0">
+        <var name="other" id="174346208832054213" />
+      </scope>
+      <scope id="6347439425534477510" at="27,0,32,0">
+        <var name="begin" id="6347439425534477526" />
+        <var name="count" id="6347439425534481628" />
+        <var name="unit" id="6347439425534477528" />
+      </scope>
+      <scope id="4867881026680601519" at="95,0,100,0">
+        <var name="other" id="4867881026680601549" />
+      </scope>
+      <scope id="5177002969017775703" at="37,0,43,0" />
+      <scope id="8266215269007231584" at="48,0,54,0" />
+      <scope id="7492452870505755164" at="131,54,140,25">
+        <var name="beginComparison" id="7492452870508421069" />
+        <var name="endComparison" id="7492452870508466442" />
+      </scope>
+      <scope id="3049545032564640863" at="82,28,92,60" />
+      <scope id="7492452870505755157" at="130,0,142,0">
+        <var name="value" id="7492452870505755161" />
+      </scope>
+      <scope id="3049545032564640859" at="81,0,94,0" />
+      <unit id="5177002969017736598" at="18,0,143,0" name="org.iets3.core.expr.datetime.runtime.DiscreteDateRangeValue" />
+    </file>
+  </root>
+  <root nodeRef="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)/5459595480879236435">
+    <file name="FromUptoHelper.java">
+      <node id="6663978461012490745" at="9,99,10,36" concept="6" />
+      <node id="6663978461012500495" at="11,40,12,39" concept="7" />
+      <node id="6663978461012725985" at="14,47,15,19" concept="7" />
+      <node id="6663978461012490175" at="16,5,17,62" concept="7" />
+      <node id="6663978461012538376" at="20,97,21,40" concept="6" />
+      <node id="6663978461012538393" at="22,41,23,39" concept="7" />
+      <node id="6663978461012802081" at="25,42,26,19" concept="7" />
+      <node id="6663978461012538400" at="27,5,28,62" concept="7" />
+      <node id="6663978461012496579" at="10,36,13,5" concept="4" />
+      <node id="6663978461012725983" at="13,5,16,5" concept="4" />
+      <node id="6663978461012538391" at="21,40,24,5" concept="4" />
+      <node id="6663978461012802079" at="24,5,27,5" concept="4" />
+      <node id="5459595480879244784" at="9,0,19,0" concept="11" trace="from#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;Ljava/time/LocalDate;)Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;" />
+      <node id="5459595480879273968" at="20,0,30,0" concept="11" trace="upto#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;Ljava/time/LocalDate;)Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;" />
+      <scope id="6663978461012496581" at="11,40,12,39" />
+      <scope id="6663978461012725984" at="14,47,15,19" />
+      <scope id="6663978461012538392" at="22,41,23,39" />
+      <scope id="6663978461012802080" at="25,42,26,19" />
+      <scope id="5459595480879244788" at="9,99,17,62">
+        <var name="endDate" id="6663978461012490746" />
+      </scope>
+      <scope id="5459595480879273971" at="20,97,28,62">
+        <var name="beginDate" id="6663978461012538377" />
+      </scope>
+      <scope id="5459595480879244784" at="9,0,19,0">
+        <var name="newStartDate" id="5459595480879248674" />
+        <var name="range" id="5459595480879247573" />
+      </scope>
+      <scope id="5459595480879273968" at="20,0,30,0">
+        <var name="newEndDate" id="5459595480879274004" />
+        <var name="range" id="5459595480879274002" />
+      </scope>
+      <unit id="5459595480879236435" at="7,0,33,0" name="org.iets3.core.expr.datetime.runtime.FromUptoHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)/5551088970758352208">
+    <file name="EmptyDateRangeValue.java">
+      <node id="8093720994907889327" at="10,32,11,22" concept="12" />
+      <node id="5551088970758353294" at="15,28,16,16" concept="7" />
+      <node id="5551088970758353302" at="19,26,20,16" concept="7" />
+      <node id="5551088970758353318" at="23,27,24,13" concept="7" />
+      <node id="5551088970758353373" at="27,40,28,13" concept="7" />
+      <node id="5551088970758353428" at="31,41,32,13" concept="7" />
+      <node id="5551088970758353524" at="35,55,36,16" concept="7" />
+      <node id="5551088970758378650" at="39,57,40,48" concept="7" />
+      <node id="5551088970758353676" at="43,57,44,17" concept="7" />
+      <node id="5551088970758353693" at="47,62,48,25" concept="7" />
+      <node id="5551088970758353701" at="51,28,52,33" concept="7" />
+      <node id="8093720994907889306" at="10,0,13,0" concept="1" trace="EmptyDateRangeValue#()V" />
+      <node id="5551088970758353287" at="14,0,18,0" concept="5" trace="begin#()Ljava/time/LocalDate;" />
+      <node id="5551088970758353295" at="18,0,22,0" concept="5" trace="end#()Ljava/time/LocalDate;" />
+      <node id="5551088970758353303" at="22,0,26,0" concept="5" trace="countDays#()J" />
+      <node id="5551088970758353319" at="26,0,30,0" concept="5" trace="countYears#(Z)J" />
+      <node id="5551088970758353374" at="30,0,34,0" concept="5" trace="countMonths#(Z)J" />
+      <node id="5551088970758353470" at="34,0,38,0" concept="5" trace="fitsIn#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Z" />
+      <node id="5551088970758353525" at="38,0,42,0" concept="5" trace="contains#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Z" />
+      <node id="5551088970758353580" at="42,0,46,0" concept="5" trace="overlaps#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Z" />
+      <node id="5551088970758353685" at="46,0,50,0" concept="5" trace="clone#()Ljava/lang/Object;" />
+      <node id="5551088970758353694" at="50,0,54,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="8093720994907889326" at="10,32,11,22" />
+      <scope id="5551088970758353291" at="15,28,16,16" />
+      <scope id="5551088970758353299" at="19,26,20,16" />
+      <scope id="5551088970758353315" at="23,27,24,13" />
+      <scope id="5551088970758353369" at="27,40,28,13" />
+      <scope id="5551088970758353424" at="31,41,32,13" />
+      <scope id="5551088970758353520" at="35,55,36,16" />
+      <scope id="5551088970758353575" at="39,57,40,48" />
+      <scope id="5551088970758353672" at="43,57,44,17" />
+      <scope id="5551088970758353690" at="47,62,48,25" />
+      <scope id="5551088970758353698" at="51,28,52,33" />
+      <scope id="8093720994907889306" at="10,0,13,0" />
+      <scope id="5551088970758353287" at="14,0,18,0" />
+      <scope id="5551088970758353295" at="18,0,22,0" />
+      <scope id="5551088970758353303" at="22,0,26,0" />
+      <scope id="5551088970758353319" at="26,0,30,0">
+        <var name="full" id="5551088970758353367" />
+      </scope>
+      <scope id="5551088970758353374" at="30,0,34,0">
+        <var name="full" id="5551088970758353422" />
+      </scope>
+      <scope id="5551088970758353470" at="34,0,38,0">
+        <var name="other" id="5551088970758353518" />
+      </scope>
+      <scope id="5551088970758353525" at="38,0,42,0">
+        <var name="other" id="5551088970758353573" />
+      </scope>
+      <scope id="5551088970758353580" at="42,0,46,0">
+        <var name="other" id="5551088970758353670" />
+      </scope>
+      <scope id="5551088970758353685" at="46,0,50,0" />
+      <scope id="5551088970758353694" at="50,0,54,0" />
+      <unit id="5551088970758352208" at="8,0,55,0" name="org.iets3.core.expr.datetime.runtime.EmptyDateRangeValue" />
+    </file>
+  </root>
+  <root nodeRef="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)/6993334932146362875">
+    <file name="EarlyLateHelper.java">
+      <node id="6993334932146405607" at="10,52,11,35" concept="6" />
+      <node id="6993334932146411214" at="11,35,12,34" concept="6" />
+      <node id="6993334932146409091" at="13,26,14,42" concept="6" />
+      <node id="6993334932146413431" at="15,28,16,16" concept="2" />
+      <node id="6993334932146414940" at="18,5,19,15" concept="7" />
+      <node id="6993334932146415462" at="22,50,23,35" concept="6" />
+      <node id="6993334932146415469" at="23,35,24,34" concept="6" />
+      <node id="6993334932146415475" at="25,26,26,42" concept="6" />
+      <node id="6993334932146415483" at="27,27,28,16" concept="2" />
+      <node id="6993334932146415494" at="30,5,31,15" concept="7" />
+      <node id="6993334932146411791" at="14,42,17,7" concept="4" />
+      <node id="6993334932146415481" at="26,42,29,7" concept="4" />
+      <node id="6993334932146408071" at="12,34,18,5" concept="15" />
+      <node id="6993334932146415473" at="24,34,30,5" concept="15" />
+      <node id="6993334932146362981" at="10,0,21,0" concept="11" trace="earliest#(Ljava/lang/Iterable;)Ljava/time/LocalDate;" />
+      <node id="6993334932146415451" at="22,0,33,0" concept="11" trace="latest#(Ljava/lang/Iterable;)Ljava/time/LocalDate;" />
+      <scope id="6993334932146411793" at="15,28,16,16" />
+      <scope id="6993334932146415482" at="27,27,28,16" />
+      <scope id="6993334932146408073" at="13,26,17,7">
+        <var name="d" id="6993334932146409092" />
+      </scope>
+      <scope id="6993334932146415474" at="25,26,29,7">
+        <var name="d" id="6993334932146415476" />
+      </scope>
+      <scope id="6993334932146362985" at="10,52,19,15">
+        <var name="it" id="6993334932146405608" />
+        <var name="res" id="6993334932146411215" />
+      </scope>
+      <scope id="6993334932146415454" at="22,50,31,15">
+        <var name="it" id="6993334932146415463" />
+        <var name="res" id="6993334932146415470" />
+      </scope>
+      <scope id="6993334932146362981" at="10,0,21,0">
+        <var name="dates" id="6993334932146608152" />
+      </scope>
+      <scope id="6993334932146415451" at="22,0,33,0">
+        <var name="dates" id="6993334932146415496" />
+      </scope>
+      <unit id="6993334932146362875" at="8,0,37,0" name="org.iets3.core.expr.datetime.runtime.EarlyLateHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)/8266215269006681554">
+    <file name="DateDeltaValue.java">
+      <node id="1180795715203734057" at="12,0,13,0" concept="3" trace="years" />
+      <node id="1180795715203734074" at="13,0,14,0" concept="3" trace="months" />
+      <node id="1180795715203734106" at="14,0,15,0" concept="3" trace="weeks" />
+      <node id="1180795715203734141" at="15,0,16,0" concept="3" trace="days" />
+      <node id="1180795715203734321" at="17,97,18,23" concept="2" />
+      <node id="1180795715203734333" at="18,23,19,25" concept="2" />
+      <node id="1180795715203734345" at="19,25,20,23" concept="2" />
+      <node id="1180795715203734357" at="20,23,21,21" concept="2" />
+      <node id="1180795715203738821" at="25,25,26,52" concept="7" />
+      <node id="1180795715203743789" at="31,46,32,19" concept="7" />
+      <node id="1180795715203743821" at="33,5,34,0" concept="9" />
+      <node id="1180795715203744416" at="34,0,35,51" concept="6" />
+      <node id="1180795715203745519" at="35,51,36,0" concept="9" />
+      <node id="1180795715203746119" at="36,0,37,144" concept="7" />
+      <node id="1180795715203802419" at="41,28,42,47" concept="6" />
+      <node id="1180795715203808295" at="43,27,44,44" concept="2" />
+      <node id="1180795715203821612" at="45,5,46,0" concept="9" />
+      <node id="1180795715203914886" at="48,32,49,27" concept="2" />
+      <node id="1180795715203829507" at="50,7,51,46" concept="2" />
+      <node id="1180795715203854188" at="52,5,53,0" concept="9" />
+      <node id="1180795715203922307" at="55,32,56,27" concept="2" />
+      <node id="1180795715203865857" at="57,7,58,44" concept="2" />
+      <node id="1180795715203891040" at="59,5,60,0" concept="9" />
+      <node id="1180795715203925603" at="62,32,63,27" concept="2" />
+      <node id="1180795715203887448" at="64,7,65,42" concept="2" />
+      <node id="1180795715203928927" at="66,5,67,0" concept="9" />
+      <node id="1180795715203951272" at="68,31,69,20" concept="8" />
+      <node id="1180795715203944248" at="69,20,70,25" concept="2" />
+      <node id="1180795715203951682" at="71,5,72,0" concept="9" />
+      <node id="1180795715203952937" at="72,0,73,29" concept="7" />
+      <node id="1180795715204425657" at="76,47,77,37" concept="7" />
+      <node id="1180795715204436332" at="79,50,80,24" concept="7" />
+      <node id="1180795715203983809" at="83,28,84,134" concept="7" />
+      <node id="1180795715204034292" at="87,42,88,33" concept="7" />
+      <node id="1180795715204074328" at="91,49,92,34" concept="7" />
+      <node id="9073836608781664452" at="95,34,96,94" concept="7" />
+      <node id="1180795715204474399" at="99,52,100,146" concept="7" />
+      <node id="1180795715204567641" at="103,53,104,166" concept="7" />
+      <node id="1180795715204126695" at="107,57,108,126" concept="7" />
+      <node id="1180795715204369347" at="111,54,112,118" concept="7" />
+      <node id="5674727352059945834" at="117,98,118,24" concept="7" />
+      <node id="5674727352060678156" at="120,98,121,25" concept="7" />
+      <node id="5674727352060682929" at="123,98,124,24" concept="7" />
+      <node id="5674727352060686427" at="126,98,127,23" concept="7" />
+      <node id="5674727352059991679" at="128,5,129,109" concept="14" />
+      <node id="3505493885071074693" at="132,0,133,0" concept="10" trace="ZERO" />
+      <node id="1180795715203782311" at="134,58,135,88" concept="7" />
+      <node id="1180795715203783690" at="138,60,139,89" concept="7" />
+      <node id="1180795715203786556" at="142,58,143,88" concept="7" />
+      <node id="1180795715203786542" at="146,56,147,87" concept="7" />
+      <node id="7492452870504711122" at="152,46,153,61" concept="6" />
+      <node id="7492452870508191285" at="153,61,154,0" concept="9" />
+      <node id="7492452870504749955" at="155,32,156,30" concept="7" />
+      <node id="7492452870504770269" at="157,5,158,0" concept="9" />
+      <node id="7492452870504770310" at="158,0,159,64" concept="6" />
+      <node id="7492452870504770289" at="159,64,160,0" concept="9" />
+      <node id="7492452870504809189" at="161,33,162,31" concept="7" />
+      <node id="7492452870504809151" at="163,5,164,0" concept="9" />
+      <node id="7492452870504847450" at="164,0,165,60" concept="6" />
+      <node id="7492452870504847400" at="165,60,166,0" concept="9" />
+      <node id="7492452870504831533" at="167,31,168,29" concept="7" />
+      <node id="7492452870504831487" at="169,5,170,0" concept="9" />
+      <node id="7492452870504914829" at="170,0,171,57" concept="6" />
+      <node id="7492452870504914768" at="171,57,172,0" concept="9" />
+      <node id="7492452870504978446" at="172,0,173,26" concept="7" />
+      <node id="1180795715203742414" at="30,40,33,5" concept="4" />
+      <node id="1180795715203803224" at="42,47,45,5" concept="4" />
+      <node id="1180795715203903605" at="47,28,50,7" concept="4" />
+      <node id="1180795715203922305" at="54,27,57,7" concept="4" />
+      <node id="1180795715203925601" at="61,26,64,7" concept="4" />
+      <node id="1180795715204421188" at="76,0,79,0" concept="11" trace="isZero#(Ljava/math/BigInteger;)Z" />
+      <node id="1180795715204436330" at="79,0,82,0" concept="11" trace="isNonZero#(Ljava/math/BigInteger;)Z" />
+      <node id="1180795715203977796" at="83,0,86,0" concept="5" trace="toPeriod#()Ljava/time/Period;" />
+      <node id="1180795715204020466" at="87,0,90,0" concept="5" trace="addTo#(Ljava/time/LocalDate;)Ljava/time/LocalDate;" />
+      <node id="1180795715204064003" at="91,0,94,0" concept="5" trace="subtractFrom#(Ljava/time/LocalDate;)Ljava/time/LocalDate;" />
+      <node id="9073836608781660804" at="95,0,98,0" concept="5" trace="negate#()Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;" />
+      <node id="1180795715204468467" at="99,0,102,0" concept="5" trace="plus#(Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;)Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;" />
+      <node id="1180795715204567639" at="103,0,106,0" concept="5" trace="minus#(Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;)Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;" />
+      <node id="1180795715204115847" at="107,0,110,0" concept="5" trace="multipliedBy#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;" />
+      <node id="1180795715204369345" at="111,0,114,0" concept="5" trace="dividedBy#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;" />
+      <node id="5674727352059929349" at="116,32,119,5" concept="4" />
+      <node id="5674727352060678134" at="119,5,122,5" concept="4" />
+      <node id="5674727352060682907" at="122,5,125,5" concept="4" />
+      <node id="5674727352060686405" at="125,5,128,5" concept="4" />
+      <node id="1180795715203781333" at="134,0,137,0" concept="11" trace="ofYears#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;" />
+      <node id="1180795715203783688" at="138,0,141,0" concept="11" trace="ofMonths#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;" />
+      <node id="1180795715203786554" at="142,0,145,0" concept="11" trace="ofWeeks#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;" />
+      <node id="1180795715203786540" at="146,0,149,0" concept="11" trace="ofDays#(Ljava/math/BigInteger;)Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;" />
+      <node id="7492452870504617640" at="154,0,157,5" concept="4" />
+      <node id="7492452870504809184" at="160,0,163,5" concept="4" />
+      <node id="7492452870504831528" at="166,0,169,5" concept="4" />
+      <node id="1180795715203736441" at="24,0,28,0" concept="5" trace="hashCode#()I" />
+      <node id="1180795715203933106" at="67,0,71,5" concept="4" />
+      <node id="1180795715203734313" at="17,0,23,0" concept="1" trace="DateDeltaValue#(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V" />
+      <node id="1180795715203823201" at="46,0,52,5" concept="4" />
+      <node id="1180795715203857007" at="53,0,59,5" concept="4" />
+      <node id="1180795715203887446" at="60,0,66,5" concept="4" />
+      <node id="1180795715203736449" at="29,0,39,0" concept="5" trace="equals#(Ljava/lang/Object;)Z" />
+      <node id="5674727352059911913" at="116,0,131,0" concept="5" trace="toNumber#()Ljava/math/BigInteger;" />
+      <node id="7492452870504574550" at="151,0,175,0" concept="5" trace="compareTo#(Lorg/iets3/core/expr/datetime/runtime/DateDeltaValue;)I" />
+      <node id="1180795715203793412" at="40,0,75,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="1180795715203736445" at="25,25,26,52" />
+      <scope id="1180795715203742416" at="31,46,32,19" />
+      <scope id="1180795715203803226" at="43,27,44,44" />
+      <scope id="1180795715203903607" at="48,32,49,27" />
+      <scope id="1180795715203922306" at="55,32,56,27" />
+      <scope id="1180795715203925602" at="62,32,63,27" />
+      <scope id="1180795715204421191" at="76,47,77,37" />
+      <scope id="1180795715204436331" at="79,50,80,24" />
+      <scope id="1180795715203977799" at="83,28,84,134" />
+      <scope id="1180795715204020469" at="87,42,88,33" />
+      <scope id="1180795715204064006" at="91,49,92,34" />
+      <scope id="9073836608781660807" at="95,34,96,94" />
+      <scope id="1180795715204468470" at="99,52,100,146" />
+      <scope id="1180795715204567640" at="103,53,104,166" />
+      <scope id="1180795715204115850" at="107,57,108,126" />
+      <scope id="1180795715204369346" at="111,54,112,118" />
+      <scope id="5674727352059929351" at="117,98,118,24" />
+      <scope id="5674727352060678155" at="120,98,121,25" />
+      <scope id="5674727352060682928" at="123,98,124,24" />
+      <scope id="5674727352060686426" at="126,98,127,23" />
+      <scope id="1180795715203781336" at="134,58,135,88" />
+      <scope id="1180795715203783689" at="138,60,139,89" />
+      <scope id="1180795715203786555" at="142,58,143,88" />
+      <scope id="1180795715203786541" at="146,56,147,87" />
+      <scope id="7492452870504617642" at="155,32,156,30" />
+      <scope id="7492452870504809188" at="161,33,162,31" />
+      <scope id="7492452870504831532" at="167,31,168,29" />
+      <scope id="1180795715203933108" at="68,31,70,25" />
+      <scope id="1180795715204421188" at="76,0,79,0">
+        <var name="n" id="1180795715204425080" />
+      </scope>
+      <scope id="1180795715204436330" at="79,0,82,0">
+        <var name="n" id="1180795715204436339" />
+      </scope>
+      <scope id="1180795715203977796" at="83,0,86,0" />
+      <scope id="1180795715204020466" at="87,0,90,0">
+        <var name="date" id="1180795715204025246" />
+      </scope>
+      <scope id="1180795715204064003" at="91,0,94,0">
+        <var name="date" id="1180795715204069284" />
+      </scope>
+      <scope id="9073836608781660804" at="95,0,98,0" />
+      <scope id="1180795715204468467" at="99,0,102,0">
+        <var name="delta" id="1180795715204471615" />
+      </scope>
+      <scope id="1180795715204567639" at="103,0,106,0">
+        <var name="delta" id="1180795715204567678" />
+      </scope>
+      <scope id="1180795715204115847" at="107,0,110,0">
+        <var name="factor" id="1180795715204121527" />
+      </scope>
+      <scope id="1180795715204369345" at="111,0,114,0">
+        <var name="factor" id="1180795715204369368" />
+      </scope>
+      <scope id="1180795715203781333" at="134,0,137,0">
+        <var name="years" id="1180795715203782160" />
+      </scope>
+      <scope id="1180795715203783688" at="138,0,141,0">
+        <var name="months" id="1180795715203783699" />
+      </scope>
+      <scope id="1180795715203786554" at="142,0,145,0">
+        <var name="weeks" id="1180795715203786565" />
+      </scope>
+      <scope id="1180795715203786540" at="146,0,149,0">
+        <var name="days" id="1180795715203786551" />
+      </scope>
+      <scope id="1180795715203734317" at="17,97,21,21" />
+      <scope id="1180795715203736441" at="24,0,28,0" />
+      <scope id="1180795715203823203" at="47,28,51,46" />
+      <scope id="1180795715203857009" at="54,27,58,44" />
+      <scope id="1180795715203887447" at="61,26,65,42" />
+      <scope id="1180795715203734313" at="17,0,23,0">
+        <var name="days" id="1180795715203734356" />
+        <var name="months" id="1180795715203734332" />
+        <var name="weeks" id="1180795715203734344" />
+        <var name="years" id="1180795715203734320" />
+      </scope>
+      <scope id="1180795715203736455" at="30,40,37,144">
+        <var name="other" id="1180795715203744417" />
+      </scope>
+      <scope id="1180795715203736449" at="29,0,39,0">
+        <var name="object" id="1180795715203736453" />
+      </scope>
+      <scope id="5674727352059911917" at="116,32,129,109" />
+      <scope id="5674727352059911913" at="116,0,131,0" />
+      <scope id="7492452870504574557" at="152,46,173,26">
+        <var name="daysComparison" id="7492452870504914830" />
+        <var name="monthsComparision" id="7492452870504770311" />
+        <var name="weeksComparison" id="7492452870504847451" />
+        <var name="yearsComparision" id="7492452870504711123" />
+      </scope>
+      <scope id="7492452870504574550" at="151,0,175,0">
+        <var name="value" id="7492452870504574554" />
+      </scope>
+      <scope id="1180795715203793416" at="41,28,73,29">
+        <var name="result" id="1180795715203802420" />
+      </scope>
+      <scope id="1180795715203793412" at="40,0,75,0" />
+      <unit id="8266215269006681554" at="10,0,176,0" name="org.iets3.core.expr.datetime.runtime.DateDeltaValue" />
+    </file>
+  </root>
+  <root nodeRef="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)/8435714728549407634">
+    <file name="ArbitraryDateRangeValue.java">
+      <node id="8435714728549407635" at="14,0,15,0" concept="3" trace="begin" />
+      <node id="8435714728549432885" at="15,0,16,0" concept="3" trace="end" />
+      <node id="8435714728549453442" at="17,66,18,23" concept="2" />
+      <node id="8435714728549455590" at="18,23,19,19" concept="2" />
+      <node id="8346997819564705605" at="23,30,24,39" concept="7" />
+      <node id="8346997819564708720" at="25,5,26,51" concept="7" />
+      <node id="8435714728549407691" at="29,28,30,17" concept="7" />
+      <node id="8435714728549407705" at="33,26,34,15" concept="7" />
+      <node id="8435714728549407877" at="38,28,39,60" concept="7" />
+      <node id="7492452870506888273" at="44,47,45,15" concept="7" />
+      <node id="7492452870508180216" at="46,5,47,0" concept="9" />
+      <node id="7492452870508378350" at="47,0,48,62" concept="6" />
+      <node id="7492452870508379495" at="48,62,49,0" concept="9" />
+      <node id="7492452870508391659" at="50,31,51,29" concept="7" />
+      <node id="7492452870508394400" at="52,5,53,0" concept="9" />
+      <node id="7492452870508394459" at="53,0,54,56" concept="6" />
+      <node id="7492452870508399626" at="54,56,55,0" concept="9" />
+      <node id="7492452870508400622" at="55,0,56,25" concept="7" />
+      <node id="7492452870508394429" at="56,25,57,0" concept="9" />
+      <node id="8346997819564703170" at="22,78,25,5" concept="4" />
+      <node id="8435714728549407687" at="29,0,32,0" concept="5" trace="begin#()Ljava/time/LocalDate;" />
+      <node id="8435714728549407694" at="33,0,36,0" concept="5" trace="end#()Ljava/time/LocalDate;" />
+      <node id="7492452870506880801" at="43,54,46,5" concept="4" />
+      <node id="7492452870508381551" at="49,0,52,5" concept="4" />
+      <node id="8435714728549407645" at="17,0,21,0" concept="1" trace="ArbitraryDateRangeValue#(Ljava/time/LocalDate;Ljava/time/LocalDate;)V" />
+      <node id="8435714728549407839" at="37,0,41,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <node id="8346997819564699666" at="22,0,28,0" concept="11" trace="make#(Ljava/time/LocalDate;Ljava/time/LocalDate;)Lorg/iets3/core/expr/datetime/runtime/ArbitraryDateRangeValue;" />
+      <node id="7492452870506394718" at="42,0,59,0" concept="5" trace="compareTo#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)I" />
+      <scope id="8346997819564703172" at="23,30,24,39" />
+      <scope id="8435714728549407690" at="29,28,30,17" />
+      <scope id="8435714728549407697" at="33,26,34,15" />
+      <scope id="8435714728549407842" at="38,28,39,60" />
+      <scope id="7492452870506880803" at="44,47,45,15" />
+      <scope id="7492452870508381553" at="50,31,51,29" />
+      <scope id="8435714728549407648" at="17,66,19,19" />
+      <scope id="8435714728549407687" at="29,0,32,0" />
+      <scope id="8435714728549407694" at="33,0,36,0" />
+      <scope id="8435714728549407645" at="17,0,21,0">
+        <var name="begin" id="8435714728549407653" />
+        <var name="end" id="8435714728549443912" />
+      </scope>
+      <scope id="8346997819564699670" at="22,78,26,51" />
+      <scope id="8435714728549407839" at="37,0,41,0" />
+      <scope id="8346997819564699666" at="22,0,28,0">
+        <var name="begin" id="8346997819564701970" />
+        <var name="end" id="8346997819564701972" />
+      </scope>
+      <scope id="7492452870506394723" at="43,54,57,0">
+        <var name="beginComparison" id="7492452870508378351" />
+        <var name="endComparison" id="7492452870508394462" />
+      </scope>
+      <scope id="7492452870506394718" at="42,0,59,0">
+        <var name="value" id="7492452870506394721" />
+      </scope>
+      <unit id="8435714728549407634" at="13,0,60,0" name="org.iets3.core.expr.datetime.runtime.ArbitraryDateRangeValue" />
+    </file>
+  </root>
+  <root nodeRef="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)/8435714728549463046">
+    <file name="AbstractDateRangeValue.java">
+      <node id="8435714728549493616" at="12,0,13,0" concept="5" trace="begin#()Ljava/time/LocalDate;" />
+      <node id="8435714728549493623" at="14,0,15,0" concept="5" trace="end#()Ljava/time/LocalDate;" />
+      <node id="8435714728548159436" at="16,27,17,55" concept="7" />
+      <node id="8435714728548262878" at="21,15,22,66" concept="7" />
+      <node id="8435714728548262887" at="23,12,24,60" concept="6" />
+      <node id="8435714728548262893" at="24,60,25,31" concept="6" />
+      <node id="2822673123470751265" at="26,44,27,19" concept="2" />
+      <node id="8435714728548262918" at="28,7,29,19" concept="7" />
+      <node id="8435714728548240356" at="34,15,35,67" concept="7" />
+      <node id="8435714728548240365" at="36,12,37,60" concept="6" />
+      <node id="8435714728548240371" at="37,60,38,38" concept="6" />
+      <node id="2822673123470760561" at="39,59,40,20" concept="2" />
+      <node id="8435714728548240396" at="41,7,42,20" concept="7" />
+      <node id="8435714728549407897" at="48,54,49,19" concept="7" />
+      <node id="8435714728549407904" at="50,5,51,67" concept="6" />
+      <node id="8435714728549407910" at="51,67,52,98" concept="7" />
+      <node id="8435714728549407940" at="56,25,57,50" concept="7" />
+      <node id="343859178848927801" at="60,55,61,96" concept="6" />
+      <node id="343859178848948088" at="61,96,62,87" concept="6" />
+      <node id="343859178848965874" at="62,87,63,28" concept="7" />
+      <node id="343859178849450702" at="66,57,67,97" concept="6" />
+      <node id="343859178849468204" at="67,97,68,86" concept="6" />
+      <node id="343859178849485768" at="68,86,69,28" concept="7" />
+      <node id="5551088970759899710" at="72,48,73,74" concept="6" />
+      <node id="5551088970759913375" at="73,74,74,28" concept="7" />
+      <node id="3821423211051485431" at="77,57,78,60" concept="6" />
+      <node id="3821423211051492836" at="78,60,79,59" concept="6" />
+      <node id="3821423211051569280" at="79,59,80,0" concept="9" />
+      <node id="3821423211051574371" at="80,0,81,58" concept="7" />
+      <node id="6714160048304094911" at="84,73,85,59" concept="6" />
+      <node id="6714160048304078514" at="86,43,87,41" concept="7" />
+      <node id="6714160048304101039" at="88,5,89,13" concept="7" />
+      <node id="6714160048304011596" at="92,80,93,18" concept="8" />
+      <node id="6714160048304011598" at="93,18,94,11" concept="8" />
+      <node id="6714160048304011602" at="95,35,96,39" concept="7" />
+      <node id="6714160048304011612" at="97,5,98,0" concept="9" />
+      <node id="6714160048304011613" at="98,0,99,11" concept="8" />
+      <node id="6714160048304011615" at="99,11,100,15" concept="8" />
+      <node id="6714160048304011619" at="101,63,102,68" concept="7" />
+      <node id="6714160048304011635" at="103,5,104,0" concept="9" />
+      <node id="6714160048304011659" at="104,0,105,12" concept="8" />
+      <node id="6714160048304011661" at="105,12,106,14" concept="8" />
+      <node id="6714160048304011665" at="107,63,108,18" concept="7" />
+      <node id="6714160048304011674" at="109,5,110,0" concept="9" />
+      <node id="6714160048304011675" at="110,0,111,37" concept="7" />
+      <node id="6714160048303076697" at="115,61,116,41" concept="7" />
+      <node id="6714160048303131289" at="119,60,120,40" concept="7" />
+      <node id="6714160048303688079" at="123,83,124,38" concept="7" />
+      <node id="6714160048303813882" at="127,82,128,83" concept="7" />
+      <node id="6714160048303840613" at="131,84,132,87" concept="7" />
+      <node id="8897056535425106595" at="136,54,137,13" concept="7" />
+      <node id="8435714728548147297" at="16,0,19,0" concept="5" trace="countDays#()J" />
+      <node id="8435714728548262899" at="25,31,28,7" concept="4" />
+      <node id="8435714728548240383" at="38,38,41,7" concept="4" />
+      <node id="8435714728549407895" at="47,40,50,5" concept="4" />
+      <node id="6714160048304041654" at="85,59,88,5" concept="4" />
+      <node id="6714160048304011600" at="94,11,97,5" concept="4" />
+      <node id="6714160048304011617" at="100,15,103,5" concept="4" />
+      <node id="6714160048304011663" at="106,14,109,5" concept="4" />
+      <node id="6714160048303048878" at="115,0,118,0" concept="5" trace="isBeforeOrEqual#(Ljava/time/LocalDate;Ljava/time/LocalDate;)Z" />
+      <node id="6714160048303131285" at="119,0,122,0" concept="5" trace="isEqualOrLater#(Ljava/time/LocalDate;Ljava/time/LocalDate;)Z" />
+      <node id="6714160048303688075" at="123,0,126,0" concept="5" trace="beginsAfter#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Z" />
+      <node id="6714160048303777292" at="127,0,130,0" concept="5" trace="endsWithin#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Z" />
+      <node id="6714160048303840609" at="131,0,134,0" concept="5" trace="beginsWithin#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Z" />
+      <node id="8435714728549407936" at="55,0,59,0" concept="5" trace="hashCode#()I" />
+      <node id="5551088970759830072" at="72,0,76,0" concept="5" trace="containsDate#(Ljava/time/LocalDate;)Z" />
+      <node id="8897056535424738493" at="135,0,139,0" concept="5" trace="compareTo#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)I" />
+      <node id="343859178848850311" at="60,0,65,0" concept="5" trace="fitsIn#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Z" />
+      <node id="343859178849370609" at="66,0,71,0" concept="5" trace="contains#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Z" />
+      <node id="343859178849557162" at="77,0,83,0" concept="5" trace="overlaps#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Z" />
+      <node id="8435714728548262885" at="23,10,30,5" concept="0" />
+      <node id="8435714728548240363" at="36,10,43,5" concept="0" />
+      <node id="5551088970758825499" at="84,0,91,0" concept="5" trace="intersect#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;" />
+      <node id="8435714728549407889" at="46,0,54,0" concept="5" trace="equals#(Ljava/lang/Object;)Z" />
+      <node id="8435714728548262876" at="20,40,30,5" concept="4" />
+      <node id="8435714728548240354" at="33,41,43,5" concept="4" />
+      <node id="8435714728548174076" at="20,0,32,0" concept="5" trace="countYears#(Z)J" />
+      <node id="8435714728548205615" at="33,0,45,0" concept="5" trace="countMonths#(Z)J" />
+      <node id="6714160048304011577" at="92,0,113,0" concept="5" trace="intersectOneWay#(Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;)Lorg/iets3/core/expr/datetime/runtime/AbstractDateRangeValue;" />
+      <scope id="8435714728549493616" at="12,0,13,0" />
+      <scope id="8435714728549493623" at="14,0,15,0" />
+      <scope id="8435714728548147301" at="16,27,17,55" />
+      <scope id="8435714728548262877" at="21,15,22,66" />
+      <scope id="8435714728548262900" at="26,44,27,19" />
+      <scope id="8435714728548240355" at="34,15,35,67" />
+      <scope id="8435714728548240384" at="39,59,40,20" />
+      <scope id="8435714728549407896" at="48,54,49,19" />
+      <scope id="8435714728549407939" at="56,25,57,50" />
+      <scope id="6714160048304041656" at="86,43,87,41" />
+      <scope id="6714160048304011601" at="95,35,96,39" />
+      <scope id="6714160048304011618" at="101,63,102,68" />
+      <scope id="6714160048304011664" at="107,63,108,18" />
+      <scope id="6714160048303048882" at="115,61,116,41" />
+      <scope id="6714160048303131288" at="119,60,120,40" />
+      <scope id="6714160048303688078" at="123,83,124,38" />
+      <scope id="6714160048303777295" at="127,82,128,83" />
+      <scope id="6714160048303840612" at="131,84,132,87" />
+      <scope id="8897056535424738500" at="136,54,137,13" />
+      <scope id="5551088970759830073" at="72,48,74,28">
+        <var name="o" id="5551088970759899711" />
+      </scope>
+      <scope id="8435714728548147297" at="16,0,19,0" />
+      <scope id="343859178848850314" at="60,55,63,28">
+        <var name="beginOk" id="343859178848927804" />
+        <var name="endOk" id="343859178848948091" />
+      </scope>
+      <scope id="343859178849370612" at="66,57,69,28">
+        <var name="beginOk" id="343859178849450705" />
+        <var name="endOk" id="343859178849468207" />
+      </scope>
+      <scope id="6714160048303048878" at="115,0,118,0">
+        <var name="l" id="6714160048303065267" />
+        <var name="r" id="6714160048303070200" />
+      </scope>
+      <scope id="6714160048303131285" at="119,0,122,0">
+        <var name="l" id="6714160048303131299" />
+        <var name="r" id="6714160048303131301" />
+      </scope>
+      <scope id="6714160048303688075" at="123,0,126,0">
+        <var name="l" id="6714160048303688088" />
+        <var name="r" id="6714160048303688090" />
+      </scope>
+      <scope id="6714160048303777292" at="127,0,130,0">
+        <var name="l" id="6714160048303777304" />
+        <var name="r" id="6714160048303777306" />
+      </scope>
+      <scope id="6714160048303840609" at="131,0,134,0">
+        <var name="l" id="6714160048303840629" />
+        <var name="r" id="6714160048303840631" />
+      </scope>
+      <scope id="8435714728549407936" at="55,0,59,0" />
+      <scope id="5551088970759830072" at="72,0,76,0">
+        <var name="other" id="5551088970759830120" />
+      </scope>
+      <scope id="343859178849557165" at="77,57,81,58">
+        <var name="otherBeginsAfterThis" id="3821423211051485432" />
+        <var name="otherEndsBeforeThis" id="3821423211051492837" />
+      </scope>
+      <scope id="8897056535424738493" at="135,0,139,0">
+        <var name="value" id="8897056535424738497" />
+      </scope>
+      <scope id="8435714728549407894" at="47,40,52,98">
+        <var name="other" id="8435714728549407905" />
+      </scope>
+      <scope id="343859178848850311" at="60,0,65,0">
+        <var name="other" id="343859178848854430" />
+      </scope>
+      <scope id="343859178849370609" at="66,0,71,0">
+        <var name="other" id="343859178849438096" />
+      </scope>
+      <scope id="5551088970758825500" at="84,73,89,13">
+        <var name="i" id="6714160048304094912" />
+      </scope>
+      <scope id="8435714728548262886" at="23,12,29,19">
+        <var name="p" id="8435714728548262888" />
+        <var name="years" id="8435714728548262894" />
+      </scope>
+      <scope id="8435714728548240364" at="36,12,42,20">
+        <var name="months" id="8435714728548240372" />
+        <var name="p" id="8435714728548240366" />
+      </scope>
+      <scope id="343859178849557162" at="77,0,83,0">
+        <var name="other" id="343859178849581442" />
+      </scope>
+      <scope id="5551088970758825499" at="84,0,91,0">
+        <var name="other" id="5551088970758825589" />
+      </scope>
+      <scope id="8435714728549407889" at="46,0,54,0">
+        <var name="object" id="8435714728549407892" />
+      </scope>
+      <scope id="8435714728548174079" at="20,40,30,5" />
+      <scope id="8435714728548205618" at="33,41,43,5" />
+      <scope id="8435714728548174076" at="20,0,32,0">
+        <var name="full" id="8435714728548217977" />
+      </scope>
+      <scope id="8435714728548205615" at="33,0,45,0">
+        <var name="full" id="8435714728548229953" />
+      </scope>
+      <scope id="6714160048304011578" at="92,80,111,37" />
+      <scope id="6714160048304011577" at="92,0,113,0">
+        <var name="other" id="6714160048304011680" />
+      </scope>
+      <unit id="8435714728549463046" at="10,0,140,0" name="org.iets3.core.expr.datetime.runtime.AbstractDateRangeValue" />
+    </file>
+  </root>
+</debug-info>
+

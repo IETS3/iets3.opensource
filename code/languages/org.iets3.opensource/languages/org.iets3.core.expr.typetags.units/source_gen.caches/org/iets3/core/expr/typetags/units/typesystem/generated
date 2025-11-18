@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="ejxbdlpfu9yzg90qdisza7yp0ix0vjw">
+  <files names="IConvertUnitHelper.java:MathExpressionsOpRulesHelper.java:TypeDefsWithUnits_NonTypesystemRule.java:TypesystemDescriptor.java:UnitTagHelper.java:check_ConversionRule_NonTypesystemRule.java:check_ConversionSpecifier_NonTypesystemRule.java:check_ConvertExpression_NonTypesystemRule.java:check_ConvertToTarget_NonTypesystemRule.java:check_LogExpressionHasNoUnits_NonTypesystemRule.java:check_PowExpressionUnits_NonTypesystemRule.java:check_ProductLoopExpressionHasNoUnits_NonTypesystemRule.java:check_StripUnitExpression_NonTypesystemRule.java:quickfix_SetConversionRule_QuickFix.java:typeof_ConvertExpression_InferenceRule.java:typeof_ConvertToTarget_InferenceRule.java:typeof_StripUnitExpression_InferenceRule.java:typeof_ValExpression_InferenceRule.java" />
+</product>
+

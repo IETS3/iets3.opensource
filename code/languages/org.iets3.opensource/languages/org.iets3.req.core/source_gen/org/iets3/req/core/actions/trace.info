@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,32,0" name="org.iets3.req.core.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:f5253ab4-9d09-429b-bdb0-9d12ca0a028b(org.iets3.req.core.actions)/1483061781793686412">
+    <file name="RequirementsFactories.java">
+      <node id="1483061781793686416" at="21,7,22,41" concept="4" />
+      <node id="1483061781793687402" at="23,79,24,193" concept="1" />
+      <node id="1483061781793724538" at="31,7,32,41" concept="4" />
+      <node id="1483061781793724600" at="33,87,34,115" concept="1" />
+      <node id="1483061781793729543" at="34,115,35,183" concept="1" />
+      <node id="1483061781794467227" at="42,7,43,41" concept="4" />
+      <node id="1483061781794467290" at="44,85,45,113" concept="1" />
+      <node id="1483061781794475669" at="45,113,46,115" concept="1" />
+      <node id="1483061781794479366" at="46,115,47,117" concept="1" />
+      <node id="1483061781794480789" at="47,117,48,193" concept="1" />
+      <node id="1483061781794509894" at="48,193,49,117" concept="1" />
+      <node id="1483061781794515802" at="49,117,50,177" concept="1" />
+      <node id="1483061781794538573" at="50,177,51,122" concept="1" />
+      <node id="1483061781794549056" at="51,122,52,121" concept="1" />
+      <node id="1483061781793686412" at="59,0,60,0" concept="5" trace="IReqContainer$Pp" />
+      <node id="1483061781793686412" at="60,0,61,0" concept="5" trace="IRequirementsRelation$Qh" />
+      <node id="1483061781793686412" at="61,0,62,0" concept="5" trace="AbstractRequirement$yu" />
+      <node id="1483061781793686412" at="65,0,66,0" concept="5" trace="requirements$OjTk" />
+      <node id="1483061781793686412" at="66,0,67,0" concept="5" trace="kind$Q8HU" />
+      <node id="1483061781793686412" at="67,0,68,0" concept="5" trace="targets$QdRR" />
+      <node id="1483061781793686412" at="68,0,69,0" concept="5" trace="doc$ZsKj" />
+      <node id="1483061781793686412" at="69,0,70,0" concept="5" trace="kind$$FaM" />
+      <node id="1483061781793686412" at="70,0,71,0" concept="5" trace="owner$AY4y" />
+      <node id="1483061781793686412" at="71,0,72,0" concept="5" trace="state$MusY" />
+      <node id="1483061781793686412" at="72,0,73,0" concept="5" trace="tags$Ba0n" />
+      <node id="1483061781793686412" at="76,0,77,0" concept="5" trace="title$RzQI" />
+      <node id="1483061781793686412" at="77,0,78,0" concept="5" trace="name$MnvL" />
+      <node id="1483061781793686416" at="22,41,25,9" concept="2" />
+      <node id="1483061781793724538" at="32,41,36,9" concept="2" />
+      <node id="1483061781793686416" at="20,102,26,7" concept="0" />
+      <node id="1483061781793724538" at="30,102,37,7" concept="0" />
+      <node id="1483061781793686413" at="20,0,28,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781793724512" at="30,0,39,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781794467227" at="43,41,53,9" concept="2" />
+      <node id="1483061781794467227" at="41,102,54,7" concept="0" />
+      <node id="1483061781794466994" at="41,0,56,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1483061781793686418" at="23,79,24,193" />
+      <scope id="1483061781793724540" at="33,87,35,183" />
+      <scope id="1483061781793686416" at="21,7,25,9">
+        <var name="oldNode" id="1483061781793686416" />
+      </scope>
+      <scope id="1483061781793724538" at="31,7,36,9">
+        <var name="oldNode" id="1483061781793724538" />
+      </scope>
+      <scope id="1483061781793686413" at="20,102,26,7" />
+      <scope id="1483061781793724512" at="30,102,37,7" />
+      <scope id="1483061781793686413" at="20,0,28,0">
+        <var name="enclosingNode" id="1483061781793686413" />
+        <var name="index" id="1483061781793686413" />
+        <var name="model" id="1483061781793686413" />
+        <var name="newNode" id="1483061781793686413" />
+        <var name="sampleNode" id="1483061781793686413" />
+      </scope>
+      <scope id="1483061781794467229" at="44,85,52,121" />
+      <scope id="1483061781793724512" at="30,0,39,0">
+        <var name="enclosingNode" id="1483061781793724512" />
+        <var name="index" id="1483061781793724512" />
+        <var name="model" id="1483061781793724512" />
+        <var name="newNode" id="1483061781793724512" />
+        <var name="sampleNode" id="1483061781793724512" />
+      </scope>
+      <scope id="1483061781794467227" at="42,7,53,9">
+        <var name="oldNode" id="1483061781794467227" />
+      </scope>
+      <scope id="1483061781794466994" at="41,102,54,7" />
+      <scope id="1483061781794466994" at="41,0,56,0">
+        <var name="enclosingNode" id="1483061781794466994" />
+        <var name="index" id="1483061781794466994" />
+        <var name="model" id="1483061781794466994" />
+        <var name="newNode" id="1483061781794466994" />
+        <var name="sampleNode" id="1483061781794466994" />
+      </scope>
+      <unit id="1483061781793686412" at="75,0,79,0" name="org.iets3.req.core.actions.RequirementsFactories$PROPS" />
+      <unit id="1483061781793686412" at="58,0,63,0" name="org.iets3.req.core.actions.RequirementsFactories$CONCEPTS" />
+      <unit id="1483061781793686413" at="19,0,29,0" name="org.iets3.req.core.actions.RequirementsFactories$NodeFactory_1483061781793686413" />
+      <unit id="1483061781793686412" at="64,0,74,0" name="org.iets3.req.core.actions.RequirementsFactories$LINKS" />
+      <unit id="1483061781793724512" at="29,0,40,0" name="org.iets3.req.core.actions.RequirementsFactories$NodeFactory_1483061781793724512" />
+      <unit id="1483061781794466994" at="40,0,57,0" name="org.iets3.req.core.actions.RequirementsFactories$NodeFactory_1483061781794466994" />
+      <unit id="1483061781793686412" at="18,0,80,0" name="org.iets3.req.core.actions.RequirementsFactories" />
+    </file>
+  </root>
+</debug-info>
+

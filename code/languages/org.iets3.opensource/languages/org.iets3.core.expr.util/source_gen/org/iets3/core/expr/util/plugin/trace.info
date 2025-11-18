@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/3751132065236767060:jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="8,0,13,0" name="org.iets3.core.expr.util.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:56b161a8-16d8-4961-a5ec-a9c7896e9175(org.iets3.core.expr.util.plugin)/6471576814521892782">
+    <file name="DecTabCopyPaste.java">
+      <node id="6471576814521892782" at="9,28,10,58" concept="12" />
+      <node id="6471576814521916396" at="14,33,15,37" concept="7" />
+      <node id="6471576814521892782" at="9,0,12,0" concept="1" trace="DecTabCopyPaste#()V" />
+      <node id="6471576814521892788" at="14,0,17,0" concept="0" trace="get#()Lde/slisson/mps/tables/runtime/plugin/CopyPasteSupport;" />
+      <scope id="6471576814521892782" at="9,28,10,58" />
+      <scope id="6471576814521892792" at="14,33,15,37" />
+      <scope id="6471576814521892782" at="9,0,12,0" />
+      <scope id="6471576814521892788" at="14,0,17,0" />
+      <unit id="6471576814521892782" at="8,0,18,0" name="org.iets3.core.expr.util.plugin.DecTabCopyPaste" />
+    </file>
+  </root>
+  <root nodeRef="r:56b161a8-16d8-4961-a5ec-a9c7896e9175(org.iets3.core.expr.util.plugin)/6471576814521915523">
+    <file name="DecTabCopyPasteImpl.java">
+      <node id="1206675692272145881" at="28,0,29,0" concept="10" trace="navigationColumnsLeft" />
+      <node id="1206675692272149690" at="29,0,30,0" concept="10" trace="navigationColumnsRight" />
+      <node id="1206675692272153153" at="30,0,31,0" concept="10" trace="headerColumn" />
+      <node id="6471576814521946171" at="32,0,33,0" concept="3" trace="table" />
+      <node id="1206675692272282538" at="35,171,36,51" concept="8" />
+      <node id="1206675692272283251" at="36,51,37,82" concept="2" />
+      <node id="1206675692272289848" at="38,5,39,64" concept="7" />
+      <node id="6471576814521946231" at="43,25,44,13" concept="7" />
+      <node id="3041672038275145239" at="48,72,49,66" concept="7" />
+      <node id="6471576814521955134" at="53,41,54,63" concept="2" />
+      <node id="6471576814522012406" at="60,33,61,15" concept="7" />
+      <node id="6471576814522021454" at="62,7,63,125" concept="6" />
+      <node id="6471576814522072598" at="63,125,64,125" concept="6" />
+      <node id="6471576814522107290" at="64,125,65,108" concept="6" />
+      <node id="6471576814522128067" at="65,108,66,39" concept="2" />
+      <node id="6471576814522134454" at="71,92,72,51" concept="6" />
+      <node id="6471576814522159994" at="72,51,73,0" concept="9" />
+      <node id="6471576814522261877" at="75,33,76,56" concept="7" />
+      <node id="6471576814522303356" at="78,21,79,127" concept="6" />
+      <node id="6471576814522350441" at="79,127,80,135" concept="7" />
+      <node id="6471576814522429002" at="82,21,83,127" concept="6" />
+      <node id="6471576814522489617" at="83,127,84,135" concept="7" />
+      <node id="6471576814522565855" at="85,7,86,125" concept="6" />
+      <node id="6471576814522631122" at="86,125,87,125" concept="6" />
+      <node id="6471576814522690010" at="87,125,88,138" concept="7" />
+      <node id="6471576814522716900" at="89,7,90,0" concept="9" />
+      <node id="6471576814522717720" at="90,0,91,50" concept="7" />
+      <node id="7230129618832631326" at="95,104,96,89" concept="6" />
+      <node id="6471576814523035669" at="98,207,99,85" concept="2" />
+      <node id="6471576814523202283" at="105,31,106,13" concept="7" />
+      <node id="6471576814523214406" at="107,5,108,125" concept="6" />
+      <node id="6471576814523306576" at="108,125,109,125" concept="6" />
+      <node id="6471576814523402957" at="109,125,110,0" concept="9" />
+      <node id="6471576814523482401" at="111,33,112,13" concept="7" />
+      <node id="6471576814523485993" at="113,5,114,0" concept="9" />
+      <node id="6471576814523489549" at="114,0,115,113" concept="6" />
+      <node id="6471576814523584996" at="116,26,117,32" concept="8" />
+      <node id="6471576814523568585" at="117,32,118,195" concept="2" />
+      <node id="6471576814523615616" at="118,195,119,70" concept="2" />
+      <node id="6471576814523643302" at="119,70,120,70" concept="2" />
+      <node id="6471576814523688141" at="120,70,121,105" concept="2" />
+      <node id="6471576814523746731" at="122,5,123,0" concept="9" />
+      <node id="6471576814523757950" at="123,0,124,96" concept="2" />
+      <node id="6471576814523813147" at="124,96,125,132" concept="2" />
+      <node id="6471576814522264554" at="127,65,128,73" concept="6" />
+      <node id="6471576814522264554" at="128,73,129,41" concept="2" />
+      <node id="6471576814522264554" at="129,41,130,26" concept="7" />
+      <node id="6471576814522721568" at="132,65,133,47" concept="7" />
+      <node id="6471576814521915523" at="137,0,138,0" concept="10" trace="colHeaders$3s_N" />
+      <node id="6471576814521915523" at="138,0,139,0" concept="10" trace="rowHeaders$3rSK" />
+      <node id="6471576814521915523" at="139,0,140,0" concept="10" trace="expressions$2RXU" />
+      <node id="6471576814521915523" at="140,0,141,0" concept="10" trace="col$3qUK" />
+      <node id="6471576814521915523" at="141,0,142,0" concept="10" trace="row$3lio" />
+      <node id="6471576814521915523" at="142,0,143,0" concept="10" trace="contents$3yGd" />
+      <node id="6471576814521915523" at="146,0,147,0" concept="10" trace="DecTab$hI" />
+      <node id="6471576814521915523" at="147,0,148,0" concept="10" trace="Expression$D_" />
+      <node id="6471576814521915523" at="148,0,149,0" concept="10" trace="StringLiteral$By" />
+      <node id="6471576814521915523" at="152,0,153,0" concept="10" trace="value$zwlK" />
+      <node id="6471576814521977527" at="59,99,62,7" concept="4" />
+      <node id="6471576814522186304" at="74,105,77,7" concept="4" />
+      <node id="6471576814522859672" at="97,108,100,7" concept="4" />
+      <node id="6471576814523153584" at="104,61,107,5" concept="4" />
+      <node id="6471576814523412829" at="110,0,113,5" concept="4" />
+      <node id="6471576814522721568" at="132,0,135,0" concept="11" trace="as_ihkpgl_a0e0r#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="1206675692272182642" at="34,94,38,5" concept="4" />
+      <node id="6471576814521946224" at="42,0,46,0" concept="5" trace="priority#()I" />
+      <node id="3041672038275116292" at="47,0,51,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="6471576814521946238" at="52,0,56,0" concept="5" trace="setTableNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6471576814522277830" at="77,7,81,7" concept="4" />
+      <node id="6471576814522412922" at="81,7,85,7" concept="4" />
+      <node id="6471576814522742841" at="96,89,101,7" concept="2" />
+      <node id="6471576814522264554" at="127,0,132,0" concept="11" trace="createStringLiteral_ihkpgl_a0a0a1a0c0r#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1206675692272180725" at="34,0,41,0" concept="5" trace="withoutNavigationColumns#(Lde/slisson/mps/tables/runtime/selection/UndirectedTableRange;)Lde/slisson/mps/tables/runtime/selection/UndirectedTableRange;" />
+      <node id="6471576814523556763" at="115,113,122,5" concept="4" />
+      <node id="6471576814521968555" at="58,82,67,7" concept="2" />
+      <node id="6471576814521946257" at="94,0,103,0" concept="5" trace="paste#(Lde/slisson/mps/tables/runtime/selection/TableRangeSelection;Lde/slisson/mps/tables/runtime/plugin/TableData;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="6471576814521946268" at="57,0,69,0" concept="5" trace="delete#(Lde/slisson/mps/tables/runtime/selection/TableRangeSelection;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="6471576814522161712" at="73,0,89,7" concept="2" />
+      <node id="6471576814521946246" at="70,0,93,0" concept="5" trace="copy#(Lde/slisson/mps/tables/runtime/selection/TableRangeSelection;Ljetbrains/mps/openapi/editor/EditorContext;)Lde/slisson/mps/tables/runtime/plugin/TableData;" />
+      <node id="6471576814523048655" at="104,0,127,0" concept="5" trace="insertElement#(IILorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6471576814521946228" at="43,25,44,13" />
+      <scope id="3041672038275116298" at="48,72,49,66" />
+      <scope id="6471576814521946244" at="53,41,54,63" />
+      <scope id="6471576814521977529" at="60,33,61,15" />
+      <scope id="6471576814522186306" at="75,33,76,56" />
+      <scope id="6471576814522859674" at="98,207,99,85" />
+      <scope id="6471576814523153586" at="105,31,106,13" />
+      <scope id="6471576814523412831" at="111,33,112,13" />
+      <scope id="6471576814522721568" at="132,65,133,47" />
+      <scope id="1206675692272182644" at="35,171,37,82" />
+      <scope id="6471576814522277832" at="78,21,80,135">
+        <var name="colHeader" id="6471576814522303359" />
+      </scope>
+      <scope id="6471576814522412924" at="82,21,84,135">
+        <var name="rowHeader" id="6471576814522429005" />
+      </scope>
+      <scope id="6471576814522823653" at="97,108,100,7" />
+      <scope id="6471576814522264554" at="127,65,130,26">
+        <var name="n0" id="6471576814522264554" />
+      </scope>
+      <scope id="6471576814522721568" at="132,0,135,0">
+        <var name="o" id="6471576814522721568" />
+        <var name="type" id="6471576814522721568" />
+      </scope>
+      <scope id="6471576814521946224" at="42,0,46,0" />
+      <scope id="3041672038275116292" at="47,0,51,0">
+        <var name="editorContext" id="7230129618832448500" />
+        <var name="node" id="3041672038275116296" />
+      </scope>
+      <scope id="6471576814521946238" at="52,0,56,0">
+        <var name="table" id="6471576814521946242" />
+      </scope>
+      <scope id="1206675692272180728" at="34,94,39,64" />
+      <scope id="6471576814523556765" at="116,26,121,105" />
+      <scope id="6471576814522264554" at="127,0,132,0" />
+      <scope id="6471576814521946266" at="95,104,101,7">
+        <var name="range" id="7230129618832631327" />
+      </scope>
+      <scope id="1206675692272180725" at="34,0,41,0">
+        <var name="tableSelection" id="1206675692272181120" />
+      </scope>
+      <scope id="6471576814521971739" at="59,99,66,39">
+        <var name="cell" id="6471576814522107287" />
+        <var name="colHeader" id="6471576814522072595" />
+        <var name="rowHeader" id="6471576814522021451" />
+      </scope>
+      <scope id="6471576814521946274" at="58,82,67,7" />
+      <scope id="6471576814521946257" at="94,0,103,0">
+        <var name="data" id="6471576814521946260" />
+        <var name="editorContext" id="3041672038275188302" />
+        <var name="selection" id="6471576814521946258" />
+      </scope>
+      <scope id="6471576814521946268" at="57,0,69,0">
+        <var name="editorContext" id="7230129618832457851" />
+        <var name="selection" id="6471576814521946269" />
+      </scope>
+      <scope id="6471576814522176999" at="74,105,88,138">
+        <var name="colHeader" id="6471576814522631125" />
+        <var name="rowHeader" id="6471576814522565858" />
+      </scope>
+      <scope id="6471576814521946253" at="71,92,91,50">
+        <var name="data" id="6471576814522134452" />
+      </scope>
+      <scope id="6471576814523048658" at="104,61,125,132">
+        <var name="content" id="6471576814523489552" />
+        <var name="selectedCol" id="6471576814523306579" />
+        <var name="selectedRow" id="6471576814523214409" />
+      </scope>
+      <scope id="6471576814521946246" at="70,0,93,0">
+        <var name="editorContext" id="7230129618832495876" />
+        <var name="selection" id="6471576814521946251" />
+      </scope>
+      <scope id="6471576814523048655" at="104,0,127,0">
+        <var name="col" id="6471576814523106878" />
+        <var name="row" id="6471576814523059628" />
+        <var name="value" id="6471576814523062472" />
+      </scope>
+      <unit id="6471576814521915523" at="151,0,154,0" name="org.iets3.core.expr.util.plugin.DecTabCopyPasteImpl$PROPS" />
+      <unit id="6471576814521915523" at="145,0,150,0" name="org.iets3.core.expr.util.plugin.DecTabCopyPasteImpl$CONCEPTS" />
+      <unit id="6471576814521915523" at="136,0,144,0" name="org.iets3.core.expr.util.plugin.DecTabCopyPasteImpl$LINKS" />
+      <unit id="6471576814521915523" at="23,0,155,0" name="org.iets3.core.expr.util.plugin.DecTabCopyPasteImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:56b161a8-16d8-4961-a5ec-a9c7896e9175(org.iets3.core.expr.util.plugin)/8318282991003240342">
+    <file name="MultiDecTabCopyPaste.java">
+      <node id="8318282991003240342" at="9,33,10,58" concept="12" />
+      <node id="8318282991003240351" at="14,33,15,42" concept="7" />
+      <node id="8318282991003240342" at="9,0,12,0" concept="1" trace="MultiDecTabCopyPaste#()V" />
+      <node id="8318282991003240348" at="14,0,17,0" concept="0" trace="get#()Lde/slisson/mps/tables/runtime/plugin/CopyPasteSupport;" />
+      <scope id="8318282991003240342" at="9,33,10,58" />
+      <scope id="8318282991003240350" at="14,33,15,42" />
+      <scope id="8318282991003240342" at="9,0,12,0" />
+      <scope id="8318282991003240348" at="14,0,17,0" />
+      <unit id="8318282991003240342" at="8,0,18,0" name="org.iets3.core.expr.util.plugin.MultiDecTabCopyPaste" />
+    </file>
+  </root>
+  <root nodeRef="r:56b161a8-16d8-4961-a5ec-a9c7896e9175(org.iets3.core.expr.util.plugin)/8318282991003240554">
+    <file name="MultiDecTabCopyPasteImpl.java">
+      <node id="8318282991003420119" at="24,0,25,0" concept="10" trace="leftHeaderAndNavigationColumns" />
+      <node id="8318282991003420130" at="25,0,26,0" concept="10" trace="headerRows" />
+      <node id="8318282991003240580" at="27,0,28,0" concept="3" trace="table" />
+      <node id="8318282991003240618" at="29,103,30,83" concept="7" />
+      <node id="8318282991003240636" at="34,25,35,13" concept="7" />
+      <node id="3041672038276153095" at="39,72,40,71" concept="7" />
+      <node id="8318282991003240654" at="44,41,45,68" concept="2" />
+      <node id="8318282991003568377" at="50,118,51,122" concept="6" />
+      <node id="8318282991003608037" at="51,122,52,125" concept="6" />
+      <node id="8318282991003641928" at="52,125,53,202" concept="6" />
+      <node id="8318282991003693105" at="53,202,54,39" concept="2" />
+      <node id="8318282991003709856" at="59,92,60,51" concept="6" />
+      <node id="8318282991003718550" at="60,51,61,96" concept="6" />
+      <node id="8318282991003776320" at="62,70,63,114" concept="6" />
+      <node id="8318282991003803744" at="63,114,64,117" concept="6" />
+      <node id="8318282991003832790" at="64,117,65,189" concept="6" />
+      <node id="8318282991003886617" at="65,189,66,118" concept="7" />
+      <node id="7230129618832839802" at="71,104,72,98" concept="6" />
+      <node id="8318282991004051828" at="72,98,73,0" concept="9" />
+      <node id="8318282991004253519" at="75,105,76,51" concept="8" />
+      <node id="8318282991004275406" at="76,51,77,15" concept="7" />
+      <node id="8318282991004277671" at="78,7,79,0" concept="9" />
+      <node id="8318282991004341437" at="80,105,81,66" concept="2" />
+      <node id="8318282991004361357" at="82,7,83,0" concept="9" />
+      <node id="8318282991004361974" at="83,0,84,117" concept="6" />
+      <node id="8318282991004408303" at="84,117,85,120" concept="6" />
+      <node id="8318282991004455186" at="85,120,86,0" concept="9" />
+      <node id="8318282991004460821" at="86,0,87,191" concept="6" />
+      <node id="8318282991004559103" at="88,28,89,66" concept="2" />
+      <node id="8318282991004585473" at="89,66,90,113" concept="2" />
+      <node id="8318282991004629456" at="91,7,92,0" concept="9" />
+      <node id="8318282991004632437" at="92,0,93,92" concept="2" />
+      <node id="8318282991004689346" at="93,92,94,172" concept="2" />
+      <node id="8318282991004017807" at="98,36,99,57" concept="7" />
+      <node id="8318282991004017807" at="100,5,101,16" concept="7" />
+      <node id="8318282991003982227" at="104,36,105,62" concept="7" />
+      <node id="8318282991003982227" at="106,5,107,16" concept="7" />
+      <node id="8318282991004564528" at="109,69,110,67" concept="6" />
+      <node id="8318282991004564528" at="110,67,111,46" concept="2" />
+      <node id="8318282991004564528" at="111,46,112,26" concept="7" />
+      <node id="8318282991003240554" at="116,0,117,0" concept="10" trace="MultiDecTab$Cw" />
+      <node id="8318282991003240554" at="117,0,118,0" concept="10" trace="Expression$D_" />
+      <node id="8318282991003240554" at="118,0,119,0" concept="10" trace="Content$au" />
+      <node id="8318282991003240554" at="122,0,123,0" concept="10" trace="rows$sdUx" />
+      <node id="8318282991003240554" at="123,0,124,0" concept="10" trace="colDefs$80en" />
+      <node id="8318282991003240554" at="124,0,125,0" concept="10" trace="contents$qmm1" />
+      <node id="8318282991003240554" at="125,0,126,0" concept="10" trace="col$28hQ" />
+      <node id="8318282991003240554" at="126,0,127,0" concept="10" trace="exprs$KQyr" />
+      <node id="8318282991003240584" at="29,0,32,0" concept="5" trace="withoutNavigationAndHeaderColumns#(Lde/slisson/mps/tables/runtime/selection/UndirectedTableRange;)Lde/slisson/mps/tables/runtime/selection/UndirectedTableRange;" />
+      <node id="8318282991004282415" at="79,0,82,7" concept="13" />
+      <node id="8318282991004017807" at="97,72,100,5" concept="4" />
+      <node id="8318282991003982227" at="103,80,106,5" concept="4" />
+      <node id="8318282991003240632" at="33,0,37,0" concept="5" trace="priority#()I" />
+      <node id="3041672038276125070" at="38,0,42,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="8318282991003240648" at="43,0,47,0" concept="5" trace="setTableNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8318282991004192962" at="74,106,78,7" concept="4" />
+      <node id="8318282991004546211" at="87,191,91,7" concept="4" />
+      <node id="8318282991004564528" at="109,0,114,0" concept="11" trace="createContent_omj9c9_a0a0i0c0a2a81#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8318282991003240670" at="49,82,55,7" concept="2" />
+      <node id="8318282991003745753" at="61,96,67,7" concept="7" />
+      <node id="8318282991004017807" at="97,0,103,0" concept="11" trace="check_omj9c9_a3a1a0c0q#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8318282991003982227" at="103,0,109,0" concept="11" trace="check_omj9c9_a0d0b0a2a61#(Ljava/util/List;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8318282991003240664" at="48,0,57,0" concept="5" trace="delete#(Lde/slisson/mps/tables/runtime/selection/TableRangeSelection;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="8318282991003240725" at="58,0,69,0" concept="5" trace="copy#(Lde/slisson/mps/tables/runtime/selection/TableRangeSelection;Ljetbrains/mps/openapi/editor/EditorContext;)Lde/slisson/mps/tables/runtime/plugin/TableData;" />
+      <node id="8318282991004097254" at="73,0,95,7" concept="2" />
+      <node id="8318282991003240848" at="70,0,97,0" concept="5" trace="paste#(Lde/slisson/mps/tables/runtime/selection/TableRangeSelection;Lde/slisson/mps/tables/runtime/plugin/TableData;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="8318282991003240585" at="29,103,30,83" />
+      <scope id="8318282991003240635" at="34,25,35,13" />
+      <scope id="3041672038276125076" at="39,72,40,71" />
+      <scope id="8318282991003240653" at="44,41,45,68" />
+      <scope id="8318282991004282417" at="80,105,81,66" />
+      <scope id="8318282991004017807" at="98,36,99,57" />
+      <scope id="8318282991003982227" at="104,36,105,62" />
+      <scope id="8318282991004192964" at="75,105,77,15" />
+      <scope id="8318282991004546213" at="88,28,90,113" />
+      <scope id="8318282991003240584" at="29,0,32,0">
+        <var name="tableSelection" id="8318282991003240627" />
+      </scope>
+      <scope id="8318282991004564528" at="109,69,112,26">
+        <var name="n0" id="8318282991004564528" />
+      </scope>
+      <scope id="8318282991003240632" at="33,0,37,0" />
+      <scope id="3041672038276125070" at="38,0,42,0">
+        <var name="editorContext" id="7230129618832903387" />
+        <var name="node" id="3041672038276125074" />
+      </scope>
+      <scope id="8318282991003240648" at="43,0,47,0">
+        <var name="table" id="8318282991003240651" />
+      </scope>
+      <scope id="8318282991003240678" at="50,118,54,39">
+        <var name="cell" id="8318282991003641925" />
+        <var name="selectedCol" id="8318282991003608034" />
+        <var name="selectedRow" id="8318282991003568375" />
+      </scope>
+      <scope id="8318282991003761727" at="62,70,66,118">
+        <var name="col" id="8318282991003803741" />
+        <var name="content" id="8318282991003832787" />
+        <var name="row" id="8318282991003776318" />
+      </scope>
+      <scope id="8318282991004017807" at="97,72,101,16" />
+      <scope id="8318282991003982227" at="103,80,107,16" />
+      <scope id="8318282991004564528" at="109,0,114,0">
+        <var name="p0" id="8318282991004564528" />
+      </scope>
+      <scope id="8318282991003240669" at="49,82,55,7" />
+      <scope id="8318282991004017807" at="97,0,103,0">
+        <var name="checkedDotOperand" id="8318282991004017807" />
+      </scope>
+      <scope id="8318282991003982227" at="103,0,109,0">
+        <var name="checkedDotOperand" id="8318282991003982227" />
+      </scope>
+      <scope id="8318282991003240731" at="59,92,67,7">
+        <var name="box" id="8318282991003718547" />
+        <var name="data" id="8318282991003709854" />
+      </scope>
+      <scope id="8318282991003240664" at="48,0,57,0">
+        <var name="editorContext" id="7230129618832874726" />
+        <var name="selection" id="8318282991003240665" />
+      </scope>
+      <scope id="8318282991003240725" at="58,0,69,0">
+        <var name="editorContext" id="7230129618832811595" />
+        <var name="selection" id="8318282991003240729" />
+      </scope>
+      <scope id="8318282991004160720" at="74,106,94,172">
+        <var name="content" id="8318282991004460818" />
+        <var name="selectedCol" id="8318282991004408300" />
+        <var name="selectedRow" id="8318282991004361971" />
+      </scope>
+      <scope id="8318282991003240856" at="71,104,95,7">
+        <var name="range" id="7230129618832839803" />
+      </scope>
+      <scope id="8318282991003240848" at="70,0,97,0">
+        <var name="data" id="8318282991003240851" />
+        <var name="editorContext" id="3041672038276179674" />
+        <var name="selection" id="8318282991003240849" />
+      </scope>
+      <unit id="8318282991003240554" at="115,0,120,0" name="org.iets3.core.expr.util.plugin.MultiDecTabCopyPasteImpl$CONCEPTS" />
+      <unit id="8318282991003240554" at="121,0,128,0" name="org.iets3.core.expr.util.plugin.MultiDecTabCopyPasteImpl$LINKS" />
+      <unit id="8318282991003240554" at="22,0,129,0" name="org.iets3.core.expr.util.plugin.MultiDecTabCopyPasteImpl" />
+    </file>
+  </root>
+</debug-info>
+

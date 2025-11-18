@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="18lhjkx7kii8u878tzy98za04uu7gg8">
+  <files names="DimensionReference_AddExponent.java:DimensionReference_InsertNew.java:DummyForGrammarCells.java:DummyForGrammarCells_ComponentBuilder_a.java:EditorAspectDescriptorImpl.java:GrammarActionsDescriptor.java:GrammarCellsSubstituteMenu_QuantityReference.java:GrammarCellsSubstituteMenu_QuantitySpecification.java:IncludeBeforeAfterTransformations.java:PresentationProviders.java:QuantityReference_Editor.java:QuantityReference_EditorBuilder_a.java:QuantityReference_SubstituteMenu.java:QuantityReference_TransformationMenu.java:QuantitySpecification_Editor.java:QuantitySpecification_EditorBuilder_a.java:QuantitySpecification_SubstituteMenu.java:QuantitySpecification_TransformationMenu.java:template_GrammarCellsSideTransformationsMenu.java" />
+</product>
+

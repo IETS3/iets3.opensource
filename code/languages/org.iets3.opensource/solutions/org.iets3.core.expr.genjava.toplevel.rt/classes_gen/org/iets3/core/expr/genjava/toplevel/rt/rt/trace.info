@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root nodeRef="r:4742b293-8a9d-428b-8e8c-05978fbb405b(org.iets3.core.expr.genjava.toplevel.rt.rt)/6383537721519516049">
+    <file name="InlineRecordType.java">
+      <node id="6383537721519532000" at="10,0,11,0" concept="2" trace="members" />
+      <node id="5989109240581263259" at="13,22,14,19" concept="6" />
+      <node id="5989109240581244936" at="16,45,17,19" concept="6" />
+      <node id="5989109240582195014" at="18,5,19,82" concept="5" />
+      <node id="5989109240582187659" at="19,82,20,39" concept="6" />
+      <node id="5989109240581272306" at="23,25,24,33" concept="6" />
+      <node id="5989109240581256771" at="12,37,15,5" concept="3" />
+      <node id="5989109240581218888" at="15,5,18,5" concept="3" />
+      <node id="5989109240580595515" at="22,0,26,0" concept="4" trace="hashCode#()I" />
+      <node id="5989109240580595504" at="11,0,22,0" concept="4" trace="equals#(Ljava/lang/Object;)Z" />
+      <scope id="5989109240581256773" at="13,22,14,19" />
+      <scope id="5989109240581218890" at="16,45,17,19" />
+      <scope id="5989109240580595520" at="23,25,24,33" />
+      <scope id="5989109240580595515" at="22,0,26,0" />
+      <scope id="5989109240580595510" at="12,37,20,39">
+        <var name="others" id="5989109240582195015" />
+      </scope>
+      <scope id="5989109240580595504" at="11,0,22,0">
+        <var name="obj" id="5989109240580595508" />
+      </scope>
+      <unit id="6383537721519516049" at="9,0,27,0" name="org.iets3.core.expr.genjava.toplevel.rt.rt.InlineRecordType" />
+    </file>
+  </root>
+  <root nodeRef="r:4742b293-8a9d-428b-8e8c-05978fbb405b(org.iets3.core.expr.genjava.toplevel.rt.rt)/6383537721523315042">
+    <file name="InlineRecordTypeMember.java">
+      <node id="6383537721523315143" at="8,0,9,0" concept="2" trace="name" />
+      <node id="6383537721523315190" at="9,0,10,0" concept="2" trace="value" />
+      <node id="6383537721523423101" at="10,60,11,21" concept="1" />
+      <node id="6383537721523427750" at="11,21,12,23" concept="1" />
+      <node id="5989109240583505007" at="16,22,17,19" concept="6" />
+      <node id="5989109240583505014" at="19,51,20,19" concept="6" />
+      <node id="5989109240583532017" at="21,5,22,66" concept="5" />
+      <node id="5989109240583505626" at="22,66,23,64" concept="6" />
+      <node id="5989109240583552648" at="26,25,27,37" concept="6" />
+      <node id="5989109240583505005" at="15,37,18,5" concept="3" />
+      <node id="5989109240583505012" at="18,5,21,5" concept="3" />
+      <node id="6383537721523422957" at="10,0,14,0" concept="0" trace="InlineRecordTypeMember#(Ljava/lang/String;Ljava/lang/Object;)V" />
+      <node id="5989109240583494570" at="25,0,29,0" concept="4" trace="hashCode#()I" />
+      <node id="5989109240583494559" at="14,0,25,0" concept="4" trace="equals#(Ljava/lang/Object;)Z" />
+      <scope id="5989109240583505006" at="16,22,17,19" />
+      <scope id="5989109240583505013" at="19,51,20,19" />
+      <scope id="5989109240583494575" at="26,25,27,37" />
+      <scope id="6383537721523422961" at="10,60,12,23" />
+      <scope id="6383537721523422957" at="10,0,14,0">
+        <var name="name" id="6383537721523422986" />
+        <var name="value" id="6383537721523423033" />
+      </scope>
+      <scope id="5989109240583494570" at="25,0,29,0" />
+      <scope id="5989109240583494565" at="15,37,23,64">
+        <var name="other" id="5989109240583532018" />
+      </scope>
+      <scope id="5989109240583494559" at="14,0,25,0">
+        <var name="obj" id="5989109240583494563" />
+      </scope>
+      <unit id="6383537721523315042" at="7,0,30,0" name="org.iets3.core.expr.genjava.toplevel.rt.rt.InlineRecordTypeMember" />
+    </file>
+  </root>
+</debug-info>
+

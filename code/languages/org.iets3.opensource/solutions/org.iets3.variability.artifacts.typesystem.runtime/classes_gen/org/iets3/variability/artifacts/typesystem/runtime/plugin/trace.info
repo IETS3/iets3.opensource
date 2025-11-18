@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <root nodeRef="r:eb144f30-7a35-4067-aaf7-88a2e2945390(org.iets3.variability.artifacts.typesystem.runtime.plugin)/6085032000534535568">
+    <file name="ForAllVariantsContext.java">
+      <node id="6085032000535716074" at="18,0,19,0" concept="3" trace="errorTarget" />
+      <node id="6085032000535636053" at="21,55,22,66" concept="2" />
+      <node id="6085032000535719942" at="26,58,27,69" concept="2" />
+      <node id="6085032000534629022" at="11,0,13,0" concept="6" trace="reportWarning#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="6085032000534655577" at="13,0,15,0" concept="6" trace="reportInfo#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="6085032000535571555" at="20,0,24,0" concept="6" trace="reportInfo#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="6085032000535571573" at="25,0,29,0" concept="6" trace="reportWarning#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="6085032000535563017" at="16,68,29,6" concept="8" />
+      <node id="6085032000535532242" at="16,0,31,0" concept="12" trace="make#(Ljetbrains/mps/typesystem/inference/TypeCheckingContext;)Lorg/iets3/variability/artifacts/typesystem/runtime/plugin/ForAllVariantsContext;" />
+      <scope id="6085032000534629026" at="11,55,11,55" />
+      <scope id="6085032000534655581" at="13,52,13,52" />
+      <scope id="6085032000535571565" at="21,55,22,66" />
+      <scope id="6085032000535571583" at="26,58,27,69" />
+      <scope id="6085032000534629022" at="11,0,13,0">
+        <var name="message" id="6085032000534629554" />
+        <var name="n" id="6085032000534629083" />
+      </scope>
+      <scope id="6085032000534655577" at="13,0,15,0">
+        <var name="message" id="6085032000534656290" />
+        <var name="n" id="6085032000534655765" />
+      </scope>
+      <scope id="6085032000535571555" at="20,0,24,0">
+        <var name="message" id="6085032000535571558" />
+        <var name="n" id="6085032000535571556" />
+      </scope>
+      <scope id="6085032000535571573" at="25,0,29,0">
+        <var name="message" id="6085032000535571576" />
+        <var name="n" id="6085032000535571574" />
+      </scope>
+      <scope id="6085032000535532246" at="16,68,29,6" />
+      <scope id="6085032000535532242" at="16,0,31,0">
+        <var name="tcc" id="6085032000535562416" />
+      </scope>
+      <unit id="6085032000535570798" at="17,15,29,5" name="org.iets3.variability.artifacts.typesystem.runtime.plugin.ForAllVariantsContext$1" />
+      <unit id="6085032000534535568" at="10,0,32,0" name="org.iets3.variability.artifacts.typesystem.runtime.plugin.ForAllVariantsContext" />
+    </file>
+  </root>
+  <root nodeRef="r:eb144f30-7a35-4067-aaf7-88a2e2945390(org.iets3.variability.artifacts.typesystem.runtime.plugin)/6895224171098405998">
+    <file name="ForAllVariantsImpl.java">
+      <node id="1913254674260169333" at="29,0,30,0" concept="11" trace="debug" />
+      <node id="3789754953812818745" at="31,0,32,0" concept="11" trace="hasMulticheckWarningBeenShown" />
+      <node id="7136145497964138434" at="43,0,44,0" concept="6" trace="mapText#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="7136145497964138994" at="51,0,52,0" concept="6" trace="mapNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7136145497964184461" at="55,0,56,0" concept="3" trace="suffix" />
+      <node id="7136145497964194461" at="56,0,57,0" concept="3" trace="inverseMap" />
+      <node id="7136145497964185140" at="64,79,65,62" concept="2" />
+      <node id="7136145497964199031" at="65,62,66,35" concept="2" />
+      <node id="7136145497964174464" at="70,40,71,27" concept="8" />
+      <node id="3031822514904082662" at="75,49,76,69" concept="9" />
+      <node id="3341819623641096156" at="76,69,77,45" concept="8" />
+      <node id="8801439526215971231" at="83,40,84,18" concept="8" />
+      <node id="8801439526215972344" at="88,49,89,29" concept="8" />
+      <node id="8493447695298938920" at="93,47,94,44" concept="7" />
+      <node id="8493447695298939323" at="94,44,95,26" concept="8" />
+      <node id="3031822514903684360" at="114,139,115,13" concept="8" />
+      <node id="6085032000535820280" at="119,239,120,54" concept="9" />
+      <node id="6085032000535820292" at="121,46,122,74" concept="13" />
+      <node id="6085032000535820301" at="123,5,124,51" concept="7" />
+      <node id="6085032000535820307" at="124,51,125,53" concept="9" />
+      <node id="6085032000535820317" at="125,53,126,57" concept="7" />
+      <node id="6085032000535820324" at="127,25,128,109" concept="9" />
+      <node id="6085032000535820341" at="128,109,129,61" concept="2" />
+      <node id="6085032000535820348" at="129,61,130,18" concept="8" />
+      <node id="6085032000535820368" at="131,5,132,0" concept="10" />
+      <node id="6085032000535820369" at="132,0,133,87" concept="9" />
+      <node id="6085032000535820384" at="133,87,134,219" concept="7" />
+      <node id="6085032000535820397" at="134,219,135,0" concept="10" />
+      <node id="6085032000535820398" at="135,0,136,82" concept="9" />
+      <node id="6085032000535820411" at="136,82,137,105" concept="7" />
+      <node id="6085032000535820427" at="138,16,139,219" concept="2" />
+      <node id="6085032000535820456" at="140,5,141,0" concept="10" />
+      <node id="6085032000535820457" at="141,0,142,84" concept="9" />
+      <node id="6085032000535820474" at="143,59,144,131" concept="2" />
+      <node id="6085032000535820481" at="144,131,145,18" concept="8" />
+      <node id="6085032000535820486" at="146,5,147,0" concept="10" />
+      <node id="2395508706175263133" at="147,0,148,93" concept="7" />
+      <node id="6085032000535820531" at="148,93,149,134" concept="7" />
+      <node id="2395508706175090288" at="149,134,150,0" concept="10" />
+      <node id="2395508706174899073" at="150,0,151,66" concept="7" />
+      <node id="9069065777947522440" at="151,66,152,75" concept="7" />
+      <node id="6085032000535820643" at="153,65,154,57" concept="9" />
+      <node id="6085032000535820653" at="154,57,155,95" concept="7" />
+      <node id="9069065777950118424" at="155,95,156,0" concept="10" />
+      <node id="6085032000535820680" at="156,0,157,44" concept="9" />
+      <node id="2372541689043464328" at="157,44,158,189" concept="7" />
+      <node id="6085032000535820687" at="158,189,159,79" concept="7" />
+      <node id="9069065777948276645" at="159,79,160,0" concept="10" />
+      <node id="8486075992189669204" at="160,0,161,80" concept="7" />
+      <node id="6085032000535820714" at="162,89,163,65" concept="9" />
+      <node id="6085032000535820724" at="163,65,164,73" concept="7" />
+      <node id="6085032000535820731" at="164,73,165,141" concept="2" />
+      <node id="6085032000535820751" at="166,7,167,97" concept="9" />
+      <node id="6085032000535820766" at="168,5,169,17" concept="8" />
+      <node id="5414539660290227292" at="172,159,173,97" concept="9" />
+      <node id="5414539660290198811" at="173,97,174,271" concept="7" />
+      <node id="5414539660290198840" at="174,271,175,0" concept="10" />
+      <node id="5414539660290198848" at="175,0,176,71" concept="8" />
+      <node id="3031822514903574594" at="179,137,180,59" concept="7" />
+      <node id="3031822514903563462" at="181,20,182,49" concept="2" />
+      <node id="3031822514903584078" at="183,12,184,46" concept="2" />
+      <node id="3734590111329405271" at="188,54,189,104" concept="8" />
+      <node id="6895224171098405998" at="193,0,194,0" concept="11" trace="FeatureModelConfiguration$nE" />
+      <node id="6895224171098405998" at="197,0,198,0" concept="11" trace="name$MnvL" />
+      <node id="3031822514903584004" at="183,10,185,5" concept="0" />
+      <node id="6085032000535820824" at="113,205,116,5" concept="5" />
+      <node id="6085032000535820290" at="120,54,123,5" concept="5" />
+      <node id="6085032000535820425" at="137,105,140,5" concept="5" />
+      <node id="4859633593950213206" at="188,0,191,0" concept="12" trace="isConcreteConfig#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Boolean;" />
+      <node id="7136145497964181766" at="64,0,68,0" concept="1" trace="Mapper#(Ljava/lang/String;Lcom/google/common/collect/ImmutableBiMap;)V" />
+      <node id="7136145497964174455" at="69,0,73,0" concept="6" trace="mapText#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="8801439526215961744" at="82,0,86,0" concept="6" trace="mapText#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="8801439526215961754" at="87,0,91,0" concept="6" trace="mapNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8493447695298937117" at="93,0,97,0" concept="12" trace="isIn150Model#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="6085032000535820472" at="142,84,146,5" concept="5" />
+      <node id="7136145497964174465" at="74,0,79,0" concept="6" trace="mapNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6895224171098414716" at="113,0,118,0" concept="12" trace="doMultiCheck#(nullLjetbrains/mps/typesystem/inference/TypeCheckingContext;Ljava/lang/String;Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_void_P2_E0;)V" />
+      <node id="6085032000535820322" at="126,57,131,5" concept="5" />
+      <node id="6085032000535820712" at="161,80,166,7" concept="5" />
+      <node id="3031822514903582620" at="180,59,185,5" concept="5" />
+      <node id="5414539660290198865" at="172,0,178,0" concept="12" trace="nodeUnderCheckHasBeenRemoved#(Ljava/util/Collection;Lcom/google/common/collect/ImmutableBiMap;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3031822514903556132" at="179,0,187,0" concept="12" trace="report#(Lorg/iets3/variability/artifacts/typesystem/runtime/plugin/ForAllVariantsContext;Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Z)V" />
+      <node id="6085032000535820621" at="152,75,168,5" concept="4" />
+      <node id="6085032000535820793" at="119,0,171,0" concept="12" trace="doMultiCheckInner#(nullLjetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_void_P2_E0;Ljava/lang/String;Lorg/iets3/variability/artifacts/typesystem/runtime/plugin/ForAllVariantsContext;)Z" />
+      <scope id="7136145497964138434" at="43,0,44,0">
+        <var name="orig" id="7136145497964138573" />
+      </scope>
+      <scope id="7136145497964138994" at="51,0,52,0">
+        <var name="actuallyChecked" id="7136145497964139144" />
+      </scope>
+      <scope id="7136145497964174461" at="70,40,71,27" />
+      <scope id="8801439526215961750" at="83,40,84,18" />
+      <scope id="8801439526215961760" at="88,49,89,29" />
+      <scope id="6085032000535820825" at="114,139,115,13" />
+      <scope id="6085032000535820291" at="121,46,122,74" />
+      <scope id="6085032000535820426" at="138,16,139,219" />
+      <scope id="3031822514903582622" at="181,20,182,49" />
+      <scope id="3031822514903584005" at="183,12,184,46" />
+      <scope id="4859633593950213209" at="188,54,189,104" />
+      <scope id="7136145497964181770" at="64,79,66,35" />
+      <scope id="7136145497964174471" at="75,49,77,45" />
+      <scope id="8493447695298930756" at="93,47,95,26">
+        <var name="ivaa" id="8493447695298938921" />
+      </scope>
+      <scope id="6085032000535820473" at="143,59,145,18" />
+      <scope id="6895224171098414719" at="113,205,116,5" />
+      <scope id="6085032000535820323" at="127,25,130,18" />
+      <scope id="6085032000535820713" at="162,89,165,141">
+        <var name="nodeUnderCheckCopy" id="6085032000535820725" />
+      </scope>
+      <scope id="4859633593950213206" at="188,0,191,0">
+        <var name="fmc" id="4859633593950215532" />
+      </scope>
+      <scope id="7136145497964181766" at="64,0,68,0">
+        <var name="configName" id="7136145497964182469" />
+        <var name="inverseMap" id="7136145497964182755" />
+      </scope>
+      <scope id="7136145497964174455" at="69,0,73,0">
+        <var name="orig" id="7136145497964174459" />
+      </scope>
+      <scope id="8801439526215961744" at="82,0,86,0">
+        <var name="orig" id="8801439526215961748" />
+      </scope>
+      <scope id="8801439526215961754" at="87,0,91,0">
+        <var name="actuallyChecked" id="8801439526215961757" />
+      </scope>
+      <scope id="8493447695298937117" at="93,0,97,0">
+        <var name="n" id="8493447695298933134" />
+      </scope>
+      <scope id="5414539660290198808" at="172,159,176,71">
+        <var name="allDetached" id="5414539660290198812" />
+      </scope>
+      <scope id="7136145497964174465" at="74,0,79,0">
+        <var name="actuallyChecked" id="7136145497964174468" />
+      </scope>
+      <scope id="6895224171098414716" at="113,0,118,0">
+        <var name="checkName" id="7423451592119041768" />
+        <var name="checkingLogic" id="6229302015425865087" />
+        <var name="nodeUnderCheck_" id="6895224171098414944" />
+        <var name="typeCheckingContext" id="7423451592118526585" />
+      </scope>
+      <scope id="5414539660290198865" at="172,0,178,0">
+        <var name="detachments" id="5414539660290198850" />
+        <var name="inverseMapping" id="5414539660290198853" />
+        <var name="nodeUnderCheck" id="5414539660290198857" />
+      </scope>
+      <scope id="3031822514903556135" at="179,137,185,5">
+        <var name="text" id="3031822514903574597" />
+      </scope>
+      <scope id="3031822514903556132" at="179,0,187,0">
+        <var name="checkName" id="3031822514903572545" />
+        <var name="isWarning" id="3031822514903578992" />
+        <var name="msg" id="3031822514903560835" />
+        <var name="n" id="3031822514903561743" />
+        <var name="typeCheckingContext" id="3031822514903560596" />
+      </scope>
+      <scope id="6085032000535820624" at="153,65,167,97">
+        <var name="detachments" id="6085032000535820688" />
+        <var name="inverseMapping" id="8486075992189669205" />
+        <var name="origToCopy" id="6085032000535820654" />
+        <var name="params" id="2372541689043464329" />
+      </scope>
+      <scope id="6085032000535820621" at="152,75,168,5">
+        <var name="config" id="6085032000535820622" />
+      </scope>
+      <scope id="6085032000535820269" at="119,239,169,17">
+        <var name="artifactGroup" id="2395508706175263134" />
+        <var name="artifactGroupLogical" id="6085032000535820532" />
+        <var name="concreteConfigs" id="6085032000535820412" />
+        <var name="configs" id="6085032000535820385" />
+        <var name="filterInstantiator" id="9069065777947522441" />
+        <var name="instance" id="2395508706174899074" />
+        <var name="ivaa" id="6085032000535820318" />
+        <var name="nodeUnderCheck" id="6085032000535820302" />
+      </scope>
+      <scope id="6085032000535820793" at="119,0,171,0">
+        <var name="checkName" id="6085032000535820775" />
+        <var name="checkingLogic" id="6085032000535820770" />
+        <var name="nodeUnderCheck_" id="6085032000535820768" />
+        <var name="typeCheckingContext" id="6085032000535820777" />
+      </scope>
+      <unit id="6895224171098405998" at="192,0,195,0" name="org.iets3.variability.artifacts.typesystem.runtime.plugin.ForAllVariantsImpl$CONCEPTS" />
+      <unit id="6895224171098405998" at="196,0,199,0" name="org.iets3.variability.artifacts.typesystem.runtime.plugin.ForAllVariantsImpl$PROPS" />
+      <unit id="8801439526215959416" at="81,0,92,0" name="org.iets3.variability.artifacts.typesystem.runtime.plugin.ForAllVariantsImpl$NonMapper" />
+      <unit id="7136145497964135426" at="36,0,53,0" name="org.iets3.variability.artifacts.typesystem.runtime.plugin.ForAllVariantsImpl$IMapper" />
+      <unit id="7136145497964170548" at="54,0,80,0" name="org.iets3.variability.artifacts.typesystem.runtime.plugin.ForAllVariantsImpl$Mapper" />
+      <unit id="6895224171098405998" at="28,0,200,0" name="org.iets3.variability.artifacts.typesystem.runtime.plugin.ForAllVariantsImpl" />
+    </file>
+  </root>
+</debug-info>
+

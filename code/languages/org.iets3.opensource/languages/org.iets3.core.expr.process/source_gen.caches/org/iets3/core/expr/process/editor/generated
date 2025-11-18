@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="2powki6l9cowklovygw14b0txdkq55v">
+  <files names="AbstractDecisionProcedure_Editor.java:AbstractDecisionProcedure_EditorBuilder_a.java:AbstractTurnoutPolicy_Editor.java:AbstractTurnoutPolicy_EditorBuilder_a.java:AnySenderExpr_Editor.java:AnySenderExpr_EditorBuilder_a.java:CustomDecProc_Editor.java:CustomDecProc_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:MultipartyBooleanDecision_Editor.java:MultipartyBooleanDecision_EditorBuilder_a.java:PartyLiteral_Editor.java:PartyLiteral_EditorBuilder_a.java:PartyType_Editor.java:PartyType_EditorBuilder_a.java:Party_Editor.java:Party_EditorBuilder_a.java:ProcessType_Editor.java:ProcessType_EditorBuilder_a.java:ProcessType_SubstituteMenu.java:RunProcess_Editor.java:RunProcess_EditorBuilder_a.java:SenderContextArg_Editor.java:SenderContextArg_EditorBuilder_a.java:SenderPartyInterceptor_Editor.java:SenderPartyInterceptor_EditorBuilder_a.java:TakeTurnsInterceptor_Editor.java:TakeTurnsInterceptor_EditorBuilder_a.java:WhoIsNextExpr_Editor.java:WhoIsNextExpr_EditorBuilder_a.java" />
+</product>
+

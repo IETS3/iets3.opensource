@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-d111uq3hsnrakrgmc69025306cyb7ls">
+  <files names="AbstractDecisionProcedure__BehaviorDescriptor.java:AbstractTurnoutPolicy__BehaviorDescriptor.java:AllTurnoutPolicy__BehaviorDescriptor.java:AnySenderExpr__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:CustomDecProc__BehaviorDescriptor.java:MajorityDecProc__BehaviorDescriptor.java:MultipartyBooleanDecision__BehaviorDescriptor.java:PartyLiteral__BehaviorDescriptor.java:PartyType__BehaviorDescriptor.java:ProcessType__BehaviorDescriptor.java:RunProcess__BehaviorDescriptor.java:SenderContextArg__BehaviorDescriptor.java:SenderPartyInterceptor__BehaviorDescriptor.java:TakeTurnsInterceptor__BehaviorDescriptor.java:UnanimousDecProc__BehaviorDescriptor.java:WhoIsNextExpr__BehaviorDescriptor.java" />
+</product>
+

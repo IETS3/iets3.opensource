@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="9,0,49,0" name="org.iets3.variability.artifacts.base.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)/1046754514346706488">
+    <file name="TypesystemDescriptor.java">
+      <node id="1046754514346706488" at="31,5,32,90" concept="7" />
+      <node id="1046754514346706488" at="32,90,33,47" concept="3" />
+      <node id="1046754514346706488" at="30,5,34,5" concept="0" />
+      <scope id="1046754514346706488" at="31,5,33,47">
+        <var name="inferenceRule" id="1046754514346706488" />
+      </scope>
+    </file>
+    <file name="typeof_IConditionVarPoint_InferenceRule.java">
+      <node id="5588466660923452416" at="22,5,23,95" concept="7" />
+      <node id="5588466660923452416" at="23,95,24,213" concept="7" />
+      <node id="5588466660923452416" at="24,213,25,300" concept="3" />
+      <node id="1046754514346706488" at="28,50,29,42" concept="8" />
+      <node id="1046754514346706488" at="31,68,32,102" concept="8" />
+      <node id="1046754514346706488" at="34,30,35,17" concept="8" />
+      <node id="1046754514346706488" at="39,0,40,0" concept="11" trace="featureExpr$cJRc" />
+      <node id="1046754514346706488" at="43,0,44,0" concept="11" trace="IConditionVarPoint$bG" />
+      <node id="1046754514346706488" at="19,0,21,0" concept="1" trace="typeof_IConditionVarPoint_InferenceRule#()V" />
+      <node id="1046754514346706488" at="28,0,31,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1046754514346706488" at="31,0,34,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1046754514346706488" at="34,0,37,0" concept="6" trace="overrides#()Z" />
+      <node id="5588466660923452416" at="21,115,26,5" concept="0" />
+      <node id="1046754514346706488" at="21,0,28,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1046754514346706488" at="19,52,19,52" />
+      <scope id="1046754514346706488" at="28,50,29,42" />
+      <scope id="1046754514346706488" at="31,68,32,102" />
+      <scope id="1046754514346706488" at="34,30,35,17" />
+      <scope id="1046754514346706488" at="19,0,21,0" />
+      <scope id="5588466660923452416" at="22,5,25,300">
+        <var name="_info_12389875345" id="5588466660923452416" />
+        <var name="_nodeToCheck_1029348928467" id="5588466660923452416" />
+      </scope>
+      <scope id="1046754514346706488" at="28,0,31,0" />
+      <scope id="1046754514346706488" at="31,0,34,0">
+        <var name="argument" id="1046754514346706488" />
+      </scope>
+      <scope id="1046754514346706488" at="34,0,37,0" />
+      <scope id="1046754514346706489" at="21,115,26,5" />
+      <scope id="1046754514346706488" at="21,0,28,0">
+        <var name="status" id="1046754514346706488" />
+        <var name="typeCheckingContext" id="1046754514346706488" />
+        <var name="vp" id="1046754514346706488" />
+      </scope>
+      <unit id="1046754514346706488" at="38,0,41,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_IConditionVarPoint_InferenceRule$LINKS" />
+      <unit id="1046754514346706488" at="42,0,45,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_IConditionVarPoint_InferenceRule$CONCEPTS" />
+      <unit id="1046754514346706488" at="18,0,46,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_IConditionVarPoint_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)/2461897603003141211">
+    <file name="TypesystemDescriptor.java">
+      <node id="2461897603003141211" at="39,5,40,108" concept="7" />
+      <node id="2461897603003141211" at="40,108,41,55" concept="3" />
+      <node id="2461897603003141211" at="38,5,42,5" concept="0" />
+      <scope id="2461897603003141211" at="39,5,41,55">
+        <var name="nonTypesystemRule" id="2461897603003141211" />
+      </scope>
+    </file>
+    <file name="check_IVariabilityAwareArtifact_NonTypesystemRule.java">
+      <node id="2245133457453374683" at="28,117,29,67" concept="9" />
+      <node id="7789675065329035458" at="31,68,32,121" concept="7" />
+      <node id="2461897603003151060" at="34,11,35,70" concept="7" />
+      <node id="2461897603003151060" at="35,70,36,446" concept="7" />
+      <node id="3179086710821424357" at="40,5,41,0" concept="10" />
+      <node id="3179086710821430585" at="41,0,42,96" concept="9" />
+      <node id="3179086710821440746" at="42,96,43,140" concept="7" />
+      <node id="3179086710821469292" at="44,35,45,68" concept="7" />
+      <node id="3179086710821477391" at="47,9,48,68" concept="7" />
+      <node id="3179086710821477391" at="48,68,49,386" concept="7" />
+      <node id="2461897603003141211" at="54,50,55,49" concept="8" />
+      <node id="2461897603003141211" at="57,68,58,102" concept="8" />
+      <node id="2461897603003141211" at="60,30,61,17" concept="8" />
+      <node id="2461897603003141211" at="65,0,66,0" concept="11" trace="name$MnvL" />
+      <node id="2461897603003141211" at="69,0,70,0" concept="11" trace="IVariabilityAwareArtifact$qo" />
+      <node id="2461897603003141211" at="26,0,28,0" concept="1" trace="check_IVariabilityAwareArtifact_NonTypesystemRule#()V" />
+      <node id="2461897603003141211" at="54,0,57,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2461897603003141211" at="57,0,60,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="2461897603003141211" at="60,0,63,0" concept="6" trace="overrides#()Z" />
+      <node id="2461897603003151060" at="33,129,37,11" concept="0" />
+      <node id="3179086710821477391" at="46,36,50,9" concept="0" />
+      <node id="2461897603003143961" at="32,121,38,9" concept="5" />
+      <node id="3179086710821472476" at="45,68,51,7" concept="5" />
+      <node id="7789675065329062053" at="30,139,39,7" concept="5" />
+      <node id="3179086710821465437" at="43,140,52,5" concept="5" />
+      <node id="2461897603003141221" at="29,67,40,5" concept="4" />
+      <node id="2461897603003141211" at="28,0,54,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="2461897603003141211" at="26,62,26,62" />
+      <scope id="2461897603003141211" at="54,50,55,49" />
+      <scope id="2461897603003141211" at="57,68,58,102" />
+      <scope id="2461897603003141211" at="60,30,61,17" />
+      <scope id="2461897603003141211" at="26,0,28,0" />
+      <scope id="2461897603003151060" at="34,11,36,446">
+        <var name="_reporter_2309309498" id="2461897603003151060" />
+        <var name="errorTarget" id="2461897603003151060" />
+      </scope>
+      <scope id="3179086710821477391" at="47,9,49,386">
+        <var name="_reporter_2309309498" id="3179086710821477391" />
+        <var name="errorTarget" id="3179086710821477391" />
+      </scope>
+      <scope id="2461897603003141211" at="54,0,57,0" />
+      <scope id="2461897603003141211" at="57,0,60,0">
+        <var name="argument" id="2461897603003141211" />
+      </scope>
+      <scope id="2461897603003141211" at="60,0,63,0" />
+      <scope id="2461897603003143963" at="33,129,37,11" />
+      <scope id="3179086710821472478" at="46,36,50,9" />
+      <scope id="7789675065329062055" at="31,68,38,9">
+        <var name="targetFM" id="7789675065329035459" />
+      </scope>
+      <scope id="3179086710821465439" at="44,35,51,7">
+        <var name="enclosingIVAA" id="3179086710821469295" />
+      </scope>
+      <scope id="2461897603003141224" at="30,139,39,7" />
+      <scope id="2461897603003141221" at="29,67,40,5">
+        <var name="dn" id="2461897603003141222" />
+      </scope>
+      <scope id="2461897603003141212" at="28,117,52,5">
+        <var name="artifactParent" id="3179086710821440749" />
+      </scope>
+      <scope id="2461897603003141211" at="28,0,54,0">
+        <var name="ivaa" id="2461897603003141211" />
+        <var name="status" id="2461897603003141211" />
+        <var name="typeCheckingContext" id="2461897603003141211" />
+      </scope>
+      <unit id="2461897603003141211" at="64,0,67,0" name="org.iets3.variability.artifacts.base.typesystem.check_IVariabilityAwareArtifact_NonTypesystemRule$PROPS" />
+      <unit id="2461897603003141211" at="68,0,71,0" name="org.iets3.variability.artifacts.base.typesystem.check_IVariabilityAwareArtifact_NonTypesystemRule$CONCEPTS" />
+      <unit id="2461897603003141211" at="25,0,72,0" name="org.iets3.variability.artifacts.base.typesystem.check_IVariabilityAwareArtifact_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)/265702543611741648">
+    <file name="TypesystemDescriptor.java">
+      <node id="265702543611741648" at="35,5,36,97" concept="7" />
+      <node id="265702543611741648" at="36,97,37,47" concept="3" />
+      <node id="265702543611741648" at="34,5,38,5" concept="0" />
+      <scope id="265702543611741648" at="35,5,37,47">
+        <var name="inferenceRule" id="265702543611741648" />
+      </scope>
+    </file>
+    <file name="typeof_IVariabilityAwareArtifact_InferenceRule.java">
+      <node id="265702543611742834" at="23,5,24,46" concept="7" />
+      <node id="265702543611742834" at="24,46,25,212" concept="7" />
+      <node id="265702543611742834" at="25,212,26,344" concept="3" />
+      <node id="265702543611741648" at="29,50,30,49" concept="8" />
+      <node id="265702543611741648" at="32,68,33,102" concept="8" />
+      <node id="265702543611741648" at="35,30,36,17" concept="8" />
+      <node id="265702543611742836" at="38,69,39,71" concept="7" />
+      <node id="265702543611742836" at="39,71,40,50" concept="3" />
+      <node id="265702543611742836" at="40,50,41,26" concept="8" />
+      <node id="265702543611741648" at="45,0,46,0" concept="11" trace="rootFeature$hMQ2" />
+      <node id="265702543611741648" at="46,0,47,0" concept="11" trace="feature$SwK2" />
+      <node id="265702543611741648" at="50,0,51,0" concept="11" trace="IVariabilityAwareArtifact$qo" />
+      <node id="265702543611741648" at="51,0,52,0" concept="11" trace="FeatureType$_L" />
+      <node id="265702543611741648" at="20,0,22,0" concept="1" trace="typeof_IVariabilityAwareArtifact_InferenceRule#()V" />
+      <node id="265702543611741648" at="29,0,32,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="265702543611741648" at="32,0,35,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="265702543611741648" at="35,0,38,0" concept="6" trace="overrides#()Z" />
+      <node id="265702543611742834" at="22,117,27,5" concept="0" />
+      <node id="265702543611742836" at="38,0,43,0" concept="12" trace="createFeatureType_tf7yws_a1a0c0a0b#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="265702543611741648" at="22,0,29,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="265702543611741648" at="20,59,20,59" />
+      <scope id="265702543611741648" at="29,50,30,49" />
+      <scope id="265702543611741648" at="32,68,33,102" />
+      <scope id="265702543611741648" at="35,30,36,17" />
+      <scope id="265702543611741648" at="20,0,22,0" />
+      <scope id="265702543611742834" at="23,5,26,344">
+        <var name="_info_12389875345" id="265702543611742834" />
+        <var name="_nodeToCheck_1029348928467" id="265702543611742834" />
+      </scope>
+      <scope id="265702543611741648" at="29,0,32,0" />
+      <scope id="265702543611741648" at="32,0,35,0">
+        <var name="argument" id="265702543611741648" />
+      </scope>
+      <scope id="265702543611741648" at="35,0,38,0" />
+      <scope id="265702543611742836" at="38,69,41,26">
+        <var name="n0" id="265702543611742836" />
+      </scope>
+      <scope id="265702543611741649" at="22,117,27,5" />
+      <scope id="265702543611742836" at="38,0,43,0">
+        <var name="p0" id="265702543611742836" />
+      </scope>
+      <scope id="265702543611741648" at="22,0,29,0">
+        <var name="ivaa" id="265702543611741648" />
+        <var name="status" id="265702543611741648" />
+        <var name="typeCheckingContext" id="265702543611741648" />
+      </scope>
+      <unit id="265702543611741648" at="44,0,48,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_IVariabilityAwareArtifact_InferenceRule$LINKS" />
+      <unit id="265702543611741648" at="49,0,53,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_IVariabilityAwareArtifact_InferenceRule$CONCEPTS" />
+      <unit id="265702543611741648" at="19,0,54,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_IVariabilityAwareArtifact_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)/265702543613043392">
+    <file name="TypesystemDescriptor.java">
+      <node id="265702543613043392" at="15,5,16,85" concept="7" />
+      <node id="265702543613043392" at="16,85,17,47" concept="3" />
+      <node id="265702543613043392" at="14,5,18,5" concept="0" />
+      <scope id="265702543613043392" at="15,5,17,47">
+        <var name="inferenceRule" id="265702543613043392" />
+      </scope>
+    </file>
+    <file name="typeof_FeatureDecTab_InferenceRule.java">
+      <node id="1206081519717903564" at="19,116,20,134" concept="3" />
+      <node id="265702543613043392" at="22,50,23,37" concept="8" />
+      <node id="265702543613043392" at="25,68,26,102" concept="8" />
+      <node id="265702543613043392" at="28,30,29,17" concept="8" />
+      <node id="265702543613043392" at="33,0,34,0" concept="11" trace="FeatureDecTab$p6" />
+      <node id="265702543613043392" at="17,0,19,0" concept="1" trace="typeof_FeatureDecTab_InferenceRule#()V" />
+      <node id="265702543613043392" at="19,0,22,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="265702543613043392" at="22,0,25,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="265702543613043392" at="25,0,28,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="265702543613043392" at="28,0,31,0" concept="6" trace="overrides#()Z" />
+      <scope id="265702543613043392" at="17,47,17,47" />
+      <scope id="265702543613043393" at="19,116,20,134" />
+      <scope id="265702543613043392" at="22,50,23,37" />
+      <scope id="265702543613043392" at="25,68,26,102" />
+      <scope id="265702543613043392" at="28,30,29,17" />
+      <scope id="265702543613043392" at="17,0,19,0" />
+      <scope id="265702543613043392" at="19,0,22,0">
+        <var name="fdt" id="265702543613043392" />
+        <var name="status" id="265702543613043392" />
+        <var name="typeCheckingContext" id="265702543613043392" />
+      </scope>
+      <scope id="265702543613043392" at="22,0,25,0" />
+      <scope id="265702543613043392" at="25,0,28,0">
+        <var name="argument" id="265702543613043392" />
+      </scope>
+      <scope id="265702543613043392" at="28,0,31,0" />
+      <unit id="265702543613043392" at="32,0,35,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_FeatureDecTab_InferenceRule$CONCEPTS" />
+      <unit id="265702543613043392" at="16,0,36,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_FeatureDecTab_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)/3540784588236991815">
+    <file name="TypesystemDescriptor.java">
+      <node id="3540784588236991815" at="27,5,28,100" concept="7" />
+      <node id="3540784588236991815" at="28,100,29,47" concept="3" />
+      <node id="3540784588236991815" at="26,5,30,5" concept="0" />
+      <scope id="3540784588236991815" at="27,5,29,47">
+        <var name="inferenceRule" id="3540784588236991815" />
+      </scope>
+    </file>
+    <file name="typeof_GlobalFeatureVariableRefExpr_InferenceRule.java">
+      <node id="3540784588236991997" at="21,5,22,48" concept="7" />
+      <node id="3540784588236991997" at="22,48,23,213" concept="7" />
+      <node id="3540784588236991997" at="23,213,24,458" concept="3" />
+      <node id="3540784588236991815" at="27,50,28,52" concept="8" />
+      <node id="3540784588236991815" at="30,68,31,102" concept="8" />
+      <node id="3540784588236991815" at="33,30,34,17" concept="8" />
+      <node id="3540784588236991815" at="38,0,39,0" concept="11" trace="featureVar$YlqX" />
+      <node id="3540784588236991815" at="42,0,43,0" concept="11" trace="GlobalFeatureVariableRefExpr$m1" />
+      <node id="3540784588236991815" at="18,0,20,0" concept="1" trace="typeof_GlobalFeatureVariableRefExpr_InferenceRule#()V" />
+      <node id="3540784588236991815" at="27,0,30,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3540784588236991815" at="30,0,33,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3540784588236991815" at="33,0,36,0" concept="6" trace="overrides#()Z" />
+      <node id="3540784588236991997" at="20,119,25,5" concept="0" />
+      <node id="3540784588236991815" at="20,0,27,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="3540784588236991815" at="18,62,18,62" />
+      <scope id="3540784588236991815" at="27,50,28,52" />
+      <scope id="3540784588236991815" at="30,68,31,102" />
+      <scope id="3540784588236991815" at="33,30,34,17" />
+      <scope id="3540784588236991815" at="18,0,20,0" />
+      <scope id="3540784588236991997" at="21,5,24,458">
+        <var name="_info_12389875345" id="3540784588236991997" />
+        <var name="_nodeToCheck_1029348928467" id="3540784588236991997" />
+      </scope>
+      <scope id="3540784588236991815" at="27,0,30,0" />
+      <scope id="3540784588236991815" at="30,0,33,0">
+        <var name="argument" id="3540784588236991815" />
+      </scope>
+      <scope id="3540784588236991815" at="33,0,36,0" />
+      <scope id="3540784588236991816" at="20,119,25,5" />
+      <scope id="3540784588236991815" at="20,0,27,0">
+        <var name="gfv_re" id="3540784588236991815" />
+        <var name="status" id="3540784588236991815" />
+        <var name="typeCheckingContext" id="3540784588236991815" />
+      </scope>
+      <unit id="3540784588236991815" at="37,0,40,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_GlobalFeatureVariableRefExpr_InferenceRule$LINKS" />
+      <unit id="3540784588236991815" at="41,0,44,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_GlobalFeatureVariableRefExpr_InferenceRule$CONCEPTS" />
+      <unit id="3540784588236991815" at="17,0,45,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_GlobalFeatureVariableRefExpr_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)/5246522405060541375">
+    <file name="TypesystemDescriptor.java">
+      <node id="5246522405060541375" at="23,5,24,98" concept="7" />
+      <node id="5246522405060541375" at="24,98,25,47" concept="3" />
+      <node id="5246522405060541375" at="22,5,26,5" concept="0" />
+      <scope id="5246522405060541375" at="23,5,25,47">
+        <var name="inferenceRule" id="5246522405060541375" />
+      </scope>
+    </file>
+    <file name="typeof_FeatureModelGlobalVariable_InferenceRule.java">
+      <node id="5818620966578877898" at="21,5,22,90" concept="7" />
+      <node id="5818620966578877898" at="22,90,23,213" concept="7" />
+      <node id="5818620966578877898" at="23,213,24,473" concept="3" />
+      <node id="5246522405060542757" at="26,5,27,46" concept="7" />
+      <node id="5246522405060542757" at="27,46,28,213" concept="7" />
+      <node id="5246522405060542757" at="28,213,29,450" concept="3" />
+      <node id="5246522405060541375" at="32,50,33,50" concept="8" />
+      <node id="5246522405060541375" at="35,68,36,102" concept="8" />
+      <node id="5246522405060541375" at="38,30,39,17" concept="8" />
+      <node id="5246522405060541375" at="43,0,44,0" concept="11" trace="init$OAbQ" />
+      <node id="5246522405060541375" at="44,0,45,0" concept="11" trace="type$Owkt" />
+      <node id="5246522405060541375" at="48,0,49,0" concept="11" trace="FeatureModelGlobalVariable$FO" />
+      <node id="5246522405060541375" at="18,0,20,0" concept="1" trace="typeof_FeatureModelGlobalVariable_InferenceRule#()V" />
+      <node id="5246522405060541375" at="32,0,35,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5246522405060541375" at="35,0,38,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5246522405060541375" at="38,0,41,0" concept="6" trace="overrides#()Z" />
+      <node id="5818620966578877898" at="20,117,25,5" concept="0" />
+      <node id="5246522405060542757" at="25,5,30,5" concept="0" />
+      <node id="5246522405060541375" at="20,0,32,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5246522405060541375" at="18,60,18,60" />
+      <scope id="5246522405060541375" at="32,50,33,50" />
+      <scope id="5246522405060541375" at="35,68,36,102" />
+      <scope id="5246522405060541375" at="38,30,39,17" />
+      <scope id="5246522405060541375" at="18,0,20,0" />
+      <scope id="5818620966578877898" at="21,5,24,473">
+        <var name="_info_12389875345" id="5818620966578877898" />
+        <var name="_nodeToCheck_1029348928467" id="5818620966578877898" />
+      </scope>
+      <scope id="5246522405060542757" at="26,5,29,450">
+        <var name="_info_12389875345" id="5246522405060542757" />
+        <var name="_nodeToCheck_1029348928467" id="5246522405060542757" />
+      </scope>
+      <scope id="5246522405060541375" at="32,0,35,0" />
+      <scope id="5246522405060541375" at="35,0,38,0">
+        <var name="argument" id="5246522405060541375" />
+      </scope>
+      <scope id="5246522405060541375" at="38,0,41,0" />
+      <scope id="5246522405060541376" at="20,117,30,5" />
+      <scope id="5246522405060541375" at="20,0,32,0">
+        <var name="fmgv" id="5246522405060541375" />
+        <var name="status" id="5246522405060541375" />
+        <var name="typeCheckingContext" id="5246522405060541375" />
+      </scope>
+      <unit id="5246522405060541375" at="47,0,50,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_FeatureModelGlobalVariable_InferenceRule$CONCEPTS" />
+      <unit id="5246522405060541375" at="42,0,46,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_FeatureModelGlobalVariable_InferenceRule$LINKS" />
+      <unit id="5246522405060541375" at="17,0,51,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_FeatureModelGlobalVariable_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)/5246522405060551523">
+    <file name="TypesystemDescriptor.java">
+      <node id="5246522405060551523" at="19,5,20,104" concept="7" />
+      <node id="5246522405060551523" at="20,104,21,47" concept="3" />
+      <node id="5246522405060551523" at="18,5,22,5" concept="0" />
+      <scope id="5246522405060551523" at="19,5,21,47">
+        <var name="inferenceRule" id="5246522405060551523" />
+      </scope>
+    </file>
+    <file name="typeof_FeatureModelConfigurationRefExpr_InferenceRule.java">
+      <node id="5246522405060551732" at="22,5,23,48" concept="7" />
+      <node id="5246522405060551732" at="23,48,24,213" concept="7" />
+      <node id="5246522405060551732" at="24,213,25,402" concept="3" />
+      <node id="5246522405060551523" at="28,50,29,56" concept="8" />
+      <node id="5246522405060551523" at="31,68,32,102" concept="8" />
+      <node id="5246522405060551523" at="34,30,35,17" concept="8" />
+      <node id="5246522405060551771" at="37,69,38,71" concept="7" />
+      <node id="5246522405060551771" at="38,71,39,50" concept="3" />
+      <node id="5246522405060551771" at="39,50,40,26" concept="8" />
+      <node id="5246522405060551523" at="44,0,45,0" concept="11" trace="featureConfig$pJ5X" />
+      <node id="5246522405060551523" at="45,0,46,0" concept="11" trace="targetFeature$16lA" />
+      <node id="5246522405060551523" at="46,0,47,0" concept="11" trace="feature$SwK2" />
+      <node id="5246522405060551523" at="50,0,51,0" concept="11" trace="FeatureModelConfigurationRefExpr$9n" />
+      <node id="5246522405060551523" at="51,0,52,0" concept="11" trace="FeatureType$_L" />
+      <node id="5246522405060551523" at="19,0,21,0" concept="1" trace="typeof_FeatureModelConfigurationRefExpr_InferenceRule#()V" />
+      <node id="5246522405060551523" at="28,0,31,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5246522405060551523" at="31,0,34,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5246522405060551523" at="34,0,37,0" concept="6" trace="overrides#()Z" />
+      <node id="5246522405060551732" at="21,119,26,5" concept="0" />
+      <node id="5246522405060551771" at="37,0,42,0" concept="12" trace="createFeatureType_c8pswk_a1a0c0a0b#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5246522405060551523" at="21,0,28,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5246522405060551523" at="19,66,19,66" />
+      <scope id="5246522405060551523" at="28,50,29,56" />
+      <scope id="5246522405060551523" at="31,68,32,102" />
+      <scope id="5246522405060551523" at="34,30,35,17" />
+      <scope id="5246522405060551523" at="19,0,21,0" />
+      <scope id="5246522405060551732" at="22,5,25,402">
+        <var name="_info_12389875345" id="5246522405060551732" />
+        <var name="_nodeToCheck_1029348928467" id="5246522405060551732" />
+      </scope>
+      <scope id="5246522405060551523" at="28,0,31,0" />
+      <scope id="5246522405060551523" at="31,0,34,0">
+        <var name="argument" id="5246522405060551523" />
+      </scope>
+      <scope id="5246522405060551523" at="34,0,37,0" />
+      <scope id="5246522405060551771" at="37,69,40,26">
+        <var name="n0" id="5246522405060551771" />
+      </scope>
+      <scope id="5246522405060551524" at="21,119,26,5" />
+      <scope id="5246522405060551771" at="37,0,42,0">
+        <var name="p0" id="5246522405060551771" />
+      </scope>
+      <scope id="5246522405060551523" at="21,0,28,0">
+        <var name="fmc_re" id="5246522405060551523" />
+        <var name="status" id="5246522405060551523" />
+        <var name="typeCheckingContext" id="5246522405060551523" />
+      </scope>
+      <unit id="5246522405060551523" at="49,0,53,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_FeatureModelConfigurationRefExpr_InferenceRule$CONCEPTS" />
+      <unit id="5246522405060551523" at="43,0,48,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_FeatureModelConfigurationRefExpr_InferenceRule$LINKS" />
+      <unit id="5246522405060551523" at="18,0,54,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_FeatureModelConfigurationRefExpr_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)/5454343861691832573">
+    <file name="TypesystemDescriptor.java">
+      <node id="5454343861691832573" at="11,5,12,98" concept="7" />
+      <node id="5454343861691832573" at="12,98,13,47" concept="3" />
+      <node id="5454343861691832573" at="10,33,14,5" concept="0" />
+      <scope id="5454343861691832573" at="11,5,13,47">
+        <var name="inferenceRule" id="5454343861691832573" />
+      </scope>
+    </file>
+    <file name="typeof_ArtifactRootFeatureRefExpr_InferenceRule.java">
+      <node id="5454343861691833217" at="21,5,22,68" concept="7" />
+      <node id="5454343861691833217" at="22,68,23,213" concept="7" />
+      <node id="5454343861691833217" at="23,213,24,474" concept="3" />
+      <node id="5454343861691832573" at="27,50,28,50" concept="8" />
+      <node id="5454343861691832573" at="30,68,31,102" concept="8" />
+      <node id="5454343861691832573" at="33,30,34,17" concept="8" />
+      <node id="5454343861691832573" at="38,0,39,0" concept="11" trace="context$4gIx" />
+      <node id="5454343861691832573" at="42,0,43,0" concept="11" trace="ArtifactRootFeatureRefExpr$aP" />
+      <node id="5454343861691832573" at="18,0,20,0" concept="1" trace="typeof_ArtifactRootFeatureRefExpr_InferenceRule#()V" />
+      <node id="5454343861691832573" at="27,0,30,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5454343861691832573" at="30,0,33,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5454343861691832573" at="33,0,36,0" concept="6" trace="overrides#()Z" />
+      <node id="5454343861691833217" at="20,139,25,5" concept="0" />
+      <node id="5454343861691832573" at="20,0,27,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5454343861691832573" at="18,60,18,60" />
+      <scope id="5454343861691832573" at="27,50,28,50" />
+      <scope id="5454343861691832573" at="30,68,31,102" />
+      <scope id="5454343861691832573" at="33,30,34,17" />
+      <scope id="5454343861691832573" at="18,0,20,0" />
+      <scope id="5454343861691833217" at="21,5,24,474">
+        <var name="_info_12389875345" id="5454343861691833217" />
+        <var name="_nodeToCheck_1029348928467" id="5454343861691833217" />
+      </scope>
+      <scope id="5454343861691832573" at="27,0,30,0" />
+      <scope id="5454343861691832573" at="30,0,33,0">
+        <var name="argument" id="5454343861691832573" />
+      </scope>
+      <scope id="5454343861691832573" at="33,0,36,0" />
+      <scope id="5454343861691832574" at="20,139,25,5" />
+      <scope id="5454343861691832573" at="20,0,27,0">
+        <var name="artifactRootFeatureRefExpr" id="5454343861691832573" />
+        <var name="status" id="5454343861691832573" />
+        <var name="typeCheckingContext" id="5454343861691832573" />
+      </scope>
+      <unit id="5454343861691832573" at="37,0,40,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_ArtifactRootFeatureRefExpr_InferenceRule$LINKS" />
+      <unit id="5454343861691832573" at="41,0,44,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_ArtifactRootFeatureRefExpr_InferenceRule$CONCEPTS" />
+      <unit id="5454343861691832573" at="17,0,45,0" name="org.iets3.variability.artifacts.base.typesystem.typeof_ArtifactRootFeatureRefExpr_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)/6479604108482187345">
+    <file name="TypesystemDescriptor.java">
+      <node id="6479604108482187345" at="43,5,44,109" concept="7" />
+      <node id="6479604108482187345" at="44,109,45,55" concept="3" />
+      <node id="6479604108482187345" at="42,5,46,5" concept="0" />
+      <scope id="6479604108482187345" at="43,5,45,55">
+        <var name="nonTypesystemRule" id="6479604108482187345" />
+      </scope>
+    </file>
+    <file name="featureDecTabOnlyOneFeatureModel_NonTypesystemRule.java">
+      <node id="6479604108482190840" at="27,126,28,127" concept="7" />
+      <node id="8272256067272746095" at="31,100,32,19" concept="2" />
+      <node id="6479604108482197028" at="34,9,35,68" concept="7" />
+      <node id="6479604108482197028" at="35,68,36,267" concept="7" />
+      <node id="6479604108482187345" at="41,50,42,37" concept="8" />
+      <node id="6479604108482187345" at="44,68,45,102" concept="8" />
+      <node id="6479604108482187345" at="47,30,48,17" concept="8" />
+      <node id="6479604108482187345" at="52,0,53,0" concept="11" trace="DotExpression$jp" />
+      <node id="6479604108482187345" at="53,0,54,0" concept="11" trace="FeatureDecTab$p6" />
+      <node id="6479604108482187345" at="57,0,58,0" concept="11" trace="contents$oelO" />
+      <node id="6479604108482187345" at="25,0,27,0" concept="1" trace="featureDecTabOnlyOneFeatureModel_NonTypesystemRule#()V" />
+      <node id="8272256067272739167" at="30,228,33,9" concept="5" />
+      <node id="6479604108482187345" at="41,0,44,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6479604108482187345" at="44,0,47,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6479604108482187345" at="47,0,50,0" concept="6" trace="overrides#()Z" />
+      <node id="6479604108482197028" at="33,9,37,9" concept="0" />
+      <node id="6479604108482197045" at="29,61,38,7" concept="4" />
+      <node id="6479604108482187352" at="28,127,39,5" concept="5" />
+      <node id="6479604108482187345" at="27,0,41,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6479604108482187345" at="25,63,25,63" />
+      <scope id="8272256067272739169" at="31,100,32,19" />
+      <scope id="6479604108482187345" at="41,50,42,37" />
+      <scope id="6479604108482187345" at="44,68,45,102" />
+      <scope id="6479604108482187345" at="47,30,48,17" />
+      <scope id="6479604108482187345" at="25,0,27,0" />
+      <scope id="6479604108482197028" at="34,9,36,267">
+        <var name="_reporter_2309309498" id="6479604108482197028" />
+        <var name="errorTarget" id="6479604108482197028" />
+      </scope>
+      <scope id="6479604108482187345" at="41,0,44,0" />
+      <scope id="6479604108482187345" at="44,0,47,0">
+        <var name="argument" id="6479604108482187345" />
+      </scope>
+      <scope id="6479604108482187345" at="47,0,50,0" />
+      <scope id="6479604108482197051" at="30,228,37,9" />
+      <scope id="6479604108482187354" at="29,61,38,7" />
+      <scope id="6479604108482197045" at="29,61,38,7">
+        <var name="t" id="6479604108482197047" />
+      </scope>
+      <scope id="6479604108482187346" at="27,126,39,5">
+        <var name="featureModelsOf" id="6479604108482190841" />
+      </scope>
+      <scope id="6479604108482187345" at="27,0,41,0">
+        <var name="featureDecTab" id="6479604108482187345" />
+        <var name="status" id="6479604108482187345" />
+        <var name="typeCheckingContext" id="6479604108482187345" />
+      </scope>
+      <unit id="6479604108482187345" at="56,0,59,0" name="org.iets3.variability.artifacts.base.typesystem.featureDecTabOnlyOneFeatureModel_NonTypesystemRule$LINKS" />
+      <unit id="6479604108482187345" at="51,0,55,0" name="org.iets3.variability.artifacts.base.typesystem.featureDecTabOnlyOneFeatureModel_NonTypesystemRule$CONCEPTS" />
+      <unit id="6479604108482187345" at="24,0,60,0" name="org.iets3.variability.artifacts.base.typesystem.featureDecTabOnlyOneFeatureModel_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

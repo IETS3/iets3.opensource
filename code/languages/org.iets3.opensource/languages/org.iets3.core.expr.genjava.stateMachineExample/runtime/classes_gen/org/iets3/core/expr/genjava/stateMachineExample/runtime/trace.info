@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root nodeRef="r:df8c8cfe-6ded-4712-b12b-d009ae7da92b(org.iets3.core.expr.genjava.stateMachineExample.runtime)/5544528087567993045">
+    <file name="StateMachine.java">
+      <node id="5544528087567993183" at="10,0,11,0" concept="2" trace="startState" />
+      <node id="5544528087567993240" at="11,0,12,0" concept="2" trace="states" />
+      <node id="5544528087567993392" at="13,41,14,33" concept="1" />
+      <node id="5544528087567996581" at="14,33,15,68" concept="1" />
+      <node id="5544528087568005039" at="18,32,19,27" concept="6" />
+      <node id="5544528087568003140" at="18,0,21,0" concept="4" trace="getStartState#()Lorg/iets3/core/expr/genjava/stateMachineExample/runtime/State;" />
+      <node id="5544528087567993299" at="13,0,17,0" concept="0" trace="StateMachine#(Lorg/iets3/core/expr/genjava/stateMachineExample/runtime/State;)V" />
+      <scope id="5544528087568003144" at="18,32,19,27" />
+      <scope id="5544528087567993303" at="13,41,15,68" />
+      <scope id="5544528087568003140" at="18,0,21,0" />
+      <scope id="5544528087567993299" at="13,0,17,0">
+        <var name="startState" id="5544528087567993331" />
+      </scope>
+      <unit id="5544528087567993045" at="9,0,22,0" name="org.iets3.core.expr.genjava.stateMachineExample.runtime.StateMachine" />
+    </file>
+  </root>
+  <root nodeRef="r:df8c8cfe-6ded-4712-b12b-d009ae7da92b(org.iets3.core.expr.genjava.stateMachineExample.runtime)/5544528087567993077">
+    <file name="State.java">
+      <node id="5544528087568007130" at="11,0,12,0" concept="2" trace="transitions" />
+      <node id="5544528087568007269" at="13,18,14,73" concept="1" />
+      <node id="5544528087568014502" at="17,66,18,60" concept="1" />
+      <node id="5544528087568022681" at="21,77,22,90" concept="5" />
+      <node id="5544528087568033613" at="23,30,24,18" concept="6" />
+      <node id="5544528087568035552" at="25,5,26,23" concept="6" />
+      <node id="5544528087568007228" at="13,0,16,0" concept="0" trace="State#()V" />
+      <node id="5544528087568013917" at="17,0,20,0" concept="4" trace="addTransition#(Ljava/lang/String;Lorg/iets3/core/expr/genjava/stateMachineExample/runtime/Transition;)V" />
+      <node id="5544528087568028221" at="22,90,25,5" concept="3" />
+      <node id="5544528087568020950" at="21,0,28,0" concept="4" trace="fireTransition#(Ljava/lang/String;Ljava/util/Map;)Lorg/iets3/core/expr/genjava/stateMachineExample/runtime/State;" />
+      <scope id="5544528087568007232" at="13,18,14,73" />
+      <scope id="5544528087568013920" at="17,66,18,60" />
+      <scope id="5544528087568028223" at="23,30,24,18" />
+      <scope id="5544528087568007228" at="13,0,16,0" />
+      <scope id="5544528087568013917" at="17,0,20,0">
+        <var name="event" id="5544528087568014102" />
+        <var name="transition" id="5544528087568014298" />
+      </scope>
+      <scope id="5544528087568020953" at="21,77,26,23">
+        <var name="targetState" id="5544528087568022682" />
+      </scope>
+      <scope id="5544528087568020950" at="21,0,28,0">
+        <var name="event" id="5544528087568021472" />
+        <var name="parameters" id="5544528087568021980" />
+      </scope>
+      <unit id="5544528087567993077" at="9,0,29,0" name="org.iets3.core.expr.genjava.stateMachineExample.runtime.State" />
+    </file>
+  </root>
+  <root nodeRef="r:df8c8cfe-6ded-4712-b12b-d009ae7da92b(org.iets3.core.expr.genjava.stateMachineExample.runtime)/5544528087567993103">
+    <file name="Transition.java">
+      <node id="5544528087568037853" at="9,0,10,0" concept="2" trace="targetState" />
+      <node id="5544528087568038089" at="11,40,12,35" concept="1" />
+      <node id="5544528087568025174" at="15,0,16,0" concept="4" trace="fireEvent#(Ljava/util/Map;)Lorg/iets3/core/expr/genjava/stateMachineExample/runtime/State;" />
+      <node id="5544528087568037951" at="11,0,14,0" concept="0" trace="Transition#(Lorg/iets3/core/expr/genjava/stateMachineExample/runtime/State;)V" />
+      <scope id="5544528087568037955" at="11,40,12,35" />
+      <scope id="5544528087568025174" at="15,0,16,0">
+        <var name="Parameter" id="5544528087568025201" />
+      </scope>
+      <scope id="5544528087568037951" at="11,0,14,0">
+        <var name="targetState" id="5544528087568037998" />
+      </scope>
+      <unit id="5544528087567993103" at="7,0,17,0" name="org.iets3.core.expr.genjava.stateMachineExample.runtime.Transition" />
+    </file>
+  </root>
+</debug-info>
+
