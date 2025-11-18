@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="43ua0xw7ihlnhyk1i3djowg2cnv5fdv">
+  <files names="BehaviorAspectDescriptor.java:EthernetProtocol__BehaviorDescriptor.java:IMapTarget__BehaviorDescriptor.java:IProtocolMapContainer__BehaviorDescriptor.java:IProtocolMapRef__BehaviorDescriptor.java:IProtocoled__BehaviorDescriptor.java:ISpecificMapContext__BehaviorDescriptor.java:InterfaceTarget__BehaviorDescriptor.java:ProtocolLibraryRef__BehaviorDescriptor.java:ProtocolMapCatalog__BehaviorDescriptor.java:ProtocolMapRef__BehaviorDescriptor.java:ProtocolMapSection__BehaviorDescriptor.java:ProtocolMap__BehaviorDescriptor.java:Protocol__BehaviorDescriptor.java:ProtocoledComponentMappingAttr__BehaviorDescriptor.java:SomeIPProtocol__BehaviorDescriptor.java:TCPProtocol__BehaviorDescriptor.java:UDPProtocol__BehaviorDescriptor.java" />
+</product>
+

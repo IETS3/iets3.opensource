@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="org.iets3.variability.artifacts.typesystem.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:08ede2cc-e5b7-4489-9a45-7e2e20d869d7(org.iets3.variability.artifacts.typesystem.constraints)/4776228038280570122">
+    <file name="ForAllVariantsCheck_Constraints.java">
+      <node id="4776228038280570122" at="21,44,22,43" concept="9" />
+      <node id="4776228038280570122" at="29,127,30,128" concept="4" />
+      <node id="4776228038280570122" at="30,128,31,0" concept="6" />
+      <node id="4776228038280570122" at="32,55,33,71" concept="1" />
+      <node id="4776228038280570122" at="34,9,35,0" concept="6" />
+      <node id="4776228038280570122" at="35,0,36,22" concept="5" />
+      <node id="6050756002698128770" at="40,128,41,105" concept="4" />
+      <node id="6050756002698128780" at="42,25,43,19" concept="5" />
+      <node id="6050756002699302222" at="44,5,45,130" concept="5" />
+      <node id="4776228038280570122" at="47,0,48,0" concept="7" trace="canBeChildBreakingPoint" />
+      <node id="4776228038280570122" at="50,0,51,0" concept="7" trace="ForAllVariantsCheck$Oi" />
+      <node id="4776228038280570122" at="51,0,52,0" concept="7" trace="NonTypesystemRule$um" />
+      <node id="4776228038280570122" at="52,0,53,0" concept="7" trace="ConceptReference$14" />
+      <node id="4776228038280570122" at="56,0,57,0" concept="7" trace="applicableNode$Ro4C" />
+      <node id="4776228038280570122" at="21,0,24,0" concept="0" trace="ForAllVariantsCheck_Constraints#()V" />
+      <node id="4776228038280570122" at="31,0,34,9" concept="2" />
+      <node id="6050756002698128778" at="41,105,44,5" concept="2" />
+      <node id="4776228038280570122" at="40,0,47,0" concept="8" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="4776228038280570122" at="28,0,38,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="4776228038280570122" at="26,103,38,6" concept="5" />
+      <node id="4776228038280570122" at="25,0,40,0" concept="3" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="4776228038280570122" at="21,44,22,43" />
+      <scope id="4776228038280570122" at="32,55,33,71" />
+      <scope id="6050756002698128779" at="42,25,43,19" />
+      <scope id="4776228038280570122" at="21,0,24,0" />
+      <scope id="4776228038280570124" at="40,128,45,130">
+        <var name="rule" id="6050756002698128771" />
+      </scope>
+      <scope id="4776228038280570122" at="29,127,36,22">
+        <var name="result" id="4776228038280570122" />
+      </scope>
+      <scope id="4776228038280570122" at="40,0,47,0">
+        <var name="childConcept" id="4776228038280570122" />
+        <var name="link" id="4776228038280570122" />
+        <var name="node" id="4776228038280570122" />
+        <var name="parentNode" id="4776228038280570122" />
+      </scope>
+      <scope id="4776228038280570122" at="28,0,38,0">
+        <var name="checkingNodeContext" id="4776228038280570122" />
+        <var name="context" id="4776228038280570122" />
+      </scope>
+      <scope id="4776228038280570122" at="26,103,38,6" />
+      <scope id="4776228038280570122" at="25,0,40,0" />
+      <unit id="4776228038280570122" at="55,0,58,0" name="org.iets3.variability.artifacts.typesystem.constraints.ForAllVariantsCheck_Constraints$LINKS" />
+      <unit id="4776228038280570122" at="49,0,54,0" name="org.iets3.variability.artifacts.typesystem.constraints.ForAllVariantsCheck_Constraints$CONCEPTS" />
+      <unit id="4776228038280570122" at="27,15,38,5" name="org.iets3.variability.artifacts.typesystem.constraints.ForAllVariantsCheck_Constraints$1" />
+      <unit id="4776228038280570122" at="20,0,59,0" name="org.iets3.variability.artifacts.typesystem.constraints.ForAllVariantsCheck_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

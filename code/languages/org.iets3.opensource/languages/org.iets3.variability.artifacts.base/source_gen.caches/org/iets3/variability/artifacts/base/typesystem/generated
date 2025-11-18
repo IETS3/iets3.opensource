@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="64roi5337hrxw8wrzkor9ocz1a3cyhg">
+  <files names="TypesystemDescriptor.java:check_IVariabilityAwareArtifact_NonTypesystemRule.java:featureDecTabOnlyOneFeatureModel_NonTypesystemRule.java:typeof_ArtifactRootFeatureRefExpr_InferenceRule.java:typeof_FeatureDecTab_InferenceRule.java:typeof_FeatureModelConfigurationRefExpr_InferenceRule.java:typeof_FeatureModelGlobalVariable_InferenceRule.java:typeof_GlobalFeatureVariableRefExpr_InferenceRule.java:typeof_IConditionVarPoint_InferenceRule.java:typeof_IVariabilityAwareArtifact_InferenceRule.java" />
+</product>
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="org.iets3.variability.artifacts.baseline.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:81492c2b-1dc0-4500-afad-8a8904f58aa7(org.iets3.variability.artifacts.baseline.typesystem)/5678173081851963599">
+    <file name="TypesystemDescriptor.java">
+      <node id="5678173081851963599" at="10,5,11,103" concept="5" />
+      <node id="5678173081851963599" at="11,103,12,55" concept="2" />
+      <node id="5678173081851963599" at="9,33,13,5" concept="0" />
+      <scope id="5678173081851963599" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="5678173081851963599" />
+      </scope>
+    </file>
+    <file name="check_HundredPercentConfig_NonTypesystemRule.java">
+      <node id="5678173081852837437" at="25,133,26,86" concept="5" />
+      <node id="5678173081852872675" at="26,86,27,227" concept="5" />
+      <node id="5678173081852845024" at="27,227,28,0" concept="7" />
+      <node id="2862069730425770781" at="29,36,30,64" concept="5" />
+      <node id="2862069730425770781" at="30,64,31,352" concept="5" />
+      <node id="5678173081851963599" at="34,50,35,45" concept="6" />
+      <node id="5678173081851963599" at="37,68,38,102" concept="6" />
+      <node id="5678173081851963599" at="40,30,41,17" concept="6" />
+      <node id="5678173081851963599" at="45,0,46,0" concept="8" trace="VariantBaselineConfig$KI" />
+      <node id="5678173081851963599" at="23,0,25,0" concept="1" trace="check_HundredPercentConfig_NonTypesystemRule#()V" />
+      <node id="5678173081851963599" at="34,0,37,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5678173081851963599" at="37,0,40,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5678173081851963599" at="40,0,43,0" concept="4" trace="overrides#()Z" />
+      <node id="2862069730425770781" at="28,0,32,5" concept="3" />
+      <node id="5678173081851963599" at="25,0,34,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5678173081851963599" at="23,57,23,57" />
+      <scope id="5678173081851963599" at="34,50,35,45" />
+      <scope id="5678173081851963599" at="37,68,38,102" />
+      <scope id="5678173081851963599" at="40,30,41,17" />
+      <scope id="5678173081851963599" at="23,0,25,0" />
+      <scope id="2862069730425770781" at="29,36,31,352">
+        <var name="_reporter_2309309498" id="2862069730425770781" />
+        <var name="errorTarget" id="2862069730425770781" />
+      </scope>
+      <scope id="5678173081851963599" at="34,0,37,0" />
+      <scope id="5678173081851963599" at="37,0,40,0">
+        <var name="argument" id="5678173081851963599" />
+      </scope>
+      <scope id="5678173081851963599" at="40,0,43,0" />
+      <scope id="5678173081851963600" at="25,133,32,5">
+        <var name="instancesInModule" id="5678173081852872676" />
+        <var name="models" id="5678173081852837438" />
+      </scope>
+      <scope id="5678173081851963599" at="25,0,34,0">
+        <var name="hundredPercentConfig" id="5678173081851963599" />
+        <var name="status" id="5678173081851963599" />
+        <var name="typeCheckingContext" id="5678173081851963599" />
+      </scope>
+      <unit id="5678173081851963599" at="44,0,47,0" name="org.iets3.variability.artifacts.baseline.typesystem.check_HundredPercentConfig_NonTypesystemRule$CONCEPTS" />
+      <unit id="5678173081851963599" at="22,0,48,0" name="org.iets3.variability.artifacts.baseline.typesystem.check_HundredPercentConfig_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

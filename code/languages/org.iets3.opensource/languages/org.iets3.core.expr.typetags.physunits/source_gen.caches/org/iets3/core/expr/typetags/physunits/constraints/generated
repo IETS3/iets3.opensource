@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-c09znieti0rr3arr8ihf2zxoq567n7r">
+  <files names="ConstraintsAspectDescriptor.java:ConversionRule_Constraints.java:ConversionSpecifier_Constraints.java:ConvertExpression_Constraints.java:ConvertToTarget_Constraints.java:DimensionReference_Constraints.java:Exponent_Constraints.java:IUnit_Constraints.java:QuantityBaseType_Constraints.java:QuantityReference_Constraints.java:QuantitySpecification_Constraints.java:Quantity_Constraints.java:UnitReference_Constraints.java:Unit_Constraints.java:ValExpression_Constraints.java" />
+</product>
+

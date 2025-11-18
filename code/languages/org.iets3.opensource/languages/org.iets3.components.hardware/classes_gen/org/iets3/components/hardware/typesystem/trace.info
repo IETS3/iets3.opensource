@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="9,0,45,0" name="org.iets3.components.hardware.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/3445907953729920881">
+    <file name="TypesystemDescriptor.java">
+      <node id="3445907953729920881" at="15,5,16,83" concept="6" />
+      <node id="3445907953729920881" at="16,83,17,47" concept="2" />
+      <node id="3445907953729920881" at="14,5,18,5" concept="0" />
+      <scope id="3445907953729920881" at="15,5,17,47">
+        <var name="inferenceRule" id="3445907953729920881" />
+      </scope>
+    </file>
+    <file name="typeof_BusPortType_InferenceRule.java">
+      <node id="3445907953729922956" at="24,5,25,53" concept="6" />
+      <node id="3445907953729922956" at="25,53,26,206" concept="6" />
+      <node id="3445907953729922956" at="26,206,27,430" concept="2" />
+      <node id="3445907953729920881" at="30,50,31,35" concept="7" />
+      <node id="3445907953729920881" at="33,68,34,102" concept="7" />
+      <node id="3445907953729920881" at="36,30,37,17" concept="7" />
+      <node id="3445907953729922979" at="39,79,40,71" concept="6" />
+      <node id="3445907953729922979" at="40,71,41,53" concept="2" />
+      <node id="3445907953729922979" at="41,53,42,84" concept="2" />
+      <node id="3445907953729922979" at="42,84,43,26" concept="7" />
+      <node id="3445907953729920881" at="47,0,48,0" concept="9" trace="busType_old$TIk" />
+      <node id="3445907953729920881" at="48,0,49,0" concept="9" trace="busType$HmsX" />
+      <node id="3445907953729920881" at="52,0,53,0" concept="9" trace="BusPortType$60" />
+      <node id="3445907953729920881" at="53,0,54,0" concept="9" trace="AbstractBusType$uY" />
+      <node id="3445907953729920881" at="21,0,23,0" concept="1" trace="typeof_BusPortType_InferenceRule#()V" />
+      <node id="3445907953729920881" at="30,0,33,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3445907953729920881" at="33,0,36,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3445907953729920881" at="36,0,39,0" concept="5" trace="overrides#()Z" />
+      <node id="3445907953729922956" at="23,124,28,5" concept="0" />
+      <node id="3445907953729922979" at="39,0,45,0" concept="10" trace="createBusPortType_kilwg1_a1a0c0a0b#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3445907953729920881" at="23,0,30,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="3445907953729920881" at="21,45,21,45" />
+      <scope id="3445907953729920881" at="30,50,31,35" />
+      <scope id="3445907953729920881" at="33,68,34,102" />
+      <scope id="3445907953729920881" at="36,30,37,17" />
+      <scope id="3445907953729920881" at="21,0,23,0" />
+      <scope id="3445907953729922956" at="24,5,27,430">
+        <var name="_info_12389875345" id="3445907953729922956" />
+        <var name="_nodeToCheck_1029348928467" id="3445907953729922956" />
+      </scope>
+      <scope id="3445907953729920881" at="30,0,33,0" />
+      <scope id="3445907953729920881" at="33,0,36,0">
+        <var name="argument" id="3445907953729920881" />
+      </scope>
+      <scope id="3445907953729920881" at="36,0,39,0" />
+      <scope id="3445907953729922979" at="39,79,43,26">
+        <var name="n0" id="3445907953729922979" />
+      </scope>
+      <scope id="3445907953729920882" at="23,124,28,5" />
+      <scope id="3445907953729922979" at="39,0,45,0">
+        <var name="p0" id="3445907953729922979" />
+        <var name="p1" id="3445907953729922979" />
+      </scope>
+      <scope id="3445907953729920881" at="23,0,30,0">
+        <var name="busPortType" id="3445907953729920881" />
+        <var name="status" id="3445907953729920881" />
+        <var name="typeCheckingContext" id="3445907953729920881" />
+      </scope>
+      <unit id="3445907953729920881" at="46,0,50,0" name="org.iets3.components.hardware.typesystem.typeof_BusPortType_InferenceRule$LINKS" />
+      <unit id="3445907953729920881" at="51,0,55,0" name="org.iets3.components.hardware.typesystem.typeof_BusPortType_InferenceRule$CONCEPTS" />
+      <unit id="3445907953729920881" at="20,0,56,0" name="org.iets3.components.hardware.typesystem.typeof_BusPortType_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/3445907953729929337">
+    <file name="TypesystemDescriptor.java">
+      <node id="3445907953729929337" at="19,5,20,95" concept="6" />
+      <node id="3445907953729929337" at="20,95,21,47" concept="2" />
+      <node id="3445907953729929337" at="18,5,22,5" concept="0" />
+      <scope id="3445907953729929337" at="19,5,21,47">
+        <var name="inferenceRule" id="3445907953729929337" />
+      </scope>
+    </file>
+    <file name="typeof_Ethernet100MBitPortType_InferenceRule.java">
+      <node id="3445907953729931621" at="20,5,21,65" concept="6" />
+      <node id="3445907953729931621" at="21,65,22,206" concept="6" />
+      <node id="3445907953729931621" at="22,206,23,295" concept="2" />
+      <node id="3445907953729929337" at="26,50,27,47" concept="7" />
+      <node id="3445907953729929337" at="29,68,30,102" concept="7" />
+      <node id="3445907953729929337" at="32,30,33,17" concept="7" />
+      <node id="3445907953729931637" at="35,73,36,83" concept="6" />
+      <node id="3445907953729931637" at="36,83,37,26" concept="7" />
+      <node id="3445907953729929337" at="41,0,42,0" concept="9" trace="Ethernet100MBitPortType$Go" />
+      <node id="3445907953729929337" at="17,0,19,0" concept="1" trace="typeof_Ethernet100MBitPortType_InferenceRule#()V" />
+      <node id="3445907953729929337" at="26,0,29,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3445907953729929337" at="29,0,32,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3445907953729929337" at="32,0,35,0" concept="5" trace="overrides#()Z" />
+      <node id="3445907953729931637" at="35,0,39,0" concept="10" trace="createEthernet100MBitPortType_n36aou_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3445907953729931621" at="19,136,24,5" concept="0" />
+      <node id="3445907953729929337" at="19,0,26,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="3445907953729929337" at="17,57,17,57" />
+      <scope id="3445907953729929337" at="26,50,27,47" />
+      <scope id="3445907953729929337" at="29,68,30,102" />
+      <scope id="3445907953729929337" at="32,30,33,17" />
+      <scope id="3445907953729929337" at="17,0,19,0" />
+      <scope id="3445907953729931637" at="35,73,37,26">
+        <var name="n0" id="3445907953729931637" />
+      </scope>
+      <scope id="3445907953729931621" at="20,5,23,295">
+        <var name="_info_12389875345" id="3445907953729931621" />
+        <var name="_nodeToCheck_1029348928467" id="3445907953729931621" />
+      </scope>
+      <scope id="3445907953729929337" at="26,0,29,0" />
+      <scope id="3445907953729929337" at="29,0,32,0">
+        <var name="argument" id="3445907953729929337" />
+      </scope>
+      <scope id="3445907953729929337" at="32,0,35,0" />
+      <scope id="3445907953729931637" at="35,0,39,0" />
+      <scope id="3445907953729929338" at="19,136,24,5" />
+      <scope id="3445907953729929337" at="19,0,26,0">
+        <var name="ethernet100MBitPortType" id="3445907953729929337" />
+        <var name="status" id="3445907953729929337" />
+        <var name="typeCheckingContext" id="3445907953729929337" />
+      </scope>
+      <unit id="3445907953729929337" at="40,0,43,0" name="org.iets3.components.hardware.typesystem.typeof_Ethernet100MBitPortType_InferenceRule$CONCEPTS" />
+      <unit id="3445907953729929337" at="16,0,44,0" name="org.iets3.components.hardware.typesystem.typeof_Ethernet100MBitPortType_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/3445907953729974569">
+    <file name="TypesystemDescriptor.java">
+      <node id="3445907953729974569" at="35,5,36,96" concept="6" />
+      <node id="3445907953729974569" at="36,96,37,55" concept="2" />
+      <node id="3445907953729974569" at="34,5,38,5" concept="0" />
+      <scope id="3445907953729974569" at="35,5,37,55">
+        <var name="nonTypesystemRule" id="3445907953729974569" />
+      </scope>
+    </file>
+    <file name="check_WireConnector_NonTypesystemRule.java">
+      <node id="3445907953730765401" at="26,126,27,154" concept="6" />
+      <node id="3445907953730734720" at="27,154,28,135" concept="6" />
+      <node id="3445907953730016751" at="32,11,33,70" concept="6" />
+      <node id="3445907953730016751" at="33,70,34,328" concept="6" />
+      <node id="3445907953729974569" at="40,50,41,37" concept="7" />
+      <node id="3445907953729974569" at="43,68,44,102" concept="7" />
+      <node id="3445907953729974569" at="46,30,47,17" concept="7" />
+      <node id="3445907953729974569" at="51,0,52,0" concept="9" trace="wireTarget$WCE5" />
+      <node id="3445907953729974569" at="52,0,53,0" concept="9" trace="sourcePort$mT3n" />
+      <node id="3445907953729974569" at="53,0,54,0" concept="9" trace="type$5Gl6" />
+      <node id="3445907953729974569" at="54,0,55,0" concept="9" trace="busType$HmsX" />
+      <node id="3445907953729974569" at="58,0,59,0" concept="9" trace="BusPortType$60" />
+      <node id="3445907953729974569" at="59,0,60,0" concept="9" trace="WireConnector$hh" />
+      <node id="3445907953729974569" at="24,0,26,0" concept="1" trace="check_WireConnector_NonTypesystemRule#()V" />
+      <node id="3445907953729974569" at="40,0,43,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3445907953729974569" at="43,0,46,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3445907953729974569" at="46,0,49,0" concept="5" trace="overrides#()Z" />
+      <node id="3445907953730016751" at="31,207,35,11" concept="0" />
+      <node id="3445907953729998378" at="30,82,36,9" concept="4" />
+      <node id="3445907953730722214" at="29,56,37,7" concept="4" />
+      <node id="4368212562924993174" at="28,135,38,5" concept="4" />
+      <node id="3445907953729974569" at="26,0,40,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="3445907953729974569" at="24,50,24,50" />
+      <scope id="3445907953729974569" at="40,50,41,37" />
+      <scope id="3445907953729974569" at="43,68,44,102" />
+      <scope id="3445907953729974569" at="46,30,47,17" />
+      <scope id="3445907953729974569" at="24,0,26,0" />
+      <scope id="3445907953730016751" at="32,11,34,328">
+        <var name="_reporter_2309309498" id="3445907953730016751" />
+        <var name="errorTarget" id="3445907953730016751" />
+      </scope>
+      <scope id="3445907953729974569" at="40,0,43,0" />
+      <scope id="3445907953729974569" at="43,0,46,0">
+        <var name="argument" id="3445907953729974569" />
+      </scope>
+      <scope id="3445907953729974569" at="46,0,49,0" />
+      <scope id="3445907953729998380" at="31,207,35,11" />
+      <scope id="3445907953730722216" at="30,82,36,9" />
+      <scope id="4368212562924993176" at="29,56,37,7" />
+      <scope id="3445907953729974570" at="26,126,38,5">
+        <var name="busType" id="3445907953730765402" />
+        <var name="sourcePortType" id="3445907953730734721" />
+      </scope>
+      <scope id="3445907953729974569" at="26,0,40,0">
+        <var name="status" id="3445907953729974569" />
+        <var name="typeCheckingContext" id="3445907953729974569" />
+        <var name="wireConnector" id="3445907953729974569" />
+      </scope>
+      <unit id="3445907953729974569" at="57,0,61,0" name="org.iets3.components.hardware.typesystem.check_WireConnector_NonTypesystemRule$CONCEPTS" />
+      <unit id="3445907953729974569" at="50,0,56,0" name="org.iets3.components.hardware.typesystem.check_WireConnector_NonTypesystemRule$LINKS" />
+      <unit id="3445907953729974569" at="23,0,62,0" name="org.iets3.components.hardware.typesystem.check_WireConnector_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/4917103062948446631">
+    <file name="HardwareConnectorsChekUtil.java">
+      <node id="4917103062948446739" at="15,0,16,0" concept="3" trace="connectedPorts" />
+      <node id="4917103062948446971" at="16,0,17,0" concept="3" trace="outerPorts" />
+      <node id="4917103062948472995" at="22,33,23,78" concept="2" />
+      <node id="4917103062948466027" at="24,5,25,0" concept="8" />
+      <node id="4917103062948450195" at="27,112,28,20" concept="7" />
+      <node id="4917103062948447450" at="29,14,30,110" concept="2" />
+      <node id="4917103062948447463" at="32,12,33,86" concept="2" />
+      <node id="4917103062948447471" at="33,86,34,108" concept="2" />
+      <node id="4917103062948457352" at="35,5,36,17" concept="7" />
+      <node id="4917103062948744361" at="41,29,42,42" concept="2" />
+      <node id="4917103062948767393" at="43,5,44,0" concept="8" />
+      <node id="4917103062948806843" at="45,64,46,18" concept="7" />
+      <node id="4917103062948812040" at="47,12,48,62" concept="2" />
+      <node id="4917103062948847061" at="49,5,50,0" concept="8" />
+      <node id="4917103062948847139" at="50,0,51,17" concept="7" />
+      <node id="4917103062948447073" at="18,0,20,0" concept="1" trace="HardwareConnectorsChekUtil#()V" />
+      <node id="4917103062948447448" at="29,12,31,7" concept="0" />
+      <node id="4917103062948807991" at="47,10,49,5" concept="0" />
+      <node id="4917103062948468320" at="21,81,24,5" concept="4" />
+      <node id="4917103062948447461" at="32,10,35,5" concept="0" />
+      <node id="4917103062948720341" at="40,63,43,5" concept="4" />
+      <node id="4917103062948447432" at="26,74,31,7" concept="4" />
+      <node id="4917103062948769254" at="44,0,49,5" concept="4" />
+      <node id="4917103062948447430" at="25,0,35,5" concept="4" />
+      <node id="4917103062948447302" at="40,0,53,0" concept="5" trace="isOuterPortAlreadyConnected#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4917103062948447212" at="21,0,38,0" concept="5" trace="isPortAlreadyConnected#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <scope id="4917103062948447076" at="18,39,18,39" />
+      <scope id="4917103062948468322" at="22,33,23,78" />
+      <scope id="4917103062948447433" at="27,112,28,20" />
+      <scope id="4917103062948447449" at="29,14,30,110" />
+      <scope id="4917103062948720343" at="41,29,42,42" />
+      <scope id="4917103062948769256" at="45,64,46,18" />
+      <scope id="4917103062948807992" at="47,12,48,62" />
+      <scope id="4917103062948447073" at="18,0,20,0" />
+      <scope id="4917103062948447462" at="32,12,34,108" />
+      <scope id="4917103062948447431" at="26,74,31,7" />
+      <scope id="4917103062948447303" at="40,63,51,17" />
+      <scope id="4917103062948447302" at="40,0,53,0">
+        <var name="outerPort" id="4917103062948671371" />
+      </scope>
+      <scope id="4917103062948447215" at="21,81,36,17" />
+      <scope id="4917103062948447212" at="21,0,38,0">
+        <var name="sourceInstance" id="4917103062948463875" />
+        <var name="sourcePort" id="4917103062948485286" />
+      </scope>
+      <unit id="4917103062948446631" at="13,0,56,0" name="org.iets3.components.hardware.typesystem.HardwareConnectorsChekUtil" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/5029965106608959538">
+    <file name="TypesystemDescriptor.java">
+      <node id="5029965106608959538" at="11,5,12,92" concept="6" />
+      <node id="5029965106608959538" at="12,92,13,47" concept="2" />
+      <node id="5029965106608959538" at="10,33,14,5" concept="0" />
+      <scope id="5029965106608959538" at="11,5,13,47">
+        <var name="inferenceRule" id="5029965106608959538" />
+      </scope>
+    </file>
+    <file name="typeof_BusInstanceRefTarget_InferenceRule.java">
+      <node id="5029965106609005707" at="22,5,23,62" concept="6" />
+      <node id="5029965106609005707" at="23,62,24,206" concept="6" />
+      <node id="5029965106609005707" at="24,206,25,365" concept="2" />
+      <node id="5029965106608959538" at="28,50,29,44" concept="7" />
+      <node id="5029965106608959538" at="31,68,32,102" concept="7" />
+      <node id="5029965106608959538" at="34,30,35,17" concept="7" />
+      <node id="5029965106609008187" at="37,80,38,82" concept="6" />
+      <node id="5029965106609008187" at="38,82,39,54" concept="2" />
+      <node id="5029965106609008187" at="39,54,40,26" concept="7" />
+      <node id="5029965106608959538" at="44,0,45,0" concept="9" trace="busInstance$uhdk" />
+      <node id="5029965106608959538" at="45,0,46,0" concept="9" trace="busInstance$nbIH" />
+      <node id="5029965106608959538" at="49,0,50,0" concept="9" trace="BusInstanceRefTarget$Nv" />
+      <node id="5029965106608959538" at="50,0,51,0" concept="9" trace="BusInstanceTypeForExpr$ui" />
+      <node id="5029965106608959538" at="19,0,21,0" concept="1" trace="typeof_BusInstanceRefTarget_InferenceRule#()V" />
+      <node id="5029965106608959538" at="28,0,31,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5029965106608959538" at="31,0,34,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5029965106608959538" at="34,0,37,0" concept="5" trace="overrides#()Z" />
+      <node id="5029965106609005707" at="21,133,26,5" concept="0" />
+      <node id="5029965106609008187" at="37,0,42,0" concept="10" trace="createBusInstanceTypeForExpr_f7tajd_a1a0c0a0b#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5029965106608959538" at="21,0,28,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5029965106608959538" at="19,54,19,54" />
+      <scope id="5029965106608959538" at="28,50,29,44" />
+      <scope id="5029965106608959538" at="31,68,32,102" />
+      <scope id="5029965106608959538" at="34,30,35,17" />
+      <scope id="5029965106608959538" at="19,0,21,0" />
+      <scope id="5029965106609005707" at="22,5,25,365">
+        <var name="_info_12389875345" id="5029965106609005707" />
+        <var name="_nodeToCheck_1029348928467" id="5029965106609005707" />
+      </scope>
+      <scope id="5029965106608959538" at="28,0,31,0" />
+      <scope id="5029965106608959538" at="31,0,34,0">
+        <var name="argument" id="5029965106608959538" />
+      </scope>
+      <scope id="5029965106608959538" at="34,0,37,0" />
+      <scope id="5029965106609008187" at="37,80,40,26">
+        <var name="n0" id="5029965106609008187" />
+      </scope>
+      <scope id="5029965106608959539" at="21,133,26,5" />
+      <scope id="5029965106609008187" at="37,0,42,0">
+        <var name="p0" id="5029965106609008187" />
+      </scope>
+      <scope id="5029965106608959538" at="21,0,28,0">
+        <var name="busInstanceRefTarget" id="5029965106608959538" />
+        <var name="status" id="5029965106608959538" />
+        <var name="typeCheckingContext" id="5029965106608959538" />
+      </scope>
+      <unit id="5029965106608959538" at="43,0,47,0" name="org.iets3.components.hardware.typesystem.typeof_BusInstanceRefTarget_InferenceRule$LINKS" />
+      <unit id="5029965106608959538" at="48,0,52,0" name="org.iets3.components.hardware.typesystem.typeof_BusInstanceRefTarget_InferenceRule$CONCEPTS" />
+      <unit id="5029965106608959538" at="18,0,53,0" name="org.iets3.components.hardware.typesystem.typeof_BusInstanceRefTarget_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/6311532682177672796">
+    <file name="TypesystemDescriptor.java">
+      <node id="6311532682177672796" at="23,5,24,93" concept="6" />
+      <node id="6311532682177672796" at="24,93,25,47" concept="2" />
+      <node id="6311532682177672796" at="22,5,26,5" concept="0" />
+      <scope id="6311532682177672796" at="23,5,25,47">
+        <var name="inferenceRule" id="6311532682177672796" />
+      </scope>
+    </file>
+    <file name="typeof_Ethernet1GBitPortType_InferenceRule.java">
+      <node id="6311532682177685324" at="20,5,21,63" concept="6" />
+      <node id="6311532682177685324" at="21,63,22,206" concept="6" />
+      <node id="6311532682177685324" at="22,206,23,293" concept="2" />
+      <node id="6311532682177672796" at="26,50,27,45" concept="7" />
+      <node id="6311532682177672796" at="29,68,30,102" concept="7" />
+      <node id="6311532682177672796" at="32,30,33,17" concept="7" />
+      <node id="6311532682177685340" at="35,71,36,81" concept="6" />
+      <node id="6311532682177685340" at="36,81,37,26" concept="7" />
+      <node id="6311532682177672796" at="41,0,42,0" concept="9" trace="Ethernet1GBitPortType$$Q" />
+      <node id="6311532682177672796" at="17,0,19,0" concept="1" trace="typeof_Ethernet1GBitPortType_InferenceRule#()V" />
+      <node id="6311532682177672796" at="26,0,29,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6311532682177672796" at="29,0,32,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6311532682177672796" at="32,0,35,0" concept="5" trace="overrides#()Z" />
+      <node id="6311532682177685340" at="35,0,39,0" concept="10" trace="createEthernet1GBitPortType_3r29j5_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6311532682177685324" at="19,134,24,5" concept="0" />
+      <node id="6311532682177672796" at="19,0,26,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6311532682177672796" at="17,55,17,55" />
+      <scope id="6311532682177672796" at="26,50,27,45" />
+      <scope id="6311532682177672796" at="29,68,30,102" />
+      <scope id="6311532682177672796" at="32,30,33,17" />
+      <scope id="6311532682177672796" at="17,0,19,0" />
+      <scope id="6311532682177685340" at="35,71,37,26">
+        <var name="n0" id="6311532682177685340" />
+      </scope>
+      <scope id="6311532682177685324" at="20,5,23,293">
+        <var name="_info_12389875345" id="6311532682177685324" />
+        <var name="_nodeToCheck_1029348928467" id="6311532682177685324" />
+      </scope>
+      <scope id="6311532682177672796" at="26,0,29,0" />
+      <scope id="6311532682177672796" at="29,0,32,0">
+        <var name="argument" id="6311532682177672796" />
+      </scope>
+      <scope id="6311532682177672796" at="32,0,35,0" />
+      <scope id="6311532682177685340" at="35,0,39,0" />
+      <scope id="6311532682177672797" at="19,134,24,5" />
+      <scope id="6311532682177672796" at="19,0,26,0">
+        <var name="ethernet1GBitPortType" id="6311532682177672796" />
+        <var name="status" id="6311532682177672796" />
+        <var name="typeCheckingContext" id="6311532682177672796" />
+      </scope>
+      <unit id="6311532682177672796" at="40,0,43,0" name="org.iets3.components.hardware.typesystem.typeof_Ethernet1GBitPortType_InferenceRule$CONCEPTS" />
+      <unit id="6311532682177672796" at="16,0,44,0" name="org.iets3.components.hardware.typesystem.typeof_Ethernet1GBitPortType_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/760266716712340195">
+    <file name="addSubStructure_QuickFix.java">
+      <node id="760266716712340195" at="16,37,17,134" concept="11" />
+      <node id="760266716712382447" at="19,44,20,146" concept="7" />
+      <node id="760266716712341745" at="22,35,23,148" concept="2" />
+      <node id="760266716712344617" at="23,148,24,0" concept="8" />
+      <node id="760266716712340195" at="28,0,29,0" concept="9" trace="name$MnvL" />
+      <node id="760266716712340195" at="32,0,33,0" concept="9" trace="contents$i4tX" />
+      <node id="760266716712340195" at="36,0,37,0" concept="9" trace="ComponentSubstructure$oB" />
+      <node id="760266716712340195" at="16,0,19,0" concept="1" trace="addSubStructure_QuickFix#()V" />
+      <node id="760266716712340195" at="19,0,22,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="760266716712340195" at="22,0,26,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="760266716712340195" at="16,37,17,134" />
+      <scope id="760266716712381910" at="19,44,20,146" />
+      <scope id="760266716712340197" at="22,35,24,0" />
+      <scope id="760266716712340195" at="16,0,19,0" />
+      <scope id="760266716712340195" at="19,0,22,0">
+        <var name="node" id="760266716712340195" />
+      </scope>
+      <scope id="760266716712340195" at="22,0,26,0">
+        <var name="node" id="760266716712340195" />
+      </scope>
+      <unit id="760266716712340195" at="27,0,30,0" name="org.iets3.components.hardware.typesystem.addSubStructure_QuickFix$PROPS" />
+      <unit id="760266716712340195" at="31,0,34,0" name="org.iets3.components.hardware.typesystem.addSubStructure_QuickFix$LINKS" />
+      <unit id="760266716712340195" at="35,0,38,0" name="org.iets3.components.hardware.typesystem.addSubStructure_QuickFix$CONCEPTS" />
+      <unit id="760266716712340195" at="15,0,39,0" name="org.iets3.components.hardware.typesystem.addSubStructure_QuickFix" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/8282991016768944405">
+    <file name="TypesystemDescriptor.java">
+      <node id="8282991016768944405" at="31,5,32,101" concept="6" />
+      <node id="8282991016768944405" at="32,101,33,55" concept="2" />
+      <node id="8282991016768944405" at="30,5,34,5" concept="0" />
+      <scope id="8282991016768944405" at="31,5,33,55">
+        <var name="nonTypesystemRule" id="8282991016768944405" />
+      </scope>
+    </file>
+    <file name="check_HardwareConnectors_NonTypesystemRule.java">
+      <node id="8282991016768969572" at="27,120,28,229" concept="6" />
+      <node id="8282991016769198206" at="28,229,29,0" concept="8" />
+      <node id="4917103062948544416" at="29,0,30,87" concept="6" />
+      <node id="4917103062948991217" at="30,87,31,0" concept="8" />
+      <node id="4917103062946350598" at="32,73,33,138" concept="6" />
+      <node id="4917103062946472239" at="33,138,34,87" concept="6" />
+      <node id="4917103062948556293" at="36,11,37,96" concept="6" />
+      <node id="4917103062948556293" at="37,96,38,303" concept="6" />
+      <node id="4917103062946687983" at="40,9,41,0" concept="8" />
+      <node id="4917103062946677468" at="41,0,42,138" concept="6" />
+      <node id="4917103062946677462" at="42,138,43,87" concept="6" />
+      <node id="4917103062946677418" at="45,11,46,96" concept="6" />
+      <node id="4917103062946677418" at="46,96,47,303" concept="6" />
+      <node id="4917103062947003334" at="50,9,51,0" concept="8" />
+      <node id="4917103062947008733" at="51,0,52,229" concept="6" />
+      <node id="4917103062947079488" at="53,73,54,138" concept="6" />
+      <node id="4917103062947083947" at="54,138,55,87" concept="6" />
+      <node id="4917103062947055640" at="57,11,58,96" concept="6" />
+      <node id="4917103062947055640" at="58,96,59,303" concept="6" />
+      <node id="4917103062947326308" at="61,9,62,0" concept="8" />
+      <node id="4917103062947292995" at="62,0,63,85" concept="6" />
+      <node id="4917103062947448113" at="65,11,66,95" concept="6" />
+      <node id="4917103062947448113" at="66,95,67,302" concept="6" />
+      <node id="4917103062948321057" at="70,9,71,0" concept="8" />
+      <node id="4917103062947503705" at="71,0,72,221" concept="6" />
+      <node id="4917103062947609558" at="73,69,74,138" concept="6" />
+      <node id="4917103062947609566" at="74,138,75,87" concept="6" />
+      <node id="4917103062947609583" at="77,11,78,96" concept="6" />
+      <node id="4917103062947609583" at="78,96,79,303" concept="6" />
+      <node id="8282991016768971313" at="82,9,83,0" concept="8" />
+      <node id="8282991016768944405" at="86,50,87,33" concept="7" />
+      <node id="8282991016768944405" at="89,68,90,102" concept="7" />
+      <node id="8282991016768944405" at="92,30,93,17" concept="7" />
+      <node id="8282991016768944405" at="97,0,98,0" concept="9" trace="kind$8cnO" />
+      <node id="8282991016768944405" at="98,0,99,0" concept="9" trace="contents$7e9r" />
+      <node id="8282991016768944405" at="99,0,100,0" concept="9" trace="sourceInstance$LjmV" />
+      <node id="8282991016768944405" at="100,0,101,0" concept="9" trace="ref$H$FL" />
+      <node id="8282991016768944405" at="101,0,102,0" concept="9" trace="sourcePort$ZLvQ" />
+      <node id="8282991016768944405" at="102,0,103,0" concept="9" trace="targetInstance$RipR" />
+      <node id="8282991016768944405" at="103,0,104,0" concept="9" trace="targetPort$ZZ$M" />
+      <node id="8282991016768944405" at="104,0,105,0" concept="9" trace="sourceInstance$lh9r" />
+      <node id="8282991016768944405" at="105,0,106,0" concept="9" trace="sourcePort$lhQu" />
+      <node id="8282991016768944405" at="106,0,107,0" concept="9" trace="outerPort$lnWS" />
+      <node id="8282991016768944405" at="107,0,108,0" concept="9" trace="sourceInstance$mM0T" />
+      <node id="8282991016768944405" at="108,0,109,0" concept="9" trace="sourcePort$mT3n" />
+      <node id="8282991016768944405" at="112,0,113,0" concept="9" trace="HardwareKind$ev" />
+      <node id="8282991016768944405" at="113,0,114,0" concept="9" trace="AssemblyConnector$qU" />
+      <node id="8282991016768944405" at="114,0,115,0" concept="9" trace="DelegateConnector$uB" />
+      <node id="8282991016768944405" at="115,0,116,0" concept="9" trace="WireConnector$hh" />
+      <node id="8282991016768944405" at="116,0,117,0" concept="9" trace="Component$gR" />
+      <node id="8282991016768944405" at="24,0,26,0" concept="1" trace="check_HardwareConnectors_NonTypesystemRule#()V" />
+      <node id="8282991016768944405" at="86,0,89,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8282991016768944405" at="89,0,92,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8282991016768944405" at="92,0,95,0" concept="5" trace="overrides#()Z" />
+      <node id="4917103062948556293" at="35,78,39,11" concept="0" />
+      <node id="4917103062946677418" at="44,78,48,11" concept="0" />
+      <node id="4917103062947055640" at="56,78,60,11" concept="0" />
+      <node id="4917103062947448113" at="64,66,68,11" concept="0" />
+      <node id="4917103062947609583" at="76,78,80,11" concept="0" />
+      <node id="4917103062948511178" at="34,87,40,9" concept="4" />
+      <node id="4917103062948577339" at="43,87,49,9" concept="4" />
+      <node id="4917103062948603485" at="55,87,61,9" concept="4" />
+      <node id="4917103062948647581" at="63,85,69,9" concept="4" />
+      <node id="4917103062948706120" at="75,87,81,9" concept="4" />
+      <node id="4917103062947577565" at="72,221,82,9" concept="2" />
+      <node id="4917103062947048566" at="52,229,70,9" concept="2" />
+      <node id="8282991016768976105" at="31,0,50,9" concept="2" />
+      <node id="8282991016768944417" at="26,122,84,5" concept="4" />
+      <node id="8282991016768944405" at="26,0,86,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8282991016768944405" at="24,55,24,55" />
+      <scope id="8282991016768944405" at="86,50,87,33" />
+      <scope id="8282991016768944405" at="89,68,90,102" />
+      <scope id="8282991016768944405" at="92,30,93,17" />
+      <scope id="8282991016768944405" at="24,0,26,0" />
+      <scope id="4917103062948556293" at="36,11,38,303">
+        <var name="_reporter_2309309498" id="4917103062948556293" />
+        <var name="errorTarget" id="4917103062948556293" />
+      </scope>
+      <scope id="4917103062946677418" at="45,11,47,303">
+        <var name="_reporter_2309309498" id="4917103062946677418" />
+        <var name="errorTarget" id="4917103062946677418" />
+      </scope>
+      <scope id="4917103062947055640" at="57,11,59,303">
+        <var name="_reporter_2309309498" id="4917103062947055640" />
+        <var name="errorTarget" id="4917103062947055640" />
+      </scope>
+      <scope id="4917103062947448113" at="65,11,67,302">
+        <var name="_reporter_2309309498" id="4917103062947448113" />
+        <var name="errorTarget" id="4917103062947448113" />
+      </scope>
+      <scope id="4917103062947609583" at="77,11,79,303">
+        <var name="_reporter_2309309498" id="4917103062947609583" />
+        <var name="errorTarget" id="4917103062947609583" />
+      </scope>
+      <scope id="8282991016768944405" at="86,0,89,0" />
+      <scope id="8282991016768944405" at="89,0,92,0">
+        <var name="argument" id="8282991016768944405" />
+      </scope>
+      <scope id="8282991016768944405" at="92,0,95,0" />
+      <scope id="4917103062948511180" at="35,78,39,11" />
+      <scope id="4917103062948577341" at="44,78,48,11" />
+      <scope id="4917103062948603487" at="56,78,60,11" />
+      <scope id="4917103062948647583" at="64,66,68,11" />
+      <scope id="4917103062948706122" at="76,78,80,11" />
+      <scope id="4917103062947587416" at="73,69,81,9">
+        <var name="sourceInstance" id="4917103062947609559" />
+        <var name="sourcePort" id="4917103062947609567" />
+      </scope>
+      <scope id="4917103062947055352" at="53,73,69,9">
+        <var name="outerPort" id="4917103062947292996" />
+        <var name="sourceInstance" id="4917103062947079489" />
+        <var name="sourcePort" id="4917103062947083948" />
+      </scope>
+      <scope id="8282991016768978189" at="32,73,49,9">
+        <var name="sourceInstance" id="4917103062946350599" />
+        <var name="sourcePort" id="4917103062946472240" />
+        <var name="targetInstance" id="4917103062946677469" />
+        <var name="targetPort" id="4917103062946677463" />
+      </scope>
+      <scope id="8282991016768944419" at="27,120,83,0">
+        <var name="assemblyConnectors" id="8282991016768969573" />
+        <var name="delegateConnectors" id="4917103062947008736" />
+        <var name="portsChecker" id="4917103062948544417" />
+        <var name="wireConnectors" id="4917103062947503706" />
+      </scope>
+      <scope id="8282991016768944406" at="26,122,84,5" />
+      <scope id="8282991016768944405" at="26,0,86,0">
+        <var name="component" id="8282991016768944405" />
+        <var name="status" id="8282991016768944405" />
+        <var name="typeCheckingContext" id="8282991016768944405" />
+      </scope>
+      <unit id="8282991016768944405" at="111,0,118,0" name="org.iets3.components.hardware.typesystem.check_HardwareConnectors_NonTypesystemRule$CONCEPTS" />
+      <unit id="8282991016768944405" at="96,0,110,0" name="org.iets3.components.hardware.typesystem.check_HardwareConnectors_NonTypesystemRule$LINKS" />
+      <unit id="8282991016768944405" at="23,0,119,0" name="org.iets3.components.hardware.typesystem.check_HardwareConnectors_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/8941163450319866378">
+    <file name="TypesystemDescriptor.java">
+      <node id="8941163450319866378" at="39,5,40,98" concept="6" />
+      <node id="8941163450319866378" at="40,98,41,55" concept="2" />
+      <node id="8941163450319866378" at="38,5,42,5" concept="0" />
+      <scope id="8941163450319866378" at="39,5,41,55">
+        <var name="nonTypesystemRule" id="8941163450319866378" />
+      </scope>
+    </file>
+    <file name="markDeprecatedBusKind_NonTypesystemRule.java">
+      <node id="8941163450319866930" at="23,5,24,64" concept="6" />
+      <node id="8941163450319866930" at="24,64,25,275" concept="6" />
+      <node id="8941163450320597928" at="26,7,27,182" concept="6" />
+      <node id="8941163450320601900" at="27,182,28,132" concept="2" />
+      <node id="8941163450320597928" at="28,132,29,69" concept="2" />
+      <node id="8941163450319866378" at="33,50,34,31" concept="7" />
+      <node id="8941163450319866378" at="36,68,37,102" concept="7" />
+      <node id="8941163450319866378" at="39,30,40,17" concept="7" />
+      <node id="8941163450319866378" at="44,0,45,0" concept="9" trace="Component$gR" />
+      <node id="8941163450319866378" at="45,0,46,0" concept="9" trace="BusKind$f0" />
+      <node id="8941163450319866378" at="20,0,22,0" concept="1" trace="markDeprecatedBusKind_NonTypesystemRule#()V" />
+      <node id="8941163450319866378" at="33,0,36,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8941163450319866378" at="36,0,39,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8941163450319866378" at="39,0,42,0" concept="5" trace="overrides#()Z" />
+      <node id="8941163450320597928" at="25,275,30,7" concept="0" />
+      <node id="8941163450319866930" at="22,120,31,5" concept="0" />
+      <node id="8941163450319866378" at="22,0,33,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8941163450319866378" at="20,52,20,52" />
+      <scope id="8941163450319866378" at="33,50,34,31" />
+      <scope id="8941163450319866378" at="36,68,37,102" />
+      <scope id="8941163450319866378" at="39,30,40,17" />
+      <scope id="8941163450319866378" at="20,0,22,0" />
+      <scope id="8941163450320597928" at="26,7,29,69">
+        <var name="intentionProvider" id="8941163450320597928" />
+      </scope>
+      <scope id="8941163450319866378" at="33,0,36,0" />
+      <scope id="8941163450319866378" at="36,0,39,0">
+        <var name="argument" id="8941163450319866378" />
+      </scope>
+      <scope id="8941163450319866378" at="39,0,42,0" />
+      <scope id="8941163450319866930" at="23,5,30,7">
+        <var name="_reporter_2309309498" id="8941163450319866930" />
+        <var name="errorTarget" id="8941163450319866930" />
+      </scope>
+      <scope id="8941163450319866379" at="22,120,31,5" />
+      <scope id="8941163450319866378" at="22,0,33,0">
+        <var name="busKind" id="8941163450319866378" />
+        <var name="status" id="8941163450319866378" />
+        <var name="typeCheckingContext" id="8941163450319866378" />
+      </scope>
+      <unit id="8941163450319866378" at="43,0,47,0" name="org.iets3.components.hardware.typesystem.markDeprecatedBusKind_NonTypesystemRule$CONCEPTS" />
+      <unit id="8941163450319866378" at="19,0,48,0" name="org.iets3.components.hardware.typesystem.markDeprecatedBusKind_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/8941163450320332522">
+    <file name="TypesystemDescriptor.java">
+      <node id="8941163450320332522" at="27,5,28,104" concept="6" />
+      <node id="8941163450320332522" at="28,104,29,55" concept="2" />
+      <node id="8941163450320332522" at="26,5,30,5" concept="0" />
+      <scope id="8941163450320332522" at="27,5,29,55">
+        <var name="nonTypesystemRule" id="8941163450320332522" />
+      </scope>
+    </file>
+    <file name="check_DeprecatedBusPortType_NonTypesystemRule.java">
+      <node id="8941163450320339542" at="24,7,25,66" concept="6" />
+      <node id="8941163450320339542" at="25,66,26,291" concept="6" />
+      <node id="8941163450320332522" at="30,50,31,35" concept="7" />
+      <node id="8941163450320332522" at="33,68,34,102" concept="7" />
+      <node id="8941163450320332522" at="36,30,37,17" concept="7" />
+      <node id="8941163450320332522" at="41,0,42,0" concept="9" trace="busType_old$TIk" />
+      <node id="8941163450320332522" at="45,0,46,0" concept="9" trace="BusPortType$60" />
+      <node id="8941163450320332522" at="20,0,22,0" concept="1" trace="check_DeprecatedBusPortType_NonTypesystemRule#()V" />
+      <node id="8941163450320332522" at="30,0,33,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8941163450320332522" at="33,0,36,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8941163450320332522" at="36,0,39,0" concept="5" trace="overrides#()Z" />
+      <node id="8941163450320339542" at="23,82,27,7" concept="0" />
+      <node id="8941163450320332535" at="22,124,28,5" concept="4" />
+      <node id="8941163450320332522" at="22,0,30,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8941163450320332522" at="20,58,20,58" />
+      <scope id="8941163450320332522" at="30,50,31,35" />
+      <scope id="8941163450320332522" at="33,68,34,102" />
+      <scope id="8941163450320332522" at="36,30,37,17" />
+      <scope id="8941163450320332522" at="20,0,22,0" />
+      <scope id="8941163450320339542" at="24,7,26,291">
+        <var name="_reporter_2309309498" id="8941163450320339542" />
+        <var name="errorTarget" id="8941163450320339542" />
+      </scope>
+      <scope id="8941163450320332522" at="30,0,33,0" />
+      <scope id="8941163450320332522" at="33,0,36,0">
+        <var name="argument" id="8941163450320332522" />
+      </scope>
+      <scope id="8941163450320332522" at="36,0,39,0" />
+      <scope id="8941163450320332537" at="23,82,27,7" />
+      <scope id="8941163450320332523" at="22,124,28,5" />
+      <scope id="8941163450320332522" at="22,0,30,0">
+        <var name="busPortType" id="8941163450320332522" />
+        <var name="status" id="8941163450320332522" />
+        <var name="typeCheckingContext" id="8941163450320332522" />
+      </scope>
+      <unit id="8941163450320332522" at="40,0,43,0" name="org.iets3.components.hardware.typesystem.check_DeprecatedBusPortType_NonTypesystemRule$LINKS" />
+      <unit id="8941163450320332522" at="44,0,47,0" name="org.iets3.components.hardware.typesystem.check_DeprecatedBusPortType_NonTypesystemRule$CONCEPTS" />
+      <unit id="8941163450320332522" at="19,0,48,0" name="org.iets3.components.hardware.typesystem.check_DeprecatedBusPortType_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)/8941163450320571154">
+    <file name="replaceDeprecatedBusKind_QuickFix.java">
+      <node id="8941163450320571154" at="20,46,21,135" concept="11" />
+      <node id="8941163450320575274" at="23,44,24,61" concept="7" />
+      <node id="8941163450321258024" at="26,35,27,156" concept="6" />
+      <node id="8941163450320615878" at="29,184,30,129" concept="2" />
+      <node id="598819418538330993" at="32,12,33,223" concept="6" />
+      <node id="598819418538335289" at="33,223,34,128" concept="2" />
+      <node id="8941163450320571154" at="39,0,40,0" concept="9" trace="kind$8cnO" />
+      <node id="8941163450320571154" at="43,0,44,0" concept="9" trace="BusKind$f0" />
+      <node id="8941163450320571154" at="47,0,48,0" concept="9" trace="name$MnvL" />
+      <node id="8941163450320571154" at="20,0,23,0" concept="1" trace="replaceDeprecatedBusKind_QuickFix#()V" />
+      <node id="8941163450320571154" at="23,0,26,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="8941163450320620500" at="28,35,31,7" concept="4" />
+      <node id="8941163450320629154" at="32,10,35,5" concept="0" />
+      <node id="8941163450320576388" at="27,156,35,5" concept="4" />
+      <node id="8941163450320571154" at="26,0,37,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8941163450320571154" at="20,46,21,135" />
+      <scope id="8941163450320574735" at="23,44,24,61" />
+      <scope id="8941163450320620502" at="29,184,30,129" />
+      <scope id="8941163450320629155" at="32,12,34,128">
+        <var name="errorMessage" id="598819418538330996" />
+      </scope>
+      <scope id="8941163450320571154" at="20,0,23,0" />
+      <scope id="8941163450320571154" at="23,0,26,0">
+        <var name="node" id="8941163450320571154" />
+      </scope>
+      <scope id="8941163450320576390" at="28,35,31,7" />
+      <scope id="8941163450320571156" at="26,35,35,5">
+        <var name="derivedBusType" id="8941163450321258025" />
+      </scope>
+      <scope id="8941163450320571154" at="26,0,37,0">
+        <var name="node" id="8941163450320571154" />
+      </scope>
+      <unit id="8941163450320571154" at="38,0,41,0" name="org.iets3.components.hardware.typesystem.replaceDeprecatedBusKind_QuickFix$LINKS" />
+      <unit id="8941163450320571154" at="42,0,45,0" name="org.iets3.components.hardware.typesystem.replaceDeprecatedBusKind_QuickFix$CONCEPTS" />
+      <unit id="8941163450320571154" at="46,0,49,0" name="org.iets3.components.hardware.typesystem.replaceDeprecatedBusKind_QuickFix$PROPS" />
+      <unit id="8941163450320571154" at="19,0,50,0" name="org.iets3.components.hardware.typesystem.replaceDeprecatedBusKind_QuickFix" />
+    </file>
+  </root>
+</debug-info>
+

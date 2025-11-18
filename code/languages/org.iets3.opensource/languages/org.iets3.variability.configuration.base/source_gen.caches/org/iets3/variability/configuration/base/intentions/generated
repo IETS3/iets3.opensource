@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-24eyktogpa0p615y83y2pfmphhn5uky">
+  <files names="AdaptToExtendedFMC_Intention.java:InlineReferencedConfiguration_Intention.java:IntentionUtilConfiguration.java:IntentionsDescriptor.java:UpdateAllRelatedConfigurations_Intention.java:createFeatureModelConfiguration_Intention.java:extractConfiguration_Intention.java:featureSelectionUntouched_Intention.java:propagateFMchangesToConfig_Intention.java:replaceWithExistingExternalConfig_Intention.java:replaceWithUnspecifiedConfig_Intention.java:resetForceSelectionStateSubFeatures_Intention.java:resetForcedSelectionState_Intention.java:runSolverSync_Intention.java:runSolver_Intention.java:setAllUntouchedChildrenToFalse_Intention.java:setAllUntouchedChildrenToTrue_Intention.java:setManualAssignmentCause_Intention.java:specifyUsedConfigs_Intention.java:subFeatureSelectionStateUntouched_Intention.java" />
+</product>
+

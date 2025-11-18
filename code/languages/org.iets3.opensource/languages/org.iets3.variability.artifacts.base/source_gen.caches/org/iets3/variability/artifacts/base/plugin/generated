@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-arbc1s6awegfahzm2pv44gnpxl4ml5b">
+  <files names="ArtifactHelper.java:ArtifactInstanceFilterContext.java:ArtifactInstancePreviewer.java:ArtifactInstanceSelectorItem.java:BaseArtifactAlgorithmsExtension.java:BrokenLinks.java:CacheStatistics.java:EditorListenerManager.java:EditorUpdateHelper.java:EvalVarPointCache.java:ExtensionDescriptor.java:FeatureExpressionCompactor.java:FilterParams.java:FilterRunInformation.java:FilteringError.java:IArtifactAlgorithms.java:IArtifactEvaluator.java:ICacheStatistics.java:ICopyLogic.java:IFilterInstantiator.java:IInstantationContext.java:IInstantiation.java:IIssueCollector.java:INodeMapper.java:IRenamer.java:ITopAffectedNodesProvider.java:IVAAUtil.java:IVarExprReplacer.java:LogUtil.java:PresenceConditionFormatter.java:PreviewCriteria.java:Renamer.java:RootNodesCopy.java:SkelTreeCache.java:SkeletonNodeEvaluator.java:VPEvalContext.java" />
+</product>
+

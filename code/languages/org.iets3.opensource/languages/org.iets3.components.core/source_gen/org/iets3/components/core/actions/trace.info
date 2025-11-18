@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="14,0,46,0" name="org.iets3.components.core.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:958ba0e0-7647-4e09-b109-afc6108abac1(org.iets3.components.core.actions)/3177368305997963725">
+    <file name="pasteFunction_PasteWrapper_0.java">
+      <node id="3177368305997963726" at="16,46,17,32" concept="5" />
+      <node id="3177368305997963726" at="20,46,21,41" concept="5" />
+      <node id="3177368305997964993" at="24,39,25,66" concept="5" />
+      <node id="3177368305997964991" at="27,77,28,83" concept="4" />
+      <node id="3177368305997964991" at="28,83,29,73" concept="1" />
+      <node id="3177368305997964991" at="29,73,30,26" concept="5" />
+      <node id="3177368305997963726" at="34,0,35,0" concept="6" trace="Function$iC" />
+      <node id="3177368305997963726" at="35,0,36,0" concept="6" trace="IComponentContent$jl" />
+      <node id="3177368305997963726" at="36,0,37,0" concept="6" trace="CompFunctionAdapter_old$L8" />
+      <node id="3177368305997963726" at="40,0,41,0" concept="6" trace="fun$NLoa" />
+      <node id="3177368305997963726" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3177368305997963726" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3177368305997963726" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3177368305997964991" at="27,0,32,0" concept="7" trace="createCompFunctionAdapter_old_nz2yf9_a0a0a#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3177368305997963726" at="16,46,17,32" />
+      <scope id="3177368305997963726" at="20,46,21,41" />
+      <scope id="3177368305997964721" at="24,39,25,66" />
+      <scope id="3177368305997964991" at="27,77,30,26">
+        <var name="n0" id="3177368305997964991" />
+      </scope>
+      <scope id="3177368305997963726" at="15,0,19,0" />
+      <scope id="3177368305997963726" at="19,0,23,0" />
+      <scope id="3177368305997963726" at="23,0,27,0">
+        <var name="sourceNode" id="3177368305997963726" />
+      </scope>
+      <scope id="3177368305997964991" at="27,0,32,0">
+        <var name="p0" id="3177368305997964991" />
+      </scope>
+      <unit id="3177368305997963726" at="39,0,42,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_0$LINKS" />
+      <unit id="3177368305997963726" at="33,0,38,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_0$CONCEPTS" />
+      <unit id="3177368305997963726" at="14,0,43,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_0" />
+    </file>
+    <file name="pasteFunction_PasteWrapper_1.java">
+      <node id="3177368305998000565" at="16,46,17,47" concept="5" />
+      <node id="3177368305998000565" at="20,46,21,44" concept="5" />
+      <node id="3177368305998001794" at="24,39,25,65" concept="5" />
+      <node id="3177368305998000565" at="29,0,30,0" concept="6" trace="CompFunctionAdapter_old$L8" />
+      <node id="3177368305998000565" at="30,0,31,0" concept="6" trace="IToplevelExprContent$AI" />
+      <node id="3177368305998000565" at="34,0,35,0" concept="6" trace="fun$NLoa" />
+      <node id="3177368305998000565" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3177368305998000565" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3177368305998000565" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3177368305998000565" at="16,46,17,47" />
+      <scope id="3177368305998000565" at="20,46,21,44" />
+      <scope id="3177368305998000567" at="24,39,25,65" />
+      <scope id="3177368305998000565" at="15,0,19,0" />
+      <scope id="3177368305998000565" at="19,0,23,0" />
+      <scope id="3177368305998000565" at="23,0,27,0">
+        <var name="sourceNode" id="3177368305998000565" />
+      </scope>
+      <unit id="3177368305998000565" at="33,0,36,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_1$LINKS" />
+      <unit id="3177368305998000565" at="28,0,32,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_1$CONCEPTS" />
+      <unit id="3177368305998000565" at="14,0,37,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_1" />
+    </file>
+  </root>
+  <root nodeRef="r:958ba0e0-7647-4e09-b109-afc6108abac1(org.iets3.components.core.actions)/3788552209998910666">
+    <file name="pasteConstant_PasteWrapper_0.java">
+      <node id="3788552209998911630" at="16,46,17,32" concept="5" />
+      <node id="3788552209998911630" at="20,46,21,41" concept="5" />
+      <node id="3788552209998912599" at="24,39,25,62" concept="5" />
+      <node id="3788552209998912597" at="27,73,28,79" concept="4" />
+      <node id="3788552209998912597" at="28,79,29,101" concept="1" />
+      <node id="3788552209998912597" at="29,101,30,26" concept="5" />
+      <node id="3788552209998911630" at="34,0,35,0" concept="6" trace="Constant$5s" />
+      <node id="3788552209998911630" at="35,0,36,0" concept="6" trace="IComponentContent$jl" />
+      <node id="3788552209998911630" at="36,0,37,0" concept="6" trace="CompConstantAdapter$_G" />
+      <node id="3788552209998911630" at="37,0,38,0" concept="6" trace="IToplevelExprContent$AI" />
+      <node id="3788552209998911630" at="41,0,42,0" concept="6" trace="toplevelExprContent$igxr" />
+      <node id="3788552209998911630" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552209998911630" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552209998911630" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3788552209998912597" at="27,0,32,0" concept="7" trace="createCompConstantAdapter_7uypwr_a0a0a#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3788552209998911630" at="16,46,17,32" />
+      <scope id="3788552209998911630" at="20,46,21,41" />
+      <scope id="3788552209998911632" at="24,39,25,62" />
+      <scope id="3788552209998912597" at="27,73,30,26">
+        <var name="n0" id="3788552209998912597" />
+      </scope>
+      <scope id="3788552209998911630" at="15,0,19,0" />
+      <scope id="3788552209998911630" at="19,0,23,0" />
+      <scope id="3788552209998911630" at="23,0,27,0">
+        <var name="sourceNode" id="3788552209998911630" />
+      </scope>
+      <scope id="3788552209998912597" at="27,0,32,0">
+        <var name="p0" id="3788552209998912597" />
+      </scope>
+      <unit id="3788552209998911630" at="40,0,43,0" name="org.iets3.components.core.actions.pasteConstant_PasteWrapper_0$LINKS" />
+      <unit id="3788552209998911630" at="33,0,39,0" name="org.iets3.components.core.actions.pasteConstant_PasteWrapper_0$CONCEPTS" />
+      <unit id="3788552209998911630" at="14,0,44,0" name="org.iets3.components.core.actions.pasteConstant_PasteWrapper_0" />
+    </file>
+    <file name="pasteConstant_PasteWrapper_1.java">
+      <node id="3788552209998910667" at="16,46,17,43" concept="5" />
+      <node id="3788552209998910667" at="20,46,21,44" concept="5" />
+      <node id="3788552210000355910" at="24,39,25,91" concept="5" />
+      <node id="3788552209998910667" at="29,0,30,0" concept="6" trace="CompConstantAdapter$_G" />
+      <node id="3788552209998910667" at="30,0,31,0" concept="6" trace="IToplevelExprContent$AI" />
+      <node id="3788552209998910667" at="34,0,35,0" concept="6" trace="toplevelExprContent$igxr" />
+      <node id="3788552209998910667" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552209998910667" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552209998910667" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3788552209998910667" at="16,46,17,43" />
+      <scope id="3788552209998910667" at="20,46,21,44" />
+      <scope id="3788552209998916238" at="24,39,25,91" />
+      <scope id="3788552209998910667" at="15,0,19,0" />
+      <scope id="3788552209998910667" at="19,0,23,0" />
+      <scope id="3788552209998910667" at="23,0,27,0">
+        <var name="sourceNode" id="3788552209998910667" />
+      </scope>
+      <unit id="3788552209998910667" at="33,0,36,0" name="org.iets3.components.core.actions.pasteConstant_PasteWrapper_1$LINKS" />
+      <unit id="3788552209998910667" at="28,0,32,0" name="org.iets3.components.core.actions.pasteConstant_PasteWrapper_1$CONCEPTS" />
+      <unit id="3788552209998910667" at="14,0,37,0" name="org.iets3.components.core.actions.pasteConstant_PasteWrapper_1" />
+    </file>
+  </root>
+  <root nodeRef="r:958ba0e0-7647-4e09-b109-afc6108abac1(org.iets3.components.core.actions)/3788552210010257663">
+    <file name="pasteStateMachine_PasteWrapper_0.java">
+      <node id="3788552210010257671" at="16,46,17,36" concept="5" />
+      <node id="3788552210010257671" at="20,46,21,41" concept="5" />
+      <node id="3788552210010258345" at="24,39,25,66" concept="5" />
+      <node id="3788552210010258343" at="27,77,28,83" concept="4" />
+      <node id="3788552210010258343" at="28,83,29,101" concept="1" />
+      <node id="3788552210010258343" at="29,101,30,26" concept="5" />
+      <node id="3788552210010257671" at="34,0,35,0" concept="6" trace="StateMachine$He" />
+      <node id="3788552210010257671" at="35,0,36,0" concept="6" trace="IComponentContent$jl" />
+      <node id="3788552210010257671" at="36,0,37,0" concept="6" trace="CompStateMachineAdapter$QH" />
+      <node id="3788552210010257671" at="37,0,38,0" concept="6" trace="IToplevelExprContent$AI" />
+      <node id="3788552210010257671" at="41,0,42,0" concept="6" trace="toplevelExprContent$igxr" />
+      <node id="3788552210010257671" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552210010257671" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552210010257671" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3788552210010258343" at="27,0,32,0" concept="7" trace="createCompStateMachineAdapter_tx2h5g_a0a0a#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3788552210010257671" at="16,46,17,36" />
+      <scope id="3788552210010257671" at="20,46,21,41" />
+      <scope id="3788552210010257673" at="24,39,25,66" />
+      <scope id="3788552210010258343" at="27,77,30,26">
+        <var name="n0" id="3788552210010258343" />
+      </scope>
+      <scope id="3788552210010257671" at="15,0,19,0" />
+      <scope id="3788552210010257671" at="19,0,23,0" />
+      <scope id="3788552210010257671" at="23,0,27,0">
+        <var name="sourceNode" id="3788552210010257671" />
+      </scope>
+      <scope id="3788552210010258343" at="27,0,32,0">
+        <var name="p0" id="3788552210010258343" />
+      </scope>
+      <unit id="3788552210010257671" at="40,0,43,0" name="org.iets3.components.core.actions.pasteStateMachine_PasteWrapper_0$LINKS" />
+      <unit id="3788552210010257671" at="33,0,39,0" name="org.iets3.components.core.actions.pasteStateMachine_PasteWrapper_0$CONCEPTS" />
+      <unit id="3788552210010257671" at="14,0,44,0" name="org.iets3.components.core.actions.pasteStateMachine_PasteWrapper_0" />
+    </file>
+    <file name="pasteStateMachine_PasteWrapper_1.java">
+      <node id="3788552210010257664" at="16,46,17,47" concept="5" />
+      <node id="3788552210010257664" at="20,46,21,44" concept="5" />
+      <node id="3788552210010261304" at="24,39,25,91" concept="5" />
+      <node id="3788552210010257664" at="29,0,30,0" concept="6" trace="CompStateMachineAdapter$QH" />
+      <node id="3788552210010257664" at="30,0,31,0" concept="6" trace="IToplevelExprContent$AI" />
+      <node id="3788552210010257664" at="34,0,35,0" concept="6" trace="toplevelExprContent$igxr" />
+      <node id="3788552210010257664" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552210010257664" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552210010257664" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3788552210010257664" at="16,46,17,47" />
+      <scope id="3788552210010257664" at="20,46,21,44" />
+      <scope id="3788552210010260861" at="24,39,25,91" />
+      <scope id="3788552210010257664" at="15,0,19,0" />
+      <scope id="3788552210010257664" at="19,0,23,0" />
+      <scope id="3788552210010257664" at="23,0,27,0">
+        <var name="sourceNode" id="3788552210010257664" />
+      </scope>
+      <unit id="3788552210010257664" at="33,0,36,0" name="org.iets3.components.core.actions.pasteStateMachine_PasteWrapper_1$LINKS" />
+      <unit id="3788552210010257664" at="28,0,32,0" name="org.iets3.components.core.actions.pasteStateMachine_PasteWrapper_1$CONCEPTS" />
+      <unit id="3788552210010257664" at="14,0,37,0" name="org.iets3.components.core.actions.pasteStateMachine_PasteWrapper_1" />
+    </file>
+  </root>
+  <root nodeRef="r:958ba0e0-7647-4e09-b109-afc6108abac1(org.iets3.components.core.actions)/3788552210011775162">
+    <file name="pasteFunction_PasteWrapper_0.java">
+      <node id="3788552210011775170" at="16,46,17,32" concept="5" />
+      <node id="3788552210011775170" at="20,46,21,41" concept="5" />
+      <node id="3788552210011776484" at="24,39,25,62" concept="5" />
+      <node id="3788552210011776486" at="27,73,28,79" concept="4" />
+      <node id="3788552210011776486" at="28,79,29,87" concept="1" />
+      <node id="3788552210011776486" at="29,87,30,26" concept="5" />
+      <node id="3788552210011775170" at="34,0,35,0" concept="6" trace="Function$iC" />
+      <node id="3788552210011775170" at="35,0,36,0" concept="6" trace="IComponentContent$jl" />
+      <node id="3788552210011775170" at="36,0,37,0" concept="6" trace="CompFunctionAdapter$XP" />
+      <node id="3788552210011775170" at="37,0,38,0" concept="6" trace="IFunctionLike$t6" />
+      <node id="3788552210011775170" at="41,0,42,0" concept="6" trace="functionLike$1qr0" />
+      <node id="3788552210011775170" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552210011775170" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552210011775170" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3788552210011776486" at="27,0,32,0" concept="7" trace="createCompFunctionAdapter_nz2yf9_a0a0a#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3788552210011775170" at="16,46,17,32" />
+      <scope id="3788552210011775170" at="20,46,21,41" />
+      <scope id="3788552210011775172" at="24,39,25,62" />
+      <scope id="3788552210011776486" at="27,73,30,26">
+        <var name="n0" id="3788552210011776486" />
+      </scope>
+      <scope id="3788552210011775170" at="15,0,19,0" />
+      <scope id="3788552210011775170" at="19,0,23,0" />
+      <scope id="3788552210011775170" at="23,0,27,0">
+        <var name="sourceNode" id="3788552210011775170" />
+      </scope>
+      <scope id="3788552210011776486" at="27,0,32,0">
+        <var name="p0" id="3788552210011776486" />
+      </scope>
+      <unit id="3788552210011775170" at="40,0,43,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_0$LINKS" />
+      <unit id="3788552210011775170" at="33,0,39,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_0$CONCEPTS" />
+      <unit id="3788552210011775170" at="14,0,44,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_0" />
+    </file>
+    <file name="pasteFunction_PasteWrapper_1.java">
+      <node id="3788552210011775163" at="16,46,17,43" concept="5" />
+      <node id="3788552210011775163" at="20,46,21,44" concept="5" />
+      <node id="3788552210011778716" at="24,39,25,84" concept="5" />
+      <node id="3788552210011775163" at="29,0,30,0" concept="6" trace="CompFunctionAdapter$XP" />
+      <node id="3788552210011775163" at="30,0,31,0" concept="6" trace="IToplevelExprContent$AI" />
+      <node id="3788552210011775163" at="34,0,35,0" concept="6" trace="functionLike$1qr0" />
+      <node id="3788552210011775163" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552210011775163" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3788552210011775163" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3788552210011775163" at="16,46,17,43" />
+      <scope id="3788552210011775163" at="20,46,21,44" />
+      <scope id="3788552210011777946" at="24,39,25,84" />
+      <scope id="3788552210011775163" at="15,0,19,0" />
+      <scope id="3788552210011775163" at="19,0,23,0" />
+      <scope id="3788552210011775163" at="23,0,27,0">
+        <var name="sourceNode" id="3788552210011775163" />
+      </scope>
+      <unit id="3788552210011775163" at="33,0,36,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_1$LINKS" />
+      <unit id="3788552210011775163" at="28,0,32,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_1$CONCEPTS" />
+      <unit id="3788552210011775163" at="14,0,37,0" name="org.iets3.components.core.actions.pasteFunction_PasteWrapper_1" />
+    </file>
+  </root>
+  <root nodeRef="r:958ba0e0-7647-4e09-b109-afc6108abac1(org.iets3.components.core.actions)/7464246867553661835">
+    <file name="ComponentsFactories.java">
+      <node id="1483061781794594362" at="22,7,23,43" concept="4" />
+      <node id="1483061781794594535" at="24,81,25,122" concept="1" />
+      <node id="7464246867553661839" at="28,7,29,41" concept="4" />
+      <node id="1483061781793392097" at="30,89,31,120" concept="1" />
+      <node id="7464246867553661890" at="31,120,32,125" concept="1" />
+      <node id="1483061781793800930" at="39,7,40,41" concept="4" />
+      <node id="1483061781793800982" at="41,98,42,125" concept="1" />
+      <node id="1483061781793809461" at="42,125,43,199" concept="1" />
+      <node id="1483061781793861282" at="50,7,51,41" concept="4" />
+      <node id="1483061781793861344" at="52,87,53,133" concept="1" />
+      <node id="1483061781793876106" at="60,7,61,41" concept="4" />
+      <node id="1483061781793876109" at="62,89,63,125" concept="1" />
+      <node id="1483061781793880761" at="70,7,71,41" concept="4" />
+      <node id="1483061781793880764" at="72,85,73,123" concept="1" />
+      <node id="1483061781793887289" at="80,7,81,41" concept="4" />
+      <node id="1483061781793887292" at="82,77,83,183" concept="1" />
+      <node id="1483061781793911664" at="90,7,91,41" concept="4" />
+      <node id="1483061781793911667" at="92,77,93,115" concept="1" />
+      <node id="7464246867553661835" at="100,0,101,0" concept="6" trace="INamedConcept$Kd" />
+      <node id="7464246867553661835" at="101,0,102,0" concept="6" trace="IComponentsChunkContent$uO" />
+      <node id="7464246867553661835" at="102,0,103,0" concept="6" trace="AbstractComponentInstanceWithRef$12" />
+      <node id="7464246867553661835" at="103,0,104,0" concept="6" trace="AbstractConnectorBase$kt" />
+      <node id="7464246867553661835" at="104,0,105,0" concept="6" trace="AbstractInstancesTarget$Wc" />
+      <node id="7464246867553661835" at="105,0,106,0" concept="6" trace="AbstractPortsTarget$DF" />
+      <node id="7464246867553661835" at="106,0,107,0" concept="6" trace="ActionBlock$3z" />
+      <node id="7464246867553661835" at="107,0,108,0" concept="6" trace="PortRefExpr$$C" />
+      <node id="7464246867553661835" at="111,0,112,0" concept="6" trace="name$MnvL" />
+      <node id="7464246867553661835" at="112,0,113,0" concept="6" trace="public$9JFf" />
+      <node id="7464246867553661835" at="116,0,117,0" concept="6" trace="component$xlLY" />
+      <node id="7464246867553661835" at="117,0,118,0" concept="6" trace="parameterValues$X3HT" />
+      <node id="7464246867553661835" at="118,0,119,0" concept="6" trace="connectorType$8zQx" />
+      <node id="7464246867553661835" at="119,0,120,0" concept="6" trace="component$GVDP" />
+      <node id="7464246867553661835" at="120,0,121,0" concept="6" trace="portType$f3GS" />
+      <node id="7464246867553661835" at="121,0,122,0" concept="6" trace="actions$qzBr" />
+      <node id="7464246867553661835" at="122,0,123,0" concept="6" trace="port$6ccY" />
+      <node id="1483061781794594362" at="23,43,26,9" concept="2" />
+      <node id="1483061781793861282" at="51,41,54,9" concept="2" />
+      <node id="1483061781793876106" at="61,41,64,9" concept="2" />
+      <node id="1483061781793880761" at="71,41,74,9" concept="2" />
+      <node id="1483061781793887289" at="81,41,84,9" concept="2" />
+      <node id="1483061781793911664" at="91,41,94,9" concept="2" />
+      <node id="7464246867553661839" at="29,41,33,9" concept="2" />
+      <node id="1483061781793800930" at="40,41,44,9" concept="2" />
+      <node id="1483061781794594362" at="21,102,27,7" concept="0" />
+      <node id="1483061781793861282" at="49,102,55,7" concept="0" />
+      <node id="1483061781793876106" at="59,102,65,7" concept="0" />
+      <node id="1483061781793880761" at="69,102,75,7" concept="0" />
+      <node id="1483061781793887289" at="79,102,85,7" concept="0" />
+      <node id="1483061781793911664" at="89,102,95,7" concept="0" />
+      <node id="7464246867553661839" at="27,7,34,7" concept="0" />
+      <node id="1483061781793800930" at="38,102,45,7" concept="0" />
+      <node id="1483061781793861164" at="49,0,57,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781793876103" at="59,0,67,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781793880758" at="69,0,77,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781793887286" at="79,0,87,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781793911661" at="89,0,97,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781793800927" at="38,0,47,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="7464246867553661836" at="21,0,36,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1483061781794594366" at="24,81,25,122" />
+      <scope id="1483061781793861284" at="52,87,53,133" />
+      <scope id="1483061781793876108" at="62,89,63,125" />
+      <scope id="1483061781793880763" at="72,85,73,123" />
+      <scope id="1483061781793887291" at="82,77,83,183" />
+      <scope id="1483061781793911666" at="92,77,93,115" />
+      <scope id="7464246867553661841" at="30,89,32,125" />
+      <scope id="1483061781793800932" at="41,98,43,199" />
+      <scope id="1483061781794594362" at="22,7,26,9">
+        <var name="namedNode" id="1483061781794594362" />
+      </scope>
+      <scope id="1483061781793861282" at="50,7,54,9">
+        <var name="oldNode" id="1483061781793861282" />
+      </scope>
+      <scope id="1483061781793876106" at="60,7,64,9">
+        <var name="oldNode" id="1483061781793876106" />
+      </scope>
+      <scope id="1483061781793880761" at="70,7,74,9">
+        <var name="oldNode" id="1483061781793880761" />
+      </scope>
+      <scope id="1483061781793887289" at="80,7,84,9">
+        <var name="oldNode" id="1483061781793887289" />
+      </scope>
+      <scope id="1483061781793911664" at="90,7,94,9">
+        <var name="oldNode" id="1483061781793911664" />
+      </scope>
+      <scope id="7464246867553661839" at="28,7,33,9">
+        <var name="oldNode" id="7464246867553661839" />
+      </scope>
+      <scope id="1483061781793800930" at="39,7,44,9">
+        <var name="oldNode" id="1483061781793800930" />
+      </scope>
+      <scope id="1483061781793861164" at="49,102,55,7" />
+      <scope id="1483061781793876103" at="59,102,65,7" />
+      <scope id="1483061781793880758" at="69,102,75,7" />
+      <scope id="1483061781793887286" at="79,102,85,7" />
+      <scope id="1483061781793911661" at="89,102,95,7" />
+      <scope id="1483061781793800927" at="38,102,45,7" />
+      <scope id="1483061781793861164" at="49,0,57,0">
+        <var name="enclosingNode" id="1483061781793861164" />
+        <var name="index" id="1483061781793861164" />
+        <var name="model" id="1483061781793861164" />
+        <var name="newNode" id="1483061781793861164" />
+        <var name="sampleNode" id="1483061781793861164" />
+      </scope>
+      <scope id="1483061781793876103" at="59,0,67,0">
+        <var name="enclosingNode" id="1483061781793876103" />
+        <var name="index" id="1483061781793876103" />
+        <var name="model" id="1483061781793876103" />
+        <var name="newNode" id="1483061781793876103" />
+        <var name="sampleNode" id="1483061781793876103" />
+      </scope>
+      <scope id="1483061781793880758" at="69,0,77,0">
+        <var name="enclosingNode" id="1483061781793880758" />
+        <var name="index" id="1483061781793880758" />
+        <var name="model" id="1483061781793880758" />
+        <var name="newNode" id="1483061781793880758" />
+        <var name="sampleNode" id="1483061781793880758" />
+      </scope>
+      <scope id="1483061781793887286" at="79,0,87,0">
+        <var name="enclosingNode" id="1483061781793887286" />
+        <var name="index" id="1483061781793887286" />
+        <var name="model" id="1483061781793887286" />
+        <var name="newNode" id="1483061781793887286" />
+        <var name="sampleNode" id="1483061781793887286" />
+      </scope>
+      <scope id="1483061781793911661" at="89,0,97,0">
+        <var name="enclosingNode" id="1483061781793911661" />
+        <var name="index" id="1483061781793911661" />
+        <var name="model" id="1483061781793911661" />
+        <var name="newNode" id="1483061781793911661" />
+        <var name="sampleNode" id="1483061781793911661" />
+      </scope>
+      <scope id="1483061781793800927" at="38,0,47,0">
+        <var name="enclosingNode" id="1483061781793800927" />
+        <var name="index" id="1483061781793800927" />
+        <var name="model" id="1483061781793800927" />
+        <var name="newNode" id="1483061781793800927" />
+        <var name="sampleNode" id="1483061781793800927" />
+      </scope>
+      <scope id="7464246867553661836" at="21,102,34,7" />
+      <scope id="7464246867553661836" at="21,0,36,0">
+        <var name="enclosingNode" id="7464246867553661836" />
+        <var name="index" id="7464246867553661836" />
+        <var name="model" id="7464246867553661836" />
+        <var name="newNode" id="7464246867553661836" />
+        <var name="sampleNode" id="7464246867553661836" />
+      </scope>
+      <unit id="7464246867553661835" at="110,0,114,0" name="org.iets3.components.core.actions.ComponentsFactories$PROPS" />
+      <unit id="7464246867553661835" at="115,0,124,0" name="org.iets3.components.core.actions.ComponentsFactories$LINKS" />
+      <unit id="1483061781793861164" at="48,0,58,0" name="org.iets3.components.core.actions.ComponentsFactories$NodeFactory_1483061781793861164" />
+      <unit id="1483061781793876103" at="58,0,68,0" name="org.iets3.components.core.actions.ComponentsFactories$NodeFactory_1483061781793876103" />
+      <unit id="1483061781793880758" at="68,0,78,0" name="org.iets3.components.core.actions.ComponentsFactories$NodeFactory_1483061781793880758" />
+      <unit id="1483061781793887286" at="78,0,88,0" name="org.iets3.components.core.actions.ComponentsFactories$NodeFactory_1483061781793887286" />
+      <unit id="1483061781793911661" at="88,0,98,0" name="org.iets3.components.core.actions.ComponentsFactories$NodeFactory_1483061781793911661" />
+      <unit id="7464246867553661835" at="99,0,109,0" name="org.iets3.components.core.actions.ComponentsFactories$CONCEPTS" />
+      <unit id="1483061781793800927" at="37,0,48,0" name="org.iets3.components.core.actions.ComponentsFactories$NodeFactory_1483061781793800927" />
+      <unit id="7464246867553661836" at="20,0,37,0" name="org.iets3.components.core.actions.ComponentsFactories$NodeFactory_7464246867553661836" />
+      <unit id="7464246867553661835" at="19,0,125,0" name="org.iets3.components.core.actions.ComponentsFactories" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,32,0" name="org.iets3.core.expr.util.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:7abb491e-f7ef-4e79-ba11-fd85af408f42(org.iets3.core.expr.util.actions)/1483061781794401859">
+    <file name="ExpressionUtilFactories.java">
+      <node id="1483061781794401863" at="18,7,19,41" concept="4" />
+      <node id="1483061781794401925" at="20,85,21,185" concept="1" />
+      <node id="6659604735287445442" at="28,7,29,41" concept="4" />
+      <node id="6659604735287447391" at="30,82,31,191" concept="1" />
+      <node id="6659604735287473002" at="32,83,33,50" concept="4" />
+      <node id="6659604735287473002" at="33,50,34,0" concept="5" />
+      <node id="6659604735287473789" at="34,0,35,121" concept="1" />
+      <node id="1483061781794448985" at="42,7,43,41" concept="4" />
+      <node id="1483061781794449047" at="44,79,45,117" concept="1" />
+      <node id="1483061781794401859" at="52,0,53,0" concept="6" trace="AbstractDecTreeNode$mH" />
+      <node id="1483061781794401859" at="53,0,54,0" concept="6" trace="DecTabExpression$vi" />
+      <node id="1483061781794401859" at="54,0,55,0" concept="6" trace="Expression$D_" />
+      <node id="1483061781794401859" at="55,0,56,0" concept="6" trace="SingleValueRS$IB" />
+      <node id="1483061781794401859" at="59,0,60,0" concept="6" trace="children$7gtX" />
+      <node id="1483061781794401859" at="60,0,61,0" concept="6" trace="expressions$2RXU" />
+      <node id="1483061781794401859" at="61,0,62,0" concept="6" trace="bound$dvCq" />
+      <node id="1483061781794401863" at="19,41,22,9" concept="2" />
+      <node id="1483061781794448985" at="43,41,46,9" concept="2" />
+      <node id="1483061781794401863" at="17,102,23,7" concept="0" />
+      <node id="1483061781794448985" at="41,102,47,7" concept="0" />
+      <node id="6659604735287445442" at="29,41,36,9" concept="2" />
+      <node id="1483061781794401860" at="17,0,25,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781794448706" at="41,0,49,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="6659604735287445442" at="27,102,37,7" concept="0" />
+      <node id="1483061781794423940" at="27,0,39,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1483061781794401865" at="20,85,21,185" />
+      <scope id="6659604735287445446" at="30,82,31,191" />
+      <scope id="1483061781794448987" at="44,79,45,117" />
+      <scope id="6659604735287473002" at="32,83,35,121">
+        <var name="expressionNode" id="6659604735287473002" />
+      </scope>
+      <scope id="1483061781794401863" at="18,7,22,9">
+        <var name="oldNode" id="1483061781794401863" />
+      </scope>
+      <scope id="1483061781794448985" at="42,7,46,9">
+        <var name="oldNode" id="1483061781794448985" />
+      </scope>
+      <scope id="1483061781794401860" at="17,102,23,7" />
+      <scope id="1483061781794448706" at="41,102,47,7" />
+      <scope id="1483061781794401860" at="17,0,25,0">
+        <var name="enclosingNode" id="1483061781794401860" />
+        <var name="index" id="1483061781794401860" />
+        <var name="model" id="1483061781794401860" />
+        <var name="newNode" id="1483061781794401860" />
+        <var name="sampleNode" id="1483061781794401860" />
+      </scope>
+      <scope id="6659604735287445442" at="28,7,36,9">
+        <var name="oldNode" id="6659604735287445442" />
+      </scope>
+      <scope id="1483061781794448706" at="41,0,49,0">
+        <var name="enclosingNode" id="1483061781794448706" />
+        <var name="index" id="1483061781794448706" />
+        <var name="model" id="1483061781794448706" />
+        <var name="newNode" id="1483061781794448706" />
+        <var name="sampleNode" id="1483061781794448706" />
+      </scope>
+      <scope id="1483061781794423940" at="27,102,37,7" />
+      <scope id="1483061781794423940" at="27,0,39,0">
+        <var name="enclosingNode" id="1483061781794423940" />
+        <var name="index" id="1483061781794423940" />
+        <var name="model" id="1483061781794423940" />
+        <var name="newNode" id="1483061781794423940" />
+        <var name="sampleNode" id="1483061781794423940" />
+      </scope>
+      <unit id="1483061781794401859" at="58,0,63,0" name="org.iets3.core.expr.util.actions.ExpressionUtilFactories$LINKS" />
+      <unit id="1483061781794401859" at="51,0,57,0" name="org.iets3.core.expr.util.actions.ExpressionUtilFactories$CONCEPTS" />
+      <unit id="1483061781794401860" at="16,0,26,0" name="org.iets3.core.expr.util.actions.ExpressionUtilFactories$NodeFactory_1483061781794401860" />
+      <unit id="1483061781794448706" at="40,0,50,0" name="org.iets3.core.expr.util.actions.ExpressionUtilFactories$NodeFactory_1483061781794448706" />
+      <unit id="1483061781794423940" at="26,0,40,0" name="org.iets3.core.expr.util.actions.ExpressionUtilFactories$NodeFactory_1483061781794423940" />
+      <unit id="1483061781794401859" at="15,0,64,0" name="org.iets3.core.expr.util.actions.ExpressionUtilFactories" />
+    </file>
+  </root>
+</debug-info>
+

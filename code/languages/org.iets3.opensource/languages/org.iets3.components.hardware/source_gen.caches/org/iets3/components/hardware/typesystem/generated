@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="5fqxfmszncs0twseuf2eqnz7cf9w4bc">
+  <files names="HardwareConnectorsChekUtil.java:TypesystemDescriptor.java:addSubStructure_QuickFix.java:check_DeprecatedBusPortType_NonTypesystemRule.java:check_HardwareConnectors_NonTypesystemRule.java:check_WireConnector_NonTypesystemRule.java:markDeprecatedBusKind_NonTypesystemRule.java:replaceDeprecatedBusKind_QuickFix.java:typeof_BusInstanceRefTarget_InferenceRule.java:typeof_BusPortType_InferenceRule.java:typeof_Ethernet100MBitPortType_InferenceRule.java:typeof_Ethernet1GBitPortType_InferenceRule.java" />
+</product>
+

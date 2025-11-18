@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:5d67e954-7960-4214-97d1-8f5d3823a964(org.iets3.core.expr.collections.rt.rt)/5005695164076931660">
+    <file name="CollectionHelper.java">
+      <node id="4144350118941285228" at="17,99,18,45" concept="4" />
+      <node id="4144350118942368319" at="19,87,20,21" concept="0" />
+      <node id="4144350118942388141" at="21,5,22,49" concept="4" />
+      <node id="3374187462279506902" at="22,49,23,0" concept="6" />
+      <node id="4144350118941324631" at="23,0,24,18" concept="5" />
+      <node id="5005695164080008448" at="27,51,28,0" concept="6" />
+      <node id="5005695164080052904" at="28,0,29,29" concept="4" />
+      <node id="5005695164080008547" at="29,29,30,33" concept="4" />
+      <node id="5005695164080055923" at="30,33,31,0" concept="6" />
+      <node id="5005695164080057764" at="32,24,33,30" concept="4" />
+      <node id="5005695164080058729" at="34,30,35,16" concept="0" />
+      <node id="5005695164080057978" at="35,16,36,0" concept="6" />
+      <node id="5005695164080062807" at="38,5,39,15" concept="5" />
+      <node id="5005695164080063550" at="42,51,43,0" concept="6" />
+      <node id="5005695164080063551" at="43,0,44,29" concept="4" />
+      <node id="5005695164080063558" at="44,29,45,33" concept="4" />
+      <node id="5005695164080063567" at="45,33,46,0" concept="6" />
+      <node id="5005695164080063571" at="47,24,48,30" concept="4" />
+      <node id="5005695164080063580" at="49,33,50,16" concept="0" />
+      <node id="5005695164080063584" at="50,16,51,0" concept="6" />
+      <node id="5005695164080063589" at="53,5,54,15" concept="5" />
+      <node id="5005695164080536846" at="58,22,59,33" concept="5" />
+      <node id="5005695164080065184" at="60,5,61,29" concept="4" />
+      <node id="5005695164080065191" at="61,29,62,37" concept="4" />
+      <node id="5005695164080065200" at="62,37,63,0" concept="6" />
+      <node id="5005695164080065204" at="64,24,65,30" concept="4" />
+      <node id="5005695164080067701" at="65,30,66,27" concept="0" />
+      <node id="5005695164080065222" at="67,5,68,15" concept="5" />
+      <node id="8502488682832478688" at="72,22,73,33" concept="5" />
+      <node id="8502488682832478695" at="74,5,75,29" concept="4" />
+      <node id="8502488682832478702" at="75,29,76,37" concept="4" />
+      <node id="8502488682832478708" at="76,37,77,0" concept="6" />
+      <node id="8502488682832478712" at="78,24,79,30" concept="4" />
+      <node id="8502488682832478719" at="79,30,80,27" concept="0" />
+      <node id="8502488682832478726" at="81,5,82,15" concept="5" />
+      <node id="5005695164083190966" at="85,66,86,45" concept="4" />
+      <node id="5005695164083197611" at="87,36,88,26" concept="0" />
+      <node id="5005695164083091161" at="89,5,90,0" concept="6" />
+      <node id="5005695164083093286" at="90,0,91,0" concept="6" />
+      <node id="5005695164082605921" at="95,48,96,34" concept="5" />
+      <node id="5005695164083295075" at="98,7,99,49" concept="4" />
+      <node id="5005695164082599798" at="99,49,100,18" concept="5" />
+      <node id="2917872949023787710" at="103,67,104,45" concept="4" />
+      <node id="2917872949023787723" at="105,36,106,26" concept="0" />
+      <node id="2917872949023787731" at="107,5,108,0" concept="6" />
+      <node id="2917872949023787732" at="108,0,109,0" concept="6" />
+      <node id="2917872949023787745" at="113,48,114,35" concept="5" />
+      <node id="2917872949023787757" at="114,35,115,0" concept="6" />
+      <node id="2917872949023787765" at="117,7,118,53" concept="4" />
+      <node id="2917872949023787778" at="118,53,119,18" concept="5" />
+      <node id="4144350118941284660" at="18,45,21,5" concept="1" />
+      <node id="5005695164080519964" at="57,63,60,5" concept="2" />
+      <node id="8502488682832478686" at="71,63,74,5" concept="2" />
+      <node id="5005695164083165784" at="86,45,89,5" concept="1" />
+      <node id="2917872949023787717" at="104,45,107,5" concept="1" />
+      <node id="5005695164080057977" at="33,30,37,7" concept="2" />
+      <node id="5005695164080063578" at="48,30,52,7" concept="2" />
+      <node id="5005695164080065201" at="63,0,67,5" concept="1" />
+      <node id="8502488682832478709" at="77,0,81,5" concept="1" />
+      <node id="5005695164082589734" at="94,0,98,0" concept="3" trace="compare#(Ljava/lang/Number;Ljava/lang/Number;)I" />
+      <node id="2917872949023787743" at="112,0,117,0" concept="3" trace="compare#(Ljava/lang/Number;Ljava/lang/Number;)I" />
+      <node id="5005695164080008004" at="31,0,38,5" concept="1" />
+      <node id="5005695164080063568" at="46,0,53,5" concept="1" />
+      <node id="5005695164082595949" at="91,0,98,7" concept="0" />
+      <node id="2917872949023787733" at="109,0,117,7" concept="0" />
+      <node id="4144350118941100766" at="17,0,26,0" concept="7" trace="flatten#(Lorg/pcollections/PCollection;)Lorg/pcollections/PVector;" />
+      <node id="5005695164080065181" at="57,0,70,0" concept="7" trace="sumAsBigDecimal#(Lorg/pcollections/PCollection;)Ljava/lang/Number;" />
+      <node id="8502488682832478684" at="71,0,84,0" concept="7" trace="sumAsBigInteger#(Lorg/pcollections/PCollection;)Ljava/lang/Number;" />
+      <node id="5005695164080007929" at="27,0,41,0" concept="7" trace="min#(Lorg/pcollections/PCollection;)Ljava/lang/Number;" />
+      <node id="5005695164080063548" at="42,0,56,0" concept="7" trace="max#(Lorg/pcollections/PCollection;)Ljava/lang/Number;" />
+      <node id="5005695164082546913" at="85,0,102,0" concept="7" trace="sortAsc#(Lorg/pcollections/PCollection;)Lorg/pcollections/PVector;" />
+      <node id="2917872949023787687" at="103,0,121,0" concept="7" trace="sortDesc#(Lorg/pcollections/PCollection;)Lorg/pcollections/PVector;" />
+      <scope id="4144350118941284663" at="19,87,20,21" />
+      <scope id="5005695164080519966" at="58,22,59,33" />
+      <scope id="8502488682832478687" at="72,22,73,33" />
+      <scope id="5005695164083165790" at="87,36,88,26" />
+      <scope id="5005695164082589737" at="95,48,96,34" />
+      <scope id="2917872949023787722" at="105,36,106,26" />
+      <scope id="5005695164080057979" at="34,30,36,0" />
+      <scope id="5005695164080063579" at="49,33,51,0" />
+      <scope id="5005695164080065203" at="64,24,66,27">
+        <var name="j" id="5005695164080065205" />
+      </scope>
+      <scope id="8502488682832478711" at="78,24,80,27">
+        <var name="j" id="8502488682832478713" />
+      </scope>
+      <scope id="2917872949023787744" at="113,48,115,0" />
+      <scope id="4144350118941284660" at="18,45,21,5">
+        <var name="coll" id="4144350118941284661" />
+      </scope>
+      <scope id="5005695164083165784" at="86,45,89,5">
+        <var name="n" id="5005695164083165786" />
+      </scope>
+      <scope id="2917872949023787717" at="104,45,107,5">
+        <var name="n" id="2917872949023787718" />
+      </scope>
+      <scope id="5005695164080065201" at="63,0,67,5">
+        <var name="i" id="5005695164080065202" />
+      </scope>
+      <scope id="8502488682832478709" at="77,0,81,5">
+        <var name="i" id="8502488682832478710" />
+      </scope>
+      <scope id="5005695164082589734" at="94,0,98,0">
+        <var name="n1" id="5005695164082600834" />
+        <var name="n2" id="5005695164082601248" />
+      </scope>
+      <scope id="5005695164080008007" at="32,24,37,7">
+        <var name="j" id="5005695164080057765" />
+      </scope>
+      <scope id="5005695164080063570" at="47,24,52,7">
+        <var name="j" id="5005695164080063572" />
+      </scope>
+      <scope id="2917872949023787743" at="112,0,117,0">
+        <var name="n1" id="2917872949023787760" />
+        <var name="n2" id="2917872949023787762" />
+      </scope>
+      <scope id="4144350118941100769" at="17,99,24,18">
+        <var name="r" id="4144350118941285229" />
+        <var name="result" id="4144350118942388142" />
+      </scope>
+      <scope id="5005695164080008004" at="31,0,38,5">
+        <var name="i" id="5005695164080008005" />
+      </scope>
+      <scope id="5005695164080063568" at="46,0,53,5">
+        <var name="i" id="5005695164080063569" />
+      </scope>
+      <scope id="4144350118941100766" at="17,0,26,0">
+        <var name="vec" id="4144350118941101090" />
+      </scope>
+      <scope id="5005695164080065182" at="57,63,68,15">
+        <var name="o" id="5005695164080065185" />
+        <var name="sum" id="5005695164080065192" />
+      </scope>
+      <scope id="8502488682832478685" at="71,63,82,15">
+        <var name="o" id="8502488682832478696" />
+        <var name="sum" id="8502488682832478703" />
+      </scope>
+      <scope id="5005695164080007932" at="27,51,39,15">
+        <var name="min" id="5005695164080008548" />
+        <var name="o" id="5005695164080052905" />
+      </scope>
+      <scope id="5005695164080063549" at="42,51,54,15">
+        <var name="max" id="5005695164080063559" />
+        <var name="o" id="5005695164080063552" />
+      </scope>
+      <scope id="5005695164080065181" at="57,0,70,0">
+        <var name="c" id="5005695164080065226" />
+      </scope>
+      <scope id="8502488682832478684" at="71,0,84,0">
+        <var name="c" id="8502488682832478730" />
+      </scope>
+      <scope id="5005695164080007929" at="27,0,41,0">
+        <var name="c" id="5005695164080007954" />
+      </scope>
+      <scope id="5005695164080063548" at="42,0,56,0">
+        <var name="c" id="5005695164080063593" />
+      </scope>
+      <scope id="5005695164082546916" at="85,66,100,18">
+        <var name="l" id="5005695164083190967" />
+        <var name="result" id="5005695164083295076" />
+      </scope>
+      <scope id="2917872949023787688" at="103,67,119,18">
+        <var name="l" id="2917872949023787711" />
+        <var name="result" id="2917872949023787766" />
+      </scope>
+      <scope id="5005695164082546913" at="85,0,102,0">
+        <var name="vec" id="5005695164082547071" />
+      </scope>
+      <scope id="2917872949023787687" at="103,0,121,0">
+        <var name="vec" id="2917872949023787781" />
+      </scope>
+      <unit id="5005695164082584356" at="92,15,98,5" name="org.iets3.core.expr.collections.rt.rt.CollectionHelper$1" />
+      <unit id="2917872949023787739" at="110,15,117,5" name="org.iets3.core.expr.collections.rt.rt.CollectionHelper$2" />
+      <unit id="5005695164076931660" at="16,0,122,0" name="org.iets3.core.expr.collections.rt.rt.CollectionHelper" />
+    </file>
+  </root>
+</debug-info>
+

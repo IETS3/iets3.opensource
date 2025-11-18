@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="9,0,25,0" name="org.iets3.core.expr.typetags.bindingtime.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:ce959c43-f7e7-403d-86e3-006997995d4c(org.iets3.core.expr.typetags.bindingtime.typesystem)/1882445831733620291">
+    <file name="TypesystemDescriptor.java">
+      <node id="1882445831733620291" at="15,5,16,97" concept="5" />
+      <node id="1882445831733620291" at="16,97,17,55" concept="2" />
+      <node id="1882445831733620291" at="14,5,18,5" concept="0" />
+      <scope id="1882445831733620291" at="15,5,17,55">
+        <var name="nonTypesystemRule" id="1882445831733620291" />
+      </scope>
+    </file>
+    <file name="check_BTGroup_cycles_NonTypesystemRule.java">
+      <node id="1882445831733507485" at="23,7,24,66" concept="5" />
+      <node id="1882445831733507485" at="24,66,25,267" concept="5" />
+      <node id="1882445831733620291" at="29,50,30,31" concept="6" />
+      <node id="1882445831733620291" at="32,68,33,102" concept="6" />
+      <node id="1882445831733620291" at="35,30,36,17" concept="6" />
+      <node id="1882445831733620291" at="40,0,41,0" concept="9" trace="BTGroup$F6" />
+      <node id="1882445831733620291" at="19,0,21,0" concept="1" trace="check_BTGroup_cycles_NonTypesystemRule#()V" />
+      <node id="1882445831733620291" at="29,0,32,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1882445831733620291" at="32,0,35,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1882445831733620291" at="35,0,38,0" concept="4" trace="overrides#()Z" />
+      <node id="1882445831733507485" at="22,101,26,7" concept="0" />
+      <node id="1882445831733503840" at="21,120,27,5" concept="3" />
+      <node id="1882445831733620291" at="21,0,29,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1882445831733620291" at="19,51,19,51" />
+      <scope id="1882445831733620291" at="29,50,30,31" />
+      <scope id="1882445831733620291" at="32,68,33,102" />
+      <scope id="1882445831733620291" at="35,30,36,17" />
+      <scope id="1882445831733620291" at="19,0,21,0" />
+      <scope id="1882445831733507485" at="23,7,25,267">
+        <var name="_reporter_2309309498" id="1882445831733507485" />
+        <var name="errorTarget" id="1882445831733507485" />
+      </scope>
+      <scope id="1882445831733620291" at="29,0,32,0" />
+      <scope id="1882445831733620291" at="32,0,35,0">
+        <var name="argument" id="1882445831733620291" />
+      </scope>
+      <scope id="1882445831733620291" at="35,0,38,0" />
+      <scope id="1882445831733503842" at="22,101,26,7" />
+      <scope id="1882445831733620292" at="21,120,27,5" />
+      <scope id="1882445831733620291" at="21,0,29,0">
+        <var name="btGroup" id="1882445831733620291" />
+        <var name="status" id="1882445831733620291" />
+        <var name="typeCheckingContext" id="1882445831733620291" />
+      </scope>
+      <unit id="1882445831733620291" at="39,0,42,0" name="org.iets3.core.expr.typetags.bindingtime.typesystem.check_BTGroup_cycles_NonTypesystemRule$CONCEPTS" />
+      <unit id="1882445831733620291" at="18,0,43,0" name="org.iets3.core.expr.typetags.bindingtime.typesystem.check_BTGroup_cycles_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:ce959c43-f7e7-403d-86e3-006997995d4c(org.iets3.core.expr.typetags.bindingtime.typesystem)/1882445831733623843">
+    <file name="TypesystemDescriptor.java">
+      <node id="1882445831733623843" at="11,5,12,102" concept="5" />
+      <node id="1882445831733623843" at="12,102,13,55" concept="2" />
+      <node id="1882445831733623843" at="10,33,14,5" concept="0" />
+      <scope id="1882445831733623843" at="11,5,13,55">
+        <var name="nonTypesystemRule" id="1882445831733623843" />
+      </scope>
+    </file>
+    <file name="check_BTDeclaration_cycle_NonTypesystemRule.java">
+      <node id="1882445831733627448" at="23,7,24,66" concept="5" />
+      <node id="1882445831733627448" at="24,66,25,273" concept="5" />
+      <node id="1882445831733623843" at="29,50,30,37" concept="6" />
+      <node id="1882445831733623843" at="32,68,33,102" concept="6" />
+      <node id="1882445831733623843" at="35,30,36,17" concept="6" />
+      <node id="1882445831733623843" at="40,0,41,0" concept="9" trace="BTDeclaration$58" />
+      <node id="1882445831733623843" at="19,0,21,0" concept="1" trace="check_BTDeclaration_cycle_NonTypesystemRule#()V" />
+      <node id="1882445831733623843" at="29,0,32,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1882445831733623843" at="32,0,35,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1882445831733623843" at="35,0,38,0" concept="4" trace="overrides#()Z" />
+      <node id="1882445831733627448" at="22,107,26,7" concept="0" />
+      <node id="1882445831733623850" at="21,126,27,5" concept="3" />
+      <node id="1882445831733623843" at="21,0,29,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1882445831733623843" at="19,56,19,56" />
+      <scope id="1882445831733623843" at="29,50,30,37" />
+      <scope id="1882445831733623843" at="32,68,33,102" />
+      <scope id="1882445831733623843" at="35,30,36,17" />
+      <scope id="1882445831733623843" at="19,0,21,0" />
+      <scope id="1882445831733627448" at="23,7,25,273">
+        <var name="_reporter_2309309498" id="1882445831733627448" />
+        <var name="errorTarget" id="1882445831733627448" />
+      </scope>
+      <scope id="1882445831733623843" at="29,0,32,0" />
+      <scope id="1882445831733623843" at="32,0,35,0">
+        <var name="argument" id="1882445831733623843" />
+      </scope>
+      <scope id="1882445831733623843" at="35,0,38,0" />
+      <scope id="1882445831733623852" at="22,107,26,7" />
+      <scope id="1882445831733623844" at="21,126,27,5" />
+      <scope id="1882445831733623843" at="21,0,29,0">
+        <var name="btDeclaration" id="1882445831733623843" />
+        <var name="status" id="1882445831733623843" />
+        <var name="typeCheckingContext" id="1882445831733623843" />
+      </scope>
+      <unit id="1882445831733623843" at="39,0,42,0" name="org.iets3.core.expr.typetags.bindingtime.typesystem.check_BTDeclaration_cycle_NonTypesystemRule$CONCEPTS" />
+      <unit id="1882445831733623843" at="18,0,43,0" name="org.iets3.core.expr.typetags.bindingtime.typesystem.check_BTDeclaration_cycle_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:ce959c43-f7e7-403d-86e3-006997995d4c(org.iets3.core.expr.typetags.bindingtime.typesystem)/3563060761333499694">
+    <file name="TypesystemDescriptor.java">
+      <node id="3563060761333499694" at="19,5,20,118" concept="5" />
+      <node id="3563060761333499694" at="20,118,21,61" concept="2" />
+      <node id="3563060761333499694" at="18,5,22,5" concept="0" />
+      <scope id="3563060761333499694" at="19,5,21,61">
+        <var name="eliminationRule" id="3563060761333499694" />
+      </scope>
+    </file>
+    <file name="bindingTime_correct_staging_InequationReplacementRule.java">
+      <node id="6789886825414053714" at="36,141,37,19" concept="6" />
+      <node id="6789886825414006665" at="38,5,39,0" concept="8" />
+      <node id="7857268880429701113" at="39,0,40,87" concept="6" />
+      <node id="6789886825413843373" at="42,253,43,111" concept="5" />
+      <node id="6789886825413847439" at="43,111,44,113" concept="5" />
+      <node id="6789886825413852626" at="44,113,45,64" concept="5" />
+      <node id="6789886825413852634" at="45,64,46,64" concept="5" />
+      <node id="6789886825413853696" at="46,64,47,0" concept="8" />
+      <node id="6789886825413850202" at="47,0,48,86" concept="5" />
+      <node id="6789886825413872674" at="48,86,49,83" concept="2" />
+      <node id="6789886825413884743" at="49,83,50,83" concept="2" />
+      <node id="6789886825413842357" at="50,83,51,0" concept="8" />
+      <node id="2247268800683215899" at="51,0,52,55" concept="2" />
+      <node id="2247268800683254393" at="52,55,53,55" concept="2" />
+      <node id="7857268880431365995" at="53,55,54,0" concept="8" />
+      <node id="7857268880431403881" at="54,0,55,73" concept="5" />
+      <node id="7857268880431420174" at="55,73,56,73" concept="5" />
+      <node id="2490986482723271484" at="56,73,57,0" concept="8" />
+      <node id="7857268880429040900" at="57,0,58,28" concept="7" />
+      <node id="7857268880429024302" at="59,43,60,13" concept="6" />
+      <node id="2490986482723080774" at="61,5,62,0" concept="8" />
+      <node id="7857268880428942461" at="63,131,64,13" concept="6" />
+      <node id="7857268880428825718" at="65,5,66,0" concept="8" />
+      <node id="7857268880428012850" at="66,0,67,150" concept="7" />
+      <node id="3563060761334292326" at="69,7,70,66" concept="5" />
+      <node id="3563060761334292326" at="70,66,71,610" concept="5" />
+      <node id="3563060761334292326" at="71,610,72,79" concept="2" />
+      <node id="7857268880431369246" at="74,5,75,0" concept="8" />
+      <node id="3563060761333499694" at="77,207,78,35" concept="5" />
+      <node id="6789886825413843373" at="79,5,80,113" concept="5" />
+      <node id="6789886825413847439" at="80,113,81,115" concept="5" />
+      <node id="6789886825413852626" at="81,115,82,66" concept="5" />
+      <node id="6789886825413852634" at="82,66,83,66" concept="5" />
+      <node id="6789886825413853696" at="83,66,84,0" concept="8" />
+      <node id="6789886825413850202" at="84,0,85,88" concept="5" />
+      <node id="6789886825413872674" at="85,88,86,85" concept="2" />
+      <node id="6789886825413884743" at="86,85,87,85" concept="2" />
+      <node id="6789886825413842357" at="87,85,88,0" concept="8" />
+      <node id="2247268800683215899" at="88,0,89,57" concept="2" />
+      <node id="2247268800683254393" at="89,57,90,57" concept="2" />
+      <node id="7857268880431365995" at="90,57,91,0" concept="8" />
+      <node id="7857268880431403881" at="91,0,92,75" concept="5" />
+      <node id="7857268880431420174" at="92,75,93,75" concept="5" />
+      <node id="2490986482723271484" at="93,75,94,0" concept="8" />
+      <node id="7857268880429040900" at="94,0,95,30" concept="7" />
+      <node id="7857268880429024302" at="96,45,97,31" concept="6" />
+      <node id="2490986482723080774" at="98,7,99,0" concept="8" />
+      <node id="7857268880428942461" at="100,133,101,31" concept="6" />
+      <node id="7857268880428825718" at="102,7,103,0" concept="8" />
+      <node id="7857268880428012850" at="103,0,104,152" concept="7" />
+      <node id="3563060761334292326" at="105,231,106,32" concept="2" />
+      <node id="7857268880431369246" at="107,7,108,0" concept="8" />
+      <node id="3563060761333499694" at="109,5,110,27" concept="6" />
+      <node id="3563060761333499694" at="112,27,113,16" concept="6" />
+      <node id="3563060761333499694" at="115,71,116,105" concept="6" />
+      <node id="3563060761333499694" at="118,73,119,107" concept="6" />
+      <node id="3563060761333499694" at="122,57,123,28" concept="6" />
+      <node id="3563060761333499694" at="125,59,126,28" concept="6" />
+      <node id="3563060761333499694" at="130,0,131,0" concept="9" trace="TaggedType$O4" />
+      <node id="3563060761333499694" at="131,0,132,0" concept="9" trace="BTtag$DF" />
+      <node id="3563060761333499694" at="132,0,133,0" concept="9" trace="Type$WK" />
+      <node id="3563060761333499694" at="136,0,137,0" concept="9" trace="bindingtime$RIRF" />
+      <node id="3563060761333499694" at="140,0,141,0" concept="9" trace="name$MnvL" />
+      <node id="3563060761333499694" at="33,0,35,0" concept="1" trace="bindingTime_correct_staging_InequationReplacementRule#()V" />
+      <node id="6789886825414009050" at="35,97,38,5" concept="3" />
+      <node id="7857268880428978231" at="58,28,61,5" concept="3" />
+      <node id="7857268880428835665" at="62,0,65,5" concept="3" />
+      <node id="7857268880428978231" at="95,30,98,7" concept="3" />
+      <node id="7857268880428835665" at="99,0,102,7" concept="3" />
+      <node id="3563060761334225832" at="104,152,107,7" concept="3" />
+      <node id="3563060761333499694" at="112,0,115,0" concept="4" trace="isWeak#()Z" />
+      <node id="3563060761333499694" at="115,0,118,0" concept="4" trace="isApplicableSubtypeAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3563060761333499694" at="118,0,121,0" concept="4" trace="isApplicableSupertypeAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3563060761333499694" at="122,0,125,0" concept="4" trace="getApplicableSubtypeConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3563060761333499694" at="125,0,128,0" concept="4" trace="getApplicableSupertypeConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3563060761334292326" at="68,229,73,7" concept="0" />
+      <node id="3563060761333499694" at="35,0,42,0" concept="4" trace="isApplicableCustom#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;)Z" />
+      <node id="3563060761334225832" at="67,150,74,5" concept="3" />
+      <node id="3563060761333499694" at="78,35,109,5" concept="0" />
+      <node id="3563060761333499694" at="42,0,77,0" concept="4" trace="processInequation#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/EquationInfo;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;ZZ)V" />
+      <node id="3563060761333499694" at="77,0,112,0" concept="4" trace="checkInequation#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/EquationInfo;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;ZZ)Z" />
+      <scope id="3563060761333499694" at="33,66,33,66" />
+      <scope id="6789886825414009052" at="36,141,37,19" />
+      <scope id="7857268880428978233" at="59,43,60,13" />
+      <scope id="7857268880428835667" at="63,131,64,13" />
+      <scope id="7857268880428978233" at="96,45,97,31" />
+      <scope id="7857268880428835667" at="100,133,101,31" />
+      <scope id="3563060761334225834" at="105,231,106,32" />
+      <scope id="3563060761333499694" at="112,27,113,16" />
+      <scope id="3563060761333499694" at="115,71,116,105" />
+      <scope id="3563060761333499694" at="118,73,119,107" />
+      <scope id="3563060761333499694" at="122,57,123,28" />
+      <scope id="3563060761333499694" at="125,59,126,28" />
+      <scope id="3563060761333499694" at="33,0,35,0" />
+      <scope id="3563060761334292326" at="69,7,72,79">
+        <var name="_reporter_2309309498" id="3563060761334292326" />
+        <var name="errorTarget" id="3563060761334292326" />
+      </scope>
+      <scope id="3563060761333499694" at="112,0,115,0" />
+      <scope id="3563060761333499694" at="115,0,118,0">
+        <var name="node" id="3563060761333499694" />
+      </scope>
+      <scope id="3563060761333499694" at="118,0,121,0">
+        <var name="node" id="3563060761333499694" />
+      </scope>
+      <scope id="3563060761333499694" at="122,0,125,0" />
+      <scope id="3563060761333499694" at="125,0,128,0" />
+      <scope id="3563060761333766838" at="35,97,40,87" />
+      <scope id="3563060761334225834" at="68,229,73,7" />
+      <scope id="3563060761333499694" at="35,0,42,0">
+        <var name="status" id="3563060761333499694" />
+        <var name="subtype" id="3563060761333499694" />
+        <var name="supertype" id="3563060761333499694" />
+      </scope>
+      <scope id="3563060761333499696" at="79,5,108,0">
+        <var name="keys" id="6789886825413850205" />
+        <var name="subComponents" id="6789886825413843374" />
+        <var name="subTag" id="7857268880431403884" />
+        <var name="subTagMap" id="6789886825413852627" />
+        <var name="supComponents" id="6789886825413847440" />
+        <var name="supTag" id="7857268880431420177" />
+        <var name="supTagMap" id="6789886825413852635" />
+      </scope>
+      <scope id="3563060761333499696" at="42,253,75,0">
+        <var name="keys" id="6789886825413850205" />
+        <var name="subComponents" id="6789886825413843374" />
+        <var name="subTag" id="7857268880431403884" />
+        <var name="subTagMap" id="6789886825413852627" />
+        <var name="supComponents" id="6789886825413847440" />
+        <var name="supTag" id="7857268880431420177" />
+        <var name="supTagMap" id="6789886825413852635" />
+      </scope>
+      <scope id="3563060761333499694" at="77,207,110,27">
+        <var name="result_14532009" id="3563060761333499694" />
+      </scope>
+      <scope id="3563060761333499694" at="42,0,77,0">
+        <var name="equationInfo" id="3563060761333499694" />
+        <var name="inequalityIsLessThan" id="3563060761333499694" />
+        <var name="inequalityIsWeak" id="3563060761333499694" />
+        <var name="status" id="3563060761333499694" />
+        <var name="subtype" id="3563060761333499694" />
+        <var name="supertype" id="3563060761333499694" />
+        <var name="typeCheckingContext" id="3563060761333499694" />
+      </scope>
+      <scope id="3563060761333499694" at="77,0,112,0">
+        <var name="equationInfo" id="3563060761333499694" />
+        <var name="inequalityIsLessThan" id="3563060761333499694" />
+        <var name="inequalityIsWeak" id="3563060761333499694" />
+        <var name="status" id="3563060761333499694" />
+        <var name="subtype" id="3563060761333499694" />
+        <var name="supertype" id="3563060761333499694" />
+      </scope>
+      <unit id="3563060761333499694" at="135,0,138,0" name="org.iets3.core.expr.typetags.bindingtime.typesystem.bindingTime_correct_staging_InequationReplacementRule$LINKS" />
+      <unit id="3563060761333499694" at="139,0,142,0" name="org.iets3.core.expr.typetags.bindingtime.typesystem.bindingTime_correct_staging_InequationReplacementRule$PROPS" />
+      <unit id="3563060761333499694" at="129,0,134,0" name="org.iets3.core.expr.typetags.bindingtime.typesystem.bindingTime_correct_staging_InequationReplacementRule$CONCEPTS" />
+      <unit id="3563060761333499694" at="32,0,143,0" name="org.iets3.core.expr.typetags.bindingtime.typesystem.bindingTime_correct_staging_InequationReplacementRule" />
+    </file>
+  </root>
+</debug-info>
+

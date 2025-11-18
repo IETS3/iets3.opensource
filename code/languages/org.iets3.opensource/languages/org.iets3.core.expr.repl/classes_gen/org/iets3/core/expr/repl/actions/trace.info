@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,28,0" name="org.iets3.core.expr.repl.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:5ca3d8d1-aa0e-42c2-98ac-d04b99578b3b(org.iets3.core.expr.repl.actions)/1483061781794314593">
+    <file name="ReplFactories.java">
+      <node id="1483061781794314613" at="18,7,19,41" concept="4" />
+      <node id="1483061781794314755" at="20,80,21,183" concept="1" />
+      <node id="1483061781794353294" at="21,183,22,119" concept="1" />
+      <node id="1483061781794314593" at="29,0,30,0" concept="5" trace="AbstractCellRef$h" />
+      <node id="1483061781794314593" at="33,0,34,0" concept="5" trace="actuals$m3H2" />
+      <node id="1483061781794314593" at="34,0,35,0" concept="5" trace="finder$SYh4" />
+      <node id="1483061781794314613" at="19,41,23,9" concept="2" />
+      <node id="1483061781794314613" at="17,102,24,7" concept="0" />
+      <node id="1483061781794314594" at="17,0,26,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1483061781794314615" at="20,80,22,119" />
+      <scope id="1483061781794314613" at="18,7,23,9">
+        <var name="oldNode" id="1483061781794314613" />
+      </scope>
+      <scope id="1483061781794314594" at="17,102,24,7" />
+      <scope id="1483061781794314594" at="17,0,26,0">
+        <var name="enclosingNode" id="1483061781794314594" />
+        <var name="index" id="1483061781794314594" />
+        <var name="model" id="1483061781794314594" />
+        <var name="newNode" id="1483061781794314594" />
+        <var name="sampleNode" id="1483061781794314594" />
+      </scope>
+      <unit id="1483061781794314593" at="28,0,31,0" name="org.iets3.core.expr.repl.actions.ReplFactories$CONCEPTS" />
+      <unit id="1483061781794314593" at="32,0,36,0" name="org.iets3.core.expr.repl.actions.ReplFactories$LINKS" />
+      <unit id="1483061781794314594" at="16,0,27,0" name="org.iets3.core.expr.repl.actions.ReplFactories$NodeFactory_1483061781794314594" />
+      <unit id="1483061781794314593" at="15,0,37,0" name="org.iets3.core.expr.repl.actions.ReplFactories" />
+    </file>
+  </root>
+</debug-info>
+

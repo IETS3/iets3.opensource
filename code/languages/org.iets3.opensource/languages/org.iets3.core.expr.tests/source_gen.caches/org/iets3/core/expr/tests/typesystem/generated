@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="9p8fpbdj57q3hw8vwmdkysxqamg5hz2">
+  <files names="TypesystemDescriptor.java:autoRunTestItem_QuickFix.java:check_VectorProducer_NonTypesystemRule.java:compareMatcherTypes_ComparisonRule.java:matcherForAnyRecordType_comparableWith_anyMatcherForRecordType_ComparisonRule.java:matcherForAnyType_comparableWith_allMatcherTypes_ComparisonRule.java:typeof_AndMatcher_InferenceRule.java:typeof_AssertTestItem_InferenceRule.java:typeof_AssertThatTestItem_InferenceRule.java:typeof_ForceCastExpr_InferenceRule.java:typeof_InputVector_InferenceRule.java:typeof_IsInvalid_InferenceRule.java:typeof_IsValidRecord_InferenceRule.java:typeof_MuteEffect_InferenceRule.java:typeof_NamedAssertRef_InferenceRule.java:typeof_NoneExpr_InferenceRule.java:typeof_OptExpression_InferenceRule.java:typeof_StringContaining_InferenceRule.java" />
+</product>
+

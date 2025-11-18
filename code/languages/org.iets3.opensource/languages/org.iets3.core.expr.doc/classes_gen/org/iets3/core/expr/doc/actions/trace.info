@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="14,0,26,0" name="org.iets3.core.expr.doc.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:87327219-a095-48ee-a3db-d24478c80049(org.iets3.core.expr.doc.actions)/5187892047768426776">
+    <file name="pasteBookmark_PasteWrapper_0.java">
+      <node id="5187892047768426853" at="16,46,17,35" concept="3" />
+      <node id="5187892047768426853" at="20,46,21,40" concept="3" />
+      <node id="5187892047768433270" at="24,39,25,196" concept="2" />
+      <node id="5187892047768427507" at="25,196,26,65" concept="0" />
+      <node id="5187892047768439539" at="26,65,27,14" concept="3" />
+      <node id="5187892047768426853" at="31,0,32,0" concept="4" trace="BaseConcept$gP" />
+      <node id="5187892047768426853" at="32,0,33,0" concept="4" trace="BookmarkRedirect$8K" />
+      <node id="5187892047768426853" at="36,0,37,0" concept="4" trace="target$4J1y" />
+      <node id="5187892047768426853" at="15,0,19,0" concept="1" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5187892047768426853" at="19,0,23,0" concept="1" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5187892047768426853" at="23,0,29,0" concept="1" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="5187892047768426853" at="16,46,17,35" />
+      <scope id="5187892047768426853" at="20,46,21,40" />
+      <scope id="5187892047768426855" at="24,39,27,14">
+        <var name="br" id="5187892047768433271" />
+      </scope>
+      <scope id="5187892047768426853" at="15,0,19,0" />
+      <scope id="5187892047768426853" at="19,0,23,0" />
+      <scope id="5187892047768426853" at="23,0,29,0">
+        <var name="sourceNode" id="5187892047768426853" />
+      </scope>
+      <unit id="5187892047768426853" at="35,0,38,0" name="org.iets3.core.expr.doc.actions.pasteBookmark_PasteWrapper_0$LINKS" />
+      <unit id="5187892047768426853" at="30,0,34,0" name="org.iets3.core.expr.doc.actions.pasteBookmark_PasteWrapper_0$CONCEPTS" />
+      <unit id="5187892047768426853" at="14,0,39,0" name="org.iets3.core.expr.doc.actions.pasteBookmark_PasteWrapper_0" />
+    </file>
+  </root>
+</debug-info>
+

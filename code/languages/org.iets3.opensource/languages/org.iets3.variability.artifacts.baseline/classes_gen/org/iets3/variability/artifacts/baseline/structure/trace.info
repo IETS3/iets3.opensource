@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,37,0" name="org.iets3.variability.artifacts.baseline.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,30,0" name="org.iets3.variability.artifacts.baseline.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,71,0" name="org.iets3.variability.artifacts.baseline.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:7a9f78af-1fbe-4af5-b714-57e0f865a1b1(org.iets3.variability.artifacts.baseline.structure)/5521534041733556326">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5521534041733556326" at="12,0,13,0" concept="1" trace="props_IVariantBaselineConfigItem" />
+      <node id="5521534041733556326" at="21,55,22,76" concept="3" />
+      <node id="5521534041733556326" at="22,76,23,58" concept="0" />
+      <node id="5521534041733556326" at="24,9,25,48" concept="4" />
+      <node id="5521534041733556326" at="20,60,24,9" concept="2" />
+      <scope id="5521534041733556326" at="21,55,23,58">
+        <var name="cpb" id="5521534041733556326" />
+      </scope>
+      <scope id="5521534041733556326" at="20,60,25,48" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5521534041733556326" at="12,0,13,0" concept="5" trace="IVariantBaselineConfigItem" />
+      <node id="5521534041733556326" at="16,116,17,65" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5521534041733556326" at="15,0,16,0" concept="1" trace="myConceptIVariantBaselineConfigItem" />
+      <node id="5521534041733556326" at="38,60,39,51" concept="4" />
+      <node id="5521534041733556326" at="52,84,53,201" concept="3" />
+      <node id="5521534041733556326" at="53,201,54,19" concept="0" />
+      <node id="5521534041733556326" at="54,19,55,127" concept="0" />
+      <node id="5521534041733556326" at="55,127,56,17" concept="0" />
+      <node id="5678173081853934309" at="56,17,57,177" concept="0" />
+      <node id="5678173081853934308" at="57,177,58,167" concept="0" />
+      <node id="5521534041733556326" at="58,167,59,22" concept="4" />
+      <node id="5521534041733556326" at="52,0,61,0" concept="6" trace="createDescriptorForIVariantBaselineConfigItem#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5521534041733556326" at="38,60,39,51" />
+      <scope id="5521534041733556326" at="52,84,59,22">
+        <var name="b" id="5521534041733556326" />
+      </scope>
+      <scope id="5521534041733556326" at="52,0,61,0" />
+    </file>
+  </root>
+  <root nodeRef="r:7a9f78af-1fbe-4af5-b714-57e0f865a1b1(org.iets3.variability.artifacts.baseline.structure)/5678173081850862846">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5678173081850862846" at="13,0,14,0" concept="1" trace="props_VariantBaselineConfig" />
+      <node id="5678173081850862846" at="27,50,28,76" concept="3" />
+      <node id="5678173081850862846" at="28,76,29,35" concept="0" />
+      <node id="5678173081850862846" at="29,35,30,53" concept="0" />
+      <node id="5678173081850862846" at="31,9,32,43" concept="4" />
+      <node id="5678173081850862846" at="26,55,31,9" concept="2" />
+      <scope id="5678173081850862846" at="27,50,30,53">
+        <var name="cpb" id="5678173081850862846" />
+      </scope>
+      <scope id="5678173081850862846" at="26,55,32,43" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5678173081850862846" at="13,0,14,0" concept="5" trace="VariantBaselineConfig" />
+      <node id="5678173081850862846" at="17,65,18,60" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5678173081850862846" at="16,0,17,0" concept="1" trace="myConceptVariantBaselineConfig" />
+      <node id="5678173081850862846" at="40,55,41,46" concept="4" />
+      <node id="5678173081850862846" at="61,79,62,196" concept="3" />
+      <node id="5678173081850862846" at="62,196,63,33" concept="0" />
+      <node id="5678173081850862846" at="63,33,64,71" concept="0" />
+      <node id="5678173081850862846" at="64,71,65,127" concept="0" />
+      <node id="5678173081850862846" at="65,127,66,17" concept="0" />
+      <node id="5678173081853935237" at="66,17,67,197" concept="0" />
+      <node id="5678173081850862846" at="67,197,68,22" concept="4" />
+      <node id="5678173081850862846" at="61,0,70,0" concept="6" trace="createDescriptorForVariantBaselineConfig#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5678173081850862846" at="40,55,41,46" />
+      <scope id="5678173081850862846" at="61,79,68,22">
+        <var name="b" id="5678173081850862846" />
+      </scope>
+      <scope id="5678173081850862846" at="61,0,70,0" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/1136100386040127972">
+    <file name="IDValue.java">
+      <node id="1136100386040127978" at="9,40,10,13" concept="11" />
+      <node id="1136100386040127980" at="10,13,11,21" concept="2" />
+      <node id="1136100386040127974" at="9,0,13,0" concept="1" trace="IDValue#(Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="1136100386040127977" at="9,40,11,21" />
+      <scope id="1136100386040127974" at="9,0,13,0">
+        <var name="n" id="1136100386040127988" />
+        <var name="type" id="1136100386040128367" />
+      </scope>
+      <unit id="1136100386040127972" at="7,0,15,0" name="org.iets3.core.expr.mutable.plugin.IDValue" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/1136100386041071449">
+    <file name="IDArg.java">
+      <node id="1136100386041072569" at="10,0,11,0" concept="3" trace="type" />
+      <node id="1136100386041072708" at="11,0,12,0" concept="3" trace="name" />
+      <node id="1136100386041072573" at="13,37,14,15" concept="2" />
+      <node id="1136100386041072712" at="14,15,15,13" concept="2" />
+      <node id="1136100386041247492" at="19,28,20,106" concept="8" />
+      <node id="1136100386041071890" at="13,0,17,0" concept="1" trace="IDArg#(Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1136100386041245781" at="18,0,22,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <scope id="1136100386041245785" at="19,28,20,106" />
+      <scope id="1136100386041071894" at="13,37,15,13" />
+      <scope id="1136100386041071890" at="13,0,17,0">
+        <var name="n" id="1136100386041072109" />
+        <var name="tpe" id="1136100386041072126" />
+      </scope>
+      <scope id="1136100386041245781" at="18,0,22,0" />
+      <unit id="1136100386041071449" at="8,0,24,0" name="org.iets3.core.expr.mutable.plugin.IDArg" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/3487973603071609968">
+    <file name="ContentHasChangedException.java">
+      <node id="3487973603071609977" at="16,100,17,218" concept="11" />
+      <node id="3487973603071609973" at="16,0,19,0" concept="1" trace="ContentHasChangedException#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
+      <scope id="3487973603071609976" at="16,100,17,218" />
+      <scope id="3487973603071609973" at="16,0,19,0">
+        <var name="context" id="3487973603071609996" />
+        <var name="nodeWithError" id="3487973603071609994" />
+        <var name="trace" id="3487973603071609998" />
+      </scope>
+      <unit id="3487973603071609968" at="13,0,22,0" name="org.iets3.core.expr.mutable.plugin.ContentHasChangedException" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/3519191162849991199">
+    <file name="InvalidCommandException.java">
+      <node id="2662069320760060669" at="13,136,14,67" concept="11" />
+      <node id="2662069320760060665" at="13,0,16,0" concept="1" trace="InvalidCommandException#(Ljava/lang/Object;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/base/plugin/MessageValue;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
+      <scope id="2662069320760060668" at="13,136,14,67" />
+      <scope id="2662069320760060665" at="13,0,16,0">
+        <var name="causingValue" id="4089451559930602803" />
+        <var name="context" id="2662069320760060722" />
+        <var name="msg" id="2662069320760060718" />
+        <var name="nodeWithError" id="2662069320760060716" />
+        <var name="trace" id="2662069320760065884" />
+      </scope>
+      <unit id="3519191162849991199" at="11,0,18,0" name="org.iets3.core.expr.mutable.plugin.InvalidCommandException" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/3795092733478171615">
+    <file name="SystemClock.java">
+      <node id="3795092733479838207" at="10,34,11,59" concept="8" />
+      <node id="5177070863647671663" at="15,28,16,41" concept="8" />
+      <node id="3795092733478172297" at="9,0,13,0" concept="6" trace="timeMillis#()Ljava/math/BigInteger;" />
+      <node id="5177070863647671659" at="14,0,18,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <scope id="3795092733478172301" at="10,34,11,59" />
+      <scope id="5177070863647671662" at="15,28,16,41" />
+      <scope id="3795092733478172297" at="9,0,13,0" />
+      <scope id="5177070863647671659" at="14,0,18,0" />
+      <unit id="3795092733478171615" at="7,0,21,0" name="org.iets3.core.expr.mutable.plugin.SystemClock" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/3795092733478171719">
+    <file name="AbstractClock.java">
+      <node id="3795092733478171982" at="9,0,10,0" concept="6" trace="timeMillis#()Ljava/math/BigInteger;" />
+      <scope id="3795092733478171982" at="9,0,10,0" />
+      <unit id="3795092733478171719" at="7,0,14,0" name="org.iets3.core.expr.mutable.plugin.AbstractClock" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/3795092733478523643">
+    <file name="GlobalClockContainer.java">
+      <node id="3795092733478528593" at="8,0,9,0" concept="9" trace="clock" />
+      <node id="3795092733478528409" at="11,24,12,32" concept="2" />
+      <node id="3795092733478528414" at="13,5,14,17" concept="8" />
+      <node id="3795092733478530150" at="17,50,18,16" concept="2" />
+      <node id="3795092733478528404" at="10,39,13,5" concept="5" />
+      <node id="3795092733478528727" at="17,0,20,0" concept="10" trace="setClock#(Lorg/iets3/core/expr/mutable/plugin/AbstractClock;)V" />
+      <node id="3795092733478528399" at="10,0,16,0" concept="10" trace="clock#()Lorg/iets3/core/expr/mutable/plugin/AbstractClock;" />
+      <scope id="3795092733478528408" at="11,24,12,32" />
+      <scope id="3795092733478528728" at="17,50,18,16" />
+      <scope id="3795092733478528727" at="17,0,20,0">
+        <var name="clk" id="3795092733478529750" />
+      </scope>
+      <scope id="3795092733478528403" at="10,39,14,17" />
+      <scope id="3795092733478528399" at="10,0,16,0" />
+      <unit id="3795092733478523643" at="6,0,22,0" name="org.iets3.core.expr.mutable.plugin.GlobalClockContainer" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/3795092733478984834">
+    <file name="ArtificialClock.java">
+      <node id="3795092733478985095" at="9,0,10,0" concept="3" trace="time" />
+      <node id="6137388456555960570" at="11,43,12,21" concept="2" />
+      <node id="3795092733478985500" at="16,34,17,21" concept="8" />
+      <node id="3795092733478988880" at="20,22,21,36" concept="2" />
+      <node id="3795092733478991716" at="24,43,25,27" concept="2" />
+      <node id="3795092733478998109" at="28,37,29,13" concept="2" />
+      <node id="5177070863647481997" at="33,28,34,45" concept="8" />
+      <node id="6137388456555947536" at="11,0,14,0" concept="1" trace="ArtificialClock#(Ljava/math/BigInteger;)V" />
+      <node id="3795092733478987989" at="20,0,23,0" concept="6" trace="tick#()V" />
+      <node id="3795092733478991712" at="24,0,27,0" concept="6" trace="advanceBy#(Ljava/math/BigInteger;)V" />
+      <node id="3795092733478998105" at="28,0,31,0" concept="6" trace="setTime#(Ljava/math/BigInteger;)V" />
+      <node id="3795092733478985181" at="15,0,19,0" concept="6" trace="timeMillis#()Ljava/math/BigInteger;" />
+      <node id="5177070863647481368" at="32,0,36,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <scope id="6137388456555947540" at="11,43,12,21" />
+      <scope id="3795092733478985185" at="16,34,17,21" />
+      <scope id="3795092733478987993" at="20,22,21,36" />
+      <scope id="3795092733478991715" at="24,43,25,27" />
+      <scope id="3795092733478998108" at="28,37,29,13" />
+      <scope id="5177070863647481372" at="33,28,34,45" />
+      <scope id="6137388456555947536" at="11,0,14,0">
+        <var name="init" id="6137388456555948781" />
+      </scope>
+      <scope id="3795092733478987989" at="20,0,23,0" />
+      <scope id="3795092733478991712" at="24,0,27,0">
+        <var name="delta" id="3795092733478994029" />
+      </scope>
+      <scope id="3795092733478998105" at="28,0,31,0">
+        <var name="t" id="3795092733478998113" />
+      </scope>
+      <scope id="3795092733478985181" at="15,0,19,0" />
+      <scope id="5177070863647481368" at="32,0,36,0" />
+      <unit id="3795092733478984834" at="7,0,39,0" name="org.iets3.core.expr.mutable.plugin.ArtificialClock" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/4255172619711201262">
+    <file name="BoxValue.java">
+      <node id="4255172619711201702" at="8,0,9,0" concept="3" trace="value" />
+      <node id="4255172619711214357" at="10,35,11,25" concept="2" />
+      <node id="5006531861690969043" at="15,28,16,22" concept="8" />
+      <node id="4255172619711203420" at="20,41,21,26" concept="2" />
+      <node id="3560002592993219318" at="25,28,26,48" concept="8" />
+      <node id="3139344422566072531" at="30,34,31,22" concept="8" />
+      <node id="4255172619711213648" at="10,0,13,0" concept="1" trace="BoxValue#(Ljava/lang/Object;)V" />
+      <node id="5006531861694188085" at="14,0,18,0" concept="6" trace="getValue#()Ljava/lang/Object;" />
+      <node id="5006531861690962120" at="19,0,23,0" concept="6" trace="setValue#(Ljava/lang/Object;)V" />
+      <node id="3560002592993219311" at="24,0,28,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <node id="3139344422566070474" at="29,0,33,0" concept="6" trace="createSnapshot#()Ljava/lang/Object;" />
+      <scope id="4255172619711213652" at="10,35,11,25" />
+      <scope id="5006531861694188090" at="15,28,16,22" />
+      <scope id="5006531861690962128" at="20,41,21,26" />
+      <scope id="3560002592993219315" at="25,28,26,48" />
+      <scope id="3139344422566070481" at="30,34,31,22" />
+      <scope id="4255172619711213648" at="10,0,13,0">
+        <var name="initial" id="4255172619711214125" />
+      </scope>
+      <scope id="5006531861694188085" at="14,0,18,0" />
+      <scope id="5006531861690962120" at="19,0,23,0">
+        <var name="newValue" id="5006531861690962124" />
+      </scope>
+      <scope id="3560002592993219311" at="24,0,28,0" />
+      <scope id="3139344422566070474" at="29,0,33,0" />
+      <unit id="4255172619711201262" at="6,0,34,0" name="org.iets3.core.expr.mutable.plugin.BoxValue" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/4577412849443506577">
+    <file name="NoActiveTransactionException.java">
+      <node id="4874335060893201062" at="16,102,17,199" concept="11" />
+      <node id="4577412849443509161" at="16,0,19,0" concept="1" trace="NoActiveTransactionException#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
+      <scope id="4577412849443509165" at="16,102,17,199" />
+      <scope id="4577412849443509161" at="16,0,19,0">
+        <var name="context" id="3989687176984143155" />
+        <var name="nodeWithError" id="4577412849443513444" />
+        <var name="trace" id="7814237149280519515" />
+      </scope>
+      <unit id="4577412849443506577" at="13,0,22,0" name="org.iets3.core.expr.mutable.plugin.NoActiveTransactionException" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/5006531861690942168">
+    <file name="IBoxValue.java">
+      <node id="5006531861690942292" at="10,0,11,0" concept="6" trace="getValue#()Ljava/lang/Object;" />
+      <scope id="5006531861690942292" at="10,0,11,0" />
+      <unit id="5006531861690942168" at="8,0,14,0" name="org.iets3.core.expr.mutable.plugin.IBoxValue" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/5456956546137118677">
+    <file name="InterceptorFailedException.java">
+      <node id="5456956546137118683" at="13,139,14,67" concept="11" />
+      <node id="5456956546137118679" at="13,0,16,0" concept="1" trace="InterceptorFailedException#(Ljava/lang/Object;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/base/plugin/MessageValue;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
+      <scope id="5456956546137118682" at="13,139,14,67" />
+      <scope id="5456956546137118679" at="13,0,16,0">
+        <var name="causingValue" id="4089451559930601799" />
+        <var name="context" id="5456956546137118696" />
+        <var name="msg" id="5456956546137118692" />
+        <var name="nodeWithError" id="5456956546137118690" />
+        <var name="trace" id="5456956546137118698" />
+      </scope>
+      <unit id="5456956546137118677" at="11,0,18,0" name="org.iets3.core.expr.mutable.plugin.InterceptorFailedException" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/5456956546138510587">
+    <file name="ContextValue.java">
+      <node id="5456956546138511936" at="9,0,10,0" concept="3" trace="value" />
+      <node id="5456956546138511999" at="10,0,11,0" concept="3" trace="arg" />
+      <node id="5456956546138511940" at="12,48,13,23" concept="2" />
+      <node id="5456956546138512003" at="13,23,14,19" concept="2" />
+      <node id="5456956546138511022" at="12,0,16,0" concept="1" trace="ContextValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <scope id="5456956546138511026" at="12,48,14,19" />
+      <scope id="5456956546138511022" at="12,0,16,0">
+        <var name="arg" id="5456956546138511435" />
+        <var name="value" id="5456956546138511482" />
+      </scope>
+      <unit id="5456956546138510587" at="7,0,18,0" name="org.iets3.core.expr.mutable.plugin.ContextValue" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/5456956546146776222">
+    <file name="ContextCollector.java">
+      <node id="5456956546146792219" at="22,112,23,91" concept="7" />
+      <node id="5456956546146825048" at="25,106,26,229" concept="7" />
+      <node id="5456956546146827349" at="26,229,27,109" concept="2" />
+      <node id="5456956546146782023" at="29,5,30,338" concept="7" />
+      <node id="5456956546146879608" at="31,59,32,99" concept="2" />
+      <node id="5456956546146882256" at="33,5,34,45" concept="8" />
+      <node id="5456956546146776222" at="38,0,39,0" concept="9" trace="argument$lHqQ" />
+      <node id="5456956546146776222" at="39,0,40,0" concept="9" trace="expr$CW3E" />
+      <node id="5456956546146776222" at="40,0,41,0" concept="9" trace="contextValues$6ztQ" />
+      <node id="5456956546146776222" at="41,0,42,0" concept="9" trace="contextArgs$rYw" />
+      <node id="5456956546146776222" at="45,0,46,0" concept="9" trace="WithContextExpression$ey" />
+      <node id="5456956546146876193" at="30,338,33,5" concept="4" />
+      <node id="5456956546146803884" at="24,129,28,7" concept="4" />
+      <node id="5456956546146788599" at="23,91,29,5" concept="4" />
+      <node id="5456956546146776645" at="22,0,36,0" concept="10" trace="collect#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Iterable;" />
+      <scope id="5456956546146876199" at="31,59,32,99" />
+      <scope id="5456956546146803890" at="25,106,27,109">
+        <var name="evaled" id="5456956546146825049" />
+      </scope>
+      <scope id="5456956546146876193" at="30,338,33,5">
+        <var name="cv" id="5456956546146876195" />
+      </scope>
+      <scope id="5456956546146788605" at="24,129,28,7" />
+      <scope id="5456956546146803884" at="24,129,28,7">
+        <var name="cv" id="5456956546146803886" />
+      </scope>
+      <scope id="5456956546146788599" at="23,91,29,5">
+        <var name="anc" id="5456956546146788601" />
+      </scope>
+      <scope id="5456956546146776649" at="22,112,34,45">
+        <var name="locals" id="5456956546146782024" />
+        <var name="res" id="5456956546146792222" />
+      </scope>
+      <scope id="5456956546146776645" at="22,0,36,0">
+        <var name="ctx" id="5456956546146797137" />
+        <var name="target" id="5456956546146777461" />
+        <var name="trace" id="5456956546146798999" />
+      </scope>
+      <unit id="5456956546146776222" at="44,0,47,0" name="org.iets3.core.expr.mutable.plugin.ContextCollector$CONCEPTS" />
+      <unit id="5456956546146776222" at="37,0,43,0" name="org.iets3.core.expr.mutable.plugin.ContextCollector$LINKS" />
+      <unit id="5456956546146776222" at="20,0,48,0" name="org.iets3.core.expr.mutable.plugin.ContextCollector" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/5456956546148673437">
+    <file name="InterceptorState.java">
+      <node id="6076143548507301621" at="9,0,10,0" concept="3" trace="myIntc" />
+      <node id="6076143548507301625" at="11,39,12,18" concept="2" />
+      <node id="6076143548507301130" at="11,0,14,0" concept="1" trace="InterceptorState#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6076143548507301134" at="11,39,12,18" />
+      <scope id="6076143548507301130" at="11,0,14,0">
+        <var name="intc" id="6076143548507301544" />
+      </scope>
+      <unit id="5456956546148673437" at="7,0,17,0" name="org.iets3.core.expr.mutable.plugin.InterceptorState" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/5456956546153515472">
+    <file name="InterceptorStateManager.java">
+      <node id="5456956546153509875" at="15,0,16,0" concept="3" trace="interceptorStates" />
+      <node id="5456956546153529842" at="17,93,18,85" concept="7" />
+      <node id="5456956546153531729" at="19,24,20,111" concept="2" />
+      <node id="5456956546153534426" at="20,111,21,69" concept="2" />
+      <node id="5456956546153517959" at="22,5,23,17" concept="8" />
+      <node id="5456956546153541629" at="26,85,27,77" concept="8" />
+      <node id="5456956546153548908" at="30,41,31,65" concept="7" />
+      <node id="5456956546153549839" at="31,65,32,79" concept="2" />
+      <node id="5456956546153547661" at="32,79,33,16" concept="8" />
+      <node id="5456956546153537772" at="26,0,29,0" concept="6" trace="updateState#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/mutable/plugin/InterceptorState;)Lorg/iets3/core/expr/mutable/plugin/InterceptorState;" />
+      <node id="5456956546153530451" at="18,85,22,5" concept="5" />
+      <node id="5456956546153545535" at="30,0,35,0" concept="6" trace="copy#()Lorg/iets3/core/expr/mutable/plugin/InterceptorStateManager;" />
+      <node id="5456956546153517463" at="17,0,25,0" concept="6" trace="getState#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Lorg/iets3/core/expr/mutable/plugin/InterceptorState;" />
+      <scope id="5456956546153537775" at="26,85,27,77" />
+      <scope id="5456956546153530453" at="19,24,21,69" />
+      <scope id="5456956546153537772" at="26,0,29,0">
+        <var name="interceptor" id="5456956546153537773" />
+        <var name="newState" id="5456956546153540480" />
+      </scope>
+      <scope id="5456956546153545539" at="30,41,33,16">
+        <var name="copy" id="5456956546153548909" />
+      </scope>
+      <scope id="5456956546153545535" at="30,0,35,0" />
+      <scope id="5456956546153517466" at="17,93,23,17">
+        <var name="state" id="5456956546153529843" />
+      </scope>
+      <scope id="5456956546153517463" at="17,0,25,0">
+        <var name="ctx" id="3489557448822079200" />
+        <var name="interceptor" id="5456956546153517507" />
+        <var name="trace" id="3489557448822080513" />
+      </scope>
+      <unit id="5456956546153515472" at="13,0,40,0" name="org.iets3.core.expr.mutable.plugin.InterceptorStateManager" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/5456956546153687462">
+    <file name="RateLimitInterceptorState.java">
+      <node id="6076143548508054080" at="14,48,15,16" concept="11" />
+      <node id="5456956546153691166" at="19,54,20,26" concept="2" />
+      <node id="5456956546153691277" at="20,26,21,20" concept="2" />
+      <node id="5456956546153760289" at="23,42,24,37" concept="8" />
+      <node id="5456956546153691162" at="26,0,27,0" concept="3" trace="myElement" />
+      <node id="5456956546153691273" at="27,0,28,0" concept="3" trace="myTime" />
+      <node id="5456956546154664259" at="30,30,31,51" concept="8" />
+      <node id="5456956546153695769" at="35,0,36,0" concept="3" trace="entries" />
+      <node id="5456956546153697208" at="37,60,38,72" concept="2" />
+      <node id="5456956546153720250" at="41,73,42,91" concept="7" />
+      <node id="5456956546153729698" at="43,53,44,36" concept="2" />
+      <node id="5456956546154565271" at="45,5,46,95" concept="8" />
+      <node id="6076143548508050970" at="14,0,17,0" concept="1" trace="RateLimitInterceptorState#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5456956546153734200" at="23,0,26,0" concept="6" trace="isAfter#(Ljava/math/BigInteger;)Z" />
+      <node id="5456956546153689354" at="37,0,40,0" concept="6" trace="register#(Ljava/math/BigInteger;Lorg/iets3/core/expr/mutable/plugin/IDElement;)V" />
+      <node id="5456956546153728940" at="42,91,45,5" concept="5" />
+      <node id="5456956546153690291" at="19,0,23,0" concept="1" trace="Entry#(Ljava/math/BigInteger;Lorg/iets3/core/expr/mutable/plugin/IDElement;)V" />
+      <node id="5456956546154664252" at="29,0,33,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <node id="5456956546153713324" at="41,0,48,0" concept="6" trace="messagesInPeriod#(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/util/List;" />
+      <scope id="6076143548508050974" at="14,48,15,16" />
+      <scope id="5456956546153734204" at="23,42,24,37" />
+      <scope id="5456956546154664256" at="30,30,31,51" />
+      <scope id="5456956546153689358" at="37,60,38,72" />
+      <scope id="5456956546153728942" at="43,53,44,36" />
+      <scope id="5456956546153690295" at="19,54,21,20" />
+      <scope id="6076143548508050970" at="14,0,17,0">
+        <var name="intc" id="6076143548508053627" />
+      </scope>
+      <scope id="5456956546153734200" at="23,0,26,0">
+        <var name="t" id="5456956546153738001" />
+      </scope>
+      <scope id="5456956546153689354" at="37,0,40,0">
+        <var name="element" id="5456956546153693373" />
+        <var name="time" id="5456956546153693062" />
+      </scope>
+      <scope id="5456956546153690291" at="19,0,23,0">
+        <var name="element" id="5456956546153690727" />
+        <var name="time" id="5456956546153690709" />
+      </scope>
+      <scope id="5456956546154664252" at="29,0,33,0" />
+      <scope id="5456956546153713327" at="41,73,46,95">
+        <var name="start" id="5456956546153720251" />
+      </scope>
+      <scope id="5456956546153713324" at="41,0,48,0">
+        <var name="delta" id="5456956546153715276" />
+        <var name="now" id="5456956546153714508" />
+      </scope>
+      <unit id="5456956546153689831" at="18,0,34,0" name="org.iets3.core.expr.mutable.plugin.RateLimitInterceptorState$Entry" />
+      <unit id="5456956546153687462" at="12,0,50,0" name="org.iets3.core.expr.mutable.plugin.RateLimitInterceptorState" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/6076143548496463505">
+    <file name="InterceptorHelper.java">
+      <node id="3489557448812256757" at="17,75,18,107" concept="7" />
+      <node id="6076143548496515428" at="19,56,20,180" concept="7" />
+      <node id="6076143548496517103" at="21,22,22,17" concept="8" />
+      <node id="6076143548496517431" at="24,5,25,16" concept="8" />
+      <node id="6076143548496463505" at="29,0,30,0" concept="9" trace="IInterceptorContainer$D2" />
+      <node id="6076143548496463505" at="33,0,34,0" concept="9" trace="interceptors$BQ9K" />
+      <node id="6076143548496516181" at="20,180,23,7" concept="5" />
+      <node id="6076143548496464869" at="18,107,24,5" concept="4" />
+      <node id="6076143548496463949" at="17,0,27,0" concept="10" trace="findInterceptor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="6076143548496516183" at="21,22,22,17" />
+      <scope id="6076143548496464872" at="19,56,23,7">
+        <var name="f" id="6076143548496515429" />
+      </scope>
+      <scope id="6076143548496464869" at="18,107,24,5">
+        <var name="cc" id="6076143548496464870" />
+      </scope>
+      <scope id="6076143548496463953" at="17,75,25,16">
+        <var name="containers" id="3489557448812256758" />
+      </scope>
+      <scope id="6076143548496463949" at="17,0,27,0">
+        <var name="ic" id="6076143548496464382" />
+        <var name="n" id="6076143548496464924" />
+      </scope>
+      <unit id="6076143548496463505" at="28,0,31,0" name="org.iets3.core.expr.mutable.plugin.InterceptorHelper$CONCEPTS" />
+      <unit id="6076143548496463505" at="32,0,35,0" name="org.iets3.core.expr.mutable.plugin.InterceptorHelper$LINKS" />
+      <unit id="6076143548496463505" at="15,0,36,0" name="org.iets3.core.expr.mutable.plugin.InterceptorHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/6378203921121697694">
+    <file name="InteractionDescriptor.java">
+      <node id="6378203921121702444" at="11,0,12,0" concept="3" trace="elements" />
+      <node id="1136100386040954583" at="17,28,18,52" concept="2" />
+      <node id="6378203921121702592" at="22,45,23,61" concept="2" />
+      <node id="9163496876327233402" at="26,41,27,72" concept="8" />
+      <node id="1136100386040130113" at="30,37,31,70" concept="8" />
+      <node id="1136100386040167365" at="34,50,35,88" concept="8" />
+      <node id="6378203921121701613" at="13,0,15,0" concept="1" trace="InteractionDescriptor#()V" />
+      <node id="1136100386040954038" at="16,49,19,5" concept="4" />
+      <node id="6378203921121702253" at="22,0,25,0" concept="6" trace="addElement#(Lorg/iets3/core/expr/mutable/plugin/IDElement;)V" />
+      <node id="9163496876327228665" at="26,0,29,0" concept="6" trace="commands#()Ljava/lang/Iterable;" />
+      <node id="1136100386040130108" at="30,0,33,0" concept="6" trace="values#()Ljava/lang/Iterable;" />
+      <node id="1136100386040163055" at="34,0,37,0" concept="6" trace="findByName#(Ljava/lang/String;)Lorg/iets3/core/expr/mutable/plugin/IDElement;" />
+      <node id="1136100386040950476" at="16,0,21,0" concept="1" trace="InteractionDescriptor#(null)V" />
+      <scope id="6378203921121701620" at="13,34,13,34" />
+      <scope id="1136100386040954041" at="17,28,18,52" />
+      <scope id="6378203921121702256" at="22,45,23,61" />
+      <scope id="9163496876327228669" at="26,41,27,72" />
+      <scope id="1136100386040130112" at="30,37,31,70" />
+      <scope id="1136100386040163059" at="34,50,35,88" />
+      <scope id="6378203921121701613" at="13,0,15,0" />
+      <scope id="1136100386040950479" at="16,49,19,5" />
+      <scope id="1136100386040954038" at="16,49,19,5">
+        <var name="e" id="1136100386040954039" />
+      </scope>
+      <scope id="6378203921121702253" at="22,0,25,0">
+        <var name="element" id="6378203921121702285" />
+      </scope>
+      <scope id="9163496876327228665" at="26,0,29,0" />
+      <scope id="1136100386040130108" at="30,0,33,0" />
+      <scope id="1136100386040163055" at="34,0,37,0">
+        <var name="name" id="1136100386040166416" />
+      </scope>
+      <scope id="1136100386040950476" at="16,0,21,0">
+        <var name="es" id="1136100386040952114" />
+      </scope>
+      <unit id="6378203921121697694" at="9,0,40,0" name="org.iets3.core.expr.mutable.plugin.InteractionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/6378203921121697876">
+    <file name="IDCommand.java">
+      <node id="1136100386041077264" at="13,0,14,0" concept="3" trace="arguments" />
+      <node id="6378203921121702022" at="15,45,16,13" concept="11" />
+      <node id="6378203921121713440" at="16,13,17,190" concept="2" />
+      <node id="1136100386041089418" at="18,26,19,53" concept="2" />
+      <node id="1136100386041078170" at="17,190,20,5" concept="4" />
+      <node id="6378203921121701891" at="15,0,22,0" concept="1" trace="IDCommand#(Ljava/lang/String;null)V" />
+      <scope id="1136100386041078176" at="18,26,19,53" />
+      <scope id="1136100386041078170" at="17,190,20,5">
+        <var name="a" id="1136100386041078172" />
+      </scope>
+      <scope id="6378203921121701895" at="15,45,20,5" />
+      <scope id="6378203921121701891" at="15,0,22,0">
+        <var name="args" id="1136100386041074634" />
+        <var name="n" id="6378203921121701916" />
+      </scope>
+      <unit id="6378203921121697876" at="11,0,24,0" name="org.iets3.core.expr.mutable.plugin.IDCommand" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/6378203921121701667">
+    <file name="IDElement.java">
+      <node id="6378203921121697933" at="9,0,10,0" concept="3" trace="name" />
+      <node id="6378203921121713018" at="10,0,11,0" concept="3" trace="type" />
+      <node id="8272305014727215076" at="11,0,12,0" concept="3" trace="useInCode" />
+      <node id="5460220530820585874" at="12,0,13,0" concept="3" trace="associatedNode" />
+      <node id="6378203921121698041" at="14,30,15,18" concept="2" />
+      <node id="1136100386040918050" at="18,34,19,21" concept="8" />
+      <node id="8272305014727215745" at="22,36,23,22" concept="2" />
+      <node id="8272305014727218229" at="23,22,24,16" concept="8" />
+      <node id="8030722221362655490" at="28,24,29,52" concept="8" />
+      <node id="8030722221362149068" at="30,5,31,16" concept="8" />
+      <node id="5460220530820610740" at="34,55,35,36" concept="2" />
+      <node id="5460220530820641838" at="35,36,36,16" concept="8" />
+      <node id="5460220530820592049" at="39,36,40,31" concept="8" />
+      <node id="6378203921121697971" at="14,0,17,0" concept="1" trace="IDElement#(Ljava/lang/String;)V" />
+      <node id="1136100386040916857" at="18,0,21,0" concept="6" trace="is#(Lorg/iets3/core/expr/mutable/plugin/IDElement;)Z" />
+      <node id="8030722221362645286" at="27,64,30,5" concept="5" />
+      <node id="5460220530820589667" at="39,0,42,0" concept="6" trace="getAssociatedNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8272305014727212636" at="22,0,26,0" concept="6" trace="dontUseInCode#()Lorg/iets3/core/expr/mutable/plugin/IDElement;" />
+      <node id="5460220530820607226" at="34,0,38,0" concept="6" trace="setAssociatedNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/expr/mutable/plugin/IDElement;" />
+      <node id="8030722221362147769" at="27,0,33,0" concept="6" trace="canBeUsedWithThisValue#(Lorg/iets3/core/expr/mutable/plugin/InteractorValue;)Z" />
+      <scope id="6378203921121697975" at="14,30,15,18" />
+      <scope id="1136100386040916861" at="18,34,19,21" />
+      <scope id="8030722221362645288" at="28,24,29,52" />
+      <scope id="5460220530820589671" at="39,36,40,31" />
+      <scope id="8272305014727212640" at="22,36,24,16" />
+      <scope id="5460220530820607230" at="34,55,36,16" />
+      <scope id="6378203921121697971" at="14,0,17,0">
+        <var name="n" id="6378203921121698001" />
+      </scope>
+      <scope id="1136100386040916857" at="18,0,21,0">
+        <var name="e" id="1136100386040917452" />
+      </scope>
+      <scope id="5460220530820589667" at="39,0,42,0" />
+      <scope id="8272305014727212636" at="22,0,26,0" />
+      <scope id="8030722221362147772" at="27,64,31,16" />
+      <scope id="5460220530820607226" at="34,0,38,0">
+        <var name="assocNode" id="5460220530820610081" />
+      </scope>
+      <scope id="8030722221362147769" at="27,0,33,0">
+        <var name="value" id="8030722221362148484" />
+      </scope>
+      <unit id="6378203921121701667" at="7,0,44,0" name="org.iets3.core.expr.mutable.plugin.IDElement" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/8237981399425876361">
+    <file name="Transaction.java">
+      <node id="8237981399434503187" at="15,0,16,0" concept="9" trace="KEY" />
+      <node id="8237981399425877216" at="17,0,18,0" concept="3" trace="transaction" />
+      <node id="8237981399429077632" at="18,0,19,0" concept="3" trace="oldValues" />
+      <node id="8237981399425877220" at="21,32,22,21" concept="2" />
+      <node id="8237981399429098732" at="29,96,30,56" concept="2" />
+      <node id="8237981399429084787" at="35,65,36,70" concept="2" />
+      <node id="8237981399425910693" at="25,0,27,0" concept="6" trace="commit#()V" />
+      <node id="8237981399425876775" at="21,0,24,0" concept="1" trace="Transaction#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8237981399429092825" at="28,26,31,5" concept="4" />
+      <node id="8237981399429078135" at="34,59,37,5" concept="5" />
+      <node id="8237981399425910824" at="28,0,33,0" concept="6" trace="rollback#()V" />
+      <node id="8237981399429052665" at="34,0,39,0" concept="6" trace="registerChange#(Lorg/iets3/core/expr/mutable/plugin/ITransactionalValue;)V" />
+      <scope id="8237981399425910696" at="25,24,25,24" />
+      <scope id="8237981399425876779" at="21,32,22,21" />
+      <scope id="8237981399429092828" at="29,96,30,56" />
+      <scope id="8237981399429078137" at="35,65,36,70" />
+      <scope id="8237981399425910693" at="25,0,27,0" />
+      <scope id="8237981399425876775" at="21,0,24,0">
+        <var name="tx" id="8237981399425877168" />
+      </scope>
+      <scope id="8237981399425910825" at="28,26,31,5" />
+      <scope id="8237981399429092825" at="28,26,31,5">
+        <var name="k" id="8237981399429092826" />
+      </scope>
+      <scope id="8237981399429052668" at="34,59,37,5" />
+      <scope id="8237981399425910824" at="28,0,33,0" />
+      <scope id="8237981399429052665" at="34,0,39,0">
+        <var name="txValue" id="8237981399429053182" />
+      </scope>
+      <unit id="8237981399425876361" at="13,0,41,0" name="org.iets3.core.expr.mutable.plugin.Transaction" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/8272305014738236231">
+    <file name="LiveValue.java">
+      <node id="7092036503187144998" at="20,0,21,0" concept="3" trace="baseValue" />
+      <node id="8429355424306522622" at="21,0,22,0" concept="3" trace="latestSnapshot" />
+      <node id="8272305014738240991" at="23,54,24,32" concept="11" />
+      <node id="7092036503187150196" at="24,32,25,24" concept="2" />
+      <node id="3288176362549016442" at="29,178,30,94" concept="7" />
+      <node id="5993670961094310686" at="30,94,31,42" concept="2" />
+      <node id="3288176362549015892" at="32,37,33,17" concept="8" />
+      <node id="8429355424306591254" at="34,5,35,16" concept="8" />
+      <node id="6076143548500303276" at="39,76,40,53" concept="8" />
+      <node id="5993670961094104810" at="43,105,44,72" concept="2" />
+      <node id="5993670961094125325" at="47,142,48,110" concept="7" />
+      <node id="5993670961094041846" at="48,110,49,57" concept="7" />
+      <node id="5993670961094041857" at="50,66,51,80" concept="7" />
+      <node id="5460220530820439788" at="52,34,53,38" concept="2" />
+      <node id="5993670961094481940" at="55,41,56,85" concept="2" />
+      <node id="5993670961094417218" at="57,43,58,33" concept="7" />
+      <node id="5993670961094450199" at="58,33,59,60" concept="7" />
+      <node id="5993670961094463371" at="60,32,61,33" concept="7" />
+      <node id="5993670961094473652" at="62,45,63,77" concept="2" />
+      <node id="5993670961094477989" at="64,18,65,21" concept="2" />
+      <node id="5993670961094519464" at="67,9,68,29" concept="2" />
+      <node id="5993670961094582295" at="69,36,70,30" concept="7" />
+      <node id="5993670961094660423" at="70,30,71,34" concept="7" />
+      <node id="5993670961094582300" at="71,34,72,62" concept="7" />
+      <node id="5993670961094582312" at="73,32,74,35" concept="7" />
+      <node id="5993670961094658382" at="74,35,75,42" concept="7" />
+      <node id="5993670961094582320" at="76,47,77,84" concept="2" />
+      <node id="5993670961094582336" at="78,18,79,28" concept="2" />
+      <node id="5993670961094582344" at="81,9,82,29" concept="2" />
+      <node id="5993670961094041867" at="83,14,84,29" concept="2" />
+      <node id="5993670961094171640" at="86,5,87,13" concept="8" />
+      <node id="7092036503187187868" at="91,28,92,16" concept="8" />
+      <node id="8429355424305994749" at="96,28,97,48" concept="8" />
+      <node id="7092036503187176179" at="101,41,102,50" concept="2" />
+      <node id="8429355424306546472" at="106,34,107,26" concept="8" />
+      <node id="8030722221364127407" at="111,64,112,62" concept="8" />
+      <node id="5993670961094472013" at="64,16,66,11" concept="0" />
+      <node id="5993670961094582334" at="78,16,80,11" concept="0" />
+      <node id="5993670961094536914" at="83,12,85,7" concept="0" />
+      <node id="3288176362549007830" at="31,42,34,5" concept="5" />
+      <node id="5993670961094284640" at="43,0,46,0" concept="6" trace="prepareSnapshot#(Lorg/iets3/core/expr/base/behavior/IETS3ExprContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
+      <node id="5460220530820436476" at="51,80,54,7" concept="5" />
+      <node id="8272305014738238626" at="23,0,27,0" concept="1" trace="LiveValue#(Lorg/iets3/core/expr/mutable/plugin/InteractorValue;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;)V" />
+      <node id="6076143548500296465" at="38,0,42,0" concept="6" trace="getSubstate#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Object;" />
+      <node id="8272305014738263327" at="90,0,94,0" concept="6" trace="getValue#()Ljava/lang/Object;" />
+      <node id="8429355424305992581" at="95,0,99,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <node id="8272305014738263337" at="100,0,104,0" concept="6" trace="setValue#(Ljava/lang/Object;)V" />
+      <node id="8272305014738263349" at="105,0,109,0" concept="6" trace="createSnapshot#()Ljava/lang/Object;" />
+      <node id="8030722221364127395" at="110,0,114,0" concept="6" trace="currentlyAllowsThisElement#(Lorg/iets3/core/expr/mutable/plugin/IDElement;)Z" />
+      <node id="5993670961094466972" at="61,33,66,11" concept="5" />
+      <node id="5993670961094582318" at="75,42,80,11" concept="5" />
+      <node id="5993670961094454241" at="59,60,67,9" concept="13" />
+      <node id="8272305014738263310" at="28,0,37,0" concept="6" trace="handleElement#(Lorg/iets3/core/expr/mutable/plugin/IDElement;Ljava/util/List;Ljava/util/List;Lorg/iets3/core/expr/base/behavior/IETS3ExprContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Object;" />
+      <node id="5993670961094582310" at="72,62,81,9" concept="13" />
+      <node id="5993670961094176269" at="54,7,85,7" concept="5" />
+      <node id="5993670961094041851" at="49,57,86,5" concept="4" />
+      <node id="5993670961094041827" at="47,0,89,0" concept="10" trace="takeSnapshot#(Lorg/iets3/core/expr/mutable/plugin/InteractorValue;Lorg/iets3/core/expr/base/behavior/IETS3ExprContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Lorg/iets3/core/expr/mutable/plugin/LiveValueSnapshot;" />
+      <scope id="3288176362549007832" at="32,37,33,17" />
+      <scope id="6076143548500296471" at="39,76,40,53" />
+      <scope id="5993670961094284644" at="43,105,44,72" />
+      <scope id="5460220530820436478" at="52,34,53,38" />
+      <scope id="5993670961094176271" at="55,41,56,85" />
+      <scope id="5993670961094466973" at="62,45,63,77" />
+      <scope id="5993670961094472014" at="64,18,65,21" />
+      <scope id="5993670961094582319" at="76,47,77,84" />
+      <scope id="5993670961094582335" at="78,18,79,28" />
+      <scope id="5993670961094536915" at="83,14,84,29" />
+      <scope id="8272305014738263333" at="91,28,92,16" />
+      <scope id="8429355424305992589" at="96,28,97,48" />
+      <scope id="8272305014738263347" at="101,41,102,50" />
+      <scope id="8272305014738263357" at="106,34,107,26" />
+      <scope id="8030722221364127403" at="111,64,112,62" />
+      <scope id="8272305014738238630" at="23,54,25,24" />
+      <scope id="5993670961094284640" at="43,0,46,0">
+        <var name="coverage" id="5993670961094288853" />
+        <var name="ctx" id="5177070863646869060" />
+        <var name="trace" id="5993670961094288855" />
+      </scope>
+      <scope id="8272305014738238626" at="23,0,27,0">
+        <var name="bv" id="8272305014738239053" />
+        <var name="ctx" id="8272305014738239297" />
+      </scope>
+      <scope id="6076143548500296465" at="38,0,42,0">
+        <var name="ctx" id="3489557448822216001" />
+        <var name="n" id="6076143548500296469" />
+        <var name="trace" id="3489557448822216003" />
+      </scope>
+      <scope id="8272305014738263327" at="90,0,94,0" />
+      <scope id="8429355424305992581" at="95,0,99,0" />
+      <scope id="8272305014738263337" at="100,0,104,0">
+        <var name="newValue" id="8272305014738263341" />
+      </scope>
+      <scope id="8272305014738263349" at="105,0,109,0" />
+      <scope id="8030722221364127395" at="110,0,114,0">
+        <var name="element" id="8030722221364127400" />
+      </scope>
+      <scope id="8272305014738263323" at="29,178,35,16">
+        <var name="res" id="3288176362549016443" />
+      </scope>
+      <scope id="5993670961094454244" at="60,32,66,11">
+        <var name="o" id="5993670961094463372" />
+      </scope>
+      <scope id="5993670961094582311" at="73,32,80,11">
+        <var name="key" id="5993670961094582313" />
+        <var name="val" id="5993670961094658383" />
+      </scope>
+      <scope id="8272305014738263310" at="28,0,37,0">
+        <var name="contextArgs" id="5456956546138447955" />
+        <var name="coverage" id="8272305014738263319" />
+        <var name="ctx" id="5177070863646832984" />
+        <var name="element" id="8272305014738263314" />
+        <var name="payload" id="8272305014738263316" />
+        <var name="trace" id="8272305014738263321" />
+      </scope>
+      <scope id="5993670961094499479" at="57,43,68,29">
+        <var name="iter" id="5993670961094450200" />
+        <var name="l" id="5993670961094417219" />
+      </scope>
+      <scope id="5993670961094582294" at="69,36,82,29">
+        <var name="iter" id="5993670961094582301" />
+        <var name="l" id="5993670961094582296" />
+        <var name="sourceMap" id="5993670961094660424" />
+      </scope>
+      <scope id="5993670961094041856" at="50,66,85,7">
+        <var name="v" id="5993670961094041858" />
+      </scope>
+      <scope id="5993670961094041851" at="49,57,86,5">
+        <var name="value" id="5993670961094041852" />
+      </scope>
+      <scope id="5993670961094041835" at="47,142,87,13">
+        <var name="dummyTrace" id="5993670961094041847" />
+        <var name="s" id="5993670961094125326" />
+      </scope>
+      <scope id="5993670961094041827" at="47,0,89,0">
+        <var name="coverage" id="5993670961094041831" />
+        <var name="ctx" id="5177070863646853992" />
+        <var name="iv" id="5993670961094050491" />
+        <var name="trace" id="5993670961094041833" />
+      </scope>
+      <unit id="8272305014738236231" at="18,0,116,0" name="org.iets3.core.expr.mutable.plugin.LiveValue" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/8429355424306365551">
+    <file name="LiveValueSnapshot.java">
+      <node id="8429355424306378640" at="18,0,19,0" concept="3" trace="values" />
+      <node id="8429355424306609424" at="19,0,20,0" concept="3" trace="myDescr" />
+      <node id="3354991355801436530" at="20,0,21,0" concept="3" trace="myId" />
+      <node id="3354991355801436534" at="22,53,23,14" concept="2" />
+      <node id="8429355424306609428" at="23,14,24,20" concept="2" />
+      <node id="8429355424306556650" at="27,46,28,49" concept="2" />
+      <node id="2996860416625665287" at="32,28,33,55" concept="8" />
+      <node id="5043470053396905369" at="37,65,38,52" concept="7" />
+      <node id="5043470053396843442" at="38,52,39,72" concept="7" />
+      <node id="5043470053396737905" at="40,75,41,35" concept="2" />
+      <node id="5043470053396914185" at="42,5,43,16" concept="8" />
+      <node id="3354991355801438453" at="46,22,47,21" concept="8" />
+      <node id="7817105210365175406" at="52,25,53,19" concept="8" />
+      <node id="7817105210365185863" at="55,49,56,19" concept="8" />
+      <node id="7817105210365189822" at="57,5,58,59" concept="7" />
+      <node id="7817105210365227723" at="58,59,59,53" concept="8" />
+      <node id="8429355424306555324" at="27,0,30,0" concept="6" trace="add#(Ljava/lang/String;Ljava/lang/Object;)V" />
+      <node id="5043470053396965009" at="39,72,42,5" concept="4" />
+      <node id="7817105210365173850" at="51,40,54,5" concept="5" />
+      <node id="7817105210365180740" at="54,5,57,5" concept="5" />
+      <node id="8429355424306365986" at="22,0,26,0" concept="1" trace="LiveValueSnapshot#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="8429355424306606807" at="31,0,35,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <node id="3354991355801417040" at="45,0,49,0" concept="6" trace="id#()Ljava/lang/String;" />
+      <node id="5043470053396664587" at="36,0,45,0" concept="6" trace="renderTree#(Lorg/iets3/core/expr/base/plugin/ValueStructureRenderer;)Lorg/iets3/core/expr/base/plugin/RenderNode;" />
+      <node id="7817105210365169749" at="50,0,61,0" concept="6" trace="equals#(Ljava/lang/Object;)Z" />
+      <scope id="8429355424306555328" at="27,46,28,49" />
+      <scope id="8429355424306606811" at="32,28,33,55" />
+      <scope id="5043470053396965011" at="40,75,41,35" />
+      <scope id="3354991355801417044" at="46,22,47,21" />
+      <scope id="7817105210365173852" at="52,25,53,19" />
+      <scope id="7817105210365180742" at="55,49,56,19" />
+      <scope id="8429355424306365990" at="22,53,24,20" />
+      <scope id="8429355424306555324" at="27,0,30,0">
+        <var name="name" id="8429355424306555557" />
+        <var name="value" id="8429355424306555576" />
+      </scope>
+      <scope id="5043470053396965009" at="39,72,42,5">
+        <var name="entry" id="5043470053396965010" />
+      </scope>
+      <scope id="8429355424306365986" at="22,0,26,0">
+        <var name="descr" id="8429355424306609315" />
+        <var name="id" id="3354991355801435742" />
+      </scope>
+      <scope id="8429355424306606807" at="31,0,35,0" />
+      <scope id="3354991355801417040" at="45,0,49,0" />
+      <scope id="5043470053396664591" at="37,65,43,16">
+        <var name="entrySet" id="5043470053396843443" />
+        <var name="root" id="5043470053396905370" />
+      </scope>
+      <scope id="7817105210365169755" at="51,40,59,53">
+        <var name="other" id="7817105210365189823" />
+      </scope>
+      <scope id="5043470053396664587" at="36,0,45,0">
+        <var name="renderer" id="5043470053396909808" />
+      </scope>
+      <scope id="7817105210365169749" at="50,0,61,0">
+        <var name="object" id="7817105210365169753" />
+      </scope>
+      <unit id="8429355424306365551" at="16,0,63,0" name="org.iets3.core.expr.mutable.plugin.LiveValueSnapshot" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/8735085014265573725">
+    <file name="ITransactionalValue.java">
+      <unit id="8735085014265573725" at="6,0,10,0" name="org.iets3.core.expr.mutable.plugin.ITransactionalValue" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/8735085014265839629">
+    <file name="TranactionContext.java">
+      <node id="8735085014265841213" at="9,89,10,60" concept="7" />
+      <node id="8735085014265841225" at="11,21,12,31" concept="2" />
+      <node id="2153658728442746256" at="16,54,17,60" concept="7" />
+      <node id="2153658728442747936" at="17,60,18,22" concept="8" />
+      <node id="8735085014265841223" at="10,60,13,5" concept="5" />
+      <node id="2153658728442746254" at="16,0,20,0" concept="10" trace="isTxActive#(Lcom/mbeddr/mpsutil/interpreter/rt/IEnvironment;)Z" />
+      <node id="8735085014265840245" at="9,0,15,0" concept="10" trace="registerWithCurrentTx#(Lcom/mbeddr/mpsutil/interpreter/rt/IEnvironment;Lorg/iets3/core/expr/mutable/plugin/ITransactionalValue;)V" />
+      <scope id="8735085014265841224" at="11,21,12,31" />
+      <scope id="2153658728442746255" at="16,54,18,22">
+        <var name="tx" id="2153658728442746257" />
+      </scope>
+      <scope id="8735085014265840248" at="9,89,13,5">
+        <var name="tx" id="8735085014265841214" />
+      </scope>
+      <scope id="2153658728442746254" at="16,0,20,0">
+        <var name="env" id="2153658728442746277" />
+      </scope>
+      <scope id="8735085014265840245" at="9,0,15,0">
+        <var name="env" id="8735085014265840660" />
+        <var name="value" id="8735085014265840680" />
+      </scope>
+      <unit id="8735085014265839629" at="7,0,22,0" name="org.iets3.core.expr.mutable.plugin.TranactionContext" />
+    </file>
+  </root>
+  <root nodeRef="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)/9163496876328068531">
+    <file name="InteractorValue.java">
+      <node id="6076143548497752950" at="19,0,20,0" concept="9" trace="THIS" />
+      <node id="9163496876328072545" at="21,0,22,0" concept="3" trace="myInteractor" />
+      <node id="1136100386042866334" at="22,0,23,0" concept="3" trace="interpreterCtx" />
+      <node id="9163496876328072549" at="24,58,25,30" concept="2" />
+      <node id="1136100386042866338" at="25,30,26,25" concept="2" />
+      <node id="9163496876328073247" at="29,48,30,92" concept="8" />
+      <node id="9163496876328795898" at="33,36,34,27" concept="8" />
+      <node id="1136100386042871644" at="37,55,38,117" concept="8" />
+      <node id="3519191162850010605" at="41,76,42,122" concept="12" />
+      <node id="8272305014738257269" at="45,29,46,29" concept="8" />
+      <node id="9163496876328733284" at="49,0,50,0" concept="6" trace="handleElement#(Lorg/iets3/core/expr/mutable/plugin/IDElement;Ljava/util/List;Ljava/util/List;Lorg/iets3/core/expr/base/behavior/IETS3ExprContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Object;" />
+      <node id="8030722221362630511" at="51,64,52,16" concept="8" />
+      <node id="6076143548498355917" at="55,0,56,0" concept="6" trace="getSubstate#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Object;" />
+      <node id="9163496876328071130" at="29,0,32,0" concept="6" trace="getDescriptor#()Lorg/iets3/core/expr/mutable/plugin/InteractionDescriptor;" />
+      <node id="9163496876328794240" at="33,0,36,0" concept="6" trace="d#()Lorg/iets3/core/expr/mutable/plugin/InteractionDescriptor;" />
+      <node id="1136100386042868278" at="37,0,40,0" concept="6" trace="eval#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Object;" />
+      <node id="3519191162850007200" at="41,0,44,0" concept="6" trace="reportInvalidCommand#(Ljava/lang/String;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
+      <node id="8272305014738253612" at="45,0,48,0" concept="6" trace="interactor#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8030722221362630509" at="51,0,54,0" concept="6" trace="currentlyAllowsThisElement#(Lorg/iets3/core/expr/mutable/plugin/IDElement;)Z" />
+      <node id="9163496876328072030" at="24,0,28,0" concept="1" trace="InteractorValue#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;)V" />
+      <scope id="9163496876328071134" at="29,48,30,92" />
+      <scope id="9163496876328794244" at="33,36,34,27" />
+      <scope id="1136100386042868282" at="37,55,38,117" />
+      <scope id="3519191162850007204" at="41,76,42,122" />
+      <scope id="8272305014738253616" at="45,29,46,29" />
+      <scope id="9163496876328733284" at="49,0,50,0">
+        <var name="contexts" id="5456956546138466511" />
+        <var name="coverage" id="8272305014728637435" />
+        <var name="ctx" id="5177070863644932743" />
+        <var name="element" id="9163496876328736016" />
+        <var name="payload" id="1136100386041650303" />
+        <var name="trace" id="1136100386043280843" />
+      </scope>
+      <scope id="8030722221362630510" at="51,64,52,16" />
+      <scope id="6076143548498355917" at="55,0,56,0">
+        <var name="ctx" id="3489557448822104789" />
+        <var name="n" id="6076143548498619512" />
+        <var name="trace" id="3489557448822120311" />
+      </scope>
+      <scope id="9163496876328072034" at="24,58,26,25" />
+      <scope id="9163496876328071130" at="29,0,32,0" />
+      <scope id="9163496876328794240" at="33,0,36,0" />
+      <scope id="1136100386042868278" at="37,0,40,0">
+        <var name="n" id="1136100386042869619" />
+        <var name="trace" id="1136100386043273722" />
+      </scope>
+      <scope id="3519191162850007200" at="41,0,44,0">
+        <var name="message" id="3519191162850008684" />
+        <var name="trace" id="3519191162850009293" />
+      </scope>
+      <scope id="8272305014738253612" at="45,0,48,0" />
+      <scope id="8030722221362630509" at="51,0,54,0">
+        <var name="element" id="8030722221362630514" />
+      </scope>
+      <scope id="9163496876328072030" at="24,0,28,0">
+        <var name="ctx" id="1136100386042865742" />
+        <var name="interactor" id="9163496876328072448" />
+      </scope>
+      <unit id="9163496876328068531" at="17,0,58,0" name="org.iets3.core.expr.mutable.plugin.InteractorValue" />
+    </file>
+  </root>
+</debug-info>
+

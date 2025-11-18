@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root>
+    <file name="ModelListenersDescriptor.java">
+      <unit at="91,0,95,0" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$PROPS" />
+      <unit at="79,0,84,0" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$CONCEPTS" />
+      <unit at="85,0,90,0" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$LINKS" />
+      <unit at="20,0,96,0" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:0ede9907-06d3-4f85-9191-7c858d357e26(org.iets3.variability.featuremodel.base.listeners)/3414566187106631585">
+    <file name="ModelListenersDescriptor.java">
+      <node id="3414566187106631607" at="29,71,30,180" concept="0" />
+      <node id="3414566187106646352" at="35,73,36,180" concept="0" />
+      <node id="3414566187106649074" at="41,71,42,180" concept="0" />
+      <node id="3414566187106651811" at="47,73,48,180" concept="0" />
+      <node id="3414566187106631586" at="28,0,32,0" concept="1" trace="childAdded#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3414566187106645244" at="34,0,38,0" concept="1" trace="childRemoved#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3414566187106647908" at="40,0,44,0" concept="1" trace="childAdded#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3414566187106650587" at="46,0,50,0" concept="1" trace="childRemoved#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3414566187106631586" at="26,0,32,7" concept="0" />
+      <node id="3414566187106645244" at="32,7,38,7" concept="0" />
+      <node id="3414566187106647908" at="38,7,44,7" concept="0" />
+      <node id="3414566187106650587" at="44,7,50,7" concept="0" />
+      <scope id="3414566187106631586" at="29,71,30,180" />
+      <scope id="3414566187106645244" at="35,73,36,180" />
+      <scope id="3414566187106647908" at="41,71,42,180" />
+      <scope id="3414566187106650587" at="47,73,48,180" />
+      <scope id="3414566187106631586" at="28,0,32,0">
+        <var name="child" id="3414566187106631586" />
+        <var name="instance" id="3414566187106631586" />
+      </scope>
+      <scope id="3414566187106645244" at="34,0,38,0">
+        <var name="child" id="3414566187106645244" />
+        <var name="instance" id="3414566187106645244" />
+      </scope>
+      <scope id="3414566187106647908" at="40,0,44,0">
+        <var name="child" id="3414566187106647908" />
+        <var name="instance" id="3414566187106647908" />
+      </scope>
+      <scope id="3414566187106650587" at="46,0,50,0">
+        <var name="child" id="3414566187106650587" />
+        <var name="instance" id="3414566187106650587" />
+      </scope>
+      <unit id="3414566187106631586" at="27,52,32,5" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$1" />
+      <unit id="3414566187106645244" at="33,52,38,5" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$2" />
+      <unit id="3414566187106647908" at="39,52,44,5" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$3" />
+      <unit id="3414566187106650587" at="45,52,50,5" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$4" />
+    </file>
+  </root>
+  <root nodeRef="r:0ede9907-06d3-4f85-9191-7c858d357e26(org.iets3.variability.featuremodel.base.listeners)/3414566187106660668">
+    <file name="ModelListenersDescriptor.java">
+      <node id="3414566187106654648" at="53,71,54,180" concept="0" />
+      <node id="3414566187106657028" at="59,73,60,180" concept="0" />
+      <node id="2726037336283810239" at="65,112,66,180" concept="0" />
+      <node id="2726037336283810692" at="71,112,72,180" concept="0" />
+      <node id="3414566187106653366" at="52,0,56,0" concept="1" trace="childAdded#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3414566187106656330" at="58,0,62,0" concept="1" trace="childRemoved#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2726037336283809927" at="64,0,68,0" concept="1" trace="propertyChanged#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="2726037336283810496" at="70,0,74,0" concept="1" trace="propertyChanged#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="3414566187106653366" at="50,7,56,7" concept="0" />
+      <node id="3414566187106656330" at="56,7,62,7" concept="0" />
+      <node id="2726037336283809927" at="62,7,68,7" concept="0" />
+      <node id="2726037336283810496" at="68,7,74,7" concept="0" />
+      <scope id="3414566187106653366" at="53,71,54,180" />
+      <scope id="3414566187106656330" at="59,73,60,180" />
+      <scope id="2726037336283809927" at="65,112,66,180" />
+      <scope id="2726037336283810496" at="71,112,72,180" />
+      <scope id="3414566187106653366" at="52,0,56,0">
+        <var name="child" id="3414566187106653366" />
+        <var name="instance" id="3414566187106653366" />
+      </scope>
+      <scope id="3414566187106656330" at="58,0,62,0">
+        <var name="child" id="3414566187106656330" />
+        <var name="instance" id="3414566187106656330" />
+      </scope>
+      <scope id="2726037336283809927" at="64,0,68,0">
+        <var name="instance" id="2726037336283809927" />
+        <var name="newValue" id="2726037336283809927" />
+        <var name="oldValue" id="2726037336283809927" />
+        <var name="propertyName" id="2726037336283809927" />
+      </scope>
+      <scope id="2726037336283810496" at="70,0,74,0">
+        <var name="instance" id="2726037336283810496" />
+        <var name="newValue" id="2726037336283810496" />
+        <var name="oldValue" id="2726037336283810496" />
+        <var name="propertyName" id="2726037336283810496" />
+      </scope>
+      <unit id="3414566187106653366" at="51,52,56,5" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$5" />
+      <unit id="3414566187106656330" at="57,52,62,5" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$6" />
+      <unit id="2726037336283809927" at="63,52,68,5" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$7" />
+      <unit id="2726037336283810496" at="69,52,74,5" name="org.iets3.variability.featuremodel.base.listeners.ModelListenersDescriptor$8" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-2mnz9nsjae26dxfmmrf4qakpurt9tzp">
+  <files names="Constants.java:LL.java:OccurenceMatchFind.java:PositionFind.java:PositionIndicatorEnum.java:Runtime.java:SuccessAndFoundString.java:XAbstractMatch.java:XAbstractOccurenceBasedCheck.java:XAbstractOccurenceConstraint.java:XAbstractPositionIndicator.java:XAbstractValidationClause.java:XAllSameCharMatcher.java:XAtPositionCheck.java:XCannotBeCheckKind.java:XCannotRepeatCheck.java:XCheckKind.java:XDigitMatch.java:XExecutor.java:XFailCheck.java:XIfExistsOccurenceConstraint.java:XLetterMatch.java:XMaxCountCheck.java:XMustBeCheckKind.java:XNotLetterOrDigitMatch.java:XNumberMatch.java:XOccurenceBasedValidationClause.java:XOneOfMatch.java:XPositionBasedValidationClause.java:XPositionIndicatorFirst.java:XPositionIndicatorIndex.java:XPositionIndicatorLast.java:XPredecessorCheck.java:XRangeBasedValidationClause.java:XSequenceMatch.java:XSpecificSequenceElementaryMatch.java:XSuccessorCheck.java:XValidateStringExpression.java" />
+</product>
+

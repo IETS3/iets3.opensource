@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-b9xihwt0erc5b76dxcq6lq65ldt74g6">
+  <files names="CheckFeatureModelConfigurationUtil.java:EnforceSubFeatureDecisions_NonTypesystemRule.java:TypesystemDescriptor.java:checkFeatureModelConfigurationInitialSolverRun_NonTypesystemRule.java:check_FeatureConfiguration_NonTypesystemRule.java:check_FeatureModelConfiguration_NonTypesystemRule.java:check_FeatureWithCardinalityConfiguration_NonTypesystemRule.java:check_InlineFeatureConfigurationContent_NonTypesystemRule.java:fix_AdaptToExtendedFMC_QuickFix.java:fix_InvalidReferenceToFeature_QuickFix.java:fix_RemoveConflictingInheritance_QuickFix.java:fix_applyInheritance_QuickFix.java:makeConfigAbstract_QuickFix.java:propagateFMchangesToConfig_QuickFix.java:runSolverInitially_QuickFix.java:typeof_FeatureAttributeAssignment_InferenceRule.java" />
+</product>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="ty1zscbvfspxo6er7wzy911srlcyf3">
+  <files names="TypesystemDescriptor.java:addLookup_QuickFix.java:check_DataSelector_NonTypesystemRule.java:check_DataTableLookUp_NonTypesystemRule.java:check_DataTable_NonTypesystemRule.java:supertypeof_DataTableTyle_SubtypingRule.java:typeof_DataCell_InferenceRule.java:typeof_DataColOp_InferenceRule.java:typeof_DataColumn_InferenceRule.java:typeof_DataIsInTarget_InferenceRule.java:typeof_DataRowOp_InferenceRule.java:typeof_DataSelector_InferenceRule.java:typeof_DataTableLookUp_InferenceRule.java" />
+</product>
+
