@@ -54,11 +54,11 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="3o3z" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.collect(de.q60.mps.collections.libs/)" />
     <import index="qqrq" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.components(MPS.IDEA/)" />
-    <import index="rmn3" ref="r:2f587aa6-2d3f-4726-9564-7648183caf97(org.iets3.variability.base.structure)" />
     <import index="n8u2" ref="r:452e57fa-fd4c-45a8-b9ba-964614a5a66e(org.iets3.variability.base.behavior)" />
     <import index="s7nz" ref="r:657b9157-a191-44db-93aa-6c27642f0f64(org.iets3.variability.base.editor)" />
     <import index="2rbz" ref="r:aeef8772-8af4-45c3-a762-623d4009d953(org.iets3.variability.base.plugin)" />
     <import index="mv1c" ref="r:ca6d049d-0cc6-4267-820c-178221dd0ad8(org.iets3.variability.configuration.base.editor)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="1jcu" ref="r:729fa0c7-b4e4-42b1-acfe-71017c020a49(org.iets3.analysis.base.behavior)" implicit="true" />
@@ -597,6 +597,7 @@
       <concept id="1954385921685784800" name="com.mbeddr.mpsutil.grammarcells.structure.PostprocessFunction" flags="ig" index="315t4" />
       <concept id="7408935449007508559" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition_expectedConcept" flags="ng" index="7dpZ6" />
       <concept id="7408935449007503509" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition" flags="ig" index="7duGs" />
+      <concept id="2523386941174202656" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SubstituteCondition_parentNode" flags="ng" index="2gy9SH" />
       <concept id="2529749638821361488" name="com.mbeddr.mpsutil.grammarcells.structure.DisableComponentInline" flags="ng" index="2jxsUO" />
       <concept id="7272510943426093121" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SideTransformActionsBuilderContext" flags="ng" index="2kS8pE" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
@@ -604,6 +605,7 @@
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
+      <concept id="2489050352088028316" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_editorContext" flags="ng" index="2MNBq7" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="4874944647490522665" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell_IsApplicable" flags="ig" index="1eYwpX" />
       <concept id="4874944647490524676" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell_Execute" flags="ig" index="1eYxTg" />
@@ -613,14 +615,20 @@
         <child id="4874944647490524677" name="execute" index="1eYxTh" />
       </concept>
       <concept id="4874944647490471525" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell_MatchingText" flags="ig" index="1eYWSL" />
+      <concept id="484443907672824414" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SubstituteCondition" flags="ig" index="3gMsPO" />
+      <concept id="484443907672900465" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SubstituteCondition_substitutedNode" flags="ng" index="3gMLhr" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="5304871968609388228" name="inverted" index="2UvnoQ" />
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
+        <child id="484443907672828832" name="substituteCondition" index="3gMvMa" />
+        <child id="621193272061064649" name="sideTransformCondition" index="1m$hSO" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7408935449007570592" name="substituteCondition" index="7deOD" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
+      <concept id="621193272061064420" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SideTransformationCondition" flags="ig" index="1m$hWp" />
+      <concept id="2862331529394480355" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SubConcept" flags="ng" index="1Lj6YZ" />
       <concept id="6349233906483558394" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_wrappedConcept" flags="ng" index="1ZN7lz" />
     </language>
     <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell">
@@ -799,6 +807,10 @@
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
       </concept>
       <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
@@ -1157,6 +1169,61 @@
                 <property role="1iTho6" value="f9c802" />
               </node>
             </node>
+            <node concept="3gMsPO" id="60PTWgmlH_I" role="3gMvMa">
+              <node concept="3clFbS" id="60PTWgmlH_J" role="2VODD2">
+                <node concept="3clFbF" id="60PTWgmlH_K" role="3cqZAp">
+                  <node concept="2OqwBi" id="60PTWgmlH_L" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgmmnWL" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmlH_N" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:3yPQSK6HgSW" resolve="isFlagCellSubstitutionActivated" />
+                      <node concept="2OqwBi" id="60PTWgmlH_O" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmlH_P" role="2Oq$k0">
+                          <ref role="355D3t" to="s6b7:3tsFshP5E8h" resolve="FeatureModel" />
+                          <ref role="355D3u" to="s6b7:5ABtUk3ziqw" resolve="solverTaskRunning" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmlH_Q" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1Lj6YZ" id="60PTWgmlH_R" role="37wK5m" />
+                      <node concept="3gMLhr" id="60PTWgmlH_S" role="37wK5m" />
+                      <node concept="2gy9SH" id="60PTWgmlH_T" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmlH_U" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1m$hWp" id="60PTWgmmm5M" role="1m$hSO">
+              <node concept="3clFbS" id="60PTWgmmm5N" role="2VODD2">
+                <node concept="3clFbF" id="60PTWgmmm5O" role="3cqZAp">
+                  <node concept="2OqwBi" id="60PTWgmmm5P" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgmmnWM" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmmm5R" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:1xItpY9kSqt" resolve="isFlagCellSideTransformationActivated" />
+                      <node concept="2OqwBi" id="60PTWgmmm5S" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmmm5T" role="2Oq$k0">
+                          <ref role="355D3t" to="s6b7:3tsFshP5E8h" resolve="FeatureModel" />
+                          <ref role="355D3u" to="s6b7:5ABtUk3ziqw" resolve="solverTaskRunning" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmmm5U" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1Lj6YZ" id="60PTWgmmm5V" role="37wK5m" />
+                      <node concept="313q4" id="60PTWgmmm5W" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmmm5X" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3F1sOY" id="5AdLxbnFGku" role="3EZMnx">
@@ -1280,6 +1347,61 @@
           <node concept="VechU" id="53MUT9sE422" role="3F10Kt">
             <node concept="1iSF2X" id="53MUT9sE423" role="VblUZ">
               <property role="1iTho6" value="f9c802" />
+            </node>
+          </node>
+          <node concept="3gMsPO" id="60PTWgmlHOX" role="3gMvMa">
+            <node concept="3clFbS" id="60PTWgmlHOY" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgmlHOZ" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgmlHP0" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgmmnWN" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmlHP2" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:3yPQSK6HgSW" resolve="isFlagCellSubstitutionActivated" />
+                    <node concept="2OqwBi" id="60PTWgmlHP3" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmlHP4" role="2Oq$k0">
+                        <ref role="355D3t" to="s6b7:3tsFshP5E8h" resolve="FeatureModel" />
+                        <ref role="355D3u" to="s6b7:5ABtUk3ziqw" resolve="solverTaskRunning" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmlHP5" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1Lj6YZ" id="60PTWgmlHP6" role="37wK5m" />
+                    <node concept="3gMLhr" id="60PTWgmlHP7" role="37wK5m" />
+                    <node concept="2gy9SH" id="60PTWgmlHP8" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmlHP9" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1m$hWp" id="60PTWgmmmpN" role="1m$hSO">
+            <node concept="3clFbS" id="60PTWgmmmpO" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgmmmpP" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgmmmpQ" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgmmnWO" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmmmpS" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:1xItpY9kSqt" resolve="isFlagCellSideTransformationActivated" />
+                    <node concept="2OqwBi" id="60PTWgmmmpT" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmmmpU" role="2Oq$k0">
+                        <ref role="355D3t" to="s6b7:3tsFshP5E8h" resolve="FeatureModel" />
+                        <ref role="355D3u" to="s6b7:5ABtUk3ziqw" resolve="solverTaskRunning" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmmmpV" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1Lj6YZ" id="60PTWgmmmpW" role="37wK5m" />
+                    <node concept="313q4" id="60PTWgmmmpX" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmmmpY" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -3467,6 +3589,61 @@
           <node concept="VechU" id="4onczE6nPKV" role="3F10Kt">
             <property role="Vb096" value="fLwANPu/blue" />
           </node>
+          <node concept="3gMsPO" id="60PTWgmk11q" role="3gMvMa">
+            <node concept="3clFbS" id="60PTWgmk11r" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgmk11u" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgmk11v" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgmmnWP" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmk11x" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:3yPQSK6HgSW" resolve="isFlagCellSubstitutionActivated" />
+                    <node concept="2OqwBi" id="60PTWgmkN4A" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmkN4B" role="2Oq$k0">
+                        <ref role="355D3t" to="s6b7:5NPKd17BG$l" resolve="FeatureModelConfiguration_old" />
+                        <ref role="355D3u" to="s6b7:4onczE5U5c$" resolve="abstract_old" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmkN4C" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1Lj6YZ" id="60PTWgmk11z" role="37wK5m" />
+                    <node concept="3gMLhr" id="60PTWgmk11$" role="37wK5m" />
+                    <node concept="2gy9SH" id="60PTWgmk11_" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmk11A" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1m$hWp" id="60PTWgmlJ1m" role="1m$hSO">
+            <node concept="3clFbS" id="60PTWgmlJ1n" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgmlJqq" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgmlJQx" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgmmnWQ" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmlK4w" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:1xItpY9kSqt" resolve="isFlagCellSideTransformationActivated" />
+                    <node concept="2OqwBi" id="60PTWgmlKaS" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmlKaT" role="2Oq$k0">
+                        <ref role="355D3t" to="s6b7:5NPKd17BG$l" resolve="FeatureModelConfiguration_old" />
+                        <ref role="355D3u" to="s6b7:4onczE5U5c$" resolve="abstract_old" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmlKaU" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1Lj6YZ" id="60PTWgmlKq4" role="37wK5m" />
+                    <node concept="313q4" id="60PTWgmlKFM" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmlKXU" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="5NPKd17BIQi" role="2iSdaV" />
         <node concept="1HlG4h" id="3FUl$ND4gTT" role="3EZMnx">
@@ -3876,6 +4053,61 @@
           <node concept="VechU" id="53MUT9sxjKW" role="3F10Kt">
             <node concept="1iSF2X" id="53MUT9sxjKX" role="VblUZ">
               <property role="1iTho6" value="f9c802" />
+            </node>
+          </node>
+          <node concept="3gMsPO" id="60PTWgmlEBA" role="3gMvMa">
+            <node concept="3clFbS" id="60PTWgmlEBB" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgmlEBC" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgmlEBD" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgmmnWR" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmlEBF" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:3yPQSK6HgSW" resolve="isFlagCellSubstitutionActivated" />
+                    <node concept="2OqwBi" id="60PTWgmlEBG" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmlEBH" role="2Oq$k0">
+                        <ref role="355D3t" to="s6b7:5NPKd17BG$l" resolve="FeatureModelConfiguration_old" />
+                        <ref role="355D3u" to="s6b7:49ZhMclDeUT" resolve="complete_old" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmlEBI" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1Lj6YZ" id="60PTWgmlEBJ" role="37wK5m" />
+                    <node concept="3gMLhr" id="60PTWgmlEBK" role="37wK5m" />
+                    <node concept="2gy9SH" id="60PTWgmlEBL" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmlEBM" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1m$hWp" id="60PTWgmmjwq" role="1m$hSO">
+            <node concept="3clFbS" id="60PTWgmmjwr" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgmmjws" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgmmjwt" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgmmnWS" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmmjwv" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:1xItpY9kSqt" resolve="isFlagCellSideTransformationActivated" />
+                    <node concept="2OqwBi" id="60PTWgmmjww" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmmjwx" role="2Oq$k0">
+                        <ref role="355D3t" to="s6b7:5NPKd17BG$l" resolve="FeatureModelConfiguration_old" />
+                        <ref role="355D3u" to="s6b7:49ZhMclDeUT" resolve="complete_old" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmmjwy" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1Lj6YZ" id="60PTWgmmjwz" role="37wK5m" />
+                    <node concept="313q4" id="60PTWgmmjw$" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmmjw_" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
