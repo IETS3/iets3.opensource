@@ -10,6 +10,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
@@ -73,6 +74,7 @@
       <concept id="1176809959526" name="jetbrains.mps.lang.editor.structure.QueryFunction_Color" flags="in" index="3ZlJ5R" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -129,7 +131,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -451,10 +455,23 @@
           <node concept="1Lj6DL" id="4_qY3E4O10J" role="yw3OG">
             <node concept="1Lj6DC" id="4_qY3E4O10K" role="1Lj8FM">
               <node concept="3clFbS" id="4_qY3E4O10L" role="2VODD2">
-                <node concept="3clFbF" id="4_qY3E4O10M" role="3cqZAp">
-                  <node concept="2OqwBi" id="4_qY3E4O10N" role="3clFbG">
-                    <node concept="1Lj6YZ" id="4_qY3E4O10O" role="2Oq$k0" />
-                    <node concept="3n3YKJ" id="4_qY3E4O10P" role="2OqNvi" />
+                <node concept="3clFbF" id="60PTWgmPpOh" role="3cqZAp">
+                  <node concept="2OqwBi" id="60PTWgmkZsW" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgmmnWT" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmkZsY" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmPeug" resolve="getConstantText" />
+                      <node concept="2YIFZM" id="60PTWgs81fI" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgq0bdE" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgs81fJ" role="37wK5m">
+                          <ref role="35c_gD" to="mi3w:7aRvJQE2nOx" resolve="DateDeltaLiteral" />
+                        </node>
+                      </node>
+                      <node concept="1Lj6YZ" id="60PTWgmkZt2" role="37wK5m" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -786,10 +803,23 @@
           <node concept="1Lj6DL" id="3HiHZeyhTtq" role="yw3OG">
             <node concept="1Lj6DC" id="3HiHZeyhTtr" role="1Lj8FM">
               <node concept="3clFbS" id="3HiHZeyhTts" role="2VODD2">
-                <node concept="3clFbF" id="3HiHZeyhTtt" role="3cqZAp">
-                  <node concept="2OqwBi" id="3HiHZeyhTtu" role="3clFbG">
-                    <node concept="1Lj6YZ" id="3HiHZeyhTtv" role="2Oq$k0" />
-                    <node concept="3n3YKJ" id="3HiHZeyhTtw" role="2OqNvi" />
+                <node concept="3clFbF" id="60PTWgmPqhP" role="3cqZAp">
+                  <node concept="2OqwBi" id="60PTWgmPqhR" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgmPqhS" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmPqhT" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmPeug" resolve="getConstantText" />
+                      <node concept="2YIFZM" id="60PTWgs85qG" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgq0bdE" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgs85qH" role="37wK5m">
+                          <ref role="35c_gD" to="mi3w:3HiHZeyhTnY" resolve="TimeDeltaLiteral" />
+                        </node>
+                      </node>
+                      <node concept="1Lj6YZ" id="60PTWgmPqhV" role="37wK5m" />
+                    </node>
                   </node>
                 </node>
               </node>

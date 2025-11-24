@@ -462,6 +462,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -14974,6 +14975,21 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="60PTWgmPdEt" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgmPeug" role="jymVt">
+      <property role="TrG5h" value="getConstantText" />
+      <node concept="3clFbS" id="60PTWgmPeuj" role="3clF47" />
+      <node concept="3Tm1VV" id="60PTWgmPeuk" role="1B3o_S" />
+      <node concept="17QB3L" id="60PTWgmPe8H" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgmPeUs" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgmPeUr" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgmPf0a" role="3clF46">
+        <property role="TrG5h" value="subconcept" />
+        <node concept="3bZ5Sz" id="60PTWgmPf$S" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="e1lyfcc4f2" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3yPQSK6Hg5I">
@@ -15067,6 +15083,33 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="1xItpY9kWyS" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgmPgBy" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgmPgcm" role="jymVt">
+      <property role="TrG5h" value="getConstantText" />
+      <node concept="3Tm1VV" id="60PTWgmPgco" role="1B3o_S" />
+      <node concept="17QB3L" id="60PTWgmPgcp" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgmPgcq" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgmPgcr" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgmPgcs" role="3clF46">
+        <property role="TrG5h" value="subconcept" />
+        <node concept="3bZ5Sz" id="60PTWgmPgct" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="60PTWgmPgcu" role="3clF47">
+        <node concept="3clFbF" id="60PTWgmPh9M" role="3cqZAp">
+          <node concept="2OqwBi" id="60PTWgmPhy5" role="3clFbG">
+            <node concept="37vLTw" id="60PTWgmPh9L" role="2Oq$k0">
+              <ref role="3cqZAo" node="60PTWgmPgcs" resolve="subconcept" />
+            </node>
+            <node concept="3n3YKJ" id="60PTWgmPi3P" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgmPgcv" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>

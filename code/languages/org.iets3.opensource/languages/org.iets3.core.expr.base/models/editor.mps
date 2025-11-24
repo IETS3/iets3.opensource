@@ -677,7 +677,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -831,10 +830,23 @@
             <node concept="1Lj6DL" id="4rZeNQ6MpN6" role="yw3OG">
               <node concept="1Lj6DC" id="4rZeNQ6MpN8" role="1Lj8FM">
                 <node concept="3clFbS" id="4rZeNQ6MpNa" role="2VODD2">
-                  <node concept="3clFbF" id="4rZeNQ6MpNS" role="3cqZAp">
-                    <node concept="2OqwBi" id="4rZeNQ6MpQJ" role="3clFbG">
-                      <node concept="1Lj6YZ" id="4rZeNQ6MpNR" role="2Oq$k0" />
-                      <node concept="3n3YKJ" id="4rZeNQ6MpWP" role="2OqNvi" />
+                  <node concept="3clFbF" id="60PTWgmkZsV" role="3cqZAp">
+                    <node concept="2OqwBi" id="60PTWgmkZsW" role="3clFbG">
+                      <node concept="2YIFZM" id="60PTWgmmnWT" role="2Oq$k0">
+                        <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmkZsY" role="2OqNvi">
+                        <ref role="37wK5l" to="oq0c:60PTWgmPeug" resolve="getConstantText" />
+                        <node concept="2YIFZM" id="60PTWgs80kz" role="37wK5m">
+                          <ref role="37wK5l" to="oq0c:60PTWgq0bdE" resolve="getIdentifier" />
+                          <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                          <node concept="35c_gC" id="60PTWgs80yP" role="37wK5m">
+                            <ref role="35c_gD" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
+                          </node>
+                        </node>
+                        <node concept="1Lj6YZ" id="60PTWgmkZt2" role="37wK5m" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -857,10 +869,23 @@
           <node concept="1Lj6DL" id="15gN1OJ0by9" role="3EZMnx">
             <node concept="1Lj6DC" id="15gN1OJ0byb" role="1Lj8FM">
               <node concept="3clFbS" id="15gN1OJ0byd" role="2VODD2">
-                <node concept="3clFbF" id="15gN1OJ0c7f" role="3cqZAp">
-                  <node concept="2OqwBi" id="15gN1OJ0c7g" role="3clFbG">
-                    <node concept="1Lj6YZ" id="15gN1OJ0c7h" role="2Oq$k0" />
-                    <node concept="3n3YKJ" id="15gN1OJ0c7i" role="2OqNvi" />
+                <node concept="3clFbF" id="60PTWgmPnly" role="3cqZAp">
+                  <node concept="2OqwBi" id="60PTWgmPnl$" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgmPnl_" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmPnlA" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmPeug" resolve="getConstantText" />
+                      <node concept="2YIFZM" id="60PTWgs80RV" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgq0bdE" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgs80RW" role="37wK5m">
+                          <ref role="35c_gD" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
+                        </node>
+                      </node>
+                      <node concept="1Lj6YZ" id="60PTWgmPnlC" role="37wK5m" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -953,10 +978,23 @@
           <node concept="1Lj6DL" id="4_qY3E4O10J" role="yw3OG">
             <node concept="1Lj6DC" id="4_qY3E4O10K" role="1Lj8FM">
               <node concept="3clFbS" id="4_qY3E4O10L" role="2VODD2">
-                <node concept="3clFbF" id="4_qY3E4O10M" role="3cqZAp">
-                  <node concept="2OqwBi" id="4_qY3E4O10N" role="3clFbG">
-                    <node concept="1Lj6YZ" id="4_qY3E4O10O" role="2Oq$k0" />
-                    <node concept="3n3YKJ" id="4_qY3E4O10P" role="2OqNvi" />
+                <node concept="3clFbF" id="60PTWgmPpDf" role="3cqZAp">
+                  <node concept="2OqwBi" id="60PTWgmPpDh" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgmPpDi" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmPpDj" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmPeug" resolve="getConstantText" />
+                      <node concept="2YIFZM" id="60PTWgs84aN" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgq0bdE" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgs84aO" role="37wK5m">
+                          <ref role="35c_gD" to="hm2y:4rZeNQ6NtQV" resolve="UnaryMinusExpression" />
+                        </node>
+                      </node>
+                      <node concept="1Lj6YZ" id="60PTWgmPpDl" role="37wK5m" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1043,9 +1081,23 @@
           <ref role="1ERwB7" node="4nmY9n8OE02" resolve="deleteDotItself" />
           <node concept="1Lj6DC" id="7NJy08a3Obf" role="1Lj8FM">
             <node concept="3clFbS" id="7NJy08a3Obh" role="2VODD2">
-              <node concept="3clFbF" id="7NJy08a3OdF" role="3cqZAp">
-                <node concept="Xl_RD" id="7NJy08a3OdE" role="3clFbG">
-                  <property role="Xl_RC" value="." />
+              <node concept="3clFbF" id="60PTWgmPppp" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgmPppr" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgmPpps" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmPppt" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgmPeug" resolve="getConstantText" />
+                    <node concept="2YIFZM" id="60PTWgs83am" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgq0bdE" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgs83an" role="37wK5m">
+                        <ref role="35c_gD" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                      </node>
+                    </node>
+                    <node concept="1Lj6YZ" id="60PTWgmPppv" role="37wK5m" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -5844,9 +5896,22 @@
             <node concept="1Lj6DC" id="5a_u3OzTCwW" role="1Lj8FM">
               <node concept="3clFbS" id="5a_u3OzTCwX" role="2VODD2">
                 <node concept="3clFbF" id="5a_u3OzTCwY" role="3cqZAp">
-                  <node concept="2OqwBi" id="5a_u3OzTCwZ" role="3clFbG">
-                    <node concept="1Lj6YZ" id="5a_u3OzTCx0" role="2Oq$k0" />
-                    <node concept="3n3YKJ" id="5a_u3OzTCx1" role="2OqNvi" />
+                  <node concept="2OqwBi" id="60PTWgmPo2I" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgmPo2J" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmPo2K" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmPeug" resolve="getConstantText" />
+                      <node concept="2YIFZM" id="60PTWgs81fI" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgq0bdE" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgs81fJ" role="37wK5m">
+                          <ref role="35c_gD" to="hm2y:5a_u3OzTCvZ" resolve="ColonCast" />
+                        </node>
+                      </node>
+                      <node concept="1Lj6YZ" id="60PTWgmPo2M" role="37wK5m" />
+                    </node>
                   </node>
                 </node>
               </node>
