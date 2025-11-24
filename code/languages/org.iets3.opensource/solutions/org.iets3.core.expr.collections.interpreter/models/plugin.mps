@@ -7253,8 +7253,53 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="XJW33sMQiE" role="3cqZAp">
+              <node concept="3cpWsn" id="XJW33sMQiH" role="3cpWs9">
+                <property role="TrG5h" value="index" />
+                <node concept="10Oyi0" id="XJW33sMQiC" role="1tU5fm" />
+                <node concept="3cmrfG" id="XJW33sMQ$N" role="33vP2m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="XJW33sMR8S" role="3cqZAp">
+              <node concept="3cpWsn" id="XJW33sMR8T" role="3cpWs9">
+                <property role="TrG5h" value="oldRnd" />
+                <node concept="3uibUv" id="XJW33sMR8U" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="0kSF2" id="XJW33sMSpW" role="33vP2m">
+                  <node concept="3uibUv" id="XJW33sMSpZ" role="0kSFW">
+                    <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                  </node>
+                  <node concept="3EllGN" id="XJW33sMSeI" role="0kSFX">
+                    <node concept="10M0yZ" id="XJW33sMSkd" role="3ElVtu">
+                      <ref role="3cqZAo" to="y6bu:7SZA7Udlbqp" resolve="RND" />
+                      <ref role="1PxDUh" to="y6bu:7SZA7Udlb7n" resolve="CollectionEnvConstants" />
+                    </node>
+                    <node concept="TvHiN" id="XJW33sMRr6" role="3ElQJh" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="2$JKZl" id="1mDdTH42xD" role="3cqZAp">
               <node concept="3clFbS" id="1mDdTH42xE" role="2LFqv$">
+                <node concept="3clFbF" id="XJW33sMSxK" role="3cqZAp">
+                  <node concept="37vLTI" id="XJW33sMSKH" role="3clFbG">
+                    <node concept="3uNrnE" id="XJW33sMUuE" role="37vLTx">
+                      <node concept="37vLTw" id="XJW33sMUuG" role="2$L3a6">
+                        <ref role="3cqZAo" node="XJW33sMQiH" resolve="index" />
+                      </node>
+                    </node>
+                    <node concept="3EllGN" id="XJW33sMSxM" role="37vLTJ">
+                      <node concept="10M0yZ" id="XJW33sMSxN" role="3ElVtu">
+                        <ref role="3cqZAo" to="y6bu:7SZA7Udlbqp" resolve="RND" />
+                        <ref role="1PxDUh" to="y6bu:7SZA7Udlb7n" resolve="CollectionEnvConstants" />
+                      </node>
+                      <node concept="TvHiN" id="XJW33sMSxO" role="3ElQJh" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="1mDdTH42xO" role="3cqZAp">
                   <node concept="3cpWsn" id="1mDdTH42xP" role="3cpWs9">
                     <property role="TrG5h" value="next" />
@@ -7341,6 +7386,20 @@
                 </node>
                 <node concept="liA8E" id="1mDdTH42yt" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="XJW33sMUYT" role="3cqZAp">
+              <node concept="37vLTI" id="XJW33sMVmK" role="3clFbG">
+                <node concept="37vLTw" id="XJW33sMVpH" role="37vLTx">
+                  <ref role="3cqZAo" node="XJW33sMR8T" resolve="oldRnd" />
+                </node>
+                <node concept="3EllGN" id="XJW33sMUYV" role="37vLTJ">
+                  <node concept="10M0yZ" id="XJW33sMUYW" role="3ElVtu">
+                    <ref role="3cqZAo" to="y6bu:7SZA7Udlbqp" resolve="RND" />
+                    <ref role="1PxDUh" to="y6bu:7SZA7Udlb7n" resolve="CollectionEnvConstants" />
+                  </node>
+                  <node concept="TvHiN" id="XJW33sMUYX" role="3ElQJh" />
                 </node>
               </node>
             </node>
