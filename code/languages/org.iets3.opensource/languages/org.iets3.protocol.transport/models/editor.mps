@@ -209,6 +209,10 @@
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
       </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -636,6 +640,53 @@
             </node>
             <node concept="3F1sOY" id="6JtAeCuUIB_" role="3EZMnx">
               <ref role="1NtTu8" to="4kwy:cJpacq40jC" resolve="optionalName" />
+            </node>
+          </node>
+          <node concept="uPpia" id="60PTWgpiy9J" role="1djCvC">
+            <node concept="3clFbS" id="60PTWgpiy9K" role="2VODD2">
+              <node concept="3cpWs8" id="60PTWgpaieK" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgpaieL" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgpaieM" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgpaieN" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgpaieO" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgpaieP" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2YIFZM" id="60PTWgpaieQ" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgpig25" role="37wK5m">
+                          <ref role="35c_gD" to="boyp:vJtToBuGSd" resolve="ProtocolMap" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgpifpX" role="37wK5m">
+                          <ref role="359W_E" to="boyp:vJtToBuGSd" resolve="ProtocolMap" />
+                          <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgpieLN" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgpaieT" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgpaieU" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgpaieV" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgpaieW" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgpaieX" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgpaieL" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgpaieY" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgpaieZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgpaieL" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgpaif0" role="2OqNvi" />
+                  </node>
+                  <node concept="1oAbNU" id="60PTWgpaif1" role="3K4GZi" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

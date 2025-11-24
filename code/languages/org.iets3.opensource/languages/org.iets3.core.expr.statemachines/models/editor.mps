@@ -15,8 +15,8 @@
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="fym6" ref="r:7b6888d5-e93c-46df-85f2-56bc59c85348(org.iets3.core.expr.mutable.editor)" implicit="true" />
@@ -550,9 +550,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqM9M" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqM9N" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqM9T" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqM9S" role="3clFbG">
-                <property role="Xl_RC" value="parameters for the state machine" />
+            <node concept="3cpWs8" id="60PTWgneJ2b" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneJ2c" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneJ2d" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneJ2e" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneJ2f" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneJ2g" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneJ2h" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneJ2i" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneJ2j" role="2Oq$k0">
+                        <ref role="359W_E" to="19m5:7$TgoCYa5Mz" resolve="StateMachine" />
+                        <ref role="359W_F" to="19m5:1mDdTG5A7j" resolve="parameters" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneJ2k" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneJ2l" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneJ2m" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneJ2o" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneJ2p" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneJ2q" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneJ2c" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneJ2s" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneJ2t" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneJ2c" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneJ2u" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqM9S" role="3K4GZi">
+                  <property role="Xl_RC" value="add parameters for the state machine" />
+                </node>
               </node>
             </node>
           </node>
@@ -1167,9 +1205,47 @@
           </node>
           <node concept="uPpia" id="1ZlHRbgqOkW" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbgqOkX" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbgqOl3" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbgqOl2" role="3clFbG">
-                  <property role="Xl_RC" value="a guard for the triggered transition" />
+              <node concept="3cpWs8" id="60PTWgneMei" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgneMej" role="3cpWs9">
+                  <property role="TrG5h" value="description" />
+                  <node concept="17QB3L" id="60PTWgneMek" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgneMel" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgneMem" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgneMen" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgneMeo" role="37wK5m">
+                        <node concept="liA8E" id="60PTWgneMep" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgneMeq" role="2Oq$k0">
+                          <ref role="359W_E" to="19m5:7$TgoCYa5Nt" resolve="TriggeredTransition" />
+                          <ref role="359W_F" to="19m5:7$TgoCYa5Nw" resolve="guard" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgneMer" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgneMes" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgneMet" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgneMev" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgneMew" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgneMex" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgneMej" resolve="description" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgneMez" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgneMe$" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgneMej" resolve="description" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgneMe_" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="1ZlHRbgqOl2" role="3K4GZi">
+                    <property role="Xl_RC" value="add a guard for the triggered transition" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1190,9 +1266,47 @@
           </node>
           <node concept="uPpia" id="1ZlHRbgqOm6" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbgqOm7" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbgqOmd" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbgqOmc" role="3clFbG">
-                  <property role="Xl_RC" value="a target for the triggered transition" />
+              <node concept="3cpWs8" id="60PTWgneMjC" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgneMjD" role="3cpWs9">
+                  <property role="TrG5h" value="description" />
+                  <node concept="17QB3L" id="60PTWgneMjE" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgneMjF" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgneMjG" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgneMjH" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgneMjI" role="37wK5m">
+                        <node concept="liA8E" id="60PTWgneMjJ" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgneMjK" role="2Oq$k0">
+                          <ref role="359W_E" to="19m5:7$TgoCYa5Nt" resolve="TriggeredTransition" />
+                          <ref role="359W_F" to="19m5:7Z_fDCwfwnL" resolve="target" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgneMjL" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgneMjM" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgneMjN" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgneMjP" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgneMjQ" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgneMjR" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgneMjD" resolve="description" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgneMjT" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgneMjU" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgneMjD" resolve="description" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgneMjV" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="1ZlHRbgqOmc" role="3K4GZi">
+                    <property role="Xl_RC" value="add a target for the triggered transition" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1219,9 +1333,47 @@
           </node>
           <node concept="uPpia" id="1ZlHRbgqOsZ" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbgqOt0" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbgqOto" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbgqOtn" role="3clFbG">
-                  <property role="Xl_RC" value="an action for the triggered transition" />
+              <node concept="3cpWs8" id="60PTWgneMwj" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgneMwk" role="3cpWs9">
+                  <property role="TrG5h" value="description" />
+                  <node concept="17QB3L" id="60PTWgneMwl" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgneMwm" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgneMwn" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgneMwo" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgneMwp" role="37wK5m">
+                        <node concept="liA8E" id="60PTWgneMwq" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgneMwr" role="2Oq$k0">
+                          <ref role="359W_E" to="19m5:7$TgoCYa5Nt" resolve="TriggeredTransition" />
+                          <ref role="359W_F" to="19m5:7$TgoCYhIAh" resolve="action" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgneMws" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgneMwt" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgneMwu" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgneMww" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgneMwx" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgneMwy" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgneMwk" resolve="description" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgneMw$" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgneMw_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgneMwk" resolve="description" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgneMwA" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="1ZlHRbgqOtn" role="3K4GZi">
+                    <property role="Xl_RC" value="add an action for the triggered transition" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1286,9 +1438,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqLZy" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqLZz" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqLZV" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqLZU" role="3clFbG">
-                <property role="Xl_RC" value="arguments for the event" />
+            <node concept="3cpWs8" id="60PTWgneIhe" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneIhf" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneIhg" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneIhh" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneIhi" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneIhj" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneIhk" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneIhl" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneIhm" role="2Oq$k0">
+                        <ref role="359W_E" to="19m5:7$TgoCYa5Nq" resolve="Event" />
+                        <ref role="359W_F" to="19m5:aPhVmWQWVF" resolve="args" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneIhn" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneIho" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneIhp" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneIhr" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneIhs" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneIht" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneIhf" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneIhv" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneIhw" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneIhf" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneIhx" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqLZU" role="3K4GZi">
+                  <property role="Xl_RC" value="add arguments for the event" />
+                </node>
               </node>
             </node>
           </node>
@@ -1625,9 +1815,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqLXq" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqLXr" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqLXx" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqLXw" role="3clFbG">
-                <property role="Xl_RC" value="a type for the event argument" />
+            <node concept="3cpWs8" id="60PTWgneI4p" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneI4q" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneI4r" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneI4s" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneI4t" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneI4u" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneI4v" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneI4w" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneI4x" role="2Oq$k0">
+                        <ref role="359W_E" to="19m5:aPhVmWQWVH" resolve="EventArg" />
+                        <ref role="359W_F" to="zzzn:6zmBjqUkwsc" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneI4y" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneI4z" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneI4$" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneI4A" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneI4B" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneI4C" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneI4q" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneI4E" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneI4F" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneI4q" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneI4G" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqLXw" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type for the event argument" />
+                </node>
               </node>
             </node>
           </node>
@@ -1798,9 +2026,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqMfS" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqMfT" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqMgh" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqMgg" role="3clFbG">
-                <property role="Xl_RC" value="a type for the state machine variable" />
+            <node concept="3cpWs8" id="60PTWgneJwx" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneJwy" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneJwz" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneJw$" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneJw_" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneJwA" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneJwB" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneJwC" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneJwD" role="2Oq$k0">
+                        <ref role="359W_E" to="19m5:aPhVmWSe4k" resolve="StatemachineVar" />
+                        <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneJwE" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneJwF" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneJwG" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneJwI" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneJwJ" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneJwK" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneJwy" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneJwM" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneJwN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneJwy" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneJwO" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqMgg" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type for the state machine variable" />
+                </node>
               </node>
             </node>
           </node>
@@ -1957,9 +2223,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqL_O" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqL_P" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqL_V" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqL_U" role="3clFbG">
-                <property role="Xl_RC" value="a guard for the automatic transition" />
+            <node concept="3cpWs8" id="60PTWgne84W" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgne84X" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgne7R_" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgne84Y" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgne84Z" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                        <ref role="359W_E" to="19m5:7Z_fDCw6W7J" resolve="AutomaticTransition" />
+                        <ref role="359W_F" to="19m5:7$TgoCYa5Nw" resolve="guard" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgne854" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgne855" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgne856" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneHEB" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgne9KK" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgne9N5" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgne8JG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgne858" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgne9iC" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqL_U" role="3K4GZi">
+                  <property role="Xl_RC" value="add a guard for the automatic transition" />
+                </node>
               </node>
             </node>
           </node>
@@ -1980,9 +2284,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqLHA" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqLHB" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqLHZ" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqLHY" role="3clFbG">
-                <property role="Xl_RC" value="a target for the automatic transition" />
+            <node concept="3cpWs8" id="60PTWgneHKX" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneHKY" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneHKZ" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneHL0" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneHL1" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneHL2" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneHL3" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneHL4" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneHL5" role="2Oq$k0">
+                        <ref role="359W_E" to="19m5:7Z_fDCw6W7J" resolve="AutomaticTransition" />
+                        <ref role="359W_F" to="19m5:7Z_fDCwfwnL" resolve="target" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneHL6" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneHL7" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneHL8" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmkZsV" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneHLa" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneHLb" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneHKY" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneHLd" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneHLe" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneHKY" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneHLf" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqLHY" role="3K4GZi">
+                  <property role="Xl_RC" value="add a target for the automatic transition" />
+                </node>
               </node>
             </node>
           </node>
@@ -2009,9 +2351,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqLRN" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqLRO" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqLRU" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqLRT" role="3clFbG">
-                <property role="Xl_RC" value="an action for the automatic transition" />
+            <node concept="3cpWs8" id="60PTWgneHQj" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneHQk" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneHQl" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneHQm" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneHQn" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneHQo" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneHQp" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneHQq" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneHQr" role="2Oq$k0">
+                        <ref role="359W_E" to="19m5:7Z_fDCw6W7J" resolve="AutomaticTransition" />
+                        <ref role="359W_F" to="19m5:7$TgoCYhIAh" resolve="action" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneHQs" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneHQt" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneHQu" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneHQw" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneHQx" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneHQy" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneHQk" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneHQ$" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneHQ_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneHQk" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneHQA" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqLRT" role="3K4GZi">
+                  <property role="Xl_RC" value="add an action for the automatic transition" />
+                </node>
               </node>
             </node>
           </node>

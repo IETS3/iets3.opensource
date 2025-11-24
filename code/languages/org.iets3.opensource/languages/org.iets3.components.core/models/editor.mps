@@ -720,6 +720,10 @@
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
       </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -1152,9 +1156,47 @@
           </node>
           <node concept="uPpia" id="1ZlHRbghpua" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbghpub" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbghpuy" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbghpux" role="3clFbG">
-                  <property role="Xl_RC" value="an enriches clause" />
+              <node concept="3cpWs8" id="60PTWgnecQV" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgnecQW" role="3cpWs9">
+                  <property role="TrG5h" value="description" />
+                  <node concept="17QB3L" id="60PTWgnecQX" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgnecQY" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgnecQZ" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgnecR0" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgnecR1" role="37wK5m">
+                        <node concept="liA8E" id="60PTWgnecR2" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgnecR3" role="2Oq$k0">
+                          <ref role="359W_E" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+                          <ref role="359W_F" to="w9y2:6LfBX8YiQwy" resolve="enriches" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgnecR4" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgnecR5" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgnecR6" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgnecR8" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgnecR9" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgnecRa" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgnecQW" resolve="description" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgnecRc" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgnecRd" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgnecQW" resolve="description" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgnecRe" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="1ZlHRbghpux" role="3K4GZi">
+                    <property role="Xl_RC" value="add an enriches clause" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1300,9 +1342,47 @@
           </node>
           <node concept="uPpia" id="1ZlHRbghpPs" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbghpPt" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbghpPx" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbghpPz" role="3clFbG">
-                  <property role="Xl_RC" value="an enriches clause" />
+              <node concept="3cpWs8" id="60PTWgnecZE" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgnecZF" role="3cpWs9">
+                  <property role="TrG5h" value="description" />
+                  <node concept="17QB3L" id="60PTWgnecZG" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgnecZH" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgnecZI" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgnecZJ" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgnecZK" role="37wK5m">
+                        <node concept="liA8E" id="60PTWgnecZL" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgnecZM" role="2Oq$k0">
+                          <ref role="359W_E" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+                          <ref role="359W_F" to="w9y2:6LfBX8YiQwy" resolve="enriches" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgnecZN" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgnecZO" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgnecZP" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgnecZR" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgnecZS" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgnecZT" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgnecZF" resolve="description" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgnecZV" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgnecZW" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgnecZF" resolve="description" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgnecZX" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="1ZlHRbghpPz" role="3K4GZi">
+                    <property role="Xl_RC" value="add an enriches clause" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1882,9 +1962,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbghoGT" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbghoGU" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbghoLu" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbghoLt" role="3clFbG">
-                <property role="Xl_RC" value="a name for the instance" />
+            <node concept="3cpWs8" id="60PTWgnebuh" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnebui" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnebuj" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnebuk" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnebul" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnebum" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnebun" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnebuo" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnebup" role="2Oq$k0">
+                        <ref role="359W_E" to="w9y2:6LfBX8YlosD" resolve="ComponentInstance" />
+                        <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnebuq" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnebur" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnebus" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnebuu" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnebuv" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnebuw" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnebui" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnebuy" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnebuz" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnebui" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnebu$" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbghoLt" role="3K4GZi">
+                  <property role="Xl_RC" value="add a name for the instance" />
+                </node>
               </node>
             </node>
           </node>
@@ -2097,9 +2215,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbghpUm" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbghpUn" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbghpUI" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbghpUH" role="3clFbG">
-                <property role="Xl_RC" value="a default value for the parameter" />
+            <node concept="3cpWs8" id="60PTWgnedhW" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnedhX" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnedhY" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnedhZ" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnedi0" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnedi1" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnedi2" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnedi3" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnedi4" role="2Oq$k0">
+                        <ref role="359W_E" to="w9y2:cJpacq6wur" resolve="Parameter" />
+                        <ref role="359W_F" to="w9y2:cJpacq6wuw" resolve="defaultValue" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnedi5" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnedi6" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnedi7" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnedi9" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnedia" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnedib" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnedhX" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnedid" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnedie" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnedhX" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnedif" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbghpUH" role="3K4GZi">
+                  <property role="Xl_RC" value="add a default value for the parameter" />
+                </node>
               </node>
             </node>
           </node>
@@ -9120,9 +9276,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgkZzQ" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgkZzR" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgkZ_o" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgkZ_n" role="3clFbG">
-                <property role="Xl_RC" value="a name for the port" />
+            <node concept="3cpWs8" id="60PTWgnedIY" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnedIZ" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnedJ0" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnedJ1" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnedJ2" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnedJ3" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnedJ4" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnedJ5" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnedJ6" role="2Oq$k0">
+                        <ref role="359W_E" to="w9y2:6LfBX8YkpdW" resolve="Port" />
+                        <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnedJ7" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnedJ8" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnedJ9" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnedJb" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnedJc" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnedJd" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnedIZ" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnedJf" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnedJg" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnedIZ" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnedJh" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgkZ_n" role="3K4GZi">
+                  <property role="Xl_RC" value="add a name for the port" />
+                </node>
               </node>
             </node>
           </node>
@@ -11166,9 +11360,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgkZNn" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgkZNo" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgkZSf" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgkZSe" role="3clFbG">
-                <property role="Xl_RC" value="an initializer expression for the variable" />
+            <node concept="3cpWs8" id="60PTWgnee98" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnee99" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnee9a" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnee9b" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnee9c" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnee9d" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnee9e" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnee9f" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnee9g" role="2Oq$k0">
+                        <ref role="359W_E" to="w9y2:7kdj6EM27c1" resolve="Variable" />
+                        <ref role="359W_F" to="w9y2:7kdj6EM27d6" resolve="init" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnee9h" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnee9i" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnee9j" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnee9l" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnee9m" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnee9n" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnee99" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnee9p" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnee9q" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnee99" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnee9r" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgkZSe" role="3K4GZi">
+                  <property role="Xl_RC" value="add an initializer expression for the variable" />
+                </node>
               </node>
             </node>
           </node>
@@ -12096,9 +12328,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgkZFA" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgkZFB" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgkZFG" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgkZFF" role="3clFbG">
-                <property role="Xl_RC" value="a port type for the target" />
+            <node concept="3cpWs8" id="60PTWgnedVO" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnedVP" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnedVQ" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnedVR" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnedVS" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnedVT" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnedVU" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnedVV" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnedVW" role="2Oq$k0">
+                        <ref role="359W_E" to="w9y2:1WAg9TzeH4s" resolve="PortsTarget" />
+                        <ref role="359W_F" to="w9y2:1WAg9TzryC5" resolve="portType" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnedVX" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnedVY" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnedVZ" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnedW1" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnedW2" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnedW3" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnedVP" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnedW5" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnedW6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnedVP" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnedW7" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgkZFF" role="3K4GZi">
+                  <property role="Xl_RC" value="add a port type for the target" />
+                </node>
               </node>
             </node>
           </node>
@@ -12201,9 +12471,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbghnev" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbghnew" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbghne_" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbghne$" role="3clFbG">
-                <property role="Xl_RC" value="a port type for the target" />
+            <node concept="3cpWs8" id="60PTWgne84W" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgne84X" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgne7R_" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgne84Y" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgne84Z" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                        <ref role="359W_E" to="w9y2:1WAg9TzjsPq" resolve="AllPortsTarget" />
+                        <ref role="359W_F" to="w9y2:1WAg9TzryC5" resolve="portType" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgne854" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgne855" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgne856" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmkZsV" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgne9KK" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgne9N5" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgne8JG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgne858" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgne9iC" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbghne$" role="3K4GZi">
+                  <property role="Xl_RC" value="add a port type for the target" />
+                </node>
               </node>
             </node>
           </node>

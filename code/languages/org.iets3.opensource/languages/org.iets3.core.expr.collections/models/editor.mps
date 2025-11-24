@@ -20,6 +20,7 @@
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -192,6 +193,8 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -231,12 +234,18 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
       <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
       <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
@@ -248,6 +257,7 @@
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
+      <concept id="2489050352088028316" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_editorContext" flags="ng" index="2MNBq7" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ngI" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
@@ -256,6 +266,7 @@
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
+      <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
@@ -285,6 +296,10 @@
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -366,9 +381,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqotS" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqotT" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqotZ" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqotY" role="3clFbG">
-                <property role="Xl_RC" value="a size constraint for the collection type" />
+            <node concept="3cpWs8" id="60PTWgne84W" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgne84X" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgne7R_" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgne84Y" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgne84Z" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                        <ref role="359W_E" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                        <ref role="359W_F" to="700h:3tudP__pYOT" resolve="sizeConstraint" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgne854" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgne855" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgne856" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneka4" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgne9KK" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgne9N5" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgne8JG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgne858" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgne9iC" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqotY" role="3K4GZi">
+                  <property role="Xl_RC" value="add a size constraint for the collection type" />
+                </node>
               </node>
             </node>
           </node>
@@ -420,9 +473,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqoWd" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqoWe" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqoWk" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqoWj" role="3clFbG">
-                <property role="Xl_RC" value="a size constraint for the list type" />
+            <node concept="3cpWs8" id="60PTWgnelh0" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnelh1" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnelh2" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnelh3" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnelh4" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnelh5" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnelh6" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnelh7" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnelh8" role="2Oq$k0">
+                        <ref role="359W_E" to="700h:6zmBjqUinsw" resolve="ListType" />
+                        <ref role="359W_F" to="700h:3tudP__pYOT" resolve="sizeConstraint" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnelh9" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnelha" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnelhb" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnelhd" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnelhe" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnelhf" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnelh1" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnelhh" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnelhi" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnelh1" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnelhj" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqoWj" role="3K4GZi">
+                  <property role="Xl_RC" value="add a size constraint for the list type" />
+                </node>
               </node>
             </node>
           </node>
@@ -454,9 +545,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqoTf" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqoTg" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqoTm" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqoTl" role="3clFbG">
-                <property role="Xl_RC" value="a type constraint for the list literal" />
+            <node concept="3cpWs8" id="60PTWgnel2Z" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnel30" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnel31" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnel32" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnel33" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnel34" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnel35" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnel36" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnel37" role="2Oq$k0">
+                        <ref role="359W_E" to="700h:6zmBjqUinVn" resolve="ListLiteral" />
+                        <ref role="359W_F" to="700h:7yDflTqUOmT" resolve="typeConstraint" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnel38" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnel39" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnel3a" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmkZsV" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnel3c" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnel3d" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnel30" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnel3f" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnel3g" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnel30" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnel3h" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqoTl" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type constraint for the list literal" />
+                </node>
               </node>
             </node>
           </node>
@@ -684,9 +813,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqpgr" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqpgs" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqpgy" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqpgx" role="3clFbG">
-                <property role="Xl_RC" value="a type constraint for the set literal" />
+            <node concept="3cpWs8" id="60PTWgnelVJ" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnelVK" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnelVL" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnelVM" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnelVN" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnelVO" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnelVP" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnelVQ" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnelVR" role="2Oq$k0">
+                        <ref role="359W_E" to="700h:7GwCuf2WbAd" resolve="SetLiteral" />
+                        <ref role="359W_F" to="700h:7yDflTqXbp_" resolve="typeConstraint" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnelVS" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnelVT" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnelVU" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnelVW" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnelVX" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnelVY" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnelVK" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnelW0" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnelW1" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnelVK" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnelW2" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqpgx" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type constraint for the set literal" />
+                </node>
               </node>
             </node>
           </node>
@@ -970,9 +1137,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqp93" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqp94" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqp9a" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqp99" role="3clFbG">
-                <property role="Xl_RC" value="a type constraint for the map literal" />
+            <node concept="3cpWs8" id="60PTWgnelAB" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnelAC" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnelAD" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnelAE" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnelAF" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnelAG" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnelAH" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnelAI" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnelAJ" role="2Oq$k0">
+                        <ref role="359W_E" to="700h:7kYh9WszdHC" resolve="MapLiteral" />
+                        <ref role="359W_F" to="700h:7yDflTqZBPP" resolve="typeConstraint" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnelAK" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnelAL" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnelAM" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnelAO" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnelAP" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnelAQ" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnelAC" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnelAS" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnelAT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnelAC" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnelAU" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqp99" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type constraint for the map literal" />
+                </node>
               </node>
             </node>
           </node>

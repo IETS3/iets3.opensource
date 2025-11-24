@@ -35,6 +35,7 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="hm5v" ref="r:3d8b4628-659e-4af1-a607-3cc893005b62(de.slisson.mps.tables.runtime.cells)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
@@ -42,7 +43,6 @@
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
   </imports>
   <registry>
@@ -540,6 +540,10 @@
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
       </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -849,9 +853,47 @@
               </node>
               <node concept="uPpia" id="1ZlHRbgqLax" role="1djCvC">
                 <node concept="3clFbS" id="1ZlHRbgqLay" role="2VODD2">
-                  <node concept="3clFbF" id="1ZlHRbgqLf7" role="3cqZAp">
-                    <node concept="Xl_RD" id="1ZlHRbgqLf6" role="3clFbG">
-                      <property role="Xl_RC" value="an optional name for the default entry" />
+                  <node concept="3cpWs8" id="60PTWgneGtp" role="3cqZAp">
+                    <node concept="3cpWsn" id="60PTWgneGtq" role="3cpWs9">
+                      <property role="TrG5h" value="description" />
+                      <node concept="17QB3L" id="60PTWgneGtr" role="1tU5fm" />
+                      <node concept="2OqwBi" id="60PTWgneGts" role="33vP2m">
+                        <node concept="2YIFZM" id="60PTWgneGtt" role="2Oq$k0">
+                          <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                          <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgneGtu" role="2OqNvi">
+                          <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                          <node concept="2OqwBi" id="60PTWgneGtv" role="37wK5m">
+                            <node concept="liA8E" id="60PTWgneGtw" role="2OqNvi">
+                              <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                            </node>
+                            <node concept="355D3s" id="60PTWgnhoIi" role="2Oq$k0">
+                              <ref role="355D3t" to="wtll:14RJwd1g889" resolve="DefaultEntry" />
+                              <ref role="355D3u" to="wtll:2QxWJFKDebM" resolve="optionalName" />
+                            </node>
+                          </node>
+                          <node concept="313q4" id="60PTWgneGty" role="37wK5m" />
+                          <node concept="1oAbNU" id="60PTWgneGtz" role="37wK5m" />
+                          <node concept="2MNBq7" id="60PTWgneGt$" role="37wK5m" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="60PTWgneGtA" role="3cqZAp">
+                    <node concept="3K4zz7" id="60PTWgneGtB" role="3clFbG">
+                      <node concept="37vLTw" id="60PTWgneGtC" role="3K4E3e">
+                        <ref role="3cqZAo" node="60PTWgneGtq" resolve="description" />
+                      </node>
+                      <node concept="2OqwBi" id="60PTWgneGtE" role="3K4Cdx">
+                        <node concept="37vLTw" id="60PTWgneGtF" role="2Oq$k0">
+                          <ref role="3cqZAo" node="60PTWgneGtq" resolve="description" />
+                        </node>
+                        <node concept="17RvpY" id="60PTWgneGtG" role="2OqNvi" />
+                      </node>
+                      <node concept="Xl_RD" id="1ZlHRbgqLf6" role="3K4GZi">
+                        <property role="Xl_RC" value="add an optional name for the default entry" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -5674,9 +5716,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqJid" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqJie" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqJiD" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqJiC" role="3clFbG">
-                <property role="Xl_RC" value="a finder for the coordinate cell reference" />
+            <node concept="3cpWs8" id="60PTWgneEnj" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneEnk" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneEnl" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneEnm" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneEnn" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneEno" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneEnp" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneEnq" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneEnr" role="2Oq$k0">
+                        <ref role="359W_E" to="wtll:5xEoEMrqNzj" resolve="CoordCellRef" />
+                        <ref role="359W_F" to="wtll:3pIANU$T$6B" resolve="finder" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneEns" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneEnt" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneEnu" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmkZsV" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneEnw" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneEnx" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneEnk" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneEnz" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneEn$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneEnk" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneEn_" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqJiC" role="3K4GZi">
+                  <property role="Xl_RC" value="add a finder for the coordinate cell reference" />
+                </node>
               </node>
             </node>
           </node>
@@ -5939,9 +6019,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqIMM" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqIMN" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqIMT" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqIMS" role="3clFbG">
-                <property role="Xl_RC" value="a type for the cell argument" />
+            <node concept="3cpWs8" id="60PTWgne84W" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgne84X" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgne7R_" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgne84Y" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgne84Z" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                        <ref role="359W_E" to="wtll:5xEoEMrzSmg" resolve="CellArg" />
+                        <ref role="359W_F" to="wtll:5xEoEMrzSmx" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgne854" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgne855" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgne856" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneDqH" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgne9KK" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgne9N5" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgne8JG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgne858" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgne9iC" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqIMS" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type for the cell argument" />
+                </node>
               </node>
             </node>
           </node>

@@ -21,11 +21,11 @@
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="e9k1" ref="r:00903dee-f0b0-48de-9335-7cb3f90ae462(org.iets3.core.expr.data.structure)" implicit="true" />
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" implicit="true" />
     <import index="ux24" ref="r:74ad67c1-3cf0-4c00-bd30-edf8df02cfe5(org.iets3.core.expr.data.behavior)" implicit="true" />
@@ -383,6 +383,10 @@
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
       </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -584,9 +588,47 @@
           </node>
           <node concept="uPpia" id="1ZlHRbgqrpG" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbgqrpH" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbgqrpM" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbgqrpL" role="3clFbG">
-                  <property role="Xl_RC" value="a default lookup column for the data table" />
+              <node concept="3cpWs8" id="60PTWgnelVJ" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgnelVK" role="3cpWs9">
+                  <property role="TrG5h" value="description" />
+                  <node concept="17QB3L" id="60PTWgnelVL" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgnelVM" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgnelVN" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgnelVO" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgnelVP" role="37wK5m">
+                        <node concept="liA8E" id="60PTWgnelVQ" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgnelVR" role="2Oq$k0">
+                          <ref role="359W_E" to="e9k1:cPLa7Fp8FI" resolve="DataTable" />
+                          <ref role="359W_F" to="e9k1:7F9023_OEld" resolve="defaultLookupColumn" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgnelVS" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgnelVT" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgnelVU" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgnelVW" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgnelVX" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgnelVY" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgnelVK" resolve="description" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgnelW0" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgnelW1" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgnelVK" resolve="description" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgnelW2" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="1ZlHRbgqrpL" role="3K4GZi">
+                    <property role="Xl_RC" value="add a default lookup column for the data table" />
+                  </node>
                 </node>
               </node>
             </node>

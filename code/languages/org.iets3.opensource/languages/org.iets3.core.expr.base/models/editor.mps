@@ -674,6 +674,10 @@
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
       </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -1824,9 +1828,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgl1nZ" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgl1o0" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgl1r5" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgl1r4" role="3clFbG">
-                <property role="Xl_RC" value="an else clause" />
+            <node concept="3cpWs8" id="60PTWgnegmY" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnegmZ" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnegn0" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnegn1" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnegn2" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnegn3" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnegn4" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnegn5" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnegn6" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:6NJfo6_rQ9E" resolve="IfExpression" />
+                        <ref role="359W_F" to="hm2y:xG0f0hk3ZS" resolve="elseSection" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnegn7" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnegn8" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnegn9" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnegnb" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnegnc" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnegnd" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnegmZ" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnegnf" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnegng" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnegmZ" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnegnh" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgl1r4" role="3K4GZi">
+                  <property role="Xl_RC" value="add an else clause" />
+                </node>
               </node>
             </node>
           </node>
@@ -2083,9 +2125,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgmO61" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgmO62" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgmO6p" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgmO6o" role="3clFbG">
-                <property role="Xl_RC" value="an optional name for the isSome expression" />
+            <node concept="3cpWs8" id="60PTWgnfdc1" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnfdc2" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnfdc3" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnfdc4" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnfdc5" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnfdc6" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnfdc7" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnfdc8" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnfdc9" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
+                        <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnfdca" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnfdcb" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnfdcc" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnfdce" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnfdcf" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnfdcg" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnfdc2" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnfdch" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnfdci" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnfdc2" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnfdcj" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="60PTWgnfdck" role="3K4GZi">
+                  <property role="Xl_RC" value="add an optional name for the isSome expression" />
+                </node>
               </node>
             </node>
           </node>
@@ -2129,9 +2209,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqkbz" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqkb$" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqkbV" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqkbU" role="3clFbG">
-                <property role="Xl_RC" value="a base type for the none literal" />
+            <node concept="3cpWs8" id="60PTWgnehPG" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnehPH" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnehPI" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnehPJ" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnehPK" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnehPL" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnehPM" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnehPN" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnehPO" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:2rOWEwsFyNP" resolve="NoneLiteral" />
+                        <ref role="359W_F" to="hm2y:7fOaqhhVEPk" resolve="optionalBaseType" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnehPP" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnehPQ" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnehPR" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnehPT" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnehPU" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnehPV" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnehPH" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnehPX" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnehPY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnehPH" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnehPZ" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqkbU" role="3K4GZi">
+                  <property role="Xl_RC" value="add a base type for the none literal" />
+                </node>
               </node>
             </node>
           </node>
@@ -2408,9 +2526,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgl0sU" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgl0sV" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgl0t0" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgl0sZ" role="3clFbG">
-                <property role="Xl_RC" value="error literals for the attempt type" />
+            <node concept="3cpWs8" id="60PTWgne84W" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgne84X" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgne7R_" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgne84Y" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgne84Z" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:5BNZGjBtUbJ" resolve="AttemptType" />
+                        <ref role="359W_F" to="hm2y:12WRc28Xz6l" resolve="errorLiterals" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgne854" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgne855" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgne856" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnef5x" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgne9KK" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgne9N5" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgne8JG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgne858" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgne9iC" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgl0sZ" role="3K4GZi">
+                  <property role="Xl_RC" value="add error literals for the attempt type" />
+                </node>
               </node>
             </node>
           </node>
@@ -2462,9 +2618,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgl0Dq" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgl0Dr" role="2VODD2">
-            <node concept="3clFbF" id="4owkxKWiGMo" role="3cqZAp">
-              <node concept="Xl_RD" id="4owkxKWiGMn" role="3clFbG">
-                <property role="Xl_RC" value="a message for the error expression" />
+            <node concept="3cpWs8" id="60PTWgnefv6" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnefv7" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnefv8" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnefv9" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnefva" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnefvb" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnefvc" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnefvd" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnefve" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:1Ez$z58Hu7K" resolve="ErrorExpression" />
+                        <ref role="359W_F" to="hm2y:1Ez$z58Hu7L" resolve="error" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnefvf" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnefvg" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnefvh" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnefvj" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnefvk" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnefvl" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnefv7" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnefvn" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnefvo" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnefv7" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnefvp" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="4owkxKWiGMn" role="3K4GZi">
+                  <property role="Xl_RC" value="add a message for the error expression" />
+                </node>
               </node>
             </node>
           </node>
@@ -2666,9 +2860,47 @@
           </node>
           <node concept="uPpia" id="1ZlHRbgqokZ" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbgqol0" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbgqop$" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbgqopz" role="3clFbG">
-                  <property role="Xl_RC" value="a name for the try expression" />
+              <node concept="3cpWs8" id="60PTWgnejTp" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgnejTq" role="3cpWs9">
+                  <property role="TrG5h" value="description" />
+                  <node concept="17QB3L" id="60PTWgnejTr" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgnejTs" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgnejTt" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgnejTu" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgnejTv" role="37wK5m">
+                        <node concept="liA8E" id="60PTWgnejTw" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgnejTx" role="2Oq$k0">
+                          <ref role="359W_E" to="hm2y:5BNZGjBvVgC" resolve="TryExpression" />
+                          <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgnejTy" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgnejTz" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgnejT$" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgnejTA" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgnejTB" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgnejTC" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgnejTq" resolve="description" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgnejTE" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgnejTF" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgnejTq" resolve="description" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgnejTG" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="1ZlHRbgqopz" role="3K4GZi">
+                    <property role="Xl_RC" value="add a name for the try expression" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2771,9 +3003,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqo4m" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqo4n" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqo4s" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqo4r" role="3clFbG">
-                <property role="Xl_RC" value="an error message" />
+            <node concept="3cpWs8" id="60PTWgnejsy" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnejsz" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnejs$" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnejs_" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnejsA" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnejsB" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnejsC" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnejsD" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnejsE" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:69zaTr1V8fb" resolve="TryErrorClause" />
+                        <ref role="359W_F" to="hm2y:69zaTr1Z623" resolve="errorLiteral" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnejsF" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnejsG" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnejsH" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnejsJ" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnejsK" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnejsL" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnejsz" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnejsN" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnejsO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnejsz" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnejsP" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqo4r" role="3K4GZi">
+                  <property role="Xl_RC" value="add an error message" />
+                </node>
               </node>
             </node>
           </node>
@@ -3066,9 +3336,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgmNW9" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgmNWa" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgmO0I" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgmO0H" role="3clFbG">
-                <property role="Xl_RC" value="an error expression for the invariant" />
+            <node concept="3cpWs8" id="60PTWgneh2Y" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneh2Z" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneh30" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneh31" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneh32" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneh33" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneh34" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneh35" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneh36" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:KaZMgy4InH" resolve="Invariant" />
+                        <ref role="359W_F" to="hm2y:5F8uib8hsjE" resolve="err" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneh37" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneh38" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneh39" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneh3b" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneh3c" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneh3d" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneh2Z" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneh3f" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneh3g" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneh2Z" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneh3h" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgmO0H" role="3K4GZi">
+                  <property role="Xl_RC" value="add an error expression for the invariant" />
+                </node>
               </node>
             </node>
           </node>
@@ -3210,9 +3518,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqkK5" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqkK6" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqkKJ" role="3cqZAp">
-              <node concept="Xl_RD" id="2Zbcfw_fh$4" role="3clFbG">
-                <property role="Xl_RC" value="an error expression for the postcondition" />
+            <node concept="3cpWs8" id="60PTWgneiLb" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneiLc" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneiLd" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneiLe" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneiLf" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneiLg" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneiLh" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneiLi" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneiLj" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:KaZMgy4InG" resolve="Postcondition" />
+                        <ref role="359W_F" to="hm2y:5F8uib8hsjE" resolve="err" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneiLk" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneiLl" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneiLm" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneiLo" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneiLp" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneiLq" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneiLc" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneiLs" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneiLt" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneiLc" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneiLu" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="2Zbcfw_fh$4" role="3K4GZi">
+                  <property role="Xl_RC" value="add an error expression for the postcondition" />
+                </node>
               </node>
             </node>
           </node>
@@ -3354,9 +3700,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgql1U" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgql1V" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgql6L" role="3cqZAp">
-              <node concept="Xl_RD" id="2Zbcfw_fhFG" role="3clFbG">
-                <property role="Xl_RC" value="an error expression for the precondition" />
+            <node concept="3cpWs8" id="60PTWgnejdE" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnejdF" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnejdG" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnejdH" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnejdI" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnejdJ" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnejdK" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnejdL" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnejdM" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:KaZMgy4Ilt" resolve="Precondition" />
+                        <ref role="359W_F" to="hm2y:5F8uib8hsjE" resolve="err" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnejdN" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnejdO" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnejdP" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnejdR" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnejdS" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnejdT" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnejdF" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnejdV" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnejdW" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnejdF" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnejdX" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="2Zbcfw_fhFG" role="3K4GZi">
+                  <property role="Xl_RC" value="add an error expression for the precondition" />
+                </node>
               </node>
             </node>
           </node>
@@ -3504,9 +3888,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqkoY" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqkoZ" role="2VODD2">
-            <node concept="3clFbF" id="2Zbcfw_fhpp" role="3cqZAp">
-              <node concept="Xl_RD" id="2Zbcfw_fhpo" role="3clFbG">
-                <property role="Xl_RC" value="an error expression for the constraint" />
+            <node concept="3cpWs8" id="60PTWgneik_" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneikA" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneikB" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneikC" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneikD" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneikE" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneikF" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneikG" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneikH" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:KaZMgylLmk" resolve="PlainConstraint" />
+                        <ref role="359W_F" to="hm2y:5F8uib8hsjE" resolve="err" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneikI" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneikJ" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneikK" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneikM" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneikN" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneikO" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneikA" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneikQ" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneikR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneikA" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneikS" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="2Zbcfw_fhpo" role="3K4GZi">
+                  <property role="Xl_RC" value="add an error expression for the constraint" />
+                </node>
               </node>
             </node>
           </node>
@@ -5703,9 +6125,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgl0YL" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgl0YM" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgl0YR" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgl0YQ" role="3clFbG">
-                <property role="Xl_RC" value="a type for the fail expression" />
+            <node concept="3cpWs8" id="60PTWgnefIw" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnefIx" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnefIy" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnefIz" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnefI$" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnefI_" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnefIA" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnefIB" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnefIC" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:mQGcCvPueU" resolve="FailExpr" />
+                        <ref role="359W_F" to="hm2y:6jT4GDwgAvP" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnefID" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnefIE" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnefIF" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnefIH" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnefII" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnefIJ" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnefIx" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnefIL" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnefIM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnefIx" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnefIN" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgl0YQ" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type for the fail expression" />
+                </node>
               </node>
             </node>
           </node>
@@ -5741,9 +6201,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgl147" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgl148" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgl14d" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgl14c" role="3clFbG">
-                <property role="Xl_RC" value="a context expression for the fail expression" />
+            <node concept="3cpWs8" id="60PTWgnefNl" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnefNm" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnefNn" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnefNo" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnefNp" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnefNq" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnefNr" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnefNs" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnefNt" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:mQGcCvPueU" resolve="FailExpr" />
+                        <ref role="359W_F" to="hm2y:4CksDrlwXox" resolve="contextExpression" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnefNu" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnefNv" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnefNw" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnefNy" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnefNz" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnefN$" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnefNm" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnefNA" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnefNB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnefNm" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnefNC" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgl14c" role="3K4GZi">
+                  <property role="Xl_RC" value="add a context expression for the fail expression" />
+                </node>
               </node>
             </node>
           </node>
@@ -7582,9 +8080,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgl0yg" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgl0yh" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgl0ym" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgl0yl" role="3clFbG">
-                <property role="Xl_RC" value="a type for the empty value" />
+            <node concept="3cpWs8" id="60PTWgnefif" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnefig" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnefih" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnefii" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnefij" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnefik" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnefil" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnefim" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnefin" role="2Oq$k0">
+                        <ref role="359W_E" to="hm2y:3nVyItrZBN9" resolve="EmptyValue" />
+                        <ref role="359W_F" to="hm2y:3nVyItrZBNa" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnefio" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnefip" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnefiq" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnefis" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnefit" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnefiu" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnefig" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnefiw" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnefix" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnefig" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnefiy" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgl0yl" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type for the empty value" />
+                </node>
               </node>
             </node>
           </node>

@@ -17,7 +17,6 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dnkk" ref="r:c7dec76d-437e-4f48-9d01-3857e3cf30e6(org.iets3.core.expr.adt.behavior)" implicit="true" />
@@ -303,6 +302,10 @@
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -1137,9 +1140,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgl0mN" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgl0mO" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgl0nb" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgl0na" role="3clFbG">
-                <property role="Xl_RC" value="a condition for the case" />
+            <node concept="3cpWs8" id="60PTWgneeSx" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneeSy" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneeSz" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneeS$" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneeS_" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneeSA" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneeSB" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneeSC" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneeSD" role="2Oq$k0">
+                        <ref role="359W_E" to="v0r8:5a_u3OySk8l" resolve="MatchCase" />
+                        <ref role="359W_F" to="v0r8:5a_u3Oz5b2N" resolve="cond" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneeSE" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneeSF" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneeSG" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmkZsV" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneeSI" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneeSJ" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneeSy" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneeSL" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneeSM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneeSy" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneeSN" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgl0na" role="3K4GZi">
+                  <property role="Xl_RC" value="add a condition for the case" />
+                </node>
               </node>
             </node>
           </node>
@@ -1715,9 +1756,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgkZZM" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgkZZN" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgl00a" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgl009" role="3clFbG">
-                <property role="Xl_RC" value="a multi argument for the constructor" />
+            <node concept="3cpWs8" id="60PTWgne84W" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgne84X" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgne7R_" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgne84Y" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgne84Z" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                        <ref role="359W_E" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                        <ref role="359W_F" to="v0r8:28$LOSBF$hC" resolve="multi" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgne854" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgne855" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgne856" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneevG" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgne9KK" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgne9N5" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgne8JG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgne858" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgne9iC" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgl009" role="3K4GZi">
+                  <property role="Xl_RC" value="add a multi argument for the constructor" />
+                </node>
               </node>
             </node>
           </node>

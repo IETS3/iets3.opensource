@@ -19,6 +19,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="b4m9" ref="r:f73fffcc-e6a1-406e-b40b-65eaaa19bd69(org.iets3.core.expr.dataflow.behavior)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
@@ -162,6 +164,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -230,10 +233,12 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
+      <concept id="2489050352088028316" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_editorContext" flags="ng" index="2MNBq7" />
       <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ngI" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
@@ -241,6 +246,7 @@
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
+      <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -381,6 +387,14 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -478,9 +492,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqAX4" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqAX5" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqAXs" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqAXr" role="3clFbG">
-                <property role="Xl_RC" value="parameters for the expression block" />
+            <node concept="3cpWs8" id="60PTWgnetfA" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnetfB" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnetfC" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnetfD" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnetfE" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnetfF" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnetfG" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnetfH" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnetfI" role="2Oq$k0">
+                        <ref role="359W_E" to="gx5r:4YhD5cZsmA4" resolve="ExprBlock" />
+                        <ref role="359W_F" to="gx5r:5Q9FzcI8h1i" resolve="params" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnetfJ" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnetfK" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnetfL" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnetfN" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnetfO" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnetfP" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnetfB" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnetfR" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnetfS" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnetfB" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnetfT" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqAXr" role="3K4GZi">
+                  <property role="Xl_RC" value="add parameters for the expression block" />
+                </node>
               </node>
             </node>
           </node>
@@ -534,9 +586,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqB3E" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqB3F" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqB42" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqB41" role="3clFbG">
-                <property role="Xl_RC" value="a symbol for the expression block" />
+            <node concept="3cpWs8" id="60PTWgnetki" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnetkj" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnetkk" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnetkl" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnetkm" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnetkn" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnetko" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnetkp" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                      <node concept="355D3s" id="60PTWgnh9k2" role="2Oq$k0">
+                        <ref role="355D3t" to="gx5r:4YhD5cZsmA4" resolve="ExprBlock" />
+                        <ref role="355D3u" to="gx5r:3_milxHKEYT" resolve="symbol" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnetkr" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnetks" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnetkt" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnetkv" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnetkw" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnetkx" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnetkj" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnetkz" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnetk$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnetkj" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnetk_" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqB41" role="3K4GZi">
+                  <property role="Xl_RC" value="add a symbol for the expression block" />
+                </node>
               </node>
             </node>
           </node>
@@ -666,9 +756,47 @@
           </node>
           <node concept="uPpia" id="1ZlHRbgqsKJ" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbgqsKK" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbgqsL7" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbgqsL6" role="3clFbG">
-                  <property role="Xl_RC" value="parameters for the composite block" />
+              <node concept="3cpWs8" id="60PTWgnesCG" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgnesCH" role="3cpWs9">
+                  <property role="TrG5h" value="description" />
+                  <node concept="17QB3L" id="60PTWgnesCI" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgnesCJ" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgnesCK" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgnesCL" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgnesCM" role="37wK5m">
+                        <node concept="liA8E" id="60PTWgnesCN" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgnesCO" role="2Oq$k0">
+                          <ref role="359W_E" to="gx5r:4YhD5cZsmDt" resolve="CompositeBlock" />
+                          <ref role="359W_F" to="gx5r:5Q9FzcI8h1i" resolve="params" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgnesCP" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgnesCQ" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgnesCR" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmkZsV" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgnesCT" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgnesCU" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgnesCH" resolve="description" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgnesCW" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgnesCX" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgnesCH" resolve="description" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgnesCY" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="1ZlHRbgqsL6" role="3K4GZi">
+                    <property role="Xl_RC" value="add parameters for the composite block" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -758,9 +886,47 @@
           </node>
           <node concept="uPpia" id="1ZlHRbgqsMa" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbgqsMb" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbgqsMg" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbgqsMf" role="3clFbG">
-                  <property role="Xl_RC" value="a symbol for the composite block" />
+              <node concept="3cpWs8" id="60PTWgnesZc" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgnesZd" role="3cpWs9">
+                  <property role="TrG5h" value="description" />
+                  <node concept="17QB3L" id="60PTWgnesZe" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgnesZf" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgnesZg" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgnesZh" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgnesZi" role="37wK5m">
+                        <node concept="liA8E" id="60PTWgnesZj" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                        <node concept="355D3s" id="60PTWgnh8vg" role="2Oq$k0">
+                          <ref role="355D3t" to="gx5r:4YhD5cZsmDt" resolve="CompositeBlock" />
+                          <ref role="355D3u" to="gx5r:3_milxHKEYT" resolve="symbol" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgnesZl" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgnesZm" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgnesZn" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgnesZp" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgnesZq" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgnesZr" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgnesZd" resolve="description" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgnesZt" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgnesZu" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgnesZd" resolve="description" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgnesZv" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="1ZlHRbgqsMf" role="3K4GZi">
+                    <property role="Xl_RC" value="add a symbol for the composite block" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -3468,9 +3634,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqB55" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqB56" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqB9E" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqB9D" role="3clFbG">
-                <property role="Xl_RC" value="a type for the incoming port" />
+            <node concept="3cpWs8" id="60PTWgnetNC" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnetND" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnetNE" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnetNF" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnetNG" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnetNH" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgnetNI" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgnetNJ" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnetNK" role="2Oq$k0">
+                        <ref role="359W_E" to="gx5r:4YhD5cZsmAw" resolve="InPort" />
+                        <ref role="359W_F" to="gx5r:4YhD5cZsmAx" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgnetNL" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgnetNM" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnetNN" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnetNP" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnetNQ" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnetNR" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnetND" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnetNT" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnetNU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnetND" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnetNV" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqB9D" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type for the incoming port" />
+                </node>
               </node>
             </node>
           </node>
@@ -3526,9 +3730,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqBca" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqBcb" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqBcg" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqBcf" role="3clFbG">
-                <property role="Xl_RC" value="a type for the outgoing port" />
+            <node concept="3cpWs8" id="60PTWgneu3l" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneu3m" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneu3n" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneu3o" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneu3p" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneu3q" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneu3r" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneu3s" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneu3t" role="2Oq$k0">
+                        <ref role="359W_E" to="gx5r:4YhD5cZsmGJ" resolve="OutPort" />
+                        <ref role="359W_F" to="gx5r:4YhD5cZsmAx" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneu3u" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneu3v" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneu3w" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneu3y" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneu3z" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneu3$" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneu3m" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneu3A" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneu3B" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneu3m" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneu3C" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqBcf" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type for the outgoing port" />
+                </node>
               </node>
             </node>
           </node>
@@ -3549,9 +3791,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqBiv" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqBiw" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqBiR" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqBiQ" role="3clFbG">
-                <property role="Xl_RC" value="a value for the outgoing port" />
+            <node concept="3cpWs8" id="60PTWgneu8j" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneu8k" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneu8l" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneu8m" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneu8n" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneu8o" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgneu8p" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgneu8q" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgneu8r" role="2Oq$k0">
+                        <ref role="359W_E" to="gx5r:4YhD5cZsmGJ" resolve="OutPort" />
+                        <ref role="359W_F" to="gx5r:2vkvJYT213x" resolve="value" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneu8s" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneu8t" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneu8u" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneu8w" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneu8x" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneu8y" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneu8k" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneu8$" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneu8_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneu8k" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneu8A" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqBiQ" role="3K4GZi">
+                  <property role="Xl_RC" value="add a value for the outgoing port" />
+                </node>
               </node>
             </node>
           </node>
@@ -3601,9 +3881,47 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqrrN" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqrrO" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqrwo" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqrwn" role="3clFbG">
-                <property role="Xl_RC" value="a type for the block parameter" />
+            <node concept="3cpWs8" id="60PTWgne84W" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgne84X" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgne7R_" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgne84Y" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgne84Z" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
+                      <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                        <ref role="359W_E" to="gx5r:5Q9FzcI8h1p" resolve="BlockParameter" />
+                        <ref role="359W_F" to="gx5r:2vkvJYT8fls" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgne854" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgne855" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgne856" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneqDf" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgne9KK" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgne9N5" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgne8JG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgne858" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgne9iC" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqrwn" role="3K4GZi">
+                  <property role="Xl_RC" value="add a type for the block parameter" />
+                </node>
               </node>
             </node>
           </node>

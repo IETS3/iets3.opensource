@@ -61,6 +61,7 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="4ndm" ref="r:a9fe59d7-0b4f-42b0-925a-71cc04f93df1(org.iets3.variability.configuration.base.structure)" implicit="true" />
     <import index="1jcu" ref="r:729fa0c7-b4e4-42b1-acfe-71017c020a49(org.iets3.analysis.base.behavior)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
@@ -2669,6 +2670,53 @@
                   </node>
                 </node>
               </node>
+              <node concept="uPpia" id="60PTWgpiIL5" role="1djCvC">
+                <node concept="3clFbS" id="60PTWgpiIL6" role="2VODD2">
+                  <node concept="3cpWs8" id="60PTWgpiILc" role="3cqZAp">
+                    <node concept="3cpWsn" id="60PTWgpiILd" role="3cpWs9">
+                      <property role="TrG5h" value="descriptiontext" />
+                      <node concept="17QB3L" id="60PTWgpiILe" role="1tU5fm" />
+                      <node concept="2OqwBi" id="60PTWgpiILf" role="33vP2m">
+                        <node concept="2YIFZM" id="60PTWgpiILg" role="2Oq$k0">
+                          <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                          <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgpiILh" role="2OqNvi">
+                          <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                          <node concept="2YIFZM" id="60PTWgpiILi" role="37wK5m">
+                            <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                            <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                            <node concept="35c_gC" id="60PTWgpiILj" role="37wK5m">
+                              <ref role="35c_gD" to="s6b7:3tsFshP5M5C" resolve="FeatureModelInclude" />
+                            </node>
+                            <node concept="359W_D" id="60PTWgpiILk" role="37wK5m">
+                              <ref role="359W_E" to="s6b7:3tsFshP5M5C" resolve="FeatureModelInclude" />
+                              <ref role="359W_F" to="s6b7:3tsFshP6ikc" resolve="cardinality" />
+                            </node>
+                          </node>
+                          <node concept="313q4" id="60PTWgpiILl" role="37wK5m" />
+                          <node concept="1oAbNU" id="60PTWgpiILm" role="37wK5m" />
+                          <node concept="2MNBq7" id="60PTWgpiILn" role="37wK5m" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="60PTWgpiILo" role="3cqZAp">
+                    <node concept="3K4zz7" id="60PTWgpiILp" role="3clFbG">
+                      <node concept="37vLTw" id="60PTWgpiILq" role="3K4E3e">
+                        <ref role="3cqZAo" node="60PTWgpiILd" resolve="descriptiontext" />
+                      </node>
+                      <node concept="2OqwBi" id="60PTWgpiILr" role="3K4Cdx">
+                        <node concept="37vLTw" id="60PTWgpiILs" role="2Oq$k0">
+                          <ref role="3cqZAo" node="60PTWgpiILd" resolve="descriptiontext" />
+                        </node>
+                        <node concept="17RvpY" id="60PTWgpiILt" role="2OqNvi" />
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgpiILu" role="3K4GZi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="3F0ifn" id="3tsFshP5Qb_" role="3EZMnx">
               <property role="3F0ifm" value=":" />
@@ -3391,6 +3439,53 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
+        <node concept="uPpia" id="60PTWgpiCz9" role="1djCvC">
+          <node concept="3clFbS" id="60PTWgpiCza" role="2VODD2">
+            <node concept="3cpWs8" id="60PTWgpaieK" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgpaieL" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgpaieM" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgpaieN" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgpaieO" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgpaieP" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2YIFZM" id="60PTWgpaieQ" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgpig25" role="37wK5m">
+                        <ref role="35c_gD" to="s6b7:7Nu9WvXpu87" resolve="FeatureAttribute" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgpifpX" role="37wK5m">
+                        <ref role="359W_E" to="s6b7:7Nu9WvXpu87" resolve="FeatureAttribute" />
+                        <ref role="359W_F" to="s6b7:7Nu9WvXrsRq" resolve="defaultValue" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgpieLN" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgpaieT" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgpaieU" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgpaieV" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgpaieW" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgpaieX" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgpaieL" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgpaieY" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgpaieZ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgpaieL" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgpaif0" role="2OqNvi" />
+                </node>
+                <node concept="1oAbNU" id="60PTWgpaif1" role="3K4GZi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="RJ4G$V2kdO" role="3EZMnx">
         <node concept="3EZMnI" id="RJ4G$V2kdP" role="_tjki">
@@ -3445,6 +3540,53 @@
             <node concept="3clFbF" id="1tvEXEwsFI5" role="3cqZAp">
               <node concept="Xl_RD" id="1tvEXEwsFI4" role="3clFbG">
                 <property role="Xl_RC" value="(" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="60PTWgpiDbF" role="1djCvC">
+          <node concept="3clFbS" id="60PTWgpiDbG" role="2VODD2">
+            <node concept="3cpWs8" id="60PTWgpiDbM" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgpiDbN" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgpiDbO" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgpiDbP" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgpiDbQ" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgpiDbR" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2YIFZM" id="60PTWgpiDbS" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgpiDbT" role="37wK5m">
+                        <ref role="35c_gD" to="s6b7:7Nu9WvXpu87" resolve="FeatureAttribute" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgpiDbU" role="37wK5m">
+                        <ref role="359W_E" to="s6b7:7Nu9WvXpu87" resolve="FeatureAttribute" />
+                        <ref role="359W_F" to="s6b7:RJ4G$V0GdY" resolve="notPresentValue" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgpiDbV" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgpiDbW" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgpiDbX" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgpiDbY" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgpiDbZ" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgpiDc0" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgpiDbN" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgpiDc1" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgpiDc2" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgpiDbN" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgpiDc3" role="2OqNvi" />
+                </node>
+                <node concept="1oAbNU" id="60PTWgpiDc4" role="3K4GZi" />
               </node>
             </node>
           </node>
@@ -3894,6 +4036,53 @@
                   <node concept="zfrQC" id="6FzpV0ds5nV" role="2OqNvi">
                     <ref role="1A9B2P" to="s6b7:39DASUxVhgV" resolve="FMCInheritanceCheck_old" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uPpia" id="60PTWgpiGNF" role="1djCvC">
+            <node concept="3clFbS" id="60PTWgpiGNG" role="2VODD2">
+              <node concept="3cpWs8" id="60PTWgpiGP0" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgpiGP1" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgpiGP2" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgpiGP3" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgpiGP4" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgpiGP5" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2YIFZM" id="60PTWgpiGP6" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgpiGP7" role="37wK5m">
+                          <ref role="35c_gD" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgpiGP8" role="37wK5m">
+                          <ref role="359W_E" to="s6b7:5NPKd17BG$l" resolve="FeatureModelConfiguration_old" />
+                          <ref role="359W_F" to="s6b7:4onczE6iX1P" resolve="extendedFMC_old" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgpiGP9" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgpiGPa" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgpiGPb" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgpiGPc" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgpiGPd" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgpiGPe" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgpiGP1" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgpiGPf" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgpiGPg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgpiGP1" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgpiGPh" role="2OqNvi" />
+                  </node>
+                  <node concept="1oAbNU" id="60PTWgpiGPi" role="3K4GZi" />
                 </node>
               </node>
             </node>
@@ -8060,6 +8249,53 @@
                 </node>
               </node>
             </node>
+            <node concept="uPpia" id="60PTWgpiNoC" role="1djCvC">
+              <node concept="3clFbS" id="60PTWgpiNoD" role="2VODD2">
+                <node concept="3cpWs8" id="60PTWgpiNoJ" role="3cqZAp">
+                  <node concept="3cpWsn" id="60PTWgpiNoK" role="3cpWs9">
+                    <property role="TrG5h" value="descriptiontext" />
+                    <node concept="17QB3L" id="60PTWgpiNoL" role="1tU5fm" />
+                    <node concept="2OqwBi" id="60PTWgpiNoM" role="33vP2m">
+                      <node concept="2YIFZM" id="60PTWgpiNoN" role="2Oq$k0">
+                        <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgpiNoO" role="2OqNvi">
+                        <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                        <node concept="2YIFZM" id="60PTWgpiNoP" role="37wK5m">
+                          <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                          <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                          <node concept="35c_gC" id="60PTWgpiNoQ" role="37wK5m">
+                            <ref role="35c_gD" to="s6b7:3tsFshP5Ec7" resolve="Feature" />
+                          </node>
+                          <node concept="359W_D" id="60PTWgpiNoR" role="37wK5m">
+                            <ref role="359W_E" to="s6b7:3tsFshP5Ec7" resolve="Feature" />
+                            <ref role="359W_F" to="s6b7:3tsFshP6ikc" resolve="cardinality" />
+                          </node>
+                        </node>
+                        <node concept="313q4" id="60PTWgpiNoS" role="37wK5m" />
+                        <node concept="1oAbNU" id="60PTWgpiNoT" role="37wK5m" />
+                        <node concept="2MNBq7" id="60PTWgpiNoU" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="60PTWgpiNoV" role="3cqZAp">
+                  <node concept="3K4zz7" id="60PTWgpiNoW" role="3clFbG">
+                    <node concept="37vLTw" id="60PTWgpiNoX" role="3K4E3e">
+                      <ref role="3cqZAo" node="60PTWgpiNoK" resolve="descriptiontext" />
+                    </node>
+                    <node concept="2OqwBi" id="60PTWgpiNoY" role="3K4Cdx">
+                      <node concept="37vLTw" id="60PTWgpiNoZ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="60PTWgpiNoK" resolve="descriptiontext" />
+                      </node>
+                      <node concept="17RvpY" id="60PTWgpiNp0" role="2OqNvi" />
+                    </node>
+                    <node concept="1oAbNU" id="60PTWgpiNp1" role="3K4GZi" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="1eYWM2" id="62nlqxE9htM" role="3EZMnx">
             <node concept="1eYxTg" id="62nlqxE9htN" role="1eYxTh">
@@ -8365,6 +8601,53 @@
               <node concept="3clFbF" id="5sUbcNDUXfx" role="3cqZAp">
                 <node concept="Xl_RD" id="5sUbcNDUXfy" role="3clFbG">
                   <property role="Xl_RC" value="[" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uPpia" id="60PTWgpiYL8" role="1djCvC">
+            <node concept="3clFbS" id="60PTWgpiYL9" role="2VODD2">
+              <node concept="3cpWs8" id="60PTWgpiYLf" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgpiYLg" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgpiYLh" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgpiYLi" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgpiYLj" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgpiYLk" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2YIFZM" id="60PTWgpiYLl" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgpiYLm" role="37wK5m">
+                          <ref role="35c_gD" to="s6b7:3tsFshP5Ec7" resolve="Feature" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgpiYLn" role="37wK5m">
+                          <ref role="359W_E" to="s6b7:3tsFshP5Ec7" resolve="Feature" />
+                          <ref role="359W_F" to="s6b7:3tsFshP6ikc" resolve="cardinality" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgpiYLo" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgpiYLp" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgpiYLq" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgpiYLr" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgpiYLs" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgpiYLt" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgpiYLg" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgpiYLu" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgpiYLv" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgpiYLg" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgpiYLw" role="2OqNvi" />
+                  </node>
+                  <node concept="1oAbNU" id="60PTWgpiYLx" role="3K4GZi" />
                 </node>
               </node>
             </node>
@@ -11371,6 +11654,53 @@
               </node>
             </node>
           </node>
+          <node concept="uPpia" id="60PTWgpj2fX" role="1djCvC">
+            <node concept="3clFbS" id="60PTWgpj2fY" role="2VODD2">
+              <node concept="3cpWs8" id="60PTWgpj2qf" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgpj2qg" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgpj2qh" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgpj2qi" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgpj2qj" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgpj2qk" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2YIFZM" id="60PTWgpj2ql" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgpj2qm" role="37wK5m">
+                          <ref role="35c_gD" to="s6b7:3tsFshP5Ec7" resolve="Feature" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgpj2qn" role="37wK5m">
+                          <ref role="359W_E" to="s6b7:3tsFshP5Ec7" resolve="Feature" />
+                          <ref role="359W_F" to="s6b7:3tsFshP6ikc" resolve="cardinality" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgpj2qo" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgpj2qp" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgpj2qq" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgpj2qr" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgpj2qs" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgpj2qt" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgpj2qg" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgpj2qu" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgpj2qv" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgpj2qg" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgpj2qw" role="2OqNvi" />
+                  </node>
+                  <node concept="1oAbNU" id="60PTWgpj2qx" role="3K4GZi" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1eYWM2" id="1lex4TVpCxu" role="3EZMnx">
           <node concept="1eYxTg" id="1lex4TVpCxv" role="1eYxTh">
@@ -12973,6 +13303,53 @@
               <node concept="3clFbF" id="l16q0ajclH" role="3cqZAp">
                 <node concept="Xl_RD" id="l16q0ajclI" role="3clFbG">
                   <property role="Xl_RC" value="[" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uPpia" id="60PTWgpiKiv" role="1djCvC">
+            <node concept="3clFbS" id="60PTWgpiKiw" role="2VODD2">
+              <node concept="3cpWs8" id="60PTWgpiKiA" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgpiKiB" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgpiKiC" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgpiKiD" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgpiKiE" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgpiKiF" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                      <node concept="2YIFZM" id="60PTWgpiKiG" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgpiKiH" role="37wK5m">
+                          <ref role="35c_gD" to="s6b7:3tsFshP5M5C" resolve="FeatureModelInclude" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgpiKiI" role="37wK5m">
+                          <ref role="359W_E" to="s6b7:3tsFshP5M5C" resolve="FeatureModelInclude" />
+                          <ref role="359W_F" to="s6b7:3tsFshP6ikc" resolve="cardinality" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgpiKiJ" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgpiKiK" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgpiKiL" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgpiKiM" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgpiKiN" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgpiKiO" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgpiKiB" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgpiKiP" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgpiKiQ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgpiKiB" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgpiKiR" role="2OqNvi" />
+                  </node>
+                  <node concept="1oAbNU" id="60PTWgpiKiS" role="3K4GZi" />
                 </node>
               </node>
             </node>
