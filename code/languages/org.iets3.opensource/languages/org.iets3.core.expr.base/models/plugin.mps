@@ -15084,6 +15084,26 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="60PTWgor6LX" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgor6xy" role="jymVt">
+      <property role="TrG5h" value="getSideTransformationCellMatchingText" />
+      <node concept="3clFbS" id="60PTWgor6xz" role="3clF47" />
+      <node concept="3Tm1VV" id="60PTWgor6xA" role="1B3o_S" />
+      <node concept="17QB3L" id="60PTWgor6xB" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgor6xC" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgor6xD" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgor6xE" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="60PTWgor6xF" role="1tU5fm">
+          <ref role="3uigEE" to="uddc:~TransformationMenuContext" resolve="TransformationMenuContext" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgor6Z_" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="e1lyfcc4f2" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3yPQSK6Hg5I">
@@ -15325,6 +15345,33 @@
         <node concept="3uibUv" id="60PTWgoinGV" role="1tU5fm">
           <ref role="3uigEE" to="uddc:~TransformationMenuContext" resolve="TransformationMenuContext" />
         </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgoraGs" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgordqG" role="jymVt">
+      <property role="TrG5h" value="getSideTransformationCellMatchingText" />
+      <node concept="3Tm1VV" id="60PTWgordqI" role="1B3o_S" />
+      <node concept="17QB3L" id="60PTWgordqJ" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgordqK" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgordqL" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgordqM" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="60PTWgordqN" role="1tU5fm">
+          <ref role="3uigEE" to="uddc:~TransformationMenuContext" resolve="TransformationMenuContext" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgordqO" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3clFbS" id="60PTWgordqP" role="3clF47">
+        <node concept="3clFbF" id="60PTWgorfYZ" role="3cqZAp">
+          <node concept="10Nm6u" id="60PTWgorfYY" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgordqQ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
