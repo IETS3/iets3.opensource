@@ -219,6 +219,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -286,6 +287,7 @@
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
@@ -2111,10 +2113,39 @@
       <node concept="1eYWM2" id="2xPWNWp$vnN" role="3EZMnx">
         <node concept="1eYwpX" id="2xPWNWp$vnO" role="1eYxym">
           <node concept="3clFbS" id="2xPWNWp$vnP" role="2VODD2">
+            <node concept="3cpWs8" id="60PTWgoisPf" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgoisPg" role="3cpWs9">
+                <property role="TrG5h" value="isApplicable" />
+                <node concept="10P_77" id="60PTWgoitn6" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgoisPi" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgoisPj" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgoisPk" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgoilfO" resolve="isSideTransformationCellApplicable" />
+                    <node concept="2OqwBi" id="60PTWgoiz1$" role="37wK5m">
+                      <node concept="35c_gC" id="60PTWgoixzJ" role="2Oq$k0">
+                        <ref role="35c_gD" to="5qo5:4rZeNQ6OYR7" resolve="StringType" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgoi$qJ" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="2kS8pE" id="60PTWgoiAss" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="2Jw_KdeVc6N" role="3cqZAp">
-              <node concept="2YIFZM" id="2Jw_KdeW0$u" role="3clFbG">
-                <ref role="37wK5l" to="xfg9:2Jw_KdeVcY2" resolve="useStringConstraints" />
-                <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+              <node concept="1Wc70l" id="60PTWgoiBig" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgoiBli" role="3uHU7B">
+                  <ref role="3cqZAo" node="60PTWgoisPg" resolve="isApplicable" />
+                </node>
+                <node concept="2YIFZM" id="2Jw_KdeW0$u" role="3uHU7w">
+                  <ref role="37wK5l" to="xfg9:2Jw_KdeVcY2" resolve="useStringConstraints" />
+                  <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                </node>
               </node>
             </node>
           </node>

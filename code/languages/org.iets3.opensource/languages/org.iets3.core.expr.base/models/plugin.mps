@@ -51,6 +51,7 @@
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="ciba" ref="r:11b7cdb2-cc58-456e-bb9a-ce45b78edd2f(jetbrains.mps.ide.httpsupport.runtime.base)" />
+    <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -15066,6 +15067,23 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
+    <node concept="2tJIrI" id="60PTWgoijQ_" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgoilfO" role="jymVt">
+      <property role="TrG5h" value="isSideTransformationCellApplicable" />
+      <node concept="3clFbS" id="60PTWgoilfR" role="3clF47" />
+      <node concept="3Tm1VV" id="60PTWgoilfS" role="1B3o_S" />
+      <node concept="10P_77" id="60PTWgoikC8" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgoilOG" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgoilOF" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgoim_m" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="60PTWgoimVy" role="1tU5fm">
+          <ref role="3uigEE" to="uddc:~TransformationMenuContext" resolve="TransformationMenuContext" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="e1lyfcc4f2" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3yPQSK6Hg5I">
@@ -15284,6 +15302,29 @@
       </node>
       <node concept="2AHcQZ" id="60PTWgnc7p0" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgoiodB" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgoinGO" role="jymVt">
+      <property role="TrG5h" value="isSideTransformationCellApplicable" />
+      <node concept="3clFbS" id="60PTWgoinGP" role="3clF47">
+        <node concept="3clFbF" id="60PTWgoipU3" role="3cqZAp">
+          <node concept="3clFbT" id="60PTWgoipU2" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="60PTWgoinGQ" role="1B3o_S" />
+      <node concept="10P_77" id="60PTWgoinGR" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgoinGS" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgoinGT" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgoinGU" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="60PTWgoinGV" role="1tU5fm">
+          <ref role="3uigEE" to="uddc:~TransformationMenuContext" resolve="TransformationMenuContext" />
+        </node>
       </node>
     </node>
   </node>
