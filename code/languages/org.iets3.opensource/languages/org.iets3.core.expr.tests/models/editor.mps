@@ -1885,18 +1885,13 @@
                     </node>
                     <node concept="liA8E" id="60PTWgneRz0" role="2OqNvi">
                       <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                      <node concept="3cpWs3" id="60PTWgnh_YN" role="37wK5m">
-                        <node concept="Xl_RD" id="60PTWgnhA1V" role="3uHU7B">
-                          <property role="Xl_RC" value="demomode." />
+                      <node concept="2OqwBi" id="60PTWgneRz1" role="37wK5m">
+                        <node concept="liA8E" id="60PTWgneRz2" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                         </node>
-                        <node concept="2OqwBi" id="60PTWgneRz1" role="3uHU7w">
-                          <node concept="liA8E" id="60PTWgneRz2" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
-                          </node>
-                          <node concept="359W_D" id="60PTWgneRz3" role="2Oq$k0">
-                            <ref role="359W_E" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
-                            <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
-                          </node>
+                        <node concept="359W_D" id="60PTWgneRz3" role="2Oq$k0">
+                          <ref role="359W_E" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                          <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
                         </node>
                       </node>
                       <node concept="313q4" id="60PTWgneRz4" role="37wK5m" />
