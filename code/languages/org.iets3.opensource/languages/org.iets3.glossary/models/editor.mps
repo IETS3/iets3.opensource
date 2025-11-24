@@ -286,6 +286,9 @@
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -581,11 +584,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgnKpt4" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnKnol" resolve="getOptionalCellTransformationText" />
-                    <node concept="2OqwBi" id="60PTWgnKpt5" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgnKpt6" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgoxdpY" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoxdRD" role="37wK5m">
+                        <ref role="35c_gD" to="tuf9:6zaFu4oQdsW" resolve="TermRefWord" />
                       </node>
-                      <node concept="359W_D" id="60PTWgo6gpF" role="2Oq$k0">
+                      <node concept="359W_D" id="60PTWgo6gpF" role="37wK5m">
                         <ref role="359W_E" to="tuf9:6zaFu4oQdsW" resolve="TermRefWord" />
                         <ref role="359W_F" to="tuf9:6zaFu4oQfuc" resolve="alternate" />
                       </node>
@@ -627,11 +632,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                    <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgoyuzr" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoyuzs" role="37wK5m">
+                        <ref role="35c_gD" to="tuf9:6zaFu4oQdsW" resolve="TermRefWord" />
                       </node>
-                      <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                      <node concept="359W_D" id="60PTWgnea7W" role="37wK5m">
                         <ref role="359W_E" to="tuf9:6zaFu4oQdsW" resolve="TermRefWord" />
                         <ref role="359W_F" to="tuf9:6zaFu4oQfuc" resolve="alternate" />
                       </node>

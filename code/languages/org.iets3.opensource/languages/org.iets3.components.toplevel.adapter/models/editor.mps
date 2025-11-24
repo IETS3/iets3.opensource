@@ -11,7 +11,6 @@
     <import index="vwlt" ref="r:6710c95e-d03b-419f-b8bf-dfca55de0cda(org.iets3.components.toplevel.adapter.structure)" implicit="true" />
     <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" implicit="true" />
     <import index="aku0" ref="r:04f1cb74-fc0c-4bf2-94b8-b7470b9d8339(org.iets3.components.core.editor)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -140,13 +139,15 @@
                 </node>
                 <node concept="liA8E" id="1xItpY9k2XH" role="2OqNvi">
                   <ref role="37wK5l" to="oq0c:3yPQSK6HgSW" resolve="isFlagCellSubstitutionActivated" />
-                  <node concept="2OqwBi" id="60PTWgmkBfq" role="37wK5m">
-                    <node concept="355D3s" id="60PTWgmkBfr" role="2Oq$k0">
+                  <node concept="2YIFZM" id="60PTWgoz06U" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgoz06V" role="37wK5m">
+                      <ref role="35c_gD" to="vwlt:1r45fM17GRh" resolve="TopLevelAdapter" />
+                    </node>
+                    <node concept="355D3s" id="60PTWgoBqiN" role="37wK5m">
                       <ref role="355D3t" to="vwlt:1r45fM17GRh" resolve="TopLevelAdapter" />
                       <ref role="355D3u" to="w9y2:5kXA14mWc_G" resolve="public" />
-                    </node>
-                    <node concept="liA8E" id="60PTWgmkBfs" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="1Lj6YZ" id="1xItpY9k6rB" role="37wK5m" />
@@ -168,13 +169,15 @@
                 </node>
                 <node concept="liA8E" id="60PTWgmlK4w" role="2OqNvi">
                   <ref role="37wK5l" to="oq0c:1xItpY9kSqt" resolve="isFlagCellSideTransformationActivated" />
-                  <node concept="2OqwBi" id="60PTWgmlKaS" role="37wK5m">
-                    <node concept="355D3s" id="60PTWgmlKaT" role="2Oq$k0">
+                  <node concept="2YIFZM" id="60PTWgoz9bG" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgoz9bH" role="37wK5m">
+                      <ref role="35c_gD" to="vwlt:1r45fM17GRh" resolve="TopLevelAdapter" />
+                    </node>
+                    <node concept="355D3s" id="60PTWgmlKaT" role="37wK5m">
                       <ref role="355D3t" to="vwlt:1r45fM17GRh" resolve="TopLevelAdapter" />
                       <ref role="355D3u" to="w9y2:5kXA14mWc_G" resolve="public" />
-                    </node>
-                    <node concept="liA8E" id="60PTWgmlKaU" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="1Lj6YZ" id="60PTWgmlKq4" role="37wK5m" />

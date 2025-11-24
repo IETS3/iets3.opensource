@@ -371,6 +371,9 @@
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -504,11 +507,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgnKpt4" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnKnol" resolve="getOptionalCellTransformationText" />
-                    <node concept="2OqwBi" id="60PTWgnKpt5" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgnKpt6" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgoxdpY" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoxdRD" role="37wK5m">
+                        <ref role="35c_gD" to="8lgj:3GdqffBQYFy" resolve="BoxUpdateTarget" />
                       </node>
-                      <node concept="359W_D" id="60PTWgnKpt7" role="2Oq$k0">
+                      <node concept="359W_D" id="60PTWgnKpt7" role="37wK5m">
                         <ref role="359W_E" to="8lgj:3GdqffBQYFy" resolve="BoxUpdateTarget" />
                         <ref role="359W_F" to="8lgj:31BLocd1pR_" resolve="currency" />
                       </node>
@@ -550,11 +555,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                    <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgoxLWV" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoxLWW" role="37wK5m">
+                        <ref role="35c_gD" to="8lgj:3GdqffBQYFy" resolve="BoxUpdateTarget" />
                       </node>
-                      <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                      <node concept="359W_D" id="60PTWgnea7W" role="37wK5m">
                         <ref role="359W_E" to="8lgj:3GdqffBQYFy" resolve="BoxUpdateTarget" />
                         <ref role="359W_F" to="8lgj:31BLocd1pR_" resolve="currency" />
                       </node>
@@ -934,11 +941,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgneCBP" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                    <node concept="2OqwBi" id="60PTWgneCBQ" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgneCBR" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgoxPjS" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoxPjT" role="37wK5m">
+                        <ref role="35c_gD" to="8lgj:7WFhXJlSyT$" resolve="InteractorCommandTarget" />
                       </node>
-                      <node concept="359W_D" id="60PTWgneCBS" role="2Oq$k0">
+                      <node concept="359W_D" id="60PTWgneCBS" role="37wK5m">
                         <ref role="359W_E" to="8lgj:7WFhXJlSyT$" resolve="InteractorCommandTarget" />
                         <ref role="359W_F" to="8lgj:4IV0h47hCX1" resolve="contextArgs" />
                       </node>
@@ -1297,11 +1306,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgneDdl" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                    <node concept="2OqwBi" id="60PTWgneDdm" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgneDdn" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgoxPX3" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoxPX4" role="37wK5m">
+                        <ref role="35c_gD" to="8lgj:Z4fkwz6NL_" resolve="InteractorValueTarget" />
                       </node>
-                      <node concept="359W_D" id="60PTWgneDdo" role="2Oq$k0">
+                      <node concept="359W_D" id="60PTWgneDdo" role="37wK5m">
                         <ref role="359W_E" to="8lgj:Z4fkwz6NL_" resolve="InteractorValueTarget" />
                         <ref role="359W_F" to="8lgj:4IV0h47hCX1" resolve="contextArgs" />
                       </node>

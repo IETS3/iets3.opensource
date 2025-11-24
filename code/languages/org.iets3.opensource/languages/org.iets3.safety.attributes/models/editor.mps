@@ -10,7 +10,6 @@
     <import index="hztw" ref="r:b53239c7-3de8-44c4-9520-b85ab78eddfd(org.iets3.safety.attributes.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="grxa" ref="r:6d4ca0dc-b0a1-4713-8ece-0611b3bf9680(org.iets3.safety.attributes.behavior)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -175,11 +174,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgnKpt4" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnKnol" resolve="getOptionalCellTransformationText" />
-                    <node concept="2OqwBi" id="60PTWgnKpt5" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgnKpt6" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgoxdpY" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoxdRD" role="37wK5m">
+                        <ref role="35c_gD" to="hztw:1HqphBIBC7y" resolve="ASILLevelValue" />
                       </node>
-                      <node concept="359W_D" id="60PTWgnKpt7" role="2Oq$k0">
+                      <node concept="359W_D" id="60PTWgnKpt7" role="37wK5m">
                         <ref role="359W_E" to="hztw:1HqphBIBC7y" resolve="ASILLevelValue" />
                         <ref role="359W_F" to="hztw:3Nl4beslIoA" resolve="constraints" />
                       </node>

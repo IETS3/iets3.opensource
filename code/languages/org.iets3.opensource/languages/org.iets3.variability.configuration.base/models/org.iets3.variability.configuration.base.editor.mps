@@ -2247,13 +2247,15 @@
                   </node>
                   <node concept="liA8E" id="60PTWgmk11x" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:3yPQSK6HgSW" resolve="isFlagCellSubstitutionActivated" />
-                    <node concept="2OqwBi" id="60PTWgmkN4A" role="37wK5m">
-                      <node concept="355D3s" id="60PTWgmkN4B" role="2Oq$k0">
+                    <node concept="2YIFZM" id="60PTWgoz06U" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoz06V" role="37wK5m">
+                        <ref role="35c_gD" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
+                      </node>
+                      <node concept="355D3s" id="60PTWgmkN4B" role="37wK5m">
                         <ref role="355D3t" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
                         <ref role="355D3u" to="4ndm:4onczE5U5c$" resolve="abstract" />
-                      </node>
-                      <node concept="liA8E" id="60PTWgmkN4C" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="1Lj6YZ" id="60PTWgmk11z" role="37wK5m" />
@@ -2275,13 +2277,15 @@
                   </node>
                   <node concept="liA8E" id="60PTWgmlK4w" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:1xItpY9kSqt" resolve="isFlagCellSideTransformationActivated" />
-                    <node concept="2OqwBi" id="60PTWgmlKaS" role="37wK5m">
-                      <node concept="355D3s" id="60PTWgmlKaT" role="2Oq$k0">
+                    <node concept="2YIFZM" id="60PTWgozXMC" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgozXMD" role="37wK5m">
+                        <ref role="35c_gD" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
+                      </node>
+                      <node concept="355D3s" id="60PTWgmlKaT" role="37wK5m">
                         <ref role="355D3t" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
                         <ref role="355D3u" to="4ndm:4onczE5U5c$" resolve="abstract" />
-                      </node>
-                      <node concept="liA8E" id="60PTWgmlKaU" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="1Lj6YZ" id="60PTWgmlKq4" role="37wK5m" />
@@ -2806,13 +2810,15 @@
                   </node>
                   <node concept="liA8E" id="60PTWgmlk5z" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:3yPQSK6HgSW" resolve="isFlagCellSubstitutionActivated" />
-                    <node concept="2OqwBi" id="60PTWgmlk5$" role="37wK5m">
-                      <node concept="355D3s" id="60PTWgmlk5_" role="2Oq$k0">
+                    <node concept="2YIFZM" id="60PTWgozXR2" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgozXR3" role="37wK5m">
+                        <ref role="35c_gD" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
+                      </node>
+                      <node concept="355D3s" id="60PTWgmlk5_" role="37wK5m">
                         <ref role="355D3t" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
                         <ref role="355D3u" to="4ndm:49ZhMclDeUT" resolve="complete" />
-                      </node>
-                      <node concept="liA8E" id="60PTWgmlk5A" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="1Lj6YZ" id="60PTWgmlk5B" role="37wK5m" />
@@ -2834,13 +2840,15 @@
                   </node>
                   <node concept="liA8E" id="60PTWgmmgwr" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:1xItpY9kSqt" resolve="isFlagCellSideTransformationActivated" />
-                    <node concept="2OqwBi" id="60PTWgmmgws" role="37wK5m">
-                      <node concept="355D3s" id="60PTWgmmgwt" role="2Oq$k0">
+                    <node concept="2YIFZM" id="60PTWgozXVB" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgozXVC" role="37wK5m">
+                        <ref role="35c_gD" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
+                      </node>
+                      <node concept="355D3s" id="60PTWgmmgwt" role="37wK5m">
                         <ref role="355D3t" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
                         <ref role="355D3u" to="4ndm:49ZhMclDeUT" resolve="complete" />
-                      </node>
-                      <node concept="liA8E" id="60PTWgmmgwu" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="1Lj6YZ" id="60PTWgmmgwv" role="37wK5m" />

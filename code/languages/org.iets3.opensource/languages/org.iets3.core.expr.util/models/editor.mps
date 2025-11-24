@@ -2308,11 +2308,13 @@
                     </node>
                     <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
                       <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                      <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
-                        <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      <node concept="2YIFZM" id="60PTWgoxdpY" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgoxdRD" role="37wK5m">
+                          <ref role="35c_gD" to="kfo3:wW2kvIvda2" resolve="RootTreeNode" />
                         </node>
-                        <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                        <node concept="359W_D" id="60PTWgnea7W" role="37wK5m">
                           <ref role="359W_E" to="kfo3:wW2kvIvda2" resolve="RootTreeNode" />
                           <ref role="359W_F" to="kfo3:1NRU0vciZVm" resolve="defaultValue" />
                         </node>

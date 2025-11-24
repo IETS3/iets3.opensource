@@ -586,6 +586,9 @@
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -732,11 +735,13 @@
                     </node>
                     <node concept="liA8E" id="60PTWgneVnB" role="2OqNvi">
                       <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                      <node concept="2OqwBi" id="60PTWgneVnC" role="37wK5m">
-                        <node concept="liA8E" id="60PTWgneVnD" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      <node concept="2YIFZM" id="60PTWgoyf67" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgoyf68" role="37wK5m">
+                          <ref role="35c_gD" to="av4b:ub9nkyHAb7" resolve="TestCase" />
                         </node>
-                        <node concept="359W_D" id="60PTWgneVnE" role="2Oq$k0">
+                        <node concept="359W_D" id="60PTWgneVnE" role="37wK5m">
                           <ref role="359W_E" to="av4b:ub9nkyHAb7" resolve="TestCase" />
                           <ref role="359W_F" to="av4b:1cd9HYWxxA0" resolve="setup" />
                         </node>
@@ -898,11 +903,13 @@
                     </node>
                     <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
                       <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                      <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
-                        <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      <node concept="2YIFZM" id="60PTWgoxdpY" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgoxdRD" role="37wK5m">
+                          <ref role="35c_gD" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
                         </node>
-                        <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                        <node concept="359W_D" id="60PTWgnea7W" role="37wK5m">
                           <ref role="359W_E" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
                           <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
                         </node>
@@ -966,13 +973,15 @@
                   </node>
                   <node concept="liA8E" id="60PTWgmU2Jl" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
-                    <node concept="2OqwBi" id="60PTWgmU2Jm" role="37wK5m">
-                      <node concept="355D3s" id="60PTWgmU2Jn" role="2Oq$k0">
+                    <node concept="2YIFZM" id="60PTWgozIbD" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgozIbE" role="37wK5m">
+                        <ref role="35c_gD" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                      </node>
+                      <node concept="355D3s" id="60PTWgmU2Jn" role="37wK5m">
                         <ref role="355D3t" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
                         <ref role="355D3u" to="av4b:75Hf8iHwLVy" resolve="strict" />
-                      </node>
-                      <node concept="liA8E" id="60PTWgmU2Jo" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="1oAbNU" id="60PTWgmU2Jp" role="37wK5m" />
@@ -1009,13 +1018,15 @@
                 </node>
                 <node concept="liA8E" id="60PTWgmk11x" role="2OqNvi">
                   <ref role="37wK5l" to="oq0c:3yPQSK6HgSW" resolve="isFlagCellSubstitutionActivated" />
-                  <node concept="2OqwBi" id="60PTWgmkN4A" role="37wK5m">
-                    <node concept="355D3s" id="60PTWgmkN4B" role="2Oq$k0">
+                  <node concept="2YIFZM" id="60PTWgoz06U" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgoz06V" role="37wK5m">
+                      <ref role="35c_gD" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                    </node>
+                    <node concept="355D3s" id="60PTWgmkN4B" role="37wK5m">
                       <ref role="355D3t" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
                       <ref role="355D3u" to="av4b:75Hf8iHwLVy" resolve="strict" />
-                    </node>
-                    <node concept="liA8E" id="60PTWgmkN4C" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="1Lj6YZ" id="60PTWgmk11z" role="37wK5m" />
@@ -1037,13 +1048,15 @@
                 </node>
                 <node concept="liA8E" id="60PTWgmlK4w" role="2OqNvi">
                   <ref role="37wK5l" to="oq0c:1xItpY9kSqt" resolve="isFlagCellSideTransformationActivated" />
-                  <node concept="2OqwBi" id="60PTWgmlKaS" role="37wK5m">
-                    <node concept="355D3s" id="60PTWgmlKaT" role="2Oq$k0">
+                  <node concept="2YIFZM" id="60PTWgozI76" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgozI77" role="37wK5m">
+                      <ref role="35c_gD" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                    </node>
+                    <node concept="355D3s" id="60PTWgmlKaT" role="37wK5m">
                       <ref role="355D3t" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
                       <ref role="355D3u" to="av4b:75Hf8iHwLVy" resolve="strict" />
-                    </node>
-                    <node concept="liA8E" id="60PTWgmlKaU" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="1Lj6YZ" id="60PTWgmlKq4" role="37wK5m" />
@@ -1839,11 +1852,13 @@
                     </node>
                     <node concept="liA8E" id="60PTWgnKpt4" role="2OqNvi">
                       <ref role="37wK5l" to="oq0c:60PTWgnKnol" resolve="getOptionalCellTransformationText" />
-                      <node concept="2OqwBi" id="60PTWgnKpt5" role="37wK5m">
-                        <node concept="liA8E" id="60PTWgnKpt6" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      <node concept="2YIFZM" id="60PTWgoydaY" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgoydaZ" role="37wK5m">
+                          <ref role="35c_gD" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
                         </node>
-                        <node concept="359W_D" id="60PTWgnKpt7" role="2Oq$k0">
+                        <node concept="359W_D" id="60PTWgnKpt7" role="37wK5m">
                           <ref role="359W_E" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
                           <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
                         </node>
@@ -1885,11 +1900,13 @@
                     </node>
                     <node concept="liA8E" id="60PTWgneRz0" role="2OqNvi">
                       <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                      <node concept="2OqwBi" id="60PTWgneRz1" role="37wK5m">
-                        <node concept="liA8E" id="60PTWgneRz2" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      <node concept="2YIFZM" id="60PTWgoydki" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgoydkj" role="37wK5m">
+                          <ref role="35c_gD" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
                         </node>
-                        <node concept="359W_D" id="60PTWgneRz3" role="2Oq$k0">
+                        <node concept="359W_D" id="60PTWgneRz3" role="37wK5m">
                           <ref role="359W_E" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
                           <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
                         </node>
@@ -2170,11 +2187,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgnKExx" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnKnol" resolve="getOptionalCellTransformationText" />
-                    <node concept="2OqwBi" id="60PTWgnKExy" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgnKExz" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgozJ7v" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgozJ7w" role="37wK5m">
+                        <ref role="35c_gD" to="av4b:78hTg1$THIv" resolve="ConstraintFailedTestItem" />
                       </node>
-                      <node concept="355D3s" id="60PTWgo6aLK" role="2Oq$k0">
+                      <node concept="355D3s" id="60PTWgo6aLK" role="37wK5m">
                         <ref role="355D3t" to="av4b:78hTg1$THIv" resolve="ConstraintFailedTestItem" />
                         <ref role="355D3u" to="av4b:5bElvpN178O" resolve="errmsg" />
                       </node>
@@ -2216,11 +2235,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgneTmY" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                    <node concept="2OqwBi" id="60PTWgneTmZ" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgneTn0" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgozJdS" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgozJdT" role="37wK5m">
+                        <ref role="35c_gD" to="av4b:78hTg1$THIv" resolve="ConstraintFailedTestItem" />
                       </node>
-                      <node concept="355D3s" id="60PTWgnhD0B" role="2Oq$k0">
+                      <node concept="355D3s" id="60PTWgnhD0B" role="37wK5m">
                         <ref role="355D3t" to="av4b:78hTg1$THIv" resolve="ConstraintFailedTestItem" />
                         <ref role="355D3u" to="av4b:5bElvpN178O" resolve="errmsg" />
                       </node>
@@ -3260,11 +3281,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgnKFDH" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnKnol" resolve="getOptionalCellTransformationText" />
-                    <node concept="2OqwBi" id="60PTWgnKFDI" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgnKFDJ" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgozKjB" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgozKjC" role="37wK5m">
+                        <ref role="35c_gD" to="av4b:4e_7uAt7oTg" resolve="InvalidValueTestItem" />
                       </node>
-                      <node concept="355D3s" id="60PTWgo6cd1" role="2Oq$k0">
+                      <node concept="355D3s" id="60PTWgo6cd1" role="37wK5m">
                         <ref role="355D3t" to="av4b:4e_7uAt7oTg" resolve="InvalidValueTestItem" />
                         <ref role="355D3u" to="av4b:4e_7uAt7oTi" resolve="errmsg" />
                       </node>
@@ -3306,13 +3329,15 @@
                   </node>
                   <node concept="liA8E" id="60PTWgneUDf" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                    <node concept="2OqwBi" id="60PTWgnhFsb" role="37wK5m">
-                      <node concept="355D3s" id="60PTWgnhETr" role="2Oq$k0">
+                    <node concept="2YIFZM" id="60PTWgozKsF" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgozKsG" role="37wK5m">
+                        <ref role="35c_gD" to="av4b:4e_7uAt7oTg" resolve="InvalidValueTestItem" />
+                      </node>
+                      <node concept="355D3s" id="60PTWgnhETr" role="37wK5m">
                         <ref role="355D3t" to="av4b:4e_7uAt7oTg" resolve="InvalidValueTestItem" />
                         <ref role="355D3u" to="av4b:4e_7uAt7oTi" resolve="errmsg" />
-                      </node>
-                      <node concept="liA8E" id="60PTWgnhFQM" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="313q4" id="60PTWgneUDj" role="37wK5m" />
@@ -5930,11 +5955,13 @@
                       </node>
                       <node concept="liA8E" id="60PTWgneSwW" role="2OqNvi">
                         <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                        <node concept="2OqwBi" id="60PTWgneSwX" role="37wK5m">
-                          <node concept="liA8E" id="60PTWgneSwY" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                        <node concept="2YIFZM" id="60PTWgoyelc" role="37wK5m">
+                          <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                          <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                          <node concept="35c_gC" id="60PTWgoyeld" role="37wK5m">
+                            <ref role="35c_gD" to="av4b:5Pgo_AS3Joq" resolve="AssertThatTestItem" />
                           </node>
-                          <node concept="359W_D" id="60PTWgneSwZ" role="2Oq$k0">
+                          <node concept="359W_D" id="60PTWgneSwZ" role="37wK5m">
                             <ref role="359W_E" to="av4b:5Pgo_AS3Joq" resolve="AssertThatTestItem" />
                             <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
                           </node>
@@ -6178,11 +6205,13 @@
                   </node>
                   <node concept="liA8E" id="60PTWgneUPV" role="2OqNvi">
                     <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                    <node concept="2OqwBi" id="60PTWgneUPW" role="37wK5m">
-                      <node concept="liA8E" id="60PTWgneUPX" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                    <node concept="2YIFZM" id="60PTWgoyeBY" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoyeBZ" role="37wK5m">
+                        <ref role="35c_gD" to="av4b:5Pgo_ASbFvn" resolve="IsInvalid" />
                       </node>
-                      <node concept="359W_D" id="60PTWgneUPY" role="2Oq$k0">
+                      <node concept="359W_D" id="60PTWgneUPY" role="37wK5m">
                         <ref role="359W_E" to="av4b:5Pgo_ASbFvn" resolve="IsInvalid" />
                         <ref role="359W_F" to="av4b:5Pgo_ASvSWM" resolve="messageMatcher" />
                       </node>

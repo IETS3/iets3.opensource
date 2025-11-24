@@ -151,6 +151,9 @@
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -233,11 +236,13 @@
                     </node>
                     <node concept="liA8E" id="60PTWgneBoJ" role="2OqNvi">
                       <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                      <node concept="2OqwBi" id="60PTWgneBoK" role="37wK5m">
-                        <node concept="liA8E" id="60PTWgneBoL" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      <node concept="2YIFZM" id="60PTWgoxLnL" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgoxLnM" role="37wK5m">
+                          <ref role="35c_gD" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
                         </node>
-                        <node concept="359W_D" id="60PTWgneBoM" role="2Oq$k0">
+                        <node concept="359W_D" id="60PTWgneBoM" role="37wK5m">
                           <ref role="359W_E" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
                           <ref role="359W_F" to="s7zn:3iESbJsi7uJ" resolve="effect" />
                         </node>
@@ -346,11 +351,13 @@
                     </node>
                     <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
                       <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
-                      <node concept="2OqwBi" id="60PTWgne851" role="37wK5m">
-                        <node concept="liA8E" id="60PTWgne853" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
+                      <node concept="2YIFZM" id="60PTWgoxdpY" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgoxdRD" role="37wK5m">
+                          <ref role="35c_gD" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
                         </node>
-                        <node concept="359W_D" id="60PTWgnea7W" role="2Oq$k0">
+                        <node concept="359W_D" id="60PTWgnea7W" role="37wK5m">
                           <ref role="359W_E" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
                           <ref role="359W_F" to="s7zn:3iESbJsi7uJ" resolve="effect" />
                         </node>
