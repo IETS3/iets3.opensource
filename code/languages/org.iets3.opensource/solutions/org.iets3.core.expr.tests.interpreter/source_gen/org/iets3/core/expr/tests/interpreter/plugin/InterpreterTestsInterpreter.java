@@ -60,7 +60,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("EvalAnythingExpr", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F8435714728545573507");
+        return new EvaluatorInfo("EvalAnythingExpr", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F8435714728545573507");
       }
 
       @Override
@@ -89,7 +89,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ForceCastExpr", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F6137388456558239629");
+        return new EvaluatorInfo("ForceCastExpr", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F6137388456558239629");
       }
 
       @Override
@@ -118,7 +118,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("MuteEffect", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F4255172619711707371");
+        return new EvaluatorInfo("MuteEffect", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F4255172619711707371");
       }
 
       @Override
@@ -147,7 +147,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("NoneExpr", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F1801842150043825561");
+        return new EvaluatorInfo("NoneExpr", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F1801842150043825561");
       }
 
       @Override
@@ -176,7 +176,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("OptExpression", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F1801842150043125370");
+        return new EvaluatorInfo("OptExpression", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F1801842150043125370");
       }
 
       @Override
@@ -205,7 +205,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("NamedAssertRef", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F7740953487929962702");
+        return new EvaluatorInfo("NamedAssertRef", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F7740953487929962702");
       }
 
       @Override
@@ -236,7 +236,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("InvalidValueTestItem", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F4874335060899230099");
+        return new EvaluatorInfo("InvalidValueTestItem", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F4874335060899230099");
       }
 
       @Override
@@ -267,7 +267,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ConstraintFailedTestItem", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F3989687176979085387");
+        return new EvaluatorInfo("ConstraintFailedTestItem", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F3989687176979085387");
       }
 
       @Override
@@ -298,7 +298,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ReportTestItem", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F8255774724001266474");
+        return new EvaluatorInfo("ReportTestItem", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F8255774724001266474");
       }
 
       @Override
@@ -331,7 +331,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("AssertTestItem", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F2396718651923255258");
+        return new EvaluatorInfo("AssertTestItem", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F2396718651923255258");
       }
 
       @Override
@@ -360,7 +360,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("IsValidRecord", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F6723982381145457770");
+        return new EvaluatorInfo("IsValidRecord", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F6723982381145457770");
       }
 
       @Override
@@ -393,7 +393,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("IsInvalid", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F6723982381145858316");
+        return new EvaluatorInfo("IsInvalid", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F6723982381145858316");
       }
 
       @Override
@@ -422,7 +422,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ContainsString", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F6723982381150612093");
+        return new EvaluatorInfo("ContainsString", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F6723982381150612093");
       }
 
       @Override
@@ -451,7 +451,7 @@ public class InterpreterTestsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("AndMatcher", "http://127.0.0.1:63320/node?ref=f663b374-b998-423e-a762-cb471d9aa18a%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient70%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F6965353666330643259");
+        return new EvaluatorInfo("AndMatcher", "http://127.0.0.1:63320/node?ref=5229df76-ce59-4d0c-a300-f1dbcd982420%2Fi%3A10000001%28org.iets3.core.expr.tests.interpreter%40transient68%2Forg.iets3.core.expr.tests.interpreter.plugin%400%29%2F6965353666330643259");
       }
 
       @Override

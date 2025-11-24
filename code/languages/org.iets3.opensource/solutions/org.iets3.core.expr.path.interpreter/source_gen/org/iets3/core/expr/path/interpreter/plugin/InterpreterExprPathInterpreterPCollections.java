@@ -99,7 +99,7 @@ public class InterpreterExprPathInterpreterPCollections extends InterpreterBase 
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("PathElement", "http://127.0.0.1:63320/node?ref=2bace83b-ed72-4dcb-a33a-89f277515310%2Fi%3A10000001%28org.iets3.core.expr.path.interpreter%40transient63%2Forg.iets3.core.expr.path.interpreter.plugin%400%29%2F3182453369942597745");
+        return new EvaluatorInfo("PathElement", "http://127.0.0.1:63320/node?ref=5f756a09-8f18-4266-88e4-e73e8338e9c3%2Fi%3A10000001%28org.iets3.core.expr.path.interpreter%40transient61%2Forg.iets3.core.expr.path.interpreter.plugin%400%29%2F3182453369942597745");
       }
 
       @Override
