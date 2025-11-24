@@ -630,6 +630,15 @@
       <node concept="m$_yC" id="4C8CrwW7i1C" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4iIKqJTZ5I8" resolve="de.q60.shadowmodels" />
       </node>
+      <node concept="m$_yC" id="33rdvUHR2Ht" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:64SK4bcO2rO" resolve="com.mbeddr.mpsutil.projectview" />
+      </node>
+      <node concept="m$_yC" id="33rdvUHS8nC" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:1jjxZP6JyD_" resolve="jetbrains.mps.console" />
+      </node>
+      <node concept="m$_yC" id="33rdvUHSSvM" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:7tNo_gxoK8h" resolve="com.mbeddr.doc" />
+      </node>
     </node>
     <node concept="m$_wf" id="7uAdOXh9aSZ" role="3989C9">
       <property role="m$_wk" value="org.iets3.core.expr.repl" />
@@ -796,6 +805,12 @@
       </node>
       <node concept="m$f5U" id="7yHH$DDpvEt" role="m$_yh">
         <ref role="m$f5T" node="7yHH$DDoDlc" resolve="org.iets3.contextfilter" />
+      </node>
+      <node concept="m$_yC" id="2PfwZmv9jN1" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
+      </node>
+      <node concept="m$_yC" id="2PfwZmv9ojo" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:hCVXosGNJH" resolve="com.mbeddr.mpsutil.modellisteners" />
       </node>
       <node concept="m$_yC" id="7yHH$DDpwFq" role="m$_yJ">
         <ref role="m$_y1" to="al5i:64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
@@ -1115,6 +1130,9 @@
       </node>
       <node concept="m$_yC" id="5wLtKNeT9bv" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeSRRD" resolve="org.iets3.core.os" />
+      </node>
+      <node concept="m$_yC" id="33rdvUHQizH" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:64SK4bcO2rO" resolve="com.mbeddr.mpsutil.projectview" />
       </node>
       <node concept="3_J27D" id="5wLtKNeT2TI" role="m_cZH">
         <node concept="3Mxwew" id="5wLtKNeT2TJ" role="3MwsjC">
