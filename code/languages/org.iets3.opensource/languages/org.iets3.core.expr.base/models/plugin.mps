@@ -15015,6 +15015,30 @@
       </node>
     </node>
     <node concept="2tJIrI" id="60PTWgnc63o" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgnKnol" role="jymVt">
+      <property role="TrG5h" value="getOptionalCellTransformationText" />
+      <node concept="3Tm1VV" id="60PTWgnKnom" role="1B3o_S" />
+      <node concept="17QB3L" id="60PTWgnKnon" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgnKnoo" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgnKnop" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgnKnoq" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="60PTWgnKnor" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgnKnos" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgnKnot" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgnKnou" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3clFbS" id="60PTWgnKnov" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="60PTWgnKnVt" role="jymVt" />
     <node concept="3clFb_" id="60PTWgnc5Jg" role="jymVt">
       <property role="TrG5h" value="getOptionalCellDescriptionText" />
       <node concept="3clFbS" id="60PTWgnc5Jh" role="3clF47" />
@@ -15197,6 +15221,37 @@
       </node>
     </node>
     <node concept="2tJIrI" id="60PTWgnc88w" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgnKiEF" role="jymVt">
+      <property role="TrG5h" value="getOptionalCellTransformationText" />
+      <node concept="3Tm1VV" id="60PTWgnKiEG" role="1B3o_S" />
+      <node concept="17QB3L" id="60PTWgnKiEH" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgnKiEI" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgnKiEJ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgnKiEK" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="60PTWgnKiEL" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgnKiEO" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgnKiEP" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgnKiEQ" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3clFbS" id="60PTWgnKiER" role="3clF47">
+        <node concept="3clFbF" id="60PTWgnKiES" role="3cqZAp">
+          <node concept="10Nm6u" id="60PTWgnKiET" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgnKiEU" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgnKiEE" role="jymVt" />
     <node concept="3clFb_" id="60PTWgnc7oM" role="jymVt">
       <property role="TrG5h" value="getOptionalCellDescriptionText" />
       <node concept="3Tm1VV" id="60PTWgnc7oO" role="1B3o_S" />
