@@ -433,6 +433,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -509,6 +510,11 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -582,6 +588,7 @@
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
       <concept id="621193272061064420" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SideTransformationCondition" flags="ig" index="1m$hWp" />
+      <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
       <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ig" index="1Lj6DC" />
       <concept id="2862331529394479405" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQueryCell" flags="ng" index="1Lj6DL">
         <child id="2862331529394487726" name="query" index="1Lj8FM" />
@@ -2543,9 +2550,46 @@
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
           <node concept="uPpia" id="1ZlHRbfJB_L" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbfJB_M" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbfJB_R" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbfJB_Q" role="3clFbG">
-                  <property role="Xl_RC" value="check that all error clauses are present" />
+              <node concept="3cpWs8" id="60PTWgmUjFx" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmUjFy" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmUjFz" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmUjF$" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmUjF_" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmUjFA" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgmUjFB" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmUjFC" role="2Oq$k0">
+                          <ref role="355D3t" to="hm2y:5BNZGjBvVgC" resolve="TryExpression" />
+                          <ref role="355D3u" to="hm2y:5aHkq2w0Y$e" resolve="complete" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmUjFD" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmUjFE" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmUjFF" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmUjFG" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmUjFH" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmUjFI" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmUjFy" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmUjFJ" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmUjFK" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmUjFy" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmUjFL" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="60PTWgmUjFM" role="3K4GZi">
+                    <property role="Xl_RC" value="a try expression that checks that all error clauses are present" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2907,9 +2951,46 @@
         <ref role="1NtTu8" to="hm2y:3xthw2gJs74" resolve="warning" />
         <node concept="uPpia" id="1ZlHRbfy$te" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbfy$tf" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbfy$tr" role="3cqZAp">
-              <node concept="Xl_RD" id="2Zbcfw_fcOY" role="3clFbG">
-                <property role="Xl_RC" value="show a warning instead of an error" />
+            <node concept="3cpWs8" id="60PTWgmUe_H" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgmUe_I" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgmUe_J" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgmUe_K" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgmUe_L" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmUe_M" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgmUe_N" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmUe_O" role="2Oq$k0">
+                        <ref role="355D3t" to="hm2y:KaZMgy4InH" resolve="Invariant" />
+                        <ref role="355D3u" to="hm2y:3xthw2gJs74" resolve="warning" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmUe_P" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1oAbNU" id="60PTWgmUe_Q" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmUe_R" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmUe_S" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgmUe_T" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgmUe_U" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgmUe_I" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgmUe_V" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgmUe_W" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgmUe_I" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgmUe_X" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="60PTWgmUe_Y" role="3K4GZi">
+                  <property role="Xl_RC" value="an invariant that shows a warning instead of an error" />
+                </node>
               </node>
             </node>
           </node>
@@ -3014,9 +3095,46 @@
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         <node concept="uPpia" id="1ZlHRbfyyt_" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbfyytA" role="2VODD2">
-            <node concept="3clFbF" id="2Zbcfw_fdnc" role="3cqZAp">
-              <node concept="Xl_RD" id="2Zbcfw_fdnb" role="3clFbG">
-                <property role="Xl_RC" value="show a warning instead of an error" />
+            <node concept="3cpWs8" id="60PTWgmUgZU" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgmUgZV" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgmUgZW" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgmUgZX" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgmUgZY" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmUgZZ" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgmUh00" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmUh01" role="2Oq$k0">
+                        <ref role="355D3t" to="hm2y:KaZMgy4InG" resolve="Postcondition" />
+                        <ref role="355D3u" to="hm2y:3xthw2gJs74" resolve="warning" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmUh02" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1oAbNU" id="60PTWgmUh03" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmUh04" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmUh05" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgmUh06" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgmUh07" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgmUgZV" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgmUh08" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgmUh09" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgmUgZV" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgmUh0a" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="60PTWgmUh0b" role="3K4GZi">
+                  <property role="Xl_RC" value="a postcondition that shows a warning instead of an error" />
+                </node>
               </node>
             </node>
           </node>
@@ -3121,9 +3239,46 @@
         <ref role="1NtTu8" to="hm2y:3xthw2gJs74" resolve="warning" />
         <node concept="uPpia" id="7PVnOXzKBnj" role="1djCvC">
           <node concept="3clFbS" id="7PVnOXzKBnk" role="2VODD2">
-            <node concept="3clFbF" id="7PVnOXzKBoe" role="3cqZAp">
-              <node concept="Xl_RD" id="2Zbcfw_fg5u" role="3clFbG">
-                <property role="Xl_RC" value="show a warning instead of an error" />
+            <node concept="3cpWs8" id="60PTWgmUijn" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgmUijo" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgmUijp" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgmUijq" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgmUijr" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmUijs" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgmUijt" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmUiju" role="2Oq$k0">
+                        <ref role="355D3t" to="hm2y:KaZMgy4Ilt" resolve="Precondition" />
+                        <ref role="355D3u" to="hm2y:3xthw2gJs74" resolve="warning" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmUijv" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1oAbNU" id="60PTWgmUijw" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmUijx" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmUijy" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgmUijz" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgmUij$" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgmUijo" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgmUij_" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgmUijA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgmUijo" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgmUijB" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="60PTWgmUijC" role="3K4GZi">
+                  <property role="Xl_RC" value="a precondition that shows a warning instead of an error" />
+                </node>
               </node>
             </node>
           </node>
@@ -3223,9 +3378,46 @@
         <ref role="1NtTu8" to="hm2y:3xthw2gJs74" resolve="warning" />
         <node concept="uPpia" id="1ZlHRbfyzCy" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbfyzCz" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbfyzCJ" role="3cqZAp">
-              <node concept="Xl_RD" id="2Zbcfw_dsX0" role="3clFbG">
-                <property role="Xl_RC" value="show a warning instead of an error" />
+            <node concept="3cpWs8" id="60PTWgmUfTL" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgmUfTM" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgmUfTN" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgmUfTO" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgmUfTP" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmUfTQ" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgmUfTR" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmUfTS" role="2Oq$k0">
+                        <ref role="355D3t" to="hm2y:KaZMgylLmk" resolve="PlainConstraint" />
+                        <ref role="355D3u" to="hm2y:3xthw2gJs74" resolve="warning" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmUfTT" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1oAbNU" id="60PTWgmUfTU" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmUfTV" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmUfTW" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgmUfTX" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgmUfTY" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgmUfTM" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgmUfTZ" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgmUfU0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgmUfTM" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgmUfU1" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="60PTWgmUfU2" role="3K4GZi">
+                  <property role="Xl_RC" value="a plain constraint that shows a warning instead of an error" />
+                </node>
               </node>
             </node>
           </node>
@@ -3896,9 +4088,46 @@
         </node>
         <node concept="uPpia" id="1ZlHRbf$yKQ" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbf$yKR" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbf$yKW" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbf$zVM" role="3clFbG">
-                <property role="Xl_RC" value="fail if the constraint is invalid" />
+            <node concept="3cpWs8" id="60PTWgmU2Jh" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgmU2Ji" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgmU2B2" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgmU2Jj" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgmU2Jk" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmU2Jl" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgmU2Jm" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmU2Jn" role="2Oq$k0">
+                        <ref role="355D3t" to="hm2y:78hTg1zmOGb" resolve="CheckTypeConstraintsExpr" />
+                        <ref role="355D3u" to="hm2y:5OzSgxdWiIO" resolve="failIfInvalid" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmU2Jo" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1oAbNU" id="60PTWgmU2Jp" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmU2Jq" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmU1MA" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgmU4xR" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgmU4$0" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgmU3qG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgmU2Jr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgmU3XZ" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="7PVnOXzk8V0" role="3K4GZi">
+                  <property role="Xl_RC" value="a type constraints expression that fails if the constraint is invalid" />
+                </node>
               </node>
             </node>
           </node>

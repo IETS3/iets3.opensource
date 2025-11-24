@@ -995,9 +995,46 @@
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         <node concept="uPpia" id="7at3vyOfAPh" role="1djCvC">
           <node concept="3clFbS" id="7at3vyOfAPi" role="2VODD2">
-            <node concept="3clFbF" id="7at3vyOfAVX" role="3cqZAp">
-              <node concept="Xl_RD" id="7at3vyOfAVW" role="3clFbG">
-                <property role="Xl_RC" value="mark the unit as derived from other units" />
+            <node concept="3cpWs8" id="60PTWgmV2pe" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgmV2pf" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgmV2pg" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgmV2ph" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgmV2pi" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmV2pj" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgmV2pk" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmV2pl" role="2Oq$k0">
+                        <ref role="355D3t" to="i3ya:7eOyx9r3jsZ" resolve="Unit" />
+                        <ref role="355D3u" to="i3ya:7Bmg9Oo7Kvu" resolve="derived" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmV2pm" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1oAbNU" id="60PTWgmV2pn" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmV2po" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmV2pp" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgmV2pq" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgmV2pr" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgmV2pf" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgmV2ps" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgmV2pt" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgmV2pf" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgmV2pu" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="60PTWgmV2pv" role="3K4GZi">
+                  <property role="Xl_RC" value="an unit derived from other units" />
+                </node>
               </node>
             </node>
           </node>
@@ -1416,9 +1453,46 @@
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
           <node concept="uPpia" id="3wrpJuqxJJo" role="1djCvC">
             <node concept="3clFbS" id="3wrpJuqxJJp" role="2VODD2">
-              <node concept="3clFbF" id="3wrpJuqxJJS" role="3cqZAp">
-                <node concept="Xl_RD" id="3wrpJuqxJJR" role="3clFbG">
-                  <property role="Xl_RC" value="implicit conversion" />
+              <node concept="3cpWs8" id="60PTWgmU2Jh" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmU2Ji" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmU2B2" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmU2Jj" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmU2Jk" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmU2Jl" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgmU2Jm" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmU2Jn" role="2Oq$k0">
+                          <ref role="355D3t" to="i3ya:VmEWGR2Mzb" resolve="ConversionRule" />
+                          <ref role="355D3u" to="i3ya:3wrpJuqviSi" resolve="isImplicit" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmU2Jo" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmU2Jp" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmU2Jq" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmU1MA" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmU4xR" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmU4$0" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmU3qG" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmU2Jr" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmU3XZ" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="7PVnOXzk8V0" role="3K4GZi">
+                    <property role="Xl_RC" value="a conversion rule with implicit conversion" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1485,9 +1559,46 @@
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
           <node concept="uPpia" id="1ZlHRbghgQu" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbghgQv" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbghiiX" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbghiiW" role="3clFbG">
-                  <property role="Xl_RC" value="eager conversion" />
+              <node concept="3cpWs8" id="60PTWgmUIOi" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmUIOj" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmUIOk" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmUIOl" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmUIOm" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmUIOn" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgmUIOo" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmUIOp" role="2Oq$k0">
+                          <ref role="355D3t" to="i3ya:VmEWGR2Mzb" resolve="ConversionRule" />
+                          <ref role="355D3u" to="i3ya:1wGuEUvXzlw" resolve="isEager" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmUIOq" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmUIOr" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmUIOs" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmUIOt" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmUIOu" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmUIOv" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmUIOj" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmUIOw" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmUIOx" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmUIOj" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmUIOy" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="60PTWgmUIOz" role="3K4GZi">
+                    <property role="Xl_RC" value="a conversion rule with eager conversion" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2760,9 +2871,46 @@
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         <node concept="uPpia" id="5dNVOCFCc2G" role="1djCvC">
           <node concept="3clFbS" id="5dNVOCFCc2H" role="2VODD2">
-            <node concept="3clFbF" id="5dNVOCFCc3C" role="3cqZAp">
-              <node concept="Xl_RD" id="5dNVOCFCc3B" role="3clFbG">
-                <property role="Xl_RC" value="add a specification" />
+            <node concept="3cpWs8" id="60PTWgmV1dH" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgmV1dI" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgmV1dJ" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgmV1dK" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgmV1dL" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmV1dM" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgmV1dN" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmV1dO" role="2Oq$k0">
+                        <ref role="355D3t" to="i3ya:1KUmgSFpwWn" resolve="Quantity" />
+                        <ref role="355D3u" to="i3ya:7Bmg9Oo3Vr1" resolve="derived" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmV1dP" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1oAbNU" id="60PTWgmV1dQ" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmV1dR" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmV1dS" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgmV1dT" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgmV1dU" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgmV1dI" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgmV1dV" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgmV1dW" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgmV1dI" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgmV1dX" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="60PTWgmV1dY" role="3K4GZi">
+                  <property role="Xl_RC" value="a derived quantity" />
+                </node>
               </node>
             </node>
           </node>

@@ -331,6 +331,7 @@
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -507,6 +508,7 @@
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
       <concept id="621193272061064420" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SideTransformationCondition" flags="ig" index="1m$hWp" />
+      <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
       <concept id="2862331529394480355" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SubConcept" flags="ng" index="1Lj6YZ" />
     </language>
     <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell">
@@ -830,9 +832,46 @@
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
           <node concept="uPpia" id="1ZlHRbfy_Zd" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbfy_Ze" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbf$x2E" role="3cqZAp">
-                <node concept="Xl_RD" id="7PVnOXzk8V0" role="3clFbG">
-                  <property role="Xl_RC" value="a public component" />
+              <node concept="3cpWs8" id="60PTWgmU2Jh" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmU2Ji" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmU2B2" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmU2Jj" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmU2Jk" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmU2Jl" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgmU2Jm" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmU2Jn" role="2Oq$k0">
+                          <ref role="355D3t" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+                          <ref role="355D3u" to="w9y2:5kXA14mWc_G" resolve="public" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmU2Jo" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmU2Jp" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmU2Jq" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmU1MA" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmU4xR" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmU4$0" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmU3qG" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmU2Jr" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmU3XZ" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="7PVnOXzk8V0" role="3K4GZi">
+                    <property role="Xl_RC" value="a public component" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -921,9 +960,46 @@
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
           <node concept="uPpia" id="1ZlHRbfyA41" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbfyA42" role="2VODD2">
-              <node concept="3clFbF" id="7PVnOXzn$sQ" role="3cqZAp">
-                <node concept="Xl_RD" id="7PVnOXzn$sP" role="3clFbG">
-                  <property role="Xl_RC" value="a component fragment" />
+              <node concept="3cpWs8" id="60PTWgmU8qs" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmU8qt" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmU8qu" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmU8qv" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmU8qw" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmU8qx" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgmU8qy" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmU8qz" role="2Oq$k0">
+                          <ref role="355D3t" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+                          <ref role="355D3u" to="w9y2:6LfBX8Yi4o4" resolve="fragment" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmU8q$" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmU8q_" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmU8qA" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmU8qB" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmU8qC" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmU8qD" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmU8qt" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmU8qE" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmU8qF" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmU8qt" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmU8qG" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="60PTWgmU8qH" role="3K4GZi">
+                    <property role="Xl_RC" value="a component fragment" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -13581,9 +13657,51 @@
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
           <node concept="uPpia" id="1ZlHRbf$xHv" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbf$xHw" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbf$xM3" role="3cqZAp">
-                <node concept="Xl_RD" id="7PVnOXzn_2P" role="3clFbG">
-                  <property role="Xl_RC" value="a public component" />
+              <node concept="3cpWs8" id="60PTWgmUaph" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmUapi" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmUapj" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmUapk" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmUapl" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmUapm" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="3cpWs3" id="60PTWgmUaKJ" role="37wK5m">
+                        <node concept="Xl_RD" id="60PTWgmUaKN" role="3uHU7B">
+                          <property role="Xl_RC" value="inlineComponent." />
+                        </node>
+                        <node concept="2OqwBi" id="60PTWgmUapn" role="3uHU7w">
+                          <node concept="355D3s" id="60PTWgmUapo" role="2Oq$k0">
+                            <ref role="355D3t" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+                            <ref role="355D3u" to="w9y2:5kXA14mWc_G" resolve="public" />
+                          </node>
+                          <node concept="liA8E" id="60PTWgmUapp" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmUapq" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmUapr" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmUaps" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmUapt" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmUapu" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmUapi" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmUapv" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmUapw" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmUapi" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmUapx" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="60PTWgmUapy" role="3K4GZi">
+                    <property role="Xl_RC" value="a public component" />
+                  </node>
                 </node>
               </node>
             </node>

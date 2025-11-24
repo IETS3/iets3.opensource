@@ -457,6 +457,7 @@
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
       <concept id="621193272061064420" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SideTransformationCondition" flags="ig" index="1m$hWp" />
+      <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
       <concept id="2862331529394480355" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SubConcept" flags="ng" index="1Lj6YZ" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -6291,9 +6292,46 @@
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
           <node concept="uPpia" id="1ZlHRbg90gW" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbg90gX" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbg90ly" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbg90lx" role="3clFbG">
-                  <property role="Xl_RC" value="a template spreadsheet" />
+              <node concept="3cpWs8" id="60PTWgmU2Jh" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmU2Ji" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmU2B2" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmU2Jj" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmU2Jk" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmU2Jl" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgmU2Jm" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmU2Jn" role="2Oq$k0">
+                          <ref role="355D3t" to="wtll:3_Nra3E2xlO" resolve="TopLevelSheet" />
+                          <ref role="355D3u" to="wtll:3pIANU_03o9" resolve="template" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmU2Jo" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmU2Jp" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmU2Jq" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmU1MA" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmU4xR" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmU4$0" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmU3qG" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmU2Jr" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmU3XZ" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="7PVnOXzk8V0" role="3K4GZi">
+                    <property role="Xl_RC" value="a template spreadsheet" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -6442,9 +6480,46 @@
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
           <node concept="uPpia" id="1ZlHRbg90o2" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbg90o3" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbg90o9" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbg90o8" role="3clFbG">
-                  <property role="Xl_RC" value="a template spreadsheet" />
+              <node concept="3cpWs8" id="60PTWgmUw6t" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmUw6u" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmUw6v" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmUw6w" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmUw6x" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmUw6y" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgmUw6z" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmUw6$" role="2Oq$k0">
+                          <ref role="355D3t" to="wtll:3_Nra3E2xlO" resolve="TopLevelSheet" />
+                          <ref role="355D3u" to="wtll:3pIANU_03o9" resolve="template" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmUw6_" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmUw6A" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmUw6B" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmUw6C" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmUw6D" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmUw6E" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmUw6u" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmUw6F" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmUw6G" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmUw6u" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmUw6H" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="60PTWgmUw6I" role="3K4GZi">
+                    <property role="Xl_RC" value="a template spreadsheet" />
+                  </node>
                 </node>
               </node>
             </node>

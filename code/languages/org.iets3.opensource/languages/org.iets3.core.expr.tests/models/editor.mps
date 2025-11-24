@@ -290,6 +290,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -429,6 +430,7 @@
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
       <concept id="621193272061064420" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SideTransformationCondition" flags="ig" index="1m$hWp" />
+      <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
       <concept id="2862331529394480355" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SubConcept" flags="ng" index="1Lj6YZ" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -873,9 +875,46 @@
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         <node concept="uPpia" id="1ZlHRbgaXQ0" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgaXQ1" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgaXQ7" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgaXQ6" role="3clFbG">
-                <property role="Xl_RC" value="check that the actual expression is a weak subtype of the expected expression" />
+            <node concept="3cpWs8" id="60PTWgmU2Jh" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgmU2Ji" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgmU2B2" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgmU2Jj" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgmU2Jk" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmU2Jl" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgmU2Jm" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmU2Jn" role="2Oq$k0">
+                        <ref role="355D3t" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                        <ref role="355D3u" to="av4b:75Hf8iHwLVy" resolve="strict" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmU2Jo" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1oAbNU" id="60PTWgmU2Jp" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmU2Jq" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmU1MA" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgmU4xR" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgmU4$0" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgmU3qG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgmU2Jr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgmU3XZ" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="7PVnOXzk8V0" role="3K4GZi">
+                  <property role="Xl_RC" value="an assert item with weak subtype checking" />
+                </node>
               </node>
             </node>
           </node>

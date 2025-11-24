@@ -424,7 +424,9 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -566,6 +568,7 @@
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
       <concept id="621193272061064420" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SideTransformationCondition" flags="ig" index="1m$hWp" />
+      <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
       <concept id="2862331529394480355" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SubConcept" flags="ng" index="1Lj6YZ" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -765,9 +768,46 @@
           <ref role="1NtTu8" to="zzzn:2uR5X5azvjH" resolve="ext" />
           <node concept="uPpia" id="1ZlHRbf$$OS" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbf$$OT" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbf$$Pi" role="3cqZAp">
-                <node concept="Xl_RD" id="1ZlHRbf$$Ph" role="3clFbG">
-                  <property role="Xl_RC" value="extension function" />
+              <node concept="3cpWs8" id="60PTWgmUEV2" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmUEV3" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmUEV4" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmUEV5" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmUEV6" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmUEV7" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgmUEV8" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmUEV9" role="2Oq$k0">
+                          <ref role="355D3t" to="yv47:49WTic8f4iz" resolve="Function" />
+                          <ref role="355D3u" to="zzzn:2uR5X5azvjH" resolve="ext" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmUEVa" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmUEVb" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmUEVc" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmUEVd" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmUEVe" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmUEVf" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmUEV3" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmUEVg" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmUEVh" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmUEV3" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmUEVi" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="60PTWgmUEVj" role="3K4GZi">
+                    <property role="Xl_RC" value="an extension function" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2408,9 +2448,46 @@
         <ref role="1NtTu8" to="yv47:67Y8mp$M9cx" resolve="qualified" />
         <node concept="uPpia" id="1ZlHRbghbpm" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbghbpn" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbghbpH" role="3cqZAp">
-              <node concept="Xl_RD" id="1sNMMH7wOS5" role="3clFbG">
-                <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
+            <node concept="3cpWs8" id="60PTWgmU2Jh" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgmU2Ji" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgmU2B2" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgmU2Jj" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgmU2Jk" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmU2Jl" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                    <node concept="2OqwBi" id="60PTWgmU2Jm" role="37wK5m">
+                      <node concept="355D3s" id="60PTWgmU2Jn" role="2Oq$k0">
+                        <ref role="355D3t" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
+                        <ref role="355D3u" to="yv47:67Y8mp$M9cx" resolve="qualified" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgmU2Jo" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="1oAbNU" id="60PTWgmU2Jp" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmU2Jq" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmU1MA" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgmU4xR" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgmU4$0" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgmU3qG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgmU2Jr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgmU3XZ" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="7PVnOXzk8V0" role="3K4GZi">
+                  <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
+                </node>
               </node>
             </node>
           </node>
@@ -2748,9 +2825,46 @@
           </node>
           <node concept="uPpia" id="1ZlHRbghbqS" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbghbqT" role="2VODD2">
-              <node concept="3clFbF" id="1ZlHRbghbqX" role="3cqZAp">
-                <node concept="Xl_RD" id="1sNMMH7wOSD" role="3clFbG">
-                  <property role="Xl_RC" value="a qualified enumeration literal (referenced by enum.name)" />
+              <node concept="3cpWs8" id="60PTWgmUCCG" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmUCCH" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmUCCI" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmUCCJ" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmUCCK" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmUCCL" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="2OqwBi" id="60PTWgmUCCM" role="37wK5m">
+                        <node concept="355D3s" id="60PTWgmUCCN" role="2Oq$k0">
+                          <ref role="355D3t" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
+                          <ref role="355D3u" to="yv47:67Y8mp$M9cx" resolve="qualified" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgmUCCO" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmUCCP" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmUCCQ" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmUCCR" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmUCCS" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmUCCT" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmUCCH" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmUCCU" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmUCCV" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmUCCH" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmUCCW" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="60PTWgmUCCX" role="3K4GZi">
+                    <property role="Xl_RC" value="a qualified enumeration literal (reference by enum.name)" />
+                  </node>
                 </node>
               </node>
             </node>

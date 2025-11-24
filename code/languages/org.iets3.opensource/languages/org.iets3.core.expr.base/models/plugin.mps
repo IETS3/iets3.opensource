@@ -14976,6 +14976,30 @@
       </node>
     </node>
     <node concept="2tJIrI" id="60PTWgmPdEt" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgmTSO2" role="jymVt">
+      <property role="TrG5h" value="getFlagCellDescriptionText" />
+      <node concept="3clFbS" id="60PTWgmTSO5" role="3clF47" />
+      <node concept="3Tm1VV" id="60PTWgmTSO6" role="1B3o_S" />
+      <node concept="17QB3L" id="60PTWgmTSJc" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgmTT6a" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgmTT69" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgmTUnt" role="3clF46">
+        <property role="TrG5h" value="originalText" />
+        <node concept="17QB3L" id="60PTWgmTUQc" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgmTV1r" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgmTYq4" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgmTYWi" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgmTSiE" role="jymVt" />
     <node concept="3clFb_" id="60PTWgmPeug" role="jymVt">
       <property role="TrG5h" value="getConstantText" />
       <node concept="3clFbS" id="60PTWgmPeuj" role="3clF47" />
@@ -15083,6 +15107,37 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="1xItpY9kWyS" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgmTZWP" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgmTZoY" role="jymVt">
+      <property role="TrG5h" value="getFlagCellDescriptionText" />
+      <node concept="3Tm1VV" id="60PTWgmTZp0" role="1B3o_S" />
+      <node concept="17QB3L" id="60PTWgmTZp1" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgmTZp2" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgmTZp3" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgmTZp4" role="3clF46">
+        <property role="TrG5h" value="originalText" />
+        <node concept="17QB3L" id="60PTWgmTZp5" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgmTZp6" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgmTZp7" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgmTZp8" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3clFbS" id="60PTWgmTZp9" role="3clF47">
+        <node concept="3clFbF" id="60PTWgmU13f" role="3cqZAp">
+          <node concept="10Nm6u" id="60PTWgmU13e" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgmTZpa" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
