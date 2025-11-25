@@ -205,6 +205,10 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
       <concept id="1954385921685784800" name="com.mbeddr.mpsutil.grammarcells.structure.PostprocessFunction" flags="ig" index="315t4" />
+      <concept id="7408935449007508559" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition_expectedConcept" flags="ng" index="7dpZ6" />
+      <concept id="7408935449007503509" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition" flags="ig" index="7duGs" />
+      <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
+      <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="7011566904921631440" name="postprocess" index="vWNKz" />
@@ -214,10 +218,17 @@
       <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ngI" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
+      <concept id="2293941288997642241" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedConcept" flags="ng" index="3dAXtN" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="1954385921685817931" name="postprocessSideTransform" index="31dnJ" />
+        <child id="1954385921685817946" name="postprocessNodeSubstitute" index="31dnY" />
+        <child id="7408935449007570592" name="substituteCondition" index="7deOD" />
+        <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
       <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
+      <concept id="2862331529394480355" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SubConcept" flags="ng" index="1Lj6YZ" />
+      <concept id="6349233906483558394" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_wrappedConcept" flags="ng" index="1ZN7lz" />
     </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
       <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ig" index="238au4" />
@@ -630,6 +641,169 @@
       <node concept="1kIj98" id="4lFnCmbEzn3" role="1QoVPY">
         <node concept="3F1sOY" id="4lFnCmbEznd" role="1kIj9b">
           <ref role="1NtTu8" to="49km:4lFnCmbEzmB" resolve="busType" />
+        </node>
+        <node concept="2e7140" id="60PTWgq7Kzw" role="2e1Fq_">
+          <node concept="3clFbS" id="60PTWgq7Kzx" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgq7Kzy" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgq7Kzz" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgq7Kz$" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgq7Kz_" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgq7bk$" resolve="isWrapperCellSideTransformationActivated" />
+                  <node concept="2YIFZM" id="60PTWgq7KzA" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgq7KzB" role="37wK5m">
+                      <ref role="35c_gD" to="49km:tc31IFYOCq" resolve="BusPortType" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgq7KzC" role="37wK5m">
+                      <ref role="359W_E" to="49km:tc31IFYOCq" resolve="BusPortType" />
+                      <ref role="359W_F" to="49km:4lFnCmbEzmB" resolve="busType" />
+                    </node>
+                  </node>
+                  <node concept="2e73FJ" id="60PTWgq7KzD" role="37wK5m" />
+                  <node concept="1Lj6YZ" id="60PTWgq7KzE" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgq7KzF" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7duGs" id="60PTWgqdcR9" role="7deOD">
+          <node concept="3clFbS" id="60PTWgqdcRa" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqdcRb" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqdcRc" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqdcRd" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqdcRe" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgq7bkl" resolve="isWrapperCellSubstitutionActivated" />
+                  <node concept="2YIFZM" id="60PTWgqdcRf" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgqeh_s" role="37wK5m">
+                      <ref role="35c_gD" to="49km:tc31IFYOCq" resolve="BusPortType" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgqehBV" role="37wK5m">
+                      <ref role="359W_E" to="49km:tc31IFYOCq" resolve="BusPortType" />
+                      <ref role="359W_F" to="49km:4lFnCmbEzmB" resolve="busType" />
+                    </node>
+                  </node>
+                  <node concept="7dpZ6" id="60PTWgqdcRi" role="37wK5m" />
+                  <node concept="1ZN7lz" id="60PTWgqdcRj" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqdcRk" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgqYswu" role="31dnJ">
+          <node concept="3clFbS" id="60PTWgqYswv" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqYsww" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqYswx" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqYswy" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqYswz" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgqXNLq" resolve="wrapperCellSideTransformationPostProcess" />
+                  <node concept="2YIFZM" id="60PTWgr0Y6a" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgr0Y6b" role="37wK5m">
+                      <ref role="35c_gD" to="49km:tc31IFYOCq" resolve="BusPortType" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgr0Y6c" role="37wK5m">
+                      <ref role="359W_E" to="49km:tc31IFYOCq" resolve="BusPortType" />
+                      <ref role="359W_F" to="49km:4lFnCmbEzmB" resolve="busType" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgqYswB" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqYswC" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgqZEip" role="31dnY">
+          <node concept="3clFbS" id="60PTWgqZEiq" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqZEir" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqZEis" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqZEit" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqZEiu" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgqXQTX" resolve="wrapperCellSubstitutionPostProcess" />
+                  <node concept="2YIFZM" id="60PTWgr0YaU" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgr0YaV" role="37wK5m">
+                      <ref role="35c_gD" to="49km:tc31IFYOCq" resolve="BusPortType" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgr0YaW" role="37wK5m">
+                      <ref role="359W_E" to="49km:tc31IFYOCq" resolve="BusPortType" />
+                      <ref role="359W_F" to="49km:4lFnCmbEzmB" resolve="busType" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgqZEiy" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqZEiz" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="60PTWgrz5f6" role="1djCvC">
+          <node concept="3clFbS" id="60PTWgrz5f7" role="2VODD2">
+            <node concept="3cpWs8" id="60PTWgrz5fb" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgrz5fc" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgrz5fd" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgrz5fe" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgrz5ff" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgrz5fg" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgry9kT" resolve="getWrapperCellSubstitutionDescriptionText" />
+                    <node concept="2YIFZM" id="60PTWgr$JhN" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgr$JhO" role="37wK5m">
+                        <ref role="35c_gD" to="49km:tc31IFYOCq" resolve="BusPortType" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgr$JhP" role="37wK5m">
+                        <ref role="359W_E" to="49km:tc31IFYOCq" resolve="BusPortType" />
+                        <ref role="359W_F" to="49km:4lFnCmbEzmB" resolve="busType" />
+                      </node>
+                    </node>
+                    <node concept="2e73FJ" id="60PTWgrz5fk" role="37wK5m" />
+                    <node concept="3dAXtN" id="60PTWgrz5fl" role="37wK5m" />
+                    <node concept="1Lj6YZ" id="60PTWgrz5fm" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgrz5fn" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgrz5fo" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgrz5fp" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgrz5fq" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgrz5fr" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgrz5fc" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgrz5fs" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgrz5ft" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgrz5fc" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgrz5fu" role="2OqNvi" />
+                </node>
+                <node concept="1oAbNU" id="60PTWgrAbzB" role="3K4GZi" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1iCGBv" id="7Klpc$B2cDA" role="1QoS34">
@@ -1080,6 +1254,169 @@
         <node concept="3F1sOY" id="4lFnCmbDPQc" role="1kIj9b">
           <ref role="1NtTu8" to="49km:4lFnCmbDPQ8" resolve="busType" />
           <node concept="Vb9p2" id="pRGWLF0Kn" role="3F10Kt" />
+        </node>
+        <node concept="2e7140" id="60PTWgq7zAR" role="2e1Fq_">
+          <node concept="3clFbS" id="60PTWgq7zAS" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgq7zBo" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgq7zBq" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgq7zBr" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgq7zBs" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgq7bk$" resolve="isWrapperCellSideTransformationActivated" />
+                  <node concept="2YIFZM" id="60PTWgq7zBt" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgq7$Do" role="37wK5m">
+                      <ref role="35c_gD" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgq7$MX" role="37wK5m">
+                      <ref role="359W_E" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
+                      <ref role="359W_F" to="49km:4lFnCmbDPQ8" resolve="busType" />
+                    </node>
+                  </node>
+                  <node concept="2e73FJ" id="60PTWgq7_Vg" role="37wK5m" />
+                  <node concept="1Lj6YZ" id="60PTWgq7AcO" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgq7Atr" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7duGs" id="60PTWgqcYVi" role="7deOD">
+          <node concept="3clFbS" id="60PTWgqcYVj" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqcYZc" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqcYZd" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqcYZe" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqcYZf" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgq7bkl" resolve="isWrapperCellSubstitutionActivated" />
+                  <node concept="2YIFZM" id="60PTWgqcYZg" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgqegL9" role="37wK5m">
+                      <ref role="35c_gD" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgqegNC" role="37wK5m">
+                      <ref role="359W_E" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
+                      <ref role="359W_F" to="49km:4lFnCmbDPQ8" resolve="busType" />
+                    </node>
+                  </node>
+                  <node concept="7dpZ6" id="60PTWgqd3w$" role="37wK5m" />
+                  <node concept="1ZN7lz" id="60PTWgqd3QB" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqcYZl" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgqY1TG" role="31dnJ">
+          <node concept="3clFbS" id="60PTWgqY1TH" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqY1Zk" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqY1Zl" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqY1Zm" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqY1Zn" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgqXNLq" resolve="wrapperCellSideTransformationPostProcess" />
+                  <node concept="2YIFZM" id="60PTWgr0X7w" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgr0X7x" role="37wK5m">
+                      <ref role="35c_gD" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgr0X7y" role="37wK5m">
+                      <ref role="359W_E" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
+                      <ref role="359W_F" to="49km:4lFnCmbDPQ8" resolve="busType" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgqY3cH" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqY1Zt" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgqZqtc" role="31dnY">
+          <node concept="3clFbS" id="60PTWgqZqtd" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqZuo$" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqZuo_" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqZuoA" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqZuoB" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgqXQTX" resolve="wrapperCellSubstitutionPostProcess" />
+                  <node concept="2YIFZM" id="60PTWgr0XhG" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgr0XhH" role="37wK5m">
+                      <ref role="35c_gD" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgr0XhI" role="37wK5m">
+                      <ref role="359W_E" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
+                      <ref role="359W_F" to="49km:4lFnCmbDPQ8" resolve="busType" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgqZuoF" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqZuoG" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="uPpia" id="60PTWgrz49J" role="1djCvC">
+          <node concept="3clFbS" id="60PTWgrz49K" role="2VODD2">
+            <node concept="3cpWs8" id="60PTWgryKR8" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgryKR9" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgryKRa" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgryKRb" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgryKRc" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgryKRd" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgry9kT" resolve="getWrapperCellSubstitutionDescriptionText" />
+                    <node concept="2YIFZM" id="60PTWgr$Io5" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgr$Io6" role="37wK5m">
+                        <ref role="35c_gD" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgr$Io7" role="37wK5m">
+                        <ref role="359W_E" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
+                        <ref role="359W_F" to="49km:4lFnCmbDPQ8" resolve="busType" />
+                      </node>
+                    </node>
+                    <node concept="2e73FJ" id="60PTWgryNjr" role="37wK5m" />
+                    <node concept="3dAXtN" id="60PTWgryNtQ" role="37wK5m" />
+                    <node concept="1Lj6YZ" id="60PTWgryNTZ" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgryOdP" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgryO$L" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgryKRj" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgryKRk" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgryKRl" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgryKR9" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgryKRm" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgryKRn" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgryKR9" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgryKRo" role="2OqNvi" />
+                </node>
+                <node concept="1oAbNU" id="60PTWgrAaAO" role="3K4GZi" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="_tjkj" id="cJpacq426p" role="3EZMnx">

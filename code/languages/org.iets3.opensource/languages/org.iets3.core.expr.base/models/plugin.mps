@@ -15252,6 +15252,140 @@
       </node>
       <node concept="3clFbS" id="60PTWgpZMTF" role="3clF47" />
     </node>
+    <node concept="2tJIrI" id="60PTWgq7aHl" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgq7bk$" role="jymVt">
+      <property role="TrG5h" value="isWrapperCellSideTransformationActivated" />
+      <node concept="3clFbS" id="60PTWgq7bk_" role="3clF47" />
+      <node concept="3Tm1VV" id="60PTWgq7bkA" role="1B3o_S" />
+      <node concept="10P_77" id="60PTWgq7bkB" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgq7bkC" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgq7bkD" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgq7bkG" role="3clF46">
+        <property role="TrG5h" value="wrappedNode" />
+        <node concept="3Tqbb2" id="60PTWgq7bkH" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgq7luk" role="3clF46">
+        <property role="TrG5h" value="subconcept" />
+        <node concept="3bZ5Sz" id="60PTWgq7mtR" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgq7mWs" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgq7o0j" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgq7gZM" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgq7bkl" role="jymVt">
+      <property role="TrG5h" value="isWrapperCellSubstitutionActivated" />
+      <node concept="3clFbS" id="60PTWgq7bkm" role="3clF47" />
+      <node concept="3Tm1VV" id="60PTWgq7bkn" role="1B3o_S" />
+      <node concept="10P_77" id="60PTWgq7bko" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgq7bkp" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgq7bkq" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgq7bkr" role="3clF46">
+        <property role="TrG5h" value="expectedConcept" />
+        <node concept="3bZ5Sz" id="60PTWgq7bks" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgq7tvi" role="3clF46">
+        <property role="TrG5h" value="wrappedConcept" />
+        <node concept="3bZ5Sz" id="60PTWgq7u3a" role="1tU5fm" />
+        <node concept="2AHcQZ" id="60PTWgquf_r" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="60PTWgq7vR9" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgq7wtB" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+        <node concept="2AHcQZ" id="60PTWgqugw2" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgqXKJq" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgqXNLq" role="jymVt">
+      <property role="TrG5h" value="wrapperCellSideTransformationPostProcess" />
+      <node concept="3clFbS" id="60PTWgqXNLt" role="3clF47" />
+      <node concept="3Tm1VV" id="60PTWgqXNLu" role="1B3o_S" />
+      <node concept="3cqZAl" id="60PTWgqXLv1" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgqY4jd" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgqY5jJ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqXOCL" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="60PTWgqXOCK" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqXPdF" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgqXPRg" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgqXRyu" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgqXQTX" role="jymVt">
+      <property role="TrG5h" value="wrapperCellSubstitutionPostProcess" />
+      <node concept="3clFbS" id="60PTWgqXQTY" role="3clF47" />
+      <node concept="3Tm1VV" id="60PTWgqXQTZ" role="1B3o_S" />
+      <node concept="3cqZAl" id="60PTWgqXQU0" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgqY5Tu" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgqY6he" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqXQU1" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="60PTWgqXQU2" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqXQU3" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgqXQU4" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgry5Pz" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgry9kT" role="jymVt">
+      <property role="TrG5h" value="getWrapperCellSubstitutionDescriptionText" />
+      <node concept="3clFbS" id="60PTWgry9kW" role="3clF47" />
+      <node concept="3Tm1VV" id="60PTWgry9kX" role="1B3o_S" />
+      <node concept="17QB3L" id="60PTWgry6OC" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgryaod" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgryaoc" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgrydC1" role="3clF46">
+        <property role="TrG5h" value="wrappedNode" />
+        <node concept="3Tqbb2" id="60PTWgryfZt" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgrygDY" role="3clF46">
+        <property role="TrG5h" value="wrappedConcept" />
+        <node concept="3bZ5Sz" id="60PTWgryi66" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgryjtw" role="3clF46">
+        <property role="TrG5h" value="subconcept" />
+        <node concept="3bZ5Sz" id="60PTWgrylq0" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgrymRU" role="3clF46">
+        <property role="TrG5h" value="originalText" />
+        <node concept="17QB3L" id="60PTWgryoLj" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgrysJX" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgrytFv" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgrybEm" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="e1lyfcc4f2" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3yPQSK6Hg5I">
@@ -15574,6 +15708,171 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="60PTWgpZWx6" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgqc_fe" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgqcyDq" role="jymVt">
+      <property role="TrG5h" value="isWrapperCellSideTransformationActivated" />
+      <node concept="3Tm1VV" id="60PTWgqcyDs" role="1B3o_S" />
+      <node concept="10P_77" id="60PTWgqcyDt" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgqcyDu" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgqcyDv" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqcyDw" role="3clF46">
+        <property role="TrG5h" value="wrappedNode" />
+        <node concept="3Tqbb2" id="60PTWgqcyDx" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqcyDy" role="3clF46">
+        <property role="TrG5h" value="subconcept" />
+        <node concept="3bZ5Sz" id="60PTWgqcyDz" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqcyD$" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgqcyD_" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="60PTWgqcyDA" role="3clF47">
+        <node concept="3clFbF" id="60PTWgqcyDD" role="3cqZAp">
+          <node concept="3clFbT" id="60PTWgqcCx7" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgqcyDB" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgqcAon" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgqcyDE" role="jymVt">
+      <property role="TrG5h" value="isWrapperCellSubstitutionActivated" />
+      <node concept="3Tm1VV" id="60PTWgqcyDG" role="1B3o_S" />
+      <node concept="10P_77" id="60PTWgqcyDH" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgqcyDI" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgqcyDJ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqcyDK" role="3clF46">
+        <property role="TrG5h" value="expectedConcept" />
+        <node concept="3bZ5Sz" id="60PTWgqcyDL" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqcyDM" role="3clF46">
+        <property role="TrG5h" value="wrappedConcept" />
+        <node concept="3bZ5Sz" id="60PTWgqcyDN" role="1tU5fm" />
+        <node concept="2AHcQZ" id="60PTWgqun5t" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="60PTWgqcyDO" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgqcyDP" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+        <node concept="2AHcQZ" id="60PTWgqupkh" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="60PTWgqcyDQ" role="3clF47">
+        <node concept="3clFbF" id="60PTWgqcyDT" role="3cqZAp">
+          <node concept="3clFbT" id="60PTWgqcyDS" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgqcyDR" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgqXYns" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgqXVDl" role="jymVt">
+      <property role="TrG5h" value="wrapperCellSideTransformationPostProcess" />
+      <node concept="3Tm1VV" id="60PTWgqXVDn" role="1B3o_S" />
+      <node concept="3cqZAl" id="60PTWgqXVDo" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgqY8KA" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgqYa_6" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqXVDp" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="60PTWgqXVDq" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqXVDr" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgqXVDs" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="60PTWgqXVDt" role="3clF47" />
+      <node concept="2AHcQZ" id="60PTWgqXVDu" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgqXZF5" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgqXVDv" role="jymVt">
+      <property role="TrG5h" value="wrapperCellSubstitutionPostProcess" />
+      <node concept="3Tm1VV" id="60PTWgqXVDx" role="1B3o_S" />
+      <node concept="3cqZAl" id="60PTWgqXVDy" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgqYbTI" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgqYdL_" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqXVDz" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="60PTWgqXVD$" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgqXVD_" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgqXVDA" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="60PTWgqXVDB" role="3clF47" />
+      <node concept="2AHcQZ" id="60PTWgqXVDC" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="60PTWgry_R6" role="jymVt" />
+    <node concept="3clFb_" id="60PTWgryy9d" role="jymVt">
+      <property role="TrG5h" value="getWrapperCellSubstitutionDescriptionText" />
+      <node concept="3Tm1VV" id="60PTWgryy9f" role="1B3o_S" />
+      <node concept="17QB3L" id="60PTWgryy9g" role="3clF45" />
+      <node concept="37vLTG" id="60PTWgryy9h" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="60PTWgryy9i" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgryy9j" role="3clF46">
+        <property role="TrG5h" value="wrappedNode" />
+        <node concept="3Tqbb2" id="60PTWgryy9k" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgryy9l" role="3clF46">
+        <property role="TrG5h" value="wrappedConcept" />
+        <node concept="3bZ5Sz" id="60PTWgryy9m" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgryy9n" role="3clF46">
+        <property role="TrG5h" value="subconcept" />
+        <node concept="3bZ5Sz" id="60PTWgryy9o" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgryy9p" role="3clF46">
+        <property role="TrG5h" value="originalText" />
+        <node concept="17QB3L" id="60PTWgryy9q" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="60PTWgryy9r" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="60PTWgryy9s" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgryy9t" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3clFbS" id="60PTWgryy9u" role="3clF47">
+        <node concept="3clFbF" id="60PTWgryIjC" role="3cqZAp">
+          <node concept="10Nm6u" id="60PTWgryIjB" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="60PTWgryy9v" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
