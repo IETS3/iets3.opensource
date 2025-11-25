@@ -400,9 +400,11 @@
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
+      <concept id="1954385921685784800" name="com.mbeddr.mpsutil.grammarcells.structure.PostprocessFunction" flags="ig" index="315t4" />
       <concept id="2523386941174202656" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SubstituteCondition_parentNode" flags="ng" index="2gy9SH" />
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="7011566904921631440" name="postprocess" index="vWNKz" />
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
@@ -771,6 +773,34 @@
               </node>
             </node>
           </node>
+          <node concept="315t4" id="60PTWgpvLMy" role="vWNKz">
+            <node concept="3clFbS" id="60PTWgpvLMz" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgpvLRu" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgpvLRw" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgpvLRx" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgpvLRy" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                    <node concept="2YIFZM" id="60PTWgpvLRz" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgpxioI" role="37wK5m">
+                        <ref role="35c_gD" to="av4b:ub9nkyHAb7" resolve="TestCase" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgpxiqs" role="37wK5m">
+                        <ref role="359W_E" to="av4b:ub9nkyHAb7" resolve="TestCase" />
+                        <ref role="359W_F" to="av4b:1cd9HYWxxA0" resolve="setup" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgpvLRA" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgpvLRB" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="ub9nkyHAdw" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -934,6 +964,34 @@
                   </node>
                   <node concept="Xl_RD" id="1ZlHRbgqQZa" role="3K4GZi">
                     <property role="Xl_RC" value="add an optional name for the assert test item" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="315t4" id="60PTWgpvG2g" role="vWNKz">
+            <node concept="3clFbS" id="60PTWgpvG2h" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgpvG2j" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgpuEPD" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgpuEPE" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgpuEPF" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                    <node concept="2YIFZM" id="60PTWgpuEPG" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgpxd92" role="37wK5m">
+                        <ref role="35c_gD" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgpxdaK" role="37wK5m">
+                        <ref role="359W_E" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                        <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgpuEPJ" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgpuEPK" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -1936,6 +1994,34 @@
               </node>
             </node>
           </node>
+          <node concept="315t4" id="60PTWgpvH5g" role="vWNKz">
+            <node concept="3clFbS" id="60PTWgpvH5h" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgpvH5n" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgpvH5p" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgpvH5q" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgpvH5r" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                    <node concept="2YIFZM" id="60PTWgpvH5s" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgpxdXm" role="37wK5m">
+                        <ref role="35c_gD" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgpxdZ4" role="37wK5m">
+                        <ref role="359W_E" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                        <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgpvH5v" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgpvH5w" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3tD6jV" id="6HHp2Wn5dNr" role="3F10Kt">
           <ref role="3tD7wE" to="z0fb:7ND7w4acsmT" resolve="_grid-layout-flatten" />
@@ -2266,6 +2352,34 @@
                 </node>
                 <node concept="Xl_RD" id="1ZlHRbgqSL2" role="3K4GZi">
                   <property role="Xl_RC" value="add an error message for the constraint failed test item" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgpvJkU" role="vWNKz">
+          <node concept="3clFbS" id="60PTWgpvJkV" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgpvJl1" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgpvJl3" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgpvJl4" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgpvJl5" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                  <node concept="2YIFZM" id="60PTWgpvJl6" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgpxgdm" role="37wK5m">
+                      <ref role="35c_gD" to="av4b:78hTg1$THIv" resolve="ConstraintFailedTestItem" />
+                    </node>
+                    <node concept="355D3s" id="60PTWgpxgf4" role="37wK5m">
+                      <ref role="355D3t" to="av4b:78hTg1$THIv" resolve="ConstraintFailedTestItem" />
+                      <ref role="355D3u" to="av4b:5bElvpN178O" resolve="errmsg" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgpvJl9" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgpvJla" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -3360,6 +3474,34 @@
                 </node>
                 <node concept="Xl_RD" id="1ZlHRbgqTvQ" role="3K4GZi">
                   <property role="Xl_RC" value="add an error message for the invalid value test item" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgpvKAe" role="vWNKz">
+          <node concept="3clFbS" id="60PTWgpvKAf" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgpvKAl" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgpvKAn" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgpvKAo" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgpvKAp" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                  <node concept="2YIFZM" id="60PTWgpvKAq" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgpxhpL" role="37wK5m">
+                      <ref role="35c_gD" to="av4b:4e_7uAt7oTg" resolve="InvalidValueTestItem" />
+                    </node>
+                    <node concept="355D3s" id="60PTWgpxhrv" role="37wK5m">
+                      <ref role="355D3t" to="av4b:4e_7uAt7oTg" resolve="InvalidValueTestItem" />
+                      <ref role="355D3u" to="av4b:4e_7uAt7oTi" resolve="errmsg" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgpvKAt" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgpvKAu" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -5991,6 +6133,34 @@
                 </node>
               </node>
             </node>
+            <node concept="315t4" id="60PTWgpvIhp" role="vWNKz">
+              <node concept="3clFbS" id="60PTWgpvIhq" role="2VODD2">
+                <node concept="3clFbF" id="60PTWgpvIhs" role="3cqZAp">
+                  <node concept="2OqwBi" id="60PTWgpvIhu" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgpvIhv" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgpvIhw" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                      <node concept="2YIFZM" id="60PTWgpvIhx" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgpxeVf" role="37wK5m">
+                          <ref role="35c_gD" to="av4b:5Pgo_AS3Joq" resolve="AssertThatTestItem" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgpxf0P" role="37wK5m">
+                          <ref role="359W_E" to="av4b:5Pgo_AS3Joq" resolve="AssertThatTestItem" />
+                          <ref role="359W_F" to="4kwy:cJpacq40jC" resolve="optionalName" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgpvIh$" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgpvIh_" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="l2Vlx" id="39MbPJmCdGi" role="2iSdaV" />
           <node concept="3tD6jV" id="39MbPJmCdGj" role="3F10Kt">
@@ -6236,6 +6406,34 @@
                 </node>
                 <node concept="Xl_RD" id="1ZlHRbgqTIM" role="3K4GZi">
                   <property role="Xl_RC" value="add a value matcher for the is invalid matcher" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgpvLdv" role="vWNKz">
+          <node concept="3clFbS" id="60PTWgpvLdw" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgpvLdy" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgpvLd$" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgpvLd_" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgpvLdA" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                  <node concept="2YIFZM" id="60PTWgpvLdB" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgpxhN_" role="37wK5m">
+                      <ref role="35c_gD" to="av4b:5Pgo_ASbFvn" resolve="IsInvalid" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgpxhPj" role="37wK5m">
+                      <ref role="359W_E" to="av4b:5Pgo_ASbFvn" resolve="IsInvalid" />
+                      <ref role="359W_F" to="av4b:5Pgo_ASvSWM" resolve="messageMatcher" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgpvLdE" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgpvLdF" role="37wK5m" />
                 </node>
               </node>
             </node>

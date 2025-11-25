@@ -2425,6 +2425,31 @@
           </node>
           <node concept="315t4" id="5iivLmCBqfD" role="vWNKz">
             <node concept="3clFbS" id="5iivLmCBqfE" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgpw52w" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgpuEPD" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgpuEPE" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgpuEPF" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                    <node concept="2YIFZM" id="60PTWgpuEPG" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgpxzs4" role="37wK5m">
+                        <ref role="35c_gD" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgpxztM" role="37wK5m">
+                        <ref role="359W_E" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
+                        <ref role="359W_F" to="4ndm:4onczE6iX1P" resolve="extendedFMC" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgpuEPJ" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgpuEPK" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="60PTWgpw5js" role="3cqZAp" />
               <node concept="3clFbF" id="6FzpV0drZ1G" role="3cqZAp">
                 <node concept="2OqwBi" id="6FzpV0ds37z" role="3clFbG">
                   <node concept="2OqwBi" id="6FzpV0ds0$_" role="2Oq$k0">

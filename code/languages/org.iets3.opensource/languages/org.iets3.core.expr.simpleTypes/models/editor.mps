@@ -301,6 +301,7 @@
       </concept>
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="7011566904921631440" name="postprocess" index="vWNKz" />
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
@@ -814,6 +815,34 @@
             </node>
           </node>
         </node>
+        <node concept="315t4" id="60PTWgpvvtm" role="vWNKz">
+          <node concept="3clFbS" id="60PTWgpvvtn" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgpvvtt" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgpuEPD" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgpuEPE" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgpuEPF" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                  <node concept="2YIFZM" id="60PTWgpuEPG" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgpx1MF" role="37wK5m">
+                      <ref role="35c_gD" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgpx1RQ" role="37wK5m">
+                      <ref role="359W_E" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
+                      <ref role="359W_F" to="5qo5:19PglA20qXS" resolve="range" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgpuEPJ" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgpuEPK" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="_tjkj" id="19PglA25VTf" role="3EZMnx">
         <node concept="3F1sOY" id="19PglA25VTL" role="_tjki">
@@ -917,6 +946,34 @@
                 </node>
                 <node concept="Xl_RD" id="1ZlHRbgqLtu" role="3K4GZi">
                   <property role="Xl_RC" value="add a precision for the number type" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgpvvFS" role="vWNKz">
+          <node concept="3clFbS" id="60PTWgpvvFT" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgpvvFZ" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgpvvG1" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgpvvG2" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgpvvG3" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                  <node concept="2YIFZM" id="60PTWgpvvG4" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgpx1V5" role="37wK5m">
+                      <ref role="35c_gD" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgpx1WN" role="37wK5m">
+                      <ref role="359W_E" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
+                      <ref role="359W_F" to="5qo5:19PglA20qY9" resolve="prec" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgpvvG7" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgpvvG8" role="37wK5m" />
                 </node>
               </node>
             </node>
