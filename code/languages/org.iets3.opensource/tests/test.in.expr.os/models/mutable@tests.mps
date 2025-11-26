@@ -88,11 +88,6 @@
         <reference id="24388123200566265" name="param" index="1GjhsB" />
       </concept>
     </language>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util">
       <concept id="4214990435115877128" name="org.iets3.core.expr.util.structure.DecTab" flags="ng" index="UJIhK">
         <child id="4214990435115877193" name="contents" index="UJIgL" />
@@ -2373,9 +2368,6 @@
     </node>
     <node concept="_ixoA" id="4IV0h48dZXj" role="_iOnB" />
     <node concept="_ixoA" id="4IV0h48e00O" role="_iOnB" />
-  </node>
-  <node concept="2XOHcx" id="4rZeNQ6M9GV">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
   <node concept="_iOnU" id="35BERWyOOpU">
     <property role="TrG5h" value="mutable_globals" />
