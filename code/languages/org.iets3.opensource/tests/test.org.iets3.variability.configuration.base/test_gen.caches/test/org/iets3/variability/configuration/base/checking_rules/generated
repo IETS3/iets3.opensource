@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-xngqts47xssrgrl7q00fa9ugxjas99">
+  <files names="ConfigNotComplete_Test.java:DuplicateName_Test.java:EnforceSubFeatureDecisions_Test.java:ErrorWhenCardinalityMissing_Test.java:FeatureConfigurationInheritance_Test.java:FixInconsistentFeatureReference_Test.java:InconsistentFeatureReferences_Test.java:MissingAttributeValueError_Test.java:NonUniqueFeatureReferences_Test.java:NotifyAdaptIsNecessaryWithNestedModels_Test.java:NotifyAdaptIsNecessary_Test.java:UpdateAllRelatedConfigurations_Test.java:WarnWhenCardinalitiesHasTooFewItems_Test.java:WarnWhenCardinalitiesHasTooManyItems_Test.java:WarningUnselectedFeature_Test.java" />
+</product>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="41wwthaj7wfmlhsns3iej4lbjb2cgy0">
+  <files names="A_DecisionsSimple_Test.java:A_statemachinesBasic_Test.java:B_DecisionsWithTimeout_Test.java:B_statemachinesAuto_Test.java:C_DecisionsWithYesNo_Test.java:C_statemachinesHierarchical_Test.java:C_statemachinesInterceptor_Test.java:D_Salesprocess_Test.java:E_SalesprocessMultiDectab_Test.java:E_SalesprocessMulti_Test.java:F_DecisionsWithDynamicGroup_Test.java:G_DecisionsWithDynamicGroupAndInterceptor_Test.java:H_Gameplay_Test.java:REPLDemo_Test.java:Time_Test.java:boxes_Test.java:defaultValues_Test.java:mutable_Demo_Test.java:mutable_boxes_Test.java:mutable_globals_Test.java:mutable_tx2_Test.java:mutable_tx3_Test.java:mutable_tx_Test.java:partyDefaultValues_Test.java:updateCheck_Test.java" />
+</product>
+

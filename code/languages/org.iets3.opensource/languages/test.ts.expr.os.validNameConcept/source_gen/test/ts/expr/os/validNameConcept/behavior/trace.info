@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <root>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="14,0,53,0" name="test.ts.expr.os.validNameConcept.behavior.BehaviorAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:53be11f3-57c5-4686-bb2a-0b15a13b560c(test.ts.expr.os.validNameConcept.behavior)/7868465185796786651">
+    <file name="ValidName_UmlautsOn_ParagraphOn_ApostropheOn__BehaviorDescriptor.java">
+      <node id="7868465185796786651" at="21,0,22,0" concept="6" trace="CONCEPT" />
+      <node id="7868465185796786651" at="23,0,24,0" concept="6" trace="allowUmlaute_id5YygIlbih$m" />
+      <node id="7868465185796786651" at="24,0,25,0" concept="6" trace="allowParagraph_id4ZH31cjGRan" />
+      <node id="7868465185796786651" at="25,0,26,0" concept="6" trace="allowApostrophe_id6OMpQn6QxQe" />
+      <node id="7868465185796786651" at="27,0,28,0" concept="6" trace="BH_METHODS" />
+      <node id="7868465185796795743" at="32,100,33,16" concept="5" />
+      <node id="7868465185796797361" at="35,102,36,16" concept="5" />
+      <node id="7868465185796796353" at="38,103,39,16" concept="5" />
+      <node id="7868465185796786651" at="46,114,47,21" concept="1" />
+      <node id="7868465185796786651" at="51,114,52,49" concept="4" />
+      <node id="7868465185796786651" at="53,26,54,56" concept="9" />
+      <node id="7868465185796786651" at="57,14,58,58" concept="9" />
+      <node id="7868465185796786651" at="63,128,64,49" concept="4" />
+      <node id="7868465185796786651" at="65,26,66,56" concept="9" />
+      <node id="7868465185796786651" at="69,13,70,67" concept="5" />
+      <node id="7868465185796786651" at="71,13,72,69" concept="5" />
+      <node id="7868465185796786651" at="73,13,74,70" concept="5" />
+      <node id="7868465185796786651" at="75,14,76,58" concept="9" />
+      <node id="7868465185796786651" at="82,48,83,22" concept="5" />
+      <node id="7868465185796786651" at="88,40,89,19" concept="5" />
+      <node id="7868465185796786651" at="29,0,31,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7868465185796786651" at="42,0,44,0" concept="0" trace="ValidName_UmlautsOn_ParagraphOn_ApostropheOn__BehaviorDescriptor#()V" />
+      <node id="7868465185796786651" at="32,0,35,0" concept="7" trace="allowUmlaute_id5YygIlbih$m#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796786651" at="35,0,38,0" concept="7" trace="allowParagraph_id4ZH31cjGRan#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796786651" at="38,0,41,0" concept="7" trace="allowApostrophe_id6OMpQn6QxQe#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796786651" at="52,49,55,5" concept="2" />
+      <node id="7868465185796786651" at="64,49,67,5" concept="2" />
+      <node id="7868465185796786651" at="45,0,49,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="7868465185796786651" at="55,5,59,5" concept="8" />
+      <node id="7868465185796786651" at="80,0,85,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="7868465185796786651" at="86,0,91,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7868465185796786651" at="67,5,77,5" concept="8" />
+      <node id="7868465185796786651" at="50,0,61,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="7868465185796786651" at="62,0,79,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="7868465185796786651" at="29,63,29,63" />
+      <scope id="7868465185796786651" at="42,82,42,82" />
+      <scope id="7868465185796795232" at="32,100,33,16" />
+      <scope id="7868465185796796047" at="35,102,36,16" />
+      <scope id="7868465185796796348" at="38,103,39,16" />
+      <scope id="7868465185796786651" at="46,114,47,21" />
+      <scope id="7868465185796786651" at="53,26,54,56" />
+      <scope id="7868465185796786651" at="57,14,58,58" />
+      <scope id="7868465185796786651" at="65,26,66,56" />
+      <scope id="7868465185796786651" at="69,13,70,67" />
+      <scope id="7868465185796786651" at="71,13,72,69" />
+      <scope id="7868465185796786651" at="73,13,74,70" />
+      <scope id="7868465185796786651" at="75,14,76,58" />
+      <scope id="7868465185796786651" at="82,48,83,22" />
+      <scope id="7868465185796786651" at="88,40,89,19" />
+      <scope id="7868465185796786651" at="29,0,31,0">
+        <var name="__thisNode__" id="7868465185796786651" />
+      </scope>
+      <scope id="7868465185796786651" at="42,0,44,0" />
+      <scope id="7868465185796786651" at="32,0,35,0">
+        <var name="__thisConcept__" id="7868465185796786651" />
+      </scope>
+      <scope id="7868465185796786651" at="35,0,38,0">
+        <var name="__thisConcept__" id="7868465185796786651" />
+      </scope>
+      <scope id="7868465185796786651" at="38,0,41,0">
+        <var name="__thisConcept__" id="7868465185796786651" />
+      </scope>
+      <scope id="7868465185796786651" at="45,0,49,0">
+        <var name="constructor" id="7868465185796786651" />
+        <var name="node" id="7868465185796786651" />
+        <var name="parameters" id="7868465185796786651" />
+      </scope>
+      <scope id="7868465185796786651" at="80,0,85,0" />
+      <scope id="7868465185796786651" at="86,0,91,0" />
+      <scope id="7868465185796786651" at="51,114,59,5">
+        <var name="methodIndex" id="7868465185796786651" />
+      </scope>
+      <scope id="7868465185796786651" at="50,0,61,0">
+        <var name="method" id="7868465185796786651" />
+        <var name="node" id="7868465185796786651" />
+        <var name="parameters" id="7868465185796786651" />
+      </scope>
+      <scope id="7868465185796786651" at="63,128,77,5">
+        <var name="methodIndex" id="7868465185796786651" />
+      </scope>
+      <scope id="7868465185796786651" at="62,0,79,0">
+        <var name="concept" id="7868465185796786651" />
+        <var name="method" id="7868465185796786651" />
+        <var name="parameters" id="7868465185796786651" />
+      </scope>
+      <unit id="7868465185796786651" at="20,0,92,0" name="test.ts.expr.os.validNameConcept.behavior.ValidName_UmlautsOn_ParagraphOn_ApostropheOn__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:53be11f3-57c5-4686-bb2a-0b15a13b560c(test.ts.expr.os.validNameConcept.behavior)/7868465185796797869">
+    <file name="ValidName_UmlautsOn_ParagraphOn_ApostropheOff__BehaviorDescriptor.java">
+      <node id="7868465185796797869" at="21,0,22,0" concept="6" trace="CONCEPT" />
+      <node id="7868465185796797869" at="23,0,24,0" concept="6" trace="allowUmlaute_id5YygIlbih$m" />
+      <node id="7868465185796797869" at="24,0,25,0" concept="6" trace="allowParagraph_id4ZH31cjGRan" />
+      <node id="7868465185796797869" at="25,0,26,0" concept="6" trace="allowApostrophe_id6OMpQn6QxQe" />
+      <node id="7868465185796797869" at="27,0,28,0" concept="6" trace="BH_METHODS" />
+      <node id="7868465185796799717" at="32,100,33,16" concept="5" />
+      <node id="7868465185796798397" at="35,102,36,16" concept="5" />
+      <node id="7868465185796799200" at="38,103,39,17" concept="5" />
+      <node id="7868465185796797869" at="46,114,47,21" concept="1" />
+      <node id="7868465185796797869" at="51,114,52,49" concept="4" />
+      <node id="7868465185796797869" at="53,26,54,56" concept="9" />
+      <node id="7868465185796797869" at="57,14,58,58" concept="9" />
+      <node id="7868465185796797869" at="63,128,64,49" concept="4" />
+      <node id="7868465185796797869" at="65,26,66,56" concept="9" />
+      <node id="7868465185796797869" at="69,13,70,67" concept="5" />
+      <node id="7868465185796797869" at="71,13,72,69" concept="5" />
+      <node id="7868465185796797869" at="73,13,74,70" concept="5" />
+      <node id="7868465185796797869" at="75,14,76,58" concept="9" />
+      <node id="7868465185796797869" at="82,48,83,22" concept="5" />
+      <node id="7868465185796797869" at="88,40,89,19" concept="5" />
+      <node id="7868465185796797869" at="29,0,31,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7868465185796797869" at="42,0,44,0" concept="0" trace="ValidName_UmlautsOn_ParagraphOn_ApostropheOff__BehaviorDescriptor#()V" />
+      <node id="7868465185796797869" at="32,0,35,0" concept="7" trace="allowUmlaute_id5YygIlbih$m#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796797869" at="35,0,38,0" concept="7" trace="allowParagraph_id4ZH31cjGRan#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796797869" at="38,0,41,0" concept="7" trace="allowApostrophe_id6OMpQn6QxQe#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796797869" at="52,49,55,5" concept="2" />
+      <node id="7868465185796797869" at="64,49,67,5" concept="2" />
+      <node id="7868465185796797869" at="45,0,49,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="7868465185796797869" at="55,5,59,5" concept="8" />
+      <node id="7868465185796797869" at="80,0,85,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="7868465185796797869" at="86,0,91,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7868465185796797869" at="67,5,77,5" concept="8" />
+      <node id="7868465185796797869" at="50,0,61,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="7868465185796797869" at="62,0,79,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="7868465185796797869" at="29,63,29,63" />
+      <scope id="7868465185796797869" at="42,83,42,83" />
+      <scope id="7868465185796797886" at="32,100,33,16" />
+      <scope id="7868465185796798392" at="35,102,36,16" />
+      <scope id="7868465185796798901" at="38,103,39,17" />
+      <scope id="7868465185796797869" at="46,114,47,21" />
+      <scope id="7868465185796797869" at="53,26,54,56" />
+      <scope id="7868465185796797869" at="57,14,58,58" />
+      <scope id="7868465185796797869" at="65,26,66,56" />
+      <scope id="7868465185796797869" at="69,13,70,67" />
+      <scope id="7868465185796797869" at="71,13,72,69" />
+      <scope id="7868465185796797869" at="73,13,74,70" />
+      <scope id="7868465185796797869" at="75,14,76,58" />
+      <scope id="7868465185796797869" at="82,48,83,22" />
+      <scope id="7868465185796797869" at="88,40,89,19" />
+      <scope id="7868465185796797869" at="29,0,31,0">
+        <var name="__thisNode__" id="7868465185796797869" />
+      </scope>
+      <scope id="7868465185796797869" at="42,0,44,0" />
+      <scope id="7868465185796797869" at="32,0,35,0">
+        <var name="__thisConcept__" id="7868465185796797869" />
+      </scope>
+      <scope id="7868465185796797869" at="35,0,38,0">
+        <var name="__thisConcept__" id="7868465185796797869" />
+      </scope>
+      <scope id="7868465185796797869" at="38,0,41,0">
+        <var name="__thisConcept__" id="7868465185796797869" />
+      </scope>
+      <scope id="7868465185796797869" at="45,0,49,0">
+        <var name="constructor" id="7868465185796797869" />
+        <var name="node" id="7868465185796797869" />
+        <var name="parameters" id="7868465185796797869" />
+      </scope>
+      <scope id="7868465185796797869" at="80,0,85,0" />
+      <scope id="7868465185796797869" at="86,0,91,0" />
+      <scope id="7868465185796797869" at="51,114,59,5">
+        <var name="methodIndex" id="7868465185796797869" />
+      </scope>
+      <scope id="7868465185796797869" at="50,0,61,0">
+        <var name="method" id="7868465185796797869" />
+        <var name="node" id="7868465185796797869" />
+        <var name="parameters" id="7868465185796797869" />
+      </scope>
+      <scope id="7868465185796797869" at="63,128,77,5">
+        <var name="methodIndex" id="7868465185796797869" />
+      </scope>
+      <scope id="7868465185796797869" at="62,0,79,0">
+        <var name="concept" id="7868465185796797869" />
+        <var name="method" id="7868465185796797869" />
+        <var name="parameters" id="7868465185796797869" />
+      </scope>
+      <unit id="7868465185796797869" at="20,0,92,0" name="test.ts.expr.os.validNameConcept.behavior.ValidName_UmlautsOn_ParagraphOn_ApostropheOff__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:53be11f3-57c5-4686-bb2a-0b15a13b560c(test.ts.expr.os.validNameConcept.behavior)/7868465185796799736">
+    <file name="ValidName_UmlautsOn_ParagraphOff_ApostropheOn__BehaviorDescriptor.java">
+      <node id="7868465185796799736" at="21,0,22,0" concept="6" trace="CONCEPT" />
+      <node id="7868465185796799736" at="23,0,24,0" concept="6" trace="allowUmlaute_id5YygIlbih$m" />
+      <node id="7868465185796799736" at="24,0,25,0" concept="6" trace="allowParagraph_id4ZH31cjGRan" />
+      <node id="7868465185796799736" at="25,0,26,0" concept="6" trace="allowApostrophe_id6OMpQn6QxQe" />
+      <node id="7868465185796799736" at="27,0,28,0" concept="6" trace="BH_METHODS" />
+      <node id="7868465185796801166" at="32,100,33,16" concept="5" />
+      <node id="7868465185796800264" at="35,102,36,17" concept="5" />
+      <node id="7868465185796800578" at="38,103,39,16" concept="5" />
+      <node id="7868465185796799736" at="46,114,47,21" concept="1" />
+      <node id="7868465185796799736" at="51,114,52,49" concept="4" />
+      <node id="7868465185796799736" at="53,26,54,56" concept="9" />
+      <node id="7868465185796799736" at="57,14,58,58" concept="9" />
+      <node id="7868465185796799736" at="63,128,64,49" concept="4" />
+      <node id="7868465185796799736" at="65,26,66,56" concept="9" />
+      <node id="7868465185796799736" at="69,13,70,67" concept="5" />
+      <node id="7868465185796799736" at="71,13,72,69" concept="5" />
+      <node id="7868465185796799736" at="73,13,74,70" concept="5" />
+      <node id="7868465185796799736" at="75,14,76,58" concept="9" />
+      <node id="7868465185796799736" at="82,48,83,22" concept="5" />
+      <node id="7868465185796799736" at="88,40,89,19" concept="5" />
+      <node id="7868465185796799736" at="29,0,31,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7868465185796799736" at="42,0,44,0" concept="0" trace="ValidName_UmlautsOn_ParagraphOff_ApostropheOn__BehaviorDescriptor#()V" />
+      <node id="7868465185796799736" at="32,0,35,0" concept="7" trace="allowUmlaute_id5YygIlbih$m#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796799736" at="35,0,38,0" concept="7" trace="allowParagraph_id4ZH31cjGRan#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796799736" at="38,0,41,0" concept="7" trace="allowApostrophe_id6OMpQn6QxQe#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796799736" at="52,49,55,5" concept="2" />
+      <node id="7868465185796799736" at="64,49,67,5" concept="2" />
+      <node id="7868465185796799736" at="45,0,49,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="7868465185796799736" at="55,5,59,5" concept="8" />
+      <node id="7868465185796799736" at="80,0,85,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="7868465185796799736" at="86,0,91,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7868465185796799736" at="67,5,77,5" concept="8" />
+      <node id="7868465185796799736" at="50,0,61,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="7868465185796799736" at="62,0,79,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="7868465185796799736" at="29,63,29,63" />
+      <scope id="7868465185796799736" at="42,83,42,83" />
+      <scope id="7868465185796800643" at="32,100,33,16" />
+      <scope id="7868465185796799753" at="35,102,36,17" />
+      <scope id="7868465185796800289" at="38,103,39,16" />
+      <scope id="7868465185796799736" at="46,114,47,21" />
+      <scope id="7868465185796799736" at="53,26,54,56" />
+      <scope id="7868465185796799736" at="57,14,58,58" />
+      <scope id="7868465185796799736" at="65,26,66,56" />
+      <scope id="7868465185796799736" at="69,13,70,67" />
+      <scope id="7868465185796799736" at="71,13,72,69" />
+      <scope id="7868465185796799736" at="73,13,74,70" />
+      <scope id="7868465185796799736" at="75,14,76,58" />
+      <scope id="7868465185796799736" at="82,48,83,22" />
+      <scope id="7868465185796799736" at="88,40,89,19" />
+      <scope id="7868465185796799736" at="29,0,31,0">
+        <var name="__thisNode__" id="7868465185796799736" />
+      </scope>
+      <scope id="7868465185796799736" at="42,0,44,0" />
+      <scope id="7868465185796799736" at="32,0,35,0">
+        <var name="__thisConcept__" id="7868465185796799736" />
+      </scope>
+      <scope id="7868465185796799736" at="35,0,38,0">
+        <var name="__thisConcept__" id="7868465185796799736" />
+      </scope>
+      <scope id="7868465185796799736" at="38,0,41,0">
+        <var name="__thisConcept__" id="7868465185796799736" />
+      </scope>
+      <scope id="7868465185796799736" at="45,0,49,0">
+        <var name="constructor" id="7868465185796799736" />
+        <var name="node" id="7868465185796799736" />
+        <var name="parameters" id="7868465185796799736" />
+      </scope>
+      <scope id="7868465185796799736" at="80,0,85,0" />
+      <scope id="7868465185796799736" at="86,0,91,0" />
+      <scope id="7868465185796799736" at="51,114,59,5">
+        <var name="methodIndex" id="7868465185796799736" />
+      </scope>
+      <scope id="7868465185796799736" at="50,0,61,0">
+        <var name="method" id="7868465185796799736" />
+        <var name="node" id="7868465185796799736" />
+        <var name="parameters" id="7868465185796799736" />
+      </scope>
+      <scope id="7868465185796799736" at="63,128,77,5">
+        <var name="methodIndex" id="7868465185796799736" />
+      </scope>
+      <scope id="7868465185796799736" at="62,0,79,0">
+        <var name="concept" id="7868465185796799736" />
+        <var name="method" id="7868465185796799736" />
+        <var name="parameters" id="7868465185796799736" />
+      </scope>
+      <unit id="7868465185796799736" at="20,0,92,0" name="test.ts.expr.os.validNameConcept.behavior.ValidName_UmlautsOn_ParagraphOff_ApostropheOn__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:53be11f3-57c5-4686-bb2a-0b15a13b560c(test.ts.expr.os.validNameConcept.behavior)/7868465185796801414">
+    <file name="ValidName_UmlautsOn_ParagraphOff_ApostropheOff__BehaviorDescriptor.java">
+      <node id="7868465185796801414" at="21,0,22,0" concept="6" trace="CONCEPT" />
+      <node id="7868465185796801414" at="23,0,24,0" concept="6" trace="allowUmlaute_id5YygIlbih$m" />
+      <node id="7868465185796801414" at="24,0,25,0" concept="6" trace="allowParagraph_id4ZH31cjGRan" />
+      <node id="7868465185796801414" at="25,0,26,0" concept="6" trace="allowApostrophe_id6OMpQn6QxQe" />
+      <node id="7868465185796801414" at="27,0,28,0" concept="6" trace="BH_METHODS" />
+      <node id="7868465185796801713" at="32,100,33,16" concept="5" />
+      <node id="7868465185796802242" at="35,102,36,17" concept="5" />
+      <node id="7868465185796802559" at="38,103,39,17" concept="5" />
+      <node id="7868465185796801414" at="46,114,47,21" concept="1" />
+      <node id="7868465185796801414" at="51,114,52,49" concept="4" />
+      <node id="7868465185796801414" at="53,26,54,56" concept="9" />
+      <node id="7868465185796801414" at="57,14,58,58" concept="9" />
+      <node id="7868465185796801414" at="63,128,64,49" concept="4" />
+      <node id="7868465185796801414" at="65,26,66,56" concept="9" />
+      <node id="7868465185796801414" at="69,13,70,67" concept="5" />
+      <node id="7868465185796801414" at="71,13,72,69" concept="5" />
+      <node id="7868465185796801414" at="73,13,74,70" concept="5" />
+      <node id="7868465185796801414" at="75,14,76,58" concept="9" />
+      <node id="7868465185796801414" at="82,48,83,22" concept="5" />
+      <node id="7868465185796801414" at="88,40,89,19" concept="5" />
+      <node id="7868465185796801414" at="29,0,31,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7868465185796801414" at="42,0,44,0" concept="0" trace="ValidName_UmlautsOn_ParagraphOff_ApostropheOff__BehaviorDescriptor#()V" />
+      <node id="7868465185796801414" at="32,0,35,0" concept="7" trace="allowUmlaute_id5YygIlbih$m#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796801414" at="35,0,38,0" concept="7" trace="allowParagraph_id4ZH31cjGRan#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796801414" at="38,0,41,0" concept="7" trace="allowApostrophe_id6OMpQn6QxQe#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796801414" at="52,49,55,5" concept="2" />
+      <node id="7868465185796801414" at="64,49,67,5" concept="2" />
+      <node id="7868465185796801414" at="45,0,49,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="7868465185796801414" at="55,5,59,5" concept="8" />
+      <node id="7868465185796801414" at="80,0,85,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="7868465185796801414" at="86,0,91,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7868465185796801414" at="67,5,77,5" concept="8" />
+      <node id="7868465185796801414" at="50,0,61,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="7868465185796801414" at="62,0,79,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="7868465185796801414" at="29,63,29,63" />
+      <scope id="7868465185796801414" at="42,84,42,84" />
+      <scope id="7868465185796801431" at="32,100,33,16" />
+      <scope id="7868465185796801967" at="35,102,36,17" />
+      <scope id="7868465185796802267" at="38,103,39,17" />
+      <scope id="7868465185796801414" at="46,114,47,21" />
+      <scope id="7868465185796801414" at="53,26,54,56" />
+      <scope id="7868465185796801414" at="57,14,58,58" />
+      <scope id="7868465185796801414" at="65,26,66,56" />
+      <scope id="7868465185796801414" at="69,13,70,67" />
+      <scope id="7868465185796801414" at="71,13,72,69" />
+      <scope id="7868465185796801414" at="73,13,74,70" />
+      <scope id="7868465185796801414" at="75,14,76,58" />
+      <scope id="7868465185796801414" at="82,48,83,22" />
+      <scope id="7868465185796801414" at="88,40,89,19" />
+      <scope id="7868465185796801414" at="29,0,31,0">
+        <var name="__thisNode__" id="7868465185796801414" />
+      </scope>
+      <scope id="7868465185796801414" at="42,0,44,0" />
+      <scope id="7868465185796801414" at="32,0,35,0">
+        <var name="__thisConcept__" id="7868465185796801414" />
+      </scope>
+      <scope id="7868465185796801414" at="35,0,38,0">
+        <var name="__thisConcept__" id="7868465185796801414" />
+      </scope>
+      <scope id="7868465185796801414" at="38,0,41,0">
+        <var name="__thisConcept__" id="7868465185796801414" />
+      </scope>
+      <scope id="7868465185796801414" at="45,0,49,0">
+        <var name="constructor" id="7868465185796801414" />
+        <var name="node" id="7868465185796801414" />
+        <var name="parameters" id="7868465185796801414" />
+      </scope>
+      <scope id="7868465185796801414" at="80,0,85,0" />
+      <scope id="7868465185796801414" at="86,0,91,0" />
+      <scope id="7868465185796801414" at="51,114,59,5">
+        <var name="methodIndex" id="7868465185796801414" />
+      </scope>
+      <scope id="7868465185796801414" at="50,0,61,0">
+        <var name="method" id="7868465185796801414" />
+        <var name="node" id="7868465185796801414" />
+        <var name="parameters" id="7868465185796801414" />
+      </scope>
+      <scope id="7868465185796801414" at="63,128,77,5">
+        <var name="methodIndex" id="7868465185796801414" />
+      </scope>
+      <scope id="7868465185796801414" at="62,0,79,0">
+        <var name="concept" id="7868465185796801414" />
+        <var name="method" id="7868465185796801414" />
+        <var name="parameters" id="7868465185796801414" />
+      </scope>
+      <unit id="7868465185796801414" at="20,0,92,0" name="test.ts.expr.os.validNameConcept.behavior.ValidName_UmlautsOn_ParagraphOff_ApostropheOff__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:53be11f3-57c5-4686-bb2a-0b15a13b560c(test.ts.expr.os.validNameConcept.behavior)/7868465185796804528">
+    <file name="ValidName_UmlautsOff_ParagraphOff_ApostropheOff__BehaviorDescriptor.java">
+      <node id="7868465185796804528" at="21,0,22,0" concept="6" trace="CONCEPT" />
+      <node id="7868465185796804528" at="23,0,24,0" concept="6" trace="allowUmlaute_id5YygIlbih$m" />
+      <node id="7868465185796804528" at="24,0,25,0" concept="6" trace="allowParagraph_id4ZH31cjGRan" />
+      <node id="7868465185796804528" at="25,0,26,0" concept="6" trace="allowApostrophe_id6OMpQn6QxQe" />
+      <node id="7868465185796804528" at="27,0,28,0" concept="6" trace="BH_METHODS" />
+      <node id="7868465185796805056" at="32,100,33,17" concept="5" />
+      <node id="7868465185796805593" at="35,102,36,17" concept="5" />
+      <node id="7868465185796806133" at="38,103,39,17" concept="5" />
+      <node id="7868465185796804528" at="46,114,47,21" concept="1" />
+      <node id="7868465185796804528" at="51,114,52,49" concept="4" />
+      <node id="7868465185796804528" at="53,26,54,56" concept="9" />
+      <node id="7868465185796804528" at="57,14,58,58" concept="9" />
+      <node id="7868465185796804528" at="63,128,64,49" concept="4" />
+      <node id="7868465185796804528" at="65,26,66,56" concept="9" />
+      <node id="7868465185796804528" at="69,13,70,67" concept="5" />
+      <node id="7868465185796804528" at="71,13,72,69" concept="5" />
+      <node id="7868465185796804528" at="73,13,74,70" concept="5" />
+      <node id="7868465185796804528" at="75,14,76,58" concept="9" />
+      <node id="7868465185796804528" at="82,48,83,22" concept="5" />
+      <node id="7868465185796804528" at="88,40,89,19" concept="5" />
+      <node id="7868465185796804528" at="29,0,31,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7868465185796804528" at="42,0,44,0" concept="0" trace="ValidName_UmlautsOff_ParagraphOff_ApostropheOff__BehaviorDescriptor#()V" />
+      <node id="7868465185796804528" at="32,0,35,0" concept="7" trace="allowUmlaute_id5YygIlbih$m#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796804528" at="35,0,38,0" concept="7" trace="allowParagraph_id4ZH31cjGRan#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796804528" at="38,0,41,0" concept="7" trace="allowApostrophe_id6OMpQn6QxQe#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796804528" at="52,49,55,5" concept="2" />
+      <node id="7868465185796804528" at="64,49,67,5" concept="2" />
+      <node id="7868465185796804528" at="45,0,49,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="7868465185796804528" at="55,5,59,5" concept="8" />
+      <node id="7868465185796804528" at="80,0,85,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="7868465185796804528" at="86,0,91,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7868465185796804528" at="67,5,77,5" concept="8" />
+      <node id="7868465185796804528" at="50,0,61,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="7868465185796804528" at="62,0,79,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="7868465185796804528" at="29,63,29,63" />
+      <scope id="7868465185796804528" at="42,85,42,85" />
+      <scope id="7868465185796804545" at="32,100,33,17" />
+      <scope id="7868465185796805081" at="35,102,36,17" />
+      <scope id="7868465185796805618" at="38,103,39,17" />
+      <scope id="7868465185796804528" at="46,114,47,21" />
+      <scope id="7868465185796804528" at="53,26,54,56" />
+      <scope id="7868465185796804528" at="57,14,58,58" />
+      <scope id="7868465185796804528" at="65,26,66,56" />
+      <scope id="7868465185796804528" at="69,13,70,67" />
+      <scope id="7868465185796804528" at="71,13,72,69" />
+      <scope id="7868465185796804528" at="73,13,74,70" />
+      <scope id="7868465185796804528" at="75,14,76,58" />
+      <scope id="7868465185796804528" at="82,48,83,22" />
+      <scope id="7868465185796804528" at="88,40,89,19" />
+      <scope id="7868465185796804528" at="29,0,31,0">
+        <var name="__thisNode__" id="7868465185796804528" />
+      </scope>
+      <scope id="7868465185796804528" at="42,0,44,0" />
+      <scope id="7868465185796804528" at="32,0,35,0">
+        <var name="__thisConcept__" id="7868465185796804528" />
+      </scope>
+      <scope id="7868465185796804528" at="35,0,38,0">
+        <var name="__thisConcept__" id="7868465185796804528" />
+      </scope>
+      <scope id="7868465185796804528" at="38,0,41,0">
+        <var name="__thisConcept__" id="7868465185796804528" />
+      </scope>
+      <scope id="7868465185796804528" at="45,0,49,0">
+        <var name="constructor" id="7868465185796804528" />
+        <var name="node" id="7868465185796804528" />
+        <var name="parameters" id="7868465185796804528" />
+      </scope>
+      <scope id="7868465185796804528" at="80,0,85,0" />
+      <scope id="7868465185796804528" at="86,0,91,0" />
+      <scope id="7868465185796804528" at="51,114,59,5">
+        <var name="methodIndex" id="7868465185796804528" />
+      </scope>
+      <scope id="7868465185796804528" at="50,0,61,0">
+        <var name="method" id="7868465185796804528" />
+        <var name="node" id="7868465185796804528" />
+        <var name="parameters" id="7868465185796804528" />
+      </scope>
+      <scope id="7868465185796804528" at="63,128,77,5">
+        <var name="methodIndex" id="7868465185796804528" />
+      </scope>
+      <scope id="7868465185796804528" at="62,0,79,0">
+        <var name="concept" id="7868465185796804528" />
+        <var name="method" id="7868465185796804528" />
+        <var name="parameters" id="7868465185796804528" />
+      </scope>
+      <unit id="7868465185796804528" at="20,0,92,0" name="test.ts.expr.os.validNameConcept.behavior.ValidName_UmlautsOff_ParagraphOff_ApostropheOff__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:53be11f3-57c5-4686-bb2a-0b15a13b560c(test.ts.expr.os.validNameConcept.behavior)/7868465185796806152">
+    <file name="ValidName_UmlautsOff_ParagraphOff_ApostropheOn__BehaviorDescriptor.java">
+      <node id="7868465185796806152" at="21,0,22,0" concept="6" trace="CONCEPT" />
+      <node id="7868465185796806152" at="23,0,24,0" concept="6" trace="allowUmlaute_id5YygIlbih$m" />
+      <node id="7868465185796806152" at="24,0,25,0" concept="6" trace="allowParagraph_id4ZH31cjGRan" />
+      <node id="7868465185796806152" at="25,0,26,0" concept="6" trace="allowApostrophe_id6OMpQn6QxQe" />
+      <node id="7868465185796806152" at="27,0,28,0" concept="6" trace="BH_METHODS" />
+      <node id="7868465185796806457" at="32,100,33,17" concept="5" />
+      <node id="7868465185796807223" at="35,102,36,17" concept="5" />
+      <node id="7868465185796808000" at="38,103,39,16" concept="5" />
+      <node id="7868465185796806152" at="46,114,47,21" concept="1" />
+      <node id="7868465185796806152" at="51,114,52,49" concept="4" />
+      <node id="7868465185796806152" at="53,26,54,56" concept="9" />
+      <node id="7868465185796806152" at="57,14,58,58" concept="9" />
+      <node id="7868465185796806152" at="63,128,64,49" concept="4" />
+      <node id="7868465185796806152" at="65,26,66,56" concept="9" />
+      <node id="7868465185796806152" at="69,13,70,67" concept="5" />
+      <node id="7868465185796806152" at="71,13,72,69" concept="5" />
+      <node id="7868465185796806152" at="73,13,74,70" concept="5" />
+      <node id="7868465185796806152" at="75,14,76,58" concept="9" />
+      <node id="7868465185796806152" at="82,48,83,22" concept="5" />
+      <node id="7868465185796806152" at="88,40,89,19" concept="5" />
+      <node id="7868465185796806152" at="29,0,31,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7868465185796806152" at="42,0,44,0" concept="0" trace="ValidName_UmlautsOff_ParagraphOff_ApostropheOn__BehaviorDescriptor#()V" />
+      <node id="7868465185796806152" at="32,0,35,0" concept="7" trace="allowUmlaute_id5YygIlbih$m#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796806152" at="35,0,38,0" concept="7" trace="allowParagraph_id4ZH31cjGRan#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796806152" at="38,0,41,0" concept="7" trace="allowApostrophe_id6OMpQn6QxQe#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796806152" at="52,49,55,5" concept="2" />
+      <node id="7868465185796806152" at="64,49,67,5" concept="2" />
+      <node id="7868465185796806152" at="45,0,49,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="7868465185796806152" at="55,5,59,5" concept="8" />
+      <node id="7868465185796806152" at="80,0,85,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="7868465185796806152" at="86,0,91,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7868465185796806152" at="67,5,77,5" concept="8" />
+      <node id="7868465185796806152" at="50,0,61,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="7868465185796806152" at="62,0,79,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="7868465185796806152" at="29,63,29,63" />
+      <scope id="7868465185796806152" at="42,84,42,84" />
+      <scope id="7868465185796806169" at="32,100,33,17" />
+      <scope id="7868465185796806711" at="35,102,36,17" />
+      <scope id="7868465185796807477" at="38,103,39,16" />
+      <scope id="7868465185796806152" at="46,114,47,21" />
+      <scope id="7868465185796806152" at="53,26,54,56" />
+      <scope id="7868465185796806152" at="57,14,58,58" />
+      <scope id="7868465185796806152" at="65,26,66,56" />
+      <scope id="7868465185796806152" at="69,13,70,67" />
+      <scope id="7868465185796806152" at="71,13,72,69" />
+      <scope id="7868465185796806152" at="73,13,74,70" />
+      <scope id="7868465185796806152" at="75,14,76,58" />
+      <scope id="7868465185796806152" at="82,48,83,22" />
+      <scope id="7868465185796806152" at="88,40,89,19" />
+      <scope id="7868465185796806152" at="29,0,31,0">
+        <var name="__thisNode__" id="7868465185796806152" />
+      </scope>
+      <scope id="7868465185796806152" at="42,0,44,0" />
+      <scope id="7868465185796806152" at="32,0,35,0">
+        <var name="__thisConcept__" id="7868465185796806152" />
+      </scope>
+      <scope id="7868465185796806152" at="35,0,38,0">
+        <var name="__thisConcept__" id="7868465185796806152" />
+      </scope>
+      <scope id="7868465185796806152" at="38,0,41,0">
+        <var name="__thisConcept__" id="7868465185796806152" />
+      </scope>
+      <scope id="7868465185796806152" at="45,0,49,0">
+        <var name="constructor" id="7868465185796806152" />
+        <var name="node" id="7868465185796806152" />
+        <var name="parameters" id="7868465185796806152" />
+      </scope>
+      <scope id="7868465185796806152" at="80,0,85,0" />
+      <scope id="7868465185796806152" at="86,0,91,0" />
+      <scope id="7868465185796806152" at="51,114,59,5">
+        <var name="methodIndex" id="7868465185796806152" />
+      </scope>
+      <scope id="7868465185796806152" at="50,0,61,0">
+        <var name="method" id="7868465185796806152" />
+        <var name="node" id="7868465185796806152" />
+        <var name="parameters" id="7868465185796806152" />
+      </scope>
+      <scope id="7868465185796806152" at="63,128,77,5">
+        <var name="methodIndex" id="7868465185796806152" />
+      </scope>
+      <scope id="7868465185796806152" at="62,0,79,0">
+        <var name="concept" id="7868465185796806152" />
+        <var name="method" id="7868465185796806152" />
+        <var name="parameters" id="7868465185796806152" />
+      </scope>
+      <unit id="7868465185796806152" at="20,0,92,0" name="test.ts.expr.os.validNameConcept.behavior.ValidName_UmlautsOff_ParagraphOff_ApostropheOn__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:53be11f3-57c5-4686-bb2a-0b15a13b560c(test.ts.expr.os.validNameConcept.behavior)/7868465185796808019">
+    <file name="ValidName_UmlautsOff_ParagraphOn_ApostropheOff__BehaviorDescriptor.java">
+      <node id="7868465185796808019" at="21,0,22,0" concept="6" trace="CONCEPT" />
+      <node id="7868465185796808019" at="23,0,24,0" concept="6" trace="allowUmlaute_id5YygIlbih$m" />
+      <node id="7868465185796808019" at="24,0,25,0" concept="6" trace="allowParagraph_id4ZH31cjGRan" />
+      <node id="7868465185796808019" at="25,0,26,0" concept="6" trace="allowApostrophe_id6OMpQn6QxQe" />
+      <node id="7868465185796808019" at="27,0,28,0" concept="6" trace="BH_METHODS" />
+      <node id="7868465185796808547" at="32,100,33,17" concept="5" />
+      <node id="7868465185796808897" at="35,102,36,16" concept="5" />
+      <node id="7868465185796809674" at="38,103,39,17" concept="5" />
+      <node id="7868465185796808019" at="46,114,47,21" concept="1" />
+      <node id="7868465185796808019" at="51,114,52,49" concept="4" />
+      <node id="7868465185796808019" at="53,26,54,56" concept="9" />
+      <node id="7868465185796808019" at="57,14,58,58" concept="9" />
+      <node id="7868465185796808019" at="63,128,64,49" concept="4" />
+      <node id="7868465185796808019" at="65,26,66,56" concept="9" />
+      <node id="7868465185796808019" at="69,13,70,67" concept="5" />
+      <node id="7868465185796808019" at="71,13,72,69" concept="5" />
+      <node id="7868465185796808019" at="73,13,74,70" concept="5" />
+      <node id="7868465185796808019" at="75,14,76,58" concept="9" />
+      <node id="7868465185796808019" at="82,48,83,22" concept="5" />
+      <node id="7868465185796808019" at="88,40,89,19" concept="5" />
+      <node id="7868465185796808019" at="29,0,31,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7868465185796808019" at="42,0,44,0" concept="0" trace="ValidName_UmlautsOff_ParagraphOn_ApostropheOff__BehaviorDescriptor#()V" />
+      <node id="7868465185796808019" at="32,0,35,0" concept="7" trace="allowUmlaute_id5YygIlbih$m#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796808019" at="35,0,38,0" concept="7" trace="allowParagraph_id4ZH31cjGRan#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796808019" at="38,0,41,0" concept="7" trace="allowApostrophe_id6OMpQn6QxQe#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796808019" at="52,49,55,5" concept="2" />
+      <node id="7868465185796808019" at="64,49,67,5" concept="2" />
+      <node id="7868465185796808019" at="45,0,49,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="7868465185796808019" at="55,5,59,5" concept="8" />
+      <node id="7868465185796808019" at="80,0,85,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="7868465185796808019" at="86,0,91,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7868465185796808019" at="67,5,77,5" concept="8" />
+      <node id="7868465185796808019" at="50,0,61,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="7868465185796808019" at="62,0,79,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="7868465185796808019" at="29,63,29,63" />
+      <scope id="7868465185796808019" at="42,84,42,84" />
+      <scope id="7868465185796808036" at="32,100,33,17" />
+      <scope id="7868465185796808608" at="35,102,36,16" />
+      <scope id="7868465185796809151" at="38,103,39,17" />
+      <scope id="7868465185796808019" at="46,114,47,21" />
+      <scope id="7868465185796808019" at="53,26,54,56" />
+      <scope id="7868465185796808019" at="57,14,58,58" />
+      <scope id="7868465185796808019" at="65,26,66,56" />
+      <scope id="7868465185796808019" at="69,13,70,67" />
+      <scope id="7868465185796808019" at="71,13,72,69" />
+      <scope id="7868465185796808019" at="73,13,74,70" />
+      <scope id="7868465185796808019" at="75,14,76,58" />
+      <scope id="7868465185796808019" at="82,48,83,22" />
+      <scope id="7868465185796808019" at="88,40,89,19" />
+      <scope id="7868465185796808019" at="29,0,31,0">
+        <var name="__thisNode__" id="7868465185796808019" />
+      </scope>
+      <scope id="7868465185796808019" at="42,0,44,0" />
+      <scope id="7868465185796808019" at="32,0,35,0">
+        <var name="__thisConcept__" id="7868465185796808019" />
+      </scope>
+      <scope id="7868465185796808019" at="35,0,38,0">
+        <var name="__thisConcept__" id="7868465185796808019" />
+      </scope>
+      <scope id="7868465185796808019" at="38,0,41,0">
+        <var name="__thisConcept__" id="7868465185796808019" />
+      </scope>
+      <scope id="7868465185796808019" at="45,0,49,0">
+        <var name="constructor" id="7868465185796808019" />
+        <var name="node" id="7868465185796808019" />
+        <var name="parameters" id="7868465185796808019" />
+      </scope>
+      <scope id="7868465185796808019" at="80,0,85,0" />
+      <scope id="7868465185796808019" at="86,0,91,0" />
+      <scope id="7868465185796808019" at="51,114,59,5">
+        <var name="methodIndex" id="7868465185796808019" />
+      </scope>
+      <scope id="7868465185796808019" at="50,0,61,0">
+        <var name="method" id="7868465185796808019" />
+        <var name="node" id="7868465185796808019" />
+        <var name="parameters" id="7868465185796808019" />
+      </scope>
+      <scope id="7868465185796808019" at="63,128,77,5">
+        <var name="methodIndex" id="7868465185796808019" />
+      </scope>
+      <scope id="7868465185796808019" at="62,0,79,0">
+        <var name="concept" id="7868465185796808019" />
+        <var name="method" id="7868465185796808019" />
+        <var name="parameters" id="7868465185796808019" />
+      </scope>
+      <unit id="7868465185796808019" at="20,0,92,0" name="test.ts.expr.os.validNameConcept.behavior.ValidName_UmlautsOff_ParagraphOn_ApostropheOff__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:53be11f3-57c5-4686-bb2a-0b15a13b560c(test.ts.expr.os.validNameConcept.behavior)/7868465185796809693">
+    <file name="ValidName_UmlautsOff_ParagraphOn_ApostropheOn__BehaviorDescriptor.java">
+      <node id="7868465185796809693" at="21,0,22,0" concept="6" trace="CONCEPT" />
+      <node id="7868465185796809693" at="23,0,24,0" concept="6" trace="allowUmlaute_id5YygIlbih$m" />
+      <node id="7868465185796809693" at="24,0,25,0" concept="6" trace="allowParagraph_id4ZH31cjGRan" />
+      <node id="7868465185796809693" at="25,0,26,0" concept="6" trace="allowApostrophe_id6OMpQn6QxQe" />
+      <node id="7868465185796809693" at="27,0,28,0" concept="6" trace="BH_METHODS" />
+      <node id="7868465185796809992" at="32,100,33,17" concept="5" />
+      <node id="7868465185796810526" at="35,102,36,16" concept="5" />
+      <node id="7868465185796810846" at="38,103,39,16" concept="5" />
+      <node id="7868465185796809693" at="46,114,47,21" concept="1" />
+      <node id="7868465185796809693" at="51,114,52,49" concept="4" />
+      <node id="7868465185796809693" at="53,26,54,56" concept="9" />
+      <node id="7868465185796809693" at="57,14,58,58" concept="9" />
+      <node id="7868465185796809693" at="63,128,64,49" concept="4" />
+      <node id="7868465185796809693" at="65,26,66,56" concept="9" />
+      <node id="7868465185796809693" at="69,13,70,67" concept="5" />
+      <node id="7868465185796809693" at="71,13,72,69" concept="5" />
+      <node id="7868465185796809693" at="73,13,74,70" concept="5" />
+      <node id="7868465185796809693" at="75,14,76,58" concept="9" />
+      <node id="7868465185796809693" at="82,48,83,22" concept="5" />
+      <node id="7868465185796809693" at="88,40,89,19" concept="5" />
+      <node id="7868465185796809693" at="29,0,31,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7868465185796809693" at="42,0,44,0" concept="0" trace="ValidName_UmlautsOff_ParagraphOn_ApostropheOn__BehaviorDescriptor#()V" />
+      <node id="7868465185796809693" at="32,0,35,0" concept="7" trace="allowUmlaute_id5YygIlbih$m#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796809693" at="35,0,38,0" concept="7" trace="allowParagraph_id4ZH31cjGRan#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796809693" at="38,0,41,0" concept="7" trace="allowApostrophe_id6OMpQn6QxQe#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7868465185796809693" at="52,49,55,5" concept="2" />
+      <node id="7868465185796809693" at="64,49,67,5" concept="2" />
+      <node id="7868465185796809693" at="45,0,49,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="7868465185796809693" at="55,5,59,5" concept="8" />
+      <node id="7868465185796809693" at="80,0,85,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="7868465185796809693" at="86,0,91,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7868465185796809693" at="67,5,77,5" concept="8" />
+      <node id="7868465185796809693" at="50,0,61,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="7868465185796809693" at="62,0,79,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="7868465185796809693" at="29,63,29,63" />
+      <scope id="7868465185796809693" at="42,83,42,83" />
+      <scope id="7868465185796809710" at="32,100,33,17" />
+      <scope id="7868465185796810246" at="35,102,36,16" />
+      <scope id="7868465185796810551" at="38,103,39,16" />
+      <scope id="7868465185796809693" at="46,114,47,21" />
+      <scope id="7868465185796809693" at="53,26,54,56" />
+      <scope id="7868465185796809693" at="57,14,58,58" />
+      <scope id="7868465185796809693" at="65,26,66,56" />
+      <scope id="7868465185796809693" at="69,13,70,67" />
+      <scope id="7868465185796809693" at="71,13,72,69" />
+      <scope id="7868465185796809693" at="73,13,74,70" />
+      <scope id="7868465185796809693" at="75,14,76,58" />
+      <scope id="7868465185796809693" at="82,48,83,22" />
+      <scope id="7868465185796809693" at="88,40,89,19" />
+      <scope id="7868465185796809693" at="29,0,31,0">
+        <var name="__thisNode__" id="7868465185796809693" />
+      </scope>
+      <scope id="7868465185796809693" at="42,0,44,0" />
+      <scope id="7868465185796809693" at="32,0,35,0">
+        <var name="__thisConcept__" id="7868465185796809693" />
+      </scope>
+      <scope id="7868465185796809693" at="35,0,38,0">
+        <var name="__thisConcept__" id="7868465185796809693" />
+      </scope>
+      <scope id="7868465185796809693" at="38,0,41,0">
+        <var name="__thisConcept__" id="7868465185796809693" />
+      </scope>
+      <scope id="7868465185796809693" at="45,0,49,0">
+        <var name="constructor" id="7868465185796809693" />
+        <var name="node" id="7868465185796809693" />
+        <var name="parameters" id="7868465185796809693" />
+      </scope>
+      <scope id="7868465185796809693" at="80,0,85,0" />
+      <scope id="7868465185796809693" at="86,0,91,0" />
+      <scope id="7868465185796809693" at="51,114,59,5">
+        <var name="methodIndex" id="7868465185796809693" />
+      </scope>
+      <scope id="7868465185796809693" at="50,0,61,0">
+        <var name="method" id="7868465185796809693" />
+        <var name="node" id="7868465185796809693" />
+        <var name="parameters" id="7868465185796809693" />
+      </scope>
+      <scope id="7868465185796809693" at="63,128,77,5">
+        <var name="methodIndex" id="7868465185796809693" />
+      </scope>
+      <scope id="7868465185796809693" at="62,0,79,0">
+        <var name="concept" id="7868465185796809693" />
+        <var name="method" id="7868465185796809693" />
+        <var name="parameters" id="7868465185796809693" />
+      </scope>
+      <unit id="7868465185796809693" at="20,0,92,0" name="test.ts.expr.os.validNameConcept.behavior.ValidName_UmlautsOff_ParagraphOn_ApostropheOn__BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

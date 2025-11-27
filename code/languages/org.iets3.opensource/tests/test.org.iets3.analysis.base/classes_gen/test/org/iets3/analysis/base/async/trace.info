@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1160998861373:jetbrains.mps.baseLanguage.structure.AssertStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:323df21b-bcb0-4525-967d-a41bb2c3fcb8(test.org.iets3.analysis.base.async@tests)/228836362270242147">
+    <file name="TestAsyncFromSingleThread_Test.java">
+      <node id="228836362270242147" at="45,43,46,60" concept="12" />
+      <node id="228836362270242148" at="50,52,51,43" concept="2" />
+      <node id="228836362270242147" at="56,52,57,19" concept="12" />
+      <node id="228836362270242147" at="61,36,62,25" concept="2" />
+      <node id="228836362270242148" at="65,54,66,22" concept="2" />
+      <node id="3149060095101130349" at="66,22,67,69" concept="6" />
+      <node id="3149060095101245453" at="67,69,68,0" concept="9" />
+      <node id="3149060095101130346" at="69,11,70,180" concept="2" />
+      <node id="841930293776415088" at="70,180,71,0" concept="9" />
+      <node id="3149060095101163571" at="71,0,72,76" concept="2" />
+      <node id="841930293776421173" at="72,76,73,73" concept="8" />
+      <node id="4055754586710254997" at="73,73,74,60" concept="6" />
+      <node id="228836362270279281" at="74,60,75,19" concept="6" />
+      <node id="7382875784561679919" at="75,19,76,128" concept="6" />
+      <node id="7382875784561673743" at="76,128,77,0" concept="9" />
+      <node id="228836362270764368" at="77,0,78,209" concept="6" />
+      <node id="228836362270799394" at="78,209,79,0" concept="9" />
+      <node id="228836362270806873" at="79,0,80,37" concept="2" />
+      <node id="228836362270696298" at="80,37,81,0" concept="9" />
+      <node id="228836362270874923" at="81,0,82,53" concept="6" />
+      <node id="228836362270416343" at="84,15,85,67" concept="6" />
+      <node id="228836362270892080" at="85,67,86,22" concept="2" />
+      <node id="228836362270428027" at="86,22,87,40" concept="2" />
+      <node id="228836362270490459" at="88,44,89,25" concept="0" />
+      <node id="228836362270495009" at="90,42,91,25" concept="0" />
+      <node id="228836362270497285" at="92,40,93,25" concept="0" />
+      <node id="841930293776433327" at="95,11,96,34" concept="8" />
+      <node id="228836362270947965" at="96,34,97,41" concept="2" />
+      <node id="3149060095101356316" at="99,37,100,129" concept="2" />
+      <node id="3149060095101352110" at="100,129,101,0" concept="9" />
+      <node id="228836362270259960" at="106,133,107,0" concept="9" />
+      <node id="228836362270259961" at="107,0,108,93" concept="6" />
+      <node id="7846581720227996930" at="108,93,109,0" concept="9" />
+      <node id="8433200666770147610" at="109,0,110,0" concept="9" />
+      <node id="228836362270259969" at="110,0,111,99" concept="2" />
+      <node id="8433200666770238071" at="111,99,112,0" concept="9" />
+      <node id="8433200666770241338" at="112,0,113,0" concept="9" />
+      <node id="682624529721994483" at="113,0,114,162" concept="6" />
+      <node id="7846581720227576033" at="114,162,115,0" concept="9" />
+      <node id="228836362270361689" at="120,61,121,58" concept="6" />
+      <node id="228836362270361697" at="121,58,122,82" concept="2" />
+      <node id="228836362270259964" at="125,69,126,76" concept="6" />
+      <node id="228836362270259964" at="126,76,127,54" concept="2" />
+      <node id="228836362270259964" at="127,54,128,28" concept="7" />
+      <node id="228836362270242147" at="133,0,134,0" concept="10" trace="DummyISolvable$_U" />
+      <node id="228836362270242147" at="137,0,138,0" concept="10" trace="sleepTime$rMiT" />
+      <node id="228836362270242147" at="42,0,44,0" concept="10" trace="ourParametersCacheExtension" />
+      <node id="228836362270259998" at="115,0,117,58" concept="7" />
+      <node id="228836362270242147" at="45,0,48,0" concept="1" trace="TestAsyncFromSingleThread_Test#()V" />
+      <node id="228836362270242147" at="56,0,59,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="228836362270242148" at="49,0,53,0" concept="5" trace="test_singleThread#()V" />
+      <node id="228836362270242147" at="60,0,64,0" concept="5" trace="initTestNodes#()V" />
+      <node id="3149060095101259753" at="98,17,102,9" concept="4" />
+      <node id="228836362270361685" at="119,46,123,7" concept="3" />
+      <node id="228836362270259964" at="125,0,130,0" concept="11" trace="createDummyISolvable_n8wjnp_a0b0h6#(I)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="228836362270361710" at="119,0,125,0" concept="5" trace="check#(Ljava/util/List;)V" />
+      <node id="228836362270471651" at="83,70,94,11" concept="13" />
+      <node id="228836362270287541" at="82,53,95,11" concept="2" />
+      <node id="228836362270260006" at="106,0,119,0" concept="5" trace="schedule#(Ljava/util/Random;Lorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/util/concurrent/CompletableFuture;" />
+      <node id="3149060095101252103" at="68,0,103,7" concept="13" />
+      <node id="228836362270242148" at="65,0,105,0" concept="5" trace="test_singleThread#()V" />
+      <scope id="228836362270259991" at="116,80,116,80" />
+      <scope id="228836362270242147" at="45,43,46,60" />
+      <scope id="228836362270242148" at="50,52,51,43" />
+      <scope id="228836362270242147" at="56,52,57,19" />
+      <scope id="228836362270242147" at="61,36,62,25" />
+      <scope id="228836362270471657" at="88,44,89,25" />
+      <scope id="228836362270471664" at="90,42,91,25" />
+      <scope id="228836362270471671" at="92,40,93,25" />
+      <scope id="228836362270471654" at="88,11,90,11">
+        <var name="e" id="228836362270471658" />
+      </scope>
+      <scope id="228836362270471661" at="90,11,92,11">
+        <var name="e" id="228836362270471665" />
+      </scope>
+      <scope id="228836362270471668" at="92,11,94,11">
+        <var name="e" id="228836362270471672" />
+      </scope>
+      <scope id="3149060095101259755" at="99,37,101,0" />
+      <scope id="228836362270361688" at="120,61,122,82">
+        <var name="errMsg" id="228836362270361690" />
+      </scope>
+      <scope id="228836362270242147" at="45,0,48,0" />
+      <scope id="228836362270242147" at="56,0,59,0">
+        <var name="owner" id="228836362270242147" />
+      </scope>
+      <scope id="228836362270471652" at="84,15,87,40">
+        <var name="result" id="228836362270416344" />
+      </scope>
+      <scope id="228836362270259964" at="125,69,128,28">
+        <var name="n0" id="228836362270259964" />
+      </scope>
+      <scope id="228836362270242148" at="49,0,53,0" />
+      <scope id="228836362270242147" at="60,0,64,0" />
+      <scope id="3149060095101252106" at="98,17,102,9" />
+      <scope id="228836362270361685" at="119,46,123,7">
+        <var name="result" id="228836362270361686" />
+      </scope>
+      <scope id="228836362270361710" at="119,46,123,7" />
+      <scope id="228836362270259964" at="125,0,130,0">
+        <var name="p0" id="228836362270259964" />
+      </scope>
+      <scope id="228836362270361710" at="119,0,125,0">
+        <var name="results" id="228836362270361704" />
+      </scope>
+      <scope id="228836362270344981" at="83,70,94,11" />
+      <scope id="228836362270260006" at="106,133,117,58">
+        <var name="execEnv2" id="682624529721994484" />
+        <var name="solvable" id="228836362270259962" />
+      </scope>
+      <scope id="228836362270260006" at="106,0,119,0">
+        <var name="execEnv" id="7382875784561692903" />
+        <var name="model" id="3149060095101214980" />
+        <var name="r" id="4055754586710277323" />
+      </scope>
+      <scope id="3149060095101252104" at="69,11,97,41">
+        <var name="execEnv" id="7382875784561679920" />
+        <var name="futures" id="228836362270764369" />
+        <var name="i" id="228836362270874926" />
+        <var name="no" id="228836362270279284" />
+        <var name="random" id="4055754586710254998" />
+      </scope>
+      <scope id="228836362270242148" at="65,54,103,7">
+        <var name="modelTmp" id="3149060095101130350" />
+      </scope>
+      <scope id="228836362270242148" at="65,0,105,0" />
+      <unit id="228836362270242147" at="132,0,135,0" name="test.org.iets3.analysis.base.async.TestAsyncFromSingleThread_Test$CONCEPTS" />
+      <unit id="228836362270242147" at="136,0,139,0" name="test.org.iets3.analysis.base.async.TestAsyncFromSingleThread_Test$PROPS" />
+      <unit id="228836362270242147" at="54,0,131,0" name="test.org.iets3.analysis.base.async.TestAsyncFromSingleThread_Test$TestBody" />
+      <unit id="228836362270242147" at="40,0,140,0" name="test.org.iets3.analysis.base.async.TestAsyncFromSingleThread_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:323df21b-bcb0-4525-967d-a41bb2c3fcb8(test.org.iets3.analysis.base.async@tests)/4055754586710197648">
+    <file name="TestUtil.java">
+      <node id="4055754586712046475" at="9,41,10,27" concept="7" />
+      <node id="4055754586712041098" at="13,52,14,41" concept="7" />
+      <node id="4055754586710226921" at="9,0,12,0" concept="11" trace="sleepTime#(Ljava/util/Random;)I" />
+      <node id="4055754586712041096" at="13,0,16,0" concept="11" trace="sleepTime#(Ljava/util/Random;I)I" />
+      <scope id="4055754586710226926" at="9,41,10,27" />
+      <scope id="4055754586712041097" at="13,52,14,41" />
+      <scope id="4055754586710226921" at="9,0,12,0">
+        <var name="r" id="4055754586710226923" />
+      </scope>
+      <scope id="4055754586712041096" at="13,0,16,0">
+        <var name="r" id="4055754586712041105" />
+        <var name="range" id="4055754586712044718" />
+      </scope>
+      <unit id="4055754586710197648" at="7,0,17,0" name="test.org.iets3.analysis.base.async.TestUtil" />
+    </file>
+  </root>
+  <root nodeRef="r:323df21b-bcb0-4525-967d-a41bb2c3fcb8(test.org.iets3.analysis.base.async@tests)/8658850571204018795">
+    <file name="TestCancellation_Test.java">
+      <node id="8658850571204018795" at="43,34,44,60" concept="12" />
+      <node id="6606168302668970429" at="48,62,49,53" concept="2" />
+      <node id="8658850571204018795" at="54,52,55,19" concept="12" />
+      <node id="8658850571204018795" at="59,36,60,25" concept="2" />
+      <node id="6606168302668970429" at="63,64,64,22" concept="2" />
+      <node id="5863794308977363418" at="64,22,65,28" concept="8" />
+      <node id="5863794308977301428" at="66,30,67,15" concept="7" />
+      <node id="5863794308977274372" at="68,7,69,0" concept="9" />
+      <node id="6606168302669209974" at="69,0,70,66" concept="6" />
+      <node id="8433200666770746930" at="70,66,71,69" concept="6" />
+      <node id="3149060095101782676" at="73,73,74,117" concept="2" />
+      <node id="6606168302669708858" at="74,117,75,47" concept="2" />
+      <node id="3485155215337083267" at="76,11,77,0" concept="9" />
+      <node id="4055754586712962411" at="77,0,78,28" concept="6" />
+      <node id="841930293773743319" at="78,28,79,53" concept="6" />
+      <node id="7382875784561597040" at="79,53,80,128" concept="6" />
+      <node id="7846581720227707753" at="80,128,81,170" concept="6" />
+      <node id="7846581720227700535" at="81,170,82,0" concept="9" />
+      <node id="841930293774225356" at="82,0,83,135" concept="8" />
+      <node id="841930293773788708" at="86,17,87,47" concept="2" />
+      <node id="841930293773818091" at="88,46,89,43" concept="0" />
+      <node id="841930293774003222" at="91,11,92,20" concept="2" />
+      <node id="4055754586712991775" at="95,33,96,0" concept="9" />
+      <node id="4055754586713302805" at="96,0,97,0" concept="9" />
+      <node id="4055754586716009406" at="97,0,98,128" concept="6" />
+      <node id="4055754586713396279" at="99,88,100,66" concept="6" />
+      <node id="4055754586715729631" at="100,66,101,49" concept="2" />
+      <node id="4055754586715769264" at="101,49,102,42" concept="6" />
+      <node id="4055754586716046325" at="102,42,103,91" concept="2" />
+      <node id="841930293776379685" at="104,9,105,73" concept="8" />
+      <node id="841930293773930308" at="105,73,106,92" concept="2" />
+      <node id="841930293776400261" at="106,92,107,169" concept="8" />
+      <node id="841930293774144911" at="107,169,108,107" concept="2" />
+      <node id="841930293774125415" at="108,107,109,0" concept="9" />
+      <node id="3149060095101851120" at="111,37,112,129" concept="2" />
+      <node id="6606168302669209976" at="117,63,118,76" concept="6" />
+      <node id="6606168302669209976" at="118,76,119,53" concept="2" />
+      <node id="6606168302669209976" at="119,53,120,28" concept="7" />
+      <node id="8658850571204018795" at="125,0,126,0" concept="10" trace="DummyISolvable$_U" />
+      <node id="8658850571204018795" at="129,0,130,0" concept="10" trace="sleepTime$rMiT" />
+      <node id="8658850571204018795" at="40,0,42,0" concept="10" trace="ourParametersCacheExtension" />
+      <node id="4055754586712981780" at="92,20,94,62" concept="7" />
+      <node id="8658850571204018795" at="43,0,46,0" concept="1" trace="TestCancellation_Test#()V" />
+      <node id="8658850571204018795" at="54,0,57,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5863794308977267048" at="65,28,68,7" concept="4" />
+      <node id="3149060095101814761" at="110,17,113,9" concept="4" />
+      <node id="6606168302668970429" at="47,0,51,0" concept="5" trace="test_checkForCancelledTasks#()V" />
+      <node id="8658850571204018795" at="58,0,62,0" concept="5" trace="initTestNodes#()V" />
+      <node id="6606168302670541507" at="72,11,76,11" concept="2" />
+      <node id="841930293773814573" at="85,33,90,13" concept="13" />
+      <node id="6606168302669209976" at="117,0,122,0" concept="11" trace="createDummyISolvable_pmeu3y_a0e0f6#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4055754586713306226" at="98,128,104,9" concept="3" />
+      <node id="841930293773767243" at="84,80,91,11" concept="4" />
+      <node id="4055754586712981773" at="83,135,95,33" concept="6" />
+      <node id="3149060095101799499" at="71,69,114,7" concept="13" />
+      <node id="6606168302668970429" at="63,0,116,0" concept="5" trace="test_checkForCancelledTasks#()V" />
+      <scope id="4055754586712981786" at="93,84,93,84" />
+      <scope id="8658850571204018795" at="43,34,44,60" />
+      <scope id="6606168302668970429" at="48,62,49,53" />
+      <scope id="8658850571204018795" at="54,52,55,19" />
+      <scope id="8658850571204018795" at="59,36,60,25" />
+      <scope id="5863794308977267050" at="66,30,67,15" />
+      <scope id="841930293773814574" at="86,17,87,47" />
+      <scope id="841930293773814579" at="88,46,89,43" />
+      <scope id="3149060095101814763" at="111,37,112,129" />
+      <scope id="6606168302670541511" at="73,73,75,47" />
+      <scope id="841930293773814576" at="88,13,90,13">
+        <var name="e" id="841930293773814580" />
+      </scope>
+      <scope id="8658850571204018795" at="43,0,46,0" />
+      <scope id="8658850571204018795" at="54,0,57,0">
+        <var name="owner" id="8658850571204018795" />
+      </scope>
+      <scope id="3149060095101799502" at="110,17,113,9" />
+      <scope id="6606168302669209976" at="117,63,120,28">
+        <var name="n0" id="6606168302669209976" />
+      </scope>
+      <scope id="6606168302668970429" at="47,0,51,0" />
+      <scope id="8658850571204018795" at="58,0,62,0" />
+      <scope id="4055754586713306232" at="99,88,103,91">
+        <var name="result" id="4055754586715769265" />
+        <var name="results" id="4055754586713396280" />
+      </scope>
+      <scope id="841930293773767245" at="85,33,90,13" />
+      <scope id="6606168302669209976" at="117,0,122,0" />
+      <scope id="4055754586713306226" at="98,128,104,9">
+        <var name="future" id="4055754586713306228" />
+      </scope>
+      <scope id="4055754586712981779" at="84,80,94,62" />
+      <scope id="3149060095101799500" at="72,11,109,0">
+        <var name="execEnv" id="7382875784561597041" />
+        <var name="execEnv2" id="7846581720227707754" />
+        <var name="futures" id="4055754586712981774" />
+        <var name="i" id="841930293773743322" />
+        <var name="limit" id="4055754586712962412" />
+        <var name="messageTypes" id="4055754586716009407" />
+      </scope>
+      <scope id="6606168302668970429" at="63,64,114,7">
+        <var name="modelTmp" id="8433200666770746931" />
+        <var name="solvable" id="6606168302669209975" />
+      </scope>
+      <scope id="6606168302668970429" at="63,0,116,0" />
+      <unit id="8658850571204018795" at="124,0,127,0" name="test.org.iets3.analysis.base.async.TestCancellation_Test$CONCEPTS" />
+      <unit id="8658850571204018795" at="128,0,131,0" name="test.org.iets3.analysis.base.async.TestCancellation_Test$PROPS" />
+      <unit id="8658850571204018795" at="52,0,123,0" name="test.org.iets3.analysis.base.async.TestCancellation_Test$TestBody" />
+      <unit id="8658850571204018795" at="38,0,132,0" name="test.org.iets3.analysis.base.async.TestCancellation_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:323df21b-bcb0-4525-967d-a41bb2c3fcb8(test.org.iets3.analysis.base.async@tests)/8993164235310794956">
+    <file name="TestAsyncMultiThreads_Test.java">
+      <node id="8993164235310794956" at="49,39,50,60" concept="12" />
+      <node id="8993164235310794963" at="54,51,55,42" concept="2" />
+      <node id="8993164235310794956" at="60,52,61,19" concept="12" />
+      <node id="8993164235310794956" at="65,36,66,25" concept="2" />
+      <node id="8993164235310794963" at="69,53,70,22" concept="2" />
+      <node id="8433200666770559676" at="70,22,71,69" concept="6" />
+      <node id="3485155215337141114" at="72,11,73,28" concept="6" />
+      <node id="3485155215337126738" at="73,28,74,64" concept="6" />
+      <node id="3485155215341707930" at="74,64,75,77" concept="6" />
+      <node id="3485155215340389594" at="75,77,76,0" concept="9" />
+      <node id="3485155215337178433" at="76,0,77,180" concept="6" />
+      <node id="3485155215337184136" at="77,180,78,0" concept="9" />
+      <node id="3149060095101550309" at="79,71,80,117" concept="2" />
+      <node id="3149060095101585605" at="80,117,81,73" concept="2" />
+      <node id="7846581720227956648" at="82,67,83,49" concept="2" />
+      <node id="7382875784561646523" at="85,11,86,128" concept="6" />
+      <node id="7846581720227659337" at="86,128,87,170" concept="6" />
+      <node id="3485155215337392715" at="87,170,88,0" concept="9" />
+      <node id="841930293776458760" at="88,0,89,112" concept="8" />
+      <node id="4634545783442505746" at="98,20,99,0" concept="9" />
+      <node id="4634545783442872680" at="101,15,102,47" concept="7" />
+      <node id="1985884680929520683" at="103,84,104,24" concept="7" />
+      <node id="841930293776466376" at="106,52,107,78" concept="8" />
+      <node id="4634545783444597955" at="107,78,108,103" concept="2" />
+      <node id="841930293776475328" at="108,103,109,0" concept="9" />
+      <node id="841930293776513483" at="109,0,110,43" concept="8" />
+      <node id="3485155215343055057" at="112,84,113,39" concept="2" />
+      <node id="3485155215341478577" at="115,46,116,61" concept="0" />
+      <node id="4634545783444344765" at="117,9,118,24" concept="2" />
+      <node id="3149060095101684467" at="120,37,121,129" concept="2" />
+      <node id="3485155215337178441" at="126,77,127,76" concept="6" />
+      <node id="3485155215337178441" at="127,76,128,54" concept="2" />
+      <node id="3485155215337178441" at="128,54,129,28" concept="7" />
+      <node id="8993164235310794956" at="134,0,135,0" concept="10" trace="DummyISolvable$_U" />
+      <node id="8993164235310794956" at="138,0,139,0" concept="10" trace="sleepTime$rMiT" />
+      <node id="8993164235310794956" at="46,0,48,0" concept="10" trace="ourParametersCacheExtension" />
+      <node id="4634545783442619978" at="93,77,95,68" concept="7" />
+      <node id="8993164235310794956" at="49,0,52,0" concept="1" trace="TestAsyncMultiThreads_Test#()V" />
+      <node id="8993164235310794956" at="60,0,63,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3485155215337190424" at="81,73,84,11" concept="3" />
+      <node id="3485155215343055051" at="111,13,114,11" concept="3" />
+      <node id="3149060095101639771" at="119,17,122,9" concept="4" />
+      <node id="8993164235310794963" at="53,0,57,0" concept="5" trace="test_multiThread#()V" />
+      <node id="8993164235310794956" at="64,0,68,0" concept="5" trace="initTestNodes#()V" />
+      <node id="4634545783442607527" at="92,0,97,0" concept="5" trace="call#()Ljava/util/concurrent/CompletableFuture;" />
+      <node id="4634545783442872678" at="100,99,105,11" concept="13" />
+      <node id="3485155215337178441" at="126,0,131,0" concept="11" trace="createDummyISolvable_st6kej_a0a0a0a0e0c0f6#(I)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3485155215337201522" at="78,0,85,11" concept="2" />
+      <node id="4634545783442482875" at="90,123,97,13" concept="7" />
+      <node id="4634545783442872669" at="99,0,106,52" concept="6" />
+      <node id="3485155215341455057" at="110,43,117,9" concept="13" />
+      <node id="4634545783442482867" at="89,112,98,20" concept="6" />
+      <node id="3149060095101532982" at="71,69,123,7" concept="13" />
+      <node id="8993164235310794963" at="69,0,125,0" concept="5" trace="test_multiThread#()V" />
+      <scope id="4634545783442482893" at="94,83,94,83" />
+      <scope id="8993164235310794956" at="49,39,50,60" />
+      <scope id="8993164235310794963" at="54,51,55,42" />
+      <scope id="8993164235310794956" at="60,52,61,19" />
+      <scope id="8993164235310794956" at="65,36,66,25" />
+      <scope id="3485155215337190430" at="82,67,83,49" />
+      <scope id="4634545783442872679" at="101,15,102,47" />
+      <scope id="4634545783442872687" at="103,84,104,24" />
+      <scope id="3485155215343055056" at="112,84,113,39" />
+      <scope id="3485155215341455062" at="115,46,116,61" />
+      <scope id="3149060095101639773" at="120,37,121,129" />
+      <scope id="4634545783442607532" at="93,77,95,68" />
+      <scope id="4634545783442872686" at="103,11,105,11">
+        <var name="e" id="4634545783442872688" />
+      </scope>
+      <scope id="3485155215341455059" at="115,9,117,9">
+        <var name="eAlternativeType" id="3485155215341455060" />
+      </scope>
+      <scope id="8993164235310794956" at="49,0,52,0" />
+      <scope id="8993164235310794956" at="60,0,63,0">
+        <var name="owner" id="8993164235310794956" />
+      </scope>
+      <scope id="3485155215337190424" at="81,73,84,11">
+        <var name="solvable" id="3485155215337190426" />
+      </scope>
+      <scope id="3485155215341455058" at="111,13,114,11" />
+      <scope id="3485155215343055051" at="111,13,114,11">
+        <var name="f" id="3485155215343055063" />
+      </scope>
+      <scope id="3149060095101532985" at="119,17,122,9" />
+      <scope id="3485155215337178441" at="126,77,129,28">
+        <var name="n0" id="3485155215337178441" />
+      </scope>
+      <scope id="8993164235310794963" at="53,0,57,0" />
+      <scope id="8993164235310794956" at="64,0,68,0" />
+      <scope id="3485155215337201526" at="79,71,84,11" />
+      <scope id="4634545783442607527" at="92,0,97,0" />
+      <scope id="4634545783442872677" at="100,99,105,11" />
+      <scope id="3485155215337178441" at="126,0,131,0">
+        <var name="p0" id="3485155215337178441" />
+      </scope>
+      <scope id="4634545783442482874" at="90,123,97,13" />
+      <scope id="3149060095101532983" at="72,11,118,24">
+        <var name="execEnv" id="7382875784561646524" />
+        <var name="execEnv2" id="7846581720227659338" />
+        <var name="noThreads" id="3485155215337141117" />
+        <var name="ph1" id="4634545783442482868" />
+        <var name="phase2" id="4634545783442872670" />
+        <var name="pool" id="3485155215341707931" />
+        <var name="r" id="3485155215337126739" />
+        <var name="solvables" id="3485155215337178434" />
+      </scope>
+      <scope id="8993164235310794963" at="69,53,123,7">
+        <var name="modelTmp" id="8433200666770559677" />
+      </scope>
+      <scope id="8993164235310794963" at="69,0,125,0" />
+      <unit id="8993164235310794956" at="133,0,136,0" name="test.org.iets3.analysis.base.async.TestAsyncMultiThreads_Test$CONCEPTS" />
+      <unit id="8993164235310794956" at="137,0,140,0" name="test.org.iets3.analysis.base.async.TestAsyncMultiThreads_Test$PROPS" />
+      <unit id="4634545783442607513" at="91,33,97,11" name="test.org.iets3.analysis.base.async.TestAsyncMultiThreads_Test$TestBody$1" />
+      <unit id="8993164235310794956" at="58,0,132,0" name="test.org.iets3.analysis.base.async.TestAsyncMultiThreads_Test$TestBody" />
+      <unit id="8993164235310794956" at="44,0,141,0" name="test.org.iets3.analysis.base.async.TestAsyncMultiThreads_Test" />
+    </file>
+  </root>
+</debug-info>
+

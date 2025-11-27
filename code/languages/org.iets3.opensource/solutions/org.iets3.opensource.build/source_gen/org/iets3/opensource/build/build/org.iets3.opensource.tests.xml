@@ -1102,6 +1102,7 @@
           <language id="l:9c3cc6fb-ae5e-46d1-ace2-1e08bb47d03d:org.iets3.core.expr.typetags.bindingtime" />
           <language id="l:7ee265bd-5986-4709-86ed-2c6daa33cd8c:org.iets3.core.expr.typetags.physunits" />
           <language id="l:cb91a38e-738a-4811-a96d-448d08f526fa:org.iets3.core.expr.typetags.units" />
+          <language id="l:be679007-4312-4db1-9ac0-ab7dfbe66a74:org.iets3.core.expr.typetags.units.quantity" />
           <language id="l:8bb1251e-eae5-47ab-9843-33adfae8edaa:org.iets3.core.expr.util" />
         </uses>
         <classpath>

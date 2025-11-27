@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/3751132065236767060:jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="8,0,13,0" name="test.in.expr.os.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:cdaadb5b-4c31-4b6a-abc8-dffba09779e4(test.in.expr.os.plugin)/3338854161630804237">
+    <file name="TestIdentifierConfigurator.java">
+      <node id="3338854161630849844" at="10,0,11,0" concept="6" trace="priority" />
+      <node id="3338854161630851639" at="13,33,14,20" concept="5" />
+      <node id="3338854161630804254" at="18,70,19,16" concept="5" />
+      <node id="3338854161630804264" at="23,73,24,16" concept="5" />
+      <node id="3338854161630804240" at="12,0,16,0" concept="4" trace="getPriorityLevel#()I" />
+      <node id="3338854161630804248" at="17,0,21,0" concept="4" trace="allowUmlautsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="3338854161630804258" at="22,0,26,0" concept="4" trace="allowParagraphsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <scope id="3338854161630804243" at="13,33,14,20" />
+      <scope id="3338854161630804253" at="18,70,19,16" />
+      <scope id="3338854161630804263" at="23,73,24,16" />
+      <scope id="3338854161630804240" at="12,0,16,0" />
+      <scope id="3338854161630804248" at="17,0,21,0">
+        <var name="concept" id="3338854161630804249" />
+      </scope>
+      <scope id="3338854161630804258" at="22,0,26,0">
+        <var name="concept" id="3338854161630804259" />
+      </scope>
+      <unit id="3338854161630804237" at="8,0,28,0" name="test.in.expr.os.plugin.TestIdentifierConfigurator" />
+    </file>
+  </root>
+  <root nodeRef="r:cdaadb5b-4c31-4b6a-abc8-dffba09779e4(test.in.expr.os.plugin)/596258844700190686">
+    <file name="TestIdentifierConfiguratorExtension.java">
+      <node id="596258844700190686" at="10,0,11,0" concept="6" trace="LOG" />
+      <node id="596258844700190686" at="11,48,12,61" concept="7" />
+      <node id="596258844701642665" at="16,28,17,97" concept="2" />
+      <node id="596258844701644276" at="21,28,22,99" concept="2" />
+      <node id="3338854161630842370" at="26,39,27,44" concept="5" />
+      <node id="596258844700190686" at="11,0,14,0" concept="1" trace="TestIdentifierConfiguratorExtension#()V" />
+      <node id="596258844701642665" at="15,26,18,5" concept="3" />
+      <node id="596258844701644276" at="20,28,23,5" concept="3" />
+      <node id="596258844700190692" at="26,0,29,0" concept="0" trace="get#()Lorg/iets3/core/expr/base/plugin/IdentifierConfigurator;" />
+      <node id="596258844700210756" at="15,0,20,0" concept="0" trace="activate#()V" />
+      <node id="596258844700210888" at="20,0,25,0" concept="0" trace="deactivate#()V" />
+      <scope id="596258844700190686" at="11,48,12,61" />
+      <scope id="596258844701642665" at="16,28,17,97" />
+      <scope id="596258844701644276" at="21,28,22,99" />
+      <scope id="596258844700190696" at="26,39,27,44" />
+      <scope id="596258844700190686" at="11,0,14,0" />
+      <scope id="596258844700210760" at="15,26,18,5" />
+      <scope id="596258844700210892" at="20,28,23,5" />
+      <scope id="596258844700190692" at="26,0,29,0" />
+      <scope id="596258844700210756" at="15,0,20,0" />
+      <scope id="596258844700210888" at="20,0,25,0" />
+      <unit id="596258844700190686" at="9,0,30,0" name="test.in.expr.os.plugin.TestIdentifierConfiguratorExtension" />
+    </file>
+  </root>
+</debug-info>
+

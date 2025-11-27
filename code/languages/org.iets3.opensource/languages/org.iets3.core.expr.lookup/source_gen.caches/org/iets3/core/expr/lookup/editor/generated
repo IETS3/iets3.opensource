@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="bdh60t6zoojndv7x7m682o0zkmh27qd">
+<product version="3" modelHash="1jfo8hdzh5yhwosnflo4lgr46e0oljl">
   <files names="DummyForGrammarCells.java:DummyForGrammarCells_ComponentBuilder_a.java:EditorAspectDescriptorImpl.java:GrammarActionsDescriptor.java:GrammarCellsSubstituteMenu_LookupTable.java:GrammarCellsSubstituteMenu_LookupTableCell.java:GrammarCellsSubstituteMenu_LookupTableHeader.java:GrammarCellsSubstituteMenu_LookupTableRef.java:GrammarCellsSubstituteMenu_LookupTableType.java:GrammarCellsSubstituteMenu_LookupTarget.java:IncludeBeforeAfterTransformations.java:LookupTableCell_Editor.java:LookupTableCell_EditorBuilder_a.java:LookupTableHeader_Editor.java:LookupTableHeader_EditorBuilder_a.java:LookupTableRef_Editor.java:LookupTableRef_EditorBuilder_a.java:LookupTableRef_SubstituteMenu.java:LookupTableType_Editor.java:LookupTableType_EditorBuilder_a.java:LookupTable_Editor.java:LookupTable_EditorBuilder_a.java:LookupTarget_Editor.java:LookupTarget_EditorBuilder_a.java:TableSelectionActionMap.java:template_GrammarCellsSideTransformationsMenu.java" />
 </product>
 

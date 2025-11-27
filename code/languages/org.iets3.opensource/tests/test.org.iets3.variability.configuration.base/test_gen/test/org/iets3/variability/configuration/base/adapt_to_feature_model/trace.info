@@ -1,0 +1,2464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/1215027478699260945">
+    <file name="MoveFeatureToInclude_Test.java">
+      <node id="1215027478699260945" at="20,38,21,60" concept="7" />
+      <node id="1215027478699260946" at="25,81,26,72" concept="1" />
+      <node id="1215027478699260945" at="31,52,32,19" concept="7" />
+      <node id="1215027478699260945" at="36,36,37,46" concept="1" />
+      <node id="1215027478699260946" at="40,83,41,22" concept="1" />
+      <node id="1215027478699283406" at="42,30,43,101" concept="4" />
+      <node id="1215027478699260949" at="43,101,44,141" concept="1" />
+      <node id="1215027478699260945" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="1215027478699260945" at="20,0,23,0" concept="0" trace="MoveFeatureToInclude_Test#()V" />
+      <node id="1215027478699260945" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="1215027478699260946" at="24,0,28,0" concept="2" trace="test_FeatureMustRetainStateAndIsMovedToInclude#()V" />
+      <node id="1215027478699260945" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="1215027478699260946" at="41,22,45,9" concept="1" />
+      <node id="1215027478699260946" at="40,0,47,0" concept="2" trace="test_FeatureMustRetainStateAndIsMovedToInclude#()V" />
+      <scope id="1215027478699260945" at="20,38,21,60" />
+      <scope id="1215027478699260946" at="25,81,26,72" />
+      <scope id="1215027478699260945" at="31,52,32,19" />
+      <scope id="1215027478699260945" at="36,36,37,46" />
+      <scope id="1215027478699260946" at="42,30,44,141" />
+      <scope id="1215027478699260945" at="20,0,23,0" />
+      <scope id="1215027478699260945" at="31,0,34,0">
+        <var name="owner" id="1215027478699260945" />
+      </scope>
+      <scope id="1215027478699260946" at="24,0,28,0" />
+      <scope id="1215027478699260945" at="35,0,39,0" />
+      <scope id="1215027478699260946" at="40,83,45,9" />
+      <scope id="1215027478699260946" at="40,0,47,0" />
+      <unit id="1215027478699260945" at="29,0,49,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureToInclude_Test$TestBody" />
+      <unit id="1215027478699260945" at="15,0,50,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureToInclude_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/1487763945538464137">
+    <file name="AddFeatureModelInclude_Test.java">
+      <node id="1487763945538464137" at="20,40,21,60" concept="7" />
+      <node id="1487763945538465781" at="25,77,26,68" concept="1" />
+      <node id="1487763945538464137" at="31,52,32,19" concept="7" />
+      <node id="1487763945538464137" at="36,36,37,46" concept="1" />
+      <node id="1487763945538465781" at="40,79,41,22" concept="1" />
+      <node id="1487763945538465781" at="41,22,42,163" concept="1" />
+      <node id="1487763945538464137" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="1487763945538464137" at="20,0,23,0" concept="0" trace="AddFeatureModelInclude_Test#()V" />
+      <node id="1487763945538464137" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="1487763945538465781" at="24,0,28,0" concept="2" trace="test_includeFMMustResultInUnspecifiedInFMC#()V" />
+      <node id="1487763945538464137" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="1487763945538465781" at="40,0,44,0" concept="2" trace="test_includeFMMustResultInUnspecifiedInFMC#()V" />
+      <scope id="1487763945538464137" at="20,40,21,60" />
+      <scope id="1487763945538465781" at="25,77,26,68" />
+      <scope id="1487763945538464137" at="31,52,32,19" />
+      <scope id="1487763945538464137" at="36,36,37,46" />
+      <scope id="1487763945538465781" at="40,79,42,163" />
+      <scope id="1487763945538464137" at="20,0,23,0" />
+      <scope id="1487763945538464137" at="31,0,34,0">
+        <var name="owner" id="1487763945538464137" />
+      </scope>
+      <scope id="1487763945538465781" at="24,0,28,0" />
+      <scope id="1487763945538464137" at="35,0,39,0" />
+      <scope id="1487763945538465781" at="40,0,44,0" />
+      <unit id="1487763945538464137" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddFeatureModelInclude_Test$TestBody" />
+      <unit id="1487763945538464137" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddFeatureModelInclude_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976973902179">
+    <file name="AddAttributeToFeatureWithoutAttributes_Test.java">
+      <node id="2345005976973902179" at="20,56,21,60" concept="7" />
+      <node id="2345005976973902847" at="25,72,26,63" concept="1" />
+      <node id="2345005976973902179" at="31,52,32,19" concept="7" />
+      <node id="2345005976973902179" at="36,36,37,46" concept="1" />
+      <node id="2345005976973902847" at="40,74,41,22" concept="1" />
+      <node id="5226958948427462535" at="42,30,43,66" concept="4" />
+      <node id="2345005976973903011" at="43,66,44,141" concept="1" />
+      <node id="2345005976973902179" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976973902179" at="20,0,23,0" concept="0" trace="AddAttributeToFeatureWithoutAttributes_Test#()V" />
+      <node id="2345005976973902179" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976973902847" at="24,0,28,0" concept="2" trace="test_AttributeWithoutValueMustBeAdded#()V" />
+      <node id="2345005976973902179" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976973902847" at="41,22,45,9" concept="1" />
+      <node id="2345005976973902847" at="40,0,47,0" concept="2" trace="test_AttributeWithoutValueMustBeAdded#()V" />
+      <scope id="2345005976973902179" at="20,56,21,60" />
+      <scope id="2345005976973902847" at="25,72,26,63" />
+      <scope id="2345005976973902179" at="31,52,32,19" />
+      <scope id="2345005976973902179" at="36,36,37,46" />
+      <scope id="2345005976973902847" at="42,30,44,141" />
+      <scope id="2345005976973902179" at="20,0,23,0" />
+      <scope id="2345005976973902179" at="31,0,34,0">
+        <var name="owner" id="2345005976973902179" />
+      </scope>
+      <scope id="2345005976973902847" at="24,0,28,0" />
+      <scope id="2345005976973902179" at="35,0,39,0" />
+      <scope id="2345005976973902847" at="40,74,45,9" />
+      <scope id="2345005976973902847" at="40,0,47,0" />
+      <unit id="2345005976973902179" at="29,0,49,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeToFeatureWithoutAttributes_Test$TestBody" />
+      <unit id="2345005976973902179" at="15,0,50,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeToFeatureWithoutAttributes_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976973925294">
+    <file name="AddAttributeToFeatureWithAttribute_Test.java">
+      <node id="2345005976973925294" at="20,52,21,60" concept="7" />
+      <node id="2345005976973925295" at="25,86,26,77" concept="1" />
+      <node id="2345005976973925294" at="31,52,32,19" concept="7" />
+      <node id="2345005976973925294" at="36,36,37,46" concept="1" />
+      <node id="2345005976973925295" at="40,88,41,22" concept="1" />
+      <node id="2345005976973925295" at="41,22,42,157" concept="1" />
+      <node id="2345005976973925294" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976973925294" at="20,0,23,0" concept="0" trace="AddAttributeToFeatureWithAttribute_Test#()V" />
+      <node id="2345005976973925294" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976973925295" at="24,0,28,0" concept="2" trace="test_AttributeMustBeAddedAfterExistingValueRetainde#()V" />
+      <node id="2345005976973925294" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976973925295" at="40,0,44,0" concept="2" trace="test_AttributeMustBeAddedAfterExistingValueRetainde#()V" />
+      <scope id="2345005976973925294" at="20,52,21,60" />
+      <scope id="2345005976973925295" at="25,86,26,77" />
+      <scope id="2345005976973925294" at="31,52,32,19" />
+      <scope id="2345005976973925294" at="36,36,37,46" />
+      <scope id="2345005976973925295" at="40,88,42,157" />
+      <scope id="2345005976973925294" at="20,0,23,0" />
+      <scope id="2345005976973925294" at="31,0,34,0">
+        <var name="owner" id="2345005976973925294" />
+      </scope>
+      <scope id="2345005976973925295" at="24,0,28,0" />
+      <scope id="2345005976973925294" at="35,0,39,0" />
+      <scope id="2345005976973925295" at="40,0,44,0" />
+      <unit id="2345005976973925294" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeToFeatureWithAttribute_Test$TestBody" />
+      <unit id="2345005976973925294" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeToFeatureWithAttribute_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976973943551">
+    <file name="AddAttributeWithDefaultToFeatureWithoutAttributes_Test.java">
+      <node id="2345005976973943551" at="20,67,21,60" concept="7" />
+      <node id="2345005976973943552" at="25,69,26,60" concept="1" />
+      <node id="2345005976973943551" at="31,52,32,19" concept="7" />
+      <node id="2345005976973943551" at="36,36,37,46" concept="1" />
+      <node id="2345005976973943552" at="40,71,41,22" concept="1" />
+      <node id="2345005976973943552" at="41,22,42,157" concept="1" />
+      <node id="2345005976973943551" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976973943551" at="20,0,23,0" concept="0" trace="AddAttributeWithDefaultToFeatureWithoutAttributes_Test#()V" />
+      <node id="2345005976973943551" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976973943552" at="24,0,28,0" concept="2" trace="test_AttributeWithValueMustBeAdded#()V" />
+      <node id="2345005976973943551" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976973943552" at="40,0,44,0" concept="2" trace="test_AttributeWithValueMustBeAdded#()V" />
+      <scope id="2345005976973943551" at="20,67,21,60" />
+      <scope id="2345005976973943552" at="25,69,26,60" />
+      <scope id="2345005976973943551" at="31,52,32,19" />
+      <scope id="2345005976973943551" at="36,36,37,46" />
+      <scope id="2345005976973943552" at="40,71,42,157" />
+      <scope id="2345005976973943551" at="20,0,23,0" />
+      <scope id="2345005976973943551" at="31,0,34,0">
+        <var name="owner" id="2345005976973943551" />
+      </scope>
+      <scope id="2345005976973943552" at="24,0,28,0" />
+      <scope id="2345005976973943551" at="35,0,39,0" />
+      <scope id="2345005976973943552" at="40,0,44,0" />
+      <unit id="2345005976973943551" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeWithDefaultToFeatureWithoutAttributes_Test$TestBody" />
+      <unit id="2345005976973943551" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeWithDefaultToFeatureWithoutAttributes_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976973966745">
+    <file name="RemoveAttributeFromFeature_Test.java">
+      <node id="2345005976973966745" at="20,44,21,60" concept="7" />
+      <node id="2345005976973966746" at="25,63,26,54" concept="1" />
+      <node id="2345005976973966745" at="31,52,32,19" concept="7" />
+      <node id="2345005976973966745" at="36,36,37,46" concept="1" />
+      <node id="2345005976973966746" at="40,65,41,22" concept="1" />
+      <node id="2345005976973966746" at="41,22,42,157" concept="1" />
+      <node id="2345005976973966745" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976973966745" at="20,0,23,0" concept="0" trace="RemoveAttributeFromFeature_Test#()V" />
+      <node id="2345005976973966745" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976973966746" at="24,0,28,0" concept="2" trace="test_AttributeMustBeRemoved2#()V" />
+      <node id="2345005976973966745" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976973966746" at="40,0,44,0" concept="2" trace="test_AttributeMustBeRemoved2#()V" />
+      <scope id="2345005976973966745" at="20,44,21,60" />
+      <scope id="2345005976973966746" at="25,63,26,54" />
+      <scope id="2345005976973966745" at="31,52,32,19" />
+      <scope id="2345005976973966745" at="36,36,37,46" />
+      <scope id="2345005976973966746" at="40,65,42,157" />
+      <scope id="2345005976973966745" at="20,0,23,0" />
+      <scope id="2345005976973966745" at="31,0,34,0">
+        <var name="owner" id="2345005976973966745" />
+      </scope>
+      <scope id="2345005976973966746" at="24,0,28,0" />
+      <scope id="2345005976973966745" at="35,0,39,0" />
+      <scope id="2345005976973966746" at="40,0,44,0" />
+      <unit id="2345005976973966745" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveAttributeFromFeature_Test$TestBody" />
+      <unit id="2345005976973966745" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveAttributeFromFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976973977666">
+    <file name="AddFeatureToEmptyRootModel_Test.java">
+      <node id="2345005976973977666" at="20,44,21,60" concept="7" />
+      <node id="2345005976973977667" at="25,57,26,48" concept="1" />
+      <node id="2345005976973977666" at="31,52,32,19" concept="7" />
+      <node id="2345005976973977666" at="36,36,37,46" concept="1" />
+      <node id="2345005976973977667" at="40,59,41,22" concept="1" />
+      <node id="2345005976973977667" at="41,22,42,157" concept="1" />
+      <node id="2345005976973977666" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976973977666" at="20,0,23,0" concept="0" trace="AddFeatureToEmptyRootModel_Test#()V" />
+      <node id="2345005976973977666" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976973977667" at="24,0,28,0" concept="2" trace="test_ConfigMustBeAdded#()V" />
+      <node id="2345005976973977666" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976973977667" at="40,0,44,0" concept="2" trace="test_ConfigMustBeAdded#()V" />
+      <scope id="2345005976973977666" at="20,44,21,60" />
+      <scope id="2345005976973977667" at="25,57,26,48" />
+      <scope id="2345005976973977666" at="31,52,32,19" />
+      <scope id="2345005976973977666" at="36,36,37,46" />
+      <scope id="2345005976973977667" at="40,59,42,157" />
+      <scope id="2345005976973977666" at="20,0,23,0" />
+      <scope id="2345005976973977666" at="31,0,34,0">
+        <var name="owner" id="2345005976973977666" />
+      </scope>
+      <scope id="2345005976973977667" at="24,0,28,0" />
+      <scope id="2345005976973977666" at="35,0,39,0" />
+      <scope id="2345005976973977667" at="40,0,44,0" />
+      <unit id="2345005976973977666" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddFeatureToEmptyRootModel_Test$TestBody" />
+      <unit id="2345005976973977666" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddFeatureToEmptyRootModel_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976973986347">
+    <file name="AddFeatureAfterSibling_Test.java">
+      <node id="2345005976973986347" at="20,40,21,60" concept="7" />
+      <node id="2345005976973986348" at="25,67,26,58" concept="1" />
+      <node id="2345005976973988780" at="29,65,30,56" concept="1" />
+      <node id="2345005976973988880" at="33,67,34,58" concept="1" />
+      <node id="2345005976973986347" at="39,52,40,19" concept="7" />
+      <node id="2345005976973986347" at="44,36,45,46" concept="1" />
+      <node id="2345005976973986348" at="48,69,49,22" concept="1" />
+      <node id="2345005976973986348" at="49,22,50,175" concept="1" />
+      <node id="2345005976973988780" at="52,67,53,22" concept="1" />
+      <node id="2345005976973988780" at="53,22,54,171" concept="1" />
+      <node id="2345005976973988880" at="56,69,57,22" concept="1" />
+      <node id="2345005976973988880" at="57,22,58,175" concept="1" />
+      <node id="2345005976973986347" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976973986347" at="20,0,23,0" concept="0" trace="AddFeatureAfterSibling_Test#()V" />
+      <node id="2345005976973986347" at="39,0,42,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976973986348" at="24,0,28,0" concept="2" trace="test_siblingStateMustBeUndecided#()V" />
+      <node id="2345005976973988780" at="28,0,32,0" concept="2" trace="test_SiblingStateMustBeChecked#()V" />
+      <node id="2345005976973988880" at="32,0,36,0" concept="2" trace="test_SiblingStateMustBeUnchecked#()V" />
+      <node id="2345005976973986347" at="43,0,47,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976973986348" at="48,0,52,0" concept="2" trace="test_siblingStateMustBeUndecided#()V" />
+      <node id="2345005976973988780" at="52,0,56,0" concept="2" trace="test_SiblingStateMustBeChecked#()V" />
+      <node id="2345005976973988880" at="56,0,60,0" concept="2" trace="test_SiblingStateMustBeUnchecked#()V" />
+      <scope id="2345005976973986347" at="20,40,21,60" />
+      <scope id="2345005976973986348" at="25,67,26,58" />
+      <scope id="2345005976973988780" at="29,65,30,56" />
+      <scope id="2345005976973988880" at="33,67,34,58" />
+      <scope id="2345005976973986347" at="39,52,40,19" />
+      <scope id="2345005976973986347" at="44,36,45,46" />
+      <scope id="2345005976973986348" at="48,69,50,175" />
+      <scope id="2345005976973988780" at="52,67,54,171" />
+      <scope id="2345005976973988880" at="56,69,58,175" />
+      <scope id="2345005976973986347" at="20,0,23,0" />
+      <scope id="2345005976973986347" at="39,0,42,0">
+        <var name="owner" id="2345005976973986347" />
+      </scope>
+      <scope id="2345005976973986348" at="24,0,28,0" />
+      <scope id="2345005976973988780" at="28,0,32,0" />
+      <scope id="2345005976973988880" at="32,0,36,0" />
+      <scope id="2345005976973986347" at="43,0,47,0" />
+      <scope id="2345005976973986348" at="48,0,52,0" />
+      <scope id="2345005976973988780" at="52,0,56,0" />
+      <scope id="2345005976973988880" at="56,0,60,0" />
+      <unit id="2345005976973986347" at="37,0,62,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddFeatureAfterSibling_Test$TestBody" />
+      <unit id="2345005976973986347" at="15,0,63,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddFeatureAfterSibling_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976979905588">
+    <file name="MoveFeatureAfterSibling_Test.java">
+      <node id="2345005976979905588" at="20,41,21,60" concept="7" />
+      <node id="2345005976979936737" at="25,64,26,55" concept="1" />
+      <node id="2345005976979905588" at="31,52,32,19" concept="7" />
+      <node id="2345005976979905588" at="36,36,37,46" concept="1" />
+      <node id="2345005976979936737" at="40,66,41,22" concept="1" />
+      <node id="2345005976979936737" at="41,22,42,175" concept="1" />
+      <node id="2345005976979905588" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976979905588" at="20,0,23,0" concept="0" trace="MoveFeatureAfterSibling_Test#()V" />
+      <node id="2345005976979905588" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976979936737" at="24,0,28,0" concept="2" trace="test_ChildMustRemainUndecided#()V" />
+      <node id="2345005976979905588" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976979936737" at="40,0,44,0" concept="2" trace="test_ChildMustRemainUndecided#()V" />
+      <scope id="2345005976979905588" at="20,41,21,60" />
+      <scope id="2345005976979936737" at="25,64,26,55" />
+      <scope id="2345005976979905588" at="31,52,32,19" />
+      <scope id="2345005976979905588" at="36,36,37,46" />
+      <scope id="2345005976979936737" at="40,66,42,175" />
+      <scope id="2345005976979905588" at="20,0,23,0" />
+      <scope id="2345005976979905588" at="31,0,34,0">
+        <var name="owner" id="2345005976979905588" />
+      </scope>
+      <scope id="2345005976979936737" at="24,0,28,0" />
+      <scope id="2345005976979905588" at="35,0,39,0" />
+      <scope id="2345005976979936737" at="40,0,44,0" />
+      <unit id="2345005976979905588" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureAfterSibling_Test$TestBody" />
+      <unit id="2345005976979905588" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureAfterSibling_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976979993111">
+    <file name="MoveFeatureRemoveParent_Test.java">
+      <node id="2345005976979993111" at="20,41,21,60" concept="7" />
+      <node id="2345005976979993138" at="25,63,26,54" concept="1" />
+      <node id="2345005976979993111" at="31,52,32,19" concept="7" />
+      <node id="2345005976979993111" at="36,36,37,46" concept="1" />
+      <node id="2345005976979993138" at="40,65,41,22" concept="1" />
+      <node id="2345005976979993138" at="41,22,42,157" concept="1" />
+      <node id="2345005976979993111" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976979993111" at="20,0,23,0" concept="0" trace="MoveFeatureRemoveParent_Test#()V" />
+      <node id="2345005976979993111" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976979993138" at="24,0,28,0" concept="2" trace="test_NodeStateMustBeRetained#()V" />
+      <node id="2345005976979993111" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976979993138" at="40,0,44,0" concept="2" trace="test_NodeStateMustBeRetained#()V" />
+      <scope id="2345005976979993111" at="20,41,21,60" />
+      <scope id="2345005976979993138" at="25,63,26,54" />
+      <scope id="2345005976979993111" at="31,52,32,19" />
+      <scope id="2345005976979993111" at="36,36,37,46" />
+      <scope id="2345005976979993138" at="40,65,42,157" />
+      <scope id="2345005976979993111" at="20,0,23,0" />
+      <scope id="2345005976979993111" at="31,0,34,0">
+        <var name="owner" id="2345005976979993111" />
+      </scope>
+      <scope id="2345005976979993138" at="24,0,28,0" />
+      <scope id="2345005976979993111" at="35,0,39,0" />
+      <scope id="2345005976979993138" at="40,0,44,0" />
+      <unit id="2345005976979993111" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureRemoveParent_Test$TestBody" />
+      <unit id="2345005976979993111" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureRemoveParent_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976980002241">
+    <file name="MoveFeatureSwapHierarchy_Test.java">
+      <node id="2345005976980002241" at="20,42,21,60" concept="7" />
+      <node id="2345005976980002268" at="25,63,26,54" concept="1" />
+      <node id="2345005976980002241" at="31,52,32,19" concept="7" />
+      <node id="2345005976980002241" at="36,36,37,46" concept="1" />
+      <node id="2345005976980002268" at="40,65,41,22" concept="1" />
+      <node id="2345005976980002268" at="41,22,42,157" concept="1" />
+      <node id="2345005976980002241" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976980002241" at="20,0,23,0" concept="0" trace="MoveFeatureSwapHierarchy_Test#()V" />
+      <node id="2345005976980002241" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976980002268" at="24,0,28,0" concept="2" trace="test_NodeStateMustBeRetained#()V" />
+      <node id="2345005976980002241" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976980002268" at="40,0,44,0" concept="2" trace="test_NodeStateMustBeRetained#()V" />
+      <scope id="2345005976980002241" at="20,42,21,60" />
+      <scope id="2345005976980002268" at="25,63,26,54" />
+      <scope id="2345005976980002241" at="31,52,32,19" />
+      <scope id="2345005976980002241" at="36,36,37,46" />
+      <scope id="2345005976980002268" at="40,65,42,157" />
+      <scope id="2345005976980002241" at="20,0,23,0" />
+      <scope id="2345005976980002241" at="31,0,34,0">
+        <var name="owner" id="2345005976980002241" />
+      </scope>
+      <scope id="2345005976980002268" at="24,0,28,0" />
+      <scope id="2345005976980002241" at="35,0,39,0" />
+      <scope id="2345005976980002268" at="40,0,44,0" />
+      <unit id="2345005976980002241" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureSwapHierarchy_Test$TestBody" />
+      <unit id="2345005976980002241" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureSwapHierarchy_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982385757">
+    <file name="AddAttributeToFeatureStringWithDefault_Test.java">
+      <node id="2345005976982385757" at="20,56,21,60" concept="7" />
+      <node id="2345005976982401148" at="25,69,26,60" concept="1" />
+      <node id="2345005976982385757" at="31,52,32,19" concept="7" />
+      <node id="2345005976982385757" at="36,36,37,46" concept="1" />
+      <node id="2345005976982401148" at="40,71,41,22" concept="1" />
+      <node id="2345005976982401148" at="41,22,42,157" concept="1" />
+      <node id="2345005976982385757" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982385757" at="20,0,23,0" concept="0" trace="AddAttributeToFeatureStringWithDefault_Test#()V" />
+      <node id="2345005976982385757" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982401148" at="24,0,28,0" concept="2" trace="test_AttributeMustHaveDefaultValue#()V" />
+      <node id="2345005976982385757" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982401148" at="40,0,44,0" concept="2" trace="test_AttributeMustHaveDefaultValue#()V" />
+      <scope id="2345005976982385757" at="20,56,21,60" />
+      <scope id="2345005976982401148" at="25,69,26,60" />
+      <scope id="2345005976982385757" at="31,52,32,19" />
+      <scope id="2345005976982385757" at="36,36,37,46" />
+      <scope id="2345005976982401148" at="40,71,42,157" />
+      <scope id="2345005976982385757" at="20,0,23,0" />
+      <scope id="2345005976982385757" at="31,0,34,0">
+        <var name="owner" id="2345005976982385757" />
+      </scope>
+      <scope id="2345005976982401148" at="24,0,28,0" />
+      <scope id="2345005976982385757" at="35,0,39,0" />
+      <scope id="2345005976982401148" at="40,0,44,0" />
+      <unit id="2345005976982385757" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeToFeatureStringWithDefault_Test$TestBody" />
+      <unit id="2345005976982385757" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeToFeatureStringWithDefault_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982413169">
+    <file name="AddAttributeToFeatureEnumWithDefault_Test.java">
+      <node id="2345005976982413169" at="20,54,21,60" concept="7" />
+      <node id="2345005976982413192" at="25,69,26,60" concept="1" />
+      <node id="2345005976982413169" at="31,52,32,19" concept="7" />
+      <node id="2345005976982413169" at="36,36,37,46" concept="1" />
+      <node id="2345005976982413192" at="40,71,41,22" concept="1" />
+      <node id="2345005976982413192" at="41,22,42,157" concept="1" />
+      <node id="2345005976982413169" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982413169" at="20,0,23,0" concept="0" trace="AddAttributeToFeatureEnumWithDefault_Test#()V" />
+      <node id="2345005976982413169" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982413192" at="24,0,28,0" concept="2" trace="test_AttributeMustHaveDefaultValue#()V" />
+      <node id="2345005976982413169" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982413192" at="40,0,44,0" concept="2" trace="test_AttributeMustHaveDefaultValue#()V" />
+      <scope id="2345005976982413169" at="20,54,21,60" />
+      <scope id="2345005976982413192" at="25,69,26,60" />
+      <scope id="2345005976982413169" at="31,52,32,19" />
+      <scope id="2345005976982413169" at="36,36,37,46" />
+      <scope id="2345005976982413192" at="40,71,42,157" />
+      <scope id="2345005976982413169" at="20,0,23,0" />
+      <scope id="2345005976982413169" at="31,0,34,0">
+        <var name="owner" id="2345005976982413169" />
+      </scope>
+      <scope id="2345005976982413192" at="24,0,28,0" />
+      <scope id="2345005976982413169" at="35,0,39,0" />
+      <scope id="2345005976982413192" at="40,0,44,0" />
+      <unit id="2345005976982413169" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeToFeatureEnumWithDefault_Test$TestBody" />
+      <unit id="2345005976982413169" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeToFeatureEnumWithDefault_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982437209">
+    <file name="NoopIncludeSameModelTwice_Test.java">
+      <node id="2345005976982437209" at="20,43,21,60" concept="7" />
+      <node id="2345005976982438271" at="25,66,26,57" concept="1" />
+      <node id="2345005976982437209" at="31,52,32,19" concept="7" />
+      <node id="2345005976982437209" at="36,36,37,46" concept="1" />
+      <node id="2345005976982438271" at="40,68,41,22" concept="1" />
+      <node id="2345005976982438271" at="41,22,42,157" concept="1" />
+      <node id="2345005976982437209" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982437209" at="20,0,23,0" concept="0" trace="NoopIncludeSameModelTwice_Test#()V" />
+      <node id="2345005976982437209" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982438271" at="24,0,28,0" concept="2" trace="test_ConfigurationMustNotChange#()V" />
+      <node id="2345005976982437209" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982438271" at="40,0,44,0" concept="2" trace="test_ConfigurationMustNotChange#()V" />
+      <scope id="2345005976982437209" at="20,43,21,60" />
+      <scope id="2345005976982438271" at="25,66,26,57" />
+      <scope id="2345005976982437209" at="31,52,32,19" />
+      <scope id="2345005976982437209" at="36,36,37,46" />
+      <scope id="2345005976982438271" at="40,68,42,157" />
+      <scope id="2345005976982437209" at="20,0,23,0" />
+      <scope id="2345005976982437209" at="31,0,34,0">
+        <var name="owner" id="2345005976982437209" />
+      </scope>
+      <scope id="2345005976982438271" at="24,0,28,0" />
+      <scope id="2345005976982437209" at="35,0,39,0" />
+      <scope id="2345005976982438271" at="40,0,44,0" />
+      <unit id="2345005976982437209" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.NoopIncludeSameModelTwice_Test$TestBody" />
+      <unit id="2345005976982437209" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.NoopIncludeSameModelTwice_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982449947">
+    <file name="AddFeatureIncludeSameModel_Test.java">
+      <node id="2345005976982449947" at="20,44,21,60" concept="7" />
+      <node id="2345005976982449948" at="25,66,26,57" concept="1" />
+      <node id="2345005976982449947" at="31,52,32,19" concept="7" />
+      <node id="2345005976982449947" at="36,36,37,46" concept="1" />
+      <node id="2345005976982449948" at="40,68,41,22" concept="1" />
+      <node id="2345005976982515650" at="42,30,43,28" concept="4" />
+      <node id="2345005976982449951" at="43,28,44,135" concept="1" />
+      <node id="2345005976982449947" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982449947" at="20,0,23,0" concept="0" trace="AddFeatureIncludeSameModel_Test#()V" />
+      <node id="2345005976982449947" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982449948" at="24,0,28,0" concept="2" trace="test_ConfigurationMustNotChange#()V" />
+      <node id="2345005976982449947" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982449948" at="41,22,45,9" concept="1" />
+      <node id="2345005976982449948" at="40,0,47,0" concept="2" trace="test_ConfigurationMustNotChange#()V" />
+      <scope id="2345005976982449947" at="20,44,21,60" />
+      <scope id="2345005976982449948" at="25,66,26,57" />
+      <scope id="2345005976982449947" at="31,52,32,19" />
+      <scope id="2345005976982449947" at="36,36,37,46" />
+      <scope id="2345005976982449948" at="42,30,44,135" />
+      <scope id="2345005976982449947" at="20,0,23,0" />
+      <scope id="2345005976982449947" at="31,0,34,0">
+        <var name="owner" id="2345005976982449947" />
+      </scope>
+      <scope id="2345005976982449948" at="24,0,28,0" />
+      <scope id="2345005976982449947" at="35,0,39,0" />
+      <scope id="2345005976982449948" at="40,68,45,9" />
+      <scope id="2345005976982449948" at="40,0,47,0" />
+      <unit id="2345005976982449947" at="29,0,49,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddFeatureIncludeSameModel_Test$TestBody" />
+      <unit id="2345005976982449947" at="15,0,50,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddFeatureIncludeSameModel_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982527702">
+    <file name="NoopFeatureWithCardinality0to1_Test.java">
+      <node id="2345005976982527702" at="20,48,21,60" concept="7" />
+      <node id="2345005976982528245" at="25,53,26,44" concept="1" />
+      <node id="2345005976982527702" at="31,52,32,19" concept="7" />
+      <node id="2345005976982527702" at="36,36,37,46" concept="1" />
+      <node id="2345005976982528245" at="40,55,41,22" concept="1" />
+      <node id="2345005976982528780" at="42,30,43,28" concept="4" />
+      <node id="2345005976982528389" at="43,28,44,135" concept="1" />
+      <node id="2345005976982527702" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982527702" at="20,0,23,0" concept="0" trace="NoopFeatureWithCardinality0to1_Test#()V" />
+      <node id="2345005976982527702" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982528245" at="24,0,28,0" concept="2" trace="test_MustNotChange#()V" />
+      <node id="2345005976982527702" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982528245" at="41,22,45,9" concept="1" />
+      <node id="2345005976982528245" at="40,0,47,0" concept="2" trace="test_MustNotChange#()V" />
+      <scope id="2345005976982527702" at="20,48,21,60" />
+      <scope id="2345005976982528245" at="25,53,26,44" />
+      <scope id="2345005976982527702" at="31,52,32,19" />
+      <scope id="2345005976982527702" at="36,36,37,46" />
+      <scope id="2345005976982528245" at="42,30,44,135" />
+      <scope id="2345005976982527702" at="20,0,23,0" />
+      <scope id="2345005976982527702" at="31,0,34,0">
+        <var name="owner" id="2345005976982527702" />
+      </scope>
+      <scope id="2345005976982528245" at="24,0,28,0" />
+      <scope id="2345005976982527702" at="35,0,39,0" />
+      <scope id="2345005976982528245" at="40,55,45,9" />
+      <scope id="2345005976982528245" at="40,0,47,0" />
+      <unit id="2345005976982527702" at="29,0,49,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.NoopFeatureWithCardinality0to1_Test$TestBody" />
+      <unit id="2345005976982527702" at="15,0,50,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.NoopFeatureWithCardinality0to1_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982565160">
+    <file name="NoopFeatureWithCardinality1to3_Test.java">
+      <node id="2345005976982565160" at="20,48,21,60" concept="7" />
+      <node id="2345005976982565183" at="25,53,26,44" concept="1" />
+      <node id="2345005976982565160" at="31,52,32,19" concept="7" />
+      <node id="2345005976982565160" at="36,36,37,46" concept="1" />
+      <node id="2345005976982565183" at="40,55,41,22" concept="1" />
+      <node id="2345005976982565186" at="42,30,43,28" concept="4" />
+      <node id="2345005976982565189" at="43,28,44,135" concept="1" />
+      <node id="2345005976982565160" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982565160" at="20,0,23,0" concept="0" trace="NoopFeatureWithCardinality1to3_Test#()V" />
+      <node id="2345005976982565160" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982565183" at="24,0,28,0" concept="2" trace="test_MustNotChange#()V" />
+      <node id="2345005976982565160" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982565183" at="41,22,45,9" concept="1" />
+      <node id="2345005976982565183" at="40,0,47,0" concept="2" trace="test_MustNotChange#()V" />
+      <scope id="2345005976982565160" at="20,48,21,60" />
+      <scope id="2345005976982565183" at="25,53,26,44" />
+      <scope id="2345005976982565160" at="31,52,32,19" />
+      <scope id="2345005976982565160" at="36,36,37,46" />
+      <scope id="2345005976982565183" at="42,30,44,135" />
+      <scope id="2345005976982565160" at="20,0,23,0" />
+      <scope id="2345005976982565160" at="31,0,34,0">
+        <var name="owner" id="2345005976982565160" />
+      </scope>
+      <scope id="2345005976982565183" at="24,0,28,0" />
+      <scope id="2345005976982565160" at="35,0,39,0" />
+      <scope id="2345005976982565183" at="40,55,45,9" />
+      <scope id="2345005976982565183" at="40,0,47,0" />
+      <unit id="2345005976982565160" at="29,0,49,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.NoopFeatureWithCardinality1to3_Test$TestBody" />
+      <unit id="2345005976982565160" at="15,0,50,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.NoopFeatureWithCardinality1to3_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982589784">
+    <file name="IncrementCardinalityLowerBound_Test.java">
+      <node id="2345005976982589784" at="23,48,24,60" concept="7" />
+      <node id="2345005976982590162" at="28,57,29,48" concept="1" />
+      <node id="2614737763468476863" at="32,58,33,49" concept="1" />
+      <node id="6945424678038334021" at="36,73,37,64" concept="1" />
+      <node id="6945424678038334062" at="40,73,41,64" concept="1" />
+      <node id="2345005976982589784" at="46,52,47,19" concept="7" />
+      <node id="2345005976982589784" at="51,36,52,46" concept="1" />
+      <node id="2345005976982590162" at="55,59,56,22" concept="1" />
+      <node id="2345005976982590162" at="56,22,57,163" concept="1" />
+      <node id="2614737763468476863" at="59,60,60,22" concept="1" />
+      <node id="2614737763468476863" at="60,22,61,166" concept="1" />
+      <node id="6945424678038334021" at="63,75,64,22" concept="1" />
+      <node id="6945424678038334021" at="65,30,66,63" concept="3" />
+      <node id="6945424678038334021" at="66,63,67,161" concept="1" />
+      <node id="6945424678038334062" at="70,75,71,22" concept="1" />
+      <node id="6945424678038334062" at="72,30,73,63" concept="3" />
+      <node id="6945424678038334062" at="73,63,74,161" concept="1" />
+      <node id="2345005976982589784" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982589784" at="23,0,26,0" concept="0" trace="IncrementCardinalityLowerBound_Test#()V" />
+      <node id="2345005976982589784" at="46,0,49,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982590162" at="27,0,31,0" concept="2" trace="test_ConfigMustBeAdded#()V" />
+      <node id="2614737763468476863" at="31,0,35,0" concept="2" trace="test_ConfigMustBeAdded2#()V" />
+      <node id="6945424678038334021" at="35,0,39,0" concept="2" trace="test_NodeErrorCheck6945424678038334021#()V" />
+      <node id="6945424678038334062" at="39,0,43,0" concept="2" trace="test_NodeErrorCheck6945424678038334062#()V" />
+      <node id="2345005976982589784" at="50,0,54,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982590162" at="55,0,59,0" concept="2" trace="test_ConfigMustBeAdded#()V" />
+      <node id="2614737763468476863" at="59,0,63,0" concept="2" trace="test_ConfigMustBeAdded2#()V" />
+      <node id="6945424678038334021" at="64,22,68,9" concept="1" />
+      <node id="6945424678038334062" at="71,22,75,9" concept="1" />
+      <node id="6945424678038334021" at="63,0,70,0" concept="2" trace="test_NodeErrorCheck6945424678038334021#()V" />
+      <node id="6945424678038334062" at="70,0,77,0" concept="2" trace="test_NodeErrorCheck6945424678038334062#()V" />
+      <scope id="2345005976982589784" at="23,48,24,60" />
+      <scope id="2345005976982590162" at="28,57,29,48" />
+      <scope id="2614737763468476863" at="32,58,33,49" />
+      <scope id="6945424678038334021" at="36,73,37,64" />
+      <scope id="6945424678038334062" at="40,73,41,64" />
+      <scope id="2345005976982589784" at="46,52,47,19" />
+      <scope id="2345005976982589784" at="51,36,52,46" />
+      <scope id="2345005976982590162" at="55,59,57,163" />
+      <scope id="2614737763468476863" at="59,60,61,166" />
+      <scope id="6945424678038334021" at="65,30,67,161">
+        <var name="nodeToCheck" id="6945424678038334021" />
+      </scope>
+      <scope id="6945424678038334062" at="72,30,74,161">
+        <var name="nodeToCheck" id="6945424678038334062" />
+      </scope>
+      <scope id="2345005976982589784" at="23,0,26,0" />
+      <scope id="2345005976982589784" at="46,0,49,0">
+        <var name="owner" id="2345005976982589784" />
+      </scope>
+      <scope id="2345005976982590162" at="27,0,31,0" />
+      <scope id="2614737763468476863" at="31,0,35,0" />
+      <scope id="6945424678038334021" at="35,0,39,0" />
+      <scope id="6945424678038334062" at="39,0,43,0" />
+      <scope id="2345005976982589784" at="50,0,54,0" />
+      <scope id="2345005976982590162" at="55,0,59,0" />
+      <scope id="2614737763468476863" at="59,0,63,0" />
+      <scope id="6945424678038334021" at="63,75,68,9" />
+      <scope id="6945424678038334062" at="70,75,75,9" />
+      <scope id="6945424678038334021" at="63,0,70,0" />
+      <scope id="6945424678038334062" at="70,0,77,0" />
+      <unit id="2345005976982589784" at="44,0,79,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.IncrementCardinalityLowerBound_Test$TestBody" />
+      <unit id="2345005976982589784" at="18,0,80,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.IncrementCardinalityLowerBound_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982615046">
+    <file name="DecrementCardinalityUpperBound_Test.java">
+      <node id="2345005976982615046" at="23,48,24,60" concept="7" />
+      <node id="2345005976982615067" at="28,59,29,50" concept="1" />
+      <node id="6945424678038959636" at="32,73,33,64" concept="1" />
+      <node id="2345005976982615046" at="38,52,39,19" concept="7" />
+      <node id="2345005976982615046" at="43,36,44,46" concept="1" />
+      <node id="2345005976982615067" at="47,61,48,22" concept="1" />
+      <node id="2345005976982615067" at="48,22,49,157" concept="1" />
+      <node id="6945424678038959636" at="51,75,52,22" concept="1" />
+      <node id="6945424678038959636" at="53,30,54,63" concept="3" />
+      <node id="6945424678038959636" at="54,63,55,161" concept="1" />
+      <node id="2345005976982615046" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982615046" at="23,0,26,0" concept="0" trace="DecrementCardinalityUpperBound_Test#()V" />
+      <node id="2345005976982615046" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982615067" at="27,0,31,0" concept="2" trace="test_ConfigMustBeRemoved#()V" />
+      <node id="6945424678038959636" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678038959636#()V" />
+      <node id="2345005976982615046" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982615067" at="47,0,51,0" concept="2" trace="test_ConfigMustBeRemoved#()V" />
+      <node id="6945424678038959636" at="52,22,56,9" concept="1" />
+      <node id="6945424678038959636" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678038959636#()V" />
+      <scope id="2345005976982615046" at="23,48,24,60" />
+      <scope id="2345005976982615067" at="28,59,29,50" />
+      <scope id="6945424678038959636" at="32,73,33,64" />
+      <scope id="2345005976982615046" at="38,52,39,19" />
+      <scope id="2345005976982615046" at="43,36,44,46" />
+      <scope id="2345005976982615067" at="47,61,49,157" />
+      <scope id="6945424678038959636" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678038959636" />
+      </scope>
+      <scope id="2345005976982615046" at="23,0,26,0" />
+      <scope id="2345005976982615046" at="38,0,41,0">
+        <var name="owner" id="2345005976982615046" />
+      </scope>
+      <scope id="2345005976982615067" at="27,0,31,0" />
+      <scope id="6945424678038959636" at="31,0,35,0" />
+      <scope id="2345005976982615046" at="42,0,46,0" />
+      <scope id="2345005976982615067" at="47,0,51,0" />
+      <scope id="6945424678038959636" at="51,75,56,9" />
+      <scope id="6945424678038959636" at="51,0,58,0" />
+      <unit id="2345005976982615046" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.DecrementCardinalityUpperBound_Test$TestBody" />
+      <unit id="2345005976982615046" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.DecrementCardinalityUpperBound_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982629376">
+    <file name="AddCardinality0to0_Test.java">
+      <node id="2345005976982629376" at="20,36,21,60" concept="7" />
+      <node id="2345005976982630109" at="25,60,26,51" concept="1" />
+      <node id="2345005976982629376" at="31,52,32,19" concept="7" />
+      <node id="2345005976982629376" at="36,36,37,46" concept="1" />
+      <node id="2345005976982630109" at="40,62,41,22" concept="1" />
+      <node id="2345005976982630109" at="41,22,42,157" concept="1" />
+      <node id="2345005976982629376" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982629376" at="20,0,23,0" concept="0" trace="AddCardinality0to0_Test#()V" />
+      <node id="2345005976982629376" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982630109" at="24,0,28,0" concept="2" trace="test_FeatureMustBeRemoved#()V" />
+      <node id="2345005976982629376" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982630109" at="40,0,44,0" concept="2" trace="test_FeatureMustBeRemoved#()V" />
+      <scope id="2345005976982629376" at="20,36,21,60" />
+      <scope id="2345005976982630109" at="25,60,26,51" />
+      <scope id="2345005976982629376" at="31,52,32,19" />
+      <scope id="2345005976982629376" at="36,36,37,46" />
+      <scope id="2345005976982630109" at="40,62,42,157" />
+      <scope id="2345005976982629376" at="20,0,23,0" />
+      <scope id="2345005976982629376" at="31,0,34,0">
+        <var name="owner" id="2345005976982629376" />
+      </scope>
+      <scope id="2345005976982630109" at="24,0,28,0" />
+      <scope id="2345005976982629376" at="35,0,39,0" />
+      <scope id="2345005976982630109" at="40,0,44,0" />
+      <unit id="2345005976982629376" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddCardinality0to0_Test$TestBody" />
+      <unit id="2345005976982629376" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddCardinality0to0_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982643922">
+    <file name="AddCardinality1to2_Test.java">
+      <node id="2345005976982643922" at="20,36,21,60" concept="7" />
+      <node id="2345005976982643923" at="25,61,26,52" concept="1" />
+      <node id="2345005976982643922" at="31,52,32,19" concept="7" />
+      <node id="2345005976982643922" at="36,36,37,46" concept="1" />
+      <node id="2345005976982643923" at="40,63,41,22" concept="1" />
+      <node id="2345005976982643923" at="41,22,42,157" concept="1" />
+      <node id="2345005976982643922" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982643922" at="20,0,23,0" concept="0" trace="AddCardinality1to2_Test#()V" />
+      <node id="2345005976982643922" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982643923" at="24,0,28,0" concept="2" trace="test_FeatureMustBeRetained#()V" />
+      <node id="2345005976982643922" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982643923" at="40,0,44,0" concept="2" trace="test_FeatureMustBeRetained#()V" />
+      <scope id="2345005976982643922" at="20,36,21,60" />
+      <scope id="2345005976982643923" at="25,61,26,52" />
+      <scope id="2345005976982643922" at="31,52,32,19" />
+      <scope id="2345005976982643922" at="36,36,37,46" />
+      <scope id="2345005976982643923" at="40,63,42,157" />
+      <scope id="2345005976982643922" at="20,0,23,0" />
+      <scope id="2345005976982643922" at="31,0,34,0">
+        <var name="owner" id="2345005976982643922" />
+      </scope>
+      <scope id="2345005976982643923" at="24,0,28,0" />
+      <scope id="2345005976982643922" at="35,0,39,0" />
+      <scope id="2345005976982643923" at="40,0,44,0" />
+      <unit id="2345005976982643922" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddCardinality1to2_Test$TestBody" />
+      <unit id="2345005976982643922" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddCardinality1to2_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982667759">
+    <file name="AddCardinality2to2_Test.java">
+      <node id="2345005976982667759" at="20,36,21,60" concept="7" />
+      <node id="2345005976982667760" at="25,80,26,71" concept="1" />
+      <node id="2345005976982667759" at="31,52,32,19" concept="7" />
+      <node id="2345005976982667759" at="36,36,37,46" concept="1" />
+      <node id="2345005976982667760" at="40,82,41,22" concept="1" />
+      <node id="2345005976982667760" at="41,22,42,163" concept="1" />
+      <node id="2345005976982667759" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982667759" at="20,0,23,0" concept="0" trace="AddCardinality2to2_Test#()V" />
+      <node id="2345005976982667759" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982667760" at="24,0,28,0" concept="2" trace="test_ExistingFeatureMustBeRetainedAndOneAdded#()V" />
+      <node id="2345005976982667759" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982667760" at="40,0,44,0" concept="2" trace="test_ExistingFeatureMustBeRetainedAndOneAdded#()V" />
+      <scope id="2345005976982667759" at="20,36,21,60" />
+      <scope id="2345005976982667760" at="25,80,26,71" />
+      <scope id="2345005976982667759" at="31,52,32,19" />
+      <scope id="2345005976982667759" at="36,36,37,46" />
+      <scope id="2345005976982667760" at="40,82,42,163" />
+      <scope id="2345005976982667759" at="20,0,23,0" />
+      <scope id="2345005976982667759" at="31,0,34,0">
+        <var name="owner" id="2345005976982667759" />
+      </scope>
+      <scope id="2345005976982667760" at="24,0,28,0" />
+      <scope id="2345005976982667759" at="35,0,39,0" />
+      <scope id="2345005976982667760" at="40,0,44,0" />
+      <unit id="2345005976982667759" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddCardinality2to2_Test$TestBody" />
+      <unit id="2345005976982667759" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddCardinality2to2_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982711808">
+    <file name="RemoveCardinality0to1is1_Test.java">
+      <node id="2345005976982711808" at="24,42,25,60" concept="7" />
+      <node id="2345005976982713259" at="29,71,30,62" concept="1" />
+      <node id="4042687269123766421" at="33,90,34,81" concept="1" />
+      <node id="2345005976982711808" at="39,52,40,19" concept="7" />
+      <node id="2345005976982711808" at="44,36,45,46" concept="1" />
+      <node id="2345005976982713259" at="48,73,49,22" concept="1" />
+      <node id="2345005976982713259" at="49,22,50,157" concept="1" />
+      <node id="4042687269123766421" at="52,92,53,22" concept="1" />
+      <node id="4042687269123766421" at="54,30,55,63" concept="3" />
+      <node id="4042687269123766421" at="55,63,56,306" concept="1" />
+      <node id="2345005976982711808" at="21,0,23,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982711808" at="24,0,27,0" concept="0" trace="RemoveCardinality0to1is1_Test#()V" />
+      <node id="2345005976982711808" at="39,0,42,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982713259" at="28,0,32,0" concept="2" trace="test_FeatureMustBeRetainedAndChecked#()V" />
+      <node id="4042687269123766421" at="32,0,36,0" concept="2" trace="test_NodeReferencedFeatureHasNoCheck4042687269123766421#()V" />
+      <node id="2345005976982711808" at="43,0,47,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982713259" at="48,0,52,0" concept="2" trace="test_FeatureMustBeRetainedAndChecked#()V" />
+      <node id="4042687269123766421" at="53,22,57,9" concept="1" />
+      <node id="4042687269123766421" at="52,0,59,0" concept="2" trace="test_NodeReferencedFeatureHasNoCheck4042687269123766421#()V" />
+      <scope id="2345005976982711808" at="24,42,25,60" />
+      <scope id="2345005976982713259" at="29,71,30,62" />
+      <scope id="4042687269123766421" at="33,90,34,81" />
+      <scope id="2345005976982711808" at="39,52,40,19" />
+      <scope id="2345005976982711808" at="44,36,45,46" />
+      <scope id="2345005976982713259" at="48,73,50,157" />
+      <scope id="4042687269123766421" at="54,30,56,306">
+        <var name="nodeToCheck" id="4042687269123766421" />
+      </scope>
+      <scope id="2345005976982711808" at="24,0,27,0" />
+      <scope id="2345005976982711808" at="39,0,42,0">
+        <var name="owner" id="2345005976982711808" />
+      </scope>
+      <scope id="2345005976982713259" at="28,0,32,0" />
+      <scope id="4042687269123766421" at="32,0,36,0" />
+      <scope id="2345005976982711808" at="43,0,47,0" />
+      <scope id="2345005976982713259" at="48,0,52,0" />
+      <scope id="4042687269123766421" at="52,92,57,9" />
+      <scope id="4042687269123766421" at="52,0,59,0" />
+      <unit id="2345005976982711808" at="37,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveCardinality0to1is1_Test$TestBody" />
+      <unit id="2345005976982711808" at="19,0,62,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveCardinality0to1is1_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982727454">
+    <file name="RemoveCardinality0to1is0_Test.java">
+      <node id="2345005976982727454" at="23,42,24,60" concept="7" />
+      <node id="2345005976982727455" at="28,72,29,63" concept="1" />
+      <node id="6945424678039127805" at="32,73,33,64" concept="1" />
+      <node id="2345005976982727454" at="38,52,39,19" concept="7" />
+      <node id="2345005976982727454" at="43,36,44,46" concept="1" />
+      <node id="2345005976982727455" at="47,74,48,22" concept="1" />
+      <node id="2345005976982727455" at="48,22,49,157" concept="1" />
+      <node id="6945424678039127805" at="51,75,52,22" concept="1" />
+      <node id="6945424678039127805" at="53,30,54,63" concept="3" />
+      <node id="6945424678039127805" at="54,63,55,161" concept="1" />
+      <node id="2345005976982727454" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982727454" at="23,0,26,0" concept="0" trace="RemoveCardinality0to1is0_Test#()V" />
+      <node id="2345005976982727454" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982727455" at="27,0,31,0" concept="2" trace="test_FeatureMustBeCreatedAndUnchecked#()V" />
+      <node id="6945424678039127805" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678039127805#()V" />
+      <node id="2345005976982727454" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982727455" at="47,0,51,0" concept="2" trace="test_FeatureMustBeCreatedAndUnchecked#()V" />
+      <node id="6945424678039127805" at="52,22,56,9" concept="1" />
+      <node id="6945424678039127805" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678039127805#()V" />
+      <scope id="2345005976982727454" at="23,42,24,60" />
+      <scope id="2345005976982727455" at="28,72,29,63" />
+      <scope id="6945424678039127805" at="32,73,33,64" />
+      <scope id="2345005976982727454" at="38,52,39,19" />
+      <scope id="2345005976982727454" at="43,36,44,46" />
+      <scope id="2345005976982727455" at="47,74,49,157" />
+      <scope id="6945424678039127805" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678039127805" />
+      </scope>
+      <scope id="2345005976982727454" at="23,0,26,0" />
+      <scope id="2345005976982727454" at="38,0,41,0">
+        <var name="owner" id="2345005976982727454" />
+      </scope>
+      <scope id="2345005976982727455" at="27,0,31,0" />
+      <scope id="6945424678039127805" at="31,0,35,0" />
+      <scope id="2345005976982727454" at="42,0,46,0" />
+      <scope id="2345005976982727455" at="47,0,51,0" />
+      <scope id="6945424678039127805" at="51,75,56,9" />
+      <scope id="6945424678039127805" at="51,0,58,0" />
+      <unit id="2345005976982727454" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveCardinality0to1is0_Test$TestBody" />
+      <unit id="2345005976982727454" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveCardinality0to1is0_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982820505">
+    <file name="MoveFeatureWithCardinalitiesFromSimpleParentToCardinalityParent_Test.java">
+      <node id="2345005976982820505" at="23,81,24,60" concept="7" />
+      <node id="2345005976982822522" at="28,90,29,81" concept="1" />
+      <node id="6945424678038881239" at="32,73,33,64" concept="1" />
+      <node id="2345005976982820505" at="38,52,39,19" concept="7" />
+      <node id="2345005976982820505" at="43,36,44,46" concept="1" />
+      <node id="2345005976982822522" at="47,92,48,22" concept="1" />
+      <node id="2345005976982822522" at="48,22,49,163" concept="1" />
+      <node id="6945424678038881239" at="51,75,52,22" concept="1" />
+      <node id="6945424678038881239" at="53,30,54,63" concept="3" />
+      <node id="6945424678038881239" at="54,63,55,161" concept="1" />
+      <node id="2345005976982820505" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982820505" at="23,0,26,0" concept="0" trace="MoveFeatureWithCardinalitiesFromSimpleParentToCardinalityParent_Test#()V" />
+      <node id="2345005976982820505" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982822522" at="27,0,31,0" concept="2" trace="test_ChildrenMustBeMovedToFirstChildOfCardinalityParent#()V" />
+      <node id="6945424678038881239" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678038881239#()V" />
+      <node id="2345005976982820505" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982822522" at="47,0,51,0" concept="2" trace="test_ChildrenMustBeMovedToFirstChildOfCardinalityParent#()V" />
+      <node id="6945424678038881239" at="52,22,56,9" concept="1" />
+      <node id="6945424678038881239" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678038881239#()V" />
+      <scope id="2345005976982820505" at="23,81,24,60" />
+      <scope id="2345005976982822522" at="28,90,29,81" />
+      <scope id="6945424678038881239" at="32,73,33,64" />
+      <scope id="2345005976982820505" at="38,52,39,19" />
+      <scope id="2345005976982820505" at="43,36,44,46" />
+      <scope id="2345005976982822522" at="47,92,49,163" />
+      <scope id="6945424678038881239" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678038881239" />
+      </scope>
+      <scope id="2345005976982820505" at="23,0,26,0" />
+      <scope id="2345005976982820505" at="38,0,41,0">
+        <var name="owner" id="2345005976982820505" />
+      </scope>
+      <scope id="2345005976982822522" at="27,0,31,0" />
+      <scope id="6945424678038881239" at="31,0,35,0" />
+      <scope id="2345005976982820505" at="42,0,46,0" />
+      <scope id="2345005976982822522" at="47,0,51,0" />
+      <scope id="6945424678038881239" at="51,75,56,9" />
+      <scope id="6945424678038881239" at="51,0,58,0" />
+      <unit id="2345005976982820505" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureWithCardinalitiesFromSimpleParentToCardinalityParent_Test$TestBody" />
+      <unit id="2345005976982820505" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureWithCardinalitiesFromSimpleParentToCardinalityParent_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982862747">
+    <file name="InlineIncludedFeatureModel_Test.java">
+      <node id="2345005976982862747" at="23,44,24,60" concept="7" />
+      <node id="2345005976982863957" at="28,63,29,54" concept="1" />
+      <node id="6945424678039145278" at="32,73,33,64" concept="1" />
+      <node id="2345005976982862747" at="38,52,39,19" concept="7" />
+      <node id="2345005976982862747" at="43,36,44,46" concept="1" />
+      <node id="2345005976982863957" at="47,65,48,22" concept="1" />
+      <node id="2345005976982863957" at="48,22,49,163" concept="1" />
+      <node id="6945424678039145278" at="51,75,52,22" concept="1" />
+      <node id="6945424678039145278" at="53,30,54,63" concept="3" />
+      <node id="6945424678039145278" at="54,63,55,161" concept="1" />
+      <node id="2345005976982862747" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982862747" at="23,0,26,0" concept="0" trace="InlineIncludedFeatureModel_Test#()V" />
+      <node id="2345005976982862747" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982863957" at="27,0,31,0" concept="2" trace="test_ConfigMustNotBeRetained#()V" />
+      <node id="6945424678039145278" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678039145278#()V" />
+      <node id="2345005976982862747" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982863957" at="47,0,51,0" concept="2" trace="test_ConfigMustNotBeRetained#()V" />
+      <node id="6945424678039145278" at="52,22,56,9" concept="1" />
+      <node id="6945424678039145278" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678039145278#()V" />
+      <scope id="2345005976982862747" at="23,44,24,60" />
+      <scope id="2345005976982863957" at="28,63,29,54" />
+      <scope id="6945424678039145278" at="32,73,33,64" />
+      <scope id="2345005976982862747" at="38,52,39,19" />
+      <scope id="2345005976982862747" at="43,36,44,46" />
+      <scope id="2345005976982863957" at="47,65,49,163" />
+      <scope id="6945424678039145278" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678039145278" />
+      </scope>
+      <scope id="2345005976982862747" at="23,0,26,0" />
+      <scope id="2345005976982862747" at="38,0,41,0">
+        <var name="owner" id="2345005976982862747" />
+      </scope>
+      <scope id="2345005976982863957" at="27,0,31,0" />
+      <scope id="6945424678039145278" at="31,0,35,0" />
+      <scope id="2345005976982862747" at="42,0,46,0" />
+      <scope id="2345005976982863957" at="47,0,51,0" />
+      <scope id="6945424678039145278" at="51,75,56,9" />
+      <scope id="6945424678039145278" at="51,0,58,0" />
+      <unit id="2345005976982862747" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.InlineIncludedFeatureModel_Test$TestBody" />
+      <unit id="2345005976982862747" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.InlineIncludedFeatureModel_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982902442">
+    <file name="AddCardinalityToInclude_Test.java">
+      <node id="2345005976982902442" at="20,41,21,60" concept="7" />
+      <node id="2345005976982903911" at="25,64,26,55" concept="1" />
+      <node id="2345005976982902442" at="31,52,32,19" concept="7" />
+      <node id="2345005976982902442" at="36,36,37,46" concept="1" />
+      <node id="2345005976982903911" at="40,66,41,22" concept="1" />
+      <node id="387940264216289425" at="42,30,43,92" concept="4" />
+      <node id="2345005976982904231" at="43,92,44,141" concept="1" />
+      <node id="2345005976982902442" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982902442" at="20,0,23,0" concept="0" trace="AddCardinalityToInclude_Test#()V" />
+      <node id="2345005976982902442" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982903911" at="24,0,28,0" concept="2" trace="test_ChildFeatureMustBeCopied#()V" />
+      <node id="2345005976982902442" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982903911" at="41,22,45,9" concept="1" />
+      <node id="2345005976982903911" at="40,0,47,0" concept="2" trace="test_ChildFeatureMustBeCopied#()V" />
+      <scope id="2345005976982902442" at="20,41,21,60" />
+      <scope id="2345005976982903911" at="25,64,26,55" />
+      <scope id="2345005976982902442" at="31,52,32,19" />
+      <scope id="2345005976982902442" at="36,36,37,46" />
+      <scope id="2345005976982903911" at="42,30,44,141" />
+      <scope id="2345005976982902442" at="20,0,23,0" />
+      <scope id="2345005976982902442" at="31,0,34,0">
+        <var name="owner" id="2345005976982902442" />
+      </scope>
+      <scope id="2345005976982903911" at="24,0,28,0" />
+      <scope id="2345005976982902442" at="35,0,39,0" />
+      <scope id="2345005976982903911" at="40,66,45,9" />
+      <scope id="2345005976982903911" at="40,0,47,0" />
+      <unit id="2345005976982902442" at="29,0,49,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddCardinalityToInclude_Test$TestBody" />
+      <unit id="2345005976982902442" at="15,0,50,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddCardinalityToInclude_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2345005976982949716">
+    <file name="RemoveCardinalityFromInclude_Test.java">
+      <node id="2345005976982949716" at="20,46,21,60" concept="7" />
+      <node id="2345005976982949751" at="25,64,26,55" concept="1" />
+      <node id="2345005976982949716" at="31,52,32,19" concept="7" />
+      <node id="2345005976982949716" at="36,36,37,46" concept="1" />
+      <node id="2345005976982949751" at="40,66,41,22" concept="1" />
+      <node id="2345005976982949751" at="41,22,42,157" concept="1" />
+      <node id="2345005976982949716" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2345005976982949716" at="20,0,23,0" concept="0" trace="RemoveCardinalityFromInclude_Test#()V" />
+      <node id="2345005976982949716" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976982949751" at="24,0,28,0" concept="2" trace="test_ChildFeatureMustBeCopied#()V" />
+      <node id="2345005976982949716" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976982949751" at="40,0,44,0" concept="2" trace="test_ChildFeatureMustBeCopied#()V" />
+      <scope id="2345005976982949716" at="20,46,21,60" />
+      <scope id="2345005976982949751" at="25,64,26,55" />
+      <scope id="2345005976982949716" at="31,52,32,19" />
+      <scope id="2345005976982949716" at="36,36,37,46" />
+      <scope id="2345005976982949751" at="40,66,42,157" />
+      <scope id="2345005976982949716" at="20,0,23,0" />
+      <scope id="2345005976982949716" at="31,0,34,0">
+        <var name="owner" id="2345005976982949716" />
+      </scope>
+      <scope id="2345005976982949751" at="24,0,28,0" />
+      <scope id="2345005976982949716" at="35,0,39,0" />
+      <scope id="2345005976982949751" at="40,0,44,0" />
+      <unit id="2345005976982949716" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveCardinalityFromInclude_Test$TestBody" />
+      <unit id="2345005976982949716" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveCardinalityFromInclude_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2426050293865104648">
+    <file name="AddedFeatureInRefIgnored_Test.java">
+      <node id="2426050293865104648" at="20,42,21,60" concept="7" />
+      <node id="2426050293865104649" at="25,65,26,56" concept="1" />
+      <node id="2426050293865104648" at="31,52,32,19" concept="7" />
+      <node id="2426050293865104648" at="36,36,37,46" concept="1" />
+      <node id="2426050293865104649" at="40,67,41,22" concept="1" />
+      <node id="2426050293865104652" at="42,30,43,135" concept="1" />
+      <node id="6433822836922864629" at="43,135,44,92" concept="4" />
+      <node id="2426050293865104656" at="44,92,45,118" concept="1" />
+      <node id="2426050293865104660" at="45,118,46,0" concept="5" />
+      <node id="2426050293865104648" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2426050293865104648" at="20,0,23,0" concept="0" trace="AddedFeatureInRefIgnored_Test#()V" />
+      <node id="2426050293865104648" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2426050293865104649" at="24,0,28,0" concept="2" trace="test_addedFeatureMustBeIgnored#()V" />
+      <node id="2426050293865104648" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2426050293865104649" at="41,22,47,9" concept="1" />
+      <node id="2426050293865104649" at="40,0,49,0" concept="2" trace="test_addedFeatureMustBeIgnored#()V" />
+      <scope id="2426050293865104648" at="20,42,21,60" />
+      <scope id="2426050293865104649" at="25,65,26,56" />
+      <scope id="2426050293865104648" at="31,52,32,19" />
+      <scope id="2426050293865104648" at="36,36,37,46" />
+      <scope id="2426050293865104648" at="20,0,23,0" />
+      <scope id="2426050293865104648" at="31,0,34,0">
+        <var name="owner" id="2426050293865104648" />
+      </scope>
+      <scope id="2426050293865104649" at="24,0,28,0" />
+      <scope id="2426050293865104648" at="35,0,39,0" />
+      <scope id="2426050293865104649" at="42,30,46,0" />
+      <scope id="2426050293865104649" at="40,67,47,9" />
+      <scope id="2426050293865104649" at="40,0,49,0" />
+      <unit id="2426050293865104648" at="29,0,51,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddedFeatureInRefIgnored_Test$TestBody" />
+      <unit id="2426050293865104648" at="15,0,52,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddedFeatureInRefIgnored_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/2426050293865123673">
+    <file name="MovedRefInConfiguration_Test.java">
+      <node id="2426050293865123673" at="23,41,24,60" concept="7" />
+      <node id="2426050293865123674" at="28,54,29,45" concept="1" />
+      <node id="6945424678037729044" at="32,73,33,64" concept="1" />
+      <node id="2426050293865123673" at="38,52,39,19" concept="7" />
+      <node id="2426050293865123673" at="43,36,44,46" concept="1" />
+      <node id="2426050293865123674" at="47,56,48,22" concept="1" />
+      <node id="2426050293865123677" at="49,30,50,135" concept="1" />
+      <node id="2426050293865123681" at="50,135,51,118" concept="1" />
+      <node id="2426050293865123685" at="51,118,52,0" concept="5" />
+      <node id="6945424678037729044" at="55,75,56,22" concept="1" />
+      <node id="6945424678037729044" at="57,30,58,63" concept="3" />
+      <node id="6945424678037729044" at="58,63,59,161" concept="1" />
+      <node id="2426050293865123673" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2426050293865123673" at="23,0,26,0" concept="0" trace="MovedRefInConfiguration_Test#()V" />
+      <node id="2426050293865123673" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2426050293865123674" at="27,0,31,0" concept="2" trace="test_refMustBeMoved#()V" />
+      <node id="6945424678037729044" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678037729044#()V" />
+      <node id="2426050293865123673" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="6945424678037729044" at="56,22,60,9" concept="1" />
+      <node id="2426050293865123674" at="48,22,53,9" concept="1" />
+      <node id="6945424678037729044" at="55,0,62,0" concept="2" trace="test_NodeErrorCheck6945424678037729044#()V" />
+      <node id="2426050293865123674" at="47,0,55,0" concept="2" trace="test_refMustBeMoved#()V" />
+      <scope id="2426050293865123673" at="23,41,24,60" />
+      <scope id="2426050293865123674" at="28,54,29,45" />
+      <scope id="6945424678037729044" at="32,73,33,64" />
+      <scope id="2426050293865123673" at="38,52,39,19" />
+      <scope id="2426050293865123673" at="43,36,44,46" />
+      <scope id="6945424678037729044" at="57,30,59,161">
+        <var name="nodeToCheck" id="6945424678037729044" />
+      </scope>
+      <scope id="2426050293865123673" at="23,0,26,0" />
+      <scope id="2426050293865123673" at="38,0,41,0">
+        <var name="owner" id="2426050293865123673" />
+      </scope>
+      <scope id="2426050293865123674" at="49,30,52,0" />
+      <scope id="2426050293865123674" at="27,0,31,0" />
+      <scope id="6945424678037729044" at="31,0,35,0" />
+      <scope id="2426050293865123673" at="42,0,46,0" />
+      <scope id="6945424678037729044" at="55,75,60,9" />
+      <scope id="2426050293865123674" at="47,56,53,9" />
+      <scope id="6945424678037729044" at="55,0,62,0" />
+      <scope id="2426050293865123674" at="47,0,55,0" />
+      <unit id="2426050293865123673" at="36,0,64,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MovedRefInConfiguration_Test$TestBody" />
+      <unit id="2426050293865123673" at="18,0,65,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MovedRefInConfiguration_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/359659964867293357">
+    <file name="MoveFeatureWithCardinalitiesFromCardinalityParentToCardinalityParent_Test.java">
+      <node id="359659964867293357" at="23,86,24,60" concept="7" />
+      <node id="359659964867293358" at="28,56,29,47" concept="1" />
+      <node id="6945424678036945051" at="32,73,33,64" concept="1" />
+      <node id="359659964867293357" at="38,52,39,19" concept="7" />
+      <node id="359659964867293357" at="43,36,44,45" concept="1" />
+      <node id="359659964867293358" at="47,58,48,22" concept="1" />
+      <node id="359659964867293358" at="48,22,49,157" concept="1" />
+      <node id="6945424678036945051" at="51,75,52,22" concept="1" />
+      <node id="6945424678036945051" at="53,30,54,62" concept="3" />
+      <node id="6945424678036945051" at="54,62,55,161" concept="1" />
+      <node id="359659964867293357" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="359659964867293357" at="23,0,26,0" concept="0" trace="MoveFeatureWithCardinalitiesFromCardinalityParentToCardinalityParent_Test#()V" />
+      <node id="359659964867293357" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="359659964867293358" at="27,0,31,0" concept="2" trace="test_allAMustBeResued#()V" />
+      <node id="6945424678036945051" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678036945051#()V" />
+      <node id="359659964867293357" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="359659964867293358" at="47,0,51,0" concept="2" trace="test_allAMustBeResued#()V" />
+      <node id="6945424678036945051" at="52,22,56,9" concept="1" />
+      <node id="6945424678036945051" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678036945051#()V" />
+      <scope id="359659964867293357" at="23,86,24,60" />
+      <scope id="359659964867293358" at="28,56,29,47" />
+      <scope id="6945424678036945051" at="32,73,33,64" />
+      <scope id="359659964867293357" at="38,52,39,19" />
+      <scope id="359659964867293357" at="43,36,44,45" />
+      <scope id="359659964867293358" at="47,58,49,157" />
+      <scope id="6945424678036945051" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678036945051" />
+      </scope>
+      <scope id="359659964867293357" at="23,0,26,0" />
+      <scope id="359659964867293357" at="38,0,41,0">
+        <var name="owner" id="359659964867293357" />
+      </scope>
+      <scope id="359659964867293358" at="27,0,31,0" />
+      <scope id="6945424678036945051" at="31,0,35,0" />
+      <scope id="359659964867293357" at="42,0,46,0" />
+      <scope id="359659964867293358" at="47,0,51,0" />
+      <scope id="6945424678036945051" at="51,75,56,9" />
+      <scope id="6945424678036945051" at="51,0,58,0" />
+      <unit id="359659964867293357" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureWithCardinalitiesFromCardinalityParentToCardinalityParent_Test$TestBody" />
+      <unit id="359659964867293357" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureWithCardinalitiesFromCardinalityParentToCardinalityParent_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/387940264216324518">
+    <file name="AddingAttributesUnderCardinalityFeature_Test.java">
+      <node id="387940264216324518" at="20,57,21,60" concept="7" />
+      <node id="387940264216324519" at="25,82,26,73" concept="1" />
+      <node id="387940264216324518" at="31,52,32,19" concept="7" />
+      <node id="387940264216324518" at="36,36,37,45" concept="1" />
+      <node id="387940264216324519" at="40,84,41,22" concept="1" />
+      <node id="387940264216324519" at="41,22,42,157" concept="1" />
+      <node id="387940264216324518" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="387940264216324518" at="20,0,23,0" concept="0" trace="AddingAttributesUnderCardinalityFeature_Test#()V" />
+      <node id="387940264216324518" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="387940264216324519" at="24,0,28,0" concept="2" trace="test_NewAttributesMustBeAttachedUnerCardinality#()V" />
+      <node id="387940264216324518" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="387940264216324519" at="40,0,44,0" concept="2" trace="test_NewAttributesMustBeAttachedUnerCardinality#()V" />
+      <scope id="387940264216324518" at="20,57,21,60" />
+      <scope id="387940264216324519" at="25,82,26,73" />
+      <scope id="387940264216324518" at="31,52,32,19" />
+      <scope id="387940264216324518" at="36,36,37,45" />
+      <scope id="387940264216324519" at="40,84,42,157" />
+      <scope id="387940264216324518" at="20,0,23,0" />
+      <scope id="387940264216324518" at="31,0,34,0">
+        <var name="owner" id="387940264216324518" />
+      </scope>
+      <scope id="387940264216324519" at="24,0,28,0" />
+      <scope id="387940264216324518" at="35,0,39,0" />
+      <scope id="387940264216324519" at="40,0,44,0" />
+      <unit id="387940264216324518" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddingAttributesUnderCardinalityFeature_Test$TestBody" />
+      <unit id="387940264216324518" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddingAttributesUnderCardinalityFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/387940264216370356">
+    <file name="AddingCardinalitiesUnderCardinalityFeature_Test.java">
+      <node id="387940264216370356" at="20,60,21,60" concept="7" />
+      <node id="387940264216370357" at="25,84,26,75" concept="1" />
+      <node id="387940264216370356" at="31,52,32,19" concept="7" />
+      <node id="387940264216370356" at="36,36,37,45" concept="1" />
+      <node id="387940264216370357" at="40,86,41,22" concept="1" />
+      <node id="387940264216370357" at="41,22,42,163" concept="1" />
+      <node id="387940264216370356" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="387940264216370356" at="20,0,23,0" concept="0" trace="AddingCardinalitiesUnderCardinalityFeature_Test#()V" />
+      <node id="387940264216370356" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="387940264216370357" at="24,0,28,0" concept="2" trace="test_NewCardinalityMustBeAttachedUnderCardinality#()V" />
+      <node id="387940264216370356" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="387940264216370357" at="40,0,44,0" concept="2" trace="test_NewCardinalityMustBeAttachedUnderCardinality#()V" />
+      <scope id="387940264216370356" at="20,60,21,60" />
+      <scope id="387940264216370357" at="25,84,26,75" />
+      <scope id="387940264216370356" at="31,52,32,19" />
+      <scope id="387940264216370356" at="36,36,37,45" />
+      <scope id="387940264216370357" at="40,86,42,163" />
+      <scope id="387940264216370356" at="20,0,23,0" />
+      <scope id="387940264216370356" at="31,0,34,0">
+        <var name="owner" id="387940264216370356" />
+      </scope>
+      <scope id="387940264216370357" at="24,0,28,0" />
+      <scope id="387940264216370356" at="35,0,39,0" />
+      <scope id="387940264216370357" at="40,0,44,0" />
+      <unit id="387940264216370356" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddingCardinalitiesUnderCardinalityFeature_Test$TestBody" />
+      <unit id="387940264216370356" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddingCardinalitiesUnderCardinalityFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/387940264216386884">
+    <file name="RemovingAttributesUnderCardinalityFeature_Test.java">
+      <node id="387940264216386884" at="20,59,21,60" concept="7" />
+      <node id="387940264216386885" at="25,84,26,75" concept="1" />
+      <node id="387940264216386884" at="31,52,32,19" concept="7" />
+      <node id="387940264216386884" at="36,36,37,45" concept="1" />
+      <node id="387940264216386885" at="40,86,41,22" concept="1" />
+      <node id="387940264216386885" at="41,22,42,157" concept="1" />
+      <node id="387940264216386884" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="387940264216386884" at="20,0,23,0" concept="0" trace="RemovingAttributesUnderCardinalityFeature_Test#()V" />
+      <node id="387940264216386884" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="387940264216386885" at="24,0,28,0" concept="2" trace="test_RemovedAttributesMustMustAppearAtCardinality#()V" />
+      <node id="387940264216386884" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="387940264216386885" at="40,0,44,0" concept="2" trace="test_RemovedAttributesMustMustAppearAtCardinality#()V" />
+      <scope id="387940264216386884" at="20,59,21,60" />
+      <scope id="387940264216386885" at="25,84,26,75" />
+      <scope id="387940264216386884" at="31,52,32,19" />
+      <scope id="387940264216386884" at="36,36,37,45" />
+      <scope id="387940264216386885" at="40,86,42,157" />
+      <scope id="387940264216386884" at="20,0,23,0" />
+      <scope id="387940264216386884" at="31,0,34,0">
+        <var name="owner" id="387940264216386884" />
+      </scope>
+      <scope id="387940264216386885" at="24,0,28,0" />
+      <scope id="387940264216386884" at="35,0,39,0" />
+      <scope id="387940264216386885" at="40,0,44,0" />
+      <unit id="387940264216386884" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemovingAttributesUnderCardinalityFeature_Test$TestBody" />
+      <unit id="387940264216386884" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemovingAttributesUnderCardinalityFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/387940264216430071">
+    <file name="RemovingFeaturesUnderCardinalityFeature_Test.java">
+      <node id="387940264216430071" at="20,57,21,60" concept="7" />
+      <node id="387940264216430072" at="25,81,26,72" concept="1" />
+      <node id="387940264216430071" at="31,52,32,19" concept="7" />
+      <node id="387940264216430071" at="36,36,37,45" concept="1" />
+      <node id="387940264216430072" at="40,83,41,22" concept="1" />
+      <node id="387940264216430072" at="41,22,42,157" concept="1" />
+      <node id="387940264216430071" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="387940264216430071" at="20,0,23,0" concept="0" trace="RemovingFeaturesUnderCardinalityFeature_Test#()V" />
+      <node id="387940264216430071" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="387940264216430072" at="24,0,28,0" concept="2" trace="test_RemovedFeatursMustMustAppearAtCardinality#()V" />
+      <node id="387940264216430071" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="387940264216430072" at="40,0,44,0" concept="2" trace="test_RemovedFeatursMustMustAppearAtCardinality#()V" />
+      <scope id="387940264216430071" at="20,57,21,60" />
+      <scope id="387940264216430072" at="25,81,26,72" />
+      <scope id="387940264216430071" at="31,52,32,19" />
+      <scope id="387940264216430071" at="36,36,37,45" />
+      <scope id="387940264216430072" at="40,83,42,157" />
+      <scope id="387940264216430071" at="20,0,23,0" />
+      <scope id="387940264216430071" at="31,0,34,0">
+        <var name="owner" id="387940264216430071" />
+      </scope>
+      <scope id="387940264216430072" at="24,0,28,0" />
+      <scope id="387940264216430071" at="35,0,39,0" />
+      <scope id="387940264216430072" at="40,0,44,0" />
+      <unit id="387940264216430071" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemovingFeaturesUnderCardinalityFeature_Test$TestBody" />
+      <unit id="387940264216430071" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemovingFeaturesUnderCardinalityFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/387940264216446420">
+    <file name="RemovingIncludesUnderCardinalityFeature_Test.java">
+      <node id="387940264216446420" at="20,57,21,60" concept="7" />
+      <node id="387940264216446421" at="25,78,26,69" concept="1" />
+      <node id="387940264216446420" at="31,52,32,19" concept="7" />
+      <node id="387940264216446420" at="36,36,37,45" concept="1" />
+      <node id="387940264216446421" at="40,80,41,22" concept="1" />
+      <node id="387940264216446421" at="41,22,42,157" concept="1" />
+      <node id="387940264216446420" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="387940264216446420" at="20,0,23,0" concept="0" trace="RemovingIncludesUnderCardinalityFeature_Test#()V" />
+      <node id="387940264216446420" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="387940264216446421" at="24,0,28,0" concept="2" trace="test_RemovedIncludesMustAppearAtCardinality#()V" />
+      <node id="387940264216446420" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="387940264216446421" at="40,0,44,0" concept="2" trace="test_RemovedIncludesMustAppearAtCardinality#()V" />
+      <scope id="387940264216446420" at="20,57,21,60" />
+      <scope id="387940264216446421" at="25,78,26,69" />
+      <scope id="387940264216446420" at="31,52,32,19" />
+      <scope id="387940264216446420" at="36,36,37,45" />
+      <scope id="387940264216446421" at="40,80,42,157" />
+      <scope id="387940264216446420" at="20,0,23,0" />
+      <scope id="387940264216446420" at="31,0,34,0">
+        <var name="owner" id="387940264216446420" />
+      </scope>
+      <scope id="387940264216446421" at="24,0,28,0" />
+      <scope id="387940264216446420" at="35,0,39,0" />
+      <scope id="387940264216446421" at="40,0,44,0" />
+      <unit id="387940264216446420" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemovingIncludesUnderCardinalityFeature_Test$TestBody" />
+      <unit id="387940264216446420" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemovingIncludesUnderCardinalityFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/387940264216462732">
+    <file name="RemovingCardinalitiesUnderCardinalityFeature_Test.java">
+      <node id="387940264216462732" at="23,62,24,60" concept="7" />
+      <node id="387940264216462733" at="28,85,29,76" concept="1" />
+      <node id="6945424678038809997" at="32,73,33,64" concept="1" />
+      <node id="387940264216462732" at="38,52,39,19" concept="7" />
+      <node id="387940264216462732" at="43,36,44,45" concept="1" />
+      <node id="387940264216462733" at="47,87,48,22" concept="1" />
+      <node id="387940264216462733" at="48,22,49,157" concept="1" />
+      <node id="6945424678038809997" at="51,75,52,22" concept="1" />
+      <node id="6945424678038809997" at="53,30,54,62" concept="3" />
+      <node id="6945424678038809997" at="54,62,55,161" concept="1" />
+      <node id="387940264216462732" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="387940264216462732" at="23,0,26,0" concept="0" trace="RemovingCardinalitiesUnderCardinalityFeature_Test#()V" />
+      <node id="387940264216462732" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="387940264216462733" at="27,0,31,0" concept="2" trace="test_RemovedCardinalityMustMustAppearAtCardinality#()V" />
+      <node id="6945424678038809997" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678038809997#()V" />
+      <node id="387940264216462732" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="387940264216462733" at="47,0,51,0" concept="2" trace="test_RemovedCardinalityMustMustAppearAtCardinality#()V" />
+      <node id="6945424678038809997" at="52,22,56,9" concept="1" />
+      <node id="6945424678038809997" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678038809997#()V" />
+      <scope id="387940264216462732" at="23,62,24,60" />
+      <scope id="387940264216462733" at="28,85,29,76" />
+      <scope id="6945424678038809997" at="32,73,33,64" />
+      <scope id="387940264216462732" at="38,52,39,19" />
+      <scope id="387940264216462732" at="43,36,44,45" />
+      <scope id="387940264216462733" at="47,87,49,157" />
+      <scope id="6945424678038809997" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678038809997" />
+      </scope>
+      <scope id="387940264216462732" at="23,0,26,0" />
+      <scope id="387940264216462732" at="38,0,41,0">
+        <var name="owner" id="387940264216462732" />
+      </scope>
+      <scope id="387940264216462733" at="27,0,31,0" />
+      <scope id="6945424678038809997" at="31,0,35,0" />
+      <scope id="387940264216462732" at="42,0,46,0" />
+      <scope id="387940264216462733" at="47,0,51,0" />
+      <scope id="6945424678038809997" at="51,75,56,9" />
+      <scope id="6945424678038809997" at="51,0,58,0" />
+      <unit id="387940264216462732" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemovingCardinalitiesUnderCardinalityFeature_Test$TestBody" />
+      <unit id="387940264216462732" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemovingCardinalitiesUnderCardinalityFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/387940264216570560">
+    <file name="MovingCardinalitiesUnderCaridinalityFeature_Test.java">
+      <node id="387940264216570560" at="23,61,24,60" concept="7" />
+      <node id="387940264216570561" at="28,79,29,70" concept="1" />
+      <node id="6945424678038668742" at="32,73,33,64" concept="1" />
+      <node id="387940264216570560" at="38,52,39,19" concept="7" />
+      <node id="387940264216570560" at="43,36,44,45" concept="1" />
+      <node id="387940264216570561" at="47,81,48,22" concept="1" />
+      <node id="387940264216570561" at="48,22,49,157" concept="1" />
+      <node id="6945424678038668742" at="51,75,52,22" concept="1" />
+      <node id="6945424678038668742" at="53,30,54,62" concept="3" />
+      <node id="6945424678038668742" at="54,62,55,161" concept="1" />
+      <node id="387940264216570560" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="387940264216570560" at="23,0,26,0" concept="0" trace="MovingCardinalitiesUnderCaridinalityFeature_Test#()V" />
+      <node id="387940264216570560" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="387940264216570561" at="27,0,31,0" concept="2" trace="test_MovedCardinalityMustAppearAtCardinality#()V" />
+      <node id="6945424678038668742" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678038668742#()V" />
+      <node id="387940264216570560" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="387940264216570561" at="47,0,51,0" concept="2" trace="test_MovedCardinalityMustAppearAtCardinality#()V" />
+      <node id="6945424678038668742" at="52,22,56,9" concept="1" />
+      <node id="6945424678038668742" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678038668742#()V" />
+      <scope id="387940264216570560" at="23,61,24,60" />
+      <scope id="387940264216570561" at="28,79,29,70" />
+      <scope id="6945424678038668742" at="32,73,33,64" />
+      <scope id="387940264216570560" at="38,52,39,19" />
+      <scope id="387940264216570560" at="43,36,44,45" />
+      <scope id="387940264216570561" at="47,81,49,157" />
+      <scope id="6945424678038668742" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678038668742" />
+      </scope>
+      <scope id="387940264216570560" at="23,0,26,0" />
+      <scope id="387940264216570560" at="38,0,41,0">
+        <var name="owner" id="387940264216570560" />
+      </scope>
+      <scope id="387940264216570561" at="27,0,31,0" />
+      <scope id="6945424678038668742" at="31,0,35,0" />
+      <scope id="387940264216570560" at="42,0,46,0" />
+      <scope id="387940264216570561" at="47,0,51,0" />
+      <scope id="6945424678038668742" at="51,75,56,9" />
+      <scope id="6945424678038668742" at="51,0,58,0" />
+      <unit id="387940264216570560" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MovingCardinalitiesUnderCaridinalityFeature_Test$TestBody" />
+      <unit id="387940264216570560" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MovingCardinalitiesUnderCaridinalityFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/387940264216604070">
+    <file name="MovingMultiCardinalitiesUnderMultiCaridinalityFeature_Test.java">
+      <node id="387940264216604070" at="23,71,24,60" concept="7" />
+      <node id="387940264216604071" at="28,89,29,80" concept="1" />
+      <node id="6945424678037709690" at="32,73,33,64" concept="1" />
+      <node id="387940264216604070" at="38,52,39,19" concept="7" />
+      <node id="387940264216604070" at="43,36,44,45" concept="1" />
+      <node id="387940264216604071" at="47,91,48,22" concept="1" />
+      <node id="387940264216604071" at="48,22,49,163" concept="1" />
+      <node id="6945424678037709690" at="51,75,52,22" concept="1" />
+      <node id="6945424678037709690" at="53,30,54,62" concept="3" />
+      <node id="6945424678037709690" at="54,62,55,161" concept="1" />
+      <node id="387940264216604070" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="387940264216604070" at="23,0,26,0" concept="0" trace="MovingMultiCardinalitiesUnderMultiCaridinalityFeature_Test#()V" />
+      <node id="387940264216604070" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="387940264216604071" at="27,0,31,0" concept="2" trace="test_RemovedMultiCardinalityMustAppearMultiCardinality#()V" />
+      <node id="6945424678037709690" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678037709690#()V" />
+      <node id="387940264216604070" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="387940264216604071" at="47,0,51,0" concept="2" trace="test_RemovedMultiCardinalityMustAppearMultiCardinality#()V" />
+      <node id="6945424678037709690" at="52,22,56,9" concept="1" />
+      <node id="6945424678037709690" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678037709690#()V" />
+      <scope id="387940264216604070" at="23,71,24,60" />
+      <scope id="387940264216604071" at="28,89,29,80" />
+      <scope id="6945424678037709690" at="32,73,33,64" />
+      <scope id="387940264216604070" at="38,52,39,19" />
+      <scope id="387940264216604070" at="43,36,44,45" />
+      <scope id="387940264216604071" at="47,91,49,163" />
+      <scope id="6945424678037709690" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678037709690" />
+      </scope>
+      <scope id="387940264216604070" at="23,0,26,0" />
+      <scope id="387940264216604070" at="38,0,41,0">
+        <var name="owner" id="387940264216604070" />
+      </scope>
+      <scope id="387940264216604071" at="27,0,31,0" />
+      <scope id="6945424678037709690" at="31,0,35,0" />
+      <scope id="387940264216604070" at="42,0,46,0" />
+      <scope id="387940264216604071" at="47,0,51,0" />
+      <scope id="6945424678037709690" at="51,75,56,9" />
+      <scope id="6945424678037709690" at="51,0,58,0" />
+      <unit id="387940264216604070" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MovingMultiCardinalitiesUnderMultiCaridinalityFeature_Test$TestBody" />
+      <unit id="387940264216604070" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MovingMultiCardinalitiesUnderMultiCaridinalityFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/387940264216623301">
+    <file name="MovingCardinalitiesUnderMultiCaridinalityFeature_Test.java">
+      <node id="387940264216623301" at="23,66,24,60" concept="7" />
+      <node id="387940264216623302" at="28,84,29,75" concept="1" />
+      <node id="6945424678039294961" at="32,73,33,64" concept="1" />
+      <node id="387940264216623301" at="38,52,39,19" concept="7" />
+      <node id="387940264216623301" at="43,36,44,45" concept="1" />
+      <node id="387940264216623302" at="47,86,48,22" concept="1" />
+      <node id="387940264216623302" at="48,22,49,163" concept="1" />
+      <node id="6945424678039294961" at="51,75,52,22" concept="1" />
+      <node id="6945424678039294961" at="53,30,54,62" concept="3" />
+      <node id="6945424678039294961" at="54,62,55,161" concept="1" />
+      <node id="387940264216623301" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="387940264216623301" at="23,0,26,0" concept="0" trace="MovingCardinalitiesUnderMultiCaridinalityFeature_Test#()V" />
+      <node id="387940264216623301" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="387940264216623302" at="27,0,31,0" concept="2" trace="test_RemovedCardinalityMustAppearMultiCardinality#()V" />
+      <node id="6945424678039294961" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678039294961#()V" />
+      <node id="387940264216623301" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="387940264216623302" at="47,0,51,0" concept="2" trace="test_RemovedCardinalityMustAppearMultiCardinality#()V" />
+      <node id="6945424678039294961" at="52,22,56,9" concept="1" />
+      <node id="6945424678039294961" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678039294961#()V" />
+      <scope id="387940264216623301" at="23,66,24,60" />
+      <scope id="387940264216623302" at="28,84,29,75" />
+      <scope id="6945424678039294961" at="32,73,33,64" />
+      <scope id="387940264216623301" at="38,52,39,19" />
+      <scope id="387940264216623301" at="43,36,44,45" />
+      <scope id="387940264216623302" at="47,86,49,163" />
+      <scope id="6945424678039294961" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678039294961" />
+      </scope>
+      <scope id="387940264216623301" at="23,0,26,0" />
+      <scope id="387940264216623301" at="38,0,41,0">
+        <var name="owner" id="387940264216623301" />
+      </scope>
+      <scope id="387940264216623302" at="27,0,31,0" />
+      <scope id="6945424678039294961" at="31,0,35,0" />
+      <scope id="387940264216623301" at="42,0,46,0" />
+      <scope id="387940264216623302" at="47,0,51,0" />
+      <scope id="6945424678039294961" at="51,75,56,9" />
+      <scope id="6945424678039294961" at="51,0,58,0" />
+      <unit id="387940264216623301" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MovingCardinalitiesUnderMultiCaridinalityFeature_Test$TestBody" />
+      <unit id="387940264216623301" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MovingCardinalitiesUnderMultiCaridinalityFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/4131945639157084229">
+    <file name="MoveFeatureWithAttrAndAddCardinalitiesToCardinality_Test.java">
+      <node id="4131945639157084229" at="23,69,24,60" concept="7" />
+      <node id="4131945639157084230" at="28,61,29,52" concept="1" />
+      <node id="6945424678037261485" at="32,73,33,64" concept="1" />
+      <node id="4131945639157084229" at="38,52,39,19" concept="7" />
+      <node id="4131945639157084229" at="43,36,44,46" concept="1" />
+      <node id="4131945639157084230" at="47,63,48,22" concept="1" />
+      <node id="4131945639162558526" at="49,30,50,83" concept="4" />
+      <node id="4131945639157084233" at="50,83,51,141" concept="1" />
+      <node id="6945424678037261485" at="54,75,55,22" concept="1" />
+      <node id="6945424678037261485" at="56,30,57,63" concept="3" />
+      <node id="6945424678037261485" at="57,63,58,161" concept="1" />
+      <node id="4131945639157084229" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="4131945639157084229" at="23,0,26,0" concept="0" trace="MoveFeatureWithAttrAndAddCardinalitiesToCardinality_Test#()V" />
+      <node id="4131945639157084229" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4131945639157084230" at="27,0,31,0" concept="2" trace="test_AttributeMustBeReused#()V" />
+      <node id="6945424678037261485" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678037261485#()V" />
+      <node id="4131945639157084229" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="4131945639157084230" at="48,22,52,9" concept="1" />
+      <node id="6945424678037261485" at="55,22,59,9" concept="1" />
+      <node id="4131945639157084230" at="47,0,54,0" concept="2" trace="test_AttributeMustBeReused#()V" />
+      <node id="6945424678037261485" at="54,0,61,0" concept="2" trace="test_NodeErrorCheck6945424678037261485#()V" />
+      <scope id="4131945639157084229" at="23,69,24,60" />
+      <scope id="4131945639157084230" at="28,61,29,52" />
+      <scope id="6945424678037261485" at="32,73,33,64" />
+      <scope id="4131945639157084229" at="38,52,39,19" />
+      <scope id="4131945639157084229" at="43,36,44,46" />
+      <scope id="4131945639157084230" at="49,30,51,141" />
+      <scope id="6945424678037261485" at="56,30,58,161">
+        <var name="nodeToCheck" id="6945424678037261485" />
+      </scope>
+      <scope id="4131945639157084229" at="23,0,26,0" />
+      <scope id="4131945639157084229" at="38,0,41,0">
+        <var name="owner" id="4131945639157084229" />
+      </scope>
+      <scope id="4131945639157084230" at="27,0,31,0" />
+      <scope id="6945424678037261485" at="31,0,35,0" />
+      <scope id="4131945639157084229" at="42,0,46,0" />
+      <scope id="4131945639157084230" at="47,63,52,9" />
+      <scope id="6945424678037261485" at="54,75,59,9" />
+      <scope id="4131945639157084230" at="47,0,54,0" />
+      <scope id="6945424678037261485" at="54,0,61,0" />
+      <unit id="4131945639157084229" at="36,0,63,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureWithAttrAndAddCardinalitiesToCardinality_Test$TestBody" />
+      <unit id="4131945639157084229" at="18,0,64,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureWithAttrAndAddCardinalitiesToCardinality_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/4131945639178423205">
+    <file name="MoveMultiInclude_Test.java">
+      <node id="4131945639178423205" at="23,34,24,60" concept="7" />
+      <node id="4131945639178423228" at="28,53,29,44" concept="1" />
+      <node id="6945424678037321251" at="32,73,33,64" concept="1" />
+      <node id="4131945639178423205" at="38,52,39,19" concept="7" />
+      <node id="4131945639178423205" at="43,36,44,46" concept="1" />
+      <node id="4131945639178423228" at="47,55,48,22" concept="1" />
+      <node id="4131945639178480392" at="49,30,50,57" concept="4" />
+      <node id="4131945639178423233" at="50,57,51,135" concept="1" />
+      <node id="6945424678037321251" at="54,75,55,22" concept="1" />
+      <node id="6945424678037321251" at="56,30,57,63" concept="3" />
+      <node id="6945424678037321251" at="57,63,58,161" concept="1" />
+      <node id="4131945639178423205" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="4131945639178423205" at="23,0,26,0" concept="0" trace="MoveMultiInclude_Test#()V" />
+      <node id="4131945639178423205" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4131945639178423228" at="27,0,31,0" concept="2" trace="test_MustNotChange#()V" />
+      <node id="6945424678037321251" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678037321251#()V" />
+      <node id="4131945639178423205" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="4131945639178423228" at="48,22,52,9" concept="1" />
+      <node id="6945424678037321251" at="55,22,59,9" concept="1" />
+      <node id="4131945639178423228" at="47,0,54,0" concept="2" trace="test_MustNotChange#()V" />
+      <node id="6945424678037321251" at="54,0,61,0" concept="2" trace="test_NodeErrorCheck6945424678037321251#()V" />
+      <scope id="4131945639178423205" at="23,34,24,60" />
+      <scope id="4131945639178423228" at="28,53,29,44" />
+      <scope id="6945424678037321251" at="32,73,33,64" />
+      <scope id="4131945639178423205" at="38,52,39,19" />
+      <scope id="4131945639178423205" at="43,36,44,46" />
+      <scope id="4131945639178423228" at="49,30,51,135" />
+      <scope id="6945424678037321251" at="56,30,58,161">
+        <var name="nodeToCheck" id="6945424678037321251" />
+      </scope>
+      <scope id="4131945639178423205" at="23,0,26,0" />
+      <scope id="4131945639178423205" at="38,0,41,0">
+        <var name="owner" id="4131945639178423205" />
+      </scope>
+      <scope id="4131945639178423228" at="27,0,31,0" />
+      <scope id="6945424678037321251" at="31,0,35,0" />
+      <scope id="4131945639178423205" at="42,0,46,0" />
+      <scope id="4131945639178423228" at="47,55,52,9" />
+      <scope id="6945424678037321251" at="54,75,59,9" />
+      <scope id="4131945639178423228" at="47,0,54,0" />
+      <scope id="6945424678037321251" at="54,0,61,0" />
+      <unit id="4131945639178423205" at="36,0,63,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveMultiInclude_Test$TestBody" />
+      <unit id="4131945639178423205" at="18,0,64,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveMultiInclude_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/4131945639178541343">
+    <file name="MovingInfCardinalitiesUnderCaridinalityFeature_Test.java">
+      <node id="4131945639178541343" at="23,64,24,60" concept="7" />
+      <node id="4131945639178541344" at="28,82,29,73" concept="1" />
+      <node id="6945424678039136513" at="32,73,33,64" concept="1" />
+      <node id="4131945639178541343" at="38,52,39,19" concept="7" />
+      <node id="4131945639178541343" at="43,36,44,46" concept="1" />
+      <node id="4131945639178541344" at="47,84,48,22" concept="1" />
+      <node id="4131945639178541344" at="48,22,49,157" concept="1" />
+      <node id="6945424678039136513" at="51,75,52,22" concept="1" />
+      <node id="6945424678039136513" at="53,30,54,63" concept="3" />
+      <node id="6945424678039136513" at="54,63,55,161" concept="1" />
+      <node id="4131945639178541343" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="4131945639178541343" at="23,0,26,0" concept="0" trace="MovingInfCardinalitiesUnderCaridinalityFeature_Test#()V" />
+      <node id="4131945639178541343" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4131945639178541344" at="27,0,31,0" concept="2" trace="test_MovedInfCardinalityMustAppearAtCardinality#()V" />
+      <node id="6945424678039136513" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678039136513#()V" />
+      <node id="4131945639178541343" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="4131945639178541344" at="47,0,51,0" concept="2" trace="test_MovedInfCardinalityMustAppearAtCardinality#()V" />
+      <node id="6945424678039136513" at="52,22,56,9" concept="1" />
+      <node id="6945424678039136513" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678039136513#()V" />
+      <scope id="4131945639178541343" at="23,64,24,60" />
+      <scope id="4131945639178541344" at="28,82,29,73" />
+      <scope id="6945424678039136513" at="32,73,33,64" />
+      <scope id="4131945639178541343" at="38,52,39,19" />
+      <scope id="4131945639178541343" at="43,36,44,46" />
+      <scope id="4131945639178541344" at="47,84,49,157" />
+      <scope id="6945424678039136513" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678039136513" />
+      </scope>
+      <scope id="4131945639178541343" at="23,0,26,0" />
+      <scope id="4131945639178541343" at="38,0,41,0">
+        <var name="owner" id="4131945639178541343" />
+      </scope>
+      <scope id="4131945639178541344" at="27,0,31,0" />
+      <scope id="6945424678039136513" at="31,0,35,0" />
+      <scope id="4131945639178541343" at="42,0,46,0" />
+      <scope id="4131945639178541344" at="47,0,51,0" />
+      <scope id="6945424678039136513" at="51,75,56,9" />
+      <scope id="6945424678039136513" at="51,0,58,0" />
+      <unit id="4131945639178541343" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MovingInfCardinalitiesUnderCaridinalityFeature_Test$TestBody" />
+      <unit id="4131945639178541343" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MovingInfCardinalitiesUnderCaridinalityFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/4141365253639933613">
+    <file name="IncrementCardinalityLowerBoundWithOptonal_Test.java">
+      <node id="4141365253639933613" at="23,59,24,60" concept="7" />
+      <node id="4141365253639933634" at="28,61,29,52" concept="1" />
+      <node id="6945424678038392124" at="32,73,33,64" concept="1" />
+      <node id="4141365253639933613" at="38,52,39,19" concept="7" />
+      <node id="4141365253639933613" at="43,36,44,46" concept="1" />
+      <node id="4141365253639933634" at="47,63,48,22" concept="1" />
+      <node id="4141365253639933634" at="48,22,49,163" concept="1" />
+      <node id="6945424678038392124" at="51,75,52,22" concept="1" />
+      <node id="6945424678038392124" at="53,30,54,63" concept="3" />
+      <node id="6945424678038392124" at="54,63,55,161" concept="1" />
+      <node id="4141365253639933613" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="4141365253639933613" at="23,0,26,0" concept="0" trace="IncrementCardinalityLowerBoundWithOptonal_Test#()V" />
+      <node id="4141365253639933613" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4141365253639933634" at="27,0,31,0" concept="2" trace="test_BothConfigMustBeAdded#()V" />
+      <node id="6945424678038392124" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678038392124#()V" />
+      <node id="4141365253639933613" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="4141365253639933634" at="47,0,51,0" concept="2" trace="test_BothConfigMustBeAdded#()V" />
+      <node id="6945424678038392124" at="52,22,56,9" concept="1" />
+      <node id="6945424678038392124" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678038392124#()V" />
+      <scope id="4141365253639933613" at="23,59,24,60" />
+      <scope id="4141365253639933634" at="28,61,29,52" />
+      <scope id="6945424678038392124" at="32,73,33,64" />
+      <scope id="4141365253639933613" at="38,52,39,19" />
+      <scope id="4141365253639933613" at="43,36,44,46" />
+      <scope id="4141365253639933634" at="47,63,49,163" />
+      <scope id="6945424678038392124" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678038392124" />
+      </scope>
+      <scope id="4141365253639933613" at="23,0,26,0" />
+      <scope id="4141365253639933613" at="38,0,41,0">
+        <var name="owner" id="4141365253639933613" />
+      </scope>
+      <scope id="4141365253639933634" at="27,0,31,0" />
+      <scope id="6945424678038392124" at="31,0,35,0" />
+      <scope id="4141365253639933613" at="42,0,46,0" />
+      <scope id="4141365253639933634" at="47,0,51,0" />
+      <scope id="6945424678038392124" at="51,75,56,9" />
+      <scope id="6945424678038392124" at="51,0,58,0" />
+      <unit id="4141365253639933613" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.IncrementCardinalityLowerBoundWithOptonal_Test$TestBody" />
+      <unit id="4141365253639933613" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.IncrementCardinalityLowerBoundWithOptonal_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/5153642642039787046">
+    <file name="RemoveCardinalityAndAddFeature_Test.java">
+      <node id="5153642642039787046" at="24,48,25,60" concept="7" />
+      <node id="5153642642039787080" at="29,112,30,103" concept="1" />
+      <node id="5153642642039916390" at="33,108,34,99" concept="1" />
+      <node id="4042687269124009697" at="37,90,38,81" concept="1" />
+      <node id="4042687269123992637" at="41,90,42,81" concept="1" />
+      <node id="5153642642039787046" at="47,52,48,19" concept="7" />
+      <node id="5153642642039787046" at="52,36,53,46" concept="1" />
+      <node id="5153642642039787080" at="56,114,57,22" concept="1" />
+      <node id="5153642642039787080" at="57,22,58,175" concept="1" />
+      <node id="5153642642039916390" at="60,110,61,22" concept="1" />
+      <node id="5153642642039916390" at="61,22,62,179" concept="1" />
+      <node id="4042687269124009697" at="64,92,65,22" concept="1" />
+      <node id="4042687269124009697" at="66,30,67,63" concept="3" />
+      <node id="4042687269124009697" at="67,63,68,306" concept="1" />
+      <node id="4042687269123992637" at="71,92,72,22" concept="1" />
+      <node id="4042687269123992637" at="73,30,74,63" concept="3" />
+      <node id="4042687269123992637" at="74,63,75,306" concept="1" />
+      <node id="5153642642039787046" at="21,0,23,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="5153642642039787046" at="24,0,27,0" concept="0" trace="RemoveCardinalityAndAddFeature_Test#()V" />
+      <node id="5153642642039787046" at="47,0,50,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5153642642039787080" at="28,0,32,0" concept="2" trace="test_ChildFeatureMustBeCopiedAndSubfeatureRetainedAmdAttributeHasDefaultValue#()V" />
+      <node id="5153642642039916390" at="32,0,36,0" concept="2" trace="test_ChildFeatureMustBeCopiedAndSubfeatureRetainedAmdAttributeHasOldValue#()V" />
+      <node id="4042687269124009697" at="36,0,40,0" concept="2" trace="test_NodeReferencedFeatureHasNoCheck4042687269124009697#()V" />
+      <node id="4042687269123992637" at="40,0,44,0" concept="2" trace="test_NodeReferencedFeatureHasNoCheck4042687269123992637#()V" />
+      <node id="5153642642039787046" at="51,0,55,0" concept="2" trace="initTestNodes#()V" />
+      <node id="5153642642039787080" at="56,0,60,0" concept="2" trace="test_ChildFeatureMustBeCopiedAndSubfeatureRetainedAmdAttributeHasDefaultValue#()V" />
+      <node id="5153642642039916390" at="60,0,64,0" concept="2" trace="test_ChildFeatureMustBeCopiedAndSubfeatureRetainedAmdAttributeHasOldValue#()V" />
+      <node id="4042687269124009697" at="65,22,69,9" concept="1" />
+      <node id="4042687269123992637" at="72,22,76,9" concept="1" />
+      <node id="4042687269124009697" at="64,0,71,0" concept="2" trace="test_NodeReferencedFeatureHasNoCheck4042687269124009697#()V" />
+      <node id="4042687269123992637" at="71,0,78,0" concept="2" trace="test_NodeReferencedFeatureHasNoCheck4042687269123992637#()V" />
+      <scope id="5153642642039787046" at="24,48,25,60" />
+      <scope id="5153642642039787080" at="29,112,30,103" />
+      <scope id="5153642642039916390" at="33,108,34,99" />
+      <scope id="4042687269124009697" at="37,90,38,81" />
+      <scope id="4042687269123992637" at="41,90,42,81" />
+      <scope id="5153642642039787046" at="47,52,48,19" />
+      <scope id="5153642642039787046" at="52,36,53,46" />
+      <scope id="5153642642039787080" at="56,114,58,175" />
+      <scope id="5153642642039916390" at="60,110,62,179" />
+      <scope id="4042687269124009697" at="66,30,68,306">
+        <var name="nodeToCheck" id="4042687269124009697" />
+      </scope>
+      <scope id="4042687269123992637" at="73,30,75,306">
+        <var name="nodeToCheck" id="4042687269123992637" />
+      </scope>
+      <scope id="5153642642039787046" at="24,0,27,0" />
+      <scope id="5153642642039787046" at="47,0,50,0">
+        <var name="owner" id="5153642642039787046" />
+      </scope>
+      <scope id="5153642642039787080" at="28,0,32,0" />
+      <scope id="5153642642039916390" at="32,0,36,0" />
+      <scope id="4042687269124009697" at="36,0,40,0" />
+      <scope id="4042687269123992637" at="40,0,44,0" />
+      <scope id="5153642642039787046" at="51,0,55,0" />
+      <scope id="5153642642039787080" at="56,0,60,0" />
+      <scope id="5153642642039916390" at="60,0,64,0" />
+      <scope id="4042687269124009697" at="64,92,69,9" />
+      <scope id="4042687269123992637" at="71,92,76,9" />
+      <scope id="4042687269124009697" at="64,0,71,0" />
+      <scope id="4042687269123992637" at="71,0,78,0" />
+      <unit id="5153642642039787046" at="45,0,80,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveCardinalityAndAddFeature_Test$TestBody" />
+      <unit id="5153642642039787046" at="19,0,81,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveCardinalityAndAddFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/5153642642054801167">
+    <file name="AddCardinality0to1_Test.java">
+      <node id="5153642642054801167" at="20,36,21,60" concept="7" />
+      <node id="5153642642054801168" at="25,61,26,52" concept="1" />
+      <node id="5153642642054801167" at="31,52,32,19" concept="7" />
+      <node id="5153642642054801167" at="36,36,37,46" concept="1" />
+      <node id="5153642642054801168" at="40,63,41,22" concept="1" />
+      <node id="5153642642054801168" at="41,22,42,157" concept="1" />
+      <node id="5153642642054801167" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="5153642642054801167" at="20,0,23,0" concept="0" trace="AddCardinality0to1_Test#()V" />
+      <node id="5153642642054801167" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5153642642054801168" at="24,0,28,0" concept="2" trace="test_FeatureMustBeRetained#()V" />
+      <node id="5153642642054801167" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="5153642642054801168" at="40,0,44,0" concept="2" trace="test_FeatureMustBeRetained#()V" />
+      <scope id="5153642642054801167" at="20,36,21,60" />
+      <scope id="5153642642054801168" at="25,61,26,52" />
+      <scope id="5153642642054801167" at="31,52,32,19" />
+      <scope id="5153642642054801167" at="36,36,37,46" />
+      <scope id="5153642642054801168" at="40,63,42,157" />
+      <scope id="5153642642054801167" at="20,0,23,0" />
+      <scope id="5153642642054801167" at="31,0,34,0">
+        <var name="owner" id="5153642642054801167" />
+      </scope>
+      <scope id="5153642642054801168" at="24,0,28,0" />
+      <scope id="5153642642054801167" at="35,0,39,0" />
+      <scope id="5153642642054801168" at="40,0,44,0" />
+      <unit id="5153642642054801167" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddCardinality0to1_Test$TestBody" />
+      <unit id="5153642642054801167" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddCardinality0to1_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/5153642642054861255">
+    <file name="CardinalityWithCardinalityChildChangingBounds_Test.java">
+      <node id="5153642642054861255" at="23,63,24,60" concept="7" />
+      <node id="5153642642054861256" at="28,68,29,59" concept="1" />
+      <node id="6945424678037929505" at="32,73,33,64" concept="1" />
+      <node id="5153642642054861255" at="38,52,39,19" concept="7" />
+      <node id="5153642642054861255" at="43,36,44,46" concept="1" />
+      <node id="5153642642054861256" at="47,70,48,22" concept="1" />
+      <node id="5153642642054861256" at="48,22,49,163" concept="1" />
+      <node id="6945424678037929505" at="51,75,52,22" concept="1" />
+      <node id="6945424678037929505" at="53,30,54,63" concept="3" />
+      <node id="6945424678037929505" at="54,63,55,161" concept="1" />
+      <node id="5153642642054861255" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="5153642642054861255" at="23,0,26,0" concept="0" trace="CardinalityWithCardinalityChildChangingBounds_Test#()V" />
+      <node id="5153642642054861255" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5153642642054861256" at="27,0,31,0" concept="2" trace="test_mustNotReuseThirditemOfChild#()V" />
+      <node id="6945424678037929505" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678037929505#()V" />
+      <node id="5153642642054861255" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="5153642642054861256" at="47,0,51,0" concept="2" trace="test_mustNotReuseThirditemOfChild#()V" />
+      <node id="6945424678037929505" at="52,22,56,9" concept="1" />
+      <node id="6945424678037929505" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678037929505#()V" />
+      <scope id="5153642642054861255" at="23,63,24,60" />
+      <scope id="5153642642054861256" at="28,68,29,59" />
+      <scope id="6945424678037929505" at="32,73,33,64" />
+      <scope id="5153642642054861255" at="38,52,39,19" />
+      <scope id="5153642642054861255" at="43,36,44,46" />
+      <scope id="5153642642054861256" at="47,70,49,163" />
+      <scope id="6945424678037929505" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678037929505" />
+      </scope>
+      <scope id="5153642642054861255" at="23,0,26,0" />
+      <scope id="5153642642054861255" at="38,0,41,0">
+        <var name="owner" id="5153642642054861255" />
+      </scope>
+      <scope id="5153642642054861256" at="27,0,31,0" />
+      <scope id="6945424678037929505" at="31,0,35,0" />
+      <scope id="5153642642054861255" at="42,0,46,0" />
+      <scope id="5153642642054861256" at="47,0,51,0" />
+      <scope id="6945424678037929505" at="51,75,56,9" />
+      <scope id="6945424678037929505" at="51,0,58,0" />
+      <unit id="5153642642054861255" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.CardinalityWithCardinalityChildChangingBounds_Test$TestBody" />
+      <unit id="5153642642054861255" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.CardinalityWithCardinalityChildChangingBounds_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/6433822836922775565">
+    <file name="MoveFeatureFromIncludeTwoIncludesPresent_Test.java">
+      <node id="6433822836922775565" at="20,58,21,60" concept="7" />
+      <node id="6433822836922775566" at="25,65,26,56" concept="1" />
+      <node id="6433822836922775565" at="31,52,32,19" concept="7" />
+      <node id="6433822836922775565" at="36,36,37,46" concept="1" />
+      <node id="6433822836922775566" at="40,67,41,22" concept="1" />
+      <node id="6433822836922775566" at="41,22,42,157" concept="1" />
+      <node id="6433822836922775565" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="6433822836922775565" at="20,0,23,0" concept="0" trace="MoveFeatureFromIncludeTwoIncludesPresent_Test#()V" />
+      <node id="6433822836922775565" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6433822836922775566" at="24,0,28,0" concept="2" trace="test_FirstFeatureAMustBeChosen#()V" />
+      <node id="6433822836922775565" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="6433822836922775566" at="40,0,44,0" concept="2" trace="test_FirstFeatureAMustBeChosen#()V" />
+      <scope id="6433822836922775565" at="20,58,21,60" />
+      <scope id="6433822836922775566" at="25,65,26,56" />
+      <scope id="6433822836922775565" at="31,52,32,19" />
+      <scope id="6433822836922775565" at="36,36,37,46" />
+      <scope id="6433822836922775566" at="40,67,42,157" />
+      <scope id="6433822836922775565" at="20,0,23,0" />
+      <scope id="6433822836922775565" at="31,0,34,0">
+        <var name="owner" id="6433822836922775565" />
+      </scope>
+      <scope id="6433822836922775566" at="24,0,28,0" />
+      <scope id="6433822836922775565" at="35,0,39,0" />
+      <scope id="6433822836922775566" at="40,0,44,0" />
+      <unit id="6433822836922775565" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureFromIncludeTwoIncludesPresent_Test$TestBody" />
+      <unit id="6433822836922775565" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveFeatureFromIncludeTwoIncludesPresent_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/6433822836924527806">
+    <file name="MoveDecrementCardinalityUpperBoundAndNoReuseOptionalItems_Test.java">
+      <node id="6433822836924527806" at="23,75,24,60" concept="7" />
+      <node id="6433822836924527839" at="28,62,29,53" concept="1" />
+      <node id="6945424678038642729" at="32,73,33,64" concept="1" />
+      <node id="6433822836924527806" at="38,52,39,19" concept="7" />
+      <node id="6433822836924527806" at="43,36,44,46" concept="1" />
+      <node id="6433822836924527839" at="47,64,48,22" concept="1" />
+      <node id="6433822836924527839" at="48,22,49,163" concept="1" />
+      <node id="6945424678038642729" at="51,75,52,22" concept="1" />
+      <node id="6945424678038642729" at="53,30,54,63" concept="3" />
+      <node id="6945424678038642729" at="54,63,55,161" concept="1" />
+      <node id="6433822836924527806" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="6433822836924527806" at="23,0,26,0" concept="0" trace="MoveDecrementCardinalityUpperBoundAndNoReuseOptionalItems_Test#()V" />
+      <node id="6433822836924527806" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6433822836924527839" at="27,0,31,0" concept="2" trace="test_NoReuseofOptionalItems#()V" />
+      <node id="6945424678038642729" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678038642729#()V" />
+      <node id="6433822836924527806" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="6433822836924527839" at="47,0,51,0" concept="2" trace="test_NoReuseofOptionalItems#()V" />
+      <node id="6945424678038642729" at="52,22,56,9" concept="1" />
+      <node id="6945424678038642729" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678038642729#()V" />
+      <scope id="6433822836924527806" at="23,75,24,60" />
+      <scope id="6433822836924527839" at="28,62,29,53" />
+      <scope id="6945424678038642729" at="32,73,33,64" />
+      <scope id="6433822836924527806" at="38,52,39,19" />
+      <scope id="6433822836924527806" at="43,36,44,46" />
+      <scope id="6433822836924527839" at="47,64,49,163" />
+      <scope id="6945424678038642729" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678038642729" />
+      </scope>
+      <scope id="6433822836924527806" at="23,0,26,0" />
+      <scope id="6433822836924527806" at="38,0,41,0">
+        <var name="owner" id="6433822836924527806" />
+      </scope>
+      <scope id="6433822836924527839" at="27,0,31,0" />
+      <scope id="6945424678038642729" at="31,0,35,0" />
+      <scope id="6433822836924527806" at="42,0,46,0" />
+      <scope id="6433822836924527839" at="47,0,51,0" />
+      <scope id="6945424678038642729" at="51,75,56,9" />
+      <scope id="6945424678038642729" at="51,0,58,0" />
+      <unit id="6433822836924527806" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveDecrementCardinalityUpperBoundAndNoReuseOptionalItems_Test$TestBody" />
+      <unit id="6433822836924527806" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveDecrementCardinalityUpperBoundAndNoReuseOptionalItems_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/6433822836924608446">
+    <file name="DecrementCardinalityUpperBoundAndReuse_Test.java">
+      <node id="6433822836924608446" at="20,56,21,60" concept="7" />
+      <node id="6433822836924608492" at="25,61,26,52" concept="1" />
+      <node id="6433822836924608446" at="31,52,32,19" concept="7" />
+      <node id="6433822836924608446" at="36,36,37,46" concept="1" />
+      <node id="6433822836924608492" at="40,63,41,22" concept="1" />
+      <node id="6433822836924608492" at="41,22,42,163" concept="1" />
+      <node id="6433822836924608446" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="6433822836924608446" at="20,0,23,0" concept="0" trace="DecrementCardinalityUpperBoundAndReuse_Test#()V" />
+      <node id="6433822836924608446" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6433822836924608492" at="24,0,28,0" concept="2" trace="test_NoReuseofOptionalItem#()V" />
+      <node id="6433822836924608446" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="6433822836924608492" at="40,0,44,0" concept="2" trace="test_NoReuseofOptionalItem#()V" />
+      <scope id="6433822836924608446" at="20,56,21,60" />
+      <scope id="6433822836924608492" at="25,61,26,52" />
+      <scope id="6433822836924608446" at="31,52,32,19" />
+      <scope id="6433822836924608446" at="36,36,37,46" />
+      <scope id="6433822836924608492" at="40,63,42,163" />
+      <scope id="6433822836924608446" at="20,0,23,0" />
+      <scope id="6433822836924608446" at="31,0,34,0">
+        <var name="owner" id="6433822836924608446" />
+      </scope>
+      <scope id="6433822836924608492" at="24,0,28,0" />
+      <scope id="6433822836924608446" at="35,0,39,0" />
+      <scope id="6433822836924608492" at="40,0,44,0" />
+      <unit id="6433822836924608446" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.DecrementCardinalityUpperBoundAndReuse_Test$TestBody" />
+      <unit id="6433822836924608446" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.DecrementCardinalityUpperBoundAndReuse_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/6433822836925475589">
+    <file name="MoveDecrementCardinalityUpperBoundAndNoReuse_Test.java">
+      <node id="6433822836925475589" at="20,62,21,60" concept="7" />
+      <node id="6433822836925475635" at="25,81,26,72" concept="1" />
+      <node id="6433822836925475589" at="31,52,32,19" concept="7" />
+      <node id="6433822836925475589" at="36,36,37,46" concept="1" />
+      <node id="6433822836925475635" at="40,83,41,22" concept="1" />
+      <node id="6433822836925475635" at="41,22,42,157" concept="1" />
+      <node id="6433822836925475589" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="6433822836925475589" at="20,0,23,0" concept="0" trace="MoveDecrementCardinalityUpperBoundAndNoReuse_Test#()V" />
+      <node id="6433822836925475589" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6433822836925475635" at="24,0,28,0" concept="2" trace="test_NoReuseofRemovedItemByCardinalityDecrease#()V" />
+      <node id="6433822836925475589" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="6433822836925475635" at="40,0,44,0" concept="2" trace="test_NoReuseofRemovedItemByCardinalityDecrease#()V" />
+      <scope id="6433822836925475589" at="20,62,21,60" />
+      <scope id="6433822836925475635" at="25,81,26,72" />
+      <scope id="6433822836925475589" at="31,52,32,19" />
+      <scope id="6433822836925475589" at="36,36,37,46" />
+      <scope id="6433822836925475635" at="40,83,42,157" />
+      <scope id="6433822836925475589" at="20,0,23,0" />
+      <scope id="6433822836925475589" at="31,0,34,0">
+        <var name="owner" id="6433822836925475589" />
+      </scope>
+      <scope id="6433822836925475635" at="24,0,28,0" />
+      <scope id="6433822836925475589" at="35,0,39,0" />
+      <scope id="6433822836925475635" at="40,0,44,0" />
+      <unit id="6433822836925475589" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveDecrementCardinalityUpperBoundAndNoReuse_Test$TestBody" />
+      <unit id="6433822836925475589" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.MoveDecrementCardinalityUpperBoundAndNoReuse_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/7045830799388903599">
+    <file name="RemoveFeatureFromRootWithOneChild_Test.java">
+      <node id="7045830799388903599" at="20,51,21,60" concept="7" />
+      <node id="7045830799388903600" at="25,62,26,53" concept="1" />
+      <node id="7045830799388903599" at="31,52,32,19" concept="7" />
+      <node id="7045830799388903599" at="36,36,37,46" concept="1" />
+      <node id="7045830799388903600" at="40,64,41,22" concept="1" />
+      <node id="7045830799388903600" at="41,22,42,157" concept="1" />
+      <node id="7045830799388903599" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="7045830799388903599" at="20,0,23,0" concept="0" trace="RemoveFeatureFromRootWithOneChild_Test#()V" />
+      <node id="7045830799388903599" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7045830799388903600" at="24,0,28,0" concept="2" trace="test_RootMustHaveNoChildren#()V" />
+      <node id="7045830799388903599" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7045830799388903600" at="40,0,44,0" concept="2" trace="test_RootMustHaveNoChildren#()V" />
+      <scope id="7045830799388903599" at="20,51,21,60" />
+      <scope id="7045830799388903600" at="25,62,26,53" />
+      <scope id="7045830799388903599" at="31,52,32,19" />
+      <scope id="7045830799388903599" at="36,36,37,46" />
+      <scope id="7045830799388903600" at="40,64,42,157" />
+      <scope id="7045830799388903599" at="20,0,23,0" />
+      <scope id="7045830799388903599" at="31,0,34,0">
+        <var name="owner" id="7045830799388903599" />
+      </scope>
+      <scope id="7045830799388903600" at="24,0,28,0" />
+      <scope id="7045830799388903599" at="35,0,39,0" />
+      <scope id="7045830799388903600" at="40,0,44,0" />
+      <unit id="7045830799388903599" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveFeatureFromRootWithOneChild_Test$TestBody" />
+      <unit id="7045830799388903599" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveFeatureFromRootWithOneChild_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/7451203479823835532">
+    <file name="RemoveRefCardinality_Test.java">
+      <node id="7451203479823835532" at="20,38,21,60" concept="7" />
+      <node id="7451203479823835568" at="25,64,26,55" concept="1" />
+      <node id="7451203479823835532" at="31,52,32,19" concept="7" />
+      <node id="7451203479823835532" at="36,36,37,46" concept="1" />
+      <node id="7451203479823835568" at="40,66,41,22" concept="1" />
+      <node id="7451203479823835568" at="41,22,42,157" concept="1" />
+      <node id="7451203479823835532" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="7451203479823835532" at="20,0,23,0" concept="0" trace="RemoveRefCardinality_Test#()V" />
+      <node id="7451203479823835532" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7451203479823835568" at="24,0,28,0" concept="2" trace="test_refCardinalitMustVansish#()V" />
+      <node id="7451203479823835532" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7451203479823835568" at="40,0,44,0" concept="2" trace="test_refCardinalitMustVansish#()V" />
+      <scope id="7451203479823835532" at="20,38,21,60" />
+      <scope id="7451203479823835568" at="25,64,26,55" />
+      <scope id="7451203479823835532" at="31,52,32,19" />
+      <scope id="7451203479823835532" at="36,36,37,46" />
+      <scope id="7451203479823835568" at="40,66,42,157" />
+      <scope id="7451203479823835532" at="20,0,23,0" />
+      <scope id="7451203479823835532" at="31,0,34,0">
+        <var name="owner" id="7451203479823835532" />
+      </scope>
+      <scope id="7451203479823835568" at="24,0,28,0" />
+      <scope id="7451203479823835532" at="35,0,39,0" />
+      <scope id="7451203479823835568" at="40,0,44,0" />
+      <unit id="7451203479823835532" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveRefCardinality_Test$TestBody" />
+      <unit id="7451203479823835532" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveRefCardinality_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/7451203479823871031">
+    <file name="IncreaseLowerBoundWithRefCardinality_Test.java">
+      <node id="7451203479823871031" at="20,54,21,60" concept="7" />
+      <node id="7451203479823871061" at="25,72,26,63" concept="1" />
+      <node id="7451203479823871031" at="31,52,32,19" concept="7" />
+      <node id="7451203479823871031" at="36,36,37,46" concept="1" />
+      <node id="7451203479823871061" at="40,74,41,22" concept="1" />
+      <node id="7451203479823871061" at="41,22,42,157" concept="1" />
+      <node id="7451203479823871031" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="7451203479823871031" at="20,0,23,0" concept="0" trace="IncreaseLowerBoundWithRefCardinality_Test#()V" />
+      <node id="7451203479823871031" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7451203479823871061" at="24,0,28,0" concept="2" trace="test_refCardinalityMustBecomeMandator#()V" />
+      <node id="7451203479823871031" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7451203479823871061" at="40,0,44,0" concept="2" trace="test_refCardinalityMustBecomeMandator#()V" />
+      <scope id="7451203479823871031" at="20,54,21,60" />
+      <scope id="7451203479823871061" at="25,72,26,63" />
+      <scope id="7451203479823871031" at="31,52,32,19" />
+      <scope id="7451203479823871031" at="36,36,37,46" />
+      <scope id="7451203479823871061" at="40,74,42,157" />
+      <scope id="7451203479823871031" at="20,0,23,0" />
+      <scope id="7451203479823871031" at="31,0,34,0">
+        <var name="owner" id="7451203479823871031" />
+      </scope>
+      <scope id="7451203479823871061" at="24,0,28,0" />
+      <scope id="7451203479823871031" at="35,0,39,0" />
+      <scope id="7451203479823871061" at="40,0,44,0" />
+      <unit id="7451203479823871031" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.IncreaseLowerBoundWithRefCardinality_Test$TestBody" />
+      <unit id="7451203479823871031" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.IncreaseLowerBoundWithRefCardinality_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/7973361208090819720">
+    <file name="RemoveCardinalityAndMoveXorChild_Test.java">
+      <node id="7973361208090819720" at="24,50,25,60" concept="7" />
+      <node id="7973361208090819721" at="29,74,30,65" concept="1" />
+      <node id="4042687269123949483" at="33,90,34,81" concept="1" />
+      <node id="6945424678037399020" at="37,73,38,64" concept="1" />
+      <node id="7973361208090819720" at="43,52,44,19" concept="7" />
+      <node id="7973361208090819720" at="48,36,49,46" concept="1" />
+      <node id="7973361208090819721" at="52,76,53,22" concept="1" />
+      <node id="7973361208090819724" at="54,30,55,97" concept="4" />
+      <node id="7973361208090819726" at="55,97,56,135" concept="1" />
+      <node id="4042687269123949483" at="59,92,60,22" concept="1" />
+      <node id="4042687269123949483" at="61,30,62,63" concept="3" />
+      <node id="4042687269123949483" at="62,63,63,306" concept="1" />
+      <node id="6945424678037399020" at="66,75,67,22" concept="1" />
+      <node id="6945424678037399020" at="68,30,69,63" concept="3" />
+      <node id="6945424678037399020" at="69,63,70,161" concept="1" />
+      <node id="7973361208090819720" at="21,0,23,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="7973361208090819720" at="24,0,27,0" concept="0" trace="RemoveCardinalityAndMoveXorChild_Test#()V" />
+      <node id="7973361208090819720" at="43,0,46,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7973361208090819721" at="28,0,32,0" concept="2" trace="test_ChildFeatureMustBeMovedToNewParent#()V" />
+      <node id="4042687269123949483" at="32,0,36,0" concept="2" trace="test_NodeReferencedFeatureHasNoCheck4042687269123949483#()V" />
+      <node id="6945424678037399020" at="36,0,40,0" concept="2" trace="test_NodeErrorCheck6945424678037399020#()V" />
+      <node id="7973361208090819720" at="47,0,51,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7973361208090819721" at="53,22,57,9" concept="1" />
+      <node id="4042687269123949483" at="60,22,64,9" concept="1" />
+      <node id="6945424678037399020" at="67,22,71,9" concept="1" />
+      <node id="7973361208090819721" at="52,0,59,0" concept="2" trace="test_ChildFeatureMustBeMovedToNewParent#()V" />
+      <node id="4042687269123949483" at="59,0,66,0" concept="2" trace="test_NodeReferencedFeatureHasNoCheck4042687269123949483#()V" />
+      <node id="6945424678037399020" at="66,0,73,0" concept="2" trace="test_NodeErrorCheck6945424678037399020#()V" />
+      <scope id="7973361208090819720" at="24,50,25,60" />
+      <scope id="7973361208090819721" at="29,74,30,65" />
+      <scope id="4042687269123949483" at="33,90,34,81" />
+      <scope id="6945424678037399020" at="37,73,38,64" />
+      <scope id="7973361208090819720" at="43,52,44,19" />
+      <scope id="7973361208090819720" at="48,36,49,46" />
+      <scope id="7973361208090819721" at="54,30,56,135" />
+      <scope id="4042687269123949483" at="61,30,63,306">
+        <var name="nodeToCheck" id="4042687269123949483" />
+      </scope>
+      <scope id="6945424678037399020" at="68,30,70,161">
+        <var name="nodeToCheck" id="6945424678037399020" />
+      </scope>
+      <scope id="7973361208090819720" at="24,0,27,0" />
+      <scope id="7973361208090819720" at="43,0,46,0">
+        <var name="owner" id="7973361208090819720" />
+      </scope>
+      <scope id="7973361208090819721" at="28,0,32,0" />
+      <scope id="4042687269123949483" at="32,0,36,0" />
+      <scope id="6945424678037399020" at="36,0,40,0" />
+      <scope id="7973361208090819720" at="47,0,51,0" />
+      <scope id="7973361208090819721" at="52,76,57,9" />
+      <scope id="4042687269123949483" at="59,92,64,9" />
+      <scope id="6945424678037399020" at="66,75,71,9" />
+      <scope id="7973361208090819721" at="52,0,59,0" />
+      <scope id="4042687269123949483" at="59,0,66,0" />
+      <scope id="6945424678037399020" at="66,0,73,0" />
+      <unit id="7973361208090819720" at="41,0,75,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveCardinalityAndMoveXorChild_Test$TestBody" />
+      <unit id="7973361208090819720" at="19,0,76,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveCardinalityAndMoveXorChild_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/7973361208099614796">
+    <file name="checkForReferenceIdentity_Test.java">
+      <node id="7973361208099614796" at="29,43,30,60" concept="7" />
+      <node id="7973361208099614820" at="34,72,35,63" concept="1" />
+      <node id="7973361208099614796" at="40,52,41,19" concept="7" />
+      <node id="7973361208099614796" at="45,36,46,46" concept="1" />
+      <node id="7973361208099614820" at="49,74,50,22" concept="1" />
+      <node id="7973361208099614823" at="51,30,52,135" concept="1" />
+      <node id="7973361208099661512" at="52,135,53,0" concept="5" />
+      <node id="7973361208099797344" at="53,0,54,381" concept="3" />
+      <node id="7973361208100069799" at="54,381,55,0" concept="5" />
+      <node id="7973361208100096984" at="55,0,56,387" concept="3" />
+      <node id="7973361208100069853" at="56,387,57,0" concept="5" />
+      <node id="7973361208100002859" at="57,0,58,141" concept="1" />
+      <node id="7973361208099614796" at="65,0,66,0" concept="6" trace="content$Wdfq" />
+      <node id="7973361208099614796" at="66,0,67,0" concept="6" trace="subfeatureConfigurations$l9wi" />
+      <node id="7973361208099614796" at="67,0,68,0" concept="6" trace="config$VWuN" />
+      <node id="7973361208099614796" at="71,0,72,0" concept="6" trace="InlineFeatureConfigurationContent$P5" />
+      <node id="7973361208099614796" at="72,0,73,0" concept="6" trace="FeatureModelConfigurationRef$kq" />
+      <node id="7973361208099614796" at="26,0,28,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="7973361208099614796" at="29,0,32,0" concept="0" trace="checkForReferenceIdentity_Test#()V" />
+      <node id="7973361208099614796" at="40,0,43,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7973361208099614820" at="33,0,37,0" concept="2" trace="test_testForThatReferencesAreRetained#()V" />
+      <node id="7973361208099614796" at="44,0,48,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7973361208099614820" at="50,22,59,9" concept="1" />
+      <node id="7973361208099614820" at="49,0,61,0" concept="2" trace="test_testForThatReferencesAreRetained#()V" />
+      <scope id="7973361208099614796" at="29,43,30,60" />
+      <scope id="7973361208099614820" at="34,72,35,63" />
+      <scope id="7973361208099614796" at="40,52,41,19" />
+      <scope id="7973361208099614796" at="45,36,46,46" />
+      <scope id="7973361208099614796" at="29,0,32,0" />
+      <scope id="7973361208099614796" at="40,0,43,0">
+        <var name="owner" id="7973361208099614796" />
+      </scope>
+      <scope id="7973361208099614820" at="33,0,37,0" />
+      <scope id="7973361208099614796" at="44,0,48,0" />
+      <scope id="7973361208099614820" at="51,30,58,141">
+        <var name="expectedRef" id="7973361208100096985" />
+        <var name="givenRef" id="7973361208099797345" />
+      </scope>
+      <scope id="7973361208099614820" at="49,74,59,9" />
+      <scope id="7973361208099614820" at="49,0,61,0" />
+      <unit id="7973361208099614796" at="70,0,74,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.checkForReferenceIdentity_Test$CONCEPTS" />
+      <unit id="7973361208099614796" at="64,0,69,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.checkForReferenceIdentity_Test$LINKS" />
+      <unit id="7973361208099614796" at="38,0,63,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.checkForReferenceIdentity_Test$TestBody" />
+      <unit id="7973361208099614796" at="24,0,75,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.checkForReferenceIdentity_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/7987825172914223002">
+    <file name="AddfeatureInvolvingRefInCardinality_Test.java">
+      <node id="7987825172914223002" at="20,53,21,60" concept="7" />
+      <node id="7987825172914223050" at="25,84,26,75" concept="1" />
+      <node id="7987825172914223002" at="31,52,32,19" concept="7" />
+      <node id="7987825172914223002" at="36,36,37,46" concept="1" />
+      <node id="7987825172914223050" at="40,86,41,22" concept="1" />
+      <node id="7987825172914223050" at="41,22,42,157" concept="1" />
+      <node id="7987825172914223002" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="7987825172914223002" at="20,0,23,0" concept="0" trace="AddfeatureInvolvingRefInCardinality_Test#()V" />
+      <node id="7987825172914223002" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7987825172914223050" at="24,0,28,0" concept="2" trace="test_newfeatureMustBeAddedToInlineCardinalityItem#()V" />
+      <node id="7987825172914223002" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7987825172914223050" at="40,0,44,0" concept="2" trace="test_newfeatureMustBeAddedToInlineCardinalityItem#()V" />
+      <scope id="7987825172914223002" at="20,53,21,60" />
+      <scope id="7987825172914223050" at="25,84,26,75" />
+      <scope id="7987825172914223002" at="31,52,32,19" />
+      <scope id="7987825172914223002" at="36,36,37,46" />
+      <scope id="7987825172914223050" at="40,86,42,157" />
+      <scope id="7987825172914223002" at="20,0,23,0" />
+      <scope id="7987825172914223002" at="31,0,34,0">
+        <var name="owner" id="7987825172914223002" />
+      </scope>
+      <scope id="7987825172914223050" at="24,0,28,0" />
+      <scope id="7987825172914223002" at="35,0,39,0" />
+      <scope id="7987825172914223050" at="40,0,44,0" />
+      <unit id="7987825172914223002" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddfeatureInvolvingRefInCardinality_Test$TestBody" />
+      <unit id="7987825172914223002" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddfeatureInvolvingRefInCardinality_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/8096993756842045548">
+    <file name="DecreaseCardinalityAndMove_Test.java">
+      <node id="8096993756842045548" at="23,44,24,60" concept="7" />
+      <node id="8096993756842045549" at="28,86,29,77" concept="1" />
+      <node id="6945424678038286857" at="32,73,33,64" concept="1" />
+      <node id="8096993756842045548" at="38,52,39,19" concept="7" />
+      <node id="8096993756842045548" at="43,36,44,46" concept="1" />
+      <node id="8096993756842045549" at="47,88,48,22" concept="1" />
+      <node id="8096993756842045549" at="48,22,49,163" concept="1" />
+      <node id="6945424678038286857" at="51,75,52,22" concept="1" />
+      <node id="6945424678038286857" at="53,30,54,63" concept="3" />
+      <node id="6945424678038286857" at="54,63,55,161" concept="1" />
+      <node id="8096993756842045548" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="8096993756842045548" at="23,0,26,0" concept="0" trace="DecreaseCardinalityAndMove_Test#()V" />
+      <node id="8096993756842045548" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8096993756842045549" at="27,0,31,0" concept="2" trace="test_mustMoveCardinalityFeatureAndRweduceUpperbound#()V" />
+      <node id="6945424678038286857" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678038286857#()V" />
+      <node id="8096993756842045548" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="8096993756842045549" at="47,0,51,0" concept="2" trace="test_mustMoveCardinalityFeatureAndRweduceUpperbound#()V" />
+      <node id="6945424678038286857" at="52,22,56,9" concept="1" />
+      <node id="6945424678038286857" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678038286857#()V" />
+      <scope id="8096993756842045548" at="23,44,24,60" />
+      <scope id="8096993756842045549" at="28,86,29,77" />
+      <scope id="6945424678038286857" at="32,73,33,64" />
+      <scope id="8096993756842045548" at="38,52,39,19" />
+      <scope id="8096993756842045548" at="43,36,44,46" />
+      <scope id="8096993756842045549" at="47,88,49,163" />
+      <scope id="6945424678038286857" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678038286857" />
+      </scope>
+      <scope id="8096993756842045548" at="23,0,26,0" />
+      <scope id="8096993756842045548" at="38,0,41,0">
+        <var name="owner" id="8096993756842045548" />
+      </scope>
+      <scope id="8096993756842045549" at="27,0,31,0" />
+      <scope id="6945424678038286857" at="31,0,35,0" />
+      <scope id="8096993756842045548" at="42,0,46,0" />
+      <scope id="8096993756842045549" at="47,0,51,0" />
+      <scope id="6945424678038286857" at="51,75,56,9" />
+      <scope id="6945424678038286857" at="51,0,58,0" />
+      <unit id="8096993756842045548" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.DecreaseCardinalityAndMove_Test$TestBody" />
+      <unit id="8096993756842045548" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.DecreaseCardinalityAndMove_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/8298693724002312260">
+    <file name="ReuseOfSubtrees_Test.java">
+      <node id="8298693724002312260" at="23,33,24,60" concept="7" />
+      <node id="8298693724002312261" at="28,63,29,54" concept="1" />
+      <node id="6945424678037589440" at="32,73,33,64" concept="1" />
+      <node id="8298693724002312260" at="38,52,39,19" concept="7" />
+      <node id="8298693724002312260" at="43,36,44,46" concept="1" />
+      <node id="8298693724002312261" at="47,65,48,22" concept="1" />
+      <node id="8298693724002312261" at="48,22,49,157" concept="1" />
+      <node id="6945424678037589440" at="51,75,52,22" concept="1" />
+      <node id="6945424678037589440" at="53,30,54,63" concept="3" />
+      <node id="6945424678037589440" at="54,63,55,161" concept="1" />
+      <node id="8298693724002312260" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="8298693724002312260" at="23,0,26,0" concept="0" trace="ReuseOfSubtrees_Test#()V" />
+      <node id="8298693724002312260" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8298693724002312261" at="27,0,31,0" concept="2" trace="test_ChildrenOfBMustBeReused#()V" />
+      <node id="6945424678037589440" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678037589440#()V" />
+      <node id="8298693724002312260" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="8298693724002312261" at="47,0,51,0" concept="2" trace="test_ChildrenOfBMustBeReused#()V" />
+      <node id="6945424678037589440" at="52,22,56,9" concept="1" />
+      <node id="6945424678037589440" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck6945424678037589440#()V" />
+      <scope id="8298693724002312260" at="23,33,24,60" />
+      <scope id="8298693724002312261" at="28,63,29,54" />
+      <scope id="6945424678037589440" at="32,73,33,64" />
+      <scope id="8298693724002312260" at="38,52,39,19" />
+      <scope id="8298693724002312260" at="43,36,44,46" />
+      <scope id="8298693724002312261" at="47,65,49,157" />
+      <scope id="6945424678037589440" at="53,30,55,161">
+        <var name="nodeToCheck" id="6945424678037589440" />
+      </scope>
+      <scope id="8298693724002312260" at="23,0,26,0" />
+      <scope id="8298693724002312260" at="38,0,41,0">
+        <var name="owner" id="8298693724002312260" />
+      </scope>
+      <scope id="8298693724002312261" at="27,0,31,0" />
+      <scope id="6945424678037589440" at="31,0,35,0" />
+      <scope id="8298693724002312260" at="42,0,46,0" />
+      <scope id="8298693724002312261" at="47,0,51,0" />
+      <scope id="6945424678037589440" at="51,75,56,9" />
+      <scope id="6945424678037589440" at="51,0,58,0" />
+      <unit id="8298693724002312260" at="36,0,60,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.ReuseOfSubtrees_Test$TestBody" />
+      <unit id="8298693724002312260" at="18,0,61,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.ReuseOfSubtrees_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/8298693724002462771">
+    <file name="ReuseOfSubtreesWithCardinality_Test.java">
+      <node id="8298693724002462771" at="23,48,24,60" concept="7" />
+      <node id="8298693724002462772" at="28,73,29,64" concept="1" />
+      <node id="6945424678039481739" at="32,73,33,64" concept="1" />
+      <node id="6945424678037681925" at="36,73,37,64" concept="1" />
+      <node id="8298693724002462771" at="42,52,43,19" concept="7" />
+      <node id="8298693724002462771" at="47,36,48,46" concept="1" />
+      <node id="8298693724002462772" at="51,75,52,22" concept="1" />
+      <node id="8298693724002462772" at="52,22,53,163" concept="1" />
+      <node id="6945424678039481739" at="55,75,56,22" concept="1" />
+      <node id="6945424678039481739" at="57,30,58,63" concept="3" />
+      <node id="6945424678039481739" at="58,63,59,161" concept="1" />
+      <node id="6945424678037681925" at="62,75,63,22" concept="1" />
+      <node id="6945424678037681925" at="64,30,65,63" concept="3" />
+      <node id="6945424678037681925" at="65,63,66,161" concept="1" />
+      <node id="8298693724002462771" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="8298693724002462771" at="23,0,26,0" concept="0" trace="ReuseOfSubtreesWithCardinality_Test#()V" />
+      <node id="8298693724002462771" at="42,0,45,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8298693724002462772" at="27,0,31,0" concept="2" trace="test_MustReuseFirstOccurenceOfFeatureB#()V" />
+      <node id="6945424678039481739" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck6945424678039481739#()V" />
+      <node id="6945424678037681925" at="35,0,39,0" concept="2" trace="test_NodeErrorCheck6945424678037681925#()V" />
+      <node id="8298693724002462771" at="46,0,50,0" concept="2" trace="initTestNodes#()V" />
+      <node id="8298693724002462772" at="51,0,55,0" concept="2" trace="test_MustReuseFirstOccurenceOfFeatureB#()V" />
+      <node id="6945424678039481739" at="56,22,60,9" concept="1" />
+      <node id="6945424678037681925" at="63,22,67,9" concept="1" />
+      <node id="6945424678039481739" at="55,0,62,0" concept="2" trace="test_NodeErrorCheck6945424678039481739#()V" />
+      <node id="6945424678037681925" at="62,0,69,0" concept="2" trace="test_NodeErrorCheck6945424678037681925#()V" />
+      <scope id="8298693724002462771" at="23,48,24,60" />
+      <scope id="8298693724002462772" at="28,73,29,64" />
+      <scope id="6945424678039481739" at="32,73,33,64" />
+      <scope id="6945424678037681925" at="36,73,37,64" />
+      <scope id="8298693724002462771" at="42,52,43,19" />
+      <scope id="8298693724002462771" at="47,36,48,46" />
+      <scope id="8298693724002462772" at="51,75,53,163" />
+      <scope id="6945424678039481739" at="57,30,59,161">
+        <var name="nodeToCheck" id="6945424678039481739" />
+      </scope>
+      <scope id="6945424678037681925" at="64,30,66,161">
+        <var name="nodeToCheck" id="6945424678037681925" />
+      </scope>
+      <scope id="8298693724002462771" at="23,0,26,0" />
+      <scope id="8298693724002462771" at="42,0,45,0">
+        <var name="owner" id="8298693724002462771" />
+      </scope>
+      <scope id="8298693724002462772" at="27,0,31,0" />
+      <scope id="6945424678039481739" at="31,0,35,0" />
+      <scope id="6945424678037681925" at="35,0,39,0" />
+      <scope id="8298693724002462771" at="46,0,50,0" />
+      <scope id="8298693724002462772" at="51,0,55,0" />
+      <scope id="6945424678039481739" at="55,75,60,9" />
+      <scope id="6945424678037681925" at="62,75,67,9" />
+      <scope id="6945424678039481739" at="55,0,62,0" />
+      <scope id="6945424678037681925" at="62,0,69,0" />
+      <unit id="8298693724002462771" at="40,0,71,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.ReuseOfSubtreesWithCardinality_Test$TestBody" />
+      <unit id="8298693724002462771" at="18,0,72,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.ReuseOfSubtreesWithCardinality_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/8298693724002654047">
+    <file name="ReuseOfSubtreesAndParentDeletion_Test.java">
+      <node id="8298693724002654047" at="20,50,21,60" concept="7" />
+      <node id="8298693724002654048" at="25,64,26,55" concept="1" />
+      <node id="8298693724002654047" at="31,52,32,19" concept="7" />
+      <node id="8298693724002654047" at="36,36,37,46" concept="1" />
+      <node id="8298693724002654048" at="40,66,41,22" concept="1" />
+      <node id="8298693724002654048" at="41,22,42,157" concept="1" />
+      <node id="8298693724002654047" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="8298693724002654047" at="20,0,23,0" concept="0" trace="ReuseOfSubtreesAndParentDeletion_Test#()V" />
+      <node id="8298693724002654047" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8298693724002654048" at="24,0,28,0" concept="2" trace="test_ChildrenOfBMustBeReused2#()V" />
+      <node id="8298693724002654047" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="8298693724002654048" at="40,0,44,0" concept="2" trace="test_ChildrenOfBMustBeReused2#()V" />
+      <scope id="8298693724002654047" at="20,50,21,60" />
+      <scope id="8298693724002654048" at="25,64,26,55" />
+      <scope id="8298693724002654047" at="31,52,32,19" />
+      <scope id="8298693724002654047" at="36,36,37,46" />
+      <scope id="8298693724002654048" at="40,66,42,157" />
+      <scope id="8298693724002654047" at="20,0,23,0" />
+      <scope id="8298693724002654047" at="31,0,34,0">
+        <var name="owner" id="8298693724002654047" />
+      </scope>
+      <scope id="8298693724002654048" at="24,0,28,0" />
+      <scope id="8298693724002654047" at="35,0,39,0" />
+      <scope id="8298693724002654048" at="40,0,44,0" />
+      <unit id="8298693724002654047" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.ReuseOfSubtreesAndParentDeletion_Test$TestBody" />
+      <unit id="8298693724002654047" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.ReuseOfSubtreesAndParentDeletion_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/8298693724008955817">
+    <file name="AddFeatureToBelowInclude_Test.java">
+      <node id="8298693724008955817" at="20,42,21,60" concept="7" />
+      <node id="8298693724008955818" at="25,73,26,64" concept="1" />
+      <node id="8298693724008955817" at="31,52,32,19" concept="7" />
+      <node id="8298693724008955817" at="36,36,37,46" concept="1" />
+      <node id="8298693724008955818" at="40,75,41,22" concept="1" />
+      <node id="8298693724008955818" at="41,22,42,157" concept="1" />
+      <node id="8298693724008955817" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="8298693724008955817" at="20,0,23,0" concept="0" trace="AddFeatureToBelowInclude_Test#()V" />
+      <node id="8298693724008955817" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8298693724008955818" at="24,0,28,0" concept="2" trace="test_newFeatureMustBeAddedBelowInclude#()V" />
+      <node id="8298693724008955817" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="8298693724008955818" at="40,0,44,0" concept="2" trace="test_newFeatureMustBeAddedBelowInclude#()V" />
+      <scope id="8298693724008955817" at="20,42,21,60" />
+      <scope id="8298693724008955818" at="25,73,26,64" />
+      <scope id="8298693724008955817" at="31,52,32,19" />
+      <scope id="8298693724008955817" at="36,36,37,46" />
+      <scope id="8298693724008955818" at="40,75,42,157" />
+      <scope id="8298693724008955817" at="20,0,23,0" />
+      <scope id="8298693724008955817" at="31,0,34,0">
+        <var name="owner" id="8298693724008955817" />
+      </scope>
+      <scope id="8298693724008955818" at="24,0,28,0" />
+      <scope id="8298693724008955817" at="35,0,39,0" />
+      <scope id="8298693724008955818" at="40,0,44,0" />
+      <unit id="8298693724008955817" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddFeatureToBelowInclude_Test$TestBody" />
+      <unit id="8298693724008955817" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddFeatureToBelowInclude_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/8298693724036142801">
+    <file name="AddedAttributeInRefIgnored_Test.java">
+      <node id="8298693724036142801" at="20,44,21,60" concept="7" />
+      <node id="8298693724036142802" at="25,62,26,53" concept="1" />
+      <node id="8298693724036142801" at="31,52,32,19" concept="7" />
+      <node id="8298693724036142801" at="36,36,37,46" concept="1" />
+      <node id="8298693724036142802" at="40,64,41,22" concept="1" />
+      <node id="8298693724036142805" at="42,30,43,135" concept="1" />
+      <node id="2426050293815195305" at="43,135,44,118" concept="1" />
+      <node id="2426050293815195266" at="44,118,45,0" concept="5" />
+      <node id="8298693724036142801" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="8298693724036142801" at="20,0,23,0" concept="0" trace="AddedAttributeInRefIgnored_Test#()V" />
+      <node id="8298693724036142801" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8298693724036142802" at="24,0,28,0" concept="2" trace="test_attributeMustBeIgnored#()V" />
+      <node id="8298693724036142801" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="8298693724036142802" at="41,22,46,9" concept="1" />
+      <node id="8298693724036142802" at="40,0,48,0" concept="2" trace="test_attributeMustBeIgnored#()V" />
+      <scope id="8298693724036142801" at="20,44,21,60" />
+      <scope id="8298693724036142802" at="25,62,26,53" />
+      <scope id="8298693724036142801" at="31,52,32,19" />
+      <scope id="8298693724036142801" at="36,36,37,46" />
+      <scope id="8298693724036142801" at="20,0,23,0" />
+      <scope id="8298693724036142801" at="31,0,34,0">
+        <var name="owner" id="8298693724036142801" />
+      </scope>
+      <scope id="8298693724036142802" at="42,30,45,0" />
+      <scope id="8298693724036142802" at="24,0,28,0" />
+      <scope id="8298693724036142801" at="35,0,39,0" />
+      <scope id="8298693724036142802" at="40,64,46,9" />
+      <scope id="8298693724036142802" at="40,0,48,0" />
+      <unit id="8298693724036142801" at="29,0,50,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddedAttributeInRefIgnored_Test$TestBody" />
+      <unit id="8298693724036142801" at="15,0,51,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddedAttributeInRefIgnored_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/854200271307893575">
+    <file name="AddAttributeToFeatureRefStringWithDefault_Test.java">
+      <node id="854200271307893575" at="20,59,21,60" concept="7" />
+      <node id="854200271307893598" at="25,69,26,60" concept="1" />
+      <node id="854200271307893575" at="31,52,32,19" concept="7" />
+      <node id="854200271307893575" at="36,36,37,45" concept="1" />
+      <node id="854200271307893598" at="40,71,41,22" concept="1" />
+      <node id="854200271307893598" at="41,22,42,157" concept="1" />
+      <node id="854200271307893575" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="854200271307893575" at="20,0,23,0" concept="0" trace="AddAttributeToFeatureRefStringWithDefault_Test#()V" />
+      <node id="854200271307893575" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="854200271307893598" at="24,0,28,0" concept="2" trace="test_AttributeMustHaveDefaultValue#()V" />
+      <node id="854200271307893575" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="854200271307893598" at="40,0,44,0" concept="2" trace="test_AttributeMustHaveDefaultValue#()V" />
+      <scope id="854200271307893575" at="20,59,21,60" />
+      <scope id="854200271307893598" at="25,69,26,60" />
+      <scope id="854200271307893575" at="31,52,32,19" />
+      <scope id="854200271307893575" at="36,36,37,45" />
+      <scope id="854200271307893598" at="40,71,42,157" />
+      <scope id="854200271307893575" at="20,0,23,0" />
+      <scope id="854200271307893575" at="31,0,34,0">
+        <var name="owner" id="854200271307893575" />
+      </scope>
+      <scope id="854200271307893598" at="24,0,28,0" />
+      <scope id="854200271307893575" at="35,0,39,0" />
+      <scope id="854200271307893598" at="40,0,44,0" />
+      <unit id="854200271307893575" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeToFeatureRefStringWithDefault_Test$TestBody" />
+      <unit id="854200271307893575" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddAttributeToFeatureRefStringWithDefault_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/854200271307979131">
+    <file name="AddNewParentFeature_Test.java">
+      <node id="854200271307979131" at="20,37,21,60" concept="7" />
+      <node id="854200271307979132" at="25,63,26,54" concept="1" />
+      <node id="854200271307979131" at="31,52,32,19" concept="7" />
+      <node id="854200271307979131" at="36,36,37,45" concept="1" />
+      <node id="854200271307979132" at="40,65,41,22" concept="1" />
+      <node id="854200271307979132" at="41,22,42,157" concept="1" />
+      <node id="854200271307979131" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="854200271307979131" at="20,0,23,0" concept="0" trace="AddNewParentFeature_Test#()V" />
+      <node id="854200271307979131" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="854200271307979132" at="24,0,28,0" concept="2" trace="test_newParentMustBeInserted#()V" />
+      <node id="854200271307979131" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="854200271307979132" at="40,0,44,0" concept="2" trace="test_newParentMustBeInserted#()V" />
+      <scope id="854200271307979131" at="20,37,21,60" />
+      <scope id="854200271307979132" at="25,63,26,54" />
+      <scope id="854200271307979131" at="31,52,32,19" />
+      <scope id="854200271307979131" at="36,36,37,45" />
+      <scope id="854200271307979132" at="40,65,42,157" />
+      <scope id="854200271307979131" at="20,0,23,0" />
+      <scope id="854200271307979131" at="31,0,34,0">
+        <var name="owner" id="854200271307979131" />
+      </scope>
+      <scope id="854200271307979132" at="24,0,28,0" />
+      <scope id="854200271307979131" at="35,0,39,0" />
+      <scope id="854200271307979132" at="40,0,44,0" />
+      <unit id="854200271307979131" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddNewParentFeature_Test$TestBody" />
+      <unit id="854200271307979131" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.AddNewParentFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:393f2dc2-2ecd-496a-a094-2671b8b38b52(test.org.iets3.variability.configuration.base.adapt_to_feature_model@tests)/854200271307992781">
+    <file name="RemoveParentFeature_Test.java">
+      <node id="854200271307992781" at="20,37,21,60" concept="7" />
+      <node id="854200271307992782" at="25,59,26,50" concept="1" />
+      <node id="854200271307992781" at="31,52,32,19" concept="7" />
+      <node id="854200271307992781" at="36,36,37,45" concept="1" />
+      <node id="854200271307992782" at="40,61,41,22" concept="1" />
+      <node id="854200271307992782" at="41,22,42,157" concept="1" />
+      <node id="854200271307992781" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="854200271307992781" at="20,0,23,0" concept="0" trace="RemoveParentFeature_Test#()V" />
+      <node id="854200271307992781" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="854200271307992782" at="24,0,28,0" concept="2" trace="test_ParentMustBeRemoved#()V" />
+      <node id="854200271307992781" at="35,0,39,0" concept="2" trace="initTestNodes#()V" />
+      <node id="854200271307992782" at="40,0,44,0" concept="2" trace="test_ParentMustBeRemoved#()V" />
+      <scope id="854200271307992781" at="20,37,21,60" />
+      <scope id="854200271307992782" at="25,59,26,50" />
+      <scope id="854200271307992781" at="31,52,32,19" />
+      <scope id="854200271307992781" at="36,36,37,45" />
+      <scope id="854200271307992782" at="40,61,42,157" />
+      <scope id="854200271307992781" at="20,0,23,0" />
+      <scope id="854200271307992781" at="31,0,34,0">
+        <var name="owner" id="854200271307992781" />
+      </scope>
+      <scope id="854200271307992782" at="24,0,28,0" />
+      <scope id="854200271307992781" at="35,0,39,0" />
+      <scope id="854200271307992782" at="40,0,44,0" />
+      <unit id="854200271307992781" at="29,0,46,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveParentFeature_Test$TestBody" />
+      <unit id="854200271307992781" at="15,0,47,0" name="test.org.iets3.variability.configuration.base.adapt_to_feature_model.RemoveParentFeature_Test" />
+    </file>
+  </root>
+</debug-info>
+
