@@ -78,7 +78,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LocalVarRef", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F2222228766294506476");
+        return new EvaluatorInfo("LocalVarRef", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F2222228766294506476");
       }
 
       @Override
@@ -123,7 +123,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("AssignmentExpr", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F2222228766294473217");
+        return new EvaluatorInfo("AssignmentExpr", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F2222228766294473217");
       }
 
       @Override
@@ -154,7 +154,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LocalVarDeclExpr", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F2222228766294443814");
+        return new EvaluatorInfo("LocalVarDeclExpr", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F2222228766294443814");
       }
 
       @Override
@@ -280,7 +280,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("IFunctionCall", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F3716374511210590485");
+        return new EvaluatorInfo("IFunctionCall", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F3716374511210590485");
       }
 
       @Override
@@ -309,7 +309,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("FunResExpr", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F867786408881857660");
+        return new EvaluatorInfo("FunResExpr", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F867786408881857660");
       }
 
       @Override
@@ -365,7 +365,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("IFunctionLike", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F3716374511210589435");
+        return new EvaluatorInfo("IFunctionLike", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F3716374511210589435");
       }
 
       @Override
@@ -395,7 +395,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ArgRef", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F3716374511210590507");
+        return new EvaluatorInfo("ArgRef", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F3716374511210590507");
       }
 
       @Override
@@ -424,7 +424,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("IFunctionRef", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350114600724");
+        return new EvaluatorInfo("IFunctionRef", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350114600724");
       }
 
       @Override
@@ -465,7 +465,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LambdaExpression", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350113873999");
+        return new EvaluatorInfo("LambdaExpression", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350113873999");
       }
 
       @Override
@@ -494,7 +494,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ShortLambdaExpression", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350113879225");
+        return new EvaluatorInfo("ShortLambdaExpression", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350113879225");
       }
 
       @Override
@@ -523,7 +523,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("CapturedValue", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F2346756181080484806");
+        return new EvaluatorInfo("CapturedValue", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F2346756181080484806");
       }
 
       @Override
@@ -561,7 +561,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("BindOp", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F2807135271607247437");
+        return new EvaluatorInfo("BindOp", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F2807135271607247437");
       }
 
       @Override
@@ -612,7 +612,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("FunctionStyleExecOp", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F6100571306011168926");
+        return new EvaluatorInfo("FunctionStyleExecOp", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F6100571306011168926");
       }
 
       @Override
@@ -664,7 +664,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ExecOp", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350113933785");
+        return new EvaluatorInfo("ExecOp", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350113933785");
       }
 
       @Override
@@ -693,7 +693,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LambdaArgRef", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350114447915");
+        return new EvaluatorInfo("LambdaArgRef", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350114447915");
       }
 
       @Override
@@ -726,7 +726,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("BlockExpression", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350114639080");
+        return new EvaluatorInfo("BlockExpression", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350114639080");
       }
 
       @Override
@@ -774,7 +774,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ValExpression", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350114647726");
+        return new EvaluatorInfo("ValExpression", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350114647726");
       }
 
       @Override
@@ -803,7 +803,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ValValueInContractExpr", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F867786408879291899");
+        return new EvaluatorInfo("ValValueInContractExpr", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F867786408879291899");
       }
 
       @Override
@@ -838,7 +838,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ValRef", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350114649760");
+        return new EvaluatorInfo("ValRef", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F658139350114649760");
       }
 
       @Override
@@ -867,7 +867,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("FunCompose", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F6850639405182847369");
+        return new EvaluatorInfo("FunCompose", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F6850639405182847369");
       }
 
       @Override
@@ -904,7 +904,7 @@ public class InterpreterExprLambdaInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("AssertExpr", "http://127.0.0.1:63320/node?ref=2ca1fad5-fbbd-4a57-9e17-a9ce2e71f5ca%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient32%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F8237981399439533710");
+        return new EvaluatorInfo("AssertExpr", "http://127.0.0.1:63320/node?ref=11ac4235-35bb-416f-8137-479ce9d6645a%2Fi%3A10000001%28org.iets3.core.expr.lambda.interpreter%40transient33%2Forg.iets3.core.expr.lambda.interpreter.plugin%400%29%2F8237981399439533710");
       }
 
       @Override
