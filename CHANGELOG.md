@@ -18,6 +18,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - A bug was fixed that caused the editor of NumberLiteral to break if a property macro was used for its value.
 - Added missing support for IndexExpr for the operations findFirst and forEach.
+- The AssessmentAnalyzer doesn't try to modify read-only models on the CI anymore.
 
 ### Improved
 
