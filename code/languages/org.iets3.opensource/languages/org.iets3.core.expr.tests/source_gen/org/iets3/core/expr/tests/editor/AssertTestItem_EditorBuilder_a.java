@@ -60,6 +60,7 @@ import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import org.jetbrains.annotations.Nullable;
 import com.mbeddr.mpsutil.grammarcells.runtime.IFlagModelAccess;
 import com.mbeddr.mpsutil.grammarcells.runtime.DefaultFlagModelAccess;
@@ -399,6 +400,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.AssertTestItem$DP), LINKS.optionalName$AhFr, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AssertTestItem$DP, LINKS.optionalName$AhFr), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -411,7 +417,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "an optional name for the assert test item";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AssertTestItem$DP, LINKS.optionalName$AhFr), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add an optional name for the assert test item");
           }
         });
       }
@@ -551,6 +558,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.strict$$9IJ);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AssertTestItem$DP, PROPS.strict$$9IJ), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -564,7 +576,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "check that the actual expression is a weak subtype of the expected expression";
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AssertTestItem$DP, PROPS.strict$$9IJ), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "an assert item with weak subtype checking");
           }
           public String getMatchingText(String pattern) {
             return "strict";

@@ -29,8 +29,10 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSideTransformTransformationMenuItem;
+import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.lang.editor.tooltips.runtime.LazyTooltipCellEvaluator;
 import jetbrains.mps.lang.editor.tooltips.runtime.TooltipWrapper;
@@ -196,6 +198,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.initial$PcPI);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractState$W6, PROPS.initial$PcPI), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -203,6 +210,15 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       if (isApplicable) {
         GrammarCellsSideTransformTransformationMenuItem item = new GrammarCellsSideTransformTransformationMenuItem(ctx) {
 
+          @Nullable
+          @Override
+          public String getShortDescriptionText(String pattern) {
+            SNode node = ctx.getNode();
+            String originalText = super.getShortDescriptionText(pattern);
+            EditorContext editorContext = ctx.getEditorContext();
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractState$W6, PROPS.initial$PcPI), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+          }
           public String getMatchingText(String pattern) {
             return "initial";
           }
@@ -393,6 +409,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   }
 
   private static final class CONCEPTS {
+    /*package*/ static final SConcept AbstractState$W6 = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x3de2e5e44d841d61L, "org.iets3.components.functional.structure.AbstractState");
     /*package*/ static final SConcept SimpleState$GX = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x2a4f231b412d5622L, "org.iets3.components.functional.structure.SimpleState");
     /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
     /*package*/ static final SInterfaceConcept IStateContent$R4 = MetaAdapterFactory.getInterfaceConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x3de2e5e44d8510e4L, "org.iets3.components.functional.structure.IStateContent");

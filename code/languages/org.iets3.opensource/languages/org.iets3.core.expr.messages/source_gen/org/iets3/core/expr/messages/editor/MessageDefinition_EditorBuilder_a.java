@@ -61,6 +61,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.CompositeTransformationMenuLookup;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuLookup;
 import com.mbeddr.mpsutil.grammarcells.runtime.ListInsertActionLookup;
@@ -355,6 +356,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
           public SNode doSubstitute(@NotNull String pattern) {
             SNode result = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(ctx.getNode(), CONCEPTS.MessageDefinition$yx), LINKS.args$ez70)).insertElement(0, SNodeFactoryOperations.createNewNode(CONCEPTS.MessageArg$2K, null));
             EditorContext editorContext = ctx.getEditorContext();
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.MessageDefinition$yx, LINKS.args$ez70), node, editorContext);
+              }
+            }.postprocess(ctx.getNode());
 
             return result;
           }
@@ -369,7 +375,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "arguments for the message definition";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.MessageDefinition$yx, LINKS.args$ez70), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add arguments for the message definition");
           }
 
         });
@@ -404,6 +411,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
             String description = "Insert child into " + child.getSNode().getContainmentLink();
             SNodeReference trace = new SNodePointer("r:66e1c722-f2ec-477b-9124-a248fe43156a(org.iets3.core.expr.messages.editor)", "4026566441518474732");
             _FunctionTypes._void_P1_E0<? super SNode> postprocessor = null;
+            postprocessor = new _FunctionTypes._void_P1_E0<SNode>() {
+              public void invoke(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.MessageDefinition$yx, LINKS.args$ez70), node, editorContext);
+              }
+            };
             CompositeTransformationMenuLookup.add(child, new ListInsertActionLookup(matchingTexts, false, parentCellId, description, child.getSNode(), trace, postprocessor));
             CompositeTransformationMenuLookup.add(child, new ListInsertActionLookup(matchingTexts, true, parentCellId, description, child.getSNode(), trace, postprocessor));
           }

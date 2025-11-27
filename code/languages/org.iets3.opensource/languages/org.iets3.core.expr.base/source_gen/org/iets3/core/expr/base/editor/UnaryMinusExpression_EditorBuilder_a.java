@@ -27,6 +27,7 @@ import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
@@ -36,6 +37,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 /*package*/ class UnaryMinusExpression_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -158,7 +160,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       EditorCell_Constant constant = ((EditorCell_Constant) cell);
       String text = new Object() {
         public String query(SAbstractConcept subconcept) {
-          return SConceptOperations.conceptAlias(subconcept);
+          return EditorCustomizationConfigHelper.getConfig().getConstantText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.UnaryMinusExpression$Gz), subconcept);
         }
       }.query(subconcept);
       constant.setText(text);
@@ -237,5 +239,9 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink expr$CW3E = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x3b256bb6ae8048d8L, 0x3b256bb6ae8048d9L, "expr");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept UnaryMinusExpression$Gz = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cdddbbL, "org.iets3.core.expr.base.structure.UnaryMinusExpression");
   }
 }

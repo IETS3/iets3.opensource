@@ -29,6 +29,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSideTransformTransformationMenuItem;
 import org.jetbrains.annotations.Nullable;
@@ -203,6 +204,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.isEager$69Yt);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ConversionRule$PW, PROPS.isEager$69Yt), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -216,7 +222,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "eager conversion";
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ConversionRule$PW, PROPS.isEager$69Yt), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "a conversion rule with eager conversion");
           }
           public String getMatchingText(String pattern) {
             return "eager";

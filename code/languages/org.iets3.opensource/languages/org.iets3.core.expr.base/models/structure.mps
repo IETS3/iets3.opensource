@@ -396,6 +396,7 @@
     <property role="3GE5qa" value="unary.p3000" />
     <property role="EcuMT" value="9002563722476995145" />
     <property role="R4oN_" value="a dot expression" />
+    <property role="34LRSv" value="." />
     <ref role="1TJDcQ" node="4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="7NJy08a3O9b" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

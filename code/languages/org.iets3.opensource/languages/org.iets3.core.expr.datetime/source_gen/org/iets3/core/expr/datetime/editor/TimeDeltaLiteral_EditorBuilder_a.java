@@ -33,6 +33,7 @@ import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -215,7 +216,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       EditorCell_Constant constant = ((EditorCell_Constant) cell);
       String text = new Object() {
         public String query(SAbstractConcept subconcept) {
-          return SConceptOperations.conceptAlias(subconcept);
+          return EditorCustomizationConfigHelper.getConfig().getConstantText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TimeDeltaLiteral$tz), subconcept);
         }
       }.query(subconcept);
       constant.setText(text);
@@ -240,5 +241,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Expression$D_ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L, "org.iets3.core.expr.base.structure.Expression");
+    /*package*/ static final SConcept TimeDeltaLiteral$tz = MetaAdapterFactory.getConcept(0x289fb12b7f534ef7L, 0xbc2e1ed2c6a7c998L, 0x3b52b7f3a24795feL, "org.iets3.core.expr.datetime.structure.TimeDeltaLiteral");
   }
 }

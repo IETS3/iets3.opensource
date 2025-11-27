@@ -40,8 +40,10 @@ import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSideTransformTransformationMenuItem;
+import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
@@ -309,6 +311,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.public$9JFf);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Interface$Ny, PROPS.public$9JFf), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -316,6 +323,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
       if (isApplicable) {
         GrammarCellsSideTransformTransformationMenuItem item = new GrammarCellsSideTransformTransformationMenuItem(ctx) {
 
+          @Nullable
+          @Override
+          public String getShortDescriptionText(String pattern) {
+            SNode node = ctx.getNode();
+            String originalText = super.getShortDescriptionText(pattern);
+            EditorContext editorContext = ctx.getEditorContext();
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Interface$Ny, PROPS.public$9JFf), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+          }
           public String getMatchingText(String pattern) {
             return "public";
           }

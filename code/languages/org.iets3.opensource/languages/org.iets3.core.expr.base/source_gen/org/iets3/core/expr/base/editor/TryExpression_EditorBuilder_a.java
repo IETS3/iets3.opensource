@@ -43,6 +43,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSideTransformTransformationMenuItem;
 import org.jetbrains.annotations.Nullable;
@@ -245,6 +246,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.complete$PYwr);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TryExpression$s4, PROPS.complete$PYwr), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -258,7 +264,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "check that all error clauses are present";
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TryExpression$s4, PROPS.complete$PYwr), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "a try expression that checks that all error clauses are present");
           }
           public String getMatchingText(String pattern) {
             return "complete";
@@ -512,6 +519,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.TryExpression$s4), LINKS.optionalName$AhFr, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TryExpression$s4, LINKS.optionalName$AhFr), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -524,7 +536,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a name for the try expression";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TryExpression$s4, LINKS.optionalName$AhFr), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add a name for the try expression");
           }
         });
       }

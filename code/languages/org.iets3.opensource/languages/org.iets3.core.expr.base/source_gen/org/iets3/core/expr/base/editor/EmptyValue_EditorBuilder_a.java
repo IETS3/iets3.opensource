@@ -54,6 +54,7 @@ import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -324,6 +325,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.EmptyValue$LE), LINKS.type$wKXa, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.EmptyValue$LE, LINKS.type$wKXa), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -336,7 +342,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a type for the empty value";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.EmptyValue$LE, LINKS.type$wKXa), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add a type for the empty value");
           }
         });
       }

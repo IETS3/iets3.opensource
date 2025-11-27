@@ -30,6 +30,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSideTransformTransformationMenuItem;
 import org.jetbrains.annotations.Nullable;
@@ -203,6 +204,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.isStrict$_qyl);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StateMachine$He, PROPS.isStrict$_qyl), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -216,7 +222,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "fail when no transition applies";
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StateMachine$He, PROPS.isStrict$_qyl), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "a state machine that fails when no transition applies");
           }
           public String getMatchingText(String pattern) {
             return "strict";
@@ -347,6 +354,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
           public SNode doSubstitute(@NotNull String pattern) {
             SNode result = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(ctx.getNode(), CONCEPTS.StateMachine$He), LINKS.parameters$Z4bq)).insertElement(0, SNodeFactoryOperations.createNewNode(CONCEPTS.Parameter$Is, null));
             EditorContext editorContext = ctx.getEditorContext();
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StateMachine$He, LINKS.parameters$Z4bq), node, editorContext);
+              }
+            }.postprocess(ctx.getNode());
 
             return result;
           }
@@ -361,7 +373,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "parameters for the state machine";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StateMachine$He, LINKS.parameters$Z4bq), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add parameters for the state machine");
           }
 
         });
@@ -396,6 +409,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             String description = "Insert child into " + child.getSNode().getContainmentLink();
             SNodeReference trace = new SNodePointer("r:3ff9f818-daab-4449-aa16-e1231523d3a3(org.iets3.core.expr.statemachines.editor)", "24388123200217916");
             _FunctionTypes._void_P1_E0<? super SNode> postprocessor = null;
+            postprocessor = new _FunctionTypes._void_P1_E0<SNode>() {
+              public void invoke(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StateMachine$He, LINKS.parameters$Z4bq), node, editorContext);
+              }
+            };
             CompositeTransformationMenuLookup.add(child, new ListInsertActionLookup(matchingTexts, false, parentCellId, description, child.getSNode(), trace, postprocessor));
             CompositeTransformationMenuLookup.add(child, new ListInsertActionLookup(matchingTexts, true, parentCellId, description, child.getSNode(), trace, postprocessor));
           }

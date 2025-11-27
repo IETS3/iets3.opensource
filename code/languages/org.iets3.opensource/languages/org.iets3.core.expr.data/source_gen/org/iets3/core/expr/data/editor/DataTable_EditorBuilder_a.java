@@ -53,24 +53,11 @@ import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSideTransformTransformationMenuItem;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.AttributeOperations;
-import com.mbeddr.mpsutil.grammarcells.runtime.SavedCaretPosition;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import com.mbeddr.mpsutil.grammarcells.runtime.DelegateToParentCellAction;
-import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
-import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
-import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
-import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
-import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
-import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
-import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
-import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import org.jetbrains.mps.openapi.util.TreeIterator;
 import jetbrains.mps.openapi.editor.cells.CellTraversalUtil;
 import de.slisson.mps.tables.runtime.cells.EditorCell_GridCell;
@@ -89,6 +76,7 @@ import de.slisson.mps.tables.runtime.gridmodel.Header;
 import de.slisson.mps.tables.runtime.gridmodel.EditorCellHeader;
 import de.slisson.mps.tables.runtime.gridmodel.StringHeaderReference;
 import org.iets3.core.expr.data.editor.DataTableStyles_StyleSheet.DataTableColumnHeaderForRowHeadersStyleClass;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.iets3.core.expr.data.editor.DataTableStyles_StyleSheet.DataTableColumnHeaderStyleClass;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
@@ -106,6 +94,7 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultSChildSubstituteInfo;
 import de.slisson.mps.tables.runtime.gridmodel.IRowCreateHandler;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 /*package*/ class DataTable_EditorBuilder_a extends AbstractEditorBuilder {
@@ -133,7 +122,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createSideTransformationHolderProcessor_0());
-    editorCell.addEditorCell(createCustomFactory_11());
+    editorCell.addEditorCell(createCustomFactory_7());
     return editorCell;
   }
   private EditorCell createSideTransformationHolderProcessor_0() {
@@ -149,7 +138,6 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createAlternation_0());
-    editorCell.addEditorCell(createAlternation_1());
     return editorCell;
   }
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
@@ -301,6 +289,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.allowLookup$yBV8);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.DataTable$qy, PROPS.allowLookup$yBV8), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -314,7 +307,8 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "Enable look ups on the data table";
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.DataTable$qy, PROPS.allowLookup$yBV8), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "a data table with lookups enabled");
           }
           public String getMatchingText(String pattern) {
             return "allows lookup";
@@ -340,199 +334,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
       return result;
     }
   }
-  private EditorCell createAlternation_1() {
-    boolean alternationCondition = true;
-    alternationCondition = nodeCondition_rz8mbo_a3a0a();
-    EditorCell editorCell = null;
-    if (alternationCondition) {
-      editorCell = createCustomFactory_7();
-    } else {
-      editorCell = createSideTransformationSectionCell_1();
-    }
-    return editorCell;
-  }
-  private boolean nodeCondition_rz8mbo_a3a0a() {
-    return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(myNode, LINKS.defaultLookupColumn$TWBX)).isNotEmpty();
-  }
   private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
-
-
-    final EditorCell cell = createCustomFactory_9();
-    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
-      cell.setAction(CellActionType.BACKSPACE, new CellActionWithReadAccess() {
-        public void execute(EditorContext editorContext) {
-          SavedCaretPosition caretPosition = new SavedCaretPosition(editorContext);
-          caretPosition.save();
-          SNodeOperations.deleteNode(SLinkOperations.getTarget(node, LINKS.defaultLookupColumn$TWBX));
-          editorContext.flushEvents();
-          caretPosition.restore(true);
-        }
-      });
-      cell.setAction(CellActionType.DELETE, new CellActionWithReadAccess() {
-        public void execute(EditorContext editorContext) {
-          SavedCaretPosition caretPosition = new SavedCaretPosition(editorContext);
-          caretPosition.save();
-          SNodeOperations.deleteNode(SLinkOperations.getTarget(node, LINKS.defaultLookupColumn$TWBX));
-          editorContext.flushEvents();
-          caretPosition.restore(false);
-        }
-      });
-      return cell;
-    }).invoke();
-    return editorCell;
-  }
-  private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
-  }
-  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
-
-
-    final EditorCell cell = createCollection_2();
-    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
-      final SNode childNode = SLinkOperations.getTarget(myNode, LINKS.defaultLookupColumn$TWBX);
-      new Object() {
-        public void removeDeleteAction(EditorCell descendantCell) {
-          if (descendantCell.getSNode() == childNode) {
-            descendantCell.setAction(CellActionType.DELETE, new DelegateToParentCellAction(descendantCell, CellActionType.DELETE));
-            descendantCell.setAction(CellActionType.BACKSPACE, new DelegateToParentCellAction(descendantCell, CellActionType.BACKSPACE));
-          } else {
-            if (descendantCell instanceof jetbrains.mps.openapi.editor.cells.EditorCell_Collection) {
-              for (EditorCell childCell : Sequence.fromIterable(((jetbrains.mps.openapi.editor.cells.EditorCell_Collection) descendantCell))) {
-                removeDeleteAction(childCell);
-              }
-            }
-          }
-        }
-      }.removeDeleteAction(cell);
-      return cell;
-    }).invoke();
-    return editorCell;
-  }
-  private EditorCell createCustomFactory_9() {
-    return createCustomFactory_8(getEditorContext(), myNode);
-  }
-  private EditorCell createCollection_2() {
-    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_rz8mbo_a0a3a0a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.SELECTABLE, false);
-    editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createRefNode_0());
-    return editorCell;
-  }
-  private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "with default:");
-    editorCell.setCellId("Constant_rz8mbo_a0a0d0a0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new defaultLookupColumnSingleRoleHandler_rz8mbo_b0a0d0a0(myNode, LINKS.defaultLookupColumn$TWBX, getEditorContext());
-    return provider.createCell();
-  }
-  private static class defaultLookupColumnSingleRoleHandler_rz8mbo_b0a0d0a0 extends SingleRoleCellProvider {
-    @NotNull
-    private SNode myNode;
-
-    public defaultLookupColumnSingleRoleHandler_rz8mbo_b0a0d0a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-      super(containmentLink, context);
-      myNode = ownerNode;
-    }
-
-    @Override
-    @NotNull
-    public SNode getNode() {
-      return myNode;
-    }
-
-    protected EditorCell createChildCell(SNode child) {
-      EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.defaultLookupColumn$TWBX, child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.defaultLookupColumn$TWBX, child));
-      installCellInfo(child, editorCell, false);
-      return editorCell;
-    }
-
-
-
-    private void installCellInfo(SNode child, EditorCell editorCell, boolean isEmpty) {
-      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
-      }
-      if (editorCell.getSRole() == null) {
-        editorCell.setSRole(LINKS.defaultLookupColumn$TWBX);
-      }
-    }
-    @Override
-    protected EditorCell createEmptyCell() {
-      getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.defaultLookupColumn$TWBX));
-      try {
-        EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_defaultLookupColumn");
-        installCellInfo(null, editorCell, true);
-        setCellContext(editorCell);
-        return editorCell;
-      } finally {
-        getCellFactory().popCellContext();
-      }
-    }
-    protected String getNoTargetText() {
-      return "<no defaultLookupColumn>";
-    }
-  }
-  private EditorCell createSideTransformationSectionCell_1() {
-    SideTransformationHolderCell editorCell = new SideTransformationHolderCell(getEditorContext(), myNode, null, "grammar.optional for DataTable.defaultLookupColumn") {
-      @Override
-      public List<MenuPart<TransformationMenuItem, TransformationMenuContext>> createMenuParts() {
-        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a3a0a());
-      }
-    };
-    editorCell.setCellId("SideTransformationSectionCell_rz8mbo_a3a0a");
-    return editorCell;
-  }
-  private class GenericMenuPart_a0a3a0a implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
-
-    @NotNull
-    @Override
-    public List<TransformationMenuItem> createItems(final TransformationMenuContext ctx) {
-      List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
-      final SNode sourceNode = ctx.getNode();
-      EditorContext editorContext = ctx.getEditorContext();
-      final Iterable<String> matchingTexts = new StringOrSequenceQuery() {
-        public Object queryStringOrSequence() {
-          return Sequence.<String>singleton("with default:");
-        }
-      }.query();
-
-      if (Sequence.fromIterable(matchingTexts).isNotEmpty()) {
-        ListSequence.fromList(result).addElement(new MultiTextActionItem(matchingTexts, ctx) {
-          @Override
-          public void execute(@NotNull String pattern) {
-            final SNode sourceNode = ctx.getNode();
-            EditorContext editorContext = ctx.getEditorContext();
-            SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.DataTable$qy), LINKS.defaultLookupColumn$TWBX, null);
-          }
-          @Override
-          public SAbstractConcept getOutputConcept() {
-            return CONCEPTS.DataTable$qy;
-          }
-
-          @Nullable
-          @Override
-          public String getShortDescriptionText(@NotNull String pattern) {
-            SNode node = ctx.getNode();
-            String originalText = super.getShortDescriptionText(pattern);
-            EditorContext editorContext = ctx.getEditorContext();
-            return "a default lookup column for the data table";
-          }
-        });
-      }
-      return result;
-    }
-  }
-  private EditorCell createCustomFactory_10(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createTable_1();
@@ -549,8 +351,8 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_11() {
-    return createCustomFactory_10(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), myNode);
   }
   private EditorCell createTable_0(final EditorContext editorContext, final SNode node) {
 
@@ -655,13 +457,13 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
         return style;
       }
     }.createStyle(0, 0);
-    final EditorCell cell = createConstant_2();
+    final EditorCell cell = createConstant_1();
     Header header = new EditorCellHeader(new StringHeaderReference("9159187705448476280"), cell);
     header.setStyle(style);
     grid.setElement(0, 0, header);
     return grid;
   }
-  private EditorCell createConstant_2() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_rz8mbo_a0a0a1a");
     Style style = new StyleImpl();
@@ -806,7 +608,6 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink defaultLookupColumn$TWBX = MetaAdapterFactory.getContainmentLink(0xb25b8ad14d3d4e45L, 0x8c7872091b39fddaL, 0x335c4a1eb648aeeL, 0x7ac90020e5d2a54dL, "defaultLookupColumn");
     /*package*/ static final SContainmentLink dataCols$8Lcc = MetaAdapterFactory.getContainmentLink(0xb25b8ad14d3d4e45L, 0x8c7872091b39fddaL, 0x335c4a1eb648aeeL, 0x335c4a1eb64c526L, "dataCols");
     /*package*/ static final SContainmentLink rows$1pKa = MetaAdapterFactory.getContainmentLink(0xb25b8ad14d3d4e45L, 0x8c7872091b39fddaL, 0x335c4a1eb648aeeL, 0x335c4a1eb677ef4L, "rows");
     /*package*/ static final SContainmentLink cells$lhZ4 = MetaAdapterFactory.getContainmentLink(0xb25b8ad14d3d4e45L, 0x8c7872091b39fddaL, 0x335c4a1eb652889L, 0x335c4a1eb64cdd6L, "cells");

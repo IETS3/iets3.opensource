@@ -8,6 +8,8 @@
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="44fz" ref="r:93558715-ee8d-4b41-af94-bc16c022d73d(org.iets3.core.expr.genjava.stateMachineExample.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -57,11 +59,30 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -69,17 +90,55 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
+      <concept id="1954385921685784800" name="com.mbeddr.mpsutil.grammarcells.structure.PostprocessFunction" flags="ig" index="315t4" />
+      <concept id="7408935449007508559" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition_expectedConcept" flags="ng" index="7dpZ6" />
+      <concept id="7408935449007503509" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition" flags="ig" index="7duGs" />
+      <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
+      <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="7011566904921631440" name="postprocess" index="vWNKz" />
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
+      <concept id="2489050352088028316" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_editorContext" flags="ng" index="2MNBq7" />
       <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ngI" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
+      <concept id="2293941288997642241" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedConcept" flags="ng" index="3dAXtN" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="1954385921685817931" name="postprocessSideTransform" index="31dnJ" />
+        <child id="1954385921685817946" name="postprocessNodeSubstitute" index="31dnY" />
+        <child id="7408935449007570592" name="substituteCondition" index="7deOD" />
+        <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+      </concept>
+      <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
+      <concept id="2862331529394480355" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SubConcept" flags="ng" index="1Lj6YZ" />
+      <concept id="6349233906483558394" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_wrappedConcept" flags="ng" index="1ZN7lz" />
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -184,9 +243,77 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqBDG" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqBDH" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqBDM" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqBDL" role="3clFbG">
-                <property role="Xl_RC" value="arguments for the event" />
+            <node concept="3cpWs8" id="60PTWgneuFY" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneuFZ" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneuG0" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneuG1" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneuG2" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneuG3" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2YIFZM" id="60PTWgpwIkU" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgpwIqi" role="37wK5m">
+                        <ref role="35c_gD" to="44fz:4NM7IHyCGeB" resolve="Event" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgpwIAP" role="37wK5m">
+                        <ref role="359W_E" to="44fz:4NM7IHyCGeB" resolve="Event" />
+                        <ref role="359W_F" to="44fz:4NM7IHyCGfP" resolve="args" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneuG7" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneuG8" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneuG9" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmkZsV" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneuGb" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneuGc" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneuFZ" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneuGe" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneuGf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneuFZ" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneuGg" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqBDL" role="3K4GZi">
+                  <property role="Xl_RC" value="add arguments for the event" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgpvfhT" role="vWNKz">
+          <node concept="3clFbS" id="60PTWgpvfhU" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgpvfhW" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgpvfhY" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgpvfhZ" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgpvfi0" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                  <node concept="2YIFZM" id="60PTWgpvfi1" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgpvfi2" role="37wK5m">
+                      <ref role="35c_gD" to="44fz:4NM7IHyCGeB" resolve="Event" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgpwIVt" role="37wK5m">
+                      <ref role="359W_E" to="44fz:4NM7IHyCGeB" resolve="Event" />
+                      <ref role="359W_F" to="44fz:4NM7IHyCGfP" resolve="args" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgpvfi4" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgpvfi5" role="37wK5m" />
+                </node>
               </node>
             </node>
           </node>
@@ -232,9 +359,165 @@
         </node>
         <node concept="uPpia" id="2zRMcT4P_hy" role="1djCvC">
           <node concept="3clFbS" id="2zRMcT4P_hz" role="2VODD2">
-            <node concept="3clFbF" id="2zRMcT4P_h$" role="3cqZAp">
-              <node concept="Xl_RD" id="2zRMcT4P_h_" role="3clFbG">
-                <property role="Xl_RC" value="an event argument with type" />
+            <node concept="3cpWs8" id="60PTWgrzeP6" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgrzeP7" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgrzeP8" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgrzeP9" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgrzePa" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgrzePb" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgry9kT" resolve="getWrapperCellSubstitutionDescriptionText" />
+                    <node concept="2YIFZM" id="60PTWgr_8h1" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgr_8h2" role="37wK5m">
+                        <ref role="35c_gD" to="44fz:4NM7IHyCGeJ" resolve="EventArg" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgr_8h3" role="37wK5m">
+                        <ref role="359W_E" to="44fz:4NM7IHyCGeJ" resolve="EventArg" />
+                        <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="2e73FJ" id="60PTWgrzePf" role="37wK5m" />
+                    <node concept="3dAXtN" id="60PTWgrzePg" role="37wK5m" />
+                    <node concept="1Lj6YZ" id="60PTWgrzePh" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgrzePi" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgrzePj" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgrzePk" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgrzePl" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgrzePm" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgrzeP7" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgrzePn" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgrzePo" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgrzeP7" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgrzePp" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="2zRMcT4P_h_" role="3K4GZi">
+                  <property role="Xl_RC" value="an event argument with type" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2e7140" id="60PTWgq7YdL" role="2e1Fq_">
+          <node concept="3clFbS" id="60PTWgq7YdM" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgq7YdN" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgq7YdO" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgq7YdP" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgq7YdQ" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgq7bk$" resolve="isWrapperCellSideTransformationActivated" />
+                  <node concept="2YIFZM" id="60PTWgq7YdR" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgq7YdS" role="37wK5m">
+                      <ref role="35c_gD" to="44fz:4NM7IHyCGeJ" resolve="EventArg" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgq7YdT" role="37wK5m">
+                      <ref role="359W_E" to="44fz:4NM7IHyCGeJ" resolve="EventArg" />
+                      <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="2e73FJ" id="60PTWgq7YdU" role="37wK5m" />
+                  <node concept="1Lj6YZ" id="60PTWgq7YdV" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgq7YdW" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7duGs" id="60PTWgqcYVi" role="7deOD">
+          <node concept="3clFbS" id="60PTWgqcYVj" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqcYZc" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqcYZd" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqcYZe" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqcYZf" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgq7bkl" resolve="isWrapperCellSubstitutionActivated" />
+                  <node concept="2YIFZM" id="60PTWgqcYZg" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgqeyal" role="37wK5m">
+                      <ref role="35c_gD" to="44fz:4NM7IHyCGeJ" resolve="EventArg" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgqeycO" role="37wK5m">
+                      <ref role="359W_E" to="44fz:4NM7IHyCGeJ" resolve="EventArg" />
+                      <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="7dpZ6" id="60PTWgqd3w$" role="37wK5m" />
+                  <node concept="1ZN7lz" id="60PTWgqd3QB" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqcYZl" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgqY1TG" role="31dnJ">
+          <node concept="3clFbS" id="60PTWgqY1TH" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqY1Zk" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqY1Zl" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqY1Zm" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqY1Zn" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgqXNLq" resolve="wrapperCellSideTransformationPostProcess" />
+                  <node concept="2YIFZM" id="60PTWgr1m1K" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgr1m1L" role="37wK5m">
+                      <ref role="35c_gD" to="44fz:4NM7IHyCGeJ" resolve="EventArg" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgr1m1M" role="37wK5m">
+                      <ref role="359W_E" to="44fz:4NM7IHyCGeJ" resolve="EventArg" />
+                      <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgqY3cH" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqY1Zt" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgqZqtc" role="31dnY">
+          <node concept="3clFbS" id="60PTWgqZqtd" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqZuo$" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqZuo_" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqZuoA" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqZuoB" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgqXQTX" resolve="wrapperCellSubstitutionPostProcess" />
+                  <node concept="2YIFZM" id="60PTWgr1m6w" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgr1m6x" role="37wK5m">
+                      <ref role="35c_gD" to="44fz:4NM7IHyCGeJ" resolve="EventArg" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgr1m6y" role="37wK5m">
+                      <ref role="359W_E" to="44fz:4NM7IHyCGeJ" resolve="EventArg" />
+                      <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgqZuoF" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqZuoG" role="37wK5m" />
+                </node>
               </node>
             </node>
           </node>
@@ -280,9 +563,77 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgqByB" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgqByC" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgqByZ" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgqByY" role="3clFbG">
-                <property role="Xl_RC" value="constraints for the event reference" />
+            <node concept="3cpWs8" id="60PTWgne84W" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgne84X" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgne7R_" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgne84Y" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgne84Z" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2YIFZM" id="60PTWgoxdpY" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoxdRD" role="37wK5m">
+                        <ref role="35c_gD" to="44fz:4NM7IHyCGeI" resolve="EventRef" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgoC7pm" role="37wK5m">
+                        <ref role="359W_E" to="44fz:4NM7IHyCGeI" resolve="EventRef" />
+                        <ref role="359W_F" to="44fz:4NM7IHyCGg2" resolve="constraints" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgne854" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgne855" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgne856" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneuvi" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgne9KK" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgne9N5" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgne8JG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgne858" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgne9iC" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgqByY" role="3K4GZi">
+                  <property role="Xl_RC" value="add constraints for the event reference" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgpveXo" role="vWNKz">
+          <node concept="3clFbS" id="60PTWgpveXp" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgpveXr" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgpuEPD" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgpuEPE" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgpuEPF" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                  <node concept="2YIFZM" id="60PTWgpuEPG" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgpwFzK" role="37wK5m">
+                      <ref role="35c_gD" to="44fz:4NM7IHyCGeI" resolve="EventRef" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgpwF_u" role="37wK5m">
+                      <ref role="359W_E" to="44fz:4NM7IHyCGeI" resolve="EventRef" />
+                      <ref role="359W_F" to="44fz:4NM7IHyCGg2" resolve="constraints" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgpuEPJ" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgpuEPK" role="37wK5m" />
+                </node>
               </node>
             </node>
           </node>

@@ -30,6 +30,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSideTransformTransformationMenuItem;
 import org.jetbrains.annotations.Nullable;
@@ -196,6 +197,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.abstract$UPni);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AlgebraicConstructorArg$Hz, PROPS.abstract$UPni), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -209,7 +215,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "make the constructor abstract";
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AlgebraicConstructor$V5, PROPS.abstract$UPni), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "an abstract constructor");
           }
           public String getMatchingText(String pattern) {
             return "abstract";
@@ -471,9 +478,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class CONCEPTS {
+    /*package*/ static final SConcept AlgebraicConstructorArg$Hz = MetaAdapterFactory.getConcept(0x5fe6cb132fbd4e21L, 0x9842785bdd6fc5b1L, 0x2224c74e27a1de64L, "org.iets3.core.expr.adt.structure.AlgebraicConstructorArg");
     /*package*/ static final SConcept AlgebraicConstructor$V5 = MetaAdapterFactory.getConcept(0x5fe6cb132fbd4e21L, 0x9842785bdd6fc5b1L, 0x52a5783d22c9d77cL, "org.iets3.core.expr.adt.structure.AlgebraicConstructor");
     /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
-    /*package*/ static final SConcept AlgebraicConstructorArg$Hz = MetaAdapterFactory.getConcept(0x5fe6cb132fbd4e21L, 0x9842785bdd6fc5b1L, 0x2224c74e27a1de64L, "org.iets3.core.expr.adt.structure.AlgebraicConstructorArg");
   }
 
   private static final class LINKS {

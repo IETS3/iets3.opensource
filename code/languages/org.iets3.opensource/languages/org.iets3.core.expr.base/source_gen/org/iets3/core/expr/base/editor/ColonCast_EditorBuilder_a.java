@@ -33,6 +33,7 @@ import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
@@ -218,7 +219,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       EditorCell_Constant constant = ((EditorCell_Constant) cell);
       String text = new Object() {
         public String query(SAbstractConcept subconcept) {
-          return SConceptOperations.conceptAlias(subconcept);
+          return EditorCustomizationConfigHelper.getConfig().getConstantText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ColonCast$8S), subconcept);
         }
       }.query(subconcept);
       constant.setText(text);
@@ -396,6 +397,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class CONCEPTS {
+    /*package*/ static final SConcept ColonCast$8S = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x52a5783d23e687ffL, "org.iets3.core.expr.base.structure.ColonCast");
     /*package*/ static final SConcept Type$WK = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L, "org.iets3.core.expr.base.structure.Type");
   }
 }

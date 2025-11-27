@@ -31,6 +31,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuConte
 import java.util.ArrayList;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSideTransformTransformationMenuItem;
 import org.jetbrains.annotations.Nullable;
@@ -240,6 +241,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.public$9JFf);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Component$gR, PROPS.public$9JFf), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -253,7 +259,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a public component";
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Component$gR, PROPS.public$9JFf), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "a public component");
           }
           public String getMatchingText(String pattern) {
             return "public";
@@ -491,6 +498,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.fragment$eEJt);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Component$gR, PROPS.fragment$eEJt), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -504,7 +516,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a component fragment";
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Component$gR, PROPS.fragment$eEJt), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "a component fragment");
           }
           public String getMatchingText(String pattern) {
             return "fragment";
@@ -1230,7 +1243,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             public Iterable<String> query(SNode node) {
               return new StringOrSequenceQuery() {
                 public Object queryStringOrSequence() {
-                  return "enriches";
+                  String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellTransformationText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Component$gR, LINKS.enriches$IIK2), node, editorContext);
+                  return ((description != null && description.length() > 0) ? description : "enriches");
                 }
               }.query();
             }
@@ -1246,6 +1260,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.Component$gR), LINKS.enriches$IIK2, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Component$gR, LINKS.enriches$IIK2), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -1258,7 +1277,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "an enriches clause";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Component$gR, LINKS.enriches$IIK2), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add an enriches clause");
           }
         });
       }
@@ -3756,7 +3776,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             public Iterable<String> query(SNode node) {
               return new StringOrSequenceQuery() {
                 public Object queryStringOrSequence() {
-                  return "enriches";
+                  String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellTransformationText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Component$gR, LINKS.enriches$IIK2), node, editorContext);
+                  return ((description != null && description.length() > 0) ? description : "enriches");
                 }
               }.query();
             }
@@ -3772,6 +3793,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.Component$gR), LINKS.enriches$IIK2, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Component$gR, LINKS.enriches$IIK2), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -3784,7 +3810,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "an enriches clause";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Component$gR, LINKS.enriches$IIK2), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add an enriches clause");
           }
         });
       }

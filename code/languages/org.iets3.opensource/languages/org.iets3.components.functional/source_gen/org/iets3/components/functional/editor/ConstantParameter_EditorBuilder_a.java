@@ -50,6 +50,8 @@ import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
+import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -393,15 +395,25 @@ import org.jetbrains.mps.openapi.language.SConcept;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.ConstantParameter$69), LINKS.value$mbH0, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ConstantParameter$69, LINKS.value$mbH0), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
             return CONCEPTS.ConstantParameter$69;
           }
 
+          @Nullable
+          @Override
           public String getShortDescriptionText(@NotNull String pattern) {
-            // if no description was set on the optionalCell, the description shall be blank
-            return "";
+            SNode node = ctx.getNode();
+            String originalText = super.getShortDescriptionText(pattern);
+            EditorContext editorContext = ctx.getEditorContext();
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ConstantParameter$69, LINKS.value$mbH0), node, originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
           }
         });
       }

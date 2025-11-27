@@ -50,6 +50,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext;
 import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import org.jetbrains.annotations.Nullable;
@@ -307,7 +308,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
             public Iterable<String> query(SNode node) {
               return new StringOrSequenceQuery() {
                 public Object queryStringOrSequence() {
-                  return "<";
+                  String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellTransformationText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ListLiteral$zq, LINKS.typeConstraint$BQ$W), node, editorContext);
+                  return ((description != null && description.length() > 0) ? description : "<");
                 }
               }.query();
             }
@@ -323,6 +325,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.ListLiteral$zq), LINKS.typeConstraint$BQ$W, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ListLiteral$zq, LINKS.typeConstraint$BQ$W), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -335,7 +342,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a type constraint for the list literal";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ListLiteral$zq, LINKS.typeConstraint$BQ$W), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add a type constraint for the list literal");
           }
         });
       }

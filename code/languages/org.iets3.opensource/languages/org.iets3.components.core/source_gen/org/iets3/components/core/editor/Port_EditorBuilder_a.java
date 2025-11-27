@@ -64,6 +64,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuConte
 import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
@@ -980,6 +981,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.Port$gs), LINKS.optionalName$AhFr, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Port$gs, LINKS.optionalName$AhFr), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -992,7 +998,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a name for the port";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Port$gs, LINKS.optionalName$AhFr), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add a name for the port");
           }
         });
       }
