@@ -125,6 +125,7 @@
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="4303308395523096213" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="ng" index="2DD5aU" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1147468630220" name="propertyGetter" index="EtsB7" />
@@ -187,6 +188,9 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
@@ -1736,6 +1740,24 @@
             <node concept="1mIQ4w" id="twWOnQMLu8" role="2OqNvi">
               <node concept="chp4Y" id="twWOnQMLu9" role="cj9EA">
                 <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4Iw$Aa1Oty$">
+    <property role="3GE5qa" value="collection" />
+    <ref role="1M2myG" to="700h:7SZA7UdzZKU" resolve="ForeachOp" />
+    <node concept="9SLcT" id="4Iw$Aa1OtB1" role="9SGkU">
+      <node concept="3clFbS" id="4Iw$Aa1OtB2" role="2VODD2">
+        <node concept="3clFbF" id="4Iw$Aa1OtYs" role="3cqZAp">
+          <node concept="2OqwBi" id="4Iw$Aa1OuBa" role="3clFbG">
+            <node concept="2DD5aU" id="4Iw$Aa1OtYr" role="2Oq$k0" />
+            <node concept="2Zo12i" id="4Iw$Aa1OvQW" role="2OqNvi">
+              <node concept="chp4Y" id="4Iw$Aa1Owuy" role="2Zo12j">
+                <ref role="cht4Q" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
               </node>
             </node>
           </node>
