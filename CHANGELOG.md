@@ -8,13 +8,21 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## November 2025
 
 ### Added
+
 - The Maven POM now contains all bundled JARs as dependencies with `provided` scope to help with automated license and
   vulnerability scanning.
 
+- The Grammar Cells of KernelF editors can now be customized through the extension point `EditorCustomization`. Optional cells, flag cells, constant cells, substitute cells and side transformations can be customized (activation of substitutions, side transformations, description text, post-processing etc.).
+
 ### Fixed
+
 - A bug was fixed that caused the editor of NumberLiteral to break if a property macro was used for its value.
 - Added missing support for IndexExpr for the operations findFirst and forEach.
 - An invalid checking rule for parameter value types of functional component instances has been removed. It was introduced by a move of IETS3.Core languages in February 2025.
+
+### Improved
+
+- Some editor action descriptions were improved.
 
 ## October 2025
 
