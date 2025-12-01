@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## November 2025
+
+### Added
+- The Maven POM now contains all bundled JARs as dependencies with `provided` scope to help with automated license and
+  vulnerability scanning.
+
+### Fixed
+- A bug was fixed that caused the editor of NumberLiteral to break if a property macro was used for its value.
+- Added missing support for IndexExpr for the operations findFirst and forEach.
+- An invalid checking rule for parameter value types of functional component instances has been removed. It was introduced by a move of IETS3.Core languages in February 2025.
+
 ## October 2025
 
 ### Added
@@ -22,7 +33,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 - Improved the readability of lists by enforcing a new line when a threshold of three elements per list is exeeded.
 - A DecTab bug not respecting the default value was fixed and a corresponding warning was added to warn users which default value takes precedence
-
+- Ignored concepts of the coverage analyzer are now colored with IGNORED_COLOR.
 
 ## September 2025
 
@@ -111,7 +122,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - The demo language `org.iets3.core.expr.typetags.lib` was removed.
 - The unused field `ReferenceableFlag#idMember` was removed.
 
-## Feburary 2025
+## February 2025
 
 ### Added
 
