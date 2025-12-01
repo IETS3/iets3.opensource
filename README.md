@@ -14,7 +14,7 @@ If you want to use a custom version of `mbeddr` with Gradle, publish its artifac
 
 ## Supported MPS versions
 
-The latest supported MPS version is master, plus the three previous versions on maintenance branches. 
+The latest supported MPS version is master, plus the two previous versions on maintenance branches. 
 
 ### What does support mean in this case?
 
