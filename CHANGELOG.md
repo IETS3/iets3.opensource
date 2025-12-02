@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## December 2025
+
+### Fixed
+
+- Variability: The propagation of configuration updates to referencing configurations has been improved. Due to this optimization, it needs much less CPU time now.
+
+
 ## November 2025
 
 ### Added
