@@ -8,6 +8,9 @@
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="22" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="11" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base" version="24" />
+    <use id="71226ee2-bbc4-45d2-a41d-20b97237156c" name="org.iets3.variability.configuration.base" version="2" />
+    <use id="f0883503-8eaa-4bc8-8846-eb63220ab1dd" name="org.iets3.variability.artifacts.base" version="2" />
   </languages>
   <imports>
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
@@ -15,6 +18,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wmbn" ref="r:e5a2b77c-569f-4c13-8679-6ec5a6000fa9(org.iets3.core.base.typesystem)" />
     <import index="1jcu" ref="r:729fa0c7-b4e4-42b1-acfe-71017c020a49(org.iets3.analysis.base.behavior)" />
+    <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -147,25 +151,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="_iOnU" id="4358bbCKwmK">
-    <property role="TrG5h" value="L" />
-    <node concept="1aga60" id="4358bbCKwmM" role="_iOnB">
-      <property role="TrG5h" value="doit" />
-      <property role="0Rz4W" value="1133897595" />
-      <node concept="1ahQXy" id="4358bbCKwn5" role="1ahQWs">
-        <property role="TrG5h" value="in" />
-        <node concept="30bXR$" id="4358bbCKwno" role="3ix9CU" />
-      </node>
-      <node concept="30dDZf" id="4358bbCKwnK" role="1ahQXP">
-        <node concept="30bXRB" id="4358bbCKwnS" role="30dEs_">
-          <property role="30bXRw" value="1" />
-        </node>
-        <node concept="1afdae" id="4358bbCKwnz" role="30dEsF">
-          <ref role="1afue_" node="4358bbCKwn5" resolve="in" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1lH9Xt" id="4358bbCKwqf">
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <property role="TrG5h" value="AbsenceOfWarning" />
@@ -208,9 +193,9 @@
         </node>
         <node concept="3clFbH" id="4358bbCRiRi" role="3cqZAp" />
         <node concept="3clFbF" id="4358bbCQWRP" role="3cqZAp">
-          <node concept="2YIFZM" id="4358bbCQXj2" role="3clFbG">
-            <ref role="37wK5l" to="wmbn:4358bbCOTcX" resolve="run" />
-            <ref role="1Pybhc" to="wmbn:4358bbCON3x" resolve="ICanRunCheckLogic" />
+          <node concept="2YIFZM" id="52Ettxuarv4" role="3clFbG">
+            <ref role="37wK5l" to="juu2:4358bbCOTcX" resolve="run" />
+            <ref role="1Pybhc" to="juu2:3SU4Z7BeswZ" resolve="Check_ICanRunCheckManuallyUtil" />
             <node concept="3xONca" id="4358bbCQXln" role="37wK5m">
               <ref role="3xOPvv" node="4358bbCKxSI" resolve="f" />
             </node>
