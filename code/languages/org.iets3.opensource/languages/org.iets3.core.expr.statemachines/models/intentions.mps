@@ -74,6 +74,9 @@
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
     </language>
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -189,11 +192,11 @@
       <node concept="3clFbS" id="agNjvGgPFI" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQhq62" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQhqp7" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlh_" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWTol3" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQmP9U" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQynD4" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWTol4" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWTol5" role="2tJFKM">
                   <ref role="2aWVGs" node="agNjvGgPFG" resolve="SquashEntryActions" />
                 </node>
               </node>
@@ -220,11 +223,11 @@
       <node concept="3clFbS" id="agNjvGgPFK" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQt5jJ" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQrMRy" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlhA" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWTotT" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQynP4" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWTotU" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWTotV" role="2tJFKM">
                   <ref role="2aWVGs" node="agNjvGgPFG" resolve="SquashEntryActions" />
                 </node>
               </node>
@@ -442,11 +445,11 @@
       <node concept="3clFbS" id="agNjvGgT0u" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQoEND" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQoFhl" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlhB" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWTp79" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQynI1" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWTp7a" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWTp7b" role="2tJFKM">
                   <ref role="2aWVGs" node="agNjvGgPFG" resolve="SquashEntryActions" />
                 </node>
               </node>
@@ -484,11 +487,11 @@
       <node concept="3clFbS" id="1VPSbnQCA4y" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQCA4z" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQCA4$" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlhC" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWTpl8" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQE6_5" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQE6_6" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWTpl9" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWTpla" role="2tJFKM">
                   <ref role="2aWVGs" node="agNjvGgPFG" resolve="SquashEntryActions" />
                 </node>
               </node>
@@ -520,11 +523,11 @@
       <node concept="3clFbS" id="agNjvGr_pc" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQiQRu" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQiQRv" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlhD" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWTqE9" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQmQhj" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQysKc" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWTqEa" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWTqEb" role="2tJFKM">
                   <ref role="2aWVGs" node="agNjvGr_pa" resolve="SquashExitActions" />
                 </node>
               </node>
@@ -551,11 +554,11 @@
       <node concept="3clFbS" id="agNjvGr_pe" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQt6wU" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQt6wW" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlhE" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWTqMZ" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQt6wY" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQysWc" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWTqN0" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWTqN1" role="2tJFKM">
                   <ref role="2aWVGs" node="agNjvGr_pa" resolve="SquashExitActions" />
                 </node>
               </node>
@@ -772,11 +775,11 @@
       <node concept="3clFbS" id="agNjvGrFZL" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQpYEB" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQpYEC" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlhF" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWTr5F" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQpYEE" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQysP9" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWTr5G" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWTr5H" role="2tJFKM">
                   <ref role="2aWVGs" node="agNjvGr_pa" resolve="SquashExitActions" />
                 </node>
               </node>
@@ -814,11 +817,11 @@
       <node concept="3clFbS" id="1VPSbnQCA4L" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQCA4M" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQCA4N" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlhG" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWTrfh" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQE7GH" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQE7GI" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWTrfi" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWTrfj" role="2tJFKM">
                   <ref role="2aWVGs" node="agNjvGr_pa" resolve="SquashExitActions" />
                 </node>
               </node>

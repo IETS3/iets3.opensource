@@ -46,9 +46,15 @@
       </concept>
     </language>
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
+      <concept id="278032644708909557" name="com.mbeddr.mpsutil.intentions.structure.ShowIntentionInReadOnlyCell" flags="ng" index="2s3oj2">
+        <property id="278032644708944807" name="flag" index="2s3gUg" />
+      </concept>
       <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.SectionAnnotation" flags="ng" index="1SWQZ3">
         <property id="5846558918537400330" name="label" index="1SWRpm" />
       </concept>
+    </language>
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -105,11 +111,11 @@
       <node concept="3clFbS" id="4IV0h47dhYO" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQijwD" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQijwE" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlpP" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWSAO5" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQmsjO" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQxhiD" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWSAO6" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWSAO7" role="2tJFKM">
                   <ref role="2aWVGs" node="4IV0h47dhYM" resolve="AddInterceptor" />
                 </node>
               </node>
@@ -136,11 +142,11 @@
       <node concept="3clFbS" id="4IV0h47dhYQ" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQsFy4" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQsFy6" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlpQ" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWSAWa" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQsFy8" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQxhqM" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWSAWb" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWSAWc" role="2tJFKM">
                   <ref role="2aWVGs" node="4IV0h47dhYM" resolve="AddInterceptor" />
                 </node>
               </node>
@@ -176,11 +182,11 @@
       <node concept="3clFbS" id="1VPSbnQp$F3" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQp$F7" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQp$F8" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlpR" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWSB7q" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQp$Fa" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQxhmM" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWSB7r" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWSB7s" role="2tJFKM">
                   <ref role="2aWVGs" node="4IV0h47dhYM" resolve="AddInterceptor" />
                 </node>
               </node>
@@ -207,11 +213,11 @@
       <node concept="3clFbS" id="1VPSbnQCAni" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQCAnj" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQCAnk" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlpS" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWSBe4" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQDGlz" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQDGl$" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWSBe5" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWSBe6" role="2tJFKM">
                   <ref role="2aWVGs" node="4IV0h47dhYM" resolve="AddInterceptor" />
                 </node>
               </node>
@@ -243,11 +249,11 @@
       <node concept="3clFbS" id="4IV0h47jKwV" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQhq62" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQhqp7" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlpT" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWS$tU" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQmr_H" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQxelH" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWS$tV" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWS$tW" role="2tJFKM">
                   <ref role="2aWVGs" node="4IV0h47jKwT" resolve="AddContextArgument" />
                 </node>
               </node>
@@ -274,11 +280,11 @@
       <node concept="3clFbS" id="4IV0h47jKwX" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQsEKx" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQrMRy" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlpU" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWS$_Z" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQxeDI" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWS$A0" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWS$A1" role="2tJFKM">
                   <ref role="2aWVGs" node="4IV0h47jKwT" resolve="AddContextArgument" />
                 </node>
               </node>
@@ -314,11 +320,11 @@
       <node concept="3clFbS" id="1VPSbnQpzNX" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQoEND" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQoFhl" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlpV" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWS$Lf" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQxevU" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWS$Lg" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWS$Lh" role="2tJFKM">
                   <ref role="2aWVGs" node="4IV0h47jKwT" resolve="AddContextArgument" />
                 </node>
               </node>
@@ -345,11 +351,11 @@
       <node concept="3clFbS" id="1VPSbnQCAnx" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQCAny" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQCAnz" role="3clFbG">
-            <node concept="2YIFZM" id="1VPSbnRdlpW" role="2Oq$k0">
-              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="NRdvd" id="7xsemUWS$RT" role="2Oq$k0">
               <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <node concept="2tJFMh" id="1VPSbnQDFxf" role="37wK5m">
-                <node concept="ZC_QK" id="1VPSbnQDFxg" role="2tJFKM">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWS$RU" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWS$RV" role="2tJFKM">
                   <ref role="2aWVGs" node="4IV0h47jKwT" resolve="AddContextArgument" />
                 </node>
               </node>
@@ -370,6 +376,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2s3oj2" id="7xsemUWS_48" role="lGtFl">
+      <property role="2s3gUg" value="true" />
     </node>
   </node>
 </model>

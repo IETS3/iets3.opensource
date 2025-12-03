@@ -465,7 +465,7 @@
     <property role="TrG5h" value="DefaultIntentionCustomization" />
     <node concept="3Tm1VV" id="49_w44_AQwW" role="1B3o_S" />
     <node concept="3uibUv" id="49_w44_AQy9" role="EKbjA">
-      <ref role="3uigEE" node="49_w44_AOnM" resolve="IIntentionCustomizations" />
+      <ref role="3uigEE" node="49_w44_AOnM" resolve="IntentionCustomizations" />
     </node>
     <node concept="3clFb_" id="49_w44_AQyx" role="jymVt">
       <property role="TrG5h" value="getPriorityLevel" />
@@ -516,7 +516,7 @@
   </node>
   <node concept="3HP615" id="49_w44_AOnM">
     <property role="3GE5qa" value="intentionCustomization" />
-    <property role="TrG5h" value="IIntentionCustomizations" />
+    <property role="TrG5h" value="IntentionCustomizations" />
     <node concept="3clFb_" id="49_w44_AOnV" role="jymVt">
       <property role="TrG5h" value="getPriorityLevel" />
       <node concept="10Oyi0" id="49_w44_AOnW" role="3clF45" />
@@ -551,7 +551,7 @@
     <property role="TrG5h" value="IntentionCustomization" />
     <property role="3GE5qa" value="intentionCustomization" />
     <node concept="3uibUv" id="1VPSbnQgihw" role="luc8K">
-      <ref role="3uigEE" node="49_w44_AOnM" resolve="IIntentionCustomizations" />
+      <ref role="3uigEE" node="49_w44_AOnM" resolve="IntentionCustomizations" />
     </node>
   </node>
   <node concept="3HP615" id="~IntentionExecutable">
@@ -700,7 +700,7 @@
           <node concept="3cpWsn" id="1VPSbnQgjmQ" role="3cpWs9">
             <property role="TrG5h" value="config" />
             <node concept="3uibUv" id="1VPSbnQgjmR" role="1tU5fm">
-              <ref role="3uigEE" node="49_w44_AOnM" resolve="IIntentionCustomizations" />
+              <ref role="3uigEE" node="49_w44_AOnM" resolve="IntentionCustomizations" />
             </node>
             <node concept="2OqwBi" id="1VPSbnQgjmS" role="33vP2m">
               <node concept="2OqwBi" id="1VPSbnQgjmT" role="2Oq$k0">
@@ -760,7 +760,7 @@
       </node>
       <node concept="3Tm1VV" id="1VPSbnQgjnp" role="1B3o_S" />
       <node concept="3uibUv" id="1VPSbnQgjnq" role="3clF45">
-        <ref role="3uigEE" node="49_w44_AOnM" resolve="IIntentionCustomizations" />
+        <ref role="3uigEE" node="49_w44_AOnM" resolve="IntentionCustomizations" />
       </node>
     </node>
     <node concept="2tJIrI" id="1VPSbnQgsuv" role="jymVt" />
