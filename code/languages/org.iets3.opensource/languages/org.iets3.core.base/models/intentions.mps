@@ -13,9 +13,9 @@
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -78,9 +78,6 @@
       <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.SectionAnnotation" flags="ng" index="1SWQZ3">
         <property id="5846558918537400330" name="label" index="1SWRpm" />
       </concept>
-    </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -170,9 +167,9 @@
       <node concept="3clFbS" id="4UgzZxsHH4T" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQs4ML" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQrMRy" role="3clFbG">
-            <node concept="NRdvd" id="1VPSbnQrMzn" role="2Oq$k0">
-              <ref role="1Pybhc" to="oq0c:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="2YIFZM" id="1VPSbnRdliP" role="2Oq$k0">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvI3N" role="2tJFKM">
                   <ref role="2aWVGs" node="4UgzZxsHH4R" resolve="AddExplicitName" />
@@ -180,7 +177,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1VPSbnQrN8a" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:~IntentionExecutable.execute(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="execute" />
+              <ref role="37wK5l" to="juu2:~IntentionExecutable.execute(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="execute" />
               <node concept="2Sf5sV" id="1VPSbnQrNcl" role="37wK5m" />
               <node concept="1XNTG" id="1VPSbnQrNs4" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQrO9U" role="37wK5m">
@@ -207,9 +204,9 @@
       <node concept="3clFbS" id="4UgzZxsHH4V" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQhq62" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQhqp7" role="3clFbG">
-            <node concept="NRdvd" id="1VPSbnQlQg$" role="2Oq$k0">
-              <ref role="1Pybhc" to="oq0c:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="2YIFZM" id="1VPSbnRdliQ" role="2Oq$k0">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
               <node concept="2tJFMh" id="1VPSbnQlQg_" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvHUR" role="2tJFKM">
                   <ref role="2aWVGs" node="4UgzZxsHH4R" resolve="AddExplicitName" />
@@ -217,7 +214,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1VPSbnQhq$Y" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:~IntentionExecutable.getDescription(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="getDescription" />
+              <ref role="37wK5l" to="juu2:~IntentionExecutable.getDescription(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="getDescription" />
               <node concept="2Sf5sV" id="1VPSbnQhqB1" role="37wK5m" />
               <node concept="1XNTG" id="1VPSbnQhr3d" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQhrex" role="37wK5m">
@@ -252,9 +249,9 @@
       <node concept="3clFbS" id="4UgzZxsHHqO" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQoEND" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQoFhl" role="3clFbG">
-            <node concept="NRdvd" id="1VPSbnQoENF" role="2Oq$k0">
-              <ref role="1Pybhc" to="oq0c:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="2YIFZM" id="1VPSbnRdliR" role="2Oq$k0">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvHZ$" role="2tJFKM">
                   <ref role="2aWVGs" node="4UgzZxsHH4R" resolve="AddExplicitName" />
@@ -262,7 +259,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1VPSbnQoFRu" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:~IntentionExecutable.isApplicable(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="isApplicable" />
+              <ref role="37wK5l" to="juu2:~IntentionExecutable.isApplicable(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="isApplicable" />
               <node concept="2Sf5sV" id="1VPSbnQoGeh" role="37wK5m" />
               <node concept="1XNTG" id="1VPSbnQoGDc" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQoGQZ" role="37wK5m">
@@ -289,9 +286,9 @@
       <node concept="3clFbS" id="1VPSbnQCLcX" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQCLcY" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQCLcZ" role="3clFbG">
-            <node concept="NRdvd" id="1VPSbnQCLd0" role="2Oq$k0">
-              <ref role="1Pybhc" to="oq0c:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="2YIFZM" id="1VPSbnRdliS" role="2Oq$k0">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
               <node concept="2tJFMh" id="1VPSbnQD44P" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQD44Q" role="2tJFKM">
                   <ref role="2aWVGs" node="4UgzZxsHH4R" resolve="AddExplicitName" />
@@ -299,7 +296,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1VPSbnQCLd3" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:1VPSbnQich9" resolve="getChildFilter" />
+              <ref role="37wK5l" to="juu2:1VPSbnQich9" resolve="getChildFilter" />
               <node concept="2Sf5sV" id="1VPSbnQCLd4" role="37wK5m" />
               <node concept="zTJq_" id="1VPSbnQCLd5" role="37wK5m" />
               <node concept="1XNTG" id="1VPSbnQCLd6" role="37wK5m" />
@@ -327,9 +324,9 @@
       <node concept="3clFbS" id="6js_s$ijRZC" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQhIbd" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQhIbe" role="3clFbG">
-            <node concept="NRdvd" id="1VPSbnQlRdG" role="2Oq$k0">
-              <ref role="1Pybhc" to="oq0c:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="2YIFZM" id="1VPSbnRdliT" role="2Oq$k0">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
               <node concept="2tJFMh" id="1VPSbnQlRdH" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvJOm" role="2tJFKM">
                   <ref role="2aWVGs" node="6js_s$ijRZA" resolve="DeleteStoredResult" />
@@ -337,7 +334,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1VPSbnQhIbi" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:~IntentionExecutable.getDescription(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="getDescription" />
+              <ref role="37wK5l" to="juu2:~IntentionExecutable.getDescription(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="getDescription" />
               <node concept="2Sf5sV" id="1VPSbnQhIbj" role="37wK5m" />
               <node concept="1XNTG" id="1VPSbnQhIbk" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQhIbl" role="37wK5m">
@@ -358,9 +355,9 @@
       <node concept="3clFbS" id="6js_s$ijRZE" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQs5Gp" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQs5Gr" role="3clFbG">
-            <node concept="NRdvd" id="1VPSbnQs5Gs" role="2Oq$k0">
-              <ref role="1Pybhc" to="oq0c:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="2YIFZM" id="1VPSbnRdliU" role="2Oq$k0">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
               <node concept="2tJFMh" id="1VPSbnQs5Gt" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvK0O" role="2tJFKM">
                   <ref role="2aWVGs" node="6js_s$ijRZA" resolve="DeleteStoredResult" />
@@ -368,7 +365,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1VPSbnQs5Gv" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:~IntentionExecutable.execute(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="execute" />
+              <ref role="37wK5l" to="juu2:~IntentionExecutable.execute(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="execute" />
               <node concept="2Sf5sV" id="1VPSbnQs5Gw" role="37wK5m" />
               <node concept="1XNTG" id="1VPSbnQs5Gx" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQs5Gy" role="37wK5m">
@@ -482,9 +479,9 @@
       <node concept="3clFbS" id="6js_s$ijSz4" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQoYMs" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQoYMt" role="3clFbG">
-            <node concept="NRdvd" id="1VPSbnQoYMu" role="2Oq$k0">
-              <ref role="1Pybhc" to="oq0c:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="2YIFZM" id="1VPSbnRdliV" role="2Oq$k0">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
               <node concept="2tJFMh" id="1VPSbnQoYMv" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvJTO" role="2tJFKM">
                   <ref role="2aWVGs" node="6js_s$ijRZA" resolve="DeleteStoredResult" />
@@ -492,7 +489,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1VPSbnQoYMx" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:~IntentionExecutable.isApplicable(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="isApplicable" />
+              <ref role="37wK5l" to="juu2:~IntentionExecutable.isApplicable(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="isApplicable" />
               <node concept="2Sf5sV" id="1VPSbnQoYMy" role="37wK5m" />
               <node concept="1XNTG" id="1VPSbnQoYMz" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQoYM$" role="37wK5m">
@@ -546,9 +543,9 @@
       <node concept="3clFbS" id="1VPSbnQCA7O" role="2VODD2">
         <node concept="3clFbF" id="1VPSbnQCA7P" role="3cqZAp">
           <node concept="2OqwBi" id="1VPSbnQCA7Q" role="3clFbG">
-            <node concept="NRdvd" id="1VPSbnQCA7R" role="2Oq$k0">
-              <ref role="1Pybhc" to="oq0c:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
-              <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
+            <node concept="2YIFZM" id="1VPSbnRdliW" role="2Oq$k0">
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
               <node concept="2tJFMh" id="1VPSbnQD54Y" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQD54Z" role="2tJFKM">
                   <ref role="2aWVGs" node="6js_s$ijRZA" resolve="DeleteStoredResult" />
@@ -556,7 +553,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1VPSbnQCA7U" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:1VPSbnQich9" resolve="getChildFilter" />
+              <ref role="37wK5l" to="juu2:1VPSbnQich9" resolve="getChildFilter" />
               <node concept="2Sf5sV" id="1VPSbnQCA7V" role="37wK5m" />
               <node concept="zTJq_" id="1VPSbnQCA7W" role="37wK5m" />
               <node concept="1XNTG" id="1VPSbnQCA7X" role="37wK5m" />
