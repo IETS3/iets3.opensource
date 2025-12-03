@@ -2295,7 +2295,7 @@
                         </node>
                         <node concept="3cpWs3" id="3Z5YbywiGZY" role="3uHU7B">
                           <node concept="Xl_RD" id="3Z5YbywiHoh" role="3uHU7B">
-                            <property role="Xl_RC" value=" (from " />
+                            <property role="Xl_RC" value=" (From " />
                           </node>
                           <node concept="2OqwBi" id="2SOOyvZHeuu" role="3uHU7w">
                             <node concept="2OqwBi" id="2SOOyvZHeuv" role="2Oq$k0">
@@ -4229,7 +4229,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="1v5X_U3oLjn" role="3cqZAp">
                     <node concept="Xl_RD" id="1v5X_U3oLjo" role="3clFbG">
-                      <property role="Xl_RC" value="Adapt this Configuration to the extended Configuration" />
+                      <property role="Xl_RC" value="Adapt This Configuration to Extended Configuration" />
                     </node>
                   </node>
                 </node>
@@ -4373,7 +4373,7 @@
                 <node concept="3clFbS" id="1VPSbnQjJKx" role="1bW5cS">
                   <node concept="3clFbF" id="7SHUXR9ziEk" role="3cqZAp">
                     <node concept="Xl_RD" id="7SHUXR9ziEj" role="3clFbG">
-                      <property role="Xl_RC" value="Update all configurations for this model." />
+                      <property role="Xl_RC" value="Update All Configurations" />
                     </node>
                   </node>
                 </node>

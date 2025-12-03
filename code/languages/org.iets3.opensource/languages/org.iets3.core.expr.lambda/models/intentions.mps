@@ -1035,7 +1035,7 @@
                 <node concept="3clFbS" id="1VPSbnQiieu" role="1bW5cS">
                   <node concept="3clFbF" id="79jc6Yz2dhZ" role="3cqZAp">
                     <node concept="Xl_RD" id="79jc6Yz2di0" role="3clFbG">
-                      <property role="Xl_RC" value="Wrap with Tuple [,,,]" />
+                      <property role="Xl_RC" value="Wrap with Tuple [,,]" />
                     </node>
                   </node>
                 </node>

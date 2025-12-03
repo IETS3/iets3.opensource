@@ -159,7 +159,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="4voqclTwRql" role="3cqZAp">
                     <node concept="Xl_RD" id="4voqclTwRqk" role="3clFbG">
-                      <property role="Xl_RC" value="Wrap with temporal type TT&lt;..&gt;" />
+                      <property role="Xl_RC" value="Wrap with Temporal Type" />
                     </node>
                   </node>
                 </node>

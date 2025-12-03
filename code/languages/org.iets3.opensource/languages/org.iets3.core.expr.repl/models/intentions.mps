@@ -117,6 +117,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -137,6 +140,11 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -358,7 +366,7 @@
                 <node concept="3clFbS" id="1VPSbnQipZp" role="1bW5cS">
                   <node concept="3clFbF" id="3a2FJuCnx6Y" role="3cqZAp">
                     <node concept="Xl_RD" id="3a2FJuCnx6X" role="3clFbG">
-                      <property role="Xl_RC" value="Add new Entry" />
+                      <property role="Xl_RC" value="Add New Entry" />
                     </node>
                   </node>
                 </node>
@@ -495,7 +503,7 @@
                 <node concept="3clFbS" id="1VPSbnQivco" role="1bW5cS">
                   <node concept="3clFbF" id="3FexrMiO5D2" role="3cqZAp">
                     <node concept="Xl_RD" id="3FexrMiO5D1" role="3clFbG">
-                      <property role="Xl_RC" value="Open REPL" />
+                      <property role="Xl_RC" value="Open Read–Eval–Print Loop (REPL)" />
                     </node>
                   </node>
                 </node>
@@ -643,7 +651,7 @@
                             </node>
                           </node>
                           <node concept="Xl_RD" id="3FexrMiPEzB" role="3uHU7B">
-                            <property role="Xl_RC" value="Delete this REPL and go back to " />
+                            <property role="Xl_RC" value="Delete this Read–Eval–Print Loop (REPL) and Go Back to " />
                           </node>
                         </node>
                       </node>
@@ -661,7 +669,7 @@
                       <node concept="3clFbS" id="3FexrMiQxmt" role="9aQI4">
                         <node concept="3cpWs6" id="3FexrMiQxER" role="3cqZAp">
                           <node concept="Xl_RD" id="3FexrMiQyjO" role="3cqZAk">
-                            <property role="Xl_RC" value="Delete this REPL" />
+                            <property role="Xl_RC" value="Delete this Read–Eval–Print Loop" />
                           </node>
                         </node>
                       </node>
@@ -1192,7 +1200,7 @@
                 <node concept="3clFbS" id="1VPSbnQiEeh" role="1bW5cS">
                   <node concept="3clFbF" id="69FYpZquu5x" role="3cqZAp">
                     <node concept="Xl_RD" id="69FYpZquu5y" role="3clFbG">
-                      <property role="Xl_RC" value="Re-evaluate complete REPL" />
+                      <property role="Xl_RC" value="Re-evaluate complete Read–Eval–Print Loop (REPL)" />
                     </node>
                   </node>
                 </node>
@@ -1621,7 +1629,7 @@
                 <node concept="3clFbS" id="1VPSbnQio$F" role="1bW5cS">
                   <node concept="3clFbF" id="5xEoEMr$2YO" role="3cqZAp">
                     <node concept="Xl_RD" id="5xEoEMr$2YN" role="3clFbG">
-                      <property role="Xl_RC" value="Add Arg" />
+                      <property role="Xl_RC" value="Add Argument" />
                     </node>
                   </node>
                 </node>
@@ -1759,9 +1767,27 @@
               <node concept="1XNTG" id="1VPSbnQiHNq" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQiHNr" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQiHNs" role="1bW5cS">
-                  <node concept="3clFbF" id="5avmkTFHHDK" role="3cqZAp">
-                    <node concept="Xl_RD" id="5avmkTFHHDJ" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Values" />
+                  <node concept="3clFbF" id="1VPSbnRbCAl" role="3cqZAp">
+                    <node concept="3cpWs3" id="1VPSbnRbF8V" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnRbF8Z" role="3uHU7w">
+                        <property role="Xl_RC" value=" Values" />
+                      </node>
+                      <node concept="1eOMI4" id="1VPSbnRbF5c" role="3uHU7B">
+                        <node concept="3K4zz7" id="1VPSbnRbE4i" role="1eOMHV">
+                          <node concept="Xl_RD" id="1VPSbnRbE4n" role="3K4E3e">
+                            <property role="Xl_RC" value="Don't Show" />
+                          </node>
+                          <node concept="Xl_RD" id="1VPSbnRbEwk" role="3K4GZi">
+                            <property role="Xl_RC" value="Show" />
+                          </node>
+                          <node concept="2OqwBi" id="1VPSbnRbCY9" role="3K4Cdx">
+                            <node concept="2Sf5sV" id="1VPSbnRbCAk" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="1VPSbnRbDvR" role="2OqNvi">
+                              <ref role="3TsBF5" to="wtll:5avmkTFfeqZ" resolve="showValues" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2082,7 +2108,7 @@
                             <node concept="3n3YKJ" id="5avmkTFRz9A" role="2OqNvi" />
                           </node>
                           <node concept="Xl_RD" id="5avmkTFRx4o" role="3uHU7B">
-                            <property role="Xl_RC" value="Remove style " />
+                            <property role="Xl_RC" value="Remove Style " />
                           </node>
                         </node>
                       </node>
@@ -2125,7 +2151,7 @@
                         <node concept="3n3YKJ" id="5avmkTFRzP$" role="2OqNvi" />
                       </node>
                       <node concept="Xl_RD" id="5avmkTFRzP_" role="3uHU7B">
-                        <property role="Xl_RC" value="Add style " />
+                        <property role="Xl_RC" value="Add Style " />
                       </node>
                     </node>
                   </node>
@@ -2577,9 +2603,27 @@
               <node concept="1XNTG" id="1VPSbnQiHxy" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQiHxz" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQiHx$" role="1bW5cS">
-                  <node concept="3clFbF" id="48DDwlwUXz2" role="3cqZAp">
-                    <node concept="Xl_RD" id="48DDwlwUXz1" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Result" />
+                  <node concept="3clFbF" id="1VPSbnRbvAT" role="3cqZAp">
+                    <node concept="3cpWs3" id="1VPSbnRbyFE" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnRbyUW" role="3uHU7w">
+                        <property role="Xl_RC" value=" as Result" />
+                      </node>
+                      <node concept="1eOMI4" id="1VPSbnRbxG2" role="3uHU7B">
+                        <node concept="3K4zz7" id="1VPSbnRbwCP" role="1eOMHV">
+                          <node concept="Xl_RD" id="1VPSbnRbwG0" role="3K4E3e">
+                            <property role="Xl_RC" value="Mark" />
+                          </node>
+                          <node concept="Xl_RD" id="1VPSbnRbwSp" role="3K4GZi">
+                            <property role="Xl_RC" value="Unmark" />
+                          </node>
+                          <node concept="2OqwBi" id="1VPSbnRbvSE" role="3K4Cdx">
+                            <node concept="2Sf5sV" id="1VPSbnRbvAS" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="1VPSbnRbwav" role="2OqNvi">
+                              <ref role="3TsBF5" to="wtll:48DDwlwUXpx" resolve="result" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -3702,9 +3746,27 @@
               <node concept="1XNTG" id="1VPSbnQiHgx" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQiHgy" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQiHgz" role="1bW5cS">
-                  <node concept="3clFbF" id="3_Nra3DQ$ub" role="3cqZAp">
-                    <node concept="Xl_RD" id="3_Nra3DQ$ua" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Lock" />
+                  <node concept="3clFbF" id="1VPSbnRbq4i" role="3cqZAp">
+                    <node concept="3cpWs3" id="1VPSbnRbu2e" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnRbugb" role="3uHU7w">
+                        <property role="Xl_RC" value=" as Locked" />
+                      </node>
+                      <node concept="1eOMI4" id="1VPSbnRbt2A" role="3uHU7B">
+                        <node concept="3K4zz7" id="1VPSbnRbr8L" role="1eOMHV">
+                          <node concept="Xl_RD" id="1VPSbnRbrbW" role="3K4E3e">
+                            <property role="Xl_RC" value="Unmark" />
+                          </node>
+                          <node concept="Xl_RD" id="1VPSbnRbs8H" role="3K4GZi">
+                            <property role="Xl_RC" value="Mark" />
+                          </node>
+                          <node concept="2OqwBi" id="1VPSbnRbqm3" role="3K4Cdx">
+                            <node concept="2Sf5sV" id="1VPSbnRbq4h" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="1VPSbnRbqCv" role="2OqNvi">
+                              <ref role="3TsBF5" to="wtll:3_Nra3DQkej" resolve="locked" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -3990,9 +4052,27 @@
               <node concept="1XNTG" id="1VPSbnQiGZt" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQiGZu" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQiGZv" role="1bW5cS">
-                  <node concept="3clFbF" id="7HzLUeHqfHa" role="3cqZAp">
-                    <node concept="Xl_RD" id="7HzLUeHqfH9" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Template Mode" />
+                  <node concept="3clFbF" id="1VPSbnRbmpf" role="3cqZAp">
+                    <node concept="3cpWs3" id="1VPSbnRboSQ" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnRboSU" role="3uHU7w">
+                        <property role="Xl_RC" value=" Template Mode" />
+                      </node>
+                      <node concept="1eOMI4" id="1VPSbnRboP7" role="3uHU7B">
+                        <node concept="3K4zz7" id="1VPSbnRbnL7" role="1eOMHV">
+                          <node concept="Xl_RD" id="1VPSbnRbnOi" role="3K4E3e">
+                            <property role="Xl_RC" value="Deactivate" />
+                          </node>
+                          <node concept="Xl_RD" id="1VPSbnRbnX_" role="3K4GZi">
+                            <property role="Xl_RC" value="Enable" />
+                          </node>
+                          <node concept="2OqwBi" id="1VPSbnRbmL3" role="3K4Cdx">
+                            <node concept="2Sf5sV" id="1VPSbnRbmpe" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="1VPSbnRbniL" role="2OqNvi">
+                              <ref role="3TsBF5" to="wtll:7HzLUeHpznV" resolve="templateMode" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -4137,9 +4217,27 @@
               <node concept="1XNTG" id="1VPSbnQinLX" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQinLY" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQinLZ" role="1bW5cS">
-                  <node concept="3clFbF" id="2c2AzQdbR67" role="3cqZAp">
-                    <node concept="Xl_RD" id="2c2AzQdbR66" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Show Title" />
+                  <node concept="3clFbF" id="1VPSbnRb$mx" role="3cqZAp">
+                    <node concept="3cpWs3" id="1VPSbnRbBd9" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnRbBg_" role="3uHU7w">
+                        <property role="Xl_RC" value=" Title" />
+                      </node>
+                      <node concept="1eOMI4" id="1VPSbnRbB9q" role="3uHU7B">
+                        <node concept="3K4zz7" id="1VPSbnRbA68" role="1eOMHV">
+                          <node concept="Xl_RD" id="1VPSbnRbA9j" role="3K4E3e">
+                            <property role="Xl_RC" value="Show" />
+                          </node>
+                          <node concept="Xl_RD" id="1VPSbnRbAfw" role="3K4GZi">
+                            <property role="Xl_RC" value="Hide" />
+                          </node>
+                          <node concept="2OqwBi" id="1VPSbnRb$Kx" role="3K4Cdx">
+                            <node concept="2Sf5sV" id="1VPSbnRb$mw" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="1VPSbnRb_$k" role="2OqNvi">
+                              <ref role="3TsBF5" to="wtll:2c2AzQdaWRH" resolve="hideTitle" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

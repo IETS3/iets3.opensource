@@ -122,7 +122,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="1fRru3Dvych" role="3cqZAp">
                     <node concept="Xl_RD" id="1fRru3Dvycg" role="3clFbG">
-                      <property role="Xl_RC" value="runSolver" />
+                      <property role="Xl_RC" value="Run Solver" />
                     </node>
                   </node>
                 </node>

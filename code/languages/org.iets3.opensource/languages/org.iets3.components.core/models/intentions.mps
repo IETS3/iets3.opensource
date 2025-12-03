@@ -530,9 +530,20 @@
               <node concept="1XNTG" id="1VPSbnQhzrr" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQhzrs" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQhzrt" role="1bW5cS">
-                  <node concept="3clFbF" id="5kXA14n1oy9" role="3cqZAp">
-                    <node concept="Xl_RD" id="5kXA14n1oy8" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Public" />
+                  <node concept="3clFbF" id="1VPSbnRb5MH" role="3cqZAp">
+                    <node concept="3K4zz7" id="1VPSbnRb6r7" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnRb6ur" role="3K4E3e">
+                        <property role="Xl_RC" value="Remove Public Flag" />
+                      </node>
+                      <node concept="Xl_RD" id="1VPSbnRb7xs" role="3K4GZi">
+                        <property role="Xl_RC" value="Make Public" />
+                      </node>
+                      <node concept="2OqwBi" id="1VPSbnRb5SN" role="3K4Cdx">
+                        <node concept="2Sf5sV" id="1VPSbnRb5MG" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="1VPSbnRb5WC" role="2OqNvi">
+                          <ref role="3TsBF5" to="w9y2:5kXA14mWc_G" resolve="public" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -999,7 +1010,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="1WAg9TyWDSS" role="3cqZAp">
                     <node concept="Xl_RD" id="1WAg9TyWDSR" role="3clFbG">
-                      <property role="Xl_RC" value="Add Expr Test" />
+                      <property role="Xl_RC" value="Add Expression Test" />
                     </node>
                   </node>
                 </node>

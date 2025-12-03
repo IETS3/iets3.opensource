@@ -506,7 +506,7 @@
                 <node concept="3clFbS" id="1VPSbnQi2Lv" role="1bW5cS">
                   <node concept="3clFbF" id="2nByCcy0qb7" role="3cqZAp">
                     <node concept="Xl_RD" id="2nByCcy0qb8" role="3clFbG">
-                      <property role="Xl_RC" value="Make Function (All Inlined)" />
+                      <property role="Xl_RC" value="Make Function (Inline All Calls)" />
                     </node>
                   </node>
                 </node>

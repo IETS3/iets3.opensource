@@ -3501,7 +3501,7 @@
                 <node concept="3clFbS" id="1VPSbnQknjn" role="1bW5cS">
                   <node concept="3clFbF" id="7lNQqAZQL6m" role="3cqZAp">
                     <node concept="Xl_RD" id="7lNQqAZQL6n" role="3clFbG">
-                      <property role="Xl_RC" value="Tree Layout: Explorer" />
+                      <property role="Xl_RC" value="Set Visualization to Tree Layout: Explorer" />
                     </node>
                   </node>
                 </node>
@@ -3669,7 +3669,7 @@
                 <node concept="3clFbS" id="1VPSbnQkoE2" role="1bW5cS">
                   <node concept="3clFbF" id="7lNQqAZQtfY" role="3cqZAp">
                     <node concept="Xl_RD" id="7lNQqAZQtfX" role="3clFbG">
-                      <property role="Xl_RC" value="Tree Layout: Vertical" />
+                      <property role="Xl_RC" value="Set Visualization to Tree Layout: Vertical" />
                     </node>
                   </node>
                 </node>
@@ -3837,7 +3837,7 @@
                 <node concept="3clFbS" id="1VPSbnQknU_" role="1bW5cS">
                   <node concept="3clFbF" id="7lNQqAZQIeW" role="3cqZAp">
                     <node concept="Xl_RD" id="7lNQqAZQIeX" role="3clFbG">
-                      <property role="Xl_RC" value="Tree Layout: Horizontal" />
+                      <property role="Xl_RC" value="Set Visualization to Tree Layout: Horizontal" />
                     </node>
                   </node>
                 </node>
@@ -9429,7 +9429,7 @@
                 <node concept="3clFbS" id="1VPSbnQkAFL" role="1bW5cS">
                   <node concept="3clFbF" id="3IAMu8ga_EP" role="3cqZAp">
                     <node concept="Xl_RD" id="3IAMu8ga_EO" role="3clFbG">
-                      <property role="Xl_RC" value="Run Solver Sync" />
+                      <property role="Xl_RC" value="Run Solver Synchronously" />
                     </node>
                   </node>
                 </node>
@@ -9749,7 +9749,7 @@
                 <node concept="3clFbS" id="1VPSbnQkljn" role="1bW5cS">
                   <node concept="3clFbF" id="7PHwTKBZLO6" role="3cqZAp">
                     <node concept="Xl_RD" id="7PHwTKBZLO5" role="3clFbG">
-                      <property role="Xl_RC" value="Add Using-Section" />
+                      <property role="Xl_RC" value="Add Using Section" />
                     </node>
                   </node>
                 </node>
@@ -10475,7 +10475,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="1v5X_U3oLjn" role="3cqZAp">
                     <node concept="Xl_RD" id="1v5X_U3oLjo" role="3clFbG">
-                      <property role="Xl_RC" value="Adapt this Configuration to the extended Configuration" />
+                      <property role="Xl_RC" value="Adapt This Configuration to Extended Configuration" />
                     </node>
                   </node>
                 </node>

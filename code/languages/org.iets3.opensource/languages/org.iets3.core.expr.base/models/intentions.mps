@@ -512,7 +512,7 @@
                 <node concept="3clFbS" id="1VPSbnQhXFP" role="1bW5cS">
                   <node concept="3clFbF" id="6LLGpXIARGR" role="3cqZAp">
                     <node concept="Xl_RD" id="6LLGpXIARGQ" role="3clFbG">
-                      <property role="Xl_RC" value="Wrap with Parens (..)" />
+                      <property role="Xl_RC" value="Wrap with Parenthesis" />
                     </node>
                   </node>
                 </node>
@@ -657,7 +657,7 @@
                 <node concept="3clFbS" id="1VPSbnQhXsM" role="1bW5cS">
                   <node concept="3clFbF" id="gLftEcmuK$" role="3cqZAp">
                     <node concept="Xl_RD" id="gLftEcmuKz" role="3clFbG">
-                      <property role="Xl_RC" value="Wrap with opt&lt;...&gt;" />
+                      <property role="Xl_RC" value="Wrap with Optional Type" />
                     </node>
                   </node>
                 </node>
@@ -1438,7 +1438,7 @@
                 <node concept="3clFbS" id="1VPSbnQhYhc" role="1bW5cS">
                   <node concept="3clFbF" id="69zaTr22J7o" role="3cqZAp">
                     <node concept="Xl_RD" id="69zaTr22J7n" role="3clFbG">
-                      <property role="Xl_RC" value="Wrap with Try" />
+                      <property role="Xl_RC" value="Wrap with Try Expression" />
                     </node>
                   </node>
                 </node>
@@ -1647,7 +1647,7 @@
                 <node concept="3clFbS" id="1VPSbnQhW$y" role="1bW5cS">
                   <node concept="3clFbF" id="gLftEcn6S_" role="3cqZAp">
                     <node concept="Xl_RD" id="gLftEcn6SA" role="3clFbG">
-                      <property role="Xl_RC" value="Wrap with if [some(..) ..]" />
+                      <property role="Xl_RC" value="Wrap with If Expression [some(..) ..]" />
                     </node>
                   </node>
                 </node>
@@ -1915,7 +1915,7 @@
                 <node concept="3clFbS" id="1VPSbnQhS6Q" role="1bW5cS">
                   <node concept="3clFbF" id="SRvqsN4BQ5" role="3cqZAp">
                     <node concept="Xl_RD" id="SRvqsN4BQ6" role="3clFbG">
-                      <property role="Xl_RC" value="Exclude upper Limit" />
+                      <property role="Xl_RC" value="Exclude Upper Limit" />
                     </node>
                   </node>
                 </node>
@@ -2062,7 +2062,7 @@
                 <node concept="3clFbS" id="1VPSbnQhSO4" role="1bW5cS">
                   <node concept="3clFbF" id="SRvqsN4Bn8" role="3cqZAp">
                     <node concept="Xl_RD" id="SRvqsN4Bn7" role="3clFbG">
-                      <property role="Xl_RC" value="Include upper Limit" />
+                      <property role="Xl_RC" value="Include Upper Limit" />
                     </node>
                   </node>
                 </node>
@@ -2207,7 +2207,7 @@
                 <node concept="3clFbS" id="1VPSbnQhStt" role="1bW5cS">
                   <node concept="3clFbF" id="SRvqsN4C4N" role="3cqZAp">
                     <node concept="Xl_RD" id="SRvqsN4C4O" role="3clFbG">
-                      <property role="Xl_RC" value="Include lower Limit" />
+                      <property role="Xl_RC" value="Include Lower Limit" />
                     </node>
                   </node>
                 </node>
@@ -2352,7 +2352,7 @@
                 <node concept="3clFbS" id="1VPSbnQhRJW" role="1bW5cS">
                   <node concept="3clFbF" id="SRvqsN4CmV" role="3cqZAp">
                     <node concept="Xl_RD" id="SRvqsN4CmW" role="3clFbG">
-                      <property role="Xl_RC" value="Exclude lower Limit" />
+                      <property role="Xl_RC" value="Exclude Lower Limit" />
                     </node>
                   </node>
                 </node>
@@ -2498,7 +2498,7 @@
                 <node concept="3clFbS" id="1VPSbnQhTHS" role="1bW5cS">
                   <node concept="3clFbF" id="2NHHcg2C7TX" role="3cqZAp">
                     <node concept="Xl_RD" id="2NHHcg2C7TW" role="3clFbG">
-                      <property role="Xl_RC" value="Pull down Type from Declaration above &lt;..:T&gt;" />
+                      <property role="Xl_RC" value="Pull Down Type from Declaration Above" />
                     </node>
                   </node>
                 </node>
@@ -3219,7 +3219,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="4hW8Ne0bRiy" role="3cqZAp">
                     <node concept="Xl_RD" id="4hW8Ne0bRix" role="3clFbG">
-                      <property role="Xl_RC" value="Introduce REVEAL" />
+                      <property role="Xl_RC" value="Reveal If a Condition is Met..." />
                     </node>
                   </node>
                 </node>
@@ -4789,7 +4789,7 @@
                 <node concept="3clFbS" id="1VPSbnQhLOa" role="1bW5cS">
                   <node concept="3clFbF" id="5AlTalNQaEX" role="3cqZAp">
                     <node concept="Xl_RD" id="5AlTalNQaEW" role="3clFbG">
-                      <property role="Xl_RC" value="Unwrap Option" />
+                      <property role="Xl_RC" value="Unwrap Optional Type" />
                     </node>
                   </node>
                 </node>
@@ -5220,7 +5220,7 @@
                 <node concept="3clFbS" id="1VPSbnQhVTz" role="1bW5cS">
                   <node concept="3clFbF" id="5LjCoy7TmWA" role="3cqZAp">
                     <node concept="Xl_RD" id="5LjCoy7TmW_" role="3clFbG">
-                      <property role="Xl_RC" value="Wrap with 'if'" />
+                      <property role="Xl_RC" value="Wrap with If Expression" />
                     </node>
                   </node>
                 </node>
@@ -5416,7 +5416,7 @@
                 <node concept="3clFbS" id="1VPSbnQhVuC" role="1bW5cS">
                   <node concept="3clFbF" id="5LjCoy7TqNg" role="3cqZAp">
                     <node concept="Xl_RD" id="5LjCoy7TqNh" role="3clFbG">
-                      <property role="Xl_RC" value="Wrap with 'alt'" />
+                      <property role="Xl_RC" value="Wrap with Alternatives Expression" />
                     </node>
                   </node>
                 </node>

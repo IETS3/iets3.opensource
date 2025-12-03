@@ -573,7 +573,7 @@
                 <node concept="3clFbS" id="1VPSbnQj9m2" role="1bW5cS">
                   <node concept="3clFbF" id="2NHHcg2BHPO" role="3cqZAp">
                     <node concept="Xl_RD" id="2NHHcg2BHPN" role="3clFbG">
-                      <property role="Xl_RC" value="Extract 'type' definition" />
+                      <property role="Xl_RC" value="Extract Type Definition" />
                     </node>
                   </node>
                 </node>
@@ -1061,7 +1061,7 @@
                 <node concept="3clFbS" id="1VPSbnQj8I5" role="1bW5cS">
                   <node concept="3clFbF" id="713ZPaW5rzk" role="3cqZAp">
                     <node concept="Xl_RD" id="713ZPaW5rzj" role="3clFbG">
-                      <property role="Xl_RC" value="Extract into global value" />
+                      <property role="Xl_RC" value="Extract into Global Value" />
                     </node>
                   </node>
                 </node>
@@ -1364,7 +1364,7 @@
                 <node concept="3clFbS" id="1VPSbnQj7Hk" role="1bW5cS">
                   <node concept="3clFbF" id="4ptnK4jbJ0p" role="3cqZAp">
                     <node concept="Xl_RD" id="4ptnK4jbJ0o" role="3clFbG">
-                      <property role="Xl_RC" value="Add Setters for all mandatory Fields" />
+                      <property role="Xl_RC" value="Add Setters for All Mandatory Fields" />
                     </node>
                   </node>
                 </node>
@@ -1835,7 +1835,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="3sWKo0DWToP" role="3cqZAp">
                     <node concept="Xl_RD" id="3sWKo0DWToO" role="3clFbG">
-                      <property role="Xl_RC" value="Add a Comparison Order" />
+                      <property role="Xl_RC" value="Add Comparison Order" />
                     </node>
                   </node>
                 </node>

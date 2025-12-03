@@ -613,7 +613,7 @@
                 <node concept="3clFbS" id="1VPSbnQiOMW" role="1bW5cS">
                   <node concept="3clFbF" id="2M9Ik4CW$0Y" role="3cqZAp">
                     <node concept="Xl_RD" id="2M9Ik4CW$0X" role="3clFbG">
-                      <property role="Xl_RC" value="Surround with precision conversion" />
+                      <property role="Xl_RC" value="Surround with Precision Conversion" />
                     </node>
                   </node>
                 </node>
@@ -840,7 +840,7 @@
                 <node concept="3clFbS" id="1VPSbnQiLNm" role="1bW5cS">
                   <node concept="3clFbF" id="3zml08RDaIZ" role="3cqZAp">
                     <node concept="Xl_RD" id="3zml08RDaIY" role="3clFbG">
-                      <property role="Xl_RC" value="Turn into limit&lt;..&gt;(..)" />
+                      <property role="Xl_RC" value="Turn into Limit Expression" />
                     </node>
                   </node>
                 </node>
@@ -1029,7 +1029,7 @@
                 <node concept="3clFbS" id="1VPSbnQiJR1" role="1bW5cS">
                   <node concept="3clFbF" id="7VuYlCRKYVb" role="3cqZAp">
                     <node concept="Xl_RD" id="7VuYlCRKYVa" role="3clFbG">
-                      <property role="Xl_RC" value="Change into alt[...]" />
+                      <property role="Xl_RC" value="Change into Alternatives Expression" />
                     </node>
                   </node>
                 </node>

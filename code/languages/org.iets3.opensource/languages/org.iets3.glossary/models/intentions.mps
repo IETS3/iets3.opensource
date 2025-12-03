@@ -175,7 +175,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="lp3OKvgLoX" role="3cqZAp">
                     <node concept="Xl_RD" id="lp3OKvgLoW" role="3clFbG">
-                      <property role="Xl_RC" value="Replace with reference to glossary term" />
+                      <property role="Xl_RC" value="Replace With Reference to Glossary Term" />
                     </node>
                   </node>
                 </node>

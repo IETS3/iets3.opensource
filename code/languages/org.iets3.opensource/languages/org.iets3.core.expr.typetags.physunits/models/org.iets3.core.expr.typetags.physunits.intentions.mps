@@ -651,7 +651,7 @@
                 <node concept="3clFbS" id="1VPSbnQjbOE" role="1bW5cS">
                   <node concept="3clFbF" id="3EoIKdtHBqT" role="3cqZAp">
                     <node concept="Xl_RD" id="3EoIKdtHBqS" role="3clFbG">
-                      <property role="Xl_RC" value="Convert to a Division" />
+                      <property role="Xl_RC" value="Convert to Division" />
                     </node>
                   </node>
                 </node>
@@ -786,7 +786,7 @@
                 <node concept="3clFbS" id="1VPSbnQjboA" role="1bW5cS">
                   <node concept="3clFbF" id="3EoIKdtSnq3" role="3cqZAp">
                     <node concept="Xl_RD" id="3EoIKdtSnq4" role="3clFbG">
-                      <property role="Xl_RC" value="Convert to a Multiplication" />
+                      <property role="Xl_RC" value="Convert to Multiplication" />
                     </node>
                   </node>
                 </node>

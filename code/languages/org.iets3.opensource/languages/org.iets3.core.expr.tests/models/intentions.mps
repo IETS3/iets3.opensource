@@ -150,6 +150,11 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
@@ -728,7 +733,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="1QYdL37NGI4" role="3cqZAp">
                     <node concept="Xl_RD" id="1QYdL37NGI3" role="3clFbG">
-                      <property role="Xl_RC" value="Change to confail ..." />
+                      <property role="Xl_RC" value="Change to An Expected Constraint Failure" />
                     </node>
                   </node>
                 </node>
@@ -4022,8 +4027,26 @@
               <node concept="1bVj0M" id="1VPSbnQj3Jy" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQj3Jz" role="1bW5cS">
                   <node concept="3clFbF" id="48NC6VzT96H" role="3cqZAp">
-                    <node concept="Xl_RD" id="48NC6VzT96G" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle [ignored] flag" />
+                    <node concept="3cpWs3" id="1VPSbnR946G" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnR946K" role="3uHU7w">
+                        <property role="Xl_RC" value=" Ignore Item" />
+                      </node>
+                      <node concept="1eOMI4" id="1VPSbnR9431" role="3uHU7B">
+                        <node concept="3K4zz7" id="1VPSbnR937j" role="1eOMHV">
+                          <node concept="Xl_RD" id="1VPSbnR93ap" role="3K4E3e">
+                            <property role="Xl_RC" value="Don't" />
+                          </node>
+                          <node concept="Xl_RD" id="1VPSbnR93pv" role="3K4GZi">
+                            <property role="Xl_RC" value="" />
+                          </node>
+                          <node concept="2OqwBi" id="1VPSbnR90_2" role="3K4Cdx">
+                            <node concept="2Sf5sV" id="1VPSbnR8ZXu" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="1VPSbnR91tJ" role="2OqNvi">
+                              <ref role="3TsBF5" to="av4b:48NC6VzSNLv" resolve="isIgnored" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

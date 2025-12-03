@@ -234,7 +234,7 @@
                         </node>
                       </node>
                       <node concept="Xl_RD" id="4UgzZxsHH7s" role="3uHU7B">
-                        <property role="Xl_RC" value="Specify Name for " />
+                        <property role="Xl_RC" value="Set Name for " />
                       </node>
                     </node>
                   </node>

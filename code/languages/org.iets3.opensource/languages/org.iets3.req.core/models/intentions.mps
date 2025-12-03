@@ -453,7 +453,7 @@
                 <node concept="3clFbS" id="1VPSbnQj$u5" role="1bW5cS">
                   <node concept="3clFbF" id="l6fPaF3As7" role="3cqZAp">
                     <node concept="Xl_RD" id="l6fPaF3As6" role="3clFbG">
-                      <property role="Xl_RC" value="Add Paragraph after this one" />
+                      <property role="Xl_RC" value="Add Paragraph After This One" />
                     </node>
                   </node>
                 </node>
@@ -878,7 +878,7 @@
                 <node concept="3clFbS" id="1VPSbnQj_Md" role="1bW5cS">
                   <node concept="3clFbF" id="4Etk_BWmSRW" role="3cqZAp">
                     <node concept="Xl_RD" id="4Etk_BWmSRV" role="3clFbG">
-                      <property role="Xl_RC" value="Fill With Text" />
+                      <property role="Xl_RC" value="Fill with Text" />
                     </node>
                   </node>
                 </node>

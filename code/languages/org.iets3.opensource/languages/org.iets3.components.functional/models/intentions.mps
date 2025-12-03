@@ -91,6 +91,11 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
@@ -1502,9 +1507,20 @@
               <node concept="1XNTG" id="1VPSbnQhBJX" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQhBJY" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQhBJZ" role="1bW5cS">
-                  <node concept="3clFbF" id="5mAeI2oriRF" role="3cqZAp">
-                    <node concept="Xl_RD" id="5mAeI2oriRE" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Init" />
+                  <node concept="3clFbF" id="1VPSbnRba8e" role="3cqZAp">
+                    <node concept="3K4zz7" id="1VPSbnRbbic" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnRbbln" role="3K4E3e">
+                        <property role="Xl_RC" value="Don't Set as Initial State" />
+                      </node>
+                      <node concept="Xl_RD" id="1VPSbnRbgNe" role="3K4GZi">
+                        <property role="Xl_RC" value="Set as Initial State" />
+                      </node>
+                      <node concept="2OqwBi" id="1VPSbnRbat0" role="3K4Cdx">
+                        <node concept="2Sf5sV" id="1VPSbnRba8d" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="1VPSbnRbaNQ" role="2OqNvi">
+                          <ref role="3TsBF5" to="874t:5mAeI2opC9P" resolve="init" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

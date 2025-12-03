@@ -870,7 +870,7 @@
                 <node concept="3clFbS" id="1VPSbnQjGX8" role="1bW5cS">
                   <node concept="3clFbF" id="6uUH1hLca6E" role="3cqZAp">
                     <node concept="Xl_RD" id="6uUH1hLca6F" role="3clFbG">
-                      <property role="Xl_RC" value="Force Solver Check for FDT" />
+                      <property role="Xl_RC" value="Force Solver Check" />
                     </node>
                   </node>
                 </node>

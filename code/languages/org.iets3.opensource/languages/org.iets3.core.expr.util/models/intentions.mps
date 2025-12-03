@@ -122,6 +122,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -386,7 +387,7 @@
                 <node concept="3clFbS" id="1VPSbnQjjVE" role="1bW5cS">
                   <node concept="3clFbF" id="3DYDRw0NQoG" role="3cqZAp">
                     <node concept="Xl_RD" id="3DYDRw0NQoF" role="3clFbG">
-                      <property role="Xl_RC" value="Add Default" />
+                      <property role="Xl_RC" value="Add Default Value" />
                     </node>
                   </node>
                 </node>
@@ -508,7 +509,7 @@
   </node>
   <node concept="2S6QgY" id="2vr5lQPWfy2">
     <property role="3GE5qa" value="dectree" />
-    <property role="TrG5h" value="ToggleOrientation" />
+    <property role="TrG5h" value="ToggleHorizontalOrientation" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:22hm_0$b7cv" resolve="DecTree" />
     <node concept="2S6ZIM" id="2vr5lQPWfy3" role="2ZfVej">
@@ -520,7 +521,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQn$kr" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$Fxh" role="2tJFKM">
-                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleOrientation" />
+                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleHorizontalOrientation" />
                 </node>
               </node>
             </node>
@@ -530,9 +531,27 @@
               <node concept="1XNTG" id="1VPSbnQjvmJ" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQjvmK" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQjvmL" role="1bW5cS">
-                  <node concept="3clFbF" id="2vr5lQPWfzr" role="3cqZAp">
-                    <node concept="Xl_RD" id="2vr5lQPWfzq" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Orientation" />
+                  <node concept="3clFbF" id="1VPSbnRbQDt" role="3cqZAp">
+                    <node concept="3cpWs3" id="1VPSbnRbTms" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnRbTmw" role="3uHU7w">
+                        <property role="Xl_RC" value=" Horizontal" />
+                      </node>
+                      <node concept="1eOMI4" id="1VPSbnRbTiH" role="3uHU7B">
+                        <node concept="3K4zz7" id="1VPSbnRbRQN" role="1eOMHV">
+                          <node concept="Xl_RD" id="1VPSbnRbRTY" role="3K4E3e">
+                            <property role="Xl_RC" value="Don't Make" />
+                          </node>
+                          <node concept="Xl_RD" id="1VPSbnRbSHP" role="3K4GZi">
+                            <property role="Xl_RC" value="Make" />
+                          </node>
+                          <node concept="2OqwBi" id="1VPSbnRbQZf" role="3K4Cdx">
+                            <node concept="2Sf5sV" id="1VPSbnRbQDs" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="1VPSbnRbRot" role="2OqNvi">
+                              <ref role="3TsBF5" to="kfo3:2vr5lQPWdgS" resolve="horizontal" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -551,7 +570,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtRVB" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$FNR" role="2tJFKM">
-                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleOrientation" />
+                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleHorizontalOrientation" />
                 </node>
               </node>
             </node>
@@ -598,7 +617,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqHmv" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$FFu" role="2tJFKM">
-                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleOrientation" />
+                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleHorizontalOrientation" />
                 </node>
               </node>
             </node>
@@ -629,7 +648,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEU0B" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEU0C" role="2tJFKM">
-                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleOrientation" />
+                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleHorizontalOrientation" />
                 </node>
               </node>
             </node>
@@ -923,7 +942,7 @@
                 <node concept="3clFbS" id="1VPSbnQjv9c" role="1bW5cS">
                   <node concept="3clFbF" id="7Oac05Ij4Ta" role="3cqZAp">
                     <node concept="Xl_RD" id="7Oac05Ij4Tb" role="3clFbG">
-                      <property role="Xl_RC" value="Switch Orientation" />
+                      <property role="Xl_RC" value="Toggle Orientation" />
                     </node>
                   </node>
                 </node>
@@ -1852,7 +1871,7 @@
                 <node concept="3clFbS" id="1VPSbnQjgV3" role="1bW5cS">
                   <node concept="3clFbF" id="6vi7U_pvX9a" role="3cqZAp">
                     <node concept="Xl_RD" id="6vi7U_pvX9b" role="3clFbG">
-                      <property role="Xl_RC" value="Add Column Left" />
+                      <property role="Xl_RC" value="Add Column to Left" />
                     </node>
                   </node>
                 </node>
@@ -2757,7 +2776,7 @@
                 <node concept="3clFbS" id="1VPSbnQjiKZ" role="1bW5cS">
                   <node concept="3clFbF" id="6vi7U_pwkXG" role="3cqZAp">
                     <node concept="Xl_RD" id="6vi7U_pwkXH" role="3clFbG">
-                      <property role="Xl_RC" value="Add Column Right" />
+                      <property role="Xl_RC" value="Add Column to Right" />
                     </node>
                   </node>
                 </node>
@@ -3164,7 +3183,7 @@
                 <node concept="3clFbS" id="1VPSbnQjs1Y" role="1bW5cS">
                   <node concept="3clFbF" id="3l9s061DX4V" role="3cqZAp">
                     <node concept="Xl_RD" id="3l9s061DX4W" role="3clFbG">
-                      <property role="Xl_RC" value="Paste data into this table (starting in this col)" />
+                      <property role="Xl_RC" value="Paste Data Into Table (Starting in this Column" />
                     </node>
                   </node>
                 </node>
@@ -3597,7 +3616,7 @@
                 <node concept="3clFbS" id="1VPSbnQjj8y" role="1bW5cS">
                   <node concept="3clFbF" id="6vi7U_px2SA" role="3cqZAp">
                     <node concept="Xl_RD" id="6vi7U_px2SB" role="3clFbG">
-                      <property role="Xl_RC" value="Add Column Right" />
+                      <property role="Xl_RC" value="Add Column to Right" />
                     </node>
                   </node>
                 </node>
@@ -4026,7 +4045,7 @@
                 <node concept="3clFbS" id="1VPSbnQji7o" role="1bW5cS">
                   <node concept="3clFbF" id="6vi7U_pzcgm" role="3cqZAp">
                     <node concept="Xl_RD" id="6vi7U_pzcgn" role="3clFbG">
-                      <property role="Xl_RC" value="Add Column Left" />
+                      <property role="Xl_RC" value="Add Column to Left" />
                     </node>
                   </node>
                 </node>
@@ -4549,7 +4568,7 @@
                 <node concept="3clFbS" id="1VPSbnQjirK" role="1bW5cS">
                   <node concept="3clFbF" id="6vi7U_pzp9s" role="3cqZAp">
                     <node concept="Xl_RD" id="6vi7U_pzp9t" role="3clFbG">
-                      <property role="Xl_RC" value="Add Column Left" />
+                      <property role="Xl_RC" value="Add Column to Left" />
                     </node>
                   </node>
                 </node>
@@ -5478,7 +5497,7 @@
                 <node concept="3clFbS" id="1VPSbnQjrwH" role="1bW5cS">
                   <node concept="3clFbF" id="6GGzMC68xoq" role="3cqZAp">
                     <node concept="Xl_RD" id="6GGzMC68xor" role="3clFbG">
-                      <property role="Xl_RC" value="Paste data into this table" />
+                      <property role="Xl_RC" value="Paste Data Into Table" />
                     </node>
                   </node>
                 </node>
@@ -5814,7 +5833,7 @@
                 <node concept="3clFbS" id="1VPSbnQjmF5" role="1bW5cS">
                   <node concept="3clFbF" id="Nuz63f1gos" role="3cqZAp">
                     <node concept="Xl_RD" id="Nuz63f1gor" role="3clFbG">
-                      <property role="Xl_RC" value="Add predefined expression for y axis" />
+                      <property role="Xl_RC" value="Add Predefined Expression for Y Axis" />
                     </node>
                   </node>
                 </node>
@@ -5960,7 +5979,7 @@
                 <node concept="3clFbS" id="1VPSbnQjmeF" role="1bW5cS">
                   <node concept="3clFbF" id="Nuz63f1nji" role="3cqZAp">
                     <node concept="Xl_RD" id="Nuz63f1njj" role="3clFbG">
-                      <property role="Xl_RC" value="Add predefined expression for x axis" />
+                      <property role="Xl_RC" value="Add Predefined Expression for X Axis" />
                     </node>
                   </node>
                 </node>
@@ -6106,7 +6125,7 @@
                 <node concept="3clFbS" id="1VPSbnQjjzd" role="1bW5cS">
                   <node concept="3clFbF" id="6vi7U_px2U8" role="3cqZAp">
                     <node concept="Xl_RD" id="6vi7U_px2U9" role="3clFbG">
-                      <property role="Xl_RC" value="Add Column Right" />
+                      <property role="Xl_RC" value="Add Column to Right" />
                     </node>
                   </node>
                 </node>
@@ -6258,7 +6277,7 @@
                 <node concept="3clFbS" id="1VPSbnQjqQY" role="1bW5cS">
                   <node concept="3clFbF" id="2ng4eCdCZ8$" role="3cqZAp">
                     <node concept="Xl_RD" id="2ng4eCdCZ8z" role="3clFbG">
-                      <property role="Xl_RC" value="Paste data into this row" />
+                      <property role="Xl_RC" value="Paste Data Into this Row" />
                     </node>
                   </node>
                 </node>
@@ -6418,7 +6437,7 @@
                 <node concept="3clFbS" id="1VPSbnQjrho" role="1bW5cS">
                   <node concept="3clFbF" id="3l9s061Epov" role="3cqZAp">
                     <node concept="Xl_RD" id="3l9s061Epow" role="3clFbG">
-                      <property role="Xl_RC" value="Paste data into this row (starting in this col)" />
+                      <property role="Xl_RC" value="Paste Data Into Row (Starting in This Column)" />
                     </node>
                   </node>
                 </node>
@@ -6632,7 +6651,7 @@
                 <node concept="3clFbS" id="1VPSbnQjo0$" role="1bW5cS">
                   <node concept="3clFbF" id="5jsv3cLVd3Q" role="3cqZAp">
                     <node concept="Xl_RD" id="5jsv3cLVd3P" role="3clFbG">
-                      <property role="Xl_RC" value="Convert to MultiDecTab" />
+                      <property role="Xl_RC" value="Convert to Multi Decision Table" />
                     </node>
                   </node>
                 </node>
@@ -7252,9 +7271,27 @@
               <node concept="1XNTG" id="1VPSbnQjqBt" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQjqBu" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQjqBv" role="1bW5cS">
-                  <node concept="3clFbF" id="2FeCPobcZb4" role="3cqZAp">
-                    <node concept="Xl_RD" id="2FeCPobcZb3" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Negate" />
+                  <node concept="3clFbF" id="1VPSbnRbKQz" role="3cqZAp">
+                    <node concept="3cpWs3" id="1VPSbnRbNfq" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnRbNiQ" role="3uHU7w">
+                        <property role="Xl_RC" value=" Content" />
+                      </node>
+                      <node concept="1eOMI4" id="1VPSbnRbNbF" role="3uHU7B">
+                        <node concept="3K4zz7" id="1VPSbnRbLTL" role="1eOMHV">
+                          <node concept="Xl_RD" id="1VPSbnRbLWW" role="3K4E3e">
+                            <property role="Xl_RC" value="Don't Negate" />
+                          </node>
+                          <node concept="Xl_RD" id="1VPSbnRbMhL" role="3K4GZi">
+                            <property role="Xl_RC" value="Negate" />
+                          </node>
+                          <node concept="2OqwBi" id="1VPSbnRbL9l" role="3K4Cdx">
+                            <node concept="2Sf5sV" id="1VPSbnRbKQy" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="1VPSbnRbLrr" role="2OqNvi">
+                              <ref role="3TsBF5" to="kfo3:2FeCPobcUL$" resolve="negate" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -73,6 +73,11 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
     </language>
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
       <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.SectionAnnotation" flags="ng" index="1SWQZ3">
@@ -161,9 +166,20 @@
               <node concept="1XNTG" id="1VPSbnQhE83" role="37wK5m" />
               <node concept="1bVj0M" id="1VPSbnQhE84" role="37wK5m">
                 <node concept="3clFbS" id="1VPSbnQhE85" role="1bW5cS">
-                  <node concept="3clFbF" id="63CFXsSkAT" role="3cqZAp">
-                    <node concept="Xl_RD" id="63CFXsSkAS" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Public" />
+                  <node concept="3clFbF" id="1VPSbnRbjb$" role="3cqZAp">
+                    <node concept="3K4zz7" id="1VPSbnRbkFb" role="3clFbG">
+                      <node concept="Xl_RD" id="1VPSbnRbkIm" role="3K4E3e">
+                        <property role="Xl_RC" value="Remove Public Flag" />
+                      </node>
+                      <node concept="Xl_RD" id="1VPSbnRbkRD" role="3K4GZi">
+                        <property role="Xl_RC" value="Make Public" />
+                      </node>
+                      <node concept="2OqwBi" id="1VPSbnRbj_v" role="3K4Cdx">
+                        <node concept="2Sf5sV" id="1VPSbnRbjbz" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="1VPSbnRbkcP" role="2OqNvi">
+                          <ref role="3TsBF5" to="w9y2:5kXA14mWc_G" resolve="public" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -335,7 +351,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="7Erz2K0ycIT" role="3cqZAp">
                     <node concept="Xl_RD" id="7Erz2K0ycIS" role="3clFbG">
-                      <property role="Xl_RC" value="Remove broken comment" />
+                      <property role="Xl_RC" value="Remove Broken Comment" />
                     </node>
                   </node>
                 </node>

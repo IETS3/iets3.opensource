@@ -217,7 +217,7 @@
                 <node concept="3clFbS" id="1VPSbnQi5hh" role="1bW5cS">
                   <node concept="3clFbF" id="1sudaVNqnKl" role="3cqZAp">
                     <node concept="Xl_RD" id="1sudaVNqnKk" role="3clFbG">
-                      <property role="Xl_RC" value="Create Cell Screenshot" />
+                      <property role="Xl_RC" value="Take Cell Screenshot" />
                     </node>
                   </node>
                 </node>
@@ -353,7 +353,7 @@
                 <node concept="3clFbS" id="1VPSbnQi4lL" role="1bW5cS">
                   <node concept="3clFbF" id="2c2AzQcA3kT" role="3cqZAp">
                     <node concept="Xl_RD" id="2c2AzQcA3kU" role="3clFbG">
-                      <property role="Xl_RC" value="Create All Screenshot in Model" />
+                      <property role="Xl_RC" value="Take All Screenshots in Model" />
                     </node>
                   </node>
                 </node>
@@ -516,7 +516,7 @@
                 <node concept="3clFbS" id="1VPSbnQi7tJ" role="1bW5cS">
                   <node concept="3clFbF" id="2c2AzQdceAS" role="3cqZAp">
                     <node concept="Xl_RD" id="2c2AzQdceAR" role="3clFbG">
-                      <property role="Xl_RC" value="Duplicate In Par" />
+                      <property role="Xl_RC" value="Duplicate As Parallel Frames" />
                     </node>
                   </node>
                 </node>
@@ -810,7 +810,7 @@
                 <node concept="3clFbS" id="1VPSbnQi6hw" role="1bW5cS">
                   <node concept="3clFbF" id="5AlTalNHBaV" role="3cqZAp">
                     <node concept="Xl_RD" id="5AlTalNHBaW" role="3clFbG">
-                      <property role="Xl_RC" value="Delete Par" />
+                      <property role="Xl_RC" value="Delete Parallel Frames" />
                     </node>
                   </node>
                 </node>
@@ -1041,7 +1041,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="NE1gl52BYi" role="3cqZAp">
                     <node concept="Xl_RD" id="NE1gl52BYh" role="3clFbG">
-                      <property role="Xl_RC" value="Add Dot Dot Dot" />
+                      <property role="Xl_RC" value="Add ..." />
                     </node>
                   </node>
                 </node>
@@ -1188,7 +1188,7 @@
                 <node concept="3clFbS" id="1VPSbnQi4PQ" role="1bW5cS">
                   <node concept="3clFbF" id="C_BpXjRQWy" role="3cqZAp">
                     <node concept="Xl_RD" id="C_BpXjRQWz" role="3clFbG">
-                      <property role="Xl_RC" value="Create All Screenshot in Root" />
+                      <property role="Xl_RC" value="Take All Screenshots in Root" />
                     </node>
                   </node>
                 </node>

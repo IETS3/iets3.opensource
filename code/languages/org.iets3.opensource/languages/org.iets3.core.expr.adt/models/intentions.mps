@@ -504,7 +504,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="7aipPVpU0lD" role="3cqZAp">
                     <node concept="Xl_RD" id="7aipPVpU0lC" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Tree" />
+                      <property role="Xl_RC" value="Toggle Tree Projection" />
                     </node>
                   </node>
                 </node>
@@ -666,7 +666,7 @@
                 <node concept="3clFbS" id="1VPSbnQhJ$S" role="1bW5cS">
                   <node concept="3clFbF" id="7aipPVqdNPa" role="3cqZAp">
                     <node concept="Xl_RD" id="7aipPVqdNPb" role="3clFbG">
-                      <property role="Xl_RC" value="Toggle Tree" />
+                      <property role="Xl_RC" value="Toggle Tree Projection" />
                     </node>
                   </node>
                 </node>

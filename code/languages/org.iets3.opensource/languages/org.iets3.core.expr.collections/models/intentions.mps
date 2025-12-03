@@ -946,7 +946,7 @@
                 <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
                   <node concept="3clFbF" id="1mDdTH2QYF" role="3cqZAp">
                     <node concept="Xl_RD" id="1mDdTH2QYE" role="3clFbG">
-                      <property role="Xl_RC" value="Add Bracket Access [..]" />
+                      <property role="Xl_RC" value="Get The Index At" />
                     </node>
                   </node>
                 </node>
