@@ -151,7 +151,7 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="lp3OKvgLn$">
-    <property role="TrG5h" value="replaceSelectedText" />
+    <property role="TrG5h" value="ReplaceSelectedText" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="87nw:2dWzqxEBMSc" resolve="Word" />
     <node concept="2S6ZIM" id="lp3OKvgLn_" role="2ZfVej">
@@ -163,7 +163,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQn_51" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$Hg$" role="2tJFKM">
-                  <ref role="2aWVGs" node="lp3OKvgLn$" resolve="replaceSelectedText" />
+                  <ref role="2aWVGs" node="lp3OKvgLn$" resolve="ReplaceSelectedText" />
                 </node>
               </node>
             </node>
@@ -194,7 +194,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$Hvp" role="2tJFKM">
-                  <ref role="2aWVGs" node="lp3OKvgLn$" resolve="replaceSelectedText" />
+                  <ref role="2aWVGs" node="lp3OKvgLn$" resolve="ReplaceSelectedText" />
                 </node>
               </node>
             </node>
@@ -295,7 +295,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$Hl8" role="2tJFKM">
-                  <ref role="2aWVGs" node="lp3OKvgLn$" resolve="replaceSelectedText" />
+                  <ref role="2aWVGs" node="lp3OKvgLn$" resolve="ReplaceSelectedText" />
                 </node>
               </node>
             </node>
@@ -407,7 +407,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEUM7" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEUM8" role="2tJFKM">
-                  <ref role="2aWVGs" node="lp3OKvgLn$" resolve="replaceSelectedText" />
+                  <ref role="2aWVGs" node="lp3OKvgLn$" resolve="ReplaceSelectedText" />
                 </node>
               </node>
             </node>

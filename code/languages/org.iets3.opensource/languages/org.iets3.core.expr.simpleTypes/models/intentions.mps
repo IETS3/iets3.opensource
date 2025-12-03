@@ -262,7 +262,7 @@
   </registry>
   <node concept="2S6QgY" id="2RZ2I9prLOg">
     <property role="3GE5qa" value="numeric.number" />
-    <property role="TrG5h" value="addRange" />
+    <property role="TrG5h" value="AddRange" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
     <node concept="2S6ZIM" id="2RZ2I9prLOh" role="2ZfVej">
@@ -274,7 +274,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmHj2" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy2kX" role="2tJFKM">
-                  <ref role="2aWVGs" node="2RZ2I9prLOg" resolve="addRange" />
+                  <ref role="2aWVGs" node="2RZ2I9prLOg" resolve="AddRange" />
                 </node>
               </node>
             </node>
@@ -305,7 +305,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsXlO" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy2tn" role="2tJFKM">
-                  <ref role="2aWVGs" node="2RZ2I9prLOg" resolve="addRange" />
+                  <ref role="2aWVGs" node="2RZ2I9prLOg" resolve="AddRange" />
                 </node>
               </node>
             </node>
@@ -342,7 +342,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpPRJ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy2p6" role="2tJFKM">
-                  <ref role="2aWVGs" node="2RZ2I9prLOg" resolve="addRange" />
+                  <ref role="2aWVGs" node="2RZ2I9prLOg" resolve="AddRange" />
                 </node>
               </node>
             </node>
@@ -379,7 +379,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDYaP" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDYaQ" role="2tJFKM">
-                  <ref role="2aWVGs" node="2RZ2I9prLOg" resolve="addRange" />
+                  <ref role="2aWVGs" node="2RZ2I9prLOg" resolve="AddRange" />
                 </node>
               </node>
             </node>
@@ -403,7 +403,7 @@
   </node>
   <node concept="2S6QgY" id="2RZ2I9prQwr">
     <property role="3GE5qa" value="numeric.number" />
-    <property role="TrG5h" value="addPrec" />
+    <property role="TrG5h" value="AddPrecision" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
     <node concept="2S6ZIM" id="2RZ2I9prQws" role="2ZfVej">
@@ -415,7 +415,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmGLw" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy0uP" role="2tJFKM">
-                  <ref role="2aWVGs" node="2RZ2I9prQwr" resolve="addPrec" />
+                  <ref role="2aWVGs" node="2RZ2I9prQwr" resolve="AddPrecision" />
                 </node>
               </node>
             </node>
@@ -446,7 +446,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsWHk" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy0Bh" role="2tJFKM">
-                  <ref role="2aWVGs" node="2RZ2I9prQwr" resolve="addPrec" />
+                  <ref role="2aWVGs" node="2RZ2I9prQwr" resolve="AddPrecision" />
                 </node>
               </node>
             </node>
@@ -528,7 +528,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpPrE" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy0yZ" role="2tJFKM">
-                  <ref role="2aWVGs" node="2RZ2I9prQwr" resolve="addPrec" />
+                  <ref role="2aWVGs" node="2RZ2I9prQwr" resolve="AddPrecision" />
                 </node>
               </node>
             </node>
@@ -565,7 +565,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDXEf" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDXEg" role="2tJFKM">
-                  <ref role="2aWVGs" node="2RZ2I9prQwr" resolve="addPrec" />
+                  <ref role="2aWVGs" node="2RZ2I9prQwr" resolve="AddPrecision" />
                 </node>
               </node>
             </node>
@@ -589,7 +589,7 @@
   </node>
   <node concept="2S6QgY" id="2M9Ik4CWtpv">
     <property role="3GE5qa" value="numeric.number.precision" />
-    <property role="TrG5h" value="wrapWithPrecisionConversion" />
+    <property role="TrG5h" value="WrapWithPrecisionConversion" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="2M9Ik4CWtpw" role="2ZfVej">
@@ -601,7 +601,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmNZL" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQyl$n" role="2tJFKM">
-                  <ref role="2aWVGs" node="2M9Ik4CWtpv" resolve="wrapWithPrecisionConversion" />
+                  <ref role="2aWVGs" node="2M9Ik4CWtpv" resolve="WrapWithPrecisionConversion" />
                 </node>
               </node>
             </node>
@@ -632,7 +632,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQt4cy" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQylHN" role="2tJFKM">
-                  <ref role="2aWVGs" node="2M9Ik4CWtpv" resolve="wrapWithPrecisionConversion" />
+                  <ref role="2aWVGs" node="2M9Ik4CWtpv" resolve="WrapWithPrecisionConversion" />
                 </node>
               </node>
             </node>
@@ -733,7 +733,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpWyS" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQylCB" role="2tJFKM">
-                  <ref role="2aWVGs" node="2M9Ik4CWtpv" resolve="wrapWithPrecisionConversion" />
+                  <ref role="2aWVGs" node="2M9Ik4CWtpv" resolve="WrapWithPrecisionConversion" />
                 </node>
               </node>
             </node>
@@ -793,7 +793,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQE5eB" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQE5eC" role="2tJFKM">
-                  <ref role="2aWVGs" node="2M9Ik4CWtpv" resolve="wrapWithPrecisionConversion" />
+                  <ref role="2aWVGs" node="2M9Ik4CWtpv" resolve="WrapWithPrecisionConversion" />
                 </node>
               </node>
             </node>
@@ -816,7 +816,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="3zml08RDaA2">
-    <property role="TrG5h" value="makeLimitFromCast" />
+    <property role="TrG5h" value="MakeLimitFromCast" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:2Qbt$1tNGy4" resolve="CastExpression" />
     <node concept="2S6ZIM" id="3zml08RDaA3" role="2ZfVej">
@@ -828,7 +828,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmK7R" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQybnd" role="2tJFKM">
-                  <ref role="2aWVGs" node="3zml08RDaA2" resolve="makeLimitFromCast" />
+                  <ref role="2aWVGs" node="3zml08RDaA2" resolve="MakeLimitFromCast" />
                 </node>
               </node>
             </node>
@@ -859,7 +859,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQt0rl" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQybvq" role="2tJFKM">
-                  <ref role="2aWVGs" node="3zml08RDaA2" resolve="makeLimitFromCast" />
+                  <ref role="2aWVGs" node="3zml08RDaA2" resolve="MakeLimitFromCast" />
                 </node>
               </node>
             </node>
@@ -949,7 +949,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpSAH" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQybro" role="2tJFKM">
-                  <ref role="2aWVGs" node="3zml08RDaA2" resolve="makeLimitFromCast" />
+                  <ref role="2aWVGs" node="3zml08RDaA2" resolve="MakeLimitFromCast" />
                 </node>
               </node>
             </node>
@@ -980,7 +980,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQE1eK" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQE1eL" role="2tJFKM">
-                  <ref role="2aWVGs" node="3zml08RDaA2" resolve="makeLimitFromCast" />
+                  <ref role="2aWVGs" node="3zml08RDaA2" resolve="MakeLimitFromCast" />
                 </node>
               </node>
             </node>
@@ -1005,7 +1005,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7VuYlCRKYMk">
-    <property role="TrG5h" value="changeIntoAlt" />
+    <property role="TrG5h" value="ChangeIntoAlternativesExpression" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6NJfo6_rQ9E" resolve="IfExpression" />
     <node concept="2S6ZIM" id="7VuYlCRKYMl" role="2ZfVej">
@@ -1017,7 +1017,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmHVi" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy3p_" role="2tJFKM">
-                  <ref role="2aWVGs" node="7VuYlCRKYMk" resolve="changeIntoAlt" />
+                  <ref role="2aWVGs" node="7VuYlCRKYMk" resolve="ChangeIntoAlternativesExpression" />
                 </node>
               </node>
             </node>
@@ -1048,7 +1048,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsY5x" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy3OT" role="2tJFKM">
-                  <ref role="2aWVGs" node="7VuYlCRKYMk" resolve="changeIntoAlt" />
+                  <ref role="2aWVGs" node="7VuYlCRKYMk" resolve="ChangeIntoAlternativesExpression" />
                 </node>
               </node>
             </node>
@@ -1144,7 +1144,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpQru" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy3zU" role="2tJFKM">
-                  <ref role="2aWVGs" node="7VuYlCRKYMk" resolve="changeIntoAlt" />
+                  <ref role="2aWVGs" node="7VuYlCRKYMk" resolve="ChangeIntoAlternativesExpression" />
                 </node>
               </node>
             </node>
@@ -1181,7 +1181,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDYTG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDYTH" role="2tJFKM">
-                  <ref role="2aWVGs" node="7VuYlCRKYMk" resolve="changeIntoAlt" />
+                  <ref role="2aWVGs" node="7VuYlCRKYMk" resolve="ChangeIntoAlternativesExpression" />
                 </node>
               </node>
             </node>
@@ -1204,7 +1204,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7VuYlCRL7yx">
-    <property role="TrG5h" value="changeIntoIf" />
+    <property role="TrG5h" value="ChangeIntoIf" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6UxFDrx4dp4" resolve="AlternativesExpression" />
     <node concept="2S6ZIM" id="7VuYlCRL7yy" role="2ZfVej">
@@ -1216,7 +1216,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmJ_J" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy7Eb" role="2tJFKM">
-                  <ref role="2aWVGs" node="7VuYlCRL7yx" resolve="changeIntoIf" />
+                  <ref role="2aWVGs" node="7VuYlCRL7yx" resolve="ChangeIntoIf" />
                 </node>
               </node>
             </node>
@@ -1247,7 +1247,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsZIR" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy7T_" role="2tJFKM">
-                  <ref role="2aWVGs" node="7VuYlCRL7yx" resolve="changeIntoIf" />
+                  <ref role="2aWVGs" node="7VuYlCRL7yx" resolve="ChangeIntoIf" />
                 </node>
               </node>
             </node>
@@ -1421,7 +1421,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpS3y" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQy7JE" role="2tJFKM">
-                  <ref role="2aWVGs" node="7VuYlCRL7yx" resolve="changeIntoIf" />
+                  <ref role="2aWVGs" node="7VuYlCRL7yx" resolve="ChangeIntoIf" />
                 </node>
               </node>
             </node>
@@ -1500,7 +1500,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQE0$D" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQE0$E" role="2tJFKM">
-                  <ref role="2aWVGs" node="7VuYlCRL7yx" resolve="changeIntoIf" />
+                  <ref role="2aWVGs" node="7VuYlCRL7yx" resolve="ChangeIntoIf" />
                 </node>
               </node>
             </node>
@@ -1524,7 +1524,7 @@
   </node>
   <node concept="2S6QgY" id="2MMBR00YGax">
     <property role="3GE5qa" value="numeric.number" />
-    <property role="TrG5h" value="toggleExcludeMin" />
+    <property role="TrG5h" value="ToggleExcludeMin" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
     <node concept="2S6ZIM" id="2MMBR00YGay" role="2ZfVej">
@@ -1536,7 +1536,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmLcK" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQydUh" role="2tJFKM">
-                  <ref role="2aWVGs" node="2MMBR00YGax" resolve="toggleExcludeMin" />
+                  <ref role="2aWVGs" node="2MMBR00YGax" resolve="ToggleExcludeMin" />
                 </node>
               </node>
             </node>
@@ -1585,7 +1585,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQt1wn" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQye2Y" role="2tJFKM">
-                  <ref role="2aWVGs" node="2MMBR00YGax" resolve="toggleExcludeMin" />
+                  <ref role="2aWVGs" node="2MMBR00YGax" resolve="ToggleExcludeMin" />
                 </node>
               </node>
             </node>
@@ -1629,7 +1629,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpTEK" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQydYY" role="2tJFKM">
-                  <ref role="2aWVGs" node="2MMBR00YGax" resolve="toggleExcludeMin" />
+                  <ref role="2aWVGs" node="2MMBR00YGax" resolve="ToggleExcludeMin" />
                 </node>
               </node>
             </node>
@@ -1660,7 +1660,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQE2n$" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQE2n_" role="2tJFKM">
-                  <ref role="2aWVGs" node="2MMBR00YGax" resolve="toggleExcludeMin" />
+                  <ref role="2aWVGs" node="2MMBR00YGax" resolve="ToggleExcludeMin" />
                 </node>
               </node>
             </node>
@@ -1684,7 +1684,7 @@
   </node>
   <node concept="2S6QgY" id="2MMBR00Zbl8">
     <property role="3GE5qa" value="numeric.number" />
-    <property role="TrG5h" value="toggleExcludeMax" />
+    <property role="TrG5h" value="ToggleExcludeMax" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
     <node concept="2S6ZIM" id="2MMBR00Zbl9" role="2ZfVej">
@@ -1696,7 +1696,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmKEs" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQycrT" role="2tJFKM">
-                  <ref role="2aWVGs" node="2MMBR00Zbl8" resolve="toggleExcludeMax" />
+                  <ref role="2aWVGs" node="2MMBR00Zbl8" resolve="ToggleExcludeMax" />
                 </node>
               </node>
             </node>
@@ -1745,7 +1745,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQt11Q" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQycEQ" role="2tJFKM">
-                  <ref role="2aWVGs" node="2MMBR00Zbl8" resolve="toggleExcludeMax" />
+                  <ref role="2aWVGs" node="2MMBR00Zbl8" resolve="ToggleExcludeMax" />
                 </node>
               </node>
             </node>
@@ -1789,7 +1789,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpTc2" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQycwA" role="2tJFKM">
-                  <ref role="2aWVGs" node="2MMBR00Zbl8" resolve="toggleExcludeMax" />
+                  <ref role="2aWVGs" node="2MMBR00Zbl8" resolve="ToggleExcludeMax" />
                 </node>
               </node>
             </node>
@@ -1820,7 +1820,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQE1S4" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQE1S5" role="2tJFKM">
-                  <ref role="2aWVGs" node="2MMBR00Zbl8" resolve="toggleExcludeMax" />
+                  <ref role="2aWVGs" node="2MMBR00Zbl8" resolve="ToggleExcludeMax" />
                 </node>
               </node>
             </node>
@@ -1844,7 +1844,7 @@
   </node>
   <node concept="2S6QgY" id="65S0ZNFGkRH">
     <property role="3GE5qa" value="numeric" />
-    <property role="TrG5h" value="toggleNumberHexValue" />
+    <property role="TrG5h" value="ToggleNumberHexValue" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
     <node concept="2S6ZIM" id="65S0ZNFGkRI" role="2ZfVej">
@@ -1856,7 +1856,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmLSK" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQyf8E" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFGkRH" resolve="toggleNumberHexValue" />
+                  <ref role="2aWVGs" node="65S0ZNFGkRH" resolve="ToggleNumberHexValue" />
                 </node>
               </node>
             </node>
@@ -1902,7 +1902,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQt2bc" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQyfjb" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFGkRH" resolve="toggleNumberHexValue" />
+                  <ref role="2aWVGs" node="65S0ZNFGkRH" resolve="ToggleNumberHexValue" />
                 </node>
               </node>
             </node>
@@ -1946,7 +1946,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpUp0" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQyfdt" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFGkRH" resolve="toggleNumberHexValue" />
+                  <ref role="2aWVGs" node="65S0ZNFGkRH" resolve="ToggleNumberHexValue" />
                 </node>
               </node>
             </node>
@@ -2015,7 +2015,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQE34S" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQE34T" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFGkRH" resolve="toggleNumberHexValue" />
+                  <ref role="2aWVGs" node="65S0ZNFGkRH" resolve="ToggleNumberHexValue" />
                 </node>
               </node>
             </node>
@@ -2039,7 +2039,7 @@
   </node>
   <node concept="2S6QgY" id="65S0ZNFKbuT">
     <property role="3GE5qa" value="numeric.number" />
-    <property role="TrG5h" value="toggleNumberRangeHexMinValue" />
+    <property role="TrG5h" value="ToggleNumberRangeHexMinValue" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
     <node concept="2S6ZIM" id="65S0ZNFKbuU" role="2ZfVej">
@@ -2051,7 +2051,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmNg1" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQyjdE" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="toggleNumberRangeHexMinValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="ToggleNumberRangeHexMinValue" />
                 </node>
               </node>
             </node>
@@ -2097,7 +2097,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQt3u1" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQyjog" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="toggleNumberRangeHexMinValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="ToggleNumberRangeHexMinValue" />
                 </node>
               </node>
             </node>
@@ -2141,7 +2141,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpVQB" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQyjio" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="toggleNumberRangeHexMinValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="ToggleNumberRangeHexMinValue" />
                 </node>
               </node>
             </node>
@@ -2225,7 +2225,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQE4tw" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQE4tx" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="toggleNumberRangeHexMinValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="ToggleNumberRangeHexMinValue" />
                 </node>
               </node>
             </node>
@@ -2249,7 +2249,7 @@
   </node>
   <node concept="2S6QgY" id="65S0ZNFKldA">
     <property role="3GE5qa" value="numeric.number" />
-    <property role="TrG5h" value="toggleNumberRangeHexMaxValue" />
+    <property role="TrG5h" value="ToggleNumberRangeHexMaxValue" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
     <node concept="2S6ZIM" id="65S0ZNFKldB" role="2ZfVej">
@@ -2261,7 +2261,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmM$N" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQygYI" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="toggleNumberRangeHexMaxValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="ToggleNumberRangeHexMaxValue" />
                 </node>
               </node>
             </node>
@@ -2307,7 +2307,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQt2P1" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQyh9k" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="toggleNumberRangeHexMaxValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="ToggleNumberRangeHexMaxValue" />
                 </node>
               </node>
             </node>
@@ -2351,7 +2351,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpVf2" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQyh3s" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="toggleNumberRangeHexMaxValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="ToggleNumberRangeHexMaxValue" />
                 </node>
               </node>
             </node>
@@ -2435,7 +2435,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQE3NC" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQE3ND" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="toggleNumberRangeHexMaxValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="ToggleNumberRangeHexMaxValue" />
                 </node>
               </node>
             </node>

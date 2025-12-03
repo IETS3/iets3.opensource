@@ -100,7 +100,7 @@
   </registry>
   <node concept="2S6QgY" id="4IV0h47dhYM">
     <property role="3GE5qa" value="interactor.intercept" />
-    <property role="TrG5h" value="addInterceptor" />
+    <property role="TrG5h" value="AddInterceptor" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="8lgj:4IV0h47dfWs" resolve="IInterceptorContainer" />
     <node concept="2S6ZIM" id="4IV0h47dhYN" role="2ZfVej">
@@ -112,7 +112,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmsjO" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxhiD" role="2tJFKM">
-                  <ref role="2aWVGs" node="4IV0h47dhYM" resolve="addInterceptor" />
+                  <ref role="2aWVGs" node="4IV0h47dhYM" resolve="AddInterceptor" />
                 </node>
               </node>
             </node>
@@ -143,7 +143,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsFy8" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxhqM" role="2tJFKM">
-                  <ref role="2aWVGs" node="4IV0h47dhYM" resolve="addInterceptor" />
+                  <ref role="2aWVGs" node="4IV0h47dhYM" resolve="AddInterceptor" />
                 </node>
               </node>
             </node>
@@ -183,7 +183,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQp$Fa" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxhmM" role="2tJFKM">
-                  <ref role="2aWVGs" node="4IV0h47dhYM" resolve="addInterceptor" />
+                  <ref role="2aWVGs" node="4IV0h47dhYM" resolve="AddInterceptor" />
                 </node>
               </node>
             </node>
@@ -214,7 +214,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDGlz" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDGl$" role="2tJFKM">
-                  <ref role="2aWVGs" node="4IV0h47dhYM" resolve="addInterceptor" />
+                  <ref role="2aWVGs" node="4IV0h47dhYM" resolve="AddInterceptor" />
                 </node>
               </node>
             </node>
@@ -238,7 +238,7 @@
   </node>
   <node concept="2S6QgY" id="4IV0h47jKwT">
     <property role="3GE5qa" value="interactor" />
-    <property role="TrG5h" value="addContextArg" />
+    <property role="TrG5h" value="AddContextArgument" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="8lgj:7WFhXJlSwpm" resolve="InteractorTarget" />
     <node concept="2S6ZIM" id="4IV0h47jKwU" role="2ZfVej">
@@ -250,7 +250,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmr_H" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxelH" role="2tJFKM">
-                  <ref role="2aWVGs" node="4IV0h47jKwT" resolve="addContextArg" />
+                  <ref role="2aWVGs" node="4IV0h47jKwT" resolve="AddContextArgument" />
                 </node>
               </node>
             </node>
@@ -281,7 +281,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxeDI" role="2tJFKM">
-                  <ref role="2aWVGs" node="4IV0h47jKwT" resolve="addContextArg" />
+                  <ref role="2aWVGs" node="4IV0h47jKwT" resolve="AddContextArgument" />
                 </node>
               </node>
             </node>
@@ -321,7 +321,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxevU" role="2tJFKM">
-                  <ref role="2aWVGs" node="4IV0h47jKwT" resolve="addContextArg" />
+                  <ref role="2aWVGs" node="4IV0h47jKwT" resolve="AddContextArgument" />
                 </node>
               </node>
             </node>
@@ -352,7 +352,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDFxf" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDFxg" role="2tJFKM">
-                  <ref role="2aWVGs" node="4IV0h47jKwT" resolve="addContextArg" />
+                  <ref role="2aWVGs" node="4IV0h47jKwT" resolve="AddContextArgument" />
                 </node>
               </node>
             </node>

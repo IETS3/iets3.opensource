@@ -196,7 +196,7 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="20xYXnqq59o">
-    <property role="TrG5h" value="ConversionRule_SetMode" />
+    <property role="TrG5h" value="ConversionRuleSetMode" />
     <property role="3GE5qa" value="definition.conversion" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="i3ya:VmEWGR2Mzb" resolve="ConversionRule" />
@@ -212,7 +212,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQncv8" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzuPu" role="2tJFKM">
-                  <ref role="2aWVGs" node="20xYXnqq59o" resolve="ConversionRule_SetMode" />
+                  <ref role="2aWVGs" node="20xYXnqq59o" resolve="ConversionRuleSetMode" />
                 </node>
               </node>
             </node>
@@ -262,7 +262,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzuXU" role="2tJFKM">
-                  <ref role="2aWVGs" node="20xYXnqq59o" resolve="ConversionRule_SetMode" />
+                  <ref role="2aWVGs" node="20xYXnqq59o" resolve="ConversionRuleSetMode" />
                 </node>
               </node>
             </node>
@@ -306,7 +306,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzuTV" role="2tJFKM">
-                  <ref role="2aWVGs" node="20xYXnqq59o" resolve="ConversionRule_SetMode" />
+                  <ref role="2aWVGs" node="20xYXnqq59o" resolve="ConversionRuleSetMode" />
                 </node>
               </node>
             </node>
@@ -337,7 +337,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEwPQ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEwPR" role="2tJFKM">
-                  <ref role="2aWVGs" node="20xYXnqq59o" resolve="ConversionRule_SetMode" />
+                  <ref role="2aWVGs" node="20xYXnqq59o" resolve="ConversionRuleSetMode" />
                 </node>
               </node>
             </node>

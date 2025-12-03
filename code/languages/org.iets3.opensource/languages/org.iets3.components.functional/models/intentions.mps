@@ -237,7 +237,7 @@
   </registry>
   <node concept="2S6QgY" id="2JYumEA$$D9">
     <property role="3GE5qa" value="data" />
-    <property role="TrG5h" value="addChildren" />
+    <property role="TrG5h" value="AddChildren" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="874t:6LfBX8YiZDo" resolve="DataItem" />
     <node concept="2Sbjvc" id="2JYumEA$$Da" role="2ZfgGD">
@@ -249,7 +249,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvpY3" role="2tJFKM">
-                  <ref role="2aWVGs" node="2JYumEA$$D9" resolve="addChildren" />
+                  <ref role="2aWVGs" node="2JYumEA$$D9" resolve="AddChildren" />
                 </node>
               </node>
             </node>
@@ -395,7 +395,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQlHF1" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvpOW" role="2tJFKM">
-                  <ref role="2aWVGs" node="2JYumEA$$D9" resolve="addChildren" />
+                  <ref role="2aWVGs" node="2JYumEA$$D9" resolve="AddChildren" />
                 </node>
               </node>
             </node>
@@ -426,7 +426,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvpT7" role="2tJFKM">
-                  <ref role="2aWVGs" node="2JYumEA$$D9" resolve="addChildren" />
+                  <ref role="2aWVGs" node="2JYumEA$$D9" resolve="AddChildren" />
                 </node>
               </node>
             </node>
@@ -466,7 +466,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQCViv" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQCViw" role="2tJFKM">
-                  <ref role="2aWVGs" node="2JYumEA$$D9" resolve="addChildren" />
+                  <ref role="2aWVGs" node="2JYumEA$$D9" resolve="AddChildren" />
                 </node>
               </node>
             </node>
@@ -490,7 +490,7 @@
   </node>
   <node concept="2S6QgY" id="2JYumEAEiAg">
     <property role="3GE5qa" value="data" />
-    <property role="TrG5h" value="addConstraintForDataItem" />
+    <property role="TrG5h" value="AddConstraintForDataItem" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="874t:6LfBX8YiZDo" resolve="DataItem" />
     <node concept="2Sbjvc" id="2JYumEAEiAh" role="2ZfgGD">
@@ -502,7 +502,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrXhD" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvsnA" role="2tJFKM">
-                  <ref role="2aWVGs" node="2JYumEAEiAg" resolve="addConstraintForDataItem" />
+                  <ref role="2aWVGs" node="2JYumEAEiAg" resolve="AddConstraintForDataItem" />
                 </node>
               </node>
             </node>
@@ -539,7 +539,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQlIlp" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvsff" role="2tJFKM">
-                  <ref role="2aWVGs" node="2JYumEAEiAg" resolve="addConstraintForDataItem" />
+                  <ref role="2aWVGs" node="2JYumEAEiAg" resolve="AddConstraintForDataItem" />
                 </node>
               </node>
             </node>
@@ -573,7 +573,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoQkG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvsjo" role="2tJFKM">
-                  <ref role="2aWVGs" node="2JYumEAEiAg" resolve="addConstraintForDataItem" />
+                  <ref role="2aWVGs" node="2JYumEAEiAg" resolve="AddConstraintForDataItem" />
                 </node>
               </node>
             </node>
@@ -610,7 +610,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQCVSx" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQCVSy" role="2tJFKM">
-                  <ref role="2aWVGs" node="2JYumEAEiAg" resolve="addConstraintForDataItem" />
+                  <ref role="2aWVGs" node="2JYumEAEiAg" resolve="AddConstraintForDataItem" />
                 </node>
               </node>
             </node>
@@ -634,7 +634,7 @@
   </node>
   <node concept="2S6QgY" id="7NJy08a38ZP">
     <property role="3GE5qa" value="data" />
-    <property role="TrG5h" value="addConstraintForPortType" />
+    <property role="TrG5h" value="AddConstraintForPortType" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="874t:6LfBX8YiZFy" resolve="DataItemPortType" />
     <node concept="2S6ZIM" id="7NJy08a38ZQ" role="2ZfVej">
@@ -646,7 +646,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQlIVr" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvtnY" role="2tJFKM">
-                  <ref role="2aWVGs" node="7NJy08a38ZP" resolve="addConstraintForPortType" />
+                  <ref role="2aWVGs" node="7NJy08a38ZP" resolve="AddConstraintForPortType" />
                 </node>
               </node>
             </node>
@@ -677,7 +677,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrXQT" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvtwl" role="2tJFKM">
-                  <ref role="2aWVGs" node="7NJy08a38ZP" resolve="addConstraintForPortType" />
+                  <ref role="2aWVGs" node="7NJy08a38ZP" resolve="AddConstraintForPortType" />
                 </node>
               </node>
             </node>
@@ -717,7 +717,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoQPZ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvts7" role="2tJFKM">
-                  <ref role="2aWVGs" node="7NJy08a38ZP" resolve="addConstraintForPortType" />
+                  <ref role="2aWVGs" node="7NJy08a38ZP" resolve="AddConstraintForPortType" />
                 </node>
               </node>
             </node>
@@ -754,7 +754,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQCWwm" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQCWwn" role="2tJFKM">
-                  <ref role="2aWVGs" node="7NJy08a38ZP" resolve="addConstraintForPortType" />
+                  <ref role="2aWVGs" node="7NJy08a38ZP" resolve="AddConstraintForPortType" />
                 </node>
               </node>
             </node>
@@ -778,7 +778,7 @@
   </node>
   <node concept="2S6QgY" id="6rGLT0Th1Am">
     <property role="3GE5qa" value="data" />
-    <property role="TrG5h" value="deriveNewDataItem" />
+    <property role="TrG5h" value="DeriveNewDataItem" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="874t:6LfBX8YiZFy" resolve="DataItemPortType" />
     <node concept="2S6ZIM" id="6rGLT0Th1An" role="2ZfVej">
@@ -790,7 +790,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQlLa0" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvyrU" role="2tJFKM">
-                  <ref role="2aWVGs" node="6rGLT0Th1Am" resolve="deriveNewDataItem" />
+                  <ref role="2aWVGs" node="6rGLT0Th1Am" resolve="DeriveNewDataItem" />
                 </node>
               </node>
             </node>
@@ -821,7 +821,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQs05K" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvy$7" role="2tJFKM">
-                  <ref role="2aWVGs" node="6rGLT0Th1Am" resolve="deriveNewDataItem" />
+                  <ref role="2aWVGs" node="6rGLT0Th1Am" resolve="DeriveNewDataItem" />
                 </node>
               </node>
             </node>
@@ -937,7 +937,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoSRH" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvyw5" role="2tJFKM">
-                  <ref role="2aWVGs" node="6rGLT0Th1Am" resolve="deriveNewDataItem" />
+                  <ref role="2aWVGs" node="6rGLT0Th1Am" resolve="DeriveNewDataItem" />
                 </node>
               </node>
             </node>
@@ -968,7 +968,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQCYYB" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQCYYC" role="2tJFKM">
-                  <ref role="2aWVGs" node="6rGLT0Th1Am" resolve="deriveNewDataItem" />
+                  <ref role="2aWVGs" node="6rGLT0Th1Am" resolve="DeriveNewDataItem" />
                 </node>
               </node>
             </node>
@@ -1196,7 +1196,7 @@
   </node>
   <node concept="2S6QgY" id="5mAeI2odISC">
     <property role="3GE5qa" value="contract" />
-    <property role="TrG5h" value="addContract" />
+    <property role="TrG5h" value="AddContract" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="874t:5mAeI2odIae" resolve="IContractOwner" />
     <node concept="2S6ZIM" id="5mAeI2odISD" role="2ZfVej">
@@ -1208,7 +1208,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQlJPm" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvvjB" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2odISC" resolve="addContract" />
+                  <ref role="2aWVGs" node="5mAeI2odISC" resolve="AddContract" />
                 </node>
               </node>
             </node>
@@ -1239,7 +1239,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrYOo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvvrK" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2odISC" resolve="addContract" />
+                  <ref role="2aWVGs" node="5mAeI2odISC" resolve="AddContract" />
                 </node>
               </node>
             </node>
@@ -1279,7 +1279,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoRED" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvvnK" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2odISC" resolve="addContract" />
+                  <ref role="2aWVGs" node="5mAeI2odISC" resolve="AddContract" />
                 </node>
               </node>
             </node>
@@ -1310,7 +1310,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQCXwu" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQCXwv" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2odISC" resolve="addContract" />
+                  <ref role="2aWVGs" node="5mAeI2odISC" resolve="AddContract" />
                 </node>
               </node>
             </node>
@@ -1336,7 +1336,7 @@
   </node>
   <node concept="2S6QgY" id="5mAeI2olVNO">
     <property role="3GE5qa" value="contract" />
-    <property role="TrG5h" value="addContractData" />
+    <property role="TrG5h" value="AddContractData" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="874t:5mAeI2okDtp" resolve="IContractContext" />
     <node concept="2S6ZIM" id="5mAeI2olVNP" role="2ZfVej">
@@ -1348,7 +1348,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQlKq$" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvx0V" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2olVNO" resolve="addContractData" />
+                  <ref role="2aWVGs" node="5mAeI2olVNO" resolve="AddContractData" />
                 </node>
               </node>
             </node>
@@ -1379,7 +1379,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrZoe" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvx9i" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2olVNO" resolve="addContractData" />
+                  <ref role="2aWVGs" node="5mAeI2olVNO" resolve="AddContractData" />
                 </node>
               </node>
             </node>
@@ -1419,7 +1419,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoSib" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvx54" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2olVNO" resolve="addContractData" />
+                  <ref role="2aWVGs" node="5mAeI2olVNO" resolve="AddContractData" />
                 </node>
               </node>
             </node>
@@ -1456,7 +1456,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQCYbv" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQCYbw" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2olVNO" resolve="addContractData" />
+                  <ref role="2aWVGs" node="5mAeI2olVNO" resolve="AddContractData" />
                 </node>
               </node>
             </node>
@@ -1480,7 +1480,7 @@
   </node>
   <node concept="2S6QgY" id="5mAeI2oriQ8">
     <property role="3GE5qa" value="contract.data" />
-    <property role="TrG5h" value="toggleInit" />
+    <property role="TrG5h" value="ToggleInit" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="874t:5mAeI2olUzQ" resolve="ProtocolState" />
     <node concept="2S6ZIM" id="5mAeI2oriQ9" role="2ZfVej">
@@ -1492,7 +1492,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQlL_G" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQvzXt" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2oriQ8" resolve="toggleInit" />
+                  <ref role="2aWVGs" node="5mAeI2oriQ8" resolve="ToggleInit" />
                 </node>
               </node>
             </node>
@@ -1523,7 +1523,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQs0V6" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQv$5A" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2oriQ8" resolve="toggleInit" />
+                  <ref role="2aWVGs" node="5mAeI2oriQ8" resolve="ToggleInit" />
                 </node>
               </node>
             </node>
@@ -1567,7 +1567,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoTMh" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQv$1A" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2oriQ8" resolve="toggleInit" />
+                  <ref role="2aWVGs" node="5mAeI2oriQ8" resolve="ToggleInit" />
                 </node>
               </node>
             </node>
@@ -1598,7 +1598,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQCZxO" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQCZxP" role="2tJFKM">
-                  <ref role="2aWVGs" node="5mAeI2oriQ8" resolve="toggleInit" />
+                  <ref role="2aWVGs" node="5mAeI2oriQ8" resolve="ToggleInit" />
                 </node>
               </node>
             </node>

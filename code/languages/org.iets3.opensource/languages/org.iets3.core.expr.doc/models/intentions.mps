@@ -193,7 +193,7 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="1sudaVNqnA8">
-    <property role="TrG5h" value="CellScreenshot" />
+    <property role="TrG5h" value="CreateCellScreenshot" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="34lm:1sudaVNmXYu" resolve="Frame" />
     <node concept="2S6ZIM" id="1sudaVNqnA9" role="2ZfVej">
@@ -205,7 +205,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmjBx" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwSnO" role="2tJFKM">
-                  <ref role="2aWVGs" node="1sudaVNqnA8" resolve="CellScreenshot" />
+                  <ref role="2aWVGs" node="1sudaVNqnA8" resolve="CreateCellScreenshot" />
                 </node>
               </node>
             </node>
@@ -236,7 +236,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsyHB" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwSvX" role="2tJFKM">
-                  <ref role="2aWVGs" node="1sudaVNqnA8" resolve="CellScreenshot" />
+                  <ref role="2aWVGs" node="1sudaVNqnA8" resolve="CreateCellScreenshot" />
                 </node>
               </node>
             </node>
@@ -273,7 +273,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpssJ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwSrX" role="2tJFKM">
-                  <ref role="2aWVGs" node="1sudaVNqnA8" resolve="CellScreenshot" />
+                  <ref role="2aWVGs" node="1sudaVNqnA8" resolve="CreateCellScreenshot" />
                 </node>
               </node>
             </node>
@@ -304,7 +304,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDzfd" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDzfe" role="2tJFKM">
-                  <ref role="2aWVGs" node="1sudaVNqnA8" resolve="CellScreenshot" />
+                  <ref role="2aWVGs" node="1sudaVNqnA8" resolve="CreateCellScreenshot" />
                 </node>
               </node>
             </node>
@@ -492,7 +492,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="2c2AzQdcetl">
-    <property role="TrG5h" value="DuplicateInPar" />
+    <property role="TrG5h" value="DuplicateInParallel" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="34lm:1sudaVNmXYu" resolve="Frame" />
     <node concept="2S6ZIM" id="2c2AzQdcetm" role="2ZfVej">
@@ -504,7 +504,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmm7R" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwXk3" role="2tJFKM">
-                  <ref role="2aWVGs" node="2c2AzQdcetl" resolve="DuplicateInPar" />
+                  <ref role="2aWVGs" node="2c2AzQdcetl" resolve="DuplicateInParallel" />
                 </node>
               </node>
             </node>
@@ -535,7 +535,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQs_fS" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwXwS" role="2tJFKM">
-                  <ref role="2aWVGs" node="2c2AzQdcetl" resolve="DuplicateInPar" />
+                  <ref role="2aWVGs" node="2c2AzQdcetl" resolve="DuplicateInParallel" />
                 </node>
               </node>
             </node>
@@ -698,7 +698,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpuNN" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwXpi" role="2tJFKM">
-                  <ref role="2aWVGs" node="2c2AzQdcetl" resolve="DuplicateInPar" />
+                  <ref role="2aWVGs" node="2c2AzQdcetl" resolve="DuplicateInParallel" />
                 </node>
               </node>
             </node>
@@ -763,7 +763,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQD_ND" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQD_NE" role="2tJFKM">
-                  <ref role="2aWVGs" node="2c2AzQdcetl" resolve="DuplicateInPar" />
+                  <ref role="2aWVGs" node="2c2AzQdcetl" resolve="DuplicateInParallel" />
                 </node>
               </node>
             </node>
@@ -786,7 +786,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="5AlTalNHBaS">
-    <property role="TrG5h" value="DeletePar" />
+    <property role="TrG5h" value="DeleteParallelFrames" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="34lm:1sudaVNmXYu" resolve="Frame" />
     <node concept="2S6ZIM" id="5AlTalNHBaT" role="2ZfVej">
@@ -798,7 +798,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmkLS" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwU_G" role="2tJFKM">
-                  <ref role="2aWVGs" node="5AlTalNHBaS" resolve="DeletePar" />
+                  <ref role="2aWVGs" node="5AlTalNHBaS" resolve="DeleteParallelFrames" />
                 </node>
               </node>
             </node>
@@ -829,7 +829,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQszQg" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwULk" role="2tJFKM">
-                  <ref role="2aWVGs" node="5AlTalNHBaS" resolve="DeletePar" />
+                  <ref role="2aWVGs" node="5AlTalNHBaS" resolve="DeleteParallelFrames" />
                 </node>
               </node>
             </node>
@@ -931,7 +931,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpttF" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwUEo" role="2tJFKM">
-                  <ref role="2aWVGs" node="5AlTalNHBaS" resolve="DeletePar" />
+                  <ref role="2aWVGs" node="5AlTalNHBaS" resolve="DeleteParallelFrames" />
                 </node>
               </node>
             </node>
@@ -994,7 +994,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQD$qU" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQD$qV" role="2tJFKM">
-                  <ref role="2aWVGs" node="5AlTalNHBaS" resolve="DeletePar" />
+                  <ref role="2aWVGs" node="5AlTalNHBaS" resolve="DeleteParallelFrames" />
                 </node>
               </node>
             </node>
@@ -1017,7 +1017,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="NE1gl52BOD">
-    <property role="TrG5h" value="AddDDD" />
+    <property role="TrG5h" value="AddDotDotDot" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="NE1gl52BOE" role="2ZfVej">
@@ -1029,7 +1029,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmhfF" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwN5y" role="2tJFKM">
-                  <ref role="2aWVGs" node="NE1gl52BOD" resolve="AddDDD" />
+                  <ref role="2aWVGs" node="NE1gl52BOD" resolve="AddDotDotDot" />
                 </node>
               </node>
             </node>
@@ -1060,7 +1060,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwNoa" role="2tJFKM">
-                  <ref role="2aWVGs" node="NE1gl52BOD" resolve="AddDDD" />
+                  <ref role="2aWVGs" node="NE1gl52BOD" resolve="AddDotDotDot" />
                 </node>
               </node>
             </node>
@@ -1099,7 +1099,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwNfH" role="2tJFKM">
-                  <ref role="2aWVGs" node="NE1gl52BOD" resolve="AddDDD" />
+                  <ref role="2aWVGs" node="NE1gl52BOD" resolve="AddDotDotDot" />
                 </node>
               </node>
             </node>
@@ -1141,7 +1141,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDvSU" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDvSV" role="2tJFKM">
-                  <ref role="2aWVGs" node="NE1gl52BOD" resolve="AddDDD" />
+                  <ref role="2aWVGs" node="NE1gl52BOD" resolve="AddDotDotDot" />
                 </node>
               </node>
             </node>

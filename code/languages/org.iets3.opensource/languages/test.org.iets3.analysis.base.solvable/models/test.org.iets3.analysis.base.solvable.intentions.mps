@@ -97,7 +97,7 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="1fRru3DvxU$">
-    <property role="TrG5h" value="runSolver" />
+    <property role="TrG5h" value="RunSolver" />
     <property role="3GE5qa" value="test.highlighter" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="6w03:1fRru3DubfE" resolve="UITestSolvable" />
@@ -110,7 +110,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoDvZ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQBCyP" role="2tJFKM">
-                  <ref role="2aWVGs" node="1fRru3DvxU$" resolve="runSolver" />
+                  <ref role="2aWVGs" node="1fRru3DvxU$" resolve="RunSolver" />
                 </node>
               </node>
             </node>
@@ -141,7 +141,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQBCQQ" role="2tJFKM">
-                  <ref role="2aWVGs" node="1fRru3DvxU$" resolve="runSolver" />
+                  <ref role="2aWVGs" node="1fRru3DvxU$" resolve="RunSolver" />
                 </node>
               </node>
             </node>
@@ -175,7 +175,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQBCIt" role="2tJFKM">
-                  <ref role="2aWVGs" node="1fRru3DvxU$" resolve="runSolver" />
+                  <ref role="2aWVGs" node="1fRru3DvxU$" resolve="RunSolver" />
                 </node>
               </node>
             </node>
@@ -206,7 +206,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQFYuQ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQFYuR" role="2tJFKM">
-                  <ref role="2aWVGs" node="1fRru3DvxU$" resolve="runSolver" />
+                  <ref role="2aWVGs" node="1fRru3DvxU$" resolve="RunSolver" />
                 </node>
               </node>
             </node>

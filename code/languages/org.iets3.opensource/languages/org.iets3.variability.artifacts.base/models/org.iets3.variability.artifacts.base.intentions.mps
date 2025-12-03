@@ -275,7 +275,7 @@
     </language>
   </registry>
   <node concept="3dkpOd" id="4zfp5i3C5Fw">
-    <property role="TrG5h" value="evaluateForConfig" />
+    <property role="TrG5h" value="EvaluateForConfig" />
     <property role="2ZfUl0" value="true" />
     <property role="3GE5qa" value="dectab" />
     <ref role="2ZfgGC" to="i9mv:2RwPr82fkuF" resolve="FeatureDecTab" />
@@ -288,7 +288,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnK8r" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_9_h" role="2tJFKM">
-                  <ref role="2aWVGs" node="4zfp5i3C5Fw" resolve="evaluateForConfig" />
+                  <ref role="2aWVGs" node="4zfp5i3C5Fw" resolve="EvaluateForConfig" />
                 </node>
               </node>
             </node>
@@ -337,7 +337,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQu4E6" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_a30" role="2tJFKM">
-                  <ref role="2aWVGs" node="4zfp5i3C5Fw" resolve="evaluateForConfig" />
+                  <ref role="2aWVGs" node="4zfp5i3C5Fw" resolve="EvaluateForConfig" />
                 </node>
               </node>
             </node>
@@ -546,7 +546,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqTgI" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_9Pn" role="2tJFKM">
-                  <ref role="2aWVGs" node="4zfp5i3C5Fw" resolve="evaluateForConfig" />
+                  <ref role="2aWVGs" node="4zfp5i3C5Fw" resolve="EvaluateForConfig" />
                 </node>
               </node>
             </node>
@@ -580,7 +580,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQF5Wv" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQF5Ww" role="2tJFKM">
-                  <ref role="2aWVGs" node="4zfp5i3C5Fw" resolve="evaluateForConfig" />
+                  <ref role="2aWVGs" node="4zfp5i3C5Fw" resolve="EvaluateForConfig" />
                 </node>
               </node>
             </node>
@@ -606,7 +606,7 @@
   </node>
   <node concept="2S6QgY" id="41y0QLz1iff">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="evaluate" />
+    <property role="TrG5h" value="Evaluate" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="i9mv:2RwPr82fkuF" resolve="FeatureDecTab" />
     <node concept="2S6ZIM" id="41y0QLz1ifg" role="2ZfVej">
@@ -618,7 +618,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnHGh" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_5i0" role="2tJFKM">
-                  <ref role="2aWVGs" node="41y0QLz1iff" resolve="evaluate" />
+                  <ref role="2aWVGs" node="41y0QLz1iff" resolve="Evaluate" />
                 </node>
               </node>
             </node>
@@ -649,7 +649,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_5HP" role="2tJFKM">
-                  <ref role="2aWVGs" node="41y0QLz1iff" resolve="evaluate" />
+                  <ref role="2aWVGs" node="41y0QLz1iff" resolve="Evaluate" />
                 </node>
               </node>
             </node>
@@ -789,7 +789,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_5rR" role="2tJFKM">
-                  <ref role="2aWVGs" node="41y0QLz1iff" resolve="evaluate" />
+                  <ref role="2aWVGs" node="41y0QLz1iff" resolve="Evaluate" />
                 </node>
               </node>
             </node>
@@ -820,7 +820,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQF3xw" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQF3xx" role="2tJFKM">
-                  <ref role="2aWVGs" node="41y0QLz1iff" resolve="evaluate" />
+                  <ref role="2aWVGs" node="41y0QLz1iff" resolve="Evaluate" />
                 </node>
               </node>
             </node>
@@ -845,7 +845,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6uUH1hLca6B">
-    <property role="TrG5h" value="forceFDTCheck" />
+    <property role="TrG5h" value="ForceFeatureDecTabCheck" />
     <property role="3GE5qa" value="dectab" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="i9mv:2RwPr82fkuF" resolve="FeatureDecTab" />
@@ -858,7 +858,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnMu_" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_kgH" role="2tJFKM">
-                  <ref role="2aWVGs" node="6uUH1hLca6B" resolve="forceFDTCheck" />
+                  <ref role="2aWVGs" node="6uUH1hLca6B" resolve="ForceFeatureDecTabCheck" />
                 </node>
               </node>
             </node>
@@ -889,7 +889,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQu7hG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_kMQ" role="2tJFKM">
-                  <ref role="2aWVGs" node="6uUH1hLca6B" resolve="forceFDTCheck" />
+                  <ref role="2aWVGs" node="6uUH1hLca6B" resolve="ForceFeatureDecTabCheck" />
                 </node>
               </node>
             </node>
@@ -1123,7 +1123,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqWqx" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_kxQ" role="2tJFKM">
-                  <ref role="2aWVGs" node="6uUH1hLca6B" resolve="forceFDTCheck" />
+                  <ref role="2aWVGs" node="6uUH1hLca6B" resolve="ForceFeatureDecTabCheck" />
                 </node>
               </node>
             </node>
@@ -1154,7 +1154,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQF8xk" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQF8xl" role="2tJFKM">
-                  <ref role="2aWVGs" node="6uUH1hLca6B" resolve="forceFDTCheck" />
+                  <ref role="2aWVGs" node="6uUH1hLca6B" resolve="ForceFeatureDecTabCheck" />
                 </node>
               </node>
             </node>
@@ -1179,7 +1179,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="3nzq23wxeDE">
-    <property role="TrG5h" value="stopConfigurationPreviewChild" />
+    <property role="TrG5h" value="StopConfigurationPreviewChild" />
     <property role="3GE5qa" value="varpoints" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="i9mv:1_gcnzuM43A" resolve="IVariationPointBase" />
@@ -1192,7 +1192,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnNgJ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_n4k" role="2tJFKM">
-                  <ref role="2aWVGs" node="3nzq23wxeDE" resolve="stopConfigurationPreviewChild" />
+                  <ref role="2aWVGs" node="3nzq23wxeDE" resolve="StopConfigurationPreviewChild" />
                 </node>
               </node>
             </node>
@@ -1256,7 +1256,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQu8lC" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_nFk" role="2tJFKM">
-                  <ref role="2aWVGs" node="3nzq23wxeDE" resolve="stopConfigurationPreviewChild" />
+                  <ref role="2aWVGs" node="3nzq23wxeDE" resolve="StopConfigurationPreviewChild" />
                 </node>
               </node>
             </node>
@@ -1293,7 +1293,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqX25" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_nuP" role="2tJFKM">
-                  <ref role="2aWVGs" node="3nzq23wxeDE" resolve="stopConfigurationPreviewChild" />
+                  <ref role="2aWVGs" node="3nzq23wxeDE" resolve="StopConfigurationPreviewChild" />
                 </node>
               </node>
             </node>
@@ -1330,7 +1330,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQF9yo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQF9yp" role="2tJFKM">
-                  <ref role="2aWVGs" node="3nzq23wxeDE" resolve="stopConfigurationPreviewChild" />
+                  <ref role="2aWVGs" node="3nzq23wxeDE" resolve="StopConfigurationPreviewChild" />
                 </node>
               </node>
             </node>
@@ -1355,7 +1355,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="4T8xkIfOit9">
-    <property role="TrG5h" value="forceArtifactCheck" />
+    <property role="TrG5h" value="ForceArtifactCheck" />
     <property role="3GE5qa" value="artifact" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="i9mv:75FdNyOGCTb" resolve="IVariabilityAwareArtifact" />
@@ -1368,7 +1368,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnLyJ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_hBG" role="2tJFKM">
-                  <ref role="2aWVGs" node="4T8xkIfOit9" resolve="forceArtifactCheck" />
+                  <ref role="2aWVGs" node="4T8xkIfOit9" resolve="ForceArtifactCheck" />
                 </node>
               </node>
             </node>
@@ -1399,7 +1399,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQu6gN" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_hJP" role="2tJFKM">
-                  <ref role="2aWVGs" node="4T8xkIfOit9" resolve="forceArtifactCheck" />
+                  <ref role="2aWVGs" node="4T8xkIfOit9" resolve="ForceArtifactCheck" />
                 </node>
               </node>
             </node>
@@ -1474,7 +1474,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqUVU" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_hFP" role="2tJFKM">
-                  <ref role="2aWVGs" node="4T8xkIfOit9" resolve="forceArtifactCheck" />
+                  <ref role="2aWVGs" node="4T8xkIfOit9" resolve="ForceArtifactCheck" />
                 </node>
               </node>
             </node>
@@ -1505,7 +1505,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQF7xj" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQF7xk" role="2tJFKM">
-                  <ref role="2aWVGs" node="4T8xkIfOit9" resolve="forceArtifactCheck" />
+                  <ref role="2aWVGs" node="4T8xkIfOit9" resolve="ForceArtifactCheck" />
                 </node>
               </node>
             </node>
@@ -1528,7 +1528,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="3nzq23wzhrH">
-    <property role="TrG5h" value="stopConfigurationPreviewTop" />
+    <property role="TrG5h" value="StopConfigurationPreviewTop" />
     <property role="3GE5qa" value="artifact" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="i9mv:75FdNyOGCTb" resolve="IVariabilityAwareArtifact" />
@@ -1541,7 +1541,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnO3N" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_pF7" role="2tJFKM">
-                  <ref role="2aWVGs" node="3nzq23wzhrH" resolve="stopConfigurationPreviewTop" />
+                  <ref role="2aWVGs" node="3nzq23wzhrH" resolve="StopConfigurationPreviewTop" />
                 </node>
               </node>
             </node>
@@ -1610,7 +1610,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQu90A" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_q4C" role="2tJFKM">
-                  <ref role="2aWVGs" node="3nzq23wzhrH" resolve="stopConfigurationPreviewTop" />
+                  <ref role="2aWVGs" node="3nzq23wzhrH" resolve="StopConfigurationPreviewTop" />
                 </node>
               </node>
             </node>
@@ -1646,7 +1646,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqXEk" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_pLk" role="2tJFKM">
-                  <ref role="2aWVGs" node="3nzq23wzhrH" resolve="stopConfigurationPreviewTop" />
+                  <ref role="2aWVGs" node="3nzq23wzhrH" resolve="StopConfigurationPreviewTop" />
                 </node>
               </node>
             </node>
@@ -1683,7 +1683,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQFadg" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQFadh" role="2tJFKM">
-                  <ref role="2aWVGs" node="3nzq23wzhrH" resolve="stopConfigurationPreviewTop" />
+                  <ref role="2aWVGs" node="3nzq23wzhrH" resolve="StopConfigurationPreviewTop" />
                 </node>
               </node>
             </node>
@@ -1707,7 +1707,7 @@
   </node>
   <node concept="2S6QgY" id="5U033OfAGOx">
     <property role="3GE5qa" value="artifact" />
-    <property role="TrG5h" value="fixReferencesToIVAA" />
+    <property role="TrG5h" value="FixReferencesToIVariabilityAwareArtifact" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="i9mv:75FdNyOGCTb" resolve="IVariabilityAwareArtifact" />
     <node concept="2XrIbr" id="5U033OfIirO" role="32lrUH">
@@ -1782,7 +1782,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnL2N" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_fxb" role="2tJFKM">
-                  <ref role="2aWVGs" node="5U033OfAGOx" resolve="fixReferencesToIVAA" />
+                  <ref role="2aWVGs" node="5U033OfAGOx" resolve="FixReferencesToIVariabilityAwareArtifact" />
                 </node>
               </node>
             </node>
@@ -1828,7 +1828,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQu5Hm" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_fGw" role="2tJFKM">
-                  <ref role="2aWVGs" node="5U033OfAGOx" resolve="fixReferencesToIVAA" />
+                  <ref role="2aWVGs" node="5U033OfAGOx" resolve="FixReferencesToIVariabilityAwareArtifact" />
                 </node>
               </node>
             </node>
@@ -1888,7 +1888,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqTZV" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ_fAZ" role="2tJFKM">
-                  <ref role="2aWVGs" node="5U033OfAGOx" resolve="fixReferencesToIVAA" />
+                  <ref role="2aWVGs" node="5U033OfAGOx" resolve="FixReferencesToIVariabilityAwareArtifact" />
                 </node>
               </node>
             </node>
@@ -1929,7 +1929,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQF6X4" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQF6X5" role="2tJFKM">
-                  <ref role="2aWVGs" node="5U033OfAGOx" resolve="fixReferencesToIVAA" />
+                  <ref role="2aWVGs" node="5U033OfAGOx" resolve="FixReferencesToIVariabilityAwareArtifact" />
                 </node>
               </node>
             </node>

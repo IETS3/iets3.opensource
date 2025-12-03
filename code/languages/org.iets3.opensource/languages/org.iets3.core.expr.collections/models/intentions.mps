@@ -198,7 +198,7 @@
   </registry>
   <node concept="2S6QgY" id="6MNhNeUcN7U">
     <property role="3GE5qa" value="collection" />
-    <property role="TrG5h" value="negateConditionForAll" />
+    <property role="TrG5h" value="NegateConditionForAll" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="700h:7GwCuf2RfRi" resolve="AllOp" />
     <node concept="2S6ZIM" id="6MNhNeUcN7V" role="2ZfVej">
@@ -210,7 +210,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmcqd" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQw_vO" role="2tJFKM">
-                  <ref role="2aWVGs" node="6MNhNeUcN7U" resolve="negateConditionForAll" />
+                  <ref role="2aWVGs" node="6MNhNeUcN7U" resolve="NegateConditionForAll" />
                 </node>
               </node>
             </node>
@@ -241,7 +241,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsr1T" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQw_C3" role="2tJFKM">
-                  <ref role="2aWVGs" node="6MNhNeUcN7U" resolve="negateConditionForAll" />
+                  <ref role="2aWVGs" node="6MNhNeUcN7U" resolve="NegateConditionForAll" />
                 </node>
               </node>
             </node>
@@ -505,7 +505,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpi_6" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQw_$0" role="2tJFKM">
-                  <ref role="2aWVGs" node="6MNhNeUcN7U" resolve="negateConditionForAll" />
+                  <ref role="2aWVGs" node="6MNhNeUcN7U" resolve="NegateConditionForAll" />
                 </node>
               </node>
             </node>
@@ -536,7 +536,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDqLG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDqLH" role="2tJFKM">
-                  <ref role="2aWVGs" node="6MNhNeUcN7U" resolve="negateConditionForAll" />
+                  <ref role="2aWVGs" node="6MNhNeUcN7U" resolve="NegateConditionForAll" />
                 </node>
               </node>
             </node>
@@ -560,7 +560,7 @@
   </node>
   <node concept="2S6QgY" id="6MNhNeUdtcY">
     <property role="3GE5qa" value="collection" />
-    <property role="TrG5h" value="negateConditionForAny" />
+    <property role="TrG5h" value="NegateConditionForAny" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="700h:7GwCuf2Fanr" resolve="AnyOp" />
     <node concept="2S6ZIM" id="6MNhNeUdtcZ" role="2ZfVej">
@@ -572,7 +572,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmddZ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwBCp" role="2tJFKM">
-                  <ref role="2aWVGs" node="6MNhNeUdtcY" resolve="negateConditionForAny" />
+                  <ref role="2aWVGs" node="6MNhNeUdtcY" resolve="NegateConditionForAny" />
                 </node>
               </node>
             </node>
@@ -603,7 +603,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsrOk" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwBKC" role="2tJFKM">
-                  <ref role="2aWVGs" node="6MNhNeUdtcY" resolve="negateConditionForAny" />
+                  <ref role="2aWVGs" node="6MNhNeUdtcY" resolve="NegateConditionForAny" />
                 </node>
               </node>
             </node>
@@ -867,7 +867,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpj$6" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwBG_" role="2tJFKM">
-                  <ref role="2aWVGs" node="6MNhNeUdtcY" resolve="negateConditionForAny" />
+                  <ref role="2aWVGs" node="6MNhNeUdtcY" resolve="NegateConditionForAny" />
                 </node>
               </node>
             </node>
@@ -898,7 +898,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDry$" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDry_" role="2tJFKM">
-                  <ref role="2aWVGs" node="6MNhNeUdtcY" resolve="negateConditionForAny" />
+                  <ref role="2aWVGs" node="6MNhNeUdtcY" resolve="NegateConditionForAny" />
                 </node>
               </node>
             </node>
@@ -922,7 +922,7 @@
   </node>
   <node concept="2S6QgY" id="1mDdTH2QCn">
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="addBrackets" />
+    <property role="TrG5h" value="AddBrackets" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="1mDdTH2QCo" role="2ZfVej">
@@ -934,7 +934,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmbAr" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQw$7u" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mDdTH2QCn" resolve="addBrackets" />
+                  <ref role="2aWVGs" node="1mDdTH2QCn" resolve="AddBrackets" />
                 </node>
               </node>
             </node>
@@ -965,7 +965,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQw$g_" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mDdTH2QCn" resolve="addBrackets" />
+                  <ref role="2aWVGs" node="1mDdTH2QCn" resolve="AddBrackets" />
                 </node>
               </node>
             </node>
@@ -1029,7 +1029,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQw$bD" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mDdTH2QCn" resolve="addBrackets" />
+                  <ref role="2aWVGs" node="1mDdTH2QCn" resolve="AddBrackets" />
                 </node>
               </node>
             </node>
@@ -1081,7 +1081,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDpRj" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDpRk" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mDdTH2QCn" resolve="addBrackets" />
+                  <ref role="2aWVGs" node="1mDdTH2QCn" resolve="AddBrackets" />
                 </node>
               </node>
             </node>
@@ -1105,7 +1105,7 @@
   </node>
   <node concept="2S6QgY" id="65S0ZNFKldA">
     <property role="3GE5qa" value="collection" />
-    <property role="TrG5h" value="toggleCollectionSizeHexMaxValue" />
+    <property role="TrG5h" value="ToggleCollectionSizeHexMaxValue" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
     <node concept="2S6ZIM" id="65S0ZNFKldB" role="2ZfVej">
@@ -1117,7 +1117,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmdZF" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwDVF" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="toggleCollectionSizeHexMaxValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="ToggleCollectionSizeHexMaxValue" />
                 </node>
               </node>
             </node>
@@ -1163,7 +1163,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQssDc" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwE3z" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="toggleCollectionSizeHexMaxValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="ToggleCollectionSizeHexMaxValue" />
                 </node>
               </node>
             </node>
@@ -1207,7 +1207,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpkge" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwE0p" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="toggleCollectionSizeHexMaxValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="ToggleCollectionSizeHexMaxValue" />
                 </node>
               </node>
             </node>
@@ -1291,7 +1291,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDslR" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDslS" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="toggleCollectionSizeHexMaxValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKldA" resolve="ToggleCollectionSizeHexMaxValue" />
                 </node>
               </node>
             </node>
@@ -1315,7 +1315,7 @@
   </node>
   <node concept="2S6QgY" id="65S0ZNFKbuT">
     <property role="3GE5qa" value="collection" />
-    <property role="TrG5h" value="toggleCollectionSizeHexMinValue" />
+    <property role="TrG5h" value="ToggleCollectionSizeHexMinValue" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
     <node concept="2S6ZIM" id="65S0ZNFKbuU" role="2ZfVej">
@@ -1327,7 +1327,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmeFF" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwG3g" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="toggleCollectionSizeHexMinValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="ToggleCollectionSizeHexMinValue" />
                 </node>
               </node>
             </node>
@@ -1373,7 +1373,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQstic" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwGuQ" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="toggleCollectionSizeHexMinValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="ToggleCollectionSizeHexMinValue" />
                 </node>
               </node>
             </node>
@@ -1417,7 +1417,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpkSh" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQwG7Y" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="toggleCollectionSizeHexMinValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="ToggleCollectionSizeHexMinValue" />
                 </node>
               </node>
             </node>
@@ -1501,7 +1501,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDt4o" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDt4p" role="2tJFKM">
-                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="toggleCollectionSizeHexMinValue" />
+                  <ref role="2aWVGs" node="65S0ZNFKbuT" resolve="ToggleCollectionSizeHexMinValue" />
                 </node>
               </node>
             </node>

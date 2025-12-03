@@ -110,7 +110,7 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="1u1U5lETVmG">
-    <property role="TrG5h" value="addSyntax" />
+    <property role="TrG5h" value="AddNaturalLanguageSyntax" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
     <node concept="2S6ZIM" id="1u1U5lETVmH" role="2ZfVej">
@@ -122,7 +122,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmsX3" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxiS8" role="2tJFKM">
-                  <ref role="2aWVGs" node="1u1U5lETVmG" resolve="addSyntax" />
+                  <ref role="2aWVGs" node="1u1U5lETVmG" resolve="AddNaturalLanguageSyntax" />
                 </node>
               </node>
             </node>
@@ -153,7 +153,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxjlO" role="2tJFKM">
-                  <ref role="2aWVGs" node="1u1U5lETVmG" resolve="addSyntax" />
+                  <ref role="2aWVGs" node="1u1U5lETVmG" resolve="AddNaturalLanguageSyntax" />
                 </node>
               </node>
             </node>
@@ -192,7 +192,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxj2u" role="2tJFKM">
-                  <ref role="2aWVGs" node="1u1U5lETVmG" resolve="addSyntax" />
+                  <ref role="2aWVGs" node="1u1U5lETVmG" resolve="AddNaturalLanguageSyntax" />
                 </node>
               </node>
             </node>
@@ -242,7 +242,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDH4_" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDH4A" role="2tJFKM">
-                  <ref role="2aWVGs" node="1u1U5lETVmG" resolve="addSyntax" />
+                  <ref role="2aWVGs" node="1u1U5lETVmG" resolve="AddNaturalLanguageSyntax" />
                 </node>
               </node>
             </node>

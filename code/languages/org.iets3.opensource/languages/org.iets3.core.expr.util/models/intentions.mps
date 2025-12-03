@@ -362,7 +362,7 @@
   </registry>
   <node concept="2S6QgY" id="3DYDRw0NQ1s">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="addDefault" />
+    <property role="TrG5h" value="AddDefault" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
     <node concept="2S6ZIM" id="3DYDRw0NQ1t" role="2ZfVej">
@@ -374,7 +374,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnmeF" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzRxE" role="2tJFKM">
-                  <ref role="2aWVGs" node="3DYDRw0NQ1s" resolve="addDefault" />
+                  <ref role="2aWVGs" node="3DYDRw0NQ1s" resolve="AddDefault" />
                 </node>
               </node>
             </node>
@@ -405,7 +405,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtC9F" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzRE4" role="2tJFKM">
-                  <ref role="2aWVGs" node="3DYDRw0NQ1s" resolve="addDefault" />
+                  <ref role="2aWVGs" node="3DYDRw0NQ1s" resolve="AddDefault" />
                 </node>
               </node>
             </node>
@@ -445,7 +445,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqubI" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzR_N" role="2tJFKM">
-                  <ref role="2aWVGs" node="3DYDRw0NQ1s" resolve="addDefault" />
+                  <ref role="2aWVGs" node="3DYDRw0NQ1s" resolve="AddDefault" />
                 </node>
               </node>
             </node>
@@ -482,7 +482,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEELy" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEELz" role="2tJFKM">
-                  <ref role="2aWVGs" node="3DYDRw0NQ1s" resolve="addDefault" />
+                  <ref role="2aWVGs" node="3DYDRw0NQ1s" resolve="AddDefault" />
                 </node>
               </node>
             </node>
@@ -508,7 +508,7 @@
   </node>
   <node concept="2S6QgY" id="2vr5lQPWfy2">
     <property role="3GE5qa" value="dectree" />
-    <property role="TrG5h" value="toggleOrientation" />
+    <property role="TrG5h" value="ToggleOrientation" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:22hm_0$b7cv" resolve="DecTree" />
     <node concept="2S6ZIM" id="2vr5lQPWfy3" role="2ZfVej">
@@ -520,7 +520,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQn$kr" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$Fxh" role="2tJFKM">
-                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="toggleOrientation" />
+                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleOrientation" />
                 </node>
               </node>
             </node>
@@ -551,7 +551,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtRVB" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$FNR" role="2tJFKM">
-                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="toggleOrientation" />
+                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleOrientation" />
                 </node>
               </node>
             </node>
@@ -598,7 +598,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqHmv" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$FFu" role="2tJFKM">
-                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="toggleOrientation" />
+                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleOrientation" />
                 </node>
               </node>
             </node>
@@ -629,7 +629,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEU0B" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEU0C" role="2tJFKM">
-                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="toggleOrientation" />
+                  <ref role="2aWVGs" node="2vr5lQPWfy2" resolve="ToggleOrientation" />
                 </node>
               </node>
             </node>
@@ -655,7 +655,7 @@
   </node>
   <node concept="2S6QgY" id="3HmE5WaZXXK">
     <property role="3GE5qa" value="dectree" />
-    <property role="TrG5h" value="splitAbove" />
+    <property role="TrG5h" value="SplitAbove" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:22hm_0$b7cw" resolve="DecTreeNode" />
     <node concept="2S6ZIM" id="3HmE5WaZXXL" role="2ZfVej">
@@ -667,7 +667,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnycN" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$rsC" role="2tJFKM">
-                  <ref role="2aWVGs" node="3HmE5WaZXXK" resolve="splitAbove" />
+                  <ref role="2aWVGs" node="3HmE5WaZXXK" resolve="SplitAbove" />
                 </node>
               </node>
             </node>
@@ -698,7 +698,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtOIw" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$r_b" role="2tJFKM">
-                  <ref role="2aWVGs" node="3HmE5WaZXXK" resolve="splitAbove" />
+                  <ref role="2aWVGs" node="3HmE5WaZXXK" resolve="SplitAbove" />
                 </node>
               </node>
             </node>
@@ -838,7 +838,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqEqg" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$rwR" role="2tJFKM">
-                  <ref role="2aWVGs" node="3HmE5WaZXXK" resolve="splitAbove" />
+                  <ref role="2aWVGs" node="3HmE5WaZXXK" resolve="SplitAbove" />
                 </node>
               </node>
             </node>
@@ -875,7 +875,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQERt4" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQERt5" role="2tJFKM">
-                  <ref role="2aWVGs" node="3HmE5WaZXXK" resolve="splitAbove" />
+                  <ref role="2aWVGs" node="3HmE5WaZXXK" resolve="SplitAbove" />
                 </node>
               </node>
             </node>
@@ -899,7 +899,7 @@
   </node>
   <node concept="2S6QgY" id="7Oac05Ij4T7">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="switchOrientation" />
+    <property role="TrG5h" value="SwitchOrientation" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
     <node concept="2S6ZIM" id="7Oac05Ij4T8" role="2ZfVej">
@@ -911,7 +911,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnzS_" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$v87" role="2tJFKM">
-                  <ref role="2aWVGs" node="7Oac05Ij4T7" resolve="switchOrientation" />
+                  <ref role="2aWVGs" node="7Oac05Ij4T7" resolve="SwitchOrientation" />
                 </node>
               </node>
             </node>
@@ -942,7 +942,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtQUI" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$vis" role="2tJFKM">
-                  <ref role="2aWVGs" node="7Oac05Ij4T7" resolve="switchOrientation" />
+                  <ref role="2aWVGs" node="7Oac05Ij4T7" resolve="SwitchOrientation" />
                 </node>
               </node>
             </node>
@@ -1452,7 +1452,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqGQa" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$vdm" role="2tJFKM">
-                  <ref role="2aWVGs" node="7Oac05Ij4T7" resolve="switchOrientation" />
+                  <ref role="2aWVGs" node="7Oac05Ij4T7" resolve="SwitchOrientation" />
                 </node>
               </node>
             </node>
@@ -1483,7 +1483,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQETso" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQETsp" role="2tJFKM">
-                  <ref role="2aWVGs" node="7Oac05Ij4T7" resolve="switchOrientation" />
+                  <ref role="2aWVGs" node="7Oac05Ij4T7" resolve="SwitchOrientation" />
                 </node>
               </node>
             </node>
@@ -1509,7 +1509,7 @@
   </node>
   <node concept="2S6QgY" id="1mPSRGtOU4B">
     <property role="3GE5qa" value="dectree" />
-    <property role="TrG5h" value="removeGroup" />
+    <property role="TrG5h" value="RemoveGroup" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:22hm_0$b7cw" resolve="DecTreeNode" />
     <node concept="2S6ZIM" id="1mPSRGtOU4C" role="2ZfVej">
@@ -1521,7 +1521,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnxpa" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$pQg" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mPSRGtOU4B" resolve="removeGroup" />
+                  <ref role="2aWVGs" node="1mPSRGtOU4B" resolve="RemoveGroup" />
                 </node>
               </node>
             </node>
@@ -1552,7 +1552,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtNWE" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$pYJ" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mPSRGtOU4B" resolve="removeGroup" />
+                  <ref role="2aWVGs" node="1mPSRGtOU4B" resolve="RemoveGroup" />
                 </node>
               </node>
             </node>
@@ -1589,7 +1589,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqDFg" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$pUu" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mPSRGtOU4B" resolve="removeGroup" />
+                  <ref role="2aWVGs" node="1mPSRGtOU4B" resolve="RemoveGroup" />
                 </node>
               </node>
             </node>
@@ -1629,7 +1629,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEQEb" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEQEc" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mPSRGtOU4B" resolve="removeGroup" />
+                  <ref role="2aWVGs" node="1mPSRGtOU4B" resolve="RemoveGroup" />
                 </node>
               </node>
             </node>
@@ -1653,7 +1653,7 @@
   </node>
   <node concept="2S6QgY" id="1mPSRGtRZuU">
     <property role="3GE5qa" value="dectree" />
-    <property role="TrG5h" value="addGroup" />
+    <property role="TrG5h" value="AddGroup" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:22hm_0$b7cw" resolve="DecTreeNode" />
     <node concept="2S6ZIM" id="1mPSRGtRZuV" role="2ZfVej">
@@ -1665,7 +1665,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnmOS" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzSL0" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mPSRGtRZuU" resolve="addGroup" />
+                  <ref role="2aWVGs" node="1mPSRGtRZuU" resolve="AddGroup" />
                 </node>
               </node>
             </node>
@@ -1696,7 +1696,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtCN8" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzSTX" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mPSRGtRZuU" resolve="addGroup" />
+                  <ref role="2aWVGs" node="1mPSRGtRZuU" resolve="AddGroup" />
                 </node>
               </node>
             </node>
@@ -1754,7 +1754,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQquLX" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzSPe" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mPSRGtRZuU" resolve="addGroup" />
+                  <ref role="2aWVGs" node="1mPSRGtRZuU" resolve="AddGroup" />
                 </node>
               </node>
             </node>
@@ -1804,7 +1804,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEFms" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEFmt" role="2tJFKM">
-                  <ref role="2aWVGs" node="1mPSRGtRZuU" resolve="addGroup" />
+                  <ref role="2aWVGs" node="1mPSRGtRZuU" resolve="AddGroup" />
                 </node>
               </node>
             </node>
@@ -1828,7 +1828,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_pvX97">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="addColumnLeftDectab" />
+    <property role="TrG5h" value="AddColumnLeftDectab" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="6vi7U_pvX98" role="2ZfVej">
@@ -1840,7 +1840,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQniZ_" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzKrP" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pvX97" resolve="addColumnLeftDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pvX97" resolve="AddColumnLeftDectab" />
                 </node>
               </node>
             </node>
@@ -1871,7 +1871,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQt_7I" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzK$O" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pvX97" resolve="addColumnLeftDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pvX97" resolve="AddColumnLeftDectab" />
                 </node>
               </node>
             </node>
@@ -1940,7 +1940,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqrul" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzKwf" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pvX97" resolve="addColumnLeftDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pvX97" resolve="AddColumnLeftDectab" />
                 </node>
               </node>
             </node>
@@ -1976,7 +1976,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEBlH" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEBlI" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pvX97" resolve="addColumnLeftDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pvX97" resolve="AddColumnLeftDectab" />
                 </node>
               </node>
             </node>
@@ -2592,7 +2592,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_px2UH">
     <property role="3GE5qa" value="multidectab" />
-    <property role="TrG5h" value="addRowAboveMulti" />
+    <property role="TrG5h" value="AddRowAboveMulti" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:8XWEtdYbNZ" resolve="DataRow" />
     <node concept="2S6ZIM" id="6vi7U_px2UI" role="2ZfVej">
@@ -2604,7 +2604,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnnO2" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzVDd" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2UH" resolve="addRowAboveMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2UH" resolve="AddRowAboveMulti" />
                 </node>
               </node>
             </node>
@@ -2635,7 +2635,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtDJX" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzVLm" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2UH" resolve="addRowAboveMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2UH" resolve="AddRowAboveMulti" />
                 </node>
               </node>
             </node>
@@ -2676,7 +2676,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqvy4" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzVHm" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2UH" resolve="addRowAboveMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2UH" resolve="AddRowAboveMulti" />
                 </node>
               </node>
             </node>
@@ -2707,7 +2707,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEGo1" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEGo2" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2UH" resolve="addRowAboveMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2UH" resolve="AddRowAboveMulti" />
                 </node>
               </node>
             </node>
@@ -2733,7 +2733,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_pwkXD">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="addColumnRightDectab" />
+    <property role="TrG5h" value="AddColumnRightDectab" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="6vi7U_pwkXE" role="2ZfVej">
@@ -2745,7 +2745,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnkA8" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzNOJ" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pwkXD" resolve="addColumnRightDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pwkXD" resolve="AddColumnRightDectab" />
                 </node>
               </node>
             </node>
@@ -2776,7 +2776,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtABT" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzNXI" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pwkXD" resolve="addColumnRightDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pwkXD" resolve="AddColumnRightDectab" />
                 </node>
               </node>
             </node>
@@ -2845,7 +2845,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqsOX" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzNT9" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pwkXD" resolve="addColumnRightDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pwkXD" resolve="AddColumnRightDectab" />
                 </node>
               </node>
             </node>
@@ -2881,7 +2881,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQED6b" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQED6c" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pwkXD" resolve="addColumnRightDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pwkXD" resolve="AddColumnRightDectab" />
                 </node>
               </node>
             </node>
@@ -2905,7 +2905,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_px2RD">
     <property role="3GE5qa" value="multidectab" />
-    <property role="TrG5h" value="deleteColMulti" />
+    <property role="TrG5h" value="DeleteColMulti" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="6vi7U_px2RE" role="2ZfVej">
@@ -2917,7 +2917,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnsXo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$bh4" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2RD" resolve="deleteColMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2RD" resolve="DeleteColMulti" />
                 </node>
               </node>
             </node>
@@ -2948,7 +2948,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtJpq" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$bCr" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2RD" resolve="deleteColMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2RD" resolve="DeleteColMulti" />
                 </node>
               </node>
             </node>
@@ -3080,7 +3080,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQq_1n" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$btw" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2RD" resolve="deleteColMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2RD" resolve="DeleteColMulti" />
                 </node>
               </node>
             </node>
@@ -3116,7 +3116,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQELH3" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQELH4" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2RD" resolve="deleteColMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2RD" resolve="DeleteColMulti" />
                 </node>
               </node>
             </node>
@@ -3140,7 +3140,7 @@
   </node>
   <node concept="2S6QgY" id="3l9s061DX4S">
     <property role="3GE5qa" value="multidectab.expr" />
-    <property role="TrG5h" value="pasteIntoTableExpr" />
+    <property role="TrG5h" value="PasteIntoTableExpr" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="3l9s061DX4T" role="2ZfVej">
@@ -3152,7 +3152,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnwRZ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$nFA" role="2tJFKM">
-                  <ref role="2aWVGs" node="3l9s061DX4S" resolve="pasteIntoTableExpr" />
+                  <ref role="2aWVGs" node="3l9s061DX4S" resolve="PasteIntoTableExpr" />
                 </node>
               </node>
             </node>
@@ -3183,7 +3183,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtNgX" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$nOO" role="2tJFKM">
-                  <ref role="2aWVGs" node="3l9s061DX4S" resolve="pasteIntoTableExpr" />
+                  <ref role="2aWVGs" node="3l9s061DX4S" resolve="PasteIntoTableExpr" />
                 </node>
               </node>
             </node>
@@ -3289,7 +3289,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqCPF" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$nKb" role="2tJFKM">
-                  <ref role="2aWVGs" node="3l9s061DX4S" resolve="pasteIntoTableExpr" />
+                  <ref role="2aWVGs" node="3l9s061DX4S" resolve="PasteIntoTableExpr" />
                 </node>
               </node>
             </node>
@@ -3330,7 +3330,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEQ9F" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEQ9G" role="2tJFKM">
-                  <ref role="2aWVGs" node="3l9s061DX4S" resolve="pasteIntoTableExpr" />
+                  <ref role="2aWVGs" node="3l9s061DX4S" resolve="PasteIntoTableExpr" />
                 </node>
               </node>
             </node>
@@ -3354,7 +3354,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_pwPF$">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="deleteColDectab" />
+    <property role="TrG5h" value="DeleteColDectab" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="6vi7U_pwPF_" role="2ZfVej">
@@ -3366,7 +3366,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQns9T" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$7Fw" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pwPF$" resolve="deleteColDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pwPF$" resolve="DeleteColDectab" />
                 </node>
               </node>
             </node>
@@ -3397,7 +3397,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtIyA" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$7Q6" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pwPF$" resolve="deleteColDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pwPF$" resolve="DeleteColDectab" />
                 </node>
               </node>
             </node>
@@ -3503,7 +3503,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQq$8b" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$7Ko" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pwPF$" resolve="deleteColDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pwPF$" resolve="DeleteColDectab" />
                 </node>
               </node>
             </node>
@@ -3549,7 +3549,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEKRD" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEKRE" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pwPF$" resolve="deleteColDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pwPF$" resolve="DeleteColDectab" />
                 </node>
               </node>
             </node>
@@ -3573,7 +3573,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_px2Sz">
     <property role="3GE5qa" value="multidectab" />
-    <property role="TrG5h" value="addColumnRightMulti" />
+    <property role="TrG5h" value="AddColumnRightMulti" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="6vi7U_px2S$" role="2ZfVej">
@@ -3585,7 +3585,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnlcN" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzPhL" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Sz" resolve="addColumnRightMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Sz" resolve="AddColumnRightMulti" />
                 </node>
               </node>
             </node>
@@ -3616,7 +3616,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtB9c" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzPqK" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Sz" resolve="addColumnRightMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Sz" resolve="AddColumnRightMulti" />
                 </node>
               </node>
             </node>
@@ -3723,7 +3723,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqtid" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzPmb" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Sz" resolve="addColumnRightMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Sz" resolve="AddColumnRightMulti" />
                 </node>
               </node>
             </node>
@@ -3759,7 +3759,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEDE8" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEDE9" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Sz" resolve="addColumnRightMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Sz" resolve="AddColumnRightMulti" />
                 </node>
               </node>
             </node>
@@ -3783,7 +3783,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_pw1Q$">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="deleteRowDectab" />
+    <property role="TrG5h" value="DeleteRowDectab" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="6vi7U_pw1Q_" role="2ZfVej">
@@ -3795,7 +3795,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQntM6" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$dzl" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pw1Q$" resolve="deleteRowDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pw1Q$" resolve="DeleteRowDectab" />
                 </node>
               </node>
             </node>
@@ -3826,7 +3826,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtJVT" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$dI5" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pw1Q$" resolve="deleteRowDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pw1Q$" resolve="DeleteRowDectab" />
                 </node>
               </node>
             </node>
@@ -3932,7 +3932,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQq_L0" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$dCn" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pw1Q$" resolve="deleteRowDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pw1Q$" resolve="DeleteRowDectab" />
                 </node>
               </node>
             </node>
@@ -3978,7 +3978,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEMCr" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEMCs" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pw1Q$" resolve="deleteRowDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pw1Q$" resolve="DeleteRowDectab" />
                 </node>
               </node>
             </node>
@@ -4002,7 +4002,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_pzcgj">
     <property role="3GE5qa" value="multidectab" />
-    <property role="TrG5h" value="addColumnLeftMulti" />
+    <property role="TrG5h" value="AddColumnLeftMulti" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="6vi7U_pzcgk" role="2ZfVej">
@@ -4014,7 +4014,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnjAg" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzLyF" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pzcgj" resolve="addColumnLeftMulti" />
+                  <ref role="2aWVGs" node="6vi7U_pzcgj" resolve="AddColumnLeftMulti" />
                 </node>
               </node>
             </node>
@@ -4045,7 +4045,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQt_xH" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzLFE" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pzcgj" resolve="addColumnLeftMulti" />
+                  <ref role="2aWVGs" node="6vi7U_pzcgj" resolve="AddColumnLeftMulti" />
                 </node>
               </node>
             </node>
@@ -4152,7 +4152,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqrZJ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzLB5" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pzcgj" resolve="addColumnLeftMulti" />
+                  <ref role="2aWVGs" node="6vi7U_pzcgj" resolve="AddColumnLeftMulti" />
                 </node>
               </node>
             </node>
@@ -4188,7 +4188,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEC40" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEC41" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pzcgj" resolve="addColumnLeftMulti" />
+                  <ref role="2aWVGs" node="6vi7U_pzcgj" resolve="AddColumnLeftMulti" />
                 </node>
               </node>
             </node>
@@ -4212,7 +4212,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_pumvC">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="addRowBelowDectab" />
+    <property role="TrG5h" value="AddRowBelowDectab" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="6vi7U_pumvD" role="2ZfVej">
@@ -4224,7 +4224,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnokf" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzW$J" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pumvC" resolve="addRowBelowDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pumvC" resolve="AddRowBelowDectab" />
                 </node>
               </node>
             </node>
@@ -4255,7 +4255,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtEe5" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzWHI" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pumvC" resolve="addRowBelowDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pumvC" resolve="AddRowBelowDectab" />
                 </node>
               </node>
             </node>
@@ -4324,7 +4324,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqwhc" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzWD9" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pumvC" resolve="addRowBelowDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pumvC" resolve="AddRowBelowDectab" />
                 </node>
               </node>
             </node>
@@ -4360,7 +4360,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEGT2" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEGT3" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pumvC" resolve="addRowBelowDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pumvC" resolve="AddRowBelowDectab" />
                 </node>
               </node>
             </node>
@@ -4384,7 +4384,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_px2Vl">
     <property role="3GE5qa" value="multidectab" />
-    <property role="TrG5h" value="addRowBelowMulti" />
+    <property role="TrG5h" value="AddRowBelowMulti" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:8XWEtdYbNZ" resolve="DataRow" />
     <node concept="2S6ZIM" id="6vi7U_px2Vm" role="2ZfVej">
@@ -4396,7 +4396,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnoHc" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzXxA" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Vl" resolve="addRowBelowMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Vl" resolve="AddRowBelowMulti" />
                 </node>
               </node>
             </node>
@@ -4427,7 +4427,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtEGJ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzXDJ" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Vl" resolve="addRowBelowMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Vl" resolve="AddRowBelowMulti" />
                 </node>
               </node>
             </node>
@@ -4468,7 +4468,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqwGb" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzX_J" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Vl" resolve="addRowBelowMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Vl" resolve="AddRowBelowMulti" />
                 </node>
               </node>
             </node>
@@ -4499,7 +4499,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEHmj" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEHmk" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Vl" resolve="addRowBelowMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Vl" resolve="AddRowBelowMulti" />
                 </node>
               </node>
             </node>
@@ -4525,7 +4525,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_pzp9p">
     <property role="3GE5qa" value="multidectab" />
-    <property role="TrG5h" value="addColumnLeftMultiResult" />
+    <property role="TrG5h" value="AddColumnLeftMultiResult" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
     <node concept="2S6ZIM" id="6vi7U_pzp9q" role="2ZfVej">
@@ -4537,7 +4537,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnk5V" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzMQ9" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pzp9p" resolve="addColumnLeftMultiResult" />
+                  <ref role="2aWVGs" node="6vi7U_pzp9p" resolve="AddColumnLeftMultiResult" />
                 </node>
               </node>
             </node>
@@ -4568,7 +4568,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtA9E" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzMYJ" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pzp9p" resolve="addColumnLeftMultiResult" />
+                  <ref role="2aWVGs" node="6vi7U_pzp9p" resolve="AddColumnLeftMultiResult" />
                 </node>
               </node>
             </node>
@@ -4612,7 +4612,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqspZ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzMUi" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pzp9p" resolve="addColumnLeftMultiResult" />
+                  <ref role="2aWVGs" node="6vi7U_pzp9p" resolve="AddColumnLeftMultiResult" />
                 </node>
               </node>
             </node>
@@ -4651,7 +4651,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEC_3" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEC_4" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pzp9p" resolve="addColumnLeftMultiResult" />
+                  <ref role="2aWVGs" node="6vi7U_pzp9p" resolve="AddColumnLeftMultiResult" />
                 </node>
               </node>
             </node>
@@ -5282,7 +5282,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_pu$gN">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="addRowAboveDectab" />
+    <property role="TrG5h" value="AddRowAboveDectab" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="6vi7U_pu$gO" role="2ZfVej">
@@ -5294,7 +5294,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnnkj" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzUsR" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pu$gN" resolve="addRowAboveDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pu$gN" resolve="AddRowAboveDectab" />
                 </node>
               </node>
             </node>
@@ -5325,7 +5325,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtDik" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzU_Q" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pu$gN" resolve="addRowAboveDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pu$gN" resolve="AddRowAboveDectab" />
                 </node>
               </node>
             </node>
@@ -5394,7 +5394,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqvdl" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzUxh" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pu$gN" resolve="addRowAboveDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pu$gN" resolve="AddRowAboveDectab" />
                 </node>
               </node>
             </node>
@@ -5430,7 +5430,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEFR$" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEFR_" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_pu$gN" resolve="addRowAboveDectab" />
+                  <ref role="2aWVGs" node="6vi7U_pu$gN" resolve="AddRowAboveDectab" />
                 </node>
               </node>
             </node>
@@ -5454,7 +5454,7 @@
   </node>
   <node concept="2S6QgY" id="6GGzMC68xon">
     <property role="3GE5qa" value="multidectab.expr" />
-    <property role="TrG5h" value="pasteIntoTable" />
+    <property role="TrG5h" value="PasteIntoTable" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:8XWEtdX_Xs" resolve="MultiDecTab" />
     <node concept="2S6ZIM" id="6GGzMC68xoo" role="2ZfVej">
@@ -5466,7 +5466,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnwbG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$mjG" role="2tJFKM">
-                  <ref role="2aWVGs" node="6GGzMC68xon" resolve="pasteIntoTable" />
+                  <ref role="2aWVGs" node="6GGzMC68xon" resolve="PasteIntoTable" />
                 </node>
               </node>
             </node>
@@ -5497,7 +5497,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtM_U" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$ms_" role="2tJFKM">
-                  <ref role="2aWVGs" node="6GGzMC68xon" resolve="pasteIntoTable" />
+                  <ref role="2aWVGs" node="6GGzMC68xon" resolve="PasteIntoTable" />
                 </node>
               </node>
             </node>
@@ -5559,7 +5559,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqC7m" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$mod" role="2tJFKM">
-                  <ref role="2aWVGs" node="6GGzMC68xon" resolve="pasteIntoTable" />
+                  <ref role="2aWVGs" node="6GGzMC68xon" resolve="PasteIntoTable" />
                 </node>
               </node>
             </node>
@@ -5590,7 +5590,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEPrT" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEPrU" role="2tJFKM">
-                  <ref role="2aWVGs" node="6GGzMC68xon" resolve="pasteIntoTable" />
+                  <ref role="2aWVGs" node="6GGzMC68xon" resolve="PasteIntoTable" />
                 </node>
               </node>
             </node>
@@ -5614,7 +5614,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_px2Tb">
     <property role="3GE5qa" value="multidectab" />
-    <property role="TrG5h" value="deleteRowMulti" />
+    <property role="TrG5h" value="DeleteRowMulti" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="6vi7U_px2Tc" role="2ZfVej">
@@ -5626,7 +5626,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnum$" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$fHo" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Tb" resolve="deleteRowMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Tb" resolve="DeleteRowMulti" />
                 </node>
               </node>
             </node>
@@ -5657,7 +5657,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtKH2" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$fQJ" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Tb" resolve="deleteRowMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Tb" resolve="DeleteRowMulti" />
                 </node>
               </node>
             </node>
@@ -5714,7 +5714,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqA7p" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$fLM" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Tb" resolve="deleteRowMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Tb" resolve="DeleteRowMulti" />
                 </node>
               </node>
             </node>
@@ -5766,7 +5766,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQENeQ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQENeR" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2Tb" resolve="deleteRowMulti" />
+                  <ref role="2aWVGs" node="6vi7U_px2Tb" resolve="DeleteRowMulti" />
                 </node>
               </node>
             </node>
@@ -5790,7 +5790,7 @@
   </node>
   <node concept="2S6QgY" id="Nuz63f1gff">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="addYPredef" />
+    <property role="TrG5h" value="AddYPredef" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
     <node concept="2S6ZIM" id="Nuz63f1gfg" role="2ZfVej">
@@ -5802,7 +5802,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnpTT" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$0b8" role="2tJFKM">
-                  <ref role="2aWVGs" node="Nuz63f1gff" resolve="addYPredef" />
+                  <ref role="2aWVGs" node="Nuz63f1gff" resolve="AddYPredef" />
                 </node>
               </node>
             </node>
@@ -5833,7 +5833,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtFTv" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$0jv" role="2tJFKM">
-                  <ref role="2aWVGs" node="Nuz63f1gff" resolve="addYPredef" />
+                  <ref role="2aWVGs" node="Nuz63f1gff" resolve="AddYPredef" />
                 </node>
               </node>
             </node>
@@ -5873,7 +5873,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqxNv" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$0fh" role="2tJFKM">
-                  <ref role="2aWVGs" node="Nuz63f1gff" resolve="addYPredef" />
+                  <ref role="2aWVGs" node="Nuz63f1gff" resolve="AddYPredef" />
                 </node>
               </node>
             </node>
@@ -5910,7 +5910,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEI$D" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEI$E" role="2tJFKM">
-                  <ref role="2aWVGs" node="Nuz63f1gff" resolve="addYPredef" />
+                  <ref role="2aWVGs" node="Nuz63f1gff" resolve="AddYPredef" />
                 </node>
               </node>
             </node>
@@ -5936,7 +5936,7 @@
   </node>
   <node concept="2S6QgY" id="Nuz63f1njf">
     <property role="3GE5qa" value="dectab" />
-    <property role="TrG5h" value="addXPredef" />
+    <property role="TrG5h" value="AddXPredef" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
     <node concept="2S6ZIM" id="Nuz63f1njg" role="2ZfVej">
@@ -5948,7 +5948,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnpjE" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzYvA" role="2tJFKM">
-                  <ref role="2aWVGs" node="Nuz63f1njf" resolve="addXPredef" />
+                  <ref role="2aWVGs" node="Nuz63f1njf" resolve="AddXPredef" />
                 </node>
               </node>
             </node>
@@ -5979,7 +5979,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtFl6" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzYXn" role="2tJFKM">
-                  <ref role="2aWVGs" node="Nuz63f1njf" resolve="addXPredef" />
+                  <ref role="2aWVGs" node="Nuz63f1njf" resolve="AddXPredef" />
                 </node>
               </node>
             </node>
@@ -6019,7 +6019,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqxie" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzYFj" role="2tJFKM">
-                  <ref role="2aWVGs" node="Nuz63f1njf" resolve="addXPredef" />
+                  <ref role="2aWVGs" node="Nuz63f1njf" resolve="AddXPredef" />
                 </node>
               </node>
             </node>
@@ -6056,7 +6056,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEHZl" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEHZm" role="2tJFKM">
-                  <ref role="2aWVGs" node="Nuz63f1njf" resolve="addXPredef" />
+                  <ref role="2aWVGs" node="Nuz63f1njf" resolve="AddXPredef" />
                 </node>
               </node>
             </node>
@@ -6082,7 +6082,7 @@
   </node>
   <node concept="2S6QgY" id="6vi7U_px2U5">
     <property role="3GE5qa" value="multidectab" />
-    <property role="TrG5h" value="addColumnRightMultiResult" />
+    <property role="TrG5h" value="AddColumnRightMultiResult" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
     <node concept="2S6ZIM" id="6vi7U_px2U6" role="2ZfVej">
@@ -6094,7 +6094,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnlF_" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzQxS" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2U5" resolve="addColumnRightMultiResult" />
+                  <ref role="2aWVGs" node="6vi7U_px2U5" resolve="AddColumnRightMultiResult" />
                 </node>
               </node>
             </node>
@@ -6125,7 +6125,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtBBL" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzQEu" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2U5" resolve="addColumnRightMultiResult" />
+                  <ref role="2aWVGs" node="6vi7U_px2U5" resolve="AddColumnRightMultiResult" />
                 </node>
               </node>
             </node>
@@ -6169,7 +6169,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqtH8" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzQA1" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2U5" resolve="addColumnRightMultiResult" />
+                  <ref role="2aWVGs" node="6vi7U_px2U5" resolve="AddColumnRightMultiResult" />
                 </node>
               </node>
             </node>
@@ -6208,7 +6208,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEE7N" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEE7O" role="2tJFKM">
-                  <ref role="2aWVGs" node="6vi7U_px2U5" resolve="addColumnRightMultiResult" />
+                  <ref role="2aWVGs" node="6vi7U_px2U5" resolve="AddColumnRightMultiResult" />
                 </node>
               </node>
             </node>
@@ -6234,7 +6234,7 @@
   </node>
   <node concept="2S6QgY" id="2ng4eCdCYZ_">
     <property role="3GE5qa" value="multidectab.expr" />
-    <property role="TrG5h" value="pasteIntoRow" />
+    <property role="TrG5h" value="PasteIntoRow" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:8XWEtdYbNZ" resolve="DataRow" />
     <node concept="2S6ZIM" id="2ng4eCdCYZA" role="2ZfVej">
@@ -6246,7 +6246,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnvcy" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$j0r" role="2tJFKM">
-                  <ref role="2aWVGs" node="2ng4eCdCYZ_" resolve="pasteIntoRow" />
+                  <ref role="2aWVGs" node="2ng4eCdCYZ_" resolve="PasteIntoRow" />
                 </node>
               </node>
             </node>
@@ -6277,7 +6277,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQ$jc3" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$jc4" role="2tJFKM">
-                  <ref role="2aWVGs" node="2ng4eCdCYZ_" resolve="pasteIntoRow" />
+                  <ref role="2aWVGs" node="2ng4eCdCYZ_" resolve="PasteIntoRow" />
                 </node>
               </node>
             </node>
@@ -6339,7 +6339,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqBiw" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$j5Y" role="2tJFKM">
-                  <ref role="2aWVGs" node="2ng4eCdCYZ_" resolve="pasteIntoRow" />
+                  <ref role="2aWVGs" node="2ng4eCdCYZ_" resolve="PasteIntoRow" />
                 </node>
               </node>
             </node>
@@ -6370,7 +6370,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEOfa" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEOfb" role="2tJFKM">
-                  <ref role="2aWVGs" node="2ng4eCdCYZ_" resolve="pasteIntoRow" />
+                  <ref role="2aWVGs" node="2ng4eCdCYZ_" resolve="PasteIntoRow" />
                 </node>
               </node>
             </node>
@@ -6394,7 +6394,7 @@
   </node>
   <node concept="2S6QgY" id="3l9s061Epos">
     <property role="3GE5qa" value="multidectab.expr" />
-    <property role="TrG5h" value="pasteIntoRowExpr" />
+    <property role="TrG5h" value="PasteIntoRowExpr" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="3l9s061Epot" role="2ZfVej">
@@ -6406,7 +6406,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnvL6" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$kUx" role="2tJFKM">
-                  <ref role="2aWVGs" node="3l9s061Epos" resolve="pasteIntoRowExpr" />
+                  <ref role="2aWVGs" node="3l9s061Epos" resolve="PasteIntoRowExpr" />
                 </node>
               </node>
             </node>
@@ -6437,7 +6437,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtM6F" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$l3O" role="2tJFKM">
-                  <ref role="2aWVGs" node="3l9s061Epos" resolve="pasteIntoRowExpr" />
+                  <ref role="2aWVGs" node="3l9s061Epos" resolve="PasteIntoRowExpr" />
                 </node>
               </node>
             </node>
@@ -6543,7 +6543,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqBM2" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$kZb" role="2tJFKM">
-                  <ref role="2aWVGs" node="3l9s061Epos" resolve="pasteIntoRowExpr" />
+                  <ref role="2aWVGs" node="3l9s061Epos" resolve="PasteIntoRowExpr" />
                 </node>
               </node>
             </node>
@@ -6584,7 +6584,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEOPU" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEOPV" role="2tJFKM">
-                  <ref role="2aWVGs" node="3l9s061Epos" resolve="pasteIntoRowExpr" />
+                  <ref role="2aWVGs" node="3l9s061Epos" resolve="PasteIntoRowExpr" />
                 </node>
               </node>
             </node>
@@ -6608,7 +6608,7 @@
   </node>
   <node concept="2S6QgY" id="5jsv3cLV4Sa">
     <property role="3GE5qa" value="multidectab.expr" />
-    <property role="TrG5h" value="convertAltToMultiDecTab" />
+    <property role="TrG5h" value="ConvertAltToMultiDecTab" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6UxFDrx4dp4" resolve="AlternativesExpression" />
     <node concept="2S6ZIM" id="5jsv3cLV4Sb" role="2ZfVej">
@@ -6620,7 +6620,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnrlb" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$2zu" role="2tJFKM">
-                  <ref role="2aWVGs" node="5jsv3cLV4Sa" resolve="convertAltToMultiDecTab" />
+                  <ref role="2aWVGs" node="5jsv3cLV4Sa" resolve="ConvertAltToMultiDecTab" />
                 </node>
               </node>
             </node>
@@ -6651,7 +6651,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtHwg" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$2Od" role="2tJFKM">
-                  <ref role="2aWVGs" node="5jsv3cLV4Sa" resolve="convertAltToMultiDecTab" />
+                  <ref role="2aWVGs" node="5jsv3cLV4Sa" resolve="ConvertAltToMultiDecTab" />
                 </node>
               </node>
             </node>
@@ -6914,7 +6914,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqza2" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$2Dd" role="2tJFKM">
-                  <ref role="2aWVGs" node="5jsv3cLV4Sa" resolve="convertAltToMultiDecTab" />
+                  <ref role="2aWVGs" node="5jsv3cLV4Sa" resolve="ConvertAltToMultiDecTab" />
                 </node>
               </node>
             </node>
@@ -7068,7 +7068,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEK08" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEK09" role="2tJFKM">
-                  <ref role="2aWVGs" node="5jsv3cLV4Sa" resolve="convertAltToMultiDecTab" />
+                  <ref role="2aWVGs" node="5jsv3cLV4Sa" resolve="ConvertAltToMultiDecTab" />
                 </node>
               </node>
             </node>
@@ -7092,7 +7092,7 @@
   </node>
   <node concept="2S6QgY" id="7RxIimvtOIO">
     <property role="3GE5qa" value="dectree" />
-    <property role="TrG5h" value="addChildren" />
+    <property role="TrG5h" value="AddChildren" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:22hm_0$b7cw" resolve="DecTreeNode" />
     <node concept="2S6ZIM" id="7RxIimvtOIP" role="2ZfVej">
@@ -7104,7 +7104,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnivo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzICe" role="2tJFKM">
-                  <ref role="2aWVGs" node="7RxIimvtOIO" resolve="addChildren" />
+                  <ref role="2aWVGs" node="7RxIimvtOIO" resolve="AddChildren" />
                 </node>
               </node>
             </node>
@@ -7135,7 +7135,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQrMzo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzIKn" role="2tJFKM">
-                  <ref role="2aWVGs" node="7RxIimvtOIO" resolve="addChildren" />
+                  <ref role="2aWVGs" node="7RxIimvtOIO" resolve="AddChildren" />
                 </node>
               </node>
             </node>
@@ -7175,7 +7175,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQoENG" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQzIGn" role="2tJFKM">
-                  <ref role="2aWVGs" node="7RxIimvtOIO" resolve="addChildren" />
+                  <ref role="2aWVGs" node="7RxIimvtOIO" resolve="AddChildren" />
                 </node>
               </node>
             </node>
@@ -7206,7 +7206,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQEAOq" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQEAOr" role="2tJFKM">
-                  <ref role="2aWVGs" node="7RxIimvtOIO" resolve="addChildren" />
+                  <ref role="2aWVGs" node="7RxIimvtOIO" resolve="AddChildren" />
                 </node>
               </node>
             </node>
@@ -7230,7 +7230,7 @@
   </node>
   <node concept="2S6QgY" id="2FeCPobcYHr">
     <property role="3GE5qa" value="multidectab.expr" />
-    <property role="TrG5h" value="negate" />
+    <property role="TrG5h" value="Negate" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="kfo3:8XWEtdYkhC" resolve="Content" />
     <node concept="2S6ZIM" id="2FeCPobcYHs" role="2ZfVej">
@@ -7242,7 +7242,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQnuMI" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$gJ_" role="2tJFKM">
-                  <ref role="2aWVGs" node="2FeCPobcYHr" resolve="negate" />
+                  <ref role="2aWVGs" node="2FeCPobcYHr" resolve="Negate" />
                 </node>
               </node>
             </node>
@@ -7273,7 +7273,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQtLyP" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$gRI" role="2tJFKM">
-                  <ref role="2aWVGs" node="2FeCPobcYHr" resolve="negate" />
+                  <ref role="2aWVGs" node="2FeCPobcYHr" resolve="Negate" />
                 </node>
               </node>
             </node>
@@ -7320,7 +7320,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQqABO" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQ$gNI" role="2tJFKM">
-                  <ref role="2aWVGs" node="2FeCPobcYHr" resolve="negate" />
+                  <ref role="2aWVGs" node="2FeCPobcYHr" resolve="Negate" />
                 </node>
               </node>
             </node>
@@ -7351,7 +7351,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQENLI" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQENLJ" role="2tJFKM">
-                  <ref role="2aWVGs" node="2FeCPobcYHr" resolve="negate" />
+                  <ref role="2aWVGs" node="2FeCPobcYHr" resolve="Negate" />
                 </node>
               </node>
             </node>

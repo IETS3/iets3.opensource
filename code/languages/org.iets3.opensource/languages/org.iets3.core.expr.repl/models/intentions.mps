@@ -334,7 +334,7 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="3a2FJuCnmOg">
-    <property role="TrG5h" value="addNewEntry" />
+    <property role="TrG5h" value="AddNewEntry" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:14RJwd1g888" resolve="REPL" />
     <node concept="2S6ZIM" id="3a2FJuCnmOh" role="2ZfVej">
@@ -346,7 +346,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmy7J" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxw53" role="2tJFKM">
-                  <ref role="2aWVGs" node="3a2FJuCnmOg" resolve="addNewEntry" />
+                  <ref role="2aWVGs" node="3a2FJuCnmOg" resolve="AddNewEntry" />
                 </node>
               </node>
             </node>
@@ -377,7 +377,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsLEb" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxwdc" role="2tJFKM">
-                  <ref role="2aWVGs" node="3a2FJuCnmOg" resolve="addNewEntry" />
+                  <ref role="2aWVGs" node="3a2FJuCnmOg" resolve="AddNewEntry" />
                 </node>
               </node>
             </node>
@@ -415,7 +415,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpEMJ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxw9c" role="2tJFKM">
-                  <ref role="2aWVGs" node="3a2FJuCnmOg" resolve="addNewEntry" />
+                  <ref role="2aWVGs" node="3a2FJuCnmOg" resolve="AddNewEntry" />
                 </node>
               </node>
             </node>
@@ -446,7 +446,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDMGU" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDMGV" role="2tJFKM">
-                  <ref role="2aWVGs" node="3a2FJuCnmOg" resolve="addNewEntry" />
+                  <ref role="2aWVGs" node="3a2FJuCnmOg" resolve="AddNewEntry" />
                 </node>
               </node>
             </node>
@@ -471,7 +471,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="3FexrMiO4Lb">
-    <property role="TrG5h" value="openThisInREPL" />
+    <property role="TrG5h" value="OpenThisInREPL" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="2S6ZIM" id="3FexrMiO4Lc" role="2ZfVej">
@@ -483,7 +483,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmCyK" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxOPI" role="2tJFKM">
-                  <ref role="2aWVGs" node="3FexrMiO4Lb" resolve="openThisInREPL" />
+                  <ref role="2aWVGs" node="3FexrMiO4Lb" resolve="OpenThisInREPL" />
                 </node>
               </node>
             </node>
@@ -514,7 +514,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsSaA" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxOXW" role="2tJFKM">
-                  <ref role="2aWVGs" node="3FexrMiO4Lb" resolve="openThisInREPL" />
+                  <ref role="2aWVGs" node="3FexrMiO4Lb" resolve="OpenThisInREPL" />
                 </node>
               </node>
             </node>
@@ -551,7 +551,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpL1n" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxOTW" role="2tJFKM">
-                  <ref role="2aWVGs" node="3FexrMiO4Lb" resolve="openThisInREPL" />
+                  <ref role="2aWVGs" node="3FexrMiO4Lb" resolve="OpenThisInREPL" />
                 </node>
               </node>
             </node>
@@ -582,7 +582,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDSUR" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDSUS" role="2tJFKM">
-                  <ref role="2aWVGs" node="3FexrMiO4Lb" resolve="openThisInREPL" />
+                  <ref role="2aWVGs" node="3FexrMiO4Lb" resolve="OpenThisInREPL" />
                 </node>
               </node>
             </node>
@@ -1168,7 +1168,7 @@
     <node concept="3Tm1VV" id="3FexrMiQSip" role="1B3o_S" />
   </node>
   <node concept="2S6QgY" id="69FYpZquu5u">
-    <property role="TrG5h" value="reevaluateREPL" />
+    <property role="TrG5h" value="ReevaluateREPL" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:14RJwd1g888" resolve="REPL" />
     <node concept="2S6ZIM" id="69FYpZquu5v" role="2ZfVej">
@@ -1180,7 +1180,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmD3A" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxPS$" role="2tJFKM">
-                  <ref role="2aWVGs" node="69FYpZquu5u" resolve="reevaluateREPL" />
+                  <ref role="2aWVGs" node="69FYpZquu5u" resolve="ReevaluateREPL" />
                 </node>
               </node>
             </node>
@@ -1211,7 +1211,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsSMI" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxQ0H" role="2tJFKM">
-                  <ref role="2aWVGs" node="69FYpZquu5u" resolve="reevaluateREPL" />
+                  <ref role="2aWVGs" node="69FYpZquu5u" resolve="ReevaluateREPL" />
                 </node>
               </node>
             </node>
@@ -1248,7 +1248,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpLD9" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxPWH" role="2tJFKM">
-                  <ref role="2aWVGs" node="69FYpZquu5u" resolve="reevaluateREPL" />
+                  <ref role="2aWVGs" node="69FYpZquu5u" resolve="ReevaluateREPL" />
                 </node>
               </node>
             </node>
@@ -1279,7 +1279,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDTvr" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDTvs" role="2tJFKM">
-                  <ref role="2aWVGs" node="69FYpZquu5u" resolve="reevaluateREPL" />
+                  <ref role="2aWVGs" node="69FYpZquu5u" resolve="ReevaluateREPL" />
                 </node>
               </node>
             </node>
@@ -1304,7 +1304,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="2QxWJFKDecd">
-    <property role="TrG5h" value="setName" />
+    <property role="TrG5h" value="SetName" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:14RJwd1g88L" resolve="IReplEntry" />
     <node concept="2S6ZIM" id="2QxWJFKDece" role="2ZfVej">
@@ -1316,7 +1316,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmDDQ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxRWf" role="2tJFKM">
-                  <ref role="2aWVGs" node="2QxWJFKDecd" resolve="setName" />
+                  <ref role="2aWVGs" node="2QxWJFKDecd" resolve="SetName" />
                 </node>
               </node>
             </node>
@@ -1347,7 +1347,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsTig" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxS4D" role="2tJFKM">
-                  <ref role="2aWVGs" node="2QxWJFKDecd" resolve="setName" />
+                  <ref role="2aWVGs" node="2QxWJFKDecd" resolve="SetName" />
                 </node>
               </node>
             </node>
@@ -1394,7 +1394,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpMhm" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxS0o" role="2tJFKM">
-                  <ref role="2aWVGs" node="2QxWJFKDecd" resolve="setName" />
+                  <ref role="2aWVGs" node="2QxWJFKDecd" resolve="SetName" />
                 </node>
               </node>
             </node>
@@ -1431,7 +1431,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDU7D" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDU7E" role="2tJFKM">
-                  <ref role="2aWVGs" node="2QxWJFKDecd" resolve="setName" />
+                  <ref role="2aWVGs" node="2QxWJFKDecd" resolve="SetName" />
                 </node>
               </node>
             </node>
@@ -1457,7 +1457,7 @@
   </node>
   <node concept="2S6QgY" id="5xEoEMrsnym">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="addLabel" />
+    <property role="TrG5h" value="AddLabel" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
     <node concept="2S6ZIM" id="5xEoEMrsnyn" role="2ZfVej">
@@ -1469,7 +1469,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmxBF" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxuCm" role="2tJFKM">
-                  <ref role="2aWVGs" node="5xEoEMrsnym" resolve="addLabel" />
+                  <ref role="2aWVGs" node="5xEoEMrsnym" resolve="AddLabel" />
                 </node>
               </node>
             </node>
@@ -1500,7 +1500,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsL3D" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxuKv" role="2tJFKM">
-                  <ref role="2aWVGs" node="5xEoEMrsnym" resolve="addLabel" />
+                  <ref role="2aWVGs" node="5xEoEMrsnym" resolve="AddLabel" />
                 </node>
               </node>
             </node>
@@ -1540,7 +1540,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpEkr" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxuGv" role="2tJFKM">
-                  <ref role="2aWVGs" node="5xEoEMrsnym" resolve="addLabel" />
+                  <ref role="2aWVGs" node="5xEoEMrsnym" resolve="AddLabel" />
                 </node>
               </node>
             </node>
@@ -1571,7 +1571,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDM8m" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDM8n" role="2tJFKM">
-                  <ref role="2aWVGs" node="5xEoEMrsnym" resolve="addLabel" />
+                  <ref role="2aWVGs" node="5xEoEMrsnym" resolve="AddLabel" />
                 </node>
               </node>
             </node>
@@ -1597,7 +1597,7 @@
   </node>
   <node concept="2S6QgY" id="5xEoEMr$2Q1">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="addArg" />
+    <property role="TrG5h" value="AddArgument" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
     <node concept="2S6ZIM" id="5xEoEMr$2Q2" role="2ZfVej">
@@ -1609,7 +1609,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmwGk" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxr_y" role="2tJFKM">
-                  <ref role="2aWVGs" node="5xEoEMr$2Q1" resolve="addArg" />
+                  <ref role="2aWVGs" node="5xEoEMr$2Q1" resolve="AddArgument" />
                 </node>
               </node>
             </node>
@@ -1640,7 +1640,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsK7g" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxrHF" role="2tJFKM">
-                  <ref role="2aWVGs" node="5xEoEMr$2Q1" resolve="addArg" />
+                  <ref role="2aWVGs" node="5xEoEMr$2Q1" resolve="AddArgument" />
                 </node>
               </node>
             </node>
@@ -1680,7 +1680,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpDqZ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxrDF" role="2tJFKM">
-                  <ref role="2aWVGs" node="5xEoEMr$2Q1" resolve="addArg" />
+                  <ref role="2aWVGs" node="5xEoEMr$2Q1" resolve="AddArgument" />
                 </node>
               </node>
             </node>
@@ -1711,7 +1711,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDLa4" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDLa5" role="2tJFKM">
-                  <ref role="2aWVGs" node="5xEoEMr$2Q1" resolve="addArg" />
+                  <ref role="2aWVGs" node="5xEoEMr$2Q1" resolve="AddArgument" />
                 </node>
               </node>
             </node>
@@ -1737,7 +1737,7 @@
   </node>
   <node concept="2S6QgY" id="5avmkTFHHwR">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="toggleValues" />
+    <property role="TrG5h" value="ToggleShowValuesFlag" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
     <node concept="2S6ZIM" id="5avmkTFHHwS" role="2ZfVej">
@@ -1749,7 +1749,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmFo4" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxX8U" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFHHwR" resolve="toggleValues" />
+                  <ref role="2aWVGs" node="5avmkTFHHwR" resolve="ToggleShowValuesFlag" />
                 </node>
               </node>
             </node>
@@ -1780,7 +1780,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsVff" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxXh3" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFHHwR" resolve="toggleValues" />
+                  <ref role="2aWVGs" node="5avmkTFHHwR" resolve="ToggleShowValuesFlag" />
                 </node>
               </node>
             </node>
@@ -1829,7 +1829,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpO5g" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxXd3" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFHHwR" resolve="toggleValues" />
+                  <ref role="2aWVGs" node="5avmkTFHHwR" resolve="ToggleShowValuesFlag" />
                 </node>
               </node>
             </node>
@@ -1860,7 +1860,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDWd8" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDWd9" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFHHwR" resolve="toggleValues" />
+                  <ref role="2aWVGs" node="5avmkTFHHwR" resolve="ToggleShowValuesFlag" />
                 </node>
               </node>
             </node>
@@ -1886,7 +1886,7 @@
   </node>
   <node concept="2S6QgY" id="5avmkTFIkAb">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="buildSheetInTest" />
+    <property role="TrG5h" value="BuildSheetInTest" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5avmkTFFvOK" resolve="SheetTestItem" />
     <node concept="2S6ZIM" id="5avmkTFIkAc" role="2ZfVej">
@@ -1898,7 +1898,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQm_cB" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxAv5" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFIkAb" resolve="buildSheetInTest" />
+                  <ref role="2aWVGs" node="5avmkTFIkAb" resolve="BuildSheetInTest" />
                 </node>
               </node>
             </node>
@@ -1929,7 +1929,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsOxo" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxABs" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFIkAb" resolve="buildSheetInTest" />
+                  <ref role="2aWVGs" node="5avmkTFIkAb" resolve="BuildSheetInTest" />
                 </node>
               </node>
             </node>
@@ -1991,7 +1991,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpHIw" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxAze" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFIkAb" resolve="buildSheetInTest" />
+                  <ref role="2aWVGs" node="5avmkTFIkAb" resolve="BuildSheetInTest" />
                 </node>
               </node>
             </node>
@@ -2028,7 +2028,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDPF7" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDPF8" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFIkAb" resolve="buildSheetInTest" />
+                  <ref role="2aWVGs" node="5avmkTFIkAb" resolve="BuildSheetInTest" />
                 </node>
               </node>
             </node>
@@ -2051,7 +2051,7 @@
     </node>
   </node>
   <node concept="3dkpOd" id="5avmkTFReHp">
-    <property role="TrG5h" value="addStyle" />
+    <property role="TrG5h" value="AddStyle" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
     <node concept="2S6ZIM" id="5avmkTFReHq" role="2ZfVej">
@@ -2063,7 +2063,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmzoi" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxy19" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFReHp" resolve="addStyle" />
+                  <ref role="2aWVGs" node="5avmkTFReHp" resolve="AddStyle" />
                 </node>
               </node>
             </node>
@@ -2145,7 +2145,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsMSR" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxyi3" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFReHp" resolve="addStyle" />
+                  <ref role="2aWVGs" node="5avmkTFReHp" resolve="AddStyle" />
                 </node>
               </node>
             </node>
@@ -2329,7 +2329,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpG0f" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxybS" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFReHp" resolve="addStyle" />
+                  <ref role="2aWVGs" node="5avmkTFReHp" resolve="AddStyle" />
                 </node>
               </node>
             </node>
@@ -2360,7 +2360,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDO3F" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDO3G" role="2tJFKM">
-                  <ref role="2aWVGs" node="5avmkTFReHp" resolve="addStyle" />
+                  <ref role="2aWVGs" node="5avmkTFReHp" resolve="AddStyle" />
                 </node>
               </node>
             </node>
@@ -2386,7 +2386,7 @@
   </node>
   <node concept="2S6QgY" id="48DDwlwTe9n">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="buildSheetInExpr" />
+    <property role="TrG5h" value="BuildSheetInExpr" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:48DDwlwTb_l" resolve="SheetEmbedExpr" />
     <node concept="2S6ZIM" id="48DDwlwTe9o" role="2ZfVej">
@@ -2398,7 +2398,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQm$mA" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQx$pN" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwTe9n" resolve="buildSheetInExpr" />
+                  <ref role="2aWVGs" node="48DDwlwTe9n" resolve="BuildSheetInExpr" />
                 </node>
               </node>
             </node>
@@ -2429,7 +2429,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsNG5" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQx$yf" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwTe9n" resolve="buildSheetInExpr" />
+                  <ref role="2aWVGs" node="48DDwlwTe9n" resolve="BuildSheetInExpr" />
                 </node>
               </node>
             </node>
@@ -2491,7 +2491,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpGXP" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQx$u1" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwTe9n" resolve="buildSheetInExpr" />
+                  <ref role="2aWVGs" node="48DDwlwTe9n" resolve="BuildSheetInExpr" />
                 </node>
               </node>
             </node>
@@ -2531,7 +2531,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDONU" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDONV" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwTe9n" resolve="buildSheetInExpr" />
+                  <ref role="2aWVGs" node="48DDwlwTe9n" resolve="BuildSheetInExpr" />
                 </node>
               </node>
             </node>
@@ -2555,7 +2555,7 @@
   </node>
   <node concept="2S6QgY" id="48DDwlwUXpW">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="toggleResult" />
+    <property role="TrG5h" value="ToggleResultFlag" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
     <node concept="2S6ZIM" id="48DDwlwUXpX" role="2ZfVej">
@@ -2567,7 +2567,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmEWy" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxVQT" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwUXpW" resolve="toggleResult" />
+                  <ref role="2aWVGs" node="48DDwlwUXpW" resolve="ToggleResultFlag" />
                 </node>
               </node>
             </node>
@@ -2598,7 +2598,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsUBB" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxVZ2" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwUXpW" resolve="toggleResult" />
+                  <ref role="2aWVGs" node="48DDwlwUXpW" resolve="ToggleResultFlag" />
                 </node>
               </node>
             </node>
@@ -2645,7 +2645,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpNwW" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxVV2" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwUXpW" resolve="toggleResult" />
+                  <ref role="2aWVGs" node="48DDwlwUXpW" resolve="ToggleResultFlag" />
                 </node>
               </node>
             </node>
@@ -2676,7 +2676,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDVH6" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDVH7" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwUXpW" resolve="toggleResult" />
+                  <ref role="2aWVGs" node="48DDwlwUXpW" resolve="ToggleResultFlag" />
                 </node>
               </node>
             </node>
@@ -2702,7 +2702,7 @@
   </node>
   <node concept="2S6QgY" id="48DDwlwXoAE">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="extractIntoValue" />
+    <property role="TrG5h" value="ExtractIntoValue" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
     <node concept="2S6ZIM" id="48DDwlwXoAF" role="2ZfVej">
@@ -2714,7 +2714,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmC9D" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxMK3" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwXoAE" resolve="extractIntoValue" />
+                  <ref role="2aWVGs" node="48DDwlwXoAE" resolve="ExtractIntoValue" />
                 </node>
               </node>
             </node>
@@ -2745,7 +2745,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsRCP" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxMUt" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwXoAE" resolve="extractIntoValue" />
+                  <ref role="2aWVGs" node="48DDwlwXoAE" resolve="ExtractIntoValue" />
                 </node>
               </node>
             </node>
@@ -2975,7 +2975,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpKq0" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxMOm" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwXoAE" resolve="extractIntoValue" />
+                  <ref role="2aWVGs" node="48DDwlwXoAE" resolve="ExtractIntoValue" />
                 </node>
               </node>
             </node>
@@ -3045,7 +3045,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDSlC" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDSlD" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwXoAE" resolve="extractIntoValue" />
+                  <ref role="2aWVGs" node="48DDwlwXoAE" resolve="ExtractIntoValue" />
                 </node>
               </node>
             </node>
@@ -3071,7 +3071,7 @@
   </node>
   <node concept="2S6QgY" id="48DDwlwYNTM">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="extractIntoFunction" />
+    <property role="TrG5h" value="ExtractIntoFunction" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
     <node concept="2S6ZIM" id="48DDwlwYNTN" role="2ZfVej">
@@ -3083,7 +3083,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmB8h" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxDsE" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwYNTM" resolve="extractIntoFunction" />
+                  <ref role="2aWVGs" node="48DDwlwYNTM" resolve="ExtractIntoFunction" />
                 </node>
               </node>
             </node>
@@ -3114,7 +3114,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsQho" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxDCv" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwYNTM" resolve="extractIntoFunction" />
+                  <ref role="2aWVGs" node="48DDwlwYNTM" resolve="ExtractIntoFunction" />
                 </node>
               </node>
             </node>
@@ -3584,7 +3584,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpJxM" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxDxC" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwYNTM" resolve="extractIntoFunction" />
+                  <ref role="2aWVGs" node="48DDwlwYNTM" resolve="ExtractIntoFunction" />
                 </node>
               </node>
             </node>
@@ -3654,7 +3654,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDRqj" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDRqk" role="2tJFKM">
-                  <ref role="2aWVGs" node="48DDwlwYNTM" resolve="extractIntoFunction" />
+                  <ref role="2aWVGs" node="48DDwlwYNTM" resolve="ExtractIntoFunction" />
                 </node>
               </node>
             </node>
@@ -3680,7 +3680,7 @@
   </node>
   <node concept="2S6QgY" id="3_Nra3DQ$is">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="toggleLocked" />
+    <property role="TrG5h" value="ToggleLockedFlag" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
     <node concept="2S6ZIM" id="3_Nra3DQ$it" role="2ZfVej">
@@ -3692,7 +3692,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmEyc" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxUMC" role="2tJFKM">
-                  <ref role="2aWVGs" node="3_Nra3DQ$is" resolve="toggleLocked" />
+                  <ref role="2aWVGs" node="3_Nra3DQ$is" resolve="ToggleLockedFlag" />
                 </node>
               </node>
             </node>
@@ -3723,7 +3723,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsUjm" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxV5d" role="2tJFKM">
-                  <ref role="2aWVGs" node="3_Nra3DQ$is" resolve="toggleLocked" />
+                  <ref role="2aWVGs" node="3_Nra3DQ$is" resolve="ToggleLockedFlag" />
                 </node>
               </node>
             </node>
@@ -3770,7 +3770,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpNic" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxUWO" role="2tJFKM">
-                  <ref role="2aWVGs" node="3_Nra3DQ$is" resolve="toggleLocked" />
+                  <ref role="2aWVGs" node="3_Nra3DQ$is" resolve="ToggleLockedFlag" />
                 </node>
               </node>
             </node>
@@ -3801,7 +3801,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDV9L" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDV9M" role="2tJFKM">
-                  <ref role="2aWVGs" node="3_Nra3DQ$is" resolve="toggleLocked" />
+                  <ref role="2aWVGs" node="3_Nra3DQ$is" resolve="ToggleLockedFlag" />
                 </node>
               </node>
             </node>
@@ -3827,7 +3827,7 @@
   </node>
   <node concept="2S6QgY" id="3_Nra3DThuF">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="addConstraint" />
+    <property role="TrG5h" value="AddConstraint" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
     <node concept="2S6ZIM" id="3_Nra3DThuG" role="2ZfVej">
@@ -3839,7 +3839,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmxd1" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxtgV" role="2tJFKM">
-                  <ref role="2aWVGs" node="3_Nra3DThuF" resolve="addConstraint" />
+                  <ref role="2aWVGs" node="3_Nra3DThuF" resolve="AddConstraint" />
                 </node>
               </node>
             </node>
@@ -3870,7 +3870,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsK_B" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxt_H" role="2tJFKM">
-                  <ref role="2aWVGs" node="3_Nra3DThuF" resolve="addConstraint" />
+                  <ref role="2aWVGs" node="3_Nra3DThuF" resolve="AddConstraint" />
                 </node>
               </node>
             </node>
@@ -3907,7 +3907,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpDPZ" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxtr7" role="2tJFKM">
-                  <ref role="2aWVGs" node="3_Nra3DThuF" resolve="addConstraint" />
+                  <ref role="2aWVGs" node="3_Nra3DThuF" resolve="AddConstraint" />
                 </node>
               </node>
             </node>
@@ -3944,7 +3944,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDLDl" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDLDm" role="2tJFKM">
-                  <ref role="2aWVGs" node="3_Nra3DThuF" resolve="addConstraint" />
+                  <ref role="2aWVGs" node="3_Nra3DThuF" resolve="AddConstraint" />
                 </node>
               </node>
             </node>
@@ -3968,7 +3968,7 @@
   </node>
   <node concept="2S6QgY" id="7HzLUeHqf$h">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="showTemplateMode" />
+    <property role="TrG5h" value="ShowTemplateMode" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
     <node concept="2S6ZIM" id="7HzLUeHqf$i" role="2ZfVej">
@@ -3980,7 +3980,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQmE6S" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxTnK" role="2tJFKM">
-                  <ref role="2aWVGs" node="7HzLUeHqf$h" resolve="showTemplateMode" />
+                  <ref role="2aWVGs" node="7HzLUeHqf$h" resolve="ShowTemplateMode" />
                 </node>
               </node>
             </node>
@@ -4011,7 +4011,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQsTCA" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxTvT" role="2tJFKM">
-                  <ref role="2aWVGs" node="7HzLUeHqf$h" resolve="showTemplateMode" />
+                  <ref role="2aWVGs" node="7HzLUeHqf$h" resolve="ShowTemplateMode" />
                 </node>
               </node>
             </node>
@@ -4058,7 +4058,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQpMDa" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQxTrT" role="2tJFKM">
-                  <ref role="2aWVGs" node="7HzLUeHqf$h" resolve="showTemplateMode" />
+                  <ref role="2aWVGs" node="7HzLUeHqf$h" resolve="ShowTemplateMode" />
                 </node>
               </node>
             </node>
@@ -4089,7 +4089,7 @@
               <ref role="37wK5l" to="oq0c:1VPSbnQgvmx" resolve="getCustomization" />
               <node concept="2tJFMh" id="1VPSbnQDUES" role="37wK5m">
                 <node concept="ZC_QK" id="1VPSbnQDUET" role="2tJFKM">
-                  <ref role="2aWVGs" node="7HzLUeHqf$h" resolve="showTemplateMode" />
+                  <ref role="2aWVGs" node="7HzLUeHqf$h" resolve="ShowTemplateMode" />
                 </node>
               </node>
             </node>
