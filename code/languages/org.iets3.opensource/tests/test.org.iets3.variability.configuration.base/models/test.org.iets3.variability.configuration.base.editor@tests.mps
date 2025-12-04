@@ -2733,7 +2733,7 @@
     </node>
     <node concept="3clFbS" id="1hEQIDysW$X" role="LjaKd">
       <node concept="1MFPAf" id="1hEQIDysW$W" role="3cqZAp">
-        <ref role="1MFYO6" to="nzwl:AA5ncHGzfC" resolve="setManualAssignmentCause" />
+        <ref role="1MFYO6" to="nzwl:AA5ncHGzfC" resolve="SetManualAssignmentCause" />
       </node>
     </node>
   </node>

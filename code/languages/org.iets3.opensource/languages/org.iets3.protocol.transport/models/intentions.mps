@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -14,11 +15,16 @@
     <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
+      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -95,6 +101,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
@@ -131,6 +140,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -139,19 +151,30 @@
       </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
+      <concept id="3618415754251190715" name="jetbrains.mps.lang.intentions.structure.ChildFilterFunction" flags="in" index="zTJ1e" />
+      <concept id="3618415754251192144" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_childNode" flags="nn" index="zTJq_" />
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
+      <concept id="1192795771125" name="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" flags="in" index="2SaL7w" />
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
+        <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
+        <child id="2522969319638093994" name="childFilterFunction" index="2ZfVeg" />
+        <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
       <concept id="8880393040217246788" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodParameterInstance" flags="ig" index="ffn8J">
         <reference id="8880393040217294897" name="decl" index="ffrpq" />
+      </concept>
+    </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="4733039728785194814" name="jetbrains.mps.lang.modelapi.structure.NamedNodeReference" flags="ng" index="ZC_QK">
+        <reference id="7256306938026143658" name="target" index="2aWVGs" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -168,6 +191,9 @@
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7400021826774799413" name="jetbrains.mps.lang.smodel.structure.NodePointerExpression" flags="ng" index="2tJFMh">
+        <child id="7400021826774799510" name="ref" index="2tJFKM" />
+      </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -230,361 +256,467 @@
   <node concept="2S6QgY" id="6cU0Nt0Umba">
     <property role="3GE5qa" value="protocolContainer" />
     <property role="TrG5h" value="DeriveProtocol" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="boyp:2HsTbibcSb$" resolve="ProtocolMapSection" />
     <node concept="2S6ZIM" id="6cU0Nt0Umbb" role="2ZfVej">
       <node concept="3clFbS" id="6cU0Nt0Umbc" role="2VODD2">
-        <node concept="3clFbF" id="6cU0Nt0Umk3" role="3cqZAp">
-          <node concept="Xl_RD" id="6cU0Nt0Umk2" role="3clFbG">
-            <property role="Xl_RC" value="Derive Protocol Mappings" />
+        <node concept="3clFbF" id="1VPSbnQhq62" role="3cqZAp">
+          <node concept="2OqwBi" id="1VPSbnQhqp7" role="3clFbG">
+            <node concept="NRdvd" id="7xsemUWV0qy" role="2Oq$k0">
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWV0qz" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWV0q$" role="2tJFKM">
+                  <ref role="2aWVGs" node="6cU0Nt0Umba" resolve="DeriveProtocol" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="1VPSbnQhq$Y" role="2OqNvi">
+              <ref role="37wK5l" to="juu2:~IntentionExecutable.getDescription(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="getDescription" />
+              <node concept="2Sf5sV" id="1VPSbnQhqB1" role="37wK5m" />
+              <node concept="1XNTG" id="1VPSbnQhr3d" role="37wK5m" />
+              <node concept="1bVj0M" id="1VPSbnQhrex" role="37wK5m">
+                <node concept="3clFbS" id="1VPSbnQhreC" role="1bW5cS">
+                  <node concept="3clFbF" id="6cU0Nt0Umk3" role="3cqZAp">
+                    <node concept="Xl_RD" id="6cU0Nt0Umk2" role="3clFbG">
+                      <property role="Xl_RC" value="Derive Protocol Mappings" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="2Sbjvc" id="6cU0Nt0Umbd" role="2ZfgGD">
       <node concept="3clFbS" id="6cU0Nt0Umbe" role="2VODD2">
-        <node concept="3cpWs8" id="4FLRp99VeoW" role="3cqZAp">
-          <node concept="3cpWsn" id="4FLRp99VeoX" role="3cpWs9">
-            <property role="TrG5h" value="errorHandler" />
-            <node concept="3uibUv" id="4FLRp99VeoY" role="1tU5fm">
-              <ref role="3uigEE" node="4FLRp99UZpP" resolve="DeriveProtocolErrorHandler" />
-            </node>
-            <node concept="2ShNRf" id="4FLRp99Vf0x" role="33vP2m">
-              <node concept="HV5vD" id="4FLRp99Vf6V" role="2ShVmc">
-                <ref role="HV5vE" node="4FLRp99UZpP" resolve="DeriveProtocolErrorHandler" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4FLRp99VoIr" role="3cqZAp" />
-        <node concept="3cpWs8" id="3wMQ0tmuNM5" role="3cqZAp">
-          <node concept="3cpWsn" id="3wMQ0tmuNM6" role="3cpWs9">
-            <property role="TrG5h" value="mappingSection" />
-            <node concept="3Tqbb2" id="3wMQ0tmuNM0" role="1tU5fm">
-              <ref role="ehGHo" to="ykd4:PFqDnRYSWo" resolve="MappingSection" />
-            </node>
-            <node concept="2OqwBi" id="3wMQ0tmuNM7" role="33vP2m">
-              <node concept="2OqwBi" id="3wMQ0tmuNM8" role="2Oq$k0">
-                <node concept="2Sf5sV" id="3wMQ0tmuNM9" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="3wMQ0tmuNMa" role="2OqNvi">
-                  <node concept="1xMEDy" id="3wMQ0tmuNMb" role="1xVPHs">
-                    <node concept="chp4Y" id="3wMQ0tmuNMc" role="ri$Ld">
-                      <ref role="cht4Q" to="ykd4:2GTt7K7SL5z" resolve="MappingContainer" />
-                    </node>
-                  </node>
+        <node concept="3clFbF" id="1VPSbnQtURl" role="3cqZAp">
+          <node concept="2OqwBi" id="1VPSbnQrMRy" role="3clFbG">
+            <node concept="NRdvd" id="7xsemUWV0Nu" role="2Oq$k0">
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWV0Nv" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWV0Nw" role="2tJFKM">
+                  <ref role="2aWVGs" node="6cU0Nt0Umba" resolve="DeriveProtocol" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="3wMQ0tmuNMd" role="2OqNvi">
-                <ref role="37wK5l" to="2k20:3GbuJrdLq2n" resolve="mappingSection" />
-              </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3wMQ0tmuO92" role="3cqZAp">
-          <node concept="2OqwBi" id="3wMQ0tmuQC_" role="3clFbG">
-            <node concept="2OqwBi" id="3wMQ0tmuOj9" role="2Oq$k0">
-              <node concept="37vLTw" id="3wMQ0tmuO90" role="2Oq$k0">
-                <ref role="3cqZAo" node="3wMQ0tmuNM6" resolve="mappingSection" />
-              </node>
-              <node concept="3Tsc0h" id="3wMQ0tmuOBP" role="2OqNvi">
-                <ref role="3TtcxE" to="ykd4:PFqDnRYSWu" resolve="mappings" />
-              </node>
-            </node>
-            <node concept="2es0OD" id="3wMQ0tmuSUv" role="2OqNvi">
-              <node concept="1bVj0M" id="3wMQ0tmuSUx" role="23t8la">
-                <node concept="3clFbS" id="3wMQ0tmuSUy" role="1bW5cS">
-                  <node concept="3cpWs8" id="3wMQ0tmuXCE" role="3cqZAp">
-                    <node concept="3cpWsn" id="3wMQ0tmuXCF" role="3cpWs9">
-                      <property role="TrG5h" value="protocolAttr" />
-                      <node concept="3Tqbb2" id="3wMQ0tmuXC$" role="1tU5fm">
-                        <ref role="ehGHo" to="boyp:2HsTbibDJrL" resolve="ProtocoledComponentMappingAttr" />
+            <node concept="liA8E" id="1VPSbnQrN8a" role="2OqNvi">
+              <ref role="37wK5l" to="juu2:~IntentionExecutable.execute(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="execute" />
+              <node concept="2Sf5sV" id="1VPSbnQrNcl" role="37wK5m" />
+              <node concept="1XNTG" id="1VPSbnQrNs4" role="37wK5m" />
+              <node concept="1bVj0M" id="1VPSbnQrO9U" role="37wK5m">
+                <node concept="3clFbS" id="1VPSbnQrO9Z" role="1bW5cS">
+                  <node concept="3cpWs8" id="4FLRp99VeoW" role="3cqZAp">
+                    <node concept="3cpWsn" id="4FLRp99VeoX" role="3cpWs9">
+                      <property role="TrG5h" value="errorHandler" />
+                      <node concept="3uibUv" id="4FLRp99VeoY" role="1tU5fm">
+                        <ref role="3uigEE" node="4FLRp99UZpP" resolve="DeriveProtocolErrorHandler" />
                       </node>
-                      <node concept="2OqwBi" id="3wMQ0tmuXCG" role="33vP2m">
-                        <node concept="2OqwBi" id="3wMQ0tmuXCH" role="2Oq$k0">
-                          <node concept="2OqwBi" id="3wMQ0tmuXCI" role="2Oq$k0">
-                            <node concept="37vLTw" id="3wMQ0tmuXCJ" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2r1kIC$yAsm" resolve="mapping" />
-                            </node>
-                            <node concept="3Tsc0h" id="3wMQ0tmuXCK" role="2OqNvi">
-                              <ref role="3TtcxE" to="138:3NBP8_OgMVe" resolve="attributes" />
-                            </node>
-                          </node>
-                          <node concept="v3k3i" id="3wMQ0tmuXCL" role="2OqNvi">
-                            <node concept="chp4Y" id="3wMQ0tmuXCM" role="v3oSu">
-                              <ref role="cht4Q" to="boyp:2HsTbibDJrL" resolve="ProtocoledComponentMappingAttr" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="1uHKPH" id="3wMQ0tmuXCN" role="2OqNvi" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbJ" id="3wMQ0tmuY7C" role="3cqZAp">
-                    <node concept="3clFbS" id="3wMQ0tmuY7E" role="3clFbx">
-                      <node concept="3clFbF" id="3wMQ0tmv9b$" role="3cqZAp">
-                        <node concept="37vLTI" id="3wMQ0tmvbi9" role="3clFbG">
-                          <node concept="37vLTw" id="3wMQ0tmv9bz" role="37vLTJ">
-                            <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
-                          </node>
-                          <node concept="2OqwBi" id="3wMQ0tmv5jt" role="37vLTx">
-                            <node concept="2OqwBi" id="3wMQ0tmv5ju" role="2Oq$k0">
-                              <node concept="37vLTw" id="3wMQ0tmv5jv" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2r1kIC$yAsm" resolve="mapping" />
-                              </node>
-                              <node concept="3Tsc0h" id="3wMQ0tmv5jw" role="2OqNvi">
-                                <ref role="3TtcxE" to="138:3NBP8_OgMVe" resolve="attributes" />
-                              </node>
-                            </node>
-                            <node concept="WFELt" id="3wMQ0tmv5jx" role="2OqNvi">
-                              <ref role="1A0vxQ" to="boyp:2HsTbibDJrL" resolve="ProtocoledComponentMappingAttr" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="3wMQ0tmuZeu" role="3clFbw">
-                      <node concept="37vLTw" id="3wMQ0tmuYUY" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
-                      </node>
-                      <node concept="3w_OXm" id="3wMQ0tmuZ$M" role="2OqNvi" />
-                    </node>
-                  </node>
-                  <node concept="3clFbH" id="4FLRp99ZCoz" role="3cqZAp" />
-                  <node concept="3cpWs8" id="4FLRp99Sixw" role="3cqZAp">
-                    <node concept="3cpWsn" id="4FLRp99Sixx" role="3cpWs9">
-                      <property role="TrG5h" value="deriveProtocol" />
-                      <node concept="3uibUv" id="4FLRp99Sixo" role="1tU5fm">
-                        <ref role="3uigEE" node="4FLRp99Rci1" resolve="DeriveProtocol" />
-                      </node>
-                      <node concept="2ShNRf" id="4FLRp99Sixy" role="33vP2m">
-                        <node concept="1pGfFk" id="4FLRp99Sixz" role="2ShVmc">
-                          <ref role="37wK5l" node="4FLRp99Rcjv" resolve="DeriveProtocol" />
-                          <node concept="37vLTw" id="4FLRp99SVz3" role="37wK5m">
-                            <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
-                          </node>
+                      <node concept="2ShNRf" id="4FLRp99Vf0x" role="33vP2m">
+                        <node concept="HV5vD" id="4FLRp99Vf6V" role="2ShVmc">
+                          <ref role="HV5vE" node="4FLRp99UZpP" resolve="DeriveProtocolErrorHandler" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbJ" id="4FLRp99wic2" role="3cqZAp">
-                    <node concept="3clFbS" id="4FLRp99wic4" role="3clFbx">
-                      <node concept="3cpWs8" id="4FLRp99PPVX" role="3cqZAp">
-                        <node concept="3cpWsn" id="4FLRp99PPVY" role="3cpWs9">
-                          <property role="TrG5h" value="notMappedProtocoledElements" />
-                          <node concept="A3Dl8" id="4FLRp99PPVO" role="1tU5fm">
-                            <node concept="3Tqbb2" id="4FLRp99PPVR" role="A3Ik2" />
-                          </node>
-                          <node concept="2OqwBi" id="4FLRp99PPVZ" role="33vP2m">
-                            <node concept="37vLTw" id="4FLRp99PPW0" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
-                            </node>
-                            <node concept="2qgKlT" id="4FLRp99PPW1" role="2OqNvi">
-                              <ref role="37wK5l" to="zxy1:3wMQ0tmvpy$" resolve="notMappedProtocoledElements" />
+                  <node concept="3clFbH" id="4FLRp99VoIr" role="3cqZAp" />
+                  <node concept="3cpWs8" id="3wMQ0tmuNM5" role="3cqZAp">
+                    <node concept="3cpWsn" id="3wMQ0tmuNM6" role="3cpWs9">
+                      <property role="TrG5h" value="mappingSection" />
+                      <node concept="3Tqbb2" id="3wMQ0tmuNM0" role="1tU5fm">
+                        <ref role="ehGHo" to="ykd4:PFqDnRYSWo" resolve="MappingSection" />
+                      </node>
+                      <node concept="2OqwBi" id="3wMQ0tmuNM7" role="33vP2m">
+                        <node concept="2OqwBi" id="3wMQ0tmuNM8" role="2Oq$k0">
+                          <node concept="2Sf5sV" id="3wMQ0tmuNM9" role="2Oq$k0" />
+                          <node concept="2Xjw5R" id="3wMQ0tmuNMa" role="2OqNvi">
+                            <node concept="1xMEDy" id="3wMQ0tmuNMb" role="1xVPHs">
+                              <node concept="chp4Y" id="3wMQ0tmuNMc" role="ri$Ld">
+                                <ref role="cht4Q" to="ykd4:2GTt7K7SL5z" resolve="MappingContainer" />
+                              </node>
                             </node>
                           </node>
                         </node>
+                        <node concept="2qgKlT" id="3wMQ0tmuNMd" role="2OqNvi">
+                          <ref role="37wK5l" to="2k20:3GbuJrdLq2n" resolve="mappingSection" />
+                        </node>
                       </node>
-                      <node concept="3clFbJ" id="4FLRp99qNcX" role="3cqZAp">
-                        <node concept="3clFbS" id="4FLRp99qNcZ" role="3clFbx">
-                          <node concept="3cpWs8" id="4FLRp99ScEO" role="3cqZAp">
-                            <node concept="3cpWsn" id="4FLRp99ScEP" role="3cpWs9">
-                              <property role="TrG5h" value="candidateProtocols" />
-                              <node concept="A3Dl8" id="4FLRp99ScEQ" role="1tU5fm">
-                                <node concept="3bZ5Sz" id="4FLRp99ScER" role="A3Ik2">
-                                  <ref role="3bZ5Sy" to="boyp:vJtToBuoeC" resolve="Protocol" />
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="3wMQ0tmuO92" role="3cqZAp">
+                    <node concept="2OqwBi" id="3wMQ0tmuQC_" role="3clFbG">
+                      <node concept="2OqwBi" id="3wMQ0tmuOj9" role="2Oq$k0">
+                        <node concept="37vLTw" id="3wMQ0tmuO90" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3wMQ0tmuNM6" resolve="mappingSection" />
+                        </node>
+                        <node concept="3Tsc0h" id="3wMQ0tmuOBP" role="2OqNvi">
+                          <ref role="3TtcxE" to="ykd4:PFqDnRYSWu" resolve="mappings" />
+                        </node>
+                      </node>
+                      <node concept="2es0OD" id="3wMQ0tmuSUv" role="2OqNvi">
+                        <node concept="1bVj0M" id="3wMQ0tmuSUx" role="23t8la">
+                          <node concept="3clFbS" id="3wMQ0tmuSUy" role="1bW5cS">
+                            <node concept="3cpWs8" id="3wMQ0tmuXCE" role="3cqZAp">
+                              <node concept="3cpWsn" id="3wMQ0tmuXCF" role="3cpWs9">
+                                <property role="TrG5h" value="protocolAttr" />
+                                <node concept="3Tqbb2" id="3wMQ0tmuXC$" role="1tU5fm">
+                                  <ref role="ehGHo" to="boyp:2HsTbibDJrL" resolve="ProtocoledComponentMappingAttr" />
                                 </node>
-                              </node>
-                              <node concept="2OqwBi" id="4FLRp99SkGT" role="33vP2m">
-                                <node concept="37vLTw" id="4FLRp99SjYG" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4FLRp99Sixx" resolve="deriveProtocol" />
-                                </node>
-                                <node concept="liA8E" id="4FLRp99SlsB" role="2OqNvi">
-                                  <ref role="37wK5l" node="4FLRp99Rtcx" resolve="candidateProtocols" />
-                                  <node concept="37vLTw" id="4FLRp99Sm6k" role="37wK5m">
-                                    <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbJ" id="4FLRp99J1Hw" role="3cqZAp">
-                            <node concept="3clFbS" id="4FLRp99J1Hy" role="3clFbx">
-                              <node concept="3cpWs8" id="4FLRp99SZyf" role="3cqZAp">
-                                <node concept="3cpWsn" id="4FLRp99SZyg" role="3cpWs9">
-                                  <property role="TrG5h" value="derivedProtocol" />
-                                  <node concept="3Tqbb2" id="4FLRp99SZy8" role="1tU5fm">
-                                    <ref role="ehGHo" to="boyp:vJtToBuoeC" resolve="Protocol" />
-                                  </node>
-                                  <node concept="2OqwBi" id="4FLRp99SZyh" role="33vP2m">
-                                    <node concept="37vLTw" id="4FLRp99SZyi" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="4FLRp99Sixx" resolve="deriveProtocol" />
-                                    </node>
-                                    <node concept="liA8E" id="4FLRp99SZyj" role="2OqNvi">
-                                      <ref role="37wK5l" node="4FLRp99Su5L" resolve="firstMatchingHardware" />
-                                      <node concept="37vLTw" id="4FLRp99SZyk" role="37wK5m">
-                                        <ref role="3cqZAo" node="4FLRp99ScEP" resolve="candidateProtocols" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="3clFbJ" id="4FLRp99Zpr2" role="3cqZAp">
-                                <node concept="3clFbS" id="4FLRp99Zpr4" role="3clFbx">
-                                  <node concept="3clFbF" id="4FLRp99ZxAh" role="3cqZAp">
-                                    <node concept="2OqwBi" id="4FLRp99ZxAi" role="3clFbG">
-                                      <node concept="37vLTw" id="4FLRp99ZxAj" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="4FLRp99VeoX" resolve="errorHandler" />
-                                      </node>
-                                      <node concept="liA8E" id="4FLRp99ZxAk" role="2OqNvi">
-                                        <ref role="37wK5l" node="4FLRp99YCH5" resolve="appendNotSuitableHardwareError" />
-                                        <node concept="37vLTw" id="4FLRp99ZxAl" role="37wK5m">
-                                          <ref role="3cqZAo" node="2r1kIC$yAsm" resolve="mapping" />
-                                        </node>
-                                        <node concept="37vLTw" id="4FLRp99ZTTz" role="37wK5m">
-                                          <ref role="3cqZAo" node="4FLRp99ScEP" resolve="candidateProtocols" />
-                                        </node>
-                                        <node concept="2OqwBi" id="4FLRp99ZxAm" role="37wK5m">
-                                          <node concept="37vLTw" id="4FLRp99ZxAn" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
-                                          </node>
-                                          <node concept="2qgKlT" id="4FLRp99ZUOu" role="2OqNvi">
-                                            <ref role="37wK5l" to="zxy1:6JtAeCuVOz7" resolve="availableHardwareConnectorTypes" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbC" id="4FLRp99Zq_6" role="3clFbw">
-                                  <node concept="10Nm6u" id="4FLRp99Zr6M" role="3uHU7w" />
-                                  <node concept="37vLTw" id="4FLRp9a1KsL" role="3uHU7B">
-                                    <ref role="3cqZAo" node="4FLRp99SZyg" resolve="derivedProtocol" />
-                                  </node>
-                                </node>
-                                <node concept="9aQIb" id="4FLRp99ZzQ6" role="9aQIa">
-                                  <node concept="3clFbS" id="4FLRp99ZzQ7" role="9aQI4">
-                                    <node concept="3clFbF" id="4FLRp99JPft" role="3cqZAp">
-                                      <node concept="2OqwBi" id="4FLRp99JRyA" role="3clFbG">
-                                        <node concept="2OqwBi" id="4FLRp99JPPK" role="2Oq$k0">
-                                          <node concept="37vLTw" id="4FLRp99JPfr" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
-                                          </node>
-                                          <node concept="3TrEf2" id="4FLRp99JQwy" role="2OqNvi">
-                                            <ref role="3Tt5mk" to="boyp:vJtToBuAu6" resolve="protocol" />
-                                          </node>
-                                        </node>
-                                        <node concept="2oxUTD" id="4FLRp99JUco" role="2OqNvi">
-                                          <node concept="37vLTw" id="4FLRp99T2Qu" role="2oxUTC">
-                                            <ref role="3cqZAo" node="4FLRp99SZyg" resolve="derivedProtocol" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="2OqwBi" id="4FLRp99J3tZ" role="3clFbw">
-                              <node concept="37vLTw" id="4FLRp99SYR6" role="2Oq$k0">
-                                <ref role="3cqZAo" node="4FLRp99ScEP" resolve="candidateProtocols" />
-                              </node>
-                              <node concept="3GX2aA" id="4FLRp99J51e" role="2OqNvi" />
-                            </node>
-                            <node concept="9aQIb" id="4FLRp99Z5uN" role="9aQIa">
-                              <node concept="3clFbS" id="4FLRp99Z5uO" role="9aQI4">
-                                <node concept="3clFbF" id="4FLRp99Z6$B" role="3cqZAp">
-                                  <node concept="2OqwBi" id="4FLRp99Z6$C" role="3clFbG">
-                                    <node concept="37vLTw" id="4FLRp99Z6$D" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="4FLRp99VeoX" resolve="errorHandler" />
-                                    </node>
-                                    <node concept="liA8E" id="4FLRp99Z6$E" role="2OqNvi">
-                                      <ref role="37wK5l" node="4FLRp99Y_QF" resolve="appendNonCommonMapsError" />
-                                      <node concept="37vLTw" id="4FLRp99Z6$F" role="37wK5m">
+                                <node concept="2OqwBi" id="3wMQ0tmuXCG" role="33vP2m">
+                                  <node concept="2OqwBi" id="3wMQ0tmuXCH" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="3wMQ0tmuXCI" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3wMQ0tmuXCJ" role="2Oq$k0">
                                         <ref role="3cqZAo" node="2r1kIC$yAsm" resolve="mapping" />
                                       </node>
-                                      <node concept="2OqwBi" id="4FLRp99ZaXL" role="37wK5m">
-                                        <node concept="37vLTw" id="4FLRp99Zasq" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
+                                      <node concept="3Tsc0h" id="3wMQ0tmuXCK" role="2OqNvi">
+                                        <ref role="3TtcxE" to="138:3NBP8_OgMVe" resolve="attributes" />
+                                      </node>
+                                    </node>
+                                    <node concept="v3k3i" id="3wMQ0tmuXCL" role="2OqNvi">
+                                      <node concept="chp4Y" id="3wMQ0tmuXCM" role="v3oSu">
+                                        <ref role="cht4Q" to="boyp:2HsTbibDJrL" resolve="ProtocoledComponentMappingAttr" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="1uHKPH" id="3wMQ0tmuXCN" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbJ" id="3wMQ0tmuY7C" role="3cqZAp">
+                              <node concept="3clFbS" id="3wMQ0tmuY7E" role="3clFbx">
+                                <node concept="3clFbF" id="3wMQ0tmv9b$" role="3cqZAp">
+                                  <node concept="37vLTI" id="3wMQ0tmvbi9" role="3clFbG">
+                                    <node concept="37vLTw" id="3wMQ0tmv9bz" role="37vLTJ">
+                                      <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
+                                    </node>
+                                    <node concept="2OqwBi" id="3wMQ0tmv5jt" role="37vLTx">
+                                      <node concept="2OqwBi" id="3wMQ0tmv5ju" role="2Oq$k0">
+                                        <node concept="37vLTw" id="3wMQ0tmv5jv" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="2r1kIC$yAsm" resolve="mapping" />
                                         </node>
-                                        <node concept="2qgKlT" id="4FLRp99ZbIv" role="2OqNvi">
-                                          <ref role="37wK5l" to="zxy1:2HsTbibmy9E" resolve="protocoledElements" />
+                                        <node concept="3Tsc0h" id="3wMQ0tmv5jw" role="2OqNvi">
+                                          <ref role="3TtcxE" to="138:3NBP8_OgMVe" resolve="attributes" />
+                                        </node>
+                                      </node>
+                                      <node concept="WFELt" id="3wMQ0tmv5jx" role="2OqNvi">
+                                        <ref role="1A0vxQ" to="boyp:2HsTbibDJrL" resolve="ProtocoledComponentMappingAttr" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="3wMQ0tmuZeu" role="3clFbw">
+                                <node concept="37vLTw" id="3wMQ0tmuYUY" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
+                                </node>
+                                <node concept="3w_OXm" id="3wMQ0tmuZ$M" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="3clFbH" id="4FLRp99ZCoz" role="3cqZAp" />
+                            <node concept="3cpWs8" id="4FLRp99Sixw" role="3cqZAp">
+                              <node concept="3cpWsn" id="4FLRp99Sixx" role="3cpWs9">
+                                <property role="TrG5h" value="deriveProtocol" />
+                                <node concept="3uibUv" id="4FLRp99Sixo" role="1tU5fm">
+                                  <ref role="3uigEE" node="4FLRp99Rci1" resolve="DeriveProtocol" />
+                                </node>
+                                <node concept="2ShNRf" id="4FLRp99Sixy" role="33vP2m">
+                                  <node concept="1pGfFk" id="4FLRp99Sixz" role="2ShVmc">
+                                    <ref role="37wK5l" node="4FLRp99Rcjv" resolve="DeriveProtocol" />
+                                    <node concept="37vLTw" id="4FLRp99SVz3" role="37wK5m">
+                                      <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbJ" id="4FLRp99wic2" role="3cqZAp">
+                              <node concept="3clFbS" id="4FLRp99wic4" role="3clFbx">
+                                <node concept="3cpWs8" id="4FLRp99PPVX" role="3cqZAp">
+                                  <node concept="3cpWsn" id="4FLRp99PPVY" role="3cpWs9">
+                                    <property role="TrG5h" value="notMappedProtocoledElements" />
+                                    <node concept="A3Dl8" id="4FLRp99PPVO" role="1tU5fm">
+                                      <node concept="3Tqbb2" id="4FLRp99PPVR" role="A3Ik2" />
+                                    </node>
+                                    <node concept="2OqwBi" id="4FLRp99PPVZ" role="33vP2m">
+                                      <node concept="37vLTw" id="4FLRp99PPW0" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
+                                      </node>
+                                      <node concept="2qgKlT" id="4FLRp99PPW1" role="2OqNvi">
+                                        <ref role="37wK5l" to="zxy1:3wMQ0tmvpy$" resolve="notMappedProtocoledElements" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbJ" id="4FLRp99qNcX" role="3cqZAp">
+                                  <node concept="3clFbS" id="4FLRp99qNcZ" role="3clFbx">
+                                    <node concept="3cpWs8" id="4FLRp99ScEO" role="3cqZAp">
+                                      <node concept="3cpWsn" id="4FLRp99ScEP" role="3cpWs9">
+                                        <property role="TrG5h" value="candidateProtocols" />
+                                        <node concept="A3Dl8" id="4FLRp99ScEQ" role="1tU5fm">
+                                          <node concept="3bZ5Sz" id="4FLRp99ScER" role="A3Ik2">
+                                            <ref role="3bZ5Sy" to="boyp:vJtToBuoeC" resolve="Protocol" />
+                                          </node>
+                                        </node>
+                                        <node concept="2OqwBi" id="4FLRp99SkGT" role="33vP2m">
+                                          <node concept="37vLTw" id="4FLRp99SjYG" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="4FLRp99Sixx" resolve="deriveProtocol" />
+                                          </node>
+                                          <node concept="liA8E" id="4FLRp99SlsB" role="2OqNvi">
+                                            <ref role="37wK5l" node="4FLRp99Rtcx" resolve="candidateProtocols" />
+                                            <node concept="37vLTw" id="4FLRp99Sm6k" role="37wK5m">
+                                              <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbJ" id="4FLRp99J1Hw" role="3cqZAp">
+                                      <node concept="3clFbS" id="4FLRp99J1Hy" role="3clFbx">
+                                        <node concept="3cpWs8" id="4FLRp99SZyf" role="3cqZAp">
+                                          <node concept="3cpWsn" id="4FLRp99SZyg" role="3cpWs9">
+                                            <property role="TrG5h" value="derivedProtocol" />
+                                            <node concept="3Tqbb2" id="4FLRp99SZy8" role="1tU5fm">
+                                              <ref role="ehGHo" to="boyp:vJtToBuoeC" resolve="Protocol" />
+                                            </node>
+                                            <node concept="2OqwBi" id="4FLRp99SZyh" role="33vP2m">
+                                              <node concept="37vLTw" id="4FLRp99SZyi" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="4FLRp99Sixx" resolve="deriveProtocol" />
+                                              </node>
+                                              <node concept="liA8E" id="4FLRp99SZyj" role="2OqNvi">
+                                                <ref role="37wK5l" node="4FLRp99Su5L" resolve="firstMatchingHardware" />
+                                                <node concept="37vLTw" id="4FLRp99SZyk" role="37wK5m">
+                                                  <ref role="3cqZAo" node="4FLRp99ScEP" resolve="candidateProtocols" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="3clFbJ" id="4FLRp99Zpr2" role="3cqZAp">
+                                          <node concept="3clFbS" id="4FLRp99Zpr4" role="3clFbx">
+                                            <node concept="3clFbF" id="4FLRp99ZxAh" role="3cqZAp">
+                                              <node concept="2OqwBi" id="4FLRp99ZxAi" role="3clFbG">
+                                                <node concept="37vLTw" id="4FLRp99ZxAj" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="4FLRp99VeoX" resolve="errorHandler" />
+                                                </node>
+                                                <node concept="liA8E" id="4FLRp99ZxAk" role="2OqNvi">
+                                                  <ref role="37wK5l" node="4FLRp99YCH5" resolve="appendNotSuitableHardwareError" />
+                                                  <node concept="37vLTw" id="4FLRp99ZxAl" role="37wK5m">
+                                                    <ref role="3cqZAo" node="2r1kIC$yAsm" resolve="mapping" />
+                                                  </node>
+                                                  <node concept="37vLTw" id="4FLRp99ZTTz" role="37wK5m">
+                                                    <ref role="3cqZAo" node="4FLRp99ScEP" resolve="candidateProtocols" />
+                                                  </node>
+                                                  <node concept="2OqwBi" id="4FLRp99ZxAm" role="37wK5m">
+                                                    <node concept="37vLTw" id="4FLRp99ZxAn" role="2Oq$k0">
+                                                      <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
+                                                    </node>
+                                                    <node concept="2qgKlT" id="4FLRp99ZUOu" role="2OqNvi">
+                                                      <ref role="37wK5l" to="zxy1:6JtAeCuVOz7" resolve="availableHardwareConnectorTypes" />
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node concept="3clFbC" id="4FLRp99Zq_6" role="3clFbw">
+                                            <node concept="10Nm6u" id="4FLRp99Zr6M" role="3uHU7w" />
+                                            <node concept="37vLTw" id="4FLRp9a1KsL" role="3uHU7B">
+                                              <ref role="3cqZAo" node="4FLRp99SZyg" resolve="derivedProtocol" />
+                                            </node>
+                                          </node>
+                                          <node concept="9aQIb" id="4FLRp99ZzQ6" role="9aQIa">
+                                            <node concept="3clFbS" id="4FLRp99ZzQ7" role="9aQI4">
+                                              <node concept="3clFbF" id="4FLRp99JPft" role="3cqZAp">
+                                                <node concept="2OqwBi" id="4FLRp99JRyA" role="3clFbG">
+                                                  <node concept="2OqwBi" id="4FLRp99JPPK" role="2Oq$k0">
+                                                    <node concept="37vLTw" id="4FLRp99JPfr" role="2Oq$k0">
+                                                      <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
+                                                    </node>
+                                                    <node concept="3TrEf2" id="4FLRp99JQwy" role="2OqNvi">
+                                                      <ref role="3Tt5mk" to="boyp:vJtToBuAu6" resolve="protocol" />
+                                                    </node>
+                                                  </node>
+                                                  <node concept="2oxUTD" id="4FLRp99JUco" role="2OqNvi">
+                                                    <node concept="37vLTw" id="4FLRp99T2Qu" role="2oxUTC">
+                                                      <ref role="3cqZAo" node="4FLRp99SZyg" resolve="derivedProtocol" />
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="2OqwBi" id="4FLRp99J3tZ" role="3clFbw">
+                                        <node concept="37vLTw" id="4FLRp99SYR6" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="4FLRp99ScEP" resolve="candidateProtocols" />
+                                        </node>
+                                        <node concept="3GX2aA" id="4FLRp99J51e" role="2OqNvi" />
+                                      </node>
+                                      <node concept="9aQIb" id="4FLRp99Z5uN" role="9aQIa">
+                                        <node concept="3clFbS" id="4FLRp99Z5uO" role="9aQI4">
+                                          <node concept="3clFbF" id="4FLRp99Z6$B" role="3cqZAp">
+                                            <node concept="2OqwBi" id="4FLRp99Z6$C" role="3clFbG">
+                                              <node concept="37vLTw" id="4FLRp99Z6$D" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="4FLRp99VeoX" resolve="errorHandler" />
+                                              </node>
+                                              <node concept="liA8E" id="4FLRp99Z6$E" role="2OqNvi">
+                                                <ref role="37wK5l" node="4FLRp99Y_QF" resolve="appendNonCommonMapsError" />
+                                                <node concept="37vLTw" id="4FLRp99Z6$F" role="37wK5m">
+                                                  <ref role="3cqZAo" node="2r1kIC$yAsm" resolve="mapping" />
+                                                </node>
+                                                <node concept="2OqwBi" id="4FLRp99ZaXL" role="37wK5m">
+                                                  <node concept="37vLTw" id="4FLRp99Zasq" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
+                                                  </node>
+                                                  <node concept="2qgKlT" id="4FLRp99ZbIv" role="2OqNvi">
+                                                    <ref role="37wK5l" to="zxy1:2HsTbibmy9E" resolve="protocoledElements" />
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="4FLRp99H0E5" role="3clFbw">
+                                    <node concept="37vLTw" id="4FLRp99PPW2" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="4FLRp99PPVY" resolve="notMappedProtocoledElements" />
+                                    </node>
+                                    <node concept="1v1jN8" id="4FLRp99H1RL" role="2OqNvi" />
+                                  </node>
+                                  <node concept="9aQIb" id="4FLRp99UU$1" role="9aQIa">
+                                    <node concept="3clFbS" id="4FLRp99UU$2" role="9aQI4">
+                                      <node concept="3clFbF" id="4FLRp99Vh7J" role="3cqZAp">
+                                        <node concept="2OqwBi" id="4FLRp99Vhxb" role="3clFbG">
+                                          <node concept="37vLTw" id="4FLRp99Vh7I" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="4FLRp99VeoX" resolve="errorHandler" />
+                                          </node>
+                                          <node concept="liA8E" id="4FLRp99Vi8D" role="2OqNvi">
+                                            <ref role="37wK5l" node="4FLRp99UZv6" resolve="appendMissingMapError" />
+                                            <node concept="37vLTw" id="4FLRp99ViCP" role="37wK5m">
+                                              <ref role="3cqZAo" node="2r1kIC$yAsm" resolve="mapping" />
+                                            </node>
+                                            <node concept="37vLTw" id="4FLRp99VjEM" role="37wK5m">
+                                              <ref role="3cqZAo" node="4FLRp99PPVY" resolve="notMappedProtocoledElements" />
+                                            </node>
+                                          </node>
                                         </node>
                                       </node>
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="2OqwBi" id="4FLRp99H0E5" role="3clFbw">
-                          <node concept="37vLTw" id="4FLRp99PPW2" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4FLRp99PPVY" resolve="notMappedProtocoledElements" />
-                          </node>
-                          <node concept="1v1jN8" id="4FLRp99H1RL" role="2OqNvi" />
-                        </node>
-                        <node concept="9aQIb" id="4FLRp99UU$1" role="9aQIa">
-                          <node concept="3clFbS" id="4FLRp99UU$2" role="9aQI4">
-                            <node concept="3clFbF" id="4FLRp99Vh7J" role="3cqZAp">
-                              <node concept="2OqwBi" id="4FLRp99Vhxb" role="3clFbG">
-                                <node concept="37vLTw" id="4FLRp99Vh7I" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4FLRp99VeoX" resolve="errorHandler" />
-                                </node>
-                                <node concept="liA8E" id="4FLRp99Vi8D" role="2OqNvi">
-                                  <ref role="37wK5l" node="4FLRp99UZv6" resolve="appendMissingMapError" />
-                                  <node concept="37vLTw" id="4FLRp99ViCP" role="37wK5m">
-                                    <ref role="3cqZAo" node="2r1kIC$yAsm" resolve="mapping" />
+                              <node concept="2OqwBi" id="4FLRp99wl2w" role="3clFbw">
+                                <node concept="2OqwBi" id="4FLRp99wjjv" role="2Oq$k0">
+                                  <node concept="37vLTw" id="4FLRp99wiMT" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
                                   </node>
-                                  <node concept="37vLTw" id="4FLRp99VjEM" role="37wK5m">
-                                    <ref role="3cqZAo" node="4FLRp99PPVY" resolve="notMappedProtocoledElements" />
+                                  <node concept="3TrEf2" id="4FLRp99wk6O" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="boyp:vJtToBuAu6" resolve="protocol" />
                                   </node>
                                 </node>
+                                <node concept="3w_OXm" id="4FLRp99wlMV" role="2OqNvi" />
                               </node>
                             </node>
                           </node>
+                          <node concept="gl6BB" id="2r1kIC$yAsm" role="1bW2Oz">
+                            <property role="TrG5h" value="mapping" />
+                            <node concept="2jxLKc" id="2r1kIC$yAsn" role="1tU5fm" />
+                          </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="2OqwBi" id="4FLRp99wl2w" role="3clFbw">
-                      <node concept="2OqwBi" id="4FLRp99wjjv" role="2Oq$k0">
-                        <node concept="37vLTw" id="4FLRp99wiMT" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3wMQ0tmuXCF" resolve="protocolAttr" />
-                        </node>
-                        <node concept="3TrEf2" id="4FLRp99wk6O" role="2OqNvi">
-                          <ref role="3Tt5mk" to="boyp:vJtToBuAu6" resolve="protocol" />
-                        </node>
-                      </node>
-                      <node concept="3w_OXm" id="4FLRp99wlMV" role="2OqNvi" />
                     </node>
                   </node>
-                </node>
-                <node concept="gl6BB" id="2r1kIC$yAsm" role="1bW2Oz">
-                  <property role="TrG5h" value="mapping" />
-                  <node concept="2jxLKc" id="2r1kIC$yAsn" role="1tU5fm" />
+                  <node concept="3clFbH" id="4FLRp99VB90" role="3cqZAp" />
+                  <node concept="3clFbJ" id="4FLRp99VBxu" role="3cqZAp">
+                    <node concept="3clFbS" id="4FLRp99VBxw" role="3clFbx">
+                      <node concept="3clFbF" id="4FLRp99VLvR" role="3cqZAp">
+                        <node concept="2OqwBi" id="4FLRp99VL_H" role="3clFbG">
+                          <node concept="37vLTw" id="4FLRp99VLvP" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4FLRp99VeoX" resolve="errorHandler" />
+                          </node>
+                          <node concept="liA8E" id="4FLRp99VLI2" role="2OqNvi">
+                            <ref role="37wK5l" node="4FLRp99VDOa" resolve="showErrorMessage" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="4FLRp99VCA4" role="3clFbw">
+                      <node concept="37vLTw" id="4FLRp99VCax" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4FLRp99VeoX" resolve="errorHandler" />
+                      </node>
+                      <node concept="liA8E" id="4FLRp99VDj0" role="2OqNvi">
+                        <ref role="37wK5l" node="4FLRp99VwZT" resolve="hasErrorsToShow" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4FLRp99VB90" role="3cqZAp" />
-        <node concept="3clFbJ" id="4FLRp99VBxu" role="3cqZAp">
-          <node concept="3clFbS" id="4FLRp99VBxw" role="3clFbx">
-            <node concept="3clFbF" id="4FLRp99VLvR" role="3cqZAp">
-              <node concept="2OqwBi" id="4FLRp99VL_H" role="3clFbG">
-                <node concept="37vLTw" id="4FLRp99VLvP" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4FLRp99VeoX" resolve="errorHandler" />
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1VPSbnQqJvJ" role="2ZfVeh">
+      <node concept="3clFbS" id="1VPSbnQqJvK" role="2VODD2">
+        <node concept="3clFbF" id="1VPSbnQoEND" role="3cqZAp">
+          <node concept="2OqwBi" id="1VPSbnQoFhl" role="3clFbG">
+            <node concept="NRdvd" id="7xsemUWV1gc" role="2Oq$k0">
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWV1gd" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWV1ge" role="2tJFKM">
+                  <ref role="2aWVGs" node="6cU0Nt0Umba" resolve="DeriveProtocol" />
                 </node>
-                <node concept="liA8E" id="4FLRp99VLI2" role="2OqNvi">
-                  <ref role="37wK5l" node="4FLRp99VDOa" resolve="showErrorMessage" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1VPSbnQoFRu" role="2OqNvi">
+              <ref role="37wK5l" to="juu2:~IntentionExecutable.isApplicable(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="isApplicable" />
+              <node concept="2Sf5sV" id="1VPSbnQoGeh" role="37wK5m" />
+              <node concept="1XNTG" id="1VPSbnQoGDc" role="37wK5m" />
+              <node concept="1bVj0M" id="1VPSbnQoGQZ" role="37wK5m">
+                <node concept="3clFbS" id="1VPSbnQoGR6" role="1bW5cS">
+                  <node concept="3clFbF" id="1VPSbnQ$KCz" role="3cqZAp">
+                    <node concept="3clFbT" id="1VPSbnQ$KCy" role="3clFbG">
+                      <property role="3clFbU" value="true" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="4FLRp99VCA4" role="3clFbw">
-            <node concept="37vLTw" id="4FLRp99VCax" role="2Oq$k0">
-              <ref role="3cqZAo" node="4FLRp99VeoX" resolve="errorHandler" />
+        </node>
+      </node>
+    </node>
+    <node concept="zTJ1e" id="1VPSbnQCAos" role="2ZfVeg">
+      <node concept="3clFbS" id="1VPSbnQCAot" role="2VODD2">
+        <node concept="3clFbF" id="1VPSbnQCAou" role="3cqZAp">
+          <node concept="2OqwBi" id="1VPSbnQCAov" role="3clFbG">
+            <node concept="NRdvd" id="7xsemUWV1pn" role="2Oq$k0">
+              <ref role="1Pybhc" to="juu2:1VPSbnQgjmM" resolve="IntentionCustomizationConfigHelper" />
+              <ref role="37wK5l" to="juu2:1VPSbnQgvmx" resolve="getCustomization" />
+              <node concept="2tJFMh" id="7xsemUWV1po" role="37wK5m">
+                <node concept="ZC_QK" id="7xsemUWV1pp" role="2tJFKM">
+                  <ref role="2aWVGs" node="6cU0Nt0Umba" resolve="DeriveProtocol" />
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="4FLRp99VDj0" role="2OqNvi">
-              <ref role="37wK5l" node="4FLRp99VwZT" resolve="hasErrorsToShow" />
+            <node concept="liA8E" id="1VPSbnQCAoz" role="2OqNvi">
+              <ref role="37wK5l" to="juu2:1VPSbnQich9" resolve="getChildFilter" />
+              <node concept="2Sf5sV" id="1VPSbnQCAo$" role="37wK5m" />
+              <node concept="zTJq_" id="1VPSbnQCAo_" role="37wK5m" />
+              <node concept="1XNTG" id="1VPSbnQCAoA" role="37wK5m" />
+              <node concept="1bVj0M" id="1VPSbnQCAoB" role="37wK5m">
+                <node concept="3clFbS" id="1VPSbnQCAoC" role="1bW5cS">
+                  <node concept="3clFbF" id="1VPSbnQCAoD" role="3cqZAp">
+                    <node concept="3clFbT" id="1VPSbnQCAoE" role="3clFbG" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

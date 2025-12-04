@@ -5,6 +5,7 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -102,6 +103,9 @@
       </concept>
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -2090,9 +2094,32 @@
     </node>
     <node concept="QznSV" id="3pe7Y2S9kzH" role="QzAvj">
       <node concept="3clFbS" id="3pe7Y2S9kzI" role="2VODD2">
-        <node concept="3clFbF" id="3pe7Y2S9kG7" role="3cqZAp">
-          <node concept="Xl_RD" id="3pe7Y2S9kG6" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Effect Flag" />
+        <node concept="3clFbF" id="1VPSbnRbHe3" role="3cqZAp">
+          <node concept="3cpWs3" id="1VPSbnRbJGi" role="3clFbG">
+            <node concept="Xl_RD" id="1VPSbnRbJJ1" role="3uHU7w">
+              <property role="Xl_RC" value=" Effect Flag" />
+            </node>
+            <node concept="1eOMI4" id="1VPSbnRbJDT" role="3uHU7B">
+              <node concept="3K4zz7" id="1VPSbnRbJ2s" role="1eOMHV">
+                <node concept="Xl_RD" id="1VPSbnRbJ4U" role="3K4E3e">
+                  <property role="Xl_RC" value="Set" />
+                </node>
+                <node concept="Xl_RD" id="1VPSbnRbJ6P" role="3K4GZi">
+                  <property role="Xl_RC" value="Remove" />
+                </node>
+                <node concept="3clFbC" id="1VPSbnRbIP0" role="3K4Cdx">
+                  <node concept="10Nm6u" id="1VPSbnRbIWX" role="3uHU7w" />
+                  <node concept="2OqwBi" id="1VPSbnRbHIq" role="3uHU7B">
+                    <node concept="QwW4i" id="1VPSbnRbHe1" role="2Oq$k0">
+                      <ref role="QwW4h" node="3pe7Y2S9fIC" resolve="f" />
+                    </node>
+                    <node concept="3TrEf2" id="1VPSbnRbIDB" role="2OqNvi">
+                      <ref role="3Tt5mk" to="zzzn:3npF9QX0lor" resolve="effect" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
