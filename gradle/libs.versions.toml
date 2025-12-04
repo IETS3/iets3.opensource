@@ -1,25 +1,25 @@
 [versions]
-mpsVersion = "2023.2.3"
-mpsQaVersion = "2023.2.+"
+mpsVersion = "2024.1.3"
+mpsQaVersion = "2024.1.+"
 # if you want to build against a specific mbeddr branch, prepend it here with a dot.
 # NOTE: instances of '/' in the branch name need to be replaced by '-'
 # example: mbeddrVersion="feature-my_new_feature.2023.2.+"
-mbeddrVersion = "2023.2.+"
+mbeddrVersion = "2024.1.+"
 
 gradle = "8.13"
-jbr = "17.0.8.1-b1000.32"
+jbr = "17.0.11-b1207.30"
 
 [libraries]
 mps = { group = "com.jetbrains", name = "mps", version.ref = "mpsVersion" }
-remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "0.0.5.+" }
+remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "0.2.0" }
 mpsQaAllInOne = { group = "org.mpsqa", name = "all-in-one", version.ref = "mpsQaVersion" }
 mbeddrPlatform = { group = "com.mbeddr", name = "platform", version.ref = "mbeddrVersion" }
-antJunit = { group = "org.apache.ant", name = "ant-junit", version = "1.10.6" }
+antJunit = { group = "org.apache.ant", name = "ant-junit", version = "1.10.15" }
 
 # bundled dependencies
-pcollections = { group = "org.pcollections", name = "pcollections", version = "4.0.1" }
+pcollections = { group = "org.pcollections", name = "pcollections", version = "4.0.2" }
 bigMath = { group = "ch.obermuhlner", name = "big-math", version = "2.3.2" }
-functionalJava = { group = "org.functionaljava", name = "functionaljava", version = "4.8.1" }
+functionalJava = { group = "org.functionaljava", name = "functionaljava", version = "5.0" }
 cpSuite = { group = "io.takari.junit", name = "takari-cpsuite", version = "1.2.7" }
 
 [bundles]
