@@ -9,11 +9,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
@@ -115,11 +110,6 @@
           <property role="30bXRw" value="3" />
         </node>
       </node>
-      <node concept="2X$Uj3" id="39MbPJmEEx3" role="2XTn__">
-        <node concept="30bXRB" id="39MbPJmEF1P" role="2X$Ut6">
-          <property role="30bXRw" value="21" />
-        </node>
-      </node>
       <node concept="2XVIsg" id="39MbPJmEEx4" role="2XVIrq">
         <ref role="2XVIun" node="39MbPJmEEx3" />
         <ref role="2XVIuo" node="1tbxNVtEPJG" />
@@ -132,6 +122,11 @@
         <ref role="2XVIuo" node="39MbPJmEEfi" />
         <node concept="30bXRB" id="39MbPJmEFod" role="2XVIu5">
           <property role="30bXRw" value="4" />
+        </node>
+      </node>
+      <node concept="2X$Uj3" id="39MbPJmEEx3" role="2XTn__">
+        <node concept="30bXRB" id="39MbPJmEF1P" role="2X$Ut6">
+          <property role="30bXRw" value="21" />
         </node>
       </node>
     </node>
@@ -230,9 +225,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2XOHcx" id="cPLa7FqXwt">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
 </model>
 
