@@ -139,7 +139,7 @@
   </registry>
   <node concept="1l3spW" id="5wLtKNeSRPl">
     <property role="TrG5h" value="org.iets3.opensource.allScripts.build" />
-    <property role="2DA0ip" value="../../../../../build/scripts" />
+    <property role="2DA0ip" value="../../../../../" />
     <property role="turDy" value="build-allScripts.xml" />
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
@@ -490,14 +490,7 @@
     <node concept="3b7kt6" id="5wLtKNeSRPn" role="10PD9s" />
     <node concept="398rNT" id="1Y5vs7yKdR8" role="1l3spd">
       <property role="TrG5h" value="iets3.github.opensource.home" />
-      <node concept="55IIr" id="1Y5vs7yKdTn" role="398pKh">
-        <node concept="2Ry0Ak" id="1Y5vs7yKdT$" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="1Y5vs7yKdTX" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-          </node>
-        </node>
-      </node>
+      <node concept="55IIr" id="1Y5vs7yKdTn" role="398pKh" />
     </node>
     <node concept="398rNT" id="5wLtKNeSRPo" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
