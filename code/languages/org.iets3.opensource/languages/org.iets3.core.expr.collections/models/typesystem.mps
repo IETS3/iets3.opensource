@@ -4024,6 +4024,28 @@
     <property role="TrG5h" value="check_ForeachOp" />
     <property role="3GE5qa" value="collection" />
     <node concept="3clFbS" id="7SZA7Ud$032" role="18ibNy">
+      <node concept="3clFbJ" id="4Iw$Aa1QoCl" role="3cqZAp">
+        <node concept="3clFbS" id="4Iw$Aa1QoCn" role="3clFbx">
+          <node concept="3cpWs6" id="4Iw$Aa1Qs57" role="3cqZAp" />
+        </node>
+        <node concept="3fqX7Q" id="4Iw$Aa1QoGy" role="3clFbw">
+          <node concept="2OqwBi" id="4Iw$Aa1QqH_" role="3fr31v">
+            <node concept="2OqwBi" id="4Iw$Aa1Qqlh" role="2Oq$k0">
+              <node concept="1YBJjd" id="4Iw$Aa1QoIY" role="2Oq$k0">
+                <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
+              </node>
+              <node concept="3TrEf2" id="4Iw$Aa1Qqrf" role="2OqNvi">
+                <ref role="3Tt5mk" to="700h:7SZA7UeMt3K" resolve="arg" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="4Iw$Aa1QrJK" role="2OqNvi">
+              <node concept="chp4Y" id="4Iw$Aa1QrSi" role="cj9EA">
+                <ref role="cht4Q" to="zzzn:2D48zR6a1ez" resolve="ILambdaLike" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="7SZA7Ud$27L" role="3cqZAp">
         <node concept="3clFbS" id="7SZA7Ud$27N" role="3clFbx">
           <node concept="2MkqsV" id="7SZA7Ud$2Ic" role="3cqZAp">
