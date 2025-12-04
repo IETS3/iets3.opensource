@@ -143,6 +143,7 @@ val resolveDependencies by tasks.registering {
 // Default arguments for ant scripts
 val defaultScriptArgs = mutableMapOf(
     "mps.home" to mpsHomeDir.asFile,
+    "mps.test.project.path" to "${rootDir}/code/languages/org.iets3.opensource",
     "iets3.github.opensource.home" to rootDir,
     "build.jna.library.path" to mpsHomeDir.file("lib/jna/${System.getProperty("os.arch")}").asFile,
     "build.dir" to layout.buildDirectory.get().asFile,
@@ -513,4 +514,6 @@ tasks.cyclonedxBom {
     outputFormat.set("json")
     // Don't include license texts in generated SBOMs
     includeLicenseText.set(false)
+    // Included bundled runtime dependencies
+    includeConfigs.set(listOf(pcollections, bigMath, functionalJava, cpSuite).map { it.name })
 }
