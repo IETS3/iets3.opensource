@@ -15,6 +15,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Variability: The propagation of configuration updates to referencing configurations has been improved. Due to this optimization, it needs much less CPU time now.
 
+### Changed
+
+- Variability: Remove deprecated concepts `VariabilityModelChunk_old`, and some related concepts.
+
 
 ## November 2025
 
