@@ -49,7 +49,8 @@ dependencies {
     pcollections(libs.pcollections) { isTransitive = false }
     bigMath(libs.bigMath) { isTransitive = false }
     functionalJava(libs.functionalJava) { isTransitive = false }
-    cpSuite(libs.cpSuite) { isTransitive = false }
+    // we need to explicitly state the jar type for this dependency
+    cpSuite(libs.cpSuite.get().toString() + "@jar") { isTransitive = false }
 }
 
 tasks.wrapper {
@@ -92,16 +93,20 @@ val artifactsDir by extra(project.layout.buildDirectory.dir("artifacts").get())
 val reportsDir by extra(project.layout.buildDirectory.dir("reports").get())
 val scriptsDir by extra(project.layout.buildDirectory.dir("scripts").get())
 
-val bundledDependencyResolveTasks = listOf(
-    pcollections.registerTaskToResolveBundledDependency("org.iets3.core.expr.base.collections.stubs"),
-    bigMath.registerTaskToResolveBundledDependency("org.iets3.core.expr.math.interpreter"),
-    functionalJava.registerTaskToResolveBundledDependency("org.iets3.core.expr.genjava.functionalJava"),
-    cpSuite.registerTaskToResolveBundledDependency("org.iets3.opensource.build.gentests.rt", "takari-cpsuite.jar")
+val bundledDepsToLibSolution = mapOf(
+    pcollections to "org.iets3.core.expr.base.collections.stubs",
+    bigMath to "org.iets3.core.expr.math.interpreter",
+    functionalJava to "org.iets3.core.expr.genjava.functionalJava",
+    cpSuite to "org.iets3.opensource.build.gentests.rt"
 )
 
+val bundledDependencies = bundledDepsToLibSolution.keys.toList()
+val bundledDependencyResolveTasks = bundledDepsToLibSolution.map { (conf, libSolutionName) ->
+    conf.registerTaskToResolveBundledDependency(libSolutionName)
+}
+
 fun Configuration.registerTaskToResolveBundledDependency(
-    libSolutionName: String,
-    jarNameOverride: String? = null
+    libSolutionName: String
 ): TaskProvider<Sync> {
     val configName = this@registerTaskToResolveBundledDependency.name
     return tasks.register<Sync>("resolve_${configName}_bundled") {
@@ -114,8 +119,7 @@ fun Configuration.registerTaskToResolveBundledDependency(
                 configurations.getByName(configName).resolvedConfiguration.resolvedArtifacts
                     .find { resolvedArtifact: ResolvedArtifact -> resolvedArtifact.file.name == filename })
 
-            return@rename jarNameOverride
-                ?: if (resolvedArtifact.classifier != null) {
+            return@rename if (resolvedArtifact.classifier != null) {
                     "${resolvedArtifact.name}-${resolvedArtifact.classifier}.${resolvedArtifact.extension}"
                 } else {
                     "${resolvedArtifact.name}.${resolvedArtifact.extension}"
@@ -323,13 +327,13 @@ val packageDistroWithDependencies by tasks.registering(Zip::class) {
     include("org.iets3.opensource.distro/**")
 }
 
-fun MavenPom.addDependency(configuration: Configuration) {
+fun MavenPom.addDependency(configuration: Configuration, scope: String? = null) {
     configuration.resolvedConfiguration.firstLevelModuleDependencies.forEach {
-        addDependency(it.moduleGroup, it.moduleName, it.moduleVersion, it.moduleArtifacts.first().type)
+        addDependency(it.moduleGroup, it.moduleName, it.moduleVersion, it.moduleArtifacts.first().type, scope)
     }
 }
 
-fun MavenPom.addDependency(moduleGroup: String, moduleName: String, moduleVersion: String, type: String? = null) {
+fun MavenPom.addDependency(moduleGroup: String, moduleName: String, moduleVersion: String, type: String? = null, scope: String? = null) {
     withXml {
         val root = asNode()
         val dependencies =
@@ -339,6 +343,7 @@ fun MavenPom.addDependency(moduleGroup: String, moduleName: String, moduleVersio
             appendNode("artifactId", moduleName)
             appendNode("version", moduleVersion)
             type?.let { appendNode("type", it) }
+            scope?.let { appendNode("scope", it) }
         }
     }
 }
@@ -363,6 +368,8 @@ fun MavenPom.includeAdditionalInfo() {
         url.set("https://github.com/IETS3/iets3.opensource")
     }
 }
+
+fun MavenPom.addBundledDependencies() = bundledDependencies.forEach { addDependency(it, "provided") }
 
 publishing {
     repositories {
@@ -413,6 +420,7 @@ publishing {
                 moduleVersion = project.version.toString(),
                 type = "zip"
             )
+            pom.addBundledDependencies()
             pom.includeAdditionalInfo()
         }
         val runtimesDir = file(artifactsDir).resolve("org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os")
@@ -515,5 +523,5 @@ tasks.cyclonedxBom {
     // Don't include license texts in generated SBOMs
     includeLicenseText.set(false)
     // Included bundled runtime dependencies
-    includeConfigs.set(listOf(pcollections, bigMath, functionalJava, cpSuite).map { it.name })
+    includeConfigs.set(bundledDependencies.map { it.name })
 }
