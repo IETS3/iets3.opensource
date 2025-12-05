@@ -1450,7 +1450,7 @@
     <property role="3YCmrE" value="Ensure after a relation change to XOR a mandatory feature is not mandatory anymore" />
     <node concept="3clFbS" id="52oLVA7HMr$" role="LjaKd">
       <node concept="1MFPAf" id="52oLVA7HQPF" role="3cqZAp">
-        <ref role="1MFYO6" to="1gxe:1GMgmu_eLKU" resolve="ChangeSubFeatureRelation" />
+        <ref role="1MFYO6" to="1gxe:1GMgmu_eLKU" resolve="changeSubFeatureRelation" />
         <node concept="Xl_RD" id="1GMgmu_f4Ue" role="1v$tAf">
           <property role="Xl_RC" value="'Alternative (XOR)'" />
         </node>
@@ -1499,7 +1499,7 @@
     <property role="3YCmrE" value="Ensure after a relation change to XOR we have at most one subfeature which is initially checked " />
     <node concept="3clFbS" id="4niYZG0xZlw" role="LjaKd">
       <node concept="1MFPAf" id="4niYZG0xZlx" role="3cqZAp">
-        <ref role="1MFYO6" to="1gxe:1GMgmu_eLKU" resolve="ChangeSubFeatureRelation" />
+        <ref role="1MFYO6" to="1gxe:1GMgmu_eLKU" resolve="changeSubFeatureRelation" />
         <node concept="Xl_RD" id="4niYZG0xZly" role="1v$tAf">
           <property role="Xl_RC" value="'Alternative (XOR)'" />
         </node>
