@@ -2096,6 +2096,11 @@
             <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3gfwQZKKk$R" role="3bR37C">
+          <node concept="3bR9La" id="3gfwQZKKk$S" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7yHH$DDpBOh" role="2G$12L">
         <property role="BnDLt" value="true" />
