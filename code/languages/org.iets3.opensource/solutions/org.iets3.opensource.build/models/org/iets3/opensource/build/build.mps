@@ -1131,13 +1131,13 @@
       <node concept="m$_yC" id="5wLtKNeT9bv" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeSRRD" resolve="org.iets3.core.os" />
       </node>
-      <node concept="m$_yC" id="33rdvUHQizH" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:64SK4bcO2rO" resolve="com.mbeddr.mpsutil.projectview" />
-      </node>
       <node concept="3_J27D" id="5wLtKNeT2TI" role="m_cZH">
         <node concept="3Mxwew" id="5wLtKNeT2TJ" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.req.os" />
         </node>
+      </node>
+      <node concept="m$_yC" id="33rdvUHQizH" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:64SK4bcO2rO" resolve="com.mbeddr.mpsutil.projectview" />
       </node>
     </node>
     <node concept="m$_wf" id="5loVtKNYW0J" role="3989C9">
@@ -2112,6 +2112,11 @@
         <node concept="1SiIV0" id="61z6J8WMoxE" role="3bR37C">
           <node concept="3bR9La" id="61z6J8WMoxF" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3gfwQZKKk$R" role="3bR37C">
+          <node concept="3bR9La" id="3gfwQZKKk$S" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
           </node>
         </node>
       </node>
