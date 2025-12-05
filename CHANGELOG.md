@@ -5,16 +5,6 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
-## Dezember 2025
-
-### Added
-
-- All intentions can now be customized (description, is applicable block, child filter, execute block) through the extension point `IntentionCustomization`.
-
-### Improved
-
-- Some intention descriptions were improved.
-
 ## November 2025
 
 ### Added
