@@ -152,7 +152,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -668,6 +670,7 @@
                 <node concept="10Nm6u" id="2vkvJYT27QW" role="3uHU7w" />
                 <node concept="2OqwBi" id="2vkvJYT26G0" role="3uHU7B">
                   <node concept="1PxgMI" id="2vkvJYT266b" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="2vkvJYT26t3" role="3oSUPX">
                       <ref role="cht4Q" to="gx5r:4YhD5cZsmGJ" resolve="OutPort" />
                     </node>
@@ -1144,6 +1147,7 @@
                         <node concept="2OqwBi" id="2vkvJYThQS5" role="25WWJ7">
                           <node concept="1$rogu" id="2vkvJYThRc0" role="2OqNvi" />
                           <node concept="1PxgMI" id="C_BpXjKEM$" role="2Oq$k0">
+                            <property role="1BlNFB" value="true" />
                             <node concept="chp4Y" id="C_BpXjKF8h" role="3oSUPX">
                               <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
                             </node>
