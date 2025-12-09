@@ -4,7 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
@@ -206,18 +206,12 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -1640,13 +1634,29 @@
       </node>
       <node concept="3clFbS" id="2uR5X5ayxoM" role="3clF47" />
       <node concept="P$JXv" id="28GlH0_AU9t" role="lGtFl">
-        <node concept="TZ5HA" id="28GlH0_AU9U" role="TZ5H$">
-          <node concept="1dT_AC" id="28GlH0_AU9V" role="1dT_Ay">
-            <property role="1dT_AB" value="Deprecated in favor of IVisibleElementProvider" />
+        <node concept="TZ5HI" id="28GlH0_AU9u" role="3nqlJM">
+          <node concept="1PaTwC" id="2R_WpMdOyfA" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOyfB" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
           </node>
         </node>
-        <node concept="TZ5HI" id="28GlH0_AU9u" role="3nqlJM">
-          <node concept="TZ5HA" id="28GlH0_AU9v" role="3HnX3l" />
+        <node concept="1PaTwC" id="2R_WpMdOyfw" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdOyfx" role="1PaTwD">
+            <property role="3oM_SC" value="Deprecated" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfy" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfz" role="1PaTwD">
+            <property role="3oM_SC" value="favor" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyf$" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyf_" role="1PaTwD">
+            <property role="3oM_SC" value="IVisibleElementProvider" />
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="28GlH0_AU9w" role="2AJF6D">
@@ -3507,11 +3517,27 @@
       <node concept="3clFbS" id="69zaTr1N3Qg" role="3clF47" />
       <node concept="P$JXv" id="28GlH0_AU42" role="lGtFl">
         <node concept="TZ5HI" id="28GlH0_AU43" role="3nqlJM">
-          <node concept="TZ5HA" id="28GlH0_AU44" role="3HnX3l" />
+          <node concept="1PaTwC" id="2R_WpMdOyfI" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOyfJ" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
         </node>
-        <node concept="TZ5HA" id="28GlH0_AU4v" role="TZ5H$">
-          <node concept="1dT_AC" id="28GlH0_AU4w" role="1dT_Ay">
-            <property role="1dT_AB" value="Deprecated in favor of IVisibleElementProvider" />
+        <node concept="1PaTwC" id="2R_WpMdOyfC" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdOyfD" role="1PaTwD">
+            <property role="3oM_SC" value="Deprecated" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfE" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfF" role="1PaTwD">
+            <property role="3oM_SC" value="favor" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfG" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfH" role="1PaTwD">
+            <property role="3oM_SC" value="IVisibleElementProvider" />
           </node>
         </node>
       </node>
@@ -3607,13 +3633,29 @@
       </node>
       <node concept="3clFbS" id="7D7uZV2eU0z" role="3clF47" />
       <node concept="P$JXv" id="28GlH0_AUa6" role="lGtFl">
-        <node concept="TZ5HA" id="28GlH0_AUaz" role="TZ5H$">
-          <node concept="1dT_AC" id="28GlH0_AUa$" role="1dT_Ay">
-            <property role="1dT_AB" value="Deprecated in favor of IVisibleElementProvider" />
+        <node concept="TZ5HI" id="28GlH0_AUa7" role="3nqlJM">
+          <node concept="1PaTwC" id="2R_WpMdOyfQ" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOyfR" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
           </node>
         </node>
-        <node concept="TZ5HI" id="28GlH0_AUa7" role="3nqlJM">
-          <node concept="TZ5HA" id="28GlH0_AUa8" role="3HnX3l" />
+        <node concept="1PaTwC" id="2R_WpMdOyfK" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdOyfL" role="1PaTwD">
+            <property role="3oM_SC" value="Deprecated" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfM" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfN" role="1PaTwD">
+            <property role="3oM_SC" value="favor" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfO" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfP" role="1PaTwD">
+            <property role="3oM_SC" value="IVisibleElementProvider" />
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="28GlH0_AUa9" role="2AJF6D">
@@ -4610,13 +4652,29 @@
       </node>
       <node concept="3clFbS" id="6HHp2WngtVg" role="3clF47" />
       <node concept="P$JXv" id="28GlH0_AUaJ" role="lGtFl">
-        <node concept="TZ5HA" id="28GlH0_AUbc" role="TZ5H$">
-          <node concept="1dT_AC" id="28GlH0_AUbd" role="1dT_Ay">
-            <property role="1dT_AB" value="Deprecated in favor of IVisibleElementProvider" />
+        <node concept="TZ5HI" id="28GlH0_AUaK" role="3nqlJM">
+          <node concept="1PaTwC" id="2R_WpMdOyfY" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOyfZ" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
           </node>
         </node>
-        <node concept="TZ5HI" id="28GlH0_AUaK" role="3nqlJM">
-          <node concept="TZ5HA" id="28GlH0_AUaL" role="3HnX3l" />
+        <node concept="1PaTwC" id="2R_WpMdOyfS" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdOyfT" role="1PaTwD">
+            <property role="3oM_SC" value="Deprecated" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfU" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfV" role="1PaTwD">
+            <property role="3oM_SC" value="favor" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfW" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyfX" role="1PaTwD">
+            <property role="3oM_SC" value="IVisibleElementProvider" />
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="28GlH0_AUaM" role="2AJF6D">
@@ -6571,13 +6629,29 @@
       </node>
       <node concept="3clFbS" id="67Y8mp$DN6x" role="3clF47" />
       <node concept="P$JXv" id="28GlH0_AU4G" role="lGtFl">
-        <node concept="TZ5HA" id="28GlH0_AU9h" role="TZ5H$">
-          <node concept="1dT_AC" id="28GlH0_AU9i" role="1dT_Ay">
-            <property role="1dT_AB" value="Deprecated in favor of IVisibleElementProvider" />
+        <node concept="TZ5HI" id="28GlH0_AU4H" role="3nqlJM">
+          <node concept="1PaTwC" id="2R_WpMdOyg6" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOyg7" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
           </node>
         </node>
-        <node concept="TZ5HI" id="28GlH0_AU4H" role="3nqlJM">
-          <node concept="TZ5HA" id="28GlH0_AU4I" role="3HnX3l" />
+        <node concept="1PaTwC" id="2R_WpMdOyg0" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdOyg1" role="1PaTwD">
+            <property role="3oM_SC" value="Deprecated" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyg2" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyg3" role="1PaTwD">
+            <property role="3oM_SC" value="favor" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyg4" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOyg5" role="1PaTwD">
+            <property role="3oM_SC" value="IVisibleElementProvider" />
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="28GlH0_AU4J" role="2AJF6D">
@@ -7022,7 +7096,11 @@
       <node concept="3clFbS" id="6NHlpK$oaBX" role="3clF47" />
       <node concept="P$JXv" id="28GlH0_CLma" role="lGtFl">
         <node concept="TZ5HI" id="28GlH0_CLmb" role="3nqlJM">
-          <node concept="TZ5HA" id="28GlH0_CLmc" role="3HnX3l" />
+          <node concept="1PaTwC" id="2R_WpMdOyg8" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOyg9" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="28GlH0_CLmd" role="2AJF6D">
