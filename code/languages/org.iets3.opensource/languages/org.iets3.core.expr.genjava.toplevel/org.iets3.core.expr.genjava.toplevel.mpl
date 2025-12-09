@@ -195,6 +195,7 @@
   <runtime>
     <dependency reexport="false">52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)</dependency>
     <dependency reexport="false">336cc7f4-18d3-473b-81a1-d8df1c0ad27a(org.iets3.core.expr.genjava.toplevel.rt)</dependency>
+    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
   </runtime>
   <extendedLanguages />
 </language>
