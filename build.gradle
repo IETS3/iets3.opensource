@@ -121,7 +121,7 @@ dependencies {
     // For a release version of MPS, use this dependency:
     //mps "com.jetbrains:mps:$mpsBuild"
     mps "com.jetbrains.mps:mps-prerelease:$mpsVersion"
-    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:0.3.0.+")
+    rerunMigrationsBackend("de.itemis.mps.build-backends:remigrate:1.0.0.+")
     languageLibs "org.mpsqa:all-in-one:$mpsQAVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
     junitAnt 'org.apache.ant:ant-junit:1.10.15'
@@ -315,9 +315,11 @@ tasks.register('remigrate', Remigrate) {
     mpsHome = mpsHomeDir
     projectDirectories.from('code/languages/org.iets3.opensource')
     folderMacros['iets3.github.opensource.home'] = rootProject.layout.projectDirectory
-
     pluginRoots.from(new File(mpsHomeDir, 'plugins'))
     maxHeapSize = '4G'
+    excludeModuleMigration("de.itemis.mps.editor.diagram", 0)
+    // not rerunnable until MPS-39315 is fixed
+    excludeModuleMigration("jetbrains.mps.baseLanguage.javadoc", 0)
 }
 
 File modelcheckresult = new File("$buildDir/TEST-checkProject.xml")
