@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -212,6 +213,13 @@
       <node concept="trNpa" id="7z6TQkzLtmc" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7UbQLM_m7K$">
+    <property role="EcuMT" value="9118622786621307940" />
+    <property role="TrG5h" value="IVisibleElementProviderSource" />
+    <node concept="PrWs8" id="7UbQLM_m7KA" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
   </node>
 </model>

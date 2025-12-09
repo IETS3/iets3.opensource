@@ -2408,6 +2408,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="7UbQLM_mw0T" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1azguFQNaDo">
     <property role="EcuMT" value="1342989591305300568" />

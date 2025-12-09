@@ -107,6 +107,7 @@
     <language slang="l:9b66c5c9-38bf-4315-a96f-9f4e212c69cb:org.iets3.variability.base" version="0" />
     <language slang="l:71226ee2-bbc4-45d2-a41d-20b97237156c:org.iets3.variability.configuration.base" version="2" />
     <language slang="l:165f1d05-2506-4544-895e-1424f54166ec:org.iets3.variability.featuremodel.base" version="24" />
+    <language slang="l:5986b852-d7b0-4395-aa21-10286232187f:test.ts.expr.os.customization" version="0" />
     <language slang="l:b80fab4e-53f2-409c-81d8-3475855e0e42:test.ts.expr.os.nix" version="0" />
     <language slang="l:a2242e6f-d308-41e6-ac06-28b0a2a4ad79:test.ts.expr.os.validNameConcept" version="0" />
   </languageVersions>
