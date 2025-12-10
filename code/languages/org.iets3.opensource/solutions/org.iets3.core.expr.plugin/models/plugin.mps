@@ -8,7 +8,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
@@ -292,17 +292,11 @@
       <concept id="1225797177491" name="jetbrains.mps.baseLanguage.closures.structure.InvokeFunctionOperation" flags="nn" index="1Bd96e" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -353,6 +347,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences">
@@ -597,31 +599,163 @@
       <node concept="3Tm1VV" id="6l5633boUEs" role="1B3o_S" />
       <node concept="3cqZAl" id="6l5633boUYX" role="3clF45" />
       <node concept="P$JXv" id="6l5633bp5qb" role="lGtFl">
-        <node concept="TZ5HA" id="6l5633bp5qc" role="TZ5H$">
-          <node concept="1dT_AC" id="6l5633bp5qd" role="1dT_Ay">
-            <property role="1dT_AB" value="Invokes all disposables" />
+        <node concept="1PaTwC" id="2R_WpMdO_fs" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdO_ft" role="1PaTwD">
+            <property role="3oM_SC" value="Invokes" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_fu" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_fv" role="1PaTwD">
+            <property role="3oM_SC" value="disposables" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="1jYY0u2Oaod" role="1B3o_S" />
     <node concept="3UR2Jj" id="6l5633bocFr" role="lGtFl">
-      <node concept="TZ5HA" id="6l5633bocFs" role="TZ5H$">
-        <node concept="1dT_AC" id="6l5633bocFt" role="1dT_Ay">
-          <property role="1dT_AB" value="Maintains a global map of disposables that will be disposed by DisposeDisposables plugin." />
+      <node concept="1PaTwC" id="2R_WpMdO_et" role="1Vez_I">
+        <node concept="3oM_SD" id="2R_WpMdO_eu" role="1PaTwD">
+          <property role="3oM_SC" value="Maintains" />
         </node>
-        <node concept="1dT_AC" id="6l5633bocGn" role="1dT_Ay">
-          <property role="1dT_AB" value=" This is mainly useful" />
+        <node concept="3oM_SD" id="2R_WpMdO_ev" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_ew" role="1PaTwD">
+          <property role="3oM_SC" value="global" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_ex" role="1PaTwD">
+          <property role="3oM_SC" value="map" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_ey" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_ez" role="1PaTwD">
+          <property role="3oM_SC" value="disposables" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_e$" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_e_" role="1PaTwD">
+          <property role="3oM_SC" value="will" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eA" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eB" role="1PaTwD">
+          <property role="3oM_SC" value="disposed" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eC" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eD" role="1PaTwD">
+          <property role="3oM_SC" value="DisposeDisposables" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eE" role="1PaTwD">
+          <property role="3oM_SC" value="plugin." />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eF" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eG" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eH" role="1PaTwD">
+          <property role="3oM_SC" value="mainly" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eI" role="1PaTwD">
+          <property role="3oM_SC" value="useful" />
         </node>
       </node>
-      <node concept="TZ5HA" id="6l5633boug4" role="TZ5H$">
-        <node concept="1dT_AC" id="6l5633boug5" role="1dT_Ay">
-          <property role="1dT_AB" value="during development when classes are often being reloaded. The map has to be global because plugins can't be looked up" />
+      <node concept="1PaTwC" id="2R_WpMdO_eJ" role="1Vez_I">
+        <node concept="3oM_SD" id="2R_WpMdO_eK" role="1PaTwD">
+          <property role="3oM_SC" value="during" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eL" role="1PaTwD">
+          <property role="3oM_SC" value="development" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eM" role="1PaTwD">
+          <property role="3oM_SC" value="when" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eN" role="1PaTwD">
+          <property role="3oM_SC" value="classes" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eO" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eP" role="1PaTwD">
+          <property role="3oM_SC" value="often" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eQ" role="1PaTwD">
+          <property role="3oM_SC" value="being" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eR" role="1PaTwD">
+          <property role="3oM_SC" value="reloaded." />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eS" role="1PaTwD">
+          <property role="3oM_SC" value="The" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eT" role="1PaTwD">
+          <property role="3oM_SC" value="map" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eU" role="1PaTwD">
+          <property role="3oM_SC" value="has" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eV" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eW" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eX" role="1PaTwD">
+          <property role="3oM_SC" value="global" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eY" role="1PaTwD">
+          <property role="3oM_SC" value="because" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_eZ" role="1PaTwD">
+          <property role="3oM_SC" value="plugins" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_f0" role="1PaTwD">
+          <property role="3oM_SC" value="can't" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_f1" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_f2" role="1PaTwD">
+          <property role="3oM_SC" value="looked" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_f3" role="1PaTwD">
+          <property role="3oM_SC" value="up" />
         </node>
       </node>
-      <node concept="TZ5HA" id="IFMORVq$D6" role="TZ5H$">
-        <node concept="1dT_AC" id="IFMORVq$D7" role="1dT_Ay">
-          <property role="1dT_AB" value="in the project and can't have methods on them." />
+      <node concept="1PaTwC" id="2R_WpMdO_f4" role="1Vez_I">
+        <node concept="3oM_SD" id="2R_WpMdO_f5" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_f6" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_f7" role="1PaTwD">
+          <property role="3oM_SC" value="project" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_f8" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_f9" role="1PaTwD">
+          <property role="3oM_SC" value="can't" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fa" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fb" role="1PaTwD">
+          <property role="3oM_SC" value="methods" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fc" role="1PaTwD">
+          <property role="3oM_SC" value="on" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fd" role="1PaTwD">
+          <property role="3oM_SC" value="them." />
         </node>
       </node>
     </node>
@@ -1221,9 +1355,45 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="3pe13QaxwzU" role="lGtFl">
-      <node concept="TZ5HA" id="3pe13QaxwzV" role="TZ5H$">
-        <node concept="1dT_AC" id="3pe13QaxwzW" role="1dT_Ay">
-          <property role="1dT_AB" value="Attaches trace information from a trace record to MPS nodes as user objects." />
+      <node concept="1PaTwC" id="2R_WpMdO_fe" role="1Vez_I">
+        <node concept="3oM_SD" id="2R_WpMdO_ff" role="1PaTwD">
+          <property role="3oM_SC" value="Attaches" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fg" role="1PaTwD">
+          <property role="3oM_SC" value="trace" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fh" role="1PaTwD">
+          <property role="3oM_SC" value="information" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fi" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fj" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fk" role="1PaTwD">
+          <property role="3oM_SC" value="trace" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fl" role="1PaTwD">
+          <property role="3oM_SC" value="record" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fm" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fn" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fo" role="1PaTwD">
+          <property role="3oM_SC" value="nodes" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fp" role="1PaTwD">
+          <property role="3oM_SC" value="as" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fq" role="1PaTwD">
+          <property role="3oM_SC" value="user" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fr" role="1PaTwD">
+          <property role="3oM_SC" value="objects." />
         </node>
       </node>
     </node>

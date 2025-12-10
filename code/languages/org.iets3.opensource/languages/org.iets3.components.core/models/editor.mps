@@ -11,7 +11,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
@@ -455,22 +455,15 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="6612597108003615641" name="jetbrains.mps.baseLanguage.javadoc.structure.HTMLElement" flags="ng" index="2U$1Ah">
-        <property id="6612597108003615642" name="name" index="2U$1Ai" />
-        <child id="6612597108003615643" name="line" index="2U$1Aj" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
@@ -781,6 +774,18 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="1436320362825107485" name="jetbrains.mps.lang.text.structure.UniversalHtmlTag" flags="ng" index="22dLRv">
+        <property id="1436320362825107486" name="name" index="22dLRs" />
+        <child id="1436320362825109043" name="body" index="22dLJL" />
+      </concept>
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -12841,52 +12846,85 @@
       </node>
       <node concept="3Tm1VV" id="67E2MoTrITH" role="1B3o_S" />
       <node concept="P$JXv" id="5zu5MmJSQch" role="lGtFl">
-        <node concept="TZ5HA" id="5zu5MmJSQci" role="TZ5H$">
-          <node concept="1dT_AC" id="5zu5MmJSQcj" role="1dT_Ay">
-            <property role="1dT_AB" value="Creates Import- or ExportConnector. Either " />
-          </node>
-          <node concept="1dT_AC" id="5zu5MmJSQIG" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-          <node concept="2U$1Ah" id="5zu5MmJSQFh" role="1dT_Ay">
-            <property role="2U$1Ai" value="code" />
-            <node concept="TZ5HA" id="5zu5MmJSQFi" role="2U$1Aj">
-              <node concept="1dT_AC" id="5zu5MmJSMBh" role="1dT_Ay">
-                <property role="1dT_AB" value="outerPort" />
-              </node>
-            </node>
-          </node>
-          <node concept="1dT_AC" id="5zu5MmJSQCr" role="1dT_Ay">
-            <property role="1dT_AB" value=" or " />
-          </node>
-          <node concept="2U$1Ah" id="5zu5MmJSQHJ" role="1dT_Ay">
-            <property role="2U$1Ai" value="code" />
-            <node concept="TZ5HA" id="5zu5MmJSQHK" role="2U$1Aj">
-              <node concept="1dT_AC" id="5zu5MmJSQIi" role="1dT_Ay">
-                <property role="1dT_AB" value="innerPortName" />
-              </node>
-            </node>
-          </node>
-          <node concept="1dT_AC" id="5zu5MmJSQHI" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-          <node concept="1dT_AC" id="5zu5MmJSQG4" role="1dT_Ay">
-            <property role="1dT_AB" value=" should not be null." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="5zu5MmJSQck" role="3nqlJM">
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="5zu5MmJSQcm" role="zr_5Q">
             <ref role="zr_51" node="67E2MoTrIRL" resolve="outerPort" />
           </node>
+          <node concept="1PaTwC" id="2R_WpMdOxL9" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOxLa" role="1PaTwD" />
+          </node>
         </node>
         <node concept="TUZQ0" id="5zu5MmJSQcn" role="3nqlJM">
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="5zu5MmJSQcp" role="zr_5Q">
             <ref role="zr_51" node="67E2MoTrIRN" resolve="compInstanceBase" />
           </node>
+          <node concept="1PaTwC" id="2R_WpMdOxLb" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOxLc" role="1PaTwD" />
+          </node>
         </node>
         <node concept="TUZQ0" id="5zu5MmJSQcq" role="3nqlJM">
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="5zu5MmJSQcs" role="zr_5Q">
             <ref role="zr_51" node="67E2MoTrIRP" resolve="innerPortName" />
+          </node>
+          <node concept="1PaTwC" id="2R_WpMdOxLd" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOxLe" role="1PaTwD" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2R_WpMdOxKO" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdOxKP" role="1PaTwD">
+            <property role="3oM_SC" value="Creates" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxKQ" role="1PaTwD">
+            <property role="3oM_SC" value="Import-" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxKR" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxKS" role="1PaTwD">
+            <property role="3oM_SC" value="ExportConnector." />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxKT" role="1PaTwD">
+            <property role="3oM_SC" value="Either" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxKU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="22dLRv" id="2R_WpMdOxKV" role="1PaTwD">
+            <property role="22dLRs" value="code" />
+            <node concept="1PaTwC" id="2R_WpMdOxKX" role="22dLJL">
+              <node concept="3oM_SD" id="2R_WpMdOxKY" role="1PaTwD">
+                <property role="3oM_SC" value="outerPort" />
+              </node>
+            </node>
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxKZ" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="22dLRv" id="2R_WpMdOxL0" role="1PaTwD">
+            <property role="22dLRs" value="code" />
+            <node concept="1PaTwC" id="2R_WpMdOxL2" role="22dLJL">
+              <node concept="3oM_SD" id="2R_WpMdOxL3" role="1PaTwD">
+                <property role="3oM_SC" value="innerPortName" />
+              </node>
+            </node>
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxL4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxL5" role="1PaTwD">
+            <property role="3oM_SC" value="should" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxL6" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxL7" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOxL8" role="1PaTwD">
+            <property role="3oM_SC" value="null." />
           </node>
         </node>
       </node>

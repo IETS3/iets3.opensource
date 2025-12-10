@@ -9,7 +9,7 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -230,14 +230,8 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1582,19 +1576,118 @@
       </node>
       <node concept="3Tm1VV" id="4aV802KNQV6" role="1B3o_S" />
       <node concept="z59LJ" id="Z99eMyfgmh" role="lGtFl">
-        <node concept="TZ5HA" id="Z99eMyfgmi" role="TZ5H$">
-          <node concept="1dT_AC" id="Z99eMyfgmj" role="1dT_Ay">
-            <property role="1dT_AB" value="Value set for the node representing a column in the computation trace by this helper. " />
+        <node concept="1PaTwC" id="2R_WpMdO_gd" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdO_ge" role="1PaTwD">
+            <property role="3oM_SC" value="Value" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gf" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gg" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gh" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gi" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gj" role="1PaTwD">
+            <property role="3oM_SC" value="representing" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gk" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gl" role="1PaTwD">
+            <property role="3oM_SC" value="column" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gm" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gn" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_go" role="1PaTwD">
+            <property role="3oM_SC" value="computation" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gp" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gq" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gr" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gs" role="1PaTwD">
+            <property role="3oM_SC" value="helper." />
           </node>
         </node>
-        <node concept="TZ5HA" id="Z99eMyfkbk" role="TZ5H$">
-          <node concept="1dT_AC" id="Z99eMyfkbl" role="1dT_Ay">
-            <property role="1dT_AB" value="Knowing the value that is used to indicate that the column was matched is useful for analyses " />
+        <node concept="1PaTwC" id="2R_WpMdO_gt" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdO_gu" role="1PaTwD">
+            <property role="3oM_SC" value="Knowing" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gv" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gw" role="1PaTwD">
+            <property role="3oM_SC" value="value" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gx" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gy" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gz" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_g$" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_g_" role="1PaTwD">
+            <property role="3oM_SC" value="indicate" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gA" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gB" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gC" role="1PaTwD">
+            <property role="3oM_SC" value="column" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gD" role="1PaTwD">
+            <property role="3oM_SC" value="was" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gE" role="1PaTwD">
+            <property role="3oM_SC" value="matched" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gF" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gG" role="1PaTwD">
+            <property role="3oM_SC" value="useful" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gH" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gI" role="1PaTwD">
+            <property role="3oM_SC" value="analyses" />
           </node>
         </node>
-        <node concept="TZ5HA" id="Z99eMyfkeO" role="TZ5H$">
-          <node concept="1dT_AC" id="Z99eMyfkeP" role="1dT_Ay">
-            <property role="1dT_AB" value="scenarios like coverage reporting." />
+        <node concept="1PaTwC" id="2R_WpMdO_gJ" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdO_gK" role="1PaTwD">
+            <property role="3oM_SC" value="scenarios" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gL" role="1PaTwD">
+            <property role="3oM_SC" value="like" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gM" role="1PaTwD">
+            <property role="3oM_SC" value="coverage" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gN" role="1PaTwD">
+            <property role="3oM_SC" value="reporting." />
           </node>
         </node>
       </node>
@@ -1608,19 +1701,118 @@
         <property role="Xl_RC" value="row matched" />
       </node>
       <node concept="z59LJ" id="Z99eMyfgpV" role="lGtFl">
-        <node concept="TZ5HA" id="Z99eMyfgpW" role="TZ5H$">
-          <node concept="1dT_AC" id="Z99eMyfgpX" role="1dT_Ay">
-            <property role="1dT_AB" value="Value set for the node representing a row in the computation trace by this helper. " />
+        <node concept="1PaTwC" id="2R_WpMdO_gO" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdO_gP" role="1PaTwD">
+            <property role="3oM_SC" value="Value" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gQ" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gR" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gS" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gT" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gU" role="1PaTwD">
+            <property role="3oM_SC" value="representing" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gV" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gW" role="1PaTwD">
+            <property role="3oM_SC" value="row" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gX" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gY" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_gZ" role="1PaTwD">
+            <property role="3oM_SC" value="computation" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_h0" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_h1" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_h2" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_h3" role="1PaTwD">
+            <property role="3oM_SC" value="helper." />
           </node>
         </node>
-        <node concept="TZ5HA" id="Z99eMyfiwz" role="TZ5H$">
-          <node concept="1dT_AC" id="Z99eMyfiw$" role="1dT_Ay">
-            <property role="1dT_AB" value="Knowing the value that is used to indicate that the row was matched is useful for analyses " />
+        <node concept="1PaTwC" id="2R_WpMdO_h4" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdO_h5" role="1PaTwD">
+            <property role="3oM_SC" value="Knowing" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_h6" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_h7" role="1PaTwD">
+            <property role="3oM_SC" value="value" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_h8" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_h9" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_ha" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hb" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hc" role="1PaTwD">
+            <property role="3oM_SC" value="indicate" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hd" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_he" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hf" role="1PaTwD">
+            <property role="3oM_SC" value="row" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hg" role="1PaTwD">
+            <property role="3oM_SC" value="was" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hh" role="1PaTwD">
+            <property role="3oM_SC" value="matched" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hi" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hj" role="1PaTwD">
+            <property role="3oM_SC" value="useful" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hk" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hl" role="1PaTwD">
+            <property role="3oM_SC" value="analyses" />
           </node>
         </node>
-        <node concept="TZ5HA" id="Z99eMyfi$3" role="TZ5H$">
-          <node concept="1dT_AC" id="Z99eMyfi$4" role="1dT_Ay">
-            <property role="1dT_AB" value="scenarios like coverage reporting." />
+        <node concept="1PaTwC" id="2R_WpMdO_hm" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdO_hn" role="1PaTwD">
+            <property role="3oM_SC" value="scenarios" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_ho" role="1PaTwD">
+            <property role="3oM_SC" value="like" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hp" role="1PaTwD">
+            <property role="3oM_SC" value="coverage" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hq" role="1PaTwD">
+            <property role="3oM_SC" value="reporting." />
           </node>
         </node>
       </node>
@@ -2737,19 +2929,118 @@
       </node>
       <node concept="3Tm1VV" id="1gN9ELr2W21" role="1B3o_S" />
       <node concept="z59LJ" id="1gN9ELr3ApI" role="lGtFl">
-        <node concept="TZ5HA" id="1gN9ELr3ApJ" role="TZ5H$">
-          <node concept="1dT_AC" id="1gN9ELr3ApK" role="1dT_Ay">
-            <property role="1dT_AB" value="Value set for the node representing a row in the computation trace by this helper. " />
+        <node concept="1PaTwC" id="2R_WpMdO_hr" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdO_hs" role="1PaTwD">
+            <property role="3oM_SC" value="Value" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_ht" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hu" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hv" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hw" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hx" role="1PaTwD">
+            <property role="3oM_SC" value="representing" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hy" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hz" role="1PaTwD">
+            <property role="3oM_SC" value="row" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_h$" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_h_" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hA" role="1PaTwD">
+            <property role="3oM_SC" value="computation" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hB" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hC" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hD" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hE" role="1PaTwD">
+            <property role="3oM_SC" value="helper." />
           </node>
         </node>
-        <node concept="TZ5HA" id="1gN9ELr3AH1" role="TZ5H$">
-          <node concept="1dT_AC" id="1gN9ELr3AH2" role="1dT_Ay">
-            <property role="1dT_AB" value="Knowing the value that is used to indicate that the row was matched is useful for analyses " />
+        <node concept="1PaTwC" id="2R_WpMdO_hF" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdO_hG" role="1PaTwD">
+            <property role="3oM_SC" value="Knowing" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hH" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hI" role="1PaTwD">
+            <property role="3oM_SC" value="value" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hJ" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hK" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hL" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hM" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hN" role="1PaTwD">
+            <property role="3oM_SC" value="indicate" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hO" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hP" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hQ" role="1PaTwD">
+            <property role="3oM_SC" value="row" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hR" role="1PaTwD">
+            <property role="3oM_SC" value="was" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hS" role="1PaTwD">
+            <property role="3oM_SC" value="matched" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hT" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hU" role="1PaTwD">
+            <property role="3oM_SC" value="useful" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hV" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hW" role="1PaTwD">
+            <property role="3oM_SC" value="analyses" />
           </node>
         </node>
-        <node concept="TZ5HA" id="1gN9ELr3ATE" role="TZ5H$">
-          <node concept="1dT_AC" id="1gN9ELr3ATF" role="1dT_Ay">
-            <property role="1dT_AB" value="scenarios like coverage reporting." />
+        <node concept="1PaTwC" id="2R_WpMdO_hX" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdO_hY" role="1PaTwD">
+            <property role="3oM_SC" value="scenarios" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_hZ" role="1PaTwD">
+            <property role="3oM_SC" value="like" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_i0" role="1PaTwD">
+            <property role="3oM_SC" value="coverage" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdO_i1" role="1PaTwD">
+            <property role="3oM_SC" value="reporting." />
           </node>
         </node>
       </node>
