@@ -12727,6 +12727,9 @@
             <ref role="3bR37D" node="26tZ$Z4roBX" resolve="org.iets3.core.expr.genjava.base.rt" />
           </node>
         </node>
+        <node concept="1E0d5M" id="2ESPRIEicA_" role="1E1XAP">
+          <ref role="1E0d5P" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+        </node>
       </node>
       <node concept="1E1JtD" id="5BQDrmkjrxX" role="2G$12L">
         <property role="TrG5h" value="org.iets3.core.expr.genjava.stringvalidation" />
@@ -17288,6 +17291,11 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3lHAm4fvxyw" role="3bR37C">
+        <node concept="3bR9La" id="3lHAm4fvxyx" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
         </node>
       </node>
     </node>
