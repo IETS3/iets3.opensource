@@ -18,7 +18,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 
 - Variability: Remove deprecated concepts `VariabilityModelChunk_old`, and some related concepts.
-
+- Typesystem: All usages of colon casts were transformed to the 'as' cast for null safety. From now on no colon casts are allowed in the typesystem, also read this issue for more info: https://github.com/IETS3/iets3.opensource/issues/688
 
 ## November 2025
 
