@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
@@ -212,16 +212,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -2775,9 +2769,36 @@
     <node concept="2tJIrI" id="6I2TeLIp6S6" role="jymVt" />
     <node concept="3Tm1VV" id="6IxV2nShzcz" role="1B3o_S" />
     <node concept="3UR2Jj" id="2xddOZKvNve" role="lGtFl">
-      <node concept="TZ5HA" id="2xddOZKvNvf" role="TZ5H$">
-        <node concept="1dT_AC" id="2xddOZKvNvg" role="1dT_Ay">
-          <property role="1dT_AB" value="Arithmetic helper. Used from both the interpreter and the generator." />
+      <node concept="1PaTwC" id="2R_WpMdO_fw" role="1Vez_I">
+        <node concept="3oM_SD" id="2R_WpMdO_fx" role="1PaTwD">
+          <property role="3oM_SC" value="Arithmetic" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fy" role="1PaTwD">
+          <property role="3oM_SC" value="helper." />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fz" role="1PaTwD">
+          <property role="3oM_SC" value="Used" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_f$" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_f_" role="1PaTwD">
+          <property role="3oM_SC" value="both" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fA" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fB" role="1PaTwD">
+          <property role="3oM_SC" value="interpreter" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fC" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fD" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fE" role="1PaTwD">
+          <property role="3oM_SC" value="generator." />
         </node>
       </node>
     </node>
@@ -4786,9 +4807,21 @@
     </node>
     <node concept="3Tm1VV" id="36hsHVf8gwx" role="1B3o_S" />
     <node concept="3UR2Jj" id="36hsHVf8hJa" role="lGtFl">
-      <node concept="TZ5HA" id="36hsHVf8hJb" role="TZ5H$">
-        <node concept="1dT_AC" id="36hsHVf8hJc" role="1dT_Ay">
-          <property role="1dT_AB" value="Generic helper methods for objects" />
+      <node concept="1PaTwC" id="2R_WpMdO_fF" role="1Vez_I">
+        <node concept="3oM_SD" id="2R_WpMdO_fG" role="1PaTwD">
+          <property role="3oM_SC" value="Generic" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fH" role="1PaTwD">
+          <property role="3oM_SC" value="helper" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fI" role="1PaTwD">
+          <property role="3oM_SC" value="methods" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fJ" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="2R_WpMdO_fK" role="1PaTwD">
+          <property role="3oM_SC" value="objects" />
         </node>
       </node>
     </node>

@@ -5,7 +5,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
   </languages>
   <imports>
@@ -110,7 +110,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -118,11 +117,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
@@ -344,42 +340,121 @@
         <ref role="ehGHo" to="vs0r:K292flwCEW" resolve="Assessment" />
       </node>
       <node concept="P$JXv" id="3GrH80ZAIsk" role="lGtFl">
-        <node concept="TZ5HA" id="3GrH80ZAIsl" role="TZ5H$">
-          <node concept="1dT_AC" id="3GrH80ZAIsm" role="1dT_Ay">
-            <property role="1dT_AB" value="We can't use node pointers, because some generator is dropping assessments." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="3GrH80ZAJAo" role="TZ5H$">
-          <node concept="1dT_AC" id="3GrH80ZAJAp" role="1dT_Ay">
-            <property role="1dT_AB" value="Therefor we use their underlying node/model IDs to deserialize" />
-          </node>
-        </node>
         <node concept="TUZQ0" id="3GrH80ZAIsn" role="3nqlJM">
-          <property role="TUZQ4" value="nodeId" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="3GrH80ZAIsp" role="zr_5Q">
             <ref role="zr_51" node="3GrH80Zi0qn" resolve="nodeId" />
           </node>
+          <node concept="1PaTwC" id="2R_WpMdOAmN" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOAmO" role="1PaTwD">
+              <property role="3oM_SC" value="nodeId" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="3GrH80ZAIsq" role="3nqlJM">
-          <property role="TUZQ4" value="mdlName" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="3GrH80ZAIss" role="zr_5Q">
             <ref role="zr_51" node="3GrH80Zi0qp" resolve="mdlName" />
           </node>
+          <node concept="1PaTwC" id="2R_WpMdOAmP" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOAmQ" role="1PaTwD">
+              <property role="3oM_SC" value="mdlName" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="3GrH80ZAIst" role="3nqlJM">
-          <property role="TUZQ4" value="mdlID" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="3GrH80ZAIsv" role="zr_5Q">
             <ref role="zr_51" node="3GrH80Zi0qr" resolve="mdlID" />
           </node>
+          <node concept="1PaTwC" id="2R_WpMdOAmR" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOAmS" role="1PaTwD">
+              <property role="3oM_SC" value="mdlID" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="3GrH80ZAIsw" role="3nqlJM">
-          <property role="TUZQ4" value="repo" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="3GrH80ZAIsy" role="zr_5Q">
             <ref role="zr_51" node="3GrH80Zi0qt" resolve="repo" />
           </node>
+          <node concept="1PaTwC" id="2R_WpMdOAmT" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOAmU" role="1PaTwD">
+              <property role="3oM_SC" value="repo" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="3GrH80ZAIsz" role="3nqlJM">
-          <property role="x79VB" value="assessment" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="2R_WpMdOAmV" role="1Vez_I">
+            <node concept="3oM_SD" id="2R_WpMdOAmW" role="1PaTwD">
+              <property role="3oM_SC" value="assessment" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2R_WpMdOAmt" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdOAmu" role="1PaTwD">
+            <property role="3oM_SC" value="We" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmv" role="1PaTwD">
+            <property role="3oM_SC" value="can't" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmw" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmx" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmy" role="1PaTwD">
+            <property role="3oM_SC" value="pointers," />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmz" role="1PaTwD">
+            <property role="3oM_SC" value="because" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAm$" role="1PaTwD">
+            <property role="3oM_SC" value="some" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAm_" role="1PaTwD">
+            <property role="3oM_SC" value="generator" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmA" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmB" role="1PaTwD">
+            <property role="3oM_SC" value="dropping" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmC" role="1PaTwD">
+            <property role="3oM_SC" value="assessments." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2R_WpMdOAmD" role="1Vez_I">
+          <node concept="3oM_SD" id="2R_WpMdOAmE" role="1PaTwD">
+            <property role="3oM_SC" value="Therefor" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmF" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmG" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmH" role="1PaTwD">
+            <property role="3oM_SC" value="their" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmI" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmJ" role="1PaTwD">
+            <property role="3oM_SC" value="node/model" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmK" role="1PaTwD">
+            <property role="3oM_SC" value="IDs" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmL" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2R_WpMdOAmM" role="1PaTwD">
+            <property role="3oM_SC" value="deserialize" />
+          </node>
         </node>
       </node>
     </node>
