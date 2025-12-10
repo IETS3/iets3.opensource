@@ -370,7 +370,30 @@ fun MavenPom.includeAdditionalInfo() {
     }
 }
 
-fun MavenPom.addBundledDependencies() = bundledDependencies.forEach { addDependency(it, "provided") }
+fun MavenPom.addBundledDependencies() {
+    val seen = mutableSetOf<ResolvedDependency>()
+    val queue = ArrayDeque<ResolvedDependency>()
+
+    // Visit each bundled dependency, including its transitive dependencies if so configured, so that the exact set
+    // of used JARs ends up in the POM as provided dependencies.
+    for (config in bundledDependencies) {
+        queue.addAll(config.resolvedConfiguration.firstLevelModuleDependencies)
+
+        while (!queue.isEmpty()) {
+            val dep = queue.removeFirst()
+            if (seen.add(dep)) {
+                addDependency(
+                    dep.moduleGroup,
+                    dep.moduleName,
+                    dep.moduleVersion,
+                    dep.moduleArtifacts.first().type,
+                    "provided"
+                )
+                queue.addAll(dep.children)
+            }
+        }
+    }
+}
 
 publishing {
     repositories {
@@ -408,6 +431,7 @@ publishing {
 
             pom.addDependency(languageLibs)
             pom.includeAdditionalInfo()
+            pom.addBundledDependencies()
         }
 
         create<MavenPublication>("tests") {
@@ -421,7 +445,6 @@ publishing {
                 moduleVersion = project.version.toString(),
                 type = "zip"
             )
-            pom.addBundledDependencies()
             pom.includeAdditionalInfo()
         }
         val runtimesDir = file(artifactsDir).resolve("org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os")
