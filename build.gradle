@@ -47,7 +47,7 @@ def minor = "9"
 // Dependency versions
 
 
-ext.mpsVersion = "253.28294.10044"
+ext.mpsVersion = "253.28294.10092"
 def mpsQAVersion = "$major.$minor+"
 
 
