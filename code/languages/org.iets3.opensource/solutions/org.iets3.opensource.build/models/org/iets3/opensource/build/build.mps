@@ -1893,11 +1893,6 @@
             <ref role="3bR37D" node="JUiQTzdslj" resolve="org.iets3.core.expr.typetags" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7yHH$DDpEMm" role="3bR37C">
-          <node concept="1Busua" id="7yHH$DDpEMn" role="1SiIV1">
-            <ref role="1Busuk" node="7yHH$DDpBOh" resolve="org.iets3.variability.featuremodel.base" />
-          </node>
-        </node>
         <node concept="3rtmxn" id="7yHH$DDpKD_" role="3bR31x">
           <node concept="3LXTmp" id="7yHH$DDpKDA" role="3rtmxm">
             <node concept="398BVA" id="7yHH$DDpKDB" role="3LXTmr">
@@ -1912,6 +1907,21 @@
             <node concept="3qWCbU" id="7yHH$DDpKDF" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3ZwMOJttUKF" role="3bR37C">
+          <node concept="3bR9La" id="3ZwMOJttUKG" role="1SiIV1">
+            <ref role="3bR37D" node="7yHH$DDpBOh" resolve="org.iets3.variability.featuremodel.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3ZwMOJttUKS" role="3bR37C">
+          <node concept="1Busua" id="3ZwMOJttUKT" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3ZwMOJttUKU" role="3bR37C">
+          <node concept="1Busua" id="3ZwMOJttUKV" role="1SiIV1">
+            <ref role="1Busuk" node="49WTic8jAaa" resolve="org.iets3.analysis.base" />
           </node>
         </node>
       </node>
