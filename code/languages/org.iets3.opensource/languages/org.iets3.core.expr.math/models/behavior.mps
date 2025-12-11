@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -177,11 +177,15 @@
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
-        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -252,14 +256,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
-        <property id="155656958578482949" name="value" index="3oM_SC" />
-      </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
-        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1610,110 +1606,18 @@
         </node>
       </node>
       <node concept="P$JXv" id="3C0hCYbZyPz" role="lGtFl">
+        <node concept="TZ5HA" id="3C0hCYbZyP$" role="TZ5H$">
+          <node concept="1dT_AC" id="3C0hCYbZyP_" role="1dT_Ay">
+            <property role="1dT_AB" value="The expression ast is spilt into a flat list along PlusExpression and MinusExpression like this:" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3C0hCYbZyQH" role="TZ5H$">
+          <node concept="1dT_AC" id="3C0hCYbZyQI" role="1dT_Ay">
+            <property role="1dT_AB" value=" ((3 + 4 * x) - (5 * x^2)  ---&gt;  [3*x^0,+,4*x^1,-,5*x^2]" />
+          </node>
+        </node>
         <node concept="x79VA" id="3C0hCYbZyPA" role="3nqlJM">
-          <property role="x79VB" value="" />
-          <node concept="1PaTwC" id="2R_WpMdOyc9" role="1Vez_I">
-            <node concept="3oM_SD" id="2R_WpMdOyca" role="1PaTwD">
-              <property role="3oM_SC" value="a" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOycb" role="1PaTwD">
-              <property role="3oM_SC" value="flattened" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOycc" role="1PaTwD">
-              <property role="3oM_SC" value="list." />
-            </node>
-          </node>
-        </node>
-        <node concept="1PaTwC" id="2R_WpMdOybE" role="1Vez_I">
-          <node concept="3oM_SD" id="2R_WpMdOybF" role="1PaTwD">
-            <property role="3oM_SC" value="The" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybG" role="1PaTwD">
-            <property role="3oM_SC" value="expression" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybH" role="1PaTwD">
-            <property role="3oM_SC" value="ast" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybI" role="1PaTwD">
-            <property role="3oM_SC" value="is" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybJ" role="1PaTwD">
-            <property role="3oM_SC" value="spilt" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybK" role="1PaTwD">
-            <property role="3oM_SC" value="into" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybL" role="1PaTwD">
-            <property role="3oM_SC" value="a" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybM" role="1PaTwD">
-            <property role="3oM_SC" value="flat" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybN" role="1PaTwD">
-            <property role="3oM_SC" value="list" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybO" role="1PaTwD">
-            <property role="3oM_SC" value="along" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybP" role="1PaTwD">
-            <property role="3oM_SC" value="PlusExpression" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybQ" role="1PaTwD">
-            <property role="3oM_SC" value="and" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybR" role="1PaTwD">
-            <property role="3oM_SC" value="MinusExpression" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybS" role="1PaTwD">
-            <property role="3oM_SC" value="like" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybT" role="1PaTwD">
-            <property role="3oM_SC" value="this:" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="2R_WpMdOybU" role="1Vez_I">
-          <node concept="3oM_SD" id="2R_WpMdOybV" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybW" role="1PaTwD">
-            <property role="3oM_SC" value="((3" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybX" role="1PaTwD">
-            <property role="3oM_SC" value="+" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybY" role="1PaTwD">
-            <property role="3oM_SC" value="4" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOybZ" role="1PaTwD">
-            <property role="3oM_SC" value="*" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyc0" role="1PaTwD">
-            <property role="3oM_SC" value="x)" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyc1" role="1PaTwD">
-            <property role="3oM_SC" value="-" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyc2" role="1PaTwD">
-            <property role="3oM_SC" value="(5" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyc3" role="1PaTwD">
-            <property role="3oM_SC" value="*" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyc4" role="1PaTwD">
-            <property role="3oM_SC" value="x^2)" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyc5" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyc6" role="1PaTwD">
-            <property role="3oM_SC" value="---&gt;" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyc7" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyc8" role="1PaTwD">
-            <property role="3oM_SC" value="[3*x^0,+,4*x^1,-,5*x^2]" />
-          </node>
+          <property role="x79VB" value="a flattened list." />
         </node>
       </node>
     </node>

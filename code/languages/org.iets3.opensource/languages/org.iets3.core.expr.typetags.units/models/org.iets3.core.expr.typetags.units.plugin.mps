@@ -6,7 +6,7 @@
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -296,9 +296,15 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
-        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
@@ -1699,112 +1705,19 @@
         </node>
       </node>
       <node concept="P$JXv" id="2rzAw9UV2cq" role="lGtFl">
-        <node concept="1PaTwC" id="2R_WpMdOyHJ" role="1Vez_I">
-          <node concept="3oM_SD" id="2R_WpMdOyHK" role="1PaTwD">
-            <property role="3oM_SC" value="Computes" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHL" role="1PaTwD">
-            <property role="3oM_SC" value="the" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHM" role="1PaTwD">
-            <property role="3oM_SC" value="supertype" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHN" role="1PaTwD">
-            <property role="3oM_SC" value="with" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHO" role="1PaTwD">
-            <property role="3oM_SC" value="respect" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHP" role="1PaTwD">
-            <property role="3oM_SC" value="to" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHQ" role="1PaTwD">
-            <property role="3oM_SC" value="the" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHR" role="1PaTwD">
-            <property role="3oM_SC" value="units" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHS" role="1PaTwD">
-            <property role="3oM_SC" value="in" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHT" role="1PaTwD">
-            <property role="3oM_SC" value="the" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHU" role="1PaTwD">
-            <property role="3oM_SC" value="provided" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHV" role="1PaTwD">
-            <property role="3oM_SC" value="type." />
+        <node concept="TZ5HA" id="2rzAw9UV2cr" role="TZ5H$">
+          <node concept="1dT_AC" id="2rzAw9UV2cs" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the supertype with respect to the units in the provided type." />
           </node>
         </node>
-        <node concept="1PaTwC" id="2R_WpMdOyHW" role="1Vez_I">
-          <node concept="3oM_SD" id="2R_WpMdOyHX" role="1PaTwD">
-            <property role="3oM_SC" value="Creates" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHY" role="1PaTwD">
-            <property role="3oM_SC" value="runtime" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyHZ" role="1PaTwD">
-            <property role="3oM_SC" value="error" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyI0" role="1PaTwD">
-            <property role="3oM_SC" value="types" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyI1" role="1PaTwD">
-            <property role="3oM_SC" value="if" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyI2" role="1PaTwD">
-            <property role="3oM_SC" value="not" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyI3" role="1PaTwD">
-            <property role="3oM_SC" value="all" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyI4" role="1PaTwD">
-            <property role="3oM_SC" value="types" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyI5" role="1PaTwD">
-            <property role="3oM_SC" value="will" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyI6" role="1PaTwD">
-            <property role="3oM_SC" value="have" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyI7" role="1PaTwD">
-            <property role="3oM_SC" value="the" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyI8" role="1PaTwD">
-            <property role="3oM_SC" value="same" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyI9" role="1PaTwD">
-            <property role="3oM_SC" value="unit" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyIa" role="1PaTwD">
-            <property role="3oM_SC" value="or" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyIb" role="1PaTwD">
-            <property role="3oM_SC" value="if" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyIc" role="1PaTwD">
-            <property role="3oM_SC" value="units" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyId" role="1PaTwD">
-            <property role="3oM_SC" value="types" />
+        <node concept="TZ5HA" id="5ZuZjOMj9Qn" role="TZ5H$">
+          <node concept="1dT_AC" id="5ZuZjOMj9Qo" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates runtime error types if not all types will have the same unit or if units types" />
           </node>
         </node>
-        <node concept="1PaTwC" id="2R_WpMdOyIe" role="1Vez_I">
-          <node concept="3oM_SD" id="2R_WpMdOyIf" role="1PaTwD">
-            <property role="3oM_SC" value="are" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyIg" role="1PaTwD">
-            <property role="3oM_SC" value="mixed" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyIh" role="1PaTwD">
-            <property role="3oM_SC" value="with" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyIi" role="1PaTwD">
-            <property role="3oM_SC" value="non-unit" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyIj" role="1PaTwD">
-            <property role="3oM_SC" value="types." />
+        <node concept="TZ5HA" id="69hlyJ6ePgY" role="TZ5H$">
+          <node concept="1dT_AC" id="69hlyJ6ePgZ" role="1dT_Ay">
+            <property role="1dT_AB" value="are mixed with non-unit types." />
           </node>
         </node>
       </node>

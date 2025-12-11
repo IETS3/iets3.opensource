@@ -6,7 +6,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
@@ -276,9 +276,15 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
-        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -6993,54 +6999,9 @@
         </node>
       </node>
       <node concept="P$JXv" id="45a4DYZR5Fi" role="lGtFl">
-        <node concept="1PaTwC" id="2R_WpMdOy$T" role="1Vez_I">
-          <node concept="3oM_SD" id="2R_WpMdOy$U" role="1PaTwD">
-            <property role="3oM_SC" value="The" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy$V" role="1PaTwD">
-            <property role="3oM_SC" value="assumption" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy$W" role="1PaTwD">
-            <property role="3oM_SC" value="for" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy$X" role="1PaTwD">
-            <property role="3oM_SC" value="this" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy$Y" role="1PaTwD">
-            <property role="3oM_SC" value="algorithm" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy$Z" role="1PaTwD">
-            <property role="3oM_SC" value="is" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy_0" role="1PaTwD">
-            <property role="3oM_SC" value="that" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy_1" role="1PaTwD">
-            <property role="3oM_SC" value="the" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy_2" role="1PaTwD">
-            <property role="3oM_SC" value="arguments" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy_3" role="1PaTwD">
-            <property role="3oM_SC" value="are" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy_4" role="1PaTwD">
-            <property role="3oM_SC" value="already" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy_5" role="1PaTwD">
-            <property role="3oM_SC" value="minimized." />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy_6" role="1PaTwD">
-            <property role="3oM_SC" value="Otherwise" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy_7" role="1PaTwD">
-            <property role="3oM_SC" value="recursion" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy_8" role="1PaTwD">
-            <property role="3oM_SC" value="is" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOy_9" role="1PaTwD">
-            <property role="3oM_SC" value="needed" />
+        <node concept="TZ5HA" id="45a4DYZR5Fj" role="TZ5H$">
+          <node concept="1dT_AC" id="45a4DYZR5Fk" role="1dT_Ay">
+            <property role="1dT_AB" value="The assumption for this algorithm is that the arguments are already minimized. Otherwise recursion is needed" />
           </node>
         </node>
       </node>

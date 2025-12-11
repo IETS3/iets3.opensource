@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -137,6 +137,7 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -144,8 +145,11 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
-        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
@@ -226,14 +230,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
-        <property id="155656958578482949" name="value" index="3oM_SC" />
-      </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
-        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -668,89 +664,19 @@
         </node>
       </node>
       <node concept="P$JXv" id="43uwa4Yu$NN" role="lGtFl">
+        <node concept="TZ5HA" id="43uwa4Yu$NO" role="TZ5H$">
+          <node concept="1dT_AC" id="43uwa4Yu$NP" role="1dT_Ay">
+            <property role="1dT_AB" value="Will find all ITyped elements (args) of a given mapContext" />
+          </node>
+        </node>
         <node concept="TUZQ0" id="43uwa4Yu$NQ" role="3nqlJM">
-          <property role="TUZQ4" value="" />
+          <property role="TUZQ4" value="might in this case be a Message" />
           <node concept="zr_55" id="43uwa4Yu$NS" role="zr_5Q">
             <ref role="zr_51" node="43uwa4Yuukl" resolve="mapContext" />
           </node>
-          <node concept="1PaTwC" id="2R_WpMdOyMO" role="1Vez_I">
-            <node concept="3oM_SD" id="2R_WpMdOyMP" role="1PaTwD">
-              <property role="3oM_SC" value="might" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyMQ" role="1PaTwD">
-              <property role="3oM_SC" value="in" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyMR" role="1PaTwD">
-              <property role="3oM_SC" value="this" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyMS" role="1PaTwD">
-              <property role="3oM_SC" value="case" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyMT" role="1PaTwD">
-              <property role="3oM_SC" value="be" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyMU" role="1PaTwD">
-              <property role="3oM_SC" value="a" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyMV" role="1PaTwD">
-              <property role="3oM_SC" value="Message" />
-            </node>
-          </node>
         </node>
         <node concept="x79VA" id="43uwa4Yu$NT" role="3nqlJM">
-          <property role="x79VB" value="" />
-          <node concept="1PaTwC" id="2R_WpMdOyMW" role="1Vez_I">
-            <node concept="3oM_SD" id="2R_WpMdOyMX" role="1PaTwD">
-              <property role="3oM_SC" value="list" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyMY" role="1PaTwD">
-              <property role="3oM_SC" value="of" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyMZ" role="1PaTwD">
-              <property role="3oM_SC" value="args" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyN0" role="1PaTwD">
-              <property role="3oM_SC" value="of" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyN1" role="1PaTwD">
-              <property role="3oM_SC" value="this" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyN2" role="1PaTwD">
-              <property role="3oM_SC" value="mapContext" />
-            </node>
-          </node>
-        </node>
-        <node concept="1PaTwC" id="2R_WpMdOyMD" role="1Vez_I">
-          <node concept="3oM_SD" id="2R_WpMdOyME" role="1PaTwD">
-            <property role="3oM_SC" value="Will" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyMF" role="1PaTwD">
-            <property role="3oM_SC" value="find" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyMG" role="1PaTwD">
-            <property role="3oM_SC" value="all" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyMH" role="1PaTwD">
-            <property role="3oM_SC" value="ITyped" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyMI" role="1PaTwD">
-            <property role="3oM_SC" value="elements" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyMJ" role="1PaTwD">
-            <property role="3oM_SC" value="(args)" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyMK" role="1PaTwD">
-            <property role="3oM_SC" value="of" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyML" role="1PaTwD">
-            <property role="3oM_SC" value="a" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyMM" role="1PaTwD">
-            <property role="3oM_SC" value="given" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyMN" role="1PaTwD">
-            <property role="3oM_SC" value="mapContext" />
-          </node>
+          <property role="x79VB" value="list of args of this mapContext" />
         </node>
       </node>
     </node>
@@ -1843,65 +1769,17 @@
         <node concept="3Tqbb2" id="791OiB7xZWi" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="791OiB7yi0F" role="lGtFl">
+        <node concept="TZ5HA" id="791OiB7yi0G" role="TZ5H$">
+          <node concept="1dT_AC" id="791OiB7yi0H" role="1dT_Ay" />
+        </node>
         <node concept="TUZQ0" id="791OiB7yi0I" role="3nqlJM">
-          <property role="TUZQ4" value="" />
+          <property role="TUZQ4" value="might be an Mpinterface" />
           <node concept="zr_55" id="791OiB7yi0K" role="zr_5Q">
             <ref role="zr_51" node="791OiB7xZWj" resolve="element" />
           </node>
-          <node concept="1PaTwC" id="2R_WpMdOyN5" role="1Vez_I">
-            <node concept="3oM_SD" id="2R_WpMdOyN6" role="1PaTwD">
-              <property role="3oM_SC" value="might" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyN7" role="1PaTwD">
-              <property role="3oM_SC" value="be" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyN8" role="1PaTwD">
-              <property role="3oM_SC" value="an" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyN9" role="1PaTwD">
-              <property role="3oM_SC" value="Mpinterface" />
-            </node>
-          </node>
         </node>
         <node concept="x79VA" id="791OiB7yi0L" role="3nqlJM">
-          <property role="x79VB" value="" />
-          <node concept="1PaTwC" id="2R_WpMdOyNa" role="1Vez_I">
-            <node concept="3oM_SD" id="2R_WpMdOyNb" role="1PaTwD">
-              <property role="3oM_SC" value="the" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyNc" role="1PaTwD">
-              <property role="3oM_SC" value="protocolMap" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyNd" role="1PaTwD">
-              <property role="3oM_SC" value="that" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyNe" role="1PaTwD">
-              <property role="3oM_SC" value="is" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyNf" role="1PaTwD">
-              <property role="3oM_SC" value="used" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyNg" role="1PaTwD">
-              <property role="3oM_SC" value="for" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyNh" role="1PaTwD">
-              <property role="3oM_SC" value="this" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyNi" role="1PaTwD">
-              <property role="3oM_SC" value="interface" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyNj" role="1PaTwD">
-              <property role="3oM_SC" value="for" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyNk" role="1PaTwD">
-              <property role="3oM_SC" value="this.protocl" />
-            </node>
-          </node>
-        </node>
-        <node concept="1PaTwC" id="2R_WpMdOyN3" role="1Vez_I">
-          <node concept="3oM_SD" id="2R_WpMdOyN4" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
+          <property role="x79VB" value="the protocolMap that is used for this interface for this.protocl" />
         </node>
       </node>
     </node>

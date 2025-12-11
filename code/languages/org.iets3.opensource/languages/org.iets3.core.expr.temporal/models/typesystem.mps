@@ -4,7 +4,7 @@
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -191,6 +191,7 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -198,8 +199,11 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
-        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -4711,142 +4715,24 @@
       </node>
       <node concept="3Tm1VV" id="6belQKqkKXH" role="1B3o_S" />
       <node concept="P$JXv" id="6belQKqpx53" role="lGtFl">
+        <node concept="TZ5HA" id="6belQKqpx54" role="TZ5H$">
+          <node concept="1dT_AC" id="6belQKqpx55" role="1dT_Ay">
+            <property role="1dT_AB" value="Unwraps a node, like ConstantRef, recursively until a DateLiteral is reached or unwrapping is not " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6belQKqpxzG" role="TZ5H$">
+          <node concept="1dT_AC" id="6belQKqpxzH" role="1dT_Ay">
+            <property role="1dT_AB" value="possible anymore, e.g. an unhandled concept is used for wrapping" />
+          </node>
+        </node>
         <node concept="TUZQ0" id="6belQKqpx56" role="3nqlJM">
-          <property role="TUZQ4" value="" />
+          <property role="TUZQ4" value="the node that should be unwrapper to retrieve the DateLiteral" />
           <node concept="zr_55" id="6belQKqpx58" role="zr_5Q">
             <ref role="zr_51" node="6belQKqkMye" resolve="wrapper" />
           </node>
-          <node concept="1PaTwC" id="2R_WpMdOyds" role="1Vez_I">
-            <node concept="3oM_SD" id="2R_WpMdOydt" role="1PaTwD">
-              <property role="3oM_SC" value="the" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydu" role="1PaTwD">
-              <property role="3oM_SC" value="node" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydv" role="1PaTwD">
-              <property role="3oM_SC" value="that" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydw" role="1PaTwD">
-              <property role="3oM_SC" value="should" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydx" role="1PaTwD">
-              <property role="3oM_SC" value="be" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydy" role="1PaTwD">
-              <property role="3oM_SC" value="unwrapper" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydz" role="1PaTwD">
-              <property role="3oM_SC" value="to" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyd$" role="1PaTwD">
-              <property role="3oM_SC" value="retrieve" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOyd_" role="1PaTwD">
-              <property role="3oM_SC" value="the" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydA" role="1PaTwD">
-              <property role="3oM_SC" value="DateLiteral" />
-            </node>
-          </node>
         </node>
         <node concept="x79VA" id="6belQKqpx59" role="3nqlJM">
-          <property role="x79VB" value="" />
-          <node concept="1PaTwC" id="2R_WpMdOydB" role="1Vez_I">
-            <node concept="3oM_SD" id="2R_WpMdOydC" role="1PaTwD">
-              <property role="3oM_SC" value="the" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydD" role="1PaTwD">
-              <property role="3oM_SC" value="unwrapped" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydE" role="1PaTwD">
-              <property role="3oM_SC" value="DateLiteral;" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydF" role="1PaTwD">
-              <property role="3oM_SC" value="otherwise" />
-            </node>
-            <node concept="3oM_SD" id="2R_WpMdOydG" role="1PaTwD">
-              <property role="3oM_SC" value="null" />
-            </node>
-          </node>
-        </node>
-        <node concept="1PaTwC" id="2R_WpMdOyd1" role="1Vez_I">
-          <node concept="3oM_SD" id="2R_WpMdOyd2" role="1PaTwD">
-            <property role="3oM_SC" value="Unwraps" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyd3" role="1PaTwD">
-            <property role="3oM_SC" value="a" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyd4" role="1PaTwD">
-            <property role="3oM_SC" value="node," />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyd5" role="1PaTwD">
-            <property role="3oM_SC" value="like" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyd6" role="1PaTwD">
-            <property role="3oM_SC" value="ConstantRef," />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyd7" role="1PaTwD">
-            <property role="3oM_SC" value="recursively" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyd8" role="1PaTwD">
-            <property role="3oM_SC" value="until" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyd9" role="1PaTwD">
-            <property role="3oM_SC" value="a" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyda" role="1PaTwD">
-            <property role="3oM_SC" value="DateLiteral" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydb" role="1PaTwD">
-            <property role="3oM_SC" value="is" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydc" role="1PaTwD">
-            <property role="3oM_SC" value="reached" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydd" role="1PaTwD">
-            <property role="3oM_SC" value="or" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOyde" role="1PaTwD">
-            <property role="3oM_SC" value="unwrapping" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydf" role="1PaTwD">
-            <property role="3oM_SC" value="is" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydg" role="1PaTwD">
-            <property role="3oM_SC" value="not" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="2R_WpMdOydh" role="1Vez_I">
-          <node concept="3oM_SD" id="2R_WpMdOydi" role="1PaTwD">
-            <property role="3oM_SC" value="possible" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydj" role="1PaTwD">
-            <property role="3oM_SC" value="anymore," />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydk" role="1PaTwD">
-            <property role="3oM_SC" value="e.g." />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydl" role="1PaTwD">
-            <property role="3oM_SC" value="an" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydm" role="1PaTwD">
-            <property role="3oM_SC" value="unhandled" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydn" role="1PaTwD">
-            <property role="3oM_SC" value="concept" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydo" role="1PaTwD">
-            <property role="3oM_SC" value="is" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydp" role="1PaTwD">
-            <property role="3oM_SC" value="used" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydq" role="1PaTwD">
-            <property role="3oM_SC" value="for" />
-          </node>
-          <node concept="3oM_SD" id="2R_WpMdOydr" role="1PaTwD">
-            <property role="3oM_SC" value="wrapping" />
-          </node>
+          <property role="x79VB" value="the unwrapped DateLiteral; otherwise null" />
         </node>
       </node>
       <node concept="2AHcQZ" id="7Ndb$5paPZS" role="2AJF6D">
