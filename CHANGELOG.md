@@ -5,20 +5,39 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## December 2025
+
+### Added
+
+- Variability: The intention "Update all configurations" for feature models has been improved: Now a modal dialog with a progress bar and some additional information is shown. The process is now completely sequential, improving stability. Moreover, there is some timing output in the log. Finally, performance has been improved by postponing the event handling for all changes to the involved models.
+
+### Fixed
+
+- Variability: The propagation of configuration updates to referencing configurations has been improved. Due to this optimization, it needs much less CPU time now.
+
+### Changed
+
+- Variability: Remove deprecated concepts `VariabilityModelChunk_old`, and some related concepts.
+- Typesystem: All usages of colon casts were transformed to the 'as' cast for null safety. From now on no colon casts are allowed in the typesystem, also read this issue for more info: https://github.com/IETS3/iets3.opensource/issues/688
+
 ## November 2025
 
 ### Added
+
 - The Maven POM now contains all bundled JARs as dependencies with `provided` scope to help with automated license and
   vulnerability scanning.
 
 ### Fixed
+
 - A bug was fixed that caused the editor of NumberLiteral to break if a property macro was used for its value.
 - Added missing support for IndexExpr for the operations findFirst and forEach.
 - An invalid checking rule for parameter value types of functional component instances has been removed. It was introduced by a move of IETS3.Core languages in February 2025.
 
+
 ## October 2025
 
 ### Added
+
 - Variability: Some changes regarding variant configurations:
   - A check has been added for duplicate names of configurations in the same container.
   - Configurations might become inconsistent due to errors during manual conflict merges. A couple of model checks have been added to detect this. Additionally, there are quickfixes to fix such errors.
@@ -31,24 +50,28 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - A new intention is available to split kernelF StringLiterals into concatenation parts
 
 ### Fixed
+
 - Improved the readability of lists by enforcing a new line when a threshold of three elements per list is exeeded.
 - A DecTab bug not respecting the default value was fixed and a corresponding warning was added to warn users which default value takes precedence
 - Ignored concepts of the coverage analyzer are now colored with IGNORED_COLOR.
 
+
 ## September 2025
 
 ### Added
+
 - Data tables, binary and multi-criteria decision tables now support deletion, copying and pasting when multiple cells are selected with the mouse.
 
 ### Fixed
+
 - The renderReadable/getPresentation implementations were improved and are now equivalent in all concepts.
 - Variability: For feature attributes, the inspector in the configuration editor shows the current value of the attribute and what caused this value (manual input by user, default, forced by tool, etc). This assignment cause is read-only now. An intention is added to manually set it to 'manual' state.
 - Variability: In the configuration editor, pressing Return/Enter anywhere will create an empty line after the configuration. Pressing Shift-Return/Enter on the header line of a configuration will create an empty line before the configuration.
 
-
 ### Added
 
 - Data tables, binary and multi-criteria decision tables now support deletion, copying and pasting when multiple cells are selected with the mouse. 
+
 
 ## July 2025
 
@@ -59,6 +82,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Duplicated colors for PARTIAL and IGNORED 
 
 ### Added
+
 - CI tests for InterpreterCoverageAssQuery which make use use the calculated coverage data
 - Solver: Add test infrastructure to ensure that errors computed by any solver are converted to editor messages properly.
 - Variability: APIs for FilterParams (configuration of filter&instantiate process) and skeleton tree data structure were extended

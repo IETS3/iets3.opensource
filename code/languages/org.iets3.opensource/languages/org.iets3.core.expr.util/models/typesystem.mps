@@ -246,7 +246,9 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -980,6 +982,7 @@
           <node concept="3clFbF" id="2ck7OjOKwNR" role="3cqZAp">
             <node concept="2OqwBi" id="S$tO8oecc1" role="3clFbG">
               <node concept="1PxgMI" id="2ck7OjOKgHv" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
                 <node concept="3cjfiJ" id="S$tO8oebZn" role="1m5AlR" />
                 <node concept="chp4Y" id="1Ap9E00ArpM" role="3oSUPX">
                   <ref role="cht4Q" to="hm2y:S$tO8ocniU" resolve="TupleType" />
@@ -988,6 +991,7 @@
               <node concept="2qgKlT" id="S$tO8oecjl" role="2OqNvi">
                 <ref role="37wK5l" to="pbu6:2ck7OjOKh8Y" resolve="hasSameStructure" />
                 <node concept="1PxgMI" id="S$tO8oecqJ" role="37wK5m">
+                  <property role="1BlNFB" value="true" />
                   <node concept="3cjoZ5" id="S$tO8oecmu" role="1m5AlR" />
                   <node concept="chp4Y" id="1Ap9E00ArpP" role="3oSUPX">
                     <ref role="cht4Q" to="hm2y:S$tO8ocniU" resolve="TupleType" />
@@ -1062,6 +1066,7 @@
         </node>
         <node concept="2OqwBi" id="22hm_0$b9Jt" role="2GsD0m">
           <node concept="1PxgMI" id="2vr5lQPTIMQ" role="2Oq$k0">
+            <property role="1BlNFB" value="true" />
             <node concept="2OqwBi" id="2vr5lQPTI_Y" role="1m5AlR">
               <node concept="1YBJjd" id="2vr5lQPTIzm" role="2Oq$k0">
                 <ref role="1YBMHb" node="2vr5lQPTIw3" resolve="r" />
@@ -2483,6 +2488,7 @@
                 <node concept="2OqwBi" id="5crSXLwwif" role="3uHU7w">
                   <node concept="2OqwBi" id="5crSXLwjnV" role="2Oq$k0">
                     <node concept="1PxgMI" id="5crSXLwi9D" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
                       <node concept="chp4Y" id="5crSXLwiCK" role="3oSUPX">
                         <ref role="cht4Q" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
                       </node>
@@ -2538,6 +2544,7 @@
                 <node concept="2OqwBi" id="5crSXLwNNw" role="3uHU7w">
                   <node concept="2OqwBi" id="5crSXLwNNx" role="2Oq$k0">
                     <node concept="1PxgMI" id="5crSXLwNNy" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
                       <node concept="chp4Y" id="5crSXLwNNz" role="3oSUPX">
                         <ref role="cht4Q" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
                       </node>
@@ -2663,6 +2670,7 @@
               <node concept="2OqwBi" id="5crSXLMMMf" role="3uHU7w">
                 <node concept="2OqwBi" id="5crSXLMMMg" role="2Oq$k0">
                   <node concept="1PxgMI" id="5crSXLMMMh" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="5crSXLMMMi" role="3oSUPX">
                       <ref role="cht4Q" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
                     </node>
@@ -2707,6 +2715,7 @@
               <node concept="2OqwBi" id="5crSXLMNC6" role="3uHU7w">
                 <node concept="2OqwBi" id="5crSXLMNC7" role="2Oq$k0">
                   <node concept="1PxgMI" id="5crSXLMNC8" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="5crSXLMNC9" role="3oSUPX">
                       <ref role="cht4Q" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
                     </node>
