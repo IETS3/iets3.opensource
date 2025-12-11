@@ -7,7 +7,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="s6b7" ref="r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -74,7 +73,7 @@
     <property role="TrG5h" value="EmptyVariabilityContent" />
     <property role="3GE5qa" value="container" />
     <property role="EcuMT" value="3989254429232912648" />
-    <ref role="1TJDcQ" to="s6b7:3tsFshP5d$8" resolve="EmptyVariabilityContent_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3tsFshP5d$9" role="PzmwI">
       <ref role="PrY4T" node="3tsFshP5cTx" resolve="IVariabilityContent" />
     </node>
@@ -89,24 +88,18 @@
     <node concept="PrWs8" id="22kx7U4Kqjy" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="PrWs8" id="51M$6hf3mdw" role="PrDN$">
-      <ref role="PrY4T" to="s6b7:22kx7U49GUn" resolve="IVariabilityContainer_old" />
-    </node>
   </node>
   <node concept="PlHQZ" id="3tsFshP5cTx">
     <property role="TrG5h" value="IVariabilityContent" />
     <property role="3GE5qa" value="container" />
     <property role="EcuMT" value="3989254429232909921" />
-    <node concept="PrWs8" id="51M$6hf3mdH" role="PrDN$">
-      <ref role="PrY4T" to="s6b7:3tsFshP5cTx" resolve="IVariabilityContent_old" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3tsFshP56tQ">
     <property role="TrG5h" value="VariabilityModelChunk" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="container" />
     <property role="EcuMT" value="3989254429232883574" />
-    <ref role="1TJDcQ" to="s6b7:3tsFshP56tQ" resolve="VariabilityModelChunk_old" />
+    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="PrWs8" id="22kx7U49GUo" role="PzmwI">
       <ref role="PrY4T" node="22kx7U49GUn" resolve="IVariabilityContainer" />
     </node>
