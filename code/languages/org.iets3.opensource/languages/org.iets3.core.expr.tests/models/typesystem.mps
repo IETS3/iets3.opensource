@@ -196,7 +196,9 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -365,6 +367,7 @@
                     <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
                     <node concept="36biLy" id="1$1rueeDjQ5" role="28nt2d">
                       <node concept="1PxgMI" id="1mDdTGBnY_" role="36biLW">
+                        <property role="1BlNFB" value="true" />
                         <node concept="chp4Y" id="1mDdTGBnZ0" role="3oSUPX">
                           <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
                         </node>
@@ -422,6 +425,7 @@
                     <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
                     <node concept="36biLy" id="1$1rueeG2BX" role="28nt2d">
                       <node concept="1PxgMI" id="1mDdTGBobE" role="36biLW">
+                        <property role="1BlNFB" value="true" />
                         <node concept="chp4Y" id="1mDdTGBoc5" role="3oSUPX">
                           <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
                         </node>
@@ -475,6 +479,7 @@
             <ref role="ehGHo" to="av4b:1bwJEEeSLgy" resolve="AbstractVectorCollection" />
           </node>
           <node concept="1PxgMI" id="1bwJEEgr7Vr" role="33vP2m">
+            <property role="1BlNFB" value="true" />
             <node concept="chp4Y" id="1bwJEEgr7Vs" role="3oSUPX">
               <ref role="cht4Q" to="av4b:1bwJEEeSLgy" resolve="AbstractVectorCollection" />
             </node>

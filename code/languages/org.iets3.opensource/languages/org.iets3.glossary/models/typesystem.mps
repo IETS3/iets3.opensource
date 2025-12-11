@@ -134,7 +134,9 @@
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -196,6 +198,7 @@
                 <ref role="ehGHo" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
               </node>
               <node concept="1PxgMI" id="6zaFu4oShJf" role="33vP2m">
+                <property role="1BlNFB" value="true" />
                 <node concept="2OqwBi" id="6zaFu4oShsw" role="1m5AlR">
                   <node concept="1YBJjd" id="6zaFu4oShsx" role="2Oq$k0">
                     <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
@@ -427,6 +430,7 @@
         <node concept="3clFbF" id="6zaFu4oSwCx" role="3cqZAp">
           <node concept="37vLTI" id="6zaFu4oSwP5" role="3clFbG">
             <node concept="1PxgMI" id="6zaFu4oSxfn" role="37vLTx">
+              <property role="1BlNFB" value="true" />
               <node concept="2OqwBi" id="6zaFu4oSwSU" role="1m5AlR">
                 <node concept="QwW4i" id="6zaFu4oSwQG" role="2Oq$k0">
                   <ref role="QwW4h" node="6zaFu4oSv2A" resolve="theOneThatExists" />

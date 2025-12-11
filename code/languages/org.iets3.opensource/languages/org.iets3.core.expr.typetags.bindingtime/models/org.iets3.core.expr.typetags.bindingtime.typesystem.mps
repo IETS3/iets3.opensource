@@ -152,7 +152,9 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -572,6 +574,7 @@
               <node concept="2OqwBi" id="3eH6BL4eN1N" role="37wK5m">
                 <node concept="2OqwBi" id="3eH6BL4eN1O" role="2Oq$k0">
                   <node concept="1PxgMI" id="3eH6BL4eN1P" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="3eH6BL4eN1Q" role="3oSUPX">
                       <ref role="cht4Q" to="n0mj:1SyV1pw9yQo" resolve="BTtag" />
                     </node>
@@ -590,6 +593,7 @@
               <node concept="2OqwBi" id="3eH6BL4eNjf" role="37wK5m">
                 <node concept="2OqwBi" id="3eH6BL4eNjg" role="2Oq$k0">
                   <node concept="1PxgMI" id="3eH6BL4eNjh" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="3eH6BL4eNji" role="3oSUPX">
                       <ref role="cht4Q" to="n0mj:1SyV1pw9yQo" resolve="BTtag" />
                     </node>
@@ -611,6 +615,7 @@
         <node concept="3fqX7Q" id="35Mye9KtpJq" role="3clFbw">
           <node concept="2OqwBi" id="35Mye9KtpVz" role="3fr31v">
             <node concept="1PxgMI" id="6OaC6FaH7Lq" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
               <node concept="chp4Y" id="6OaC6FaHa7B" role="3oSUPX">
                 <ref role="cht4Q" to="n0mj:1SyV1pw9yQo" resolve="BTtag" />
               </node>
@@ -622,6 +627,7 @@
               <ref role="37wK5l" to="iy3m:35Mye9KoWWW" resolve="wasBefore" />
               <node concept="2OqwBi" id="35Mye9KtqoY" role="37wK5m">
                 <node concept="1PxgMI" id="6OaC6FaHnoR" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
                   <node concept="chp4Y" id="6OaC6FaHogr" role="3oSUPX">
                     <ref role="cht4Q" to="n0mj:1SyV1pw9yQo" resolve="BTtag" />
                   </node>
