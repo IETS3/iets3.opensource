@@ -16,7 +16,7 @@
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
   </languages>
   <imports>
@@ -409,16 +409,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
       <concept id="3751132065236767083" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.DependentTypeInstance" flags="ig" index="q3mfm">
@@ -6885,9 +6879,45 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="5U8d23PZEmH" role="lGtFl">
-      <node concept="TZ5HA" id="5U8d23PZEmI" role="TZ5H$">
-        <node concept="1dT_AC" id="5U8d23PZEmJ" role="1dT_Ay">
-          <property role="1dT_AB" value="Attaches trace information from a trace record to MPS nodes as user objects." />
+      <node concept="1PaTwC" id="3MzwgoR0Vv3" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0Vv4" role="1PaTwD">
+          <property role="3oM_SC" value="Attaches" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vv5" role="1PaTwD">
+          <property role="3oM_SC" value="trace" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vv6" role="1PaTwD">
+          <property role="3oM_SC" value="information" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vv7" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vv8" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vv9" role="1PaTwD">
+          <property role="3oM_SC" value="trace" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vva" role="1PaTwD">
+          <property role="3oM_SC" value="record" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvb" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvc" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvd" role="1PaTwD">
+          <property role="3oM_SC" value="nodes" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vve" role="1PaTwD">
+          <property role="3oM_SC" value="as" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvf" role="1PaTwD">
+          <property role="3oM_SC" value="user" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvg" role="1PaTwD">
+          <property role="3oM_SC" value="objects." />
         </node>
       </node>
     </node>
@@ -7563,9 +7593,45 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="3UUf8EJumG8" role="lGtFl">
-      <node concept="TZ5HA" id="3UUf8EJumG9" role="TZ5H$">
-        <node concept="1dT_AC" id="3UUf8EJumGa" role="1dT_Ay">
-          <property role="1dT_AB" value="Attaches trace information from a trace record to MPS nodes as user objects." />
+      <node concept="1PaTwC" id="3MzwgoR0Vvh" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0Vvi" role="1PaTwD">
+          <property role="3oM_SC" value="Attaches" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvj" role="1PaTwD">
+          <property role="3oM_SC" value="trace" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvk" role="1PaTwD">
+          <property role="3oM_SC" value="information" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvl" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvm" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvn" role="1PaTwD">
+          <property role="3oM_SC" value="trace" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvo" role="1PaTwD">
+          <property role="3oM_SC" value="record" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvp" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvq" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvr" role="1PaTwD">
+          <property role="3oM_SC" value="nodes" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvs" role="1PaTwD">
+          <property role="3oM_SC" value="as" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvt" role="1PaTwD">
+          <property role="3oM_SC" value="user" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vvu" role="1PaTwD">
+          <property role="3oM_SC" value="objects." />
         </node>
       </node>
     </node>
