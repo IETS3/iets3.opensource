@@ -6,6 +6,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -524,6 +525,7 @@
                   </node>
                   <node concept="2OqwBi" id="7McqtXGD7za" role="2ZW6bz">
                     <node concept="1PxgMI" id="7McqtXGD74p" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
                       <node concept="3cjfiJ" id="7McqtXGD6Kw" role="1m5AlR" />
                       <node concept="chp4Y" id="72_xmu9gQ2N" role="3oSUPX">
                         <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -540,6 +542,7 @@
                   </node>
                   <node concept="2OqwBi" id="7McqtXGDa6C" role="2ZW6bz">
                     <node concept="1PxgMI" id="7McqtXGDa6D" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
                       <node concept="3cjoZ5" id="7McqtXGDanW" role="1m5AlR" />
                       <node concept="chp4Y" id="72_xmu9gQ2J" role="3oSUPX">
                         <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -1169,6 +1172,7 @@
                   <node concept="37vLTI" id="4HxogODQu2I" role="3clFbG">
                     <node concept="2OqwBi" id="4HxogODQu80" role="37vLTx">
                       <node concept="1PxgMI" id="4HxogODQu4F" role="2Oq$k0">
+                        <property role="1BlNFB" value="true" />
                         <node concept="2X3wrD" id="4HxogODQu3n" role="1m5AlR">
                           <ref role="2X3Bk0" node="4HxogODQfUb" resolve="type" />
                         </node>
@@ -1213,6 +1217,7 @@
                         <node concept="2qgKlT" id="4HxogODQt$4" role="2OqNvi">
                           <ref role="37wK5l" to="qlm2:4HxogODQaID" resolve="create" />
                           <node concept="1PxgMI" id="4HxogODQtTy" role="37wK5m">
+                            <property role="1BlNFB" value="true" />
                             <node concept="2X3wrD" id="4HxogODQt_J" role="1m5AlR">
                               <ref role="2X3Bk0" node="4HxogODQfUb" resolve="type" />
                             </node>
@@ -1389,6 +1394,7 @@
               <node concept="37vLTI" id="5XaocLWKeiL" role="3clFbG">
                 <node concept="2OqwBi" id="5XaocLWKeiM" role="37vLTx">
                   <node concept="1PxgMI" id="5XaocLWKeiN" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <node concept="37vLTw" id="5XaocLWKeiO" role="1m5AlR">
                       <ref role="3cqZAo" node="5XaocLWK9dE" resolve="baseType" />
                     </node>
@@ -1433,6 +1439,7 @@
                     <node concept="2qgKlT" id="5XaocLWKej3" role="2OqNvi">
                       <ref role="37wK5l" to="qlm2:4HxogODQaID" resolve="create" />
                       <node concept="1PxgMI" id="5XaocLWKej4" role="37wK5m">
+                        <property role="1BlNFB" value="true" />
                         <node concept="37vLTw" id="5XaocLWKej5" role="1m5AlR">
                           <ref role="3cqZAo" node="5XaocLWK9dE" resolve="baseType" />
                         </node>
@@ -1573,6 +1580,7 @@
                       <ref role="2pIpSl" to="w1hl:1xEzHAktP2T" resolve="baseType" />
                       <node concept="36biLy" id="5ZuZjOMdLUw" role="28nt2d">
                         <node concept="1PxgMI" id="5ZuZjOMdNcw" role="36biLW">
+                          <property role="1BlNFB" value="true" />
                           <node concept="2GrUjf" id="5ZuZjOMdLWu" role="1m5AlR">
                             <ref role="2Gs0qQ" node="5ZuZjOMdHHi" resolve="type" />
                           </node>

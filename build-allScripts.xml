@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/org.iets3.opensource.allScripts.build" />
   <property name="build.layout" location="${build.dir}/artifacts/org.iets3.opensource.allScripts.build" />
-  <property name="iets3.github.opensource.home" location="${basedir}/../.." />
+  <property name="iets3.github.opensource.home" location="${basedir}" />
   <property name="mps.home" location="${iets3.github.opensource.home}/build/mps" />
   <property name="dependencies.root" location="${iets3.github.opensource.home}/build/dependencies" />
   <property name="iets3.lang.opensource" location="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />

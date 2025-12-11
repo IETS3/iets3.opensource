@@ -44,6 +44,7 @@
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="3" />
+    <language slang="l:5fef253e-34b0-443d-8035-9a2928b716d3:com.mbeddr.mpsutil.editor.displayControl" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
     <language slang="l:d09a16fb-1d68-4a92-a5a4-20b4b2f86a62:com.mbeddr.mpsutil.jung" version="0" />
@@ -74,6 +75,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="5" />
     <language slang="l:db8bd035-3f51-41d8-8fed-954c202d18be:org.iets3.analysis.base" version="0" />
+    <language slang="l:dcb9d48f-1fb6-4793-88cf-f6f4971432a5:org.iets3.contextfilter" version="0" />
     <language slang="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" version="0" />
     <language slang="l:5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1:org.iets3.core.expr.adt" version="8" />
     <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="22" />
@@ -100,6 +102,11 @@
     <language slang="l:cb91a38e-738a-4811-a96d-448d08f526fa:org.iets3.core.expr.typetags.units" version="1" />
     <language slang="l:be679007-4312-4db1-9ac0-ab7dfbe66a74:org.iets3.core.expr.typetags.units.quantity" version="0" />
     <language slang="l:8bb1251e-eae5-47ab-9843-33adfae8edaa:org.iets3.core.expr.util" version="7" />
+    <language slang="l:f0883503-8eaa-4bc8-8846-eb63220ab1dd:org.iets3.variability.artifacts.base" version="2" />
+    <language slang="l:c6ff3b3b-aff6-455e-9637-7955ccbfec22:org.iets3.variability.artifacts.vanguard" version="0" />
+    <language slang="l:9b66c5c9-38bf-4315-a96f-9f4e212c69cb:org.iets3.variability.base" version="0" />
+    <language slang="l:71226ee2-bbc4-45d2-a41d-20b97237156c:org.iets3.variability.configuration.base" version="2" />
+    <language slang="l:165f1d05-2506-4544-895e-1424f54166ec:org.iets3.variability.featuremodel.base" version="24" />
     <language slang="l:b80fab4e-53f2-409c-81d8-3475855e0e42:test.ts.expr.os.nix" version="0" />
     <language slang="l:a2242e6f-d308-41e6-ac06-28b0a2a4ad79:test.ts.expr.os.validNameConcept" version="0" />
   </languageVersions>
