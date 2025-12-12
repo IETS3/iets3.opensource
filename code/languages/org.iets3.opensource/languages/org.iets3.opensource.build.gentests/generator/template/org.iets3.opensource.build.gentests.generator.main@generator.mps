@@ -1516,7 +1516,11 @@
                                         <ref role="37wK5l" to="o3n2:7Fhemu9T7D3" resolve="DependenciesHelper" />
                                         <ref role="1Y3XeK" to="o3n2:41__iZjkZ0W" resolve="DependenciesHelper" />
                                         <node concept="3Tm1VV" id="4nDalG8RlP2" role="1B3o_S" />
-                                        <node concept="1iwH7S" id="2TqXzNe_cVu" role="37wK5m" />
+                                        <node concept="2YIFZM" id="7u3RhgSjtme" role="37wK5m">
+                                          <ref role="37wK5l" to="o3n2:19KdqCVerNJ" resolve="defaultContext" />
+                                          <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
+                                          <node concept="1iwH7S" id="3_LUYfhyHE0" role="37wK5m" />
+                                        </node>
                                         <node concept="37vLTw" id="akLgX4mP8t" role="37wK5m">
                                           <ref role="3cqZAo" node="63InNWG5ay7" resolve="project" />
                                         </node>
