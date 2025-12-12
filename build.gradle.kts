@@ -53,11 +53,6 @@ dependencies {
     cpSuite(libs.cpSuite.get().toString() + "@jar") { isTransitive = false }
 }
 
-tasks.wrapper {
-    gradleVersion = libs.versions.gradle.get()
-    distributionType = Wrapper.DistributionType.ALL
-}
-
 downloadJbr {
     jbrVersion = libs.versions.jbr.get()
 }

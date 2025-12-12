@@ -6,7 +6,6 @@ mpsQaVersion = "9999.9.+"
 # example: mbeddrVersion="feature-my_new_feature.2023.2.+"
 mbeddrVersion = "9999.9.+"
 
-gradle = "8.13"
 jbr = "21.0.6-b895.109"
 
 [libraries]
