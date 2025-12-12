@@ -247,6 +247,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -275,6 +278,9 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
@@ -532,11 +538,19 @@
                         <node concept="3uibUv" id="3Pakbnma79q" role="1tU5fm">
                           <ref role="3uigEE" to="g51k:~EditorCell_Property" resolve="EditorCell_Property" />
                         </node>
-                        <node concept="10QFUN" id="3Pakbnma7aN" role="33vP2m">
-                          <node concept="3uibUv" id="3Pakbnma7aO" role="10QFUM">
-                            <ref role="3uigEE" to="g51k:~EditorCell_Property" resolve="EditorCell_Property" />
+                        <node concept="2YIFZM" id="59MvoiLorrt" role="33vP2m">
+                          <ref role="37wK5l" to="g51k:~CellFinderUtil.findChildByClass(jetbrains.mps.openapi.editor.cells.EditorCell,java.lang.Class,boolean,boolean)" resolve="findChildByClass" />
+                          <ref role="1Pybhc" to="g51k:~CellFinderUtil" resolve="CellFinderUtil" />
+                          <node concept="1Q80Hy" id="59MvoiLorzy" role="37wK5m" />
+                          <node concept="3VsKOn" id="59MvoiLorSl" role="37wK5m">
+                            <ref role="3VsUkX" to="g51k:~EditorCell_Property" resolve="EditorCell_Property" />
                           </node>
-                          <node concept="1Q80Hy" id="3Pakbnma7aP" role="10QFUP" />
+                          <node concept="3clFbT" id="59MvoiLorX4" role="37wK5m">
+                            <property role="3clFbU" value="true" />
+                          </node>
+                          <node concept="3clFbT" id="59MvoiLou0q" role="37wK5m">
+                            <property role="3clFbU" value="true" />
+                          </node>
                         </node>
                       </node>
                     </node>
