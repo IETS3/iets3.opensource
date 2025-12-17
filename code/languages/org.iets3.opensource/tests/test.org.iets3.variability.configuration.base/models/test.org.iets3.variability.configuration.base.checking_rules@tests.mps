@@ -1505,7 +1505,7 @@
     <node concept="3clFbS" id="6_MbJkvF4j7" role="LjaKd">
       <node concept="3vwNmj" id="6_MbJkvF4j5" role="3cqZAp">
         <node concept="2bRw2S" id="6_MbJkvF4r_" role="3vwVQn">
-          <ref role="2bRw2V" to="nzwl:7SHUXR9z8Nu" resolve="UpdateAllRelatedConfigurations" />
+          <ref role="2bRw2V" to="nzwl:7SHUXR9z8Nu" resolve="updateAllRelatedConfigurations" />
         </node>
       </node>
     </node>
