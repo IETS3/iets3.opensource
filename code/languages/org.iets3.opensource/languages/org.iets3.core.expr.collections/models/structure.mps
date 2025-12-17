@@ -282,7 +282,7 @@
     <property role="34LRSv" value="map" />
     <property role="EcuMT" value="7554398283340640412" />
     <property role="R4oN_" value="create a map from the collection via a map-function" />
-    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <ref role="1TJDcQ" node="6$cVN8sEQ7y" resolve="OneArgLambdaCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUmg4u" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
@@ -362,7 +362,7 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265515327232" />
     <property role="R4oN_" value="a base collection operation for operations with one predicate argument" />
-    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <ref role="1TJDcQ" node="6$cVN8sEQ7y" resolve="OneArgLambdaCollectionOp" />
     <node concept="PrWs8" id="7SZA7UeV1IM" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
@@ -769,14 +769,7 @@
     <property role="34LRSv" value="foreach" />
     <property role="EcuMT" value="9097157441620016186" />
     <property role="R4oN_" value="perform action for each element" />
-    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
-    <node concept="1TJgyj" id="7SZA7UeMt3K" role="1TKVEi">
-      <property role="IQ2ns" value="9097157441640583408" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="arg" />
-      <ref role="20lvS9" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
-      <ref role="20ksaX" node="6zmBjqUjnKt" resolve="arg" />
-    </node>
+    <ref role="1TJDcQ" node="6$cVN8sEQ7y" resolve="OneArgLambdaCollectionOp" />
     <node concept="PrWs8" id="7SZA7Ud$02w" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
@@ -1224,6 +1217,13 @@
     <node concept="PrWs8" id="1e59C2QAniR" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6$cVN8sEQ7y">
+    <property role="EcuMT" value="7569688072211358178" />
+    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="OneArgLambdaCollectionOp" />
+    <property role="R4oN_" value="a base collection operation for operations with one lambda argument" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
   </node>
 </model>
 
