@@ -1253,7 +1253,7 @@
                 <node concept="3fqX7Q" id="2539ELgaDac" role="3clFbG">
                   <node concept="2ZW3vV" id="2539ELgaFeP" role="3fr31v">
                     <node concept="3uibUv" id="2539ELgaFnf" role="2ZW6by">
-                      <ref role="3uigEE" to="hdhb:42hl10VHay5" resolve="MainEditorComponent" />
+                      <ref role="3uigEE" to="hdhb:42hl10VHay5" resolve="DiffEditor.MainEditorComponent" />
                     </node>
                     <node concept="2OqwBi" id="2539ELgaDHj" role="2ZW6bz">
                       <node concept="1Q80Hx" id="2539ELgaDo2" role="2Oq$k0" />
@@ -1281,7 +1281,7 @@
                         <property role="TrG5h" value="group2ConstraintEntry" />
                         <node concept="2hMVRd" id="1BW0KPic_iq" role="1tU5fm">
                           <node concept="3uibUv" id="1BW0KPic_ir" role="2hN53Y">
-                            <ref role="3uigEE" to="33ny:~Map$Entry" resolve="Entry" />
+                            <ref role="3uigEE" to="33ny:~Map$Entry" resolve="Map.Entry" />
                             <node concept="3Tqbb2" id="1BW0KPic_is" role="11_B2D">
                               <ref role="ehGHo" to="s6b7:6OwVbfncU9A" resolve="ConstraintGroup" />
                             </node>
@@ -1299,7 +1299,7 @@
                           <node concept="2OqwBi" id="1BW0KPic_iw" role="37wK5m">
                             <node concept="pncrf" id="1BW0KPic_ix" role="2Oq$k0" />
                             <node concept="3Tsc0h" id="1BW0KPicAUN" role="2OqNvi">
-                              <ref role="3TtcxE" to="s6b7:4L$vDwV2mVd" />
+                              <ref role="3TtcxE" to="s6b7:4L$vDwV2mVd" resolve="constraints" />
                             </node>
                           </node>
                         </node>
@@ -1485,7 +1485,7 @@
                                   <node concept="2pJPED" id="5sXsnEdC8W0" role="2pJPEn">
                                     <ref role="2pJxaS" to="s6b7:6OwVbfnk$1s" resolve="ConstraintGroupAnnotation" />
                                     <node concept="2pIpSj" id="5sXsnEdCasT" role="2pJxcM">
-                                      <ref role="2pIpSl" to="s6b7:6OwVbfnqiC9" />
+                                      <ref role="2pIpSl" to="s6b7:6OwVbfnqiC9" resolve="groupRef" />
                                       <node concept="36biLy" id="5sXsnEdCaLK" role="28nt2d">
                                         <node concept="2OqwBi" id="5sXsnEdCcbK" role="36biLW">
                                           <node concept="2OqwBi" id="5sXsnEdCbQc" role="2Oq$k0">
@@ -1500,7 +1500,7 @@
                                               </node>
                                             </node>
                                             <node concept="3TrEf2" id="5sXsnEdCbWk" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="s6b7:6OwVbfnqiC9" />
+                                              <ref role="3Tt5mk" to="s6b7:6OwVbfnqiC9" resolve="groupRef" />
                                             </node>
                                           </node>
                                           <node concept="1$rogu" id="5sXsnEdCcup" role="2OqNvi" />
@@ -1698,7 +1698,7 @@
                         <node concept="2OqwBi" id="1BW0KPicxnT" role="2Oq$k0">
                           <node concept="pncrf" id="1BW0KPicwXx" role="2Oq$k0" />
                           <node concept="3Tsc0h" id="1BW0KPicy7V" role="2OqNvi">
-                            <ref role="3TtcxE" to="s6b7:4L$vDwV2mVd" />
+                            <ref role="3TtcxE" to="s6b7:4L$vDwV2mVd" resolve="constraints" />
                           </node>
                         </node>
                         <node concept="2HwmR7" id="1BW0KPic$Fk" role="2OqNvi">
@@ -1719,11 +1719,11 @@
                                         </node>
                                       </node>
                                       <node concept="3TrEf2" id="1BW0KPic$Fv" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="s6b7:6OwVbfnqiC9" />
+                                        <ref role="3Tt5mk" to="s6b7:6OwVbfnqiC9" resolve="groupRef" />
                                       </node>
                                     </node>
                                     <node concept="3TrEf2" id="1BW0KPic$Fw" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="s6b7:6OwVbfnk$53" />
+                                      <ref role="3Tt5mk" to="s6b7:6OwVbfnk$53" resolve="group" />
                                     </node>
                                   </node>
                                   <node concept="3x8VRR" id="1BW0KPic$Fx" role="2OqNvi" />
@@ -1744,7 +1744,7 @@
               <node concept="2iRkQZ" id="6OwVbfnAoAg" role="2iSdaV" />
               <node concept="3F2HdR" id="4L$vDwV2VWe" role="3EZMnx">
                 <ref role="1k5W1q" to="itrz:7Nu9WvXzjcf" resolve="iets3MuchSmaller" />
-                <ref role="1NtTu8" to="s6b7:4L$vDwV2mVd" />
+                <ref role="1NtTu8" to="s6b7:4L$vDwV2mVd" resolve="constraints" />
                 <node concept="2iRkQZ" id="4L$vDwV2VWg" role="2czzBx" />
                 <node concept="107P5z" id="6OwVbfnEtQg" role="12AuX0">
                   <node concept="3clFbS" id="6OwVbfnEtQh" role="2VODD2">
@@ -1761,11 +1761,11 @@
                               </node>
                             </node>
                             <node concept="3TrEf2" id="6OwVbfnEvpm" role="2OqNvi">
-                              <ref role="3Tt5mk" to="s6b7:6OwVbfnqiC9" />
+                              <ref role="3Tt5mk" to="s6b7:6OwVbfnqiC9" resolve="groupRef" />
                             </node>
                           </node>
                           <node concept="3TrEf2" id="6OwVbfnEvXI" role="2OqNvi">
-                            <ref role="3Tt5mk" to="s6b7:6OwVbfnk$53" />
+                            <ref role="3Tt5mk" to="s6b7:6OwVbfnk$53" resolve="group" />
                           </node>
                         </node>
                         <node concept="3w_OXm" id="6OwVbfnEwhN" role="2OqNvi" />
@@ -1797,7 +1797,7 @@
               <node concept="VPM3Z" id="2539ELgDv_H" role="3F10Kt" />
               <node concept="3XFhqQ" id="2539ELgDv_L" role="3EZMnx" />
               <node concept="3F2HdR" id="2539ELgq6Dd" role="3EZMnx">
-                <ref role="1NtTu8" to="s6b7:4L$vDwV2mVd" />
+                <ref role="1NtTu8" to="s6b7:4L$vDwV2mVd" resolve="constraints" />
                 <node concept="2iRkQZ" id="2539ELgq6De" role="2czzBx" />
               </node>
               <node concept="2iRfu4" id="2539ELgDv_K" role="2iSdaV" />
@@ -11762,11 +11762,11 @@
                     <node concept="2OqwBi" id="2539ELi1Neo" role="2Oq$k0">
                       <node concept="pncrf" id="2539ELi1Nep" role="2Oq$k0" />
                       <node concept="3TrEf2" id="2539ELi1Neq" role="2OqNvi">
-                        <ref role="3Tt5mk" to="s6b7:6OwVbfnqiC9" />
+                        <ref role="3Tt5mk" to="s6b7:6OwVbfnqiC9" resolve="groupRef" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="2539ELi1Ner" role="2OqNvi">
-                      <ref role="3Tt5mk" to="s6b7:6OwVbfnk$53" />
+                      <ref role="3Tt5mk" to="s6b7:6OwVbfnk$53" resolve="group" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="2539ELi1Nes" role="2OqNvi">
@@ -11819,11 +11819,11 @@
                     <node concept="2OqwBi" id="2539ELi1NML" role="2Oq$k0">
                       <node concept="pncrf" id="2539ELi1NMM" role="2Oq$k0" />
                       <node concept="3TrEf2" id="2539ELi1NMN" role="2OqNvi">
-                        <ref role="3Tt5mk" to="s6b7:6OwVbfnqiC9" />
+                        <ref role="3Tt5mk" to="s6b7:6OwVbfnqiC9" resolve="groupRef" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="2539ELi1NMO" role="2OqNvi">
-                      <ref role="3Tt5mk" to="s6b7:6OwVbfnk$53" />
+                      <ref role="3Tt5mk" to="s6b7:6OwVbfnk$53" resolve="group" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="2539ELi1NMP" role="2OqNvi">
@@ -12859,7 +12859,7 @@
                     <node concept="2OqwBi" id="2539ELgaf2p" role="2Oq$k0">
                       <node concept="pncrf" id="2539ELgaf2q" role="2Oq$k0" />
                       <node concept="3Tsc0h" id="2539ELgaf2r" role="2OqNvi">
-                        <ref role="3TtcxE" to="s6b7:4L$vDwV2mVd" />
+                        <ref role="3TtcxE" to="s6b7:4L$vDwV2mVd" resolve="constraints" />
                       </node>
                     </node>
                     <node concept="34oBXx" id="2539ELgaf2s" role="2OqNvi" />
@@ -12924,7 +12924,7 @@
       </node>
       <node concept="1iCGBv" id="2539ELgaf2M" role="3EZMnx">
         <property role="1$x2rV" value="none" />
-        <ref role="1NtTu8" to="s6b7:6OwVbfncVTn" />
+        <ref role="1NtTu8" to="s6b7:6OwVbfncVTn" resolve="rootConstraintGrouping" />
         <ref role="1k5W1q" to="itrz:7Nu9WvXzjcf" resolve="iets3MuchSmaller" />
         <node concept="1sVBvm" id="2539ELgaf2N" role="1sWHZn">
           <node concept="3F0A7n" id="2539ELgaf2O" role="2wV5jI">
