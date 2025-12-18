@@ -881,7 +881,7 @@
     <property role="TrG5h" value="GroupByOp" />
     <property role="34LRSv" value="groupBy" />
     <property role="R4oN_" value="group the collection by a condition" />
-    <ref role="1TJDcQ" to="700h:6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <ref role="1TJDcQ" to="700h:6$cVN8sEQ7y" resolve="OneArgLambdaCollectionOp" />
     <node concept="PrWs8" id="7cphKbKo1Dk" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>

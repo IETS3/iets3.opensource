@@ -4024,36 +4024,48 @@
     <property role="TrG5h" value="check_ForeachOp" />
     <property role="3GE5qa" value="collection" />
     <node concept="3clFbS" id="7SZA7Ud$032" role="18ibNy">
-      <node concept="3clFbJ" id="7SZA7Ud$27L" role="3cqZAp">
-        <node concept="3clFbS" id="7SZA7Ud$27N" role="3clFbx">
-          <node concept="2MkqsV" id="7SZA7Ud$2Ic" role="3cqZAp">
-            <node concept="Xl_RD" id="7SZA7Ud$2IB" role="2MkJ7o">
-              <property role="Xl_RC" value="the lambda expression must have an effect" />
+      <node concept="Jncv_" id="6$cVN8teWrm" role="3cqZAp">
+        <ref role="JncvD" to="zzzn:2D48zR6a1ez" resolve="ILambdaLike" />
+        <node concept="2OqwBi" id="6$cVN8teWK1" role="JncvB">
+          <node concept="1YBJjd" id="6$cVN8teWtu" role="2Oq$k0">
+            <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
+          </node>
+          <node concept="3TrEf2" id="6$cVN8teXxw" role="2OqNvi">
+            <ref role="3Tt5mk" to="700h:6zmBjqUjnKt" resolve="arg" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="6$cVN8teWrq" role="Jncv$">
+          <node concept="3clFbJ" id="6$cVN8teXTd" role="3cqZAp">
+            <node concept="3fqX7Q" id="6$cVN8teXTm" role="3clFbw">
+              <node concept="2OqwBi" id="6$cVN8teZk$" role="3fr31v">
+                <node concept="2OqwBi" id="6$cVN8teYyf" role="2Oq$k0">
+                  <node concept="Jnkvi" id="6$cVN8teYl3" role="2Oq$k0">
+                    <ref role="1M0zk5" node="6$cVN8teWrs" resolve="lambdaArg" />
+                  </node>
+                  <node concept="2qgKlT" id="6$cVN8teZ5s" role="2OqNvi">
+                    <ref role="37wK5l" to="5s8v:6NpHfQ5A3Wb" resolve="delayedEffectDescriptor" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6$cVN8tf0aH" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:6GySMNjje8w" resolve="modifiesState" />
+                </node>
+              </node>
             </node>
-            <node concept="1YBJjd" id="7SZA7Ud$2Jt" role="1urrMF">
-              <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
+            <node concept="3clFbS" id="6$cVN8teXTf" role="3clFbx">
+              <node concept="2MkqsV" id="7SZA7Ud$2Ic" role="3cqZAp">
+                <node concept="Xl_RD" id="7SZA7Ud$2IB" role="2MkJ7o">
+                  <property role="Xl_RC" value="the lambda expression must have an effect" />
+                </node>
+                <node concept="1YBJjd" id="7SZA7Ud$2Jt" role="1urrMF">
+                  <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3fqX7Q" id="7SZA7Ud$287" role="3clFbw">
-          <node concept="2OqwBi" id="6GySMNjYF2A" role="3fr31v">
-            <node concept="2OqwBi" id="5vAcs0YtS$f" role="2Oq$k0">
-              <node concept="2OqwBi" id="7SZA7Ud$2nl" role="2Oq$k0">
-                <node concept="1YBJjd" id="7SZA7Ud$28d" role="2Oq$k0">
-                  <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
-                </node>
-                <node concept="3TrEf2" id="5vAcs0YtRHG" role="2OqNvi">
-                  <ref role="3Tt5mk" to="700h:7SZA7UeMt3K" resolve="arg" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="5vAcs0YtTGY" role="2OqNvi">
-                <ref role="37wK5l" to="5s8v:6NpHfQ5A3Wb" resolve="delayedEffectDescriptor" />
-              </node>
-            </node>
-            <node concept="liA8E" id="6GySMNjYF$H" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:6GySMNjje8w" resolve="modifiesState" />
-            </node>
-          </node>
+        <node concept="JncvC" id="6$cVN8teWrs" role="JncvA">
+          <property role="TrG5h" value="lambdaArg" />
+          <node concept="2jxLKc" id="6$cVN8teWrt" role="1tU5fm" />
         </node>
       </node>
     </node>
