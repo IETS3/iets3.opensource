@@ -12017,6 +12017,11 @@
             <ref role="3bR37D" node="23q4CrmMjed" resolve="org.iets3.core.expr.genjava.messages.rt" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6I8PWVH5iqP" role="3bR37C">
+          <node concept="3bR9La" id="6I8PWVH5iqQ" role="1SiIV1">
+            <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="lH$Puj5DFq" role="2G$12L">
         <property role="BnDLt" value="true" />
