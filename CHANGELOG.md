@@ -11,6 +11,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Variability: The intention "Update all configurations" for feature models has been improved: Now a modal dialog with a progress bar and some additional information is shown. The process is now completely sequential, improving stability. Moreover, there is some timing output in the log. Finally, performance has been improved by postponing the event handling for all changes to the involved models.
 
+- Java generator support was added for function compositions and the support was improved for the function style execution operation (FunctionStyleExecOp).
+
 ### Fixed
 
 - Variability: The propagation of configuration updates to referencing configurations has been improved. Due to this optimization, it needs much less CPU time now.
