@@ -811,7 +811,7 @@
     <node concept="3aamgX" id="4f5wuCuX26u" role="3acgRq">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yv47:49WTic8f4iz" resolve="Function" />
-      <ref role="2sgKRv" node="2qRo6DhZXuC" resolve="Funktion" />
+      <ref role="2sgKRv" node="2qRo6DhZXuC" resolve="Function" />
       <node concept="j$656" id="EpsWA8hv5C" role="1lVwrX">
         <ref role="v9R2y" node="1z6mtoTjc17" resolve="Function_NonExt" />
       </node>
@@ -917,7 +917,7 @@
       </node>
     </node>
     <node concept="2rT7sh" id="2qRo6DhZXuC" role="2rTMjI">
-      <property role="TrG5h" value="Funktion" />
+      <property role="TrG5h" value="Function" />
       <ref role="2rZz_L" to="tpee:fIYIFWa" resolve="StaticMethodDeclaration" />
       <ref role="2rTdP9" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
     </node>
@@ -1117,7 +1117,7 @@
                           <node concept="2OqwBi" id="4Qs0nZjoISU" role="3clFbG">
                             <node concept="1iwH7S" id="4Qs0nZjoISV" role="2Oq$k0" />
                             <node concept="1iwH70" id="4Qs0nZjoISW" role="2OqNvi">
-                              <ref role="1iwH77" node="2qRo6DhZXuC" resolve="Funktion" />
+                              <ref role="1iwH77" node="2qRo6DhZXuC" resolve="Function" />
                               <node concept="2OqwBi" id="4Qs0nZjoISX" role="1iwH7V">
                                 <node concept="30H73N" id="4Qs0nZjoISY" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="4Qs0nZjoJXd" role="2OqNvi">
@@ -1145,7 +1145,7 @@
                               <node concept="2OqwBi" id="4Qs0nZjoKT_" role="2Oq$k0">
                                 <node concept="1iwH7S" id="4Qs0nZjoKTA" role="2Oq$k0" />
                                 <node concept="1iwH70" id="4Qs0nZjoKTB" role="2OqNvi">
-                                  <ref role="1iwH77" node="2qRo6DhZXuC" resolve="Funktion" />
+                                  <ref role="1iwH77" node="2qRo6DhZXuC" resolve="Function" />
                                   <node concept="2OqwBi" id="4Qs0nZjoKTC" role="1iwH7V">
                                     <node concept="30H73N" id="4Qs0nZjoKTD" role="2Oq$k0" />
                                     <node concept="3TrEf2" id="4Qs0nZjoKTE" role="2OqNvi">
@@ -3079,7 +3079,7 @@
                                   <node concept="2OqwBi" id="VXV$b4aYxE" role="3clFbG">
                                     <node concept="1iwH7S" id="VXV$b4aY7_" role="2Oq$k0" />
                                     <node concept="1iwH70" id="VXV$b4aZ9Q" role="2OqNvi">
-                                      <ref role="1iwH77" node="2qRo6DhZXuC" resolve="Funktion" />
+                                      <ref role="1iwH77" node="2qRo6DhZXuC" resolve="Function" />
                                       <node concept="2OqwBi" id="VXV$b4aZJN" role="1iwH7V">
                                         <node concept="30H73N" id="VXV$b4aZtb" role="2Oq$k0" />
                                         <node concept="3TrEf2" id="VXV$b4b051" role="2OqNvi">
@@ -6444,7 +6444,6 @@
       <node concept="2tJIrI" id="6I2TeLIbZeS" role="jymVt">
         <node concept="5jKBG" id="1z6mtoTjDTm" role="lGtFl">
           <ref role="v9R2y" node="1z6mtoTjc17" resolve="Function_NonExt" />
-          <ref role="2rW$FS" node="2qRo6DhZXuC" resolve="Funktion" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6I2TeLIbZes" role="1B3o_S" />
@@ -8306,7 +8305,9 @@
           </node>
         </node>
       </node>
-      <node concept="raruj" id="1z6mtoTj_FW" role="lGtFl" />
+      <node concept="raruj" id="1z6mtoTj_FW" role="lGtFl">
+        <ref role="2sdACS" node="2qRo6DhZXuC" resolve="Function" />
+      </node>
       <node concept="3cqZAl" id="EpsWA8jTUC" role="3clF45">
         <node concept="5jKBG" id="EpsWA8jUex" role="lGtFl">
           <ref role="v9R2y" node="EpsWA8jRsw" resolve="Function_ReturnType" />
