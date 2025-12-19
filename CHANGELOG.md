@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - Variability: The intention "Update all configurations" for feature models has been improved: Now a modal dialog with a progress bar and some additional information is shown. The process is now completely sequential, improving stability. Moreover, there is some timing output in the log. Finally, performance has been improved by postponing the event handling for all changes to the involved models.
+- Variability: The intention "Adapt to changes in feature model" and related quickfixes also have been improved similarly to the improvements on "Update all configurations".
 
 ### Fixed
 
@@ -19,6 +20,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Variability: Remove deprecated concepts `VariabilityModelChunk_old`, and some related concepts.
 - Typesystem: All usages of colon casts were transformed to the 'as' cast for null safety. From now on no colon casts are allowed in the typesystem, also read this issue for more info: https://github.com/IETS3/iets3.opensource/issues/688
+- Variability: The grouping of root constraints has been improved. New root constraints will be added next to the other constraints in the respective groups. This helps to avoid merge conflicts.
+
 
 ## November 2025
 
