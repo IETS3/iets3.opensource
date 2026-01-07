@@ -40,9 +40,7 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <fileset dir="${artifacts.mps}/lib">
-      <include name="util-8.jar" />
-    </fileset>
+    <pathelement location="${artifacts.mps}/lib/util-8.jar" />
   </path>
   
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
@@ -63,6 +61,7 @@
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
           <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
+          <language id="l:427a473d-5177-432c-9905-bcbceb71b996:jetbrains.mps.build.mps.runner" />
           <language id="l:3600cb0a-44dd-4a5b-9968-22924406419e:jetbrains.mps.build.mps.tests" />
           <language id="l:9d000fbd-bdca-4a46-b39b-c5ba9e79b38c:org.iets3.opensource.build.gentests" />
         </uses>
@@ -125,8 +124,10 @@
       <settings refid="m2m-0" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.build" id="com.mbeddr.platform.build" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build" id="de.itemis.mps.extensions.build" />
+      <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
       <chunk>
         <module file="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/org.iets3.opensource.build.gentests.mpl" />
         <module file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/org.iets3.opensource.build.gentests.rt.msd" />
@@ -137,7 +138,6 @@
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xmx512m" />
-        <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
       <macro name="iets3.github.opensource.home" path="${iets3.github.opensource.home}" />
       <macro name="mps.home" path="${mps.home}" />
@@ -220,7 +220,12 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
@@ -292,7 +297,12 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.jar" />
@@ -325,6 +335,7 @@
         <fileset file="${artifacts.mps}/lib/mps-references.jar" />
         <fileset file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/lib/takari-cpsuite.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.opensource.build.gentests.rt">

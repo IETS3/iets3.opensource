@@ -3,6 +3,7 @@ import de.itemis.mps.gradle.GitBasedVersioning
 import de.itemis.mps.gradle.Macro
 import de.itemis.mps.gradle.RunAntScript
 import de.itemis.mps.gradle.TestLanguages
+import de.itemis.mps.gradle.tasks.MpsCheck
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
 import groovy.util.Node
@@ -21,7 +22,6 @@ plugins {
     alias(libs.plugins.githubRelease)
     alias(libs.plugins.cyclonedxBom)
     alias(libs.plugins.downloadJbr)
-    alias(libs.plugins.modelcheck)
 }
 
 repositories {
@@ -53,11 +53,6 @@ dependencies {
     cpSuite(libs.cpSuite.get().toString() + "@jar") { isTransitive = false }
 }
 
-tasks.wrapper {
-    gradleVersion = libs.versions.gradle.get()
-    distributionType = Wrapper.DistributionType.ALL
-}
-
 downloadJbr {
     jbrVersion = libs.versions.jbr.get()
 }
@@ -73,8 +68,8 @@ version = calculateVersion().also {
 }
 
 fun calculateVersion(): String {
-    val major = libs.versions.mpsVersion.get().substring(0, 4)
-    val minor = libs.versions.mpsVersion.get().substring(5, 6)
+    val major = "9999"
+    val minor = "9"
     if (!ciBuild) return "$major.$minor-SNAPSHOT"
 
     val buildNumber =
@@ -260,7 +255,7 @@ tasks.assemble {
 }
 
 val migrate by tasks.registering(MpsMigrate::class) {
-    dependsOn(resolveMPS, "resolveMpsForModelcheck", tasks.downloadJbr, buildLanguages, buildAndRunTests)
+    dependsOn(resolveMPS, tasks.downloadJbr, buildLanguages, buildAndRunTests)
     javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
     haltOnPrecheckFailure.set(false)
     haltOnDependencyError.set(false)
@@ -273,7 +268,7 @@ val migrate by tasks.registering(MpsMigrate::class) {
 
 val remigrate by tasks.registering(Remigrate::class) {
     mustRunAfter(migrate, buildLanguages, buildAndRunTests)
-    dependsOn(resolveMPS, "resolveMpsForModelcheck", tasks.downloadJbr)
+    dependsOn(resolveMPS, tasks.downloadJbr)
     javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
     mpsHome.set(mpsHomeDir)
     projectDirectories.from("code/languages/org.iets3.opensource")
@@ -282,20 +277,21 @@ val remigrate by tasks.registering(Remigrate::class) {
     maxHeapSize = "4G"
 }
 
-modelcheck {
-    projectLocation = File("$projectDir/code/languages/org.iets3.opensource")
-    mpsLocation = mpsHomeDir.asFile
-    pluginsProperty.set(emptyList())
-    mpsConfig = mps
-    macros = listOf(Macro("iets3.github.opensource.home", "$projectDir"))
-    junitFile = layout.buildDirectory.file("TEST-checkProject.xml").get().asFile
-    junitFormat = "message"
-    errorNoFail = true
-    debug = false
-    maxHeap = "4G"
-}
+val checkmodels by tasks.registering(MpsCheck::class) {
+    dependsOn(resolveMPS)
+    javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
 
-tasks.checkmodels { dependsOn(resolveMPS) }
+    projectLocation.set(file("$projectDir/code/languages/org.iets3.opensource"))
+    mpsHome.set(mpsHomeDir)
+    pluginRoots.add(mpsHomeDir.dir("plugins"))
+    folderMacros.put("iets3.github.opensource.home", layout.projectDirectory)
+
+    junitFile.set(layout.buildDirectory.file("TEST-checkProject.xml"))
+    junitFormat.set("message")
+    ignoreFailures = true
+    debug = false
+    maxHeapSize = "4G"
+}
 
 val packageLanguages by tasks.registering(Zip::class) {
     dependsOn(buildLanguages, tasks.cyclonedxBom)
@@ -510,27 +506,25 @@ publishing {
 defaultTasks.add(tasks.assemble.name)
 
 githubRelease {
-    owner("IETS3")
-    repo("iets3.opensource")
+    owner = "IETS3"
+    repo = "iets3.opensource"
     token(rootProject.findProperty("github.token").toString())
-    tagName("nightly-$version")
-    targetCommitish(GitBasedVersioning.getGitCommitHash())
+    tagName = "nightly-$version"
+    targetCommitish = GitBasedVersioning.getGitCommitHash()
     val currentDate = LocalDate.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
     val dependencyList =
         languageLibs.resolvedConfiguration.lenientConfiguration.allModuleDependencies.joinToString("\n") {
             "- `${it.moduleGroup}:${it.moduleName}` : `${it.moduleVersion}`"
         }
-    body {
-        """
+    body = """
             Automated Nightly build from ${currentDate}.
             //
             //Includes dependencies:
             //${dependencyList}
         """.trimIndent()
-    }
-    prerelease(true)
+    prerelease = true
     releaseAssets(packageDistroWithDependencies.get().outputs.files.map { it.path })
-    dryRun(false)
+    dryRun = false
 }
 tasks.githubRelease {
     dependsOn(packageDistroWithDependencies)

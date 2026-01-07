@@ -515,7 +515,7 @@
       <node concept="3vetai" id="62DU45CA$YH" role="3vQZUl">
         <node concept="2YIFZM" id="62DU45CA_iq" role="3vdyny">
           <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
-          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher,org.hamcrest.Matcher)" resolve="allOf" />
+          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher...)" resolve="allOf" />
           <node concept="10QFUN" id="62DU45CAAk1" role="37wK5m">
             <node concept="3uibUv" id="7SjyARDYLT8" role="10QFUM">
               <ref role="3uigEE" to="4k19:~Matcher" resolve="Matcher" />
