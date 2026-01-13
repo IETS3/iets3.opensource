@@ -15798,7 +15798,7 @@
               <node concept="3clFbF" id="7LcJ$Ba6lBX" role="3cqZAp">
                 <node concept="2OqwBi" id="7LcJ$Ba6mrn" role="3clFbG">
                   <node concept="37vLTw" id="7LcJ$Ba6lBV" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7LcJ$Ba6jJ8" resolve="lastSegment" />
+                    <ref role="3cqZAo" node="7LcJ$Ba6jJ8" resolve="lastSegmentMaybe" />
                   </node>
                   <node concept="liA8E" id="7LcJ$Ba6ng1" role="2OqNvi">
                     <ref role="37wK5l" to="33ny:~Optional.ifPresent(java.util.function.Consumer)" resolve="ifPresent" />
