@@ -135,22 +135,6 @@
       <ref role="PrY4T" node="1_gcnzuM43A" resolve="IVariationPointBase" />
     </node>
   </node>
-  <node concept="PlHQZ" id="2fC0CjMdVVS">
-    <property role="EcuMT" value="2587320755947028216" />
-    <property role="3GE5qa" value="varpoints" />
-    <property role="TrG5h" value="IConfigListVarPoint" />
-    <node concept="1TJgyj" id="2fC0CjMdVVV" role="1TKVEi">
-      <property role="IQ2ns" value="2587320755947028219" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="configRefs" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4zfp5i3KKe7" resolve="FeatureModelConfigurationRefExpr" />
-    </node>
-    <node concept="PrWs8" id="2fC0CjMdVVT" role="PrDN$">
-      <ref role="PrY4T" node="1_gcnzuM43A" resolve="IVariationPointBase" />
-    </node>
-    <node concept="asaX9" id="4SiK079baos" role="lGtFl" />
-  </node>
   <node concept="PlHQZ" id="WVQivijUhP">
     <property role="EcuMT" value="1097709699250234485" />
     <property role="3GE5qa" value="varpoints" />
