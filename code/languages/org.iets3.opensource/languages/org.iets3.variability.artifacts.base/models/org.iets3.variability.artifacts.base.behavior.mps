@@ -25719,25 +25719,52 @@
     <node concept="3clFb_" id="4nDVfxWo1u0" role="jymVt">
       <property role="TrG5h" value="finish" />
       <node concept="3clFbS" id="4nDVfxWo1u1" role="3clF47">
-        <node concept="3cpWs8" id="2ggZrWKXw72" role="3cqZAp">
-          <node concept="3cpWsn" id="2ggZrWKXw73" role="3cpWs9">
-            <property role="TrG5h" value="root" />
-            <node concept="3Tqbb2" id="2ggZrWKXlLH" role="1tU5fm">
-              <ref role="ehGHo" to="i9mv:75FdNyOGCTb" resolve="IVariabilityAwareArtifact" />
+        <node concept="3SKdUt" id="4ooTNDsE_g_" role="3cqZAp">
+          <node concept="1PaTwC" id="4ooTNDsE_gA" role="1aUNEU">
+            <node concept="3oM_SD" id="4ooTNDsE_gB" role="1PaTwD">
+              <property role="3oM_SC" value="Only" />
             </node>
-            <node concept="2OqwBi" id="2ggZrWKXw74" role="33vP2m">
-              <node concept="37vLTw" id="2ggZrWKXw75" role="2Oq$k0">
-                <ref role="3cqZAo" node="4nDVfxWo1ur" resolve="path" />
-              </node>
-              <node concept="liA8E" id="2ggZrWKXw76" role="2OqNvi">
-                <ref role="37wK5l" to="7wpd:65ATjZHmLvj" resolve="root" />
-              </node>
+            <node concept="3oM_SD" id="4ooTNDsEAhY" role="1PaTwD">
+              <property role="3oM_SC" value="segments" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAiJ" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAjg" role="1PaTwD">
+              <property role="3oM_SC" value="correspond" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAl1" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAly" role="1PaTwD">
+              <property role="3oM_SC" value="instances" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAmj" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAmP" role="1PaTwD">
+              <property role="3oM_SC" value="necessary" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAom" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAoB" role="1PaTwD">
+              <property role="3oM_SC" value="find" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAoC" role="1PaTwD">
+              <property role="3oM_SC" value="instances" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAq9" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4ooTNDsEAqE" role="1PaTwD">
+              <property role="3oM_SC" value="'targets'" />
             </node>
           </node>
         </node>
         <node concept="3cpWs8" id="2ggZrWKYCWW" role="3cqZAp">
           <node concept="3cpWsn" id="2ggZrWKYCWX" role="3cpWs9">
-            <property role="TrG5h" value="append" />
+            <property role="TrG5h" value="artifactPath" />
             <node concept="3uibUv" id="2ggZrWKYAM0" role="1tU5fm">
               <ref role="3uigEE" node="5LihCoMh$14" resolve="ArtifactPath" />
             </node>
@@ -25746,8 +25773,13 @@
                 <node concept="1pGfFk" id="2ggZrWKYCX0" role="2ShVmc">
                   <property role="373rjd" value="true" />
                   <ref role="37wK5l" node="5LihCoMi05B" resolve="ArtifactPath" />
-                  <node concept="37vLTw" id="2ggZrWKYCX1" role="37wK5m">
-                    <ref role="3cqZAo" node="2ggZrWKXw73" resolve="root" />
+                  <node concept="2OqwBi" id="4ooTNDsEmlB" role="37wK5m">
+                    <node concept="37vLTw" id="4ooTNDsEmlC" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4nDVfxWo1ur" resolve="path" />
+                    </node>
+                    <node concept="liA8E" id="4ooTNDsEmlD" role="2OqNvi">
+                      <ref role="37wK5l" to="7wpd:65ATjZHmLvj" resolve="root" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -25790,6 +25822,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4ooTNDsEoET" role="3cqZAp" />
         <node concept="3clFbF" id="4nDVfxWo1u2" role="3cqZAp">
           <node concept="2OqwBi" id="4nDVfxWo1u3" role="3clFbG">
             <node concept="37vLTw" id="4nDVfxWo1u4" role="2Oq$k0">

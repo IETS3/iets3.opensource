@@ -623,7 +623,6 @@
         <child id="1225711182005" name="list" index="1y566C" />
         <child id="1225711191269" name="index" index="1y58nS" />
       </concept>
-      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
@@ -4308,7 +4307,7 @@
         <ref role="3uigEE" to="i05g:5LihCoMh$14" resolve="ArtifactPath" />
       </node>
       <node concept="37vLTG" id="45iln_qMYAZ" role="3clF46">
-        <property role="TrG5h" value="node" />
+        <property role="TrG5h" value="skeletonNode" />
         <node concept="3uibUv" id="45iln_qMYB0" role="1tU5fm">
           <ref role="3uigEE" to="i05g:1FyQP4mJjB" resolve="SkeletonNode" />
         </node>
@@ -4346,53 +4345,12 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="7LcJ$BaN4KW" role="3clFbw">
-            <node concept="2OqwBi" id="7LcJ$BaMn33" role="2Oq$k0">
-              <node concept="2YIFZM" id="7LcJ$BaLDTW" role="2Oq$k0">
-                <ref role="37wK5l" to="33ny:~Optional.ofNullable(java.lang.Object)" resolve="ofNullable" />
-                <ref role="1Pybhc" to="33ny:~Optional" resolve="Optional" />
-                <node concept="2OqwBi" id="7LcJ$BaM7TB" role="37wK5m">
-                  <node concept="2OqwBi" id="7LcJ$BaLSaj" role="2Oq$k0">
-                    <node concept="2OqwBi" id="45iln_qNAJ6" role="2Oq$k0">
-                      <node concept="37vLTw" id="45iln_qNhlw" role="2Oq$k0">
-                        <ref role="3cqZAo" node="45iln_qMYAZ" resolve="node" />
-                      </node>
-                      <node concept="liA8E" id="7LcJ$BaLkQ4" role="2OqNvi">
-                        <ref role="37wK5l" to="i05g:SOwwj6zTxH" resolve="getFullPath" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="7LcJ$BaM113" role="2OqNvi">
-                      <ref role="37wK5l" to="7wpd:3u1rFxdFBU5" resolve="segments" />
-                    </node>
-                  </node>
-                  <node concept="1yVyf7" id="7LcJ$BaMgsH" role="2OqNvi" />
-                </node>
-              </node>
-              <node concept="liA8E" id="7LcJ$BaMv0d" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Optional.map(java.util.function.Function)" resolve="map" />
-                <node concept="1bVj0M" id="7LcJ$BaMAaU" role="37wK5m">
-                  <node concept="gl6BB" id="7LcJ$BaMAbd" role="1bW2Oz">
-                    <property role="TrG5h" value="seg" />
-                    <node concept="2jxLKc" id="7LcJ$BaMAbe" role="1tU5fm" />
-                  </node>
-                  <node concept="3clFbS" id="7LcJ$BaMAcb" role="1bW5cS">
-                    <node concept="3clFbF" id="7LcJ$BaMHuu" role="3cqZAp">
-                      <node concept="2OqwBi" id="7LcJ$BaMOic" role="3clFbG">
-                        <node concept="37vLTw" id="7LcJ$BaMHut" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7LcJ$BaMAbd" resolve="seg" />
-                        </node>
-                        <node concept="liA8E" id="7LcJ$BaMX5$" role="2OqNvi">
-                          <ref role="37wK5l" to="i05g:7Yjolz24j0S" resolve="isInstance" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+          <node concept="2OqwBi" id="4ooTNDsFfO7" role="3clFbw">
+            <node concept="37vLTw" id="4ooTNDsFdU$" role="2Oq$k0">
+              <ref role="3cqZAo" node="45iln_qMYAZ" resolve="node" />
             </node>
-            <node concept="liA8E" id="7LcJ$BaNdKJ" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Optional.orElse(java.lang.Object)" resolve="orElse" />
-              <node concept="3clFbT" id="7LcJ$BaNl69" role="37wK5m" />
+            <node concept="liA8E" id="4ooTNDsFpDp" role="2OqNvi">
+              <ref role="37wK5l" to="i05g:7LcJ$BbTLVP" resolve="isInstance" />
             </node>
           </node>
         </node>
