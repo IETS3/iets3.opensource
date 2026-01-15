@@ -25834,7 +25834,7 @@
                 <ref role="3cqZAo" node="4nDVfxWo1up" resolve="n" />
               </node>
               <node concept="37vLTw" id="4nDVfxWo1u7" role="37wK5m">
-                <ref role="3cqZAo" node="2ggZrWKYCWX" resolve="append" />
+                <ref role="3cqZAo" node="2ggZrWKYCWX" resolve="artifactPath" />
               </node>
               <node concept="37vLTw" id="4nDVfxWo1u8" role="37wK5m">
                 <ref role="3cqZAo" node="4nDVfxWo1uv" resolve="newNode" />

@@ -4319,7 +4319,7 @@
               <node concept="2OqwBi" id="45iln_qO69x" role="3cqZAk">
                 <node concept="2OqwBi" id="45iln_qNZ3K" role="2Oq$k0">
                   <node concept="37vLTw" id="45iln_qNXIT" role="2Oq$k0">
-                    <ref role="3cqZAo" node="45iln_qMYAZ" resolve="node" />
+                    <ref role="3cqZAo" node="45iln_qMYAZ" resolve="skeletonNode" />
                   </node>
                   <node concept="liA8E" id="45iln_qO4N8" role="2OqNvi">
                     <ref role="37wK5l" to="i05g:1FyQP4nCOs" resolve="getParent" />
@@ -4336,7 +4336,7 @@
               <node concept="3cpWs6" id="45iln_qMYAV" role="3cqZAp">
                 <node concept="2OqwBi" id="45iln_qMYAW" role="3cqZAk">
                   <node concept="37vLTw" id="45iln_qMYEP" role="2Oq$k0">
-                    <ref role="3cqZAo" node="45iln_qMYAZ" resolve="node" />
+                    <ref role="3cqZAo" node="45iln_qMYAZ" resolve="skeletonNode" />
                   </node>
                   <node concept="liA8E" id="45iln_qMYAY" role="2OqNvi">
                     <ref role="37wK5l" to="i05g:SOwwj6zTxH" resolve="getFullPath" />
@@ -4347,7 +4347,7 @@
           </node>
           <node concept="2OqwBi" id="4ooTNDsFfO7" role="3clFbw">
             <node concept="37vLTw" id="4ooTNDsFdU$" role="2Oq$k0">
-              <ref role="3cqZAo" node="45iln_qMYAZ" resolve="node" />
+              <ref role="3cqZAo" node="45iln_qMYAZ" resolve="skeletonNode" />
             </node>
             <node concept="liA8E" id="4ooTNDsFpDp" role="2OqNvi">
               <ref role="37wK5l" to="i05g:7LcJ$BbTLVP" resolve="isInstance" />
