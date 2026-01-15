@@ -25265,37 +25265,11 @@
           <node concept="3cpWsn" id="4nDVfxWo1sA" role="3cpWs9">
             <property role="TrG5h" value="varPoints" />
             <node concept="2OqwBi" id="4nDVfxWo1sB" role="33vP2m">
-              <node concept="2OqwBi" id="4nDVfxWo1sC" role="2Oq$k0">
-                <node concept="2YIFZM" id="4nDVfxWo1sD" role="2Oq$k0">
-                  <ref role="37wK5l" to="eagd:3Dw9_kcDxc$" resolve="getVariationPoints" />
-                  <ref role="1Pybhc" to="eagd:2oZoKLgEuAY" resolve="ArtifactHelper" />
-                  <node concept="37vLTw" id="4nDVfxWo1sE" role="37wK5m">
-                    <ref role="3cqZAo" node="4nDVfxWo1sv" resolve="n" />
-                  </node>
-                </node>
-                <node concept="3zZkjj" id="4nDVfxWo1sF" role="2OqNvi">
-                  <node concept="1bVj0M" id="4nDVfxWo1sG" role="23t8la">
-                    <node concept="3clFbS" id="4nDVfxWo1sH" role="1bW5cS">
-                      <node concept="3clFbF" id="4nDVfxWo1sI" role="3cqZAp">
-                        <node concept="3fqX7Q" id="4nDVfxWo1sJ" role="3clFbG">
-                          <node concept="2OqwBi" id="4nDVfxWo1sK" role="3fr31v">
-                            <node concept="37vLTw" id="4nDVfxWo1sL" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4nDVfxWo1sO" resolve="it" />
-                            </node>
-                            <node concept="1mIQ4w" id="4nDVfxWo1sM" role="2OqNvi">
-                              <node concept="chp4Y" id="4nDVfxWo1sN" role="cj9EA">
-                                <ref role="cht4Q" to="i9mv:2fC0CjMdVVS" resolve="IConfigListVarPoint" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="gl6BB" id="4nDVfxWo1sO" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="4nDVfxWo1sP" role="1tU5fm" />
-                    </node>
-                  </node>
+              <node concept="2YIFZM" id="4nDVfxWo1sD" role="2Oq$k0">
+                <ref role="37wK5l" to="eagd:3Dw9_kcDxc$" resolve="getVariationPoints" />
+                <ref role="1Pybhc" to="eagd:2oZoKLgEuAY" resolve="ArtifactHelper" />
+                <node concept="37vLTw" id="4nDVfxWo1sE" role="37wK5m">
+                  <ref role="3cqZAo" node="4nDVfxWo1sv" resolve="n" />
                 </node>
               </node>
               <node concept="ANE8D" id="4nDVfxWo1sQ" role="2OqNvi" />
