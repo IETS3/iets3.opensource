@@ -6822,15 +6822,12 @@
             <node concept="3uibUv" id="7LcJ$Bahyrg" role="1tU5fm">
               <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
             </node>
-            <node concept="2EnYce" id="7LcJ$Bahuis" role="33vP2m">
-              <node concept="2OqwBi" id="7LcJ$Bahuit" role="2Oq$k0">
-                <node concept="37vLTw" id="7LcJ$Bahuiu" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7LcJ$BafYA5" resolve="segments" />
-                </node>
-                <node concept="1yVyf7" id="7LcJ$Bahuiv" role="2OqNvi" />
+            <node concept="2OqwBi" id="2Tl5yhuuGFQ" role="33vP2m">
+              <node concept="37vLTw" id="2Tl5yhuuD4b" role="2Oq$k0">
+                <ref role="3cqZAo" node="220xVKpl3iS" resolve="sn" />
               </node>
-              <node concept="liA8E" id="7LcJ$Bahuiw" role="2OqNvi">
-                <ref role="37wK5l" node="7Yjolz24j0S" resolve="isInstance" />
+              <node concept="liA8E" id="2Tl5yhuuKJR" role="2OqNvi">
+                <ref role="37wK5l" node="7LcJ$BbTLVP" resolve="isInstance" />
               </node>
             </node>
           </node>
@@ -7496,11 +7493,19 @@
       <node concept="3Tqbb2" id="1FyQP4mKZY" role="1tU5fm" />
       <node concept="3Tm6S6" id="1FyQP4mKZZ" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="3PVpeZpkS_u" role="jymVt" />
     <node concept="312cEg" id="7LcJ$BbTtUp" role="jymVt">
       <property role="TrG5h" value="isInstance" />
       <node concept="3Tm6S6" id="7LcJ$BbTc1p" role="1B3o_S" />
       <node concept="10P_77" id="7LcJ$BbTJM2" role="1tU5fm" />
       <node concept="3clFbT" id="7LcJ$BbTLip" role="33vP2m" />
+      <node concept="z59LJ" id="3PVpeZplbno" role="lGtFl">
+        <node concept="TZ5HA" id="3PVpeZplbnp" role="TZ5H$">
+          <node concept="1dT_AC" id="3PVpeZplbnq" role="1dT_Ay">
+            <property role="1dT_AB" value="indicates if for this SkeletonNode an Instantiation is necessary for the 100%-Model" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="312cEg" id="IzpDYSWOE$" role="jymVt">
       <property role="TrG5h" value="path" />
@@ -9456,8 +9461,8 @@
                   </node>
                   <node concept="2OqwBi" id="7LcJ$Bc5g8D" role="3clFbw">
                     <node concept="Xjq3P" id="7LcJ$Bc4YTy" role="2Oq$k0" />
-                    <node concept="2OwXpG" id="7LcJ$Bc5mHN" role="2OqNvi">
-                      <ref role="2Oxat5" node="7LcJ$BbTtUp" resolve="isInstance" />
+                    <node concept="liA8E" id="2Tl5yhuNwZz" role="2OqNvi">
+                      <ref role="37wK5l" node="7LcJ$BbTLVP" resolve="isInstance" />
                     </node>
                   </node>
                 </node>
@@ -10353,10 +10358,22 @@
             </node>
             <node concept="2OqwBi" id="7LcJ$BbXyz0" role="37vLTJ">
               <node concept="Xjq3P" id="7LcJ$BbXhET" role="2Oq$k0" />
-              <node concept="2OwXpG" id="7LcJ$BbXOn2" role="2OqNvi">
+              <node concept="2OwXpG" id="2Tl5yhuRIBR" role="2OqNvi">
                 <ref role="2Oxat5" node="7LcJ$BbTtUp" resolve="isInstance" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="3PVpeZplNeM" role="lGtFl">
+        <node concept="TZ5HA" id="3PVpeZplNeN" role="TZ5H$">
+          <node concept="1dT_AC" id="3PVpeZplNeO" role="1dT_Ay">
+            <property role="1dT_AB" value="Is there instantiation necessary in the 100%-Model. This deviates from the 'isInstance'-value of the last" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3PVpeZplREA" role="TZ5H$">
+          <node concept="1dT_AC" id="3PVpeZplREB" role="1dT_Ay">
+            <property role="1dT_AB" value="segment of the ArtifactPath (in case this SkeletonNode has been created by a VarPoint-Entry of a TabularVarPoint). " />
           </node>
         </node>
       </node>
@@ -21452,6 +21469,16 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="3PVpeZplrxz" role="lGtFl">
+        <node concept="TZ5HA" id="3PVpeZplrx$" role="TZ5H$">
+          <node concept="1dT_AC" id="3PVpeZplrx_" role="1dT_Ay">
+            <property role="1dT_AB" value="true if instantiation has been applied on the SkeletonNode corresponding to this segment. " />
+          </node>
+        </node>
+        <node concept="x79VA" id="3PVpeZplrxA" role="3nqlJM">
+          <property role="x79VB" value=" " />
         </node>
       </node>
     </node>
