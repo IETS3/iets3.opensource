@@ -5,7 +5,7 @@
   <languages>
     <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -161,15 +161,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
@@ -290,6 +284,14 @@
       <concept id="8009069486207462978" name="com.mbeddr.mpsutil.contextactions.structure.ActionSourceWithCondition" flags="ng" index="3_Xg01">
         <child id="8009069486207463378" name="sources" index="3_Xg6h" />
         <child id="8009069486207463329" name="condition" index="3_Xg7y" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1039,14 +1041,98 @@
       </node>
       <node concept="3Tm1VV" id="2aG75lpC1jQ" role="1B3o_S" />
       <node concept="P$JXv" id="2aG75lpCwSx" role="lGtFl">
-        <node concept="TZ5HA" id="2aG75lpCwSy" role="TZ5H$">
-          <node concept="1dT_AC" id="2aG75lpCwSz" role="1dT_Ay">
-            <property role="1dT_AB" value="Transforms an Expression into the form c * x^n, ie. 3 x^3 + x^2 + 2x + 9 ---&gt; " />
+        <node concept="1PaTwC" id="3MzwgoR0SrJ" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0SrK" role="1PaTwD">
+            <property role="3oM_SC" value="Transforms" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrL" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrM" role="1PaTwD">
+            <property role="3oM_SC" value="Expression" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrN" role="1PaTwD">
+            <property role="3oM_SC" value="into" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrO" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrP" role="1PaTwD">
+            <property role="3oM_SC" value="form" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrQ" role="1PaTwD">
+            <property role="3oM_SC" value="c" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrR" role="1PaTwD">
+            <property role="3oM_SC" value="*" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrS" role="1PaTwD">
+            <property role="3oM_SC" value="x^n," />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrT" role="1PaTwD">
+            <property role="3oM_SC" value="ie." />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrU" role="1PaTwD">
+            <property role="3oM_SC" value="3" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrV" role="1PaTwD">
+            <property role="3oM_SC" value="x^3" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrW" role="1PaTwD">
+            <property role="3oM_SC" value="+" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrX" role="1PaTwD">
+            <property role="3oM_SC" value="x^2" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrY" role="1PaTwD">
+            <property role="3oM_SC" value="+" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SrZ" role="1PaTwD">
+            <property role="3oM_SC" value="2x" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ss0" role="1PaTwD">
+            <property role="3oM_SC" value="+" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ss1" role="1PaTwD">
+            <property role="3oM_SC" value="9" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ss2" role="1PaTwD">
+            <property role="3oM_SC" value="---&gt;" />
           </node>
         </node>
-        <node concept="TZ5HA" id="2aG75lpCxqR" role="TZ5H$">
-          <node concept="1dT_AC" id="2aG75lpCxqS" role="1dT_Ay">
-            <property role="1dT_AB" value="3 x^3 + 1 x^2 + 2 x^1 + 9 x^0." />
+        <node concept="1PaTwC" id="3MzwgoR0Ss3" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0Ss4" role="1PaTwD">
+            <property role="3oM_SC" value="3" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ss5" role="1PaTwD">
+            <property role="3oM_SC" value="x^3" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ss6" role="1PaTwD">
+            <property role="3oM_SC" value="+" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ss7" role="1PaTwD">
+            <property role="3oM_SC" value="1" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ss8" role="1PaTwD">
+            <property role="3oM_SC" value="x^2" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ss9" role="1PaTwD">
+            <property role="3oM_SC" value="+" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ssa" role="1PaTwD">
+            <property role="3oM_SC" value="2" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ssb" role="1PaTwD">
+            <property role="3oM_SC" value="x^1" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ssc" role="1PaTwD">
+            <property role="3oM_SC" value="+" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ssd" role="1PaTwD">
+            <property role="3oM_SC" value="9" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Sse" role="1PaTwD">
+            <property role="3oM_SC" value="x^0." />
           </node>
         </node>
       </node>

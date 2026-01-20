@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
   </languages>
   <imports>
@@ -191,16 +191,10 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2901,27 +2895,138 @@
     <node concept="2tJIrI" id="7khFtBHD8yQ" role="jymVt" />
     <node concept="3Tm1VV" id="4voqclTstQn" role="1B3o_S" />
     <node concept="3UR2Jj" id="5wmCCs0jqWp" role="lGtFl">
-      <node concept="TZ5HA" id="5wmCCs0jqWq" role="TZ5H$">
-        <node concept="1dT_AC" id="5wmCCs0jqWr" role="1dT_Ay">
-          <property role="1dT_AB" value="Represents a date range (interval) starting from 'begin', of length 'count' units given by 'unit'." />
+      <node concept="1PaTwC" id="3MzwgoR0VlR" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0VlS" role="1PaTwD">
+          <property role="3oM_SC" value="Represents" />
         </node>
-        <node concept="1dT_AC" id="5wmCCs0jrSi" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+        <node concept="3oM_SD" id="3MzwgoR0VlT" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VlU" role="1PaTwD">
+          <property role="3oM_SC" value="date" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VlV" role="1PaTwD">
+          <property role="3oM_SC" value="range" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VlW" role="1PaTwD">
+          <property role="3oM_SC" value="(interval)" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VlX" role="1PaTwD">
+          <property role="3oM_SC" value="starting" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VlY" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VlZ" role="1PaTwD">
+          <property role="3oM_SC" value="'begin'," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vm0" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vm1" role="1PaTwD">
+          <property role="3oM_SC" value="length" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vm2" role="1PaTwD">
+          <property role="3oM_SC" value="'count'" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vm3" role="1PaTwD">
+          <property role="3oM_SC" value="units" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vm4" role="1PaTwD">
+          <property role="3oM_SC" value="given" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vm5" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vm6" role="1PaTwD">
+          <property role="3oM_SC" value="'unit'." />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vm7" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5wmCCs0jrSr" role="TZ5H$">
-        <node concept="1dT_AC" id="5wmCCs0jrSs" role="1dT_Ay">
-          <property role="1dT_AB" value="Example: new DateRangeValue(LocalDate.of(2018, 1, 1), ChronoUnit.MONTHS, 3) represents Q1 of 2018." />
+      <node concept="1PaTwC" id="3MzwgoR0Vm8" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0Vm9" role="1PaTwD">
+          <property role="3oM_SC" value="Example:" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vma" role="1PaTwD">
+          <property role="3oM_SC" value="new" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmb" role="1PaTwD">
+          <property role="3oM_SC" value="DateRangeValue(LocalDate.of(2018," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmc" role="1PaTwD">
+          <property role="3oM_SC" value="1," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmd" role="1PaTwD">
+          <property role="3oM_SC" value="1)," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vme" role="1PaTwD">
+          <property role="3oM_SC" value="ChronoUnit.MONTHS," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmf" role="1PaTwD">
+          <property role="3oM_SC" value="3)" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmg" role="1PaTwD">
+          <property role="3oM_SC" value="represents" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmh" role="1PaTwD">
+          <property role="3oM_SC" value="Q1" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmi" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmj" role="1PaTwD">
+          <property role="3oM_SC" value="2018." />
         </node>
       </node>
-      <node concept="TZ5HA" id="5wmCCs0jrTk" role="TZ5H$">
-        <node concept="1dT_AC" id="5wmCCs0jrTl" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3MzwgoR0Vmk" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0Vml" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5wmCCs0jrUf" role="TZ5H$">
-        <node concept="1dT_AC" id="5wmCCs0jrUg" role="1dT_Ay">
-          <property role="1dT_AB" value="Factory methods are provided for the common cases of single-year, single-month, and &quot;all-time&quot; ranges." />
+      <node concept="1PaTwC" id="3MzwgoR0Vmm" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0Vmn" role="1PaTwD">
+          <property role="3oM_SC" value="Factory" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmo" role="1PaTwD">
+          <property role="3oM_SC" value="methods" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmp" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmq" role="1PaTwD">
+          <property role="3oM_SC" value="provided" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmr" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vms" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmt" role="1PaTwD">
+          <property role="3oM_SC" value="common" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmu" role="1PaTwD">
+          <property role="3oM_SC" value="cases" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmv" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmw" role="1PaTwD">
+          <property role="3oM_SC" value="single-year," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmx" role="1PaTwD">
+          <property role="3oM_SC" value="single-month," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmy" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vmz" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;all-time&quot;" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vm$" role="1PaTwD">
+          <property role="3oM_SC" value="ranges." />
         </node>
       </node>
     </node>
@@ -3326,27 +3431,138 @@
     </node>
     <node concept="3Tm1VV" id="7khFtBHHXR5" role="1B3o_S" />
     <node concept="3UR2Jj" id="7khFtBHHXR6" role="lGtFl">
-      <node concept="TZ5HA" id="7khFtBHHXR7" role="TZ5H$">
-        <node concept="1dT_AC" id="7khFtBHHXR8" role="1dT_Ay">
-          <property role="1dT_AB" value="Represents a date range (interval) starting from 'begin', of length 'count' units given by 'unit'." />
+      <node concept="1PaTwC" id="3MzwgoR0Vm_" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0VmA" role="1PaTwD">
+          <property role="3oM_SC" value="Represents" />
         </node>
-        <node concept="1dT_AC" id="7khFtBHHXR9" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+        <node concept="3oM_SD" id="3MzwgoR0VmB" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmC" role="1PaTwD">
+          <property role="3oM_SC" value="date" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmD" role="1PaTwD">
+          <property role="3oM_SC" value="range" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmE" role="1PaTwD">
+          <property role="3oM_SC" value="(interval)" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmF" role="1PaTwD">
+          <property role="3oM_SC" value="starting" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmG" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmH" role="1PaTwD">
+          <property role="3oM_SC" value="'begin'," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmI" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmJ" role="1PaTwD">
+          <property role="3oM_SC" value="length" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmK" role="1PaTwD">
+          <property role="3oM_SC" value="'count'" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmL" role="1PaTwD">
+          <property role="3oM_SC" value="units" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmM" role="1PaTwD">
+          <property role="3oM_SC" value="given" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmN" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmO" role="1PaTwD">
+          <property role="3oM_SC" value="'unit'." />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmP" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7khFtBHHXRa" role="TZ5H$">
-        <node concept="1dT_AC" id="7khFtBHHXRb" role="1dT_Ay">
-          <property role="1dT_AB" value="Example: new DateRangeValue(LocalDate.of(2018, 1, 1), ChronoUnit.MONTHS, 3) represents Q1 of 2018." />
+      <node concept="1PaTwC" id="3MzwgoR0VmQ" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0VmR" role="1PaTwD">
+          <property role="3oM_SC" value="Example:" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmS" role="1PaTwD">
+          <property role="3oM_SC" value="new" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmT" role="1PaTwD">
+          <property role="3oM_SC" value="DateRangeValue(LocalDate.of(2018," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmU" role="1PaTwD">
+          <property role="3oM_SC" value="1," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmV" role="1PaTwD">
+          <property role="3oM_SC" value="1)," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmW" role="1PaTwD">
+          <property role="3oM_SC" value="ChronoUnit.MONTHS," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmX" role="1PaTwD">
+          <property role="3oM_SC" value="3)" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmY" role="1PaTwD">
+          <property role="3oM_SC" value="represents" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VmZ" role="1PaTwD">
+          <property role="3oM_SC" value="Q1" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vn0" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vn1" role="1PaTwD">
+          <property role="3oM_SC" value="2018." />
         </node>
       </node>
-      <node concept="TZ5HA" id="7khFtBHHXRc" role="TZ5H$">
-        <node concept="1dT_AC" id="7khFtBHHXRd" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3MzwgoR0Vn2" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0Vn3" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7khFtBHHXRe" role="TZ5H$">
-        <node concept="1dT_AC" id="7khFtBHHXRf" role="1dT_Ay">
-          <property role="1dT_AB" value="Factory methods are provided for the common cases of single-year, single-month, and &quot;all-time&quot; ranges." />
+      <node concept="1PaTwC" id="3MzwgoR0Vn4" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0Vn5" role="1PaTwD">
+          <property role="3oM_SC" value="Factory" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vn6" role="1PaTwD">
+          <property role="3oM_SC" value="methods" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vn7" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vn8" role="1PaTwD">
+          <property role="3oM_SC" value="provided" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vn9" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vna" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vnb" role="1PaTwD">
+          <property role="3oM_SC" value="common" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vnc" role="1PaTwD">
+          <property role="3oM_SC" value="cases" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vnd" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vne" role="1PaTwD">
+          <property role="3oM_SC" value="single-year," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vnf" role="1PaTwD">
+          <property role="3oM_SC" value="single-month," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vng" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vnh" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;all-time&quot;" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vni" role="1PaTwD">
+          <property role="3oM_SC" value="ranges." />
         </node>
       </node>
     </node>
