@@ -6739,6 +6739,9 @@
             <property role="TrG5h" value="pathStr" />
             <node concept="17QB3L" id="2wdh$FhHPtw" role="1tU5fm" />
             <node concept="2EnYce" id="2wdh$FhJVIx" role="33vP2m">
+              <node concept="liA8E" id="2wdh$FhJRlS" role="2OqNvi">
+                <ref role="37wK5l" node="5LihCoMiNAg" resolve="asSegmentPathString" />
+              </node>
               <node concept="2OqwBi" id="2wdh$FhI6A0" role="2Oq$k0">
                 <node concept="37vLTw" id="2wdh$FhI6A1" role="2Oq$k0">
                   <ref role="3cqZAo" node="220xVKpl3iS" resolve="sn" />
@@ -6746,9 +6749,6 @@
                 <node concept="liA8E" id="2wdh$FhI6A2" role="2OqNvi">
                   <ref role="37wK5l" node="SOwwj6zTxH" resolve="getFullPath" />
                 </node>
-              </node>
-              <node concept="liA8E" id="2wdh$FhJRlS" role="2OqNvi">
-                <ref role="37wK5l" node="5LihCoMiNAg" resolve="asSegmentPathString" />
               </node>
             </node>
           </node>
@@ -14940,6 +14940,62 @@
         <ref role="3uigEE" node="5LihCoMh$14" resolve="ArtifactPath" />
       </node>
     </node>
+    <node concept="3clFb_" id="5tN59eoeN23" role="jymVt">
+      <property role="TrG5h" value="toString" />
+      <node concept="3Tm1VV" id="5tN59eoeN24" role="1B3o_S" />
+      <node concept="17QB3L" id="5tN59eoeN25" role="3clF45" />
+      <node concept="2AHcQZ" id="5tN59eoeN2m" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="5tN59eoeN2n" role="3clF47">
+        <node concept="3clFbF" id="5tN59eof2D6" role="3cqZAp">
+          <node concept="2OqwBi" id="5tN59eogWxt" role="3clFbG">
+            <node concept="2OqwBi" id="5tN59eogrnR" role="2Oq$k0">
+              <node concept="2OqwBi" id="5tN59eofXmo" role="2Oq$k0">
+                <node concept="2ShNRf" id="5tN59eof2D4" role="2Oq$k0">
+                  <node concept="1pGfFk" id="5tN59eofqUa" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="qt06:~ToStringBuilder.&lt;init&gt;(java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle)" resolve="ToStringBuilder" />
+                    <node concept="Xjq3P" id="5tN59eofvh8" role="37wK5m" />
+                    <node concept="10M0yZ" id="5tN59eora9Q" role="37wK5m">
+                      <ref role="3cqZAo" to="qt06:~ToStringStyle.SHORT_PREFIX_STYLE" resolve="SHORT_PREFIX_STYLE" />
+                      <ref role="1PxDUh" to="qt06:~ToStringStyle" resolve="ToStringStyle" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="5tN59eog1ld" role="2OqNvi">
+                  <ref role="37wK5l" to="qt06:~ToStringBuilder.append(java.lang.String,java.lang.Object)" resolve="append" />
+                  <node concept="Xl_RD" id="5tN59eog3iS" role="37wK5m">
+                    <property role="Xl_RC" value="root" />
+                  </node>
+                  <node concept="2OqwBi" id="5tN59eogj3p" role="37wK5m">
+                    <node concept="Xjq3P" id="5tN59eogerk" role="2Oq$k0" />
+                    <node concept="liA8E" id="5tN59eognzp" role="2OqNvi">
+                      <ref role="37wK5l" node="65ATjZHvuwB" resolve="getRootPresentation" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="5tN59eogw6R" role="2OqNvi">
+                <ref role="37wK5l" to="qt06:~ToStringBuilder.append(java.lang.String,java.lang.Object)" resolve="append" />
+                <node concept="Xl_RD" id="5tN59eogz_P" role="37wK5m">
+                  <property role="Xl_RC" value="segments" />
+                </node>
+                <node concept="2OqwBi" id="5tN59eogMiV" role="37wK5m">
+                  <node concept="Xjq3P" id="5tN59eogIul" role="2Oq$k0" />
+                  <node concept="liA8E" id="5tN59eogRZL" role="2OqNvi">
+                    <ref role="37wK5l" to="7wpd:3u1rFxdFBU5" resolve="segments" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="5tN59eoh10P" role="2OqNvi">
+              <ref role="37wK5l" to="qt06:~ToStringBuilder.toString()" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="1D1O48ssmgv">
     <property role="3GE5qa" value="skeleton" />
@@ -19905,8 +19961,18 @@
                       <node concept="Xl_RD" id="5QUP9a_ekNV" role="3uHU7B">
                         <property role="Xl_RC" value="RefResolved(" />
                       </node>
-                      <node concept="37vLTw" id="5QUP9a_elIM" role="3uHU7w">
-                        <ref role="3cqZAo" node="5zD5ovlKIS0" resolve="ref" />
+                      <node concept="2OqwBi" id="5tN59eowYRY" role="3uHU7w">
+                        <node concept="2OqwBi" id="5tN59eowWAC" role="2Oq$k0">
+                          <node concept="37vLTw" id="5QUP9a_elIM" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5zD5ovlKIS0" resolve="ref" />
+                          </node>
+                          <node concept="liA8E" id="5tN59eowXLE" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SReference.getSourceNode()" resolve="getSourceNode" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="5tN59eowZP1" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getPresentation()" resolve="getPresentation" />
+                        </node>
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5QUP9a_em5_" role="3uHU7w">
