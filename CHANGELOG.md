@@ -13,6 +13,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
   - The units `Joule`, `Coulomb` and `Watt` can now have also prefixes with negative metric scaling, e.g., `mW` (Milliwatt). Additionally, some typos have been corrected in the physical units documentation.
   - The precision of number types with prefixed units (e.g. `mW` or `km`) was always set to `infinite` by the typesystem. Now, the precision is as precise as possible.
 - Variability: Viewer for skeleton trees has been improved (better error reporting, more stable, does not break on nodes which are string literals).
+- ShortLambda Interpreter: Fixed a bug which resulted in a `RuntimeErrorType` when interpreting ShortLambdas.
 
 ## December 2025
 
