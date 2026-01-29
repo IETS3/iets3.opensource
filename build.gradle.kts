@@ -530,13 +530,10 @@ tasks.githubRelease {
     dependsOn(packageDistroWithDependencies)
 }
 
-tasks.cyclonedxBom {
-    // SBOM destination directory
-    destination.set(reportsDir.asFile)
-    // The file name for the generated SBOMs (before the file format suffix)
-    outputName.set("sbom")
-    // The file format generated, can be xml, json or all for generating both
-    outputFormat.set("json")
+tasks.cyclonedxDirectBom {
+    jsonOutput = reportsDir.file("sbom.json")
+    // Generate JSON only
+    xmlOutput.unsetConvention()
     // Don't include license texts in generated SBOMs
     includeLicenseText.set(false)
     // Included bundled runtime dependencies
