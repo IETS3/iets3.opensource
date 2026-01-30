@@ -4728,7 +4728,7 @@
                     </node>
                   </node>
                   <node concept="2r$n1x" id="2VCmq77UIe2" role="2r_Bvh">
-                    <ref role="2r$qp6" node="2VCmq77SrOB" resolve="dependentOn" />
+                    <ref role="2r$qp6" node="2VCmq77SrOB" resolve="pivotDependentsOn" />
                     <node concept="10Nm6u" id="5QTJbF9Nc8r" role="2r_lH1" />
                   </node>
                   <node concept="2r$n1x" id="3RmCGNRGW1H" role="2r_Bvh">
@@ -8084,7 +8084,7 @@
       <node concept="3Tm1VV" id="25RwNEX31U8" role="1B3o_S" />
       <node concept="3clFbS" id="25RwNEX31U9" role="3clF47">
         <node concept="1VxSAg" id="3RmCGNPRDC6" role="3cqZAp">
-          <ref role="37wK5l" node="3RmCGNPRyKp" />
+          <ref role="37wK5l" node="3RmCGNPRyKp" resolve="SkeletonNode" />
           <node concept="37vLTw" id="3RmCGNPRDZZ" role="37wK5m">
             <ref role="3cqZAo" node="25RwNEX31UN" resolve="original" />
           </node>
@@ -12876,7 +12876,7 @@
       <node concept="3Tm1VV" id="IzpDYSOg8h" role="1B3o_S" />
       <node concept="3clFbS" id="IzpDYSOg8i" role="3clF47">
         <node concept="1VxSAg" id="2_ThrGHoiWJ" role="3cqZAp">
-          <ref role="37wK5l" node="2_ThrGHocbS" />
+          <ref role="37wK5l" node="2_ThrGHocbS" resolve="Pivot" />
           <node concept="37vLTw" id="2_ThrGHoj1$" role="37wK5m">
             <ref role="3cqZAo" node="IzpDYSOg8G" resolve="pivotNode" />
           </node>
@@ -22797,7 +22797,7 @@
       <node concept="3Tm1VV" id="6MkAeDP7ULf" role="1B3o_S" />
       <node concept="3clFbS" id="6MkAeDP7ULg" role="3clF47">
         <node concept="1VxSAg" id="3RmCGNROBMU" role="3cqZAp">
-          <ref role="37wK5l" node="3RmCGNROulX" />
+          <ref role="37wK5l" node="3RmCGNROulX" resolve="SkeletonEnvironment" />
           <node concept="37vLTw" id="3RmCGNROEjk" role="37wK5m">
             <ref role="3cqZAo" node="6MkAeDP7ULh" resolve="node" />
           </node>
@@ -26132,7 +26132,7 @@
             </node>
             <node concept="2ShNRf" id="3RmCGNQ792$" role="37wK5m">
               <node concept="1pGfFk" id="3RmCGNQ792_" role="2ShVmc">
-                <ref role="37wK5l" node="3RmCGNPRyKp" />
+                <ref role="37wK5l" node="3RmCGNPRyKp" resolve="SkeletonNode" />
                 <node concept="37vLTw" id="3RmCGNQ792A" role="37wK5m">
                   <ref role="3cqZAo" node="3RmCGNQ792G" resolve="n" />
                 </node>
