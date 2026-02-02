@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## February 2026
+
+### Changed
+
+- Variability: Improve performance of opening big variant configurations in editor (by switching off editor hints which are not needed).
+
+
 ## January 2026
 
 ### Fixed
@@ -15,6 +22,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Variability: Viewer for skeleton trees has been improved (better error reporting, more stable, does not break on nodes which are string literals).
 - ShortLambda Interpreter: Fixed a bug which resulted in a `RuntimeErrorType` when interpreting ShortLambdas.
 - InterpreterCoverageAssResult: fix unique ID calculation ([#1617](https://github.com/IETS3/iets3.opensource/issues/1617))
+
+
 ## December 2025
 
 ### Added
