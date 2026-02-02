@@ -12548,6 +12548,72 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="7ah6lNITZbV" role="13h7CS">
+      <property role="TrG5h" value="createModelWithAdjustments" />
+      <node concept="3Tm6S6" id="7ah6lNIU2J3" role="1B3o_S" />
+      <node concept="3uibUv" id="7ah6lNIU2Jm" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
+      </node>
+      <node concept="3clFbS" id="7ah6lNITZbY" role="3clF47">
+        <node concept="3cpWs8" id="7ah6lNIU78c" role="3cqZAp">
+          <node concept="3cpWsn" id="7ah6lNIU78d" role="3cpWs9">
+            <property role="TrG5h" value="model" />
+            <node concept="3uibUv" id="7ah6lNIU78e" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
+            </node>
+            <node concept="1eOMI4" id="7ah6lNIU79_" role="33vP2m">
+              <node concept="10QFUN" id="7ah6lNIU79y" role="1eOMHV">
+                <node concept="3uibUv" id="7ah6lNIU79B" role="10QFUM">
+                  <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
+                </node>
+                <node concept="2OqwBi" id="7ah6lNIU7gh" role="10QFUP">
+                  <node concept="37vLTw" id="7ah6lNIU7a7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7ah6lNIU75e" resolve="root" />
+                  </node>
+                  <node concept="liA8E" id="7ah6lNIU7mU" role="2OqNvi">
+                    <ref role="37wK5l" to="dush:~ModelRoot.createModel(java.lang.String)" resolve="createModel" />
+                    <node concept="37vLTw" id="7ah6lNIU7nQ" role="37wK5m">
+                      <ref role="3cqZAo" node="7ah6lNIU2JV" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7ah6lNIU7GD" role="3cqZAp">
+          <node concept="2OqwBi" id="7ah6lNIU7Z0" role="3clFbG">
+            <node concept="37vLTw" id="7ah6lNIU7GB" role="2Oq$k0">
+              <ref role="3cqZAo" node="7ah6lNIU78d" resolve="model" />
+            </node>
+            <node concept="liA8E" id="7ah6lNIU8eP" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~EditableSModel.save()" resolve="save" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7ah6lNIU8i7" role="3cqZAp">
+          <node concept="37vLTw" id="7ah6lNIU8pM" role="3cqZAk">
+            <ref role="3cqZAo" node="7ah6lNIU78d" resolve="model" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7ah6lNIU2JV" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="7ah6lNIU2JU" role="1tU5fm" />
+        <node concept="2AHcQZ" id="7ah6lNIU73W" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7ah6lNIU75e" role="3clF46">
+        <property role="TrG5h" value="root" />
+        <node concept="3uibUv" id="7ah6lNIU75z" role="1tU5fm">
+          <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
+        </node>
+        <node concept="2AHcQZ" id="7ah6lNIU76t" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="3_xsRJ4oOr_" role="13h7CW">
       <node concept="3clFbS" id="3_xsRJ4oOrA" role="2VODD2">
         <node concept="3clFbF" id="3_xsRJ4WBE9" role="3cqZAp">
@@ -12643,42 +12709,20 @@
               <ref role="3uigEE" to="pa15:~DefaultModelRoot" resolve="DefaultModelRoot" />
             </node>
           </node>
-          <node concept="9aQIb" id="3_xsRJ4yACf" role="9aQIa">
-            <node concept="3clFbS" id="3_xsRJ4yACg" role="9aQI4">
-              <node concept="3clFbF" id="3_xsRJ4yACh" role="3cqZAp">
-                <node concept="37vLTI" id="3_xsRJ4yACi" role="3clFbG">
-                  <node concept="37vLTw" id="3_xsRJ4yACj" role="37vLTJ">
-                    <ref role="3cqZAo" node="3_xsRJ4yABV" resolve="result" />
-                  </node>
-                  <node concept="2YIFZM" id="3_xsRJ4yM00" role="37vLTx">
-                    <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                    <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot)" resolve="createModelWithAdjustments" />
-                    <node concept="37vLTw" id="3_xsRJ4yNVW" role="37wK5m">
-                      <ref role="3cqZAo" node="3_xsRJ4ALZc" resolve="name" />
-                    </node>
-                    <node concept="37vLTw" id="3_xsRJ4yM02" role="37wK5m">
-                      <ref role="3cqZAo" node="3_xsRJ4yHsl" resolve="mr" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbS" id="3_xsRJ4yAC5" role="3clFbx">
-            <node concept="3clFbF" id="3_xsRJ4yAC6" role="3cqZAp">
-              <node concept="37vLTI" id="3_xsRJ4yAC7" role="3clFbG">
-                <node concept="37vLTw" id="3_xsRJ4yAC8" role="37vLTJ">
-                  <ref role="3cqZAo" node="3_xsRJ4yABV" resolve="result" />
-                </node>
-                <node concept="2YIFZM" id="3_xsRJ4yLZm" role="37vLTx">
-                  <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                  <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot)" resolve="createModelWithAdjustments" />
-                  <node concept="37vLTw" id="3_xsRJ4yNDJ" role="37wK5m">
+            <node concept="3clFbF" id="7ah6lNIU8rk" role="3cqZAp">
+              <node concept="37vLTI" id="7ah6lNIU9k9" role="3clFbG">
+                <node concept="BsUDl" id="7ah6lNIU9uI" role="37vLTx">
+                  <ref role="37wK5l" node="7ah6lNITZbV" resolve="createModelWithAdjustments" />
+                  <node concept="37vLTw" id="7ah6lNIUaiU" role="37wK5m">
                     <ref role="3cqZAo" node="3_xsRJ4ALZc" resolve="name" />
                   </node>
-                  <node concept="37vLTw" id="3_xsRJ4yLZo" role="37wK5m">
+                  <node concept="37vLTw" id="7ah6lNIUatH" role="37wK5m">
                     <ref role="3cqZAo" node="3_xsRJ4yHsl" resolve="mr" />
                   </node>
+                </node>
+                <node concept="37vLTw" id="7ah6lNIU8ri" role="37vLTJ">
+                  <ref role="3cqZAo" node="3_xsRJ4yABV" resolve="result" />
                 </node>
               </node>
             </node>
