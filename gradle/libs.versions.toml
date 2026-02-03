@@ -1,23 +1,22 @@
 [versions]
-mpsVersion = "2025.1"
-mpsQaVersion = "2025.1.+"
+mpsVersion = "253.28294.10232"
+mpsQaVersion = "9999.9.+"
 # if you want to build against a specific mbeddr branch, prepend it here with a dot.
 # NOTE: instances of '/' in the branch name need to be replaced by '-'
 # example: mbeddrVersion="feature-my_new_feature.2023.2.+"
-mbeddrVersion = "2025.1.+"
+mbeddrVersion = "9999.9.+"
 
-gradle = "8.13"
 jbr = "21.0.6-b895.109"
 
 [libraries]
-mps = { group = "com.jetbrains", name = "mps", version.ref = "mpsVersion" }
-remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "0.2.0" }
+mps = { group = "com.jetbrains.mps", name = "mps-prerelease", version.ref = "mpsVersion" }
+remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "1.0.0.+" }
 mpsQaAllInOne = { group = "org.mpsqa", name = "all-in-one", version.ref = "mpsQaVersion" }
 mbeddrPlatform = { group = "com.mbeddr", name = "platform", version.ref = "mbeddrVersion" }
 antJunit = { group = "org.apache.ant", name = "ant-junit", version = "1.10.15" }
 
 # bundled dependencies
-pcollections = { group = "org.pcollections", name = "pcollections", version = "4.0.2" }
+pcollections = { group = "org.pcollections", name = "pcollections", version = "5.0.0" }
 bigMath = { group = "ch.obermuhlner", name = "big-math", version = "2.3.2" }
 functionalJava = { group = "org.functionaljava", name = "functionaljava", version = "5.0" }
 cpSuite = { group = "io.takari.junit", name = "takari-cpsuite", version = "1.2.7" }
@@ -25,9 +24,8 @@ cpSuite = { group = "io.takari.junit", name = "takari-cpsuite", version = "1.2.7
 [bundles]
 
 [plugins]
-cyclonedxBom = { id = "org.cyclonedx.bom", version = "2.2.0" }
+cyclonedxBom = { id = "org.cyclonedx.bom", version = "2.4.1" }
 downloadJbr = { id = "download-jbr", version = "1.29.3.+" }
-githubRelease = { id = "com.github.breadmoirai.github-release", version = "2.4.1" }
-modelcheck = { id = "modelcheck", version = "1.29.3.+" }
+githubRelease = { id = "com.github.breadmoirai.github-release", version = "2.5.2" }
 mpsCommon = { id = "de.itemis.mps.gradle.common", version = "1.29.+" }
-mpsLauncher = { id = "de.itemis.mps.gradle.launcher", version = "2.5.2.+" }
+mpsLauncher = { id = "de.itemis.mps.gradle.launcher", version = "2.8.0.+" }
