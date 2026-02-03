@@ -11,6 +11,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Variability: Improve performance of opening big variant configurations in editor (by switching off editor hints which are not needed).
 
+### Fixed
+
+- Add missing dependencies to build scripts
 
 ## January 2026
 
