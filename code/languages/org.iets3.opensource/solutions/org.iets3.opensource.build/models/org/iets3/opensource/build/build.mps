@@ -635,13 +635,13 @@
         <ref role="m$_y1" to="90a9:4iIKqJTZ5I8" resolve="de.q60.shadowmodels" />
       </node>
       <node concept="m$_yC" id="71ckU5bAyIx" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:1jjxZP6JyD_" />
+        <ref role="m$_y1" to="ffeo:1jjxZP6JyD_" resolve="jetbrains.mps.console" />
       </node>
       <node concept="m$_yC" id="71ckU5bA_Yh" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:7tNo_gxoK8h" />
+        <ref role="m$_y1" to="al5i:7tNo_gxoK8h" resolve="com.mbeddr.doc" />
       </node>
       <node concept="m$_yC" id="71ckU5bAIuc" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:64SK4bcO2rO" />
+        <ref role="m$_y1" to="90a9:64SK4bcO2rO" resolve="com.mbeddr.mpsutil.projectview" />
       </node>
     </node>
     <node concept="m$_wf" id="7uAdOXh9aSZ" role="3989C9">
@@ -814,10 +814,10 @@
         <ref role="m$_y1" to="al5i:64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
       </node>
       <node concept="m$_yC" id="71ckU5bALiq" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:7szUFELHeHf" />
+        <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
       </node>
       <node concept="m$_yC" id="71ckU5bAO5O" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:hCVXosGNJH" />
+        <ref role="m$_y1" to="90a9:hCVXosGNJH" resolve="com.mbeddr.mpsutil.modellisteners" />
       </node>
     </node>
     <node concept="2G$12M" id="7yHH$DDoDlc" role="3989C9">
