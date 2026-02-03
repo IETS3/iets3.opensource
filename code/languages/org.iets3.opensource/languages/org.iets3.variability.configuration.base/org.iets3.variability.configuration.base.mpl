@@ -27,6 +27,8 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)</dependency>
     <dependency reexport="false">f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)</dependency>
+    <dependency reexport="false">5474e4cd-6621-4b33-a39a-75552543ba57(de.slisson.mps.conditionalEditor.hints)</dependency>
+    <dependency reexport="false">63c1aad1-e2db-439c-a30a-02b5e0bc80f3(org.iets3.core.expr.tracing)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="3" />
@@ -111,6 +113,7 @@
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
     <module reference="5454dbfd-2075-4de0-b85e-fa645eb6957e(de.itemis.mps.utils.serializer.xml)" version="0" />
     <module reference="ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)" version="0" />
+    <module reference="5474e4cd-6621-4b33-a39a-75552543ba57(de.slisson.mps.conditionalEditor.hints)" version="0" />
     <module reference="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" version="0" />
     <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
@@ -147,6 +150,7 @@
     <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="9" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="4" />
+    <module reference="63c1aad1-e2db-439c-a30a-02b5e0bc80f3(org.iets3.core.expr.tracing)" version="0" />
     <module reference="9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)" version="0" />
     <module reference="71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)" version="6" />
     <module reference="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" version="36" />
