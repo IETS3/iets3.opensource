@@ -127,9 +127,13 @@
       </concept>
     </language>
     <language id="427a473d-5177-432c-9905-bcbceb71b996" name="jetbrains.mps.build.mps.runner">
+      <concept id="6593674873635848984" name="jetbrains.mps.build.mps.runner.structure.RequiredPlugin" flags="ng" index="24YFd5">
+        <reference id="6593674873635848985" name="plugin" index="24YFd6" />
+      </concept>
       <concept id="4173297143638950526" name="jetbrains.mps.build.mps.runner.structure.BuildSolutionRunnerAspect" flags="ng" index="_awnq">
         <property id="2265409456634484378" name="classSimpleName" index="3MWwXZ" />
         <reference id="6102524510011680401" name="solution" index="30Vec$" />
+        <child id="3639941018579336157" name="requiredPlugin" index="5id3f" />
       </concept>
       <concept id="4173297143638832582" name="jetbrains.mps.build.mps.runner.structure.BuildSolutionRunnerPlugin" flags="ng" index="_l39y" />
     </language>
@@ -630,6 +634,15 @@
       <node concept="m$_yC" id="4C8CrwW7i1C" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4iIKqJTZ5I8" resolve="de.q60.shadowmodels" />
       </node>
+      <node concept="m$_yC" id="71ckU5bAyIx" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:1jjxZP6JyD_" resolve="jetbrains.mps.console" />
+      </node>
+      <node concept="m$_yC" id="71ckU5bA_Yh" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:7tNo_gxoK8h" resolve="com.mbeddr.doc" />
+      </node>
+      <node concept="m$_yC" id="71ckU5bAIuc" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:64SK4bcO2rO" resolve="com.mbeddr.mpsutil.projectview" />
+      </node>
     </node>
     <node concept="m$_wf" id="7uAdOXh9aSZ" role="3989C9">
       <property role="m$_wk" value="org.iets3.core.expr.repl" />
@@ -799,6 +812,12 @@
       </node>
       <node concept="m$_yC" id="7yHH$DDpwFq" role="m$_yJ">
         <ref role="m$_y1" to="al5i:64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
+      </node>
+      <node concept="m$_yC" id="71ckU5bALiq" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
+      </node>
+      <node concept="m$_yC" id="71ckU5bAO5O" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:hCVXosGNJH" resolve="com.mbeddr.mpsutil.modellisteners" />
       </node>
     </node>
     <node concept="2G$12M" id="7yHH$DDoDlc" role="3989C9">
@@ -3962,9 +3981,9 @@
         </node>
       </node>
       <node concept="1E1JtD" id="lJ$0svpRkJ" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.expr.typetags.units" />
         <property role="3LESm3" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
+        <property role="BnDLt" value="true" />
         <node concept="3rtmxn" id="7235WRFl_Rs" role="3bR31x">
           <node concept="3LXTmp" id="7235WRFl_Rt" role="3rtmxm">
             <node concept="3qWCbU" id="7235WRFl_Ru" role="3LXTna">
@@ -18642,6 +18661,9 @@
       </node>
       <node concept="27ge7" id="5eJiSDhM50y" role="2OXz1">
         <ref role="27ge4" node="5eJiSDhwOUy" resolve="iets3.interpreterExecutor.genPath" />
+      </node>
+      <node concept="24YFd5" id="71ckU5bAvU0" role="5id3f">
+        <ref role="24YFd6" to="ffeo:1jjxZP6JyD_" resolve="jetbrains.mps.console" />
       </node>
     </node>
     <node concept="10PD9b" id="2U5AnekTBPu" role="10PD9s" />

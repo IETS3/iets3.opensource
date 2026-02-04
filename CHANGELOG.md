@@ -12,6 +12,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Variability: The performance of opening big variant configurations in editor has been improved (by switching off editor hints which are not needed).
 - Variability: The class hierarchy implementing `IRenamer` has been improved and documented. This interface is being used for tailoring the renaming behavior of the variability filtering algorithms.
 
+### Fixed
+
+- Add missing dependencies to build scripts
 
 ## January 2026
 
