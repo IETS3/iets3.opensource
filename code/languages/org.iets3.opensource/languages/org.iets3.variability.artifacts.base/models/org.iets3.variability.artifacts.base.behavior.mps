@@ -22900,7 +22900,7 @@
     </node>
     <node concept="2tJIrI" id="6aYyEt2h7vw" role="jymVt" />
     <node concept="3clFb_" id="3RmCGNROQel" role="jymVt">
-      <property role="TrG5h" value="nonStructaralChildren" />
+      <property role="TrG5h" value="nonStructuralChildren" />
       <node concept="3Tm1VV" id="3RmCGNROQeo" role="1B3o_S" />
       <node concept="3clFbS" id="3RmCGNROQep" role="3clF47">
         <node concept="3clFbF" id="1impejG9ass" role="3cqZAp">
