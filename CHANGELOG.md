@@ -13,7 +13,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Variability: The class hierarchy implementing `IRenamer` has been improved and documented. This interface is being used for tailoring the renaming behavior of the variability filtering algorithms.
 
 ### Fixed
-
+- Add missing deps. to SBOM
 - Add missing dependencies to build scripts
 
 ## January 2026
