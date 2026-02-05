@@ -81,7 +81,7 @@
       </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -115,7 +115,7 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
@@ -308,12 +308,12 @@
               <property role="TrG5h" value="B" />
               <node concept="12iSMG" id="6I42zpjg7ux" role="12iwVe">
                 <property role="TrG5h" value="submodel" />
-                <ref role="12iSMH" node="6I42zpjg7uT" resolve="Submodel" />
+                <ref role="12iSMH" node="6I42zpjg7uT" />
               </node>
             </node>
             <node concept="12iSMG" id="6I42zpjg9vc" role="12iwVe">
               <property role="TrG5h" value="anothersubmodel" />
-              <ref role="12iSMH" node="6I42zpjg7uT" resolve="Submodel" />
+              <ref role="12iSMH" node="6I42zpjg7uT" />
             </node>
           </node>
         </node>
@@ -335,38 +335,38 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="-2050508608" />
-          <ref role="rqKBe" node="49Idh6YmRPF" resolve="SomeFeatureModel" />
+          <ref role="rqKBe" node="49Idh6YmRPF" />
           <node concept="3xLA65" id="6I42zpjfq8s" role="lGtFl">
             <property role="TrG5h" value="configurationModel" />
           </node>
           <node concept="rqCGG" id="2T39iK2dksj" role="rqCGo">
             <node concept="rqKBd" id="2T39iK2dksk" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="49Idh6YmRPG" resolve="A" />
+              <ref role="rqKBe" node="49Idh6YmRPG" />
               <node concept="rqCGG" id="2T39iK2dksm" role="rqCGo">
                 <node concept="rqKBd" id="2T39iK2uqhT" role="rqKBa">
                   <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-                  <ref role="rqKBe" node="2T39iK2uhiA" resolve="C" />
+                  <ref role="rqKBe" node="2T39iK2uhiA" />
                   <node concept="rqCGG" id="2T39iK2uqhS" role="rqCGo" />
                 </node>
                 <node concept="rqKBd" id="2T39iK2uqhV" role="rqKBa">
                   <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-                  <ref role="rqKBe" node="2T39iK2uhiC" resolve="D" />
+                  <ref role="rqKBe" node="2T39iK2uhiC" />
                   <node concept="rqCGG" id="2T39iK2uqhU" role="rqCGo" />
                 </node>
               </node>
             </node>
             <node concept="rqKBd" id="2T39iK2dksn" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="49Idh6YmRPH" resolve="B" />
+              <ref role="rqKBe" node="49Idh6YmRPH" />
               <node concept="rqCGG" id="2T39iK2dksp" role="rqCGo">
                 <node concept="rqKBd" id="6I42zpjg7vk" role="rqKBa">
                   <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-                  <ref role="rqKBe" node="6I42zpjg7ux" resolve="submodel" />
+                  <ref role="rqKBe" node="6I42zpjg7ux" />
                   <node concept="rqCGG" id="6I42zpjg7vj" role="rqCGo">
                     <node concept="rqKBd" id="6I42zpjg7vm" role="rqKBa">
                       <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-                      <ref role="rqKBe" node="6I42zpjg7vh" resolve="S1" />
+                      <ref role="rqKBe" node="6I42zpjg7vh" />
                       <node concept="rqCGG" id="6I42zpjg7vl" role="rqCGo" />
                     </node>
                   </node>
@@ -375,11 +375,11 @@
             </node>
             <node concept="rqKBd" id="6I42zpjg9vk" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6I42zpjg9vc" resolve="anothersubmodel" />
+              <ref role="rqKBe" node="6I42zpjg9vc" />
               <node concept="rqCGG" id="6I42zpjg9vj" role="rqCGo">
                 <node concept="rqKBd" id="6I42zpjg9vm" role="rqKBa">
                   <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-                  <ref role="rqKBe" node="6I42zpjg7vh" resolve="S1" />
+                  <ref role="rqKBe" node="6I42zpjg7vh" />
                   <node concept="rqCGG" id="6I42zpjg9vl" role="rqCGo" />
                 </node>
               </node>

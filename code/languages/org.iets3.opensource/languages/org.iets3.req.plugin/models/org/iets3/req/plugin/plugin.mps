@@ -338,7 +338,7 @@
         <child id="5022141054905293092" name="execute" index="geMea" />
         <child id="8645458101909773684" name="tooltip" index="3V80Gy" />
       </concept>
-      <concept id="5022141054905293099" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource_ExecuteFunction" flags="ig" index="geMe5" />
+      <concept id="5022141054905293099" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource_ExecuteFunction" flags="ng" index="geMe5" />
       <concept id="5022141054905332478" name="com.mbeddr.mpsutil.contextactions.structure.ParameterObject" flags="ng" index="geSxg" />
       <concept id="5022141054903714507" name="com.mbeddr.mpsutil.contextactions.structure.ContextExpression" flags="ng" index="gKNx_" />
       <concept id="5143518692707292632" name="com.mbeddr.mpsutil.contextactions.structure.IntentionIdReference" flags="ng" index="2p1MsB">
@@ -1678,21 +1678,21 @@
     <property role="280IaB" value="true" />
     <property role="280Iao" value="true" />
     <property role="280Iaj" value="true" />
-    <ref role="14aYEx" to="h587:1ognOHjyiuQ" resolve="SpecExplorer" />
+    <ref role="14aYEx" to="h587:1ognOHjyiuQ" />
     <node concept="14aYG3" id="1ognOHjyj2a" role="14aYEy">
       <property role="TrG5h" value="requirementsModule" />
-      <ref role="3GDMyY" to="h587:1ognOHjyj2a" resolve="root" />
-      <ref role="14a85i" to="h587:6LfBX8YgRgl" resolve="specModel" />
+      <ref role="3GDMyY" to="h587:1ognOHjyj2a" />
+      <ref role="14a85i" to="h587:6LfBX8YgRgl" />
       <node concept="14aYG3" id="1ognOHjzeue" role="1DVp44">
         <property role="TrG5h" value="requirement" />
         <node concept="14aYG3" id="1ognOHjz9bR" role="1DVp44">
           <property role="TrG5h" value="requirementChildren" />
-          <ref role="14a85i" node="1ognOHjzeue" resolve="requirement" />
-          <ref role="3GDMyY" node="1ognOHjzeue" resolve="requirement" />
+          <ref role="14a85i" node="1ognOHjzeue" />
+          <ref role="3GDMyY" node="1ognOHjzeue" />
           <node concept="2OqwBi" id="1MpR5BkUuF7" role="14bQOc">
             <node concept="2OqwBi" id="1ognOHjzn$X" role="2Oq$k0">
               <node concept="14b0Wr" id="1ognOHjzpwg" role="2Oq$k0">
-                <ref role="14b0Uw" node="1ognOHjzeue" resolve="requirement" />
+                <ref role="14b0Uw" node="1ognOHjzeue" />
               </node>
               <node concept="3Tsc0h" id="1ognOHjznG4" role="2OqNvi">
                 <ref role="3TtcxE" to="plfp:4tXyFaWxWA_" resolve="requirements" />
@@ -1730,7 +1730,7 @@
         <node concept="2OqwBi" id="1MpR5BkUr03" role="14bQOc">
           <node concept="2OqwBi" id="1ognOHjzeOQ" role="2Oq$k0">
             <node concept="14b0Wr" id="1ognOHjzeG$" role="2Oq$k0">
-              <ref role="14b0Uw" node="1ognOHjyj2a" resolve="requirementsModule" />
+              <ref role="14b0Uw" node="1ognOHjyj2a" />
             </node>
             <node concept="3Tsc0h" id="1ognOHjzf97" role="2OqNvi">
               <ref role="3TtcxE" to="plfp:4tXyFaWxWA_" resolve="requirements" />
@@ -1763,7 +1763,7 @@
         </node>
         <node concept="2OqwBi" id="1ognOHjzfjT" role="14a853">
           <node concept="14b0Wr" id="1ognOHjzffH" role="2Oq$k0">
-            <ref role="14b0Uw" node="1ognOHjzeue" resolve="requirement" />
+            <ref role="14b0Uw" node="1ognOHjzeue" />
           </node>
           <node concept="3TrcHB" id="1ognOHjzf$f" role="2OqNvi">
             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -1783,7 +1783,7 @@
           <node concept="liA8E" id="7GPsQwLQMnt" role="2OqNvi">
             <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
             <node concept="14b0Wr" id="7GPsQwLQMFD" role="37wK5m">
-              <ref role="14b0Uw" node="1ognOHjzeue" resolve="requirement" />
+              <ref role="14b0Uw" node="1ognOHjzeue" />
             </node>
           </node>
         </node>
@@ -1792,7 +1792,7 @@
         <ref role="1Pybhc" node="1ognOHjymxr" resolve="RequirementsExplorerHelper" />
         <ref role="37wK5l" node="FniR$CbHUo" resolve="getReqChunks" />
         <node concept="14b0Wr" id="6LfBX8Ym9AB" role="37wK5m">
-          <ref role="14b0Uw" to="h587:6LfBX8YgRgl" resolve="specModel" />
+          <ref role="14b0Uw" to="h587:6LfBX8YgRgl" />
         </node>
       </node>
       <node concept="3Tqbb2" id="1ognOHjyvau" role="3GGxor">
@@ -1800,7 +1800,7 @@
       </node>
       <node concept="2OqwBi" id="1ognOHjyQkM" role="14a853">
         <node concept="14b0Wr" id="1ognOHjyQbR" role="2Oq$k0">
-          <ref role="14b0Uw" node="1ognOHjyj2a" resolve="requirementsModule" />
+          <ref role="14b0Uw" node="1ognOHjyj2a" />
         </node>
         <node concept="3TrcHB" id="1ognOHjyQXf" role="2OqNvi">
           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -1820,7 +1820,7 @@
         <node concept="liA8E" id="7GPsQwLQIYs" role="2OqNvi">
           <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
           <node concept="14b0Wr" id="7GPsQwLQJ0d" role="37wK5m">
-            <ref role="14b0Uw" node="1ognOHjyj2a" resolve="requirementsModule" />
+            <ref role="14b0Uw" node="1ognOHjyj2a" />
           </node>
         </node>
       </node>

@@ -150,7 +150,7 @@
     <property role="TrG5h" value="TestsInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <node concept="1J7WVO" id="4H_8WGVp2o4" role="1J4apk">
-      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpreter" />
+      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" />
     </node>
     <node concept="qq9P1" id="7khFtBHvlE3" role="qq9xR">
       <property role="2TnfIJ" value="true" />

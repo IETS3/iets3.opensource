@@ -28,7 +28,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="6527211908668938616" name="org.iets3.core.expr.base.structure.DocWordRef" flags="ng" index="2Jv0Bt">
@@ -50,7 +50,7 @@
       <concept id="7061117989422575278" name="org.iets3.core.expr.toplevel.structure.EnumDeclaration" flags="ng" index="5mgZ8">
         <child id="7061117989422575348" name="literals" index="5mgYi" />
       </concept>
-      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ngI" index="S5Q1W">
+      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
         <child id="602952467877562565" name="members" index="S5Trm" />
       </concept>
       <concept id="8811147530084018361" name="org.iets3.core.expr.toplevel.structure.RecordMember" flags="ng" index="2Ss9d7" />
@@ -107,14 +107,14 @@
               <node concept="19SGf9" id="5gocROEcAiF" role="OjmMu">
                 <node concept="19SUe$" id="5gocROEcAiW" role="19SJt6" />
                 <node concept="2Jv0Bt" id="5gocROEcAiU" role="19SJt6">
-                  <ref role="2Jv0Bu" node="5gocROEcAhJ" resolve="OF" />
+                  <ref role="2Jv0Bu" node="5gocROEcAhJ" />
                   <node concept="2rqxmr" id="5gocROEcAkg" role="lGtFl">
-                    <ref role="1BTHP0" node="5gocROEcAhJ" resolve="OF" />
+                    <ref role="1BTHP0" node="5gocROEcAhJ" />
                     <node concept="3KTrbX" id="5gocROEcAkh" role="3KTr4d">
-                      <ref role="3AHY9a" node="5gocROEcAhy" resolve="ON" />
+                      <ref role="3AHY9a" node="5gocROEcAhy" />
                     </node>
                     <node concept="3KTrbX" id="5gocROEcAki" role="3KTr4d">
-                      <ref role="3AHY9a" node="5gocROEcAhJ" resolve="OF" />
+                      <ref role="3AHY9a" node="5gocROEcAhJ" />
                     </node>
                   </node>
                 </node>
@@ -140,14 +140,14 @@
               <node concept="19SGf9" id="5gocROEcAcm" role="OjmMu">
                 <node concept="19SUe$" id="5gocROEcAcL" role="19SJt6" />
                 <node concept="2Jv0Bt" id="5gocROEcAcJ" role="19SJt6">
-                  <ref role="2Jv0Bu" node="sflsE7pfCw" resolve="id" />
+                  <ref role="2Jv0Bu" node="sflsE7pfCw" />
                   <node concept="2rqxmr" id="5gocROEcAgF" role="lGtFl">
-                    <ref role="1BTHP0" node="sflsE7pfCw" resolve="id" />
+                    <ref role="1BTHP0" node="sflsE7pfCw" />
                     <node concept="3KTrbX" id="5gocROEcAgG" role="3KTr4d">
-                      <ref role="3AHY9a" node="5gocROEcA8Z" resolve="name" />
+                      <ref role="3AHY9a" node="5gocROEcA8Z" />
                     </node>
                     <node concept="3KTrbX" id="5gocROEcAgH" role="3KTr4d">
-                      <ref role="3AHY9a" node="sflsE7pfCw" resolve="id" />
+                      <ref role="3AHY9a" node="sflsE7pfCw" />
                     </node>
                   </node>
                 </node>

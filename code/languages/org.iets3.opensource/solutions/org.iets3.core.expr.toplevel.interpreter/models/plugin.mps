@@ -2928,7 +2928,7 @@
       </node>
     </node>
     <node concept="1J7WVO" id="1lon7Xl3CPo" role="1J4apk">
-      <ref role="1J7WVQ" to="jpzw:uGVYUiiVGW" resolve="ExprLambdaInterpreter" />
+      <ref role="1J7WVQ" to="jpzw:uGVYUiiVGW" />
     </node>
   </node>
 </model>

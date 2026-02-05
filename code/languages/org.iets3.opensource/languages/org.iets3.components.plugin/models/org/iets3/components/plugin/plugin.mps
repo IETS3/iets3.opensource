@@ -295,11 +295,11 @@
     <property role="280IaB" value="true" />
     <property role="280Iao" value="true" />
     <property role="280Iaj" value="true" />
-    <ref role="14aYEx" to="h587:1ognOHjyiuQ" resolve="SpecExplorer" />
+    <ref role="14aYEx" to="h587:1ognOHjyiuQ" />
     <node concept="14aYG3" id="1ognOHjyj2a" role="14aYEy">
       <property role="TrG5h" value="componentsModule" />
-      <ref role="14a85i" to="h587:6LfBX8YgRgl" resolve="specModel" />
-      <ref role="3GDMyY" to="h587:1ognOHjyj2a" resolve="root" />
+      <ref role="14a85i" to="h587:6LfBX8YgRgl" />
+      <ref role="3GDMyY" to="h587:1ognOHjyj2a" />
       <node concept="14aYG3" id="1ognOHjzeue" role="1DVp44">
         <property role="TrG5h" value="content" />
         <node concept="3Tqbb2" id="1ognOHjzeFr" role="3GGxor">
@@ -308,7 +308,7 @@
         <node concept="2OqwBi" id="1MpR5BkUn_k" role="14bQOc">
           <node concept="2OqwBi" id="1ognOHjzeOQ" role="2Oq$k0">
             <node concept="14b0Wr" id="1MpR5BkUjBB" role="2Oq$k0">
-              <ref role="14b0Uw" node="1ognOHjyj2a" resolve="componentsModule" />
+              <ref role="14b0Uw" node="1ognOHjyj2a" />
             </node>
             <node concept="3Tsc0h" id="1MpR5BkUjUj" role="2OqNvi">
               <ref role="3TtcxE" to="w9y2:6LfBX8Yivpm" resolve="contents" />
@@ -341,7 +341,7 @@
         </node>
         <node concept="2OqwBi" id="1ognOHjzfjT" role="14a853">
           <node concept="14b0Wr" id="1ognOHjzffH" role="2Oq$k0">
-            <ref role="14b0Uw" node="1ognOHjzeue" resolve="content" />
+            <ref role="14b0Uw" node="1ognOHjzeue" />
           </node>
           <node concept="3TrcHB" id="1MpR5BkUk6T" role="2OqNvi">
             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -352,7 +352,7 @@
         </node>
         <node concept="2OqwBi" id="2JYumEA$y7D" role="3actZa">
           <node concept="14b0Wr" id="2JYumEA$y1U" role="2Oq$k0">
-            <ref role="14b0Uw" node="1ognOHjzeue" resolve="content" />
+            <ref role="14b0Uw" node="1ognOHjzeue" />
           </node>
           <node concept="2qgKlT" id="2JYumEA$ykP" role="2OqNvi">
             <ref role="37wK5l" to="3eba:2JYumEA$tiF" resolve="getIcon" />
@@ -363,7 +363,7 @@
         <ref role="37wK5l" node="FniR$CbHUo" resolve="getReqChunks" />
         <ref role="1Pybhc" node="1ognOHjymxr" resolve="ComponentsExplorerHelper" />
         <node concept="14b0Wr" id="6LfBX8Ym9AB" role="37wK5m">
-          <ref role="14b0Uw" to="h587:6LfBX8YgRgl" resolve="specModel" />
+          <ref role="14b0Uw" to="h587:6LfBX8YgRgl" />
         </node>
       </node>
       <node concept="3Tqbb2" id="1ognOHjyvau" role="3GGxor">
@@ -371,7 +371,7 @@
       </node>
       <node concept="2OqwBi" id="1ognOHjyQkM" role="14a853">
         <node concept="14b0Wr" id="1ognOHjyQbR" role="2Oq$k0">
-          <ref role="14b0Uw" node="1ognOHjyj2a" resolve="componentsModule" />
+          <ref role="14b0Uw" node="1ognOHjyj2a" />
         </node>
         <node concept="3TrcHB" id="1ognOHjyQXf" role="2OqNvi">
           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -385,7 +385,7 @@
         <node concept="liA8E" id="7GPsQwM6xBL" role="2OqNvi">
           <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
           <node concept="14b0Wr" id="7GPsQwM6xBO" role="37wK5m">
-            <ref role="14b0Uw" node="1ognOHjyj2a" resolve="componentsModule" />
+            <ref role="14b0Uw" node="1ognOHjyj2a" />
           </node>
         </node>
       </node>

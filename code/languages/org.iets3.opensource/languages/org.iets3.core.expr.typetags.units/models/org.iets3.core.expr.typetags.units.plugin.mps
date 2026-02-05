@@ -519,7 +519,7 @@
       <concept id="2822369470875160718" name="jetbrains.mps.lang.smodel.query.structure.NodesExpression" flags="ng" index="2Jgcaq" />
     </language>
     <language id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule">
-      <concept id="8018258162245800709" name="com.mbeddr.mpsutil.smodule.structure.SolutionType" flags="ig" index="29jK1l" />
+      <concept id="8018258162245800709" name="com.mbeddr.mpsutil.smodule.structure.SolutionType" flags="ng" index="29jK1l" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -3590,9 +3590,9 @@
                 <node concept="2OqwBi" id="1nMzDp6Oq5o" role="37vLTx">
                   <node concept="2tJFMh" id="1nMzDp6Nosi" role="2Oq$k0">
                     <node concept="ZC_QK" id="1nMzDp6NFBz" role="2tJFKM">
-                      <ref role="2aWVGs" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
+                      <ref role="2aWVGs" to="8ps7:3xM68GMigWg" />
                       <node concept="ZC_QK" id="1nMzDp6NU2J" role="2aWVGa">
-                        <ref role="2aWVGs" to="8ps7:3xM68GMigWi" resolve="unspecified quantity" />
+                        <ref role="2aWVGs" to="8ps7:3xM68GMigWi" />
                       </node>
                     </node>
                   </node>
@@ -3665,9 +3665,9 @@
                 <node concept="2OqwBi" id="1a2DxsCEF98" role="37vLTx">
                   <node concept="2tJFMh" id="1a2DxsCEF99" role="2Oq$k0">
                     <node concept="ZC_QK" id="1a2DxsCEF9a" role="2tJFKM">
-                      <ref role="2aWVGs" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
+                      <ref role="2aWVGs" to="8ps7:3xM68GMigWg" />
                       <node concept="ZC_QK" id="1a2DxsCEF9b" role="2aWVGa">
-                        <ref role="2aWVGs" to="8ps7:3xM68GMigWm" resolve="thermodynamic temperature" />
+                        <ref role="2aWVGs" to="8ps7:3xM68GMigWm" />
                       </node>
                     </node>
                   </node>
@@ -4226,9 +4226,9 @@
                         <node concept="2OqwBi" id="1nMzDp6SSAC" role="36biLW">
                           <node concept="2tJFMh" id="1nMzDp6S7S9" role="2Oq$k0">
                             <node concept="ZC_QK" id="1nMzDp6SggV" role="2tJFKM">
-                              <ref role="2aWVGs" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
+                              <ref role="2aWVGs" to="8ps7:3xM68GMigWg" />
                               <node concept="ZC_QK" id="1nMzDp6SvL3" role="2aWVGa">
-                                <ref role="2aWVGs" to="8ps7:36kPvG5oSra" resolve="unitless" />
+                                <ref role="2aWVGs" to="8ps7:36kPvG5oSra" />
                               </node>
                             </node>
                           </node>
@@ -4317,9 +4317,9 @@
                         <node concept="2OqwBi" id="1a2DxsCSbBs" role="36biLW">
                           <node concept="2tJFMh" id="1a2DxsCSbBt" role="2Oq$k0">
                             <node concept="ZC_QK" id="1a2DxsCSbBu" role="2tJFKM">
-                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" resolve="SIDerivedUnits" />
+                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" />
                               <node concept="ZC_QK" id="1a2DxsCSbBv" role="2aWVGa">
-                                <ref role="2aWVGs" to="8ps7:3NjH4t$iNK$" resolve="d" />
+                                <ref role="2aWVGs" to="8ps7:3NjH4t$iNK$" />
                               </node>
                             </node>
                           </node>
@@ -4408,9 +4408,9 @@
                         <node concept="2OqwBi" id="1a2DxsCY7o7" role="36biLW">
                           <node concept="2tJFMh" id="1a2DxsCY7o8" role="2Oq$k0">
                             <node concept="ZC_QK" id="1a2DxsCY7o9" role="2tJFKM">
-                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" resolve="SIDerivedUnits" />
+                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" />
                               <node concept="ZC_QK" id="1a2DxsCY7oa" role="2aWVGa">
-                                <ref role="2aWVGs" to="8ps7:3xM68GMih14" resolve="°C" />
+                                <ref role="2aWVGs" to="8ps7:3xM68GMih14" />
                               </node>
                             </node>
                           </node>
@@ -4499,9 +4499,9 @@
                         <node concept="2OqwBi" id="1a2DxsD2sSs" role="36biLW">
                           <node concept="2tJFMh" id="1a2DxsD2sSt" role="2Oq$k0">
                             <node concept="ZC_QK" id="1a2DxsD2sSu" role="2tJFKM">
-                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" resolve="SIDerivedUnits" />
+                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" />
                               <node concept="ZC_QK" id="1a2DxsD2sSv" role="2aWVGa">
-                                <ref role="2aWVGs" to="8ps7:3xM68GMigZP" resolve="Ω" />
+                                <ref role="2aWVGs" to="8ps7:3xM68GMigZP" />
                               </node>
                             </node>
                           </node>
@@ -10970,7 +10970,7 @@
                       <node concept="2OqwBi" id="1FkCRmRWRLa" role="37vLTx">
                         <node concept="2tJFMh" id="1FkCRmRWPPs" role="2Oq$k0">
                           <node concept="ZC_QK" id="1FkCRmRWPWF" role="2tJFKM">
-                            <ref role="2aWVGs" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
+                            <ref role="2aWVGs" to="8ps7:3xM68GMigWg" />
                           </node>
                         </node>
                         <node concept="Vyspw" id="1FkCRmRWSzb" role="2OqNvi">

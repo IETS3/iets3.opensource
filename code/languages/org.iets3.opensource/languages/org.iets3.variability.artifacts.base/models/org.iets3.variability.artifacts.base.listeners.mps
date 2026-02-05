@@ -61,9 +61,9 @@
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="5818559022137986141" name="listeners" index="j$A37" />
       </concept>
-      <concept id="6105788070830979962" name="com.mbeddr.mpsutil.modellisteners.structure.ReferenceRemovedListener" flags="ig" index="3v3Eqs" />
-      <concept id="6105788070830979719" name="com.mbeddr.mpsutil.modellisteners.structure.ReferenceAddedListener" flags="ig" index="3v3Etx" />
-      <concept id="6105788070830360713" name="com.mbeddr.mpsutil.modellisteners.structure.AbstractRoleListener" flags="ig" index="3v5llJ">
+      <concept id="6105788070830979962" name="com.mbeddr.mpsutil.modellisteners.structure.ReferenceRemovedListener" flags="ng" index="3v3Eqs" />
+      <concept id="6105788070830979719" name="com.mbeddr.mpsutil.modellisteners.structure.ReferenceAddedListener" flags="ng" index="3v3Etx" />
+      <concept id="6105788070830360713" name="com.mbeddr.mpsutil.modellisteners.structure.AbstractRoleListener" flags="ng" index="3v5llJ">
         <reference id="5818559022137756708" name="role" index="j_u2Y" />
       </concept>
     </language>

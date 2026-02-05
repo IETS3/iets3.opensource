@@ -122,7 +122,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -187,7 +187,7 @@
         <child id="8997672845436636634" name="defaultValue" index="21GYCt" />
         <child id="8997672845436636231" name="type" index="21GYI0" />
       </concept>
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
@@ -268,17 +268,17 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="1955825823" />
-          <ref role="rqKBe" node="5Bs7u20L3Ty" resolve="FM" />
+          <ref role="rqKBe" node="5Bs7u20L3Ty" />
           <node concept="3xLA65" id="5Bs7u20PwEd" role="lGtFl">
             <property role="TrG5h" value="given" />
           </node>
           <node concept="rqCGG" id="5Bs7u20Lu9V" role="rqCGo">
             <node concept="3HVKVk" id="5Bs7u20Lu9W" role="3HVKVh">
-              <ref role="3HS9Pa" node="7Nu9WvXuaAB" resolve="x" />
+              <ref role="3HS9Pa" node="7Nu9WvXuaAB" />
             </node>
             <node concept="3HVKVk" id="5Bs7u20Lu9X" role="3HVKVh">
               <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
-              <ref role="3HS9Pa" node="5Bs7u20L4VD" resolve="y" />
+              <ref role="3HS9Pa" node="5Bs7u20L4VD" />
               <node concept="30bXRB" id="5Bs7u20PqFc" role="3HYO9C">
                 <property role="30bXRw" value="42" />
               </node>
@@ -463,11 +463,11 @@
             <property role="TrG5h" value="C" />
             <node concept="12iSMG" id="wgC742QKFv" role="12iwVe">
               <property role="TrG5h" value="d1" />
-              <ref role="12iSMH" node="wgC742QekS" resolve="D" />
+              <ref role="12iSMH" node="wgC742QekS" />
             </node>
             <node concept="12iSMG" id="wgC742QXlx" role="12iwVe">
               <property role="TrG5h" value="d2" />
-              <ref role="12iSMH" node="wgC742QekS" resolve="D" />
+              <ref role="12iSMH" node="wgC742QekS" />
             </node>
           </node>
         </node>
@@ -497,15 +497,15 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="-205593476" />
-          <ref role="rqKBe" node="wgC742QekT" resolve="D" />
+          <ref role="rqKBe" node="wgC742QekT" />
           <node concept="rqCGG" id="wgC742RsNx" role="rqCGo">
             <node concept="rqKBd" id="wgC742RsNy" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="wgC742Qelb" resolve="Q" />
+              <ref role="rqKBe" node="wgC742Qelb" />
               <node concept="rqCGG" id="wgC742RsN$" role="rqCGo">
                 <node concept="3HVKVk" id="wgC742RsN_" role="3HVKVh">
                   <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
-                  <ref role="3HS9Pa" node="wgC742Qj9w" resolve="b" />
+                  <ref role="3HS9Pa" node="wgC742Qj9w" />
                   <node concept="2vmpnb" id="wgC742RUsA" role="3HYO9C" />
                 </node>
               </node>
@@ -521,17 +521,17 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="-205593476" />
-          <ref role="rqKBe" node="wgC742QekT" resolve="D" />
+          <ref role="rqKBe" node="wgC742QekT" />
           <node concept="7CXmI" id="wgC743TwbB" role="lGtFl">
             <node concept="29bkU" id="wgC743TwbC" role="7EUXB" />
           </node>
           <node concept="rqCGG" id="wgC742RLYE" role="rqCGo">
             <node concept="rqKBd" id="wgC742RLYF" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="wgC742Qelb" resolve="Q" />
+              <ref role="rqKBe" node="wgC742Qelb" />
               <node concept="rqCGG" id="wgC742RLYH" role="rqCGo">
                 <node concept="3HVKVk" id="wgC742RLYI" role="3HVKVh">
-                  <ref role="3HS9Pa" node="wgC742Qj9w" resolve="b" />
+                  <ref role="3HS9Pa" node="wgC742Qj9w" />
                   <node concept="7CXmI" id="wgC743TExi" role="lGtFl">
                     <node concept="29bkU" id="wgC743TExj" role="7EUXB" />
                   </node>
@@ -549,23 +549,23 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="-647184737" />
-          <ref role="rqKBe" node="wgC742QvNl" resolve="C" />
+          <ref role="rqKBe" node="wgC742QvNl" />
           <node concept="7CXmI" id="wgC743HjOo" role="lGtFl">
             <node concept="29bkU" id="wgC743HjOp" role="7EUXB" />
           </node>
           <node concept="rqCGG" id="wgC742Roxs" role="rqCGo">
             <node concept="rqKBd" id="wgC742Roxt" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="wgC742QKFv" resolve="d1" />
+              <ref role="rqKBe" node="wgC742QKFv" />
               <node concept="rqMQU" id="wgC742S7mL" role="rqCGo">
-                <ref role="rqMQV" node="wgC742RsNu" resolve="CD1" />
+                <ref role="rqMQV" node="wgC742RsNu" />
               </node>
             </node>
             <node concept="rqKBd" id="wgC742Roxw" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="wgC742QXlx" resolve="d2" />
+              <ref role="rqKBe" node="wgC742QXlx" />
               <node concept="rqMQU" id="wgC742SbDw" role="rqCGo">
-                <ref role="rqMQV" node="wgC742RLYB" resolve="CD2" />
+                <ref role="rqMQV" node="wgC742RLYB" />
                 <node concept="7CXmI" id="wgC744DXTp" role="lGtFl">
                   <node concept="29bkU" id="wgC744DXTq" role="7EUXB" />
                 </node>

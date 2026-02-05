@@ -7,10 +7,10 @@
   <imports />
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
     </language>
@@ -46,16 +46,16 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
     </language>
@@ -90,19 +90,19 @@
     <node concept="2zPypq" id="6wzrxL3eWm7" role="_iOnB">
       <property role="TrG5h" value="c" />
       <node concept="5mh7t" id="6wzrxL3eWH6" role="2zM23F">
-        <ref role="5mh6l" node="6wzrxL3eVQr" resolve="Color" />
+        <ref role="5mh6l" node="6wzrxL3eVQr" />
       </node>
       <node concept="5mhuz" id="jqB9Udvx1L" role="2lDidJ">
-        <ref role="5mhpJ" node="6wzrxL3eWiM" resolve="blue" />
+        <ref role="5mhpJ" node="6wzrxL3eWiM" />
       </node>
     </node>
     <node concept="2zPypq" id="6wzrxL3xhat" role="_iOnB">
       <property role="TrG5h" value="s" />
       <node concept="5mh7t" id="6wzrxL3xhav" role="2zM23F">
-        <ref role="5mh6l" node="6wzrxL3xgw7" resolve="size" />
+        <ref role="5mh6l" node="6wzrxL3xgw7" />
       </node>
       <node concept="5mhuz" id="jqB9UdvwUB" role="2lDidJ">
-        <ref role="5mhpJ" node="6wzrxL3xgXt" resolve="s" />
+        <ref role="5mhpJ" node="6wzrxL3xgXt" />
       </node>
     </node>
     <node concept="_ixoA" id="6wzrxL3aYDN" role="_iOnB" />
@@ -115,18 +115,18 @@
     <node concept="1aga60" id="jqB9UaL6Ek" role="_iOnB">
       <property role="TrG5h" value="f" />
       <node concept="1afdae" id="jqB9UaL7wS" role="1ahQXP">
-        <ref role="1afue_" node="jqB9UaL6U9" resolve="col" />
+        <ref role="1afue_" node="jqB9UaL6U9" />
       </node>
       <node concept="1ahQXy" id="jqB9UaL6U9" role="1ahQWs">
         <property role="TrG5h" value="col" />
         <node concept="5mh7t" id="jqB9UaL6Ur" role="3ix9CU">
-          <ref role="5mh6l" node="6wzrxL3eVQr" resolve="Color" />
+          <ref role="5mh6l" node="6wzrxL3eVQr" />
         </node>
       </node>
       <node concept="1ahQXy" id="jqB9UaL8VP" role="1ahQWs">
         <property role="TrG5h" value="si" />
         <node concept="5mh7t" id="jqB9UaL99R" role="3ix9CU">
-          <ref role="5mh6l" node="6wzrxL3xgw7" resolve="size" />
+          <ref role="5mh6l" node="6wzrxL3xgw7" />
         </node>
       </node>
     </node>
@@ -134,12 +134,12 @@
     <node concept="2zPypq" id="jqB9UaL7Z6" role="_iOnB">
       <property role="TrG5h" value="y" />
       <node concept="1af_rf" id="jqB9UaL8CK" role="2lDidJ">
-        <ref role="1afhQb" node="jqB9UaL6Ek" resolve="f" />
+        <ref role="1afhQb" node="jqB9UaL6Ek" />
         <node concept="5mhuz" id="jqB9UczG3r" role="1afhQ5">
-          <ref role="5mhpJ" node="6wzrxL3eWiM" resolve="blue" />
+          <ref role="5mhpJ" node="6wzrxL3eWiM" />
         </node>
         <node concept="5mhuz" id="jqB9Ud$CFS" role="1afhQ5">
-          <ref role="5mhpJ" node="6wzrxL3xgXz" resolve="m" />
+          <ref role="5mhpJ" node="6wzrxL3xgXz" />
         </node>
       </node>
     </node>

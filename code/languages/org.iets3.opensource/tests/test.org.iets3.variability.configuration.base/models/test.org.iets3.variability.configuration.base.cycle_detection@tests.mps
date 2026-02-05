@@ -81,7 +81,7 @@
       </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -105,7 +105,7 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
@@ -164,7 +164,7 @@
             <property role="TrG5h" value="SelfCycle" />
             <node concept="12iSMG" id="1$F0yLMp_z1" role="12iwVe">
               <property role="TrG5h" value="included" />
-              <ref role="12iSMH" node="1$F0yLMp_yV" resolve="SelfCycle" />
+              <ref role="12iSMH" node="1$F0yLMp_yV" />
               <node concept="7CXmI" id="1$F0yLMpTxc" role="lGtFl">
                 <node concept="1TM$A" id="1$F0yLMpTxd" role="7EUXB" />
               </node>
@@ -193,7 +193,7 @@
             <property role="TrG5h" value="CycleA" />
             <node concept="12iSMG" id="1$F0yLMq0fi" role="12iwVe">
               <property role="TrG5h" value="included" />
-              <ref role="12iSMH" node="1$F0yLMq03Y" resolve="CycleB" />
+              <ref role="12iSMH" node="1$F0yLMq03Y" />
               <node concept="7CXmI" id="1$F0yLMq0lY" role="lGtFl">
                 <node concept="1TM$A" id="1$F0yLMq0lZ" role="7EUXB" />
               </node>
@@ -210,7 +210,7 @@
             <property role="TrG5h" value="CycleB" />
             <node concept="12iSMG" id="1$F0yLMq040" role="12iwVe">
               <property role="TrG5h" value="included" />
-              <ref role="12iSMH" node="1$F0yLMq04k" resolve="CycleA" />
+              <ref role="12iSMH" node="1$F0yLMq04k" />
               <node concept="7CXmI" id="1$F0yLMq041" role="lGtFl">
                 <node concept="1TM$A" id="1$F0yLMq042" role="7EUXB" />
               </node>
@@ -381,7 +381,7 @@
             <property role="TrG5h" value="Test" />
             <node concept="12iSMG" id="3eg222GrGO3" role="12iwVe">
               <property role="TrG5h" value="test" />
-              <ref role="12iSMH" node="3eg222GrGLj" resolve="Test" />
+              <ref role="12iSMH" node="3eg222GrGLj" />
             </node>
             <node concept="3xLA65" id="3eg222GC0BY" role="lGtFl">
               <property role="TrG5h" value="targetFeature_simple" />
@@ -397,7 +397,7 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="-850887149" />
-          <ref role="rqKBe" node="3eg222GrGLk" resolve="Test" />
+          <ref role="rqKBe" node="3eg222GrGLk" />
           <node concept="3xLA65" id="3eg222GrGM$" role="lGtFl">
             <property role="TrG5h" value="before1" />
           </node>
@@ -412,7 +412,7 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="-850887149" />
-          <ref role="rqKBe" node="3eg222GrGLk" resolve="Test" />
+          <ref role="rqKBe" node="3eg222GrGLk" />
           <node concept="3xLA65" id="3eg222GrGO1" role="lGtFl">
             <property role="TrG5h" value="after1" />
           </node>
@@ -426,7 +426,7 @@
             <property role="TrG5h" value="Test2_A" />
             <node concept="12iSMG" id="3eg222GCiSE" role="12iwVe">
               <property role="TrG5h" value="b" />
-              <ref role="12iSMH" node="3eg222GCiSh" resolve="Test2_B" />
+              <ref role="12iSMH" node="3eg222GCiSh" />
             </node>
           </node>
         </node>
@@ -436,7 +436,7 @@
             <property role="TrG5h" value="Test2_B" />
             <node concept="12iSMG" id="3eg222GCiSC" role="12iwVe">
               <property role="TrG5h" value="a" />
-              <ref role="12iSMH" node="3eg222GCiQU" resolve="Test2_A" />
+              <ref role="12iSMH" node="3eg222GCiQU" />
             </node>
           </node>
         </node>
@@ -449,7 +449,7 @@
             </node>
             <node concept="12iSMG" id="1UCPn$5jPtB" role="12iwVe">
               <property role="TrG5h" value="a" />
-              <ref role="12iSMH" node="3eg222GCiQU" resolve="Test2_A" />
+              <ref role="12iSMH" node="3eg222GCiQU" />
             </node>
             <node concept="3xLA65" id="1UCPn$5jWBM" role="lGtFl">
               <property role="TrG5h" value="targetFeature_deep" />
@@ -465,7 +465,7 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="-132493057" />
-          <ref role="rqKBe" node="3eg222GCiTT" resolve="Test2_C" />
+          <ref role="rqKBe" node="3eg222GCiTT" />
           <node concept="3xLA65" id="1UCPn$5jPrR" role="lGtFl">
             <property role="TrG5h" value="before_deep" />
           </node>
@@ -480,7 +480,7 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="-132493057" />
-          <ref role="rqKBe" node="3eg222GCiTT" resolve="Test2_C" />
+          <ref role="rqKBe" node="3eg222GCiTT" />
           <node concept="3xLA65" id="1UCPn$5jPt0" role="lGtFl">
             <property role="TrG5h" value="after_deep" />
           </node>

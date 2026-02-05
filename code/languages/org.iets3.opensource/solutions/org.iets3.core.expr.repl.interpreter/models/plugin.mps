@@ -839,13 +839,13 @@
       </node>
     </node>
     <node concept="1J7WVO" id="2HpFPvTaXcy" role="1J4apk">
-      <ref role="1J7WVQ" to="rxyl:uGVYUiiVGW" resolve="ExprToplevelInterpreter" />
+      <ref role="1J7WVQ" to="rxyl:uGVYUiiVGW" />
     </node>
     <node concept="1J7WVO" id="2HpFPvTaXcU" role="1J4apk">
-      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpreter" />
+      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" />
     </node>
     <node concept="1J7WVO" id="2HpFPvTb2sP" role="1J4apk">
-      <ref role="1J7WVQ" to="km5y:uGVYUiiVGW" resolve="ExprSimpleTypesInterpreter" />
+      <ref role="1J7WVQ" to="km5y:uGVYUiiVGW" />
     </node>
   </node>
 </model>
