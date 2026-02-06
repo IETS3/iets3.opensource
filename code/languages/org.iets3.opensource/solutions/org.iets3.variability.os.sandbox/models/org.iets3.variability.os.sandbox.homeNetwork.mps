@@ -9,7 +9,7 @@
   <imports />
   <registry>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -37,7 +37,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="5115872837156723899" name="org.iets3.core.expr.base.structure.LogicalOrExpression" flags="ng" index="30deu6" />
@@ -97,7 +97,7 @@
       <concept id="8997672845436117511" name="org.iets3.variability.featuremodel.base.structure.FeatureAttribute" flags="ng" index="21IWn0">
         <child id="8997672845436636231" name="type" index="21GYI0" />
       </concept>
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
@@ -167,10 +167,10 @@
         <node concept="21CcQa" id="19VDUSODkEP" role="21CcQ0">
           <node concept="3o403X" id="19VDUSOD$PT" role="21CcQ9">
             <node concept="21nZkD" id="19VDUSODkEU" role="30dEsF">
-              <ref role="21nZkZ" node="19VDUSODkE_" />
+              <ref role="21nZkZ" node="19VDUSODkE_" resolve="ViaRouter" />
             </node>
             <node concept="21nZkD" id="19VDUSODkFn" role="30dEs_">
-              <ref role="21nZkZ" node="19VDUSODbIe" />
+              <ref role="21nZkZ" node="19VDUSODbIe" resolve="Router" />
             </node>
           </node>
         </node>
@@ -179,34 +179,34 @@
             <node concept="30deu6" id="4eA6KATjt7v" role="30dEsF">
               <node concept="1QScDb" id="4eA6KATjt7w" role="30dEsF">
                 <node concept="21mTOb" id="4eA6KATjt1w" role="1QScD9">
-                  <ref role="21mTOu" node="4eA6KATjrrF" />
+                  <ref role="21mTOu" node="4eA6KATjrrF" resolve="V110" />
                 </node>
                 <node concept="21nZkD" id="4eA6KATjsZj" role="2lDidJ">
-                  <ref role="21nZkZ" node="4eA6KATjrsa" />
+                  <ref role="21nZkZ" node="4eA6KATjrsa" resolve="power" />
                 </node>
               </node>
               <node concept="1QScDb" id="4eA6KATjt7x" role="30dEs_">
                 <node concept="21mTOb" id="4eA6KATjt6n" role="1QScD9">
-                  <ref role="21mTOu" node="4eA6KATjrs3" />
+                  <ref role="21mTOu" node="4eA6KATjrs3" resolve="V115" />
                 </node>
                 <node concept="21nZkD" id="4eA6KATjt40" role="2lDidJ">
-                  <ref role="21nZkZ" node="4eA6KATjrsa" />
+                  <ref role="21nZkZ" node="4eA6KATjrsa" resolve="power" />
                 </node>
               </node>
             </node>
             <node concept="1QScDb" id="4eA6KATjt9n" role="30dEs_">
               <node concept="21mTOb" id="4eA6KATjtb6" role="1QScD9">
-                <ref role="21mTOu" node="19VDUSODkEj" />
+                <ref role="21mTOu" node="19VDUSODkEj" resolve="Cable" />
               </node>
               <node concept="21nZkD" id="4eA6KATjt8x" role="2lDidJ">
-                <ref role="21nZkZ" node="19VDUSODbIe" />
+                <ref role="21nZkZ" node="19VDUSODbIe" resolve="Router" />
               </node>
             </node>
           </node>
         </node>
         <node concept="12iSMG" id="4eA6KATjrsa" role="12iwVe">
           <property role="TrG5h" value="power" />
-          <ref role="12iSMH" node="4eA6KATjrpg" />
+          <ref role="12iSMH" node="4eA6KATjrpg" resolve="Power" />
         </node>
       </node>
     </node>
@@ -240,7 +240,7 @@
         <node concept="21IWn0" id="3GmPeQeJhmh" role="21GevL">
           <property role="TrG5h" value="curr" />
           <node concept="5mh7t" id="3GmPeQeJhs1" role="21GYI0">
-            <ref role="5mh6l" node="3GmPeQeJfjz" />
+            <ref role="5mh6l" node="3GmPeQeJfjz" resolve="Current" />
           </node>
         </node>
       </node>
@@ -248,7 +248,7 @@
     <node concept="12i7jc" id="4eA6KATjrqm" role="12i2BX" />
     <node concept="12i7jc" id="7oSKjSJ25cw" role="12i2BX" />
     <node concept="3GEVxB" id="7oSKjSJ2gjC" role="38kjvB">
-      <ref role="3GEb4d" node="3GmPeQeJfdN" />
+      <ref role="3GEb4d" node="3GmPeQeJfdN" resolve="DataTypes" />
     </node>
   </node>
   <node concept="_iOnU" id="3GmPeQeJfdN">
@@ -274,102 +274,102 @@
       <property role="0Rz4W" value="330956247" />
       <property role="TrG5h" value="Basic" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="19VDUSODbI7" />
+      <ref role="rqKBe" node="19VDUSODbI7" resolve="HomeNetwork" />
       <node concept="rqCGG" id="7oSKjSJ2z27" role="rqCGo">
         <node concept="rqKBd" id="7oSKjSJ2z28" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-          <ref role="rqKBe" node="19VDUSODbIe" />
+          <ref role="rqKBe" node="19VDUSODbIe" resolve="Router" />
           <node concept="rqCGG" id="7oSKjSJ2z29" role="rqCGo">
             <node concept="rqKBd" id="7oSKjSJ2z2a" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="19VDUSODkE4" />
+              <ref role="rqKBe" node="19VDUSODkE4" resolve="DSL" />
               <node concept="rqCGG" id="7oSKjSJ2z2b" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2z2c" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="19VDUSODkEj" />
+              <ref role="rqKBe" node="19VDUSODkEj" resolve="Cable" />
               <node concept="rqCGG" id="7oSKjSJ2z2d" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2z2e" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="19VDUSODkEK" />
+              <ref role="rqKBe" node="19VDUSODkEK" resolve="LTE" />
               <node concept="rqCGG" id="7oSKjSJ2z2f" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="7oSKjSJ2z2g" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-          <ref role="rqKBe" node="19VDUSODkEo" />
+          <ref role="rqKBe" node="19VDUSODkEo" resolve="NAS" />
           <node concept="rqCGG" id="7oSKjSJ2z2h" role="rqCGo">
             <node concept="3HVKVk" id="7oSKjSJ2z2k" role="3HVKVh">
               <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
-              <ref role="3HS9Pa" node="19VDUSOD$OB" />
+              <ref role="3HS9Pa" node="19VDUSOD$OB" resolve="capacityGB" />
               <node concept="30bXRB" id="7n2HdCI7YZ6" role="3HYO9C">
                 <property role="30bXRw" value="128" />
               </node>
             </node>
             <node concept="rqKBd" id="7oSKjSJ2z2i" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="19VDUSOD$OH" />
+              <ref role="rqKBe" node="19VDUSOD$OH" resolve="RAID5" />
               <node concept="rqCGG" id="7oSKjSJ2z2j" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="7oSKjSJ2z2l" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-          <ref role="rqKBe" node="19VDUSODkEu" />
+          <ref role="rqKBe" node="19VDUSODkEu" resolve="Wireless" />
           <node concept="rqCGG" id="7oSKjSJ2z2m" role="rqCGo">
             <node concept="rqKBd" id="7oSKjSJ2z2n" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="19VDUSODkE_" />
+              <ref role="rqKBe" node="19VDUSODkE_" resolve="ViaRouter" />
               <node concept="rqCGG" id="7oSKjSJ2z2o" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2z2p" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="19VDUSODkEB" />
+              <ref role="rqKBe" node="19VDUSODkEB" resolve="AccessPoint" />
               <node concept="rqCGG" id="7oSKjSJ2z2q" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="7oSKjSJ2z2r" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-          <ref role="rqKBe" node="4eA6KATjrsa" />
+          <ref role="rqKBe" node="4eA6KATjrsa" resolve="power" />
           <node concept="rqCGG" id="7oSKjSJ2EvJ" role="rqCGo">
             <node concept="3HVKVk" id="7oSKjSJ2EvW" role="3HVKVh">
               <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
-              <ref role="3HS9Pa" node="3GmPeQeJhmh" />
+              <ref role="3HS9Pa" node="3GmPeQeJhmh" resolve="curr" />
               <node concept="5mhuz" id="7oSKjSJ2GAC" role="3HYO9C">
-                <ref role="5mhpJ" node="3GmPeQeQSOW" />
+                <ref role="5mhpJ" node="3GmPeQeQSOW" resolve="DC" />
               </node>
             </node>
             <node concept="rqKBd" id="7oSKjSJ2EvK" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="4eA6KATjrrr" />
+              <ref role="rqKBe" node="4eA6KATjrrr" resolve="V220" />
               <node concept="rqCGG" id="7oSKjSJ2EvL" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2EvM" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="4eA6KATjrrw" />
+              <ref role="rqKBe" node="4eA6KATjrrw" resolve="V230" />
               <node concept="rqCGG" id="7oSKjSJ2EvN" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2EvO" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="4eA6KATjrrB" />
+              <ref role="rqKBe" node="4eA6KATjrrB" resolve="V240" />
               <node concept="rqCGG" id="7oSKjSJ2EvP" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2EvQ" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="4eA6KATjrrF" />
+              <ref role="rqKBe" node="4eA6KATjrrF" resolve="V110" />
               <node concept="rqCGG" id="7oSKjSJ2EvR" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2EvS" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="4eA6KATjrrQ" />
+              <ref role="rqKBe" node="4eA6KATjrrQ" resolve="V120" />
               <node concept="rqCGG" id="7oSKjSJ2EvT" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2EvU" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="4eA6KATjrs3" />
+              <ref role="rqKBe" node="4eA6KATjrs3" resolve="V115" />
               <node concept="rqCGG" id="7oSKjSJ2EvV" role="rqCGo" />
             </node>
           </node>
@@ -385,102 +385,102 @@
       <property role="0Rz4W" value="-114233448" />
       <property role="TrG5h" value="HighEnd" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="19VDUSODbI7" />
+      <ref role="rqKBe" node="19VDUSODbI7" resolve="HomeNetwork" />
       <node concept="rqCGG" id="7oSKjSJ2IZ4" role="rqCGo">
         <node concept="rqKBd" id="7oSKjSJ2IZ5" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-          <ref role="rqKBe" node="19VDUSODbIe" />
+          <ref role="rqKBe" node="19VDUSODbIe" resolve="Router" />
           <node concept="rqCGG" id="7oSKjSJ2IZ6" role="rqCGo">
             <node concept="rqKBd" id="7oSKjSJ2IZ7" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="19VDUSODkE4" />
+              <ref role="rqKBe" node="19VDUSODkE4" resolve="DSL" />
               <node concept="rqCGG" id="7oSKjSJ2IZ8" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2IZ9" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="19VDUSODkEj" />
+              <ref role="rqKBe" node="19VDUSODkEj" resolve="Cable" />
               <node concept="rqCGG" id="7oSKjSJ2IZa" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2IZb" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="19VDUSODkEK" />
+              <ref role="rqKBe" node="19VDUSODkEK" resolve="LTE" />
               <node concept="rqCGG" id="7oSKjSJ2IZc" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="7oSKjSJ2IZd" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-          <ref role="rqKBe" node="19VDUSODkEo" />
+          <ref role="rqKBe" node="19VDUSODkEo" resolve="NAS" />
           <node concept="rqCGG" id="7oSKjSJ2IZe" role="rqCGo">
             <node concept="3HVKVk" id="7oSKjSJ2IZh" role="3HVKVh">
               <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
-              <ref role="3HS9Pa" node="19VDUSOD$OB" />
+              <ref role="3HS9Pa" node="19VDUSOD$OB" resolve="capacityGB" />
               <node concept="30bXRB" id="7n2HdCI7YZX" role="3HYO9C">
                 <property role="30bXRw" value="1024" />
               </node>
             </node>
             <node concept="rqKBd" id="7oSKjSJ2IZf" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="19VDUSOD$OH" />
+              <ref role="rqKBe" node="19VDUSOD$OH" resolve="RAID5" />
               <node concept="rqCGG" id="7oSKjSJ2IZg" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="7oSKjSJ2IZi" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-          <ref role="rqKBe" node="19VDUSODkEu" />
+          <ref role="rqKBe" node="19VDUSODkEu" resolve="Wireless" />
           <node concept="rqCGG" id="7oSKjSJ2IZj" role="rqCGo">
             <node concept="rqKBd" id="7oSKjSJ2IZk" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="19VDUSODkE_" />
+              <ref role="rqKBe" node="19VDUSODkE_" resolve="ViaRouter" />
               <node concept="rqCGG" id="7oSKjSJ2IZl" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2IZm" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="19VDUSODkEB" />
+              <ref role="rqKBe" node="19VDUSODkEB" resolve="AccessPoint" />
               <node concept="rqCGG" id="7oSKjSJ2IZn" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="7oSKjSJ2IZo" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-          <ref role="rqKBe" node="4eA6KATjrsa" />
+          <ref role="rqKBe" node="4eA6KATjrsa" resolve="power" />
           <node concept="rqCGG" id="7oSKjSJ2Ng4" role="rqCGo">
             <node concept="3HVKVk" id="7oSKjSJ2Ngh" role="3HVKVh">
               <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
-              <ref role="3HS9Pa" node="3GmPeQeJhmh" />
+              <ref role="3HS9Pa" node="3GmPeQeJhmh" resolve="curr" />
               <node concept="5mhuz" id="7oSKjSJ2Qb5" role="3HYO9C">
-                <ref role="5mhpJ" node="3GmPeQeQSOW" />
+                <ref role="5mhpJ" node="3GmPeQeQSOW" resolve="DC" />
               </node>
             </node>
             <node concept="rqKBd" id="7oSKjSJ2Ng5" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="4eA6KATjrrr" />
+              <ref role="rqKBe" node="4eA6KATjrrr" resolve="V220" />
               <node concept="rqCGG" id="7oSKjSJ2Ng6" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2Ng7" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="4eA6KATjrrw" />
+              <ref role="rqKBe" node="4eA6KATjrrw" resolve="V230" />
               <node concept="rqCGG" id="7oSKjSJ2Ng8" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2Ng9" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="4eA6KATjrrB" />
+              <ref role="rqKBe" node="4eA6KATjrrB" resolve="V240" />
               <node concept="rqCGG" id="7oSKjSJ2Nga" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2Ngb" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="4eA6KATjrrF" />
+              <ref role="rqKBe" node="4eA6KATjrrF" resolve="V110" />
               <node concept="rqCGG" id="7oSKjSJ2Ngc" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2Ngd" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="4eA6KATjrrQ" />
+              <ref role="rqKBe" node="4eA6KATjrrQ" resolve="V120" />
               <node concept="rqCGG" id="7oSKjSJ2Nge" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2Ngf" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="4eA6KATjrs3" />
+              <ref role="rqKBe" node="4eA6KATjrs3" resolve="V115" />
               <node concept="rqCGG" id="7oSKjSJ2Ngg" role="rqCGo" />
             </node>
           </node>
@@ -496,84 +496,84 @@
       <property role="0Rz4W" value="760245758" />
       <property role="TrG5h" value="NotDecidedFully" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="19VDUSODbI7" />
+      <ref role="rqKBe" node="19VDUSODbI7" resolve="HomeNetwork" />
       <node concept="rqCGG" id="7oSKjSJ2R$p" role="rqCGo">
         <node concept="rqKBd" id="7oSKjSJ2R$q" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="19VDUSODbIe" />
+          <ref role="rqKBe" node="19VDUSODbIe" resolve="Router" />
           <node concept="rqCGG" id="7oSKjSJ2R$r" role="rqCGo">
             <node concept="rqKBd" id="7oSKjSJ2R$s" role="rqKBa">
-              <ref role="rqKBe" node="19VDUSODkE4" />
+              <ref role="rqKBe" node="19VDUSODkE4" resolve="DSL" />
               <node concept="rqCGG" id="7oSKjSJ2R$t" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2R$u" role="rqKBa">
-              <ref role="rqKBe" node="19VDUSODkEj" />
+              <ref role="rqKBe" node="19VDUSODkEj" resolve="Cable" />
               <node concept="rqCGG" id="7oSKjSJ2R$v" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2R$w" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="19VDUSODkEK" />
+              <ref role="rqKBe" node="19VDUSODkEK" resolve="LTE" />
               <node concept="rqCGG" id="7oSKjSJ2R$x" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="7oSKjSJ2R$y" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="19VDUSODkEo" />
+          <ref role="rqKBe" node="19VDUSODkEo" resolve="NAS" />
           <node concept="rqCGG" id="7oSKjSJ2R$z" role="rqCGo">
             <node concept="3HVKVk" id="7oSKjSJ2R$A" role="3HVKVh">
-              <ref role="3HS9Pa" node="19VDUSOD$OB" />
+              <ref role="3HS9Pa" node="19VDUSOD$OB" resolve="capacityGB" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2R$$" role="rqKBa">
-              <ref role="rqKBe" node="19VDUSOD$OH" />
+              <ref role="rqKBe" node="19VDUSOD$OH" resolve="RAID5" />
               <node concept="rqCGG" id="7oSKjSJ2R$_" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="7oSKjSJ2R$B" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-          <ref role="rqKBe" node="19VDUSODkEu" />
+          <ref role="rqKBe" node="19VDUSODkEu" resolve="Wireless" />
           <node concept="rqCGG" id="7oSKjSJ2R$C" role="rqCGo">
             <node concept="rqKBd" id="7oSKjSJ2R$D" role="rqKBa">
-              <ref role="rqKBe" node="19VDUSODkE_" />
+              <ref role="rqKBe" node="19VDUSODkE_" resolve="ViaRouter" />
               <node concept="rqCGG" id="7oSKjSJ2R$E" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2R$F" role="rqKBa">
-              <ref role="rqKBe" node="19VDUSODkEB" />
+              <ref role="rqKBe" node="19VDUSODkEB" resolve="AccessPoint" />
               <node concept="rqCGG" id="7oSKjSJ2R$G" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="7oSKjSJ2R$H" role="rqKBa">
-          <ref role="rqKBe" node="4eA6KATjrsa" />
+          <ref role="rqKBe" node="4eA6KATjrsa" resolve="power" />
           <node concept="rqCGG" id="7oSKjSJ2XSS" role="rqCGo">
             <node concept="3HVKVk" id="7oSKjSJ2XT5" role="3HVKVh">
-              <ref role="3HS9Pa" node="3GmPeQeJhmh" />
+              <ref role="3HS9Pa" node="3GmPeQeJhmh" resolve="curr" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2XST" role="rqKBa">
-              <ref role="rqKBe" node="4eA6KATjrrr" />
+              <ref role="rqKBe" node="4eA6KATjrrr" resolve="V220" />
               <node concept="rqCGG" id="7oSKjSJ2XSU" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2XSV" role="rqKBa">
-              <ref role="rqKBe" node="4eA6KATjrrw" />
+              <ref role="rqKBe" node="4eA6KATjrrw" resolve="V230" />
               <node concept="rqCGG" id="7oSKjSJ2XSW" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2XSX" role="rqKBa">
-              <ref role="rqKBe" node="4eA6KATjrrB" />
+              <ref role="rqKBe" node="4eA6KATjrrB" resolve="V240" />
               <node concept="rqCGG" id="7oSKjSJ2XSY" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2XSZ" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="4eA6KATjrrF" />
+              <ref role="rqKBe" node="4eA6KATjrrF" resolve="V110" />
               <node concept="rqCGG" id="7oSKjSJ2XT0" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2XT1" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="4eA6KATjrrQ" />
+              <ref role="rqKBe" node="4eA6KATjrrQ" resolve="V120" />
               <node concept="rqCGG" id="7oSKjSJ2XT2" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="7oSKjSJ2XT3" role="rqKBa">
-              <ref role="rqKBe" node="4eA6KATjrs3" />
+              <ref role="rqKBe" node="4eA6KATjrs3" resolve="V115" />
               <node concept="rqCGG" id="7oSKjSJ2XT4" role="rqCGo" />
             </node>
           </node>
@@ -582,10 +582,10 @@
     </node>
     <node concept="12i7jc" id="7oSKjSJ2Utn" role="12i2BX" />
     <node concept="3GEVxB" id="7oSKjSJ2xo8" role="38kjvB">
-      <ref role="3GEb4d" node="7oSKjSJ25cu" />
+      <ref role="3GEb4d" node="7oSKjSJ25cu" resolve="HomeNetworkFeatures" />
     </node>
     <node concept="3GEVxB" id="7oSKjSJ2I06" role="38kjvB">
-      <ref role="3GEb4d" node="3GmPeQeJfdN" />
+      <ref role="3GEb4d" node="3GmPeQeJfdN" resolve="DataTypes" />
     </node>
   </node>
 </model>

@@ -381,7 +381,7 @@
           <node concept="liA8E" id="6b_jefnVvF5" role="2OqNvi">
             <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
             <node concept="14b0Wr" id="6b_jefnVvSL" role="37wK5m">
-              <ref role="14b0Uw" node="1ognOHjyj2a" />
+              <ref role="14b0Uw" node="1ognOHjyj2a" resolve="root" />
             </node>
           </node>
           <node concept="2YIFZM" id="7qOtjYQNOAj" role="2Oq$k0">
@@ -394,7 +394,7 @@
         </node>
         <node concept="2OqwBi" id="1ognOHjyQkM" role="14a853">
           <node concept="14b0Wr" id="1ognOHjyQbR" role="2Oq$k0">
-            <ref role="14b0Uw" node="1ognOHjyj2a" />
+            <ref role="14b0Uw" node="1ognOHjyj2a" resolve="root" />
           </node>
           <node concept="3TrcHB" id="1ognOHjyQXf" role="2OqNvi">
             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -412,7 +412,7 @@
       </node>
       <node concept="2OqwBi" id="6LfBX8YgSdb" role="14a853">
         <node concept="14b0Wr" id="6LfBX8YgS8P" role="2Oq$k0">
-          <ref role="14b0Uw" node="6LfBX8YgRgl" />
+          <ref role="14b0Uw" node="6LfBX8YgRgl" resolve="specModel" />
         </node>
         <node concept="LkI2h" id="6LfBX8YgShT" role="2OqNvi" />
       </node>

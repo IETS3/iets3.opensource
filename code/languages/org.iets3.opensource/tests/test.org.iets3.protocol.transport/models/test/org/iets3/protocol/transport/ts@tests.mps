@@ -38,7 +38,7 @@
       </concept>
     </language>
     <language id="583939be-ded0-4735-a055-a74f8477fc34" name="org.iets3.core.attributes">
-      <concept id="4388710048722005709" name="org.iets3.core.attributes.structure.IAttributed" flags="ng" index="18DfD4">
+      <concept id="4388710048722005709" name="org.iets3.core.attributes.structure.IAttributed" flags="ngI" index="18DfD4">
         <child id="4388710048722005710" name="attributes" index="18DfD7" />
       </concept>
     </language>
@@ -65,12 +65,12 @@
         <child id="3124623705570720253" name="ref" index="2w4_P9" />
       </concept>
       <concept id="3124623705568936676" name="org.iets3.protocol.transport.structure.ProtocolMapSection" flags="ng" index="2wrQpg" />
-      <concept id="571807164490475397" name="org.iets3.protocol.transport.structure.IProtocoled" flags="ng" index="w_h0j">
+      <concept id="571807164490475397" name="org.iets3.protocol.transport.structure.IProtocoled" flags="ngI" index="w_h0j">
         <child id="571807164490475398" name="protocol" index="w_h0g" />
       </concept>
       <concept id="571807164490417084" name="org.iets3.protocol.transport.structure.SomeIPProtocol" flags="ng" index="w_JgE" />
       <concept id="3124623705576503025" name="org.iets3.protocol.transport.structure.ProtocoledComponentMappingAttr" flags="ng" index="2wYx95" />
-      <concept id="5384613998826276856" name="org.iets3.protocol.transport.structure.IProtocolMapContainer" flags="ng" index="1A6NCv">
+      <concept id="5384613998826276856" name="org.iets3.protocol.transport.structure.IProtocolMapContainer" flags="ngI" index="1A6NCv">
         <child id="4382927200846165532" name="content" index="1Y1BWd" />
       </concept>
       <concept id="7772536663216455977" name="org.iets3.protocol.transport.structure.ProtocolMapRef" flags="ng" index="1PqxB3">
@@ -91,7 +91,7 @@
         <child id="3114648693361111579" name="mappingSource" index="GPgpB" />
       </concept>
       <concept id="3114648693360496995" name="org.iets3.core.mapping.structure.MappingContainer" flags="ng" index="GQAkv" />
-      <concept id="5589681661494874752" name="org.iets3.core.mapping.structure.IMappingContainer" flags="ng" index="1tu5Hr">
+      <concept id="5589681661494874752" name="org.iets3.core.mapping.structure.IMappingContainer" flags="ngI" index="1tu5Hr">
         <child id="5589681661494874864" name="mappingContent" index="1tu5GF" />
       </concept>
       <concept id="966983737342836094" name="org.iets3.core.mapping.structure.ComponentMappingInstanceRefExpr" flags="ng" index="3UzlvF">
@@ -141,19 +141,19 @@
           <node concept="2wrQpg" id="4FLRp99DEoz" role="1tu5GF">
             <node concept="2w4_Pq" id="4FLRp99DEpZ" role="1Y1BWd">
               <node concept="1PqxB3" id="4FLRp99DEq5" role="2w4_P9">
-                <ref role="1PqxB5" to="v7xu:4FLRp99DEoU" />
+                <ref role="1PqxB5" to="v7xu:4FLRp99DEoU" resolve="I1_someip" />
               </node>
             </node>
           </node>
           <node concept="3UDRIN" id="4FLRp99DEfS" role="1tu5GF">
             <node concept="1i6xzV" id="4FLRp99DEfW" role="3UJw4Z">
               <node concept="1i1fwW" id="4FLRp99DEg4" role="MGl3R">
-                <ref role="1i1fwX" to="v7xu:4FLRp99DE7d" />
+                <ref role="1i1fwX" to="v7xu:4FLRp99DE7d" resolve="compositeTestHardware" />
               </node>
             </node>
             <node concept="1i6xzV" id="4FLRp99DEgc" role="3UJw4Z">
               <node concept="1i1fwW" id="4FLRp99DEgm" role="MGl3R">
-                <ref role="1i1fwX" to="v7xu:4FLRp99DE7E" />
+                <ref role="1i1fwX" to="v7xu:4FLRp99DE7E" resolve="testFunctional" />
               </node>
             </node>
           </node>
@@ -163,16 +163,16 @@
                 <node concept="w_JgE" id="4FLRp99DEnD" role="w_h0g" />
               </node>
               <node concept="3UzlvF" id="4FLRp99DEha" role="GPgpB">
-                <ref role="3Uzifb" node="4FLRp99DEgc" />
+                <ref role="3Uzifb" node="4FLRp99DEgc" resolve="testFunctional" />
               </node>
               <node concept="3UzlvF" id="4FLRp99DEhi" role="GM32i">
-                <ref role="3Uzifb" node="4FLRp99DEfW" />
+                <ref role="3Uzifb" node="4FLRp99DEfW" resolve="compositeTestHardware" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3GEVxB" id="4FLRp99DEvw" role="38kjvB">
-          <ref role="3GEb4d" to="v7xu:4FLRp99DE7a" />
+          <ref role="3GEb4d" to="v7xu:4FLRp99DE7a" resolve="testModel" />
         </node>
         <node concept="7CXmI" id="5b6pzZGXDLD" role="lGtFl">
           <node concept="7OXhh" id="5b6pzZGXDLG" role="7EUXB" />

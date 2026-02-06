@@ -80,7 +80,7 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3" />
@@ -120,7 +120,7 @@
           <property role="1nQUAq" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="573354694" />
-          <ref role="rqKBe" node="47BSdD61b1E" />
+          <ref role="rqKBe" node="47BSdD61b1E" resolve="SomeRoot" />
           <node concept="LIFWc" id="47BSdD61b1Z" role="lGtFl">
             <property role="LIFWa" value="4" />
             <property role="OXtK3" value="true" />
@@ -161,7 +161,7 @@
           <property role="1nQUAq" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="573354694" />
-          <ref role="rqKBe" node="4hVICRIxRiC" />
+          <ref role="rqKBe" node="4hVICRIxRiC" resolve="SomeRoot" />
           <node concept="1z9TsT" id="4hVICRIxRsl" role="lGtFl">
             <node concept="OjmMv" id="4hVICRIxRsm" role="1w35rA">
               <node concept="19SGf9" id="4hVICRIxRsn" role="OjmMu">

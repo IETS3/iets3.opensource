@@ -19,20 +19,20 @@
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
       </concept>
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
-      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
         <child id="867786408877811045" name="items" index="I61D1" />
       </concept>
       <concept id="867786408877811180" name="org.iets3.core.expr.base.structure.Postcondition" flags="ng" index="I61F8" />
-      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ng" index="I61I7">
+      <concept id="867786408877810851" name="org.iets3.core.expr.base.structure.IContracted" flags="ngI" index="I61I7">
         <child id="867786408877811042" name="contract" index="I61D6" />
       </concept>
       <concept id="6527211908668938616" name="org.iets3.core.expr.base.structure.DocWordRef" flags="ng" index="2Jv0Bt">
@@ -124,7 +124,7 @@
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
       </concept>
-      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
+      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ngI" index="S5Q1W">
         <child id="602952467877562565" name="members" index="S5Trm" />
       </concept>
       <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
@@ -173,17 +173,17 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
         <property id="2861782275883660525" name="ext" index="1HeIcW" />
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
     </language>
@@ -223,7 +223,7 @@
             <node concept="Ic2ui" id="78zh7PnsuaU" role="30dEsF" />
             <node concept="3zyZNN" id="78zh7Pnsvag" role="30dEs_">
               <node concept="1WbbFT" id="78zh7Pnsvah" role="2S399n">
-                <ref role="1WbbFS" node="5ElkanPNlNY" />
+                <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
               </node>
               <node concept="1MaffS" id="78zh7Pnsvai" role="2lDidJ">
                 <property role="1MbqUG" value="1" />
@@ -233,7 +233,7 @@
                     <node concept="30bsCy" id="78zh7Pnsvam" role="30dEsF">
                       <node concept="30dvUo" id="78zh7Pnsvan" role="2lDidJ">
                         <node concept="1afdae" id="78zh7Pnsvao" role="30dEsF">
-                          <ref role="1afue_" node="5ElkanPNlNg" />
+                          <ref role="1afue_" node="5ElkanPNlNg" resolve="t" />
                         </node>
                         <node concept="30bXRB" id="78zh7Pnsvap" role="30dEs_">
                           <property role="30bXRw" value="32" />
@@ -255,7 +255,7 @@
       </node>
       <node concept="3zyZNN" id="5ElkanPPgTJ" role="1ahQXP">
         <node concept="1WbbFT" id="5ElkanPPmAB" role="2S399n">
-          <ref role="1WbbFS" node="5ElkanPNlNY" />
+          <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
         </node>
         <node concept="1MaffS" id="7Wa2sv4cbNN" role="2lDidJ">
           <property role="1MbqUG" value="1" />
@@ -265,7 +265,7 @@
               <node concept="30bsCy" id="7Wa2sv4cbNR" role="30dEsF">
                 <node concept="30dvUo" id="7Wa2sv4cbNS" role="2lDidJ">
                   <node concept="1afdae" id="7Wa2sv4cbNT" role="30dEsF">
-                    <ref role="1afue_" node="5ElkanPNlNg" />
+                    <ref role="1afue_" node="5ElkanPNlNg" resolve="t" />
                   </node>
                   <node concept="30bXRB" id="7Wa2sv4cbNU" role="30dEs_">
                     <property role="30bXRw" value="32" />
@@ -285,7 +285,7 @@
       <node concept="1ahQXy" id="5ElkanPNlNg" role="1ahQWs">
         <property role="TrG5h" value="t" />
         <node concept="1WbbFT" id="5ElkanPNlNh" role="3ix9CU">
-          <ref role="1WbbFS" node="5ElkanPNlMX" />
+          <ref role="1WbbFS" node="5ElkanPNlMX" resolve="tempInF" />
         </node>
       </node>
       <node concept="1z9TsT" id="5ElkanPNlNi" role="lGtFl">
@@ -295,13 +295,13 @@
               <property role="19SUeA" value="This is a generic Fahrenheit to Celsius conversion." />
             </node>
             <node concept="2Jv0Bt" id="5ElkanQ5o5Y" role="19SJt6">
-              <ref role="2Jv0Bu" node="5ElkanPNlNg" />
+              <ref role="2Jv0Bu" node="5ElkanPNlNg" resolve="t" />
             </node>
             <node concept="19SUe$" id="5ElkanQ5o60" role="19SJt6">
               <property role="19SUeA" value="represents&#10;the Fahrenheit temperature. Note the call to limit; it takes the &#10;value converted via the expression and &quot;presses&quot; it into the bounds&#10;of the" />
             </node>
             <node concept="2Jv0Bt" id="5ElkanQcgh4" role="19SJt6">
-              <ref role="2Jv0Bu" node="5ElkanPNlNY" />
+              <ref role="2Jv0Bu" node="5ElkanPNlNY" resolve="tempInC" />
             </node>
             <node concept="19SUe$" id="5ElkanQcgh6" role="19SJt6">
               <property role="19SUeA" value="type. Note that there is no runtime error if the &#10;value would be outside the bounds, so this function has to be reviewed&#10;carefully." />
@@ -325,7 +325,7 @@
       <node concept="2Ss9d7" id="5ElkanPNlNt" role="S5Trm">
         <property role="TrG5h" value="unit" />
         <node concept="5mh7t" id="5ElkanPNlNu" role="2S399n">
-          <ref role="5mh6l" node="5ElkanPNlNn" />
+          <ref role="5mh6l" node="5ElkanPNlNn" resolve="uiTempUnit" />
         </node>
       </node>
       <node concept="1z9TsT" id="5ElkanPNWDy" role="lGtFl">
@@ -335,7 +335,7 @@
               <property role="19SUeA" value="This is a data structure that represents the actual numeric value&#10;for a temperature form the UI. The UI also tells us how we should&#10;interpret this value by using the" />
             </node>
             <node concept="2Jv0Bt" id="5ElkanQfDPd" role="19SJt6">
-              <ref role="2Jv0Bu" node="5ElkanPNlNn" />
+              <ref role="2Jv0Bu" node="5ElkanPNlNn" resolve="uiTempUnit" />
             </node>
             <node concept="19SUe$" id="5ElkanQfDPf" role="19SJt6">
               <property role="19SUeA" value="enum. In reality this&#10;might look different, depending on how we design the interface with&#10;the non-algo world." />
@@ -360,37 +360,37 @@
       <node concept="1ahQXy" id="5ElkanPNlNz" role="1ahQWs">
         <property role="TrG5h" value="this" />
         <node concept="2Ss9cW" id="5ElkanPNlN$" role="3ix9CU">
-          <ref role="2Ss9cX" node="5ElkanPNlNq" />
+          <ref role="2Ss9cX" node="5ElkanPNlNq" resolve="TempFromUI" />
         </node>
       </node>
       <node concept="1WbbFT" id="5ElkanPNlN_" role="2zM23F">
-        <ref role="1WbbFS" node="5ElkanPNlNY" />
+        <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
       </node>
       <node concept="2fGnzi" id="5ElkanPNlNA" role="1ahQXP">
         <node concept="2fGnzd" id="5ElkanPNlNB" role="2fGnxs">
           <node concept="1QScDb" id="5ElkanPSzBx" role="2fGnzS">
             <node concept="2JjPkS" id="5ElkanPTdh4" role="1QScD9">
-              <ref role="2Jt$xV" node="5ElkanPNlNp" />
+              <ref role="2Jt$xV" node="5ElkanPNlNp" resolve="celcius" />
             </node>
             <node concept="1QScDb" id="5ElkanPNlNE" role="2lDidJ">
               <node concept="3o_JK" id="5ElkanPNlNF" role="1QScD9">
-                <ref role="3o_JH" node="5ElkanPNlNt" />
+                <ref role="3o_JH" node="5ElkanPNlNt" resolve="unit" />
               </node>
               <node concept="1afdae" id="5ElkanPNlNG" role="2lDidJ">
-                <ref role="1afue_" node="5ElkanPNlNz" />
+                <ref role="1afue_" node="5ElkanPNlNz" resolve="this" />
               </node>
             </node>
           </node>
           <node concept="1KhrV4" id="5ElkanPNlNH" role="2fGnzA">
             <node concept="1WbbFT" id="5ElkanPNlNL" role="1KhrV9">
-              <ref role="1WbbFS" node="5ElkanPNlNY" />
+              <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
             </node>
             <node concept="1QScDb" id="5ElkanPNlNI" role="2lDidJ">
               <node concept="3o_JK" id="5ElkanPNlNJ" role="1QScD9">
-                <ref role="3o_JH" node="5ElkanPNlNr" />
+                <ref role="3o_JH" node="5ElkanPNlNr" resolve="value" />
               </node>
               <node concept="1afdae" id="5ElkanPNlNK" role="2lDidJ">
-                <ref role="1afue_" node="5ElkanPNlNz" />
+                <ref role="1afue_" node="5ElkanPNlNz" resolve="this" />
               </node>
             </node>
           </node>
@@ -398,17 +398,17 @@
         <node concept="2fGnzd" id="5ElkanPNlNM" role="2fGnxs">
           <node concept="2fHqz8" id="5ElkanPNlNN" role="2fGnzS" />
           <node concept="1af_rf" id="5ElkanPNlNO" role="2fGnzA">
-            <ref role="1afhQb" node="5ElkanPNlN5" />
+            <ref role="1afhQb" node="5ElkanPNlN5" resolve="FtoC" />
             <node concept="1LgZZ2" id="620LAS5PFW_" role="1afhQ5">
               <node concept="1WbbFT" id="620LAS5PGc6" role="2S399n">
-                <ref role="1WbbFS" node="5ElkanPNlMX" />
+                <ref role="1WbbFS" node="5ElkanPNlMX" resolve="tempInF" />
               </node>
               <node concept="1QScDb" id="620LAS5PFhA" role="2lDidJ">
                 <node concept="3o_JK" id="620LAS5PFGX" role="1QScD9">
-                  <ref role="3o_JH" node="5ElkanPNlNr" />
+                  <ref role="3o_JH" node="5ElkanPNlNr" resolve="value" />
                 </node>
                 <node concept="1afdae" id="620LAS5PF3F" role="2lDidJ">
-                  <ref role="1afue_" node="5ElkanPNlNz" />
+                  <ref role="1afue_" node="5ElkanPNlNz" resolve="this" />
                 </node>
               </node>
             </node>
@@ -422,13 +422,13 @@
               <property role="19SUeA" value="This is a function that can be called in dot-notation on a TempFromUI instance. It&#10;converts the temperature to Celsius, treating both possible cases. Internally we have&#10;to use casts because there we really don't have any type information in the number&#10;itself. However, the cast operation performs a runtime bounds check, so we will get&#10;a runtime error if the value is not in bounds of " />
             </node>
             <node concept="2Jv0Bt" id="5ElkanQfGEI" role="19SJt6">
-              <ref role="2Jv0Bu" node="5ElkanPNlNY" />
+              <ref role="2Jv0Bu" node="5ElkanPNlNY" resolve="tempInC" />
             </node>
             <node concept="19SUe$" id="5ElkanQfGEK" role="19SJt6">
               <property role="19SUeA" value="or " />
             </node>
             <node concept="2Jv0Bt" id="5ElkanQfGEP" role="19SJt6">
-              <ref role="2Jv0Bu" node="5ElkanPNlMX" />
+              <ref role="2Jv0Bu" node="5ElkanPNlMX" resolve="tempInF" />
             </node>
             <node concept="19SUe$" id="5ElkanQfGER" role="19SJt6">
               <property role="19SUeA" value="respectively." />
@@ -479,10 +479,10 @@
           <property role="30bXRw" value="100.0" />
         </node>
         <node concept="5mhuz" id="5ElkanPNlO5" role="2S399l">
-          <ref role="5mhpJ" node="5ElkanPNlNo" />
+          <ref role="5mhpJ" node="5ElkanPNlNo" resolve="fahrenheit" />
         </node>
         <node concept="2Ss9cW" id="5ElkanPNlO6" role="2S399n">
-          <ref role="2Ss9cX" node="5ElkanPNlNq" />
+          <ref role="2Ss9cX" node="5ElkanPNlNq" resolve="TempFromUI" />
         </node>
       </node>
     </node>
@@ -490,7 +490,7 @@
     <node concept="2zPypq" id="5ElkanPNlO8" role="_iOnB">
       <property role="TrG5h" value="anTempValueInTheStatemachine" />
       <node concept="1WbbFT" id="5ElkanPNlOc" role="2zM23F">
-        <ref role="1WbbFS" node="5ElkanPNlNY" />
+        <ref role="1WbbFS" node="5ElkanPNlNY" resolve="tempInC" />
       </node>
       <node concept="1z9TsT" id="5ElkanPOwZ8" role="lGtFl">
         <node concept="OjmMv" id="5ElkanPOwZ9" role="1w35rA">
@@ -503,10 +503,10 @@
       </node>
       <node concept="1QScDb" id="5ElkanPNlO9" role="2lDidJ">
         <node concept="1He9k6" id="5ElkanPNlOa" role="1QScD9">
-          <ref role="1He9kT" node="5ElkanPNlNy" />
+          <ref role="1He9kT" node="5ElkanPNlNy" resolve="toC" />
         </node>
         <node concept="_emDc" id="5ElkanPNlOb" role="2lDidJ">
-          <ref role="_emDf" node="5ElkanPNlO2" />
+          <ref role="_emDf" node="5ElkanPNlO2" resolve="someDataFromUI" />
         </node>
       </node>
     </node>
@@ -520,7 +520,7 @@
     <node concept="2zPypq" id="5ElkanPNoot" role="_iOnB">
       <property role="TrG5h" value="validTempInF" />
       <node concept="1WbbFT" id="5ElkanPNorK" role="2zM23F">
-        <ref role="1WbbFS" node="5ElkanPNlMX" />
+        <ref role="1WbbFS" node="5ElkanPNlMX" resolve="tempInF" />
       </node>
       <node concept="30bXRB" id="5ElkanPNos4" role="2lDidJ">
         <property role="30bXRw" value="100.0" />
@@ -531,7 +531,7 @@
       <node concept="_fkuZ" id="5ElkanPNr9C" role="_fkp5">
         <node concept="_fku$" id="5ElkanPNr9D" role="_fkur" />
         <node concept="1af_rf" id="5ElkanPNra4" role="_fkuY">
-          <ref role="1afhQb" node="5ElkanPNlN5" />
+          <ref role="1afhQb" node="5ElkanPNlN5" resolve="FtoC" />
           <node concept="30bXRB" id="5ElkanPNrai" role="1afhQ5">
             <property role="30bXRw" value="100.0" />
           </node>
@@ -545,10 +545,10 @@
         <node concept="_fku$" id="5ElkanPORgZ" role="_fkur" />
         <node concept="1QScDb" id="5ElkanPP1Lh" role="_fkuY">
           <node concept="1He9k6" id="5ElkanPP68V" role="1QScD9">
-            <ref role="1He9kT" node="5ElkanPNlNy" />
+            <ref role="1He9kT" node="5ElkanPNlNy" resolve="toC" />
           </node>
           <node concept="_emDc" id="5ElkanPP1L7" role="2lDidJ">
-            <ref role="_emDf" node="5ElkanPNlO2" />
+            <ref role="_emDf" node="5ElkanPNlO2" resolve="someDataFromUI" />
           </node>
         </node>
         <node concept="30bXRB" id="5ElkanPP8kj" role="_fkuS">

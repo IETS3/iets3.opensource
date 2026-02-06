@@ -27,7 +27,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
       <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
@@ -42,7 +42,7 @@
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -72,7 +72,7 @@
   <node concept="1_1swa" id="2V5XGuZtmXj">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="FeatureModelLanguageDocs" />
-    <ref role="G9hjw" node="2V5XGuZtmXy" />
+    <ref role="G9hjw" node="2V5XGuZtmXy" resolve="FeatureModelDocConfig" />
     <node concept="1mvXsy" id="2V5XGuZtmXH" role="1_0VJ0">
       <property role="TrG5h" value="FeatureModelConcepts" />
       <property role="1_0VJr" value="Feature Model Concepts" />

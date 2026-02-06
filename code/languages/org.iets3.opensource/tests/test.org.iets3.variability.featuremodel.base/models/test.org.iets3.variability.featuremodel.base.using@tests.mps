@@ -41,7 +41,7 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="7725497592275044117" name="org.iets3.variability.featuremodel.base.structure.FMParam" flags="ng" index="2vxJKP">
@@ -102,7 +102,7 @@
           <node concept="1lrKzq" id="3VBefHGXKwx" role="1lrLG6">
             <node concept="2vxJKP" id="3VBefHGXKwy" role="2vxkbM">
               <property role="TrG5h" value="l" />
-              <ref role="2vxkaC" node="3VBefHGXKvK" />
+              <ref role="2vxkaC" node="3VBefHGXKvK" resolve="L" />
             </node>
           </node>
         </node>
@@ -114,11 +114,11 @@
             <property role="TrG5h" value="M" />
             <node concept="12iSMG" id="3VBefHGXKxl" role="12iwVe">
               <property role="TrG5h" value="lang" />
-              <ref role="12iSMH" node="3VBefHGXKvK" />
+              <ref role="12iSMH" node="3VBefHGXKvK" resolve="L" />
             </node>
             <node concept="12iSMG" id="3VBefHGXKxn" role="12iwVe">
               <property role="TrG5h" value="q" />
-              <ref role="12iSMH" node="3VBefHGXKwp" />
+              <ref role="12iSMH" node="3VBefHGXKwp" resolve="Q" />
               <node concept="7CXmI" id="3VBefHGXKFn" role="lGtFl">
                 <node concept="1TM$A" id="3VBefHGXKFo" role="7EUXB">
                   <node concept="2PYRI3" id="3VBefHGXKFs" role="3lydEf">
@@ -136,11 +136,11 @@
             <property role="TrG5h" value="M2" />
             <node concept="12iSMG" id="3VBefHGYohc" role="12iwVe">
               <property role="TrG5h" value="q" />
-              <ref role="12iSMH" node="3VBefHGXKwp" />
+              <ref role="12iSMH" node="3VBefHGXKwp" resolve="Q" />
               <node concept="1lEfCE" id="3VBefHGYohg" role="1lESdG">
-                <ref role="1lE0rE" node="3VBefHGXKwy" />
+                <ref role="1lE0rE" node="3VBefHGXKwy" resolve="l" />
                 <node concept="1lCzJX" id="3VBefHGYohf" role="1lE0xT">
-                  <ref role="1lCzx9" node="3VBefHGYogJ" />
+                  <ref role="1lCzx9" node="3VBefHGYogJ" resolve="lang" />
                 </node>
                 <node concept="7CXmI" id="3VBefHGYoia" role="lGtFl">
                   <node concept="1TM$A" id="3VBefHGYoib" role="7EUXB">
@@ -151,7 +151,7 @@
                 </node>
               </node>
               <node concept="1lEfCE" id="3VBefHGYohp" role="1lESdG">
-                <ref role="1lE0rE" node="3VBefHGXKwy" />
+                <ref role="1lE0rE" node="3VBefHGXKwy" resolve="l" />
                 <node concept="2vmvVl" id="3VBefHGYohq" role="1lE0xT" />
                 <node concept="7CXmI" id="3VBefHGYohM" role="lGtFl">
                   <node concept="1TM$A" id="3VBefHGYohN" role="7EUXB">
@@ -164,7 +164,7 @@
             </node>
             <node concept="12iSMG" id="3VBefHGYogJ" role="12iwVe">
               <property role="TrG5h" value="lang" />
-              <ref role="12iSMH" node="3VBefHGXKvK" />
+              <ref role="12iSMH" node="3VBefHGXKvK" resolve="L" />
             </node>
           </node>
         </node>

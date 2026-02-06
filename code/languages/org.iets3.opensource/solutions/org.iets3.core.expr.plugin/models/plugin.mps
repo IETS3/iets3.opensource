@@ -1709,7 +1709,7 @@
                         <ref role="ehGHo" to="6yn5:3SkjTN1LMyJ" resolve="TestExecutionConfig" />
                       </node>
                       <node concept="9H$SH" id="6pNCASbIAyF" role="33vP2m">
-                        <ref role="9Hxhg" to="w474:3SkjTN1M1kS" />
+                        <ref role="9Hxhg" to="w474:3SkjTN1M1kS" resolve="TestExecutionPreferences" />
                         <node concept="2OqwBi" id="57VdFqPmPwR" role="9HWM5">
                           <node concept="37vLTw" id="57VdFqPmOkz" role="2Oq$k0">
                             <ref role="3cqZAo" node="57VdFqPmOkv" resolve="projectModules" />
@@ -1870,7 +1870,7 @@
                         <ref role="ehGHo" to="6yn5:3SkjTN1LMyJ" resolve="TestExecutionConfig" />
                       </node>
                       <node concept="9H$SH" id="6pNCASbIHtA" role="33vP2m">
-                        <ref role="9Hxhg" to="w474:3SkjTN1M1kS" />
+                        <ref role="9Hxhg" to="w474:3SkjTN1M1kS" resolve="TestExecutionPreferences" />
                         <node concept="2OqwBi" id="57VdFqPmRTE" role="9HWM5">
                           <node concept="37vLTw" id="57VdFqPmRTF" role="2Oq$k0">
                             <ref role="3cqZAo" node="57VdFqPmRIL" resolve="projectModules" />
@@ -2053,7 +2053,7 @@
                         <ref role="ehGHo" to="6yn5:3SkjTN1LMyJ" resolve="TestExecutionConfig" />
                       </node>
                       <node concept="9H$SH" id="6pNCASbIIiw" role="33vP2m">
-                        <ref role="9Hxhg" to="w474:3SkjTN1M1kS" />
+                        <ref role="9Hxhg" to="w474:3SkjTN1M1kS" resolve="TestExecutionPreferences" />
                         <node concept="2OqwBi" id="5MbB62qz2PO" role="9HWM5">
                           <node concept="37vLTw" id="5MbB62qz2PP" role="2Oq$k0">
                             <ref role="3cqZAo" node="5MbB62qyTgj" resolve="projectModules" />
@@ -2197,7 +2197,7 @@
                         <ref role="ehGHo" to="6yn5:3SkjTN1LMyJ" resolve="TestExecutionConfig" />
                       </node>
                       <node concept="9H$SH" id="6pNCASbIIOI" role="33vP2m">
-                        <ref role="9Hxhg" to="w474:3SkjTN1M1kS" />
+                        <ref role="9Hxhg" to="w474:3SkjTN1M1kS" resolve="TestExecutionPreferences" />
                         <node concept="2OqwBi" id="5MbB62qz3iV" role="9HWM5">
                           <node concept="37vLTw" id="5MbB62qz3iW" role="2Oq$k0">
                             <ref role="3cqZAo" node="5MbB62qz5EI" resolve="projectModules" />
@@ -3041,7 +3041,7 @@
               <ref role="ehGHo" to="6yn5:3SkjTN1LMyJ" resolve="TestExecutionConfig" />
             </node>
             <node concept="9H$SH" id="5rUl2R7POKE" role="33vP2m">
-              <ref role="9Hxhg" to="w474:3SkjTN1M1kS" />
+              <ref role="9Hxhg" to="w474:3SkjTN1M1kS" resolve="TestExecutionPreferences" />
               <node concept="37vLTw" id="5rUl2R7POKF" role="9HWM5">
                 <ref role="3cqZAo" node="5rUl2R7POL7" resolve="module" />
               </node>

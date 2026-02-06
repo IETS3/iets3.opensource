@@ -168,7 +168,7 @@
     <property role="UYu25" value="arithmetic" />
     <property role="3GE5qa" value="" />
     <node concept="1J7WVO" id="7WFhXJlVIJG" role="1J4apk">
-      <ref role="1J7WVQ" to="u5a1:uGVYUiiVGW" />
+      <ref role="1J7WVQ" to="u5a1:uGVYUiiVGW" resolve="ExprMutateInterpreter" />
     </node>
     <node concept="qq9P1" id="5hiN5Pl3bed" role="qq9xR">
       <property role="2TnfIJ" value="true" />

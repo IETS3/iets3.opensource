@@ -92,7 +92,7 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
@@ -221,12 +221,12 @@
               <property role="TrG5h" value="B" />
               <node concept="12iSMG" id="6I42zpjg7ux" role="12iwVe">
                 <property role="TrG5h" value="submodel" />
-                <ref role="12iSMH" node="6I42zpjg7uT" />
+                <ref role="12iSMH" node="6I42zpjg7uT" resolve="Submodel" />
               </node>
             </node>
             <node concept="12iSMG" id="6I42zpjg9vc" role="12iwVe">
               <property role="TrG5h" value="anothersubmodel" />
-              <ref role="12iSMH" node="6I42zpjg7uT" />
+              <ref role="12iSMH" node="6I42zpjg7uT" resolve="Submodel" />
             </node>
             <node concept="3xLA65" id="4NSKMxqgGm4" role="lGtFl">
               <property role="TrG5h" value="featureRoot" />
