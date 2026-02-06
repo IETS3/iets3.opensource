@@ -56,7 +56,6 @@
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
-        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
@@ -1568,116 +1567,6 @@
       </node>
     </node>
   </node>
-  <node concept="PKFIW" id="2fC0CjMe06G">
-    <property role="3GE5qa" value="varpoints" />
-    <property role="TrG5h" value="ConfigListCondition" />
-    <ref role="1XX52x" to="i9mv:2fC0CjMdVVS" resolve="IConfigListVarPoint" />
-    <node concept="3EZMnI" id="2fC0CjMe06I" role="2wV5jI">
-      <node concept="1HlG4h" id="5y0$AzoBcsh" role="3EZMnx">
-        <ref role="1k5W1q" node="6yBLDO2gPk6" resolve="PresenceCondition" />
-        <node concept="1HfYo3" id="5y0$AzoBcsi" role="1HlULh">
-          <node concept="3TQlhw" id="5y0$AzoBcsj" role="1Hhtcw">
-            <node concept="3clFbS" id="5y0$AzoBcsk" role="2VODD2">
-              <node concept="3clFbF" id="5y0$AzoBcsl" role="3cqZAp">
-                <node concept="3cpWs3" id="1R5hpWYj1vv" role="3clFbG">
-                  <node concept="Xl_RD" id="1R5hpWYj1vz" role="3uHU7w">
-                    <property role="Xl_RC" value=":" />
-                  </node>
-                  <node concept="2OqwBi" id="5y0$AzoBcsn" role="3uHU7B">
-                    <node concept="pncrf" id="5y0$AzoBcso" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="1R5hpWYj0YF" role="2OqNvi">
-                      <ref role="37wK5l" to="i05g:1R5hpWYiZjW" resolve="getStateTag" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="pkWqt" id="5y0$AzoBcss" role="pqm2j">
-          <node concept="3clFbS" id="5y0$AzoBcst" role="2VODD2">
-            <node concept="3clFbF" id="5y0$AzoBcsu" role="3cqZAp">
-              <node concept="2OqwBi" id="1R5hpWYiWpm" role="3clFbG">
-                <node concept="pncrf" id="1R5hpWYiWbc" role="2Oq$k0" />
-                <node concept="2qgKlT" id="1R5hpWYiWCq" role="2OqNvi">
-                  <ref role="37wK5l" to="i05g:1R5hpWYiTOZ" resolve="hasState" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="Vb9p2" id="1R5hpWYE3E7" role="3F10Kt">
-          <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
-        </node>
-        <node concept="Veino" id="1R5hpWYBCxh" role="3F10Kt">
-          <node concept="3ZlJ5R" id="1R5hpWYBCxi" role="VblUZ">
-            <node concept="3clFbS" id="1R5hpWYBCxj" role="2VODD2">
-              <node concept="3clFbF" id="1R5hpWYBCxk" role="3cqZAp">
-                <node concept="2YIFZM" id="1R5hpWYBCxl" role="3clFbG">
-                  <ref role="1Pybhc" node="6yBLDO1NVe1" resolve="ColorHelper" />
-                  <ref role="37wK5l" node="1S98ztTwUJC" resolve="backgroundColorByState" />
-                  <node concept="2OqwBi" id="1R5hpWYBCxm" role="37wK5m">
-                    <node concept="pncrf" id="1R5hpWYBCxn" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="1R5hpWYBCxo" role="2OqNvi">
-                      <ref role="37wK5l" to="i05g:7pGmjNvL72C" resolve="getState" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="2fC0CjMe06S" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
-        <ref role="1k5W1q" node="6yBLDO2gPk6" resolve="PresenceCondition" />
-      </node>
-      <node concept="3F2HdR" id="2fC0CjMe075" role="3EZMnx">
-        <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="i9mv:2fC0CjMdVVV" resolve="configRefs" />
-        <ref role="1k5W1q" node="6yBLDO2gPk6" resolve="PresenceCondition" />
-        <node concept="xShMh" id="5y0$AzoG9Xc" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-          <node concept="3nzxsE" id="5y0$AzoG9Xd" role="3n$kyP">
-            <node concept="3clFbS" id="5y0$AzoG9Xe" role="2VODD2">
-              <node concept="3clFbF" id="5y0$AzoG9Xf" role="3cqZAp">
-                <node concept="2OqwBi" id="5y0$AzoG9Xi" role="3clFbG">
-                  <node concept="pncrf" id="5y0$AzoG9Xj" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="1R5hpWYiX65" role="2OqNvi">
-                    <ref role="37wK5l" to="i05g:1R5hpWYiTOZ" resolve="hasState" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="Veino" id="5y0$AzoG9Xl" role="3F10Kt">
-          <node concept="3ZlJ5R" id="5y0$AzoG9Xm" role="VblUZ">
-            <node concept="3clFbS" id="5y0$AzoG9Xn" role="2VODD2">
-              <node concept="3clFbF" id="1S98ztTynZQ" role="3cqZAp">
-                <node concept="2YIFZM" id="1S98ztTynZR" role="3clFbG">
-                  <ref role="1Pybhc" node="6yBLDO1NVe1" resolve="ColorHelper" />
-                  <ref role="37wK5l" node="1S98ztTwUJC" resolve="backgroundColorByState" />
-                  <node concept="2OqwBi" id="1S98ztTynZS" role="37wK5m">
-                    <node concept="pncrf" id="1S98ztTynZT" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="1S98ztTynZU" role="2OqNvi">
-                      <ref role="37wK5l" to="i05g:7pGmjNvL72C" resolve="getState" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2iRfu4" id="2fC0CjMe077" role="2czzBx" />
-      </node>
-      <node concept="2iRfu4" id="2fC0CjMe06L" role="2iSdaV" />
-      <node concept="3F0ifn" id="2fC0CjMe070" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
-        <ref role="1k5W1q" node="6yBLDO2gPk6" resolve="PresenceCondition" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="4ILIdw6XPuO">
     <property role="3GE5qa" value="artifact" />
     <ref role="1XX52x" to="i9mv:4ILIdw6XPup" resolve="ArtifactRootFeatureRefExpr" />
@@ -2702,12 +2591,6 @@
     <ref role="aqKnT" to="i9mv:U6OqXiEIne" resolve="IConditionVarPoint" />
     <node concept="22hDWj" id="72FAGZvck0f" role="22hAXT" />
     <node concept="2VfDsV" id="72FAGZvck0g" role="3ft7WO" />
-  </node>
-  <node concept="22mcaB" id="72FAGZvck0r">
-    <property role="3GE5qa" value="varpoints" />
-    <ref role="aqKnT" to="i9mv:2fC0CjMdVVS" resolve="IConfigListVarPoint" />
-    <node concept="22hDWj" id="72FAGZvck0s" role="22hAXT" />
-    <node concept="2VfDsV" id="72FAGZvck0t" role="3ft7WO" />
   </node>
   <node concept="22mcaB" id="72FAGZvck02">
     <property role="3GE5qa" value="dectab" />
