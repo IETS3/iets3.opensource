@@ -1209,6 +1209,9 @@
       <node concept="m$_yC" id="4G1C74S34LO" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeSRRD" resolve="org.iets3.core.os" />
       </node>
+      <node concept="m$_yC" id="1kjmNSX4xMS" role="m$_yJ">
+        <ref role="m$_y1" node="7uAdOXgkZjG" resolve="org.iets3.core.expr.tracing" />
+      </node>
       <node concept="3_J27D" id="7B3y$vlfXKD" role="m$_yQ">
         <node concept="3Mxwew" id="7B3y$vlfXKE" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.variability.os" />
@@ -1229,9 +1232,6 @@
       </node>
       <node concept="m$f5U" id="7yHH$DDpJeL" role="m$_yh">
         <ref role="m$f5T" node="7yHH$DDowpI" resolve="org.iets3.variability.base.devkit" />
-      </node>
-      <node concept="m$_yC" id="1kjmNSX4xMS" role="m$_yJ">
-        <ref role="m$_y1" node="7uAdOXgkZjG" resolve="org.iets3.core.expr.tracing" />
       </node>
       <node concept="m$_yC" id="7yHH$DDpO3f" role="m$_yJ">
         <ref role="m$_y1" to="al5i:3Ol24ijlxoL" resolve="com.mbeddr.mpsutil.editor.displayControl" />
@@ -2191,11 +2191,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="7yHH$DDpBOt" role="3bR37C">
-          <node concept="3bR9La" id="7yHH$DDpBOu" role="1SiIV1">
-            <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7yHH$DDpBOx" role="3bR37C">
           <node concept="3bR9La" id="7yHH$DDpBOy" role="1SiIV1">
             <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
@@ -2219,11 +2214,6 @@
         <node concept="1SiIV0" id="7yHH$DDpBOD" role="3bR37C">
           <node concept="3bR9La" id="7yHH$DDpBOE" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7yHH$DDpBOF" role="3bR37C">
-          <node concept="3bR9La" id="7yHH$DDpBOG" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6oSQRDqps34" resolve="de.itemis.mps.editor.enumeration" />
           </node>
         </node>
         <node concept="1SiIV0" id="7yHH$DDpBOJ" role="3bR37C">
@@ -2264,11 +2254,6 @@
         <node concept="1SiIV0" id="7yHH$DDpCxH" role="3bR37C">
           <node concept="3bR9La" id="7yHH$DDpCxI" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7yHH$DDpCxJ" role="3bR37C">
-          <node concept="3bR9La" id="7yHH$DDpCxK" role="1SiIV1">
-            <ref role="3bR37D" node="7yHH$DDpB4c" resolve="org.iets3.variability.configuration.base" />
           </node>
         </node>
         <node concept="1SiIV0" id="7yHH$DDpCxL" role="3bR37C">
@@ -3990,9 +3975,9 @@
         </node>
       </node>
       <node concept="1E1JtD" id="lJ$0svpRkJ" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.expr.typetags.units" />
         <property role="3LESm3" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
+        <property role="BnDLt" value="true" />
         <node concept="3rtmxn" id="7235WRFl_Rs" role="3bR31x">
           <node concept="3LXTmp" id="7235WRFl_Rt" role="3rtmxm">
             <node concept="3qWCbU" id="7235WRFl_Ru" role="3LXTna">
