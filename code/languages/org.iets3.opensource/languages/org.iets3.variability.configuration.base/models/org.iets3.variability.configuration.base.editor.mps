@@ -46,9 +46,8 @@
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
     <import index="2rbz" ref="r:aeef8772-8af4-45c3-a762-623d4009d953(org.iets3.variability.base.plugin)" />
     <import index="461n" ref="r:3b46a963-6deb-4d82-bdc0-36b5d9297fcf(de.slisson.mps.conditionalEditor.hints.editor)" />
-    <import index="stm0" ref="r:e2d5029d-edd9-44e0-9764-dc3ac8433eaf(org.iets3.core.expr.tracing.editor)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="eef1aa08-6b84-4194-90d9-ff3e9d6b4505" name="de.itemis.mps.editor.enumeration">
@@ -79,9 +78,6 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
-      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
-        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
-      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -96,14 +92,15 @@
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
-      <concept id="4242538589859161874" name="jetbrains.mps.lang.editor.structure.ExplicitHintsSpecification" flags="ng" index="2w$q5c">
-        <child id="4242538589859162459" name="hints" index="2w$qW5" />
+      <concept id="4820515453818318288" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReferenceExpression" flags="ng" index="2pYGij">
+        <reference id="4820515453818318891" name="hint" index="2pYH_C" />
       </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz" />
+      <concept id="6150987479542522273" name="jetbrains.mps.lang.editor.structure.QueryHintsSpecification" flags="ig" index="2Hnlc$" />
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
       </concept>
@@ -2261,15 +2258,106 @@
           <ref role="1NtTu8" to="4ndm:5NPKd17BOJ8" resolve="content" />
         </node>
       </node>
-      <node concept="2w$q5c" id="1kjmNSWZG0M" role="2whJh7">
-        <node concept="2aJ2om" id="1kjmNSWZG0N" role="2w$qW5">
-          <ref role="2$4xQ3" to="461n:2kbUaNP7dpe" resolve="conditionalEditor" />
-        </node>
-        <node concept="2aJ2om" id="1kjmNSWZG0O" role="2w$qW5">
-          <ref role="2$4xQ3" to="461n:2kbUaNP7dpg" resolve="conditionalEditor_doNotUseThisHint" />
-        </node>
-        <node concept="2aJ2om" id="1kjmNSWZKdA" role="2w$qW5">
-          <ref role="2$4xQ3" to="stm0:3g9zm40OYvO" resolve="IETS3Tracing" />
+      <node concept="2Hnlc$" id="4nMwprSLKoz" role="2whJh7">
+        <node concept="3clFbS" id="4nMwprSLKo$" role="2VODD2">
+          <node concept="3SKdUt" id="4nMwprSOnjO" role="3cqZAp">
+            <node concept="1PaTwC" id="4nMwprSOnjP" role="1aUNEU">
+              <node concept="3oM_SD" id="4nMwprSOnjQ" role="1PaTwD">
+                <property role="3oM_SC" value="This" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnU3" role="1PaTwD">
+                <property role="3oM_SC" value="query" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnUh" role="1PaTwD">
+                <property role="3oM_SC" value="is" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnUo" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnVo" role="1PaTwD">
+                <property role="3oM_SC" value="way" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnVx" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnVC" role="1PaTwD">
+                <property role="3oM_SC" value="specify" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnD8" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnDi" role="1PaTwD">
+                <property role="3oM_SC" value="IETS3Tracing" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnFz" role="1PaTwD">
+                <property role="3oM_SC" value="editor" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnHg" role="1PaTwD">
+                <property role="3oM_SC" value="hint" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnIm" role="1PaTwD">
+                <property role="3oM_SC" value="without" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnJE" role="1PaTwD">
+                <property role="3oM_SC" value="dragging" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnLN" role="1PaTwD">
+                <property role="3oM_SC" value="in" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnLU" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnZD" role="1PaTwD">
+                <property role="3oM_SC" value="dependency" />
+              </node>
+            </node>
+          </node>
+          <node concept="3SKdUt" id="4nMwprSOo06" role="3cqZAp">
+            <node concept="1PaTwC" id="4nMwprSOnZH" role="1aUNEU">
+              <node concept="3oM_SD" id="4nMwprSOnZG" role="1PaTwD">
+                <property role="3oM_SC" value="on" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnM_" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnWA" role="1PaTwD">
+                <property role="3oM_SC" value="tracing" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOoUQ" role="1PaTwD">
+                <property role="3oM_SC" value="language" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnOd" role="1PaTwD">
+                <property role="3oM_SC" value="and" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnOo" role="1PaTwD">
+                <property role="3oM_SC" value="its" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnOD" role="1PaTwD">
+                <property role="3oM_SC" value="slow" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnPJ" role="1PaTwD">
+                <property role="3oM_SC" value="conditional" />
+              </node>
+              <node concept="3oM_SD" id="4nMwprSOnR3" role="1PaTwD">
+                <property role="3oM_SC" value="editors." />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="4nMwprSMrqZ" role="3cqZAp">
+            <node concept="2YIFZM" id="4nMwprSN4YS" role="3clFbG">
+              <ref role="37wK5l" to="33ny:~List.of(java.lang.Object,java.lang.Object,java.lang.Object)" resolve="of" />
+              <ref role="1Pybhc" to="33ny:~List" resolve="List" />
+              <node concept="2pYGij" id="4nMwprSN4YT" role="37wK5m">
+                <ref role="2pYH_C" to="461n:2kbUaNP7dpe" resolve="conditionalEditor" />
+              </node>
+              <node concept="2pYGij" id="4nMwprSN4YU" role="37wK5m">
+                <ref role="2pYH_C" to="461n:2kbUaNP7dpg" resolve="conditionalEditor_doNotUseThisHint" />
+              </node>
+              <node concept="Xl_RD" id="4nMwprSN4YV" role="37wK5m">
+                <property role="Xl_RC" value="org.iets3.core.expr.tracing.editor.TracingHints.IETS3Tracing" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
