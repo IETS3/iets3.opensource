@@ -11,10 +11,12 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Variability: The performance of opening big variant configurations in editor has been improved (by switching off editor hints which are not needed).
 - Variability: The class hierarchy implementing `IRenamer` has been improved and documented. This interface is being used for tailoring the renaming behavior of the variability filtering algorithms.
+- Variability: Remove deprecated concepts `FeatureModelConfiguration_old`, and all related concepts. These concepts have been introduced when one proto-language for variability has been split into two languages, one for feature models and one for configurations. This happened end of 2024, and the deprecation window is now closing.
 
 ### Fixed
 - Add missing deps. to SBOM
 - Add missing dependencies to build scripts
+
 
 ## January 2026
 
