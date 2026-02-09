@@ -1,13 +1,13 @@
 [versions]
-mpsVersion = "2024.1.6"
-mpsQaVersion = "2024.1.+"
+mpsVersion = "2025.1"
+mpsQaVersion = "2025.1.+"
 # if you want to build against a specific mbeddr branch, prepend it here with a dot.
 # NOTE: instances of '/' in the branch name need to be replaced by '-'
 # example: mbeddrVersion="feature-my_new_feature.2023.2.+"
-mbeddrVersion = "2024.1.+"
+mbeddrVersion = "2025.1.+"
 
 gradle = "8.13"
-jbr = "17.0.11-b1207.30"
+jbr = "21.0.6-b895.109"
 
 [libraries]
 mps = { group = "com.jetbrains", name = "mps", version.ref = "mpsVersion" }

@@ -10,7 +10,7 @@
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
@@ -1111,8 +1111,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="30ECcbtHWuz">
-    <property role="TrG5h" value="createFeatureModelConfiguration" />
     <property role="3GE5qa" value="content" />
+    <property role="TrG5h" value="createFeatureModelConfiguration" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent" />
     <node concept="2S6ZIM" id="30ECcbtHWu$" role="2ZfVej">
       <node concept="3clFbS" id="30ECcbtHWu_" role="2VODD2">
@@ -2469,8 +2469,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6SMbav4BLz7">
-    <property role="TrG5h" value="runSolver" />
     <property role="3GE5qa" value="solver" />
+    <property role="TrG5h" value="runSolver" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="2S6ZIM" id="6SMbav4BLz8" role="2ZfVej">
       <node concept="3clFbS" id="6SMbav4BLz9" role="2VODD2">
@@ -2498,8 +2498,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="5UDdUfoBIGh">
-    <property role="TrG5h" value="adaptToChangesInFeatureModel" />
     <property role="3GE5qa" value="adapt" />
+    <property role="TrG5h" value="adaptToChangesInFeatureModel" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="2XrIbr" id="5BtXES5SEcA" role="32lrUH">
       <property role="TrG5h" value="getEditorComponent" />
@@ -2752,8 +2752,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="3IAMu8ga__R">
-    <property role="TrG5h" value="runSolverSync" />
     <property role="3GE5qa" value="solver" />
+    <property role="TrG5h" value="runSolverSync" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="2S6ZIM" id="3IAMu8ga__S" role="2ZfVej">
       <node concept="3clFbS" id="3IAMu8ga__T" role="2VODD2">
@@ -2877,8 +2877,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7qZ72H0UOvi">
-    <property role="TrG5h" value="adaptToExtendedFMC" />
     <property role="3GE5qa" value="adapt" />
+    <property role="TrG5h" value="adaptToExtendedFMC" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="2S6ZIM" id="7qZ72H0UOvj" role="2ZfVej">
       <node concept="3clFbS" id="7qZ72H0UOvk" role="2VODD2">
