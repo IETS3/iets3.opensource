@@ -42,11 +42,6 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
     </language>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
-    </language>
     <language id="309e0004-4976-4416-b947-ec02ae4ecef2" name="com.mbeddr.mpsutil.modellisteners">
       <concept id="5818559022137760597" name="com.mbeddr.mpsutil.modellisteners.structure.Parameter_instance" flags="ng" index="j_vvf" />
       <concept id="5818559022137644042" name="com.mbeddr.mpsutil.modellisteners.structure.ChildAddedListener" flags="ig" index="j_Nyg" />
@@ -64,7 +59,6 @@
     </language>
   </registry>
   <node concept="jA7cl" id="2XyYtG$zfYx">
-    <property role="3GE5qa" value="fm" />
     <ref role="1M2myG" to="s6b7:3tsFshP5Ec7" resolve="Feature" />
     <node concept="j_Nyg" id="2XyYtG$zfYy" role="j$A37">
       <ref role="j_u2Y" to="s6b7:7Nu9WvXrG0Q" resolve="attributes" />
@@ -156,7 +150,6 @@
     </node>
   </node>
   <node concept="jA7cl" id="2XyYtG$zn4W">
-    <property role="3GE5qa" value="fm" />
     <ref role="1M2myG" to="s6b7:3tsFshP5M5B" resolve="FeatureTreeNode" />
     <node concept="j_Nyg" id="2XyYtG$zliQ" role="j$A37">
       <ref role="j_u2Y" to="s6b7:3tsFshP6ikc" resolve="cardinality" />

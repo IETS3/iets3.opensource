@@ -534,7 +534,6 @@
     </language>
   </registry>
   <node concept="312cEu" id="7PHwTKCopL7">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureModelConfigurationScoping" />
     <node concept="3Tm1VV" id="7PHwTKCopL8" role="1B3o_S" />
     <node concept="2tJIrI" id="7PHwTKCopLZ" role="jymVt" />
@@ -2088,7 +2087,6 @@
     </node>
   </node>
   <node concept="312cEu" id="2cYnQcLTOuC">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureModelIncludeUtil" />
     <node concept="2tJIrI" id="2cYnQcLTP64" role="jymVt" />
     <node concept="2YIFZL" id="2cYnQcLTPcz" role="jymVt">
@@ -2438,7 +2436,6 @@
     </node>
   </node>
   <node concept="312cEu" id="BUsxZFHAtC">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FixAdaptToExtendedFMC" />
     <node concept="2tJIrI" id="BUsxZFHAQR" role="jymVt" />
     <node concept="2YIFZL" id="BUsxZFHBLi" role="jymVt">
@@ -2664,7 +2661,6 @@
     <node concept="3Tm1VV" id="BUsxZFHAtD" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="wDfBHhgsBz">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FMCTraversal" />
     <node concept="2tJIrI" id="wDfBHhgsCC" role="jymVt" />
     <node concept="2YIFZL" id="wDfBHhoBLb" role="jymVt">

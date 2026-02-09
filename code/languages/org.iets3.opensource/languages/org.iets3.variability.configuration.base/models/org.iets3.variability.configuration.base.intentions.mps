@@ -358,7 +358,6 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="WXOPPXnFNS">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="subFeatureSelectionStateUntouched" />
     <ref role="2ZfgGC" to="4ndm:30ECcbtES_0" resolve="AbstractFeatureConfiguration" />
     <node concept="2S6ZIM" id="WXOPPXnFNT" role="2ZfVej">
@@ -535,7 +534,6 @@
     </node>
   </node>
   <node concept="2S6QgY" id="5vcbt7MN5Fp">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="resetForceSelectionStateSubFeatures" />
     <ref role="2ZfgGC" to="4ndm:30ECcbtES_0" resolve="AbstractFeatureConfiguration" />
     <node concept="2S6ZIM" id="5vcbt7MN5Fq" role="2ZfVej">
@@ -763,7 +761,6 @@
     </node>
   </node>
   <node concept="2S6QgY" id="2PAIkqAvevo">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="setAllUntouchedChildrenToFalse" />
     <ref role="2ZfgGC" to="4ndm:30ECcbtES_0" resolve="AbstractFeatureConfiguration" />
     <node concept="2S6ZIM" id="2PAIkqAvevp" role="2ZfVej">
@@ -939,7 +936,6 @@
     </node>
   </node>
   <node concept="2S6QgY" id="2PAIkqAzvAk">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="setAllUntouchedChildrenToTrue" />
     <ref role="2ZfgGC" to="4ndm:30ECcbtES_0" resolve="AbstractFeatureConfiguration" />
     <node concept="2S6ZIM" id="2PAIkqAzvAl" role="2ZfVej">
@@ -1115,8 +1111,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="30ECcbtHWuz">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="createFeatureModelConfiguration" />
+    <property role="3GE5qa" value="content" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent" />
     <node concept="2S6ZIM" id="30ECcbtHWu$" role="2ZfVej">
       <node concept="3clFbS" id="30ECcbtHWu_" role="2VODD2">
@@ -1368,7 +1364,6 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7VwzhOKx__2">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="extractConfiguration" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$t" resolve="FeatureConfiguration" />
     <node concept="2S6ZIM" id="7VwzhOKx__3" role="2ZfVej">
@@ -1678,7 +1673,6 @@
     </node>
   </node>
   <node concept="3dkpOd" id="3T$M56trPAB">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="replaceWithExistingExternalConfig" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$t" resolve="FeatureConfiguration" />
     <node concept="2S6ZIM" id="3T$M56trPAC" role="2ZfVej">
@@ -1902,7 +1896,6 @@
     </node>
   </node>
   <node concept="2S6QgY" id="5Jq1ilv3qPj">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="featureSelectionUntouched" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$t" resolve="FeatureConfiguration" />
     <node concept="2S6ZIM" id="5Jq1ilv3qPk" role="2ZfVej">
@@ -2033,7 +2026,6 @@
     </node>
   </node>
   <node concept="2S6QgY" id="5Jgfx7dRolI">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="inlineReferencedConfiguration" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$t" resolve="FeatureConfiguration" />
@@ -2226,7 +2218,6 @@
     </node>
   </node>
   <node concept="2S6QgY" id="5vcbt7MqNGz">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="resetForcedSelectionState" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$t" resolve="FeatureConfiguration" />
     <node concept="2S6ZIM" id="5vcbt7MqNG$" role="2ZfVej">
@@ -2378,7 +2369,6 @@
     </node>
   </node>
   <node concept="2S6QgY" id="1nsh0in56aR">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="replaceWithUnspecifiedConfig" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$t" resolve="FeatureConfiguration" />
     <node concept="2S6ZIM" id="1nsh0in56aS" role="2ZfVej">
@@ -2479,8 +2469,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6SMbav4BLz7">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="runSolver" />
+    <property role="3GE5qa" value="solver" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="2S6ZIM" id="6SMbav4BLz8" role="2ZfVej">
       <node concept="3clFbS" id="6SMbav4BLz9" role="2VODD2">
@@ -2508,8 +2498,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="5UDdUfoBIGh">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="adaptToChangesInFeatureModel" />
+    <property role="3GE5qa" value="adapt" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="2XrIbr" id="5BtXES5SEcA" role="32lrUH">
       <property role="TrG5h" value="getEditorComponent" />
@@ -2762,8 +2752,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="3IAMu8ga__R">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="runSolverSync" />
+    <property role="3GE5qa" value="solver" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="2S6ZIM" id="3IAMu8ga__S" role="2ZfVej">
       <node concept="3clFbS" id="3IAMu8ga__T" role="2VODD2">
@@ -2800,7 +2790,6 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7PHwTKCrB6d">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="specifyUsedConfigs" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="2S6ZIM" id="7PHwTKCrB6e" role="2ZfVej">
@@ -2888,8 +2877,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7qZ72H0UOvi">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="adaptToExtendedFMC" />
+    <property role="3GE5qa" value="adapt" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="2S6ZIM" id="7qZ72H0UOvj" role="2ZfVej">
       <node concept="3clFbS" id="7qZ72H0UOvk" role="2VODD2">
@@ -2935,7 +2924,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7SHUXR9z8Nu">
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="adapt" />
     <property role="TrG5h" value="updateAllRelatedConfigurations" />
     <ref role="2ZfgGC" to="s6b7:3tsFshP5E8h" resolve="FeatureModel" />
     <node concept="2S6ZIM" id="7SHUXR9z8Nv" role="2ZfVej">
@@ -3077,7 +3066,7 @@
     </node>
   </node>
   <node concept="312cEu" id="3GsRbmWlMok">
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="util" />
     <property role="TrG5h" value="IntentionUtilConfiguration" />
     <node concept="2YIFZL" id="2ERoLibd_uC" role="jymVt">
       <property role="TrG5h" value="includeNotBoundByInheritance" />
@@ -3402,7 +3391,7 @@
     <node concept="3Tm1VV" id="3GsRbmWlMol" role="1B3o_S" />
   </node>
   <node concept="2S6QgY" id="AA5ncHGzfC">
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="attribute" />
     <property role="TrG5h" value="setManualAssignmentCause" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="4ndm:30ECcbtLqSm" resolve="FeatureAttributeAssignment" />
