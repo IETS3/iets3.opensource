@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -177,6 +177,9 @@
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
       <concept id="8880393040217246788" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodParameterInstance" flags="ig" index="ffn8J">
@@ -336,7 +339,54 @@
       </node>
       <node concept="P$JXv" id="JbnHRllK7Y" role="lGtFl">
         <node concept="x79VA" id="JbnHRllK81" role="3nqlJM">
-          <property role="x79VB" value="the RefExpr which is used in mappingsource that points to an instance inside the mappingconfig" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0T1A" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0T1B" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1C" role="1PaTwD">
+              <property role="3oM_SC" value="RefExpr" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1D" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1E" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1F" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1G" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1H" role="1PaTwD">
+              <property role="3oM_SC" value="mappingsource" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1I" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1J" role="1PaTwD">
+              <property role="3oM_SC" value="points" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1K" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1L" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1M" role="1PaTwD">
+              <property role="3oM_SC" value="instance" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1N" role="1PaTwD">
+              <property role="3oM_SC" value="inside" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1O" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1P" role="1PaTwD">
+              <property role="3oM_SC" value="mappingconfig" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -390,7 +440,54 @@
       </node>
       <node concept="P$JXv" id="JbnHRllKYY" role="lGtFl">
         <node concept="x79VA" id="JbnHRllKZ1" role="3nqlJM">
-          <property role="x79VB" value="the RefExpr which is used in mappingtarget that points to an instance inside the mappingconfig" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0T1Q" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0T1R" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1S" role="1PaTwD">
+              <property role="3oM_SC" value="RefExpr" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1T" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1U" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1V" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1W" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1X" role="1PaTwD">
+              <property role="3oM_SC" value="mappingtarget" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1Y" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1Z" role="1PaTwD">
+              <property role="3oM_SC" value="points" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T20" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T21" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T22" role="1PaTwD">
+              <property role="3oM_SC" value="instance" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T23" role="1PaTwD">
+              <property role="3oM_SC" value="inside" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T24" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T25" role="1PaTwD">
+              <property role="3oM_SC" value="mappingconfig" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

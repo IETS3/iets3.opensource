@@ -5,7 +5,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -132,7 +132,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -140,11 +139,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -408,25 +404,129 @@
         </node>
       </node>
       <node concept="P$JXv" id="1xsXReQWw9W" role="lGtFl">
-        <node concept="TZ5HA" id="1xsXReQWw9X" role="TZ5H$">
-          <node concept="1dT_AC" id="1xsXReQWw9Y" role="1dT_Ay">
-            <property role="1dT_AB" value="This method will be called after a module has been cloned and filtered according to a variant configuration." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="1xsXReQWwgW" role="TZ5H$">
-          <node concept="1dT_AC" id="1xsXReQWwgX" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="1xsXReQWwh2" role="TZ5H$">
-          <node concept="1dT_AC" id="1xsXReQWwh3" role="1dT_Ay">
-            <property role="1dT_AB" value="It allows to implement application-specific clean-up logic for variant baselining." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="1xsXReQWw9Z" role="3nqlJM">
-          <property role="TUZQ4" value="the cloned and filtered models to be postprocessed" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="1xsXReQWwa1" role="zr_5Q">
             <ref role="zr_51" node="1xsXReQTvNY" resolve="filteredModels" />
+          </node>
+          <node concept="1PaTwC" id="3MzwgoR0Ujc" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0Ujd" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Uje" role="1PaTwD">
+              <property role="3oM_SC" value="cloned" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Ujf" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Ujg" role="1PaTwD">
+              <property role="3oM_SC" value="filtered" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Ujh" role="1PaTwD">
+              <property role="3oM_SC" value="models" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Uji" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Ujj" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Ujk" role="1PaTwD">
+              <property role="3oM_SC" value="postprocessed" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0UiG" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0UiH" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiI" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiJ" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiK" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiL" role="1PaTwD">
+            <property role="3oM_SC" value="called" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiM" role="1PaTwD">
+            <property role="3oM_SC" value="after" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiN" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiO" role="1PaTwD">
+            <property role="3oM_SC" value="module" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiP" role="1PaTwD">
+            <property role="3oM_SC" value="has" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiQ" role="1PaTwD">
+            <property role="3oM_SC" value="been" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiR" role="1PaTwD">
+            <property role="3oM_SC" value="cloned" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiS" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiT" role="1PaTwD">
+            <property role="3oM_SC" value="filtered" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiU" role="1PaTwD">
+            <property role="3oM_SC" value="according" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiV" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiW" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiX" role="1PaTwD">
+            <property role="3oM_SC" value="variant" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UiY" role="1PaTwD">
+            <property role="3oM_SC" value="configuration." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0UiZ" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0Uj0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0Uj1" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0Uj2" role="1PaTwD">
+            <property role="3oM_SC" value="It" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uj3" role="1PaTwD">
+            <property role="3oM_SC" value="allows" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uj4" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uj5" role="1PaTwD">
+            <property role="3oM_SC" value="implement" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uj6" role="1PaTwD">
+            <property role="3oM_SC" value="application-specific" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uj7" role="1PaTwD">
+            <property role="3oM_SC" value="clean-up" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uj8" role="1PaTwD">
+            <property role="3oM_SC" value="logic" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uj9" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uja" role="1PaTwD">
+            <property role="3oM_SC" value="variant" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujb" role="1PaTwD">
+            <property role="3oM_SC" value="baselining." />
           </node>
         </node>
       </node>
@@ -515,18 +615,107 @@
         </node>
       </node>
       <node concept="P$JXv" id="5bEmt06Ai82" role="lGtFl">
-        <node concept="TZ5HA" id="5bEmt06Ai83" role="TZ5H$">
-          <node concept="1dT_AC" id="5bEmt06Ai84" role="1dT_Ay">
-            <property role="1dT_AB" value="Setup filtering parameters to be used during base line." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5bEmt06Aj88" role="TZ5H$">
-          <node concept="1dT_AC" id="5bEmt06Aj89" role="1dT_Ay">
-            <property role="1dT_AB" value="If the method is not overwritten default parameters will be used." />
-          </node>
-        </node>
         <node concept="x79VA" id="5bEmt06Ai85" role="3nqlJM">
-          <property role="x79VB" value="an instance of FilterParams used to configure baselining for this item" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0UjF" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0UjG" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0UjH" role="1PaTwD">
+              <property role="3oM_SC" value="instance" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0UjI" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0UjJ" role="1PaTwD">
+              <property role="3oM_SC" value="FilterParams" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0UjK" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0UjL" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0UjM" role="1PaTwD">
+              <property role="3oM_SC" value="configure" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0UjN" role="1PaTwD">
+              <property role="3oM_SC" value="baselining" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0UjO" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0UjP" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0UjQ" role="1PaTwD">
+              <property role="3oM_SC" value="item" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0Ujl" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0Ujm" role="1PaTwD">
+            <property role="3oM_SC" value="Setup" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujn" role="1PaTwD">
+            <property role="3oM_SC" value="filtering" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujo" role="1PaTwD">
+            <property role="3oM_SC" value="parameters" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujp" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujq" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujr" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujs" role="1PaTwD">
+            <property role="3oM_SC" value="during" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujt" role="1PaTwD">
+            <property role="3oM_SC" value="base" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uju" role="1PaTwD">
+            <property role="3oM_SC" value="line." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0Ujv" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0Ujw" role="1PaTwD">
+            <property role="3oM_SC" value="If" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujx" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujy" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Ujz" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uj$" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Uj_" role="1PaTwD">
+            <property role="3oM_SC" value="overwritten" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UjA" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UjB" role="1PaTwD">
+            <property role="3oM_SC" value="parameters" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UjC" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UjD" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0UjE" role="1PaTwD">
+            <property role="3oM_SC" value="used." />
+          </node>
         </node>
       </node>
     </node>
