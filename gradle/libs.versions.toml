@@ -1,5 +1,5 @@
 [versions]
-mpsVersion = "253.28294.10232"
+mpsVersion = "253.28294.10346"
 mpsQaVersion = "9999.9.+"
 # if you want to build against a specific mbeddr branch, prepend it here with a dot.
 # NOTE: instances of '/' in the branch name need to be replaced by '-'
@@ -25,7 +25,7 @@ cpSuite = { group = "io.takari.junit", name = "takari-cpsuite", version = "1.2.7
 
 [plugins]
 cyclonedxBom = { id = "org.cyclonedx.bom", version = "2.4.1" }
-downloadJbr = { id = "download-jbr", version = "1.29.3.+" }
+downloadJbr = { id = "download-jbr", version = "1.30.0.+" }
 githubRelease = { id = "com.github.breadmoirai.github-release", version = "2.5.2" }
-mpsCommon = { id = "de.itemis.mps.gradle.common", version = "1.29.+" }
+mpsCommon = { id = "de.itemis.mps.gradle.common", version = "1.30.+" }
 mpsLauncher = { id = "de.itemis.mps.gradle.launcher", version = "2.8.0.+" }
