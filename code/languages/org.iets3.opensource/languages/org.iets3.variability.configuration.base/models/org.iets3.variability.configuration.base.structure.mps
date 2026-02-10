@@ -75,7 +75,6 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="30ECcbtES_0">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="AbstractFeatureConfiguration" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -113,16 +112,16 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5NPKd17BG_g">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="AbstractFeatureConfigurationContent" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="6698472021570799952" />
+    <property role="3GE5qa" value="content" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="25R3W" id="zJQZm6SRYQ">
     <property role="3F6X1D" value="643975119313797046" />
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="attribute" />
     <property role="TrG5h" value="AssignmentCause" />
     <ref role="1H5jkz" node="zJQZm7mHjW" resolve="unset" />
     <node concept="25R33" id="zJQZm6SRYR" role="25R1y">
@@ -144,7 +143,6 @@
   </node>
   <node concept="1TIwiD" id="4onczE6iX0Q">
     <property role="EcuMT" value="5050560734061908022" />
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="ExtendedFeatureModelConfigurationRef" />
     <node concept="1TJgyj" id="4onczE6iX19" role="1TKVEi">
       <property role="IQ2ns" value="5050560734061908041" />
@@ -154,7 +152,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="30ECcbtLqSm">
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="attribute" />
     <property role="TrG5h" value="FeatureAttributeAssignment" />
     <property role="EcuMT" value="3470763221647207958" />
     <node concept="1TJgyj" id="30ECcbtMzQ8" role="1TKVEi">
@@ -181,7 +179,6 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5NPKd17BG$t">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureConfiguration" />
     <property role="EcuMT" value="6698472021570799901" />
     <ref role="1TJDcQ" node="30ECcbtES_0" resolve="AbstractFeatureConfiguration" />
@@ -192,12 +189,11 @@
   <node concept="1TIwiD" id="3iESnNmh2nr">
     <property role="EcuMT" value="3795093562300048859" />
     <property role="TrG5h" value="FeatureConfigurationErrorContent" />
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="content" />
     <ref role="1TJDcQ" node="5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent" />
   </node>
   <node concept="1TIwiD" id="5NPKd17BG$l">
     <property role="TrG5h" value="FeatureModelConfiguration" />
-    <property role="3GE5qa" value="configuration" />
     <property role="EcuMT" value="6698472021570799893" />
     <ref role="1TJDcQ" node="30ECcbtES_0" resolve="AbstractFeatureConfiguration" />
     <node concept="1TJgyi" id="49ZhMclDeUT" role="1TKVEl">
@@ -267,12 +263,10 @@
   </node>
   <node concept="1TIwiD" id="2SOOyvZ_kQb">
     <property role="EcuMT" value="3329517093767171467" />
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureModelConfigurationBase" />
     <ref role="1TJDcQ" node="5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent" />
   </node>
   <node concept="1TIwiD" id="5NPKd17BIPE">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureModelConfigurationRef" />
     <property role="EcuMT" value="6698472021570809194" />
     <ref role="1TJDcQ" node="5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent" />
@@ -284,14 +278,12 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5n0Aw5lQs_W">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureWithCardinalityConfiguration" />
     <property role="EcuMT" value="6179108019278301564" />
     <ref role="1TJDcQ" node="5NPKd17BG$t" resolve="FeatureConfiguration" />
   </node>
   <node concept="1TIwiD" id="39DASUxVhgV">
     <property role="EcuMT" value="3632605611355345979" />
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FMCInheritanceCheck" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="39DASUxVhgW" role="lGtFl">
@@ -303,7 +295,7 @@
   </node>
   <node concept="1TIwiD" id="7PHwTKCpr4T">
     <property role="EcuMT" value="9038024733918343481" />
-    <property role="3GE5qa" value="configuration.using" />
+    <property role="3GE5qa" value="using" />
     <property role="TrG5h" value="FMConfigActualParam" />
     <node concept="1TJgyj" id="7PHwTKCpEXQ" role="1TKVEi">
       <property role="IQ2ns" value="9038024733918408566" />
@@ -319,10 +311,10 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5NPKd17BOJW">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="InlineFeatureConfigurationContent" />
     <property role="34LRSv" value="inline configuration" />
     <property role="EcuMT" value="6698472021570833404" />
+    <property role="3GE5qa" value="content" />
     <ref role="1TJDcQ" node="5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent" />
     <node concept="1TJgyj" id="30ECcbtLqSj" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
