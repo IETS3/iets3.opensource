@@ -1,12 +1,11 @@
 [versions]
-mpsVersion = "253.28294.10098"
+mpsVersion = "253.28294.10345"
 mpsQaVersion = "9999.9.+"
 # if you want to build against a specific mbeddr branch, prepend it here with a dot.
 # NOTE: instances of '/' in the branch name need to be replaced by '-'
 # example: mbeddrVersion="feature-my_new_feature.2023.2.+"
 mbeddrVersion = "9999.9.+"
 
-gradle = "8.13"
 jbr = "21.0.6-b895.109"
 
 [libraries]
