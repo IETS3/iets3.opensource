@@ -1209,9 +1209,6 @@
       <node concept="m$_yC" id="4G1C74S34LO" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeSRRD" resolve="org.iets3.core.os" />
       </node>
-      <node concept="m$_yC" id="1kjmNSX4xMS" role="m$_yJ">
-        <ref role="m$_y1" node="7uAdOXgkZjG" resolve="org.iets3.core.expr.tracing" />
-      </node>
       <node concept="3_J27D" id="7B3y$vlfXKD" role="m$_yQ">
         <node concept="3Mxwew" id="7B3y$vlfXKE" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.variability.os" />
@@ -1232,6 +1229,9 @@
       </node>
       <node concept="m$f5U" id="7yHH$DDpJeL" role="m$_yh">
         <ref role="m$f5T" node="7yHH$DDowpI" resolve="org.iets3.variability.base.devkit" />
+      </node>
+      <node concept="m$_yC" id="1kjmNSX4xMS" role="m$_yJ">
+        <ref role="m$_y1" node="7uAdOXgkZjG" resolve="org.iets3.core.expr.tracing" />
       </node>
       <node concept="m$_yC" id="7yHH$DDpO3f" role="m$_yJ">
         <ref role="m$_y1" to="al5i:3Ol24ijlxoL" resolve="com.mbeddr.mpsutil.editor.displayControl" />
@@ -2981,14 +2981,14 @@
             <ref role="3bR37D" node="3FexrMiSOe$" resolve="org.iets3.core.expr.plugin" />
           </node>
         </node>
-        <node concept="1SiIV0" id="62vWlLjQioO" role="3bR37C">
-          <node concept="3bR9La" id="62vWlLjQioP" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="62vWlLjQioQ" role="3bR37C">
           <node concept="3bR9La" id="62vWlLjQioR" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bwlmYgn$D7" role="3bR37C">
+          <node concept="3bR9La" id="bwlmYgn$D8" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:6U$p2g0pj3R" resolve="JAXB" />
           </node>
         </node>
       </node>
@@ -3975,9 +3975,9 @@
         </node>
       </node>
       <node concept="1E1JtD" id="lJ$0svpRkJ" role="2G$12L">
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.expr.typetags.units" />
         <property role="3LESm3" value="cb91a38e-738a-4811-a96d-448d08f526fa" />
-        <property role="BnDLt" value="true" />
         <node concept="3rtmxn" id="7235WRFl_Rs" role="3bR31x">
           <node concept="3LXTmp" id="7235WRFl_Rt" role="3rtmxm">
             <node concept="3qWCbU" id="7235WRFl_Ru" role="3LXTna">
@@ -7737,6 +7737,11 @@
         <node concept="1SiIV0" id="3Gr2MmiOUp2" role="3bR37C">
           <node concept="3bR9La" id="3Gr2MmiOUp3" role="1SiIV1">
             <ref role="3bR37D" node="7jAOwAVRc2S" resolve="org.iets3.core.expr.simpleTypes.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="10g7rYE2eLx" role="3bR37C">
+          <node concept="3bR9La" id="10g7rYE2eLy" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
           </node>
         </node>
       </node>
@@ -12761,6 +12766,9 @@
             <ref role="3bR37D" node="26tZ$Z4roBX" resolve="org.iets3.core.expr.genjava.base.rt" />
           </node>
         </node>
+        <node concept="1E0d5M" id="2ESPRIEicA_" role="1E1XAP">
+          <ref role="1E0d5P" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+        </node>
       </node>
       <node concept="1E1JtD" id="5BQDrmkjrxX" role="2G$12L">
         <property role="TrG5h" value="org.iets3.core.expr.genjava.stringvalidation" />
@@ -17337,6 +17345,11 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3lHAm4fvxyw" role="3bR37C">
+        <node concept="3bR9La" id="3lHAm4fvxyx" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
         </node>
       </node>
     </node>

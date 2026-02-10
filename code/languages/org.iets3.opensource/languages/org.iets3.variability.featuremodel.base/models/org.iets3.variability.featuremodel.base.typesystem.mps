@@ -5,7 +5,7 @@
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -156,7 +156,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -164,11 +163,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -2913,35 +2909,206 @@
         </node>
       </node>
       <node concept="P$JXv" id="7_y8mJgz7xm" role="lGtFl">
-        <node concept="TZ5HA" id="7_y8mJgz7xn" role="TZ5H$">
-          <node concept="1dT_AC" id="7_y8mJgz7xo" role="1dT_Ay">
-            <property role="1dT_AB" value="For a given required using-parameter for FeatureModelInclude fmi, we need to find a proper rhs value." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7_y8mJgz7PP" role="TZ5H$">
-          <node concept="1dT_AC" id="7_y8mJgz7PQ" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7_y8mJgz7PW" role="TZ5H$">
-          <node concept="1dT_AC" id="7_y8mJgz7PX" role="1dT_Ay">
-            <property role="1dT_AB" value="This method does this heuristically and returns a reference expression which can be used as rhs." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="7_y8mJgz7xp" role="3nqlJM">
-          <property role="TUZQ4" value="the using-parameter we have to satisfy" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="7_y8mJgz7xr" role="zr_5Q">
             <ref role="zr_51" node="7_y8mJgxjUO" resolve="reqParam" />
           </node>
+          <node concept="1PaTwC" id="3MzwgoR0ViM" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0ViN" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0ViO" role="1PaTwD">
+              <property role="3oM_SC" value="using-parameter" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0ViP" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0ViQ" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0ViR" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0ViS" role="1PaTwD">
+              <property role="3oM_SC" value="satisfy" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="7_y8mJgz7xs" role="3nqlJM">
-          <property role="TUZQ4" value="the FeatureModelInclude node which needs an actual using-parameter for its feature model" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="7_y8mJgz7xu" role="zr_5Q">
             <ref role="zr_51" node="7_y8mJgx7gQ" resolve="fmi" />
           </node>
+          <node concept="1PaTwC" id="3MzwgoR0ViT" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0ViU" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0ViV" role="1PaTwD">
+              <property role="3oM_SC" value="FeatureModelInclude" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0ViW" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0ViX" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0ViY" role="1PaTwD">
+              <property role="3oM_SC" value="needs" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0ViZ" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vj0" role="1PaTwD">
+              <property role="3oM_SC" value="actual" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vj1" role="1PaTwD">
+              <property role="3oM_SC" value="using-parameter" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vj2" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vj3" role="1PaTwD">
+              <property role="3oM_SC" value="its" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vj4" role="1PaTwD">
+              <property role="3oM_SC" value="feature" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vj5" role="1PaTwD">
+              <property role="3oM_SC" value="model" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="7_y8mJgz7xv" role="3nqlJM">
-          <property role="x79VB" value="a reference expression which satisfies the using-parameter" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0Vj6" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0Vj7" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vj8" role="1PaTwD">
+              <property role="3oM_SC" value="reference" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vj9" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vja" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vjb" role="1PaTwD">
+              <property role="3oM_SC" value="satisfies" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vjc" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Vjd" role="1PaTwD">
+              <property role="3oM_SC" value="using-parameter" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0Vie" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0Vif" role="1PaTwD">
+            <property role="3oM_SC" value="For" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vig" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vih" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vii" role="1PaTwD">
+            <property role="3oM_SC" value="required" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vij" role="1PaTwD">
+            <property role="3oM_SC" value="using-parameter" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vik" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vil" role="1PaTwD">
+            <property role="3oM_SC" value="FeatureModelInclude" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vim" role="1PaTwD">
+            <property role="3oM_SC" value="fmi," />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vin" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vio" role="1PaTwD">
+            <property role="3oM_SC" value="need" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vip" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Viq" role="1PaTwD">
+            <property role="3oM_SC" value="find" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vir" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vis" role="1PaTwD">
+            <property role="3oM_SC" value="proper" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vit" role="1PaTwD">
+            <property role="3oM_SC" value="rhs" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Viu" role="1PaTwD">
+            <property role="3oM_SC" value="value." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0Viv" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0Viw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0Vix" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0Viy" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Viz" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vi$" role="1PaTwD">
+            <property role="3oM_SC" value="does" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vi_" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViA" role="1PaTwD">
+            <property role="3oM_SC" value="heuristically" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViB" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViC" role="1PaTwD">
+            <property role="3oM_SC" value="returns" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViD" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViE" role="1PaTwD">
+            <property role="3oM_SC" value="reference" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViF" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViG" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViH" role="1PaTwD">
+            <property role="3oM_SC" value="can" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViI" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViJ" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViK" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0ViL" role="1PaTwD">
+            <property role="3oM_SC" value="rhs." />
+          </node>
         </node>
       </node>
     </node>
