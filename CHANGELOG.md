@@ -5,6 +5,19 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## February 2026
+
+### Changed
+
+- Variability: The performance of opening big variant configurations in editor has been improved (by switching off editor hints which are not needed).
+- Variability: The class hierarchy implementing `IRenamer` has been improved and documented. This interface is being used for tailoring the renaming behavior of the variability filtering algorithms.
+- Variability: Remove deprecated concepts `FeatureModelConfiguration_old`, and all related concepts. These concepts have been introduced when one proto-language for variability has been split into two languages, one for feature models and one for configurations. This happened end of 2024, and the deprecation window is now closing.
+
+### Fixed
+- Add missing deps. to SBOM
+- Add missing dependencies to build scripts
+
+
 ## January 2026
 
 ### Fixed
@@ -14,6 +27,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
   - The precision of number types with prefixed units (e.g. `mW` or `km`) was always set to `infinite` by the typesystem. Now, the precision is as precise as possible.
 - Variability: Viewer for skeleton trees has been improved (better error reporting, more stable, does not break on nodes which are string literals).
 - ShortLambda Interpreter: Fixed a bug which resulted in a `RuntimeErrorType` when interpreting ShortLambdas.
+- InterpreterCoverageAssResult: fix unique ID calculation ([#1617](https://github.com/IETS3/iets3.opensource/issues/1617))
+
 
 ## December 2025
 
