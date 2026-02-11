@@ -537,5 +537,5 @@ tasks.cyclonedxDirectBom {
     // Don't include license texts in generated SBOMs
     includeLicenseText.set(false)
     // Included bundled runtime dependencies
-    includeConfigs.set(bundledDependencies.map { it.name })
+    includeConfigs.set(bundledDependencies.map { it.name } + languageLibs.name + mps.name)
 }
