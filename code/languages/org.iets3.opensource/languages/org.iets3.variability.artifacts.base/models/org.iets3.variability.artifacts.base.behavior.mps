@@ -6944,12 +6944,25 @@
           <node concept="3cpWsn" id="2BeCnBcx1wI" role="3cpWs9">
             <property role="TrG5h" value="hasVarPoints" />
             <node concept="10P_77" id="2BeCnBcx0OW" role="1tU5fm" />
-            <node concept="2OqwBi" id="2BeCnBcx1wM" role="33vP2m">
-              <node concept="37vLTw" id="2BeCnBcx1wN" role="2Oq$k0">
-                <ref role="3cqZAo" node="220xVKpl3iS" resolve="sn" />
+            <node concept="22lmx$" id="4KRLi9uV$a7" role="33vP2m">
+              <node concept="3y3z36" id="4KRLi9uVNpg" role="3uHU7w">
+                <node concept="10Nm6u" id="4KRLi9uVQ$1" role="3uHU7w" />
+                <node concept="2OqwBi" id="4KRLi9uVEIz" role="3uHU7B">
+                  <node concept="37vLTw" id="4KRLi9uVBZm" role="2Oq$k0">
+                    <ref role="3cqZAo" node="220xVKpl3iS" resolve="sn" />
+                  </node>
+                  <node concept="liA8E" id="4KRLi9uVJrE" role="2OqNvi">
+                    <ref role="37wK5l" node="WVQiviB2Bq" resolve="getTabular" />
+                  </node>
+                </node>
               </node>
-              <node concept="liA8E" id="wv1bximHGf" role="2OqNvi">
-                <ref role="37wK5l" node="1h_GRFdkofs" resolve="hasVarPoint" />
+              <node concept="2OqwBi" id="2BeCnBcx1wM" role="3uHU7B">
+                <node concept="37vLTw" id="2BeCnBcx1wN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="220xVKpl3iS" resolve="sn" />
+                </node>
+                <node concept="liA8E" id="wv1bximHGf" role="2OqNvi">
+                  <ref role="37wK5l" node="1h_GRFdkofs" resolve="hasVarPoint" />
+                </node>
               </node>
             </node>
           </node>
@@ -13028,6 +13041,15 @@
       </node>
       <node concept="3Tm1VV" id="IzpDYSSmjs" role="1B3o_S" />
       <node concept="3Tqbb2" id="IzpDYSTlvv" role="3clF45" />
+      <node concept="2AHcQZ" id="1zFT$dz$tCc" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+        <node concept="2B6LJw" id="1zFT$dz$BBA" role="2B76xF">
+          <ref role="2B6OnR" to="wyt6:~Deprecated.since()" resolve="since" />
+          <node concept="Xl_RD" id="1zFT$dz$BFe" role="2B70Vg">
+            <property role="Xl_RC" value="11.2.2026" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="IzpDYSSmyA" role="jymVt" />
     <node concept="3clFb_" id="IzpDYSRzQ5" role="jymVt">
