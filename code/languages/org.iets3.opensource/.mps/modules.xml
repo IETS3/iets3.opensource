@@ -99,6 +99,7 @@
       <modulePath path="$PROJECT_DIR$/languages/test.iest3.component.attribute/test.iest3.component.attribute.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/test.org.iets3.analysis.base.solvable/test.org.iets3.analysis.base.solvable.mpl" folder="analysis.tests" />
       <modulePath path="$PROJECT_DIR$/languages/test.org.iets3.core.trace/test.org.iets3.core.trace.mpl" folder="trace" />
+      <modulePath path="$PROJECT_DIR$/languages/test.ts.expr.os.customization/test.ts.expr.os.customization.mpl" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/languages/test.ts.expr.os.nix/test.ts.expr.os.nix.mpl" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/languages/test.ts.expr.os.validNameConcept/test.ts.expr.os.validNameConcept.mpl" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/solutions/InterpreterTestExecutor/InterpreterTestExecutor.msd" folder="_build" />

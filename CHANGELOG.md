@@ -36,6 +36,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - Variability: The intention "Update all configurations" for feature models has been improved: Now a modal dialog with a progress bar and some additional information is shown. The process is now completely sequential, improving stability. Moreover, there is some timing output in the log. Finally, performance has been improved by postponing the event handling for all changes to the involved models.
+- Concepts with a main expression can now act as a visible elements provider. They forward the task to the expression if it implements `IVisibleElementsProviderSource`; otherwise, they call the parent provider instead.
 - Variability: The intention "Adapt to changes in feature model" and related quickfixes also have been improved similarly to the improvements on "Update all configurations".
 
 ### Fixed
