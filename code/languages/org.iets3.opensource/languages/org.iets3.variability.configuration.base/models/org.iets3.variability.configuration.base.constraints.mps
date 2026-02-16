@@ -317,7 +317,6 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="6SMbav4HPuv">
-    <property role="3GE5qa" value="configuration" />
     <ref role="1M2myG" to="4ndm:30ECcbtES_0" resolve="AbstractFeatureConfiguration" />
     <node concept="EnEH3" id="6SMbav4HPuw" role="1MhHOB">
       <ref role="EomxK" to="4ndm:59FNqAPCJNr" resolve="selectionState" />
@@ -516,7 +515,6 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4onczE6GcX5">
-    <property role="3GE5qa" value="configuration" />
     <ref role="1M2myG" to="4ndm:4onczE6iX0Q" resolve="ExtendedFeatureModelConfigurationRef" />
     <node concept="9S07l" id="4onczE6Rh_i" role="9Vyp8">
       <node concept="3clFbS" id="4onczE6Rh_j" role="2VODD2">
@@ -646,7 +644,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="30ECcbtMzT0">
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="attribute" />
     <ref role="1M2myG" to="4ndm:30ECcbtLqSm" resolve="FeatureAttributeAssignment" />
     <node concept="1N5Pfh" id="30ECcbtMzT1" role="1Mr941">
       <ref role="1N5Vy1" to="4ndm:30ECcbtMzQ8" resolve="attribute" />
@@ -768,7 +766,6 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5NPKd17BIS7">
-    <property role="3GE5qa" value="configuration" />
     <ref role="1M2myG" to="4ndm:5NPKd17BG$t" resolve="FeatureConfiguration" />
     <node concept="1N5Pfh" id="5NPKd17BISa" role="1Mr941">
       <ref role="1N5Vy1" to="4ndm:5NPKd17BG$u" resolve="targetFeature" />
@@ -1056,7 +1053,6 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5NPKd17BGAs">
-    <property role="3GE5qa" value="configuration" />
     <ref role="1M2myG" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="1N5Pfh" id="5NPKd17BGAt" role="1Mr941">
       <ref role="1N5Vy1" to="4ndm:5NPKd17BG$u" resolve="targetFeature" />
@@ -1444,7 +1440,6 @@
     </node>
   </node>
   <node concept="1M2fIO" id="27K8O1Mwei2">
-    <property role="3GE5qa" value="configuration" />
     <ref role="1M2myG" to="4ndm:2SOOyvZ_kQb" resolve="FeatureModelConfigurationBase" />
     <node concept="9S07l" id="27K8O1Mwei3" role="9Vyp8">
       <node concept="3clFbS" id="27K8O1Mwei4" role="2VODD2">
@@ -1487,7 +1482,6 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5NPKd17BKH9">
-    <property role="3GE5qa" value="configuration" />
     <ref role="1M2myG" to="4ndm:5NPKd17BIPE" resolve="FeatureModelConfigurationRef" />
     <node concept="1N5Pfh" id="5NPKd17BKHa" role="1Mr941">
       <ref role="1N5Vy1" to="4ndm:5NPKd17BIPF" resolve="config" />
@@ -1574,7 +1568,6 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5n0Aw5lRPzz">
-    <property role="3GE5qa" value="configuration" />
     <ref role="1M2myG" to="4ndm:5n0Aw5lQs_W" resolve="FeatureWithCardinalityConfiguration" />
     <node concept="1N5Pfh" id="5n0Aw5lRPz$" role="1Mr941">
       <ref role="1N5Vy1" to="4ndm:5NPKd17BG$u" resolve="targetFeature" />
@@ -1781,7 +1774,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7PHwTKCswsv">
-    <property role="3GE5qa" value="configuration.using" />
+    <property role="3GE5qa" value="using" />
     <ref role="1M2myG" to="4ndm:7PHwTKCpr4T" resolve="FMConfigActualParam" />
     <node concept="1N5Pfh" id="7PHwTKCswu8" role="1Mr941">
       <ref role="1N5Vy1" to="4ndm:7PHwTKCpEXQ" resolve="param" />

@@ -562,7 +562,7 @@
   </node>
   <node concept="1YbPZF" id="30ECcbtOvoV">
     <property role="TrG5h" value="typeof_FeatureAttributeAssignment" />
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="attribute" />
     <node concept="3clFbS" id="30ECcbtOvoW" role="18ibNy">
       <node concept="1ZobV4" id="30ECcbtOvp2" role="3cqZAp">
         <property role="3wDh2S" value="true" />
@@ -604,7 +604,6 @@
   </node>
   <node concept="18kY7G" id="2Kcps_lpic$">
     <property role="TrG5h" value="check_FeatureConfiguration" />
-    <property role="3GE5qa" value="configuration" />
     <node concept="2XrIbr" id="2Kcps_lxoxW" role="2p_Lja">
       <property role="TrG5h" value="with" />
       <node concept="17QB3L" id="2Kcps_lxpDV" role="3clF45" />
@@ -1383,7 +1382,6 @@
     </node>
   </node>
   <node concept="18kY7G" id="4u9Rq0kmn8k">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="check_FeatureModelConfiguration" />
     <node concept="3clFbS" id="4u9Rq0kmn8l" role="18ibNy">
       <node concept="3SKdUt" id="7WsNHxj36xN" role="3cqZAp">
@@ -2745,7 +2743,6 @@
     </node>
   </node>
   <node concept="18kY7G" id="49ZhMclUOKU">
-    <property role="3GE5qa" value="constraints" />
     <property role="TrG5h" value="checkFeatureModelConfigurationInitialSolverRun" />
     <node concept="3clFbS" id="49ZhMclUOKV" role="18ibNy">
       <node concept="3clFbJ" id="49ZhMclUOLc" role="3cqZAp">
@@ -2787,7 +2784,6 @@
     </node>
   </node>
   <node concept="18kY7G" id="4JH_WefdAE0">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="check_FeatureWithCardinalityConfiguration" />
     <node concept="3clFbS" id="4JH_WefdAE1" role="18ibNy">
       <node concept="2Mj0R9" id="IEflsfnHl0" role="3cqZAp">
@@ -3048,7 +3044,7 @@
     </node>
   </node>
   <node concept="312cEu" id="34IieWH5YM5">
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="util" />
     <property role="TrG5h" value="CheckFeatureModelConfigurationUtil" />
     <node concept="2tJIrI" id="34IieWH5Z4Z" role="jymVt" />
     <node concept="2YIFZL" id="34IieWHcp4E" role="jymVt">
@@ -3595,8 +3591,8 @@
     <node concept="3Tm1VV" id="34IieWH5YM6" role="1B3o_S" />
   </node>
   <node concept="Q5z_Y" id="1v5X_U3oKAJ">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="fix_AdaptToExtendedFMC" />
+    <property role="3GE5qa" value="adapt" />
     <node concept="Q5ZZ6" id="1v5X_U3oKAK" role="Q6x$H">
       <node concept="3clFbS" id="1v5X_U3oKAL" role="2VODD2">
         <node concept="3cpWs8" id="1v5X_U3oKFc" role="3cqZAp">
@@ -3636,7 +3632,6 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="5Bs7u1ZwUpC">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="fix_ApplyInheritance" />
     <node concept="Q5ZZ6" id="5Bs7u1ZwUpD" role="Q6x$H">
       <node concept="3clFbS" id="5Bs7u1ZwUpE" role="2VODD2">
@@ -3722,7 +3717,6 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="39DASUy610a">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="fix_RemoveConflictingInheritance" />
     <node concept="Q5ZZ6" id="39DASUy610b" role="Q6x$H">
       <node concept="3clFbS" id="39DASUy610c" role="2VODD2">
@@ -3809,7 +3803,6 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="4lyl69nFqBj">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="fix_MakeConfigAbstract" />
     <node concept="Q6JDH" id="4lyl69nFr3h" role="Q6Id_">
       <property role="TrG5h" value="fmc" />
@@ -3849,8 +3842,8 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="4lyl69lGPZn">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="fix_AdaptToChangesInFM" />
+    <property role="3GE5qa" value="adapt" />
     <node concept="Q6JDH" id="4lyl69lGS7c" role="Q6Id_">
       <property role="TrG5h" value="fmc" />
       <node concept="3Tqbb2" id="4lyl69lGS_b" role="Q6QK4">
@@ -3953,7 +3946,7 @@
   </node>
   <node concept="18kY7G" id="7WsNHxjspj8">
     <property role="TrG5h" value="check_InlineFeatureConfigurationContent" />
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="content" />
     <node concept="3clFbS" id="7WsNHxjspj9" role="18ibNy">
       <node concept="3SKdUt" id="61z6J8WAjR1" role="3cqZAp">
         <node concept="1PaTwC" id="61z6J8WAjR2" role="1aUNEU">
@@ -4572,7 +4565,6 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="7WsNHxj$1Q_">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="fix_InvalidReferenceToFeature" />
     <node concept="Q6JDH" id="7WsNHxj$2hX" role="Q6Id_">
       <property role="TrG5h" value="fc" />
@@ -4637,7 +4629,7 @@
     </node>
   </node>
   <node concept="312cEu" id="5BtXES5Yn7j">
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="util" />
     <property role="TrG5h" value="ConfigUpdateQuickfixHelper" />
     <node concept="3Tm1VV" id="5BtXES5Yn7k" role="1B3o_S" />
     <node concept="2tJIrI" id="5BtXES5YoLA" role="jymVt" />
