@@ -5,11 +5,38 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## February 2026
+
+### Changed
+
+- Variability: The performance of opening big variant configurations in editor has been improved (by switching off editor hints which are not needed).
+- Variability: The class hierarchy implementing `IRenamer` has been improved and documented. This interface is being used for tailoring the renaming behavior of the variability filtering algorithms.
+- Variability: Remove deprecated concepts `FeatureModelConfiguration_old`, and all related concepts. These concepts have been introduced when one proto-language for variability has been split into two languages, one for feature models and one for configurations. This happened end of 2024, and the deprecation window is now closing.
+- Variability: The variability.os plugin no longer depends on the potentially slow tracing language.
+
+### Fixed
+- Add missing deps. to SBOM
+- Add missing dependencies to build scripts
+
+
+## January 2026
+
+### Fixed
+
+- Physical units:
+  - The units `Joule`, `Coulomb` and `Watt` can now have also prefixes with negative metric scaling, e.g., `mW` (Milliwatt). Additionally, some typos have been corrected in the physical units documentation.
+  - The precision of number types with prefixed units (e.g. `mW` or `km`) was always set to `infinite` by the typesystem. Now, the precision is as precise as possible.
+- Variability: Viewer for skeleton trees has been improved (better error reporting, more stable, does not break on nodes which are string literals).
+- ShortLambda Interpreter: Fixed a bug which resulted in a `RuntimeErrorType` when interpreting ShortLambdas.
+- InterpreterCoverageAssResult: fix unique ID calculation ([#1617](https://github.com/IETS3/iets3.opensource/issues/1617))
+
+
 ## December 2025
 
 ### Added
 
 - Variability: The intention "Update all configurations" for feature models has been improved: Now a modal dialog with a progress bar and some additional information is shown. The process is now completely sequential, improving stability. Moreover, there is some timing output in the log. Finally, performance has been improved by postponing the event handling for all changes to the involved models.
+- Variability: The intention "Adapt to changes in feature model" and related quickfixes also have been improved similarly to the improvements on "Update all configurations".
 
 ### Fixed
 
@@ -19,6 +46,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Variability: Remove deprecated concepts `VariabilityModelChunk_old`, and some related concepts.
 - Typesystem: All usages of colon casts were transformed to the 'as' cast for null safety. From now on no colon casts are allowed in the typesystem, also read this issue for more info: https://github.com/IETS3/iets3.opensource/issues/688
+- Variability: The grouping of root constraints has been improved. New root constraints will be added next to the other constraints in the respective groups. This helps to avoid merge conflicts.
+
 
 ## November 2025
 

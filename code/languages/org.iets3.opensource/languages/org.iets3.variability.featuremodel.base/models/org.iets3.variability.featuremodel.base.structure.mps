@@ -16,7 +16,6 @@
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="s8pm" ref="r:1a263161-b47f-4c8c-8169-e2033bd674f4(com.mbeddr.mpsutil.editor.displayControl.structure)" />
     <import index="rmn3" ref="r:2f587aa6-2d3f-4726-9564-7648183caf97(org.iets3.variability.base.structure)" />
-    <import index="4ndm" ref="r:a9fe59d7-0b4f-42b0-925a-71cc04f93df1(org.iets3.variability.configuration.base.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -29,12 +28,6 @@
       </concept>
       <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
         <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
-      </concept>
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118933224" name="comment" index="YLQ7P" />
-      </concept>
-      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
-        <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
@@ -448,266 +441,6 @@
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5NPKd17BG$l">
-    <property role="TrG5h" value="FeatureModelConfiguration_old" />
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="EcuMT" value="6698472021570799893" />
-    <ref role="1TJDcQ" node="30ECcbtES_0" resolve="AbstractFeatureConfiguration_old" />
-    <node concept="1TJgyi" id="49ZhMclDeUT" role="1TKVEl">
-      <property role="IQ2nx" value="4791626744558055097" />
-      <property role="TrG5h" value="complete_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="t5JxF" id="1AaEcRbB7A_" role="lGtFl">
-        <property role="t5JxN" value="if complete==false, solver execution should be delayed" />
-      </node>
-      <node concept="asaX9" id="367j$Y_CgdL" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureModelConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="49ZhMclUOKO" role="1TKVEl">
-      <property role="IQ2nx" value="4791626744562666548" />
-      <property role="TrG5h" value="initiallyChecked_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="t5JxF" id="1AaEcRbB7U3" role="lGtFl">
-        <property role="t5JxN" value="if initiallyChecked==false, a checking rule will trigger an initial solver run" />
-      </node>
-      <node concept="asaX9" id="367j$Y_CgdW" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureModelConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="4u9Rq0jBqcN" role="1TKVEl">
-      <property role="IQ2nx" value="5154894928095847219" />
-      <property role="TrG5h" value="hasSolverError_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="367j$Y_Cge7" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureModelConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="5UDdUfokBLv" role="1TKVEl">
-      <property role="IQ2nx" value="6821044287477808223" />
-      <property role="TrG5h" value="solverErrorMessage_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="367j$Y_Cgei" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureModelConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="4onczE5U5c$" role="1TKVEl">
-      <property role="IQ2nx" value="5050560734055387940" />
-      <property role="TrG5h" value="abstract_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="367j$Y_Cget" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureModelConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="PrWs8" id="5NPKd17BG$m" role="PzmwI">
-      <ref role="PrY4T" to="rmn3:3tsFshP5cTx" resolve="IVariabilityContent" />
-    </node>
-    <node concept="PrWs8" id="5NPKd17BIQd" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="TDZ7EeLETZ" role="PzmwI">
-      <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
-    </node>
-    <node concept="PrWs8" id="4BLItTF6OEB" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
-    </node>
-    <node concept="PrWs8" id="2XyYtG$zee3" role="PzmwI">
-      <ref role="PrY4T" node="2XyYtG$zcL$" resolve="ICalculateHashForUpdateWarning" />
-    </node>
-    <node concept="1TJgyi" id="2XyYtG$JrZf" role="1TKVEl">
-      <property role="IQ2nx" value="3414566187109826511" />
-      <property role="TrG5h" value="__adaptHash_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-      <node concept="asaX9" id="367j$Y_CgeC" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureModelConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="4onczE6iX1P" role="1TKVEi">
-      <property role="IQ2ns" value="5050560734061908085" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="extendedFMC_old" />
-      <ref role="20lvS9" node="4onczE6iX0Q" resolve="ExtendedFeatureModelConfigurationRef_old" />
-      <node concept="asaX9" id="367j$Y_Cgfk" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureModelConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="7PHwTKCpruB" role="1TKVEi">
-      <property role="IQ2ns" value="9038024733918345127" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="usedConfigs_old" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7PHwTKCpr4T" resolve="FMConfigActualParam_old" />
-      <node concept="asaX9" id="367j$Y_Cgfv" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureModelConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="367j$Y_CgbW" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5NPKd17BG$t">
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="FeatureConfiguration_old" />
-    <property role="EcuMT" value="6698472021570799901" />
-    <ref role="1TJDcQ" node="30ECcbtES_0" resolve="AbstractFeatureConfiguration_old" />
-    <node concept="PrWs8" id="1jdy6z9UhdI" role="PzmwI">
-      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
-    </node>
-    <node concept="asaX9" id="367j$Y_Cgb$" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5NPKd17BG_g">
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="AbstractFeatureConfigurationContent_old" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="6698472021570799952" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="asaX9" id="367j$Y_Cgb0" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5NPKd17BIPE">
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="FeatureModelConfigurationRef_old" />
-    <property role="EcuMT" value="6698472021570809194" />
-    <ref role="1TJDcQ" node="5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent_old" />
-    <node concept="1TJgyj" id="5NPKd17BIPF" role="1TKVEi">
-      <property role="20kJfa" value="config_old" />
-      <property role="IQ2ns" value="6698472021570809195" />
-      <ref role="20lvS9" node="5NPKd17BG$l" resolve="FeatureModelConfiguration_old" />
-      <node concept="asaX9" id="367j$Y_Cggx" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureModelConfigurationRef&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="367j$Y_Cgck" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5NPKd17BOJW">
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="InlineFeatureConfigurationContent_old" />
-    <property role="34LRSv" value="inline configuration" />
-    <property role="EcuMT" value="6698472021570833404" />
-    <ref role="1TJDcQ" node="5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent_old" />
-    <node concept="1TJgyj" id="30ECcbtLqSj" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="attributeAssignments_old" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="IQ2ns" value="3470763221647207955" />
-      <ref role="20lvS9" node="30ECcbtLqSm" resolve="FeatureAttributeAssignment_old" />
-      <node concept="asaX9" id="367j$Y_CgfE" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.InlineFeatureConfigurationContent&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="5NPKd17BG$q" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="subfeatureConfigurations_old" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="IQ2ns" value="6698472021570799898" />
-      <ref role="20lvS9" node="5NPKd17BG$t" resolve="FeatureConfiguration_old" />
-      <node concept="asaX9" id="367j$Y_CgfP" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.InlineFeatureConfigurationContent&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="367j$Y_Cgd4" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="30ECcbtES_0">
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="AbstractFeatureConfiguration_old" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="3470763221645494592" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="59FNqAPCJNr" role="1TKVEl">
-      <property role="TrG5h" value="selectionState_old" />
-      <property role="IQ2nx" value="6751014741090830985" />
-      <ref role="AX2Wp" node="59FNqAPCJGh" resolve="FeatureSelectionState" />
-      <node concept="asaX9" id="367j$Y_Cgdg" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="5NPKd17BOJ8" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="content_old" />
-      <property role="IQ2ns" value="6698472021570833352" />
-      <ref role="20lvS9" node="5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent_old" />
-      <node concept="asaX9" id="367j$Y_CgeN" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="2PSWwRwwcy7" role="1TKVEi">
-      <property role="IQ2ns" value="3276634870327068807" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="doc_old" />
-      <ref role="20lvS9" to="vs0r:7gVrg_0tw6m" resolve="TextBlock" />
-      <node concept="asaX9" id="367j$Y_CgeY" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="5NPKd17BG$u" role="1TKVEi">
-      <property role="20kJfa" value="targetFeature_old" />
-      <property role="IQ2ns" value="6698472021570799902" />
-      <ref role="20lvS9" node="3tsFshP5M5B" resolve="FeatureTreeNode" />
-      <node concept="asaX9" id="367j$Y_Cgg0" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration&quot;" />
-      </node>
-    </node>
-    <node concept="PrWs8" id="30ECcbtSX6R" role="PzmwI">
-      <ref role="PrY4T" node="30ECcbtSVLM" resolve="IFeatureContext" />
-    </node>
-    <node concept="PrWs8" id="NxDckGxF6k" role="PzmwI">
-      <ref role="PrY4T" to="s8pm:54QlSGoaifp" resolve="ICanHide" />
-    </node>
-    <node concept="asaX9" id="367j$Y_CgaM" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="30ECcbtLqSm">
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="FeatureAttributeAssignment_old" />
-    <property role="EcuMT" value="3470763221647207958" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="30ECcbtMzQ8" role="1TKVEi">
-      <property role="20kJfa" value="attribute_old" />
-      <property role="IQ2ns" value="3470763221647506824" />
-      <ref role="20lvS9" node="3rysoRw6DnZ" resolve="AbstractFeatureAttribute" />
-      <node concept="asaX9" id="367j$Y_Cggm" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureAttributeAssignment&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="30ECcbtOuaE" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="value_old" />
-      <property role="IQ2ns" value="3470763221648007850" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
-      <node concept="asaX9" id="367j$Y_Cgf9" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureAttributeAssignment&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="67408HOjGME" role="1TKVEl">
-      <property role="IQ2nx" value="7044756316066073770" />
-      <property role="TrG5h" value="inherited_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="367j$Y_Cgdr" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureAttributeAssignment&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="zJQZm7Q2Fm" role="1TKVEl">
-      <property role="IQ2nx" value="643975119329831638" />
-      <property role="TrG5h" value="assignmentCause_old" />
-      <ref role="AX2Wp" to="4ndm:zJQZm6SRYQ" resolve="AssignmentCause" />
-      <node concept="asaX9" id="367j$Y_CgdA" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.variability.configuration.base.structure.FeatureAttributeAssignment&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="367j$Y_Cgbo" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="11FGucFto3v">
     <property role="TrG5h" value="AbstractFeatureExpression" />
     <property role="R5$K7" value="true" />
@@ -718,15 +451,6 @@
   <node concept="PlHQZ" id="30ECcbtSVLM">
     <property role="TrG5h" value="IFeatureContext" />
     <property role="EcuMT" value="3470763221649177714" />
-  </node>
-  <node concept="1TIwiD" id="5n0Aw5lQs_W">
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="FeatureWithCardinalityConfiguration_old" />
-    <property role="EcuMT" value="6179108019278301564" />
-    <ref role="1TJDcQ" node="5NPKd17BG$t" resolve="FeatureConfiguration_old" />
-    <node concept="asaX9" id="367j$Y_Cgcw" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
   </node>
   <node concept="25R3W" id="59FNqAPCJGc">
     <property role="TrG5h" value="SubFeatureRelationship" />
@@ -803,38 +527,6 @@
     </node>
     <node concept="PrWs8" id="rA91O_UhGL" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="39DASUxVhgV">
-    <property role="EcuMT" value="3632605611355345979" />
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="FMCInheritanceCheck_old" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="39DASUxVhgW" role="lGtFl">
-      <property role="Hh88m" value="inheritanceUnapplied" />
-      <node concept="trNpa" id="39DASUxVhgY" role="EQaZv">
-        <ref role="trN6q" node="5NPKd17BG$l" resolve="FeatureModelConfiguration_old" />
-      </node>
-    </node>
-    <node concept="asaX9" id="367j$Y_CgcG" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4onczE6iX0Q">
-    <property role="EcuMT" value="5050560734061908022" />
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="ExtendedFeatureModelConfigurationRef_old" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4onczE6iX19" role="1TKVEi">
-      <property role="IQ2ns" value="5050560734061908041" />
-      <property role="20kJfa" value="config_old" />
-      <ref role="20lvS9" node="5NPKd17BG$l" resolve="FeatureModelConfiguration_old" />
-      <node concept="asaX9" id="367j$Y_Cggb" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.ExtendedFeatureModelConfigurationRef&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="367j$Y_Cgbc" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="2XyYtG$zcL$">
@@ -1033,15 +725,6 @@
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3iESnNmh2nr">
-    <property role="EcuMT" value="3795093562300048859" />
-    <property role="TrG5h" value="FeatureConfigurationErrorContent_old" />
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <ref role="1TJDcQ" node="5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent_old" />
-    <node concept="asaX9" id="367j$Y_CgbK" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7PHwTKCLnAQ">
     <property role="EcuMT" value="9038024733924620726" />
     <property role="3GE5qa" value="using" />
@@ -1081,31 +764,6 @@
       <property role="20kJfa" value="param" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6GQuM3OG8sl" resolve="FMParam" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7PHwTKCpr4T">
-    <property role="EcuMT" value="9038024733918343481" />
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="FMConfigActualParam_old" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7PHwTKCpEXQ" role="1TKVEi">
-      <property role="IQ2ns" value="9038024733918408566" />
-      <property role="20kJfa" value="param_old" />
-      <ref role="20lvS9" node="6GQuM3OG8sl" resolve="FMParam" />
-      <node concept="asaX9" id="367j$Y_CggG" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.FMConfigActualParam&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="7PHwTKCpF7e" role="1TKVEi">
-      <property role="IQ2ns" value="9038024733918409166" />
-      <property role="20kJfa" value="config_old" />
-      <ref role="20lvS9" node="5NPKd17BG$l" resolve="FeatureModelConfiguration_old" />
-      <node concept="asaX9" id="367j$Y_CggR" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.variability.configuration.base.structure.FMConfigActualParam&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="367j$Y_CgcS" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6GQuM3OG8sl">
@@ -1185,19 +843,10 @@
     <property role="3GE5qa" value="using" />
     <property role="TrG5h" value="IUsingParamContext" />
   </node>
-  <node concept="1TIwiD" id="2SOOyvZ_kQb">
-    <property role="EcuMT" value="3329517093767171467" />
-    <property role="3GE5qa" value="_deprecated.configuration" />
-    <property role="TrG5h" value="FeatureModelConfigurationBase_old" />
-    <ref role="1TJDcQ" node="5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent_old" />
-    <node concept="asaX9" id="367j$Y_Cgc8" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.variability.configuration.base&quot;" />
-    </node>
-  </node>
   <node concept="25R3W" id="59FNqAPCJGh">
     <property role="TrG5h" value="FeatureSelectionState" />
-    <property role="3GE5qa" value="_deprecated.configuration" />
     <property role="3F6X1D" value="6751014741090830963" />
+    <property role="3GE5qa" value="configuration" />
     <ref role="1H5jkz" node="59FNqAPCJGj" resolve="untouched" />
     <node concept="25R33" id="59FNqAPCJGj" role="25R1y">
       <property role="TrG5h" value="untouched" />

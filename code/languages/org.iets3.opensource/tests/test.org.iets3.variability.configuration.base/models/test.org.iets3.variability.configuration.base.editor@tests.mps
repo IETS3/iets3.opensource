@@ -40,9 +40,12 @@
         <child id="1229187755283" name="code" index="LjaKd" />
       </concept>
       <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
+        <property id="6268941039745498163" name="selectionStart" index="p6zMq" />
+        <property id="6268941039745498165" name="selectionEnd" index="p6zMs" />
         <property id="1977980803835239937" name="isInInspector" index="2ElMOe" />
-        <property id="1229194968596" name="caretPosition" index="LIFWa" />
         <property id="1229194968595" name="cellId" index="LIFWd" />
+        <property id="1932269937152561478" name="useLabelSelection" index="OXtK3" />
+        <property id="1229432188737" name="isLastPosition" index="ZRATv" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
@@ -2687,10 +2690,13 @@
               <property role="2fdZ4z" value="zJQZm6SRYV/proposed" />
               <ref role="3HS9Pa" node="JqIDVUmmTr" resolve="b" />
               <node concept="2vmpn$" id="6iLh$uBJljx" role="3HYO9C" />
-              <node concept="LIFWc" id="1hEQIDysUNN" role="lGtFl">
+              <node concept="LIFWc" id="7h2Ymr9nuWG" role="lGtFl">
                 <property role="2ElMOe" value="true" />
-                <property role="LIFWa" value="0" />
-                <property role="LIFWd" value="Collection_22ms3g_a" />
+                <property role="ZRATv" value="true" />
+                <property role="OXtK3" value="true" />
+                <property role="p6zMq" value="1" />
+                <property role="p6zMs" value="1" />
+                <property role="LIFWd" value="Constant_232o28_f0" />
               </node>
             </node>
           </node>
