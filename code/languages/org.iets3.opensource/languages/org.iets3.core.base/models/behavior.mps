@@ -28,6 +28,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
@@ -46,6 +47,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="1703835097132541506" name="jetbrains.mps.lang.behavior.structure.ThisConceptExpression" flags="ng" index="1fM9EW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -1971,9 +1973,30 @@
       <node concept="3Tm1VV" id="5YygIlbih$n" role="1B3o_S" />
       <node concept="10P_77" id="5YygIlbih$o" role="3clF45" />
       <node concept="3clFbS" id="5YygIlbih$p" role="3clF47">
+        <node concept="3SKdUt" id="23IW$dI1zHN" role="3cqZAp">
+          <node concept="1PaTwC" id="23IW$dI1zHO" role="1aUNEU">
+            <node concept="3oM_SD" id="23IW$dI1zHP" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
+            <node concept="3oM_SD" id="23IW$dI1zWV" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="23IW$dI1zWX" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="23IW$dI1zXe" role="1PaTwD">
+              <property role="3oM_SC" value="via" />
+            </node>
+            <node concept="3oM_SD" id="23IW$dI1zXL" role="1PaTwD">
+              <property role="3oM_SC" value="EP" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5YygIlbih$q" role="3cqZAp">
-          <node concept="3clFbT" id="5YygIlbih$r" role="3clFbG">
-            <property role="3clFbU" value="false" />
+          <node concept="2YIFZM" id="12O03AaX9x$" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="12O03AaX9x_" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -1985,9 +2008,30 @@
       <node concept="3Tm1VV" id="4ZH31cjGRao" role="1B3o_S" />
       <node concept="10P_77" id="4ZH31cjGRap" role="3clF45" />
       <node concept="3clFbS" id="4ZH31cjGRaq" role="3clF47">
-        <node concept="3clFbF" id="4ZH31cjGRar" role="3cqZAp">
-          <node concept="3clFbT" id="4ZH31cjGRas" role="3clFbG">
-            <property role="3clFbU" value="false" />
+        <node concept="3SKdUt" id="23IW$dI1zYj" role="3cqZAp">
+          <node concept="1PaTwC" id="23IW$dI1zYk" role="1aUNEU">
+            <node concept="3oM_SD" id="23IW$dI1zYl" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
+            <node concept="3oM_SD" id="23IW$dI1zYm" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="23IW$dI1zYn" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="23IW$dI1zYo" role="1PaTwD">
+              <property role="3oM_SC" value="via" />
+            </node>
+            <node concept="3oM_SD" id="23IW$dI1zYp" role="1PaTwD">
+              <property role="3oM_SC" value="EP" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="12O03AaX9FY" role="3cqZAp">
+          <node concept="2YIFZM" id="12O03AaX9Io" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="12O03AaX9Ip" role="37wK5m" />
           </node>
         </node>
       </node>
