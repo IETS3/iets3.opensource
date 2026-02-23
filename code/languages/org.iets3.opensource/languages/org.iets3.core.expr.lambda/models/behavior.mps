@@ -51,7 +51,6 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
-      <concept id="1703835097132541506" name="jetbrains.mps.lang.behavior.structure.ThisConceptExpression" flags="ng" index="1fM9EW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -2229,11 +2228,11 @@
       </node>
     </node>
     <node concept="13i0hz" id="5YygIlbiooz" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
+      <property role="TrG5h" value="overrideDefaultUmlaute" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
       <node concept="3Tm1VV" id="5YygIlbioo$" role="1B3o_S" />
       <node concept="3clFbS" id="5YygIlbiooD" role="3clF47">
         <node concept="3clFbF" id="5YygIlbip3J" role="3cqZAp">
@@ -2242,23 +2241,7 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="5YygIlbiooE" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="4r88gPsoHzt" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
-      <node concept="3Tm1VV" id="4r88gPsoHzu" role="1B3o_S" />
-      <node concept="3clFbS" id="4r88gPsoHzz" role="3clF47">
-        <node concept="3clFbF" id="4r88gPsoLhM" role="3cqZAp">
-          <node concept="2YIFZM" id="4r88gPsoLMC" role="3clFbG">
-            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
-            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
-            <node concept="1fM9EW" id="4r88gPsoSyO" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="4r88gPsoHz$" role="3clF45" />
+      <node concept="10P_77" id="5D8v3P4lPDm" role="3clF45" />
     </node>
     <node concept="13i0hz" id="5DizcGO7WH7" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -4280,11 +4263,11 @@
       </node>
     </node>
     <node concept="13i0hz" id="5YygIlbjlOQ" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
+      <property role="TrG5h" value="overrideDefaultAllowUmlaute" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
       <node concept="3Tm1VV" id="5YygIlbjlOR" role="1B3o_S" />
       <node concept="3clFbS" id="5YygIlbjlOW" role="3clF47">
         <node concept="3clFbF" id="5YygIlbj_78" role="3cqZAp">
@@ -4293,7 +4276,7 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="5YygIlbjlOX" role="3clF45" />
+      <node concept="10P_77" id="5D8v3P4lZmP" role="3clF45" />
     </node>
     <node concept="13i0hz" id="44yGPKl7ZVk" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -4478,11 +4461,11 @@
       </node>
     </node>
     <node concept="13i0hz" id="5YygIlbjTZR" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
+      <property role="TrG5h" value="overrideDefaultUmlaute" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
       <node concept="3Tm1VV" id="5YygIlbjTZS" role="1B3o_S" />
       <node concept="3clFbS" id="5YygIlbjTZT" role="3clF47">
         <node concept="3clFbF" id="5YygIlbjTZU" role="3cqZAp">
@@ -4491,7 +4474,7 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="5YygIlbjTZW" role="3clF45" />
+      <node concept="10P_77" id="5D8v3P4lLNj" role="3clF45" />
     </node>
     <node concept="13hLZK" id="$yb$20nbQQ" role="13h7CW">
       <node concept="3clFbS" id="$yb$20nbQR" role="2VODD2" />
@@ -6081,11 +6064,11 @@
       <node concept="17QB3L" id="1VmWkC0HIbW" role="3clF45" />
     </node>
     <node concept="13i0hz" id="5YygIlbjRa3" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
+      <property role="TrG5h" value="overrideDefaultUmlaute" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
       <node concept="3Tm1VV" id="5YygIlbjRa4" role="1B3o_S" />
       <node concept="3clFbS" id="5YygIlbjRa5" role="3clF47">
         <node concept="3clFbF" id="5YygIlbjRa6" role="3cqZAp">
@@ -6094,7 +6077,7 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="5YygIlbjRa8" role="3clF45" />
+      <node concept="10P_77" id="5D8v3P4lTw7" role="3clF45" />
     </node>
     <node concept="13i0hz" id="44yGPKl84yR" role="13h7CS">
       <property role="13i0iv" value="false" />

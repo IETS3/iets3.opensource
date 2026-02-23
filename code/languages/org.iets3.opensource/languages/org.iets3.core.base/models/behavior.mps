@@ -28,6 +28,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
@@ -46,6 +47,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="1703835097132541506" name="jetbrains.mps.lang.behavior.structure.ThisConceptExpression" flags="ng" index="1fM9EW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -263,7 +265,15 @@
       <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
         <child id="2667874559098216723" name="text" index="3HnX3l" />
       </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC" />
+      <concept id="2217234381367190443" name="jetbrains.mps.baseLanguage.javadoc.structure.SeeBlockDocTag" flags="ng" index="VUp57">
+        <child id="2217234381367190458" name="reference" index="VUp5m" />
+      </concept>
+      <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
+        <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -437,11 +447,11 @@
       <node concept="17QB3L" id="3bpF72PGcss" role="3clF45" />
     </node>
     <node concept="13i0hz" id="5YygIlbjlOQ" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
+      <property role="TrG5h" value="overrideDefaultAllowUmlaute" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="5YygIlbih$m" resolve="allowUmlaute" />
+      <ref role="13i0hy" node="5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
       <node concept="3Tm1VV" id="5YygIlbjlOR" role="1B3o_S" />
       <node concept="3clFbS" id="5YygIlbjlOW" role="3clF47">
         <node concept="3clFbF" id="5YygIlbj_78" role="3cqZAp">
@@ -450,7 +460,7 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="5YygIlbjlOX" role="3clF45" />
+      <node concept="10P_77" id="5D8v3P4mOSL" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="1YPoVR7Fay9">
@@ -1964,6 +1974,44 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5D8v3P4jYKp" role="13h7CS">
+      <property role="TrG5h" value="overrideDefaultAllowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="5D8v3P4jYKq" role="1B3o_S" />
+      <node concept="10P_77" id="5D8v3P4jZui" role="3clF45" />
+      <node concept="3clFbS" id="5D8v3P4jYKs" role="3clF47">
+        <node concept="3clFbF" id="5D8v3P4lDi6" role="3cqZAp">
+          <node concept="3clFbT" id="5D8v3P4lDi5" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5D8v3P4lqOn" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="overrideDefaultAllowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="5D8v3P4lqOo" role="1B3o_S" />
+      <node concept="10P_77" id="5D8v3P4lqOp" role="3clF45" />
+      <node concept="3clFbS" id="5D8v3P4lqOq" role="3clF47">
+        <node concept="3clFbF" id="5D8v3P4lDYJ" role="3cqZAp">
+          <node concept="3clFbT" id="5D8v3P4lDYI" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5TO$xcFx5xN" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="2Ki8OM" value="true" />
+      <property role="TrG5h" value="overrideDefaultAllowApostrophe" />
+      <node concept="3Tm1VV" id="5TO$xcFx5xO" role="1B3o_S" />
+      <node concept="10P_77" id="5TO$xcFx6vb" role="3clF45" />
+      <node concept="3clFbS" id="5TO$xcFx5xQ" role="3clF47">
+        <node concept="3clFbF" id="5TO$xcFx6PA" role="3cqZAp">
+          <node concept="3clFbT" id="5TO$xcFx6P_" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="5YygIlbih$m" role="13h7CS">
       <property role="TrG5h" value="allowUmlaute" />
       <property role="2Ki8OM" value="true" />
@@ -1972,9 +2020,35 @@
       <node concept="10P_77" id="5YygIlbih$o" role="3clF45" />
       <node concept="3clFbS" id="5YygIlbih$p" role="3clF47">
         <node concept="3clFbF" id="5YygIlbih$q" role="3cqZAp">
-          <node concept="3clFbT" id="5YygIlbih$r" role="3clFbG">
-            <property role="3clFbU" value="false" />
+          <node concept="2YIFZM" id="5D8v3P4mxD_" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:5D8v3P4mpc9" resolve="allowUmlautsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="5D8v3P4mxDA" role="37wK5m" />
+            <node concept="BsUDl" id="5D8v3P4mxDB" role="37wK5m">
+              <ref role="37wK5l" node="5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
+            </node>
           </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5TO$xcFuMsw" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~ApiStatus$NonExtendable" resolve="ApiStatus.NonExtendable" />
+      </node>
+      <node concept="2AHcQZ" id="5TO$xcFvicZ" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~ApiStatus$Internal" resolve="ApiStatus.Internal" />
+      </node>
+      <node concept="P$JXv" id="5TO$xcFuNUc" role="lGtFl">
+        <node concept="TZ5HA" id="5TO$xcFuNUd" role="TZ5H$">
+          <node concept="1dT_AC" id="5TO$xcFuNUe" role="1dT_Ay">
+            <property role="1dT_AB" value="Scheduled to be closed API. Use overrideDefaultAllowUmlaute() instead " />
+          </node>
+        </node>
+        <node concept="VUp57" id="4y0DErjELny" role="3nqlJM">
+          <node concept="VXe0Z" id="4y0DErjEMAo" role="VUp5m">
+            <ref role="VXe0S" node="5YygIlbjlOQ" resolve="overrideDefaultAllowUmlaute" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2VdPjasmnlP" role="3nqlJM">
+          <property role="x79VB" value="false by default via EP" />
         </node>
       </node>
     </node>
@@ -1985,10 +2059,36 @@
       <node concept="3Tm1VV" id="4ZH31cjGRao" role="1B3o_S" />
       <node concept="10P_77" id="4ZH31cjGRap" role="3clF45" />
       <node concept="3clFbS" id="4ZH31cjGRaq" role="3clF47">
-        <node concept="3clFbF" id="4ZH31cjGRar" role="3cqZAp">
-          <node concept="3clFbT" id="4ZH31cjGRas" role="3clFbG">
-            <property role="3clFbU" value="false" />
+        <node concept="3clFbF" id="12O03AaX9FY" role="3cqZAp">
+          <node concept="2YIFZM" id="5D8v3P4mypF" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:5D8v3P4msDO" resolve="allowParagraphsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="5D8v3P4mypG" role="37wK5m" />
+            <node concept="BsUDl" id="5D8v3P4mypH" role="37wK5m">
+              <ref role="37wK5l" node="5D8v3P4lqOn" resolve="overrideDefaultAllowParagraph" />
+            </node>
           </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5TO$xcFuPJA" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~ApiStatus$NonExtendable" resolve="ApiStatus.NonExtendable" />
+      </node>
+      <node concept="2AHcQZ" id="5TO$xcFvgU1" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~ApiStatus$Internal" resolve="ApiStatus.Internal" />
+      </node>
+      <node concept="P$JXv" id="5TO$xcFuQYd" role="lGtFl">
+        <node concept="TZ5HA" id="5TO$xcFuQYe" role="TZ5H$">
+          <node concept="1dT_AC" id="5TO$xcFuQYf" role="1dT_Ay">
+            <property role="1dT_AB" value="Scheduled to be closed API. Use overrideDefaultAllowUmlaute() instead" />
+          </node>
+        </node>
+        <node concept="VUp57" id="4y0DErjENqR" role="3nqlJM">
+          <node concept="VXe0Z" id="4y0DErjENqT" role="VUp5m">
+            <ref role="VXe0S" node="5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2VdPjasmp45" role="3nqlJM">
+          <property role="x79VB" value="false by default via EP" />
         </node>
       </node>
     </node>
@@ -1999,10 +2099,36 @@
       <node concept="3Tm1VV" id="6OMpQn6QxQf" role="1B3o_S" />
       <node concept="10P_77" id="6OMpQn6QxQg" role="3clF45" />
       <node concept="3clFbS" id="6OMpQn6QxQh" role="3clF47">
-        <node concept="3clFbF" id="6OMpQn6QxQi" role="3cqZAp">
-          <node concept="3clFbT" id="6OMpQn6QxQj" role="3clFbG">
-            <property role="3clFbU" value="true" />
+        <node concept="3clFbF" id="5TO$xcFwXW6" role="3cqZAp">
+          <node concept="2YIFZM" id="5TO$xcFwZ1P" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:5TO$xcFwe4n" resolve="allowApostropheInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="5TO$xcFwZ1Q" role="37wK5m" />
+            <node concept="BsUDl" id="5TO$xcFwZ1R" role="37wK5m">
+              <ref role="37wK5l" node="5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
+            </node>
           </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5TO$xcFx8mB" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~ApiStatus$Internal" resolve="ApiStatus.Internal" />
+      </node>
+      <node concept="2AHcQZ" id="5TO$xcFx95M" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~ApiStatus$NonExtendable" resolve="ApiStatus.NonExtendable" />
+      </node>
+      <node concept="P$JXv" id="5TO$xcFx9SI" role="lGtFl">
+        <node concept="TZ5HA" id="5TO$xcFx9SJ" role="TZ5H$">
+          <node concept="1dT_AC" id="5TO$xcFx9SK" role="1dT_Ay">
+            <property role="1dT_AB" value="Scheduled to be closed API. Use overrideDefaultAllowApostrophe() instead" />
+          </node>
+        </node>
+        <node concept="VUp57" id="4y0DErjENqW" role="3nqlJM">
+          <node concept="VXe0Z" id="4y0DErjENqY" role="VUp5m">
+            <ref role="VXe0S" node="5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2VdPjasmtmG" role="3nqlJM">
+          <property role="x79VB" value="true by default via EP" />
         </node>
       </node>
     </node>
