@@ -13,6 +13,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Variability: The class hierarchy implementing `IRenamer` has been improved and documented. This interface is being used for tailoring the renaming behavior of the variability filtering algorithms.
 - Variability: Remove deprecated concepts `FeatureModelConfiguration_old`, and all related concepts. These concepts have been introduced when one proto-language for variability has been split into two languages, one for feature models and one for configurations. This happened end of 2024, and the deprecation window is now closing.
 - Variability: The variability.os plugin no longer depends on the potentially slow tracing language.
+- The physical units language `org.iets3.core.expr.typetags.physunits` has been refactored internally (logic has not been changed). 
 
 ### Fixed
 - Add missing deps. to SBOM
