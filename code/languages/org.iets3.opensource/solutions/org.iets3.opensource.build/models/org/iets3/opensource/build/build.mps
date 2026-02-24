@@ -9370,6 +9370,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5D8v3P3Iwp$" role="3bR37C">
+          <node concept="3bR9La" id="5D8v3P3Iwp_" role="1SiIV1">
+            <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5wLtKNeSRPz" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -18199,6 +18204,11 @@
       <node concept="1SiIV0" id="5ehyoLGST$r" role="3bR37C">
         <node concept="3bR9La" id="5ehyoLGST$s" role="1SiIV1">
           <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="5D8v3P3Iw9X" role="3bR37C">
+        <node concept="3bR9La" id="5D8v3P3Iw9Y" role="1SiIV1">
+          <ref role="3bR37D" node="sIFyDYEApj" resolve="org.iets3.core.expr.base.runtime" />
         </node>
       </node>
     </node>
