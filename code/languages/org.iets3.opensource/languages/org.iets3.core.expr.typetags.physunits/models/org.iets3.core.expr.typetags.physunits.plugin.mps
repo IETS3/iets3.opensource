@@ -419,6 +419,7 @@
       <node concept="3Tm6S6" id="2rzAw9UX_hi" role="1B3o_S" />
       <node concept="3clFbS" id="2rzAw9UX_gW" role="3clF47" />
     </node>
+    <node concept="2tJIrI" id="7NHcidfcqTo" role="jymVt" />
     <node concept="2YIFZL" id="2rzAw9UY3dE" role="jymVt">
       <property role="TrG5h" value="createUnitSpec2TypesMap" />
       <node concept="3clFbS" id="2rzAw9UY1S$" role="3clF47">
@@ -1452,18 +1453,14 @@
             </node>
             <node concept="3cpWs8" id="tQsiKdSs4J" role="3cqZAp">
               <node concept="3cpWsn" id="tQsiKdSs4K" role="3cpWs9">
-                <property role="TrG5h" value="visibleElementsProvider" />
+                <property role="TrG5h" value="contextForScope" />
                 <node concept="3Tqbb2" id="tQsiKdSrKr" role="1tU5fm">
                   <ref role="ehGHo" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
                 </node>
                 <node concept="2OqwBi" id="tQsiKdSs4L" role="33vP2m">
                   <node concept="oxGPV" id="tQsiKdSs4M" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="tQsiKdSs4N" role="2OqNvi">
-                    <node concept="1xMEDy" id="tQsiKdSs4O" role="1xVPHs">
-                      <node concept="chp4Y" id="tQsiKdSs4P" role="ri$Ld">
-                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-                      </node>
-                    </node>
+                  <node concept="2qgKlT" id="7NHcideTZhg" role="2OqNvi">
+                    <ref role="37wK5l" to="rppw:7NHcideTk7h" resolve="getContext" />
                   </node>
                 </node>
               </node>
@@ -1514,7 +1511,7 @@
                           <node concept="2qgKlT" id="4qv99Irzo9w" role="2OqNvi">
                             <ref role="37wK5l" to="rppw:3_TFq$0_vSx" resolve="getApplicableConversionSpecifiers" />
                             <node concept="37vLTw" id="tQsiKdSs4Q" role="37wK5m">
-                              <ref role="3cqZAo" node="tQsiKdSs4K" resolve="visibleElementsProvider" />
+                              <ref role="3cqZAo" node="tQsiKdSs4K" resolve="contextForScope" />
                             </node>
                           </node>
                         </node>
@@ -1542,7 +1539,7 @@
                         <node concept="2qgKlT" id="1BdB9zG5txA" role="2OqNvi">
                           <ref role="37wK5l" to="rppw:3_TFq$0_vSx" resolve="getApplicableConversionSpecifiers" />
                           <node concept="37vLTw" id="tQsiKdStdL" role="37wK5m">
-                            <ref role="3cqZAo" node="tQsiKdSs4K" resolve="visibleElementsProvider" />
+                            <ref role="3cqZAo" node="tQsiKdSs4K" resolve="contextForScope" />
                           </node>
                         </node>
                       </node>
@@ -2021,7 +2018,6 @@
                     <node concept="2jxLKc" id="7Dq0xpBtgmk" role="1tU5fm" />
                   </node>
                 </node>
-                <node concept="3clFbH" id="3wrpJuqrXCP" role="3cqZAp" />
               </node>
               <node concept="1Wc70l" id="I2wguiCjQp" role="3clFbw">
                 <node concept="2OqwBi" id="3wrpJuqrXTH" role="3uHU7B">
