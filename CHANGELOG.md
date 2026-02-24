@@ -14,6 +14,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Variability: Remove deprecated concepts `FeatureModelConfiguration_old`, and all related concepts. These concepts have been introduced when one proto-language for variability has been split into two languages, one for feature models and one for configurations. This happened end of 2024, and the deprecation window is now closing.
 - Variability: The variability.os plugin no longer depends on the potentially slow tracing language.
 - The physical units language `org.iets3.core.expr.typetags.physunits` has been refactored internally (logic has not been changed). 
+- The behaviour methods of `IValidNamedConcept` for umlauts, paragraphs and apostrophes in language `org.iets3.core.base` were refactored internally and allow now customization via extension point. 
 
 ### Fixed
 - Add missing deps. to SBOM
