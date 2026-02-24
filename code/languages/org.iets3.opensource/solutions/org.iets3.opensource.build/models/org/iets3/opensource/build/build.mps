@@ -1200,9 +1200,6 @@
       <node concept="m$_yC" id="4G1C74S34LO" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeSRRD" resolve="org.iets3.core.os" />
       </node>
-      <node concept="m$_yC" id="1kjmNSX4xMS" role="m$_yJ">
-        <ref role="m$_y1" node="7uAdOXgkZjG" resolve="org.iets3.core.expr.tracing" />
-      </node>
       <node concept="3_J27D" id="7B3y$vlfXKD" role="m$_yQ">
         <node concept="3Mxwew" id="7B3y$vlfXKE" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.variability.os" />
@@ -2136,11 +2133,6 @@
         <node concept="1SiIV0" id="1kjmNSX4xoe" role="3bR37C">
           <node concept="3bR9La" id="1kjmNSX4xof" role="1SiIV1">
             <ref role="3bR37D" to="90a9:5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1kjmNSX4xog" role="3bR37C">
-          <node concept="3bR9La" id="1kjmNSX4xoh" role="1SiIV1">
-            <ref role="3bR37D" node="3a2FJuC8s9O" resolve="org.iets3.core.expr.tracing" />
           </node>
         </node>
       </node>
