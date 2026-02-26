@@ -255,22 +255,16 @@
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
       <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
       <concept id="2217234381367190443" name="jetbrains.mps.baseLanguage.javadoc.structure.SeeBlockDocTag" flags="ng" index="VUp57">
+        <property id="2217234381367190444" name="text" index="VUp50" />
         <child id="2217234381367190458" name="reference" index="VUp5m" />
       </concept>
       <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
         <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
       <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
         <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
@@ -2097,18 +2091,60 @@
         <ref role="2AI5Lk" to="mhfm:~ApiStatus$Internal" resolve="ApiStatus.Internal" />
       </node>
       <node concept="P$JXv" id="5TO$xcFuNUc" role="lGtFl">
-        <node concept="TZ5HA" id="5TO$xcFuNUd" role="TZ5H$">
-          <node concept="1dT_AC" id="5TO$xcFuNUe" role="1dT_Ay">
-            <property role="1dT_AB" value="Scheduled to be closed API. Use overrideDefaultAllowUmlaute() instead " />
-          </node>
-        </node>
         <node concept="VUp57" id="4y0DErjELny" role="3nqlJM">
+          <property role="VUp50" value="" />
           <node concept="VXe0Z" id="4y0DErjEMAo" role="VUp5m">
             <ref role="VXe0S" node="5YygIlbjlOQ" resolve="overrideDefaultAllowUmlaute" />
           </node>
+          <node concept="1PaTwC" id="2CPUzzpzx72" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx73" role="1PaTwD" />
+          </node>
         </node>
         <node concept="x79VA" id="2VdPjasmnlP" role="3nqlJM">
-          <property role="x79VB" value="false by default via EP" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="2CPUzzpzx74" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx75" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx76" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx77" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx78" role="1PaTwD">
+              <property role="3oM_SC" value="via" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx79" role="1PaTwD">
+              <property role="3oM_SC" value="EP" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2CPUzzpzx6T" role="1Vez_I">
+          <node concept="3oM_SD" id="2CPUzzpzx6U" role="1PaTwD">
+            <property role="3oM_SC" value="Scheduled" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx6V" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx6W" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx6X" role="1PaTwD">
+            <property role="3oM_SC" value="closed" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx6Y" role="1PaTwD">
+            <property role="3oM_SC" value="API." />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx6Z" role="1PaTwD">
+            <property role="3oM_SC" value="Use" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx70" role="1PaTwD">
+            <property role="3oM_SC" value="overrideDefaultAllowUmlaute()" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx71" role="1PaTwD">
+            <property role="3oM_SC" value="instead" />
+          </node>
         </node>
       </node>
     </node>
@@ -2137,18 +2173,60 @@
         <ref role="2AI5Lk" to="mhfm:~ApiStatus$Internal" resolve="ApiStatus.Internal" />
       </node>
       <node concept="P$JXv" id="5TO$xcFuQYd" role="lGtFl">
-        <node concept="TZ5HA" id="5TO$xcFuQYe" role="TZ5H$">
-          <node concept="1dT_AC" id="5TO$xcFuQYf" role="1dT_Ay">
-            <property role="1dT_AB" value="Scheduled to be closed API. Use overrideDefaultAllowUmlaute() instead" />
-          </node>
-        </node>
         <node concept="VUp57" id="4y0DErjENqR" role="3nqlJM">
+          <property role="VUp50" value="" />
           <node concept="VXe0Z" id="4y0DErjENqT" role="VUp5m">
             <ref role="VXe0S" node="5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
           </node>
+          <node concept="1PaTwC" id="2CPUzzpzx7j" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx7k" role="1PaTwD" />
+          </node>
         </node>
         <node concept="x79VA" id="2VdPjasmp45" role="3nqlJM">
-          <property role="x79VB" value="false by default via EP" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="2CPUzzpzx7l" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx7m" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7n" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7o" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7p" role="1PaTwD">
+              <property role="3oM_SC" value="via" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7q" role="1PaTwD">
+              <property role="3oM_SC" value="EP" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2CPUzzpzx7a" role="1Vez_I">
+          <node concept="3oM_SD" id="2CPUzzpzx7b" role="1PaTwD">
+            <property role="3oM_SC" value="Scheduled" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7c" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7d" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7e" role="1PaTwD">
+            <property role="3oM_SC" value="closed" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7f" role="1PaTwD">
+            <property role="3oM_SC" value="API." />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7g" role="1PaTwD">
+            <property role="3oM_SC" value="Use" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7h" role="1PaTwD">
+            <property role="3oM_SC" value="overrideDefaultAllowUmlaute()" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7i" role="1PaTwD">
+            <property role="3oM_SC" value="instead" />
+          </node>
         </node>
       </node>
     </node>
@@ -2177,18 +2255,60 @@
         <ref role="2AI5Lk" to="mhfm:~ApiStatus$NonExtendable" resolve="ApiStatus.NonExtendable" />
       </node>
       <node concept="P$JXv" id="5TO$xcFx9SI" role="lGtFl">
-        <node concept="TZ5HA" id="5TO$xcFx9SJ" role="TZ5H$">
-          <node concept="1dT_AC" id="5TO$xcFx9SK" role="1dT_Ay">
-            <property role="1dT_AB" value="Scheduled to be closed API. Use overrideDefaultAllowApostrophe() instead" />
-          </node>
-        </node>
         <node concept="VUp57" id="4y0DErjENqW" role="3nqlJM">
+          <property role="VUp50" value="" />
           <node concept="VXe0Z" id="4y0DErjENqY" role="VUp5m">
             <ref role="VXe0S" node="5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
           </node>
+          <node concept="1PaTwC" id="2CPUzzpzx7$" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx7_" role="1PaTwD" />
+          </node>
         </node>
         <node concept="x79VA" id="2VdPjasmtmG" role="3nqlJM">
-          <property role="x79VB" value="true by default via EP" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="2CPUzzpzx7A" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx7B" role="1PaTwD">
+              <property role="3oM_SC" value="true" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7C" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7D" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7E" role="1PaTwD">
+              <property role="3oM_SC" value="via" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7F" role="1PaTwD">
+              <property role="3oM_SC" value="EP" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2CPUzzpzx7r" role="1Vez_I">
+          <node concept="3oM_SD" id="2CPUzzpzx7s" role="1PaTwD">
+            <property role="3oM_SC" value="Scheduled" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7t" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7u" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7v" role="1PaTwD">
+            <property role="3oM_SC" value="closed" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7w" role="1PaTwD">
+            <property role="3oM_SC" value="API." />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7x" role="1PaTwD">
+            <property role="3oM_SC" value="Use" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7y" role="1PaTwD">
+            <property role="3oM_SC" value="overrideDefaultAllowApostrophe()" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7z" role="1PaTwD">
+            <property role="3oM_SC" value="instead" />
+          </node>
         </node>
       </node>
     </node>
