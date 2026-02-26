@@ -26496,14 +26496,6 @@
         <ref role="3uigEE" node="IzpDYSOg6$" resolve="Pivot" />
       </node>
     </node>
-    <node concept="2lGYhJ" id="7lhbwV9MdDg" role="2pHZQ9">
-      <property role="TrG5h" value="pivotInstantiations" />
-      <node concept="3vKaQO" id="7lhbwV9MdPv" role="2lK19J">
-        <node concept="3uibUv" id="7lhbwV9MecJ" role="3O5elw">
-          <ref role="3uigEE" node="IzpDYSOg6$" resolve="Pivot" />
-        </node>
-      </node>
-    </node>
     <node concept="2lGYhJ" id="2VCmq77SrOB" role="2pHZQ9">
       <property role="TrG5h" value="pivotDependentsOn" />
       <node concept="3Tqbb2" id="2VCmq77SrPK" role="2lK19J" />
