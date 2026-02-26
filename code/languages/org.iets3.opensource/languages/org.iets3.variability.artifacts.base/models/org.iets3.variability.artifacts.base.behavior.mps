@@ -19213,7 +19213,7 @@
         </node>
         <node concept="3cpWs8" id="5zD5ovlZFHR" role="3cqZAp">
           <node concept="3cpWsn" id="5zD5ovlZFHS" role="3cpWs9">
-            <property role="TrG5h" value="pivots" />
+            <property role="TrG5h" value="pivotMaybe" />
             <node concept="2OqwBi" id="5zD5ovlZFHT" role="33vP2m">
               <node concept="37vLTw" id="6EGd7WxFQD" role="2Oq$k0">
                 <ref role="3cqZAo" node="6EGd7Wxypg" resolve="contextIVAA" />
@@ -19398,7 +19398,7 @@
                       <node concept="2ShNRf" id="1C4m4CTClf1" role="37wK5m">
                         <node concept="1pGfFk" id="1C4m4CTCEOi" role="2ShVmc">
                           <property role="373rjd" value="true" />
-                          <ref role="37wK5l" node="1ZWkc2uwbkl" />
+                          <ref role="37wK5l" node="1ZWkc2uwbkl" resolve="ReferenceResolved" />
                           <node concept="37vLTw" id="1C4m4CTDcnN" role="37wK5m">
                             <ref role="3cqZAo" node="6EGd7Wxz2j" resolve="ref" />
                           </node>
@@ -19438,7 +19438,7 @@
           </node>
           <node concept="2OqwBi" id="1C4m4CTC042" role="3clFbw">
             <node concept="37vLTw" id="5zD5ovlZHtd" role="2Oq$k0">
-              <ref role="3cqZAo" node="5zD5ovlZFHS" resolve="pivots" />
+              <ref role="3cqZAo" node="5zD5ovlZFHS" resolve="pivotMaybe" />
             </node>
             <node concept="liA8E" id="1C4m4CTC1iQ" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Optional.isEmpty()" resolve="isEmpty" />
@@ -26496,6 +26496,14 @@
         <ref role="3uigEE" node="IzpDYSOg6$" resolve="Pivot" />
       </node>
     </node>
+    <node concept="2lGYhJ" id="7lhbwV9MdDg" role="2pHZQ9">
+      <property role="TrG5h" value="pivotInstantiations" />
+      <node concept="3vKaQO" id="7lhbwV9MdPv" role="2lK19J">
+        <node concept="3uibUv" id="7lhbwV9MecJ" role="3O5elw">
+          <ref role="3uigEE" node="IzpDYSOg6$" resolve="Pivot" />
+        </node>
+      </node>
+    </node>
     <node concept="2lGYhJ" id="2VCmq77SrOB" role="2pHZQ9">
       <property role="TrG5h" value="pivotDependentsOn" />
       <node concept="3Tqbb2" id="2VCmq77SrPK" role="2lK19J" />
@@ -26516,17 +26524,22 @@
       </node>
       <node concept="TZ5HA" id="6_IBsN5O95$" role="TZ5H$">
         <node concept="1dT_AC" id="6_IBsN5O95_" role="1dT_Ay">
-          <property role="1dT_AB" value="1. The Pivot which stands for 'instantiatin'" />
+          <property role="1dT_AB" value="1. The Pivot which stands for 'instantiation'" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="7lhbwV9MfZk" role="TZ5H$">
+        <node concept="1dT_AC" id="7lhbwV9MfZl" role="1dT_Ay">
+          <property role="1dT_AB" value="2. A collection of possible instantiations " />
         </node>
       </node>
       <node concept="TZ5HA" id="6_IBsN5O95G" role="TZ5H$">
         <node concept="1dT_AC" id="6_IBsN5O95H" role="1dT_Ay">
-          <property role="1dT_AB" value="2. 'dependsOn' states a dependeny between a node 'n' and the Pivot. if 'n' is erased then also the Pivot" />
+          <property role="1dT_AB" value="3. 'dependsOn' states a dependeny between a node 'n' and the Pivot. if 'n' is erased then also the Pivot" />
         </node>
       </node>
       <node concept="TZ5HA" id="6_IBsN5O95O" role="TZ5H$">
         <node concept="1dT_AC" id="6_IBsN5O95P" role="1dT_Ay">
-          <property role="1dT_AB" value="3. 'nonStructuralChildren' are children of the Pivot, which it does not directly contain. A scenario are children inherited from" />
+          <property role="1dT_AB" value="4. 'nonStructuralChildren' are children of the Pivot, which it does not directly contain. A scenario are children inherited from" />
         </node>
       </node>
       <node concept="TZ5HA" id="6_IBsN5O95W" role="TZ5H$">
