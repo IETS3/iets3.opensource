@@ -4754,7 +4754,7 @@
                     <node concept="2ShNRf" id="1C4m4CTkQUA" role="3cqZAk">
                       <node concept="1pGfFk" id="1C4m4CTkQUB" role="2ShVmc">
                         <property role="373rjd" value="true" />
-                        <ref role="37wK5l" node="4ooUvfp6Lgd" />
+                        <ref role="37wK5l" node="4ooUvfp6Lgd" resolve="PivotHierarchy" />
                         <node concept="37vLTw" id="1C4m4CTkQUC" role="37wK5m">
                           <ref role="3cqZAo" node="1C4m4CTkQUr" resolve="data" />
                         </node>
@@ -19278,7 +19278,7 @@
                   <node concept="2OqwBi" id="1C4m4CTCXU3" role="33vP2m">
                     <node concept="2OqwBi" id="1C4m4CTCXU4" role="2Oq$k0">
                       <node concept="37vLTw" id="1C4m4CTCXU5" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5zD5ovlZFHS" resolve="pivots" />
+                        <ref role="3cqZAo" node="5zD5ovlZFHS" resolve="pivotMaybe" />
                       </node>
                       <node concept="liA8E" id="1C4m4CTCXU6" role="2OqNvi">
                         <ref role="37wK5l" to="33ny:~Optional.get()" resolve="get" />
@@ -19296,7 +19296,7 @@
                     <node concept="2OqwBi" id="1C4m4CTC5VT" role="2Oq$k0">
                       <node concept="2OqwBi" id="1C4m4CTC2mb" role="2Oq$k0">
                         <node concept="37vLTw" id="6_IBsN5N6X$" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5zD5ovlZFHS" resolve="pivots" />
+                          <ref role="3cqZAo" node="5zD5ovlZFHS" resolve="pivotMaybe" />
                         </node>
                         <node concept="liA8E" id="1C4m4CTC4NB" role="2OqNvi">
                           <ref role="37wK5l" to="33ny:~Optional.get()" resolve="get" />
