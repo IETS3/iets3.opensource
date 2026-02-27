@@ -29,7 +29,7 @@ public class typeof_BlockCallExpr_InferenceRule extends AbstractInferenceRule_Ru
       SNode tt = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0xe247742183174baL, "org.iets3.core.expr.base.structure.TupleType"));
       for (SNode op : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(bce, LINKS.block$A$Bz), LINKS.outports$xLwx))) {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.typeOf(op, "r:b23afcd1-7574-4ab9-9fb9-51aff88fd512(org.iets3.core.expr.dataflow.typesystem)", "2870058499330993377", true), CONCEPTS.Type$WK)) {
-          ListSequence.fromList(SLinkOperations.getChildren(tt, LINKS.elementTypes$gWta)).addElement(SNodeOperations.copyNode(SNodeOperations.cast(typeCheckingContext.typeOf(op, "r:b23afcd1-7574-4ab9-9fb9-51aff88fd512(org.iets3.core.expr.dataflow.typesystem)", "731163822148197997", true), CONCEPTS.Type$WK)));
+          ListSequence.fromList(SLinkOperations.getChildren(tt, LINKS.elementTypes$gWta)).addElement(SNodeOperations.copyNode(SNodeOperations.as(typeCheckingContext.typeOf(op, "r:b23afcd1-7574-4ab9-9fb9-51aff88fd512(org.iets3.core.expr.dataflow.typesystem)", "731163822148197997", true), CONCEPTS.Type$WK)));
         }
       }
       {

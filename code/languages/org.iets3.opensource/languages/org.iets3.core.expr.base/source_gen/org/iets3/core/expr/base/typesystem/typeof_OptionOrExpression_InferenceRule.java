@@ -32,7 +32,7 @@ public class typeof_OptionOrExpression_InferenceRule extends AbstractInferenceRu
           {
             SNode _nodeToCheck_1029348928467 = ooe;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3829047245309527720", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3829047245309527728", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(optionType), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3829047245309527722", true), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3829047245309527728", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(optionType), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3829047245309527722", true), _info_12389875345);
           }
           {
             SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(ooe, LINKS.right$zBjx);
@@ -43,7 +43,7 @@ public class typeof_OptionOrExpression_InferenceRule extends AbstractInferenceRu
           {
             SNode _nodeToCheck_1029348928467 = ooe;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "5957507632404909912", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "5957507632404909920", true), (SNode) typeCheckingContext.typeOf(SNodeOperations.cast(typeCheckingContext.getExpandedNode(optionType), CONCEPTS.NoneType$6W), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "5957507632404909914", true), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "5957507632404909920", true), (SNode) typeCheckingContext.typeOf(SNodeOperations.as(typeCheckingContext.getExpandedNode(optionType), CONCEPTS.NoneType$6W), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "5957507632404909914", true), _info_12389875345);
           }
           {
             SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(ooe, LINKS.right$zBjx);

@@ -9350,11 +9350,11 @@
     <file name="ErrorLiteral__BehaviorDescriptor.java">
       <node id="7089558164910932655" at="24,0,25,0" concept="14" trace="CONCEPT" />
       <node id="7089558164910932655" at="26,0,27,0" concept="14" trace="isSameAs_id69zaTr1Z8aS" />
-      <node id="7089558164910932655" at="27,0,28,0" concept="14" trace="allowUmlaute_id5YygIlbih$m" />
+      <node id="7089558164910932655" at="27,0,28,0" concept="14" trace="overrideDefaultAllowUmlaute_id5D8v3P4jYKp" />
       <node id="7089558164910932655" at="29,0,30,0" concept="14" trace="BH_METHODS" />
       <node id="7089558164910939327" at="35,26,36,19" concept="11" />
       <node id="7089558164910932699" at="37,5,38,145" concept="11" />
-      <node id="6891143932408648136" at="40,100,41,16" concept="11" />
+      <node id="6891143932408648136" at="40,115,41,16" concept="11" />
       <node id="7089558164910932655" at="48,114,49,21" concept="4" />
       <node id="7089558164910932655" at="53,114,54,49" concept="10" />
       <node id="7089558164910932655" at="55,26,56,56" concept="19" />
@@ -9362,7 +9362,7 @@
       <node id="7089558164910932655" at="61,14,62,58" concept="19" />
       <node id="7089558164910932655" at="67,128,68,49" concept="10" />
       <node id="7089558164910932655" at="69,26,70,56" concept="19" />
-      <node id="7089558164910932655" at="73,13,74,67" concept="11" />
+      <node id="7089558164910932655" at="73,13,74,82" concept="11" />
       <node id="7089558164910932655" at="75,14,76,58" concept="19" />
       <node id="7089558164910932655" at="82,48,83,22" concept="11" />
       <node id="7089558164910932655" at="88,40,89,19" concept="11" />
@@ -9370,7 +9370,7 @@
       <node id="7089558164910932655" at="31,0,33,0" concept="15" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="7089558164910932655" at="44,0,46,0" concept="2" trace="ErrorLiteral__BehaviorDescriptor#()V" />
       <node id="7089558164910939018" at="34,97,37,5" concept="8" />
-      <node id="7089558164910932655" at="40,0,43,0" concept="15" trace="allowUmlaute_id5YygIlbih$m#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7089558164910932655" at="40,0,43,0" concept="15" trace="overrideDefaultAllowUmlaute_id5D8v3P4jYKp#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
       <node id="7089558164910932655" at="54,49,57,5" concept="8" />
       <node id="7089558164910932655" at="68,49,71,5" concept="8" />
       <node id="7089558164910932655" at="47,0,51,0" concept="9" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
@@ -9384,13 +9384,13 @@
       <scope id="7089558164910932655" at="31,63,31,63" />
       <scope id="7089558164910932655" at="44,50,44,50" />
       <scope id="7089558164910939020" at="35,26,36,19" />
-      <scope id="6891143932408585532" at="40,100,41,16" />
+      <scope id="6891143932408585532" at="40,115,41,16" />
       <scope id="7089558164910932655" at="48,114,49,21" />
       <scope id="7089558164910932655" at="55,26,56,56" />
       <scope id="7089558164910932655" at="59,13,60,83" />
       <scope id="7089558164910932655" at="61,14,62,58" />
       <scope id="7089558164910932655" at="69,26,70,56" />
-      <scope id="7089558164910932655" at="73,13,74,67" />
+      <scope id="7089558164910932655" at="73,13,74,82" />
       <scope id="7089558164910932655" at="75,14,76,58" />
       <scope id="7089558164910932655" at="82,48,83,22" />
       <scope id="7089558164910932655" at="88,40,89,19" />

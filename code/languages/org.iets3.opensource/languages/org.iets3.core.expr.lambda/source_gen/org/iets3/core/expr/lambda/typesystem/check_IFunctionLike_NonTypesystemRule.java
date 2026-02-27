@@ -39,7 +39,7 @@ public class check_IFunctionLike_NonTypesystemRule extends AbstractNonTypesystem
 
     Set<SNode> elements = IDetectCycle__BehaviorDescriptor.getCyclicDependencyElements_id17fjvcLFUH5.invoke(fl);
     if (elements != null) {
-      if (SetSequence.fromSet(elements).all((it) -> SLinkOperations.getTarget(SNodeOperations.cast(it, CONCEPTS.IFunctionLike$t6), LINKS.type$1eya) == null)) {
+      if (SetSequence.fromSet(elements).all((it) -> SLinkOperations.getTarget(SNodeOperations.as(it, CONCEPTS.IFunctionLike$t6), LINKS.type$1eya) == null)) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fl, "Cycle without type detected. At least one function must have a type: " + IterableUtils.join(SetSequence.fromSet(elements).select((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL)), ", "), "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "1003876808066406619", null, errorTarget);

@@ -26,9 +26,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
-    deps.extendedLanguage(0x165f1d0525064544L, 0x895e1424f54166ecL, "org.iets3.variability.featuremodel.base");
-    deps.extendedLanguage(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, "org.iets3.analysis.base");
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.extendedLanguage(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, "org.iets3.analysis.base");
+    deps.extendedLanguage(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, "com.mbeddr.core.base");
     deps.aggregatedLanguage(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, "com.mbeddr.core.base");
   }
 
@@ -64,8 +64,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForEmptyVariabilityContent() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.base", "EmptyVariabilityContent", 0x9b66c5c938bf4315L, 0xa96f9f4e212c69cbL, 0x375cadc47514d908L);
     b.class_(false, false, false);
-    // extends: org.iets3.variability.featuremodel.base.structure.EmptyVariabilityContent_old
-    b.super_(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47514d908L);
     b.parent(0x9b66c5c938bf4315L, 0xa96f9f4e212c69cbL, 0x375cadc47514ce61L);
     b.origin("r:2f587aa6-2d3f-4726-9564-7648183caf97(org.iets3.variability.base.structure)/3989254429232912648");
     b.version(3);
@@ -76,7 +74,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.interface_();
     b.parent(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, 0x7d9c37fa6680e334L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.parent(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x2094847e8426ce97L);
     b.origin("r:2f587aa6-2d3f-4726-9564-7648183caf97(org.iets3.variability.base.structure)/2347646984684752535");
     b.version(3);
     return b.create();
@@ -84,7 +81,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForIVariabilityContent() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.base", "IVariabilityContent", 0x9b66c5c938bf4315L, 0xa96f9f4e212c69cbL, 0x375cadc47514ce61L);
     b.interface_();
-    b.parent(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47514ce61L);
     b.origin("r:2f587aa6-2d3f-4726-9564-7648183caf97(org.iets3.variability.base.structure)/3989254429232909921");
     b.version(3);
     return b.create();
@@ -102,8 +98,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForVariabilityModelChunk() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.base", "VariabilityModelChunk", 0x9b66c5c938bf4315L, 0xa96f9f4e212c69cbL, 0x375cadc475146776L);
     b.class_(false, false, true);
-    // extends: org.iets3.variability.featuremodel.base.structure.VariabilityModelChunk_old
-    b.super_(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475146776L);
+    // extends: com.mbeddr.core.base.structure.Chunk
+    b.super_(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x6315bcc6effb4ea6L);
     b.parent(0x9b66c5c938bf4315L, 0xa96f9f4e212c69cbL, 0x2094847e8426ce97L);
     b.origin("r:2f587aa6-2d3f-4726-9564-7648183caf97(org.iets3.variability.base.structure)/3989254429232883574");
     b.version(3);

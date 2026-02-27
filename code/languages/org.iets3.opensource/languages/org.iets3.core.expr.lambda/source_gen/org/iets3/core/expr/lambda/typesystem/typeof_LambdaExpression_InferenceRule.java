@@ -26,7 +26,7 @@ public class typeof_LambdaExpression_InferenceRule extends AbstractInferenceRule
       final SNode exprType = typeCheckingContext.typeOf(SLinkOperations.getTarget(le, LINKS.expression$T2aj), "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "1697698521775341146", true);
       typeCheckingContext.whenConcrete(exprType, () -> {
         SNode ft = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x68d69d36ba4ecfb6L, "org.iets3.core.expr.lambda.structure.FunctionType"));
-        SLinkOperations.setTarget(ft, LINKS.returnType$nq7J, SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(exprType)), CONCEPTS.Type$WK));
+        SLinkOperations.setTarget(ft, LINKS.returnType$nq7J, SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(exprType)), CONCEPTS.Type$WK));
         for (SNode arg : ListSequence.fromList(SLinkOperations.getChildren(le, LINKS.args$8wKH))) {
           ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).addElement(SNodeOperations.copyNode(SLinkOperations.getTarget(arg, LINKS.type$8xXf)));
         }

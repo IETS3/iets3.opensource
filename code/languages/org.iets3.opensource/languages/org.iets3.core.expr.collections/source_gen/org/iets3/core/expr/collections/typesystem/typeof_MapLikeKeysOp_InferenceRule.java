@@ -29,7 +29,7 @@ public class typeof_MapLikeKeysOp_InferenceRule extends AbstractInferenceRule_Ru
           {
             SNode _nodeToCheck_1029348928467 = op;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "7757419675876255312", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "7757419675876255326", true), (SNode) createCollectionType_nwwt08_a1a0c0a0a0b0a1a0a1(SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(type), CONCEPTS.MapType$6), LINKS.keyType$h$wq))), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "7757419675876255326", true), (SNode) createCollectionType_nwwt08_a1a0c0a0a0b0a1a0a1(SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(type), CONCEPTS.MapType$6), LINKS.keyType$h$wq))), _info_12389875345);
           }
         } else {
           {

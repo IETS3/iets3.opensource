@@ -23,7 +23,7 @@ public class check_CallOpAction_NonTypesystemRule extends AbstractNonTypesystemR
   }
   public void applyRule(final SNode co, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     SNode e = SLinkOperations.getTarget(co, LINKS.expr$kWuw);
-    if (!(SNodeOperations.isInstanceOf(e, CONCEPTS.DotExpression$jp) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(e, CONCEPTS.DotExpression$jp), LINKS.target$u23F), CONCEPTS.ServiceCallDotTarget$Sb))) {
+    if (!(SNodeOperations.isInstanceOf(e, CONCEPTS.DotExpression$jp) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.as(e, CONCEPTS.DotExpression$jp), LINKS.target$u23F), CONCEPTS.ServiceCallDotTarget$Sb))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(co, "call action must use a service call", "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "5414655892211726907", null, errorTarget);

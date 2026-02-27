@@ -194,7 +194,9 @@
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -2227,6 +2229,7 @@
                                             <node concept="36biLy" id="aP" role="28nt2d">
                                               <uo k="s:originTrace" v="n:5860825012168329785" />
                                               <node concept="1PxgMI" id="aQ" role="36biLW">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:1678583990201702457" />
                                                 <node concept="chp4Y" id="aR" role="3oSUPX">
                                                   <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -2855,6 +2858,7 @@
                     <node concept="2OqwBi" id="dQ" role="37wK5m">
                       <uo k="s:originTrace" v="n:5860825012168460214" />
                       <node concept="1PxgMI" id="dU" role="2Oq$k0">
+                        <property role="1BlNFB" value="true" />
                         <uo k="s:originTrace" v="n:5860825012168459245" />
                         <node concept="chp4Y" id="dW" role="3oSUPX">
                           <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
@@ -3012,6 +3016,7 @@
                                     <node concept="2OqwBi" id="eN" role="2Oq$k0">
                                       <uo k="s:originTrace" v="n:5860825012168465234" />
                                       <node concept="1PxgMI" id="eP" role="2Oq$k0">
+                                        <property role="1BlNFB" value="true" />
                                         <uo k="s:originTrace" v="n:5860825012168464584" />
                                         <node concept="chp4Y" id="eR" role="3oSUPX">
                                           <ref role="cht4Q" to="8qwc:55lPkJGZwPb" resolve="LookupTableType" />

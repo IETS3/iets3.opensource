@@ -25,7 +25,7 @@ public class check_ReferenceType_NonTypesystemRule extends AbstractNonTypesystem
   }
   public void applyRule(final SNode refT, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     SNode bt = SLinkOperations.getTarget(refT, LINKS.baseType$M6Aa);
-    if (!(SNodeOperations.isInstanceOf(bt, CONCEPTS.IReferenceableType$st)) || (SNodeOperations.isInstanceOf(bt, CONCEPTS.IReferenceableType$st) && !((boolean) IReferenceableType__BehaviorDescriptor.canBeReferenced_id6JZACDWNZP9.invoke(SNodeOperations.cast(bt, CONCEPTS.IReferenceableType$st))))) {
+    if (!(SNodeOperations.isInstanceOf(bt, CONCEPTS.IReferenceableType$st)) || (SNodeOperations.isInstanceOf(bt, CONCEPTS.IReferenceableType$st) && !((boolean) IReferenceableType__BehaviorDescriptor.canBeReferenced_id6JZACDWNZP9.invoke(SNodeOperations.as(bt, CONCEPTS.IReferenceableType$st))))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(bt, String.format("base type ‹%s› is not referenceable", BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(bt)), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7782108600708211249", null, errorTarget);

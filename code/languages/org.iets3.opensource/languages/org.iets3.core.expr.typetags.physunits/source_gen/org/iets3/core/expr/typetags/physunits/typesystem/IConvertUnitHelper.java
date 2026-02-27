@@ -5,32 +5,29 @@ package org.iets3.core.expr.typetags.physunits.typesystem;
 import jetbrains.mps.lang.typesystem.dependencies.CheckingMethod;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import org.jetbrains.mps.openapi.model.SNode;
+import org.iets3.core.expr.typetags.physunits.behavior.IConvertUnit__BehaviorDescriptor;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import org.iets3.core.expr.typetags.physunits.behavior.IConvertUnit__BehaviorDescriptor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
-import org.iets3.core.expr.typetags.physunits.plugin.IUnitLangConfig;
-import org.iets3.core.expr.typetags.physunits.plugin.PhysUnitLangConfigHelper;
-import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.errors.BaseQuickFixProvider;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import org.iets3.core.expr.typetags.physunits.behavior.UnitConversionUtil;
-import java.util.Map;
-import org.iets3.core.expr.typetags.physunits.behavior.NamedKeyWrapper;
-import org.iets3.core.expr.base.runtime.runtime.Fraction;
+import org.iets3.core.expr.typetags.physunits.behavior.UnitMap;
 import org.iets3.core.expr.typetags.physunits.behavior.ConversionSpecifier__BehaviorDescriptor;
+import org.iets3.core.expr.typetags.physunits.plugin.IUnitLangConfig;
+import org.iets3.core.expr.typetags.physunits.plugin.PhysUnitLangConfigHelper;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.typesystem.dependencies.InferenceMethod;
 import org.iets3.core.expr.typetags.physunits.behavior.IUnitSpecification__BehaviorDescriptor;
 import jetbrains.mps.typesystem.inference.EquationInfo;
-import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefixManager;
-import org.iets3.core.expr.typetags.physunits.behavior.GlobalUnitPrefixManager;
-import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefix;
 import org.iets3.core.expr.simpleTypes.behavior.NumberType__BehaviorDescriptor;
+import org.iets3.core.expr.typetags.physunits.behavior.GlobalUnitPrefixManager;
 import org.iets3.core.expr.simpleTypes.behavior.NumberRangeSpec__BehaviorDescriptor;
 import ch.obermuhlner.math.big.DefaultBigDecimalMath;
 import java.math.BigDecimal;
@@ -38,8 +35,8 @@ import org.iets3.core.expr.typetags.behavior.TaggedType__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefix;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
-import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -50,81 +47,85 @@ public class IConvertUnitHelper {
   }
 
   @CheckingMethod
-  public static void checkIConvertUnit(final TypeCheckingContext typeCheckingContext, SNode iConvertUnit) {
-    List<SNode> applicableSpecifiers = ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(iConvertUnit, SNodeOperations.getNodeAncestor(iConvertUnit, CONCEPTS.IVisibleElementProvider$$O, false, false))).where((it) -> !(SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(it, CONCEPTS.ConversionRule$iv, false, false), PROPS.isImplicit$HuJP)) && SNodeOperations.getModel(it) != null).toList();
-    SNode conversionSpecifier = IConvertUnit__BehaviorDescriptor.getConversionSpecifier_id7SygLIkR36w.invoke(iConvertUnit);
-    SNode implicitConversionSpecifier = IConvertUnit__BehaviorDescriptor.getImplicitConversionSpecifier_id2x0M_l2hX_w.invoke(iConvertUnit, SNodeOperations.getNodeAncestor(iConvertUnit, CONCEPTS.IVisibleElementProvider$$O, false, false));
+  public static void checkIConvertUnit(final TypeCheckingContext typeCheckingContext, SNode convertUnit) {
+    SNode context = IConvertUnit__BehaviorDescriptor.getContext_id7NHcideTk7h.invoke(convertUnit);
+    List<SNode> applicableSpecifiers = ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(convertUnit, context)).where((it) -> !(SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(it, CONCEPTS.ConversionRule$iv, false, false), PROPS.isImplicit$HuJP)) && SNodeOperations.getModel(it) != null).toList();
+    SNode conversionSpecifier = IConvertUnit__BehaviorDescriptor.getConversionSpecifier_id7SygLIkR36w.invoke(convertUnit);
+    SNode implicitConversionSpecifier = IConvertUnit__BehaviorDescriptor.getImplicitConversionSpecifier_id2x0M_l2hX_w.invoke(convertUnit, context);
     if ((implicitConversionSpecifier != null)) {
       ListSequence.fromList(applicableSpecifiers).insertElement(0, implicitConversionSpecifier);
     }
-    SNode convertExpression = IConvertUnit__BehaviorDescriptor.getExpression_id7SygLIkQnGn.invoke(iConvertUnit);
 
+    SNode convertExpr = IConvertUnit__BehaviorDescriptor.getExpression_id7SygLIkQnGn.invoke(convertUnit);
     if (ListSequence.fromList(applicableSpecifiers).isEmpty()) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(iConvertUnit, "no matching conversion specifier can be found", "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "624957442818656662", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(convertUnit, "no matching conversion specifier can be found", "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "624957442818656662", null, errorTarget);
       }
     } else if (ListSequence.fromList(applicableSpecifiers).count() > 1 && (implicitConversionSpecifier == null)) {
-      StringBuilder builder = new StringBuilder();
-      builder.append("Multiple matching conversion specifiers have been found.");
-      IUnitLangConfig config = PhysUnitLangConfigHelper.getConfig();
-
-      switch (config.getConversionSpecifierSelection()) {
-        case DEFINED_IN_CONVERT_EXPESSION:
-          builder.append(" For conversions, the selected specifier will be used");
-          break;
-        case FIRST_APPLICABLE:
-          builder.append(" For conversions, the first applicable specifier will be used");
-          break;
-      }
-
-      for (SNode specifier : ListSequence.fromList(applicableSpecifiers)) {
-        builder.append("\n");
-        builder.append(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(specifier));
-        if (SNodeOperations.getModel(specifier) != null) {
-          builder.append(" in ");
-          builder.append(SNodeOperations.getContainingRoot(specifier).getName());
-        }
-      }
-
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(convertExpression, builder.toString(), "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "624957442818704732", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(convertExpr, makeMultipleMatchingWarning(applicableSpecifiers), "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "624957442818704732", null, errorTarget);
       }
-    } else if (conversionSpecifier == null && ListSequence.fromList(applicableSpecifiers).count() == 1 && (IConvertUnit__BehaviorDescriptor.getImplicitConversionSpecifier_id2x0M_l2hX_w.invoke(iConvertUnit, SNodeOperations.getNodeAncestor(iConvertUnit, CONCEPTS.IVisibleElementProvider$$O, false, false)) == null)) {
+    } else if ((conversionSpecifier == null) && ListSequence.fromList(applicableSpecifiers).count() == 1 && (IConvertUnit__BehaviorDescriptor.getImplicitConversionSpecifier_id2x0M_l2hX_w.invoke(convertUnit, context) == null)) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(convertExpression, "the conversion specifier must be set", "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "1197174311014856570", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(convertExpr, "the conversion specifier must be set", "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "1197174311014856570", null, errorTarget);
         {
           BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.core.expr.typetags.physunits.typesystem.quickfix_SetConversionRule_QuickFix", "1197174311014862547", true);
-          intentionProvider.putArgument("iConvertUnit", iConvertUnit);
+          intentionProvider.putArgument("iConvertUnit", convertUnit);
           intentionProvider.putArgument("specifier", ListSequence.fromList(applicableSpecifiers).first());
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
       }
     }
 
-    if (conversionSpecifier != null) {
-      if (SLinkOperations.getTarget(conversionSpecifier, LINKS.type$poAd) == null || TypecheckingFacade.getFromContext().isSubtype(UnitConversionUtil.getInnerType(TypecheckingFacade.getFromContext().getTypeOf(convertExpression)), SLinkOperations.getTarget(conversionSpecifier, LINKS.type$poAd))) {
+    if ((conversionSpecifier != null)) {
+      if ((SLinkOperations.getTarget(conversionSpecifier, LINKS.type$poAd) == null) || TypecheckingFacade.getFromContext().isSubtype(UnitConversionUtil.getInnerType(TypecheckingFacade.getFromContext().getTypeOf(convertExpr)), SLinkOperations.getTarget(conversionSpecifier, LINKS.type$poAd))) {
         // the type of the to-be-converted expression must match the source unit
-        Map<NamedKeyWrapper, Fraction> convertExpressionSourceUnitMap = UnitConversionUtil.getMap_Type(TypecheckingFacade.getFromContext().getTypeOf(convertExpression));
-        Map<NamedKeyWrapper, Fraction> ruleSourceUnitMap = UnitConversionUtil.getMap_IUnit(SLinkOperations.getTarget(SLinkOperations.getTarget(ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(conversionSpecifier), LINKS.sourceUnit$zzDG), LINKS.unit$nTeG), 1);
-        Map<NamedKeyWrapper, Fraction> convertExpressionTargetUnitMap = UnitConversionUtil.getMap_IUnit(IConvertUnit__BehaviorDescriptor.getTargetUnit_id7SygLIkQpOA.invoke(iConvertUnit), 1);
-        Map<NamedKeyWrapper, Fraction> ruleTargetUnitMap = UnitConversionUtil.getMap_IUnit(SLinkOperations.getTarget(SLinkOperations.getTarget(ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(conversionSpecifier), LINKS.targetUnit$cNlh), LINKS.unit$nTeG), 1);
+        UnitMap convertExprSourceUnitMap = UnitConversionUtil.getMapForType(TypecheckingFacade.getFromContext().getTypeOf(convertExpr));
+        UnitMap ruleSourceUnitMap = UnitConversionUtil.getMapForIUnit(SLinkOperations.getTarget(SLinkOperations.getTarget(ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(conversionSpecifier), LINKS.sourceUnit$zzDG), LINKS.unit$nTeG), 1);
+        UnitMap convertExprTargetUnitMap = UnitConversionUtil.getMapForIUnit(IConvertUnit__BehaviorDescriptor.getTargetUnit_id7SygLIkQpOA.invoke(convertUnit), 1);
+        UnitMap ruleTargetUnitMap = UnitConversionUtil.getMapForIUnit(SLinkOperations.getTarget(SLinkOperations.getTarget(ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(conversionSpecifier), LINKS.targetUnit$cNlh), LINKS.unit$nTeG), 1);
 
-        if (!((boolean) UnitConversionUtil.matchingMappings(convertExpressionSourceUnitMap, ruleSourceUnitMap)._0() && (boolean) UnitConversionUtil.matchingMappings(convertExpressionTargetUnitMap, ruleTargetUnitMap)._0())) {
+        if (!(UnitMap.matching(convertExprSourceUnitMap, ruleSourceUnitMap) && UnitMap.matching(convertExprTargetUnitMap, ruleTargetUnitMap))) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
-            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(convertExpression, "expression must evaluate to an annotated type with the defined source unit", "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "624957442818447421", null, errorTarget);
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(convertExpr, "expression must evaluate to an annotated type with the defined source unit", "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "624957442818447421", null, errorTarget);
           }
         }
       } else {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
-          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(convertExpression, "expression's type is not applicable for the specifier", "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "7644849806582182026", null, errorTarget);
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(convertExpr, "expression's type is not applicable for the specifier", "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "7644849806582182026", null, errorTarget);
         }
       }
     }
+  }
+
+  private static String makeMultipleMatchingWarning(Iterable<SNode> applicableSpecifiers) {
+    StringBuilder builder = new StringBuilder();
+    builder.append("Multiple matching conversion specifiers have been found.");
+    IUnitLangConfig config = PhysUnitLangConfigHelper.getConfig();
+    switch (config.getConversionSpecifierSelection()) {
+      case DEFINED_IN_CONVERT_EXPESSION:
+        builder.append(" For conversions, the selected specifier will be used");
+        break;
+      case FIRST_APPLICABLE:
+        builder.append(" For conversions, the first applicable specifier will be used");
+        break;
+    }
+
+    for (SNode specifier : Sequence.fromIterable(applicableSpecifiers)) {
+      builder.append("\n");
+      builder.append(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(specifier));
+      if (SNodeOperations.getModel(specifier) != null) {
+        builder.append(" in ");
+        builder.append(SNodeOperations.getContainingRoot(specifier).getName());
+      }
+    }
+
+    return builder.toString();
   }
 
   @InferenceMethod
@@ -135,17 +136,18 @@ public class IConvertUnitHelper {
       case DEFINED_IN_CONVERT_EXPESSION:
         break;
       case FIRST_APPLICABLE:
-        conversionSpecifier = ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(iConvertUnit, SNodeOperations.getNodeAncestor(iConvertUnit, CONCEPTS.IVisibleElementProvider$$O, false, false))).first();
+        SNode context = IConvertUnit__BehaviorDescriptor.getContext_id7NHcideTk7h.invoke(iConvertUnit);
+        conversionSpecifier = ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(iConvertUnit, context)).first();
         break;
     }
     final SNode finalConversionSpecifier = conversionSpecifier;
-    final SNode expressionToConvert = IConvertUnit__BehaviorDescriptor.getExpression_id7SygLIkQnGn.invoke(iConvertUnit);
+    final SNode exprToConvert = IConvertUnit__BehaviorDescriptor.getExpression_id7SygLIkQnGn.invoke(iConvertUnit);
 
     {
-      final SNode expressionToConvertType = typeCheckingContext.typeOf(expressionToConvert, "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "78245274157250467", true);
-      typeCheckingContext.whenConcrete(expressionToConvertType, () -> {
-        final SNode conversionSpecExpression = ((finalConversionSpecifier != null) ? SLinkOperations.getTarget(finalConversionSpecifier, LINKS.expression$BZ0p) : SLinkOperations.getTarget(ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(iConvertUnit, SNodeOperations.getNodeAncestor(iConvertUnit, CONCEPTS.IVisibleElementProvider$$O, false, false))).first(), LINKS.expression$BZ0p));
-        if ((conversionSpecExpression == null)) {
+      final SNode exprToConvertType = typeCheckingContext.typeOf(exprToConvert, "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "78245274157250467", true);
+      typeCheckingContext.whenConcrete(exprToConvertType, () -> {
+        final SNode conversionSpecExpr = ((finalConversionSpecifier != null) ? SLinkOperations.getTarget(finalConversionSpecifier, LINKS.expression$BZ0p) : SLinkOperations.getTarget(ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(iConvertUnit, IConvertUnit__BehaviorDescriptor.getContext_id7NHcideTk7h.invoke(iConvertUnit))).first(), LINKS.expression$BZ0p));
+        if ((conversionSpecExpr == null)) {
           // error will be issued by the checker - we cannot infer the correct type
           return;
         }
@@ -153,47 +155,51 @@ public class IConvertUnitHelper {
         // even though conversionSpecExpressionType is not used locally, 
         // this when concrete block is necessary to prevent endless infer-loop   
         {
-          final SNode conversionSpecExpressionType = typeCheckingContext.typeOf(conversionSpecExpression, "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "8208891105592569631", true);
+          final SNode conversionSpecExpressionType = typeCheckingContext.typeOf(conversionSpecExpr, "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "8208891105592569631", true);
           typeCheckingContext.whenConcrete(conversionSpecExpressionType, () -> {
             final SNode targetUnitTag = IConvertUnitHelper.createTargetTag(iConvertUnit);
-            final SNode sourceUnitReference = SNodeOperations.as(IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(UnitConversionUtil.getSpecification(typeCheckingContext.getExpandedNode(expressionToConvertType))), CONCEPTS.UnitReference$Zo);
-            final SNode targetUnitReference = SNodeOperations.as(SLinkOperations.getTarget(targetUnitTag, LINKS.specification$d6YI), CONCEPTS.UnitReference$Zo);
-            final SNode baseType = getBaseType(typeCheckingContext.getExpandedNode(expressionToConvertType));
+            final SNode sourceUnitRef = SNodeOperations.as(IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(UnitConversionUtil.getSpecification(typeCheckingContext.getExpandedNode(exprToConvertType))), CONCEPTS.UnitReference$Zo);
+            final SNode targetUnitRef = SNodeOperations.as(SLinkOperations.getTarget(targetUnitTag, LINKS.specification$d6YI), CONCEPTS.UnitReference$Zo);
+            final SNode baseType = getBaseType(typeCheckingContext.getExpandedNode(exprToConvertType));
+
             // perform type calculation based on the expression specified in the conversion specifier by replacing the val expression with the conversion expression  
-            final SNode specifierExpressionCopy = SNodeOperations.copyNode(conversionSpecExpression);
+            final SNode specifierExprCopy = SNodeOperations.copyNode(conversionSpecExpr);
             final SNode parentConversionRule = ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(finalConversionSpecifier);
-            IConvertUnitHelper.replaceValExpressionWithBaseType(specifierExpressionCopy, parentConversionRule, baseType);
+            replaceValExprWithBaseType(specifierExprCopy, parentConversionRule, baseType);
+
             {
-              final SNode specifierExpressionCopyType = typeCheckingContext.typeOf(specifierExpressionCopy, "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "4240468146474016393", true);
-              typeCheckingContext.whenConcrete(specifierExpressionCopyType, () -> {
-                if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(specifierExpressionCopyType), CONCEPTS.TaggedType$O4)) {
+              final SNode specifierExprCopyType = typeCheckingContext.typeOf(specifierExprCopy, "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "4240468146474016393", true);
+              typeCheckingContext.whenConcrete(specifierExprCopyType, () -> {
+                if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(specifierExprCopyType), CONCEPTS.TaggedType$O4)) {
                   {
                     SNode _nodeToCheck_1029348928467 = iConvertUnit;
                     EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "8208891105592737002", 0, null);
-                    typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "8208891105592736049", true), (SNode) typeCheckingContext.getExpandedNode(specifierExpressionCopyType), _info_12389875345);
+                    typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "8208891105592736049", true), (SNode) typeCheckingContext.getExpandedNode(specifierExprCopyType), _info_12389875345);
                   }
-                } else if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(specifierExpressionCopyType), CONCEPTS.Type$WK)) {
-                  SNode type = SNodeOperations.as(typeCheckingContext.getExpandedNode(specifierExpressionCopyType), CONCEPTS.Type$WK);
+                } else if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(specifierExprCopyType), CONCEPTS.Type$WK)) {
+                  SNode type = SNodeOperations.as(typeCheckingContext.getExpandedNode(specifierExprCopyType), CONCEPTS.Type$WK);
                   {
                     final SNode numberType = type;
                     if (SNodeOperations.isInstanceOf(numberType, CONCEPTS.NumberType$n)) {
-                      AbstractUnitPrefixManager sourceManager = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(sourceUnitReference, LINKS.unit$nTeG));
-                      AbstractUnitPrefixManager targetManager = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(targetUnitReference, LINKS.unit$nTeG));
-                      AbstractUnitPrefix sourcePrefix = sourceManager.findPrefix(SPropertyOperations.getString(sourceUnitReference, PROPS.prefix$AtV));
-                      AbstractUnitPrefix targetPrefix = targetManager.findPrefix(SPropertyOperations.getString(targetUnitReference, PROPS.prefix$AtV));
-                      if (SNodeOperations.isInstanceOf(baseType, CONCEPTS.NumberType$n)) {
-                        if ((SLinkOperations.getTarget(numberType, LINKS.range$RnOa) == null)) {
-                          SLinkOperations.setTarget(numberType, LINKS.range$RnOa, SLinkOperations.getTarget(SNodeOperations.as(baseType, CONCEPTS.NumberType$n), LINKS.range$RnOa));
-                        }
-                        if ((SLinkOperations.getTarget(numberType, LINKS.prec$RwIK) == null) && !((boolean) NumberType__BehaviorDescriptor.canDerivePrecisionFromRange_id19PglA251oh.invoke(numberType))) {
-                          SLinkOperations.setTarget(numberType, LINKS.prec$RwIK, SLinkOperations.getTarget(SNodeOperations.as(baseType, CONCEPTS.NumberType$n), LINKS.prec$RwIK));
+                      {
+                        final SNode baseNumberType = baseType;
+                        if (SNodeOperations.isInstanceOf(baseNumberType, CONCEPTS.NumberType$n)) {
+                          if ((SLinkOperations.getTarget(numberType, LINKS.range$RnOa) == null)) {
+                            SLinkOperations.setTarget(numberType, LINKS.range$RnOa, SLinkOperations.getTarget(baseNumberType, LINKS.range$RnOa));
+                          }
+                          if ((SLinkOperations.getTarget(numberType, LINKS.prec$RwIK) == null) && !((boolean) NumberType__BehaviorDescriptor.canDerivePrecisionFromRange_id19PglA251oh.invoke(numberType))) {
+                            SLinkOperations.setTarget(numberType, LINKS.prec$RwIK, SLinkOperations.getTarget(baseNumberType, LINKS.prec$RwIK));
+                          }
                         }
                       }
 
                       // only do this step for generated rules
                       if (SNodeOperations.getParent(parentConversionRule) == null) {
-                        int factor = ((sourcePrefix != null ? (int) sourcePrefix.factor() : 0)) - ((targetPrefix != null ? (int) targetPrefix.factor() : 0));
-                        NumberRangeSpec__BehaviorDescriptor.times_idijdpu3aPf0.invoke(SLinkOperations.getTarget(numberType, LINKS.range$RnOa), DefaultBigDecimalMath.pow(BigDecimal.valueOf(targetManager.getBase()), BigDecimal.valueOf(factor)));
+                        int sourcePrefix = findPrefix(sourceUnitRef);
+                        int targetPrefix = findPrefix(targetUnitRef);
+                        int factor = sourcePrefix - targetPrefix;
+                        int base = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(targetUnitRef, LINKS.unit$nTeG)).getBase();
+                        NumberRangeSpec__BehaviorDescriptor.times_idijdpu3aPf0.invoke(SLinkOperations.getTarget(numberType, LINKS.range$RnOa), DefaultBigDecimalMath.pow(BigDecimal.valueOf(base), BigDecimal.valueOf(factor)));
                       }
                     }
                   }
@@ -213,12 +219,18 @@ public class IConvertUnitHelper {
     }
   }
 
-  private static SNode createTargetTag(final SNode iConvertUnit) {
-    SNode unitReference = IConvertUnit__BehaviorDescriptor.getTargetUnitReference_id1BdB9zGarhv.invoke(iConvertUnit);
-    return createUnitSpecification_kpu7bi_a1a6(SLinkOperations.getTarget(unitReference, LINKS.unit$nTeG), SPropertyOperations.getString(unitReference, PROPS.prefix$AtV));
-  }
-  private static void replaceValExpressionWithBaseType(final SNode specifierExpressionCopy, final SNode parentConversionRule, final SNode baseType) {
-    ListSequence.fromList(SNodeOperations.getNodeDescendants(specifierExpressionCopy, CONCEPTS.ValExpression$hl, false, new SAbstractConcept[]{})).visitAll((it) -> {
+  /**
+   * Replace all ValExpression nodes in an expression by a tagged type.
+   * 
+   * NOTE: The resulting structure is not an expression anymore, as a Type is not an Expression.
+   *       However, the typesystem can cope with this. E.g., typeof_BinaryExpression will be called with
+   *       binaryExpr.left not being an Expression node. Calling renderReadable() on the resulting
+   *       expression will throw an exception.
+   * 
+   * TODO: Check if this can be solved without producing temporary invalid expressions. 
+   */
+  private static void replaceValExprWithBaseType(final SNode specifierExprCopy, final SNode parentConversionRule, final SNode baseType) {
+    ListSequence.fromList(SNodeOperations.getNodeDescendants(specifierExprCopy, CONCEPTS.ValExpression$hl, false, new SAbstractConcept[]{})).visitAll((it) -> {
       if (SPropertyOperations.getBoolean(parentConversionRule, PROPS.isEager$qBr0)) {
         // in case of a eager rule --> replace the val expression with a tagged type that has the tag of the source unit
         SNode taggedType = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType"));
@@ -235,15 +247,25 @@ public class IConvertUnitHelper {
     });
   }
 
+  private static int findPrefix(SNode unitRef) {
+    AbstractUnitPrefix prefix = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(unitRef, LINKS.unit$nTeG)).findPrefix(SPropertyOperations.getString(unitRef, PROPS.prefix$AtV));
+    return (prefix != null ? (int) prefix.factor() : 0);
+  }
+
   private static SNode getBaseType(SNode type) {
     if (SNodeOperations.isInstanceOf(type, CONCEPTS.TaggedType$O4)) {
-      return SLinkOperations.getTarget(SNodeOperations.cast(type, CONCEPTS.TaggedType$O4), LINKS.baseType$z6Mz);
+      return SLinkOperations.getTarget(SNodeOperations.as(type, CONCEPTS.TaggedType$O4), LINKS.baseType$z6Mz);
     } else if (SNodeOperations.isInstanceOf(type, CONCEPTS.Type$WK)) {
-      return SNodeOperations.cast(type, CONCEPTS.Type$WK);
+      return SNodeOperations.as(type, CONCEPTS.Type$WK);
     }
     return null;
   }
-  private static SNode createUnitSpecification_kpu7bi_a1a6(SNode p0, String p1) {
+
+  private static SNode createTargetTag(final SNode iConvertUnit) {
+    SNode unitReference = IConvertUnit__BehaviorDescriptor.getTargetUnitReference_id1BdB9zGarhv.invoke(iConvertUnit);
+    return createUnitSpecification_kpu7bi_a1a41(SLinkOperations.getTarget(unitReference, LINKS.unit$nTeG), SPropertyOperations.getString(unitReference, PROPS.prefix$AtV));
+  }
+  private static SNode createUnitSpecification_kpu7bi_a1a41(SNode p0, String p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.UnitSpecification$6j);
     {
       SNodeBuilder n1 = n0.forChild(LINKS.specification$d6YI).init(CONCEPTS.UnitReference$Zo);
@@ -254,7 +276,6 @@ public class IConvertUnitHelper {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SInterfaceConcept IVisibleElementProvider$$O = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x6315bcc6eff580a3L, "com.mbeddr.core.base.structure.IVisibleElementProvider");
     /*package*/ static final SConcept ConversionRule$iv = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0xed6abcb370b28cbL, "org.iets3.core.expr.typetags.physunits.structure.ConversionRule");
     /*package*/ static final SConcept UnitReference$Zo = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d4dc5L, "org.iets3.core.expr.typetags.physunits.structure.UnitReference");
     /*package*/ static final SConcept TaggedType$O4 = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType");
@@ -266,8 +287,8 @@ public class IConvertUnitHelper {
 
   private static final class PROPS {
     /*package*/ static final SProperty isImplicit$HuJP = MetaAdapterFactory.getProperty(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0xed6abcb370b28cbL, 0x381b66f79a7d2e12L, "isImplicit");
-    /*package*/ static final SProperty prefix$AtV = MetaAdapterFactory.getProperty(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d4dc5L, 0x79d6409d1866689aL, "prefix");
     /*package*/ static final SProperty isEager$qBr0 = MetaAdapterFactory.getProperty(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0xed6abcb370b28cbL, 0x182c7aae9ff63560L, "isEager");
+    /*package*/ static final SProperty prefix$AtV = MetaAdapterFactory.getProperty(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d4dc5L, 0x79d6409d1866689aL, "prefix");
   }
 
   private static final class LINKS {

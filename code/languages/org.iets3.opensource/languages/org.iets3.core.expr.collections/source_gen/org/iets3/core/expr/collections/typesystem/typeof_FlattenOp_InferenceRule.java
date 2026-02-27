@@ -28,7 +28,7 @@ public class typeof_FlattenOp_InferenceRule extends AbstractInferenceRule_Runtim
       typeCheckingContext.whenConcrete(contextTypew, () -> {
         String errorMessage = "a nested collection of collections is expected";
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(contextTypew), CONCEPTS.CollectionType$kS)) {
-          SNode bt = SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(contextTypew), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
+          SNode bt = SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(contextTypew), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
           if (SNodeOperations.isInstanceOf(bt, CONCEPTS.CollectionType$kS)) {
             {
               SNode _nodeToCheck_1029348928467 = flattenOp;

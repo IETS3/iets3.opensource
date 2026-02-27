@@ -38,7 +38,7 @@ public class typeof_NCopies_InferenceRule extends AbstractInferenceRule_Runtime 
             Object timesValue = new IETS3ExprEvaluator().evaluate(SLinkOperations.getTarget(nCopies, LINKS.expr$CW3E)).getValue();
             if (timesValue != null && timesValue instanceof BigInteger) {
               int times = ((BigInteger) timesValue).intValue();
-              SNode tupleType = SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.TupleType$8E);
+              SNode tupleType = SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.TupleType$8E);
               List<SNode> newElementTypes = ListSequence.fromList(SLinkOperations.getChildren(tupleType, LINKS.elementTypes$gWta)).select((it) -> SNodeOperations.copyNode(it)).toList();
               for (int i = 0; i < times - 1; i++) {
                 for (SNode type : ListSequence.fromList(SLinkOperations.getChildren(tupleType, LINKS.elementTypes$gWta)).select((it) -> SNodeOperations.copyNode(it))) {

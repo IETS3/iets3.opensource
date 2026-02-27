@@ -24,7 +24,7 @@ public class typeof_DataRowOp_InferenceRule extends AbstractInferenceRule_Runtim
     {
       SNode _nodeToCheck_1029348928467 = dro;
       EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:e29c70b2-feb7-465e-9534-7fdb395635c2(org.iets3.core.expr.data.typesystem)", "231307155598638077", 0, null);
-      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:e29c70b2-feb7-465e-9534-7fdb395635c2(org.iets3.core.expr.data.typesystem)", "231307155598636772", true), (SNode) TOF.override(dro, createDataTableType_q1ow30_b0b0a2a0a1(SNodeOperations.cast(SNodeOperations.getParent(SLinkOperations.getTarget(dro, LINKS.row$H2K_)), CONCEPTS.DataTable$qy))), _info_12389875345);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:e29c70b2-feb7-465e-9534-7fdb395635c2(org.iets3.core.expr.data.typesystem)", "231307155598636772", true), (SNode) TOF.override(dro, createDataTableType_q1ow30_b0b0a2a0a1(SNodeOperations.as(SNodeOperations.getParent(SLinkOperations.getTarget(dro, LINKS.row$H2K_)), CONCEPTS.DataTable$qy))), _info_12389875345);
     }
   }
   public SAbstractConcept getApplicableConcept() {

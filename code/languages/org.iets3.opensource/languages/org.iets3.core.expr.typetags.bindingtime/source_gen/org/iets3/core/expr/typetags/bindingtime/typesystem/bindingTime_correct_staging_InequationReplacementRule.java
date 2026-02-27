@@ -65,10 +65,10 @@ public class bindingTime_correct_staging_InequationReplacementRule extends Abstr
     }
 
     // The old type (usually coming from the RHS of an assignment) should be staged before the new type (usually coming from the LHS of an assignment)
-    if (!((boolean) BTtag__BehaviorDescriptor.wasBefore_id35Mye9KoWWW.invoke(SNodeOperations.cast(subTag, CONCEPTS.BTtag$DF), SLinkOperations.getTarget(SNodeOperations.cast(supTag, CONCEPTS.BTtag$DF), LINKS.bindingtime$RIRF)))) {
+    if (!((boolean) BTtag__BehaviorDescriptor.wasBefore_id35Mye9KoWWW.invoke(SNodeOperations.as(subTag, CONCEPTS.BTtag$DF), SLinkOperations.getTarget(SNodeOperations.as(supTag, CONCEPTS.BTtag$DF), LINKS.bindingtime$RIRF)))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(equationInfo.getNodeWithError(), String.format("computation stage ‹%s› is earlier than ‹%s›", SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(supTag, CONCEPTS.BTtag$DF), LINKS.bindingtime$RIRF), PROPS.name$MnvL), SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(subTag, CONCEPTS.BTtag$DF), LINKS.bindingtime$RIRF), PROPS.name$MnvL)), "r:ce959c43-f7e7-403d-86e3-006997995d4c(org.iets3.core.expr.typetags.bindingtime.typesystem)", "3563060761334292326", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(equationInfo.getNodeWithError(), String.format("computation stage ‹%s› is earlier than ‹%s›", SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.as(supTag, CONCEPTS.BTtag$DF), LINKS.bindingtime$RIRF), PROPS.name$MnvL), SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.as(subTag, CONCEPTS.BTtag$DF), LINKS.bindingtime$RIRF), PROPS.name$MnvL)), "r:ce959c43-f7e7-403d-86e3-006997995d4c(org.iets3.core.expr.typetags.bindingtime.typesystem)", "3563060761334292326", null, errorTarget);
         HUtil.addAdditionalRuleIdsFromInfo(_reporter_2309309498, equationInfo);
       }
     }
@@ -102,7 +102,7 @@ public class bindingTime_correct_staging_InequationReplacementRule extends Abstr
       }
 
       // The old type (usually coming from the RHS of an assignment) should be staged before the new type (usually coming from the LHS of an assignment)
-      if (!((boolean) BTtag__BehaviorDescriptor.wasBefore_id35Mye9KoWWW.invoke(SNodeOperations.cast(subTag, CONCEPTS.BTtag$DF), SLinkOperations.getTarget(SNodeOperations.cast(supTag, CONCEPTS.BTtag$DF), LINKS.bindingtime$RIRF)))) {
+      if (!((boolean) BTtag__BehaviorDescriptor.wasBefore_id35Mye9KoWWW.invoke(SNodeOperations.as(subTag, CONCEPTS.BTtag$DF), SLinkOperations.getTarget(SNodeOperations.as(supTag, CONCEPTS.BTtag$DF), LINKS.bindingtime$RIRF)))) {
         result_14532009 = false;
       }
 

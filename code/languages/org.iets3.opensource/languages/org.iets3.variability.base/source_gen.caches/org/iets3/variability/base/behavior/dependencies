@@ -20,7 +20,6 @@
   <uses module="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt+dp" />
   <uses module="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" kind="dp" />
   <uses module="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" kind="dp" />
-  <uses module="5fef253e-34b0-443d-8035-9a2928b716d3(com.mbeddr.mpsutil.editor.displayControl)" kind="dp" />
   <uses module="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" kind="dp" />
   <uses module="47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)" kind="dp" />
   <uses module="735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)" kind="dp" />
@@ -59,6 +58,5 @@
   <uses module="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" kind="dp" />
   <uses module="5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)" kind="dp" />
   <uses module="9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)" kind="dp" />
-  <uses module="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" kind="dp" />
 </dependenciesRoot>
 

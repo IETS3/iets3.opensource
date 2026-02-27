@@ -104,47 +104,33 @@
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/1713046119076148320">
     <file name="FMCHash.java">
-      <node id="1713046119076148320" at="19,0,20,0" concept="5" trace="description" />
-      <node id="1713046119076148320" at="20,30,21,23" concept="10" />
-      <node id="1713046119076148320" at="24,33,25,16" concept="10" />
-      <node id="1713046119076148320" at="27,41,28,17" concept="4" />
-      <node id="1713046119076148320" at="28,17,29,16" concept="10" />
-      <node id="1713046119076275307" at="33,199,34,102" concept="4" />
-      <node id="1713046119076148320" at="38,50,39,160" concept="10" />
-      <node id="1713046119076148320" at="43,0,44,0" concept="13" trace="FeatureModelConfiguration_old$Nr" />
-      <node id="1713046119076148320" at="47,0,48,0" concept="13" trace="__updateHash$vTMx" />
-      <node id="1713046119076148320" at="20,0,23,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
-      <node id="1713046119076168253" at="32,38,35,7" concept="6" />
-      <node id="1713046119076148320" at="38,0,41,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
-      <node id="1713046119076148320" at="23,0,27,0" concept="8" trace="isRerunnable#()Z" />
-      <node id="1713046119076148320" at="27,0,31,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="1713046119076148875" at="31,42,36,5" concept="6" />
-      <node id="1713046119076148320" at="31,0,38,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
-      <scope id="1713046119076148320" at="20,30,21,23" />
-      <scope id="1713046119076148320" at="24,33,25,16" />
-      <scope id="1713046119076168256" at="33,199,34,102" />
-      <scope id="1713046119076148320" at="38,50,39,160" />
-      <scope id="1713046119076148320" at="27,41,29,16" />
-      <scope id="1713046119076148320" at="20,0,23,0" />
-      <scope id="1713046119076148878" at="32,38,35,7" />
-      <scope id="1713046119076168253" at="32,38,35,7">
-        <var name="fmc" id="1713046119076168254" />
-      </scope>
-      <scope id="1713046119076148320" at="38,0,41,0" />
-      <scope id="1713046119076148320" at="23,0,27,0" />
-      <scope id="1713046119076148320" at="27,0,31,0">
+      <node id="1713046119076148320" at="12,0,13,0" concept="5" trace="description" />
+      <node id="1713046119076148320" at="13,30,14,23" concept="10" />
+      <node id="1713046119076148320" at="17,33,18,16" concept="10" />
+      <node id="1713046119076148320" at="20,41,21,17" concept="4" />
+      <node id="1713046119076148320" at="21,17,22,16" concept="10" />
+      <node id="5717674693762269768" at="24,42,25,82" concept="11" />
+      <node id="1713046119076148320" at="27,50,28,160" concept="10" />
+      <node id="1713046119076148320" at="13,0,16,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
+      <node id="1713046119076148320" at="24,0,27,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="1713046119076148320" at="27,0,30,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="1713046119076148320" at="16,0,20,0" concept="8" trace="isRerunnable#()Z" />
+      <node id="1713046119076148320" at="20,0,24,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="1713046119076148320" at="13,30,14,23" />
+      <scope id="1713046119076148320" at="17,33,18,16" />
+      <scope id="1713046119076148320" at="24,42,25,82" />
+      <scope id="1713046119076148320" at="27,50,28,160" />
+      <scope id="1713046119076148320" at="20,41,22,16" />
+      <scope id="1713046119076148320" at="13,0,16,0" />
+      <scope id="1713046119076148320" at="24,0,27,0">
         <var name="m" id="1713046119076148320" />
       </scope>
-      <scope id="1713046119076148320" at="31,42,36,5" />
-      <scope id="1713046119076148875" at="31,42,36,5">
-        <var name="mod" id="1713046119076148876" />
-      </scope>
-      <scope id="1713046119076148320" at="31,0,38,0">
+      <scope id="1713046119076148320" at="27,0,30,0" />
+      <scope id="1713046119076148320" at="16,0,20,0" />
+      <scope id="1713046119076148320" at="20,0,24,0">
         <var name="m" id="1713046119076148320" />
       </scope>
-      <unit id="1713046119076148320" at="42,0,45,0" name="org.iets3.variability.featuremodel.base.migration.FMCHash$CONCEPTS" />
-      <unit id="1713046119076148320" at="46,0,49,0" name="org.iets3.variability.featuremodel.base.migration.FMCHash$PROPS" />
-      <unit id="1713046119076148320" at="18,0,50,0" name="org.iets3.variability.featuremodel.base.migration.FMCHash" />
+      <unit id="1713046119076148320" at="11,0,32,0" name="org.iets3.variability.featuremodel.base.migration.FMCHash" />
     </file>
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/2566581196102171971">
@@ -180,49 +166,33 @@
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/3414566187110357976">
     <file name="FMHashInConfig.java">
-      <node id="3414566187110357976" at="21,0,22,0" concept="5" trace="description" />
-      <node id="3414566187110357976" at="22,30,23,23" concept="10" />
-      <node id="3414566187110357976" at="26,33,27,16" concept="10" />
-      <node id="3414566187110357976" at="29,41,30,17" concept="4" />
-      <node id="3414566187110357976" at="30,17,31,16" concept="10" />
-      <node id="3414566187110488454" at="35,273,36,100" concept="4" />
-      <node id="3414566187110357976" at="40,50,41,160" concept="10" />
-      <node id="3414566187110357976" at="45,0,46,0" concept="13" trace="FeatureModelConfiguration_old$Nr" />
-      <node id="3414566187110357976" at="49,0,50,0" concept="13" trace="extendedFMC_old$QHBh" />
-      <node id="3414566187110357976" at="53,0,54,0" concept="13" trace="__adaptHash_old$u7ad" />
-      <node id="3414566187110357976" at="22,0,25,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
-      <node id="3414566187110364803" at="34,38,37,7" concept="6" />
-      <node id="3414566187110357976" at="40,0,43,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
-      <node id="3414566187110357976" at="25,0,29,0" concept="8" trace="isRerunnable#()Z" />
-      <node id="3414566187110357976" at="29,0,33,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="3414566187110358598" at="33,42,38,5" concept="6" />
-      <node id="3414566187110357976" at="33,0,40,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
-      <scope id="3414566187110357976" at="22,30,23,23" />
-      <scope id="3414566187110357976" at="26,33,27,16" />
-      <scope id="3414566187110364806" at="35,273,36,100" />
-      <scope id="3414566187110357976" at="40,50,41,160" />
-      <scope id="3414566187110357976" at="29,41,31,16" />
-      <scope id="3414566187110357976" at="22,0,25,0" />
-      <scope id="3414566187110358601" at="34,38,37,7" />
-      <scope id="3414566187110364803" at="34,38,37,7">
-        <var name="fmc" id="3414566187110364804" />
-      </scope>
-      <scope id="3414566187110357976" at="40,0,43,0" />
-      <scope id="3414566187110357976" at="25,0,29,0" />
-      <scope id="3414566187110357976" at="29,0,33,0">
+      <node id="3414566187110357976" at="12,0,13,0" concept="5" trace="description" />
+      <node id="3414566187110357976" at="13,30,14,23" concept="10" />
+      <node id="3414566187110357976" at="17,33,18,16" concept="10" />
+      <node id="3414566187110357976" at="20,41,21,17" concept="4" />
+      <node id="3414566187110357976" at="21,17,22,16" concept="10" />
+      <node id="5717674693762261784" at="24,42,25,82" concept="11" />
+      <node id="3414566187110357976" at="27,50,28,160" concept="10" />
+      <node id="3414566187110357976" at="13,0,16,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
+      <node id="3414566187110357976" at="24,0,27,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="3414566187110357976" at="27,0,30,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="3414566187110357976" at="16,0,20,0" concept="8" trace="isRerunnable#()Z" />
+      <node id="3414566187110357976" at="20,0,24,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3414566187110357976" at="13,30,14,23" />
+      <scope id="3414566187110357976" at="17,33,18,16" />
+      <scope id="3414566187110357976" at="24,42,25,82" />
+      <scope id="3414566187110357976" at="27,50,28,160" />
+      <scope id="3414566187110357976" at="20,41,22,16" />
+      <scope id="3414566187110357976" at="13,0,16,0" />
+      <scope id="3414566187110357976" at="24,0,27,0">
         <var name="m" id="3414566187110357976" />
       </scope>
-      <scope id="3414566187110357976" at="33,42,38,5" />
-      <scope id="3414566187110358598" at="33,42,38,5">
-        <var name="mod" id="3414566187110358599" />
-      </scope>
-      <scope id="3414566187110357976" at="33,0,40,0">
+      <scope id="3414566187110357976" at="27,0,30,0" />
+      <scope id="3414566187110357976" at="16,0,20,0" />
+      <scope id="3414566187110357976" at="20,0,24,0">
         <var name="m" id="3414566187110357976" />
       </scope>
-      <unit id="3414566187110357976" at="44,0,47,0" name="org.iets3.variability.featuremodel.base.migration.FMHashInConfig$CONCEPTS" />
-      <unit id="3414566187110357976" at="48,0,51,0" name="org.iets3.variability.featuremodel.base.migration.FMHashInConfig$LINKS" />
-      <unit id="3414566187110357976" at="52,0,55,0" name="org.iets3.variability.featuremodel.base.migration.FMHashInConfig$PROPS" />
-      <unit id="3414566187110357976" at="20,0,56,0" name="org.iets3.variability.featuremodel.base.migration.FMHashInConfig" />
+      <unit id="3414566187110357976" at="11,0,32,0" name="org.iets3.variability.featuremodel.base.migration.FMHashInConfig" />
     </file>
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/3479444786375248212">
@@ -277,52 +247,33 @@
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/3479444786378230747">
     <file name="remove_autoComplete.java">
-      <node id="3479444786378230747" at="18,0,19,0" concept="5" trace="description" />
-      <node id="3479444786378230747" at="19,30,20,23" concept="10" />
-      <node id="3479444786378230747" at="23,33,24,16" concept="10" />
-      <node id="3479444786378230747" at="26,41,27,17" concept="4" />
-      <node id="3479444786378230747" at="27,17,28,16" concept="10" />
-      <node id="3479444786378233568" at="34,51,35,37" concept="4" />
-      <node id="3479444786378230747" at="41,50,42,161" concept="10" />
-      <node id="3479444786378230747" at="46,0,47,0" concept="13" trace="AbstractFeatureConfiguration_old$vA" />
-      <node id="3479444786378230747" at="19,0,22,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
-      <node id="3479444786378233566" at="33,72,36,11" concept="7" />
-      <node id="3479444786378230747" at="41,0,44,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
-      <node id="3479444786378230747" at="22,0,26,0" concept="8" trace="isRerunnable#()Z" />
-      <node id="3479444786378230747" at="26,0,30,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="3479444786378233559" at="32,122,37,9" concept="6" />
-      <node id="3479444786378233552" at="31,38,38,7" concept="6" />
-      <node id="3479444786378233550" at="30,42,39,5" concept="6" />
-      <node id="3479444786378230747" at="30,0,41,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
-      <scope id="3479444786378230747" at="19,30,20,23" />
-      <scope id="3479444786378230747" at="23,33,24,16" />
-      <scope id="3479444786378233567" at="34,51,35,37" />
-      <scope id="3479444786378230747" at="41,50,42,161" />
-      <scope id="3479444786378230747" at="26,41,28,16" />
-      <scope id="3479444786378230747" at="19,0,22,0" />
-      <scope id="3479444786378233565" at="33,72,36,11" />
-      <scope id="3479444786378230747" at="41,0,44,0" />
-      <scope id="3479444786378230747" at="22,0,26,0" />
-      <scope id="3479444786378230747" at="26,0,30,0">
+      <node id="3479444786378230747" at="12,0,13,0" concept="5" trace="description" />
+      <node id="3479444786378230747" at="13,30,14,23" concept="10" />
+      <node id="3479444786378230747" at="17,33,18,16" concept="10" />
+      <node id="3479444786378230747" at="20,41,21,17" concept="4" />
+      <node id="3479444786378230747" at="21,17,22,16" concept="10" />
+      <node id="5717674693762274377" at="24,42,25,82" concept="11" />
+      <node id="3479444786378230747" at="27,50,28,161" concept="10" />
+      <node id="3479444786378230747" at="13,0,16,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
+      <node id="3479444786378230747" at="24,0,27,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="3479444786378230747" at="27,0,30,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="3479444786378230747" at="16,0,20,0" concept="8" trace="isRerunnable#()Z" />
+      <node id="3479444786378230747" at="20,0,24,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3479444786378230747" at="13,30,14,23" />
+      <scope id="3479444786378230747" at="17,33,18,16" />
+      <scope id="3479444786378230747" at="24,42,25,82" />
+      <scope id="3479444786378230747" at="27,50,28,161" />
+      <scope id="3479444786378230747" at="20,41,22,16" />
+      <scope id="3479444786378230747" at="13,0,16,0" />
+      <scope id="3479444786378230747" at="24,0,27,0">
         <var name="m" id="3479444786378230747" />
       </scope>
-      <scope id="3479444786378233558" at="32,122,37,9" />
-      <scope id="3479444786378233559" at="32,122,37,9">
-        <var name="p" id="3479444786378233560" />
-      </scope>
-      <scope id="3479444786378233551" at="31,38,38,7" />
-      <scope id="3479444786378233552" at="31,38,38,7">
-        <var name="afc" id="3479444786378233553" />
-      </scope>
-      <scope id="3479444786378230747" at="30,42,39,5" />
-      <scope id="3479444786378233550" at="30,42,39,5">
-        <var name="mod" id="3479444786378233581" />
-      </scope>
-      <scope id="3479444786378230747" at="30,0,41,0">
+      <scope id="3479444786378230747" at="27,0,30,0" />
+      <scope id="3479444786378230747" at="16,0,20,0" />
+      <scope id="3479444786378230747" at="20,0,24,0">
         <var name="m" id="3479444786378230747" />
       </scope>
-      <unit id="3479444786378230747" at="45,0,48,0" name="org.iets3.variability.featuremodel.base.migration.remove_autoComplete$CONCEPTS" />
-      <unit id="3479444786378230747" at="17,0,49,0" name="org.iets3.variability.featuremodel.base.migration.remove_autoComplete" />
+      <unit id="3479444786378230747" at="11,0,32,0" name="org.iets3.variability.featuremodel.base.migration.remove_autoComplete" />
     </file>
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/3568907333702582961">
@@ -2146,52 +2097,33 @@
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/6239482662729439870">
     <file name="remove_migrated_fmc.java">
-      <node id="6239482662729439870" at="18,0,19,0" concept="5" trace="description" />
-      <node id="6239482662729439870" at="19,30,20,23" concept="10" />
-      <node id="6239482662729439870" at="23,33,24,16" concept="10" />
-      <node id="6239482662729439870" at="26,41,27,17" concept="4" />
-      <node id="6239482662729439870" at="27,17,28,16" concept="10" />
-      <node id="6239482662729466503" at="34,47,35,37" concept="4" />
-      <node id="6239482662729439870" at="41,50,42,161" concept="10" />
-      <node id="6239482662729439870" at="46,0,47,0" concept="13" trace="FeatureModelConfiguration_old$Nr" />
-      <node id="6239482662729439870" at="19,0,22,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
-      <node id="6239482662729455493" at="33,72,36,11" concept="7" />
-      <node id="6239482662729439870" at="41,0,44,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
-      <node id="6239482662729439870" at="22,0,26,0" concept="8" trace="isRerunnable#()Z" />
-      <node id="6239482662729439870" at="26,0,30,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="6239482662729443646" at="32,119,37,9" concept="6" />
-      <node id="6239482662729440906" at="31,38,38,7" concept="6" />
-      <node id="6239482662729440904" at="30,42,39,5" concept="6" />
-      <node id="6239482662729439870" at="30,0,41,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
-      <scope id="6239482662729439870" at="19,30,20,23" />
-      <scope id="6239482662729439870" at="23,33,24,16" />
-      <scope id="6239482662729455495" at="34,47,35,37" />
-      <scope id="6239482662729439870" at="41,50,42,161" />
-      <scope id="6239482662729439870" at="26,41,28,16" />
-      <scope id="6239482662729439870" at="19,0,22,0" />
-      <scope id="6239482662729443649" at="33,72,36,11" />
-      <scope id="6239482662729439870" at="41,0,44,0" />
-      <scope id="6239482662729439870" at="22,0,26,0" />
-      <scope id="6239482662729439870" at="26,0,30,0">
+      <node id="6239482662729439870" at="12,0,13,0" concept="5" trace="description" />
+      <node id="6239482662729439870" at="13,30,14,23" concept="10" />
+      <node id="6239482662729439870" at="17,33,18,16" concept="10" />
+      <node id="6239482662729439870" at="20,41,21,17" concept="4" />
+      <node id="6239482662729439870" at="21,17,22,16" concept="10" />
+      <node id="5717674693762271625" at="24,42,25,82" concept="11" />
+      <node id="6239482662729439870" at="27,50,28,161" concept="10" />
+      <node id="6239482662729439870" at="13,0,16,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
+      <node id="6239482662729439870" at="24,0,27,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="6239482662729439870" at="27,0,30,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="6239482662729439870" at="16,0,20,0" concept="8" trace="isRerunnable#()Z" />
+      <node id="6239482662729439870" at="20,0,24,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="6239482662729439870" at="13,30,14,23" />
+      <scope id="6239482662729439870" at="17,33,18,16" />
+      <scope id="6239482662729439870" at="24,42,25,82" />
+      <scope id="6239482662729439870" at="27,50,28,161" />
+      <scope id="6239482662729439870" at="20,41,22,16" />
+      <scope id="6239482662729439870" at="13,0,16,0" />
+      <scope id="6239482662729439870" at="24,0,27,0">
         <var name="m" id="6239482662729439870" />
       </scope>
-      <scope id="6239482662729440912" at="32,119,37,9" />
-      <scope id="6239482662729443646" at="32,119,37,9">
-        <var name="p" id="6239482662729443647" />
-      </scope>
-      <scope id="6239482662729440905" at="31,38,38,7" />
-      <scope id="6239482662729440906" at="31,38,38,7">
-        <var name="fmc" id="6239482662729440907" />
-      </scope>
-      <scope id="6239482662729439870" at="30,42,39,5" />
-      <scope id="6239482662729440904" at="30,42,39,5">
-        <var name="mod" id="6239482662729440941" />
-      </scope>
-      <scope id="6239482662729439870" at="30,0,41,0">
+      <scope id="6239482662729439870" at="27,0,30,0" />
+      <scope id="6239482662729439870" at="16,0,20,0" />
+      <scope id="6239482662729439870" at="20,0,24,0">
         <var name="m" id="6239482662729439870" />
       </scope>
-      <unit id="6239482662729439870" at="45,0,48,0" name="org.iets3.variability.featuremodel.base.migration.remove_migrated_fmc$CONCEPTS" />
-      <unit id="6239482662729439870" at="17,0,49,0" name="org.iets3.variability.featuremodel.base.migration.remove_migrated_fmc" />
+      <unit id="6239482662729439870" at="11,0,32,0" name="org.iets3.variability.featuremodel.base.migration.remove_migrated_fmc" />
     </file>
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/6239482662730880260">
@@ -2246,52 +2178,33 @@
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/719012571954691976">
     <file name="RemoveAutoset.java">
-      <node id="719012571954691976" at="18,0,19,0" concept="5" trace="description" />
-      <node id="719012571954691976" at="19,30,20,23" concept="10" />
-      <node id="719012571954691976" at="23,33,24,16" concept="10" />
-      <node id="719012571954691976" at="26,41,27,17" concept="4" />
-      <node id="719012571954691976" at="27,17,28,16" concept="10" />
-      <node id="719012571954694665" at="34,46,35,37" concept="4" />
-      <node id="719012571954691976" at="41,50,42,161" concept="10" />
-      <node id="719012571954691976" at="46,0,47,0" concept="13" trace="FeatureAttributeAssignment_old$t0" />
-      <node id="719012571954691976" at="19,0,22,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
-      <node id="719012571954694663" at="33,72,36,11" concept="7" />
-      <node id="719012571954691976" at="41,0,44,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
-      <node id="719012571954691976" at="22,0,26,0" concept="8" trace="isRerunnable#()Z" />
-      <node id="719012571954691976" at="26,0,30,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="719012571954694656" at="32,120,37,9" concept="6" />
-      <node id="719012571954694649" at="31,38,38,7" concept="6" />
-      <node id="719012571954694647" at="30,42,39,5" concept="6" />
-      <node id="719012571954691976" at="30,0,41,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
-      <scope id="719012571954691976" at="19,30,20,23" />
-      <scope id="719012571954691976" at="23,33,24,16" />
-      <scope id="719012571954694664" at="34,46,35,37" />
-      <scope id="719012571954691976" at="41,50,42,161" />
-      <scope id="719012571954691976" at="26,41,28,16" />
-      <scope id="719012571954691976" at="19,0,22,0" />
-      <scope id="719012571954694662" at="33,72,36,11" />
-      <scope id="719012571954691976" at="41,0,44,0" />
-      <scope id="719012571954691976" at="22,0,26,0" />
-      <scope id="719012571954691976" at="26,0,30,0">
+      <node id="719012571954691976" at="12,0,13,0" concept="5" trace="description" />
+      <node id="719012571954691976" at="13,30,14,23" concept="10" />
+      <node id="719012571954691976" at="17,33,18,16" concept="10" />
+      <node id="719012571954691976" at="20,41,21,17" concept="4" />
+      <node id="719012571954691976" at="21,17,22,16" concept="10" />
+      <node id="5717674693762291813" at="24,42,25,82" concept="11" />
+      <node id="719012571954691976" at="27,50,28,161" concept="10" />
+      <node id="719012571954691976" at="13,0,16,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
+      <node id="719012571954691976" at="24,0,27,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="719012571954691976" at="27,0,30,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="719012571954691976" at="16,0,20,0" concept="8" trace="isRerunnable#()Z" />
+      <node id="719012571954691976" at="20,0,24,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="719012571954691976" at="13,30,14,23" />
+      <scope id="719012571954691976" at="17,33,18,16" />
+      <scope id="719012571954691976" at="24,42,25,82" />
+      <scope id="719012571954691976" at="27,50,28,161" />
+      <scope id="719012571954691976" at="20,41,22,16" />
+      <scope id="719012571954691976" at="13,0,16,0" />
+      <scope id="719012571954691976" at="24,0,27,0">
         <var name="m" id="719012571954691976" />
       </scope>
-      <scope id="719012571954694655" at="32,120,37,9" />
-      <scope id="719012571954694656" at="32,120,37,9">
-        <var name="p" id="719012571954694657" />
-      </scope>
-      <scope id="719012571954694648" at="31,38,38,7" />
-      <scope id="719012571954694649" at="31,38,38,7">
-        <var name="afc" id="719012571954694650" />
-      </scope>
-      <scope id="719012571954691976" at="30,42,39,5" />
-      <scope id="719012571954694647" at="30,42,39,5">
-        <var name="mod" id="719012571954694678" />
-      </scope>
-      <scope id="719012571954691976" at="30,0,41,0">
+      <scope id="719012571954691976" at="27,0,30,0" />
+      <scope id="719012571954691976" at="16,0,20,0" />
+      <scope id="719012571954691976" at="20,0,24,0">
         <var name="m" id="719012571954691976" />
       </scope>
-      <unit id="719012571954691976" at="45,0,48,0" name="org.iets3.variability.featuremodel.base.migration.RemoveAutoset$CONCEPTS" />
-      <unit id="719012571954691976" at="17,0,49,0" name="org.iets3.variability.featuremodel.base.migration.RemoveAutoset" />
+      <unit id="719012571954691976" at="11,0,32,0" name="org.iets3.variability.featuremodel.base.migration.RemoveAutoset" />
     </file>
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/8118752970858905588">
@@ -3011,63 +2924,33 @@
   </root>
   <root nodeRef="r:4f77ccbe-4976-4bc4-b961-c546df39e929(org.iets3.variability.featuremodel.base.migration)/9092182560530713527">
     <file name="UpdateConfigurationHash.java">
-      <node id="9092182560530713527" at="21,0,22,0" concept="5" trace="description" />
-      <node id="9092182560530713527" at="22,30,23,23" concept="10" />
-      <node id="9092182560530713527" at="26,33,27,16" concept="10" />
-      <node id="9092182560530713527" at="29,41,30,17" concept="4" />
-      <node id="9092182560530713527" at="30,17,31,16" concept="10" />
-      <node id="9092182560531786863" at="35,168,36,110" concept="4" />
-      <node id="9092182560531786799" at="38,5,39,0" concept="12" />
-      <node id="9092182560530713527" at="41,50,42,161" concept="10" />
-      <node id="7598187151652137864" at="45,53,46,205" concept="10" />
-      <node id="9092182560533648464" at="49,65,50,233" concept="10" />
-      <node id="9092182560530713527" at="54,0,55,0" concept="13" trace="FeatureModelConfiguration_old$Nr" />
-      <node id="9092182560530713527" at="58,0,59,0" concept="13" trace="extendedFMC_old$QHBh" />
-      <node id="9092182560530713527" at="62,0,63,0" concept="13" trace="__adaptHash_old$u7ad" />
-      <node id="9092182560530713527" at="63,0,64,0" concept="13" trace="__updateHash$vTMx" />
-      <node id="9092182560530713527" at="22,0,25,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
-      <node id="9092182560531786838" at="34,38,37,7" concept="6" />
-      <node id="9092182560530713527" at="41,0,44,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
-      <node id="9092182560531792144" at="45,0,48,0" concept="8" trace="shallApplyMigration#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="9092182560533648477" at="49,0,52,0" concept="8" trace="hasNotChangedAccordingToOldHash#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="9092182560530713527" at="25,0,29,0" concept="8" trace="isRerunnable#()Z" />
-      <node id="9092182560530713527" at="29,0,33,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="9092182560531786831" at="33,42,38,5" concept="6" />
-      <node id="9092182560530713527" at="33,0,41,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
-      <scope id="9092182560530713527" at="22,30,23,23" />
-      <scope id="9092182560530713527" at="26,33,27,16" />
-      <scope id="9092182560531786862" at="35,168,36,110" />
-      <scope id="9092182560530713527" at="41,50,42,161" />
-      <scope id="9092182560531792125" at="45,53,46,205" />
-      <scope id="9092182560533648463" at="49,65,50,233" />
-      <scope id="9092182560530713527" at="29,41,31,16" />
-      <scope id="9092182560530713527" at="22,0,25,0" />
-      <scope id="9092182560531786837" at="34,38,37,7" />
-      <scope id="9092182560531786838" at="34,38,37,7">
-        <var name="configuration" id="9092182560531786839" />
-      </scope>
-      <scope id="9092182560530713527" at="41,0,44,0" />
-      <scope id="9092182560531792144" at="45,0,48,0">
-        <var name="config" id="9092182560531792138" />
-      </scope>
-      <scope id="9092182560533648477" at="49,0,52,0">
-        <var name="config" id="9092182560533648472" />
-      </scope>
-      <scope id="9092182560530713527" at="25,0,29,0" />
-      <scope id="9092182560530713527" at="29,0,33,0">
+      <node id="9092182560530713527" at="12,0,13,0" concept="5" trace="description" />
+      <node id="9092182560530713527" at="13,30,14,23" concept="10" />
+      <node id="9092182560530713527" at="17,33,18,16" concept="10" />
+      <node id="9092182560530713527" at="20,41,21,17" concept="4" />
+      <node id="9092182560530713527" at="21,17,22,16" concept="10" />
+      <node id="5717674693762288979" at="24,42,25,82" concept="11" />
+      <node id="9092182560530713527" at="27,50,28,161" concept="10" />
+      <node id="9092182560530713527" at="13,0,16,0" concept="8" trace="getCaption#()Ljava/lang/String;" />
+      <node id="9092182560530713527" at="24,0,27,0" concept="8" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="9092182560530713527" at="27,0,30,0" concept="8" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="9092182560530713527" at="16,0,20,0" concept="8" trace="isRerunnable#()Z" />
+      <node id="9092182560530713527" at="20,0,24,0" concept="8" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="9092182560530713527" at="13,30,14,23" />
+      <scope id="9092182560530713527" at="17,33,18,16" />
+      <scope id="9092182560530713527" at="24,42,25,82" />
+      <scope id="9092182560530713527" at="27,50,28,161" />
+      <scope id="9092182560530713527" at="20,41,22,16" />
+      <scope id="9092182560530713527" at="13,0,16,0" />
+      <scope id="9092182560530713527" at="24,0,27,0">
         <var name="m" id="9092182560530713527" />
       </scope>
-      <scope id="9092182560531786831" at="33,42,38,5">
-        <var name="mod" id="9092182560531786832" />
-      </scope>
-      <scope id="9092182560530713527" at="33,42,39,0" />
-      <scope id="9092182560530713527" at="33,0,41,0">
+      <scope id="9092182560530713527" at="27,0,30,0" />
+      <scope id="9092182560530713527" at="16,0,20,0" />
+      <scope id="9092182560530713527" at="20,0,24,0">
         <var name="m" id="9092182560530713527" />
       </scope>
-      <unit id="9092182560530713527" at="53,0,56,0" name="org.iets3.variability.featuremodel.base.migration.UpdateConfigurationHash$CONCEPTS" />
-      <unit id="9092182560530713527" at="57,0,60,0" name="org.iets3.variability.featuremodel.base.migration.UpdateConfigurationHash$LINKS" />
-      <unit id="9092182560530713527" at="61,0,65,0" name="org.iets3.variability.featuremodel.base.migration.UpdateConfigurationHash$PROPS" />
-      <unit id="9092182560530713527" at="20,0,66,0" name="org.iets3.variability.featuremodel.base.migration.UpdateConfigurationHash" />
+      <unit id="9092182560530713527" at="11,0,32,0" name="org.iets3.variability.featuremodel.base.migration.UpdateConfigurationHash" />
     </file>
   </root>
 </debug-info>

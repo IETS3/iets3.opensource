@@ -122,7 +122,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createSideTransformationHolderProcessor_0());
-    editorCell.addEditorCell(createCustomFactory_7());
+    editorCell.addEditorCell(createCustomFactory_9());
     return editorCell;
   }
   private EditorCell createSideTransformationHolderProcessor_0() {
@@ -137,7 +137,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     editorCell.setCellId("Collection_rz8mbo_a0a");
     editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createProperty_0());
-    editorCell.addEditorCell(createAlternation_0());
+    editorCell.addEditorCell(createCustomFactory_5());
     return editorCell;
   }
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
@@ -211,27 +211,39 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
       getCellFactory().popCellContext();
     }
   }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createAlternation_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    Style style = new StyleImpl();
+    new iets3KeywordStyleClass(this).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), myNode);
+  }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
-    alternationCondition = nodeCondition_rz8mbo_a2a0a();
+    alternationCondition = nodeCondition_rz8mbo_a0c0a0();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createCustomFactory_5();
+      editorCell = createCustomFactory_7();
     } else {
       editorCell = createSideTransformationSectionCell_0();
     }
     return editorCell;
   }
-  private boolean nodeCondition_rz8mbo_a2a0a() {
+  private boolean nodeCondition_rz8mbo_a0c0a0() {
     IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.allowLookup$yBV8);
     if (!(access.read(myNode))) {
       return false;
     }
 
-
     return true;
   }
-  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createConstant_0();
@@ -254,8 +266,8 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), myNode);
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "allows lookup");
@@ -270,13 +282,13 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     SideTransformationHolderCell editorCell = new SideTransformationHolderCell(getEditorContext(), myNode, null, "flag 'allows lookup'") {
       @Override
       public List<MenuPart<TransformationMenuItem, TransformationMenuContext>> createMenuParts() {
-        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a2a0a());
+        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0c0a0());
       }
     };
-    editorCell.setCellId("SideTransformationSectionCell_rz8mbo_a2a0a");
+    editorCell.setCellId("SideTransformationSectionCell_rz8mbo_a0c0a0");
     return editorCell;
   }
-  private class GenericMenuPart_a0a2a0a implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0a0c0a0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
@@ -334,7 +346,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
       return result;
     }
   }
-  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createTable_1();
@@ -351,8 +363,8 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_9() {
+    return createCustomFactory_8(getEditorContext(), myNode);
   }
   private EditorCell createTable_0(final EditorContext editorContext, final SNode node) {
 

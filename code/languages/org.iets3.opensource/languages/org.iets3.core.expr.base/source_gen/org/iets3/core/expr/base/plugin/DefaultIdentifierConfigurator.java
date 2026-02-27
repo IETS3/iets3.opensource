@@ -22,4 +22,22 @@ public class DefaultIdentifierConfigurator extends IdentifierConfigurator {
     return false;
   }
 
+  @Override
+  public boolean overrideAllowUmlautsInIdentifiers(boolean overrideDefault) {
+    return overrideDefault;
+  }
+
+  @Override
+  public boolean overrideAllowParagraphsInIdentifiers(boolean overrideDefault) {
+    return overrideDefault;
+  }
+  @Override
+  public boolean allowApostropheInIdentifiers(SAbstractConcept concept) {
+    // yes, true. Looks like we allowed them by default in the past.
+    return true;
+  }
+  @Override
+  public boolean overrideAllowApostrophesInIdentifiers(boolean overrideDefault) {
+    return overrideDefault;
+  }
 }

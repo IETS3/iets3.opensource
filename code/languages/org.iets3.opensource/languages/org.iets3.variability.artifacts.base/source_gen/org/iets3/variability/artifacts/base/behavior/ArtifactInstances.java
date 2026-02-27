@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Set;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
+import java.util.Optional;
 
 /**
  * In an artifact model with instantiation, this class provides a mapping from each IVAA to its instances.
@@ -146,13 +147,15 @@ public class ArtifactInstances {
     }
 
     @Override
-    public boolean visit(SkeletonNode sn) {
+    public boolean visit(final SkeletonNode sn) {
       boolean isFiltered = topFiltered != null && SetSequence.fromSet(topFiltered).contains(sn);
       if (!(isFiltered)) {
-        SkeletonNode.PivotInfo pivot = sn.getPivot();
-        if (pivot != null && pivot.isInstance() && Sequence.fromIterable(pivot.getFMIncludePath()).isNotEmpty()) {
-          ArtifactInstances.attach(pivot.getTargetIVAA(), sn);
-        }
+        Optional<Segment> lastSegmentMaybe = sn.getFullPath().lastSegment();
+        lastSegmentMaybe.ifPresent((seg) -> {
+          if (seg.isInstance() && (seg.getFMInclude() != null)) {
+            ArtifactInstances.attach(seg.getTargetIVAA(), sn);
+          }
+        });
       }
 
       // visit all children recursively, if this node is not filtered

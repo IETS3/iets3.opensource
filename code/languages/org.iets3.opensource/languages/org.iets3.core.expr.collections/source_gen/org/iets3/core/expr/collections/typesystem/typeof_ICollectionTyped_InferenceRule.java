@@ -28,7 +28,7 @@ public class typeof_ICollectionTyped_InferenceRule extends AbstractInferenceRule
           {
             SNode _nodeToCheck_1029348928467 = ict;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "4723261570605980360", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "4723261570605979488", true), (SNode) CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS)), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "4723261570605979488", true), (SNode) CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS)), _info_12389875345);
           }
         }
       }, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "4723261570605974979", false, false);

@@ -32,7 +32,7 @@ public class typeof_QuerySource_InferenceRule extends AbstractInferenceRule_Runt
             IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(qs, LINKS.expr$CW3E), "source must be a collection", "r:1c6ca975-dced-490b-9615-219a4aab0ba5(org.iets3.core.expr.query.typesystem)", "6749162445851438149", null, errorTarget);
           }
         }
-        SNode collType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS));
+        SNode collType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS));
         {
           SNode _nodeToCheck_1029348928467 = qs;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1c6ca975-dced-490b-9615-219a4aab0ba5(org.iets3.core.expr.query.typesystem)", "7554398283340692797", 0, null);

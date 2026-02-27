@@ -20,7 +20,7 @@ public class FeatureSuperTypes {
   public static Iterable<SNode> supertypes(SNode feature) {
     Iterable<SNode> types = Sequence.fromArray(new SNode[]{PTF.createBooleanType(), FeatureSuperTypes.baseFeature(feature)});
     if (SNodeOperations.isInstanceOf(feature, CONCEPTS.FeatureModelInclude$Iq)) {
-      return Iterables.concat(types, Collections.singleton(FeatureSuperTypes.baseFeature(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(feature, CONCEPTS.FeatureModelInclude$Iq), LINKS.fm$EY24), LINKS.root$XEj1))));
+      return Iterables.concat(types, Collections.singleton(FeatureSuperTypes.baseFeature(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.as(feature, CONCEPTS.FeatureModelInclude$Iq), LINKS.fm$EY24), LINKS.root$XEj1))));
     }
     return types;
   }

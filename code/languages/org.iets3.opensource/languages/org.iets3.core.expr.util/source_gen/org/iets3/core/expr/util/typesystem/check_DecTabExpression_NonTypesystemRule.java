@@ -26,13 +26,13 @@ public class check_DecTabExpression_NonTypesystemRule extends AbstractNonTypesys
   public void applyRule(final SNode dte, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     SNode rve = Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(dte, LINKS.expressions$2RXU), CONCEPTS.RangeValueExpr$Vq)).first();
     if ((rve != null)) {
-      if ((SNodeOperations.isInstanceOf(dte, CONCEPTS.DecTabColHeader$sR) && (SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(dte), CONCEPTS.DecTab$hI), LINKS.predefX$16Jb) == null))) {
+      if ((SNodeOperations.isInstanceOf(dte, CONCEPTS.DecTabColHeader$sR) && (SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(dte), CONCEPTS.DecTab$hI), LINKS.predefX$16Jb) == null))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(rve, BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(rve) + " can only be used in combination with predefined x axis.", "r:9c5c2614-fd32-4054-b6ea-f1ceb6bdd369(org.iets3.core.expr.util.typesystem)", "93572354143136918", null, errorTarget);
         }
       }
-      if ((SNodeOperations.isInstanceOf(dte, CONCEPTS.DecTabRowHeader$id) && (SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(dte), CONCEPTS.DecTab$hI), LINKS.predefY$bypa) == null))) {
+      if ((SNodeOperations.isInstanceOf(dte, CONCEPTS.DecTabRowHeader$id) && (SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(dte), CONCEPTS.DecTab$hI), LINKS.predefY$bypa) == null))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(rve, BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(rve) + " can only be used in combination with predefined y axis.", "r:9c5c2614-fd32-4054-b6ea-f1ceb6bdd369(org.iets3.core.expr.util.typesystem)", "93572354143370493", null, errorTarget);
@@ -46,14 +46,14 @@ public class check_DecTabExpression_NonTypesystemRule extends AbstractNonTypesys
       }
     }
     if (ListSequence.fromList(SLinkOperations.getChildren(dte, LINKS.expressions$2RXU)).count() > 1) {
-      if (SNodeOperations.isInstanceOf(dte, CONCEPTS.DecTabColHeader$sR) && (SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(dte), CONCEPTS.DecTab$hI), LINKS.predefX$16Jb) == null)) {
+      if (SNodeOperations.isInstanceOf(dte, CONCEPTS.DecTabColHeader$sR) && (SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(dte), CONCEPTS.DecTab$hI), LINKS.predefX$16Jb) == null)) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(dte, "multiple expressions can only be used in combination with predefined x axis.", "r:9c5c2614-fd32-4054-b6ea-f1ceb6bdd369(org.iets3.core.expr.util.typesystem)", "93572354148190197", null, errorTarget);
         }
 
       }
-      if (SNodeOperations.isInstanceOf(dte, CONCEPTS.DecTabRowHeader$id) && (SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(dte), CONCEPTS.DecTab$hI), LINKS.predefY$bypa) == null)) {
+      if (SNodeOperations.isInstanceOf(dte, CONCEPTS.DecTabRowHeader$id) && (SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(dte), CONCEPTS.DecTab$hI), LINKS.predefY$bypa) == null)) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(dte, "multiple expressions can only be used in combination with predefined y axis.", "r:9c5c2614-fd32-4054-b6ea-f1ceb6bdd369(org.iets3.core.expr.util.typesystem)", "93572354148194465", null, errorTarget);

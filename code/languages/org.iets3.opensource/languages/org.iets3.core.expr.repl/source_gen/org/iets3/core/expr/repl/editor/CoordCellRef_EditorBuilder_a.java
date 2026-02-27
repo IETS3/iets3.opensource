@@ -528,6 +528,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
+  private Color _StyleParameter_QueryFunction_3o3y7s_a0a() {
+    if (ListSequence.fromList(SLinkOperations.getChildren(AbstractCellRef__BehaviorDescriptor.resolve_id5xEoEMrDTcu.invoke(getNode()), LINKS.args$6U2h)).isNotEmpty()) {
+      return new JBColor(new Color(224, 247, 255), new Color(0, 54, 13));
+    }
+    return null;
+  }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink args$6U2h = MetaAdapterFactory.getContainmentLink(0x18001c9433a74f68L, 0xa7c1ffddc4b39be1L, 0x586a62ac9b582a48L, 0x586a62ac9b8f8608L, "args");

@@ -32,7 +32,7 @@ public class check_ConvertPrecisionNumberExpression_NonTypesystemRule extends Ab
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(ce, LINKS.expr$CW3E), "only number types can be used here", "r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)", "8825352096209705484", null, errorTarget);
       }
     } else {
-      SNode nt = SNodeOperations.cast(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(ce, LINKS.expr$CW3E)), CONCEPTS.NumberType$n);
+      SNode nt = SNodeOperations.as(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(ce, LINKS.expr$CW3E)), CONCEPTS.NumberType$n);
       if (!((boolean) NumberType__BehaviorDescriptor.isInfinitePrecision_id7Wa2sv3Gi_T.invoke(nt))) {
         int prec = (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(nt);
         if (prec == 0) {

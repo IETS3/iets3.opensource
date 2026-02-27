@@ -46,7 +46,7 @@ public class IVAADependencyHelper {
       return;
     }
     for (Segment cn : ListSequence.fromList(Sequence.fromIterable(dependencies).toList())) {
-      SNode target = cn.getTarget();
+      SNode target = cn.getTargetIVAA();
       if (!(prefix.visits(target))) {
         ArtifactPath path = prefix.append(cn);
         ListSequence.fromList(results).addElement(path);
@@ -56,7 +56,7 @@ public class IVAADependencyHelper {
   }
 
   public static Iterable<SNode> getDependenciesTransitivePlain(SNode ivaa) {
-    return TransitiveDepsComputer.compute(ivaa, (SNode ivaa_) -> Sequence.fromIterable(IVariabilityAwareArtifact__BehaviorDescriptor.getDependencies_id5LihCoMjdTK.invoke(ivaa_)).select((dep) -> dep.getTarget()).union(Sequence.fromIterable(IVariabilityAwareArtifact__BehaviorDescriptor.getDependenciesSimple_id28EqHe3I657.invoke(ivaa_))).distinct());
+    return TransitiveDepsComputer.compute(ivaa, (SNode ivaa_) -> Sequence.fromIterable(IVariabilityAwareArtifact__BehaviorDescriptor.getDependencies_id5LihCoMjdTK.invoke(ivaa_)).select((dep) -> dep.getTargetIVAA()).union(Sequence.fromIterable(IVariabilityAwareArtifact__BehaviorDescriptor.getDependenciesSimple_id28EqHe3I657.invoke(ivaa_))).distinct());
   }
 
   public static Iterable<SNode> getDirectDependenciesTransitive(SNode ivaa) {

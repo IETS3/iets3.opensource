@@ -33,7 +33,7 @@ public class typeof_BracketOp_InferenceRule extends AbstractInferenceRule_Runtim
           {
             SNode _nodeToCheck_1029348928467 = bo;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163334288", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163334295", true), (SNode) IHasBaseType__BehaviorDescriptor.getBaseType_id3oWFox95OZf.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.IOrderedCollection$MT)), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163334295", true), (SNode) IHasBaseType__BehaviorDescriptor.getBaseType_id3oWFox95OZf.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.IOrderedCollection$MT)), _info_12389875345);
           }
           {
             SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(bo, LINKS.index$mMKU);
@@ -44,12 +44,12 @@ public class typeof_BracketOp_InferenceRule extends AbstractInferenceRule_Runtim
           {
             SNode _nodeToCheck_1029348928467 = bo;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "5849458724932733144", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "5849458724932733151", true), (SNode) SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.MapType$6), LINKS.valueType$h$Ys), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "5849458724932733151", true), (SNode) SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.MapType$6), LINKS.valueType$h$Ys), _info_12389875345);
           }
           {
             SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(bo, LINKS.index$mMKU);
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2143211017899505712", 0, null);
-            typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2143211017899505715", true), (SNode) SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.MapType$6), LINKS.keyType$h$wq), false, true, _info_12389875345);
+            typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2143211017899505715", true), (SNode) SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.MapType$6), LINKS.keyType$h$wq), false, true, _info_12389875345);
           }
         } else {
           {

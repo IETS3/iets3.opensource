@@ -931,35 +931,66 @@
       <node id="4394073590212342990" at="23,27,24,87" concept="2" />
       <node id="4394073590212352592" at="25,14,26,58" concept="2" />
       <node id="4394073590212319470" at="28,5,29,52" concept="9" />
-      <node id="4394073590212378080" at="32,77,33,96" concept="9" />
-      <node id="4394073590212383291" at="36,80,37,99" concept="9" />
-      <node id="3338854161630822436" at="47,30,48,23" concept="2" />
+      <node id="6505586264318259808" at="32,77,33,53" concept="9" />
+      <node id="6505586264318311223" at="36,107,37,83" concept="8" />
+      <node id="6505586264318300582" at="37,83,38,137" concept="9" />
+      <node id="6505586264318270409" at="41,80,42,56" concept="9" />
+      <node id="6505586264318320435" at="45,110,46,83" concept="8" />
+      <node id="6505586264318313679" at="46,83,47,143" concept="9" />
+      <node id="6806225547895569379" at="50,110,51,83" concept="8" />
+      <node id="3372586109324214643" at="51,83,52,38" concept="10" />
+      <node id="6806225547895569383" at="52,38,53,144" concept="9" />
+      <node id="3338854161630822436" at="64,30,65,23" concept="2" />
       <node id="4394073590212352335" at="25,12,27,7" concept="0" />
       <node id="4394073590212368663" at="32,0,35,0" concept="13" trace="allowUmlautsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
-      <node id="4394073590212383289" at="36,0,39,0" concept="13" trace="allowParagraphsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
-      <node id="3338854161630822017" at="47,0,50,0" concept="13" trace="reset#()V" />
+      <node id="4394073590212383289" at="41,0,44,0" concept="13" trace="allowParagraphsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="3338854161630822017" at="64,0,67,0" concept="13" trace="reset#()V" />
+      <node id="6505586264318251785" at="36,0,40,0" concept="13" trace="allowUmlautsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Z)Z" />
+      <node id="6505586264318265972" at="45,0,49,0" concept="13" trace="allowParagraphsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Z)Z" />
       <node id="4394073590212339124" at="22,128,27,7" concept="6" />
+      <node id="6806225547895562519" at="50,0,55,0" concept="13" trace="allowApostropheInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Z)Z" />
       <node id="4394073590212319428" at="19,61,28,5" concept="6" />
       <node id="4394073590212319426" at="19,0,31,0" concept="13" trace="resolveIdentConfig#()Lorg/iets3/core/expr/base/plugin/IdentifierConfigurator;" />
       <scope id="4394073590212339126" at="23,27,24,87" />
       <scope id="4394073590212352336" at="25,14,26,58" />
-      <scope id="4394073590212364967" at="32,77,33,96" />
-      <scope id="4394073590212383290" at="36,80,37,99" />
-      <scope id="3338854161630822020" at="47,30,48,23" />
+      <scope id="4394073590212364967" at="32,77,33,53" />
+      <scope id="4394073590212383290" at="41,80,42,56" />
+      <scope id="3338854161630822020" at="64,30,65,23" />
+      <scope id="6505586264318251788" at="36,107,38,137">
+        <var name="cfg" id="6505586264318311224" />
+      </scope>
+      <scope id="6505586264318265975" at="45,110,47,143">
+        <var name="cfg" id="6505586264318320436" />
+      </scope>
       <scope id="4394073590212368663" at="32,0,35,0">
         <var name="concept" id="7194131562578330838" />
       </scope>
-      <scope id="4394073590212383289" at="36,0,39,0">
+      <scope id="4394073590212383289" at="41,0,44,0">
         <var name="concept" id="7194131562578331733" />
       </scope>
-      <scope id="3338854161630822017" at="47,0,50,0" />
+      <scope id="6806225547895562522" at="50,110,53,144">
+        <var name="cfg" id="6806225547895569380" />
+      </scope>
+      <scope id="3338854161630822017" at="64,0,67,0" />
+      <scope id="6505586264318251785" at="36,0,40,0">
+        <var name="concept" id="6505586264318251786" />
+        <var name="defaultOverrideValue" id="6505586264317921973" />
+      </scope>
+      <scope id="6505586264318265972" at="45,0,49,0">
+        <var name="concept" id="6505586264318265973" />
+        <var name="defaultOverrideValue" id="6505586264318000861" />
+      </scope>
+      <scope id="6806225547895562519" at="50,0,55,0">
+        <var name="concept" id="6806225547895564229" />
+        <var name="defaultOverrideValue" id="6806225547895566165" />
+      </scope>
       <scope id="4394073590212319429" at="20,59,27,7">
         <var name="config" id="4394073590212331426" />
         <var name="ep" id="4394073590212319431" />
       </scope>
       <scope id="4394073590212319427" at="19,61,29,52" />
       <scope id="4394073590212319426" at="19,0,31,0" />
-      <unit id="7194131562578297857" at="11,0,51,0" name="org.iets3.core.expr.base.runtime.runtime.IdentifierConfiguratorAccess" />
+      <unit id="7194131562578297857" at="11,0,68,0" name="org.iets3.core.expr.base.runtime.runtime.IdentifierConfiguratorAccess" />
     </file>
   </root>
 </debug-info>

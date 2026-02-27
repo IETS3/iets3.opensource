@@ -27,8 +27,8 @@ public class typeof_QueryTransform_InferenceRule extends AbstractInferenceRule_R
         {
           final SNode sourceType = typeCheckingContext.typeOf(SLinkOperations.getTarget(SLinkOperations.getTarget(AbstractQueryComponent__BehaviorDescriptor.query_id5QDPRL$oZHJ.invoke(qt), LINKS.source$IlS6), LINKS.expr$CW3E), "r:1c6ca975-dced-490b-9615-219a4aab0ba5(org.iets3.core.expr.query.typesystem)", "6749162445852452012", true);
           typeCheckingContext.whenConcrete(sourceType, () -> {
-            SNode collType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(sourceType), CONCEPTS.CollectionType$kS));
-            SLinkOperations.setTarget(collType, LINKS.baseType$5NOJ, SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(resType)), CONCEPTS.Type$WK));
+            SNode collType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(sourceType), CONCEPTS.CollectionType$kS));
+            SLinkOperations.setTarget(collType, LINKS.baseType$5NOJ, SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(resType)), CONCEPTS.Type$WK));
             {
               SNode _nodeToCheck_1029348928467 = qt;
               EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1c6ca975-dced-490b-9615-219a4aab0ba5(org.iets3.core.expr.query.typesystem)", "6749162445852452006", 0, null);

@@ -22,22 +22,22 @@ import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import org.apache.commons.lang3.tuple.Pair;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import org.iets3.variability.configuration.base.behavior.FeatureModelConfHashUtil;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import org.iets3.variability.configuration.base.behavior.ConfigRelationFinder;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
 import org.iets3.analysis.base.plugin.AsyncSolverTaskExecutor;
 import org.iets3.analysis.solversupport.util.plugin.ISolvableSettingsModel;
 import java.util.Map;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.variability.configuration.base.behavior.AbstractFeatureConfiguration__BehaviorDescriptor;
 import jetbrains.mps.smodel.SNodeMatcher;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.analysis.solversupport.util.plugin.FixedValueCategory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.iets3.variability.configuration.base.behavior.FeatureAttributeAssignment__BehaviorDescriptor;
-import org.iets3.analysis.base.behavior.ISolvable__BehaviorDescriptor;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.base.behavior.IDetectNeedToRunManually__BehaviorDescriptor;
+import org.iets3.variability.configuration.base.behavior.ConfigRelationFinder;
+import org.iets3.analysis.base.behavior.ISolvable__BehaviorDescriptor;
 import org.iets3.analysis.base.behavior.AbstractSolverTask__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
@@ -160,11 +160,8 @@ public class ConfigurationSolverFacade {
         });
       });
 
-      // now go up the tree and find all referrers in the current module, they should update as well
-      final Wrappers._T<List<SNode>> allReferrers = new Wrappers._T<List<SNode>>();
-      mpsAction.readAction(() -> allReferrers.value = Sequence.fromIterable(ConfigRelationFinder.allReferrers(SNodeOperations.getModel(ConfigurationSolverFacade.this.fmc), ConfigurationSolverFacade.this.fmc)).toList());
-      assert allReferrers.value != null;
-      return ListSequence.fromList(allReferrers.value).select((it) -> new ConfigurationSolverFacade(it).solverResultsAsync(mpsAction)).toList();
+      // find all referring configurations and update them as well (asynchronously)
+      return propagateToReferringConfigs(mpsAction);
     }
     return Collections.singletonList(CompletableFuture.completedFuture(Collections.<IResult>emptyList()));
   }
@@ -218,6 +215,7 @@ public class ConfigurationSolverFacade {
    * @return  
    */
   protected ConfigFixedValues configFixedValuesFor(MpsActions mpsActions, Collection<IResult> result) {
+    // NOTE: If "result" contains actual data, then it will be ignored here. Then most probably the overridden method AdvancedConfigurationSolverFacade should be called instead of this default method.
     return new ConfigFixedValues();
   }
 
@@ -274,16 +272,6 @@ public class ConfigurationSolverFacade {
     Sequence.fromIterable(descFMC).where((it) -> (boolean) AbstractFeatureConfiguration__BehaviorDescriptor.isForcedFalse_id7yoiok7KEd_.invoke(it)).visitAll((it) -> SPropertyOperations.setEnum(it, PROPS.selectionState$zbc1, 0x5db06c237c250a81L, "userFalse"));
   }
 
-  private void propagateToReferringConfigurations() {
-    // now go up the tree and find all referrers in the current module, they should update as well
-    for (SNode otherFMC : Sequence.fromIterable(ConfigRelationFinder.allReferrers(SNodeOperations.getModel(fmc), fmc))) {
-      // Necessary so the solver does not abort
-      SPropertyOperations.assign(otherFMC, PROPS.complete$4SB6, true);
-      // ToDo triggers SolverTasks, but does not collect results of them. Goal: A global problem report of all SolverTask results 
-      ISolvable__BehaviorDescriptor.runSolver_id7QODtLw3SMH.invoke(otherFMC);
-    }
-  }
-
   private void updateConfig(ConfigFixedValues configFixedValues) {
     configFixedValues.errorMessage().ifPresent((errMsg) -> {
       FeatureModelConfiguration__BehaviorDescriptor.showError_id5UDdUfokAGW.invoke(ConfigurationSolverFacade.this.fmc, ConfigurationSolverFacade.this.errorMessageForFailedFixedValues(errMsg));
@@ -294,12 +282,17 @@ public class ConfigurationSolverFacade {
     this.unsetAutomaticAttributeAssignment();
 
     updateState(configFixedValues);
-    this.propagateToReferringConfigurations();
     IDetectNeedToRunManually__BehaviorDescriptor.updateHash_id6MJy$PGs_q4.invoke(this.fmc);
 
     SPropertyOperations.assign(this.fmc, PROPS.complete$4SB6, true);
   }
 
+  private Collection<CompletableFuture<List<IResult>>> propagateToReferringConfigs(final MpsActions mpsActions) {
+    final Wrappers._T<List<SNode>> allReferrers = new Wrappers._T<List<SNode>>();
+    mpsActions.readAction(() -> allReferrers.value = Sequence.fromIterable(ConfigRelationFinder.allReferrers(SNodeOperations.getModel(ConfigurationSolverFacade.this.fmc), ConfigurationSolverFacade.this.fmc)).toList());
+    assert allReferrers.value != null;
+    return ListSequence.fromList(allReferrers.value).select((it) -> IConfigurationSolver.instance().solverResultsAsync(it, mpsActions)).toList();
+  }
 
   private IResult solverResult() {
     if (!(SPropertyOperations.getBoolean(this.fmc, PROPS.complete$4SB6))) {

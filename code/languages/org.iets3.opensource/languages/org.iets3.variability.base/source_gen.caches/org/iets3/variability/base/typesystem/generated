@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="apc8i5k8uqelgolqewgxz54asbswkyh">
-  <files names="TypesystemDescriptor.java" />
+<product version="3" modelHash="-8eym5dj03c6ok72500b7xec5rlk615w">
+  <files names="TypesystemDescriptor.java:check_VariabilityModelChunk_NonTypesystemRule.java:fix_VariabilityModelChunk_QuickFix.java" />
 </product>
 

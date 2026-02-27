@@ -30,7 +30,7 @@ public class typeof_SpreadValuesOp_InferenceRule extends AbstractInferenceRule_R
         {
           SNode _nodeToCheck_1029348928467 = svo;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "3885635233752767217", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "3885635233752766736", true), (SNode) createCollectionType_6xg4dp_a1a0c0a0b0a1a0a1(SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a))), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "3885635233752766736", true), (SNode) createCollectionType_6xg4dp_a1a0c0a0b0a1a0a1(SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a))), _info_12389875345);
         }
       }, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "3885635233752767499", false, false);
     }

@@ -29,7 +29,7 @@ public class typeof_BangOp_InferenceRule extends AbstractInferenceRule_Runtime i
           {
             SNode _nodeToCheck_1029348928467 = bang;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "2390066428848675665", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "2390066428848674987", true), (SNode) SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(base), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "2390066428848674987", true), (SNode) SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(base), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a), _info_12389875345);
           }
         } else {
           {

@@ -417,6 +417,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return result;
     }
   }
+  private boolean _StyleParameter_QueryFunction_2it54d_a0b0a() {
+    return true;
+  }
   private EditorCell createRefNode_1() {
     SingleRoleCellProvider provider = new valueSingleRoleHandler_2it54d_b0(myNode, LINKS.value$skhv, getEditorContext());
     return provider.createCell();

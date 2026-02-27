@@ -395,7 +395,7 @@
     <file name="typeof_DataRowOp_InferenceRule.java">
       <node id="231307155598638077" at="24,5,25,45" concept="6" />
       <node id="231307155598638077" at="25,45,26,200" concept="6" />
-      <node id="231307155598638077" at="26,200,27,417" concept="2" />
+      <node id="231307155598638077" at="26,200,27,415" concept="2" />
       <node id="231307155598636204" at="30,50,31,33" concept="7" />
       <node id="231307155598636204" at="33,68,34,102" concept="7" />
       <node id="231307155598636204" at="36,30,37,17" concept="7" />
@@ -419,7 +419,7 @@
       <scope id="231307155598636204" at="33,68,34,102" />
       <scope id="231307155598636204" at="36,30,37,17" />
       <scope id="231307155598636204" at="21,0,23,0" />
-      <scope id="231307155598638077" at="24,5,27,417">
+      <scope id="231307155598638077" at="24,5,27,415">
         <var name="_info_12389875345" id="231307155598638077" />
         <var name="_nodeToCheck_1029348928467" id="231307155598638077" />
       </scope>
@@ -602,7 +602,7 @@
     <file name="typeof_DataTableLookUp_InferenceRule.java">
       <node id="512624657163683225" at="26,5,27,57" concept="6" />
       <node id="512624657163683225" at="27,57,28,200" concept="6" />
-      <node id="512624657163683225" at="28,200,29,473" concept="2" />
+      <node id="512624657163683225" at="28,200,29,471" concept="2" />
       <node id="3324695263692379310" at="30,5,31,0" concept="8" />
       <node id="3324695263692382172" at="32,5,33,101" concept="6" />
       <node id="3324695263692382172" at="33,101,34,201" concept="6" />
@@ -639,7 +639,7 @@
       <scope id="512624657163683232" at="49,5,51,50">
         <var name="n1" id="512624657163683232" />
       </scope>
-      <scope id="512624657163683225" at="26,5,29,473">
+      <scope id="512624657163683225" at="26,5,29,471">
         <var name="_info_12389875345" id="512624657163683225" />
         <var name="_nodeToCheck_1029348928467" id="512624657163683225" />
       </scope>
@@ -683,14 +683,14 @@
       <node id="6527211908664776182" at="79,34,80,105" concept="2" />
       <node id="6527211908664776182" at="80,105,81,48" concept="2" />
       <node id="6527211908664793314" at="83,99,84,37" concept="7" />
-      <node id="6527211908664781578" at="86,132,87,237" concept="7" />
+      <node id="6527211908664781578" at="86,132,87,233" concept="7" />
       <node id="6527211908664776182" at="90,71,91,59" concept="2" />
       <node id="6527211908664776182" at="83,0,86,0" concept="5" trace="getOperationType#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="6527211908664776182" at="86,0,89,0" concept="5" trace="isApplicable#(Ljetbrains/mps/typesystem/inference/SubtypingManager;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="6527211908664776182" at="89,0,93,0" concept="5" trace="reportConflict#(Ljetbrains/mps/errors/IRuleConflictWarningProducer;)V" />
       <node id="6527211908664776182" at="72,0,83,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_a#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <scope id="6527211908664776187" at="83,99,84,37" />
-      <scope id="6527211908664781086" at="86,132,87,237" />
+      <scope id="6527211908664781086" at="86,132,87,233" />
       <scope id="6527211908664776182" at="90,71,91,59" />
       <scope id="6527211908664776182" at="83,0,86,0">
         <var name="leftOperandType" id="6527211908664776182" />

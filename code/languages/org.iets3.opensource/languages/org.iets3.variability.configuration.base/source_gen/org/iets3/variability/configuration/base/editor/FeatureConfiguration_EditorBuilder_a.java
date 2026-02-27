@@ -51,7 +51,6 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
 import javax.swing.JComponent;
-import org.iets3.variability.featuremodel.base.editor.FeatureConfigButton;
 import com.intellij.util.ui.JBUI;
 import com.intellij.ui.JBColor;
 import java.awt.Color;

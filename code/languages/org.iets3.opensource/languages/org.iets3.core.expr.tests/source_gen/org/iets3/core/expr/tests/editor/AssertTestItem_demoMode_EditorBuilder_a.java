@@ -327,6 +327,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return result;
     }
   }
+  private boolean _StyleParameter_QueryFunction_g1lux_a0a0() {
+    return true;
+  }
   private EditorCell createRefNode_1() {
     SingleRoleCellProvider provider = new actualSingleRoleHandler_g1lux_b0(myNode, LINKS.actual$7fmO, getEditorContext());
     return provider.createCell();

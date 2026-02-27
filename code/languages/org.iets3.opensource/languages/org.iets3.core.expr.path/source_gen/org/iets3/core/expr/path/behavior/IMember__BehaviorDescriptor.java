@@ -25,9 +25,9 @@ public final class IMember__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> getPathLabel_id6LLGpXJ4YES = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPathLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7814222126786013880L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
   public static final SMethod<Color> getPathColor_id2U5Q01Ug$y6 = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getPathColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3352322994209966214L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPathLabel_id6LLGpXJ4YES, getPathColor_id2U5Q01Ug$y6, allowUmlaute_id5YygIlbih$m);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPathLabel_id6LLGpXJ4YES, getPathColor_id2U5Q01Ug$y6, overrideDefaultAllowUmlaute_id5D8v3P4jYKp);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -38,7 +38,7 @@ public final class IMember__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static Color getPathColor_id2U5Q01Ug$y6(@NotNull SNode __thisNode__) {
     return null;
   }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
+  /*package*/ static boolean overrideDefaultAllowUmlaute_id5D8v3P4jYKp(@NotNull SAbstractConcept __thisConcept__) {
     return true;
   }
 
@@ -74,7 +74,7 @@ public final class IMember__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 2:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
+        return (T) ((Boolean) overrideDefaultAllowUmlaute_id5D8v3P4jYKp(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

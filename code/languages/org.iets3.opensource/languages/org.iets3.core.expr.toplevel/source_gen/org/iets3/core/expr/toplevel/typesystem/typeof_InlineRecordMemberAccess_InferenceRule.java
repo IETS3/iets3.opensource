@@ -26,7 +26,7 @@ public class typeof_InlineRecordMemberAccess_InferenceRule extends AbstractInfer
       final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(irma), "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "8293738266746101333", true);
       typeCheckingContext.whenConcrete(ctxType, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.InlineRecordType$m)) {
-          SNode tt = SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.InlineRecordType$m);
+          SNode tt = SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.InlineRecordType$m);
           SNode m = InlineRecordType__BehaviorDescriptor.getMemberByName_id1Ic1PAvG0C.invoke(tt, SPropertyOperations.getString(irma, PROPS.name$MnvL));
           if (m != null) {
             {

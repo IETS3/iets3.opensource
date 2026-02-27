@@ -230,7 +230,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1509,6 +1511,7 @@
                     <node concept="2OqwBi" id="7A" role="2Oq$k0">
                       <uo k="s:originTrace" v="n:5456956546144085452" />
                       <node concept="1PxgMI" id="7C" role="2Oq$k0">
+                        <property role="1BlNFB" value="true" />
                         <uo k="s:originTrace" v="n:5456956546144085453" />
                         <node concept="chp4Y" id="7E" role="3oSUPX">
                           <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
@@ -1769,6 +1772,7 @@
                       <node concept="2OqwBi" id="8O" role="2Oq$k0">
                         <uo k="s:originTrace" v="n:5456956546156301692" />
                         <node concept="1PxgMI" id="8Q" role="2Oq$k0">
+                          <property role="1BlNFB" value="true" />
                           <uo k="s:originTrace" v="n:5456956546156301693" />
                           <node concept="chp4Y" id="8S" role="3oSUPX">
                             <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
@@ -1943,6 +1947,7 @@
                         <node concept="2OqwBi" id="9D" role="2Oq$k0">
                           <uo k="s:originTrace" v="n:5456956546155608251" />
                           <node concept="1PxgMI" id="9F" role="2Oq$k0">
+                            <property role="1BlNFB" value="true" />
                             <uo k="s:originTrace" v="n:5456956546155608252" />
                             <node concept="chp4Y" id="9H" role="3oSUPX">
                               <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />

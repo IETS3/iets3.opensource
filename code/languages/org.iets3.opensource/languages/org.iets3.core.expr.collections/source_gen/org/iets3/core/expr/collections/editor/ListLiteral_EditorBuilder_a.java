@@ -466,6 +466,13 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.setDefaultText("");
     return editorCell;
   }
+  private boolean _StyleParameter_QueryFunction_hq0mv1_a0a() {
+    final int THRESHOLD_FOR_NEW_LINES = 3;
+    return SNodeOperations.isInstanceOf(SNodeOperations.getParent(getNode()), CONCEPTS.ListLiteral$zq) && (ListSequence.fromList(SLinkOperations.getChildren(getNode(), LINKS.elements$_r5J)).count() > THRESHOLD_FOR_NEW_LINES);
+  }
+  private boolean _StyleParameter_QueryFunction_hq0mv1_a1a() {
+    return SNodeOperations.isInstanceOf(SNodeOperations.getParent(getNode()), CONCEPTS.ListLiteral$zq);
+  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept ListLiteral$zq = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497ed7L, "org.iets3.core.expr.collections.structure.ListLiteral");

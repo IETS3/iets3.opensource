@@ -38,8 +38,9 @@ public final class ICheckableTabularVarPoint__BehaviorDescriptor extends BaseBHD
   public static final SMethod<Boolean> solvedInTypeSystem_id1LoQHJHiiZd = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("solvedInTypeSystem").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042623069126209485L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
   public static final SMethod<Iterable<SNode>> contentForSolverTask_id1ssmHrAa6oD = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("contentForSolverTask").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665305841251149353L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
   public static final SMethod<Boolean> unrelatedTo_id1_3_lS1SjJv = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("unrelatedTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1820462905378814943L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(showSubResults_id4MH81Y0VldB, createSolverTask_id4pkidg67Lgb, readyForSolving_id7EfNCVjpXdh, getSolvableName_idWieAE6TWOo, solvedInTypeSystem_id1LoQHJHiiZd, contentForSolverTask_id1ssmHrAa6oD, unrelatedTo_id1_3_lS1SjJv);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(showSubResults_id4MH81Y0VldB, createSolverTask_id4pkidg67Lgb, readyForSolving_id7EfNCVjpXdh, getSolvableName_idWieAE6TWOo, solvedInTypeSystem_id1LoQHJHiiZd, contentForSolverTask_id1ssmHrAa6oD, unrelatedTo_id1_3_lS1SjJv, highlightWarning_id4358bbCIl2g);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -76,6 +77,9 @@ public final class ICheckableTabularVarPoint__BehaviorDescriptor extends BaseBHD
   /*package*/ static boolean unrelatedTo_id1_3_lS1SjJv(@NotNull SNode __thisNode__, SNode n) {
     return true;
   }
+  /*package*/ static boolean highlightWarning_id4358bbCIl2g(@NotNull SNode __thisNode__) {
+    return true;
+  }
 
   /*package*/ ICheckableTabularVarPoint__BehaviorDescriptor() {
   }
@@ -106,6 +110,8 @@ public final class ICheckableTabularVarPoint__BehaviorDescriptor extends BaseBHD
         return (T) ((Iterable<SNode>) contentForSolverTask_id1ssmHrAa6oD(node));
       case 6:
         return (T) ((Boolean) unrelatedTo_id1_3_lS1SjJv(node, (SNode) parameters[0]));
+      case 7:
+        return (T) ((Boolean) highlightWarning_id4358bbCIl2g(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -40,25 +40,29 @@ public final class QuantityType__BehaviorDescriptor extends BaseBHDescriptor {
 
   /*package*/ static SNode mkMultiply_id45a4DYZTqDU(@NotNull SNode __thisNode__, SNode left, SNode right) {
     if (SNodeOperations.isInstanceOf(left, CONCEPTS.QuantityType$2O) && SNodeOperations.isInstanceOf(right, CONCEPTS.QuantityType$2O)) {
-      return createQuantityMultiplicationType_kxwfhy_a0a0a0((SNode) left, (SNode) right);
+      // create quantity type product
+      return createQuantityMultiplicationType_kxwfhy_a1a0a0((SNode) left, (SNode) right);
     }
     return null;
   }
   /*package*/ static SNode mkDivide_id45a4DYZTre1(@NotNull SNode __thisNode__, SNode top, SNode bot) {
     if (SNodeOperations.isInstanceOf(top, CONCEPTS.QuantityType$2O) && SNodeOperations.isInstanceOf(bot, CONCEPTS.QuantityType$2O)) {
-      return createQuantityDivisionType_kxwfhy_a0a0a1((SNode) top, (SNode) bot);
+      // create quantity type fraction
+      return createQuantityDivisionType_kxwfhy_a1a0a1((SNode) top, (SNode) bot);
     }
     return null;
   }
   /*package*/ static SNode mkPower_id45a4DYZTrHQ(@NotNull SNode __thisNode__, SNode base, int pow) {
     if (SNodeOperations.isInstanceOf(base, CONCEPTS.QuantityType$2O)) {
-      return createQuantityExponentType_kxwfhy_a0a0a2((SNode) base, Exponent__BehaviorDescriptor.from_idbrG9xoyyFz.invoke(SNodeOperations.asSConcept(CONCEPTS.Exponent$bg), ((int) pow), ((int) 1)));
+      // create quantity type exponent
+      return createQuantityExponentType_kxwfhy_a1a0a2((SNode) base, Exponent__BehaviorDescriptor.from_idbrG9xoyyFz.invoke(SNodeOperations.asSConcept(CONCEPTS.Exponent$bg), ((int) pow), ((int) 1)));
     }
     return null;
   }
   /*package*/ static SNode mkPower_id15KrVXSDEu7(@NotNull SNode __thisNode__, SNode base, Fraction pow) {
     if (SNodeOperations.isInstanceOf(base, CONCEPTS.QuantityType$2O)) {
-      return createQuantityExponentType_kxwfhy_a0a0a3((SNode) base, Exponent__BehaviorDescriptor.from_idbrG9xoyFRd.invoke(SNodeOperations.asSConcept(CONCEPTS.Exponent$bg), pow));
+      // create quantity type exponent
+      return createQuantityExponentType_kxwfhy_a1a0a3((SNode) base, Exponent__BehaviorDescriptor.from_idbrG9xoyFRd.invoke(SNodeOperations.asSConcept(CONCEPTS.Exponent$bg), pow));
     }
     return null;
   }
@@ -119,25 +123,25 @@ public final class QuantityType__BehaviorDescriptor extends BaseBHDescriptor {
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static SNode createQuantityMultiplicationType_kxwfhy_a0a0a0(SNode p0, SNode p1) {
+  private static SNode createQuantityMultiplicationType_kxwfhy_a1a0a0(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.QuantityMultiplicationType$HU);
     n0.forChild(LINKS.left$4zfX).initNode(p0, CONCEPTS.QuantityType$2O, true);
     n0.forChild(LINKS.right$ps6W).initNode(p1, CONCEPTS.QuantityType$2O, true);
     return n0.getResult();
   }
-  private static SNode createQuantityDivisionType_kxwfhy_a0a0a1(SNode p0, SNode p1) {
+  private static SNode createQuantityDivisionType_kxwfhy_a1a0a1(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.QuantityDivisionType$KW);
     n0.forChild(LINKS.numerator$1tyV).initNode(p0, CONCEPTS.QuantityType$2O, true);
     n0.forChild(LINKS.denominator$QioR).initNode(p1, CONCEPTS.QuantityType$2O, true);
     return n0.getResult();
   }
-  private static SNode createQuantityExponentType_kxwfhy_a0a0a2(SNode p0, SNode p1) {
+  private static SNode createQuantityExponentType_kxwfhy_a1a0a2(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.QuantityExponentType$w8);
     n0.forChild(LINKS.base$cy01).initNode(p0, CONCEPTS.QuantityType$2O, true);
     n0.forChild(LINKS.exponent$bOP$).initNode(p1, CONCEPTS.Exponent$bg, true);
     return n0.getResult();
   }
-  private static SNode createQuantityExponentType_kxwfhy_a0a0a3(SNode p0, SNode p1) {
+  private static SNode createQuantityExponentType_kxwfhy_a1a0a3(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.QuantityExponentType$w8);
     n0.forChild(LINKS.base$cy01).initNode(p0, CONCEPTS.QuantityType$2O, true);
     n0.forChild(LINKS.exponent$bOP$).initNode(p1, CONCEPTS.Exponent$bg, true);

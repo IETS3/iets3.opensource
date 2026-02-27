@@ -676,7 +676,7 @@
     </file>
     <file name="typeof_RootTreeNode_InferenceRule.java">
       <node id="1206081519720921476" at="24,114,25,48" concept="6" />
-      <node id="1206081519720921654" at="26,176,27,53" concept="2" />
+      <node id="1206081519720921654" at="26,174,27,53" concept="2" />
       <node id="1206081519720925790" at="28,5,29,65" concept="2" />
       <node id="2871912679606773760" at="31,50,32,36" concept="7" />
       <node id="2871912679606773760" at="34,68,35,102" concept="7" />
@@ -690,7 +690,7 @@
       <node id="2871912679606773760" at="37,0,40,0" concept="5" trace="overrides#()Z" />
       <node id="2871912679606773760" at="24,0,31,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="2871912679606773760" at="22,46,22,46" />
-      <scope id="2346756181087525689" at="26,176,27,53" />
+      <scope id="2346756181087525689" at="26,174,27,53" />
       <scope id="2871912679606773760" at="31,50,32,36" />
       <scope id="2871912679606773760" at="34,68,35,102" />
       <scope id="2871912679606773760" at="37,30,38,17" />
@@ -1168,14 +1168,14 @@
       <node id="553080662195562159" at="165,34,166,105" concept="2" />
       <node id="553080662195562159" at="166,105,167,47" concept="2" />
       <node id="3281846772295007818" at="169,99,170,37" concept="7" />
-      <node id="2527679671886286071" at="172,132,173,216" concept="7" />
+      <node id="2527679671886286071" at="172,132,173,212" concept="7" />
       <node id="553080662195562159" at="176,71,177,59" concept="2" />
       <node id="553080662195562159" at="169,0,172,0" concept="5" trace="getOperationType#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="553080662195562159" at="172,0,175,0" concept="5" trace="isApplicable#(Ljetbrains/mps/typesystem/inference/SubtypingManager;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="553080662195562159" at="175,0,179,0" concept="5" trace="reportConflict#(Ljetbrains/mps/errors/IRuleConflictWarningProducer;)V" />
       <node id="553080662195562159" at="158,0,169,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_a#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <scope id="553080662195562161" at="169,99,170,37" />
-      <scope id="2527679671886285921" at="172,132,173,216" />
+      <scope id="2527679671886285921" at="172,132,173,212" />
       <scope id="553080662195562159" at="176,71,177,59" />
       <scope id="553080662195562159" at="169,0,172,0">
         <var name="leftOperandType" id="553080662195562159" />
@@ -1955,11 +1955,11 @@
       <node id="93572354143114458" at="65,0,68,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="93572354143114458" at="68,0,71,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="93572354143114458" at="71,0,74,0" concept="5" trace="overrides#()Z" />
-      <node id="93572354143136918" at="29,210,33,9" concept="0" />
-      <node id="93572354143370493" at="35,210,39,9" concept="0" />
+      <node id="93572354143136918" at="29,208,33,9" concept="0" />
+      <node id="93572354143370493" at="35,208,39,9" concept="0" />
       <node id="93572354147989191" at="42,166,46,7" concept="0" />
-      <node id="93572354148190197" at="49,208,53,9" concept="0" />
-      <node id="93572354148194465" at="56,208,60,9" concept="0" />
+      <node id="93572354148190197" at="49,206,53,9" concept="0" />
+      <node id="93572354148194465" at="56,206,60,9" concept="0" />
       <node id="93572354143114465" at="28,24,34,7" concept="4" />
       <node id="93572354143370452" at="34,7,40,7" concept="4" />
       <node id="93572354147933364" at="41,5,47,5" concept="4" />
@@ -1998,11 +1998,11 @@
         <var name="argument" id="93572354143114458" />
       </scope>
       <scope id="93572354143114458" at="71,0,74,0" />
-      <scope id="93572354143114467" at="29,210,33,9" />
-      <scope id="93572354143370492" at="35,210,39,9" />
+      <scope id="93572354143114467" at="29,208,33,9" />
+      <scope id="93572354143370492" at="35,208,39,9" />
       <scope id="93572354147933366" at="42,166,46,7" />
-      <scope id="93572354148000279" at="49,208,54,0" />
-      <scope id="93572354148088311" at="56,208,61,0" />
+      <scope id="93572354148000279" at="49,206,54,0" />
+      <scope id="93572354148088311" at="56,206,61,0" />
       <scope id="93572354143405817" at="28,24,40,7" />
       <scope id="93572354148091119" at="48,102,62,7" />
       <scope id="93572354143114459" at="26,116,63,5">

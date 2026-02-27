@@ -34,7 +34,7 @@ public class typeof_UnquoteExpression_InferenceRule extends AbstractInferenceRul
           {
             SNode _nodeToCheck_1029348928467 = uq;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)", "2460310434913776618", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)", "2460310434913776623", true), (SNode) SNodeOperations.copyNode(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.QuotedTermType$vY), LINKS.type$EhVN), CONCEPTS.AlgebraicConstructorType$ja)), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)", "2460310434913776623", true), (SNode) SNodeOperations.copyNode(SNodeOperations.as(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.QuotedTermType$vY), LINKS.type$EhVN), CONCEPTS.AlgebraicConstructorType$ja)), _info_12389875345);
           }
         }
       }, "r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)", "2460310434914320961", false, false);

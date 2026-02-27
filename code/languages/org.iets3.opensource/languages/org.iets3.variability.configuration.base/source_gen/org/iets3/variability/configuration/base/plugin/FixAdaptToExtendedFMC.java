@@ -13,7 +13,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 public class FixAdaptToExtendedFMC {
 
   public static void run(SNode fmc) {
-    // ToDo: if we don ot want to execute this every time, check whether featureModel has been changed by storing the featureModel hash in EVERY config and check it before.
+    // TODO: If we do not want to execute this every time, check whether featureModel has been changed by storing the featureModel hash in EVERY config and check it before.
+    // TODO2: This should probably replaced by using UpdateOneConfigTask as done in other intentions and quickfixes.
     ConfigUpdateHelper.propagateFeatureModelChangesToConfigAsync(fmc);
 
     FeatureModelConfiguration__BehaviorDescriptor.applyInheritance_id5Bs7u1ZJmo8.invoke(fmc, ((boolean) true));

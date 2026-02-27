@@ -31,7 +31,7 @@ public class typeof_AllComponentsExpr_InferenceRule extends AbstractInferenceRul
   public void applyRule(final SNode ace, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     SNode pattern = SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(ace, CONCEPTS.MatchCase$iO, false, false), LINKS.pattern$k6Mq);
     if (SNodeOperations.isInstanceOf(pattern, CONCEPTS.AlgebraicTerm$x9)) {
-      SNode term = SNodeOperations.cast(pattern, CONCEPTS.AlgebraicTerm$x9);
+      SNode term = SNodeOperations.as(pattern, CONCEPTS.AlgebraicTerm$x9);
       if (ListSequence.fromList(SNodeOperations.getNodeDescendants(term, CONCEPTS.AlgebraicTerm$x9, false, new SAbstractConcept[]{})).isEmpty()) {
         List<SNode> wildcards = SNodeOperations.getNodeDescendants(term, CONCEPTS.IWildcard$9Q, false, new SAbstractConcept[]{});
         if (ListSequence.fromList(wildcards).isEmpty()) {
@@ -49,7 +49,7 @@ public class typeof_AllComponentsExpr_InferenceRule extends AbstractInferenceRul
         } else {
           final SNode tt = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0xe247742183174baL, "org.iets3.core.expr.base.structure.TupleType"));
           ListSequence.fromList(wildcards).visitAll((it) -> {
-            SNode wcType = ListSequence.fromList(AlgebraicConstructor__BehaviorDescriptor.argumentTypes_id5a_u3OzNoA1.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(it), CONCEPTS.AlgebraicTerm$x9), LINKS.type$Krjw), LINKS.constructor$F6Xq))).getElement(SNodeOperations.getIndexInParent(it));
+            SNode wcType = ListSequence.fromList(AlgebraicConstructor__BehaviorDescriptor.argumentTypes_id5a_u3OzNoA1.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(it), CONCEPTS.AlgebraicTerm$x9), LINKS.type$Krjw), LINKS.constructor$F6Xq))).getElement(SNodeOperations.getIndexInParent(it));
             ListSequence.fromList(SLinkOperations.getChildren(tt, LINKS.elementTypes$gWta)).addElement(SNodeOperations.copyNode(wcType));
           });
           {

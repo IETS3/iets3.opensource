@@ -1689,6 +1689,10 @@
       <node id="3807868794760062465" at="14,33,15,13" concept="12" />
       <node id="4394073590212310544" at="18,0,19,0" concept="10" trace="allowUmlautsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
       <node id="4394073590212312466" at="20,0,21,0" concept="10" trace="allowParagraphsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="6806225547895670977" at="22,0,23,0" concept="10" trace="allowApostropheInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="6505586264317868221" at="24,0,25,0" concept="10" trace="overrideAllowUmlautsInIdentifiers#(Z)Z" />
+      <node id="6505586264318009506" at="26,0,27,0" concept="10" trace="overrideAllowParagraphsInIdentifiers#(Z)Z" />
+      <node id="6806225547895686872" at="28,0,29,0" concept="10" trace="overrideAllowApostrophesInIdentifiers#(Z)Z" />
       <node id="1203587247559087196" at="14,0,17,0" concept="10" trace="getPriorityLevel#()I" />
       <scope id="1203587247559087199" at="14,33,15,13" />
       <scope id="4394073590212310544" at="18,0,19,0">
@@ -1697,8 +1701,20 @@
       <scope id="4394073590212312466" at="20,0,21,0">
         <var name="concept" id="7194131562578330936" />
       </scope>
+      <scope id="6806225547895670977" at="22,0,23,0">
+        <var name="concept" id="6806225547895673942" />
+      </scope>
+      <scope id="6505586264317868221" at="24,0,25,0">
+        <var name="overrideDefault" id="6505586264317871391" />
+      </scope>
+      <scope id="6505586264318009506" at="26,0,27,0">
+        <var name="overrideDefault" id="6505586264318009510" />
+      </scope>
+      <scope id="6806225547895686872" at="28,0,29,0">
+        <var name="overrideDefault" id="6806225547895689714" />
+      </scope>
       <scope id="1203587247559087196" at="14,0,17,0" />
-      <unit id="4394073590212256166" at="7,0,23,0" name="org.iets3.core.expr.base.plugin.IdentifierConfigurator" />
+      <unit id="4394073590212256166" at="7,0,31,0" name="org.iets3.core.expr.base.plugin.IdentifierConfigurator" />
     </file>
   </root>
   <root nodeRef="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)/4394073590212340362">
@@ -1706,12 +1722,25 @@
       <node id="1203587247559088816" at="11,33,12,13" concept="12" />
       <node id="4394073590212340693" at="16,70,17,17" concept="12" />
       <node id="4394073590212340701" at="21,73,22,17" concept="12" />
+      <node id="6505586264317881403" at="26,77,27,27" concept="12" />
+      <node id="6505586264318019645" at="31,80,32,27" concept="12" />
+      <node id="6806225547895719558" at="35,73,36,68" concept="13" />
+      <node id="6806225547895714465" at="36,68,37,16" concept="12" />
+      <node id="6806225547895723209" at="40,81,41,27" concept="12" />
       <node id="1203587247559088809" at="10,0,14,0" concept="10" trace="getPriorityLevel#()I" />
       <node id="4394073590212340686" at="15,0,19,0" concept="10" trace="allowUmlautsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
       <node id="4394073590212340694" at="20,0,24,0" concept="10" trace="allowParagraphsInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="6505586264317874402" at="25,0,29,0" concept="10" trace="overrideAllowUmlautsInIdentifiers#(Z)Z" />
+      <node id="6505586264318011489" at="30,0,34,0" concept="10" trace="overrideAllowParagraphsInIdentifiers#(Z)Z" />
+      <node id="6806225547895707306" at="39,0,43,0" concept="10" trace="overrideAllowApostrophesInIdentifiers#(Z)Z" />
+      <node id="6806225547895707296" at="34,0,39,0" concept="10" trace="allowApostropheInIdentifiers#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
       <scope id="1203587247559088813" at="11,33,12,13" />
       <scope id="4394073590212340690" at="16,70,17,17" />
       <scope id="4394073590212340698" at="21,73,22,17" />
+      <scope id="6505586264317874408" at="26,77,27,27" />
+      <scope id="6505586264318011495" at="31,80,32,27" />
+      <scope id="6806225547895707312" at="40,81,41,27" />
+      <scope id="6806225547895707302" at="35,73,37,16" />
       <scope id="1203587247559088809" at="10,0,14,0" />
       <scope id="4394073590212340686" at="15,0,19,0">
         <var name="concept" id="7194131562578331008" />
@@ -1719,7 +1748,19 @@
       <scope id="4394073590212340694" at="20,0,24,0">
         <var name="concept" id="7194131562578331159" />
       </scope>
-      <unit id="4394073590212340362" at="7,0,26,0" name="org.iets3.core.expr.base.plugin.DefaultIdentifierConfigurator" />
+      <scope id="6505586264317874402" at="25,0,29,0">
+        <var name="overrideDefault" id="6505586264317874406" />
+      </scope>
+      <scope id="6505586264318011489" at="30,0,34,0">
+        <var name="overrideDefault" id="6505586264318011493" />
+      </scope>
+      <scope id="6806225547895707306" at="39,0,43,0">
+        <var name="overrideDefault" id="6806225547895707310" />
+      </scope>
+      <scope id="6806225547895707296" at="34,0,39,0">
+        <var name="concept" id="6806225547895707297" />
+      </scope>
+      <unit id="4394073590212340362" at="7,0,44,0" name="org.iets3.core.expr.base.plugin.DefaultIdentifierConfigurator" />
     </file>
   </root>
   <root nodeRef="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)/4577412849442981177">

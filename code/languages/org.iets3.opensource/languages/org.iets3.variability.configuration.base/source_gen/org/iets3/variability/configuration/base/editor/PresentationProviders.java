@@ -6,5 +6,5 @@ import jetbrains.mps.smodel.action.IReferentPresentationProvider;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class PresentationProviders {
-  public static final IReferentPresentationProvider PRESENTATION_as05hg_a0a1d0a0 = ((IReferentPresentationProvider) (sourceNode, targetNode) -> "{" + SNodeOperations.present(targetNode) + "} configuration");
+  public static final IReferentPresentationProvider PRESENTATION_as05hg_a0a1e0a0 = ((IReferentPresentationProvider) (sourceNode, targetNode) -> "{" + SNodeOperations.present(targetNode) + "} configuration");
 }

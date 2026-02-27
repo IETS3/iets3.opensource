@@ -45,7 +45,7 @@ public class typeof_DotExpression_InferenceRule extends AbstractInferenceRule_Ru
                   {
                     SNode _nodeToCheck_1029348928467 = de;
                     EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "6859926652480764318", 0, null);
-                    typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "6859926652480763349", true), (SNode) createOptionType_2123xg_a1a0c0a0a0a0a0a1a0b0a0b0a1a0a2(SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(targetType)), CONCEPTS.Type$WK)), _info_12389875345);
+                    typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "6859926652480763349", true), (SNode) createOptionType_2123xg_a1a0c0a0a0a0a0a1a0b0a0b0a1a0a2(SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(targetType)), CONCEPTS.Type$WK)), _info_12389875345);
                   }
                 }
               } else {
@@ -56,7 +56,7 @@ public class typeof_DotExpression_InferenceRule extends AbstractInferenceRule_Ru
                 }
               }
             } else if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.AttemptType$h8)) {
-              SNode exprAttT = SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(exprType)), CONCEPTS.AttemptType$h8);
+              SNode exprAttT = SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(exprType)), CONCEPTS.AttemptType$h8);
               if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(targetType), CONCEPTS.AttemptType$h8)) {
                 {
                   SNode _nodeToCheck_1029348928467 = de;
@@ -67,7 +67,7 @@ public class typeof_DotExpression_InferenceRule extends AbstractInferenceRule_Ru
                 {
                   SNode _nodeToCheck_1029348928467 = de;
                   EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3370178379589659487", 0, null);
-                  typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3370178379589658566", true), (SNode) AttemptType__BehaviorDescriptor.cloneForNewSuccessType_id2V5hQ5p97U0.invoke(exprAttT, SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(targetType)), CONCEPTS.Type$WK)), _info_12389875345);
+                  typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3370178379589658566", true), (SNode) AttemptType__BehaviorDescriptor.cloneForNewSuccessType_id2V5hQ5p97U0.invoke(exprAttT, SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(targetType)), CONCEPTS.Type$WK)), _info_12389875345);
                 }
               }
             } else {

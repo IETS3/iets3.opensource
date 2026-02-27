@@ -11,14 +11,15 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.variability.base.behavior.IVariabilityContainer__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
-import java.util.Objects;
+import org.iets3.variability.configuration.base.plugin.EnrichedConfigNames;
+import org.iets3.variability.configuration.base.behavior.FeatureModelConfiguration__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import java.util.Objects;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import org.iets3.variability.configuration.base.behavior.FeatureModelConfiguration__BehaviorDescriptor;
 import jetbrains.mps.errors.BaseQuickFixProvider;
 import java.util.List;
 import org.apache.commons.lang3.tuple.Pair;
@@ -41,7 +42,12 @@ public class check_FeatureModelConfiguration_NonTypesystemRule extends AbstractN
       // In order to avoid many false positives of this checking rule in the tests, we filter these out. 
       Iterable<SNode> allConfigs = SNodeOperations.ofConcept(IVariabilityContainer__BehaviorDescriptor.getContents_id22kx7U4Ix5a.invoke(container), CONCEPTS.FeatureModelConfiguration$nE);
       Iterable<SNode> configsWithoutTestAnnotation = Sequence.fromIterable(allConfigs).where((it) -> (new IAttributeDescriptor.NodeAttribute(CONCEPTS.TestNodeAnnotation$27).get(it) == null));
-      if (Sequence.fromIterable(configsWithoutTestAnnotation).any((it) -> !(Objects.equals(it, fmc)) && Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL), SPropertyOperations.getString(fmc, PROPS.name$MnvL)))) {
+      final boolean useEnriched = EnrichedConfigNames.instance().useEnrichedNameForUniquenessCheck();
+      if (Sequence.fromIterable(configsWithoutTestAnnotation).any((it) -> {
+        String n1 = (useEnriched ? FeatureModelConfiguration__BehaviorDescriptor.getEnrichedName_id3Qgc3xLE1Kc.invoke(it) : SPropertyOperations.getString(it, PROPS.name$MnvL));
+        String n2 = (useEnriched ? FeatureModelConfiguration__BehaviorDescriptor.getEnrichedName_id3Qgc3xLE1Kc.invoke(fmc) : SPropertyOperations.getString(fmc, PROPS.name$MnvL));
+        return !(Objects.equals(it, fmc)) && Objects.equals(n1, n2);
+      })) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fmc, "Configuration with duplicate name exists in current container", "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "9159423170666523437", null, errorTarget);
@@ -75,7 +81,7 @@ public class check_FeatureModelConfiguration_NonTypesystemRule extends AbstractN
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fmc, "There were changes in the Feature Model. Please adapt this config to its Feature Model.", "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346922", null, errorTarget);
         {
-          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.propagateFMchangesToConfig_QuickFix", "4999651317663867413", false);
+          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.fix_AdaptToChangesInFM_QuickFix", "4999651317663867413", false);
           intentionProvider.putArgument("fmc", fmc);
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
@@ -92,7 +98,7 @@ public class check_FeatureModelConfiguration_NonTypesystemRule extends AbstractN
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fmc, "dummy for quickfix", "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346873", null, errorTarget);
           {
-            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.fix_applyInheritance_QuickFix", "3543850148881346876", true);
+            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.fix_ApplyInheritance_QuickFix", "3543850148881346876", true);
             _reporter_2309309498.addIntentionProvider(intentionProvider);
           }
         }
@@ -173,7 +179,7 @@ public class check_FeatureModelConfiguration_NonTypesystemRule extends AbstractN
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fmc, "Needs to be abstract, at least one abstract Feature Model Configuration referenced. " + SPropertyOperations.getString(SLinkOperations.getTarget(abstractFMI, LINKS.config$VWuN), PROPS.name$MnvL), "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "4999651317681596651", null, errorTarget);
           {
-            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.makeConfigAbstract_QuickFix", "4999651317689220572", false);
+            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.fix_MakeConfigAbstract_QuickFix", "4999651317689220572", false);
             intentionProvider.putArgument("fmc", fmc);
             _reporter_2309309498.addIntentionProvider(intentionProvider);
           }

@@ -247,7 +247,7 @@ public class AsyncSolverTaskExecutor {
     T runWithin(Callable<T> executionCode);
   }
 
-  public static <Y> IExecEnv<Y> makeWriteAcccessEnv(final SRepository repository) {
+  public static <Y> IExecEnv<Y> makeWriteAccessEnv(final SRepository repository) {
     return new IExecEnv<Y>() {
       @Override
       public Y runWithin(Callable<Y> executionCode) {
@@ -256,7 +256,7 @@ public class AsyncSolverTaskExecutor {
     };
   }
 
-  public static <Y> IExecEnv<Y> makeReadAcccessEnv(final SRepository repository) {
+  public static <Y> IExecEnv<Y> makeReadAccessEnv(final SRepository repository) {
     return new IExecEnv<Y>() {
       @Override
       public Y runWithin(Callable<Y> executionCode) {
@@ -265,14 +265,13 @@ public class AsyncSolverTaskExecutor {
     };
   }
 
-
-  private static IExecEnv<Collection<IResult>> readAccess(final SNode forWho) {
-    IExecEnv<Collection<IResult>> solverRunEnv = AsyncSolverTaskExecutor.<Collection<IResult>>makeReadAcccessEnv(forWho.getModel().getRepository());
-
-    return solverRunEnv;
+  private static IExecEnv<ITask> writeAccess(final SNode solvable) {
+    return AsyncSolverTaskExecutor.<ITask>makeWriteAccessEnv(solvable.getModel().getRepository());
   }
 
-  private static IExecEnv<ITask> writeAccess(final SNode solvable) {
-    return AsyncSolverTaskExecutor.<ITask>makeWriteAcccessEnv(solvable.getModel().getRepository());
+  private static IExecEnv<Collection<IResult>> readAccess(final SNode forWho) {
+    IExecEnv<Collection<IResult>> solverRunEnv = AsyncSolverTaskExecutor.<Collection<IResult>>makeReadAccessEnv(forWho.getModel().getRepository());
+
+    return solverRunEnv;
   }
 }

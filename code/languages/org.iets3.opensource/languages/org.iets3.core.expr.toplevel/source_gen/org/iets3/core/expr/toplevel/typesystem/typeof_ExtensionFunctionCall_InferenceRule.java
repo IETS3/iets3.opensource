@@ -40,7 +40,7 @@ public class typeof_ExtensionFunctionCall_InferenceRule extends AbstractInferenc
     } else {
       // check type of receiver
       {
-        SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(efc), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E);
+        SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(efc), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E);
         EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "1362282860011148372", 0, null);
         typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "1362282860011141673", true), (SNode) typeCheckingContext.typeOf(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(efc, LINKS.extFun$udGR), LINKS.args$XOIh)).getElement(0), "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "1362282860011148512", true), false, true, _info_12389875345);
       }

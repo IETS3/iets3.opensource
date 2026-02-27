@@ -26,7 +26,7 @@ public class typeof_TemporalType_InferenceRule extends AbstractInferenceRule_Run
       final SNode bt = typeCheckingContext.typeOf(SLinkOperations.getTarget(temporalType, LINKS.baseType$ZN4a), "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "5880303268807248657", true);
       typeCheckingContext.whenConcrete(bt, () -> {
         SNode copy = SNodeOperations.copyNode(temporalType);
-        SLinkOperations.setTarget(copy, LINKS.baseType$ZN4a, SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(bt)), CONCEPTS.Type$WK));
+        SLinkOperations.setTarget(copy, LINKS.baseType$ZN4a, SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(bt)), CONCEPTS.Type$WK));
         {
           SNode _nodeToCheck_1029348928467 = temporalType;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "5880303268807251002", 0, null);

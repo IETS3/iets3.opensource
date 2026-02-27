@@ -112,7 +112,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_jcqzj0_a0a");
     editorCell.addEditorCell(createCustomFactory_1());
-    editorCell.addEditorCell(createAlternation_0());
+    editorCell.addEditorCell(createCustomFactory_5());
     editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createAlternation_1());
     editorCell.addEditorCell(createRefNode_2());
@@ -168,27 +168,39 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return new EditorMenuDescriptorBase("replace node (custom node concept: " + "Expression" + ")", new SNodePointer("r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)", "1790111001740719990"));
     }
   }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createAlternation_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    Style style = new StyleImpl();
+    new iets3KeywordStyleClass(this).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), myNode);
+  }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
-    alternationCondition = nodeCondition_jcqzj0_a1a0a();
+    alternationCondition = nodeCondition_jcqzj0_a0b0a0();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createCustomFactory_5();
+      editorCell = createCustomFactory_7();
     } else {
       editorCell = createSideTransformationSectionCell_0();
     }
     return editorCell;
   }
-  private boolean nodeCondition_jcqzj0_a1a0a() {
+  private boolean nodeCondition_jcqzj0_a0b0a0() {
     IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.complete$PYwr);
     if (!(access.read(myNode))) {
       return false;
     }
 
-
     return true;
   }
-  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createConstant_0();
@@ -211,8 +223,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), myNode);
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "complete");
@@ -227,13 +239,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
     SideTransformationHolderCell editorCell = new SideTransformationHolderCell(getEditorContext(), myNode, null, "flag 'complete'") {
       @Override
       public List<MenuPart<TransformationMenuItem, TransformationMenuContext>> createMenuParts() {
-        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a1a0a());
+        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0b0a0());
       }
     };
-    editorCell.setCellId("SideTransformationSectionCell_jcqzj0_a1a0a");
+    editorCell.setCellId("SideTransformationSectionCell_jcqzj0_a0b0a0");
     return editorCell;
   }
-  private class GenericMenuPart_a0a1a0a implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0a0b0a0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
@@ -351,7 +363,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     alternationCondition = nodeCondition_jcqzj0_a3a0a();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createCustomFactory_7();
+      editorCell = createCustomFactory_9();
     } else {
       editorCell = createSideTransformationSectionCell_1();
     }
@@ -360,10 +372,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
   private boolean nodeCondition_jcqzj0_a3a0a() {
     return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(myNode, LINKS.optionalName$AhFr)).isNotEmpty();
   }
-  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
 
 
-    final EditorCell cell = createCustomFactory_9();
+    final EditorCell cell = createCustomFactory_11();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
       cell.setAction(CellActionType.BACKSPACE, new CellActionWithReadAccess() {
         public void execute(EditorContext editorContext) {
@@ -387,10 +399,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_9() {
+    return createCustomFactory_8(getEditorContext(), myNode);
   }
-  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_10(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createCollection_2();
@@ -414,8 +426,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_9() {
-    return createCustomFactory_8(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_11() {
+    return createCustomFactory_10(getEditorContext(), myNode);
   }
   private EditorCell createCollection_2() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());

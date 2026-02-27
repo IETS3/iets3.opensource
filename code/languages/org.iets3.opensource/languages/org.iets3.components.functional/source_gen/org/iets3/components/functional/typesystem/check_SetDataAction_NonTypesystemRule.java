@@ -25,7 +25,7 @@ public class check_SetDataAction_NonTypesystemRule extends AbstractNonTypesystem
   }
   public void applyRule(final SNode sda, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     SNode t = SLinkOperations.getTarget(sda, LINKS.target$VZJN);
-    if (!(SNodeOperations.isInstanceOf(t, CONCEPTS.ICanBeLValue$lB)) || SNodeOperations.isInstanceOf(t, CONCEPTS.ICanBeLValue$lB) && !((boolean) ICanBeLValue__BehaviorDescriptor.isLValue_idaPhVmWYjn5.invoke(SNodeOperations.cast(t, CONCEPTS.ICanBeLValue$lB)))) {
+    if (!(SNodeOperations.isInstanceOf(t, CONCEPTS.ICanBeLValue$lB)) || SNodeOperations.isInstanceOf(t, CONCEPTS.ICanBeLValue$lB) && !((boolean) ICanBeLValue__BehaviorDescriptor.isLValue_idaPhVmWYjn5.invoke(SNodeOperations.as(t, CONCEPTS.ICanBeLValue$lB)))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(t, Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(t) + " cannot be assigned to.", "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "8434481698273755827", null, errorTarget);

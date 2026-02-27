@@ -29,7 +29,7 @@ public class typeof_AsMapOp_InferenceRule extends AbstractInferenceRule_Runtime 
     {
       final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(amo), "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "24388123213992652", true);
       typeCheckingContext.whenConcrete(ctxType, () -> {
-        SNode baseType = SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
+        SNode baseType = SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
         if (SNodeOperations.isInstanceOf(baseType, CONCEPTS.TupleType$8E)) {
           SNode tt = TypecheckingFacade.getFromContext().coerceType(baseType, CONCEPTS.TupleType$8E);
           if (ListSequence.fromList(SLinkOperations.getChildren(tt, LINKS.elementTypes$gWta)).count() == 2) {

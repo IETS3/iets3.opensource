@@ -13,48 +13,62 @@ import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext;
 import java.util.ArrayList;
 import jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator;
 import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart;
-import jetbrains.mps.lang.editor.menus.ConceptMenusPart;
-import java.util.Collection;
+import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuItem;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
-import jetbrains.mps.smodel.language.LanguageRegistry;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.iets3.variability.configuration.base.behavior.FeatureModelConfiguration__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class ExtendedFeatureModelConfigurationRef_SubstituteMenu extends SubstituteMenuBase {
   public ExtendedFeatureModelConfigurationRef_SubstituteMenu() {
-    super(false, new EditorMenuDescriptorBase("default substitute menu for ExtendedFeatureModelConfigurationRef. Generated from implicit smart reference attribute.", new SNodePointer("r:a9fe59d7-0b4f-42b0-925a-71cc04f93df1(org.iets3.variability.configuration.base.structure)", "5050560734061908022")));
+    super(false, new EditorMenuDescriptorBase("default substitute menu for " + "ExtendedFeatureModelConfigurationRef", new SNodePointer("r:ca6d049d-0cc6-4267-820c-178221dd0ad8(org.iets3.variability.configuration.base.editor)", "4436098651941296562")));
   }
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
     result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_14i6vb_a(), CONCEPTS.ExtendedFeatureModelConfigurationRef$hp));
-    result.add(new SMP_Subconcepts_14i6vb_b());
     return result;
   }
 
   public class SMP_ReferenceScope_14i6vb_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_14i6vb_a() {
-      super(CONCEPTS.ExtendedFeatureModelConfigurationRef$hp, LINKS.config$ID3f, new EditorMenuDescriptorBase("reference scope substitute menu part", null));
-    }
-
-  }
-  public class SMP_Subconcepts_14i6vb_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
-    public SMP_Subconcepts_14i6vb_b() {
-      super(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "ExtendedFeatureModelConfigurationRef", null));
+      super(CONCEPTS.ExtendedFeatureModelConfigurationRef$hp, LINKS.config$ID3f, new EditorMenuDescriptorBase("reference scope substitute menu part", new SNodePointer("r:ca6d049d-0cc6-4267-820c-178221dd0ad8(org.iets3.variability.configuration.base.editor)", "4436098651941495389")));
     }
 
     @Override
-    protected Collection<SAbstractConcept> getConcepts(final SubstituteMenuContext _context) {
-      return getDirectDescendants(_context, CONCEPTS.ExtendedFeatureModelConfigurationRef$hp);
+    @NotNull
+    protected ReferenceScopeSubstituteMenuItem createItem(SubstituteMenuContext context, SNode referencedNode) {
+      return new Item(context, referencedNode, getSConcept(), getReferenceLink());
     }
+    private class Item extends ReferenceScopeSubstituteMenuItem {
+      private final SubstituteMenuContext _context;
+      private final SNode referencedNode;
+      private EditorMenuTraceInfo myTraceInfo;
 
-    @Override
-    protected Collection<SubstituteMenuItem> createItemsForConcept(SubstituteMenuContext context, SAbstractConcept concept) {
-      return context.createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(context.getEditorContext().getRepository()), concept));
+      private Item(SubstituteMenuContext context, SNode refNode, SAbstractConcept concept, SReferenceLink referenceLink) {
+        super(concept, context, refNode, referenceLink);
+        _context = context;
+        referencedNode = refNode;
+        myTraceInfo = context.getEditorMenuTrace().getTraceInfo();
+      }
+      @Override
+      public String getMatchingText(String pattern) {
+        return (String) FeatureModelConfiguration__BehaviorDescriptor.getEnrichedName_id3Qgc3xLE1Kc.invoke(referencedNode);
+      }
+      @Override
+      public String getVisibleMatchingText(String pattern) {
+        return getMatchingText(pattern);
+      }
+
+      @Override
+      public EditorMenuTraceInfo getTraceInfo() {
+        return myTraceInfo;
+      }
     }
   }
 

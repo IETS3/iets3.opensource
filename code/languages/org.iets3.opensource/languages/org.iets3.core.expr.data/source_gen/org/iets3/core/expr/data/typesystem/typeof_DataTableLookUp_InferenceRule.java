@@ -26,7 +26,7 @@ public class typeof_DataTableLookUp_InferenceRule extends AbstractInferenceRule_
     {
       SNode _nodeToCheck_1029348928467 = dataTableLookUp;
       EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:e29c70b2-feb7-465e-9534-7fdb395635c2(org.iets3.core.expr.data.typesystem)", "512624657163683225", 0, null);
-      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:e29c70b2-feb7-465e-9534-7fdb395635c2(org.iets3.core.expr.data.typesystem)", "512624657163683227", true), (SNode) TOF.override(dataTableLookUp, createOptionType_javjs3_b0b0a2a0a1(SNodeOperations.cast(SNodeOperations.getParent(DataTableLookUp__BehaviorDescriptor.getColumnDefinition_id7F9023_N_3E.invoke(dataTableLookUp)), CONCEPTS.DataTable$qy))), _info_12389875345);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:e29c70b2-feb7-465e-9534-7fdb395635c2(org.iets3.core.expr.data.typesystem)", "512624657163683227", true), (SNode) TOF.override(dataTableLookUp, createOptionType_javjs3_b0b0a2a0a1(SNodeOperations.as(SNodeOperations.getParent(DataTableLookUp__BehaviorDescriptor.getColumnDefinition_id7F9023_N_3E.invoke(dataTableLookUp)), CONCEPTS.DataTable$qy))), _info_12389875345);
     }
 
     {

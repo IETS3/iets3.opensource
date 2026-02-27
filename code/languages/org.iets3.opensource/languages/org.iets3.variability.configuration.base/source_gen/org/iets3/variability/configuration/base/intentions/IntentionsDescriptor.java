@@ -62,7 +62,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
           intentions[0] = new extractConfiguration_Intention();
           intentions[1] = new replaceWithExistingExternalConfig_Intention();
           intentions[2] = new featureSelectionUntouched_Intention();
-          intentions[3] = new InlineReferencedConfiguration_Intention();
+          intentions[3] = new inlineReferencedConfiguration_Intention();
           intentions[4] = new resetForcedSelectionState_Intention();
           intentions[5] = new replaceWithUnspecifiedConfig_Intention();
         }
@@ -71,7 +71,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
         if (true) {
           // concept
           intentions = new IntentionFactory[1];
-          intentions[0] = new UpdateAllRelatedConfigurations_Intention();
+          intentions[0] = new updateAllRelatedConfigurations_Intention();
         }
         break;
       case 5:
@@ -79,10 +79,10 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
           // concept
           intentions = new IntentionFactory[5];
           intentions[0] = new runSolver_Intention();
-          intentions[1] = new propagateFMchangesToConfig_Intention();
+          intentions[1] = new adaptToChangesInFeatureModel_Intention();
           intentions[2] = new runSolverSync_Intention();
           intentions[3] = new specifyUsedConfigs_Intention();
-          intentions[4] = new AdaptToExtendedFMC_Intention();
+          intentions[4] = new adaptToExtendedFMC_Intention();
         }
         break;
       default:
@@ -103,15 +103,15 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[5] = new extractConfiguration_Intention();
     rv[6] = new replaceWithExistingExternalConfig_Intention();
     rv[7] = new featureSelectionUntouched_Intention();
-    rv[8] = new InlineReferencedConfiguration_Intention();
+    rv[8] = new inlineReferencedConfiguration_Intention();
     rv[9] = new resetForcedSelectionState_Intention();
     rv[10] = new replaceWithUnspecifiedConfig_Intention();
     rv[11] = new runSolver_Intention();
-    rv[12] = new propagateFMchangesToConfig_Intention();
+    rv[12] = new adaptToChangesInFeatureModel_Intention();
     rv[13] = new runSolverSync_Intention();
     rv[14] = new specifyUsedConfigs_Intention();
-    rv[15] = new AdaptToExtendedFMC_Intention();
-    rv[16] = new UpdateAllRelatedConfigurations_Intention();
+    rv[15] = new adaptToExtendedFMC_Intention();
+    rv[16] = new updateAllRelatedConfigurations_Intention();
     rv[17] = new setManualAssignmentCause_Intention();
     return Arrays.asList(rv);
   }

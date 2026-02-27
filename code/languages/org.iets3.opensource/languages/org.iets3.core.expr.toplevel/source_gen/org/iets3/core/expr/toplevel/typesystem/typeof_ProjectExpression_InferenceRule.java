@@ -41,7 +41,7 @@ public class typeof_ProjectExpression_InferenceRule extends AbstractInferenceRul
         final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(pe), "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "4618483580248264365", true);
         typeCheckingContext.whenConcrete(ctxType, () -> {
           if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS)) {
-            final SNode tt = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS));
+            final SNode tt = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS));
 
             final List<SNode> membersFinal = SLinkOperations.getChildren(pe, LINKS.members$I$qE);
             TypingHelper.doWithListOfTypes(typeCheckingContext, membersFinal, ((_FunctionTypes._void_P1_E0<List<SNode>>) (List<SNode> types) -> {
@@ -49,7 +49,7 @@ public class typeof_ProjectExpression_InferenceRule extends AbstractInferenceRul
               for (SNode m : ListSequence.fromList(membersFinal)) {
                 SNode rm = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x7a477bfec237e8b9L, "org.iets3.core.expr.toplevel.structure.RecordMember"));
                 SPropertyOperations.assign(rm, PROPS.name$MnvL, SPropertyOperations.getString(m, PROPS.name$MnvL));
-                SLinkOperations.setTarget(rm, LINKS.type$EhVN, SNodeOperations.cast(SNodeOperations.copyNode(ListSequence.fromList(types).getElement(SNodeOperations.getIndexInParent(m))), CONCEPTS.Type$WK));
+                SLinkOperations.setTarget(rm, LINKS.type$EhVN, SNodeOperations.as(SNodeOperations.copyNode(ListSequence.fromList(types).getElement(SNodeOperations.getIndexInParent(m))), CONCEPTS.Type$WK));
                 ListSequence.fromList(SLinkOperations.getChildren(irt, LINKS.members$CyZq)).addElement(rm);
               }
               SLinkOperations.setTarget(tt, LINKS.baseType$5NOJ, irt);

@@ -38,25 +38,29 @@ public final class DimensionExpression__BehaviorDescriptor extends BaseBHDescrip
 
   /*package*/ static SNode mkMultiply_id45a4DYZTqDU(@NotNull SNode __thisNode__, SNode left, SNode right) {
     if (SNodeOperations.isInstanceOf(left, CONCEPTS.DimensionExpression$6R) && SNodeOperations.isInstanceOf(right, CONCEPTS.DimensionExpression$6R)) {
-      return createDimensionMultiplication_mot4ll_a0a0a0((SNode) left, (SNode) right);
+      // create dimension product
+      return createDimensionMultiplication_mot4ll_a1a0a0((SNode) left, (SNode) right);
     }
     return null;
   }
   /*package*/ static SNode mkDivide_id45a4DYZTre1(@NotNull SNode __thisNode__, SNode top, SNode bot) {
     if (SNodeOperations.isInstanceOf(top, CONCEPTS.DimensionExpression$6R) && SNodeOperations.isInstanceOf(bot, CONCEPTS.DimensionExpression$6R)) {
-      return createDimensionDivision_mot4ll_a0a0a1((SNode) top, (SNode) bot);
+      // create dimension fraction
+      return createDimensionDivision_mot4ll_a1a0a1((SNode) top, (SNode) bot);
     }
     return null;
   }
   /*package*/ static SNode mkPower_id45a4DYZTrHQ(@NotNull SNode __thisNode__, SNode base, int pow) {
     if (SNodeOperations.isInstanceOf(base, CONCEPTS.DimensionExpression$6R)) {
-      return createDimensionExponent_mot4ll_a0a0a2(Exponent__BehaviorDescriptor.from_idbrG9xoyyFz.invoke(SNodeOperations.asSConcept(CONCEPTS.Exponent$bg), ((int) pow), ((int) 1)), (SNode) base);
+      // create dimension exponent
+      return createDimensionExponent_mot4ll_a1a0a2(Exponent__BehaviorDescriptor.from_idbrG9xoyyFz.invoke(SNodeOperations.asSConcept(CONCEPTS.Exponent$bg), ((int) pow), ((int) 1)), (SNode) base);
     }
     return null;
   }
   /*package*/ static SNode mkPower_id15KrVXSDEu7(@NotNull SNode __thisNode__, SNode base, Fraction pow) {
     if (SNodeOperations.isInstanceOf(base, CONCEPTS.DimensionExpression$6R)) {
-      return createDimensionExponent_mot4ll_a0a0a3(Exponent__BehaviorDescriptor.from_idbrG9xoyFRd.invoke(SNodeOperations.asSConcept(CONCEPTS.Exponent$bg), pow), (SNode) base);
+      // create dimension exponent
+      return createDimensionExponent_mot4ll_a1a0a3(Exponent__BehaviorDescriptor.from_idbrG9xoyFRd.invoke(SNodeOperations.asSConcept(CONCEPTS.Exponent$bg), pow), (SNode) base);
     }
     return null;
   }
@@ -117,25 +121,25 @@ public final class DimensionExpression__BehaviorDescriptor extends BaseBHDescrip
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static SNode createDimensionMultiplication_mot4ll_a0a0a0(SNode p0, SNode p1) {
+  private static SNode createDimensionMultiplication_mot4ll_a1a0a0(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.DimensionMultiplication$7v);
     n0.forChild(LINKS.left$FCvk).initNode(p0, CONCEPTS.DimensionExpression$6R, true);
     n0.forChild(LINKS.right$UDRg).initNode(p1, CONCEPTS.DimensionExpression$6R, true);
     return n0.getResult();
   }
-  private static SNode createDimensionDivision_mot4ll_a0a0a1(SNode p0, SNode p1) {
+  private static SNode createDimensionDivision_mot4ll_a1a0a1(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.DimensionDivision$s4);
     n0.forChild(LINKS.numerator$yveO).initNode(p0, CONCEPTS.DimensionExpression$6R, true);
     n0.forChild(LINKS.denominator$yvtP).initNode(p1, CONCEPTS.DimensionExpression$6R, true);
     return n0.getResult();
   }
-  private static SNode createDimensionExponent_mot4ll_a0a0a2(SNode p0, SNode p1) {
+  private static SNode createDimensionExponent_mot4ll_a1a0a2(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.DimensionExponent$dx);
     n0.forChild(LINKS.exponent$xLNL).initNode(p0, CONCEPTS.Exponent$bg, true);
     n0.forChild(LINKS.base$xM2M).initNode(p1, CONCEPTS.DimensionExpression$6R, true);
     return n0.getResult();
   }
-  private static SNode createDimensionExponent_mot4ll_a0a0a3(SNode p0, SNode p1) {
+  private static SNode createDimensionExponent_mot4ll_a1a0a3(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.DimensionExponent$dx);
     n0.forChild(LINKS.exponent$xLNL).initNode(p0, CONCEPTS.Exponent$bg, true);
     n0.forChild(LINKS.base$xM2M).initNode(p1, CONCEPTS.DimensionExpression$6R, true);

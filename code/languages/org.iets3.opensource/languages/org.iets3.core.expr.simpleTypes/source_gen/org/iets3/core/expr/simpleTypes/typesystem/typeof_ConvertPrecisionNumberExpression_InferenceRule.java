@@ -27,7 +27,7 @@ public class typeof_ConvertPrecisionNumberExpression_InferenceRule extends Abstr
       final SNode exprType = typeCheckingContext.typeOf(SLinkOperations.getTarget(ce, LINKS.expr$CW3E), "r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)", "8825352096209810453", true);
       typeCheckingContext.whenConcrete(exprType, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.NumberType$n)) {
-          SNode nt = SNodeOperations.copyNode(SNodeOperations.cast(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.NumberType$n));
+          SNode nt = SNodeOperations.copyNode(SNodeOperations.as(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.NumberType$n));
           NumberType__BehaviorDescriptor.setPrecision_id19PglA21KtA.invoke(nt, ((int) SPropertyOperations.getInteger(ce, PROPS.targetPrecision$Fj_c)));
           NumberType__BehaviorDescriptor.limitRangePrecisionTo_id7Wa2sv40JD9.invoke(nt, ((int) SPropertyOperations.getInteger(ce, PROPS.targetPrecision$Fj_c)));
           Type__BehaviorDescriptor.simplify_id46cplYwxszL.invoke(nt);

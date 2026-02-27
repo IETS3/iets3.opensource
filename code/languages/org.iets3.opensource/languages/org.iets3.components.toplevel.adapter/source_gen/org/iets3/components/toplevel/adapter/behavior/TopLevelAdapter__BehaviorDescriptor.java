@@ -43,7 +43,7 @@ public final class TopLevelAdapter__BehaviorDescriptor extends BaseBHDescriptor 
   }
   /*package*/ static Iterable<SNode> namedNodesForComment_id5ElkanPUl6T(@NotNull SNode __thisNode__) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(__thisNode__, LINKS.adapted$2EX5), CONCEPTS.IDocumentableWordProvider$Kk)) {
-      return IDocumentableWordProvider__BehaviorDescriptor.namedNodesForComment_id5ElkanPUl6T.invoke(SNodeOperations.cast(SLinkOperations.getTarget(__thisNode__, LINKS.adapted$2EX5), CONCEPTS.IDocumentableWordProvider$Kk));
+      return IDocumentableWordProvider__BehaviorDescriptor.namedNodesForComment_id5ElkanPUl6T.invoke(SNodeOperations.as(SLinkOperations.getTarget(__thisNode__, LINKS.adapted$2EX5), CONCEPTS.IDocumentableWordProvider$Kk));
     } else {
       return new ArrayList<SNode>();
     }

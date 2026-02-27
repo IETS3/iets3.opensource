@@ -13,6 +13,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import java.util.Objects;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -22,34 +23,34 @@ public class ExpressionChecker {
 
   public static boolean isSelfReferencingSpecifier(SNode specifier) {
     Queue<SNode> queue = QueueSequence.fromQueue(new LinkedList<SNode>());
-    Set<SNode> seenSpecifiers = SetSequence.fromSet(new HashSet<SNode>());
+    Set<SNode> visited = SetSequence.fromSet(new HashSet<SNode>());
 
-    for (SNode convertExpression : ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(specifier, LINKS.expression$BZ0p), CONCEPTS.ConvertExpression$Xc, true, new SAbstractConcept[]{}))) {
-      if (SLinkOperations.getTarget(convertExpression, LINKS.conversionSpecifier$hrvU) != null) {
-        QueueSequence.fromQueue(queue).addLastElement(SLinkOperations.getTarget(convertExpression, LINKS.conversionSpecifier$hrvU));
+    for (SNode convertExpr : ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(specifier, LINKS.expression$BZ0p), CONCEPTS.ConvertExpression$Xc, true, new SAbstractConcept[]{}))) {
+      if (SLinkOperations.getTarget(convertExpr, LINKS.conversionSpecifier$hrvU) != null) {
+        QueueSequence.fromQueue(queue).addLastElement(SLinkOperations.getTarget(convertExpr, LINKS.conversionSpecifier$hrvU));
       }
     }
 
     while (QueueSequence.fromQueue(queue).isNotEmpty()) {
       SNode head = QueueSequence.fromQueue(queue).removeFirstElement();
-      if (head == specifier) {
+      if (Objects.equals(head, specifier)) {
         return true;
       }
-      SetSequence.fromSet(seenSpecifiers).addElement(head);
+      SetSequence.fromSet(visited).addElement(head);
 
-      for (SNode convertExpression : ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(head, LINKS.expression$BZ0p), CONCEPTS.ConvertExpression$Xc, true, new SAbstractConcept[]{}))) {
-        if (SLinkOperations.getTarget(convertExpression, LINKS.conversionSpecifier$hrvU) != null && !(SetSequence.fromSet(seenSpecifiers).contains(SLinkOperations.getTarget(convertExpression, LINKS.conversionSpecifier$hrvU)))) {
-          QueueSequence.fromQueue(queue).addLastElement(SLinkOperations.getTarget(convertExpression, LINKS.conversionSpecifier$hrvU));
+      for (SNode convertExpr : ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(head, LINKS.expression$BZ0p), CONCEPTS.ConvertExpression$Xc, true, new SAbstractConcept[]{}))) {
+        if ((SLinkOperations.getTarget(convertExpr, LINKS.conversionSpecifier$hrvU) != null) && !(SetSequence.fromSet(visited).contains(SLinkOperations.getTarget(convertExpr, LINKS.conversionSpecifier$hrvU)))) {
+          QueueSequence.fromQueue(queue).addLastElement(SLinkOperations.getTarget(convertExpr, LINKS.conversionSpecifier$hrvU));
         }
       }
     }
 
-    return SetSequence.fromSet(seenSpecifiers).contains(specifier);
+    return SetSequence.fromSet(visited).contains(specifier);
   }
 
-  public static boolean hasDivExpressionBeforeMulExpression(SNode expression) {
+  public static boolean hasDivExpressionBeforeMulExpression(SNode expr) {
     Queue<SNode> expressions = QueueSequence.fromQueue(new LinkedList<SNode>());
-    QueueSequence.fromQueue(expressions).addLastElement(expression);
+    QueueSequence.fromQueue(expressions).addLastElement(expr);
 
     while (QueueSequence.fromQueue(expressions).isNotEmpty()) {
       SNode head = QueueSequence.fromQueue(expressions).removeFirstElement();
@@ -72,17 +73,17 @@ public class ExpressionChecker {
     return false;
   }
 
-  public static boolean hasExpression(SNode expression, SAbstractConcept expressionConcept) {
-    if (SNodeOperations.isInstanceOf(expression, CONCEPTS.BinaryExpression$j$)) {
-      if (SNodeOperations.isInstanceOf(expression, SNodeOperations.asSConcept(expressionConcept))) {
+  public static boolean hasExpression(SNode expr, SAbstractConcept exprConcept) {
+    if (SNodeOperations.isInstanceOf(expr, CONCEPTS.BinaryExpression$j$)) {
+      if (SNodeOperations.isInstanceOf(expr, SNodeOperations.asSConcept(exprConcept))) {
         return true;
       } else {
-        return hasExpression(SLinkOperations.getTarget(SNodeOperations.cast(expression, CONCEPTS.BinaryExpression$j$), LINKS.left$zxUa), expressionConcept) || hasExpression(SLinkOperations.getTarget(SNodeOperations.cast(expression, CONCEPTS.BinaryExpression$j$), LINKS.right$zBjx), expressionConcept);
+        return hasExpression(SLinkOperations.getTarget(SNodeOperations.cast(expr, CONCEPTS.BinaryExpression$j$), LINKS.left$zxUa), exprConcept) || hasExpression(SLinkOperations.getTarget(SNodeOperations.cast(expr, CONCEPTS.BinaryExpression$j$), LINKS.right$zBjx), exprConcept);
       }
-    } else if (SNodeOperations.isInstanceOf(expression, CONCEPTS.ParensExpression$Tv)) {
-      return hasExpression(SLinkOperations.getTarget(SNodeOperations.cast(expression, CONCEPTS.ParensExpression$Tv), LINKS.expr$CW3E), expressionConcept);
-    } else if (SNodeOperations.isInstanceOf(expression, CONCEPTS.ConvertExpression$Xc)) {
-      return hasExpression(SLinkOperations.getTarget(SNodeOperations.cast(expression, CONCEPTS.ConvertExpression$Xc), LINKS.expr$CW3E), expressionConcept);
+    } else if (SNodeOperations.isInstanceOf(expr, CONCEPTS.ParensExpression$Tv)) {
+      return hasExpression(SLinkOperations.getTarget(SNodeOperations.cast(expr, CONCEPTS.ParensExpression$Tv), LINKS.expr$CW3E), exprConcept);
+    } else if (SNodeOperations.isInstanceOf(expr, CONCEPTS.ConvertExpression$Xc)) {
+      return hasExpression(SLinkOperations.getTarget(SNodeOperations.cast(expr, CONCEPTS.ConvertExpression$Xc), LINKS.expr$CW3E), exprConcept);
     } else {
       return false;
     }

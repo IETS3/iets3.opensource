@@ -14,6 +14,7 @@
   <dependencies>
     <dependency reexport="false">5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)</dependency>
     <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
+    <dependency reexport="false">165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -101,7 +102,8 @@
     <module reference="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" version="36" />
   </dependencyVersions>
   <extendedLanguages>
-    <extendedLanguage>165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)</extendedLanguage>
+    <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
+    <extendedLanguage>db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)</extendedLanguage>
   </extendedLanguages>
 </language>
 

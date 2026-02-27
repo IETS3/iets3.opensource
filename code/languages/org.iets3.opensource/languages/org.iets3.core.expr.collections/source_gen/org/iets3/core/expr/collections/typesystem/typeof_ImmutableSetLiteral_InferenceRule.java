@@ -43,7 +43,7 @@ public class typeof_ImmutableSetLiteral_InferenceRule extends AbstractInferenceR
             {
               SNode _nodeToCheck_1029348928467 = literal;
               EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030362306143", 0, null);
-              typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030362306145", true), (SNode) createSetType_rvbiq3_a1a0c0a0b0a1a0a0a0a0b(SNodeOperations.cast(typeCheckingContext.getExpandedNode(elementType), CONCEPTS.Type$WK)), _info_12389875345);
+              typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030362306145", true), (SNode) createSetType_rvbiq3_a1a0c0a0b0a1a0a0a0a0b(SNodeOperations.as(typeCheckingContext.getExpandedNode(elementType), CONCEPTS.Type$WK)), _info_12389875345);
             }
           }, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030362306141", false, false);
         }
@@ -65,7 +65,7 @@ public class typeof_ImmutableSetLiteral_InferenceRule extends AbstractInferenceR
           {
             SNode _nodeToCheck_1029348928467 = literal;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030362724111", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030362724121", true), (SNode) createSetType_rvbiq3_a1a0c0a0c0c0a0a0a1(ListSequence.fromList(SLinkOperations.getChildren(literal, LINKS.elements$psbq)).count() + "", ListSequence.fromList(SLinkOperations.getChildren(literal, LINKS.elements$psbq)).count() + "", SNodeOperations.cast(elementSupertype, CONCEPTS.Type$WK)), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030362724121", true), (SNode) createSetType_rvbiq3_a1a0c0a0c0c0a0a0a1(ListSequence.fromList(SLinkOperations.getChildren(literal, LINKS.elements$psbq)).count() + "", ListSequence.fromList(SLinkOperations.getChildren(literal, LINKS.elements$psbq)).count() + "", SNodeOperations.as(elementSupertype, CONCEPTS.Type$WK)), _info_12389875345);
           }
         } else {
           {
@@ -76,7 +76,7 @@ public class typeof_ImmutableSetLiteral_InferenceRule extends AbstractInferenceR
           {
             SNode _nodeToCheck_1029348928467 = literal;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030362375632", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030362375642", true), (SNode) createSetType_rvbiq3_a1a0c0b0a2a2a0a0a0b(ListSequence.fromList(SLinkOperations.getChildren(literal, LINKS.elements$psbq)).count() + "", ListSequence.fromList(SLinkOperations.getChildren(literal, LINKS.elements$psbq)).count() + "", SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(literal, LINKS.typeConstraint$aeKT), LINKS.typeConstraint$ooNf), CONCEPTS.Type$WK)), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030362375642", true), (SNode) createSetType_rvbiq3_a1a0c0b0a2a2a0a0a0b(ListSequence.fromList(SLinkOperations.getChildren(literal, LINKS.elements$psbq)).count() + "", ListSequence.fromList(SLinkOperations.getChildren(literal, LINKS.elements$psbq)).count() + "", SNodeOperations.as(SLinkOperations.getTarget(SLinkOperations.getTarget(literal, LINKS.typeConstraint$aeKT), LINKS.typeConstraint$ooNf), CONCEPTS.Type$WK)), _info_12389875345);
           }
         }
       }));

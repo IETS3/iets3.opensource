@@ -98,8 +98,9 @@ public final class IVariabilityAwareArtifact__BehaviorDescriptor extends BaseBHD
   public static final SMethod<Boolean> hasVariationPoints_id7qBQQbKEZEB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasVariationPoints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8550043635577256615L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
   public static final SMethod<Boolean> isCommentedOut_id2B0XdnC2OSG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCommentedOut").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3008673750641757740L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<ArtifactPath> getContextArtifactPath_id4I8sp9GPJNO = new SMethodBuilder<ArtifactPath>(new SJavaCompoundTypeImpl(ArtifactPath.class)).name("getContextArtifactPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5442725023382437108L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, featureModel_id2H_yVh8fm35, artifactName_id7eAm6HphX4A, artifactRoot_id3q2wVeorTKs, isImplementedByArtifact_id2CjcCemTEqU, showDependencies_id28EqHe3RzHo, hasDependenciesSimple_idikWLjwe3NU, getDependenciesSimpleGeneric_idBVAwuODEV_, getDependenciesSimple_id28EqHe3I657, getDependencies_id5LihCoMjdTK, getAllDependencies_id36x6ZtcRcQW, getAllDependenciesTransitive_id5LihCoMjg$M, getDependenciesTransitivePlain_id3hajdyqDQD6, getDirectDependenciesTransitive_id7ecvLRWIH6_, hasDependencies_idikWLjwe8ux, hasAnyDependencies_idikWLjwemlM, getFMInclude_id6Kqv3dgD13X, getInstantiatedSubtree_id5LihCoMjncG, referencesOf_id5zD5ovlRp39, addNewInstance_id5WHJ7lXZMZ2, setReference_id5WHJ7lXOV8f, replacementForMissingTarget_id6a4qfUL5HE3, getReferrersOfClonedInstance_id1hj8TU8ijnS, fixBrokenLinksInClonedInstance_id5hQcNtoh2xH, dependentSourceComputer_id3nzq23wHk3T, presencePrerequisite_id3u5s$zWhU8l, structuralDependence_id1bNNzgfSqLF, showSubResults_id4MH81Y0VldB, hasChangedAndMustBeRechecked_id6MJy$PGsBKB, hashRootNode_id6MJy$PGs$IZ, solvedInTypeSystem_id1LoQHJHiiZd, createSolverTask_id4pkidg67Lgb, getAvailableConfigurations_id5bXbDSdjI5A, runManually_id3R3AIvumrTm, addCustomChecks_idfr_H$y6Dum, nameForSolver_id2BeCnBc0N2R, nameForSolverInternal_id2BeCnBc1hdM, hasVariationPoints_id7qBQQbKEZEB, isCommentedOut_id2B0XdnC2OSG, getContextArtifactPath_id4I8sp9GPJNO);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, featureModel_id2H_yVh8fm35, artifactName_id7eAm6HphX4A, artifactRoot_id3q2wVeorTKs, isImplementedByArtifact_id2CjcCemTEqU, showDependencies_id28EqHe3RzHo, hasDependenciesSimple_idikWLjwe3NU, getDependenciesSimpleGeneric_idBVAwuODEV_, getDependenciesSimple_id28EqHe3I657, getDependencies_id5LihCoMjdTK, getAllDependencies_id36x6ZtcRcQW, getAllDependenciesTransitive_id5LihCoMjg$M, getDependenciesTransitivePlain_id3hajdyqDQD6, getDirectDependenciesTransitive_id7ecvLRWIH6_, hasDependencies_idikWLjwe8ux, hasAnyDependencies_idikWLjwemlM, getFMInclude_id6Kqv3dgD13X, getInstantiatedSubtree_id5LihCoMjncG, referencesOf_id5zD5ovlRp39, addNewInstance_id5WHJ7lXZMZ2, setReference_id5WHJ7lXOV8f, replacementForMissingTarget_id6a4qfUL5HE3, getReferrersOfClonedInstance_id1hj8TU8ijnS, fixBrokenLinksInClonedInstance_id5hQcNtoh2xH, dependentSourceComputer_id3nzq23wHk3T, presencePrerequisite_id3u5s$zWhU8l, structuralDependence_id1bNNzgfSqLF, showSubResults_id4MH81Y0VldB, hasChangedAndMustBeRechecked_id6MJy$PGsBKB, hashRootNode_id6MJy$PGs$IZ, solvedInTypeSystem_id1LoQHJHiiZd, createSolverTask_id4pkidg67Lgb, getAvailableConfigurations_id5bXbDSdjI5A, runManually_id3R3AIvumrTm, addCustomChecks_idfr_H$y6Dum, nameForSolver_id2BeCnBc0N2R, nameForSolverInternal_id2BeCnBc1hdM, hasVariationPoints_id7qBQQbKEZEB, isCommentedOut_id2B0XdnC2OSG, getContextArtifactPath_id4I8sp9GPJNO, highlightWarning_id4358bbCIl2g);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -266,6 +267,9 @@ public final class IVariabilityAwareArtifact__BehaviorDescriptor extends BaseBHD
     // Override for 'Premium' functionality 
     return check_b52sgg_a1a93(ArtifactInstances.getFirstInstance(__thisNode__));
   }
+  /*package*/ static boolean highlightWarning_id4358bbCIl2g(@NotNull SNode __thisNode__) {
+    return true;
+  }
 
   /*package*/ IVariabilityAwareArtifact__BehaviorDescriptor() {
   }
@@ -361,6 +365,8 @@ public final class IVariabilityAwareArtifact__BehaviorDescriptor extends BaseBHD
         return (T) ((Boolean) hasVariationPoints_id7qBQQbKEZEB(node));
       case 39:
         return (T) ((ArtifactPath) getContextArtifactPath_id4I8sp9GPJNO(node));
+      case 40:
+        return (T) ((Boolean) highlightWarning_id4358bbCIl2g(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -26,7 +26,7 @@ public class check_PowExpressionUnits_NonTypesystemRule extends AbstractNonTypes
   public void applyRule(final SNode powerExpression, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     if (UnitConversionUtil.hasUnitSpecification(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(powerExpression, LINKS.expr$CW3E)))) {
       SNode exponentType = TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(powerExpression, LINKS.exponent$uVP8));
-      if (!(SNodeOperations.isInstanceOf(exponentType, CONCEPTS.NumberType$n) && MathExpressionsOpRulesHelper.rangeIsValue(SNodeOperations.cast(exponentType, CONCEPTS.NumberType$n)) && MathExpressionsOpRulesHelper.isIntValue((long) NumberType__BehaviorDescriptor.intRange_id3p6$WoEzHkL.invoke(SNodeOperations.cast(exponentType, CONCEPTS.NumberType$n))._0()))) {
+      if (!(SNodeOperations.isInstanceOf(exponentType, CONCEPTS.NumberType$n) && MathExpressionsOpRulesHelper.rangeIsValue(SNodeOperations.as(exponentType, CONCEPTS.NumberType$n)) && MathExpressionsOpRulesHelper.isIntValue((long) NumberType__BehaviorDescriptor.intRange_id3p6$WoEzHkL.invoke(SNodeOperations.as(exponentType, CONCEPTS.NumberType$n))._0()))) {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(powerExpression, LINKS.exponent$uVP8), "a power expression is only allowed to have units if the exponent is a number type in the range of int", "r:bf3cd5a0-eefc-4fd9-b3a6-b57643c9d80c(org.iets3.core.expr.typetags.units.typesystem)", "7396263120840438290", null, errorTarget);
       }

@@ -20,12 +20,12 @@ public class typeof_LookupTarget_InferenceRule extends AbstractInferenceRule_Run
   }
   public void applyRule(final SNode lookupTarget, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     {
-      final SNode ltt = typeCheckingContext.typeOf(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(lookupTarget), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E), "r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)", "5860825012168456463", true);
+      final SNode ltt = typeCheckingContext.typeOf(SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(lookupTarget), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E), "r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)", "5860825012168456463", true);
       typeCheckingContext.whenConcrete(ltt, () -> {
         {
           SNode _nodeToCheck_1029348928467 = lookupTarget;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)", "5860825012168464128", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)", "5860825012168456022", true), (SNode) SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ltt), CONCEPTS.LookupTableType$o), LINKS.resType$7fYH)), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)", "5860825012168456022", true), (SNode) SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ltt), CONCEPTS.LookupTableType$o), LINKS.resType$7fYH)), _info_12389875345);
         }
       }, "r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)", "5860825012168456382", false, false);
     }

@@ -28,7 +28,7 @@ public class typeof_InputVector_InferenceRule extends AbstractInferenceRule_Runt
   public typeof_InputVector_InferenceRule() {
   }
   public void applyRule(final SNode iv, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    SNode col = SNodeOperations.cast(SNodeOperations.getParent(iv), CONCEPTS.AbstractVectorCollection$cN);
+    SNode col = SNodeOperations.as(SNodeOperations.getParent(iv), CONCEPTS.AbstractVectorCollection$cN);
     List<SNode> args = TestSubjectAdapter__BehaviorDescriptor.arguments_id1bwJEEeSLhl.invoke(AbstractVectorCollection__BehaviorDescriptor.subject_id1bwJEEeTss8.invoke(col));
     List<Tuples._2<SNode, String>> outs = TestSubjectAdapter__BehaviorDescriptor.outputs_id1bwJEEg42nb.invoke(AbstractVectorCollection__BehaviorDescriptor.subject_id1bwJEEeTss8.invoke(col));
     for (SNode v : ListSequence.fromList(SLinkOperations.getChildren(iv, LINKS.values$8V1O))) {

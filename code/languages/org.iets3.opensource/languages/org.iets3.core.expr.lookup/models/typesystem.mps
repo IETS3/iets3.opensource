@@ -135,7 +135,9 @@
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -449,6 +451,7 @@
                         <ref role="2pIpSl" to="8qwc:55lPkJGZxnp" resolve="resType" />
                         <node concept="36biLy" id="55lPkJH18CT" role="28nt2d">
                           <node concept="1PxgMI" id="1tbxNVtClwT" role="36biLW">
+                            <property role="1BlNFB" value="true" />
                             <node concept="chp4Y" id="1tbxNVtClx_" role="3oSUPX">
                               <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
                             </node>
@@ -603,6 +606,7 @@
               <node concept="2OqwBi" id="55lPkJH1Eea" role="mwGJk">
                 <node concept="2OqwBi" id="55lPkJH1DHi" role="2Oq$k0">
                   <node concept="1PxgMI" id="55lPkJH1Dz8" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="55lPkJH1DzM" role="3oSUPX">
                       <ref role="cht4Q" to="8qwc:55lPkJGZwPb" resolve="LookupTableType" />
                     </node>
@@ -629,6 +633,7 @@
         <node concept="1Z2H0r" id="55lPkJH1B$f" role="nvjzm">
           <node concept="2OqwBi" id="55lPkJH1CuQ" role="1Z2MuG">
             <node concept="1PxgMI" id="55lPkJH1CfH" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
               <node concept="chp4Y" id="55lPkJH1ChC" role="3oSUPX">
                 <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
               </node>

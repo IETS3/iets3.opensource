@@ -23,7 +23,7 @@ public class check_DefaultValueExpression_NonTypesystemRule extends AbstractNonT
   public check_DefaultValueExpression_NonTypesystemRule() {
   }
   public void applyRule(final SNode dve, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (!(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(dve, LINKS.type$EhVN), CONCEPTS.ITypeSupportsDefaultValue$Ly) && (boolean) ITypeSupportsDefaultValue__BehaviorDescriptor.supportsDefault_id60Qa1k_sqM4.invoke(SNodeOperations.cast(SLinkOperations.getTarget(dve, LINKS.type$EhVN), CONCEPTS.ITypeSupportsDefaultValue$Ly)))) {
+    if (!(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(dve, LINKS.type$EhVN), CONCEPTS.ITypeSupportsDefaultValue$Ly) && (boolean) ITypeSupportsDefaultValue__BehaviorDescriptor.supportsDefault_id60Qa1k_sqM4.invoke(SNodeOperations.as(SLinkOperations.getTarget(dve, LINKS.type$EhVN), CONCEPTS.ITypeSupportsDefaultValue$Ly)))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(dve, LINKS.type$EhVN), "type does not support default values", "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "6932772747670991343", null, errorTarget);
