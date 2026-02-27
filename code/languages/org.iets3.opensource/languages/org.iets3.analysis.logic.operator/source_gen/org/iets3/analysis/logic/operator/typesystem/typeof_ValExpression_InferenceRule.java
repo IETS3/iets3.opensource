@@ -32,7 +32,7 @@ public class typeof_ValExpression_InferenceRule extends AbstractInferenceRule_Ru
           {
             SNode _nodeToCheck_1029348928467 = valExpression;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:bde15987-c92b-4ce5-9a2a-21b98f5dbe31(org.iets3.analysis.logic.operator.typesystem)", "374286788917013440", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:bde15987-c92b-4ce5-9a2a-21b98f5dbe31(org.iets3.analysis.logic.operator.typesystem)", "374286788917013124", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(typeExpr), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a), "r:bde15987-c92b-4ce5-9a2a-21b98f5dbe31(org.iets3.analysis.logic.operator.typesystem)", "374286788917013456", true), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:bde15987-c92b-4ce5-9a2a-21b98f5dbe31(org.iets3.analysis.logic.operator.typesystem)", "374286788917013124", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(typeExpr), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a), "r:bde15987-c92b-4ce5-9a2a-21b98f5dbe31(org.iets3.analysis.logic.operator.typesystem)", "374286788917013456", true), _info_12389875345);
           }
         } else {
           {

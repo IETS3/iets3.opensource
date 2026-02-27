@@ -26,7 +26,7 @@ public class typeof_CollectionType_InferenceRule extends AbstractInferenceRule_R
       final SNode bt = typeCheckingContext.typeOf(SLinkOperations.getTarget(collType, LINKS.baseType$5NOJ), "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "5880303268807248657", true);
       typeCheckingContext.whenConcrete(bt, () -> {
         SNode copy = SNodeOperations.copyNode(collType);
-        SLinkOperations.setTarget(copy, LINKS.baseType$5NOJ, SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(bt)), CONCEPTS.Type$WK));
+        SLinkOperations.setTarget(copy, LINKS.baseType$5NOJ, SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(bt)), CONCEPTS.Type$WK));
         {
           SNode _nodeToCheck_1029348928467 = collType;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "5880303268807251002", 0, null);

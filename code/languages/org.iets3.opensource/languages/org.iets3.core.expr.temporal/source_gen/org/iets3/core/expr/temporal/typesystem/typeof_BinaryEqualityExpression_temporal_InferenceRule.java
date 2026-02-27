@@ -55,29 +55,29 @@ public class typeof_BinaryEqualityExpression_temporal_InferenceRule extends Abst
             SNode lt = typeCheckingContext.getExpandedNode(leftType);
             SNode rt = typeCheckingContext.getExpandedNode(rightType);
             if (SNodeOperations.isInstanceOf(lt, CONCEPTS.TemporalType$oH)) {
-              lt = SLinkOperations.getTarget(SNodeOperations.cast(lt, CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a);
+              lt = SLinkOperations.getTarget(SNodeOperations.as(lt, CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a);
               wasTemporal = true;
             }
             if (SNodeOperations.isInstanceOf(rt, CONCEPTS.TemporalType$oH)) {
-              rt = SLinkOperations.getTarget(SNodeOperations.cast(rt, CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a);
+              rt = SLinkOperations.getTarget(SNodeOperations.as(rt, CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a);
               wasTemporal = true;
             }
 
 
             if (SNodeOperations.isInstanceOf(lt, CONCEPTS.IInterpreterWrapperType$KD)) {
-              lt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.cast(lt, CONCEPTS.IInterpreterWrapperType$KD));
+              lt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.as(lt, CONCEPTS.IInterpreterWrapperType$KD));
             }
             if (SNodeOperations.isInstanceOf(rt, CONCEPTS.IInterpreterWrapperType$KD)) {
-              rt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.cast(rt, CONCEPTS.IInterpreterWrapperType$KD));
+              rt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.as(rt, CONCEPTS.IInterpreterWrapperType$KD));
             }
             if (SNodeOperations.isInstanceOf(lt, CONCEPTS.IComplexTypeSupportsEquals$qk) || SNodeOperations.isInstanceOf(rt, CONCEPTS.IComplexTypeSupportsEquals$qk)) {
               SNode complexType;
               SNode otherType;
               if (SNodeOperations.isInstanceOf(lt, CONCEPTS.IComplexTypeSupportsEquals$qk)) {
-                complexType = SNodeOperations.cast(lt, CONCEPTS.IComplexTypeSupportsEquals$qk);
+                complexType = SNodeOperations.as(lt, CONCEPTS.IComplexTypeSupportsEquals$qk);
                 otherType = rt;
               } else {
-                complexType = SNodeOperations.cast(rt, CONCEPTS.IComplexTypeSupportsEquals$qk);
+                complexType = SNodeOperations.as(rt, CONCEPTS.IComplexTypeSupportsEquals$qk);
                 otherType = lt;
               }
               if (!((boolean) IComplexTypeSupportsEquals__BehaviorDescriptor.isComparableTo_id6xvNSEj6BML.invoke(complexType, otherType))) {
@@ -115,7 +115,7 @@ public class typeof_BinaryEqualityExpression_temporal_InferenceRule extends Abst
                 {
                   SNode _nodeToCheck_1029348928467 = beq;
                   EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "1075037996907680014", 0, null);
-                  typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "1075037996907680024", true), (SNode) createTemporalType_rs99cb_a1a0c0a0a0q0b0a1a0a1a0b0a0c(SNodeOperations.cast(unwrappedOpType, CONCEPTS.Type$WK)), _info_12389875345);
+                  typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "1075037996907680024", true), (SNode) createTemporalType_rs99cb_a1a0c0a0a0q0b0a1a0a1a0b0a0c(SNodeOperations.as(unwrappedOpType, CONCEPTS.Type$WK)), _info_12389875345);
                 }
               } else {
                 {

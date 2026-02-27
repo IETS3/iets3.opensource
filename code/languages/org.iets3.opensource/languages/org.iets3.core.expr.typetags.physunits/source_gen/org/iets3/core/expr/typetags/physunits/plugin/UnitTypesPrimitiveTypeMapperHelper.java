@@ -20,6 +20,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public class UnitTypesPrimitiveTypeMapperHelper {
   private UnitTypesPrimitiveTypeMapperHelper() {
   }
+
   public static Multimap<SNode, SNode> createUnitSpec2TypesMap(Iterable<SNode> typesWithUnit) {
     final Multimap<SNode, SNode> unitSpec2TypesMap = HashMultimap.create();
     Sequence.fromIterable(typesWithUnit).visitAll((typeWithUnit) -> {

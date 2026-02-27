@@ -26,7 +26,7 @@ public class check_IfExpression_NonTypesystemRule extends AbstractNonTypesystemR
   }
   public void applyRule(final SNode ife, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     if (SLinkOperations.getTarget(ife, LINKS.elseSection$kbJ$) == null) {
-      if (!(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(ife, LINKS.thenPart$bVSc), CONCEPTS.IMayHaveEffect$Gp) && IMayHaveEffect__BehaviorDescriptor.effectDescriptor_id6GySMNjjWfO.invoke(SNodeOperations.cast(SLinkOperations.getTarget(ife, LINKS.thenPart$bVSc), CONCEPTS.IMayHaveEffect$Gp)).modifiesState())) {
+      if (!(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(ife, LINKS.thenPart$bVSc), CONCEPTS.IMayHaveEffect$Gp) && IMayHaveEffect__BehaviorDescriptor.effectDescriptor_id6GySMNjjWfO.invoke(SNodeOperations.as(SLinkOperations.getTarget(ife, LINKS.thenPart$bVSc), CONCEPTS.IMayHaveEffect$Gp)).modifiesState())) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(ife, "an ‹if› without an ‹else› is only allowed if the ‹then› expression has an effect", "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "5822875932045004808", null, errorTarget);

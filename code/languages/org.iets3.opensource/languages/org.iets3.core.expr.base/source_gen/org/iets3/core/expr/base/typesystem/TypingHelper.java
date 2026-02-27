@@ -105,7 +105,7 @@ public class TypingHelper {
         if (SNodeOperations.isInstanceOf(others, CONCEPTS.OptionType$eU)) {
           return others;
         } else {
-          return createOptionType_cy9ea_a0a0a0c0d0o(SNodeOperations.cast(others, CONCEPTS.Type$WK));
+          return createOptionType_cy9ea_a0a0a0c0d0o(SNodeOperations.as(others, CONCEPTS.Type$WK));
         }
       } else {
         return others;
@@ -114,15 +114,15 @@ public class TypingHelper {
     if (ListSequence.fromList(flattenTypes).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.IAttemptType$5c))) {
       SNode type = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x59f3fec4e777a2efL, "org.iets3.core.expr.base.structure.AttemptType"));
       for (final SNode set : Sequence.fromIterable(SNodeOperations.ofConcept(flattenTypes, CONCEPTS.SpecificErrorType$Ci))) {
-        if (ListSequence.fromList(SLinkOperations.getChildren(type, LINKS.errorLiterals$XkTy)).any((existing) -> (boolean) ErrorLiteral__BehaviorDescriptor.isSameAs_id69zaTr1Z8aS.invoke(existing, SLinkOperations.getTarget(SNodeOperations.cast(set, CONCEPTS.SpecificErrorType$Ci), LINKS.error$AGha)))) {
+        if (ListSequence.fromList(SLinkOperations.getChildren(type, LINKS.errorLiterals$XkTy)).any((existing) -> (boolean) ErrorLiteral__BehaviorDescriptor.isSameAs_id69zaTr1Z8aS.invoke(existing, SLinkOperations.getTarget(SNodeOperations.as(set, CONCEPTS.SpecificErrorType$Ci), LINKS.error$AGha)))) {
           continue;
         }
-        ListSequence.fromList(SLinkOperations.getChildren(type, LINKS.errorLiterals$XkTy)).addElement(SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.cast(set, CONCEPTS.SpecificErrorType$Ci), LINKS.error$AGha)));
+        ListSequence.fromList(SLinkOperations.getChildren(type, LINKS.errorLiterals$XkTy)).addElement(SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(set, CONCEPTS.SpecificErrorType$Ci), LINKS.error$AGha)));
       }
       Iterable<SNode> successBaseTypes = ListSequence.fromList(flattenTypes).where((it) -> !(SNodeOperations.isInstanceOf(it, CONCEPTS.SpecificErrorType$Ci)));
       SNode successType = calcCommonTypeCore(successBaseTypes, goToInfinity, allowJoinType);
       if (!(SNodeOperations.isInstanceOf(successType, CONCEPTS.RuntimeErrorType$3c))) {
-        SLinkOperations.setTarget(type, LINKS.successType$Xfwb, SNodeOperations.cast(successType, CONCEPTS.Type$WK));
+        SLinkOperations.setTarget(type, LINKS.successType$Xfwb, SNodeOperations.as(successType, CONCEPTS.Type$WK));
         return type;
       } else {
         return successType;
@@ -136,10 +136,10 @@ public class TypingHelper {
     final Wrappers._boolean optionalResult = new Wrappers._boolean(optional);
     Sequence.fromIterable(types).visitAll((final SNode it) -> {
       if (SNodeOperations.isInstanceOf(it, CONCEPTS.JoinType$TL)) {
-        optionalResult.value |= checkOptionTypeIsRequiredAndRecursivlyExtractElementTypes(SLinkOperations.getChildren(SNodeOperations.cast(it, CONCEPTS.JoinType$TL), LINKS.types$MP0E), flattedTypes, optional);
+        optionalResult.value |= checkOptionTypeIsRequiredAndRecursivlyExtractElementTypes(SLinkOperations.getChildren(SNodeOperations.as(it, CONCEPTS.JoinType$TL), LINKS.types$MP0E), flattedTypes, optional);
       } else if (SNodeOperations.isInstanceOf(it, CONCEPTS.OptionType$eU)) {
         List<SNode> listTypes = new ArrayList<SNode>();
-        ListSequence.fromList(listTypes).addElement(SLinkOperations.getTarget(SNodeOperations.cast(it, CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a));
+        ListSequence.fromList(listTypes).addElement(SLinkOperations.getTarget(SNodeOperations.as(it, CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a));
         optionalResult.value |= checkOptionTypeIsRequiredAndRecursivlyExtractElementTypes(listTypes, flattedTypes, true);
       } else {
         if (!(ListSequence.fromList(flattedTypes).any((t) -> (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(t, it)))) {
@@ -162,7 +162,7 @@ public class TypingHelper {
       {
         final SNode inferredType = typeCheckingContext.typeOf(ListSequence.fromList(nodesCopy).getElement(position), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "808023829453865097", true);
         typeCheckingContext.whenConcrete(inferredType, () -> {
-          ListSequence.fromList(types).setElement(position, SNodeOperations.cast(typeCheckingContext.getExpandedNode(inferredType), CONCEPTS.Type$WK));
+          ListSequence.fromList(types).setElement(position, SNodeOperations.as(typeCheckingContext.getExpandedNode(inferredType), CONCEPTS.Type$WK));
           if (counter.decrementAndGet() == 0) {
             handler.invoke(types);
           }
@@ -203,23 +203,23 @@ public class TypingHelper {
    */
   public static void ensureTypeComparability(final SNode leftType, final SNode rightType, final _FunctionTypes._return_P2_E0<? extends Boolean, ? super SNode, ? super SNode> isPrimitiveTypeComparable, _FunctionTypes._void_P2_E0<? super SNode, ? super SNode> createError) {
     if (SNodeOperations.isInstanceOf(leftType, CONCEPTS.IParameterizedTypeSupportsEquals$yU) && SNodeOperations.isInstanceOf(rightType, CONCEPTS.IParameterizedTypeSupportsEquals$yU)) {
-      SNode lt = SNodeOperations.cast(leftType, CONCEPTS.IParameterizedTypeSupportsEquals$yU);
-      SNode rt = SNodeOperations.cast(rightType, CONCEPTS.IParameterizedTypeSupportsEquals$yU);
-      IParameterizedTypeSupportsEquals__BehaviorDescriptor.ensureParameterizedTypeComparability_id7KDVkAErfTB.invoke(lt, SNodeOperations.cast(rt, CONCEPTS.Type$WK), isPrimitiveTypeComparable, createError);
+      SNode lt = SNodeOperations.as(leftType, CONCEPTS.IParameterizedTypeSupportsEquals$yU);
+      SNode rt = SNodeOperations.as(rightType, CONCEPTS.IParameterizedTypeSupportsEquals$yU);
+      IParameterizedTypeSupportsEquals__BehaviorDescriptor.ensureParameterizedTypeComparability_id7KDVkAErfTB.invoke(lt, SNodeOperations.as(rt, CONCEPTS.Type$WK), isPrimitiveTypeComparable, createError);
     } else if (SNodeOperations.isInstanceOf(leftType, CONCEPTS.JoinType$TL)) {
       // NOTE: For a JoinType to be compatible, it is sufficient that one of its elements is compatible.
       // check if any element is compatible
-      if (!(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(leftType, CONCEPTS.JoinType$TL), LINKS.types$MP0E)).any((joined) -> areTypesComparable(joined, rightType, isPrimitiveTypeComparable)))) {
+      if (!(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(leftType, CONCEPTS.JoinType$TL), LINKS.types$MP0E)).any((joined) -> areTypesComparable(joined, rightType, isPrimitiveTypeComparable)))) {
         // show the first error
-        SNode first = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(leftType, CONCEPTS.JoinType$TL), LINKS.types$MP0E)).getElement(0);
+        SNode first = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(leftType, CONCEPTS.JoinType$TL), LINKS.types$MP0E)).getElement(0);
         ensureTypeComparability(first, rightType, isPrimitiveTypeComparable, createError);
       }
     } else if (SNodeOperations.isInstanceOf(rightType, CONCEPTS.JoinType$TL)) {
       // NOTE: For a JoinType to be compatible, it is sufficient that one of its elements is compatible.
       // check if any element is compatible
-      if (!(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(rightType, CONCEPTS.JoinType$TL), LINKS.types$MP0E)).any((joined) -> areTypesComparable(leftType, joined, isPrimitiveTypeComparable)))) {
+      if (!(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(rightType, CONCEPTS.JoinType$TL), LINKS.types$MP0E)).any((joined) -> areTypesComparable(leftType, joined, isPrimitiveTypeComparable)))) {
         // show the first error
-        SNode first = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(rightType, CONCEPTS.JoinType$TL), LINKS.types$MP0E)).getElement(0);
+        SNode first = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(rightType, CONCEPTS.JoinType$TL), LINKS.types$MP0E)).getElement(0);
         ensureTypeComparability(leftType, first, isPrimitiveTypeComparable, createError);
       }
     } else {
@@ -270,12 +270,12 @@ public class TypingHelper {
 
   public static boolean isConditionContainingNamedIsSomeExpressionWellFormed(SNode condition) {
     if (SNodeOperations.isInstanceOf(condition, CONCEPTS.LogicalAndExpression$m8)) {
-      SNode and = SNodeOperations.cast(condition, CONCEPTS.LogicalAndExpression$m8);
+      SNode and = SNodeOperations.as(condition, CONCEPTS.LogicalAndExpression$m8);
       return isConditionContainingNamedIsSomeExpressionWellFormed(SLinkOperations.getTarget(and, LINKS.left$zxUa)) && isConditionContainingNamedIsSomeExpressionWellFormed(SLinkOperations.getTarget(and, LINKS.right$zBjx));
     } else if (SNodeOperations.isInstanceOf(condition, CONCEPTS.IsSomeExpression$Ae)) {
       return true;
     } else if (SNodeOperations.isInstanceOf(condition, CONCEPTS.ParensExpression$Tv)) {
-      return isConditionContainingNamedIsSomeExpressionWellFormed(SLinkOperations.getTarget(SNodeOperations.cast(condition, CONCEPTS.ParensExpression$Tv), LINKS.expr$CW3E));
+      return isConditionContainingNamedIsSomeExpressionWellFormed(SLinkOperations.getTarget(SNodeOperations.as(condition, CONCEPTS.ParensExpression$Tv), LINKS.expr$CW3E));
     } else {
       return false;
     }

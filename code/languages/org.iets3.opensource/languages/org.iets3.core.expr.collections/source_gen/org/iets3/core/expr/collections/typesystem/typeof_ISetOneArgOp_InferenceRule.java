@@ -33,7 +33,7 @@ public class typeof_ISetOneArgOp_InferenceRule extends AbstractInferenceRule_Run
           {
             SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(op, LINKS.expr$CW3E);
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030364255861", 0, null);
-            typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030364255869", true), (SNode) SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(type), CONCEPTS.SetType$$o), LINKS.baseType$5NOJ), false, true, _info_12389875345);
+            typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030364255869", true), (SNode) SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(type), CONCEPTS.SetType$$o), LINKS.baseType$5NOJ), false, true, _info_12389875345);
           }
         }
       }, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030364255853", false, false);

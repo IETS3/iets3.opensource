@@ -149,10 +149,10 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
       SNode ft = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x68d69d36ba4ecfb6L, "org.iets3.core.expr.lambda.structure.FunctionType"));
-      for (SNode argType : SLinkOperations.getChildren(SNodeOperations.cast(rightOperandType, CONCEPTS.FunctionType$RQ), LINKS.argumentTypes$npDH)) {
-        ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).addElement(SNodeOperations.cast(SNodeOperations.copyNode(argType), CONCEPTS.Type$WK));
+      for (SNode argType : SLinkOperations.getChildren(SNodeOperations.as(rightOperandType, CONCEPTS.FunctionType$RQ), LINKS.argumentTypes$npDH)) {
+        ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).addElement(SNodeOperations.as(SNodeOperations.copyNode(argType), CONCEPTS.Type$WK));
       }
-      SLinkOperations.setTarget(ft, LINKS.returnType$nq7J, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.cast(leftOperandType, CONCEPTS.FunctionType$RQ), LINKS.returnType$nq7J)));
+      SLinkOperations.setTarget(ft, LINKS.returnType$nq7J, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(leftOperandType, CONCEPTS.FunctionType$RQ), LINKS.returnType$nq7J)));
       return ft;
     }
     @Override

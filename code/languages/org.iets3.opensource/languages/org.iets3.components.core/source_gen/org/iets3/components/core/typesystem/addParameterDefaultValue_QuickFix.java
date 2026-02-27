@@ -19,7 +19,7 @@ public class addParameterDefaultValue_QuickFix extends QuickFix_Runtime {
     return "Add default value for the parameter";
   }
   public void execute(SNode node) {
-    SLinkOperations.setNewChild(SNodeOperations.cast(node, CONCEPTS.Parameter$HZ), LINKS.defaultValue$UYGO, null);
+    SLinkOperations.setNewChild(SNodeOperations.as(node, CONCEPTS.Parameter$HZ), LINKS.defaultValue$UYGO, null);
   }
 
   private static final class CONCEPTS {

@@ -122,9 +122,6 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
-      <concept id="3989254429232883574" name="org.iets3.variability.featuremodel.base.structure.VariabilityModelChunk_old" flags="ng" index="12icEN">
-        <child id="3989254429232890937" name="contents_old" index="12i2BY" />
-      </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3" />
       <concept id="3989254429233029649" name="org.iets3.variability.featuremodel.base.structure.FeatureModel" flags="ng" index="12iwZl">
         <child id="3989254429233029900" name="root" index="12iwV8" />
@@ -203,7 +200,6 @@
     <node concept="1qefOq" id="7_IBAC_WHbY" role="1SKRRt">
       <node concept="12icEM" id="7_IBAC_WHc0" role="1qenE9">
         <property role="TrG5h" value="V" />
-        <node concept="12i7jc" id="7_IBAC_WHc1" role="12i2BY" />
         <node concept="12i7jc" id="3scZu9zdPJM" role="12i2BX" />
         <node concept="12iwZl" id="7_IBAC_WHc3" role="12i2BX">
           <node concept="12iwV3" id="7_IBAC_WHc4" role="12iwV8">

@@ -181,7 +181,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       if (!(SNodeOperations.isInstanceOf(leftOperandType, CONCEPTS.NumberType$n))) {
         return leftOperandType;
       }
-      SNode nt = SNodeOperations.copyNode(SNodeOperations.cast(leftOperandType, CONCEPTS.NumberType$n));
+      SNode nt = SNodeOperations.copyNode(SNodeOperations.as(leftOperandType, CONCEPTS.NumberType$n));
       if ((boolean) NumberType__BehaviorDescriptor.isInfinity_id6NHlpK$DFV5.invoke(nt)) {
         return leftOperandType;
       }
@@ -190,7 +190,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return nt;
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -219,8 +219,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
       if (SNodeOperations.isInstanceOf(leftOperandType, CONCEPTS.NumberType$n) && SNodeOperations.isInstanceOf(rightOperandType, CONCEPTS.NumberType$n)) {
-        SNode left = SNodeOperations.cast(leftOperandType, CONCEPTS.NumberType$n);
-        SNode right = SNodeOperations.cast(rightOperandType, CONCEPTS.NumberType$n);
+        SNode left = SNodeOperations.as(leftOperandType, CONCEPTS.NumberType$n);
+        SNode right = SNodeOperations.as(rightOperandType, CONCEPTS.NumberType$n);
         SNode res = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x7211e50064d40ea8L, "org.iets3.core.expr.simpleTypes.structure.NumberType"));
         NumberType__BehaviorDescriptor.setRange_id6NHlpK$OKdB.invoke(res, InfHelper.sub(NumberType__BehaviorDescriptor.lowerBound_id19PglA20zCc.invoke(left), NumberType__BehaviorDescriptor.upperBound_id19PglA20_Su.invoke(right)), InfHelper.sub(NumberType__BehaviorDescriptor.upperBound_id19PglA20_Su.invoke(left), NumberType__BehaviorDescriptor.lowerBound_id19PglA20zCc.invoke(right)));
         NumberType__BehaviorDescriptor.setMaxPrecision_id7Wa2sv3Ko90.invoke(res, left, right);
@@ -230,7 +230,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
 
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -259,8 +259,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
       if (SNodeOperations.isInstanceOf(leftOperandType, CONCEPTS.NumberType$n) && SNodeOperations.isInstanceOf(rightOperandType, CONCEPTS.NumberType$n)) {
-        SNode left = SNodeOperations.cast(leftOperandType, CONCEPTS.NumberType$n);
-        SNode right = SNodeOperations.cast(rightOperandType, CONCEPTS.NumberType$n);
+        SNode left = SNodeOperations.as(leftOperandType, CONCEPTS.NumberType$n);
+        SNode right = SNodeOperations.as(rightOperandType, CONCEPTS.NumberType$n);
         String ll = NumberType__BehaviorDescriptor.lowerBound_id19PglA20zCc.invoke(left);
         String rl = NumberType__BehaviorDescriptor.lowerBound_id19PglA20zCc.invoke(right);
         String lu = NumberType__BehaviorDescriptor.upperBound_id19PglA20_Su.invoke(left);
@@ -281,7 +281,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
 
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -310,8 +310,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
       if (SNodeOperations.isInstanceOf(leftOperandType, CONCEPTS.NumberType$n) && SNodeOperations.isInstanceOf(rightOperandType, CONCEPTS.NumberType$n)) {
-        SNode left = SNodeOperations.cast(leftOperandType, CONCEPTS.NumberType$n);
-        SNode right = SNodeOperations.cast(rightOperandType, CONCEPTS.NumberType$n);
+        SNode left = SNodeOperations.as(leftOperandType, CONCEPTS.NumberType$n);
+        SNode right = SNodeOperations.as(rightOperandType, CONCEPTS.NumberType$n);
         String ll = NumberType__BehaviorDescriptor.lowerBound_id19PglA20zCc.invoke(left);
         String rl = NumberType__BehaviorDescriptor.lowerBound_id19PglA20zCc.invoke(right);
         String lu = NumberType__BehaviorDescriptor.upperBound_id19PglA20_Su.invoke(left);
@@ -339,7 +339,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createRealType_3ist9o_a1a1e();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -374,7 +374,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createBooleanType_3ist9o_a0a1f();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -407,8 +407,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
       if (SNodeOperations.isInstanceOf(leftOperandType, CONCEPTS.NumberType$n) && SNodeOperations.isInstanceOf(rightOperandType, CONCEPTS.NumberType$n)) {
-        SNode left = SNodeOperations.cast(leftOperandType, CONCEPTS.NumberType$n);
-        SNode right = SNodeOperations.cast(rightOperandType, CONCEPTS.NumberType$n);
+        SNode left = SNodeOperations.as(leftOperandType, CONCEPTS.NumberType$n);
+        SNode right = SNodeOperations.as(rightOperandType, CONCEPTS.NumberType$n);
         SNode res = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x7211e50064d40ea8L, "org.iets3.core.expr.simpleTypes.structure.NumberType"));
         try {
           NumberType__BehaviorDescriptor.setRange_id6NHlpK$OKdB.invoke(res, InfHelper.add(NumberType__BehaviorDescriptor.lowerBound_id19PglA20zCc.invoke(left), NumberType__BehaviorDescriptor.lowerBound_id19PglA20zCc.invoke(right)), InfHelper.add(NumberType__BehaviorDescriptor.upperBound_id19PglA20_Su.invoke(left), NumberType__BehaviorDescriptor.upperBound_id19PglA20_Su.invoke(right)));
@@ -420,7 +420,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return PTF.computeSupertype(leftOperandType, rightOperandType, true, TypeChecker.getInstance().getSubtypingManager());
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -451,7 +451,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createBooleanType_3ist9o_a0a1h();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -486,7 +486,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createBooleanType_3ist9o_a0a1i();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -521,7 +521,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createBooleanType_3ist9o_a0a1j();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -556,7 +556,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createBooleanType_3ist9o_a0a1k();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -591,7 +591,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createStringType_3ist9o_a0a1l();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -626,7 +626,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createStringType_3ist9o_a0a1m();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -661,7 +661,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createStringType_3ist9o_a0a1n();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -696,7 +696,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createStringType_3ist9o_a0a1o();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -731,7 +731,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createStringType_3ist9o_a0a1p();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -764,8 +764,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
       if (SNodeOperations.isInstanceOf(leftOperandType, CONCEPTS.NumberType$n) && SNodeOperations.isInstanceOf(rightOperandType, CONCEPTS.NumberType$n)) {
-        SNode left = SNodeOperations.cast(leftOperandType, CONCEPTS.NumberType$n);
-        SNode right = SNodeOperations.cast(rightOperandType, CONCEPTS.NumberType$n);
+        SNode left = SNodeOperations.as(leftOperandType, CONCEPTS.NumberType$n);
+        SNode right = SNodeOperations.as(rightOperandType, CONCEPTS.NumberType$n);
         String lu = NumberType__BehaviorDescriptor.upperBound_id19PglA20_Su.invoke(left);
         String ru = NumberType__BehaviorDescriptor.upperBound_id19PglA20_Su.invoke(right);
         SNode res = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x7211e50064d40ea8L, "org.iets3.core.expr.simpleTypes.structure.NumberType"));
@@ -777,7 +777,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
 
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK)) && (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.NumberType$n)) == 0 && (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.NumberType$n)) == 0;
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) && (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK)) && (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.NumberType$n)) == 0 && (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.NumberType$n)) == 0;
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -840,7 +840,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return createBooleanType_3ist9o_a0a1s();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK));
+      return (boolean) Type__BehaviorDescriptor.notRequiresSpecialCapability_id7McqtXG$h_u.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {

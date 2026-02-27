@@ -30,7 +30,7 @@ public class typeof_ImmutableMapRemoveOp_InferenceRule extends AbstractInference
           {
             SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(op, LINKS.expr$CW3E);
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163714172", 0, null);
-            typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163714177", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(type), CONCEPTS.MapType$6), LINKS.keyType$h$wq), "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163714174", true), false, true, _info_12389875345);
+            typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163714177", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(type), CONCEPTS.MapType$6), LINKS.keyType$h$wq), "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163714174", true), false, true, _info_12389875345);
           }
         }
         {

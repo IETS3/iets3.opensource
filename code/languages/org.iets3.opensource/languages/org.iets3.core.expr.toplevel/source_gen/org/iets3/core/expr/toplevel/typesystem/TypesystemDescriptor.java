@@ -221,7 +221,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return PTF.createBooleanType();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return SLinkOperations.getTarget(SNodeOperations.cast(leftOperandType, CONCEPTS.EnumType$z), LINKS.enum$2YBB) == SLinkOperations.getTarget(SNodeOperations.cast(rightOperandType, CONCEPTS.EnumType$z), LINKS.enum$2YBB);
+      return SLinkOperations.getTarget(SNodeOperations.as(leftOperandType, CONCEPTS.EnumType$z), LINKS.enum$2YBB) == SLinkOperations.getTarget(SNodeOperations.as(rightOperandType, CONCEPTS.EnumType$z), LINKS.enum$2YBB);
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {

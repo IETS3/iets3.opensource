@@ -346,7 +346,9 @@
         <child id="1163670677455" name="concept" index="3Kbmr1" />
         <child id="1163670683720" name="body" index="3Kbo56" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1582,6 +1584,7 @@
                         <node concept="2OqwBi" id="6d" role="2Oq$k0">
                           <uo k="s:originTrace" v="n:8992894889132686041" />
                           <node concept="1PxgMI" id="6f" role="2Oq$k0">
+                            <property role="1BlNFB" value="true" />
                             <uo k="s:originTrace" v="n:8992894889132686042" />
                             <node concept="chp4Y" id="6h" role="3oSUPX">
                               <ref role="cht4Q" to="yv47:ub9nkyG$WT" resolve="ConstantRef" />
@@ -1677,6 +1680,7 @@
           <node concept="3K4zz7" id="6x" role="3cqZAk">
             <uo k="s:originTrace" v="n:7119724182729188645" />
             <node concept="1PxgMI" id="6y" role="3K4E3e">
+              <property role="1BlNFB" value="true" />
               <uo k="s:originTrace" v="n:7119724182729189772" />
               <node concept="chp4Y" id="6_" role="3oSUPX">
                 <ref role="cht4Q" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
@@ -5167,6 +5171,7 @@
                                         <node concept="36biLy" id="p3" role="28nt2d">
                                           <uo k="s:originTrace" v="n:5177002969018982924" />
                                           <node concept="1PxgMI" id="p4" role="36biLW">
+                                            <property role="1BlNFB" value="true" />
                                             <uo k="s:originTrace" v="n:7638337560006302545" />
                                             <node concept="chp4Y" id="p5" role="3oSUPX">
                                               <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -6305,6 +6310,7 @@
                                             <node concept="2OqwBi" id="uN" role="37vLTx">
                                               <uo k="s:originTrace" v="n:8402418312415180843" />
                                               <node concept="1PxgMI" id="uP" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:8402418312415180162" />
                                                 <node concept="chp4Y" id="uR" role="3oSUPX">
                                                   <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -6367,6 +6373,7 @@
                                             <node concept="2OqwBi" id="v4" role="37vLTx">
                                               <uo k="s:originTrace" v="n:8402418312415181856" />
                                               <node concept="1PxgMI" id="v6" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:8402418312415181857" />
                                                 <node concept="chp4Y" id="v8" role="3oSUPX">
                                                   <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -6435,6 +6442,7 @@
                                             <node concept="2OqwBi" id="vl" role="37vLTx">
                                               <uo k="s:originTrace" v="n:6380075495170409762" />
                                               <node concept="1PxgMI" id="vn" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:6380075495170409166" />
                                                 <node concept="chp4Y" id="vp" role="3oSUPX">
                                                   <ref role="cht4Q" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
@@ -6497,6 +6505,7 @@
                                             <node concept="2OqwBi" id="vA" role="37vLTx">
                                               <uo k="s:originTrace" v="n:6380075495170415497" />
                                               <node concept="1PxgMI" id="vC" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:6380075495170415498" />
                                                 <node concept="chp4Y" id="vE" role="3oSUPX">
                                                   <ref role="cht4Q" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
@@ -6983,6 +6992,7 @@
                                                               <node concept="36biLy" id="yf" role="28nt2d">
                                                                 <uo k="s:originTrace" v="n:6380075495170425271" />
                                                                 <node concept="1PxgMI" id="yg" role="36biLW">
+                                                                  <property role="1BlNFB" value="true" />
                                                                   <uo k="s:originTrace" v="n:791218494619239490" />
                                                                   <node concept="chp4Y" id="yh" role="3oSUPX">
                                                                     <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -7253,6 +7263,7 @@
                                                                 <node concept="36biLy" id="zC" role="28nt2d">
                                                                   <uo k="s:originTrace" v="n:8402418312415183281" />
                                                                   <node concept="1PxgMI" id="zD" role="36biLW">
+                                                                    <property role="1BlNFB" value="true" />
                                                                     <uo k="s:originTrace" v="n:8402418312415183282" />
                                                                     <node concept="chp4Y" id="zE" role="3oSUPX">
                                                                       <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -7752,6 +7763,7 @@
                                             <node concept="2OqwBi" id="A8" role="37vLTx">
                                               <uo k="s:originTrace" v="n:5528978585118474612" />
                                               <node concept="1PxgMI" id="Aa" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:5528978585118474613" />
                                                 <node concept="chp4Y" id="Ac" role="3oSUPX">
                                                   <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -7814,6 +7826,7 @@
                                             <node concept="2OqwBi" id="Ap" role="37vLTx">
                                               <uo k="s:originTrace" v="n:5528978585118474630" />
                                               <node concept="1PxgMI" id="Ar" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:5528978585118474631" />
                                                 <node concept="chp4Y" id="At" role="3oSUPX">
                                                   <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -7882,6 +7895,7 @@
                                             <node concept="2OqwBi" id="AE" role="37vLTx">
                                               <uo k="s:originTrace" v="n:5528978585118474650" />
                                               <node concept="1PxgMI" id="AG" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:5528978585118474651" />
                                                 <node concept="chp4Y" id="AI" role="3oSUPX">
                                                   <ref role="cht4Q" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
@@ -7944,6 +7958,7 @@
                                             <node concept="2OqwBi" id="AV" role="37vLTx">
                                               <uo k="s:originTrace" v="n:5528978585118474668" />
                                               <node concept="1PxgMI" id="AX" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:5528978585118474669" />
                                                 <node concept="chp4Y" id="AZ" role="3oSUPX">
                                                   <ref role="cht4Q" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
@@ -8430,6 +8445,7 @@
                                                               <node concept="36biLy" id="D$" role="28nt2d">
                                                                 <uo k="s:originTrace" v="n:5528978585118474717" />
                                                                 <node concept="1PxgMI" id="D_" role="36biLW">
+                                                                  <property role="1BlNFB" value="true" />
                                                                   <uo k="s:originTrace" v="n:5528978585118474718" />
                                                                   <node concept="chp4Y" id="DA" role="3oSUPX">
                                                                     <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -8700,6 +8716,7 @@
                                                                 <node concept="36biLy" id="EX" role="28nt2d">
                                                                   <uo k="s:originTrace" v="n:5528978585118474741" />
                                                                   <node concept="1PxgMI" id="EY" role="36biLW">
+                                                                    <property role="1BlNFB" value="true" />
                                                                     <uo k="s:originTrace" v="n:5528978585118474742" />
                                                                     <node concept="chp4Y" id="EZ" role="3oSUPX">
                                                                       <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -9428,6 +9445,7 @@
                                             <node concept="2OqwBi" id="IM" role="37vLTx">
                                               <uo k="s:originTrace" v="n:1075037996907679890" />
                                               <node concept="1PxgMI" id="IO" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:1075037996907679891" />
                                                 <node concept="chp4Y" id="IQ" role="3oSUPX">
                                                   <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -9490,6 +9508,7 @@
                                             <node concept="2OqwBi" id="J3" role="37vLTx">
                                               <uo k="s:originTrace" v="n:1075037996907679908" />
                                               <node concept="1PxgMI" id="J5" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:1075037996907679909" />
                                                 <node concept="chp4Y" id="J7" role="3oSUPX">
                                                   <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -9558,6 +9577,7 @@
                                             <node concept="2OqwBi" id="Jj" role="37vLTx">
                                               <uo k="s:originTrace" v="n:1075037996907679928" />
                                               <node concept="1PxgMI" id="Jl" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:1075037996907679929" />
                                                 <node concept="chp4Y" id="Jn" role="3oSUPX">
                                                   <ref role="cht4Q" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
@@ -9606,6 +9626,7 @@
                                             <node concept="2OqwBi" id="Jw" role="37vLTx">
                                               <uo k="s:originTrace" v="n:1075037996907679946" />
                                               <node concept="1PxgMI" id="Jy" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:1075037996907679947" />
                                                 <node concept="chp4Y" id="J$" role="3oSUPX">
                                                   <ref role="cht4Q" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
@@ -9677,6 +9698,7 @@
                                               <node concept="37vLTI" id="JT" role="3clFbG">
                                                 <uo k="s:originTrace" v="n:7520958096812862309" />
                                                 <node concept="1PxgMI" id="JU" role="37vLTx">
+                                                  <property role="1BlNFB" value="true" />
                                                   <uo k="s:originTrace" v="n:7520958096812862889" />
                                                   <node concept="chp4Y" id="JW" role="3oSUPX">
                                                     <ref role="cht4Q" to="hm2y:6xvNSEj6BMb" resolve="IComplexTypeSupportsEquals" />
@@ -9731,6 +9753,7 @@
                                                 <node concept="37vLTI" id="K7" role="3clFbG">
                                                   <uo k="s:originTrace" v="n:7520958096812867470" />
                                                   <node concept="1PxgMI" id="K8" role="37vLTx">
+                                                    <property role="1BlNFB" value="true" />
                                                     <uo k="s:originTrace" v="n:7520958096812868157" />
                                                     <node concept="chp4Y" id="Ka" role="3oSUPX">
                                                       <ref role="cht4Q" to="hm2y:6xvNSEj6BMb" resolve="IComplexTypeSupportsEquals" />
@@ -10532,6 +10555,7 @@
                                                               <node concept="36biLy" id="Ok" role="28nt2d">
                                                                 <uo k="s:originTrace" v="n:1075037996907680019" />
                                                                 <node concept="1PxgMI" id="Ol" role="36biLW">
+                                                                  <property role="1BlNFB" value="true" />
                                                                   <uo k="s:originTrace" v="n:1075037996907680020" />
                                                                   <node concept="chp4Y" id="Om" role="3oSUPX">
                                                                     <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -11414,6 +11438,7 @@
                                             <node concept="2OqwBi" id="SK" role="37vLTx">
                                               <uo k="s:originTrace" v="n:7638810057883496858" />
                                               <node concept="1PxgMI" id="SM" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:7638810057883496859" />
                                                 <node concept="chp4Y" id="SO" role="3oSUPX">
                                                   <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -11476,6 +11501,7 @@
                                             <node concept="2OqwBi" id="T1" role="37vLTx">
                                               <uo k="s:originTrace" v="n:7638810057883496876" />
                                               <node concept="1PxgMI" id="T3" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:7638810057883496877" />
                                                 <node concept="chp4Y" id="T5" role="3oSUPX">
                                                   <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -11544,6 +11570,7 @@
                                             <node concept="2OqwBi" id="Ti" role="37vLTx">
                                               <uo k="s:originTrace" v="n:7638810057883496896" />
                                               <node concept="1PxgMI" id="Tk" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:7638810057883496897" />
                                                 <node concept="chp4Y" id="Tm" role="3oSUPX">
                                                   <ref role="cht4Q" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
@@ -11606,6 +11633,7 @@
                                             <node concept="2OqwBi" id="Tz" role="37vLTx">
                                               <uo k="s:originTrace" v="n:7638810057883496914" />
                                               <node concept="1PxgMI" id="T_" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:7638810057883496915" />
                                                 <node concept="chp4Y" id="TB" role="3oSUPX">
                                                   <ref role="cht4Q" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
@@ -12092,6 +12120,7 @@
                                                               <node concept="36biLy" id="Wc" role="28nt2d">
                                                                 <uo k="s:originTrace" v="n:7638810057883496963" />
                                                                 <node concept="1PxgMI" id="Wd" role="36biLW">
+                                                                  <property role="1BlNFB" value="true" />
                                                                   <uo k="s:originTrace" v="n:7638810057883496964" />
                                                                   <node concept="chp4Y" id="We" role="3oSUPX">
                                                                     <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -12362,6 +12391,7 @@
                                                                 <node concept="36biLy" id="X_" role="28nt2d">
                                                                   <uo k="s:originTrace" v="n:7638810057883496987" />
                                                                   <node concept="1PxgMI" id="XA" role="36biLW">
+                                                                    <property role="1BlNFB" value="true" />
                                                                     <uo k="s:originTrace" v="n:7638810057883496988" />
                                                                     <node concept="chp4Y" id="XB" role="3oSUPX">
                                                                       <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -13356,6 +13386,7 @@
                                                   <uo k="s:originTrace" v="n:7554398283340653374" />
                                                 </node>
                                                 <node concept="1PxgMI" id="12t" role="33vP2m">
+                                                  <property role="1BlNFB" value="true" />
                                                   <uo k="s:originTrace" v="n:7554398283340653382" />
                                                   <node concept="chp4Y" id="12u" role="3oSUPX">
                                                     <ref role="cht4Q" to="zzzn:6zmBjqUjGYQ" resolve="FunctionType" />
@@ -13594,6 +13625,7 @@
                                                               <node concept="2OqwBi" id="13N" role="10QFUP">
                                                                 <uo k="s:originTrace" v="n:4048497906959721137" />
                                                                 <node concept="1PxgMI" id="13O" role="2Oq$k0">
+                                                                  <property role="1BlNFB" value="true" />
                                                                   <uo k="s:originTrace" v="n:4048497906959721138" />
                                                                   <node concept="chp4Y" id="13Q" role="3oSUPX">
                                                                     <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -14571,6 +14603,7 @@
                                       <node concept="2OqwBi" id="18I" role="10QFUP">
                                         <uo k="s:originTrace" v="n:7638810057890383343" />
                                         <node concept="1PxgMI" id="18J" role="2Oq$k0">
+                                          <property role="1BlNFB" value="true" />
                                           <uo k="s:originTrace" v="n:7638810057890382698" />
                                           <node concept="chp4Y" id="18L" role="3oSUPX">
                                             <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -15971,6 +16004,7 @@
                                             <node concept="2OqwBi" id="1fK" role="10QFUP">
                                               <uo k="s:originTrace" v="n:2060704857949670264" />
                                               <node concept="1PxgMI" id="1fL" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:2060704857949669459" />
                                                 <node concept="chp4Y" id="1fN" role="3oSUPX">
                                                   <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -16957,6 +16991,7 @@
                                             <node concept="2OqwBi" id="1kL" role="2Oq$k0">
                                               <uo k="s:originTrace" v="n:3885635233752772023" />
                                               <node concept="1PxgMI" id="1kN" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:3885635233752771296" />
                                                 <node concept="chp4Y" id="1kP" role="3oSUPX">
                                                   <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -17854,6 +17889,7 @@
                               <node concept="36biLy" id="1pi" role="28nt2d">
                                 <uo k="s:originTrace" v="n:3192602961026513700" />
                                 <node concept="1PxgMI" id="1pj" role="36biLW">
+                                  <property role="1BlNFB" value="true" />
                                   <uo k="s:originTrace" v="n:3192602961026525501" />
                                   <node concept="chp4Y" id="1pk" role="3oSUPX">
                                     <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -18165,6 +18201,7 @@
                                           <node concept="36biLy" id="1qV" role="28nt2d">
                                             <uo k="s:originTrace" v="n:8694548031077643139" />
                                             <node concept="1PxgMI" id="1qW" role="36biLW">
+                                              <property role="1BlNFB" value="true" />
                                               <uo k="s:originTrace" v="n:8694548031077643140" />
                                               <node concept="chp4Y" id="1qX" role="3oSUPX">
                                                 <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -19164,6 +19201,7 @@
                         <node concept="37vLTI" id="1vO" role="3clFbG">
                           <uo k="s:originTrace" v="n:5880303268807258313" />
                           <node concept="1PxgMI" id="1vP" role="37vLTx">
+                            <property role="1BlNFB" value="true" />
                             <uo k="s:originTrace" v="n:5880303268807260496" />
                             <node concept="chp4Y" id="1vR" role="3oSUPX">
                               <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -19666,6 +19704,7 @@
                                       <node concept="2OqwBi" id="1yv" role="37wK5m">
                                         <uo k="s:originTrace" v="n:5772589292324534170" />
                                         <node concept="1PxgMI" id="1yz" role="2Oq$k0">
+                                          <property role="1BlNFB" value="true" />
                                           <uo k="s:originTrace" v="n:5772589292324533472" />
                                           <node concept="chp4Y" id="1y_" role="3oSUPX">
                                             <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />
@@ -20358,6 +20397,7 @@
                                       <node concept="2OqwBi" id="1A5" role="37wK5m">
                                         <uo k="s:originTrace" v="n:7638810057891981606" />
                                         <node concept="1PxgMI" id="1A9" role="2Oq$k0">
+                                          <property role="1BlNFB" value="true" />
                                           <uo k="s:originTrace" v="n:7638810057891980949" />
                                           <node concept="chp4Y" id="1Ab" role="3oSUPX">
                                             <ref role="cht4Q" to="l462:50smQ1V8i89" resolve="TemporalType" />

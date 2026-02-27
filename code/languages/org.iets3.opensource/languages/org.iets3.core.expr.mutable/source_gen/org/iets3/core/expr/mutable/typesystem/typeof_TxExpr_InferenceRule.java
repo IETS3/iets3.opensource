@@ -27,7 +27,7 @@ public class typeof_TxExpr_InferenceRule extends AbstractInferenceRule_Runtime i
         {
           SNode _nodeToCheck_1029348928467 = tx;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "8237981399431568983", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "8237981399431567909", true), (SNode) createAttemptType_p9ufcu_a1a0c0a0b0a1a0a1(SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(bodyType)), CONCEPTS.Type$WK)), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "8237981399431567909", true), (SNode) createAttemptType_p9ufcu_a1a0c0a0b0a1a0a1(SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(bodyType)), CONCEPTS.Type$WK)), _info_12389875345);
         }
       }, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "8237981399431574325", false, false);
     }

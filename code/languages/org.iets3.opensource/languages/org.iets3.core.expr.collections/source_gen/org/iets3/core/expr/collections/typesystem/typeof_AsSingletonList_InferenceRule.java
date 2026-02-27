@@ -28,13 +28,13 @@ public class typeof_AsSingletonList_InferenceRule extends AbstractInferenceRule_
           {
             SNode _nodeToCheck_1029348928467 = sll;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "6414340278546798855", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "6414340278546798012", true), (SNode) createListType_5aft7j_a1a0c0a0a0b0a1a0a1(SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a))), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "6414340278546798012", true), (SNode) createListType_5aft7j_a1a0c0a0a0b0a1a0a1(SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a))), _info_12389875345);
           }
         } else {
           {
             SNode _nodeToCheck_1029348928467 = sll;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "6414340278546803956", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "6414340278546803969", true), (SNode) createListType_5aft7j_a1a0c0a0a0a1a0b0a0b(SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(ctxType)), CONCEPTS.Type$WK)), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "6414340278546803969", true), (SNode) createListType_5aft7j_a1a0c0a0a0a1a0b0a0b(SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(ctxType)), CONCEPTS.Type$WK)), _info_12389875345);
           }
         }
       }, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "6414340278546784879", false, false);

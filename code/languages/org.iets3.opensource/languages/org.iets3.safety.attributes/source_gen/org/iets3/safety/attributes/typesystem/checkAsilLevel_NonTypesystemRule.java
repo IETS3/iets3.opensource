@@ -39,7 +39,7 @@ public class checkAsilLevel_NonTypesystemRule extends AbstractNonTypesystemRule_
             {
               BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.safety.attributes.typesystem.acceptComputedAsil_QuickFix", "4763876259335490103", false);
               intentionProvider.putArgument("asilAttribute", asilLevelAttribute);
-              intentionProvider.putArgument("computedAsilLevel", SNodeOperations.cast(computedValue, CONCEPTS.ASILLevelValue$fW));
+              intentionProvider.putArgument("computedAsilLevel", SNodeOperations.as(computedValue, CONCEPTS.ASILLevelValue$fW));
               _reporter_2309309498.addIntentionProvider(intentionProvider);
             }
           }

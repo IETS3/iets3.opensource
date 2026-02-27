@@ -21,12 +21,13 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.openapi.intentions.ParameterizedIntentionExecutable;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class AddConstraintGroup_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
@@ -72,8 +73,28 @@ public final class AddConstraintGroup_Intention extends AbstractIntentionDescrip
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       EditorCell selectedCell = editorContext.getSelectedCell();
-      SNode cg = myParameter;
-      new IAttributeDescriptor.NodeAttribute(CONCEPTS.ConstraintGroupAnnotation$IO).set(node, createConstraintGroupAnnotation_h5oy5s_a0a2a0(cg));
+
+      // Update the group annotation.
+      final SNode cg = myParameter;
+      new IAttributeDescriptor.NodeAttribute(CONCEPTS.ConstraintGroupAnnotation$IO).set(node, createConstraintGroupAnnotation_h5oy5s_a0a4a0(cg));
+
+      // Reposition the constraint.
+      //   Two chances algorithm:
+      //     1. chance: If there are already constraints in the requested group
+      //              place the updated constraint after the last of these constraints.
+      //     2. chance: Otherwise place the updated constraint after the last constraint that belongs to a group
+      //              which is listed before the requested group in the configured root constraints grouping.
+      //              This includes the case of moving the updated constraint to the top
+      //              of the root constraints sequence.
+      SNode parent = SNodeOperations.getParent(node);
+      SContainmentLink parentAggregation = SNodeOperations.getContainingLink(node);
+      List<SNode> constraintSiblings = Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(node, false), CONCEPTS.AbstractConstraint$MS)).toList();
+      SNode beforeSibling = ListSequence.fromList(constraintSiblings).findLast((constraint) -> SNodeOperations.getIndexInParent(SLinkOperations.getTarget(SLinkOperations.getTarget(new IAttributeDescriptor.NodeAttribute(CONCEPTS.ConstraintGroupAnnotation$IO).get(constraint), LINKS.groupRef$eCvW), LINKS.group$BceS)) == SNodeOperations.getIndexInParent(cg));
+      if ((beforeSibling == null)) {
+        beforeSibling = ListSequence.fromList(constraintSiblings).findLast((constraint) -> SNodeOperations.getIndexInParent(SLinkOperations.getTarget(SLinkOperations.getTarget(new IAttributeDescriptor.NodeAttribute(CONCEPTS.ConstraintGroupAnnotation$IO).get(constraint), LINKS.groupRef$eCvW), LINKS.group$BceS)) >= 0 && SNodeOperations.getIndexInParent(SLinkOperations.getTarget(SLinkOperations.getTarget(new IAttributeDescriptor.NodeAttribute(CONCEPTS.ConstraintGroupAnnotation$IO).get(constraint), LINKS.groupRef$eCvW), LINKS.group$BceS)) <= SNodeOperations.getIndexInParent(cg));
+      }
+      SNodeOperations.deleteNode(node);
+      parent.insertChildAfter(parentAggregation, node, beforeSibling);
 
       editorContext.flushEvents();
       editorContext.selectWRTFocusPolicy(selectedCell);
@@ -95,7 +116,7 @@ public final class AddConstraintGroup_Intention extends AbstractIntentionDescrip
       return myParameter;
     }
   }
-  private static SNode createConstraintGroupAnnotation_h5oy5s_a0a2a0(SNode p0) {
+  private static SNode createConstraintGroupAnnotation_h5oy5s_a0a4a0(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.ConstraintGroupAnnotation$IO);
     {
       SNodeBuilder n1 = n0.forChild(LINKS.groupRef$eCvW).init(CONCEPTS.GroupReference$Y9);
@@ -110,6 +131,7 @@ public final class AddConstraintGroup_Intention extends AbstractIntentionDescrip
   private static final class CONCEPTS {
     /*package*/ static final SConcept FeatureModel$X0 = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, "org.iets3.variability.featuremodel.base.structure.FeatureModel");
     /*package*/ static final SConcept ConstraintGroupAnnotation$IO = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6d20ecb3d752405cL, "org.iets3.variability.featuremodel.base.structure.ConstraintGroupAnnotation");
+    /*package*/ static final SConcept AbstractConstraint$MS = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd7eea4cL, "org.iets3.variability.featuremodel.base.structure.AbstractConstraint");
     /*package*/ static final SConcept GroupReference$Y9 = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6d20ecb3d769275cL, "org.iets3.variability.featuremodel.base.structure.GroupReference");
   }
 

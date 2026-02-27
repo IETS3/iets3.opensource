@@ -19,4 +19,12 @@ public abstract class IdentifierConfigurator {
 
   public abstract boolean allowParagraphsInIdentifiers(SAbstractConcept concept);
 
+  public abstract boolean allowApostropheInIdentifiers(SAbstractConcept concept);
+
+  public abstract boolean overrideAllowUmlautsInIdentifiers(boolean overrideDefault);
+
+  public abstract boolean overrideAllowParagraphsInIdentifiers(boolean overrideDefault);
+
+  public abstract boolean overrideAllowApostrophesInIdentifiers(boolean overrideDefault);
+
 }

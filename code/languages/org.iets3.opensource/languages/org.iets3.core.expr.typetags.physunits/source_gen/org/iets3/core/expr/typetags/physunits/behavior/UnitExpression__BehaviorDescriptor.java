@@ -44,13 +44,15 @@ public final class UnitExpression__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static SNode mkMultiply_id45a4DYZTqDU(@NotNull SNode __thisNode__, SNode left, SNode right) {
     if (SNodeOperations.isInstanceOf(left, CONCEPTS.UnitExpression$Xv) && SNodeOperations.isInstanceOf(right, CONCEPTS.UnitExpression$Xv)) {
-      return createUnitMultiplication_7lrzu_a0a0a1((SNode) left, (SNode) right);
+      // create unit product
+      return createUnitMultiplication_7lrzu_a1a0a1((SNode) left, (SNode) right);
     }
     return null;
   }
   /*package*/ static SNode mkDivide_id45a4DYZTre1(@NotNull SNode __thisNode__, SNode top, SNode bot) {
     if (SNodeOperations.isInstanceOf(top, CONCEPTS.UnitExpression$Xv) && SNodeOperations.isInstanceOf(bot, CONCEPTS.UnitExpression$Xv)) {
-      return createUnitDivision_7lrzu_a0a0a2((SNode) top, (SNode) bot);
+      // create unit fraction
+      return createUnitDivision_7lrzu_a1a0a2((SNode) top, (SNode) bot);
     }
     return null;
   }
@@ -130,13 +132,13 @@ public final class UnitExpression__BehaviorDescriptor extends BaseBHDescriptor {
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static SNode createUnitMultiplication_7lrzu_a0a0a1(SNode p0, SNode p1) {
+  private static SNode createUnitMultiplication_7lrzu_a1a0a1(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.UnitMultiplication$sx);
     n0.forChild(LINKS.left$sr9k).initNode(p0, CONCEPTS.UnitExpression$Xv, true);
     n0.forChild(LINKS.right$2nEP).initNode(p1, CONCEPTS.UnitExpression$Xv, true);
     return n0.getResult();
   }
-  private static SNode createUnitDivision_7lrzu_a0a0a2(SNode p0, SNode p1) {
+  private static SNode createUnitDivision_7lrzu_a1a0a2(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.UnitDivision$$9);
     n0.forChild(LINKS.numerator$qo9G).initNode(p0, CONCEPTS.UnitExpression$Xv, true);
     n0.forChild(LINKS.denominator$4xz7).initNode(p1, CONCEPTS.UnitExpression$Xv, true);

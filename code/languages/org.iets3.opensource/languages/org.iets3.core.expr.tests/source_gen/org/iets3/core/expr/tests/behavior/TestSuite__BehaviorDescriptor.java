@@ -31,7 +31,6 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CommentUtil;
 import org.iets3.core.expr.base.behavior.IMayAllowEffect__BehaviorDescriptor;
 import jetbrains.mps.baseLanguage.unitTest.behavior.ITestCase__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.ITypeOverridingContext__BehaviorDescriptor;
-import org.iets3.core.expr.base.runtime.runtime.IdentifierConfiguratorAccess;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.iets3.core.expr.plugin.plugin.ExecutionModePreference;
 import org.iets3.core.expr.plugin.plugin.TestExecutionSettings;
@@ -62,8 +61,7 @@ public final class TestSuite__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<List<SNode>> getTestMethods_id1RfJDyhAUar = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getTestMethods").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2148145109766218395L).languageId(0xb98d6c438812c2f6L, 0xf61473f9130f42f6L).build2();
   public static final SMethod<String> getTestBodyName_idhOw0ICJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTestBodyName").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1224602741295L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
   public static final SMethod<SNode> overrideType_idkxHAhaMTEW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("overrideType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(369777186288933564L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowParagraph_id4ZH31cjGRan = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5759272774551171735L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<String> getSimpleClassName_idhSQIE8p = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSimpleClassName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1229278847513L).languageId(0xb98d6c438812c2f6L, 0xf61473f9130f42f6L).build2();
   public static final SMethod<String> getSimpleClassNameForGenerator_id6VjyfUYe5Ll = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSimpleClassNameForGenerator").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7985877191952456789L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
   public static final SMethod<String> getSimpleClassNameForInterpreter_id6VjyfUYebfH = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSimpleClassNameForInterpreter").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7985877191952479213L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
@@ -73,7 +71,7 @@ public final class TestSuite__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getSortOrder_id1uL8CIs6rGR = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getSortOrder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716764859191L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<String> getCategory_id1uL8CIsKxiy = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getCategory").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716775892130L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, asString_id6iqfHNBPkjP, nonEmptyItems_id59WscmUTju7, evaluateAll_id3_DFadMJ62m, evaluateAllAndReport_ideCXD91qMCZ, namedNodesForComment_id5ElkanQ81fv, visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, allowsEffectForNode_idORfz$DS6Ap, getTestSet_idhGB2z8L, isMpsStartRequired_id2RMg39tmiFh, getTestMethods_id1RfJDyhAUar, getTestBodyName_idhOw0ICJ, overrideType_idkxHAhaMTEW, allowUmlaute_id5YygIlbih$m, allowParagraph_id4ZH31cjGRan, getSimpleClassName_idhSQIE8p, getSimpleClassNameForGenerator_id6VjyfUYe5Ll, getSimpleClassNameForInterpreter_id6VjyfUYebfH, getClassName_idhGBnqtL, getClassNameInterpreter_idljKHDcI6Wc, getIDEDisplayString_idIviauXb0g, getSortOrder_id1uL8CIs6rGR, getCategory_id1uL8CIsKxiy);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, asString_id6iqfHNBPkjP, nonEmptyItems_id59WscmUTju7, evaluateAll_id3_DFadMJ62m, evaluateAllAndReport_ideCXD91qMCZ, namedNodesForComment_id5ElkanQ81fv, visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, allowsEffectForNode_idORfz$DS6Ap, getTestSet_idhGB2z8L, isMpsStartRequired_id2RMg39tmiFh, getTestMethods_id1RfJDyhAUar, getTestBodyName_idhOw0ICJ, overrideType_idkxHAhaMTEW, overrideDefaultAllowUmlaute_id5D8v3P4jYKp, getSimpleClassName_idhSQIE8p, getSimpleClassNameForGenerator_id6VjyfUYe5Ll, getSimpleClassNameForInterpreter_id6VjyfUYebfH, getClassName_idhGBnqtL, getClassNameInterpreter_idljKHDcI6Wc, getIDEDisplayString_idIviauXb0g, getSortOrder_id1uL8CIs6rGR, getCategory_id1uL8CIsKxiy);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.contents$e48Q)).addElement(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x78b257522b662c7L, "org.iets3.core.expr.tests.structure.TestCase")));
@@ -151,11 +149,8 @@ public final class TestSuite__BehaviorDescriptor extends BaseBHDescriptor {
     }
     return type;
   }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
+  /*package*/ static boolean overrideDefaultAllowUmlaute_id5D8v3P4jYKp(@NotNull SAbstractConcept __thisConcept__) {
     return true;
-  }
-  /*package*/ static boolean allowParagraph_id4ZH31cjGRan(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowParagraphsInIdentifiers(__thisConcept__);
   }
   /*package*/ static String getSimpleClassName_idhSQIE8p(@NotNull SNode __thisNode__) {
     SModel m = __thisNode__.getModel();
@@ -249,21 +244,21 @@ public final class TestSuite__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((List<SNode>) getTestMethods_id1RfJDyhAUar(node));
       case 13:
         return (T) ((SNode) overrideType_idkxHAhaMTEW(node, (SNode) parameters[0]));
-      case 16:
+      case 15:
         return (T) ((String) getSimpleClassName_idhSQIE8p(node));
-      case 17:
+      case 16:
         return (T) ((String) getSimpleClassNameForGenerator_id6VjyfUYe5Ll(node));
-      case 18:
+      case 17:
         return (T) ((String) getSimpleClassNameForInterpreter_id6VjyfUYebfH(node));
-      case 19:
+      case 18:
         return (T) ((String) getClassName_idhGBnqtL(node));
-      case 20:
+      case 19:
         return (T) ((String) getClassNameInterpreter_idljKHDcI6Wc(node));
-      case 21:
+      case 20:
         return (T) ((String) getIDEDisplayString_idIviauXb0g(node));
-      case 22:
+      case 21:
         return (T) ((Integer) getSortOrder_id1uL8CIs6rGR(node));
-      case 23:
+      case 22:
         return (T) ((String) getCategory_id1uL8CIsKxiy(node));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -280,9 +275,7 @@ public final class TestSuite__BehaviorDescriptor extends BaseBHDescriptor {
       case 12:
         return (T) ((String) getTestBodyName_idhOw0ICJ(concept));
       case 14:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
-      case 15:
-        return (T) ((Boolean) allowParagraph_id4ZH31cjGRan(concept));
+        return (T) ((Boolean) overrideDefaultAllowUmlaute_id5D8v3P4jYKp(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

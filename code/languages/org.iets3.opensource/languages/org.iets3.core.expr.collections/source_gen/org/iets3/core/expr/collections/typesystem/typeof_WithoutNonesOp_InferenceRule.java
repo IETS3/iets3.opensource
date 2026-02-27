@@ -30,9 +30,9 @@ public class typeof_WithoutNonesOp_InferenceRule extends AbstractInferenceRule_R
       final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(uoo), "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "4618483580248264365", true);
       typeCheckingContext.whenConcrete(ctxType, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS)) {
-          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ), CONCEPTS.OptionType$eU)) {
-            SNode cc = SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(ctxType)), CONCEPTS.CollectionType$kS);
-            SLinkOperations.setTarget(cc, LINKS.baseType$5NOJ, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a)));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ), CONCEPTS.OptionType$eU)) {
+            SNode cc = SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(ctxType)), CONCEPTS.CollectionType$kS);
+            SLinkOperations.setTarget(cc, LINKS.baseType$5NOJ, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a)));
             {
               SNode _nodeToCheck_1029348928467 = uoo;
               EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "4618483580248331969", 0, null);

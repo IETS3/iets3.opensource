@@ -28,12 +28,12 @@ public class check_IVariabilityAwareArtifact_NonTypesystemRule extends AbstractN
   public void applyRule(final SNode ivaa, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     // check that feature models of referenced IVAAs match this one
     for (Segment dn : Sequence.fromIterable(IVariabilityAwareArtifact__BehaviorDescriptor.getAllDependencies_id36x6ZtcRcQW.invoke(ivaa))) {
-      if ((dn.getTarget() != null) && (dn.getFMInclude() == null)) {
-        SNode targetFM = IVariabilityAwareArtifact__BehaviorDescriptor.featureModel_id2H_yVh8fm35.invoke(dn.getTarget());
+      if ((dn.getTargetIVAA() != null) && (dn.getFMInclude() == null)) {
+        SNode targetFM = IVariabilityAwareArtifact__BehaviorDescriptor.featureModel_id2H_yVh8fm35.invoke(dn.getTargetIVAA());
         if (!(Objects.equals(IVariabilityAwareArtifact__BehaviorDescriptor.featureModel_id2H_yVh8fm35.invoke(ivaa), targetFM))) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
-            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(ivaa, "Artifact '" + IVariabilityAwareArtifact__BehaviorDescriptor.artifactName_id7eAm6HphX4A.invoke(dn.getTarget()) + "' refers to a different feature model '" + SPropertyOperations.getString(targetFM, PROPS.name$MnvL) + "'", "r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)", "2461897603003151060", null, errorTarget);
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(ivaa, "Artifact '" + IVariabilityAwareArtifact__BehaviorDescriptor.artifactName_id7eAm6HphX4A.invoke(dn.getTargetIVAA()) + "' refers to a different feature model '" + SPropertyOperations.getString(targetFM, PROPS.name$MnvL) + "'", "r:d96fdf79-48ce-4512-9ce4-03b251237395(org.iets3.variability.artifacts.base.typesystem)", "2461897603003151060", null, errorTarget);
           }
         }
       }

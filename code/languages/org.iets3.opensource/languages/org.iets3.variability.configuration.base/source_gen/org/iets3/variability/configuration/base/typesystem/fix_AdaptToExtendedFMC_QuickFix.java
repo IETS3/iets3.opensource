@@ -18,7 +18,7 @@ public class fix_AdaptToExtendedFMC_QuickFix extends QuickFix_Runtime {
     return "Adapt this Configuration to the extended Configuration";
   }
   public void execute(SNode node) {
-    SNode fmc = SNodeOperations.cast(node, CONCEPTS.FeatureModelConfiguration$nE);
+    SNode fmc = SNodeOperations.as(node, CONCEPTS.FeatureModelConfiguration$nE);
     FixAdaptToExtendedFMC.run(fmc);
   }
 

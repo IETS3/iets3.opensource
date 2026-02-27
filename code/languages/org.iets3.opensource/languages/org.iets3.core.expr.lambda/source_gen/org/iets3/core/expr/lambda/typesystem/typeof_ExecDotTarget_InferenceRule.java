@@ -28,7 +28,7 @@ public class typeof_ExecDotTarget_InferenceRule extends AbstractInferenceRule_Ru
     {
       final SNode ct = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(edt), "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "7554398283340584164", true);
       typeCheckingContext.whenConcrete(ct, () -> {
-        SNode ft = SNodeOperations.cast(typeCheckingContext.getExpandedNode(ct), CONCEPTS.FunctionType$RQ);
+        SNode ft = SNodeOperations.as(typeCheckingContext.getExpandedNode(ct), CONCEPTS.FunctionType$RQ);
         int expectedSize = ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).count();
         int actualSize = ListSequence.fromList(SLinkOperations.getChildren(edt, LINKS.args$vwEf)).count();
         if (expectedSize == actualSize) {

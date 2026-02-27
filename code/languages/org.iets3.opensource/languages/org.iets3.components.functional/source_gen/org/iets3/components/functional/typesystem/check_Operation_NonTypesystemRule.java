@@ -39,7 +39,7 @@ public class check_Operation_NonTypesystemRule extends AbstractNonTypesystemRule
       }
       for (SNode c : ListSequence.fromList(SLinkOperations.getChildren(operation, LINKS.contracts$wvK5))) {
         for (SNode i : ListSequence.fromList(SLinkOperations.getChildren(c, LINKS.items$$7kw))) {
-          if (SNodeOperations.isInstanceOf(i, CONCEPTS.ProtocolSpec$eX) && SLinkOperations.getTarget(SNodeOperations.cast(i, CONCEPTS.ProtocolSpec$eX), LINKS.to$AJaW) != null) {
+          if (SNodeOperations.isInstanceOf(i, CONCEPTS.ProtocolSpec$eX) && SLinkOperations.getTarget(SNodeOperations.as(i, CONCEPTS.ProtocolSpec$eX), LINKS.to$AJaW) != null) {
             {
               final MessageTarget errorTarget = new NodeMessageTarget();
               IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(i, "queries cannot change the state", "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "1019070541443695671", null, errorTarget);

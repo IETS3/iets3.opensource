@@ -28,9 +28,9 @@ public final class IOptionallyNamed__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<Boolean> hasDefaultName_id3KzlhPzQWyE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasDefaultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4333400851178309802L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<String> getMatchingText_id69Qfsw3InJX = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMatchingText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234036221L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> getVisibleMatchingText_id69Qfsw3Ipre = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getVisibleMatchingText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234043086L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAutomaticName_idcJpacq408C, hasDefaultName_id3KzlhPzQWyE, getMatchingText_id69Qfsw3InJX, getVisibleMatchingText_id69Qfsw3Ipre, allowUmlaute_id5YygIlbih$m);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAutomaticName_idcJpacq408C, hasDefaultName_id3KzlhPzQWyE, getMatchingText_id69Qfsw3InJX, getVisibleMatchingText_id69Qfsw3Ipre, overrideDefaultAllowUmlaute_id5D8v3P4jYKp);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -44,7 +44,7 @@ public final class IOptionallyNamed__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ static String getVisibleMatchingText_id69Qfsw3Ipre(@NotNull SNode __thisNode__, SNode reference) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
   }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
+  /*package*/ static boolean overrideDefaultAllowUmlaute_id5D8v3P4jYKp(@NotNull SAbstractConcept __thisConcept__) {
     return true;
   }
 
@@ -82,7 +82,7 @@ public final class IOptionallyNamed__BehaviorDescriptor extends BaseBHDescriptor
     }
     switch (methodIndex) {
       case 4:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
+        return (T) ((Boolean) overrideDefaultAllowUmlaute_id5D8v3P4jYKp(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

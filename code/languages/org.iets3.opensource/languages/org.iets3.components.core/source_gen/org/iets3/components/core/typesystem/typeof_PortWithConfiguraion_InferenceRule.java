@@ -30,7 +30,7 @@ public class typeof_PortWithConfiguraion_InferenceRule extends AbstractInference
             {
               SNode _nodeToCheck_1029348928467 = portWithConfiguraion;
               EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:769eaa92-d4cb-4fa9-87e4-269f7f35a1eb(org.iets3.components.core.typesystem)", "7872749981076783825", 0, null);
-              typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:769eaa92-d4cb-4fa9-87e4-269f7f35a1eb(org.iets3.components.core.typesystem)", "7872749981076782794", true), (SNode) createConfiguredPortType_6ls31k_a1a0c0a0b0a1a0a1a0b0b0b(SNodeOperations.cast(typeCheckingContext.getExpandedNode(configType), CONCEPTS.Type$WK), SNodeOperations.cast(typeCheckingContext.getExpandedNode(portType), CONCEPTS.Type$WK)), _info_12389875345);
+              typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:769eaa92-d4cb-4fa9-87e4-269f7f35a1eb(org.iets3.components.core.typesystem)", "7872749981076782794", true), (SNode) createConfiguredPortType_6ls31k_a1a0c0a0b0a1a0a1a0b0b0b(SNodeOperations.as(typeCheckingContext.getExpandedNode(configType), CONCEPTS.Type$WK), SNodeOperations.as(typeCheckingContext.getExpandedNode(portType), CONCEPTS.Type$WK)), _info_12389875345);
             }
           }, "r:769eaa92-d4cb-4fa9-87e4-269f7f35a1eb(org.iets3.components.core.typesystem)", "7872749981078764495", false, false);
         }

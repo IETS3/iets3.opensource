@@ -32,7 +32,7 @@ public class check_MakeRefTarget_NonTypesystemRule extends AbstractNonTypesystem
       }
     }
     if (SNodeOperations.isInstanceOf(ctxType, CONCEPTS.IReferenceableType$st)) {
-      if (!((boolean) IReferenceableType__BehaviorDescriptor.canBeReferenced_id6JZACDWNZP9.invoke(SNodeOperations.cast(ctxType, CONCEPTS.IReferenceableType$st)))) {
+      if (!((boolean) IReferenceableType__BehaviorDescriptor.canBeReferenced_id6JZACDWNZP9.invoke(SNodeOperations.as(ctxType, CONCEPTS.IReferenceableType$st)))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(mrt), String.format("the type ‹%s› is not referenceable", BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(ctxType)), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7782108600709714277", null, errorTarget);

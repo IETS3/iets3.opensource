@@ -24,7 +24,7 @@
       </scope>
     </file>
     <file name="check_NaturalLangageCallSyntax_NonTypesystemRule.java">
-      <node id="1693890388431466207" at="24,137,25,121" concept="6" />
+      <node id="1693890388431466207" at="24,137,25,119" concept="6" />
       <node id="1693890388431463513" at="26,69,27,64" concept="6" />
       <node id="1693890388431463513" at="27,64,28,258" concept="6" />
       <node id="1693890388431462076" at="31,50,32,41" concept="7" />
@@ -37,7 +37,7 @@
       <node id="1693890388431462076" at="31,0,34,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="1693890388431462076" at="34,0,37,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="1693890388431462076" at="37,0,40,0" concept="5" trace="overrides#()Z" />
-      <node id="1693890388431463513" at="25,121,29,5" concept="4" />
+      <node id="1693890388431463513" at="25,119,29,5" concept="4" />
       <node id="1693890388431462076" at="24,0,31,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="1693890388431462076" at="22,61,22,61" />
       <scope id="1693890388431462076" at="31,50,32,41" />

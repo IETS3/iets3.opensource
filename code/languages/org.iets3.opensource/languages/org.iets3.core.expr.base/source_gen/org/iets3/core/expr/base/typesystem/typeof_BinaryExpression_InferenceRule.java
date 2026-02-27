@@ -52,11 +52,11 @@ public class typeof_BinaryExpression_InferenceRule extends AbstractInferenceRule
               }
             } else {
               if (SNodeOperations.isInstanceOf(lt, CONCEPTS.OptionType$eU)) {
-                lt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.cast(lt, CONCEPTS.OptionType$eU));
+                lt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.as(lt, CONCEPTS.OptionType$eU));
                 wasOption = true;
               }
               if (SNodeOperations.isInstanceOf(rt, CONCEPTS.OptionType$eU)) {
-                rt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.cast(rt, CONCEPTS.OptionType$eU));
+                rt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.as(rt, CONCEPTS.OptionType$eU));
                 wasOption = true;
               }
 
@@ -69,13 +69,13 @@ public class typeof_BinaryExpression_InferenceRule extends AbstractInferenceRule
                   {
                     SNode _nodeToCheck_1029348928467 = be;
                     EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "6380075495170422669", 0, null);
-                    typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "6380075495170422673", true), (SNode) createOptionType_601ywe_a1a0c0b0a0g0a5a1a0b0a0b0a1a0a1(SNodeOperations.cast(operationType, CONCEPTS.Type$WK)), _info_12389875345);
+                    typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "6380075495170422673", true), (SNode) createOptionType_601ywe_a1a0c0b0a0g0a5a1a0b0a0b0a1a0a1(SNodeOperations.as(operationType, CONCEPTS.Type$WK)), _info_12389875345);
                   }
                 } else {
                   if (SNodeOperations.isInstanceOf(operationType, CONCEPTS.RuntimeErrorType$3c)) {
                     {
                       final MessageTarget errorTarget = new NodeMessageTarget();
-                      IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(be, SPropertyOperations.getString(SNodeOperations.cast(operationType, CONCEPTS.RuntimeErrorType$3c), PROPS.errorText$leWQ), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "1034638375399918230", null, errorTarget);
+                      IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(be, SPropertyOperations.getString(SNodeOperations.as(operationType, CONCEPTS.RuntimeErrorType$3c), PROPS.errorText$leWQ), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "1034638375399918230", null, errorTarget);
                     }
                   }
                   {
@@ -96,10 +96,10 @@ public class typeof_BinaryExpression_InferenceRule extends AbstractInferenceRule
                   SNode complexType;
                   SNode otherType;
                   if (SNodeOperations.isInstanceOf(lt, CONCEPTS.IComplexTypeSupportsEquals$qk)) {
-                    complexType = SNodeOperations.cast(lt, CONCEPTS.IComplexTypeSupportsEquals$qk);
+                    complexType = SNodeOperations.as(lt, CONCEPTS.IComplexTypeSupportsEquals$qk);
                     otherType = rt;
                   } else {
-                    complexType = SNodeOperations.cast(rt, CONCEPTS.IComplexTypeSupportsEquals$qk);
+                    complexType = SNodeOperations.as(rt, CONCEPTS.IComplexTypeSupportsEquals$qk);
                     otherType = lt;
                   }
                   if (!((boolean) IComplexTypeSupportsEquals__BehaviorDescriptor.isComparableTo_id6xvNSEj6BML.invoke(complexType, otherType))) {

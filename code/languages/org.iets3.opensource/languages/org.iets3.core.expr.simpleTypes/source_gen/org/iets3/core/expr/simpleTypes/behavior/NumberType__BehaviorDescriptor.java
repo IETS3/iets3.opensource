@@ -45,6 +45,7 @@ public final class NumberType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<Tuples._2<Long, Long>> intRange_id3p6$WoEzHkL = new SMethodBuilder<Tuples._2<Long, Long>>(new SJavaCompoundTypeImpl((Class<Tuples._2<Long, Long>>) ((Class) Object.class))).name("intRange").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3910975805744665905L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
   public static final SMethod<Tuples._2<String, String>> range_id2NHHcg2Ff6S = new SMethodBuilder<Tuples._2<String, String>>(new SJavaCompoundTypeImpl((Class<Tuples._2<String, String>>) ((Class) Object.class))).name("range").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3237442461100732856L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<String> getSinglePointRange_id5bmRS0nolm$ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSinglePointRange").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5969204097367233956L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
   public static final SMethod<Tuples._2<Double, Double>> doubleRange_id3p6$WoEzKI5 = new SMethodBuilder<Tuples._2<Double, Double>>(new SJavaCompoundTypeImpl((Class<Tuples._2<Double, Double>>) ((Class) Object.class))).name("doubleRange").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3910975805744679813L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
   public static final SMethod<Boolean> isRangeValid_id3p6$WoEzEdK = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isRangeValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3910975805744653168L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
   public static final SMethod<Boolean> isSubtypeOf_id3p6$WoEzUD6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSubtypeOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3910975805744720454L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
@@ -82,7 +83,7 @@ public final class NumberType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> supportsDefault_id60Qa1k_sqM4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("supportsDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747671088260L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
   public static final SMethod<Boolean> containsZero_id60Qa1k_v7XL = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsZero").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747671797617L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(applicableConstraints_id2S3ZC$oEyBR, allSupertypes_id4Q4DxjDsh$t, isInt_id3p6$WoEh1ch, setInfinityRange_id3p6$WoElgXM, setSingletonRange_id3p6$WoEqbyP, getPresentation_idhEwIMiw, intRange_id3p6$WoEzHkL, range_id2NHHcg2Ff6S, doubleRange_id3p6$WoEzKI5, isRangeValid_id3p6$WoEzEdK, isSubtypeOf_id3p6$WoEzUD6, lowerBound_id19PglA20zCc, lowerBound_id5JKfLQ849bJ, upperBound_id19PglA20_Su, upperBound_id5JKfLQ84y3e, precision_id19PglA20ASE, precisionWithInf_id7kyIuXqes_H, precisionString_id7Wa2sv3HvHE, setPrecision_id19PglA21KtA, setMaxPrecision_id7Wa2sv3Ko90, setSumPrecision_id7Wa2sv3MfsR, isInfinitePrecision_id7Wa2sv3Gi_T, setInfinitePrecision_id7Wa2sv3G6bK, setPrecisionFromValue_id2RZ2I9pAbPi, numberOfDigits_id19PglA24S8x, delimiter_id5OaiG59Ryx_, derivePrecisionFromRange_id19PglA24OAE, canDerivePrecisionFromRange_id19PglA251oh, isUnlimitedRange_id3gjm1nJOe8A, isLimitedRange_id7Wa2sv3G9SH, isPositiveInfinity_id2NHHcg2D9Nd, isNegativeInfinity_id2NHHcg2Dg5B, setRange_id6NHlpK$OKdB, limitRangePrecisionTo_id7Wa2sv40JD9, isInfinity_id6NHlpK$DFV5, cloneWithRange_id3f3yNhCU9Cn, simplify_id46cplYwxszL, canBeSimplified_id46cplYwxrWE, limitDecimals_id7Wa2sv412RL, isSameAs_idfIXgjlt4VE, isDiscrete_id8XWEtesn15, createDefaultVarExpr_id60Qa1k_nI2O, supportsDefault_id60Qa1k_sqM4, containsZero_id60Qa1k_v7XL);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(applicableConstraints_id2S3ZC$oEyBR, allSupertypes_id4Q4DxjDsh$t, isInt_id3p6$WoEh1ch, setInfinityRange_id3p6$WoElgXM, setSingletonRange_id3p6$WoEqbyP, getPresentation_idhEwIMiw, intRange_id3p6$WoEzHkL, range_id2NHHcg2Ff6S, getSinglePointRange_id5bmRS0nolm$, doubleRange_id3p6$WoEzKI5, isRangeValid_id3p6$WoEzEdK, isSubtypeOf_id3p6$WoEzUD6, lowerBound_id19PglA20zCc, lowerBound_id5JKfLQ849bJ, upperBound_id19PglA20_Su, upperBound_id5JKfLQ84y3e, precision_id19PglA20ASE, precisionWithInf_id7kyIuXqes_H, precisionString_id7Wa2sv3HvHE, setPrecision_id19PglA21KtA, setMaxPrecision_id7Wa2sv3Ko90, setSumPrecision_id7Wa2sv3MfsR, isInfinitePrecision_id7Wa2sv3Gi_T, setInfinitePrecision_id7Wa2sv3G6bK, setPrecisionFromValue_id2RZ2I9pAbPi, numberOfDigits_id19PglA24S8x, delimiter_id5OaiG59Ryx_, derivePrecisionFromRange_id19PglA24OAE, canDerivePrecisionFromRange_id19PglA251oh, isUnlimitedRange_id3gjm1nJOe8A, isLimitedRange_id7Wa2sv3G9SH, isPositiveInfinity_id2NHHcg2D9Nd, isNegativeInfinity_id2NHHcg2Dg5B, setRange_id6NHlpK$OKdB, limitRangePrecisionTo_id7Wa2sv40JD9, isInfinity_id6NHlpK$DFV5, cloneWithRange_id3f3yNhCU9Cn, simplify_id46cplYwxszL, canBeSimplified_id46cplYwxrWE, limitDecimals_id7Wa2sv412RL, isSameAs_idfIXgjlt4VE, isDiscrete_id8XWEtesn15, createDefaultVarExpr_id60Qa1k_nI2O, supportsDefault_id60Qa1k_sqM4, containsZero_id60Qa1k_v7XL);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -167,6 +168,9 @@ public final class NumberType__BehaviorDescriptor extends BaseBHDescriptor {
       return MultiTuple.<String,String>from(InfHelper.NEGINF, InfHelper.POSINF);
     }
     return MultiTuple.<String,String>from(SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.range$RnOa), PROPS.min$7OOG), SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.range$RnOa), PROPS.max$7P3H));
+  }
+  /*package*/ static String getSinglePointRange_id5bmRS0nolm$(@NotNull SNode __thisNode__) {
+    return ((SLinkOperations.getTarget(__thisNode__, LINKS.range$RnOa) == null) ? null : NumberRangeSpec__BehaviorDescriptor.getSinglePoint_id5bmRS0nnZlw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.range$RnOa)));
   }
   /*package*/ static Tuples._2<Double, Double> doubleRange_id3p6$WoEzKI5(@NotNull SNode __thisNode__) {
     try {
@@ -464,84 +468,86 @@ public final class NumberType__BehaviorDescriptor extends BaseBHDescriptor {
       case 7:
         return (T) ((Tuples._2<String, String>) range_id2NHHcg2Ff6S(node));
       case 8:
-        return (T) ((Tuples._2<Double, Double>) doubleRange_id3p6$WoEzKI5(node));
+        return (T) ((String) getSinglePointRange_id5bmRS0nolm$(node));
       case 9:
-        return (T) ((Boolean) isRangeValid_id3p6$WoEzEdK(node));
+        return (T) ((Tuples._2<Double, Double>) doubleRange_id3p6$WoEzKI5(node));
       case 10:
-        return (T) ((Boolean) isSubtypeOf_id3p6$WoEzUD6(node, (SNode) parameters[0]));
+        return (T) ((Boolean) isRangeValid_id3p6$WoEzEdK(node));
       case 11:
-        return (T) ((String) lowerBound_id19PglA20zCc(node));
+        return (T) ((Boolean) isSubtypeOf_id3p6$WoEzUD6(node, (SNode) parameters[0]));
       case 12:
-        return (T) ((String) lowerBound_id5JKfLQ849bJ(node, ((boolean) (Boolean) parameters[0])));
+        return (T) ((String) lowerBound_id19PglA20zCc(node));
       case 13:
-        return (T) ((String) upperBound_id19PglA20_Su(node));
+        return (T) ((String) lowerBound_id5JKfLQ849bJ(node, ((boolean) (Boolean) parameters[0])));
       case 14:
-        return (T) ((String) upperBound_id5JKfLQ84y3e(node, ((boolean) (Boolean) parameters[0])));
+        return (T) ((String) upperBound_id19PglA20_Su(node));
       case 15:
-        return (T) ((Integer) precision_id19PglA20ASE(node));
+        return (T) ((String) upperBound_id5JKfLQ84y3e(node, ((boolean) (Boolean) parameters[0])));
       case 16:
-        return (T) ((Integer) precisionWithInf_id7kyIuXqes_H(node));
+        return (T) ((Integer) precision_id19PglA20ASE(node));
       case 17:
-        return (T) ((String) precisionString_id7Wa2sv3HvHE(node));
+        return (T) ((Integer) precisionWithInf_id7kyIuXqes_H(node));
       case 18:
+        return (T) ((String) precisionString_id7Wa2sv3HvHE(node));
+      case 19:
         setPrecision_id19PglA21KtA(node, ((int) (Integer) parameters[0]));
         return null;
-      case 19:
+      case 20:
         setMaxPrecision_id7Wa2sv3Ko90(node, (SNode) parameters[0], (SNode) parameters[1]);
         return null;
-      case 20:
+      case 21:
         setSumPrecision_id7Wa2sv3MfsR(node, (SNode) parameters[0], (SNode) parameters[1]);
         return null;
-      case 21:
-        return (T) ((Boolean) isInfinitePrecision_id7Wa2sv3Gi_T(node));
       case 22:
+        return (T) ((Boolean) isInfinitePrecision_id7Wa2sv3Gi_T(node));
+      case 23:
         setInfinitePrecision_id7Wa2sv3G6bK(node);
         return null;
-      case 23:
+      case 24:
         setPrecisionFromValue_id2RZ2I9pAbPi(node, (String) parameters[0]);
         return null;
-      case 24:
-        return (T) ((Integer) numberOfDigits_id19PglA24S8x(node, (String) parameters[0]));
       case 25:
-        return (T) ((Character) delimiter_id5OaiG59Ryx_(node));
+        return (T) ((Integer) numberOfDigits_id19PglA24S8x(node, (String) parameters[0]));
       case 26:
-        return (T) ((Integer) derivePrecisionFromRange_id19PglA24OAE(node));
+        return (T) ((Character) delimiter_id5OaiG59Ryx_(node));
       case 27:
-        return (T) ((Boolean) canDerivePrecisionFromRange_id19PglA251oh(node));
+        return (T) ((Integer) derivePrecisionFromRange_id19PglA24OAE(node));
       case 28:
-        return (T) ((Boolean) isUnlimitedRange_id3gjm1nJOe8A(node));
+        return (T) ((Boolean) canDerivePrecisionFromRange_id19PglA251oh(node));
       case 29:
-        return (T) ((Boolean) isLimitedRange_id7Wa2sv3G9SH(node));
+        return (T) ((Boolean) isUnlimitedRange_id3gjm1nJOe8A(node));
       case 30:
-        return (T) ((Boolean) isPositiveInfinity_id2NHHcg2D9Nd(node));
+        return (T) ((Boolean) isLimitedRange_id7Wa2sv3G9SH(node));
       case 31:
-        return (T) ((Boolean) isNegativeInfinity_id2NHHcg2Dg5B(node));
+        return (T) ((Boolean) isPositiveInfinity_id2NHHcg2D9Nd(node));
       case 32:
+        return (T) ((Boolean) isNegativeInfinity_id2NHHcg2Dg5B(node));
+      case 33:
         setRange_id6NHlpK$OKdB(node, (String) parameters[0], (String) parameters[1]);
         return null;
-      case 33:
+      case 34:
         limitRangePrecisionTo_id7Wa2sv40JD9(node, ((int) (Integer) parameters[0]));
         return null;
-      case 34:
-        return (T) ((Boolean) isInfinity_id6NHlpK$DFV5(node));
       case 35:
-        return (T) ((SNode) cloneWithRange_id3f3yNhCU9Cn(node, (String) parameters[0], (String) parameters[1]));
+        return (T) ((Boolean) isInfinity_id6NHlpK$DFV5(node));
       case 36:
+        return (T) ((SNode) cloneWithRange_id3f3yNhCU9Cn(node, (String) parameters[0], (String) parameters[1]));
+      case 37:
         simplify_id46cplYwxszL(node);
         return null;
-      case 37:
-        return (T) ((Boolean) canBeSimplified_id46cplYwxrWE(node));
       case 38:
-        return (T) ((String) limitDecimals_id7Wa2sv412RL(node, (String) parameters[0], ((int) (Integer) parameters[1])));
+        return (T) ((Boolean) canBeSimplified_id46cplYwxrWE(node));
       case 39:
-        return (T) ((Boolean) isSameAs_idfIXgjlt4VE(node, (SNode) parameters[0]));
+        return (T) ((String) limitDecimals_id7Wa2sv412RL(node, (String) parameters[0], ((int) (Integer) parameters[1])));
       case 40:
-        return (T) ((Boolean) isDiscrete_id8XWEtesn15(node));
+        return (T) ((Boolean) isSameAs_idfIXgjlt4VE(node, (SNode) parameters[0]));
       case 41:
-        return (T) ((SNode) createDefaultVarExpr_id60Qa1k_nI2O(node));
+        return (T) ((Boolean) isDiscrete_id8XWEtesn15(node));
       case 42:
-        return (T) ((Boolean) supportsDefault_id60Qa1k_sqM4(node));
+        return (T) ((SNode) createDefaultVarExpr_id60Qa1k_nI2O(node));
       case 43:
+        return (T) ((Boolean) supportsDefault_id60Qa1k_sqM4(node));
+      case 44:
         return (T) ((Boolean) containsZero_id60Qa1k_v7XL(node));
       default:
         throw new BHMethodNotFoundException(this, method);

@@ -29,9 +29,9 @@ public class InferringTaggedTypeHelper extends BaseTaggedTypeHelper {
       typeCheckingContext.whenConcrete(type, () -> {
         SNode result = null;
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(type), CONCEPTS.TaggedType$O4)) {
-          result = TaggedType__BehaviorDescriptor.addTags_id4HxogODPWH$.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(type), CONCEPTS.TaggedType$O4), _tags);
+          result = TaggedType__BehaviorDescriptor.addTags_id4HxogODPWH$.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(type), CONCEPTS.TaggedType$O4), _tags);
         } else {
-          result = TaggedType__BehaviorDescriptor.create_id4HxogODQaID.invoke(SNodeOperations.asSConcept(CONCEPTS.TaggedType$O4), SNodeOperations.cast(typeCheckingContext.getExpandedNode(type), CONCEPTS.Type$WK), _tags);
+          result = TaggedType__BehaviorDescriptor.create_id4HxogODQaID.invoke(SNodeOperations.asSConcept(CONCEPTS.TaggedType$O4), SNodeOperations.as(typeCheckingContext.getExpandedNode(type), CONCEPTS.Type$WK), _tags);
         }
         {
           SNode _nodeToCheck_1029348928467 = nodeToType;
@@ -55,9 +55,9 @@ public class InferringTaggedTypeHelper extends BaseTaggedTypeHelper {
   public static void assignTaggedType(final TypeCheckingContext typeCheckingContext, final SNode nodeToType, final SNode baseType, final Collection<SNode> tags) {
     SNode result = null;
     if (SNodeOperations.isInstanceOf(baseType, CONCEPTS.TaggedType$O4)) {
-      result = TaggedType__BehaviorDescriptor.addTags_id4HxogODPWH$.invoke(SNodeOperations.cast(baseType, CONCEPTS.TaggedType$O4), tags);
+      result = TaggedType__BehaviorDescriptor.addTags_id4HxogODPWH$.invoke(SNodeOperations.as(baseType, CONCEPTS.TaggedType$O4), tags);
     } else {
-      result = TaggedType__BehaviorDescriptor.create_id4HxogODQaID.invoke(SNodeOperations.asSConcept(CONCEPTS.TaggedType$O4), SNodeOperations.cast(baseType, CONCEPTS.Type$WK), tags);
+      result = TaggedType__BehaviorDescriptor.create_id4HxogODQaID.invoke(SNodeOperations.asSConcept(CONCEPTS.TaggedType$O4), SNodeOperations.as(baseType, CONCEPTS.Type$WK), tags);
     }
     {
       SNode _nodeToCheck_1029348928467 = nodeToType;

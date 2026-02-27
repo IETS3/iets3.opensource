@@ -27,7 +27,7 @@ public class typeof_InteractExpression_InferenceRule extends AbstractInferenceRu
         {
           SNode _nodeToCheck_1029348928467 = ie;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "7092036503187230325", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "7092036503187229293", true), (SNode) createLiveType_6ot3gp_a1a0c0a0b0a1a0a1(SNodeOperations.cast(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.IInteractorType$BJ)), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "7092036503187229293", true), (SNode) createLiveType_6ot3gp_a1a0c0a0b0a1a0a1(SNodeOperations.as(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.IInteractorType$BJ)), _info_12389875345);
         }
       }, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "7092036503187262026", false, false);
     }

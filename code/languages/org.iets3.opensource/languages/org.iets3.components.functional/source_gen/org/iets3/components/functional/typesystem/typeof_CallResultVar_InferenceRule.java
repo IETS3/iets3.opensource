@@ -23,7 +23,7 @@ public class typeof_CallResultVar_InferenceRule extends AbstractInferenceRule_Ru
     {
       SNode _nodeToCheck_1029348928467 = crv;
       EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "7547431020114907987", 0, null);
-      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "7547431020114907833", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(CallOpAction__BehaviorDescriptor.calledOp_id6yXR8poHA$0.invoke(SNodeOperations.cast(SNodeOperations.getParent(crv), CONCEPTS.CallOpAction$TE)), LINKS.type$v5Bm), "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "7547431020114908000", true), _info_12389875345);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "7547431020114907833", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(CallOpAction__BehaviorDescriptor.calledOp_id6yXR8poHA$0.invoke(SNodeOperations.as(SNodeOperations.getParent(crv), CONCEPTS.CallOpAction$TE)), LINKS.type$v5Bm), "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "7547431020114908000", true), _info_12389875345);
     }
   }
   public SAbstractConcept getApplicableConcept() {

@@ -369,7 +369,6 @@
     </language>
   </registry>
   <node concept="312cEu" id="0">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="AbstractFeatureConfiguration_Constraints" />
     <uo k="s:originTrace" v="n:7940458192079116191" />
     <node concept="3Tm1VV" id="1" role="1B3o_S">
@@ -1188,7 +1187,6 @@
     </node>
   </node>
   <node concept="312cEu" id="3T">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="ExtendedFeatureModelConfigurationRef_Constraints" />
     <uo k="s:originTrace" v="n:5050560734068526917" />
     <node concept="3Tm1VV" id="3U" role="1B3o_S">
@@ -2006,7 +2004,7 @@
     </node>
   </node>
   <node concept="312cEu" id="7o">
-    <property role="3GE5qa" value="configuration.using" />
+    <property role="3GE5qa" value="using" />
     <property role="TrG5h" value="FMConfigActualParam_Constraints" />
     <uo k="s:originTrace" v="n:9038024733919151903" />
     <node concept="3Tm1VV" id="7p" role="1B3o_S">
@@ -2752,7 +2750,7 @@
     </node>
   </node>
   <node concept="312cEu" id="az">
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="attribute" />
     <property role="TrG5h" value="FeatureAttributeAssignment_Constraints" />
     <uo k="s:originTrace" v="n:3470763221647507008" />
     <node concept="3Tm1VV" id="a$" role="1B3o_S">
@@ -3619,7 +3617,6 @@
     </node>
   </node>
   <node concept="312cEu" id="eb">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureConfiguration_Constraints" />
     <uo k="s:originTrace" v="n:6698472021570809351" />
     <node concept="3Tm1VV" id="ec" role="1B3o_S">
@@ -4348,7 +4345,6 @@
     </node>
   </node>
   <node concept="312cEu" id="hl">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureModelConfigurationBase_Constraints" />
     <uo k="s:originTrace" v="n:2445493357368108162" />
     <node concept="3Tm1VV" id="hm" role="1B3o_S">
@@ -4736,7 +4732,6 @@
     </node>
   </node>
   <node concept="312cEu" id="iY">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureModelConfigurationRef_Constraints" />
     <uo k="s:originTrace" v="n:6698472021570816841" />
     <node concept="3Tm1VV" id="iZ" role="1B3o_S">
@@ -5571,7 +5566,6 @@
     </node>
   </node>
   <node concept="312cEu" id="mv">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureModelConfiguration_Constraints" />
     <uo k="s:originTrace" v="n:6698472021570800028" />
     <node concept="3Tm1VV" id="mw" role="1B3o_S">
@@ -7072,7 +7066,6 @@
     </node>
   </node>
   <node concept="312cEu" id="sR">
-    <property role="3GE5qa" value="configuration" />
     <property role="TrG5h" value="FeatureWithCardinalityConfiguration_Constraints" />
     <uo k="s:originTrace" v="n:6179108019278665955" />
     <node concept="3Tm1VV" id="sS" role="1B3o_S">

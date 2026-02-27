@@ -55,10 +55,10 @@ public final class ValExpression__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Iterable<SNode>> getVariableConstraints_id7BxfuU7Qruw = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getVariableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881120L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
   public static final SMethod<Set<SNode>> getDependentValues_id1xFBUnwWaWp = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("getDependentValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614210600729L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
   public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, canHavePlainConstraint_idKaZMgylLn7, asString_id6iqfHNBPkjP, getNodeFromWhichToDeriveType_id5aHkq2w4m8L, getErrorMessage_idZYPG76w9Fc, namedNodesForComment_id5ElkanPUl6T, isFrame_id7obiejCehQ6, getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, isVariableTypeInferred_id1996aX6uZ1A, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp, createSolverTask_id4pkidg67Lgb, allowUmlaute_id5YygIlbih$m, allowsEffectForNode_idORfz$DS6Ap);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, canHavePlainConstraint_idKaZMgylLn7, asString_id6iqfHNBPkjP, getNodeFromWhichToDeriveType_id5aHkq2w4m8L, getErrorMessage_idZYPG76w9Fc, namedNodesForComment_id5ElkanPUl6T, isFrame_id7obiejCehQ6, getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, isVariableTypeInferred_id1996aX6uZ1A, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp, createSolverTask_id4pkidg67Lgb, overrideDefaultAllowUmlaute_id5D8v3P4jYKp, allowsEffectForNode_idORfz$DS6Ap);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -138,7 +138,7 @@ public final class ValExpression__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static SNode createSolverTask_id4pkidg67Lgb(@NotNull SNode __thisNode__) {
     return STF.createSolverTask(__thisNode__, "typeCheck");
   }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
+  /*package*/ static boolean overrideDefaultAllowUmlaute_id5D8v3P4jYKp(@NotNull SAbstractConcept __thisConcept__) {
     return true;
   }
   /*package*/ static String allowsEffectForNode_idORfz$DS6Ap(@NotNull SNode __thisNode__, SNode n) {
@@ -201,7 +201,7 @@ public final class ValExpression__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 13:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
+        return (T) ((Boolean) overrideDefaultAllowUmlaute_id5D8v3P4jYKp(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

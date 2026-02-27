@@ -42,7 +42,7 @@ public class typeof_InteractorCommandTarget_InferenceRule extends AbstractInfere
       final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(ict), "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "1136100386041159486", true);
       typeCheckingContext.whenConcrete(ctxType, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.IInteractorType$BJ)) {
-          IDElement f = IInteractor__BehaviorDescriptor.getDescriptor_id5y3VELft_Ye.invoke(IInteractorType__BehaviorDescriptor.getInteractor_id5y3VELfuT5E.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.IInteractorType$BJ))).findByName(SPropertyOperations.getString(ict, PROPS.command$ndav));
+          IDElement f = IInteractor__BehaviorDescriptor.getDescriptor_id5y3VELft_Ye.invoke(IInteractorType__BehaviorDescriptor.getInteractor_id5y3VELfuT5E.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.IInteractorType$BJ))).findByName(SPropertyOperations.getString(ict, PROPS.command$ndav));
           if (f == null) {
             {
               final MessageTarget errorTarget = new NodeMessageTarget();

@@ -64,7 +64,7 @@ public class check_PolynomialExpression_NonTypesystemRule extends AbstractNonTyp
       return;
     }
 
-    SNode exponentCannotBeRealInMathVarExpression = ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(polynomialExpression, LINKS.expression$T2aj), CONCEPTS.PowerExpression$l7, true, new SAbstractConcept[]{})).where((it) -> SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, LINKS.exponent$uVP8), CONCEPTS.NumberLiteral$wE)).where((it) -> (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(SNodeOperations.cast(SLinkOperations.getTarget(it, LINKS.exponent$uVP8), CONCEPTS.NumberLiteral$wE)) > 0).first();
+    SNode exponentCannotBeRealInMathVarExpression = ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(polynomialExpression, LINKS.expression$T2aj), CONCEPTS.PowerExpression$l7, true, new SAbstractConcept[]{})).where((it) -> SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, LINKS.exponent$uVP8), CONCEPTS.NumberLiteral$wE)).where((it) -> (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(SNodeOperations.as(SLinkOperations.getTarget(it, LINKS.exponent$uVP8), CONCEPTS.NumberLiteral$wE)) > 0).first();
 
     if ((exponentCannotBeRealInMathVarExpression != null)) {
       {

@@ -40,7 +40,7 @@ public class typeof_TryExpression_InferenceRule extends AbstractInferenceRule_Ru
             final SNode at = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x59f3fec4e777a2efL, "org.iets3.core.expr.base.structure.AttemptType"));
             SNode common = TypingHelper.calcCommonTypeCore(types, false, true);
             if (SNodeOperations.isInstanceOf(common, CONCEPTS.Type$WK)) {
-              SLinkOperations.setTarget(at, LINKS.successType$Xfwb, SNodeOperations.cast(common, CONCEPTS.Type$WK));
+              SLinkOperations.setTarget(at, LINKS.successType$Xfwb, SNodeOperations.as(common, CONCEPTS.Type$WK));
               Sequence.fromIterable(TryExpression__BehaviorDescriptor.missingErrorClauses_id12WRc293Um2.invoke(te)).visitAll((it) -> ListSequence.fromList(SLinkOperations.getChildren(at, LINKS.errorLiterals$XkTy)).addElement(SNodeOperations.copyNode(it)));
               {
                 SNode _nodeToCheck_1029348928467 = te;

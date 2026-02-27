@@ -17,7 +17,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
 public class UnitTagHelper {
   public static List<SNode> getAllUnits(SNode texpr) {
-    Iterable<SNode> ownTags = ListSequence.fromList(SLinkOperations.getChildren(texpr, LINKS.tags$Lx_i)).where((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.UnitSpecification$DK)).select((it) -> SNodeOperations.cast(it, CONCEPTS.UnitSpecification$DK));
+    Iterable<SNode> ownTags = ListSequence.fromList(SLinkOperations.getChildren(texpr, LINKS.tags$Lx_i)).where((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.UnitSpecification$DK)).select((it) -> SNodeOperations.as(it, CONCEPTS.UnitSpecification$DK));
     List<SNode> ownUnits = new ArrayList<SNode>();
 
     for (Iterable<SNode> seq : Sequence.fromIterable(ownTags).select((it) -> {

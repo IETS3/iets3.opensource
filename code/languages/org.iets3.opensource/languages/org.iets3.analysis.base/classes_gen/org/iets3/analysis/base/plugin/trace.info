@@ -308,10 +308,10 @@
       <node id="7382875784558865039" at="247,0,248,0" concept="7" trace="runWithin#(Ljava/util/concurrent/Callable;)null" />
       <node id="8788306828949798880" at="253,53,254,72" concept="9" />
       <node id="682624529721586468" at="262,53,263,71" concept="9" />
-      <node id="5617935496014552249" at="269,79,270,148" concept="8" />
-      <node id="5617935496014552263" at="270,148,271,0" concept="11" />
-      <node id="5617935496014552264" at="271,0,272,24" concept="9" />
-      <node id="5617935496015354730" at="275,68,276,99" concept="9" />
+      <node id="5617935496015354730" at="268,68,269,98" concept="9" />
+      <node id="5617935496014552249" at="272,79,273,147" concept="8" />
+      <node id="5617935496014552263" at="273,147,274,0" concept="11" />
+      <node id="5617935496014552264" at="274,0,275,24" concept="9" />
       <node id="2317581234341184096" at="183,12,185,7" concept="1" />
       <node id="1189396497925544191" at="56,0,59,0" concept="13" trace="addTaskChangeListener#(Lcom/intellij/util/Consumer;)V" />
       <node id="4514582386769360842" at="60,0,63,0" concept="13" trace="removeTaskChangeListener#(Lcom/intellij/util/Consumer;)V" />
@@ -330,7 +330,7 @@
       <node id="581840377514434649" at="186,130,189,7" concept="6" />
       <node id="6270277087459718024" at="211,80,214,7" concept="6" />
       <node id="6270277087459718047" at="218,127,221,7" concept="6" />
-      <node id="5617935496015354739" at="275,0,278,0" concept="13" trace="writeAccess#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;" />
+      <node id="5617935496015354739" at="268,0,271,0" concept="13" trace="writeAccess#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;" />
       <node id="7899007487499653289" at="227,67,231,18" concept="9" />
       <node id="5149665826913593931" at="252,0,256,0" concept="7" trace="runWithin#(Ljava/util/concurrent/Callable;)null" />
       <node id="682624529721586461" at="261,0,265,0" concept="7" trace="runWithin#(Ljava/util/concurrent/Callable;)null" />
@@ -338,15 +338,15 @@
       <node id="841930293776954034" at="144,0,149,0" concept="13" trace="wrapSolvable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/function/Consumer;Lcom/intellij/util/Consumer;)Lorg/iets3/analysis/base/plugin/CancelableSupplier;" />
       <node id="2317581234341145521" at="180,209,185,7" concept="6" />
       <node id="1189396497927059678" at="197,50,202,6" concept="9" />
-      <node id="5617935496014552293" at="269,0,274,0" concept="13" trace="readAccess#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;" />
+      <node id="5617935496014552293" at="272,0,277,0" concept="13" trace="readAccess#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;" />
       <node id="7899007487499653281" at="227,0,233,0" concept="13" trace="messageOf#(Lorg/iets3/core/base/behavior/IResult;)Ljava/util/List;" />
-      <node id="7382875784562164015" at="250,83,256,6" concept="9" />
-      <node id="682624529721586454" at="259,82,265,6" concept="9" />
+      <node id="7382875784562164015" at="250,82,256,6" concept="9" />
+      <node id="682624529721586454" at="259,81,265,6" concept="9" />
       <node id="6482891329415702038" at="151,0,158,0" concept="13" trace="addResultsToMessageBuffer#(Ljava/util/Collection;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1113126126705469771" at="236,0,243,0" concept="7" trace="newThread#(Ljava/lang/Runnable;)Ljava/lang/Thread;" />
       <node id="2223905352968997573" at="103,0,111,0" concept="13" trace="submitISolvable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/time/Duration;ZLorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;Lorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;)Ljava/util/concurrent/CompletableFuture;" />
-      <node id="7382875784562134875" at="250,0,258,0" concept="13" trace="makeWriteAcccessEnv#(Lorg/jetbrains/mps/openapi/module/SRepository;)Lorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;" />
-      <node id="682624529721586452" at="259,0,267,0" concept="13" trace="makeReadAcccessEnv#(Lorg/jetbrains/mps/openapi/module/SRepository;)Lorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;" />
+      <node id="7382875784562134875" at="250,0,258,0" concept="13" trace="makeWriteAccessEnv#(Lorg/jetbrains/mps/openapi/module/SRepository;)Lorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;" />
+      <node id="682624529721586452" at="259,0,267,0" concept="13" trace="makeReadAccessEnv#(Lorg/jetbrains/mps/openapi/module/SRepository;)Lorg/iets3/analysis/base/plugin/AsyncSolverTaskExecutor/IExecEnv;" />
       <node id="1189396497927059687" at="195,0,204,0" concept="13" trace="makeStatusUpdater#(Lorg/jetbrains/mps/openapi/model/SNode;)Lcom/intellij/util/Consumer;" />
       <node id="1113126126705469766" at="234,48,243,6" concept="9" />
       <node id="581840377514497976" at="167,0,177,0" concept="13" trace="ifFailureThenUpdateStatus#(Lcom/intellij/util/Consumer;Ljava/util/Collection;)V" />
@@ -380,7 +380,7 @@
       </scope>
       <scope id="5149665826913593958" at="253,53,254,72" />
       <scope id="682624529721586467" at="262,53,263,71" />
-      <scope id="5617935496015354715" at="275,68,276,99" />
+      <scope id="5617935496015354715" at="268,68,269,98" />
       <scope id="4386560887386795418" at="228,95,230,68">
         <var name="errorMessage" id="4386560887386795420" />
       </scope>
@@ -428,11 +428,11 @@
       <scope id="1189396497927059670" at="198,44,201,45">
         <var name="taskEntity" id="8811930031040348771" />
       </scope>
-      <scope id="5617935496014552246" at="269,79,272,24">
-        <var name="solverRunEnv" id="5617935496014552250" />
-      </scope>
-      <scope id="5617935496015354739" at="275,0,278,0">
+      <scope id="5617935496015354739" at="268,0,271,0">
         <var name="solvable" id="5617935496015354732" />
+      </scope>
+      <scope id="5617935496014552246" at="272,79,275,24">
+        <var name="solverRunEnv" id="5617935496014552250" />
       </scope>
       <scope id="7899007487499653288" at="227,67,231,18" />
       <scope id="1113126126705469776" at="237,44,241,25">
@@ -455,7 +455,7 @@
       <scope id="6270277087459718037" at="216,27,221,7">
         <var name="exceptionResult" id="6270277087459718039" />
       </scope>
-      <scope id="5617935496014552293" at="269,0,274,0">
+      <scope id="5617935496014552293" at="272,0,277,0">
         <var name="forWho" id="5617935496014552266" />
       </scope>
       <scope id="2223905352968997574" at="103,204,109,60" />
@@ -465,8 +465,8 @@
       <scope id="7899007487499653281" at="227,0,233,0">
         <var name="iresult" id="7899007487499653286" />
       </scope>
-      <scope id="7382875784562134879" at="250,83,256,6" />
-      <scope id="682624529721586453" at="259,82,265,6" />
+      <scope id="7382875784562134879" at="250,82,256,6" />
+      <scope id="682624529721586453" at="259,81,265,6" />
       <scope id="6482891329415702038" at="151,0,158,0">
         <var name="forWho" id="6482891329415702030" />
         <var name="results" id="6482891329415702027" />
@@ -545,7 +545,7 @@
       <unit id="7382875784562178059" at="251,15,256,5" name="org.iets3.analysis.base.plugin.AsyncSolverTaskExecutor$3" />
       <unit id="682624529721586458" at="260,15,265,5" name="org.iets3.analysis.base.plugin.AsyncSolverTaskExecutor$4" />
       <unit id="1113126126705469769" at="235,15,243,5" name="org.iets3.analysis.base.plugin.AsyncSolverTaskExecutor$2" />
-      <unit id="2586694706018194641" at="34,0,279,0" name="org.iets3.analysis.base.plugin.AsyncSolverTaskExecutor" />
+      <unit id="2586694706018194641" at="34,0,278,0" name="org.iets3.analysis.base.plugin.AsyncSolverTaskExecutor" />
     </file>
   </root>
   <root nodeRef="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)/2586694706024256038">

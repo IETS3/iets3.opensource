@@ -29,7 +29,7 @@ public class typeof_KeyValuePair_InferenceRule extends AbstractInferenceRule_Run
             {
               SNode _nodeToCheck_1029348928467 = kvp;
               EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163117152", 0, null);
-              typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163117005", true), (SNode) createMapType_qkiji0_a1a0c0a0b0a1a0a1a0b0a0b(SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(keyType)), CONCEPTS.Type$WK), SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(valType)), CONCEPTS.Type$WK)), _info_12389875345);
+              typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163117005", true), (SNode) createMapType_qkiji0_a1a0c0a0b0a1a0a1a0b0a0b(SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(keyType)), CONCEPTS.Type$WK), SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(valType)), CONCEPTS.Type$WK)), _info_12389875345);
             }
           }, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8448265401163118554", false, false);
         }

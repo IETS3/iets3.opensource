@@ -27,9 +27,9 @@ public class typeof_OneCollBaseTypedArgCollectionOp_InferenceRule extends Abstra
       typeCheckingContext.whenConcrete(ctxType, () -> {
         SNode baseType = null;
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS)) {
-          baseType = SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
+          baseType = SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
         } else if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.ISolverCollectionType$Vo)) {
-          baseType = ISolverCollectionType__BehaviorDescriptor.getBaseType_id1ScogIcAG8p.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.ISolverCollectionType$Vo));
+          baseType = ISolverCollectionType__BehaviorDescriptor.getBaseType_id1ScogIcAG8p.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.ISolverCollectionType$Vo));
         }
         {
           SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(op, LINKS.expr$CW3E);

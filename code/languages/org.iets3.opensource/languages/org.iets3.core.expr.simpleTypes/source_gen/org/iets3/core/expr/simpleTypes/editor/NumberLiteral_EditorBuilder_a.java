@@ -12,7 +12,6 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.iets3.core.expr.base.runtime.runtime.PTF;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
-import jetbrains.mps.nodeEditor.cells.CellFinderUtil;
 import jetbrains.mps.nodeEditor.cells.PropertyAccessor;
 import de.slisson.mps.reflection.runtime.ReflectionUtil;
 import org.iets3.core.expr.base.runtime.runtime.HexPropertyAccessor;
@@ -72,10 +71,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     final EditorCell cell = createSplittableCell_0();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
       if (PTF.areHexadecimalNumbersSupported(myNode)) {
-        EditorCell_Property propCell = CellFinderUtil.findChildByClass(cell, EditorCell_Property.class, true);
-        PropertyAccessor modelAccessor = (PropertyAccessor) propCell.getModelAccessor();
-        ReflectionUtil.writeField(EditorCell_Property.class, propCell, "myModelAccessor", new HexPropertyAccessor(myNode, modelAccessor.getProperty(), ((Boolean) ReflectionUtil.readField(PropertyAccessor.class, modelAccessor, "myReadOnly")), ((Boolean) ReflectionUtil.readField(PropertyAccessor.class, modelAccessor, "myAllowEmptyText")), getEditorContext()));
-        propCell.synchronize();
+        EditorCell_Property propCell = (EditorCell_Property) cell;
+        if (propCell != null) {
+          PropertyAccessor modelAccessor = (PropertyAccessor) propCell.getModelAccessor();
+          ReflectionUtil.writeField(EditorCell_Property.class, propCell, "myModelAccessor", new HexPropertyAccessor(myNode, modelAccessor.getProperty(), ((Boolean) ReflectionUtil.readField(PropertyAccessor.class, modelAccessor, "myReadOnly")), ((Boolean) ReflectionUtil.readField(PropertyAccessor.class, modelAccessor, "myAllowEmptyText")), getEditorContext()));
+          propCell.synchronize();
+        }
       }
       return cell;
     }).invoke();

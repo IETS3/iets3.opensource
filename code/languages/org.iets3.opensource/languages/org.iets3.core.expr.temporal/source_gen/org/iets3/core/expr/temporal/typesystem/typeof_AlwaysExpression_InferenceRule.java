@@ -26,7 +26,7 @@ public class typeof_AlwaysExpression_InferenceRule extends AbstractInferenceRule
         {
           SNode _nodeToCheck_1029348928467 = ae;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "5177002969018980443", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "5177002969018979282", true), (SNode) createTemporalType_2gawvp_a1a0c0a0b0a1a0a1(SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(valueType)), CONCEPTS.Type$WK)), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "5177002969018979282", true), (SNode) createTemporalType_2gawvp_a1a0c0a0b0a1a0a1(SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(valueType)), CONCEPTS.Type$WK)), _info_12389875345);
         }
       }, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "5177002969018980698", false, false);
     }

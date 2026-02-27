@@ -27,9 +27,9 @@ public final class IToplevelExprContent__BehaviorDescriptor extends BaseBHDescri
 
   public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
   public static final SMethod<String> getQualifiedName_id4yaQL1YaUNL = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5227231181399633137L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id6iqfHNBPkjP, getQualifiedName_id4yaQL1YaUNL, allowUmlaute_id5YygIlbih$m);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id6iqfHNBPkjP, getQualifiedName_id4yaQL1YaUNL, overrideDefaultAllowUmlaute_id5D8v3P4jYKp);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -44,7 +44,7 @@ public final class IToplevelExprContent__BehaviorDescriptor extends BaseBHDescri
     }
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
   }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
+  /*package*/ static boolean overrideDefaultAllowUmlaute_id5D8v3P4jYKp(@NotNull SAbstractConcept __thisConcept__) {
     return true;
   }
 
@@ -80,7 +80,7 @@ public final class IToplevelExprContent__BehaviorDescriptor extends BaseBHDescri
     }
     switch (methodIndex) {
       case 2:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
+        return (T) ((Boolean) overrideDefaultAllowUmlaute_id5D8v3P4jYKp(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

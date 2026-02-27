@@ -8,10 +8,11 @@ import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 
 public class Segment implements IInstantiation {
-  private SNode pivotNode;
-  private String name;
-  private SNode fmInclude;
-  private SNode targetIVAA;
+  private final SNode pivotNode;
+  private final String name;
+  private final SNode fmInclude;
+  private final SNode targetIVAA;
+  private final SNode targetNode;
 
   /**
    * Constructor for a segment with instantiation and pivot node.
@@ -19,26 +20,35 @@ public class Segment implements IInstantiation {
    * @param n the pivot node pointing from including IVAA to instantiated IVAA
    * @param name name of pivot node in path
    * @param fmInclude the feature model include used for the instantiation
-   * @param target the instantiated IVAA
+   * @param targetIVAA the instantiated IVAA
    */
-  public Segment(SNode n, String name, SNode fmInclude, SNode target) {
+  public Segment(SNode n, String name, SNode fmInclude, SNode targetIVAA) {
+    this(n, name, fmInclude, targetIVAA, IVariabilityAwareArtifact__BehaviorDescriptor.artifactRoot_id3q2wVeorTKs.invoke(targetIVAA));
+  }
+  /**
+   * Constructor for a segment with instantiatio,target and pivot node.
+   * 
+   * @param n the pivot node pointing from including IVAA to instantiated IVAA
+   * @param name name of pivot node in path
+   * @param fmInclude the feature model include used for the instantiation
+   * @param targetIVAA the instantiated IVAA
+   */
+  public Segment(SNode n, String name, SNode fmInclude, SNode targetIVAA, SNode targetNode) {
     this.pivotNode = n;
     this.name = name;
     this.fmInclude = fmInclude;
-    this.targetIVAA = target;
+    this.targetIVAA = targetIVAA;
+    this.targetNode = targetNode;
   }
 
   /**
    * Constructor for a segment without instantiation (just a dependent IVAA on same level of the artifact).
    * 
    * @param fmInclude the feature model include used for the target IVAA
-   * @param target the target IVAA
+   * @param targetIVAA the target IVAA
    */
-  public Segment(SNode fmInclude, SNode target) {
-    this.pivotNode = null;
-    this.name = null;
-    this.fmInclude = fmInclude;
-    this.targetIVAA = target;
+  public Segment(SNode fmInclude, SNode targetIVAA) {
+    this(null, null, fmInclude, targetIVAA);
   }
 
   public boolean hasTarget(SNode ivaa) {
@@ -47,6 +57,15 @@ public class Segment implements IInstantiation {
 
   public boolean isDirect() {
     return (pivotNode == null);
+  }
+
+  /**
+   * true if instantiation has been applied on the SkeletonNode corresponding to this segment. 
+   * 
+   * @return  
+   */
+  public boolean isInstance() {
+    return this.pivotNode != null;
   }
 
   public SNode getPivot() {
@@ -61,8 +80,12 @@ public class Segment implements IInstantiation {
     return this.fmInclude;
   }
 
-  public SNode getTarget() {
+  public SNode getTargetIVAA() {
     return this.targetIVAA;
+  }
+
+  public SNode getTarget() {
+    return this.targetNode;
   }
 
   @Override

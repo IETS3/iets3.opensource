@@ -23,7 +23,7 @@ public class check_RangeTarget_NonTypesystemRule extends AbstractNonTypesystemRu
   public check_RangeTarget_NonTypesystemRule() {
   }
   public void applyRule(final SNode target, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    SNode tt = TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(target), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
+    SNode tt = TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(target), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
     if (!(PTF.isIntegerType(tt)) && !(PTF.isRealType(tt))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();

@@ -21,7 +21,7 @@ public class fix_RemoveConflictingInheritance_QuickFix extends QuickFix_Runtime 
     return "Remove Conflicting Inheritance";
   }
   public void execute(SNode node) {
-    SNode fmc = SNodeOperations.cast(node, CONCEPTS.FeatureModelConfiguration$nE);
+    SNode fmc = SNodeOperations.as(node, CONCEPTS.FeatureModelConfiguration$nE);
     SNodeOperations.deleteNode(SLinkOperations.getTarget(fmc, LINKS.extendedFMC$tFbw));
     FeatureModelConfiguration__BehaviorDescriptor.removeInheritance_id6PjKOfbeSBr.invoke(fmc);
     if ((new IAttributeDescriptor.NodeAttribute(CONCEPTS.FMCInheritanceCheck$Kn).get(fmc) != null)) {

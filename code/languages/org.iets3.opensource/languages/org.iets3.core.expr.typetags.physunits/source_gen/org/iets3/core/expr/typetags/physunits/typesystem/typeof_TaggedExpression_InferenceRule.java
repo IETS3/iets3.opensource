@@ -21,10 +21,10 @@ import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefixManager
 import org.iets3.core.expr.typetags.physunits.behavior.GlobalUnitPrefixManager;
 import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefix;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.iets3.core.expr.simpleTypes.behavior.NumberType__BehaviorDescriptor;
 import org.iets3.core.expr.simpleTypes.behavior.NumberRangeSpec__BehaviorDescriptor;
 import ch.obermuhlner.math.big.DefaultBigDecimalMath;
 import java.math.BigDecimal;
+import org.iets3.core.expr.simpleTypes.behavior.NumberType__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -71,8 +71,20 @@ public class typeof_TaggedExpression_InferenceRule extends AbstractInferenceRule
               {
                 final SNode numberType = SLinkOperations.getTarget(type, LINKS.baseType$z6Mz);
                 if (SNodeOperations.isInstanceOf(numberType, CONCEPTS.NumberType$n)) {
-                  NumberType__BehaviorDescriptor.setInfinitePrecision_id7Wa2sv3G6bK.invoke(numberType);
-                  NumberRangeSpec__BehaviorDescriptor.times_idijdpu3aPf0.invoke(SLinkOperations.getTarget(numberType, LINKS.range$RnOa), DefaultBigDecimalMath.pow(BigDecimal.valueOf(manager.getBase()), BigDecimal.valueOf((int) prefix.factor())));
+                  int base = manager.getBase();
+                  int exp = (int) prefix.factor();
+                  NumberRangeSpec__BehaviorDescriptor.times_idijdpu3aPf0.invoke(SLinkOperations.getTarget(numberType, LINKS.range$RnOa), DefaultBigDecimalMath.pow(BigDecimal.valueOf(base), BigDecimal.valueOf(exp)));
+
+                  String singlePointRange = NumberType__BehaviorDescriptor.getSinglePointRange_id5bmRS0nolm$.invoke(numberType);
+                  if ((singlePointRange != null && singlePointRange.length() > 0)) {
+                    // compute precision from range, if range is a constant value
+                    NumberType__BehaviorDescriptor.setPrecisionFromValue_id2RZ2I9pAbPi.invoke(numberType, singlePointRange);
+                  } else {
+                    // otherwise compute precision from old precision and multiplication due to unit prefix
+                    int exp10 = ((base == 10) ? exp : (int) Math.ceil(exp * Math.log10(base)));
+                    int oldPrec = (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(numberType);
+                    NumberType__BehaviorDescriptor.setPrecision_id19PglA21KtA.invoke(numberType, ((int) Integer.max(0, oldPrec - exp10)));
+                  }
                 }
               }
             }

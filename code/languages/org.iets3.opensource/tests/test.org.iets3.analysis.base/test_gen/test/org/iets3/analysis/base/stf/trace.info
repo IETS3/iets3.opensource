@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:7bf7d1b6-6af0-458a-8b1a-edfd79033951(test.org.iets3.analysis.base.stf@tests)/4802652517075204308">
+    <file name="STFTest_Test.java">
+      <node id="4802652517075204308" at="28,25,29,60" concept="9" />
+      <node id="4802652517075204312" at="33,77,34,68" concept="1" />
+      <node id="9137946923971150436" at="37,94,38,85" concept="1" />
+      <node id="4802652517075204308" at="43,52,44,19" concept="9" />
+      <node id="4802652517075204308" at="48,36,49,25" concept="1" />
+      <node id="4802652517075204312" at="52,79,53,22" concept="1" />
+      <node id="4802652517075241350" at="54,30,55,94" concept="3" />
+      <node id="4802652517075241516" at="55,94,56,60" concept="1" />
+      <node id="4802652517075278696" at="56,60,57,182" concept="1" />
+      <node id="2792127759363661319" at="57,182,58,122" concept="5" />
+      <node id="2792127759363670193" at="58,122,59,195" concept="5" />
+      <node id="5026998909908793593" at="59,195,60,160" concept="1" />
+      <node id="9137946923971150436" at="63,96,64,22" concept="1" />
+      <node id="9137946923971150481" at="65,30,66,89" concept="3" />
+      <node id="9137946923971150875" at="66,89,67,0" concept="6" />
+      <node id="9137946923971150934" at="67,0,68,60" concept="1" />
+      <node id="9137946923971150936" at="68,60,69,182" concept="1" />
+      <node id="9137946923971150941" at="69,182,70,117" concept="5" />
+      <node id="9137946923971150967" at="70,117,71,163" concept="1" />
+      <node id="9137946923971150876" at="71,163,72,0" concept="6" />
+      <node id="2792127759363657643" at="76,68,77,76" concept="3" />
+      <node id="2792127759363657643" at="77,76,78,28" concept="4" />
+      <node id="9137946923971216829" at="80,63,81,71" concept="3" />
+      <node id="9137946923971216829" at="81,71,82,28" concept="4" />
+      <node id="4802652517075204308" at="87,0,88,0" concept="7" trace="DummySolverTask$vc" />
+      <node id="4802652517075204308" at="88,0,89,0" concept="7" trace="DummyISolvable$_U" />
+      <node id="4802652517075204308" at="89,0,90,0" concept="7" trace="Unrelated$9L" />
+      <node id="4802652517075204308" at="93,0,94,0" concept="7" trace="sleepTime$9t9K" />
+      <node id="4802652517075204308" at="25,0,27,0" concept="7" trace="ourParametersCacheExtension" />
+      <node id="4802652517075204308" at="28,0,31,0" concept="0" trace="STFTest_Test#()V" />
+      <node id="4802652517075204308" at="43,0,46,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4802652517075204312" at="32,0,36,0" concept="2" trace="test_stfMostSpecializedConcetpMustBeChosen#()V" />
+      <node id="9137946923971150436" at="36,0,40,0" concept="2" trace="test_ensureThatSolverTaskFactoryForUnrelatedConceptIsChosen#()V" />
+      <node id="4802652517075204308" at="47,0,51,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2792127759363657643" at="76,0,80,0" concept="8" trace="createDummyISolvable_c1ckwt_a0a0a0a1a5h#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="9137946923971216829" at="80,0,84,0" concept="8" trace="createUnrelated_c1ckwt_a0a0a0a1a6h#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4802652517075204312" at="53,22,61,9" concept="1" />
+      <node id="9137946923971150436" at="64,22,73,9" concept="1" />
+      <node id="4802652517075204312" at="52,0,63,0" concept="2" trace="test_stfMostSpecializedConcetpMustBeChosen#()V" />
+      <node id="9137946923971150436" at="63,0,75,0" concept="2" trace="test_ensureThatSolverTaskFactoryForUnrelatedConceptIsChosen#()V" />
+      <scope id="4802652517075204308" at="28,25,29,60" />
+      <scope id="4802652517075204312" at="33,77,34,68" />
+      <scope id="9137946923971150436" at="37,94,38,85" />
+      <scope id="4802652517075204308" at="43,52,44,19" />
+      <scope id="4802652517075204308" at="48,36,49,25" />
+      <scope id="2792127759363657643" at="76,68,78,28">
+        <var name="n0" id="2792127759363657643" />
+      </scope>
+      <scope id="9137946923971216829" at="80,63,82,28">
+        <var name="n0" id="9137946923971216829" />
+      </scope>
+      <scope id="4802652517075204308" at="28,0,31,0" />
+      <scope id="4802652517075204308" at="43,0,46,0">
+        <var name="owner" id="4802652517075204308" />
+      </scope>
+      <scope id="4802652517075204312" at="32,0,36,0" />
+      <scope id="9137946923971150436" at="36,0,40,0" />
+      <scope id="4802652517075204308" at="47,0,51,0" />
+      <scope id="2792127759363657643" at="76,0,80,0" />
+      <scope id="9137946923971216829" at="80,0,84,0" />
+      <scope id="4802652517075204312" at="54,30,60,160">
+        <var name="task" id="4802652517075241351" />
+      </scope>
+      <scope id="9137946923971150436" at="65,30,72,0">
+        <var name="task" id="9137946923971150482" />
+      </scope>
+      <scope id="4802652517075204312" at="52,79,61,9" />
+      <scope id="9137946923971150436" at="63,96,73,9" />
+      <scope id="4802652517075204312" at="52,0,63,0" />
+      <scope id="9137946923971150436" at="63,0,75,0" />
+      <unit id="4802652517075204308" at="92,0,95,0" name="test.org.iets3.analysis.base.stf.STFTest_Test$PROPS" />
+      <unit id="4802652517075204308" at="86,0,91,0" name="test.org.iets3.analysis.base.stf.STFTest_Test$CONCEPTS" />
+      <unit id="4802652517075204308" at="41,0,85,0" name="test.org.iets3.analysis.base.stf.STFTest_Test$TestBody" />
+      <unit id="4802652517075204308" at="23,0,96,0" name="test.org.iets3.analysis.base.stf.STFTest_Test" />
+    </file>
+  </root>
+</debug-info>
+

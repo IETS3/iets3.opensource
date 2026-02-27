@@ -22,7 +22,7 @@ public class check_MemberTarget_NonTypesystemRule extends AbstractNonTypesystemR
   public check_MemberTarget_NonTypesystemRule() {
   }
   public void applyRule(final SNode target, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (!(SNodeOperations.isInstanceOf(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(target), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E)), CONCEPTS.DataItemType$Gg))) {
+    if (!(SNodeOperations.isInstanceOf(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(target), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E)), CONCEPTS.DataItemType$Gg))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(target, ".Member is only applicable to expressions of type DataItemType.", "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "6444355930335551907", null, errorTarget);

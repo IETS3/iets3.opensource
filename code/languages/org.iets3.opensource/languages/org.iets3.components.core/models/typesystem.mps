@@ -262,7 +262,9 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -2429,6 +2431,7 @@
           <node concept="2OqwBi" id="4VHfdEqe9kt" role="3clFbG">
             <node concept="2OqwBi" id="4VHfdEqe8tY" role="2Oq$k0">
               <node concept="1PxgMI" id="4VHfdEqe8hw" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
                 <node concept="chp4Y" id="4VHfdEqe8if" role="3oSUPX">
                   <ref role="cht4Q" to="w9y2:cJpacq6wur" resolve="Parameter" />
                 </node>
@@ -2591,6 +2594,7 @@
                 </node>
                 <node concept="2OqwBi" id="3mxHOBiEoJD" role="33vP2m">
                   <node concept="1PxgMI" id="3mxHOBiEoJE" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="3mxHOBiEoJF" role="3oSUPX">
                       <ref role="cht4Q" to="w9y2:6P1C6lFyRUR" resolve="ConfiguredPortType" />
                     </node>
@@ -2612,6 +2616,7 @@
                 </node>
                 <node concept="2OqwBi" id="3mxHOBiEp8N" role="33vP2m">
                   <node concept="1PxgMI" id="3mxHOBiEp8O" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="3mxHOBiEp8P" role="3oSUPX">
                       <ref role="cht4Q" to="w9y2:6P1C6lFyRUR" resolve="ConfiguredPortType" />
                     </node>
@@ -2656,6 +2661,7 @@
                         <node concept="2OqwBi" id="3mxHOBiE$fW" role="3uHU7w">
                           <node concept="2OqwBi" id="3mxHOBiEyXj" role="2Oq$k0">
                             <node concept="1PxgMI" id="3mxHOBiEy6e" role="2Oq$k0">
+                              <property role="1BlNFB" value="true" />
                               <node concept="chp4Y" id="3mxHOBiEyiy" role="3oSUPX">
                                 <ref role="cht4Q" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
                               </node>
@@ -2679,6 +2685,7 @@
                             <node concept="2OqwBi" id="3mxHOBiEtJe" role="3uHU7w">
                               <node concept="2OqwBi" id="3mxHOBiEsXd" role="2Oq$k0">
                                 <node concept="1PxgMI" id="3mxHOBiEsG2" role="2Oq$k0">
+                                  <property role="1BlNFB" value="true" />
                                   <node concept="chp4Y" id="3mxHOBiEsH3" role="3oSUPX">
                                     <ref role="cht4Q" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
                                   </node>
@@ -2814,6 +2821,7 @@
                         <ref role="2pIpSl" to="w9y2:6P1C6lFyRUU" resolve="configurationType" />
                         <node concept="36biLy" id="6P1C6lFyScE" role="28nt2d">
                           <node concept="1PxgMI" id="6P1C6lFyTFZ" role="36biLW">
+                            <property role="1BlNFB" value="true" />
                             <node concept="chp4Y" id="6P1C6lFyTKQ" role="3oSUPX">
                               <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
                             </node>
@@ -2827,6 +2835,7 @@
                         <ref role="2pIpSl" to="w9y2:6P1C6lFyRUS" resolve="portType" />
                         <node concept="36biLy" id="6P1C6lFySEy" role="28nt2d">
                           <node concept="1PxgMI" id="6P1C6lFyTdT" role="36biLW">
+                            <property role="1BlNFB" value="true" />
                             <node concept="chp4Y" id="6P1C6lFyTjz" role="3oSUPX">
                               <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
                             </node>

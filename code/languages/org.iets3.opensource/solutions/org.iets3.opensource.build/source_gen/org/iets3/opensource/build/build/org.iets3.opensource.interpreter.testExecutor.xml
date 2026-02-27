@@ -70,7 +70,7 @@
         <id>org.iets3.opensource.interpreterExecutor</id>
         <name>org.iets3.opensource.interpreterExecutor</name>
         <version>${org.iets3.opensource.version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>org.iets3.core.junit.interpreter.run.configuration</depends>
         <depends>org.iets3.build.os</depends>
         <depends>jetbrains.mps.debugger.api</depends>
@@ -183,6 +183,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jung" id="com.mbeddr.mpsutil.jung" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.modellisteners" id="com.mbeddr.mpsutil.modellisteners" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml" id="com.mbeddr.mpsutil.plantuml" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.projectview" id="com.mbeddr.mpsutil.projectview" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.smodule" id="com.mbeddr.mpsutil.smodule" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.spreferences" id="com.mbeddr.mpsutil.spreferences" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.suppresswarning" id="com.mbeddr.mpsutil.suppresswarning" />
@@ -205,6 +206,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/de.q60.shadowmodels" id="de.q60.shadowmodels" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" id="de.slisson.mps.conditionalEditor" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" id="de.slisson.mps.hacks" />
+      <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.doc" id="com.mbeddr.doc" />
       <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.platform" id="com.mbeddr.platform" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" id="org.apache.commons" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-math-editor" id="de.itemis.mps.editor.math" />
@@ -215,6 +217,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/org.modelix.model.api" id="org.modelix.model.api" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
+      <plugin path="${artifacts.mps}/plugins/mps-console" id="jetbrains.mps.console" />
       <plugin path="${artifacts.mps}/plugins/mps-context-actions" id="jetbrains.mps.editor.contextActions" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" id="jetbrains.mps.debugger.api" />
@@ -385,6 +388,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/de.q60.shadowmodels" id="de.q60.shadowmodels" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" id="de.slisson.mps.conditionalEditor" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" id="de.slisson.mps.hacks" />
+      <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.doc" id="com.mbeddr.doc" />
       <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil" id="com.mbeddr.mpsutil" />
       <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.platform" id="com.mbeddr.platform" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" id="org.apache.commons" />
@@ -397,6 +401,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/org.modelix.model.api" id="org.modelix.model.api" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
+      <plugin path="${artifacts.mps}/plugins/mps-console" id="jetbrains.mps.console" />
       <plugin path="${artifacts.mps}/plugins/mps-context-actions" id="jetbrains.mps.editor.contextActions" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" id="jetbrains.mps.debugger.api" />

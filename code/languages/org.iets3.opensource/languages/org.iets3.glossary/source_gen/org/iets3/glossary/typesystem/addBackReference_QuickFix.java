@@ -23,7 +23,7 @@ public class addBackReference_QuickFix extends QuickFix_Runtime {
   public void execute(SNode node) {
     SNode copy = SNodeOperations.copyNode(((SNode) addBackReference_QuickFix.this.getField("theOneThatExists")[0]));
     ListSequence.fromList(SLinkOperations.getChildren(((SNode) addBackReference_QuickFix.this.getField("theOneThatMissesIt")[0]), LINKS.attrs$r7h3)).addElement(copy);
-    SLinkOperations.setTarget(copy, LINKS.term$gAJS, SNodeOperations.cast(SNodeOperations.getParent(((SNode) addBackReference_QuickFix.this.getField("theOneThatExists")[0])), CONCEPTS.GlossaryTerm$tH));
+    SLinkOperations.setTarget(copy, LINKS.term$gAJS, SNodeOperations.as(SNodeOperations.getParent(((SNode) addBackReference_QuickFix.this.getField("theOneThatExists")[0])), CONCEPTS.GlossaryTerm$tH));
   }
 
   private static final class LINKS {

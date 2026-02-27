@@ -33,11 +33,12 @@ public final class ICanRunCheckManually__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<Void> runManuallyWithUIUpdate_idub9nkyQ908 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("runManuallyWithUIUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(543569365054296072L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
   public static final SMethod<Void> performAdditionalEditorUpdate_id3JvidvJx7iM = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("performAdditionalEditorUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4314247060317828274L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
   public static final SMethod<Boolean> highlightError_id4b4fYXfo1HZ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightError").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4811040598999964543L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> showSubResults_id4MH81Y0VldB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("showSubResults").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5525107637532578663L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> mustBeRunManually_id3R3AIvumAZH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeRunManually").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430773741L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> shouldBeChecked_id1996aX856sE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("shouldBeChecked").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317611507090220842L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(readyToRunManually_id3R3AIvumwpv, hasChangedAndMustBeRechecked_id6MJy$PGsBKB, canDetectChange_id6MJy$PGsBY8, isManualCheckAvaillable_id3ugRfIRApt7, doNotShowManualInfoMessage_id2jITtfD$0No, runManually_id3R3AIvumrTm, runManuallyWithUIUpdate_idub9nkyQ908, performAdditionalEditorUpdate_id3JvidvJx7iM, highlightError_id4b4fYXfo1HZ, showSubResults_id4MH81Y0VldB, mustBeRunManually_id3R3AIvumAZH, shouldBeChecked_id1996aX856sE);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(readyToRunManually_id3R3AIvumwpv, hasChangedAndMustBeRechecked_id6MJy$PGsBKB, canDetectChange_id6MJy$PGsBY8, isManualCheckAvaillable_id3ugRfIRApt7, doNotShowManualInfoMessage_id2jITtfD$0No, runManually_id3R3AIvumrTm, runManuallyWithUIUpdate_idub9nkyQ908, performAdditionalEditorUpdate_id3JvidvJx7iM, highlightError_id4b4fYXfo1HZ, highlightWarning_id4358bbCIl2g, showSubResults_id4MH81Y0VldB, mustBeRunManually_id3R3AIvumAZH, shouldBeChecked_id1996aX856sE);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -65,6 +66,9 @@ public final class ICanRunCheckManually__BehaviorDescriptor extends BaseBHDescri
   }
   /*package*/ static boolean highlightError_id4b4fYXfo1HZ(@NotNull SNode __thisNode__) {
     return true;
+  }
+  /*package*/ static boolean highlightWarning_id4358bbCIl2g(@NotNull SNode __thisNode__) {
+    return false;
   }
   /*package*/ static boolean showSubResults_id4MH81Y0VldB(@NotNull SNode __thisNode__) {
     return false;
@@ -107,8 +111,10 @@ public final class ICanRunCheckManually__BehaviorDescriptor extends BaseBHDescri
       case 8:
         return (T) ((Boolean) highlightError_id4b4fYXfo1HZ(node));
       case 9:
+        return (T) ((Boolean) highlightWarning_id4358bbCIl2g(node));
+      case 10:
         return (T) ((Boolean) showSubResults_id4MH81Y0VldB(node));
-      case 11:
+      case 12:
         return (T) ((Boolean) shouldBeChecked_id1996aX856sE(node));
       default:
         throw new BHMethodNotFoundException(this, method);

@@ -213,7 +213,7 @@
       <node id="2870058499326626216" at="58,0,61,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2870058499326626216" at="61,0,64,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="2870058499326626216" at="64,0,67,0" concept="5" trace="overrides#()Z" />
-      <node id="2870058499327950862" at="27,344,31,9" concept="0" />
+      <node id="2870058499327950862" at="27,342,31,9" concept="0" />
       <node id="2870058499329009454" at="51,12,55,7" concept="0" />
       <node id="2870058499326635872" at="32,14,37,9" concept="0" />
       <node id="2870058499326677312" at="39,122,44,7" concept="0" />
@@ -253,7 +253,7 @@
         <var name="argument" id="2870058499326626216" />
       </scope>
       <scope id="2870058499326626216" at="64,0,67,0" />
-      <scope id="2870058499327928836" at="27,344,31,9" />
+      <scope id="2870058499327928836" at="27,342,31,9" />
       <scope id="2870058499326681446" at="51,12,55,7" />
       <scope id="2870058499327950941" at="32,14,37,9" />
       <scope id="2870058499326674049" at="39,122,44,7" />
@@ -494,7 +494,7 @@
     </file>
     <file name="typeof_BlockCallExpr_InferenceRule.java">
       <node id="2870058499330960139" at="28,144,29,191" concept="6" />
-      <node id="2870058499330967648" at="31,205,32,310" concept="2" />
+      <node id="2870058499330967648" at="31,205,32,308" concept="2" />
       <node id="2870058499330961804" at="35,7,36,47" concept="6" />
       <node id="2870058499330961804" at="36,47,37,207" concept="6" />
       <node id="2870058499330961804" at="37,207,38,250" concept="2" />
@@ -545,7 +545,7 @@
       <node id="2870058499330924604" at="27,116,46,5" concept="4" />
       <node id="2870058499330924241" at="27,0,76,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="2870058499330924241" at="25,47,25,47" />
-      <scope id="731163822148190602" at="31,205,32,310" />
+      <scope id="731163822148190602" at="31,205,32,308" />
       <scope id="2870058499330924241" at="76,50,77,37" />
       <scope id="2870058499330924241" at="79,68,80,102" />
       <scope id="2870058499330924241" at="82,30,83,17" />

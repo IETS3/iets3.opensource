@@ -33,7 +33,7 @@ public class typeof_TemporalLiteral_InferenceRule extends AbstractInferenceRule_
       {
         SNode _nodeToCheck_1029348928467 = tl;
         EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "3192602961026513695", 0, null);
-        typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "3192602961026513705", true), (SNode) createTemporalType_j56h96_a1a0c0a0a0b(SNodeOperations.cast(SLinkOperations.getTarget(tl, LINKS.typeConstraint$9$c1), CONCEPTS.Type$WK)), _info_12389875345);
+        typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "3192602961026513705", true), (SNode) createTemporalType_j56h96_a1a0c0a0a0b(SNodeOperations.as(SLinkOperations.getTarget(tl, LINKS.typeConstraint$9$c1), CONCEPTS.Type$WK)), _info_12389875345);
       }
     }
     if (ListSequence.fromList(SLinkOperations.getChildren(tl, LINKS.slices$xYdM)).isNotEmpty()) {
@@ -53,7 +53,7 @@ public class typeof_TemporalLiteral_InferenceRule extends AbstractInferenceRule_
           {
             SNode _nodeToCheck_1029348928467 = tl;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "8694548031077641933", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "8694548031077640507", true), (SNode) createTemporalType_j56h96_a1a0c0a0c0c0a0b0b(SNodeOperations.cast(sliceSupertype, CONCEPTS.Type$WK)), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "8694548031077640507", true), (SNode) createTemporalType_j56h96_a1a0c0a0c0c0a0b0b(SNodeOperations.as(sliceSupertype, CONCEPTS.Type$WK)), _info_12389875345);
           }
         } else {
           {

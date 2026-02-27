@@ -28,7 +28,7 @@ public class typeof_FunctionStyleExecOp_InferenceRule extends AbstractInferenceR
       final SNode ct = typeCheckingContext.typeOf(SLinkOperations.getTarget(eo, LINKS.fun$JJ25), "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "6100571306011111840", true);
       typeCheckingContext.whenConcrete(ct, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ct), CONCEPTS.FunctionType$RQ)) {
-          SNode ft = SNodeOperations.cast(typeCheckingContext.getExpandedNode(ct), CONCEPTS.FunctionType$RQ);
+          SNode ft = SNodeOperations.as(typeCheckingContext.getExpandedNode(ct), CONCEPTS.FunctionType$RQ);
           int expectedSize = ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).count();
           int actualSize = ListSequence.fromList(SLinkOperations.getChildren(eo, LINKS.args$H1bw)).count();
           if (expectedSize == actualSize) {

@@ -29,7 +29,7 @@ public class check_ValExpression_NonTypesystemRule extends AbstractNonTypesystem
   }
   public void applyRule(final SNode ve, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     if ((SNodeOperations.getNodeAncestor(ve, CONCEPTS.IIgnoreTrivialErrorsContext$v_, false, false) == null)) {
-      SNode block = SNodeOperations.cast(SNodeOperations.getParent(ve), CONCEPTS.BlockExpression$cH);
+      SNode block = SNodeOperations.as(SNodeOperations.getParent(ve), CONCEPTS.BlockExpression$cH);
       boolean valueIsReferencedLocally = ListSequence.fromList(SLinkOperations.getChildren(block, LINKS.expressions$2$5d)).any((e) -> ListSequence.fromList(SNodeOperations.getNodeDescendants(e, CONCEPTS.ValRef$JF, true, new SAbstractConcept[]{})).any((it) -> SLinkOperations.getTarget(it, LINKS.val$pFD8) == ve));
       if (valueIsReferencedLocally) {
         return;
@@ -57,7 +57,7 @@ public class check_ValExpression_NonTypesystemRule extends AbstractNonTypesystem
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(value, "cannot assign value of type void", "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "5822875932052108827", null, errorTarget);
       }
     }
-    if (SNodeOperations.isInstanceOf(value, CONCEPTS.IMayHaveEffect$Gp) && IMayHaveEffect__BehaviorDescriptor.effectDescriptor_id6GySMNjjWfO.invoke(SNodeOperations.cast(value, CONCEPTS.IMayHaveEffect$Gp)).modifiesState()) {
+    if (SNodeOperations.isInstanceOf(value, CONCEPTS.IMayHaveEffect$Gp) && IMayHaveEffect__BehaviorDescriptor.effectDescriptor_id6GySMNjjWfO.invoke(SNodeOperations.as(value, CONCEPTS.IMayHaveEffect$Gp)).modifiesState()) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(value, "cannot assign expression that has a ‹modifies› effect", "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "5822875932045004808", null, errorTarget);

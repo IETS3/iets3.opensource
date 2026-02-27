@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.iets3.core.expr.base.runtime.runtime.IdentifierConfiguratorAccess;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -27,10 +26,8 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> nameWithEnum_id67Y8mp$HuPC = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("nameWithEnum").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7061117989423541608L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
   public static final SMethod<SNode> enumDecl_id67Y8mp$M9$v = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("enumDecl").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7061117989424765215L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowParagraph_id4ZH31cjGRan = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5759272774551171735L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nameWithEnum_id67Y8mp$HuPC, enumDecl_id67Y8mp$M9$v, allowUmlaute_id5YygIlbih$m, allowParagraph_id4ZH31cjGRan);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nameWithEnum_id67Y8mp$HuPC, enumDecl_id67Y8mp$M9$v);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -40,12 +37,6 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static SNode enumDecl_id67Y8mp$M9$v(@NotNull SNode __thisNode__) {
     return SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.EnumDeclaration$3b);
-  }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowUmlautsInIdentifiers(__thisConcept__);
-  }
-  /*package*/ static boolean allowParagraph_id4ZH31cjGRan(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowParagraphsInIdentifiers(__thisConcept__);
   }
 
   /*package*/ EnumLiteral__BehaviorDescriptor() {
@@ -79,10 +70,6 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
-      case 2:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
-      case 3:
-        return (T) ((Boolean) allowParagraph_id4ZH31cjGRan(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

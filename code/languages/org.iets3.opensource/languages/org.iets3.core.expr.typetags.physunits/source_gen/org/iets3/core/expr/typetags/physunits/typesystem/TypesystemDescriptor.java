@@ -240,11 +240,11 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myRuleNodeId = "3773364508684704209";
     }
     public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      SNode unitSpecification = SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(leftOperandType, CONCEPTS.TaggedType$O4), LINKS.tags$Lx_i)).first(), CONCEPTS.IUnitSpecification$yp);
-      SNode sqrtUnitSpecification = SNodeOperations.as(UnitConversionUtil.sqrt(IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(unitSpecification)), CONCEPTS.UnitSpecification$6j);
+      SNode unitSpec = SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(leftOperandType, CONCEPTS.TaggedType$O4), LINKS.tags$Lx_i)).first(), CONCEPTS.IUnitSpecification$yp);
+      SNode sqrtUnitSpec = SNodeOperations.as(UnitConversionUtil.sqrt(IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(unitSpec)), CONCEPTS.UnitSpecification$6j);
       SNode sqrtExpressionType = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType"));
       SLinkOperations.setTarget(sqrtExpressionType, LINKS.baseType$z6Mz, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e74cL, "org.iets3.core.expr.simpleTypes.structure.RealType")));
-      ListSequence.fromList(SLinkOperations.getChildren(sqrtExpressionType, LINKS.tags$Lx_i)).addElement(sqrtUnitSpecification);
+      ListSequence.fromList(SLinkOperations.getChildren(sqrtExpressionType, LINKS.tags$Lx_i)).addElement(sqrtUnitSpec);
       return sqrtExpressionType;
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
@@ -276,8 +276,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myRuleNodeId = "7396263120839122250";
     }
     public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      SNode unitSpecification = SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(leftOperandType, CONCEPTS.TaggedType$O4), LINKS.tags$Lx_i)).first(), CONCEPTS.IUnitSpecification$yp);
-      int power = Math.toIntExact((long) NumberType__BehaviorDescriptor.intRange_id3p6$WoEzHkL.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.NumberType$n))._1());
+      SNode unitSpecification = SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(leftOperandType, CONCEPTS.TaggedType$O4), LINKS.tags$Lx_i)).first(), CONCEPTS.IUnitSpecification$yp);
+      int power = Math.toIntExact((long) NumberType__BehaviorDescriptor.intRange_id3p6$WoEzHkL.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.NumberType$n))._1());
 
       SNode powUnitSpecification = SNodeOperations.as(UnitConversionUtil.pow(IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(unitSpecification), power), CONCEPTS.UnitSpecification$6j);
 
@@ -288,8 +288,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
 
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      Tuples._2<Long, Long> intRange = NumberType__BehaviorDescriptor.intRange_id3p6$WoEzHkL.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.NumberType$n));
-      boolean rangeIsValue = MathExpressionsOpRulesHelper.rangeIsValue(SNodeOperations.cast(rightOperandType, CONCEPTS.NumberType$n));
+      Tuples._2<Long, Long> intRange = NumberType__BehaviorDescriptor.intRange_id3p6$WoEzHkL.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.NumberType$n));
+      boolean rangeIsValue = MathExpressionsOpRulesHelper.rangeIsValue(SNodeOperations.as(rightOperandType, CONCEPTS.NumberType$n));
       if (rangeIsValue) {
         boolean isIntValue = MathExpressionsOpRulesHelper.isIntValue((long) intRange._0());
         boolean hasSingleUnitSpecificationTag = PhysUnitTypeHelper.hasSingleUnitSpecificationTag(leftOperandType);
@@ -323,13 +323,13 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myRuleNodeId = "8208891105595369331";
     }
     public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      SNode taggedType = SNodeOperations.cast(leftOperandType, CONCEPTS.TaggedType$O4);
+      SNode taggedType = SNodeOperations.as(leftOperandType, CONCEPTS.TaggedType$O4);
       SNode negatedBaseType = TypeChecker.getInstance().getRulesManager().getOperationType(operation, SLinkOperations.getTarget(taggedType, LINKS.baseType$z6Mz), rightOperandType);
       SNode negatedTagedType = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType"));
       ListSequence.fromList(SLinkOperations.getChildren(negatedTagedType, LINKS.tags$Lx_i)).addSequence(ListSequence.fromList(SLinkOperations.getChildren(taggedType, LINKS.tags$Lx_i)).select((it) -> SNodeOperations.copyNode(it)));
       if (SNodeOperations.isInstanceOf(negatedBaseType, CONCEPTS.Type$WK)) {
         // if the negated base type is not a type, the typesystem will issue an error later
-        SLinkOperations.setTarget(negatedTagedType, LINKS.baseType$z6Mz, SNodeOperations.cast(negatedBaseType, CONCEPTS.Type$WK));
+        SLinkOperations.setTarget(negatedTagedType, LINKS.baseType$z6Mz, SNodeOperations.as(negatedBaseType, CONCEPTS.Type$WK));
       }
       return negatedTagedType;
     }

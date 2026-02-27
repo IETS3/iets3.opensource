@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:e0544697-59c7-4559-b285-77a436064a3e(test.in.expr.os.lookuptable@tests)/1678583990202331474">
+    <file name="LookupTable_Test.java">
+      <node id="1678583990202331474" at="25,29,26,77" concept="5" />
+      <node id="1678583990202442359" at="30,73,31,64" concept="1" />
+      <node id="3635019920731448999" at="34,73,35,64" concept="1" />
+      <node id="3635019920731453363" at="38,73,39,64" concept="1" />
+      <node id="3635019920731453371" at="42,73,43,64" concept="1" />
+      <node id="3635019920731454697" at="46,73,47,64" concept="1" />
+      <node id="1678583990202442359" at="56,44,57,112" concept="3" />
+      <node id="1678583990202442359" at="57,112,58,39" concept="1" />
+      <node id="3635019920731448999" at="65,44,66,112" concept="3" />
+      <node id="3635019920731448999" at="66,112,67,39" concept="1" />
+      <node id="3635019920731453363" at="74,44,75,112" concept="3" />
+      <node id="3635019920731453363" at="75,112,76,39" concept="1" />
+      <node id="3635019920731453371" at="83,44,84,112" concept="3" />
+      <node id="3635019920731453371" at="84,112,85,39" concept="1" />
+      <node id="3635019920731454697" at="92,44,93,112" concept="3" />
+      <node id="3635019920731454697" at="93,112,94,39" concept="1" />
+      <node id="1678583990202331474" at="99,50,100,19" concept="5" />
+      <node id="1678583990202331474" at="105,0,106,0" concept="4" trace="AbstractTestItem$9u" />
+      <node id="1678583990202331474" at="22,0,24,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="1678583990202331474" at="25,0,28,0" concept="0" trace="LookupTable_Test#()V" />
+      <node id="1678583990202331474" at="99,0,102,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="1678583990202442359" at="29,0,33,0" concept="2" trace="simpleLookUp_item0_1678583990202442359#()V" />
+      <node id="3635019920731448999" at="33,0,37,0" concept="2" trace="simpleLookUp_item1_3635019920731448999#()V" />
+      <node id="3635019920731453363" at="37,0,41,0" concept="2" trace="simpleLookUp_item2_3635019920731453363#()V" />
+      <node id="3635019920731453371" at="41,0,45,0" concept="2" trace="simpleLookUp_item3_3635019920731453371#()V" />
+      <node id="3635019920731454697" at="45,0,49,0" concept="2" trace="simpleLookUp_item4_3635019920731454697#()V" />
+      <node id="1678583990202442359" at="55,0,60,0" concept="2" trace="run#()V" />
+      <node id="3635019920731448999" at="64,0,69,0" concept="2" trace="run#()V" />
+      <node id="3635019920731453363" at="73,0,78,0" concept="2" trace="run#()V" />
+      <node id="3635019920731453371" at="82,0,87,0" concept="2" trace="run#()V" />
+      <node id="3635019920731454697" at="91,0,96,0" concept="2" trace="run#()V" />
+      <node id="1678583990202442359" at="53,75,60,9" concept="1" />
+      <node id="3635019920731448999" at="62,75,69,9" concept="1" />
+      <node id="3635019920731453363" at="71,75,78,9" concept="1" />
+      <node id="3635019920731453371" at="80,75,87,9" concept="1" />
+      <node id="3635019920731454697" at="89,75,96,9" concept="1" />
+      <node id="1678583990202442359" at="53,0,62,0" concept="2" trace="simpleLookUp_item0_1678583990202442359#()V" />
+      <node id="3635019920731448999" at="62,0,71,0" concept="2" trace="simpleLookUp_item1_3635019920731448999#()V" />
+      <node id="3635019920731453363" at="71,0,80,0" concept="2" trace="simpleLookUp_item2_3635019920731453363#()V" />
+      <node id="3635019920731453371" at="80,0,89,0" concept="2" trace="simpleLookUp_item3_3635019920731453371#()V" />
+      <node id="3635019920731454697" at="89,0,98,0" concept="2" trace="simpleLookUp_item4_3635019920731454697#()V" />
+      <scope id="1678583990202331474" at="25,29,26,77" />
+      <scope id="1678583990202442359" at="30,73,31,64" />
+      <scope id="3635019920731448999" at="34,73,35,64" />
+      <scope id="3635019920731453363" at="38,73,39,64" />
+      <scope id="3635019920731453371" at="42,73,43,64" />
+      <scope id="3635019920731454697" at="46,73,47,64" />
+      <scope id="1678583990202331474" at="99,50,100,19" />
+      <scope id="1678583990202442359" at="56,44,58,39">
+        <var name="ti" id="1678583990202442359" />
+      </scope>
+      <scope id="3635019920731448999" at="65,44,67,39">
+        <var name="ti" id="3635019920731448999" />
+      </scope>
+      <scope id="3635019920731453363" at="74,44,76,39">
+        <var name="ti" id="3635019920731453363" />
+      </scope>
+      <scope id="3635019920731453371" at="83,44,85,39">
+        <var name="ti" id="3635019920731453371" />
+      </scope>
+      <scope id="3635019920731454697" at="92,44,94,39">
+        <var name="ti" id="3635019920731454697" />
+      </scope>
+      <scope id="1678583990202331474" at="25,0,28,0" />
+      <scope id="1678583990202331474" at="99,0,102,0">
+        <var name="owner" id="1678583990202331474" />
+      </scope>
+      <scope id="1678583990202442359" at="29,0,33,0" />
+      <scope id="3635019920731448999" at="33,0,37,0" />
+      <scope id="3635019920731453363" at="37,0,41,0" />
+      <scope id="3635019920731453371" at="41,0,45,0" />
+      <scope id="3635019920731454697" at="45,0,49,0" />
+      <scope id="1678583990202442359" at="55,0,60,0" />
+      <scope id="3635019920731448999" at="64,0,69,0" />
+      <scope id="3635019920731453363" at="73,0,78,0" />
+      <scope id="3635019920731453371" at="82,0,87,0" />
+      <scope id="3635019920731454697" at="91,0,96,0" />
+      <scope id="1678583990202442359" at="53,75,60,9" />
+      <scope id="3635019920731448999" at="62,75,69,9" />
+      <scope id="3635019920731453363" at="71,75,78,9" />
+      <scope id="3635019920731453371" at="80,75,87,9" />
+      <scope id="3635019920731454697" at="89,75,96,9" />
+      <scope id="1678583990202442359" at="53,0,62,0" />
+      <scope id="3635019920731448999" at="62,0,71,0" />
+      <scope id="3635019920731453363" at="71,0,80,0" />
+      <scope id="3635019920731453371" at="80,0,89,0" />
+      <scope id="3635019920731454697" at="89,0,98,0" />
+      <unit id="1678583990202331474" at="104,0,107,0" name="test.in.expr.os.lookuptable.LookupTable_Test$CONCEPTS" />
+      <unit id="1678583990202442359" at="54,27,60,7" name="test.in.expr.os.lookuptable.LookupTable_Test$TestBody$1" />
+      <unit id="3635019920731448999" at="63,27,69,7" name="test.in.expr.os.lookuptable.LookupTable_Test$TestBody$2" />
+      <unit id="3635019920731453363" at="72,27,78,7" name="test.in.expr.os.lookuptable.LookupTable_Test$TestBody$3" />
+      <unit id="3635019920731453371" at="81,27,87,7" name="test.in.expr.os.lookuptable.LookupTable_Test$TestBody$4" />
+      <unit id="3635019920731454697" at="90,27,96,7" name="test.in.expr.os.lookuptable.LookupTable_Test$TestBody$5" />
+      <unit id="1678583990202331474" at="51,0,103,0" name="test.in.expr.os.lookuptable.LookupTable_Test$TestBody" />
+      <unit id="1678583990202331474" at="19,0,108,0" name="test.in.expr.os.lookuptable.LookupTable_Test" />
+    </file>
+  </root>
+</debug-info>
+

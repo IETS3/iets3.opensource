@@ -28,7 +28,7 @@ public class check_WireConnector_NonTypesystemRule extends AbstractNonTypesystem
     SNode sourcePortType = SLinkOperations.getTarget(SLinkOperations.getTarget(wireConnector, LINKS.sourcePort$mT3n), LINKS.type$5Gl6);
     if ((busType != null) && (sourcePortType != null)) {
       if (SNodeOperations.isInstanceOf(sourcePortType, CONCEPTS.BusPortType$60)) {
-        if (!(Objects.equals(SNodeOperations.getConcept(SLinkOperations.getTarget(SNodeOperations.cast(sourcePortType, CONCEPTS.BusPortType$60), LINKS.busType$HmsX)), SNodeOperations.getConcept(busType)))) {
+        if (!(Objects.equals(SNodeOperations.getConcept(SLinkOperations.getTarget(SNodeOperations.as(sourcePortType, CONCEPTS.BusPortType$60), LINKS.busType$HmsX)), SNodeOperations.getConcept(busType)))) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
             IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(wireConnector, "Port of type " + SNodeOperations.present(sourcePortType) + " does not matches bus kind " + busType, "r:2e73c92d-b9d8-45c3-9223-4903d8d52eeb(org.iets3.components.hardware.typesystem)", "3445907953730016751", null, errorTarget);

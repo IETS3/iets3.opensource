@@ -254,7 +254,7 @@ public class FilterParams {
 
       // set default parameters to avoid null issues
       fp.setFilterRuntimeInformation(new FilterRunInformation());
-      fp.setRenamer(new Renamer());
+      fp.setRenamer(new DefaultRenamer());
       fp.setNodeMapper(new INodeMapper() {});
       fp.setCopyLogic(ICopyLogic.defaultCopyLogic());
       fp.setVarExprReplacer(null);

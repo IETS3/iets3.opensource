@@ -10,6 +10,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import java.util.Optional;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import java.util.List;
 import java.util.Arrays;
@@ -30,17 +31,21 @@ public final class UnitReference__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d4dc5L, "org.iets3.core.expr.typetags.physunits.structure.UnitReference");
 
   public static final SMethod<SNode> getReferencedNode_id6q45UTyu4YY = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getReferencedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7387055326538256318L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<Optional<SNode>> getUnit_idQWlYnY5DVv = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("getUnit").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(989762663436689119L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
   public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<SEnumerationLiteral> getScalingType_id7yw1DU95L3$ = new SMethodBuilder<SEnumerationLiteral>(new SJavaCompoundTypeImpl((Class<SEnumerationLiteral>) ((Class) Object.class))).name("getScalingType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8691954558799646948L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
   public static final SMethod<SNode> getReducedExpr_id7Mca05npOsl = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getReducedExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8974592143669020437L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferencedNode_id6q45UTyu4YY, getPresentation_idhEwIMiw, getScalingType_id7yw1DU95L3$, getReducedExpr_id7Mca05npOsl);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferencedNode_id6q45UTyu4YY, getUnit_idQWlYnY5DVv, getPresentation_idhEwIMiw, getScalingType_id7yw1DU95L3$, getReducedExpr_id7Mca05npOsl);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static SNode getReferencedNode_id6q45UTyu4YY(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.unit$nTeG);
+  }
+  /*package*/ static Optional<SNode> getUnit_idQWlYnY5DVv(@NotNull SNode __thisNode__) {
+    return Optional.of(SLinkOperations.getTarget(__thisNode__, LINKS.unit$nTeG));
   }
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -74,10 +79,12 @@ public final class UnitReference__BehaviorDescriptor extends BaseBHDescriptor {
       case 0:
         return (T) ((SNode) getReferencedNode_id6q45UTyu4YY(node));
       case 1:
-        return (T) ((String) getPresentation_idhEwIMiw(node));
+        return (T) ((Optional<SNode>) getUnit_idQWlYnY5DVv(node));
       case 2:
-        return (T) ((SEnumerationLiteral) getScalingType_id7yw1DU95L3$(node));
+        return (T) ((String) getPresentation_idhEwIMiw(node));
       case 3:
+        return (T) ((SEnumerationLiteral) getScalingType_id7yw1DU95L3$(node));
+      case 4:
         return (T) ((SNode) getReducedExpr_id7Mca05npOsl(node));
       default:
         throw new BHMethodNotFoundException(this, method);

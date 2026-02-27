@@ -24,7 +24,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IArtifactRef;
   private ConceptPresentation props_ICheckableTabularVarPoint;
   private ConceptPresentation props_IConditionVarPoint;
-  private ConceptPresentation props_IConfigListVarPoint;
   private ConceptPresentation props_IFeatureConfigContext;
   private ConceptPresentation props_IPreviewableArtifact;
   private ConceptPresentation props_ITabularVarPoint;
@@ -136,13 +135,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IConditionVarPoint = cpb.create();
         }
         return props_IConditionVarPoint;
-      case LanguageConceptSwitch.IConfigListVarPoint:
-        if (props_IConfigListVarPoint == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          props_IConfigListVarPoint = cpb.create();
-        }
-        return props_IConfigListVarPoint;
       case LanguageConceptSwitch.IFeatureConfigContext:
         if (props_IFeatureConfigContext == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

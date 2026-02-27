@@ -24,7 +24,7 @@ public class typeof_AsListOp_InferenceRule extends AbstractInferenceRule_Runtime
     {
       final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(asListOp), "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8872269265513219952", true);
       typeCheckingContext.whenConcrete(ctxType, () -> {
-        SNode baseType = SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
+        SNode baseType = SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
         {
           SNode _nodeToCheck_1029348928467 = asListOp;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "8872269265513221741", 0, null);

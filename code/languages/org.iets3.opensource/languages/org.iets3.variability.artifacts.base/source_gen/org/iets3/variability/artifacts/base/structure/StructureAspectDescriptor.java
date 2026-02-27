@@ -30,7 +30,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIArtifactRef = createDescriptorForIArtifactRef();
   /*package*/ final ConceptDescriptor myConceptICheckableTabularVarPoint = createDescriptorForICheckableTabularVarPoint();
   /*package*/ final ConceptDescriptor myConceptIConditionVarPoint = createDescriptorForIConditionVarPoint();
-  /*package*/ final ConceptDescriptor myConceptIConfigListVarPoint = createDescriptorForIConfigListVarPoint();
   /*package*/ final ConceptDescriptor myConceptIFeatureConfigContext = createDescriptorForIFeatureConfigContext();
   /*package*/ final ConceptDescriptor myConceptIPreviewableArtifact = createDescriptorForIPreviewableArtifact();
   /*package*/ final ConceptDescriptor myConceptITabularVarPoint = createDescriptorForITabularVarPoint();
@@ -62,7 +61,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAdhocVarPoint, myConceptArtifactInstanceContextSelector, myConceptArtifactRootFeatureRefExpr, myConceptExpressionWrapper, myConceptFeatureDecTab, myConceptFeatureDecTabContent, myConceptFeatureDecTabWrapper, myConceptFeatureModelConfigurationRefExpr, myConceptFeatureModelGlobalVariable, myConceptGlobalFeatureModelConfiguration, myConceptGlobalFeatureVariableRefExpr, myConceptIArtifactInstance, myConceptIArtifactRef, myConceptICheckableTabularVarPoint, myConceptIConditionVarPoint, myConceptIConfigListVarPoint, myConceptIFeatureConfigContext, myConceptIPreviewableArtifact, myConceptITabularVarPoint, myConceptIVariabilityAwareArtifact, myConceptIVariationPointBase);
+    return Arrays.asList(myConceptAdhocVarPoint, myConceptArtifactInstanceContextSelector, myConceptArtifactRootFeatureRefExpr, myConceptExpressionWrapper, myConceptFeatureDecTab, myConceptFeatureDecTabContent, myConceptFeatureDecTabWrapper, myConceptFeatureModelConfigurationRefExpr, myConceptFeatureModelGlobalVariable, myConceptGlobalFeatureModelConfiguration, myConceptGlobalFeatureVariableRefExpr, myConceptIArtifactInstance, myConceptIArtifactRef, myConceptICheckableTabularVarPoint, myConceptIConditionVarPoint, myConceptIFeatureConfigContext, myConceptIPreviewableArtifact, myConceptITabularVarPoint, myConceptIVariabilityAwareArtifact, myConceptIVariationPointBase);
   }
 
   @Override
@@ -99,8 +98,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptICheckableTabularVarPoint;
       case LanguageConceptSwitch.IConditionVarPoint:
         return myConceptIConditionVarPoint;
-      case LanguageConceptSwitch.IConfigListVarPoint:
-        return myConceptIConfigListVarPoint;
       case LanguageConceptSwitch.IFeatureConfigContext:
         return myConceptIFeatureConfigContext;
       case LanguageConceptSwitch.IPreviewableArtifact:
@@ -265,15 +262,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:0c5a6638-4b9e-40d6-919f-daab30de5e02(org.iets3.variability.artifacts.base.structure)/1046754514346632654");
     b.version(3);
     b.aggregate("featureExpr", 0x55275f0cc818c452L).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L).optional(true).ordered(true).multiple(false).origin("6135977525816902738").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForIConfigListVarPoint() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.artifacts.base", "IConfigListVarPoint", 0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x23e80284f237bef8L);
-    b.interface_();
-    b.parent(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x19503178dec840e6L);
-    b.origin("r:0c5a6638-4b9e-40d6-919f-daab30de5e02(org.iets3.variability.artifacts.base.structure)/2587320755947028216");
-    b.version(3);
-    b.aggregate("configRefs", 0x23e80284f237befbL).target(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x48cf645483c30387L).optional(true).ordered(true).multiple(true).origin("2587320755947028219").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIFeatureConfigContext() {

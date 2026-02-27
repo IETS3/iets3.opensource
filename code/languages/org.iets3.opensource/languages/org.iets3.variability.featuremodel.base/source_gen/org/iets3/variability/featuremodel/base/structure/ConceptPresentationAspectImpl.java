@@ -12,38 +12,25 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AbstractConstraint;
   private ConceptPresentation props_AbstractFeature;
   private ConceptPresentation props_AbstractFeatureAttribute;
-  private ConceptPresentation props_AbstractFeatureConfigurationContent_old;
-  private ConceptPresentation props_AbstractFeatureConfiguration_old;
   private ConceptPresentation props_AbstractFeatureExpression;
   private ConceptPresentation props_AttributeRefExpr;
   private ConceptPresentation props_Cardinality;
   private ConceptPresentation props_CardinalityDotTarget;
   private ConceptPresentation props_ConstraintGroup;
   private ConceptPresentation props_ConstraintGroupAnnotation;
-  private ConceptPresentation props_EmptyVariabilityContent_old;
   private ConceptPresentation props_EnforceSubfeatureDecisionAttribute;
   private ConceptPresentation props_ExpressionConstraint;
-  private ConceptPresentation props_ExtendedFeatureModelConfigurationRef_old;
   private ConceptPresentation props_FMActualParam;
-  private ConceptPresentation props_FMCInheritanceCheck_old;
-  private ConceptPresentation props_FMConfigActualParam_old;
   private ConceptPresentation props_FMIncludeRefExpr;
   private ConceptPresentation props_FMParam;
   private ConceptPresentation props_Feature;
   private ConceptPresentation props_FeatureAttribute;
-  private ConceptPresentation props_FeatureAttributeAssignment_old;
   private ConceptPresentation props_FeatureAttributeDotTarget;
-  private ConceptPresentation props_FeatureConfigurationErrorContent_old;
-  private ConceptPresentation props_FeatureConfiguration_old;
   private ConceptPresentation props_FeatureModel;
-  private ConceptPresentation props_FeatureModelConfigurationBase_old;
-  private ConceptPresentation props_FeatureModelConfigurationRef_old;
-  private ConceptPresentation props_FeatureModelConfiguration_old;
   private ConceptPresentation props_FeatureModelInclude;
   private ConceptPresentation props_FeatureRefExpr;
   private ConceptPresentation props_FeatureTreeNode;
   private ConceptPresentation props_FeatureType;
-  private ConceptPresentation props_FeatureWithCardinalityConfiguration_old;
   private ConceptPresentation props_FeatureWithCardinalityType;
   private ConceptPresentation props_GroupReference;
   private ConceptPresentation props_ICalculateHashForUpdateWarning;
@@ -59,9 +46,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IFeatureRefExpr;
   private ConceptPresentation props_IUsingParamContext;
   private ConceptPresentation props_IUsingParamRef;
-  private ConceptPresentation props_IVariabilityContainer_old;
-  private ConceptPresentation props_IVariabilityContent_old;
-  private ConceptPresentation props_InlineFeatureConfigurationContent_old;
   private ConceptPresentation props_IsCardinalityFeature;
   private ConceptPresentation props_IsCardinalityParent;
   private ConceptPresentation props_RootConstraintGrouping;
@@ -69,7 +53,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_UsingParamRefDotTarget;
   private ConceptPresentation props_UsingParamRefExpr;
   private ConceptPresentation props_UsingSection;
-  private ConceptPresentation props_VariabilityModelChunk_old;
 
   @Override
   @Nullable
@@ -94,24 +77,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AbstractFeatureAttribute = cpb.create();
         }
         return props_AbstractFeatureAttribute;
-      case LanguageConceptSwitch.AbstractFeatureConfigurationContent_old:
-        if (props_AbstractFeatureConfigurationContent_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          props_AbstractFeatureConfigurationContent_old = cpb.create();
-        }
-        return props_AbstractFeatureConfigurationContent_old;
-      case LanguageConceptSwitch.AbstractFeatureConfiguration_old:
-        if (props_AbstractFeatureConfiguration_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x302aa0c2ddab8940L);
-          cpb.deprecated(true);
-          cpb.deprecateProperty(0x5db06c237c250a89L, "selectionState_old");
-          cpb.deprecateAssociation(0x5cf5c0d0479ec91eL, "targetFeature_old");
-          cpb.deprecateAggregation(0x5cf5c0d0479f4bc8L, "content_old");
-          cpb.deprecateAggregation(0x2d78f20de080c887L, "doc_old");
-          props_AbstractFeatureConfiguration_old = cpb.create();
-        }
-        return props_AbstractFeatureConfiguration_old;
       case LanguageConceptSwitch.AbstractFeatureExpression:
         if (props_AbstractFeatureExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -154,14 +119,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ConstraintGroupAnnotation = cpb.create();
         }
         return props_ConstraintGroupAnnotation;
-      case LanguageConceptSwitch.EmptyVariabilityContent_old:
-        if (props_EmptyVariabilityContent_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          cpb.rawPresentation("EmptyVariabilityContent_old");
-          props_EmptyVariabilityContent_old = cpb.create();
-        }
-        return props_EmptyVariabilityContent_old;
       case LanguageConceptSwitch.EnforceSubfeatureDecisionAttribute:
         if (props_EnforceSubfeatureDecisionAttribute == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -176,15 +133,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ExpressionConstraint = cpb.create();
         }
         return props_ExpressionConstraint;
-      case LanguageConceptSwitch.ExtendedFeatureModelConfigurationRef_old:
-        if (props_ExtendedFeatureModelConfigurationRef_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x4617323a864bd036L);
-          cpb.deprecated(true);
-          cpb.deprecateAssociation(0x4617323a864bd049L, "config_old");
-          cpb.rawPresentation("ExtendedFeatureModelConfigurationRef_old");
-          props_ExtendedFeatureModelConfigurationRef_old = cpb.create();
-        }
-        return props_ExtendedFeatureModelConfigurationRef_old;
       case LanguageConceptSwitch.FMActualParam:
         if (props_FMActualParam == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -192,24 +140,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FMActualParam = cpb.create();
         }
         return props_FMActualParam;
-      case LanguageConceptSwitch.FMCInheritanceCheck_old:
-        if (props_FMCInheritanceCheck_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          cpb.rawPresentation("FMCInheritanceCheck_old");
-          props_FMCInheritanceCheck_old = cpb.create();
-        }
-        return props_FMCInheritanceCheck_old;
-      case LanguageConceptSwitch.FMConfigActualParam_old:
-        if (props_FMConfigActualParam_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7d6d839c2865b139L);
-          cpb.deprecated(true);
-          cpb.deprecateAssociation(0x7d6d839c2866af76L, "param_old");
-          cpb.deprecateAssociation(0x7d6d839c2866b1ceL, "config_old");
-          cpb.rawPresentation("FMConfigActualParam_old");
-          props_FMConfigActualParam_old = cpb.create();
-        }
-        return props_FMConfigActualParam_old;
       case LanguageConceptSwitch.FMIncludeRefExpr:
         if (props_FMIncludeRefExpr == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -239,18 +169,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FeatureAttribute = cpb.create();
         }
         return props_FeatureAttribute;
-      case LanguageConceptSwitch.FeatureAttributeAssignment_old:
-        if (props_FeatureAttributeAssignment_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x302aa0c2ddc5ae16L);
-          cpb.deprecated(true);
-          cpb.deprecateProperty(0x61c4008b744eccaaL, "inherited_old");
-          cpb.deprecateProperty(0x8efdbf587d82ad6L, "assignmentCause_old");
-          cpb.deprecateAssociation(0x302aa0c2ddca3d88L, "attribute_old");
-          cpb.deprecateAggregation(0x302aa0c2ddd1e2aaL, "value_old");
-          cpb.rawPresentation("FeatureAttributeAssignment_old");
-          props_FeatureAttributeAssignment_old = cpb.create();
-        }
-        return props_FeatureAttributeAssignment_old;
       case LanguageConceptSwitch.FeatureAttributeDotTarget:
         if (props_FeatureAttributeDotTarget == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -258,22 +176,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FeatureAttributeDotTarget = cpb.create();
         }
         return props_FeatureAttributeDotTarget;
-      case LanguageConceptSwitch.FeatureConfigurationErrorContent_old:
-        if (props_FeatureConfigurationErrorContent_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          cpb.rawPresentation("FeatureConfigurationErrorContent_old");
-          props_FeatureConfigurationErrorContent_old = cpb.create();
-        }
-        return props_FeatureConfigurationErrorContent_old;
-      case LanguageConceptSwitch.FeatureConfiguration_old:
-        if (props_FeatureConfiguration_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          cpb.rawPresentation("FeatureConfiguration_old");
-          props_FeatureConfiguration_old = cpb.create();
-        }
-        return props_FeatureConfiguration_old;
       case LanguageConceptSwitch.FeatureModel:
         if (props_FeatureModel == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -281,39 +183,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FeatureModel = cpb.create();
         }
         return props_FeatureModel;
-      case LanguageConceptSwitch.FeatureModelConfigurationBase_old:
-        if (props_FeatureModelConfigurationBase_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          cpb.rawPresentation("FeatureModelConfigurationBase_old");
-          props_FeatureModelConfigurationBase_old = cpb.create();
-        }
-        return props_FeatureModelConfigurationBase_old;
-      case LanguageConceptSwitch.FeatureModelConfigurationRef_old:
-        if (props_FeatureModelConfigurationRef_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479eed6aL);
-          cpb.deprecated(true);
-          cpb.deprecateAssociation(0x5cf5c0d0479eed6bL, "config_old");
-          cpb.rawPresentation("FeatureModelConfigurationRef_old");
-          props_FeatureModelConfigurationRef_old = cpb.create();
-        }
-        return props_FeatureModelConfigurationRef_old;
-      case LanguageConceptSwitch.FeatureModelConfiguration_old:
-        if (props_FeatureModelConfiguration_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec915L);
-          cpb.deprecated(true);
-          cpb.deprecateProperty(0x427f472315a4eeb9L, "complete_old");
-          cpb.deprecateProperty(0x427f472315eb4c34L, "initiallyChecked_old");
-          cpb.deprecateProperty(0x4789dda0139da333L, "hasSolverError_old");
-          cpb.deprecateProperty(0x5ea937a3d8527c5fL, "solverErrorMessage_old");
-          cpb.deprecateProperty(0x4617323a85e85324L, "abstract_old");
-          cpb.deprecateProperty(0x2f62f9db24bdbfcfL, "__adaptHash_old");
-          cpb.deprecateAggregation(0x4617323a864bd075L, "extendedFMC_old");
-          cpb.deprecateAggregation(0x7d6d839c2865b7a7L, "usedConfigs_old");
-          cpb.presentationByName();
-          props_FeatureModelConfiguration_old = cpb.create();
-        }
-        return props_FeatureModelConfiguration_old;
       case LanguageConceptSwitch.FeatureModelInclude:
         if (props_FeatureModelInclude == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -342,14 +211,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FeatureType = cpb.create();
         }
         return props_FeatureType;
-      case LanguageConceptSwitch.FeatureWithCardinalityConfiguration_old:
-        if (props_FeatureWithCardinalityConfiguration_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          cpb.rawPresentation("FeatureWithCardinalityConfiguration_old");
-          props_FeatureWithCardinalityConfiguration_old = cpb.create();
-        }
-        return props_FeatureWithCardinalityConfiguration_old;
       case LanguageConceptSwitch.FeatureWithCardinalityType:
         if (props_FeatureWithCardinalityType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -442,30 +303,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IUsingParamRef = cpb.create();
         }
         return props_IUsingParamRef;
-      case LanguageConceptSwitch.IVariabilityContainer_old:
-        if (props_IVariabilityContainer_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          props_IVariabilityContainer_old = cpb.create();
-        }
-        return props_IVariabilityContainer_old;
-      case LanguageConceptSwitch.IVariabilityContent_old:
-        if (props_IVariabilityContent_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          props_IVariabilityContent_old = cpb.create();
-        }
-        return props_IVariabilityContent_old;
-      case LanguageConceptSwitch.InlineFeatureConfigurationContent_old:
-        if (props_InlineFeatureConfigurationContent_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479f4bfcL);
-          cpb.deprecated(true);
-          cpb.deprecateAggregation(0x302aa0c2ddc5ae13L, "attributeAssignments_old");
-          cpb.deprecateAggregation(0x5cf5c0d0479ec91aL, "subfeatureConfigurations_old");
-          cpb.rawPresentation("inline configuration");
-          props_InlineFeatureConfigurationContent_old = cpb.create();
-        }
-        return props_InlineFeatureConfigurationContent_old;
       case LanguageConceptSwitch.IsCardinalityFeature:
         if (props_IsCardinalityFeature == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -516,17 +353,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_UsingSection = cpb.create();
         }
         return props_UsingSection;
-      case LanguageConceptSwitch.VariabilityModelChunk_old:
-        if (props_VariabilityModelChunk_old == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475146776L);
-          cpb.deprecated(true);
-          cpb.deprecateAggregation(0x375cadc475148439L, "contents_old");
-          cpb.deprecateAggregation(0x75dc4299bd8d757eL, "imports_old");
-          cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a5a0a06b0kc);
-          props_VariabilityModelChunk_old = cpb.create();
-        }
-        return props_VariabilityModelChunk_old;
     }
     return null;
   }
