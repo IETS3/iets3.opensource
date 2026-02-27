@@ -42,21 +42,21 @@ public class typeof_BinaryArithmeticExpression_InferenceRule extends AbstractInf
             SNode lt = typeCheckingContext.getExpandedNode(leftType);
             SNode rt = typeCheckingContext.getExpandedNode(rightType);
             if (SNodeOperations.isInstanceOf(lt, CONCEPTS.TemporalType$oH)) {
-              lt = SLinkOperations.getTarget(SNodeOperations.cast(lt, CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a);
+              lt = SLinkOperations.getTarget(SNodeOperations.as(lt, CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a);
               wasTemporal = true;
             }
             if (SNodeOperations.isInstanceOf(rt, CONCEPTS.TemporalType$oH)) {
-              rt = SLinkOperations.getTarget(SNodeOperations.cast(rt, CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a);
+              rt = SLinkOperations.getTarget(SNodeOperations.as(rt, CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a);
               wasTemporal = true;
             }
 
 
             if (SNodeOperations.isInstanceOf(lt, CONCEPTS.IInterpreterWrapperType$KD)) {
-              lt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.cast(lt, CONCEPTS.IInterpreterWrapperType$KD));
+              lt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.as(lt, CONCEPTS.IInterpreterWrapperType$KD));
               wasOption = true;
             }
             if (SNodeOperations.isInstanceOf(rt, CONCEPTS.IInterpreterWrapperType$KD)) {
-              rt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.cast(rt, CONCEPTS.IInterpreterWrapperType$KD));
+              rt = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.as(rt, CONCEPTS.IInterpreterWrapperType$KD));
               wasOption = true;
             }
 
@@ -66,13 +66,13 @@ public class typeof_BinaryArithmeticExpression_InferenceRule extends AbstractInf
                 {
                   SNode _nodeToCheck_1029348928467 = binaryArithmeticExpression;
                   EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "6380075495170422669", 0, null);
-                  typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "6380075495170422673", true), (SNode) createOptionType_5bojcj_a1a0c0a0a0n0b0a1a0a1a0b0a0c(SNodeOperations.cast(operationType, CONCEPTS.Type$WK)), _info_12389875345);
+                  typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "6380075495170422673", true), (SNode) createOptionType_5bojcj_a1a0c0a0a0n0b0a1a0a1a0b0a0c(SNodeOperations.as(operationType, CONCEPTS.Type$WK)), _info_12389875345);
                 }
               } else if (wasTemporal) {
                 {
                   SNode _nodeToCheck_1029348928467 = binaryArithmeticExpression;
                   EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "8402418312415183276", 0, null);
-                  typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "8402418312415183286", true), (SNode) createTemporalType_5bojcj_a1a0c0a0a0a31a1a0b0a0b0a1a0a2(SNodeOperations.cast(operationType, CONCEPTS.Type$WK)), _info_12389875345);
+                  typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "8402418312415183286", true), (SNode) createTemporalType_5bojcj_a1a0c0a0a0a31a1a0b0a0b0a1a0a2(SNodeOperations.as(operationType, CONCEPTS.Type$WK)), _info_12389875345);
                 }
               } else {
                 {

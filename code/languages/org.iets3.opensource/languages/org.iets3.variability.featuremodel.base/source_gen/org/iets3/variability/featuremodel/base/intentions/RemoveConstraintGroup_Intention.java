@@ -14,6 +14,7 @@ import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -52,7 +53,14 @@ public final class RemoveConstraintGroup_Intention extends AbstractIntentionDesc
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
+      // Remove the group annotation.
       SNodeOperations.deleteNode(new IAttributeDescriptor.NodeAttribute(CONCEPTS.ConstraintGroupAnnotation$IO).get(node));
+
+      // Reposition the constraint.
+      SNode parent = SNodeOperations.getParent(node);
+      SContainmentLink parentAggregation = SNodeOperations.getContainingLink(node);
+      SNodeOperations.deleteNode(node);
+      parent.addChild(parentAggregation, node);
     }
 
     @Override

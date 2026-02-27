@@ -26,7 +26,7 @@ public class typeof_SuccessExpression_InferenceRule extends AbstractInferenceRul
         {
           SNode _nodeToCheck_1029348928467 = se;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "5974679004769507388", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "5974679004769503973", true), (SNode) createSuccessType_10witd_a1a0c0a0b0a1a0a1(SNodeOperations.cast(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.Type$WK)), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "5974679004769503973", true), (SNode) createSuccessType_10witd_a1a0c0a0b0a1a0a1(SNodeOperations.as(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.Type$WK)), _info_12389875345);
         }
       }, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "5764023819379419768", false, false);
     }

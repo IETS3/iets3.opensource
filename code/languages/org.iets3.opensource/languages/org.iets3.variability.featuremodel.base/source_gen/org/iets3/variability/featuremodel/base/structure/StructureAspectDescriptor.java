@@ -12,45 +12,32 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
-import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAbstractConstraint = createDescriptorForAbstractConstraint();
   /*package*/ final ConceptDescriptor myConceptAbstractFeature = createDescriptorForAbstractFeature();
   /*package*/ final ConceptDescriptor myConceptAbstractFeatureAttribute = createDescriptorForAbstractFeatureAttribute();
-  /*package*/ final ConceptDescriptor myConceptAbstractFeatureConfigurationContent_old = createDescriptorForAbstractFeatureConfigurationContent_old();
-  /*package*/ final ConceptDescriptor myConceptAbstractFeatureConfiguration_old = createDescriptorForAbstractFeatureConfiguration_old();
   /*package*/ final ConceptDescriptor myConceptAbstractFeatureExpression = createDescriptorForAbstractFeatureExpression();
   /*package*/ final ConceptDescriptor myConceptAttributeRefExpr = createDescriptorForAttributeRefExpr();
   /*package*/ final ConceptDescriptor myConceptCardinality = createDescriptorForCardinality();
   /*package*/ final ConceptDescriptor myConceptCardinalityDotTarget = createDescriptorForCardinalityDotTarget();
   /*package*/ final ConceptDescriptor myConceptConstraintGroup = createDescriptorForConstraintGroup();
   /*package*/ final ConceptDescriptor myConceptConstraintGroupAnnotation = createDescriptorForConstraintGroupAnnotation();
-  /*package*/ final ConceptDescriptor myConceptEmptyVariabilityContent_old = createDescriptorForEmptyVariabilityContent_old();
   /*package*/ final ConceptDescriptor myConceptEnforceSubfeatureDecisionAttribute = createDescriptorForEnforceSubfeatureDecisionAttribute();
   /*package*/ final ConceptDescriptor myConceptExpressionConstraint = createDescriptorForExpressionConstraint();
-  /*package*/ final ConceptDescriptor myConceptExtendedFeatureModelConfigurationRef_old = createDescriptorForExtendedFeatureModelConfigurationRef_old();
   /*package*/ final ConceptDescriptor myConceptFMActualParam = createDescriptorForFMActualParam();
-  /*package*/ final ConceptDescriptor myConceptFMCInheritanceCheck_old = createDescriptorForFMCInheritanceCheck_old();
-  /*package*/ final ConceptDescriptor myConceptFMConfigActualParam_old = createDescriptorForFMConfigActualParam_old();
   /*package*/ final ConceptDescriptor myConceptFMIncludeRefExpr = createDescriptorForFMIncludeRefExpr();
   /*package*/ final ConceptDescriptor myConceptFMParam = createDescriptorForFMParam();
   /*package*/ final ConceptDescriptor myConceptFeature = createDescriptorForFeature();
   /*package*/ final ConceptDescriptor myConceptFeatureAttribute = createDescriptorForFeatureAttribute();
-  /*package*/ final ConceptDescriptor myConceptFeatureAttributeAssignment_old = createDescriptorForFeatureAttributeAssignment_old();
   /*package*/ final ConceptDescriptor myConceptFeatureAttributeDotTarget = createDescriptorForFeatureAttributeDotTarget();
-  /*package*/ final ConceptDescriptor myConceptFeatureConfigurationErrorContent_old = createDescriptorForFeatureConfigurationErrorContent_old();
-  /*package*/ final ConceptDescriptor myConceptFeatureConfiguration_old = createDescriptorForFeatureConfiguration_old();
   /*package*/ final ConceptDescriptor myConceptFeatureModel = createDescriptorForFeatureModel();
-  /*package*/ final ConceptDescriptor myConceptFeatureModelConfigurationBase_old = createDescriptorForFeatureModelConfigurationBase_old();
-  /*package*/ final ConceptDescriptor myConceptFeatureModelConfigurationRef_old = createDescriptorForFeatureModelConfigurationRef_old();
-  /*package*/ final ConceptDescriptor myConceptFeatureModelConfiguration_old = createDescriptorForFeatureModelConfiguration_old();
   /*package*/ final ConceptDescriptor myConceptFeatureModelInclude = createDescriptorForFeatureModelInclude();
   /*package*/ final ConceptDescriptor myConceptFeatureRefExpr = createDescriptorForFeatureRefExpr();
   /*package*/ final ConceptDescriptor myConceptFeatureTreeNode = createDescriptorForFeatureTreeNode();
   /*package*/ final ConceptDescriptor myConceptFeatureType = createDescriptorForFeatureType();
-  /*package*/ final ConceptDescriptor myConceptFeatureWithCardinalityConfiguration_old = createDescriptorForFeatureWithCardinalityConfiguration_old();
   /*package*/ final ConceptDescriptor myConceptFeatureWithCardinalityType = createDescriptorForFeatureWithCardinalityType();
   /*package*/ final ConceptDescriptor myConceptGroupReference = createDescriptorForGroupReference();
   /*package*/ final ConceptDescriptor myConceptICalculateHashForUpdateWarning = createDescriptorForICalculateHashForUpdateWarning();
@@ -66,9 +53,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIFeatureRefExpr = createDescriptorForIFeatureRefExpr();
   /*package*/ final ConceptDescriptor myConceptIUsingParamContext = createDescriptorForIUsingParamContext();
   /*package*/ final ConceptDescriptor myConceptIUsingParamRef = createDescriptorForIUsingParamRef();
-  /*package*/ final ConceptDescriptor myConceptIVariabilityContainer_old = createDescriptorForIVariabilityContainer_old();
-  /*package*/ final ConceptDescriptor myConceptIVariabilityContent_old = createDescriptorForIVariabilityContent_old();
-  /*package*/ final ConceptDescriptor myConceptInlineFeatureConfigurationContent_old = createDescriptorForInlineFeatureConfigurationContent_old();
   /*package*/ final ConceptDescriptor myConceptIsCardinalityFeature = createDescriptorForIsCardinalityFeature();
   /*package*/ final ConceptDescriptor myConceptIsCardinalityParent = createDescriptorForIsCardinalityParent();
   /*package*/ final ConceptDescriptor myConceptRootConstraintGrouping = createDescriptorForRootConstraintGrouping();
@@ -76,7 +60,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptUsingParamRefDotTarget = createDescriptorForUsingParamRefDotTarget();
   /*package*/ final ConceptDescriptor myConceptUsingParamRefExpr = createDescriptorForUsingParamRefExpr();
   /*package*/ final ConceptDescriptor myConceptUsingSection = createDescriptorForUsingSection();
-  /*package*/ final ConceptDescriptor myConceptVariabilityModelChunk_old = createDescriptorForVariabilityModelChunk_old();
   /*package*/ final EnumerationDescriptor myEnumerationDefaultCheckedState = new EnumerationDescriptor_DefaultCheckedState();
   /*package*/ final EnumerationDescriptor myEnumerationFeatureSelectionState = new EnumerationDescriptor_FeatureSelectionState();
   /*package*/ final EnumerationDescriptor myEnumerationSubFeatureRelationship = new EnumerationDescriptor_SubFeatureRelationship();
@@ -93,11 +76,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
     deps.extendedLanguage(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, "org.iets3.core.expr.base");
     deps.extendedLanguage(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, "org.iets3.core.expr.collections");
-    deps.extendedLanguage(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, "com.mbeddr.core.base");
-    deps.extendedLanguage(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, "org.iets3.analysis.base");
     deps.extendedLanguage(0x5fef253e34b0443dL, 0x80359a2928b716d3L, "com.mbeddr.mpsutil.editor.displayControl");
     deps.extendedLanguage(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, "org.iets3.core.base");
+    deps.extendedLanguage(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, "org.iets3.analysis.base");
     deps.extendedLanguage(0x9b66c5c938bf4315L, 0xa96f9f4e212c69cbL, "org.iets3.variability.base");
+    deps.extendedLanguage(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, "com.mbeddr.core.base");
     deps.extendedLanguage(0x71934284d7d145eeL, 0xa0548c072591085fL, "org.iets3.core.expr.toplevel");
     deps.aggregatedLanguage(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, "com.mbeddr.core.base");
     deps.aggregatedLanguage(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, "org.iets3.core.expr.base");
@@ -105,7 +88,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAbstractConstraint, myConceptAbstractFeature, myConceptAbstractFeatureAttribute, myConceptAbstractFeatureConfigurationContent_old, myConceptAbstractFeatureConfiguration_old, myConceptAbstractFeatureExpression, myConceptAttributeRefExpr, myConceptCardinality, myConceptCardinalityDotTarget, myConceptConstraintGroup, myConceptConstraintGroupAnnotation, myConceptEmptyVariabilityContent_old, myConceptEnforceSubfeatureDecisionAttribute, myConceptExpressionConstraint, myConceptExtendedFeatureModelConfigurationRef_old, myConceptFMActualParam, myConceptFMCInheritanceCheck_old, myConceptFMConfigActualParam_old, myConceptFMIncludeRefExpr, myConceptFMParam, myConceptFeature, myConceptFeatureAttribute, myConceptFeatureAttributeAssignment_old, myConceptFeatureAttributeDotTarget, myConceptFeatureConfigurationErrorContent_old, myConceptFeatureConfiguration_old, myConceptFeatureModel, myConceptFeatureModelConfigurationBase_old, myConceptFeatureModelConfigurationRef_old, myConceptFeatureModelConfiguration_old, myConceptFeatureModelInclude, myConceptFeatureRefExpr, myConceptFeatureTreeNode, myConceptFeatureType, myConceptFeatureWithCardinalityConfiguration_old, myConceptFeatureWithCardinalityType, myConceptGroupReference, myConceptICalculateHashForUpdateWarning, myConceptICanBeCheckStateInitalized, myConceptICanBeMandatoryOptional, myConceptICanHaveAttribute, myConceptICanHaveConstraint, myConceptICanHaveSubFeature, myConceptICanHaveSubFeatureRelation, myConceptIFeatureContext, myConceptIFeatureExtendable, myConceptIFeatureExtension, myConceptIFeatureRefExpr, myConceptIUsingParamContext, myConceptIUsingParamRef, myConceptIVariabilityContainer_old, myConceptIVariabilityContent_old, myConceptInlineFeatureConfigurationContent_old, myConceptIsCardinalityFeature, myConceptIsCardinalityParent, myConceptRootConstraintGrouping, myConceptSubFeatureDotTarget, myConceptUsingParamRefDotTarget, myConceptUsingParamRefExpr, myConceptUsingSection, myConceptVariabilityModelChunk_old);
+    return Arrays.asList(myConceptAbstractConstraint, myConceptAbstractFeature, myConceptAbstractFeatureAttribute, myConceptAbstractFeatureExpression, myConceptAttributeRefExpr, myConceptCardinality, myConceptCardinalityDotTarget, myConceptConstraintGroup, myConceptConstraintGroupAnnotation, myConceptEnforceSubfeatureDecisionAttribute, myConceptExpressionConstraint, myConceptFMActualParam, myConceptFMIncludeRefExpr, myConceptFMParam, myConceptFeature, myConceptFeatureAttribute, myConceptFeatureAttributeDotTarget, myConceptFeatureModel, myConceptFeatureModelInclude, myConceptFeatureRefExpr, myConceptFeatureTreeNode, myConceptFeatureType, myConceptFeatureWithCardinalityType, myConceptGroupReference, myConceptICalculateHashForUpdateWarning, myConceptICanBeCheckStateInitalized, myConceptICanBeMandatoryOptional, myConceptICanHaveAttribute, myConceptICanHaveConstraint, myConceptICanHaveSubFeature, myConceptICanHaveSubFeatureRelation, myConceptIFeatureContext, myConceptIFeatureExtendable, myConceptIFeatureExtension, myConceptIFeatureRefExpr, myConceptIUsingParamContext, myConceptIUsingParamRef, myConceptIsCardinalityFeature, myConceptIsCardinalityParent, myConceptRootConstraintGrouping, myConceptSubFeatureDotTarget, myConceptUsingParamRefDotTarget, myConceptUsingParamRefExpr, myConceptUsingSection);
   }
 
   @Override
@@ -118,10 +101,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAbstractFeature;
       case LanguageConceptSwitch.AbstractFeatureAttribute:
         return myConceptAbstractFeatureAttribute;
-      case LanguageConceptSwitch.AbstractFeatureConfigurationContent_old:
-        return myConceptAbstractFeatureConfigurationContent_old;
-      case LanguageConceptSwitch.AbstractFeatureConfiguration_old:
-        return myConceptAbstractFeatureConfiguration_old;
       case LanguageConceptSwitch.AbstractFeatureExpression:
         return myConceptAbstractFeatureExpression;
       case LanguageConceptSwitch.AttributeRefExpr:
@@ -134,20 +113,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptConstraintGroup;
       case LanguageConceptSwitch.ConstraintGroupAnnotation:
         return myConceptConstraintGroupAnnotation;
-      case LanguageConceptSwitch.EmptyVariabilityContent_old:
-        return myConceptEmptyVariabilityContent_old;
       case LanguageConceptSwitch.EnforceSubfeatureDecisionAttribute:
         return myConceptEnforceSubfeatureDecisionAttribute;
       case LanguageConceptSwitch.ExpressionConstraint:
         return myConceptExpressionConstraint;
-      case LanguageConceptSwitch.ExtendedFeatureModelConfigurationRef_old:
-        return myConceptExtendedFeatureModelConfigurationRef_old;
       case LanguageConceptSwitch.FMActualParam:
         return myConceptFMActualParam;
-      case LanguageConceptSwitch.FMCInheritanceCheck_old:
-        return myConceptFMCInheritanceCheck_old;
-      case LanguageConceptSwitch.FMConfigActualParam_old:
-        return myConceptFMConfigActualParam_old;
       case LanguageConceptSwitch.FMIncludeRefExpr:
         return myConceptFMIncludeRefExpr;
       case LanguageConceptSwitch.FMParam:
@@ -156,22 +127,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFeature;
       case LanguageConceptSwitch.FeatureAttribute:
         return myConceptFeatureAttribute;
-      case LanguageConceptSwitch.FeatureAttributeAssignment_old:
-        return myConceptFeatureAttributeAssignment_old;
       case LanguageConceptSwitch.FeatureAttributeDotTarget:
         return myConceptFeatureAttributeDotTarget;
-      case LanguageConceptSwitch.FeatureConfigurationErrorContent_old:
-        return myConceptFeatureConfigurationErrorContent_old;
-      case LanguageConceptSwitch.FeatureConfiguration_old:
-        return myConceptFeatureConfiguration_old;
       case LanguageConceptSwitch.FeatureModel:
         return myConceptFeatureModel;
-      case LanguageConceptSwitch.FeatureModelConfigurationBase_old:
-        return myConceptFeatureModelConfigurationBase_old;
-      case LanguageConceptSwitch.FeatureModelConfigurationRef_old:
-        return myConceptFeatureModelConfigurationRef_old;
-      case LanguageConceptSwitch.FeatureModelConfiguration_old:
-        return myConceptFeatureModelConfiguration_old;
       case LanguageConceptSwitch.FeatureModelInclude:
         return myConceptFeatureModelInclude;
       case LanguageConceptSwitch.FeatureRefExpr:
@@ -180,8 +139,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFeatureTreeNode;
       case LanguageConceptSwitch.FeatureType:
         return myConceptFeatureType;
-      case LanguageConceptSwitch.FeatureWithCardinalityConfiguration_old:
-        return myConceptFeatureWithCardinalityConfiguration_old;
       case LanguageConceptSwitch.FeatureWithCardinalityType:
         return myConceptFeatureWithCardinalityType;
       case LanguageConceptSwitch.GroupReference:
@@ -212,12 +169,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIUsingParamContext;
       case LanguageConceptSwitch.IUsingParamRef:
         return myConceptIUsingParamRef;
-      case LanguageConceptSwitch.IVariabilityContainer_old:
-        return myConceptIVariabilityContainer_old;
-      case LanguageConceptSwitch.IVariabilityContent_old:
-        return myConceptIVariabilityContent_old;
-      case LanguageConceptSwitch.InlineFeatureConfigurationContent_old:
-        return myConceptInlineFeatureConfigurationContent_old;
       case LanguageConceptSwitch.IsCardinalityFeature:
         return myConceptIsCardinalityFeature;
       case LanguageConceptSwitch.IsCardinalityParent:
@@ -232,8 +183,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptUsingParamRefExpr;
       case LanguageConceptSwitch.UsingSection:
         return myConceptUsingSection;
-      case LanguageConceptSwitch.VariabilityModelChunk_old:
-        return myConceptVariabilityModelChunk_old;
       default:
         return null;
     }
@@ -273,26 +222,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x32f64a31a179034L);
     b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/3954848276948882943");
     b.version(3);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForAbstractFeatureConfigurationContent_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "AbstractFeatureConfigurationContent_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec950L);
-    b.class_(false, true, false);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/6698472021570799952");
-    b.version(3);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForAbstractFeatureConfiguration_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "AbstractFeatureConfiguration_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x302aa0c2ddab8940L);
-    b.class_(false, true, false);
-    b.parent(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x302aa0c2dde3bc72L);
-    b.parent(0x5fef253e34b0443dL, 0x80359a2928b716d3L, 0x5136578b182923d9L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/3470763221645494592");
-    b.version(3);
-    b.property("selectionState_old", 0x5db06c237c250a89L).type(MetaIdFactory.dataTypeId(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5db06c237c250a73L)).origin("5939066662398655707").done();
-    b.associate("targetFeature_old", 0x5cf5c0d0479ec91eL).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L).optional(true).origin("6698472021570799902").done();
-    b.aggregate("content_old", 0x5cf5c0d0479f4bc8L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec950L).optional(true).ordered(true).multiple(false).origin("6698472021570833352").done();
-    b.aggregate("doc_old", 0x2d78f20de080c887L).target(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x743b6d0940760196L).optional(true).ordered(true).multiple(false).origin("3276634870327068807").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAbstractFeatureExpression() {
@@ -354,14 +283,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("groupRef", 0x6d20ecb3d7692a09L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6d20ecb3d769275cL).optional(false).ordered(true).multiple(false).origin("7863545206546180617").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForEmptyVariabilityContent_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "EmptyVariabilityContent_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47514d908L);
-    b.class_(false, false, false);
-    b.parent(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47514ce61L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/3989254429232912648");
-    b.version(3);
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForEnforceSubfeatureDecisionAttribute() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "EnforceSubfeatureDecisionAttribute", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x3191e32585697378L);
     b.class_(false, false, false);
@@ -383,14 +304,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("c");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForExtendedFeatureModelConfigurationRef_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "ExtendedFeatureModelConfigurationRef_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x4617323a864bd036L);
-    b.class_(false, false, false);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/5050560734061908022");
-    b.version(3);
-    b.associate("config_old", 0x4617323a864bd049L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec915L).optional(true).origin("5050560734061908041").done();
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForFMActualParam() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FMActualParam", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7d6d839c28c579b6L);
     b.class_(false, false, false);
@@ -398,24 +311,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.associate("param", 0x7d6d839c28c58576L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6b367b20f4b08715L).optional(false).origin("9038024733924623734").done();
     b.aggregate("rhs", 0x7d6d839c28c58be5L).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L).optional(false).ordered(true).multiple(false).origin("9038024733924625381").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForFMCInheritanceCheck_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FMCInheritanceCheck_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x32699b8ea1ed143bL);
-    b.class_(false, false, false);
-    // extends: jetbrains.mps.lang.core.structure.NodeAttribute
-    b.super_(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da54L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/3632605611355345979");
-    b.version(3);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForFMConfigActualParam_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FMConfigActualParam_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7d6d839c2865b139L);
-    b.class_(false, false, false);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/9038024733918343481");
-    b.version(3);
-    b.associate("param_old", 0x7d6d839c2866af76L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6b367b20f4b08715L).optional(true).origin("9038024733918408566").done();
-    b.associate("config_old", 0x7d6d839c2866b1ceL).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec915L).optional(true).origin("9038024733918409166").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFMIncludeRefExpr() {
@@ -471,17 +366,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("notPresentValue", 0xdef12c93b02c37eL).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L).optional(true).ordered(true).multiple(false).origin("1004041897414673278").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForFeatureAttributeAssignment_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FeatureAttributeAssignment_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x302aa0c2ddc5ae16L);
-    b.class_(false, false, false);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/3470763221647207958");
-    b.version(3);
-    b.property("inherited_old", 0x61c4008b744eccaaL).type(PrimitiveTypeId.BOOLEAN).origin("7044756316066073770").done();
-    b.property("assignmentCause_old", 0x8efdbf587d82ad6L).type(MetaIdFactory.dataTypeId(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x8efdbf586e37fb6L)).origin("643975119329831638").done();
-    b.associate("attribute_old", 0x302aa0c2ddca3d88L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x36e2718de01a95ffL).optional(true).origin("3470763221647506824").done();
-    b.aggregate("value_old", 0x302aa0c2ddd1e2aaL).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L).optional(true).ordered(true).multiple(false).origin("3470763221648007850").done();
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForFeatureAttributeDotTarget() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FeatureAttributeDotTarget", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd968aaaL);
     b.class_(false, false, false);
@@ -490,25 +374,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/8997672845439306410");
     b.version(3);
     b.associate("attribute", 0x7cde27c7fd968aabL).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x36e2718de01a95ffL).optional(false).origin("8997672845439306411").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForFeatureConfigurationErrorContent_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FeatureConfigurationErrorContent_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x34aae17cd64425dbL);
-    b.class_(false, false, false);
-    // extends: org.iets3.variability.featuremodel.base.structure.AbstractFeatureConfigurationContent_old
-    b.super_(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec950L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/3795093562300048859");
-    b.version(3);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForFeatureConfiguration_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FeatureConfiguration_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec91dL);
-    b.class_(false, false, false);
-    // extends: org.iets3.variability.featuremodel.base.structure.AbstractFeatureConfiguration_old
-    b.super_(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x302aa0c2ddab8940L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2f16f1b357e19f43L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/6698472021570799901");
-    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFeatureModel() {
@@ -532,47 +397,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("root", 0x375cadc47516a30cL).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6b3fb620c4f9ac90L).optional(false).ordered(true).multiple(false).origin("3989254429233029900").done();
     b.aggregate("constraints", 0x4c647e983b096ecdL).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd7eea4cL).optional(true).ordered(true).multiple(true).origin("5504663836844191437").done();
     b.aggregate("using", 0x7d6d839c2802989aL).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7d6d839c28028b46L).optional(true).ordered(true).multiple(false).origin("9038024733911849114").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForFeatureModelConfigurationBase_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FeatureModelConfigurationBase_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x2e34d227ff954d8bL);
-    b.class_(false, false, false);
-    // extends: org.iets3.variability.featuremodel.base.structure.AbstractFeatureConfigurationContent_old
-    b.super_(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec950L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/3329517093767171467");
-    b.version(3);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForFeatureModelConfigurationRef_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FeatureModelConfigurationRef_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479eed6aL);
-    b.class_(false, false, false);
-    // extends: org.iets3.variability.featuremodel.base.structure.AbstractFeatureConfigurationContent_old
-    b.super_(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec950L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/6698472021570809194");
-    b.version(3);
-    b.associate("config_old", 0x5cf5c0d0479eed6bL).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec915L).optional(true).origin("6698472021570809195").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForFeatureModelConfiguration_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FeatureModelConfiguration_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec915L);
-    b.class_(false, false, false);
-    // extends: org.iets3.variability.featuremodel.base.structure.AbstractFeatureConfiguration_old
-    b.super_(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x302aa0c2ddab8940L);
-    b.parent(0x9b66c5c938bf4315L, 0xa96f9f4e212c69cbL, 0x375cadc47514ce61L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.parent(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, 0x465448d4061f13d7L);
-    b.parent(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x3588b64556af2180L);
-    b.parent(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x2f62f9db248ccc64L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/6698472021570799893");
-    b.version(3);
-    b.property("complete_old", 0x427f472315a4eeb9L).type(PrimitiveTypeId.BOOLEAN).origin("4791626744558055097").done();
-    b.property("initiallyChecked_old", 0x427f472315eb4c34L).type(PrimitiveTypeId.BOOLEAN).origin("4791626744562666548").done();
-    b.property("hasSolverError_old", 0x4789dda0139da333L).type(PrimitiveTypeId.BOOLEAN).origin("5154894928095847219").done();
-    b.property("solverErrorMessage_old", 0x5ea937a3d8527c5fL).type(PrimitiveTypeId.STRING).origin("6821044287477808223").done();
-    b.property("abstract_old", 0x4617323a85e85324L).type(PrimitiveTypeId.BOOLEAN).origin("5050560734055387940").done();
-    b.property("__adaptHash_old", 0x2f62f9db24bdbfcfL).type(PrimitiveTypeId.INTEGER).origin("3414566187109826511").done();
-    b.aggregate("extendedFMC_old", 0x4617323a864bd075L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x4617323a864bd036L).optional(true).ordered(true).multiple(false).origin("5050560734061908085").done();
-    b.aggregate("usedConfigs_old", 0x7d6d839c2865b7a7L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7d6d839c2865b139L).optional(true).ordered(true).multiple(true).origin("9038024733918345127").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFeatureModelInclude() {
@@ -626,15 +450,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/8997672845438126018");
     b.version(3);
     b.associate("feature", 0x7cde27c7fd8487ccL).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L).optional(false).origin("8997672845438126028").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForFeatureWithCardinalityConfiguration_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "FeatureWithCardinalityConfiguration_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x55c09a0155d9c97cL);
-    b.class_(false, false, false);
-    // extends: org.iets3.variability.featuremodel.base.structure.FeatureConfiguration_old
-    b.super_(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec91dL);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/6179108019278301564");
-    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFeatureWithCardinalityType() {
@@ -748,34 +563,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForIVariabilityContainer_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "IVariabilityContainer_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x2094847e8426ce97L);
-    b.interface_();
-    b.parent(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, 0x7d9c37fa6680e334L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/2347646984684752535");
-    b.version(3);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForIVariabilityContent_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "IVariabilityContent_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47514ce61L);
-    b.interface_();
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/3989254429232909921");
-    b.version(3);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForInlineFeatureConfigurationContent_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "InlineFeatureConfigurationContent_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479f4bfcL);
-    b.class_(false, false, false);
-    // extends: org.iets3.variability.featuremodel.base.structure.AbstractFeatureConfigurationContent_old
-    b.super_(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec950L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/6698472021570833404");
-    b.version(3);
-    b.aggregate("attributeAssignments_old", 0x302aa0c2ddc5ae13L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x302aa0c2ddc5ae16L).optional(true).ordered(true).multiple(true).origin("3470763221647207955").done();
-    b.aggregate("subfeatureConfigurations_old", 0x5cf5c0d0479ec91aL).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5cf5c0d0479ec91dL).optional(true).ordered(true).multiple(true).origin("6698472021570799898").done();
-    b.alias("inline configuration");
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForIsCardinalityFeature() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "IsCardinalityFeature", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6e6241d25e91b2eL);
     b.class_(false, false, false);
@@ -852,18 +639,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/9038024733911845702");
     b.version(3);
     b.aggregate("params", 0x6b367b20f4b339d2L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6b367b20f4b08715L).optional(true).ordered(true).multiple(true).origin("7725497592275220946").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForVariabilityModelChunk_old() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.variability.featuremodel.base", "VariabilityModelChunk_old", 0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475146776L);
-    b.class_(false, false, true);
-    // extends: com.mbeddr.core.base.structure.Chunk
-    b.super_(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x6315bcc6effb4ea6L);
-    b.parent(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x2094847e8426ce97L);
-    b.origin("r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/3989254429232883574");
-    b.version(3);
-    b.aggregate("contents_old", 0x375cadc475148439L).target(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47514ce61L).optional(true).ordered(true).multiple(true).origin("3989254429232890937").done();
-    b.aggregate("imports_old", 0x75dc4299bd8d757eL).target(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xa5e2d2ae6f5954dL).optional(true).ordered(true).multiple(true).origin("8492736225391506814").done();
     return b.create();
   }
 }

@@ -77,8 +77,9 @@ public final class FeatureModel__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> remove_id4hLJNwY_IA1 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("remove").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4931933315236555137L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> containsCycle_id3eg222GEqlF = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsCycle").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3715478629009433963L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
   public static final SMethod<Iterable<SNode>> directDependencies_id6Gx9iNnB7_2 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("directDependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719492110815885634L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
+  public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, createSolverTask_id4pkidg67Lgb, getSolvableName_idWieAE6TWOo, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getIncludedFeatureModels_id4$KkN8iCYUq, getContextFeature_id30ECcbtSVMe, usingParams_idMYWxk17YoO, enumDeclarations_id4eA6KATu5ZO, defaultRelationChildren_id4eA6KATXKnM, orRelationChildren_id4eA6KAU38cU, xorRelationChildren_id4eA6KAU36NL, relationChildren_id4eA6KAU3cXl, runManually_id3R3AIvumrTm, showSubResults_id4MH81Y0VldB, addConstraint_id1GMgmu$nBJk, constraints_id1wX6IAeW7Y1, featureAttributesInConstraints_idZsB2gDAfu$, remove_id4hLJNwY_IA1, containsCycle_id3eg222GEqlF, directDependencies_id6Gx9iNnB7_2);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, createSolverTask_id4pkidg67Lgb, getSolvableName_idWieAE6TWOo, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getIncludedFeatureModels_id4$KkN8iCYUq, getContextFeature_id30ECcbtSVMe, usingParams_idMYWxk17YoO, enumDeclarations_id4eA6KATu5ZO, defaultRelationChildren_id4eA6KATXKnM, orRelationChildren_id4eA6KAU38cU, xorRelationChildren_id4eA6KAU36NL, relationChildren_id4eA6KAU3cXl, runManually_id3R3AIvumrTm, showSubResults_id4MH81Y0VldB, addConstraint_id1GMgmu$nBJk, constraints_id1wX6IAeW7Y1, featureAttributesInConstraints_idZsB2gDAfu$, remove_id4hLJNwY_IA1, containsCycle_id3eg222GEqlF, directDependencies_id6Gx9iNnB7_2, highlightWarning_id4358bbCIl2g);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -197,6 +198,9 @@ public final class FeatureModel__BehaviorDescriptor extends BaseBHDescriptor {
     ListSequence.fromList(dependencies).addSequence(Sequence.fromIterable(FeatureModel__BehaviorDescriptor.getIncludedFeatureModels_id4$KkN8iCYUq.invoke(__thisNode__)).select((it) -> (SNode) IVariabilityContent__BehaviorDescriptor.container_id3D4yX3IUbRd.invoke(it)));
     return ListSequence.fromList(dependencies).where(new NotNullWhereFilter()).distinct();
   }
+  /*package*/ static boolean highlightWarning_id4358bbCIl2g(@NotNull SNode __thisNode__) {
+    return true;
+  }
 
   /*package*/ FeatureModel__BehaviorDescriptor() {
   }
@@ -258,6 +262,8 @@ public final class FeatureModel__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((Boolean) containsCycle_id3eg222GEqlF(node));
       case 20:
         return (T) ((Iterable<SNode>) directDependencies_id6Gx9iNnB7_2(node));
+      case 21:
+        return (T) ((Boolean) highlightWarning_id4358bbCIl2g(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

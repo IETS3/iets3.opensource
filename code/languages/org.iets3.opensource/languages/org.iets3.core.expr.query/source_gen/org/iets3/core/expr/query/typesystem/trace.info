@@ -98,7 +98,7 @@
       <node id="3989687177019400936" at="26,5,27,212" concept="5" />
       <node id="6749162445851438149" at="30,11,31,70" concept="5" />
       <node id="6749162445851438149" at="31,70,32,287" concept="5" />
-      <node id="7554398283340686024" at="34,9,35,204" concept="5" />
+      <node id="7554398283340686024" at="34,9,35,202" concept="5" />
       <node id="7554398283340692797" at="36,9,37,48" concept="5" />
       <node id="7554398283340692797" at="37,48,38,206" concept="5" />
       <node id="7554398283340692797" at="38,206,39,255" concept="2" />
@@ -113,7 +113,7 @@
       <node id="6749162445851729723" at="47,0,50,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="6749162445851729723" at="50,0,53,0" concept="4" trace="overrides#()Z" />
       <node id="6749162445851438149" at="29,120,33,11" concept="0" />
-      <node id="7554398283340692797" at="35,204,40,9" concept="0" />
+      <node id="7554398283340692797" at="35,202,40,9" concept="0" />
       <node id="6749162445851429196" at="28,55,34,9" concept="3" />
       <node id="3989687177019400936" at="27,212,41,126" concept="2" />
       <node id="3989687177019400936" at="25,115,42,5" concept="0" />
@@ -166,8 +166,8 @@
     <file name="typeof_QueryTransform_InferenceRule.java">
       <node id="6749162445852271788" at="24,5,25,260" concept="5" />
       <node id="6749162445852451984" at="27,9,28,336" concept="5" />
-      <node id="6749162445852271802" at="29,62,30,211" concept="5" />
-      <node id="6749162445852299870" at="30,211,31,181" concept="2" />
+      <node id="6749162445852271802" at="29,62,30,209" concept="5" />
+      <node id="6749162445852299870" at="30,209,31,179" concept="2" />
       <node id="6749162445852452006" at="32,13,33,52" concept="5" />
       <node id="6749162445852452006" at="33,52,34,210" concept="5" />
       <node id="6749162445852452006" at="34,210,35,259" concept="2" />
@@ -185,7 +185,7 @@
       <node id="6749162445852271283" at="42,0,45,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="6749162445852271283" at="45,0,48,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="6749162445852271283" at="48,0,51,0" concept="4" trace="overrides#()Z" />
-      <node id="6749162445852452006" at="31,181,36,13" concept="0" />
+      <node id="6749162445852452006" at="31,179,36,13" concept="0" />
       <node id="6749162445852451984" at="28,336,37,130" concept="2" />
       <node id="6749162445852451984" at="26,55,38,9" concept="0" />
       <node id="6749162445852271788" at="25,260,39,126" concept="2" />
@@ -298,9 +298,9 @@
     </file>
     <file name="typeof_QueryGroup_InferenceRule.java">
       <node id="6749162445854132649" at="23,5,24,304" concept="5" />
-      <node id="6749162445854132651" at="26,9,27,336" concept="5" />
-      <node id="6749162445854132653" at="28,62,29,211" concept="5" />
-      <node id="6749162445854132661" at="29,211,30,181" concept="2" />
+      <node id="6749162445854132651" at="26,9,27,334" concept="5" />
+      <node id="6749162445854132653" at="28,62,29,209" concept="5" />
+      <node id="6749162445854132661" at="29,209,30,179" concept="2" />
       <node id="6749162445854132671" at="31,13,32,51" concept="5" />
       <node id="6749162445854132671" at="32,51,33,210" concept="5" />
       <node id="6749162445854132671" at="33,210,34,259" concept="2" />
@@ -320,8 +320,8 @@
       <node id="6749162445854129300" at="41,0,44,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="6749162445854129300" at="44,0,47,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="6749162445854129300" at="47,0,50,0" concept="4" trace="overrides#()Z" />
-      <node id="6749162445854132671" at="30,181,35,13" concept="0" />
-      <node id="6749162445854132651" at="27,336,36,130" concept="2" />
+      <node id="6749162445854132671" at="30,179,35,13" concept="0" />
+      <node id="6749162445854132651" at="27,334,36,130" concept="2" />
       <node id="6749162445854132651" at="25,55,37,9" concept="0" />
       <node id="6749162445854132649" at="24,304,38,126" concept="2" />
       <node id="6749162445854132649" at="22,114,39,5" concept="0" />

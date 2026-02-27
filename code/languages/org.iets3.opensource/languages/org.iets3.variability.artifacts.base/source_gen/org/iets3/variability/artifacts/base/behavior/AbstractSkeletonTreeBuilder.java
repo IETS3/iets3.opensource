@@ -10,11 +10,8 @@ import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import java.util.Optional;
 import java.util.List;
 import org.iets3.variability.artifacts.base.plugin.ArtifactHelper;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import org.jetbrains.mps.openapi.language.SInterfaceConcept;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public abstract class AbstractSkeletonTreeBuilder implements ISkeletonTreeBuilder {
   protected final SkelNodeMap skelnodeMap;
@@ -46,13 +43,16 @@ public abstract class AbstractSkeletonTreeBuilder implements ISkeletonTreeBuilde
   }
 
   protected Optional<SNode> varpointFor(SNode n) {
-    List<SNode> varPoints = Sequence.fromIterable(ArtifactHelper.getVariationPoints(n)).where((it) -> !(SNodeOperations.isInstanceOf(it, CONCEPTS.IConfigListVarPoint$l9))).toList();
+    List<SNode> varPoints = Sequence.fromIterable(ArtifactHelper.getVariationPoints(n)).toList();
     if (ListSequence.fromList(varPoints).count() > 1) {
       throw new RuntimeException("More than one variation point on one node is unsupported (node: " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(n) + ").");
     }
     return Optional.ofNullable(ListSequence.fromList(varPoints).first());
   }
 
+  protected SkeletonNode createSkeletonNodeVP(SNode n, SNode target, SNode varPoint, SkeletonNode parent, ArtifactPath path, boolean isInstance) {
+    return finish(target, path, parent, new SkeletonNode(n, varPoint, parent, path, isInstance));
+  }
 
   protected SkeletonNode createSkeletonNodeVP(SNode n, SNode target, SNode varPoint, SkeletonNode parent, ArtifactPath path) {
     return finish(target, path, parent, new SkeletonNode(n, varPoint, parent, path));
@@ -63,14 +63,13 @@ public abstract class AbstractSkeletonTreeBuilder implements ISkeletonTreeBuilde
   }
 
   private SkeletonNode finish(SNode n, ArtifactPath path, SkeletonNode parent, SkeletonNode newNode) {
-    skelnodeMap.put(n, path, newNode);
+    // Only segments which correspond to instances are necessary to find instances of 'targets'
+    ArtifactPath artifactPath = path.asInstanceOnlyPath();
+
+    skelnodeMap.put(n, artifactPath, newNode);
     if (parent != null) {
       ListSequence.fromList(parent.getChildren()).addElement(newNode);
     }
     return newNode;
-  }
-
-  private static final class CONCEPTS {
-    /*package*/ static final SInterfaceConcept IConfigListVarPoint$l9 = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x23e80284f237bef8L, "org.iets3.variability.artifacts.base.structure.IConfigListVarPoint");
   }
 }

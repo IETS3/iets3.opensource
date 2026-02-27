@@ -34,16 +34,16 @@ public class typeof_PathElement_InferenceRule extends AbstractInferenceRule_Runt
             {
               SNode _nodeToCheck_1029348928467 = pathElement;
               EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:7010ed35-a675-4b23-b299-e2e6344a71a0(org.iets3.core.expr.path.typesystem)", "369777186288942707", 0, null);
-              typeCheckingContext.createEquation((SNode) typeCheckingContext.getRepresentative(realMemberType_typevar_369777186288937648), (SNode) TOF.override(pathElement, SNodeOperations.cast(typeCheckingContext.getExpandedNode(memberType), CONCEPTS.Type$WK)), _info_12389875345);
+              typeCheckingContext.createEquation((SNode) typeCheckingContext.getRepresentative(realMemberType_typevar_369777186288937648), (SNode) TOF.override(pathElement, SNodeOperations.as(typeCheckingContext.getExpandedNode(memberType), CONCEPTS.Type$WK)), _info_12389875345);
             }
             if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS)) {
-              SNode resType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS));
+              SNode resType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS));
               if (SNodeOperations.isInstanceOf(typeCheckingContext.getRepresentative(realMemberType_typevar_369777186288937648), CONCEPTS.CollectionType$kS)) {
-                SLinkOperations.setTarget(resType, LINKS.baseType$5NOJ, CollectionType__BehaviorDescriptor.bottomType_id6LLGpXJ675K.invoke(SNodeOperations.cast(typeCheckingContext.getRepresentative(realMemberType_typevar_369777186288937648), CONCEPTS.CollectionType$kS)));
+                SLinkOperations.setTarget(resType, LINKS.baseType$5NOJ, CollectionType__BehaviorDescriptor.bottomType_id6LLGpXJ675K.invoke(SNodeOperations.as(typeCheckingContext.getRepresentative(realMemberType_typevar_369777186288937648), CONCEPTS.CollectionType$kS)));
               } else if (SNodeOperations.isInstanceOf(typeCheckingContext.getRepresentative(realMemberType_typevar_369777186288937648), CONCEPTS.OptionType$eU)) {
-                SLinkOperations.setTarget(resType, LINKS.baseType$5NOJ, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getRepresentative(realMemberType_typevar_369777186288937648), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a)));
+                SLinkOperations.setTarget(resType, LINKS.baseType$5NOJ, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getRepresentative(realMemberType_typevar_369777186288937648), CONCEPTS.OptionType$eU), LINKS.baseType$Cv_a)));
               } else {
-                SLinkOperations.setTarget(resType, LINKS.baseType$5NOJ, SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getRepresentative(realMemberType_typevar_369777186288937648)), CONCEPTS.Type$WK));
+                SLinkOperations.setTarget(resType, LINKS.baseType$5NOJ, SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getRepresentative(realMemberType_typevar_369777186288937648)), CONCEPTS.Type$WK));
               }
               {
                 SNode _nodeToCheck_1029348928467 = pathElement;

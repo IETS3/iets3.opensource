@@ -11,9 +11,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.expr.typetags.physunits.behavior.ConversionSpecifier__BehaviorDescriptor;
-import java.util.Map;
-import org.iets3.core.expr.typetags.physunits.behavior.NamedKeyWrapper;
-import org.iets3.core.expr.base.runtime.runtime.Fraction;
+import org.iets3.core.expr.typetags.physunits.behavior.UnitMap;
 import org.iets3.core.expr.typetags.physunits.behavior.UnitConversionUtil;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
@@ -39,20 +37,20 @@ public class check_ConversionSpecifier_NonTypesystemRule extends AbstractNonType
       SNode type = TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(specifier, LINKS.expression$BZ0p));
 
       if (SPropertyOperations.getBoolean(ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(specifier), PROPS.isEager$qBr0)) {
-        Map<NamedKeyWrapper, Fraction> expTypeSpec = UnitConversionUtil.getMap_Type(type);
-        Map<NamedKeyWrapper, Fraction> toTypeSpec = UnitConversionUtil.getMap_IUnit(SLinkOperations.getTarget(SLinkOperations.getTarget(ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(specifier), LINKS.targetUnit$cNlh), LINKS.unit$nTeG), 1);
+        UnitMap expTypeSpec = UnitConversionUtil.getMapForType(type);
+        UnitMap toTypeSpec = UnitConversionUtil.getMapForIUnit(SLinkOperations.getTarget(SLinkOperations.getTarget(ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(specifier), LINKS.targetUnit$cNlh), LINKS.unit$nTeG), 1);
 
-        if (!((boolean) UnitConversionUtil.matchingMappings(expTypeSpec, toTypeSpec)._0())) {
+        if (!(UnitMap.matching(expTypeSpec, toTypeSpec))) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
             IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(specifier, LINKS.expression$BZ0p), "the conversion expression's unit and the rule's target unit do not match", "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "2315408579356842760", null, errorTarget);
           }
         }
       } else {
-        SNode specification = SNodeOperations.as(UnitConversionUtil.getSpecification(type), CONCEPTS.UnitSpecification$6j);
+        SNode spec = SNodeOperations.as(UnitConversionUtil.getSpecification(type), CONCEPTS.UnitSpecification$6j);
 
-        boolean cond1 = specification != null && Sequence.fromIterable(SNodeOperations.ofConcept(UnitConversionUtil.extractUnitsFromMultiplication(SLinkOperations.getTarget(specification, LINKS.specification$d6YI)), CONCEPTS.UnitExponent$BW)).all((it) -> SLinkOperations.getTarget(it, LINKS.exponent$z83d) != null && (int) Exponent__BehaviorDescriptor.getNumerator_id3j3yk3guAC3.invoke(SLinkOperations.getTarget(it, LINKS.exponent$z83d)) == 0);
-        boolean cond2 = specification == null && SNodeOperations.isInstanceOf(type, CONCEPTS.Type$WK);
+        boolean cond1 = spec != null && Sequence.fromIterable(SNodeOperations.ofConcept(UnitConversionUtil.extractUnitsFromMultiplication(SLinkOperations.getTarget(spec, LINKS.specification$d6YI)), CONCEPTS.UnitExponent$BW)).all((it) -> SLinkOperations.getTarget(it, LINKS.exponent$z83d) != null && (int) Exponent__BehaviorDescriptor.getNumerator_id3j3yk3guAC3.invoke(SLinkOperations.getTarget(it, LINKS.exponent$z83d)) == 0);
+        boolean cond2 = spec == null && SNodeOperations.isInstanceOf(type, CONCEPTS.Type$WK);
 
         if (!(cond1 || cond2)) {
           {

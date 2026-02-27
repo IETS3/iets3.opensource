@@ -34,7 +34,7 @@ public class typeof_UnaryExpression_InferenceRule extends AbstractInferenceRule_
         boolean wasOption = false;
         SNode uet = typeCheckingContext.getExpandedNode(ue);
         if (SNodeOperations.isInstanceOf(uet, CONCEPTS.IInterpreterWrapperType$KD)) {
-          uet = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.cast(uet, CONCEPTS.IInterpreterWrapperType$KD));
+          uet = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.as(uet, CONCEPTS.IInterpreterWrapperType$KD));
           wasOption = true;
         }
 
@@ -44,7 +44,7 @@ public class typeof_UnaryExpression_InferenceRule extends AbstractInferenceRule_
             {
               SNode _nodeToCheck_1029348928467 = unaryExpression;
               EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "2911193379521355904", 0, null);
-              typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "2911193379521355914", true), (SNode) IInterpreterWrapperType__BehaviorDescriptor.reWrap_id6bG6MAG4Mv3.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ue), CONCEPTS.IInterpreterWrapperType$KD), operationType, SNodeOperations.cast(typeCheckingContext.getExpandedNode(ue), CONCEPTS.IInterpreterWrapperType$KD)), _info_12389875345);
+              typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "2911193379521355914", true), (SNode) IInterpreterWrapperType__BehaviorDescriptor.reWrap_id6bG6MAG4Mv3.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ue), CONCEPTS.IInterpreterWrapperType$KD), operationType, SNodeOperations.as(typeCheckingContext.getExpandedNode(ue), CONCEPTS.IInterpreterWrapperType$KD)), _info_12389875345);
             }
           } else {
             {

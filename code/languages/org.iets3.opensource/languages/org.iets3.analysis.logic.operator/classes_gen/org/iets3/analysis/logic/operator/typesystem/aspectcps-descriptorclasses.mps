@@ -200,7 +200,9 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1791,6 +1793,7 @@
                                           <node concept="2OqwBi" id="8j" role="37wK5m">
                                             <uo k="s:originTrace" v="n:374286788917014477" />
                                             <node concept="1PxgMI" id="8n" role="2Oq$k0">
+                                              <property role="1BlNFB" value="true" />
                                               <uo k="s:originTrace" v="n:374286788917013602" />
                                               <node concept="chp4Y" id="8p" role="3oSUPX">
                                                 <ref role="cht4Q" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />

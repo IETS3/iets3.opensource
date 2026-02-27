@@ -169,7 +169,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -430,6 +432,7 @@
                 <node concept="2OqwBi" id="4IV0h47Einb" role="3uHU7w">
                   <node concept="2OqwBi" id="4IV0h47Einc" role="2Oq$k0">
                     <node concept="1PxgMI" id="4IV0h47Eind" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
                       <node concept="chp4Y" id="4IV0h47Eine" role="3oSUPX">
                         <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
                       </node>
@@ -557,6 +560,7 @@
                   <node concept="2OqwBi" id="4IV0h48oSPV" role="3uHU7w">
                     <node concept="2OqwBi" id="4IV0h48oSPW" role="2Oq$k0">
                       <node concept="1PxgMI" id="4IV0h48oSPX" role="2Oq$k0">
+                        <property role="1BlNFB" value="true" />
                         <node concept="chp4Y" id="4IV0h48oTR3" role="3oSUPX">
                           <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
                         </node>
@@ -637,6 +641,7 @@
                     <node concept="2OqwBi" id="4IV0h48mfyU" role="3uHU7w">
                       <node concept="2OqwBi" id="4IV0h48mfyV" role="2Oq$k0">
                         <node concept="1PxgMI" id="4IV0h48mfyW" role="2Oq$k0">
+                          <property role="1BlNFB" value="true" />
                           <node concept="chp4Y" id="4IV0h48mfyX" role="3oSUPX">
                             <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
                           </node>

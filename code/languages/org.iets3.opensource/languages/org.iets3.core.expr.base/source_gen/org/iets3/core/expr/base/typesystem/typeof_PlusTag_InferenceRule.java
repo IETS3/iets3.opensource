@@ -22,7 +22,7 @@ public class typeof_PlusTag_InferenceRule extends AbstractInferenceRule_Runtime 
   public typeof_PlusTag_InferenceRule() {
   }
   public void applyRule(final SNode plusTag, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    SNode og = SNodeOperations.cast(SNodeOperations.getParent(plusTag), CONCEPTS.OperatorGroup$oQ);
+    SNode og = SNodeOperations.as(SNodeOperations.getParent(plusTag), CONCEPTS.OperatorGroup$oQ);
     TypingHelper.doWithListOfTypes(typeCheckingContext, SLinkOperations.getChildren(og, LINKS.expressions$rPr7), (List<SNode> types) -> {
       final SNode elementSupertype = PTF.computeSupertype(types, false, TypeChecker.getInstance().getSubtypingManager());
       {

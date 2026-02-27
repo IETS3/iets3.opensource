@@ -26,7 +26,7 @@ public class typeof_BoxExpression_InferenceRule extends AbstractInferenceRule_Ru
         {
           SNode _nodeToCheck_1029348928467 = be;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "4255172619710741571", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "4255172619710740643", true), (SNode) createBoxType_nyrusl_a1a0c0a0b0a1a0a1(SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(valueType)), CONCEPTS.Type$WK)), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "4255172619710740643", true), (SNode) createBoxType_nyrusl_a1a0c0a0b0a1a0a1(SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(valueType)), CONCEPTS.Type$WK)), _info_12389875345);
         }
       }, "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "4255172619710743147", false, false);
     }

@@ -31,7 +31,7 @@ public class typeof_GroupByOp_InferenceRule extends AbstractInferenceRule_Runtim
       final SNode predType = typeCheckingContext.typeOf(SLinkOperations.getTarget(groupByOp, LINKS.expr$CW3E), "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "7554398283340650019", true);
       typeCheckingContext.whenConcrete(predType, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ)) {
-          final SNode ft = SNodeOperations.cast(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ);
+          final SNode ft = SNodeOperations.as(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ);
           if (ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).count() != 1) {
             {
               final MessageTarget errorTarget = new NodeMessageTarget();
@@ -41,7 +41,7 @@ public class typeof_GroupByOp_InferenceRule extends AbstractInferenceRule_Runtim
             {
               final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(groupByOp), "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "3989687177019401721", true);
               typeCheckingContext.whenConcrete(ctxType, () -> {
-                SNode collType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS));
+                SNode collType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS));
                 if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(collType, LINKS.baseType$5NOJ), CONCEPTS.IRecordType$ka)) {
                   {
                     SNode _nodeToCheck_1029348928467 = groupByOp;
@@ -51,7 +51,7 @@ public class typeof_GroupByOp_InferenceRule extends AbstractInferenceRule_Runtim
                   SNode resType = SNodeOperations.copyNode(collType);
                   SNode gt = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x73194702f05f0debL, "org.iets3.core.expr.toplevel.structure.GroupType"));
                   SLinkOperations.setTarget(gt, LINKS.keyType$ih5B, SNodeOperations.copyNode(SLinkOperations.getTarget(ft, LINKS.returnType$nq7J)));
-                  SLinkOperations.setTarget(gt, LINKS.memberType$ihzD, SNodeOperations.cast(SLinkOperations.getTarget(collType, LINKS.baseType$5NOJ), CONCEPTS.IRecordType$ka));
+                  SLinkOperations.setTarget(gt, LINKS.memberType$ihzD, SNodeOperations.as(SLinkOperations.getTarget(collType, LINKS.baseType$5NOJ), CONCEPTS.IRecordType$ka));
                   SLinkOperations.setTarget(resType, LINKS.baseType$5NOJ, gt);
                   {
                     SNode _nodeToCheck_1029348928467 = groupByOp;

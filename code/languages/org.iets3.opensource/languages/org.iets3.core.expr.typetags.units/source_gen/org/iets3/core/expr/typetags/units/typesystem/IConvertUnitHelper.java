@@ -145,7 +145,7 @@ public class IConvertUnitHelper {
                     typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:bf3cd5a0-eefc-4fd9-b3a6-b57643c9d80c(org.iets3.core.expr.typetags.units.typesystem)", "8208891105592736049", true), (SNode) typeCheckingContext.getExpandedNode(specifierExpressionCopyType), _info_12389875345);
                   }
                 } else if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(specifierExpressionCopyType), CONCEPTS.Type$WK)) {
-                  SNode result = TaggedType__BehaviorDescriptor.create_id2JXkwhJbtfS.invoke(SNodeOperations.asSConcept(CONCEPTS.TaggedType$O4), SNodeOperations.cast(typeCheckingContext.getExpandedNode(specifierExpressionCopyType), CONCEPTS.Type$WK), targetUnitTag);
+                  SNode result = TaggedType__BehaviorDescriptor.create_id2JXkwhJbtfS.invoke(SNodeOperations.asSConcept(CONCEPTS.TaggedType$O4), SNodeOperations.as(typeCheckingContext.getExpandedNode(specifierExpressionCopyType), CONCEPTS.Type$WK), targetUnitTag);
                   {
                     SNode _nodeToCheck_1029348928467 = iConvertUnit;
                     EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:bf3cd5a0-eefc-4fd9-b3a6-b57643c9d80c(org.iets3.core.expr.typetags.units.typesystem)", "4240468146474225493", 0, null);
@@ -184,9 +184,9 @@ public class IConvertUnitHelper {
 
   private static SNode getBaseType(SNode type) {
     if (SNodeOperations.isInstanceOf(type, CONCEPTS.TaggedType$O4)) {
-      return SLinkOperations.getTarget(SNodeOperations.cast(type, CONCEPTS.TaggedType$O4), LINKS.baseType$z6Mz);
+      return SLinkOperations.getTarget(SNodeOperations.as(type, CONCEPTS.TaggedType$O4), LINKS.baseType$z6Mz);
     } else if (SNodeOperations.isInstanceOf(type, CONCEPTS.Type$WK)) {
-      return SNodeOperations.cast(type, CONCEPTS.Type$WK);
+      return SNodeOperations.as(type, CONCEPTS.Type$WK);
     }
     return null;
   }

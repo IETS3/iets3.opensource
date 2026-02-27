@@ -305,11 +305,11 @@ public class ArtifactInstancePreviewer {
     return data;
   }
 
-  private static ArtifactPath nodeInRecalculatedPath(SkeletonNode node) {
-    if (check_ifwv5z_a0a75(node.getPivot())) {
-      return node.getParent().getFullPath();
+  private static ArtifactPath nodeInRecalculatedPath(SkeletonNode skeletonNode) {
+    if (skeletonNode.isInstance()) {
+      return skeletonNode.getParent().getFullPath();
     } else {
-      return node.getFullPath();
+      return skeletonNode.getFullPath();
     }
   }
 
@@ -674,12 +674,6 @@ public class ArtifactInstancePreviewer {
       return checkedDotOperand.asInstancePath();
     }
     return null;
-  }
-  private static boolean check_ifwv5z_a0a75(SkeletonNode.PivotInfo checkedDotOperand) {
-    if (null != checkedDotOperand) {
-      return checkedDotOperand.isInstance();
-    }
-    return false;
   }
 
   private static final class PROPS {

@@ -210,7 +210,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -2656,6 +2658,7 @@
                               <uo k="s:originTrace" v="n:2870058499332076288" />
                             </node>
                             <node concept="1PxgMI" id="cF" role="2Oq$k0">
+                              <property role="1BlNFB" value="true" />
                               <uo k="s:originTrace" v="n:731163822148201636" />
                               <node concept="chp4Y" id="cG" role="3oSUPX">
                                 <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -4325,6 +4328,7 @@
                   <node concept="2OqwBi" id="l6" role="3uHU7B">
                     <uo k="s:originTrace" v="n:2870058499327945472" />
                     <node concept="1PxgMI" id="l7" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
                       <uo k="s:originTrace" v="n:2870058499327943051" />
                       <node concept="chp4Y" id="l9" role="3oSUPX">
                         <ref role="cht4Q" to="gx5r:4YhD5cZsmGJ" resolve="OutPort" />

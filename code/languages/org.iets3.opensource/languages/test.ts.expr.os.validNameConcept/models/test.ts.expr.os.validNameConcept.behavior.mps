@@ -58,9 +58,9 @@
       <node concept="3clFbS" id="6OMpQn6WwBt" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="6OMpQn6WyHq" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
+      <property role="TrG5h" value="overrideDefaultAllowUmlaute" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
       <node concept="3Tm1VV" id="6OMpQn6WyHr" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6WyHw" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6WyPv" role="3cqZAp">
@@ -69,12 +69,12 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6WyHx" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFw1lk" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6OMpQn6WyU9" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
+      <property role="TrG5h" value="overrideDefaultAllowParagraph" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4lqOn" resolve="overrideDefaultAllowParagraph" />
       <node concept="3Tm1VV" id="6OMpQn6WyUa" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6WyUf" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6WzeL" role="3cqZAp">
@@ -83,12 +83,12 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6WyUg" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFw1td" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6OMpQn6WyYQ" role="13h7CS">
-      <property role="TrG5h" value="allowApostrophe" />
+      <property role="TrG5h" value="overrideDefaultAllowApostrophe" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:6OMpQn6QxQe" resolve="allowApostrophe" />
+      <ref role="13i0hy" to="gdgh:5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
       <node concept="3Tm1VV" id="6OMpQn6WyYR" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6WyYW" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6WyZ1" role="3cqZAp">
@@ -97,7 +97,7 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6WyYX" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFxcB3" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6OMpQn6WzmH">
@@ -106,9 +106,9 @@
       <node concept="3clFbS" id="6OMpQn6WzmJ" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="6OMpQn6WzmS" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
+      <property role="TrG5h" value="overrideDefaultAllowUmlaute" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
       <node concept="3Tm1VV" id="6OMpQn6WzmT" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6WzmY" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6WzN_" role="3cqZAp">
@@ -117,12 +117,12 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6WzmZ" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFw0r0" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6OMpQn6WzuM" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
+      <property role="TrG5h" value="overrideDefaultAllowParagraph" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4lqOn" resolve="overrideDefaultAllowParagraph" />
       <node concept="3Tm1VV" id="6OMpQn6WzuN" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6WzuS" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6WzuX" role="3cqZAp">
@@ -131,12 +131,12 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6WzuT" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFw1c3" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6OMpQn6WzAJ" role="13h7CS">
-      <property role="TrG5h" value="allowApostrophe" />
+      <property role="TrG5h" value="overrideDefaultAllowApostrophe" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:6OMpQn6QxQe" resolve="allowApostrophe" />
+      <ref role="13i0hy" to="gdgh:5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
       <node concept="3Tm1VV" id="6OMpQn6WzAK" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6WzAP" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6WzFw" role="3cqZAp">
@@ -152,9 +152,9 @@
       <node concept="3clFbS" id="6OMpQn6WzNU" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="6OMpQn6W$1X" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
+      <property role="TrG5h" value="overrideDefaultAllowUmlaute" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
       <node concept="3Tm1VV" id="6OMpQn6W$1Y" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6W$23" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6W$ae" role="3cqZAp">
@@ -163,24 +163,12 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6W$24" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="6OMpQn6WzO3" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
-      <node concept="3Tm1VV" id="6OMpQn6WzO4" role="1B3o_S" />
-      <node concept="3clFbS" id="6OMpQn6WzO9" role="3clF47">
-        <node concept="3clFbF" id="6OMpQn6WzW8" role="3cqZAp">
-          <node concept="3clFbT" id="6OMpQn6WzW7" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="6OMpQn6WzOa" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFw0dZ" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6OMpQn6WzWr" role="13h7CS">
-      <property role="TrG5h" value="allowApostrophe" />
+      <property role="TrG5h" value="overrideDefaultAllowApostrophe" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:6OMpQn6QxQe" resolve="allowApostrophe" />
+      <ref role="13i0hy" to="gdgh:5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
       <node concept="3Tm1VV" id="6OMpQn6WzWs" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6WzWx" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6W$12" role="3cqZAp">
@@ -189,7 +177,7 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6WzWy" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFxcmp" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6OMpQn6W$e6">
@@ -198,9 +186,9 @@
       <node concept="3clFbS" id="6OMpQn6W$e8" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="6OMpQn6W$eh" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
+      <property role="TrG5h" value="overrideDefaultAllowUmlaute" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
       <node concept="3Tm1VV" id="6OMpQn6W$ei" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6W$en" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6W$iL" role="3cqZAp">
@@ -209,31 +197,19 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6W$eo" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="6OMpQn6W$mD" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
-      <node concept="3Tm1VV" id="6OMpQn6W$mE" role="1B3o_S" />
-      <node concept="3clFbS" id="6OMpQn6W$mJ" role="3clF47">
-        <node concept="3clFbF" id="6OMpQn6W$r2" role="3cqZAp">
-          <node concept="3clFbT" id="6OMpQn6W$r1" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="6OMpQn6W$mK" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFvZVm" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6OMpQn6W$rl" role="13h7CS">
-      <property role="TrG5h" value="allowApostrophe" />
+      <property role="TrG5h" value="overrideDefaultAllowApostrophe" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:6OMpQn6QxQe" resolve="allowApostrophe" />
+      <ref role="13i0hy" to="gdgh:5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
       <node concept="3Tm1VV" id="6OMpQn6W$rm" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6W$rr" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6W$vZ" role="3cqZAp">
           <node concept="3clFbT" id="6OMpQn6W$vY" role="3clFbG" />
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6W$rs" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFxc9K" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6OMpQn6W$YK">
@@ -241,41 +217,17 @@
     <node concept="13hLZK" id="6OMpQn6W$YL" role="13h7CW">
       <node concept="3clFbS" id="6OMpQn6W$YM" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="6OMpQn6W$YV" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
-      <node concept="3Tm1VV" id="6OMpQn6W$YW" role="1B3o_S" />
-      <node concept="3clFbS" id="6OMpQn6W$Z1" role="3clF47">
-        <node concept="3clFbF" id="6OMpQn6W_70" role="3cqZAp">
-          <node concept="3clFbT" id="6OMpQn6W_6Z" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="6OMpQn6W$Z2" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="6OMpQn6W_7j" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
-      <node concept="3Tm1VV" id="6OMpQn6W_7k" role="1B3o_S" />
-      <node concept="3clFbS" id="6OMpQn6W_7p" role="3clF47">
-        <node concept="3clFbF" id="6OMpQn6W_fp" role="3cqZAp">
-          <node concept="3clFbT" id="6OMpQn6W_fo" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="6OMpQn6W_7q" role="3clF45" />
-    </node>
     <node concept="13i0hz" id="6OMpQn6W_fG" role="13h7CS">
-      <property role="TrG5h" value="allowApostrophe" />
+      <property role="TrG5h" value="overrideDefaultAllowApostrophe" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:6OMpQn6QxQe" resolve="allowApostrophe" />
+      <ref role="13i0hy" to="gdgh:5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
       <node concept="3Tm1VV" id="6OMpQn6W_fH" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6W_fM" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6W_nP" role="3cqZAp">
           <node concept="3clFbT" id="6OMpQn6W_nO" role="3clFbG" />
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6W_fN" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFxbEW" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6OMpQn6W_o8">
@@ -283,34 +235,10 @@
     <node concept="13hLZK" id="6OMpQn6W_o9" role="13h7CW">
       <node concept="3clFbS" id="6OMpQn6W_oa" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="6OMpQn6W_oj" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
-      <node concept="3Tm1VV" id="6OMpQn6W_ok" role="1B3o_S" />
-      <node concept="3clFbS" id="6OMpQn6W_op" role="3clF47">
-        <node concept="3clFbF" id="6OMpQn6W_sT" role="3cqZAp">
-          <node concept="3clFbT" id="6OMpQn6W_sS" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="6OMpQn6W_oq" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="6OMpQn6W_wL" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
-      <node concept="3Tm1VV" id="6OMpQn6W_wM" role="1B3o_S" />
-      <node concept="3clFbS" id="6OMpQn6W_wR" role="3clF47">
-        <node concept="3clFbF" id="6OMpQn6W_CR" role="3cqZAp">
-          <node concept="3clFbT" id="6OMpQn6W_CQ" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="6OMpQn6W_wS" role="3clF45" />
-    </node>
     <node concept="13i0hz" id="6OMpQn6W_GJ" role="13h7CS">
-      <property role="TrG5h" value="allowApostrophe" />
+      <property role="TrG5h" value="overrideDefaultAllowApostrophe" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:6OMpQn6QxQe" resolve="allowApostrophe" />
+      <ref role="13i0hy" to="gdgh:5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
       <node concept="3Tm1VV" id="6OMpQn6W_GK" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6W_GP" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6W_P0" role="3cqZAp">
@@ -319,7 +247,7 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6W_GQ" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFxbKX" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6OMpQn6W_Pj">
@@ -327,22 +255,10 @@
     <node concept="13hLZK" id="6OMpQn6W_Pk" role="13h7CW">
       <node concept="3clFbS" id="6OMpQn6W_Pl" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="6OMpQn6W_Pu" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
-      <node concept="3Tm1VV" id="6OMpQn6W_Pv" role="1B3o_S" />
-      <node concept="3clFbS" id="6OMpQn6W_P$" role="3clF47">
-        <node concept="3clFbF" id="6OMpQn6W_Xz" role="3cqZAp">
-          <node concept="3clFbT" id="6OMpQn6W_Xy" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="6OMpQn6W_P_" role="3clF45" />
-    </node>
     <node concept="13i0hz" id="6OMpQn6W_Yq" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
+      <property role="TrG5h" value="overrideDefaultAllowParagraph" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4lqOn" resolve="overrideDefaultAllowParagraph" />
       <node concept="3Tm1VV" id="6OMpQn6W_Yr" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6W_Yw" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6WA31" role="3cqZAp">
@@ -351,19 +267,19 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6W_Yx" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFvYVU" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6OMpQn6WA6T" role="13h7CS">
-      <property role="TrG5h" value="allowApostrophe" />
+      <property role="TrG5h" value="overrideDefaultAllowApostrophe" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:6OMpQn6QxQe" resolve="allowApostrophe" />
+      <ref role="13i0hy" to="gdgh:5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
       <node concept="3Tm1VV" id="6OMpQn6WA6U" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6WA6Z" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6WAfa" role="3cqZAp">
           <node concept="3clFbT" id="6OMpQn6WAf9" role="3clFbG" />
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6WA70" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFxbTQ" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6OMpQn6WAft">
@@ -371,22 +287,10 @@
     <node concept="13hLZK" id="6OMpQn6WAfu" role="13h7CW">
       <node concept="3clFbS" id="6OMpQn6WAfv" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="6OMpQn6WAfC" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
-      <node concept="3Tm1VV" id="6OMpQn6WAfD" role="1B3o_S" />
-      <node concept="3clFbS" id="6OMpQn6WAfI" role="3clF47">
-        <node concept="3clFbF" id="6OMpQn6WAk8" role="3cqZAp">
-          <node concept="3clFbT" id="6OMpQn6WAk7" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="10P_77" id="6OMpQn6WAfJ" role="3clF45" />
-    </node>
     <node concept="13i0hz" id="6OMpQn6WAo0" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
+      <property role="TrG5h" value="overrideDefaultAllowParagraph" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <ref role="13i0hy" to="gdgh:5D8v3P4lqOn" resolve="overrideDefaultAllowParagraph" />
       <node concept="3Tm1VV" id="6OMpQn6WAo1" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6WAo6" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6WAsu" role="3cqZAp">
@@ -395,12 +299,12 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6WAo7" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFvZIl" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6OMpQn6WAsL" role="13h7CS">
-      <property role="TrG5h" value="allowApostrophe" />
+      <property role="TrG5h" value="overrideDefaultAllowApostrophe" />
       <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:6OMpQn6QxQe" resolve="allowApostrophe" />
+      <ref role="13i0hy" to="gdgh:5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
       <node concept="3Tm1VV" id="6OMpQn6WAsM" role="1B3o_S" />
       <node concept="3clFbS" id="6OMpQn6WAsR" role="3clF47">
         <node concept="3clFbF" id="6OMpQn6WAxu" role="3cqZAp">
@@ -409,7 +313,7 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="6OMpQn6WAsS" role="3clF45" />
+      <node concept="10P_77" id="5TO$xcFxc2J" role="3clF45" />
     </node>
   </node>
 </model>

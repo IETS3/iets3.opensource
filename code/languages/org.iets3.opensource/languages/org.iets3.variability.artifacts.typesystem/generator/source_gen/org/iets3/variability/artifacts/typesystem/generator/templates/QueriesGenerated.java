@@ -71,7 +71,7 @@ public class QueriesGenerated extends QueryProviderBase {
   }
   public static Object referenceMacro_GetReferent_1_0(final ReferenceMacroContext _context) {
     SNode rule = SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.NonTypesystemRule$um, false, false);
-    return SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(rule, LINKS.applicableNode$Ro4C), CONCEPTS.ConceptReference$14), LINKS.concept$zIbV);
+    return SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(rule, LINKS.applicableNode$Ro4C), CONCEPTS.ConceptReference$14), LINKS.concept$zIbV);
   }
   public static SNode sourceNodeQuery_1_0(final SourceSubstituteMacroNodeContext _context) {
     SNode rule = SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.NonTypesystemRule$um, false, false);

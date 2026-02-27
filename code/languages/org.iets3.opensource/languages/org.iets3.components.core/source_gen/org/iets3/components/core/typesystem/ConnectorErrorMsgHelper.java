@@ -17,11 +17,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public class ConnectorErrorMsgHelper {
   public static String getConnectorErrMsg(SNode left, SNode right) {
     if (SNodeOperations.isInstanceOf(left, CONCEPTS.ConfiguredPortType$_r) && SNodeOperations.isInstanceOf(right, CONCEPTS.ConfiguredPortType$_r)) {
-      SNode leftConfigType = SLinkOperations.getTarget(SNodeOperations.cast(left, CONCEPTS.ConfiguredPortType$_r), LINKS.configurationType$gl1t);
-      SNode rightConfigType = SLinkOperations.getTarget(SNodeOperations.cast(right, CONCEPTS.ConfiguredPortType$_r), LINKS.configurationType$gl1t);
+      SNode leftConfigType = SLinkOperations.getTarget(SNodeOperations.as(left, CONCEPTS.ConfiguredPortType$_r), LINKS.configurationType$gl1t);
+      SNode rightConfigType = SLinkOperations.getTarget(SNodeOperations.as(right, CONCEPTS.ConfiguredPortType$_r), LINKS.configurationType$gl1t);
       if (Objects.equals(SNodeOperations.getConcept(leftConfigType), SNodeOperations.getConcept(rightConfigType))) {
         if (SNodeOperations.isInstanceOf(leftConfigType, CONCEPTS.RecordType$z_) && SNodeOperations.isInstanceOf(rightConfigType, CONCEPTS.RecordType$z_)) {
-          return "record used for configurations isn't compatible. Left: " + SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(leftConfigType, CONCEPTS.RecordType$z_), LINKS.record$jEA7), PROPS.name$MnvL) + " Right: " + SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(rightConfigType, CONCEPTS.RecordType$z_), LINKS.record$jEA7), PROPS.name$MnvL);
+          return "record used for configurations isn't compatible. Left: " + SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.as(leftConfigType, CONCEPTS.RecordType$z_), LINKS.record$jEA7), PROPS.name$MnvL) + " Right: " + SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.as(rightConfigType, CONCEPTS.RecordType$z_), LINKS.record$jEA7), PROPS.name$MnvL);
         }
       }
       return BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(leftConfigType) + " is incompatible with " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(rightConfigType);

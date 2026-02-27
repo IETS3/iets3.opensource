@@ -31,7 +31,7 @@ public class typeof_InteractorValueTarget_InferenceRule extends AbstractInferenc
       final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(ivt), "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "1136100386040136796", true);
       typeCheckingContext.whenConcrete(ctxType, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.IInteractorType$BJ)) {
-          IDElement el = IInteractor__BehaviorDescriptor.getDescriptor_id5y3VELft_Ye.invoke(IInteractorType__BehaviorDescriptor.getInteractor_id5y3VELfuT5E.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.IInteractorType$BJ))).findByName(SPropertyOperations.getString(ivt, PROPS.value$ZaAF));
+          IDElement el = IInteractor__BehaviorDescriptor.getDescriptor_id5y3VELft_Ye.invoke(IInteractorType__BehaviorDescriptor.getInteractor_id5y3VELfuT5E.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.IInteractorType$BJ))).findByName(SPropertyOperations.getString(ivt, PROPS.value$ZaAF));
           if (el != null) {
             {
               SNode _nodeToCheck_1029348928467 = ivt;

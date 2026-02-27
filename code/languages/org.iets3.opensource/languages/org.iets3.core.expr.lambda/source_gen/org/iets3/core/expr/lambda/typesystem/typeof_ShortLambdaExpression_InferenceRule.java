@@ -31,16 +31,16 @@ public class typeof_ShortLambdaExpression_InferenceRule extends AbstractInferenc
   public void applyRule(final SNode sle, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     List<SNode> tobeTypedNodes = new ArrayList<SNode>();
     ListSequence.fromList(tobeTypedNodes).addElement(SLinkOperations.getTarget(sle, LINKS.expr$CW3E));
-    ListSequence.fromList(tobeTypedNodes).addElement(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(SNodeOperations.cast(SNodeOperations.getParent(sle), CONCEPTS.IShortLambdaContainer$6m)));
+    ListSequence.fromList(tobeTypedNodes).addElement(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(SNodeOperations.as(SNodeOperations.getParent(sle), CONCEPTS.IShortLambdaContainer$6m)));
     TypingHelper.doWithListOfTypes(typeCheckingContext, tobeTypedNodes, ((_FunctionTypes._void_P1_E0<List<SNode>>) (List<SNode> types) -> {
       SNode exprType = ListSequence.fromList(types).getElement(0);
       SNode contextExprType = ListSequence.fromList(types).getElement(1);
       final SNode ft = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x68d69d36ba4ecfb6L, "org.iets3.core.expr.lambda.structure.FunctionType"));
       SLinkOperations.setTarget(ft, LINKS.returnType$nq7J, SNodeOperations.copyNode(exprType));
       if (SNodeOperations.isInstanceOf(contextExprType, CONCEPTS.IHasBaseType$GU)) {
-        ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).addElement(SNodeOperations.copyNode(IHasBaseType__BehaviorDescriptor.getBaseType_id3oWFox95OZf.invoke(SNodeOperations.cast(contextExprType, CONCEPTS.IHasBaseType$GU))));
+        ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).addElement(SNodeOperations.copyNode(IHasBaseType__BehaviorDescriptor.getBaseType_id3oWFox95OZf.invoke(SNodeOperations.as(contextExprType, CONCEPTS.IHasBaseType$GU))));
       } else {
-        ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).addElement(SNodeOperations.copyNode(IShortLambdaContainer__BehaviorDescriptor.requiredType_id6zmBjqUm7MF.invoke(SNodeOperations.cast(SNodeOperations.getParent(sle), CONCEPTS.IShortLambdaContainer$6m))));
+        ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).addElement(SNodeOperations.copyNode(IShortLambdaContainer__BehaviorDescriptor.requiredType_id6zmBjqUm7MF.invoke(SNodeOperations.as(SNodeOperations.getParent(sle), CONCEPTS.IShortLambdaContainer$6m))));
       }
       {
         SNode _nodeToCheck_1029348928467 = sle;

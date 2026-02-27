@@ -26,7 +26,7 @@ public class check_OtherwiseLiteral_NonTypesystemRule extends AbstractNonTypesys
     if (PTF.isOtherwiseLiteral(otherwiseLiteral)) {
       SNode container = SNodeOperations.getNodeAncestor(otherwiseLiteral, CONCEPTS.IValidOtherwiseContainer$cD, false, false);
       if (container != null) {
-        Iterable<SNode> allOtherwiseSiblings = IValidOtherwiseContainer__BehaviorDescriptor.getAllOtherwiseSiblings_id53cOfDpcBbK.invoke(SNodeOperations.cast(container, CONCEPTS.IValidOtherwiseContainer$cD), otherwiseLiteral);
+        Iterable<SNode> allOtherwiseSiblings = IValidOtherwiseContainer__BehaviorDescriptor.getAllOtherwiseSiblings_id53cOfDpcBbK.invoke(SNodeOperations.as(container, CONCEPTS.IValidOtherwiseContainer$cD), otherwiseLiteral);
         if (Sequence.fromIterable(allOtherwiseSiblings).contains(otherwiseLiteral)) {
           Iterable<SNode> allOtherwiseLiterals = Sequence.fromIterable(allOtherwiseSiblings).where((it) -> PTF.isOtherwiseLiteral(it));
           if (Sequence.fromIterable(allOtherwiseLiterals).count() > 1) {

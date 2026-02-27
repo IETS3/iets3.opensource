@@ -26,7 +26,7 @@ public class check_InlineRecordMemberAccess_NonTypesystemRule extends AbstractNo
   public void applyRule(final SNode irma, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     SNode type = TypecheckingFacade.getFromContext().getTypeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(irma));
     if (type != null && SNodeOperations.isInstanceOf(type, CONCEPTS.InlineRecordType$m)) {
-      SNode irt = SNodeOperations.cast(type, CONCEPTS.InlineRecordType$m);
+      SNode irt = SNodeOperations.as(type, CONCEPTS.InlineRecordType$m);
       if (InlineRecordType__BehaviorDescriptor.getMemberByName_id1Ic1PAvG0C.invoke(irt, SPropertyOperations.getString(irma, PROPS.name$MnvL)) == null) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();

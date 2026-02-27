@@ -31,7 +31,7 @@ public class typeof_OneArgPredicateCollectionOp_InferenceRule extends AbstractIn
       final SNode predType = typeCheckingContext.typeOf(SLinkOperations.getTarget(op, LINKS.expr$CW3E), "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "7554398283340715516", true);
       typeCheckingContext.whenConcrete(predType, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ)) {
-          final SNode ft = SNodeOperations.cast(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ);
+          final SNode ft = SNodeOperations.as(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ);
           if (ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).count() != 1) {
             {
               final MessageTarget errorTarget = new NodeMessageTarget();
@@ -43,9 +43,9 @@ public class typeof_OneArgPredicateCollectionOp_InferenceRule extends AbstractIn
               typeCheckingContext.whenConcrete(ctxType, () -> {
                 SNode baseType = null;
                 if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS)) {
-                  baseType = SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
+                  baseType = SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
                 } else if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.ISolverCollectionType$Vo)) {
-                  baseType = ISolverCollectionType__BehaviorDescriptor.getBaseType_id1ScogIcAG8p.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.ISolverCollectionType$Vo));
+                  baseType = ISolverCollectionType__BehaviorDescriptor.getBaseType_id1ScogIcAG8p.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.ISolverCollectionType$Vo));
                 }
                 if (!(typeCheckingContext.isSingleTypeComputation())) {
                   {

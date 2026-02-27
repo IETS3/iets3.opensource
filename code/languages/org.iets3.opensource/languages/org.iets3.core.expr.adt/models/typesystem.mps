@@ -222,7 +222,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -611,6 +613,7 @@
                   <node concept="2OqwBi" id="5a_u3OyR$Vt" role="33vP2m">
                     <node concept="2OqwBi" id="5a_u3OyR$Vu" role="2Oq$k0">
                       <node concept="1PxgMI" id="5a_u3OyR$Vv" role="2Oq$k0">
+                        <property role="1BlNFB" value="true" />
                         <node concept="chp4Y" id="5a_u3OyR$Vw" role="3oSUPX">
                           <ref role="cht4Q" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
                         </node>
@@ -1418,6 +1421,7 @@
                 <ref role="ehGHo" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
               </node>
               <node concept="1PxgMI" id="5a_u3OzZfTS" role="33vP2m">
+                <property role="1BlNFB" value="true" />
                 <node concept="chp4Y" id="5a_u3OzZfTT" role="3oSUPX">
                   <ref role="cht4Q" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
                 </node>
@@ -1544,6 +1548,7 @@
                                       <node concept="2OqwBi" id="5a_u3O$05dN" role="2Oq$k0">
                                         <node concept="2OqwBi" id="5a_u3O$05dO" role="2Oq$k0">
                                           <node concept="1PxgMI" id="5a_u3O$05dP" role="2Oq$k0">
+                                            <property role="1BlNFB" value="true" />
                                             <node concept="chp4Y" id="5a_u3O$05dQ" role="3oSUPX">
                                               <ref role="cht4Q" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
                                             </node>
@@ -1824,11 +1829,13 @@
                   <node concept="mw_s8" id="28$LOSAgp2O" role="1ZfhKB">
                     <node concept="2OqwBi" id="28$LOSAgqwe" role="mwGJk">
                       <node concept="1PxgMI" id="28$LOSAgqeh" role="2Oq$k0">
+                        <property role="1BlNFB" value="true" />
                         <node concept="chp4Y" id="28$LOSAgqjB" role="3oSUPX">
                           <ref role="cht4Q" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
                         </node>
                         <node concept="2OqwBi" id="28$LOSAgpl7" role="1m5AlR">
                           <node concept="1PxgMI" id="28$LOSAgp9e" role="2Oq$k0">
+                            <property role="1BlNFB" value="true" />
                             <node concept="chp4Y" id="28$LOSAgp9K" role="3oSUPX">
                               <ref role="cht4Q" to="v0r8:28$LOSAcnob" resolve="QuotedTermType" />
                             </node>

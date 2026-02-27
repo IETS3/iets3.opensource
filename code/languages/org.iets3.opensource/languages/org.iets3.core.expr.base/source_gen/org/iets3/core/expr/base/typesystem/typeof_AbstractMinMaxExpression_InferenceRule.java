@@ -42,7 +42,7 @@ public class typeof_AbstractMinMaxExpression_InferenceRule extends AbstractInfer
         }
 
         if (SNodeOperations.isInstanceOf(elementSupertype, CONCEPTS.IInterpreterWrapperType$KD)) {
-          SNode wrappedType = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.cast(elementSupertype, CONCEPTS.IInterpreterWrapperType$KD));
+          SNode wrappedType = IInterpreterWrapperType__BehaviorDescriptor.wrappedType_id6bG6MAFRDvi.invoke(SNodeOperations.as(elementSupertype, CONCEPTS.IInterpreterWrapperType$KD));
           {
             SNode _nodeToCheck_1029348928467 = wrappedType;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7873127098229773519", 0, null);

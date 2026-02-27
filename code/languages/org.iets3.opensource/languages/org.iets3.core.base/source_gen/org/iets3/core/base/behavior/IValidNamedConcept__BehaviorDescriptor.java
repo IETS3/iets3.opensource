@@ -13,6 +13,8 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import org.jetbrains.annotations.ApiStatus;
+import org.iets3.core.expr.base.runtime.runtime.IdentifierConfiguratorAccess;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
@@ -24,6 +26,9 @@ public final class IValidNamedConcept__BehaviorDescriptor extends BaseBHDescript
 
   public static final SMethod<Boolean> allowNonIdentifierNames_id4SwD0JT7m0l = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowNonIdentifierNames").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5629679905544167445L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> allowEverythingExceptWhitespace_id64w0Iq2$5zE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowEverythingExceptWhitespace").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6998597009989982442L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowParagraph_id5D8v3P4lqOn = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317996311L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowApostrophe_id5TO$xcFx5xN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowApostrophe").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6806225547895789683L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> allowParagraph_id4ZH31cjGRan = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5759272774551171735L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> allowApostrophe_id6OMpQn6QxQe = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowApostrophe").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7868465185795218830L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
@@ -32,7 +37,7 @@ public final class IValidNamedConcept__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<Boolean> isValidName_id39ERoteujbz = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValidName").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3632959622634615523L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<String> getIdentifierName_id7NEp8pMMUwS = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getIdentifierName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9001117333867702328L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowNonIdentifierNames_id4SwD0JT7m0l, allowEverythingExceptWhitespace_id64w0Iq2$5zE, allowUmlaute_id5YygIlbih$m, allowParagraph_id4ZH31cjGRan, allowApostrophe_id6OMpQn6QxQe, getRegExFirstLetter_id6OMpQn6XNJW, getRegExOtherThanFirstLetter_id6OMpQn6XSaI, isValidName_id39ERoteujbz, getIdentifierName_id7NEp8pMMUwS);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowNonIdentifierNames_id4SwD0JT7m0l, allowEverythingExceptWhitespace_id64w0Iq2$5zE, overrideDefaultAllowUmlaute_id5D8v3P4jYKp, overrideDefaultAllowParagraph_id5D8v3P4lqOn, overrideDefaultAllowApostrophe_id5TO$xcFx5xN, allowUmlaute_id5YygIlbih$m, allowParagraph_id4ZH31cjGRan, allowApostrophe_id6OMpQn6QxQe, getRegExFirstLetter_id6OMpQn6XNJW, getRegExOtherThanFirstLetter_id6OMpQn6XSaI, isValidName_id39ERoteujbz, getIdentifierName_id7NEp8pMMUwS);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -43,14 +48,29 @@ public final class IValidNamedConcept__BehaviorDescriptor extends BaseBHDescript
   /*package*/ static boolean allowEverythingExceptWhitespace_id64w0Iq2$5zE(@NotNull SAbstractConcept __thisConcept__) {
     return false;
   }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
+  /*package*/ static boolean overrideDefaultAllowUmlaute_id5D8v3P4jYKp(@NotNull SAbstractConcept __thisConcept__) {
     return false;
   }
-  /*package*/ static boolean allowParagraph_id4ZH31cjGRan(@NotNull SAbstractConcept __thisConcept__) {
+  /*package*/ static boolean overrideDefaultAllowParagraph_id5D8v3P4lqOn(@NotNull SAbstractConcept __thisConcept__) {
     return false;
   }
-  /*package*/ static boolean allowApostrophe_id6OMpQn6QxQe(@NotNull SAbstractConcept __thisConcept__) {
+  /*package*/ static boolean overrideDefaultAllowApostrophe_id5TO$xcFx5xN(@NotNull SAbstractConcept __thisConcept__) {
     return true;
+  }
+  @ApiStatus.NonExtendable
+  @ApiStatus.Internal
+  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
+    return IdentifierConfiguratorAccess.allowUmlautsInIdentifiers(__thisConcept__, ((boolean) IValidNamedConcept__BehaviorDescriptor.overrideDefaultAllowUmlaute_id5D8v3P4jYKp.invoke(__thisConcept__)));
+  }
+  @ApiStatus.NonExtendable
+  @ApiStatus.Internal
+  /*package*/ static boolean allowParagraph_id4ZH31cjGRan(@NotNull SAbstractConcept __thisConcept__) {
+    return IdentifierConfiguratorAccess.allowParagraphsInIdentifiers(__thisConcept__, ((boolean) IValidNamedConcept__BehaviorDescriptor.overrideDefaultAllowParagraph_id5D8v3P4lqOn.invoke(__thisConcept__)));
+  }
+  @ApiStatus.Internal
+  @ApiStatus.NonExtendable
+  /*package*/ static boolean allowApostrophe_id6OMpQn6QxQe(@NotNull SAbstractConcept __thisConcept__) {
+    return IdentifierConfiguratorAccess.allowApostropheInIdentifiers(__thisConcept__, ((boolean) IValidNamedConcept__BehaviorDescriptor.overrideDefaultAllowApostrophe_id5TO$xcFx5xN.invoke(__thisConcept__)));
   }
   /*package*/ static String getRegExFirstLetter_id6OMpQn6XNJW(@NotNull SAbstractConcept __thisConcept__) {
     String uml = (((boolean) IValidNamedConcept__BehaviorDescriptor.allowUmlaute_id5YygIlbih$m.invoke(__thisConcept__)) ? "äöüßÄÖÜ" : "");
@@ -106,7 +126,7 @@ public final class IValidNamedConcept__BehaviorDescriptor extends BaseBHDescript
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
-      case 8:
+      case 11:
         return (T) ((String) getIdentifierName_id7NEp8pMMUwS(node));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -125,16 +145,22 @@ public final class IValidNamedConcept__BehaviorDescriptor extends BaseBHDescript
       case 1:
         return (T) ((Boolean) allowEverythingExceptWhitespace_id64w0Iq2$5zE(concept));
       case 2:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
+        return (T) ((Boolean) overrideDefaultAllowUmlaute_id5D8v3P4jYKp(concept));
       case 3:
-        return (T) ((Boolean) allowParagraph_id4ZH31cjGRan(concept));
+        return (T) ((Boolean) overrideDefaultAllowParagraph_id5D8v3P4lqOn(concept));
       case 4:
-        return (T) ((Boolean) allowApostrophe_id6OMpQn6QxQe(concept));
+        return (T) ((Boolean) overrideDefaultAllowApostrophe_id5TO$xcFx5xN(concept));
       case 5:
-        return (T) ((String) getRegExFirstLetter_id6OMpQn6XNJW(concept));
+        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
       case 6:
-        return (T) ((String) getRegExOtherThanFirstLetter_id6OMpQn6XSaI(concept));
+        return (T) ((Boolean) allowParagraph_id4ZH31cjGRan(concept));
       case 7:
+        return (T) ((Boolean) allowApostrophe_id6OMpQn6QxQe(concept));
+      case 8:
+        return (T) ((String) getRegExFirstLetter_id6OMpQn6XNJW(concept));
+      case 9:
+        return (T) ((String) getRegExOtherThanFirstLetter_id6OMpQn6XSaI(concept));
+      case 10:
         return (T) ((Boolean) isValidName_id39ERoteujbz(concept, (String) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);

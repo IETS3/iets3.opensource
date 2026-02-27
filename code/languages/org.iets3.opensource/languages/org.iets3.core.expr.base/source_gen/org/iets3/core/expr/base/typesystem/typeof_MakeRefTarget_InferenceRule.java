@@ -26,7 +26,7 @@ public class typeof_MakeRefTarget_InferenceRule extends AbstractInferenceRule_Ru
         {
           SNode _nodeToCheck_1029348928467 = mrt;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7782108600709617335", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7782108600709616055", true), (SNode) createReferenceType_hkg327_a1a0c0a0b0a1a0a1(SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(ctxType)), CONCEPTS.Type$WK)), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7782108600709616055", true), (SNode) createReferenceType_hkg327_a1a0c0a0b0a1a0a1(SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(ctxType)), CONCEPTS.Type$WK)), _info_12389875345);
         }
       }, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7782108600709620019", false, false);
     }

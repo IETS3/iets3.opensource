@@ -25,14 +25,14 @@ public class check_TakeTurnsInterceptor_NonTypesystemRule extends AbstractNonTyp
   }
   public void applyRule(final SNode tti, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     if (SPropertyOperations.getBoolean(tti, PROPS.ordered$aTT_)) {
-      if (!(SNodeOperations.isInstanceOf(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(tti, LINKS.expr$CW3E)), CONCEPTS.ListType$i0) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(tti, LINKS.expr$CW3E)), CONCEPTS.ListType$i0), LINKS.baseType$5NOJ), CONCEPTS.PartyType$21))) {
+      if (!(SNodeOperations.isInstanceOf(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(tti, LINKS.expr$CW3E)), CONCEPTS.ListType$i0) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.as(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(tti, LINKS.expr$CW3E)), CONCEPTS.ListType$i0), LINKS.baseType$5NOJ), CONCEPTS.PartyType$21))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(tti, LINKS.expr$CW3E), "expecting an ordered list of parties", "r:f58f4a3c-02d7-4cfe-abe9-c107d957e34d(org.iets3.core.expr.process.typesystem)", "5456956546156301704", null, errorTarget);
         }
       }
     } else {
-      if (!(SNodeOperations.isInstanceOf(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(tti, LINKS.expr$CW3E)), CONCEPTS.CollectionType$kS) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(tti, LINKS.expr$CW3E)), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ), CONCEPTS.PartyType$21))) {
+      if (!(SNodeOperations.isInstanceOf(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(tti, LINKS.expr$CW3E)), CONCEPTS.CollectionType$kS) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.as(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(tti, LINKS.expr$CW3E)), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ), CONCEPTS.PartyType$21))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(tti, LINKS.expr$CW3E), "expecting a collection of parties", "r:f58f4a3c-02d7-4cfe-abe9-c107d957e34d(org.iets3.core.expr.process.typesystem)", "5456956546155609247", null, errorTarget);

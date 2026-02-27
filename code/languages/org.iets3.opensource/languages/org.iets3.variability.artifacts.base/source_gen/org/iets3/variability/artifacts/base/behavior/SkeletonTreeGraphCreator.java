@@ -5,15 +5,14 @@ package org.iets3.variability.artifacts.base.behavior;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import java.util.Objects;
-import jetbrains.mps.internal.collections.runtime.Sequence;
+import java.util.List;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.ide.httpsupport.runtime.base.HttpSupportUtil;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import jetbrains.mps.internal.collections.runtime.IMapping;
-import java.util.List;
 import org.jetbrains.mps.openapi.model.SReference;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 
@@ -48,24 +47,17 @@ public class SkeletonTreeGraphCreator implements ISkeletonVisitor {
     // skeleton nodes representing MPS root nodes are shown in yellow
     SNode orig = sn.getOriginal();
     String origConcept = SNodeOperations.getConcept(orig).getName();
-    String label = BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(orig) + "\\n" + origConcept + "\\n" + orig.getNodeId();
-    String pathStr = check_i3mtk4_a0f0l(sn.getFullPath());
-    String fullPathStr = check_i3mtk4_a0g0l(sn.getFullPath());
-    boolean hasFullPath = fullPathStr != null && (fullPathStr != null && fullPathStr.length() > 0);
-    if (pathStr != null && (pathStr != null && pathStr.length() > 0)) {
+    // If orig.concept is a KernelF StringLiteral, then its getPresentation contains "-characters.
+    String label = BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(orig).replace('"', '\'') + "\\n" + origConcept + "\\n" + orig.getNodeId();
+    ArtifactPath path = sn.getFullPath();
+    String pathStr = check_i3mtk4_a0h0l(path);
+    if ((pathStr != null && pathStr.length() > 0)) {
       label += "\\npath: " + pathStr;
-      if (!(hasFullPath)) {
-        label += "\\n(no full path)";
-      } else if (!(Objects.equals(fullPathStr, pathStr))) {
-        label += "\\nfull path: " + fullPathStr;
-      }
-    } else if (hasFullPath) {
-      label += "\\nfull path: " + fullPathStr;
     }
 
-    SkeletonNode.PivotInfo pivot = sn.getPivot();
-    if (pivot != null) {
-      label += "\\npivot: " + pivot.getFMIncludePathString() + " / " + IVariabilityAwareArtifact__BehaviorDescriptor.artifactName_id7eAm6HphX4A.invoke(pivot.getTargetIVAA());
+    List<Segment> segments = path.segmentsAsList();
+    if (ListSequence.fromList(segments).isNotEmpty()) {
+      label += "\\npivot: " + IterableUtils.join(ListSequence.fromList(segments).select((it) -> it.getName()), ".") + " / " + check_i3mtk4_a0a0a11a11(sn.targetIVAA());
     }
     if (showVarExprs && Sequence.fromIterable(sn.getVarExpressions()).isNotEmpty()) {
       label += "\\nexprs: " + IterableUtils.join(Sequence.fromIterable(sn.getVarExpressions()).select((it) -> (String) Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(it)), ", ");
@@ -74,43 +66,49 @@ public class SkeletonTreeGraphCreator implements ISkeletonVisitor {
     String styling = (!(hasVarPoints) ? ", style=filled, fillcolor=yellow" : "");
     if (sn.representsRootNode()) {
       styling += ", shape=rectangle";
-    }
-    if (pivot != null && !(pivot.isInstance())) {
-      styling += ", shape=diamond";
+    } else if (!(sn.isInstance())) {
+      styling += ", shape=hexagon";
     }
     String url = ", URL=\"" + HttpSupportUtil.getURL(orig) + "\"";
-    sb.append("  N" + sn.getId() + " [label=\"" + label + "\"" + styling + url + "];\n");
+    sb.append("  N" + sn.getId() + " [" + makeLabel(label) + styling + url + "];\n");
 
     // draw a black/grey arrow to indicate nesting along the node hierarchy
     // (if the child doesn't contain own VarPoint, the line is drawn in grey)
     for (SkeletonNode c : ListSequence.fromList(sn.getChildren())) {
       boolean hasVarPointsChild = Sequence.fromIterable(c.varPoints()).count() > 0;
-      String col = (hasVarPointsChild ? "black" : "grey");
-      sb.append("  N" + sn.getId() + " -> N" + c.getId() + " [color=" + col + "];\n");
+      drawEdge(sn.getId(), c.getId(), "color=" + ((hasVarPointsChild ? "black" : "grey")));
     }
 
     // draw a blue arrow to each dependent source (from it's governing node)
     for (SkeletonNode d : SetSequence.fromSet(sn.getDependents())) {
-      sb.append("  N" + sn.getId() + " -> N" + d.getId() + " [color=blue];\n");
+      drawEdge(sn.getId(), d.getId(), "color=blue");
     }
 
     // draw a dashed orange arrow for each accumulated reference between two skeleton nodes.
     // the number indicates how many references from one node<> in the referring skeleton node
     // to any other node<> in the referenced skeleton node have been collected.
     for (IMapping<SkeletonNode, List<SReference>> ref : MapSequence.fromMap(sn.getReferrers())) {
-      sb.append("  N" + ref.key().getId() + " -> N" + sn.getId() + " [label=\"" + ListSequence.fromList(ref.value()).count() + "\", style=dashed, color=orange];\n");
+      drawEdge(ref.key().getId(), sn.getId(), makeLabel("" + ListSequence.fromList(ref.value()).count()) + ", style=dashed, color=orange");
     }
     return true;
   }
-  private static String check_i3mtk4_a0f0l(ArtifactPath checkedDotOperand) {
+
+  private void drawEdge(int fromId, int toId, String details) {
+    sb.append("  N" + fromId + " -> N" + toId + " [" + details + "];\n");
+  }
+
+  private String makeLabel(String txt) {
+    return "label=\"" + txt + "\"";
+  }
+  private static String check_i3mtk4_a0h0l(ArtifactPath checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.asSegmentPathString();
     }
     return null;
   }
-  private static String check_i3mtk4_a0g0l(ArtifactPath checkedDotOperand) {
+  private static String check_i3mtk4_a0a0a11a11(SNode checkedDotOperand) {
     if (null != checkedDotOperand) {
-      return checkedDotOperand.asSegmentPathString();
+      return IVariabilityAwareArtifact__BehaviorDescriptor.artifactName_id7eAm6HphX4A.invoke(checkedDotOperand);
     }
     return null;
   }

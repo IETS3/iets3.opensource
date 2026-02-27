@@ -24,7 +24,7 @@ public class typeof_EnumLitRef_InferenceRule extends AbstractInferenceRule_Runti
     {
       SNode _nodeToCheck_1029348928467 = elr;
       EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "136342125308386076", 0, null);
-      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "136342125308385947", true), (SNode) createEnumRefType_93erfk_a1a0c0b0b(SNodeOperations.cast(et, CONCEPTS.EnumType$kZ)), _info_12389875345);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:985fefa7-5d4c-42b7-93bc-4c518f91e5f2(org.iets3.components.functional.typesystem)", "136342125308385947", true), (SNode) createEnumRefType_93erfk_a1a0c0b0b(SNodeOperations.as(et, CONCEPTS.EnumType$kZ)), _info_12389875345);
     }
   }
   public SAbstractConcept getApplicableConcept() {

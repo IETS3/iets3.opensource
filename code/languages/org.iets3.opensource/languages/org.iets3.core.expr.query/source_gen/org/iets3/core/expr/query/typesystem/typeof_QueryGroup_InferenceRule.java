@@ -24,10 +24,10 @@ public class typeof_QueryGroup_InferenceRule extends AbstractInferenceRule_Runti
       final SNode resType = typeCheckingContext.typeOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(g, LINKS.build$h0A0), LINKS.function$1smc), LINKS.expr$CW3E), "r:1c6ca975-dced-490b-9615-219a4aab0ba5(org.iets3.core.expr.query.typesystem)", "6749162445854132687", true);
       typeCheckingContext.whenConcrete(resType, () -> {
         {
-          final SNode sourceType = typeCheckingContext.typeOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(g), CONCEPTS.QueryExpr$TY), LINKS.source$IlS6), LINKS.expr$CW3E), "r:1c6ca975-dced-490b-9615-219a4aab0ba5(org.iets3.core.expr.query.typesystem)", "6749162445854132677", true);
+          final SNode sourceType = typeCheckingContext.typeOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(g), CONCEPTS.QueryExpr$TY), LINKS.source$IlS6), LINKS.expr$CW3E), "r:1c6ca975-dced-490b-9615-219a4aab0ba5(org.iets3.core.expr.query.typesystem)", "6749162445854132677", true);
           typeCheckingContext.whenConcrete(sourceType, () -> {
-            SNode collType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(sourceType), CONCEPTS.CollectionType$kS));
-            SLinkOperations.setTarget(collType, LINKS.baseType$5NOJ, SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(resType)), CONCEPTS.Type$WK));
+            SNode collType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(sourceType), CONCEPTS.CollectionType$kS));
+            SLinkOperations.setTarget(collType, LINKS.baseType$5NOJ, SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(resType)), CONCEPTS.Type$WK));
             {
               SNode _nodeToCheck_1029348928467 = g;
               EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1c6ca975-dced-490b-9615-219a4aab0ba5(org.iets3.core.expr.query.typesystem)", "6749162445854132671", 0, null);

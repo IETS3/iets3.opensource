@@ -31,10 +31,7 @@ public class SkeletonTree {
   }
 
   public Iterable<SNode> getAllNonInstanceArtifacts() {
-    Iterable<SkeletonNode> sn = ListSequence.fromList(this.allSkeletonNodes).where((it) -> {
-      SkeletonNode.PivotInfo pivot = it.getPivot();
-      return it.representsRootNode() || (pivot != null && !(pivot.isInstance()));
-    });
+    Iterable<SkeletonNode> sn = ListSequence.fromList(this.allSkeletonNodes).where((it) -> it.representsRootNode() || !(it.isInstance()));
     return Sequence.fromIterable(sn).select((it) -> check_dajowl_a0a0a0a0b0j(it.getFullPath())).where(new NotNullWhereFilter()).distinct();
   }
 

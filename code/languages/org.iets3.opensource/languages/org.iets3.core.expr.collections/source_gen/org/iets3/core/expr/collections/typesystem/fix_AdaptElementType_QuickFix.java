@@ -27,11 +27,11 @@ public class fix_AdaptElementType_QuickFix extends QuickFix_Runtime {
 
     SNode baseType = null;
     if (SNodeOperations.isInstanceOf(collType, CONCEPTS.CollectionType$kS)) {
-      baseType = SLinkOperations.getTarget(SNodeOperations.cast(collType, CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
+      baseType = SLinkOperations.getTarget(SNodeOperations.as(collType, CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
     }
 
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(((SNode) fix_AdaptElementType_QuickFix.this.getField("op")[0]), LINKS.expr$CW3E), CONCEPTS.LambdaExpression$64)) {
-      SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SLinkOperations.getTarget(((SNode) fix_AdaptElementType_QuickFix.this.getField("op")[0]), LINKS.expr$CW3E), CONCEPTS.LambdaExpression$64), LINKS.args$8wKH)).first(), LINKS.type$8xXf, baseType);
+      SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(SLinkOperations.getTarget(((SNode) fix_AdaptElementType_QuickFix.this.getField("op")[0]), LINKS.expr$CW3E), CONCEPTS.LambdaExpression$64), LINKS.args$8wKH)).first(), LINKS.type$8xXf, baseType);
     }
   }
 

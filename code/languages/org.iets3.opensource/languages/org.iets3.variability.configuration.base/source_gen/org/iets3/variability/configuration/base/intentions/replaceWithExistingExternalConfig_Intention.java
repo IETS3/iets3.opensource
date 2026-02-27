@@ -76,7 +76,8 @@ public final class replaceWithExistingExternalConfig_Intention extends AbstractI
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
       String containername = " (from " + SPropertyOperations.getString(IVariabilityContent__BehaviorDescriptor.container_id3D4yX3IUbRd.invoke(myParameter), PROPS.name$MnvL) + ")";
-      return "VARIABILITY: " + ("Replace With Existing " + Settings.aliasConfiguration(Settings.Format.WORDS_UPPERCASE) + ": " + (SNodeOperations.present(myParameter)) + containername);
+      String txt = "Replace With Existing " + Settings.aliasConfiguration(Settings.Format.WORDS_UPPERCASE) + ": " + SNodeOperations.present(myParameter) + containername;
+      return "VARIABILITY: " + (txt.replace("_", "__"));
     }
 
     @Override

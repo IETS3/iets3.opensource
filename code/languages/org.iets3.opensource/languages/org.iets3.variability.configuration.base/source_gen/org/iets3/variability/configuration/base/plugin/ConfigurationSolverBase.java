@@ -23,6 +23,7 @@ public class ConfigurationSolverBase implements IConfigurationSolver {
   public IResult runSolver(SNode fmc) {
     return new ConfigurationSolverFacade(fmc).runSolver();
   }
+
   @Override
   public CompletableFuture<List<IResult>> solverResultsAsync(SNode fmc, MpsActions mpsAction) {
     return new ConfigurationSolverFacade(fmc).solverResultsAsync(mpsAction);

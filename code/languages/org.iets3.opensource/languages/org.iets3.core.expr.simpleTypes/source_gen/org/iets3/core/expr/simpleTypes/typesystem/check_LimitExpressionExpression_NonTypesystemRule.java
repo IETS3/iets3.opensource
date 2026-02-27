@@ -37,8 +37,8 @@ public class check_LimitExpressionExpression_NonTypesystemRule extends AbstractN
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(lee, LINKS.type$EhVN), "only number types can be used here", "r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)", "4723261570619534102", null, errorTarget);
         }
       } else {
-        int expectedPrecision = (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(SNodeOperations.cast(typetype, CONCEPTS.NumberType$n));
-        if (expectedPrecision != (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(SNodeOperations.cast(exprType, CONCEPTS.NumberType$n))) {
+        int expectedPrecision = (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(SNodeOperations.as(typetype, CONCEPTS.NumberType$n));
+        if (expectedPrecision != (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(SNodeOperations.as(exprType, CONCEPTS.NumberType$n))) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
             IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(lee, LINKS.expr$CW3E), "expression must have the same precision as the expected type (" + expectedPrecision + ")", "r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)", "4723261570619568678", null, errorTarget);

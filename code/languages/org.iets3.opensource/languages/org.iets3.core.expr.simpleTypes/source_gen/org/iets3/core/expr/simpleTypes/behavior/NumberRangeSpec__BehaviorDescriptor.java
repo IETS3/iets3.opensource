@@ -17,6 +17,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.expr.base.behavior.ISupportHexValues__BehaviorDescriptor;
 import org.iets3.core.expr.base.plugin.InfHelper;
+import java.util.Objects;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -33,8 +34,10 @@ public final class NumberRangeSpec__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Boolean> isRangeValid_id3tudP___IMn = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isRangeValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3989687176992844951L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
   public static final SMethod<Boolean> isUnlimited_id1YvLuAX6F9 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isUnlimited").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(35605586627553993L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
   public static final SMethod<Void> times_idijdpu3aPf0 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("times").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(329666122585166784L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(BigDecimal.class, ""));
+  public static final SMethod<Boolean> isSinglePoint_id5bmRS0nmV1W = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSinglePoint").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5969204097366863996L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<String> getSinglePoint_id5bmRS0nnZlw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSinglePoint").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5969204097367143776L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStartBracket_id1HYdmFH2Ri, getEndBracket_id1HYdmFH3l9, getPresentation_idhEwIMiw, getMinPresentation_id5JKfLQ8_zjk, getMaxPresentation_id5JKfLQ8_zL9, isRangeValid_id3tudP___IMn, isUnlimited_id1YvLuAX6F9, times_idijdpu3aPf0);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStartBracket_id1HYdmFH2Ri, getEndBracket_id1HYdmFH3l9, getPresentation_idhEwIMiw, getMinPresentation_id5JKfLQ8_zjk, getMaxPresentation_id5JKfLQ8_zL9, isRangeValid_id3tudP___IMn, isUnlimited_id1YvLuAX6F9, times_idijdpu3aPf0, isSinglePoint_id5bmRS0nmV1W, getSinglePoint_id5bmRS0nnZlw);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -69,6 +72,12 @@ public final class NumberRangeSpec__BehaviorDescriptor extends BaseBHDescriptor 
       SPropertyOperations.assign(__thisNode__, PROPS.max$7P3H, InfHelper.toPlainString(InfHelper.asBigDecimal(SPropertyOperations.getString(__thisNode__, PROPS.max$7P3H)).multiply(value).stripTrailingZeros()));
     }
   }
+  /*package*/ static boolean isSinglePoint_id5bmRS0nmV1W(@NotNull SNode __thisNode__) {
+    return isNotEmptyString(SPropertyOperations.getString(__thisNode__, PROPS.min$7OOG)) && isNotEmptyString(SPropertyOperations.getString(__thisNode__, PROPS.max$7P3H)) && Objects.equals(SPropertyOperations.getString(__thisNode__, PROPS.min$7OOG), SPropertyOperations.getString(__thisNode__, PROPS.max$7P3H));
+  }
+  /*package*/ static String getSinglePoint_id5bmRS0nnZlw(@NotNull SNode __thisNode__) {
+    return (((boolean) NumberRangeSpec__BehaviorDescriptor.isSinglePoint_id5bmRS0nmV1W.invoke(__thisNode__)) ? SPropertyOperations.getString(__thisNode__, PROPS.min$7OOG) : null);
+  }
 
   /*package*/ NumberRangeSpec__BehaviorDescriptor() {
   }
@@ -102,6 +111,10 @@ public final class NumberRangeSpec__BehaviorDescriptor extends BaseBHDescriptor 
       case 7:
         times_idijdpu3aPf0(node, (BigDecimal) parameters[0]);
         return null;
+      case 8:
+        return (T) ((Boolean) isSinglePoint_id5bmRS0nmV1W(node));
+      case 9:
+        return (T) ((String) getSinglePoint_id5bmRS0nnZlw(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -129,6 +142,9 @@ public final class NumberRangeSpec__BehaviorDescriptor extends BaseBHDescriptor 
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+  private static boolean isNotEmptyString(String str) {
+    return str != null && str.length() > 0;
   }
 
   private static final class PROPS {

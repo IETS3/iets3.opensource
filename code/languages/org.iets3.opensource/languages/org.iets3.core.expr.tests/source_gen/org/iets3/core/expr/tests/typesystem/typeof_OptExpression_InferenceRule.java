@@ -26,7 +26,7 @@ public class typeof_OptExpression_InferenceRule extends AbstractInferenceRule_Ru
         {
           SNode _nodeToCheck_1029348928467 = optExpression;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:8b1d85a0-933d-4f71-99e8-5435698868f9(org.iets3.core.expr.tests.typesystem)", "1801842150043104185", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:8b1d85a0-933d-4f71-99e8-5435698868f9(org.iets3.core.expr.tests.typesystem)", "1801842150043102779", true), (SNode) createOptionType_iq1h5l_a1a0c0a0b0a1a0a1(SNodeOperations.cast(typeCheckingContext.getExpandedNode(et), CONCEPTS.Type$WK)), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:8b1d85a0-933d-4f71-99e8-5435698868f9(org.iets3.core.expr.tests.typesystem)", "1801842150043102779", true), (SNode) createOptionType_iq1h5l_a1a0c0a0b0a1a0a1(SNodeOperations.as(typeCheckingContext.getExpandedNode(et), CONCEPTS.Type$WK)), _info_12389875345);
         }
       }, "r:8b1d85a0-933d-4f71-99e8-5435698868f9(org.iets3.core.expr.tests.typesystem)", "1801842150043104439", false, false);
     }

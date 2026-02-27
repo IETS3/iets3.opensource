@@ -29,7 +29,7 @@ public class typeof_ShortLambdaItExpression_InferenceRule extends AbstractInfere
           {
             SNode _nodeToCheck_1029348928467 = it;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "7554398283340828512", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "7554398283340828378", true), (SNode) IHasBaseType__BehaviorDescriptor.getBaseType_id3oWFox95OZf.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.IHasBaseType$GU)), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "7554398283340828378", true), (SNode) IHasBaseType__BehaviorDescriptor.getBaseType_id3oWFox95OZf.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.IHasBaseType$GU)), _info_12389875345);
           }
         } else {
           {

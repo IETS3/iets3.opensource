@@ -10,7 +10,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import org.iets3.variability.artifacts.base.behavior.IConditionVarPoint__BehaviorDescriptor;
-import org.iets3.variability.artifacts.base.behavior.IConfigListVarPoint__BehaviorDescriptor;
 import java.util.Optional;
 import org.jetbrains.annotations.NotNull;
 import com.mbeddr.mpsutil.logicalChild.behavior.ILogicalChild__BehaviorDescriptor;
@@ -39,18 +38,6 @@ public class ArtifactHelper {
       if (SNodeOperations.isInstanceOf(cvp, CONCEPTS.IConditionVarPoint$bG)) {
         // this branch doesn't use the featureConfig parameter (the information is coded in the IContext)
         return IConditionVarPoint__BehaviorDescriptor.isPresentTernary_id1R5hpWYhU60.invoke(cvp, context);
-      }
-    }
-    {
-      final SNode clvp = vp;
-      if (SNodeOperations.isInstanceOf(clvp, CONCEPTS.IConfigListVarPoint$l9)) {
-        if ((featureConfig == null)) {
-          // config is not specified, return null which represents "undecided"
-          return null;
-        } else {
-          // TODO: for included/nested configs, it is not clear if we will check against the root config or the sub-configs here (this hasn't been defined yet, as IConfigListVarPoint is just a sketch without any productive use yet)
-          return (boolean) IConfigListVarPoint__BehaviorDescriptor.isPresent_id63fgxdO0qXV.invoke(clvp, featureConfig);
-        }
       }
     }
 
@@ -203,7 +190,6 @@ public class ArtifactHelper {
   private static final class CONCEPTS {
     /*package*/ static final SInterfaceConcept IVariationPointBase$F1 = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x19503178dec840e6L, "org.iets3.variability.artifacts.base.structure.IVariationPointBase");
     /*package*/ static final SInterfaceConcept IConditionVarPoint$bG = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0xe86d1af52aae5ceL, "org.iets3.variability.artifacts.base.structure.IConditionVarPoint");
-    /*package*/ static final SInterfaceConcept IConfigListVarPoint$l9 = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x23e80284f237bef8L, "org.iets3.variability.artifacts.base.structure.IConfigListVarPoint");
     /*package*/ static final SInterfaceConcept IVariabilityAwareArtifact$qo = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x716b3738b4b28e4bL, "org.iets3.variability.artifacts.base.structure.IVariabilityAwareArtifact");
     /*package*/ static final SInterfaceConcept IArtifactInstance$ce = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x29c0f4d5e8127ce1L, "org.iets3.variability.artifacts.base.structure.IArtifactInstance");
     /*package*/ static final SInterfaceConcept ILogicalChild$Av = MetaAdapterFactory.getInterfaceConcept(0x85a9bace37a140afL, 0x956a7bb1b081a77cL, 0x4d47311ce85ef55L, "com.mbeddr.mpsutil.logicalChild.structure.ILogicalChild");

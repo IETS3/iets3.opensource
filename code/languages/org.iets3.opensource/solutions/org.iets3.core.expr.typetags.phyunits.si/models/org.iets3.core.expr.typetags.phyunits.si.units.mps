@@ -1897,7 +1897,7 @@
       <property role="TrG5h" value="J" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="joule (energy)" />
-      <property role="22P1Ek" value="4zqoYUyQ7z3/metric_positive" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigY_" resolve="energy" />
       <node concept="CIsGf" id="6q45UTzs0Xv" role="4gtQf">
         <node concept="wW8yL" id="1eut2v5J4Rq" role="CIi4h">
@@ -1914,7 +1914,7 @@
       <property role="TrG5h" value="J" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="joule (work)" />
-      <property role="22P1Ek" value="4zqoYUyQ7z3/metric_positive" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="70JbBC5F9LU" resolve="work" />
       <node concept="CIsGf" id="70JbBC5M$rl" role="4gtQf">
         <node concept="wW8yL" id="1eut2v5SLRx" role="CIi4h">
@@ -1931,7 +1931,7 @@
       <property role="TrG5h" value="J" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="joule (heat)" />
-      <property role="22P1Ek" value="4zqoYUyQ7z3/metric_positive" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="70JbBC5GdMI" resolve="heat" />
       <node concept="CIsGf" id="70JbBC5NCZ6" role="4gtQf">
         <node concept="wW8yL" id="1eut2v5W2zx" role="CIi4h">
@@ -1948,7 +1948,7 @@
       <property role="TrG5h" value="W" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="watt (power)" />
-      <property role="22P1Ek" value="4zqoYUyQ7z3/metric_positive" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigYu" resolve="power" />
       <node concept="CIsGf" id="6q45UTzs0Xz" role="4gtQf">
         <node concept="2Wclh2" id="69VksCD_3tA" role="CIi4h">
@@ -1983,7 +1983,7 @@
       <property role="TrG5h" value="C" />
       <property role="1xMkt3" value="true" />
       <property role="1o$tow" value="coulomb" />
-      <property role="22P1Ek" value="4zqoYUyQ7z3/metric_positive" />
+      <property role="22P1Ek" value="2hbaSyABMZN/metric" />
       <ref role="Rn5ok" node="3xM68GMigY7" resolve="electric charge" />
       <node concept="CIsGf" id="6q45UTzs0XD" role="4gtQf">
         <node concept="wW8yL" id="6q45UTzs0XE" role="CIi4h">

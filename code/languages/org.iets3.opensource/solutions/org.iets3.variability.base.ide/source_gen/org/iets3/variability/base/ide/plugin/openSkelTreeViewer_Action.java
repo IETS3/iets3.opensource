@@ -10,7 +10,6 @@ import java.util.Map;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
-import org.iets3.variability.artifacts.base.behavior.IVariabilityAwareArtifact__BehaviorDescriptor;
 import com.intellij.ui.jcef.JBCefApp;
 import org.jetbrains.annotations.NotNull;
 import com.intellij.openapi.project.Project;
@@ -36,8 +35,8 @@ public class openSkelTreeViewer_Action extends BaseAction {
   @Override
   public boolean isApplicable(AnActionEvent event, final Map<String, Object> _params) {
     SNode ivaa = SNodeOperations.getNodeAncestor(event.getData(MPSCommonDataKeys.NODE), CONCEPTS.IVariabilityAwareArtifact$qo, true, false);
-    System.err.println("ACTION " + IVariabilityAwareArtifact__BehaviorDescriptor.artifactName_id7eAm6HphX4A.invoke(ivaa));
     if ((ivaa != null) && JBCefApp.isSupported()) {
+
       return true;
     }
     return false;

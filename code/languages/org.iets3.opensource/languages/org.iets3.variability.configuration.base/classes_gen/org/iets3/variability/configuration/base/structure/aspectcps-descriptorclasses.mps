@@ -1374,7 +1374,7 @@
     </node>
   </node>
   <node concept="312cEu" id="6E">
-    <property role="3GE5qa" value="configuration" />
+    <property role="3GE5qa" value="attribute" />
     <property role="TrG5h" value="EnumerationDescriptor_AssignmentCause" />
     <uo k="s:originTrace" v="n:643975119313797046" />
     <node concept="2tJIrI" id="6F" role="jymVt">

@@ -254,7 +254,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -4972,6 +4974,7 @@
                                 <node concept="2OqwBi" id="pB" role="2Oq$k0">
                                   <uo k="s:originTrace" v="n:5955298286240681694" />
                                   <node concept="1PxgMI" id="pD" role="2Oq$k0">
+                                    <property role="1BlNFB" value="true" />
                                     <uo k="s:originTrace" v="n:5955298286240681695" />
                                     <node concept="chp4Y" id="pF" role="3oSUPX">
                                       <ref role="cht4Q" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
@@ -6531,6 +6534,7 @@
                   <uo k="s:originTrace" v="n:5955298286259469936" />
                 </node>
                 <node concept="1PxgMI" id="xl" role="33vP2m">
+                  <property role="1BlNFB" value="true" />
                   <uo k="s:originTrace" v="n:5955298286259469944" />
                   <node concept="chp4Y" id="xm" role="3oSUPX">
                     <ref role="cht4Q" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
@@ -6934,6 +6938,7 @@
                                           <node concept="2OqwBi" id="zz" role="2Oq$k0">
                                             <uo k="s:originTrace" v="n:5955298286259688308" />
                                             <node concept="1PxgMI" id="z_" role="2Oq$k0">
+                                              <property role="1BlNFB" value="true" />
                                               <uo k="s:originTrace" v="n:5955298286259688309" />
                                               <node concept="chp4Y" id="zB" role="3oSUPX">
                                                 <ref role="cht4Q" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
@@ -12499,6 +12504,7 @@
                                         <node concept="2OqwBi" id="Z5" role="10QFUP">
                                           <uo k="s:originTrace" v="n:2460310434914347022" />
                                           <node concept="1PxgMI" id="Z6" role="2Oq$k0">
+                                            <property role="1BlNFB" value="true" />
                                             <uo k="s:originTrace" v="n:2460310434914345873" />
                                             <node concept="chp4Y" id="Z8" role="3oSUPX">
                                               <ref role="cht4Q" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
@@ -12507,6 +12513,7 @@
                                             <node concept="2OqwBi" id="Z9" role="1m5AlR">
                                               <uo k="s:originTrace" v="n:2460310434914342215" />
                                               <node concept="1PxgMI" id="Za" role="2Oq$k0">
+                                                <property role="1BlNFB" value="true" />
                                                 <uo k="s:originTrace" v="n:2460310434914341454" />
                                                 <node concept="chp4Y" id="Zc" role="3oSUPX">
                                                   <ref role="cht4Q" to="v0r8:28$LOSAcnob" resolve="QuotedTermType" />

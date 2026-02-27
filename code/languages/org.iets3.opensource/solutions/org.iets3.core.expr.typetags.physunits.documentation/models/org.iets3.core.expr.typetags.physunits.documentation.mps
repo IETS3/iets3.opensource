@@ -805,7 +805,7 @@
               <ref role="1_0GAl" node="4Zdo13zi0G7" resolve="Units" />
             </node>
             <node concept="19SUe$" id="4Zdo13zi0Gw" role="19SJt6">
-              <property role="19SUeA" value=" support multiplication, division, and exponents with integers or fractions in their specification. There are intentions to simplify them and convert between different operations. All operations are implemented as operations of a mathematical group. Exponents in specifications are automatically sorted in  ascending order for positive exponents and descending order for negative exponents. This behavior can be overwritten through the extension point." />
+              <property role="19SUeA" value=" support multiplication, division, and exponents with integers or fractions in their specification. There are intentions to simplify them and convert between different operations. All operations are implemented as operations of a mathematical group. Exponents in specifications are automatically sorted in ascending order for positive exponents and descending order for negative exponents. This behavior can be overwritten through the extension point." />
             </node>
           </node>
         </node>
@@ -867,7 +867,7 @@
         <node concept="1_0LV8" id="18bX8lHAGCd" role="1_0VJ0">
           <node concept="19SGf9" id="18bX8lHAGCe" role="1_0LWR">
             <node concept="19SUe$" id="18bX8lHAGCf" role="19SJt6">
-              <property role="19SUeA" value="A physical unit is a standardized value that is used to measure and compare physical quantities. For example, the meter is a unit of length, and the kilogram is a unit of mass. length and mass are the quantities. &#10;Units must have a symbol name and can also have an optional unit name. The must reference a quantity that can be automatically derived via an intention.&#10;&#10;They support different scaling methods: no-scaling, metric scaling (= metric prefixes), and binary scaling (= binary prefixes), and have their type derived from the referenced quantity:" />
+              <property role="19SUeA" value="A physical unit is a standardized value that is used to measure and compare physical quantities. For example, the meter is a unit of length, and the kilogram is a unit of mass. Length and mass are the quantities. &#10;Units must have a symbol name and can also have an optional unit name. They must reference a quantity that can be automatically derived via an intention.&#10;&#10;They support different scaling methods: no scaling, metric scaling (i.e., metric prefixes), and binary scaling (i.e., binary prefixes), and have their type derived from the referenced quantity:" />
             </node>
           </node>
         </node>
@@ -1017,7 +1017,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7vDNpxu7bbM" role="19SJt6">
-              <property role="19SUeA" value=") should execute the conversion between 2 referenced units. They reference a source and a target unit that each can have an optional prefix. The " />
+              <property role="19SUeA" value=") should execute the conversion between two referenced units. They reference a source and a target unit that each can have an optional prefix. The " />
             </node>
             <node concept="28N2ik" id="7vDNpxu7bjt" role="19SJt6">
               <node concept="19SGf9" id="7vDNpxu7bju" role="$DsGW">
@@ -1027,7 +1027,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7vDNpxu7bjw" role="19SJt6">
-              <property role="19SUeA" value="expression refers to the converted value itself. The return type can be specified as well:&#10;" />
+              <property role="19SUeA" value=" expression refers to the converted value itself. The return type can be specified as well:&#10;" />
             </node>
           </node>
         </node>
@@ -1119,7 +1119,7 @@
         <node concept="1_0LV8" id="7Kcvgw17ewj" role="1_0VJ0">
           <node concept="19SGf9" id="7Kcvgw17ewk" role="1_0LWR">
             <node concept="19SUe$" id="7Kcvgw17ewl" role="19SJt6">
-              <property role="19SUeA" value="This also works for expressions with binary prefixes:" />
+              <property role="19SUeA" value="&#10;This also works for expressions with binary prefixes:" />
             </node>
           </node>
         </node>
@@ -1145,6 +1145,7 @@
             </node>
           </node>
         </node>
+        <node concept="1_1sxE" id="4$KsaoAh7W2" role="1_0VJ0" />
         <node concept="1_0VNX" id="7Kcvgw17eEt" role="1_0VJ0">
           <property role="TrG5h" value="ImplicitConversions" />
           <property role="1_0VJr" value="Implicit Conversions" />
@@ -1257,6 +1258,7 @@
             <ref role="3nadW_" to="i3ya:14aBVbMOlEH" resolve="NoConvertExpression" />
           </node>
         </node>
+        <node concept="1_1sxE" id="4$KsaoAhk2u" role="1_0VJ0" />
         <node concept="1_0VNX" id="7Kcvgw17jwk" role="1_0VJ0">
           <property role="TrG5h" value="EagerConversionRules" />
           <property role="1_0VJr" value="Eager Conversion Rules" />
@@ -1316,6 +1318,7 @@
         </node>
       </node>
     </node>
+    <node concept="1_1sxE" id="4$KsaoAhw8U" role="1_0VJ0" />
     <node concept="1_0VNX" id="18bX8lHGsd7" role="1_0VJ0">
       <property role="TrG5h" value="StandardLibrary" />
       <property role="1_0VJr" value="Standard Library" />
@@ -1345,12 +1348,12 @@
               <node concept="1jUjqm" id="18bX8lHGshV" role="19SJt6">
                 <node concept="19SGf9" id="18bX8lHGshW" role="$DsGW">
                   <node concept="19SUe$" id="18bX8lHGshX" role="19SJt6">
-                    <property role="19SUeA" value="1Kbyte = 1000 byte but  1kib =  1024 b" />
+                    <property role="19SUeA" value="1Kbyte = 1000 byte but  1kib = 1024 b" />
                   </node>
                 </node>
               </node>
               <node concept="19SUe$" id="18bX8lHGshY" role="19SJt6">
-                <property role="19SUeA" value="&#10; &#10;Translated into English: 1 kilobyte equals 1000 bytes and 1 kibibyte (binary kilobyte) equals 1024 binary bytes." />
+                <property role="19SUeA" value="&#10; &#10;Translated into English: 1 kilobyte equals 1000 bytes and 1 ki-byte (binary kilobyte) equals 1024 binary bytes." />
               </node>
             </node>
           </node>

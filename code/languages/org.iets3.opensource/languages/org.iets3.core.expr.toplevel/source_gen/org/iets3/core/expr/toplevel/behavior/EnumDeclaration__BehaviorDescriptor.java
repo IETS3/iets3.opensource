@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.iets3.core.expr.base.runtime.runtime.IdentifierConfiguratorAccess;
 import org.iets3.core.expr.base.plugin.TypesystemCustomizer;
 import jetbrains.mps.smodel.structure.ExtensionPoint;
 import org.iets3.core.expr.base.plugin.DefaultTypesystemCustomizer;
@@ -33,11 +32,9 @@ public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Boolean> isValued_id3Y6fbK16sYK = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValued").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4577412849438674864L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
   public static final SMethod<SNode> getDefaultLiteral_idVFjlN5t4Q7 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDefaultLiteral").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1075037996903058823L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
   public static final SMethod<Iterable<SNode>> effectiveLiterals_idolugnm0Egc = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("effectiveLiterals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(438389604710786060L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowParagraph_id4ZH31cjGRan = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5759272774551171735L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> checkDuplicates_id1WjCak8S2F0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("checkDuplicates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2239310070412225216L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, isValued_id3Y6fbK16sYK, getDefaultLiteral_idVFjlN5t4Q7, effectiveLiterals_idolugnm0Egc, allowUmlaute_id5YygIlbih$m, allowParagraph_id4ZH31cjGRan, checkDuplicates_id1WjCak8S2F0);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, isValued_id3Y6fbK16sYK, getDefaultLiteral_idVFjlN5t4Q7, effectiveLiterals_idolugnm0Egc, checkDuplicates_id1WjCak8S2F0);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -57,12 +54,6 @@ public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor 
       return Sequence.fromIterable(IDeclarationExtensionContext__BehaviorDescriptor.effectiveMembers_idolugnm5RHX.invoke(r, __thisNode__)).ofType(SNode.class);
     }
     return SLinkOperations.getChildren(__thisNode__, LINKS.literals$K_NE);
-  }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowUmlautsInIdentifiers(__thisConcept__);
-  }
-  /*package*/ static boolean allowParagraph_id4ZH31cjGRan(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowParagraphsInIdentifiers(__thisConcept__);
   }
   /*package*/ static boolean checkDuplicates_id1WjCak8S2F0(@NotNull SNode __thisNode__) {
     TypesystemCustomizer customizer = Sequence.fromIterable(new ExtensionPoint<TypesystemCustomizer>("org.iets3.core.expr.base.typesystemCustomization").getObjects()).first();
@@ -95,7 +86,7 @@ public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor 
         return (T) ((SNode) getDefaultLiteral_idVFjlN5t4Q7(node));
       case 3:
         return (T) ((Iterable<SNode>) effectiveLiterals_idolugnm0Egc(node));
-      case 6:
+      case 4:
         return (T) ((Boolean) checkDuplicates_id1WjCak8S2F0(node));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -109,10 +100,6 @@ public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor 
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
-      case 4:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
-      case 5:
-        return (T) ((Boolean) allowParagraph_id4ZH31cjGRan(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -21,7 +21,7 @@ public class typeof_FieldSetter_InferenceRule extends AbstractInferenceRule_Runt
   public typeof_FieldSetter_InferenceRule() {
   }
   public void applyRule(final SNode fs, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    SNode ba = SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(fs), CONCEPTS.BuilderExpression$Ly), LINKS.adapted$goB5);
+    SNode ba = SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(fs), CONCEPTS.BuilderExpression$Ly), LINKS.adapted$goB5);
     SNode nodeForTyping = BuilderAdapter__BehaviorDescriptor.nodeForTypingFieldSetter_id7SszixhZVRp.invoke(ba, fs);
     {
       final SNode orgFieldType = typeCheckingContext.typeOf(nodeForTyping, "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "4377572860530782511", true);
@@ -30,7 +30,7 @@ public class typeof_FieldSetter_InferenceRule extends AbstractInferenceRule_Runt
         {
           SNode _nodeToCheck_1029348928467 = fs;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "369777186288942707", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.getRepresentative(realFieldType_typevar_369777186288937648), (SNode) TOF.override(fs, SNodeOperations.cast(typeCheckingContext.getExpandedNode(orgFieldType), CONCEPTS.Type$WK)), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.getRepresentative(realFieldType_typevar_369777186288937648), (SNode) TOF.override(fs, SNodeOperations.as(typeCheckingContext.getExpandedNode(orgFieldType), CONCEPTS.Type$WK)), _info_12389875345);
         }
         {
           SNode _nodeToCheck_1029348928467 = fs;
