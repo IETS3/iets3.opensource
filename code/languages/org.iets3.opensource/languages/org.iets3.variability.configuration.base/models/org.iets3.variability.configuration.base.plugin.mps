@@ -526,7 +526,6 @@
       </concept>
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="7125221305512719026" name="jetbrains.mps.baseLanguage.collections.structure.CollectionType" flags="in" index="3vKaQO" />
-      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
@@ -11753,12 +11752,12 @@
       <node concept="P$JXv" id="1e_Qt5$_Gt" role="lGtFl">
         <node concept="TZ5HA" id="1e_Qt5$_Gu" role="TZ5H$">
           <node concept="1dT_AC" id="1e_Qt5$_Gv" role="1dT_Ay">
-            <property role="1dT_AB" value="If true, the values of property FeatureModelConfiguration.name are used for checking" />
+            <property role="1dT_AB" value="If true, the enriched names are used for checking the uniqueness of configurations." />
           </node>
         </node>
-        <node concept="TZ5HA" id="1e_Qt5$F8v" role="TZ5H$">
-          <node concept="1dT_AC" id="1e_Qt5$F8w" role="1dT_Ay">
-            <property role="1dT_AB" value="the uniqueness of configurations. Otherwise, the enriched names are used." />
+        <node concept="TZ5HA" id="2JE7SEA5rxi" role="TZ5H$">
+          <node concept="1dT_AC" id="2JE7SEA5rxj" role="1dT_Ay">
+            <property role="1dT_AB" value="Otherwise, the manually defined names (i.e., values of property FeatureModelConfiguration.name) are used." />
           </node>
         </node>
       </node>
@@ -11936,12 +11935,10 @@
                       <node concept="2jxLKc" id="2FZhxW1aEba" role="1tU5fm" />
                     </node>
                   </node>
-                  <node concept="1nlBCl" id="4qv99IrBJ49" role="2S7zOq">
-                    <property role="3clFbU" value="true" />
-                  </node>
+                  <node concept="1nlBCl" id="29cIrQKmYPA" role="2S7zOq" />
                 </node>
               </node>
-              <node concept="1yVyf7" id="4qv99IrBJ4a" role="2OqNvi" />
+              <node concept="1uHKPH" id="29cIrQKn0vr" role="2OqNvi" />
             </node>
           </node>
         </node>

@@ -226,13 +226,6 @@
         <property id="8575328350543493365" name="message" index="huDt6" />
         <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -628,30 +621,26 @@
       <property role="TrG5h" value="shouldhaveDuplicateWithEnrichedNames" />
       <node concept="3cqZAl" id="6vXjBknLfYp" role="3clF45" />
       <node concept="3clFbS" id="6vXjBknLfYq" role="3clF47">
-        <node concept="1X3_iC" id="6vXjBknPadb" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="6vXjBknMgUb" role="8Wnug">
-            <node concept="2YIFZM" id="6vXjBknMgVa" role="3clFbG">
-              <ref role="37wK5l" to="qqx9:6vXjBknMcK_" resolve="mustHaveUniquenessError" />
-              <ref role="1Pybhc" to="qqx9:6vXjBknMcIU" resolve="UniquenessTestHelper" />
-              <node concept="2OqwBi" id="6vXjBknMgVC" role="37wK5m">
-                <node concept="2OqwBi" id="6vXjBknMgVD" role="2Oq$k0">
-                  <node concept="3xONca" id="6vXjBknMgVE" role="2Oq$k0">
-                    <ref role="3xOPvv" node="6vXjBknLhLn" resolve="var2" />
-                  </node>
-                  <node concept="3Tsc0h" id="6vXjBknMgVF" role="2OqNvi">
-                    <ref role="3TtcxE" to="rmn3:3tsFshP58gT" resolve="contents" />
-                  </node>
+        <node concept="3clFbF" id="6vXjBknMgUb" role="3cqZAp">
+          <node concept="2YIFZM" id="6vXjBknMgVa" role="3clFbG">
+            <ref role="37wK5l" to="qqx9:6vXjBknMcK_" resolve="mustHaveUniquenessError" />
+            <ref role="1Pybhc" to="qqx9:6vXjBknMcIU" resolve="UniquenessTestHelper" />
+            <node concept="2OqwBi" id="6vXjBknMgVC" role="37wK5m">
+              <node concept="2OqwBi" id="6vXjBknMgVD" role="2Oq$k0">
+                <node concept="3xONca" id="6vXjBknMgVE" role="2Oq$k0">
+                  <ref role="3xOPvv" node="6vXjBknLhLn" resolve="var2" />
                 </node>
-                <node concept="v3k3i" id="6vXjBknMgVG" role="2OqNvi">
-                  <node concept="chp4Y" id="6vXjBknMgVH" role="v3oSu">
-                    <ref role="cht4Q" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
-                  </node>
+                <node concept="3Tsc0h" id="6vXjBknMgVF" role="2OqNvi">
+                  <ref role="3TtcxE" to="rmn3:3tsFshP58gT" resolve="contents" />
                 </node>
               </node>
-              <node concept="1jxXqW" id="6vXjBknMh6x" role="37wK5m" />
+              <node concept="v3k3i" id="6vXjBknMgVG" role="2OqNvi">
+                <node concept="chp4Y" id="6vXjBknMgVH" role="v3oSu">
+                  <ref role="cht4Q" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
+                </node>
+              </node>
             </node>
+            <node concept="1jxXqW" id="6vXjBknMh6x" role="37wK5m" />
           </node>
         </node>
         <node concept="3clFbF" id="6vXjBknOqIA" role="3cqZAp">
