@@ -7,6 +7,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## February 2026
 
+### Added
+
+- Variability: Provide extension point which allows to introduce application-specific enriched names for configurations.
+
 ### Changed
 
 - Variability: The performance of opening big variant configurations in editor has been improved (by switching off editor hints which are not needed).

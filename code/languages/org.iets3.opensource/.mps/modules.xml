@@ -179,6 +179,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.common.base/test.org.iets3.common.base.msd" folder="variability.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.core.comments/test.org.iets3.core.comments.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.protocol.transport/test.org.iets3.protocol.transport.msd" folder="comp.protocols" />
+      <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.variability.configuration.base.ext/test.org.iets3.variability.configuration.base.ext.msd" folder="variability.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.variability.configuration.base/test.org.iets3.variability.configuration.base.msd" folder="variability.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.org.iets3.variability.featuremodel.base/test.org.iets3.variability.featuremodel.base.msd" folder="variability.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.components.core/test.ts.components.core.msd" folder="comp.tests" />
