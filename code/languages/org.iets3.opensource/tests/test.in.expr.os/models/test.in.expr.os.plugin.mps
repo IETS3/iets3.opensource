@@ -233,6 +233,82 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="3clFb_" id="5TO$xcFwK5K" role="jymVt">
+      <property role="TrG5h" value="allowApostropheInIdentifiers" />
+      <node concept="37vLTG" id="5TO$xcFwK5L" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="5TO$xcFwK5M" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="5TO$xcFwK5O" role="3clF45" />
+      <node concept="3Tm1VV" id="5TO$xcFwK5P" role="1B3o_S" />
+      <node concept="3clFbS" id="5TO$xcFwK5Q" role="3clF47">
+        <node concept="3clFbF" id="5TO$xcFwVSZ" role="3cqZAp">
+          <node concept="3clFbT" id="5TO$xcFwVSY" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5TO$xcFwK5R" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5TO$xcFwK5U" role="jymVt">
+      <property role="TrG5h" value="overrideAllowUmlautsInIdentifiers" />
+      <node concept="3Tm1VV" id="5TO$xcFwK5W" role="1B3o_S" />
+      <node concept="10P_77" id="5TO$xcFwK5X" role="3clF45" />
+      <node concept="37vLTG" id="5TO$xcFwK5Y" role="3clF46">
+        <property role="TrG5h" value="overrideDefault" />
+        <node concept="10P_77" id="5TO$xcFwK5Z" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5TO$xcFwK60" role="3clF47">
+        <node concept="3clFbF" id="5TO$xcFwUj4" role="3cqZAp">
+          <node concept="37vLTw" id="5TO$xcFwUj5" role="3clFbG">
+            <ref role="3cqZAo" node="5TO$xcFwK5Y" resolve="overrideDefault" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5TO$xcFwK61" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5TO$xcFwK64" role="jymVt">
+      <property role="TrG5h" value="overrideAllowParagraphsInIdentifiers" />
+      <node concept="3Tm1VV" id="5TO$xcFwK66" role="1B3o_S" />
+      <node concept="10P_77" id="5TO$xcFwK67" role="3clF45" />
+      <node concept="37vLTG" id="5TO$xcFwK68" role="3clF46">
+        <property role="TrG5h" value="overrideDefault" />
+        <node concept="10P_77" id="5TO$xcFwK69" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5TO$xcFwK6a" role="3clF47">
+        <node concept="3clFbF" id="5TO$xcFwU1u" role="3cqZAp">
+          <node concept="37vLTw" id="5TO$xcFwU1v" role="3clFbG">
+            <ref role="3cqZAo" node="5TO$xcFwK68" resolve="overrideDefault" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5TO$xcFwK6b" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5TO$xcFwK6e" role="jymVt">
+      <property role="TrG5h" value="overrideAllowApostrophesInIdentifiers" />
+      <node concept="3Tm1VV" id="5TO$xcFwK6g" role="1B3o_S" />
+      <node concept="10P_77" id="5TO$xcFwK6h" role="3clF45" />
+      <node concept="37vLTG" id="5TO$xcFwK6i" role="3clF46">
+        <property role="TrG5h" value="overrideDefault" />
+        <node concept="10P_77" id="5TO$xcFwK6j" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5TO$xcFwK6k" role="3clF47">
+        <node concept="3clFbF" id="5TO$xcFwTL5" role="3cqZAp">
+          <node concept="37vLTw" id="5TO$xcFwTL2" role="3clFbG">
+            <ref role="3cqZAo" node="5TO$xcFwK6i" resolve="overrideDefault" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5TO$xcFwK6l" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="2TlZyI4PF$F" role="jymVt" />
     <node concept="3Tm1VV" id="2TlZyI4PF$G" role="1B3o_S" />
     <node concept="3uibUv" id="2TlZyI4PF$H" role="1zkMxy">
