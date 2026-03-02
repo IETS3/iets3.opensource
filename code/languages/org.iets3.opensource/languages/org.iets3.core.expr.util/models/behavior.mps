@@ -51,7 +51,6 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
-      <concept id="1703835097132541506" name="jetbrains.mps.lang.behavior.structure.ThisConceptExpression" flags="ng" index="1fM9EW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -6453,38 +6452,6 @@
     <ref role="13h7C2" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
     <node concept="13hLZK" id="4jTzL4SDZc0" role="13h7CW">
       <node concept="3clFbS" id="4jTzL4SDZc1" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="4jTzL4SDZc2" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
-      <node concept="3Tm1VV" id="4jTzL4SDZc3" role="1B3o_S" />
-      <node concept="3clFbS" id="4jTzL4SDZc8" role="3clF47">
-        <node concept="3clFbF" id="3NUSEp5yeOu" role="3cqZAp">
-          <node concept="2YIFZM" id="6fmG8CYTZvU" role="3clFbG">
-            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
-            <ref role="37wK5l" to="xfg9:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
-            <node concept="1fM9EW" id="6fmG8CYU6Dk" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="4jTzL4SDZc9" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="4jTzL4SDZce" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
-      <node concept="3Tm1VV" id="4jTzL4SDZcf" role="1B3o_S" />
-      <node concept="3clFbS" id="4jTzL4SDZck" role="3clF47">
-        <node concept="3clFbF" id="3NUSEp5yeUI" role="3cqZAp">
-          <node concept="2YIFZM" id="6fmG8CYU00G" role="3clFbG">
-            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
-            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
-            <node concept="1fM9EW" id="6fmG8CYU6Ea" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="4jTzL4SDZcl" role="3clF45" />
     </node>
     <node concept="13i0hz" id="5r47dOg5DlB" role="13h7CS">
       <property role="TrG5h" value="type" />
